@@ -1,0 +1,228 @@
+# worldmvp
+
+A lightweight research sandbox for experimenting with symbolic world models, concept formation, structural similarity, and explainable link prediction.
+
+## Motivation
+
+Modern AI systems are extremely effective at extracting patterns from large amounts of data.
+
+However, much of their knowledge is stored implicitly inside model weights, making it difficult to:
+
+* inspect reasoning
+* explain predictions
+* update knowledge incrementally
+* study memory consolidation separately from learning
+
+worldmvp explores an alternative idea:
+
+> Can part of reasoning be represented explicitly as objects, relations, concepts, and structural patterns instead of being hidden entirely inside neural network weights?
+
+This project does **not** attempt to replace LLMs.
+
+Instead, it serves as a small experimental environment for testing hypotheses about:
+
+* symbolic memory
+* concept formation
+* structural generalization
+* knowledge consolidation ("sleep")
+* sample-efficient reasoning
+
+---
+
+## Core Architecture
+
+### Objects
+
+Knowledge is represented as entities:
+
+```text
+яблоня
+яблоко
+семя
+```
+
+### Relations
+
+Entities are connected through typed relations:
+
+```text
+яблоня --produces_result--> яблоко
+яблоко --contains--> семя
+семя --grows_into--> яблоня
+```
+
+### Causal Reasoning
+
+The system can:
+
+* trace chains
+* explain paths
+* estimate consequences of removing nodes
+
+Example:
+
+```text
+яблоня
+↓
+яблоко
+↓
+семя
+↓
+яблоня
+```
+
+### Concept Formation
+
+Repeated structures are consolidated into concepts.
+
+Example:
+
+```text
+яблоко contains семя
+груша_плод contains семя
+апельсин contains семя
+```
+
+becomes:
+
+```text
+concept_rel_contains_семя
+```
+
+with membership relations:
+
+```text
+яблоко      member_of concept_rel_contains_семя
+груша_плод  member_of concept_rel_contains_семя
+апельсин    member_of concept_rel_contains_семя
+```
+
+### Structural Similarity
+
+Instead of manually specifying similarity:
+
+```python
+world.add_similarity("слива", "персик", 0.9)
+```
+
+the system derives similarity from graph structure.
+
+Example:
+
+```text
+слива contains косточка
+персик contains косточка
+```
+
+↓
+
+```text
+similarity(слива, персик)
+```
+
+computed automatically using structural profile overlap.
+
+### Prediction
+
+The system attempts to recover missing relations using:
+
+1. Majority templates
+2. Structural similarity
+3. Concept membership
+4. Hybrid reasoning
+
+Every prediction remains explainable.
+
+Example:
+
+```text
+слива contains косточка
+
+Reason:
+concept match:
+concept_rel_contains_косточка
+```
+
+---
+
+## Sample Efficiency Experiment
+
+A synthetic benchmark evaluates whether structural consolidation improves learning efficiency.
+
+Four lifecycle families are generated:
+
+```text
+tree → fruit → seed → tree
+tree → fruit → pit → tree
+animal → egg → offspring → animal
+business → product → revenue → business
+```
+
+Prediction quality is measured while reducing available observations.
+
+Results:
+
+| Budget | Majority | Structural | Concept | Hybrid |
+| ------ | -------- | ---------- | ------- | ------ |
+| 20%    | 0.18     | 0.18       | 0.18    | 0.18   |
+| 40%    | 0.18     | 0.40       | 0.40    | 0.40   |
+| 60%    | 0.18     | 0.67       | 0.67    | 0.67   |
+| 80%    | 0.18     | 1.00       | 1.00    | 1.00   |
+| 100%   | 0.18     | 1.00       | 1.00    | 1.00   |
+
+Interpretation:
+
+* Majority reasoning never learns family-specific structure.
+* Structural and concept-based reasoning generalize after observing only a small number of examples.
+* Consolidation improves sample efficiency on this synthetic benchmark.
+
+---
+
+## What This Project Is
+
+* Research sandbox
+* Symbolic reasoning playground
+* World-model experiment
+* Concept formation experiment
+* Explainable prediction system
+
+---
+
+## What This Project Is Not
+
+* AGI
+* A replacement for LLMs
+* A production knowledge graph
+* A biologically accurate brain simulation
+* Evidence that symbolic systems outperform transformers
+
+---
+
+## Current Limitations
+
+* Synthetic benchmarks only
+* No perception layer
+* No vision
+* No reinforcement learning
+* No neural learning
+* No large-scale datasets yet
+* Structural similarity still depends on observable graph structure
+
+---
+
+## Future Work
+
+* ConceptNet benchmark
+* Automatic hierarchy formation
+* Memory consolidation cycles ("sleep")
+* Concept-to-concept reasoning
+* LLM-powered observation extraction
+* Hybrid symbolic + neural workflows
+
+---
+
+## Status
+
+Experimental.
+
+The goal of worldmvp is not to build a new intelligence system, but to create a controlled environment where hypotheses about memory, concepts, consolidation, and reasoning can be tested and measured.
