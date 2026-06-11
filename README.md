@@ -200,7 +200,18 @@ B part_of C
 A part_of C
 ```
 
-The pattern-based predictor produces explanations, evidence chains, and confidence scores. It currently focuses on same-relation transitive chains; mixed-relation pattern prediction is still future work.
+The pattern-based predictor produces explanations, evidence chains, and confidence scores. It supports same-relation transitive chains and a small set of explicitly allowed mixed-relation rules such as:
+
+```text
+A is_a B
+B capable_of C
+
+=>
+
+A capable_of C
+```
+
+Mixed-relation reasoning is intentionally conservative: noisy relations can be disabled, intermediate hubs can be penalized, relation trust can lower confidence, and relation drift can annotate cases where composition changes semantic level.
 
 ### Human Audit
 
@@ -232,6 +243,38 @@ is_a:    75.6%
 ```
 
 These results come from a small exploratory audit and should not be interpreted as a formal benchmark.
+
+---
+
+## Audit-Driven Trust Learning
+
+worldmvp can learn simple trust profiles from human audit CSV files without neural backpropagation.
+
+Audit labels are mapped to scores:
+
+```text
+correct   -> 1.0
+plausible -> 0.7
+unclear   -> 0.4
+wrong     -> 0.0
+```
+
+The system averages those scores by relation, rule, and drift type, then reruns symbolic prediction with the learned trust profile.
+
+Learning loop result:
+
+```text
+threshold: 0.40
+
+baseline accepted predictions:      253
+learned-trust accepted predictions: 161
+suppressed after audit learning:     92
+newly promoted:                       0
+```
+
+Interpretation:
+
+Human audit lowered trust for weak relations and made the system more conservative without neural retraining. This is not a weights-and-biases learning loop; it is explicit trust calibration over inspectable symbolic reasoning rules.
 
 ---
 
@@ -297,7 +340,8 @@ Interpretation:
 * No neural learning
 * No full-scale dataset pipeline yet
 * Structural similarity still depends on observable graph structure
-* Pattern-based prediction currently supports only same-relation transitive chains
+* Mixed-pattern reasoning is manually allowlisted and still exploratory
+* Audit-driven trust is based on small reviewed samples, not large-scale validation
 
 ---
 
