@@ -1,13 +1,16 @@
 """
 Pattern-based link predictor.
 
-Uses transitive relation bigrams discovered by PatternDiscoveryEngine to
-infer missing direct links:
+Uses relation bigrams discovered by PatternDiscoveryEngine to infer missing
+direct links.
+
+Transitive same-relation prediction:
 
     A --r--> B --r--> C   →   predict  A --r--> C
 
-Only same-relation (transitive) bigrams are used.  Mixed-relation patterns
-are not yet supported.
+Mixed manually allowlisted prediction:
+
+    A --r1--> B --r2--> C  →  predict  A --r3--> C
 
 Hub penalty
 -----------
@@ -35,9 +38,19 @@ from typing import TYPE_CHECKING
 from .patterns import PatternDiscoveryEngine
 from .relation_trust import get_trust, DEFAULT_RELATION_TRUST, UNKNOWN_RELATION_TRUST
 from .node_quality import node_quality
+from .reasoning_relations import is_relation_enabled
+from .relation_drift import DEFAULT_DRIFT_PENALTY_TABLE, classify_made_of_drift
 
 if TYPE_CHECKING:
     from .relations import Relation
+
+DEFAULT_MIXED_BIGRAM_RULES: dict[tuple[str, str], str] = {
+    ("is_a", "capable_of"): "capable_of",
+    ("is_a", "has_property"): "has_property",
+    ("is_a", "used_for"): "used_for",
+    ("is_a", "has_a"): "has_a",
+    ("part_of", "made_of"): "made_of",
+}
 
 
 @dataclass
@@ -48,6 +61,8 @@ class PatternPrediction:
     confidence:    float
     reason:        str
     evidence:      list[str] = field(default_factory=list)  # intermediate nodes
+    drift_type:    str | None = None
+    drift_penalty: float = 1.0
 
 
 @dataclass
@@ -71,7 +86,7 @@ class PatternEvaluationResult:
 
 class PatternBasedPredictor:
     """
-    Infers missing transitive links from frequent same-relation bigrams.
+    Infers missing links from frequent relation bigrams.
 
     Does not touch the lifecycle PredictionEngine.
     """
@@ -97,11 +112,14 @@ class PatternBasedPredictor:
         }
 
         # How many times each node appears as an intermediate in a 2-hop chain
+        all_chain_count: dict[str, int] = defaultdict(int)
         chain_count: dict[str, int] = defaultdict(int)
         for r1 in self._relations:
             for r2_type, _ in self._outgoing[r1.target]:
+                all_chain_count[r1.target] += 1
                 if r2_type == r1.relation_type:
                     chain_count[r1.target] += 1
+        self._all_chain_intermediate_count: dict[str, int] = dict(all_chain_count)
         self._chain_intermediate_count: dict[str, int] = dict(chain_count)
 
     # ------------------------------------------------------------------
@@ -130,6 +148,9 @@ class PatternBasedPredictor:
         relation_trust: dict[str, float] | None = None,
         use_node_quality: bool = False,
         min_node_quality: float = 0.3,
+        include_disabled_relations: bool = False,
+        use_relation_drift: bool = False,
+        drift_penalty_table: dict[str, float] | None = None,
     ) -> list[PatternPrediction]:
         """
         For each frequent transitive bigram (r, r) predict A --r--> C wherever:
@@ -178,7 +199,10 @@ class PatternBasedPredictor:
         # Keep only same-relation (transitive) patterns
         transitive: dict[str, int] = {}   # rel_type -> pattern count
         for p in bigrams:
-            if p.relations[0] == p.relations[1]:
+            if (
+                p.relations[0] == p.relations[1]
+                and is_relation_enabled(p.relations[0], include_disabled_relations)
+            ):
                 transitive[p.relations[0]] = p.count
 
         # (src, rel, tgt) -> PatternPrediction (for dedup + evidence accumulation)
@@ -196,6 +220,8 @@ class PatternBasedPredictor:
             if name not in _nq:
                 _nq[name] = node_quality(name)
             return _nq[name]
+
+        drift_penalties = DEFAULT_DRIFT_PENALTY_TABLE if drift_penalty_table is None else drift_penalty_table
 
         for rel_type, count in transitive.items():
             base_conf = min(0.95, 0.5 + 0.05 * math.log(count + 1))
@@ -251,8 +277,16 @@ class PatternBasedPredictor:
                         tgt_q    = 1.0
                         nq_factor = 1.0
 
+                    drift_type, drift_penalty = _drift_info(
+                        rel_type,
+                        src,
+                        intermediate,
+                        r2_tgt,
+                        use_relation_drift,
+                        drift_penalties,
+                    )
                     # total scale for this chain (hub × nq of weakest node)
-                    total_scale = hub_factor * nq_factor
+                    total_scale = hub_factor * nq_factor * drift_penalty
                     conf = min(0.95, base_conf * total_scale * trust)
 
                     if key in preds:
@@ -270,13 +304,17 @@ class PatternBasedPredictor:
                                 hub_factor, hub_penalty,
                                 trust, relation_trust is not None,
                                 nq_factor, use_node_quality,
+                                drift_type, drift_penalty,
                             )
+                            existing_pred.drift_type = drift_type
+                            existing_pred.drift_penalty = drift_penalty
                     else:
                         reason = _make_reason(
                             rel_type, count, intermediate, deg,
                             hub_factor, hub_penalty,
                             trust, relation_trust is not None,
                             nq_factor, use_node_quality,
+                            drift_type, drift_penalty,
                         )
                         preds[key] = PatternPrediction(
                             source=src,
@@ -285,11 +323,153 @@ class PatternBasedPredictor:
                             confidence=conf,
                             reason=reason,
                             evidence=[intermediate],
+                            drift_type=drift_type,
+                            drift_penalty=drift_penalty,
                         )
                         best_scale[key]    = total_scale
                         best_via_info[key] = (intermediate, deg)
 
         # apply min_confidence filter AFTER all scaling
+        result = [p for p in preds.values() if p.confidence >= min_confidence]
+        return sorted(result, key=lambda p: (-p.confidence, p.source, p.target))
+
+    def predict_from_mixed_bigrams(
+        self,
+        min_count: int = 5,
+        min_confidence: float = 0.5,
+        allowed_rules: dict[tuple[str, str], str] | None = None,
+        max_intermediate_degree: int | None = None,
+        max_intermediate_count: int | None = None,
+        hub_penalty: bool = True,
+        relation_trust: dict[str, float] | None = None,
+        use_node_quality: bool = False,
+        min_node_quality: float = 0.3,
+        include_disabled_relations: bool = False,
+    ) -> list[PatternPrediction]:
+        """
+        Predict allowlisted mixed-relation closures from frequent bigrams.
+
+        For an allowed rule (r1, r2) -> r3, predicts A --r3--> C wherever
+        A --r1--> B --r2--> C exists and A --r3--> C is not already present.
+        The default allowlist is deliberately small and manually chosen.
+        """
+        rules = DEFAULT_MIXED_BIGRAM_RULES if allowed_rules is None else allowed_rules
+        if not rules:
+            return []
+
+        discovery = PatternDiscoveryEngine(self._relations)
+        bigrams = discovery.discover_relation_bigrams(min_count=min_count)
+        mixed_counts: dict[tuple[str, str], int] = {
+            p.relations: p.count
+            for p in bigrams
+            if (
+                len(p.relations) == 2
+                and p.relations in rules
+                and is_relation_enabled(p.relations[0], include_disabled_relations)
+                and is_relation_enabled(p.relations[1], include_disabled_relations)
+                and is_relation_enabled(rules[p.relations], include_disabled_relations)
+            )
+        }
+
+        preds: dict[tuple[str, str, str], PatternPrediction] = {}
+        best_conf: dict[tuple[str, str, str], float] = {}
+        _nq: dict[str, float] = {}
+
+        def _cached_nq(name: str) -> float:
+            if name not in _nq:
+                _nq[name] = node_quality(name)
+            return _nq[name]
+
+        for (r1_type, r2_type), count in mixed_counts.items():
+            output_relation = rules[(r1_type, r2_type)]
+            base_conf = min(0.95, 0.5 + 0.05 * math.log(count + 1))
+            if base_conf < min_confidence:
+                continue
+
+            trust = (
+                get_trust(output_relation, relation_trust)
+                if relation_trust is not None
+                else 1.0
+            )
+
+            for r1 in self._relations:
+                if r1.relation_type != r1_type:
+                    continue
+
+                src = r1.source
+                intermediate = r1.target
+                deg = self._total_degree.get(intermediate, 0)
+
+                if max_intermediate_degree is not None and deg > max_intermediate_degree:
+                    continue
+
+                chain_cnt = self._all_chain_intermediate_count.get(intermediate, 0)
+                if max_intermediate_count is not None and chain_cnt > max_intermediate_count:
+                    continue
+
+                if use_node_quality:
+                    src_q = _cached_nq(src)
+                    via_q = _cached_nq(intermediate)
+                    if src_q < min_node_quality or via_q < min_node_quality:
+                        continue
+                else:
+                    src_q = 1.0
+                    via_q = 1.0
+
+                hub_factor = math.sqrt(10.0 / max(10.0, deg)) if hub_penalty else 1.0
+
+                for actual_r2_type, r2_tgt in self._outgoing[intermediate]:
+                    if actual_r2_type != r2_type:
+                        continue
+                    if src == r2_tgt:
+                        continue
+
+                    key = (src, output_relation, r2_tgt)
+                    if key in self._existing:
+                        continue
+
+                    if use_node_quality:
+                        tgt_q = _cached_nq(r2_tgt)
+                        if tgt_q < min_node_quality:
+                            continue
+                        nq_factor = min(src_q, via_q, tgt_q)
+                    else:
+                        nq_factor = 1.0
+
+                    total_scale = hub_factor * nq_factor
+                    conf = min(0.95, base_conf * total_scale * trust)
+
+                    reason = _make_mixed_reason(
+                        r1_type,
+                        r2_type,
+                        output_relation,
+                        count,
+                        intermediate,
+                        deg,
+                        hub_factor,
+                        trust,
+                        nq_factor,
+                    )
+
+                    if key in preds:
+                        existing_pred = preds[key]
+                        if intermediate not in existing_pred.evidence and len(existing_pred.evidence) < 5:
+                            existing_pred.evidence.append(intermediate)
+                        if conf > best_conf.get(key, 0.0):
+                            best_conf[key] = conf
+                            existing_pred.confidence = conf
+                            existing_pred.reason = reason
+                    else:
+                        preds[key] = PatternPrediction(
+                            source=src,
+                            relation_type=output_relation,
+                            target=r2_tgt,
+                            confidence=conf,
+                            reason=reason,
+                            evidence=[intermediate],
+                        )
+                        best_conf[key] = conf
+
         result = [p for p in preds.values() if p.confidence >= min_confidence]
         return sorted(result, key=lambda p: (-p.confidence, p.source, p.target))
 
@@ -319,6 +499,8 @@ def _make_reason(
     trust_on: bool = False,
     nq: float = 1.0,
     nq_on: bool = False,
+    drift_type: str | None = None,
+    drift_penalty: float = 1.0,
 ) -> str:
     parts = [f"count={count}"]
     if hub_penalty_on:
@@ -327,9 +509,46 @@ def _make_reason(
         parts.append(f"trust={trust:.3f}")
     if nq_on:
         parts.append(f"nq={nq:.3f}")
+    if drift_type is not None:
+        parts.append(f"drift={drift_type}")
+        parts.append(f"drift_penalty={drift_penalty:.2f}")
     if len(parts) == 1:
         return f"transitive pattern: {rel_type} -> {rel_type} ({parts[0]})"
     return f"transitive pattern: {rel_type} -> {rel_type} ({', '.join(parts)})"
+
+
+def _drift_info(
+    rel_type: str,
+    source: str,
+    intermediate: str,
+    target: str,
+    use_relation_drift: bool,
+    drift_penalty_table: dict[str, float],
+) -> tuple[str | None, float]:
+    if not use_relation_drift or rel_type != "made_of":
+        return None, 1.0
+    drift_type = classify_made_of_drift(source, intermediate, target)
+    if drift_type is None:
+        return None, drift_penalty_table.get("none", 1.0)
+    return drift_type, drift_penalty_table.get(drift_type, 1.0)
+
+
+def _make_mixed_reason(
+    r1_type: str,
+    r2_type: str,
+    output_relation: str,
+    count: int,
+    via: str,
+    degree: int,
+    hub_factor: float,
+    trust: float,
+    nq: float,
+) -> str:
+    return (
+        f"mixed pattern: {r1_type} -> {r2_type} => {output_relation} "
+        f"(count={count}, via={via}, degree={degree}, "
+        f"hub_penalty={hub_factor:.2f}, trust={trust:.3f}, nq={nq:.3f})"
+    )
 
 
 # ------------------------------------------------------------------

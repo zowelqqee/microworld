@@ -144,6 +144,7 @@ class TestRelationTrustInPredictor:
         p_lo = PatternBasedPredictor(rels_lo).predict_from_bigrams(
             min_count=1, hub_penalty=False, min_confidence=0.0,
             relation_trust=DEFAULT_RELATION_TRUST,
+            include_disabled_relations=True,
         )
         assert len(p_hi) > 0
         assert len(p_lo) > 0
@@ -158,10 +159,12 @@ class TestRelationTrustInPredictor:
         p_notrust = PatternBasedPredictor(rels).predict_from_bigrams(
             min_count=1, hub_penalty=False, min_confidence=0.0,
             relation_trust=None,
+            include_disabled_relations=True,
         )
         p_trust = PatternBasedPredictor(rels).predict_from_bigrams(
             min_count=1, hub_penalty=False, min_confidence=0.0,
             relation_trust=DEFAULT_RELATION_TRUST,
+            include_disabled_relations=True,
         )
         # both runs should have predictions
         assert len(p_notrust) > 0
@@ -174,6 +177,7 @@ class TestRelationTrustInPredictor:
         preds = PatternBasedPredictor(rels).predict_from_bigrams(
             min_count=1, hub_penalty=False, min_confidence=0.0,
             relation_trust=DEFAULT_RELATION_TRUST,
+            include_disabled_relations=True,
         )
         assert len(preds) > 0
         base = _base_conf(count)
@@ -188,6 +192,7 @@ class TestRelationTrustInPredictor:
         preds = PatternBasedPredictor(rels).predict_from_bigrams(
             min_count=1, hub_penalty=False,
             relation_trust=DEFAULT_RELATION_TRUST,
+            include_disabled_relations=True,
         )
         assert preds == []
 
@@ -260,11 +265,13 @@ class TestRelationTrustInPredictor:
             ("mid", "at_location", "d"),
         )
         preds_pen_only = PatternBasedPredictor(hub_rels).predict_from_bigrams(
-            min_count=1, hub_penalty=True, min_confidence=0.0, relation_trust=None
+            min_count=1, hub_penalty=True, min_confidence=0.0, relation_trust=None,
+            include_disabled_relations=True,
         )
         preds_both = PatternBasedPredictor(hub_rels).predict_from_bigrams(
             min_count=1, hub_penalty=True, min_confidence=0.0,
             relation_trust=DEFAULT_RELATION_TRUST,
+            include_disabled_relations=True,
         )
         pen_map  = {(p.source, p.target): p.confidence for p in preds_pen_only}
         both_map = {(p.source, p.target): p.confidence for p in preds_both}
@@ -339,11 +346,13 @@ class TestAuditExportRelationTrust:
         from examples.pattern_audit_export import build_audit_rows
         rows_no = build_audit_rows(self._write(tmp_path), limit=200,
                                    hub_penalty=False, use_relation_trust=False,
-                                   relation_filter={"at_location"})
+                                   relation_filter={"at_location"},
+                                   include_disabled_relations=True)
         rows_yes = build_audit_rows(self._write(tmp_path), limit=200,
                                     hub_penalty=False, use_relation_trust=True,
                                     min_count=1 if False else 5,
-                                    relation_filter={"at_location"})
+                                    relation_filter={"at_location"},
+                                    include_disabled_relations=True)
         # at_location trust=0.1, so if any survive they must be lower
         for r_no, r_yes in zip(rows_no, rows_yes):
             assert float(r_yes["confidence"]) <= float(r_no["confidence"]) + 1e-6

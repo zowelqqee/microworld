@@ -142,6 +142,36 @@ class TestNoExistingEdgeDuplicated:
         assert preds == []
 
 
+class TestDisabledRelations:
+    def test_disabled_transitive_relation_skipped_by_default(self):
+        rels = _rels(
+            ("a", "at_location", "b"),
+            ("b", "at_location", "c"),
+        )
+
+        preds = PatternBasedPredictor(rels).predict_from_bigrams(
+            min_count=1,
+            min_confidence=0.0,
+        )
+
+        assert preds == []
+
+    def test_disabled_transitive_relation_can_be_included(self):
+        rels = _rels(
+            ("a", "at_location", "b"),
+            ("b", "at_location", "c"),
+        )
+
+        preds = PatternBasedPredictor(rels).predict_from_bigrams(
+            min_count=1,
+            min_confidence=0.0,
+            include_disabled_relations=True,
+        )
+
+        keys = {(p.source, p.relation_type, p.target) for p in preds}
+        assert ("a", "at_location", "c") in keys
+
+
 # ── confidence formula ─────────────────────────────────────────────────────────
 
 class TestConfidence:

@@ -21,6 +21,7 @@ from core.pattern_prediction import (
     PatternBasedPredictor,
     evaluate_pattern_prediction_recovery,
 )
+from core.reasoning_relations import DEFAULT_DISABLED_RELATIONS, DEFAULT_REASONING_RELATIONS
 
 _HERE = os.path.dirname(__file__)
 DATA_PATH = os.path.normpath(os.path.join(_HERE, "..", "data", "conceptnet_sample.csv"))
@@ -58,6 +59,10 @@ def main() -> None:
     w = build_world_from_relations(rows)
     rels = w.get_relations()
     print(f"\n  Loaded {len(rels)} relations, {len(w.get_objects())} objects")
+
+    section("Reasoning Relation Policy")
+    print(f"  Enabled core relations : {', '.join(sorted(DEFAULT_REASONING_RELATIONS))}")
+    print(f"  Disabled by default    : {', '.join(sorted(DEFAULT_DISABLED_RELATIONS))}")
 
     # ── top transitive patterns ───────────────────────────────────────────────
     section("Transitive bigram patterns  (r -> r,  min_count=5)")
