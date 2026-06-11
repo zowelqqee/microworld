@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from core.datasets import load_relations_csv, build_world_from_relations
 from core.pattern_prediction import PatternBasedPredictor
+from core.relation_trust import DEFAULT_RELATION_TRUST
 
 _HERE = os.path.dirname(__file__)
 _DEFAULT_INPUT  = os.path.normpath(os.path.join(_HERE, "..", "data", "conceptnet_sample.csv"))
@@ -48,6 +49,7 @@ def build_audit_rows(
     min_count: int = 5,
     max_intermediate_degree: int | None = None,
     hub_penalty: bool = True,
+    use_relation_trust: bool = False,
 ) -> list[dict]:
     """
     Load the CSV, run the predictor, and return audit rows ready to write.
@@ -61,6 +63,7 @@ def build_audit_rows(
         min_count=min_count,
         max_intermediate_degree=max_intermediate_degree,
         hub_penalty=hub_penalty,
+        relation_trust=DEFAULT_RELATION_TRUST if use_relation_trust else None,
     )
 
     if relation_filter:
@@ -112,6 +115,9 @@ def main() -> None:
     ap.add_argument("--no-hub-penalty", action="store_true", default=False,
                     dest="no_hub_penalty",
                     help="Disable hub-degree confidence penalty (restores pre-v1.2 behaviour)")
+    ap.add_argument("--use-relation-trust", action="store_true", default=False,
+                    dest="use_relation_trust",
+                    help="Scale confidence by human-audit relation trust priors")
     args = ap.parse_args()
 
     if not os.path.exists(args.input):
@@ -130,6 +136,7 @@ def main() -> None:
         limit=args.limit,
         max_intermediate_degree=args.max_intermediate_degree,
         hub_penalty=not args.no_hub_penalty,
+        use_relation_trust=args.use_relation_trust,
     )
     n = write_audit_csv(rows, args.output)
     print(f"Wrote {n} rows → {args.output}", file=sys.stderr)

@@ -20,6 +20,7 @@ from .pattern_prediction import (
     PatternEvaluationResult,
     evaluate_pattern_prediction_recovery,
 )
+from .relation_trust import DEFAULT_RELATION_TRUST, UNKNOWN_RELATION_TRUST, get_trust
 
 __all__ = [
     "WorldObject",
@@ -52,4 +53,7 @@ __all__ = [
     "PatternBasedPredictor",
     "PatternEvaluationResult",
     "evaluate_pattern_prediction_recovery",
+    "DEFAULT_RELATION_TRUST",
+    "UNKNOWN_RELATION_TRUST",
+    "get_trust",
 ]

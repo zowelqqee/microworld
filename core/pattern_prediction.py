@@ -33,6 +33,7 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
 from .patterns import PatternDiscoveryEngine
+from .relation_trust import get_trust, DEFAULT_RELATION_TRUST, UNKNOWN_RELATION_TRUST
 
 if TYPE_CHECKING:
     from .relations import Relation
@@ -125,6 +126,7 @@ class PatternBasedPredictor:
         max_intermediate_degree: int | None = None,
         max_intermediate_count: int | None = None,
         hub_penalty: bool = True,
+        relation_trust: dict[str, float] | None = None,
     ) -> list[PatternPrediction]:
         """
         For each frequent transitive bigram (r, r) predict A --r--> C wherever:
@@ -140,9 +142,18 @@ class PatternBasedPredictor:
             Skip chains where B appears as middle node more than this many times.
         hub_penalty
             If True, scale confidence by sqrt(10 / max(10, degree_of_B)).
+        relation_trust
+            Dict mapping relation_type -> trust prior in (0, 1].  When provided,
+            final_confidence = base_confidence * hub_factor * trust.
+            Pass an empty dict {} to disable trust scaling while keeping the
+            parameter explicit; pass None (default) to skip trust entirely.
 
-        Base confidence: min(0.95, 0.5 + 0.05 * log(count + 1))
-        Hub factor     : sqrt(10 / max(10, degree_of_B))
+        Formula:
+            base_confidence = min(0.95, 0.5 + 0.05 * log(count + 1))
+            hub_factor      = sqrt(10 / max(10, degree_of_B))   if hub_penalty
+                            = 1.0                                otherwise
+            trust           = relation_trust[rel]  (or UNKNOWN_RELATION_TRUST)
+            final           = base_confidence * hub_factor * trust   (capped at base)
 
         Deduplicates by (source, relation_type, target); the evidence list
         collects all distinct intermediate nodes (up to 5) when multiple
@@ -167,9 +178,12 @@ class PatternBasedPredictor:
 
         for rel_type, count in transitive.items():
             base_conf = min(0.95, 0.5 + 0.05 * math.log(count + 1))
-            # We filter on base confidence before penalty because penalty can only reduce it
+            # We filter on base confidence before any scaling because scaling
+            # can only reduce confidence further.
             if base_conf < min_confidence:
                 continue
+
+            trust = get_trust(rel_type, relation_trust) if relation_trust is not None else 1.0
 
             for r1 in self._relations:
                 if r1.relation_type != rel_type:
@@ -207,14 +221,21 @@ class PatternBasedPredictor:
                         if hub_penalty and hub_factor > best_hub_factor.get(key, 0.0):
                             best_hub_factor[key] = hub_factor
                             best_via_degree[key] = (intermediate, deg)
-                            new_conf = min(0.95, base_conf * hub_factor)
+                            new_conf = min(0.95, base_conf * hub_factor * trust)
                             existing_pred.confidence = new_conf
                             existing_pred.reason = _make_reason(
-                                rel_type, count, intermediate, deg, hub_factor, hub_penalty
+                                rel_type, count, intermediate, deg,
+                                hub_factor, hub_penalty, trust, relation_trust is not None,
                             )
                     else:
-                        conf = min(0.95, base_conf * hub_factor) if hub_penalty else base_conf
-                        reason = _make_reason(rel_type, count, intermediate, deg, hub_factor, hub_penalty)
+                        conf = base_conf * hub_factor * trust
+                        if not hub_penalty:
+                            conf = base_conf * trust
+                        conf = min(0.95, conf)
+                        reason = _make_reason(
+                            rel_type, count, intermediate, deg,
+                            hub_factor, hub_penalty, trust, relation_trust is not None,
+                        )
                         preds[key] = PatternPrediction(
                             source=r1.source,
                             relation_type=rel_type,
@@ -227,7 +248,7 @@ class PatternBasedPredictor:
                             best_hub_factor[key] = hub_factor
                             best_via_degree[key] = (intermediate, deg)
 
-        # Apply min_confidence filter AFTER penalty (penalty can drop confidence below threshold)
+        # Apply min_confidence filter AFTER all scaling
         result = [p for p in preds.values() if p.confidence >= min_confidence]
         return sorted(result, key=lambda p: (-p.confidence, p.source, p.target))
 
@@ -253,13 +274,17 @@ def _make_reason(
     degree: int,
     hub_factor: float,
     hub_penalty_on: bool,
+    trust: float = 1.0,
+    trust_on: bool = False,
 ) -> str:
+    parts = [f"count={count}"]
     if hub_penalty_on:
-        return (
-            f"transitive pattern: {rel_type} -> {rel_type} "
-            f"(count={count}, via={via}, degree={degree}, hub_penalty={hub_factor:.2f})"
-        )
-    return f"transitive pattern: {rel_type} -> {rel_type} (count={count})"
+        parts += [f"via={via}", f"degree={degree}", f"hub_penalty={hub_factor:.2f}"]
+    if trust_on:
+        parts.append(f"trust={trust:.3f}")
+    if len(parts) == 1:
+        return f"transitive pattern: {rel_type} -> {rel_type} ({parts[0]})"
+    return f"transitive pattern: {rel_type} -> {rel_type} ({', '.join(parts)})"
 
 
 # ------------------------------------------------------------------
