@@ -12,6 +12,14 @@ from .causal import CausalReasoner, CausalChain, CausalStep
 from .consolidation import ConsolidationEngine, ConsolidatedPattern
 from .prediction import PredictionEngine, Prediction, ChainTemplate
 from .evaluation import PredictionEvaluator, EvaluationResult
+from .datasets import load_relations_csv, build_world_from_relations
+from .patterns import Pattern, PatternDiscoveryEngine
+from .pattern_prediction import (
+    PatternPrediction,
+    PatternBasedPredictor,
+    PatternEvaluationResult,
+    evaluate_pattern_prediction_recovery,
+)
 
 __all__ = [
     "WorldObject",
@@ -36,4 +44,12 @@ __all__ = [
     "ChainTemplate",
     "PredictionEvaluator",
     "EvaluationResult",
+    "load_relations_csv",
+    "build_world_from_relations",
+    "Pattern",
+    "PatternDiscoveryEngine",
+    "PatternPrediction",
+    "PatternBasedPredictor",
+    "PatternEvaluationResult",
+    "evaluate_pattern_prediction_recovery",
 ]

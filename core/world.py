@@ -164,6 +164,13 @@ class World:
                 self._upsert_relation(member, "member_of", concept.id, concept.id)
         return self._concepts
 
+    def predict_from_patterns(self, min_count: int = 5) -> list:
+        """Predict transitive links via discovered frequent relation bigrams."""
+        from .pattern_prediction import PatternBasedPredictor
+        return PatternBasedPredictor(self._relations).predict_from_bigrams(
+            min_count=min_count
+        )
+
     def evaluate_prediction_recovery(
         self,
         ratio: float = 0.3,

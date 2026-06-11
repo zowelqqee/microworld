@@ -1,0 +1,6 @@
+source,relation_type,target
+apple,is_a,fruit
+banana,is_a,fruit
+cherry,has_property,red
+knife,used_for,cutting
+apple,at_location,tree

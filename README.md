@@ -145,6 +145,96 @@ concept_rel_contains_косточка
 
 ---
 
+## ConceptNet Integration
+
+worldmvp can now import filtered ConceptNet data and build a `World` directly from relation CSV files.
+
+The current import path supports:
+
+* extracting a filtered ConceptNet relation sample
+* loading `source,relation_type,target` CSV files
+* building a world graph without the natural-language parser
+* discovering concepts from external graphs
+* computing structural similarities between entities
+* discovering frequent relation patterns
+
+One current example run over `data/conceptnet_sample.csv` contains roughly:
+
+* ~5000 relations
+* 9 relation types
+* 443 discovered concepts
+* 18k+ structural similarity pairs
+
+These numbers describe the checked-in sample run, not a benchmark.
+
+---
+
+## Pattern Discovery
+
+worldmvp no longer relies only on hand-written lifecycle patterns.
+
+The system can discover common relation chains directly from a graph. On the current ConceptNet sample, examples include:
+
+```text
+part_of -> part_of
+made_of -> made_of
+is_a -> is_a
+```
+
+Pattern discovery is exploratory. It is used to understand the structure of a knowledge graph before prediction, and to see which relation chains actually occur often enough to study.
+
+---
+
+## Pattern-Based Prediction
+
+A second prediction engine now exists alongside the lifecycle/template-based predictor.
+
+Instead of using lifecycle templates, it uses discovered graph patterns. The current implementation supports transitive same-relation reasoning:
+
+```text
+A part_of B
+B part_of C
+
+=>
+
+A part_of C
+```
+
+The pattern-based predictor produces explanations, evidence chains, and confidence scores. It currently focuses on same-relation transitive chains; mixed-relation pattern prediction is still future work.
+
+### Human Audit
+
+Pattern predictions can be exported to CSV and reviewed manually. The current audit labels are:
+
+* `correct`
+* `plausible`
+* `wrong`
+* `unclear`
+
+ConceptNet-derived pattern predictions were manually reviewed:
+
+```text
+reviewed predictions: 104
+
+correct:   43.3%
+plausible: 35.6%
+wrong:     21.2%
+
+useful (correct + plausible): 78.8%
+```
+
+By relation:
+
+```text
+made_of: 86.2%
+part_of: 76.7%
+is_a:    75.6%
+```
+
+These results come from a small exploratory audit and should not be interpreted as a formal benchmark.
+
+---
+
 ## Sample Efficiency Experiment
 
 A synthetic benchmark evaluates whether structural consolidation improves learning efficiency.
@@ -200,24 +290,22 @@ Interpretation:
 
 ## Current Limitations
 
-* Synthetic benchmarks only
+* ConceptNet work currently uses a filtered sample, not a full benchmark
 * No perception layer
 * No vision
 * No reinforcement learning
 * No neural learning
-* No large-scale datasets yet
+* No full-scale dataset pipeline yet
 * Structural similarity still depends on observable graph structure
+* Pattern-based prediction currently supports only same-relation transitive chains
 
 ---
 
-## Future Work
+## Current Direction
 
-* ConceptNet benchmark
-* Automatic hierarchy formation
-* Memory consolidation cycles ("sleep")
-* Concept-to-concept reasoning
-* LLM-powered observation extraction
-* Hybrid symbolic + neural workflows
+Current work is moving toward broader ConceptNet evaluation, relation-specific trust estimation, automatic pattern discovery, graph consolidation and concept formation, and reasoning without neural training.
+
+The emphasis is still engineering/research: make the symbolic state inspectable, measure behavior on small cases first, and avoid treating exploratory results as proof.
 
 ---
 
