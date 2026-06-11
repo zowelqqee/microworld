@@ -50,6 +50,8 @@ def build_audit_rows(
     max_intermediate_degree: int | None = None,
     hub_penalty: bool = True,
     use_relation_trust: bool = False,
+    use_node_quality: bool = False,
+    min_node_quality: float = 0.3,
 ) -> list[dict]:
     """
     Load the CSV, run the predictor, and return audit rows ready to write.
@@ -64,6 +66,8 @@ def build_audit_rows(
         max_intermediate_degree=max_intermediate_degree,
         hub_penalty=hub_penalty,
         relation_trust=DEFAULT_RELATION_TRUST if use_relation_trust else None,
+        use_node_quality=use_node_quality,
+        min_node_quality=min_node_quality,
     )
 
     if relation_filter:
@@ -118,6 +122,12 @@ def main() -> None:
     ap.add_argument("--use-relation-trust", action="store_true", default=False,
                     dest="use_relation_trust",
                     help="Scale confidence by human-audit relation trust priors")
+    ap.add_argument("--use-node-quality", action="store_true", default=False,
+                    dest="use_node_quality",
+                    help="Filter and penalise low-quality nodes (profanity, noise, etc.)")
+    ap.add_argument("--min-node-quality", type=float, default=0.3,
+                    dest="min_node_quality",
+                    help="Hard threshold: skip chains with any node quality below this (default 0.3)")
     args = ap.parse_args()
 
     if not os.path.exists(args.input):
@@ -137,6 +147,8 @@ def main() -> None:
         max_intermediate_degree=args.max_intermediate_degree,
         hub_penalty=not args.no_hub_penalty,
         use_relation_trust=args.use_relation_trust,
+        use_node_quality=args.use_node_quality,
+        min_node_quality=args.min_node_quality,
     )
     n = write_audit_csv(rows, args.output)
     print(f"Wrote {n} rows → {args.output}", file=sys.stderr)

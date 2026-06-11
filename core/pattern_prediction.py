@@ -34,6 +34,7 @@ from typing import TYPE_CHECKING
 
 from .patterns import PatternDiscoveryEngine
 from .relation_trust import get_trust, DEFAULT_RELATION_TRUST, UNKNOWN_RELATION_TRUST
+from .node_quality import node_quality
 
 if TYPE_CHECKING:
     from .relations import Relation
@@ -127,6 +128,8 @@ class PatternBasedPredictor:
         max_intermediate_count: int | None = None,
         hub_penalty: bool = True,
         relation_trust: dict[str, float] | None = None,
+        use_node_quality: bool = False,
+        min_node_quality: float = 0.3,
     ) -> list[PatternPrediction]:
         """
         For each frequent transitive bigram (r, r) predict A --r--> C wherever:
@@ -144,21 +147,30 @@ class PatternBasedPredictor:
             If True, scale confidence by sqrt(10 / max(10, degree_of_B)).
         relation_trust
             Dict mapping relation_type -> trust prior in (0, 1].  When provided,
-            final_confidence = base_confidence * hub_factor * trust.
+            final_confidence = base_confidence * hub_factor * trust * nq.
             Pass an empty dict {} to disable trust scaling while keeping the
             parameter explicit; pass None (default) to skip trust entirely.
+        use_node_quality
+            If True, apply node_quality() to source, intermediate, and target.
+            Chains where any node scores below min_node_quality are skipped.
+            Surviving chains have confidence multiplied by
+            min(src_quality, via_quality, tgt_quality).
+        min_node_quality
+            Hard threshold: skip chains containing nodes with quality < this.
 
         Formula:
             base_confidence = min(0.95, 0.5 + 0.05 * log(count + 1))
             hub_factor      = sqrt(10 / max(10, degree_of_B))   if hub_penalty
                             = 1.0                                otherwise
             trust           = relation_trust[rel]  (or UNKNOWN_RELATION_TRUST)
-            final           = base_confidence * hub_factor * trust   (capped at base)
+            nq              = min(src_q, via_q, tgt_q)           if use_node_quality
+                            = 1.0                                otherwise
+            final           = base_confidence * hub_factor * trust * nq  (capped at 0.95)
 
         Deduplicates by (source, relation_type, target); the evidence list
         collects all distinct intermediate nodes (up to 5) when multiple
-        paths reach the same conclusion.  When hub_penalty is True the
-        confidence is set by the *best* (least-penalised) intermediate seen.
+        paths reach the same conclusion.  Confidence is set by the
+        *best-scoring* intermediate seen (highest hub_factor × nq_via).
         """
         discovery = PatternDiscoveryEngine(self._relations)
         bigrams = discovery.discover_relation_bigrams(min_count=min_count)
@@ -171,15 +183,23 @@ class PatternBasedPredictor:
 
         # (src, rel, tgt) -> PatternPrediction (for dedup + evidence accumulation)
         preds: dict[tuple[str, str, str], PatternPrediction] = {}
-        # track best (lowest) penalty factor per prediction key when hub_penalty=True
-        best_hub_factor: dict[tuple[str, str, str], float] = {}
-        # track degree of best intermediate for reason string
-        best_via_degree: dict[tuple[str, str, str], tuple[str, int]] = {}
+        # best combined scale factor (hub × nq_via) seen per key; used to pick
+        # the highest-quality intermediate when multiple paths exist.
+        best_scale: dict[tuple[str, str, str], float] = {}
+        # best intermediate metadata for the reason string
+        best_via_info: dict[tuple[str, str, str], tuple[str, int]] = {}
+
+        # node quality cache: computed once per node per call
+        _nq: dict[str, float] = {}
+
+        def _cached_nq(name: str) -> float:
+            if name not in _nq:
+                _nq[name] = node_quality(name)
+            return _nq[name]
 
         for rel_type, count in transitive.items():
             base_conf = min(0.95, 0.5 + 0.05 * math.log(count + 1))
-            # We filter on base confidence before any scaling because scaling
-            # can only reduce confidence further.
+            # filter on base confidence before any scaling (scaling can only reduce)
             if base_conf < min_confidence:
                 continue
 
@@ -188,6 +208,7 @@ class PatternBasedPredictor:
             for r1 in self._relations:
                 if r1.relation_type != rel_type:
                     continue
+                src        = r1.source
                 intermediate = r1.target
                 deg = self._total_degree.get(intermediate, 0)
 
@@ -198,57 +219,77 @@ class PatternBasedPredictor:
                 if max_intermediate_count is not None and chain_cnt > max_intermediate_count:
                     continue
 
-                if hub_penalty:
-                    hub_factor = math.sqrt(10.0 / max(10.0, deg))
+                # node quality checks for source + intermediate (target checked below)
+                if use_node_quality:
+                    src_q = _cached_nq(src)
+                    via_q = _cached_nq(intermediate)
+                    if src_q < min_node_quality or via_q < min_node_quality:
+                        continue
                 else:
-                    hub_factor = 1.0
+                    src_q = 1.0
+                    via_q = 1.0
+
+                hub_factor = math.sqrt(10.0 / max(10.0, deg)) if hub_penalty else 1.0
+                # combined per-intermediate scale (hub × via quality)
+                chain_scale = hub_factor * via_q
 
                 for r2_type, r2_tgt in self._outgoing[intermediate]:
                     if r2_type != rel_type:
                         continue
-                    if r1.source == r2_tgt:          # skip self-loop
+                    if src == r2_tgt:                # skip self-loop
                         continue
-                    key = (r1.source, rel_type, r2_tgt)
+                    key = (src, rel_type, r2_tgt)
                     if key in self._existing:         # already in graph
                         continue
+
+                    if use_node_quality:
+                        tgt_q = _cached_nq(r2_tgt)
+                        if tgt_q < min_node_quality:
+                            continue
+                        nq_factor = min(src_q, via_q, tgt_q)
+                    else:
+                        tgt_q    = 1.0
+                        nq_factor = 1.0
+
+                    # total scale for this chain (hub × nq of weakest node)
+                    total_scale = hub_factor * nq_factor
+                    conf = min(0.95, base_conf * total_scale * trust)
 
                     if key in preds:
                         # accumulate evidence
                         existing_pred = preds[key]
                         if intermediate not in existing_pred.evidence and len(existing_pred.evidence) < 5:
                             existing_pred.evidence.append(intermediate)
-                        # update confidence upward if this path has a better hub factor
-                        if hub_penalty and hub_factor > best_hub_factor.get(key, 0.0):
-                            best_hub_factor[key] = hub_factor
-                            best_via_degree[key] = (intermediate, deg)
-                            new_conf = min(0.95, base_conf * hub_factor * trust)
-                            existing_pred.confidence = new_conf
+                        # upgrade confidence if this chain has a better combined scale
+                        if total_scale > best_scale.get(key, 0.0):
+                            best_scale[key]    = total_scale
+                            best_via_info[key] = (intermediate, deg)
+                            existing_pred.confidence = conf
                             existing_pred.reason = _make_reason(
                                 rel_type, count, intermediate, deg,
-                                hub_factor, hub_penalty, trust, relation_trust is not None,
+                                hub_factor, hub_penalty,
+                                trust, relation_trust is not None,
+                                nq_factor, use_node_quality,
                             )
                     else:
-                        conf = base_conf * hub_factor * trust
-                        if not hub_penalty:
-                            conf = base_conf * trust
-                        conf = min(0.95, conf)
                         reason = _make_reason(
                             rel_type, count, intermediate, deg,
-                            hub_factor, hub_penalty, trust, relation_trust is not None,
+                            hub_factor, hub_penalty,
+                            trust, relation_trust is not None,
+                            nq_factor, use_node_quality,
                         )
                         preds[key] = PatternPrediction(
-                            source=r1.source,
+                            source=src,
                             relation_type=rel_type,
                             target=r2_tgt,
                             confidence=conf,
                             reason=reason,
                             evidence=[intermediate],
                         )
-                        if hub_penalty:
-                            best_hub_factor[key] = hub_factor
-                            best_via_degree[key] = (intermediate, deg)
+                        best_scale[key]    = total_scale
+                        best_via_info[key] = (intermediate, deg)
 
-        # Apply min_confidence filter AFTER all scaling
+        # apply min_confidence filter AFTER all scaling
         result = [p for p in preds.values() if p.confidence >= min_confidence]
         return sorted(result, key=lambda p: (-p.confidence, p.source, p.target))
 
@@ -276,12 +317,16 @@ def _make_reason(
     hub_penalty_on: bool,
     trust: float = 1.0,
     trust_on: bool = False,
+    nq: float = 1.0,
+    nq_on: bool = False,
 ) -> str:
     parts = [f"count={count}"]
     if hub_penalty_on:
         parts += [f"via={via}", f"degree={degree}", f"hub_penalty={hub_factor:.2f}"]
     if trust_on:
         parts.append(f"trust={trust:.3f}")
+    if nq_on:
+        parts.append(f"nq={nq:.3f}")
     if len(parts) == 1:
         return f"transitive pattern: {rel_type} -> {rel_type} ({parts[0]})"
     return f"transitive pattern: {rel_type} -> {rel_type} ({', '.join(parts)})"
