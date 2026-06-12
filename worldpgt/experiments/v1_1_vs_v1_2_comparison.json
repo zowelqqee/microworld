@@ -1,0 +1,88 @@
+{
+  "audit_count_after": 77,
+  "audit_count_before": 71,
+  "audit_to_correct": 0,
+  "changed_rows": [
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=guard_failure",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=financial_institution | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "financial_institution",
+      "difficulty_type": "delayed_cue",
+      "expected_sense": "financial_institution",
+      "id": "v1-053",
+      "prompt": "They approached the bank in silence and only then counted the cash"
+    },
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=guard_failure",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=sports_equipment | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "sports_equipment",
+      "difficulty_type": "delayed_cue",
+      "expected_sense": "sports_equipment",
+      "id": "v1-055",
+      "prompt": "The bat seemed too small until the player"
+    },
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=anti_cue_conflict",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=financial_institution | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "financial_institution",
+      "difficulty_type": "negation",
+      "expected_sense": "river_edge",
+      "id": "v1-082",
+      "prompt": "The bank was not a place for money as the hikers slid down to"
+    },
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=anti_cue | audit_reason=guard_failure | audit_reason=only_negated_evidence",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=sports_equipment | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "sports_equipment",
+      "difficulty_type": "negation",
+      "expected_sense": "sports_equipment",
+      "id": "v1-094",
+      "prompt": "The bat was not flying when the player set it beside home plate and"
+    },
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=guard_failure",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=financial_institution | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "financial_institution",
+      "difficulty_type": "misleading_surface_cue",
+      "expected_sense": "river_edge",
+      "id": "v1-097",
+      "prompt": "A cash wrapper floated to the bank where reeds"
+    },
+    {
+      "after_decision": "audit",
+      "after_reasons": "all_sense_scores_zero | audit_reason=guard_failure",
+      "after_selected_sense": "",
+      "before_decision": "continue",
+      "before_reasons": "top_sense=sports_equipment | top_score=1 | second_score=0 | margin=1 | score_and_margin_above_thresholds",
+      "before_selected_sense": "sports_equipment",
+      "difficulty_type": "misleading_surface_cue",
+      "expected_sense": "animal",
+      "id": "v1-099",
+      "prompt": "The injured player pointed at the bat above the rafters as it"
+    }
+  ],
+  "correct_sense_count_after": 53,
+  "correct_sense_count_before": 56,
+  "correct_to_audit": 3,
+  "correct_to_wrong": 0,
+  "rows_changed": 6,
+  "wrong_sense_count_after": 0,
+  "wrong_sense_count_before": 3,
+  "wrong_to_audit": 3,
+  "wrong_to_correct": 0
+}

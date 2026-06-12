@@ -1,0 +1,43 @@
+{
+  "microworld": {
+    "total": 24,
+    "continue_count": 22,
+    "audit_count": 2,
+    "suppress_count": 0,
+    "correct_sense_count": 24,
+    "wrong_sense_count": 0,
+    "no_sense_count": 0,
+    "correct_sense_rate": 1.0,
+    "wrong_sense_rate": 0.0,
+    "audit_rate": 0.0833,
+    "suppress_rate": 0.0,
+    "avg_confidence": 0.6708
+  },
+  "fable5": {
+    "total": 24,
+    "correct_sense_count": 23,
+    "wrong_sense_count": 1,
+    "no_sense_count": 0,
+    "correct_sense_rate": 0.9583,
+    "wrong_sense_rate": 0.0417,
+    "avg_confidence": 0.9743
+  },
+  "comparison": {
+    "both_correct": 23,
+    "microworld_only_correct": 1,
+    "fable5_only_correct": 0,
+    "both_wrong": 0,
+    "disagreement_count": 1,
+    "disagreements": [
+      {
+        "id": "23",
+        "prompt": "The man went to the bank to",
+        "expected_sense": null,
+        "microworld_selected_sense": null,
+        "fable5_selected_sense": "financial_institution",
+        "microworld_decision": "audit",
+        "fable5_confidence": 0.65
+      }
+    ]
+  }
+}
