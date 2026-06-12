@@ -27,6 +27,13 @@ The strongest current compression benchmark reduces 10,000 audit rows from
 about 500,360 raw-history tokens to about 313 trust-state tokens, or roughly
 1598.6x compression.
 
+The latest small audited name-generation benchmark compares explicit
+audit-derived Microworld memory against a small makemore-style MLP baseline. In
+that 100-name run, Microworld reached higher human-rated precision
+(`0.8310` vs `0.7692`) while using no trainable parameters or backpropagation.
+This is experimental evidence for one bounded task, not a general claim that
+graph/trust systems are superior to neural models.
+
 ## Quick Start
 
 From the project root:

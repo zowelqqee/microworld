@@ -126,7 +126,10 @@ def run_experiment(
             max_length=max_length,
             trust_profile=trust_profile,
         )
-        write_csv(build_rows(learned_names, train_set, "learned"), learned_output)
+        write_csv(
+            build_rows(learned_names, train_set, "learned", trust_profile),
+            learned_output,
+        )
         result["learned"] = evaluate_names(learned_names, train_set, test_set)
         result["learned_output"] = learned_output
 

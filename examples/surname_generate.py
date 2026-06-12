@@ -11,6 +11,8 @@ Usage:
     python examples/surname_generate.py --input data/names.txt --count 100 --order 2
     python examples/surname_generate.py --trust-profile data/surname_trust_profile.json
     python examples/surname_generate.py --avoid-duplicates true --seed 42
+    python examples/surname_generate.py --soft-max-length 10 --length-end-bias 1.5
+    python examples/surname_generate.py --min-adjusted-quality 0.7
 """
 import argparse
 import csv
@@ -25,7 +27,12 @@ from core.surname_generator import (
     load_surnames,
     load_trust_profile,
 )
+from core.name_pattern_mining import extract_name_patterns
 from core.surname_policy import explain_surname_quality, surname_quality_score
+from examples.surname_trust_learn import (
+    DIAGNOSTIC_SHAPE_REASONS,
+    canonical_quality_reason,
+)
 
 _HERE = os.path.dirname(__file__)
 _DEFAULT_INPUT = os.path.normpath(os.path.join(_HERE, "..", "data", "surnames.txt"))
@@ -36,12 +43,62 @@ _DEFAULT_OUTPUT = os.path.normpath(
 COLUMNS = [
     "name",
     "quality_score",
+    "adjusted_quality_score",
     "quality_reasons",
+    "pattern_reasons",
     "duplicate",
     "source",
     "manual_label",
     "notes",
 ]
+
+
+def _get_shape_trust(trust_profile) -> dict[str, float]:
+    """Extract shape_trust from a dict or object, or {}."""
+    if trust_profile is None:
+        return {}
+    if isinstance(trust_profile, dict):
+        return trust_profile.get("shape_trust", {}) or {}
+    return getattr(trust_profile, "shape_trust", {}) or {}
+
+
+def _get_pattern_trust(trust_profile) -> dict[str, float]:
+    """Extract pattern_trust from a dict or object, or {}."""
+    if trust_profile is None:
+        return {}
+    if isinstance(trust_profile, dict):
+        return trust_profile.get("pattern_trust", {}) or {}
+    return getattr(trust_profile, "pattern_trust", {}) or {}
+
+
+def pattern_reasons(name: str, trust_profile=None) -> list[str]:
+    """Return bad-pattern reasons matched by *name* under the trust profile."""
+    trust = _get_pattern_trust(trust_profile)
+    if not trust:
+        return []
+    patterns = extract_name_patterns(name)
+    return [f"bad_pattern:{pattern}" for pattern in sorted(patterns & set(trust))]
+
+
+def adjusted_quality_score(
+    quality_score: float,
+    quality_reasons: list[str],
+    trust_profile=None,
+    *,
+    name: str | None = None,
+) -> float:
+    """Apply learned shape trust to the explicit quality score."""
+    score = quality_score
+    shape_trust = _get_shape_trust(trust_profile)
+    for reason in quality_reasons:
+        key = canonical_quality_reason(reason)
+        if key in DIAGNOSTIC_SHAPE_REASONS:
+            score *= float(shape_trust.get(key, 1.0))
+    if name:
+        pattern_trust = _get_pattern_trust(trust_profile)
+        for pattern in extract_name_patterns(name):
+            score *= float(pattern_trust.get(pattern, 1.0))
+    return max(0.0, min(1.0, score))
 
 
 def generate_names(
@@ -52,8 +109,14 @@ def generate_names(
     source_set: set[str],
     avoid_duplicates: bool = False,
     max_length: int = 20,
+    min_length: int = 3,
+    soft_max_length: int = 12,
+    end_bias: float = 1.0,
+    length_end_bias: float = 1.35,
     trust_profile=None,
     max_attempts: int | None = None,
+    min_adjusted_quality: float | None = None,
+    max_attempts_per_name: int = 50,
 ) -> list[str]:
     """Generate up to *count* distinct names via weighted graph walk.
 
@@ -62,35 +125,61 @@ def generate_names(
     skipped too.  Attempts are capped to avoid spinning on a small graph.
     """
     if max_attempts is None:
-        max_attempts = count * 50 + 100
+        max_attempts = count * max_attempts_per_name + 100
     names: list[str] = []
     seen: set[str] = set()
     attempts = 0
     while len(names) < count and attempts < max_attempts:
         attempts += 1
         name = graph.generate(
-            max_length=max_length, rng=rng, trust_profile=trust_profile
+            max_length=max_length,
+            rng=rng,
+            trust_profile=trust_profile,
+            min_length=min_length,
+            soft_max_length=soft_max_length,
+            end_bias=end_bias,
+            length_end_bias=length_end_bias,
         )
         if not name or name in seen:
             continue
         if avoid_duplicates and name in source_set:
             continue
+        if min_adjusted_quality is not None:
+            score = surname_quality_score(name)
+            reasons = explain_surname_quality(name)
+            adjusted = adjusted_quality_score(
+                score,
+                reasons,
+                trust_profile,
+                name=name,
+            )
+            if adjusted < min_adjusted_quality:
+                continue
         seen.add(name)
         names.append(name)
     return names
 
 
-def build_rows(names: list[str], source_set: set[str], source_label: str) -> list[dict]:
+def build_rows(
+    names: list[str],
+    source_set: set[str],
+    source_label: str,
+    trust_profile=None,
+) -> list[dict]:
     """Build audit rows for *names*, scoring quality and flagging duplicates."""
     rows: list[dict] = []
     for name in names:
         score = surname_quality_score(name)
         reasons = explain_surname_quality(name)
+        adjusted = adjusted_quality_score(score, reasons, trust_profile, name=name)
+        patterns = pattern_reasons(name, trust_profile)
         rows.append(
             {
                 "name": name,
                 "quality_score": f"{score:.4f}",
+                "adjusted_quality_score": f"{adjusted:.4f}",
                 "quality_reasons": "|".join(reasons),
+                "pattern_reasons": "|".join(patterns),
                 "duplicate": "true" if name in source_set else "false",
                 "source": source_label,
                 "manual_label": "",
@@ -121,10 +210,16 @@ def run(
     count: int = 100,
     order: int = 2,
     max_length: int = 20,
+    min_length: int = 3,
+    soft_max_length: int = 12,
+    end_bias: float = 1.0,
+    length_end_bias: float = 1.35,
     seed: int = 42,
     trust_profile_path: str | None = None,
     avoid_duplicates: bool = False,
     column: int | None = None,
+    min_adjusted_quality: float | None = None,
+    max_attempts_per_name: int = 50,
 ) -> dict:
     """Load, build the graph, generate, and write the audit CSV.
 
@@ -148,9 +243,15 @@ def run(
         source_set=source_set,
         avoid_duplicates=avoid_duplicates,
         max_length=max_length,
+        min_length=min_length,
+        soft_max_length=soft_max_length,
+        end_bias=end_bias,
+        length_end_bias=length_end_bias,
         trust_profile=trust_profile,
+        min_adjusted_quality=min_adjusted_quality,
+        max_attempts_per_name=max_attempts_per_name,
     )
-    rows = build_rows(names, source_set, source_label)
+    rows = build_rows(names, source_set, source_label, trust_profile)
     n = write_csv(rows, output_path)
     return {"generated": n, "output": output_path, "source": source_label}
 
@@ -171,7 +272,15 @@ def main() -> None:
     ap.add_argument("--order", type=int, default=2,
                     help="N-gram context order (default: 2)")
     ap.add_argument("--max-length", type=int, default=20, dest="max_length",
-                    help="Maximum generated name length (default: 20)")
+                    help="Hard maximum generated name length (default: 20)")
+    ap.add_argument("--min-length", type=int, default=3, dest="min_length",
+                    help="Minimum length before END is allowed (default: 3)")
+    ap.add_argument("--soft-max-length", type=int, default=12, dest="soft_max_length",
+                    help="Length above which END is progressively boosted (default: 12)")
+    ap.add_argument("--end-bias", type=float, default=1.0, dest="end_bias",
+                    help="Flat END weight multiplier in normal range (default: 1.0)")
+    ap.add_argument("--length-end-bias", type=float, default=1.35, dest="length_end_bias",
+                    help="Per-step END boost exponent above soft-max-length (default: 1.35)")
     ap.add_argument("--seed", type=int, default=42,
                     help="Random seed for reproducible generation (default: 42)")
     ap.add_argument("--column", type=int, default=None,
@@ -180,6 +289,12 @@ def main() -> None:
                     help="Optional learned trust profile JSON to bias generation")
     ap.add_argument("--avoid-duplicates", default="false", dest="avoid_duplicates",
                     help="Skip names already present in the source list (true/false)")
+    ap.add_argument("--min-adjusted-quality", type=float, default=None,
+                    dest="min_adjusted_quality",
+                    help="Optional adjusted-quality threshold for resampling")
+    ap.add_argument("--max-attempts-per-name", type=int, default=50,
+                    dest="max_attempts_per_name",
+                    help="Generation attempts per requested name when filtering (default: 50)")
     args = ap.parse_args()
 
     if not os.path.exists(args.input):
@@ -192,10 +307,16 @@ def main() -> None:
         count=args.count,
         order=args.order,
         max_length=args.max_length,
+        min_length=args.min_length,
+        soft_max_length=args.soft_max_length,
+        end_bias=args.end_bias,
+        length_end_bias=args.length_end_bias,
         seed=args.seed,
         trust_profile_path=args.trust_profile,
         avoid_duplicates=_parse_bool(args.avoid_duplicates),
         column=args.column,
+        min_adjusted_quality=args.min_adjusted_quality,
+        max_attempts_per_name=args.max_attempts_per_name,
     )
     print(
         f"Generated {summary['generated']} names "

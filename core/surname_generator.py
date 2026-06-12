@@ -18,6 +18,12 @@ For an n-gram model of ``order`` n the context is the tuple of the previous n
 emitted symbols, START-padded at the beginning of a name.  Transition keys are
 stable strings of the form ``"<context>-><next_char>"`` (e.g. "ab->r"), which is
 the same key format consumed by the trust profile.
+
+Length-aware generation:
+  ``generate()`` accepts ``min_length``, ``soft_max_length``, ``end_bias`` and
+  ``length_end_bias`` to control how naturally names end.  Before ``min_length``
+  the END token is suppressed; after ``soft_max_length`` it is boosted
+  exponentially with each extra character.
 """
 from __future__ import annotations
 
@@ -194,6 +200,12 @@ class SurnameTransitionGraph:
         context: tuple[str, ...],
         rng: random.Random,
         trust_profile=None,
+        *,
+        current_length: int = 0,
+        min_length: int = 3,
+        soft_max_length: int = 12,
+        end_bias: float = 1.0,
+        length_end_bias: float = 1.35,
     ) -> str:
         """Sample the next symbol for *context* (may be END).
 
@@ -201,6 +213,15 @@ class SurnameTransitionGraph:
         defaults to 1.0 and comes from ``trust_profile``.  If every adjusted
         weight is zero, the walk falls back to the base probabilities.  Returns
         END when the context has no outgoing transitions.
+
+        Length-aware END adjustment (applied after trust):
+          - current_length < min_length: END weight is zeroed (suppressed).
+            If no other transitions exist, END is returned anyway to avoid
+            an infinite loop.
+          - current_length >= soft_max_length: END weight is multiplied by
+            ``length_end_bias ** (current_length - soft_max_length + 1)``.
+          - otherwise: END weight is multiplied by ``end_bias`` (default 1.0
+            = no change).
         """
         probs = self.transition_probs(context)
         if not probs:
@@ -215,9 +236,23 @@ class SurnameTransitionGraph:
             weights = [p * tt.get(transition_key(tuple(context), ch), 1.0)
                        for ch, p in items]
             if sum(weights) <= 0.0:
-                weights = base
+                weights = list(base)
         else:
-            weights = base
+            weights = list(base)
+
+        # Apply length-aware END bias after trust adjustment.
+        if END in chars:
+            end_idx = chars.index(END)
+            if current_length < min_length:
+                weights[end_idx] = 0.0
+                if sum(weights) <= 0.0:
+                    # Only END was available; must terminate despite min_length.
+                    return END
+            elif current_length >= soft_max_length:
+                boost = length_end_bias ** (current_length - soft_max_length + 1)
+                weights[end_idx] *= boost
+            else:
+                weights[end_idx] *= end_bias
 
         return _weighted_choice(chars, weights, rng)
 
@@ -227,6 +262,11 @@ class SurnameTransitionGraph:
         rng: random.Random | None = None,
         trust_profile=None,
         policy=None,
+        *,
+        min_length: int = 3,
+        soft_max_length: int = 12,
+        end_bias: float = 1.0,
+        length_end_bias: float = 1.35,
     ) -> str:
         """Generate one name by a weighted graph walk.
 
@@ -234,13 +274,39 @@ class SurnameTransitionGraph:
         optional ``policy`` callable, if given, is applied to the final string and
         must return the (possibly unchanged) name to return; it is a hook for
         post-processing and does not affect the walk itself.
+
+        Parameters
+        ----------
+        min_length:
+            END is suppressed (weight set to 0) while the current length is
+            below this value.  Default 3.
+        soft_max_length:
+            After this length, END's weight is boosted by
+            ``length_end_bias ** (current_length - soft_max_length + 1)`` at
+            each step, making termination increasingly likely.  Default 12.
+        end_bias:
+            Flat multiplier on END's weight in the normal range
+            [min_length, soft_max_length).  1.0 = no change.
+        length_end_bias:
+            Per-step exponential boost applied to END once the name exceeds
+            ``soft_max_length``.  Values > 1 push names toward shorter output.
+            Default 1.35.
         """
         if rng is None:
             rng = random.Random()
         context = (START,) * self.order
         out: list[str] = []
         while len(out) < max_length:
-            nxt = self.next_char(context, rng, trust_profile=trust_profile)
+            nxt = self.next_char(
+                context,
+                rng,
+                trust_profile=trust_profile,
+                current_length=len(out),
+                min_length=min_length,
+                soft_max_length=soft_max_length,
+                end_bias=end_bias,
+                length_end_bias=length_end_bias,
+            )
             if nxt == END:
                 break
             out.append(nxt)

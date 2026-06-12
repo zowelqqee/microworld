@@ -61,6 +61,60 @@ feedback -> trust profile -> changed behavior on unseen split
 This changes symbolic prediction behavior without neural weights,
 backpropagation, or fine-tuning.
 
+## Generated Name Audit
+
+Generated personal names use a separate compact audit label set:
+
+```text
+good
+unclear
+bad
+```
+
+Label meanings:
+
+- `good`: plausible generated name
+- `unclear`: possible but weak, strange, or uncertain
+- `bad`: clear glued name, fragment, common word, brand, typo-like output, or
+  poor readability
+
+Examples that should normally be labelled `bad`:
+
+```text
+aasyahuvallen
+kahlianevital
+jaileignatty
+ezeridhavina
+kamarisselmir
+fioreniylanie
+momodenciszeki
+qweslienna
+gateuillis
+all
+march
+avito
+kha
+gen
+ter
+kyn
+yia
+```
+
+Name trust learning now stores both character-transition trust and shape trust.
+By default, `good` nudges trust up, `unclear` is weak negative feedback, and
+`bad` is strong negative feedback:
+
+```text
+good    *= 1.04
+unclear *= 0.97
+bad     *= 0.80
+```
+
+Shape trust is learned from diagnostic `quality_reasons` such as `long_name`,
+`too_many_syllable_chunks`, `very_short`, `weird_consonant_cluster`, and
+`no_vowels`. Generic positive reasons such as `reasonable_length` and
+`balanced_vowels` are not treated as negative shape evidence.
+
 ## Feedback Compression
 
 Feedback compression benchmark:

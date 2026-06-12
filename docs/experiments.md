@@ -193,6 +193,243 @@ Interpretation:
 * bad relation or pattern -> lower trust
 * clean prediction with source typo -> keep after normalization
 
+## Name/Surname Generation Experiment
+
+Microworld now demonstrates audit-driven learning in both reasoning suppression
+and small-scale character generation. The generation experiment is a
+makemore-like name generator implemented without neural networks. It uses
+counted character transitions, explicit trust profiles, quality diagnostics,
+and audit-mined bad-pattern trust.
+
+Learning path:
+
+```text
+generated names
+-> human audit labels
+-> explicit transition trust, shape trust, and pattern trust
+-> adjusted generation quality
+-> regenerated names
+```
+
+This path does not use neural weights, backpropagation, or fine-tuning.
+
+Baseline fresh generation:
+
+```text
+good_rate: 0.45
+bad_rate: 0.19
+unclear_rate: 0.36
+generation_precision: 0.7031
+```
+
+Positive and weak-negative trust learning:
+
+```text
+learned v1:
+good_rate: 0.53
+bad_rate: 0.29
+unclear_rate: 0.18
+generation_precision: 0.6463
+
+learned v4 with hand-written diagnostics:
+good_rate: 0.51
+bad_rate: 0.25
+unclear_rate: 0.24
+generation_precision: 0.6711
+```
+
+Conclusion from early attempts:
+
+* transition trust alone changed the output distribution but did not improve
+  precision
+* hand-written shape diagnostics helped locally but did not generalize enough
+* bad outputs still often received high `quality_score` from generic reasons
+  such as `looks like a plausible name`, `reasonable_length`, and
+  `balanced_vowels`
+
+Audit-mined bad-pattern trust:
+
+```text
+good_rate: 0.59
+bad_rate: 0.12
+unclear_rate: 0.29
+generation_precision: 0.8310
+```
+
+Interpretation:
+
+* good rate improved from 0.45 to 0.59
+* bad rate dropped from 0.19 to 0.12
+* precision improved from 0.7031 to 0.8310
+* the improvement came from audit-mined explicit pattern trust, not neural
+  weights or backpropagation
+
+## Makemore vs Microworld Benchmark
+
+The benchmark compares Microworld against a small makemore-style PyTorch MLP.
+Both systems use the same input file, `data/surnames.txt`, and generate 100
+names. Quality is measured only where human labels are available.
+
+Makemore-style baseline setup:
+
+* character-level vocabulary with end token
+* block size 3
+* embedding dimension 16
+* hidden dimension 200
+* 50,000 training steps
+* temperature 0.8
+* SGD with learning-rate decay
+* PyTorch neural model
+
+Quality comparison:
+
+```text
+Microworld:
+good: 59
+bad: 12
+unclear: 29
+good_rate: 0.59
+bad_rate: 0.12
+unclear_rate: 0.29
+generation_precision: 0.8310
+
+Makemore:
+good: 60
+bad: 18
+unclear: 22
+good_rate: 0.60
+bad_rate: 0.18
+unclear_rate: 0.22
+generation_precision: 0.7692
+```
+
+Interpretation:
+
+* Makemore produced one more good name
+* Microworld produced six fewer bad names
+* Microworld had higher human-rated precision in this benchmark: 0.8310 vs
+  0.7692
+* the difference came mainly from stronger bad-output suppression
+
+## Efficiency Benchmark
+
+Runtime and state results:
+
+```text
+Microworld:
+build_transition_graph_time_sec: ~0.0537
+generation_time_sec: ~0.0090
+audit_adaptation_time_sec: ~0.00124
+total_explicit_state_size_bytes: 285,224
+trainable_parameter_count: 0
+uses_backpropagation: false
+uses_neural_weights: false
+
+Makemore:
+training_time_sec: ~10.5
+generation_time_sec: ~0.0321
+model_state_size_bytes: 65,561
+trainable_parameter_count: 15,659
+uses_backpropagation: true
+uses_neural_weights: true
+```
+
+Ratios:
+
+* Makemore training/build path was about 195x slower than Microworld build
+* Makemore generation was about 3.6x slower
+* Makemore serialized state was smaller: about 65.6 KB vs 285.2 KB
+* Microworld used zero trainable parameters
+
+Interpretation:
+
+* Microworld trades compact dense neural state for larger explicit inspectable
+  state
+* Makemore is more compact on disk/state size
+* Microworld is faster and more transparent in this benchmark
+
+## RAM / RSS Benchmark
+
+RSS results:
+
+```text
+Microworld:
+build peak RSS: ~28.6 MB
+generation peak RSS: ~31.2 MB
+audit adaptation peak RSS: ~31.8 MB
+build RSS delta: ~2.1 MB
+generation RSS delta: ~2.5 MB
+audit adaptation RSS delta: ~0.5 MB
+
+Makemore:
+before training RSS: ~184.0 MB
+training peak RSS: ~625.7 MB
+after training RSS: ~481.4 MB
+generation peak RSS: ~485.1 MB
+training RSS delta: ~297.4 MB
+generation RSS delta: ~3.4 MB
+```
+
+Ratios:
+
+* Makemore peak training RSS vs Microworld build peak RSS: about 21.9x higher
+* Makemore peak generation RSS vs Microworld generation peak RSS: about 15.5x
+  higher
+* Makemore training RSS delta vs Microworld build RSS delta: about 143x higher
+
+Caveats:
+
+* RSS includes the Python interpreter, loaded libraries, PyTorch overhead,
+  allocator behavior, and cached memory
+* peak RSS is sampled and approximate
+* serialized state size and runtime RSS are different metrics
+* a future subprocess-isolated benchmark would be cleaner
+
+## Reproduction Commands
+
+Generate the audited Microworld names:
+
+```bash
+python3 examples/surname_generate.py \
+  --input data/surnames.txt \
+  --count 100 \
+  --order 3 \
+  --seed 49 \
+  --avoid-duplicates true \
+  --soft-max-length 10 \
+  --length-end-bias 1.5 \
+  --trust-profile data/name_trust_profile_order3_patterns.json \
+  --min-adjusted-quality 0.85 \
+  --output data/generated_names_order3_patterns.csv
+```
+
+Summarize the manual audit:
+
+```bash
+python3 examples/surname_audit_summary.py \
+  --input data/generated_names_order3_patterns.csv
+```
+
+Run the makemore-vs-Microworld benchmark with memory tracking:
+
+```bash
+python3 examples/makemore_vs_microworld_benchmark.py \
+  --input data/surnames.txt \
+  --count 100 \
+  --order 3 \
+  --seed 50 \
+  --audit data/generated_names_order3_patterns.csv \
+  --trust-profile data/name_trust_profile_order3_patterns.json \
+  --makemore-steps 50000 \
+  --makemore-embedding-dim 16 \
+  --makemore-hidden-dim 200 \
+  --makemore-block-size 3 \
+  --makemore-temperature 0.8 \
+  --track-memory true \
+  --memory-sample-interval-ms 10 \
+  --output data/makemore_vs_microworld_benchmark_memory.json
+```
+
 ## Main Research Conclusion
 
 Microworld supports a narrow but useful result:
@@ -203,18 +440,40 @@ Microworld supports a narrow but useful result:
 * errors can be debugged directly
 * adding explicit policy layers can sharply improve behavior
 * trust memory, decision policy, and normalization should be separate components
+* on one small audited name-generation benchmark, explicit audit-derived memory
+  achieved higher human-rated precision than a small makemore-style MLP baseline
 
 It does not prove that graph systems are generally superior to neural networks.
-It shows that explicit memory and trust learning can be useful for graph-based
-symbolic reasoning tasks where auditability and compact feedback state matter.
+It shows that explicit memory and trust learning can be useful for bounded
+audit-driven tasks where inspectable state and compact feedback memory matter.
+
+## Limitations
+
+* sample size is small: 100 generated names per audited generation run
+* manual audit is subjective
+* current generation results use one dataset
+* current neural comparison uses one makemore-style baseline configuration
+* more seeds are needed
+* larger 500/1000-name runs are needed
+* subprocess-isolated RAM benchmarking would be cleaner
+* the current explicit state is larger than the neural model file
+* results should be treated as experimental evidence, not a general proof
 
 ## Suggested Comparisons
 
 Next research comparisons should include:
 
 * larger audit samples
+* repeat the name benchmark across 3-5 seeds
+* generate and audit 500-1000 samples
 * relation-specific suppression policies
 * normalization candidate export
 * typo/canonicalization layer
 * target normalization with semantic re-evaluation
 * LLM-only memory baselines using long context or transcript history
+* multiple makemore configurations
+* subprocess-isolated memory benchmarks
+* disk-backed Microworld state using SQLite
+* quality-per-RAM, quality-per-training-second, and quality-per-parameter
+* audit-mined trust in other domains: relation filtering, entity normalization,
+  reasoning suppression, and data cleaning

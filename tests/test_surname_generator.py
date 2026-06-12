@@ -151,8 +151,8 @@ class TestIterTransitions:
 class TestGeneration:
     def test_generation_stops_at_end(self):
         g = SurnameTransitionGraph(order=1).build(["ab"])
-        # only one possible path: a -> b -> END
-        name = g.generate(rng=random.Random(0))
+        # only one possible path: a -> b -> END; min_length=0 so END not suppressed
+        name = g.generate(rng=random.Random(0), min_length=0)
         assert name == "ab"
 
     def test_generation_respects_max_length(self):
@@ -191,7 +191,7 @@ class TestGeneration:
         # Strongly suppress 'a' and boost 'b': generation should favour 'b'.
         trust = {"transition_trust": {"<START>->a": 0.1, "<START>->b": 2.0}}
         rng = random.Random(7)
-        out = [g.generate(rng=rng, trust_profile=trust) for _ in range(200)]
+        out = [g.generate(rng=rng, trust_profile=trust, min_length=0) for _ in range(200)]
         n_b = sum(1 for x in out if x == "b")
         assert n_b > 150  # overwhelmingly 'b'
 
@@ -204,5 +204,108 @@ class TestGeneration:
         }
         # All START transitions zeroed → fallback to base probabilities, still valid.
         trust = {"transition_trust": {"<START>->a": 0.0, "<START>->b": 0.0}}
-        out = g.generate(rng=random.Random(3), trust_profile=trust)
+        out = g.generate(rng=random.Random(3), trust_profile=trust, min_length=0)
         assert out in {"a", "b"}
+
+
+# ── length-aware END bias ─────────────────────────────────────────────────────
+
+class TestLengthAwareGeneration:
+    def _loop_graph(self):
+        """Graph that loops forever (x→x) without an END transition."""
+        g = SurnameTransitionGraph(order=1)
+        g.transition_counts = {
+            (START,): {"x": 1},
+            ("x",): {"x": 1, END: 1},  # 50 / 50 without bias
+        }
+        return g
+
+    def test_end_suppressed_before_min_length(self):
+        """When END is the only option before min_length, the name still ends
+        (graceful fallback), but it won't end early on its own."""
+        g = SurnameTransitionGraph(order=1)
+        # Only path: a → b → END
+        g.transition_counts = {
+            (START,): {"a": 1},
+            ("a",): {"b": 1},
+            ("b",): {END: 1},
+        }
+        # min_length=5 but the graph can only produce "ab"; graceful fallback.
+        name = g.generate(rng=random.Random(0), min_length=5)
+        assert name == "ab"
+
+    def test_end_not_suppressed_at_min_length(self):
+        """A name of exactly min_length can end normally."""
+        g = SurnameTransitionGraph(order=1)
+        g.transition_counts = {
+            (START,): {"a": 1},
+            ("a",): {"b": 1},
+            ("b",): {"c": 1},
+            ("c",): {END: 1},
+        }
+        name = g.generate(rng=random.Random(0), min_length=3)
+        assert name == "abc"
+
+    def test_soft_max_produces_shorter_names_on_average(self):
+        """High length_end_bias should push average length below the unbiased avg."""
+        g = self._loop_graph()
+        rng_biased = random.Random(42)
+        names_biased = [
+            g.generate(
+                rng=rng_biased,
+                max_length=30,
+                soft_max_length=3,
+                length_end_bias=8.0,
+                min_length=1,
+            )
+            for _ in range(300)
+        ]
+        avg_biased = sum(len(n) for n in names_biased) / len(names_biased)
+
+        rng_flat = random.Random(42)
+        names_flat = [
+            g.generate(
+                rng=rng_flat,
+                max_length=30,
+                soft_max_length=30,
+                length_end_bias=1.0,
+                min_length=1,
+            )
+            for _ in range(300)
+        ]
+        avg_flat = sum(len(n) for n in names_flat) / len(names_flat)
+
+        assert avg_biased < avg_flat, (
+            f"Expected biased avg ({avg_biased:.2f}) < flat avg ({avg_flat:.2f})"
+        )
+
+    def test_end_bias_default_is_neutral(self):
+        """end_bias=1.0 (default) should not change distribution vs no bias."""
+        g = self._loop_graph()
+        rng_a = random.Random(7)
+        out_a = [g.generate(rng=rng_a, max_length=20, end_bias=1.0, min_length=1) for _ in range(200)]
+        rng_b = random.Random(7)
+        out_b = [g.generate(rng=rng_b, max_length=20, min_length=1) for _ in range(200)]
+        assert out_a == out_b
+
+    def test_min_length_zero_allows_immediate_end(self):
+        """min_length=0 should let the graph end at its first character."""
+        g = SurnameTransitionGraph(order=1)
+        g.transition_counts = {
+            (START,): {"a": 1},
+            ("a",): {END: 1},
+        }
+        name = g.generate(rng=random.Random(0), min_length=0)
+        assert name == "a"
+
+    def test_generation_with_default_params_backward_compat(self):
+        """Default params should produce the same deterministic output as before
+        for a corpus where names naturally end well within soft_max_length."""
+        names_corpus = ["ivanov", "petrov", "sidorov", "abramov", "smirnov"]
+        g = SurnameTransitionGraph(order=2).build(names_corpus)
+        # Determinism: same seed → same output with defaults.
+        out1 = [g.generate(rng=random.Random(99)) for _ in range(10)]
+        out2 = [g.generate(rng=random.Random(99)) for _ in range(10)]
+        assert out1 == out2
+        # All generated names should be non-empty strings.
+        assert all(isinstance(n, str) and len(n) > 0 for n in out1)

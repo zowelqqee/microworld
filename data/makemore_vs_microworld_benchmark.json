@@ -1,0 +1,151 @@
+{
+  "efficiency_ratios": {
+    "generation_time_ratio_makemore_to_microworld": 3.3199363830058854,
+    "parameter_count_ratio_makemore_to_microworld": null,
+    "state_size_ratio_makemore_to_microworld": 0.22985793621855102,
+    "training_time_ratio_makemore_to_microworld": 130.495080369692
+  },
+  "input": {
+    "audit_path": "data/generated_names_order3_patterns.csv",
+    "count": 100,
+    "input_path": "data/surnames.txt",
+    "makemore_batch_size": 32,
+    "makemore_block_size": 3,
+    "makemore_embedding_dim": 16,
+    "makemore_hidden_dim": 200,
+    "makemore_learning_rate": 0.1,
+    "makemore_max_length": 16,
+    "makemore_min_length": 3,
+    "makemore_steps": 50000,
+    "makemore_temperature": 0.8,
+    "order": 3,
+    "run_makemore": true,
+    "seed": 50,
+    "trust_profile_path": "data/name_trust_profile_order3_patterns.json"
+  },
+  "makemore": {
+    "available": true,
+    "config": {
+      "batch_size": 32,
+      "block_size": 3,
+      "embedding_dim": 16,
+      "hidden_dim": 200,
+      "learning_rate": 0.1,
+      "max_length": 16,
+      "min_length": 3,
+      "steps": 50000,
+      "temperature": 0.8
+    },
+    "dev_loss": 2.1204872131347656,
+    "final_loss": 2.0845329761505127,
+    "generated_count": 100,
+    "generated_csv": "/Users/arseniyabramidze/mini-worldgrad/worldmvp/data/generated_names_makemore_benchmark.csv",
+    "generated_csv_write_skipped_reason": "existing manual labels present; pass --force to overwrite",
+    "generated_csv_written": false,
+    "generation_time_sec": 0.03344420890789479,
+    "initial_loss": 3.309166431427002,
+    "loss_log": [
+      {
+        "learning_rate": 0.1,
+        "loss": 3.2897825241088867,
+        "step": 1
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.5532774925231934,
+        "step": 5000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.4181368350982666,
+        "step": 10000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.611264228820801,
+        "step": 15000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.227750062942505,
+        "step": 20000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.3097028732299805,
+        "step": 25000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.0407378673553467,
+        "step": 30000
+      },
+      {
+        "learning_rate": 0.1,
+        "loss": 2.1892263889312744,
+        "step": 35000
+      },
+      {
+        "learning_rate": 0.010000000000000002,
+        "loss": 1.997847080230713,
+        "step": 40000
+      },
+      {
+        "learning_rate": 0.010000000000000002,
+        "loss": 2.145719289779663,
+        "step": 45000
+      },
+      {
+        "learning_rate": 0.010000000000000002,
+        "loss": 2.165576219558716,
+        "step": 50000
+      }
+    ],
+    "model_state_size_bytes": 65561,
+    "parameter_count": 15659,
+    "rejected_samples": 0,
+    "train_loss": 2.0845329761505127,
+    "trainable_parameter_count": 15659,
+    "training_time_sec": 10.717299957992509,
+    "uses_backpropagation": true,
+    "uses_neural_weights": true
+  },
+  "microworld": {
+    "audit_adaptation_state_size_bytes": 13094,
+    "audit_adaptation_time_sec": 0.0013021669583395123,
+    "audit_rows_used": 100,
+    "build_transition_graph_time_sec": 0.08212799998000264,
+    "generated_count": 100,
+    "generation_time_sec": 0.010073749930597842,
+    "total_explicit_state_size_bytes": 285224,
+    "trainable_parameter_count": 0,
+    "transition_count": 24783,
+    "transition_graph_state_size_bytes": 266735,
+    "trust_profile_load_time_sec": 0.0003998340107500553,
+    "trust_profile_size_bytes": 18489,
+    "uses_backpropagation": false,
+    "uses_neural_weights": false
+  },
+  "quality": {
+    "audited_makemore": {
+      "bad": 18,
+      "bad_rate": 0.18,
+      "generation_precision": 0.7692307692307693,
+      "good": 60,
+      "good_rate": 0.6,
+      "reviewed": 100,
+      "unclear": 22,
+      "unclear_rate": 0.22
+    },
+    "audited_microworld": {
+      "bad": 12,
+      "bad_rate": 0.12,
+      "generation_precision": 0.8309859154929577,
+      "good": 59,
+      "good_rate": 0.59,
+      "reviewed": 100,
+      "unclear": 29,
+      "unclear_rate": 0.29
+    }
+  }
+}

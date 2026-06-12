@@ -152,3 +152,184 @@ class TestScoring:
     def test_explain_flags_very_short_for_two_chars(self):
         reasons = explain_surname_quality("ea")
         assert any("very short" in r for r in reasons)
+
+
+# ── generated-name plausibility thresholds ────────────────────────────────────
+
+class TestGeneratedNameScoreThresholds:
+    """Verify that plausible generated names score high and glued/overlong names
+    score proportionally lower.  These are the canonical quality benchmarks."""
+
+    # High-quality generated examples — must score above threshold
+    @pytest.mark.parametrize("name,threshold", [
+        ("majanis",   0.75),
+        ("chelis",    0.75),
+        ("romaura",   0.70),
+        ("levaughn",  0.75),
+        ("eleanor",   0.80),
+        ("dutton",    0.80),
+    ])
+    def test_plausible_names_score_above_threshold(self, name, threshold):
+        score = surname_quality_score(name)
+        assert score >= threshold, (
+            f"{name!r} expected >= {threshold}, got {score:.4f}; "
+            f"reasons: {explain_surname_quality(name)}"
+        )
+
+    # Overlong / glued names — must score below ceiling
+    @pytest.mark.parametrize("name,ceiling", [
+        ("nalicelahuvaanvita", 0.45),
+        ("lochukroyannah",     0.60),
+        ("skyylanahogan",      0.65),
+    ])
+    def test_overlong_names_score_below_ceiling(self, name, ceiling):
+        score = surname_quality_score(name)
+        assert score < ceiling, (
+            f"{name!r} expected < {ceiling}, got {score:.4f}; "
+            f"reasons: {explain_surname_quality(name)}"
+        )
+
+    def test_two_letter_names_below_one_and_has_very_short(self):
+        for name in ("ea", "li", "ty"):
+            score = surname_quality_score(name)
+            assert score < 1.0, f"{name!r} should score < 1.0, got {score}"
+            reasons = explain_surname_quality(name)
+            assert any("very short" in r for r in reasons), (
+                f"{name!r} missing 'very short' in reasons: {reasons}"
+            )
+
+
+# ── audit-derived bad-name diagnostics ───────────────────────────────────────
+
+class TestAuditBadNameDiagnostics:
+    @pytest.mark.parametrize("name,reason,ceiling", [
+        ("lovelo", "nickname_like", 0.80),
+        ("march", "common_word_like", 0.80),
+        ("avito", "brand_like", 0.80),
+        ("all", "common_word_like", 0.70),
+        ("loch", "common_word_like", 0.80),
+    ])
+    def test_common_brand_and_nickname_like_forms_penalized(
+        self, name, reason, ceiling
+    ):
+        reasons = explain_surname_quality(name)
+        score = surname_quality_score(name)
+        assert reason in reasons, reasons
+        assert score < ceiling, (name, score, reasons)
+
+    @pytest.mark.parametrize("name", ["kyn", "yia", "gen", "kha", "ter", "nne", "jid"])
+    def test_short_fragments_are_not_perfect_names(self, name):
+        reasons = explain_surname_quality(name)
+        score = surname_quality_score(name)
+        assert (
+            "too_fragmentary" in reasons or "awkward_short_form" in reasons
+        ), reasons
+        assert score < 0.75, (name, score, reasons)
+
+    def test_qweslienna_has_q_or_glued_diagnostic(self):
+        reasons = explain_surname_quality("qweslienna")
+        score = surname_quality_score("qweslienna")
+        assert (
+            "weird_q_usage" in reasons or "medium_glued_name" in reasons
+        ), reasons
+        assert score < 0.80, (score, reasons)
+
+    def test_gateuillis_has_poor_readability(self):
+        reasons = explain_surname_quality("gateuillis")
+        score = surname_quality_score("gateuillis")
+        assert "poor_readability" in reasons, reasons
+        assert score < 0.80, (score, reasons)
+
+    @pytest.mark.parametrize("name", [
+        "latalille",
+        "brighteme",
+        "nafranimi",
+        "roaryonnia",
+        "sauldenyx",
+        "evreekahl",
+        "journesten",
+    ])
+    def test_medium_artificial_glued_forms_are_penalized(self, name):
+        reasons = explain_surname_quality(name)
+        score = surname_quality_score(name)
+        assert (
+            "medium_glued_name" in reasons or "poor_readability" in reasons
+        ), (name, reasons)
+        assert score < 0.85, (name, score, reasons)
+
+    @pytest.mark.parametrize("name,threshold", [
+        ("majanis", 0.75),
+        ("chelis", 0.75),
+        ("romaura", 0.70),
+        ("levaughn", 0.75),
+        ("khadan", 0.75),
+        ("zephana", 0.75),
+        ("jazeli", 0.75),
+        ("jakaria", 0.75),
+        ("selyn", 0.75),
+        ("kataliza", 0.75),
+        ("ahrianna", 0.75),
+        ("delaine", 0.75),
+    ])
+    def test_plausible_audit_examples_remain_high_enough(self, name, threshold):
+        score = surname_quality_score(name)
+        reasons = explain_surname_quality(name)
+        assert score >= threshold, (name, score, reasons)
+
+
+# ── quality reason content for overlong names ─────────────────────────────────
+
+class TestOverlongNameReasons:
+    """Check that the right penalty tags appear for overlong/glued names."""
+
+    def test_extremely_long_reason(self):
+        reasons = explain_surname_quality("nalicelahuvaanvita")
+        assert "extremely_long" in reasons, reasons
+
+    def test_too_long_reason_for_15plus(self):
+        # shlizevoneenaton is 16 chars → too_long tier (15-17)
+        reasons = explain_surname_quality("shlizevoneenaton")
+        assert "too_long" in reasons, reasons
+
+    def test_long_name_reason_for_lochukroyannah(self):
+        # lochukroyannah is 14 chars → long_name tier (12-14)
+        reasons = explain_surname_quality("lochukroyannah")
+        assert "long_name" in reasons, reasons
+
+    def test_long_name_reason_for_skyylanahogan(self):
+        reasons = explain_surname_quality("skyylanahogan")
+        assert "long_name" in reasons, reasons
+
+    def test_too_many_syllable_chunks_in_nalicelahuvaanvita(self):
+        reasons = explain_surname_quality("nalicelahuvaanvita")
+        assert "too_many_syllable_chunks" in reasons, reasons
+
+    def test_too_many_syllable_chunks_in_lochukroyannah(self):
+        # 4 nuclei + length 14 → too_many_syllable_chunks
+        reasons = explain_surname_quality("lochukroyannah")
+        assert "too_many_syllable_chunks" in reasons, reasons
+
+
+# ── positive informational reasons ────────────────────────────────────────────
+
+class TestPositiveReasons:
+    """Check that positive signals appear in the reasons for clean names."""
+
+    def test_reasonable_length_in_short_names(self):
+        for name in ("majanis", "chelis", "dutton"):
+            reasons = explain_surname_quality(name)
+            assert "reasonable_length" in reasons, (
+                f"{name!r} missing reasonable_length: {reasons}"
+            )
+
+    def test_balanced_vowels_in_clean_names(self):
+        for name in ("majanis", "levaughn", "dutton"):
+            reasons = explain_surname_quality(name)
+            assert "balanced_vowels" in reasons, (
+                f"{name!r} missing balanced_vowels: {reasons}"
+            )
+
+    def test_common_name_ending_for_known_suffixes(self):
+        # "ivanov" ends in "ov" which is in ALLOWED_ENDINGS
+        reasons = explain_surname_quality("ivanov")
+        assert "common_name_ending" in reasons, reasons

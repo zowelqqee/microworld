@@ -1,0 +1,87 @@
+{
+  "available": true,
+  "config": {
+    "batch_size": 32,
+    "block_size": 3,
+    "embedding_dim": 16,
+    "hidden_dim": 200,
+    "learning_rate": 0.1,
+    "max_length": 16,
+    "min_length": 3,
+    "steps": 50000,
+    "temperature": 0.8
+  },
+  "dev_loss": 2.1204872131347656,
+  "final_loss": 2.0845329761505127,
+  "generated_count": 100,
+  "generated_csv": "data/generated_names_makemore_benchmark.csv",
+  "generated_csv_write_skipped_reason": null,
+  "generated_csv_written": true,
+  "generation_time_sec": 0.02288666693493724,
+  "initial_loss": 3.309166431427002,
+  "loss_log": [
+    {
+      "learning_rate": 0.1,
+      "loss": 3.2897825241088867,
+      "step": 1
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.5532774925231934,
+      "step": 5000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.4181368350982666,
+      "step": 10000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.611264228820801,
+      "step": 15000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.227750062942505,
+      "step": 20000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.3097028732299805,
+      "step": 25000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.0407378673553467,
+      "step": 30000
+    },
+    {
+      "learning_rate": 0.1,
+      "loss": 2.1892263889312744,
+      "step": 35000
+    },
+    {
+      "learning_rate": 0.010000000000000002,
+      "loss": 1.997847080230713,
+      "step": 40000
+    },
+    {
+      "learning_rate": 0.010000000000000002,
+      "loss": 2.145719289779663,
+      "step": 45000
+    },
+    {
+      "learning_rate": 0.010000000000000002,
+      "loss": 2.165576219558716,
+      "step": 50000
+    }
+  ],
+  "model_state_size_bytes": 65561,
+  "parameter_count": 15659,
+  "rejected_samples": 0,
+  "train_loss": 2.0845329761505127,
+  "trainable_parameter_count": 15659,
+  "training_time_sec": 11.569922750000842,
+  "uses_backpropagation": true,
+  "uses_neural_weights": true
+}

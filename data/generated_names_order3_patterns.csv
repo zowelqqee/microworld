@@ -1,0 +1,101 @@
+name,quality_score,adjusted_quality_score,quality_reasons,pattern_reasons,duplicate,source,manual_label,notes
+hage,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/ник
+rajvionnah,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:vi,False,learned,bad,"перегруженная склейка, плохая читаемость"
+caito,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+nesma,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,good,реально звучит как имя
+maizyaun,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя/ник"
+fizzy,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,"обычное слово/ник, не хорошее имя"
+abetzivion,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:vi,False,learned,bad,"склейка, плохая читаемость"
+harose,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя/фамилия"
+patianna,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:at,False,learned,good,звучит как имя
+prayna,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+oliya,1.0,1.0,looks like a plausible name|reasonable_length,,False,learned,good,реально звучит как имя
+kwab,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно ник/имя"
+jarvi,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:vi,False,learned,good,звучит как фамилия/ник
+pipe,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,обычное слово
+vick,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:vi,False,learned,good,реально звучит как имя/ник
+zayersay,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странная склейка, но читается"
+abdulmah,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,похоже на имя
+arsyn,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+pangelina,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,bad,"склейка с Angelina, выглядит искусственно"
+saheima,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+hersyona,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,имяобразное
+nealaini,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ni,False,learned,unclear,"склеено, но возможно имя"
+malaindi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя"
+raegacelsie,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ie,False,learned,bad,перегруженная склейка
+coppi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/ник
+ayde,1.0,1.0,looks like a plausible name|reasonable_length,,False,learned,good,"короткое, но имяобразное"
+josha,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,похоже на имя
+ahmaddaia,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"длинновато и склеено, но возможно имя"
+tuly,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно ник/имя"
+jessley,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,good,звучит как имя
+dily,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:il,False,learned,unclear,"короткое и странное, но возможно ник/имя"
+jayliannah,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:yl,False,learned,good,"длинновато, но звучит как имя"
+melquie,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ie,False,learned,unclear,"странная орфография, но возможно имя"
+anys,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно ник/имя"
+nadalie,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ie,False,learned,good,звучит как имя
+syedi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя"
+solston,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/ник
+ebubeylah,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:yl,False,learned,unclear,"странное, но возможно имя"
+otissyn,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+orstyn,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/фамилия
+irise,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+mahirimeye,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"склеено, но возможно имя"
+jestii,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,unclear,"странная орфография, но возможно ник"
+adesidney,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,unclear,"склейка с Sidney, но возможно имя"
+saarina,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,good,реально звучит как имя
+myogi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/ник
+vang,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,реально звучит как фамилия
+cheria,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+harlson,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,good,звучит как фамилия/имя
+izandela,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+colandro,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/фамилия
+nayle,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:yl,False,learned,good,звучит как имя/фамилия
+xandry,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+yesha,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,good,звучит как имя
+rhensel,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:en,False,learned,good,звучит как фамилия/ник
+elvon,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+booming,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,обычное слово
+vari,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,"короткое, но имяобразное"
+meisherdis,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,"склейка, плохая естественность"
+fabrick,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,"похоже на слово fabric/brick, плохое имя"
+ramia,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,реально звучит как имя
+besandra,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:es,False,learned,unclear,"склейка, но возможно имя"
+ziski,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,good,звучит как фамилия/ник
+emalianah,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,"длинновато, но звучит как имя"
+dantayleah,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:yl,False,learned,unclear,"длинная склейка, но возможно имя"
+oshur,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+patraya,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:at,False,learned,good,звучит как имя
+wakendy,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:en,False,learned,unclear,"похоже на Wendy-склейку, спорно"
+hardine,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/имя
+toriah,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+jenn,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:en,False,learned,good,реально имя/ник
+hunga,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя/ник"
+cashyairi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странная склейка, но читается"
+kannah,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+deir,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"коротко и странно, но возможно ник"
+jeraya,1.0,1.0,looks like a plausible name|reasonable_length,,False,learned,good,звучит как имя
+adaric,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+klinn,1.0,1.0,looks like a plausible name|reasonable_length,,False,learned,good,звучит как фамилия/ник
+gryffi,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"похоже на nickname/fantasy, спорно"
+zahis,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,имяобразное
+amayanna,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+kenyx,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:en,False,learned,good,звучит как ник/имя
+zippa,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"похоже на слово/ник, но возможно"
+parkon,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/ник
+afnandon,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странное, но возможно имя/фамилия"
+necartiel,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ie,False,learned,unclear,"склеено, но возможно имя"
+nithan,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ni,False,learned,good,звучит как имя
+phone,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,обычное слово
+cobransh,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,bad,"склейка, плохая читаемость"
+azhio,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+yannon,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как фамилия/имя
+wilbeima,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:il,False,learned,unclear,"склейка, но возможно имя"
+jupitanna,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"склейка Jupiter/anna, спорно"
+nyemauraj,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,unclear,"странная склейка, но читается"
+daciana,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,реально звучит как имя
+harik,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя
+daliyan,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,good,звучит как имя
+bladelayin,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels|common_name_ending,,False,learned,bad,склейка с обычным словом blade
+bael,1.0,1.0,looks like a plausible name|reasonable_length|balanced_vowels,,False,learned,good,звучит как имя/ник
+felie,1.0,0.85,looks like a plausible name|reasonable_length|balanced_vowels,bad_pattern:ie,False,learned,good,звучит как имя
