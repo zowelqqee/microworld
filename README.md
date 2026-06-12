@@ -17,6 +17,29 @@ Current test status:
 1043 passing tests
 ```
 
+## Navigation
+
+* [Why This Exists](#why-this-exists)
+* [Current Architecture](#current-architecture)
+* [Latest Experimental Results](#latest-experimental-results)
+  * [Human Audit Baseline](#human-audit-baseline)
+  * [Audit-Driven Trust Learning](#audit-driven-trust-learning)
+  * [Feedback Compression](#feedback-compression)
+  * [Suppression Audit](#suppression-audit)
+  * [Quality-Aware Suppression](#quality-aware-suppression)
+  * [Microworld-style Name/Surname Generation](#microworld-style-namesurname-generation)
+  * [Latest Name/Surname Generation Results](#latest-namesurname-generation-results)
+  * [Makemore vs Microworld Benchmark](#makemore-vs-microworld-benchmark)
+  * [Efficiency Benchmark](#efficiency-benchmark)
+  * [RAM / RSS Benchmark](#ram--rss-benchmark)
+  * [Careful Research Claim](#careful-research-claim)
+* [What Was Learned](#what-was-learned)
+* [Running](#running)
+* [Documentation](#documentation)
+* [Limitations](#limitations)
+* [Next Steps](#next-steps)
+* [Status](#status)
+
 ## Why This Exists
 
 Modern AI systems are powerful, but much of their knowledge and behavior is
