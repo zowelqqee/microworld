@@ -266,7 +266,7 @@ class ExplicitSenseMemory:
                 "clause_after_and": ["the player took a swing"],
                 "clause_after_as": ["the pitcher released the ball"],
                 "clause_after_until_subject": ["the pitcher threw the ball"],
-                "clause_after_before_subject": ["the player took a swing"],
+                "clause_after_before_subject": ["the player took a swing", "he steadied himself"],
                 "clause_after_when_subject": ["the player took a swing"],
                 "neutral_extension": ["and hit the ball", "and the player dropped the bat"],
             },
@@ -278,7 +278,7 @@ class ExplicitSenseMemory:
             ["swam through the cold water", "balanced on the rock", "looked for fish"],
             {
                 "infinitive_after_to": ["catch another fish"],
-                "clause_after_and": ["it dove below the surface"],
+                "clause_after_and": ["it dove below the surface", "it surfaced for air"],
                 "clause_after_as": ["it followed the fish"],
                 "clause_after_until_subject": ["it reached the deeper water"],
                 "clause_after_before_subject": ["dove below the surface"],
@@ -339,7 +339,7 @@ class ExplicitSenseMemory:
             ["brought warmer days", "filled the garden with flowers", "came after winter"],
             {
                 "infinitive_after_to": ["bring warmer days"],
-                "clause_after_and": ["the garden filled with flowers"],
+                "clause_after_and": ["the garden filled with flowers", "the flowers opened"],
                 "clause_after_as": ["the weather warmed"],
                 "clause_after_until_subject": ["the rain softened the ground"],
                 "clause_after_before_subject": ["the weather warmed"],
@@ -354,7 +354,7 @@ class ExplicitSenseMemory:
             ["compressed under pressure", "snapped back into place", "stored mechanical energy"],
             {
                 "infinitive_after_to": ["store mechanical energy"],
-                "clause_after_and": ["the mechanism snapped back"],
+                "clause_after_and": ["the mechanism snapped back", "the tension released"],
                 "clause_after_as": ["the device compressed it"],
                 "clause_after_until_subject": ["the latch released"],
                 "clause_after_before_subject": ["the mechanism snapped back"],
@@ -370,7 +370,7 @@ class ExplicitSenseMemory:
             ["rolled down the hill", "lay near the river", "broke into smaller stones"],
             {
                 "infinitive_after_to": ["roll down the hill"],
-                "clause_after_and": ["it scraped the ground"],
+                "clause_after_and": ["it scraped the ground", "it rolled downhill"],
                 "clause_after_as": ["it slid down the slope"],
                 "clause_after_until_subject": ["it reached the ground"],
                 "clause_after_before_subject": ["scraped the ground"],

@@ -1,7 +1,8 @@
 """Deterministic controlled continuation engine.
 
-Pipeline: parse prompt -> score senses -> apply policy -> emit constrained continuation
-with reasons, memory hits, and per-sense scores for auditing.
+Pipeline: parse prompt -> score senses -> apply policy -> build semantic frame ->
+generate/validate/rank candidate continuations (semantic renderer v2) -> emit the
+best safe candidate, with reasons, memory hits, and per-sense scores for auditing.
 """
 
 from __future__ import annotations
@@ -10,9 +11,14 @@ from typing import Optional
 
 from worldpgt.continuation.continuation_policy import ContinuationPolicy
 from worldpgt.continuation.prompt_parser import parse_continuation_prompt
-from worldpgt.continuation.realization import classify_prompt_ending, compose_continuation
+from worldpgt.continuation.realization import ENDING_NEUTRAL, classify_prompt_ending
+from worldpgt.continuation.semantic_frame import build_semantic_frame
+from worldpgt.continuation.semantic_renderer import (
+    RENDERER_NAME,
+    make_frame_candidates,
+    rank_frame_candidates,
+)
 from worldpgt.continuation.sense_memory import ExplicitSenseMemory
-from worldpgt.continuation.surface_validator import validate_surface_text
 from worldpgt.continuation.types import ContinuationResult
 
 
@@ -71,15 +77,16 @@ class ControlledContinuationEngine:
                 None,
             )
             if selected_entry is not None:
-                continuation = compose_continuation(prompt, selected_entry, ending_type)
-                validation = validate_surface_text(prompt, continuation)
-                if not validation.ok:
-                    verdict.decision = "audit"
-                    verdict.reasons.append("audit_reason=surface_realization_risk")
-                    verdict.reasons.extend(validation.reasons)
-                    for pattern in validation.matched_patterns:
-                        memory_hits.append(f"surface_risk={pattern}")
-                    continuation = ""
+                continuation = self._render(
+                    prompt,
+                    parsed.ambiguous_term or "",
+                    verdict.selected_sense,
+                    selected_entry,
+                    ending_type,
+                    evidence,
+                    verdict,
+                    memory_hits,
+                )
         # audit and suppress both return an empty continuation: never hallucinate.
 
         if verdict.selected_sense is not None:
@@ -96,3 +103,60 @@ class ControlledContinuationEngine:
             memory_hits=memory_hits,
             sense_scores=sense_scores,
         )
+
+    def _render(
+        self,
+        prompt: str,
+        term: str,
+        sense_id: str,
+        selected_entry,
+        ending_type: str,
+        evidence,
+        verdict,
+        memory_hits: list[str],
+    ) -> str:
+        """Build, validate, and rank semantic candidates; emit the best or audit."""
+        templates = selected_entry.continuation_templates
+        phrases = (
+            templates.get(ending_type)
+            or templates.get(ENDING_NEUTRAL)
+            or selected_entry.continuations
+        )
+        frame = build_semantic_frame(
+            prompt,
+            term,
+            sense_id,
+            list(evidence.evidence_notes) if evidence is not None else [],
+        )
+        memory_hits.append(f"semantic_frame_intent={frame.intent}")
+        memory_hits.append(f"renderer={RENDERER_NAME}")
+
+        candidates = make_frame_candidates(prompt, frame, list(phrases))
+        memory_hits.append(f"candidate_count={len(candidates)}")
+
+        best = rank_frame_candidates(prompt, candidates)
+        if best is not None:
+            phrase_part = best.text[len(prompt.rstrip()):].strip()
+            memory_hits.append(f"selected_candidate={phrase_part}")
+            return best.text
+
+        # No safe candidate: audit, never emit. Preserve surface-risk reporting.
+        self._audit_no_safe_candidate(candidates, verdict, memory_hits)
+        return ""
+
+    @staticmethod
+    def _audit_no_safe_candidate(candidates, verdict, memory_hits: list[str]) -> None:
+        verdict.decision = "audit"
+        surface_patterns: list[str] = []
+        for candidate in candidates:
+            for reason in candidate.reasons:
+                if reason.startswith("surface_pattern="):
+                    pattern = reason.split("=", 1)[1]
+                    if pattern not in surface_patterns:
+                        surface_patterns.append(pattern)
+        if surface_patterns:
+            verdict.reasons.append("audit_reason=surface_realization_risk")
+            for pattern in surface_patterns:
+                verdict.reasons.append(f"surface_pattern={pattern}")
+                memory_hits.append(f"surface_risk={pattern}")
+        verdict.reasons.append("audit_reason=no_safe_semantic_candidate")
