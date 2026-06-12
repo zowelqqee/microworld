@@ -11,7 +11,7 @@ def test_financial_bank_prompt_selects_financial_institution():
     result = engine.continue_prompt("He put money into his account at the bank")
     assert result.decision == "continue"
     assert result.selected_sense == "financial_institution"
-    assert result.continuation == "He put money into his account at the bank open an account"
+    assert result.continuation == "He put money into his account at the bank and completed the transaction"
 
 
 def test_river_bank_prompt_selects_river_edge():
@@ -19,7 +19,7 @@ def test_river_bank_prompt_selects_river_edge():
     result = engine.continue_prompt("The fisherman sat by the river near the bank")
     assert result.decision == "continue"
     assert result.selected_sense == "river_edge"
-    assert result.continuation.endswith("cast his line")
+    assert result.continuation.endswith("and watched the current")
 
 
 def test_bat_flew_prompt_selects_animal():

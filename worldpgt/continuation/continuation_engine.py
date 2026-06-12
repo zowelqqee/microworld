@@ -10,7 +10,9 @@ from typing import Optional
 
 from worldpgt.continuation.continuation_policy import ContinuationPolicy
 from worldpgt.continuation.prompt_parser import parse_continuation_prompt
+from worldpgt.continuation.realization import classify_prompt_ending, compose_continuation
 from worldpgt.continuation.sense_memory import ExplicitSenseMemory
+from worldpgt.continuation.surface_validator import validate_surface_text
 from worldpgt.continuation.types import ContinuationResult
 
 
@@ -58,9 +60,26 @@ class ControlledContinuationEngine:
 
         continuation = ""
         if verdict.decision == "continue" and verdict.selected_sense is not None:
-            selected_continuations = continuations.get(verdict.selected_sense, [])
-            if selected_continuations:
-                continuation = prompt + " " + selected_continuations[0]
+            ending_type = classify_prompt_ending(prompt)
+            memory_hits.append(f"realization_type={ending_type}")
+            selected_entry = next(
+                (
+                    entry
+                    for entry in self.memory.get_senses(parsed.ambiguous_term or "")
+                    if entry.sense_id == verdict.selected_sense
+                ),
+                None,
+            )
+            if selected_entry is not None:
+                continuation = compose_continuation(prompt, selected_entry, ending_type)
+                validation = validate_surface_text(prompt, continuation)
+                if not validation.ok:
+                    verdict.decision = "audit"
+                    verdict.reasons.append("audit_reason=surface_realization_risk")
+                    verdict.reasons.extend(validation.reasons)
+                    for pattern in validation.matched_patterns:
+                        memory_hits.append(f"surface_risk={pattern}")
+                    continuation = ""
         # audit and suppress both return an empty continuation: never hallucinate.
 
         if verdict.selected_sense is not None:

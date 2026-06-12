@@ -14,6 +14,7 @@ class SenseEntry:
     sense_id: str
     cues: list[str]
     continuations: list[str]
+    continuation_templates: dict[str, list[str]] = field(default_factory=dict)
     trust: float = 1.0
 
 

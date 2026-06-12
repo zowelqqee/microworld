@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 from collections import Counter
+from pathlib import Path
 
 import pytest
 
@@ -11,7 +12,7 @@ from worldpgt.experiments.run_v1_microworld_continuation import OUTPUT_FIELDS, r
 from worldpgt.experiments.summarize_v1_microworld_results import summarize
 
 
-PROMPTS_PATH = "worldpgt/experiments/continuation_prompts_v1.csv"
+PROMPTS_PATH = Path(__file__).resolve().parents[1] / "experiments" / "continuation_prompts_v1.csv"
 REQUIRED_COLUMNS = [
     "id",
     "prompt",
