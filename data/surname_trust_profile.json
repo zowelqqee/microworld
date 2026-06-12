@@ -1,0 +1,10 @@
+{
+  "order": 2,
+  "stats": {
+    "bad": 0,
+    "good": 0,
+    "reviewed": 0,
+    "unclear": 0
+  },
+  "transition_trust": {}
+}

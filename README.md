@@ -213,6 +213,83 @@ Current interpretation:
 * bad relation or pattern -> lower trust
 * clean prediction with a source typo -> keep after normalization
 
+### Microworld-style Name/Surname Generation
+
+A makemore-like character generation experiment, implemented as an explicit
+graph transition system rather than a neural network. It tests whether feedback
+can improve generation through a compact per-transition *trust* profile instead
+of weight updates and backpropagation.
+
+**Input dataset.** The experiment works with any one-name-per-line text file —
+given names, family names, or a mixed personal-name list. The provided
+`data/names.txt` contains a mix of both; the generator makes no assumption
+about name type. The goal is not "real surname realism" specifically, but
+testing graph-based character generation, audit feedback compression, and
+explicit trust learning without neural weights or backpropagation.
+
+Each name is treated as a START-padded sequence of character transitions; for
+n-gram order 2 the name `ABRAMIDZE` becomes:
+
+```text
+<START><START> -> a
+<START>a       -> b
+ab             -> r
+br             -> a
+...
+ze             -> <END>
+```
+
+The pipeline is the same shape as the rest of Microworld — generate, audit,
+compress feedback, regenerate, compare:
+
+```text
+name list (given names / surnames / mixed)
+-> character-transition graph (counts only)
+-> weighted graph walk
+-> quality policy (vowel balance, clusters, length, punctuation, duplicates)
+-> manual audit (good / bad / unclear)
+-> compact transition trust profile (good *= 1.05, bad *= 0.85, bounded 0.1..2.0)
+-> regenerate with learned trust
+-> baseline vs learned comparison
+```
+
+There are no weights and no backprop anywhere: generation is a counted random
+walk, and "learning" is a small JSON of per-transition multipliers that biases
+the walk. The quality policy is intentionally not Anglo-centric and does not
+require classic surname endings — common Russian, Georgian, Armenian and
+European endings (`ov`, `ova`, `dze`, `shvili`, `yan`, `ian`, `sky`, …) are
+treated as *positive signals* that relax some checks, but their absence is not
+penalised. Given-name-like outputs such as `eleanor`, `eldrick`, and `ebraheem`
+score as high quality.
+
+This is **not** meant to beat neural character generators. The point is
+interpretability, auditability, compact feedback learning, and explicit control:
+every transition, score, and trust nudge is inspectable, and feedback is stored
+as a few hundred bytes of multipliers rather than a weight matrix.
+
+Run it:
+
+```bash
+# 1. baseline generation + audit export (works with any name list)
+python3 examples/surname_generate.py --input data/names.txt --count 100 --order 2 \
+    --output data/generated_names.csv
+
+# 2. label the manual_label column with good / bad / unclear, then:
+python3 examples/surname_audit_summary.py --input data/generated_names.csv
+
+# 3. compress the labelled audit into a trust profile
+python3 examples/surname_trust_learn.py --input data/generated_names.csv \
+    --order 2 --output data/surname_trust_profile.json
+
+# 4. regenerate with learned trust
+python3 examples/surname_generate.py --input data/names.txt --order 2 \
+    --trust-profile data/surname_trust_profile.json --output data/generated_learned.csv
+
+# or run the whole baseline-vs-learned experiment in one shot
+python3 examples/surname_generation_experiment.py --input data/names.txt --order 2 \
+    --trust-profile data/surname_trust_profile.json
+```
+
 ## What Was Learned
 
 The main research conclusion is deliberately modest:
