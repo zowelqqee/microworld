@@ -5,8 +5,8 @@ as explicit nodes and typed relations, then studies which symbolic reasoning
 rules work, where they break, and how failures can be explained.
 
 The current project is not a neural model and does not use a trainable
-`weights + biases` scorer.  Confidence is computed from interpretable graph
-statistics and audit-informed heuristics:
+`weights + biases` scorer. Confidence is computed from interpretable graph
+statistics, audit-informed trust state, and explicit decision policies:
 
 - discovered relation patterns
 - hub penalties
@@ -14,6 +14,18 @@ statistics and audit-informed heuristics:
 - node quality
 - relation drift penalties
 - disabled noisy relation filters
+- audit-driven trust learning
+- quality-aware suppression policy
+
+Current research result:
+
+```text
+feedback -> compact trust profile -> changed behavior on unseen data
+```
+
+The strongest current compression benchmark reduces 10,000 audit rows from
+about 500,360 raw-history tokens to about 313 trust-state tokens, or roughly
+1598.6x compression.
 
 ## Quick Start
 
@@ -49,7 +61,9 @@ python3 examples/pattern_audit_export.py \
 4. [Demos](demos.md)
 5. [Audit And Evaluation](audit_and_evaluation.md)
 6. [Relation Drift](relation_drift.md)
-7. [Error Taxonomy](error_taxonomy.md)
+7. [Experiments](experiments.md)
+8. [Suppression Policy](suppression_policy.md)
+9. [Error Taxonomy](error_taxonomy.md)
 
 ## Main Entry Points
 
@@ -59,4 +73,6 @@ python3 examples/pattern_audit_export.py \
 - `core/relation_drift.py` - semantic-level drift analysis
 - `examples/pattern_audit_export.py` - prediction audit export
 - `examples/relation_drift_report.py` - drift report
-
+- `examples/trust_transfer_experiment.py` - audit-driven trust transfer check
+- `examples/feedback_scaling_benchmark.py` - feedback compression benchmark
+- `examples/suppression_audit_export.py` - suppression audit candidate export

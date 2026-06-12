@@ -1,5 +1,9 @@
 # Architecture
 
+Microworld is built as an explicit graph reasoning pipeline. The system keeps
+memory, prediction, trust learning, suppression policy, and normalization as
+separate concerns so each part can be audited and changed independently.
+
 ## Core Data Model
 
 Microworld stores knowledge as `Relation` objects:
@@ -124,3 +128,78 @@ epic_fail
 tu_hermana_en_bolas
 ```
 
+### `core/relation_trust.py`
+
+Stores relation-level trust priors used to adjust confidence for relation
+families. These priors can come from manual audit summaries.
+
+### `core/trust_learning.py`
+
+Compresses manual audit feedback into a compact trust profile. The trust profile
+can be applied to unseen predictions to change acceptance behavior without
+neural retraining.
+
+Current trust transfer result:
+
+```text
+baseline accepted: 195
+learned accepted: 99
+suppressed: 96
+```
+
+The important architecture point is:
+
+```text
+feedback -> explicit trust state -> changed future behavior
+```
+
+### `core/suppression_policy.py`
+
+Applies a final decision policy after graph prediction and trust-adjusted
+confidence. This layer exists because learned trust alone was too aggressive as
+a final suppression rule.
+
+Current decision flow:
+
+```text
+graph prediction
+-> baseline confidence
+-> learned trust confidence
+-> suppression candidate
+-> quality-aware policy
+-> final suppression
+```
+
+Quality-aware suppression separates error classes:
+
+```text
+bad target -> suppress
+bad source -> normalize later
+bad relation or pattern -> lower trust
+clean prediction with source typo -> keep after normalization
+```
+
+The v2 policy no longer suppresses solely because the source node looks noisy.
+Target noise can still trigger suppression.
+
+## Full Pipeline
+
+The full pipeline combines graph memory, ConceptNet import, pattern discovery,
+reasoning, trust learning, suppression policy, and audit exports.
+
+Conceptually:
+
+```text
+source,relation_type,target CSV
+-> World graph
+-> discovered patterns
+-> candidate predictions
+-> baseline confidence
+-> learned trust confidence
+-> quality-aware suppression
+-> audit/export/report
+```
+
+The pipeline is intentionally modular. Trust memory should not also be the
+suppression policy, and suppression should not be responsible for spelling or
+canonicalization repair.

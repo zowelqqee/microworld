@@ -1,0 +1,12 @@
+source,relation_type,target,baseline_confidence,learned_confidence,delta,evidence,reason,manual_label,notes
+human_body,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+ice,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+lettuce,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+lubrication,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+ocean,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+pee,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+person,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+rain,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+sea,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+soup,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,
+water_vapor,made_of,oxegen,0.530510,0.381782,-0.148728,water,"transitive pattern: made_of -> made_of (count=159, via=water, degree=15, hub_penalty=0.82, trust=0.862)",,

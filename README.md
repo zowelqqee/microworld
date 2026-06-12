@@ -1,360 +1,282 @@
-# worldmvp
+# worldmvp / Microworld
 
-A lightweight research sandbox for experimenting with symbolic world models, concept formation, structural similarity, and explainable link prediction.
+Microworld is an experimental graph-based memory, reasoning, and learning
+system. It explores whether useful behavioral learning can happen through
+explicit graph state, audit feedback, and trust calibration without neural
+weights, backpropagation, or fine-tuning.
 
-## Motivation
+The project is intentionally research-oriented. It does not claim that symbolic
+graphs beat neural networks. It explores a complementary path: compact explicit
+memory and trust learning for graph reasoning, where behavior can be audited,
+compressed, transferred, and corrected without updating neural weights.
 
-Modern AI systems are extremely effective at extracting patterns from large amounts of data.
-
-However, much of their knowledge is stored implicitly inside model weights, making it difficult to:
-
-* inspect reasoning
-* explain predictions
-* update knowledge incrementally
-* study memory consolidation separately from learning
-
-worldmvp explores an alternative idea:
-
-> Can part of reasoning be represented explicitly as objects, relations, concepts, and structural patterns instead of being hidden entirely inside neural network weights?
-
-This project does **not** attempt to replace LLMs.
-
-Instead, it serves as a small experimental environment for testing hypotheses about:
-
-* symbolic memory
-* concept formation
-* structural generalization
-* knowledge consolidation ("sleep")
-* sample-efficient reasoning
-
----
-
-## Core Architecture
-
-### Objects
-
-Knowledge is represented as entities:
+Current test status:
 
 ```text
-яблоня
-яблоко
-семя
+870 passing tests
 ```
 
-### Relations
+## Why This Exists
 
-Entities are connected through typed relations:
+Modern AI systems are powerful, but much of their knowledge and behavior is
+stored implicitly inside model weights or long context histories. That makes it
+hard to inspect why a behavior changed, compress feedback into durable memory,
+or debug errors at the level of relations, nodes, and policies.
+
+Microworld asks a narrower question:
 
 ```text
-яблоня --produces_result--> яблоко
-яблоко --contains--> семя
-семя --grows_into--> яблоня
+Can some memory, reasoning, and learning behavior be achieved more efficiently
+and more transparently than by simply growing neural models wider, expanding
+context, or relying on backpropagation?
 ```
 
-### Causal Reasoning
+The current answer is partially yes. For graph-based symbolic reasoning tasks,
+Microworld shows that audit feedback can be compressed into a tiny explicit
+trust state, that the state can transfer to unseen data, and that behavior can
+change without retraining a neural model.
 
-The system can:
+## Current Architecture
 
-* trace chains
-* explain paths
-* estimate consequences of removing nodes
-
-Example:
+Knowledge is represented as explicit graph relations:
 
 ```text
-яблоня
-↓
-яблоко
-↓
-семя
-↓
-яблоня
+source --relation_type--> target
 ```
 
-### Concept Formation
+The current system includes:
 
-Repeated structures are consolidated into concepts.
+* graph memory
+* ConceptNet import
+* pattern discovery
+* transitive reasoning
+* mixed-pattern reasoning
+* structural similarity
+* concept discovery
+* relation proposal
+* hub penalty
+* relation trust
+* node quality
+* relation drift
+* relation blacklist
+* audit pipeline
+* audit-driven trust learning
+* trust transfer experiment
+* feedback compression benchmark
+* suppression audit
+* quality-aware suppression policy
+* full pipeline demo
 
-Example:
+The main reasoning path is:
 
 ```text
-яблоко contains семя
-груша_плод contains семя
-апельсин contains семя
+graph memory
+-> pattern discovery
+-> prediction
+-> baseline confidence
+-> learned trust confidence
+-> suppression candidate
+-> quality-aware policy
+-> final decision
 ```
 
-becomes:
+The key design choice is separation of concerns:
+
+* trust memory estimates whether relation/rule families have been reliable
+* decision policy decides what to suppress or keep
+* normalization should repair source and target spelling/canonicalization issues
+
+## Latest Experimental Results
+
+### Human Audit Baseline
+
+Manual audit of ConceptNet-derived graph predictions:
 
 ```text
-concept_rel_contains_семя
+reviewed: 104
+useful overall: 78.8%
+made_of useful: 86.2%
+part_of useful: 76.7%
+is_a useful: 75.6%
+mixed reasoning useful: 76.7%
 ```
 
-with membership relations:
+`useful` means the prediction was labeled correct or plausible. These are small
+exploratory audits, not formal benchmark claims.
+
+### Audit-Driven Trust Learning
+
+Microworld can turn manual audit feedback into a compact trust profile. That
+profile changes behavior on unseen TEST data without backpropagation.
+
+Trust transfer experiment:
 
 ```text
-яблоко      member_of concept_rel_contains_семя
-груша_плод  member_of concept_rel_contains_семя
-апельсин    member_of concept_rel_contains_семя
-```
-
-### Structural Similarity
-
-Instead of manually specifying similarity:
-
-```python
-world.add_similarity("слива", "персик", 0.9)
-```
-
-the system derives similarity from graph structure.
-
-Example:
-
-```text
-слива contains косточка
-персик contains косточка
-```
-
-↓
-
-```text
-similarity(слива, персик)
-```
-
-computed automatically using structural profile overlap.
-
-### Prediction
-
-The system attempts to recover missing relations using:
-
-1. Majority templates
-2. Structural similarity
-3. Concept membership
-4. Hybrid reasoning
-
-Every prediction remains explainable.
-
-Example:
-
-```text
-слива contains косточка
-
-Reason:
-concept match:
-concept_rel_contains_косточка
-```
-
----
-
-## ConceptNet Integration
-
-worldmvp can now import filtered ConceptNet data and build a `World` directly from relation CSV files.
-
-The current import path supports:
-
-* extracting a filtered ConceptNet relation sample
-* loading `source,relation_type,target` CSV files
-* building a world graph without the natural-language parser
-* discovering concepts from external graphs
-* computing structural similarities between entities
-* discovering frequent relation patterns
-
-One current example run over `data/conceptnet_sample.csv` contains roughly:
-
-* ~5000 relations
-* 9 relation types
-* 443 discovered concepts
-* 18k+ structural similarity pairs
-
-These numbers describe the checked-in sample run, not a benchmark.
-
----
-
-## Pattern Discovery
-
-worldmvp no longer relies only on hand-written lifecycle patterns.
-
-The system can discover common relation chains directly from a graph. On the current ConceptNet sample, examples include:
-
-```text
-part_of -> part_of
-made_of -> made_of
-is_a -> is_a
-```
-
-Pattern discovery is exploratory. It is used to understand the structure of a knowledge graph before prediction, and to see which relation chains actually occur often enough to study.
-
----
-
-## Pattern-Based Prediction
-
-A second prediction engine now exists alongside the lifecycle/template-based predictor.
-
-Instead of using lifecycle templates, it uses discovered graph patterns. The current implementation supports transitive same-relation reasoning:
-
-```text
-A part_of B
-B part_of C
-
-=>
-
-A part_of C
-```
-
-The pattern-based predictor produces explanations, evidence chains, and confidence scores. It supports same-relation transitive chains and a small set of explicitly allowed mixed-relation rules such as:
-
-```text
-A is_a B
-B capable_of C
-
-=>
-
-A capable_of C
-```
-
-Mixed-relation reasoning is intentionally conservative: noisy relations can be disabled, intermediate hubs can be penalized, relation trust can lower confidence, and relation drift can annotate cases where composition changes semantic level.
-
-### Human Audit
-
-Pattern predictions can be exported to CSV and reviewed manually. The current audit labels are:
-
-* `correct`
-* `plausible`
-* `wrong`
-* `unclear`
-
-ConceptNet-derived pattern predictions were manually reviewed:
-
-```text
-reviewed predictions: 104
-
-correct:   43.3%
-plausible: 35.6%
-wrong:     21.2%
-
-useful (correct + plausible): 78.8%
-```
-
-By relation:
-
-```text
-made_of: 86.2%
-part_of: 76.7%
-is_a:    75.6%
-```
-
-These results come from a small exploratory audit and should not be interpreted as a formal benchmark.
-
----
-
-## Audit-Driven Trust Learning
-
-worldmvp can learn simple trust profiles from human audit CSV files without neural backpropagation.
-
-Audit labels are mapped to scores:
-
-```text
-correct   -> 1.0
-plausible -> 0.7
-unclear   -> 0.4
-wrong     -> 0.0
-```
-
-The system averages those scores by relation, rule, and drift type, then reruns symbolic prediction with the learned trust profile.
-
-Learning loop result:
-
-```text
-threshold: 0.40
-
-baseline accepted predictions:      253
-learned-trust accepted predictions: 161
-suppressed after audit learning:     92
-newly promoted:                       0
+baseline accepted: 195
+learned accepted: 99
+suppressed: 96
 ```
 
 Interpretation:
 
-Human audit lowered trust for weak relations and made the system more conservative without neural retraining. This is not a weights-and-biases learning loop; it is explicit trust calibration over inspectable symbolic reasoning rules.
-
----
-
-## Sample Efficiency Experiment
-
-A synthetic benchmark evaluates whether structural consolidation improves learning efficiency.
-
-Four lifecycle families are generated:
-
 ```text
-tree → fruit → seed → tree
-tree → fruit → pit → tree
-animal → egg → offspring → animal
-business → product → revenue → business
+feedback -> trust profile -> changed behavior on unseen split
 ```
 
-Prediction quality is measured while reducing available observations.
+This confirms that Microworld can learn behavioral preferences from audit
+feedback without updating neural weights.
 
-Results:
+### Feedback Compression
 
-| Budget | Majority | Structural | Concept | Hybrid |
-| ------ | -------- | ---------- | ------- | ------ |
-| 20%    | 0.18     | 0.18       | 0.18    | 0.18   |
-| 40%    | 0.18     | 0.40       | 0.40    | 0.40   |
-| 60%    | 0.18     | 0.67       | 0.67    | 0.67   |
-| 80%    | 0.18     | 1.00       | 1.00    | 1.00   |
-| 100%   | 0.18     | 1.00       | 1.00    | 1.00   |
+Feedback compression benchmark with 10,000 audit rows:
 
-Interpretation:
+```text
+raw audit history: ~500,360 tokens
+trust state: ~313 tokens
+compression: ~1598.6x
+```
 
-* Majority reasoning never learns family-specific structure.
-* Structural and concept-based reasoning generalize after observing only a small number of examples.
-* Consolidation improves sample efficiency on this synthetic benchmark.
+This is one of the strongest current results. It shows an alternative to simply
+expanding context, memory logs, or model size: large feedback histories can be
+compressed into a tiny, explicit, inspectable state.
 
----
+### Suppression Audit
 
-## What This Project Is
+The first suppression rule was intentionally simple:
 
-* Research sandbox
-* Symbolic reasoning playground
-* World-model experiment
-* Concept formation experiment
-* Explainable prediction system
+```text
+baseline_confidence >= threshold
+AND learned_confidence < threshold
+```
 
----
+Manual audit of that naive rule:
 
-## What This Project Is Not
+```text
+total reviewed: 50
+should_suppress: 11
+should_keep: 38
+unclear: 1
+suppression_precision: 0.224
+```
 
-* AGI
-* A replacement for LLMs
-* A production knowledge graph
-* A biologically accurate brain simulation
-* Evidence that symbolic systems outperform transformers
+The learned trust signal changed behavior, but it was too aggressive as the
+final suppression decision. It suppressed many useful predictions.
 
----
+Delta calibration did not solve the issue. Useful and harmful suppressions had
+similar confidence drops, so confidence delta alone did not separate bad
+predictions from useful ones.
 
-## Current Limitations
+### Quality-Aware Suppression
 
-* ConceptNet work currently uses a filtered sample, not a full benchmark
-* No perception layer
-* No vision
-* No reinforcement learning
-* No neural learning
-* No full-scale dataset pipeline yet
-* Structural similarity still depends on observable graph structure
-* Mixed-pattern reasoning is manually allowlisted and still exploratory
-* Audit-driven trust is based on small reviewed samples, not large-scale validation
+A separate suppression policy layer was added:
 
----
+```text
+graph prediction
+-> baseline confidence
+-> learned trust confidence
+-> suppression candidate
+-> quality-aware policy
+-> final suppression
+```
 
-## Current Direction
+Quality-aware v1 exported 12 rows. Manual audit found:
 
-Current work is moving toward broader ConceptNet evaluation, relation-specific trust estimation, automatic pattern discovery, graph consolidation and concept formation, and reasoning without neural training.
+```text
+should_suppress: 11
+should_keep: 1
+suppression_precision: 0.917
+```
 
-The emphasis is still engineering/research: make the symbolic state inspectable, measure behavior on small cases first, and avoid treating exploratory results as proof.
+The only false suppression was:
 
----
+```text
+talbe --made_of--> wood
+```
+
+That prediction is almost certainly useful. The problem is a source typo for
+`table`, so it belongs in normalization/canonicalization rather than
+suppression.
+
+Quality-aware v2 no longer lets source noise trigger suppression. Target noise
+still triggers suppression. The output contained 11 rows, all with:
+
+```text
+target = oxegen
+```
+
+The `talbe --made_of--> wood` row disappeared.
+
+Current interpretation:
+
+* bad target -> suppress
+* bad source -> normalize later
+* bad relation or pattern -> lower trust
+* clean prediction with a source typo -> keep after normalization
+
+## What Was Learned
+
+The main research conclusion is deliberately modest:
+
+* audit feedback can be compressed into a tiny explicit trust state
+* that state can transfer to unseen data
+* behavior can change without backpropagation
+* errors can be debugged directly
+* small explicit policy layers can sharply improve behavior
+* trust memory, decision policy, and normalization should be separate components
+
+Microworld does not prove general superiority over neural networks. It shows
+that explicit graph memory and audit-driven trust learning are useful research
+tools for a bounded class of symbolic reasoning problems.
+
+## Running
+
+From this directory:
+
+```bash
+pytest -q
+```
+
+Example demos:
+
+```bash
+python3 examples/full_pipeline_demo.py
+python3 examples/trust_transfer_experiment.py
+python3 examples/feedback_scaling_benchmark.py
+python3 examples/suppression_audit_export.py
+```
+
+## Documentation
+
+Start with:
+
+* `docs/index.md`
+* `docs/architecture.md`
+* `docs/experiments.md`
+* `docs/suppression_policy.md`
+
+## Limitations
+
+* Current results are exploratory and based on bounded graph reasoning tasks.
+* The ConceptNet work uses filtered samples, not a full benchmark.
+* Manual audits are still small.
+* Mixed-pattern reasoning is conservative and manually allowlisted.
+* Trust learning is useful as a signal but should not be the final decision layer.
+* Delta-only suppression calibration did not separate useful from harmful cases.
+* Normalization/canonicalization is not yet a mature component.
+* There is no perception layer, reinforcement learning loop, or neural training.
+
+## Next Steps
+
+* normalization candidate export
+* typo/canonicalization layer
+* target normalization with semantic re-evaluation
+* larger audit sample
+* relation-specific suppression policies
+* compare against LLM-only memory baselines
 
 ## Status
 
-Experimental.
-
-The goal of worldmvp is not to build a new intelligence system, but to create a controlled environment where hypotheses about memory, concepts, consolidation, and reasoning can be tested and measured.
+Experimental. The goal is not to build a production knowledge graph or a
+replacement for LLMs, but to create a controlled environment where hypotheses
+about explicit memory, reasoning, feedback compression, and inspectable learning
+can be tested.
