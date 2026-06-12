@@ -1,0 +1,30 @@
+{
+  "gpt2": {
+    "architecture_note": "GPT-2 124M parameter transformer loaded through local nanoGPT for inference.",
+    "model_name": "gpt2",
+    "model_state_size_bytes": 548105171,
+    "model_state_size_note": "Summed 1 local GPT-2-like cached weight files.",
+    "nanogpt_dir": "nanogpt",
+    "nanogpt_source_size_bytes": 603134,
+    "trainable_parameter_count": 123650000,
+    "trained_with_backpropagation": true,
+    "uses_backpropagation_for_inference": false,
+    "uses_neural_weights": true
+  },
+  "microworld": {
+    "explicit_state_items": {
+      "anti_cue_groups": 5,
+      "policy_config_fields": 3,
+      "sense_entries": 12
+    },
+    "explicit_state_size_bytes": 7882,
+    "guard_policy_notes": [
+      "bat:sports_equipment has a player-alone guard in ExplicitSenseMemory._guard_failures",
+      "bank:financial_institution has a cash/card-alone guard in ExplicitSenseMemory._guard_failures"
+    ],
+    "state_note": "Size is UTF-8 JSON serialization of built-in explicit sense memory, templates, anti-cues, and policy config; code-level guard rules are reported separately.",
+    "trainable_parameter_count": 0,
+    "uses_backpropagation": false,
+    "uses_neural_weights": false
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "architecture_comparison": {
+    "comparison_note": "Microworld is designed for abstention and auditability; GPT-2 is designed for open-ended language modeling.",
+    "gpt2": "Large pretrained transformer that samples next tokens from neural weights and does not expose a native selected-sense or audit decision.",
+    "microworld": "Small explicit state machine with inspectable evidence, thresholds, anti-cues, guards, and audit/suppress decisions."
+  },
+  "benchmark_scope": {
+    "scope_note": "This compares explicit audit-aware continuation with GPT-2 next-token generation on the v1 prompt set.",
+    "task": "Controlled continuation / ambiguity resolution."
+  },
+  "dataset": {
+    "expected_answerable_count": 110,
+    "expected_no_answer_count": 10,
+    "name": "Controlled Continuation v1",
+    "rows": 120
+  },
+  "examples": {
+    "gpt2_bad_unclear_examples": [
+      {
+        "audit_notes": "Drifts to unrelated personal/computer story instead of bank credit continuation.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "financial_institution",
+        "id": "v1-002",
+        "judged_sense": "",
+        "judged_text": "a friend's computer, and when he turned around she went to her boyfriend's house with him and",
+        "label": "bad",
+        "prompt": "At the bank she opened an account and asked about credit to"
+      },
+      {
+        "audit_notes": "Baseball signal is present but text is malformed/truncated.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "sports_equipment",
+        "id": "v1-007",
+        "judged_sense": "sports_equipment",
+        "judged_text": ", then turned it into a pitch and the ball turned to a ball and had to be hit before",
+        "label": "unclear",
+        "prompt": "The baseball player lifted the bat before the swing"
+      },
+      {
+        "audit_notes": "Only punctuation; no usable sense judgment.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "sports_equipment",
+        "id": "v1-008",
+        "judged_sense": "",
+        "judged_text": ".",
+        "label": "unclear",
+        "prompt": "The bat cracked when he hit it during the game"
+      },
+      {
+        "audit_notes": "Lake/wings signal bird sense but fragment is weak.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "bird",
+        "id": "v1-013",
+        "judged_sense": "bird",
+        "judged_text": "over the lake.",
+        "label": "unclear",
+        "prompt": "The crane spread its wings above the marsh and"
+      },
+      {
+        "audit_notes": "Lake-side fragment is too short but compatible with bird nest context.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "bird",
+        "id": "v1-014",
+        "judged_sense": "bird",
+        "judged_text": "side.",
+        "label": "unclear",
+        "prompt": "The bird expert watched the crane build a nest near the lake"
+      }
+    ],
+    "gpt2_good_examples": [
+      {
+        "audit_notes": "Clear deposit continuation for teller/cash context.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "financial_institution",
+        "id": "v1-001",
+        "judged_sense": "financial_institution",
+        "judged_text": "make a deposit to pay for the car after he had left the store.",
+        "label": "good",
+        "prompt": "The customer reached the bank teller with cash to"
+      },
+      {
+        "audit_notes": "Fishing continuation fits muddy river bank.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "river_edge",
+        "id": "v1-003",
+        "judged_sense": "river_edge",
+        "judged_text": "catch the fish.",
+        "label": "good",
+        "prompt": "The fisherman sat on the muddy bank by the river to"
+      },
+      {
+        "audit_notes": "Current being low preserves river/current sense.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "river_edge",
+        "id": "v1-004",
+        "judged_sense": "river_edge",
+        "judged_text": "was low.",
+        "label": "good",
+        "prompt": "The boat drifted toward the bank as the current"
+      },
+      {
+        "audit_notes": "Wing-flapping continuation clearly treats bat as animal.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "animal",
+        "id": "v1-005",
+        "judged_sense": "animal",
+        "judged_text": "flapping and its tail flapping.",
+        "label": "good",
+        "prompt": "The bat flew from the cave at night with its wings"
+      },
+      {
+        "audit_notes": "Nightfall/cave context preserves animal reading despite extra story.",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "animal",
+        "id": "v1-006",
+        "judged_sense": "animal",
+        "judged_text": "fall. After the dark, the man told his story, then went to sleep.",
+        "label": "good",
+        "prompt": "The tiny bat hung in the cave after night"
+      }
+    ],
+    "microworld_audit_examples": [
+      {
+        "continuation": "",
+        "decision": "audit",
+        "difficulty_type": "weak_cue",
+        "expected_sense": "financial_institution",
+        "id": "v1-021",
+        "prompt": "The client waited at the bank counter to",
+        "reasons": "all_sense_scores_zero",
+        "selected_sense": ""
+      },
+      {
+        "continuation": "",
+        "decision": "audit",
+        "difficulty_type": "weak_cue",
+        "expected_sense": "financial_institution",
+        "id": "v1-022",
+        "prompt": "Near closing time the bank manager motioned for",
+        "reasons": "all_sense_scores_zero",
+        "selected_sense": ""
+      },
+      {
+        "continuation": "",
+        "decision": "audit",
+        "difficulty_type": "weak_cue",
+        "expected_sense": "river_edge",
+        "id": "v1-023",
+        "prompt": "The children climbed down the bank below the bridge to",
+        "reasons": "all_sense_scores_zero",
+        "selected_sense": ""
+      },
+      {
+        "continuation": "",
+        "decision": "audit",
+        "difficulty_type": "weak_cue",
+        "expected_sense": "river_edge",
+        "id": "v1-024",
+        "prompt": "A narrow path crossed the bank below the reeds and",
+        "reasons": "all_sense_scores_zero",
+        "selected_sense": ""
+      },
+      {
+        "continuation": "",
+        "decision": "audit",
+        "difficulty_type": "weak_cue",
+        "expected_sense": "animal",
+        "id": "v1-025",
+        "prompt": "The ranger dimmed the attic light so the bat could",
+        "reasons": "all_sense_scores_zero",
+        "selected_sense": ""
+      }
+    ],
+    "microworld_continue_examples": [
+      {
+        "continuation": "The customer reached the bank teller with cash to open an account",
+        "decision": "continue",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "financial_institution",
+        "id": "v1-001",
+        "prompt": "The customer reached the bank teller with cash to",
+        "reasons": "top_sense=financial_institution | top_score=3 | second_score=0 | margin=3 | score_and_margin_above_thresholds",
+        "selected_sense": "financial_institution"
+      },
+      {
+        "continuation": "At the bank she opened an account and asked about credit to speak with the teller",
+        "decision": "continue",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "financial_institution",
+        "id": "v1-002",
+        "prompt": "At the bank she opened an account and asked about credit to",
+        "reasons": "top_sense=financial_institution | top_score=2 | second_score=0 | margin=2 | score_and_margin_above_thresholds",
+        "selected_sense": "financial_institution"
+      },
+      {
+        "continuation": "The fisherman sat on the muddy bank by the river to watch the current",
+        "decision": "continue",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "river_edge",
+        "id": "v1-003",
+        "prompt": "The fisherman sat on the muddy bank by the river to",
+        "reasons": "top_sense=river_edge | top_score=2 | second_score=0 | margin=2 | score_and_margin_above_thresholds",
+        "selected_sense": "river_edge"
+      },
+      {
+        "continuation": "The boat drifted toward the bank as the current carried it downstream",
+        "decision": "continue",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "river_edge",
+        "id": "v1-004",
+        "prompt": "The boat drifted toward the bank as the current",
+        "reasons": "top_sense=river_edge | top_score=2 | second_score=0 | margin=2 | score_and_margin_above_thresholds",
+        "selected_sense": "river_edge"
+      },
+      {
+        "continuation": "The bat flew from the cave at night with its wings and searched for insects",
+        "decision": "continue",
+        "difficulty_type": "cue_rich",
+        "expected_sense": "animal",
+        "id": "v1-005",
+        "prompt": "The bat flew from the cave at night with its wings",
+        "reasons": "top_sense=animal | top_score=4 | second_score=0 | margin=4 | score_and_margin_above_thresholds",
+        "selected_sense": "animal"
+      }
+    ]
+  },
+  "gpt2_baseline_architecture": {
+    "native_audit_path": false,
+    "summary": "GPT-2 base model inference through local nanoGPT; no training or fine-tuning performed here.",
+    "uses_neural_weights": true
+  },
+  "headline": {
+    "risk_coverage_tradeoff": "The result exposes a risk/coverage tradeoff between explicit policy continuation and open-ended next-token generation.",
+    "summary": "Microworld emits fewer continuations but had zero measured wrong continuations among emitted rows in this benchmark; GPT-2 produced more usable continuations overall but also bad/unclear continuations and has no native audit path."
+  },
+  "limitations": [
+    "This is a small 120-row controlled continuation benchmark.",
+    "GPT-2 is an old base model, not ChatGPT or an instruction-tuned model.",
+    "GPT-2 has no native audit path; labels were audited after generation.",
+    "Microworld has low coverage and template-based realization.",
+    "RSS is approximate and environment-dependent."
+  ],
+  "memory_rss_comparison": {
+    "gpt2": {
+      "avg_time_sec_per_prompt": 1.078114,
+      "captured_stdout": "loading weights from pretrained gpt: gpt2\nforcing vocab_size=50257, block_size=1024, bias=True\noverriding dropout rate to 0.0\nnumber of parameters: 123.65M\n",
+      "device": "cpu",
+      "engine": "gpt2",
+      "fallback_reason": null,
+      "median_time_sec_per_prompt": 1.07759,
+      "model": "nanogpt:gpt2",
+      "peak_rss_mb": 1348.672,
+      "prompt_count": 20,
+      "runtime_sec": 21.562311
+    },
+    "gpt2_peak_rss_mb": 1348.672,
+    "gpt2_runtime_sec": 21.562311,
+    "microworld": {
+      "avg_time_sec_per_prompt": 7.1e-05,
+      "engine": "microworld",
+      "median_time_sec_per_prompt": 6.1e-05,
+      "peak_rss_mb": 22.906,
+      "prompt_count": 20,
+      "runtime_sec": 0.001428
+    },
+    "microworld_peak_rss_mb": 22.906,
+    "microworld_runtime_sec": 0.001428,
+    "prompt_count": 20,
+    "rss_caveats": [
+      "RSS is measured with resource.ru_maxrss inside subprocesses and is approximate.",
+      "macOS reports ru_maxrss in bytes; Linux reports kilobytes.",
+      "PyTorch and MPS memory behavior can make GPT-2 RSS noisy and environment-dependent.",
+      "GPT-2 RSS includes model loading overhead for the subprocess."
+    ]
+  },
+  "microworld_architecture": {
+    "native_audit_path": true,
+    "summary": "Explicit sense memory, deterministic cue scoring, anti-cues/guards, conservative policy, template realization, and surface-risk audit gate.",
+    "uses_neural_weights": false
+  },
+  "non_claims": [
+    "No claim that Microworld beats neural networks generally.",
+    "No claim that this small benchmark predicts open-domain generation quality.",
+    "No claim that GPT-2 represents modern instruction-tuned assistants."
+  ],
+  "quality_comparison": {
+    "gpt2_audited": {
+      "bad": 11,
+      "correct_sense_count": 101,
+      "good": 76,
+      "precision": 0.8736,
+      "unclear": 33,
+      "wrong_sense_count": 7
+    },
+    "microworld": {
+      "correct_continue_count": 38,
+      "precision_on_continued": 1.0,
+      "wrong_continue_count": 0
+    }
+  },
+  "risk_coverage_comparison": {
+    "gpt2": {
+      "bad_rate_after_audit": 0.0917,
+      "generated_rows": 120,
+      "native_audit_path": false,
+      "unclear_rate_after_audit": 0.275
+    },
+    "microworld": {
+      "answerable_recall": 0.3455,
+      "audit_count": 82,
+      "continue_count": 38,
+      "coverage_rate": 0.3167,
+      "wrong_continue_rate": 0.0
+    }
+  },
+  "runtime_comparison": {
+    "dataset": {
+      "prompt_rows": 120,
+      "prompts_path": "worldpgt/experiments/continuation_prompts_v1.csv"
+    },
+    "gpt2": {
+      "existing_output": {
+        "avg_generation_time_sec": 0.422443,
+        "has_generation_time_sec": true,
+        "max_generation_time_sec": 1.315,
+        "median_generation_time_sec": 0.38065,
+        "min_generation_time_sec": 0.3623,
+        "total_generation_time_sec": 50.6932,
+        "total_rows": 120
+      },
+      "timing_note": "GPT-2 timing uses generation_time_sec already recorded in the inference output CSV; GPT-2 was not rerun."
+    },
+    "microworld": {
+      "existing_output": {
+        "avg_generation_time_sec": null,
+        "has_generation_time_sec": false,
+        "max_generation_time_sec": null,
+        "median_generation_time_sec": null,
+        "min_generation_time_sec": null,
+        "total_generation_time_sec": null,
+        "total_rows": 120
+      },
+      "timed_run": {
+        "avg_time_sec_per_prompt": 4.6e-05,
+        "max_time_sec_per_prompt": 0.000197,
+        "median_time_sec_per_prompt": 4.4e-05,
+        "min_time_sec_per_prompt": 3e-06,
+        "prompt_count": 120,
+        "total_time_sec": 0.00559
+      },
+      "timing_note": "Microworld output CSV has no per-row generation_time_sec; timed_run measures a fresh deterministic engine pass."
+    }
+  },
+  "state_model_size_comparison": {
+    "gpt2": {
+      "architecture_note": "GPT-2 124M parameter transformer loaded through local nanoGPT for inference.",
+      "model_name": "gpt2",
+      "model_state_size_bytes": 548105171,
+      "model_state_size_note": "Summed 1 local GPT-2-like cached weight files.",
+      "nanogpt_dir": "nanogpt",
+      "nanogpt_source_size_bytes": 603134,
+      "trainable_parameter_count": 123650000,
+      "trained_with_backpropagation": true,
+      "uses_backpropagation_for_inference": false,
+      "uses_neural_weights": true
+    },
+    "microworld": {
+      "explicit_state_items": {
+        "anti_cue_groups": 5,
+        "policy_config_fields": 3,
+        "sense_entries": 12
+      },
+      "explicit_state_size_bytes": 7882,
+      "guard_policy_notes": [
+        "bat:sports_equipment has a player-alone guard in ExplicitSenseMemory._guard_failures",
+        "bank:financial_institution has a cash/card-alone guard in ExplicitSenseMemory._guard_failures"
+      ],
+      "state_note": "Size is UTF-8 JSON serialization of built-in explicit sense memory, templates, anti-cues, and policy config; code-level guard rules are reported separately.",
+      "trainable_parameter_count": 0,
+      "uses_backpropagation": false,
+      "uses_neural_weights": false
+    }
+  }
+}
