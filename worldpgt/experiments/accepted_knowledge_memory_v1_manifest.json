@@ -1,0 +1,40 @@
+{
+  "artifact_path": "worldpgt/experiments/accepted_knowledge_memory_v1.json",
+  "by_item_type": {
+    "action_pattern": 21,
+    "causal_pattern": 2,
+    "definition_pattern": 12,
+    "location_pattern": 6,
+    "phrase_candidate_hint": 3,
+    "positive_cue": 104,
+    "property_pattern": 11,
+    "relation_pattern": 6,
+    "semantic_frame_hint": 7,
+    "typical_action": 34,
+    "typical_location": 15
+  },
+  "by_term": {
+    "bank": 40,
+    "bat": 40,
+    "crane": 38,
+    "rock": 31,
+    "seal": 41,
+    "spring": 31
+  },
+  "deduplicated_count": 0,
+  "excluded_broad_or_generic": 0,
+  "excluded_high_risk": 0,
+  "excluded_needs_review": 18,
+  "excluded_rejected_auto": 2,
+  "fact_items": 163,
+  "memory_version": "accepted_knowledge_memory_v1",
+  "pattern_items": 58,
+  "safety": {
+    "generic_fallback_added": false,
+    "live_behavior_modified": false,
+    "sense_memory_modified": false,
+    "thresholds_changed": false,
+    "validators_weakened": false
+  },
+  "total_items": 221
+}

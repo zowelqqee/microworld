@@ -1,0 +1,31 @@
+{
+  "knowledge_probe": {
+    "artifact_overlay_continue_count": 43,
+    "baseline_continue_count": 35,
+    "previous_overlay_continue_count": 43,
+    "risk_regressions": [],
+    "semantic_quality_flagged": 0,
+    "wrong_continue_count": 0
+  },
+  "memory_version": "accepted_knowledge_memory_v1",
+  "old_benchmark": {
+    "artifact_overlay_continue_count": 58,
+    "baseline_continue_count": 58,
+    "risk_regressions": [],
+    "semantic_quality_flagged": 0,
+    "v1_051_audited": true,
+    "wrong_continue_count": 0
+  },
+  "quarantine": {
+    "quarantined_items": [],
+    "reasons": {}
+  },
+  "safety": {
+    "baseline_outputs_modified": false,
+    "generic_fallback_added": false,
+    "sense_memory_modified": false,
+    "thresholds_changed": false,
+    "validators_weakened": false
+  },
+  "validation_decision": "safe_to_use_as_overlay"
+}

@@ -1,0 +1,181 @@
+source,row_id,prompt,expected_sense,baseline_decision,overlay_decision,overlay_selected_sense,overlay_continuation,changed,newly_continued,newly_audited,wrong_continue
+old_benchmark,v1-001,The customer reached the bank teller with cash to,financial_institution,continue,continue,financial_institution,The customer reached the bank teller with cash to open an account,no,no,no,no
+old_benchmark,v1-002,At the bank she opened an account and asked about credit to,financial_institution,continue,continue,financial_institution,At the bank she opened an account and asked about credit to speak with the teller,no,no,no,no
+old_benchmark,v1-003,The fisherman sat on the muddy bank by the river to,river_edge,continue,continue,river_edge,The fisherman sat on the muddy bank by the river to watch the current,no,no,no,no
+old_benchmark,v1-004,The boat drifted toward the bank as the current,river_edge,continue,continue,river_edge,The boat drifted toward the bank as the current carried it downstream,no,no,no,no
+old_benchmark,v1-005,The bat flew from the cave at night with its wings,animal,continue,continue,animal,The bat flew from the cave at night with its wings and searched for insects,no,no,no,no
+old_benchmark,v1-006,The tiny bat hung in the cave after night,animal,continue,continue,animal,The tiny bat hung in the cave after night and searched for insects,no,no,no,no
+old_benchmark,v1-007,The baseball player lifted the bat before the swing,sports_equipment,continue,continue,sports_equipment,"The baseball player lifted the bat before the swing, he steadied himself",no,no,no,no
+old_benchmark,v1-008,The bat cracked when he hit it during the game,sports_equipment,continue,continue,sports_equipment,The bat cracked when he hit it during the game and the player dropped it,no,no,no,no
+old_benchmark,v1-009,The seal swam through ocean water chasing fish to,animal,continue,continue,animal,The seal swam through ocean water chasing fish to catch its prey,no,no,no,no
+old_benchmark,v1-010,At the zoo the seal waved its flippers above the water,animal,continue,continue,animal,At the zoo the seal waved its flippers above the water and dove below the surface,no,no,no,no
+old_benchmark,v1-011,She pressed the wax seal onto the envelope to,closure_stamp,continue,continue,closure_stamp,She pressed the wax seal onto the envelope to close it,no,no,no,no
+old_benchmark,v1-012,The official seal on the document matched the stamp,closure_stamp,continue,continue,closure_stamp,The official seal on the document matched the stamp and the wax hardened,no,no,no,no
+old_benchmark,v1-013,The crane spread its wings above the marsh and,bird,continue,continue,bird,The crane spread its wings above the marsh and it crossed the shallows,no,no,no,no
+old_benchmark,v1-014,The bird expert watched the crane build a nest near the lake,bird,continue,continue,bird,The bird expert watched the crane build a nest near the lake and spread its wings,no,no,no,no
+old_benchmark,v1-015,The operator used the crane at the construction site to,machine,continue,continue,machine,The operator used the crane at the construction site to lift the load,no,no,no,no
+old_benchmark,v1-016,The crane lifted the steel beam above the building,machine,continue,continue,machine,The crane lifted the steel beam above the building and carried the load,no,no,no,no
+old_benchmark,v1-017,In April the spring rain warmed the garden and,season,continue,continue,season,In April the spring rain warmed the garden and the flowers opened,no,no,no,no
+old_benchmark,v1-018,The metal spring compressed inside the mechanism and,coil,continue,continue,coil,The metal spring compressed inside the mechanism and the tension released,no,no,no,no
+old_benchmark,v1-019,The heavy rock rolled from the mountain to the ground,stone,continue,continue,stone,The heavy rock rolled from the mountain to the ground and lay near the river,no,no,no,no
+old_benchmark,v1-020,The rock band carried guitars onto the concert stage and,music,continue,continue,music,The rock band carried guitars onto the concert stage and the band started playing,no,no,no,no
+old_benchmark,v1-021,The client waited at the bank counter to,financial_institution,continue,continue,financial_institution,The client waited at the bank counter to open an account,no,no,no,no
+old_benchmark,v1-022,Near closing time the bank manager motioned for,financial_institution,continue,continue,financial_institution,Near closing time the bank manager motioned for the client to come forward,no,no,no,no
+old_benchmark,v1-023,The children climbed down the bank below the bridge to,river_edge,continue,continue,river_edge,The children climbed down the bank below the bridge to watch the current,no,no,no,no
+old_benchmark,v1-024,A narrow path crossed the bank below the reeds and,river_edge,continue,continue,river_edge,A narrow path crossed the bank below the reeds and the water moved past it,no,no,no,no
+old_benchmark,v1-025,The ranger dimmed the attic light so the bat could,animal,continue,continue,animal,The ranger dimmed the attic light so the bat could search for insects,no,no,no,no
+old_benchmark,v1-026,At dusk the tiny bat stirred under the eaves and,animal,continue,continue,animal,At dusk the tiny bat stirred under the eaves and it spread its wings,no,no,no,no
+old_benchmark,v1-027,The batter tapped the bat on the plate before,sports_equipment,continue,continue,sports_equipment,The batter tapped the bat on the plate before hitting the ball,no,no,no,no
+old_benchmark,v1-028,In the dugout he chose the lighter bat and,sports_equipment,continue,continue,sports_equipment,In the dugout he chose the lighter bat and the player took a swing,no,no,no,no
+old_benchmark,v1-029,The trainer tossed a treat and the seal slid,animal,continue,continue,animal,The trainer tossed a treat and the seal slid and swam through the cold water,no,no,no,no
+old_benchmark,v1-030,On the pier the seal raised its head while tourists,animal,audit,audit,animal,,no,no,no,no
+old_benchmark,v1-031,The clerk warmed the seal before closing the parcel and,closure_stamp,continue,continue,closure_stamp,The clerk warmed the seal before closing the parcel and the wax hardened,no,no,no,no
+old_benchmark,v1-032,She broke the seal at the flap and,closure_stamp,continue,continue,closure_stamp,She broke the seal at the flap and the wax hardened,no,no,no,no
+old_benchmark,v1-033,At dawn the crane stepped through reeds and,bird,continue,continue,bird,At dawn the crane stepped through reeds and it spread its wings,no,no,no,no
+old_benchmark,v1-034,The photographer waited as the crane bent its long neck to,bird,continue,continue,bird,The photographer waited as the crane bent its long neck to step through the reeds,no,no,no,no
+old_benchmark,v1-035,The foreman signaled and the crane turned toward,machine,continue,continue,machine,The foreman signaled and the crane turned toward the load,no,no,no,no
+old_benchmark,v1-036,The crew waited below the crane as the hook,machine,continue,continue,machine,The crew waited below the crane as the hook rose,no,no,no,no
+old_benchmark,v1-037,After the thaw the spring mornings made everyone,season,continue,continue,season,After the thaw the spring mornings made everyone feel warmer,no,no,no,no
+old_benchmark,v1-038,The latch clicked when the spring inside the handle,coil,continue,continue,coil,The latch clicked when the spring inside the handle snapped back into place,no,no,no,no
+old_benchmark,v1-039,He kicked the rock from the trail and,stone,continue,continue,stone,He kicked the rock from the trail and it scraped the ground,no,no,no,no
+old_benchmark,v1-040,The crowd knew the rock would get louder after,music,continue,continue,music,The crowd knew the rock would get louder after the band started playing,no,no,no,no
+old_benchmark,v1-041,He stood by the bank unsure where to sit until the current,river_edge,audit,audit,river_edge,,no,no,no,no
+old_benchmark,v1-042,She waited inside the bank without speaking until the teller,financial_institution,continue,continue,financial_institution,She waited inside the bank without speaking until the teller called her forward,no,no,no,no
+old_benchmark,v1-043,The bat rested in the corner and only after sunset its wings,animal,continue,continue,animal,The bat rested in the corner and only after sunset its wings spread wide,no,no,no,no
+old_benchmark,v1-044,He picked up the bat with no comment until the pitcher,sports_equipment,audit,continue,sports_equipment,He picked up the bat with no comment until the pitcher threw the ball,yes,yes,no,no
+old_benchmark,v1-045,The seal lay still on the platform until the fish,animal,audit,audit,animal,,no,no,no,no
+old_benchmark,v1-046,She studied the seal for a moment before pressing it into wax,closure_stamp,continue,continue,closure_stamp,She studied the seal for a moment before pressing it into wax and marked the document,no,no,no,no
+old_benchmark,v1-047,The crane moved slowly across the pale shallows before its wings,bird,audit,audit,bird,,no,no,no,no
+old_benchmark,v1-048,The crane waited above the lot until the operator,machine,continue,continue,machine,The crane waited above the lot until the operator lowered the hook,no,no,no,no
+old_benchmark,v1-049,The spring seemed ordinary until April rain began to,season,continue,continue,season,The spring seemed ordinary until April rain began to bring warmer days,no,no,no,no
+old_benchmark,v1-050,The spring looked harmless until the device compressed it,coil,continue,continue,coil,The spring looked harmless until the device compressed it and snapped back into place,no,no,no,no
+old_benchmark,v1-051,The rock was ignored until the climber saw it on the cliff,stone,audit,audit,stone,,no,no,no,no
+old_benchmark,v1-052,The rock sounded flat until the drummer came on stage,music,continue,continue,music,The rock sounded flat until the drummer came on stage and filled the stadium,no,no,no,no
+old_benchmark,v1-053,They approached the bank in silence and only then counted the cash,financial_institution,audit,audit,,,no,no,no,no
+old_benchmark,v1-054,The bank looked empty from above until the boat,river_edge,continue,continue,river_edge,The bank looked empty from above until the boat touched the mud,no,no,no,no
+old_benchmark,v1-055,The bat seemed too small until the player,sports_equipment,audit,audit,,,no,no,no,no
+old_benchmark,v1-056,The seal looked plain until the document,closure_stamp,audit,audit,closure_stamp,,no,no,no,no
+old_benchmark,v1-057,The crane was silent for a long time before it lifted steel,machine,audit,audit,machine,,no,no,no,no
+old_benchmark,v1-058,The crane was silent for a long time before the bird,bird,continue,continue,bird,The crane was silent for a long time before the bird spread its wings,no,no,no,no
+old_benchmark,v1-059,The spring returned only after the mechanism,coil,continue,continue,coil,The spring returned only after the mechanism snapped back into place,no,no,no,no
+old_benchmark,v1-060,The rock changed mood when the guitar,music,continue,continue,music,The rock changed mood when the guitar started playing,no,no,no,no
+old_benchmark,v1-061,After leaving the river he went to the bank to deposit,financial_institution,audit,audit,,,no,no,no,no
+old_benchmark,v1-062,After withdrawing cash he walked to the bank beside the stream to rest,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-063,The bat had wings painted on it before the player swung,sports_equipment,continue,continue,sports_equipment,"The bat had wings painted on it before the player swung, and he steadied himself",no,no,no,no
+old_benchmark,v1-064,The bat was held by the player after it flew from the rafters,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-065,The seal near the package barked for fish and,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-066,The seal on the ocean themed document needed wax to,closure_stamp,audit,audit,,,no,no,no,no
+old_benchmark,v1-067,The crane near the marsh lifted steel while the operator,machine,continue,continue,machine,The crane near the marsh lifted steel while the operator checked the cables,no,no,no,no
+old_benchmark,v1-068,The crane at the construction site spread its wings over the lake and,bird,audit,audit,,,no,no,no,no
+old_benchmark,v1-069,The spring warmed the garden after the metal device,season,audit,audit,,,no,no,no,no
+old_benchmark,v1-070,The spring in April compressed inside the mechanism and,coil,audit,audit,,,no,no,no,no
+old_benchmark,v1-071,The rock from the mountain was carried onto the stage before,music,audit,audit,,,no,no,no,no
+old_benchmark,v1-072,The rock song described a heavy stone on the ground and,stone,continue,continue,stone,The rock song described a heavy stone on the ground and it rolled downhill,no,no,no,no
+old_benchmark,v1-073,The teller crossed the river to reach the bank and open,financial_institution,audit,audit,,,no,no,no,no
+old_benchmark,v1-074,The credit card floated to the bank where the boat,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-075,The animal expert handed the bat to the player before the game,sports_equipment,audit,audit,,,no,no,no,no
+old_benchmark,v1-076,The game paused when the bat in the cave opened its wings and,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-077,The official watched the seal splash in the water for fish,animal,continue,continue,animal,The official watched the seal splash in the water for fish and dove below the surface,no,no,no,no
+old_benchmark,v1-078,The flippers logo sat under the official seal on the package,closure_stamp,audit,audit,,,no,no,no,no
+old_benchmark,v1-079,The bird shaped crane at the site moved the steel,machine,audit,audit,,,no,no,no,no
+old_benchmark,v1-080,The operator photographed the crane as the bird crossed the lake,bird,audit,audit,,,no,no,no,no
+old_benchmark,v1-081,The bank was not beside a river so the clerk prepared to,financial_institution,audit,audit,,,no,no,no,no
+old_benchmark,v1-082,The bank was not a place for money as the hikers slid down to,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-083,The bat was not an animal because the batter raised it to,sports_equipment,audit,audit,,,no,no,no,no
+old_benchmark,v1-084,The bat was not for a game as it tucked its wings and,animal,continue,continue,animal,The bat was not for a game as it tucked its wings and it searched for insects,no,no,no,no
+old_benchmark,v1-085,The seal was not an animal when the clerk pressed it onto the form to,closure_stamp,audit,audit,,,no,no,no,no
+old_benchmark,v1-086,The seal was not a stamp as it surfaced beside the pier and,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-087,The crane was not a bird because the operator lowered the hook to,machine,continue,continue,machine,The crane was not a bird because the operator lowered the hook to lift the load,no,no,no,no
+old_benchmark,v1-088,The crane was not at a construction site as it crossed the reeds and,bird,audit,audit,,,no,no,no,no
+old_benchmark,v1-089,The spring was not warm weather because the latch pushed it back and,coil,audit,audit,,,no,no,no,no
+old_benchmark,v1-090,The spring was not a metal device after the thaw made the fields,season,audit,audit,,,no,no,no,no
+old_benchmark,v1-091,The rock was not a stone after the guitarist tuned up and,music,audit,audit,,,no,no,no,no
+old_benchmark,v1-092,The rock was not a song as it scraped his boot and,stone,audit,audit,,,no,no,no,no
+old_benchmark,v1-093,The bank was not about credit when the canoe scraped it and,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-094,The bat was not flying when the player set it beside home plate and,sports_equipment,audit,audit,,,no,no,no,no
+old_benchmark,v1-095,The seal was not on a document when it dove for fish and,animal,continue,continue,animal,The seal was not on a document when it dove for fish and it surfaced for air,no,no,no,no
+old_benchmark,v1-096,The river mural covered the bank lobby as the teller,financial_institution,audit,audit,,,no,no,no,no
+old_benchmark,v1-097,A cash wrapper floated to the bank where reeds,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-098,The cave logo was painted on the bat before the player,sports_equipment,audit,audit,,,no,no,no,no
+old_benchmark,v1-099,The injured player pointed at the bat above the rafters as it,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-100,The ocean blue seal on the envelope began to,closure_stamp,audit,audit,,,no,no,no,no
+old_benchmark,v1-101,The package label showed a seal swimming as the animal,animal,audit,audit,,,no,no,no,no
+old_benchmark,v1-102,The marsh exhibit used a crane to lift scenery while the operator,machine,audit,audit,,,no,no,no,no
+old_benchmark,v1-103,The steel sculpture looked like a crane until the bird,bird,audit,audit,,,no,no,no,no
+old_benchmark,v1-104,The flowers painted on the spring inside the device,coil,audit,audit,,,no,no,no,no
+old_benchmark,v1-105,The metal sign announced spring as rain,season,audit,audit,,,no,no,no,no
+old_benchmark,v1-106,The mountain venue shook when the rock band,music,audit,audit,,,no,no,no,no
+old_benchmark,v1-107,After the concert the rock on the ground,stone,audit,audit,,,no,no,no,no
+old_benchmark,v1-108,The fish emblem sat under the seal on the document,closure_stamp,audit,audit,,,no,no,no,no
+old_benchmark,v1-109,A credit card lay on the bank beside the stream,river_edge,audit,audit,,,no,no,no,no
+old_benchmark,v1-110,The wing shaped crane at the site lifted,machine,continue,audit,,,yes,no,yes,no
+old_benchmark,v1-111,He went to the bank and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-112,She noticed the bat and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-113,They checked the seal before,,audit,audit,,,no,no,no,no
+old_benchmark,v1-114,The crane stood nearby while,,audit,audit,,,no,no,no,no
+old_benchmark,v1-115,The spring returned and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-116,The teacher opened the notebook and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-117,The chef placed the bowl near the window and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-118,The driver waited at the corner before,,audit,audit,,,no,no,no,no
+old_benchmark,v1-119,The painter mixed a pale color and,,audit,audit,,,no,no,no,no
+old_benchmark,v1-120,The child folded the paper carefully and,,audit,audit,,,no,no,no,no
+probe,kp-v1-001,The customer opened a savings account at the bank,financial_institution,,continue,financial_institution,The customer opened a savings account at the bank and completed the transaction,,,,no
+probe,kp-v1-002,She asked the teller for an ATM card at the bank,financial_institution,,continue,financial_institution,She asked the teller for an ATM card at the bank and completed the transaction,,,,no
+probe,kp-v1-003,He checked the interest rate on his loan at the bank,financial_institution,,continue,financial_institution,He checked the interest rate on his loan at the bank and completed the transaction,,,,no
+probe,kp-v1-004,The bank branch processed the check and credited the account,financial_institution,,continue,financial_institution,The bank branch processed the check and credited the account and completed the transaction,,,,no
+probe,kp-v1-005,The bank beside the reeds also had a branch office for savings,financial_institution,,audit,,,,,,no
+probe,kp-v1-006,The fishermen cast their lines from the bank of the river,river_edge,,continue,river_edge,The fishermen cast their lines from the bank of the river and watched the current,,,,no
+probe,kp-v1-007,Tall reeds and grass grew along the bank beside the stream,river_edge,,continue,river_edge,Tall reeds and grass grew along the bank beside the stream and watched the current,,,,no
+probe,kp-v1-008,Floodwater rose over the bank and soaked the soil,river_edge,,continue,river_edge,Floodwater rose over the bank and soaked the soil and watched the current,,,,no
+probe,kp-v1-009,The grassy bank beside the stream dropped into the current below,river_edge,,continue,river_edge,The grassy bank beside the stream dropped into the current below and watched it,,,,no
+probe,kp-v1-010,The bank manager noticed reeds growing across the river near the branch,river_edge,,audit,,,,,,no
+probe,kp-v1-011,The bat roosted in the rafters of the old barn at dusk,animal,,continue,animal,The bat roosted in the rafters of the old barn at dusk and searched for insects,,,,no
+probe,kp-v1-012,Bats use echolocation to hunt insects in the dark,animal,,audit,,,,,,no
+probe,kp-v1-013,The bat hung from the ceiling with its membrane wings folded,animal,,continue,animal,The bat hung from the ceiling with its membrane wings folded and searched for insects,,,,no
+probe,kp-v1-014,The flying mammal bat emerged from the attic at night,animal,,continue,animal,The flying mammal bat emerged from the attic at night and searched for insects,,,,no
+probe,kp-v1-015,The bat flew toward the batter during the game,animal,,audit,,,,,,no
+probe,kp-v1-016,The pitcher threw and the batter hit a home run with the bat,sports_equipment,,continue,sports_equipment,The pitcher threw and the batter hit a home run with the bat and the player dropped it,,,,no
+probe,kp-v1-017,The aluminum bat cracked on contact with the ball,sports_equipment,,continue,sports_equipment,The aluminum bat cracked on contact with the ball and the player dropped it,,,,no
+probe,kp-v1-018,He swung the bat at the pitch and drove the ball deep,sports_equipment,,continue,sports_equipment,He swung the bat at the pitch and drove the ball deep and the player dropped it,,,,no
+probe,kp-v1-019,The aluminum bat connected with the ball and the crowd cheered,sports_equipment,,continue,sports_equipment,The aluminum bat connected with the ball and the crowd cheered and the player dropped it,,,,no
+probe,kp-v1-020,The bat dropped from the cave roof as the batter stepped to the plate,sports_equipment,,audit,,,,,,no
+probe,kp-v1-021,The seal pup rested on the rocky coast near the water,animal,,continue,animal,The seal pup rested on the rocky coast near the water and dove below the surface,,,,no
+probe,kp-v1-022,A marine mammal like the seal hunts fish near the shore,animal,,continue,animal,A marine mammal like the seal hunts fish near the shore and swam through the cold water,,,,no
+probe,kp-v1-023,The seal barked loudly as the orca approached the coast,animal,,continue,animal,The seal barked loudly as the orca approached the coast and swam through the cold water,,,,no
+probe,kp-v1-024,Seals have strong flippers for swimming and diving in the ocean,animal,,audit,,,,,,no
+probe,kp-v1-025,The clerk pressed the official seal near the marine exhibit on the coast,animal,,audit,,,,,,no
+probe,kp-v1-026,The notary pressed the embossed seal onto the certificate,closure_stamp,,continue,closure_stamp,The notary pressed the embossed seal onto the certificate and the wax hardened,,,,no
+probe,kp-v1-027,An airtight seal kept the jar closed during transport,closure_stamp,,continue,closure_stamp,An airtight seal kept the jar closed during transport and the wax hardened,,,,no
+probe,kp-v1-028,The stamped seal on the official document was authentic,closure_stamp,,continue,closure_stamp,The stamped seal on the official document was authentic and the wax hardened,,,,no
+probe,kp-v1-029,The certificate required a notary seal and a clerk signature,closure_stamp,,continue,closure_stamp,The certificate required a notary seal and a clerk signature and the wax hardened,,,,no
+probe,kp-v1-030,The seal barked near the stamped parcel on the pier,closure_stamp,,audit,,,,,,no
+probe,kp-v1-031,A flock of cranes migrated south over the lake at dawn,bird,,audit,,,,,,no
+probe,kp-v1-032,The crane waded through the wetland in search of fish,bird,,continue,bird,The crane waded through the wetland in search of fish and spread its wings,,,,no
+probe,kp-v1-033,Its long legs helped the crane stand in the shallow reeds,bird,,continue,bird,Its long legs helped the crane stand in the shallow reeds and spread its wings,,,,no
+probe,kp-v1-034,Cranes are known for their migration in large flocks across wetlands,bird,,audit,,,,,,no
+probe,kp-v1-035,The crane at the construction site spread its wing while a flock flew over,bird,,audit,,,,,,no
+probe,kp-v1-036,The crane's cable lowered the steel beams to the ground,machine,,audit,,,,,,no
+probe,kp-v1-037,The boom of the tower crane rose above the building site,machine,,continue,machine,The boom of the tower crane rose above the building site and carried the load,,,,no
+probe,kp-v1-038,Outriggers kept the crane stable on the uneven construction site,machine,,continue,machine,Outriggers kept the crane stable on the uneven construction site and carried the load,,,,no
+probe,kp-v1-039,The operator used the crane to swing the steel beams over the site,machine,,continue,machine,The operator used the crane to swing the steel beams over the site and carried the load,,,,no
+probe,kp-v1-040,The crane spread its neck near the tower crane on the site,machine,,audit,,,,,,no
+probe,kp-v1-041,The geologist studied the mineral layers in the rock formation,stone,,continue,stone,The geologist studied the mineral layers in the rock formation and lay near the river,,,,no
+probe,kp-v1-042,A boulder of solid rock blocked the trail on the hillside,stone,,continue,stone,A boulder of solid rock blocked the trail on the hillside and lay near the river,,,,no
+probe,kp-v1-043,Geology experts noted the rock formation near the mountain trail,stone,,continue,stone,Geology experts noted the rock formation near the mountain trail and lay near the river,,,,no
+probe,kp-v1-044,The heavy rock lay near the mountain stream at the base of the cliff,stone,,continue,stone,The heavy rock lay near the mountain stream at the base of the cliff and lay near the river,,,,no
+probe,kp-v1-045,The rock band rehearsed near the cliff while climbers scaled the boulder,stone,,audit,,,,,,no
+probe,kp-v1-046,The rock band released a new album to sold-out crowds,music,,continue,music,The rock band released a new album to sold-out crowds and filled the stadium,,,,no
+probe,kp-v1-047,He played drums on the stage at the rock concert,music,,continue,music,He played drums on the stage at the rock concert and filled the stadium,,,,no
+probe,kp-v1-048,Rock is a genre that includes punk and metal subgenres,music,,continue,music,Rock is a genre that includes punk and metal subgenres and filled the stadium,,,,no
+probe,kp-v1-049,The rock crowd cheered as the band played on the stage,music,,continue,music,The rock crowd cheered as the band played on the stage and filled the stadium,,,,no
+probe,kp-v1-050,The drum kit sat on the flat rock near the cliff by the stage,music,,audit,,,,,,no
+probe,kp-v1-051,Spring flowers bloomed in the garden after the morning rain,season,,continue,season,Spring flowers bloomed in the garden after the morning rain brought warmer days,,,,no
+probe,kp-v1-052,The spring migration brought birds to the lake every year,season,,continue,season,The spring migration brought birds to the lake every year and brought warmer days,,,,no
+probe,kp-v1-053,Fresh spring mornings followed the thaw each year,season,,continue,season,Fresh spring mornings followed the thaw each year and brought warmer days,,,,no
+probe,kp-v1-054,Spring was the season when flowers bloomed and birds returned,season,,continue,season,Spring was the season when flowers bloomed and birds returned and brought warmer days,,,,no
+probe,kp-v1-055,The spring in the latch clicked as the spring rain filled the garden,season,,audit,,,,,,no
+probe,kp-v1-056,The coil spring in the door handle under constant tension,coil,,continue,coil,The coil spring in the door handle under constant tension and snapped back into place,,,,no
+probe,kp-v1-057,An elastic spring in the mattress provided comfortable support,coil,,continue,coil,An elastic spring in the mattress provided comfortable support and snapped back into place,,,,no
+probe,kp-v1-058,The worn spring in the latch caused the handle to stick,coil,,continue,coil,The worn spring in the latch caused the handle to stick and snapped back into place,,,,no
+probe,kp-v1-059,The elastic spring inside the device maintained tension throughout the bounce,coil,,continue,coil,The elastic spring inside the device maintained tension throughout the bounce and snapped back into place,,,,no
+probe,kp-v1-060,The metal spring latch compressed as the spring flowers bloomed in the warm garden,coil,,audit,,,,,,no
