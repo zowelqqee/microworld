@@ -1,0 +1,1521 @@
+{
+  "rows": [
+    {
+      "confidence": 0.6667,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "prompt_tail_incompatible"
+        ],
+        "candidate_count": 2,
+        "confidence": 0.6667,
+        "expected_sense": "animal",
+        "has_semantic_frame": true,
+        "margin": 2.0,
+        "second_score": 0.0,
+        "selected_sense": "animal",
+        "top_score": 2.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "On the pier the seal raised its head while tourists",
+      "row_id": "v1-030",
+      "secondary_reasons": [],
+      "selected_sense": "animal",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "surface_realization_risk",
+          "no_safe_semantic_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.5,
+        "expected_sense": "river_edge",
+        "has_semantic_frame": true,
+        "margin": 1.0,
+        "second_score": 0.0,
+        "selected_sense": "river_edge",
+        "surface_patterns": [
+          "malformed_until_subject"
+        ],
+        "top_score": 1.0
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "He stood by the bank unsure where to sit until the current",
+      "row_id": "v1-041",
+      "secondary_reasons": [
+        "missing_phrase_candidate"
+      ],
+      "selected_sense": "river_edge",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0,
+        "expected_sense": "sports_equipment"
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "He picked up the bat with no comment until the pitcher",
+      "row_id": "v1-044",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "surface_realization_risk",
+          "no_safe_semantic_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.5,
+        "expected_sense": "animal",
+        "has_semantic_frame": true,
+        "margin": 1.0,
+        "second_score": 0.0,
+        "selected_sense": "animal",
+        "surface_patterns": [
+          "malformed_until_subject"
+        ],
+        "top_score": 1.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "The seal lay still on the platform until the fish",
+      "row_id": "v1-045",
+      "secondary_reasons": [
+        "missing_phrase_candidate"
+      ],
+      "selected_sense": "animal",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "surface_realization_risk",
+          "no_safe_semantic_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.5,
+        "expected_sense": "bird",
+        "has_semantic_frame": true,
+        "margin": 1.0,
+        "second_score": 0.0,
+        "selected_sense": "bird",
+        "surface_patterns": [
+          "malformed_before_wings"
+        ],
+        "top_score": 1.0
+      },
+      "expected_sense": "bird",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "The crane moved slowly across the pale shallows before its wings",
+      "row_id": "v1-047",
+      "secondary_reasons": [
+        "missing_phrase_candidate"
+      ],
+      "selected_sense": "bird",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "no_safe_repaired_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.5,
+        "expected_sense": "stone",
+        "has_semantic_frame": true,
+        "margin": 1.0,
+        "second_score": 0.0,
+        "selected_sense": "stone",
+        "surface_repair_reason": "attachment_drift",
+        "top_score": 1.0
+      },
+      "expected_sense": "stone",
+      "primary_audit_reason": "no_safe_repaired_candidate",
+      "prompt": "The rock was ignored until the climber saw it on the cliff",
+      "row_id": "v1-051",
+      "secondary_reasons": [],
+      "selected_sense": "stone",
+      "suggested_next_action": "keep audited unless a safe explicit rewrite is added",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "financial_institution"
+      },
+      "expected_sense": "financial_institution",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "They approached the bank in silence and only then counted the cash",
+      "row_id": "v1-053",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "sports_equipment"
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The bat seemed too small until the player",
+      "row_id": "v1-055",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "surface_realization_risk",
+          "no_safe_semantic_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.5,
+        "expected_sense": "closure_stamp",
+        "has_semantic_frame": true,
+        "margin": 1.0,
+        "second_score": 0.0,
+        "selected_sense": "closure_stamp",
+        "surface_patterns": [
+          "malformed_until_subject"
+        ],
+        "top_score": 1.0
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "The seal looked plain until the document",
+      "row_id": "v1-056",
+      "secondary_reasons": [
+        "missing_phrase_candidate"
+      ],
+      "selected_sense": "closure_stamp",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.6667,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "surface_realization_risk",
+          "no_safe_semantic_candidate"
+        ],
+        "candidate_count": 1,
+        "confidence": 0.6667,
+        "expected_sense": "machine",
+        "has_semantic_frame": true,
+        "margin": 2.0,
+        "second_score": 0.0,
+        "selected_sense": "machine",
+        "surface_patterns": [
+          "malformed_before_it_operator"
+        ],
+        "top_score": 2.0
+      },
+      "expected_sense": "machine",
+      "primary_audit_reason": "surface_validation_failed",
+      "prompt": "The crane was silent for a long time before it lifted steel",
+      "row_id": "v1-057",
+      "secondary_reasons": [
+        "missing_phrase_candidate"
+      ],
+      "selected_sense": "machine",
+      "suggested_next_action": "inspect renderer/validator mismatch",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "financial_institution",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "financial_institution",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "After leaving the river he went to the bank to deposit",
+      "row_id": "v1-061",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "river_edge",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "After withdrawing cash he walked to the bank beside the stream to rest",
+      "row_id": "v1-062",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "animal",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The bat was held by the player after it flew from the rafters",
+      "row_id": "v1-064",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "animal",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The seal near the package barked for fish and",
+      "row_id": "v1-065",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "closure_stamp",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The seal on the ocean themed document needed wax to",
+      "row_id": "v1-066",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.4,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.4,
+        "conflict_detected": true,
+        "expected_sense": "bird",
+        "margin": 0.0,
+        "second_score": 2.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "bird",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The crane at the construction site spread its wings over the lake and",
+      "row_id": "v1-068",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.4,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.4,
+        "conflict_detected": true,
+        "expected_sense": "season",
+        "margin": 0.0,
+        "second_score": 2.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "season",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The spring warmed the garden after the metal device",
+      "row_id": "v1-069",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "coil",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "coil",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The spring in April compressed inside the mechanism and",
+      "row_id": "v1-070",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "music",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "music",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The rock from the mountain was carried onto the stage before",
+      "row_id": "v1-071",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "financial_institution",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "financial_institution",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The teller crossed the river to reach the bank and open",
+      "row_id": "v1-073",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "river_edge",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The credit card floated to the bank where the boat",
+      "row_id": "v1-074",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "sports_equipment",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The animal expert handed the bat to the player before the game",
+      "row_id": "v1-075",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "animal",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The game paused when the bat in the cave opened its wings and",
+      "row_id": "v1-076",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "closure_stamp",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The flippers logo sat under the official seal on the package",
+      "row_id": "v1-078",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "machine",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "machine",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The bird shaped crane at the site moved the steel",
+      "row_id": "v1-079",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "bird",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "bird",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The operator photographed the crane as the bird crossed the lake",
+      "row_id": "v1-080",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "financial_institution"
+      },
+      "expected_sense": "financial_institution",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The bank was not beside a river so the clerk prepared to",
+      "row_id": "v1-081",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "river_edge"
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The bank was not a place for money as the hikers slid down to",
+      "row_id": "v1-082",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "sports_equipment"
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The bat was not an animal because the batter raised it to",
+      "row_id": "v1-083",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "closure_stamp"
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The seal was not an animal when the clerk pressed it onto the form to",
+      "row_id": "v1-085",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "animal"
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The seal was not a stamp as it surfaced beside the pier and",
+      "row_id": "v1-086",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "negated_top_sense"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "bird",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "bird",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The crane was not at a construction site as it crossed the reeds and",
+      "row_id": "v1-088",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "coil"
+      },
+      "expected_sense": "coil",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The spring was not warm weather because the latch pushed it back and",
+      "row_id": "v1-089",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "season"
+      },
+      "expected_sense": "season",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The spring was not a metal device after the thaw made the fields",
+      "row_id": "v1-090",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "music"
+      },
+      "expected_sense": "music",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The rock was not a stone after the guitarist tuned up and",
+      "row_id": "v1-091",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "stone"
+      },
+      "expected_sense": "stone",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The rock was not a song as it scraped his boot and",
+      "row_id": "v1-092",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "river_edge"
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The bank was not about credit when the canoe scraped it and",
+      "row_id": "v1-093",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "anti_cue_conflict",
+          "guard_failure",
+          "only_negated_evidence"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "sports_equipment"
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "true_unsafe",
+      "prompt": "The bat was not flying when the player set it beside home plate and",
+      "row_id": "v1-094",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "financial_institution",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "financial_institution",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The river mural covered the bank lobby as the teller",
+      "row_id": "v1-096",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "river_edge",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "A cash wrapper floated to the bank where reeds",
+      "row_id": "v1-097",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "sports_equipment"
+      },
+      "expected_sense": "sports_equipment",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The cave logo was painted on the bat before the player",
+      "row_id": "v1-098",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.0,
+        "expected_sense": "animal"
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The injured player pointed at the bat above the rafters as it",
+      "row_id": "v1-099",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "closure_stamp",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The ocean blue seal on the envelope began to",
+      "row_id": "v1-100",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.4,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.4,
+        "conflict_detected": true,
+        "expected_sense": "animal",
+        "margin": 0.0,
+        "second_score": 2.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "animal",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The package label showed a seal swimming as the animal",
+      "row_id": "v1-101",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "machine",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "machine",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The marsh exhibit used a crane to lift scenery while the operator",
+      "row_id": "v1-102",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "bird",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "bird",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The steel sculpture looked like a crane until the bird",
+      "row_id": "v1-103",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "coil",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "coil",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The flowers painted on the spring inside the device",
+      "row_id": "v1-104",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "guard_failure"
+        ],
+        "confidence": 0.5,
+        "expected_sense": "season",
+        "margin": 1.0,
+        "second_score": 0.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "season",
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "prompt": "The metal sign announced spring as rain",
+      "row_id": "v1-105",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add cue memory",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "music",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "music",
+      "primary_audit_reason": "low_margin",
+      "prompt": "The mountain venue shook when the rock band",
+      "row_id": "v1-106",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "stone",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "stone",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "After the concert the rock on the ground",
+      "row_id": "v1-107",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "rock"
+    },
+    {
+      "confidence": 0.3333,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.3333,
+        "conflict_detected": true,
+        "expected_sense": "closure_stamp",
+        "margin": 0.0,
+        "second_score": 1.0,
+        "top_score": 1.0
+      },
+      "expected_sense": "closure_stamp",
+      "primary_audit_reason": "sense_tie",
+      "prompt": "The fish emblem sat under the seal on the document",
+      "row_id": "v1-108",
+      "secondary_reasons": [
+        "low_margin"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add disambiguating cues and guard rules",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.5,
+      "decision": "audit",
+      "evidence": {
+        "audit_reasons": [
+          "low_margin_conflict"
+        ],
+        "confidence": 0.5,
+        "conflict_detected": true,
+        "expected_sense": "river_edge",
+        "margin": 1.0,
+        "second_score": 1.0,
+        "top_score": 2.0
+      },
+      "expected_sense": "river_edge",
+      "primary_audit_reason": "low_margin",
+      "prompt": "A credit card lay on the bank beside the stream",
+      "row_id": "v1-109",
+      "secondary_reasons": [
+        "sense_tie"
+      ],
+      "selected_sense": null,
+      "suggested_next_action": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "prompt": "He went to the bank and",
+      "row_id": "v1-111",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit by default",
+      "term": "bank"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "prompt": "She noticed the bat and",
+      "row_id": "v1-112",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit by default",
+      "term": "bat"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "prompt": "They checked the seal before",
+      "row_id": "v1-113",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit by default",
+      "term": "seal"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "prompt": "The crane stood nearby while",
+      "row_id": "v1-114",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit by default",
+      "term": "crane"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "all_sense_scores_zero": true,
+        "confidence": 0.0
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "prompt": "The spring returned and",
+      "row_id": "v1-115",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "keep audit by default",
+      "term": "spring"
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "confidence": 0.0,
+        "no_ambiguous_term": true
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "missing_sense_memory",
+      "prompt": "The teacher opened the notebook and",
+      "row_id": "v1-116",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add sense entry / explicit memory",
+      "term": ""
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "confidence": 0.0,
+        "no_ambiguous_term": true
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "missing_sense_memory",
+      "prompt": "The chef placed the bowl near the window and",
+      "row_id": "v1-117",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add sense entry / explicit memory",
+      "term": ""
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "confidence": 0.0,
+        "no_ambiguous_term": true
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "missing_sense_memory",
+      "prompt": "The driver waited at the corner before",
+      "row_id": "v1-118",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add sense entry / explicit memory",
+      "term": ""
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "confidence": 0.0,
+        "no_ambiguous_term": true
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "missing_sense_memory",
+      "prompt": "The painter mixed a pale color and",
+      "row_id": "v1-119",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add sense entry / explicit memory",
+      "term": ""
+    },
+    {
+      "confidence": 0.0,
+      "decision": "audit",
+      "evidence": {
+        "confidence": 0.0,
+        "no_ambiguous_term": true
+      },
+      "expected_sense": null,
+      "primary_audit_reason": "missing_sense_memory",
+      "prompt": "The child folded the paper carefully and",
+      "row_id": "v1-120",
+      "secondary_reasons": [],
+      "selected_sense": null,
+      "suggested_next_action": "add sense entry / explicit memory",
+      "term": ""
+    }
+  ],
+  "summary": {
+    "audit_count": 62,
+    "continue_count": 58,
+    "reason_counts": {
+      "low_margin": 12,
+      "missing_or_weak_cue_support": 10,
+      "missing_sense_memory": 5,
+      "no_safe_repaired_candidate": 1,
+      "sense_tie": 11,
+      "surface_validation_failed": 6,
+      "true_unsafe": 12,
+      "unsupported_or_underconstrained_context": 5
+    },
+    "reason_percentages": {
+      "low_margin": 0.1935,
+      "missing_or_weak_cue_support": 0.1613,
+      "missing_sense_memory": 0.0806,
+      "no_safe_repaired_candidate": 0.0161,
+      "sense_tie": 0.1774,
+      "surface_validation_failed": 0.0968,
+      "true_unsafe": 0.1935,
+      "unsupported_or_underconstrained_context": 0.0806
+    },
+    "rows_by_reason": {
+      "low_margin": [
+        "v1-066",
+        "v1-070",
+        "v1-074",
+        "v1-075",
+        "v1-076",
+        "v1-078",
+        "v1-079",
+        "v1-080",
+        "v1-096",
+        "v1-102",
+        "v1-106",
+        "v1-109"
+      ],
+      "missing_or_weak_cue_support": [
+        "v1-044",
+        "v1-053",
+        "v1-055",
+        "v1-062",
+        "v1-064",
+        "v1-097",
+        "v1-098",
+        "v1-099",
+        "v1-103",
+        "v1-105"
+      ],
+      "missing_sense_memory": [
+        "v1-116",
+        "v1-117",
+        "v1-118",
+        "v1-119",
+        "v1-120"
+      ],
+      "no_safe_repaired_candidate": [
+        "v1-051"
+      ],
+      "sense_tie": [
+        "v1-061",
+        "v1-065",
+        "v1-068",
+        "v1-069",
+        "v1-071",
+        "v1-073",
+        "v1-100",
+        "v1-101",
+        "v1-104",
+        "v1-107",
+        "v1-108"
+      ],
+      "surface_validation_failed": [
+        "v1-030",
+        "v1-041",
+        "v1-045",
+        "v1-047",
+        "v1-056",
+        "v1-057"
+      ],
+      "true_unsafe": [
+        "v1-081",
+        "v1-082",
+        "v1-083",
+        "v1-085",
+        "v1-086",
+        "v1-088",
+        "v1-089",
+        "v1-090",
+        "v1-091",
+        "v1-092",
+        "v1-093",
+        "v1-094"
+      ],
+      "unsupported_or_underconstrained_context": [
+        "v1-111",
+        "v1-112",
+        "v1-113",
+        "v1-114",
+        "v1-115"
+      ]
+    },
+    "suggested_actions": {
+      "low_margin": "add cue / anti-cue memory or tune sense evidence, not thresholds",
+      "missing_or_weak_cue_support": "add cue memory",
+      "missing_sense_memory": "add sense entry / explicit memory",
+      "no_safe_repaired_candidate": "keep audited unless a safe explicit rewrite is added",
+      "sense_tie": "add disambiguating cues and guard rules",
+      "surface_validation_failed": "inspect renderer/validator mismatch",
+      "true_unsafe": "keep audit",
+      "unsupported_or_underconstrained_context": "keep audit by default"
+    },
+    "total_rows": 120,
+    "unknown_count": 0
+  }
+}
