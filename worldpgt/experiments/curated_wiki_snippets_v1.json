@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "curated_bank_financial_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "bank",
+    "sense": "financial_institution",
+    "title": "Bank (financial institution)",
+    "text": "A bank is a financial institution that accepts deposits and extends credit. Customers may open an account, make a deposit, request a loan, or speak with a teller at the counter. Banks issue checks, cash withdrawals, and manage savings. An ATM outside the branch lets customers withdraw cash. Interest accrues on savings accounts.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_bank_river_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "bank",
+    "sense": "river_edge",
+    "title": "Bank (river)",
+    "text": "The bank of a river is the land alongside the stream or current. Reeds and tall grass may grow along the bank. Fishermen often stand on the bank near a bridge to cast a line into the current. Floodwater can overtop a bank and erode the soil. A steep bank may drop directly to the water below.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_bat_animal_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "bat",
+    "sense": "animal",
+    "title": "Bat (animal)",
+    "text": "Bats are flying mammals that roost in caves, attics, and rafters. They emerge at dusk to hunt insects using echolocation. Their wings are made of stretched membrane. Bats hang upside down to sleep and are active at night. Some species feed on fruit rather than insects.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_bat_sports_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "bat",
+    "sense": "sports_equipment",
+    "title": "Bat (sports equipment)",
+    "text": "A bat is a piece of sports equipment used to strike a ball. In baseball, a batter stands at the plate and swings the bat at a pitch thrown by the pitcher. The player may hit a home run, a line drive, or foul the ball. Wood and aluminum bats are common. The crowd cheers when a batter connects with a swing.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_seal_animal_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "seal",
+    "sense": "animal",
+    "title": "Seal (animal)",
+    "text": "Seals are marine mammals. They often live near coasts, swim in ocean water, dive below the surface, and eat fish. They have flippers and may rest on rocks or beaches. Seals bark and are hunted by orca whales. Pups are born on shore and nursed by their mothers.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_seal_closure_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "seal",
+    "sense": "closure_stamp",
+    "title": "Seal (emblem or closure)",
+    "text": "A seal may be a wax impression used to close a document, parcel, envelope, or letter. Clerks and officials may press or break a seal on a flap. An airtight seal keeps a container closed. An official seal stamped on a certificate marks it as authentic. The notary pressed the embossed seal onto the document.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_crane_bird_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "crane",
+    "sense": "bird",
+    "title": "Crane (bird)",
+    "text": "Cranes are large wading birds with long necks and long legs. They inhabit wetlands, marshes, and open fields near lakes or reeds. Cranes are known for their elaborate dancing displays during courtship. They migrate in flocks and call with a loud trumpeting sound. Their wings span several feet.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_crane_machine_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "crane",
+    "sense": "machine",
+    "title": "Crane (machine)",
+    "text": "A crane is a heavy machine used at construction sites to lift and lower loads using a hook and cable. An operator in the cab controls the boom arm. Tower cranes are used to build tall structures. The crane swings a load of steel beams across the site. Outriggers stabilize the machine on the ground.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_rock_stone_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "rock",
+    "sense": "stone",
+    "title": "Rock (geology)",
+    "text": "A rock is a naturally occurring solid mass of minerals or stone. Rocks form cliffs, boulders, and trails through mountains. Hikers climb over rocks on steep paths. Geologists study rock formations to understand the history of the earth. A boulder is a large rock that may have rolled down a hillside.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_rock_music_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "rock",
+    "sense": "music",
+    "title": "Rock music",
+    "text": "Rock is a genre of popular music that developed in the mid-twentieth century. Rock bands play electric guitar, bass, and drums on a stage. Concerts attract large crowds who cheer and sing along. The genre includes subgenres such as punk, metal, and indie. A rock album may sell millions of copies.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_spring_season_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "spring",
+    "sense": "season",
+    "title": "Spring (season)",
+    "text": "Spring is the season that follows winter and precedes summer. Temperatures warm, snow and ice thaw, and flowers begin to bloom. Spring mornings are fresh and mild. Birds return from migration and days grow longer. Rain showers are common in spring.",
+    "source_url": null,
+    "trust_seed": 0.7
+  },
+  {
+    "source_id": "curated_spring_coil_v1",
+    "source_type": "curated_wiki_snippet",
+    "term": "spring",
+    "sense": "coil",
+    "title": "Spring (mechanical device)",
+    "text": "A spring is a mechanical device made from a coiled or flat strip of metal that stores elastic energy. When compressed or stretched it snaps back to its original shape. Springs are used in latches, door handles, mattresses, and machines. The latch clicked as the spring snapped back. A worn spring in the device may cause the handle to stick.",
+    "source_url": null,
+    "trust_seed": 0.7
+  }
+]
