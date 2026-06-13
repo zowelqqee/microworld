@@ -23,6 +23,15 @@ _BANNED_ANSWER_PHRASES = (
     "broadly speaking",
 )
 
+# Surface-quality patterns that indicate a rendering defect.
+_SURFACE_ISSUES = (
+    "a animal is",        # wrong article before vowel
+    "a rock music is",    # article before mass noun
+    "a spring season is", # article before uncountable season label
+    "typicalactions",     # missing space artifact
+    "andparcel",          # missing space artifact
+)
+
 _WRONG_SENSE_SIGNALS: dict[str, dict[str, list[str]]] = {
     "bank": {
         "financial_institution": ["river", "stream", "current", "reed", "shore", "mud"],
@@ -133,6 +142,30 @@ def validate(
             reasons=[f"answer_too_long:{len(answer)}"],
             quality_flagged=True,
             quality_reason="too_long",
+        )
+
+    # 5b. Surface quality checks
+    for issue in _SURFACE_ISSUES:
+        if issue in lower:
+            return ValidationResult(
+                passed=False,
+                reasons=[f"surface_issue:{issue!r}"],
+                quality_flagged=True,
+                quality_reason=f"surface_issue:{issue!r}",
+            )
+    if "  " in answer:
+        return ValidationResult(
+            passed=False,
+            reasons=["surface_issue:'double_space'"],
+            quality_flagged=True,
+            quality_reason="surface_issue:'double_space'",
+        )
+    if intent != "distinguish_senses" and lower.count("associated with") > 1:
+        return ValidationResult(
+            passed=False,
+            reasons=["surface_issue:'repeated_associated_with'"],
+            quality_flagged=True,
+            quality_reason="surface_issue:'repeated_associated_with'",
         )
 
     # 6. expected_contains check

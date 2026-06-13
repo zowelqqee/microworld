@@ -555,3 +555,85 @@ def test_no_neural_gpt_training_imports(module_path: Path):
         assert token.lower() not in import_block, (
             f"Forbidden token '{token}' found in imports of {module_path.name}"
         )
+
+
+# ---------------------------------------------------------------------------
+# 31–37. Surface polish v2 — natural display labels, no wrong articles
+# ---------------------------------------------------------------------------
+
+def test_renderer_bat_animal_uses_natural_label():
+    a = analyze("What is a bat animal?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    assert answer.startswith("A bat is"), f"Expected 'A bat is...', got: {answer!r}"
+    assert "a animal is" not in answer.lower()
+
+
+def test_renderer_bat_sports_uses_baseball_label():
+    a = analyze("What is a baseball bat?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    assert answer.startswith("A baseball bat is"), f"Expected 'A baseball bat is...', got: {answer!r}"
+    assert "a sports bat is" not in answer.lower()
+
+
+def test_renderer_rock_music_no_article():
+    a = analyze("What is rock music?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    assert answer.startswith("Rock music is"), f"Expected 'Rock music is...', got: {answer!r}"
+    assert "a rock music is" not in answer.lower()
+
+
+def test_renderer_spring_season_no_article():
+    a = analyze("What is the spring season?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    assert answer.startswith("Spring is"), f"Expected 'Spring is...', got: {answer!r}"
+    assert "a spring season is" not in answer.lower()
+
+
+def test_renderer_no_surface_defects_in_benchmark():
+    """No answer in the benchmark output contains known bad surface patterns."""
+    bad_patterns = [
+        "a animal is",
+        "a rock music is",
+        "a spring season is",
+        "typicalactions",
+        "andparcel",
+    ]
+    for row in _output_rows():
+        if row["decision"] != "answer":
+            continue
+        lower = row["answer"].lower()
+        for pat in bad_patterns:
+            assert pat not in lower, (
+                f"{row['row_id']}: surface defect {pat!r} in answer: {row['answer']!r}"
+            )
+        assert "  " not in row["answer"], (
+            f"{row['row_id']}: double space in answer"
+        )
+
+
+def test_validator_catches_wrong_article_before_vowel():
+    result = validate(
+        answer="A animal is a nocturnal flying mammal.",
+        decision="answer",
+        term="bat",
+        sense_id="animal",
+        intent="define_sense",
+    )
+    assert result.quality_flagged is True
+    assert result.passed is False
+
+
+def test_validator_catches_article_before_mass_noun():
+    result = validate(
+        answer="A rock music is a genre of music featuring guitars.",
+        decision="answer",
+        term="rock",
+        sense_id="music",
+        intent="define_sense",
+    )
+    assert result.quality_flagged is True
+    assert result.passed is False

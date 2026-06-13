@@ -36,11 +36,11 @@ qa-v1-034,"In 'the boulder rock rolled down the cliff trail', what does rock mea
 qa-v1-035,"In 'flowers bloomed in spring after the thaw', what does spring mean?",answer,classify_context,spring,season,season;thaw,low
 qa-v1-036,"In 'the metal coil spring compressed under load pressure', what does spring mean?",answer,classify_context,spring,coil,coil;metal,low
 qa-v1-037,What is the difference between a financial bank and a river bank?,answer,distinguish_senses,bank,financial_institution,financial;river;account;current,low
-qa-v1-038,How is a bat animal different from a baseball bat?,answer,distinguish_senses,bat,animal,animal;cave;pitcher;ball,low
+qa-v1-038,How is a bat animal different from a baseball bat?,answer,distinguish_senses,bat,animal,mammal;cave;pitcher;ball,low
 qa-v1-039,How is a seal animal different from a wax seal?,answer,distinguish_senses,seal,animal,marine;ocean;wax;envelope,low
 qa-v1-040,What is the difference between a crane bird and a construction crane?,answer,distinguish_senses,crane,bird,bird;neck;hook;construction,low
 qa-v1-041,How is rock music different from a rock stone?,answer,distinguish_senses,rock,music,music;concert;boulder;cliff,low
-qa-v1-042,What is the difference between the spring season and a spring coil?,answer,distinguish_senses,spring,season,season;bloom;coil;metal,low
+qa-v1-042,What is the difference between the spring season and a spring coil?,answer,distinguish_senses,spring,season,season;thaw;coil;metal,low
 qa-v1-043,What does bank mean?,audit,unknown_or_ambiguous,bank,,underconstrained,medium
 qa-v1-044,What does bat mean?,audit,unknown_or_ambiguous,bat,,underconstrained,medium
 qa-v1-045,What does seal mean?,audit,unknown_or_ambiguous,seal,,underconstrained,medium
