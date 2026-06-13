@@ -62,3 +62,16 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
