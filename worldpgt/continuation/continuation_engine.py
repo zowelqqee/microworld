@@ -18,6 +18,10 @@ from worldpgt.continuation.semantic_renderer import (
     make_frame_candidates,
     rank_frame_candidates,
 )
+from worldpgt.continuation.prompt_tail_validator import (
+    AUDIT_REASON as PROMPT_TAIL_AUDIT_REASON,
+    validate_prompt_tail_compatibility,
+)
 from worldpgt.continuation.sense_memory import ExplicitSenseMemory
 from worldpgt.continuation.surface_repair import repair_surface_candidate
 from worldpgt.continuation.types import ContinuationResult
@@ -145,10 +149,24 @@ class ControlledContinuationEngine:
             repair = repair_surface_candidate(prompt, best.text, frame)
             memory_hits.extend(repair.reasons)
             if repair.safe:
-                if repair.applied:
-                    repaired_part = repair.text[len(prompt.rstrip()):].strip()
-                    memory_hits.append(f"repaired_candidate={repaired_part}")
-                return repair.text
+                tail = validate_prompt_tail_compatibility(prompt, repair.text, frame)
+                if tail.passed:
+                    memory_hits.append("prompt_tail_validator=passed")
+                    if tail.rule_name is not None:
+                        memory_hits.append(f"prompt_tail_rule={tail.rule_name}")
+                    for item in tail.evidence:
+                        memory_hits.append(f"prompt_tail_evidence={item}")
+                    if repair.applied:
+                        repaired_part = repair.text[len(prompt.rstrip()):].strip()
+                        memory_hits.append(f"repaired_candidate={repaired_part}")
+                    if tail.repair_applied:
+                        tail_part = tail.text[len(prompt.rstrip()):].strip()
+                        memory_hits.append("prompt_tail_repair=applied")
+                        memory_hits.append(f"prompt_tail_repaired_candidate={tail_part}")
+                    return tail.text
+
+                self._audit_prompt_tail_incompatible(tail, verdict, memory_hits)
+                return ""
 
             self._audit_no_safe_repaired_candidate(repair, verdict, memory_hits)
             return ""
@@ -181,3 +199,18 @@ class ControlledContinuationEngine:
             verdict.reasons.append(f"surface_repair_reason={reason}")
             memory_hits.append(f"surface_repair_reason={reason}")
         verdict.reasons.append(f"audit_reason={repair.audit_reason}")
+
+    @staticmethod
+    def _audit_prompt_tail_incompatible(tail, verdict, memory_hits: list[str]) -> None:
+        verdict.decision = "audit"
+        verdict.reasons.append("prompt_tail_validator=rejected")
+        memory_hits.append("prompt_tail_validator=rejected")
+        if tail.rule_name is not None:
+            verdict.reasons.append(f"prompt_tail_rule={tail.rule_name}")
+            memory_hits.append(f"prompt_tail_rule={tail.rule_name}")
+        if tail.rejection_reason is not None:
+            verdict.reasons.append(f"prompt_tail_rejection={tail.rejection_reason}")
+            memory_hits.append(f"prompt_tail_rejection={tail.rejection_reason}")
+        for item in tail.evidence:
+            memory_hits.append(f"prompt_tail_evidence={item}")
+        verdict.reasons.append(f"audit_reason={PROMPT_TAIL_AUDIT_REASON}")

@@ -67,8 +67,8 @@ def _by_id(rows: list[dict]) -> dict[str, dict]:
 def test_benchmark_safety_numbers_locked():
     summary = summarize_rows(_run_benchmark())
     assert summary["wrong_continue_count"] == 0
-    assert summary["continue_count"] == 37
-    assert summary["audit_count"] == 83
+    assert summary["continue_count"] == 58
+    assert summary["audit_count"] == 62
     assert summary["precision_on_continued"] == 1.0
 
 

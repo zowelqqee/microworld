@@ -58,9 +58,8 @@ def test_sense_selection_unchanged_on_full_v1_set():
             if expected is not None and result.selected_sense != expected:
                 wrong_continue += 1
 
-    # 37, not 38: the surface-repair layer routes one attachment-drift row
-    # (v1-051) to audit rather than emit a subject-drift continuation.
-    assert continue_count == 37
+    # v1-051 still audits rather than emitting a subject-drift continuation.
+    assert continue_count == 58
     assert wrong_continue == 0
 
 

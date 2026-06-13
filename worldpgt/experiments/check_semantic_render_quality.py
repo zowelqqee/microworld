@@ -47,6 +47,22 @@ _DRIFT_WORDS = {
 }
 _DRIFT_CHARS = ('"', "'", "“", "”", "‘", "’", "\n")
 
+_PROMPT_TAIL_BAD_PATTERNS = {
+    "could_and_searched": re.compile(r"\bcould\s+and\s+searched\b", re.IGNORECASE),
+    "before_and_hit": re.compile(r"\bbefore\s+and\s+hit\b", re.IGNORECASE),
+    "motioned_for_and_completed": re.compile(r"\bmotioned\s+for\s+and\s+completed\b", re.IGNORECASE),
+    "while_tourists_and_swam": re.compile(r"\bwhile\s+tourists\s+and\s+swam\b", re.IGNORECASE),
+    "turned_toward_and_carried": re.compile(r"\bturned\s+toward\s+and\s+carried\b", re.IGNORECASE),
+    "as_the_hook_the_operator": re.compile(r"\bas\s+the\s+hook\s+the\s+operator\b", re.IGNORECASE),
+    "made_everyone_and_brought": re.compile(r"\bmade\s+everyone\s+and\s+brought\b", re.IGNORECASE),
+    "after_and_filled": re.compile(r"\bafter\s+and\s+filled\b", re.IGNORECASE),
+    "would_get_louder_after_and": re.compile(r"\bwould\s+get\s+louder\s+after\s+and\b", re.IGNORECASE),
+    "before_player_swung_comma_no_and": re.compile(
+        r"\bbefore\s+the\s+player\s+swung,\s+he\s+steadied\b",
+        re.IGNORECASE,
+    ),
+}
+
 
 def _tokens(text: str) -> list[str]:
     return _TOKEN_RE.findall(text.lower())
@@ -113,6 +129,12 @@ def _flag_row(row: dict) -> list[str]:
     drift = sorted({t for t in _tokens(phrase_part) if t in _DRIFT_WORDS})
     if drift:
         flags.append("story_drift:" + ",".join(drift))
+
+    prompt_tail = [
+        name for name, pattern in _PROMPT_TAIL_BAD_PATTERNS.items() if pattern.search(continuation)
+    ]
+    if prompt_tail:
+        flags.append("prompt_tail:" + ",".join(sorted(prompt_tail)))
 
     return flags
 
