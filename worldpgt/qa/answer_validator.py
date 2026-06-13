@@ -8,9 +8,38 @@ No learned model parameters.  No language-model inference.  No back-prop.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 _MAX_ANSWER_CHARS = 400
+
+# Spacing / concatenation artifacts that indicate a rendering defect.
+# Operate on the original casing of the answer.
+_SURFACE_REGEXES = (
+    (re.compile(r"Itis"), "missing_space_it_is"),
+    (re.compile(r"releasesmechanical"), "missing_space_releases_mechanical"),
+    (re.compile(r",[A-Za-z]"), "missing_space_after_comma"),
+    (re.compile(r"\.[A-Z]"), "missing_space_after_period"),
+)
+
+# Known concatenation artifacts (also covered by the comma/period regexes,
+# listed explicitly for clarity).  Matched lowercase.
+_KNOWN_GLUE_ARTIFACTS = (
+    "baseball,associated",
+    "releasesmechanical",
+    "device,associated",
+)
+
+# Wrong action-agency phrasings that SemanticLanguageRealizer v2 must avoid:
+# rock music does not "play", a rock does not "climb", a season does not
+# "bloom", and "thaws"/"rains" are awkward plural cues.  Matched lowercase.
+_BAD_AGENCY_PATTERNS = (
+    "it can play and perform",
+    "it can climb",
+    "it can bloom and thaw",
+    "common signs are thaws",
+    "mornings and rains",
+)
 
 _BANNED_ANSWER_PHRASES = (
     "it depends on many things",
@@ -167,6 +196,56 @@ def validate(
             quality_flagged=True,
             quality_reason="surface_issue:'repeated_associated_with'",
         )
+
+    # 5c. define_sense answers must use SemanticLanguageRealizer v1 phrasing,
+    # not the flat "It is associated with ..." evidence-list form.
+    if intent == "define_sense" and "it is associated with" in lower:
+        return ValidationResult(
+            passed=False,
+            reasons=["surface_issue:'define_sense_it_is_associated_with'"],
+            quality_flagged=True,
+            quality_reason="surface_issue:'define_sense_it_is_associated_with'",
+        )
+
+    # 5c-contrast. distinguish_senses answers must use ContrastRealizer v1,
+    # not the flat "associated with ..." evidence-list form.
+    if intent == "distinguish_senses" and "associated with" in lower:
+        return ValidationResult(
+            passed=False,
+            reasons=["surface_issue:'distinguish_associated_with'"],
+            quality_flagged=True,
+            quality_reason="surface_issue:'distinguish_associated_with'",
+        )
+
+    # 5c-glue. Known concatenation artifacts.
+    for artifact in _KNOWN_GLUE_ARTIFACTS:
+        if artifact in lower:
+            return ValidationResult(
+                passed=False,
+                reasons=[f"surface_issue:{artifact!r}"],
+                quality_flagged=True,
+                quality_reason=f"surface_issue:{artifact!r}",
+            )
+
+    # 5c-bis. Wrong action-agency phrasings.
+    for phrase in _BAD_AGENCY_PATTERNS:
+        if phrase in lower:
+            return ValidationResult(
+                passed=False,
+                reasons=[f"agency_issue:{phrase!r}"],
+                quality_flagged=True,
+                quality_reason=f"agency_issue:{phrase!r}",
+            )
+
+    # 5d. Spacing / concatenation artifacts.
+    for pattern, name in _SURFACE_REGEXES:
+        if pattern.search(answer):
+            return ValidationResult(
+                passed=False,
+                reasons=[f"surface_issue:{name!r}"],
+                quality_flagged=True,
+                quality_reason=f"surface_issue:{name!r}",
+            )
 
     # 6. expected_contains check
     if expected_contains:

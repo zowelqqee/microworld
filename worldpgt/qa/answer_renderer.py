@@ -67,6 +67,191 @@ _LOCATION_PREP: dict[str, str] = {
     "lake": "near lakes",
 }
 
+# --------------------------------------------------------------------------
+# SemanticLanguageRealizer v2
+#
+# Deterministic mapping from world relation -> communicative role -> sentence
+# fragment.  This is NOT a generator: every word emitted is either fixed
+# connective scaffolding or a token already present in the explicit evidence.
+# No facts are invented; fixed frames only complete an action's natural role
+# (who/what does it, on what) and are only emitted when the action verbs they
+# reference are present in the evidence.
+#
+#   definition / is_a  ->  "X is ..."
+#   cue                ->  "Common clues/signs/contexts are ..."
+#   action             ->  agency-aware frame (see _ACTION_REALIZATION)
+#   location           ->  "It is often found ..."
+# --------------------------------------------------------------------------
+
+# Per-sense lead-in for the cue (relation: cue) fragment.  Default below.
+_CUE_LEADIN: dict[tuple[str, str], str] = {
+    ("spring", "season"): "Common signs are",
+    ("rock", "music"): "Common contexts are",
+}
+_DEFAULT_CUE_LEADIN = "Common clues are"
+
+# Safe per-cue surface forms, applied before generic pluralization.  Keyed by
+# (term, sense_id, cue).  Used to avoid awkward plurals ("thaws", "rains") and
+# to render mild, evidence-grounded morphology ("morning" -> "warmer mornings").
+_CUE_SURFACE: dict[tuple[str, str, str], str] = {
+    ("spring", "season", "thaw"): "thaw",
+    ("spring", "season", "flower"): "flowers",
+    ("spring", "season", "morning"): "warmer mornings",
+    ("spring", "season", "rain"): "rain",
+    ("rock", "music", "band"): "bands",
+    ("rock", "music", "concert"): "concerts",
+    ("rock", "music", "crowd"): "crowds",
+    ("rock", "music", "stage"): "stages",
+}
+
+# Uncountable / mass tokens that must never be blindly pluralized.
+_UNCOUNTABLE_CUES: frozenset[str] = frozenset(
+    {"thaw", "rain", "music", "water", "cash", "snow", "wax", "fish"}
+)
+
+# Agency-aware action realization, keyed by (term, sense_id).
+#   frame             - descriptive label of the agency role (documentation)
+#   text              - fixed clause; "{actions}" is filled from evidence verbs
+#   connector         - word joining multiple action verbs in "{actions}"
+#   requires          - for fixed-text frames, action verbs that MUST be in the
+#                       evidence before the frame may be used (evidence safety)
+#   include_location  - whether to append the "found ..." location clause
+_ACTION_REALIZATION: dict[tuple[str, str], dict] = {
+    ("bat", "animal"): {
+        "frame": "subject_can",
+        "text": "It can {actions}",
+        "connector": "and",
+        "include_location": True,
+    },
+    ("bat", "sports_equipment"): {
+        "frame": "instrument",
+        "text": "It is used to {actions} the ball",
+        "connector": "or",
+        "include_location": True,
+    },
+    ("seal", "animal"): {
+        "frame": "subject_can",
+        "text": "It can {actions}",
+        "connector": "and",
+        "include_location": True,
+    },
+    ("seal", "closure_stamp"): {
+        "frame": "instrument",
+        "text": "It is used to {actions} documents or envelopes",
+        "connector": "or",
+        "include_location": False,
+    },
+    ("crane", "bird"): {
+        "frame": "subject_can",
+        "text": "It can {actions}",
+        "connector": "and",
+        "include_location": True,
+    },
+    ("crane", "machine"): {
+        "frame": "machine_function",
+        "text": "It is used to {actions} heavy loads",
+        "connector": "or",
+        "include_location": True,
+    },
+    ("rock", "music"): {
+        "frame": "performed_content",
+        "text": "It is played and performed, often by bands on stage",
+        "requires": ("play", "perform"),
+        "include_location": False,
+    },
+    ("rock", "stone"): {
+        "frame": "patient_or_natural",
+        "text": "A rock can roll or be climbed",
+        "requires": ("climb", "roll"),
+        "include_location": True,
+    },
+    ("spring", "season"): {
+        "frame": "seasonal_events",
+        "text": "In spring, flowers bloom and snow thaws",
+        "requires": ("bloom", "thaw"),
+        "include_location": True,
+    },
+    ("spring", "coil"): {
+        "frame": "mechanical",
+        "text": "It can {actions}",
+        "connector": "and",
+        "include_location": True,
+    },
+}
+
+# --------------------------------------------------------------------------
+# ContrastRealizer v1 (distinguish_senses)
+#
+# Compact, relation-aware contrast clauses.  Each side is rendered as
+#   "<Display label> is <gloss> <clue/action clause>."
+# The gloss uses only mild role words already supported by the base definition
+# or sense label (e.g. "money", "sports equipment", "marine mammal").  Clue
+# tokens are drawn from the evidence and surfaced via _cue_surface; no facts
+# are invented.  Reuses display labels, cue surfaces, and the action joiner.
+# --------------------------------------------------------------------------
+_CONTRAST_SIDE: dict[tuple[str, str], dict] = {
+    ("bank", "financial_institution"): {
+        "gloss": "a money institution",
+        "clue_lead": " for",
+        "clue_count": 2,
+    },
+    ("bank", "river_edge"): {
+        "gloss": "land beside a river or stream",
+        "clue_lead": ", marked by",
+        "clue_count": 3,
+    },
+    ("bat", "animal"): {
+        "gloss": "a flying mammal",
+        "clue_lead": " linked to",
+        "clue_count": 3,
+    },
+    ("bat", "sports_equipment"): {
+        "gloss": "sports equipment used to hit a ball",
+        "clue_lead": ", with clues like",
+        "clue_count": 3,
+    },
+    ("seal", "animal"): {
+        "gloss": "a marine mammal",
+        "clue_lead": " linked to",
+        "clue_count": 3,
+    },
+    ("seal", "closure_stamp"): {
+        "gloss": "a device used to close or authenticate an object",
+        "clue_lead": ", with clues like",
+        "clue_count": 3,
+    },
+    ("crane", "bird"): {
+        "gloss": "a large wading bird",
+        "clue_lead": " linked to",
+        "clue_count": 3,
+    },
+    ("crane", "machine"): {
+        "gloss": "a machine used to lift heavy loads",
+        "clue_lead": ", with clues like",
+        "clue_count": 3,
+    },
+    ("rock", "music"): {
+        "gloss": "a music genre",
+        "clue_lead": " linked to",
+        "clue_count": 3,
+    },
+    ("rock", "stone"): {
+        "gloss": "a solid mineral object",
+        "clue_lead": " found near",
+        "clue_count": 3,
+    },
+    ("spring", "season"): {
+        "gloss": "the season after winter",
+        "clue_lead": ", marked by",
+        "clue_count": 3,
+    },
+    ("spring", "coil"): {
+        "gloss": "a coiled metal device that stores and releases mechanical energy",
+        "action_tail": ", and can",
+        "connector": "or",
+    },
+}
+
 # Human-readable sense alternatives for each ambiguous term.
 # Used only when rendering a helpful underconstrained_question audit.
 # Deterministic: order matches the canonical sense ordering of _TERM_SENSES.
@@ -97,6 +282,139 @@ def _start_sentence(label: str) -> str:
 def _loc_phrase(loc: str) -> str:
     """Return a natural prepositional phrase for a location value."""
     return _LOCATION_PREP.get(loc, f"near {loc}")
+
+
+def _pluralize(word: str) -> str:
+    """Deterministic, dependency-free plural for a single evidence token.
+
+    Handles the regular English plural rules only (``-s``, ``-es`` after a
+    sibilant, ``y -> ies``).  This is intentionally small: it is morphology,
+    not NLP, and never changes the underlying token's meaning.  Uncountable /
+    mass tokens are returned unchanged.
+    """
+    w = word.strip()
+    if not w:
+        return w
+    lower = w.lower()
+    if lower in _UNCOUNTABLE_CUES:
+        return w
+    if lower.endswith(("s", "x", "z", "ch", "sh")):
+        return w + "es"
+    if lower.endswith("y") and len(w) >= 2 and lower[-2] not in "aeiou":
+        return w[:-1] + "ies"
+    return w + "s"
+
+
+def _cue_surface(term: str, sense_id: str, cue: str) -> str:
+    """Return the safe surface form for a cue (table first, then morphology)."""
+    mapped = _CUE_SURFACE.get((term, sense_id, cue.strip().lower()))
+    if mapped is not None:
+        return mapped
+    return _pluralize(cue)
+
+
+def _realize_definition(display: str, clean_desc: str) -> str:
+    """definition / is_a relation -> 'X is ...' fragment."""
+    return f"{display} is {clean_desc}."
+
+
+def _realize_cues(term: str, sense_id: str, cues: list[str]) -> str:
+    """cue relation -> 'Common clues are ...' fragment (no facts invented)."""
+    if not cues:
+        return ""
+    leadin = _CUE_LEADIN.get((term, sense_id), _DEFAULT_CUE_LEADIN)
+    surfaces = [_cue_surface(term, sense_id, c) for c in cues]
+    return f"{leadin} {_join_list(surfaces)}."
+
+
+def _realize_locations(locations: list[str]) -> str:
+    """location relation -> 'found ...' clause body (no leading subject)."""
+    if not locations:
+        return ""
+    return _join_list([_loc_phrase(loc) for loc in locations])
+
+
+def _realize_actions(
+    term: str, sense_id: str, actions: list[str]
+) -> tuple[str, bool]:
+    """action relation -> agency-aware clause + whether to append location.
+
+    Returns ``(clause, include_location)``.  Fixed-text frames are only used
+    when the action verbs they reference are present in the evidence; otherwise
+    a safe subject frame over the available evidence verbs is used.
+    """
+    spec = _ACTION_REALIZATION.get((term, sense_id))
+    if spec is None:
+        clause = f"It can {_join_list(actions)}" if actions else ""
+        return clause, True
+
+    include_location = spec.get("include_location", True)
+    text = spec["text"]
+    if "{actions}" in text:
+        if not actions:
+            return "", include_location
+        connector = spec.get("connector", "and")
+        return text.format(actions=_join_list(actions, connector)), include_location
+
+    # Fixed-text frame: only emit if its referenced verbs are in the evidence.
+    required = spec.get("requires", ())
+    present = {a.strip().lower() for a in actions}
+    if required and all(r in present for r in required):
+        return text, include_location
+    # Evidence-safe frame over whatever action verbs do exist.
+    clause = f"It can {_join_list(actions)}" if actions else ""
+    return clause, True
+
+
+def _realize_action_location(
+    term: str, sense_id: str, actions: list[str], locations: list[str]
+) -> str:
+    """Combine the action and location relations into one natural sentence."""
+    act, include_location = _realize_actions(term, sense_id, actions)
+    loc = _realize_locations(locations) if include_location else ""
+    if act and loc:
+        return f"{act}, and it is often found {loc}."
+    if act:
+        return f"{act}."
+    if loc:
+        return f"It is often found {loc}."
+    return ""
+
+
+def _realize_contrast_side(
+    term: str,
+    sense_id: str,
+    base: str,
+    cues: list[str],
+    actions: list[str],
+    locations: list[str],
+) -> str:
+    """One compact, relation-aware clause describing a single sense."""
+    display = _start_sentence(
+        _DISPLAY_LABEL.get((term, sense_id), f"a {sense_id}")
+    )
+    spec = _CONTRAST_SIDE.get((term, sense_id))
+    if spec is None:
+        # Evidence-safe default: keep the grounded base description plus a
+        # compact cue clue.  Not a forced/generic answer — the planner already
+        # gated insufficient evidence to an audit before reaching here.
+        desc = _strip_trailing_associated(base) or sense_id
+        out = f"{display} is {desc}"
+        if cues:
+            surfaces = [_cue_surface(term, sense_id, c) for c in cues[:3]]
+            out += f", with clues like {_join_list(surfaces)}"
+        return out + "."
+
+    out = f"{display} is {spec['gloss']}"
+    if spec.get("action_tail"):
+        if actions:
+            connector = spec.get("connector", "or")
+            out += f"{spec['action_tail']} {_join_list(actions, connector)}"
+    elif spec.get("clue_lead") and cues:
+        n = spec.get("clue_count", 3)
+        surfaces = [_cue_surface(term, sense_id, c) for c in cues[:n]]
+        out += f"{spec['clue_lead']} {_join_list(surfaces)}"
+    return out + "."
 
 
 _AUDIT_MESSAGES: dict[str, str] = {
@@ -188,14 +506,15 @@ def render(plan: AnswerPlan) -> str:
             _DISPLAY_LABEL.get((term, sense_id), f"a {sense_id}")
         )
         clean_desc = _strip_trailing_associated(base_desc)
-        parts = [f"{display} is {clean_desc}."]
-        if cues:
-            parts.append(f"It is associated with {_join_list(cues)}.")
-        if actions:
-            parts.append(f"Typical actions include {_join_list(actions)}.")
-        if locations:
-            loc_phrases = [_loc_phrase(loc) for loc in locations]
-            parts.append(f"It is commonly found {_join_list(loc_phrases)}.")
+        parts = [_realize_definition(display, clean_desc)]
+        cue_fragment = _realize_cues(term, sense_id, cues)
+        if cue_fragment:
+            parts.append(cue_fragment)
+        action_location = _realize_action_location(
+            term, sense_id, actions, locations
+        )
+        if action_location:
+            parts.append(action_location)
         return " ".join(parts)
 
     if tmpl == "explain_cue":
@@ -236,32 +555,22 @@ def render(plan: AnswerPlan) -> str:
         sa = args["summary_a"]
         sb = args["summary_b"]
 
-        display_a = _start_sentence(
-            _DISPLAY_LABEL.get((term, sense_a), f"a {sense_a}")
+        side_a = _realize_contrast_side(
+            term,
+            sense_a,
+            _SENSE_BASE.get((term, sense_a), ""),
+            sa.get("cues", []),
+            sa.get("actions", []),
+            sa.get("locations", []),
         )
-        display_b = _start_sentence(
-            _DISPLAY_LABEL.get((term, sense_b), f"a {sense_b}")
+        side_b = _realize_contrast_side(
+            term,
+            sense_b,
+            _SENSE_BASE.get((term, sense_b), ""),
+            sb.get("cues", []),
+            sb.get("actions", []),
+            sb.get("locations", []),
         )
-        label_b_raw = _DISPLAY_LABEL.get((term, sense_b), f"a {sense_b}")
-
-        desc_a = _strip_trailing_associated(_SENSE_BASE.get((term, sense_a), ""))
-        desc_b = _strip_trailing_associated(_SENSE_BASE.get((term, sense_b), ""))
-
-        parts: list[str] = []
-        if desc_a:
-            parts.append(f"{display_a} is {desc_a}")
-            if sa["cues"]:
-                parts[-1] += f", associated with {_join_list(sa['cues'][:3])}."
-            else:
-                parts[-1] += "."
-        if desc_b:
-            parts.append(f"{display_b} is {desc_b}")
-            if sb["cues"]:
-                parts[-1] += f", associated with {_join_list(sb['cues'][:3])}."
-            else:
-                parts[-1] += "."
-        return " ".join(parts) if parts else (
-            f"{display_a} differs from {label_b_raw} in its typical context and cues."
-        )
+        return f"{side_a} {side_b}"
 
     return "I cannot answer safely."

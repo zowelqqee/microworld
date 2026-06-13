@@ -729,3 +729,370 @@ def test_helpful_audit_benchmark_still_perfect():
     assert s["quality_flagged"] == 0
     assert s["accuracy"] == 1.0
     assert s["answer_precision"] == 1.0
+
+
+# ---------------------------------------------------------------------------
+# 48–60. SemanticLanguageRealizer v1 — relation-aware natural phrasing
+# ---------------------------------------------------------------------------
+
+def _define_answer(question: str) -> str:
+    a = analyze(question)
+    plan = _planner().plan(a)
+    assert plan.render_template == "define_sense"
+    return render(plan)
+
+
+def test_realizer_removes_associated_with_from_define_sense():
+    for row in _output_rows():
+        if row["detected_intent"] != "define_sense":
+            continue
+        assert "it is associated with" not in row["answer"].lower(), (
+            f"{row['row_id']} still uses 'It is associated with': {row['answer']!r}"
+        )
+
+
+def test_realizer_bat_animal_definition():
+    answer = _define_answer("What is a bat animal?")
+    lower = answer.lower()
+    assert "a bat is" in lower
+    assert "common clues" in lower
+    assert "caves" in lower
+    assert "rafters" in lower
+    assert "a animal is" not in lower
+    assert "it is associated with" not in lower
+
+
+def test_realizer_spring_season_definition():
+    answer = _define_answer("What is the spring season?")
+    lower = answer.lower()
+    assert "spring is" in lower
+    assert "common signs" in lower
+    assert "thaw" in lower
+    assert "flowers" in lower
+    assert "associated with" not in lower
+
+
+def test_realizer_spring_coil_definition():
+    answer = _define_answer("What is a spring coil?")
+    lower = answer.lower()
+    assert "stores and releases mechanical energy" in lower
+    assert "compress" in lower
+    assert "stretch" in lower
+    assert "inside" in lower
+    assert "releasesmechanical" not in lower
+    assert "associated with" not in lower
+
+
+def test_realizer_rock_music_definition():
+    answer = _define_answer("What is rock music?")
+    lower = answer.lower()
+    assert "rock music is" in lower
+    assert "guitars" in lower
+    assert "rhythms" in lower
+    assert ("concerts" in lower) or ("stages" in lower)
+    assert "a rock music is" not in lower
+
+
+def test_realizer_rock_stone_definition():
+    answer = _define_answer("What is a rock stone?")
+    lower = answer.lower()
+    assert "a rock is" in lower
+    assert "mineral" in lower
+    assert ("cliffs" in lower) or ("mountains" in lower)
+    assert "a rock stone is" not in lower
+
+
+def test_realizer_validator_flags_associated_with_in_define_sense():
+    result = validate(
+        answer=(
+            "A bat is a nocturnal flying mammal. It is associated with cave and roost."
+        ),
+        decision="answer",
+        term="bat",
+        sense_id="animal",
+        intent="define_sense",
+    )
+    assert result.passed is False
+    assert result.quality_flagged is True
+
+
+def test_realizer_validator_flags_spacing_artifacts():
+    for bad in (
+        "A spring coil stores and releasesmechanical energy.",
+        "A bat is a mammal.Itis nocturnal.",
+        "A bank is a place,associated with money.",
+    ):
+        result = validate(
+            answer=bad,
+            decision="answer",
+            term="bat",
+            sense_id="animal",
+            intent="define_sense",
+        )
+        assert result.passed is False, f"Expected artifact flagged: {bad!r}"
+        assert result.quality_flagged is True
+
+
+def test_realizer_helpful_audits_unchanged():
+    for term in _ALL_TERMS:
+        a = analyze(f"What does {term} mean?")
+        plan = _planner().plan(a)
+        assert plan.decision == "audit"
+        answer = render(plan)
+        lower = answer.lower()
+        assert "ambiguous" in lower or "can mean" in lower
+        assert "context" in lower
+
+
+def test_realizer_distinguish_row_still_uses_contrast():
+    a = analyze("What is the difference between a financial bank and a river bank?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    lower = answer.lower()
+    assert "financial bank is" in lower
+    assert "river bank is" in lower
+
+
+def test_realizer_no_associated_with_in_define_outputs_only_distinguish():
+    """Remaining 'associated with' occurrences belong only to distinguish_senses."""
+    for row in _output_rows():
+        if "associated with" in row["answer"].lower():
+            assert row["detected_intent"] == "distinguish_senses", (
+                f"{row['row_id']} ({row['detected_intent']}) unexpectedly uses "
+                f"'associated with': {row['answer']!r}"
+            )
+
+
+# ---------------------------------------------------------------------------
+# 61–73. SemanticLanguageRealizer v2 — action agency + safer morphology
+# ---------------------------------------------------------------------------
+
+def test_v2_spring_season_agency_and_morphology():
+    answer = _define_answer("What is the spring season?")
+    lower = answer.lower()
+    assert "spring is" in lower
+    assert "common signs" in lower
+    assert "thaw" in lower
+    assert "flowers" in lower
+    assert "warmer mornings" in lower
+    assert "rain" in lower
+    assert "in spring, flowers bloom and snow thaws" in lower
+    assert "thaws, flowers, mornings and rains" not in lower
+    assert "it can bloom and thaw" not in lower
+
+
+def test_v2_rock_music_performed_content_frame():
+    answer = _define_answer("What is rock music?")
+    lower = answer.lower()
+    assert "rock music is" in lower
+    assert "bands" in lower
+    assert "concerts" in lower
+    assert "stages" in lower
+    assert "played and performed" in lower
+    assert "it can play and perform" not in lower
+
+
+def test_v2_rock_stone_patient_frame():
+    answer = _define_answer("What is a rock stone?")
+    lower = answer.lower()
+    assert "a rock is" in lower
+    assert "mineral" in lower
+    assert "roll" in lower
+    assert "be climbed" in lower
+    assert "it can climb" not in lower
+
+
+def test_v2_spring_coil_mechanical_frame():
+    answer = _define_answer("What is a spring coil?")
+    lower = answer.lower()
+    assert "stores and releases mechanical energy" in lower
+    assert "snap" in lower
+    assert "compress" in lower
+    assert "stretch" in lower
+    assert "releasesmechanical" not in lower
+    assert "  " not in answer
+
+
+def test_v2_bat_animal_remains_subject_agent():
+    answer = _define_answer("What is a bat animal?")
+    lower = answer.lower()
+    assert "a bat is" in lower
+    assert "common clues" in lower
+    assert "caves" in lower
+    assert "rafters" in lower
+    assert "it can hunt, roost and hang" in lower
+
+
+def test_v2_bat_sports_instrument_frame():
+    answer = _define_answer("What is a baseball bat?")
+    lower = answer.lower()
+    assert "a baseball bat is" in lower
+    assert "it is used to swing, hit or strike" in lower
+    assert "ball" in lower
+
+
+def test_v2_validator_flags_bad_agency_phrases():
+    bad_answers = (
+        "Rock music is a genre. It can play and perform.",
+        "A rock is a mineral mass. It can climb and roll.",
+        "Spring is a season. It can bloom and thaw.",
+        "Spring is a season. Common signs are thaws, flowers.",
+        "Spring is a season. Common signs are warmer mornings and rains.",
+    )
+    for ans in bad_answers:
+        result = validate(
+            answer=ans,
+            decision="answer",
+            term="rock",
+            sense_id="music",
+            intent="define_sense",
+        )
+        assert result.passed is False, f"Expected flagged: {ans!r}"
+        assert result.quality_flagged is True
+
+
+def test_v2_no_bad_agency_phrases_in_benchmark():
+    bad = (
+        "it can play and perform",
+        "it can climb",
+        "it can bloom and thaw",
+        "common signs are thaws",
+        "mornings and rains",
+    )
+    for row in _output_rows():
+        if row["decision"] != "answer":
+            continue
+        lower = row["answer"].lower()
+        for phrase in bad:
+            assert phrase not in lower, (
+                f"{row['row_id']}: bad agency phrase {phrase!r}: {row['answer']!r}"
+            )
+
+
+def test_v2_uncountable_cues_not_pluralized():
+    from worldpgt.qa.answer_renderer import _pluralize
+    for word in ("thaw", "rain", "music", "water", "cash", "snow", "wax"):
+        assert _pluralize(word) == word, f"{word} should not be pluralized"
+
+
+# ---------------------------------------------------------------------------
+# 74–86. ContrastRealizer v1 — distinguish_senses relation-aware contrast
+# ---------------------------------------------------------------------------
+
+def _row_answer(row_id: str) -> str:
+    for row in _output_rows():
+        if row["row_id"] == row_id:
+            return row["answer"]
+    raise AssertionError(f"row {row_id} not found")
+
+
+def test_contrast_no_associated_with_in_any_distinguish_row():
+    for row in _output_rows():
+        if row["detected_intent"] != "distinguish_senses":
+            continue
+        assert "associated with" not in row["answer"].lower(), (
+            f"{row['row_id']} still uses 'associated with': {row['answer']!r}"
+        )
+
+
+def test_contrast_bat_row():
+    answer = _row_answer("qa-v1-038")
+    lower = answer.lower()
+    assert "a bat is" in lower
+    assert "flying mammal" in lower
+    assert "caves" in lower
+    assert "a baseball bat" in lower
+    assert "hit a ball" in lower
+    assert ("pitchers" in lower) or ("batter" in lower)
+    assert "associated with" not in lower
+    assert "baseball,associated" not in lower
+
+
+def test_contrast_spring_row():
+    answer = _row_answer("qa-v1-042")
+    lower = answer.lower()
+    assert "spring is" in lower
+    assert "season after winter" in lower
+    assert "thaw" in lower
+    assert "flowers" in lower
+    assert "a spring coil" in lower
+    assert "mechanical" in lower
+    assert ("snap" in lower) or ("compress" in lower) or ("stretch" in lower)
+    assert "associated with" not in lower
+    assert "releasesmechanical" not in lower
+
+
+def test_contrast_rock_row():
+    answer = _row_answer("qa-v1-041")
+    lower = answer.lower()
+    assert "rock music is" in lower
+    assert "music" in lower
+    assert ("bands" in lower) or ("concerts" in lower)
+    assert "a rock is" in lower
+    assert "mineral" in lower
+    assert "associated with" not in lower
+
+
+def test_contrast_validator_flags_associated_with_in_distinguish():
+    result = validate(
+        answer=(
+            "A bat is a nocturnal flying mammal, associated with cave, roost and "
+            "rafter. A baseball bat is a club, associated with pitcher and ball."
+        ),
+        decision="answer",
+        term="bat",
+        sense_id="animal",
+        intent="distinguish_senses",
+    )
+    assert result.passed is False
+    assert result.quality_flagged is True
+
+
+def test_contrast_validator_flags_baseball_associated_glue():
+    result = validate(
+        answer="A baseball bat is a club used to hit a ball,associated with pitcher.",
+        decision="answer",
+        term="bat",
+        sense_id="sports_equipment",
+        intent="distinguish_senses",
+    )
+    assert result.passed is False
+    assert result.quality_flagged is True
+
+
+def test_contrast_validator_flags_releasesmechanical_glue():
+    result = validate(
+        answer="A spring coil stores and releasesmechanical energy.",
+        decision="answer",
+        term="spring",
+        sense_id="coil",
+        intent="distinguish_senses",
+    )
+    assert result.passed is False
+    assert result.quality_flagged is True
+
+
+def test_contrast_define_sense_v2_still_clean():
+    answer = _define_answer("What is rock music?")
+    lower = answer.lower()
+    assert "rock music is" in lower
+    assert "played and performed" in lower
+    assert "it is associated with" not in lower
+
+
+def test_contrast_helpful_audit_still_works():
+    a = analyze("What does seal mean?")
+    plan = _planner().plan(a)
+    assert plan.decision == "audit"
+    answer = render(plan)
+    lower = answer.lower()
+    assert "marine animal" in lower
+    assert "wax" in lower or "document seal" in lower
+    assert "context" in lower
+
+
+def test_contrast_zero_associated_with_in_outputs():
+    total = sum(
+        row["answer"].lower().count("associated with") for row in _output_rows()
+    )
+    assert total == 0, f"Expected 0 'associated with', found {total}"
