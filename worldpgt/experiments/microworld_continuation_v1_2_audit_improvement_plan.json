@@ -1,0 +1,3716 @@
+{
+  "policy": {
+    "auto_apply": false,
+    "generation_behavior_changed": false,
+    "mode": "propose_only",
+    "thresholds_changed": false,
+    "validators_changed": false
+  },
+  "proposals": [
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 2.0,
+        "prompt_cues": [
+          "head",
+          "pier",
+          "raised"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "pier"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=prompt_tail_incompatible",
+          "candidate_count=2",
+          "cue=pier -> animal",
+          "cue=tourists -> animal",
+          "margin=2",
+          "positive_cue=pier -> animal",
+          "positive_cue=tourists -> animal",
+          "prompt_tail_evidence=phrase=and swam through the cold water",
+          "prompt_tail_evidence=tail_while_subject=tourists",
+          "prompt_tail_rejection=while_subject_requires_predicate_for_subject",
+          "prompt_tail_rule=while_subject_tail",
+          "prompt_tail_validator=rejected",
+          "realization_type=neutral_extension",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_candidate=and swam through the cold water",
+          "selected_sense=animal",
+          "semantic_frame_intent=animal_behavior",
+          "subject_action_validator=passed",
+          "surface_repair=clean",
+          "term=seal",
+          "top_score=2",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-030-keep_audit-58e941771c",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Prompt-tail validation rejected the candidate; repairing this row would require unsupported action/entity invention.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-030"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "animal",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "sit",
+          "stood",
+          "unsure"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=no_safe_semantic_candidate",
+          "audit_reason=surface_realization_risk",
+          "candidate_count=1",
+          "cue=current -> river_edge",
+          "margin=1",
+          "positive_cue=current -> river_edge",
+          "realization_type=clause_after_until_subject",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_sense=river_edge",
+          "semantic_frame_intent=river_edge_activity",
+          "surface_pattern=malformed_until_subject",
+          "surface_risk=malformed_until_subject",
+          "term=bank",
+          "top_score=1",
+          "top_sense=river_edge"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-041"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-041-phrase_candidate_addition-90d250f322",
+      "proposal_type": "phrase_candidate_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": "explicit safe predicate for unfinished until-subject tail",
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "A safe explicit phrase or narrow prompt-tail rule may help, but broad grammar repair is unsafe.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-041"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "pitcher"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "pitcher"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-044"
+        ],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-044-cue_memory_addition-b311f5047f",
+      "proposal_type": "cue_memory_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "pitcher"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Concrete prompt cues may support the expected sense through explicit cue memory.",
+      "recommended_action": "auto_safe_later",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-044"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "fish"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "fish"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=no_safe_semantic_candidate",
+          "audit_reason=surface_realization_risk",
+          "candidate_count=1",
+          "cue=fish -> animal",
+          "margin=1",
+          "positive_cue=fish -> animal",
+          "realization_type=clause_after_until_subject",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_sense=animal",
+          "semantic_frame_intent=animal_behavior",
+          "surface_pattern=malformed_until_subject",
+          "surface_risk=malformed_until_subject",
+          "term=seal",
+          "top_score=1",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-045"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-045-phrase_candidate_addition-e5a137bd06",
+      "proposal_type": "phrase_candidate_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": "explicit safe predicate for unfinished until-subject tail",
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "A safe explicit phrase or narrow prompt-tail rule may help, but broad grammar repair is unsafe.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-045"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "animal",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "wings"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "wings"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=no_safe_semantic_candidate",
+          "audit_reason=surface_realization_risk",
+          "candidate_count=1",
+          "cue=wings -> bird",
+          "margin=1",
+          "positive_cue=wings -> bird",
+          "realization_type=clause_after_before_subject",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_sense=bird",
+          "semantic_frame_intent=bird_behavior",
+          "surface_pattern=malformed_before_wings",
+          "surface_risk=malformed_before_wings",
+          "term=crane",
+          "top_score=1",
+          "top_sense=bird"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-047"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-047-phrase_candidate_addition-d6936271e9",
+      "proposal_type": "phrase_candidate_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": "explicit connector-compatible phrase candidate for the selected sense",
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "A safe explicit phrase or narrow prompt-tail rule may help, but broad grammar repair is unsafe.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-047"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "bird",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "cliff"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "cliff"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "attachment_drift",
+          "audit_reason=no_safe_repaired_candidate",
+          "candidate_count=1",
+          "cue=cliff -> stone",
+          "margin=1",
+          "positive_cue=cliff -> stone",
+          "realization_type=neutral_extension",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_candidate=and lay near the river",
+          "selected_sense=stone",
+          "semantic_frame_intent=stone_motion",
+          "surface_repair_reason=attachment_drift",
+          "term=rock",
+          "top_score=1",
+          "top_sense=stone"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-051-keep_audit-4551ffd267",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No safe repaired candidate exists; keep audited unless an explicit tested rewrite is added.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-051"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "no_safe_repaired_candidate",
+      "target_sense": "stone",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "cash"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "cash"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "audit_reason=guard_failure",
+          "cue=cash -> financial_institution",
+          "guard_failure=cash_or_card_alone_insufficient -> financial_institution",
+          "positive_cue=cash -> financial_institution",
+          "term=bank"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-053"
+        ],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-053-cue_memory_addition-dd2b32ee15",
+      "proposal_type": "cue_memory_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "cash"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Concrete prompt cues may support the expected sense through explicit cue memory.",
+      "recommended_action": "auto_safe_later",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-053"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "financial_institution",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "player"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "player"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "audit_reason=guard_failure",
+          "cue=player -> sports_equipment",
+          "guard_failure=player_alone_insufficient -> sports_equipment",
+          "positive_cue=player -> sports_equipment",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-055"
+        ],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-055-cue_memory_addition-2e46e07f4d",
+      "proposal_type": "cue_memory_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "player"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Concrete prompt cues may support the expected sense through explicit cue memory.",
+      "recommended_action": "auto_safe_later",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-055"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "document"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "document"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=no_safe_semantic_candidate",
+          "audit_reason=surface_realization_risk",
+          "candidate_count=1",
+          "cue=document -> closure_stamp",
+          "margin=1",
+          "positive_cue=document -> closure_stamp",
+          "realization_type=clause_after_until_subject",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_sense=closure_stamp",
+          "semantic_frame_intent=document_closure",
+          "surface_pattern=malformed_until_subject",
+          "surface_risk=malformed_until_subject",
+          "term=seal",
+          "top_score=1",
+          "top_sense=closure_stamp"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-056"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-056-phrase_candidate_addition-99e75cf3bf",
+      "proposal_type": "phrase_candidate_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": "explicit safe predicate for unfinished until-subject tail",
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "A safe explicit phrase or narrow prompt-tail rule may help, but broad grammar repair is unsafe.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-056"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 2.0,
+        "prompt_cues": [
+          "long",
+          "steel",
+          "lifted"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "steel",
+          "lifted"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=no_safe_semantic_candidate",
+          "audit_reason=surface_realization_risk",
+          "candidate_count=1",
+          "cue=lifted -> machine",
+          "cue=steel -> machine",
+          "margin=2",
+          "positive_cue=lifted -> machine",
+          "positive_cue=steel -> machine",
+          "realization_type=clause_after_before_subject",
+          "renderer=semantic_renderer_v2",
+          "score_and_margin_above_thresholds",
+          "second_score=0",
+          "selected_sense=machine",
+          "semantic_frame_intent=construction_action",
+          "surface_pattern=malformed_before_it_operator",
+          "surface_risk=malformed_before_it_operator",
+          "term=crane",
+          "top_score=2",
+          "top_sense=machine"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-057"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-057-phrase_candidate_addition-cf4eebf43c",
+      "proposal_type": "phrase_candidate_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": "explicit connector-compatible phrase candidate for the selected sense",
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "A safe explicit phrase or narrow prompt-tail rule may help, but broad grammar repair is unsafe.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-057"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "surface_validation_failed",
+      "target_sense": "machine",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "river"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "went",
+          "river",
+          "deposit"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "deposit"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=deposit -> financial_institution",
+          "cue=river -> river_edge",
+          "margin=0",
+          "positive_cue=deposit -> financial_institution",
+          "positive_cue=river -> river_edge",
+          "second_score=1",
+          "term=bank",
+          "top_score=1",
+          "top_sense=financial_institution"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-061"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-061-guard_rule_addition-9fd9ea36fc",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer financial_institution only when deposit cues dominate river cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "deposit"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-061"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "financial_institution",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "cash"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "cash",
+          "stream"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "stream"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=guard_failure",
+          "cue=cash -> financial_institution",
+          "cue=stream -> river_edge",
+          "guard_failure=cash_or_card_alone_insufficient -> financial_institution",
+          "margin=1",
+          "positive_cue=cash -> financial_institution",
+          "positive_cue=stream -> river_edge",
+          "second_score=0",
+          "term=bank",
+          "top_score=1",
+          "top_sense=river_edge"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-062"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-062-guard_rule_addition-23b9f66662",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer river_edge only when stream cues dominate cash cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "stream"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-062"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "player"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "player",
+          "rafters"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "rafters"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=guard_failure",
+          "cue=flew -> animal",
+          "cue=player -> sports_equipment",
+          "guard_failure=player_alone_insufficient -> sports_equipment",
+          "margin=1",
+          "positive_cue=flew -> animal",
+          "positive_cue=player -> sports_equipment",
+          "second_score=0",
+          "term=bat",
+          "top_score=1",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-064"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-064-guard_rule_addition-d3dc0bfafd",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bat: prefer animal only when rafters cues dominate player cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "rafters"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-064"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "animal",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 0.0,
+        "prompt_cues": [
+          "fish"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "fish"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=fish -> animal",
+          "cue=package -> closure_stamp",
+          "margin=0",
+          "positive_cue=fish -> animal",
+          "positive_cue=package -> closure_stamp",
+          "second_score=1",
+          "term=seal",
+          "top_score=1",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-065"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-065-guard_rule_addition-52951a9721",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer animal only when fish cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "fish"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-065"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "animal",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "document",
+          "wax"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "document",
+          "wax"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=document -> closure_stamp",
+          "cue=ocean -> animal",
+          "cue=wax -> closure_stamp",
+          "margin=1",
+          "positive_cue=document -> closure_stamp",
+          "positive_cue=ocean -> animal",
+          "positive_cue=wax -> closure_stamp",
+          "second_score=1",
+          "term=seal",
+          "top_score=2",
+          "top_sense=closure_stamp"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-066"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-066-guard_rule_addition-49f88fe716",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer closure_stamp only when document/wax cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "document",
+          "wax"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-066"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 0.0,
+        "prompt_cues": [
+          "lake",
+          "wings"
+        ],
+        "second_score": 2.0,
+        "supporting_cues": [
+          "lake",
+          "wings"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=construction -> machine",
+          "cue=lake -> bird",
+          "cue=site -> machine",
+          "cue=wings -> bird",
+          "margin=0",
+          "positive_cue=construction -> machine",
+          "positive_cue=lake -> bird",
+          "positive_cue=site -> machine",
+          "positive_cue=wings -> bird",
+          "second_score=2",
+          "term=crane",
+          "top_score=2",
+          "top_sense=bird"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-068"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-068-guard_rule_addition-57d8df612e",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=crane: prefer bird only when lake/wings cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "lake",
+          "wings"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-068"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "bird",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "device"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "device"
+        ],
+        "second_score": 2.0,
+        "supporting_cues": [],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=device -> coil",
+          "cue=garden -> season",
+          "cue=metal -> coil",
+          "cue=warmed -> season",
+          "margin=0",
+          "positive_cue=device -> coil",
+          "positive_cue=garden -> season",
+          "positive_cue=metal -> coil",
+          "positive_cue=warmed -> season",
+          "second_score=2",
+          "term=spring",
+          "top_score=2",
+          "top_sense=coil"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-069"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-069-guard_rule_addition-4465659ce1",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=spring: prefer season only when supporting cues dominate device cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-069"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "season",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "mechanism"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "mechanism"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=april -> season",
+          "cue=compressed -> coil",
+          "cue=mechanism -> coil",
+          "margin=1",
+          "positive_cue=april -> season",
+          "positive_cue=compressed -> coil",
+          "positive_cue=mechanism -> coil",
+          "second_score=1",
+          "term=spring",
+          "top_score=2",
+          "top_sense=coil"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-070"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-070-guard_rule_addition-8a594b8cd9",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=spring: prefer coil only when mechanism cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "mechanism"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-070"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "coil",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 0.0,
+        "prompt_cues": [
+          "stage"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "stage"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=mountain -> stone",
+          "cue=stage -> music",
+          "margin=0",
+          "positive_cue=mountain -> stone",
+          "positive_cue=stage -> music",
+          "second_score=1",
+          "term=rock",
+          "top_score=1",
+          "top_sense=music"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-071"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-071-guard_rule_addition-f3335696b3",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=rock: prefer music only when stage cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "stage"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-071"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "music",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "river"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "open",
+          "reach",
+          "river"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=river -> river_edge",
+          "cue=teller -> financial_institution",
+          "margin=0",
+          "positive_cue=river -> river_edge",
+          "positive_cue=teller -> financial_institution",
+          "second_score=1",
+          "term=bank",
+          "top_score=1",
+          "top_sense=financial_institution"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-073"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-073-guard_rule_addition-504f70617a",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer financial_institution only when supporting cues dominate river cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-073"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "financial_institution",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "card",
+          "credit"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "boat",
+          "card",
+          "credit"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "boat"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=boat -> river_edge",
+          "cue=card -> financial_institution",
+          "cue=credit -> financial_institution",
+          "margin=1",
+          "positive_cue=boat -> river_edge",
+          "positive_cue=card -> financial_institution",
+          "positive_cue=credit -> financial_institution",
+          "second_score=1",
+          "term=bank",
+          "top_score=2",
+          "top_sense=financial_institution"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-074"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-074-guard_rule_addition-f29f057c85",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer river_edge only when boat cues dominate card/credit cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "boat"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-074"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "player"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "player"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=animal -> animal",
+          "cue=game -> sports_equipment",
+          "cue=player -> sports_equipment",
+          "margin=1",
+          "positive_cue=animal -> animal",
+          "positive_cue=game -> sports_equipment",
+          "positive_cue=player -> sports_equipment",
+          "second_score=1",
+          "term=bat",
+          "top_score=2",
+          "top_sense=sports_equipment"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-075"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-075-guard_rule_addition-c558ec23ae",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bat: prefer sports_equipment only when player cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "player"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-075"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "wings"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "wings"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=cave -> animal",
+          "cue=game -> sports_equipment",
+          "cue=wings -> animal",
+          "margin=1",
+          "positive_cue=cave -> animal",
+          "positive_cue=game -> sports_equipment",
+          "positive_cue=wings -> animal",
+          "second_score=1",
+          "term=bat",
+          "top_score=2",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-076"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-076-guard_rule_addition-6e4faea3ce",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bat: prefer animal only when wings cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "wings"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-076"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "animal",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "flippers"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "flippers"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=flippers -> animal",
+          "cue=official -> closure_stamp",
+          "cue=package -> closure_stamp",
+          "margin=1",
+          "positive_cue=flippers -> animal",
+          "positive_cue=official -> closure_stamp",
+          "positive_cue=package -> closure_stamp",
+          "second_score=1",
+          "term=seal",
+          "top_score=2",
+          "top_sense=closure_stamp"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-078"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-078-guard_rule_addition-55dd55927e",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer closure_stamp only when supporting cues dominate flippers cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-078"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "bird"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "bird",
+          "site",
+          "steel"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "site",
+          "steel"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=bird -> bird",
+          "cue=site -> machine",
+          "cue=steel -> machine",
+          "margin=1",
+          "positive_cue=bird -> bird",
+          "positive_cue=site -> machine",
+          "positive_cue=steel -> machine",
+          "second_score=1",
+          "term=crane",
+          "top_score=2",
+          "top_sense=machine"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-079"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-079-guard_rule_addition-ca27d5e30e",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=crane: prefer machine only when site/steel cues dominate bird cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "site",
+          "steel"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-079"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "machine",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "operator"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "lake",
+          "operator"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "lake"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=bird -> bird",
+          "cue=lake -> bird",
+          "cue=operator -> machine",
+          "margin=1",
+          "positive_cue=bird -> bird",
+          "positive_cue=lake -> bird",
+          "positive_cue=operator -> machine",
+          "second_score=1",
+          "term=crane",
+          "top_score=2",
+          "top_sense=bird"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-080"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-080-guard_rule_addition-a9f8b06f15",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=crane: prefer bird only when lake cues dominate operator cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "lake"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-080"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "bird",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "clerk"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not beside a river -> financial_institution",
+          "audit_reason=anti_cue",
+          "audit_reason=only_negated_evidence",
+          "negated_cue=river -> river_edge",
+          "term=bank"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-081-keep_audit-0cd2359aa7",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-081"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "financial_institution",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "money"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "slid",
+          "money",
+          "hikers"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not a place for money -> financial_institution",
+          "anti_cue=not a place for money -> river_edge",
+          "audit_reason=anti_cue_conflict",
+          "cue=money -> financial_institution",
+          "positive_cue=money -> financial_institution",
+          "term=bank"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-082-keep_audit-971425e9a5",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-082"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "batter"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "batter"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not an animal -> animal",
+          "anti_cue=not an animal -> sports_equipment",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=only_negated_evidence",
+          "cue=batter -> sports_equipment",
+          "negated_cue=animal -> animal",
+          "positive_cue=batter -> sports_equipment",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-083-keep_audit-8c6ffeb7f0",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-083"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "clerk"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "clerk"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not an animal -> closure_stamp",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=only_negated_evidence",
+          "cue=clerk -> closure_stamp",
+          "negated_cue=animal -> animal",
+          "positive_cue=clerk -> closure_stamp",
+          "term=seal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-085-keep_audit-8116d788a1",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-085"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "stamp"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "pier",
+          "stamp",
+          "beside"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "pier"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not a stamp -> animal",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=only_negated_evidence",
+          "cue=pier -> animal",
+          "negated_cue=stamp -> closure_stamp",
+          "positive_cue=pier -> animal",
+          "term=seal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-086-keep_audit-54f64da7cf",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-086"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "animal",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "reeds"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "reeds"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "anti_cue=not at a construction site -> bird",
+          "audit_reason=negated_top_sense",
+          "cue=reeds -> bird",
+          "cue=site -> machine",
+          "margin=1",
+          "negated_cue=construction -> machine",
+          "positive_cue=reeds -> bird",
+          "positive_cue=site -> machine",
+          "second_score=0",
+          "term=crane",
+          "top_score=1",
+          "top_sense=machine"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-088-keep_audit-4d447ae744",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-088"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "bird",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "latch"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "latch"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not warm weather -> coil",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=only_negated_evidence",
+          "cue=latch -> coil",
+          "negated_cue=warm -> season",
+          "negated_cue=weather -> season",
+          "positive_cue=latch -> coil",
+          "term=spring"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-089-keep_audit-2ae8725ff0",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-089"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "coil",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "device"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "device",
+          "thaw"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "thaw"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not a metal device -> season",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=only_negated_evidence",
+          "cue=thaw -> season",
+          "negated_cue=device -> coil",
+          "negated_cue=metal -> coil",
+          "positive_cue=thaw -> season",
+          "term=spring"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-090-keep_audit-8a4ad9f051",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-090"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "season",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "stone"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "stone",
+          "tuned",
+          "guitarist"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not a stone -> music",
+          "audit_reason=anti_cue",
+          "audit_reason=only_negated_evidence",
+          "negated_cue=stone -> stone",
+          "term=rock"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-091-keep_audit-a448af2477",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-091"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "music",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "song"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "boot",
+          "song",
+          "scraped"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not a song -> stone",
+          "audit_reason=anti_cue",
+          "audit_reason=only_negated_evidence",
+          "negated_cue=song -> music",
+          "term=rock"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-092-keep_audit-9f79810cb5",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-092"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "stone",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "canoe"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not about credit -> river_edge",
+          "audit_reason=anti_cue",
+          "audit_reason=only_negated_evidence",
+          "negated_cue=credit -> financial_institution",
+          "term=bank"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-093-keep_audit-98ae5125c2",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-093"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "plate",
+          "player"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "plate",
+          "player"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "anti_cue=not flying -> animal",
+          "anti_cue=not flying -> sports_equipment",
+          "audit_reason=anti_cue_conflict",
+          "audit_reason=guard_failure",
+          "audit_reason=only_negated_evidence",
+          "cue=plate -> sports_equipment",
+          "cue=player -> sports_equipment",
+          "guard_failure=player_alone_insufficient -> sports_equipment",
+          "negated_cue=flying -> animal",
+          "positive_cue=plate -> sports_equipment",
+          "positive_cue=player -> sports_equipment",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-094-keep_audit-5399c9086f",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Contradictory or negated evidence makes continuation unsafe.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-094"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "true_unsafe",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "river"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "lobby",
+          "mural",
+          "river"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "lobby"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=lobby -> financial_institution",
+          "cue=river -> river_edge",
+          "cue=teller -> financial_institution",
+          "margin=1",
+          "positive_cue=lobby -> financial_institution",
+          "positive_cue=river -> river_edge",
+          "positive_cue=teller -> financial_institution",
+          "second_score=1",
+          "term=bank",
+          "top_score=2",
+          "top_sense=financial_institution"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-096"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-096-guard_rule_addition-0e3d130039",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer financial_institution only when lobby cues dominate river cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "lobby"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-096"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "financial_institution",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "cash"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "cash",
+          "reeds"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "reeds"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=guard_failure",
+          "cue=cash -> financial_institution",
+          "cue=reeds -> river_edge",
+          "guard_failure=cash_or_card_alone_insufficient -> financial_institution",
+          "margin=1",
+          "positive_cue=cash -> financial_institution",
+          "positive_cue=reeds -> river_edge",
+          "second_score=0",
+          "term=bank",
+          "top_score=1",
+          "top_sense=river_edge"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-097"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-097-guard_rule_addition-7033ab05ba",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer river_edge only when reeds cues dominate cash cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "reeds"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-097"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "player"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "player"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "audit_reason=guard_failure",
+          "cue=cave -> animal",
+          "cue=player -> sports_equipment",
+          "guard_failure=depicted_animal_cue_insufficient -> animal",
+          "guard_failure=player_alone_insufficient -> sports_equipment",
+          "positive_cue=cave -> animal",
+          "positive_cue=player -> sports_equipment",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-098"
+        ],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-098-cue_memory_addition-5e71deab2e",
+      "proposal_type": "cue_memory_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "player"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Concrete prompt cues may support the expected sense through explicit cue memory.",
+      "recommended_action": "auto_safe_later",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-098"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "sports_equipment",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "player"
+        ],
+        "margin": null,
+        "prompt_cues": [
+          "player",
+          "rafters"
+        ],
+        "second_score": null,
+        "supporting_cues": [
+          "rafters"
+        ],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "audit_reason=guard_failure",
+          "cue=player -> sports_equipment",
+          "guard_failure=player_alone_insufficient -> sports_equipment",
+          "positive_cue=player -> sports_equipment",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-099"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-099-guard_rule_addition-2c52629378",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bat: prefer animal only when rafters cues dominate player cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "rafters"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-099"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "animal",
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 0.0,
+        "prompt_cues": [
+          "envelope"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "envelope"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=envelope -> closure_stamp",
+          "cue=ocean -> animal",
+          "margin=0",
+          "positive_cue=envelope -> closure_stamp",
+          "positive_cue=ocean -> animal",
+          "second_score=1",
+          "term=seal",
+          "top_score=1",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-100"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-100-guard_rule_addition-6c89a6244a",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer closure_stamp only when envelope cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "envelope"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-100"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "label"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "label",
+          "animal",
+          "showed"
+        ],
+        "second_score": 2.0,
+        "supporting_cues": [
+          "animal"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=animal -> animal",
+          "cue=label -> closure_stamp",
+          "cue=package -> closure_stamp",
+          "cue=swimming -> animal",
+          "margin=0",
+          "positive_cue=animal -> animal",
+          "positive_cue=label -> closure_stamp",
+          "positive_cue=package -> closure_stamp",
+          "positive_cue=swimming -> animal",
+          "second_score=2",
+          "term=seal",
+          "top_score=2",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-101"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-101-guard_rule_addition-fa0087c56f",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer animal only when animal cues dominate label cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "animal"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-101"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "animal",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "operator"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "operator"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=lift -> machine",
+          "cue=marsh -> bird",
+          "cue=operator -> machine",
+          "margin=1",
+          "positive_cue=lift -> machine",
+          "positive_cue=marsh -> bird",
+          "positive_cue=operator -> machine",
+          "second_score=1",
+          "term=crane",
+          "top_score=2",
+          "top_sense=machine"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-102"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-102-guard_rule_addition-835c68abea",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=crane: prefer machine only when operator cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "operator"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-102"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "machine",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "steel"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "bird",
+          "like",
+          "steel"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "bird"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=guard_failure",
+          "cue=bird -> bird",
+          "cue=steel -> machine",
+          "guard_failure=depicted_machine_cue_insufficient -> machine",
+          "margin=1",
+          "positive_cue=bird -> bird",
+          "positive_cue=steel -> machine",
+          "second_score=0",
+          "term=crane",
+          "top_score=1",
+          "top_sense=bird"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-103"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-103-guard_rule_addition-dd5292201a",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=crane: prefer bird only when bird cues dominate steel cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "bird"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-103"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "bird",
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 0.0,
+        "prompt_cues": [
+          "device"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "device"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=device -> coil",
+          "cue=flowers -> season",
+          "margin=0",
+          "positive_cue=device -> coil",
+          "positive_cue=flowers -> season",
+          "second_score=1",
+          "term=spring",
+          "top_score=1",
+          "top_sense=coil"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-104"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-104-guard_rule_addition-35ef7f5bab",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=spring: prefer coil only when device cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "device"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-104"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "coil",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "metal"
+        ],
+        "margin": 1.0,
+        "prompt_cues": [
+          "rain",
+          "sign",
+          "metal"
+        ],
+        "second_score": 0.0,
+        "supporting_cues": [
+          "rain"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=guard_failure",
+          "cue=metal -> coil",
+          "cue=rain -> season",
+          "guard_failure=depicted_coil_cue_insufficient -> coil",
+          "margin=1",
+          "positive_cue=metal -> coil",
+          "positive_cue=rain -> season",
+          "second_score=0",
+          "term=spring",
+          "top_score=1",
+          "top_sense=season"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-105"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-105-guard_rule_addition-681acd956e",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=spring: prefer season only when rain cues dominate metal cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "rain"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-105"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_or_weak_cue_support",
+      "target_sense": "season",
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "band"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "band"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=band -> music",
+          "cue=mountain -> stone",
+          "cue=venue -> music",
+          "margin=1",
+          "positive_cue=band -> music",
+          "positive_cue=mountain -> stone",
+          "positive_cue=venue -> music",
+          "second_score=1",
+          "term=rock",
+          "top_score=2",
+          "top_sense=music"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-106"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-106-guard_rule_addition-f8996b6e09",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=rock: prefer music only when band cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "band"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-106"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "music",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "concert"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "concert"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=concert -> music",
+          "cue=ground -> stone",
+          "margin=0",
+          "positive_cue=concert -> music",
+          "positive_cue=ground -> stone",
+          "second_score=1",
+          "term=rock",
+          "top_score=1",
+          "top_sense=music"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-107"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-107-guard_rule_addition-1eb8c7a83f",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=rock: prefer stone only when supporting cues dominate concert cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-107"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "stone",
+      "term": "rock"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [
+          "fish"
+        ],
+        "margin": 0.0,
+        "prompt_cues": [
+          "document",
+          "fish"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "document"
+        ],
+        "top_score": 1.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=document -> closure_stamp",
+          "cue=fish -> animal",
+          "margin=0",
+          "positive_cue=document -> closure_stamp",
+          "positive_cue=fish -> animal",
+          "second_score=1",
+          "term=seal",
+          "top_score=1",
+          "top_sense=animal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-108"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-108-guard_rule_addition-e2ea2e6e08",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=seal: prefer closure_stamp only when document cues dominate fish cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "document"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-108"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "sense_tie",
+      "target_sense": "closure_stamp",
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": 1.0,
+        "prompt_cues": [
+          "stream"
+        ],
+        "second_score": 1.0,
+        "supporting_cues": [
+          "stream"
+        ],
+        "top_score": 2.0,
+        "trace_markers": [
+          "audit_reason=low_margin_conflict",
+          "conflict_detected",
+          "cue=card -> financial_institution",
+          "cue=credit -> financial_institution",
+          "cue=stream -> river_edge",
+          "margin=1",
+          "positive_cue=card -> financial_institution",
+          "positive_cue=credit -> financial_institution",
+          "positive_cue=stream -> river_edge",
+          "second_score=1",
+          "term=bank",
+          "top_score=2",
+          "top_sense=financial_institution"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-109"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-109-guard_rule_addition-4a5f603d61",
+      "proposal_type": "guard_rule_addition",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": "term=bank: prefer river_edge only when stream cues dominate conflicting cues",
+        "add_phrase_candidate": null,
+        "add_positive_cues": [
+          "stream"
+        ],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Competing evidence needs a narrow term-specific guard; do not auto-apply conflict rules.",
+      "recommended_action": "human_review",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-109"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "low_margin",
+      "target_sense": "river_edge",
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "went"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=bank"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-111-keep_audit-5fdb23d3c7",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Context is intentionally underconstrained; continuation would guess.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-111"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "unsupported_or_underconstrained_context",
+      "target_sense": null,
+      "term": "bank"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "noticed"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=bat"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-112-keep_audit-d345f24275",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Context is intentionally underconstrained; continuation would guess.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-112"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "unsupported_or_underconstrained_context",
+      "target_sense": null,
+      "term": "bat"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "checked"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=seal"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "low"
+      },
+      "proposal_id": "p-v1-113-keep_audit-4d22239596",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Context is intentionally underconstrained; continuation would guess.",
+      "recommended_action": "keep_audit",
+      "risk_level": "low",
+      "row_ids": [
+        "v1-113"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "unsupported_or_underconstrained_context",
+      "target_sense": null,
+      "term": "seal"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [
+          "nearby"
+        ],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "stood",
+          "nearby"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=crane"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "high"
+      },
+      "proposal_id": "p-v1-114-keep_audit-fa34f47555",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Context is intentionally underconstrained; continuation would guess.",
+      "recommended_action": "keep_audit",
+      "risk_level": "high",
+      "row_ids": [
+        "v1-114"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "unsupported_or_underconstrained_context",
+      "target_sense": null,
+      "term": "crane"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [
+          "returned"
+        ],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "returned"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "all_sense_scores_zero",
+          "term=spring"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [],
+        "risk_of_false_positive": "high"
+      },
+      "proposal_id": "p-v1-115-keep_audit-3d2fb2d6c9",
+      "proposal_type": "keep_audit",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "Context is intentionally underconstrained; continuation would guess.",
+      "recommended_action": "keep_audit",
+      "risk_level": "high",
+      "row_ids": [
+        "v1-115"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "unsupported_or_underconstrained_context",
+      "target_sense": null,
+      "term": "spring"
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "opened",
+          "teacher",
+          "notebook"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "no_ambiguous_term"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-116"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-116-needs_trace_instrumentation-127d763608",
+      "proposal_type": "needs_trace_instrumentation",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No known ambiguous term/sense was available; future sense-memory work needs human review and clearer trace.",
+      "recommended_action": "needs_instrumentation",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-116"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_sense_memory",
+      "target_sense": null,
+      "term": ""
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "bowl",
+          "chef",
+          "placed"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "no_ambiguous_term"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-117"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-117-needs_trace_instrumentation-8cd89eb42f",
+      "proposal_type": "needs_trace_instrumentation",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No known ambiguous term/sense was available; future sense-memory work needs human review and clearer trace.",
+      "recommended_action": "needs_instrumentation",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-117"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_sense_memory",
+      "target_sense": null,
+      "term": ""
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "corner",
+          "driver",
+          "waited"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "no_ambiguous_term"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-118"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-118-needs_trace_instrumentation-7dd96f3a5c",
+      "proposal_type": "needs_trace_instrumentation",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No known ambiguous term/sense was available; future sense-memory work needs human review and clearer trace.",
+      "recommended_action": "needs_instrumentation",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-118"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_sense_memory",
+      "target_sense": null,
+      "term": ""
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "pale",
+          "color",
+          "mixed"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "no_ambiguous_term"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-119"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-119-needs_trace_instrumentation-ea1d4a2678",
+      "proposal_type": "needs_trace_instrumentation",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No known ambiguous term/sense was available; future sense-memory work needs human review and clearer trace.",
+      "recommended_action": "needs_instrumentation",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-119"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_sense_memory",
+      "target_sense": null,
+      "term": ""
+    },
+    {
+      "current_decision": "audit",
+      "evidence": {
+        "broad_cues": [],
+        "conflicting_cues": [],
+        "margin": null,
+        "prompt_cues": [
+          "child",
+          "folded",
+          "carefully"
+        ],
+        "second_score": null,
+        "supporting_cues": [],
+        "top_score": null,
+        "trace_markers": [
+          "no_ambiguous_term"
+        ]
+      },
+      "expected_effect": {
+        "may_continue_rows": [
+          "v1-120"
+        ],
+        "risk_of_false_positive": "medium"
+      },
+      "proposal_id": "p-v1-120-needs_trace_instrumentation-eb64f53f1e",
+      "proposal_type": "needs_trace_instrumentation",
+      "proposed_change": {
+        "add_anti_cues": [],
+        "add_guard_rule": null,
+        "add_phrase_candidate": null,
+        "add_positive_cues": [],
+        "add_prompt_tail_rule": null,
+        "add_semantic_frame": null
+      },
+      "rationale": "No known ambiguous term/sense was available; future sense-memory work needs human review and clearer trace.",
+      "recommended_action": "needs_instrumentation",
+      "risk_level": "medium",
+      "row_ids": [
+        "v1-120"
+      ],
+      "safety_checks_required": [
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited"
+      ],
+      "source_reason": "missing_sense_memory",
+      "target_sense": null,
+      "term": ""
+    }
+  ],
+  "summary": {
+    "auto_safe_proposals": 4,
+    "by_action": {
+      "auto_safe_later": 4,
+      "human_review": 34,
+      "keep_audit": 19,
+      "needs_instrumentation": 5
+    },
+    "by_proposal_type": {
+      "cue_memory_addition": 4,
+      "guard_rule_addition": 29,
+      "keep_audit": 19,
+      "needs_trace_instrumentation": 5,
+      "phrase_candidate_addition": 5
+    },
+    "by_risk_level": {
+      "high": 2,
+      "low": 16,
+      "medium": 44
+    },
+    "keep_audit": 19,
+    "needs_instrumentation": 5,
+    "proposals_total": 62,
+    "review_required": 34,
+    "total_audits": 62
+  }
+}
