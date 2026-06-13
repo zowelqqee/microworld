@@ -1,0 +1,2120 @@
+{
+  "summary": {
+    "total_proposals": 12,
+    "total_items_reviewed": 179,
+    "accepted_auto": 163,
+    "rejected_auto": 0,
+    "needs_review": 16,
+    "acceptance_rate": 0.9106,
+    "rejection_rate": 0.0,
+    "needs_review_rate": 0.0894,
+    "by_term": {
+      "bank": {
+        "accepted_auto": 30,
+        "needs_review": 2
+      },
+      "bat": {
+        "accepted_auto": 30,
+        "needs_review": 2
+      },
+      "crane": {
+        "accepted_auto": 28,
+        "needs_review": 3
+      },
+      "rock": {
+        "accepted_auto": 22,
+        "needs_review": 4
+      },
+      "seal": {
+        "accepted_auto": 31,
+        "needs_review": 1
+      },
+      "spring": {
+        "accepted_auto": 22,
+        "needs_review": 4
+      }
+    },
+    "by_item_type": {
+      "phrase_candidate_hint": {
+        "needs_review": 10,
+        "accepted_auto": 3
+      },
+      "positive_cue": {
+        "accepted_auto": 104
+      },
+      "semantic_frame_hint": {
+        "accepted_auto": 7,
+        "needs_review": 5
+      },
+      "typical_action": {
+        "accepted_auto": 34
+      },
+      "typical_location": {
+        "accepted_auto": 15,
+        "needs_review": 1
+      }
+    },
+    "by_decision": {
+      "accepted_auto": 163,
+      "needs_review": 16
+    },
+    "by_risk_level": {
+      "low": 163,
+      "medium": 16
+    }
+  },
+  "policy": {
+    "mode": "automated_review_only",
+    "auto_apply": false,
+    "generation_behavior_changed": false,
+    "sense_memory_modified": false,
+    "human_review_required_for_uncertain_items": true
+  },
+  "proposal_reviews": [
+    {
+      "proposal_id": "prop_cf6dc4c79801",
+      "term": "bank",
+      "sense": "financial_institution",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "account",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "deposit",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "loan",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "teller",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "cash",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "saving",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "atm",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "interest",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "check",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "branch",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "deposit",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "withdraw",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "open an account",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "request a loan",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "branch",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "financial_transaction",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "went to the bank to deposit",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "account",
+          "deposit",
+          "loan",
+          "teller",
+          "cash",
+          "saving",
+          "atm",
+          "interest",
+          "check",
+          "branch"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "deposit",
+          "withdraw",
+          "open an account",
+          "request a loan"
+        ],
+        "typical_locations": [
+          "branch"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "financial_transaction"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "went to the bank to deposit"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_8303fbb873e6",
+      "term": "bank",
+      "sense": "river_edge",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "stream",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "current",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "reed",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "grass",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "fishermen",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "bridge",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "floodwater",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "soil",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "river bank",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "narrow_multiword_exception_concrete"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "fish",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "cast",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "erode",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "river",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "natural_geography",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "stood on the bank",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "stream",
+          "current",
+          "reed",
+          "grass",
+          "fishermen",
+          "bridge",
+          "floodwater",
+          "soil",
+          "river bank"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "fish",
+          "cast",
+          "erode"
+        ],
+        "typical_locations": [
+          "river"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "natural_geography"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "stood on the bank"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_0ccd88a2cbfd",
+      "term": "bat",
+      "sense": "animal",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "cave",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "roost",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "rafter",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "insect",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "echolocation",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "wing",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "membrane",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "dusk",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "mammal",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "hunt",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "roost",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "hang",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "cave",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "attic",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "animal_behavior",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "flew out of the cave at dusk",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "cave",
+          "roost",
+          "rafter",
+          "insect",
+          "echolocation",
+          "wing",
+          "membrane",
+          "dusk",
+          "mammal"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "hunt",
+          "roost",
+          "hang"
+        ],
+        "typical_locations": [
+          "cave",
+          "attic"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "animal_behavior"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "flew out of the cave at dusk"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_a835b68aedd0",
+      "term": "bat",
+      "sense": "sports_equipment",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "pitcher",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "ball",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "batter",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "plate",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "swing",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "player",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "pitch",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "aluminum",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "baseball",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "home run",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "narrow_multiword_exception_concrete"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "swing",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "hit",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "strike",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "plate",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "sports_equipment_use",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "swung the bat at the pitch",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "pitcher",
+          "ball",
+          "batter",
+          "plate",
+          "swing",
+          "player",
+          "pitch",
+          "aluminum",
+          "baseball",
+          "home run"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "swing",
+          "hit",
+          "strike"
+        ],
+        "typical_locations": [
+          "plate"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "sports_equipment_use"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "swung the bat at the pitch"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_ef0510ed501b",
+      "term": "crane",
+      "sense": "bird",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "neck",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "leg",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "reed",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "lake",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "wetland",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "marsh",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "wing",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "migration",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "flock",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "wade",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "dance",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "migrate",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "wetland",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "lake",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "bird_behavior",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "stood in the reeds by the lake",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "neck",
+          "leg",
+          "reed",
+          "lake",
+          "wetland",
+          "marsh",
+          "wing",
+          "migration",
+          "flock"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "wade",
+          "dance",
+          "migrate"
+        ],
+        "typical_locations": [
+          "wetland",
+          "lake"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "bird_behavior"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "stood in the reeds by the lake"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_f5a10d66b7bb",
+      "term": "crane",
+      "sense": "machine",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "hook",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "load",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "cable",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "boom",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "operator",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "tower crane",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "narrow_multiword_exception_concrete"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "outrigger",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "construction site",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "narrow_multiword_exception_concrete"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "steel beams",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "narrow_multiword_exception_concrete"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "lift",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "lower",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "swing",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "construction site",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "heavy_machinery_operation",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "new_frame_label_requires_project_review"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "lowered the load with the hook",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "hook",
+          "load",
+          "cable",
+          "boom",
+          "operator",
+          "tower crane",
+          "outrigger",
+          "construction site",
+          "steel beams"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "lift",
+          "lower",
+          "swing"
+        ],
+        "typical_locations": [
+          "construction site"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "heavy_machinery_operation"
+        ],
+        "phrase_candidate_hints": [
+          "lowered the load with the hook"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_fddd629a480b",
+      "term": "rock",
+      "sense": "music",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "band",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "concert",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "crowd",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "stage",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "guitar",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "drum",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "album",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "genre",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "play",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "perform",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "stage",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "music_performance",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "new_frame_label_requires_project_review"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "played to a crowd on stage",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "band",
+          "concert",
+          "crowd",
+          "stage",
+          "guitar",
+          "drum",
+          "album",
+          "genre"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "play",
+          "perform"
+        ],
+        "typical_locations": [
+          "stage"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "music_performance"
+        ],
+        "phrase_candidate_hints": [
+          "played to a crowd on stage"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_88f3b9744b89",
+      "term": "rock",
+      "sense": "stone",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "cliff",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "boulder",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "trail",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "mineral",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "geology",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "ground",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "hillside",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "climb",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "roll",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "mountain",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "cliff",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "natural_material",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "new_frame_label_requires_project_review"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "climbed over the rocks on the trail",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "cliff",
+          "boulder",
+          "trail",
+          "mineral",
+          "geology",
+          "ground",
+          "hillside"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "climb",
+          "roll"
+        ],
+        "typical_locations": [
+          "mountain",
+          "cliff"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "natural_material"
+        ],
+        "phrase_candidate_hints": [
+          "climbed over the rocks on the trail"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_744d16810b79",
+      "term": "seal",
+      "sense": "animal",
+      "source_risk_level": "medium",
+      "proposal_decision": "accepted_auto",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "fish",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "flipper",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "ocean",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "coast",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "marine",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "mammal",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "pup",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "orca",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "bark",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "swim",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "dive",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "rest",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "coast",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "shore",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "animal_behavior",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "dove below the surface",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_safe_concrete_phrase_candidate"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "fish",
+          "flipper",
+          "ocean",
+          "coast",
+          "marine",
+          "mammal",
+          "pup",
+          "orca",
+          "bark"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "swim",
+          "dive",
+          "rest"
+        ],
+        "typical_locations": [
+          "coast",
+          "shore"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "animal_behavior"
+        ],
+        "phrase_candidate_hints": [
+          "dove below the surface"
+        ]
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_547e134ead61",
+      "term": "seal",
+      "sense": "closure_stamp",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "wax",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "envelope",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "document",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "parcel",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "flap",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "certificate",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "notary",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "airtight",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "stamped",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "press",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "break",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "stamp",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "document",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "document_closure",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_compatible_frame_label"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "sealed it shut",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_safe_concrete_phrase_candidate"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "pressed the seal onto the document",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "wax",
+          "envelope",
+          "document",
+          "parcel",
+          "flap",
+          "certificate",
+          "notary",
+          "airtight",
+          "stamped"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "press",
+          "break",
+          "stamp"
+        ],
+        "typical_locations": [
+          "document"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "document_closure"
+        ],
+        "phrase_candidate_hints": [
+          "sealed it shut"
+        ]
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "pressed the seal onto the document"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_7c916d0fa609",
+      "term": "spring",
+      "sense": "coil",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "latch",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "handle",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "device",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "coil",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "metal",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "elastic",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "mattress",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "compressed",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "snap",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "compress",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "stretch",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "device",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_location"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "mechanical_device",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "new_frame_label_requires_project_review"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "snapped back into place",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "known_safe_concrete_phrase_candidate"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "latch",
+          "handle",
+          "device",
+          "coil",
+          "metal",
+          "elastic",
+          "mattress",
+          "compressed"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "snap",
+          "compress",
+          "stretch"
+        ],
+        "typical_locations": [
+          "device"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": [
+          "snapped back into place"
+        ]
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "mechanical_device"
+        ],
+        "phrase_candidate_hints": []
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    },
+    {
+      "proposal_id": "prop_6da7ad11ada3",
+      "term": "spring",
+      "sense": "season",
+      "source_risk_level": "medium",
+      "proposal_decision": "partial_accept",
+      "items": [
+        {
+          "item_type": "positive_cue",
+          "value": "thaw",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "flower",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "morning",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "rain",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "migration",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "bloom",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "positive_cue",
+          "value": "warm",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_term_specific_non_conflicting_cue"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "bloom",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_action",
+          "value": "thaw",
+          "decision": "accepted_auto",
+          "risk_level": "low",
+          "reason": "concrete_action_non_generic"
+        },
+        {
+          "item_type": "typical_location",
+          "value": "outdoor",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "vague_location_needs_review"
+        },
+        {
+          "item_type": "semantic_frame_hint",
+          "value": "seasonal_transition",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "new_frame_label_requires_project_review"
+        },
+        {
+          "item_type": "phrase_candidate_hint",
+          "value": "arrived with the first warm mornings",
+          "decision": "needs_review",
+          "risk_level": "medium",
+          "reason": "phrase_candidate_needs_prompt_tail_validation"
+        }
+      ],
+      "accepted_update": {
+        "positive_cues": [
+          "thaw",
+          "flower",
+          "morning",
+          "rain",
+          "migration",
+          "bloom",
+          "warm"
+        ],
+        "anti_cues": [],
+        "typical_actions": [
+          "bloom",
+          "thaw"
+        ],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "rejected_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [],
+        "phrase_candidate_hints": []
+      },
+      "needs_review_items": {
+        "positive_cues": [],
+        "anti_cues": [],
+        "typical_actions": [],
+        "typical_locations": [
+          "outdoor"
+        ],
+        "parts": [],
+        "objects": [],
+        "semantic_frame_hints": [
+          "seasonal_transition"
+        ],
+        "phrase_candidate_hints": [
+          "arrived with the first warm mornings"
+        ]
+      },
+      "safety_checks_required_before_apply": [
+        "run_trusted_benchmark",
+        "wrong_continue_count_remains_0",
+        "semantic_quality_flagged_remains_0",
+        "true_unsafe_rows_remain_audited",
+        "prompt_tail_gate_still_passes"
+      ]
+    }
+  ]
+}

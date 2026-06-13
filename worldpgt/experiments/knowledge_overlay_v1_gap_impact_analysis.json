@@ -1,0 +1,2433 @@
+{
+  "accepted_auto_usage": [
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "account"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "deposit"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "loan"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "teller"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "cash"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "saving"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "atm"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "interest"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "check"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "branch"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "deposit"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "withdraw"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "open an account"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "request a loan"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "branch"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "financial_institution",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "financial_transaction"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "stream"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "current"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "reed"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "grass"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "fishermen"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "bridge"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "floodwater"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "soil"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "not_observed_in_prompts",
+      "value": "river bank"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "fish"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "cast"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "erode"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "river"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "river_edge",
+      "term": "bank",
+      "usage_category": "unknown",
+      "value": "natural_geography"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "cave"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "roost"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "rafter"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "insect"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "echolocation"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "wing"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "membrane"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "dusk"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "mammal"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "hunt"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "roost"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "hang"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "cave"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "attic"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "animal_behavior"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "v1-044",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "used_changed_decision",
+      "value": "pitcher"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "ball"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "batter"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "plate"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "swing"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "player"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "pitch"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "aluminum"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "baseball"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "not_observed_in_prompts",
+      "value": "home run"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "swing"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "hit"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "strike"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "plate"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "sports_equipment",
+      "term": "bat",
+      "usage_category": "unknown",
+      "value": "sports_equipment_use"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "neck"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "leg"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "reed"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "lake"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "wetland"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "marsh"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "v1-110",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "used_changed_decision",
+      "value": "wing"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "migration"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "flock"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "wade"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "dance"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "migrate"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "wetland"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "lake"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "bird",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "bird_behavior"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "hook"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "load"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "cable"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "boom"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "operator"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "tower crane"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "outrigger"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "v1-015,v1-068",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "used_no_decision_change",
+      "value": "construction site"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "not_observed_in_prompts",
+      "value": "steel beams"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "lift"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "lower"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "swing"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "machine",
+      "term": "crane",
+      "usage_category": "unknown",
+      "value": "construction site"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "band"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "concert"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "crowd"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "stage"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "guitar"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "drum"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "album"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "genre"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "play"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "perform"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "music",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "stage"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "cliff"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "boulder"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "trail"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "mineral"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "geology"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "ground"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "not_observed_in_prompts",
+      "value": "hillside"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "climb"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "roll"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "mountain"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "stone",
+      "term": "rock",
+      "usage_category": "unknown",
+      "value": "cliff"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "fish"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "flipper"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "ocean"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "coast"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "marine"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "mammal"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "pup"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "orca"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "bark"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "swim"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "dive"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "rest"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "coast"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "shore"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "animal_behavior"
+    },
+    {
+      "item_type": "phrase_candidate_hint",
+      "matched_row_ids": "",
+      "sense_id": "animal",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "dove below the surface"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "wax"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "envelope"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "document"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "parcel"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "flap"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "certificate"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "notary"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "airtight"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "not_observed_in_prompts",
+      "value": "stamped"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "press"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "break"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "stamp"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "document"
+    },
+    {
+      "item_type": "semantic_frame_hint",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "document_closure"
+    },
+    {
+      "item_type": "phrase_candidate_hint",
+      "matched_row_ids": "",
+      "sense_id": "closure_stamp",
+      "term": "seal",
+      "usage_category": "unknown",
+      "value": "sealed it shut"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "latch"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "handle"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "device"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "coil"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "metal"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "elastic"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "mattress"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "compressed"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "snap"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "compress"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "stretch"
+    },
+    {
+      "item_type": "typical_location",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "device"
+    },
+    {
+      "item_type": "phrase_candidate_hint",
+      "matched_row_ids": "",
+      "sense_id": "coil",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "snapped back into place"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "thaw"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "flower"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "morning"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "rain"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "migration"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "not_observed_in_prompts",
+      "value": "bloom"
+    },
+    {
+      "item_type": "positive_cue",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "duplicate_builtin_memory",
+      "value": "warm"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "bloom"
+    },
+    {
+      "item_type": "typical_action",
+      "matched_row_ids": "",
+      "sense_id": "season",
+      "term": "spring",
+      "usage_category": "unknown",
+      "value": "thaw"
+    }
+  ],
+  "changed_rows": [
+    {
+      "change_type": "audit_to_continue",
+      "correct_direction": true,
+      "explanation": "Overlay cue 'pitcher' (bat:sports_equipment) raised top_score to 1 with margin=1 and no conflict, satisfying continue thresholds.",
+      "margin": "1",
+      "mechanism": "new_cue_broke_cue_deficit",
+      "overlay_cue": "pitcher",
+      "overlay_cue_sense": "sports_equipment",
+      "row_id": "v1-044",
+      "second_score": "0",
+      "term": "bat",
+      "top_score": "1"
+    },
+    {
+      "change_type": "continue_to_audit",
+      "correct_direction": false,
+      "explanation": "Overlay cue 'wing' (crane:bird) introduced a competing score, triggering conflict_detected with margin=1 == min_margin=1.0, so policy audited.",
+      "margin": "1",
+      "mechanism": "new_cue_introduced_conflict",
+      "overlay_cue": "wing",
+      "overlay_cue_sense": "bird",
+      "row_id": "v1-110",
+      "second_score": "1",
+      "term": "crane",
+      "top_score": "2"
+    }
+  ],
+  "summary": {
+    "accepted_auto_usage_summary": {
+      "duplicate_builtin_memory": 45,
+      "not_observed_in_prompts": 56,
+      "total": 163,
+      "unknown": 59,
+      "used_changed_decision": 2,
+      "used_no_decision_change": 1
+    },
+    "keep_audit_count": 24,
+    "knowledge_gap_summary": {
+      "low_margin_conflict": 1,
+      "missing_phrase_candidate": 18,
+      "missing_positive_cue": 18,
+      "missing_sense_memory": 5,
+      "no_safe_rewrite": 1,
+      "prompt_tail_blocked": 2,
+      "true_unsafe_keep_audit": 12,
+      "unsupported_context": 5
+    },
+    "net_trusted_coverage_change": 0,
+    "newly_audited_count": 1,
+    "newly_continued_count": 1,
+    "overlay_audit_count": 62,
+    "overlay_continue_count": 58,
+    "recommended_next_step": "expand_phrase_candidates",
+    "risk_regression_count": 0,
+    "targetable_audit_count": 38,
+    "total_prompts": 120,
+    "unchanged_audit_count": 61
+  },
+  "targeted_acquisition_plan": [
+    {
+      "blocker_type": "prompt_tail_blocked",
+      "curriculum_task_id": "task-v1-030-prompt_tail_blocked-cb4685905d",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "prompt_tail_rule",
+      "row_id": "v1-030",
+      "source_strategy": "manual_rule",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-041-missing_phrase_candidate-c8bdd38beb",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-041",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-045",
+      "source_strategy": "manual_rule",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-047-missing_phrase_candidate-032996d444",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-047",
+      "source_strategy": "manual_rule",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-053",
+      "source_strategy": "curated_snippet",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-055",
+      "source_strategy": "curated_snippet",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-056",
+      "source_strategy": "manual_rule",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-057-missing_phrase_candidate-e34d360a26",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-057",
+      "source_strategy": "manual_rule",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-061-missing_phrase_candidate-20cb5cbeb1",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-061",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-062",
+      "source_strategy": "curated_snippet",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-064",
+      "source_strategy": "curated_snippet",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-065",
+      "source_strategy": "curated_snippet",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-066",
+      "source_strategy": "curated_snippet",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-068",
+      "source_strategy": "curated_snippet",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-069-missing_phrase_candidate-9b67c49470",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-069",
+      "source_strategy": "manual_rule",
+      "term": "spring"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-070",
+      "source_strategy": "curated_snippet",
+      "term": "spring"
+    },
+    {
+      "blocker_type": "prompt_tail_blocked",
+      "curriculum_task_id": "task-v1-071-prompt_tail_blocked-7431393b75",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "prompt_tail_rule",
+      "row_id": "v1-071",
+      "source_strategy": "manual_rule",
+      "term": "rock"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-073-missing_phrase_candidate-7d5314922e",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-073",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-074-missing_phrase_candidate-ddea233863",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-074",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-075",
+      "source_strategy": "curated_snippet",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-076-missing_phrase_candidate-fc71d06688",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-076",
+      "source_strategy": "manual_rule",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-078",
+      "source_strategy": "curated_snippet",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-079",
+      "source_strategy": "curated_snippet",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-080",
+      "source_strategy": "curated_snippet",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-096",
+      "source_strategy": "curated_snippet",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-097-missing_phrase_candidate-cc1c6d2cf0",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-097",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-098",
+      "source_strategy": "curated_snippet",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-099-missing_phrase_candidate-7fbdcae6ef",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-099",
+      "source_strategy": "manual_rule",
+      "term": "bat"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-100",
+      "source_strategy": "curated_snippet",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-101-missing_phrase_candidate-b7c94e2bc7",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-101",
+      "source_strategy": "manual_rule",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-102",
+      "source_strategy": "curated_snippet",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-103",
+      "source_strategy": "curated_snippet",
+      "term": "crane"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-104-missing_phrase_candidate-f74f99dffa",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-104",
+      "source_strategy": "manual_rule",
+      "term": "spring"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-105-missing_phrase_candidate-cb241f7daa",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-105",
+      "source_strategy": "manual_rule",
+      "term": "spring"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-106-missing_phrase_candidate-5c8ab2fc47",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-106",
+      "source_strategy": "manual_rule",
+      "term": "rock"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-107-missing_phrase_candidate-896608b35b",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-107",
+      "source_strategy": "manual_rule",
+      "term": "rock"
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "expected_effect": "may_unlock_continue",
+      "priority": "medium",
+      "required_input": "positive_cue",
+      "row_id": "v1-108",
+      "source_strategy": "curated_snippet",
+      "term": "seal"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-109-missing_phrase_candidate-9b4b56cd39",
+      "expected_effect": "may_unlock_continue",
+      "priority": "high",
+      "required_input": "phrase_candidate_hint",
+      "row_id": "v1-109",
+      "source_strategy": "manual_rule",
+      "term": "bank"
+    }
+  ],
+  "unchanged_audit_analysis": [
+    {
+      "blocker_type": "prompt_tail_blocked",
+      "curriculum_task_id": "task-v1-030-prompt_tail_blocked-cb4685905d",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-030",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-041-missing_phrase_candidate-c8bdd38beb",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-041",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-045",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-047-missing_phrase_candidate-032996d444",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-047",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "no_safe_rewrite",
+      "curriculum_task_id": "task-v1-051-no_safe_rewrite-bd15f7ff38",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "no_safe_repaired_candidate",
+      "row_id": "v1-051",
+      "targetable": false,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-053",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-055",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-056",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-057-missing_phrase_candidate-e34d360a26",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "surface_validation_failed",
+      "row_id": "v1-057",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-061-missing_phrase_candidate-20cb5cbeb1",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-061",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-062",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-064",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-065",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-066",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": true,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-068",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": "conflict_persists_at_min_margin"
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-069-missing_phrase_candidate-9b67c49470",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-069",
+      "targetable": true,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-070",
+      "targetable": true,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "prompt_tail_blocked",
+      "curriculum_task_id": "task-v1-071-prompt_tail_blocked-7431393b75",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-071",
+      "targetable": true,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-073-missing_phrase_candidate-7d5314922e",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-073",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-074-missing_phrase_candidate-ddea233863",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-074",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-075",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-076-missing_phrase_candidate-fc71d06688",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-076",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-078",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-079",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-080",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-081-true_unsafe-1f68e54792",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-081",
+      "targetable": false,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-082-true_unsafe-0fdd26d9db",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-082",
+      "targetable": false,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-083-true_unsafe-7ab8d41f12",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-083",
+      "targetable": false,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-085-true_unsafe-37f121a4f4",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-085",
+      "targetable": false,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-086-true_unsafe-5a3ca2e5ac",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-086",
+      "targetable": false,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-088-true_unsafe-1ac2f9deff",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-088",
+      "targetable": false,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-089-true_unsafe-d7af7aa171",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-089",
+      "targetable": false,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-090-true_unsafe-1b03fe28d3",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-090",
+      "targetable": false,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-091-true_unsafe-e44f0505d1",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-091",
+      "targetable": false,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-092-true_unsafe-12a33933ce",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-092",
+      "targetable": false,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-093-true_unsafe-cb2d0e4283",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-093",
+      "targetable": false,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "true_unsafe_keep_audit",
+      "curriculum_task_id": "task-v1-094-true_unsafe-644e20fedf",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "true_unsafe",
+      "row_id": "v1-094",
+      "targetable": false,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-096",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-097-missing_phrase_candidate-cc1c6d2cf0",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-097",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-098",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-099-missing_phrase_candidate-7fbdcae6ef",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-099",
+      "targetable": true,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-100",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-101-missing_phrase_candidate-b7c94e2bc7",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-101",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-102",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-103",
+      "targetable": true,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-104-missing_phrase_candidate-f74f99dffa",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-104",
+      "targetable": true,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-105-missing_phrase_candidate-cb241f7daa",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_or_weak_cue_support",
+      "row_id": "v1-105",
+      "targetable": true,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-106-missing_phrase_candidate-5c8ab2fc47",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-106",
+      "targetable": true,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-107-missing_phrase_candidate-896608b35b",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-107",
+      "targetable": true,
+      "term": "rock",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_positive_cue",
+      "curriculum_task_id": "",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "sense_tie",
+      "row_id": "v1-108",
+      "targetable": true,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_phrase_candidate",
+      "curriculum_task_id": "task-v1-109-missing_phrase_candidate-9b4b56cd39",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "low_margin",
+      "row_id": "v1-109",
+      "targetable": true,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "low_margin_conflict",
+      "curriculum_task_id": "",
+      "is_newly_audited": true,
+      "overlay_influenced": true,
+      "primary_audit_reason": "",
+      "row_id": "v1-110",
+      "targetable": false,
+      "term": "crane",
+      "why_overlay_insufficient": "newly_audited_by_overlay"
+    },
+    {
+      "blocker_type": "unsupported_context",
+      "curriculum_task_id": "task-v1-111-unsupported_context-d49f9f77a4",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "row_id": "v1-111",
+      "targetable": false,
+      "term": "bank",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "unsupported_context",
+      "curriculum_task_id": "task-v1-112-unsupported_context-1dd6dbc6e6",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "row_id": "v1-112",
+      "targetable": false,
+      "term": "bat",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "unsupported_context",
+      "curriculum_task_id": "task-v1-113-unsupported_context-0cdcbc80e2",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "row_id": "v1-113",
+      "targetable": false,
+      "term": "seal",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "unsupported_context",
+      "curriculum_task_id": "task-v1-114-unsupported_context-3264451285",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "row_id": "v1-114",
+      "targetable": false,
+      "term": "crane",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "unsupported_context",
+      "curriculum_task_id": "task-v1-115-unsupported_context-116dda29ed",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "unsupported_or_underconstrained_context",
+      "row_id": "v1-115",
+      "targetable": false,
+      "term": "spring",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_sense_memory",
+      "curriculum_task_id": "task-v1-116-missing_sense_memory-aa40515259",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_sense_memory",
+      "row_id": "v1-116",
+      "targetable": false,
+      "term": "",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_sense_memory",
+      "curriculum_task_id": "task-v1-117-missing_sense_memory-308692425e",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_sense_memory",
+      "row_id": "v1-117",
+      "targetable": false,
+      "term": "",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_sense_memory",
+      "curriculum_task_id": "task-v1-118-missing_sense_memory-02bf608062",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_sense_memory",
+      "row_id": "v1-118",
+      "targetable": false,
+      "term": "",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_sense_memory",
+      "curriculum_task_id": "task-v1-119-missing_sense_memory-7c05d6fe3b",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_sense_memory",
+      "row_id": "v1-119",
+      "targetable": false,
+      "term": "",
+      "why_overlay_insufficient": ""
+    },
+    {
+      "blocker_type": "missing_sense_memory",
+      "curriculum_task_id": "task-v1-120-missing_sense_memory-eb2295a79d",
+      "is_newly_audited": false,
+      "overlay_influenced": false,
+      "primary_audit_reason": "missing_sense_memory",
+      "row_id": "v1-120",
+      "targetable": false,
+      "term": "",
+      "why_overlay_insufficient": ""
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "accuracy": 0.5,
+  "answer_count": 8,
+  "answer_precision": 0.875,
+  "audit_count": 16,
+  "by_intent": {
+    "define_sense": {
+      "answer": 7,
+      "audit": 0,
+      "correct": 6,
+      "wrong": 1
+    },
+    "distinguish_senses": {
+      "answer": 1,
+      "audit": 2,
+      "correct": 1,
+      "wrong": 2
+    },
+    "unknown_or_ambiguous": {
+      "answer": 0,
+      "audit": 14,
+      "correct": 5,
+      "wrong": 9
+    }
+  },
+  "by_term": {
+    "bank": {
+      "answer": 4,
+      "audit": 0,
+      "correct": 4,
+      "wrong": 0
+    },
+    "bat": {
+      "answer": 2,
+      "audit": 3,
+      "correct": 2,
+      "wrong": 3
+    },
+    "crane": {
+      "answer": 0,
+      "audit": 5,
+      "correct": 2,
+      "wrong": 3
+    },
+    "rock": {
+      "answer": 0,
+      "audit": 3,
+      "correct": 0,
+      "wrong": 3
+    },
+    "seal": {
+      "answer": 1,
+      "audit": 2,
+      "correct": 2,
+      "wrong": 1
+    },
+    "spring": {
+      "answer": 1,
+      "audit": 3,
+      "correct": 2,
+      "wrong": 2
+    }
+  },
+  "correct_count": 12,
+  "provider_usage": {
+    "provider_enabled": true,
+    "provider_items_used": 131,
+    "provider_terms_used": [
+      "bank",
+      "bat",
+      "seal",
+      "spring"
+    ]
+  },
+  "qa_total": 24,
+  "quality_flagged": 0,
+  "safety": {
+    "generic_fallback_added": false,
+    "sense_memory_modified": false,
+    "thresholds_changed": false,
+    "validators_weakened": false
+  },
+  "wrong_count": 12
+}

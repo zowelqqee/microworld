@@ -1,0 +1,31 @@
+{
+  "candidate_available_count": 79,
+  "candidate_by_review_action": {
+    "accept_as_training_example": 62,
+    "keep_audit": 14,
+    "needs_memory": 10,
+    "revise": 34
+  },
+  "candidate_by_risk": {
+    "low": 62,
+    "medium": 17,
+    "none": 41
+  },
+  "candidate_by_source": {
+    "audit_fix_proposal": 21,
+    "none": 41,
+    "trusted_continuation": 58
+  },
+  "candidate_by_status": {
+    "trusted": 58,
+    "unavailable": 41,
+    "untrusted": 21
+  },
+  "candidate_unavailable_count": 41,
+  "total_candidate_coverage": 0.6583,
+  "total_rows": 120,
+  "trusted_audit_count": 62,
+  "trusted_continue_count": 58,
+  "trusted_semantic_quality_flagged": 0,
+  "trusted_wrong_continue_count": 0
+}

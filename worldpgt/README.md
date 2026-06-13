@@ -30,6 +30,15 @@ worldpgt/
     audit.py           audit row types
     metrics.py         coverage/precision metric helpers
     types.py           shared dataclasses
+  qa/                  QA layer (question answering over accepted memory)
+    question_analyzer.py      detects QA intent from surface form
+    answer_planner.py         selects response strategy from accepted memory
+    answer_renderer.py        composes semantic answer forms
+    answer_validator.py       checks correctness and flags quality issues
+    audit_renderer.py         helpful audit text for ambiguous questions
+    semantic_language_realizer.py  clause-level language realization
+    contrast_realizer.py      contrast explanations for distinguish_senses
+    accepted_memory_provider.py   accepted knowledge memory provider
   baselines/
     gpt2/              GPT-2 inference via local nanoGPT
       run_gpt2_baseline.py       inference runner
@@ -286,8 +295,117 @@ python3 -m worldpgt.benchmarks.full_comparison_report \
 ### Run tests
 
 ```bash
-python3 -m pytest worldpgt/tests -q
-python3 -m pytest -q
+python3 -m pytest worldpgt/tests/test_answer_planner_v1.py -q  # 95 passed
+python3 -m pytest worldpgt/tests -q                             # 702 passed
+python3 -m pytest -q                                            # 1745 passed
+```
+
+---
+
+## QA Layer
+
+worldpgt includes a small controlled QA assistant over explicit accepted
+memory. It answers, distinguishes, explains, or safely audits ambiguous-term
+questions through a transparent planner/renderer/validator pipeline — no
+neural weights, no model-based generation.
+
+### Architecture
+
+```
+question text
+  → QuestionAnalyzer     detects QA intent
+                         (define_sense / classify_context / explain_cue /
+                          distinguish_senses / unknown_or_ambiguous)
+  → AcceptedMemoryProvider  loads accepted facts, patterns, senses
+  → AnswerPlanner        selects response strategy from accepted memory
+  → AnswerRenderer       composes semantic answer forms
+                         (common clues, contexts, signs, location phrases,
+                          action phrases, contrast explanations)
+  → AnswerValidator      checks correctness; flags quality issues
+  → result: answer text or helpful audit text
+```
+
+All decisions are deterministic and based on accepted memory. No weights.
+No backpropagation. No GPT renderer. No generic fallback.
+
+### Accepted Memory Provider
+
+```text
+total items:     221
+fact items:      163
+pattern items:    58
+ambiguous terms:   6  (bank, bat, crane, rock, seal, spring)
+senses:           12
+```
+
+### Main QA Benchmark (48 controlled questions)
+
+```text
+qa_total:          48
+answer_count:      42
+audit_count:        6
+correct_count:     48
+wrong_count:        0
+accuracy:          1.0
+answer_precision:  1.0
+quality_flagged:    0
+```
+
+### Generalization Benchmark (24 novel phrasings)
+
+```text
+qa_total:          24
+correct_count:     12
+wrong_count:       12
+accuracy:          0.5
+answer_count:       8
+audit_count:       16
+answer_precision:  0.875
+quality_flagged:    0
+```
+
+The bottleneck is the `QuestionAnalyzer` — the system audits conservatively
+on unseen phrasings rather than forcing a wrong answer. The renderer and
+planner are not the failure point.
+
+### Example Outputs
+
+```text
+A baseball bat is a club used to hit a ball in sports such as baseball.
+Common clues are pitchers, balls, batters and plates.
+It is used to swing, hit or strike the ball, and it is often found at home plate.
+
+Spring is the season that follows winter.
+Common signs are thaw, flowers, warmer mornings and rain.
+In spring, flowers bloom and snow thaws.
+
+Rock music is a music genre linked to bands, concerts and crowds.
+A rock is a solid mineral object found near cliffs, boulders and trails.
+```
+
+Helpful audit (safe abstention):
+
+```text
+"Seal" is ambiguous: it can mean a marine animal or a wax/document seal.
+I need context to choose the right meaning.
+```
+
+### Reproduce
+
+```bash
+# Main QA benchmark
+python3 -m worldpgt.experiments.run_answer_planner_v1 \
+  --qa-input worldpgt/experiments/qa_prompts_v1.csv \
+  --accepted-memory worldpgt/experiments/accepted_knowledge_memory_v1.json \
+  --output-csv worldpgt/experiments/answer_planner_v1_outputs.csv \
+  --output-json worldpgt/experiments/answer_planner_v1_summary.json
+
+# Generalization benchmark
+python3 -m worldpgt.experiments.run_answer_planner_v1 \
+  --qa-input worldpgt/experiments/qa_generalization_test_v1.csv \
+  --accepted-memory worldpgt/experiments/accepted_knowledge_memory_v1.json \
+  --output-csv worldpgt/experiments/qa_generalization_test_v1_outputs.csv \
+  --output-json worldpgt/experiments/qa_generalization_test_v1_summary.json
 ```
 
 ---

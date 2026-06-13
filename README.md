@@ -14,7 +14,7 @@ neural weights.
 Current test status:
 
 ```text
-1043 passing tests
+1745 passing tests
 ```
 
 ## Navigation
@@ -33,6 +33,7 @@ Current test status:
   * [Efficiency Benchmark](#efficiency-benchmark)
   * [RAM / RSS Benchmark](#ram--rss-benchmark)
   * [Careful Research Claim](#careful-research-claim)
+  * [worldpgt QA Layer](#worldpgt-qa-layer)
 * [What Was Learned](#what-was-learned)
 * [Running](#running)
 * [Documentation](#documentation)
@@ -567,6 +568,97 @@ python3 examples/makemore_vs_microworld_benchmark.py \
   --output data/makemore_vs_microworld_benchmark_memory.json
 ```
 
+### worldpgt QA Layer
+
+Microworld/worldpgt now contains a small controlled QA assistant over explicit
+accepted memory. It can answer, distinguish, explain, or safely audit
+ambiguous-term questions using a transparent planner/renderer/validator
+pipeline, without neural weights or model-based generation.
+
+LLMs typically learn language first and compress world knowledge into opaque
+weights. Microworld takes the opposite route: explicit world memory first, then
+controlled language as an interface to that memory.
+
+**What is implemented:**
+
+* question analyzer — detects QA intent from surface form
+* answer planner — selects a response strategy from accepted memory
+* answer renderer — composes semantic answer forms (common clues, contexts,
+  signs, location-aware phrases, action/agency-aware phrases, contrast
+  explanations)
+* answer validator — checks correctness and flags quality issues
+* helpful audit rendering — produces a safe, informative abstention when the
+  question is ambiguous without sufficient context
+* accepted knowledge memory provider — 221 items (163 facts, 58 patterns,
+  6 ambiguous terms, 12 senses)
+
+**Supported QA intents:** `define_sense`, `classify_context`, `explain_cue`,
+`distinguish_senses`, `unknown_or_ambiguous`
+
+**Main QA benchmark (48 controlled questions):**
+
+```text
+qa_total:          48
+answer_count:      42
+audit_count:        6
+correct_count:     48
+wrong_count:        0
+accuracy:          1.0
+answer_precision:  1.0
+quality_flagged:    0
+```
+
+The renderer no longer emits flat `associated with` lists. Example outputs:
+
+```text
+A baseball bat is a club used to hit a ball in sports such as baseball.
+Common clues are pitchers, balls, batters and plates.
+It is used to swing, hit or strike the ball, and it is often found at home plate.
+
+Spring is the season that follows winter.
+Common signs are thaw, flowers, warmer mornings and rain.
+In spring, flowers bloom and snow thaws.
+
+Rock music is a music genre linked to bands, concerts and crowds.
+A rock is a solid mineral object found near cliffs, boulders and trails.
+```
+
+Example helpful audit (safe abstention on a genuinely ambiguous question):
+
+```text
+"Seal" is ambiguous: it can mean a marine animal or a wax/document seal.
+I need context to choose the right meaning.
+```
+
+**Generalization benchmark (24 novel phrasings):**
+
+```text
+qa_total:          24
+correct_count:     12
+wrong_count:       12
+accuracy:          0.5
+answer_count:       8
+audit_count:       16
+answer_precision:  0.875
+quality_flagged:    0
+```
+
+The bottleneck is the `QuestionAnalyzer`, not the renderer. The system
+is safe but conservative on unseen phrasings: it audits rather than forcing
+a wrong answer. Next step is a generalized question-analyzer curriculum.
+
+**Safety constraints:**
+
+* no neural weights
+* no backpropagation
+* no fine-tuning
+* no GPT renderer
+* no generic trusted fallback
+* audits are safe behavior, not failures
+
+See `worldpgt/` for the full QA package and
+`worldpgt/RESEARCH_SNAPSHOT.md` for the research history.
+
 ## What Was Learned
 
 The main research conclusion is deliberately modest:
@@ -630,6 +722,8 @@ Start with:
 
 ## Next Steps
 
+**Graph / trust / name generation:**
+
 * normalization candidate export
 * typo/canonicalization layer
 * target normalization with semantic re-evaluation
@@ -644,6 +738,21 @@ Start with:
 * track quality-per-RAM, quality-per-training-second, and quality-per-parameter
 * extend audit-mined trust to relation filtering, entity normalization,
   reasoning suppression, and data cleaning
+
+**worldpgt QA layer:**
+
+1. GeneralizedQuestionAnalyzer v1 — support more phrasings for
+   `classify_context`, `explain_cue`, and `distinguish_senses`; preserve safety
+   on conflicting prompts
+2. Failure-driven analyzer curriculum — log failed prompt, failure reason,
+   analyzer pattern proposal; accept only if wrong_count does not increase on
+   main QA benchmark
+3. Interactive QA playground — one-off CLI:
+   `python3 -m worldpgt.experiments.ask_answer_planner_v1 --question "..."`
+   with optional JSON and trace output
+4. Larger generalization benchmark — expand from 24 prompts to 100–200 prompts
+5. Scale accepted memory — more terms, more senses, disk/index-backed provider
+   later
 
 ## Status
 

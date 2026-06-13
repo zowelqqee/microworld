@@ -461,11 +461,16 @@ _AUDIT_MESSAGES: dict[str, str] = {
 
 
 def _join_list(items: list[str], connector: str = "and") -> str:
-    if not items:
+    normalized = [
+        re.sub(r",(?=[A-Za-z])", ", ", item.strip())
+        for item in items
+        if item.strip()
+    ]
+    if not normalized:
         return ""
-    if len(items) == 1:
-        return items[0]
-    return ", ".join(items[:-1]) + f" {connector} " + items[-1]
+    if len(normalized) == 1:
+        return normalized[0]
+    return ", ".join(normalized[:-1]) + f" {connector} " + normalized[-1]
 
 
 def render(plan: AnswerPlan) -> str:

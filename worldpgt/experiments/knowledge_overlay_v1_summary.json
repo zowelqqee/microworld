@@ -1,0 +1,43 @@
+{
+  "baseline": {
+    "audit_count": 62,
+    "continue_count": 58,
+    "semantic_quality_flagged": 0,
+    "wrong_continue_count": 0
+  },
+  "delta": {
+    "audit_count": 0,
+    "changed_output_rows": [
+      "v1-044",
+      "v1-110"
+    ],
+    "continue_count": 0,
+    "newly_audited_rows": [
+      "v1-110"
+    ],
+    "newly_continued_rows": [
+      "v1-044"
+    ],
+    "risk_regressions": []
+  },
+  "overlay": {
+    "audit_count": 62,
+    "continue_count": 58,
+    "semantic_quality_flagged": 0,
+    "wrong_continue_count": 0
+  },
+  "overlay_stats": {
+    "accepted_auto_items_loaded": 163,
+    "phrase_candidate_hints_loaded": 3,
+    "positive_cues_loaded": 104,
+    "semantic_frame_hints_loaded": 7
+  },
+  "safety": {
+    "no_safe_repaired_candidate_rows_still_audited": true,
+    "sense_memory_modified": false,
+    "thresholds_changed": false,
+    "true_unsafe_rows_still_audited": true,
+    "trusted_baseline_modified": false,
+    "validators_weakened": false
+  }
+}

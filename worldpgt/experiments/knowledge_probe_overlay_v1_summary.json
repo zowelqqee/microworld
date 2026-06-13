@@ -1,0 +1,75 @@
+{
+  "baseline": {
+    "audit_count": 25,
+    "continue_count": 35,
+    "semantic_quality_flagged": 1,
+    "wrong_continue_count": 2
+  },
+  "delta": {
+    "changed_output_rows": [
+      "kp-v1-005",
+      "kp-v1-008",
+      "kp-v1-019",
+      "kp-v1-023",
+      "kp-v1-025",
+      "kp-v1-026",
+      "kp-v1-027",
+      "kp-v1-032",
+      "kp-v1-041",
+      "kp-v1-048",
+      "kp-v1-052",
+      "kp-v1-057"
+    ],
+    "continue_count": 8,
+    "newly_audited_rows": [
+      "kp-v1-005",
+      "kp-v1-025"
+    ],
+    "newly_continued_rows": [
+      "kp-v1-008",
+      "kp-v1-019",
+      "kp-v1-023",
+      "kp-v1-026",
+      "kp-v1-027",
+      "kp-v1-032",
+      "kp-v1-041",
+      "kp-v1-048",
+      "kp-v1-052",
+      "kp-v1-057"
+    ],
+    "risk_regressions": []
+  },
+  "knowledge_pattern_overlay": {
+    "audit_count": 17,
+    "continue_count": 43,
+    "semantic_quality_flagged": 0,
+    "wrong_continue_count": 0
+  },
+  "knowledge_utilization": {
+    "accepted_auto_cues_observed": 41,
+    "accepted_auto_cues_unused": 18,
+    "patterns_unused": 0,
+    "patterns_used": 58
+  },
+  "pattern_stats": {
+    "accepted_auto": 58,
+    "by_pattern_type": {
+      "action": 23,
+      "causal": 4,
+      "definition": 12,
+      "location": 6,
+      "property": 11,
+      "relation": 6
+    },
+    "needs_review": 2,
+    "pattern_candidates": 62,
+    "rejected_auto": 2
+  },
+  "probe_total": 60,
+  "safety": {
+    "sense_memory_modified": false,
+    "thresholds_changed": false,
+    "trusted_baseline_modified": false,
+    "validators_weakened": false
+  }
+}

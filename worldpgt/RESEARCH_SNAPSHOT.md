@@ -1,12 +1,147 @@
-# Research Snapshot — Microworld Controlled Continuation v1.2
-
-Date: 2026-06-13  
-Benchmark: Controlled Continuation v1 (120 prompts)  
-Policy version: v1.2 (anti-cue guarded)
+# Research Snapshot — Microworld / worldpgt
 
 ---
 
-## Changelog — Surface Repair Layer (2026-06-13)
+## QA Layer — Controlled Question Answering over Accepted Memory (2026-06-14)
+
+worldpgt/qa implements a controlled QA assistant over explicit accepted memory.
+It is an experimental explicit-memory, graph/trust/policy-based reasoning and
+QA system. It explores whether useful behavioral learning, disambiguation,
+question answering, safe abstention, and controlled text generation can be
+built without neural weights, backpropagation, fine-tuning, or model-based
+generation.
+
+### QA Layer Components
+
+| Component | Role |
+|---|---|
+| `QuestionAnalyzer` | detects QA intent from surface form |
+| `AnswerPlanner` | selects response strategy from accepted memory |
+| `AnswerRenderer` | composes semantic answer forms |
+| `AnswerValidator` | checks correctness; flags quality issues |
+| `AuditRenderer` | helpful abstention text for ambiguous questions |
+| `SemanticLanguageRealizer` | clause-level language realization |
+| `ContrastRealizer` | contrast explanations for distinguish_senses |
+| `AcceptedMemoryProvider` | loads accepted facts, patterns, senses (221 items) |
+
+Supported QA intents: `define_sense`, `classify_context`, `explain_cue`,
+`distinguish_senses`, `unknown_or_ambiguous`
+
+### Accepted Memory Provider
+
+```text
+total items:     221
+fact items:      163
+pattern items:    58
+ambiguous terms:   6  (bank, bat, crane, rock, seal, spring)
+senses:           12
+```
+
+### Main QA Benchmark — 48 Controlled Questions
+
+```text
+qa_total:          48
+answer_count:      42
+audit_count:        6
+correct_count:     48
+wrong_count:        0
+accuracy:          1.0
+answer_precision:  1.0
+quality_flagged:    0
+"associated with" in outputs: 0
+```
+
+The renderer no longer emits flat `associated with` lists. All outputs use
+semantic answer forms: common clues, common contexts, common signs,
+location-aware phrases, action/agency-aware phrases, compact contrast
+explanations.
+
+### Example QA Outputs
+
+```text
+A baseball bat is a club used to hit a ball in sports such as baseball.
+Common clues are pitchers, balls, batters and plates.
+It is used to swing, hit or strike the ball, and it is often found at home plate.
+
+Spring is the season that follows winter.
+Common signs are thaw, flowers, warmer mornings and rain.
+In spring, flowers bloom and snow thaws.
+
+Rock music is a music genre linked to bands, concerts and crowds.
+A rock is a solid mineral object found near cliffs, boulders and trails.
+```
+
+Helpful audit (safe abstention):
+
+```text
+"Seal" is ambiguous: it can mean a marine animal or a wax/document seal.
+I need context to choose the right meaning.
+```
+
+### Test Status
+
+```text
+python3 -m pytest worldpgt/tests/test_answer_planner_v1.py -q  →  95 passed
+python3 -m pytest worldpgt/tests -q                             → 702 passed
+python3 -m pytest -q                                            → 1745 passed
+```
+
+### Generalization Benchmark — 24 Novel Phrasings
+
+Source: `worldpgt/experiments/qa_generalization_test_v1.csv`
+
+```text
+qa_total:          24
+correct_count:     12
+wrong_count:       12
+accuracy:          0.5
+answer_count:       8
+audit_count:       16
+answer_precision:  0.875
+quality_flagged:    0
+```
+
+Interpretation: this is not a renderer failure. The bottleneck is the
+`QuestionAnalyzer`. The system is safe but conservative on new phrasings —
+it audits rather than forcing a wrong answer. Audits are counted as safe
+behavior, not failures.
+
+Next step: GeneralizedQuestionAnalyzer v1 with failure-driven curriculum.
+
+### Safety Constraints
+
+* no neural weights
+* no backpropagation
+* no fine-tuning
+* no GPT renderer
+* no generic trusted fallback
+* no threshold weakening
+* no forced answers on ambiguity
+* `sense_memory.py` not modified
+* `nanogpt/` not touched
+
+### Next Steps
+
+1. **GeneralizedQuestionAnalyzer v1** — support more phrasings for
+   `classify_context`, `explain_cue`, and `distinguish_senses`; preserve
+   safety on conflicting prompts
+2. **Failure-driven analyzer curriculum** — failed prompt + failure reason +
+   analyzer pattern proposal; accept only if wrong_count does not increase on
+   main QA benchmark
+3. **Interactive QA playground** — one-off CLI:
+   `python3 -m worldpgt.experiments.ask_answer_planner_v1 --question "..."`
+   with optional JSON and trace output
+4. **Larger generalization benchmark** — expand from 24 prompts to 100–200
+   prompts
+5. **Scale accepted memory** — more terms, more senses, disk/index-backed
+   provider later
+
+---
+
+## Controlled Continuation v1.2 — Surface Repair Layer (2026-06-13)
+
+Benchmark: Controlled Continuation v1 (120 prompts)
+Policy version: v1.2 (anti-cue guarded)
 
 A deterministic, rule-based **surface repair layer** was added after the semantic
 renderer and before final emission. It does not generate text and does not change

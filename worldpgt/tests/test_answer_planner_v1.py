@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -821,6 +822,7 @@ def test_realizer_validator_flags_spacing_artifacts():
         "A spring coil stores and releasesmechanical energy.",
         "A bat is a mammal.Itis nocturnal.",
         "A bank is a place,associated with money.",
+        "A wax seal is a device, with clues like wax,envelopes and documents.",
     ):
         result = validate(
             answer=bad,
@@ -995,6 +997,22 @@ def test_contrast_no_associated_with_in_any_distinguish_row():
         )
 
 
+def test_contrast_outputs_have_no_comma_glued_phrases():
+    pattern = re.compile(r",[A-Za-z]")
+    for row in _output_rows():
+        assert pattern.search(row["answer"]) is None, (
+            f"{row['row_id']} has comma-glued output: {row['answer']!r}"
+        )
+
+
+def test_contrast_outputs_have_no_period_glued_phrases():
+    pattern = re.compile(r"\.[A-Z]")
+    for row in _output_rows():
+        assert pattern.search(row["answer"]) is None, (
+            f"{row['row_id']} has period-glued output: {row['answer']!r}"
+        )
+
+
 def test_contrast_bat_row():
     answer = _row_answer("qa-v1-038")
     lower = answer.lower()
@@ -1006,6 +1024,12 @@ def test_contrast_bat_row():
     assert ("pitchers" in lower) or ("batter" in lower)
     assert "associated with" not in lower
     assert "baseball,associated" not in lower
+
+
+def test_contrast_seal_row_has_clean_comma_spacing():
+    answer = _row_answer("qa-v1-039")
+    assert "wax, envelopes" in answer
+    assert "wax,envelopes" not in answer
 
 
 def test_contrast_spring_row():

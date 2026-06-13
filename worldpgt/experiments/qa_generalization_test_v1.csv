@@ -1,0 +1,25 @@
+row_id,question,expected_decision,expected_intent,expected_term,expected_sense,expected_answer_contains,risk_level
+gen-v1-001,"Can you explain what a river bank is?",answer,define_sense,bank,river_edge,"river;stream;edge",low
+gen-v1-002,"Can you explain what a financial bank is?",answer,define_sense,bank,financial_institution,"money;accounts;deposits",low
+gen-v1-003,"Is a bat with wings an animal or sports equipment?",answer,classify_context,bat,animal,"bat;flying;mammal",low
+gen-v1-004,"Is the bat near the pitcher an animal or sports equipment?",answer,classify_context,bat,sports_equipment,"baseball;bat;ball",low
+gen-v1-005,"The seal was swimming near the coast. What kind of seal is it?",answer,classify_context,seal,animal,"seal;marine;mammal",low
+gen-v1-006,"The seal was pressed into wax on the envelope. What kind of seal is it?",answer,classify_context,seal,closure_stamp,"wax;seal;document",low
+gen-v1-007,"The crane had a hook and lifted a load. What does crane mean?",answer,classify_context,crane,machine,"construction;crane;load",low
+gen-v1-008,"The crane stood in the wetland near reeds. What does crane mean?",answer,classify_context,crane,bird,"crane;bird;reeds",low
+gen-v1-009,"The band played rock on stage. What does rock mean?",answer,classify_context,rock,music,"Rock music;bands;stage",low
+gen-v1-010,"The rock rolled down near the cliff. What does rock mean?",answer,classify_context,rock,stone,"rock;mineral;cliffs",low
+gen-v1-011,"The spring came after winter with flowers and thaw. What does spring mean?",answer,classify_context,spring,season,"Spring;winter;flowers",low
+gen-v1-012,"The spring inside the device compressed and snapped back. What does spring mean?",answer,classify_context,spring,coil,"spring coil;mechanical;compress",low
+gen-v1-013,"Why does an account point to bank as a financial institution?",answer,explain_cue,bank,financial_institution,"account;bank;financial",low
+gen-v1-014,"Why does current point to bank as a river edge?",answer,explain_cue,bank,river_edge,"current;bank;river",low
+gen-v1-015,"Why do wings point to bat as an animal?",answer,explain_cue,bat,animal,"wings;bat;animal",low
+gen-v1-016,"Why does batter point to bat as sports equipment?",answer,explain_cue,bat,sports_equipment,"batter;bat;sports",low
+gen-v1-017,"Compare a crane bird with a construction crane.",answer,distinguish_senses,crane,bird,"crane bird;construction crane;loads",low
+gen-v1-018,"Compare rock music with a rock stone.",answer,distinguish_senses,rock,music,"Rock music;rock;mineral",low
+gen-v1-019,"Compare spring as a season and spring as a coil.",answer,distinguish_senses,spring,season,"Spring;spring coil;mechanical",low
+gen-v1-020,"What does seal mean?",audit,unknown_or_ambiguous,seal,,"ambiguous;marine animal;wax/document seal",medium
+gen-v1-021,"What does crane mean?",audit,unknown_or_ambiguous,crane,,"ambiguous;bird;construction machine",medium
+gen-v1-022,"What does spring mean?",audit,unknown_or_ambiguous,spring,,"ambiguous;season after winter;mechanical coil",medium
+gen-v1-023,"The bat flew near the pitcher. What does bat mean?",audit,unknown_or_ambiguous,bat,,"ambiguous",high
+gen-v1-024,"The crane wing lifted the load. What does crane mean?",audit,unknown_or_ambiguous,crane,,"ambiguous",high
