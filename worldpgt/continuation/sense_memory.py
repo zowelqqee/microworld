@@ -193,6 +193,17 @@ class ExplicitSenseMemory:
             strong_cues = {"baseball", "swing", "swung", "hit", "cracked", "game"}
             if "player" in positive_cues and not any(cue in strong_cues for cue in positive_cues + tokens):
                 return ["player_alone_insufficient"]
+        if term == "bat" and sense_id == "animal":
+            if any(cue in positive_cues for cue in {"cave", "wings"}) and (
+                "logo" in tokens or "painted" in tokens
+            ):
+                return ["depicted_animal_cue_insufficient"]
+        if term == "crane" and sense_id == "machine":
+            if "steel" in positive_cues and "sculpture" in tokens:
+                return ["depicted_machine_cue_insufficient"]
+        if term == "spring" and sense_id == "coil":
+            if "metal" in positive_cues and "sign" in tokens:
+                return ["depicted_coil_cue_insufficient"]
         if term == "bank" and sense_id == "financial_institution":
             weak_cues = {"cash", "card"}
             strong_cues = {
@@ -214,7 +225,22 @@ class ExplicitSenseMemory:
         self.add_sense(
             "bank",
             "financial_institution",
-            ["money", "loan", "account", "teller", "deposit", "cash", "card", "mortgage", "credit", "customer"],
+            [
+                "money",
+                "loan",
+                "account",
+                "teller",
+                "deposit",
+                "cash",
+                "card",
+                "mortgage",
+                "credit",
+                "customer",
+                "client",
+                "counter",
+                "manager",
+                "lobby",
+            ],
             ["open an account", "deposit money", "ask for a loan"],
             {
                 "infinitive_after_to": ["open an account", "speak with the teller"],
@@ -229,7 +255,19 @@ class ExplicitSenseMemory:
         self.add_sense(
             "bank",
             "river_edge",
-            ["river", "fisherman", "water", "shore", "mud", "stream", "current", "boat"],
+            [
+                "river",
+                "fisherman",
+                "water",
+                "shore",
+                "mud",
+                "stream",
+                "current",
+                "boat",
+                "bridge",
+                "reeds",
+                "path",
+            ],
             ["cast his line", "watched the current", "sat near the water"],
             {
                 "infinitive_after_to": ["watch the current"],
@@ -244,7 +282,19 @@ class ExplicitSenseMemory:
         self.add_sense(
             "bat",
             "animal",
-            ["cave", "flew", "flying", "wings", "night", "animal", "hanging"],
+            [
+                "cave",
+                "flew",
+                "flying",
+                "wings",
+                "night",
+                "animal",
+                "hanging",
+                "attic",
+                "dusk",
+                "eaves",
+                "light",
+            ],
             ["flew into the dark cave", "hung from the ceiling", "searched for insects"],
             {
                 "infinitive_after_to": ["search for insects"],
@@ -259,7 +309,19 @@ class ExplicitSenseMemory:
         self.add_sense(
             "bat",
             "sports_equipment",
-            ["baseball", "player", "hit", "cracked", "swing", "game"],
+            [
+                "baseball",
+                "player",
+                "hit",
+                "cracked",
+                "swing",
+                "game",
+                "batter",
+                "plate",
+                "dugout",
+                "swung",
+                "lighter",
+            ],
             ["hit the ball", "cracked after the swing", "was dropped near home plate"],
             {
                 "infinitive_after_to": ["hit the ball"],
@@ -274,7 +336,21 @@ class ExplicitSenseMemory:
         self.add_sense(
             "seal",
             "animal",
-            ["ocean", "fish", "zoo", "flippers", "animal", "water"],
+            [
+                "ocean",
+                "fish",
+                "zoo",
+                "flippers",
+                "animal",
+                "water",
+                "trainer",
+                "treat",
+                "slid",
+                "pier",
+                "tourists",
+                "splash",
+                "swimming",
+            ],
             ["swam through the cold water", "balanced on the rock", "looked for fish"],
             {
                 "infinitive_after_to": ["catch another fish"],
@@ -289,7 +365,19 @@ class ExplicitSenseMemory:
         self.add_sense(
             "seal",
             "closure_stamp",
-            ["envelope", "document", "stamp", "wax", "official", "package"],
+            [
+                "envelope",
+                "document",
+                "stamp",
+                "wax",
+                "official",
+                "package",
+                "clerk",
+                "closing",
+                "parcel",
+                "flap",
+                "label",
+            ],
             ["closed the envelope", "marked the document", "protected the package"],
             {
                 "infinitive_after_to": ["close the envelope"],
@@ -304,7 +392,18 @@ class ExplicitSenseMemory:
         self.add_sense(
             "crane",
             "bird",
-            ["bird", "wings", "marsh", "flew", "nest", "lake"],
+            [
+                "bird",
+                "wings",
+                "marsh",
+                "flew",
+                "nest",
+                "lake",
+                "dawn",
+                "reeds",
+                "neck",
+                "photographer",
+            ],
             ["flew over the marsh", "stood near the lake", "spread its wings"],
             {
                 "infinitive_after_to": ["step through the reeds"],
@@ -319,7 +418,19 @@ class ExplicitSenseMemory:
         self.add_sense(
             "crane",
             "machine",
-            ["construction", "building", "lifted", "steel", "operator", "site"],
+            [
+                "construction",
+                "building",
+                "lifted",
+                "steel",
+                "operator",
+                "site",
+                "foreman",
+                "crew",
+                "hook",
+                "load",
+                "lift",
+            ],
             ["lifted the steel beam", "moved above the construction site", "carried the load"],
             {
                 "infinitive_after_to": ["lift the load"],
@@ -335,7 +446,17 @@ class ExplicitSenseMemory:
         self.add_sense(
             "spring",
             "season",
-            ["flowers", "april", "warm", "weather", "garden", "rain"],
+            [
+                "flowers",
+                "april",
+                "warm",
+                "weather",
+                "garden",
+                "rain",
+                "thaw",
+                "mornings",
+                "warmed",
+            ],
             ["brought warmer days", "filled the garden with flowers", "came after winter"],
             {
                 "infinitive_after_to": ["bring warmer days"],
@@ -350,7 +471,16 @@ class ExplicitSenseMemory:
         self.add_sense(
             "spring",
             "coil",
-            ["metal", "compressed", "mechanism", "tension", "bounce", "device"],
+            [
+                "metal",
+                "compressed",
+                "mechanism",
+                "tension",
+                "bounce",
+                "device",
+                "latch",
+                "handle",
+            ],
             ["compressed under pressure", "snapped back into place", "stored mechanical energy"],
             {
                 "infinitive_after_to": ["store mechanical energy"],
@@ -366,7 +496,7 @@ class ExplicitSenseMemory:
         self.add_sense(
             "rock",
             "stone",
-            ["mountain", "stone", "river", "heavy", "ground", "cliff"],
+            ["mountain", "stone", "river", "heavy", "ground", "cliff", "trail", "boulder"],
             ["rolled down the hill", "lay near the river", "broke into smaller stones"],
             {
                 "infinitive_after_to": ["roll down the hill"],
@@ -381,7 +511,7 @@ class ExplicitSenseMemory:
         self.add_sense(
             "rock",
             "music",
-            ["band", "guitar", "concert", "song", "drummer", "stage"],
+            ["band", "guitar", "concert", "song", "drummer", "stage", "crowd", "louder", "venue"],
             ["filled the stadium", "played through the speakers", "started with a loud guitar riff"],
             {
                 "infinitive_after_to": ["fill the room"],
@@ -396,12 +526,24 @@ class ExplicitSenseMemory:
         self.add_anti_cues(
             "bank",
             "financial_institution",
-            ["not a place for money", "no money", "without money", "not for cash"],
+            [
+                "not a place for money",
+                "no money",
+                "without money",
+                "not for cash",
+                "not beside a river",
+            ],
         )
         self.add_anti_cues(
             "bank",
             "river_edge",
-            ["not near the river", "no water", "without water"],
+            [
+                "not near the river",
+                "no water",
+                "without water",
+                "not a place for money",
+                "not about credit",
+            ],
         )
         self.add_anti_cues(
             "bat",
@@ -409,12 +551,47 @@ class ExplicitSenseMemory:
             ["not flying", "not an animal", "no wings"],
         )
         self.add_anti_cues(
+            "bat",
+            "sports_equipment",
+            ["not an animal", "not flying"],
+        )
+        self.add_anti_cues(
+            "seal",
+            "animal",
+            ["not a stamp"],
+        )
+        self.add_anti_cues(
+            "seal",
+            "closure_stamp",
+            ["not an animal"],
+        )
+        self.add_anti_cues(
             "crane",
             "bird",
-            ["not a bird", "no wings"],
+            ["not a bird", "no wings", "not at a construction site"],
         )
         self.add_anti_cues(
             "crane",
             "machine",
             ["not construction", "no operator"],
+        )
+        self.add_anti_cues(
+            "spring",
+            "season",
+            ["not a metal device"],
+        )
+        self.add_anti_cues(
+            "spring",
+            "coil",
+            ["not warm weather"],
+        )
+        self.add_anti_cues(
+            "rock",
+            "stone",
+            ["not a song"],
+        )
+        self.add_anti_cues(
+            "rock",
+            "music",
+            ["not a stone"],
         )
