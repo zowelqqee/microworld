@@ -637,3 +637,95 @@ def test_validator_catches_article_before_mass_noun():
     )
     assert result.quality_flagged is True
     assert result.passed is False
+
+
+# ---------------------------------------------------------------------------
+# 38–47. HelpfulAuditRenderer v1 — ambiguous terms get helpful audit text
+# ---------------------------------------------------------------------------
+
+def test_helpful_audit_still_returns_audit_decision():
+    for term in _ALL_TERMS:
+        a = analyze(f"What does {term} mean?")
+        plan = _planner().plan(a)
+        assert plan.decision == "audit", f"Expected audit for {term!r}, got {plan.decision!r}"
+
+
+def test_helpful_audit_bank_includes_sense_alternatives():
+    a = analyze("What does bank mean?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    lower = answer.lower()
+    assert "financial institution" in lower, f"Missing 'financial institution': {answer!r}"
+    assert "river" in lower, f"Missing 'river': {answer!r}"
+
+
+def test_helpful_audit_seal_includes_both_senses():
+    a = analyze("What does seal mean?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    lower = answer.lower()
+    assert "marine animal" in lower, f"Missing 'marine animal': {answer!r}"
+    assert "wax" in lower or "document seal" in lower, f"Missing wax/seal sense: {answer!r}"
+
+
+def test_helpful_audit_spring_includes_both_senses():
+    a = analyze("What does spring mean?")
+    plan = _planner().plan(a)
+    answer = render(plan)
+    lower = answer.lower()
+    assert "season" in lower or "winter" in lower, f"Missing season sense: {answer!r}"
+    assert "mechanical coil" in lower or "coil" in lower, f"Missing coil sense: {answer!r}"
+
+
+def test_helpful_audit_all_six_terms_mention_ambiguity():
+    for term in _ALL_TERMS:
+        a = analyze(f"What does {term} mean?")
+        plan = _planner().plan(a)
+        answer = render(plan)
+        lower = answer.lower()
+        assert "ambiguous" in lower or "can mean" in lower, (
+            f"Expected ambiguity signal for {term!r}: {answer!r}"
+        )
+        assert " or " in lower, f"Expected 'or' connector for {term!r}: {answer!r}"
+
+
+def test_helpful_audit_includes_context_prompt():
+    for term in _ALL_TERMS:
+        a = analyze(f"What does {term} mean?")
+        plan = _planner().plan(a)
+        answer = render(plan)
+        assert "context" in answer.lower(), (
+            f"Expected 'context' in helpful audit for {term!r}: {answer!r}"
+        )
+
+
+def test_helpful_audit_passes_validator():
+    for term in _ALL_TERMS:
+        a = analyze(f"What does {term} mean?")
+        plan = _planner().plan(a)
+        answer = render(plan)
+        result = validate(
+            answer=answer,
+            decision="audit",
+            term=term,
+            sense_id=None,
+            intent="unknown_or_ambiguous",
+        )
+        assert result.passed is True, (
+            f"Validator rejected helpful audit for {term!r}: {result.reasons} — {answer!r}"
+        )
+
+
+def test_helpful_audit_rows_not_counted_as_wrong():
+    assert _summary()["wrong_count"] == 0
+    assert _summary()["quality_flagged"] == 0
+
+
+def test_helpful_audit_benchmark_still_perfect():
+    s = _summary()
+    assert s["qa_total"] == 48
+    assert s["correct_count"] == 48
+    assert s["wrong_count"] == 0
+    assert s["quality_flagged"] == 0
+    assert s["accuracy"] == 1.0
+    assert s["answer_precision"] == 1.0

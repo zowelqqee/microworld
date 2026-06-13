@@ -67,6 +67,18 @@ _LOCATION_PREP: dict[str, str] = {
     "lake": "near lakes",
 }
 
+# Human-readable sense alternatives for each ambiguous term.
+# Used only when rendering a helpful underconstrained_question audit.
+# Deterministic: order matches the canonical sense ordering of _TERM_SENSES.
+_AMBIGUOUS_SENSE_LABELS: dict[str, list[str]] = {
+    "bank": ["a financial institution", "the edge of a river"],
+    "bat": ["a flying mammal", "a baseball bat"],
+    "seal": ["a marine animal", "a wax/document seal"],
+    "crane": ["a bird", "a construction machine"],
+    "rock": ["rock music", "a stone"],
+    "spring": ["the season after winter", "a mechanical coil"],
+}
+
 # Strips a trailing ", associated with ..." clause from a base description so
 # the renderer can append its own cue sentence without duplication.
 _TRAILING_ASSOC_RE = re.compile(r",\s*associated with\s+[^.]*$")
@@ -142,6 +154,20 @@ def render(plan: AnswerPlan) -> str:
     """Return a short answer string from the plan."""
     if plan.decision == "audit":
         reason = plan.audit_reason or "unknown"
+        # For underconstrained questions on known ambiguous terms, render a
+        # helpful explanation of the competing senses instead of the generic
+        # "cannot answer safely" message.  Decision remains audit.
+        if reason == "underconstrained_question":
+            term = plan.render_args.get("term")
+            if term:
+                labels = _AMBIGUOUS_SENSE_LABELS.get(term)
+                if labels and len(labels) >= 2:
+                    term_cap = term.capitalize()
+                    return (
+                        f'"{term_cap}" is ambiguous: it can mean {labels[0]}'
+                        f" or {labels[1]}."
+                        f" I need context to choose the right meaning."
+                    )
         return _AUDIT_MESSAGES.get(
             reason,
             f"I cannot answer safely because: {reason}.",
