@@ -2,3 +2,63 @@ data/conceptnet-assertions-5.7.0.csv.gz
 data/conceptnet-assertions-5.7.0.csv.gz
 nanogpt/
 nanoGPT/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / packaging
+*.whl
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# nanoGPT / local model weights (not committed)
+nanogpt/
+nanoGPT/
+
+# Large data files
+data/*.csv.gz
+data/*.gz
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test/cache artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
