@@ -19,6 +19,14 @@ worldpgt/
     prompt_parser.py   term detection and candidate sense extraction
     continuation_policy.py  thresholded score/margin/anti-cue policy
     continuation_engine.py  pipeline orchestrator
+    semantic_frame.py  coarse actor/intent/connector frame
+    semantic_renderer.py  weightless renderer v2 (phrase compose + rank)
+    phrase_library.py  curated per-sense continuation phrases
+    surface_validator.py  banned-pattern surface check
+    surface_repair.py  deterministic post-render grammar/role/coref repair
+    subject_action_validator.py  role-aware subject/action check
+    connector_rewriter.py  clause-boundary comma repair
+    coreference_repair.py  repeated-object / prey coreference repair
     audit.py           audit row types
     metrics.py         coverage/precision metric helpers
     types.py           shared dataclasses
@@ -48,7 +56,7 @@ worldpgt/
     rss_benchmark_summary.json
     state_size_benchmark_summary.json
     ...                                       version comparison JSONs
-  tests/                                      1175 unit/integration tests
+  tests/                                      unit/integration tests (incl. surface-repair gate)
 ```
 
 ---
@@ -79,12 +87,71 @@ prompt
                           audit     (score too low, conflict, negated evidence,
                                      anti-cue fired, guard failed)
                           suppress  (banned surface pattern in candidate)
-  → realization       template lookup per sense_id
+  → realization       template lookup per sense_id (semantic renderer v2)
+  → surface repair     deterministic grammar/role/coreference fixes, then
+                       re-validation; unsafe repairs route to audit
   → surface-risk gate (suppression check on emitted text)
   → ContinuationResult with decision, selected_sense, confidence, reasons, memory_hits
 ```
 
 All scoring is deterministic. No neural weights, no sampling. Every decision has an explicit audit trail.
+
+### Surface Repair Layer
+
+The surface repair layer runs **after** the semantic renderer selects a single
+candidate and **before** final emission. It does not generate text, score senses,
+or change any decision threshold — it only applies small, fixed string transforms
+to remove residual grammar / role / coreference bugs the template library could
+still produce, then re-validates the result.
+
+**Why it exists.** The renderer composes continuations from a curated phrase
+library. A few compositions were grammatically appended but awkward: a missing
+comma at a clause boundary, a body part as the subject of a whole-animal action,
+or a repeated object noun. These were visible surface bugs, not reasoning errors.
+
+**What it fixes** (all deterministic, rule-based):
+
+- **Connector grammar** (`connector_rewriter.py`) — inserts a comma at a
+  subordinate-clause boundary before a new main clause:
+  `before the swing he steadied himself` → `before the swing, he steadied himself`.
+- **Subject/action role** (`subject_action_validator.py`) — rejects a body part
+  performing a whole-animal action and substitutes a body-part-appropriate
+  clause: `its wings searched for insects` → `its wings spread wide`. Allowed
+  body-part actions (`wings spread`) pass untouched.
+- **Coreference / repetition** (`coreference_repair.py`) — replaces a repeated
+  object noun with a pronoun or `its prey`: `close the envelope` → `close it`;
+  `catch another fish` → `catch its prey`.
+- **Attachment drift** (`surface_repair.py`) — detects a positional clause that
+  would attach across an intervening actor (ambiguous subject) and routes the row
+  to **audit** rather than emit it: `... until the climber saw it on the cliff and
+  lay near the river` → `audit_reason=no_safe_repaired_candidate`.
+
+**Why it does not change policy or reasoning.** Sense scoring, negation/anti-cue
+handling, guard rules, and the continue/audit/suppress thresholds are untouched.
+Every repaired candidate is re-run through the existing surface validator, the
+role validator, drift checks, and a repeated-object check; if a repair cannot
+produce a clean candidate, the layer emits an **audit**, never a risky
+continuation. The bias is unchanged: prefer audit/abstain over emitting a risky
+continuation.
+
+**Measured benchmark impact (v1.2, 120 prompts).** After the deterministic
+surface repair layer, Microworld emits one fewer continuation on v1.2 but removes
+the remaining measured semantic-render-quality flags while preserving zero
+measured wrong continuations.
+
+| Metric                       | Before repair | After repair |
+|------------------------------|---------------|--------------|
+| continue_count               | 38            | 37           |
+| audit_count                  | 82            | 83           |
+| wrong_continue_count         | 0             | 0            |
+| precision_on_continued       | 1.000         | 1.000        |
+| semantic-quality flagged     | 1 / 38        | 0 / 37       |
+| coverage_rate                | 0.3167        | 0.3083       |
+
+Repaired rows: `v1-007` (connector comma), `v1-009` (prey coreference), `v1-011`
+(object repetition), `v1-043` (body-part subject/action), `v1-008` (object
+repetition). Audited row: `v1-051` (attachment drift). The numbers are locked by
+`worldpgt/tests/test_surface_repair_benchmark_gate.py`.
 
 ### GPT-2 Baseline
 
@@ -114,16 +181,16 @@ Dataset is frozen. Do not modify it.
 
 | System    | Continued / Generated | Wrong | Precision on Emitted |
 |-----------|-----------------------|-------|----------------------|
-| Microworld v1.2 | 38 / 120        | 0     | 1.000                |
+| Microworld v1.2 (with surface repair) | 37 / 120 | 0 | 1.000          |
 | GPT-2 base      | 76 good / 11 bad / 33 unclear | 7 wrong sense | 0.8736 (audited) |
 
-GPT-2 good/bad/unclear refers to post-hoc human-assigned labels. Microworld precision is on the 38 prompts where it emitted a continuation; the other 82 were routed to audit.
+GPT-2 good/bad/unclear refers to post-hoc human-assigned labels. Microworld precision is on the 37 prompts where it emitted a continuation; the other 83 were routed to audit. (Pre-repair the split was 38 / 82; the surface repair layer audits one attachment-drift row — see [Surface Repair Layer](#surface-repair-layer).)
 
 ### Risk / Coverage
 
 | System    | Continue | Audit | Coverage Rate | Answerable Recall |
 |-----------|----------|-------|---------------|-------------------|
-| Microworld v1.2 | 38  | 82    | 0.3167        | 0.3455            |
+| Microworld v1.2 (with surface repair) | 37 | 83 | 0.3083 | 0.3364       |
 | GPT-2 base      | 120 (all) | — (none) | 1.000  | —                 |
 
 GPT-2 has no native audit path. All 120 prompts received generated output.
@@ -231,7 +298,7 @@ python3 -m pytest -q
 - GPT-2 is an old base model (2019), not an instruction-tuned assistant.
 - GPT-2 audit labels were assigned by a human pass after generation, not by a native model gate.
 - Microworld realization is template-based; generated text quality is not representative of fluent generation.
-- Microworld coverage is low (38/120 = 31.7%). The system abstains on ambiguous or weak-cue prompts.
+- Microworld coverage is low (37/120 = 30.8%). The system abstains on ambiguous or weak-cue prompts, and the surface repair layer audits one further row it cannot repair without subject drift.
 - RSS figures are approximate and environment-dependent.
 - Sense memory covers 6 terms. Performance on out-of-vocabulary terms is undefined.
 

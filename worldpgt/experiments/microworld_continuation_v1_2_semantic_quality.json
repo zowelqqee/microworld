@@ -1,16 +1,6 @@
 {
-  "flagged_count": 1,
-  "flagged_rate": 0.0263,
-  "flagged_rows": [
-    {
-      "continuation": "She pressed the wax seal onto the envelope to close the envelope",
-      "flags": [
-        "repeated_from_prompt:envelope"
-      ],
-      "id": "v1-011",
-      "prompt": "She pressed the wax seal onto the envelope to",
-      "selected_sense": "closure_stamp"
-    }
-  ],
-  "total_continued": 38
+  "flagged_count": 0,
+  "flagged_rate": 0.0,
+  "flagged_rows": [],
+  "total_continued": 37
 }

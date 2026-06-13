@@ -6,6 +6,48 @@ Policy version: v1.2 (anti-cue guarded)
 
 ---
 
+## Changelog — Surface Repair Layer (2026-06-13)
+
+A deterministic, rule-based **surface repair layer** was added after the semantic
+renderer and before final emission. It does not generate text and does not change
+sense scoring, risk policy, or any decision threshold. It applies fixed string
+fixes for residual grammar / role / coreference bugs and re-validates; if a
+candidate cannot be repaired cleanly it routes to audit. No neural weights, no
+GPT renderer, no training are involved (the `nanogpt/` baseline is untouched).
+
+Honest summary: after the deterministic surface repair layer, Microworld emits
+one fewer continuation on v1.2 but removes the remaining measured
+semantic-render-quality flags while preserving zero measured wrong continuations.
+
+| Metric                       | Old (pre-repair) | New (with repair) |
+|------------------------------|------------------|-------------------|
+| continue_count               | 38               | 37                |
+| audit_count                  | 82               | 83                |
+| wrong_continue_count         | 0                | 0                 |
+| precision_on_continued       | 1.000            | 1.000             |
+| semantic-quality flagged     | 1 / 38           | 0 / 37            |
+| coverage_rate                | 0.3167           | 0.3083            |
+| answerable_recall            | 0.3455           | 0.3364            |
+
+Repaired rows:
+
+- `v1-007` — connector comma (`before the swing he steadied himself` → `before the swing, he steadied himself`)
+- `v1-009` — prey coreference (`catch another fish` → `catch its prey`)
+- `v1-011` — object repetition (`close the envelope` → `close it`)
+- `v1-043` — body-part subject/action (`its wings searched for insects` → `its wings spread wide`)
+- `v1-008` — object repetition (`dropped the bat` → `dropped it`)
+
+Audited row:
+
+- `v1-051` — attachment / subject drift, not repairable without inventing a
+  subject → `audit_reason=no_safe_repaired_candidate`
+
+The numbers above are locked by `worldpgt/tests/test_surface_repair_benchmark_gate.py`.
+The body of this snapshot below reflects the pre-repair v1.2 measurement and is
+retained for history; current emitted counts are 37 continue / 83 audit.
+
+---
+
 ## What Was Tested
 
 A 120-row controlled continuation benchmark where each prompt contains one lexically ambiguous term (bank, bat, seal, crane, spring, rock). Each row has an expected sense and a difficulty label (cue_rich, delayed_cue, weak_cue, conflicting_cue, negation, misleading_surface_cue, no_clear_answer, no_known_term).

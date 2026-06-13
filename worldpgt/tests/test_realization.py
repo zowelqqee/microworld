@@ -61,7 +61,8 @@ def test_wax_seal_example_avoids_to_closed():
     assert result.decision == "continue"
     assert result.selected_sense == "closure_stamp"
     assert "to closed" not in result.continuation
-    assert result.continuation.endswith("to close the envelope")
+    # Surface repair replaces the repeated object noun with a pronoun.
+    assert result.continuation.endswith("to close it")
 
 
 def test_animal_seal_example_avoids_to_swam():
@@ -71,7 +72,8 @@ def test_animal_seal_example_avoids_to_swam():
     assert result.decision == "continue"
     assert result.selected_sense == "animal"
     assert "to swam" not in result.continuation
-    assert result.continuation.endswith("to catch another fish")
+    # Surface repair replaces the repeated prey noun with "its prey".
+    assert result.continuation.endswith("to catch its prey")
 
 
 def test_realized_output_is_deterministic():
@@ -136,7 +138,8 @@ def test_repeated_action_avoidance_for_wings_hit_and_open_account():
 
     assert hit.selected_sense == "sports_equipment"
     assert "hit it during the game and hit the ball" not in hit.continuation
-    assert hit.continuation.endswith("and the player dropped the bat")
+    # Surface repair replaces the repeated object noun "bat" with a pronoun.
+    assert hit.continuation.endswith("and the player dropped it")
 
     assert account.selected_sense == "financial_institution"
     assert "opened an account and asked about credit to open an account" not in account.continuation

@@ -19,6 +19,7 @@ from worldpgt.continuation.semantic_renderer import (
     rank_frame_candidates,
 )
 from worldpgt.continuation.sense_memory import ExplicitSenseMemory
+from worldpgt.continuation.surface_repair import repair_surface_candidate
 from worldpgt.continuation.types import ContinuationResult
 
 
@@ -138,7 +139,19 @@ class ControlledContinuationEngine:
         if best is not None:
             phrase_part = best.text[len(prompt.rstrip()):].strip()
             memory_hits.append(f"selected_candidate={phrase_part}")
-            return best.text
+
+            # Surface repair runs after renderer v2 selects a candidate and
+            # before final emission. Unsafe repairs route to audit, never emit.
+            repair = repair_surface_candidate(prompt, best.text, frame)
+            memory_hits.extend(repair.reasons)
+            if repair.safe:
+                if repair.applied:
+                    repaired_part = repair.text[len(prompt.rstrip()):].strip()
+                    memory_hits.append(f"repaired_candidate={repaired_part}")
+                return repair.text
+
+            self._audit_no_safe_repaired_candidate(repair, verdict, memory_hits)
+            return ""
 
         # No safe candidate: audit, never emit. Preserve surface-risk reporting.
         self._audit_no_safe_candidate(candidates, verdict, memory_hits)
@@ -160,3 +173,11 @@ class ControlledContinuationEngine:
                 verdict.reasons.append(f"surface_pattern={pattern}")
                 memory_hits.append(f"surface_risk={pattern}")
         verdict.reasons.append("audit_reason=no_safe_semantic_candidate")
+
+    @staticmethod
+    def _audit_no_safe_repaired_candidate(repair, verdict, memory_hits: list[str]) -> None:
+        verdict.decision = "audit"
+        for reason in repair.reasons:
+            verdict.reasons.append(f"surface_repair_reason={reason}")
+            memory_hits.append(f"surface_repair_reason={reason}")
+        verdict.reasons.append(f"audit_reason={repair.audit_reason}")
