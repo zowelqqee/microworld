@@ -1,0 +1,42 @@
+task_id,row_id,gap_type,priority,required_input,audit_reason,minimal_human_question
+task-v1-030-prompt_tail_blocked-cb4685905d,v1-030,prompt_tail_blocked,medium,prompt_tail_rule;phrase_candidates,surface_validation_failed,What narrow prompt-tail rule or phrase candidate would fit without guessing?
+task-v1-041-missing_phrase_candidate-c8bdd38beb,v1-041,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,surface_validation_failed,What explicit phrase candidate safely realizes bank:river_edge for this prompt tail?
+task-v1-047-missing_phrase_candidate-032996d444,v1-047,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,surface_validation_failed,What explicit phrase candidate safely realizes crane:bird for this prompt tail?
+task-v1-051-no_safe_rewrite-bd15f7ff38,v1-051,no_safe_rewrite,medium,human_label;phrase_candidates,no_safe_repaired_candidate,Can a safe rewrite be stated without inventing unsupported entities or actions?
+task-v1-057-missing_phrase_candidate-e34d360a26,v1-057,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,surface_validation_failed,What explicit phrase candidate safely realizes crane:machine for this prompt tail?
+task-v1-061-missing_phrase_candidate-20cb5cbeb1,v1-061,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes bank:financial_institution for this prompt tail?
+task-v1-069-missing_phrase_candidate-9b67c49470,v1-069,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes spring:season for this prompt tail?
+task-v1-071-prompt_tail_blocked-7431393b75,v1-071,prompt_tail_blocked,medium,prompt_tail_rule;phrase_candidates,sense_tie,What narrow prompt-tail rule or phrase candidate would fit without guessing?
+task-v1-073-missing_phrase_candidate-7d5314922e,v1-073,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes bank:financial_institution for this prompt tail?
+task-v1-074-missing_phrase_candidate-ddea233863,v1-074,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,low_margin,What explicit phrase candidate safely realizes bank:river_edge for this prompt tail?
+task-v1-076-missing_phrase_candidate-fc71d06688,v1-076,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,low_margin,What explicit phrase candidate safely realizes bat:animal for this prompt tail?
+task-v1-081-true_unsafe-1f68e54792,v1-081,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-082-true_unsafe-0fdd26d9db,v1-082,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-083-true_unsafe-7ab8d41f12,v1-083,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-085-true_unsafe-37f121a4f4,v1-085,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-086-true_unsafe-5a3ca2e5ac,v1-086,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-088-true_unsafe-1ac2f9deff,v1-088,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-089-true_unsafe-d7af7aa171,v1-089,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-090-true_unsafe-1b03fe28d3,v1-090,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-091-true_unsafe-e44f0505d1,v1-091,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-092-true_unsafe-12a33933ce,v1-092,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-093-true_unsafe-cb2d0e4283,v1-093,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-094-true_unsafe-644e20fedf,v1-094,true_unsafe,low,keep_audit_policy,true_unsafe,What evidence should be recorded to keep this row audited?
+task-v1-097-missing_phrase_candidate-cc1c6d2cf0,v1-097,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,missing_or_weak_cue_support,What explicit phrase candidate safely realizes bank:river_edge for this prompt tail?
+task-v1-099-missing_phrase_candidate-7fbdcae6ef,v1-099,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,missing_or_weak_cue_support,What explicit phrase candidate safely realizes bat:animal for this prompt tail?
+task-v1-101-missing_phrase_candidate-b7c94e2bc7,v1-101,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes seal:animal for this prompt tail?
+task-v1-104-missing_phrase_candidate-f74f99dffa,v1-104,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes spring:coil for this prompt tail?
+task-v1-105-missing_phrase_candidate-cb241f7daa,v1-105,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,missing_or_weak_cue_support,What explicit phrase candidate safely realizes spring:season for this prompt tail?
+task-v1-106-missing_phrase_candidate-5c8ab2fc47,v1-106,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,low_margin,What explicit phrase candidate safely realizes rock:music for this prompt tail?
+task-v1-107-missing_phrase_candidate-896608b35b,v1-107,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,sense_tie,What explicit phrase candidate safely realizes rock:stone for this prompt tail?
+task-v1-109-missing_phrase_candidate-9b4b56cd39,v1-109,missing_phrase_candidate,medium,phrase_candidates;semantic_frame,low_margin,What explicit phrase candidate safely realizes bank:river_edge for this prompt tail?
+task-v1-111-unsupported_context-d49f9f77a4,v1-111,unsupported_context,low,human_label;keep_audit_policy,unsupported_or_underconstrained_context,"Should this prompt remain no-clear-answer, or is a missing label/cue available?"
+task-v1-112-unsupported_context-1dd6dbc6e6,v1-112,unsupported_context,low,human_label;keep_audit_policy,unsupported_or_underconstrained_context,"Should this prompt remain no-clear-answer, or is a missing label/cue available?"
+task-v1-113-unsupported_context-0cdcbc80e2,v1-113,unsupported_context,low,human_label;keep_audit_policy,unsupported_or_underconstrained_context,"Should this prompt remain no-clear-answer, or is a missing label/cue available?"
+task-v1-114-unsupported_context-3264451285,v1-114,unsupported_context,low,human_label;keep_audit_policy,unsupported_or_underconstrained_context,"Should this prompt remain no-clear-answer, or is a missing label/cue available?"
+task-v1-115-unsupported_context-116dda29ed,v1-115,unsupported_context,low,human_label;keep_audit_policy,unsupported_or_underconstrained_context,"Should this prompt remain no-clear-answer, or is a missing label/cue available?"
+task-v1-116-missing_sense_memory-aa40515259,v1-116,missing_sense_memory,medium,sense_memory_entry;positive_cues;anti_cues;semantic_frame;phrase_candidates;human_label,missing_sense_memory,What explicit sense-memory entry and cues should represent this term?
+task-v1-117-missing_sense_memory-308692425e,v1-117,missing_sense_memory,medium,sense_memory_entry;positive_cues;anti_cues;semantic_frame;phrase_candidates;human_label,missing_sense_memory,What explicit sense-memory entry and cues should represent this term?
+task-v1-118-missing_sense_memory-02bf608062,v1-118,missing_sense_memory,medium,sense_memory_entry;positive_cues;anti_cues;semantic_frame;phrase_candidates;human_label,missing_sense_memory,What explicit sense-memory entry and cues should represent this term?
+task-v1-119-missing_sense_memory-7c05d6fe3b,v1-119,missing_sense_memory,medium,sense_memory_entry;positive_cues;anti_cues;semantic_frame;phrase_candidates;human_label,missing_sense_memory,What explicit sense-memory entry and cues should represent this term?
+task-v1-120-missing_sense_memory-eb2295a79d,v1-120,missing_sense_memory,medium,sense_memory_entry;positive_cues;anti_cues;semantic_frame;phrase_candidates;human_label,missing_sense_memory,What explicit sense-memory entry and cues should represent this term?
