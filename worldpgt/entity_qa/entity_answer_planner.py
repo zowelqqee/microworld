@@ -100,6 +100,34 @@ class EntityAnswerPlanner:
         predicate = analyzed.predicate_hint
         evidence = EntityQAEvidence()
 
+        if predicate == "connection":
+            # "How is X connected to Y?" — relations of X whose object is Y.
+            secondary = (analyzed.secondary_entity or "").strip().lower()
+            all_relations = [
+                r for r in self._provider.get_relations(subject)
+                if r.get("object", "").strip().lower() == secondary
+            ]
+            for r in all_relations:
+                evidence.overlay_items_used.append(
+                    f"overlay_relation:{r['predicate']}:{r['object']}"
+                )
+            if not all_relations:
+                return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+            return EntityQAPlan(
+                analyzed=analyzed,
+                decision="answer",
+                audit_reason=None,
+                evidence=evidence,
+                render_template="relation_lookup",
+                render_args={
+                    "subject": subject,
+                    "predicate": predicate,
+                    "relations": all_relations,
+                    "founder_lookup": False,
+                },
+                confidence=0.9,
+            )
+
         if predicate == "founded":
             # "Who founded X?" — look for founded relations with X as object
             all_relations = [
@@ -141,17 +169,53 @@ class EntityAnswerPlanner:
         )
 
     def _plan_link_explanation(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
+        # Meta question about overlay link policy — answer without a specific link.
+        if analyzed.predicate_hint == "weak_link_policy":
+            return EntityQAPlan(
+                analyzed=analyzed,
+                decision="answer",
+                audit_reason=None,
+                evidence=EntityQAEvidence(),
+                render_template="link_policy",
+                render_args={},
+                confidence=0.95,
+            )
+
         subject = analyzed.subject or ""
         secondary = analyzed.secondary_entity or ""
         evidence = EntityQAEvidence()
 
-        # Look for context links from subject page mentioning secondary
-        links = self._provider.get_context_links(source_page=subject, target=secondary)
+        # Candidate surface/target forms: the secondary as written, plus a
+        # simple depluralized variant ("rockets" -> "rocket") so plural
+        # phrasings still resolve to the singular overlay link target/surface.
+        candidates = [secondary]
+        if secondary.endswith("s") and len(secondary) > 3:
+            candidates.append(secondary[:-1])
+
+        links: list[dict] = []
+        # 1. target match on the subject page
+        for cand in candidates:
+            links = self._provider.get_context_links(source_page=subject, target=cand)
+            if links:
+                break
+        # 2. surface match on the subject page
         if not links:
-            # Try reversed
-            links = self._provider.get_context_links(source_page=secondary, target=subject)
+            for cand in candidates:
+                links = self._provider.get_context_links(source_page=subject, surface=cand)
+                if links:
+                    break
+        # 3. reversed: subject mentioned on the secondary page
         if not links:
-            links = self._provider.get_context_links(target=secondary)
+            for cand in candidates:
+                links = self._provider.get_context_links(source_page=cand, target=subject)
+                if links:
+                    break
+        # 4. target match anywhere
+        if not links:
+            for cand in candidates:
+                links = self._provider.get_context_links(target=cand)
+                if links:
+                    break
 
         for lnk in links:
             evidence.weak_context_links_used.append(
@@ -197,7 +261,7 @@ class EntityAnswerPlanner:
                 f"source_fact:{f['subject']}:{f['predicate']}:{f['source_name']}"
             )
 
-        if predicate_hint in ("stability_check", "recheck_reason"):
+        if predicate_hint in ("stability_check", "recheck_reason", "source_qualified_confirm"):
             return EntityQAPlan(
                 analyzed=analyzed,
                 decision="answer",

@@ -41,6 +41,8 @@ def render(plan: EntityQAPlan) -> str:
         return _render_source_fact(args)
     if t == "stability_check":
         return _render_stability_check(args)
+    if t == "link_policy":
+        return _render_link_policy(args)
 
     return _render_audit(plan)
 
@@ -87,30 +89,38 @@ def _render_define(args: dict) -> str:
         for r in relations:
             pred_groups.setdefault(r["predicate"], []).append(r["object"])
 
-        # Build natural clauses: each is a predicate phrase (no leading subject).
-        clauses: list[str] = []
+        # Copular clauses read after "is" (no leading subject); verb clauses
+        # carry their own verb and must NOT be prefixed with "is".
+        copular_clauses: list[str] = []
+        verb_clauses: list[str] = []
         for pred, objects in pred_groups.items():
             obj_list = _join_list(objects)
             if pred == "leader_of":
-                clauses.append(f"linked to {obj_list} through leadership")
+                copular_clauses.append(f"linked to {obj_list} through leadership")
             elif pred == "known_for":
-                clauses.append(f"known for {obj_list}")
+                copular_clauses.append(f"known for {obj_list}")
             elif pred == "founded":
                 # Subject founded the objects — "is the founder of X", not "founded by X".
-                clauses.append(f"listed as the founder of {obj_list}")
+                copular_clauses.append(f"listed as the founder of {obj_list}")
             elif pred == "produces":
-                clauses.append(f"produces {obj_list}")
+                verb_clauses.append(f"produces {obj_list}")
             elif pred == "develops":
-                clauses.append(f"develops {obj_list}")
+                verb_clauses.append(f"develops {obj_list}")
             elif pred == "publishes":
-                clauses.append(f"publishes {obj_list}")
+                verb_clauses.append(f"publishes {obj_list}")
             else:
-                clauses.append(f"linked to {obj_list} via {pred}")
+                copular_clauses.append(f"linked to {obj_list} via {pred}")
 
-        if clauses:
-            label = entity["label"] if entity else subject
-            clause_text = _join_clauses(clauses)
-            parts.append(f"In the overlay, {label} is {clause_text}.")
+        label = entity["label"] if entity else subject
+        if copular_clauses and verb_clauses:
+            parts.append(
+                f"In the overlay, {label} is {_join_clauses(copular_clauses)}, "
+                f"and it {_join_clauses(verb_clauses)}."
+            )
+        elif copular_clauses:
+            parts.append(f"In the overlay, {label} is {_join_clauses(copular_clauses)}.")
+        elif verb_clauses:
+            parts.append(f"In the overlay, {label} {_join_clauses(verb_clauses)}.")
 
     return " ".join(parts).strip()
 
@@ -149,6 +159,9 @@ def _render_relation(args: dict) -> str:
             sentences.append(f"{subject} develops {obj_list}.")
         elif pred == "publishes":
             sentences.append(f"{subject} publishes {obj_list}.")
+        elif pred == "founded":
+            # Subject is the founder here — never invert to "founded by".
+            sentences.append(f"{subject} founded {obj_list}.")
         else:
             verb = _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}")
             sentences.append(f"{subject} {verb} {obj_list}.")
@@ -236,7 +249,30 @@ def _render_stability_check(args: dict) -> str:
             f"Wealth figures change frequently and are not stable facts."
         )
 
+    if predicate_hint == "source_qualified_confirm":
+        if facts:
+            f = facts[0]
+            source = f.get("source_name", "a source")
+            as_of = f.get("as_of", "unknown date")
+            return (
+                f"Yes. In this overlay, the {source} estimate of {subject}'s net worth "
+                f"is a source-qualified, volatile estimate (source: {source}, as of {as_of}) "
+                f"that requires rechecking. It is not a stable or current fact."
+            )
+        return (
+            f"Yes. {subject}'s net worth in this overlay is a source-qualified, volatile "
+            f"estimate that requires rechecking. It is not a stable or current fact."
+        )
+
     return "No source-qualified stability information found in the overlay."
+
+
+def _render_link_policy(args: dict) -> str:
+    return (
+        "No. In this overlay, a wiki link is stored as a weak context link "
+        "(weak_context_only trust) and is not treated as a stable factual relation. "
+        "A weak link does not establish that a claim is true."
+    )
 
 
 # ------------------------------------------------------------------

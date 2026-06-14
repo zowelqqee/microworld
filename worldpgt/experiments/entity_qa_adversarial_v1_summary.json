@@ -1,0 +1,46 @@
+{
+  "qa_total": 68,
+  "answer_count": 6,
+  "audit_count": 62,
+  "correct_count": 68,
+  "wrong_count": 0,
+  "accuracy": 1.0,
+  "answer_precision": 1.0,
+  "quality_flagged": 0,
+  "by_intent": {
+    "define_entity": {
+      "answer": 0,
+      "audit": 3,
+      "correct": 3,
+      "wrong": 0
+    },
+    "link_explanation": {
+      "answer": 3,
+      "audit": 0,
+      "correct": 3,
+      "wrong": 0
+    },
+    "relation_lookup": {
+      "answer": 0,
+      "audit": 1,
+      "correct": 1,
+      "wrong": 0
+    },
+    "source_fact_lookup": {
+      "answer": 3,
+      "audit": 0,
+      "correct": 3,
+      "wrong": 0
+    },
+    "unknown_or_unsupported": {
+      "answer": 0,
+      "audit": 58,
+      "correct": 58,
+      "wrong": 0
+    }
+  },
+  "provider_items_used": 4,
+  "source_facts_used": 3,
+  "weak_context_links_used": 1,
+  "safe_for_general_runtime": false
+}

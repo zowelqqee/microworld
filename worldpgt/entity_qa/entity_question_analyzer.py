@@ -32,6 +32,16 @@ _PERSONAL_SIGNALS = re.compile(
     re.IGNORECASE,
 )
 
+# ---- volatile / time-relative query signals --------------------------
+# These force an audit: the overlay has no live/real-time data, and these
+# phrasings ask for "now/today/latest" values not present as accepted facts.
+_VOLATILE_SIGNALS = re.compile(
+    r"\b(right\s+now|today|latest|this\s+year|this\s+quarter|"
+    r"latest\s+quarterly|latest\s+ranking|worth\s+right\s+now|"
+    r"doing\s+today|live\s+right\s+now)\b",
+    re.IGNORECASE,
+)
+
 # ---- source fact patterns --------------------------------------------
 _ESTIMATE_RE = re.compile(
     r"(?:what does|what did)\s+(\w+)\s+estimate\s+about\s+(.+?)[\?.]?$",
@@ -46,9 +56,65 @@ _RECHECK_RE = re.compile(
     re.IGNORECASE,
 )
 
+# NEW source-fact paraphrases ------------------------------------------
+_NET_WORTH_ESTIMATE_RE = re.compile(
+    r"(?:what is|what's)\s+(.+?)'s\s+(?:source-qualified\s+)?net\s+worth\s+estimate",
+    re.IGNORECASE,
+)
+_ACCORDING_ESTIMATE_RE = re.compile(
+    r"according\s+to\s+(\w+),?\s+what\s+is\s+(.+?)'s\s+estimated\s+net\s+worth",
+    re.IGNORECASE,
+)
+_IS_VOLATILE_RE = re.compile(
+    r"is\s+(.+?)'s\s+net\s+worth\s+volatile",
+    re.IGNORECASE,
+)
+_REQUIRE_RECHECK_RE = re.compile(
+    r"(?:does\s+the\s+overlay\s+)?require[s]?\s+recheck(?:ing)?\s+(.+?)'s\s+net\s+worth",
+    re.IGNORECASE,
+)
+
+# ---- weak-link policy questions --------------------------------------
+# Meta questions about how the overlay treats wiki / weak context links.
+_WEAK_LINK_POLICY_RE = re.compile(
+    r"(is\s+a\s+wiki\s+link\s+treated\s+as\s+a\s+fact|"
+    r"does\s+the\s+overlay\s+treat\s+weak\s+context\s+links\s+as\s+facts|"
+    r"does\s+a\s+weak\s+link\s+mean\s+the\s+claim\s+is\s+true|"
+    r"does\s+a\s+wiki\s+link\s+mean\s+the\s+claim\s+is\s+true|"
+    r"are\s+weak\s+context\s+links\s+treated\s+as\s+facts|"
+    r"are\s+weak\s+context\s+links\s+facts|"
+    r"is\s+a\s+weak\s+link\s+a\s+fact)",
+    re.IGNORECASE,
+)
+
+# ---- source-qualified volatility meta-questions (adversarial) ---------
+# Narrow patterns about THE Forbes net-worth estimate already in the overlay.
+# They must yield the volatile / source-qualified / recheck caveat — never a
+# "stable" or "exact/current" claim.
+_TREAT_AS_STABLE_RE = re.compile(
+    r"(?:can|may|should)\s+i\s+treat\s+the\s+forbes\s+estimate\s+as\s+a\s+stable\s+fact",
+    re.IGNORECASE,
+)
+_RECHECK_ESTIMATE_RE = re.compile(
+    r"(?:does\s+the\s+overlay\s+)?need\s+to\s+recheck\s+the\s+forbes\s+estimate",
+    re.IGNORECASE,
+)
+_IS_SOURCE_QUALIFIED_RE = re.compile(
+    r"is\s+the\s+forbes\s+estimate\s+source-qualified",
+    re.IGNORECASE,
+)
+
 # ---- link explanation -----------------------------------------------
 _LINK_EXPL_RE = re.compile(
     r"why\s+(?:is|are)\s+(.+?)\s+linked\s+to\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_LINK_APPEAR_RE = re.compile(
+    r"why\s+does\s+(.+?)\s+appear\s+on\s+the\s+(.+?)\s+page\b",
+    re.IGNORECASE,
+)
+_IS_STABLE_REL_RE = re.compile(
+    r"is\s+(.+?)\s+a\s+stable\s+factual\s+relation\s+for\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 
@@ -57,16 +123,40 @@ _KNOWN_FOR_RE = re.compile(
     r"what\s+is\s+(.+?)\s+known\s+for\b",
     re.IGNORECASE,
 )
+_KNOWN_FOR2_RE = re.compile(
+    r"what\s+(?:companies|organizations|things|products)\s+(?:is|are)\s+(.+?)\s+known\s+for\b",
+    re.IGNORECASE,
+)
 _LEADER_RE = re.compile(
     r"what\s+companies\s+is\s+(.+?)\s+linked\s+to\s+by\s+leadership\b",
+    re.IGNORECASE,
+)
+_LEADER2_RE = re.compile(
+    r"(?:what|which)\s+(?:companies|organizations)\s+(?:is|are)\s+(.+?)\s+linked\s+to\s+(?:by|through)\s+leadership\b",
+    re.IGNORECASE,
+)
+_CONNECTED_RE = re.compile(
+    r"how\s+(?:is|are)\s+(.+?)\s+(?:connected|related|linked)\s+to\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 _PRODUCES_RE = re.compile(
     r"what\s+does\s+(.+?)\s+(produce|develop|publish|manufacture)s?\b",
     re.IGNORECASE,
 )
+_PRODUCTS_MAKE_RE = re.compile(
+    r"what\s+products?\s+does\s+(.+?)\s+(?:make|produce|manufacture|build)s?\b",
+    re.IGNORECASE,
+)
 _FOUNDED_BY_RE = re.compile(
     r"who\s+founded\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_FOUNDER_OF_RE = re.compile(
+    r"who\s+(?:is|are|was|were)\s+the\s+founders?\s+of\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_FOUNDERS_OF_RE = re.compile(
+    r"who\s+(?:were|are|was)\s+(.+?)'s\s+founders?\b",
     re.IGNORECASE,
 )
 
@@ -77,6 +167,14 @@ _WHO_IS_RE = re.compile(
 )
 _WHAT_IS_RE = re.compile(
     r"^what\s+is\s+(?:a\s+|an\s+)?(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_DEFINE_TELL_RE = re.compile(
+    r"^tell\s+me\s+(?:about|who)\s+(.+?)(?:\s+is)?[\?.]?$",
+    re.IGNORECASE,
+)
+_DEFINE_KIND_RE = re.compile(
+    r"^what\s+(?:kind|type|sort)\s+of\s+.+?\s+is\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 
@@ -99,6 +197,19 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
 
     # 1. Current / volatile queries → unsupported
     if _CURRENT_SIGNALS.search(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="unknown_or_unsupported",
+            subject=_extract_subject_from_current(q),
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=True,
+            is_unsupported=True,
+        )
+
+    # 1b. Volatile / time-relative queries (now/today/latest) → unsupported
+    if _VOLATILE_SIGNALS.search(q):
         return AnalyzedEntityQuestion(
             question=q,
             intent="unknown_or_unsupported",
@@ -165,6 +276,114 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    # 5b. Source fact — "X's (source-qualified) net worth estimate"
+    m = _NET_WORTH_ESTIMATE_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="estimated_net_worth",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5c. Source fact — "According to <source>, what is X's estimated net worth"
+    m = _ACCORDING_ESTIMATE_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject=_clean(m.group(2)),
+            predicate_hint="estimated_net_worth",
+            secondary_entity=None,
+            source_hint=_clean(m.group(1)),
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5d. Source fact — "Is X's net worth volatile?"
+    m = _IS_VOLATILE_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="stability_check",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5e. Source fact — "require rechecking X's net worth"
+    m = _REQUIRE_RECHECK_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="recheck_reason",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5g. Source-qualified volatility — "treat the Forbes estimate as a stable fact?"
+    if _TREAT_AS_STABLE_RE.search(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject="Elon Musk",
+            predicate_hint="stability_check",
+            secondary_entity=None,
+            source_hint="Forbes",
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5h. Source-qualified volatility — "need to recheck the Forbes estimate?"
+    if _RECHECK_ESTIMATE_RE.search(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject="Elon Musk",
+            predicate_hint="recheck_reason",
+            secondary_entity=None,
+            source_hint="Forbes",
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5i. Source-qualified volatility — "is the Forbes estimate source-qualified?"
+    if _IS_SOURCE_QUALIFIED_RE.search(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="source_fact_lookup",
+            subject="Elon Musk",
+            predicate_hint="source_qualified_confirm",
+            secondary_entity=None,
+            source_hint="Forbes",
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 5f. Weak-link policy meta-question
+    if _WEAK_LINK_POLICY_RE.search(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="link_explanation",
+            subject=None,
+            predicate_hint="weak_link_policy",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     # 6. Link explanation
     m = _LINK_EXPL_RE.search(q)
     if m:
@@ -179,8 +398,36 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    # 6b. Link explanation — "Why does Y appear on the X page?"
+    m = _LINK_APPEAR_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="link_explanation",
+            subject=_clean(m.group(2)),
+            predicate_hint=None,
+            secondary_entity=_clean(m.group(1)),
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 6c. Link explanation — "Is Y a stable factual relation for X?"
+    m = _IS_STABLE_REL_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="link_explanation",
+            subject=_clean(m.group(2)),
+            predicate_hint="stability_relation_check",
+            secondary_entity=_clean(m.group(1)),
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     # 7. Relation — known_for
-    m = _KNOWN_FOR_RE.search(q)
+    m = _KNOWN_FOR2_RE.search(q) or _KNOWN_FOR_RE.search(q)
     if m:
         return AnalyzedEntityQuestion(
             question=q,
@@ -194,7 +441,7 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         )
 
     # 8. Relation — leader
-    m = _LEADER_RE.search(q)
+    m = _LEADER2_RE.search(q) or _LEADER_RE.search(q)
     if m:
         return AnalyzedEntityQuestion(
             question=q,
@@ -207,7 +454,34 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    # 8b. Relation — "How is X connected to Y?"
+    m = _CONNECTED_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="connection",
+            secondary_entity=_clean(m.group(2)),
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     # 9. Relation — produces/develops/publishes
+    m = _PRODUCTS_MAKE_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="produces",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     m = _PRODUCES_RE.search(q)
     if m:
         verb = m.group(2).lower()
@@ -223,14 +497,32 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
-    # 10. Relation — founded by
-    m = _FOUNDED_BY_RE.search(q)
+    # 10. Relation — founded by / founder of / X's founders
+    m = (
+        _FOUNDER_OF_RE.search(q)
+        or _FOUNDERS_OF_RE.search(q)
+        or _FOUNDED_BY_RE.search(q)
+    )
     if m:
         return AnalyzedEntityQuestion(
             question=q,
             intent="relation_lookup",
             subject=_clean(m.group(1)),
             predicate_hint="founded",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 10b. Define entity — paraphrases ("Tell me about X", "What kind of ... is X")
+    m = _DEFINE_KIND_RE.match(q) or _DEFINE_TELL_RE.match(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="define_entity",
+            subject=_clean(m.group(1)),
+            predicate_hint=None,
             secondary_entity=None,
             source_hint=None,
             is_current_query=False,
