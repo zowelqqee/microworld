@@ -1,0 +1,72 @@
+row_id,question,expected_decision,expected_intent,source,target,expected_answer_contains,risk_level
+cpqa-v1-001,How is Elon Musk connected to SpaceX?,answer,connection_path,Elon Musk,SpaceX,SpaceX;leadership,low
+cpqa-v1-002,How is Elon Musk connected to Tesla?,answer,connection_path,Elon Musk,Tesla,Tesla;leadership,low
+cpqa-v1-003,How is SpaceX connected to rockets?,answer,connection_path,SpaceX,rockets,SpaceX develops rockets,low
+cpqa-v1-004,How is SpaceX connected to spacecraft?,answer,connection_path,SpaceX,spacecraft,SpaceX develops spacecraft,low
+cpqa-v1-005,How is Tesla connected to electric cars?,answer,connection_path,Tesla,electric cars,Tesla produces electric cars,low
+cpqa-v1-006,How is Forbes connected to business rankings?,answer,connection_path,Forbes,business rankings,Forbes publishes business rankings,low
+cpqa-v1-007,How is Bloomberg News connected to wealth indexes?,answer,connection_path,Bloomberg News,wealth indexes,Bloomberg News publishes wealth indexes,low
+cpqa-v1-008,How is Jeff Bezos connected to Blue Origin?,answer,connection_path,Jeff Bezos,Blue Origin,Blue Origin,low
+cpqa-v1-009,How is NASA connected to spacecraft?,answer,connection_path,NASA,spacecraft,NASA develops spacecraft,low
+cpqa-v1-010,How is Tesla Energy connected to solar panels?,answer,connection_path,Tesla Energy,solar panels,Tesla Energy produces solar panels,low
+cpqa-v1-011,How is Elon Musk connected to rockets?,answer,connection_path,Elon Musk,rockets,through SpaceX;SpaceX develops rockets,low
+cpqa-v1-012,How is Elon Musk connected to electric cars?,answer,connection_path,Elon Musk,electric cars,through Tesla;Tesla produces electric cars,low
+cpqa-v1-013,How is Elon Musk connected to brain-computer interfaces?,answer,connection_path,Elon Musk,brain-computer interfaces,through Neuralink;Neuralink develops brain-computer interfaces,low
+cpqa-v1-014,How is Elon Musk connected to Falcon rockets?,answer,connection_path,Elon Musk,Falcon rockets,through SpaceX,low
+cpqa-v1-015,How is Elon Musk connected to Dragon spacecraft?,answer,connection_path,Elon Musk,Dragon spacecraft,through SpaceX,low
+cpqa-v1-016,How is Marc Tarpenning connected to Tesla?,answer,connection_path,Marc Tarpenning,Tesla,Marc Tarpenning founded Tesla,low
+cpqa-v1-017,How is SpaceX connected to Starlink?,answer,connection_path,SpaceX,Starlink,weak contextual link;not a stable factual relation,medium
+cpqa-v1-018,How is SpaceX connected to Falcon 9?,answer,connection_path,SpaceX,Falcon 9,weak contextual link;not a stable factual relation,medium
+cpqa-v1-019,How is Tesla connected to electric vehicles?,answer,connection_path,Tesla,electric vehicles,weak contextual link;not a stable factual relation,medium
+cpqa-v1-020,How is Powerwall connected to lithium-ion battery?,answer,connection_path,Powerwall,lithium-ion battery,weak contextual link,medium
+cpqa-v1-021,How is Forbes connected to net worth?,answer,connection_path,Forbes,net worth,source-qualified;recheck;not stable,high
+cpqa-v1-022,How is Elon Musk connected to net worth?,answer,connection_path,Elon Musk,net worth,source-qualified;recheck,high
+cpqa-v1-023,What path connects Elon Musk to SpaceX?,answer,relation_chain,Elon Musk,SpaceX,Elon Musk;SpaceX;explicit overlay relation,low
+cpqa-v1-024,What path connects Tesla to battery storage?,answer,relation_chain,Tesla,battery storage,Tesla;produces;Battery storage,low
+cpqa-v1-025,What path connects Forbes to business rankings?,answer,relation_chain,Forbes,business rankings,Forbes;publishes;business rankings,low
+cpqa-v1-026,What path connects Bloomberg News to wealth indexes?,answer,relation_chain,Bloomberg News,wealth indexes,Bloomberg News;wealth indexes,low
+cpqa-v1-027,What path connects Elon Musk to rockets?,answer,relation_chain,Elon Musk,rockets,Elon Musk;SpaceX;rockets,low
+cpqa-v1-028,What path connects Elon Musk to electric cars?,answer,relation_chain,Elon Musk,electric cars,Tesla;electric cars,low
+cpqa-v1-029,What path connects Jeff Bezos to Blue Origin?,answer,relation_chain,Jeff Bezos,Blue Origin,Jeff Bezos;Blue Origin,low
+cpqa-v1-030,What path connects NASA to launch systems?,answer,relation_chain,NASA,launch systems,NASA;launch systems,low
+cpqa-v1-031,What path connects SolarCity to solar panels?,answer,relation_chain,SolarCity,solar panels,SolarCity;solar panels,low
+cpqa-v1-032,What path connects Neuralink to brain-computer interfaces?,answer,relation_chain,Neuralink,brain-computer interfaces,Neuralink;brain-computer interfaces,low
+cpqa-v1-033,What path connects Elon Musk to Dragon spacecraft?,answer,relation_chain,Elon Musk,Dragon spacecraft,SpaceX;Dragon spacecraft,low
+cpqa-v1-034,Which claims require rechecking?,answer,source_qualified_list,,,4;require rechecking;Elon Musk;2026-06,high
+cpqa-v1-035,Which facts are source-qualified?,answer,source_qualified_list,,,source-qualified;Forbes;Bloomberg,high
+cpqa-v1-036,Which overlay facts are volatile?,answer,source_qualified_list,,,volatile;require rechecking,high
+cpqa-v1-037,Which net worth claims require recheck?,answer,source_qualified_list,,,Elon Musk;Jeff Bezos;Bernard Arnault;Michael Bloomberg,high
+cpqa-v1-038,Which source-qualified facts require recheck?,answer,source_qualified_list,,,4;recheck,high
+cpqa-v1-039,List the volatile facts in the overlay.,answer,source_qualified_list,,,volatile;source-qualified,high
+cpqa-v1-040,Which net worth estimates are volatile?,answer,source_qualified_list,,,volatile;US$1.1 trillion,high
+cpqa-v1-041,Which facts should be rechecked?,answer,source_qualified_list,,,require rechecking;2026-06,high
+cpqa-v1-042,Which links are weak context only?,answer,weak_link_list_or_policy,,,weak context links;not stable factual relations,low
+cpqa-v1-043,What does weak_context_only mean?,answer,weak_link_list_or_policy,,,weak context links;not stable factual relations,low
+cpqa-v1-044,Are wiki context links facts?,answer,weak_link_list_or_policy,,,not stable factual relations;cannot prove,low
+cpqa-v1-045,Can weak links prove claims?,answer,weak_link_list_or_policy,,,cannot prove;not stable factual relations,low
+cpqa-v1-046,Give examples of weak links in the overlay.,answer,weak_link_list_or_policy,,,Examples;weak context links,low
+cpqa-v1-047,What does weak context only mean in the overlay?,answer,weak_link_list_or_policy,,,weak context links;contextual mentions,low
+cpqa-v1-048,Are weak context links stable facts?,answer,weak_link_list_or_policy,,,not stable factual relations,low
+cpqa-v1-049,Do weak links prove a factual relationship?,answer,weak_link_list_or_policy,,,cannot prove,low
+cpqa-v1-050,How is Elon Musk connected to Starlink?,audit,connection_path,Elon Musk,Starlink,,medium
+cpqa-v1-051,How is Tesla connected to Forbes?,audit,connection_path,Tesla,Forbes,,medium
+cpqa-v1-052,How is Starlink connected to net worth?,audit,connection_path,Starlink,net worth,,medium
+cpqa-v1-053,How is Bloomberg News connected to SpaceX rockets?,audit,connection_path,Bloomberg News,SpaceX rockets,,medium
+cpqa-v1-054,How is Bloomberg News connected to Bloomberg LP?,audit,connection_path,Bloomberg News,Bloomberg LP,,medium
+cpqa-v1-055,How is Tesla connected to lithium-ion batteries?,audit,connection_path,Tesla,lithium-ion batteries,,medium
+cpqa-v1-056,How is Forbes connected to SpaceX?,audit,connection_path,Forbes,SpaceX,,medium
+cpqa-v1-057,How is Tesla connected to NASA?,audit,connection_path,Tesla,NASA,,medium
+cpqa-v1-058,How is Reuters connected to rockets?,audit,connection_path,Reuters,rockets,,medium
+cpqa-v1-059,What path connects Elon Musk to Starlink?,audit,relation_chain,Elon Musk,Starlink,,medium
+cpqa-v1-060,What path connects SpaceX to reusable rockets?,audit,relation_chain,SpaceX,reusable rockets,,medium
+cpqa-v1-061,What path connects Tesla to Forbes?,audit,relation_chain,Tesla,Forbes,,medium
+cpqa-v1-062,What path connects Starlink to net worth?,audit,relation_chain,Starlink,net worth,,medium
+cpqa-v1-063,Does Tesla prove Musk's net worth?,audit,unsupported_or_too_far,,,,high
+cpqa-v1-064,Does a weak link prove that Musk leads Forbes?,answer,weak_link_list_or_policy,,,cannot prove;not stable factual relations,high
+cpqa-v1-065,"If SpaceX makes rockets, are all rockets SpaceX products?",audit,unsupported_or_too_far,,,,high
+cpqa-v1-066,"If Tesla makes electric cars, is every electric car a Tesla?",audit,unsupported_or_too_far,,,,high
+cpqa-v1-067,"If Musk leads Tesla, does Tesla lead Musk?",audit,unsupported_or_too_far,,,,high
+cpqa-v1-068,What is Tesla's current stock price through the overlay?,audit,unsupported_or_too_far,,,,high
+cpqa-v1-069,What is SpaceX's current valuation in the overlay?,audit,unsupported_or_too_far,,,,high
+cpqa-v1-070,What is Tesla's latest quarterly revenue from the overlay?,audit,unsupported_or_too_far,,,,high
+cpqa-v1-071,What is Tesla's market cap right now?,audit,unsupported_or_too_far,,,,high

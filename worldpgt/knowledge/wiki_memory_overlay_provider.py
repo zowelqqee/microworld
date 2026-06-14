@@ -169,3 +169,26 @@ class WikiMemoryOverlayProvider:
             + len(self._context_links)
             + len(self._source_facts)
         )
+
+    # ------------------------------------------------------------------
+    # Read-only bulk accessors (no filtering side effects).
+    #
+    # These return shallow copies of the loaded overlay slices so callers
+    # (e.g. the cross-page graph builder) can read the full overlay without
+    # reaching into private state. They do not modify overlay semantics.
+    # ------------------------------------------------------------------
+
+    def all_relations(self) -> list[dict]:
+        return list(self._relations)
+
+    def all_definitions(self) -> list[dict]:
+        return list(self._definitions)
+
+    def all_context_links(self) -> list[dict]:
+        return list(self._context_links)
+
+    def all_source_facts(self) -> list[dict]:
+        return list(self._source_facts)
+
+    def all_entities(self) -> list[dict]:
+        return list(self._entities)
