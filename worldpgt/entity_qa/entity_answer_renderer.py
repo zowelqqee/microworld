@@ -81,32 +81,36 @@ def _render_define(args: dict) -> str:
         pass  # already covered above
 
     if relations:
+        # Relations here all have the described entity as their *subject*, so
+        # directional predicates must be expressed from the subject's perspective.
         pred_groups: dict[str, list[str]] = {}
         for r in relations:
-            pred = r["predicate"]
-            obj = r["object"]
-            pred_groups.setdefault(pred, []).append(obj)
+            pred_groups.setdefault(r["predicate"], []).append(r["object"])
 
-        rel_sentences: list[str] = []
-        subj = entity["label"] if entity else subject
+        # Build natural clauses: each is a predicate phrase (no leading subject).
+        clauses: list[str] = []
         for pred, objects in pred_groups.items():
-            verb_phrase = _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}")
             obj_list = _join_list(objects)
-            if pred == "founded":
-                rel_sentences.append(f"founded by {obj_list}")
-            elif pred == "leader_of":
-                rel_sentences.append(f"linked to {obj_list} through leadership")
+            if pred == "leader_of":
+                clauses.append(f"linked to {obj_list} through leadership")
             elif pred == "known_for":
-                rel_sentences.append(f"known for {obj_list}")
+                clauses.append(f"known for {obj_list}")
+            elif pred == "founded":
+                # Subject founded the objects — "is the founder of X", not "founded by X".
+                clauses.append(f"listed as the founder of {obj_list}")
+            elif pred == "produces":
+                clauses.append(f"produces {obj_list}")
+            elif pred == "develops":
+                clauses.append(f"develops {obj_list}")
+            elif pred == "publishes":
+                clauses.append(f"publishes {obj_list}")
             else:
-                rel_sentences.append(f"{verb_phrase} {obj_list}")
+                clauses.append(f"linked to {obj_list} via {pred}")
 
-        if rel_sentences:
-            rel_text = "; ".join(rel_sentences)
+        if clauses:
             label = entity["label"] if entity else subject
-            parts.append(
-                f"The overlay also links {label} to: {rel_text}."
-            )
+            clause_text = _join_clauses(clauses)
+            parts.append(f"In the overlay, {label} is {clause_text}.")
 
     return " ".join(parts).strip()
 
@@ -238,6 +242,17 @@ def _render_stability_check(args: dict) -> str:
 # ------------------------------------------------------------------
 # Helpers
 # ------------------------------------------------------------------
+
+
+def _join_clauses(clauses: list[str]) -> str:
+    """Join predicate clauses with commas and a final 'and'."""
+    if not clauses:
+        return ""
+    if len(clauses) == 1:
+        return clauses[0]
+    if len(clauses) == 2:
+        return f"{clauses[0]} and {clauses[1]}"
+    return ", ".join(clauses[:-1]) + f", and {clauses[-1]}"
 
 
 def _join_list(items: list[str]) -> str:

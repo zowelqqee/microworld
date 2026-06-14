@@ -1,12 +1,63 @@
-# worldpgt — Microworld Controlled Continuation Benchmark
+# worldpgt - Microworld Controlled Continuation and QA
 
-Explicit-policy, audit-aware continuation system benchmarked against a GPT-2 baseline on a controlled ambiguity-resolution task.
+Explicit-policy, audit-aware continuation and QA system over deterministic
+memory, accepted facts, and isolated knowledge overlays.
 
 ---
 
 ## Purpose
 
-This package measures what happens when a small deterministic system with explicit sense memory attempts controlled continuation of ambiguous prompts, compared to open-ended next-token generation by GPT-2. The benchmark is narrow and intentional: 120 prompts, 6 ambiguous terms, 8 difficulty categories.
+This package measures what happens when a small deterministic system with
+explicit sense memory and accepted knowledge attempts controlled continuation,
+ambiguity-resolution QA, and entity QA over an isolated wiki candidate overlay.
+The benchmark scope is narrow and intentional. It is not an open-domain GPT
+replacement, and it does not claim LLM-level open-domain performance.
+
+Microworld/worldpgt explores whether useful controlled QA, memory, reasoning,
+and knowledge ingestion can be built without neural weights, backpropagation,
+fine-tuning, GPT-style next-token rendering, embeddings, GPU, or network calls.
+LLMs learn to speak and world understanding emerges as a side effect.
+Microworld tries to build explicit world memory first, then use language as an
+interface to that world.
+
+---
+
+## Current Status
+
+Microworld currently demonstrates a lightweight, deterministic, auditable QA
+architecture over explicit memory and isolated knowledge overlays. It is strong
+on controlled benchmark domains, explicit memory, source-aware facts, safe
+abstention/audit, and low runtime cost. It is limited by narrow scope, curated
+inputs, rule/curriculum-based analyzers, and surface renderer quality.
+
+Across three controlled QA benchmark families, Microworld currently handles 100
+prompts with 0 wrong decisions: 84 answered and 16 safely audited. Answer
+precision is 1.0 on each benchmark family. These results are scoped to the
+supported controlled domains and should not be presented as open-domain
+LLM-level performance.
+
+| Benchmark | Input / artifact | Items | Correct / errors | Answered | Audited | Precision | Time | Peak RSS |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Main QA | `experiments/qa_prompts_v1.csv` / `answer_planner_v1_summary.json` | 48 | 48 correct, 0 wrong | 42 | 6 | 1.0 | ~0.070 s | ~24.73 MB |
+| Generalization QA | `experiments/qa_generalization_test_v1.csv` / `qa_generalization_test_v1_summary.json` | 24 | 24 correct, 0 wrong | 19 | 5 | 1.0 | ~0.140 s | ~24.61 MB |
+| Entity QA | `experiments/entity_qa_prompts_v1.csv` / `entity_qa_v1_summary.json` | 28 | 28 correct, 0 wrong | 23 | 5 | 1.0 | ~0.060 s | ~23.61 MB |
+| Wiki ingestion v2 | `experiments/wiki_pages_curated_v2.json` / `wiki_ingestion_v2_summary.json` | 67 candidates | 0 review errors | - | - | - | ~0.070 s | ~23.56 MB |
+| Wiki overlay v1 | `experiments/accepted_wiki_memory_overlay_v1_summary.json` | 67 overlay items | 0 skipped | - | - | - | ~0.060 s | ~23.41 MB |
+
+The current Python implementation runs these small controlled benchmark batches
+in about 0.06-0.14 seconds with roughly 24 MB peak RSS. These are single-run
+local measurements from `/usr/bin/time -l` on macOS and should be treated as
+order-of-magnitude efficiency indicators, not final benchmark claims.
+
+Current local test status:
+
+```text
+python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       -> 34 passed
+python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  -> 26 passed
+python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            -> 33 passed
+python3 -m pytest worldpgt/tests -q                                 -> 822 passed
+python3 -m pytest -q                                                -> 1865 passed
+```
 
 ---
 
@@ -39,6 +90,22 @@ worldpgt/
     semantic_language_realizer.py  clause-level language realization
     contrast_realizer.py      contrast explanations for distinguish_senses
     accepted_memory_provider.py   accepted knowledge memory provider
+  knowledge/           deterministic offline wiki-style ingestion and overlay
+    wiki_ingestion_v2_types.py
+    wiki_page_reader.py
+    wiki_entity_extractor.py
+    wiki_claim_extractor.py
+    wiki_claim_normalizer.py
+    wiki_ingestion_v2.py
+    wiki_memory_overlay_types.py
+    wiki_candidate_overlay_builder.py
+    wiki_memory_overlay_provider.py
+  entity_qa/           controlled QA over isolated wiki overlay
+    types.py
+    entity_question_analyzer.py
+    entity_answer_planner.py
+    entity_answer_renderer.py
+    entity_answer_validator.py
   baselines/
     gpt2/              GPT-2 inference via local nanoGPT
       run_gpt2_baseline.py       inference runner
@@ -64,6 +131,21 @@ worldpgt/
     runtime_benchmark_summary.json
     rss_benchmark_summary.json
     state_size_benchmark_summary.json
+    accepted_knowledge_memory_v1.json
+    qa_prompts_v1.csv
+    answer_planner_v1_summary.json
+    qa_generalization_test_v1.csv
+    qa_generalization_test_v1_summary.json
+    wiki_pages_curated_v2.json
+    wiki_ingestion_v2_candidates.{json,csv}
+    wiki_ingestion_v2_summary.json
+    wiki_ingestion_v2_review.json
+    accepted_wiki_memory_overlay_v1.json
+    accepted_wiki_memory_overlay_v1_summary.json
+    accepted_wiki_memory_overlay_v1_skipped.json
+    entity_qa_prompts_v1.csv
+    entity_qa_v1_outputs.csv
+    entity_qa_v1_summary.json
     ...                                       version comparison JSONs
   tests/                                      unit/integration tests (incl. surface-repair gate)
 ```
@@ -81,6 +163,38 @@ worldpgt/
 ---
 
 ## Architecture Summary
+
+### Controlled QA and Knowledge Overlay Pipeline
+
+Accepted-memory QA:
+
+```text
+accepted memory artifact
+  -> AcceptedMemoryProvider
+  -> QuestionAnalyzer / GeneralizedQuestionAnalyzer
+  -> AnswerPlanner
+  -> AnswerRenderer
+  -> AnswerValidator / AuditRenderer
+  -> benchmark summary
+```
+
+Wiki-style entity QA:
+
+```text
+local curated source pages
+  -> deterministic ingestion candidates
+  -> isolated wiki candidate memory overlay
+  -> WikiMemoryOverlayProvider
+  -> EntityQuestionAnalyzer
+  -> EntityAnswerPlanner
+  -> EntityAnswerRenderer
+  -> EntityAnswerValidator / audit
+  -> entity QA benchmark
+```
+
+Accepted memory v1 and the wiki overlay are separate artifacts. Wiki ingestion
+v2 is deterministic, offline, local-fixture only, candidate-generation only, and
+does not modify accepted memory or runtime memory.
 
 ### Microworld Pipeline
 
@@ -295,19 +409,22 @@ python3 -m worldpgt.benchmarks.full_comparison_report \
 ### Run tests
 
 ```bash
-python3 -m pytest worldpgt/tests/test_answer_planner_v1.py -q  # 95 passed
-python3 -m pytest worldpgt/tests -q                             # 702 passed
-python3 -m pytest -q                                            # 1745 passed
+python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       # 34 passed
+python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  # 26 passed
+python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            # 33 passed
+python3 -m pytest worldpgt/tests -q                                 # 822 passed
+python3 -m pytest -q                                                # 1865 passed
 ```
 
 ---
 
 ## QA Layer
 
-worldpgt includes a small controlled QA assistant over explicit accepted
-memory. It answers, distinguishes, explains, or safely audits ambiguous-term
-questions through a transparent planner/renderer/validator pipeline — no
-neural weights, no model-based generation.
+worldpgt includes controlled QA assistants over explicit accepted memory and an
+isolated wiki candidate overlay. They answer, distinguish, explain, or safely
+audit supported questions through transparent analyzer/planner/renderer/
+validator pipelines - no neural weights, no embeddings, no network calls, and
+no model-based generation.
 
 ### Architecture
 
@@ -325,8 +442,8 @@ question text
   → result: answer text or helpful audit text
 ```
 
-All decisions are deterministic and based on accepted memory. No weights.
-No backpropagation. No GPT renderer. No generic fallback.
+All decisions are deterministic and based on accepted memory or the isolated
+overlay. No weights. No backpropagation. No GPT renderer. No generic fallback.
 
 ### Accepted Memory Provider
 
@@ -336,6 +453,7 @@ fact items:      163
 pattern items:    58
 ambiguous terms:   6  (bank, bat, crane, rock, seal, spring)
 senses:           12
+positive cues:   104
 ```
 
 ### Main QA Benchmark (48 controlled questions)
@@ -355,18 +473,115 @@ quality_flagged:    0
 
 ```text
 qa_total:          24
-correct_count:     12
-wrong_count:       12
-accuracy:          0.5
-answer_count:       8
-audit_count:       16
-answer_precision:  0.875
+correct_count:     24
+wrong_count:        0
+accuracy:          1.0
+answer_count:      19
+audit_count:        5
+answer_precision:  1.0
 quality_flagged:    0
 ```
 
-The bottleneck is the `QuestionAnalyzer` — the system audits conservatively
-on unseen phrasings rather than forcing a wrong answer. The renderer and
-planner are not the failure point.
+Supported generalized forms include:
+
+```text
+Is a bat with wings an animal or sports equipment?
+The seal was swimming near the coast. What kind of seal is it?
+The crane had a hook and lifted a load. What does crane mean?
+The band played rock on stage. What does rock mean?
+Why do wings point to bat as an animal?
+```
+
+Conflicting cue prompts audit rather than force an answer.
+
+### Wiki Ingestion v2
+
+Wikipedia/Wikidata-style ingestion v2 is deterministic, offline, and local
+fixture only. It creates reviewable candidates and does not modify accepted
+memory or runtime memory.
+
+```text
+pages_total:              10
+candidates_total:         67
+entity_card:              10
+definition_claim:         10
+relation_claim:           19
+context_link:             27
+source_qualified_fact:     1
+stable:                   10
+semi_stable:              19
+volatile:                  1
+low risk:                 20
+medium risk:              19
+high risk:                 1
+review_errors_count:       0
+review_warnings_count:     0
+safe_for_runtime_memory: false
+```
+
+### Wiki Candidate Memory Overlay v1
+
+The wiki candidate overlay is isolated from general runtime memory and from
+accepted memory v1. It is safe for the controlled entity QA overlay, not for
+general runtime use.
+
+```text
+source_candidates_total:      67
+overlay_items_total:          67
+skipped_candidates_total:      0
+overlay_entity:               10
+overlay_definition:           10
+overlay_relation:             19
+overlay_context_link:         27
+overlay_source_fact:           1
+source_facts_count:            1
+weak_context_links_count:     27
+safe_for_general_runtime:  false
+safe_for_entity_qa_overlay: true
+```
+
+### Entity QA Benchmark v1
+
+Entity QA is controlled QA over the isolated wiki overlay. Supported intents:
+`define_entity`, `relation_lookup`, `link_explanation`, `source_fact_lookup`,
+and `unknown_or_unsupported`.
+
+```text
+qa_total:                  28
+correct_count:             28
+wrong_count:                0
+answer_count:              23
+audit_count:                5
+quality_flagged:            0
+accuracy:                 1.0
+answer_precision:         1.0
+source_facts_used:          3
+weak_context_links_used:    4
+safe_for_general_runtime: false
+```
+
+Example entity QA outputs:
+
+```text
+What does SpaceX develop?
+SpaceX develops rockets and spacecraft.
+
+Why is Forbes linked to Elon Musk?
+Forbes is linked from the Elon Musk page as a weak contextual mention. It is
+not treated as a stable factual relation by this overlay.
+
+What does Forbes estimate about Elon Musk?
+According to Forbes as of 2026-06, Elon Musk's estimated net worth is US$1.1
+trillion. This is a volatile source-qualified estimate and should be rechecked.
+```
+
+Current/real-time questions audit unless the needed fact is present as an
+accepted source-qualified fact. For example, `What is Tesla's current stock
+price?` should audit.
+
+Known caveat: renderer polish is ongoing. A directional relation verbalization
+bug can make `Who is Elon Musk?` say `founded by SpaceX`; this is a surface
+verbalization issue, not a knowledge, planner, or overlay issue.
 
 ### Example Outputs
 
@@ -406,12 +621,45 @@ python3 -m worldpgt.experiments.run_answer_planner_v1 \
   --accepted-memory worldpgt/experiments/accepted_knowledge_memory_v1.json \
   --output-csv worldpgt/experiments/qa_generalization_test_v1_outputs.csv \
   --output-json worldpgt/experiments/qa_generalization_test_v1_summary.json
+
+# Wiki ingestion v2
+python3 -m worldpgt.experiments.run_wiki_ingestion_v2
+
+# Wiki overlay v1
+python3 -m worldpgt.experiments.build_wiki_memory_overlay_v1
+
+# Entity QA v1
+python3 -m worldpgt.experiments.run_entity_qa_v1
 ```
+
+---
+
+## Safety
+
+- Audit is a safe decision, not a failure, when evidence is missing,
+  conflicting, unsupported, or volatile.
+- Source-qualified volatile facts require recheck before operational use.
+- Weak context links are contextual mentions, not stable factual relations.
+- Current unsupported questions audit rather than using a generic fallback.
+- Accepted memory v1 is not modified by wiki ingestion or wiki overlay builds.
+- `safe_for_general_runtime` remains false for the wiki overlay.
+- Validators and planner thresholds are part of the safety boundary and should
+  not be weakened to increase coverage.
 
 ---
 
 ## Limitations
 
+- Controlled benchmark results only; not open-domain QA.
+- Narrow scope: 6 ambiguous terms in accepted-memory QA and 10 local pages in
+  the current wiki fixture.
+- Curated corpus and accepted memory are doing important work.
+- Analyzers are rule/curriculum-based and need explicit expansion.
+- Renderer surface quality is still being polished.
+- The wiki overlay is isolated and is not accepted memory v1.
+- Weak context links are not facts.
+- Source-qualified volatile facts require recheck.
+- No claim that Microworld is an LLM replacement.
 - 120-row benchmark. Results do not generalize beyond this controlled task.
 - GPT-2 is an old base model (2019), not an instruction-tuned assistant.
 - GPT-2 audit labels were assigned by a human pass after generation, not by a native model gate.
@@ -419,6 +667,17 @@ python3 -m worldpgt.experiments.run_answer_planner_v1 \
 - Microworld coverage is low (37/120 = 30.8%). The system abstains on ambiguous or weak-cue prompts, and the surface repair layer audits one further row it cannot repair without subject drift.
 - RSS figures are approximate and environment-dependent.
 - Sense memory covers 6 terms. Performance on out-of-vocabulary terms is undefined.
+
+---
+
+## Next Steps
+
+1. Fix the directional relation verbalization bug in entity answer rendering.
+2. Expand Entity QA from 28 to 100 prompts on the same 10-page overlay.
+3. Expand the curated wiki corpus from 10 to 50 pages.
+4. Add cross-page relation QA.
+5. Add a repeated efficiency benchmark with median/min/max.
+6. Compare with a GPT-style baseline on the same controlled questions.
 
 ---
 
@@ -448,4 +707,15 @@ worldpgt/experiments/gpt2_continuation_audit_summary.json
 worldpgt/experiments/runtime_benchmark_summary.json
 worldpgt/experiments/rss_benchmark_summary.json
 worldpgt/experiments/state_size_benchmark_summary.json
+worldpgt/experiments/answer_planner_v1_summary.json
+worldpgt/experiments/qa_generalization_test_v1_summary.json
+worldpgt/experiments/wiki_ingestion_v2_candidates.json
+worldpgt/experiments/wiki_ingestion_v2_candidates.csv
+worldpgt/experiments/wiki_ingestion_v2_summary.json
+worldpgt/experiments/wiki_ingestion_v2_review.json
+worldpgt/experiments/accepted_wiki_memory_overlay_v1.json
+worldpgt/experiments/accepted_wiki_memory_overlay_v1_summary.json
+worldpgt/experiments/accepted_wiki_memory_overlay_v1_skipped.json
+worldpgt/experiments/entity_qa_v1_outputs.csv
+worldpgt/experiments/entity_qa_v1_summary.json
 ```

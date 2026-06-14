@@ -57,7 +57,7 @@ def _sha1(path: Path) -> str:
 
 
 # ---------------------------------------------------------------------------
-# 1. "Who is Elon Musk?" answers correctly
+# 1. "Who is Elon Musk?" answers correctly, directional relation fix verified
 # ---------------------------------------------------------------------------
 
 
@@ -65,6 +65,23 @@ def test_who_is_elon_musk(planner):
     decision, answer = _answer(planner, "Who is Elon Musk?")
     assert decision == "answer"
     assert "businessman" in answer.lower()
+
+
+def test_who_is_elon_musk_no_founded_by_spacex(planner):
+    """founded relation must be expressed from subject's POV: founder of SpaceX."""
+    _, answer = _answer(planner, "Who is Elon Musk?")
+    assert "founded by spacex" not in answer.lower()
+
+
+def test_who_is_elon_musk_contains_founder_of_spacex(planner):
+    _, answer = _answer(planner, "Who is Elon Musk?")
+    assert "founded spacex" in answer.lower() or "founder of spacex" in answer.lower()
+
+
+def test_who_is_elon_musk_no_awkward_double_prefix(planner):
+    """Avoid 'The overlay also links X to: linked to ...' double-prefix."""
+    _, answer = _answer(planner, "Who is Elon Musk?")
+    assert "to: linked to" not in answer.lower()
 
 
 # ---------------------------------------------------------------------------
@@ -373,3 +390,33 @@ def test_analyze_recheck():
     a = analyze("Why should Musk's net worth be rechecked?")
     assert a.intent == "source_fact_lookup"
     assert a.predicate_hint == "recheck_reason"
+
+
+# ---------------------------------------------------------------------------
+# Directional relation correctness (founder lookup)
+# ---------------------------------------------------------------------------
+
+
+def test_who_founded_spacex_contains_elon_musk(planner):
+    """founder_lookup query lists founders (subjects), not objects."""
+    decision, answer = _answer(planner, "Who founded SpaceX?")
+    assert decision == "answer"
+    assert "Elon Musk" in answer
+
+
+def test_who_founded_tesla_contains_founders(planner):
+    decision, answer = _answer(planner, "Who founded Tesla?")
+    assert decision == "answer"
+    assert "Martin" in answer
+    assert "Marc" in answer
+
+
+def test_founded_direction_consistent(planner):
+    """'Who is Elon Musk?' must say founder OF SpaceX; 'Who founded Tesla?' must list founders BY name."""
+    _, musk_answer = _answer(planner, "Who is Elon Musk?")
+    _, tesla_answer = _answer(planner, "Who founded Tesla?")
+    # Musk answer: Musk is the founder of SpaceX.
+    assert "founder of spacex" in musk_answer.lower() or "founded spacex" in musk_answer.lower()
+    # Tesla answer: founded by Martin Eberhard and Marc Tarpenning.
+    assert "martin" in tesla_answer.lower()
+    assert "marc" in tesla_answer.lower()

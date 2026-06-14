@@ -1,13 +1,13 @@
 {
   "accuracy": 1.0,
-  "answer_count": 19,
+  "answer_count": 42,
   "answer_precision": 1.0,
-  "audit_count": 5,
+  "audit_count": 6,
   "by_intent": {
     "classify_context": {
-      "answer": 0,
-      "audit": 2,
-      "correct": 2,
+      "answer": 12,
+      "audit": 0,
+      "correct": 12,
       "wrong": 0
     },
     "define_sense": {
@@ -17,63 +17,63 @@
       "wrong": 0
     },
     "distinguish_senses": {
-      "answer": 3,
+      "answer": 6,
       "audit": 0,
-      "correct": 3,
+      "correct": 6,
       "wrong": 0
     },
     "explain_cue": {
-      "answer": 4,
+      "answer": 12,
       "audit": 0,
-      "correct": 4,
+      "correct": 12,
       "wrong": 0
     },
     "unknown_or_ambiguous": {
       "answer": 0,
-      "audit": 3,
-      "correct": 3,
+      "audit": 6,
+      "correct": 6,
       "wrong": 0
     }
   },
   "by_term": {
     "bank": {
-      "answer": 4,
-      "audit": 0,
-      "correct": 4,
+      "answer": 7,
+      "audit": 1,
+      "correct": 8,
       "wrong": 0
     },
     "bat": {
-      "answer": 4,
+      "answer": 7,
       "audit": 1,
-      "correct": 5,
+      "correct": 8,
       "wrong": 0
     },
     "crane": {
-      "answer": 3,
-      "audit": 2,
-      "correct": 5,
+      "answer": 7,
+      "audit": 1,
+      "correct": 8,
       "wrong": 0
     },
     "rock": {
-      "answer": 3,
-      "audit": 0,
-      "correct": 3,
+      "answer": 7,
+      "audit": 1,
+      "correct": 8,
       "wrong": 0
     },
     "seal": {
-      "answer": 2,
+      "answer": 7,
       "audit": 1,
-      "correct": 3,
+      "correct": 8,
       "wrong": 0
     },
     "spring": {
-      "answer": 3,
+      "answer": 7,
       "audit": 1,
-      "correct": 4,
+      "correct": 8,
       "wrong": 0
     }
   },
-  "correct_count": 24,
+  "correct_count": 48,
   "provider_usage": {
     "provider_enabled": true,
     "provider_items_used": 221,
@@ -86,7 +86,7 @@
       "spring"
     ]
   },
-  "qa_total": 24,
+  "qa_total": 48,
   "quality_flagged": 0,
   "safety": {
     "generic_fallback_added": false,

@@ -1,9 +1,10 @@
 # worldmvp / Microworld
 
-Microworld is an experimental graph-based memory, reasoning, and learning
-system. It explores whether useful behavioral learning can happen through
-explicit graph state, audit feedback, and trust calibration without neural
-weights, backpropagation, or fine-tuning.
+Microworld is an experimental explicit-memory, graph, trust, policy, and audit
+based reasoning and QA system. It explores whether useful controlled QA,
+memory, reasoning, and knowledge ingestion can be built without neural weights,
+backpropagation, fine-tuning, GPT-style next-token rendering, embeddings, GPU,
+or network calls.
 
 The project is intentionally research-oriented. It does not claim that symbolic
 graphs are generally superior to neural networks. It explores a complementary
@@ -11,17 +12,23 @@ path: compact explicit memory and trust learning for graph reasoning, where
 behavior can be audited, compressed, transferred, and corrected without updating
 neural weights.
 
+LLMs learn to speak and world understanding emerges as a side effect.
+Microworld tries to build explicit world memory first, then use language as an
+interface to that world.
+
 Current test status:
 
 ```text
-1745 passing tests
+python3 -m pytest -q  ->  1865 passed
 ```
 
 ## Navigation
 
 * [Why This Exists](#why-this-exists)
+* [Current Status](#current-status)
 * [Current Architecture](#current-architecture)
 * [Latest Experimental Results](#latest-experimental-results)
+  * [Current Controlled QA Results](#current-controlled-qa-results)
   * [Human Audit Baseline](#human-audit-baseline)
   * [Audit-Driven Trust Learning](#audit-driven-trust-learning)
   * [Feedback Compression](#feedback-compression)
@@ -40,6 +47,25 @@ Current test status:
 * [Limitations](#limitations)
 * [Next Steps](#next-steps)
 * [Status](#status)
+
+## Current Status
+
+Microworld currently demonstrates a lightweight, deterministic, auditable QA
+architecture over explicit memory and isolated knowledge overlays. It is strong
+on controlled benchmark domains, explicit memory, source-aware facts, safe
+abstention/audit, and low runtime cost. It is limited by narrow scope, curated
+inputs, rule/curriculum-based analyzers, and surface renderer quality.
+
+Across three controlled QA benchmark families, Microworld currently handles 100
+prompts with 0 wrong decisions: 84 answered and 16 safely audited. Answer
+precision is 1.0 on each benchmark family. These results are scoped to the
+supported controlled domains and should not be presented as open-domain
+LLM-level performance.
+
+The current Python implementation runs these small controlled benchmark batches
+in about 0.06-0.14 seconds with roughly 24 MB peak RSS. These are single-run
+local measurements and should be treated as order-of-magnitude efficiency
+indicators, not final benchmark claims.
 
 ## Why This Exists
 
@@ -90,6 +116,19 @@ The current system includes:
 * feedback compression benchmark
 * suppression audit
 * quality-aware suppression policy
+* controlled continuation benchmark
+* surface repair layer
+* prompt-tail compatibility gate
+* audit reason mining
+* coverage mode
+* coverage gap curriculum
+* knowledge ingestion pipeline
+* accepted memory provider
+* answer planner QA
+* generalized question analyzer
+* Wikipedia/Wikidata-style ingestion v2
+* wiki candidate memory overlay v1
+* entity QA benchmark v1
 * name/surname generation
 * audit-driven bad-pattern mining
 * makemore-vs-Microworld efficiency benchmark
@@ -115,7 +154,43 @@ The key design choice is separation of concerns:
 * decision policy decides what to suppress or keep
 * normalization should repair source and target spelling/canonicalization issues
 
+The current entity-knowledge QA path is intentionally isolated:
+
+```text
+curated source pages
+-> deterministic ingestion candidates
+-> isolated wiki candidate memory overlay
+-> overlay provider
+-> entity question analyzer
+-> entity answer planner
+-> entity answer renderer
+-> validator / audit
+-> controlled benchmark
+```
+
 ## Latest Experimental Results
+
+### Current Controlled QA Results
+
+| Benchmark | Items | Correct | Wrong | Answered | Audited | Precision | Time | Peak RSS |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Main accepted-memory QA | 48 | 48 | 0 | 42 | 6 | 1.0 | ~0.070 s | ~24.73 MB |
+| Generalization QA | 24 | 24 | 0 | 19 | 5 | 1.0 | ~0.140 s | ~24.61 MB |
+| Entity QA over wiki overlay | 28 | 28 | 0 | 23 | 5 | 1.0 | ~0.060 s | ~23.61 MB |
+| Wiki ingestion v2 | 67 candidates | review errors: 0 | - | - | - | - | ~0.070 s | ~23.56 MB |
+| Wiki overlay v1 | 67 overlay items | skipped: 0 | - | - | - | - | ~0.060 s | ~23.41 MB |
+
+Accepted-memory QA uses
+`worldpgt/experiments/accepted_knowledge_memory_v1.json`: 221 accepted items
+(163 fact items, 58 pattern items), 6 ambiguous terms, 12 senses, and 104
+positive cues. Supported intents are `define_sense`, `classify_context`,
+`explain_cue`, `distinguish_senses`, and `unknown_or_ambiguous`.
+
+Wikipedia/Wikidata-style ingestion v2 is deterministic, offline, local-fixture
+only, and candidate-generation only. It does not modify accepted memory or
+runtime memory. Wiki candidate overlay v1 remains isolated from general runtime
+memory; `safe_for_general_runtime` is false and
+`safe_for_entity_qa_overlay` is true.
 
 ### Human Audit Baseline
 
@@ -570,10 +645,11 @@ python3 examples/makemore_vs_microworld_benchmark.py \
 
 ### worldpgt QA Layer
 
-Microworld/worldpgt now contains a small controlled QA assistant over explicit
-accepted memory. It can answer, distinguish, explain, or safely audit
-ambiguous-term questions using a transparent planner/renderer/validator
-pipeline, without neural weights or model-based generation.
+Microworld/worldpgt contains controlled QA assistants over explicit accepted
+memory and an isolated wiki candidate overlay. They answer, distinguish,
+explain, or safely audit supported questions using transparent
+analyzer/planner/renderer/validator pipelines, without neural weights,
+embeddings, network calls, or model-based generation.
 
 LLMs typically learn language first and compress world knowledge into opaque
 weights. Microworld takes the opposite route: explicit world memory first, then
@@ -581,32 +657,38 @@ controlled language as an interface to that memory.
 
 **What is implemented:**
 
-* question analyzer — detects QA intent from surface form
-* answer planner — selects a response strategy from accepted memory
-* answer renderer — composes semantic answer forms (common clues, contexts,
+* question analyzer - detects QA intent from surface form
+* answer planner - selects a response strategy from accepted memory
+* answer renderer - composes semantic answer forms (common clues, contexts,
   signs, location-aware phrases, action/agency-aware phrases, contrast
   explanations)
-* answer validator — checks correctness and flags quality issues
-* helpful audit rendering — produces a safe, informative abstention when the
+* answer validator - checks correctness and flags quality issues
+* helpful audit rendering - produces a safe, informative abstention when the
   question is ambiguous without sufficient context
-* accepted knowledge memory provider — 221 items (163 facts, 58 patterns,
-  6 ambiguous terms, 12 senses)
+* accepted knowledge memory provider - 221 items (163 facts, 58 patterns,
+  6 ambiguous terms, 12 senses, 104 positive cues)
+* deterministic wiki ingestion v2 - 10 local curated pages to 67 reviewable
+  candidates
+* wiki candidate memory overlay v1 - 67 isolated overlay items, safe for entity
+  QA overlay, not safe for general runtime
+* entity QA v1 - controlled entity questions over the isolated overlay
 
 **Supported QA intents:** `define_sense`, `classify_context`, `explain_cue`,
 `distinguish_senses`, `unknown_or_ambiguous`
 
-**Main QA benchmark (48 controlled questions):**
+**Supported entity QA intents:** `define_entity`, `relation_lookup`,
+`link_explanation`, `source_fact_lookup`, `unknown_or_unsupported`
 
-```text
-qa_total:          48
-answer_count:      42
-audit_count:        6
-correct_count:     48
-wrong_count:        0
-accuracy:          1.0
-answer_precision:  1.0
-quality_flagged:    0
-```
+**Current controlled benchmark summary:**
+
+| Benchmark | File | Total | Correct | Wrong | Answered | Audited | Answer precision |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Main QA | `worldpgt/experiments/qa_prompts_v1.csv` | 48 | 48 | 0 | 42 | 6 | 1.0 |
+| Generalization QA | `worldpgt/experiments/qa_generalization_test_v1.csv` | 24 | 24 | 0 | 19 | 5 | 1.0 |
+| Entity QA | `worldpgt/experiments/entity_qa_prompts_v1.csv` | 28 | 28 | 0 | 23 | 5 | 1.0 |
+
+Combined: 100 prompts, 100 correct decisions, 0 wrong answers, 84 answered, 16
+safely audited.
 
 The renderer no longer emits flat `associated with` lists. Example outputs:
 
@@ -630,22 +712,32 @@ Example helpful audit (safe abstention on a genuinely ambiguous question):
 I need context to choose the right meaning.
 ```
 
-**Generalization benchmark (24 novel phrasings):**
+Supported generalized phrasings include:
 
 ```text
-qa_total:          24
-correct_count:     12
-wrong_count:       12
-accuracy:          0.5
-answer_count:       8
-audit_count:       16
-answer_precision:  0.875
-quality_flagged:    0
+Is a bat with wings an animal or sports equipment?
+The seal was swimming near the coast. What kind of seal is it?
+The crane had a hook and lifted a load. What does crane mean?
+The band played rock on stage. What does rock mean?
+Why do wings point to bat as an animal?
 ```
 
-The bottleneck is the `QuestionAnalyzer`, not the renderer. The system
-is safe but conservative on unseen phrasings: it audits rather than forcing
-a wrong answer. Next step is a generalized question-analyzer curriculum.
+Conflicting cue prompts audit rather than force an answer.
+
+Entity QA examples:
+
+```text
+What does SpaceX develop?
+SpaceX develops rockets and spacecraft.
+
+Why is Forbes linked to Elon Musk?
+Forbes is linked from the Elon Musk page as a weak contextual mention. It is
+not treated as a stable factual relation by this overlay.
+
+What does Forbes estimate about Elon Musk?
+According to Forbes as of 2026-06, Elon Musk's estimated net worth is US$1.1
+trillion. This is a volatile source-qualified estimate and should be rechecked.
+```
 
 **Safety constraints:**
 
@@ -653,8 +745,19 @@ a wrong answer. Next step is a generalized question-analyzer curriculum.
 * no backpropagation
 * no fine-tuning
 * no GPT renderer
+* no embeddings
+* no network calls
 * no generic trusted fallback
 * audits are safe behavior, not failures
+* source-qualified volatile facts require recheck
+* weak context links are not treated as facts
+* current unsupported questions audit
+* accepted memory v1 is not modified by wiki overlay
+* `safe_for_general_runtime` remains false for wiki overlay
+
+Known caveat: renderer polish is ongoing. A directional relation verbalization
+bug can make `Who is Elon Musk?` say `founded by SpaceX`; this is a surface
+verbalization issue, not an accepted-memory, planner, or overlay issue.
 
 See `worldpgt/` for the full QA package and
 `worldpgt/RESEARCH_SNAPSHOT.md` for the research history.
@@ -702,6 +805,16 @@ Start with:
 
 ## Limitations
 
+* Microworld is not an open-domain GPT replacement.
+* Current QA results are controlled benchmark results over supported domains.
+* Scope remains narrow and inputs are curated.
+* The analyzers are rule/curriculum-based and need explicit expansion.
+* The wiki corpus is a 10-page local fixture, not live Wikipedia/Wikidata.
+* The wiki overlay is isolated and not accepted memory v1 or general runtime
+  memory.
+* Weak context links are contextual mentions, not factual relations.
+* Source-qualified volatile facts require recheck.
+* Renderer surface quality is still being polished.
 * Current results are exploratory and based on bounded graph reasoning tasks.
 * The ConceptNet work uses filtered samples, not a full benchmark.
 * Manual audits are still small.
@@ -741,17 +854,18 @@ Start with:
 
 **worldpgt QA layer:**
 
-1. GeneralizedQuestionAnalyzer v1 — support more phrasings for
-   `classify_context`, `explain_cue`, and `distinguish_senses`; preserve safety
-   on conflicting prompts
-2. Failure-driven analyzer curriculum — log failed prompt, failure reason,
-   analyzer pattern proposal; accept only if wrong_count does not increase on
-   main QA benchmark
-3. Interactive QA playground — one-off CLI:
+1. Fix the directional relation verbalization bug in entity answer rendering.
+2. Expand Entity QA from 28 to 100 prompts on the same 10-page overlay.
+3. Expand the curated wiki corpus from 10 to 50 pages.
+4. Add cross-page relation QA.
+5. Add a repeated efficiency benchmark with median/min/max.
+6. Compare with a GPT-style baseline on the same controlled questions.
+7. Continue generalized analyzer curriculum work while preserving safety on
+   conflicting prompts.
+8. Interactive QA playground - one-off CLI:
    `python3 -m worldpgt.experiments.ask_answer_planner_v1 --question "..."`
    with optional JSON and trace output
-4. Larger generalization benchmark — expand from 24 prompts to 100–200 prompts
-5. Scale accepted memory — more terms, more senses, disk/index-backed provider
+9. Scale accepted memory - more terms, more senses, disk/index-backed provider
    later
 
 ## Status
