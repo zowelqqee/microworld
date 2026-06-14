@@ -16,6 +16,17 @@ from worldpgt.knowledge.fact_candidate_extractor import FactCandidateExtractor
 from worldpgt.knowledge.fact_normalizer import FactNormalizer
 from worldpgt.knowledge.memory_update_proposer import MemoryUpdateProposer
 
+# Wikipedia/Wikidata Ingestion v2 — read-only candidate generation only.
+from worldpgt.knowledge.wiki_page_reader import WikiPageReader
+from worldpgt.knowledge.wiki_entity_extractor import WikiEntityExtractor
+from worldpgt.knowledge.wiki_claim_extractor import WikiClaimExtractor
+from worldpgt.knowledge.wiki_ingestion_v2 import (
+    WikiIngestionV2,
+    review_candidates,
+    deduplicate,
+    build_summary,
+)
+
 __all__ = [
     "CuratedSnippet",
     "FactCandidate",
@@ -25,4 +36,11 @@ __all__ = [
     "FactCandidateExtractor",
     "FactNormalizer",
     "MemoryUpdateProposer",
+    "WikiPageReader",
+    "WikiEntityExtractor",
+    "WikiClaimExtractor",
+    "WikiIngestionV2",
+    "review_candidates",
+    "deduplicate",
+    "build_summary",
 ]

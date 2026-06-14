@@ -1,0 +1,223 @@
+[
+  {
+    "page_id": "wiki:Elon_Musk",
+    "title": "Elon Musk",
+    "wikidata_id": "Q317521",
+    "entity_type_hint": "person",
+    "lead_paragraph": "Elon Reeve Musk is a businessman known for his leadership of Tesla and SpaceX. Forbes has estimated Musk's net worth at US$1.1 trillion in recent business rankings.",
+    "infobox": {
+      "born": "June 28, 1971",
+      "occupation": "businessman",
+      "known_for": "Tesla; SpaceX"
+    },
+    "links": [
+      {"surface": "businessman", "target": "Businessperson"},
+      {"surface": "leadership", "target": "Leadership"},
+      {"surface": "Tesla", "target": "Tesla, Inc."},
+      {"surface": "SpaceX", "target": "SpaceX"},
+      {"surface": "Forbes", "target": "Forbes"},
+      {"surface": "net worth", "target": "Net worth"}
+    ],
+    "categories": ["Living people", "Businesspeople", "Technology company founders"],
+    "source": {
+      "source_id": "curated_wiki_v2:elon_musk",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla",
+    "title": "Tesla",
+    "wikidata_id": "Q478214",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "Tesla is an American electric vehicle and clean energy company. Tesla produces electric cars and battery energy storage.",
+    "infobox": {
+      "founded": "2003",
+      "industry": "Automotive",
+      "founder": "Martin Eberhard; Marc Tarpenning",
+      "products": "Electric cars; Battery storage"
+    },
+    "links": [
+      {"surface": "electric vehicle", "target": "Electric vehicle"},
+      {"surface": "clean energy", "target": "Clean energy"},
+      {"surface": "electric cars", "target": "Electric car"}
+    ],
+    "categories": ["Companies", "Electric vehicle manufacturers"],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:SpaceX",
+    "title": "SpaceX",
+    "wikidata_id": "Q193701",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "SpaceX is an aerospace manufacturer and space transportation company. SpaceX develops rockets and spacecraft.",
+    "infobox": {
+      "founded": "2002",
+      "industry": "Aerospace",
+      "founder": "Elon Musk",
+      "products": "Falcon rockets; Dragon spacecraft"
+    },
+    "links": [
+      {"surface": "aerospace", "target": "Aerospace manufacturing"},
+      {"surface": "rockets", "target": "Rocket"},
+      {"surface": "spacecraft", "target": "Spacecraft"}
+    ],
+    "categories": ["Companies", "Spaceflight companies"],
+    "source": {
+      "source_id": "curated_wiki_v2:spacex",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Forbes",
+    "title": "Forbes",
+    "wikidata_id": "Q49325",
+    "entity_type_hint": "publication",
+    "lead_paragraph": "Forbes is an American business magazine. Forbes publishes business rankings and financial lists.",
+    "infobox": {
+      "type": "Business magazine",
+      "founded": "1917"
+    },
+    "links": [
+      {"surface": "business magazine", "target": "Business journalism"},
+      {"surface": "rankings", "target": "Ranking"}
+    ],
+    "categories": ["Magazines", "Business publications"],
+    "source": {
+      "source_id": "curated_wiki_v2:forbes",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Leadership",
+    "title": "Leadership",
+    "wikidata_id": "Q484275",
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Leadership is the ability to guide a group of people toward a common goal. Leadership involves direction and decision making.",
+    "infobox": {},
+    "links": [
+      {"surface": "group", "target": "Social group"},
+      {"surface": "goal", "target": "Goal"}
+    ],
+    "categories": ["Management", "Social concepts"],
+    "source": {
+      "source_id": "curated_wiki_v2:leadership",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Electric_vehicle",
+    "title": "Electric vehicle",
+    "wikidata_id": "Q13629441",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "An electric vehicle is a vehicle that uses one or more electric motors for propulsion. Electric vehicles draw power from a battery.",
+    "infobox": {
+      "type": "Vehicle"
+    },
+    "links": [
+      {"surface": "electric motors", "target": "Electric motor"},
+      {"surface": "battery", "target": "Electric battery"}
+    ],
+    "categories": ["Vehicles", "Electric vehicles"],
+    "source": {
+      "source_id": "curated_wiki_v2:electric_vehicle",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Rocket",
+    "title": "Rocket",
+    "wikidata_id": "Q41291",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A rocket is a vehicle that obtains thrust from a rocket engine. Rockets are used for spaceflight and launch vehicles.",
+    "infobox": {
+      "type": "Vehicle"
+    },
+    "links": [
+      {"surface": "thrust", "target": "Thrust"},
+      {"surface": "rocket engine", "target": "Rocket engine"},
+      {"surface": "spaceflight", "target": "Spaceflight"}
+    ],
+    "categories": ["Spaceflight", "Rocketry"],
+    "source": {
+      "source_id": "curated_wiki_v2:rocket",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Net_worth",
+    "title": "Net worth",
+    "wikidata_id": "Q1132911",
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Net worth is the value of all assets minus liabilities. Net worth is used in personal finance and accounting.",
+    "infobox": {},
+    "links": [
+      {"surface": "assets", "target": "Asset"},
+      {"surface": "liabilities", "target": "Liability"}
+    ],
+    "categories": ["Accounting", "Personal finance"],
+    "source": {
+      "source_id": "curated_wiki_v2:net_worth",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Businessperson",
+    "title": "Businessperson",
+    "wikidata_id": null,
+    "entity_type_hint": "concept",
+    "lead_paragraph": "A businessperson is a person who engages in commercial activity. Businesspeople work in trade and industry.",
+    "infobox": {},
+    "links": [
+      {"surface": "commercial", "target": "Commerce"},
+      {"surface": "trade", "target": "Trade"}
+    ],
+    "categories": ["Occupations", "Business occupations"],
+    "source": {
+      "source_id": "curated_wiki_v2:businessperson",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Bloomberg_News",
+    "title": "Bloomberg News",
+    "wikidata_id": "Q1505829",
+    "entity_type_hint": "publication",
+    "lead_paragraph": "Bloomberg News is an international news organization. Bloomberg publishes financial market coverage and wealth indexes.",
+    "infobox": {
+      "type": "News agency",
+      "founded": "1990"
+    },
+    "links": [
+      {"surface": "news", "target": "Journalism"},
+      {"surface": "financial market", "target": "Financial market"}
+    ],
+    "categories": ["News agencies", "Financial media"],
+    "source": {
+      "source_id": "curated_wiki_v2:bloomberg_news",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  }
+]

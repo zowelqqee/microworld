@@ -1,0 +1,68 @@
+item_type,entity_id,subject,label,predicate,relation,object,surface,target,entity_type,source_page,source_name,as_of,claim_type,stability,strength,risk,status,requires_recheck,evidence_text
+entity_card,wikidata:Q317521,,Elon Musk,,,,,,person,Elon Musk,,,,,,low,candidate,,
+definition_claim,,Elon Musk,,is_a,,businessman,,,,Elon Musk,,,,stable,,low,candidate,,Elon Reeve Musk is a businessman known for his leadership of Tesla and SpaceX.
+relation_claim,,Elon Musk,,leader_of,,Tesla,,,,Elon Musk,,,,semi_stable,,medium,candidate,,known for his leadership of Tesla and SpaceX
+relation_claim,,Elon Musk,,leader_of,,SpaceX,,,,Elon Musk,,,,semi_stable,,medium,candidate,,known for his leadership of Tesla and SpaceX
+relation_claim,,Elon Musk,,known_for,,Tesla,,,,Elon Musk,,,,semi_stable,,medium,candidate,,known_for: Tesla; SpaceX
+relation_claim,,Elon Musk,,known_for,,SpaceX,,,,Elon Musk,,,,semi_stable,,medium,candidate,,known_for: Tesla; SpaceX
+context_link,,,,,mentioned_with,,businessman,Businessperson,,Elon Musk,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,leadership,Leadership,,Elon Musk,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,Tesla,"Tesla, Inc.",,Elon Musk,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,SpaceX,SpaceX,,Elon Musk,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,Forbes,Forbes,,Elon Musk,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,net worth,Net worth,,Elon Musk,,,,,weak,,candidate,,
+source_qualified_fact,,Elon Musk,,estimated_net_worth,,US$1.1 trillion,,,,Elon Musk,Forbes,2026-06,time_sensitive_estimate,volatile,,high,candidate,True,Forbes has estimated Musk's net worth at US$1.1 trillion in recent business rankings.
+entity_card,wikidata:Q478214,,Tesla,,,,,,organization,Tesla,,,,,,low,candidate,,
+definition_claim,,Tesla,,is_a,,American electric vehicle and clean energy company,,,,Tesla,,,,stable,,low,candidate,,Tesla is an American electric vehicle and clean energy company.
+relation_claim,,Tesla,,produces,,electric cars,,,,Tesla,,,,semi_stable,,medium,candidate,,produces electric cars and battery energy storage.
+relation_claim,,Tesla,,produces,,battery energy storage,,,,Tesla,,,,semi_stable,,medium,candidate,,produces electric cars and battery energy storage.
+relation_claim,,Tesla,,produces,,Electric cars,,,,Tesla,,,,semi_stable,,medium,candidate,,products: Electric cars; Battery storage
+relation_claim,,Tesla,,produces,,Battery storage,,,,Tesla,,,,semi_stable,,medium,candidate,,products: Electric cars; Battery storage
+relation_claim,,Martin Eberhard,,founded,,Tesla,,,,Tesla,,,,semi_stable,,medium,candidate,,Martin Eberhard founded Tesla
+relation_claim,,Marc Tarpenning,,founded,,Tesla,,,,Tesla,,,,semi_stable,,medium,candidate,,Marc Tarpenning founded Tesla
+context_link,,,,,mentioned_with,,electric vehicle,Electric vehicle,,Tesla,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,clean energy,Clean energy,,Tesla,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,electric cars,Electric car,,Tesla,,,,,weak,,candidate,,
+entity_card,wikidata:Q193701,,SpaceX,,,,,,organization,SpaceX,,,,,,low,candidate,,
+definition_claim,,SpaceX,,is_a,,aerospace manufacturer and space transportation company,,,,SpaceX,,,,stable,,low,candidate,,SpaceX is an aerospace manufacturer and space transportation company.
+relation_claim,,SpaceX,,develops,,rockets,,,,SpaceX,,,,semi_stable,,medium,candidate,,develops rockets and spacecraft.
+relation_claim,,SpaceX,,develops,,spacecraft,,,,SpaceX,,,,semi_stable,,medium,candidate,,develops rockets and spacecraft.
+relation_claim,,SpaceX,,produces,,Falcon rockets,,,,SpaceX,,,,semi_stable,,medium,candidate,,products: Falcon rockets; Dragon spacecraft
+relation_claim,,SpaceX,,produces,,Dragon spacecraft,,,,SpaceX,,,,semi_stable,,medium,candidate,,products: Falcon rockets; Dragon spacecraft
+relation_claim,,Elon Musk,,founded,,SpaceX,,,,SpaceX,,,,semi_stable,,medium,candidate,,Elon Musk founded SpaceX
+context_link,,,,,mentioned_with,,aerospace,Aerospace manufacturing,,SpaceX,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,rockets,Rocket,,SpaceX,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,spacecraft,Spacecraft,,SpaceX,,,,,weak,,candidate,,
+entity_card,wikidata:Q49325,,Forbes,,,,,,publication,Forbes,,,,,,low,candidate,,
+definition_claim,,Forbes,,is_a,,American business magazine,,,,Forbes,,,,stable,,low,candidate,,Forbes is an American business magazine.
+relation_claim,,Forbes,,publishes,,business rankings,,,,Forbes,,,,semi_stable,,medium,candidate,,publishes business rankings and financial lists.
+relation_claim,,Forbes,,publishes,,financial lists,,,,Forbes,,,,semi_stable,,medium,candidate,,publishes business rankings and financial lists.
+context_link,,,,,mentioned_with,,business magazine,Business journalism,,Forbes,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,rankings,Ranking,,Forbes,,,,,weak,,candidate,,
+entity_card,wikidata:Q484275,,Leadership,,,,,,concept,Leadership,,,,,,low,candidate,,
+definition_claim,,Leadership,,is_a,,ability to guide a group of people toward a common goal,,,,Leadership,,,,stable,,low,candidate,,Leadership is the ability to guide a group of people toward a common goal.
+context_link,,,,,mentioned_with,,group,Social group,,Leadership,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,goal,Goal,,Leadership,,,,,weak,,candidate,,
+entity_card,wikidata:Q13629441,,Electric vehicle,,,,,,technology,Electric vehicle,,,,,,low,candidate,,
+definition_claim,,Electric vehicle,,is_a,,vehicle,,,,Electric vehicle,,,,stable,,low,candidate,,An electric vehicle is a vehicle that uses one or more electric motors for propulsion.
+context_link,,,,,mentioned_with,,electric motors,Electric motor,,Electric vehicle,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,battery,Electric battery,,Electric vehicle,,,,,weak,,candidate,,
+entity_card,wikidata:Q41291,,Rocket,,,,,,technology,Rocket,,,,,,low,candidate,,
+definition_claim,,Rocket,,is_a,,vehicle,,,,Rocket,,,,stable,,low,candidate,,A rocket is a vehicle that obtains thrust from a rocket engine.
+context_link,,,,,mentioned_with,,thrust,Thrust,,Rocket,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,rocket engine,Rocket engine,,Rocket,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,spaceflight,Spaceflight,,Rocket,,,,,weak,,candidate,,
+entity_card,wikidata:Q1132911,,Net worth,,,,,,concept,Net worth,,,,,,low,candidate,,
+definition_claim,,Net worth,,is_a,,value of all assets minus liabilities,,,,Net worth,,,,stable,,low,candidate,,Net worth is the value of all assets minus liabilities.
+context_link,,,,,mentioned_with,,assets,Asset,,Net worth,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,liabilities,Liability,,Net worth,,,,,weak,,candidate,,
+entity_card,wiki:Businessperson,,Businessperson,,,,,,concept,Businessperson,,,,,,low,candidate,,
+definition_claim,,Businessperson,,is_a,,person who engages in commercial activity,,,,Businessperson,,,,stable,,low,candidate,,A businessperson is a person who engages in commercial activity.
+context_link,,,,,mentioned_with,,commercial,Commerce,,Businessperson,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,trade,Trade,,Businessperson,,,,,weak,,candidate,,
+entity_card,wikidata:Q1505829,,Bloomberg News,,,,,,publication,Bloomberg News,,,,,,low,candidate,,
+definition_claim,,Bloomberg News,,is_a,,international news organization,,,,Bloomberg News,,,,stable,,low,candidate,,Bloomberg News is an international news organization.
+relation_claim,,Bloomberg News,,publishes,,financial market coverage,,,,Bloomberg News,,,,semi_stable,,medium,candidate,,publishes financial market coverage and wealth indexes.
+relation_claim,,Bloomberg News,,publishes,,wealth indexes,,,,Bloomberg News,,,,semi_stable,,medium,candidate,,publishes financial market coverage and wealth indexes.
+context_link,,,,,mentioned_with,,news,Journalism,,Bloomberg News,,,,,weak,,candidate,,
+context_link,,,,,mentioned_with,,financial market,Financial market,,Bloomberg News,,,,,weak,,candidate,,
