@@ -37,11 +37,12 @@ _COPULA_RE = re.compile(
 )
 
 # Markers at which a definition object is truncated to stay a clean noun phrase.
+# NOTE: " that " and " which " are intentionally excluded so relative clauses
+# that are integral to a technical definition (e.g. "vehicle that uses electric
+# motors") are preserved rather than truncated to a bare noun.
 _DEF_TRUNCATE_MARKERS: tuple[str, ...] = (
     " known for",
     " known as",
-    " that ",
-    " which ",
     " based in",
     " founded ",
     ", ",
