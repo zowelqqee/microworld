@@ -11,14 +11,36 @@
       "known_for": "Tesla; SpaceX"
     },
     "links": [
-      {"surface": "businessman", "target": "Businessperson"},
-      {"surface": "leadership", "target": "Leadership"},
-      {"surface": "Tesla", "target": "Tesla, Inc."},
-      {"surface": "SpaceX", "target": "SpaceX"},
-      {"surface": "Forbes", "target": "Forbes"},
-      {"surface": "net worth", "target": "Net worth"}
+      {
+        "surface": "businessman",
+        "target": "Businessperson"
+      },
+      {
+        "surface": "leadership",
+        "target": "Leadership"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      },
+      {
+        "surface": "Forbes",
+        "target": "Forbes"
+      },
+      {
+        "surface": "net worth",
+        "target": "Net worth"
+      }
     ],
-    "categories": ["Living people", "Businesspeople", "Technology company founders"],
+    "categories": [
+      "Living people",
+      "Businesspeople",
+      "Technology company founders"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:elon_musk",
       "source_type": "curated_wiki_snippet",
@@ -39,11 +61,23 @@
       "products": "Electric cars; Battery storage"
     },
     "links": [
-      {"surface": "electric vehicle", "target": "Electric vehicle"},
-      {"surface": "clean energy", "target": "Clean energy"},
-      {"surface": "electric cars", "target": "Electric car"}
+      {
+        "surface": "electric vehicle",
+        "target": "Electric vehicle"
+      },
+      {
+        "surface": "clean energy",
+        "target": "Clean energy"
+      },
+      {
+        "surface": "electric cars",
+        "target": "Electric car"
+      }
     ],
-    "categories": ["Companies", "Electric vehicle manufacturers"],
+    "categories": [
+      "Companies",
+      "Electric vehicle manufacturers"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:tesla",
       "source_type": "curated_wiki_snippet",
@@ -64,11 +98,23 @@
       "products": "Falcon rockets; Dragon spacecraft"
     },
     "links": [
-      {"surface": "aerospace", "target": "Aerospace manufacturing"},
-      {"surface": "rockets", "target": "Rocket"},
-      {"surface": "spacecraft", "target": "Spacecraft"}
+      {
+        "surface": "aerospace",
+        "target": "Aerospace manufacturing"
+      },
+      {
+        "surface": "rockets",
+        "target": "Rocket"
+      },
+      {
+        "surface": "spacecraft",
+        "target": "Spacecraft"
+      }
     ],
-    "categories": ["Companies", "Spaceflight companies"],
+    "categories": [
+      "Companies",
+      "Spaceflight companies"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:spacex",
       "source_type": "curated_wiki_snippet",
@@ -87,10 +133,19 @@
       "founded": "1917"
     },
     "links": [
-      {"surface": "business magazine", "target": "Business journalism"},
-      {"surface": "rankings", "target": "Ranking"}
+      {
+        "surface": "business magazine",
+        "target": "Business journalism"
+      },
+      {
+        "surface": "rankings",
+        "target": "Ranking"
+      }
     ],
-    "categories": ["Magazines", "Business publications"],
+    "categories": [
+      "Magazines",
+      "Business publications"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:forbes",
       "source_type": "curated_wiki_snippet",
@@ -106,10 +161,19 @@
     "lead_paragraph": "Leadership is the ability to guide a group of people toward a common goal. Leadership involves direction and decision making.",
     "infobox": {},
     "links": [
-      {"surface": "group", "target": "Social group"},
-      {"surface": "goal", "target": "Goal"}
+      {
+        "surface": "group",
+        "target": "Social group"
+      },
+      {
+        "surface": "goal",
+        "target": "Goal"
+      }
     ],
-    "categories": ["Management", "Social concepts"],
+    "categories": [
+      "Management",
+      "Social concepts"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:leadership",
       "source_type": "curated_wiki_snippet",
@@ -127,10 +191,19 @@
       "type": "Vehicle"
     },
     "links": [
-      {"surface": "electric motors", "target": "Electric motor"},
-      {"surface": "battery", "target": "Electric battery"}
+      {
+        "surface": "electric motors",
+        "target": "Electric motor"
+      },
+      {
+        "surface": "battery",
+        "target": "Electric battery"
+      }
     ],
-    "categories": ["Vehicles", "Electric vehicles"],
+    "categories": [
+      "Vehicles",
+      "Electric vehicles"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:electric_vehicle",
       "source_type": "curated_wiki_snippet",
@@ -148,11 +221,23 @@
       "type": "Vehicle"
     },
     "links": [
-      {"surface": "thrust", "target": "Thrust"},
-      {"surface": "rocket engine", "target": "Rocket engine"},
-      {"surface": "spaceflight", "target": "Spaceflight"}
+      {
+        "surface": "thrust",
+        "target": "Thrust"
+      },
+      {
+        "surface": "rocket engine",
+        "target": "Rocket engine"
+      },
+      {
+        "surface": "spaceflight",
+        "target": "Spaceflight"
+      }
     ],
-    "categories": ["Spaceflight", "Rocketry"],
+    "categories": [
+      "Spaceflight",
+      "Rocketry"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:rocket",
       "source_type": "curated_wiki_snippet",
@@ -168,10 +253,19 @@
     "lead_paragraph": "Net worth is the value of all assets minus liabilities. Net worth is used in personal finance and accounting.",
     "infobox": {},
     "links": [
-      {"surface": "assets", "target": "Asset"},
-      {"surface": "liabilities", "target": "Liability"}
+      {
+        "surface": "assets",
+        "target": "Asset"
+      },
+      {
+        "surface": "liabilities",
+        "target": "Liability"
+      }
     ],
-    "categories": ["Accounting", "Personal finance"],
+    "categories": [
+      "Accounting",
+      "Personal finance"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:net_worth",
       "source_type": "curated_wiki_snippet",
@@ -187,10 +281,19 @@
     "lead_paragraph": "A businessperson is a person who engages in commercial activity. Businesspeople work in trade and industry.",
     "infobox": {},
     "links": [
-      {"surface": "commercial", "target": "Commerce"},
-      {"surface": "trade", "target": "Trade"}
+      {
+        "surface": "commercial",
+        "target": "Commerce"
+      },
+      {
+        "surface": "trade",
+        "target": "Trade"
+      }
     ],
-    "categories": ["Occupations", "Business occupations"],
+    "categories": [
+      "Occupations",
+      "Business occupations"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:businessperson",
       "source_type": "curated_wiki_snippet",
@@ -209,12 +312,1293 @@
       "founded": "1990"
     },
     "links": [
-      {"surface": "news", "target": "Journalism"},
-      {"surface": "financial market", "target": "Financial market"}
+      {
+        "surface": "news",
+        "target": "Journalism"
+      },
+      {
+        "surface": "financial market",
+        "target": "Financial market"
+      }
     ],
-    "categories": ["News agencies", "Financial media"],
+    "categories": [
+      "News agencies",
+      "Financial media"
+    ],
     "source": {
       "source_id": "curated_wiki_v2:bloomberg_news",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Martin_Eberhard",
+    "title": "Martin Eberhard",
+    "wikidata_id": null,
+    "entity_type_hint": "person",
+    "lead_paragraph": "Martin Eberhard is an engineer known for co-founding Tesla. Eberhard helped create early electric cars.",
+    "infobox": {
+      "occupation": "engineer"
+    },
+    "links": [
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "electric cars",
+        "target": "Electric car"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:martin_eberhard",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Marc_Tarpenning",
+    "title": "Marc Tarpenning",
+    "wikidata_id": null,
+    "entity_type_hint": "person",
+    "lead_paragraph": "Marc Tarpenning is an engineer known for co-founding Tesla. Tarpenning worked on early electric vehicle technology.",
+    "infobox": {
+      "occupation": "engineer"
+    },
+    "links": [
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "electric vehicle",
+        "target": "Electric vehicle"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:marc_tarpenning",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Gwynne_Shotwell",
+    "title": "Gwynne Shotwell",
+    "wikidata_id": null,
+    "entity_type_hint": "person",
+    "lead_paragraph": "Gwynne Shotwell is a businesswoman known for her leadership of SpaceX. Shotwell oversees rocket operations.",
+    "infobox": {
+      "occupation": "businesswoman"
+    },
+    "links": [
+      {
+        "surface": "leadership",
+        "target": "Leadership"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      },
+      {
+        "surface": "rocket",
+        "target": "Rocket"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:gwynne_shotwell",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Jeff_Bezos",
+    "title": "Jeff Bezos",
+    "wikidata_id": "Q312556",
+    "entity_type_hint": "person",
+    "lead_paragraph": "Jeff Bezos is a businessman known for his leadership of Blue Origin. Forbes has estimated Bezos's net worth at US$200 billion in recent business rankings.",
+    "infobox": {
+      "occupation": "businessman"
+    },
+    "links": [
+      {
+        "surface": "businessman",
+        "target": "Business magnate"
+      },
+      {
+        "surface": "leadership",
+        "target": "Leadership"
+      },
+      {
+        "surface": "Blue Origin",
+        "target": "Blue Origin"
+      },
+      {
+        "surface": "net worth",
+        "target": "Net worth"
+      },
+      {
+        "surface": "Forbes",
+        "target": "Forbes"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:jeff_bezos",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Bernard_Arnault",
+    "title": "Bernard Arnault",
+    "wikidata_id": "Q191300",
+    "entity_type_hint": "person",
+    "lead_paragraph": "Bernard Arnault is a businessman known for his leadership of luxury goods companies. Bloomberg has estimated Arnault's net worth at US$180 billion in its wealth index.",
+    "infobox": {
+      "occupation": "businessman"
+    },
+    "links": [
+      {
+        "surface": "businessman",
+        "target": "Business magnate"
+      },
+      {
+        "surface": "net worth",
+        "target": "Net worth"
+      },
+      {
+        "surface": "Bloomberg",
+        "target": "Bloomberg News"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:bernard_arnault",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Michael_Bloomberg",
+    "title": "Michael Bloomberg",
+    "wikidata_id": "Q607",
+    "entity_type_hint": "person",
+    "lead_paragraph": "Michael Bloomberg is a businessman known for his leadership of Bloomberg LP Forbes has estimated Bloomberg's net worth at US$100 billion in recent business rankings.",
+    "infobox": {
+      "occupation": "businessman"
+    },
+    "links": [
+      {
+        "surface": "businessman",
+        "target": "Business magnate"
+      },
+      {
+        "surface": "Bloomberg LP",
+        "target": "Bloomberg LP"
+      },
+      {
+        "surface": "net worth",
+        "target": "Net worth"
+      },
+      {
+        "surface": "Forbes",
+        "target": "Forbes"
+      }
+    ],
+    "categories": [
+      "Living people",
+      "Businesspeople"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:michael_bloomberg",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Energy",
+    "title": "Tesla Energy",
+    "wikidata_id": null,
+    "entity_type_hint": "organization",
+    "lead_paragraph": "Tesla Energy is a clean energy division of Tesla. Tesla Energy produces solar panels and battery storage.",
+    "infobox": {
+      "industry": "Clean energy",
+      "products": "Solar panels; Battery storage"
+    },
+    "links": [
+      {
+        "surface": "clean energy",
+        "target": "Clean energy"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "battery",
+        "target": "Lithium-ion battery"
+      },
+      {
+        "surface": "solar",
+        "target": "Solar energy"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Energy companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_energy",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Neuralink",
+    "title": "Neuralink",
+    "wikidata_id": "Q28453487",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "Neuralink is a neurotechnology company. Neuralink develops brain-computer interfaces.",
+    "infobox": {
+      "industry": "Neurotechnology",
+      "founder": "Elon Musk"
+    },
+    "links": [
+      {
+        "surface": "neurotechnology",
+        "target": "Neurotechnology"
+      },
+      {
+        "surface": "brain-computer interfaces",
+        "target": "Brain-computer interface"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Technology companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:neuralink",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:The_Boring_Company",
+    "title": "The Boring Company",
+    "wikidata_id": "Q42906900",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "The Boring Company is an infrastructure company. The Boring Company develops tunnels and transportation systems.",
+    "infobox": {
+      "industry": "Infrastructure",
+      "founder": "Elon Musk"
+    },
+    "links": [
+      {
+        "surface": "infrastructure",
+        "target": "Infrastructure"
+      },
+      {
+        "surface": "tunnels",
+        "target": "Tunnel"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Infrastructure companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:the_boring_company",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:xAI",
+    "title": "xAI",
+    "wikidata_id": null,
+    "entity_type_hint": "organization",
+    "lead_paragraph": "xAI is an artificial intelligence company. xAI develops large language models.",
+    "infobox": {
+      "industry": "Artificial intelligence",
+      "founder": "Elon Musk"
+    },
+    "links": [
+      {
+        "surface": "artificial intelligence",
+        "target": "Artificial intelligence"
+      },
+      {
+        "surface": "large language models",
+        "target": "Large language model"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Artificial intelligence companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:xai",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:OpenAI",
+    "title": "OpenAI",
+    "wikidata_id": "Q21708200",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "OpenAI is an artificial intelligence research organization. OpenAI develops large language models.",
+    "infobox": {
+      "industry": "Artificial intelligence"
+    },
+    "links": [
+      {
+        "surface": "artificial intelligence",
+        "target": "Artificial intelligence"
+      },
+      {
+        "surface": "large language models",
+        "target": "Large language model"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Artificial intelligence companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:openai",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:NASA",
+    "title": "NASA",
+    "wikidata_id": "Q23548",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "NASA is an American space agency. NASA develops spacecraft and launch systems.",
+    "infobox": {
+      "industry": "Spaceflight"
+    },
+    "links": [
+      {
+        "surface": "space agency",
+        "target": "Space agency"
+      },
+      {
+        "surface": "spacecraft",
+        "target": "Spacecraft"
+      },
+      {
+        "surface": "launch systems",
+        "target": "Launch vehicle"
+      }
+    ],
+    "categories": [
+      "Government agencies",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:nasa",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Blue_Origin",
+    "title": "Blue Origin",
+    "wikidata_id": "Q1392583",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "Blue Origin is an American aerospace company. Blue Origin develops rockets and spacecraft.",
+    "infobox": {
+      "industry": "Aerospace",
+      "founder": "Jeff Bezos"
+    },
+    "links": [
+      {
+        "surface": "aerospace",
+        "target": "Aerospace manufacturing"
+      },
+      {
+        "surface": "rockets",
+        "target": "Rocket"
+      },
+      {
+        "surface": "spacecraft",
+        "target": "Spacecraft"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:blue_origin",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Bloomberg_LP",
+    "title": "Bloomberg LP",
+    "wikidata_id": "Q616866",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "Bloomberg LP is a financial data and media company. Bloomberg LP publishes financial data and analytics.",
+    "infobox": {
+      "industry": "Financial services"
+    },
+    "links": [
+      {
+        "surface": "financial data",
+        "target": "Financial market"
+      },
+      {
+        "surface": "media",
+        "target": "Mass media"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Financial services companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:bloomberg_lp",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:CNBC",
+    "title": "CNBC",
+    "wikidata_id": "Q623",
+    "entity_type_hint": "publication",
+    "lead_paragraph": "CNBC is an American business news channel. CNBC publishes business news and market coverage.",
+    "infobox": {
+      "type": "News channel"
+    },
+    "links": [
+      {
+        "surface": "business news",
+        "target": "Business journalism"
+      },
+      {
+        "surface": "market",
+        "target": "Financial market"
+      }
+    ],
+    "categories": [
+      "Publications",
+      "News channels"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:cnbc",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Reuters",
+    "title": "Reuters",
+    "wikidata_id": "Q130879",
+    "entity_type_hint": "publication",
+    "lead_paragraph": "Reuters is an international news organization. Reuters publishes news and financial coverage.",
+    "infobox": {
+      "type": "News agency"
+    },
+    "links": [
+      {
+        "surface": "news",
+        "target": "Journalism"
+      },
+      {
+        "surface": "financial",
+        "target": "Financial market"
+      }
+    ],
+    "categories": [
+      "Publications",
+      "News agencies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:reuters",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Space.com",
+    "title": "Space.com",
+    "wikidata_id": null,
+    "entity_type_hint": "publication",
+    "lead_paragraph": "Space.com is an online publication. Space.com publishes spaceflight news and coverage.",
+    "infobox": {
+      "type": "Online publication"
+    },
+    "links": [
+      {
+        "surface": "spaceflight",
+        "target": "Spaceflight"
+      },
+      {
+        "surface": "news",
+        "target": "Journalism"
+      }
+    ],
+    "categories": [
+      "Publications",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:spacecom",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:SolarCity",
+    "title": "SolarCity",
+    "wikidata_id": "Q1505462",
+    "entity_type_hint": "organization",
+    "lead_paragraph": "SolarCity is a solar energy company. SolarCity produces solar panels and energy systems.",
+    "infobox": {
+      "industry": "Clean energy",
+      "products": "Solar panels; Energy systems"
+    },
+    "links": [
+      {
+        "surface": "solar energy",
+        "target": "Solar energy"
+      },
+      {
+        "surface": "clean energy",
+        "target": "Clean energy"
+      }
+    ],
+    "categories": [
+      "Companies",
+      "Energy companies"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:solarcity",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Falcon_9",
+    "title": "Falcon 9",
+    "wikidata_id": "Q47432",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Falcon 9 is a reusable launch vehicle developed by SpaceX. Falcon 9 carries cargo and satellites.",
+    "infobox": {
+      "type": "Launch vehicle"
+    },
+    "links": [
+      {
+        "surface": "reusable",
+        "target": "Reusable rocket"
+      },
+      {
+        "surface": "launch vehicle",
+        "target": "Launch vehicle"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      }
+    ],
+    "categories": [
+      "Spaceflight",
+      "Launch vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:falcon_9",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Falcon_Heavy",
+    "title": "Falcon Heavy",
+    "wikidata_id": "Q1378948",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Falcon Heavy is a heavy-lift launch vehicle developed by SpaceX. Falcon Heavy is partially reusable.",
+    "infobox": {
+      "type": "Launch vehicle"
+    },
+    "links": [
+      {
+        "surface": "launch vehicle",
+        "target": "Launch vehicle"
+      },
+      {
+        "surface": "reusable",
+        "target": "Reusable rocket"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      }
+    ],
+    "categories": [
+      "Spaceflight",
+      "Launch vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:falcon_heavy",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Starship",
+    "title": "Starship",
+    "wikidata_id": "Q14637321",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Starship is a fully reusable spacecraft and launch vehicle developed by SpaceX. Starship is designed for deep space missions.",
+    "infobox": {
+      "type": "Launch vehicle"
+    },
+    "links": [
+      {
+        "surface": "reusable",
+        "target": "Reusable rocket"
+      },
+      {
+        "surface": "spacecraft",
+        "target": "Spacecraft"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      }
+    ],
+    "categories": [
+      "Spaceflight",
+      "Launch vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:starship",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Dragon_spacecraft",
+    "title": "Dragon spacecraft",
+    "wikidata_id": "Q654405",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Dragon spacecraft is a spacecraft developed by SpaceX. Dragon carries cargo and crew to orbit.",
+    "infobox": {
+      "type": "Spacecraft"
+    },
+    "links": [
+      {
+        "surface": "spacecraft",
+        "target": "Spacecraft"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      }
+    ],
+    "categories": [
+      "Spaceflight",
+      "Spacecraft"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:dragon_spacecraft",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Model_S",
+    "title": "Tesla Model S",
+    "wikidata_id": "Q1463050",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Tesla Model S is an electric car produced by Tesla. The Model S is a battery electric sedan.",
+    "infobox": {
+      "type": "Electric car"
+    },
+    "links": [
+      {
+        "surface": "electric car",
+        "target": "Electric car"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "battery electric",
+        "target": "Battery electric vehicle"
+      }
+    ],
+    "categories": [
+      "Electric vehicles",
+      "Tesla vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_model_s",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Model_3",
+    "title": "Tesla Model 3",
+    "wikidata_id": "Q21041563",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Tesla Model 3 is an electric car produced by Tesla. The Model 3 is a compact battery electric sedan.",
+    "infobox": {
+      "type": "Electric car"
+    },
+    "links": [
+      {
+        "surface": "electric car",
+        "target": "Electric car"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "battery electric",
+        "target": "Battery electric vehicle"
+      }
+    ],
+    "categories": [
+      "Electric vehicles",
+      "Tesla vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_model_3",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Model_X",
+    "title": "Tesla Model X",
+    "wikidata_id": "Q1995131",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Tesla Model X is an electric SUV produced by Tesla. The Model X is a battery electric vehicle.",
+    "infobox": {
+      "type": "Electric car"
+    },
+    "links": [
+      {
+        "surface": "electric",
+        "target": "Electric vehicle"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "battery electric",
+        "target": "Battery electric vehicle"
+      }
+    ],
+    "categories": [
+      "Electric vehicles",
+      "Tesla vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_model_x",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Model_Y",
+    "title": "Tesla Model Y",
+    "wikidata_id": "Q61463972",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Tesla Model Y is an electric SUV produced by Tesla. The Model Y is a battery electric crossover.",
+    "infobox": {
+      "type": "Electric car"
+    },
+    "links": [
+      {
+        "surface": "electric",
+        "target": "Electric vehicle"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "battery electric",
+        "target": "Battery electric vehicle"
+      }
+    ],
+    "categories": [
+      "Electric vehicles",
+      "Tesla vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_model_y",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Tesla_Cybertruck",
+    "title": "Tesla Cybertruck",
+    "wikidata_id": "Q60711459",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Tesla Cybertruck is an electric pickup truck produced by Tesla. The Cybertruck is a battery electric vehicle.",
+    "infobox": {
+      "type": "Electric car"
+    },
+    "links": [
+      {
+        "surface": "electric",
+        "target": "Electric vehicle"
+      },
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      }
+    ],
+    "categories": [
+      "Electric vehicles",
+      "Tesla vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:tesla_cybertruck",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Powerwall",
+    "title": "Powerwall",
+    "wikidata_id": null,
+    "entity_type_hint": "product",
+    "lead_paragraph": "Powerwall is a home battery product produced by Tesla Energy. Powerwall stores energy for home use.",
+    "infobox": {
+      "type": "Battery storage"
+    },
+    "links": [
+      {
+        "surface": "battery",
+        "target": "Lithium-ion battery"
+      },
+      {
+        "surface": "Tesla Energy",
+        "target": "Tesla Energy"
+      }
+    ],
+    "categories": [
+      "Energy storage",
+      "Tesla products"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:powerwall",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Supercharger",
+    "title": "Supercharger",
+    "wikidata_id": null,
+    "entity_type_hint": "product",
+    "lead_paragraph": "Supercharger is a fast-charging network operated by Tesla. Supercharger serves electric vehicles.",
+    "infobox": {
+      "type": "Charging network"
+    },
+    "links": [
+      {
+        "surface": "Tesla",
+        "target": "Tesla, Inc."
+      },
+      {
+        "surface": "electric vehicle",
+        "target": "Electric vehicle"
+      }
+    ],
+    "categories": [
+      "Electric vehicle charging",
+      "Tesla products"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:supercharger",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Starlink",
+    "title": "Starlink",
+    "wikidata_id": "Q42415382",
+    "entity_type_hint": "product",
+    "lead_paragraph": "Starlink is a satellite internet constellation operated by SpaceX. Starlink provides broadband from orbit.",
+    "infobox": {
+      "type": "Satellite internet"
+    },
+    "links": [
+      {
+        "surface": "satellite internet",
+        "target": "Satellite internet"
+      },
+      {
+        "surface": "SpaceX",
+        "target": "SpaceX"
+      }
+    ],
+    "categories": [
+      "Spaceflight",
+      "Internet"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:starlink",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Battery_electric_vehicle",
+    "title": "Battery electric vehicle",
+    "wikidata_id": "Q1142841",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A battery electric vehicle is an electric vehicle that uses a battery for propulsion. Battery electric vehicles have no internal combustion engine.",
+    "infobox": {
+      "type": "Vehicle"
+    },
+    "links": [
+      {
+        "surface": "electric vehicle",
+        "target": "Electric vehicle"
+      },
+      {
+        "surface": "battery",
+        "target": "Lithium-ion battery"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Electric vehicles"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:battery_electric_vehicle",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Lithium-ion_battery",
+    "title": "Lithium-ion battery",
+    "wikidata_id": "Q2822895",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A lithium-ion battery is a rechargeable battery that uses lithium ions. Lithium-ion batteries store electrical energy.",
+    "infobox": {
+      "type": "Battery"
+    },
+    "links": [
+      {
+        "surface": "rechargeable battery",
+        "target": "Rechargeable battery"
+      },
+      {
+        "surface": "energy",
+        "target": "Energy storage"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Batteries"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:lithium-ion_battery",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Clean_energy",
+    "title": "Clean energy",
+    "wikidata_id": null,
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Clean energy is a form of energy from low-carbon and renewable sources. Clean energy reduces greenhouse gas emissions.",
+    "infobox": {},
+    "links": [
+      {
+        "surface": "renewable",
+        "target": "Renewable energy"
+      },
+      {
+        "surface": "emissions",
+        "target": "Greenhouse gas"
+      }
+    ],
+    "categories": [
+      "Energy",
+      "Sustainability"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:clean_energy",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Solar_energy",
+    "title": "Solar energy",
+    "wikidata_id": "Q40015",
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Solar energy is a form of energy obtained from sunlight. Solar energy is captured using panels and cells.",
+    "infobox": {},
+    "links": [
+      {
+        "surface": "sunlight",
+        "target": "Sunlight"
+      },
+      {
+        "surface": "panels",
+        "target": "Solar panel"
+      }
+    ],
+    "categories": [
+      "Energy",
+      "Renewable energy"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:solar_energy",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Reusable_rocket",
+    "title": "Reusable rocket",
+    "wikidata_id": null,
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A reusable rocket is a launch vehicle designed to be used more than once. Reusable rockets lower the cost of spaceflight.",
+    "infobox": {
+      "type": "Launch vehicle"
+    },
+    "links": [
+      {
+        "surface": "launch vehicle",
+        "target": "Launch vehicle"
+      },
+      {
+        "surface": "spaceflight",
+        "target": "Spaceflight"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:reusable_rocket",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Spacecraft",
+    "title": "Spacecraft",
+    "wikidata_id": "Q40218",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A spacecraft is a vehicle designed for travel in outer space. Spacecraft carry cargo, crew, or instruments.",
+    "infobox": {
+      "type": "Vehicle"
+    },
+    "links": [
+      {
+        "surface": "outer space",
+        "target": "Outer space"
+      },
+      {
+        "surface": "crew",
+        "target": "Astronaut"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:spacecraft",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Launch_vehicle",
+    "title": "Launch vehicle",
+    "wikidata_id": "Q697175",
+    "entity_type_hint": "technology",
+    "lead_paragraph": "A launch vehicle is a rocket used to carry payloads into space. Launch vehicles deliver satellites and spacecraft to orbit.",
+    "infobox": {
+      "type": "Rocket"
+    },
+    "links": [
+      {
+        "surface": "rocket",
+        "target": "Rocket"
+      },
+      {
+        "surface": "payloads",
+        "target": "Payload"
+      },
+      {
+        "surface": "orbit",
+        "target": "Orbit"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Spaceflight"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:launch_vehicle",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Satellite_internet",
+    "title": "Satellite internet",
+    "wikidata_id": null,
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Satellite internet is a form of internet access delivered through communications satellites. Satellite internet reaches remote areas.",
+    "infobox": {},
+    "links": [
+      {
+        "surface": "communications satellites",
+        "target": "Communications satellite"
+      },
+      {
+        "surface": "internet",
+        "target": "Internet"
+      }
+    ],
+    "categories": [
+      "Technology",
+      "Internet"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:satellite_internet",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Business_magnate",
+    "title": "Business magnate",
+    "wikidata_id": null,
+    "entity_type_hint": "concept",
+    "lead_paragraph": "A business magnate is a person who has achieved great success and influence in business. Business magnates often lead large companies.",
+    "infobox": {},
+    "links": [
+      {
+        "surface": "business",
+        "target": "Business"
+      },
+      {
+        "surface": "companies",
+        "target": "Company"
+      }
+    ],
+    "categories": [
+      "Business",
+      "People"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:business_magnate",
+      "source_type": "curated_wiki_snippet",
+      "source_url": null,
+      "retrieved_at": "2026-06-14"
+    }
+  },
+  {
+    "page_id": "wiki:Market_capitalization",
+    "title": "Market capitalization",
+    "wikidata_id": "Q726270",
+    "entity_type_hint": "concept",
+    "lead_paragraph": "Market capitalization is the total market value of a company's outstanding shares. Market capitalization changes with share prices.",
+    "infobox": {},
+    "links": [
+      {
+        "surface": "market value",
+        "target": "Market value"
+      },
+      {
+        "surface": "shares",
+        "target": "Share"
+      }
+    ],
+    "categories": [
+      "Finance",
+      "Economics"
+    ],
+    "source": {
+      "source_id": "curated_wiki_v2:market_capitalization",
       "source_type": "curated_wiki_snippet",
       "source_url": null,
       "retrieved_at": "2026-06-14"

@@ -1,46 +1,46 @@
 {
-  "qa_total": 28,
-  "answer_count": 23,
-  "audit_count": 5,
-  "correct_count": 28,
+  "qa_total": 111,
+  "answer_count": 79,
+  "audit_count": 32,
+  "correct_count": 111,
   "wrong_count": 0,
   "accuracy": 1.0,
   "answer_precision": 1.0,
   "quality_flagged": 0,
   "by_intent": {
     "define_entity": {
-      "answer": 9,
+      "answer": 23,
       "audit": 0,
-      "correct": 9,
+      "correct": 23,
       "wrong": 0
     },
     "link_explanation": {
-      "answer": 4,
+      "answer": 20,
       "audit": 0,
-      "correct": 4,
+      "correct": 20,
       "wrong": 0
     },
     "relation_lookup": {
-      "answer": 7,
+      "answer": 24,
       "audit": 0,
-      "correct": 7,
+      "correct": 24,
       "wrong": 0
     },
     "source_fact_lookup": {
-      "answer": 3,
+      "answer": 12,
       "audit": 0,
-      "correct": 3,
+      "correct": 12,
       "wrong": 0
     },
     "unknown_or_unsupported": {
       "answer": 0,
-      "audit": 5,
-      "correct": 5,
+      "audit": 32,
+      "correct": 32,
       "wrong": 0
     }
   },
-  "provider_items_used": 61,
-  "source_facts_used": 3,
-  "weak_context_links_used": 4,
+  "provider_items_used": 225,
+  "source_facts_used": 12,
+  "weak_context_links_used": 15,
   "safe_for_general_runtime": false
 }

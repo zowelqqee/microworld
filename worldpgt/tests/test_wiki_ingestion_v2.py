@@ -70,7 +70,8 @@ def _items(result, item_type):
 
 
 def test_page_reader_loads_fixture(pages):
-    assert 8 <= len(pages) <= 12
+    # Corpus expanded from 10 to ~50 curated pages (see wiki_corpus_expansion_v1).
+    assert len(pages) >= 45
     titles = {p.title for p in pages}
     required = {
         "Elon Musk",
@@ -217,8 +218,8 @@ def test_forbes_is_only_context_link(result):
 def test_net_worth_is_source_qualified_fact(result):
     sqfs = _items(result, "source_qualified_fact")
     net_worth = [s for s in sqfs if s.predicate == "estimated_net_worth"]
-    assert len(net_worth) == 1
-    fact = net_worth[0]
+    assert len(net_worth) >= 1
+    fact = next(s for s in net_worth if s.subject == "Elon Musk")
     assert fact.subject == "Elon Musk"
     assert fact.source_name == "Forbes"
     assert fact.object == "US$1.1 trillion"
@@ -419,7 +420,7 @@ def test_experiment_writes_output_files(tmp_path):
 
     summary = json.loads(summary_json.read_text())
     assert summary["safe_for_runtime_memory"] is False
-    assert summary["pages_total"] == 10
+    assert summary["pages_total"] >= 45
     assert summary["candidates_total"] > 0
     assert set(summary["by_item_type"]) <= {
         "entity_card",
