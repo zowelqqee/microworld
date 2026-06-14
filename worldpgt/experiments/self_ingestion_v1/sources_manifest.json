@@ -1,0 +1,137 @@
+[
+  {
+    "source_id": "falcon_1",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/falcon_1.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": true,
+    "notes": "clean new product"
+  },
+  {
+    "source_id": "tesla_roadster",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/tesla_roadster.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "automotive",
+    "allow_auto_accept": true,
+    "notes": "clean new product"
+  },
+  {
+    "source_id": "crew_dragon",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/crew_dragon.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": true,
+    "notes": "clean new spacecraft"
+  },
+  {
+    "source_id": "gigafactory",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/gigafactory.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "manufacturing",
+    "allow_auto_accept": true,
+    "notes": "clean new org with stable relations"
+  },
+  {
+    "source_id": "larry_ellison",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/larry_ellison.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "business",
+    "allow_auto_accept": false,
+    "notes": "new person; net-worth fact is volatile and needs human review"
+  },
+  {
+    "source_id": "falcon_9",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/falcon_9.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": true,
+    "notes": "duplicate of existing overlay page"
+  },
+  {
+    "source_id": "starlink",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/starlink.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "curated",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": true,
+    "notes": "duplicate of existing overlay page"
+  },
+  {
+    "source_id": "falcon_9_conflict",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/falcon_9_conflict.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "untrusted",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": false,
+    "notes": "conflicting redefinition of Falcon 9"
+  },
+  {
+    "source_id": "risky_stock_price",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_stock_price.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "finance",
+    "allow_auto_accept": false,
+    "notes": "current/volatile, no as_of"
+  },
+  {
+    "source_id": "risky_richest",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_richest.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "business",
+    "allow_auto_accept": false,
+    "notes": "current ranking, no as_of"
+  },
+  {
+    "source_id": "risky_weak_link",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_weak_link.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "misc",
+    "allow_auto_accept": false,
+    "notes": "weak link promoted to fact"
+  },
+  {
+    "source_id": "risky_inverted_founder",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_inverted_founder.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": false,
+    "notes": "inverted founder relation"
+  },
+  {
+    "source_id": "risky_private_email",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_private_email.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "private",
+    "allow_auto_accept": false,
+    "notes": "private/sensitive data"
+  },
+  {
+    "source_id": "risky_universal",
+    "path": "worldpgt/experiments/self_ingestion_v1/raw_docs/risky_universal.txt",
+    "source_type": "local_wikipedia_like_text",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": false,
+    "notes": "unsupported universal claim"
+  },
+  {
+    "source_id": "adversarial_url",
+    "path": "https://en.wikipedia.org/wiki/SpaceX",
+    "source_type": "unknown",
+    "trust_tier": "test_adversarial",
+    "expected_domain": "spaceflight",
+    "allow_auto_accept": false,
+    "notes": "external URL \u2014 must be rejected, no network allowed"
+  }
+]

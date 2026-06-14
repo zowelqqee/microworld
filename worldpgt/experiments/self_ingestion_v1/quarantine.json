@@ -1,0 +1,74 @@
+[
+  {
+    "candidate_id": "raw-001",
+    "text": "Tesla's stock price is $999 today.",
+    "reason": "current_fact_without_as_of",
+    "risk": "high",
+    "source_id": "risky_stock_price",
+    "suggested_action": "needs_as_of"
+  },
+  {
+    "candidate_id": "raw-002",
+    "text": "Elon Musk is currently the richest person in the world.",
+    "reason": "current_fact_without_as_of",
+    "risk": "high",
+    "source_id": "risky_richest",
+    "suggested_action": "needs_as_of"
+  },
+  {
+    "candidate_id": "raw-003",
+    "text": "A weak link proves that Forbes is owned by Elon Musk.",
+    "reason": "weak_link_promoted_to_fact",
+    "risk": "high",
+    "source_id": "risky_weak_link",
+    "suggested_action": "reject"
+  },
+  {
+    "candidate_id": "raw-004",
+    "text": "SpaceX founded Elon Musk.",
+    "reason": "inverted_relation",
+    "risk": "high",
+    "source_id": "risky_inverted_founder",
+    "suggested_action": "reject"
+  },
+  {
+    "candidate_id": "raw-005",
+    "text": "Elon Musk's private email is elon.private@example.com.",
+    "reason": "private_or_sensitive_data",
+    "risk": "high",
+    "source_id": "risky_private_email",
+    "suggested_action": "reject"
+  },
+  {
+    "candidate_id": "raw-006",
+    "text": "All rockets are SpaceX products.",
+    "reason": "unsupported_universal_claim",
+    "risk": "high",
+    "source_id": "risky_universal",
+    "suggested_action": "reject"
+  },
+  {
+    "candidate_id": "item-007",
+    "text": "overlay_source_fact::Larry Ellison",
+    "reason": "volatile_requires_source",
+    "risk": "high",
+    "source_id": "larry_ellison",
+    "suggested_action": "human_review"
+  },
+  {
+    "candidate_id": "item-008",
+    "text": "overlay_entity::Falcon 9",
+    "reason": "entity_type_mismatch",
+    "risk": "medium",
+    "source_id": "falcon_9_conflict",
+    "suggested_action": "human_review"
+  },
+  {
+    "candidate_id": "item-009",
+    "text": "overlay_definition::Falcon 9",
+    "reason": "conflicts_existing_fact",
+    "risk": "medium",
+    "source_id": "falcon_9_conflict",
+    "suggested_action": "human_review"
+  }
+]

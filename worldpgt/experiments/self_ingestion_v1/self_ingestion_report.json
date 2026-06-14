@@ -1,0 +1,62 @@
+{
+  "sources_total": 14,
+  "documents_read": 14,
+  "read_errors": 0,
+  "candidates_total": 39,
+  "new_candidates": 28,
+  "duplicate_existing": 8,
+  "conflicts": 2,
+  "quarantined_total": 9,
+  "rejected_total": 4,
+  "quarantine_reasons": {
+    "current_fact_without_as_of": 2,
+    "weak_link_promoted_to_fact": 1,
+    "inverted_relation": 1,
+    "private_or_sensitive_data": 1,
+    "unsupported_universal_claim": 1,
+    "volatile_requires_source": 1,
+    "entity_type_mismatch": 1,
+    "conflicts_existing_fact": 1
+  },
+  "overlay_delta_items": 27,
+  "dry_run_overlay_items": 310,
+  "qa_regression_status": {
+    "entity_qa_v1": {
+      "status": "PASS",
+      "qa_total": 28,
+      "correct_count": 28,
+      "wrong_count": 0,
+      "expected": 28
+    },
+    "entity_qa_expansion_v1": {
+      "status": "PASS",
+      "qa_total": 111,
+      "correct_count": 111,
+      "wrong_count": 0,
+      "expected": 111
+    },
+    "entity_qa_adversarial_v1": {
+      "status": "PASS",
+      "qa_total": 68,
+      "correct_count": 68,
+      "wrong_count": 0,
+      "expected": 68
+    },
+    "cross_page_qa_v1": {
+      "status": "PASS",
+      "qa_total": 71,
+      "correct_count": 71,
+      "wrong_count": 0,
+      "expected": 71
+    }
+  },
+  "all_qa_green": true,
+  "high_risk_in_delta": false,
+  "safe_to_apply_overlay_delta": true,
+  "safe_for_general_runtime": false,
+  "notes": [
+    "Raw documents never written to accepted memory; dry-run overlay is separate.",
+    "Well-formed but volatile source-qualified facts are held for human review (volatile_requires_source) rather than auto-applied, to avoid changing runtime aggregates without sign-off.",
+    "Tainted (conflicting) sources excluded entirely from delta: ['falcon_9_conflict']."
+  ]
+}

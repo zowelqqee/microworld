@@ -19,13 +19,14 @@ interface to that world.
 Current test status:
 
 ```text
-python3 -m pytest -q  ->  1865 passed
+python3 -m pytest -q  ->  2007 passed
 ```
 
 ## Navigation
 
 * [Why This Exists](#why-this-exists)
 * [Current Status](#current-status)
+* [Current worldpgt research status](#current-worldpgt-research-status)
 * [Current Architecture](#current-architecture)
 * [Latest Experimental Results](#latest-experimental-results)
   * [Current Controlled QA Results](#current-controlled-qa-results)
@@ -56,16 +57,45 @@ on controlled benchmark domains, explicit memory, source-aware facts, safe
 abstention/audit, and low runtime cost. It is limited by narrow scope, curated
 inputs, rule/curriculum-based analyzers, and surface renderer quality.
 
-Across three controlled QA benchmark families, Microworld currently handles 100
-prompts with 0 wrong decisions: 84 answered and 16 safely audited. Answer
-precision is 1.0 on each benchmark family. These results are scoped to the
-supported controlled domains and should not be presented as open-domain
-LLM-level performance.
+Microworld currently demonstrates a narrow but useful property: on controlled
+explicit-memory QA benchmarks, it can answer when the supporting path is present
+and audit when the answer would require unsupported inference, weak-link
+promotion, current/live data, or volatile facts.
+
+Across the current controlled QA benchmark layers, worldpgt handles 350 prompts
+with 0 wrong decisions: 219 answered and 131 safely audited. Answer precision is
+1.0 on each benchmark family. These results are scoped to supported controlled
+domains and isolated overlays; they are not open-domain or live-fact claims.
 
 The current Python implementation runs these small controlled benchmark batches
 in about 0.06-0.14 seconds with roughly 24 MB peak RSS. These are single-run
 local measurements and should be treated as order-of-magnitude efficiency
 indicators, not final benchmark claims.
+
+## Current worldpgt research status
+
+| Layer                     | Status      |
+| ------------------------- | ----------- |
+| Main QA                   | 48/48       |
+| Generalization QA         | 24/24       |
+| Entity QA v1              | 28/28       |
+| Entity QA expansion       | 111/111     |
+| Adversarial Entity QA     | 68/68       |
+| Cross-page Entity QA      | 71/71       |
+| Self-ingestion dry-run QA | all green   |
+| Full suite                | 2007 passed |
+
+The current 50-page wiki overlay is an isolated memory artifact, not trusted
+accepted memory. It contains 283 overlay items: 50 entities, 50 definitions, 53
+relations, 126 weak contextual links, and 4 source-qualified volatile facts.
+The overlay remains `safe_for_general_runtime=false`.
+
+Wikipedia Self-Ingestion v1 is a safe offline dry-run pipeline. It reads local
+Wikipedia-like documents, converts them to wiki-like pages, reuses unchanged
+wiki ingestion and overlay builders, classifies deltas/conflicts/quarantine,
+proposes an overlay delta, and runs deterministic regression gates. It does not
+write raw text directly into accepted memory, and the dry-run overlay is
+separate from the accepted wiki overlay.
 
 ## Why This Exists
 
@@ -177,8 +207,12 @@ curated source pages
 | Main accepted-memory QA | 48 | 48 | 0 | 42 | 6 | 1.0 | ~0.070 s | ~24.73 MB |
 | Generalization QA | 24 | 24 | 0 | 19 | 5 | 1.0 | ~0.140 s | ~24.61 MB |
 | Entity QA over wiki overlay | 28 | 28 | 0 | 23 | 5 | 1.0 | ~0.060 s | ~23.61 MB |
-| Wiki ingestion v2 | 67 candidates | review errors: 0 | - | - | - | - | ~0.070 s | ~23.56 MB |
-| Wiki overlay v1 | 67 overlay items | skipped: 0 | - | - | - | - | ~0.060 s | ~23.41 MB |
+| Entity QA expansion | 111 | 111 | 0 | 79 | 32 | 1.0 | - | - |
+| Adversarial Entity QA | 68 | 68 | 0 | 6 | 62 | 1.0 | - | - |
+| Cross-page Entity QA | 71 | 71 | 0 | 50 | 21 | 1.0 | ~0.160 s | ~24 MB |
+| Wiki ingestion v2 | 283 candidates | review errors: 0 | - | - | - | - | ~0.060 s | ~23.8 MB |
+| Wiki overlay v1 | 283 overlay items | skipped: 0 | - | - | - | - | ~0.050 s | ~23.7 MB |
+| Self-ingestion v1 dry run | 310-item dry-run overlay | dry-run regressions green | - | - | - | - | ~0.210 s | ~25.8 MB |
 
 Accepted-memory QA uses
 `worldpgt/experiments/accepted_knowledge_memory_v1.json`: 221 accepted items
@@ -190,7 +224,9 @@ Wikipedia/Wikidata-style ingestion v2 is deterministic, offline, local-fixture
 only, and candidate-generation only. It does not modify accepted memory or
 runtime memory. Wiki candidate overlay v1 remains isolated from general runtime
 memory; `safe_for_general_runtime` is false and
-`safe_for_entity_qa_overlay` is true.
+`safe_for_entity_qa_overlay` is true. Weak contextual links are never promoted
+to stable facts, and source-qualified volatile facts remain source-qualified
+with `requires_recheck=true`.
 
 ### Human Audit Baseline
 
@@ -667,11 +703,19 @@ controlled language as an interface to that memory.
   question is ambiguous without sufficient context
 * accepted knowledge memory provider - 221 items (163 facts, 58 patterns,
   6 ambiguous terms, 12 senses, 104 positive cues)
-* deterministic wiki ingestion v2 - 10 local curated pages to 67 reviewable
+* deterministic wiki ingestion v2 - 50 local curated pages to 283 reviewable
   candidates
-* wiki candidate memory overlay v1 - 67 isolated overlay items, safe for entity
+* wiki candidate memory overlay v1 - 283 isolated overlay items, safe for entity
   QA overlay, not safe for general runtime
 * entity QA v1 - controlled entity questions over the isolated overlay
+* entity QA expansion v1 - broader controlled entity QA over the same overlay
+* adversarial entity QA v1 - audits relation inversion, weak-link promotion,
+  current/live data, unsupported universal claims, source-qualified volatility,
+  category confusion, and private/personal data
+* cross-page entity QA v1 - controlled graph-style multi-hop QA over the
+  isolated overlay
+* Wikipedia Self-Ingestion v1 - offline dry-run overlay delta proposal with
+  quarantine and deterministic regression gates
 
 **Supported QA intents:** `define_sense`, `classify_context`, `explain_cue`,
 `distinguish_senses`, `unknown_or_ambiguous`
@@ -686,9 +730,12 @@ controlled language as an interface to that memory.
 | Main QA | `worldpgt/experiments/qa_prompts_v1.csv` | 48 | 48 | 0 | 42 | 6 | 1.0 |
 | Generalization QA | `worldpgt/experiments/qa_generalization_test_v1.csv` | 24 | 24 | 0 | 19 | 5 | 1.0 |
 | Entity QA | `worldpgt/experiments/entity_qa_prompts_v1.csv` | 28 | 28 | 0 | 23 | 5 | 1.0 |
+| Entity QA expansion | `worldpgt/experiments/entity_qa_expansion_v1_summary.json` | 111 | 111 | 0 | 79 | 32 | 1.0 |
+| Adversarial Entity QA | `worldpgt/experiments/entity_qa_adversarial_v1_summary.json` | 68 | 68 | 0 | 6 | 62 | 1.0 |
+| Cross-page Entity QA | `worldpgt/experiments/cross_page_qa_v1_summary.json` | 71 | 71 | 0 | 50 | 21 | 1.0 |
 
-Combined: 100 prompts, 100 correct decisions, 0 wrong answers, 84 answered, 16
-safely audited.
+Combined: 350 prompts, 350 correct decisions, 0 wrong answers, 219 answered,
+131 safely audited.
 
 The renderer no longer emits flat `associated with` lists. Example outputs:
 
@@ -753,6 +800,8 @@ trillion. This is a volatile source-qualified estimate and should be rechecked.
 * weak context links are not treated as facts
 * current unsupported questions audit
 * accepted memory v1 is not modified by wiki overlay
+* self-ingestion uses a separate dry-run overlay
+* volatile facts are never auto-applied as stable facts
 * `safe_for_general_runtime` remains false for wiki overlay
 
 Known caveat: renderer polish is ongoing. A directional relation verbalization
@@ -802,18 +851,28 @@ Start with:
 * `docs/architecture.md`
 * `docs/experiments.md`
 * `docs/suppression_policy.md`
+* `worldpgt/README.md`
+* `worldpgt/RESEARCH_SNAPSHOT.md`
+* `worldpgt/docs/WIKI_OVERLAY.md`
+* `worldpgt/docs/CROSS_PAGE_QA.md`
+* `worldpgt/docs/SELF_INGESTION.md`
+* `worldpgt/docs/SAFETY_MODEL.md`
 
 ## Limitations
 
-* Microworld is not an open-domain GPT replacement.
+* Microworld is not a general-purpose language model.
 * Current QA results are controlled benchmark results over supported domains.
 * Scope remains narrow and inputs are curated.
 * The analyzers are rule/curriculum-based and need explicit expansion.
-* The wiki corpus is a 10-page local fixture, not live Wikipedia/Wikidata.
+* The wiki corpus is a 50-page local fixture, not live Wikipedia/Wikidata.
 * The wiki overlay is isolated and not accepted memory v1 or general runtime
   memory.
 * Weak context links are contextual mentions, not factual relations.
 * Source-qualified volatile facts require recheck.
+* Current facts are not answered as live truth.
+* Source extraction is still narrow.
+* There is no autonomous web ingestion.
+* There is no accepted overlay promotion yet.
 * Renderer surface quality is still being polished.
 * Current results are exploratory and based on bounded graph reasoning tasks.
 * The ConceptNet work uses filtered samples, not a full benchmark.
@@ -854,18 +913,17 @@ Start with:
 
 **worldpgt QA layer:**
 
-1. Fix the directional relation verbalization bug in entity answer rendering.
-2. Expand Entity QA from 28 to 100 prompts on the same 10-page overlay.
-3. Expand the curated wiki corpus from 10 to 50 pages.
-4. Add cross-page relation QA.
-5. Add a repeated efficiency benchmark with median/min/max.
-6. Compare with a GPT-style baseline on the same controlled questions.
-7. Continue generalized analyzer curriculum work while preserving safety on
+1. Promote Overlay Delta v1 - validate and promote the safe self-ingestion
+   overlay delta into a separate promoted overlay artifact, without modifying
+   trusted accepted memory or the current accepted overlay.
+2. Add a repeated efficiency benchmark with median/min/max.
+3. Compare with a GPT-style baseline on the same controlled questions.
+4. Continue generalized analyzer curriculum work while preserving safety on
    conflicting prompts.
-8. Interactive QA playground - one-off CLI:
+5. Interactive QA playground - one-off CLI:
    `python3 -m worldpgt.experiments.ask_answer_planner_v1 --question "..."`
    with optional JSON and trace output
-9. Scale accepted memory - more terms, more senses, disk/index-backed provider
+6. Scale accepted memory - more terms, more senses, disk/index-backed provider
    later
 
 ## Status

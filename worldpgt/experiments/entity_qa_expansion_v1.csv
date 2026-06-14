@@ -1,0 +1,112 @@
+row_id,question,expected_decision,expected_intent,expected_subject,expected_answer_contains,risk_level
+eqa-exp-v1-001,Who is Elon Musk?,answer,define_entity,Elon Musk,businessman,low
+eqa-exp-v1-002,Tell me who Elon Musk is.,answer,define_entity,Elon Musk,businessman,low
+eqa-exp-v1-003,What kind of entity is Elon Musk?,answer,define_entity,Elon Musk,businessman,low
+eqa-exp-v1-004,What kind of person is Elon Musk?,answer,define_entity,Elon Musk,businessman,low
+eqa-exp-v1-005,What is Tesla?,answer,define_entity,Tesla,electric vehicle;clean energy,low
+eqa-exp-v1-006,Tell me about Tesla.,answer,define_entity,Tesla,electric vehicle,low
+eqa-exp-v1-007,What kind of organization is Tesla?,answer,define_entity,Tesla,electric vehicle,low
+eqa-exp-v1-008,What sort of company is Tesla?,answer,define_entity,Tesla,electric vehicle,low
+eqa-exp-v1-009,What is SpaceX?,answer,define_entity,SpaceX,aerospace,low
+eqa-exp-v1-010,Tell me about SpaceX.,answer,define_entity,SpaceX,aerospace,low
+eqa-exp-v1-011,What kind of company is SpaceX?,answer,define_entity,SpaceX,aerospace,low
+eqa-exp-v1-012,What is Forbes?,answer,define_entity,Forbes,business magazine,low
+eqa-exp-v1-013,Tell me about Forbes.,answer,define_entity,Forbes,business magazine,low
+eqa-exp-v1-014,What type of publication is Forbes?,answer,define_entity,Forbes,business magazine,low
+eqa-exp-v1-015,What is Bloomberg News?,answer,define_entity,Bloomberg News,news organization,low
+eqa-exp-v1-016,What type of organization is Bloomberg News?,answer,define_entity,Bloomberg News,news organization,low
+eqa-exp-v1-017,What is leadership?,answer,define_entity,leadership,ability,low
+eqa-exp-v1-018,Tell me about leadership.,answer,define_entity,leadership,ability,low
+eqa-exp-v1-019,What is an electric vehicle?,answer,define_entity,electric vehicle,electric motors;propulsion,low
+eqa-exp-v1-020,What is a rocket?,answer,define_entity,rocket,thrust,low
+eqa-exp-v1-021,What is net worth?,answer,define_entity,net worth,assets;liabilities,low
+eqa-exp-v1-022,Tell me about net worth.,answer,define_entity,net worth,assets,low
+eqa-exp-v1-023,What is a businessperson?,answer,define_entity,businessperson,commercial,low
+eqa-exp-v1-024,What is Elon Musk known for?,answer,relation_lookup,Elon Musk,Tesla;SpaceX,low
+eqa-exp-v1-025,What companies is Elon Musk known for?,answer,relation_lookup,Elon Musk,Tesla;SpaceX,low
+eqa-exp-v1-026,What is SpaceX known for?,answer,relation_lookup,SpaceX,rockets,low
+eqa-exp-v1-027,What companies is Elon Musk linked to by leadership?,answer,relation_lookup,Elon Musk,Tesla;SpaceX;leadership,low
+eqa-exp-v1-028,Which organizations is Elon Musk linked to through leadership?,answer,relation_lookup,Elon Musk,Tesla;SpaceX;leadership,low
+eqa-exp-v1-029,How is Elon Musk connected to Tesla?,answer,relation_lookup,Elon Musk,Tesla;leadership,low
+eqa-exp-v1-030,How is Elon Musk related to Tesla?,answer,relation_lookup,Elon Musk,Tesla;leadership,low
+eqa-exp-v1-031,How is Elon Musk connected to SpaceX?,answer,relation_lookup,Elon Musk,SpaceX,low
+eqa-exp-v1-032,How is Elon Musk linked to SpaceX?,answer,relation_lookup,Elon Musk,SpaceX,low
+eqa-exp-v1-033,What does Tesla produce?,answer,relation_lookup,Tesla,electric cars,low
+eqa-exp-v1-034,What products does Tesla make?,answer,relation_lookup,Tesla,electric cars,low
+eqa-exp-v1-035,What does Tesla manufacture?,answer,relation_lookup,Tesla,electric cars,low
+eqa-exp-v1-036,What does SpaceX develop?,answer,relation_lookup,SpaceX,rockets;spacecraft,low
+eqa-exp-v1-037,What does SpaceX produce?,answer,relation_lookup,SpaceX,Falcon,low
+eqa-exp-v1-038,What products does SpaceX make?,answer,relation_lookup,SpaceX,Falcon,low
+eqa-exp-v1-039,What does SpaceX manufacture?,answer,relation_lookup,SpaceX,Falcon,low
+eqa-exp-v1-040,Who founded SpaceX?,answer,relation_lookup,SpaceX,Elon Musk,low
+eqa-exp-v1-041,Who is the founder of SpaceX?,answer,relation_lookup,SpaceX,Elon Musk,low
+eqa-exp-v1-042,Who were SpaceX's founders?,answer,relation_lookup,SpaceX,Elon Musk,low
+eqa-exp-v1-043,Who founded Tesla?,answer,relation_lookup,Tesla,Martin;Marc,low
+eqa-exp-v1-044,Who is the founder of Tesla?,answer,relation_lookup,Tesla,Martin;Marc,low
+eqa-exp-v1-045,Who were Tesla's founders?,answer,relation_lookup,Tesla,Martin;Marc,low
+eqa-exp-v1-046,What does Forbes publish?,answer,relation_lookup,Forbes,rankings,low
+eqa-exp-v1-047,What does Bloomberg News publish?,answer,relation_lookup,Bloomberg News,financial market,low
+eqa-exp-v1-048,Why is Forbes linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention;not treated as a stable factual relation,low
+eqa-exp-v1-049,Why does Forbes appear on the Elon Musk page?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-050,Is Forbes a stable factual relation for Elon Musk?,answer,link_explanation,Elon Musk,not treated as a stable factual relation,low
+eqa-exp-v1-051,Why is leadership linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-052,Why is net worth linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-053,Why is SpaceX linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-054,Why is Tesla linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-055,Why is businessman linked to Elon Musk?,answer,link_explanation,Elon Musk,weak contextual mention,low
+eqa-exp-v1-056,Why are rockets linked to SpaceX?,answer,link_explanation,SpaceX,weak contextual mention,low
+eqa-exp-v1-057,Why is Rocket linked to SpaceX?,answer,link_explanation,SpaceX,weak contextual mention,low
+eqa-exp-v1-058,Why are spacecraft linked to SpaceX?,answer,link_explanation,SpaceX,weak contextual mention,low
+eqa-exp-v1-059,Why are electric vehicles linked to Tesla?,answer,link_explanation,Tesla,weak contextual mention,low
+eqa-exp-v1-060,Why is Electric vehicle linked to Tesla?,answer,link_explanation,Tesla,weak contextual mention,low
+eqa-exp-v1-061,Why is clean energy linked to Tesla?,answer,link_explanation,Tesla,weak contextual mention,low
+eqa-exp-v1-062,Why is rankings linked to Forbes?,answer,link_explanation,Forbes,weak contextual mention,low
+eqa-exp-v1-063,Is a wiki link treated as a fact?,answer,link_explanation,,weak;not treated as a stable factual relation,low
+eqa-exp-v1-064,Does the overlay treat weak context links as facts?,answer,link_explanation,,weak,low
+eqa-exp-v1-065,Are weak context links treated as facts?,answer,link_explanation,,weak,low
+eqa-exp-v1-066,Is a weak link a fact?,answer,link_explanation,,weak,low
+eqa-exp-v1-067,Does a weak link mean the claim is true?,answer,link_explanation,,weak,low
+eqa-exp-v1-068,What does Forbes estimate about Elon Musk?,answer,source_fact_lookup,Elon Musk,Forbes;2026-06,high
+eqa-exp-v1-069,What is Musk's source-qualified net worth estimate?,answer,source_fact_lookup,Musk,Forbes;2026-06,high
+eqa-exp-v1-070,What is Elon Musk's net worth estimate?,answer,source_fact_lookup,Elon Musk,Forbes,high
+eqa-exp-v1-071,"According to Forbes, what is Musk's estimated net worth?",answer,source_fact_lookup,Musk,1.1 trillion,high
+eqa-exp-v1-072,"According to Forbes, what is Elon Musk's estimated net worth?",answer,source_fact_lookup,Elon Musk,1.1 trillion,high
+eqa-exp-v1-073,Is Elon Musk's net worth a stable fact?,answer,source_fact_lookup,Elon Musk,volatile;source-qualified,high
+eqa-exp-v1-074,Is Musk's net worth volatile?,answer,source_fact_lookup,Musk,volatile;source-qualified,high
+eqa-exp-v1-075,Is Elon Musk's net worth volatile?,answer,source_fact_lookup,Elon Musk,volatile,high
+eqa-exp-v1-076,Why should Musk's net worth be rechecked?,answer,source_fact_lookup,Musk,recheck,high
+eqa-exp-v1-077,Why should Elon Musk's net worth be rechecked?,answer,source_fact_lookup,Elon Musk,recheck,high
+eqa-exp-v1-078,Does the overlay require rechecking Musk's net worth?,answer,source_fact_lookup,Musk,recheck,high
+eqa-exp-v1-079,Does the overlay require rechecking Elon Musk's net worth?,answer,source_fact_lookup,Elon Musk,recheck,high
+eqa-exp-v1-080,What is Elon Musk's favorite food?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-081,Who is the current CEO of Tesla?,audit,unknown_or_unsupported,Tesla,,low
+eqa-exp-v1-082,Who is the current CEO of SpaceX?,audit,unknown_or_unsupported,SpaceX,,low
+eqa-exp-v1-083,What is Tesla's current stock price?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-084,What is SpaceX's current valuation?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-085,What is the current market cap of Tesla?,audit,unknown_or_unsupported,Tesla,,low
+eqa-exp-v1-086,What is the current price of Tesla stock?,audit,unknown_or_unsupported,Tesla stock,,low
+eqa-exp-v1-087,How much is Tesla stock today?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-088,What is SpaceX worth right now?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-089,What is SpaceX's valuation right now?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-090,What is Musk doing today?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-091,What is Elon Musk doing today?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-092,What is Elon Musk's phone number?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-093,What is Elon Musk's home address?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-094,What is Elon Musk's date of birth?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-095,Where does Elon Musk live right now?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-096,What is Tesla's latest quarterly revenue?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-097,What is Forbes' latest ranking of Elon Musk?,audit,unknown_or_unsupported,Elon Musk,,low
+eqa-exp-v1-098,What is Tesla's market cap right now?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-099,Does Forbes lead Tesla?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-100,Does Tesla lead Elon Musk?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-101,Is Tesla the founder of Elon Musk?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-102,Is SpaceX the founder of Elon Musk?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-103,Did SpaceX found Elon Musk?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-104,Did Tesla found Elon Musk?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-105,Is Rocket a company?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-106,Is leadership a company?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-107,Is net worth a stable physical property?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-108,Is leadership a product made by Tesla?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-109,Is Bloomberg News the same as Bloomberg L.P.?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-110,Is Forbes the same as Bloomberg News?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-111,Does a weak link prove the claim?,audit,unknown_or_unsupported,,,low

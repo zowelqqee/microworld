@@ -10,8 +10,8 @@ memory, accepted facts, and isolated knowledge overlays.
 This package measures what happens when a small deterministic system with
 explicit sense memory and accepted knowledge attempts controlled continuation,
 ambiguity-resolution QA, and entity QA over an isolated wiki candidate overlay.
-The benchmark scope is narrow and intentional. It is not an open-domain GPT
-replacement, and it does not claim LLM-level open-domain performance.
+The benchmark scope is narrow and intentional. It is not a general-purpose
+language model, and it does not claim LLM-level open-domain performance.
 
 Microworld/worldpgt explores whether useful controlled QA, memory, reasoning,
 and knowledge ingestion can be built without neural weights, backpropagation,
@@ -30,22 +30,30 @@ on controlled benchmark domains, explicit memory, source-aware facts, safe
 abstention/audit, and low runtime cost. It is limited by narrow scope, curated
 inputs, rule/curriculum-based analyzers, and surface renderer quality.
 
-Across three controlled QA benchmark families, Microworld currently handles 100
-prompts with 0 wrong decisions: 84 answered and 16 safely audited. Answer
-precision is 1.0 on each benchmark family. These results are scoped to the
-supported controlled domains and should not be presented as open-domain
-LLM-level performance.
+Microworld currently demonstrates a narrow but useful property: on controlled
+explicit-memory QA benchmarks, it can answer when the supporting path is present
+and audit when the answer would require unsupported inference, weak-link
+promotion, current/live data, or volatile facts.
+
+Across the current controlled QA benchmark layers, worldpgt handles 350 prompts
+with 0 wrong decisions: 219 answered and 131 safely audited. Answer precision is
+1.0 on each benchmark family. These results are scoped to supported controlled
+domains and isolated overlays; they are not open-domain or live-fact claims.
 
 | Benchmark | Input / artifact | Items | Correct / errors | Answered | Audited | Precision | Time | Peak RSS |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | Main QA | `experiments/qa_prompts_v1.csv` / `answer_planner_v1_summary.json` | 48 | 48 correct, 0 wrong | 42 | 6 | 1.0 | ~0.070 s | ~24.73 MB |
 | Generalization QA | `experiments/qa_generalization_test_v1.csv` / `qa_generalization_test_v1_summary.json` | 24 | 24 correct, 0 wrong | 19 | 5 | 1.0 | ~0.140 s | ~24.61 MB |
 | Entity QA | `experiments/entity_qa_prompts_v1.csv` / `entity_qa_v1_summary.json` | 28 | 28 correct, 0 wrong | 23 | 5 | 1.0 | ~0.060 s | ~23.61 MB |
-| Wiki ingestion v2 | `experiments/wiki_pages_curated_v2.json` / `wiki_ingestion_v2_summary.json` | 67 candidates | 0 review errors | - | - | - | ~0.070 s | ~23.56 MB |
-| Wiki overlay v1 | `experiments/accepted_wiki_memory_overlay_v1_summary.json` | 67 overlay items | 0 skipped | - | - | - | ~0.060 s | ~23.41 MB |
+| Entity QA expansion | `experiments/entity_qa_expansion_v1_summary.json` | 111 | 111 correct, 0 wrong | 79 | 32 | 1.0 | - | - |
+| Adversarial Entity QA | `experiments/entity_qa_adversarial_v1_summary.json` | 68 | 68 correct, 0 wrong | 6 | 62 | 1.0 | - | - |
+| Cross-page Entity QA | `experiments/cross_page_qa_v1_summary.json` | 71 | 71 correct, 0 wrong | 50 | 21 | 1.0 | ~0.160 s | ~24 MB |
+| Wiki ingestion v2 | `experiments/wiki_pages_curated_v2.json` / `wiki_ingestion_v2_summary.json` | 283 candidates | 0 review errors | - | - | - | ~0.060 s | ~23.8 MB |
+| Wiki overlay v1 | `experiments/accepted_wiki_memory_overlay_v1_summary.json` | 283 overlay items | 0 skipped | - | - | - | ~0.050 s | ~23.7 MB |
+| Self-ingestion v1 dry run | dry-run 310-item overlay | regressions green | - | - | - | - | ~0.210 s | ~25.8 MB |
 
 The current Python implementation runs these small controlled benchmark batches
-in about 0.06-0.14 seconds with roughly 24 MB peak RSS. These are single-run
+in about 0.05-0.21 seconds with roughly 24-26 MB peak RSS. These are single-run
 local measurements from `/usr/bin/time -l` on macOS and should be treated as
 order-of-magnitude efficiency indicators, not final benchmark claims.
 
@@ -55,8 +63,7 @@ Current local test status:
 python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       -> 34 passed
 python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  -> 26 passed
 python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            -> 33 passed
-python3 -m pytest worldpgt/tests -q                                 -> 822 passed
-python3 -m pytest -q                                                -> 1865 passed
+python3 -m pytest -q                                                -> 2007 passed
 ```
 
 ---
@@ -106,6 +113,12 @@ worldpgt/
     entity_answer_planner.py
     entity_answer_renderer.py
     entity_answer_validator.py
+  cross_page_qa/       controlled graph-style QA over isolated wiki overlay
+    cross_page_question_analyzer.py
+    cross_page_answer_planner.py
+    cross_page_answer_renderer.py
+    cross_page_answer_validator.py
+  self_ingestion/      offline self-feeding pipeline workspace (dry-run only)
   baselines/
     gpt2/              GPT-2 inference via local nanoGPT
       run_gpt2_baseline.py       inference runner
@@ -146,7 +159,20 @@ worldpgt/
     entity_qa_prompts_v1.csv
     entity_qa_v1_outputs.csv
     entity_qa_v1_summary.json
+    entity_qa_expansion_v1_outputs.csv
+    entity_qa_expansion_v1_summary.json
+    entity_qa_adversarial_v1.csv
+    entity_qa_adversarial_v1_outputs.csv
+    entity_qa_adversarial_v1_summary.json
+    cross_page_qa_v1.csv
+    cross_page_qa_v1_outputs.csv
+    cross_page_qa_v1_summary.json
     ...                                       version comparison JSONs
+  docs/
+    WIKI_OVERLAY.md
+    CROSS_PAGE_QA.md
+    SELF_INGESTION.md
+    SAFETY_MODEL.md
   tests/                                      unit/integration tests (incl. surface-repair gate)
 ```
 
@@ -195,6 +221,17 @@ local curated source pages
 Accepted memory v1 and the wiki overlay are separate artifacts. Wiki ingestion
 v2 is deterministic, offline, local-fixture only, candidate-generation only, and
 does not modify accepted memory or runtime memory.
+
+Cross-page entity QA uses the same isolated overlay, but requires an explicit
+stable relation path or an explicitly caveated weak contextual link. Weak links
+are never treated as stable facts, and volatile source-qualified facts are never
+treated as stable/current facts.
+
+Self-ingestion v1 is an offline dry-run pipeline: local Wikipedia-like documents
+are converted to wiki-like pages, passed through the unchanged ingestion and
+overlay builders, classified as duplicates/deltas/conflicts/quarantine, and
+checked by deterministic QA regressions before any promotion step. It does not
+write raw source text into accepted memory.
 
 ### Microworld Pipeline
 
@@ -412,8 +449,7 @@ python3 -m worldpgt.benchmarks.full_comparison_report \
 python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       # 34 passed
 python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  # 26 passed
 python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            # 33 passed
-python3 -m pytest worldpgt/tests -q                                 # 822 passed
-python3 -m pytest -q                                                # 1865 passed
+python3 -m pytest -q                                                # 2007 passed
 ```
 
 ---
@@ -501,19 +537,19 @@ fixture only. It creates reviewable candidates and does not modify accepted
 memory or runtime memory.
 
 ```text
-pages_total:              10
-candidates_total:         67
-entity_card:              10
-definition_claim:         10
-relation_claim:           19
-context_link:             27
-source_qualified_fact:     1
-stable:                   10
-semi_stable:              19
-volatile:                  1
-low risk:                 20
-medium risk:              19
-high risk:                 1
+pages_total:              50
+candidates_total:        283
+entity_card:              50
+definition_claim:         50
+relation_claim:           53
+context_link:            126
+source_qualified_fact:     4
+stable:                   50
+semi_stable:              53
+volatile:                  4
+low risk:                100
+medium risk:              53
+high risk:                 4
 review_errors_count:       0
 review_warnings_count:     0
 safe_for_runtime_memory: false
@@ -526,19 +562,23 @@ accepted memory v1. It is safe for the controlled entity QA overlay, not for
 general runtime use.
 
 ```text
-source_candidates_total:      67
-overlay_items_total:          67
+source_candidates_total:     283
+overlay_items_total:         283
 skipped_candidates_total:      0
-overlay_entity:               10
-overlay_definition:           10
-overlay_relation:             19
-overlay_context_link:         27
-overlay_source_fact:           1
-source_facts_count:            1
-weak_context_links_count:     27
+overlay_entity:               50
+overlay_definition:           50
+overlay_relation:             53
+overlay_context_link:        126
+overlay_source_fact:           4
+source_facts_count:            4
+weak_context_links_count:    126
 safe_for_general_runtime:  false
 safe_for_entity_qa_overlay: true
 ```
+
+The four volatile source-qualified facts are stored with `as_of=2026-06`,
+`requires_recheck=true`, and `risk=high`. They are never converted into stable
+relations. The 126 contextual links remain `weak_context_only`.
 
 ### Entity QA Benchmark v1
 
@@ -559,6 +599,104 @@ source_facts_used:          3
 weak_context_links_used:    4
 safe_for_general_runtime: false
 ```
+
+### Entity QA Expansion v1
+
+The expanded entity QA benchmark uses the same isolated 50-page overlay and
+broader phrasings over entity definitions, relations, weak contextual links,
+source-qualified facts, and unsupported/current questions.
+
+```text
+qa_total:                  111
+correct_count:             111
+wrong_count:                 0
+answer_count:               79
+audit_count:                32
+quality_flagged:             0
+accuracy:                  1.0
+answer_precision:          1.0
+source_facts_used:          12
+weak_context_links_used:    15
+safe_for_general_runtime: false
+```
+
+### Adversarial Entity QA v1
+
+The adversarial benchmark is designed to verify audit behavior under prompts
+that try to force unsupported inference or unsafe promotion.
+
+```text
+qa_total:                  68
+correct_count:             68
+wrong_count:                0
+answer_count:               6
+audit_count:               62
+quality_flagged:            0
+accuracy:                 1.0
+answer_precision:         1.0
+safe_for_general_runtime: false
+```
+
+Adversarial categories include relation inversion, weak-link-as-fact,
+current/real-time requests, category confusion, invalid universal or
+generalization claims, source-qualified volatility, and unsupported
+private/personal data.
+
+### Cross-page Entity QA v1
+
+Cross-page QA is controlled graph-style multi-hop QA over the isolated 50-page
+overlay. It answers when a stable supporting path is present, gives a caveat
+for weak contextual links, and audits when a requested path is unsupported.
+
+```text
+qa_total:                  71
+correct_count:             71
+wrong_count:                0
+answer_count:              50
+audit_count:               21
+quality_flagged:            0
+accuracy:                 1.0
+answer_precision:         1.0
+relation_edges_used:       35
+weak_context_links_used:   31
+source_facts_used:         36
+safe_for_general_runtime: false
+```
+
+Examples: Musk -> SpaceX -> rockets can answer; Musk -> Starlink audits when no
+explicit stable path exists; SpaceX -> Starlink returns a weak contextual link
+caveat instead of a stable factual relation.
+
+### Wikipedia Self-Ingestion v1
+
+Self-ingestion v1 is a safe offline self-feeding pipeline. It reads local
+Wikipedia-like documents, converts them to wiki-like pages, reuses unchanged
+`WikiIngestionV2` and `WikiCandidateOverlayBuilder`, classifies
+deltas/conflicts/quarantine, proposes an overlay delta, creates a dry-run
+overlay, and runs QA/adversarial/cross-page regressions.
+
+It never writes raw text directly into accepted memory. The dry-run overlay is
+separate from the accepted wiki overlay.
+
+```text
+sources_total:             14
+url_sources_rejected:       1
+documents_read:            14
+read_errors:                0
+candidates_total:          39
+new_candidates:            28
+duplicate_existing:         8
+conflicts:                  2
+overlay_delta_items:       27
+quarantined_total:          9
+rejected_total:             4
+dry_run_overlay_items:    310
+safe_to_apply_overlay_delta: true
+safe_for_general_runtime: false
+```
+
+Dry-run QA against the 310-item overlay remains green for Entity QA v1,
+Entity QA expansion, Adversarial Entity QA, and Cross-page Entity QA.
 
 Example entity QA outputs:
 
@@ -640,8 +778,12 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
   conflicting, unsupported, or volatile.
 - Source-qualified volatile facts require recheck before operational use.
 - Weak context links are contextual mentions, not stable factual relations.
+- Weak links are never promoted to stable facts.
+- Volatile facts are never auto-applied as stable/current facts.
 - Current unsupported questions audit rather than using a generic fallback.
 - Accepted memory v1 is not modified by wiki ingestion or wiki overlay builds.
+- The accepted wiki overlay is not overwritten by self-ingestion.
+- The self-ingestion dry-run overlay is separate.
 - `safe_for_general_runtime` remains false for the wiki overlay.
 - Validators and planner thresholds are part of the safety boundary and should
   not be weakened to increase coverage.
@@ -651,7 +793,7 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 ## Limitations
 
 - Controlled benchmark results only; not open-domain QA.
-- Narrow scope: 6 ambiguous terms in accepted-memory QA and 10 local pages in
+- Narrow scope: 6 ambiguous terms in accepted-memory QA and 50 local pages in
   the current wiki fixture.
 - Curated corpus and accepted memory are doing important work.
 - Analyzers are rule/curriculum-based and need explicit expansion.
@@ -659,7 +801,11 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 - The wiki overlay is isolated and is not accepted memory v1.
 - Weak context links are not facts.
 - Source-qualified volatile facts require recheck.
-- No claim that Microworld is an LLM replacement.
+- Source extraction is still narrow.
+- There is no autonomous web ingestion.
+- There is no accepted overlay promotion yet.
+- Current facts are not answered as live truth.
+- No claim that Microworld is a general-purpose language model.
 - 120-row benchmark. Results do not generalize beyond this controlled task.
 - GPT-2 is an old base model (2019), not an instruction-tuned assistant.
 - GPT-2 audit labels were assigned by a human pass after generation, not by a native model gate.
@@ -672,12 +818,11 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 
 ## Next Steps
 
-1. Fix the directional relation verbalization bug in entity answer rendering.
-2. Expand Entity QA from 28 to 100 prompts on the same 10-page overlay.
-3. Expand the curated wiki corpus from 10 to 50 pages.
-4. Add cross-page relation QA.
-5. Add a repeated efficiency benchmark with median/min/max.
-6. Compare with a GPT-style baseline on the same controlled questions.
+1. Promote Overlay Delta v1 - validate and promote the safe self-ingestion
+   overlay delta into a separate promoted overlay artifact, without modifying
+   trusted accepted memory or the current accepted overlay.
+2. Add a repeated efficiency benchmark with median/min/max.
+3. Compare with a GPT-style baseline on the same controlled questions.
 
 ---
 
@@ -718,4 +863,12 @@ worldpgt/experiments/accepted_wiki_memory_overlay_v1_summary.json
 worldpgt/experiments/accepted_wiki_memory_overlay_v1_skipped.json
 worldpgt/experiments/entity_qa_v1_outputs.csv
 worldpgt/experiments/entity_qa_v1_summary.json
+worldpgt/experiments/entity_qa_expansion_v1_outputs.csv
+worldpgt/experiments/entity_qa_expansion_v1_summary.json
+worldpgt/experiments/entity_qa_adversarial_v1.csv
+worldpgt/experiments/entity_qa_adversarial_v1_outputs.csv
+worldpgt/experiments/entity_qa_adversarial_v1_summary.json
+worldpgt/experiments/cross_page_qa_v1.csv
+worldpgt/experiments/cross_page_qa_v1_outputs.csv
+worldpgt/experiments/cross_page_qa_v1_summary.json
 ```
