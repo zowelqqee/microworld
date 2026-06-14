@@ -1,4 +1,4 @@
-# worldmvp / Microworld
+# Microworld
 
 Microworld is an experimental explicit-memory, graph, trust, policy, and audit
 based reasoning and QA system. It explores whether useful controlled QA,
@@ -19,7 +19,7 @@ interface to that world.
 Current test status:
 
 ```text
-python3 -m pytest -q  ->  2007 passed
+python3 -m pytest -q  ->  2030 passed
 ```
 
 ## Navigation
@@ -83,7 +83,10 @@ indicators, not final benchmark claims.
 | Adversarial Entity QA     | 68/68       |
 | Cross-page Entity QA      | 71/71       |
 | Self-ingestion dry-run QA | all green   |
-| Full suite                | 2007 passed |
+| Promote Overlay Delta v1  | 310-item promoted overlay, regressions green |
+| Full suite                | 2030 passed |
+
+Promote Overlay Delta v1 — 310-item promoted overlay, regressions green.
 
 The current 50-page wiki overlay is an isolated memory artifact, not trusted
 accepted memory. It contains 283 overlay items: 50 entities, 50 definitions, 53
@@ -96,6 +99,26 @@ wiki ingestion and overlay builders, classifies deltas/conflicts/quarantine,
 proposes an overlay delta, and runs deterministic regression gates. It does not
 write raw text directly into accepted memory, and the dry-run overlay is
 separate from the accepted wiki overlay.
+
+Promote Overlay Delta v1 validates the self-ingestion delta and promotes only
+safe items into a separate promoted overlay artifact. The base accepted wiki
+overlay is preserved unchanged.
+
+Promotion artifacts:
+
+```text
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.meta.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_report.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_validation.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_regression_summary.json
+```
+
+Important overlay distinction:
+
+* `accepted_wiki_memory_overlay_v1.json` - 283 items, not touched.
+* `promoted_wiki_memory_overlay_v1.json` - 310 items, separate promoted overlay.
+* `safe_for_general_runtime=false`.
 
 ## Why This Exists
 
@@ -213,6 +236,7 @@ curated source pages
 | Wiki ingestion v2 | 283 candidates | review errors: 0 | - | - | - | - | ~0.060 s | ~23.8 MB |
 | Wiki overlay v1 | 283 overlay items | skipped: 0 | - | - | - | - | ~0.050 s | ~23.7 MB |
 | Self-ingestion v1 dry run | 310-item dry-run overlay | dry-run regressions green | - | - | - | - | ~0.210 s | ~25.8 MB |
+| Promote Overlay Delta v1 | 310 promoted overlay items | 27/27 delta accepted | rejected 0 | blocked 0 | regressions green | full suite 2030 passed | - | - |
 
 Accepted-memory QA uses
 `worldpgt/experiments/accepted_knowledge_memory_v1.json`: 221 accepted items
@@ -716,6 +740,9 @@ controlled language as an interface to that memory.
   isolated overlay
 * Wikipedia Self-Ingestion v1 - offline dry-run overlay delta proposal with
   quarantine and deterministic regression gates
+* Promote Overlay Delta v1 - validates self-ingestion delta, promotes only safe
+  items into a separate promoted overlay, and runs QA/adversarial/cross-page
+  regression gates.
 
 **Supported QA intents:** `define_sense`, `classify_context`, `explain_cue`,
 `distinguish_senses`, `unknown_or_ambiguous`
@@ -801,11 +828,12 @@ trillion. This is a volatile source-qualified estimate and should be rechecked.
 * current unsupported questions audit
 * accepted memory v1 is not modified by wiki overlay
 * self-ingestion uses a separate dry-run overlay
+* promotion uses a separate promoted overlay artifact
 * volatile facts are never auto-applied as stable facts
 * `safe_for_general_runtime` remains false for wiki overlay
 
-Known caveat: renderer polish is ongoing. A directional relation verbalization
-bug can make `Who is Elon Musk?` say `founded by SpaceX`; this is a surface
+Previously fixed caveat: an older directional relation verbalization bug could
+make `Who is Elon Musk?` say `founded by SpaceX`; this was a surface
 verbalization issue, not an accepted-memory, planner, or overlay issue.
 
 See `worldpgt/` for the full QA package and
@@ -872,7 +900,8 @@ Start with:
 * Current facts are not answered as live truth.
 * Source extraction is still narrow.
 * There is no autonomous web ingestion.
-* There is no accepted overlay promotion yet.
+* Promotion exists only as a separate promoted overlay artifact; it still does
+  not modify trusted accepted memory or accepted wiki overlay.
 * Renderer surface quality is still being polished.
 * Current results are exploratory and based on bounded graph reasoning tasks.
 * The ConceptNet work uses filtered samples, not a full benchmark.
@@ -913,9 +942,9 @@ Start with:
 
 **worldpgt QA layer:**
 
-1. Promote Overlay Delta v1 - validate and promote the safe self-ingestion
-   overlay delta into a separate promoted overlay artifact, without modifying
-   trusted accepted memory or the current accepted overlay.
+1. Promoted Overlay Provider v1 - load the separate promoted overlay artifact
+   for controlled QA runs without modifying trusted accepted memory or the
+   current accepted overlay.
 2. Add a repeated efficiency benchmark with median/min/max.
 3. Compare with a GPT-style baseline on the same controlled questions.
 4. Continue generalized analyzer curriculum work while preserving safety on

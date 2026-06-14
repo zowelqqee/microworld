@@ -51,6 +51,7 @@ domains and isolated overlays; they are not open-domain or live-fact claims.
 | Wiki ingestion v2 | `experiments/wiki_pages_curated_v2.json` / `wiki_ingestion_v2_summary.json` | 283 candidates | 0 review errors | - | - | - | ~0.060 s | ~23.8 MB |
 | Wiki overlay v1 | `experiments/accepted_wiki_memory_overlay_v1_summary.json` | 283 overlay items | 0 skipped | - | - | - | ~0.050 s | ~23.7 MB |
 | Self-ingestion v1 dry run | dry-run 310-item overlay | regressions green | - | - | - | - | ~0.210 s | ~25.8 MB |
+| Promote Overlay Delta v1 | `experiments/self_ingestion_v1/promotion/promotion_report.json` | 310 promoted overlay items | 27/27 delta accepted, rejected 0, blocked 0 | - | - | regressions green | - | - |
 
 The current Python implementation runs these small controlled benchmark batches
 in about 0.05-0.21 seconds with roughly 24-26 MB peak RSS. These are single-run
@@ -63,7 +64,7 @@ Current local test status:
 python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       -> 34 passed
 python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  -> 26 passed
 python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            -> 33 passed
-python3 -m pytest -q                                                -> 2007 passed
+python3 -m pytest -q                                                -> 2030 passed
 ```
 
 ---
@@ -449,7 +450,7 @@ python3 -m worldpgt.benchmarks.full_comparison_report \
 python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       # 34 passed
 python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  # 26 passed
 python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            # 33 passed
-python3 -m pytest -q                                                # 2007 passed
+python3 -m pytest -q                                                # 2030 passed
 ```
 
 ---
@@ -698,6 +699,38 @@ safe_for_general_runtime: false
 Dry-run QA against the 310-item overlay remains green for Entity QA v1,
 Entity QA expansion, Adversarial Entity QA, and Cross-page Entity QA.
 
+### Promote Overlay Delta v1
+
+Promote Overlay Delta v1 validates the self-ingestion delta, promotes only safe
+items into a separate promoted overlay, and runs QA/adversarial/cross-page
+regression gates. The accepted wiki overlay is preserved unchanged.
+
+```text
+delta_proposal_items:       27
+accepted_delta_items:       27
+rejected_delta_items:        0
+blocked_delta_items:         0
+promoted_overlay_items:    310
+safe_for_general_runtime: false
+full_suite:              2030 passed
+```
+
+Promotion artifacts:
+
+```text
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.meta.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_report.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_validation.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_regression_summary.json
+```
+
+Important overlay distinction:
+
+- `accepted_wiki_memory_overlay_v1.json` - 283 items, not touched.
+- `promoted_wiki_memory_overlay_v1.json` - 310 items, separate promoted overlay.
+- `safe_for_general_runtime=false`.
+
 Example entity QA outputs:
 
 ```text
@@ -717,8 +750,8 @@ Current/real-time questions audit unless the needed fact is present as an
 accepted source-qualified fact. For example, `What is Tesla's current stock
 price?` should audit.
 
-Known caveat: renderer polish is ongoing. A directional relation verbalization
-bug can make `Who is Elon Musk?` say `founded by SpaceX`; this is a surface
+Previously fixed caveat: an older directional relation verbalization bug could
+make `Who is Elon Musk?` say `founded by SpaceX`; this was a surface
 verbalization issue, not a knowledge, planner, or overlay issue.
 
 ### Example Outputs
@@ -784,6 +817,8 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 - Accepted memory v1 is not modified by wiki ingestion or wiki overlay builds.
 - The accepted wiki overlay is not overwritten by self-ingestion.
 - The self-ingestion dry-run overlay is separate.
+- The promoted overlay is separate from accepted memory and accepted wiki
+  overlay.
 - `safe_for_general_runtime` remains false for the wiki overlay.
 - Validators and planner thresholds are part of the safety boundary and should
   not be weakened to increase coverage.
@@ -803,7 +838,8 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 - Source-qualified volatile facts require recheck.
 - Source extraction is still narrow.
 - There is no autonomous web ingestion.
-- There is no accepted overlay promotion yet.
+- Promotion exists only as a separate promoted overlay artifact; it still does
+  not modify trusted accepted memory or accepted wiki overlay.
 - Current facts are not answered as live truth.
 - No claim that Microworld is a general-purpose language model.
 - 120-row benchmark. Results do not generalize beyond this controlled task.
@@ -818,9 +854,9 @@ python3 -m worldpgt.experiments.run_entity_qa_v1
 
 ## Next Steps
 
-1. Promote Overlay Delta v1 - validate and promote the safe self-ingestion
-   overlay delta into a separate promoted overlay artifact, without modifying
-   trusted accepted memory or the current accepted overlay.
+1. Promoted Overlay Provider v1 - load the separate promoted overlay artifact
+   for controlled QA runs without modifying trusted accepted memory or the
+   current accepted overlay.
 2. Add a repeated efficiency benchmark with median/min/max.
 3. Compare with a GPT-style baseline on the same controlled questions.
 
@@ -871,4 +907,9 @@ worldpgt/experiments/entity_qa_adversarial_v1_summary.json
 worldpgt/experiments/cross_page_qa_v1.csv
 worldpgt/experiments/cross_page_qa_v1_outputs.csv
 worldpgt/experiments/cross_page_qa_v1_summary.json
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json
+worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.meta.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_report.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_validation.json
+worldpgt/experiments/self_ingestion_v1/promotion/promotion_regression_summary.json
 ```
