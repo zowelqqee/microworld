@@ -1,0 +1,3040 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Initial public offering",
+      "predicate": "founded_by",
+      "object": "Jeff Bezos",
+      "source_page": "Blue Origin",
+      "evidence_text": "History The company was founded in 2000 by Jeff Bezos, the founder of Amazon.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The newly",
+      "predicate": "develops",
+      "object": "Falcon Heavy",
+      "source_page": "Blue Origin",
+      "evidence_text": "The newly developed heavy-lift launch vehicle will use two of the 2,400 kN (550,000 lbf) BE-4 engines on each first stage.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Gigafactory",
+      "predicate": "produces",
+      "object": "Lithium-ion battery",
+      "source_page": "Gigafactory",
+      "evidence_text": "For the first gigafactory, Tesla partnered with Panasonic to produce battery cells at the same facility where the vehicles would be manufactured, creating economies of scale and improving control of the battery supply chain.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "produces_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Many companies",
+      "predicate": "produces",
+      "object": "Rocket",
+      "source_page": "Rocket",
+      "evidence_text": "Many companies produce model rocket kits and parts but due to their inherent simplicity some hobbyists have been known to make rockets out of almost anything.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "EADS Astrium",
+      "predicate": "subsidiary_of",
+      "object": "European aerospace giant EADS",
+      "source_page": "Space tourism",
+      "evidence_text": "EADS Astrium, a subsidiary of European aerospace giant EADS, announced its space tourism project in June 2007.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "subsidiary_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Giga Nevada had been intended",
+      "predicate": "produces",
+      "object": "Lithium-ion battery",
+      "source_page": "Tesla Model 3",
+      "evidence_text": "Giga Nevada had been intended to produce battery packs for Model 3 and it was announced in January 2017 that Tesla would also manufacture drive units at Giga Nevada.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Therefore turbocharged engines usually",
+      "predicate": "produces",
+      "object": "Solar power",
+      "source_page": "Supercharger",
+      "evidence_text": "Therefore turbocharged engines usually produce more power and better fuel economy than supercharged engines.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Autopilot",
+      "predicate": "developed_by",
+      "object": "Oracle Corporation",
+      "source_page": "Autopilot",
+      "evidence_text": "The first gyroscopic autopilot for aircraft was developed by Sperry Corporation in 1912.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "develops",
+      "object": "Private spaceflight",
+      "source_page": "Private spaceflight",
+      "evidence_text": "In the early 2000s, several public-private corporate partnerships were established in the United States to privately develop spaceflight technology.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Better Place",
+      "predicate": "develops",
+      "object": "Lithium-ion battery",
+      "source_page": "Electric car",
+      "evidence_text": "Better Place developed battery charging and battery swapping services, but went bankrupt in 2013.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stock exchange",
+      "predicate": "owned_by",
+      "object": "Nasdaq",
+      "source_page": "Nasdaq",
+      "evidence_text": "The exchange platform is owned by Nasdaq, IncInc\u0000, which also owns the Nasdaq Nordic stock market network and several U.SU.S\u0000-based stock and options exchanges.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "and served as a model for most of the industrialized countries",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "Manufactures produced 3,000 engineers, and served as a model for most of the industrialized countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "École Centrale Paris",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
+      "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
+      "snapshot_revision_id": 1327364105,
+      "snapshot_raw_text_sha256": "0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-000-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "produces_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Aerospace",
+      "definition": "co-operation of the public and private sectors",
+      "predicate": "is_a",
+      "source_page": "Aerospace",
+      "evidence_text": "Overview In most industrial countries, the aerospace industry is a co-operation of the public and private sectors.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Aerospace",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Aerospace",
+      "snapshot_retrieved_at": "2026-06-15T09:18:48Z",
+      "snapshot_revision_id": 1355578900,
+      "snapshot_raw_text_sha256": "e909450390f26ba68e27af6824f05b116bfef540f6217a89c969de90535f3daa",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-008-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Army Ballistic Missile Agency",
+      "definition": "first major project assigned to ABMA",
+      "predicate": "is_a",
+      "source_page": "Army Ballistic Missile Agency",
+      "evidence_text": "History The Redstone missile was the first major project assigned to ABMA.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Army Ballistic Missile Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Army_Ballistic_Missile_Agency",
+      "snapshot_retrieved_at": "2026-06-17T17:18:16Z",
+      "snapshot_revision_id": 1325675904,
+      "snapshot_raw_text_sha256": "35d2d74f5c8fb36fb09448ad616327788e42d3c31954f0df9fe53bf44223f064",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-057-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Arthur Ransome",
+      "definition": "son of Cyril Ransome (1851–1897) and his wife Edith Ransome (née Baker Boulton) (1862–1944)",
+      "predicate": "is_a",
+      "source_page": "Arthur Ransome",
+      "evidence_text": "Early life Ransome was the son of Cyril Ransome (1851–1897) and his wife Edith Ransome (née Baker Boulton) (1862–1944).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Arthur Ransome",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Arthur_Ransome",
+      "snapshot_retrieved_at": "2026-06-17T20:45:19Z",
+      "snapshot_revision_id": 1355678545,
+      "snapshot_raw_text_sha256": "5e110a5e06a58b31e8f696fb97e3643c5cfbb8ddbf696863bb7ba6c44ed51e26",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-062-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Benjamin Franklin",
+      "definition": "tallow chandler",
+      "predicate": "is_a",
+      "source_page": "Benjamin Franklin",
+      "evidence_text": "Ancestry Benjamin Franklin's father, Josiah Franklin, was a tallow chandler, soaper, and candlemaker.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Benjamin Franklin",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Benjamin_Franklin",
+      "snapshot_retrieved_at": "2026-06-17T20:45:42Z",
+      "snapshot_revision_id": 1359732941,
+      "snapshot_raw_text_sha256": "497d5ba7d5d7bf95ebaae19cd053a34f19b5ccc2a4026a6c0fe5a395dc45a5f3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-098-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Business journalism",
+      "predicate": "known_for",
+      "object": "novels",
+      "source_page": "Business journalism",
+      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Business journalism",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
+      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
+      "snapshot_revision_id": 1330899901,
+      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-142-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "known_for_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Business journalism",
+      "predicate": "known_for",
+      "object": "especially Robinson Crusoe",
+      "source_page": "Business journalism",
+      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Business journalism",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
+      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
+      "snapshot_revision_id": 1330899901,
+      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-142-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "known_for_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Business journalism",
+      "predicate": "known_for",
+      "object": "began publishing business",
+      "source_page": "Business journalism",
+      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Business journalism",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
+      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
+      "snapshot_revision_id": 1330899901,
+      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-142-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "known_for_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Business journalism",
+      "predicate": "known_for",
+      "object": "economic news",
+      "source_page": "Business journalism",
+      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Business journalism",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
+      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
+      "snapshot_revision_id": 1330899901,
+      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-142-overlay-004",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "known_for_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Cecil Rhodes",
+      "definition": "matter of debate",
+      "predicate": "is_a",
+      "source_page": "Cecil Rhodes",
+      "evidence_text": "With the rise of international anti-racist movements like Rhodes Must Fall, Rhodes's legacy is a matter of debate.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Cecil Rhodes",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Cecil_Rhodes",
+      "snapshot_retrieved_at": "2026-06-17T20:46:24Z",
+      "snapshot_revision_id": 1356285993,
+      "snapshot_raw_text_sha256": "59be580daa36d59892943460faba235983c8cedd6eceabb38ca6767d904999fb",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-165-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Dalal Street",
+      "definition": "proposal to rename the street after Nagarmal Saraf",
+      "predicate": "is_a",
+      "source_page": "Dalal Street",
+      "evidence_text": "In 2008, there was a proposal to rename the street after Nagarmal Saraf, a broker who worked at the BSE for 25 years.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Dalal Street",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Dalal_Street",
+      "snapshot_retrieved_at": "2026-06-17T17:18:24Z",
+      "snapshot_revision_id": 1304871657,
+      "snapshot_raw_text_sha256": "3fb0cf7e5c7a17763bce1629945d18c9b7aa10f0a88d98d5684ef86358534e13",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-207-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Honeywell Aerospace",
+      "predicate": "publishes",
+      "object": "which acknowledged a significant decline from 2008 to 2010",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "publishes a regular business aviation forecast, which acknowledged a significant decline from 2008 to 2010, but expected recovery to 2008 levels by 2017.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Honeywell Aerospace",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Honeywell_Aerospace",
+      "snapshot_retrieved_at": "2026-06-17T17:11:32Z",
+      "snapshot_revision_id": 1359736088,
+      "snapshot_raw_text_sha256": "b6474ad3bdcebf1a4bc4ad174871e04eb833690fa90e4cb391329419892e44e2",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-316-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Honeywell Aerospace",
+      "predicate": "publishes",
+      "object": "but expected recovery to 2008 levels by 2017",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "publishes a regular business aviation forecast, which acknowledged a significant decline from 2008 to 2010, but expected recovery to 2008 levels by 2017.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Honeywell Aerospace",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Honeywell_Aerospace",
+      "snapshot_retrieved_at": "2026-06-17T17:11:32Z",
+      "snapshot_revision_id": 1359736088,
+      "snapshot_raw_text_sha256": "b6474ad3bdcebf1a4bc4ad174871e04eb833690fa90e4cb391329419892e44e2",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-316-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Intercontinental Exchange",
+      "definition": "power plant developer who spotted a need for a seamless market in natural gas used to fuel power stations",
+      "predicate": "is_a",
+      "source_page": "Intercontinental Exchange",
+      "evidence_text": "History Jeffrey Sprecher was a power plant developer who spotted a need for a seamless market in natural gas used to fuel power stations.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Intercontinental Exchange",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Intercontinental_Exchange",
+      "snapshot_retrieved_at": "2026-06-17T17:19:28Z",
+      "snapshot_revision_id": 1359551533,
+      "snapshot_raw_text_sha256": "cc0144e30bdfa558c1f1840a241b3cb97c66e00f8e2b6e8137131e95e930274b",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-333-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "object": "other information including its flagship publication",
+      "source_page": "International Energy Agency",
+      "evidence_text": "publishes a range of reports and other information including its flagship publication, the annual World Energy Outlook, as well as the Net Zero by 2050 report.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "International Energy Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
+      "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
+      "snapshot_revision_id": 1350653231,
+      "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-334-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "object": "as well as the Net Zero by 2050 report",
+      "source_page": "International Energy Agency",
+      "evidence_text": "publishes a range of reports and other information including its flagship publication, the annual World Energy Outlook, as well as the Net Zero by 2050 report.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "International Energy Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
+      "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
+      "snapshot_revision_id": 1350653231,
+      "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-334-overlay-004",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Lawrence Sperry",
+      "definition": "third son of the gyrocompass co-inventor",
+      "predicate": "is_a",
+      "source_page": "Lawrence Sperry",
+      "evidence_text": "Biography Sperry was the third son of the gyrocompass co-inventor, Elmer Ambrose Sperry, and his wife Zula.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Lawrence Sperry",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Lawrence_Sperry",
+      "snapshot_retrieved_at": "2026-06-17T17:21:26Z",
+      "snapshot_revision_id": 1350662847,
+      "snapshot_raw_text_sha256": "88050941166a9d48374757c146c76f2359fd75b512b53192aa428ed7f87d203f",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-381-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Linda Yaccarino",
+      "definition": "assistant chief of police",
+      "predicate": "is_a",
+      "source_page": "Linda Yaccarino",
+      "evidence_text": "Early life and education Yaccarino grew up in Deer Park, New York, where her father was an assistant chief of police, and her mother was a civil servant.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Linda Yaccarino",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
+      "snapshot_retrieved_at": "2026-06-17T17:17:57Z",
+      "snapshot_revision_id": 1359416110,
+      "snapshot_raw_text_sha256": "7870856ba123178f23b25e0e0fc0d6fdeca8ffb0d620d1134ac39f13fc7a09aa",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-383-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Lyndon Rive",
+      "definition": "Ernst & Young Entrepreneur of the Year Award winner in the Northern California Region",
+      "predicate": "is_a",
+      "source_page": "Lyndon Rive",
+      "evidence_text": "Awards In 2013, Rive was an Ernst & Young Entrepreneur of the Year Award winner in the Northern California Region.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Lyndon Rive",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Lyndon_Rive",
+      "snapshot_retrieved_at": "2026-06-17T17:17:58Z",
+      "snapshot_revision_id": 1355723003,
+      "snapshot_raw_text_sha256": "58aaeb0ea661f5c5878931a2253009222723931031c801e61baec2fb83a05e1f",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-395-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "B-21 Raider strategic bomber that can drop conventional",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "thermonuclear weapons (forecasted to be ready for combat in 2029)",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "B-2 Spirit strategic bomber (which will be replaced by the B-21)",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "fuselage",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-004",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-005",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "control",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-008",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "and the NATO Alliance Ground Surveillance Force",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-010",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Robert E. Wright",
+      "definition": "member of the All-College Honors Program",
+      "predicate": "is_a",
+      "source_page": "Robert E. Wright",
+      "evidence_text": "Education After graduating from Fairport High School in 1987, Wright took degrees in History from Buffalo State College, where he was a member of the All-College Honors Program, and the University at Buffalo (Ph.D., 1997).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Robert E. Wright",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Robert_E._Wright",
+      "snapshot_retrieved_at": "2026-06-17T20:43:41Z",
+      "snapshot_revision_id": 1353397453,
+      "snapshot_raw_text_sha256": "ff6eafc400d9a15a98c38f0de615cc54044e7fd083d971c60e04e204ec9a3369",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-522-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Royal Mail Steam Packet Company",
+      "definition": "largest shipping group in the world",
+      "predicate": "is_a",
+      "source_page": "Royal Mail Steam Packet Company",
+      "evidence_text": "History as Royal Mail Steam Packet Company The RMSPC, founded in 1839 by James MacQueen, ran tours and mail to various destinations in the Caribbean and South America, and by 1927, was the largest shipping group in the world.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Royal Mail Steam Packet Company",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Royal_Mail_Steam_Packet_Company",
+      "snapshot_retrieved_at": "2026-06-17T17:12:26Z",
+      "snapshot_revision_id": 1359693795,
+      "snapshot_raw_text_sha256": "68cee56981e3be6a12631883f12677c20812c2ed55be939e6382c7581de7af62",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-534-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Saturn",
+      "definition": "father of the god Jupiter",
+      "predicate": "is_a",
+      "source_page": "Saturn",
+      "evidence_text": "Name and symbol Saturn is named after the Roman god of wealth and agriculture, who was the father of the god Jupiter.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Saturn",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Saturn",
+      "snapshot_retrieved_at": "2026-06-15T09:17:43Z",
+      "snapshot_revision_id": 1355615822,
+      "snapshot_raw_text_sha256": "a1138e3ed67905778d52d171ee770a3c8a65d86b5d143c269d07b04bb9f10e71",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-550-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Securities Exchange Act of 1934",
+      "definition": "physical place where securities (stocks",
+      "predicate": "is_a",
+      "source_page": "Securities Exchange Act of 1934",
+      "evidence_text": "Securities exchanges One area subject to the 1934 Act's regulation is the physical place where securities (stocks, bonds, notes of debenture) are exchanged.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Securities Exchange Act of 1934",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
+      "snapshot_retrieved_at": "2026-06-17T17:17:07Z",
+      "snapshot_revision_id": 1346097663,
+      "snapshot_raw_text_sha256": "2149979db23f189a06112c8dba0b277f99580ac5ac6c24343f871b9d2a3c0917",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-558-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Silicon Valley",
+      "definition": "focus of a large number of computer hardware and software innovators and manufacturers in the region",
+      "predicate": "is_a",
+      "source_page": "Silicon Valley",
+      "evidence_text": "Etymology \"Silicon\" refers to the chemical element used in silicon-based transistors and integrated circuit chips, which is the focus of a large number of computer hardware and software innovators and manufacturers in the region.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Silicon Valley",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Silicon_Valley",
+      "snapshot_retrieved_at": "2026-06-17T17:17:43Z",
+      "snapshot_revision_id": 1358841398,
+      "snapshot_raw_text_sha256": "f06f74c8195bc528efeff902e8a07b9eddb2d24c647524176084a4dcc3a87c16",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-564-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Technology",
+      "definition": "term dating back to the early 17th century that meant 'systematic treatment' (from Greek Τεχνολογία",
+      "predicate": "is_a",
+      "source_page": "Technology",
+      "evidence_text": "Etymology Technology is a term dating back to the early 17th century that meant 'systematic treatment' (from Greek Τεχνολογία, from the Greek: τέχνη, romanized: tékhnē, lit.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Technology",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Technology",
+      "snapshot_retrieved_at": "2026-06-15T09:18:11Z",
+      "snapshot_revision_id": 1351642289,
+      "snapshot_raw_text_sha256": "72538ca5d28007cf64fcc777fc2c55da0f8e2621e7f8420d98f361ea911c1205",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-628-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_definition_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Tesla Autopilot",
+      "definition": "good thing to have in planes",
+      "predicate": "is_a",
+      "source_page": "Tesla Autopilot",
+      "evidence_text": "History Elon Musk first discussed the Tesla Autopilot system publicly in 2013, noting that \"Autopilot is a good thing to have in planes, and we should have it in cars.\" At the time, no autopilot system in aircraft rendered them fully autonomous.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Tesla Autopilot",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Autopilot",
+      "snapshot_retrieved_at": "2026-06-17T17:10:40Z",
+      "snapshot_revision_id": 1359291917,
+      "snapshot_raw_text_sha256": "8b19173bdd4fc2c8ab2b630eaed4efc81d552109194895d4fe8d2d44c2d71c6f",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-630-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Wet Nellie",
+      "definition": "\"wet sub\" that requires occupants to don scuba gear",
+      "predicate": "is_a",
+      "source_page": "Wet Nellie",
+      "evidence_text": "Construction The submarine does not maintain a dry interior, and thus is a \"wet sub\" that requires occupants to don scuba gear.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "snapshot_source_title": "Wet Nellie",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Wet_Nellie",
+      "snapshot_retrieved_at": "2026-06-15T12:36:29Z",
+      "snapshot_revision_id": 1336612850,
+      "snapshot_raw_text_sha256": "1b8dde4f4fb62a2aff1a764bee3e1fae16fe5228ab0438e906c2353f13969623",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-692-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Malabry campus",
+      "predicate": "developed_by",
+      "object": "Jean Fayeton",
+      "source_page": "Centrale Paris",
+      "evidence_text": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Accenture plc is an Irish technology consulting company",
+      "predicate": "headquartered_in",
+      "object": "Dublin",
+      "source_page": "Andersen Consulting",
+      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "British Aerospace",
+      "source_page": "Aerospace manufacturing",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "US",
+      "source_page": "Aerospace manufacturing",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Early years Amazon Bookstore",
+      "predicate": "founded_by",
+      "object": "Rosina Richter Christy",
+      "source_page": "Amazon Bookstore Cooperative",
+      "evidence_text": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Early years Amazon Bookstore",
+      "predicate": "founded_by",
+      "object": "Julie Morse Quist",
+      "source_page": "Amazon Bookstore Cooperative",
+      "evidence_text": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Orradio Industries",
+      "predicate": "owned_by",
+      "object": "Ampex",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational technology company",
+      "predicate": "headquartered_in",
+      "object": "Cupertino",
+      "source_page": "Apple Computer",
+      "evidence_text": "Apple IncInc\u0000 is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Apple IncInc\u0000 is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NeXT",
+      "predicate": "owned_by",
+      "object": "To overhaul its market strategy, Apple",
+      "source_page": "Apple Computer",
+      "evidence_text": "To overhaul its market strategy, Apple acquired NeXT, bringing Jobs back to the company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "To overhaul its market strategy, Apple acquired NeXT, bringing Jobs back to the company.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Atlantic Ocean",
+      "definition": "second largest of the world's five oceanic divisions",
+      "predicate": "is_a",
+      "source_page": "Atlantic Ocean",
+      "evidence_text": "The Atlantic Ocean is the second largest of the world's five oceanic divisions, with an area of about 85,133,000 square kilometers (32,870,000 sq mi).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Atlantic Ocean is the second largest of the world's five oceanic divisions, with an area of about 85,133,000 square kilometers (32,870,000 sq mi).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American privately funded space infrastructure developer",
+      "predicate": "headquartered_in",
+      "object": "Houston",
+      "source_page": "Axiom Space",
+      "evidence_text": "Axiom Space, IncInc\u0000, is an American privately funded space infrastructure developer headquartered in Houston, Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Axiom Space, IncInc\u0000, is an American privately funded space infrastructure developer headquartered in Houston, Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational conglomerate holding company",
+      "predicate": "headquartered_in",
+      "object": "Omaha",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Berkshire Hathaway IncInc\u0000 () is an American multinational conglomerate holding company headquartered in Omaha, Nebraska.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Berkshire Hathaway IncInc\u0000 () is an American multinational conglomerate holding company headquartered in Omaha, Nebraska.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "See's Candies",
+      "predicate": "owned_by",
+      "object": "Berkshire",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Berkshire acquired See's Candies in 1972 for $25 million.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Berkshire acquired See's Candies in 1972 for $25 million.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American news agency",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "Bloomberg UK",
+      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.PL.P\u0000 Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.PL.P\u0000 Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American company Learjet, a manufacturer of business jets",
+      "predicate": "headquartered_in",
+      "object": "Wichita",
+      "source_page": "Bombardier Aerospace",
+      "evidence_text": "This was followed in 1990 by the acquisition of the bankrupt American company Learjet, a manufacturer of business jets headquartered in Wichita, Kansas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "This was followed in 1990 by the acquisition of the bankrupt American company Learjet, a manufacturer of business jets headquartered in Wichita, Kansas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Business journalism",
+      "definition": "part of journalism",
+      "predicate": "is_a",
+      "source_page": "Business journalism",
+      "evidence_text": "Business journalism is the part of journalism that tracks, records, analyzes, and interprets the business, economic and financial activities and changes that take place in societies.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Business journalism is the part of journalism that tracks, records, analyzes, and interprets the business, economic and financial activities and changes that take place in societies.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_definition_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American television broadcaster CBS",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "CBS News",
+      "evidence_text": "CBS News is the news division of the American television broadcaster CBS headquartered in New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "CBS News is the news division of the American television broadcaster CBS headquartered in New York City.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "CT Corporation, or the Corporation Trust Company,",
+      "predicate": "subsidiary_of",
+      "object": "Wolters",
+      "source_page": "CT Corporation",
+      "evidence_text": "CT Corporation, or the Corporation Trust Company, is a wholly owned subsidiary of Wolters Kluwer, a multi-national information services company based in the Netherlands with operations in more than 35 countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "subsidiary_of_v2",
+      "v2_pattern_id": "subsidiary_of_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "CT Corporation, or the Corporation Trust Company, is a wholly owned subsidiary of Wolters Kluwer, a multi-national information services company based in the Netherlands with operations in more than 35 countries.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subsidiary_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "CIC also",
+      "predicate": "publishes",
+      "object": "Behind the Headlines",
+      "source_page": "International Journal",
+      "evidence_text": "The CIC also publishes Behind the Headlines.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "publishes_direct_v2",
+      "v2_pattern_id": "publishes_direct_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The CIC also publishes Behind the Headlines.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "May 1871, diamonds were found at the Vooruitzigt farm, which",
+      "predicate": "owned_by",
+      "object": "Johannese Nicolaas",
+      "source_page": "Cecil Rhodes",
+      "evidence_text": "In May 1871, diamonds were found at the Vooruitzigt farm, which was owned by Johannese Nicolaas de Beer and his brother, Diederik Arnoldus.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "owned_by_v2",
+      "v2_pattern_id": "owned_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In May 1871, diamonds were found at the Vooruitzigt farm, which was owned by Johannese Nicolaas de Beer and his brother, Diederik Arnoldus.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "May 1871, diamonds were found at the Vooruitzigt farm, which",
+      "predicate": "owned_by",
+      "object": "Beer",
+      "source_page": "Cecil Rhodes",
+      "evidence_text": "In May 1871, diamonds were found at the Vooruitzigt farm, which was owned by Johannese Nicolaas de Beer and his brother, Diederik Arnoldus.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "owned_by_v2",
+      "v2_pattern_id": "owned_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In May 1871, diamonds were found at the Vooruitzigt farm, which was owned by Johannese Nicolaas de Beer and his brother, Diederik Arnoldus.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Chrysler Corporation The Chrysler company",
+      "predicate": "founded_by",
+      "object": "Walter Chrysler",
+      "source_page": "Chrysler Corporation",
+      "evidence_text": "1925–1998: Chrysler Corporation The Chrysler company was founded by Walter Chrysler on June 6, 1925, when the Maxwell Motor Company (estest\u0000 1904) was re-organized into the Chrysler Corporation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "1925–1998: Chrysler Corporation The Chrysler company was founded by Walter Chrysler on June 6, 1925, when the Maxwell Motor Company (estest\u0000 1904) was re-organized into the Chrysler Corporation.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Commercial Resupply Services",
+      "definition": "series of flights awarded by NASA for the delivery of cargo",
+      "predicate": "is_a",
+      "source_page": "Commercial Resupply Services",
+      "evidence_text": "Commercial Resupply Services (CRS) are a series of flights awarded by NASA for the delivery of cargo and supplies to the International Space Station (ISS) on commercially operated spacecraft.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Commercial Resupply Services (CRS) are a series of flights awarded by NASA for the delivery of cargo and supplies to the International Space Station (ISS) on commercially operated spacecraft.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Insignia and livery The mission insignia",
+      "predicate": "developed_by",
+      "object": "Andrew Nyberg",
+      "source_page": "SpaceX Demo-2",
+      "evidence_text": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Insignia and livery The mission insignia",
+      "predicate": "developed_by",
+      "object": "Brainerd",
+      "source_page": "SpaceX Demo-2",
+      "evidence_text": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "BNA",
+      "predicate": "owned_by",
+      "object": "Bloomberg",
+      "source_page": "Daniel Doctoroff",
+      "evidence_text": "During Doctoroff’s tenure, Bloomberg acquired BNA, later rebranded Bloomberg BNA and eventually Bloomberg Industry Group.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "During Doctoroff’s tenure, Bloomberg acquired BNA, later rebranded Bloomberg BNA and eventually Bloomberg Industry Group.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Clothing is now produced by Christian Dior Couture, which",
+      "predicate": "subsidiary_of",
+      "object": "LVMH",
+      "source_page": "Christian Dior SE",
+      "evidence_text": "Clothing is now produced by Christian Dior Couture, which is a subsidiary of LVMH, whereas Christian Dior SE is a holding company that controls LVMH.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "subsidiary_of_v2",
+      "v2_pattern_id": "subsidiary_of_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Clothing is now produced by Christian Dior Couture, which is a subsidiary of LVMH, whereas Christian Dior SE is a holding company that controls LVMH.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subsidiary_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "News Corp, and",
+      "predicate": "publishes",
+      "object": "The Wall Street Journal among other publications",
+      "source_page": "Dow Jones",
+      "evidence_text": "That company eventually became a subsidiary of News Corp, and publishes The Wall Street Journal among other publications.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "publishes_direct_v2",
+      "v2_pattern_id": "publishes_direct_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "That company eventually became a subsidiary of News Corp, and publishes The Wall Street Journal among other publications.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dream Chaser began in 2004 as a project of SpaceDev, which",
+      "predicate": "owned_by",
+      "object": "Sierra Nevada Corporation",
+      "source_page": "Dream Chaser",
+      "evidence_text": "Development of Dream Chaser began in 2004 as a project of SpaceDev, which was acquired by Sierra Nevada Corporation (SNC) in 2008.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Development of Dream Chaser began in 2004 as a project of SpaceDev, which was acquired by Sierra Nevada Corporation (SNC) in 2008.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dream Chaser began in 2004 as a project of SpaceDev, which",
+      "predicate": "owned_by",
+      "object": "SNC",
+      "source_page": "Dream Chaser",
+      "evidence_text": "Development of Dream Chaser began in 2004 as a project of SpaceDev, which was acquired by Sierra Nevada Corporation (SNC) in 2008.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Development of Dream Chaser began in 2004 as a project of SpaceDev, which was acquired by Sierra Nevada Corporation (SNC) in 2008.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SDI Media",
+      "predicate": "owned_by",
+      "object": "Warburg Pincus, the private equity firm that",
+      "source_page": "Elevation Partners",
+      "evidence_text": "Elevation purchased the company from Warburg Pincus, the private equity firm that acquired SDI Media in 2004.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Elevation purchased the company from Warburg Pincus, the private equity firm that acquired SDI Media in 2004.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational automobile manufacturer",
+      "predicate": "headquartered_in",
+      "object": "Dearborn",
+      "source_page": "Ford Motor",
+      "evidence_text": "The Ford Motor Company (commonly known as Ford, sometimes abbreviated as FoMoCo) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Ford Motor Company (commonly known as Ford, sometimes abbreviated as FoMoCo) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ford International Capital LLC, which",
+      "predicate": "subsidiary_of",
+      "object": "Ford",
+      "source_page": "Ford Motor Company Limited",
+      "evidence_text": "Ford Motor Company Limited, trading as Ford of Britain, is a British wholly owned subsidiary of Ford Technologies Limited (formerly called Blue Oval Holdings), itself a subsidiary of Ford International Capital LLC, which is a subsidiary of Ford Motor Company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "subsidiary_of_v2",
+      "v2_pattern_id": "subsidiary_of_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ford Motor Company Limited, trading as Ford of Britain, is a British wholly owned subsidiary of Ford Technologies Limited (formerly called Blue Oval Holdings), itself a subsidiary of Ford International Capital LLC, which is a subsidiary of Ford Motor Company.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subsidiary_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "GE Aerospace, is an American aircraft engine supplier that",
+      "predicate": "headquartered_in",
+      "object": "Evendale",
+      "source_page": "GE Aerospace",
+      "evidence_text": "General Electric Company, doing business as GE Aerospace, is an American aircraft engine supplier that is headquartered in Evendale, Ohio, outside Cincinnati.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "General Electric Company, doing business as GE Aerospace, is an American aircraft engine supplier that is headquartered in Evendale, Ohio, outside Cincinnati.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "W & T Avery",
+      "predicate": "owned_by",
+      "object": "GEC",
+      "source_page": "General Electric Company",
+      "evidence_text": "The company continued to expand via acquisitions; between 1979 and 1981, GEC acquired W & T Avery, Cincinnati Electronics, and Picker Corporation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The company continued to expand via acquisitions; between 1979 and 1981, GEC acquired W & T Avery, Cincinnati Electronics, and Picker Corporation.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "British telephone system had been taken over and",
+      "predicate": "operated_by",
+      "object": "General Post Office",
+      "source_page": "General Electric Company",
+      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "British telephone system had been taken over and",
+      "predicate": "operated_by",
+      "object": "GPO",
+      "source_page": "General Electric Company",
+      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "British telephone system had been taken over and",
+      "predicate": "operated_by",
+      "object": "BPO",
+      "source_page": "General Electric Company",
+      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational automotive manufacturing company",
+      "predicate": "headquartered_in",
+      "object": "Detroit",
+      "source_page": "General Motors",
+      "evidence_text": "General Motors Company (GM) is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "General Motors Company (GM) is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United Motors",
+      "predicate": "owned_by",
+      "object": "GM on May 2, 1918, and the same year GM",
+      "source_page": "General Motors",
+      "evidence_text": "Chevrolet Motor Company was consolidated into GM on May 2, 1918, and the same year GM acquired United Motors, a parts supplier founded by Durant and headed by Alfred P.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Chevrolet Motor Company was consolidated into GM on May 2, 1918, and the same year GM acquired United Motors, a parts supplier founded by Durant and headed by Alfred P.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity purchased Silevo in 2014, and SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Gigafactory New York",
+      "evidence_text": "SolarCity purchased Silevo in 2014, and SolarCity was acquired by Tesla in 2016.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "SolarCity purchased Silevo in 2014, and SolarCity was acquired by Tesla in 2016.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Designworks, a BMW industrial design studio",
+      "predicate": "headquartered_in",
+      "object": "Newbury Park",
+      "source_page": "Henrik Fisker",
+      "evidence_text": "From 1999 to 2001, Fisker was the president and chief executive officer of Designworks, a BMW industrial design studio headquartered in Newbury Park, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "From 1999 to 2001, Fisker was the president and chief executive officer of Designworks, a BMW industrial design studio headquartered in Newbury Park, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Northern Command, which",
+      "predicate": "headquartered_in",
+      "object": "Colorado Springs",
+      "source_page": "Homeland Security",
+      "evidence_text": "While homeland defense refers to its military component, led chiefly by the United States Northern Command, which is headquartered in Colorado Springs, Colorado.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "While homeland defense refers to its military component, led chiefly by the United States Northern Command, which is headquartered in Colorado Springs, Colorado.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Honeywell",
+      "predicate": "owned_by",
+      "object": "Allied-Signal",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "Allied-Signal acquired Honeywell in 1999 and changed the name of the resulting company to Honeywell International.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Allied-Signal acquired Honeywell in 1999 and changed the name of the resulting company to Honeywell International.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Illustra Information Technologies",
+      "predicate": "owned_by",
+      "object": "Informix",
+      "source_page": "Informix Software",
+      "evidence_text": "White took over as chief executive. 1996: Informix acquired Illustra Information Technologies, an object/relational database company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "White took over as chief executive. 1996: Informix acquired Illustra Information Technologies, an object/relational database company.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Red Brick Systems",
+      "predicate": "owned_by",
+      "object": "Informix",
+      "source_page": "Informix Software",
+      "evidence_text": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ardent",
+      "predicate": "owned_by",
+      "object": "Informix",
+      "source_page": "Informix Software",
+      "evidence_text": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ascential Software",
+      "predicate": "owned_by",
+      "object": "IBM",
+      "source_page": "Informix Software",
+      "evidence_text": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Universal Web Architecture, which makes use of Illustra and Online Dynamic Server, was announced in November. 1997: Informix was rocked by charges of accounting fraud and illegal insider trading. 1998: Informix acquired Red Brick Systems, founded by Ralph Kimball, a data warehouse database company. 2000: Informix acquired Ardent, a data management company. 2001: Informix sold its database subsidiary, Informix Software, to IBM, and renamed itself Ascential Software. 2005: IBM acquired Ascential Software.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Informix brand and database products",
+      "predicate": "owned_by",
+      "object": "IBM",
+      "source_page": "Informix Software",
+      "evidence_text": "The Informix brand and database products were acquired by IBM in 2001, and several of the most popular products remain on the market and are continuing to be enhanced by IBM.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Informix brand and database products were acquired by IBM in 2001, and several of the most popular products remain on the market and are continuing to be enhanced by IBM.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Corporation is an American multinational technology company",
+      "predicate": "headquartered_in",
+      "object": "Santa Clara",
+      "source_page": "Intel Corporation",
+      "evidence_text": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Jaguar Cars",
+      "predicate": "owned_by",
+      "object": "Ford had",
+      "source_page": "Jaguar Land Rover",
+      "evidence_text": "Ford had acquired Jaguar Cars in 1989 and then Land Rover from BMW in 2000.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ford had acquired Jaguar Cars in 1989 and then Land Rover from BMW in 2000.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Make Up For Ever was established in 1984, and it",
+      "predicate": "owned_by",
+      "object": "LVMH",
+      "source_page": "Alain Chevalier",
+      "evidence_text": "Make Up For Ever was established in 1984, and it was acquired by LVMH in 1999.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Make Up For Ever was established in 1984, and it was acquired by LVMH in 1999.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "German multinational automotive company",
+      "predicate": "headquartered_in",
+      "object": "Stuttgart",
+      "source_page": "Mercedes-Benz Group",
+      "evidence_text": "Mercedes-Benz Group AG (formerly Daimler-Benz, DaimlerChrysler, and Daimler) is a German multinational automotive company headquartered in Stuttgart, Baden-Württemberg, Germany.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Mercedes-Benz Group AG (formerly Daimler-Benz, DaimlerChrysler, and Daimler) is a German multinational automotive company headquartered in Stuttgart, Baden-Württemberg, Germany.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational technology company",
+      "predicate": "headquartered_in",
+      "object": "Menlo Park",
+      "source_page": "Meta Platforms",
+      "evidence_text": "Meta Platforms, IncInc\u0000 (doing business as Meta) is an American multinational technology company headquartered in Menlo Park, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Meta Platforms, IncInc\u0000 (doing business as Meta) is an American multinational technology company headquartered in Menlo Park, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "New Energy Finance, a company he founded in 2004 that",
+      "predicate": "owned_by",
+      "object": "Bloomberg",
+      "source_page": "Michael Liebreich",
+      "evidence_text": "He is also a senior contributor at Bloomberg New Energy Finance, a company he founded in 2004 that was acquired by Bloomberg in 2009.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "He is also a senior contributor at Bloomberg New Energy Finance, a company he founded in 2004 that was acquired by Bloomberg in 2009.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Corporation is an American multinational technology company",
+      "predicate": "headquartered_in",
+      "object": "Redmond",
+      "source_page": "Microsoft Corporation",
+      "evidence_text": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ames Research Center The Space Flight Operations Facility",
+      "predicate": "operated_by",
+      "object": "Jet Propulsion Laboratory",
+      "source_page": "Mission Control Center",
+      "evidence_text": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ames Research Center The Space Flight Operations Facility",
+      "predicate": "operated_by",
+      "object": "JPL",
+      "source_page": "Mission Control Center",
+      "evidence_text": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ames Research Center The Space Flight Operations Facility",
+      "predicate": "operated_by",
+      "object": "Pasadena",
+      "source_page": "Mission Control Center",
+      "evidence_text": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "operated_by_v2",
+      "v2_pattern_id": "operated_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Multi-Mission Operations Center at the Ames Research Center The Space Flight Operations Facility is operated by the Jet Propulsion Laboratory (JPL) in Pasadena, California and manages all of NASA's uncrewed spacecraft outside Earth's orbit and several research probes within along with the Deep Space Network.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "For most of its history, the company",
+      "predicate": "owned_by",
+      "object": "Morgan",
+      "source_page": "Morgan Motor Company",
+      "evidence_text": "For most of its history, the company was owned by the Morgan family.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "owned_by_v2",
+      "v2_pattern_id": "owned_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "For most of its history, the company was owned by the Morgan family.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "For example, a business may be",
+      "predicate": "headquartered_in",
+      "object": "San Jose",
+      "source_page": "Nevada Corporation",
+      "evidence_text": "For example, a business may be headquartered in San Jose, California but incorporated in Nevada.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "For example, a business may be headquartered in San Jose, California but incorporated in Nevada.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "OpenAI employees, and investors, whereas OpenAI Global, LLC,",
+      "predicate": "owned_by",
+      "object": "OpenAI LP",
+      "source_page": "OpenAI Global",
+      "evidence_text": "OpenAI formed three subsidiaries: the holding company OpenAI LP, the holding company OpenAI GP LLC, and the capped for-profit company OpenAI Global, LLCLLC\u0000 The holding company OpenAI LP was owned by the nonprofit OpenAI, IncInc\u0000, OpenAI employees, and investors, whereas OpenAI Global, LLC, was owned by OpenAI LP and Microsoft, the latter of which had a minority non-voting stake.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "owned_by_v2",
+      "v2_pattern_id": "owned_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "OpenAI formed three subsidiaries: the holding company OpenAI LP, the holding company OpenAI GP LLC, and the capped for-profit company OpenAI Global, LLCLLC\u0000 The holding company OpenAI LP was owned by the nonprofit OpenAI, IncInc\u0000, OpenAI employees, and investors, whereas OpenAI Global, LLC, was owned by OpenAI LP and Microsoft, the latter of which had a minority non-voting stake.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "OpenAI employees, and investors, whereas OpenAI Global, LLC,",
+      "predicate": "owned_by",
+      "object": "Microsoft",
+      "source_page": "OpenAI Global",
+      "evidence_text": "OpenAI formed three subsidiaries: the holding company OpenAI LP, the holding company OpenAI GP LLC, and the capped for-profit company OpenAI Global, LLCLLC\u0000 The holding company OpenAI LP was owned by the nonprofit OpenAI, IncInc\u0000, OpenAI employees, and investors, whereas OpenAI Global, LLC, was owned by OpenAI LP and Microsoft, the latter of which had a minority non-voting stake.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "owned_by_v2",
+      "v2_pattern_id": "owned_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "OpenAI formed three subsidiaries: the holding company OpenAI LP, the holding company OpenAI GP LLC, and the capped for-profit company OpenAI Global, LLCLLC\u0000 The holding company OpenAI LP was owned by the nonprofit OpenAI, IncInc\u0000, OpenAI employees, and investors, whereas OpenAI Global, LLC, was owned by OpenAI LP and Microsoft, the latter of which had a minority non-voting stake.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Salomon Brothers",
+      "predicate": "owned_by",
+      "object": "Corporation, and that same year the company subsequently",
+      "source_page": "Phibro Corporation",
+      "evidence_text": "In 1981 the company was spun off as Phibro Corporation, and that same year the company subsequently acquired Salomon Brothers, creating Phibro-Salomon IncInc\u0000 In 1983, Michael Farmer, Baron Farmer joined Anglo Chemical, which was part of Phibro-Salomon, as head of global base metal trading until 1989.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 1981 the company was spun off as Phibro Corporation, and that same year the company subsequently acquired Salomon Brothers, creating Phibro-Salomon IncInc\u0000 In 1983, Michael Farmer, Baron Farmer joined Anglo Chemical, which was part of Phibro-Salomon, as head of global base metal trading until 1989.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "PlayStation logo",
+      "predicate": "developed_by",
+      "object": "Manabu Sakamoto",
+      "source_page": "Sony PlayStation",
+      "evidence_text": "The PlayStation logo was designed by Manabu Sakamoto.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The PlayStation logo was designed by Manabu Sakamoto.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational aerospace and defense conglomerate",
+      "predicate": "headquartered_in",
+      "object": "Arlington",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "RTX Corporation, formerly Raytheon Technologies Corporation, is an American multinational aerospace and defense conglomerate headquartered in Arlington, Virginia.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "RTX Corporation, formerly Raytheon Technologies Corporation, is an American multinational aerospace and defense conglomerate headquartered in Arlington, Virginia.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Amana Refrigeration",
+      "predicate": "owned_by",
+      "object": "Phillips in 1965, it",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "Phillips in 1965, it acquired Amana Refrigeration, IncInc\u0000, a manufacturer of refrigerators and air conditioners.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Phillips in 1965, it acquired Amana Refrigeration, IncInc\u0000, a manufacturer of refrigerators and air conditioners.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "BBN Technologies",
+      "predicate": "owned_by",
+      "object": "Sarcos, and in October 2009, Raytheon",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "In November 2007, Raytheon purchased robotics company Sarcos, and in October 2009, Raytheon acquired BBN Technologies.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In November 2007, Raytheon purchased robotics company Sarcos, and in October 2009, Raytheon acquired BBN Technologies.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Pioneer Energy, a research and development firm",
+      "predicate": "headquartered_in",
+      "object": "Lakewood",
+      "source_page": "Robert Zubrin",
+      "evidence_text": "Pioneer Energy In 2008, Zubrin founded Pioneer Energy, a research and development firm headquartered in Lakewood, Colorado.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Pioneer Energy In 2008, Zubrin founded Pioneer Energy, a research and development firm headquartered in Lakewood, Colorado.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "RSG",
+      "predicate": "owned_by",
+      "object": "SegaSoft made later that same year when it",
+      "source_page": "Rocket Science Games",
+      "evidence_text": "It may have been a casualty of the cuts SegaSoft made later that same year when it acquired RSG.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "It may have been a casualty of the cuts SegaSoft made later that same year when it acquired RSG.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Five years later in 2015, the Roots company",
+      "predicate": "owned_by",
+      "object": "Colfax Corporation",
+      "source_page": "Roots Blower Company",
+      "evidence_text": "Five years later in 2015, the Roots company was acquired by Colfax Corporation, and became a part of Colfax's UK based engineering company Howden.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Five years later in 2015, the Roots company was acquired by Colfax Corporation, and became a part of Colfax's UK based engineering company Howden.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational bulge bracket investment bank",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "Salomon Brothers",
+      "evidence_text": "Salomon Brothers, IncInc\u0000, was an American multinational bulge bracket investment bank headquartered in New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Salomon Brothers, IncInc\u0000, was an American multinational bulge bracket investment bank headquartered in New York City.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Loopt failed to gain significant user traction, the company",
+      "predicate": "owned_by",
+      "object": "Green Dot Corporation",
+      "source_page": "Sam Altman",
+      "evidence_text": "In March 2012, after Loopt failed to gain significant user traction, the company was acquired by the Green Dot Corporation for $43.4 million.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In March 2012, after Loopt failed to gain significant user traction, the company was acquired by the Green Dot Corporation for $43.4 million.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "S-IB stage",
+      "predicate": "developed_by",
+      "object": "Chrysler",
+      "source_page": "Saturn IB",
+      "evidence_text": "The S-IB stage was built by the Chrysler corporation at the Michoud Assembly Facility, New Orleans.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The S-IB stage was built by the Chrysler corporation at the Michoud Assembly Facility, New Orleans.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "S-IB stage",
+      "predicate": "developed_by",
+      "object": "Michoud Assembly Facility",
+      "source_page": "Saturn IB",
+      "evidence_text": "The S-IB stage was built by the Chrysler corporation at the Michoud Assembly Facility, New Orleans.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The S-IB stage was built by the Chrysler corporation at the Michoud Assembly Facility, New Orleans.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Early years in CanAm series The company",
+      "predicate": "founded_by",
+      "object": "Don Nichols",
+      "source_page": "Advanced Vehicle Systems",
+      "evidence_text": "1968–1972: Early years in CanAm series The company was founded by Don Nichols in California in 1968 as \"Advanced Vehicle Systems\"; the cars were called Shadows, designed by Trevor Harris and entered under the Shadow Racing IncInc\u0000 banner.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "1968–1972: Early years in CanAm series The company was founded by Don Nichols in California in 1968 as \"Advanced Vehicle Systems\"; the cars were called Shadows, designed by Trevor Harris and entered under the Shadow Racing IncInc\u0000 banner.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding and development Sirius",
+      "predicate": "founded_by",
+      "object": "Martine Rothblatt",
+      "source_page": "Sirius Satellite Radio",
+      "evidence_text": "Founding and development Sirius was founded by Martine Rothblatt, who served as the new company's Chairman of the Board.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding and development Sirius was founded by Martine Rothblatt, who served as the new company's Chairman of the Board.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity Corporation was a publicly traded company",
+      "predicate": "headquartered_in",
+      "object": "Fremont",
+      "source_page": "SolarCity Corporation",
+      "evidence_text": "SolarCity Corporation was a publicly traded company headquartered in Fremont, California that sold and installed solar energy generation systems as well as other related products and services to residential, commercial, and industrial customers.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "SolarCity Corporation was a publicly traded company headquartered in Fremont, California that sold and installed solar energy generation systems as well as other related products and services to residential, commercial, and industrial customers.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Then in January 1929 it",
+      "predicate": "owned_by",
+      "object": "North American Aviation",
+      "source_page": "Sperry Corporation",
+      "evidence_text": "Then in January 1929 it was acquired by North American Aviation, who reincorporated it in New York as the Sperry Gyroscope Company, IncInc\u0000 The company once again became independent in 1933 when it was spun-off as a subsidiary of the newly formed Sperry Corporation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Then in January 1929 it was acquired by North American Aviation, who reincorporated it in New York as the Sperry Gyroscope Company, IncInc\u0000 The company once again became independent in 1933 when it was spun-off as a subsidiary of the newly formed Sperry Corporation.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Times",
+      "predicate": "headquartered_in",
+      "object": "The New York Times Building in Midtown Manhattan",
+      "source_page": "New York Times",
+      "evidence_text": "The Times is headquartered at The New York Times Building in Midtown Manhattan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Times is headquartered at The New York Times Building in Midtown Manhattan.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Hatton's share of the newspaper",
+      "predicate": "owned_by",
+      "object": "Wilkins",
+      "source_page": "Washington Post",
+      "evidence_text": "Wilkins acquired Hatton's share of the newspaper in 1894 at Hatton's death.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Wilkins acquired Hatton's share of the newspaper in 1894 at Hatton's death.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Odeo",
+      "predicate": "owned_by",
+      "object": "Odeo formed Obvious Corporation and",
+      "source_page": "Obvious Corporation",
+      "evidence_text": "In October 2006, Biz Stone, Evan Williams, Dorsey, and other members of Odeo formed Obvious Corporation and acquired Odeo, together with its assets—including Odeo.com and Twitter.com—from the investors and shareholders.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In October 2006, Biz Stone, Evan Williams, Dorsey, and other members of Odeo formed Obvious Corporation and acquired Odeo, together with its assets—including Odeo.com and Twitter.com—from the investors and shareholders.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American multinational conglomerate",
+      "predicate": "headquartered_in",
+      "object": "Farmington",
+      "source_page": "United Technologies",
+      "evidence_text": "United Technologies Corporation (UTC) was an American multinational conglomerate headquartered in Farmington, Connecticut.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "United Technologies Corporation (UTC) was an American multinational conglomerate headquartered in Farmington, Connecticut.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Otis Elevator",
+      "predicate": "owned_by",
+      "object": "UTC forcibly",
+      "source_page": "United Technologies",
+      "evidence_text": "The next year (1976), UTC forcibly acquired Otis Elevator.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The next year (1976), UTC forcibly acquired Otis Elevator.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Goodrich and merged it with Hamilton Sundstrand",
+      "predicate": "owned_by",
+      "object": "Goodrich Corporation. 2012, United Technologies",
+      "source_page": "United Technologies",
+      "evidence_text": "In 2010, UTC agreed with Clipper to acquire the rest of the company. 2010 General Electric's security equipment business for US$1.8 billion, to support UTC's Fire & Security unit. 2011, UTC acquired a $18.4 billion deal (including $1.9 billion in net debt assumed) for aircraft components maker Goodrich Corporation. 2012, United Technologies acquired Goodrich and merged it with Hamilton Sundstrand; the resulting organization is UTC Aerospace Systems 2015, UTC Building & Industrial Systems completed the acquisition of CIAT Group, a leading HVAC manufacturing company in France.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 2010, UTC agreed with Clipper to acquire the rest of the company. 2010 General Electric's security equipment business for US$1.8 billion, to support UTC's Fire & Security unit. 2011, UTC acquired a $18.4 billion deal (including $1.9 billion in net debt assumed) for aircraft components maker Goodrich Corporation. 2012, United Technologies acquired Goodrich and merged it with Hamilton Sundstrand; the resulting organization is UTC Aerospace Systems 2015, UTC Building & Industrial Systems completed the acquisition of CIAT Group, a leading HVAC manufacturing company in France.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ultimately the GalacticSky technology",
+      "predicate": "owned_by",
+      "object": "Lockheed Martin",
+      "source_page": "Vector Launch",
+      "evidence_text": "Ultimately the GalacticSky technology was acquired by Lockheed Martin.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ultimately the GalacticSky technology was acquired by Lockheed Martin.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Formation and early activities Virgin Galactic",
+      "predicate": "founded_by",
+      "object": "Sir Richard Branson",
+      "source_page": "Virgin Galactic",
+      "evidence_text": "Formation and early activities Virgin Galactic was founded in 2004 by British entrepreneur Sir Richard Branson, who had previously founded the Virgin Group and the Virgin Atlantic airline, and who had a long personal history of balloon and surface record-breaking activities.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Formation and early activities Virgin Galactic was founded in 2004 by British entrepreneur Sir Richard Branson, who had previously founded the Virgin Group and the Virgin Atlantic airline, and who had a long personal history of balloon and surface record-breaking activities.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American microblogging and social networking service,",
+      "predicate": "headquartered_in",
+      "object": "Bastrop",
+      "source_page": "Twitter Blue",
+      "evidence_text": "X, formerly known as Twitter, is an American microblogging and social networking service, headquartered in Bastrop, Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "X, formerly known as Twitter, is an American microblogging and social networking service, headquartered in Bastrop, Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Odeo from the investors and shareholders",
+      "predicate": "owned_by",
+      "object": "Odeo formed Obvious Corporation and",
+      "source_page": "Twitter Blue",
+      "evidence_text": "In October 2006, Biz Stone, Evan Williams, Dorsey, and other members of Odeo formed Obvious Corporation and acquired Odeo from the investors and shareholders.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In October 2006, Biz Stone, Evan Williams, Dorsey, and other members of Odeo formed Obvious Corporation and acquired Odeo from the investors and shareholders.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American technology company",
+      "predicate": "headquartered_in",
+      "object": "Bastrop",
+      "source_page": "X Corp",
+      "evidence_text": "X CorpCorp\u0000 is an American technology company headquartered in Bastrop, Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "X CorpCorp\u0000 is an American technology company headquartered in Bastrop, Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "subsidiary_of",
+      "object": "Abbott Laboratories",
+      "source_page": "Abbott Laboratories",
+      "evidence_text": "Leuprorelin In October 2001, the US Department of Justice, states attorneys general, and TAP Pharmaceutical Products, a subsidiary of Abbott Laboratories, settled criminal and civil charges against TAP related to federal and state Medicare fraud and illegal marketing of the drug leuprorelin.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:9a2e4b55:8225a702",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "subsidiary_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite internet",
+      "predicate": "owned_by",
+      "object": "Amazon",
+      "source_page": "Amazon Web Services",
+      "evidence_text": "According to Brewster Kahle, co-founder of Alexa Internet, which was acquired by Amazon in 1999, his start-up's compute infrastructure helped Amazon solve its big data problems and later informed the innovations that underpinned AWS.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:49734bd4:5322dc6f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "subsidiary_of",
+      "object": "Delta Information Systems",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Ampex operates as Ampex Data Systems Corporation, a subsidiary of Delta Information Systems, and consists of two business units.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:1de3ee64:4f7af461",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "subsidiary_subject_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "LVMH",
+      "predicate": "subsidiary_of",
+      "object": "Oracle Corporation",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Legal history In 2005, iNEXTV, a wholly owned subsidiary of respondent Ampex Corporation, brought a defamation lawsuit against a poster on an Internet message board who posted messages critical of them (Ampex CorpCorp\u0000 v.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:1de3ee64:f3bf8c15",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "subsidiary_subject_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Subsidiary",
+      "predicate": "headquartered_in",
+      "object": "Silicon Valley",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Ampex Data Systems Corporation (ADSC) headquartered in Silicon Valley, and its subsidiary, Ampex Japan LtdLtd\u0000 are the only two Ampex businesses that still trade as more than \"in name only\" entities.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:1de3ee64:ba8a1a70",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "This company",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "Berkeley DB",
+      "evidence_text": "This company was acquired by Oracle Corporation in February 2006.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:07910642:eb23ea2b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Meta Meta Platforms owns",
+      "predicate": "operates",
+      "object": "Social media",
+      "source_page": "Big Tech",
+      "evidence_text": "Meta Meta Platforms owns and operates major social media and messaging services, including Facebook, Instagram, Threads, and WhatsApp.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:a35e5898:be1b25cf",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Private spaceflight",
+      "predicate": "owned_by",
+      "object": "Blue Origin",
+      "source_page": "Blue Origin NS-19",
+      "evidence_text": "Blue Origin NS-19 was a New Shepard sub-orbital spaceflight mission operated by Blue Origin that launched on 11 December 2021.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:7c9ed1a0:9698ba54",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The first exact date",
+      "predicate": "published_by",
+      "object": "NASA",
+      "source_page": "SpaceX Demo-1",
+      "evidence_text": "The first exact date was published by NASA in November 2018 to be 17 January 2019, but this was delayed until February 2019.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:45d4a4fc:b8288888",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The range also uses instrumentation",
+      "predicate": "owned_by",
+      "object": "NASA",
+      "source_page": "Atlantic Missile Range",
+      "evidence_text": "The range also uses instrumentation operated by NASA at Wallops and KSC.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:a0690fb5:f8336c41",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "GSFC also",
+      "predicate": "operates",
+      "object": "Private spaceflight",
+      "source_page": "Goddard Space Flight Center",
+      "evidence_text": "GSFC also operates two spaceflight tracking and data acquisition networks (the Space Network and the Near Earth Network), develops and maintains advanced space and Earth science data information systems, and develops satellite systems for the National Oceanic and Atmospheric Administration (NOAA).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:7bce04a4:842c03bb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Monte Titoli",
+      "predicate": "operates",
+      "object": "Stock exchange",
+      "source_page": "London Stock Exchange",
+      "evidence_text": "Monte Titoli operates both on-exchange and OTC trades with over 400 banks and brokers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:4dfb941b:1f9efe91",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The following exchanges are",
+      "predicate": "owned_by",
+      "object": "Nasdaq",
+      "source_page": "Nasdaq OMX",
+      "evidence_text": "The following exchanges are operated by Nasdaq, IncInc\u0000:",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:9325565b:03ecc06c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "produces",
+      "object": "Rocket",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "Northrop Grumman produces solid rocket motors, including for Space Launch Systems and for Graphite-Epoxy Motors, and developed the Glide Phase Interceptor.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:92fe4f8c:976cf430",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "subsidiary_of",
+      "object": "General Motors",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "Also in 1997, Raytheon acquired the aerospace and defense business of Hughes Aircraft Company from Hughes Electronics Corporation, a subsidiary of General Motors, which included a number of product lines previously purchased by Hughes Electronics, including the former General Dynamics missile business (Pomona facility), the defense portion of Delco Electronics (Delco Systems Operations), and Magnavox Electronic Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:3538924e:f8c2cb6d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "subsidiary_subject_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founder",
+      "predicate": "headquartered_in",
+      "object": "Hartford with Frederick Rentschler",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "United Aircraft Corporation was formed in 1934 from United Aircraft and Transport's manufacturing interests east of the Mississippi River (Pratt & Whitney, Sikorsky, Vought, and Hamilton Standard Propeller Company), headquartered in Hartford with Frederick Rentschler, founder of Pratt & Whitney, as president.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:3538924e:56407dad",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "If none of the previously",
+      "predicate": "develops",
+      "object": "Rocket",
+      "source_page": "Rocket engine",
+      "evidence_text": "If none of the previously developed rocket engines met the needs of the mission, a new rocket engine with specific requirements would be contracted to another DB specialised in LPRE development (oftentimes each DB had expertise in specific types of LPREs with different applications, propellants, or engine sizes).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:84beb196:4fa8c509",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bifacial cells",
+      "predicate": "produces",
+      "object": "Tesla Energy",
+      "source_page": "Solar panel",
+      "evidence_text": "Bifacial cells produce energy on both sides which increases the total output of the module, this boost depends on the reflectivity of the surroundings and benefits from raised constructions since more light can reach the rear side.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:3c889a9d:c9191292",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NASA",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "SpaceX CRS-33",
+      "evidence_text": "SpaceX CRS-33, also known as SpX-33, was a International Space Station (ISS) cargo resupply mission contracted by NASA and operated by SpaceX.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:c7337a98:1ba60250",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_subject_is_agent"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Fremont Factory",
+      "evidence_text": "The Tesla Fremont Factory is an automobile manufacturing plant in Fremont, California, United States, operated by Tesla, IncInc\u0000 The factory originally opened as General Motors' Fremont Assembly in 1962, and then was operated by New United Motor Manufacturing, IncInc\u0000 (NUMMI), a joint venture of GM and Toyota from 1984.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:745f1c68:4aa284ab",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The device",
+      "predicate": "developed_by",
+      "object": "Tesla Energy",
+      "source_page": "Tesla Powerpack",
+      "evidence_text": "The device was manufactured by Tesla Energy, the clean energy subsidiary of Tesla, IncInc\u0000 The Powerpack stores electricity for time of use load shifting, backup power, demand response, microgrids, renewable energy integration, frequency regulation, and voltage control.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:41d4eac3:80a55e33",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  }
+]

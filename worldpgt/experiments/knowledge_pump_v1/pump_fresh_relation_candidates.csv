@@ -1,0 +1,73 @@
+id,subject,relation,object,confidence,stability,risk,source_title,pattern_id,safe_for_overlay_delta
+rv2:9a2e4b55:8225a702,Economy of the United States,subsidiary_of,Abbott Laboratories,high,semi_stable,medium,Abbott Laboratories,subsidiary_clause,True
+rv2:c3328840:a6e64eae,Amazon,subsidiary_of,Amazon,high,semi_stable,medium,Project Kuiper,is_subsidiary_of,True
+rv2:49734bd4:5322dc6f,Satellite internet,owned_by,Amazon,medium,semi_stable,medium,Amazon Web Services,acquired_by,True
+rv2:1de3ee64:4f7af461,Oracle Corporation,subsidiary_of,Delta Information Systems,high,semi_stable,medium,Ampex Corporation,subsidiary_clause,True
+rv2:1de3ee64:f3bf8c15,LVMH,subsidiary_of,Oracle Corporation,high,semi_stable,medium,Ampex Corporation,subsidiary_clause,True
+rv2:1de3ee64:ba8a1a70,Subsidiary,headquartered_in,Silicon Valley,medium,semi_stable,low,Ampex Corporation,headquartered_in_city,True
+rv2:11550916:c1e9922d,Autopilot,developed_by,Oracle Corporation,high,semi_stable,medium,Control Wheel Steering,developed_by_passive,True
+rv2:07910642:1b0f0c6e,Sleepycat Software,owned_by,Oracle Corporation,medium,semi_stable,medium,Berkeley DB,acquired_by,True
+rv2:07910642:eb23ea2b,This company,owned_by,Oracle Corporation,medium,semi_stable,medium,Berkeley DB,acquired_by,True
+rv2:23fa4c8b:c32cf2e9,Jeff Bezos,is_a,American investment firm,high,stable,low,Bezos Expeditions,is_a_type,True
+rv2:a35e5898:be1b25cf,Meta Meta Platforms owns,operates,Social media,medium,semi_stable,medium,Big Tech,operates_active,True
+rv2:5f2b497b:5821616c,Bloomberg News,is_a,Bloomberg News,high,stable,low,Bloomberg UK,is_a_type,True
+rv2:5f2b497b:4769718a,Bloomberg News,founded_by,Michael Bloomberg,high,semi_stable,medium,Bloomberg UK,founded_by_passive,True
+rv2:a2f9a676:04745bed,Blue Origin,owned_by,Blue Origin,high,semi_stable,medium,Blue Origin NS-16,is_operated_by,True
+rv2:a2da74b3:04745bed,Blue Origin,owned_by,Blue Origin,high,semi_stable,medium,Blue Origin NS-18,is_operated_by,True
+rv2:7c9ed1a0:9698ba54,Private spaceflight,owned_by,Blue Origin,high,semi_stable,medium,Blue Origin NS-19,is_operated_by,True
+rv2:e5ab42ab:04745bed,Blue Origin,owned_by,Blue Origin,high,semi_stable,medium,Blue Origin NS-20,is_operated_by,True
+rv2:bbfb3d38:04745bed,Blue Origin,owned_by,Blue Origin,high,semi_stable,medium,Blue Origin NS-21,is_operated_by,True
+rv2:2f5f7a78:5821616c,Bloomberg News,is_a,Bloomberg News,high,stable,low,CBS News,is_a_type,True
+rv2:2f5f7a78:3ba468b9,Bloomberg News,operates,Bloomberg News,medium,semi_stable,medium,CBS News,operates_active,True
+rv2:14d5da8b:d8004f77,Starlink,owned_by,SpaceX,high,semi_stable,medium,Communications Satellite,is_operated_by,True
+rv2:14d5da8b:537adb2e,Starlink,is_a,Satellite internet,high,stable,low,Communications Satellite,is_a_type,True
+rv2:45d4a4fc:b8288888,The first exact date,published_by,NASA,high,semi_stable,medium,SpaceX Demo-1,published_by_passive,True
+rv2:a0690fb5:f8336c41,The range also uses instrumentation,owned_by,NASA,high,semi_stable,medium,Atlantic Missile Range,is_operated_by,True
+rv2:d9c1edb1:e5ca1ce2,Better Place,develops,Lithium-ion battery,high,semi_stable,medium,electric cars,develops_active,True
+rv2:7e1d7002:b2650061,Elon Musk,founded,SpaceX,high,semi_stable,medium,Elon Reeve Musk,founded_active,False
+rv2:446f754d:c612f29b,Exos Aerospace Systems & Technologies,is_a,Aerospace manufacturer,high,stable,low,Exos Aerospace,is_a_type,True
+rv2:ccb3cdbf:da7cf39e,Forbes,is_a,American business magazine,high,stable,low,Forbes Media,is_a_type,False
+rv2:67d751d0:fbc87a22,SolarCity,owned_by,Tesla,medium,semi_stable,medium,Gigafactory New York,acquired_by,True
+rv2:7bce04a4:842c03bb,GSFC also,operates,Private spaceflight,medium,semi_stable,medium,Goddard Space Flight Center,operates_active,True
+rv2:5e766658:04577c9b,Satellite internet,is_a,Satellite internet,high,stable,low,Internet,is_a_type,True
+rv2:b4d5712a:11e1115f,Internet service provider,is_a,Internet service provider,high,stable,low,ISPs,is_a_type,True
+rv2:6879f50f:ec86b3cc,Jeff Bezos,founded,Amazon,high,semi_stable,medium,Bezos,founded_active,True
+rv2:6879f50f:409b92e7,Jeff Bezos,founded,Blue Origin,high,semi_stable,medium,Bezos,founded_active,False
+rv2:ab4f316f:b2650061,Elon Musk,founded,SpaceX,high,semi_stable,medium,Jim Cantrell,founded_active,False
+rv2:4dfb941b:1f9efe91,Monte Titoli,operates,Stock exchange,medium,semi_stable,medium,London Stock Exchange,operates_active,True
+rv2:6c2b4a74:ec86b3cc,Jeff Bezos,founded,Amazon,high,semi_stable,medium,MacKenzie Scott,founded_active,True
+rv2:06203e57:9b21e852,Marc Tarpenning,founded,Tesla,high,semi_stable,medium,Marc Tarpenning,founded_active,False
+rv2:9325565b:03ecc06c,The following exchanges are,owned_by,Nasdaq,high,semi_stable,medium,Nasdaq OMX,is_operated_by,True
+rv2:625e6517:51de5ba9,Stock exchange,owned_by,Nasdaq,high,semi_stable,medium,Nasdaq Stock Market,is_owned_by,True
+rv2:92fe4f8c:111e8b2e,Oracle Corporation,is_a,American aerospace,high,stable,low,Northrop Grumman,is_a_type,True
+rv2:92fe4f8c:976cf430,Northrop Grumman,produces,Rocket,medium,semi_stable,medium,Northrop Grumman,produces_active,True
+rv2:2ab1ff76:f7ddd4ab,OpenAI,is_a,Artificial intelligence,high,stable,low,OpenAI Global,is_a_type,True
+rv2:3538924e:f8c2cb6d,Oracle Corporation,subsidiary_of,General Motors,high,semi_stable,medium,Raytheon Technologies Corporation,subsidiary_clause,True
+rv2:3538924e:56407dad,Founder,headquartered_in,Hartford with Frederick Rentschler,medium,semi_stable,low,Raytheon Technologies Corporation,headquartered_in_city,True
+rv2:c85ab676:2e4a6523,Robert Zubrin,is_a,American aerospace,high,stable,low,Robert Zubrin,is_a_type,True
+rv2:c85ab676:33e60d61,Tesla Energy,founded,Tesla Energy,high,semi_stable,medium,Robert Zubrin,founded_active,True
+rv2:7d5a835d:b04448d4,Many companies,produces,Rocket,medium,semi_stable,medium,Rockets,produces_active,True
+rv2:84beb196:4fa8c509,If none of the previously,develops,Rocket,high,semi_stable,medium,Rocket engine,develops_active,True
+rv2:b202a7f4:3d801b3f,Scaled Composites,is_a,American aerospace company,high,stable,low,Scaled Composites,is_a_type,True
+rv2:bdf3e69e:111e8b2e,Oracle Corporation,is_a,American aerospace,high,stable,low,Sierra Nevada Corporation,is_a_type,True
+rv2:95b97c77:04577c9b,Satellite internet,is_a,Satellite internet,high,stable,low,Sirius Satellite Radio,is_a_type,True
+rv2:3c889a9d:c9191292,Bifacial cells,produces,Tesla Energy,medium,semi_stable,medium,Solar panel,produces_active,True
+rv2:a2f6b45b:2c98a541,Oracle Corporation,is_a,Private spaceflight,high,stable,low,SpaceX Hawthorne,is_a_type,True
+rv2:a2f6b45b:8517ed2f,SpaceX,founded_by,Elon Musk,high,semi_stable,medium,SpaceX Hawthorne,founded_by_passive_in_year,False
+rv2:a2f6b45b:dc347183,xAI,subsidiary_of,SpaceX,high,semi_stable,medium,SpaceX Hawthorne,subsidiary_clause,True
+rv2:a2f6b45b:1ad2ddcc,Satellite constellation,subsidiary_of,SpaceX,high,semi_stable,medium,SpaceX Hawthorne,subsidiary_clause,True
+rv2:a2f6b45b:537adb2e,Starlink,is_a,Satellite internet,high,stable,low,SpaceX Hawthorne,is_a_type,True
+rv2:a2f6b45b:6d06886e,SpaceX,headquartered_in,SpaceX,high,semi_stable,low,SpaceX Hawthorne,headquartered_in,True
+rv2:c7337a98:1ba60250,NASA,owned_by,SpaceX,high,semi_stable,medium,SpaceX CRS-33,is_operated_by,True
+rv2:0cd6f6c3:537adb2e,Starlink,is_a,Satellite internet,high,stable,low,SpaceX Starlink,is_a_type,True
+rv2:0cd6f6c3:38dc01f6,Internet service provider,operates,Satellite internet,medium,semi_stable,medium,SpaceX Starlink,operates_active,True
+rv2:8d0f5aa9:0e069d60,The North American Charging Standard,is_a,Electric vehicle,high,stable,low,"Tesla, Inc",is_a_type,True
+rv2:745f1c68:4aa284ab,Economy of the United States,owned_by,Tesla,high,semi_stable,medium,Fremont Factory,is_operated_by,True
+rv2:41d4eac3:80a55e33,The device,developed_by,Tesla Energy,high,semi_stable,medium,Tesla Powerpack,manufactured_by_passive,True
+rv2:f595973e:eaa4ada4,Tesla,owned_by,Tesla,high,semi_stable,medium,Tesla Robotaxi,is_operated_by,True
+rv2:53e6eda0:050a5540,Tesla,is_a,Electric vehicle,high,stable,low,Tesla Supercharger,is_a_type,True
+rv2:2a982c86:9f6f4f0c,The Boring Company,founded_by,Elon Musk,high,semi_stable,medium,Not-a-Boring Competition,founded_by_reduced_company_clause,False
+rv2:2a982c86:bb0a2511,The Boring Company,is_a,American infrastructure,high,stable,low,Not-a-Boring Competition,is_a_type,True
+rv2:2d47cf1d:b81992f1,Thomas John Mueller,is_a,American aerospace,high,stable,low,Tom Mueller,is_a_type,True
+rv2:b1d859ed:3320adab,Economy of the United States,develops,Economy of the United States,high,semi_stable,medium,World Government,develops_active,True
+rv2:098995c8:efda86b2,xAI,owned_by,SpaceX,medium,semi_stable,medium,Twitter Blue,acquired_by,True

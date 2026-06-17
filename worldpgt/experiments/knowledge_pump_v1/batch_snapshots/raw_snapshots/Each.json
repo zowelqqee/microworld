@@ -1,0 +1,15 @@
+{
+  "title": "Each",
+  "normalized_title": "Each",
+  "pageid": 27131142,
+  "revision_id": 1198189900,
+  "timestamp": "2024-01-23T09:45:56Z",
+  "source_url": "https://en.wikipedia.org/wiki/Each",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Each",
+  "retrieved_at": "2026-06-15T09:19:04Z",
+  "raw_text": "Each may refer to:\n\neach, a determiner and indefinite pronoun in the English language\nEACH, Educational Action Challenging Homophobia, a UK charitable organisation\n\n\nSee also\nEvery (disambiguation)\nFor each (disambiguation)\nAll pages with titles beginning with Each",
+  "raw_text_sha256": "deb6e6da5164622387ef92739ee56839540d3836e5762f1fc45f6269fc7e1fd5",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

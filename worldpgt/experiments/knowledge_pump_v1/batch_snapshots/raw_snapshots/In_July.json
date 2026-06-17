@@ -1,0 +1,15 @@
+{
+  "title": "In July",
+  "normalized_title": "In July",
+  "pageid": 1165733,
+  "revision_id": 1317545546,
+  "timestamp": "2025-10-18T17:01:01Z",
+  "source_url": "https://en.wikipedia.org/wiki/In_July",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=In+July",
+  "retrieved_at": "2026-06-15T09:17:56Z",
+  "raw_text": "In July may refer to:\n\nIn July (film) (Im Juli), a 2000 German-Turkish road movie\nFrozen Peas, or In July, a blooper audio recording of Orson Welles",
+  "raw_text_sha256": "ae709e61598489f350097835626a4eed55f6fa3c6dc2cb5adbd1d3f4927801c1",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

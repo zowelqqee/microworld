@@ -1,0 +1,15 @@
+{
+  "title": "South African",
+  "normalized_title": "South African",
+  "pageid": 220459,
+  "revision_id": 1347759293,
+  "timestamp": "2026-04-08T16:31:45Z",
+  "source_url": "https://en.wikipedia.org/wiki/South_African",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=South+African",
+  "retrieved_at": "2026-06-17T17:17:44Z",
+  "raw_text": "South African may relate to:\n\nThe nation of South Africa\nSouth Africans\nSouth African Airways\nSouth African English\nSouth African people\nLanguages of South Africa\nSouthern Africa\n\n\nSee also\nAll pages with titles containing South African\nAll pages with titles beginning with South African\nSouth Africa (disambiguation)",
+  "raw_text_sha256": "707d01dfdca984db475fef1331772b9feb5f60451be1da019fd17113d0591dfc",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

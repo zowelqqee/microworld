@@ -1,0 +1,368 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The North American Charging Standard",
+      "predicate": "is_a",
+      "object": "Electric vehicle",
+      "source_page": "Tesla, Inc.",
+      "evidence_text": "The North American Charging Standard (NACS) is an electric vehicle charging connector system developed by Tesla.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite constellation",
+      "predicate": "subsidiary_of",
+      "object": "SpaceX",
+      "source_page": "SpaceX",
+      "evidence_text": "Starlink is an internet satellite constellation under development by Starlink Services, LLC, a wholly owned subsidiary of SpaceX, that consists of thousands of cross-linked communications satellites in ~550 km orbits.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "headquartered_in",
+      "object": "SpaceX",
+      "source_page": "SpaceX",
+      "evidence_text": "Facilities SpaceX is headquartered at SpaceX Starbase near Brownsville, Texas, where it manufactures and launches its Starship launch vehicle.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Internet service provider",
+      "predicate": "operates",
+      "object": "Satellite internet",
+      "source_page": "Starlink",
+      "evidence_text": "In August 2024, Starlink Lanka (Private) Limited was granted a Telecommunications Service Provider License by TRCSL, allowing it to operate satellite Internet services in the country.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Falcon 1",
+      "predicate": "develops",
+      "object": "Falcon 1",
+      "source_page": "Falcon 1",
+      "evidence_text": "Cape Canaveral Air Force Station Space Launch Complex 40 (the Falcon 9 pad) was considered for Falcon 1 launches but never developed before Falcon 1 was retired.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Boring Company",
+      "predicate": "is_a",
+      "object": "American infrastructure",
+      "source_page": "The Boring Company",
+      "evidence_text": "The Boring Company (TBC) is an American infrastructure, tunnel construction service, and equipment company founded by Elon Musk.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "OpenAI",
+      "predicate": "is_a",
+      "object": "Artificial intelligence",
+      "source_page": "OpenAI",
+      "evidence_text": "OpenAI is an American artificial intelligence (AI) research organization headquartered in San Francisco, consisting of OpenAI Group PBC, a for-profit public benefit corporation (PBC), partially controlled by OpenAI Foundation, a nonprofit.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "is_a",
+      "object": "Bloomberg News",
+      "source_page": "Bloomberg News",
+      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.PL.P\u0000 Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Internet service provider",
+      "predicate": "is_a",
+      "object": "Internet service provider",
+      "source_page": "Internet service provider",
+      "evidence_text": "Wireless ISP A wireless Internet service provider (WISP) is an Internet service provider with a network based on wireless networking.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Electric vehicle",
+      "predicate": "produces",
+      "object": "more than the rest of the world combined",
+      "source_page": "Electric vehicle",
+      "evidence_text": "produces more than the rest of the world combined.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Electric vehicle",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+      "snapshot_retrieved_at": "2026-06-17T17:10:30Z",
+      "snapshot_revision_id": 1359848574,
+      "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-238-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Amazon",
+      "predicate": "subsidiary_of",
+      "object": "Amazon",
+      "source_page": "Project Kuiper",
+      "evidence_text": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:c3328840:a6e64eae",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Jeff Bezos",
+      "predicate": "is_a",
+      "object": "American investment firm",
+      "source_page": "Bezos Expeditions",
+      "evidence_text": "Bezos Expeditions is an American investment firm based in Mercer Island, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:23fa4c8b:c32cf2e9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Blue Origin",
+      "predicate": "owned_by",
+      "object": "Blue Origin",
+      "source_page": "Blue Origin NS-16",
+      "evidence_text": "Blue Origin NS-16 was a sub-orbital spaceflight mission operated by Blue Origin which flew on 20 July 2021.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:a2f9a676:04745bed",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "operates",
+      "object": "Bloomberg News",
+      "source_page": "CBS News",
+      "evidence_text": "CBS News also operates CBS News 24/7, a 24-hour digital news network.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:2f5f7a78:3ba468b9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite internet",
+      "predicate": "is_a",
+      "object": "Satellite internet",
+      "source_page": "Internet",
+      "evidence_text": "The most prominent component of the Internet model is the Internet Protocol.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:5e766658:04577c9b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American aerospace",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "Northrop Grumman Corporation, headquartered in West Falls Church, Virginia, is an American aerospace and defense company that designs and manufactures systems for aeronautics, defense, missions, and space.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:92fe4f8c:111e8b2e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Robert Zubrin",
+      "predicate": "is_a",
+      "object": "American aerospace",
+      "source_page": "Robert Zubrin",
+      "evidence_text": "Robert Zubrin (; born April 9, 1952) is an American aerospace engineer, author, and advocate for human exploration of Mars.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:c85ab676:2e4a6523",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tesla Energy",
+      "predicate": "founded",
+      "object": "Tesla Energy",
+      "source_page": "Robert Zubrin",
+      "evidence_text": "Pioneer Energy In 2008, Zubrin founded Pioneer Energy, a research and development firm headquartered in Lakewood, Colorado.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:c85ab676:33e60d61",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tesla",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Tesla Robotaxi",
+      "evidence_text": "Tesla Robotaxi is a ride-hailing service operated by Tesla, IncInc\u0000 that uses its vehicles equipped with its Full Self-Driving (FSD) software.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:f595973e:eaa4ada4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tesla",
+      "predicate": "is_a",
+      "object": "Electric vehicle",
+      "source_page": "Tesla Supercharger",
+      "evidence_text": "The Tesla Supercharger network is an electric vehicle fast charging network built and operated by American vehicle manufacturer Tesla, IncInc\u0000 The Supercharger network was introduced on September 24, 2012, as the Tesla Model S entered production, with six stations in California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:53e6eda0:050a5540",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Thomas John Mueller",
+      "predicate": "is_a",
+      "object": "American aerospace",
+      "source_page": "Tom Mueller",
+      "evidence_text": "Thomas John Mueller is an American aerospace engineer and rocket engine designer.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:2d47cf1d:b81992f1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "xAI",
+      "predicate": "subsidiary_of",
+      "object": "SpaceX",
+      "source_page": "SpaceX",
+      "evidence_text": "In May 2026, Anthropic signed a contract of $1.25 billion per month with xAI, a subsidiary of SpaceX, to buy all the compute capacity at the Colossus 1 data center in Memphis, Tennessee.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "xAI",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "Twitter",
+      "evidence_text": "In February 2026, the platform's owner, xAI, was acquired by SpaceX; this marked the sixth time where the social media platform has changed hands and the third time under Musk's ownership.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Private spaceflight",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "Space tourism",
+      "evidence_text": "On September 12, 2024, Jared Isaacman and Sarah Gillis performed the first commercial spacewalk during the Polaris Dawn spaceflight operated by SpaceX.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "volatile_evidence"
+  }
+]

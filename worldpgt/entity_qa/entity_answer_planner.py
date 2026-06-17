@@ -30,6 +30,14 @@ _NO_DATA_AUDIT_REASON = (
 )
 
 
+def _norm(s: str) -> str:
+    return " ".join((s or "").strip().lower().split()).removeprefix("the ")
+
+
+def _asks_who_founded(question: str) -> bool:
+    return (question or "").strip().lower().startswith("who ")
+
+
 class EntityAnswerPlanner:
     def __init__(self, provider: WikiMemoryOverlayProvider) -> None:
         self._provider = provider
@@ -71,13 +79,14 @@ class EntityAnswerPlanner:
             evidence.overlay_items_used.append(f"overlay_definition:{definition['subject']}")
 
         relations = self._provider.get_relations(subject)
+        is_a_relations = [r for r in relations if r.get("predicate") == "is_a"]
         if relations:
             for r in relations:
                 evidence.overlay_items_used.append(
                     f"overlay_relation:{r['predicate']}:{r['object']}"
                 )
 
-        if not entity and not definition:
+        if not entity and not definition and not is_a_relations:
             return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
 
         return EntityQAPlan(
@@ -128,12 +137,24 @@ class EntityAnswerPlanner:
                 confidence=0.9,
             )
 
-        if predicate == "founded":
-            # "Who founded X?" — look for founded relations with X as object
+        founder_lookup_question = predicate in {"founded_by", "founded"} and _asks_who_founded(analyzed.question)
+
+        if predicate == "founded_by" or founder_lookup_question:
+            # "Who founded X?" — prefer X founded_by Y; also support older
+            # founder-as-subject facts: Y founded X.
+            all_relations = self._provider.get_relations(subject, "founded_by")
+            inverse = [
+                r for r in self._provider.all_relations()
+                if r.get("predicate") == "founded" and _norm(r.get("object", "")) == _norm(subject)
+            ]
+            self._provider._items_used += len(inverse)
+            all_relations.extend(inverse)
+        elif predicate == "founded":
+            # "What did X found?" — subject is the founder.
             all_relations = [
-                r for r in self._provider._relations
+                r for r in self._provider.all_relations()
                 if r.get("predicate") == "founded"
-                and r.get("object", "").lower() == subject.lower()
+                and _norm(r.get("subject", "")) == _norm(subject)
             ]
             self._provider._items_used += len(all_relations)
         else:
@@ -151,7 +172,7 @@ class EntityAnswerPlanner:
         if not all_relations:
             return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
 
-        founder_lookup = (predicate == "founded")
+        founder_lookup = founder_lookup_question or predicate == "founded_by"
 
         return EntityQAPlan(
             analyzed=analyzed,

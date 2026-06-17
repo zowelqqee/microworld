@@ -1,0 +1,37 @@
+# Space.com
+
+Source: https://en.wikipedia.org/wiki/Space.com
+Retrieved at: 2026-06-15T09:16:45Z
+Revision ID: 1287826411
+Raw text SHA256: 08466a840f0bc1a0630ce79e225963f54c1f9202cf455750420b498b48af901c
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Space.com is an online publication focused on space exploration, astronomy, skywatching and entertainment, with editorial teams based in the United States and United Kingdom. Launched on July 20, 1999, the website offers live coverage of space missions, astronomical discoveries and reviews about skywatching telescopes, binoculars and sci-fi entertainment gear.
+It is owned by Future plc headquartered in the city of Bath, England. Its stories are often syndicated to other media outlets, including CNN, MSNBC, Yahoo!, and USA Today.
+
+History
+Space.com was founded on July 20, 1999, on the 30th anniversary of the Apollo 11 Moon landing, by former CNN anchor Lou Dobbs and Rich Zahradnik in New York City. Dobbs was CEO and Zahradnik the company's first president. Former astronauts Neil Armstrong and Sally Ride sat on the board of directors. PaineWebber, Venrock Associates, and SpaceVest were early investors.
+The company struggled to turn a profit in its early days and when the dot-com bubble burst in 2000, many felt that it would collapse. Co-founder Rich Zahradnik left his position as president less than two months after the start of the company, former astronaut Sally Ride took his place but then stepped down in September 2000. Despite some growth, Space.com was not able to achieve what Dobbs had hoped. On May 14, 2001, he returned to CNN.
+After Dobbs exited, the company's backers continued to invest capital. As it expanded, Space.com acquired Explorezone.com in November 1999 and Starport.com in June 2000. In October, Space.com also acquired SpaceNews, spacenews.com, and Florida Today’s Space Online websites from Gannett for an equity stake in the company. It acquired Sienna Software, the company that produced the Starry Night software.
+In 2003, Space.com received the Online Journalism Award for Breaking News for its coverage of the Columbia shuttle disaster.
+In May 2004, Space.com's parent company changed its name from Space Holdings to Imaginova. In November of that year, Imaginova launched Live Science to branch out from its space coverage. It also acquired Orion Telescopes in February 2005 and comic book news site Newsarama in October 2007. In 2008, Imaginova sold Starry Night to Simulation Curriculum.
+In 2009, Imaginova sold Space.com, Live Science, and Newsarama to TopTenReviews.com, which then reorganized into TechMedia Network, following the purchase. Space.com was recognized as a Webby Award honoree in 2010, 2012, 2013, and 2014. The company changed its name to Purch in April 2014.
+In 2018, Space.com—along with other Purch consumer brands—were sold to Future plc. Under Future, Space.com has expanded its news and reviews team across the United States, Canada, and the United Kingdom. It has also grown its telescope, binoculars, and astrophotography reviews and deals coverage, as well as added sci-fi gaming and streaming coverage.
+
+Editors
+Tariq Malik is the current Editor-in-Chief of Space.com, with Brett Tingley as Editor, and Mike Wall as Spaceflight/Tech Channel Editor. Photographer Jason Parnell-Brookes is the Cameras and Skywatching Channel Editor, and Ian Stokes is the Tech & Entertainment Channel Editor. Steve Spaleta is the current Senior Producer for video. Previous editors include: Anthony Duignan-Cabrera, Robert Roy Britt, Clara Moskowitz and Sarah Lewin.
+
+See also
+List of astronomy websites
+
+Notes
+
+References
+Space.com Is Back In Orbit - Forbes Magazine  18 January 2006 (accessed 5 June 2006)
+Lou Dobbs Journeys From Wall Street To Space - Forbes Magazine 5 July 2000 (accessed 28 February 2006)
+As dot.coms tumble, whither Dobbs' Space.com? Media Life Magazine 2 January 2001 (accessed 28 February 2006)
+Imaginova.com About Us (accessed 28 February 2006)
+
+External links
+Space.com

@@ -1,0 +1,57 @@
+{
+  "proposal_only": true,
+  "safe_for_general_runtime": false,
+  "opportunities_total": 61,
+  "opportunities_by_category": {
+    "adversarial_test_candidate": 1,
+    "current_claim_guard_case": 12,
+    "missing_stable_knowledge": 36,
+    "relation_inversion_guard_case": 5,
+    "unsupported_universal_guard_case": 2,
+    "volatile_review_candidate": 3,
+    "weak_link_safety_case": 2
+  },
+  "opportunities_by_priority": {
+    "high": 20,
+    "medium": 41
+  },
+  "opportunities_by_activation_status": {
+    "requires_human_review": 3,
+    "requires_ingestion": 36,
+    "requires_regression_gate": 22
+  },
+  "quarantine_reason_counts": {
+    "conflicts_existing_fact": 1,
+    "current_fact_without_as_of": 2,
+    "entity_type_mismatch": 1,
+    "inverted_relation": 1,
+    "private_or_sensitive_data": 1,
+    "unsupported_universal_claim": 1,
+    "volatile_requires_source": 1,
+    "weak_link_promoted_to_fact": 1
+  },
+  "signals_total": 83,
+  "warnings": [],
+  "errors": [],
+  "source_artifacts_read": [
+    "answer_planner_v1_summary.json",
+    "qa_generalization_test_v1_summary.json",
+    "entity_qa_v1_summary.json",
+    "entity_qa_expansion_v1_summary.json",
+    "entity_qa_adversarial_v1_summary.json",
+    "cross_page_qa_v1_summary.json",
+    "self_ingestion_v1/quarantine.json",
+    "self_ingestion_v1/self_ingestion_report.json",
+    "self_ingestion_v1/promotion/promotion_report.json",
+    "self_ingestion_v1/manifest_errors.json",
+    "self_ingestion_v1/overlay_delta_proposal.json",
+    "self_ingestion_v1/promotion/promotion_validation.json",
+    "self_ingestion_v1/promotion/promotion_regression_summary.json",
+    "answer_planner_v1_outputs.csv",
+    "qa_generalization_test_v1_outputs.csv",
+    "entity_qa_v1_outputs.csv",
+    "entity_qa_expansion_v1_outputs.csv",
+    "entity_qa_adversarial_v1_outputs.csv",
+    "cross_page_qa_v1_outputs.csv"
+  ]
+}

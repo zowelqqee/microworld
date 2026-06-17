@@ -1,0 +1,94 @@
+# Anousheh Ansari
+
+Source: https://en.wikipedia.org/wiki/Anousheh_Ansari
+Retrieved at: 2026-06-17T20:45:07Z
+Revision ID: 1358517481
+Raw text SHA256: 76d54c9287497bab65f59740ade5c8225c9642e632da66948175dab9e8e2ffe4
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Anousheh Ansari (Persian: انوشه انصاری; née Raissyan; born September 12, 1966) is an Iranian-American engineer, space tourist, and entrepreneur. She is the co-founder and chairwoman of Prodea Systems, and her previous business accomplishments include serving as co-founder and chief executive officer of Telecom Technologies, Inc. On September 18, 2006, she became the first Iranian person to be in outer space. Ansari was the fourth overall self-funded space tourist and the first self-funded woman to fly to the International Space Station. Her memoir My Dream of Stars, co-written with American engineer Homer Hickam, was published by Palgrave Macmillan in 2010.
+She is also the chief executive officer of the XPRIZE Foundation, and the Ansari family is the title sponsor of the Ansari X Prize.
+
+Early life
+Born Anousheh Raissyan in Mashhad, Iran, she and her parents moved to Tehran shortly afterward. When Ansari was six years old, her parents divorced. Ansari has a sister, Atousa Raissyan, who is five years younger. At the age of six, Ansari would visit her grandparents and sleep overnight on the balcony, as there was no air conditioning. Ansari would gaze at the night sky and was very curious about space. In Tehran, at the age of seven, Ansari attended a French Catholic school called Jeanne d’Arc. Half of the day was taught in Farsi while the other half was taught in French. She witnessed the Iranian Revolution in 1979 and recalls memories of "hearing gun shots, screaming, people being killed, and explosions". From then on until the Iran–Iraq War, Ansari would have to take shelter in the basement of her apartment building, where she was the eldest of the children taking shelter. She would narrate stories to them, offering them comfort, which distracted them from the noise of bombs being dropped outside. Ansari immigrated to the United States in 1984 as a teenager, and attended a high school in Northern Virginia, Lake Braddock. Apart from her native Persian, she is fluent in English and French and acquired a working knowledge of Russian for her spaceflight experience.
+She received her Bachelor of Science degree in electrical engineering and computer science at George Mason University in Fairfax, Virginia, and her master's degree at George Washington University in Washington D.C.
+
+Career
+After graduation, Raissyan began work at MCI, where she met her future husband, Hamid Ansari. They married in 1991.
+In 1993, she persuaded her husband and her brother-in-law, Amir Ansari, to co-found Telecom Technologies Inc., using their savings and corporate retirement accounts, as deregulation happened in the US telecommunications industry. The company was a supplier of softswitch technology that enabled telecom "service providers to enhance system performance, lower operating costs and furnish new revenue opportunities." The company, headquartered in Richardson, Texas, offered products that allowed the integration between existing telecom networks and application-centric, next-generation networks via software switch technology. Telecom Technologies was acquired by Sonus Networks, Inc. in 2001 in a stock-for-stock transaction for 10.8 million shares of Sonus stock. Anousheh Ansari became "a vice president of Sonus and general manager of Sonus' new INtelligentIP division."
+
+In 2006, she co-founded Prodea Systems, becoming its chairwoman and CEO. Prodea is a technology and services management company. Prodea is a privately held company formed by the Ansari family with development centers in Richardson, Texas, and Silicon Valley.
+
+Space
+Ansari has expressed that she does not consider herself a "space tourist" and prefers the title of "spaceflight participant."
+Ansari is a member of the X PRIZE Foundation's Vision Circle, as well as its Board of Trustees. Along with her brother-in-law, Amir Ansari, she made a multimillion-dollar contribution to the X PRIZE foundation on May 5, 2004, the 43rd anniversary of Alan Shepard's sub-orbital spaceflight. The X PRIZE has officially renamed the Ansari X PRIZE to honor their donation. As demonstrated by her commitment to the X PRIZE and through presentations at Space Enthusiast conferences, Ansari is a spokesperson for the "privatization of space," a process enabling commercially viable companies to government-independently send equipment and people into space for exploration and other purposes.
+The Ansari family also invested in a partnership with Space Adventures, Ltd. and the Federal Space Agency of the Russian Federation (FSA) to create a fleet of suborbital spaceflight vehicles (the Space Adventures Explorer) for global commercial use.
+
+Spaceflight
+Ansari trained as a backup for Daisuke Enomoto for a Soyuz flight to the International Space Station, through Space Adventures, Ltd. On August 21, 2006, Enomoto was medically disqualified from flying the Soyuz TMA-9 mission that was due to launch the following month. The next day Ansari was elevated to the prime crew.
+
+Asked what she hoped to achieve on her spaceflight, Ansari said, "I hope to inspire everyone—especially young people, women, and young girls all over the world, and in Middle Eastern countries that do not provide women with the same opportunities as men—not to give up their dreams and to pursue them... It may seem impossible to them at times. But I believe they can realize their dreams if they keep it in their hearts, nurture it, and look for opportunities and make those opportunities happen." The day before her departure, she was interviewed on Iran national television for the astronomy show Night's Sky. The hosts wished her success and thanked her on behalf of the Iranians. Ansari in return thanked them.
+Ansari lifted off on the Soyuz TMA-9 mission with commander Mikhail Tyurin (RSA) and flight engineer Michael Lopez-Alegria (NASA) at 04:59 (UTC) on Monday, September 18, 2006, from Baikonur, Kazakhstan. Ansari became the fourth (and first female) space tourist. Her contract did not allow for disclosure of the amount paid, but previous space tourists have paid more than $20 million USD. The spacecraft docked with the International Space Station (ISS) on Wednesday, September 20, 2006, at 05:21 (UTC). Ansari landed safely aboard Soyuz TMA-8 on September 29, 2006, at 01:13 UTC on the steppes of Kazakhstan (90 kilometers north of Arkalyk) with U.S. astronaut Jeffrey Williams and Russian cosmonaut Pavel Vinogradov. She was given red roses from an unidentified official, and a kiss from her husband, Hamid. The crew's rescuers moved them to Kustanai by helicopter for the welcome ceremony.
+During her nine-day stay on board the International Space Station, Ansari agreed to perform a series of experiments on behalf of the European Space Agency. She conducted four experiments, including:
+
+Researching the mechanisms behind anemia.
+How changes in muscles influence lower back pain.
+Consequences of space radiation on ISS crew members and different species of microbes that have made a home for themselves on the space station.
+She also became the first person to publish a weblog from space.
+
+Iranian flag controversy
+Ansari intended to wear the U.S. flag on her spacesuit alongside a politically neutral version of the Iranian flag, i.e., the simple 3-color flag with no government-specific emblem, to honor the two countries that have contributed to her life. A few U.S.-based media wrongly speculated that she intended to wear the version of the Iranian flag that predated the 1979 Islamic revolution in Iran.
+At the insistence of the NASA and Russian officials, she did not wear the Iranian flag officially but wore the Iranian flag colors instead and kept the Iranian flag on her official flight patch. She and her husband said no political message was intended, despite the increasing tensions between the United States and Iran, which had dominated world headlines in the weeks leading up to her launch. She noted that she had "plans to devote her mission to expanding a global consciousness she expected would be seeded with her first look at Earth from space."
+
+Reactions to Ansari's flight
+
+Crewmates
+Michael López-Alegría, the Spanish-born NASA astronaut who flew on the Russian Soyuz spacecraft on the return flight with Ansari, expressed his doubts to reporters before the flight: "I'm not a big fan personally of having those guys go visit the space station because I think a space station is still a place that is under construction, and not quite operational. I don't think it's ideal."
+López-Alegría later stated that he was skeptical of private tourists a few years ago but now believes it is essential to the survival of the Russian space program, which is important to the U.S. space program: "If that's the correct solution... then not only is it good from the standpoint of supporting the Russian space program, but it's good for us as well," he said. Ansari's presence in space "is a great dream and a great hope not just for our country but for countries all around the world."
+The same Associated Press story also quoted Mikhail Tyurin describing Ansari as "very professional" and said he felt like they had worked together for a decade. López would eventually change his stance on tourism at the ISS and joined Axiom space, eventually commanding their first tourist mission.
+
+Reactions in Iran
+
+The flight was given significant coverage by Iranian state television, with an hour-long live interview with Ansari being broadcast on the show Asemane Shab ("Night Sky"). Ansari was praised by newspapers such as Hambastegi and Jam-e-Jam Daily, which published daily columns detailing the journey. The astronomy magazine NOJUM also published an exclusive interview of Pouria Nazemi with Ansari before her trip, in which she discussed her vision for commercial spaceflight. NOJUM also organized and held gatherings when the ISS passed over Iran's cities. Shahram Yazdanpanah made a special part about Anousheh's trip to space at the Persian "Space Science" website and covered all the trip news.
+
+Interviews
+On September 22, 2006, she told reporters she had no regrets and said, "I am having a wonderful time here. It's been more than I expected, and I enjoy every second of it. The entire experience has been wonderful up here."
+
+Awards and honors
+Ansari has received multiple honors, including the George Mason University Entrepreneurial Excellence Award, the George Washington University Distinguished Alumni Achievement Award, the Ernst & Young Entrepreneur of the Year Award for the Southwest Region, and the Horatio Alger Award. While under her leadership, Telecom Technologies, Inc. earned recognition as one of Inc. magazine's 500 fastest-growing companies and one of Deloitte & Touche's Fast 500 technology companies. She was listed in Fortune Magazine's 40 under 40 list in 2001 and honored by Working Woman as the winner of the 2000 National Entrepreneurial Excellence award.
+In 2009, she received the first NCWIT Symons Innovator Award given annually by the National Center for Women & Information Technology to honor successful women entrepreneurs in technology.
+She received an Honorary Doctorate of Science from her alma mater George Mason University on December 20, 2012.
+The Ansari family was honored with an Orbit Award by the National Space Society and Space Tourism Society for underwriting the Ansari X Prize.
+In 2010, she was awarded the Ellis Island Medal of Honor recognition of her humanitarian efforts.
+In 2015, the National Space Society awarded Ansari the Space Pioneer Award for her "Service to the Space Community."
+
+Other activities and public appearances
+
+Ansari participated as a speaker at the 2010 Honeywell Leadership Academy with Homer Hickam at United States Space Camp in Huntsville, Alabama.
+In 2009, Ansari was featured in the documentary film Space Tourists by independent Swiss filmmaker Christian Frei about billionaires who paid to ride to the International Space Station aboard Russian spacecraft. The DVD of the film was released in 2011.
+She was the commencement speaker and received an Honorary Doctorate of Science from Utah Valley University on April 25, 2013.
+On February 26, 2017, she and Firouz Naderi represented Iranian filmmaker Asghar Farhadi at the 89th Academy Awards. They accepted the Academy Award for Best Foreign Language Film for The Salesman on Farhadi's behalf. Farhadi did not attend the ceremony due to his opposition to President Trump's immigration ban applying to seven Muslim countries, including Iran. Farhadi selected Ansari and Naderi as his representatives because both are successful Iranian-Americans who immigrated to the US.
+Ansari has served on the boards of directors for Make-a-Wish Foundation of North Texas and Collin County Children's Advocacy Center. She has been active with several nonprofit organizations, including the nonprofit Iranian American Women Foundation organization. Other non-profit organizations include Ashoka in its support of social entrepreneurs.
+
+Personal life
+While working at MCI, she met Hamid Ansari. They married in 1991. The Ansaris reside in Plano, Texas. She is also the aunt of the American actors Yara Shahidi and Sayeed Shahidi.
+
+See also
+Iranian women
+List of famous Iranian women
+List of International Space Station visitors
+Women in space
+
+References
+
+External links
+
+Official website
+Anousheh Ansari Space Blog Archived 2006-10-04 at the Wayback Machine
+Space Tourists, a documentary film from Christian Frei with Anousheh Ansari
+Anousheh Ansari in SpaceScience.ir (in Persian)
+Appearances on C-SPAN
+Interview with Anousheh Ansari Archived 2021-05-01 at the Wayback Machine
+A 'passion' for space travel BBC/Click Video Interview with Anousheh Ansari
+Spacefacts astronaut bio April 2018

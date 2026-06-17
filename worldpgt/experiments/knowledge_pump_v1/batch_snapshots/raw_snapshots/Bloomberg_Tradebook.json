@@ -1,0 +1,15 @@
+{
+  "title": "Bloomberg Tradebook",
+  "normalized_title": "Bloomberg Tradebook",
+  "pageid": 40111736,
+  "revision_id": 1292584624,
+  "timestamp": "2025-05-27T19:41:40Z",
+  "source_url": "https://en.wikipedia.org/wiki/Bloomberg_Tradebook",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Bloomberg+Tradebook",
+  "retrieved_at": "2026-06-17T20:43:21Z",
+  "raw_text": "Bloomberg Tradebook, LLC. is a broker-dealer and a subsidiary of Bloomberg L.P.\n\n\nHistory\nBloomberg Tradebook was founded in 1996. Tradebook launched an FX marketplace in 2007.\nIn May 2020 the Securities and Exchange Commission filed settled charges against Tradebook LLC for misleading marketing surrounding how they handled trader orders.\n\n\nReferences",
+  "raw_text_sha256": "c0f1f496a7041faf4cda6c79884bd9957dd426990d22994e0e9379f8ba5e1ae2",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

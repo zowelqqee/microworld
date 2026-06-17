@@ -1,0 +1,10 @@
+{
+  "allow_network": false,
+  "batches_completed": 16,
+  "fetched_count_total": 4000,
+  "fetch_success_count_total": 2116,
+  "fetch_failed_count_total": 1884,
+  "ready_for_ingestion_count_total": 1929,
+  "not_ready_count_total": 2071,
+  "network_calls": 4000
+}

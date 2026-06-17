@@ -1,0 +1,344 @@
+{
+  "precision_v2_enabled": true,
+  "answerable_before_v2": 981,
+  "answerable_after_v2": 927,
+  "relation_before_count": 78,
+  "relation_after_count": 58,
+  "definition_before_count": 240,
+  "definition_after_count": 206,
+  "rejected_count": 53,
+  "quarantined_count": 1,
+  "rejection_by_reason": {
+    "appositive_alias_subject": 9,
+    "dangling_comma_subject": 9,
+    "definition_nationality_plus_single_noun": 9,
+    "developed_by_location_object": 1,
+    "develops_design_artifact_object": 3,
+    "founded_by_generic_object": 1,
+    "fragment_prefix_subject": 5,
+    "geopolitical_subject_corporate_predicate": 1,
+    "owned_by_geopolitical_object": 1,
+    "produces_universal_object": 1,
+    "publishes_phrase_subject": 1,
+    "truncated_definition": 12
+  },
+  "quarantine_by_reason": {
+    "volatile_predicate": 1
+  },
+  "relation_examples_rejected": [
+    {
+      "subject": "Amazon Leo,",
+      "predicate": "subsidiary_of",
+      "object": "Amazon",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Ampex Magnetic Tape Division,",
+      "predicate": "headquartered_in",
+      "object": "Opelika",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Founding Aston Martin",
+      "predicate": "founded_by",
+      "object": "Lionel Martin",
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "subject": "Founding Aston Martin",
+      "predicate": "founded_by",
+      "object": "Robert Bamford",
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "subject": "CNBC Asia, and CNBC Europe,",
+      "predicate": "headquartered_in",
+      "object": "London",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "United States,",
+      "predicate": "headquartered_in",
+      "object": "Auburn Hills",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Compaq",
+      "predicate": "owned_by",
+      "object": "US",
+      "reason": "owned_by_geopolitical_object"
+    },
+    {
+      "subject": "Andrew Nyberg",
+      "predicate": "develops",
+      "object": "Insignia and livery The mission insignia",
+      "reason": "develops_design_artifact_object"
+    },
+    {
+      "subject": "Brainerd",
+      "predicate": "develops",
+      "object": "Insignia and livery The mission insignia",
+      "reason": "develops_design_artifact_object"
+    },
+    {
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Silver Lake Partners",
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Roger Mc",
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Marc Bodnick",
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "subject": "Royal Exchange",
+      "predicate": "founded_by",
+      "object": "Stock Exchange",
+      "reason": "founded_by_generic_object"
+    },
+    {
+      "subject": "Ad Astra The Society",
+      "predicate": "publishes",
+      "object": "Ad Astra",
+      "reason": "publishes_phrase_subject"
+    },
+    {
+      "subject": "Northrop Grumman Corporation,",
+      "predicate": "headquartered_in",
+      "object": "West Falls Church",
+      "reason": "dangling_comma_subject"
+    }
+  ],
+  "definition_examples_rejected": [
+    {
+      "subject": "Amazon Reef, or Amazonian Reef,",
+      "definition": "extensive coral",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Arianespace SA",
+      "definition": "French company",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Boeing Starliner",
+      "definition": "spacecraft designed to transport crew to",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Byron Kurt Lichtenberg",
+      "definition": "American engineer",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Charles David Walker",
+      "definition": "American engineer",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Crew Exploration Vehicle",
+      "definition": "component of the U",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Electrical engineering",
+      "definition": "engineering discipline concerned",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Electricity",
+      "definition": "set of physical phenomena associated",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Financial Accounting Standards Board",
+      "definition": "private standard-setting body whose primary purpose is to establish",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Founders Park, formerly known as Carolina Stadium,",
+      "definition": "ballpark in Columbia",
+      "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "France, officially the French Republic,",
+      "definition": "country primarily",
+      "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "General Electric Company",
+      "definition": "major British industrial conglomerate involved in consumer",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Germany, officially the Federal Republic of Germany,",
+      "definition": "country in Western",
+      "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "Gregory Brockman",
+      "definition": "American entrepreneur",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Hyperloop One, known as Virgin Hyperloop until November 2022,",
+      "definition": "American transportation technology company",
+      "reason": "appositive_alias_subject"
+    }
+  ],
+  "relation_examples_preserved": [
+    {
+      "subject": "Starlink",
+      "predicate": "is_a",
+      "object": "Satellite internet"
+    },
+    {
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Falcon 9"
+    },
+    {
+      "subject": "Jeff Bezos",
+      "predicate": "founded",
+      "object": "Amazon"
+    },
+    {
+      "subject": "Bloomberg News",
+      "predicate": "founded_by",
+      "object": "Michael Bloomberg"
+    },
+    {
+      "subject": "Crew Dragon",
+      "predicate": "owned_by",
+      "object": "SpaceX"
+    },
+    {
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "produced 3"
+    },
+    {
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "000 engineers"
+    },
+    {
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "object": "annual World Energy Outlook"
+    },
+    {
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "F/A-18 Super Hornet"
+    },
+    {
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "Grumman E-2 Hawkeye airborne early warning"
+    },
+    {
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "MQ-4C Triton unmanned aerial vehicle"
+    },
+    {
+      "subject": "Jean Fayeton",
+      "predicate": "develops",
+      "object": "Malabry campus"
+    },
+    {
+      "subject": "Telecom Technologies",
+      "predicate": "owned_by",
+      "object": "Sonus Networks"
+    },
+    {
+      "subject": "Arianespace",
+      "predicate": "subsidiary_of",
+      "object": "ArianeGroup"
+    },
+    {
+      "subject": "Now",
+      "predicate": "headquartered_in",
+      "object": "Tokyo"
+    }
+  ],
+  "definition_examples_preserved": [
+    {
+      "subject": "Abe Fortas",
+      "definition": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis"
+    },
+    {
+      "subject": "HMS Amazon",
+      "definition": "26-gun frigate"
+    },
+    {
+      "subject": "June",
+      "definition": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world"
+    },
+    {
+      "subject": "Rocket Science Games",
+      "definition": "independent game studio"
+    },
+    {
+      "subject": "Accenture plc",
+      "definition": "Irish technology consulting company"
+    },
+    {
+      "subject": "Affordable Connectivity Program",
+      "definition": "United States government-sponsored program"
+    },
+    {
+      "subject": "Air command",
+      "definition": "term used to refer to the command structure of some air forces"
+    },
+    {
+      "subject": "Aliko Mohammad Dangote",
+      "definition": "Nigerian businessman"
+    },
+    {
+      "subject": "Alpha Magnetic Spectrometer",
+      "definition": "particle physics experiment module"
+    },
+    {
+      "subject": "Amalgam Comics",
+      "definition": "collaborative publishing imprint shared by DC Comics"
+    },
+    {
+      "subject": "Amazon Bookstore Cooperative",
+      "definition": "feminist bookstore"
+    },
+    {
+      "subject": "Amazon Delta",
+      "definition": "vast river delta formed by the Amazon River"
+    },
+    {
+      "subject": "Amazon Kindle",
+      "definition": "series of e-readers designed"
+    },
+    {
+      "subject": "Amazon basin",
+      "definition": "part of South America drained by the Amazon River"
+    },
+    {
+      "subject": "Amazonian Guard",
+      "definition": "unofficial name given to an all-female elite cadre of bodyguards officially"
+    }
+  ],
+  "quarantine_examples": [
+    {
+      "subject": "Mark Carney",
+      "predicate": "leader_of",
+      "object": "Liberal Party",
+      "reason": "volatile_predicate"
+    }
+  ]
+}

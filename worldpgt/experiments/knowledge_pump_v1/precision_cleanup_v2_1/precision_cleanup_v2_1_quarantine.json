@@ -1,0 +1,176 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Crew Dragon",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "Private spaceflight",
+      "evidence_text": "On 30 May 2020, Crew Dragon Demo-2 operated by SpaceX became the first crewed mission to the International Space Station in the Commercial Crew Program.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    "reason": "owned_by_predicate_ambiguous"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Now",
+      "predicate": "headquartered_in",
+      "object": "Tokyo",
+      "source_page": "Asahi Kasei",
+      "evidence_text": "Now headquartered in Tokyo, with offices and plants across Japan, as well as China, Singapore, Thailand, U.SU.S\u0000A. and Germany.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Now headquartered in Tokyo, with offices and plants across Japan, as well as China, Singapore, Thailand, U.SU.S\u0000A. and Germany.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Compaq",
+      "predicate": "owned_by",
+      "object": "HP",
+      "source_page": "Compaq Computer",
+      "evidence_text": "Struggling to keep up against its competitors with the price wars against Dell, the launch of a joint venture with ADI Corporation in 1994, and a risky acquisition of DEC in 1998 (which includes the inheritance of the DEC Alpha family of CPUs), Compaq was acquired by Hewlett-Packard (HP) for US$25 billion in 2002.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Struggling to keep up against its competitors with the price wars against Dell, the launch of a joint venture with ADI Corporation in 1994, and a risky acquisition of DEC in 1998 (which includes the inheritance of the DEC Alpha family of CPUs), Compaq was acquired by Hewlett-Packard (HP) for US$25 billion in 2002.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "duplicate_alias_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Harvard",
+      "predicate": "founded_by",
+      "object": "General Court",
+      "source_page": "Harvard University",
+      "evidence_text": "Harvard was founded in 1636 by a vote of the Great and General Court of the Massachusetts Bay Colony.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Harvard was founded in 1636 by a vote of the Great and General Court of the Massachusetts Bay Colony.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subject_alias_too_short"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Harvard",
+      "predicate": "founded_by",
+      "object": "Massachusetts Bay Colony",
+      "source_page": "Harvard University",
+      "evidence_text": "Harvard was founded in 1636 by a vote of the Great and General Court of the Massachusetts Bay Colony.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Harvard was founded in 1636 by a vote of the Great and General Court of the Massachusetts Bay Colony.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subject_alias_too_short"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Affirm",
+      "predicate": "developed_by",
+      "object": "Levchin",
+      "source_page": "Max Levchin",
+      "evidence_text": "Affirm was created by Levchin, Palantir Technologies co-founder Nathan Gettings, and Jeff Kaditz of First Data.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Affirm was created by Levchin, Palantir Technologies co-founder Nathan Gettings, and Jeff Kaditz of First Data.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Levchin",
+      "predicate": "develops",
+      "object": "Affirm",
+      "source_page": "Max Levchin",
+      "evidence_text": "Affirm was created by Levchin, Palantir Technologies co-founder Nathan Gettings, and Jeff Kaditz of First Data.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Affirm was created by Levchin, Palantir Technologies co-founder Nathan Gettings, and Jeff Kaditz of First Data.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Morgan",
+      "predicate": "founded_by",
+      "object": "Henry Frederick Stanley Morgan",
+      "source_page": "Morgan Motor Company",
+      "evidence_text": "Morgan was founded in 1910 by Henry Frederick Stanley Morgan.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Morgan was founded in 1910 by Henry Frederick Stanley Morgan.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "subject_alias_too_short"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "GAO",
+      "predicate": "headquartered_in",
+      "object": "Washington",
+      "source_page": "Government Accountability Office",
+      "evidence_text": "The GAO is headquartered in Washington, D.C., and maintains an additional 11 field offices around the country.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The GAO is headquartered in Washington, D.C., and maintains an additional 11 field offices around the country.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  }
+]

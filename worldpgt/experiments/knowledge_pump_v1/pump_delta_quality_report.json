@@ -1,0 +1,404 @@
+{
+  "pump_answerable_delta_count": 912,
+  "pump_world_model_delta_count": 912,
+  "pump_entity_delta_count": 663,
+  "pump_answerable_fact_delta_count": 249,
+  "pump_relation_delta_count": 47,
+  "pump_definition_delta_count": 202,
+  "pump_property_candidate_count": 1,
+  "answerable_delta_before_precision": 1164,
+  "answerable_delta_after_precision": 912,
+  "weak_context_delta_count": 5262,
+  "entity_delta_count": 925,
+  "rejected_quality_count": 21,
+  "quarantine_quality_count": 3,
+  "relation_quality_rejection_by_reason": {
+    "generic_subject": 3,
+    "is_a_object_too_broad": 3,
+    "is_a_object_truncated_nationality": 5,
+    "self_relation": 10,
+    "volatile_evidence": 3
+  },
+  "precision_rejected_count": 156,
+  "precision_quarantined_count": 26,
+  "precision_property_candidate_count": 1,
+  "precision_rejection_by_reason": {
+    "definition_not_lead_style": 19,
+    "develops_bad_object": 7,
+    "develops_bad_subject": 10,
+    "develops_object_not_in_evidence": 2,
+    "founded_bad_subject": 7,
+    "generic_definition_subject": 2,
+    "generic_relation_bad_object": 1,
+    "generic_relation_bad_subject": 35,
+    "generic_relation_object_not_in_evidence": 1,
+    "known_for_bad_subject": 4,
+    "owned_by_bad_object": 9,
+    "owned_by_bad_subject": 27,
+    "owned_by_no_ownership_evidence": 10,
+    "owned_by_subject_is_agent": 1,
+    "produces_bad_object": 2,
+    "produces_bad_subject": 4,
+    "produces_object_not_in_evidence": 1,
+    "publishes_bad_object": 5,
+    "publishes_bad_subject": 1,
+    "subsidiary_bad_object": 1,
+    "subsidiary_bad_subject": 4,
+    "subsidiary_subject_not_in_evidence": 3
+  },
+  "include_weak_context": false,
+  "rejected_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "The North American Charging Standard",
+        "predicate": "is_a",
+        "object": "Electric vehicle",
+        "source_page": "Tesla, Inc.",
+        "evidence_text": "The North American Charging Standard (NACS) is an electric vehicle charging connector system developed by Tesla.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable"
+      },
+      "reason": "is_a_object_too_broad"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Satellite constellation",
+        "predicate": "subsidiary_of",
+        "object": "SpaceX",
+        "source_page": "SpaceX",
+        "evidence_text": "Starlink is an internet satellite constellation under development by Starlink Services, LLC, a wholly owned subsidiary of SpaceX, that consists of thousands of cross-linked communications satellites in ~550 km orbits.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "generic_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "SpaceX",
+        "predicate": "headquartered_in",
+        "object": "SpaceX",
+        "source_page": "SpaceX",
+        "evidence_text": "Facilities SpaceX is headquartered at SpaceX Starbase near Brownsville, Texas, where it manufactures and launches its Starship launch vehicle.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable"
+      },
+      "reason": "self_relation"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Internet service provider",
+        "predicate": "operates",
+        "object": "Satellite internet",
+        "source_page": "Starlink",
+        "evidence_text": "In August 2024, Starlink Lanka (Private) Limited was granted a Telecommunications Service Provider License by TRCSL, allowing it to operate satellite Internet services in the country.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "generic_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Falcon 1",
+        "predicate": "develops",
+        "object": "Falcon 1",
+        "source_page": "Falcon 1",
+        "evidence_text": "Cape Canaveral Air Force Station Space Launch Complex 40 (the Falcon 9 pad) was considered for Falcon 1 launches but never developed before Falcon 1 was retired.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "self_relation"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "The Boring Company",
+        "predicate": "is_a",
+        "object": "American infrastructure",
+        "source_page": "The Boring Company",
+        "evidence_text": "The Boring Company (TBC) is an American infrastructure, tunnel construction service, and equipment company founded by Elon Musk.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable"
+      },
+      "reason": "is_a_object_truncated_nationality"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "OpenAI",
+        "predicate": "is_a",
+        "object": "Artificial intelligence",
+        "source_page": "OpenAI",
+        "evidence_text": "OpenAI is an American artificial intelligence (AI) research organization headquartered in San Francisco, consisting of OpenAI Group PBC, a for-profit public benefit corporation (PBC), partially controlled by OpenAI Foundation, a nonprofit.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable"
+      },
+      "reason": "is_a_object_too_broad"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Bloomberg News",
+        "predicate": "is_a",
+        "object": "Bloomberg News",
+        "source_page": "Bloomberg News",
+        "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.PL.P\u0000 Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable"
+      },
+      "reason": "self_relation"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Internet service provider",
+        "predicate": "is_a",
+        "object": "Internet service provider",
+        "source_page": "Internet service provider",
+        "evidence_text": "Wireless ISP A wireless Internet service provider (WISP) is an Internet service provider with a network based on wireless networking.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable"
+      },
+      "reason": "self_relation"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Electric vehicle",
+        "predicate": "produces",
+        "object": "more than the rest of the world combined",
+        "source_page": "Electric vehicle",
+        "evidence_text": "produces more than the rest of the world combined.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Electric vehicle",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+        "snapshot_retrieved_at": "2026-06-17T17:10:30Z",
+        "snapshot_revision_id": 1359848574,
+        "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-238-overlay-001",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "generic_subject"
+    }
+  ],
+  "quarantine_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "xAI",
+        "predicate": "subsidiary_of",
+        "object": "SpaceX",
+        "source_page": "SpaceX",
+        "evidence_text": "In May 2026, Anthropic signed a contract of $1.25 billion per month with xAI, a subsidiary of SpaceX, to buy all the compute capacity at the Colossus 1 data center in Memphis, Tennessee.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "volatile_evidence"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "xAI",
+        "predicate": "owned_by",
+        "object": "SpaceX",
+        "source_page": "Twitter",
+        "evidence_text": "In February 2026, the platform's owner, xAI, was acquired by SpaceX; this marked the sixth time where the social media platform has changed hands and the third time under Musk's ownership.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "volatile_evidence"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Private spaceflight",
+        "predicate": "owned_by",
+        "object": "SpaceX",
+        "source_page": "Space tourism",
+        "evidence_text": "On September 12, 2024, Jared Isaacman and Sarah Gillis performed the first commercial spacewalk during the Polaris Dawn spaceflight operated by SpaceX.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "volatile_evidence"
+    }
+  ],
+  "answerable_relation_examples": [
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Starlink",
+      "predicate": "is_a",
+      "object": "Satellite internet",
+      "source_page": "SpaceX",
+      "evidence_text": "Starlink is an internet satellite constellation under development by Starlink Services, LLC, a wholly owned subsidiary of SpaceX, that consists of thousands of cross-linked communications satellites in ~550 km orbits.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Falcon 9",
+      "source_page": "Falcon 9",
+      "evidence_text": "SpaceX developed Falcon 9 with private capital as well, but did have pre-arranged commitments by NASA to purchase several operational flights once specific capabilities were demonstrated.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Jeff Bezos",
+      "predicate": "founded",
+      "object": "Amazon",
+      "source_page": "Jeff Bezos",
+      "evidence_text": "Three years after Bezos founded Amazon, he took it public with an initial public offering (IPO).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "founded_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg News",
+      "evidence_text": "History Bloomberg News was founded by Michael Bloomberg and Matthew Winkler in 1990 to deliver financial news reporting to Bloomberg Terminal subscribers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "produced 3",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "Manufactures produced 3,000 engineers, and served as a model for most of the industrialized countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "École Centrale Paris",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
+      "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
+      "snapshot_revision_id": 1327364105,
+      "snapshot_raw_text_sha256": "0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-000-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "000 engineers",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "Manufactures produced 3,000 engineers, and served as a model for most of the industrialized countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "École Centrale Paris",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
+      "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
+      "snapshot_revision_id": 1327364105,
+      "snapshot_raw_text_sha256": "0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-000-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "object": "annual World Energy Outlook",
+      "source_page": "International Energy Agency",
+      "evidence_text": "publishes a range of reports and other information including its flagship publication, the annual World Energy Outlook, as well as the Net Zero by 2050 report.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "International Energy Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
+      "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
+      "snapshot_revision_id": 1350653231,
+      "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-334-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "F/A-18 Super Hornet",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-006",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "Grumman E-2 Hawkeye airborne early warning",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-007",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "MQ-4C Triton unmanned aerial vehicle",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-009",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  ]
+}

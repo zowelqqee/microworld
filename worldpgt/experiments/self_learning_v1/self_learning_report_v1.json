@@ -1,0 +1,61 @@
+{
+  "safe_for_general_runtime": false,
+  "trusted_memory_modified": false,
+  "accepted_overlay_modified": false,
+  "promoted_overlay_modified": false,
+  "proposal_only": true,
+  "opportunities_total": 61,
+  "opportunities_by_category": {
+    "adversarial_test_candidate": 1,
+    "current_claim_guard_case": 12,
+    "missing_stable_knowledge": 36,
+    "relation_inversion_guard_case": 5,
+    "unsupported_universal_guard_case": 2,
+    "volatile_review_candidate": 3,
+    "weak_link_safety_case": 2
+  },
+  "opportunities_by_priority": {
+    "high": 20,
+    "medium": 41
+  },
+  "curriculum_rows_total": 61,
+  "adversarial_rows_total": 22,
+  "pattern_proposals_total": 2,
+  "analyzer_rule_proposals_total": 5,
+  "warnings": [],
+  "errors": [],
+  "source_artifacts_read": [
+    "answer_planner_v1_summary.json",
+    "qa_generalization_test_v1_summary.json",
+    "entity_qa_v1_summary.json",
+    "entity_qa_expansion_v1_summary.json",
+    "entity_qa_adversarial_v1_summary.json",
+    "cross_page_qa_v1_summary.json",
+    "self_ingestion_v1/quarantine.json",
+    "self_ingestion_v1/self_ingestion_report.json",
+    "self_ingestion_v1/promotion/promotion_report.json",
+    "self_ingestion_v1/manifest_errors.json",
+    "self_ingestion_v1/overlay_delta_proposal.json",
+    "self_ingestion_v1/promotion/promotion_validation.json",
+    "self_ingestion_v1/promotion/promotion_regression_summary.json",
+    "answer_planner_v1_outputs.csv",
+    "qa_generalization_test_v1_outputs.csv",
+    "entity_qa_v1_outputs.csv",
+    "entity_qa_expansion_v1_outputs.csv",
+    "entity_qa_adversarial_v1_outputs.csv",
+    "cross_page_qa_v1_outputs.csv"
+  ],
+  "regression_status_observed": {
+    "entity_qa_v1": "PASS",
+    "entity_qa_expansion_v1": "PASS",
+    "entity_qa_adversarial_v1": "PASS",
+    "cross_page_qa_v1": "PASS"
+  },
+  "next_recommended_actions": [
+    "Treat all artifacts as proposals only; do not auto-apply, auto-promote, or auto-activate anything.",
+    "Route missing_stable_knowledge items through a local source document + ingestion + quarantine + promotion before any answer is allowed.",
+    "Hold volatile_review_candidate items for human review; never auto-accept as stable facts.",
+    "Add proposed adversarial / guard cases to a regression gate (expecting audit/reject) before considering any rule change.",
+    "Review proposed extraction patterns and analyzer rules manually; keep their activation_status proposal_only until tests are written and pass."
+  ]
+}

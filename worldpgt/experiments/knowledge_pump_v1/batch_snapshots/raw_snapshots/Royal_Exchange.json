@@ -1,0 +1,15 @@
+{
+  "title": "Royal Exchange",
+  "normalized_title": "Royal Exchange",
+  "pageid": 959682,
+  "revision_id": 948311462,
+  "timestamp": "2020-03-31T09:57:20Z",
+  "source_url": "https://en.wikipedia.org/wiki/Royal_Exchange",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Royal+Exchange",
+  "retrieved_at": "2026-06-17T20:43:04Z",
+  "raw_text": "Royal Exchange may refer to:\n\nNorth East Quarter, Belfast, a planned city centre development formerly known as Royal Exchange.\nRoyal Exchange, Dublin, now City Hall, Dublin\nRoyal Exchange, Edinburgh, now the Edinburgh City Chambers\nRoyal Exchange, London, a centre of commerce in the City of London\nRoyal Exchange, Manchester, a 19th-century classical building, home of the Royal Exchange Theatre\nRoyal Exchange (New York), former market and meeting hall\nThe Royal Exchange (film), 2017 Belgian-French film\n\n\nSee also\nRoyal Exchange Assurance Corporation, a London insurance company\nRoyal Exchange Hotel, Brisbane, a popular pub\nRoyal Exchange Square",
+  "raw_text_sha256": "a09b906c33af01f1185d2cbcca1046f1d9274619269c45c35b1f821bf6d7974b",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

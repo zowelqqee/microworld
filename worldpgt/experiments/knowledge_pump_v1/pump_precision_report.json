@@ -1,0 +1,892 @@
+{
+  "answerable_delta_before_precision": 1164,
+  "answerable_delta_after_precision": 912,
+  "precision_rejected_count": 156,
+  "precision_quarantined_count": 26,
+  "precision_property_candidate_count": 1,
+  "precision_rejection_by_reason": {
+    "definition_not_lead_style": 19,
+    "develops_bad_object": 7,
+    "develops_bad_subject": 10,
+    "develops_object_not_in_evidence": 2,
+    "founded_bad_subject": 7,
+    "generic_definition_subject": 2,
+    "generic_relation_bad_object": 1,
+    "generic_relation_bad_subject": 35,
+    "generic_relation_object_not_in_evidence": 1,
+    "known_for_bad_subject": 4,
+    "owned_by_bad_object": 9,
+    "owned_by_bad_subject": 27,
+    "owned_by_no_ownership_evidence": 10,
+    "owned_by_subject_is_agent": 1,
+    "produces_bad_object": 2,
+    "produces_bad_subject": 4,
+    "produces_object_not_in_evidence": 1,
+    "publishes_bad_object": 5,
+    "publishes_bad_subject": 1,
+    "subsidiary_bad_object": 1,
+    "subsidiary_bad_subject": 4,
+    "subsidiary_subject_not_in_evidence": 3
+  },
+  "precision_quarantine_by_reason": {
+    "definition_birthstone": 1,
+    "known_for_default_quarantine": 23,
+    "publishes_unnamed_publication": 1,
+    "publishes_vague_object": 1,
+    "truncated_is_a_object": 1
+  },
+  "relation_precision_before_by_predicate": {
+    "developed_by": 13,
+    "develops": 26,
+    "founded": 1,
+    "founded_by": 31,
+    "headquartered_in": 33,
+    "is_a": 3,
+    "known_for": 27,
+    "leader_of": 1,
+    "operated_by": 8,
+    "operates": 3,
+    "owned_by": 60,
+    "produces": 10,
+    "published_by": 1,
+    "publishes": 10,
+    "service_of": 2,
+    "subsidiary_of": 10
+  },
+  "relation_precision_after_by_predicate": {
+    "developed_by": 5,
+    "develops": 15,
+    "founded": 1,
+    "founded_by": 24,
+    "headquartered_in": 6,
+    "is_a": 2,
+    "leader_of": 1,
+    "operated_by": 2,
+    "owned_by": 13,
+    "produces": 3,
+    "publishes": 2,
+    "service_of": 2,
+    "subsidiary_of": 2
+  },
+  "definition_precision_before_count": 262,
+  "definition_precision_after_count": 240,
+  "pump_world_model_delta_count": 912,
+  "pump_entity_delta_count": 663,
+  "pump_answerable_fact_delta_count": 249,
+  "pump_relation_delta_count": 47,
+  "pump_definition_delta_count": 202,
+  "pump_property_candidate_count": 1,
+  "include_weak_context": false,
+  "precision_v2_enabled": true,
+  "precision_v2_answerable_before_count": 981,
+  "precision_v2_answerable_after_count": 912,
+  "precision_v2_relation_before_count": 78,
+  "precision_v2_relation_after_count": 58,
+  "precision_v2_definition_before_count": 240,
+  "precision_v2_definition_after_count": 206,
+  "precision_v2_rejected_count": 53,
+  "precision_v2_quarantined_count": 1,
+  "precision_v2_rejection_by_reason": {
+    "appositive_alias_subject": 9,
+    "dangling_comma_subject": 9,
+    "definition_nationality_plus_single_noun": 9,
+    "developed_by_location_object": 1,
+    "develops_design_artifact_object": 3,
+    "founded_by_generic_object": 1,
+    "fragment_prefix_subject": 5,
+    "geopolitical_subject_corporate_predicate": 1,
+    "owned_by_geopolitical_object": 1,
+    "produces_universal_object": 1,
+    "publishes_phrase_subject": 1,
+    "truncated_definition": 12
+  },
+  "precision_v2_quarantine_by_reason": {
+    "volatile_predicate": 1
+  },
+  "precision_rejected_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Initial public offering",
+        "predicate": "founded_by",
+        "object": "Jeff Bezos",
+        "source_page": "Blue Origin",
+        "evidence_text": "History The company was founded in 2000 by Jeff Bezos, the founder of Amazon.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "founded_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "The newly",
+        "predicate": "develops",
+        "object": "Falcon Heavy",
+        "source_page": "Blue Origin",
+        "evidence_text": "The newly developed heavy-lift launch vehicle will use two of the 2,400 kN (550,000 lbf) BE-4 engines on each first stage.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "develops_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Gigafactory",
+        "predicate": "produces",
+        "object": "Lithium-ion battery",
+        "source_page": "Gigafactory",
+        "evidence_text": "For the first gigafactory, Tesla partnered with Panasonic to produce battery cells at the same facility where the vehicles would be manufactured, creating economies of scale and improving control of the battery supply chain.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "produces_object_not_in_evidence"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Many companies",
+        "predicate": "produces",
+        "object": "Rocket",
+        "source_page": "Rocket",
+        "evidence_text": "Many companies produce model rocket kits and parts but due to their inherent simplicity some hobbyists have been known to make rockets out of almost anything.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "produces_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "EADS Astrium",
+        "predicate": "subsidiary_of",
+        "object": "European aerospace giant EADS",
+        "source_page": "Space tourism",
+        "evidence_text": "EADS Astrium, a subsidiary of European aerospace giant EADS, announced its space tourism project in June 2007.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "subsidiary_bad_object"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Giga Nevada had been intended",
+        "predicate": "produces",
+        "object": "Lithium-ion battery",
+        "source_page": "Tesla Model 3",
+        "evidence_text": "Giga Nevada had been intended to produce battery packs for Model 3 and it was announced in January 2017 that Tesla would also manufacture drive units at Giga Nevada.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "produces_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Therefore turbocharged engines usually",
+        "predicate": "produces",
+        "object": "Solar power",
+        "source_page": "Supercharger",
+        "evidence_text": "Therefore turbocharged engines usually produce more power and better fuel economy than supercharged engines.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "produces_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Autopilot",
+        "predicate": "developed_by",
+        "object": "Oracle Corporation",
+        "source_page": "Autopilot",
+        "evidence_text": "The first gyroscopic autopilot for aircraft was developed by Sperry Corporation in 1912.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "develops_object_not_in_evidence"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Economy of the United States",
+        "predicate": "develops",
+        "object": "Private spaceflight",
+        "source_page": "Private spaceflight",
+        "evidence_text": "In the early 2000s, several public-private corporate partnerships were established in the United States to privately develop spaceflight technology.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "develops_bad_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Better Place",
+        "predicate": "develops",
+        "object": "Lithium-ion battery",
+        "source_page": "Electric car",
+        "evidence_text": "Better Place developed battery charging and battery swapping services, but went bankrupt in 2013.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable"
+      },
+      "reason": "develops_object_not_in_evidence"
+    }
+  ],
+  "precision_quarantine_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827)",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-001",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "British Member of Parliament Riki Ellison",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-002",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "New Zealand-American football player Robert Ellison (disambiguation)",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-003",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "multiple individuals Scott Ellison (born 1954)",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-004",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "American electric blues guitarist",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-005",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "singer",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-006",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "songwriter Sheila Ellison",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-007",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "American author on parenting",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-008",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "relationships Thomas Ellison",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-009",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ellison",
+        "predicate": "known_for",
+        "object": "New Zealand rugby player Thomas Ellison (mutineer)",
+        "source_page": "Ellison",
+        "evidence_text": "known for Invisible Man Richard Ellison (cricketer) Richard Ellison (politician) (1754–1827), British Member of Parliament Riki Ellison, New Zealand-American football player Robert Ellison (disambiguation), multiple individuals Scott Ellison (born 1954), American electric blues guitarist, singer and songwriter Sheila Ellison, American author on parenting and relationships Thomas Ellison, New Zealand rugby player Thomas Ellison (mutineer), English seaman William Ellison-Macartney (1852–1924), British and Australian politician William Frederick Archdall Ellison, Irish astronomer and clergyman",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Ellison",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Ellison",
+        "snapshot_retrieved_at": "2026-06-15T09:16:16Z",
+        "snapshot_revision_id": 1329875571,
+        "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-242-overlay-010",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "known_for_default_quarantine"
+    }
+  ],
+  "precision_property_candidate_examples": [
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "July",
+      "predicate": "has_birthstone",
+      "object": "Ruby",
+      "source_page": "July",
+      "evidence_text": "Symbols July's birthstone is the ruby, which symbolizes contentment.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_precision_origin": "definition_to_property"
+    }
+  ],
+  "precision_v2_rejected_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Amazon Leo,",
+        "predicate": "subsidiary_of",
+        "object": "Amazon",
+        "source_page": "Project Kuiper",
+        "evidence_text": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "subsidiary_of_v2",
+        "v2_pattern_id": "subsidiary_of_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Amazon Reef, or Amazonian Reef,",
+        "definition": "extensive coral",
+        "predicate": "is_a",
+        "source_page": "Amazon Reef",
+        "evidence_text": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Ampex Magnetic Tape Division,",
+        "predicate": "headquartered_in",
+        "object": "Opelika",
+        "source_page": "Ampex Corporation",
+        "evidence_text": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "headquartered_in_v2",
+        "v2_pattern_id": "headquartered_in_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Arianespace SA",
+        "definition": "French company",
+        "predicate": "is_a",
+        "source_page": "Arianespace",
+        "evidence_text": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Founding Aston Martin",
+        "predicate": "founded_by",
+        "object": "Lionel Martin",
+        "source_page": "Aston Martin",
+        "evidence_text": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "founded_by_v2",
+        "v2_pattern_id": "founded_by_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Founding Aston Martin",
+        "predicate": "founded_by",
+        "object": "Robert Bamford",
+        "source_page": "Aston Martin",
+        "evidence_text": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "founded_by_v2",
+        "v2_pattern_id": "founded_by_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "fragment_prefix_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Boeing Starliner",
+        "definition": "spacecraft designed to transport crew to",
+        "predicate": "is_a",
+        "source_page": "Boeing Starliner",
+        "evidence_text": "The Boeing Starliner (or CST-100) is a spacecraft designed to transport crew to and from the International Space Station (ISS) and other low-Earth-orbit destinations.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "The Boeing Starliner (or CST-100) is a spacecraft designed to transport crew to and from the International Space Station (ISS) and other low-Earth-orbit destinations.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "truncated_definition"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Byron Kurt Lichtenberg",
+        "definition": "American engineer",
+        "predicate": "is_a",
+        "source_page": "Byron Lichtenberg",
+        "evidence_text": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "CNBC Asia, and CNBC Europe,",
+        "predicate": "headquartered_in",
+        "object": "London",
+        "source_page": "CNBC",
+        "evidence_text": "In June 1995, CNBC launched the Hong Kong–based CNBC Asia, and CNBC Europe, headquartered in London, in March 1996.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "headquartered_in_v2",
+        "v2_pattern_id": "headquartered_in_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "In June 1995, CNBC launched the Hong Kong–based CNBC Asia, and CNBC Europe, headquartered in London, in March 1996.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Charles David Walker",
+        "definition": "American engineer",
+        "predicate": "is_a",
+        "source_page": "Charles D. Walker",
+        "evidence_text": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "definition_nationality_plus_single_noun"
+    }
+  ],
+  "precision_v2_quarantine_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Mark Carney",
+        "predicate": "leader_of",
+        "object": "Liberal Party",
+        "source_page": "Mark Carney",
+        "evidence_text": "leadership of the Liberal Party",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "snapshot_source_title": "Mark Carney",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Mark_Carney",
+        "snapshot_retrieved_at": "2026-06-17T17:18:44Z",
+        "snapshot_revision_id": 1359301317,
+        "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-402-overlay-001",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "volatile_predicate"
+    }
+  ],
+  "precision_cleanup_v2_1_enabled": true,
+  "precision_cleanup_v2_1_answerable_before_count": 927,
+  "precision_cleanup_v2_1_answerable_after_count": 912,
+  "precision_cleanup_v2_1_relation_before_count": 58,
+  "precision_cleanup_v2_1_relation_after_count": 47,
+  "precision_cleanup_v2_1_definition_before_count": 206,
+  "precision_cleanup_v2_1_definition_after_count": 202,
+  "precision_cleanup_v2_1_rejected_count": 6,
+  "precision_cleanup_v2_1_quarantined_count": 9,
+  "precision_cleanup_v2_1_rejection_by_reason": {
+    "composite_region_subject": 2,
+    "definition_truncated_participle": 4
+  },
+  "precision_cleanup_v2_1_quarantine_by_reason": {
+    "duplicate_alias_relation": 1,
+    "headquartered_in_quarantine_default": 2,
+    "owned_by_predicate_ambiguous": 1,
+    "subject_alias_too_short": 3,
+    "truncated_person_alias": 2
+  },
+  "precision_cleanup_v2_1_duplicate_alias_relation_count": 1,
+  "precision_cleanup_v2_1_quarantined_alias_duplicate_count": 1,
+  "answerable_relation_examples": [
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Starlink",
+      "predicate": "is_a",
+      "object": "Satellite internet",
+      "source_page": "SpaceX",
+      "evidence_text": "Starlink is an internet satellite constellation under development by Starlink Services, LLC, a wholly owned subsidiary of SpaceX, that consists of thousands of cross-linked communications satellites in ~550 km orbits.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Falcon 9",
+      "source_page": "Falcon 9",
+      "evidence_text": "SpaceX developed Falcon 9 with private capital as well, but did have pre-arranged commitments by NASA to purchase several operational flights once specific capabilities were demonstrated.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Jeff Bezos",
+      "predicate": "founded",
+      "object": "Amazon",
+      "source_page": "Jeff Bezos",
+      "evidence_text": "Three years after Bezos founded Amazon, he took it public with an initial public offering (IPO).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "founded_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg News",
+      "evidence_text": "History Bloomberg News was founded by Michael Bloomberg and Matthew Winkler in 1990 to deliver financial news reporting to Bloomberg Terminal subscribers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "produced 3",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "Manufactures produced 3,000 engineers, and served as a model for most of the industrialized countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "École Centrale Paris",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
+      "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
+      "snapshot_revision_id": 1327364105,
+      "snapshot_raw_text_sha256": "0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-000-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "object": "000 engineers",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "Manufactures produced 3,000 engineers, and served as a model for most of the industrialized countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "École Centrale Paris",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
+      "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
+      "snapshot_revision_id": 1327364105,
+      "snapshot_raw_text_sha256": "0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-000-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "object": "annual World Energy Outlook",
+      "source_page": "International Energy Agency",
+      "evidence_text": "publishes a range of reports and other information including its flagship publication, the annual World Energy Outlook, as well as the Net Zero by 2050 report.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "International Energy Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
+      "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
+      "snapshot_revision_id": 1350653231,
+      "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-334-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "F/A-18 Super Hornet",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-006",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "Grumman E-2 Hawkeye airborne early warning",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-007",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "object": "MQ-4C Triton unmanned aerial vehicle",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "develops the B-21 Raider strategic bomber that can drop conventional and thermonuclear weapons (forecasted to be ready for combat in 2029), the B-2 Spirit strategic bomber (which will be replaced by the B-21), fuselage and radar production for the Lockheed Martin F-35 Lightning II Joint Strike Fighter and F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning and control, MQ-4C Triton unmanned aerial vehicle, and the NATO Alliance Ground Surveillance Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Northrop Grumman",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+      "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
+      "snapshot_revision_id": 1359625638,
+      "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-474-overlay-009",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  ]
+}

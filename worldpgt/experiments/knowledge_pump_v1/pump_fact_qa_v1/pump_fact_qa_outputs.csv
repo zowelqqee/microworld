@@ -1,0 +1,530 @@
+prompt_id,question,category,decision,support_kind,supported_by_context,overlay_mode,valid,classification,is_critical_failure,answer_text
+pos-0000,What is Abe Fortas?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Abe Fortas is a youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel ""Ray"" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis."
+pos-0001,Define Abe Fortas.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Abe Fortas is a youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel ""Ray"" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis."
+pos-0002,What is Accenture plc?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Accenture plc is an Irish technology consulting company.
+pos-0003,Define Accenture plc.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Accenture plc is an Irish technology consulting company.
+pos-0004,What is Affordable Connectivity Program?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Affordable Connectivity Program is an United States government-sponsored program.
+pos-0005,Define Affordable Connectivity Program.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Affordable Connectivity Program is an United States government-sponsored program.
+pos-0006,What is Air command?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Air command is a term used to refer to the command structure of some air forces.
+pos-0007,Define Air command.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Air command is a term used to refer to the command structure of some air forces.
+pos-0008,What is Aliko Mohammad Dangote?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Aliko Mohammad Dangote is a Nigerian businessman.
+pos-0009,Define Aliko Mohammad Dangote.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Aliko Mohammad Dangote is a Nigerian businessman.
+pos-0010,What is Alpha Magnetic Spectrometer?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Alpha Magnetic Spectrometer is a particle physics experiment module.
+pos-0011,Define Alpha Magnetic Spectrometer.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Alpha Magnetic Spectrometer is a particle physics experiment module.
+pos-0012,What is Amalgam Comics?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amalgam Comics is a collaborative publishing imprint shared by DC Comics.
+pos-0013,Define Amalgam Comics.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amalgam Comics is a collaborative publishing imprint shared by DC Comics.
+pos-0014,What is Amazon basin?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon basin is a part of South America drained by the Amazon River.
+pos-0015,Define Amazon basin.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon basin is a part of South America drained by the Amazon River.
+pos-0016,What is Amazon Bookstore Cooperative?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon Bookstore Cooperative is a feminist bookstore.
+pos-0017,Define Amazon Bookstore Cooperative.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon Bookstore Cooperative is a feminist bookstore.
+pos-0018,What is Amazon Delta?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon Delta is a vast river delta formed by the Amazon River.
+pos-0019,Define Amazon Delta.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazon Delta is a vast river delta formed by the Amazon River.
+pos-0020,What is Amazonian Guard?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazonian Guard is an unofficial name given to an all-female elite cadre of bodyguards officially.
+pos-0021,Define Amazonian Guard.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amazonian Guard is an unofficial name given to an all-female elite cadre of bodyguards officially.
+pos-0022,What is Amdahl Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amdahl Corporation is an information technology company.
+pos-0023,Define Amdahl Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Amdahl Corporation is an information technology company.
+pos-0024,What is Ampex Data Systems Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Ampex Data Systems Corporation is an American electronics company.
+pos-0025,Define Ampex Data Systems Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Ampex Data Systems Corporation is an American electronics company.
+pos-0026,What is Analytics?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Analytics is a systematic computational analysis of data.
+pos-0027,Define Analytics.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Analytics is a systematic computational analysis of data.
+pos-0028,What is Apple II?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Apple II is a series of microcomputers.
+pos-0029,Define Apple II.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Apple II is a series of microcomputers.
+pos-0030,What is April?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,April is the fourth month of the year in the Gregorian.
+pos-0031,Define April.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,April is the fourth month of the year in the Gregorian.
+pos-0032,What is Ares Management Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Ares Management Corporation is a global alternative investment manager operating in the credit.
+pos-0033,Define Ares Management Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Ares Management Corporation is a global alternative investment manager operating in the credit.
+pos-0034,What is Armadillo Aerospace?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Armadillo Aerospace is an aerospace startup company.
+pos-0035,Define Armadillo Aerospace.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Armadillo Aerospace is an aerospace startup company.
+pos-0036,What is Artemis Accords?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Artemis Accords is a non-binding set of principles for outer space exploration.
+pos-0037,Define Artemis Accords.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Artemis Accords is a non-binding set of principles for outer space exploration.
+pos-0038,What is Artemis III?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Artemis III is an upcoming crewed spaceflight mission of the NASA-led Artemis program.
+pos-0039,Define Artemis III.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Artemis III is an upcoming crewed spaceflight mission of the NASA-led Artemis program.
+pos-0040,What is Arthur Michell Ransome?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Arthur Michell Ransome is an English author.
+pos-0041,Define Arthur Michell Ransome.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Arthur Michell Ransome is an English author.
+pos-0042,What is Aston Martin Lagonda Global Holdings PLC?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Aston Martin Lagonda Global Holdings PLC is a British manufacturer of luxury sports cars.
+pos-0043,Define Aston Martin Lagonda Global Holdings PLC.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Aston Martin Lagonda Global Holdings PLC is a British manufacturer of luxury sports cars.
+pos-0044,What is Atlas II?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Atlas II is a member of the Atlas family of launch vehicles.
+pos-0045,Define Atlas II.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Atlas II is a member of the Atlas family of launch vehicles.
+pos-0046,What is Audi Q8?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Audi Q8 is a mid-size luxury crossover SUV made by Audi.
+pos-0047,Define Audi Q8.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Audi Q8 is a mid-size luxury crossover SUV made by Audi.
+pos-0048,What is August?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,August is the eighth month of the year in the Julian.
+pos-0049,Define August.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,August is the eighth month of the year in the Julian.
+pos-0050,What is Axiom Station?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Axiom Station is a planned modular space station designed by Houston.
+pos-0051,Define Axiom Station.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Axiom Station is a planned modular space station designed by Houston.
+pos-0052,What is Bangladesh Satellite-1?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bangladesh Satellite-1 is the first Bangladeshi geostationary communications.
+pos-0053,Define Bangladesh Satellite-1.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bangladesh Satellite-1 is the first Bangladeshi geostationary communications.
+pos-0054,What is Bankers Trust?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bankers Trust is a historic American banking organization.
+pos-0055,Define Bankers Trust.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bankers Trust is a historic American banking organization.
+pos-0056,What is Bertie Charles Forbes?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bertie Charles Forbes is a Scottish-American financial journalist.
+pos-0057,Define Bertie Charles Forbes.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bertie Charles Forbes is a Scottish-American financial journalist.
+pos-0058,What is Bloomberg Government?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Bloomberg Government is a division of Bloomberg Industry Group. In the overlay, Bloomberg Government is linked to Bloomberg via service_of."
+pos-0059,Define Bloomberg Government.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Bloomberg Government is a division of Bloomberg Industry Group. In the overlay, Bloomberg Government is linked to Bloomberg via service_of."
+pos-0060,What is Bloomberg Law?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Law is a subscription-based service.
+pos-0061,Define Bloomberg Law.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Law is a subscription-based service.
+pos-0062,What is Bloomberg Markets?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Markets is a magazine published six times a year by Bloomberg L.
+pos-0063,Define Bloomberg Markets.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Markets is a magazine published six times a year by Bloomberg L.
+pos-0064,What is Bloomberg Radio?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Bloomberg Radio is a radio service of Bloomberg L. In the overlay, Bloomberg Radio is linked to Bloomberg via service_of."
+pos-0065,Define Bloomberg Radio.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Bloomberg Radio is a radio service of Bloomberg L. In the overlay, Bloomberg Radio is linked to Bloomberg via service_of."
+pos-0066,What is Bloomberg Terminal?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Terminal is a computer software system provided by the financial data vendor Bloomberg L.
+pos-0067,Define Bloomberg Terminal.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Bloomberg Terminal is a computer software system provided by the financial data vendor Bloomberg L.
+pos-0068,What is Blue Origin NS-16?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-16 is a sub-orbital spaceflight mission.
+pos-0069,Define Blue Origin NS-16.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-16 is a sub-orbital spaceflight mission.
+pos-0070,What is Blue Origin NS-17?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-17 is a sub-orbital spaceflight cargo mission of Blue Origin's New Shepard rocket.
+pos-0071,Define Blue Origin NS-17.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-17 is a sub-orbital spaceflight cargo mission of Blue Origin's New Shepard rocket.
+pos-0072,What is Blue Origin NS-18?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-18 is a sub-orbital spaceflight mission.
+pos-0073,Define Blue Origin NS-18.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-18 is a sub-orbital spaceflight mission.
+pos-0074,What is Blue Origin NS-19?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-19 is a New Shepard sub-orbital spaceflight mission.
+pos-0075,Define Blue Origin NS-19.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-19 is a New Shepard sub-orbital spaceflight mission.
+pos-0076,What is Blue Origin NS-20?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-20 is a sub-orbital spaceflight mission.
+pos-0077,Define Blue Origin NS-20.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-20 is a sub-orbital spaceflight mission.
+pos-0078,What is Blue Origin NS-21?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-21 is a sub-orbital spaceflight mission.
+pos-0079,Define Blue Origin NS-21.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-21 is a sub-orbital spaceflight mission.
+pos-0080,What is Blue Origin NS-23?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-23 is a sub-orbital cargo spaceflight mission of Blue Origin's New Shepard rocket.
+pos-0081,Define Blue Origin NS-23.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Origin NS-23 is a sub-orbital cargo spaceflight mission of Blue Origin's New Shepard rocket.
+pos-0082,What is Blue Ring?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Ring is a spacecraft platform designed to support spacecraft operation.
+pos-0083,Define Blue Ring.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Blue Ring is a spacecraft platform designed to support spacecraft operation.
+pos-0084,What is Boeing B-50 Superfortress?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Boeing B-50 Superfortress is a retired American strategic bomber.
+pos-0085,Define Boeing B-50 Superfortress.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Boeing B-50 Superfortress is a retired American strategic bomber.
+pos-0086,What is Buttonwood Agreement?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Buttonwood Agreement is a founding document of what is now the New York Stock Exchange.
+pos-0087,Define Buttonwood Agreement.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Buttonwood Agreement is a founding document of what is now the New York Stock Exchange.
+pos-0088,What is Canada?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Canada is a country in North America.
+pos-0089,Define Canada.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Canada is a country in North America.
+pos-0090,What is Cape Canaveral?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cape Canaveral is a cape in Brevard County.
+pos-0091,Define Cape Canaveral.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cape Canaveral is a cape in Brevard County.
+pos-0092,What is Cape Canaveral Space Force Station?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cape Canaveral Space Force Station is an installation of the United States Space Force's Space Launch Delta 45.
+pos-0093,Define Cape Canaveral Space Force Station.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cape Canaveral Space Force Station is an installation of the United States Space Force's Space Launch Delta 45.
+pos-0094,What is Carson City?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Carson City is an independent city.
+pos-0095,Define Carson City.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Carson City is an independent city.
+pos-0096,What is CBS News?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,CBS News is a news division of the American television broadcaster CBS.
+pos-0097,Define CBS News.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,CBS News is a news division of the American television broadcaster CBS.
+pos-0098,What is Cerberus Fossae?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cerberus Fossae is a series of semi-parallel fissures on Mars formed by faults.
+pos-0099,Define Cerberus Fossae.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Cerberus Fossae is a series of semi-parallel fissures on Mars formed by faults.
+pos-0100,What is Chevrolet Volt?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Chevrolet Volt is a plug-in hybrid electric vehicle car.
+pos-0101,Define Chevrolet Volt.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Chevrolet Volt is a plug-in hybrid electric vehicle car.
+pos-0102,What is Commercial Orbital Transportation Services?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Commercial Orbital Transportation Services is a NASA program to spur the development of private spacecraft.
+pos-0103,Define Commercial Orbital Transportation Services.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Commercial Orbital Transportation Services is a NASA program to spur the development of private spacecraft.
+pos-0104,What is Companies Act?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Companies Act is a stock short title used for legislation in Botswana.
+pos-0105,Define Companies Act.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Companies Act is a stock short title used for legislation in Botswana.
+pos-0106,What is Compaq Computer Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Compaq Computer Corporation is an American information technology company.
+pos-0107,Define Compaq Computer Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Compaq Computer Corporation is an American information technology company.
+pos-0108,What is Corporations Act 2001?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Corporations Act 2001 is an Act of the Parliament of Australia.
+pos-0109,Define Corporations Act 2001.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Corporations Act 2001 is an Act of the Parliament of Australia.
+pos-0110,What is Dawn Aerospace?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dawn Aerospace is a space transportation company building both in-space propulsion systems.
+pos-0111,Define Dawn Aerospace.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dawn Aerospace is a space transportation company building both in-space propulsion systems.
+pos-0112,What is Delta IV?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Delta IV is a group of five expendable launch systems in the Delta rocket family.
+pos-0113,Define Delta IV.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Delta IV is a group of five expendable launch systems in the Delta rocket family.
+pos-0114,What is Dow Jones?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dow Jones is a combination of the names of business partners Charles Dow.
+pos-0115,Define Dow Jones.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dow Jones is a combination of the names of business partners Charles Dow.
+pos-0116,What is Dragon 2?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dragon 2 is a class of partially reusable spacecraft.
+pos-0117,Define Dragon 2.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dragon 2 is a class of partially reusable spacecraft.
+pos-0118,What is Dragon Spacecraft Qualification Unit?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dragon Spacecraft Qualification Unit is a boilerplate version of the Dragon spacecraft.
+pos-0119,Define Dragon Spacecraft Qualification Unit.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Dragon Spacecraft Qualification Unit is a boilerplate version of the Dragon spacecraft.
+pos-0120,What is Duke University?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Duke University is a private research university in Durham.
+pos-0121,Define Duke University.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Duke University is a private research university in Durham.
+pos-0122,What is Earth?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Earth is the third planet from the Sun.
+pos-0123,Define Earth.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Earth is the third planet from the Sun.
+pos-0124,What is Engineering?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Engineering is a practice of systematically applying natural science.
+pos-0125,Define Engineering.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Engineering is a practice of systematically applying natural science.
+pos-0126,What is Errol Graham Musk?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Errol Graham Musk is a South African businessman.
+pos-0127,Define Errol Graham Musk.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Errol Graham Musk is a South African businessman.
+pos-0128,What is Euronext Amsterdam?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Euronext Amsterdam is a stock exchange.
+pos-0129,Define Euronext Amsterdam.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Euronext Amsterdam is a stock exchange.
+pos-0130,What is Exchange Alley or Change Alley?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Exchange Alley or Change Alley is a narrow alleyway connecting shops.
+pos-0131,Define Exchange Alley or Change Alley.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Exchange Alley or Change Alley is a narrow alleyway connecting shops.
+pos-0132,What is Exos Aerospace Systems & Technologies?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Exos Aerospace Systems & Technologies is an aerospace manufacturer. In the overlay, Exos Aerospace Systems & Technologies is an Aerospace manufacturer."
+pos-0133,Define Exos Aerospace Systems & Technologies.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Exos Aerospace Systems & Technologies is an aerospace manufacturer. In the overlay, Exos Aerospace Systems & Technologies is an Aerospace manufacturer."
+pos-0134,What is February?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,February is the second month of the year in the Julian.
+pos-0135,Define February.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,February is the second month of the year in the Julian.
+pos-0136,What is Federal Communications Commission?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Federal Communications Commission is an independent agency of the United States federal government.
+pos-0137,Define Federal Communications Commission.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Federal Communications Commission is an independent agency of the United States federal government.
+pos-0138,What is Financial Industry Regulatory Authority?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Financial Industry Regulatory Authority is a private American corporation.
+pos-0139,Define Financial Industry Regulatory Authority.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Financial Industry Regulatory Authority is a private American corporation.
+pos-0140,What is Flight or flying?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Flight or flying is a motion of an object.
+pos-0141,Define Flight or flying.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Flight or flying is a motion of an object.
+pos-0142,What is Flight testing?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Flight testing is a branch of aeronautical engineering.
+pos-0143,Define Flight testing.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Flight testing is a branch of aeronautical engineering.
+pos-0144,What is Foothill Transit?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Foothill Transit is a public transit agency.
+pos-0145,Define Foothill Transit.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Foothill Transit is a public transit agency.
+pos-0146,What is Fort Lauderdale?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Fort Lauderdale is a coastal city.
+pos-0147,Define Fort Lauderdale.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Fort Lauderdale is a coastal city.
+pos-0148,What is Foundation series?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Foundation series is a science fiction novel series written by American author Isaac Asimov.
+pos-0149,Define Foundation series.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Foundation series is a science fiction novel series written by American author Isaac Asimov.
+pos-0150,What is General Motors Company?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,General Motors Company is an American multinational automotive manufacturing company.
+pos-0151,Define General Motors Company.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,General Motors Company is an American multinational automotive manufacturing company.
+pos-0152,What is Gigafactory Mexico?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Gigafactory Mexico is a proposed manufacturing plant for Tesla.
+pos-0153,Define Gigafactory Mexico.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Gigafactory Mexico is a proposed manufacturing plant for Tesla.
+pos-0154,What is Goddard Space Flight Center?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Goddard Space Flight Center is a major NASA space research laboratory.
+pos-0155,Define Goddard Space Flight Center.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Goddard Space Flight Center is a major NASA space research laboratory.
+pos-0156,What is Google Cloud?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Google Cloud is a suite of cloud computing services offered by Google.
+pos-0157,Define Google Cloud.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Google Cloud is a suite of cloud computing services offered by Google.
+pos-0158,What is Great Depression?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Great Depression is a severe global economic downturn from 1929 to 1939.
+pos-0159,Define Great Depression.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Great Depression is a severe global economic downturn from 1929 to 1939.
+pos-0160,What is Greek Battalion of Balaklava?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Greek Battalion of Balaklava is a military unit of the Imperial Russian Army.
+pos-0161,Define Greek Battalion of Balaklava.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Greek Battalion of Balaklava is a military unit of the Imperial Russian Army.
+pos-0162,What is Greenhouse gases?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Greenhouse gases is a gases in an atmosphere.
+pos-0163,Define Greenhouse gases.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Greenhouse gases is a gases in an atmosphere.
+pos-0164,What is Harvard Business School?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Harvard Business School is a graduate business school of Harvard University.
+pos-0165,Define Harvard Business School.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Harvard Business School is a graduate business school of Harvard University.
+pos-0166,What is Harvard University?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Harvard University is a private Ivy League research university in Cambridge.
+pos-0167,Define Harvard University.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Harvard University is a private Ivy League research university in Cambridge.
+pos-0168,What is Henrik Fisker?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Henrik Fisker is a Danish automotive designer.
+pos-0169,Define Henrik Fisker.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Henrik Fisker is a Danish automotive designer.
+pos-0170,What is HMS Amazon?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,HMS Amazon is a 26-gun frigate.
+pos-0171,Define HMS Amazon.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,HMS Amazon is a 26-gun frigate.
+pos-0172,What is Hong Kong?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hong Kong is a special administrative region of China.
+pos-0173,Define Hong Kong.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hong Kong is a special administrative region of China.
+pos-0174,What is Horniman Circle Gardens?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Horniman Circle Gardens is a large park in South Mumbai.
+pos-0175,Define Horniman Circle Gardens.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Horniman Circle Gardens is a large park in South Mumbai.
+pos-0176,What is Hubble Space Telescope?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hubble Space Telescope is a space telescope.
+pos-0177,Define Hubble Space Telescope.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hubble Space Telescope is a space telescope.
+pos-0178,What is Hughes Aircraft Company?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hughes Aircraft Company is a major American aerospace.
+pos-0179,Define Hughes Aircraft Company.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Hughes Aircraft Company is a major American aerospace.
+pos-0180,What is IBM System -?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,IBM System - is a common name for IBM products.
+pos-0181,Define IBM System -.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,IBM System - is a common name for IBM products.
+pos-0182,What is Integrate-Transfer-Launch Complex?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Integrate-Transfer-Launch Complex is a rocket launch site.
+pos-0183,Define Integrate-Transfer-Launch Complex.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Integrate-Transfer-Launch Complex is a rocket launch site.
+pos-0184,What is Intel Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Intel Corporation is an American multinational technology company.
+pos-0185,Define Intel Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Intel Corporation is an American multinational technology company.
+pos-0186,What is International Energy Agency?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"International Energy Agency is a Paris-based autonomous intergovernmental organization. In the overlay, International Energy Agency publishes annual World Energy Outlook."
+pos-0187,Define International Energy Agency.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"International Energy Agency is a Paris-based autonomous intergovernmental organization. In the overlay, International Energy Agency publishes annual World Energy Outlook."
+pos-0188,What is Internet?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Internet is a global system of interconnected computer networks.
+pos-0189,Define Internet.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Internet is a global system of interconnected computer networks.
+pos-0190,What is Jack Patrick Dorsey?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Jack Patrick Dorsey is an American tech entrepreneur.
+pos-0191,Define Jack Patrick Dorsey.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Jack Patrick Dorsey is an American tech entrepreneur.
+pos-0192,What is Jaguar Land Rover Automotive PLC?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Jaguar Land Rover Automotive PLC is a British multinational automobile manufacturer.
+pos-0193,Define Jaguar Land Rover Automotive PLC.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Jaguar Land Rover Automotive PLC is a British multinational automobile manufacturer.
+pos-0194,What is James Webb Space Telescope?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,James Webb Space Telescope is a space telescope designed to conduct infrared astronomy.
+pos-0195,Define James Webb Space Telescope.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,James Webb Space Telescope is a space telescope designed to conduct infrared astronomy.
+pos-0196,What is January?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,January is the first month of the year in the Julian.
+pos-0197,Define January.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,January is the first month of the year in the Julian.
+pos-0198,What is Japan?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Japan is an island country in East Asia.
+pos-0199,Define Japan.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Japan is an island country in East Asia.
+pos-0200,What is June?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,June is the sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world.
+pos-0201,Define June.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,June is the sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world.
+pos-0202,What is Land Rover?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Land Rover is a brand of predominantly four-wheel drive.
+pos-0203,Define Land Rover.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Land Rover is a brand of predominantly four-wheel drive.
+pos-0204,What is London Stock Exchange?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,London Stock Exchange is a global stock exchange.
+pos-0205,Define London Stock Exchange.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,London Stock Exchange is a global stock exchange.
+pos-0206,What is Lotus Esprit?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Lotus Esprit is a sports car built by Lotus Cars from 1976 to 2004 at their Hethel.
+pos-0207,Define Lotus Esprit.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Lotus Esprit is a sports car built by Lotus Cars from 1976 to 2004 at their Hethel.
+pos-0208,What is LVMH Moet Hennessy Louis Vuitton SE?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,LVMH Moet Hennessy Louis Vuitton SE is a French multinational holding company.
+pos-0209,Define LVMH Moet Hennessy Louis Vuitton SE.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,LVMH Moet Hennessy Louis Vuitton SE is a French multinational holding company.
+pos-0210,What is Lyndon Robert Rive?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Lyndon Robert Rive is a South African-American businessman.
+pos-0211,Define Lyndon Robert Rive.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Lyndon Robert Rive is a South African-American businessman.
+pos-0212,What is Major general?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Major general is a military rank used in many countries.
+pos-0213,Define Major general.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Major general is a military rank used in many countries.
+pos-0214,What is March?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,March is the third month of the year in both the Julian.
+pos-0215,Define March.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,March is the third month of the year in both the Julian.
+pos-0216,What is McDonnell Douglas Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,McDonnell Douglas Corporation is a major American aerospace manufacturing corporation.
+pos-0217,Define McDonnell Douglas Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,McDonnell Douglas Corporation is a major American aerospace manufacturing corporation.
+pos-0218,What is Media Matters for America?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Media Matters for America is a nonprofit left-leaning watchdog journalism organization.
+pos-0219,Define Media Matters for America.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Media Matters for America is a nonprofit left-leaning watchdog journalism organization.
+pos-0220,What is Merlin?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Merlin is a mythical figure prominently featured in the legend of King Arthur.
+pos-0221,Define Merlin.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Merlin is a mythical figure prominently featured in the legend of King Arthur.
+pos-0222,What is Merritt Island?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Merritt Island is a peninsula in Brevard County.
+pos-0223,Define Merritt Island.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Merritt Island is a peninsula in Brevard County.
+pos-0224,What is Michael Liebreich?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Michael Liebreich is a businessman in the field of clean energy. In the overlay, Michael Liebreich develops New Energy Finance."
+pos-0225,Define Michael Liebreich.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Michael Liebreich is a businessman in the field of clean energy. In the overlay, Michael Liebreich develops New Energy Finance."
+pos-0226,What is Microsoft Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Microsoft Corporation is an American multinational technology company.
+pos-0227,Define Microsoft Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Microsoft Corporation is an American multinational technology company.
+pos-0228,What is Middle East?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Middle East is a geo-political region.
+pos-0229,Define Middle East.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Middle East is a geo-political region.
+pos-0230,What is Millennium Falcon?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Millennium Falcon is a fictional starship in the Star Wars franchise.
+pos-0231,Define Millennium Falcon.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Millennium Falcon is a fictional starship in the Star Wars franchise.
+pos-0232,What is Moon?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Moon is an only natural satellite of Earth.
+pos-0233,Define Moon.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Moon is an only natural satellite of Earth.
+pos-0234,What is Municipal Securities Rulemaking Board?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Municipal Securities Rulemaking Board is an United States self-regulatory financial organization.
+pos-0235,Define Municipal Securities Rulemaking Board.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Municipal Securities Rulemaking Board is an United States self-regulatory financial organization.
+pos-0236,What is Musk?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Musk is a class of aromatic substances commonly used as base notes in perfumery.
+pos-0237,Define Musk.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Musk is a class of aromatic substances commonly used as base notes in perfumery.
+pos-0238,What is NASA Deep Space Network?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,NASA Deep Space Network is a worldwide network of spacecraft communication ground segment facilities.
+pos-0239,Define NASA Deep Space Network.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,NASA Deep Space Network is a worldwide network of spacecraft communication ground segment facilities.
+pos-0240,What is NASDAQ Composite?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,NASDAQ Composite is a stock market index.
+pos-0241,Define NASDAQ Composite.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,NASDAQ Composite is a stock market index.
+pos-0242,What is National Affairs?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,National Affairs is a quarterly magazine in the United States about political affairs.
+pos-0243,Define National Affairs.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,National Affairs is a quarterly magazine in the United States about political affairs.
+pos-0244,What is New Glenn?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Glenn is a family of launch vehicles.
+pos-0245,Define New Glenn.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Glenn is a family of launch vehicles.
+pos-0246,What is New Horizons?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Horizons is an interplanetary space probe launched as a part of NASA's New Frontiers program.
+pos-0247,Define New Horizons.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Horizons is an interplanetary space probe launched as a part of NASA's New Frontiers program.
+pos-0248,What is New Mexico?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Mexico is a landlocked state in the Southwestern region of the United States.
+pos-0249,Define New Mexico.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,New Mexico is a landlocked state in the Southwestern region of the United States.
+pos-0250,What is Nikola Tesla?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Nikola Tesla is a Serbian-American engineer.
+pos-0251,Define Nikola Tesla.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Nikola Tesla is a Serbian-American engineer.
+pos-0252,What is Noah Glass?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Noah Glass is an American tech entrepreneur.
+pos-0253,Define Noah Glass.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Noah Glass is an American tech entrepreneur.
+pos-0254,What is North America?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,North America is a continent in the Northern.
+pos-0255,Define North America.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,North America is a continent in the Northern.
+pos-0256,What is Olympus Mons?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Olympus Mons is a large shield volcano on Mars.
+pos-0257,Define Olympus Mons.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Olympus Mons is a large shield volcano on Mars.
+pos-0258,What is Oracle Cloud?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers.
+pos-0259,Define Oracle Cloud.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers.
+pos-0260,What is Oxford English Dictionary?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Oxford English Dictionary is a principal historical dictionary of the English language.
+pos-0261,Define Oxford English Dictionary.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Oxford English Dictionary is a principal historical dictionary of the English language.
+pos-0262,What is Pecora Investigation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Pecora Investigation is an inquiry begun on March 4.
+pos-0263,Define Pecora Investigation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Pecora Investigation is an inquiry begun on March 4.
+pos-0264,What is Peter Andreas Thiel?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Peter Andreas Thiel is a German-American entrepreneur.
+pos-0265,Define Peter Andreas Thiel.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Peter Andreas Thiel is a German-American entrepreneur.
+pos-0266,What is Princeton University?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Princeton University is a private Ivy League research university in Princeton.
+pos-0267,Define Princeton University.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Princeton University is a private Ivy League research university in Princeton.
+pos-0268,What is Project Gemini?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Gemini is the second United States human spaceflight program to fly.
+pos-0269,Define Project Gemini.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Gemini is the second United States human spaceflight program to fly.
+pos-0270,What is Project Juno?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Juno is a privately funded campaign.
+pos-0271,Define Project Juno.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Juno is a privately funded campaign.
+pos-0272,What is Project Mercury?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Mercury is the first human spaceflight program of the United States.
+pos-0273,Define Project Mercury.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Project Mercury is the first human spaceflight program of the United States.
+pos-0274,What is Reaction Engines Limited?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Reaction Engines Limited is a British aerospace manufacturer.
+pos-0275,Define Reaction Engines Limited.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Reaction Engines Limited is a British aerospace manufacturer.
+pos-0276,What is Redwood Shores?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Redwood Shores is a waterfront community in Redwood City.
+pos-0277,Define Redwood Shores.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Redwood Shores is a waterfront community in Redwood City.
+pos-0278,What is Richard Eugene Sylla?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Richard Eugene Sylla is a chairman of the board of trustees of the Museum of American Finance.
+pos-0279,Define Richard Eugene Sylla.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Richard Eugene Sylla is a chairman of the board of trustees of the Museum of American Finance.
+pos-0280,What is Richard John Micklethwait?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Richard John Micklethwait is an English journalist.
+pos-0281,Define Richard John Micklethwait.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Richard John Micklethwait is an English journalist.
+pos-0282,What is Robert Zubrin?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Robert Zubrin is an American aerospace engineer.
+pos-0283,Define Robert Zubrin.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Robert Zubrin is an American aerospace engineer.
+pos-0284,What is Rocket Science Games?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Rocket Science Games is an independent game studio. In the overlay, Rocket Science Games is founded by Steve Blank."
+pos-0285,Define Rocket Science Games.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Rocket Science Games is an independent game studio. In the overlay, Rocket Science Games is founded by Steve Blank."
+pos-0286,What is Rocketplane Kistler?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Rocketplane Kistler is a reusable launch system firm.
+pos-0287,Define Rocketplane Kistler.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Rocketplane Kistler is a reusable launch system firm.
+pos-0288,What is Roots Blower Company?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Roots Blower Company is an American engineering company.
+pos-0289,Define Roots Blower Company.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Roots Blower Company is an American engineering company.
+pos-0290,What is Royal Navy?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Royal Navy is a naval warfare force of the United Kingdom.
+pos-0291,Define Royal Navy.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Royal Navy is a naval warfare force of the United Kingdom.
+pos-0292,What is San Francisco Bay Area?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,San Francisco Bay Area is a region of California surrounding.
+pos-0293,Define San Francisco Bay Area.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,San Francisco Bay Area is a region of California surrounding.
+pos-0294,What is Scaled Composites Model 339 SpaceShipTwo?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Scaled Composites Model 339 SpaceShipTwo is a retired air-launched suborbital spaceplane type designed for space tourism.
+pos-0295,Define Scaled Composites Model 339 SpaceShipTwo.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Scaled Composites Model 339 SpaceShipTwo is a retired air-launched suborbital spaceplane type designed for space tourism.
+pos-0296,What is September?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,September is the ninth month of the year in the Julian.
+pos-0297,Define September.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,September is the ninth month of the year in the Julian.
+pos-0298,What is Shadow Racing Cars?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Shadow Racing Cars is a Formula One.
+pos-0299,Define Shadow Racing Cars.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Shadow Racing Cars is a Formula One.
+pos-0300,What is Sir Arthur Wing Pinero?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sir Arthur Wing Pinero is an English playwright.
+pos-0301,Define Sir Arthur Wing Pinero.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sir Arthur Wing Pinero is an English playwright.
+pos-0302,What is Sir Richard Charles Nicholas Branson?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sir Richard Charles Nicholas Branson is an English business magnate.
+pos-0303,Define Sir Richard Charles Nicholas Branson.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sir Richard Charles Nicholas Branson is an English business magnate.
+pos-0304,What is Smith Electric Vehicles?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Smith Electric Vehicles is a manufacturer of electric trucks.
+pos-0305,Define Smith Electric Vehicles.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Smith Electric Vehicles is a manufacturer of electric trucks.
+pos-0306,What is SMS Amazone?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SMS Amazone is the sixth member of the ten-ship Gazelle class of light cruisers.
+pos-0307,Define SMS Amazone.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SMS Amazone is the sixth member of the ten-ship Gazelle class of light cruisers.
+pos-0308,What is Software development?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Software development is a process of designing.
+pos-0309,Define Software development.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Software development is a process of designing.
+pos-0310,What is SolarCity Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SolarCity Corporation is a publicly traded company.
+pos-0311,Define SolarCity Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SolarCity Corporation is a publicly traded company.
+pos-0312,What is South America?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South America is a continent entirely in the Western Hemisphere.
+pos-0313,Define South America.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South America is a continent entirely in the Western Hemisphere.
+pos-0314,What is South Carolina?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South Carolina is a state in the Southeastern.
+pos-0315,Define South Carolina.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South Carolina is a state in the Southeastern.
+pos-0316,What is South Sea Company?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South Sea Company is a British joint-stock company.
+pos-0317,Define South Sea Company.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,South Sea Company is a British joint-stock company.
+pos-0318,What is Soyuz MS-17?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Soyuz MS-17 is a Soyuz spaceflight.
+pos-0319,Define Soyuz MS-17.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Soyuz MS-17 is a Soyuz spaceflight.
+pos-0320,What is Space?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Space is a three-dimensional continuum containing positions.
+pos-0321,Define Space.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Space is a three-dimensional continuum containing positions.
+pos-0322,What is Space Age?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Space Age is a period encompassing the activities related to the Space Race.
+pos-0323,Define Space Age.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Space Age is a period encompassing the activities related to the Space Race.
+pos-0324,What is Spaceflight?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Spaceflight is an application of astronautics to fly objects.
+pos-0325,Define Spaceflight.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Spaceflight is an application of astronautics to fly objects.
+pos-0326,What is SpaceX Crew-2?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SpaceX Crew-2 is the second operational flight of a Crew Dragon spacecraft.
+pos-0327,Define SpaceX Crew-2.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SpaceX Crew-2 is the second operational flight of a Crew Dragon spacecraft.
+pos-0328,What is SpaceX Crew-3?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SpaceX Crew-3 is a Crew Dragon's third NASA Commercial Crew operational flight.
+pos-0329,Define SpaceX Crew-3.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,SpaceX Crew-3 is a Crew Dragon's third NASA Commercial Crew operational flight.
+pos-0330,What is Sperry Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sperry Corporation is a major American equipment.
+pos-0331,Define Sperry Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sperry Corporation is a major American equipment.
+pos-0332,"What is Starlink Services, LLC?",positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Starlink Services, LLC is a satellite internet constellation subsidiary of the American space company SpaceX."
+pos-0333,"Define Starlink Services, LLC.",positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Starlink Services, LLC is a satellite internet constellation subsidiary of the American space company SpaceX."
+pos-0334,What is Stennis Space Center?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Stennis Space Center is a NASA rocket testing facility in Hancock County.
+pos-0335,Define Stennis Space Center.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Stennis Space Center is a NASA rocket testing facility in Hancock County.
+pos-0336,What is Stoke Space Technologies?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Stoke Space Technologies is an American space launch company.
+pos-0337,Define Stoke Space Technologies.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Stoke Space Technologies is an American space launch company.
+pos-0338,What is Strategic Air Command?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Strategic Air Command is a Cold War-era United States Department of Defense Specified Command.
+pos-0339,Define Strategic Air Command.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Strategic Air Command is a Cold War-era United States Department of Defense Specified Command.
+pos-0340,What is Sustainable development?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sustainable development is an approach to growth.
+pos-0341,Define Sustainable development.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Sustainable development is an approach to growth.
+pos-0342,What is Tesla Fremont Factory?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Fremont Factory is an automobile manufacturing plant in Fremont.
+pos-0343,Define Tesla Fremont Factory.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Fremont Factory is an automobile manufacturing plant in Fremont.
+pos-0344,What is Tesla next-generation vehicle?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla next-generation vehicle is an electric car platform under development by Tesla after 2022.
+pos-0345,Define Tesla next-generation vehicle.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla next-generation vehicle is an electric car platform under development by Tesla after 2022.
+pos-0346,What is Tesla Powerpack?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Powerpack is a rechargeable lithium-ion battery stationary energy storage item.
+pos-0347,Define Tesla Powerpack.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Powerpack is a rechargeable lithium-ion battery stationary energy storage item.
+pos-0348,What is Tesla Robotaxi?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Robotaxi is a ride-hailing service.
+pos-0349,Define Tesla Robotaxi.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Robotaxi is a ride-hailing service.
+pos-0350,What is Tesla Semi?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Semi is a battery electric semi-trailer truck built by Tesla.
+pos-0351,Define Tesla Semi.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Tesla Semi is a battery electric semi-trailer truck built by Tesla.
+pos-0352,What is Texas?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Texas is the most populous state in the Southern United States.
+pos-0353,Define Texas.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Texas is the most populous state in the Southern United States.
+pos-0354,What is Thomas John Mueller?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Thomas John Mueller is an American aerospace engineer.
+pos-0355,Define Thomas John Mueller.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Thomas John Mueller is an American aerospace engineer.
+pos-0356,What is Thomas Pink?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Thomas Pink is a British clothing company.
+pos-0357,Define Thomas Pink.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Thomas Pink is a British clothing company.
+pos-0358,What is Titan IV?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Titan IV is a family of heavy-lift space launch vehicles.
+pos-0359,Define Titan IV.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Titan IV is a family of heavy-lift space launch vehicles.
+pos-0360,What is UAL Corporation?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,UAL Corporation is a former name of United Airlines Holdings.
+pos-0361,Define UAL Corporation.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,UAL Corporation is a former name of United Airlines Holdings.
+pos-0362,What is United States Air Force?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Air Force is an air service branch of the United States Armed Forces.
+pos-0363,Define United States Air Force.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Air Force is an air service branch of the United States Armed Forces.
+pos-0364,What is United States Army?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Army is a land service branch of the United States Armed Forces.
+pos-0365,Define United States Army.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Army is a land service branch of the United States Armed Forces.
+pos-0366,What is United States Government Accountability Office?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Government Accountability Office is a federal agency within the legislative branch of the United States government.
+pos-0367,Define United States Government Accountability Office.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Government Accountability Office is a federal agency within the legislative branch of the United States government.
+pos-0368,What is United States Navy?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Navy is a maritime service branch of the United States Armed Forces.
+pos-0369,Define United States Navy.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,United States Navy is a maritime service branch of the United States Armed Forces.
+pos-0370,"What is University of California, Davis?",positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"University of California, Davis is a public land-grant research university in the Davis."
+pos-0371,"Define University of California, Davis.",positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"University of California, Davis is a public land-grant research university in the Davis."
+pos-0372,What is US Airways?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,US Airways is a major airline.
+pos-0373,Define US Airways.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,US Airways is a major airline.
+pos-0374,What is USS Amazon?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,USS Amazon is a wooden-hulled bark of 318 tons.
+pos-0375,Define USS Amazon.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,USS Amazon is a wooden-hulled bark of 318 tons.
+pos-0376,What is Volvo Amazon?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Volvo Amazon is a mid-sized car.
+pos-0377,Define Volvo Amazon.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Volvo Amazon is a mid-sized car.
+pos-0378,What is Vulcan Centaur?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Vulcan Centaur is a heavy-lift launch vehicle.
+pos-0379,Define Vulcan Centaur.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Vulcan Centaur is a heavy-lift launch vehicle.
+pos-0380,What is Wall Street?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wall Street is a street in the Financial District of Lower Manhattan in New York City.
+pos-0381,Define Wall Street.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wall Street is a street in the Financial District of Lower Manhattan in New York City.
+pos-0382,What is Wayback Machine?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wayback Machine is a digital archive of the World Wide Web.
+pos-0383,Define Wayback Machine.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wayback Machine is a digital archive of the World Wide Web.
+pos-0384,What is White Sands Missile Range?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,White Sands Missile Range is an United States Army military testing area.
+pos-0385,Define White Sands Missile Range.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,White Sands Missile Range is an United States Army military testing area.
+pos-0386,What is Wojciech Zaremba?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wojciech Zaremba is a Polish computer scientist.
+pos-0387,Define Wojciech Zaremba.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Wojciech Zaremba is a Polish computer scientist.
+pos-0388,What is World Bank Group?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Bank Group is a family of five international organizations.
+pos-0389,Define World Bank Group.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Bank Group is a family of five international organizations.
+pos-0390,What is World Economic Forum?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Economic Forum is an international advocacy non-governmental organization.
+pos-0391,Define World Economic Forum.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Economic Forum is an international advocacy non-governmental organization.
+pos-0392,What is World government?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World government is a theoretical single political authority.
+pos-0393,Define World government.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World government is a theoretical single political authority.
+pos-0394,What is World Governments Summit?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Governments Summit is an annual event since 2013.
+pos-0395,Define World Governments Summit.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Governments Summit is an annual event since 2013.
+pos-0396,What is World Rally Championship?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Rally Championship is an international rallying series.
+pos-0397,Define World Rally Championship.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Rally Championship is an international rallying series.
+pos-0398,What is World Values Survey?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Values Survey is a global research project.
+pos-0399,Define World Values Survey.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,World Values Survey is a global research project.
+pos-0400,What is York City Football Club?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,York City Football Club is a professional association football club.
+pos-0401,Define York City Football Club.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,York City Football Club is a professional association football club.
+pos-0402,What is Yuri Alekseyevich Gagarin?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Yuri Alekseyevich Gagarin is a Soviet pilot.
+pos-0403,Define Yuri Alekseyevich Gagarin.,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,Yuri Alekseyevich Gagarin is a Soviet pilot.
+pos-0404,Who founded Bigelow Aerospace?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bigelow Aerospace was founded by Robert Bigelow.
+pos-0405,Who was Bigelow Aerospace founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bigelow Aerospace was founded by Robert Bigelow.
+pos-0406,Who founded Bloomberg News?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bloomberg News was founded by Michael Bloomberg.
+pos-0407,Who was Bloomberg News founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bloomberg News was founded by Michael Bloomberg.
+pos-0408,Who founded Bombay Stock Exchange?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bombay Stock Exchange was founded by Premchand Roychand.
+pos-0409,Who was Bombay Stock Exchange founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Bombay Stock Exchange was founded by Premchand Roychand.
+pos-0410,What does Chrysler develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Chrysler develops S-IB stage.
+pos-0411,What is developed by Chrysler?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Chrysler develops S-IB stage.
+pos-0412,Who owns Compaq?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Compaq is owned by Hewlett-Packard.
+pos-0413,Who is Compaq owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Compaq is owned by Hewlett-Packard.
+pos-0414,What company owns Compaq?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Compaq is owned by Hewlett-Packard.
+pos-0415,What does Douglas Aircraft Company develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Douglas Aircraft Company develops S-IVB.
+pos-0416,What is developed by Douglas Aircraft Company?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Douglas Aircraft Company develops S-IVB.
+pos-0417,What is Exos Aerospace Systems & Technologies?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Exos Aerospace Systems & Technologies is an aerospace manufacturer. In the overlay, Exos Aerospace Systems & Technologies is an Aerospace manufacturer."
+pos-0418,What kind of thing is Exos Aerospace Systems & Technologies?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Exos Aerospace Systems & Technologies is an aerospace manufacturer. In the overlay, Exos Aerospace Systems & Technologies is an Aerospace manufacturer."
+pos-0419,Who founded Intel?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Intel was founded by Gordon Moore and Robert Noyce.
+pos-0420,Who was Intel founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Intel was founded by Gordon Moore and Robert Noyce.
+pos-0421,Who founded Intel?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Intel was founded by Gordon Moore and Robert Noyce.
+pos-0422,Who was Intel founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Intel was founded by Gordon Moore and Robert Noyce.
+pos-0423,What does International Energy Agency publish?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,International Energy Agency publishes annual World Energy Outlook.
+pos-0424,What report does International Energy Agency publish?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,International Energy Agency publishes annual World Energy Outlook.
+pos-0425,Which report does International Energy Agency publish?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,International Energy Agency publishes annual World Energy Outlook.
+pos-0426,What does Jean Fayeton develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Jean Fayeton develops Malabry campus.
+pos-0427,What is developed by Jean Fayeton?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Jean Fayeton develops Malabry campus.
+pos-0428,What did Jeff Bezos found?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Jeff Bezos founded Blue Origin and Amazon.
+pos-0429,Who founded Amazon?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Amazon was founded by Jeff Bezos.
+pos-0430,Who owns Loopt?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Loopt is owned by Green Dot Corporation.
+pos-0431,Who is Loopt owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Loopt is owned by Green Dot Corporation.
+pos-0432,What company owns Loopt?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Loopt is owned by Green Dot Corporation.
+pos-0433,What does Michael Liebreich develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Michael Liebreich develops New Energy Finance.
+pos-0434,What is developed by Michael Liebreich?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Michael Liebreich develops New Energy Finance.
+pos-0435,What does Michoud Assembly Facility develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Michoud Assembly Facility develops S-IB stage.
+pos-0436,What is developed by Michoud Assembly Facility?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Michoud Assembly Facility develops S-IB stage.
+pos-0437,Who founded National Indemnity?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,National Indemnity was founded by Jack Dabney Ringwalt.
+pos-0438,Who was National Indemnity founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,National Indemnity was founded by Jack Dabney Ringwalt.
+pos-0439,What does Northrop Grumman develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0440,What is developed by Northrop Grumman?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0441,What does Northrop Grumman develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0442,What is developed by Northrop Grumman?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0443,What does Northrop Grumman develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0444,What is developed by Northrop Grumman?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"Northrop Grumman develops F/A-18 Super Hornet, Grumman E-2 Hawkeye airborne early warning, and MQ-4C Triton unmanned aerial vehicle."
+pos-0445,Who owns NYSE?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,NYSE is owned by Intercontinental Exchange.
+pos-0446,Who is NYSE owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,NYSE is owned by Intercontinental Exchange.
+pos-0447,What company owns NYSE?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,NYSE is owned by Intercontinental Exchange.
+pos-0448,Who owns Reuters?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Reuters is owned by Canadian Thomson Corporation.
+pos-0449,Who is Reuters owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Reuters is owned by Canadian Thomson Corporation.
+pos-0450,What company owns Reuters?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Reuters is owned by Canadian Thomson Corporation.
+pos-0451,Who founded Rocket Science Games?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Rocket Science Games was founded by Steve Blank.
+pos-0452,Who was Rocket Science Games founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Rocket Science Games was founded by Steve Blank.
+pos-0453,Who founded Royal Exchange?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Royal Exchange was founded by Thomas Gresham and Sir Richard Clough.
+pos-0454,Who was Royal Exchange founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Royal Exchange was founded by Thomas Gresham and Sir Richard Clough.
+pos-0455,Who founded Royal Exchange?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Royal Exchange was founded by Thomas Gresham and Sir Richard Clough.
+pos-0456,Who was Royal Exchange founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Royal Exchange was founded by Thomas Gresham and Sir Richard Clough.
+pos-0457,Who founded Saudi Arabia?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Saudi Arabia was founded by King Abdulaziz.
+pos-0458,Who was Saudi Arabia founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Saudi Arabia was founded by King Abdulaziz.
+pos-0459,Who owns Sleepycat Software?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0460,Who is Sleepycat Software owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0461,What company owns Sleepycat Software?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0462,Who owns Sleepycat Software?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0463,Who is Sleepycat Software owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0464,What company owns Sleepycat Software?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Sleepycat Software is owned by Oracle Corporation and February.
+pos-0465,Who owns SolarCity?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,SolarCity is owned by Tesla.
+pos-0466,Who is SolarCity owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,SolarCity is owned by Tesla.
+pos-0467,What company owns SolarCity?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,SolarCity is owned by Tesla.
+pos-0468,What does SpaceX develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"SpaceX develops rockets, spacecraft, and Falcon 9."
+pos-0469,What is developed by SpaceX?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,"SpaceX develops rockets, spacecraft, and Falcon 9."
+pos-0470,What is Starlink?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Starlink is a satellite internet constellation operated by SpaceX. In the overlay, Starlink is a Satellite internet and owned by SpaceX."
+pos-0471,What kind of thing is Starlink?,positive,answer,stable_definition,True,pump-dry-run,True,ok,False,"Starlink is a satellite internet constellation operated by SpaceX. In the overlay, Starlink is a Satellite internet and owned by SpaceX."
+pos-0472,Who owns Starlink?,positive,answer,stable_relation,True,pump-dry-run,True,ok,False,Starlink is owned by SpaceX.
+pos-0473,Who is Starlink owned by?,positive,answer,stable_relation,True,pump-dry-run,True,ok,False,Starlink is owned by SpaceX.
+pos-0474,What company owns Starlink?,positive,answer,stable_relation,True,pump-dry-run,True,ok,False,Starlink is owned by SpaceX.
+pos-0475,Who owns Telecom Technologies?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Telecom Technologies is owned by Sonus Networks.
+pos-0476,Who is Telecom Technologies owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Telecom Technologies is owned by Sonus Networks.
+pos-0477,What company owns Telecom Technologies?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Telecom Technologies is owned by Sonus Networks.
+pos-0478,What does TRIC develop?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,TRIC develops USA Parkway.
+pos-0479,What is developed by TRIC?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,TRIC develops USA Parkway.
+pos-0480,Who owns Union-Castle Line?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Union-Castle Line is owned by RMSP.
+pos-0481,Who is Union-Castle Line owned by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Union-Castle Line is owned by RMSP.
+pos-0482,What company owns Union-Castle Line?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,Union-Castle Line is owned by RMSP.
+pos-0483,Who founded WEF?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,WEF was founded by Klaus Schwab.
+pos-0484,Who was WEF founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,WEF was founded by Klaus Schwab.
+pos-0485,Who founded XM?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,XM was founded by Lon Levin and Gary Parsons.
+pos-0486,Who was XM founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,XM was founded by Lon Levin and Gary Parsons.
+pos-0487,Who founded XM?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,XM was founded by Lon Levin and Gary Parsons.
+pos-0488,Who was XM founded by?,positive,answer,semi_stable_relation,True,pump-dry-run,True,ok,False,XM was founded by Lon Levin and Gary Parsons.
+adv-0000,Did Bigelow Aerospace found Robert Bigelow?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0001,Did Bloomberg News found Michael Bloomberg?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0002,Did Bombay Stock Exchange found Premchand Roychand?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0003,Did S-IB stage develop Chrysler?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0004,Does Compaq own Hewlett-Packard?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0005,Did S-IVB develop Douglas Aircraft Company?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0006,Did Intel found Gordon Moore?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0007,Did Intel found Robert Noyce?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0008,Does annual World Energy Outlook publish International Energy Agency?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0009,Did Malabry campus develop Jean Fayeton?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0010,Did Amazon found Jeff Bezos?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0011,Does Loopt own Green Dot Corporation?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0012,Did New Energy Finance develop Michael Liebreich?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0013,Did S-IB stage develop Michoud Assembly Facility?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0014,Did National Indemnity found Jack Dabney Ringwalt?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0015,Did F/A-18 Super Hornet develop Northrop Grumman?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0016,Did Grumman E-2 Hawkeye airborne early warning develop Northrop Grumman?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0017,Did MQ-4C Triton unmanned aerial vehicle develop Northrop Grumman?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0018,Does NYSE own Intercontinental Exchange?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0019,Does Reuters own Canadian Thomson Corporation?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0020,Did Rocket Science Games found Steve Blank?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0021,Did Royal Exchange found Sir Richard Clough?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0022,Did Royal Exchange found Thomas Gresham?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0023,Did Saudi Arabia found King Abdulaziz?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0024,Does Sleepycat Software own February?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0025,Does Sleepycat Software own Oracle Corporation?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0026,Does SolarCity own Tesla?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0027,Did Falcon 9 develop SpaceX?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0028,Does Starlink own SpaceX?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0029,Does Telecom Technologies own Sonus Networks?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0030,Did USA Parkway develop TRIC?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0031,Does Union-Castle Line own RMSP?,adversarial,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no explicitly supported answer exists in Microworld's current memory for this question
+adv-0032,Did WEF found Klaus Schwab?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0033,Did XM found Gary Parsons?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+adv-0034,Did XM found Lon Levin?,adversarial,audit,audit_blocked_context,False,pump-dry-run,True,ok,False,"this asserts a reversed or unsupported directional relation, which the overlay does not support"
+cur-0000,What is Tesla's current stock price?,current,audit,missing_knowledge,False,pump-dry-run,True,ok,False,"this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory"
+cur-0001,What is SpaceX's current valuation?,current,audit,missing_knowledge,False,pump-dry-run,True,ok,False,"this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory"
+cur-0002,What is Jeff Bezos's current net worth?,current,audit,missing_knowledge,False,pump-dry-run,True,ok,False,no stable definition for this entity is present in the overlay
+cur-0003,Is Mark Carney currently the leader of the Liberal Party?,current,audit,missing_knowledge,False,pump-dry-run,True,ok,False,"this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory"
+cur-0004,Is Starlink currently the largest satellite network?,current,audit,missing_knowledge,False,pump-dry-run,True,ok,False,"this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory"

@@ -12,6 +12,22 @@ from worldpgt.entity_qa.types import EntityQAPlan
 
 _AUDIT_PREFIX = "I cannot answer from the wiki overlay because "
 
+_ORDINAL_START_RE = re.compile(
+    r"^\s*(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|"
+    r"eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|"
+    r"eighteenth|nineteenth|twentieth|\d+(?:st|nd|rd|th))\s+",
+    re.IGNORECASE,
+)
+_SUPERLATIVE_START_RE = re.compile(
+    r"^\s*(?:largest|smallest|biggest|richest|poorest|fastest|slowest|"
+    r"highest|lowest|most\s+\w+|best|worst|oldest|newest)\b",
+    re.IGNORECASE,
+)
+
+
+def _should_use_the(def_text: str) -> bool:
+    return bool(_ORDINAL_START_RE.match(def_text) or _SUPERLATIVE_START_RE.match(def_text))
+
 _VERB_OBJECT_PHRASE: dict[str, str] = {
     "produces": "produces",
     "develops": "develops",
@@ -19,6 +35,8 @@ _VERB_OBJECT_PHRASE: dict[str, str] = {
     "known_for": "is known for",
     "leader_of": "leads",
     "founded": "was founded by",
+    "founded_by": "was founded by",
+    "owned_by": "is owned by",
     "related_to": "is related to",
     "part_of": "is part of",
 }
@@ -68,8 +86,9 @@ def _render_define(args: dict) -> str:
     if definition:
         def_text = definition["definition"]
         entity_label = definition["subject"]
-        # Check for article already in definition
-        if def_text and def_text[0].lower() in "aeiou":
+        if def_text and _should_use_the(def_text):
+            article = "the"
+        elif def_text and def_text[0].lower() in "aeiou":
             article = "an"
         else:
             article = "a"
@@ -102,12 +121,18 @@ def _render_define(args: dict) -> str:
             elif pred == "founded":
                 # Subject founded the objects — "is the founder of X", not "founded by X".
                 copular_clauses.append(f"listed as the founder of {obj_list}")
+            elif pred == "founded_by":
+                copular_clauses.append(f"founded by {obj_list}")
+            elif pred == "owned_by":
+                copular_clauses.append(f"owned by {obj_list}")
             elif pred == "produces":
                 verb_clauses.append(f"produces {obj_list}")
             elif pred == "develops":
                 verb_clauses.append(f"develops {obj_list}")
             elif pred == "publishes":
                 verb_clauses.append(f"publishes {obj_list}")
+            elif pred == "is_a":
+                copular_clauses.append(_article_phrase(obj_list))
             else:
                 copular_clauses.append(f"linked to {obj_list} via {pred}")
 
@@ -118,9 +143,11 @@ def _render_define(args: dict) -> str:
                 f"and it {_join_clauses(verb_clauses)}."
             )
         elif copular_clauses:
-            parts.append(f"In the overlay, {label} is {_join_clauses(copular_clauses)}.")
+            prefix = "In the overlay, " if parts else ""
+            parts.append(f"{prefix}{label} is {_join_clauses(copular_clauses)}.")
         elif verb_clauses:
-            parts.append(f"In the overlay, {label} {_join_clauses(verb_clauses)}.")
+            prefix = "In the overlay, " if parts else ""
+            parts.append(f"{prefix}{label} {_join_clauses(verb_clauses)}.")
 
     return " ".join(parts).strip()
 
@@ -136,7 +163,11 @@ def _render_relation(args: dict) -> str:
 
     # "Who founded X?" — relations have X as object, founders as subject.
     if founder_lookup:
-        founders = [r["subject"] for r in relations if r.get("subject")]
+        founders = [
+            r["object"] if r.get("predicate") == "founded_by" else r["subject"]
+            for r in relations
+            if r.get("subject") and r.get("object")
+        ]
         if founders:
             founder_list = _join_list(founders)
             return f"{subject} was founded by {founder_list}."
@@ -162,6 +193,12 @@ def _render_relation(args: dict) -> str:
         elif pred == "founded":
             # Subject is the founder here — never invert to "founded by".
             sentences.append(f"{subject} founded {obj_list}.")
+        elif pred == "founded_by":
+            sentences.append(f"{subject} was founded by {obj_list}.")
+        elif pred == "owned_by":
+            sentences.append(f"{subject} is owned by {obj_list}.")
+        elif pred == "is_a":
+            sentences.append(f"{subject} is {_article_phrase(obj_list)}.")
         else:
             verb = _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}")
             sentences.append(f"{subject} {verb} {obj_list}.")
@@ -299,6 +336,16 @@ def _join_list(items: list[str]) -> str:
     if len(items) == 2:
         return f"{items[0]} and {items[1]}"
     return ", ".join(items[:-1]) + f", and {items[-1]}"
+
+
+def _article_phrase(text: str) -> str:
+    text = str(text).strip()
+    if not text:
+        return text
+    if text.lower().startswith(("a ", "an ", "the ")):
+        return text
+    article = "an" if text[0].lower() in "aeiou" else "a"
+    return f"{article} {text}"
 
 
 def _lowercase_first(s: str) -> str:

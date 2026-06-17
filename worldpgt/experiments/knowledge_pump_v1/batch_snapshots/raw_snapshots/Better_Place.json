@@ -1,0 +1,15 @@
+{
+  "title": "Better Place",
+  "normalized_title": "Better Place",
+  "pageid": 56053370,
+  "revision_id": 1351110088,
+  "timestamp": "2026-04-26T00:26:31Z",
+  "source_url": "https://en.wikipedia.org/wiki/Better_Place",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Better+Place",
+  "retrieved_at": "2026-06-17T17:16:38Z",
+  "raw_text": "Better Place may refer to:\n\nA Better Place, a 1997 film\nBetter Place (company), a former transport company\n\"Better Place\" (Saint Asonia song), 2015\n\"Better Place\" (Rachel Platten song), 2016\n\"Better Place (9.11)\", a song by Michelle Williams from Heart to Yours, 2002\n\"Better Place\" (NSYNC song), from the film Trolls Band Together, 2023",
+  "raw_text_sha256": "5c72c18dfc3a7e97691e0f7af39a1a3299ada6469ca9bd4ec6271980d51ed3a7",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

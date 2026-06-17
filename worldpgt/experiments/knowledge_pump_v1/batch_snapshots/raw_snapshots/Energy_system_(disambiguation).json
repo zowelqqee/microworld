@@ -1,0 +1,15 @@
+{
+  "title": "energy systems",
+  "normalized_title": "Energy system (disambiguation)",
+  "pageid": 44622862,
+  "revision_id": 979915108,
+  "timestamp": "2020-09-23T14:15:02Z",
+  "source_url": "https://en.wikipedia.org/wiki/Energy_system_(disambiguation)",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=energy+systems",
+  "retrieved_at": "2026-06-17T17:09:01Z",
+  "raw_text": "Energy system may refer to:\n\nEnergy system, a system primarily designed to supply energy-services to end-users\nElectric power system, for the supply, transfer, and use of electric power\nThermodynamic system, a physics concept for analysis of thermal energy exchange\nBioenergetic systems, metabolic processes for converting energy in living organisms\n\n\nSee also\nEnergy modeling\nEnergy Systems Language",
+  "raw_text_sha256": "436c524bf961ddb9f6e759aca87179c7a55f714422cf982c9104030dbce3f23e",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

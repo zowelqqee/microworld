@@ -1,0 +1,15 @@
+{
+  "title": "Corp",
+  "normalized_title": "Corp",
+  "pageid": 12502972,
+  "revision_id": 1289568489,
+  "timestamp": "2025-05-09T12:39:57Z",
+  "source_url": "https://en.wikipedia.org/wiki/Corp",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Corp",
+  "retrieved_at": "2026-06-15T09:17:10Z",
+  "raw_text": "Corp may refer to:\n\n\nSurname\nAaron Corp (born 1989), American football quarterback\nBrandon Corp (born 1987), American lacrosse player\nRonald Corp (1951–2025), English composer, conductor and Church of England priest\n\n\nAbbreviation\nCorp., an abbreviation of corporation\nCorp., an abbreviation of the rank (or informal form of address) of corporal (but more usually \"Cpl.\")\nStudents of Georgetown, Inc., commonly called The Corp, a non-profit charitable organization at Georgetown University in Washington, D.C.\nCorporation (nightclub), Sheffield, England, referred to as \"Corp\" by locals\n\n\nAcronym\nCentral Oregon and Pacific Railroad (CORP), an American Class II railroad\nRegional Workers' Center of Paraguay (CORP), a Paraguayan trade union federation\nco-RP, a complexity class of computational complexity theory closely related to RP (complexity)\n\n\nSee also\nCorps (disambiguation)",
+  "raw_text_sha256": "6b35735dca3cf0037938630abb46ae6d72b550c0c4f11788691c7be3b247cab1",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

@@ -1,0 +1,268 @@
+question,overlay_mode,matched_entities_count,definitions_count,direct_relations_count,one_hop_relations_count,two_hop_relations_count,weak_links_count,source_facts_count,candidate_paths_count,blocked_paths_count,missing_knowledge_hints_count,safe_for_answering,safe_for_general_runtime,validation_passed,rendered_summary
+How is Elon Musk connected to rockets?,accepted,2,1,10,17,0,8,1,1,0,0,True,False,True,"Question: How is Elon Musk connected to rockets?
+Overlay mode: accepted
+Matched entities: Elon Musk, rockets
+Stable/semi-stable paths:
+- Elon Musk -> SpaceX -> rockets (semi_stable)
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- SpaceX -develops-> rockets (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Elon Musk -founded-> Neuralink (semi_stable)
+- Elon Musk -founded-> The Boring Company (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- SpaceX ~ Rocket (weak_context_only)
+- Blue Origin ~ Rocket (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Safety notes:
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+Safety: safe to answer from explicit stable support (safe_for_general_runtime=False)"
+How is Elon Musk connected to Starlink?,accepted,2,2,8,15,0,8,1,0,1,2,False,False,True,"Question: How is Elon Musk connected to Starlink?
+Overlay mode: accepted
+Matched entities: Elon Musk, Starlink
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Elon Musk -founded-> Neuralink (semi_stable)
+- Elon Musk -founded-> The Boring Company (semi_stable)
+- Elon Musk -founded-> xAI (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- Starlink ~ Satellite internet (weak_context_only)
+- Starlink ~ SpaceX (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Blocked:
+- weak_only_path: weak context link cannot prove a stable relation
+Missing-knowledge hints:
+- ckr-0014 [missing_product_relation] needs ORG -> develops/produces/operates -> PRODUCT (audit until supported=True)
+- ckr-0023 [missing_product_relation] needs ORG -> develops/produces/operates -> PRODUCT (audit until supported=True)
+Safety notes:
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+- weak_only_path: weak context link cannot establish a stable relation
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+Why is Forbes linked to Elon Musk?,accepted,2,2,10,15,0,10,1,0,1,0,False,False,True,"Question: Why is Forbes linked to Elon Musk?
+Overlay mode: accepted
+Matched entities: Forbes, Elon Musk
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Forbes -publishes-> business rankings (semi_stable)
+- Forbes -publishes-> financial lists (semi_stable)
+- Elon Musk -founded-> Neuralink (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- Forbes ~ Business journalism (weak_context_only)
+- Forbes ~ Ranking (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Blocked:
+- weak_only_path: weak context link cannot prove a stable relation
+Safety notes:
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+- weak_only_path: weak context link cannot establish a stable relation
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+What does Forbes estimate about Elon Musk?,accepted,2,2,10,15,0,10,1,0,1,0,False,False,True,"Question: What does Forbes estimate about Elon Musk?
+Overlay mode: accepted
+Matched entities: Forbes, Elon Musk
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Forbes -publishes-> business rankings (semi_stable)
+- Forbes -publishes-> financial lists (semi_stable)
+- Elon Musk -founded-> Neuralink (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- Forbes ~ Business journalism (weak_context_only)
+- Forbes ~ Ranking (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Blocked:
+- weak_only_path: weak context link cannot prove a stable relation
+Safety notes:
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+- weak_only_path: weak context link cannot establish a stable relation
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+What is Tesla's current stock price?,accepted,0,0,0,0,0,0,0,0,0,0,False,False,True,"Question: What is Tesla's current stock price?
+Overlay mode: accepted
+Matched entities: none
+Stable/semi-stable paths: none
+Weak links: none
+Source-qualified facts: none
+Safety notes:
+- current_or_live_question: requires explicit source-qualified fact with as_of; no stable context produced
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+Did SpaceX found Elon Musk?,accepted,2,2,13,13,0,15,1,0,1,0,False,False,True,"Question: Did SpaceX found Elon Musk?
+Overlay mode: accepted
+Matched entities: SpaceX, Elon Musk
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- SpaceX -develops-> rockets (semi_stable)
+- SpaceX -develops-> spacecraft (semi_stable)
+- SpaceX -produces-> Falcon rockets (semi_stable)
+- SpaceX -produces-> Dragon spacecraft (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- SpaceX ~ Aerospace manufacturing (weak_context_only)
+- SpaceX ~ Rocket (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Blocked:
+- relation_inversion: claim direction 'SpaceX -> Elon Musk' contradicts the overlay's stable relation direction
+Safety notes:
+- relation_inversion_suspicion: claimed direction is reversed vs overlay
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+Does a weak link prove that Forbes owns Elon Musk?,accepted,2,2,10,15,0,10,1,0,1,0,False,False,True,"Question: Does a weak link prove that Forbes owns Elon Musk?
+Overlay mode: accepted
+Matched entities: Forbes, Elon Musk
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> Tesla (semi_stable)
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> Tesla (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Forbes -publishes-> business rankings (semi_stable)
+- Forbes -publishes-> financial lists (semi_stable)
+- Elon Musk -founded-> Neuralink (semi_stable)
+Weak links:
+- Elon Musk ~ Businessperson (weak_context_only)
+- Elon Musk ~ Leadership (weak_context_only)
+- Elon Musk ~ Tesla, Inc. (weak_context_only)
+- Elon Musk ~ SpaceX (weak_context_only)
+- Elon Musk ~ Forbes (weak_context_only)
+- Elon Musk ~ Net worth (weak_context_only)
+- Forbes ~ Business journalism (weak_context_only)
+- Forbes ~ Ranking (weak_context_only)
+Source-qualified facts:
+- Elon Musk estimated_net_worth US$1.1 trillion (source=Forbes, as_of=2026-06, volatile/requires_recheck)
+Blocked:
+- weak_only_path: weak context link cannot prove a stable relation
+Safety notes:
+- source_qualified_volatile_fact: Elon Musk estimated_net_worth (source=Forbes, as_of=2026-06) requires recheck; not stable
+- weak_only_path: weak context link cannot establish a stable relation
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+All rockets are SpaceX products.,accepted,2,1,9,9,0,11,0,1,1,0,False,False,True,"Question: All rockets are SpaceX products.
+Overlay mode: accepted
+Matched entities: rockets, SpaceX
+Stable/semi-stable paths:
+- SpaceX -> rockets (semi_stable)
+Direct relations:
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- SpaceX -develops-> rockets (semi_stable)
+- SpaceX -develops-> spacecraft (semi_stable)
+- SpaceX -produces-> Falcon rockets (semi_stable)
+- SpaceX -produces-> Dragon spacecraft (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Gwynne Shotwell -leader_of-> SpaceX (semi_stable)
+Weak links:
+- Elon Musk ~ SpaceX (weak_context_only)
+- SpaceX ~ Aerospace manufacturing (weak_context_only)
+- SpaceX ~ Rocket (weak_context_only)
+- SpaceX ~ Spacecraft (weak_context_only)
+- Gwynne Shotwell ~ SpaceX (weak_context_only)
+- Blue Origin ~ Rocket (weak_context_only)
+- Falcon 9 ~ SpaceX (weak_context_only)
+- Falcon Heavy ~ SpaceX (weak_context_only)
+Source-qualified facts: none
+Blocked:
+- unsupported_universal_claim: universal reversal is not supported by the overlay
+Safety notes:
+- unsupported_universal_claim: blocked; cannot generalize from specific overlay relations
+Safety: NOT safe to answer as a stable fact (safe_for_general_runtime=False)"
+What does SpaceX develop?,accepted,1,1,8,8,0,10,0,0,0,0,True,False,True,"Question: What does SpaceX develop?
+Overlay mode: accepted
+Matched entities: SpaceX
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- SpaceX -develops-> rockets (semi_stable)
+- SpaceX -develops-> spacecraft (semi_stable)
+- SpaceX -produces-> Falcon rockets (semi_stable)
+- SpaceX -produces-> Dragon spacecraft (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Gwynne Shotwell -leader_of-> SpaceX (semi_stable)
+Weak links:
+- Elon Musk ~ SpaceX (weak_context_only)
+- SpaceX ~ Aerospace manufacturing (weak_context_only)
+- SpaceX ~ Rocket (weak_context_only)
+- SpaceX ~ Spacecraft (weak_context_only)
+- Gwynne Shotwell ~ SpaceX (weak_context_only)
+- Falcon 9 ~ SpaceX (weak_context_only)
+- Falcon Heavy ~ SpaceX (weak_context_only)
+- Starship ~ SpaceX (weak_context_only)
+Source-qualified facts: none
+Safety: safe to answer from explicit stable support (safe_for_general_runtime=False)"
+Who founded SpaceX?,accepted,1,1,8,8,0,10,0,0,0,0,True,False,True,"Question: Who founded SpaceX?
+Overlay mode: accepted
+Matched entities: SpaceX
+Stable/semi-stable paths: none
+Direct relations:
+- Elon Musk -leader_of-> SpaceX (semi_stable)
+- Elon Musk -known_for-> SpaceX (semi_stable)
+- SpaceX -develops-> rockets (semi_stable)
+- SpaceX -develops-> spacecraft (semi_stable)
+- SpaceX -produces-> Falcon rockets (semi_stable)
+- SpaceX -produces-> Dragon spacecraft (semi_stable)
+- Elon Musk -founded-> SpaceX (semi_stable)
+- Gwynne Shotwell -leader_of-> SpaceX (semi_stable)
+Weak links:
+- Elon Musk ~ SpaceX (weak_context_only)
+- SpaceX ~ Aerospace manufacturing (weak_context_only)
+- SpaceX ~ Rocket (weak_context_only)
+- SpaceX ~ Spacecraft (weak_context_only)
+- Gwynne Shotwell ~ SpaceX (weak_context_only)
+- Falcon 9 ~ SpaceX (weak_context_only)
+- Falcon Heavy ~ SpaceX (weak_context_only)
+- Starship ~ SpaceX (weak_context_only)
+Source-qualified facts: none
+Safety: safe to answer from explicit stable support (safe_for_general_runtime=False)"

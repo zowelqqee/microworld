@@ -1,0 +1,48 @@
+# Tesla next-generation vehicle platform
+
+Source: https://en.wikipedia.org/wiki/Tesla_next-generation_vehicle_platform
+Retrieved at: 2026-06-15T12:37:34Z
+Revision ID: 1348302398
+Raw text SHA256: a758925efd0c68a8354141d2b9b1af6832a6ad304a309208864532a48913329e
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Tesla next-generation vehicle is an electric car platform under development by Tesla after 2022. This will be the third mainstream platform for the company. Although the mainline drivable vehicle has not been given an official name, the monikers Model 2 and Model Q have been used to refer to the vehicle in the media. A driverless version of the platform was unveiled in October 2024, called the Cybercab.
+The vehicles built on the new platform architecture will take advantage of Tesla's advanced production concepts such as large single-unit castings, the "Unboxed Process," a 48-volt architecture, and a structural battery pack utilizing 4680 battery cells. Cars are expected to be manufactured at Gigafactory Texas, Gigafactory Berlin-Brandenburg, and the planned Gigafactory Mexico.
+In January 2024, Tesla announced that the first car to use significant parts of the next-gen platform architecture and production process could see US deliveries targeting the second half of 2025, but in an existing vehicle initially built on the legacy Model 3/Y platform. In October 2024, Tesla CEO Elon Musk unveiled the Tesla Cybercab" targeting 2026 production.
+In December 2025, a key supplier for Tesla's 4680 battery program announced a writedown from $2.9 billion to roughly $7,400, leading Electrek to suggest that the vehicle platform is in "serious trouble".
+
+History
+
+Master Plans
+
+In 2006, Tesla posted its first "Master Plan" written by Elon Musk, which had four tasks:
+
+Build sports car
+Use that money to build an affordable car
+Use that money to build an even more affordable car
+While doing above, also provide zero emission electric power generation options
+In retrospect, journalists have asserted the first task refers to the first-generation Roadster, while the second resulted in the Model S and the third provided the Model 3. When it was announced, the entry-level Model 3 was US$35,000, but the only cars available at launch were $52,000; some Model 3s were sold at the $35K target, but by special order only and for a limited time. For the second "Master Plan" (2016), Tesla stated it would "expand the electric vehicle product line to address all major segments", which included products that have been released by 2024, such as sport-utility vehicles (Models X and Y), pickup trucks (Cybertruck), and commercial trucks (Semi). The Semi has had a slow launch and other vehicles promised in 2016, including a bus, second-generation Roadster, and lower-cost Tesla were yet to materialize by early 2023.
+Tesla has made public statements about another mainstream electric car product that would follow the Model Y and would be considerably cheaper than the Model 3. By September 2022, Elon Musk had reluctantly accepted the recommendation of Tesla executives Franz von Holzhausen and Lars Moravy that the next-generation vehicle platform could support both a small, inexpensive, mass-market car—as well as a self-driving "Robotaxi" that would be built with no steering wheel at all—and that both could be manufactured on the same next-generation vehicle assembly line. By October 2022, the company stated that the Tesla engineering team had turned its focus to it and that it would be half the price of the Model 3/Y platform.
+
+Design and schedule
+The automotive media frequently refers to the car as the "$25,000 Tesla," but the time when it would come to market has consistently been unclear. The next-generation platform was mentioned in Tesla's 2022 financial report as under development but provided no information about specific cars that might be built on the platform.
+During its March 2023 Investor Day event, Tesla revealed its third "Master Plan", which included more details on forthcoming models, including a compact vehicle with LiFePO4 battery chemistry. The company clarified that the powertrains would be built faster and without using any rare-earth materials despite being more efficient and cheaper to build. However, power, torque and speed were not discussed. The design for the platform was stated to require 75% less silicon carbide than existing Tesla vehicles, would support any battery chemistry, and that various manufacturing synergies would enable a halving of the factory footprint. The drive unit is expected to cost approximately $1000 and contain no rare earth minerals. All controllers would be designed by Tesla. A shrouded, "clearly smaller" vehicle was shown during the presentation. At the annual "Cyber Roundup" shareholders' meeting in May 2023, Musk said that Tesla was "actually building a new product. We are actually designing a new product. We're not just sitting on our hands here", showing off a rendered silhouette.
+After the fourth quarter 2023 earnings call, Tesla provided a preliminary schedule to its suppliers as part of a request for bids, stating that it planned to begin production of a new vehicle at Gigafactory Texas in mid-2025, with a production forecast of 10,000 vehicles per week. During the next quarterly earnings call, the company announced that production could begin as soon as late 2024, using processes developed for NV9X, on a platform derived from existing vehicles.
+Reuters reported in early 2024 that the platform was codenamed "Redwood", using an architecture internally referred to as "NV9X".
+
+Assembly process
+The company also announced that the vehicle would use the "Unboxed Process," a method of assembly allowing workers to build large sub-assemblies of the vehicle in parallel before bringing them together for final assembly. Compared to the traditional assembly line method, the approach enables more people or robots to work on the vehicle simultaneously, speeding assembly and allowing fewer vehicle parts to be painted, reducing costs.
+In March 2023, Tesla said the Gigafactory Mexico facility would be used to build Tesla's next-generation vehicle and subsequent vehicles on the same platform. The factory for the vehicle was placed in Mexico in an effort to keep assembly costs low, and Tesla has been encouraging suppliers to open facilities nearby, because it did not want to pay to import parts to Mexico. However, in May 2023, Musk "decided to change the initial build location for the next-generation cars and Robotaxis to Austin" where more of Tesla's most experienced engineers could be located adjacent to the "new high-speed ultra-automated assembly line." and this information became public in September 2023.
+Detailed design of the assembly line work stations was underway by mid-2023.  By July, public information became available that Tesla had submitted a proposal to the Government of India to potentially construct a Gigafactory in the country for manufacturing a Tesla car for the price of ₹2,000,000 (about US$24,400 at the 2023 exchange rate) with an annual capacity of 500,000. In November 2023, Reuters reported that Tesla planned to also produce the car at Gigafactory Berlin-Brandenburg.
+
+Pivot to robotaxi
+Reuters published an article on April 5, 2024, claiming that per internal sources, Tesla has canceled plans to market a low-cost car to consumers and instead intends to use the chassis as the basis for a robotaxi. According to an analyst for Axios, "Cheap EVs are hard for American companies to make, [...] but they're simply table stakes these days."
+Elon Musk posted to social media on April 6, 2024, stating that a robotaxi would be unveiled on August 8 of that year. As per Max Chafkin in a Bloomberg Businessweek article, it is presumed that Elon Musk probably has traded the affordable Tesla for a robotaxi. Based in part on the company predictions made in 2019 regarding robotaxi deployment, as well as the historical delays between prototype and production Tesla vehicles, CleanTechnica had warned that even with the unveiling, the Tesla robotaxi may not be available commercially until 2025 or later, which was subsequently confirmed by the company.
+On October 10, 2024, at the Tesla "We, Robot" unveiling event in California, Tesla referred to the new autonomous passenger car as both the Robotaxi and as the Cybercab, demonstrating 20 concept vehicles driving around the private property of the Warner Brothers Studio lot, and also showed a single concept of a Tesla Robovan, that will be able to carry up to 20 passengers. The Cybercab will not start production before 2026 at the earliest.
+On 22 June 2025 Tesla launched their commercial taxi service Tesla Robotaxi to a small group of invited users in Austin, Texas using Model Y vehicles. While no one was in the driver's seat, a Tesla employee was still present in the front passenger seat for safety reasons.
+
+See also
+List of production battery electric vehicles
+
+References

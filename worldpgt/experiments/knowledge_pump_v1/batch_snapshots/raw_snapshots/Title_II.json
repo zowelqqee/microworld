@@ -1,0 +1,15 @@
+{
+  "title": "Title II",
+  "normalized_title": "Title II",
+  "pageid": 53596778,
+  "revision_id": 1298311185,
+  "timestamp": "2025-07-01T18:33:59Z",
+  "source_url": "https://en.wikipedia.org/wiki/Title_II",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Title+II",
+  "retrieved_at": "2026-06-15T12:36:13Z",
+  "raw_text": "Title II may refer to:\n\nPatriot Act, Title II\nTitle II of the Communications Act of 1934\nTitle II of the Civil Rights Act of 1964\nTitle II of the Elementary and Secondary Education Act\nTitle II of the Americans with Disabilities Act\nTitle II weapons\nTitle 2 of the United States Code\nTitle 2 of the Code of Federal Regulations",
+  "raw_text_sha256": "c669d682bc056a4a5edb7057f0d240d0621172e0eb509e271997818356cd318c",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

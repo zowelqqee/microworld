@@ -1,0 +1,75 @@
+# Fidelity Investments
+
+Source: https://en.wikipedia.org/wiki/Fidelity_Investments
+Retrieved at: 2026-06-17T17:20:38Z
+Revision ID: 1358467358
+Raw text SHA256: 135452f0c06c1ab71eb64a466fabdaa477474d2865077e72ed1ec7fc210962af
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Fidelity Investments, formerly known as Fidelity Management & Research (FMR), is an American financial services company. Established in 1946, the company is one of the largest asset managers in the world, with $5.9 trillion in discretionary assets under management, and $15.1 trillion in assets under administration, as of December 2024.
+Fidelity operates a brokerage firm; manages mutual funds, index funds, and wealth management; and provides fund distribution, retirement services, securities execution and clearance, asset custody, and life insurance. It also offers brokerage clearing software products for financial services firms.
+
+History
+The Fidelity Fund incorporated in Massachusetts on May 1, 1930, with Edward C. Johnson II serving as president. The corporate structure changed in 1946 and became known as Fidelity Management & Research (FMR).
+In 1969, the company formed Fidelity International (FIL) to serve non-U.S. markets and subsequently spun it off in 1980 into an independent entity owned by its employees.
+In 1982, the company began offering 401(k) products, followed by computerized stock trading offerings in 1984.
+In the 1990s, Fidelity launched its first commercial donor-advised fund, became the first mutual fund company to offer a webpage, and appointed Robert Pozen as CEO.
+In September 2003, the company launched its first exchange-traded fund, the Fidelity Nasdaq Composite Index Tracking Stock Fund (ONEQ). The company acquired Wealth Lab the following year, which was laterdecommissioned in 2020.
+In 2007, the company changed its legal structure to a limited liability company, with FMR LLC becoming the owning entity. Fidelity Ventures, its venture capital arm, was shut down in 2010.
+In 2014, Abigail Johnson became president and CEO of Fidelity Investments (FMR) as well as chairman of Fidelity International (FIL). She reduced dependence on open-ended mutual funds, instead having the company focus on financial advice, brokerage services, and venture capital.
+In September 2019, Fidelity completed the corporate spin-off of Eight Roads Ventures, its venture capital division.
+In January 2023, Fidelity acquired Shoobx, a provider of automated equity management operations and financing software which was folded into Fidelity’s Stock Plan Services business.
+In April 2026, Fidelity was named amongst “America’s Most Trustworthy Companies” by Newsweek.
+
+Operations
+Fidelity operates a brokerage firm; manages mutual funds, index funds, and wealth management; and provides fund distribution, retirement services, securities execution and clearance, asset custody, and life insurance. It also offers brokerage clearing software products for financial services firms. It also offers a donor-advised fund, Fidelity Charitable, for clients seeking to donate securities. It processes 3.5 million daily average trades and is one of the largest providers of 401(k) plans and manages employee benefit programs for more than 28,800 businesses.
+Abigail Johnson, granddaughter of founder Edward C. Johnson II, and her family and their affiliates own a roughly 40% interest in the company. The remainder is owned by current and former executives.
+The company also makes investments on its own account for the benefit of the founding family and its executives. Investments have included Seaport Center and 2.5 million square feet of office space in Boston; COLT Telecom Group; MetroRed; Community Newspaper Company; Lanoga; Hope Lumber; ProBuild; and Boston Coach.
+
+Cryptocurrency
+In 2018, Fidelity launched Fidelity Digital Asset Services, a separate entity dedicated to institutional crypto asset custody and cryptocurrency trading, and introduced mutual funds with no mutual fund fees and expenses. Fidelity launched cryptocurrency trading to institutional customers the following year.
+In April 2022, Fidelity began offering Bitcoin as an investment option in 401(k) plans to participants whose employers elected to include it in their plan.
+After receiving approval in 2024, Fidelity was one of several issuers that launched a spot Bitcoin and Ethereumexchange-traded fund (ETF)
+In April 2025, Fidelity launched no-fee cryptocurrency trading in individual retirement accounts.
+Fidelity announced that it would launch its own stablecoin, the Fidelity Digital Dollar (FIDD), in February 2026. The coin will premiere on the Ethereum network.
+
+Notable mutual funds
+Fidelity has three fund divisions: Equity (headquartered in Boston, Massachusetts), High-Income (headquartered in Boston) and Fixed-Income (headquartered in Merrimack, New Hampshire).
+
+Fidelity Contrafund
+The company's largest equity mutual fund is Fidelity Contrafund, which has $145 billion in assets, making it the largest actively managed mutual fund in the U.S. William Danoff has managed Contrafund since 1990.
+
+Fidelity Magellan
+Fidelity Magellan has $25 billion in assets. Its current manager is Jeffrey Feingold, who also manages the Fidelity Trend Fund. It was founded by Ned Johnson in 1963 as the Fidelity International Fund and was renamed the Magellan Fund in 1965. The early sales staff of the Magellan Fund were mostly part-time, traveling employees until the 1973–1974 stock market crash led to a severe decline in interest. Magellan was managed by Johnson from May 2, 1963, to December 31, 1971, Lynch from May 31, 1977, to May 31, 1990, and Harry W. Lange from 2005 to 2012. Under Lynch's leadership Magellan averaged a 29% annual return, more than doubling the growth rate of the S&P 500, making it the best-performing mutual fund in history over such an extended period.
+
+Legal issues and controversies
+
+Conflict of interest with employee/owners' personal investments
+Owners and employees of the company are able to invest in pre-IPO startup companies via the company's subsidiary, F-Prime Capital Partners. An investigation by Reuters in 2016 identified multiple cases where F-Prime Capital Partners was able to make investments in shares at a fraction of the price later paid by funds managed by Fidelity Investments. Because of  regulations, the funds are not allowed to make the same early venture capital investments as F-Prime Capital Partners. However, the funds allegedly made large investments in companies after they go public in which shares are already owned by Fidelity employees via F-Prime Capital Partners. An example included William Danoff's personal purchase of shares of Alibaba Group for 7 cents each; many shares were later purchased by the fund he manages. While the practice is not illegal, it poses a corporate conflict of interest. The same Reuters investigation documents six cases (out of 10) where Fidelity Investments became one of the largest investors of F-Prime Capital companies after the start-up companies became publicly traded. Legal and academic experts said that major investments by Fidelity mutual funds - with their market-moving buying power - could be seen as propping up the values of the investments made by F-Prime Capital, to the benefit of Fidelity insiders.
+
+Document retention fines
+In February 2007, the NASD, a division of the Financial Industry Regulatory Authority, fined four FMR-affiliated broker-dealers $3.75 million for alleged registration, supervision and e-mail retention violations. The broker-dealers settled without admitting or denying the charges.
+In 2004, Fidelity Brokerage paid $2 million to settle charges by the U.S. Securities and Exchange Commission that employees altered and destroyed documents in 21 of its 88 branch offices between January 2001 and July 2002. Fidelity has internal inspections every year to make sure it is complying with federal regulations. Management was accused of pressuring branch employees to have perfect inspections and gave notice of the inspections and that at least 62 employees destroyed or altered potentially improper documents maintained at branch offices including new account applications, letters of authorization and variable annuity forms.
+
+Misrepresentations
+In May 2007, NASD fined two Fidelity broker-dealers $400,000 for preparing and distributing misleading sales literature promoting Fidelity's Destiny I and II Systematic Investment Plans, which were sold primarily to U.S. military personnel. As part of the settlement, the FMR affiliates were required to notify Destiny Plan holders that additional shares of the underlying fund can be purchased without paying additional sales charges.
+
+Employee stealing from clients
+In January 2025, the company was fined $600,000 by the Financial Industry Regulatory Authority for lax supervision after an employee stole $750,000 from the accounts of 37 international clients over an eight year period from 2012 to 2020.
+
+Tardy processing
+In May 2025, the company was fined and censured by federal regulators for taking weeks to complete certain customer transactions that should have taken days.
+
+Accepting gifts from brokerages
+In December 2006, the company was fined $42 million after some employees accepted gifts from salespeople of Jefferies Group in violation of the company's policies. The firm was fined an additional $3.75 million in February 2007 and $8 million in 2008. Gifts included private chartered flights, tickets to the 2004 Super Bowl, Wimbledon Championships and the US Open tennis tournament; tickets to Justin Timberlake, U2, and Christina Aguilera concerts; and high-end wines such as 1993 Château Pétrus.
+
+See also
+List of mutual funds in the United States by assets under management
+List of electronic trading platforms
+
+References
+
+External links
+Official website
+Media related to Fidelity Investments at Wikimedia Commons

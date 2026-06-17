@@ -1,0 +1,64 @@
+# Christian Lacroix
+
+Source: https://en.wikipedia.org/wiki/Christian_Lacroix
+Retrieved at: 2026-06-17T20:46:36Z
+Revision ID: 1357241042
+Raw text SHA256: 30498dd8c7ff4472b0c02cda60abf4498c7c79c0115598401efe0739568ab1cc
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Christian Marie Marc Lacroix (French pronunciation: [kʁistjɑ̃ lakʁwa]; born 16 May 1951) is a French fashion designer. The name also refers to the company he founded.
+Lacroix's designs combine luxury and insouciance. He prefers artisanal trades, fringe, bead, and embroidery. He's characterized by a strong sense of colour, and patterns mix.
+
+Early life and education
+Lacroix was born in Arles, Bouches-du-Rhône in southern France. At a young age he began sketching historical costumes and fashions. Lacroix graduated from secondary school in 1969 and moved to Montpellier, to study art history at the University of Montpellier. In 1971, he enrolled at the Sorbonne in Paris. While working on a dissertation on dress in French 18th-century painting, Lacroix also pursued a program in museum studies at the École du Louvre. His aspiration during this time was to become a museum curator. It was during this time he met his future wife Françoise Rosenthiel, whom he married in 1974.
+
+Early beginnings
+From 1985 to 1987, Lacroix worked at the Paris couture house of Jean Patou.
+
+Christian Lacroix
+
+History
+
+In 1987, Lacroix opened his own eponymous haute couture house, backed by $8 million from Financière Agache. He began putting out ready-to-wear in 1988 drawing inspiration from diverse cultures. Critics commented that he did not seem to understand the type of clothing the working woman needed. In 1989, Lacroix launched jewelry, handbags, shoes, glasses, scarves, and ties (along with ready-to-wear). Italian manufacturer Genny was licensed to manufacture and distribute the line. The same year, the brand opened boutiques within Paris, Arles, Aix-en-Provence, Toulouse, London, Geneva, and Japan.
+With his background in historical costume and clothing, Lacroix soon made headlines with his opulent, fantasy creations, including the short puffball skirt ("le pouf"), rose prints, and low décolleté necklines. He referenced widely from other styles—from fashion history (the corset and the crinoline), from folklore, and from many parts of the world—and he mixed his references in a topsy-turvy manner. He favored the hot colors of the Mediterranean region, a hodgepodge of patterns, and experimental fabrics, sometimes handwoven in local workshops. He is known for his theatrical style which came from his work while in the theatre. This usually shows up with his use of colour in the collections he designs. Fashion historians have often associated Lacroix with the resurgence of extravagant haute couture aesthetics during the late 1980s, in contrast to the minimalist trends that dominated much of the decade.
+From 1987 to its purchase from LVMH by Falic Fashion Group in 2005, the fashion house had cumulative losses of more than €44 million.
+In 2009, Falic Fashion Group put the business into administration and laid off all but 12 workers. The company's turnaround plan consisted of closing down Lacroix's haute couture and pret-a-porter activities, while keeping the licensing contracts for accessories and perfume. Lacroix's A/W 2009 Haute Couture was privately financed by Lacroix and each model was paid €50. "I didn't want to cry," said Lacroix "I want to continue, maybe in a different way, with a small atelier. What I really care about is the women who do this work" Lacroix said about his last Haute Couture collection. Throughout its history, it never turned a profit and reported a €10 million loss in 2008. At the time, news media reported about potential investors – including Ali Al-Naimi – but all failing to give financial guarantees in time for the courts to approve a takeover.
+He is known for his theatrical style which came from his work while in the theatre. This usually shows up with his use of colour in the collections he designs. Along with this, he is also known for his 'le pouf' dress (featuring the ball skirt).
+Christian Lacroix has designed many dresses for Hollywood stars; among them, he was responsible for designing Christina Aguilera's wedding dress and in the 1990s was famed as being a favourite designer of Edina Monsoon in the UK sitcom Absolutely Fabulous (for which the house drew dubious credit).
+In 2025, Spain's Sociedad Textil Lonia (STL) acquired the Christian Lacroix fashion house for an undisclosed sum.
+
+Diffusion lines
+
+His collections during 1994 were based on old culture and folklore, as well as fables and the past. In 1995, he launched a towel line which contained a fashion and lifestyle side, which represent how the two intertwine ("two sides of the same coin").
+From 1996 to 2006, the brand operated the Christian Lacroix Jeans diffusion line. He included past traditions from all around the world, continuing the line with even more on ethnic arts.
+In 2000 he finished a line of novelty accessories which included semi-precious jewelry.
+In 2001, Lacroix also launched a children's line.
+In 2004, Lacroix launched a lingerie for women line, as well as a menswear line.
+
+Collaborations
+In 1997, the Art de la Table line was launched by Lacroix in partnership with Christofle. A licensing agreement was also reached in this year with Pronuptian in which he could launch his Christian Lacroix Marriage line.
+In 2007, Christian Lacroix designed a festive, limited-edition bottle for French mineral water brand Evian.
+In 2011, Lacroix started collaborating with the Barcelona-based clothing brand Desigual.
+In 2013, Diego Della Valle hired Lacroix to create a collection for Maison Schiaparelli, though it failed to materialize.
+
+Cosmetics
+In 1999, Lacroix launched the brand's first line of floral perfume. In 2002, the brand launched another perfume, Bazar, created by Bertrand Duchaufour, Jean-Claude Ellena and Emilie Copperman.
+For Winter 2007, Lacroix partnered with Avon cosmetics to introduce a new fragrance exclusive to Avon called Christian Lacroix Rouge for women (plus body lotion and shower gel) and Christian Lacroix Noir for men (plus after shave lotion and shower gel). His Avon product line was expanded with the release of Christian Lacroix Absynthe in the Spring of 2009, Christian Lacroix Absynthe For Him in the autumn of 2009, Christian Lacroix Nuit in fall 2011 and Christian Lacroix Nuit For Him in winter 2011, Christian Lacroix Ambre for Her and Christian Lacroix Ambre for Him in winter 2014, Christian Lacroix Bijou for Her and Christian Lacroix Bijou for Him in fall 2015.
+
+Other activities
+
+Emilio Pucci, 2002–2005
+Lacroix served as the Creative Director for the Italian fashion house Emilio Pucci from 2002 to 2005.  He left on agreeable terms as he and the house believed that since he had other pursuits, it would be unfair to the house to not put in the energy required for future collections along with his other work.
+
+XCLX, 2005–present
+Through his XCLX company which was established in 2005, Lacroix created décor for the French TGV high-speed train. Also with XCLX, he was the designer of the new uniform of Air France staff and crew in 2004 and pyjamas signed by him are handed out to passengers travelling on Air France First Class (L'Espace Premier). The firm completed interior design work at several landmark hotels, including the Hotel Le Petit Moulin in Spring, 2005; the Hotel Bellechasse, right in the heart of Saint-Germain-des-Prés (Paris), in 2007 (a member of Small Luxury Hotels of the World); and in 2010 Le Notre Dame hotel just a step from the cathedral Notre-Dame-de-Paris, as well as Hotel l'Antoine near the Bastille area in Paris.
+
+Costume design
+Lacroix's costume designs for the opera, theatre, dance and music were displayed at the exhibition "Christian Lacroix Costumier" at the National Museum of Singapore from March to June 2009. In 2022, he produced the costumes for the Marc-Antoine Charpentier's opéra David et Jonathas, performed at the Château de Versailles, France.
+
+References
+
+External links
+
+20 years of the House of Lacroix

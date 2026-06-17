@@ -143,6 +143,10 @@ _PRODUCES_RE = re.compile(
     r"what\s+does\s+(.+?)\s+(produce|develop|publish|manufacture)s?\b",
     re.IGNORECASE,
 )
+_REPORT_PUBLISH_RE = re.compile(
+    r"(?:which|what)\s+reports?\s+does\s+(.+?)\s+publish(?:\s+annually)?[\?.]?$",
+    re.IGNORECASE,
+)
 _PRODUCTS_MAKE_RE = re.compile(
     r"what\s+products?\s+does\s+(.+?)\s+(?:make|produce|manufacture|build)s?\b",
     re.IGNORECASE,
@@ -151,12 +155,28 @@ _FOUNDED_BY_RE = re.compile(
     r"who\s+founded\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
+_WAS_FOUNDED_BY_RE = re.compile(
+    r"who\s+was\s+(.+?)\s+founded\s+by[\?.]?$",
+    re.IGNORECASE,
+)
 _FOUNDER_OF_RE = re.compile(
     r"who\s+(?:is|are|was|were)\s+the\s+founders?\s+of\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 _FOUNDERS_OF_RE = re.compile(
     r"who\s+(?:were|are|was)\s+(.+?)'s\s+founders?\b",
+    re.IGNORECASE,
+)
+_FOUND_SUBJECT_RE = re.compile(
+    r"(?:what|which)\s+(?:company\s+)?did\s+(.+?)\s+found[\?.]?$",
+    re.IGNORECASE,
+)
+_OWNS_RE = re.compile(
+    r"(?:who|what\s+company)\s+owns\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_OWNED_BY_RE = re.compile(
+    r"who\s+is\s+(.+?)\s+owned\s+by[\?.]?$",
     re.IGNORECASE,
 )
 
@@ -177,6 +197,22 @@ _DEFINE_KIND_RE = re.compile(
     r"^what\s+(?:kind|type|sort)\s+of\s+.+?\s+is\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
+_DEFINE_RE = re.compile(
+    r"^define\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+
+# ---- passive develops ("What is developed by X?") -------------------
+_PASSIVE_DEVELOPS_RE = re.compile(
+    r"^what\s+(?:is|was)\s+(developed|produced|published)\s+by\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+
+_PASSIVE_VERB_PREDICATE: dict[str, str] = {
+    "developed": "develops",
+    "produced": "produces",
+    "published": "publishes",
+}
 
 # verb -> predicate mapping
 _VERB_PREDICATE: dict[str, str] = {
@@ -469,6 +505,19 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         )
 
     # 9. Relation — produces/develops/publishes
+    m = _REPORT_PUBLISH_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="publishes",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     m = _PRODUCTS_MAKE_RE.search(q)
     if m:
         return AnalyzedEntityQuestion(
@@ -502,6 +551,7 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         _FOUNDER_OF_RE.search(q)
         or _FOUNDERS_OF_RE.search(q)
         or _FOUNDED_BY_RE.search(q)
+        or _WAS_FOUNDED_BY_RE.search(q)
     )
     if m:
         return AnalyzedEntityQuestion(
@@ -515,14 +565,56 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
-    # 10b. Define entity — paraphrases ("Tell me about X", "What kind of ... is X")
-    m = _DEFINE_KIND_RE.match(q) or _DEFINE_TELL_RE.match(q)
+    m = _FOUND_SUBJECT_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="founded",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    m = _OWNS_RE.search(q) or _OWNED_BY_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="owned_by",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 10b. Define entity — paraphrases ("Define X", "Tell me about X", "What kind of ... is X")
+    m = _DEFINE_RE.match(q) or _DEFINE_KIND_RE.match(q) or _DEFINE_TELL_RE.match(q)
     if m:
         return AnalyzedEntityQuestion(
             question=q,
             intent="define_entity",
             subject=_clean(m.group(1)),
             predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    # 10c. Passive develops — "What is developed by X?" (must precede _WHAT_IS_RE)
+    m = _PASSIVE_DEVELOPS_RE.match(q)
+    if m:
+        verb = m.group(1).lower()
+        predicate = _PASSIVE_VERB_PREDICATE.get(verb, "develops")
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(2)),
+            predicate_hint=predicate,
             secondary_entity=None,
             source_hint=None,
             is_current_query=False,
@@ -570,7 +662,7 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
 
 
 def _clean(s: str) -> str:
-    return s.strip().rstrip("?.").strip()
+    return re.sub(r"^(?:the|a|an)\s+", "", s.strip().rstrip("?.").strip(), flags=re.IGNORECASE)
 
 
 def _extract_subject_from_current(q: str) -> Optional[str]:

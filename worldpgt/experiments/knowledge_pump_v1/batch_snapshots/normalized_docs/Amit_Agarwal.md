@@ -1,0 +1,22 @@
+# Amit Agarwal
+
+Source: https://en.wikipedia.org/wiki/Amit_Agarwal
+Retrieved at: 2026-06-17T20:45:03Z
+Revision ID: 1359066619
+Raw text SHA256: 41a19bf2b16018c312cd6787e5b17c638b774131de4b9784c6a1d264c8983579
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Amit Agarwal formerly served as Solicitor General of Florida, an office he held since June 2016. In October 2021, Agarwal joined the law firm of Holland & Knight as a partner.
+As Solicitor General, Agarwal represented the State of Florida in the Supreme Court of the United States and the Florida Supreme Court and supervised appellate litigation for the State in lower state and federal appellate courts.  He also holds the Richard W. Ervin Eminent Scholar Chair at the Florida State University College of Law, where he teaches a seminar course on the constitutional separation of powers.
+Agarwal grew up in South Florida and earned his B.A. in English from Duke University before attending the Georgetown University Law Center, where he graduated magna cum laude and was selected as Editor-in-Chief of the American Criminal Law Review.
+After law school, Agarwal worked as an associate at Wilmer Hale in Washington, DC. He then served as a law clerk for three federal appellate judges: the Hon. Samuel A. Alito, Jr. and the Hon. Edward R. Becker, on the U.S. Court of Appeals for the Third Circuit, and the Hon. Brett M. Kavanaugh on the U.S. Court of Appeals for the District of Columbia Circuit.
+Agarwal has worked for the U.S. Department of Justice under both Democratic and Republican administrations.  From 2007 to 2009, he served as an attorney advisor in the Office of Legal Counsel during the administrations of President George W. Bush and President Barack Obama.  He left the office in the summer of 2009 to clerk for Justice Alito on the Supreme Court of the United States.
+After his clerkship with Justice Alito, from 2010 to 2016, Agarwal worked as an Assistant U.S. Attorney at the U.S. Attorney's Office for the Southern District of Florida. During that time, Agarwal served as an AUSA in the Major Crimes Section and the Appellate Division before being promoted to Deputy Chief of the Appellate Division. In 2015, he was selected as a “Rising Star” (“40 under 40”) in the South Florida legal community by the Daily Business Review.  In 2016, Agarwal received a “Director’s Award” from the U.S. Department of Justice for superior performance as an AUSA in the field of appellate litigation.
+Agarwal was appointed Solicitor General of Florida in June 2016.  During his tenure as SG, the office has significantly expanded its portfolio as well as its size, growing from 5 to 10 attorneys.  In 2019, the North American South Asian Bar Association selected him as a recipient of the “Cornerstone Award.”
+He lives in Tallahassee with his wife (Shalini Goel Agarwal, an attorney for the Southern Poverty Law Center) and their two boys.
+
+See also
+List of law clerks for the eighth seat of the Supreme Court of the United States
+
+References

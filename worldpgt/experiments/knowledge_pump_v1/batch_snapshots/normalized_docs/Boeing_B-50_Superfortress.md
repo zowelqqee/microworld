@@ -1,0 +1,184 @@
+# Boeing B-50 Superfortress
+
+Source: https://en.wikipedia.org/wiki/Boeing_B-50_Superfortress
+Retrieved at: 2026-06-17T20:45:28Z
+Revision ID: 1354391777
+Raw text SHA256: 8e3c927effd2695aa73281a6f16b99dd1fcce8a30b9e63bbd9af18852300a311
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Boeing B-50 Superfortress is a retired American strategic bomber. A post–World War II revision of the Boeing B-29 Superfortress, it was fitted with more powerful Pratt & Whitney R-4360 radial engines, stronger structure, a taller tail fin, and other improvements. It was the last piston-engined bomber built by Boeing for the United States Air Force, and was refined into Boeing's final such design, the prototype B-54. Although not as well known as its direct predecessor, the B-50 was in USAF service for nearly 20 years.
+After their primary service with Strategic Air Command (SAC) ended, B-50s were modified to serve as KB-50 aerial tankers for Tactical Air Command (TAC) and WB-50 weather reconnaissance aircraft for the Air Weather Service. These tanker and hurricane-hunter variants were retired in March 1965 after metal fatigue and corrosion were found in the wreckage of a KB-50J, 48-065, that crashed on 14 October 1964.
+
+Design and development
+
+Development of an improved B-29 started in 1944, with the desire to replace the unreliable Wright R-3350 Duplex-Cyclone engines with the more powerful four-row, 28-cylinder Pratt & Whitney R-4360 Wasp Major radial engines, America's largest-ever displacement aircraft piston engine in large-scale production. A B-29A-5-BN (serial number 42-93845) was modified by Pratt & Whitney as a testbed for the installation of the R-4360 in the B-29, with four 3,000-horsepower (2,200 kW) R-4360-33s replacing the 2,200-horsepower (1,600 kW) R-3350s. The modified aircraft, designated XB-44 Superfortress, first flew in May 1945.
+The planned Wasp-Major powered bomber, the B-29D, was to incorporate considerable changes in addition to the engine installation tested in the XB-44. The use of a new alloy of aluminum, 75-S rather than the existing 24ST, gave a wing that was both stronger and lighter, while the undercarriage was strengthened to allow the aircraft to operate at weights of up to 40,000 pounds (18,000 kg) greater than the B-29. A larger vertical fin and rudder (which could fold to allow the aircraft to fit into existing hangars) and enlarged flaps were provided to deal with the increased engine power and weight, respectively.
+Armament was similar to that of the B-29, with two bomb bays carrying 20,000 pounds (9,100 kg) of bombs, and a further 8,000 pounds (3,600 kg) externally. Defensive armament was 13 × 12.7 mm (.50 BMG) machine guns (or 12 machine guns and one 20 mm (0.8 in) cannon) in five turrets.
+First flying in May 1945, the sole XB-44 proved 50–60 mph (80–100 km/h) faster than the standard B-29, although existing sources do not indicate how much of this increased speed was due to differing aircraft weight due to deleted armament or increased power due to the R-4360-33 engines.
+An order for 200 B-29Ds was placed in July 1945, but the ending of World War II in August 1945 prompted mass cancellations of outstanding orders for military equipment, with over 5,000 B-29s canceled in September 1945. In December that year, B-29D orders were cut from 200 to 60, while at the same time the designation of the aircraft was changed to B-50.
+Officially, the aircraft's new designation was justified by the changes incorporated into the revised aircraft, but according to Peter M. Bowers, a long-time Boeing employee and aircraft designer and a well-known authority on Boeing aircraft, "the re-designation was an outright military ruse to win appropriations for the procurement of an airplane that by its B-29D designation appeared to be merely a later version of an existing model that was being canceled wholesale, with many existing examples being put into dead storage."
+The first production B-50A (there were no prototypes, as the aircraft's engines and new tail had already been tested) made its maiden flight on 25 June 1947. 78 more B-50As followed. The last airframe of the initial order was held back for modification to the prototype YB-50C, a planned version to be powered by R-4360-43 turbo-compound engines. It was to have a longer fuselage, allowing the two small bomb bays of the B-29 and the B-50A to be replaced by a single large bomb bay, more suited to carrying large nuclear weapons. It would also have longer wings, which required additional outrigger wheels to stabilize the aircraft on the ground.
+Orders for 43 B-54s, the planned production version of the YB-50C, were placed in 1948, but Curtis LeMay, commander of Strategic Air Command (SAC), deemed it inferior to the Convair B-36 Peacemaker and having little capacity for further improvement, while requiring an expensive redevelopment of air bases owing to the type's undercarriage. The B-54 program was therefore canceled in April 1949, with work on the YB-50C being stopped before it was completed.
+While the B-54 was canceled, production of less elaborate developments continued as a stopgap until jet bombers such as the Boeing B-47 and B-52 could enter service. Forty-five B-50Bs, fitted with lightweight fuel tanks and capable of operating at higher weights, were built, followed by 222 B-50Ds, capable of carrying underwing fuel tanks and distinguished by a one-piece plastic nose dome.
+To give the Superfortress the range to reach the Soviet Union, B-50s were fitted to be refueled in flight. Most of the B-50As were fitted with the early "looped hose" refueling system, developed by the British company Flight Refuelling Limited, in which the receiving aircraft would use a grapple to catch a line trailed by the tanker aircraft (normally a Boeing KB-29) before hauling over the fuel line to allow transfer of fuel to begin. To replace this clumsy system, Boeing designed the "flying boom" method to refuel SAC's bombers, with most B-50Ds being fitted with receptacles for flying boom refueling.
+Revisions to the B-50 (from its predecessor B-29) increased top speed to just under 400 miles per hour (640 km/h). Changes included:
+
+More powerful engines
+Redesigned engine nacelles and engine mounts
+Enlarged vertical tail and rudder (to maintain adequate yaw control during engine-out conditions)
+Reinforced wing structure (required due to increased engine mass, larger gyroscopic forces from larger propellers, greater fuel load, and revised landing gear loading)
+Revised routing for engine gases (cooling, intake, exhaust and intercooler ducts; also oil lines)
+Upgraded remote turret fire-control equipment
+Landing gear strengthened and takeoff weight increased from 133,500 to 173,000 pounds (60,600 to 78,500 kg)
+Increased fuel capacity with underwing fuel tanks being added.
+Improvements to flight control systems (the B-29 was difficult to fly; with increased weights the B-50 would have been more so).
+Nose wheel steering rather than a castering nose wheel as on the B-29
+The C-97 military transport was, in its 1944 prototype, essentially a large upper fuselage tube attached to a B-29 lower fuselage and wings, with an inverted figure-eight cross-section. In its production version it incorporated the key elements of the B-50 platform including, after the first 10 in production, the enlarged tailfin of the B-50. The B-29 and B-50 were phased out with introduction of the jet-powered Boeing B-47 Stratojet. The B-50 was nicknamed "Andy Gump", because the redesigned engine nacelles reminded aircrew of the chinless newspaper comic character popular at the time.
+
+Operational history
+
+Boeing built 370 of the various B-50 models and variants between 1947 and 1953, the tanker and weather reconnaissance versions remaining in service until 1965.
+The first B-50As were delivered in June 1948 to the Strategic Air Command's 43d Bombardment Wing, based at Davis–Monthan Air Force Base, Arizona. The 2d Bombardment Wing at Chatham Air Force Base, Georgia also received B-50As; the 93d Bombardment Wing at Castle Air Force Base, California and the 509th Bombardment Wing at Walker Air Force Base, New Mexico received B-50Ds in 1949. The fifth and last SAC wing to receive B-50Ds was the 97th Bombardment Wing at Biggs Air Force Base, Texas in December 1950.
+The mission of these wings was to be able to deliver atomic bombs on enemy targets.
+B-50s from the 4925th Special Weapons Group of Kirtland Air Force Base in Albuquerque, New Mexico dropped atomic bombs in a series of tests in Frenchman Flat, Nevada from 1951 to 1953.
+The 301st Bombardment Wing at MacDill Air Force Base, Florida received some B-50As reassigned from Davis–Monthan in early 1951, but used them for non-operational training pending the delivery of B-47A Stratojets in June 1951. The B-50 was built as an interim strategic bomber to be replaced by the B-47 Stratojet, but delays to the Stratojet forced the B-50 to soldier on until well into the 1950s.
+A strategic reconnaissance version of the B-50B, the RB-50 was developed in 1949 to replace the aging RB-29s used by SAC in its intelligence-gathering operations against the Soviet Union. Three different configurations were produced, which were later redesignated RB-50E, RB-50F, and RB-50G. The RB-50E was earmarked for photographic reconnaissance and observation missions; The RB-50F resembled the RB-50E but carried the SHORAN radar navigation system designed to conduct mapping, charting, and geodetic surveys, and the mission of the RB-50G was electronic reconnaissance. These aircraft were operated primarily by the 55th Strategic Reconnaissance Wing. RB-50Es were also operated by the 91st Strategic Reconnaissance Wing as a replacement for RB-29 photographic reconnaissance aircraft flown over North Korea during the Korean War.
+The vast northern borders of the Soviet Union were wide open in many places during the early Cold War years, with little defensive radar coverage and limited detection capability. RB-50 aircraft of the 55th SRW flew many sorties along the periphery and, where necessary, into the interior. Initially, there was little opposition from the Soviet forces as radar coverage was limited and, if the overflying aircraft were detected, the World War II-era Soviet fighters could not intercept the RB-50s at their high altitude.
+The deployment of the MiG-15 interceptor in the early 1950s made these flights exceedingly hazardous, with several being shot down by Soviet air defenses and the wreckage being examined by intelligence personnel. RB-50 missions over Soviet territory ended by 1954, replaced by the RB-47 Stratojet intelligence aircraft that could fly higher at near-supersonic speed.
+The B-47 Stratojet was manufactured in large numbers beginning in 1953 and eventually replaced the B-50Ds in SAC service; the last being retired in 1955. With its retirement from the nuclear-bomber mission, many B-50 airframes were converted to aerial refueling tankers.
+The B-50, with more powerful engines than the KB-29s in use by Tactical Air Command (TAC), was much more suitable to refuel tactical jet fighter aircraft, such as the F-100 Super Sabre. As tankers, KB-50s had extensively reinforced outer wing panels, the necessary equipment to air-refuel simultaneously three fighter-type aircraft by the probe and drogue method, and removed defensive armament.
+The first KB-50 flew in December 1955 and was accepted by the Air Force in January 1956. The tankers steadily entered the operational inventory of TAC supplanting TAC's KB-29s. By the end of 1957, all of the command's aerial refueling squadrons had their full complement of KB-50s. KB-50s, and later KB-50Js with two General Electric J47 jet engines were used by TAC, and also by USAFE and PACAF overseas as aerial tankers. Some were deployed to Thailand and flew refueling missions over Indochina in the early years of the Vietnam War until being retired in March 1965 due to metal fatigue and corrosion.
+In addition to the aerial tanker conversion, the Air Weather Service by 1955 had worn out the WB-29s used for hurricane hunting and other weather reconnaissance missions. Thirty-six former SAC B-50Ds were stripped of their armament and equipped for long-range weather reconnaissance missions. The WB-50 could fly higher, faster and longer than the WB-29. However, between 1956 and 1960 it experienced 13 major operational accidents, six of them involving the loss of the entire crew, and 66 crew-member fatalities.
+After the weather reconnaissance fleet was grounded in May 1960 because of fuel leaks, plans were set in motion in 1962 to modify B-47 Stratojets being phased out of SAC to replace it in the role. The WB-50 had an important role during the Cuban Missile Crisis, when it monitored the weather around Cuba to plan photo-reconnaissance flights. The WB-50 was retired in 1965 due to metal fatigue and corrosion.
+
+Variants
+XB-44
+One B-29A was handed over to Pratt & Whitney to be used as a testbed for the installation of the new Wasp Major 28-cylinder engines in the B-29.
+B-29D
+Wasp Major powered bomber, with stronger structure and taller tail. Redesignated B-50A in December 1945.
+B-50A
+First production version of the B-50. Four R-4360-35 Wasp Major engines, 168,500 pounds (76,400 kg) max take-off weight. A total of 79 were built.
+TB-50A – Conversion of 11 B-50As as crew trainers for units operating the B-36.
+B-50B
+Improved version, with increased maximum take-off weight 170,400 pounds (77,300 kg) and new, lightweight fuel tanks. 45 built.
+
+EB-50B – Single B-50B modified as test-bed for bicycle undercarriage, later used to test "caterpillar track" landing gear.
+RB-50B – Conversion of B-50B for strategic reconnaissance, with capsule in rear fuselage carrying nine cameras in four stations, weather instruments, and extra crew. Could be fitted with two 700-US-gallon (2,650 L) drop tanks under outer wings. 44 converted from B-50B.
+YB-50C
+Prototype for B-54 bomber, to have Variable Discharge Turbine version of the R-4360 engine, longer fuselage and bigger, stronger wings. One prototype started but canceled before completion.
+B-50D
+Definitive bomber version of the B-50. Higher max takeoff weight (173,000 lb or 78,000 kg). Fitted with receptacle for flying boom in-flight refueling and provision for underwing drop tanks. Modified nose glazing with 7-piece nose cone window was replaced by a single plastic cone and a flat bomb-aimer's window. A total of 222 were built.
+DB-50D – Single B-50D converted as drone director conversion of a B-50D, for trials with the GAM-63 RASCAL missile.
+KB-50D – Prototype conversion of two B-50Ds as three-point aerial refueling tanker, using drogue-type hoses. Used as the basis for later production KB-50J and KB-50K conversions. A further conversion from a TB-50D was also designated KB-50D.
+TB-50D – Conversion of early B-50Ds lacking aerial-refueling receptacles as unarmed crew trainers. Eleven were converted.
+WB-50D – Conversion of surplus B-50Ds as weather reconnaissance aircraft to replace worn out WB-29s. Fitted with doppler radar, atmospheric sampler and other specialist equipment, and extra fuel in the bomb bay. Some were used to carry out highly classified missions for atmospheric sampling from 1953 to 1955 to detect Soviet detonation of atomic weapons.
+RB-50E
+14 RB-50Bs converted at Wichita for specialist photographic reconnaissance.
+RB-50F
+Conversion of 14 RB-50Bs as survey aircraft, fitted with SHORAN navigation radar.
+RB-50G
+Conversion of the RB-50B for electronic reconnaissance. Fitted with Shoran for navigation, and six electronic stations, with 16-man crew; 15 converted.
+TB-50H
+Unarmed crew trainer for B-47 squadrons. 24 completed, the last B-50s built. All later converted to KB-50K tankers.
+KB-50J
+Conversions to air-to-air refueling tankers with improved performance from two extra General Electric J47 turbojets under the outer wings, 112 converted from B-50D, TB-50D, RB-50E, RB-50F and RB-50G aircraft.
+KB-50
+136 conversions to three-point hose-drogue tankers by Hayes Industries, with the auxiliary fuel tanks outboard of the engines and hose pod under the wing-tips.
+KB-50K
+Tanker conversions of the TB-50H trainer aircraft. 24 converted.
+B-54A
+Proposed version of the YB-50C.
+RB-54A
+Proposed reconnaissance version of the YB-50C.
+WB-50
+Weather reconnaissance aircraft converted from B-50A aircraft.
+
+Surviving examples
+
+From the 370 produced only five B-50 aircraft survive:
+
+B-50A
+AF Ser. No. 46-0010 Lucky Lady II – The first plane to fly around the world nonstop, between February 26 and March 2, 1949. Was refueled four times in air by KB-29 tanker planes of the 43rd Air Refuelling Squadron, over the Azores, Saudi Arabia, the Philippines and Hawaii. The circumnavigation took 94 hours and 1 minute, and covered 23,452 miles (37,743 km) at an average speed of 247 mph (398 km/h). Lucky Lady II was disassembled after a serious accident, and its forward fuselage is stored outside at Planes of Fame Air Museum in Chino, California.
+
+WB-50D
+AF Ser. No. 49-0310 – National Museum of the United States Air Force at Wright-Patterson Air Force Base in Dayton, Ohio.
+AF Ser. No. 49-0351 Flight of the Phoenix – Castle Air Museum at the former Castle Air Force Base in Atwater, California. This was the last B-50 to be flown, being delivered to MASDC at Davis–Monthan Air Force Base, Arizona, on 6 October 1965. It was put on display at the Castle Air Museum in 1980.
+
+KB-50J
+AF Ser No. 49-0372 – Pima Air & Space Museum adjacent to Davis-Monthan Air Force Base in Tucson, Arizona.
+
+AF Ser. No. 49-0389 – Air Mobility Command Museum in Dover, Delaware. Formerly an outdoor display at MacDill Memorial Park at MacDill Air Force Base in Tampa, Florida. In 2018, 49-0389 was dismantled and relocated to the Air Mobility Command Museum; as of 2023, the airframe was on outdoor display while undergoing restoration
+
+Operators
+United States
+United States Air Force
+
+Specifications (B-50D)
+
+Data from Encyclopedia of U.S. Air Force Aircraft and Missile Systems Volume II: Post–World War II Bombers, 1945–1973General characteristics
+Crew: 8 to 10: Pilot, co-pilot, bombardier, navigator, flight engineer, radio/electronic countermeasures operator, two side gunners, top gunner and tail gunner
+Length: 99 ft 0 in (30.18 m)
+Wingspan: 141 ft 3 in (43.05 m)
+Height: 32 ft 8 in (9.96 m)
+Wing area: 1,720 sq ft (160 m2)
+Empty weight: 84,714 lb (38,426 kg)
+Gross weight: 121,850 lb (55,270 kg)
+Max takeoff weight: 173,000 lb (78,471 kg) (max overload weight)
+Powerplant: 4 × Pratt & Whitney R-4360-35 28 Cyl. four-row air-cooled radial piston engine, 3,500 hp (2,600 kW)  each
+Powerplant: 2 × General Electric J47-GE-23 Turbojet, 5,200 lbf (23 kN) thrust each (auxiliary engines in KB-50J tanker only)
+Performance
+
+Maximum speed: 394 mph (634 km/h, 342 kn) at 30,000 ft (9,150 m)
+Cruise speed: 244 mph (393 km/h, 212 kn)
+Combat range: 2,394 mi (3,853 km, 2,080 nmi)
+Ferry range: 7,750 mi (12,470 km, 6,730 nmi)
+Service ceiling: 36,900 ft (11,200 m)
+Rate of climb: 2,200 ft/min (11 m/s)
+Wing loading: 70.19 lb/sq ft (342.7 kg/m2)
+Power/mass: 0.115 hp/lb (0.189 kW/kg)
+Armament
+
+Guns:
+13 × .50 in (12.7 mm) M2 Browning machine guns in 4 × remote controlled turrets and 1 × manned tail turret
+Bombs:
+20,000 lb (9,100 kg) internally
+8,000 lb (3,600 kg) on external hardpoints
+Optional: in specially modified planes; one 43,600 lb (19,800 kg) T-12 Cloud Maker, one M-110, 22,376 lb (10,150 kg) Grand Slam copy, or two 12,660 lb (5,740 kg) Tallboy copies and numerous nuclear weapons.
+
+See also
+Aerial refueling
+Related development
+
+Boeing B-29 Superfortress
+Boeing B-54
+Boeing 377 Stratocruiser
+Boeing C-97 Stratofreighter
+Tupolev Tu-4
+Aircraft of comparable role, configuration, and era
+
+Tupolev Tu-85
+
+Related lists
+
+List of bomber aircraft
+List of military aircraft of the United States
+List of United States military aerial refueling aircraft
+
+References
+
+Notes
+
+Citations
+
+Bibliography
+
+Further reading
+Hays, Geoffrey (2013). Boeing B-50. Air Force Legends No. 215. Simi Valley, Calif.: Ginter Books. ISBN 978-0-9846114-9-2. OCLC 821025195. Retrieved 1 February 2015.
+
+External links
+
+Boeing B-50 Superfortress, Joe Baugher Archived 2010-11-02 at the Wayback Machine
+B-29 & B-50 production batches and serial numbers
+National Museum XB-44 Superfortress Factsheet
+National Museum Fact Sheet for Pratt & Whitney R-4360

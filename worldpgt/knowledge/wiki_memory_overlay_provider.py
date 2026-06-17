@@ -24,6 +24,7 @@ def _normalize(s: str) -> str:
     s = s.lower().strip()
     s = re.sub(r"[''`]", "", s)
     s = re.sub(r"\s+", " ", s)
+    s = re.sub(r"^(?:the|a|an)\s+", "", s)
     return s
 
 

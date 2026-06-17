@@ -1,0 +1,1062 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Amazon Leo,",
+      "predicate": "subsidiary_of",
+      "object": "Amazon",
+      "source_page": "Project Kuiper",
+      "evidence_text": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "subsidiary_of_v2",
+      "v2_pattern_id": "subsidiary_of_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Reef, or Amazonian Reef,",
+      "definition": "extensive coral",
+      "predicate": "is_a",
+      "source_page": "Amazon Reef",
+      "evidence_text": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ampex Magnetic Tape Division,",
+      "predicate": "headquartered_in",
+      "object": "Opelika",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ampex acquired Orradio Industries in 1959, which became the Ampex Magnetic Tape Division, headquartered in Opelika, Alabama.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Arianespace SA",
+      "definition": "French company",
+      "predicate": "is_a",
+      "source_page": "Arianespace",
+      "evidence_text": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding Aston Martin",
+      "predicate": "founded_by",
+      "object": "Lionel Martin",
+      "source_page": "Aston Martin",
+      "evidence_text": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding Aston Martin",
+      "predicate": "founded_by",
+      "object": "Robert Bamford",
+      "source_page": "Aston Martin",
+      "evidence_text": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding Aston Martin was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Boeing Starliner",
+      "definition": "spacecraft designed to transport crew to",
+      "predicate": "is_a",
+      "source_page": "Boeing Starliner",
+      "evidence_text": "The Boeing Starliner (or CST-100) is a spacecraft designed to transport crew to and from the International Space Station (ISS) and other low-Earth-orbit destinations.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Boeing Starliner (or CST-100) is a spacecraft designed to transport crew to and from the International Space Station (ISS) and other low-Earth-orbit destinations.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Byron Kurt Lichtenberg",
+      "definition": "American engineer",
+      "predicate": "is_a",
+      "source_page": "Byron Lichtenberg",
+      "evidence_text": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "CNBC Asia, and CNBC Europe,",
+      "predicate": "headquartered_in",
+      "object": "London",
+      "source_page": "CNBC",
+      "evidence_text": "In June 1995, CNBC launched the Hong Kong–based CNBC Asia, and CNBC Europe, headquartered in London, in March 1996.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In June 1995, CNBC launched the Hong Kong–based CNBC Asia, and CNBC Europe, headquartered in London, in March 1996.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Charles David Walker",
+      "definition": "American engineer",
+      "predicate": "is_a",
+      "source_page": "Charles D. Walker",
+      "evidence_text": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States,",
+      "predicate": "headquartered_in",
+      "object": "Auburn Hills",
+      "source_page": "Chrysler Corporation",
+      "evidence_text": "FCA US, LLC, doing business as Stellantis North America and known historically as Chrysler ( KRY-slər), is one of the \"Big Three\" automobile manufacturers in the United States, headquartered in Auburn Hills, Michigan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "FCA US, LLC, doing business as Stellantis North America and known historically as Chrysler ( KRY-slər), is one of the \"Big Three\" automobile manufacturers in the United States, headquartered in Auburn Hills, Michigan.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Compaq",
+      "predicate": "owned_by",
+      "object": "US",
+      "source_page": "Compaq Computer",
+      "evidence_text": "Struggling to keep up against its competitors with the price wars against Dell, the launch of a joint venture with ADI Corporation in 1994, and a risky acquisition of DEC in 1998 (which includes the inheritance of the DEC Alpha family of CPUs), Compaq was acquired by Hewlett-Packard (HP) for US$25 billion in 2002.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Struggling to keep up against its competitors with the price wars against Dell, the launch of a joint venture with ADI Corporation in 1994, and a risky acquisition of DEC in 1998 (which includes the inheritance of the DEC Alpha family of CPUs), Compaq was acquired by Hewlett-Packard (HP) for US$25 billion in 2002.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_geopolitical_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Andrew Nyberg",
+      "predicate": "develops",
+      "object": "Insignia and livery The mission insignia",
+      "source_page": "SpaceX Demo-2",
+      "evidence_text": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_design_artifact_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Brainerd",
+      "predicate": "develops",
+      "object": "Insignia and livery The mission insignia",
+      "source_page": "SpaceX Demo-2",
+      "evidence_text": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Insignia and livery The mission insignia was designed by artist Andrew Nyberg from Brainerd, Minnesota, a nephew of spacecraft commander Hurley.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_design_artifact_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Crew Exploration Vehicle",
+      "definition": "component of the U",
+      "predicate": "is_a",
+      "source_page": "Crew Exploration Vehicle",
+      "evidence_text": "The Crew Exploration Vehicle (CEV) was a component of the U.SU.S\u0000 NASA Vision for Space Exploration plan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Crew Exploration Vehicle (CEV) was a component of the U.SU.S\u0000 NASA Vision for Space Exploration plan.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Electrical engineering",
+      "definition": "engineering discipline concerned",
+      "predicate": "is_a",
+      "source_page": "Electrical Engineering",
+      "evidence_text": "Electrical engineering is an engineering discipline concerned with the study, design, and application of equipment, devices, and systems that use electricity, electronics, and electromagnetism.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Electrical engineering is an engineering discipline concerned with the study, design, and application of equipment, devices, and systems that use electricity, electronics, and electromagnetism.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Electricity",
+      "definition": "set of physical phenomena associated",
+      "predicate": "is_a",
+      "source_page": "Electric",
+      "evidence_text": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Silver Lake Partners",
+      "source_page": "Elevation Partners",
+      "evidence_text": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Roger Mc",
+      "source_page": "Elevation Partners",
+      "evidence_text": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding Elevation Partners",
+      "predicate": "founded_by",
+      "object": "Marc Bodnick",
+      "source_page": "Elevation Partners",
+      "evidence_text": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding Elevation Partners was founded by former Silver Lake Partners professionals Roger McNamee and Marc Bodnick, as well as Fred Anderson (Apple IncInc\u0000) and John Riccitiello (Electronic Arts).",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Financial Accounting Standards Board",
+      "definition": "private standard-setting body whose primary purpose is to establish",
+      "predicate": "is_a",
+      "source_page": "Financial Accounting Standards Board",
+      "evidence_text": "The Financial Accounting Standards Board (FASB) is a private standard-setting body whose primary purpose is to establish and improve Generally Accepted Accounting Principles (GAAP) within the United States in the public's interest.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Financial Accounting Standards Board (FASB) is a private standard-setting body whose primary purpose is to establish and improve Generally Accepted Accounting Principles (GAAP) within the United States in the public's interest.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Founders Park, formerly known as Carolina Stadium,",
+      "definition": "ballpark in Columbia",
+      "predicate": "is_a",
+      "source_page": "Carolina Stadium",
+      "evidence_text": "Founders Park, formerly known as Carolina Stadium, is a ballpark in Columbia, South Carolina on the banks of the Congaree River.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founders Park, formerly known as Carolina Stadium, is a ballpark in Columbia, South Carolina on the banks of the Congaree River.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "France, officially the French Republic,",
+      "definition": "country primarily",
+      "predicate": "is_a",
+      "source_page": "France",
+      "evidence_text": "France, officially the French Republic, is a country primarily located in Western Europe.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "France, officially the French Republic, is a country primarily located in Western Europe.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "General Electric Company",
+      "definition": "major British industrial conglomerate involved in consumer",
+      "predicate": "is_a",
+      "source_page": "General Electric Company",
+      "evidence_text": "The General Electric Company (GEC) was a major British industrial conglomerate involved in consumer and defence electronics, communications, and engineering.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The General Electric Company (GEC) was a major British industrial conglomerate involved in consumer and defence electronics, communications, and engineering.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Germany, officially the Federal Republic of Germany,",
+      "definition": "country in Western",
+      "predicate": "is_a",
+      "source_page": "Germany",
+      "evidence_text": "Germany, officially the Federal Republic of Germany, is a country in Western and Central Europe.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Germany, officially the Federal Republic of Germany, is a country in Western and Central Europe.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Gregory Brockman",
+      "definition": "American entrepreneur",
+      "predicate": "is_a",
+      "source_page": "Greg Brockman",
+      "evidence_text": "Gregory Brockman (born November 29, 1987) is an American entrepreneur and software engineer.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Gregory Brockman (born November 29, 1987) is an American entrepreneur and software engineer.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Hyperloop One, known as Virgin Hyperloop until November 2022,",
+      "definition": "American transportation technology company",
+      "predicate": "is_a",
+      "source_page": "Hyperloop One",
+      "evidence_text": "Hyperloop One, known as Virgin Hyperloop until November 2022, was an American transportation technology company that worked to commercialize high-speed travel utilizing the Hyperloop concept which was a variant of the vacuum train.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Hyperloop One, known as Virgin Hyperloop until November 2022, was an American transportation technology company that worked to commercialize high-speed travel utilizing the Hyperloop concept which was a variant of the vacuum train.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Hyperloop Pod Competition",
+      "definition": "annual competition sponsored by SpaceX from 2015 to 2019 in",
+      "predicate": "is_a",
+      "source_page": "TUM Boring",
+      "evidence_text": "The Hyperloop Pod Competition was an annual competition sponsored by SpaceX from 2015 to 2019 in which a number of student and non-student teams participated to design—and for some teams, build—a subscale prototype transport vehicle in order to demonstrate technical feasibility of various aspects of the Hyperloop concept.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Hyperloop Pod Competition was an annual competition sponsored by SpaceX from 2015 to 2019 in which a number of student and non-student teams participated to design—and for some teams, build—a subscale prototype transport vehicle in order to demonstrate technical feasibility of various aspects of the Hyperloop concept.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "India, officially the Republic of India,",
+      "definition": "country in South Asia",
+      "predicate": "is_a",
+      "source_page": "India",
+      "evidence_text": "India, officially the Republic of India, is a country in South Asia.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "India, officially the Republic of India, is a country in South Asia.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Jersey City",
+      "definition": "second-most populous city in the U",
+      "predicate": "is_a",
+      "source_page": "Jersey City",
+      "evidence_text": "Jersey City is the second-most populous city in the U.SU.S\u0000 state of New Jersey, after Newark.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Jersey City is the second-most populous city in the U.SU.S\u0000 state of New Jersey, after Newark.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Jim Cantrell",
+      "definition": "American entrepreneur",
+      "predicate": "is_a",
+      "source_page": "Jim Cantrell",
+      "evidence_text": "Jim Cantrell (born October 5, 1965) is an American entrepreneur and mechanical engineer.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Jim Cantrell (born October 5, 1965) is an American entrepreneur and mechanical engineer.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Kamen Rider Amazon",
+      "definition": "Japanese tokusatsu",
+      "predicate": "is_a",
+      "source_page": "Kamen Rider Amazon",
+      "evidence_text": "Kamen Rider Amazon (仮面ライダーアマゾン, Kamen Raidā Amazon) is a Japanese tokusatsu, horror, adventure television series.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Kamen Rider Amazon (仮面ライダーアマゾン, Kamen Raidā Amazon) is a Japanese tokusatsu, horror, adventure television series.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Las Vegas, colloquially shortened to Vegas,",
+      "definition": "most populous city in the U",
+      "predicate": "is_a",
+      "source_page": "Las Vegas",
+      "evidence_text": "Las Vegas, colloquially shortened to Vegas, is the most populous city in the U.SU.S\u0000 state of Nevada and the county seat of Clark County.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Las Vegas, colloquially shortened to Vegas, is the most populous city in the U.SU.S\u0000 state of Nevada and the county seat of Clark County.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Royal Exchange",
+      "predicate": "founded_by",
+      "object": "Stock Exchange",
+      "source_page": "London Stock Exchange",
+      "evidence_text": "The Royal Exchange was founded by the English financier Thomas Gresham and Sir Richard Clough on the model of the Stock Exchange in Antwerp.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Royal Exchange was founded by the English financier Thomas Gresham and Sir Richard Clough on the model of the Stock Exchange in Antwerp.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_by_generic_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Los Angeles, also known as L.A.,",
+      "definition": "most populous city in the U",
+      "predicate": "is_a",
+      "source_page": "Los Angeles",
+      "evidence_text": "Los Angeles, also known as L.A., is the most populous city in the U.SU.S\u0000 state of California, and the commercial, financial, and cultural center of Southern California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Los Angeles, also known as L.A., is the most populous city in the U.SU.S\u0000 state of California, and the commercial, financial, and cultural center of Southern California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Martin Forest Eberhard",
+      "definition": "American engineer",
+      "predicate": "is_a",
+      "source_page": "Martin Eberhard",
+      "evidence_text": "Martin Forest Eberhard (; born 1960) is an American engineer and entrepreneur who co-founded Tesla, IncInc\u0000 (then Tesla Motors) with Marc Tarpenning in July 2003, where Eberhard was its original CEO serving until late 2007.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Martin Forest Eberhard (; born 1960) is an American engineer and entrepreneur who co-founded Tesla, IncInc\u0000 (then Tesla Motors) with Marc Tarpenning in July 2003, where Eberhard was its original CEO serving until late 2007.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Max Hodak",
+      "definition": "American entrepreneur",
+      "predicate": "is_a",
+      "source_page": "Max Hodak",
+      "evidence_text": "Max Hodak is an American entrepreneur and biomedical engineer.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Max Hodak is an American entrepreneur and biomedical engineer.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Azure, sometimes stylized Azure, and formerly Windows Azure,",
+      "definition": "cloud computing platform",
+      "predicate": "is_a",
+      "source_page": "Microsoft Azure",
+      "evidence_text": "Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure, is the cloud computing platform developed by Microsoft.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure, is the cloud computing platform developed by Microsoft.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ad Astra The Society",
+      "predicate": "publishes",
+      "object": "Ad Astra",
+      "source_page": "National Space Society",
+      "evidence_text": "Ad Astra The Society publishes a magazine Ad Astra, which appears quarterly in print and electronic form.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "publishes_direct_v2",
+      "v2_pattern_id": "publishes_direct_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ad Astra The Society publishes a magazine Ad Astra, which appears quarterly in print and electronic form.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "publishes_phrase_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Nevada corporation",
+      "definition": "corporation incorporated under Chapter 78 of the Nevada Revised Statutes of the U",
+      "predicate": "is_a",
+      "source_page": "Nevada Corporation",
+      "evidence_text": "A Nevada corporation is a corporation incorporated under Chapter 78 of the Nevada Revised Statutes of the U.SU.S\u0000 state of Nevada.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "A Nevada corporation is a corporation incorporated under Chapter 78 of the Nevada Revised Statutes of the U.SU.S\u0000 state of Nevada.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman Corporation,",
+      "predicate": "headquartered_in",
+      "object": "West Falls Church",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "Northrop Grumman Corporation, headquartered in West Falls Church, Virginia, is an American aerospace and defense company that designs and manufactures systems for aeronautics, defense, missions, and space.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Northrop Grumman Corporation, headquartered in West Falls Church, Virginia, is an American aerospace and defense company that designs and manufactures systems for aeronautics, defense, missions, and space.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Manabu Sakamoto",
+      "predicate": "develops",
+      "object": "PlayStation logo",
+      "source_page": "Sony PlayStation",
+      "evidence_text": "The PlayStation logo was designed by Manabu Sakamoto.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The PlayStation logo was designed by Manabu Sakamoto.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "develops_design_artifact_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Russia, or the Russian Federation,",
+      "definition": "country in Eastern Europe",
+      "predicate": "is_a",
+      "source_page": "Russia",
+      "evidence_text": "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Samuel Harris Altman",
+      "definition": "American entrepreneur",
+      "predicate": "is_a",
+      "source_page": "Sam Altman",
+      "evidence_text": "Samuel Harris Altman (born April 22, 1985) is an American entrepreneur and investor who has been the chief executive officer (CEO) of the artificial intelligence company OpenAI since 2019.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Samuel Harris Altman (born April 22, 1985) is an American entrepreneur and investor who has been the chief executive officer (CEO) of the artificial intelligence company OpenAI since 2019.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "San Francisco Bay",
+      "definition": "large tidal estuary in the U",
+      "predicate": "is_a",
+      "source_page": "San Francisco Bay",
+      "evidence_text": "San Francisco Bay is a large tidal estuary in the U.SU.S\u0000 state of California, and gives its name to the San Francisco Bay Area.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "San Francisco Bay is a large tidal estuary in the U.SU.S\u0000 state of California, and gives its name to the San Francisco Bay Area.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Saturn Corporation, also known as Saturn LLC,",
+      "definition": "American automobile manufacturer",
+      "predicate": "is_a",
+      "source_page": "Saturn Corporation",
+      "evidence_text": "The Saturn Corporation, also known as Saturn LLC, was an American automobile manufacturer, a registered trademark established on January 7, 1985, as a subsidiary of General Motors.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Saturn Corporation, also known as Saturn LLC, was an American automobile manufacturer, a registered trademark established on January 7, 1985, as a subsidiary of General Motors.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "S-IVB",
+      "predicate": "developed_by",
+      "object": "Huntington Beach",
+      "source_page": "Saturn IB",
+      "evidence_text": "The S-IVB was built by the Douglas Aircraft Company at Huntington Beach, California.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The S-IVB was built by the Douglas Aircraft Company at Huntington Beach, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "developed_by_location_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Huntington Beach",
+      "predicate": "develops",
+      "object": "S-IVB",
+      "source_page": "Saturn IB",
+      "evidence_text": "The S-IVB was built by the Douglas Aircraft Company at Huntington Beach, California.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The S-IVB was built by the Douglas Aircraft Company at Huntington Beach, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "geopolitical_subject_corporate_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Smith Electric Vehicles",
+      "predicate": "produces",
+      "object": "All NCB electric vehicles",
+      "source_page": "Smith Electric Vehicles",
+      "evidence_text": "All NCB electric vehicles were manufactured by Smith Electric Vehicles, which was based in Gateshead.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "manufactured_by_v2",
+      "v2_pattern_id": "manufactured_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "All NCB electric vehicles were manufactured by Smith Electric Vehicles, which was based in Gateshead.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "produces_universal_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "States Department, later States Ministry,",
+      "definition": "department of the Government of India headed by the Minister of States",
+      "predicate": "is_a",
+      "source_page": "States Department",
+      "evidence_text": "The States Department, later States Ministry, was a department of the Government of India headed by the Minister of States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The States Department, later States Ministry, was a department of the Government of India headed by the Minister of States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Surrey Satellite Technology Ltd, or SSTL,",
+      "definition": "company involved in the manufacture",
+      "predicate": "is_a",
+      "source_page": "Surrey Satellite Technology",
+      "evidence_text": "Surrey Satellite Technology Ltd, or SSTL, is a company involved in the manufacture and operation of small satellites.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Surrey Satellite Technology Ltd, or SSTL, is a company involved in the manufacture and operation of small satellites.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States Atomic Energy Commission",
+      "definition": "agency of the United States government established after World War II by the U",
+      "predicate": "is_a",
+      "source_page": "U.S. Atomic Energy Commission",
+      "evidence_text": "The United States Atomic Energy Commission (AEC) was an agency of the United States government established after World War II by the U.SU.S\u0000 Congress to foster and control the peacetime development of atomic science and technology.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States Atomic Energy Commission (AEC) was an agency of the United States government established after World War II by the U.SU.S\u0000 Congress to foster and control the peacetime development of atomic science and technology.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States district courts",
+      "definition": "trial courts of the U",
+      "predicate": "is_a",
+      "source_page": "U.S. District Court",
+      "evidence_text": "The United States district courts are the trial courts of the U.SU.S\u0000 federal judiciary.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States district courts are the trial courts of the U.SU.S\u0000 federal judiciary.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  }
+]

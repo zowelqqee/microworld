@@ -1,0 +1,13 @@
+{
+  "rejection_by_reason": {
+    "composite_region_subject": 2,
+    "definition_truncated_participle": 4
+  },
+  "quarantine_by_reason": {
+    "duplicate_alias_relation": 1,
+    "headquartered_in_quarantine_default": 2,
+    "owned_by_predicate_ambiguous": 1,
+    "subject_alias_too_short": 3,
+    "truncated_person_alias": 2
+  }
+}

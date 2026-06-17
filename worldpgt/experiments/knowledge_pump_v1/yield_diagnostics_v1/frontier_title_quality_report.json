@@ -1,0 +1,32 @@
+{
+  "frontier_quality": {
+    "frontier_title_total": 4450,
+    "frontier_title_rejected_by_hygiene_count": 0,
+    "frontier_title_kept_by_hygiene_count": 4450,
+    "frontier_title_rejection_by_reason": {},
+    "frontier_title_kept_samples": [
+      "SpaceX",
+      "Tesla",
+      "NASA",
+      "Forbes",
+      "Elon Musk",
+      "Blue Origin",
+      "Bloomberg",
+      "Bloomberg News",
+      "SolarCity",
+      "LVMH",
+      "Starlink",
+      "OpenAI",
+      "PayPal",
+      "Tesla, Inc",
+      "Electric vehicle",
+      "Neuralink",
+      "Jeff Bezos",
+      "Tesla Energy",
+      "Lithium-ion battery",
+      "The Boring Company"
+    ],
+    "frontier_title_rejected_samples": []
+  },
+  "rejected_samples": []
+}

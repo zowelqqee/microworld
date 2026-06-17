@@ -1,0 +1,122 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Kindle",
+      "definition": "series of e-readers designed",
+      "predicate": "is_a",
+      "source_page": "Amazon Kindle",
+      "evidence_text": "Amazon Kindle is a series of e-readers designed and marketed by Amazon.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Kindle is a series of e-readers designed and marketed by Amazon.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Embraer E-Jet E2 family",
+      "definition": "series of four-abreast narrow-body regional jet airliners designed",
+      "predicate": "is_a",
+      "source_page": "E-jet E2",
+      "evidence_text": "The Embraer E-Jet E2 family is a series of four-abreast narrow-body regional jet airliners designed and produced by the Brazilian aircraft manufacturer Embraer.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Embraer E-Jet E2 family is a series of four-abreast narrow-body regional jet airliners designed and produced by the Brazilian aircraft manufacturer Embraer.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Ford F-Series",
+      "definition": "series of light-duty trucks marketed",
+      "predicate": "is_a",
+      "source_page": "Ford F-150",
+      "evidence_text": "The Ford F-Series is a series of light-duty trucks marketed and manufactured by the Ford Motor Company since model year 1948 as a range of full-size pickup trucks — positioned between Ford's Ranger and Super Duty pickup trucks.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Ford F-Series is a series of light-duty trucks marketed and manufactured by the Ford Motor Company since model year 1948 as a range of full-size pickup trucks — positioned between Ford's Ranger and Super Duty pickup trucks.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Africa and Eurasia WorldSpace",
+      "predicate": "founded_by",
+      "object": "Noah Samara",
+      "source_page": "Satellite Radio",
+      "evidence_text": "Africa and Eurasia WorldSpace was founded by Ethiopia-born lawyer Noah Samara in Washington, D.C., in 1990, with the goal of making satellite radio programming available to the developing world.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Africa and Eurasia WorldSpace was founded by Ethiopia-born lawyer Noah Samara in Washington, D.C., in 1990, with the goal of making satellite radio programming available to the developing world.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "composite_region_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Sirius Satellite Radio",
+      "predicate": "founded_by",
+      "object": "Martine Rothblatt",
+      "source_page": "Satellite Radio",
+      "evidence_text": "United States Sirius Satellite Radio was founded by Martine Rothblatt, who served as the new company's Chairman of the Board.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "United States Sirius Satellite Radio was founded by Martine Rothblatt, who served as the new company's Chairman of the Board.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "composite_region_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Tesla Supercharger network",
+      "definition": "electric vehicle fast charging network built",
+      "predicate": "is_a",
+      "source_page": "Tesla Supercharger",
+      "evidence_text": "The Tesla Supercharger network is an electric vehicle fast charging network built and operated by American vehicle manufacturer Tesla, IncInc\u0000 The Supercharger network was introduced on September 24, 2012, as the Tesla Model S entered production, with six stations in California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Tesla Supercharger network is an electric vehicle fast charging network built and operated by American vehicle manufacturer Tesla, IncInc\u0000 The Supercharger network was introduced on September 24, 2012, as the Tesla Model S entered production, with six stations in California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  }
+]

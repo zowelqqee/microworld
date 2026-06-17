@@ -1,0 +1,693 @@
+{
+  "summary": {
+    "extraction_yield_v2_enabled": true,
+    "candidate_source": "pump_extraction_yield_v2",
+    "extraction_yield_v2_candidate_count": 404,
+    "extraction_yield_v2_relation_candidate_count": 153,
+    "extraction_yield_v2_definition_candidate_count": 251,
+    "extraction_yield_v2_rejected_count": 0,
+    "extraction_yield_v2_quarantined_count": 0,
+    "extraction_yield_v2_candidate_by_pattern": {
+      "acquired_active_v2": 22,
+      "acquired_by_v2": 23,
+      "developed_by_v2": 11,
+      "develops_inverse_v2": 11,
+      "founded_by_v2": 30,
+      "headquartered_in_v2": 31,
+      "lead_definition_v2": 251,
+      "manufactured_by_v2": 1,
+      "operated_by_v2": 8,
+      "owned_by_v2": 6,
+      "publishes_direct_v2": 3,
+      "service_of_v2": 2,
+      "subsidiary_of_v2": 5
+    },
+    "docs_processed": 715,
+    "docs_errors": 0,
+    "screened_out_sentence_count": 0,
+    "network_calls": false
+  },
+  "stats": {
+    "docs_processed": 715,
+    "docs_errors": 0,
+    "docs_error_details": [],
+    "total_candidates": 404,
+    "relation_candidates": 153,
+    "definition_candidates": 251,
+    "pattern_counts": {
+      "acquired_active_v2": 22,
+      "acquired_by_v2": 23,
+      "developed_by_v2": 11,
+      "founded_by_v2": 30,
+      "headquartered_in_v2": 31,
+      "lead_definition_v2": 251,
+      "manufactured_by_v2": 1,
+      "operated_by_v2": 8,
+      "owned_by_v2": 6,
+      "publishes_direct_v2": 3,
+      "screened_out": 2344,
+      "service_of_v2": 2,
+      "subsidiary_of_v2": 5
+    },
+    "predicates": [
+      "developed_by",
+      "develops",
+      "founded_by",
+      "headquartered_in",
+      "operated_by",
+      "owned_by",
+      "produces",
+      "publishes",
+      "service_of",
+      "subsidiary_of"
+    ],
+    "network_calls": false,
+    "candidate_source": "pump_extraction_yield_v2"
+  },
+  "candidate_examples": [
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Malabry campus",
+      "predicate": "developed_by",
+      "object": "Jean Fayeton",
+      "source_page": "Centrale Paris",
+      "evidence_text": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Jean Fayeton",
+      "predicate": "develops",
+      "object": "Malabry campus",
+      "source_page": "Centrale Paris",
+      "evidence_text": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Accenture plc",
+      "definition": "Irish technology consulting company",
+      "predicate": "is_a",
+      "source_page": "Andersen Consulting",
+      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Accenture plc is an Irish technology consulting company",
+      "predicate": "headquartered_in",
+      "object": "Dublin",
+      "source_page": "Andersen Consulting",
+      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "British Aerospace",
+      "source_page": "Aerospace manufacturing",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "US",
+      "source_page": "Aerospace manufacturing",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Affordable Connectivity Program",
+      "definition": "United States government-sponsored program",
+      "predicate": "is_a",
+      "source_page": "Affordable Connectivity Program",
+      "evidence_text": "The Affordable Connectivity Program (ACP) was a United States government-sponsored program that  provided internet access to low-income households.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Affordable Connectivity Program (ACP) was a United States government-sponsored program that  provided internet access to low-income households."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Air command",
+      "definition": "term used to refer to the command structure of some air forces",
+      "predicate": "is_a",
+      "source_page": "Air Command",
+      "evidence_text": "Air command is a term used to refer to the command structure of some air forces.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Air command is a term used to refer to the command structure of some air forces."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Aliko Mohammad Dangote",
+      "definition": "Nigerian businessman",
+      "predicate": "is_a",
+      "source_page": "Aliko Dangote",
+      "evidence_text": "Aliko Mohammad Dangote  (; born 10 April 1957) is a Nigerian businessman known for his key roles in Dangote Group and Dangote Refinery.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Aliko Mohammad Dangote  (; born 10 April 1957) is a Nigerian businessman known for his key roles in Dangote Group and Dangote Refinery."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Alpha Magnetic Spectrometer",
+      "definition": "particle physics experiment module",
+      "predicate": "is_a",
+      "source_page": "Alpha Magnetic Spectrometer",
+      "evidence_text": "The Alpha Magnetic Spectrometer (AMS-02) is a particle physics experiment module that is mounted on the International Space Station (ISS).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Alpha Magnetic Spectrometer (AMS-02) is a particle physics experiment module that is mounted on the International Space Station (ISS)."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amalgam Comics",
+      "definition": "collaborative publishing imprint shared by DC Comics",
+      "predicate": "is_a",
+      "source_page": "Amalgam Comics",
+      "evidence_text": "Amalgam Comics was a collaborative publishing imprint shared by DC Comics and Marvel Comics, in which the two comic book publishers merged their characters into new ones (e.ge.g\u0000, the DC Comics character Batman and the Marvel Comics character Wolverine became the Amalgam Comics character the Dark Claw).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amalgam Comics was a collaborative publishing imprint shared by DC Comics and Marvel Comics, in which the two comic book publishers merged their characters into new ones (e.ge.g\u0000, the DC Comics character Batman and the Marvel Comics character Wolverine became the Amalgam Comics character the Dark Claw)."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Bookstore Cooperative",
+      "definition": "feminist bookstore",
+      "predicate": "is_a",
+      "source_page": "Amazon Bookstore Cooperative",
+      "evidence_text": "Amazon Bookstore Cooperative was a feminist bookstore located in Minneapolis, Minnesota, that operated from 1970 to 2012.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Bookstore Cooperative was a feminist bookstore located in Minneapolis, Minnesota, that operated from 1970 to 2012."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Early years Amazon Bookstore",
+      "predicate": "founded_by",
+      "object": "Rosina Richter Christy",
+      "source_page": "Amazon Bookstore Cooperative",
+      "evidence_text": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Early years Amazon Bookstore",
+      "predicate": "founded_by",
+      "object": "Julie Morse Quist",
+      "source_page": "Amazon Bookstore Cooperative",
+      "evidence_text": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Early years Amazon Bookstore was founded in 1970 by Rosina Richter Christy and Julie Morse Quist."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Delta",
+      "definition": "vast river delta formed by the Amazon River",
+      "predicate": "is_a",
+      "source_page": "Amazon Delta",
+      "evidence_text": "The Amazon Delta (Portuguese: delta do Amazonas) is a vast river delta formed by the Amazon River and the Tocantins River (through the Pará River distributary channel) in northern South America.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Amazon Delta (Portuguese: delta do Amazonas) is a vast river delta formed by the Amazon River and the Tocantins River (through the Pará River distributary channel) in northern South America."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Kindle",
+      "definition": "series of e-readers designed",
+      "predicate": "is_a",
+      "source_page": "Amazon Kindle",
+      "evidence_text": "Amazon Kindle is a series of e-readers designed and marketed by Amazon.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Kindle is a series of e-readers designed and marketed by Amazon."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Amazon Leo,",
+      "predicate": "subsidiary_of",
+      "object": "Amazon",
+      "source_page": "Project Kuiper",
+      "evidence_text": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "subsidiary_of_v2",
+      "v2_pattern_id": "subsidiary_of_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Leo, is a subsidiary of Amazon established in 2019 to deploy a large satellite internet constellation providing low-latency broadband connectivity."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Reef, or Amazonian Reef,",
+      "definition": "extensive coral",
+      "predicate": "is_a",
+      "source_page": "Amazon Reef",
+      "evidence_text": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Amazon Reef, or Amazonian Reef, is an extensive coral and sponge reef system, located in the Atlantic Ocean off the coast of French Guiana and northern Brazil."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon basin",
+      "definition": "part of South America drained by the Amazon River",
+      "predicate": "is_a",
+      "source_page": "Amazon Basin",
+      "evidence_text": "The Amazon basin is the part of South America drained by the Amazon River and its tributaries.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Amazon basin is the part of South America drained by the Amazon River and its tributaries."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazonian Guard",
+      "definition": "unofficial name given to an all-female elite cadre of bodyguards officially",
+      "predicate": "is_a",
+      "source_page": "Amazonian Guard",
+      "evidence_text": "The Amazonian Guard (also the \"Amazons\") was an unofficial name given to an all-female elite cadre of bodyguards officially known as the Revolutionary Nuns (Arabic: الراهبات الثوريات, ar-rāhibāt ath-thawriyyāt), tasked with protecting Muammar Gaddafi, the leader of the Republic of Libya from 1969 to 2011.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Amazonian Guard (also the \"Amazons\") was an unofficial name given to an all-female elite cadre of bodyguards officially known as the Revolutionary Nuns (Arabic: الراهبات الثوريات, ar-rāhibāt ath-thawriyyāt), tasked with protecting Muammar Gaddafi, the leader of the Republic of Libya from 1969 to 2011."
+    }
+  ],
+  "rejected_examples": [],
+  "quarantine_examples": [],
+  "by_source_page": [
+    {
+      "source_page": "Saturn IB",
+      "candidate_count": 8,
+      "relation_count": 8,
+      "definition_count": 0
+    },
+    {
+      "source_page": "General Electric Company",
+      "candidate_count": 5,
+      "relation_count": 4,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Informix Software",
+      "candidate_count": 5,
+      "relation_count": 5,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Compaq Computer",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Elevation Partners",
+      "candidate_count": 4,
+      "relation_count": 4,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Intel Corporation",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "London Stock Exchange",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Satellite Radio",
+      "candidate_count": 4,
+      "relation_count": 4,
+      "definition_count": 0
+    },
+    {
+      "source_page": "SpaceX Demo-2",
+      "candidate_count": 4,
+      "relation_count": 4,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Amazon Bookstore Cooperative",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Ampex Corporation",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Aston Martin",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Berkshire Hathaway",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "General Motors",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Google Cloud",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Harvard University",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Mission Control Center",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Raytheon Technologies Corporation",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Rocket Science Games",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Sam Altman",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "United Technologies",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Advanced Vehicle Systems",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Aerospace manufacturing",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Alain Chevalier",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Andersen Consulting",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Apple Computer",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Arianespace",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Berkeley DB",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Bloomberg Government",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Bloomberg L.P",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Bloomberg Radio",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Boeing X-37",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "CBS News",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Cecil Rhodes",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Centrale Paris",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Chrysler Corporation",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Dow Jones",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Dream Chaser",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Giga Nevada",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Government Accountability Office",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Henrik Fisker",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Jaguar Land Rover",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Max Levchin",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Michael Liebreich",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Microsoft Corporation",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Morgan Motor Company",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Nevada Corporation",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "OpenAI Global",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Reuters",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Robert Zubrin",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    }
+  ]
+}

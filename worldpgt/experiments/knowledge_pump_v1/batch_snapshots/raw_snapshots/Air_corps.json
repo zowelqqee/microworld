@@ -1,0 +1,15 @@
+{
+  "title": "Air Corps",
+  "normalized_title": "Air corps",
+  "pageid": 10477501,
+  "revision_id": 1146961731,
+  "timestamp": "2023-03-28T00:44:27Z",
+  "source_url": "https://en.wikipedia.org/wiki/Air_corps",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Air+Corps",
+  "retrieved_at": "2026-06-15T12:36:40Z",
+  "raw_text": "The term air corps can generically refer to an air force, however it is mostly used for an aviation wing within a predominantly land force.\nIn specific use, air corps or Air Corps may refer to:\n\nUnited States Army Air Corps, the predecessor of the United States Air Force\nArmy Air Corps (United Kingdom), the air corps of the British Army\nAir Corps (Ireland), the air component of the Defence Forces of Ireland\nPhilippine Army Air Corps, the former air corps of the Philippine Army\nSomali Air Corps, the former air corps of Somalia",
+  "raw_text_sha256": "635a39d57aa1cc4fa827d304e835fa3f465579915388941892afaddd12d4276f",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

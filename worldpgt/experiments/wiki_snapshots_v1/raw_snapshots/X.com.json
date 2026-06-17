@@ -1,0 +1,15 @@
+{
+  "title": "X.com",
+  "normalized_title": "X.com",
+  "pageid": 74511519,
+  "revision_id": 1356113444,
+  "timestamp": "2026-05-25T20:48:43Z",
+  "source_url": "https://en.wikipedia.org/wiki/X.com",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=X.com",
+  "retrieved_at": "2026-06-15T07:16:27Z",
+  "raw_text": "x.com may refer to:\n\nA single-letter second-level domain on the internet, currently owned by X Corp.\nX (social network), a social media platform formerly known as Twitter that currently uses the x.com domain\nX.com (bank), a defunct online bank\n\n\nSee also\nXCOM (disambiguation)\nx.co, URL shortening\nx.org (disambiguation)\nX (disambiguation) § Companies\nX Corp., the parent company of the social network\n/x/, 4chan board\nEXCOMM",
+  "raw_text_sha256": "91ec5b6d37ad2a6d8ff02215376e4772541e1ba536bb12fcb120aa6f3b10c6cb",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

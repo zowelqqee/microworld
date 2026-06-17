@@ -1,0 +1,16 @@
+# Blue Origin NS-16
+
+Source: https://en.wikipedia.org/wiki/Blue_Origin_NS-16
+Retrieved at: 2026-06-15T12:36:50Z
+Revision ID: 1351871808
+Raw text SHA256: a2f9a676c1f55938672c32a906e3b1148dfe2b5be7bf97d5a659322579a61ab5
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Blue Origin NS-16 was a sub-orbital spaceflight mission operated by Blue Origin which flew on 20 July 2021. The mission was the sixteenth flight of the company's New Shepard integrated launch vehicle and spacecraft, and its first flight with humans aboard. It carried into space American billionaire and Blue Origin founder Jeff Bezos, his brother Mark, pilot and Mercury 13 member Wally Funk, and Dutch student Oliver Daemen. The flight commenced from Blue Origin's Corn Ranch sub-orbital launch site in West Texas aboard the third flight of New Shepard booster NS4 and the spacecraft RSS First Step, both having previously flown on NS-14 and NS-15 earlier in the year.
+Blue Origin NS-16 was the first human spaceflight from the U.S. state of Texas. Daemen, aged 18, and Funk, aged 82, became the youngest and oldest people to travel to space, respectively, until William Shatner took the record of oldest in space at age 90 on NS-18. The flight was approximately 10 minutes, and crossed the Kármán line. The mission became the first fully automated flight with civilian passengers, as well as the first multi-person, internationally recognized sub-orbital spaceflight.
+
+Passengers
+Four passengers flew on Blue Origin NS-16. Originally, the anonymous winner (later revealed as Justin Sun) of a US$28 million auction held by Blue Origin in support of its Club for the Future program was to be the fourth person on RSS First Step. However, the anonymous winner had unspecified scheduling conflicts and was re-manifested for a future New Shepard flight; Oliver Daemen took the vacated position. Oliver's father Joes Daemen, the CEO of private equity firm Somerset Capital Partners, paid for the fourth seat; Joes had come second in the auction for the seat, so after the auction winner (Justin Sun) did not take the seat, it was passed onto Joes, who paid for the seat and gave it to Oliver.
+
+References

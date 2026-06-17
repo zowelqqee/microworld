@@ -1,0 +1,46 @@
+{
+  "ready_docs_total": 100,
+  "docs_processed": 91,
+  "docs_failed": 0,
+  "sentences_scanned": 17562,
+  "raw_relation_candidates_total": 301,
+  "accepted_relation_candidates_total": 37,
+  "quarantined_candidates_total": 264,
+  "candidates_by_relation_type": {
+    "founded": 4,
+    "is_a": 8,
+    "founded_by": 5,
+    "subsidiary_of": 3,
+    "headquartered_in": 1,
+    "operates": 1,
+    "develops": 5,
+    "produces": 4,
+    "owned_by": 5,
+    "developed_by": 1
+  },
+  "candidates_by_stability": {
+    "semi_stable": 29,
+    "stable": 8
+  },
+  "candidates_by_risk": {
+    "medium": 28,
+    "low": 9
+  },
+  "quarantine_by_reason": {
+    "missing_explicit_evidence": 263,
+    "directionality_conflict": 2,
+    "entity_type_conflict": 1
+  },
+  "duplicates_existing_count": 7,
+  "conflicts_existing_count": 0,
+  "safe_for_overlay_delta_count": 30,
+  "network_calls": false,
+  "auto_ingest": false,
+  "auto_promote": false,
+  "trusted_memory_modified": false,
+  "accepted_overlay_modified": false,
+  "promoted_overlay_modified": false,
+  "snapshot_dry_run_overlay_modified": false,
+  "runtime_behavior_modified": false,
+  "safe_for_general_runtime": false
+}

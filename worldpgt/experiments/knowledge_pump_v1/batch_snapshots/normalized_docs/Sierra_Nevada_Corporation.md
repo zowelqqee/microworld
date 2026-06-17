@@ -1,0 +1,132 @@
+# Sierra Nevada Corporation
+
+Source: https://en.wikipedia.org/wiki/Sierra_Nevada_Corporation
+Retrieved at: 2026-06-17T17:12:31Z
+Revision ID: 1359170352
+Raw text SHA256: bdf3e69ecc2335a79edc74aca9f8c60bcf9093f95dc041a3c4b35bf33a2780ff
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Sierra Nevada Corporation (also styled SNC) is an American aerospace, defense, electronics, engineering and manufacturing corporation that specializes in aircraft modification, integration and other space technologies.  The corporation contracts with the US Department of Defense, NASA, and private spaceflight companies.  The corporation is headquartered in Sparks, Nevada, and has 36 locations in the United States, United Kingdom, Germany, and Turkey.
+As of October 2020, the corporation has participated in over 500 successful space missions, including 14 missions to Mars. In 2021, the corporation created the subsidiary, Sierra Space, to continue working on the development of the Dream Chaser spaceplane and Commercial Space Station with Blue Origin The organization is a multi-billion-dollar corporation with over 4,000 employees. Its main business is working with the US Department of Defense and NASA on contracts.
+
+History
+The corporation was founded in 1963 by John Chisholm with a few employees working out of an airplane hangar in the Reno Stead Airport. The corporation was acquired in 1994 by Fatih Özmen and Eren Özmen. Fatih Ozmen was hired in 1981. The corporation has since grown into a multi-billion-dollar corporation with over 4,000 employees. The company's main business is completing US Department of Defense and NASA contracts.
+In 2016, the corporation built a 130,000 square feet (12,000 m2) aircraft modification facility in Meridianville, Alabama, alongside Madison County Executive Airport. The facility was expanded with an additional 60,800 square feet (5,650 m2) building, which could hold seven Beechcraft Super King Air/C-12/MC-12S planes. SNC began modifying commercial aircraft into military surveillance aircraft, such as the US Army's EMARSS platform.
+On September 18, 2024, the People's Republic of China announced sanctions on nine U.S. military industrial companies, including Sierra Nevada Corporation, for their participation in arms sales to Taiwan.
+
+Space systems
+In December 2008, the corporation completed its acquisition of SpaceDev, to develop an orbital spacecraft called the Dream Chaser. In April 2021, the corporation announced it would create Sierra Space, an independent commercial space corporation to develop the reusable Dream Chaser spaceplane and work with Blue Origin to create a commercial space station.
+
+Dream Chaser spaceplane
+
+In February 2010, Sierra Nevada Corporation was awarded $20 million in seed money in phase 1 of NASA's Commercial Crew Development (CCDev) program for the development of the Dream Chaser. Of the $50 million awarded in the phase 1 CCDev program, Dream Chaser's award represented the largest share of the funds.
+In August 2012, NASA announced new agreements with the Sierra Nevada Corporation and two other companies to design and develop the next generation of U.S. human spaceflight capabilities, enabling a launch of astronauts from U.S. soil within the next five years. Advances made by these companies under newly signed Space Act Agreements through the agency's Commercial Crew Integrated Capability (CCiCap) initiative were intended to ultimately lead to the availability of commercial human spaceflight services for government and commercial customers. As part of this agreement, Sierra Nevada Corporation was awarded $212.5 million to continue the development and testing of its Dream Chaser spacecraft. The Dream Chaser is a revival of NASA's HL-20 Personnel Launch System lifting-body design.
+In July 2014, the corporation signed a letter of cooperation with Tuskegee University to collaborate on efforts related to SNC's Dream Chaser. In August 2014, Lockheed Martin and Sierra Nevada Corporation unveiled the composite airframe of the Dream Chaser, which was used to conduct its first orbital launch in 2016.
+Internally the Dream Chaser program team is frequently referred to as the "Dream Team." The team includes well-known aerospace industry partners such as Lockheed Martin and United Launch Alliance, NASA centers and universities across the United States, small businesses such as Craig Technologies, as well as the European, German and Japanese space agencies.
+In September 2014, Sierra Nevada Corporation lost the Commercial Crew Transportation Capability (CCtCap) contract to SpaceX and Boeing, which NASA chose as the two companies funded to develop systems to transport U.S. crews to and from the space station. Boeing won $4.2 billion and SpaceX won $2.6 billion to complete and certify their spacecraft by 2017. NASA deemed SNC's proposal less mature than SpaceX's or Boeing.
+In the selection statement, Bill Gerstenmaier, head of NASA's human exploration and operations directorate, explained the decision by stating that "a winged spacecraft is a more complex design and thus entails more developmental and certification challenges, and therefore may have more technical and schedule risk than expected", and "I consider SNC's design to be at the lowest level of maturity, with significantly more technical work and critical design decisions to accomplish.... SNC's proposal also has more schedule uncertainty." Director Mark Sirangelo said the team was "devastated", and called it "like a death in the family", and Washington Post said the corporation "entered a realm particular to the world of government contracting: that of the big-time corporate loser".
+The corporation filed a protest to the GAO against the selection, which was rejected. The Washington Post called the moves to preserve the program "straddling the fine line between faith and delusion, persistence and masochism". While the Dream Chaser was designed to carry passengers, they modified it for cargo and worked through Thanksgiving 2015 to meet a January 2016 bidding deadline. In January 2016, they were awarded a Commercial Resupply Services (CRS-2) contract for resupply missions to the International Space Station between 2019 and 2024, guaranteeing a minimum of six launches. The corporation will use United Launch Alliance's Vulcan Centaur rocket as the launch vehicle for Dream Chaser's cargo configuration starting in 2022.
+
+RocketMotorTwo and STPSat-5
+
+The corporation was the main contractor on RocketMotorTwo for Virgin Galactic's SpaceShipTwo, and designed the rocket engine for Scaled Composites, including the one used for SpaceShipOne. In April 2013, SpaceShipTwo completed its first powered flight test using RocketMotorTwo. After losing the bid for NASA commercial crew, Sierra Nevada reduced the staff working on RocketMotorTwo in September 2014. In late November, the corporation announced the permanent closure of their Poway, California propulsion development facility as they intend to consolidate all propulsion activity in one location, at the facilities at Orbital Technologies Corp.
+In October 2014, the United States Department of Defense awarded Sierra Nevada Corporation's Space Systems a contract to develop and build a next-generation science and technology demonstration satellite, known as STPSat-5, for their Space Test Program.
+
+Artemis Human Landing System proposal
+
+SNC Space Systems, working with Dynetics, participated in some early HLS design studies under NASA's HLS Appendix E program. They submitted a HLS proposal to NASA for HLS Appendix H, which was one of three proposals selected for further study, along with Blue Origin and SpaceX. NASA's Stephen Jurczyk identified the fuel drop tanks and low crew module as innovative strengths, but the propulsion system, identified by Scott Manley as SNC's Vortex engines, was a low-maturity risk. Overall, their technical rating and management rating were listed as "very good", making the Dynetics proposal the highest-rated project.
+
+Demonstration and Science Experiments (DSX) spacecraft
+SNC concluded a successful two-year on-orbit research mission for the Air Force Research Laboratory (AFRL) in 2021. The mission utilized the Demonstration and Science Experiments (DSX) spacecraft in medium Earth orbit (MEO) and helped utilize research and technologies that could advance the potential future deployment of United States Department of Defense (DoD) spacecraft in the harsh radiation environment of MEO.
+The three successful DSX physics-based research/experiment areas included: Wave Particle Interaction Experiment (WPIx), Space Weather Experiment (SWx), and Space Environmental Effects (SFx). Robert Johnston, the principal investigator on the science side of the DSX team, commented on the DSX mission: "We will be working the science from this mission for the remainder of our careers ... DSX's contributions in understanding the environment of space are profound to our nation and the DoD."
+
+Other projects
+
+Predator
+In 2001, SNC was producing landing gear for the Predator drone.
+
+C-145A Skytruck
+In 2009, the corporation converted the Polish PZL M28 Skytruck into the C-145A Skytruck for the Air Force Special Operations Command (AFSOC). One crashed beyond repair in Afghanistan in 2011. Eleven were retired in 2015. In 2016, three were sent to Kenya, two to Costa Rica, two to Nepal, and two to Estonia. SNC took over maintenance of the AFSOC planes in 2017.
+
+Light Air Support
+Beginning in 2013, the corporation partnered with Embraer to sell the Embraer EMB 314 Super Tucano as a Light Attack/Armed Reconnaissance aircraft under the USAF's A-29 Super Tucano designation.
+Operators:
+
+Afghan Security Forces: 26 aircraft were delivered from 2014 to 2017. One part of the contract was for $1.8 billion.
+Lebanon: six aircraft delivered in 2017–2018.
+Nigeria: 12 aircraft with weapons packages. The $593 million contract had been on hold since 2015 over human rights issues, but was discussed between President Donald Trump and Nigerian President Muhammadu Buhari in February 2017 and approved later that year. The first plane was completed in 2020.
+United States:
+Air Force Special Operations Command's combat aviation advisors: three aircraft. The initial two were in a $129 million contract.
+
+Persistent Wide-Area Airborne Surveillance
+Gorgon Stare is a remotely controlled, aircraft-based Wide-Area Persistent Surveillance (WAPS) system. Gorgon Stare includes the USAF's only operational day/night persistent wide-area motion imagery (WAMI) capability. The system has flown long-duration sorties daily in multiple theaters since March 2011, providing thousands of hours of direct combat support.
+In Spring 2014, the U.S. Air Force deployed the latest generation of Gorgon Stare. The fully upgraded system simultaneously provides a four-fold increase in area coverage with a two-fold improvement in resolution compared to its predecessor. The system features two state-of-the-art imaging sensor turrets—an electro-optical (EO) sensor derived from the Defense Advanced Research Projects Agency's (DARPA) ARGUS technology and an infrared (IR) sensor integrating the largest IR arrays available.
+
+Transport Telemedicine System
+The Sierra Nevada Corporation Transport Telemedicine System is a capability that captures and communicates patient care and condition information beginning at the point of injury and continuing until arrival at a medical facility. In September 2014, at the inaugural Nevada Telemedicine Summit, SNC successfully demonstrated the capability to the U.S. Army Medical Material Agency. The Nevada Army National Guard MEDEVAC unit flew the demonstration mission.
+
+Multi-mission aircraft
+In July 2014, the corporations Intelligence, Surveillance and Reconnaissance (ISR) business area located in Centennial, Colorado, won a competitive contract to provide and operate two multi-mission aircraft (MMA) for the State of Colorado Division of Fire Prevention and Control (DFPC). Based on the Pilatus PC-12, the DFPC aircraft are equipped with electro-optical sensors and communications equipment that allow firefighters to detect small fires before they grow into large incidents that severely affect Colorado's lives, property, and resources.
+As a result of the integration, technology and modifications, the MMA are providing advanced fire detection, location, and behavior monitoring capabilities. The aircraft feature a communications system that allows the aircrew to send collected information to all wildfire response personnel using the Colorado Wildfire Information Management System (CO-WIMS), a web-based collaborative information sharing tool that allows any firefighter immediate access to fire location, behavior, and other critical pieces of information. Colorado has also successfully employed the aircraft in search-and-rescue and environmental assessment missions.
+In 2016, United States Customs and Border Protection (CBP) awarded SNC a $280 million firm-fixed-price contract to engineer and integrate 12 Multi-Role Enforcement Aircraft. In 2020, CBP Air and Marine Operations (AMO) issued a delivery order to SNC valued at roughly $47 million for the acquisition of two Multi-Role Enforcement Aircraft (MEA). These two aircraft are the 24th and 25th ordered MEA, and are expected to be delivered early 2022.
+Operators:
+
+US Army Task Force ODIN
+U.S. Customs and Border Protection, at least some of their 25-plane King Air fleet; 12 of the aircraft were provided in a $280 million contract in 2016.
+Royal Saudi Air Force, four planes for $185 million.
+Jamaica Defence Force, one plane acquired in 2018.
+Kuwait Air Force, four planes ordered in 2018 for $259 million with Seaspray 7500 AESA, WESCAM EO-IR imaging, communications, AN/AAR-47 missile warning system, and AN/ALE-47 countermeasures.
+
+Dornier 328 and 328JET
+
+In 2015, Sierra Nevada Corporation acquired 328 Support Services GmbH (328 SSG) and with it the maintenance rights and type certificates for the Dornier 328 and Fairchild Dornier 328JET. Later in 2015 an agreement was reached for the Turkish government to build the aircraft in Turkey as the T328 and TR328 and for Turkey to develop enlarged 60-70 seat "628" models, under the Turkish Regional Jet project. First flights were anticipated in 2019, but the project was abandoned in 2017. SNC and 328 SSG would continue exploring revivals of the 328 and 328JET.
+
+Survivable Airborne Operations Center
+
+In May 2024, Sierra Nevada Corporation was awarded a $13 billion contract by the U.S. Air Force to develop and produce the Survivable Airborne Operations Center (SAOC), a replacement for the aging fleet of E-4B "Nightwatch" aircraft. The SAOC serves as the next generation of the E-4B National Airborne Operations Center, providing top military leaders with a survivable aircraft to ensure the National Military Command System can direct military forces and execute emergency war orders.
+The contract is expected to run to July 2036 and replace the Air Force's existing fleet of four E-4B planes. SNC won the contract unopposed, following Boeing's withdrawal from the competition in 2023.
+The SAOC is based on the Boeing 747-8I platform, with SNC acquiring five Boeing 747-8 aircraft from Korean Air for conversion. The aircraft will be "hardened to protect against nuclear and electromagnetic effects and modified with an aerial refueling capability to enable sustained airborne operations."
+
+Freedom jet trainer aircraft
+Proposed for the U.S. Navy 2026.
+
+Controversy
+
+False Claims Act lawsuit
+In 2017, the corporation settled a Justice Department lawsuit that says that the Sierra Nevada Corporation had overcharged the U.S. government on federal contracts between 2007 and 2011 which violated the False Claims Act. They settled without admitting liability, paying $14.9 million.
+
+Lobbying and political influence
+In 2007, the Las Vegas Sun noted SNC was "adept at targeting campaign contributions at elected officials who can help it", also noting its active Sierra Nevada PAC, which was created in July 2001.
+In 2004, then-Nevada house representative and Armed Services Committee member Jim Gibbons promoted SNC to receive a $4 million no-bid helicopter technology development contract. In the same timeframe, SNC was making political consulting payments to Jim Gibbons' wife, Dawn Gibbons. Dawn was also paid by Jim's political campaign, and a nonprofit set up by the couple also paid Dawn money. These payments were exposed in 2007 by The Wall Street Journal, who also said a grand jury had convened for this and another corporation Gibbons had been entangled with.
+In 2009, SNC was tied to lobbying scandals from the PMA Group and Indiana congressman and House Appropriations Subcommittee on Defense member Pete Visclosky. SNC paid PMA Group $280,000 in 2006 for lobbying, and PMA was exposed in a large lobbying scandal. A grand jury summoned Visclosky for documents and later declined to charge him. He was also cleared by the House Ethics Committee, though Visclosky declined to be interviewed by the committee, and there were "troubling aspects" uncovered in the probe. An email from SNC's Dave Klinger justified their requested contribution amounts to Visclosky, stating "He has been a good supporter of SNC. We have gotten over 10M in [earmarks]". Referring to the Klinger email, Steven V. Roberts and Cokie Roberts called the PMA/SNC relationship "a bribe by any other name".
+
+Wuhan Virology Institute report
+In 2020, SNC's Multi-Agency Collaboration Environment (MACE) group produced a report shared among the Department of Defense and Congress attempting to demonstrate that the Wuhan Institute of Virology shut down for several days in October, providing evidence for the COVID-19 lab leak theory. The report's evidence was based on patterns of cellphone location data around the WIV during the time period. Similar arguments had been labeled inconclusive by Western intelligence agencies after additional analysis based on satellite imagery.
+The report came under heavy criticism and was the subject of a rebuttal in The Daily Beast, which pointed out that the shifting patterns in cell phone data were easily explained by observable road construction. The rebuttal also noted that the report relied on extremely small sample numbers (some as small as seven cell phones for an institute with hundreds of employees). Intelligence and health specialists interviewed by NBC were broadly skeptical of the report, the outlet reported, as were Congressional staffers quoted by The Daily Beast.
+
+Dates of acquisitions
+
+ORBITEC (July 2014)
+3S Engineering (September 2012)
+SpaceDev, Inc. (December 2008)
+MicroSat Systems, Inc. (January 2008)
+WaveBand Corporation (May 2005)
+Turtle Mountain Communications, Inc. (June 2003)
+Plano Microwave, Inc. (October 2001)
+
+See also
+
+SpaceDev
+NewSpace
+Top 100 US Federal Contractors
+SpaceX
+Kistler
+Thor III
+Blue Origin
+
+References
+
+External links
+
+Sierra Nevada Corporation website

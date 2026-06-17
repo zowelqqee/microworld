@@ -1,0 +1,240 @@
+# Ford F-Series
+
+Source: https://en.wikipedia.org/wiki/Ford_F-Series
+Retrieved at: 2026-06-17T17:18:34Z
+Revision ID: 1359711939
+Raw text SHA256: ffbd89305ee729b08d2db088a2e66a3b0c0bac156a5688c5b6d78f2030042a17
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Ford F-Series is a series of light-duty trucks marketed and manufactured by the Ford Motor Company since model year 1948 as a range of full-size pickup trucks — positioned between Ford's Ranger and Super Duty pickup trucks. Alongside the F-150 (introduced in 1975), the F-Series also includes the Super Duty series (introduced in 1999), which includes the heavier-duty F-250 through F-450 pickups, F-450/F-550 chassis cabs, and F-600/F-650/F-750 Class 6–8 commercial trucks.
+The most popular version of the model line is the F-150 pickup truck, currently in its fourteenth generation (introduced for the 2021 model year). From 1953 to 1983, the entry-level F-Series pickup was the 1⁄2 ton F-100. Starting in 1984, the F-150 became the entry-level. The F-150 has a long-running high-performance off-road trim level introduced for 2010, the (SVT) Raptor currently consisting of three generations. Production of the F-150 SVT Raptor ended in 2014 and was succeeded in 2017 by a new F-150 Raptor, which is based on the thirteenth and fourteenth generation F-150.
+The F-Series trucks have been developed into a wide range of design configurations.  Alongside medium-duty trucks and "Big Job" conventional trucks (the forerunners of the Ford L-series), the model line has been marketed as a chassis-cab truck and a panel van (a predecessor of the Ford E-Series). The F-Series has served as the platform for various full-sized Ford SUVs, including the Ford Bronco, Ford Expedition/Lincoln Navigator, and Ford Excursion. The F-Series has been marketed by its three North American brands: by Mercury as the M-Series (in Canada from 1948 to 1968), and by Lincoln in the 2000s, as the Blackwood and the later Mark LT (2010s for the latter in Mexico only).
+Since 1977, the F-Series has remained the best-selling pickup truck line in the United States; it has been the best-selling vehicle overall since 1981.  The F-Series has been the best-selling truck in Canada for over 50 years.  As of the 2018 model year, the F-Series generated $41 billion (~$50.3 billion in 2024) in annual revenue for Ford. Ford has sold over 43 million units of the trucks worldwide, making it the second best-selling automobile of all time. Currently, Ford manufactures the F-Series in four facilities in the United States.
+
+First generation (1948–1952)
+
+The first-generation F-Series pickup (known as the Ford Bonus-Built) was introduced in 1948 as a replacement for the previous car-based pickup line introduced in 1942. The F-Series was sold in eight different weight ratings, with pickup, panel truck, parcel delivery, cab-over engine (COE), conventional truck, and school-bus chassis body styles.
+
+Second generation (1953–1956)
+
+For the 1953 model year, Ford introduced a second generation of the F-Series trucks. Increased dimensions, improved engines, and an updated chassis were features of the second generation. In another change, the model nomenclature of the F-Series was expanded to three numbers; this remains in use in the present day. The half-ton F-1 became the F-100; the F-2 and F-3 were combined into the 3⁄4-ton F-250, while the F-4 became the one-ton F-350. Conventional F-Series trucks were F-500 to F-900; COE chassis were renamed C-Series trucks.
+While the cabs, doors, radiator support, inner fenders, and hoods are the same from 1953 to 1956 F-100 and F-250s (the fenders varied on F-250, F-350, and F-500, and long boxes were only available on the F-250), in 1956, the cab underwent a major revision. Centered around a wraparound windshield, the cab was given new doors, a redesigned dashboard, and an (optional) panoramic rear window. In line with Ford cars, the 1956 F-Series offered seat belts as an option.
+This was the final generation with separate front fenders.
+
+Third generation (1957–1960)
+
+Introduced in 1957, the third generation F-Series was a significant modernization and redesign. Front fenders became integrated into the body, and the new "Styleside" bed continued the smooth lines to the rear of the pickup.
+The cab-over F-Series was discontinued, having been replaced by the tilt-cab C-Series.
+In 1959, Ford began its first production of factory four-wheel-drive pickups.
+
+Fourth generation (1961–1966)
+
+Ford introduced a new style of pickup in 1961 with the fourth-generation F-Series. Longer and lower than its predecessors, these trucks had increased dimensions and new engine and gearbox choices. Additionally, the 1961–1963 models offered an optional unibody design with the cab and bed integrated. The traditional separate cab/bed was offered concurrently. The unibody proved unpopular, and Ford discontinued the option after the 1963 model year.
+In 1965, the F-Series was given a significant mid-cycle redesign. A completely new platform, including the "Twin I-Beam" front suspension, was introduced, and continued to be used until 1996 on the F-150, and is still used today in the F-250 and F-350 4×2.
+A 300 cubic inch (4.9 L) six cylinder inline engine was added for the F-series in 1965. It was essentially the standard Ford 240 cubic inch (3.9 L) truck six with a longer stroke.  Additionally, the Ranger name made its first appearance in 1965 on a Ford pickup; previously, the Ranger denoted a base model of the Edsel, but starting in 1965, it was used to denote a high-level styling package for F-Series pickups.
+
+Fifth generation (1967–1972)
+
+Introduced in 1967, the fifth-generation F-Series pickup was built on the same platform as the 1965 revision of the fourth generation. Dimensions were increased, engine options were expanded, and plusher trim levels became available during the fifth generation's production run.
+Changes during the 1967–1972 run were minimal, but notable. In 1968, to comply with FMVSS (Federal Motor Vehicle Safety Standards), marker lights were added to the rear bedside and front sides of the hood. 1970 saw a switch from metal bar style grillwork to the plastic eggcrate style.
+
+Sixth generation (1973–1979)
+
+The sixth-generation F-Series was introduced in 1973. This version of the F-Series continued to be built on the 1965 fourth-generation's revised platform, but with significant modernization and refinements, including front disc brakes, increased cabin dimensions, full double-wall bed construction, and increased use of galvanized steel.
+The FE engine series was discontinued in 1976 after a nearly 20-year run, replaced by the more modern 335 and 385 series engines.
+In 1975, the F-150 was introduced in between the F-100 and the F-250 to avoid certain emission control restrictions. For 1978, square headlights replaced the previous models' round ones on higher-trim-package models, such as Lariat and Ranger, and became standard equipment for 1979. Also for 1978, the Ford Bronco was redesigned into a variant of the F-Series pickup; 1979 was the last year that the 460 engine was available in a half-ton truck.
+
+Seventh generation (1980–1986)
+
+The seventh-generation F-Series was introduced for 1980, marking the first ground-up redesign of the model line since 1965. Alongside an all-new chassis, the pickup trucks received a completely new body. While distinguished by straighter body lines, the aerodynamics of the exterior were optimized to improve fuel economy. Sharing their cab structure with F-Series pickup trucks, medium-duty trucks (F-600 through F-800) underwent their first redesign since 1967.
+The powertrain line of this generation underwent multiple revisions through its production. At its launch, the engine line was largely carried over from 1979. While the 7.5L V8 was dropped entirely (in half-tons), a 4.2L V8 was introduced as the smallest V8 engine. For 1982, a 3.8L V6 became the standard engine for the F-100. For 1983, to improve the fuel efficiency of the model line, the M-Series engines (the 5.8L 351M and 6.6L 400 V8s) were dropped; the latter was replaced by the return of the 7.5L V8. In response to low demand and poor performance, the 4.2L V8 and 3.8L V6 were phased out in 1982 and 1983, respectively. For the F-250 and F-350, a 6.9L diesel V8 (sourced from a partnership with International Harvester) became an option for 1983. For 1984, a high-output version of the 5.8L V8 was introduced. The 5.0L V8 was fitted with fuel injection as standard equipment for 1986, becoming the first fuel-injected engine in an American-market pickup truck. The 4.9L was fuel injected on 1987 models.
+In line with the previous generation, the SuperCab and four-door crew cab made their return in 1980 and 1982, respectively. For the first time, a dual-rear-wheel version of the F-350 was offered as a pickup truck.
+For 1982, Ford revised the badging of the model line, replacing the "FORD" hood lettering with the Ford Blue Oval grille emblem, a design that remains in use on all F-Series trucks today (except the Raptor). The same year, the Ranger trims was dropped; the name shifted to the Ford Ranger compact pickup (replacing the Ford Courier). After 30 years as the smallest F-Series truck, the F-100 was dropped after 1983, eliminating model overlap with the F-150 (and payload overlap with the Ranger).
+
+This generation was the final version of the F-Series to offer a three-speed, column-shifted manual transmission; it is also the second-to-last vehicle sold in the United States with this configuration.
+
+Eighth generation (1987–1991)
+
+The eighth-generation F-Series was introduced for 1987 as a major revision of the 1980–1986 generation. While the cab's sheet metal was carried over, many body panels were revised, including a completely new front fascia; composite headlights, the first full size American truck to feature them; the interior also underwent a redesign. The long-running Flareside bed design was retired (until its return in the 1992 ninth-generation), with all examples produced with Styleside beds (except for a very small number of 1987 models).
+Following the 1986 transition of the 5-liter V8 to fuel injection, the 4.9-liter inline-six followed suit for 1987, with the 5.8- and 7.5-liter engines doing so for 1988; the F-Series became the first American pickup truck model line sold without a carbureted engine option. The same year, the 6.9-liter diesel V8 was increased in size to 7.3 liters. Following the discontinuation of the three-speed manual, a five-speed manual became standard equipment (a four-speed remained a special-order option until 1992). For 1989, an E4OD four-speed automatic (overdrive version of the C6 heavy-duty three-speed) was introduced.
+Slotted between the F-350 and F-600, the F-Super Duty was introduced in 1987 for the 1988 model year; an ancestor of the current F-450/F-550, the F-Super Duty was designed exclusively for chassis-cab applications.
+
+Ninth generation (1992–1997)
+
+The ninth-generation F-Series was introduced for 1992 as the second redesign of the 1980 F-Series architecture. Adapting design elements from the newly introduced Explorer and redesigned E-Series and Ranger, the F-Series received a slightly lower hood line, rounding the front fenders, bumper, and grille. The light-duty F-Series received a driver-side airbag starting in the 1994 model year.
+After a six-year hiatus, the Flareside bed made its return, becoming a sub-model of the F-150. To appeal to younger buyers, the bodywork of the Flareside bed was modernized, adapting the fenders of the dual-rear-wheel F-350 to a single-rear-wheel chassis. Also unlike previously, dual tanks became available on Flareside models, but only on 2WD models, and the Flareside bed was available with the SuperCab in addition to the regular cab.
+To commemorate the 75th anniversary of the first Ford factory-produced truck (the 1917 Ford Model TT), Ford offered a 75th-anniversary package on its 1992 F-Series, consisting of a stripe package, an argent-colored step bumper, and special 75th-anniversary logos. In response to the Chevrolet 454SS pickup truck, Ford introduced the SVT Lightning, powered by a 240 hp 5.8L V8.
+For 1993, a turbocharger became available on the 7.3L "IDI" diesel. In the middle of the 1994 model year (referred to as "1994.5"), International replaced the IDI with the new 7.3L T444E turbo diesel, the first engine branded as a Ford Power Stroke. While sharing its predecessor's displacement, the engine was an entirely new design.
+For the 1997 model year, the ninth generation was gradually phased out of production; the F-150 was replaced by the tenth-generation F-Series (see below), with the F-250 (rebranded as the F-250 Heavy Duty) and F-350 remaining in production through the 1997 model year. Introduced in mid-1998 (as 1999 models), the larger F-Series trucks (and the F-Super Duty) were replaced by the Ford Super Duty line of pickups and chassis-cabs.
+
+Tenth generation (1997–2004)
+
+For the 1997 model year, Ford made a substantial change to the F-Series range of trucks, splitting its pickup line into two vehicle families. From the 1970s to the 1990s, pickup trucks had transitioned in usage. Alongside vehicles designed exclusively for work use, the market segment saw a major increase in demand for dual-purpose vehicles for both work and personal use, effectively serving as a second car. To further expand its growing market share, Ford sought to develop vehicles for both types of buyers, repackaging the F-150 in a more contemporary design (as a larger version of the Ranger) while retaining the heavier-duty F-250 and F-350 for customers interested in a work-use vehicle.
+The tenth-generation F-Series was introduced on January 25, 1996 as a 1997 model. Initially released solely as the F-150, a higher-GVWR F-250 was released later in 1997. The model line was marketed alongside its predecessor, pared down to the F-250HD and F-350; for 1999, the aforementioned HD models were replaced by the Super Duty trucks. The F-250 "Light Duty" was replaced by the F-150 7700 for the 2000 model year.
+In the most extensive redesign of the F-Series in 17 years, the chassis received fully independent front suspension, ending the use of Twin-I-Beam front axles. Sharing only the transmissions with its predecessor, the 1997 F-150 received a range of engines new to the F-Series, including a 4.2L V6 and 4.6L V8; a 5.4L V8 was added during 1997. Introduced in the full-sized Crown Victoria/Grand Marquis/Town Car sedans, the Modular/Triton V8 was the first overhead-camshaft engine to be installed in a full-size pickup truck.
+Distinguished by its rounded exterior, the tenth generation was again offered in standard- and extended-cab (SuperCab) configurations. To improve rear-seat access, a rear-hinged third door (curbside) was introduced for the SuperCab; following its popularity, the SuperCab received a fourth door for 1999. For 2001, the F-150 became the first "1⁄2-ton" truck offered as a crew cab with full-sized doors; produced with a slightly shortened bed, the F-150 SuperCrew shared the length of a standard-bed SuperCab.
+The SVT Lightning made its return for 1999, powered by a supercharged version of the 5.4L V8; over 28,000 were produced from 1999 to 2004. For 2002, Lincoln-Mercury introduced the Lincoln Blackwood, the first Lincoln pickup. Sharing the front bodywork of the Lincoln Navigator SUV and the same cab and chassis as the F-150 SuperCrew, the Blackwood was designed with a model-exclusive bed and was sold only in black. Due to very poor sales, the model line was discontinued after 2002.
+For 1999, Ford redesigned the F-250 and F-350, introducing them as the first generation of the Ford F-Series Super Duty model line. While remaining part of the F-Series, the Super Duty trucks were designed with a different chassis, powertrain, and body design, as they are developed for heavier-duty work use. For 2000, the Super Duty line was expanded to include the medium-duty truck (F-650/F-750) series, designed in a joint venture with Navistar International.
+
+Eleventh generation (2004–2008)
+
+For the 2004 model year, the F-150 was redesigned on an all-new platform, which has a fully boxed-in frame and introduced rear shocks to mount outside of the frame for decreased wheel hop and improved ride quality. This new body style kept the fully independent front suspension introduced in the last generation, but added vacuum-driven front wheel hubs for the four-wheel drive (4WD) versions. The previous generation had full-time connected front axles. The improvement saves fuel and by default goes into a wheel-locked position. Should a failure occur in the vacuum solenoid, system, or hoses, the wheel hub defaults to a 4WD position to keep from leaving a driver stranded. Internally, a three-valve version of the 5.4L V8 was introduced and replaced the previous two-valve version. Externally, the 11th-generation model was different from its predecessor, with sharper-edged styling; a major change was the adoption of the stepped driver's window from the Super Duty trucks. Regardless of cab type, all F-150s were given four doors, with the rear doors on the regular cab providing access to behind-the-seat storage. Ford also introduced additional variants of the F-150. The FX4 Off-Road package available since the 2002 model year became its own trim level. A sportier version of the F-150 became available as STX, replaced by FX2 Sport in 2007.
+From 2005 to 2008, Lincoln-Mercury dealers sold this version of the F-150 as the Lincoln Mark LT, replacing the Blackwood.
+
+In late 2007 for the 2008 model year, the Super Duty trucks were given an all-new platform. While using the same bed and cabin as before, these are distinguished from their predecessors by an all-new interior and a much larger grille and headlamps. Previously available only as a chassis-cab model, the F-450 now was available as a pickup directly from Ford.
+
+Twelfth generation (2009–2014)
+
+The twelfth-generation F-150 was introduced for the 2009 model year as an update of the Ford full-size truck platform. Similar to its predecessor, these trucks are distinguished by their Super Duty–style grilles (adding a third horizontal bar) and Edge/Expedition-style headlights. Regular Cab models now have two doors again instead of four from the last generation. The manual transmission was dropped for the first time, and the Flareside bed was continued until the end of 2009 (thus making it the very last factory stepside-style pickup truck to date). Outside of Mexico, the Lincoln Mark LT was replaced by the F-150 Platinum. A new model for 2010 included the SVT Raptor, a dedicated off-road model. Initially only available in a SuperCab configuration, a SuperCrew was added for 2011.
+For the 2011 model year, Ford shifted its electronics from a general electric module base to the computerized and programmable body control module, allowing for fewer parts differences and programmable upgrade options from the dealer or factory.
+As part of a major focus on fuel economy, the entire engine lineup for the F-150 was updated for the 2011 model year. Ford reintroduced the 5.0L V8 in the F-Series with its new Coyote dual overhead cam TiVVT engine producing up to 360 hp. The F-150 also gained a new 3.7L base V6 engine, and a powerful twin-turbocharged 3.5L V6, dubbed EcoBoost. A six-speed automatic transmission became the only version. Other modifications include the addition of a Nexteer Automotive electric power steering system on most models.
+A recent study conducted by iSeeCars.com and published on the Ford Motor Company website listed the Ford F-250 Super Duty as the longest-lasting vehicle and Expedition, Explorer, and F-150 among the top-20 longest-lasting vehicles.
+
+Thirteenth generation (2015–2020)
+
+Ford introduced the 13th-generation F-Series for model year 2015. Previewed by the Ford Atlas concept vehicle at the 2013 Detroit Auto Show, the new design was noted for its extensive use of aluminum to reduce curb weight by nearly 750 pounds without reducing its exterior footprint. Aluminum body stampings replaced steel with the exception of the firewall. The frame itself remained high-strength steel. To test the durability of the aluminum-intensive design during development, Ford entered camouflaged prototypes into the Baja 1000 endurance race, where the vehicles finished.
+The 2015 F-150 was the first pickup truck with adaptive cruise control, using radar sensors on the front of the vehicle to maintain a set following distance from the vehicle ahead, decreasing speed if necessary.
+The 3.7L V6 was dropped, replaced by a naturally-aspirated 3.5L V6 as the standard engine, with a 2.7L EcoBoost V6 added alongside the 3.5L EcoBoost V6. While the 6.2L V8 was withdrawn, the 5.0L “Coyote” V8 continued as an option, with a six-speed automatic as the sole transmission.
+For the 2017 model year, Ford debuted the second-generation 3.5L EcoBoost along with the new 10-speed 10R80 transmission. The naturally-aspirated 3.5L V6, 2.7L EcoBoost, and 5.0L Coyote remained the same and both continued to be mated with the 6-speed 6R80 transmission. Following the introduction of the 2017 Super Duty model line, the F-Series (F-150 through F-550 and Ford Raptor) were again manufactured using a common cab, for the first time since 1996.
+For the 2018 model year, the F-150 received a mid-cycle redesign, revealed at the 2017 New York International Auto Show. The three-bar grille design was changed to a two-bar design that debuted on the 2017 Super Duty model line. The naturally-aspirated 3.5L V6 was replaced by a 3.3L V6 mated to a six-speed transmission. The 2.7L EcoBoost V6 and 5.0L V8 engines were fitted with a 10-speed automatic (from the Raptor) and stop-start capability (previously only from the 2.7L EcoBoost). In 2018, a Power Stroke diesel engine was fitted to the F-150 for the first time, as Ford introduced a 250 hp/440 lb-ft torque 3.0L turbocharged V6 (from the "Lion" lineup of engines shared by PSA Peugeot Citroën and Jaguar Land Rover). Also new for 2018 was Pre-Collision Assist with Pedestrian Detection and Adaptive Cruise Control with Stop and Go.
+The SuperCrew version of the 2018 F-150 received a IIHS Top Safety Pick rating.
+
+Fourteenth generation (2021–present)
+
+The 14th-generation Ford F-Series was introduced for MY 2021 through a streamed Internet presentation on June 25, 2020. Despite resembling the 13th generation, every exterior panel was revised.
+Powertrains include a 3.3 L V6, 2.7L and 3.5 L EcoBoost twin-turbo V6s, a 5.0 L V8, and a 3.0 L diesel V6. Marketed as PowerBoost, an optional gasoline/electric hybrid powertrain has been offered, pairing an electric motor with the 3.5 L EcoBoost V6. The six-speed automatic has now been dropped, with all engines paired to a 10-speed automatic. The 5.0 L V8 has received a cylinder deactivation system, marketed as Variable Displacement Engine technology, similar to GM's Active Fuel Management and Chrysler's Multi-Displacement System.
+Along with exterior aerodynamic refinements, interior revisions included fold-flat front seats and larger touchscreens (including a digital instrument panel); as an option, Active Drive Assist was offered as a driver-assistance system.
+A new F-150 Raptor was announced in January 2021, with a high-output version of the 3.5 L V6 EcoBoost engine.
+A fully electric version of the F-150 was unveiled on May 19, 2021, marketed as the Ford F-150 Lightning.
+For the 2024 model year, the F-150 received a mid-cycle refresh, with revised grilles, taillights, and headlights. Now standard on all models are the LCD-based instrument cluster, 12" touch-screen infotainment system, and LED headlights. Among the mechanical changes are the 3.3 L V6 and SuperCab with 8' bed being withdrawn from the lineup, as well as four-wheel drive being standard on Lariat and above trims, SuperCrew with 6.5' bed, and PowerBoost models. The Limited trim becomes the "Platinum Plus" package for the Platinum trim.
+
+Special models
+Throughout its production, variants of the Ford F-Series has been produced to attract buyers. While these variants primarily consist of trim packages, others are high-performance versions while other variants were designed with various means of improving functionality.
+
+Unibody F-Series (1961–1962)
+For 1961 into part of the 1963 model year, the Ford F-Series was offered with a third body configuration, integrating the Styleside bed with the cab. With the pickup bed stampings welded directly to the cab before both assemblies were mounted to the frame, the design simplified the assembly and paint process (the configuration was similar to that of the Ford Ranchero). Following a poor market reception, the unibody pickup bed design was withdrawn during the 1963 model year.
+
+Specials (1962–1979)
+From 1961 to 1979, Ford offered several Special option packages for the F-Series, typically designed for owners with specific uses for their vehicles. For 1961, the Camper Special option package was introduced; designed for owners of slide-in truck campers, the option package featured prewiring for the camper, heavy-duty transmission and engine cooling, and a larger alternator. For 1968, Ford introduced the Contractor's Special, and Farm and Ranch Special, which featured toolboxes and heavier-duty suspension. The Explorer Special was introduced as a lower-priced variant of the Ranger trim. The Trailer Special was offered with trailer brake controller, heavy-duty radiator, transmission cooler, and tow hitch.
+In 1980, the Special option packages were withdrawn as part of the F-Series redesign, while a number of features continued as stand-alone options; the Explorer continued as a variant of the Ranger trim through the 1986 model year.
+
+F-150 Nite (1991–1992)
+Sold from 1991 to 1992 on the Ford F-150 XLT Lariat, the Nite special edition was a monochromatic option package, featuring black paint and trim with a multicolor accent stripe. For 1991, it was exclusive to the regular-cab F-150; for 1992, it was available on all body styles of the F-150 and introduced on the Ford Bronco.
+The Nite edition was available with two-wheel drive or four-wheel drive with either the 5.0L or 5.8L V8; it also included a sport suspension and alloy wheels on 235/75R15 white-letter tires.
+
+Eddie Bauer (1994–1996)
+For 1994, Ford introduced the Eddie Bauer trim level for the F-150. In a fashion similar to the same trim packages on the Aerostar, Bronco, and Explorer/Bronco II, it consisted of outdoors-themed interior trim with two-tone exterior paint.
+
+SVT Lightning
+
+1993–1995
+
+Introduced as a 1993 model, the Ford Lightning is a high-performance version of the F-150 that was produced by the Ford Special Vehicle Team (SVT). Intended as a competitor for the Chevrolet 454SS, the  Lightning was derived from the F-150; to improve its handling, extensive modifications were made to the front and rear suspension and frame. Powered by a 240 hp version of the 5.8L V8, the Lightning used a heavy-duty 4-speed automatic transmission from the F-350 (normally paired with the 7.5L V8 or 7.3L diesel V8). While slower in acceleration than the GMC Syclone, the Lightning retained nearly all of the towing and payload capacity of a standard Ford F-150. Produced from 1993 to 1995, the first-generation Lightning was withdrawn as Ford readied the 1997 Ford F-150 for sale.
+
+1999–2004
+
+After a three-year hiatus, Ford released a second generation of the SVT Lightning for the 1999 model year. In line with its 1993–1995 predecessor, the second-generation Lightning was based on the F-150 with a number of suspension modifications; in a design change, all examples were produced with a Flareside bed. In place of a model-specific engine, the second-generation was powered by a supercharged version of the 5.4L V8 from the F-150, producing 360 hp (increased to 380 hp in 2001). As before, the higher-output engine was paired with a heavier-duty transmission from the F-350 pickup.
+For the 2004 redesign of the Ford F-150, the SVT Lightning was not included, leaving 2004 as the final year for the model line. While of an entirely different design focus from the SVT Lightning, the SVT/Ford Raptor is the succeeding generation of high-performance Ford F-Series pickup trucks.
+
+Harley-Davidson Edition (2000–2012)
+From 2000 to 2012, the Harley-Davidson Edition was an option package available on the F-150. Primarily an appearance package featuring monochromatic black trim, the edition included a slightly detuned version of the supercharged 5.4L V8 engine from the SVT Lightning from 2002 to 2003, and a naturally-aspirated 5.4L from 2004 to 2010. For the 2011 model year, the 5.4L engine was replaced with a naturally-aspirated 6.2L V8. In 2003, a 100th Anniversary Edition was produced for F-150 SuperCrew trucks. For 2004, the Harley-Davidson option package became available for F-250/F-350 Super Duty trucks. After 2008, the option package adopted many of the options featured from the Platinum trim level, featuring leather seating produced from materials reserved for Harley-Davidson biker jackets.
+For 2013, the Harley-Davidson Edition was replaced by the Limited trim level, retaining a monochromatic exterior appearance (shifting past motorcycle-themed trim).
+
+SVT Raptor (2010–2014); Raptor (2017–present)
+
+For 2010, the SVT Raptor was introduced as the second F-Series truck upgraded by Ford SVT.  In contrast to the enhanced on-road performance of the SVT Lightning, the Raptor features upgraded off-road capability in line with a Baja 1000 desert racing truck (though preserving its status as a road-legal vehicle). Sharing only its cab with the F-150, the Raptor is fitted with a long-travel suspension, larger tires, and a model-exclusive front fascia. For the first time on a Ford vehicle since 1983, the Ford Blue Oval emblem was replaced by FORD lettering.
+For the 2015 redesign of the F-Series, the model was placed on a two-year hiatus, with a second-generation Raptor (dropping the SVT prefix) released for 2017 production. Now derived from the thirteenth-generation F-Series, the Raptor adopted an aluminum-intensive body (reducing its weight by over 500 pounds). In another change, the V8 engine of the previous generation was replaced by a twin-turbocharged V6 unit.
+The third-generation Raptor was released for 2021 (coinciding with the release of the fourteenth-generation F-Series). The rear suspension switched to coil springs (dropping the previous leaf springs), larger tires added, and the SuperCrew becoming the sole cab configuration. For 2023, a V8 engine returned to the Raptor as an option.
+
+F-150 King Ranch (2001–present)
+In 2001, Ford's marketing department leveraged a partnership with the 825,000-acre King Ranch in south Texas, which is the largest ranch in both Texas and the United States and which operates a large fleet of Ford trucks. The truck was emblazoned with the King Ranch's "Running W" brand and upholstered in saddle leather. It was the industry's first full-size lightweight pickup truck with a full rear passenger compartment and four full-size doors, becoming the SuperCrew cab. Along with the Limited and Platinum, the King Ranch continues to comprise the luxury end of the F-150 spectrum. 40% of King Ranch F-150 sales are in Texas, Ford's largest pickup truck market.
+
+F-150 Platinum (2009–present)
+
+Introduced for 2009, the Platinum is a luxury-oriented trim of the Ford F-150. Effectively replacing the Lincoln Mark LT in the United States and Canada (though its production continued through 2014 in Mexico), the Platinum adopted many of the luxury features and content from the Mark LT with more subdued exterior styling (the Platinum was fitted with an egg-crate grille similar to early models of the Ford Expedition).
+In 2013, Ford began use of the Platinum trim for Super Duty trucks, from the F-250 to the F-450 pickup trucks. Until 2016, the Platinum trim was an add-on package to a Super Duty that was ordered as a Lariat. 2017 saw the Platinum become a separate trim level.
+
+F-150 Tremor (2014, 2021–present)
+For the 2014 model year, Ford introduced the Tremor model of the F-150. The Tremor was released as a high-performance sport truck for street truck enthusiasts. The regular-cab Tremor is based on the style of the FX Appearance Package with the 3.5L EcoBoost engine and a 4.10:1 rear axle ratio. The interior uses a console-mounted shifter, custom bucket seats, and a flow-through center console not found in any other F-150. The Tremor is available in both 4×2 and 4×4. Both options feature an electronic-locking rear differential and customized suspension. There were 2,230 Tremors built.
+Ford reintroduced the Tremor with the 14th generation F-150 in 2021 as a standalone model, slotted between the FX4 and Raptor, with an updated 3.5L EcoBoost, producing 400 horsepower and 500 lb-ft of torque paired with a 10-speed automatic transmission. The Tremor is available only as a SuperCrew model with a 5 1/2-foot bed with three specific trim levels (Base, Mid, and High) that offer updated luxury and convenience items. The updated Tremor features a revised shock and suspension system, unique external styling kit, custom seats, vented hood, powder-coated running boards, and various skid and bash plates. For the 2023 model year, Ford also offered the Tremor with the 5.0L Coyote engine, producing 400 horsepower and 410 lb-ft of torque. Both engines are paired with Ford's 10-speed automatic transmission. The trim levels were reduced to Standard and High.
+
+Ford F-150 Lightning
+
+At the 2019 Detroit Auto Show in January 2019, Ford announced the intention to produce a fully-electric light truck. Prototype test mules on an existing F-150 chassis were tested during 2019, including a record-setting demonstration test tow of 1,250,000 pounds (570,000 kg) on rails.
+Ford unveiled the truck, called the F-150 Lightning, on May 19, 2021. It intends to begin production in the spring of 2022. Ford received 44,500 orders in the first two days after the announcement, and a further 25,000 in the next two days after that. The low-end configuration has 426 horsepower (318 kW; 432 PS), 240-mile (390 km) range, and its smaller battery allows a 2,000 lb (907 kg) payload. The high-end configuration has 563 horsepower (420 kW; 571 PS), 300+ mile capacity, 0–60 mph (0–97 km/h) times in the mid-four-second range, and towing capacity of 10,000 lb (4,536 kg). Both models have 775 lb⋅ft (1,051 N⋅m) of torque, full-time four-wheel-drive, independent rear suspension, and currently come in a crew-cab configuration only, with 5.5' bed. The active suspension provides real-time load weighing function. Like Tesla, the Ford F-150 Lightning has over-the-air software updates, and a significant software driving aids which allow limited hands-off highway driving, but fall short of full self-driving. The F-150 Lightning provides household-oriented V2G power, which can meet the electrical needs of a typical American home for three to ten days, and supply up to 9.6 kW of power through eleven 120V and 240V electrical outlets distributed around the truck.
+As of May 27, 2021, Ford has begun discussing the other vehicles beyond the F-Series, such as the Expedition and Navigator, which will be underpinned by their full-size EV truck chassis, as well as the smaller chassis which will be used for the Bronco, Explorer, and Aviator.
+
+Variants
+
+Medium-duty trucks
+
+For most of its production, the F-Series was sold in a medium-duty conventional truck configuration alongside the traditional pickup trucks. Beginning in 1948 with the 11⁄2 ton F-5 (later F-500), the medium-duty trucks ranged up to the F-8 (F-800). Prior to the 1957 introduction of the Ford C-Series tilt-cab, the medium-duty range was offered as both a conventional and in a COE (cabover) configuration.
+Following the introduction of the fifth-generation F-Series in 1967, the medium-duty trucks were designed separately from the pickup truck range. Although remaining part of the F-Series range, the medium-duty trucks shared only the cab and interior with the F-Series pickup trucks. Since 1967, the cab design has changed only in 1980 and in 2000. Redesigned on an all-new chassis, the 2016 F-Series medium-duty trucks retain an updated version of the 2000–2015 F-650/F-750 cab.
+The medium-duty F-Series served as the donor platform for the B-Series cowled bus chassis produced from 1948 to 1998. Produced primarily for school bus bodies, the B-Series was discontinued as part of the sale of the Ford heavy-truck line to Freightliner in 1996.
+
+Heavy-duty trucks
+Above its medium-duty truck ranges, the F-Series also served as the basis of its commercial heavy truck lines for four generations. In 1951, Ford debuted the "Big Job" name for its F-7 and F-8 conventional trucks; the latter was optionally fitted with tandem rear axles.
+For 1958, the Big Job trucks were replaced by the Extra Heavy Duty line. Coinciding with the debut of the Super Duty V8 engine line, trucks fitted with those engines were denoted as Super Duty trucks.
+In 1963, Ford introduced the N-Series short-hood conventional, replacing the F-900 Super Duty/Extra Heavy Duty. The first conventional-hood Ford with a diesel engine, the N-Series sourced its cab from the F-Series, pairing it with a shorter, wider hood and mounting it higher.
+Ford introduced the L-Series "Louisville" line of conventional trucks in 1970, ending all F-Series commonality with its heavy commercial trucks. The L-Series/Aeromax remained in production through 1998, coinciding with the sale of the Ford heavy-truck line to Freightliner (who sold the line as Sterling Trucks through 2009). Outside North America, Ford currently markets the Ford Cargo and Ford F-MAX COE trucks.
+
+Vans
+
+For the first three generations of the F-Series, Ford offered the model line in a panel van configuration, featuring an enclosed body for carrying cargo. In contrast to General Motors, Ford never offered a passenger "carryall" variant of this body (competing against the Chevrolet/GMC Suburban or the International Travelall). For 1961, the panel van was discontinued, following the introduction of the Ford Econoline van.
+From 1968 to current production, the Econoline/Club Wagon/E-Series vans have a degree of shared powertrain commonality with F-Series trucks; during the 1970s, some body components were shared.  While currently only produced as a cutaway chassis for commercial sale, the E-Series still shares its powertrain with current-generation Ford Super Duty trucks.
+
+B-Series Carryall
+Produced exclusively for Mexican and South American markets, the Ford B-Series Carryall (not to be confused with the Ford B series bus chassis) was a station wagon variant of the F-Series pickup sold from 1963 to 1994. Originally, trading laws had prevented the exportation of the US produced Ford Econoline van to Mexican and South American regions. To solve this issue, Ford decided to use the F-Series chassis (which was already being sold in Mexico and South America) to create a covered van as a substitute for the Econoline not being viable for export. The B-Series Carryall used the chassis, running gear, front fascia and doors of the Ford F-100 (later F-150) pickup, with the van conversion being outsourced to other companies and then sold through Mexican and South American Ford dealerships.
+The original model, based on the fourth generation F-100 and sold as the B-100, was available as a two-door panel van or a two-door station wagon with seating for up to 10.
+For 1967, the B-100 shifted to the fifth generation F-100 platform and gained the option of a three-door station wagon body style with a rear door exclusively on the right hand side of the vehicle. Versions sold in Argentina were known as the B-150.
+For 1973, the B-100 adopted the sixth generation F-100 platform, with specific South American markets also offering a B-250 Carryall, based on the three-quarter ton F-250.
+For 1980, the B-100 was renamed the B-150 in all markets and shifted to the seventh generation F-150 chassis.
+For 1987, the model was renamed B-200 and shifted to the eighth generation F-150 chassis.
+In 1994, the North American Free Trade Agreement was established, which allowed for the exportation of the US produced Ford Econoline van to Mexican and South American markets due to more lenient trade laws. This led to the discontinuation of the B-Series Carryall the same year, with it being unofficially replaced by the Econoline.
+
+Export
+
+As of 2018, outside of the United States, Canada, and Mexico, the Ford F-150 is officially sold in most Caribbean countries (except Trinidad and Tobago, Saint Kitts and Nevis, and Cuba), Suriname, Ecuador, Peru, Chile, the Middle East (including Afghanistan), Iceland, China, Cambodia, the Philippines, Angola, Burkina Faso, Cameroon, Cape Verde, Democratic Republic of Congo, Ethiopia, the French Overseas Collectivities of French Polynesia and New Caledonia, Gabon, Ghana, Ivory Coast, Liberia, Nigeria, Senegal, Sierra Leone, Madagascar, the Dutch territories of Aruba, Curaçao, Saint Maarten, and the British overseas territory of the Cayman Islands. The SVT Raptor is sold in the United States, Canada, Mexico, the Middle East (including Afghanistan), China, Ecuador, Chile, and Peru. Both are available in LHD only.
+In Mexico, the F-150 (XLT and higher trim levels) is called the "Ford Lobo" (Ford Wolf) while the F-150 SVT Raptor is called the "Ford Lobo Raptor." The F-150 XL remains as F-150 XL.
+There is a strong grey market presence of Ford F-Series trucks around the world, most notably in Europe, China, and South Korea, and usually driven by wealthy car enthusiasts, as the higher-end trim models are the most sought-after versions. In Australia, they are popular with those wanting to tow heavier trailers and caravans.
+In Bolivia, Ford F-series truck are imported from the United States. F-150 single, super cab and crew cab are available with short and long bed. F-series Heavy Duty like F-250, F-350 are available in Super Cab and Crew cab with long bed, but the F-450 is available only in a chassis version. The F-150 Raptor is available, too.
+In the United Kingdom, most imported Ford F-Series trucks are the F-150 model in LHD, and usually the higher-end four door versions.
+
+Motorsports
+
+The truck won the San Felipe 250 eight times between 1999 and 2007.
+The F-Series represents Ford in the NASCAR Craftsman Truck Series. Greg Biffle won the 2000 NASCAR Craftsman Truck Series Championship, being the only Ford driver to do so. Ford also won the Manufacturers' Championship in 1999 and 2000.
+Drivers such as Roger Norman and Larry Roeseler won the Primm 300 in 2003, 2007, and 2008.
+In 2008, Ford announced its entrance into the Baja 1000 class-eight race for moderately modified, full-size pickups. The driver of record was Steve Oligos, supported by co-drivers Randy Merritt, Greg Foutz, and Bud Brutsman. The vehicle was built with collaboration between the Ford Special Vehicle Team (SVT), Ford Racing, and Foutz Motorsports, Inc. The Ford F-150 SVT Raptor R completed the 2008 41st Tecate SCORE Baja 1000 race in 25.28:10, and ranked third in its class. Tavo Vildósola and Gus Vildósola won the event in 2010.
+In the Best in the Desert race series, an F-150 SVT Raptor R completed the "Terrible's 250" race, placing second overall in the class 8000.
+In January 2010, a single Raptor SVT (No. 439), driven by Chilean driver Javier Campillay, competed in the Argentina–Chile Dakar Rally. However, the pickup was unable to finish because of a catch-up crash with another car in the middle of the road during stage seven. In January 2011, two Raptors started in the Argentina–Chile Dakar Rally in Buenos Aires, with Campillay driving the more reliable Raptor (No. 375), and American female driver Sue Mead driving a T2 Raptor (No. 374). Mead crossed the finish line in Buenos Aires and won the "super production" class, the first North American class win in Dakar history. Campillay was unable to finish the 12th stage after losing time because of mechanical failure during the 11th stage, which led to his disqualification for failing to reach the race camp by the designated deadline.
+
+Police usage
+
+Ford F-150s are commonly used as police trucks. They are primarily used to patrol off-road areas such as mountains, forests, flooded areas, shorelines, and beaches, where a standard police car has difficulty maneuvering. In addition, they are often used for transporting SWAT teams, and can even have facilities to securely detain and transport a small number of suspects. Other common police uses include equipping the truck with cages for animal control or using them to transport mounted units or police boats.
+
+Awards and recognition
+The Ford F-150 has won numerous awards; in 2009 alone, it received:
+
+Motor Trend 2009 Truck of the Year Award
+2009 Best Redesigned Vehicle from Kelley Blue Book's kbb.com
+Top honors as the "truck of Texas" as well as the "best luxury pickup" for the 2009 F-150 King Ranch from Texas Auto Writers Association
+Automotive Excellence Award in the Workhorse Category from Popular Mechanics
+"Top safety pick" from the Insurance Institute for Highway Safety for its standard safety technology: "Safety Canopy" side-curtain air bags and AdvanceTrac with roll stability control
+Residual Value Award from Automotive Leasing Guide (ALG) for retaining the highest percentage of its original price among 2009 full-size light-duty pickups at the end of a conventional three-year lease, based on ALG projections
+Motor Trend's Truck Trend Top 5 Pickups from Specialty Equipment Market Association (SEMA) for 2009 Ford F-150 Heavy Duty DeWalt Contractor Concept
+Accessory-Friendly Pickup Design Award from SEMA
+"Best overall half-ton pickup" from PickupTrucks.com
+
+Sales
+
+See also
+Ford F-Series (medium-duty)
+Ford Super Duty
+
+References
+
+External links
+
+Official website

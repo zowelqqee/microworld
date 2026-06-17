@@ -1,0 +1,15 @@
+{
+  "title": "Atomic Energy",
+  "normalized_title": "Atomic energy",
+  "pageid": 177089,
+  "revision_id": 1356695720,
+  "timestamp": "2026-05-29T07:33:41Z",
+  "source_url": "https://en.wikipedia.org/wiki/Atomic_energy",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Atomic+Energy",
+  "retrieved_at": "2026-06-17T20:43:57Z",
+  "raw_text": "Atomic energy or energy of atoms is energy carried by atoms.  The term originated in 1903 when Ernest Rutherford began to speak of the possibility of atomic energy.  H. G. Wells popularized the phrase \"splitting the atom\", before discovery of the atomic nucleus.  \nAtomic energy includes:\n\nNuclear binding energy, the energy required to split a nucleus of an atom.\nNuclear potential energy, the potential energy of the particles inside an atomic nucleus.\nNuclear reaction, a process in which nuclei or nuclear particles interact, resulting in products different from the initial ones; see also nuclear fission and nuclear fusion.\nRadioactive decay, the set of various processes by which unstable atomic nuclei (nuclides) emit subatomic particles.\nAtomic energy is the source of nuclear power, which uses sustained nuclear fission to boil water. It is also the source of the explosive force of an atomic bomb.\n\n\nSee also\nAtomic Age\nIndex of environmental articles\n\n\nReferences",
+  "raw_text_sha256": "a2e9a9629b37186a72cc56f0352901b2d4088f0ec2e388f892a59c930564c063",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

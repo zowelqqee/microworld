@@ -1,0 +1,132 @@
+[
+  {
+    "predicate": "is_a",
+    "total": 204,
+    "promotion_candidate": 137,
+    "proposal_only": 0,
+    "needs_review": 62,
+    "reject_recommendation": 5,
+    "candidate_rate": 0.6716,
+    "top_reasons": {
+      "source_page_subject_mismatch": 60,
+      "current_or_volatile": 5,
+      "definition_broad_class": 1,
+      "definition_too_broad": 1
+    }
+  },
+  {
+    "predicate": "founded_by",
+    "total": 13,
+    "promotion_candidate": 13,
+    "proposal_only": 0,
+    "needs_review": 0,
+    "reject_recommendation": 0,
+    "candidate_rate": 1.0,
+    "top_reasons": {}
+  },
+  {
+    "predicate": "founded",
+    "total": 1,
+    "promotion_candidate": 1,
+    "proposal_only": 0,
+    "needs_review": 0,
+    "reject_recommendation": 0,
+    "candidate_rate": 1.0,
+    "top_reasons": {}
+  },
+  {
+    "predicate": "publishes",
+    "total": 1,
+    "promotion_candidate": 1,
+    "proposal_only": 0,
+    "needs_review": 0,
+    "reject_recommendation": 0,
+    "candidate_rate": 1.0,
+    "top_reasons": {}
+  },
+  {
+    "predicate": "developed_by",
+    "total": 3,
+    "promotion_candidate": 0,
+    "proposal_only": 0,
+    "needs_review": 3,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "predicate_high_review": 3
+    }
+  },
+  {
+    "predicate": "develops",
+    "total": 10,
+    "promotion_candidate": 0,
+    "proposal_only": 0,
+    "needs_review": 7,
+    "reject_recommendation": 3,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "predicate_high_review": 7,
+      "current_or_volatile": 3
+    }
+  },
+  {
+    "predicate": "operated_by",
+    "total": 2,
+    "promotion_candidate": 0,
+    "proposal_only": 2,
+    "needs_review": 0,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "predicate_not_allowlisted": 2
+    }
+  },
+  {
+    "predicate": "owned_by",
+    "total": 10,
+    "promotion_candidate": 0,
+    "proposal_only": 0,
+    "needs_review": 10,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "predicate_high_review": 10
+    }
+  },
+  {
+    "predicate": "produces",
+    "total": 2,
+    "promotion_candidate": 0,
+    "proposal_only": 2,
+    "needs_review": 0,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "predicate_not_allowlisted": 2
+    }
+  },
+  {
+    "predicate": "service_of",
+    "total": 2,
+    "promotion_candidate": 0,
+    "proposal_only": 0,
+    "needs_review": 2,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "missing_positive_qa_coverage": 2
+    }
+  },
+  {
+    "predicate": "subsidiary_of",
+    "total": 1,
+    "promotion_candidate": 0,
+    "proposal_only": 0,
+    "needs_review": 1,
+    "reject_recommendation": 0,
+    "candidate_rate": 0.0,
+    "top_reasons": {
+      "missing_positive_qa_coverage": 1
+    }
+  }
+]

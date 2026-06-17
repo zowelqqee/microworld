@@ -1,0 +1,27 @@
+{
+  "requests_total": 29,
+  "source_document_requests_total": 26,
+  "requests_by_category": {
+    "missing_entity_relation": 1,
+    "missing_organization_relation": 5,
+    "missing_policy_explanation": 5,
+    "missing_product_relation": 6,
+    "missing_source_qualified_fact": 12
+  },
+  "requests_by_risk": {
+    "high": 12,
+    "low": 5,
+    "medium": 12
+  },
+  "missing_inputs_total": 36,
+  "skipped_dangerous_inputs_total": 7,
+  "deduplicated_count": 0,
+  "safe_for_general_runtime": false,
+  "request_only": true,
+  "auto_ingest": false,
+  "auto_promote": false,
+  "trusted_memory_modified": false,
+  "accepted_overlay_modified": false,
+  "promoted_overlay_modified": false,
+  "network_calls": false
+}

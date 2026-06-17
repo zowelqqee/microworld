@@ -1,0 +1,15 @@
+{
+  "title": "Yang Dan",
+  "normalized_title": "Yang Dan",
+  "pageid": 58902225,
+  "revision_id": 869575547,
+  "timestamp": "2018-11-19T13:42:31Z",
+  "source_url": "https://en.wikipedia.org/wiki/Yang_Dan",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Yang+Dan",
+  "retrieved_at": "2026-06-15T12:36:38Z",
+  "raw_text": "Yang Dan or Dan Yang is the name of:\n\nYang Dan (chemist) (杨丹), Hong Kong-Chinese chemist\nDan D. Yang (杨丹), businesswoman\nYang Dan (neuroscientist) (丹扬), Chinese-American neuroscientist",
+  "raw_text_sha256": "eecea1e0e7c00c9f4aa7fa59431b121e5ddd5e2f454d1d35900b08afba9de482",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

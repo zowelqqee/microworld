@@ -1,0 +1,776 @@
+[
+  {
+    "candidate_id": "snap-117-overlay-000",
+    "source_doc_title": "Bloomberg News",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Bloomberg_News",
+      "label": "Bloomberg News",
+      "aliases": [
+        "History Bloomberg News",
+        "News"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Bloomberg News",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Bloomberg News",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Bloomberg_News",
+      "snapshot_retrieved_at": "2026-06-17T17:20:10Z",
+      "snapshot_revision_id": 1359783105,
+      "snapshot_raw_text_sha256": "5f2b497b36057e3b5acf921c6c81b728f76f31ec3e4cb28a98a76e41e5446986",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-117-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-143-overlay-000",
+    "source_doc_title": "Businessperson",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Businessperson",
+      "label": "Businessperson",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Businessperson",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Businessperson",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Businessperson",
+      "snapshot_retrieved_at": "2026-06-15T09:18:29Z",
+      "snapshot_revision_id": 1358000742,
+      "snapshot_raw_text_sha256": "65198e7fc9a8ae717ab2afbc12b88cb00e0e02ea9f9c621a06915bc488bb450b",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-143-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-148-overlay-000",
+    "source_doc_title": "CNBC",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:CNBC",
+      "label": "CNBC",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "CNBC",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "CNBC",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/CNBC",
+      "snapshot_retrieved_at": "2026-06-15T09:17:15Z",
+      "snapshot_revision_id": 1359100830,
+      "snapshot_raw_text_sha256": "8ae2bc124ad41952a6d07a80b9335299882a7ae90ba8f0ef6cd5fe16c0b2d6a0",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-148-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-238-overlay-000",
+    "source_doc_title": "Electric vehicle",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Electric_vehicle",
+      "label": "Electric vehicle",
+      "aliases": [
+        "vehicle"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Electric vehicle",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Electric vehicle",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+      "snapshot_retrieved_at": "2026-06-17T17:10:30Z",
+      "snapshot_revision_id": 1359848574,
+      "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-238-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-244-overlay-000",
+    "source_doc_title": "Elon Musk",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Elon_Musk",
+      "label": "Elon Musk",
+      "aliases": [
+        "Musk"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Elon Musk",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Elon Musk",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Elon_Musk",
+      "snapshot_retrieved_at": "2026-06-17T17:16:59Z",
+      "snapshot_revision_id": 1359798745,
+      "snapshot_raw_text_sha256": "7e1d70022cfcb41fb6c9f2c8714bd9d005247c818420b8217cdf28d8d930d0bb",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-244-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-257-overlay-000",
+    "source_doc_title": "Falcon Heavy",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Falcon_Heavy",
+      "label": "Falcon Heavy",
+      "aliases": [
+        "History Concepts",
+        "Heavy"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Falcon Heavy",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Falcon Heavy",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Falcon_Heavy",
+      "snapshot_retrieved_at": "2026-06-17T17:08:56Z",
+      "snapshot_revision_id": 1356912202,
+      "snapshot_raw_text_sha256": "9a1676c4f5e4ac1a23331469192cf1c7311882ce50bc5d0f0abe7b69f4cbffb2",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-257-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-272-overlay-000",
+    "source_doc_title": "Forbes",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Forbes",
+      "label": "Forbes",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Forbes",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Forbes",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Forbes",
+      "snapshot_retrieved_at": "2026-06-17T17:18:32Z",
+      "snapshot_revision_id": 1358924667,
+      "snapshot_raw_text_sha256": "ccb3cdbf3d496afe7d3bf59bc7ff54bd930518101f0cba6e90f02bd92e9a3bf4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-272-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-306-overlay-000",
+    "source_doc_title": "Gwynne Shotwell",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Gwynne_Shotwell",
+      "label": "Gwynne Shotwell",
+      "aliases": [
+        "Shotwell"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Gwynne Shotwell",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Gwynne Shotwell",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Gwynne_Shotwell",
+      "snapshot_retrieved_at": "2026-06-17T17:08:58Z",
+      "snapshot_revision_id": 1359811386,
+      "snapshot_raw_text_sha256": "0b6d528c2bb569ca3f4f073a3147d29d517b06df784fbdcc2b112552fa7c4b4f",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-306-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-352-overlay-000",
+    "source_doc_title": "Jeff Bezos",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Jeff_Bezos",
+      "label": "Jeff Bezos",
+      "aliases": [
+        "Bezos"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Jeff Bezos",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Jeff Bezos",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
+      "snapshot_retrieved_at": "2026-06-15T09:16:26Z",
+      "snapshot_revision_id": 1359005476,
+      "snapshot_raw_text_sha256": "6879f50f1b2ee20f10e9e5d5dc2c853624a1f4b1f20649b220520dffe39749a6",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-352-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-400-overlay-000",
+    "source_doc_title": "Marc Tarpenning",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Marc_Tarpenning",
+      "label": "Marc Tarpenning",
+      "aliases": [
+        "Tarpenning"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Marc Tarpenning",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Marc Tarpenning",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Marc_Tarpenning",
+      "snapshot_retrieved_at": "2026-06-17T17:08:45Z",
+      "snapshot_revision_id": 1319124380,
+      "snapshot_raw_text_sha256": "06203e57ecba5e869d90865a7059bcabc2cf9ed34ec6ea59c59d7b49b93e754d",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-400-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-408-overlay-000",
+    "source_doc_title": "Martin Eberhard",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Martin_Eberhard",
+      "label": "Martin Eberhard",
+      "aliases": [
+        "Eberhard"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Martin Eberhard",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Martin Eberhard",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Martin_Eberhard",
+      "snapshot_retrieved_at": "2026-06-17T17:08:46Z",
+      "snapshot_revision_id": 1336674443,
+      "snapshot_raw_text_sha256": "13e183e2661041c2d16f89003e66ffa13e0ee112de499c55f80a4c15de486786",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-408-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-421-overlay-000",
+    "source_doc_title": "Michael Bloomberg",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Michael_Bloomberg",
+      "label": "Michael Bloomberg",
+      "aliases": [
+        "Bloomberg"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Michael Bloomberg",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Michael Bloomberg",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Michael_Bloomberg",
+      "snapshot_retrieved_at": "2026-06-17T20:44:19Z",
+      "snapshot_revision_id": 1359437513,
+      "snapshot_raw_text_sha256": "5d05bb067a7c06f593dae45bf10e0b0239e44c9ec82358e617c9f1535f5a007b",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-421-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-480-overlay-000",
+    "source_doc_title": "OpenAI",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:OpenAI",
+      "label": "OpenAI",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "OpenAI",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "OpenAI",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/OpenAI",
+      "snapshot_retrieved_at": "2026-06-17T17:17:40Z",
+      "snapshot_revision_id": 1359792342,
+      "snapshot_raw_text_sha256": "2ab1ff764b9f27ea6e2ecdfc6db8dbf4f8ef253e04c24010c9ce40fdcadd83f3",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-480-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-501-overlay-000",
+    "source_doc_title": "Powerwall",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Powerwall",
+      "label": "Powerwall",
+      "aliases": [
+        "Interaction Both"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Powerwall",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Powerwall",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Powerwall",
+      "snapshot_retrieved_at": "2026-06-15T09:19:14Z",
+      "snapshot_revision_id": 1245482146,
+      "snapshot_raw_text_sha256": "38d0d16759f2b7aa053314b3a5dfcfe89399dabade26ed7860d55d986b474a39",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-501-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-517-overlay-000",
+    "source_doc_title": "Reuters",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Reuters",
+      "label": "Reuters",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Reuters",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Reuters",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Reuters",
+      "snapshot_retrieved_at": "2026-06-17T17:08:37Z",
+      "snapshot_revision_id": 1358451578,
+      "snapshot_raw_text_sha256": "e4cdd34bbff762664b8e173d488b095e2bee8f6e8467df0c8991f67197f5e6b4",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-517-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-524-overlay-000",
+    "source_doc_title": "Rocket",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Rocket",
+      "label": "Rocket",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Rocket",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Rocket",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Rocket",
+      "snapshot_retrieved_at": "2026-06-15T09:17:02Z",
+      "snapshot_revision_id": 1358166262,
+      "snapshot_raw_text_sha256": "7d5a835dc7c8ab8e3118bde4072b1d838110f8b1fa21467c1bcff508035293c8",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-524-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-572-overlay-000",
+    "source_doc_title": "SolarCity",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:SolarCity",
+      "label": "SolarCity",
+      "aliases": [
+        "History SolarCity"
+      ],
+      "entity_type": "unknown",
+      "source_page": "SolarCity",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "SolarCity",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/SolarCity",
+      "snapshot_retrieved_at": "2026-06-17T17:12:35Z",
+      "snapshot_revision_id": 1356428735,
+      "snapshot_raw_text_sha256": "b9041ffd928acf6b4c66c73e78b08de2bf3bd861d6010857fcb890c11159257e",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-572-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-573-overlay-000",
+    "source_doc_title": "Solar energy",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Solar_energy",
+      "label": "Solar energy",
+      "aliases": [
+        "energy"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Solar energy",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Solar energy",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Solar_energy",
+      "snapshot_retrieved_at": "2026-06-17T17:08:57Z",
+      "snapshot_revision_id": 1341450248,
+      "snapshot_raw_text_sha256": "57877d844ea496c9bfa16696e25fe65e4ceeb90d7288d0a4b96b15a2985e9ff0",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-573-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-586-overlay-000",
+    "source_doc_title": "Space.com",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Space.com",
+      "label": "Space.com",
+      "aliases": [
+        "History Space.com"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Space.com",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Space.com",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Space.com",
+      "snapshot_retrieved_at": "2026-06-15T09:16:45Z",
+      "snapshot_revision_id": 1287826411,
+      "snapshot_raw_text_sha256": "08466a840f0bc1a0630ce79e225963f54c1f9202cf455750420b498b48af901c",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-586-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-590-overlay-000",
+    "source_doc_title": "SpaceX",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:SpaceX",
+      "label": "SpaceX",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "SpaceX",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "SpaceX",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/SpaceX",
+      "snapshot_retrieved_at": "2026-06-17T17:12:47Z",
+      "snapshot_revision_id": 1359822755,
+      "snapshot_raw_text_sha256": "a2f6b45b5d10bd4a5a97f32a2e4f5938a86e2910574a93f8f247c381af260779",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-590-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-610-overlay-000",
+    "source_doc_title": "Starlink",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Starlink",
+      "label": "Starlink",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Starlink",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Starlink",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Starlink",
+      "snapshot_retrieved_at": "2026-06-17T17:12:52Z",
+      "snapshot_revision_id": 1359590107,
+      "snapshot_raw_text_sha256": "0cd6f6c38602011e7fdbc2c3e213ccbcdb127bc186050c72414cc75ac95d3e42",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-610-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-611-overlay-000",
+    "source_doc_title": "Starship",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Starship",
+      "label": "Starship",
+      "aliases": [],
+      "entity_type": "unknown",
+      "source_page": "Starship",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Starship",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Starship",
+      "snapshot_retrieved_at": "2026-06-15T09:16:17Z",
+      "snapshot_revision_id": 1338917001,
+      "snapshot_raw_text_sha256": "544d6152df38943d2ddb8d1af1ef9a88ae4121c7ea438b3b851086d8946e2d44",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-611-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-632-overlay-000",
+    "source_doc_title": "Tesla Cybertruck",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Tesla_Cybertruck",
+      "label": "Tesla Cybertruck",
+      "aliases": [
+        "Cybertruck"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Tesla Cybertruck",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Tesla Cybertruck",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "snapshot_retrieved_at": "2026-06-15T09:17:11Z",
+      "snapshot_revision_id": 1358427430,
+      "snapshot_raw_text_sha256": "81aae32b086ebcd54f5c70b1d7b9fc0379bf664cc5c890b194592a925b20cc90",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-632-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-633-overlay-000",
+    "source_doc_title": "Tesla Energy",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Tesla_Energy",
+      "label": "Tesla Energy",
+      "aliases": [
+        "Energy"
+      ],
+      "entity_type": "unknown",
+      "source_page": "Tesla Energy",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Tesla Energy",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Energy",
+      "snapshot_retrieved_at": "2026-06-17T17:08:28Z",
+      "snapshot_revision_id": 1354226973,
+      "snapshot_raw_text_sha256": "56fe78444492af8d17d6e35e478a4572380c86dcfa4adbcb78aef24867bc921f",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-633-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-642-overlay-000",
+    "source_doc_title": "The Boring Company",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:The_Boring_Company",
+      "label": "The Boring Company",
+      "aliases": [
+        "Company"
+      ],
+      "entity_type": "unknown",
+      "source_page": "The Boring Company",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "The Boring Company",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/The_Boring_Company",
+      "snapshot_retrieved_at": "2026-06-17T17:21:54Z",
+      "snapshot_revision_id": 1359791821,
+      "snapshot_raw_text_sha256": "2a982c86dfd80cce0644b4065e6c34161fdffbfa5ee582402f7653e495198eb2",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-642-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06234",
+    "source_doc_title": "Falcon Heavy",
+    "source_kind": "fresh_snapshot",
+    "reason": "conflicts_existing_fact",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Falcon Heavy",
+      "definition": "super heavy-lift launch vehicle",
+      "predicate": "is_a",
+      "source_page": "Falcon Heavy",
+      "evidence_text": "Falcon Heavy is a super heavy-lift launch vehicle with partial reusability that can carry cargo into Earth orbit and beyond.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Falcon Heavy is a super heavy-lift launch vehicle with partial reusability that can carry cargo into Earth orbit and beyond.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06323",
+    "source_doc_title": "Marc Tarpenning",
+    "source_kind": "fresh_snapshot",
+    "reason": "conflicts_existing_fact",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Marc Tarpenning",
+      "definition": "American engineer",
+      "predicate": "is_a",
+      "source_page": "Marc Tarpenning",
+      "evidence_text": "Marc Tarpenning (born June 1, 1964) is an American engineer and technology entrepreneur who co-founded Tesla IncInc\u0000 with Martin Eberhard in 2003.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marc Tarpenning (born June 1, 1964) is an American engineer and technology entrepreneur who co-founded Tesla IncInc\u0000 with Martin Eberhard in 2003.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06384",
+    "source_doc_title": "Reuters",
+    "source_kind": "fresh_snapshot",
+    "reason": "conflicts_existing_fact",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Reuters",
+      "definition": "British news agency wholly",
+      "predicate": "is_a",
+      "source_page": "Reuters",
+      "evidence_text": "Reuters (  ROY-tərz) is a British news agency wholly owned by Thomson Reuters, a multinational information conglomerate.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Reuters (  ROY-tərz) is a British news agency wholly owned by Thomson Reuters, a multinational information conglomerate.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06432",
+    "source_doc_title": "Solar energy",
+    "source_kind": "fresh_snapshot",
+    "reason": "conflicts_existing_fact",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Solar energy",
+      "definition": "radiant energy from the Sun's light",
+      "predicate": "is_a",
+      "source_page": "Solar energy",
+      "evidence_text": "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a range of technologies such as solar electricity, solar thermal energy (including solar water heating) and solar architecture.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a range of technologies such as solar electricity, solar thermal energy (including solar water heating) and solar architecture.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06437",
+    "source_doc_title": "Space.com",
+    "source_kind": "fresh_snapshot",
+    "reason": "conflicts_existing_fact",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Space.com",
+      "definition": "online publication focused on space exploration",
+      "predicate": "is_a",
+      "source_page": "Space.com",
+      "evidence_text": "Space.com is an online publication focused on space exploration, astronomy, skywatching and entertainment, with editorial teams based in the United States and United Kingdom.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Space.com is an online publication focused on space exploration, astronomy, skywatching and entertainment, with editorial teams based in the United States and United Kingdom.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  }
+]

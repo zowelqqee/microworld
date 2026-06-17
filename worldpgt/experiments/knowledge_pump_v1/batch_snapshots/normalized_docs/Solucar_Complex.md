@@ -1,0 +1,82 @@
+# Solucar Complex
+
+Source: https://en.wikipedia.org/wiki/Solucar_Complex
+Retrieved at: 2026-06-17T17:12:38Z
+Revision ID: 1355987858
+Raw text SHA256: 163473566dddad494663d4b7a2ce0c5b078f6915109df250cdc6ac6731fe3e25
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Solucar Complex is a complex in Sanlúcar la Mayor, Spain, used primarily for solar power generation.
+The complex includes:
+
+PS10 Solar Power Plant
+PS20 Solar Power Plant
+Solnova Solar Power Station
+
+Planning
+
+The first two power plants to be brought into operation at Sanlúcar la Mayor were the PS10, and Sevilla PV, the largest low concentration system photovoltaic plant in Europe. The plants in the complex are as follows.
+300 MW:
+Completed and operating:
+
+PS10 (10 MW)
+PS20 (20 MW)
+Solnova 1 (50 MW)
+Solnova 3 (50 MW)
+Solnova 4 (50 MW)
+total: 180 MW.
+Three more plants are planned:
+
+AZ20 (20 MW)
+Solnova 2 (50 MW)
+Solnova 5 (50 MW)
+Total 120 MW.
+PS20 and AZ20 are twin 20 MWe tower plants based on the same concept as PS10.
+
+PS10
+
+The PS10 Solar Power Plant (Spanish: Planta Solar 10) is the world's first commercial concentrating solar power tower operating near Seville, in Andalusia, Spain. The 11 megawatt (MW) solar power tower produces electricity with 624 large movable mirrors called heliostats. It took four years to build and so far has cost €35 million (US$46 million). PS10 produces about 23,400 megawatt-hours (MW·h) per year, for which it receives €271 (US$360) per MW·h under its power purchase agreement, equating to a revenue of €6.3 million per year.
+The mirrors were delivered by Abengoa, the solar receiver was designed and built by Tecnical-Tecnicas Reunidas, and the Solar Tower was designed and built by ALTAC, both Spanish engineering and construction companies. Each of the mirrors has a surface measuring 120 square metres (1,300 sq ft) that concentrates the sun's rays to the top of a 115 m (377 ft) high, 40-story tower where a solar receiver and a steam turbine are located. The turbine drives a generator, producing electricity.
+The PS10 is located 20 km (12 mi) west of Seville (which receives at least nine hours of sunshine 320 days per year, with 15 hours per day in mid summer). The solar receiver at the top of the tower produces saturated steam at 257 °C (495 °F). The energy conversion efficiency is approximately 17%.
+
+Energy storage
+The PS10 solar power tower stores heat in tanks as superheated and pressurized water at 50 bar and 285 °C. The water evaporates and flashes back to steam, releasing energy and reducing the pressure. Storage is for 30 minutes. It is suggested that longer storage is possible, but that has not been proven in an existing power plant. However, there are many considerations for using molten salt as an energy storage medium due to the great capability of storing energy for long periods without substantial losses (see Concentrated solar power). Another possibility is to use a phase-change material as thermal storage where latent heat is used to store energy.
+
+PS20
+The PS20 solar power plant (PS20)  solar power plant is a solar thermal energy plant in Sanlucar la Mayor near Seville in Andalusia, Spain. It was the world's most powerful solar power tower until the Ivanpah Solar Power Facility in California became operational in 2014. The 20 megawatt (MW) solar power tower produces electricity with large movable mirrors called heliostats.
+Construction of PS20 was started in 2006 and it commenced operation in 2009. It features several significant technological improvements over the earlier PS10. These include a receiver with higher efficiency, various improvements in the control and operational systems, and a better thermal energy storage system.
+"PS20 consists of a solar field of 1,255 mirrored heliostats designed by Abengoa Solar. Each heliostat, with a surface area of 120 m2 (1,300 ft2), reflects the solar radiation it receives onto the receiver, located on the top of a 165-metre-high (541 ft) tower, producing steam which is converted into electricity by a turbine generator."
+"The remaining power plants will be built over the next few years. They will include low- and high-concentration photovoltaic, tower thermoelectric, parabolic-trough collector and Stirling dish plants. Abengoa Solar's parabolic trough plants, Solnova 1, 3 and 4, which can generate 150 MW of power, are under construction at the Solar Platform."
+Resulting from cooperation between Ciemat, the IDAE, and the University of Seville, the whole plant is to be completed by 2013, when it will produce approximately 300 MW – energy for around 180,000 homes, equivalent to the needs of the city of Seville.
+PS20 produces about 48,000 megawatt-hours (MW·h) per year, for which it receives €271 (US$360) per MW·h under its power purchase agreement.
+
+Solnova Solar Power Station
+The Solnova Solar Power Station is a large CSP power station made up of five separate units of 50 MW each. With the commissioning of the third 50 MW unit, the Solnova-IV in August 2010, the power station ranks as one of the largest CSP power stations in the world.
+Solnova-I, Solnova-III, and Solnova-IV were commissioned in mid-2010 and are all rated at 50 MWe in installed capacity each. All five plants are built, owned and operated by Abengoa Solar, a Spanish solar power company.
+All five power stations, the three commissioned and two under development, will be utilizing parabolic troughs, a technology to use concentrated solar power. The three commissioned power stations are also equipped to support natural gas as its secondary fuel source for power generation.
+
+See also
+
+List of power stations in Spain
+List of solar thermal power stations
+Renewable energy in the European Union
+Solar power in Spain
+Solar thermal energy
+Abengoa Solar
+
+References
+
+External links
+
+Final technical progress report, for European Union officials (November 2006)
+Power station harnesses Sun's rays
+Description and pictures
+Power tower reflects well on sunny Spain
+http://www.abengoasolar.com/web/en/nuestras_plantas/plantas_en_operacion/espana/#seccion_1
+"PS20, the largest solar power tower worldwide". Abengoa Solar. Archived from the original on 21 June 2012. Retrieved 20 March 2012.
+Telvent develops control system for new solar power plants in Seville
+Final technical progress report, for European Union officials (November 2006)
+Power station harnesses Sun's rays
+Description and pictures
+Power tower reflects well on sunny Spain

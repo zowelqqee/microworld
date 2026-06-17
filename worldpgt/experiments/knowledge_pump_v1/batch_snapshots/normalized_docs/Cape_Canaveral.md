@@ -1,0 +1,54 @@
+# Cape Canaveral
+
+Source: https://en.wikipedia.org/wiki/Cape_Canaveral
+Retrieved at: 2026-06-17T17:18:22Z
+Revision ID: 1356653292
+Raw text SHA256: 895382ae92b82d753f5100bf797004151a45926cbe48a008341405f9b3b7acaf
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Cape Canaveral (Spanish: Cabo Cañaveral) is a cape in Brevard County, Florida, in the United States, near the center of the state's Atlantic coast. Officially Cape Kennedy from 1963 to 1973, it lies east of Merritt Island, separated from it by the Banana River. It is part of a region known as the Space Coast, and is the site of the Cape Canaveral Space Force Station. Since many U.S. spacecraft have been launched from both the station and the Kennedy Space Center on adjacent Merritt Island, the two are sometimes conflated.
+Other features of the cape include Port Canaveral, one of the busiest cruise ports in the world, and the Cape Canaveral Lighthouse. The city of Cape Canaveral lies just south of the Port Canaveral District. Mosquito Lagoon, the Indian River, Merritt Island National Wildlife Refuge and Canaveral National Seashore are also features of this area.
+
+History
+
+Humans have occupied the area for at least 12,000 years.
+During the middle Archaic period, from 5000 BC to 2000 BC, the Mount Taylor period culture region covered northeast Florida, including the area around Cape Canaveral. Late in the Archaic period, from 2000 BC to 500 BC, the Mount Taylor culture was succeeded by the Orange culture, which was among the earliest cultures in North America to produce pottery. The Orange culture was followed by the St. Johns culture, from 500 BC until after European contact. The area around the Indian River was in the Indian River variant of the St. Johns culture, with influences from the Belle Glade culture to the south.
+During the first Spanish colonial period the area around the Indian River, to the south of Cape Canaveral, was occupied by the Ais people, while the area around the Mosquito Lagoon, to the north of the Cape, was occupied by the Surruque people. The Surruque were allied with the Ais, but it is not clear whether the Surruque spoke a Timucua language, or a language related to the Ais language.
+In the early 16th century, Cape Canaveral was noted on maps, although without being named. It was named by Spanish explorers in the first half of the 16th century as Cabo Cañaveral. The name "Canaveral" (cañaveral in Spanish, meaning 'reed bed' or 'sugarcane plantation') is the third oldest surviving European place name in the United States. The first application of the name, according to the Smithsonian Institution, was from the 1521–1525 explorations of Spanish explorer Francisco Gordillo. A point of land jutting out into an area of the Atlantic Ocean with swift currents, it became a landing spot for many shipwrecked sailors. An early alternative name was "Cape of Currents". By at least 1564, the name appeared on maps.
+English privateer John Hawkins and his journalist John Sparke gave an account of their landing at Cape Canaveral in the 16th century. A Presbyterian missionary was wrecked here and lived among the Indians. Other histories tell of French survivors from Jean Ribault's colony at Fort Caroline, whose ship the Trinité wrecked on the shores of Cape Canaveral in 1565, and built a fort from its timbers.
+In December 1571, Pedro Menéndez was wrecked off the Coast of Cape Canaveral and encountered the Ais Indians. From 1605 to 1606, the Spanish Governor of Florida Pedro de Ibarra sent Alvaro Mexia on a diplomatic mission to the Ais Indian nation. The mission was a success; diplomatic ties were made and an agreement for the Ais to receive ransoms for all the shipwrecked sailors they returned.
+The first Cape Canaveral Lighthouse was completed in January 1848 to warn ships of the coral shoals off the coast.
+The hurricane of August 1885, pushed a "wall of water" over the barrier island (elevation, 3.1 m (10 ft)) devastating Cape Canaveral and adjacent areas. The ocean waves flooded the homesteaders and discouraged further settlement in the area. The beach near the lighthouse was severely eroded prompting its relocation 1.6 km (0.99 mi) west inland.
+The 1890 graduating class of Harvard University started a gun club called the "Canaveral Club" at the Cape. This was founded by C. B. Horton of Boston and George H. Reed. A number of distinguished visitors including presidents Grover Cleveland and Benjamin Harrison were reported to have stayed here. In the 1920s, the grand building fell into disrepair and later burned to the ground.
+In the 20th century, several communities sprang up in Cape Canaveral with names like Canaveral, Canaveral Harbor, Artesia and De Soto Beach. While the area was predominantly a farming and fishing community, some visionaries saw its potential as a resort for vacationers. However, the stock market crash of 1929 hampered its development. In the 1930s, a group of wealthy journalists started a community called "Journalista Beach", now called Avon by the Sea. The Brossier brothers built houses in this area and started a publication entitled the Evening Star Reporter that was the forerunner of the Orlando Sentinel.
+Construction of Port Canaveral for military and commercial purposes was started in July 1950 and dedicated on November 4, 1953. Congress approved the construction of a deep-water port in 1929, half a century after it was first petitioned by the U.S. Navy in 1878. It is now the major deep-water port of Central Florida.
+
+Rocket launch site
+
+Cape Canaveral became the test site for missiles when the legislation for the Joint Long Range Proving Ground was passed by the 81st Congress and signed by President Harry Truman on May 11, 1949. Work began on May 9, 1950, under a contract with the Duval Engineering Company of Jacksonville, Florida, to build the Cape's first paved access road and its first permanent launch site.
+The first rocket launched at the Cape was a V-2 rocket named Bumper 8 from Launch Complex 3 on July 24, 1950. On February 6, 1959, the first successful test firing of a Titan intercontinental ballistic missile was accomplished. NASA's Project Mercury and Gemini space flights were launched from Cape Canaveral, as were Apollo flights using the Saturn I and Saturn IB rockets.
+Cape Canaveral was chosen for rocket launches to take advantage of the Earth's rotation. The linear velocity of the Earth's surface is greatest towards the equator; the relatively southerly location of the cape allows rockets to take advantage of this by launching eastward, in the same direction as the Earth's rotation. It is also highly desirable to have the downrange area sparsely populated, in case of accidents; an ocean is ideal for this. The east coast of Florida has logistical advantages over potential competing sites. The Spaceport Florida Launch Complex 46 of the Cape Canaveral Space Force Station is the easternmost near the tip of the cape.
+In 1999, the North American Numbering Plan Administration allocated telephone area code 321 (as in a launch countdown) to the Cape Canaveral area in homage to its spacefaring heritage.
+
+Name changes
+A post office in the area was built and listed in the U.S. Post Office application as "Artesia" and retained this name from 1893 to 1954. It was "Port Canaveral" from 1954 to 1962, and then the City of Cape Canaveral from 1962 to 1963, when a larger post office was built.
+In 1963, President Lyndon Johnson issued an executive order renaming the area "Cape Kennedy", after President John F. Kennedy, who had set the goal of landing on the Moon. After Kennedy's assassination in November 1963, his widow, Jacqueline Kennedy, suggested to Johnson that renaming the Cape Canaveral facility would be an appropriate memorial. Johnson recommended the renaming of the entire cape, announced in a televised address on November 28, 1963, six days after the assassination, on Thanksgiving evening. Accordingly, Cape Canaveral was officially renamed Cape Kennedy. Kennedy's last visit to the space facility was on November 16, 1963, six days before his death;
+the final Mercury mission had concluded six months earlier.
+Although the name change was approved by the U.S. Board on Geographic Names of the Department of the Interior in December 1963, it was not popular in Florida from the outset, especially in the bordering city of Cape Canaveral. In May 1973, the Florida Legislature passed a law restoring the former 400-year-old name, and the Board went along. The name restoration to Cape Canaveral became official on October 9, 1973. Senator Ted Kennedy had stated in 1970 that it was a matter to be decided by the citizens of Florida. The Kennedy family issued a letter stating they "understood the decision". NASA's Kennedy Space Center retains the "Kennedy" name.
+The Gemini, Apollo, and the first Skylab missions were all launched while the area was named Cape Kennedy. The first crewed launch under the restored name of Cape Canaveral was Skylab 4, the final Skylab mission, on November 16, 1973.
+
+Notes
+
+References
+
+Sources
+Osborne, Ray (2008) "Images of America: Cape Canaveral" Arcadia Publishing, USA ISBN 978-0-7385-5327-6
+
+External links
+
+Cape Canaveral travel guide from Wikivoyage
+City of Cape Canaveral, FL
+The Straight Dope: Why did they change the name of Cape Kennedy back to Cape Canaveral?
+Nautical Chart of Cape Canaveral Archived March 5, 2023, at the Wayback Machine
+Cape Canaveral from Encyclopedia Astronautica

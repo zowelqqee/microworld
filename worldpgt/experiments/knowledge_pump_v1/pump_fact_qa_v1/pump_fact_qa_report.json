@@ -1,0 +1,1817 @@
+{
+  "summary": {
+    "pump_fact_qa_enabled": true,
+    "pump_fact_qa_fact_count": 249,
+    "pump_fact_qa_relation_fact_count": 47,
+    "pump_fact_qa_definition_fact_count": 202,
+    "pump_fact_qa_positive_prompt_count": 489,
+    "pump_fact_qa_adversarial_prompt_count": 35,
+    "pump_fact_qa_current_prompt_count": 5,
+    "pump_fact_qa_total_prompt_count": 529,
+    "pump_fact_qa_positive_answer_count": 489,
+    "pump_fact_qa_positive_audit_count": 0,
+    "pump_fact_qa_positive_planner_gap_count": 0,
+    "pump_fact_qa_positive_wrong_count": 0,
+    "pump_fact_qa_positive_unsupported_count": 0,
+    "pump_fact_qa_adversarial_pass_count": 35,
+    "pump_fact_qa_adversarial_fail_count": 0,
+    "pump_fact_qa_current_safety_pass_count": 5,
+    "pump_fact_qa_current_safety_fail_count": 0,
+    "pump_fact_qa_answer_precision": 1.0,
+    "pump_fact_qa_supported_answer_rate": 1.0,
+    "pump_fact_qa_planner_gap_rate": 0.0,
+    "wrong_count": 0,
+    "unsupported_answer_count": 0,
+    "unsafe_current_answer_count": 0,
+    "inversion_false_answer_count": 0,
+    "pump_fact_qa_all_critical_passed": true,
+    "classification_counts": {
+      "ok": 529
+    },
+    "fact_count": 249,
+    "relation_fact_count": 47,
+    "definition_fact_count": 202,
+    "positive_prompt_count": 489,
+    "positive_answer_count": 489,
+    "positive_audit_count": 0,
+    "positive_planner_gap_count": 0,
+    "wrong_answer_count": 0,
+    "adversarial_fail_count": 0,
+    "current_safety_fail_count": 0,
+    "answer_precision": 1.0,
+    "supported_answer_rate": 1.0,
+    "planner_gap_rate": 0.0,
+    "all_critical_passed": true,
+    "confirmations": {
+      "network_calls": false,
+      "trusted_memory_modified": false,
+      "accepted_overlay_modified": false,
+      "promoted_overlay_modified": false,
+      "snapshot_dry_run_overlay_modified": false,
+      "sense_memory_modified": false,
+      "auto_ingest": false,
+      "auto_promote": false,
+      "auto_apply": false,
+      "weak_context_excluded": true,
+      "overlay_mode": "pump-dry-run",
+      "safe_for_general_runtime": false
+    }
+  },
+  "failures": [],
+  "planner_gaps": [],
+  "facts": [
+    {
+      "kind": "definition",
+      "subject": "Abe Fortas",
+      "predicate": "is_a",
+      "obj": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis",
+      "source_page": "Abe Fortas"
+    },
+    {
+      "kind": "definition",
+      "subject": "Accenture plc",
+      "predicate": "is_a",
+      "obj": "Irish technology consulting company",
+      "source_page": "Andersen Consulting"
+    },
+    {
+      "kind": "definition",
+      "subject": "Affordable Connectivity Program",
+      "predicate": "is_a",
+      "obj": "United States government-sponsored program",
+      "source_page": "Affordable Connectivity Program"
+    },
+    {
+      "kind": "definition",
+      "subject": "Air command",
+      "predicate": "is_a",
+      "obj": "term used to refer to the command structure of some air forces",
+      "source_page": "Air Command"
+    },
+    {
+      "kind": "definition",
+      "subject": "Aliko Mohammad Dangote",
+      "predicate": "is_a",
+      "obj": "Nigerian businessman",
+      "source_page": "Aliko Dangote"
+    },
+    {
+      "kind": "definition",
+      "subject": "Alpha Magnetic Spectrometer",
+      "predicate": "is_a",
+      "obj": "particle physics experiment module",
+      "source_page": "Alpha Magnetic Spectrometer"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amalgam Comics",
+      "predicate": "is_a",
+      "obj": "collaborative publishing imprint shared by DC Comics",
+      "source_page": "Amalgam Comics"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amazon basin",
+      "predicate": "is_a",
+      "obj": "part of South America drained by the Amazon River",
+      "source_page": "Amazon Basin"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amazon Bookstore Cooperative",
+      "predicate": "is_a",
+      "obj": "feminist bookstore",
+      "source_page": "Amazon Bookstore Cooperative"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amazon Delta",
+      "predicate": "is_a",
+      "obj": "vast river delta formed by the Amazon River",
+      "source_page": "Amazon Delta"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amazonian Guard",
+      "predicate": "is_a",
+      "obj": "unofficial name given to an all-female elite cadre of bodyguards officially",
+      "source_page": "Amazonian Guard"
+    },
+    {
+      "kind": "definition",
+      "subject": "Amdahl Corporation",
+      "predicate": "is_a",
+      "obj": "information technology company",
+      "source_page": "Amdahl Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "Ampex Data Systems Corporation",
+      "predicate": "is_a",
+      "obj": "American electronics company",
+      "source_page": "Ampex Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "Analytics",
+      "predicate": "is_a",
+      "obj": "systematic computational analysis of data",
+      "source_page": "analytics"
+    },
+    {
+      "kind": "definition",
+      "subject": "Apple II",
+      "predicate": "is_a",
+      "obj": "series of microcomputers",
+      "source_page": "Apple II"
+    },
+    {
+      "kind": "definition",
+      "subject": "April",
+      "predicate": "is_a",
+      "obj": "fourth month of the year in the Gregorian",
+      "source_page": "April"
+    },
+    {
+      "kind": "definition",
+      "subject": "Ares Management Corporation",
+      "predicate": "is_a",
+      "obj": "global alternative investment manager operating in the credit",
+      "source_page": "Michael Arougheti"
+    },
+    {
+      "kind": "definition",
+      "subject": "Armadillo Aerospace",
+      "predicate": "is_a",
+      "obj": "aerospace startup company",
+      "source_page": "Armadillo Aerospace"
+    },
+    {
+      "kind": "definition",
+      "subject": "Artemis Accords",
+      "predicate": "is_a",
+      "obj": "non-binding set of principles for outer space exploration",
+      "source_page": "Artemis Accords"
+    },
+    {
+      "kind": "definition",
+      "subject": "Artemis III",
+      "predicate": "is_a",
+      "obj": "upcoming crewed spaceflight mission of the NASA-led Artemis program",
+      "source_page": "Artemis III"
+    },
+    {
+      "kind": "definition",
+      "subject": "Arthur Michell Ransome",
+      "predicate": "is_a",
+      "obj": "English author",
+      "source_page": "Arthur Ransome"
+    },
+    {
+      "kind": "definition",
+      "subject": "Aston Martin Lagonda Global Holdings PLC",
+      "predicate": "is_a",
+      "obj": "British manufacturer of luxury sports cars",
+      "source_page": "Aston Martin"
+    },
+    {
+      "kind": "definition",
+      "subject": "Atlas II",
+      "predicate": "is_a",
+      "obj": "member of the Atlas family of launch vehicles",
+      "source_page": "Atlas II"
+    },
+    {
+      "kind": "definition",
+      "subject": "Audi Q8",
+      "predicate": "is_a",
+      "obj": "mid-size luxury crossover SUV made by Audi",
+      "source_page": "Audi Q8"
+    },
+    {
+      "kind": "definition",
+      "subject": "August",
+      "predicate": "is_a",
+      "obj": "eighth month of the year in the Julian",
+      "source_page": "August"
+    },
+    {
+      "kind": "definition",
+      "subject": "Axiom Station",
+      "predicate": "is_a",
+      "obj": "planned modular space station designed by Houston",
+      "source_page": "Axiom Station"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bangladesh Satellite-1",
+      "predicate": "is_a",
+      "obj": "first Bangladeshi geostationary communications",
+      "source_page": "Bangladesh Satellite-1"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bankers Trust",
+      "predicate": "is_a",
+      "obj": "historic American banking organization",
+      "source_page": "Bankers Trust"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bertie Charles Forbes",
+      "predicate": "is_a",
+      "obj": "Scottish-American financial journalist",
+      "source_page": "B. C. Forbes"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bloomberg Government",
+      "predicate": "is_a",
+      "obj": "division of Bloomberg Industry Group",
+      "source_page": "Bloomberg Government"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bloomberg Law",
+      "predicate": "is_a",
+      "obj": "subscription-based service",
+      "source_page": "Bloomberg Law"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bloomberg Markets",
+      "predicate": "is_a",
+      "obj": "magazine published six times a year by Bloomberg L",
+      "source_page": "Bloomberg Markets"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bloomberg Radio",
+      "predicate": "is_a",
+      "obj": "radio service of Bloomberg L",
+      "source_page": "Bloomberg Radio"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bloomberg Terminal",
+      "predicate": "is_a",
+      "obj": "computer software system provided by the financial data vendor Bloomberg L",
+      "source_page": "Bloomberg Professional Services"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-16",
+      "predicate": "is_a",
+      "obj": "sub-orbital spaceflight mission",
+      "source_page": "Blue Origin NS-16"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-17",
+      "predicate": "is_a",
+      "obj": "sub-orbital spaceflight cargo mission of Blue Origin's New Shepard rocket",
+      "source_page": "Blue Origin NS-17"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-18",
+      "predicate": "is_a",
+      "obj": "sub-orbital spaceflight mission",
+      "source_page": "Blue Origin NS-18"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-19",
+      "predicate": "is_a",
+      "obj": "New Shepard sub-orbital spaceflight mission",
+      "source_page": "Blue Origin NS-19"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-20",
+      "predicate": "is_a",
+      "obj": "sub-orbital spaceflight mission",
+      "source_page": "Blue Origin NS-20"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-21",
+      "predicate": "is_a",
+      "obj": "sub-orbital spaceflight mission",
+      "source_page": "Blue Origin NS-21"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Origin NS-23",
+      "predicate": "is_a",
+      "obj": "sub-orbital cargo spaceflight mission of Blue Origin's New Shepard rocket",
+      "source_page": "Blue Origin NS-23"
+    },
+    {
+      "kind": "definition",
+      "subject": "Blue Ring",
+      "predicate": "is_a",
+      "obj": "spacecraft platform designed to support spacecraft operation",
+      "source_page": "Blue Ring Pathfinder"
+    },
+    {
+      "kind": "definition",
+      "subject": "Boeing B-50 Superfortress",
+      "predicate": "is_a",
+      "obj": "retired American strategic bomber",
+      "source_page": "B-50 Superfortress"
+    },
+    {
+      "kind": "definition",
+      "subject": "Buttonwood Agreement",
+      "predicate": "is_a",
+      "obj": "founding document of what is now the New York Stock Exchange",
+      "source_page": "Buttonwood Agreement"
+    },
+    {
+      "kind": "definition",
+      "subject": "Canada",
+      "predicate": "is_a",
+      "obj": "country in North America",
+      "source_page": "Canada"
+    },
+    {
+      "kind": "definition",
+      "subject": "Cape Canaveral",
+      "predicate": "is_a",
+      "obj": "cape in Brevard County",
+      "source_page": "Cape Kennedy"
+    },
+    {
+      "kind": "definition",
+      "subject": "Cape Canaveral Space Force Station",
+      "predicate": "is_a",
+      "obj": "installation of the United States Space Force's Space Launch Delta 45",
+      "source_page": "Joint Long Range Proving Ground"
+    },
+    {
+      "kind": "definition",
+      "subject": "Carson City",
+      "predicate": "is_a",
+      "obj": "independent city",
+      "source_page": "Carson City"
+    },
+    {
+      "kind": "definition",
+      "subject": "CBS News",
+      "predicate": "is_a",
+      "obj": "news division of the American television broadcaster CBS",
+      "source_page": "CBS News"
+    },
+    {
+      "kind": "definition",
+      "subject": "Cerberus Fossae",
+      "predicate": "is_a",
+      "obj": "series of semi-parallel fissures on Mars formed by faults",
+      "source_page": "Cerberus Fossae"
+    },
+    {
+      "kind": "definition",
+      "subject": "Chevrolet Volt",
+      "predicate": "is_a",
+      "obj": "plug-in hybrid electric vehicle car",
+      "source_page": "Chevrolet Volt"
+    },
+    {
+      "kind": "definition",
+      "subject": "Commercial Orbital Transportation Services",
+      "predicate": "is_a",
+      "obj": "NASA program to spur the development of private spacecraft",
+      "source_page": "Commercial Orbital Transportation Services"
+    },
+    {
+      "kind": "definition",
+      "subject": "Companies Act",
+      "predicate": "is_a",
+      "obj": "stock short title used for legislation in Botswana",
+      "source_page": "Companies Act"
+    },
+    {
+      "kind": "definition",
+      "subject": "Compaq Computer Corporation",
+      "predicate": "is_a",
+      "obj": "American information technology company",
+      "source_page": "Compaq Computer"
+    },
+    {
+      "kind": "definition",
+      "subject": "Corporations Act 2001",
+      "predicate": "is_a",
+      "obj": "Act of the Parliament of Australia",
+      "source_page": "Corporations Act"
+    },
+    {
+      "kind": "definition",
+      "subject": "Dawn Aerospace",
+      "predicate": "is_a",
+      "obj": "space transportation company building both in-space propulsion systems",
+      "source_page": "Dawn Aerospace"
+    },
+    {
+      "kind": "definition",
+      "subject": "Delta IV",
+      "predicate": "is_a",
+      "obj": "group of five expendable launch systems in the Delta rocket family",
+      "source_page": "Delta IV"
+    },
+    {
+      "kind": "definition",
+      "subject": "Dow Jones",
+      "predicate": "is_a",
+      "obj": "combination of the names of business partners Charles Dow",
+      "source_page": "Dow Jones"
+    },
+    {
+      "kind": "definition",
+      "subject": "Dragon 2",
+      "predicate": "is_a",
+      "obj": "class of partially reusable spacecraft",
+      "source_page": "US Deorbit Vehicle"
+    },
+    {
+      "kind": "definition",
+      "subject": "Dragon Spacecraft Qualification Unit",
+      "predicate": "is_a",
+      "obj": "boilerplate version of the Dragon spacecraft",
+      "source_page": "Dragon Spacecraft Qualification Unit"
+    },
+    {
+      "kind": "definition",
+      "subject": "Duke University",
+      "predicate": "is_a",
+      "obj": "private research university in Durham",
+      "source_page": "Duke University"
+    },
+    {
+      "kind": "definition",
+      "subject": "Earth",
+      "predicate": "is_a",
+      "obj": "third planet from the Sun",
+      "source_page": "Earth"
+    },
+    {
+      "kind": "definition",
+      "subject": "Engineering",
+      "predicate": "is_a",
+      "obj": "practice of systematically applying natural science",
+      "source_page": "Engineering"
+    },
+    {
+      "kind": "definition",
+      "subject": "Errol Graham Musk",
+      "predicate": "is_a",
+      "obj": "South African businessman",
+      "source_page": "Errol Musk"
+    },
+    {
+      "kind": "definition",
+      "subject": "Euronext Amsterdam",
+      "predicate": "is_a",
+      "obj": "stock exchange",
+      "source_page": "Amsterdam Stock Exchange"
+    },
+    {
+      "kind": "definition",
+      "subject": "Exchange Alley or Change Alley",
+      "predicate": "is_a",
+      "obj": "narrow alleyway connecting shops",
+      "source_page": "Exchange Alley"
+    },
+    {
+      "kind": "definition",
+      "subject": "Exos Aerospace Systems & Technologies",
+      "predicate": "is_a",
+      "obj": "aerospace manufacturer",
+      "source_page": "Exos Aerospace"
+    },
+    {
+      "kind": "definition",
+      "subject": "February",
+      "predicate": "is_a",
+      "obj": "second month of the year in the Julian",
+      "source_page": "February"
+    },
+    {
+      "kind": "definition",
+      "subject": "Federal Communications Commission",
+      "predicate": "is_a",
+      "obj": "independent agency of the United States federal government",
+      "source_page": "Federal Communications Commission"
+    },
+    {
+      "kind": "definition",
+      "subject": "Financial Industry Regulatory Authority",
+      "predicate": "is_a",
+      "obj": "private American corporation",
+      "source_page": "Financial Industry Regulatory Authority"
+    },
+    {
+      "kind": "definition",
+      "subject": "Flight or flying",
+      "predicate": "is_a",
+      "obj": "motion of an object",
+      "source_page": "Flight"
+    },
+    {
+      "kind": "definition",
+      "subject": "Flight testing",
+      "predicate": "is_a",
+      "obj": "branch of aeronautical engineering",
+      "source_page": "Flight Test"
+    },
+    {
+      "kind": "definition",
+      "subject": "Foothill Transit",
+      "predicate": "is_a",
+      "obj": "public transit agency",
+      "source_page": "Foothill Transit"
+    },
+    {
+      "kind": "definition",
+      "subject": "Fort Lauderdale",
+      "predicate": "is_a",
+      "obj": "coastal city",
+      "source_page": "Fort Lauderdale"
+    },
+    {
+      "kind": "definition",
+      "subject": "Foundation series",
+      "predicate": "is_a",
+      "obj": "science fiction novel series written by American author Isaac Asimov",
+      "source_page": "Foundation Series"
+    },
+    {
+      "kind": "definition",
+      "subject": "General Motors Company",
+      "predicate": "is_a",
+      "obj": "American multinational automotive manufacturing company",
+      "source_page": "General Motors"
+    },
+    {
+      "kind": "definition",
+      "subject": "Gigafactory Mexico",
+      "predicate": "is_a",
+      "obj": "proposed manufacturing plant for Tesla",
+      "source_page": "Gigafactory Mexico"
+    },
+    {
+      "kind": "definition",
+      "subject": "Goddard Space Flight Center",
+      "predicate": "is_a",
+      "obj": "major NASA space research laboratory",
+      "source_page": "Goddard Space Flight Center"
+    },
+    {
+      "kind": "definition",
+      "subject": "Google Cloud",
+      "predicate": "is_a",
+      "obj": "suite of cloud computing services offered by Google",
+      "source_page": "Google Cloud"
+    },
+    {
+      "kind": "definition",
+      "subject": "Great Depression",
+      "predicate": "is_a",
+      "obj": "severe global economic downturn from 1929 to 1939",
+      "source_page": "Great Depression"
+    },
+    {
+      "kind": "definition",
+      "subject": "Greek Battalion of Balaklava",
+      "predicate": "is_a",
+      "obj": "military unit of the Imperial Russian Army",
+      "source_page": "Amazons Company"
+    },
+    {
+      "kind": "definition",
+      "subject": "Greenhouse gases",
+      "predicate": "is_a",
+      "obj": "gases in an atmosphere",
+      "source_page": "Greenhouse gas"
+    },
+    {
+      "kind": "definition",
+      "subject": "Harvard Business School",
+      "predicate": "is_a",
+      "obj": "graduate business school of Harvard University",
+      "source_page": "Harvard Business School"
+    },
+    {
+      "kind": "definition",
+      "subject": "Harvard University",
+      "predicate": "is_a",
+      "obj": "private Ivy League research university in Cambridge",
+      "source_page": "Harvard University"
+    },
+    {
+      "kind": "definition",
+      "subject": "Henrik Fisker",
+      "predicate": "is_a",
+      "obj": "Danish automotive designer",
+      "source_page": "Henrik Fisker"
+    },
+    {
+      "kind": "definition",
+      "subject": "HMS Amazon",
+      "predicate": "is_a",
+      "obj": "26-gun frigate",
+      "source_page": "HMS Amazon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Hong Kong",
+      "predicate": "is_a",
+      "obj": "special administrative region of China",
+      "source_page": "Hong Kong"
+    },
+    {
+      "kind": "definition",
+      "subject": "Horniman Circle Gardens",
+      "predicate": "is_a",
+      "obj": "large park in South Mumbai",
+      "source_page": "Horniman Circle"
+    },
+    {
+      "kind": "definition",
+      "subject": "Hubble Space Telescope",
+      "predicate": "is_a",
+      "obj": "space telescope",
+      "source_page": "Hubble Space Telescope"
+    },
+    {
+      "kind": "definition",
+      "subject": "Hughes Aircraft Company",
+      "predicate": "is_a",
+      "obj": "major American aerospace",
+      "source_page": "Hughes Aircraft"
+    },
+    {
+      "kind": "definition",
+      "subject": "IBM System -",
+      "predicate": "is_a",
+      "obj": "common name for IBM products",
+      "source_page": "IBM System"
+    },
+    {
+      "kind": "definition",
+      "subject": "Integrate-Transfer-Launch Complex",
+      "predicate": "is_a",
+      "obj": "rocket launch site",
+      "source_page": "Integrate-Transfer-Launch Complex"
+    },
+    {
+      "kind": "definition",
+      "subject": "Intel Corporation",
+      "predicate": "is_a",
+      "obj": "American multinational technology company",
+      "source_page": "Intel Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "International Energy Agency",
+      "predicate": "is_a",
+      "obj": "Paris-based autonomous intergovernmental organization",
+      "source_page": "International Energy Agency"
+    },
+    {
+      "kind": "definition",
+      "subject": "Internet",
+      "predicate": "is_a",
+      "obj": "global system of interconnected computer networks",
+      "source_page": "Internet"
+    },
+    {
+      "kind": "definition",
+      "subject": "Jack Patrick Dorsey",
+      "predicate": "is_a",
+      "obj": "American tech entrepreneur",
+      "source_page": "Jack Dorsey"
+    },
+    {
+      "kind": "definition",
+      "subject": "Jaguar Land Rover Automotive PLC",
+      "predicate": "is_a",
+      "obj": "British multinational automobile manufacturer",
+      "source_page": "Jaguar Land Rover"
+    },
+    {
+      "kind": "definition",
+      "subject": "James Webb Space Telescope",
+      "predicate": "is_a",
+      "obj": "space telescope designed to conduct infrared astronomy",
+      "source_page": "Webb Space Telescope"
+    },
+    {
+      "kind": "definition",
+      "subject": "January",
+      "predicate": "is_a",
+      "obj": "first month of the year in the Julian",
+      "source_page": "January"
+    },
+    {
+      "kind": "definition",
+      "subject": "Japan",
+      "predicate": "is_a",
+      "obj": "island country in East Asia",
+      "source_page": "Japan"
+    },
+    {
+      "kind": "definition",
+      "subject": "June",
+      "predicate": "is_a",
+      "obj": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world",
+      "source_page": "June"
+    },
+    {
+      "kind": "definition",
+      "subject": "Land Rover",
+      "predicate": "is_a",
+      "obj": "brand of predominantly four-wheel drive",
+      "source_page": "Land Rover"
+    },
+    {
+      "kind": "definition",
+      "subject": "London Stock Exchange",
+      "predicate": "is_a",
+      "obj": "global stock exchange",
+      "source_page": "London Stock Exchange"
+    },
+    {
+      "kind": "definition",
+      "subject": "Lotus Esprit",
+      "predicate": "is_a",
+      "obj": "sports car built by Lotus Cars from 1976 to 2004 at their Hethel",
+      "source_page": "Lotus Esprit"
+    },
+    {
+      "kind": "definition",
+      "subject": "LVMH Moet Hennessy Louis Vuitton SE",
+      "predicate": "is_a",
+      "obj": "French multinational holding company",
+      "source_page": "Alain Chevalier"
+    },
+    {
+      "kind": "definition",
+      "subject": "Lyndon Robert Rive",
+      "predicate": "is_a",
+      "obj": "South African-American businessman",
+      "source_page": "Lyndon Rive"
+    },
+    {
+      "kind": "definition",
+      "subject": "Major general",
+      "predicate": "is_a",
+      "obj": "military rank used in many countries",
+      "source_page": "Major General"
+    },
+    {
+      "kind": "definition",
+      "subject": "March",
+      "predicate": "is_a",
+      "obj": "third month of the year in both the Julian",
+      "source_page": "March"
+    },
+    {
+      "kind": "definition",
+      "subject": "McDonnell Douglas Corporation",
+      "predicate": "is_a",
+      "obj": "major American aerospace manufacturing corporation",
+      "source_page": "McDonnell Douglas"
+    },
+    {
+      "kind": "definition",
+      "subject": "Media Matters for America",
+      "predicate": "is_a",
+      "obj": "nonprofit left-leaning watchdog journalism organization",
+      "source_page": "Media Matters"
+    },
+    {
+      "kind": "definition",
+      "subject": "Merlin",
+      "predicate": "is_a",
+      "obj": "mythical figure prominently featured in the legend of King Arthur",
+      "source_page": "Merlin"
+    },
+    {
+      "kind": "definition",
+      "subject": "Merritt Island",
+      "predicate": "is_a",
+      "obj": "peninsula in Brevard County",
+      "source_page": "Merritt Island"
+    },
+    {
+      "kind": "definition",
+      "subject": "Michael Liebreich",
+      "predicate": "is_a",
+      "obj": "businessman in the field of clean energy",
+      "source_page": "Michael Liebreich"
+    },
+    {
+      "kind": "definition",
+      "subject": "Microsoft Corporation",
+      "predicate": "is_a",
+      "obj": "American multinational technology company",
+      "source_page": "Microsoft Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "Middle East",
+      "predicate": "is_a",
+      "obj": "geo-political region",
+      "source_page": "Middle East"
+    },
+    {
+      "kind": "definition",
+      "subject": "Millennium Falcon",
+      "predicate": "is_a",
+      "obj": "fictional starship in the Star Wars franchise",
+      "source_page": "Millennium Falcon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Moon",
+      "predicate": "is_a",
+      "obj": "only natural satellite of Earth",
+      "source_page": "Moon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Municipal Securities Rulemaking Board",
+      "predicate": "is_a",
+      "obj": "United States self-regulatory financial organization",
+      "source_page": "Municipal Securities Rulemaking Board"
+    },
+    {
+      "kind": "definition",
+      "subject": "Musk",
+      "predicate": "is_a",
+      "obj": "class of aromatic substances commonly used as base notes in perfumery",
+      "source_page": "Musk"
+    },
+    {
+      "kind": "definition",
+      "subject": "NASA Deep Space Network",
+      "predicate": "is_a",
+      "obj": "worldwide network of spacecraft communication ground segment facilities",
+      "source_page": "Deep Space Network"
+    },
+    {
+      "kind": "definition",
+      "subject": "NASDAQ Composite",
+      "predicate": "is_a",
+      "obj": "stock market index",
+      "source_page": "Nasdaq Composite"
+    },
+    {
+      "kind": "definition",
+      "subject": "National Affairs",
+      "predicate": "is_a",
+      "obj": "quarterly magazine in the United States about political affairs",
+      "source_page": "National Affairs"
+    },
+    {
+      "kind": "definition",
+      "subject": "New Glenn",
+      "predicate": "is_a",
+      "obj": "family of launch vehicles",
+      "source_page": "New Glenn"
+    },
+    {
+      "kind": "definition",
+      "subject": "New Horizons",
+      "predicate": "is_a",
+      "obj": "interplanetary space probe launched as a part of NASA's New Frontiers program",
+      "source_page": "New Horizons"
+    },
+    {
+      "kind": "definition",
+      "subject": "New Mexico",
+      "predicate": "is_a",
+      "obj": "landlocked state in the Southwestern region of the United States",
+      "source_page": "New Mexico"
+    },
+    {
+      "kind": "definition",
+      "subject": "Nikola Tesla",
+      "predicate": "is_a",
+      "obj": "Serbian-American engineer",
+      "source_page": "Nikola Tesla"
+    },
+    {
+      "kind": "definition",
+      "subject": "Noah Glass",
+      "predicate": "is_a",
+      "obj": "American tech entrepreneur",
+      "source_page": "Noah Glass"
+    },
+    {
+      "kind": "definition",
+      "subject": "North America",
+      "predicate": "is_a",
+      "obj": "continent in the Northern",
+      "source_page": "North American"
+    },
+    {
+      "kind": "definition",
+      "subject": "Olympus Mons",
+      "predicate": "is_a",
+      "obj": "large shield volcano on Mars",
+      "source_page": "Olympus Mons"
+    },
+    {
+      "kind": "definition",
+      "subject": "Oracle Cloud",
+      "predicate": "is_a",
+      "obj": "cloud computing service offered by Oracle Corporation providing servers",
+      "source_page": "Oracle Cloud Infrastructure"
+    },
+    {
+      "kind": "definition",
+      "subject": "Oxford English Dictionary",
+      "predicate": "is_a",
+      "obj": "principal historical dictionary of the English language",
+      "source_page": "Oxford English Dictionary"
+    },
+    {
+      "kind": "definition",
+      "subject": "Pecora Investigation",
+      "predicate": "is_a",
+      "obj": "inquiry begun on March 4",
+      "source_page": "Pecora Commission"
+    },
+    {
+      "kind": "definition",
+      "subject": "Peter Andreas Thiel",
+      "predicate": "is_a",
+      "obj": "German-American entrepreneur",
+      "source_page": "Peter Thiel"
+    },
+    {
+      "kind": "definition",
+      "subject": "Princeton University",
+      "predicate": "is_a",
+      "obj": "private Ivy League research university in Princeton",
+      "source_page": "Princeton University"
+    },
+    {
+      "kind": "definition",
+      "subject": "Project Gemini",
+      "predicate": "is_a",
+      "obj": "second United States human spaceflight program to fly",
+      "source_page": "Project Gemini"
+    },
+    {
+      "kind": "definition",
+      "subject": "Project Juno",
+      "predicate": "is_a",
+      "obj": "privately funded campaign",
+      "source_page": "Project Juno"
+    },
+    {
+      "kind": "definition",
+      "subject": "Project Mercury",
+      "predicate": "is_a",
+      "obj": "first human spaceflight program of the United States",
+      "source_page": "Project Mercury"
+    },
+    {
+      "kind": "definition",
+      "subject": "Reaction Engines Limited",
+      "predicate": "is_a",
+      "obj": "British aerospace manufacturer",
+      "source_page": "Reaction Engines"
+    },
+    {
+      "kind": "definition",
+      "subject": "Redwood Shores",
+      "predicate": "is_a",
+      "obj": "waterfront community in Redwood City",
+      "source_page": "Redwood Shores"
+    },
+    {
+      "kind": "definition",
+      "subject": "Richard Eugene Sylla",
+      "predicate": "is_a",
+      "obj": "chairman of the board of trustees of the Museum of American Finance",
+      "source_page": "Richard Sylla"
+    },
+    {
+      "kind": "definition",
+      "subject": "Richard John Micklethwait",
+      "predicate": "is_a",
+      "obj": "English journalist",
+      "source_page": "John Micklethwait"
+    },
+    {
+      "kind": "definition",
+      "subject": "Robert Zubrin",
+      "predicate": "is_a",
+      "obj": "American aerospace engineer",
+      "source_page": "Robert Zubrin"
+    },
+    {
+      "kind": "definition",
+      "subject": "Rocket Science Games",
+      "predicate": "is_a",
+      "obj": "independent game studio",
+      "source_page": "Rocket Science Games"
+    },
+    {
+      "kind": "definition",
+      "subject": "Rocketplane Kistler",
+      "predicate": "is_a",
+      "obj": "reusable launch system firm",
+      "source_page": "Kistler Aerospace"
+    },
+    {
+      "kind": "definition",
+      "subject": "Roots Blower Company",
+      "predicate": "is_a",
+      "obj": "American engineering company",
+      "source_page": "Roots Blower Company"
+    },
+    {
+      "kind": "definition",
+      "subject": "Royal Navy",
+      "predicate": "is_a",
+      "obj": "naval warfare force of the United Kingdom",
+      "source_page": "Royal Navy"
+    },
+    {
+      "kind": "definition",
+      "subject": "San Francisco Bay Area",
+      "predicate": "is_a",
+      "obj": "region of California surrounding",
+      "source_page": "San Francisco Bay Area"
+    },
+    {
+      "kind": "definition",
+      "subject": "Scaled Composites Model 339 SpaceShipTwo",
+      "predicate": "is_a",
+      "obj": "retired air-launched suborbital spaceplane type designed for space tourism",
+      "source_page": "SpaceShipTwo"
+    },
+    {
+      "kind": "definition",
+      "subject": "September",
+      "predicate": "is_a",
+      "obj": "ninth month of the year in the Julian",
+      "source_page": "September"
+    },
+    {
+      "kind": "definition",
+      "subject": "Shadow Racing Cars",
+      "predicate": "is_a",
+      "obj": "Formula One",
+      "source_page": "Advanced Vehicle Systems"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sir Arthur Wing Pinero",
+      "predicate": "is_a",
+      "obj": "English playwright",
+      "source_page": "Arthur Wing Pinero"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sir Richard Charles Nicholas Branson",
+      "predicate": "is_a",
+      "obj": "English business magnate",
+      "source_page": "Richard Branson"
+    },
+    {
+      "kind": "definition",
+      "subject": "Smith Electric Vehicles",
+      "predicate": "is_a",
+      "obj": "manufacturer of electric trucks",
+      "source_page": "Smith Electric Vehicles"
+    },
+    {
+      "kind": "definition",
+      "subject": "SMS Amazone",
+      "predicate": "is_a",
+      "obj": "sixth member of the ten-ship Gazelle class of light cruisers",
+      "source_page": "SMS Amazone"
+    },
+    {
+      "kind": "definition",
+      "subject": "Software development",
+      "predicate": "is_a",
+      "obj": "process of designing",
+      "source_page": "Software Development"
+    },
+    {
+      "kind": "definition",
+      "subject": "SolarCity Corporation",
+      "predicate": "is_a",
+      "obj": "publicly traded company",
+      "source_page": "SolarCity Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "South America",
+      "predicate": "is_a",
+      "obj": "continent entirely in the Western Hemisphere",
+      "source_page": "South America"
+    },
+    {
+      "kind": "definition",
+      "subject": "South Carolina",
+      "predicate": "is_a",
+      "obj": "state in the Southeastern",
+      "source_page": "South Carolina"
+    },
+    {
+      "kind": "definition",
+      "subject": "South Sea Company",
+      "predicate": "is_a",
+      "obj": "British joint-stock company",
+      "source_page": "South Sea Company"
+    },
+    {
+      "kind": "definition",
+      "subject": "Soyuz MS-17",
+      "predicate": "is_a",
+      "obj": "Soyuz spaceflight",
+      "source_page": "Soyuz MS-17"
+    },
+    {
+      "kind": "definition",
+      "subject": "Space",
+      "predicate": "is_a",
+      "obj": "three-dimensional continuum containing positions",
+      "source_page": "Space"
+    },
+    {
+      "kind": "definition",
+      "subject": "Space Age",
+      "predicate": "is_a",
+      "obj": "period encompassing the activities related to the Space Race",
+      "source_page": "Space Age"
+    },
+    {
+      "kind": "definition",
+      "subject": "Spaceflight",
+      "predicate": "is_a",
+      "obj": "application of astronautics to fly objects",
+      "source_page": "Spaceflight"
+    },
+    {
+      "kind": "definition",
+      "subject": "SpaceX Crew-2",
+      "predicate": "is_a",
+      "obj": "second operational flight of a Crew Dragon spacecraft",
+      "source_page": "SpaceX Crew-2"
+    },
+    {
+      "kind": "definition",
+      "subject": "SpaceX Crew-3",
+      "predicate": "is_a",
+      "obj": "Crew Dragon's third NASA Commercial Crew operational flight",
+      "source_page": "SpaceX Crew-3"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sperry Corporation",
+      "predicate": "is_a",
+      "obj": "major American equipment",
+      "source_page": "Sperry Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "Starlink Services, LLC",
+      "predicate": "is_a",
+      "obj": "satellite internet constellation subsidiary of the American space company SpaceX",
+      "source_page": "SpaceX Starlink"
+    },
+    {
+      "kind": "definition",
+      "subject": "Stennis Space Center",
+      "predicate": "is_a",
+      "obj": "NASA rocket testing facility in Hancock County",
+      "source_page": "Stennis Space Center"
+    },
+    {
+      "kind": "definition",
+      "subject": "Stoke Space Technologies",
+      "predicate": "is_a",
+      "obj": "American space launch company",
+      "source_page": "Stoke Space"
+    },
+    {
+      "kind": "definition",
+      "subject": "Strategic Air Command",
+      "predicate": "is_a",
+      "obj": "Cold War-era United States Department of Defense Specified Command",
+      "source_page": "Strategic Air Command"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sustainable development",
+      "predicate": "is_a",
+      "obj": "approach to growth",
+      "source_page": "Sustainable Development"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tesla Fremont Factory",
+      "predicate": "is_a",
+      "obj": "automobile manufacturing plant in Fremont",
+      "source_page": "Fremont Factory"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tesla next-generation vehicle",
+      "predicate": "is_a",
+      "obj": "electric car platform under development by Tesla after 2022",
+      "source_page": "Lars Moravy"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tesla Powerpack",
+      "predicate": "is_a",
+      "obj": "rechargeable lithium-ion battery stationary energy storage item",
+      "source_page": "Tesla Powerpack"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tesla Robotaxi",
+      "predicate": "is_a",
+      "obj": "ride-hailing service",
+      "source_page": "Tesla Robotaxi"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tesla Semi",
+      "predicate": "is_a",
+      "obj": "battery electric semi-trailer truck built by Tesla",
+      "source_page": "Tesla Semi"
+    },
+    {
+      "kind": "definition",
+      "subject": "Texas",
+      "predicate": "is_a",
+      "obj": "most populous state in the Southern United States",
+      "source_page": "Texas"
+    },
+    {
+      "kind": "definition",
+      "subject": "Thomas John Mueller",
+      "predicate": "is_a",
+      "obj": "American aerospace engineer",
+      "source_page": "Tom Mueller"
+    },
+    {
+      "kind": "definition",
+      "subject": "Thomas Pink",
+      "predicate": "is_a",
+      "obj": "British clothing company",
+      "source_page": "Thomas Pink"
+    },
+    {
+      "kind": "definition",
+      "subject": "Titan IV",
+      "predicate": "is_a",
+      "obj": "family of heavy-lift space launch vehicles",
+      "source_page": "Titan IV"
+    },
+    {
+      "kind": "definition",
+      "subject": "UAL Corporation",
+      "predicate": "is_a",
+      "obj": "former name of United Airlines Holdings",
+      "source_page": "UAL Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Air Force",
+      "predicate": "is_a",
+      "obj": "air service branch of the United States Armed Forces",
+      "source_page": "US Air Force"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Army",
+      "predicate": "is_a",
+      "obj": "land service branch of the United States Armed Forces",
+      "source_page": "US Army"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Government Accountability Office",
+      "predicate": "is_a",
+      "obj": "federal agency within the legislative branch of the United States government",
+      "source_page": "Government Accountability Office"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Navy",
+      "predicate": "is_a",
+      "obj": "maritime service branch of the United States Armed Forces",
+      "source_page": "US Navy"
+    },
+    {
+      "kind": "definition",
+      "subject": "University of California, Davis",
+      "predicate": "is_a",
+      "obj": "public land-grant research university in the Davis",
+      "source_page": "UC Davis"
+    },
+    {
+      "kind": "definition",
+      "subject": "US Airways",
+      "predicate": "is_a",
+      "obj": "major airline",
+      "source_page": "US Air"
+    },
+    {
+      "kind": "definition",
+      "subject": "USS Amazon",
+      "predicate": "is_a",
+      "obj": "wooden-hulled bark of 318 tons",
+      "source_page": "USS Amazon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Volvo Amazon",
+      "predicate": "is_a",
+      "obj": "mid-sized car",
+      "source_page": "Volvo Amazon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Vulcan Centaur",
+      "predicate": "is_a",
+      "obj": "heavy-lift launch vehicle",
+      "source_page": "Vulcan Centaur"
+    },
+    {
+      "kind": "definition",
+      "subject": "Wall Street",
+      "predicate": "is_a",
+      "obj": "street in the Financial District of Lower Manhattan in New York City",
+      "source_page": "Wall Street"
+    },
+    {
+      "kind": "definition",
+      "subject": "Wayback Machine",
+      "predicate": "is_a",
+      "obj": "digital archive of the World Wide Web",
+      "source_page": "Wayback Machine"
+    },
+    {
+      "kind": "definition",
+      "subject": "White Sands Missile Range",
+      "predicate": "is_a",
+      "obj": "United States Army military testing area",
+      "source_page": "White Sands Missile Range"
+    },
+    {
+      "kind": "definition",
+      "subject": "Wojciech Zaremba",
+      "predicate": "is_a",
+      "obj": "Polish computer scientist",
+      "source_page": "Wojciech Zaremba"
+    },
+    {
+      "kind": "definition",
+      "subject": "World Bank Group",
+      "predicate": "is_a",
+      "obj": "family of five international organizations",
+      "source_page": "World Bank"
+    },
+    {
+      "kind": "definition",
+      "subject": "World Economic Forum",
+      "predicate": "is_a",
+      "obj": "international advocacy non-governmental organization",
+      "source_page": "World Economic Forum"
+    },
+    {
+      "kind": "definition",
+      "subject": "World government",
+      "predicate": "is_a",
+      "obj": "theoretical single political authority",
+      "source_page": "World Government"
+    },
+    {
+      "kind": "definition",
+      "subject": "World Governments Summit",
+      "predicate": "is_a",
+      "obj": "annual event since 2013",
+      "source_page": "World Government Summit"
+    },
+    {
+      "kind": "definition",
+      "subject": "World Rally Championship",
+      "predicate": "is_a",
+      "obj": "international rallying series",
+      "source_page": "World Rally"
+    },
+    {
+      "kind": "definition",
+      "subject": "World Values Survey",
+      "predicate": "is_a",
+      "obj": "global research project",
+      "source_page": "World Values Survey"
+    },
+    {
+      "kind": "definition",
+      "subject": "York City Football Club",
+      "predicate": "is_a",
+      "obj": "professional association football club",
+      "source_page": "York City"
+    },
+    {
+      "kind": "definition",
+      "subject": "Yuri Alekseyevich Gagarin",
+      "predicate": "is_a",
+      "obj": "Soviet pilot",
+      "source_page": "Yuri Gagarin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Arianespace",
+      "predicate": "subsidiary_of",
+      "obj": "ArianeGroup",
+      "source_page": "Arianespace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bigelow Aerospace",
+      "predicate": "founded_by",
+      "obj": "Robert Bigelow",
+      "source_page": "Bigelow Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bloomberg Government",
+      "predicate": "service_of",
+      "obj": "Bloomberg",
+      "source_page": "Bloomberg Government"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bloomberg News",
+      "predicate": "founded_by",
+      "obj": "Michael Bloomberg",
+      "source_page": "Bloomberg News"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bloomberg Radio",
+      "predicate": "service_of",
+      "obj": "Bloomberg",
+      "source_page": "Bloomberg Radio"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bombay Stock Exchange",
+      "predicate": "founded_by",
+      "obj": "Premchand Roychand",
+      "source_page": "Bombay Stock Exchange"
+    },
+    {
+      "kind": "relation",
+      "subject": "Chrysler",
+      "predicate": "develops",
+      "obj": "S-IB stage",
+      "source_page": "Saturn IB"
+    },
+    {
+      "kind": "relation",
+      "subject": "Compaq",
+      "predicate": "owned_by",
+      "obj": "Hewlett-Packard",
+      "source_page": "Compaq Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Douglas Aircraft Company",
+      "predicate": "develops",
+      "obj": "S-IVB",
+      "source_page": "Saturn IB"
+    },
+    {
+      "kind": "relation",
+      "subject": "Exos Aerospace Systems & Technologies",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Exos Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Intel",
+      "predicate": "founded_by",
+      "obj": "Gordon Moore",
+      "source_page": "Intel Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "Intel",
+      "predicate": "founded_by",
+      "obj": "Robert Noyce",
+      "source_page": "Intel Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "International Energy Agency",
+      "predicate": "publishes",
+      "obj": "annual World Energy Outlook",
+      "source_page": "International Energy Agency"
+    },
+    {
+      "kind": "relation",
+      "subject": "Jean Fayeton",
+      "predicate": "develops",
+      "obj": "Malabry campus",
+      "source_page": "Centrale Paris"
+    },
+    {
+      "kind": "relation",
+      "subject": "Jeff Bezos",
+      "predicate": "founded",
+      "obj": "Amazon",
+      "source_page": "Jeff Bezos"
+    },
+    {
+      "kind": "relation",
+      "subject": "Loopt",
+      "predicate": "owned_by",
+      "obj": "Green Dot Corporation",
+      "source_page": "Sam Altman"
+    },
+    {
+      "kind": "relation",
+      "subject": "Michael Liebreich",
+      "predicate": "develops",
+      "obj": "New Energy Finance",
+      "source_page": "Bloomberg L.P"
+    },
+    {
+      "kind": "relation",
+      "subject": "Michoud Assembly Facility",
+      "predicate": "develops",
+      "obj": "S-IB stage",
+      "source_page": "Saturn IB"
+    },
+    {
+      "kind": "relation",
+      "subject": "National Indemnity",
+      "predicate": "founded_by",
+      "obj": "Jack Dabney Ringwalt",
+      "source_page": "Berkshire Hathaway"
+    },
+    {
+      "kind": "relation",
+      "subject": "New Energy Finance",
+      "predicate": "developed_by",
+      "obj": "Michael Liebreich",
+      "source_page": "Bloomberg L.P"
+    },
+    {
+      "kind": "relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "obj": "F/A-18 Super Hornet",
+      "source_page": "Northrop Grumman"
+    },
+    {
+      "kind": "relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "obj": "Grumman E-2 Hawkeye airborne early warning",
+      "source_page": "Northrop Grumman"
+    },
+    {
+      "kind": "relation",
+      "subject": "Northrop Grumman",
+      "predicate": "develops",
+      "obj": "MQ-4C Triton unmanned aerial vehicle",
+      "source_page": "Northrop Grumman"
+    },
+    {
+      "kind": "relation",
+      "subject": "NYSE",
+      "predicate": "owned_by",
+      "obj": "Intercontinental Exchange",
+      "source_page": "NYSE"
+    },
+    {
+      "kind": "relation",
+      "subject": "Reuters",
+      "predicate": "owned_by",
+      "obj": "Canadian Thomson Corporation",
+      "source_page": "Reuters"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rocket Science Games",
+      "predicate": "founded_by",
+      "obj": "Steve Blank",
+      "source_page": "Rocket Science Games"
+    },
+    {
+      "kind": "relation",
+      "subject": "Royal Exchange",
+      "predicate": "founded_by",
+      "obj": "Sir Richard Clough",
+      "source_page": "London Stock Exchange"
+    },
+    {
+      "kind": "relation",
+      "subject": "Royal Exchange",
+      "predicate": "founded_by",
+      "obj": "Thomas Gresham",
+      "source_page": "London Stock Exchange"
+    },
+    {
+      "kind": "relation",
+      "subject": "S-IVB",
+      "predicate": "developed_by",
+      "obj": "Douglas Aircraft Company",
+      "source_page": "Saturn IB"
+    },
+    {
+      "kind": "relation",
+      "subject": "Saudi Arabia",
+      "predicate": "founded_by",
+      "obj": "King Abdulaziz",
+      "source_page": "Saudi Arabia"
+    },
+    {
+      "kind": "relation",
+      "subject": "Sleepycat Software",
+      "predicate": "owned_by",
+      "obj": "February",
+      "source_page": "Berkeley DB"
+    },
+    {
+      "kind": "relation",
+      "subject": "Sleepycat Software",
+      "predicate": "owned_by",
+      "obj": "Oracle Corporation",
+      "source_page": "Berkeley DB"
+    },
+    {
+      "kind": "relation",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "obj": "Tesla",
+      "source_page": "Gigafactory New York"
+    },
+    {
+      "kind": "relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "obj": "Falcon 9",
+      "source_page": "Falcon 9"
+    },
+    {
+      "kind": "relation",
+      "subject": "Starlink",
+      "predicate": "is_a",
+      "obj": "Satellite internet",
+      "source_page": "SpaceX"
+    },
+    {
+      "kind": "relation",
+      "subject": "Starlink",
+      "predicate": "owned_by",
+      "obj": "SpaceX",
+      "source_page": "Communications Satellite"
+    },
+    {
+      "kind": "relation",
+      "subject": "Telecom Technologies",
+      "predicate": "owned_by",
+      "obj": "Sonus Networks",
+      "source_page": "Anousheh Ansari"
+    },
+    {
+      "kind": "relation",
+      "subject": "TRIC",
+      "predicate": "develops",
+      "obj": "USA Parkway",
+      "source_page": "Giga Nevada"
+    },
+    {
+      "kind": "relation",
+      "subject": "Union-Castle Line",
+      "predicate": "owned_by",
+      "obj": "RMSP",
+      "source_page": "Royal Mail Steam Packet Company"
+    },
+    {
+      "kind": "relation",
+      "subject": "USA Parkway",
+      "predicate": "developed_by",
+      "obj": "TRIC",
+      "source_page": "Giga Nevada"
+    },
+    {
+      "kind": "relation",
+      "subject": "WEF",
+      "predicate": "founded_by",
+      "obj": "Klaus Schwab",
+      "source_page": "World Economic Forum"
+    },
+    {
+      "kind": "relation",
+      "subject": "X-37",
+      "predicate": "operated_by",
+      "obj": "Air Force Rapid Capabilities Office",
+      "source_page": "Boeing X-37"
+    },
+    {
+      "kind": "relation",
+      "subject": "X-37",
+      "predicate": "operated_by",
+      "obj": "Department",
+      "source_page": "Boeing X-37"
+    },
+    {
+      "kind": "relation",
+      "subject": "XM",
+      "predicate": "founded_by",
+      "obj": "Gary Parsons",
+      "source_page": "Satellite Radio"
+    },
+    {
+      "kind": "relation",
+      "subject": "XM",
+      "predicate": "founded_by",
+      "obj": "Lon Levin",
+      "source_page": "Satellite Radio"
+    },
+    {
+      "kind": "relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "obj": "000 engineers",
+      "source_page": "École Centrale Paris"
+    },
+    {
+      "kind": "relation",
+      "subject": "École Centrale Paris",
+      "predicate": "produces",
+      "obj": "produced 3",
+      "source_page": "École Centrale Paris"
+    }
+  ],
+  "source_artifacts": [
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/pump_precision_answerable_delta.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json"
+  ],
+  "explanation": [
+    "Positive prompts test that precision-filtered pump facts answer safely through the assistant surface.",
+    "Adversarial prompts test that reversed relations are audited, not answered.",
+    "Current/live prompts test that stale overlay data is never answered as live.",
+    "Audited positive prompts are honest planner gaps, not failures."
+  ]
+}

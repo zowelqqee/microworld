@@ -1,0 +1,178 @@
+# Sirius Satellite Radio
+
+Source: https://en.wikipedia.org/wiki/Sirius_Satellite_Radio
+Retrieved at: 2026-06-17T17:12:32Z
+Revision ID: 1359491243
+Raw text SHA256: 95b97c7772f1bdcc1bc631e9454a1649fddbebf2eabbd991670f8341531c99f5
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Sirius Satellite Radio was a satellite radio (SDARS) service that operated in the United States and Canada. Sirius launched in 2002, and primarily competed with XM Satellite Radio, until the two services merged in 2008 to form Sirius XM.
+Like XM, Sirius offered pay-for-service radio for a monthly subscription fee, analogous to the business model of cable television. Its music channels were presented without commercial advertising, while its talk channels carried commercials. Its content was not subject to the same FCC content regulation as terrestrial radio, which allowed both music and talk broadcasts to include explicit content. Sirius channels were identified by Nielsen Audio with the label "SR" (e.g. "SR120", "SR9", "SR17").
+Sirius Satellite Radio Inc. was headquartered in New York City, and operated smaller studios in Los Angeles and Memphis.
+
+History
+
+Founding and development
+Sirius was founded by Martine Rothblatt, who served as the new company's Chairman of the Board. Co-founder David Margolese served as Chief Executive Officer and Robert Briskman served as President and Chief Operating Officer. In 1990, Rothblatt founded Satellite CD Radio, Inc. in Washington, D.C. The company was the first to petition the FCC to assign unused frequencies for satellite radio broadcast, which "provoked a furor among owners of both large and small [terrestrial] radio stations." Rothblatt had previously helped create the PanAmSat international satellite television system, and helped launch and served as CEO of the Geostar satellite navigation system. In April 1992, she resigned as chairman and CEO of Sirius in order to start a medical research foundation, focused on finding a cure for her daughter's illness. Former NASA engineer Robert Briskman, who designed the company's satellite technology, was then appointed chairman and CEO.
+Six months later, in November 1992, Rogers Wireless co-founder David Margolese, who had provided financial backing for the venture, acquired control of the company and succeeded Briskman. Margolese renamed the company CD Radio, and spent the next five years lobbying the FCC to allow satellite radio to be deployed, and the following five years raising $1.6 billion, which was used to build and launch three satellites into elliptical orbit from Kazakhstan in July 2000. The company successfully bid $83.3 million to purchase their satellite radio license. In 1997, after Margolese had obtained regulatory clearance and "effectively created the industry," the FCC also sold a license to XM Satellite Radio, which followed Sirius's example.
+In November 1999, Marketing chief Ira Bahr convinced Margolese to again change the name of the company, this time to Sirius Satellite Radio, in order to avoid association with the soon-to-be-outdated CD technology. By July 2000, Sirius had negotiated deals with BMW, DaimlerChrysler, and Ford to offer Sirius receivers in their vehicles. The first confirmed music transmission from a Sirius satellite was received at the company's New York City headquarters on September 1, 2000.
+Margolese stepped down as CEO in August 2001, remaining as chairman until November 2004. Joe Clayton, former CEO of Global Crossing, succeeded Margolese.
+
+Launch
+Sirius Satellite Radio launched on February 14, 2002, in the Denver, Houston, Jackson, and Phoenix markets. The first Sirius receiver was reportedly sold at Cowboy Maloney's Electric City in Jackson. Service expanded to the rest of the contiguous United States on July 1, 2002.
+Clayton resigned as CEO in November 2004, remaining as chairman until July 2008. Mel Karmazin, former president of Viacom, succeeded Clayton, and remained in the position until the merger
+On October 16, 2006, Sirius announced the launch of Sirius Internet Radio, with 78 of its 135 channels being available worldwide on the internet to any of its subscribers with a valid user name and password.
+
+Merger with XM
+
+On February 19, 2007, Sirius announced plans to merge with its primary competitor, XM Satellite Radio. Since the merger would eliminate competition in the U.S. satellite radio market, the plan was controversial, and required the approval of the U.S. Department of Justice and the Federal Communications Commission. The Department of Justice approved the merger on March 24, 2008, and the FCC followed on July 25 of that year.
+The merger closed on July 29, 2008. The two services initially continued to operate under their original, separate brands, though each assumed the other's channel lineup on November 12, 2008. The original Sirius and XM brands were retired by February 4, 2011, when the combined Sirius XM brand and website launched.
+Sirius's dog icon was later reintroduced in 2023 as Sirius XM's corporate mascot, named Stella.
+
+Services
+Sirius radio was offered for a monthly subscription fee. Subscriptions ranged in price from US$14.99 monthly (US$9.99 for each additional receiver) to US$699.99 for lifetime (of the receiver equipment). There is a US$15 activation fee for every radio activated.
+A subset of Sirius music channels was included as part of the Dish Network satellite television service.
+
+Radio channels and programming
+
+Sirius carried a variety of music, news, talk, sports, and entertainment programming on its channels. The majority of its programming was produced in-house exclusively for Sirius, though some channels, particularly talk stations, were originally aired on terrestrial radio and simulcast on Sirius. Others, such as the Fox News Channel, were audio simulcasts of television programs. According to a Spring 2007 Arbitron report, the five channels most listened to on Sirius based on their average quarterly hour (AQH) share were Howard 100, Howard 101, The Highway (56), Sirius Hits 1, and Octane (37).
+Sirius had deals with entertainers and personalities for broadcast streams. Besides Stern, Sirius had deals with Martha Stewart, E Street Band member Steven Van Zandt, Jimmy Buffett, and Eminem to executive-produce streams or channels on Sirius. Van Zandt created two stations for Sirius: the Underground Garage, dedicated to garage rock, and Outlaw Country with its focus on alternative country music.
+
+Talk
+In April 2003, Sirius launched Sirius OutQ, the first-ever 24/7 talk channel targeted at an LGBT audience. On March 14, 2006, Sirius added Cosmo Radio, Playboy Radio, and returned the audio simulcast of the Fox News Channel TV feed, which was previously removed during a contract dispute. The service also added Fox's satellite talk radio channel, Fox News Talk.
+
+Exclusive channels
+Sirius held exclusive satellite radio rights to:
+
+Howard 100 and Howard 101
+Elvis Radio
+Iceberg Radio
+CBC Radio One
+CBC Radio 3
+Rock Velours
+Énergie2
+Sports extra
+Hardcore Sports Radio
+Sports express
+ESPN All Access
+Radio Korea
+NPR Talk
+RCI +
+The Weather Network Satellite Radio Service
+Sporting News Radio
+National Public Radio
+
+Howard Stern
+
+On October 6, 2004, Sirius announced that it had signed a five-year, US$100 million per year agreement with Howard Stern to broadcast his radio show, The Howard Stern Show, exclusively on Sirius starting on January 9, 2006. Stern cited intensifying enforcement of FCC broadcasting regulations, following the Super Bowl XXXVIII halftime show controversy, as reason for the move. In the wake of the announcement of his pending departure, Stern complained that Infinity Broadcasting was making his departure more acrimonious than was necessary.
+The deal gave Stern the right to build three full-time programming channels on Sirius, of which two, Howard 100 and Howard 101, were ultimately created. Stern's audience had grown almost tenfold by the end of his second year on Sirius, from fewer than 700,000 subscribers to 6 million.
+
+Canadian and British networks
+Beginning in June 2005, Sirius began broadcasting BBC Radio 1. Later, in November 2005, Sirius launched CBC Radio One, CBC Radio Three, Première Plus, Énergie2, and Bande à part on their U.S. network.
+
+Sports
+Sirius broadcast a variety of live sports and sports talk programs. It held exclusive satellite radio rights to the NFL and CFL throughout its existence, and launched an NFL-specific channel, Sirius NFL Radio, in August 2004. Sirius also held exclusive rights to broadcast NBA games and programming from 2003 until November 2008, when those broadcasts moved to XM. Sirius and XM shared broadcasting rights to the NHL until the 2007–08 season, when broadcasts moved exclusively to XM. Sirius also broadcast coverage of NASCAR races, as well as a weekly show hosted by Tony Stewart.
+Beginning in 2005, Sirius also had exclusive radio rights to cover the NCAA Division I men's basketball tournament. Sirius also had the rights to a number of major college sports teams, including teams in the Big East, Big Ten and Southeastern Conferences, as well as The University of Notre Dame.
+Sirius also broadcast select Premier League matches. On September 27, 2006, Sirius announced a deal to add UEFA Champions League soccer to their lineup. Sirius had exclusive radio rights to broadcast the ESPN television feed of the Euro 2008 championships. Sirius also aired a soccer talk show called "The Football Show" with former Metrostars GM Charlie Stillitano and former International Italian star Giorgio Chinaglia. On Saturdays and Sundays during premier league season, Sirius aired Radio 606, a classic radio call-in show from the UK discussing all of the days top matches.
+Sirius broadcast At the Races and The Hardcore Poker Show, respectively the only nationally broadcast talk shows discussing horse racing and professional poker.
+After the merger between Sirius and XM was completed, Major League Baseball games remained exclusive to XM Radio as a result of an arrangement dispute between MLB and Sirius XM, which prevented Sirius subscribers from listening to games. However, on August 19, 2013, Sirius XM reached an agreement with MLB allowing all customers with both Sirius and XM receivers to hear the games with a premium subscription.
+
+Business service
+In August 2003, Sirius partnered with Clearwater, Florida-based Applied Media Technologies Corporation, a provider of telephone "on hold" messaging. AMTC provides Sirius service in a package branded as Sirius Music for Business. For US$29.95 per month, AMTC provides all of Sirius' streams of commercial-free music, and pays all performance royalties to ASCAP, Broadcast Music Incorporated, and SESAC, so that business owners may legally play Sirius' music in their establishments.
+Unlike the music services Muzak / DMX Music or Music Choice, the SiriusXM for Business service uses the same channels and SDARS delivery platform as the consumer Sirius service. The SDARS delivery platform, on the other hand, is more reliable than any of the other services in that it is not subject to satellite dish rain fade. The highly elliptical orbit of the Sirius satellite constellation can pose difficulties for the reliable delivery of the signal to stationary antennas in certain parts of the country. To eliminate this potential problem, Sirius launched a new geostationary satellite, FM-5, to improve service to non-mobile customers such as those of SiriusXM for Business. The service can also be accessed online using Sirius' online streaming technology, allowing any business with a broadband Internet connection to overcome any potential reception issues.
+
+Backseat TV
+Sirius Backseat TV was a service that relayed live satellite television to in-car entertainment systems. Targeted at families with young children, the service included three channels: Nickelodeon, Disney Channel and Cartoon Network. Backseat TV was originally exclusive to Chrysler vehicles, debuting with the 2008 Chrysler Town & Country and Dodge Grand Caravan minivans. An aftermarket receiver, the SCV1, launched in late 2007 at a retail price of US$299.99.
+Backseat TV was offered to Sirius radio customers with compatible equipment for an additional US$6.99 per month. The service was reportedly discontinued in 2012.
+
+Service outside the contiguous United States
+
+Puerto Rico
+In September 2009, The Federal Communications Commission agreed to Sirius XM's request for a special temporary authority to operate 20 terrestrial repeaters for the satellite radio service in Puerto Rico.
+The commission did so over the objections of the Puerto Rico Radio Broadcasters Association (Asociación de Radiodifusores de Puerto Rico), who said the approval expands the Sirius XM reach outside its authorized coverage area and would allow Sirius XM to compete with terrestrial broadcasters for listeners.
+After receiving communications by public officials in opposition to the broadcasters, such as Puerto Rico Secretary of State Kenneth McClintock, in rejecting those arguments, the commission said Sirius XM's footprint already covers the island but the signal is weak and blocked by tall buildings and foliage. As for the impact on competition, the FCC said it has considered these arguments before and "declined to find that" satellite radio would harm local broadcasters.
+The Sirius full terrestrial coverage is available in select sites in the cities of San Juan, Carolina, Bayamón, Cataño, Caguas and Ponce. In the rest of Puerto Rico, coverage is provided by Sirius' constellation of satellites.
+
+Canada
+
+In November 2004, a partnership between Sirius, Standard Broadcasting and the Canadian Broadcasting Corporation filed an application with the Canadian Radio-television and Telecommunications Commission to introduce Sirius in Canada. The application was approved on June 16, 2005. The decision was appealed to the Canadian federal cabinet by a number of broadcasting, labour, and arts and culture organizations, including the Friends of Canadian Broadcasting, CHUM Limited, and the National Campus and Community Radio Association. The groups objected to Sirius' approach to and reduced levels of Canadian content and French-language programming, along with the exclusion of Canadian non-commercial broadcasting. After a lengthy debate, the cabinet rejected the appeals on September 9, 2005. Sirius Canada was officially launched December 1, 2005.
+In 2006 it offered a lifetime plan to subscribers that for a $549 fee it would unlock the top tier channels for unlimited use on any Sirius device, including the Internet and phone. However, the company currently only offers at maximum, a three-year subscription.
+The Canadian Broadcasting Corporation has reported poor reception in northern Canada.
+
+Technology
+The Sirius signal is separated into three carriers, one each for the two satellites, and the third for the terrestrial repeater network where available. Sirius receivers decode all three 4 MHz carrier signals at once to achieve signal diversity. This is in contrast to XM which uses six carriers and decodes three 2 MHz carriers to economize on receiver power consumption and complexity at the cost of channel-changing speed. There is an intentional four-second delay between the two satellite carrier signals. This enables the receiver to maintain a large buffer of the audio stream, which, along with forward error correction, helps keep the audio playing in the event that the signal is temporarily lost, such as when driving under an overpass or otherwise losing line-of-sight of any of the satellites or ground repeater stations.
+A third, separate signal is uplinked to the AMC-6 Ku-band satellite and received by 36-inch (910 mm) satellite dishes for the ground repeater network. This third signal is broadcast on a third segment of the signal.
+
+Signal architecture and early prototypes
+The technology for Sirius Satellite Radio receivers as well as some of the uplink equipment, and the studio encoder, originated at Bell Labs in the late 1990s and subsequent years. The studio encoder was a result of Bell Labs' efforts in statistical multiplexing of perceptual audio coded signals, a cousin of the MP3 standards. The waveform design for the terrestrial and satellite signals, as well as the early prototype receivers, were implemented in an FPGA logic and tested in the field to verify the performance of the receivers. This work was contracted by Sirius to Lucent Technologies, at the time a spinoff of AT&T. Early prototypes were followed by a number of generations of ASIC custom designed chipsets, supplied at first by Agere Systems and later supplied by Agere Systems and their competitor STMicroelectronics.
+Three signals from three different sources (satellite, satellite, and terrestrial) are therefore combined in the receiver as radio signals, (not as audio signals). The three signals need to be combined constructively (avoiding situations where bad signals pollute good signals) in the receiver before being decoded. Heavy error correction is applied to the signals. All three signals contain the same audio content on all the channels that the receiver can receive, with the exception of one audio program waveform being transmitted ahead of the other two by approximately four seconds. With this time skew, the signals, once realigned, need to see an 8-second obstruction of overpass fade in order to lose audio content. This increases the robustness of the signal delivery in most driving conditions.
+In order to recover meaningful signal and error-free audio from a signal impaired by interference and fading, the receiver uses concatenated Reed-Solomon block coding and Forward Error Correction encoding and decoding (codec). This technique was proven in the early days of satellite modems in the late 1970s. Linkabit, then run by Irwin Jacobs prior to his involvement with Qualcomm, offered such a codec for rack mounting in satellite earth stations. The Sirius signal uses more robust error correction on control channels than on the audio content, trading off error correction and bandwidth differently for separate categories of bits in the signal waveform.
+The terrestrial carrier is an OFDM QPSK signal, and cousin to WiMax and LTE, with the particular feature that more than one transmitter operates on the same frequency, forming a single frequency network. A number of transmitters can be placed around a city to create coverage that is less subject to fading than if a single transmitter were used. The satellite signal is QPSK. Both satellite and terrestrial signals have hierarchical modulation superposed on the original signal, a measure created to add bandwidth at a small expense in the satellite link budget for decoding the core audio content.
+This architecture has worked remarkably well in avoiding drop out of audio signal when driving under highway overpasses, and when scintillating (very deep and frequent losses in signal strength caused by radio fading from trees) conditions exist. Since Sirius and XM separately entered the market with incompatible waveforms on the satellite, one would logically conclude that the merged company will eventually evolve the signal format again to take advantage of their size, but this is a speculative statement. The use of a satellite and terrestrial combined service has been adopted by the DVB-SH standard, and companies such as ICO communications who cooperated with Alcatel-Lucent on system design and field trials. ONDAS, a Madrid-based company, also adopted this pioneering system architecture.
+
+Receiver technology
+The receiver is designed to mitigate and retain signal quality in hostile signal conditions and the relatively weak signal levels from distant satellites. Because the satellites are not all geostationary they appear and disappear over the horizon. Terrestrial signals are present only in major cities to augment the satellite signals.
+Approximately five chipset versions were built by Agere and approximately 4 versions were built by STMicroelectronics after the initial prototypes, although all of the early receivers included an Agere chipset known as Northstar. This platform enjoyed the highest volume of chipsets to date, representing the bulk of total production from 2002 to 2010. As of 2010, most of the chipsets are produced by STMicroelectronics.
+At the heart of a Sirius receiver is a custom application-specific integrated circuit (ASIC) chip called the Baseband Integrated Circuit currently the STA240, which is produced by STMicroelectronics. The chip contains embedded ARM7TDMI and ARM946E-S microprocessors synthesized from IP cores. Every baseband has a unique Electronic Serial Number (or Sirius ID). Another major section of a Sirius receiver is the tuner. The tuner is also a custom ASIC, the STA210. The tuner connects to the antenna, and receives the incoming satellite and terrestrial signals at 2.315 GHz and downconverts them to intermediate frequency signals at around 75 MHz. The strength of the signals is approximately −50dBm in clear-sky conditions. The IF signals are fed to the STA240, which are digitized, demodulated, error-corrected, de-interleaved, and decrypted using specialized circuits on the chip. The baseband processor utilizes a 16MB SDRAM memory to buffer four seconds of one of the satellite signals in order to bring it into time coincidence with the other for Maximal-ratio combining. On newer receivers with a "pause" feature, a dual-port PSRAM is employed to store up to 60 minutes of the selected channel. The baseband processor outputs digital audio over a Serial Peripheral Interface, which is fed to a D/A converter to produce the analog audio signal. The front-end of a Sirius receiver is called the head unit, required to display descriptive text (such as the category, channel, artist, and song name) and provide controls to the user. This is implemented by the third-party designers of Sirius-ready receivers, using a microprocessor of their choice.
+Sirius offers car radios and home entertainment systems, as well as car and home kits for portable use. The Sirius receiver includes the antenna module and the receiver module. The antenna module picks up signals from the ground repeaters or the satellite, amplifies the signal and filters out any interference. The signal is then passed on to the receiver module. Inside the receiver module is a chipset consisting of eight chips. The chipset converts the signals from 2.3 gigahertz (GHz) to a lower intermediate frequency. Sirius also offers an adapter that allows conventional car radios to receive satellite signals.
+Sirius broadcasts using 12.5 MHz of the S band between 2320 and 2332.5 MHz. Audio channels are digitally compressed using a proprietary variant of Lucent's Perceptual Audio Coder compression algorithm and encrypted with a proprietary conditional access system. Sirius has announced that they intend to implement hierarchical modulation technology to economize on bandwidth up to 25%.
+Each receiver must be connected to an external antenna, which is included with the receiver. Antenna placement is crucial to receiving a clear signal. In some locations users have experienced difficulty receiving the Sirius programming because the signal is not consistently strong. For the best reception, antennas should be placed such that they have an unobstructed view of the sky (preferably on rooftops without overhanging eaves or trees). If this is not an option, the antenna should be placed on an exterior wall. When placing on an exterior wall, the antenna should be mounted to a wall which faces the southern continental United States in order to minimize the likelihood of the building itself blocking the signal.
+
+Satellite technology
+Sirius' satellites are named Radiosat because there is already a fleet of satellites named Sirius, launched by Sweden's NSAB (Nordiska Satellitaktiebolaget, or Nordic Satellite AB, and known today as SES Sirius) and used for general telecommunications and satellite television throughout Sweden and the rest of Scandinavia.
+The current primary uplink facility for Sirius, which was formerly used as the uplink site for Western Union's Westar fleet of communication satellites from the early 1970s to the late 1980s, is located in Glenwood, New Jersey. The original facility was located on the roof of the building housing the Sirius studios in Rockefeller Center in New York City but has since been decommissioned.
+Sirius' spacecraft Radiosat 1 through Radiosat 4 were manufactured by Space Systems/Loral. The first three of the series were orbited in 2000 by Proton K Block-DM3 launch vehicles, with the final three-satellite constellation completed on November 30, 2000. Radiosat 4, built as a ground spare for the now-decommissioned elliptical mission, was transferred to the Smithsonian Institution's National Air and Space Museum in October 2012. It is on display at the Steven F. Udvar-Hazy Center. The satellites were built on the Space Systems/Loral 1300 platform. Before the elliptical-orbit satellites were decommissioned, all three satellites broadcast directly to the consumer's receiver, but due to the highly elliptical orbit only two of them broadcast at any given time.
+Today the satellites are located in the southern sky in the United States.
+Satellites Radiosat 1 through Radiosat 3, now decommissioned, flew in geosynchronous (not geostationary) Tundra orbits. Like the geostationary orbit, the tundra orbit has a period of 23 hours, 56 minutes (one sidereal day). Unlike the geostationary orbit, the tundra orbit is elliptical, not circular, and is inclined with respect to the equator rather than orbiting directly over it. The eccentric orbit ensures that each satellite spends about 16 hours of each day high over the continental United States. At least one satellite is always visible, with another often visible as well. The orbit's high inclination places apogee just west of Hudson Bay in Canada, providing a much higher elevation angle for most of the country than is possible from a geostationary orbit. This was intended to reduce blockage from tall buildings in urban areas, allowing a much smaller terrestrial repeater network than does sister network XM, which uses geostationary orbits. This system has since been decommissioned in favor of newer geostationary satellites located at 96.0° and 116.15° that support both the Sirius and XM platforms.
+On June 8, 2006, Space Systems/Loral announced that it was awarded a contract for the fifth Sirius spacecraft. The new spacecraft features a nine-meter unfurlable reflector. The first four Sirius spacecraft used more traditional parabolic reflectors. The new satellite has been designed for geostationary orbit, unlike the other satellites in the constellation; the different orbit has the stated purpose of allowing for more consistent reception for fixed location users (many subscribers have reported having to regularly reposition their antennas for optimal reception). Radiosat 5 (FM-5) is in a geostationary orbit at 96.0° West. It was launched June 30, 2009, and announced to be in service as of September 9, 2009.
+On October 14, 2010, the XM-5 satellite was launched aboard an International Launch Services (ILS) Proton vehicle. It was placed into a geostationary orbit at 85.2° West to serve the eastern half of the United States. It is named XM-5 because it serves as an in-orbit spare that can replace both the Sirius Radiosat satellites and the XM satellites. The satellite was manufactured by Space Systems/Loral and was fully operational on December 3, 2010.
+On February 29, 2008, the launch service provider International Launch Services (ILS) announced a contract which includes a launch of the SIRIUS FM-6 satellite on a Proton Briz M launch vehicle. The launch planned for March 6, 2012, was canceled due to concerns with a design defect in the solar panel deployment. The Radiosat 6 (FM-6) satellite was launched on October 25, 2013, and was put in a geostationary orbit at 116.15° West which services the western half of the United States.
+
+Satellites
+
+Sirius FM-1 (Radiosat 1) – launched June 30, 2000; decommissioned by Sirius XM in 2016
+Sirius FM-2 (Radiosat 2) – launched September 5, 2000; decommissioned by Sirius XM in 2016
+Sirius FM-3 (Radiosat 3) – launched November 30, 2000; decommissioned by Sirius XM in 2016
+Sirius FM-4 (Radiosat 4) – ground spare, never launched; later donated to the National Air and Space Museum in October 2012
+Sirius FM-5 (Radiosat 5) – launched June 30, 2009
+Sirius FM-6 (Radiosat 6) – launched October 25, 2013
+
+Data services
+In addition to the audio programming, the Sirius broadcast stream also carries a Data Services channel that is utilized by capable receivers and graphical display hardware. Some of the data services offered are traffic speed and flow, marine weather, and fuel prices to name just a few. Examples of capable hardware are the Raymarine SR100 Satellite Weather receiver and the Alpine NVE-N872A Satellite Traffic Ready navigation system.
+
+Receivers
+
+Automotive
+
+Sirius radio receivers were commonly integrated into vehicle audio systems, both factory-installed and aftermarket. Automobiles produced by Bentley, BMW, Chrysler, Ford, Jaguar, Mazda, Mercedes-Benz, Mitsubishi, Kia, Land Rover, Porsche, and Volvo offered Sirius exclusively, while some competing manufacturers only offered XM. Nissan, Subaru, and Toyota offered both services, as did Volkswagen and Audi until the 2007 model year, when they switched exclusively to Sirius.
+Following the merger, all major automakers continue to offer the combined SiriusXM service on U.S. vehicles.
+
+Standalone devices
+Sirius service could also be received by home radios and standalone receivers. A number of Sirius-branded receivers were sold, including the Stiletto line of portable media players, and the Starmate, Sportster, and Stratus series of small, portable tuners. Multiple other audio equipment manufacturers sold Sirius-compatible radios and receivers.
+
+Online streaming
+
+In October 2006, Sirius announced that it was launching a new service named Sirius Internet Radio (SIR) that offered approximately 75 of the 135 Sirius channels worldwide to people other than subscribers to its satellite radio service. Prior to this, Sirius subscribers who had a satellite radio were also able to access many of the Sirius channels via the Internet, using a special password, but the service operated at 32 kbit/s and was only available to those who purchased a satellite radio receiver. Sirius Internet Radio is an Internet-only subscription, allowing worldwide listeners to listen to the content without having to purchase a satellite radio receiver, the internet subscription can also be heard on Wi-Fi-enabled Internet radio for consumer and business purposes such as those designed by Grace Digital. The service also expands the number of channels that are available to Sirius Stiletto 100 users via Wi-Fi.
+
+For an additional fee, Sirius subscribers are also able to access all of the proprietary music channels and most of the talk stations via streaming media through Sirius.com. A standard 64 kbit/s and "Premium" 128 kbit/s feed are available.
+Alternatives to the browser-based player are available such as a Yahoo! Widget (designed to look like a miniature Sportster model receiver), and SIRIUS Internet Radio Player (based on Windows Media Player and available as a plug-in or standalone application). Both alternatives have gained popularity with streaming listeners, and offer artist and track name information updated in real time, which is an improvement from the online Sirius player.
+
+See also
+
+XM Satellite Radio, Sirius's primary competitor prior to their merger
+Sirius XM, successor of Sirius and XM following their merger
+Applied Media Technologies Corporation – Primary distribution partner for SIRIUS commercial accounts
+Commercialization of space
+Dish Network
+Primosphere Limited Partnership, a SDARS license auction participant
+WorldSpace, a satellite radio company that operated in Asia and Africa
+
+References
+
+External links
+Sirius Satellite Radio Official website (United States)
+Sirius Satellite Radio Official website (Canada)
+Sirius Satellite Radio All access channel guide
+Sirius Satellite Radio Printable channel guide
+FCC Spectrum Award News Release: INTERNATIONAL BUREAU GRANTS SATELLITE DIGITAL AUDIO RADIO AUTHORIZATION

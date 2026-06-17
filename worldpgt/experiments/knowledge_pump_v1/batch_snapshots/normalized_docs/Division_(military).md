@@ -1,0 +1,435 @@
+# Division (military)
+
+Source: https://en.wikipedia.org/wiki/Division_(military)
+Retrieved at: 2026-06-17T17:21:06Z
+Revision ID: 1359128084
+Raw text SHA256: 69000e0648c1534095f3ff55c70ad7b367f5bd5e54cd07a634c3b7a6a31bd554
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+A division is a large military unit or formation, usually consisting of between 6,000 and 25,000 soldiers. In most armies, a division is composed of several regiments or brigades; in turn, several divisions typically make up a corps.
+Historically, the division has been the default combined arms unit capable of independent operations. Smaller combined arms units, such as the American regimental combat team (RCT) during World War II, were used when conditions favored them. In recent times, modern Western militaries have begun adopting the smaller brigade combat team (similar to the RCT) as the default combined arms unit, with the division to which they belong being less important.
+A similar word, divizion/divizijun/dywizjon, is also used in Slavic languages (such as Russian, Serbo-Croatian, and Polish) for a battalion-size artillery or cavalry unit. In naval usage "division" has a completely different range of meanings. Aboard ships of British Royal Navy tradition, the terms "division" or "department" are often used interchangeably and refer to the administrative organization used to manage personnel. Aboard US Navy ships (including US Coast Guard vessels), in shore commands and in US naval aviation units (including US navy, marine corps, and coastguard aviation) it refers to an administrative/functional sub-unit of a department (e.g., fire control division of the weapons department). Alternatively it refers to a sub-unit of several ships within a flotilla or squadron, or to two or three sections of aircraft operating under a designated division leader.
+
+History
+
+Origins
+In 1577, the Devon Trained Bands of England were divided into three divisions, each with two colonels and six captains. Among Western military theorists, one of the first to think of organizing an army into smaller combined-arms units was Maurice de Saxe (d. 1750), Marshal General of France, in his book Mes Rêveries. He died at the age of 54, without having implemented his idea. Victor-François de Broglie put the ideas into practice. He conducted successful practical experiments of the divisional system in the Seven Years' War.
+
+Early divisions
+The first war in which the divisional system was used systematically was the French Revolutionary War. Lazare Carnot of the Committee of Public Safety, who was in charge of military affairs, came to the same conclusion about it as the previous royal government, and the army was organised into divisions.
+It made the armies more flexible and easy to maneuver, and it also made the large French Revolutionary Army manageable. Under Napoleon, the divisions were grouped together into corps, because of their increasing size. Napoleon's military success spread the divisional and corps system all over Europe; by the end of the Napoleonic Wars, all armies in Europe had adopted it.
+
+World War I
+The composition of divisions varied significantly during the two world wars and, in addition, there was no uniformity of quality, even when divisions had the same composition.
+The size of infantry divisions deployed by the major belligerents at start of the Great War ranged from about 16,000 in the French and Russian armies to 17,500 in the German imperial army and about 18,000 in Austro-Hungarian and British armies.
+As World War I went on, the size of divisions decreased significantly from those of 1914, with both British and Germans reducing the number of divisions' sub-units. But, while the number of soldiers was lower, by 1917, divisions were much better armed.
+On the other hand, in 1917, the American infantry divisions that arrived in France numbered 28,061 officers and men, of which 17,666 were riflemen.
+
+World War II
+The divisional system reached its numerical height during the Second World War. Beside the infantry and cavalry divisions created since Napoleonic era, new division types appeared during the Second World War, such as airborne, tank, mechanized, motorized.
+The Soviet Union's Red Army consisted of more than a thousand division-sized units at any one time, and the number of rifle divisions raised during the Great Patriotic War of 1941–1945 is estimated by David M. Glantz as 482. Nazi Germany had hundreds of numbered or named divisions, while the United States employed up to 91 divisions.
+A notable change to divisional structures during the war was completion of the shift from square divisions (composed of two brigades each with two regiments) to triangular divisions (composed of three regiments with no brigade level) that many European armies had started using in World War I. This was done to increase flexibility and to pare down chain-of-command overhead. The triangular division structure allowed the tactic of "two forward, one back", where two of the division's regiments could engage the enemy with one regiment in reserve.
+All divisions in World War II were expected to have their own artillery formations, usually (depending upon the nation) the size of a regiment. Divisional artillery was occasionally seconded by corps-level command to increase firepower in larger engagements.
+During the war the US also used regimental combat teams, whereby attached and/or organic divisional units were parceled out to infantry regiments, creating smaller combined-arms units with their own armor and artillery and support units. These combat teams would still be under divisional command but had some level of autonomy on the battlefield.
+Organic units within divisions were units which operated directly under divisional command and were not normally controlled by the regiments. These units were mainly support units in nature, and included signal companies, medical battalions, supply trains and administration.
+Attached units were smaller units that were placed under divisional command temporarily for the purpose of completing a particular mission. These units were usually combat units such as tank battalions, tank-destroyer battalions or cavalry-reconnaissance squadrons.
+
+Modern divisions
+In modern times, most military forces have standardized their divisional structures. This does not mean that divisions are equal in size or structure from country to country, but divisions have, in most cases, come to be units of 10,000 to 15,000 soldiers with enough organic support to be capable of independent operations. Usually, the direct organization of the division consists of one to four brigades or battle groups of its primary combat arm, along with a brigade or regiment of combat support (usually artillery) and a number of direct-reporting battalions for necessary specialized support tasks, such as intelligence, logistics, reconnaissance, and combat engineers. Most militaries standardize ideal organization strength for each type of division, encapsulated in a Table of Organization and Equipment (TO&E) which specifies exact assignments of units, personnel, and equipment for a division.
+The modern division became the primary identifiable combat unit in many militaries during the second half of the 20th century, supplanting the brigade; however, the trend started to reverse since the end of the Cold War. The peak use of the division as the primary combat unit occurred during World War II, when the belligerents deployed over a thousand divisions. With technological advances since then, the combat power of each division has increased.
+
+Types
+Divisions are often formed to organize units of a particular type together with appropriate support units to allow independent operations. In more recent times, divisions have mainly been organized as combined arms units with subordinate units representing various combat arms. In this case, the division often retains the name of a more specialized division, and may still be tasked with a primary role suited to that specialization.
+
+Infantry division
+An "infantry division" is a military formation composed primarily of infantry units, also supported by units from other combat arms. In the Soviet Union and Russia, an infantry division is often referred to as a "rifle division". A "motorised infantry" division is a division with a majority of infantry subunits transported on soft-skinned motor vehicles. A "mechanized infantry" division is a division with a majority of infantry subunits transported on armored personnel carriers (APCs) or infantry fighting vehicles (IFVs) or both, or even some other class of armored fighting vehicles designed for the transportation of infantry. Mechanized infantry divisions in Nazi Germany were called "Panzergrenadier divisions". In Russia, they were known as "motor rifle divisions".
+Because of the ease and simplicity involved in forming divisions of infantry compared to other formations, infantry divisions have often been the most numerous in historical warfare. Most US divisions during World War II were infantry divisions.
+Infantry divisions were also expected to travel by foot from place to place, with transport vehicles or pack horses used to augment their travel. Divisions evolved over the course of time. For instance, in 1944, Nazi Germany designated some of their infantry formations as Volksgrenadier divisions, which were slightly smaller than the regular divisions, with wider issue of sub-machine guns, automatic and anti-tank weapons to reflect the reality that they were to be used in defensive warfare. In 1945, Nazi Germany seconded members of the Kriegsmarine to create "naval divisions", which were of lower quality than the infantry divisions of the Heer. They also created "Luftwaffe field divisions" from members of the Luftwaffe.
+Infantry divisions were sometimes given the responsibility of garrison work. These were named "frontier guard divisions", "static infantry divisions" and "fortress divisions", and were used often by Nazi Germany. The Soviet Union organised Machine-Gun Artillery Divisions of artillery, multiple rocket launchers, and static gun positions for use East of the Urals. A 1997 report said they were generally composed of four brigades, though later data suggests this was inaccurate.
+
+Cavalry division
+For most nations, cavalry was deployed in smaller units and was not therefore organized into divisions, but for larger militaries, such as that of the British Empire, United States, First French Empire, France, German Empire, Nazi Germany, Russian Empire, Empire of Japan, Second Polish Republic and Soviet Union, a number of cavalry divisions were formed. They were most often similar to the nations' infantry divisions in structure, although they usually had fewer and lighter support elements, with cavalry brigades or regiments replacing the infantry units, and supporting units, such as artillery and supply, being horse-drawn. For the most part, large cavalry units did not remain after World War II.
+While horse cavalry had been found to be obsolete, the concept of cavalry as a fast force capable of missions traditionally fulfilled by horse cavalry made a return to military thinking during the Cold War. In general, two new types of cavalry were developed: air cavalry or airmobile, relying on helicopter mobility, and armored cavalry, based on an autonomous armored formation. The former was pioneered by the 11th Air Assault Division (Test), formed on 1 February 1963 at Fort Benning, Georgia. On 29 June 1965, the division was renamed the 1st Cavalry Division (Airmobile), before its departure for the Vietnam War.
+After the end of the Vietnam War, the 1st Cavalry Division was reorganised and re-equipped with tanks and armored scout vehicles to form armored cavalry.
+The concept of a fast-moving, armored reconnaissance force has remained in modern armies, but these units are now smaller and make up a combined arms force used in modern brigades and divisions, and are no longer granted divisional status.
+"Light divisions" were German horse cavalry divisions organized early in World War II which included motorized units.
+
+Armored division
+
+The development of the tank during World War I prompted some nations to experiment with forming them into division-size units. Many did this the same way as they did cavalry divisions, by merely replacing cavalry with AFVs (including tanks) and motorizing the supporting units. This proved unwieldy in combat, as the units had many tanks but few infantry units. Instead, a more balanced approach was taken by adjusting the number of tank, infantry, artillery, and support units.
+The terms "tank division" or "mechanized division" are alternative names for armored divisions. A "Panzer division" was an armoured division of the Wehrmacht and the Waffen-SS of Germany during World War II.
+Since the end of the war, most armoured and infantry divisions have had significant numbers of both tank and infantry units within them. The difference has usually been in the mix of battalions assigned. Additionally, in some militaries, armoured divisions are equipped with more advanced or powerful tanks than other divisions.
+
+Mountain division
+Mountain divisions are infantry divisions given special training and equipment to operate in hilly, mountainous or arctic areas. Some examples of these formations include the US 10th Mountain Division, the German 1st Ski Division or the French 27th Alpine Infantry Division.
+Nazi Germany also organized "Jäger divisions" to operate in more adverse terrain.
+Italian Mountain divisions are called "Alpini divisions".
+
+Airborne division
+An airborne division is an infantry division given special training and equipment for arrival on the battlefield by air (typically via parachute or glider-borne).
+The US, Britain, and Germany experimented during World War II with specialized light infantry divisions capable of being quickly transported by transport aircraft or dropped into an area by parachute or glider. This required both high-quality equipment and training, creating elite units in the process and usually crewed by volunteers rather than conscripts.
+The German 1st Parachute Division, which was part of the Luftwaffe and not the Heer, was instrumental in the 1941 Battle of Crete. US and British airborne troops first participated during the 1943 invasion of Sicily. The use of airborne divisions during the Invasion of Normandy was crucial to its success. Further allied paratroop operations were made during the 1944 Operation Market Garden and the 1945 Operation Varsity.
+When not being used for a specific airborne mission, airborne divisions usually functioned as light infantry divisions.
+An "air assault division" is an airborne division that mainly uses helicopters to transport its troops.
+
+Artillery division
+The Soviet Union developed the concept of the specialized "artillery division" during the Eastern Front of the Second World War in 1942, although plans were in place since the later stages of the Russian Civil War. An artillery division serves as a specialized division using only artillery howitzers, anti-tank guns, rocket artillery (MRLs and tactical missiles) and mortars (both towed and self-propelled) (and historically siege artillery) and are usually tasked with providing concentrated firepower support to higher combined arms formations. They are mainly combat support formations most performing operations in support of the infantry and armor.
+
+Security division
+Nazi Germany organized Security divisions to operate in captured territory to provide rear-echelon security against partisans and maintain order among civilians. Structured like an infantry division, a security division was more likely to contain lower quality troops and was not intended to serve directly at the front. SS units of this type were called "SS Polizei divisions".
+The Soviet Union's People's Commissariat for Internal Affairs (the NKVD) organized security divisions (see Category:Divisions of the NKVD in World War II). In a few cases, NKVD divisions were employed in front-line combat as rifle divisions.
+
+Nomenclature
+
+Divisions are commonly designated by combining an ordinal number and a type name (e.g.: "13th Infantry Division"). Nicknames are often assigned or adopted, although these often are not considered an official part of the unit's nomenclature, with divisions of the Italian Army being one of the exceptions. In some cases, divisional titles lack an ordinal number, often in the case of unique units or units serving as elite or special troops. For clarity in histories and reports, the nation is identified before the number. This also helps in historical studies, but due to the nature of intelligence on the battlefield, division names and assignments are at times obscured. However, the size of the division rarely makes such obfuscation necessary.
+In the years leading up to the end of the cold war and beyond, the type names of various divisions became less important. The majority of US Infantry divisions were now mechanized and had significant numbers of tanks and IFVs, becoming de facto armored divisions. US armored divisions had more tanks but less infantry than these infantry divisions. Moreover, the sole cavalry division was structured the same way as an armored division.
+With the introduction of modular brigade combat teams (BCT) in modern divisions, the nomenclature type is even less important, since a division can now be made of up any combination of light infantry, Stryker and armored BCTs. For example, the US 1st Infantry Division currently consists of two armored BCTs along with support troops, with no light infantry units at all. By contrast, the current 1st Armored Division consists of two armored BCTs and a Stryker BCT along with its support troops.
+Nevertheless, some US division types will retain their mission: The 82nd and 11th airborne divisions have airborne infantry BCTs, while the 10th Mountain Division has only light infantry BCTs.
+
+National organizations
+
+Australia
+Historically, the Australian Army has fielded a number of divisions. During World War I, a total of six infantry divisions were raised as part of the all-volunteer Australian Imperial Force: 1st, 2nd, 3rd, 4th, 5th and 6th. The 1st Division and part of the 2nd saw service during the Gallipoli Campaign in 1915 before later taking part in the fighting on the Western Front between 1916 and 1918 along with the 3rd, 4th and 5th. The 6th Division existed only briefly in 1917, but was disbanded without seeing combat to make up for manpower shortages in the other divisions. Another infantry division, known as the New Zealand and Australian Division, was also formed from Australian and New Zealand troops and saw service at Gallipoli. Two divisions of Australian Light Horse were also formed – the Australian Mounted Division (which also included some British and French units) and the ANZAC Mounted Division – both of which served in the Sinai and Palestine Campaign during the war.
+
+In the inter-war years, on paper the Australian Army was organised into seven divisions: five infantry (1st through to 5th) and two cavalry, albeit on a reduced manning scale. During World War II, the size of Australia's force was expanded to eventually include 12 infantry divisions: 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, 10th, 11th and 12th. Of these, four – the 6th, 7th, 8th and 9th – were raised as part of the all-volunteer Second Australian Imperial Force, while the others formed part of the Militia, and were maintained through a mixture of volunteers and conscripts. In addition to the infantry divisions, three armoured divisions were formed: 1st, 2nd and 3rd. The Australian divisions were used in various campaigns, ranging from North Africa, Greece,
+Syria and Lebanon, to the South West Pacific.
+The Australian army currently has two divisions. The 1st Division is a skeleton organisation that acts as a deployable force headquarters, while the 2nd is a Reserve formation.
+
+Bangladesh
+
+The 9th Infantry Division was raised on 20 November 1975 in Dhaka as the first division of the Bangladesh Army. Currently, Bangladesh Army has ten infantry divisions under its command. Each infantry division consists of one artillery brigade, 3 or 4 infantry brigades/regiments. In addition, few divisions have one armored brigade each. The active infantry divisions are:
+
+7th Infantry Division, headquartered at Sheikh Hasina cantonment, Patuakhali
+9th Infantry Division, headquartered at Savar Cantonment, Dhaka
+10th Infantry Division, headquartered at Ramu Cantonment, Cox's Bazar
+11th Infantry Division, headquartered at Bogra Cantonment, Bogra
+17th Infantry Division, headquartered at Jalalabad Cantonment, Sylhet
+19th Infantry Division, headquartered at Shahid Salahuddin Cantonment, Tangail
+24th Infantry Division, headquartered at Chittagong Cantonment, Chittagong
+33rd Infantry Division, headquartered at Comilla Cantonment, Comilla
+55th Infantry Division, headquartered at Jessore Cantonment, Jessore
+66th Infantry Division, headquartered at Rangpur Cantonment, Rangpur
+
+Brazil
+The Brazilian Army currently has five army divisions: the 1st Army Division based in Rio de Janeiro and subordinated to the Eastern Military Command, the 2nd Army Division, based in São Paulo and subordinated to the Southeastern Military Command and 3rd Army Division, based in Santa Maria – RS, the 5th Army Division based in Curitiba – PR, the 6th Army Division based in Porto Alegre – RS, the latter three being linked to the Southern Military Command and the 7th Army Division based in Recife – PE subordinated to the Northeastern Military Command.
+The other military forces of the Brazilian Army are subordinated directly to the area military commands, not having a commanding division. In this case, the employment of these troops is coordinated by the operations coordinating center of the area military commands.
+
+Canada
+The first division-sized formation raised by the Canadian military was the First Contingent of the Canadian Expeditionary Force; raised in 1914, it was renamed the Canadian Division in early 1915 when it took to the field, and became the 1st Canadian Division when the 2nd Canadian Division took to the field later that year. Later, the 3rd Canadian Division and 4th Canadian Division saw service in France and Flanders, while the 5th Canadian Division was disbanded in the United Kingdom and broken up for reinforcements. The four divisions (collectively under the command of the Canadian Corps) were disbanded in 1919.
+Canada had nominal divisions on paper between the wars, overseeing the Militia (part-time reserve forces), but no active duty divisions. On 1 September 1939, two divisions were raised as part of the Canadian Active Service Force; the 3rd Division was raised in 1940, followed by the 1st Canadian Armoured Division and the 4th Canadian Division. The 1st Armoured was renamed the 5th Canadian (Armoured) Division and the 4th Division also became an armoured division. The 1st and 5th Divisions fought in the Mediterranean between 1943 and early 1945; the 2nd, 3rd and 4th Divisions served in Northwest Europe. The 6th, 7th and 8th Divisions were raised for service in Canada, with one brigade of the 6th Division going to Kiska in 1943. By 1945, the latter three divisions were disbanded as the threat to North America diminished. The 3rd Canadian Division (Canadian Army Occupation Force) was raised in 1945 for occupation duty in Germany, organized parallel to the combatant 3rd Division, and a 6th Canadian Division (Canadian Army Pacific Force) was undergoing formation and training for the invasion of Japan when the latter country surrendered in September 1945. All five combatant divisions, as well as the CAOF and CAPF, were disbanded by the end of 1946.
+The 1st Canadian Division Headquarters (later renamed simply 1st Division) was authorized once again in April 1946, but remained dormant until formally disbanded in July 1954. Simultaneously, however, another "Headquarters, 1st Canadian Infantry Division" was authorized as part of the Canadian Army Active Force (the Regular forces of the Canadian military), in October 1953. This, the first peacetime division in Canadian history, consisted of a brigade in Germany, one in Edmonton and one at Valcartier. This division was disbanded in April 1958.
+The 1st Canadian Division was reactivated in 1988 and served until the 1990s when the headquarters of the division was transformed into the Canadian Forces Joint Headquarters and placed under the control of the Canadian Expeditionary Force Command. The CFJHQ was transformed back into Headquarters, 1st Canadian Division, on 23 June 2010, under command of the Canadian Joint Operations Command. The unit is based at Kingston. Canada currently has four other divisions and all these are under command of the Canadian Army.
+
+1st Canadian Division, headquarters is located in Kingston.
+2nd Canadian Division, headquarters is located in Montreal.
+3rd Canadian Division, headquarters is located in Edmonton.
+4th Canadian Division, headquarters is located in Toronto.
+5th Canadian Division, headquarters is located in Halifax.
+The 1st Canadian Division has approximately 2,000 troops under its command, while the 2nd Canadian Division, 3rd Canadian Division, 4th Canadian Division, and 5th Canadian Division have approximately 10,000 troops each.
+
+China
+
+People's Republic
+The People's Liberation Army Ground Force (PLAGF) is divided into five Theater Commands. The regular forces of the ground forces consist of 18 group armies: corps-size combined arms units each with 24,000–50,000 personnel. The group armies contained among them:
+
+25 infantry divisions
+9 armored divisions
+2 artillery divisions
+As of 2011, the PLA went from a division-dominated structure to a brigade-dominated one. Until 2017, there were a further three airborne divisions in the 15th Airborne Corps, but these were reformed into six airborne brigades and a special operations brigade as part of a reform program aimed at reorganizing all PLA divisions into brigades.
+
+National Revolutionary Army
+The NRA Division (Chinese: 整編師, 編制師) was a military unit of the Republic of China. The original pattern of the infantry division organization of the early Republic was a square division. It was formed with two infantry brigades of two infantry regiments of three infantry battalions, an artillery regiment of fifty-four guns and eighteen machineguns, a cavalry regiment of twelve squadrons, an engineer battalion of four companies, a transport battalion of four companies, and other minor support units.
+In the mid-1930s, the Nationalist government with the help of German advisors attempted to modernize their army and intended to form sixty Reorganized Divisions and a number of reserve divisions. Under the strains and losses of the early campaigns of the Second Sino-Japanese War, the Chinese decided in mid-1938 to standardize their Divisions as triangular divisions as part of their effort to simplify the command structure and placed them under Corps, which became the basic tactical units. The remaining scarce artillery and the other support formations were withdrawn from the Division and were held at Corps or Army level or even higher. During the Second Sino-Japanese War, the Chinese Republic mobilized at least 310 infantry divisions, 23 cavalry divisions, and one mechanized division (the 200th Division).
+
+Colombia
+In the Colombian Army, a division is formed by two or more brigades and is usually commanded by a major general. Today, the Colombian Army has eight active divisions:
+
+1st Division (Santa Marta) – Its jurisdiction covers the Northern Region of Colombia in which there are the departments of Cesar, La Guajira, Magdalena, Sucre, Bolívar and Atlántico.
+2nd Division (Bucaramanga) – Its jurisdiction covers the north eastern Colombia in which there are the departments of Norte de Santander, Santander and Arauca.
+3rd Division (Popayán) – Its jurisdiction covers the South West of Colombia in which there are the departamentos of Nariño, Valle del Cauca, Cauca, Caldas, Quindio, part of Santander and the southern part of the Chocó.
+4th Division (Villavicencio) – Its jurisdiction covers the eastern region of Colombia in which there are the departments of Meta, Guaviare, and part of Vaupés.
+5th Division (Bogotá) – Its jurisdiction covers the Central Region of Colombia in which there are the departments of Cundinamarca, Boyaca, Huila and Tolima.
+6th Division (Florencia) – Its jurisdiction covers the southern region of Colombia in which there are the departments of Amazonas, Caquetá, Putumayo and southern Vaupés.
+7th Division (Medellín) – Its jurisdiction covers the western region of Colombia in which there are the departments of Cordoba, Antioquia, and part of the Chocó.
+8th Division (Yopal) – Its jurisdiction covers the northeastern region of Colombia in which there are the departments of Casanare, Arauca, Vichada, Guainía, and the municipalities of Boyaca of Cubará, Pisba, Paya, Labranzagrande and Pajarito.
+
+Egypt
+In the Egyptian Army, a division has four or five brigades and is usually commanded by Major General, however, a Brigadier General can also command a division. Today the Egyptian Army has 14 divisions (8 mechanized, 1 infantry, 4 armored, 1 Republican Guard). Mechanized divisions have more infantry and fewer tanks than armored divisions while armored divisions have less troops and more tanks than mechanized ones.
+
+2nd Infantry Division (Egypt) – One of the oldest units in the Egyptian Army, formed in 1947 and currently part of the Central Military Region (Egypt) the division was originally foot infantry but turned into mechanized in the late 1980s.
+3rd Mechanized Infantry Division (Egypt) – formed in 1951 as foot infantry and was fully mechanized in 1972. Currently part of the Northern Military Region (Egypt) alongside the 11th independent armored brigade. The division saw service in the Gulf War alongside the Egyptian 4th Armored Division during Operation Desert Shield.
+7th Mechanized Infantry Division – formed as foot infantry division in the mid-1960s (before Six-Day War). Currently a part of the Second Army (Egypt).
+16th Mechanized Infantry Division – formed in 1972 and participated in October 1973 War and currently part of the Second Army (Egypt)
+18th Mechanized Infantry Division – formed in 1972 and played a vital role in the October 1973 War as it accomplished its task of storming the El Qantara fortified points of the Bar Lev Line and liberating the town of El Qantara itself within 6/7 October and successfully halted & destroyed several Israeli counterattacks on its sector. Currently part of the Second Army (Egypt)
+19th Infantry Division – Formed in 1972 and participated in October 1973 War and considered one of the most notable units of the Egyptian Army due to its heroic actions during October 1973 War where it was the only division to not lose a single battle. One of these battles was Battle of Suez. Currently part of the Third Army (Egypt).
+20th Palestinian/Gaza Division during Suez Crisis.
+23rd Mechanized Infantry Division – formed in 1972 and participated in the October 1973 War. Currently part of the Third Army (Egypt)
+33rd Mechanized Infantry Division – formed in the early 2000s and currently part of the Western Military Region (Egypt).
+4th Armoured Division (Egypt) – the Division is considered one of the greatest, respected and oldest active formations in the Egyptian Army. It was formed in 1956 and participated in all of Egypt's modern conflicts and because of that, the division is nicknamed the Knights of Egypt and Crown of the Third Army. Its most notable service was during October 1973 War when the 3rd Armored Brigade advanced 12 kilometers deep into Sinai (over the actual sector) without the air, anti-tank and infantry support it requested. As the brigade surprise attacked the much larger Israeli forces, they gave them heavy casualties but since the Israeli units had air support, the brigade couldn't survive and lost its commander and most of its tanks in action. Still part of Third Army.
+6th Armored Division – formed in the mid-1960s as a Mechanized Division then by the late 1990s it was transformed into Armored Division. Currently part of the Second Army (Egypt).
+9th Armored Division – formed in 1987 with the main objective of protecting Southern Cairo and currently serves as part of the Central Military Region (Egypt).
+21st Armored Division – formed in the mid-1960s and participated in the Six-Day War and October 1973 War. Currently serving in the Western Military Region (Egypt).
+
+France
+
+On 1 July 1999, all French divisions were disbanded or converted into brigades. Four Task force headquarters (état-major de force) were created in order to oversee NATO standard divisions in case of emergency.
+The divisional level (niveau divisionnaire) was reintroduced on 1 July 2016. The French Army has now two active combined divisions:
+
+1re division (HQ in Besançon)
+3e division (HQ in Marseille)
+Each division consists of 25,000 personnel and is made up of three brigades (one light, one medium, and one heavy). The 1st Division also included the French elements of the Franco-German Brigade.
+There are also several "divisional level" (niveau divisionnaire) specialized commands:
+
+Commandement des actions dans la profondeur et du renseignement (Strasbourg)
+Commandement de l'appui terrestre numérique et cyber (Cesson-Sévigné)
+Commandement de l'appui et de la logistique de théâtre (Lille)
+Commandement des actions spéciales Terre (Pau)
+Commandement de l'entraînement au combat interarmes (Mourmelon-le-Grand)
+
+Germany
+The German Army has three divisions:
+
+1st Panzerdivision, stationed in Hannover.
+10th Panzerdivision, stationed in Sigmaringen.
+Rapid Forces Division, stationed in Veitshöchheim.
+
+India
+An Indian Army division is intermediate between a corps and a brigade. Each division is headed by a General Officer Commanding (GOC) holding the rank of major general. It usually consists of 15,000 combat troops and 8,000 support elements. Currently, the Indian Army has 40 divisions: four RAPIDs ("Reorganised Army Plains Infantry Divisions"), 16 infantry, 14 mountain, three armoured, and three artillery. Each division consists of several brigades.
+
+Indonesia
+The Indonesian Army has 3 infantry divisions (Indonesian: Divisi Infanteri) within the Kostrad strategic reserves command which plays a role for strategic defense operations. Aside from the infantry divisions, the Indonesian Army also hosts operational combat units from the territorial commands known as "Kodams", which are equivalent to divisions and are similarly organized as infantry divisions. The infantry divisions from the Kostrad are:
+
+1st Kostrad Infantry Division at Depok, West Java
+2nd Kostrad Infantry Division at Malang, East Java
+3rd Kostrad Infantry Division at Gowa, South Sulawesi
+The Kodam territorial commands are:
+
+I Military Regional Command/Bukit Barisan at Medan, North Sumatra
+II Military Regional Command/Sriwijaya at Palembang, South Sumatra
+III Military Regional Command/Siliwangi at Bandung, West Java
+IV Military Regional Command/Diponegoro at Semarang, Central Java
+V Military Regional Command/Brawijaya at Surabaya, East Java
+VI Military Regional Command/Mulawarman at Balikpapan, East Kalimantan
+IX Military Regional Command/Udayana at Denpasar, Bali
+XII Military Regional Command/Tanjungpura at Kubu Raya Regency, West Kalimantan
+XIII Military Regional Command/Merdeka at Manado, North Sulawesi
+XIV Military Regional Command/Hasanuddin at Makassar, South Sulawesi
+XV Military Regional Command/Pattimura at Ambon, Maluku
+XVII Military Regional Command/Cenderawasih at Jayapura, Papua
+XVIII Military Regional Command/Kasuari at Manokwari, West Papua
+Military Regional Command Jayakarta at East Jakarta, Jakarta
+Military Regional Command Iskandar Muda at Banda Aceh, Aceh
+The Indonesian Marine Corps also operates 3 divisions which are:
+
+1st Marine Forces (Pasmar-1) at Sidoarjo, East Java
+2nd Marine Forces (Pasmar-2) at Cilandak, South Jakarta
+3rd Marine Forces (Pasmar-3) at Sorong, West Papua
+Kostrad infantry divisions are organized into two brigades of infantry (Raider qualified) and a field artillery regiment (the 3rd Division has no artillery regiment, instead it has artillery battalion, the 6th Field Artillery Battalion) as well as combat and service support elements. The regional commands' combat and combat support formations, organized operationally as infantry divisions, have one infantry brigade, an operational second brigade made up of battalions administratively under Military Areas and directly reporting infantry battalions under divisional command, and combat and service support battalions, plus an optional armoured cavalry reconnaissance troop. This organization may be adjusted to the individual needs of the regional commands, Kodam Jayakarta's infantry division is made up of one infantry brigade, one armored cavalry brigade and one air defense artillery regiment, together with the support elements. The Marine Corps divisions are organized into an infantry brigade, an armored regiment (assault amphibian), an artillery regiment and a combat support regiment, plus an administrative regiment responsible for Marine Corps battalions deployed in support of naval bases and shipyards.
+
+Israel
+The Israel Defense Forces operates 13 divisions of various sizes that are separated into three categories: regular, territorial and reserve. Regardless of type divisions are organized into brigades.
+Regular divisions:
+
+36th Armored Division
+98th Paratrooper Division
+162nd Armored Division
+Territorial divisions:
+
+80th Territorial Division (Negev)
+91st Territorial Division (Galilee)
+96th Territorial Division (Jordan Valley)
+143rd Territorial Division (Gaza)
+210th Territorial Division (Bashan)
+877th Territorial Division (Judea and Samaria)
+Divisions in reserve:
+
+99th Infantry Division (Reserve)
+146th Armored Division (Reserve)
+252nd Armored Division (Reserve)
+
+Japan
+Japan Ground Self-Defense Force divisions are combined arms units with infantry, armored, and artillery units, combat support units and logistical support units. They are regionally independent and permanent entities. The divisions strength varies from 6,000 to 9,000 personnel. The division commander is a lieutenant general.
+JGSDF currently has nine active duty divisions (one armored, eight infantry):
+
+1st Division, in Nerima
+2nd Division, in Asahikawa
+3rd Division, in Itami
+4th Division, in Kasuga
+6th Division, in Higashine
+7th Division (Armored), in Chitose
+8th Division, in Kumamoto
+9th Division, in Aomori
+10th Division, in Nagoya
+
+Pakistan
+An Army division in the Pakistan Army is an intermediate between a corps and a brigade. It is the largest striking force in the army. Each division is headed by a General Officer Commanding (GOC) holding the rank of major general. It usually consists of 15,000 combat troops and 8,000 support elements. Currently, the Pakistani Army has 29 divisions: 20 infantry, two armoured, two mechanized, two air defence, two strategic and one artillery. Each division consists of several brigades.
+
+Philippines
+The Philippine Army is currently organized into 11 Infantry Divisions and 1 Mechanized Infantry Division across the Archipelago. A division is usually led by a major general and comprises 3–4 Brigades of infantry or armor.
+
+1st Infantry "Tabak" Division
+2nd Infantry "Jungle Fighter" Division
+3rd Infantry "Spearhead Troopers" Division
+4th Infantry "Diamond" Division
+5th Infantry "Star" Division
+6th Infantry "Kampilan" Division
+7th Infantry "Kaugnay" Division
+8th Infantry "Storm Trooper" Division
+9th Infantry "Spear" Division
+10th Infantry "Agila" Division
+11th Infantry "Alakdan" Division
+Armor "Pambato" Division
+
+Russia
+
+USSR
+
+In the Soviet Armed Forces, any of the armed services may have had formations termed 'division' (Russian: дивизия, Russian: diviziya), which included subunits appropriate to the service such as regiments and battalions, squadrons or naval vessels. Almost all divisions, irrespective of the service branch, had the 3+1+1 structure of major sub-units, which were usually regiments.
+There is also a similarly named unit of military organization in Russian military terminology, called Russian: divizion (Russian: дивизион). A Russian: divizion is an artillery or cavalry battalion, a specific part of a ship's crew (korabel'nyy divizion, 'ship battalion'), or a group of naval vessels (divizion korabley).
+In Imperial Russia, infantry formations were designated as (Russian: pekhoty), 'infantry'. But on 11 October 1918, all such formations in the new Red Army were re-designated as (Russian: strelkovaya), 'rifle'. This was deliberately chosen as a means of breaking with the Imperial past, while also giving these troops a sense of being an elite; in the Imperial Army, the riflemen had been the best of the foot soldiers outside the Guards. The new designation also hearkened back to the Streltsy of the 16th to early 18th centuries, which were also elite troops.
+All Soviet Army infantry, cavalry (until the 1950s) and tank divisions were organized in accordance with a Russian: shtat ("state"; establishment):
+
+Division HQ
+3 infantry, cavalry or tank regiments (with an additional infantry (motor rifle) or tank regiment depending on divisional specialization)
+Divisional artillery brigade or later just one artillery regiment (horse artillery regiment and tachanka battalion for cavalry)
+One light and one heavy howitzer field artillery regiment for brigades
+Divisional tactical ballistic missile battalion
+Divisional anti-air defense artillery regiment or battalion (air defense guns, later argumented by air defense surface to air missile battalions)
+Divisional anti-tank artillery battalion
+Combat and service support companies or battalions
+CBRN defense
+Combat engineers
+Divisional reconnaissance
+Medical company
+Rear services (including transport)
+Signals
+Electronic warfare
+Artillery and anti-aircraft artillery divisions were organized differently.
+Before the Second World War, besides the mechanised corps, there were independent tank battalions within rifle divisions. These were meant to reinforce rifle units for the purpose of breaching enemy defences. They had to act in cooperation with the infantry without breaking away from it and were called tanks for immediate infantry support (Russian: tanki neposredstvennoy podderzhki pekhoty).
+After 1945, some Red Army rifle divisions were converted to mechanised (infantry) divisions. From 1957, all rifle and mechanised divisions became "motor rifle divisions" (MRDs). These divisions usually had approximately 12,000 soldiers. During the Soviet era, 25 different MRD staffing and equipage tables existed to reflect different requirements of divisions stationed in different parts of the Soviet Union, the Warsaw Pact countries and Mongolia. From 1970 to 1983, a motor rifle regiment was added to tank divisions and an independent tank battalion to motor rifle divisions, and major increases in artillery, mortars, and armoured personnel carriers, in line with the evolution of Soviet doctrine, which began to recognise the need for a conventional phrase, away from the previously expected purely nuclear operations.
+A typical tank division had some 10,000 soldiers, less than those of the infantry, with near identical organization. During the Soviet era, 15 different TD staffing and equipage tables existed to reflect different requirements of divisions stationed in different parts of the Soviet Union, the Warsaw Pact countries and Mongolia.
+The Soviet Union organised Machine-Gun Artillery Divisions of artillery, multiple rocket launchers, and static gun positions for use East of the Urals from 1989.
+Similar organizations of units were and still are a part of the Russian Airborne Forces.
+A typical Soviet "frontal aviation division" consisted of three air regiments, a transport squadron, and associated maintenance units. The number of aircraft within a regiment varied. Fighter and fighter-bomber regiments were usually equipped with about 40 aircraft (36 of the primary unit type and a few utility and spares), while bomber regiments typically consisted of 32 aircraft. Divisions were typically commanded by colonels or major generals, or colonels or major generals of aviation in the Air Force. Soviet Naval Aviation and the Strategic Missile Forces divisions had either colonels or major generals as commanding officers while the ship divisions were led by captains 1st rank or captains 2nd rank.
+
+Russian Federation
+After the dissolution of the Soviet Union, Russian tank and motor rifle divisions were reduced to near-cadre state, many being designated "bases for storage of weapons and equipment" (Russian acronym BKhVT). These bases, or "cadre" divisions, were equipped with all the heavy armaments of a full-strength motor-rifle or tank division, while having only skeleton personnel strength, as low as 500 personnel. The officers and men of a cadre division focus primarily on maintaining the equipment in working condition. During wartime mobilization, such a division would be reinforced up to full manpower strength; however, in peacetime, a cadre division is unfit for any combat.
+From 1989 the Soviet and Russian Ground Forces organized a total of eight Machine-Gun Artillery Divisions: the 18th Machine Gun Artillery Division; 122nd Guards Machine-Gun Artillery Division; 126th; 127th; 128th; 129th Guards; 130th; and 131st Guards Machine-Gun Artillery Divisions. A 1997 report said they were generally composed of four brigades with a total of 12 battalions, including a mechanized regiment in each brigade, though later data suggests this was inaccurate. Later data indicates that fortified areas were disestablished and converted to Machine-Gun Artillery Regiments which then joined the new MGADs.
+After the 2008 Russian military reforms, most active divisions were disbanded or converted into brigades.
+
+In addition to the Army divisions, a division is currently on active duty within the ranks of the National Guard of Russia:
+
+Operational Purpose Division in Moscow.
+Also, a number of Aviation Divisions and Air Defense Divisions have been reactivated within the Russian Air Force.
+
+South Africa
+South Africa has fielded several infantry and armoured divisions in its military history:
+
+1 Infantry Division for battles waged in the North African theatre from 1940 to 1943.
+2 Infantry Division also for the engagements of North Africa from 1940 to 1942.
+6 Armoured Division for the Italian Campaign of 1943 to 1945.
+7 Infantry Division for the Border War fought in Southern Africa. It existed from 1965 to 1990 and consisted of three brigades.
+8 Armoured Division also for the Border War and existed from 1974 to 1997 and consisted of three brigades.
+9 Infantry Division was formed for geographical purposes but only existed for a short period from 1992 to 1997.
+
+United Kingdom
+
+In the British Army, a division is commanded by a major general with a WO1 as the Command Sergeant Major and may consist of three infantry, mechanised and/or armoured brigades and supporting units.
+Currently, the British Army has two active divisions:
+
+1st (United Kingdom) Division
+3rd (United Kingdom) Division
+The British Army previously had four other divisions.
+
+2nd Division – Scotland and Northern England, headquartered at Edinburgh
+4th Division – Southern England, headquartered at Aldershot
+5th Division – Wales, English Midlands and Eastern England, headquartered at Shrewsbury
+6th (United Kingdom) Division, headquartered at Upavon
+Additionally, most of the infantry regiments of the British Army are organised for administrative purposes into a number of organisations called "divisions":
+
+Guards and Parachute Division – 2022–present
+Scottish, Welsh and Irish Division – 2017–present
+King's Division – 1968–present
+Queen's Division – 1968–present
+Scottish Division – 1968–2017
+Prince of Wales' Division – 1968–2017
+Light Division – 1968–present
+
+United States
+
+A divisional unit in the United States Army typically consists of 17,000 to 21,000 soldiers, but can grow up to 35,000 to 40,000 with attached support units during operations, and are commanded by a major general. Two divisions usually form a corps and each division consists of three maneuver brigades, an aviation brigade, an engineer brigade, and division artillery (latter two excluded from divisional structure as of 2007), along with a number of smaller specialized units. In 2014, divisional artillery (DIVARTY) organizations began to re-appear, with some fires brigades reorganizing to fill this role.
+
+The United States Army currently has eleven active divisions and one deployable division headquarters (7th Infantry Division):
+
+1st Infantry Division at Fort Riley, Kansas
+1st Armored Division at Fort Bliss, Texas
+1st Cavalry Division at Fort Cavazos, Texas
+2nd Infantry Division at Camp Humphreys, South Korea and in Joint Base Lewis-McChord, Washington
+3rd Infantry Division at Fort Stewart, Georgia and in Fort Benning, Georgia
+4th Infantry Division at Fort Carson, Colorado
+7th Infantry Division (Division Headquarters only) at Joint Base Lewis-McChord, Washington
+10th Mountain Division (Light) at Fort Drum, New York and in Fort Johnson, Louisiana
+11th Airborne Division at Joint Base Elmendorf–Richardson, Alaska
+25th Infantry Division at Schofield Barracks, Hawaii
+82nd Airborne Division at Fort Bragg, North Carolina
+101st Airborne Division (Air Assault) at Fort Campbell, Kentucky
+The Army National Guard has a further eight divisions:
+
+28th Infantry Division, Fort Indiantown Gap, Pennsylvania
+29th Infantry Division, Fort Belvoir, Virginia
+34th Infantry Division, Rosemount, Minnesota
+35th Infantry Division, Fort Leavenworth, Kansas
+36th Infantry Division, Camp Mabry, Texas
+38th Infantry Division, Indianapolis, Indiana
+40th Infantry Division, Los Alamitos JFTB, California
+42nd Infantry Division, Troy, New York
+There are further ten divisions within the Army Reserve that are responsible for training and support operations:
+
+78th Division (Operations), Joint Base McGuire–Dix–Lakehurst, New Jersey
+86th Division (Decisive Action), Fort McCoy, Wisconsin
+87th Division (Training Exercise), at Birmingham
+91st Division (Operations), Fort Hunter Liggett, California
+94th Division (Force Sustainment), Fort Gregg-Adams, Virginia
+95th Division (Entry Training), Fort Sill, Oklahoma
+98th Division (Entry Training), Fort Benning, Georgia
+100th Division (Operational Support), Fort Knox, Kentucky
+102nd Division (Maneuver Support), Fort Leonard Wood, Missouri
+104th Division (Leader Training), Fort Lewis, Washington
+The United States Marine Corps has a further three active divisions and one reserve division. They consist of a headquarters battalion, two or three infantry regiments, an artillery regiment, and a reconnaissance battalion. Additionally, all Marine divisions (MARDIV), except 3rd MARDIV, have an assault amphibian (AA) battalion, a reconnaissance battalion, a tank battalion, a light armored reconnaissance (LAR) battalion (two in 1st MARDIV), and a combat engineer (CE) battalion (two in 1st MARDIV). (3rd MARDIV has a combat assault battalion including one company each of AA, LAR, and CE. Tank support for 3rd MARDIV can be provided by tanks deployed with the 31st MEU or directly from one of the three divisional tank battalions under the Unit Deployment Program.)
+
+1st Marine Division at Camp Pendleton, California
+2nd Marine Division at Camp Lejeune, North Carolina
+3rd Marine Division at Camp Smedley D. Butler, Okinawa, Japan
+4th Marine Division (Reserve) with units located throughout the United States and headquartered in New Orleans, Louisiana
+
+South Korea
+
+Republic of Korea Army divisions are major tactical formations led by general officers. There are currently 39 Army and two Marine divisions. Of the 41 Army divisions, six are mechanized infantry divisions (combined arms formations centered around tanks, IFVs, APCs, and SPGs), 16 are infantry divisions (motorized divisions with various levels of mechanization), 12 are "Homeland Infantry Divisions" (향토보병사단, infantry divisions kept at a 40–50% manpower level, to be reinforced during national emergencies) and seven "Reserve Infantry Divisions" (동원보병사단, infantry divisions kept at 10–20% manpower level, to be reinforced during national emergencies). There are two Marine divisions organized similarly to their American counterparts. Though similarly formed, the 1st ROK Marine Division is specialized to perform amphibious landing operations while the 2nd ROK Marine Division performs more security operations and mans a sector of the DMZ facing the North Korean border.
+Republic of Korea Army divisions are typically smaller than their foreign counterparts. Mechanized infantry divisions are fully formed at around 9,900, infantry divisions are fully formed at about 11,500 men, and other types of divisions are smaller in size during normal operations according to their reserve manpower levels. There are very few articles discussing ROK Marine Corps tactical organization, but an active duty force of 29,000 is divided into two divisions, two brigades, and its supporting units.
+Mechanized infantry, infantry, Homeland Infantry, and Marine divisions are led by major generals, while Reserve Infantry Divisions are led by brigadier generals. As a general rule no major ROKAF formation contains the number four in its name due to cultural tetraphobia.
+
+Venezuela
+The Venezuelan Army is organized into 6 divisions, four of them infantry, one armored and one being armoured cavalry. All are organized into brigades or regiments, which in turn are organized into infantry battalions, cavalry squadrons, field artillery battalions, air defense artillery battalions and combat engineer battalions. They also contain any divisional service support elements. Usually there are two to five regiments or brigades per division.
+The divisions are:
+
+1st Infantry Division – with HQ in Maracaibo
+2nd Infantry Division – HQ San Cristobal
+3rd Infantry Division – HQ Caracas
+4th Armored Division – HQ Maracay
+5th Infantry Division (Jungle) – HQ Ciudad Bolívar
+9th Cavalry Division – HQ San Fernando de Apure
+
+See also
+Air Division (United States)
+Tumen
+List of military divisions
+Military organization
+
+Notes
+
+References
+
+External links
+
+Infantry Divisions (British Army and British Indian Army) 1930–1956

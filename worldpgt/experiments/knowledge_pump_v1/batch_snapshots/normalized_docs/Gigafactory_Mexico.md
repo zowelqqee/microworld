@@ -1,0 +1,25 @@
+# Gigafactory Mexico
+
+Source: https://en.wikipedia.org/wiki/Gigafactory_Mexico
+Retrieved at: 2026-06-17T17:20:50Z
+Revision ID: 1354380449
+Raw text SHA256: 3e9045dd9aa69a459145030c04998451ef46eb91addbd7f940d4a60329d523e0
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Gigafactory Mexico (also known as Gigafactory 6) is a proposed manufacturing plant for Tesla, Inc. to be constructed near Monterrey, Mexico.
+
+Description
+The gigafactory is planned to be built near Monterrey. The factory will be an approximately US$10 billion investment by Tesla and will employ thousands of workers when fully operational, as well as employ many thousands of workers during construction. Including Tesla and its suppliers, the plant represents a US$15 billion investment. As of September 2023 production was expected to start no earlier than 2026.
+
+History
+The facility was officially announced by Mexican President Andrés Manuel López Obrador on 28 February 2023. The following day at Tesla Investor Day, Tesla CEO Elon Musk confirmed the facility. The factory was placed in Mexico in an effort to keep the cost of the vehicle low, and Tesla has encouraged suppliers to open facilities nearby.
+Samuel García, governor of Mexico's Nuevo León state, announced in July 2023 that the permits for the factory were nearly ready to be issued and said he expected construction would soon begin. Tesla expected then that the facility would take 12 to 15 months to construct, and had told suppliers to expect the plant to open in the first quarter of 2025. By August 2023, preparation work had only just begun at the site to build an access road onto the property from the highway. Tesla received environmental impact permits for the project in September 2023, with a requirement that construction be completed in 26 months (November 2025). By the end of October 2023, the government of Nuevo León said that Tesla had received all necessary permits to begin construction of the factory.
+In September 2023, multiple Tesla suppliers indicated that production was not expected to start until 2026 or 2027, and therefore some suppliers were delaying their own plans to build new facilities in Mexico to support the supply line for Tesla in Nuevo Leon.
+Tesla requested in October 2023 that the Nuevo Leon state government begin building electric, water, road and rail infrastructure to serve the Gigafactory, although Tesla stated in October that they are slowing down their plans for the factory due to global concerns about the macroeconomy.
+As of July 2024, Tesla has placed construction of Gigafactory Mexico on hold until after the 2024 United States presidential election, because former President Trump has pledged to add tariffs on cars made in Mexico.
+
+See also
+List of Tesla factories
+
+References

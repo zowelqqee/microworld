@@ -1,0 +1,102 @@
+# Atlas
+
+Source: https://en.wikipedia.org/wiki/Atlas
+Retrieved at: 2026-06-15T09:18:00Z
+Revision ID: 1348547216
+Raw text SHA256: 46bf6af4d610dd9bde3a7cc520a3ef8a881afe5269263623cb402a38145a8934
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+An atlas is a collection of maps; it is typically a bundle of maps of Earth or of a continent or region of Earth. Advances in astronomy have also resulted in atlases of the celestial sphere or of other planets.
+Atlases have traditionally been bound into book form, but today, many atlases are in multimedia formats. In addition to presenting geographical features and political boundaries, many atlases often feature geopolitical, social, religious, and economic statistics. They also have information about the map and places in it.
+
+Etymology
+The use of the word "atlas" in a geographical context dates from 1595 when the Flemish geographer Gerardus Mercator published Atlas Sive Cosmographicae Meditationes de Fabrica Mundi et Fabricati Figura ("Atlas or cosmographical meditations upon the creation of the universe and the universe as created"). This title provides Mercator's definition of the word as a description of the creation and form of the whole universe, not simply as a collection of maps. The volume that was published posthumously one year after his death is a wide-ranging text but, as the editions evolved, it became simply a collection of maps and it is in that sense that the word was used from the middle of the 17th century. The neologism coined by Mercator was a mark of his respect for the Titan Atlas, the "King of Mauretania", whom he considered to be the first great geographer.
+
+History
+
+The first work that contained systematically arranged maps of uniform size representing the first modern atlas was prepared by Italian cartographer Pietro Coppo in the early 16th century; however, it was not published at that time, so it is conventionally not considered the first atlas. Rather, that title is awarded to the collection of maps Theatrum Orbis Terrarum by the Brabantian cartographer Abraham Ortelius printed in 1570.
+Atlases published nowadays are quite different from those published in the 16th–19th centuries. Unlike today, most atlases were not bound and ready for the customer to buy, but their possible components were shelved separately. The client could select the contents to their liking, and have the maps coloured/gilded or not. The atlas was then bound. Thus, early printed atlases with the same title page can be different in contents.
+States began producing national atlases in the 19th century.
+
+Types
+A travel atlas is made for easy use during travel, and often has spiral bindings, so it may be folded flat. National atlases in Europe are typically printed at a scale of 1:250,000 to 1:500,000; city atlases are 1:20,000 to 1:25,000,  doubling for the central area (for example, Geographers' A-Z Map Company's A–Z atlas of London is 1:22,000 for Greater London and 1:11,000 for Central London).  A travel atlas may also be referred to as a road map.
+A desk atlas is made similar to a reference book. It may be in hardback or paperback form.
+Star atlases depict the celestial sphere in cartographic format, focusing on the major named asterisms. There are atlases of the other planets (and their satellites) in the Solar System.
+Atlases of anatomy exist, mapping out organs of the human body or other organisms.
+
+Selected atlases
+
+Some cartographically or commercially important atlases are:
+
+17th century and earlier
+Theatrum Orbis Terrarum 1570 atlas by Abraham Ortelius
+Atlas Sive Cosmographicae Meditationes de Fabrica Mundi et Fabricati Figura (Mercator, Duisburg, in present-day Germany, 1595)
+Atlas Novus (Joan Blaeu, Netherlands, 1635–1658)
+Atlas Maior (Blaeu, Netherlands, 1662–1667)
+Cartes générales de toutes les parties du monde (France, 1658–1676)
+Dell'Arcano del Mare (Robert Dudley, England/Italy, 1645–1661)
+Piri Reis map (Piri Reis, Ottoman Empire, 1570–1612)
+Theatrum Orbis Terrarum (Ortelius, Netherlands, 1570–1612)
+Klencke Atlas (1660; one of the world's largest books)
+Britannia (1675), John Ogilby (1600–1676), first to be printed at a specific scale (1:63,360 or one inch to one mile)
+
+18th century
+Atlas Nouveau (Amsterdam, 1742)
+Britannia Depicta (London, 1720)
+Cary's New and Correct English Atlas (London, 1787)
+
+19th century
+Andrees Allgemeiner Handatlas (Germany, 1881–1939; in the UK as Times Atlas of the World, 1895)
+Rand McNally Atlas (United States, 1881–present)
+Stielers Handatlas (Germany, 1817–1944)
+Times Atlas of the World (United Kingdom, 1895–present)
+
+20th century
+Atlante Internazionale del Touring Club Italiano (Italy, 1927–1978)
+Atlas Linguisticus (Austria, 1934)
+Atlas Mira (Soviet Union/Russia, 1937–present)
+Geographers' A–Z Street Atlas (United Kingdom, 1938–present)
+Gran Atlas Aguilar (Spain, 1969/1970)
+The Historical Atlas of China (China)
+National Geographic Atlas of the World (United States, 1963–present)
+Pergamon World Atlas (1962/1968)
+DK Atlas of World History (1999)
+
+21st century
+North American Environmental Atlas
+
+See also
+
+Notes
+
+References
+
+External links
+
+Sources
+
+On the origin of the term "Atlas" Archived 2020-07-26 at the Wayback Machine
+Online atlases
+
+Wikimedia Commons Atlas of the World
+World Atlas
+ÖROK-Atlas Online: Atlas on spatial development in Austria
+Geography Network
+MapChart EarthAtlas, free online atlas with interactive maps about topics like demography, economy, health and environment.
+National Geographic MapMachine
+History of atlases
+
+Atlases, at the US Library of Congress site - a discussion of many significant atlases, with some illustrations.  Part of  Geography and Maps, an Illustrated Guide.
+Historical atlases online
+
+Centennia Historical Atlas required reading at the US Naval Academy for over a decade.
+Historical map web sites list, Perry–Castañeda Library, University of Texas
+Ryhiner Collection Composite atlas with maps, plans and views from the 16th-18th centuries, covering the globe, with about 16,000 images in total.
+Manuscript Atlases held by the University of Pennsylvania Libraries Archived 2022-07-06 at the Wayback Machine - fully digitized with descriptions.
+Historical Atlas in Persuasive Cartography, The PJ Mode Collection, Cornell University Library
+Other links
+
+Google Earth: a visual 3D interactive atlas.
+NASA's World Wind software.
+Wikimapia a wikiproject designed to describe the entire world.

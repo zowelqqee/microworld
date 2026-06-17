@@ -1,0 +1,48 @@
+# Tesla Powerpack
+
+Source: https://en.wikipedia.org/wiki/Tesla_Powerpack
+Retrieved at: 2026-06-17T17:13:08Z
+Revision ID: 1292266048
+Raw text SHA256: 41d4eac3ea4dfcf60a4b716cca4c57dfede7a7b3d9906c46e89107d1816bbae8
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Tesla Powerpack is a rechargeable lithium-ion battery stationary energy storage item, intended for use by businesses or on smaller projects from power utilities. The device was manufactured by Tesla Energy, the clean energy subsidiary of Tesla, Inc. The Powerpack stores electricity for time of use load shifting, backup power, demand response, microgrids, renewable energy integration, frequency regulation, and voltage control. The first prototype Powerpacks were installed in 2012 at the locations of a few industrial customers. After July 22, 2022, the product was no longer listed for sale.
+Tesla Energy offers other battery energy storage devices: the Powerwall, intended for home use, and the Megapack, intended for electrical grid use.
+
+History
+As Tesla, Inc. developed batteries for its electric car business, the company also started experimenting with using batteries for energy storage. Starting in 2012, Tesla installed prototype battery packs (to later be called the Powerpack) at the locations of a few industrial customers. The batteries allowed customers to store energy to be used for peak shaving, load shifting, backup power, demand response, microgrids, renewable power integration, frequency regulation, and voltage control. Using these techniques, some early customers were able to reduce their electrical bill by 20%.
+In November 2013, Tesla announced that it would build Giga Nevada, a factory to produce lithium-ion batteries, like those used in the Powerpack.
+The success of the early Powerpack installations led Tesla to announce in April 2015 that it would apply its technology to a home energy storage system, the Powerwall.
+During 2015 and 2016, Tesla deployed a combined 300 MWh of Powerwall and Powerpack technology.
+
+Powerpack specifications
+The Powerpack is a bigger unit with 100 kWh (first generation) and 210 kWh (2nd generation) of storage for commercial and utility grid use. To meet the variety of energy needs in industry, "Powerpack is infinitely scalable", said Elon Musk. The late 2016 Powerpack 2 probably uses 21700 cells. As of March 2020, the 232 kWh version with inverter cost $172,707.
+
+Examples of Powerpack installation
+Tesla installed a grid storage facility for Southern California Edison with a capacity of 80 MWh at a power of 20 MW between September 2016 and December 2016 to reduce the local loss of peak power after the Aliso Canyon gas leak. As of January 2017 the storage unit was one of the largest accumulator batteries on the market. Tesla installed 400 Powerpack-2 modules (80 MWh) at the Mira Loma transformer station in California. The battery storage serves to store energy at a low network load and then to feed this energy back into the grid at peak load. The principal way of adding peak generation capacity prior to this was the use of gas-fired power stations.
+In 2017, Tesla used Powerpacks to deploy 100 MW/129 MWh of battery storage at the Hornsdale Power Reserve in South Australia, the biggest deployment of lithium-ion grid battery storage in the world at the time.
+Powerpacks continue to be used by utilities to meet smaller-scale grid energy storage requirements. For example, a 25 MW / 52 MWh deployment of Powerpacks is in use at the Lake Bonney Wind Farm in South Australia.
+
+Market
+At the announcement, a larger battery called Powerpack—storing 100 kWh of electrical energy—was projected to be available for industrial consumers, reaching a price point of $250/kWh. The Powerpack was projected to comprise the majority of stationary storage production at Gigafactory 1 while Powerwall would play a smaller part, giving Tesla a profit margin of 20 percent.
+
+Price tendency
+In September 2016, Tesla priced the Powerpack at $445/kWh, and a system with 200 kWh of energy and 100 kW of peak power was the cheapest available priced at $145,100. A bi-directional 250 kW inverter costs $52,500. By October 2016, a limited system of Powerpack 2 cost $398/kWh. A 22 MWh system can cost €15 million.
+
+Volume tendency
+Musk predicted in 2016 that the utility power will need to increase to supply more electric vehicles, eventually reaching an equilibrium with about 1/3 of power coming from distributed energy and 2/3 from utilities. Battery storage is one of the ways to mitigate the increasing duck curve, particularly in California.
+
+Competition
+BYD's energy storage system is another competitor of Tesla's Powerpack. UC San Diego installed this system, which has 5 megawatt-hour (MWh) capacity—enough to power 2,500 homes—in September 2014. BYD is a large supplier of rechargeable batteries, and is also known for its leading position in electric buses.
+Sonnen and AutoGrid collaborated on combining house batteries into a large-scale utility-level grid storage system. Eos claimed a battery price of $160/kWh in 2017, before the cost of integration by Siemens.
+
+See also
+Net metering systems with integrated energy storage
+
+References
+
+External links
+Official website
+Why Tesla is backing batteries, BBC
+2015 Conference call with Elon Musk (Whole transcript, subscribed. Transcript in 15 pages)

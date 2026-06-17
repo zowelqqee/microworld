@@ -1,0 +1,15 @@
+{
+  "title": "Cheval Blanc",
+  "normalized_title": "Cheval Blanc",
+  "pageid": 23433029,
+  "revision_id": 1303213970,
+  "timestamp": "2025-07-29T18:01:42Z",
+  "source_url": "https://en.wikipedia.org/wiki/Cheval_Blanc",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Cheval+Blanc",
+  "retrieved_at": "2026-06-17T20:46:33Z",
+  "raw_text": "Cheval blanc or Cheval-Blanc, French for white horse, may refer to:\n\nChâteau Cheval Blanc, a wine producer in Saint-Émilion in the Bordeaux wine region of France\nCheval-Blanc, Vaucluse, in southern France\nCanton of Cheval-Blanc\nLe Cheval Blanc (brewpub), in Montreal\nLe Cheval Blanc (mountain), in the Alps\nCheval Blanc, St Barths, a luxury hotel in St Barths\nCheval Blanc (restaurant), Heemstede, the Netherlands\n\n\nSee also\nWhite Horse (disambiguation)",
+  "raw_text_sha256": "ad5d056dbcca8260c186ccd14288286501d4dc17bf5b6d87d12a52be438983ad",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

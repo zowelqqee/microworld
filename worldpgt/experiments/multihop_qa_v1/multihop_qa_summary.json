@@ -1,0 +1,17 @@
+{
+  "total_prompts": 16,
+  "answer_count": 6,
+  "audit_count": 10,
+  "wrong_count": 0,
+  "unsupported_answer_count": 0,
+  "unsafe_chain_count": 0,
+  "missing_hop_audit_count": 2,
+  "direct_only_guard_count": 5,
+  "direct_relation_leak_count": 5,
+  "volatile_hop_audit_count": 0,
+  "high_risk_hop_audit_count": 0,
+  "current_sensitive_hop_audit_count": 2,
+  "transitive_founder_leak_count": 0,
+  "transitive_owner_leak_count": 0,
+  "all_critical_passed": true
+}

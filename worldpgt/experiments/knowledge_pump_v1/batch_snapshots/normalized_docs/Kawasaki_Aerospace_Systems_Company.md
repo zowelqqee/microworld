@@ -1,0 +1,144 @@
+# Kawasaki Aerospace Systems Company
+
+Source: https://en.wikipedia.org/wiki/Kawasaki_Aerospace_Systems_Company
+Retrieved at: 2026-06-17T17:11:41Z
+Revision ID: 1359566792
+Raw text SHA256: af7166cd50ed7c96d42ca2a2014a89a123a5d35764047b88fc501a595c948126
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Kawasaki Heavy Industries Aerospace Systems Company (川崎重工業航空宇宙システムカンパニー, Kawasaki Jūkōgyō Kōkūuchū Shisutemu Kanpanii) is the aerospace division of Kawasaki Heavy Industries (KHI). It produces aircraft, space systems, simulators, jet engines, missiles, and electronic equipment.
+During the 1930s and 1940s, Kawasaki Aircraft Industries developed numerous types of aircraft for the Imperial Japanese Army, such as the Type 88 reconnaissance aircraft, the Ki-48 Sokei bomber, and the Ka 61 Hien fighter, up until the end of the Second World War. Shortly after the occupation of Japan started in 1945, Japan's aviation industry was intentionally dismantled and aircraft factories converted for other purposes; the ban on aircraft development was lifted during March 1954, allowing for the nation's aviation industry to be revived. During 1969, Kawasaki Kokuki Kogyo KK was restructured as a formal subsidiary of KHI.
+Throughout the postwar era, the company has produced numerous aircraft under license from various overseas manufacturers for Japan Air Self-Defense Force and Japan Maritime Self-Defense Forces, alongside its own designs. Licensed aircraft have included the P-2J (derived from the Lockheed P-2 Neptune), KH-4 helicopters (derived from the Bell 47), Kawasaki KV-107 helicopters (derived from the Boeing Vertol 107 Model II), and CH-47J / JA heavy-lift helicopters. Indigenously developed aircraft of the postwar era have included the Kawasaki C-1 and Kawasaki C-2 military transports, the Kawasaki KAT-1 and Kawasaki T-4 trainer aircraft, the Kawasaki OH-1 reconnaissance helicopter, and the Kawasaki P-1 maritime patrol aircraft.
+On 1 April 2018, the aircraft engine business of KHI's Gasturbine & Machinary Company division merged with Kawasaki Aerospace Company, and the division was renamed Kawasaki Aerospace Systems Company.
+
+History
+
+Genesis and early years
+Kawasaki Aircraft Industries (川崎航空機工業株式会社, Kawasaki Kokuki Kogyo K.K.) was one of Japan's first aircraft companies. It was founded during 1918 as a subsidiary of the heavy-industrial conglomerate Kawasaki Heavy Industries in Kobe. Prior to the conclusion of the Second World War, Kawasaki mostly supplied aircraft and aircraft engines to the Imperial Japanese Army Air Force (IJAAF).
+During the early 1930s, Kawasaki built Salmson biplanes and engines under license, and also developed a number of its own designs. Kawasaki hired the noted German Aerospace engineer and designer, Dr. Richard Vogt, from 1923 to 1933 to assist with design work and to train Japanese engineers. Among Vogt's pupils was Takeo Doi, the future chief designer for Kawasaki. Vogt later went on to become chief designer for German industrial corporation Blohm & Voss.
+Kawasaki obtained a license from Dornier for all-metal construction flying boats, and the Kawasaki-Dornier Wal made a notable flight in December 1924; however, Kawasaki thereafter specialized in land planes. Noted designs include the:
+
+Company designations
+KDA-2 – company designation for the Type 88 reconnaissance aircraft
+KDA-3 – single-seat parasol fighter prototype (1928); lost to the Nakajima NC
+KDA-5 – company designation for the Type 92 fighter
+KDA-6 – prototype reconnaissance aircraft
+KDA-7 – company designation for the Ki-3
+KDC-2 – mail plane/passenger transport developed from the Type 88
+KDC-5 – company designation for the C-5
+
+Army designations
+Type Otsu-1 Reconnaissance Aircraft – reconnaissance biplane; Salmson 2A.2 built under license
+Ka 87 – twin-engine heavy bomber; Japanese-built Dornier Do N (1926)
+Type 88 – single-engine reconnaissance biplane (1927)
+Type 92 – single-seat biplane fighter (1930)
+Ki-3 – single-engine biplane bomber; last IJAAF biplane bomber design (1933)
+Ki-5 – experimental single-engine monoplane fighter (1934)
+Ki-10 – single-seat biplane fighter; last IJAAF biplane fighter (1935)
+Ki-22 – heavy bomber (not built)
+Ki-28 – single-engine experimental fighter (1936); cancelled in favor of the Nakajima Ki-27
+Ki-32 – single-engine monoplane bomber (1937)
+Ki-38 – proposed twin-engine fighter, predecessor of Ki-45 (1937)
+Ki-45 Toryu (屠龍, Dragon Slayer)- twin-engine fighter (1939)
+Ki-48 – twin-engine light bomber (1939)
+Ki-56 – twin-engine light transport, developed from the Lockheed Model 14 Electra (1940)
+Ki-60 – experimental single-engine fighter (1941)
+Ki-61 Hien (飛燕, Flying Swallow) – single-seat fighter (1941)
+Ki-64 – experimental single-seat heavy fighter (1943)
+Ki-66 – prototype dive bomber based on the Ki-48
+Ki-78 – high-speed research aircraft (1942)
+Ki-81 – proposed multi-seat escort fighter based on the Ki-48 (not built)
+Ki-85 – proposed IJA bomber version of Nakajima G5N (not built)
+Ki-88 – proposed single-seat fighter (not built)
+Ki-89 – experimental bomber (not built)
+Ki-91 – prototype four-engine heavy bomber (1944)
+Ki-96 – experimental twin-engine heavy fighter (1941)
+Ki-100 – radial-engine fighter/interceptor (1944)
+Ki-102 – twin-engine long-range heavy fighter (1944)
+Ki-108 – high-altitude fighter version of Ki-102
+Ki-119 – single-engine light bomber (not built)
+Ki-147 – radio-guided air to surface missile
+Ki-148 – radio-guided air-to-surface missile (1944)
+Ki-174 – single-seat special attack version of Ki-48 (not built)
+
+Civil aircraft
+A-6 – civil version of KDA-6
+C-5 – high-speed, long-range communications aircraft (1934)
+
+Engines
+Ha9 – BMW VI built under license
+Ha40 – Daimler-Benz DB 601Aa built under license, later known as the Ha-60; used in the Ki-61
+Ha140 – higher-power version of Ha40; used in the Ki-61-II
+Ha201 – two Ha40s coupled together with a common gearbox, later known as the Ha-72; used in the Ki-64
+
+Post-war development
+
+During the occupation of Japan after the end of the Second World War, all of Japan's aerospace industry was dismantled, designs destroyed and plants converted to other uses. Japan would become free of military occupation, and shortly after many American imposed bans were lifted, the ban on aircraft development was lifted during March 1954, a new company was founded by the merger of subsidiary companies K.K. Kawasaki Gifu Seisakusho and Kawasaki Kikai Kogyo K.K., retaining the name of the pre-war Kawasaki Kokuki Kogyo KK.
+The Kawasaki KAL-1, first flown in July 1953, was the first postwar all-metal aircraft of Japanese design. Early production activity at the company included 210 Lockheed T-33 jet trainers, 48 Lockheed P-2H Neptune maritime patrol aircraft and 239 Bell 47 helicopters, all under license from the United States.
+In response to encouragement from the Japanese government, during 1957, Kawasaki joined in a joint venture, participating along with various other Japanese aerospace companies, including Mitsubishi Heavy Industries, Fuji Heavy Industries, Shin Meiwa, Showa Aircraft Industry Company and Japan Aircraft Industry Company in the development and manufacturing what would become the NAMC YS-11, an indigenously developed twin-turboprop airliner. Kawasaki provided both personnel and infrastructure for the venture, manufacturing various components of the YS-11.
+During April 1969, Kawasaki Kokuki K.K. was dissolved, its assets being restructured as a division of the reorganized Kawasaki Heavy Industries (KHI).
+
+Under Kawasaki Heavy Industries
+
+During April 1969, the former Kawasaki Kokuki K.K. was dissolved and became a division of the reorganized Kawasaki Heavy Industries (KHI). Kawasaki is a major contractor for the Japanese Ministry of Defense. Although in November 1970, Kawasaki completed Japan's first domestically designed twin turbofan military transport, the C-1, the company concentrated primarily on licensed production of derivatives of American patrol aircraft and helicopters through the 1990s. Kawasaki built 82 P-2Js (derived from the Lockheed P-2 Neptune), 211 KH-4 helicopters (derived from the Bell 47), 160 Kawasaki KV-107 helicopters (derived from the Boeing Vertol 107 Model II), and Hughes/McDonnell Douglas Model 500D and OH-6DA helicopters. Kawasaki also built 101 P-3C antisubmarine warfare patrol airplanes plus four EP-3/UP-3D electronic intelligence/training variants, and 68 CH-47J / JA.
+On 25 February 1977, Kawasaki and German aerospace manufacturer Messerschmitt-Bölkow-Blohm (MBB) signed an agreement to cooperate on the development of a new rotorcraft; under the terms of this agreement, the two corporations merged their previously separate projects to produce twin-engined general purpose helicopters, these being the Bo 107 by MBB and the KH-7 from Kawasaki. Separate elements were assigned to each company; MBB were responsible for developing the rotors (these were based on the rigid rotor system previously used on MBB's Bo 105), tailboom, flight controls and hydraulic system while Kawasaki undertook the development of the landing gear, airframe, main transmission, electrical system and other minor components. Each company established their own final assembly lines on which they produced the rotorcraft to meet demands within their respective local markets.
+
+During the 1970s and 1980s, Kawasaki developed an indigenous intermediate jet trainer and liaison aircraft, the T-4. Manufacture was performed by a consortium consisting of Mitsubishi, Fuji, and Kawasaki, the latter providing leadership over the venture. The final assembly line for the type was established at Kawasaki's plant in Gifu, capable of producing a maximum of two and a half aircraft per month. In addition to economic and performance consideration, the T-4's design had to incorporate political desires as well; significant emphasis had been placed upon powering it with the first all-Japanese production turbofan engine, the Ishikawajima-Harima F3-IHI-30. According to aerospace publication Flight International, it was considered plausible for the T-4 to have been a competitive product upon the global trainer aircraft market, but such opportunities were denied by a long-standing Japanese policy that forbid military export sales.
+On 18 September 1992, Kawasaki was appointed by the Ministry of Defense to produce the OH-1, an indigenously designed armed observation and light attack helicopter. It was responsible for manufacturing 50 per cent of the airframe, as well as coordinating development of its rotor system; the remaining airframe elements were manufactured by Mitsubishi and Fuji. During June 1998, after finalising a production contract and receipt of an initial order earlier that year, series production of the OH-1 officially commenced. By the late 1990s, the JGSDF had announced that its plans to eventually procure between 150 and 250 OH-Xs to meet its requirements. Kawasaki has proposed multiple derivatives of the OH-1, including a utility variant intended to replace the JGSDF's fleet of Fuji-built Bell UH-1J Iroquois helicopters, and an attack-oriented version tentatively designated as the AH-2.
+
+During the 2000s, the company developed two closely related multi-engine fixed-wing aircraft, the XP-1 maritime patrol airplane and the XC-2 transport aircraft. Kawasaki was appointed as the prime contractor for both programmes during 2001, its launch occurred almost 30 years after the previous large-scale domestic development of an aircraft in Japan. Although the P-X and C-X designs were originally independent, it was decided that having common components to both designs would be useful. The JDA mandated that the two aircraft share identical body components; common components include the cockpit windows, outer wings, horizontal stabilizer, and other systems. Internal shared parts include the auxiliary power unit, cockpit panel, flight control system computer, anti-collision lights, and gear control unit. Due to the different roles of the two aircraft, they remain distinctly separate. The sharing of development resources had allowed for a large reduction in overall development costs which, when including the C-2, were reported as being 345 billion Yen ($3 billion) in 2007. On 30 June 2016, the C-2 airlifter formally entered service with the Japan Air Self-Defense Force.
+
+Kawasaki produced the AgustaWestland AW101, a tri-engined medium-lift helicopter, under license from Anglo-Italian helicopter manufacturer AgustaWestland. During 2002, the company, along with AgustaWestland and Marubeni, formalised an agreement to cooperate on the AW101's production in Japan; Kawasaki began the assembly of both the CH-101 and the MCH-101 models in 2003. Kawasaki also began licensed production of its RTM322 engines during 2005. A specialised mine sweeping and transport model, designated as MCH-101 by the Japan Defense Agency, was produced for the Japan Maritime Self-Defense Force. Special features include the automated folding of the rotor and tail. For the mine-hunting role, the MCH-101 has been outfitted with Northrop Grumman's AQS-24A airborne mine-hunting system and AN/AES-1 Airborne Laser Mine Detection System (ALMDS) for a complete surface-to-bottom mine detection capability, as well as Mk-104 acoustic mine sweeping gear.
+In the commercial aviation business, KHI has been involved in the joint international development and production of multiple large passenger aircraft. It is involved in joint development and production of the Boeing 767 and Boeing 777 with The Boeing Company, and the 170, 175, 190 and 195 jets with Empresa Brasileira de Aeronáutica (Embraer). The company is also involved in the joint international development and production of turbofan engines for passenger aircraft such as the V2500, the RB211/Trent, the PW4000 and the CF34.
+Kawasaki also works for the Japan Aerospace Exploration Agency (JAXA). It was responsible for the development and production of the payload fairings, payload attach fittings (PAF) and the construction of the launch complex for the H-II rocket. KHI continued to provide services for the H-IIA rocket until its retirement in June 2025.
+
+Main products
+
+Aircraft
+Kawasaki C-1 – twin-turbofan military transport
+Kawasaki C-2 – advanced military transport
+Kawasaki KAT-1 – primary training aircraft
+Kawasaki KH-4 – light utility helicopter
+Kawasaki OH-1 – light reconnaissance helicopter
+OH-6 Cayuse light reconnaissance helicopter
+Kawasaki P-1 – advanced maritime patrol aircraft
+Kawasaki P-2J – maritime patrol aircraft
+Kawasaki T-4 – intermediate jet trainer
+Kawasaki YPX  – proposed airliner
+MBB/Kawasaki BK 117 – utility, transport helicopter
+Spacecraft
+Ajisai
+ETS-VII docking mechanism, proximity sensor, task board
+Japanese Experiment Module airlock, Exposed Facility Berthing Mechanism (EFBM), air conditioning system, Exposed Experiment Handrail Attachment Mechanism (ExHAM)
+DRUMS
+Martian Moons eXploration sample return capsule, robot arm
+Simulators
+Jet engines
+Missiles
+Type 64 MAT – anti-tank missile
+Type 79 Jyu-MAT – anti-tank/landing-craft missile
+Type 87 Chu-MAT – anti-tank missile
+Type 96 multi-purpose missile system – anti-tank/landing-craft missile
+Type 01 LMAT – anti-tank missile
+Middle-range multi-purpose missile
+Rockets
+H-II fairing
+Reusable Vehicle Testing
+H-IIA fairing
+H-IIB fairing
+Epsilon fairing
+H3 short type fairing, long type fairing
+Electronic equipment
+Unmanned aerial vehicles
+Kawasaki KAQ-1 – aerial target drone
+
+References
+
+Citations
+
+Bibliography
+
+External links
+
+Kawasaki Aerospace Company

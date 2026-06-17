@@ -1,0 +1,28 @@
+{
+  "docs_processed": 590,
+  "docs_errors": 0,
+  "docs_error_details": [],
+  "total_candidates": 390,
+  "relation_candidates": 112,
+  "definition_candidates": 278,
+  "pattern_counts": {
+    "developed_by_v2": 21,
+    "founded_by_v2": 47,
+    "headquartered_in_v2": 33,
+    "lead_definition_v2": 279,
+    "publishes_direct_v2": 3,
+    "screened_out": 1989,
+    "service_of_v2": 2,
+    "subsidiary_of_v2": 6
+  },
+  "predicates": [
+    "developed_by",
+    "founded_by",
+    "headquartered_in",
+    "publishes",
+    "service_of",
+    "subsidiary_of"
+  ],
+  "network_calls": false,
+  "candidate_source": "pump_extraction_yield_v2"
+}

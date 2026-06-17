@@ -1,0 +1,773 @@
+{
+  "summary": {
+    "allowlist_total": 100,
+    "requested_limit": 100,
+    "fetched_count": 100,
+    "success_count": 98,
+    "failed_count": 2,
+    "skipped_count": 0,
+    "ready_for_self_ingestion_count": 91,
+    "raw_snapshots_total": 100,
+    "normalized_docs_total": 100,
+    "network_calls": 100,
+    "allow_network": true,
+    "auto_ingest": false,
+    "auto_promote": false,
+    "trusted_memory_modified": false,
+    "accepted_overlay_modified": false,
+    "promoted_overlay_modified": false,
+    "safe_for_general_runtime": false
+  },
+  "errors": [],
+  "warnings": [],
+  "failed_pages": [
+    "Merlin rocket engine",
+    "Financial estimate"
+  ],
+  "skipped_pages": [],
+  "source_artifacts_written": [
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/page_allowlist.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/snapshot_manifest.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/snapshot_manifest.csv",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/snapshot_readiness_report.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/snapshot_collection_summary.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/snapshot_collection_report.json",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/raw_snapshots",
+    "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/wiki_snapshots_v1/normalized_docs"
+  ],
+  "readiness": [
+    {
+      "title": "Elon Musk",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla, Inc.",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "SpaceX",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Starlink",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Falcon 1",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Falcon 9",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Neuralink",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "The Boring Company",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "OpenAI",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "SolarCity",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Larry Ellison",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Oracle Corporation",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Jeff Bezos",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Amazon",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Blue Origin",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Bernard Arnault",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "LVMH",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Michael Bloomberg",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Bloomberg L.P.",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Forbes",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Bloomberg News",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Electric vehicle",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Battery electric vehicle",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Lithium-ion battery",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Gigafactory",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Rocket",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Reusable launch vehicle",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Satellite Internet access",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Spacecraft",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Sustainable energy",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Solar power",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Net worth",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Share price",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Market capitalization",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Revenue",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Chief executive officer",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Founder",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Subsidiary",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Product",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Organization",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Leadership",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Business magnate",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Entrepreneurship",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Automotive industry",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Aerospace manufacturer",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Artificial intelligence",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Brain–computer interface",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Hyperloop",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Social media",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "X Corp.",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "X (social network)",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "PayPal",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Zip2",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "X.com",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "raw_text_missing_or_short",
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Space tourism",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Satellite constellation",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Internet service provider",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Electric battery",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Energy storage",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla Model S",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla Model 3",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla Model X",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla Model Y",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Tesla Cybertruck",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Roadster",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "disambiguation_like_page"
+      ]
+    },
+    {
+      "title": "Supercharger",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Autopilot",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Full Self-Driving",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "raw_text_missing_or_short"
+      ]
+    },
+    {
+      "title": "SpaceX Starship",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "SpaceX Dragon 2",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "International Space Station",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "NASA",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Commercial Crew Program",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Launch vehicle",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Merlin rocket engine",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "fetch_status:missing",
+        "raw_text_missing_or_short",
+        "raw_text_sha256_missing",
+        "missing_or_error_page"
+      ]
+    },
+    {
+      "title": "SpaceX Raptor",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Cape Canaveral Space Force Station",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Kennedy Space Center",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Vandenberg Space Force Base",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Low Earth orbit",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Mars",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Colonization of Mars",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Private spaceflight",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Space industry",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Electric car",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Renewable energy",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Energy industry",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Financial estimate",
+      "ready_for_self_ingestion": false,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": [
+        "fetch_status:missing",
+        "raw_text_missing_or_short",
+        "raw_text_sha256_missing",
+        "missing_or_error_page"
+      ]
+    },
+    {
+      "title": "Billionaire",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "The World's Billionaires",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Fortune 500",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "United States Securities and Exchange Commission",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Public company",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Privately held company",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Initial public offering",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Stock exchange",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Nasdaq",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "New York Stock Exchange",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Economy of the United States",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    },
+    {
+      "title": "Technology company",
+      "ready_for_self_ingestion": true,
+      "requires_quarantine": true,
+      "safe_for_general_runtime": false,
+      "reasons": []
+    }
+  ],
+  "next_recommended_actions": [
+    "inspect snapshots",
+    "run self-ingestion against selected local docs only",
+    "quarantine",
+    "promotion",
+    "regression",
+    "context consistency"
+  ]
+}

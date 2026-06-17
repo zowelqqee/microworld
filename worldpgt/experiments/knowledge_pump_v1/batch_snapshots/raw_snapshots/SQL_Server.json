@@ -1,0 +1,15 @@
+{
+  "title": "SQL Server",
+  "normalized_title": "SQL Server",
+  "pageid": 28245,
+  "revision_id": 1337884011,
+  "timestamp": "2026-02-12T00:08:21Z",
+  "source_url": "https://en.wikipedia.org/wiki/SQL_Server",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=SQL+Server",
+  "retrieved_at": "2026-06-17T17:22:29Z",
+  "raw_text": "SQL Server may refer to:\n\nMicrosoft SQL Server, a relational database server from Microsoft\nSybase SQL Server, a relational database server developed by Sybase\n\n\nSee also\nSQL",
+  "raw_text_sha256": "2b64808e34258e882724a8201258d466905f53e2b9214d30037de3832da2266f",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

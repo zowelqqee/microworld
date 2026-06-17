@@ -1,0 +1,800 @@
+[
+  {
+    "prompt": {
+      "prompt_id": "adv-0000",
+      "question": "Did Bigelow Aerospace found Robert Bigelow?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Bigelow Aerospace",
+      "obj": "Robert Bigelow",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0001",
+      "question": "Did Bloomberg News found Michael Bloomberg?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Bloomberg News",
+      "obj": "Michael Bloomberg",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0002",
+      "question": "Did Bombay Stock Exchange found Premchand Roychand?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Bombay Stock Exchange",
+      "obj": "Premchand Roychand",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0003",
+      "question": "Did S-IB stage develop Chrysler?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Chrysler",
+      "obj": "S-IB stage",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0004",
+      "question": "Does Compaq own Hewlett-Packard?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Compaq",
+      "obj": "Hewlett-Packard",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0005",
+      "question": "Did S-IVB develop Douglas Aircraft Company?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Douglas Aircraft Company",
+      "obj": "S-IVB",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0006",
+      "question": "Did Intel found Gordon Moore?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Intel",
+      "obj": "Gordon Moore",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0007",
+      "question": "Did Intel found Robert Noyce?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Intel",
+      "obj": "Robert Noyce",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0008",
+      "question": "Does annual World Energy Outlook publish International Energy Agency?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "publishes",
+      "subject": "International Energy Agency",
+      "obj": "annual World Energy Outlook",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0009",
+      "question": "Did Malabry campus develop Jean Fayeton?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Jean Fayeton",
+      "obj": "Malabry campus",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0010",
+      "question": "Did Amazon found Jeff Bezos?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded",
+      "subject": "Jeff Bezos",
+      "obj": "Amazon",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0011",
+      "question": "Does Loopt own Green Dot Corporation?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Loopt",
+      "obj": "Green Dot Corporation",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0012",
+      "question": "Did New Energy Finance develop Michael Liebreich?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Michael Liebreich",
+      "obj": "New Energy Finance",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0013",
+      "question": "Did S-IB stage develop Michoud Assembly Facility?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Michoud Assembly Facility",
+      "obj": "S-IB stage",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0014",
+      "question": "Did National Indemnity found Jack Dabney Ringwalt?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "National Indemnity",
+      "obj": "Jack Dabney Ringwalt",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0015",
+      "question": "Did F/A-18 Super Hornet develop Northrop Grumman?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Northrop Grumman",
+      "obj": "F/A-18 Super Hornet",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0016",
+      "question": "Did Grumman E-2 Hawkeye airborne early warning develop Northrop Grumman?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Northrop Grumman",
+      "obj": "Grumman E-2 Hawkeye airborne early warning",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0017",
+      "question": "Did MQ-4C Triton unmanned aerial vehicle develop Northrop Grumman?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "Northrop Grumman",
+      "obj": "MQ-4C Triton unmanned aerial vehicle",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0018",
+      "question": "Does NYSE own Intercontinental Exchange?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "NYSE",
+      "obj": "Intercontinental Exchange",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0019",
+      "question": "Does Reuters own Canadian Thomson Corporation?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Reuters",
+      "obj": "Canadian Thomson Corporation",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0020",
+      "question": "Did Rocket Science Games found Steve Blank?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Rocket Science Games",
+      "obj": "Steve Blank",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0021",
+      "question": "Did Royal Exchange found Sir Richard Clough?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Royal Exchange",
+      "obj": "Sir Richard Clough",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0022",
+      "question": "Did Royal Exchange found Thomas Gresham?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Royal Exchange",
+      "obj": "Thomas Gresham",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0023",
+      "question": "Did Saudi Arabia found King Abdulaziz?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "Saudi Arabia",
+      "obj": "King Abdulaziz",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0024",
+      "question": "Does Sleepycat Software own February?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Sleepycat Software",
+      "obj": "February",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0025",
+      "question": "Does Sleepycat Software own Oracle Corporation?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Sleepycat Software",
+      "obj": "Oracle Corporation",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0026",
+      "question": "Does SolarCity own Tesla?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "SolarCity",
+      "obj": "Tesla",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0027",
+      "question": "Did Falcon 9 develop SpaceX?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "SpaceX",
+      "obj": "Falcon 9",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0028",
+      "question": "Does Starlink own SpaceX?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Starlink",
+      "obj": "SpaceX",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0029",
+      "question": "Does Telecom Technologies own Sonus Networks?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Telecom Technologies",
+      "obj": "Sonus Networks",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0030",
+      "question": "Did USA Parkway develop TRIC?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "develops",
+      "subject": "TRIC",
+      "obj": "USA Parkway",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0031",
+      "question": "Does Union-Castle Line own RMSP?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "owned_by",
+      "subject": "Union-Castle Line",
+      "obj": "RMSP",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "missing_knowledge",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+    "risk_flags": [],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0032",
+      "question": "Did WEF found Klaus Schwab?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "WEF",
+      "obj": "Klaus Schwab",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0033",
+      "question": "Did XM found Gary Parsons?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "XM",
+      "obj": "Gary Parsons",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  },
+  {
+    "prompt": {
+      "prompt_id": "adv-0034",
+      "question": "Did XM found Lon Levin?",
+      "category": "adversarial",
+      "expected_decision": "audit",
+      "predicate": "founded_by",
+      "subject": "XM",
+      "obj": "Lon Levin",
+      "expected_tokens": [],
+      "notes": "reversed_relation"
+    },
+    "decision": "audit",
+    "support_kind": "audit_blocked_context",
+    "supported_by_context": false,
+    "overlay_mode": "pump-dry-run",
+    "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+    "risk_flags": [
+      "relation_inversion"
+    ],
+    "valid": true,
+    "classification": "ok",
+    "is_critical_failure": false
+  }
+]

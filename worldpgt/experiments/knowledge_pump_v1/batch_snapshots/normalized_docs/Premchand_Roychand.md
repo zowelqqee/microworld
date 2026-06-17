@@ -1,0 +1,26 @@
+# Premchand Roychand
+
+Source: https://en.wikipedia.org/wiki/Premchand_Roychand
+Retrieved at: 2026-06-17T20:43:05Z
+Revision ID: 1329525201
+Raw text SHA256: a35aa63c0416f439a5756cd80079ddc303e398a0ce3ad504201826dbc88973dd
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Premchand Roychand (1832–1906) was an Indian Śvetāmbara Jain businessman known as the "Cotton King" and "Bullion King" from Bombay. He is most well-known for the establishment of Bombay Stock Exchange and for his donation in the construction of the Rajabai Clock Tower.
+
+Life
+Premchand Roychand was born in 1832 in Dasa Oswal Jain Śvetāmbara family. He was the son of Roychand Deepchand, a merchant from Surat. Popular Śvetāmbara Jain monk Mohanlalji Maharaja was his preceptor and teacher. The Roychand family moved to Bombay when Premchand was a young boy. He was educated at Elphinstone College. Recorded as the first Indian broker able to speak, read and write English, he entered the lists as a stock broker in 1849. Apart from the capital markets, Jain had significant business interests in the cotton and bullion trades along with the stock market. He was a founding member of The Native Share & Stock Brokers Association which is now Bombay Stock Exchange, the second largest stock exchange of India. He earned significant profits from the cotton boom which was triggered by the start of the American Civil War in April 1861 which stayed till 1865.
+He lost the majority of his fortune in the Backbay reclamation scheme, and other such ventures. He subsequently earned a portion of it back and turned to philanthropic ventures. The Rajabai Clock Tower in the University of Bombay was named after his mother and was built from a donation of ₹200,000 by Premchand in 1878. He was director of the Bank of Bombay, the largest in the Bombay Presidency. He also invested in other schools, including many for girls such as J.B. Petit High School for Girls; he also established the "Premchand Roychand Award" for outstanding art students with the University of Calcutta. He also donated to the Asiatic Society.
+He died in 1906. His bungalow in Byculla that he had named Premodayan became Regina Pacis Convent, an orphanage and school for destitute girls.
+
+Legacy
+Premchand Roychand Scholarship award was started by Premchand Roychand in 1866. It is very old and prestigious scholarship award. Each year this competition and award is organized by University of Calcutta.
+
+Further reading
+Sharada Dwivedi (2006). Premchand Roychand (1831-1906): His Life and Times. Eminence Designs. ISBN 978-81-903821-1-3.
+
+References
+
+External links
+Premchand Roychand & Sons (Business Group's Official Website)

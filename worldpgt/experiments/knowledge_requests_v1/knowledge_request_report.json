@@ -1,0 +1,278 @@
+{
+  "summary": {
+    "requests_total": 29,
+    "source_document_requests_total": 26,
+    "requests_by_category": {
+      "missing_entity_relation": 1,
+      "missing_organization_relation": 5,
+      "missing_policy_explanation": 5,
+      "missing_product_relation": 6,
+      "missing_source_qualified_fact": 12
+    },
+    "requests_by_risk": {
+      "high": 12,
+      "low": 5,
+      "medium": 12
+    },
+    "missing_inputs_total": 36,
+    "skipped_dangerous_inputs_total": 7,
+    "deduplicated_count": 0,
+    "safe_for_general_runtime": false,
+    "request_only": true,
+    "auto_ingest": false,
+    "auto_promote": false,
+    "trusted_memory_modified": false,
+    "accepted_overlay_modified": false,
+    "promoted_overlay_modified": false,
+    "network_calls": false
+  },
+  "source_artifacts_read": [
+    "self_learning_v1/learning_opportunities.json",
+    "self_learning_v1/learning_opportunity_summary.json",
+    "curriculum_regression_v1/curriculum_regression_outputs.csv",
+    "curriculum_regression_v1/curriculum_regression_summary.json",
+    "self_ingestion_v1/quarantine.json",
+    "self_ingestion_v1/self_ingestion_report.json",
+    "self_ingestion_v1/promotion/promotion_report.json"
+  ],
+  "warnings": [],
+  "errors": [],
+  "top_source_document_requests": [
+    {
+      "id": "sdr-0014",
+      "topic": "Elon Musk and Starlink relationship",
+      "suggested_title": "elon_musk_and_starlink_relationship_local_doc",
+      "related_request_count": 2,
+      "entities_to_cover": [
+        "Elon Musk",
+        "Starlink"
+      ],
+      "relations_to_verify": [
+        "Elon Musk develops/produces/operates Starlink"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0015",
+      "topic": "Tesla and Forbes relationship",
+      "suggested_title": "tesla_and_forbes_relationship_local_doc",
+      "related_request_count": 2,
+      "entities_to_cover": [
+        "Tesla",
+        "Forbes"
+      ],
+      "relations_to_verify": [
+        "Tesla founder_of/leader_of/owned_by/subsidiary_of/operates/publishes Forbes"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0016",
+      "topic": "Starlink and net worth relationship",
+      "suggested_title": "starlink_and_net_worth_relationship_local_doc",
+      "related_request_count": 2,
+      "entities_to_cover": [
+        "Starlink",
+        "net worth"
+      ],
+      "relations_to_verify": [
+        "Starlink source_qualified_fact net worth"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0001",
+      "topic": "missing knowledge: Who is the current CEO of Tesla?",
+      "suggested_title": "missing_knowledge_who_is_the_current_ceo_of_tesla_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: Who is the current CEO of Tesla?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0002",
+      "topic": "missing knowledge: What is SpaceX's current valuation?",
+      "suggested_title": "missing_knowledge_what_is_spacex_s_current_valuation_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: What is SpaceX's current valuation?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0003",
+      "topic": "missing knowledge: Who is the current CEO of SpaceX?",
+      "suggested_title": "missing_knowledge_who_is_the_current_ceo_of_spacex_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: Who is the current CEO of SpaceX?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0004",
+      "topic": "missing knowledge: What is the current price of Tesla stock?",
+      "suggested_title": "missing_knowledge_what_is_the_current_price_of_tesla_stock_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: What is the current price of Tesla stock?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0005",
+      "topic": "missing knowledge: What is Tesla's latest quarterly revenue?",
+      "suggested_title": "missing_knowledge_what_is_tesla_s_latest_quarterly_revenue_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: What is Tesla's latest quarterly revenue?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0006",
+      "topic": "missing knowledge: What is Forbes' latest ranking of Elon Musk?",
+      "suggested_title": "missing_knowledge_what_is_forbes_latest_ranking_of_elon_musk_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "source_qualified_fact: What is Forbes' latest ranking of Elon Musk?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source",
+        "Do not promote source-qualified estimates into stable facts"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    },
+    {
+      "id": "sdr-0007",
+      "topic": "missing knowledge: Does Forbes lead Tesla?",
+      "suggested_title": "missing_knowledge_does_forbes_lead_tesla_local_doc",
+      "related_request_count": 1,
+      "entities_to_cover": [],
+      "relations_to_verify": [
+        "connected_to: Does Forbes lead Tesla?"
+      ],
+      "claims_to_avoid": [
+        "Do not infer ownership or stable relations from weak contextual links",
+        "Do not answer current/live metrics (valuation, revenue, net worth, stock, rankings, subscriber counts) without explicit as_of and source"
+      ],
+      "next_pipeline_step": "create local doc -> self_ingestion -> quarantine -> promotion -> regression"
+    }
+  ],
+  "safety_notes": [
+    {
+      "opportunity_id": "slo-0010",
+      "question": "What is Elon Musk's favorite food?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "private_or_sensitive_data",
+      "note": "private/personal data must not become a knowledge request"
+    },
+    {
+      "opportunity_id": "slo-0027",
+      "question": "What is Elon Musk's phone number?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "private_or_sensitive_data",
+      "note": "private/personal data must not become a knowledge request"
+    },
+    {
+      "opportunity_id": "slo-0028",
+      "question": "What is Elon Musk's home address?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "private_or_sensitive_data",
+      "note": "private/personal data must not become a knowledge request"
+    },
+    {
+      "opportunity_id": "slo-0029",
+      "question": "What is Elon Musk's date of birth?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "private_or_sensitive_data",
+      "note": "private/personal data must not become a knowledge request"
+    },
+    {
+      "opportunity_id": "slo-0035",
+      "question": "Does Tesla lead Elon Musk?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "relation_inversion",
+      "note": "inverted relation must keep auditing; no stable request"
+    },
+    {
+      "opportunity_id": "slo-0062",
+      "question": "If Tesla makes electric cars, is every electric car a Tesla?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "unsupported_universal",
+      "note": "universal reversal must keep auditing; no stable request"
+    },
+    {
+      "opportunity_id": "slo-0063",
+      "question": "If Musk leads Tesla, does Tesla lead Musk?",
+      "opportunity_category": "missing_stable_knowledge",
+      "reason": "relation_inversion",
+      "note": "inverted relation must keep auditing; no stable request"
+    }
+  ],
+  "safety_confirmations": {
+    "request_only": true,
+    "safe_for_general_runtime": false,
+    "auto_ingest": false,
+    "auto_promote": false,
+    "auto_apply": false,
+    "trusted_memory_modified": false,
+    "accepted_overlay_modified": false,
+    "promoted_overlay_modified": false,
+    "network_calls": false,
+    "rules_activated": false,
+    "patterns_activated": false
+  },
+  "next_recommended_actions": [
+    "Author the proposed local source documents OFFLINE; do not fetch from the network or auto-create wiki pages.",
+    "Run each new local doc through self_ingestion -> quarantine -> promotion -> regression before any answer is enabled.",
+    "Keep source-qualified / volatile facts source-qualified (as_of + source); never promote them into stable facts.",
+    "Keep all missing-knowledge questions auditing until explicit stable evidence exists; do not weaken safety to increase coverage."
+  ]
+}

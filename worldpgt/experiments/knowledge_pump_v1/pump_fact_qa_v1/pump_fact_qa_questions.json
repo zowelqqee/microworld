@@ -1,0 +1,7692 @@
+[
+  {
+    "prompt_id": "pos-0000",
+    "question": "What is Abe Fortas?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Abe Fortas",
+    "obj": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis",
+    "expected_tokens": [
+      "Abe Fortas",
+      "youngest",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0001",
+    "question": "Define Abe Fortas.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Abe Fortas",
+    "obj": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis",
+    "expected_tokens": [
+      "Abe Fortas",
+      "youngest",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0002",
+    "question": "What is Accenture plc?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Accenture plc",
+    "obj": "Irish technology consulting company",
+    "expected_tokens": [
+      "Accenture plc",
+      "Irish",
+      "technology"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0003",
+    "question": "Define Accenture plc.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Accenture plc",
+    "obj": "Irish technology consulting company",
+    "expected_tokens": [
+      "Accenture plc",
+      "Irish",
+      "technology"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0004",
+    "question": "What is Affordable Connectivity Program?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Affordable Connectivity Program",
+    "obj": "United States government-sponsored program",
+    "expected_tokens": [
+      "Affordable Connectivity Program",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0005",
+    "question": "Define Affordable Connectivity Program.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Affordable Connectivity Program",
+    "obj": "United States government-sponsored program",
+    "expected_tokens": [
+      "Affordable Connectivity Program",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0006",
+    "question": "What is Air command?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Air command",
+    "obj": "term used to refer to the command structure of some air forces",
+    "expected_tokens": [
+      "Air command",
+      "term",
+      "used"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0007",
+    "question": "Define Air command.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Air command",
+    "obj": "term used to refer to the command structure of some air forces",
+    "expected_tokens": [
+      "Air command",
+      "term",
+      "used"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0008",
+    "question": "What is Aliko Mohammad Dangote?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Aliko Mohammad Dangote",
+    "obj": "Nigerian businessman",
+    "expected_tokens": [
+      "Aliko Mohammad Dangote",
+      "Nigerian",
+      "businessman"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0009",
+    "question": "Define Aliko Mohammad Dangote.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Aliko Mohammad Dangote",
+    "obj": "Nigerian businessman",
+    "expected_tokens": [
+      "Aliko Mohammad Dangote",
+      "Nigerian",
+      "businessman"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0010",
+    "question": "What is Alpha Magnetic Spectrometer?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Alpha Magnetic Spectrometer",
+    "obj": "particle physics experiment module",
+    "expected_tokens": [
+      "Alpha Magnetic Spectrometer",
+      "particle",
+      "physics"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0011",
+    "question": "Define Alpha Magnetic Spectrometer.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Alpha Magnetic Spectrometer",
+    "obj": "particle physics experiment module",
+    "expected_tokens": [
+      "Alpha Magnetic Spectrometer",
+      "particle",
+      "physics"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0012",
+    "question": "What is Amalgam Comics?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amalgam Comics",
+    "obj": "collaborative publishing imprint shared by DC Comics",
+    "expected_tokens": [
+      "Amalgam Comics",
+      "collaborative",
+      "publishing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0013",
+    "question": "Define Amalgam Comics.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amalgam Comics",
+    "obj": "collaborative publishing imprint shared by DC Comics",
+    "expected_tokens": [
+      "Amalgam Comics",
+      "collaborative",
+      "publishing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0014",
+    "question": "What is Amazon basin?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon basin",
+    "obj": "part of South America drained by the Amazon River",
+    "expected_tokens": [
+      "Amazon basin",
+      "part",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0015",
+    "question": "Define Amazon basin.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon basin",
+    "obj": "part of South America drained by the Amazon River",
+    "expected_tokens": [
+      "Amazon basin",
+      "part",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0016",
+    "question": "What is Amazon Bookstore Cooperative?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon Bookstore Cooperative",
+    "obj": "feminist bookstore",
+    "expected_tokens": [
+      "Amazon Bookstore Cooperative",
+      "feminist",
+      "bookstore"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0017",
+    "question": "Define Amazon Bookstore Cooperative.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon Bookstore Cooperative",
+    "obj": "feminist bookstore",
+    "expected_tokens": [
+      "Amazon Bookstore Cooperative",
+      "feminist",
+      "bookstore"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0018",
+    "question": "What is Amazon Delta?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon Delta",
+    "obj": "vast river delta formed by the Amazon River",
+    "expected_tokens": [
+      "Amazon Delta",
+      "vast",
+      "river"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0019",
+    "question": "Define Amazon Delta.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazon Delta",
+    "obj": "vast river delta formed by the Amazon River",
+    "expected_tokens": [
+      "Amazon Delta",
+      "vast",
+      "river"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0020",
+    "question": "What is Amazonian Guard?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazonian Guard",
+    "obj": "unofficial name given to an all-female elite cadre of bodyguards officially",
+    "expected_tokens": [
+      "Amazonian Guard",
+      "unofficial",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0021",
+    "question": "Define Amazonian Guard.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amazonian Guard",
+    "obj": "unofficial name given to an all-female elite cadre of bodyguards officially",
+    "expected_tokens": [
+      "Amazonian Guard",
+      "unofficial",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0022",
+    "question": "What is Amdahl Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amdahl Corporation",
+    "obj": "information technology company",
+    "expected_tokens": [
+      "Amdahl Corporation",
+      "information",
+      "technology"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0023",
+    "question": "Define Amdahl Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Amdahl Corporation",
+    "obj": "information technology company",
+    "expected_tokens": [
+      "Amdahl Corporation",
+      "information",
+      "technology"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0024",
+    "question": "What is Ampex Data Systems Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Ampex Data Systems Corporation",
+    "obj": "American electronics company",
+    "expected_tokens": [
+      "Ampex Data Systems Corporation",
+      "American",
+      "electronics"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0025",
+    "question": "Define Ampex Data Systems Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Ampex Data Systems Corporation",
+    "obj": "American electronics company",
+    "expected_tokens": [
+      "Ampex Data Systems Corporation",
+      "American",
+      "electronics"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0026",
+    "question": "What is Analytics?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Analytics",
+    "obj": "systematic computational analysis of data",
+    "expected_tokens": [
+      "Analytics",
+      "systematic",
+      "computational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0027",
+    "question": "Define Analytics.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Analytics",
+    "obj": "systematic computational analysis of data",
+    "expected_tokens": [
+      "Analytics",
+      "systematic",
+      "computational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0028",
+    "question": "What is Apple II?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Apple II",
+    "obj": "series of microcomputers",
+    "expected_tokens": [
+      "Apple II",
+      "series",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0029",
+    "question": "Define Apple II.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Apple II",
+    "obj": "series of microcomputers",
+    "expected_tokens": [
+      "Apple II",
+      "series",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0030",
+    "question": "What is April?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "April",
+    "obj": "fourth month of the year in the Gregorian",
+    "expected_tokens": [
+      "April",
+      "fourth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0031",
+    "question": "Define April.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "April",
+    "obj": "fourth month of the year in the Gregorian",
+    "expected_tokens": [
+      "April",
+      "fourth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0032",
+    "question": "What is Ares Management Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Ares Management Corporation",
+    "obj": "global alternative investment manager operating in the credit",
+    "expected_tokens": [
+      "Ares Management Corporation",
+      "global",
+      "alternative"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0033",
+    "question": "Define Ares Management Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Ares Management Corporation",
+    "obj": "global alternative investment manager operating in the credit",
+    "expected_tokens": [
+      "Ares Management Corporation",
+      "global",
+      "alternative"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0034",
+    "question": "What is Armadillo Aerospace?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Armadillo Aerospace",
+    "obj": "aerospace startup company",
+    "expected_tokens": [
+      "Armadillo Aerospace",
+      "aerospace",
+      "startup"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0035",
+    "question": "Define Armadillo Aerospace.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Armadillo Aerospace",
+    "obj": "aerospace startup company",
+    "expected_tokens": [
+      "Armadillo Aerospace",
+      "aerospace",
+      "startup"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0036",
+    "question": "What is Artemis Accords?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Artemis Accords",
+    "obj": "non-binding set of principles for outer space exploration",
+    "expected_tokens": [
+      "Artemis Accords",
+      "non-binding",
+      "set"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0037",
+    "question": "Define Artemis Accords.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Artemis Accords",
+    "obj": "non-binding set of principles for outer space exploration",
+    "expected_tokens": [
+      "Artemis Accords",
+      "non-binding",
+      "set"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0038",
+    "question": "What is Artemis III?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Artemis III",
+    "obj": "upcoming crewed spaceflight mission of the NASA-led Artemis program",
+    "expected_tokens": [
+      "Artemis III",
+      "upcoming",
+      "crewed"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0039",
+    "question": "Define Artemis III.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Artemis III",
+    "obj": "upcoming crewed spaceflight mission of the NASA-led Artemis program",
+    "expected_tokens": [
+      "Artemis III",
+      "upcoming",
+      "crewed"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0040",
+    "question": "What is Arthur Michell Ransome?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Arthur Michell Ransome",
+    "obj": "English author",
+    "expected_tokens": [
+      "Arthur Michell Ransome",
+      "English",
+      "author"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0041",
+    "question": "Define Arthur Michell Ransome.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Arthur Michell Ransome",
+    "obj": "English author",
+    "expected_tokens": [
+      "Arthur Michell Ransome",
+      "English",
+      "author"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0042",
+    "question": "What is Aston Martin Lagonda Global Holdings PLC?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Aston Martin Lagonda Global Holdings PLC",
+    "obj": "British manufacturer of luxury sports cars",
+    "expected_tokens": [
+      "Aston Martin Lagonda Global Holdings PLC",
+      "British",
+      "manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0043",
+    "question": "Define Aston Martin Lagonda Global Holdings PLC.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Aston Martin Lagonda Global Holdings PLC",
+    "obj": "British manufacturer of luxury sports cars",
+    "expected_tokens": [
+      "Aston Martin Lagonda Global Holdings PLC",
+      "British",
+      "manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0044",
+    "question": "What is Atlas II?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Atlas II",
+    "obj": "member of the Atlas family of launch vehicles",
+    "expected_tokens": [
+      "Atlas II",
+      "member",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0045",
+    "question": "Define Atlas II.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Atlas II",
+    "obj": "member of the Atlas family of launch vehicles",
+    "expected_tokens": [
+      "Atlas II",
+      "member",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0046",
+    "question": "What is Audi Q8?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Audi Q8",
+    "obj": "mid-size luxury crossover SUV made by Audi",
+    "expected_tokens": [
+      "Audi Q8",
+      "mid-size",
+      "luxury"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0047",
+    "question": "Define Audi Q8.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Audi Q8",
+    "obj": "mid-size luxury crossover SUV made by Audi",
+    "expected_tokens": [
+      "Audi Q8",
+      "mid-size",
+      "luxury"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0048",
+    "question": "What is August?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "August",
+    "obj": "eighth month of the year in the Julian",
+    "expected_tokens": [
+      "August",
+      "eighth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0049",
+    "question": "Define August.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "August",
+    "obj": "eighth month of the year in the Julian",
+    "expected_tokens": [
+      "August",
+      "eighth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0050",
+    "question": "What is Axiom Station?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Axiom Station",
+    "obj": "planned modular space station designed by Houston",
+    "expected_tokens": [
+      "Axiom Station",
+      "planned",
+      "modular"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0051",
+    "question": "Define Axiom Station.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Axiom Station",
+    "obj": "planned modular space station designed by Houston",
+    "expected_tokens": [
+      "Axiom Station",
+      "planned",
+      "modular"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0052",
+    "question": "What is Bangladesh Satellite-1?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bangladesh Satellite-1",
+    "obj": "first Bangladeshi geostationary communications",
+    "expected_tokens": [
+      "Bangladesh Satellite-1",
+      "first",
+      "Bangladeshi"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0053",
+    "question": "Define Bangladesh Satellite-1.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bangladesh Satellite-1",
+    "obj": "first Bangladeshi geostationary communications",
+    "expected_tokens": [
+      "Bangladesh Satellite-1",
+      "first",
+      "Bangladeshi"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0054",
+    "question": "What is Bankers Trust?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bankers Trust",
+    "obj": "historic American banking organization",
+    "expected_tokens": [
+      "Bankers Trust",
+      "historic",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0055",
+    "question": "Define Bankers Trust.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bankers Trust",
+    "obj": "historic American banking organization",
+    "expected_tokens": [
+      "Bankers Trust",
+      "historic",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0056",
+    "question": "What is Bertie Charles Forbes?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bertie Charles Forbes",
+    "obj": "Scottish-American financial journalist",
+    "expected_tokens": [
+      "Bertie Charles Forbes",
+      "Scottish-American",
+      "financial"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0057",
+    "question": "Define Bertie Charles Forbes.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bertie Charles Forbes",
+    "obj": "Scottish-American financial journalist",
+    "expected_tokens": [
+      "Bertie Charles Forbes",
+      "Scottish-American",
+      "financial"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0058",
+    "question": "What is Bloomberg Government?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Government",
+    "obj": "division of Bloomberg Industry Group",
+    "expected_tokens": [
+      "Bloomberg Government",
+      "division",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0059",
+    "question": "Define Bloomberg Government.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Government",
+    "obj": "division of Bloomberg Industry Group",
+    "expected_tokens": [
+      "Bloomberg Government",
+      "division",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0060",
+    "question": "What is Bloomberg Law?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Law",
+    "obj": "subscription-based service",
+    "expected_tokens": [
+      "Bloomberg Law",
+      "subscription-based",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0061",
+    "question": "Define Bloomberg Law.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Law",
+    "obj": "subscription-based service",
+    "expected_tokens": [
+      "Bloomberg Law",
+      "subscription-based",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0062",
+    "question": "What is Bloomberg Markets?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Markets",
+    "obj": "magazine published six times a year by Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Markets",
+      "magazine",
+      "published"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0063",
+    "question": "Define Bloomberg Markets.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Markets",
+    "obj": "magazine published six times a year by Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Markets",
+      "magazine",
+      "published"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0064",
+    "question": "What is Bloomberg Radio?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Radio",
+    "obj": "radio service of Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Radio",
+      "radio",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0065",
+    "question": "Define Bloomberg Radio.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Radio",
+    "obj": "radio service of Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Radio",
+      "radio",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0066",
+    "question": "What is Bloomberg Terminal?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Terminal",
+    "obj": "computer software system provided by the financial data vendor Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Terminal",
+      "computer",
+      "software"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0067",
+    "question": "Define Bloomberg Terminal.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Bloomberg Terminal",
+    "obj": "computer software system provided by the financial data vendor Bloomberg L",
+    "expected_tokens": [
+      "Bloomberg Terminal",
+      "computer",
+      "software"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0068",
+    "question": "What is Blue Origin NS-16?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-16",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-16",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0069",
+    "question": "Define Blue Origin NS-16.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-16",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-16",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0070",
+    "question": "What is Blue Origin NS-17?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-17",
+    "obj": "sub-orbital spaceflight cargo mission of Blue Origin's New Shepard rocket",
+    "expected_tokens": [
+      "Blue Origin NS-17",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0071",
+    "question": "Define Blue Origin NS-17.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-17",
+    "obj": "sub-orbital spaceflight cargo mission of Blue Origin's New Shepard rocket",
+    "expected_tokens": [
+      "Blue Origin NS-17",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0072",
+    "question": "What is Blue Origin NS-18?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-18",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-18",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0073",
+    "question": "Define Blue Origin NS-18.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-18",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-18",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0074",
+    "question": "What is Blue Origin NS-19?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-19",
+    "obj": "New Shepard sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-19",
+      "New",
+      "Shepard"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0075",
+    "question": "Define Blue Origin NS-19.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-19",
+    "obj": "New Shepard sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-19",
+      "New",
+      "Shepard"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0076",
+    "question": "What is Blue Origin NS-20?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-20",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-20",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0077",
+    "question": "Define Blue Origin NS-20.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-20",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-20",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0078",
+    "question": "What is Blue Origin NS-21?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-21",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-21",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0079",
+    "question": "Define Blue Origin NS-21.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-21",
+    "obj": "sub-orbital spaceflight mission",
+    "expected_tokens": [
+      "Blue Origin NS-21",
+      "sub-orbital",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0080",
+    "question": "What is Blue Origin NS-23?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-23",
+    "obj": "sub-orbital cargo spaceflight mission of Blue Origin's New Shepard rocket",
+    "expected_tokens": [
+      "Blue Origin NS-23",
+      "sub-orbital",
+      "cargo"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0081",
+    "question": "Define Blue Origin NS-23.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Origin NS-23",
+    "obj": "sub-orbital cargo spaceflight mission of Blue Origin's New Shepard rocket",
+    "expected_tokens": [
+      "Blue Origin NS-23",
+      "sub-orbital",
+      "cargo"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0082",
+    "question": "What is Blue Ring?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Ring",
+    "obj": "spacecraft platform designed to support spacecraft operation",
+    "expected_tokens": [
+      "Blue Ring",
+      "spacecraft",
+      "platform"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0083",
+    "question": "Define Blue Ring.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Blue Ring",
+    "obj": "spacecraft platform designed to support spacecraft operation",
+    "expected_tokens": [
+      "Blue Ring",
+      "spacecraft",
+      "platform"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0084",
+    "question": "What is Boeing B-50 Superfortress?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Boeing B-50 Superfortress",
+    "obj": "retired American strategic bomber",
+    "expected_tokens": [
+      "Boeing B-50 Superfortress",
+      "retired",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0085",
+    "question": "Define Boeing B-50 Superfortress.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Boeing B-50 Superfortress",
+    "obj": "retired American strategic bomber",
+    "expected_tokens": [
+      "Boeing B-50 Superfortress",
+      "retired",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0086",
+    "question": "What is Buttonwood Agreement?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Buttonwood Agreement",
+    "obj": "founding document of what is now the New York Stock Exchange",
+    "expected_tokens": [
+      "Buttonwood Agreement",
+      "founding",
+      "document"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0087",
+    "question": "Define Buttonwood Agreement.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Buttonwood Agreement",
+    "obj": "founding document of what is now the New York Stock Exchange",
+    "expected_tokens": [
+      "Buttonwood Agreement",
+      "founding",
+      "document"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0088",
+    "question": "What is Canada?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Canada",
+    "obj": "country in North America",
+    "expected_tokens": [
+      "Canada",
+      "country",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0089",
+    "question": "Define Canada.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Canada",
+    "obj": "country in North America",
+    "expected_tokens": [
+      "Canada",
+      "country",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0090",
+    "question": "What is Cape Canaveral?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cape Canaveral",
+    "obj": "cape in Brevard County",
+    "expected_tokens": [
+      "Cape Canaveral",
+      "cape",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0091",
+    "question": "Define Cape Canaveral.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cape Canaveral",
+    "obj": "cape in Brevard County",
+    "expected_tokens": [
+      "Cape Canaveral",
+      "cape",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0092",
+    "question": "What is Cape Canaveral Space Force Station?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cape Canaveral Space Force Station",
+    "obj": "installation of the United States Space Force's Space Launch Delta 45",
+    "expected_tokens": [
+      "Cape Canaveral Space Force Station",
+      "installation",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0093",
+    "question": "Define Cape Canaveral Space Force Station.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cape Canaveral Space Force Station",
+    "obj": "installation of the United States Space Force's Space Launch Delta 45",
+    "expected_tokens": [
+      "Cape Canaveral Space Force Station",
+      "installation",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0094",
+    "question": "What is Carson City?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Carson City",
+    "obj": "independent city",
+    "expected_tokens": [
+      "Carson City",
+      "independent",
+      "city"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0095",
+    "question": "Define Carson City.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Carson City",
+    "obj": "independent city",
+    "expected_tokens": [
+      "Carson City",
+      "independent",
+      "city"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0096",
+    "question": "What is CBS News?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "CBS News",
+    "obj": "news division of the American television broadcaster CBS",
+    "expected_tokens": [
+      "CBS News",
+      "news",
+      "division"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0097",
+    "question": "Define CBS News.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "CBS News",
+    "obj": "news division of the American television broadcaster CBS",
+    "expected_tokens": [
+      "CBS News",
+      "news",
+      "division"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0098",
+    "question": "What is Cerberus Fossae?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cerberus Fossae",
+    "obj": "series of semi-parallel fissures on Mars formed by faults",
+    "expected_tokens": [
+      "Cerberus Fossae",
+      "series",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0099",
+    "question": "Define Cerberus Fossae.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Cerberus Fossae",
+    "obj": "series of semi-parallel fissures on Mars formed by faults",
+    "expected_tokens": [
+      "Cerberus Fossae",
+      "series",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0100",
+    "question": "What is Chevrolet Volt?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Chevrolet Volt",
+    "obj": "plug-in hybrid electric vehicle car",
+    "expected_tokens": [
+      "Chevrolet Volt",
+      "plug-in",
+      "hybrid"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0101",
+    "question": "Define Chevrolet Volt.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Chevrolet Volt",
+    "obj": "plug-in hybrid electric vehicle car",
+    "expected_tokens": [
+      "Chevrolet Volt",
+      "plug-in",
+      "hybrid"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0102",
+    "question": "What is Commercial Orbital Transportation Services?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Commercial Orbital Transportation Services",
+    "obj": "NASA program to spur the development of private spacecraft",
+    "expected_tokens": [
+      "Commercial Orbital Transportation Services",
+      "NASA",
+      "program"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0103",
+    "question": "Define Commercial Orbital Transportation Services.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Commercial Orbital Transportation Services",
+    "obj": "NASA program to spur the development of private spacecraft",
+    "expected_tokens": [
+      "Commercial Orbital Transportation Services",
+      "NASA",
+      "program"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0104",
+    "question": "What is Companies Act?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Companies Act",
+    "obj": "stock short title used for legislation in Botswana",
+    "expected_tokens": [
+      "Companies Act",
+      "stock",
+      "short"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0105",
+    "question": "Define Companies Act.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Companies Act",
+    "obj": "stock short title used for legislation in Botswana",
+    "expected_tokens": [
+      "Companies Act",
+      "stock",
+      "short"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0106",
+    "question": "What is Compaq Computer Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Compaq Computer Corporation",
+    "obj": "American information technology company",
+    "expected_tokens": [
+      "Compaq Computer Corporation",
+      "American",
+      "information"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0107",
+    "question": "Define Compaq Computer Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Compaq Computer Corporation",
+    "obj": "American information technology company",
+    "expected_tokens": [
+      "Compaq Computer Corporation",
+      "American",
+      "information"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0108",
+    "question": "What is Corporations Act 2001?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Corporations Act 2001",
+    "obj": "Act of the Parliament of Australia",
+    "expected_tokens": [
+      "Corporations Act 2001",
+      "Act",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0109",
+    "question": "Define Corporations Act 2001.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Corporations Act 2001",
+    "obj": "Act of the Parliament of Australia",
+    "expected_tokens": [
+      "Corporations Act 2001",
+      "Act",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0110",
+    "question": "What is Dawn Aerospace?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dawn Aerospace",
+    "obj": "space transportation company building both in-space propulsion systems",
+    "expected_tokens": [
+      "Dawn Aerospace",
+      "space",
+      "transportation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0111",
+    "question": "Define Dawn Aerospace.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dawn Aerospace",
+    "obj": "space transportation company building both in-space propulsion systems",
+    "expected_tokens": [
+      "Dawn Aerospace",
+      "space",
+      "transportation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0112",
+    "question": "What is Delta IV?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Delta IV",
+    "obj": "group of five expendable launch systems in the Delta rocket family",
+    "expected_tokens": [
+      "Delta IV",
+      "group",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0113",
+    "question": "Define Delta IV.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Delta IV",
+    "obj": "group of five expendable launch systems in the Delta rocket family",
+    "expected_tokens": [
+      "Delta IV",
+      "group",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0114",
+    "question": "What is Dow Jones?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dow Jones",
+    "obj": "combination of the names of business partners Charles Dow",
+    "expected_tokens": [
+      "Dow Jones",
+      "combination",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0115",
+    "question": "Define Dow Jones.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dow Jones",
+    "obj": "combination of the names of business partners Charles Dow",
+    "expected_tokens": [
+      "Dow Jones",
+      "combination",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0116",
+    "question": "What is Dragon 2?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dragon 2",
+    "obj": "class of partially reusable spacecraft",
+    "expected_tokens": [
+      "Dragon 2",
+      "class",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0117",
+    "question": "Define Dragon 2.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dragon 2",
+    "obj": "class of partially reusable spacecraft",
+    "expected_tokens": [
+      "Dragon 2",
+      "class",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0118",
+    "question": "What is Dragon Spacecraft Qualification Unit?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dragon Spacecraft Qualification Unit",
+    "obj": "boilerplate version of the Dragon spacecraft",
+    "expected_tokens": [
+      "Dragon Spacecraft Qualification Unit",
+      "boilerplate",
+      "version"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0119",
+    "question": "Define Dragon Spacecraft Qualification Unit.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Dragon Spacecraft Qualification Unit",
+    "obj": "boilerplate version of the Dragon spacecraft",
+    "expected_tokens": [
+      "Dragon Spacecraft Qualification Unit",
+      "boilerplate",
+      "version"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0120",
+    "question": "What is Duke University?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Duke University",
+    "obj": "private research university in Durham",
+    "expected_tokens": [
+      "Duke University",
+      "private",
+      "research"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0121",
+    "question": "Define Duke University.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Duke University",
+    "obj": "private research university in Durham",
+    "expected_tokens": [
+      "Duke University",
+      "private",
+      "research"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0122",
+    "question": "What is Earth?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Earth",
+    "obj": "third planet from the Sun",
+    "expected_tokens": [
+      "Earth",
+      "third",
+      "planet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0123",
+    "question": "Define Earth.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Earth",
+    "obj": "third planet from the Sun",
+    "expected_tokens": [
+      "Earth",
+      "third",
+      "planet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0124",
+    "question": "What is Engineering?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Engineering",
+    "obj": "practice of systematically applying natural science",
+    "expected_tokens": [
+      "Engineering",
+      "practice",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0125",
+    "question": "Define Engineering.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Engineering",
+    "obj": "practice of systematically applying natural science",
+    "expected_tokens": [
+      "Engineering",
+      "practice",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0126",
+    "question": "What is Errol Graham Musk?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Errol Graham Musk",
+    "obj": "South African businessman",
+    "expected_tokens": [
+      "Errol Graham Musk",
+      "South",
+      "African"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0127",
+    "question": "Define Errol Graham Musk.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Errol Graham Musk",
+    "obj": "South African businessman",
+    "expected_tokens": [
+      "Errol Graham Musk",
+      "South",
+      "African"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0128",
+    "question": "What is Euronext Amsterdam?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Euronext Amsterdam",
+    "obj": "stock exchange",
+    "expected_tokens": [
+      "Euronext Amsterdam",
+      "stock",
+      "exchange"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0129",
+    "question": "Define Euronext Amsterdam.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Euronext Amsterdam",
+    "obj": "stock exchange",
+    "expected_tokens": [
+      "Euronext Amsterdam",
+      "stock",
+      "exchange"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0130",
+    "question": "What is Exchange Alley or Change Alley?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exchange Alley or Change Alley",
+    "obj": "narrow alleyway connecting shops",
+    "expected_tokens": [
+      "Exchange Alley or Change Alley",
+      "narrow",
+      "alleyway"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0131",
+    "question": "Define Exchange Alley or Change Alley.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exchange Alley or Change Alley",
+    "obj": "narrow alleyway connecting shops",
+    "expected_tokens": [
+      "Exchange Alley or Change Alley",
+      "narrow",
+      "alleyway"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0132",
+    "question": "What is Exos Aerospace Systems & Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exos Aerospace Systems & Technologies",
+    "obj": "aerospace manufacturer",
+    "expected_tokens": [
+      "Exos Aerospace Systems & Technologies",
+      "aerospace",
+      "manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0133",
+    "question": "Define Exos Aerospace Systems & Technologies.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exos Aerospace Systems & Technologies",
+    "obj": "aerospace manufacturer",
+    "expected_tokens": [
+      "Exos Aerospace Systems & Technologies",
+      "aerospace",
+      "manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0134",
+    "question": "What is February?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "February",
+    "obj": "second month of the year in the Julian",
+    "expected_tokens": [
+      "February",
+      "second",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0135",
+    "question": "Define February.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "February",
+    "obj": "second month of the year in the Julian",
+    "expected_tokens": [
+      "February",
+      "second",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0136",
+    "question": "What is Federal Communications Commission?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Federal Communications Commission",
+    "obj": "independent agency of the United States federal government",
+    "expected_tokens": [
+      "Federal Communications Commission",
+      "independent",
+      "agency"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0137",
+    "question": "Define Federal Communications Commission.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Federal Communications Commission",
+    "obj": "independent agency of the United States federal government",
+    "expected_tokens": [
+      "Federal Communications Commission",
+      "independent",
+      "agency"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0138",
+    "question": "What is Financial Industry Regulatory Authority?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Financial Industry Regulatory Authority",
+    "obj": "private American corporation",
+    "expected_tokens": [
+      "Financial Industry Regulatory Authority",
+      "private",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0139",
+    "question": "Define Financial Industry Regulatory Authority.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Financial Industry Regulatory Authority",
+    "obj": "private American corporation",
+    "expected_tokens": [
+      "Financial Industry Regulatory Authority",
+      "private",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0140",
+    "question": "What is Flight or flying?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Flight or flying",
+    "obj": "motion of an object",
+    "expected_tokens": [
+      "Flight or flying",
+      "motion",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0141",
+    "question": "Define Flight or flying.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Flight or flying",
+    "obj": "motion of an object",
+    "expected_tokens": [
+      "Flight or flying",
+      "motion",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0142",
+    "question": "What is Flight testing?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Flight testing",
+    "obj": "branch of aeronautical engineering",
+    "expected_tokens": [
+      "Flight testing",
+      "branch",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0143",
+    "question": "Define Flight testing.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Flight testing",
+    "obj": "branch of aeronautical engineering",
+    "expected_tokens": [
+      "Flight testing",
+      "branch",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0144",
+    "question": "What is Foothill Transit?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Foothill Transit",
+    "obj": "public transit agency",
+    "expected_tokens": [
+      "Foothill Transit",
+      "public",
+      "transit"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0145",
+    "question": "Define Foothill Transit.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Foothill Transit",
+    "obj": "public transit agency",
+    "expected_tokens": [
+      "Foothill Transit",
+      "public",
+      "transit"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0146",
+    "question": "What is Fort Lauderdale?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Fort Lauderdale",
+    "obj": "coastal city",
+    "expected_tokens": [
+      "Fort Lauderdale",
+      "coastal",
+      "city"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0147",
+    "question": "Define Fort Lauderdale.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Fort Lauderdale",
+    "obj": "coastal city",
+    "expected_tokens": [
+      "Fort Lauderdale",
+      "coastal",
+      "city"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0148",
+    "question": "What is Foundation series?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Foundation series",
+    "obj": "science fiction novel series written by American author Isaac Asimov",
+    "expected_tokens": [
+      "Foundation series",
+      "science",
+      "fiction"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0149",
+    "question": "Define Foundation series.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Foundation series",
+    "obj": "science fiction novel series written by American author Isaac Asimov",
+    "expected_tokens": [
+      "Foundation series",
+      "science",
+      "fiction"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0150",
+    "question": "What is General Motors Company?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "General Motors Company",
+    "obj": "American multinational automotive manufacturing company",
+    "expected_tokens": [
+      "General Motors Company",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0151",
+    "question": "Define General Motors Company.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "General Motors Company",
+    "obj": "American multinational automotive manufacturing company",
+    "expected_tokens": [
+      "General Motors Company",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0152",
+    "question": "What is Gigafactory Mexico?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Gigafactory Mexico",
+    "obj": "proposed manufacturing plant for Tesla",
+    "expected_tokens": [
+      "Gigafactory Mexico",
+      "proposed",
+      "manufacturing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0153",
+    "question": "Define Gigafactory Mexico.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Gigafactory Mexico",
+    "obj": "proposed manufacturing plant for Tesla",
+    "expected_tokens": [
+      "Gigafactory Mexico",
+      "proposed",
+      "manufacturing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0154",
+    "question": "What is Goddard Space Flight Center?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Goddard Space Flight Center",
+    "obj": "major NASA space research laboratory",
+    "expected_tokens": [
+      "Goddard Space Flight Center",
+      "major",
+      "NASA"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0155",
+    "question": "Define Goddard Space Flight Center.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Goddard Space Flight Center",
+    "obj": "major NASA space research laboratory",
+    "expected_tokens": [
+      "Goddard Space Flight Center",
+      "major",
+      "NASA"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0156",
+    "question": "What is Google Cloud?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Google Cloud",
+    "obj": "suite of cloud computing services offered by Google",
+    "expected_tokens": [
+      "Google Cloud",
+      "suite",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0157",
+    "question": "Define Google Cloud.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Google Cloud",
+    "obj": "suite of cloud computing services offered by Google",
+    "expected_tokens": [
+      "Google Cloud",
+      "suite",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0158",
+    "question": "What is Great Depression?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Great Depression",
+    "obj": "severe global economic downturn from 1929 to 1939",
+    "expected_tokens": [
+      "Great Depression",
+      "severe",
+      "global"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0159",
+    "question": "Define Great Depression.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Great Depression",
+    "obj": "severe global economic downturn from 1929 to 1939",
+    "expected_tokens": [
+      "Great Depression",
+      "severe",
+      "global"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0160",
+    "question": "What is Greek Battalion of Balaklava?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Greek Battalion of Balaklava",
+    "obj": "military unit of the Imperial Russian Army",
+    "expected_tokens": [
+      "Greek Battalion of Balaklava",
+      "military",
+      "unit"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0161",
+    "question": "Define Greek Battalion of Balaklava.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Greek Battalion of Balaklava",
+    "obj": "military unit of the Imperial Russian Army",
+    "expected_tokens": [
+      "Greek Battalion of Balaklava",
+      "military",
+      "unit"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0162",
+    "question": "What is Greenhouse gases?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Greenhouse gases",
+    "obj": "gases in an atmosphere",
+    "expected_tokens": [
+      "Greenhouse gases",
+      "gases",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0163",
+    "question": "Define Greenhouse gases.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Greenhouse gases",
+    "obj": "gases in an atmosphere",
+    "expected_tokens": [
+      "Greenhouse gases",
+      "gases",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0164",
+    "question": "What is Harvard Business School?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Harvard Business School",
+    "obj": "graduate business school of Harvard University",
+    "expected_tokens": [
+      "Harvard Business School",
+      "graduate",
+      "business"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0165",
+    "question": "Define Harvard Business School.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Harvard Business School",
+    "obj": "graduate business school of Harvard University",
+    "expected_tokens": [
+      "Harvard Business School",
+      "graduate",
+      "business"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0166",
+    "question": "What is Harvard University?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Harvard University",
+    "obj": "private Ivy League research university in Cambridge",
+    "expected_tokens": [
+      "Harvard University",
+      "private",
+      "Ivy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0167",
+    "question": "Define Harvard University.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Harvard University",
+    "obj": "private Ivy League research university in Cambridge",
+    "expected_tokens": [
+      "Harvard University",
+      "private",
+      "Ivy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0168",
+    "question": "What is Henrik Fisker?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Henrik Fisker",
+    "obj": "Danish automotive designer",
+    "expected_tokens": [
+      "Henrik Fisker",
+      "Danish",
+      "automotive"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0169",
+    "question": "Define Henrik Fisker.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Henrik Fisker",
+    "obj": "Danish automotive designer",
+    "expected_tokens": [
+      "Henrik Fisker",
+      "Danish",
+      "automotive"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0170",
+    "question": "What is HMS Amazon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "HMS Amazon",
+    "obj": "26-gun frigate",
+    "expected_tokens": [
+      "HMS Amazon",
+      "26-gun",
+      "frigate"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0171",
+    "question": "Define HMS Amazon.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "HMS Amazon",
+    "obj": "26-gun frigate",
+    "expected_tokens": [
+      "HMS Amazon",
+      "26-gun",
+      "frigate"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0172",
+    "question": "What is Hong Kong?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hong Kong",
+    "obj": "special administrative region of China",
+    "expected_tokens": [
+      "Hong Kong",
+      "special",
+      "administrative"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0173",
+    "question": "Define Hong Kong.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hong Kong",
+    "obj": "special administrative region of China",
+    "expected_tokens": [
+      "Hong Kong",
+      "special",
+      "administrative"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0174",
+    "question": "What is Horniman Circle Gardens?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Horniman Circle Gardens",
+    "obj": "large park in South Mumbai",
+    "expected_tokens": [
+      "Horniman Circle Gardens",
+      "large",
+      "park"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0175",
+    "question": "Define Horniman Circle Gardens.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Horniman Circle Gardens",
+    "obj": "large park in South Mumbai",
+    "expected_tokens": [
+      "Horniman Circle Gardens",
+      "large",
+      "park"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0176",
+    "question": "What is Hubble Space Telescope?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hubble Space Telescope",
+    "obj": "space telescope",
+    "expected_tokens": [
+      "Hubble Space Telescope",
+      "space",
+      "telescope"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0177",
+    "question": "Define Hubble Space Telescope.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hubble Space Telescope",
+    "obj": "space telescope",
+    "expected_tokens": [
+      "Hubble Space Telescope",
+      "space",
+      "telescope"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0178",
+    "question": "What is Hughes Aircraft Company?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hughes Aircraft Company",
+    "obj": "major American aerospace",
+    "expected_tokens": [
+      "Hughes Aircraft Company",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0179",
+    "question": "Define Hughes Aircraft Company.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Hughes Aircraft Company",
+    "obj": "major American aerospace",
+    "expected_tokens": [
+      "Hughes Aircraft Company",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0180",
+    "question": "What is IBM System -?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "IBM System -",
+    "obj": "common name for IBM products",
+    "expected_tokens": [
+      "IBM System -",
+      "common",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0181",
+    "question": "Define IBM System -.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "IBM System -",
+    "obj": "common name for IBM products",
+    "expected_tokens": [
+      "IBM System -",
+      "common",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0182",
+    "question": "What is Integrate-Transfer-Launch Complex?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Integrate-Transfer-Launch Complex",
+    "obj": "rocket launch site",
+    "expected_tokens": [
+      "Integrate-Transfer-Launch Complex",
+      "rocket",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0183",
+    "question": "Define Integrate-Transfer-Launch Complex.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Integrate-Transfer-Launch Complex",
+    "obj": "rocket launch site",
+    "expected_tokens": [
+      "Integrate-Transfer-Launch Complex",
+      "rocket",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0184",
+    "question": "What is Intel Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Intel Corporation",
+    "obj": "American multinational technology company",
+    "expected_tokens": [
+      "Intel Corporation",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0185",
+    "question": "Define Intel Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Intel Corporation",
+    "obj": "American multinational technology company",
+    "expected_tokens": [
+      "Intel Corporation",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0186",
+    "question": "What is International Energy Agency?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "International Energy Agency",
+    "obj": "Paris-based autonomous intergovernmental organization",
+    "expected_tokens": [
+      "International Energy Agency",
+      "Paris-based",
+      "autonomous"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0187",
+    "question": "Define International Energy Agency.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "International Energy Agency",
+    "obj": "Paris-based autonomous intergovernmental organization",
+    "expected_tokens": [
+      "International Energy Agency",
+      "Paris-based",
+      "autonomous"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0188",
+    "question": "What is Internet?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Internet",
+    "obj": "global system of interconnected computer networks",
+    "expected_tokens": [
+      "Internet",
+      "global",
+      "system"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0189",
+    "question": "Define Internet.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Internet",
+    "obj": "global system of interconnected computer networks",
+    "expected_tokens": [
+      "Internet",
+      "global",
+      "system"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0190",
+    "question": "What is Jack Patrick Dorsey?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Jack Patrick Dorsey",
+    "obj": "American tech entrepreneur",
+    "expected_tokens": [
+      "Jack Patrick Dorsey",
+      "American",
+      "tech"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0191",
+    "question": "Define Jack Patrick Dorsey.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Jack Patrick Dorsey",
+    "obj": "American tech entrepreneur",
+    "expected_tokens": [
+      "Jack Patrick Dorsey",
+      "American",
+      "tech"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0192",
+    "question": "What is Jaguar Land Rover Automotive PLC?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Jaguar Land Rover Automotive PLC",
+    "obj": "British multinational automobile manufacturer",
+    "expected_tokens": [
+      "Jaguar Land Rover Automotive PLC",
+      "British",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0193",
+    "question": "Define Jaguar Land Rover Automotive PLC.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Jaguar Land Rover Automotive PLC",
+    "obj": "British multinational automobile manufacturer",
+    "expected_tokens": [
+      "Jaguar Land Rover Automotive PLC",
+      "British",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0194",
+    "question": "What is James Webb Space Telescope?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "James Webb Space Telescope",
+    "obj": "space telescope designed to conduct infrared astronomy",
+    "expected_tokens": [
+      "James Webb Space Telescope",
+      "space",
+      "telescope"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0195",
+    "question": "Define James Webb Space Telescope.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "James Webb Space Telescope",
+    "obj": "space telescope designed to conduct infrared astronomy",
+    "expected_tokens": [
+      "James Webb Space Telescope",
+      "space",
+      "telescope"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0196",
+    "question": "What is January?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "January",
+    "obj": "first month of the year in the Julian",
+    "expected_tokens": [
+      "January",
+      "first",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0197",
+    "question": "Define January.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "January",
+    "obj": "first month of the year in the Julian",
+    "expected_tokens": [
+      "January",
+      "first",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0198",
+    "question": "What is Japan?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Japan",
+    "obj": "island country in East Asia",
+    "expected_tokens": [
+      "Japan",
+      "island",
+      "country"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0199",
+    "question": "Define Japan.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Japan",
+    "obj": "island country in East Asia",
+    "expected_tokens": [
+      "Japan",
+      "island",
+      "country"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0200",
+    "question": "What is June?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "June",
+    "obj": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world",
+    "expected_tokens": [
+      "June",
+      "sixth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0201",
+    "question": "Define June.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "June",
+    "obj": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world",
+    "expected_tokens": [
+      "June",
+      "sixth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0202",
+    "question": "What is Land Rover?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Land Rover",
+    "obj": "brand of predominantly four-wheel drive",
+    "expected_tokens": [
+      "Land Rover",
+      "brand",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0203",
+    "question": "Define Land Rover.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Land Rover",
+    "obj": "brand of predominantly four-wheel drive",
+    "expected_tokens": [
+      "Land Rover",
+      "brand",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0204",
+    "question": "What is London Stock Exchange?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "London Stock Exchange",
+    "obj": "global stock exchange",
+    "expected_tokens": [
+      "London Stock Exchange",
+      "global",
+      "stock"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0205",
+    "question": "Define London Stock Exchange.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "London Stock Exchange",
+    "obj": "global stock exchange",
+    "expected_tokens": [
+      "London Stock Exchange",
+      "global",
+      "stock"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0206",
+    "question": "What is Lotus Esprit?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Lotus Esprit",
+    "obj": "sports car built by Lotus Cars from 1976 to 2004 at their Hethel",
+    "expected_tokens": [
+      "Lotus Esprit",
+      "sports",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0207",
+    "question": "Define Lotus Esprit.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Lotus Esprit",
+    "obj": "sports car built by Lotus Cars from 1976 to 2004 at their Hethel",
+    "expected_tokens": [
+      "Lotus Esprit",
+      "sports",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0208",
+    "question": "What is LVMH Moet Hennessy Louis Vuitton SE?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "LVMH Moet Hennessy Louis Vuitton SE",
+    "obj": "French multinational holding company",
+    "expected_tokens": [
+      "LVMH Moet Hennessy Louis Vuitton SE",
+      "French",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0209",
+    "question": "Define LVMH Moet Hennessy Louis Vuitton SE.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "LVMH Moet Hennessy Louis Vuitton SE",
+    "obj": "French multinational holding company",
+    "expected_tokens": [
+      "LVMH Moet Hennessy Louis Vuitton SE",
+      "French",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0210",
+    "question": "What is Lyndon Robert Rive?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Lyndon Robert Rive",
+    "obj": "South African-American businessman",
+    "expected_tokens": [
+      "Lyndon Robert Rive",
+      "South",
+      "African-American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0211",
+    "question": "Define Lyndon Robert Rive.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Lyndon Robert Rive",
+    "obj": "South African-American businessman",
+    "expected_tokens": [
+      "Lyndon Robert Rive",
+      "South",
+      "African-American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0212",
+    "question": "What is Major general?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Major general",
+    "obj": "military rank used in many countries",
+    "expected_tokens": [
+      "Major general",
+      "military",
+      "rank"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0213",
+    "question": "Define Major general.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Major general",
+    "obj": "military rank used in many countries",
+    "expected_tokens": [
+      "Major general",
+      "military",
+      "rank"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0214",
+    "question": "What is March?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "March",
+    "obj": "third month of the year in both the Julian",
+    "expected_tokens": [
+      "March",
+      "third",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0215",
+    "question": "Define March.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "March",
+    "obj": "third month of the year in both the Julian",
+    "expected_tokens": [
+      "March",
+      "third",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0216",
+    "question": "What is McDonnell Douglas Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "McDonnell Douglas Corporation",
+    "obj": "major American aerospace manufacturing corporation",
+    "expected_tokens": [
+      "McDonnell Douglas Corporation",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0217",
+    "question": "Define McDonnell Douglas Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "McDonnell Douglas Corporation",
+    "obj": "major American aerospace manufacturing corporation",
+    "expected_tokens": [
+      "McDonnell Douglas Corporation",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0218",
+    "question": "What is Media Matters for America?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Media Matters for America",
+    "obj": "nonprofit left-leaning watchdog journalism organization",
+    "expected_tokens": [
+      "Media Matters for America",
+      "nonprofit",
+      "left-leaning"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0219",
+    "question": "Define Media Matters for America.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Media Matters for America",
+    "obj": "nonprofit left-leaning watchdog journalism organization",
+    "expected_tokens": [
+      "Media Matters for America",
+      "nonprofit",
+      "left-leaning"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0220",
+    "question": "What is Merlin?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Merlin",
+    "obj": "mythical figure prominently featured in the legend of King Arthur",
+    "expected_tokens": [
+      "Merlin",
+      "mythical",
+      "figure"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0221",
+    "question": "Define Merlin.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Merlin",
+    "obj": "mythical figure prominently featured in the legend of King Arthur",
+    "expected_tokens": [
+      "Merlin",
+      "mythical",
+      "figure"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0222",
+    "question": "What is Merritt Island?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Merritt Island",
+    "obj": "peninsula in Brevard County",
+    "expected_tokens": [
+      "Merritt Island",
+      "peninsula",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0223",
+    "question": "Define Merritt Island.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Merritt Island",
+    "obj": "peninsula in Brevard County",
+    "expected_tokens": [
+      "Merritt Island",
+      "peninsula",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0224",
+    "question": "What is Michael Liebreich?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Michael Liebreich",
+    "obj": "businessman in the field of clean energy",
+    "expected_tokens": [
+      "Michael Liebreich",
+      "businessman",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0225",
+    "question": "Define Michael Liebreich.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Michael Liebreich",
+    "obj": "businessman in the field of clean energy",
+    "expected_tokens": [
+      "Michael Liebreich",
+      "businessman",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0226",
+    "question": "What is Microsoft Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Microsoft Corporation",
+    "obj": "American multinational technology company",
+    "expected_tokens": [
+      "Microsoft Corporation",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0227",
+    "question": "Define Microsoft Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Microsoft Corporation",
+    "obj": "American multinational technology company",
+    "expected_tokens": [
+      "Microsoft Corporation",
+      "American",
+      "multinational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0228",
+    "question": "What is Middle East?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Middle East",
+    "obj": "geo-political region",
+    "expected_tokens": [
+      "Middle East",
+      "geo-political",
+      "region"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0229",
+    "question": "Define Middle East.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Middle East",
+    "obj": "geo-political region",
+    "expected_tokens": [
+      "Middle East",
+      "geo-political",
+      "region"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0230",
+    "question": "What is Millennium Falcon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Millennium Falcon",
+    "obj": "fictional starship in the Star Wars franchise",
+    "expected_tokens": [
+      "Millennium Falcon",
+      "fictional",
+      "starship"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0231",
+    "question": "Define Millennium Falcon.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Millennium Falcon",
+    "obj": "fictional starship in the Star Wars franchise",
+    "expected_tokens": [
+      "Millennium Falcon",
+      "fictional",
+      "starship"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0232",
+    "question": "What is Moon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Moon",
+    "obj": "only natural satellite of Earth",
+    "expected_tokens": [
+      "Moon",
+      "only",
+      "natural"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0233",
+    "question": "Define Moon.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Moon",
+    "obj": "only natural satellite of Earth",
+    "expected_tokens": [
+      "Moon",
+      "only",
+      "natural"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0234",
+    "question": "What is Municipal Securities Rulemaking Board?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Municipal Securities Rulemaking Board",
+    "obj": "United States self-regulatory financial organization",
+    "expected_tokens": [
+      "Municipal Securities Rulemaking Board",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0235",
+    "question": "Define Municipal Securities Rulemaking Board.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Municipal Securities Rulemaking Board",
+    "obj": "United States self-regulatory financial organization",
+    "expected_tokens": [
+      "Municipal Securities Rulemaking Board",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0236",
+    "question": "What is Musk?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Musk",
+    "obj": "class of aromatic substances commonly used as base notes in perfumery",
+    "expected_tokens": [
+      "Musk",
+      "class",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0237",
+    "question": "Define Musk.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Musk",
+    "obj": "class of aromatic substances commonly used as base notes in perfumery",
+    "expected_tokens": [
+      "Musk",
+      "class",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0238",
+    "question": "What is NASA Deep Space Network?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "NASA Deep Space Network",
+    "obj": "worldwide network of spacecraft communication ground segment facilities",
+    "expected_tokens": [
+      "NASA Deep Space Network",
+      "worldwide",
+      "network"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0239",
+    "question": "Define NASA Deep Space Network.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "NASA Deep Space Network",
+    "obj": "worldwide network of spacecraft communication ground segment facilities",
+    "expected_tokens": [
+      "NASA Deep Space Network",
+      "worldwide",
+      "network"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0240",
+    "question": "What is NASDAQ Composite?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "NASDAQ Composite",
+    "obj": "stock market index",
+    "expected_tokens": [
+      "NASDAQ Composite",
+      "stock",
+      "market"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0241",
+    "question": "Define NASDAQ Composite.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "NASDAQ Composite",
+    "obj": "stock market index",
+    "expected_tokens": [
+      "NASDAQ Composite",
+      "stock",
+      "market"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0242",
+    "question": "What is National Affairs?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "National Affairs",
+    "obj": "quarterly magazine in the United States about political affairs",
+    "expected_tokens": [
+      "National Affairs",
+      "quarterly",
+      "magazine"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0243",
+    "question": "Define National Affairs.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "National Affairs",
+    "obj": "quarterly magazine in the United States about political affairs",
+    "expected_tokens": [
+      "National Affairs",
+      "quarterly",
+      "magazine"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0244",
+    "question": "What is New Glenn?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Glenn",
+    "obj": "family of launch vehicles",
+    "expected_tokens": [
+      "New Glenn",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0245",
+    "question": "Define New Glenn.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Glenn",
+    "obj": "family of launch vehicles",
+    "expected_tokens": [
+      "New Glenn",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0246",
+    "question": "What is New Horizons?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Horizons",
+    "obj": "interplanetary space probe launched as a part of NASA's New Frontiers program",
+    "expected_tokens": [
+      "New Horizons",
+      "interplanetary",
+      "space"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0247",
+    "question": "Define New Horizons.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Horizons",
+    "obj": "interplanetary space probe launched as a part of NASA's New Frontiers program",
+    "expected_tokens": [
+      "New Horizons",
+      "interplanetary",
+      "space"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0248",
+    "question": "What is New Mexico?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Mexico",
+    "obj": "landlocked state in the Southwestern region of the United States",
+    "expected_tokens": [
+      "New Mexico",
+      "landlocked",
+      "state"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0249",
+    "question": "Define New Mexico.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "New Mexico",
+    "obj": "landlocked state in the Southwestern region of the United States",
+    "expected_tokens": [
+      "New Mexico",
+      "landlocked",
+      "state"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0250",
+    "question": "What is Nikola Tesla?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Nikola Tesla",
+    "obj": "Serbian-American engineer",
+    "expected_tokens": [
+      "Nikola Tesla",
+      "Serbian-American",
+      "engineer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0251",
+    "question": "Define Nikola Tesla.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Nikola Tesla",
+    "obj": "Serbian-American engineer",
+    "expected_tokens": [
+      "Nikola Tesla",
+      "Serbian-American",
+      "engineer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0252",
+    "question": "What is Noah Glass?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Noah Glass",
+    "obj": "American tech entrepreneur",
+    "expected_tokens": [
+      "Noah Glass",
+      "American",
+      "tech"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0253",
+    "question": "Define Noah Glass.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Noah Glass",
+    "obj": "American tech entrepreneur",
+    "expected_tokens": [
+      "Noah Glass",
+      "American",
+      "tech"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0254",
+    "question": "What is North America?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "North America",
+    "obj": "continent in the Northern",
+    "expected_tokens": [
+      "North America",
+      "continent",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0255",
+    "question": "Define North America.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "North America",
+    "obj": "continent in the Northern",
+    "expected_tokens": [
+      "North America",
+      "continent",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0256",
+    "question": "What is Olympus Mons?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Olympus Mons",
+    "obj": "large shield volcano on Mars",
+    "expected_tokens": [
+      "Olympus Mons",
+      "large",
+      "shield"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0257",
+    "question": "Define Olympus Mons.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Olympus Mons",
+    "obj": "large shield volcano on Mars",
+    "expected_tokens": [
+      "Olympus Mons",
+      "large",
+      "shield"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0258",
+    "question": "What is Oracle Cloud?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Oracle Cloud",
+    "obj": "cloud computing service offered by Oracle Corporation providing servers",
+    "expected_tokens": [
+      "Oracle Cloud",
+      "cloud",
+      "computing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0259",
+    "question": "Define Oracle Cloud.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Oracle Cloud",
+    "obj": "cloud computing service offered by Oracle Corporation providing servers",
+    "expected_tokens": [
+      "Oracle Cloud",
+      "cloud",
+      "computing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0260",
+    "question": "What is Oxford English Dictionary?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Oxford English Dictionary",
+    "obj": "principal historical dictionary of the English language",
+    "expected_tokens": [
+      "Oxford English Dictionary",
+      "principal",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0261",
+    "question": "Define Oxford English Dictionary.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Oxford English Dictionary",
+    "obj": "principal historical dictionary of the English language",
+    "expected_tokens": [
+      "Oxford English Dictionary",
+      "principal",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0262",
+    "question": "What is Pecora Investigation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Pecora Investigation",
+    "obj": "inquiry begun on March 4",
+    "expected_tokens": [
+      "Pecora Investigation",
+      "inquiry",
+      "begun"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0263",
+    "question": "Define Pecora Investigation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Pecora Investigation",
+    "obj": "inquiry begun on March 4",
+    "expected_tokens": [
+      "Pecora Investigation",
+      "inquiry",
+      "begun"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0264",
+    "question": "What is Peter Andreas Thiel?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Peter Andreas Thiel",
+    "obj": "German-American entrepreneur",
+    "expected_tokens": [
+      "Peter Andreas Thiel",
+      "German-American",
+      "entrepreneur"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0265",
+    "question": "Define Peter Andreas Thiel.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Peter Andreas Thiel",
+    "obj": "German-American entrepreneur",
+    "expected_tokens": [
+      "Peter Andreas Thiel",
+      "German-American",
+      "entrepreneur"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0266",
+    "question": "What is Princeton University?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Princeton University",
+    "obj": "private Ivy League research university in Princeton",
+    "expected_tokens": [
+      "Princeton University",
+      "private",
+      "Ivy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0267",
+    "question": "Define Princeton University.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Princeton University",
+    "obj": "private Ivy League research university in Princeton",
+    "expected_tokens": [
+      "Princeton University",
+      "private",
+      "Ivy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0268",
+    "question": "What is Project Gemini?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Gemini",
+    "obj": "second United States human spaceflight program to fly",
+    "expected_tokens": [
+      "Project Gemini",
+      "second",
+      "United"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0269",
+    "question": "Define Project Gemini.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Gemini",
+    "obj": "second United States human spaceflight program to fly",
+    "expected_tokens": [
+      "Project Gemini",
+      "second",
+      "United"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0270",
+    "question": "What is Project Juno?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Juno",
+    "obj": "privately funded campaign",
+    "expected_tokens": [
+      "Project Juno",
+      "privately",
+      "funded"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0271",
+    "question": "Define Project Juno.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Juno",
+    "obj": "privately funded campaign",
+    "expected_tokens": [
+      "Project Juno",
+      "privately",
+      "funded"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0272",
+    "question": "What is Project Mercury?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Mercury",
+    "obj": "first human spaceflight program of the United States",
+    "expected_tokens": [
+      "Project Mercury",
+      "first",
+      "human"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0273",
+    "question": "Define Project Mercury.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Project Mercury",
+    "obj": "first human spaceflight program of the United States",
+    "expected_tokens": [
+      "Project Mercury",
+      "first",
+      "human"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0274",
+    "question": "What is Reaction Engines Limited?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Reaction Engines Limited",
+    "obj": "British aerospace manufacturer",
+    "expected_tokens": [
+      "Reaction Engines Limited",
+      "British",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0275",
+    "question": "Define Reaction Engines Limited.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Reaction Engines Limited",
+    "obj": "British aerospace manufacturer",
+    "expected_tokens": [
+      "Reaction Engines Limited",
+      "British",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0276",
+    "question": "What is Redwood Shores?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Redwood Shores",
+    "obj": "waterfront community in Redwood City",
+    "expected_tokens": [
+      "Redwood Shores",
+      "waterfront",
+      "community"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0277",
+    "question": "Define Redwood Shores.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Redwood Shores",
+    "obj": "waterfront community in Redwood City",
+    "expected_tokens": [
+      "Redwood Shores",
+      "waterfront",
+      "community"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0278",
+    "question": "What is Richard Eugene Sylla?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Richard Eugene Sylla",
+    "obj": "chairman of the board of trustees of the Museum of American Finance",
+    "expected_tokens": [
+      "Richard Eugene Sylla",
+      "chairman",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0279",
+    "question": "Define Richard Eugene Sylla.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Richard Eugene Sylla",
+    "obj": "chairman of the board of trustees of the Museum of American Finance",
+    "expected_tokens": [
+      "Richard Eugene Sylla",
+      "chairman",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0280",
+    "question": "What is Richard John Micklethwait?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Richard John Micklethwait",
+    "obj": "English journalist",
+    "expected_tokens": [
+      "Richard John Micklethwait",
+      "English",
+      "journalist"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0281",
+    "question": "Define Richard John Micklethwait.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Richard John Micklethwait",
+    "obj": "English journalist",
+    "expected_tokens": [
+      "Richard John Micklethwait",
+      "English",
+      "journalist"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0282",
+    "question": "What is Robert Zubrin?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Robert Zubrin",
+    "obj": "American aerospace engineer",
+    "expected_tokens": [
+      "Robert Zubrin",
+      "American",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0283",
+    "question": "Define Robert Zubrin.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Robert Zubrin",
+    "obj": "American aerospace engineer",
+    "expected_tokens": [
+      "Robert Zubrin",
+      "American",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0284",
+    "question": "What is Rocket Science Games?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Rocket Science Games",
+    "obj": "independent game studio",
+    "expected_tokens": [
+      "Rocket Science Games",
+      "independent",
+      "game"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0285",
+    "question": "Define Rocket Science Games.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Rocket Science Games",
+    "obj": "independent game studio",
+    "expected_tokens": [
+      "Rocket Science Games",
+      "independent",
+      "game"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0286",
+    "question": "What is Rocketplane Kistler?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Rocketplane Kistler",
+    "obj": "reusable launch system firm",
+    "expected_tokens": [
+      "Rocketplane Kistler",
+      "reusable",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0287",
+    "question": "Define Rocketplane Kistler.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Rocketplane Kistler",
+    "obj": "reusable launch system firm",
+    "expected_tokens": [
+      "Rocketplane Kistler",
+      "reusable",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0288",
+    "question": "What is Roots Blower Company?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Roots Blower Company",
+    "obj": "American engineering company",
+    "expected_tokens": [
+      "Roots Blower Company",
+      "American",
+      "engineering"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0289",
+    "question": "Define Roots Blower Company.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Roots Blower Company",
+    "obj": "American engineering company",
+    "expected_tokens": [
+      "Roots Blower Company",
+      "American",
+      "engineering"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0290",
+    "question": "What is Royal Navy?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Royal Navy",
+    "obj": "naval warfare force of the United Kingdom",
+    "expected_tokens": [
+      "Royal Navy",
+      "naval",
+      "warfare"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0291",
+    "question": "Define Royal Navy.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Royal Navy",
+    "obj": "naval warfare force of the United Kingdom",
+    "expected_tokens": [
+      "Royal Navy",
+      "naval",
+      "warfare"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0292",
+    "question": "What is San Francisco Bay Area?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "San Francisco Bay Area",
+    "obj": "region of California surrounding",
+    "expected_tokens": [
+      "San Francisco Bay Area",
+      "region",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0293",
+    "question": "Define San Francisco Bay Area.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "San Francisco Bay Area",
+    "obj": "region of California surrounding",
+    "expected_tokens": [
+      "San Francisco Bay Area",
+      "region",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0294",
+    "question": "What is Scaled Composites Model 339 SpaceShipTwo?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Scaled Composites Model 339 SpaceShipTwo",
+    "obj": "retired air-launched suborbital spaceplane type designed for space tourism",
+    "expected_tokens": [
+      "Scaled Composites Model 339 SpaceShipTwo",
+      "retired",
+      "air-launched"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0295",
+    "question": "Define Scaled Composites Model 339 SpaceShipTwo.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Scaled Composites Model 339 SpaceShipTwo",
+    "obj": "retired air-launched suborbital spaceplane type designed for space tourism",
+    "expected_tokens": [
+      "Scaled Composites Model 339 SpaceShipTwo",
+      "retired",
+      "air-launched"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0296",
+    "question": "What is September?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "September",
+    "obj": "ninth month of the year in the Julian",
+    "expected_tokens": [
+      "September",
+      "ninth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0297",
+    "question": "Define September.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "September",
+    "obj": "ninth month of the year in the Julian",
+    "expected_tokens": [
+      "September",
+      "ninth",
+      "month"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0298",
+    "question": "What is Shadow Racing Cars?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Shadow Racing Cars",
+    "obj": "Formula One",
+    "expected_tokens": [
+      "Shadow Racing Cars",
+      "Formula",
+      "One"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0299",
+    "question": "Define Shadow Racing Cars.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Shadow Racing Cars",
+    "obj": "Formula One",
+    "expected_tokens": [
+      "Shadow Racing Cars",
+      "Formula",
+      "One"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0300",
+    "question": "What is Sir Arthur Wing Pinero?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sir Arthur Wing Pinero",
+    "obj": "English playwright",
+    "expected_tokens": [
+      "Sir Arthur Wing Pinero",
+      "English",
+      "playwright"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0301",
+    "question": "Define Sir Arthur Wing Pinero.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sir Arthur Wing Pinero",
+    "obj": "English playwright",
+    "expected_tokens": [
+      "Sir Arthur Wing Pinero",
+      "English",
+      "playwright"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0302",
+    "question": "What is Sir Richard Charles Nicholas Branson?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sir Richard Charles Nicholas Branson",
+    "obj": "English business magnate",
+    "expected_tokens": [
+      "Sir Richard Charles Nicholas Branson",
+      "English",
+      "business"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0303",
+    "question": "Define Sir Richard Charles Nicholas Branson.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sir Richard Charles Nicholas Branson",
+    "obj": "English business magnate",
+    "expected_tokens": [
+      "Sir Richard Charles Nicholas Branson",
+      "English",
+      "business"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0304",
+    "question": "What is Smith Electric Vehicles?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Smith Electric Vehicles",
+    "obj": "manufacturer of electric trucks",
+    "expected_tokens": [
+      "Smith Electric Vehicles",
+      "manufacturer",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0305",
+    "question": "Define Smith Electric Vehicles.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Smith Electric Vehicles",
+    "obj": "manufacturer of electric trucks",
+    "expected_tokens": [
+      "Smith Electric Vehicles",
+      "manufacturer",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0306",
+    "question": "What is SMS Amazone?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SMS Amazone",
+    "obj": "sixth member of the ten-ship Gazelle class of light cruisers",
+    "expected_tokens": [
+      "SMS Amazone",
+      "sixth",
+      "member"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0307",
+    "question": "Define SMS Amazone.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SMS Amazone",
+    "obj": "sixth member of the ten-ship Gazelle class of light cruisers",
+    "expected_tokens": [
+      "SMS Amazone",
+      "sixth",
+      "member"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0308",
+    "question": "What is Software development?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Software development",
+    "obj": "process of designing",
+    "expected_tokens": [
+      "Software development",
+      "process",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0309",
+    "question": "Define Software development.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Software development",
+    "obj": "process of designing",
+    "expected_tokens": [
+      "Software development",
+      "process",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0310",
+    "question": "What is SolarCity Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SolarCity Corporation",
+    "obj": "publicly traded company",
+    "expected_tokens": [
+      "SolarCity Corporation",
+      "publicly",
+      "traded"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0311",
+    "question": "Define SolarCity Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SolarCity Corporation",
+    "obj": "publicly traded company",
+    "expected_tokens": [
+      "SolarCity Corporation",
+      "publicly",
+      "traded"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0312",
+    "question": "What is South America?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South America",
+    "obj": "continent entirely in the Western Hemisphere",
+    "expected_tokens": [
+      "South America",
+      "continent",
+      "entirely"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0313",
+    "question": "Define South America.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South America",
+    "obj": "continent entirely in the Western Hemisphere",
+    "expected_tokens": [
+      "South America",
+      "continent",
+      "entirely"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0314",
+    "question": "What is South Carolina?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South Carolina",
+    "obj": "state in the Southeastern",
+    "expected_tokens": [
+      "South Carolina",
+      "state",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0315",
+    "question": "Define South Carolina.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South Carolina",
+    "obj": "state in the Southeastern",
+    "expected_tokens": [
+      "South Carolina",
+      "state",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0316",
+    "question": "What is South Sea Company?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South Sea Company",
+    "obj": "British joint-stock company",
+    "expected_tokens": [
+      "South Sea Company",
+      "British",
+      "joint-stock"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0317",
+    "question": "Define South Sea Company.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "South Sea Company",
+    "obj": "British joint-stock company",
+    "expected_tokens": [
+      "South Sea Company",
+      "British",
+      "joint-stock"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0318",
+    "question": "What is Soyuz MS-17?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Soyuz MS-17",
+    "obj": "Soyuz spaceflight",
+    "expected_tokens": [
+      "Soyuz MS-17",
+      "Soyuz",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0319",
+    "question": "Define Soyuz MS-17.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Soyuz MS-17",
+    "obj": "Soyuz spaceflight",
+    "expected_tokens": [
+      "Soyuz MS-17",
+      "Soyuz",
+      "spaceflight"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0320",
+    "question": "What is Space?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Space",
+    "obj": "three-dimensional continuum containing positions",
+    "expected_tokens": [
+      "Space",
+      "three-dimensional",
+      "continuum"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0321",
+    "question": "Define Space.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Space",
+    "obj": "three-dimensional continuum containing positions",
+    "expected_tokens": [
+      "Space",
+      "three-dimensional",
+      "continuum"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0322",
+    "question": "What is Space Age?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Space Age",
+    "obj": "period encompassing the activities related to the Space Race",
+    "expected_tokens": [
+      "Space Age",
+      "period",
+      "encompassing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0323",
+    "question": "Define Space Age.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Space Age",
+    "obj": "period encompassing the activities related to the Space Race",
+    "expected_tokens": [
+      "Space Age",
+      "period",
+      "encompassing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0324",
+    "question": "What is Spaceflight?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Spaceflight",
+    "obj": "application of astronautics to fly objects",
+    "expected_tokens": [
+      "Spaceflight",
+      "application",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0325",
+    "question": "Define Spaceflight.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Spaceflight",
+    "obj": "application of astronautics to fly objects",
+    "expected_tokens": [
+      "Spaceflight",
+      "application",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0326",
+    "question": "What is SpaceX Crew-2?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SpaceX Crew-2",
+    "obj": "second operational flight of a Crew Dragon spacecraft",
+    "expected_tokens": [
+      "SpaceX Crew-2",
+      "second",
+      "operational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0327",
+    "question": "Define SpaceX Crew-2.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SpaceX Crew-2",
+    "obj": "second operational flight of a Crew Dragon spacecraft",
+    "expected_tokens": [
+      "SpaceX Crew-2",
+      "second",
+      "operational"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0328",
+    "question": "What is SpaceX Crew-3?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SpaceX Crew-3",
+    "obj": "Crew Dragon's third NASA Commercial Crew operational flight",
+    "expected_tokens": [
+      "SpaceX Crew-3",
+      "Crew",
+      "Dragon's"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0329",
+    "question": "Define SpaceX Crew-3.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "SpaceX Crew-3",
+    "obj": "Crew Dragon's third NASA Commercial Crew operational flight",
+    "expected_tokens": [
+      "SpaceX Crew-3",
+      "Crew",
+      "Dragon's"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0330",
+    "question": "What is Sperry Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sperry Corporation",
+    "obj": "major American equipment",
+    "expected_tokens": [
+      "Sperry Corporation",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0331",
+    "question": "Define Sperry Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sperry Corporation",
+    "obj": "major American equipment",
+    "expected_tokens": [
+      "Sperry Corporation",
+      "major",
+      "American"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0332",
+    "question": "What is Starlink Services, LLC?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Starlink Services, LLC",
+    "obj": "satellite internet constellation subsidiary of the American space company SpaceX",
+    "expected_tokens": [
+      "Starlink Services, LLC",
+      "satellite",
+      "internet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0333",
+    "question": "Define Starlink Services, LLC.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Starlink Services, LLC",
+    "obj": "satellite internet constellation subsidiary of the American space company SpaceX",
+    "expected_tokens": [
+      "Starlink Services, LLC",
+      "satellite",
+      "internet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0334",
+    "question": "What is Stennis Space Center?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Stennis Space Center",
+    "obj": "NASA rocket testing facility in Hancock County",
+    "expected_tokens": [
+      "Stennis Space Center",
+      "NASA",
+      "rocket"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0335",
+    "question": "Define Stennis Space Center.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Stennis Space Center",
+    "obj": "NASA rocket testing facility in Hancock County",
+    "expected_tokens": [
+      "Stennis Space Center",
+      "NASA",
+      "rocket"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0336",
+    "question": "What is Stoke Space Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Stoke Space Technologies",
+    "obj": "American space launch company",
+    "expected_tokens": [
+      "Stoke Space Technologies",
+      "American",
+      "space"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0337",
+    "question": "Define Stoke Space Technologies.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Stoke Space Technologies",
+    "obj": "American space launch company",
+    "expected_tokens": [
+      "Stoke Space Technologies",
+      "American",
+      "space"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0338",
+    "question": "What is Strategic Air Command?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Strategic Air Command",
+    "obj": "Cold War-era United States Department of Defense Specified Command",
+    "expected_tokens": [
+      "Strategic Air Command",
+      "Cold",
+      "War-era"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0339",
+    "question": "Define Strategic Air Command.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Strategic Air Command",
+    "obj": "Cold War-era United States Department of Defense Specified Command",
+    "expected_tokens": [
+      "Strategic Air Command",
+      "Cold",
+      "War-era"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0340",
+    "question": "What is Sustainable development?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sustainable development",
+    "obj": "approach to growth",
+    "expected_tokens": [
+      "Sustainable development",
+      "approach",
+      "to"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0341",
+    "question": "Define Sustainable development.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Sustainable development",
+    "obj": "approach to growth",
+    "expected_tokens": [
+      "Sustainable development",
+      "approach",
+      "to"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0342",
+    "question": "What is Tesla Fremont Factory?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Fremont Factory",
+    "obj": "automobile manufacturing plant in Fremont",
+    "expected_tokens": [
+      "Tesla Fremont Factory",
+      "automobile",
+      "manufacturing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0343",
+    "question": "Define Tesla Fremont Factory.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Fremont Factory",
+    "obj": "automobile manufacturing plant in Fremont",
+    "expected_tokens": [
+      "Tesla Fremont Factory",
+      "automobile",
+      "manufacturing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0344",
+    "question": "What is Tesla next-generation vehicle?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla next-generation vehicle",
+    "obj": "electric car platform under development by Tesla after 2022",
+    "expected_tokens": [
+      "Tesla next-generation vehicle",
+      "electric",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0345",
+    "question": "Define Tesla next-generation vehicle.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla next-generation vehicle",
+    "obj": "electric car platform under development by Tesla after 2022",
+    "expected_tokens": [
+      "Tesla next-generation vehicle",
+      "electric",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0346",
+    "question": "What is Tesla Powerpack?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Powerpack",
+    "obj": "rechargeable lithium-ion battery stationary energy storage item",
+    "expected_tokens": [
+      "Tesla Powerpack",
+      "rechargeable",
+      "lithium-ion"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0347",
+    "question": "Define Tesla Powerpack.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Powerpack",
+    "obj": "rechargeable lithium-ion battery stationary energy storage item",
+    "expected_tokens": [
+      "Tesla Powerpack",
+      "rechargeable",
+      "lithium-ion"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0348",
+    "question": "What is Tesla Robotaxi?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Robotaxi",
+    "obj": "ride-hailing service",
+    "expected_tokens": [
+      "Tesla Robotaxi",
+      "ride-hailing",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0349",
+    "question": "Define Tesla Robotaxi.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Robotaxi",
+    "obj": "ride-hailing service",
+    "expected_tokens": [
+      "Tesla Robotaxi",
+      "ride-hailing",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0350",
+    "question": "What is Tesla Semi?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Semi",
+    "obj": "battery electric semi-trailer truck built by Tesla",
+    "expected_tokens": [
+      "Tesla Semi",
+      "battery",
+      "electric"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0351",
+    "question": "Define Tesla Semi.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Tesla Semi",
+    "obj": "battery electric semi-trailer truck built by Tesla",
+    "expected_tokens": [
+      "Tesla Semi",
+      "battery",
+      "electric"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0352",
+    "question": "What is Texas?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Texas",
+    "obj": "most populous state in the Southern United States",
+    "expected_tokens": [
+      "Texas",
+      "most",
+      "populous"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0353",
+    "question": "Define Texas.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Texas",
+    "obj": "most populous state in the Southern United States",
+    "expected_tokens": [
+      "Texas",
+      "most",
+      "populous"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0354",
+    "question": "What is Thomas John Mueller?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Thomas John Mueller",
+    "obj": "American aerospace engineer",
+    "expected_tokens": [
+      "Thomas John Mueller",
+      "American",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0355",
+    "question": "Define Thomas John Mueller.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Thomas John Mueller",
+    "obj": "American aerospace engineer",
+    "expected_tokens": [
+      "Thomas John Mueller",
+      "American",
+      "aerospace"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0356",
+    "question": "What is Thomas Pink?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Thomas Pink",
+    "obj": "British clothing company",
+    "expected_tokens": [
+      "Thomas Pink",
+      "British",
+      "clothing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0357",
+    "question": "Define Thomas Pink.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Thomas Pink",
+    "obj": "British clothing company",
+    "expected_tokens": [
+      "Thomas Pink",
+      "British",
+      "clothing"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0358",
+    "question": "What is Titan IV?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Titan IV",
+    "obj": "family of heavy-lift space launch vehicles",
+    "expected_tokens": [
+      "Titan IV",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0359",
+    "question": "Define Titan IV.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Titan IV",
+    "obj": "family of heavy-lift space launch vehicles",
+    "expected_tokens": [
+      "Titan IV",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0360",
+    "question": "What is UAL Corporation?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "UAL Corporation",
+    "obj": "former name of United Airlines Holdings",
+    "expected_tokens": [
+      "UAL Corporation",
+      "former",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0361",
+    "question": "Define UAL Corporation.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "UAL Corporation",
+    "obj": "former name of United Airlines Holdings",
+    "expected_tokens": [
+      "UAL Corporation",
+      "former",
+      "name"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0362",
+    "question": "What is United States Air Force?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Air Force",
+    "obj": "air service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Air Force",
+      "air",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0363",
+    "question": "Define United States Air Force.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Air Force",
+    "obj": "air service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Air Force",
+      "air",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0364",
+    "question": "What is United States Army?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Army",
+    "obj": "land service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Army",
+      "land",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0365",
+    "question": "Define United States Army.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Army",
+    "obj": "land service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Army",
+      "land",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0366",
+    "question": "What is United States Government Accountability Office?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Government Accountability Office",
+    "obj": "federal agency within the legislative branch of the United States government",
+    "expected_tokens": [
+      "United States Government Accountability Office",
+      "federal",
+      "agency"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0367",
+    "question": "Define United States Government Accountability Office.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Government Accountability Office",
+    "obj": "federal agency within the legislative branch of the United States government",
+    "expected_tokens": [
+      "United States Government Accountability Office",
+      "federal",
+      "agency"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0368",
+    "question": "What is United States Navy?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Navy",
+    "obj": "maritime service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Navy",
+      "maritime",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0369",
+    "question": "Define United States Navy.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "United States Navy",
+    "obj": "maritime service branch of the United States Armed Forces",
+    "expected_tokens": [
+      "United States Navy",
+      "maritime",
+      "service"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0370",
+    "question": "What is University of California, Davis?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "University of California, Davis",
+    "obj": "public land-grant research university in the Davis",
+    "expected_tokens": [
+      "University of California, Davis",
+      "public",
+      "land-grant"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0371",
+    "question": "Define University of California, Davis.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "University of California, Davis",
+    "obj": "public land-grant research university in the Davis",
+    "expected_tokens": [
+      "University of California, Davis",
+      "public",
+      "land-grant"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0372",
+    "question": "What is US Airways?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "US Airways",
+    "obj": "major airline",
+    "expected_tokens": [
+      "US Airways",
+      "major",
+      "airline"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0373",
+    "question": "Define US Airways.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "US Airways",
+    "obj": "major airline",
+    "expected_tokens": [
+      "US Airways",
+      "major",
+      "airline"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0374",
+    "question": "What is USS Amazon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "USS Amazon",
+    "obj": "wooden-hulled bark of 318 tons",
+    "expected_tokens": [
+      "USS Amazon",
+      "wooden-hulled",
+      "bark"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0375",
+    "question": "Define USS Amazon.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "USS Amazon",
+    "obj": "wooden-hulled bark of 318 tons",
+    "expected_tokens": [
+      "USS Amazon",
+      "wooden-hulled",
+      "bark"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0376",
+    "question": "What is Volvo Amazon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Volvo Amazon",
+    "obj": "mid-sized car",
+    "expected_tokens": [
+      "Volvo Amazon",
+      "mid-sized",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0377",
+    "question": "Define Volvo Amazon.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Volvo Amazon",
+    "obj": "mid-sized car",
+    "expected_tokens": [
+      "Volvo Amazon",
+      "mid-sized",
+      "car"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0378",
+    "question": "What is Vulcan Centaur?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Vulcan Centaur",
+    "obj": "heavy-lift launch vehicle",
+    "expected_tokens": [
+      "Vulcan Centaur",
+      "heavy-lift",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0379",
+    "question": "Define Vulcan Centaur.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Vulcan Centaur",
+    "obj": "heavy-lift launch vehicle",
+    "expected_tokens": [
+      "Vulcan Centaur",
+      "heavy-lift",
+      "launch"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0380",
+    "question": "What is Wall Street?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wall Street",
+    "obj": "street in the Financial District of Lower Manhattan in New York City",
+    "expected_tokens": [
+      "Wall Street",
+      "street",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0381",
+    "question": "Define Wall Street.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wall Street",
+    "obj": "street in the Financial District of Lower Manhattan in New York City",
+    "expected_tokens": [
+      "Wall Street",
+      "street",
+      "in"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0382",
+    "question": "What is Wayback Machine?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wayback Machine",
+    "obj": "digital archive of the World Wide Web",
+    "expected_tokens": [
+      "Wayback Machine",
+      "digital",
+      "archive"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0383",
+    "question": "Define Wayback Machine.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wayback Machine",
+    "obj": "digital archive of the World Wide Web",
+    "expected_tokens": [
+      "Wayback Machine",
+      "digital",
+      "archive"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0384",
+    "question": "What is White Sands Missile Range?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "White Sands Missile Range",
+    "obj": "United States Army military testing area",
+    "expected_tokens": [
+      "White Sands Missile Range",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0385",
+    "question": "Define White Sands Missile Range.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "White Sands Missile Range",
+    "obj": "United States Army military testing area",
+    "expected_tokens": [
+      "White Sands Missile Range",
+      "United",
+      "States"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0386",
+    "question": "What is Wojciech Zaremba?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wojciech Zaremba",
+    "obj": "Polish computer scientist",
+    "expected_tokens": [
+      "Wojciech Zaremba",
+      "Polish",
+      "computer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0387",
+    "question": "Define Wojciech Zaremba.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Wojciech Zaremba",
+    "obj": "Polish computer scientist",
+    "expected_tokens": [
+      "Wojciech Zaremba",
+      "Polish",
+      "computer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0388",
+    "question": "What is World Bank Group?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Bank Group",
+    "obj": "family of five international organizations",
+    "expected_tokens": [
+      "World Bank Group",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0389",
+    "question": "Define World Bank Group.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Bank Group",
+    "obj": "family of five international organizations",
+    "expected_tokens": [
+      "World Bank Group",
+      "family",
+      "of"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0390",
+    "question": "What is World Economic Forum?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Economic Forum",
+    "obj": "international advocacy non-governmental organization",
+    "expected_tokens": [
+      "World Economic Forum",
+      "international",
+      "advocacy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0391",
+    "question": "Define World Economic Forum.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Economic Forum",
+    "obj": "international advocacy non-governmental organization",
+    "expected_tokens": [
+      "World Economic Forum",
+      "international",
+      "advocacy"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0392",
+    "question": "What is World government?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World government",
+    "obj": "theoretical single political authority",
+    "expected_tokens": [
+      "World government",
+      "theoretical",
+      "single"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0393",
+    "question": "Define World government.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World government",
+    "obj": "theoretical single political authority",
+    "expected_tokens": [
+      "World government",
+      "theoretical",
+      "single"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0394",
+    "question": "What is World Governments Summit?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Governments Summit",
+    "obj": "annual event since 2013",
+    "expected_tokens": [
+      "World Governments Summit",
+      "annual",
+      "event"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0395",
+    "question": "Define World Governments Summit.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Governments Summit",
+    "obj": "annual event since 2013",
+    "expected_tokens": [
+      "World Governments Summit",
+      "annual",
+      "event"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0396",
+    "question": "What is World Rally Championship?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Rally Championship",
+    "obj": "international rallying series",
+    "expected_tokens": [
+      "World Rally Championship",
+      "international",
+      "rallying"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0397",
+    "question": "Define World Rally Championship.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Rally Championship",
+    "obj": "international rallying series",
+    "expected_tokens": [
+      "World Rally Championship",
+      "international",
+      "rallying"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0398",
+    "question": "What is World Values Survey?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Values Survey",
+    "obj": "global research project",
+    "expected_tokens": [
+      "World Values Survey",
+      "global",
+      "research"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0399",
+    "question": "Define World Values Survey.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "World Values Survey",
+    "obj": "global research project",
+    "expected_tokens": [
+      "World Values Survey",
+      "global",
+      "research"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0400",
+    "question": "What is York City Football Club?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "York City Football Club",
+    "obj": "professional association football club",
+    "expected_tokens": [
+      "York City Football Club",
+      "professional",
+      "association"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0401",
+    "question": "Define York City Football Club.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "York City Football Club",
+    "obj": "professional association football club",
+    "expected_tokens": [
+      "York City Football Club",
+      "professional",
+      "association"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0402",
+    "question": "What is Yuri Alekseyevich Gagarin?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Yuri Alekseyevich Gagarin",
+    "obj": "Soviet pilot",
+    "expected_tokens": [
+      "Yuri Alekseyevich Gagarin",
+      "Soviet",
+      "pilot"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0403",
+    "question": "Define Yuri Alekseyevich Gagarin.",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Yuri Alekseyevich Gagarin",
+    "obj": "Soviet pilot",
+    "expected_tokens": [
+      "Yuri Alekseyevich Gagarin",
+      "Soviet",
+      "pilot"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0404",
+    "question": "Who founded Bigelow Aerospace?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bigelow Aerospace",
+    "obj": "Robert Bigelow",
+    "expected_tokens": [
+      "Bigelow Aerospace",
+      "Robert Bigelow"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0405",
+    "question": "Who was Bigelow Aerospace founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bigelow Aerospace",
+    "obj": "Robert Bigelow",
+    "expected_tokens": [
+      "Bigelow Aerospace",
+      "Robert Bigelow"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0406",
+    "question": "Who founded Bloomberg News?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bloomberg News",
+    "obj": "Michael Bloomberg",
+    "expected_tokens": [
+      "Bloomberg News",
+      "Michael Bloomberg"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0407",
+    "question": "Who was Bloomberg News founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bloomberg News",
+    "obj": "Michael Bloomberg",
+    "expected_tokens": [
+      "Bloomberg News",
+      "Michael Bloomberg"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0408",
+    "question": "Who founded Bombay Stock Exchange?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bombay Stock Exchange",
+    "obj": "Premchand Roychand",
+    "expected_tokens": [
+      "Bombay Stock Exchange",
+      "Premchand Roychand"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0409",
+    "question": "Who was Bombay Stock Exchange founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Bombay Stock Exchange",
+    "obj": "Premchand Roychand",
+    "expected_tokens": [
+      "Bombay Stock Exchange",
+      "Premchand Roychand"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0410",
+    "question": "What does Chrysler develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Chrysler",
+    "obj": "S-IB stage",
+    "expected_tokens": [
+      "Chrysler",
+      "S-IB stage"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0411",
+    "question": "What is developed by Chrysler?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Chrysler",
+    "obj": "S-IB stage",
+    "expected_tokens": [
+      "Chrysler",
+      "S-IB stage"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0412",
+    "question": "Who owns Compaq?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Compaq",
+    "obj": "Hewlett-Packard",
+    "expected_tokens": [
+      "Compaq",
+      "Hewlett-Packard"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0413",
+    "question": "Who is Compaq owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Compaq",
+    "obj": "Hewlett-Packard",
+    "expected_tokens": [
+      "Compaq",
+      "Hewlett-Packard"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0414",
+    "question": "What company owns Compaq?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Compaq",
+    "obj": "Hewlett-Packard",
+    "expected_tokens": [
+      "Compaq",
+      "Hewlett-Packard"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0415",
+    "question": "What does Douglas Aircraft Company develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Douglas Aircraft Company",
+    "obj": "S-IVB",
+    "expected_tokens": [
+      "Douglas Aircraft Company",
+      "S-IVB"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0416",
+    "question": "What is developed by Douglas Aircraft Company?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Douglas Aircraft Company",
+    "obj": "S-IVB",
+    "expected_tokens": [
+      "Douglas Aircraft Company",
+      "S-IVB"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0417",
+    "question": "What is Exos Aerospace Systems & Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exos Aerospace Systems & Technologies",
+    "obj": "Aerospace manufacturer",
+    "expected_tokens": [
+      "Exos Aerospace Systems & Technologies",
+      "Aerospace manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0418",
+    "question": "What kind of thing is Exos Aerospace Systems & Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Exos Aerospace Systems & Technologies",
+    "obj": "Aerospace manufacturer",
+    "expected_tokens": [
+      "Exos Aerospace Systems & Technologies",
+      "Aerospace manufacturer"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0419",
+    "question": "Who founded Intel?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Gordon Moore",
+    "expected_tokens": [
+      "Intel",
+      "Gordon Moore"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0420",
+    "question": "Who was Intel founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Gordon Moore",
+    "expected_tokens": [
+      "Intel",
+      "Gordon Moore"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0421",
+    "question": "Who founded Intel?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Robert Noyce",
+    "expected_tokens": [
+      "Intel",
+      "Robert Noyce"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0422",
+    "question": "Who was Intel founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Robert Noyce",
+    "expected_tokens": [
+      "Intel",
+      "Robert Noyce"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0423",
+    "question": "What does International Energy Agency publish?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "publishes",
+    "subject": "International Energy Agency",
+    "obj": "annual World Energy Outlook",
+    "expected_tokens": [
+      "International Energy Agency",
+      "annual World Energy Outlook"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0424",
+    "question": "What report does International Energy Agency publish?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "publishes",
+    "subject": "International Energy Agency",
+    "obj": "annual World Energy Outlook",
+    "expected_tokens": [
+      "International Energy Agency",
+      "annual World Energy Outlook"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0425",
+    "question": "Which report does International Energy Agency publish?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "publishes",
+    "subject": "International Energy Agency",
+    "obj": "annual World Energy Outlook",
+    "expected_tokens": [
+      "International Energy Agency",
+      "annual World Energy Outlook"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0426",
+    "question": "What does Jean Fayeton develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Jean Fayeton",
+    "obj": "Malabry campus",
+    "expected_tokens": [
+      "Jean Fayeton",
+      "Malabry campus"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0427",
+    "question": "What is developed by Jean Fayeton?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Jean Fayeton",
+    "obj": "Malabry campus",
+    "expected_tokens": [
+      "Jean Fayeton",
+      "Malabry campus"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0428",
+    "question": "What did Jeff Bezos found?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded",
+    "subject": "Jeff Bezos",
+    "obj": "Amazon",
+    "expected_tokens": [
+      "Jeff Bezos",
+      "Amazon"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0429",
+    "question": "Who founded Amazon?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded",
+    "subject": "Jeff Bezos",
+    "obj": "Amazon",
+    "expected_tokens": [
+      "Jeff Bezos",
+      "Amazon"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0430",
+    "question": "Who owns Loopt?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Loopt",
+    "obj": "Green Dot Corporation",
+    "expected_tokens": [
+      "Loopt",
+      "Green Dot Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0431",
+    "question": "Who is Loopt owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Loopt",
+    "obj": "Green Dot Corporation",
+    "expected_tokens": [
+      "Loopt",
+      "Green Dot Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0432",
+    "question": "What company owns Loopt?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Loopt",
+    "obj": "Green Dot Corporation",
+    "expected_tokens": [
+      "Loopt",
+      "Green Dot Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0433",
+    "question": "What does Michael Liebreich develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Michael Liebreich",
+    "obj": "New Energy Finance",
+    "expected_tokens": [
+      "Michael Liebreich",
+      "New Energy Finance"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0434",
+    "question": "What is developed by Michael Liebreich?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Michael Liebreich",
+    "obj": "New Energy Finance",
+    "expected_tokens": [
+      "Michael Liebreich",
+      "New Energy Finance"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0435",
+    "question": "What does Michoud Assembly Facility develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Michoud Assembly Facility",
+    "obj": "S-IB stage",
+    "expected_tokens": [
+      "Michoud Assembly Facility",
+      "S-IB stage"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0436",
+    "question": "What is developed by Michoud Assembly Facility?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Michoud Assembly Facility",
+    "obj": "S-IB stage",
+    "expected_tokens": [
+      "Michoud Assembly Facility",
+      "S-IB stage"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0437",
+    "question": "Who founded National Indemnity?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "National Indemnity",
+    "obj": "Jack Dabney Ringwalt",
+    "expected_tokens": [
+      "National Indemnity",
+      "Jack Dabney Ringwalt"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0438",
+    "question": "Who was National Indemnity founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "National Indemnity",
+    "obj": "Jack Dabney Ringwalt",
+    "expected_tokens": [
+      "National Indemnity",
+      "Jack Dabney Ringwalt"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0439",
+    "question": "What does Northrop Grumman develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "F/A-18 Super Hornet",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "F/A-18 Super Hornet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0440",
+    "question": "What is developed by Northrop Grumman?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "F/A-18 Super Hornet",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "F/A-18 Super Hornet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0441",
+    "question": "What does Northrop Grumman develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "Grumman E-2 Hawkeye airborne early warning",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "Grumman E-2 Hawkeye airborne early warning"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0442",
+    "question": "What is developed by Northrop Grumman?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "Grumman E-2 Hawkeye airborne early warning",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "Grumman E-2 Hawkeye airborne early warning"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0443",
+    "question": "What does Northrop Grumman develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "MQ-4C Triton unmanned aerial vehicle",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "MQ-4C Triton unmanned aerial vehicle"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0444",
+    "question": "What is developed by Northrop Grumman?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "MQ-4C Triton unmanned aerial vehicle",
+    "expected_tokens": [
+      "Northrop Grumman",
+      "MQ-4C Triton unmanned aerial vehicle"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0445",
+    "question": "Who owns NYSE?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "NYSE",
+    "obj": "Intercontinental Exchange",
+    "expected_tokens": [
+      "NYSE",
+      "Intercontinental Exchange"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0446",
+    "question": "Who is NYSE owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "NYSE",
+    "obj": "Intercontinental Exchange",
+    "expected_tokens": [
+      "NYSE",
+      "Intercontinental Exchange"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0447",
+    "question": "What company owns NYSE?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "NYSE",
+    "obj": "Intercontinental Exchange",
+    "expected_tokens": [
+      "NYSE",
+      "Intercontinental Exchange"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0448",
+    "question": "Who owns Reuters?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Reuters",
+    "obj": "Canadian Thomson Corporation",
+    "expected_tokens": [
+      "Reuters",
+      "Canadian Thomson Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0449",
+    "question": "Who is Reuters owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Reuters",
+    "obj": "Canadian Thomson Corporation",
+    "expected_tokens": [
+      "Reuters",
+      "Canadian Thomson Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0450",
+    "question": "What company owns Reuters?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Reuters",
+    "obj": "Canadian Thomson Corporation",
+    "expected_tokens": [
+      "Reuters",
+      "Canadian Thomson Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0451",
+    "question": "Who founded Rocket Science Games?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Rocket Science Games",
+    "obj": "Steve Blank",
+    "expected_tokens": [
+      "Rocket Science Games",
+      "Steve Blank"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0452",
+    "question": "Who was Rocket Science Games founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Rocket Science Games",
+    "obj": "Steve Blank",
+    "expected_tokens": [
+      "Rocket Science Games",
+      "Steve Blank"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0453",
+    "question": "Who founded Royal Exchange?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Sir Richard Clough",
+    "expected_tokens": [
+      "Royal Exchange",
+      "Sir Richard Clough"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0454",
+    "question": "Who was Royal Exchange founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Sir Richard Clough",
+    "expected_tokens": [
+      "Royal Exchange",
+      "Sir Richard Clough"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0455",
+    "question": "Who founded Royal Exchange?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Thomas Gresham",
+    "expected_tokens": [
+      "Royal Exchange",
+      "Thomas Gresham"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0456",
+    "question": "Who was Royal Exchange founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Thomas Gresham",
+    "expected_tokens": [
+      "Royal Exchange",
+      "Thomas Gresham"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0457",
+    "question": "Who founded Saudi Arabia?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Saudi Arabia",
+    "obj": "King Abdulaziz",
+    "expected_tokens": [
+      "Saudi Arabia",
+      "King Abdulaziz"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0458",
+    "question": "Who was Saudi Arabia founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "Saudi Arabia",
+    "obj": "King Abdulaziz",
+    "expected_tokens": [
+      "Saudi Arabia",
+      "King Abdulaziz"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0459",
+    "question": "Who owns Sleepycat Software?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "February",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "February"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0460",
+    "question": "Who is Sleepycat Software owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "February",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "February"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0461",
+    "question": "What company owns Sleepycat Software?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "February",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "February"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0462",
+    "question": "Who owns Sleepycat Software?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "Oracle Corporation",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "Oracle Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0463",
+    "question": "Who is Sleepycat Software owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "Oracle Corporation",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "Oracle Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0464",
+    "question": "What company owns Sleepycat Software?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "Oracle Corporation",
+    "expected_tokens": [
+      "Sleepycat Software",
+      "Oracle Corporation"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0465",
+    "question": "Who owns SolarCity?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "SolarCity",
+    "obj": "Tesla",
+    "expected_tokens": [
+      "SolarCity",
+      "Tesla"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0466",
+    "question": "Who is SolarCity owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "SolarCity",
+    "obj": "Tesla",
+    "expected_tokens": [
+      "SolarCity",
+      "Tesla"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0467",
+    "question": "What company owns SolarCity?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "SolarCity",
+    "obj": "Tesla",
+    "expected_tokens": [
+      "SolarCity",
+      "Tesla"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0468",
+    "question": "What does SpaceX develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "SpaceX",
+    "obj": "Falcon 9",
+    "expected_tokens": [
+      "SpaceX",
+      "Falcon 9"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0469",
+    "question": "What is developed by SpaceX?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "SpaceX",
+    "obj": "Falcon 9",
+    "expected_tokens": [
+      "SpaceX",
+      "Falcon 9"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0470",
+    "question": "What is Starlink?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Starlink",
+    "obj": "Satellite internet",
+    "expected_tokens": [
+      "Starlink",
+      "Satellite internet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0471",
+    "question": "What kind of thing is Starlink?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "is_a",
+    "subject": "Starlink",
+    "obj": "Satellite internet",
+    "expected_tokens": [
+      "Starlink",
+      "Satellite internet"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0472",
+    "question": "Who owns Starlink?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Starlink",
+    "obj": "SpaceX",
+    "expected_tokens": [
+      "Starlink",
+      "SpaceX"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0473",
+    "question": "Who is Starlink owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Starlink",
+    "obj": "SpaceX",
+    "expected_tokens": [
+      "Starlink",
+      "SpaceX"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0474",
+    "question": "What company owns Starlink?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Starlink",
+    "obj": "SpaceX",
+    "expected_tokens": [
+      "Starlink",
+      "SpaceX"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0475",
+    "question": "Who owns Telecom Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Telecom Technologies",
+    "obj": "Sonus Networks",
+    "expected_tokens": [
+      "Telecom Technologies",
+      "Sonus Networks"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0476",
+    "question": "Who is Telecom Technologies owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Telecom Technologies",
+    "obj": "Sonus Networks",
+    "expected_tokens": [
+      "Telecom Technologies",
+      "Sonus Networks"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0477",
+    "question": "What company owns Telecom Technologies?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Telecom Technologies",
+    "obj": "Sonus Networks",
+    "expected_tokens": [
+      "Telecom Technologies",
+      "Sonus Networks"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0478",
+    "question": "What does TRIC develop?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "TRIC",
+    "obj": "USA Parkway",
+    "expected_tokens": [
+      "TRIC",
+      "USA Parkway"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0479",
+    "question": "What is developed by TRIC?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "develops",
+    "subject": "TRIC",
+    "obj": "USA Parkway",
+    "expected_tokens": [
+      "TRIC",
+      "USA Parkway"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0480",
+    "question": "Who owns Union-Castle Line?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Union-Castle Line",
+    "obj": "RMSP",
+    "expected_tokens": [
+      "Union-Castle Line",
+      "RMSP"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0481",
+    "question": "Who is Union-Castle Line owned by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Union-Castle Line",
+    "obj": "RMSP",
+    "expected_tokens": [
+      "Union-Castle Line",
+      "RMSP"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0482",
+    "question": "What company owns Union-Castle Line?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "owned_by",
+    "subject": "Union-Castle Line",
+    "obj": "RMSP",
+    "expected_tokens": [
+      "Union-Castle Line",
+      "RMSP"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0483",
+    "question": "Who founded WEF?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "WEF",
+    "obj": "Klaus Schwab",
+    "expected_tokens": [
+      "WEF",
+      "Klaus Schwab"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0484",
+    "question": "Who was WEF founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "WEF",
+    "obj": "Klaus Schwab",
+    "expected_tokens": [
+      "WEF",
+      "Klaus Schwab"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0485",
+    "question": "Who founded XM?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Gary Parsons",
+    "expected_tokens": [
+      "XM",
+      "Gary Parsons"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0486",
+    "question": "Who was XM founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Gary Parsons",
+    "expected_tokens": [
+      "XM",
+      "Gary Parsons"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0487",
+    "question": "Who founded XM?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Lon Levin",
+    "expected_tokens": [
+      "XM",
+      "Lon Levin"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "pos-0488",
+    "question": "Who was XM founded by?",
+    "category": "positive",
+    "expected_decision": "answer",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Lon Levin",
+    "expected_tokens": [
+      "XM",
+      "Lon Levin"
+    ],
+    "notes": ""
+  },
+  {
+    "prompt_id": "adv-0000",
+    "question": "Did Bigelow Aerospace found Robert Bigelow?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Bigelow Aerospace",
+    "obj": "Robert Bigelow",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0001",
+    "question": "Did Bloomberg News found Michael Bloomberg?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Bloomberg News",
+    "obj": "Michael Bloomberg",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0002",
+    "question": "Did Bombay Stock Exchange found Premchand Roychand?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Bombay Stock Exchange",
+    "obj": "Premchand Roychand",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0003",
+    "question": "Did S-IB stage develop Chrysler?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Chrysler",
+    "obj": "S-IB stage",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0004",
+    "question": "Does Compaq own Hewlett-Packard?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Compaq",
+    "obj": "Hewlett-Packard",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0005",
+    "question": "Did S-IVB develop Douglas Aircraft Company?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Douglas Aircraft Company",
+    "obj": "S-IVB",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0006",
+    "question": "Did Intel found Gordon Moore?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Gordon Moore",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0007",
+    "question": "Did Intel found Robert Noyce?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Intel",
+    "obj": "Robert Noyce",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0008",
+    "question": "Does annual World Energy Outlook publish International Energy Agency?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "publishes",
+    "subject": "International Energy Agency",
+    "obj": "annual World Energy Outlook",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0009",
+    "question": "Did Malabry campus develop Jean Fayeton?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Jean Fayeton",
+    "obj": "Malabry campus",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0010",
+    "question": "Did Amazon found Jeff Bezos?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded",
+    "subject": "Jeff Bezos",
+    "obj": "Amazon",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0011",
+    "question": "Does Loopt own Green Dot Corporation?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Loopt",
+    "obj": "Green Dot Corporation",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0012",
+    "question": "Did New Energy Finance develop Michael Liebreich?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Michael Liebreich",
+    "obj": "New Energy Finance",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0013",
+    "question": "Did S-IB stage develop Michoud Assembly Facility?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Michoud Assembly Facility",
+    "obj": "S-IB stage",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0014",
+    "question": "Did National Indemnity found Jack Dabney Ringwalt?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "National Indemnity",
+    "obj": "Jack Dabney Ringwalt",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0015",
+    "question": "Did F/A-18 Super Hornet develop Northrop Grumman?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "F/A-18 Super Hornet",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0016",
+    "question": "Did Grumman E-2 Hawkeye airborne early warning develop Northrop Grumman?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "Grumman E-2 Hawkeye airborne early warning",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0017",
+    "question": "Did MQ-4C Triton unmanned aerial vehicle develop Northrop Grumman?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "Northrop Grumman",
+    "obj": "MQ-4C Triton unmanned aerial vehicle",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0018",
+    "question": "Does NYSE own Intercontinental Exchange?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "NYSE",
+    "obj": "Intercontinental Exchange",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0019",
+    "question": "Does Reuters own Canadian Thomson Corporation?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Reuters",
+    "obj": "Canadian Thomson Corporation",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0020",
+    "question": "Did Rocket Science Games found Steve Blank?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Rocket Science Games",
+    "obj": "Steve Blank",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0021",
+    "question": "Did Royal Exchange found Sir Richard Clough?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Sir Richard Clough",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0022",
+    "question": "Did Royal Exchange found Thomas Gresham?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Royal Exchange",
+    "obj": "Thomas Gresham",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0023",
+    "question": "Did Saudi Arabia found King Abdulaziz?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "Saudi Arabia",
+    "obj": "King Abdulaziz",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0024",
+    "question": "Does Sleepycat Software own February?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "February",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0025",
+    "question": "Does Sleepycat Software own Oracle Corporation?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Sleepycat Software",
+    "obj": "Oracle Corporation",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0026",
+    "question": "Does SolarCity own Tesla?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "SolarCity",
+    "obj": "Tesla",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0027",
+    "question": "Did Falcon 9 develop SpaceX?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "SpaceX",
+    "obj": "Falcon 9",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0028",
+    "question": "Does Starlink own SpaceX?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Starlink",
+    "obj": "SpaceX",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0029",
+    "question": "Does Telecom Technologies own Sonus Networks?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Telecom Technologies",
+    "obj": "Sonus Networks",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0030",
+    "question": "Did USA Parkway develop TRIC?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "develops",
+    "subject": "TRIC",
+    "obj": "USA Parkway",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0031",
+    "question": "Does Union-Castle Line own RMSP?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "owned_by",
+    "subject": "Union-Castle Line",
+    "obj": "RMSP",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0032",
+    "question": "Did WEF found Klaus Schwab?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "WEF",
+    "obj": "Klaus Schwab",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0033",
+    "question": "Did XM found Gary Parsons?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Gary Parsons",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "adv-0034",
+    "question": "Did XM found Lon Levin?",
+    "category": "adversarial",
+    "expected_decision": "audit",
+    "predicate": "founded_by",
+    "subject": "XM",
+    "obj": "Lon Levin",
+    "expected_tokens": [],
+    "notes": "reversed_relation"
+  },
+  {
+    "prompt_id": "cur-0000",
+    "question": "What is Tesla's current stock price?",
+    "category": "current",
+    "expected_decision": "audit",
+    "predicate": "",
+    "subject": "",
+    "obj": "",
+    "expected_tokens": [],
+    "notes": "current_live_safety"
+  },
+  {
+    "prompt_id": "cur-0001",
+    "question": "What is SpaceX's current valuation?",
+    "category": "current",
+    "expected_decision": "audit",
+    "predicate": "",
+    "subject": "",
+    "obj": "",
+    "expected_tokens": [],
+    "notes": "current_live_safety"
+  },
+  {
+    "prompt_id": "cur-0002",
+    "question": "What is Jeff Bezos's current net worth?",
+    "category": "current",
+    "expected_decision": "audit",
+    "predicate": "",
+    "subject": "",
+    "obj": "",
+    "expected_tokens": [],
+    "notes": "current_live_safety"
+  },
+  {
+    "prompt_id": "cur-0003",
+    "question": "Is Mark Carney currently the leader of the Liberal Party?",
+    "category": "current",
+    "expected_decision": "audit",
+    "predicate": "",
+    "subject": "",
+    "obj": "",
+    "expected_tokens": [],
+    "notes": "current_live_safety"
+  },
+  {
+    "prompt_id": "cur-0004",
+    "question": "Is Starlink currently the largest satellite network?",
+    "category": "current",
+    "expected_decision": "audit",
+    "predicate": "",
+    "subject": "",
+    "obj": "",
+    "expected_tokens": [],
+    "notes": "current_live_safety"
+  }
+]

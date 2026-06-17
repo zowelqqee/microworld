@@ -1,0 +1,765 @@
+source_page,answerable_facts,ingestion_candidates,is_high_yield,is_low_yield
+saturn ib,4,8,True,False
+northrop grumman,3,20,True,False
+london stock exchange,3,5,True,False
+intel corporation,3,0,True,False
+boeing x-37,2,16,True,False
+bloomberg radio,2,15,True,False
+satellite radio,2,14,True,True
+exos aerospace,2,12,True,False
+international energy agency,2,10,True,False
+berkeley db,2,9,True,False
+rocket science games,2,9,True,False
+école centrale paris,2,9,True,False
+bloomberg government,2,7,True,False
+world economic forum,2,6,True,False
+bloomberg l.p,2,0,True,False
+compaq computer,2,0,True,False
+giga nevada,2,0,True,False
+dragon spacecraft qualification unit,1,21,False,False
+spacex,1,21,False,False
+artemis accords,1,18,False,False
+delta iv,1,18,False,False
+project gemini,1,18,False,False
+jeff bezos,1,17,False,False
+project mercury,1,17,False,False
+space age,1,17,False,False
+spacex crew-2,1,17,False,False
+stennis space center,1,17,False,False
+strategic air command,1,17,False,False
+tesla powerpack,1,17,False,False
+ual corporation,1,17,False,False
+vulcan centaur,1,17,False,False
+royal mail steam packet company,1,16,False,False
+stoke space,1,16,False,False
+white sands missile range,1,16,False,False
+atlas ii,1,14,False,False
+john micklethwait,1,14,False,False
+lyndon rive,1,14,False,False
+new horizons,1,14,False,False
+reaction engines,1,14,False,False
+arianespace,1,13,False,False
+bangladesh satellite-1,1,13,False,False
+bombay stock exchange,1,13,False,False
+goddard space flight center,1,13,False,False
+jack dorsey,1,13,False,False
+mcdonnell douglas,1,13,False,False
+sperry corporation,1,13,False,False
+tesla robotaxi,1,13,False,False
+tom mueller,1,13,False,False
+artemis iii,1,12,False,False
+bigelow aerospace,1,12,False,False
+gigafactory mexico,1,12,False,False
+june,1,12,False,False
+new glenn,1,12,False,False
+redwood shores,1,12,False,False
+robert zubrin,1,12,False,False
+spacex crew-3,1,12,False,False
+affordable connectivity program,1,11,False,False
+amazon delta,1,11,False,False
+b. c. forbes,1,11,False,False
+financial industry regulatory authority,1,11,False,False
+spaceshiptwo,1,11,False,False
+tesla semi,1,11,False,False
+titan iv,1,11,False,False
+wayback machine,1,11,False,False
+anousheh ansari,1,10,False,False
+bloomberg law,1,10,False,False
+blue origin ns-17,1,10,False,False
+blue origin ns-23,1,10,False,False
+chevrolet volt,1,10,False,False
+dawn aerospace,1,10,False,False
+errol musk,1,10,False,False
+integrate-transfer-launch complex,1,10,False,False
+jaguar land rover,1,10,False,False
+richard sylla,1,10,False,False
+south sea company,1,10,False,False
+volvo amazon,1,10,False,False
+alpha magnetic spectrometer,1,9,False,False
+bloomberg news,1,9,False,False
+blue origin ns-18,1,9,False,False
+blue origin ns-21,1,9,False,False
+communications satellite,1,9,False,True
+companies act,1,9,False,False
+general motors,1,9,False,False
+gigafactory new york,1,9,False,False
+land rover,1,9,False,False
+project juno,1,9,False,False
+sam altman,1,9,False,False
+thomas pink,1,9,False,False
+amalgam comics,1,8,False,False
+audi q8,1,8,False,False
+august,1,8,False,False
+axiom station,1,8,False,False
+march,1,8,False,False
+michael liebreich,1,8,False,False
+pecora commission,1,8,False,False
+smith electric vehicles,1,8,False,False
+spaceflight,1,8,False,False
+bloomberg markets,1,7,False,False
+blue origin ns-19,1,7,False,False
+great depression,1,7,False,False
+henrik fisker,1,7,False,False
+internet,1,7,False,False
+january,1,7,False,False
+lotus esprit,1,7,False,False
+nasdaq composite,1,7,False,False
+peter thiel,1,7,False,False
+princeton university,1,7,False,False
+roots blower company,1,7,False,False
+wojciech zaremba,1,7,False,False
+abe fortas,1,6,False,False
+amazon basin,1,6,False,True
+amdahl corporation,1,6,False,False
+arthur ransome,1,6,False,False
+aston martin,1,6,False,False
+bankers trust,1,6,False,False
+buttonwood agreement,1,6,False,False
+canada,1,6,False,False
+cbs news,1,6,False,False
+commercial orbital transportation services,1,6,False,False
+dow jones,1,6,False,False
+february,1,6,False,False
+harvard university,1,6,False,False
+hms amazon,1,6,False,False
+millennium falcon,1,6,False,False
+municipal securities rulemaking board,1,6,False,False
+september,1,6,False,False
+soyuz ms-17,1,6,False,False
+uss amazon,1,6,False,False
+yuri gagarin,1,6,False,False
+air command,1,5,False,True
+aliko dangote,1,5,False,False
+amazon bookstore cooperative,1,5,False,False
+amazonian guard,1,5,False,False
+armadillo aerospace,1,5,False,False
+federal communications commission,1,5,False,False
+flight test,1,5,False,True
+greenhouse gas,1,5,False,False
+hubble space telescope,1,5,False,False
+ibm system,1,5,False,False
+major general,1,5,False,True
+middle east,1,5,False,False
+nikola tesla,1,5,False,False
+richard branson,1,5,False,False
+san francisco bay area,1,5,False,False
+software development,1,5,False,True
+south america,1,5,False,False
+south carolina,1,5,False,False
+sustainable development,1,5,False,True
+wall street,1,5,False,False
+april,1,4,False,False
+berkshire hathaway,1,4,False,False
+exchange alley,1,4,False,False
+flight,1,4,False,False
+foothill transit,1,4,False,False
+harvard business school,1,4,False,False
+hong kong,1,4,False,False
+moon,1,4,False,False
+musk,1,4,False,False
+national affairs,1,4,False,False
+reuters,1,4,False,False
+royal navy,1,4,False,False
+arthur wing pinero,1,3,False,False
+blue origin ns-16,1,3,False,False
+duke university,1,3,False,False
+engineering,1,3,False,False
+japan,1,3,False,False
+new mexico,1,3,False,False
+noah glass,1,3,False,False
+olympus mons,1,3,False,False
+oxford english dictionary,1,3,False,False
+saudi arabia,1,3,False,False
+sms amazone,1,3,False,False
+space,1,3,False,False
+world government,1,3,False,True
+analytics,1,2,False,False
+apple ii,1,2,False,False
+earth,1,2,False,False
+texas,1,2,False,False
+blue origin ns-20,1,1,False,False
+cerberus fossae,1,1,False,False
+merlin,1,1,False,False
+world values survey,1,1,False,False
+advanced vehicle systems,1,0,False,False
+alain chevalier,1,0,False,False
+amazons company,1,0,False,False
+ampex corporation,1,0,False,False
+amsterdam stock exchange,1,0,False,False
+andersen consulting,1,0,False,False
+b-50 superfortress,1,0,False,False
+bloomberg professional services,1,0,False,False
+blue ring pathfinder,1,0,False,False
+cape kennedy,1,0,False,False
+carson city,1,0,False,False
+centrale paris,1,0,False,False
+corporations act,1,0,False,False
+deep space network,1,0,False,False
+falcon 9,1,0,False,False
+fort lauderdale,1,0,False,False
+foundation series,1,0,False,False
+fremont factory,1,0,False,False
+google cloud,1,0,False,False
+government accountability office,1,0,False,False
+horniman circle,1,0,False,False
+hughes aircraft,1,0,False,False
+joint long range proving ground,1,0,False,False
+kistler aerospace,1,0,False,False
+lars moravy,1,0,False,False
+media matters,1,0,False,False
+merritt island,1,0,False,False
+michael arougheti,1,0,False,False
+microsoft corporation,1,0,False,False
+north american,1,0,False,False
+nyse,1,0,False,False
+oracle cloud infrastructure,1,0,False,False
+solarcity corporation,1,0,False,False
+spacex starlink,1,0,False,False
+uc davis,1,0,False,False
+us air,1,0,False,False
+us air force,1,0,False,False
+us army,1,0,False,False
+us deorbit vehicle,1,0,False,False
+us navy,1,0,False,False
+webb space telescope,1,0,False,False
+world bank,1,0,False,False
+world government summit,1,0,False,False
+world rally,1,0,False,False
+york city,1,0,False,False
+aerospace,0,22,False,True
+army ballistic missile agency,0,21,False,True
+bloomberg billionaires index,0,21,False,True
+byron k. lichtenberg,0,21,False,True
+commercial resupply services,0,21,False,True
+development of the commercial crew program,0,21,False,True
+kimbal musk,0,21,False,True
+mission control center,0,21,False,True
+nasa launch services program,0,21,False,True
+satellite internet access,0,21,False,True
+sea launch,0,21,False,True
+space.com,0,21,False,True
+spacex crew-1,0,21,False,True
+commercial spaceflight federation,0,20,False,True
+ellison,0,20,False,True
+greg brockman,0,20,False,True
+reusable launch vehicle,0,20,False,True
+tesla energy,0,20,False,True
+tesla powerwall,0,20,False,True
+"tesla, inc.",0,20,False,True
+aerospace manufacturer,0,19,False,True
+brian binnie,0,19,False,True
+cape canaveral space force station,0,19,False,True
+rocketplane kistler,0,19,False,True
+spacex starship design history,0,19,False,True
+vector launch,0,19,False,True
+axiom space,0,18,False,True
+boeing starliner,0,18,False,True
+collins aerospace,0,18,False,True
+crew dragon demo-1,0,18,False,True
+gwynne shotwell,0,18,False,True
+joseph schumpeter,0,18,False,True
+oracle database,0,18,False,True
+safra catz,0,18,False,True
+sierra nevada corporation,0,18,False,True
+spacex launch vehicles,0,18,False,True
+tesla autopilot,0,18,False,True
+xoom (money transfer service),0,18,False,True
+asahi kasei,0,17,False,True
+microsoft,0,17,False,True
+mike melvill,0,17,False,True
+rockwell collins,0,17,False,True
+tesla cybertruck,0,17,False,True
+x corp.,0,17,False,True
+automated transfer vehicle,0,16,False,True
+ballistic missile,0,16,False,True
+bob miner,0,16,False,True
+boing boing,0,16,False,True
+business journalism,0,16,False,True
+commercial crew program,0,16,False,True
+crew exploration vehicle,0,16,False,True
+gigafactory nevada,0,16,False,True
+marshall space flight center,0,16,False,True
+phibro,0,16,False,True
+spacex cots demo flight 2,0,16,False,True
+stoke space nova,0,16,False,True
+ampex,0,15,False,True
+artemis ii,0,15,False,True
+barbara morgan,0,15,False,True
+crew dragon demo-2,0,15,False,True
+disaster monitoring constellation,0,15,False,True
+falcon heavy,0,15,False,True
+hyperloop one,0,15,False,True
+john glenn,0,15,False,True
+johnson space center,0,15,False,True
+lawrence sperry,0,15,False,True
+national security space launch,0,15,False,True
+new shepard,0,15,False,True
+nyse euronext,0,15,False,True
+paypal,0,15,False,True
+ronald reagan space and missile test range,0,15,False,True
+solarcity,0,15,False,True
+space shuttle,0,15,False,True
+the boring company,0,15,False,True
+virgin galactic,0,15,False,True
+abbott laboratories,0,14,False,True
+astrium,0,14,False,True
+big tech,0,14,False,True
+dream chaser,0,14,False,True
+fisker karma,0,14,False,True
+hermann oberth,0,14,False,True
+kennedy space center,0,14,False,True
+launch control center,0,14,False,True
+list of launch complexes,0,14,False,True
+marc tarpenning,0,14,False,True
+martin eberhard,0,14,False,True
+michael bloomberg,0,14,False,True
+starlink,0,14,False,True
+united launch alliance,0,14,False,True
+x (social network),0,14,False,True
+xcor aerospace,0,14,False,True
+amazon leo,0,13,False,True
+apollo applications program,0,13,False,True
+ares management,0,13,False,True
+baikonur cosmodrome,0,13,False,True
+boeing,0,13,False,True
+calvin souther fuller,0,13,False,True
+cnbc,0,13,False,True
+deep space climate observatory,0,13,False,True
+electric vehicle,0,13,False,True
+elevation partners,0,13,False,True
+gordon cooper,0,13,False,True
+honeywell aerospace,0,13,False,True
+hyperloop transportation technologies,0,13,False,True
+jim cantrell,0,13,False,True
+lockheed martin,0,13,False,True
+malcolm forbes,0,13,False,True
+mercury control center,0,13,False,True
+neil armstrong,0,13,False,True
+nissan leaf,0,13,False,True
+orbital space plane program,0,13,False,True
+patrick space force base,0,13,False,True
+pgm-17 thor,0,13,False,True
+playstation,0,13,False,True
+sergey brin,0,13,False,True
+spacex crs-33,0,13,False,True
+steve forbes,0,13,False,True
+utc aerospace systems,0,13,False,True
+alan shepard,0,12,False,True
+bae systems,0,12,False,True
+barry goldwater,0,12,False,True
+bloomberg l.p.,0,12,False,True
+bse sensex,0,12,False,True
+charles d. walker,0,12,False,True
+christa mcauliffe,0,12,False,True
+control data corporation,0,12,False,True
+corn ranch,0,12,False,True
+dan schulman,0,12,False,True
+eastern range,0,12,False,True
+fidelity investments,0,12,False,True
+lvmh,0,12,False,True
+mackenzie scott,0,12,False,True
+mark hurd,0,12,False,True
+omelek island,0,12,False,True
+openai,0,12,False,True
+saturn corporation,0,12,False,True
+space policy of the united states,0,12,False,True
+tesla fremont factory,0,12,False,True
+tesla next-generation vehicle platform,0,12,False,True
+"twitter, inc.",0,12,False,True
+vandenberg space force base,0,12,False,True
+vehicle assembly building,0,12,False,True
+world war,0,12,False,True
+zip2,0,12,False,True
+air force,0,11,False,True
+akira yoshino,0,11,False,True
+anderson-prichard oil corporation,0,11,False,True
+apple inc.,0,11,False,True
+automotive industry,0,11,False,True
+bentley,0,11,False,True
+bezos expeditions,0,11,False,True
+bloomberg businessweek,0,11,False,True
+bloomberg television,0,11,False,True
+bloomberg terminal,0,11,False,True
+christy walton,0,11,False,True
+ct corporation,0,11,False,True
+dave limp,0,11,False,True
+ford of britain,0,11,False,True
+ge aerospace,0,11,False,True
+hyperloop pod competition,0,11,False,True
+intercontinental exchange,0,11,False,True
+j. b. straubel,0,11,False,True
+korean war,0,11,False,True
+"nasdaq, inc.",0,11,False,True
+national space biomedical research institute,0,11,False,True
+outer space treaty,0,11,False,True
+peter grauer,0,11,False,True
+scaled composites,0,11,False,True
+sun microsystems,0,11,False,True
+tom wheeler,0,11,False,True
+ulrike malmendier,0,11,False,True
+united states atomic energy commission,0,11,False,True
+vehicle,0,11,False,True
+xm satellite radio,0,11,False,True
+antonio gracias,0,10,False,True
+buzz aldrin,0,10,False,True
+california,0,10,False,True
+charles koch,0,10,False,True
+commercial space launch competitiveness act of 2015,0,10,False,True
+edgar f. codd,0,10,False,True
+gigafactory shanghai,0,10,False,True
+goodrich corporation,0,10,False,True
+intel,0,10,False,True
+investment company act of 1940,0,10,False,True
+john f. kennedy,0,10,False,True
+max levchin,0,10,False,True
+mazda mx-5 (na),0,10,False,True
+nasdaq,0,10,False,True
+ranger program,0,10,False,True
+silicon valley,0,10,False,True
+sirius satellite radio,0,10,False,True
+space station,0,10,False,True
+spaceshipone,0,10,False,True
+spacex dragon,0,10,False,True
+stock market,0,10,False,True
+the wall street journal,0,10,False,True
+united nations,0,10,False,True
+united technologies,0,10,False,True
+us orbital segment,0,10,False,True
+world war ii,0,10,False,True
+aerojet rocketdyne,0,9,False,True
+air base,0,9,False,True
+alphabet inc.,0,9,False,True
+aristotle onassis,0,9,False,True
+barack obama,0,9,False,True
+benjamin franklin,0,9,False,True
+cold war,0,9,False,True
+compaq,0,9,False,True
+donald trump,0,9,False,True
+ed oates,0,9,False,True
+electric car,0,9,False,True
+european space agency,0,9,False,True
+forbes,0,9,False,True
+gigafactory berlin-brandenburg,0,9,False,True
+institute of technology,0,9,False,True
+july,0,9,False,True
+kawasaki aerospace systems company,0,9,False,True
+linda yaccarino,0,9,False,True
+morgan stanley,0,9,False,True
+national space society,0,9,False,True
+privately held company,0,9,False,True
+san francisco bay,0,9,False,True
+skylon (spacecraft),0,9,False,True
+spacex merlin,0,9,False,True
+spacex raptor,0,9,False,True
+surrey satellite technology,0,9,False,True
+the washington post,0,9,False,True
+united aircraft corporation,0,9,False,True
+world bank group,0,9,False,True
+accenture,0,8,False,True
+allison v-1710,0,8,False,True
+amazon eve,0,8,False,True
+apollo lunar module,0,8,False,True
+atomic energy commission,0,8,False,True
+autopilot,0,8,False,True
+bell x-1,0,8,False,True
+blue ring,0,8,False,True
+boeing b-50 superfortress,0,8,False,True
+bubble act,0,8,False,True
+chief technology officer,0,8,False,True
+chrysler,0,8,False,True
+darpa falcon project,0,8,False,True
+december,0,8,False,True
+douglas c-124 globemaster ii,0,8,False,True
+elmer ambrose sperry,0,8,False,True
+embraer e-jet e2 family,0,8,False,True
+founders brewing company,0,8,False,True
+general electric,0,8,False,True
+general electric company,0,8,False,True
+george w. bush,0,8,False,True
+gigafactory texas,0,8,False,True
+hearst communications,0,8,False,True
+hughes aircraft company,0,8,False,True
+international airport,0,8,False,True
+jd edwards,0,8,False,True
+mark carney,0,8,False,True
+max hodak,0,8,False,True
+merrill (company),0,8,False,True
+mitsubishi heavy industries,0,8,False,True
+oracle cloud,0,8,False,True
+"palo alto, california",0,8,False,True
+premchand roychand,0,8,False,True
+psa group,0,8,False,True
+rocket,0,8,False,True
+rocket engine,0,8,False,True
+royal air force,0,8,False,True
+salomon brothers,0,8,False,True
+satellite,0,8,False,True
+securities act of 1933,0,8,False,True
+sha-2,0,8,False,True
+sm-65 atlas,0,8,False,True
+solid rocket booster,0,8,False,True
+solid-propellant rocket,0,8,False,True
+tesla cyberquad,0,8,False,True
+tesla supercharger,0,8,False,True
+tom ognibene,0,8,False,True
+alessandro volta,0,7,False,True
+andreas kaplan,0,7,False,True
+blade runner,0,7,False,True
+bombardier aviation,0,7,False,True
+carl sagan,0,7,False,True
+carlos slim,0,7,False,True
+company,0,7,False,True
+corporation,0,7,False,True
+d. e. shaw & co.,0,7,False,True
+dalal street,0,7,False,True
+dior,0,7,False,True
+dow jones industrial average,0,7,False,True
+early modern period,0,7,False,True
+elon musk,0,7,False,True
+euronext amsterdam,0,7,False,True
+henry racamier,0,7,False,True
+industrial revolution,0,7,False,True
+international space station,0,7,False,True
+john law's company,0,7,False,True
+larry page,0,7,False,True
+list of government space agencies,0,7,False,True
+louis vuitton,0,7,False,True
+mercedes-benz group,0,7,False,True
+national historic landmark,0,7,False,True
+new york city,0,7,False,True
+new york stock exchange building,0,7,False,True
+north america,0,7,False,True
+phiroze jeejeebhoy towers,0,7,False,True
+research institute,0,7,False,True
+software,0,7,False,True
+solar panel,0,7,False,True
+super tuesday,0,7,False,True
+tableau software,0,7,False,True
+titan (rocket family),0,7,False,True
+university,0,7,False,True
+us airways,0,7,False,True
+yellow pages,0,7,False,True
+york city f.c.,0,7,False,True
+amazon kindle,0,6,False,True
+andrew carnegie,0,6,False,True
+baidu tieba,0,6,False,True
+battery energy storage system,0,6,False,True
+bernie ecclestone,0,6,False,True
+businessperson,0,6,False,True
+byd m3,0,6,False,True
+canadian international council,0,6,False,True
+caterham cars,0,6,False,True
+chief justice,0,6,False,True
+christian dior,0,6,False,True
+christian lacroix,0,6,False,True
+daniel l. doctoroff,0,6,False,True
+division (military),0,6,False,True
+financial accounting standards board,0,6,False,True
+ford motor company,0,6,False,True
+gus grissom,0,6,False,True
+horniman circle gardens,0,6,False,True
+jean-baptiste say,0,6,False,True
+"jersey city, new jersey",0,6,False,True
+johns hopkins university,0,6,False,True
+large language model,0,6,False,True
+los angeles,0,6,False,True
+marc jacobs,0,6,False,True
+meta platforms,0,6,False,True
+michael rubens,0,6,False,True
+microsoft azure,0,6,False,True
+"mission district, san francisco",0,6,False,True
+morgan motor company,0,6,False,True
+nasa deep space network,0,6,False,True
+new jersey,0,6,False,True
+nobel prize,0,6,False,True
+november,0,6,False,True
+oracle,0,6,False,True
+outer space,0,6,False,True
+paypal credit,0,6,False,True
+richard cantillon,0,6,False,True
+rtx corporation,0,6,False,True
+securities exchange act of 1934,0,6,False,True
+shadow racing cars,0,6,False,True
+spacex dragon 2,0,6,False,True
+steve jobs,0,6,False,True
+sustainable energy,0,6,False,True
+tunnel,0,6,False,True
+virgin group,0,6,False,True
+wet nellie,0,6,False,True
+amancio ortega,0,5,False,True
+amazon river,0,5,False,True
+amazon web services,0,5,False,True
+baby boom,0,5,False,True
+bill gates,0,5,False,True
+biz stone,0,5,False,True
+cal ripken jr.,0,5,False,True
+cape canaveral,0,5,False,True
+central intelligence,0,5,False,True
+central intelligence agency,0,5,False,True
+climate change,0,5,False,True
+commercial space launch act of 1984,0,5,False,True
+digital equipment corporation,0,5,False,True
+don delillo,0,5,False,True
+financial analysis,0,5,False,True
+"fort lauderdale, florida",0,5,False,True
+great recession,0,5,False,True
+informix corporation,0,5,False,True
+internet service provider,0,5,False,True
+james e. webb,0,5,False,True
+john d. rockefeller,0,5,False,True
+late heavy bombardment,0,5,False,True
+livery company,0,5,False,True
+lyndon b. johnson,0,5,False,True
+mark zuckerberg,0,5,False,True
+mass media,0,5,False,True
+michael faraday,0,5,False,True
+microsoft sql server,0,5,False,True
+mojave desert,0,5,False,True
+motor trend,0,5,False,True
+nevada corporation,0,5,False,True
+october,0,5,False,True
+rechargeable battery,0,5,False,True
+san antonio,0,5,False,True
+society,0,5,False,True
+solar energy,0,5,False,True
+solucar complex,0,5,False,True
+soviet union,0,5,False,True
+star trek,0,5,False,True
+starship,0,5,False,True
+technology,0,5,False,True
+the new york times,0,5,False,True
+the walt disney company,0,5,False,True
+united states army,0,5,False,True
+warren buffett,0,5,False,True
+advisory committee,0,4,False,True
+amazon reef,0,4,False,True
+andreas flocken,0,4,False,True
+arthur perdue,0,4,False,True
+auto show,0,4,False,True
+berlin model,0,4,False,True
+capital market,0,4,False,True
+carl menger,0,4,False,True
+chief engineer,0,4,False,True
+cloud computing,0,4,False,True
+electrical engineering,0,4,False,True
+flight management system,0,4,False,True
+foundation (novel series),0,4,False,True
+founders park,0,4,False,True
+garbage can model,0,4,False,True
+google cloud platform,0,4,False,True
+greek battalion of balaklava,0,4,False,True
+international telecommunication union,0,4,False,True
+investment advisers act of 1940,0,4,False,True
+james webb space telescope,0,4,False,True
+johns hopkins,0,4,False,True
+journalism,0,4,False,True
+kamen rider amazon,0,4,False,True
+kwajalein atoll,0,4,False,True
+las vegas,0,4,False,True
+limited liability company,0,4,False,True
+litvaks,0,4,False,True
+mars in fiction,0,4,False,True
+middle ages,0,4,False,True
+national security,0,4,False,True
+naval air station,0,4,False,True
+new york stock exchange,0,4,False,True
+radarsat constellation,0,4,False,True
+robert e. wright,0,4,False,True
+san francisco,0,4,False,True
+saturn,0,4,False,True
+secondary school,0,4,False,True
+super low altitude test satellite,0,4,False,True
+town hall,0,4,False,True
+united states air force,0,4,False,True
+united states navy,0,4,False,True
+"university of california, davis",0,4,False,True
+web service,0,4,False,True
+world wide web,0,4,False,True
+adam smith,0,3,False,True
+airbus,0,3,False,True
+baltimore orioles,0,3,False,True
+bell labs,0,3,False,True
+blue moon,0,3,False,True
+business,0,3,False,True
+capitoline hill,0,3,False,True
+"carson city, nevada",0,3,False,True
+cecil rhodes,0,3,False,True
+charles fritts,0,3,False,True
+china,0,3,False,True
+contingent negative variation,0,3,False,True
+europe,0,3,False,True
+extresol solar power station,0,3,False,True
+florida,0,3,False,True
+ford f-series,0,3,False,True
+france,0,3,False,True
+henry ford,0,3,False,True
+homeland security,0,3,False,True
+in september,0,3,False,True
+india,0,3,False,True
+kamen rider,0,3,False,True
+market value,0,3,False,True
+media matters for america,0,3,False,True
+military,0,3,False,True
+neurotechnology,0,3,False,True
+new deal,0,3,False,True
+o. douglas,0,3,False,True
+pacific ocean,0,3,False,True
+powerwall,0,3,False,True
+relational model,0,3,False,True
+ronald reagan,0,3,False,True
+sierra nevada,0,3,False,True
+south korea,0,3,False,True
+super bowl,0,3,False,True
+they,0,3,False,True
+thomas carlyle,0,3,False,True
+united kingdom,0,3,False,True
+united states federal executive departments,0,3,False,True
+william o. douglas,0,3,False,True
+world governments summit,0,3,False,True
+world rally championship,0,3,False,True
+adposition,0,2,False,False
+alfa romeo p2,0,2,False,False
+amazon creek,0,2,False,False
+amazonis planitia,0,2,False,False
+amit agarwal,0,2,False,False
+asante empire,0,2,False,False
+atlantic ocean,0,2,False,False
+atlas,0,2,False,False
+atomic energy,0,2,False,False
+brain–computer interface,0,2,False,False
+cagiva roadster,0,2,False,False
+corporations act 2001,0,2,False,False
+das model,0,2,False,False
+dragon,0,2,False,False
+economy of the united states,0,2,False,False
+electric motor,0,2,False,False
+energy,0,2,False,False
+falcon,0,2,False,False
+financial market,0,2,False,False
+following,0,2,False,False
+founder technology,0,2,False,False
+germany,0,2,False,False
+government of new york city,0,2,False,False
+james bond,0,2,False,False
+list,0,2,False,False
+"merritt island, florida",0,2,False,False
+model,0,2,False,False
+russia,0,2,False,False
+south africa,0,2,False,False
+south pole,0,2,False,False
+st. louis,0,2,False,False
+states department,0,2,False,False
+the electric company,0,2,False,False
+united arab emirates,0,2,False,False
+united states government accountability office,0,2,False,False
+apollo,0,1,False,False
+bernard jean,0,1,False,False
+communications and utilities regulatory authority,0,1,False,False
+electricity,0,1,False,False
+executive order,0,1,False,False
+in august,0,1,False,False
+risk management,0,1,False,False
+roman republic,0,1,False,False
+social group,0,1,False,False
+united states district court,0,1,False,False
+while,0,1,False,False

@@ -1,0 +1,830 @@
+source_page,ingestion_candidate_count,relation_candidate_count,safe_delta_count,weak_context_count,entity_count,answerable_before_precision_count,precision_accepted_count,precision_rejected_count,precision_quarantined_count,property_candidate_count,final_fact_count
+Aerospace,22,0,22,20,1,2,1,1,0,0,0
+Army Ballistic Missile Agency,21,0,21,19,1,2,1,1,0,0,0
+Bloomberg Billionaires Index,21,0,21,20,1,1,1,0,0,0,0
+Byron K. Lichtenberg,21,0,21,20,1,1,1,0,0,0,0
+Commercial Resupply Services,21,0,22,20,1,2,1,1,0,0,0
+Development of the Commercial Crew Program,21,0,21,20,1,1,1,0,0,0,0
+Dragon Spacecraft Qualification Unit,21,0,22,20,1,2,2,0,0,0,1
+Kimbal Musk,21,0,21,20,1,1,1,0,0,0,0
+Mission control center,21,0,21,20,1,1,1,0,0,0,0
+NASA Launch Services Program,21,0,21,20,1,1,1,0,0,0,0
+Satellite Internet access,21,0,18,18,0,0,0,0,0,0,0
+Sea Launch,21,0,21,20,1,1,1,0,0,0,0
+Space.com,21,0,19,19,0,0,0,0,0,0,0
+SpaceX,21,0,19,19,0,1,1,0,0,0,1
+SpaceX Crew-1,21,0,21,20,1,1,1,0,0,0,0
+Commercial Spaceflight Federation,20,0,20,19,1,1,1,0,0,0,0
+Ellison,20,0,20,4,1,16,1,0,15,0,0
+Greg Brockman,20,0,21,19,1,1,1,0,0,0,0
+Northrop Grumman,20,2,23,9,1,12,4,8,0,0,3
+Reusable launch vehicle,20,0,17,17,0,0,0,0,0,0,0
+"Tesla, Inc.",20,0,17,17,0,0,0,0,0,0,0
+Tesla Energy,20,0,17,17,0,0,0,0,0,0,0
+Tesla Powerwall,20,0,20,19,1,1,1,0,0,0,0
+Aerospace manufacturer,19,0,18,18,0,0,0,0,0,0,0
+Brian Binnie,19,0,19,18,1,1,1,0,0,0,0
+Cape Canaveral Space Force Station,19,0,17,17,0,0,0,0,0,0,0
+Rocketplane Kistler,19,0,19,18,1,1,1,0,0,0,0
+SpaceX Starship design history,19,0,19,18,1,1,1,0,0,0,0
+Vector Launch,19,0,20,18,1,2,1,1,0,0,0
+Artemis Accords,18,0,19,17,1,2,2,0,0,0,1
+Axiom Space,18,0,19,17,1,2,1,1,0,0,0
+Boeing Starliner,18,0,19,17,1,1,1,0,0,0,0
+Collins Aerospace,18,0,18,17,1,1,1,0,0,0,0
+Crew Dragon Demo-1,18,0,18,17,1,1,1,0,0,0,0
+Delta IV,18,0,19,17,1,2,2,0,0,0,1
+Gwynne Shotwell,18,0,16,16,0,0,0,0,0,0,0
+Joseph Schumpeter,18,0,18,12,1,6,1,0,5,0,0
+Oracle Database,18,0,18,17,1,1,1,0,0,0,0
+Project Gemini,18,0,19,17,1,2,2,0,0,0,1
+Safra Catz,18,0,18,17,1,1,1,0,0,0,0
+Sierra Nevada Corporation,18,1,18,17,1,1,1,0,0,0,0
+SpaceX launch vehicles,18,0,18,17,1,1,1,0,0,0,0
+Tesla Autopilot,18,0,18,16,1,2,1,1,0,0,0
+Xoom (money transfer service),18,0,18,17,1,1,1,0,0,0,0
+Asahi Kasei,17,0,18,16,1,1,1,0,0,0,0
+Jeff Bezos,17,0,16,16,0,1,1,0,0,0,1
+Microsoft,17,0,17,16,1,1,1,0,0,0,0
+Mike Melvill,17,0,17,16,1,1,1,0,0,0,0
+Project Mercury,17,0,18,16,1,2,2,0,0,0,1
+Rockwell Collins,17,0,17,16,1,1,1,0,0,0,0
+SpaceX Crew-2,17,0,18,16,1,2,2,0,0,0,1
+Space Age,17,0,18,16,1,2,2,0,0,0,1
+Stennis Space Center,17,0,17,15,1,2,2,0,0,0,1
+Strategic Air Command,17,0,18,16,1,2,2,0,0,0,1
+Tesla Cybertruck,17,0,16,16,0,0,0,0,0,0,0
+Tesla Powerpack,17,1,19,16,1,3,2,1,0,0,1
+UAL Corporation,17,0,18,16,1,2,2,0,0,0,1
+Vulcan Centaur,17,0,18,16,1,2,2,0,0,0,1
+X Corp.,17,0,13,13,0,0,0,0,0,0,0
+Automated Transfer Vehicle,16,0,16,15,1,1,1,0,0,0,0
+Ballistic missile,16,0,16,15,1,1,1,0,0,0,0
+Bob Miner,16,0,16,15,1,1,1,0,0,0,0
+Boeing X-37,16,0,18,15,1,3,3,0,0,0,2
+Boing Boing,16,0,16,15,1,1,1,0,0,0,0
+Business journalism,16,0,17,11,1,6,1,5,0,0,0
+Commercial Crew Program,16,0,13,13,0,0,0,0,0,0,0
+Crew Exploration Vehicle,16,0,17,15,1,1,1,0,0,0,0
+Gigafactory Nevada,16,0,16,15,1,1,1,0,0,0,0
+Marshall Space Flight Center,16,0,16,15,1,1,1,0,0,0,0
+Phibro,16,0,16,15,1,1,1,0,0,0,0
+Royal Mail Steam Packet Company,16,0,17,14,1,3,2,1,0,0,1
+SpaceX COTS Demo Flight 2,16,0,16,15,1,1,1,0,0,0,0
+Stoke Space,16,0,17,15,1,2,2,0,0,0,1
+Stoke Space Nova,16,0,16,15,1,1,1,0,0,0,0
+White Sands Missile Range,16,0,17,15,1,2,2,0,0,0,1
+Ampex,15,0,15,14,1,1,1,0,0,0,0
+Artemis II,15,0,15,14,1,1,1,0,0,0,0
+Barbara Morgan,15,0,15,14,1,1,1,0,0,0,0
+Bloomberg Radio,15,0,17,14,1,3,3,0,0,0,2
+Crew Dragon Demo-2,15,0,15,14,1,1,1,0,0,0,0
+Disaster Monitoring Constellation,15,0,15,14,1,1,1,0,0,0,0
+Falcon Heavy,15,0,13,13,0,0,0,0,0,0,0
+Hyperloop One,15,0,16,14,1,1,1,0,0,0,0
+John Glenn,15,0,15,14,1,1,1,0,0,0,0
+Johnson Space Center,15,0,15,14,1,1,1,0,0,0,0
+Lawrence Sperry,15,0,15,13,1,2,1,1,0,0,0
+NYSE Euronext,15,0,15,14,1,1,1,0,0,0,0
+National Security Space Launch,15,0,15,14,1,1,1,0,0,0,0
+New Shepard,15,0,15,14,1,1,1,0,0,0,0
+PayPal,15,0,12,12,0,0,0,0,0,0,0
+Ronald Reagan Space and Missile Test Range,15,0,15,14,1,1,1,0,0,0,0
+SolarCity,15,0,12,12,0,0,0,0,0,0,0
+Space Shuttle,15,0,15,14,1,1,1,0,0,0,0
+The Boring Company,15,0,13,13,0,0,0,0,0,0,0
+Virgin Galactic,15,0,16,14,1,2,1,1,0,0,0
+Abbott Laboratories,14,1,15,13,1,2,1,1,0,0,0
+Astrium,14,0,14,13,1,1,1,0,0,0,0
+Atlas II,14,0,15,13,1,2,2,0,0,0,1
+Big Tech,14,1,15,13,1,2,1,1,0,0,0
+Dream Chaser,14,0,16,13,1,3,1,2,0,0,0
+Fisker Karma,14,0,14,13,1,1,1,0,0,0,0
+Hermann Oberth,14,0,14,13,1,1,1,0,0,0,0
+John Micklethwait,14,0,15,13,1,2,2,0,0,0,1
+Kennedy Space Center,14,0,11,11,0,0,0,0,0,0,0
+Launch Control Center,14,0,14,13,1,1,1,0,0,0,0
+List of launch complexes,14,0,14,13,1,1,1,0,0,0,0
+Lyndon Rive,14,0,15,12,1,3,2,1,0,0,1
+Marc Tarpenning,14,1,13,13,0,0,0,0,0,0,0
+Martin Eberhard,14,0,13,12,0,0,0,0,0,0,0
+Michael Bloomberg,14,0,13,13,0,0,0,0,0,0,0
+New Horizons,14,0,15,13,1,2,2,0,0,0,1
+Reaction Engines,14,0,15,13,1,2,2,0,0,0,1
+Satellite radio,14,0,14,13,1,1,1,0,0,0,0
+Starlink,14,0,12,12,0,0,0,0,0,0,0
+United Launch Alliance,14,0,14,13,1,1,1,0,0,0,0
+XCOR Aerospace,14,0,14,13,1,1,1,0,0,0,0
+X (social network),14,0,13,13,0,0,0,0,0,0,0
+Amazon Leo,13,0,13,12,1,1,1,0,0,0,0
+Apollo Applications Program,13,0,13,12,1,1,1,0,0,0,0
+Ares Management,13,0,13,12,1,1,1,0,0,0,0
+Arianespace,13,0,15,12,1,2,2,0,0,0,1
+Baikonur Cosmodrome,13,0,13,12,1,1,1,0,0,0,0
+Bangladesh Satellite-1,13,0,14,12,1,2,2,0,0,0,1
+Boeing,13,0,13,12,1,1,1,0,0,0,0
+Bombay Stock Exchange,13,0,14,12,1,2,2,0,0,0,1
+CNBC,13,0,13,12,0,0,0,0,0,0,0
+Calvin Souther Fuller,13,0,13,12,1,1,1,0,0,0,0
+Deep Space Climate Observatory,13,0,13,12,1,1,1,0,0,0,0
+Electric vehicle,13,0,12,11,0,0,0,0,0,0,0
+Elevation Partners,13,0,17,12,1,2,1,1,0,0,0
+Goddard Space Flight Center,13,1,15,12,1,3,2,1,0,0,1
+Gordon Cooper,13,0,13,12,1,1,1,0,0,0,0
+Honeywell Aerospace,13,0,14,9,1,5,1,3,1,0,0
+Hyperloop Transportation Technologies,13,0,13,12,1,1,1,0,0,0,0
+Jack Dorsey,13,0,14,12,1,2,2,0,0,0,1
+Jim Cantrell,13,1,14,12,1,1,1,0,0,0,0
+Lockheed Martin,13,0,13,12,1,1,1,0,0,0,0
+Malcolm Forbes,13,0,13,12,1,1,1,0,0,0,0
+McDonnell Douglas,13,0,14,12,1,2,2,0,0,0,1
+Mercury Control Center,13,0,13,12,1,1,1,0,0,0,0
+Neil Armstrong,13,0,13,12,1,1,1,0,0,0,0
+Nissan Leaf,13,0,13,12,1,1,1,0,0,0,0
+Orbital Space Plane Program,13,0,13,12,1,1,1,0,0,0,0
+PGM-17 Thor,13,0,13,12,1,1,1,0,0,0,0
+Patrick Space Force Base,13,0,13,12,1,1,1,0,0,0,0
+PlayStation,13,0,7,6,1,1,1,0,0,0,0
+Sergey Brin,13,0,13,12,1,1,1,0,0,0,0
+SpaceX CRS-33,13,1,14,12,1,2,1,1,0,0,0
+Sperry Corporation,13,0,15,12,1,3,2,1,0,0,1
+Steve Forbes,13,0,13,12,1,1,1,0,0,0,0
+Tesla Robotaxi,13,1,15,12,1,2,2,0,0,0,1
+Tom Mueller,13,1,15,12,1,2,2,0,0,0,1
+UTC Aerospace Systems,13,0,13,12,1,1,1,0,0,0,0
+Alan Shepard,12,0,11,10,1,1,1,0,0,0,0
+Artemis III,12,0,13,11,1,2,2,0,0,0,1
+BAE Systems,12,0,12,11,1,1,1,0,0,0,0
+BSE SENSEX,12,0,12,11,1,1,1,0,0,0,0
+Barry Goldwater,12,0,12,11,1,1,1,0,0,0,0
+Bigelow Aerospace,12,0,13,11,1,2,2,0,0,0,1
+Bloomberg L.P.,12,0,9,9,0,0,0,0,0,0,0
+Charles D. Walker,12,0,13,11,1,1,1,0,0,0,0
+Christa McAuliffe,12,0,12,11,1,1,1,0,0,0,0
+Control Data Corporation,12,0,12,11,1,1,1,0,0,0,0
+Corn Ranch,12,0,12,11,1,1,1,0,0,0,0
+Dan Schulman,12,0,12,11,1,1,1,0,0,0,0
+Eastern Range,12,0,12,11,1,1,1,0,0,0,0
+Exos Aerospace,12,1,14,11,1,3,3,0,0,0,2
+Fidelity Investments,12,0,12,11,1,1,1,0,0,0,0
+Gigafactory Mexico,12,0,13,11,1,2,2,0,0,0,1
+June,12,0,12,10,1,2,2,0,0,0,1
+LVMH,12,0,11,11,0,0,0,0,0,0,0
+MacKenzie Scott,12,1,12,11,1,1,1,0,0,0,0
+Mark Hurd,12,0,12,11,1,1,1,0,0,0,0
+New Glenn,12,0,13,11,1,2,2,0,0,0,1
+Omelek Island,12,0,12,11,1,1,1,0,0,0,0
+OpenAI,12,0,11,11,0,0,0,0,0,0,0
+Redwood Shores,12,0,13,11,1,2,2,0,0,0,1
+Robert Zubrin,12,2,16,11,1,3,2,1,0,0,1
+Saturn Corporation,12,0,13,11,1,1,1,0,0,0,0
+SpaceX Crew-3,12,0,13,11,1,2,2,0,0,0,1
+Space policy of the United States,12,0,12,11,1,1,1,0,0,0,0
+Tesla Fremont Factory,12,0,12,11,1,1,1,0,0,0,0
+Tesla next-generation vehicle platform,12,0,12,11,1,1,1,0,0,0,0
+"Twitter, Inc.",12,0,12,11,1,1,1,0,0,0,0
+Vandenberg Space Force Base,12,0,11,11,0,0,0,0,0,0,0
+Vehicle Assembly Building,12,0,12,11,1,1,1,0,0,0,0
+World war,12,0,12,11,1,1,1,0,0,0,0
+Zip2,12,0,10,10,0,0,0,0,0,0,0
+Affordable Connectivity Program,11,0,12,10,1,2,2,0,0,0,1
+Air force,11,0,11,10,1,1,1,0,0,0,0
+Akira Yoshino,11,0,11,10,1,1,1,0,0,0,0
+Amazon Delta,11,0,12,10,1,2,2,0,0,0,1
+Anderson-Prichard Oil Corporation,11,0,11,10,1,1,1,0,0,0,0
+Apple Inc.,11,0,11,10,1,1,1,0,0,0,0
+Automotive industry,11,0,10,10,0,0,0,0,0,0,0
+B. C. Forbes,11,0,12,10,1,2,2,0,0,0,1
+Bentley,11,0,11,10,1,1,1,0,0,0,0
+Bezos Expeditions,11,1,12,10,1,1,1,0,0,0,0
+Bloomberg Businessweek,11,0,11,10,1,1,1,0,0,0,0
+Bloomberg Television,11,0,11,10,1,1,1,0,0,0,0
+Bloomberg Terminal,11,0,11,10,1,1,1,0,0,0,0
+CT Corporation,11,0,12,10,1,2,1,1,0,0,0
+Christy Walton,11,0,11,10,1,1,1,0,0,0,0
+Dave Limp,11,0,11,10,1,1,1,0,0,0,0
+Financial Industry Regulatory Authority,11,0,11,9,1,2,2,0,0,0,1
+Ford of Britain,11,0,11,10,1,1,1,0,0,0,0
+GE Aerospace,11,0,12,10,1,2,1,1,0,0,0
+Hyperloop pod competition,11,0,11,10,1,1,1,0,0,0,0
+Intercontinental Exchange,11,0,11,9,1,2,1,1,0,0,0
+J. B. Straubel,11,0,11,10,1,1,1,0,0,0,0
+Korean War,11,0,11,10,1,1,1,0,0,0,0
+"Nasdaq, Inc.",11,0,11,10,1,1,1,0,0,0,0
+National Space Biomedical Research Institute,11,0,11,10,1,1,1,0,0,0,0
+Outer Space Treaty,11,0,11,10,1,1,1,0,0,0,0
+Peter Grauer,11,0,11,10,1,1,1,0,0,0,0
+Scaled Composites,11,1,11,10,1,1,1,0,0,0,0
+SpaceShipTwo,11,0,12,10,1,2,2,0,0,0,1
+Sun Microsystems,11,0,11,10,1,1,1,0,0,0,0
+Tesla Semi,11,0,12,10,1,2,2,0,0,0,1
+Titan IV,11,0,12,10,1,2,2,0,0,0,1
+Tom Wheeler,11,0,11,10,1,1,1,0,0,0,0
+Ulrike Malmendier,11,0,11,10,1,1,1,0,0,0,0
+United States Atomic Energy Commission,11,0,11,10,1,1,1,0,0,0,0
+Vehicle,11,0,11,10,1,1,1,0,0,0,0
+Wayback Machine,11,0,12,10,1,2,2,0,0,0,1
+XM Satellite Radio,11,0,11,10,1,1,1,0,0,0,0
+Anousheh Ansari,10,0,11,9,1,2,2,0,0,0,1
+Antonio Gracias,10,0,10,9,1,1,1,0,0,0,0
+Bloomberg Law,10,0,11,9,1,2,2,0,0,0,1
+Blue Origin NS-17,10,0,11,9,1,2,2,0,0,0,1
+Blue Origin NS-23,10,0,11,9,1,2,2,0,0,0,1
+Buzz Aldrin,10,0,10,9,1,1,1,0,0,0,0
+California,10,0,9,8,1,1,1,0,0,0,0
+Charles Koch,10,0,10,9,1,1,1,0,0,0,0
+Chevrolet Volt,10,0,11,9,1,2,2,0,0,0,1
+Commercial Space Launch Competitiveness Act of 2015,10,0,9,8,1,1,1,0,0,0,0
+Dawn Aerospace,10,0,11,9,1,2,2,0,0,0,1
+Edgar F. Codd,10,0,10,9,1,1,1,0,0,0,0
+Errol Musk,10,0,11,9,1,2,2,0,0,0,1
+Gigafactory Shanghai,10,0,10,9,1,1,1,0,0,0,0
+Goodrich Corporation,10,0,10,9,1,1,1,0,0,0,0
+Integrate-Transfer-Launch Complex,10,0,11,9,1,2,2,0,0,0,1
+Intel,10,0,10,6,1,4,1,0,3,0,0
+International Energy Agency,10,0,11,5,1,6,3,2,1,0,2
+Investment Company Act of 1940,10,0,10,9,1,1,1,0,0,0,0
+Jaguar Land Rover,10,0,12,9,1,3,2,1,0,0,1
+John F. Kennedy,10,0,10,9,1,1,1,0,0,0,0
+Max Levchin,10,0,12,9,1,1,1,0,0,0,0
+Mazda MX-5 (NA),10,0,10,9,1,1,1,0,0,0,0
+Nasdaq,10,0,8,8,0,1,0,1,0,0,0
+Ranger program,10,0,10,9,1,1,1,0,0,0,0
+Richard Sylla,10,0,11,9,1,2,2,0,0,0,1
+Silicon Valley,10,0,10,8,1,2,1,1,0,0,0
+Sirius Satellite Radio,10,1,11,9,1,2,1,1,0,0,0
+South Sea Company,10,0,11,9,1,2,2,0,0,0,1
+SpaceShipOne,10,0,10,9,1,1,1,0,0,0,0
+SpaceX Dragon,10,0,10,9,1,1,1,0,0,0,0
+Space station,10,0,10,9,1,1,1,0,0,0,0
+Stock market,10,0,8,7,1,1,1,0,0,0,0
+The Wall Street Journal,10,0,10,9,1,1,1,0,0,0,0
+US Orbital Segment,10,0,10,9,1,1,1,0,0,0,0
+United Nations,10,0,10,9,1,1,1,0,0,0,0
+United Technologies,10,0,13,9,1,4,1,3,0,0,0
+Volvo Amazon,10,0,11,9,1,2,2,0,0,0,1
+World War II,10,0,10,9,1,1,1,0,0,0,0
+École Centrale Paris,9,0,9,5,1,4,3,1,0,0,2
+Aerojet Rocketdyne,9,0,9,8,1,1,1,0,0,0,0
+Air base,9,0,9,8,1,1,1,0,0,0,0
+Alpha Magnetic Spectrometer,9,0,10,8,1,2,2,0,0,0,1
+Alphabet Inc.,9,0,9,8,1,1,1,0,0,0,0
+Aristotle Onassis,9,0,9,8,1,1,1,0,0,0,0
+Barack Obama,9,0,9,8,1,1,1,0,0,0,0
+Benjamin Franklin,9,0,9,7,1,2,1,1,0,0,0
+Berkeley DB,9,2,12,8,1,4,3,1,0,0,2
+Bloomberg News,9,0,8,8,0,1,1,0,0,0,1
+Blue Origin NS-18,9,1,10,8,1,2,2,0,0,0,1
+Blue Origin NS-21,9,1,10,8,1,2,2,0,0,0,1
+Cold War,9,0,9,8,1,1,1,0,0,0,0
+Communications satellite,9,0,9,8,1,1,1,0,0,0,0
+Companies Act,9,0,10,8,1,2,2,0,0,0,1
+Compaq,9,0,9,8,1,1,1,0,0,0,0
+Donald Trump,9,0,9,8,1,1,1,0,0,0,0
+Ed Oates,9,0,9,8,1,1,1,0,0,0,0
+Electric car,9,0,7,7,0,1,0,1,0,0,0
+European Space Agency,9,0,9,8,1,1,1,0,0,0,0
+Forbes,9,0,8,8,0,0,0,0,0,0,0
+General Motors,9,0,12,8,1,4,2,2,0,0,1
+Gigafactory Berlin-Brandenburg,9,0,9,8,1,1,1,0,0,0,0
+Gigafactory New York,9,1,11,8,1,3,2,1,0,0,1
+Institute of technology,9,0,9,8,1,1,1,0,0,0,0
+July,9,0,9,7,1,2,1,0,0,1,0
+Kawasaki Aerospace Systems Company,9,0,9,8,1,1,1,0,0,0,0
+Land Rover,9,0,10,8,1,2,2,0,0,0,1
+Linda Yaccarino,9,0,9,7,1,2,1,1,0,0,0
+Morgan Stanley,9,0,9,8,1,1,1,0,0,0,0
+National Space Society,9,0,10,8,1,1,1,0,0,0,0
+Privately held company,9,0,8,8,0,0,0,0,0,0,0
+Project Juno,9,0,10,8,1,2,2,0,0,0,1
+Rocket Science Games,9,0,11,7,1,4,3,1,0,0,2
+Sam Altman,9,0,12,8,1,3,2,1,0,0,1
+San Francisco Bay,9,0,10,8,1,1,1,0,0,0,0
+Skylon (spacecraft),9,0,9,8,1,1,1,0,0,0,0
+SpaceX Merlin,9,0,9,8,1,1,1,0,0,0,0
+SpaceX Raptor,9,0,7,7,0,0,0,0,0,0,0
+Surrey Satellite Technology,9,0,10,8,1,1,1,0,0,0,0
+The Washington Post,9,0,9,8,1,1,1,0,0,0,0
+Thomas Pink,9,0,10,8,1,2,2,0,0,0,1
+United Aircraft Corporation,9,0,9,8,1,1,1,0,0,0,0
+World Bank Group,9,0,9,8,1,1,1,0,0,0,0
+Accenture,8,0,8,7,1,1,1,0,0,0,0
+Allison V-1710,8,0,8,7,1,1,1,0,0,0,0
+Amalgam Comics,8,0,9,7,1,2,2,0,0,0,1
+Amazon Eve,8,0,8,7,1,1,1,0,0,0,0
+Apollo Lunar Module,8,0,8,7,1,1,1,0,0,0,0
+Atomic Energy Commission,8,0,8,7,1,1,1,0,0,0,0
+Audi Q8,8,0,9,7,1,2,2,0,0,0,1
+August,8,0,9,7,1,2,2,0,0,0,1
+Autopilot,8,0,7,7,0,1,0,1,0,0,0
+Axiom Station,8,0,9,7,1,2,2,0,0,0,1
+Bell X-1,8,0,8,7,1,1,1,0,0,0,0
+Blue Ring,8,0,8,7,1,1,1,0,0,0,0
+Boeing B-50 Superfortress,8,0,8,7,1,1,1,0,0,0,0
+Bubble Act,8,0,8,7,1,1,1,0,0,0,0
+Chief technology officer,8,0,8,7,1,1,1,0,0,0,0
+Chrysler,8,0,8,7,1,1,1,0,0,0,0
+DARPA Falcon Project,8,0,8,7,1,1,1,0,0,0,0
+December,8,0,8,7,1,1,1,0,0,0,0
+Douglas C-124 Globemaster II,8,0,8,7,1,1,1,0,0,0,0
+Elmer Ambrose Sperry,8,0,8,7,1,1,1,0,0,0,0
+Embraer E-Jet E2 family,8,0,8,7,1,1,1,0,0,0,0
+Founders Brewing Company,8,0,8,7,1,1,1,0,0,0,0
+General Electric,8,0,8,7,1,1,1,0,0,0,0
+General Electric Company,8,0,13,7,1,5,1,4,0,0,0
+George W. Bush,8,0,8,7,1,1,1,0,0,0,0
+Gigafactory Texas,8,0,8,7,1,1,1,0,0,0,0
+Hearst Communications,8,0,8,7,1,1,1,0,0,0,0
+Hughes Aircraft Company,8,0,8,7,1,1,1,0,0,0,0
+International airport,8,0,8,7,1,1,1,0,0,0,0
+JD Edwards,8,0,8,7,1,1,1,0,0,0,0
+March,8,0,9,7,1,2,2,0,0,0,1
+Mark Carney,8,0,8,6,1,1,1,0,0,0,0
+Max Hodak,8,0,9,7,1,1,1,0,0,0,0
+Merrill (company),8,0,8,7,1,1,1,0,0,0,0
+Michael Liebreich,8,0,10,7,1,3,2,1,0,0,1
+Mitsubishi Heavy Industries,8,0,8,7,1,1,1,0,0,0,0
+Oracle Cloud,8,0,8,7,1,1,1,0,0,0,0
+PSA Group,8,0,8,7,1,1,1,0,0,0,0
+"Palo Alto, California",8,0,8,7,1,1,1,0,0,0,0
+Pecora Commission,8,0,9,7,1,2,2,0,0,0,1
+Premchand Roychand,8,0,8,7,1,1,1,0,0,0,0
+Rocket,8,0,7,7,0,1,0,1,0,0,0
+Rocket engine,8,1,9,7,1,2,1,1,0,0,0
+Royal Air Force,8,0,8,7,1,1,1,0,0,0,0
+SHA-2,8,0,8,7,1,1,1,0,0,0,0
+SM-65 Atlas,8,0,8,7,1,1,1,0,0,0,0
+Salomon Brothers,8,0,9,7,1,2,1,1,0,0,0
+Satellite,8,0,8,7,1,1,1,0,0,0,0
+Saturn IB,8,0,16,7,1,7,5,2,0,0,4
+Securities Act of 1933,8,0,8,7,1,1,1,0,0,0,0
+Smith Electric Vehicles,8,0,10,7,1,2,2,0,0,0,1
+Solid-propellant rocket,8,0,8,7,1,1,1,0,0,0,0
+Solid rocket booster,8,0,8,7,1,1,1,0,0,0,0
+Spaceflight,8,0,9,7,1,2,2,0,0,0,1
+Tesla Cyberquad,8,0,8,7,1,1,1,0,0,0,0
+Tesla Supercharger,8,1,10,7,1,1,1,0,0,0,0
+Tom Ognibene,8,0,8,7,1,1,1,0,0,0,0
+Alessandro Volta,7,0,7,6,1,1,1,0,0,0,0
+Andreas Kaplan,7,0,7,6,1,1,1,0,0,0,0
+Blade Runner,7,0,7,6,1,1,1,0,0,0,0
+Bloomberg Government,7,0,9,6,1,3,3,0,0,0,2
+Bloomberg Markets,7,0,8,6,1,2,2,0,0,0,1
+Blue Origin NS-19,7,1,9,6,1,3,2,1,0,0,1
+Bombardier Aviation,7,0,7,6,1,1,1,0,0,0,0
+Carl Sagan,7,0,7,6,1,1,1,0,0,0,0
+Carlos Slim,7,0,7,6,1,1,1,0,0,0,0
+Company,7,0,7,6,1,1,1,0,0,0,0
+Corporation,7,0,7,6,1,1,1,0,0,0,0
+D. E. Shaw & Co.,7,0,7,6,1,1,1,0,0,0,0
+Dalal Street,7,0,7,5,1,2,1,1,0,0,0
+Dior,7,0,7,6,1,1,1,0,0,0,0
+Dow Jones Industrial Average,7,0,7,6,1,1,1,0,0,0,0
+Early modern period,7,0,7,6,1,1,1,0,0,0,0
+Elon Musk,7,0,6,6,0,0,0,0,0,0,0
+Euronext Amsterdam,7,0,7,6,1,1,1,0,0,0,0
+Great Depression,7,0,8,6,1,2,2,0,0,0,1
+Henrik Fisker,7,0,9,6,1,3,2,1,0,0,1
+Henry Racamier,7,0,7,6,1,1,1,0,0,0,0
+Industrial Revolution,7,0,7,6,1,1,1,0,0,0,0
+International Space Station,7,0,6,6,0,0,0,0,0,0,0
+Internet,7,1,9,6,1,2,2,0,0,0,1
+January,7,0,8,6,1,2,2,0,0,0,1
+John Law's Company,7,0,7,6,1,1,1,0,0,0,0
+Larry Page,7,0,7,6,1,1,1,0,0,0,0
+List of government space agencies,7,0,7,6,1,1,1,0,0,0,0
+Lotus Esprit,7,0,8,6,1,2,2,0,0,0,1
+Louis Vuitton,7,0,7,6,1,1,1,0,0,0,0
+Mercedes-Benz Group,7,0,8,6,1,2,1,1,0,0,0
+Nasdaq Composite,7,0,7,5,1,2,2,0,0,0,1
+National Historic Landmark,7,0,7,6,1,1,1,0,0,0,0
+New York City,7,0,7,6,1,1,1,0,0,0,0
+New York Stock Exchange Building,7,0,7,6,1,1,1,0,0,0,0
+North America,7,0,7,6,1,1,1,0,0,0,0
+Peter Thiel,7,0,8,6,1,2,2,0,0,0,1
+Phiroze Jeejeebhoy Towers,7,0,7,6,1,1,1,0,0,0,0
+Princeton University,7,0,8,6,1,2,2,0,0,0,1
+Research institute,7,0,7,6,1,1,1,0,0,0,0
+Roots Blower Company,7,0,9,6,1,3,2,1,0,0,1
+Software,7,0,7,6,1,1,1,0,0,0,0
+Solar panel,7,1,8,6,1,2,1,1,0,0,0
+Super Tuesday,7,0,7,6,1,1,1,0,0,0,0
+Tableau Software,7,0,7,6,1,1,1,0,0,0,0
+Titan (rocket family),7,0,7,6,1,1,1,0,0,0,0
+US Airways,7,0,7,6,1,1,1,0,0,0,0
+University,7,0,7,6,1,1,1,0,0,0,0
+Wojciech Zaremba,7,0,8,6,1,2,2,0,0,0,1
+Yellow pages,7,0,7,6,1,1,1,0,0,0,0
+York City F.C.,7,0,7,6,1,1,1,0,0,0,0
+Abe Fortas,6,0,6,4,1,2,2,0,0,0,1
+Amazon Kindle,6,0,7,5,1,1,1,0,0,0,0
+Amazon basin,6,0,6,5,1,1,1,0,0,0,0
+Amdahl Corporation,6,0,7,5,1,2,2,0,0,0,1
+Andrew Carnegie,6,0,6,5,1,1,1,0,0,0,0
+Arthur Ransome,6,0,7,4,1,3,2,1,0,0,1
+Aston Martin,6,0,9,5,1,2,2,0,0,0,1
+BYD M3,6,0,6,5,1,1,1,0,0,0,0
+Baidu Tieba,6,0,6,5,1,1,1,0,0,0,0
+Bankers Trust,6,0,7,5,1,2,2,0,0,0,1
+Battery energy storage system,6,0,6,5,1,1,1,0,0,0,0
+Bernie Ecclestone,6,0,6,5,1,1,1,0,0,0,0
+Businessperson,6,0,5,5,0,0,0,0,0,0,0
+Buttonwood Agreement,6,0,7,5,1,2,2,0,0,0,1
+CBS News,6,2,9,5,1,3,2,1,0,0,1
+Canada,6,0,7,5,1,2,2,0,0,0,1
+Canadian International Council,6,0,6,5,1,1,1,0,0,0,0
+Caterham Cars,6,0,6,5,1,1,1,0,0,0,0
+Chief justice,6,0,6,5,1,1,1,0,0,0,0
+Christian Dior,6,0,6,5,1,1,1,0,0,0,0
+Christian Lacroix,6,0,6,5,1,1,1,0,0,0,0
+Commercial Orbital Transportation Services,6,0,7,5,1,2,2,0,0,0,1
+Daniel L. Doctoroff,6,0,6,5,1,1,1,0,0,0,0
+Division (military),6,0,6,5,1,1,1,0,0,0,0
+Dow Jones,6,0,8,5,1,3,2,1,0,0,1
+February,6,0,7,5,1,2,2,0,0,0,1
+Financial Accounting Standards Board,6,0,7,5,1,1,1,0,0,0,0
+Ford Motor Company,6,0,6,5,1,1,1,0,0,0,0
+Gus Grissom,6,0,6,5,1,1,1,0,0,0,0
+HMS Amazon,6,0,6,4,1,2,2,0,0,0,1
+Harvard University,6,0,9,5,1,2,2,0,0,0,1
+Horniman Circle Gardens,6,0,6,5,1,1,1,0,0,0,0
+Jean-Baptiste Say,6,0,6,5,1,1,1,0,0,0,0
+"Jersey City, New Jersey",6,0,6,5,1,1,1,0,0,0,0
+Johns Hopkins University,6,0,6,5,1,1,1,0,0,0,0
+Large language model,6,0,6,5,1,1,1,0,0,0,0
+Los Angeles,6,0,7,5,1,1,1,0,0,0,0
+Marc Jacobs,6,0,6,5,1,1,1,0,0,0,0
+Meta Platforms,6,0,7,5,1,2,1,1,0,0,0
+Michael Rubens,6,0,6,5,1,1,1,0,0,0,0
+Microsoft Azure,6,0,7,5,1,1,1,0,0,0,0
+Millennium Falcon,6,0,7,5,1,2,2,0,0,0,1
+"Mission District, San Francisco",6,0,6,5,1,1,1,0,0,0,0
+Morgan Motor Company,6,0,8,5,1,2,1,1,0,0,0
+Municipal Securities Rulemaking Board,6,0,7,5,1,2,2,0,0,0,1
+NASA Deep Space Network,6,0,6,5,1,1,1,0,0,0,0
+New Jersey,6,0,6,5,1,1,1,0,0,0,0
+Nobel Prize,6,0,6,5,1,1,1,0,0,0,0
+November,6,0,6,5,1,1,1,0,0,0,0
+Oracle,6,0,6,5,1,1,1,0,0,0,0
+Outer space,6,0,6,5,1,1,1,0,0,0,0
+PayPal Credit,6,0,6,5,1,1,1,0,0,0,0
+RTX Corporation,6,0,6,5,1,1,1,0,0,0,0
+Richard Cantillon,6,0,6,5,1,1,1,0,0,0,0
+Securities Exchange Act of 1934,6,0,6,4,1,2,1,1,0,0,0
+September,6,0,7,5,1,2,2,0,0,0,1
+Shadow Racing Cars,6,0,6,5,1,1,1,0,0,0,0
+Soyuz MS-17,6,0,7,5,1,2,2,0,0,0,1
+SpaceX Dragon 2,6,0,4,4,0,0,0,0,0,0,0
+Steve Jobs,6,0,6,5,1,1,1,0,0,0,0
+Sustainable energy,6,0,5,5,0,0,0,0,0,0,0
+Tunnel,6,0,6,5,1,1,1,0,0,0,0
+USS Amazon,6,0,7,5,1,2,2,0,0,0,1
+Virgin Group,6,0,6,5,1,1,1,0,0,0,0
+Wet Nellie,6,0,6,4,1,2,1,1,0,0,0
+World Economic Forum,6,0,8,5,1,3,3,0,0,0,2
+Yuri Gagarin,6,0,7,5,1,2,2,0,0,0,1
+Air command,5,0,5,4,1,1,1,0,0,0,0
+Aliko Dangote,5,0,6,4,1,2,2,0,0,0,1
+Amancio Ortega,5,0,5,4,1,1,1,0,0,0,0
+Amazon Bookstore Cooperative,5,0,8,4,1,4,2,2,0,0,1
+Amazon River,5,0,5,4,1,1,1,0,0,0,0
+Amazon Web Services,5,1,6,4,1,2,1,1,0,0,0
+Amazonian Guard,5,0,6,4,1,2,2,0,0,0,1
+Armadillo Aerospace,5,0,6,4,1,2,2,0,0,0,1
+Baby boom,5,0,4,3,1,1,1,0,0,0,0
+Bill Gates,5,0,5,4,1,1,1,0,0,0,0
+Biz Stone,5,0,5,4,1,1,1,0,0,0,0
+Cal Ripken Jr.,5,0,5,4,1,1,1,0,0,0,0
+Cape Canaveral,5,0,5,4,1,1,1,0,0,0,0
+Central Intelligence,5,0,5,4,1,1,1,0,0,0,0
+Central Intelligence Agency,5,0,5,4,1,1,1,0,0,0,0
+Climate change,5,0,5,4,1,1,1,0,0,0,0
+Commercial Space Launch Act of 1984,5,0,5,4,1,1,1,0,0,0,0
+Digital Equipment Corporation,5,0,5,4,1,1,1,0,0,0,0
+Don DeLillo,5,0,5,4,1,1,1,0,0,0,0
+Federal Communications Commission,5,0,6,4,1,2,2,0,0,0,1
+Financial analysis,5,0,5,4,1,1,1,0,0,0,0
+Flight test,5,0,5,4,1,1,1,0,0,0,0
+"Fort Lauderdale, Florida",5,0,5,4,1,1,1,0,0,0,0
+Great Recession,5,0,5,4,1,1,1,0,0,0,0
+Greenhouse gas,5,0,6,4,1,2,2,0,0,0,1
+Hubble Space Telescope,5,0,6,4,1,2,2,0,0,0,1
+IBM System,5,0,6,4,1,2,2,0,0,0,1
+Informix Corporation,5,0,5,4,1,1,1,0,0,0,0
+Internet service provider,5,0,4,4,0,0,0,0,0,0,0
+James E. Webb,5,0,5,4,1,1,1,0,0,0,0
+John D. Rockefeller,5,0,5,4,1,1,1,0,0,0,0
+Late Heavy Bombardment,5,0,5,4,1,1,1,0,0,0,0
+Livery company,5,0,5,4,1,1,1,0,0,0,0
+London Stock Exchange,5,1,10,4,1,5,4,1,0,0,3
+Lyndon B. Johnson,5,0,5,4,1,1,1,0,0,0,0
+Major general,5,0,5,4,1,1,1,0,0,0,0
+Mark Zuckerberg,5,0,5,4,1,1,1,0,0,0,0
+Mass media,5,0,5,4,1,1,1,0,0,0,0
+Michael Faraday,5,0,5,4,1,1,1,0,0,0,0
+Microsoft SQL Server,5,0,5,4,1,1,1,0,0,0,0
+Middle East,5,0,6,4,1,2,2,0,0,0,1
+Mojave Desert,5,0,5,4,1,1,1,0,0,0,0
+Motor Trend,5,0,5,4,1,1,1,0,0,0,0
+Nevada corporation,5,0,5,4,1,1,1,0,0,0,0
+Nikola Tesla,5,0,6,4,1,2,2,0,0,0,1
+October,5,0,5,4,1,1,1,0,0,0,0
+Rechargeable battery,5,0,5,4,1,1,1,0,0,0,0
+Richard Branson,5,0,6,4,1,2,2,0,0,0,1
+San Antonio,5,0,5,4,1,1,1,0,0,0,0
+San Francisco Bay Area,5,0,6,4,1,2,2,0,0,0,1
+Society,5,0,5,4,1,1,1,0,0,0,0
+Software development,5,0,5,4,1,1,1,0,0,0,0
+Solar energy,5,0,4,4,0,0,0,0,0,0,0
+Solucar Complex,5,0,5,4,1,1,1,0,0,0,0
+South America,5,0,6,4,1,2,2,0,0,0,1
+South Carolina,5,0,6,4,1,2,2,0,0,0,1
+Soviet Union,5,0,5,4,1,1,1,0,0,0,0
+Star Trek,5,0,5,4,1,1,1,0,0,0,0
+Starship,5,0,4,4,0,0,0,0,0,0,0
+Sustainable development,5,0,5,4,1,1,1,0,0,0,0
+Technology,5,0,5,3,1,2,1,1,0,0,0
+The New York Times,5,0,5,4,1,1,1,0,0,0,0
+The Walt Disney Company,5,0,5,4,1,1,1,0,0,0,0
+United States Army,5,0,5,4,1,1,1,0,0,0,0
+Wall Street,5,0,6,4,1,2,2,0,0,0,1
+Warren Buffett,5,0,5,4,1,1,1,0,0,0,0
+Advisory Committee,4,0,4,3,1,1,1,0,0,0,0
+Amazon Reef,4,0,5,3,1,1,1,0,0,0,0
+Andreas Flocken,4,0,4,3,1,1,1,0,0,0,0
+April,4,0,5,3,1,2,2,0,0,0,1
+Arthur Perdue,4,0,4,3,1,1,1,0,0,0,0
+Auto show,4,0,4,3,1,1,1,0,0,0,0
+Berkshire Hathaway,4,0,7,3,1,4,2,2,0,0,1
+Berlin Model,4,0,4,3,1,1,1,0,0,0,0
+Capital market,4,0,4,3,1,1,1,0,0,0,0
+Carl Menger,4,0,4,3,1,1,1,0,0,0,0
+Chief engineer,4,0,4,3,1,1,1,0,0,0,0
+Cloud computing,4,0,4,3,1,1,1,0,0,0,0
+Electrical engineering,4,0,4,3,1,1,1,0,0,0,0
+Exchange Alley,4,0,5,3,1,2,2,0,0,0,1
+Flight,4,0,5,3,1,2,2,0,0,0,1
+Flight management system,4,0,4,3,1,1,1,0,0,0,0
+Foothill Transit,4,0,5,3,1,2,2,0,0,0,1
+Foundation (novel series),4,0,4,3,1,1,1,0,0,0,0
+Founders Park,4,0,4,3,1,1,1,0,0,0,0
+Garbage can model,4,0,4,3,1,1,1,0,0,0,0
+Google Cloud Platform,4,0,4,3,1,1,1,0,0,0,0
+Greek Battalion of Balaklava,4,0,4,3,1,1,1,0,0,0,0
+Harvard Business School,4,0,5,3,1,2,2,0,0,0,1
+Hong Kong,4,0,5,3,1,2,2,0,0,0,1
+International Telecommunication Union,4,0,4,3,1,1,1,0,0,0,0
+Investment Advisers Act of 1940,4,0,4,3,1,1,1,0,0,0,0
+James Webb Space Telescope,4,0,4,3,1,1,1,0,0,0,0
+Johns Hopkins,4,0,4,3,1,1,1,0,0,0,0
+Journalism,4,0,4,3,1,1,1,0,0,0,0
+Kamen Rider Amazon,4,0,5,3,1,1,1,0,0,0,0
+Kwajalein Atoll,4,0,4,3,1,1,1,0,0,0,0
+Las Vegas,4,0,5,3,1,1,1,0,0,0,0
+Limited liability company,4,0,4,3,1,1,1,0,0,0,0
+Litvaks,4,0,4,3,1,1,1,0,0,0,0
+Mars in fiction,4,0,4,3,1,1,1,0,0,0,0
+Middle Ages,4,0,4,3,1,1,1,0,0,0,0
+Moon,4,0,5,3,1,2,2,0,0,0,1
+Musk,4,0,5,3,1,2,2,0,0,0,1
+National Affairs,4,0,5,3,1,2,2,0,0,0,1
+National security,4,0,4,3,1,1,1,0,0,0,0
+Naval air station,4,0,4,3,1,1,1,0,0,0,0
+New York Stock Exchange,4,0,3,3,0,0,0,0,0,0,0
+RADARSAT Constellation,4,0,4,3,1,1,1,0,0,0,0
+Reuters,4,0,4,3,0,1,1,0,0,0,1
+Robert E. Wright,4,0,4,2,1,2,1,1,0,0,0
+Royal Navy,4,0,5,3,1,2,2,0,0,0,1
+San Francisco,4,0,4,3,1,1,1,0,0,0,0
+Saturn,4,0,4,2,1,2,1,1,0,0,0
+Secondary school,4,0,4,3,1,1,1,0,0,0,0
+Super Low Altitude Test Satellite,4,0,4,3,1,1,1,0,0,0,0
+Town hall,4,0,4,3,1,1,1,0,0,0,0
+United States Air Force,4,0,4,3,1,1,1,0,0,0,0
+United States Navy,4,0,4,3,1,1,1,0,0,0,0
+"University of California, Davis",4,0,4,3,1,1,1,0,0,0,0
+Web service,4,0,4,3,1,1,1,0,0,0,0
+World Wide Web,4,0,4,3,1,1,1,0,0,0,0
+Adam Smith,3,0,3,2,1,1,1,0,0,0,0
+Airbus,3,0,3,2,1,1,1,0,0,0,0
+Arthur Wing Pinero,3,0,4,2,1,2,2,0,0,0,1
+Baltimore Orioles,3,0,3,2,1,1,1,0,0,0,0
+Bell Labs,3,0,3,2,1,1,1,0,0,0,0
+Blue Origin NS-16,3,1,5,2,1,2,2,0,0,0,1
+Blue moon,3,0,3,2,1,1,1,0,0,0,0
+Business,3,0,3,2,1,1,1,0,0,0,0
+Capitoline Hill,3,0,3,2,1,1,1,0,0,0,0
+"Carson City, Nevada",3,0,3,2,1,1,1,0,0,0,0
+Cecil Rhodes,3,0,5,1,1,4,1,3,0,0,0
+Charles Fritts,3,0,3,2,1,1,1,0,0,0,0
+China,3,0,3,2,1,1,1,0,0,0,0
+Contingent negative variation,3,0,3,2,1,1,1,0,0,0,0
+Duke University,3,0,4,2,1,2,2,0,0,0,1
+Engineering,3,0,4,2,1,2,2,0,0,0,1
+Europe,3,0,3,2,1,1,1,0,0,0,0
+Extresol Solar Power Station,3,0,3,2,1,1,1,0,0,0,0
+Florida,3,0,3,2,1,1,1,0,0,0,0
+Ford F-Series,3,0,3,2,1,1,1,0,0,0,0
+France,3,0,4,2,1,1,1,0,0,0,0
+Henry Ford,3,0,3,2,1,1,1,0,0,0,0
+Homeland security,3,0,3,2,1,1,1,0,0,0,0
+In September,3,0,3,2,1,1,1,0,0,0,0
+India,3,0,4,2,1,1,1,0,0,0,0
+Japan,3,0,4,2,1,2,2,0,0,0,1
+Kamen Rider,3,0,3,2,1,1,1,0,0,0,0
+Market value,3,0,3,2,1,1,1,0,0,0,0
+Media Matters for America,3,0,3,2,1,1,1,0,0,0,0
+Military,3,0,3,2,1,1,1,0,0,0,0
+Neurotechnology,3,0,3,2,1,1,1,0,0,0,0
+New Deal,3,0,3,2,1,1,1,0,0,0,0
+New Mexico,3,0,4,2,1,2,2,0,0,0,1
+Noah Glass,3,0,4,2,1,2,2,0,0,0,1
+O. Douglas,3,0,3,2,1,1,1,0,0,0,0
+Olympus Mons,3,0,4,2,1,2,2,0,0,0,1
+Oxford English Dictionary,3,0,4,2,1,2,2,0,0,0,1
+Pacific Ocean,3,0,3,2,1,1,1,0,0,0,0
+Powerwall,3,0,2,2,0,0,0,0,0,0,0
+Relational model,3,0,3,2,1,1,1,0,0,0,0
+Ronald Reagan,3,0,3,2,1,1,1,0,0,0,0
+SMS Amazone,3,0,4,2,1,2,2,0,0,0,1
+Saudi Arabia,3,0,4,2,1,2,2,0,0,0,1
+Sierra Nevada,3,0,3,2,1,1,1,0,0,0,0
+South Korea,3,0,3,2,1,1,1,0,0,0,0
+Space,3,0,4,2,1,2,2,0,0,0,1
+Super Bowl,3,0,3,2,1,1,1,0,0,0,0
+They,3,0,3,2,1,1,1,0,0,0,0
+Thomas Carlyle,3,0,3,2,1,1,1,0,0,0,0
+United Kingdom,3,0,3,2,1,1,1,0,0,0,0
+United States federal executive departments,3,0,3,2,1,1,1,0,0,0,0
+William O. Douglas,3,0,3,2,1,1,1,0,0,0,0
+World Governments Summit,3,0,3,2,1,1,1,0,0,0,0
+World Rally Championship,3,0,3,2,1,1,1,0,0,0,0
+World government,3,0,3,2,1,1,1,0,0,0,0
+Adposition,2,0,2,1,1,1,1,0,0,0,0
+Alfa Romeo P2,2,0,2,1,1,1,1,0,0,0,0
+Amazon Creek,2,0,2,1,1,1,1,0,0,0,0
+Amazonis Planitia,2,0,2,1,1,1,1,0,0,0,0
+Amit Agarwal,2,0,2,1,1,1,1,0,0,0,0
+Analytics,2,0,2,1,1,1,1,0,0,0,0
+Apple II,2,0,3,1,1,2,2,0,0,0,1
+Asante Empire,2,0,2,1,1,1,1,0,0,0,0
+Atlantic Ocean,2,0,3,1,1,2,1,1,0,0,0
+Atlas,2,0,2,1,1,1,1,0,0,0,0
+Atomic energy,2,0,2,1,1,1,1,0,0,0,0
+Brain–computer interface,2,0,1,1,0,0,0,0,0,0,0
+Cagiva Roadster,2,0,2,1,1,1,1,0,0,0,0
+Corporations Act 2001,2,0,2,1,1,1,1,0,0,0,0
+Das Model,2,0,2,1,1,1,1,0,0,0,0
+Dragon,2,0,2,1,1,1,1,0,0,0,0
+Earth,2,0,3,1,1,2,2,0,0,0,1
+Economy of the United States,2,0,1,1,0,0,0,0,0,0,0
+Electric motor,2,0,2,1,1,1,1,0,0,0,0
+Energy,2,0,2,1,1,1,1,0,0,0,0
+Falcon,2,0,2,1,1,1,1,0,0,0,0
+Financial market,2,0,2,1,1,1,1,0,0,0,0
+Following,2,0,2,1,1,1,1,0,0,0,0
+Founder Technology,2,0,2,1,1,1,1,0,0,0,0
+Germany,2,0,3,1,1,1,1,0,0,0,0
+Government of New York City,2,0,2,1,1,1,1,0,0,0,0
+James Bond,2,0,2,1,1,1,1,0,0,0,0
+List,2,0,2,1,1,1,1,0,0,0,0
+"Merritt Island, Florida",2,0,2,1,1,1,1,0,0,0,0
+Model,2,0,2,1,1,1,1,0,0,0,0
+Russia,2,0,3,1,1,1,1,0,0,0,0
+South Africa,2,0,2,1,1,1,1,0,0,0,0
+South Pole,2,0,2,1,1,1,1,0,0,0,0
+St. Louis,2,0,2,1,1,1,1,0,0,0,0
+States Department,2,0,3,1,1,1,1,0,0,0,0
+Texas,2,0,3,1,1,2,2,0,0,0,1
+The Electric Company,2,0,2,1,1,1,1,0,0,0,0
+United Arab Emirates,2,0,2,1,1,1,1,0,0,0,0
+United States Government Accountability Office,2,0,2,1,1,1,1,0,0,0,0
+Apollo,1,0,1,0,1,1,1,0,0,0,0
+Bernard Jean,1,0,1,0,1,1,1,0,0,0,0
+Blue Origin NS-20,1,1,2,0,1,2,2,0,0,0,1
+Cerberus Fossae,1,0,2,0,1,2,2,0,0,0,1
+Communications and Utilities Regulatory Authority,1,0,1,0,1,1,1,0,0,0,0
+Electricity,1,0,1,0,1,1,1,0,0,0,0
+Executive order,1,0,1,0,1,1,1,0,0,0,0
+In August,1,0,1,0,1,1,1,0,0,0,0
+Merlin,1,0,2,0,1,2,2,0,0,0,1
+Risk management,1,0,1,0,1,1,1,0,0,0,0
+Roman Republic,1,0,1,0,1,1,1,0,0,0,0
+Social group,1,0,1,0,1,1,1,0,0,0,0
+United States district court,1,0,1,0,1,1,1,0,0,0,0
+While,1,0,1,0,1,1,1,0,0,0,0
+World Values Survey,1,0,2,0,1,2,2,0,0,0,1
+Project Kuiper,0,1,2,0,0,0,0,0,0,0,0
+Ampex Corporation,0,3,6,0,0,5,1,4,0,0,1
+Control Wheel Steering,0,1,0,0,0,0,0,0,0,0,0
+Bloomberg UK,0,2,1,0,0,1,0,1,0,0,0
+Communications Satellite,0,2,1,0,0,1,1,0,0,0,1
+SpaceX Demo-1,0,1,1,0,0,1,0,1,0,0,0
+Atlantic Missile Range,0,1,1,0,0,1,0,1,0,0,0
+electric cars,0,1,0,0,0,0,0,0,0,0,0
+Elon Reeve Musk,0,1,0,0,0,0,0,0,0,0,0
+Forbes Media,0,1,0,0,0,0,0,0,0,0,0
+ISPs,0,1,0,0,0,0,0,0,0,0,0
+Bezos,0,2,0,0,0,0,0,0,0,0,0
+Nasdaq OMX,0,1,1,0,0,1,0,1,0,0,0
+Nasdaq Stock Market,0,1,0,0,0,0,0,0,0,0,0
+OpenAI Global,0,1,2,0,0,2,0,2,0,0,0
+Raytheon Technologies Corporation,0,2,5,0,0,5,0,5,0,0,0
+Rockets,0,1,0,0,0,0,0,0,0,0,0
+SpaceX Hawthorne,0,6,1,0,0,1,0,0,1,0,0
+SpaceX Starlink,0,2,1,0,0,1,1,0,0,0,1
+"Tesla, Inc",0,1,0,0,0,0,0,0,0,0,0
+Fremont Factory,0,1,2,0,0,2,1,1,0,0,1
+Not-a-Boring Competition,0,2,0,0,0,0,0,0,0,0,0
+World Government,0,1,1,0,0,1,1,0,0,0,1
+Twitter Blue,0,1,2,0,0,2,0,2,0,0,0
+Centrale Paris,0,0,2,0,0,2,1,1,0,0,1
+Andersen Consulting,0,0,2,0,0,2,1,1,0,0,1
+Aerospace manufacturing,0,0,2,0,0,2,0,2,0,0,0
+Air Command,0,0,1,0,0,1,1,0,0,0,1
+Amazon Basin,0,0,1,0,0,1,1,0,0,0,1
+analytics,0,0,1,0,0,1,1,0,0,0,1
+Apple Computer,0,0,2,0,0,2,0,2,0,0,0
+Michael Arougheti,0,0,1,0,0,1,1,0,0,0,1
+Bloomberg L.P,0,0,2,0,0,2,2,0,0,0,2
+Bloomberg Professional Services,0,0,1,0,0,1,1,0,0,0,1
+Blue Ring Pathfinder,0,0,1,0,0,1,1,0,0,0,1
+B-50 Superfortress,0,0,1,0,0,1,1,0,0,0,1
+Bombardier Aerospace,0,0,1,0,0,1,0,1,0,0,0
+Byron Lichtenberg,0,0,1,0,0,0,0,0,0,0,0
+International Journal,0,0,1,0,0,1,0,1,0,0,0
+Cape Kennedy,0,0,1,0,0,1,1,0,0,0,1
+Joint Long Range Proving Ground,0,0,1,0,0,1,1,0,0,0,1
+Carson City,0,0,1,0,0,1,1,0,0,0,1
+Chrysler Corporation,0,0,2,0,0,1,0,1,0,0,0
+Compaq Computer,0,0,4,0,0,2,2,0,0,0,2
+Corporations Act,0,0,1,0,0,1,1,0,0,0,1
+SpaceX Demo-2,0,0,4,0,0,2,0,2,0,0,0
+Daniel Doctoroff,0,0,1,0,0,1,0,1,0,0,0
+Christian Dior SE,0,0,1,0,0,1,0,1,0,0,0
+Electrical Engineering,0,0,1,0,0,0,0,0,0,0,0
+Electric,0,0,1,0,0,0,0,0,0,0,0
+E-jet E2,0,0,1,0,0,0,0,0,0,0,0
+Amsterdam Stock Exchange,0,0,1,0,0,1,1,0,0,0,1
+Flight Test,0,0,1,0,0,1,1,0,0,0,1
+Ford F-150,0,0,1,0,0,0,0,0,0,0,0
+Ford Motor,0,0,1,0,0,1,0,1,0,0,0
+Ford Motor Company Limited,0,0,1,0,0,1,0,1,0,0,0
+Fort Lauderdale,0,0,1,0,0,1,1,0,0,0,1
+Foundation Series,0,0,1,0,0,1,1,0,0,0,1
+Carolina Stadium,0,0,1,0,0,0,0,0,0,0,0
+Giga Nevada,0,0,2,0,0,2,2,0,0,0,2
+Google Cloud,0,0,1,0,0,1,1,0,0,0,1
+Amazons Company,0,0,1,0,0,1,1,0,0,0,1
+Homeland Security,0,0,1,0,0,1,0,1,0,0,0
+Horniman Circle,0,0,1,0,0,1,1,0,0,0,1
+Hughes Aircraft,0,0,1,0,0,1,1,0,0,0,1
+TUM Boring,0,0,1,0,0,0,0,0,0,0,0
+Informix Software,0,0,5,0,0,5,0,5,0,0,0
+Intel Corporation,0,0,4,0,0,4,3,1,0,0,3
+Webb Space Telescope,0,0,1,0,0,1,1,0,0,0,1
+Jersey City,0,0,1,0,0,0,0,0,0,0,0
+Alain Chevalier,0,0,2,0,0,2,1,1,0,0,1
+Major General,0,0,1,0,0,1,1,0,0,0,1
+Media Matters,0,0,1,0,0,1,1,0,0,0,1
+Merritt Island,0,0,1,0,0,1,1,0,0,0,1
+Microsoft Corporation,0,0,2,0,0,2,1,1,0,0,1
+Mission Control Center,0,0,3,0,0,3,0,3,0,0,0
+Deep Space Network,0,0,1,0,0,1,1,0,0,0,1
+Nevada Corporation,0,0,2,0,0,1,0,1,0,0,0
+NYSE,0,0,1,0,0,1,1,0,0,0,1
+North American,0,0,1,0,0,1,1,0,0,0,1
+Oracle Cloud Infrastructure,0,0,1,0,0,1,1,0,0,0,1
+Phibro Corporation,0,0,1,0,0,1,0,1,0,0,0
+Sony PlayStation,0,0,2,0,0,1,0,1,0,0,0
+Kistler Aerospace,0,0,1,0,0,1,1,0,0,0,1
+Satellite Radio,0,0,4,0,0,2,2,0,0,0,2
+Advanced Vehicle Systems,0,0,2,0,0,2,1,1,0,0,1
+Software Development,0,0,1,0,0,1,1,0,0,0,1
+SolarCity Corporation,0,0,2,0,0,2,1,1,0,0,1
+US Deorbit Vehicle,0,0,1,0,0,1,1,0,0,0,1
+Sustainable Development,0,0,1,0,0,1,1,0,0,0,1
+Lars Moravy,0,0,1,0,0,1,1,0,0,0,1
+New York Times,0,0,1,0,0,1,0,1,0,0,0
+Washington Post,0,0,1,0,0,1,0,1,0,0,0
+Obvious Corporation,0,0,1,0,0,1,0,1,0,0,0
+US Air,0,0,1,0,0,1,1,0,0,0,1
+US Air Force,0,0,1,0,0,1,1,0,0,0,1
+US Army,0,0,1,0,0,1,1,0,0,0,1
+U.S. Atomic Energy Commission,0,0,1,0,0,0,0,0,0,0,0
+Government Accountability Office,0,0,2,0,0,1,1,0,0,0,1
+US Navy,0,0,1,0,0,1,1,0,0,0,1
+U.S. District Court,0,0,1,0,0,0,0,0,0,0,0
+UC Davis,0,0,1,0,0,1,1,0,0,0,1
+World Bank,0,0,1,0,0,1,1,0,0,0,1
+World Government Summit,0,0,1,0,0,1,1,0,0,0,1
+World Rally,0,0,1,0,0,1,1,0,0,0,1
+X Corp,0,0,1,0,0,1,0,1,0,0,0
+York City,0,0,1,0,0,1,1,0,0,0,1
+Falcon 9,0,0,0,0,0,1,1,0,0,0,1
+Blue Origin,0,0,0,0,0,2,0,2,0,0,0
+Gigafactory,0,0,0,0,0,1,0,1,0,0,0
+Space tourism,0,0,0,0,0,1,0,1,0,0,0
+Tesla Model 3,0,0,0,0,0,1,0,1,0,0,0
+Supercharger,0,0,0,0,0,1,0,1,0,0,0
+Private spaceflight,0,0,0,0,0,1,0,1,0,0,0

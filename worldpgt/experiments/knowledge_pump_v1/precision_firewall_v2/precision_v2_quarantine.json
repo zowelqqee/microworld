@@ -1,0 +1,24 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mark Carney",
+      "predicate": "leader_of",
+      "object": "Liberal Party",
+      "source_page": "Mark Carney",
+      "evidence_text": "leadership of the Liberal Party",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "snapshot_source_title": "Mark Carney",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Mark_Carney",
+      "snapshot_retrieved_at": "2026-06-17T17:18:44Z",
+      "snapshot_revision_id": 1359301317,
+      "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-402-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_predicate"
+  }
+]
