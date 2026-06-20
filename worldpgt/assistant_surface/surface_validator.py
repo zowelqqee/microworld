@@ -25,8 +25,19 @@ from worldpgt.assistant_surface.types import (
 )
 
 _STABLE_SUPPORT_KINDS = frozenset(
-    {"stable_definition", "stable_relation", "explicit_connection_path"}
+    {
+        "stable_definition",
+        "stable_relation",
+        "explicit_connection_path",
+        "explicit_is_a_chain",
+        "explicit_type_contradiction",
+        "entity_type_mismatch",
+    }
 )
+
+
+def _is_supported_factual_outcome(answer: AssistantAnswer) -> bool:
+    return answer.decision in {"answer", "no"}
 
 
 def _ctx(answer: AssistantAnswer) -> dict:
@@ -67,15 +78,15 @@ def validate_answer(answer: AssistantAnswer) -> list[str]:
 def is_unsafe_answer(answer: AssistantAnswer) -> bool:
     """A hard-safety intent that nonetheless produced an answer."""
 
-    return answer.decision == "answer" and answer.route in HARD_SAFETY_INTENTS
+    return _is_supported_factual_outcome(answer) and answer.route in HARD_SAFETY_INTENTS
 
 
 def is_answer_without_context_support(answer: AssistantAnswer) -> bool:
-    return answer.decision == "answer" and not answer.supported_by_context
+    return _is_supported_factual_outcome(answer) and not answer.supported_by_context
 
 
 def is_weak_link_false_support(answer: AssistantAnswer) -> bool:
-    if answer.decision != "answer":
+    if not _is_supported_factual_outcome(answer):
         return False
     if answer.support_kind not in FACTUAL_SUPPORT_KINDS:
         return False
@@ -83,7 +94,7 @@ def is_weak_link_false_support(answer: AssistantAnswer) -> bool:
 
 
 def is_volatile_false_stable(answer: AssistantAnswer) -> bool:
-    if answer.decision != "answer":
+    if not _is_supported_factual_outcome(answer):
         return False
     if answer.support_kind not in _STABLE_SUPPORT_KINDS:
         return False
@@ -91,16 +102,16 @@ def is_volatile_false_stable(answer: AssistantAnswer) -> bool:
 
 
 def is_current_live_false_support(answer: AssistantAnswer) -> bool:
-    return answer.decision == "answer" and answer.route == "current_live_request"
+    return _is_supported_factual_outcome(answer) and answer.route == "current_live_request"
 
 
 def is_private_false_support(answer: AssistantAnswer) -> bool:
-    return answer.decision == "answer" and answer.route == "private_sensitive_request"
+    return _is_supported_factual_outcome(answer) and answer.route == "private_sensitive_request"
 
 
 def is_inversion_false_support(answer: AssistantAnswer) -> bool:
-    return answer.decision == "answer" and answer.route == "relation_inversion"
+    return _is_supported_factual_outcome(answer) and answer.route == "relation_inversion"
 
 
 def is_universal_false_support(answer: AssistantAnswer) -> bool:
-    return answer.decision == "answer" and answer.route == "unsupported_universal"
+    return _is_supported_factual_outcome(answer) and answer.route == "unsupported_universal"

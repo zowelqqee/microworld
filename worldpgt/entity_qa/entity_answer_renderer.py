@@ -9,6 +9,8 @@ from __future__ import annotations
 import re
 
 from worldpgt.entity_qa.types import EntityQAPlan
+from worldpgt.knowledge.temporal_classification import temporal_caveat, weakest_temporal_class
+from worldpgt.relation_extraction_v2.relation_policy import should_hedge_render
 
 _AUDIT_PREFIX = "I cannot answer from the wiki overlay because "
 
@@ -45,6 +47,8 @@ _VERB_OBJECT_PHRASE: dict[str, str] = {
 def render(plan: EntityQAPlan) -> str:
     if plan.decision == "audit":
         return _render_audit(plan)
+    if plan.decision == "no":
+        return _render_negated_is_a(plan.render_args)
 
     t = plan.render_template
     args = plan.render_args
@@ -53,6 +57,14 @@ def render(plan: EntityQAPlan) -> str:
         return _render_define(args)
     if t == "relation_lookup":
         return _render_relation(args)
+    if t == "inverse_relation_lookup":
+        return _render_inverse_relation(args)
+    if t == "comparative_intersection":
+        return _render_comparative_intersection(args)
+    if t == "ontology_is_a":
+        return _render_ontology_is_a(args)
+    if t == "negated_is_a":
+        return _render_negated_is_a(args)
     if t == "link_explanation":
         return _render_link_explanation(args)
     if t == "source_fact_lookup":
@@ -73,6 +85,25 @@ def render(plan: EntityQAPlan) -> str:
 def _render_audit(plan: EntityQAPlan) -> str:
     reason = plan.render_args.get("reason", plan.audit_reason or "unsupported query")
     return _AUDIT_PREFIX + _lowercase_first(str(reason))
+
+
+def _render_negated_is_a(args: dict) -> str:
+    subject = str(args.get("subject") or "")
+    target = str(args.get("target") or "")
+    actual_class = str(args.get("actual_class") or "")
+    support_kind = str(args.get("support_kind") or "")
+
+    if support_kind == "entity_type_mismatch":
+        return (
+            f"No. {subject} is {_article_phrase(actual_class)}, "
+            f"not {_article_phrase(target)}. The question's premise is incompatible "
+            f"with {subject}'s known type."
+        )
+
+    return (
+        f"No. {subject} is known to be {_article_phrase(actual_class)}, "
+        f"which contradicts {_article_phrase(target)}."
+    )
 
 
 def _render_define(args: dict) -> str:
@@ -114,7 +145,7 @@ def _render_define(args: dict) -> str:
         verb_clauses: list[str] = []
         for pred, objects in pred_groups.items():
             obj_list = _join_list(objects)
-            if pred == "leader_of":
+            if should_hedge_render(pred):
                 copular_clauses.append(f"linked to {obj_list} through leadership")
             elif pred == "known_for":
                 copular_clauses.append(f"known for {obj_list}")
@@ -149,6 +180,9 @@ def _render_define(args: dict) -> str:
             prefix = "In the overlay, " if parts else ""
             parts.append(f"{prefix}{label} {_join_clauses(verb_clauses)}.")
 
+    caveat = _relations_temporal_caveat(relations)
+    if caveat:
+        parts.append(caveat)
     return " ".join(parts).strip()
 
 
@@ -170,7 +204,9 @@ def _render_relation(args: dict) -> str:
         ]
         if founders:
             founder_list = _join_list(founders)
-            return f"{subject} was founded by {founder_list}."
+            caveat = _relations_temporal_caveat(relations)
+            suffix = f" {caveat}" if caveat else ""
+            return f"{subject} was founded by {founder_list}.{suffix}"
 
     # Group by predicate, collecting objects.
     pred_groups: dict[str, list[str]] = {}
@@ -180,7 +216,7 @@ def _render_relation(args: dict) -> str:
     sentences: list[str] = []
     for pred, objects in pred_groups.items():
         obj_list = _join_list(objects)
-        if pred == "leader_of":
+        if should_hedge_render(pred):
             sentences.append(f"{subject} is linked to {obj_list} through leadership.")
         elif pred == "known_for":
             sentences.append(f"{subject} is known for {obj_list}.")
@@ -203,7 +239,103 @@ def _render_relation(args: dict) -> str:
             verb = _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}")
             sentences.append(f"{subject} {verb} {obj_list}.")
 
+    caveat = _relations_temporal_caveat(relations)
+    if caveat:
+        sentences.append(caveat)
     return " ".join(sentences)
+
+
+def _render_inverse_relation(args: dict) -> str:
+    known_object = args.get("known_object")
+    predicate = args.get("predicate")
+    relations: list[dict] = args.get("relations", [])
+    subjects = _join_list([r.get("subject", "") for r in relations if r.get("subject")])
+    caveat = _sentence_suffix(_relations_temporal_caveat(relations))
+
+    if not subjects:
+        return f"No {predicate} relation found for {known_object}."
+
+    if predicate == "owned_by":
+        return f"{known_object} owns {subjects}.{caveat}"
+    if predicate == "leader_of":
+        return f"{subjects} leads {known_object}.{caveat}"
+    if predicate == "develops":
+        return f"{subjects} develops {known_object}.{caveat}"
+    if predicate == "produces":
+        return f"{subjects} produces {known_object}.{caveat}"
+    if predicate == "publishes":
+        return f"{subjects} publishes {known_object}.{caveat}"
+    if predicate == "developed_by":
+        return f"{subjects} was developed by {known_object}.{caveat}"
+    if predicate == "created_by":
+        return f"{subjects} was created by {known_object}.{caveat}"
+    if predicate == "published_by":
+        return f"{subjects} was published by {known_object}.{caveat}"
+    if predicate == "subsidiary_of":
+        return f"{subjects} is a subsidiary of {known_object}.{caveat}"
+
+    return f"{subjects} has relation {predicate} to {known_object}.{caveat}"
+
+
+def _render_comparative_intersection(args: dict) -> str:
+    entity_a = str(args.get("entity_a") or "")
+    entity_b = str(args.get("entity_b") or "")
+    common_pairs: list[dict] = args.get("common_pairs", [])
+    common_classes: list[dict] = args.get("common_classes", [])
+
+    clauses: list[str] = []
+    classes = [str(item.get("class") or "") for item in common_classes if item.get("class")]
+    if classes:
+        clauses.append(f"both are {_join_list([_article_phrase(c) for c in classes])}")
+
+    grouped: dict[str, list[str]] = {}
+    for item in common_pairs:
+        predicate = str(item.get("predicate") or "")
+        obj = str(item.get("object") or "")
+        if predicate and obj:
+            grouped.setdefault(predicate, []).append(obj)
+
+    for predicate, objects in grouped.items():
+        obj_list = _join_list(objects)
+        if predicate == "develops":
+            clauses.append(f"both develop {obj_list}")
+        elif predicate == "produces":
+            clauses.append(f"both produce {obj_list}")
+        elif predicate == "publishes":
+            clauses.append(f"both publish {obj_list}")
+        elif predicate == "known_for":
+            clauses.append(f"both are known for {obj_list}")
+        elif predicate == "owned_by":
+            clauses.append(f"both are owned by {obj_list}")
+        elif predicate == "founded_by":
+            clauses.append(f"both were founded by {obj_list}")
+        else:
+            phrase = _VERB_OBJECT_PHRASE.get(predicate)
+            if phrase:
+                clauses.append(f"both {phrase} {obj_list}")
+            else:
+                clauses.append(f"both have {predicate} {obj_list}")
+
+    if not clauses:
+        return f"No common facts found for {entity_a} and {entity_b} in the overlay."
+
+    return f"{entity_a} and {entity_b} have these facts in common: {_join_clauses(clauses)}."
+
+
+def _render_ontology_is_a(args: dict) -> str:
+    subject: str = args.get("subject", "")
+    path: list = args.get("path", [])
+    if not path:
+        return f"No explicit is_a path found for {subject} in the overlay."
+
+    clauses: list[str] = []
+    for idx, edge in enumerate(path):
+        obj = _article_phrase(edge.object)
+        if idx == 0:
+            clauses.append(f"{edge.subject} is {obj}")
+        else:
+            clauses.append(f"which is {obj}")
+    return "Yes. " + ", ".join(clauses) + "."
 
 
 def _render_link_explanation(args: dict) -> str:
@@ -243,7 +375,7 @@ def _render_source_fact(args: dict) -> str:
         parts.append(
             f"According to {source} as of {as_of}, "
             f"{subject}'s {pred_phrase} is {obj}. "
-            f"This is a volatile source-qualified estimate and should be rechecked."
+            f"This is a snapshot, volatile source-qualified estimate and should be rechecked."
         )
 
     return " ".join(parts)
@@ -336,6 +468,18 @@ def _join_list(items: list[str]) -> str:
     if len(items) == 2:
         return f"{items[0]} and {items[1]}"
     return ", ".join(items[:-1]) + f", and {items[-1]}"
+
+
+def _relations_temporal_caveat(relations: list[dict]) -> str:
+    classes = [str(r.get("temporal_class", "")) for r in relations if r.get("temporal_class")]
+    if not classes:
+        return ""
+    temporal_class = weakest_temporal_class(classes)
+    return temporal_caveat(temporal_class, [str(r.get("as_of", "")) for r in relations])
+
+
+def _sentence_suffix(text: str) -> str:
+    return f" {text}" if text else ""
 
 
 def _article_phrase(text: str) -> str:

@@ -27,6 +27,8 @@ from worldpgt.self_ingestion.overlay_delta_validator import (
     REASON_HIGH_RISK,
     REASON_INVERTED,
     REASON_PRIVATE,
+    REASON_SNAPSHOT_REQUIRES_AS_OF,
+    REASON_AGGREGATE_REQUIRES_AS_OF,
     REASON_VOLATILE,
     REASON_WEAK_LINK_PROMOTED,
     validate_delta,
@@ -73,11 +75,12 @@ def promotion(tmp_path_factory):
 
 def test_validator_accepts_safe_delta():
     result = validate_delta(_delta_items(), _base_items())
-    assert result.accepted_count == 27
-    assert result.rejected_count == 0
-    assert result.blocked_count == 0
-    assert result.safe_to_promote is True
-    assert len(result.accepted_item_ids) == 27
+    assert result.accepted_count == 26
+    assert result.rejected_count == 1
+    assert result.blocked_count == 1
+    assert result.safe_to_promote is False
+    assert len(result.accepted_item_ids) == 26
+    assert result.rejected_items[0]["reason"] == REASON_SNAPSHOT_REQUIRES_AS_OF
 
 
 # ---------------------------------------------------------------------------
@@ -111,6 +114,35 @@ def test_validator_blocks_current_volatile_relation():
     r = validate_delta([bad], _base_items())
     assert r.accepted_count == 0
     assert r.rejected_items[0]["reason"] == REASON_VOLATILE
+
+
+def test_validator_rejects_snapshot_without_as_of():
+    bad = {"overlay_type": "overlay_relation", "subject": "Z", "predicate": "leader_of",
+           "object": "Acme", "evidence_text": "Z leads Acme",
+           "stability": "semi_stable", "risk": "medium", "temporal_class": "snapshot"}
+    r = validate_delta([bad], _base_items())
+    assert r.accepted_count == 0
+    assert r.rejected_items[0]["reason"] == REASON_SNAPSHOT_REQUIRES_AS_OF
+
+
+def test_validator_accepts_snapshot_with_as_of_and_warns_recheck():
+    good = {"overlay_type": "overlay_relation", "subject": "Z", "predicate": "leader_of",
+            "object": "Acme", "evidence_text": "Z leads Acme",
+            "stability": "semi_stable", "risk": "medium",
+            "temporal_class": "snapshot", "as_of": "2026-06"}
+    r = validate_delta([good], _base_items())
+    assert r.accepted_count == 1
+    assert r.rejected_count == 0
+    assert any("snapshot_as_of_recheck_required" in w for w in r.warnings)
+
+
+def test_validator_rejects_aggregate_without_as_of():
+    bad = {"overlay_type": "overlay_relation", "subject": "Z", "predicate": "employee_count",
+           "object": "5000 employees", "evidence_text": "Z has 5000 employees",
+           "stability": "semi_stable", "risk": "medium", "temporal_class": "aggregate"}
+    r = validate_delta([bad], _base_items())
+    assert r.accepted_count == 0
+    assert r.rejected_items[0]["reason"] == REASON_AGGREGATE_REQUIRES_AS_OF
 
 
 def test_validator_blocks_private_data():
@@ -164,10 +196,10 @@ def test_validator_blocks_duplicate_existing():
 
 
 def test_promoted_overlay_has_310_items(promotion):
-    assert len(promotion["promoted"]) == 310
-    assert promotion["report"]["promoted_overlay_items"] == 310
+    assert len(promotion["promoted"]) == 309
+    assert promotion["report"]["promoted_overlay_items"] == 309
     assert promotion["report"]["base_overlay_items"] == 283
-    assert promotion["report"]["accepted_delta_items"] == 27
+    assert promotion["report"]["accepted_delta_items"] == 26
 
 
 def test_base_overlay_preserved(promotion):
@@ -225,7 +257,7 @@ def test_regression_summary_green(promotion):
 
 def test_report_safety_flags(promotion):
     report = promotion["report"]
-    assert report["safe_to_promote"] is True
+    assert report["safe_to_promote"] is False
     assert report["safe_for_general_runtime"] is False
     assert report["trusted_memory_modified"] is False
     assert report["accepted_overlay_modified"] is False
@@ -278,7 +310,7 @@ def test_promoter_direct_api_matches_counts():
         out = Path(td) / "promoted.json"
         result = promote(str(_BASE_OVERLAY), str(_DELTA), str(out))
         assert result.base_count == 283
-        assert result.accepted_delta_count == 27
-        assert result.promoted_count == 310
+        assert result.accepted_delta_count == 26
+        assert result.promoted_count == 309
         assert result.meta["safe_for_general_runtime"] is False
         assert result.meta["trusted_general_runtime_memory"] is False

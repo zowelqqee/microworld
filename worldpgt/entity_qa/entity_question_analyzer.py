@@ -16,19 +16,21 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-from worldpgt.entity_qa.types import AnalyzedEntityQuestion, EntityQAIntent
+from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
+from worldpgt.entity_qa.types import AnalyzedEntityQuestion, EntityQAIntent, SemanticQuery
 
 # ---- current / volatile query signals ---------------------------------
 _CURRENT_SIGNALS = re.compile(
     r"\b(current\s+ceo|current\s+stock\s+price|current\s+valuation|"
     r"current\s+market\s+cap|current\s+price|stock\s+price|"
-    r"current\s+president|current\s+office)\b",
+    r"current\s+president|current\s+office|current\s+net\s+worth)\b",
     re.IGNORECASE,
 )
 
 _PERSONAL_SIGNALS = re.compile(
     r"\b(favorite\s+food|favorite\s+color|favorite\s+hobby|personal\s+life|"
-    r"home\s+address|phone\s+number|date\s+of\s+birth|age\s+of)\b",
+    r"home\s+address|phone\s+number|date\s+of\s+birth|age\s+of|"
+    r"password|private\s+email|personal\s+email|social\s+security)\b",
     re.IGNORECASE,
 )
 
@@ -118,6 +120,31 @@ _IS_STABLE_REL_RE = re.compile(
     re.IGNORECASE,
 )
 
+_RELATION_ASSERTION_RE = re.compile(
+    r"^(?:did|does|is|was|were)\s+.+?\b("
+    r"found|founded|founder\s+of|creator\s+of|created|lead|leads|led|"
+    r"own|owns|owned\s+by|develop|develops|produce|produces|publish|publishes|"
+    r"build|builds|make|makes"
+    r")\b.+?[\?\.]?$",
+    re.IGNORECASE,
+)
+_CONDITIONAL_RELATION_ASSERTION_RE = re.compile(
+    r"^\s*if\b.+?\b(found|founded|lead|leads|own|owns|develops?|produces?|"
+    r"publishes?|makes?|builds?|known\s+for)\b",
+    re.IGNORECASE,
+)
+_WEAK_LINK_ASSERTION_RE = re.compile(
+    r"^\s*because\b.+?\blinked\b.+?\b(lead|leads|own|owns|found|founded|company)\b",
+    re.IGNORECASE,
+)
+_DECLARATIVE_RELATION_ASSERTION_RE = re.compile(
+    r"^(?!\s*(?:who|what|which|how|why|is|was|were|does|did)\b).+?\b("
+    r"found|founded|lead|leads|own|owns|develop|develops|produce|produces|"
+    r"publish|publishes|make|makes|build|builds"
+    r")\b.+[\?\.]?$",
+    re.IGNORECASE,
+)
+
 # ---- relation lookup ------------------------------------------------
 _KNOWN_FOR_RE = re.compile(
     r"what\s+is\s+(.+?)\s+known\s+for\b",
@@ -179,6 +206,10 @@ _OWNED_BY_RE = re.compile(
     r"who\s+is\s+(.+?)\s+owned\s+by[\?.]?$",
     re.IGNORECASE,
 )
+_IS_A_CLASS_RE = re.compile(
+    r"^is\s+(.+?)\s+an?\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
 
 # ---- define entity --------------------------------------------------
 _WHO_IS_RE = re.compile(
@@ -213,6 +244,8 @@ _PASSIVE_VERB_PREDICATE: dict[str, str] = {
     "produced": "produces",
     "published": "publishes",
 }
+
+_SEMANTIC_HIGH_CONFIDENCE = 0.75
 
 # verb -> predicate mapping
 _VERB_PREDICATE: dict[str, str] = {
@@ -420,6 +453,41 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    m = _IS_STABLE_REL_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="link_explanation",
+            subject=_clean(m.group(2)),
+            predicate_hint="stability_relation_check",
+            secondary_entity=_clean(m.group(1)),
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    if (
+        _RELATION_ASSERTION_RE.search(q)
+        or _CONDITIONAL_RELATION_ASSERTION_RE.search(q)
+        or _WEAK_LINK_ASSERTION_RE.search(q)
+        or _DECLARATIVE_RELATION_ASSERTION_RE.search(q)
+    ):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="unknown_or_unsupported",
+            subject=None,
+            predicate_hint="relation_assertion_not_lookup",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=True,
+        )
+
+    semantic = parse_semantic_query(q)
+    semantic_analyzed = _analyze_semantic(q, semantic)
+    if semantic_analyzed is not None:
+        return semantic_analyzed
+
     # 6. Link explanation
     m = _LINK_EXPL_RE.search(q)
     if m:
@@ -591,6 +659,20 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    # 10a. Class membership — "Is X a/an Y?"
+    m = _IS_A_CLASS_RE.match(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="is_a",
+            secondary_entity=_clean(m.group(2)),
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     # 10b. Define entity — paraphrases ("Define X", "Tell me about X", "What kind of ... is X")
     m = _DEFINE_RE.match(q) or _DEFINE_KIND_RE.match(q) or _DEFINE_TELL_RE.match(q)
     if m:
@@ -653,11 +735,12 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         question=q,
         intent="unknown_or_unsupported",
         subject=None,
-        predicate_hint=None,
+        predicate_hint="question_not_understood",
         secondary_entity=None,
         source_hint=None,
         is_current_query=False,
         is_unsupported=True,
+        semantic_query=semantic,
     )
 
 
@@ -669,4 +752,88 @@ def _extract_subject_from_current(q: str) -> Optional[str]:
     m = re.search(r"(?:of|for|about)\s+(.+?)(?:\?|$)", q, re.IGNORECASE)
     if m:
         return _clean(m.group(1))
+    return None
+
+
+def _analyze_semantic(
+    question: str,
+    semantic: SemanticQuery,
+) -> Optional[AnalyzedEntityQuestion]:
+    if semantic.confidence < _SEMANTIC_HIGH_CONFIDENCE:
+        return None
+
+    if semantic.query_type == "definition" and semantic.entity_a:
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="define_entity",
+            subject=semantic.entity_a,
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
+    if semantic.query_type == "is_a" and semantic.entity_a and semantic.entity_b:
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="relation_lookup",
+            subject=semantic.entity_a,
+            predicate_hint="is_a",
+            secondary_entity=semantic.entity_b,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
+    if semantic.unknown_position == "path" and semantic.entity_a and semantic.entity_b:
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="relation_lookup",
+            subject=semantic.entity_a,
+            predicate_hint="connection",
+            secondary_entity=semantic.entity_b,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
+    if semantic.unknown_position == "intersection":
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="relation_lookup",
+            subject=semantic.entity_a,
+            predicate_hint="intersection",
+            secondary_entity=semantic.entity_b,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
+    if semantic.relation_intent and semantic.entity_a:
+        predicate_hint = semantic.relation_intent
+        if predicate_hint == "founded_by" and question.lower().startswith("who founded "):
+            predicate_hint = "founded"
+        if predicate_hint == "founded_by" and re.match(
+            r"^(?:what|which)\b.*\bdid\s+.+?\s+found\b",
+            question,
+            re.IGNORECASE,
+        ):
+            predicate_hint = "founded"
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="relation_lookup",
+            subject=semantic.entity_a,
+            predicate_hint=predicate_hint,
+            secondary_entity=semantic.entity_b,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
     return None

@@ -546,6 +546,43 @@ def test_renderer_connection_answer_format():
     )
 
 
+def test_renderer_connection_snapshot_hop_adds_temporal_caveat():
+    edge1 = HopEdge(
+        "Acme Labs", "owned_by", "Northstar Holdings",
+        temporal_class="snapshot", as_of="2026-06",
+    )
+    edge2 = HopEdge("Northstar Holdings", "founded_by", "Ada Stone", temporal_class="historical")
+    path = MultihopPath(edge1, edge2, "Northstar Holdings")
+    mq = MultihopQuestion(
+        "How is Acme Labs connected to Ada Stone?", "connection",
+        endpoint_a="Acme Labs", endpoint_c="Ada Stone",
+    )
+    from worldpgt.multihop_qa.types import MultihopEvidence, MultihopPlan
+    plan = MultihopPlan(
+        question=mq, decision="answer", audit_reason=None,
+        path=path, chain_label="owned_by_then_founded_by",
+        render_args={"a": "Acme Labs", "b": "Northstar Holdings", "c": "Ada Stone",
+                     "hop1": edge1, "hop2": edge2},
+        evidence=MultihopEvidence(hops_used=[edge1.display(), edge2.display()]),
+    )
+    text = render(plan)
+    assert "snapshot fact as of 2026-06" in text
+    assert "should be rechecked" in text
+
+
+def test_snapshot_hop_without_as_of_audits():
+    relations = [
+        {"subject": "Acme Labs", "predicate": "owned_by", "object": "Northstar Holdings",
+         "overlay_type": "overlay_relation", "temporal_class": "snapshot"},
+        {"subject": "Northstar Holdings", "predicate": "founded_by", "object": "Ada Stone",
+         "overlay_type": "overlay_relation", "temporal_class": "historical"},
+    ]
+    planner = MultihopPlanner(RelationGraph(relations))
+    plan = planner.plan(analyze("How is Acme Labs connected to Ada Stone?"))
+    assert plan.decision == "audit"
+    assert "snapshot_missing_as_of:owned_by" in plan.audit_reason
+
+
 def test_renderer_develops_isa_format():
     edge1 = HopEdge("Acme Labs", "develops", "Nova Engine")
     edge2 = HopEdge("Nova Engine", "is_a", "rocket engine")

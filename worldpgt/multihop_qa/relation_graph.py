@@ -83,6 +83,8 @@ class RelationGraph:
             stability=meta.get("stability", ""),
             risk=meta.get("risk", ""),
             source_page=meta.get("source_page", ""),
+            temporal_class=meta.get("temporal_class", ""),
+            as_of=meta.get("as_of", ""),
         )
 
     # ------------------------------------------------------------------

@@ -29,6 +29,7 @@ OverlayTrust = Literal[
 
 OverlayRisk = Literal["low", "medium", "high"]
 OverlayStability = Literal["stable", "semi_stable", "volatile"]
+OverlayTemporalClass = Literal["historical", "snapshot", "aggregate", "derived"]
 
 SAFE_FOR_GENERAL_RUNTIME: bool = False
 
@@ -57,6 +58,7 @@ class OverlayDefinition:
     trust: OverlayTrust = "overlay_candidate"
     risk: OverlayRisk = "low"
     stability: OverlayStability = "stable"
+    temporal_class: OverlayTemporalClass = "historical"
 
 
 @dataclass
@@ -70,6 +72,8 @@ class OverlayRelation:
     trust: OverlayTrust = "overlay_candidate"
     risk: OverlayRisk = "medium"
     stability: OverlayStability = "semi_stable"
+    temporal_class: OverlayTemporalClass = "historical"
+    as_of: str = ""
 
 
 @dataclass
@@ -92,6 +96,7 @@ class OverlaySourceFact:
     source_name: str = ""
     as_of: str = ""
     claim_type: str = "time_sensitive_estimate"
+    temporal_class: OverlayTemporalClass = "snapshot"
     source_page: str = ""
     evidence_text: str = ""
     requires_recheck: bool = True

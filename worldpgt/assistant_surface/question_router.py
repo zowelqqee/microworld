@@ -24,6 +24,7 @@ from __future__ import annotations
 import re
 
 from worldpgt.assistant_surface.types import AssistantRoute
+from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 
 # --------------------------------------------------------------------------- #
 # Hard-safety signals (checked first, in priority order).
@@ -39,6 +40,7 @@ _CURRENT_LIVE_RE = re.compile(
     r"\b(current\s+stock\s+price|stock\s+price|share\s+price|current\s+price|"
     r"current\s+valuation|current\s+market\s+cap|live\s+market\s+cap|"
     r"market\s+cap(?:italization)?|worth\s+right\s+now|right\s+now|today|"
+    r"current\s+net\s+worth|"
     r"latest\s+quarterly\s+revenue|latest\s+revenue|quarterly\s+revenue|"
     r"current\s+ceo|currently|latest\s+ranking|live\s+right\s+now|"
     r"permanently\b.*\bnet\s+worth|net\s+worth\b.*\bpermanently)\b",
@@ -122,6 +124,10 @@ _RELATION_RE = re.compile(
     r"(?:what|which)\s+(?:company\s+)?did\s+(.+?)\s+found[\?\.]?$|"
     r"what\s+is\s+(.+?)\s+known\s+for\b|"
     r"what\s+companies\s+is\s+(.+?)\s+linked\s+to\s+by\s+leadership\b)",
+    re.IGNORECASE,
+)
+_IS_A_CLASS_RE = re.compile(
+    r"^is\s+(.+?)\s+an?\s+(.+?)[\?\.]?$",
     re.IGNORECASE,
 )
 
@@ -235,6 +241,40 @@ def route(question: str) -> AssistantRoute:
             notes="source-qualified (volatile) fact lookup",
         )
 
+    semantic = parse_semantic_query(q)
+    if semantic.confidence >= 0.75:
+        if semantic.unknown_position == "path" and semantic.entity_a and semantic.entity_b:
+            return AssistantRoute(
+                question=q,
+                intent="connection_path",
+                subject=semantic.entity_a,
+                secondary=semantic.entity_b,
+                notes="semantic path query",
+            )
+        if semantic.query_type == "definition" and semantic.entity_a:
+            return AssistantRoute(
+                question=q,
+                intent="entity_definition",
+                subject=semantic.entity_a,
+                notes="semantic definition query",
+            )
+        if semantic.query_type == "comparative":
+            return AssistantRoute(
+                question=q,
+                intent="entity_relation",
+                subject=semantic.entity_a,
+                secondary=semantic.entity_b,
+                notes="semantic intersection query",
+            )
+        if semantic.relation_intent and semantic.entity_a:
+            return AssistantRoute(
+                question=q,
+                intent="entity_relation",
+                subject=semantic.entity_a,
+                secondary=semantic.entity_b,
+                notes="semantic relation query",
+            )
+
     # ---- 4. Connection / path ---------------------------------------- #
     cn = _CONNECTION_RE.search(q)
     if cn:
@@ -249,6 +289,16 @@ def route(question: str) -> AssistantRoute:
         )
 
     # ---- 5. Entity relation ------------------------------------------ #
+    isa = _IS_A_CLASS_RE.match(q)
+    if isa:
+        return AssistantRoute(
+            question=q,
+            intent="entity_relation",
+            subject=isa.group(1).strip(),
+            secondary=isa.group(2).strip(),
+            notes="entity class-membership lookup",
+        )
+
     rl = _RELATION_RE.search(q)
     if rl:
         subj = _first_group(rl, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
@@ -271,8 +321,9 @@ def route(question: str) -> AssistantRoute:
         )
 
     # ---- 7. Fallback ------------------------------------------------- #
+    fallback_notes = "question not understood" if semantic.confidence < 0.35 else "no conservative intent matched"
     return AssistantRoute(
         question=q,
         intent="unknown_or_unsupported",
-        notes="no conservative intent matched",
+        notes=fallback_notes,
     )

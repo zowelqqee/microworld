@@ -1,1 +1,23 @@
 title,score,expected_yield_class,source_hint,positive_reasons
+SpaceX,140.0,high,Blue Origin,source_page_produced_accepted_fact; subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Bloomberg News,115.0,high,Bloomberg L.P.,source_page_produced_accepted_fact; subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source; gap_driven_entity
+Jeff Bezos,111.0,high,Billionaire,source_page_produced_accepted_fact; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.00
+Falcon 9,109.64,high,,source_page_produced_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Oracle Corporation,49.64,medium,Larry Ellison,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Battery electric vehicle,25.0,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Launch vehicle,25.0,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Stock Exchange,25.0,medium,Economy of the United States,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Falcon 1,24.64,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Renewable energy,24.52,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Energy storage,24.44,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Satellite Constellation,24.44,medium,Satellite constellation,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Tesla Model 3,24.36,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Tesla Model S,24.36,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Tesla Model X,24.36,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Tesla Model Y,24.36,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+SpaceX Starship,24.22,medium,Launch vehicle,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Energy industry,24.2,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Technology company,24.2,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+United States Securities and Exchange Commission,24.2,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Public company,24.12,medium,,encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source
+Bernard Arnault,21.0,medium,Bernard Arnault,encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.00

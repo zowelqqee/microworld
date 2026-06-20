@@ -81,14 +81,8 @@ Airbus,-156.52,blocked,Aerospace manufacturer,low_yield_source_page; adjacent_to
 United Kingdom,-156.02,blocked,Aerospace manufacturer,low_yield_source_page; adjacent_to_low_yield_source_page
 Boeing,-156.0,blocked,Aerospace manufacturer,low_yield_source_page; adjacent_to_low_yield_source_page
 Microsoft,-156.0,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
-Commercial Crew Program,-150.64,blocked,Commercial Crew Program,low_yield_source_page; adjacent_to_low_yield_source_page
-Kennedy Space Center,-150.52,blocked,Cape Canaveral Space Force Station,low_yield_source_page; adjacent_to_low_yield_source_page
-Zip2,-150.32,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
-Electric Car,-150.0,blocked,Electric vehicle,low_yield_source_page; adjacent_to_low_yield_source_page
-International Space Station,-150.0,blocked,Commercial Crew Program,low_yield_source_page; adjacent_to_low_yield_source_page
 Marc Tarpenning,-150.0,blocked,"Tesla, Inc.",low_yield_source_page; adjacent_to_low_yield_source_page
 Martin Eberhard,-150.0,blocked,"Tesla, Inc.",low_yield_source_page; adjacent_to_low_yield_source_page
-PayPal,-150.0,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
 Air Station Banana,-146.98,blocked,Cape Canaveral Space Force Station,historically_failed_fetch; adjacent_to_low_yield_source_page
 Applications Program,-146.98,blocked,Cape Canaveral Space Force Station,historically_failed_fetch; adjacent_to_low_yield_source_page
 Canaveral Launch,-146.98,blocked,Cape Canaveral Space Force Station,historically_failed_fetch; adjacent_to_low_yield_source_page
@@ -441,9 +435,6 @@ Large language model,-141.52,blocked,,low_yield_source_page
 San Francisco,-141.34,blocked,Billionaire,low_yield_source_page
 New Shepard,-141.2,blocked,Blue Origin,low_yield_source_page
 New York City,-141.14,blocked,Battery electric vehicle,low_yield_source_page
-SpaceX Raptor,-140.84,blocked,SpaceX Raptor,low_yield_source_page; adjacent_to_low_yield_source_page
-Tesla Cybertruck,-140.58,blocked,Tesla Cybertruck,low_yield_source_page; adjacent_to_low_yield_source_page
-New York Stock Exchange,-140.44,blocked,Forbes,low_yield_source_page; adjacent_to_low_yield_source_page
 Tesla Energy,-140.0,blocked,SolarCity,low_yield_source_page; adjacent_to_low_yield_source_page
 Aircraft Company,-136.98,blocked,Aerospace manufacturer,historically_failed_fetch; adjacent_to_low_yield_source_page
 Aircraft Corporation,-136.98,blocked,Aerospace manufacturer,historically_failed_fetch; adjacent_to_low_yield_source_page
@@ -531,12 +522,7 @@ Bloomberg Professional,-136.9,blocked,Bloomberg L.P.,historically_failed_fetch; 
 Motor Company,-136.9,blocked,Automotive industry,historically_failed_fetch; adjacent_to_low_yield_source_page
 Air Force Station,-136.86,blocked,Cape Canaveral Space Force Station,historically_failed_fetch; adjacent_to_low_yield_source_page
 Force Base,-136.58,blocked,Cape Canaveral Space Force Station,historically_failed_fetch; adjacent_to_low_yield_source_page
-Automotive industry,-135.88,blocked,,low_yield_source_page
 Gwynne Shotwell,-135.18,blocked,SpaceX,low_yield_source_page
-Elon Musk,-135.0,blocked,Billionaire,low_yield_source_page
-Forbes,-135.0,blocked,Bernard Arnault,low_yield_source_page
-LVMH,-135.0,blocked,Bernard Arnault,low_yield_source_page
-OpenAI,-135.0,blocked,Artificial intelligence,low_yield_source_page
 AFB Space,-131.98,blocked,Falcon 1,historically_failed_fetch
 AFB Space Launch,-131.98,blocked,Falcon 1,historically_failed_fetch
 Amazon Kindle,-131.98,blocked,Jeff Bezos,low_yield_source_page
@@ -766,17 +752,12 @@ World War II,-131.52,blocked,Economy of the United States,low_yield_source_page
 North America,-126.6,blocked,Automotive industry,low_yield_source_page; adjacent_to_low_yield_source_page
 PRODUCT Reuters,-125.94,blocked,,historically_failed_fetch
 PRODUCT Elon Musk,-125.88,blocked,,historically_failed_fetch
-Reusable launch vehicle,-125.88,blocked,,low_yield_source_page
-Satellite Internet access,-125.88,blocked,,low_yield_source_page
-SpaceX Dragon 2,-125.88,blocked,,low_yield_source_page
 X (social network,-125.88,blocked,,historically_failed_fetch
 American business magazine,-125.8,blocked,,historically_failed_fetch
 American infrastructure,-125.8,blocked,,historically_failed_fetch
 battery cells,-125.8,blocked,,historically_failed_fetch
 Giga Nevada had been intended,-125.8,blocked,,historically_failed_fetch
 Many companies,-125.8,blocked,,historically_failed_fetch
-Privately held company,-125.8,blocked,,low_yield_source_page
-Sustainable energy,-125.8,blocked,,low_yield_source_page
 The newly,-125.8,blocked,,historically_failed_fetch
 The North American Charging Standard,-125.8,blocked,,historically_failed_fetch
 Starlink Elon Musk,-125.76,blocked,,historically_failed_fetch
@@ -790,13 +771,9 @@ market coverage,-125.7,blocked,,historically_failed_fetch
 spaceflight news,-125.7,blocked,,historically_failed_fetch
 transportation systems,-125.7,blocked,,historically_failed_fetch
 wealth indexes,-125.7,blocked,,historically_failed_fetch
-Vandenberg Space Force Base,-125.68,blocked,Falcon 9,low_yield_source_page
 Dragon Spacecraft,-125.3,blocked,Falcon 9,historically_failed_fetch
-Internet service provider,-125.28,blocked,,low_yield_source_page
 Falcon Heavy,-125.16,blocked,Launch vehicle,low_yield_source_page
 Solar energy,-125.16,blocked,,low_yield_source_page
-Electric vehicle,-125.0,blocked,,low_yield_source_page
-The Boring Company,-125.0,blocked,,low_yield_source_page
 AC World,-121.98,blocked,Billionaire,historically_failed_fetch
 AC World Index,-121.98,blocked,Billionaire,historically_failed_fetch
 Advanced Vehicle,-121.98,blocked,Battery electric vehicle,historically_failed_fetch
@@ -906,7 +883,6 @@ York Stock Exchange,-121.72,blocked,Economy of the United States,historically_fa
 Force Station,-121.64,blocked,Blue Origin,historically_failed_fetch
 Exchange Commission,-121.38,blocked,Energy industry,historically_failed_fetch
 Tesla Model,-121.0,blocked,Battery electric vehicle,historically_failed_fetch
-SolarCity,-120.0,blocked,SolarCity,low_yield_source_page; adjacent_to_low_yield_source_page
 Hughes Aircraft Company,-116.96,blocked,Aerospace manufacturer,low_yield_source_page; adjacent_to_low_yield_source_page
 LVMH Moet Hennessy Louis Vuitton SE,-116.96,blocked,LVMH,historically_failed_fetch; adjacent_to_low_yield_source_page
 United States Air Force,-116.92,blocked,Cape Canaveral Space Force Station,low_yield_source_page; adjacent_to_low_yield_source_page
@@ -923,7 +899,6 @@ Forbes Tesla,-115.76,blocked,,historically_failed_fetch
 battery energy storage,-115.7,blocked,,historically_failed_fetch
 Falcon rockets,-115.7,blocked,,historically_failed_fetch
 co-founding Tesla,-115.4,blocked,,historically_failed_fetch
-Michael Bloomberg,-115.0,blocked,Bloomberg L.P.,low_yield_source_page; adjacent_to_low_yield_source_page
 Blue Ring,-111.94,blocked,Blue Origin,low_yield_source_page
 James Webb Space Telescope,-111.92,blocked,NASA,low_yield_source_page
 United States Army,-111.88,blocked,Larry Ellison,low_yield_source_page
@@ -1027,17 +1002,11 @@ Commercial Crew,-106.68,blocked,Commercial Crew Program,adjacent_to_low_yield_so
 Palo Alto,-106.66,blocked,Elon Musk,adjacent_to_low_yield_source_page
 Camp Cooke,-106.64,blocked,Vandenberg Space Force Base,adjacent_to_low_yield_source_page
 Long Range,-106.54,blocked,Cape Canaveral Space Force Station,adjacent_to_low_yield_source_page
-Starlink,-105.0,blocked,Falcon 9,low_yield_source_page
 Oracle Cloud,-101.94,blocked,Oracle Corporation,low_yield_source_page
 Tesla Fremont Factory,-101.76,blocked,Gigafactory,low_yield_source_page
-Aerospace manufacturer,-100.88,blocked,,low_yield_source_page
 Better Place,-100.76,blocked,Electric car,adjacent_to_low_yield_source_page
 EADS Astrium,-100.76,blocked,Starlink,adjacent_to_low_yield_source_page
-Social Media,-100.76,blocked,X Corp.,adjacent_to_low_yield_source_page
-Artificial Intelligence,-100.06,blocked,Automotive industry,adjacent_to_low_yield_source_page
 Crew Dragon,-100.0,blocked,Commercial Crew Program,adjacent_to_low_yield_source_page
-NASA,-100.0,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
-Neuralink,-100.0,blocked,Elon Musk,adjacent_to_low_yield_source_page
 Electric Company,-96.98,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
 Rubens Bloomberg,-96.98,blocked,Michael Bloomberg,adjacent_to_low_yield_source_page
 UTC Aerospace,-96.98,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
@@ -1075,7 +1044,6 @@ Bloomberg Business News,-96.72,blocked,Bloomberg L.P.,adjacent_to_low_yield_sour
 Boring Company,-96.7,blocked,Elon Musk,adjacent_to_low_yield_source_page
 Tesla Motors,-96.68,blocked,Electric car,adjacent_to_low_yield_source_page
 Super Heavy,-96.56,blocked,Reusable launch vehicle,adjacent_to_low_yield_source_page
-Cape Canaveral Space Force Station,-95.48,blocked,Blue Origin,low_yield_source_page
 Tesla Roadster,-90.46,blocked,Electric car,adjacent_to_low_yield_source_page
 New Energy Finance,-81.84,blocked,Bloomberg L.P.,historically_failed_fetch; adjacent_to_low_yield_source_page
 Communications Satellite,-71.72,blocked,Private spaceflight,low_yield_source_page
@@ -1090,6 +1058,12 @@ Daniel L. Doctoroff,-56.96,blocked,Michael Bloomberg,low_yield_source_page; adja
 Lyndon B. Johnson,-56.96,blocked,Cape Canaveral Space Force Station,low_yield_source_page; adjacent_to_low_yield_source_page
 Research Institute,-56.94,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
 Software Development,-51.96,blocked,Larry Ellison,low_yield_source_page
+Commercial Crew Program,-50.64,blocked,Commercial Crew Program,low_yield_source_page; adjacent_to_low_yield_source_page
+Kennedy Space Center,-50.52,blocked,Cape Canaveral Space Force Station,low_yield_source_page; adjacent_to_low_yield_source_page
+Zip2,-50.32,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
+Electric Car,-50.0,blocked,Electric vehicle,low_yield_source_page; adjacent_to_low_yield_source_page
+International Space Station,-50.0,blocked,Commercial Crew Program,low_yield_source_page; adjacent_to_low_yield_source_page
+PayPal,-50.0,blocked,Elon Musk,low_yield_source_page; adjacent_to_low_yield_source_page
 Reaction Engines,-46.98,blocked,Reusable launch vehicle,adjacent_to_low_yield_source_page
 Stoke Space,-46.98,blocked,Reusable launch vehicle,adjacent_to_low_yield_source_page
 Amazon Leo,-46.96,blocked,Satellite Internet access,low_yield_source_page; adjacent_to_low_yield_source_page
@@ -1112,6 +1086,9 @@ Crew Dragon Demo-1,-41.96,blocked,Falcon 9,low_yield_source_page
 Crew Dragon Demo-2,-41.96,blocked,Falcon 9,low_yield_source_page
 Don DeLillo,-41.96,blocked,Amazon,low_yield_source_page
 Phiroze Jeejeebhoy Towers,-41.96,blocked,Stock exchange,low_yield_source_page
+SpaceX Raptor,-40.84,blocked,SpaceX Raptor,low_yield_source_page; adjacent_to_low_yield_source_page
+Tesla Cybertruck,-40.58,blocked,Tesla Cybertruck,low_yield_source_page; adjacent_to_low_yield_source_page
+New York Stock Exchange,-40.44,blocked,Forbes,low_yield_source_page; adjacent_to_low_yield_source_page
 Michael Arougheti,-36.96,blocked,Michael Bloomberg,adjacent_to_low_yield_source_page
 US Deorbit Vehicle,-36.94,blocked,International Space Station,adjacent_to_low_yield_source_page
 Bloomberg Professional Services,-36.92,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
@@ -1119,9 +1096,23 @@ Government Accountability Office,-36.92,blocked,Commercial Crew Program,adjacent
 Hughes Aircraft,-36.92,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
 Jack Dorsey,-36.9,blocked,X (social network),adjacent_to_low_yield_source_page
 McDonnell Douglas,-36.86,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
+Automotive industry,-35.88,blocked,,low_yield_source_page
+Forbes,-35.0,blocked,Bernard Arnault,low_yield_source_page
+LVMH,-35.0,blocked,Bernard Arnault,low_yield_source_page
+OpenAI,-35.0,blocked,Artificial intelligence,low_yield_source_page
 Satellite Radio,-31.96,blocked,Satellite constellation,low_yield_source_page
 An August,-29.96,blocked,Falcon 1,metadata_or_stopword_token
 United States Navy,-26.96,blocked,Cape Canaveral Space Force Station,low_yield_source_page; adjacent_to_low_yield_source_page
+Reusable launch vehicle,-25.88,blocked,,low_yield_source_page
+Satellite Internet access,-25.88,blocked,,low_yield_source_page
+SpaceX Dragon 2,-25.88,blocked,,low_yield_source_page
+Privately held company,-25.8,blocked,,low_yield_source_page
+Sustainable energy,-25.8,blocked,,low_yield_source_page
+Vandenberg Space Force Base,-25.68,blocked,Falcon 9,low_yield_source_page
+Internet service provider,-25.28,blocked,,low_yield_source_page
+Electric vehicle,-25.0,blocked,,low_yield_source_page
+The Boring Company,-25.0,blocked,,low_yield_source_page
+SolarCity,-20.0,blocked,SolarCity,low_yield_source_page; adjacent_to_low_yield_source_page
 Affordable Connectivity Program,-16.98,blocked,Internet service provider,adjacent_to_low_yield_source_page
 Stennis Space Center,-16.98,blocked,SpaceX Raptor,adjacent_to_low_yield_source_page
 Axiom Station,-16.96,blocked,International Space Station,adjacent_to_low_yield_source_page
@@ -1154,6 +1145,7 @@ Project Mercury,-16.82,blocked,Cape Canaveral Space Force Station,adjacent_to_lo
 Wayback Machine,-16.8,blocked,Privately held company,adjacent_to_low_yield_source_page
 Hong Kong,-16.72,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
 Merritt Island,-16.72,blocked,Cape Canaveral Space Force Station,adjacent_to_low_yield_source_page
+Michael Bloomberg,-9.0,low,Bloomberg L.P.,adjacent_to_low_yield_source_page
 Access Protocol,-6.98,low,Internet service provider,adjacent_to_low_yield_source_page
 Added Effort,-6.98,low,Vandenberg Space Force Base,adjacent_to_low_yield_source_page
 Advanced Diagnostic,-6.98,low,International Space Station,adjacent_to_low_yield_source_page
@@ -2725,7 +2717,11 @@ Tesla Semi,-6.92,blocked,"Tesla, Inc.",adjacent_to_low_yield_source_page
 Bloomberg Law,-6.88,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
 Bloomberg Markets,-6.8,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
 Saturn IB,-6.8,blocked,Cape Canaveral Space Force Station,adjacent_to_low_yield_source_page
-Bloomberg News,0.0,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
+Aerospace manufacturer,-0.88,blocked,,low_yield_source_page
+Social Media,-0.76,low,X Corp.,adjacent_to_low_yield_source_page
+Artificial Intelligence,-0.06,low,Automotive industry,adjacent_to_low_yield_source_page
+NASA,0.0,low,Aerospace manufacturer,adjacent_to_low_yield_source_page
+Neuralink,0.0,low,Elon Musk,adjacent_to_low_yield_source_page
 Air Force C-53,3.02,low,Autopilot,adjacent_to_low_yield_source_page
 Air Force Missile,3.02,low,Cape Canaveral Space Force Station,adjacent_to_low_yield_source_page
 Air Force Proving,3.02,low,Cape Canaveral Space Force Station,adjacent_to_low_yield_source_page
@@ -2860,7 +2856,9 @@ World War II-era,3.04,low,Vandenberg Space Force Base,adjacent_to_low_yield_sour
 U.S. Air Force,3.06,low,Autopilot,adjacent_to_low_yield_source_page
 Vandenberg Air Force,3.06,low,Vandenberg Space Force Base,adjacent_to_low_yield_source_page
 World Wide,3.06,low,Internet service provider,adjacent_to_low_yield_source_page
+Cape Canaveral Space Force Station,4.52,blocked,Blue Origin,low_yield_source_page
 Bloomberg L.P,10.0,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
+Starlink,10.0,blocked,Falcon 9,low_yield_source_page
 Michael Liebreich,18.04,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
 Rocket Science Games,23.02,blocked,Elon Musk,adjacent_to_low_yield_source_page
 Intel Corporation,33.04,blocked,Nasdaq,adjacent_to_low_yield_source_page
@@ -2868,3 +2866,4 @@ London Stock Exchange,33.08,blocked,Nasdaq,adjacent_to_low_yield_source_page
 Bloomberg Government,33.12,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
 Northrop Grumman,33.12,blocked,Aerospace manufacturer,adjacent_to_low_yield_source_page
 Bloomberg Radio,33.32,blocked,Bloomberg L.P.,adjacent_to_low_yield_source_page
+Bloomberg News,115.0,high,Bloomberg L.P.,adjacent_to_low_yield_source_page

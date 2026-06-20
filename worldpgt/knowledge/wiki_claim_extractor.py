@@ -20,6 +20,10 @@ from worldpgt.knowledge.wiki_claim_normalizer import (
     classify_stability,
     is_volatile_text,
 )
+from worldpgt.knowledge.temporal_classification import (
+    classify_temporal_class,
+    requires_as_of,
+)
 from worldpgt.knowledge.wiki_ingestion_v2_types import (
     ContextLink,
     DefinitionClaim,
@@ -35,6 +39,10 @@ _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 _COPULA_RE = re.compile(
     r"\b(?:is|are|was|were)\s+(?:a|an|the)\s+(.+)", re.IGNORECASE
 )
+
+
+def _norm_label(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip().lower())
 
 # Markers at which a definition object is truncated to stay a clean noun phrase.
 # NOTE: " that " and " which " are intentionally excluded so relative clauses
@@ -96,6 +104,8 @@ class WikiClaimExtractor:
         obj = self._truncate_definition(match.group(1))
         if not obj:
             return None
+        if _norm_label(page.title) == _norm_label(obj):
+            return None
         # Definitions are inherently stable/low regardless of surface tokens.
         return DefinitionClaim(
             subject=page.title,
@@ -105,6 +115,7 @@ class WikiClaimExtractor:
             evidence_text=first.strip(),
             stability="stable",
             risk="low",
+            temporal_class="historical",
             status="candidate",
         )
 
@@ -208,6 +219,7 @@ class WikiClaimExtractor:
                             source_page=page.title,
                             evidence_text=evidence,
                             stability="semi_stable",
+                            temporal_class="historical",
                             risk="medium",
                             status="candidate",
                         )
@@ -219,6 +231,7 @@ class WikiClaimExtractor:
     ) -> RelationClaim:
         stability = classify_stability(evidence, predicate)
         risk = classify_risk(stability, predicate)
+        temporal_class = classify_temporal_class(predicate, stability) or "historical"
         return RelationClaim(
             subject=page.title,
             predicate=predicate,  # type: ignore[arg-type]
@@ -226,6 +239,8 @@ class WikiClaimExtractor:
             source_page=page.title,
             evidence_text=evidence,
             stability=stability,
+            temporal_class=temporal_class,
+            as_of=self._as_of(page) if requires_as_of(temporal_class) else "",
             risk=risk,
             status="candidate",
         )
@@ -260,6 +275,7 @@ class WikiClaimExtractor:
                 source_name=source_name,
                 as_of=as_of,
                 claim_type="time_sensitive_estimate",
+                temporal_class="snapshot",
                 source_page=page.title,
                 evidence_text=sentence.strip(),
                 stability="volatile",
@@ -276,6 +292,7 @@ class WikiClaimExtractor:
                 source_name=source_name,
                 as_of=as_of,
                 claim_type="time_sensitive_ranking",
+                temporal_class="snapshot",
                 source_page=page.title,
                 evidence_text=sentence.strip(),
                 stability="volatile",
@@ -293,6 +310,7 @@ class WikiClaimExtractor:
                 source_name=source_name,
                 as_of=as_of,
                 claim_type="time_sensitive_ranking",
+                temporal_class="snapshot",
                 source_page=page.title,
                 evidence_text=sentence.strip(),
                 stability="volatile",
@@ -313,6 +331,7 @@ class WikiClaimExtractor:
                 source_name=source_name,
                 as_of=as_of,
                 claim_type=claim_type,
+                temporal_class="snapshot",
                 source_page=page.title,
                 evidence_text=sentence.strip(),
                 stability="volatile",

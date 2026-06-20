@@ -32,6 +32,7 @@ class ContextDefinition:
     definition: str
     predicate: str
     stability: str
+    temporal_class: str = ""
     evidence_text: str = ""
 
 
@@ -43,6 +44,8 @@ class ContextRelation:
     stability: str
     risk: str
     trust: str
+    temporal_class: str = ""
+    as_of: str = ""
     evidence_text: str = ""
     source_page: str = ""
 
@@ -68,6 +71,7 @@ class ContextSourceFact:
     stability: str
     risk: str
     trust: str
+    temporal_class: str = ""
     requires_recheck: bool = True
     evidence_text: str = ""
 

@@ -134,9 +134,28 @@ def test_supported_answer_has_context_support():
     assert a.support_kind in FACTUAL_SUPPORT_KINDS
 
 
+def test_supported_negative_answer_has_explicit_support():
+    a = AnswerOrchestrator("promoted").answer("Is Elon Musk an organization?")
+
+    assert a.decision == "no"
+    assert a.supported_by_context is True
+    assert a.support_kind == "explicit_type_contradiction"
+    assert a.support_kind in FACTUAL_SUPPORT_KINDS
+    assert "Decision: no." in render(a)
+    assert validate_answer(a) == []
+
+
 def test_audit_request_does_not_answer_as_fact():
     """(12) An audit request is not rendered as a stable fact."""
     a = AnswerOrchestrator("promoted").answer("What is Tesla's current stock price?")
+    assert a.decision == "audit"
+    assert a.supported_by_context is False
+    assert "Decision: audit." in render(a)
+
+
+def test_absent_fact_does_not_become_negative_answer():
+    a = AnswerOrchestrator("promoted").answer("Is SpaceX profitable?")
+
     assert a.decision == "audit"
     assert a.supported_by_context is False
     assert "Decision: audit." in render(a)

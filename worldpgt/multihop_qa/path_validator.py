@@ -7,7 +7,7 @@ Blocks:
   - unsupported chain types
   - paths with volatile stability
   - paths with high risk
-  - paths using current-sensitive predicates (leader_of)
+  - paths using current-sensitive predicates (see relation_policy.CURRENT_SENSITIVE_PREDICATES)
 
 All blocking reasons are returned as a structured string so callers can
 categorize the audit: "volatile_relation:pred", "high_risk_relation:pred",
@@ -17,17 +17,29 @@ from __future__ import annotations
 
 from typing import Optional
 
-from worldpgt.multihop_qa.types import MultihopPath, MultihopQuestion
-
-# Predicates that are current-sensitive and must not be used inside a 2-hop
-# multi-hop answer in v1.1. leader_of reflects current organizational state
-# and can change; it must not be baked into a chain answer without rechecking.
-_CURRENT_SENSITIVE_PREDICATES = frozenset({"leader_of"})
+from worldpgt.multihop_qa.types import HopEdge, MultihopPath, MultihopQuestion
+from worldpgt.relation_extraction_v2.relation_policy import CURRENT_SENSITIVE_PREDICATES
+from worldpgt.knowledge.temporal_classification import requires_as_of
 
 
 def chain_label(pred1: str, pred2: str) -> str:
     """Canonical chain label from two predicate strings."""
     return f"{pred1}_then_{pred2}"
+
+
+def validate_hop_safety(hop: HopEdge) -> tuple[bool, Optional[str]]:
+    """Validate one explicit relation hop against the shared path safety policy."""
+    if requires_as_of(hop.temporal_class) and not hop.as_of:
+        return False, f"{hop.temporal_class}_missing_as_of:{hop.predicate}"
+    if hop.stability == "volatile":
+        return False, f"volatile_relation:{hop.predicate}"
+    if hop.risk == "high":
+        return False, f"high_risk_relation:{hop.predicate}"
+    if hop.predicate in CURRENT_SENSITIVE_PREDICATES and not (
+        hop.temporal_class == "snapshot" and hop.as_of
+    ):
+        return False, f"current_sensitive_relation:{hop.predicate}"
+    return True, None
 
 
 def validate_path(
@@ -50,11 +62,8 @@ def validate_path(
         return False, "unsupported_chain_type"
 
     for hop in (path.hop1, path.hop2):
-        if hop.stability == "volatile":
-            return False, f"volatile_relation:{hop.predicate}"
-        if hop.risk == "high":
-            return False, f"high_risk_relation:{hop.predicate}"
-        if hop.predicate in _CURRENT_SENSITIVE_PREDICATES:
-            return False, f"current_sensitive_relation:{hop.predicate}"
+        valid, reason = validate_hop_safety(hop)
+        if not valid:
+            return False, reason
 
     return True, None

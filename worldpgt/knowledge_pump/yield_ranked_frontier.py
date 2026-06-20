@@ -48,6 +48,7 @@ _STOPWORD_TOKENS = {
     "september", "october", "november", "december",
 }
 _MAX_BATCH_PLAN = 250
+_MAX_STALE_RECHECK_BOOST = 12.0
 
 
 # ---------------------------------------------------------------------------
@@ -130,6 +131,8 @@ def build_yield_signals(
     manifest: list[dict] | None = None,
     high_yield_pages: list[dict] | None = None,
     low_yield_pages: list[dict] | None = None,
+    gap_entities: set[str] | None = None,
+    stale_fact_signals: dict[str, dict] | None = None,
 ) -> dict[str, Any]:
     """Compute the positive/negative signal sets used to score titles."""
     ingestion_candidates = ingestion_candidates or []
@@ -205,6 +208,8 @@ def build_yield_signals(
         "failed_fetch": failed_fetch,
         "facts_per_page": dict(facts_per_page),
         "ingestion_per_page": dict(ingestion_per_page),
+        "gap_entities": gap_entities or set(),
+        "stale_fact_signals": stale_fact_signals or {},
     }
 
 
@@ -220,7 +225,10 @@ def score_title(title: str, source: str, reason: str, weight: int, signals: dict
     source_tags = set((source or "").split("|"))
 
     rejected, hygiene_reason = _title_rejected_by_hygiene(title)
-    already = ntitle in signals["already_fetched"]
+    stale_signals = signals.get("stale_fact_signals", {})
+    stale_signal = stale_signals.get(ntitle)
+    recheck_required = stale_signal is not None
+    already = ntitle in signals["already_fetched"] and not recheck_required
 
     score = 0
     positive: list[str] = []
@@ -255,6 +263,18 @@ def score_title(title: str, source: str, reason: str, weight: int, signals: dict
         positive.append("relation_or_overlay_source")
     # small deterministic weight tie-break (capped, never dominates signals).
     score += min(int(weight or 0), 50) / 50.0
+    # gap-driven boost: page covers an entity the system recently failed to answer.
+    # Weaker than proven-productive signals (+60/+40/+30) so existing winners stay ahead.
+    gap_entities = signals.get("gap_entities", set())
+    if gap_entities and ntitle in gap_entities:
+        score += 15
+        positive.append("gap_driven_entity")
+    if stale_signal is not None:
+        ratio = float(stale_signal.get("staleness_ratio", 0.0) or 0.0)
+        boost = min(max(ratio, 0.0) * 10.0, _MAX_STALE_RECHECK_BOOST)
+        score += boost
+        positive.append("stale_snapshot_recheck")
+        positive.append(f"staleness_boost:{boost:.2f}")
 
     # --- Negative signals ---
     if already:
@@ -263,7 +283,10 @@ def score_title(title: str, source: str, reason: str, weight: int, signals: dict
     if rejected:
         score -= 80
         negative.append(f"hygiene_rejected:{hygiene_reason}")
-    if ntitle in signals["low_yield_pages"]:
+    if ntitle in signals["low_yield_pages"] and recheck_required:
+        score -= 50
+        negative.append("low_yield_source_page_recheck_penalty")
+    elif ntitle in signals["low_yield_pages"]:
         score -= 50
         negative.append("low_yield_source_page")
     if ntitle in signals["failed_fetch"]:
@@ -276,7 +299,12 @@ def score_title(title: str, source: str, reason: str, weight: int, signals: dict
         score -= 15
         negative.append("adjacent_to_low_yield_source_page")
 
-    blocked = bool(already or rejected or ntitle in signals["low_yield_pages"] or _is_metadata_token(title))
+    blocked = bool(
+        already
+        or rejected
+        or (_is_metadata_token(title))
+        or (ntitle in signals["low_yield_pages"] and not recheck_required)
+    )
     if blocked:
         expected_yield_class = "blocked"
     elif score >= 60:
@@ -293,6 +321,8 @@ def score_title(title: str, source: str, reason: str, weight: int, signals: dict
         "positive_reasons": positive,
         "negative_reasons": negative,
         "already_fetched": already,
+        "recheck_required": recheck_required,
+        "stale_fact": stale_signal or {},
         "source_hint": hint,
         "expected_yield_class": expected_yield_class,
         "blocked": blocked,
@@ -320,6 +350,27 @@ def score_frontier(frontier: list[dict], signals: dict) -> list[dict]:
     return sorted(best.values(), key=lambda x: (-x["score"], x["title"].casefold()))
 
 
+def _frontier_with_stale_rechecks(frontier: list[dict], stale_fact_signals: dict[str, dict] | None) -> list[dict]:
+    if not stale_fact_signals:
+        return list(frontier)
+    out = list(frontier)
+    existing = {normalize_page(item.get("title", "")) for item in out}
+    for key, signal in stale_fact_signals.items():
+        if key in existing:
+            continue
+        title = signal.get("subject") or key
+        out.append({
+            "title": title,
+            "source": "stale_snapshot_recheck",
+            "reason": (
+                f"refresh {signal.get('predicate', '')} snapshot "
+                f"as_of={signal.get('as_of', '')}"
+            ),
+            "weight": 0,
+        })
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Plan / blocklist construction
 # ---------------------------------------------------------------------------
@@ -327,6 +378,7 @@ def score_frontier(frontier: list[dict], signals: dict) -> list[dict]:
 def build_batch_plan(scored: list[dict], *, limit: int = _MAX_BATCH_PLAN) -> list[dict]:
     """Top eligible (non-blocked, not-fetched) titles, ranked by score."""
     plan: list[dict] = []
+    planned: set[str] = set()
     for entry in scored:
         if entry["blocked"] or entry["already_fetched"]:
             continue
@@ -336,11 +388,34 @@ def build_batch_plan(scored: list[dict], *, limit: int = _MAX_BATCH_PLAN) -> lis
             "positive_reasons": entry["positive_reasons"],
             "negative_reasons": entry["negative_reasons"],
             "already_fetched": False,
+            "recheck_required": entry.get("recheck_required", False),
+            "stale_fact": entry.get("stale_fact", {}),
             "source_hint": entry["source_hint"],
             "expected_yield_class": entry["expected_yield_class"],
         })
+        planned.add(entry["normalized_title"])
         if len(plan) >= limit:
             break
+    # Concrete stale snapshot rechecks are actionable refreshes, not broad
+    # discovery. Append them after the normal limit so they do not displace
+    # new knowledge-gap candidates.
+    for entry in scored:
+        if not entry.get("recheck_required"):
+            continue
+        if entry["blocked"] or entry["already_fetched"] or entry["normalized_title"] in planned:
+            continue
+        plan.append({
+            "title": entry["title"],
+            "score": entry["score"],
+            "positive_reasons": entry["positive_reasons"],
+            "negative_reasons": entry["negative_reasons"],
+            "already_fetched": False,
+            "recheck_required": True,
+            "stale_fact": entry.get("stale_fact", {}),
+            "source_hint": entry["source_hint"],
+            "expected_yield_class": entry["expected_yield_class"],
+        })
+        planned.add(entry["normalized_title"])
     return plan
 
 
@@ -371,6 +446,8 @@ def build_blocklist(scored: list[dict]) -> list[dict]:
             "block_reasons": block_reasons,
             "source_hint": entry["source_hint"],
             "expected_yield_class": entry["expected_yield_class"],
+            "recheck_required": entry.get("recheck_required", False),
+            "stale_fact": entry.get("stale_fact", {}),
         })
     return sorted(block, key=lambda x: (x["score"], x["title"].casefold()))
 
@@ -386,9 +463,11 @@ def high_yield_frontier(scored: list[dict]) -> list[dict]:
                 "title": entry["title"],
                 "score": entry["score"],
                 "positive_reasons": entry["positive_reasons"],
-                "source_hint": entry["source_hint"],
-                "expected_yield_class": entry["expected_yield_class"],
-            })
+            "source_hint": entry["source_hint"],
+            "expected_yield_class": entry["expected_yield_class"],
+            "recheck_required": entry.get("recheck_required", False),
+            "stale_fact": entry.get("stale_fact", {}),
+        })
     return out
 
 
@@ -407,6 +486,8 @@ def run_yield_ranked_frontier(
     batch_plan_limit: int = _MAX_BATCH_PLAN,
     force: bool = False,
     frontier_policy: str = "yield-ranked",
+    gap_entities: set[str] | None = None,
+    stale_fact_signals: dict[str, dict] | None = None,
 ) -> dict[str, Any]:
     """Compute the yield-ranked frontier and gate from existing pump artifacts.
 
@@ -463,7 +544,10 @@ def run_yield_ranked_frontier(
         manifest=manifest,
         high_yield_pages=high_yield_pages,
         low_yield_pages=low_yield_pages,
+        gap_entities=gap_entities,
+        stale_fact_signals=stale_fact_signals,
     )
+    frontier = _frontier_with_stale_rechecks(frontier, stale_fact_signals)
     scored = score_frontier(frontier, signals)
     plan = build_batch_plan(scored, limit=batch_plan_limit)
     blocklist = build_blocklist(scored)
@@ -506,6 +590,7 @@ def run_yield_ranked_frontier(
         "recent_window": metrics["recent_window"],
         "yield_ranked_selected_count": len(plan),
         "yield_ranked_available_count": len([s for s in scored if not s["blocked"] and not s["already_fetched"]]),
+        "stale_recheck_candidate_count": len(stale_fact_signals or {}),
         "high_yield_frontier_count": len(high_yield),
         "low_yield_blocklist_count": len(blocklist),
         "missing_data": missing_data,
@@ -565,7 +650,7 @@ def run_yield_ranked_frontier(
         out_dir / "yield_ranked_batch_plan.csv",
         plan,
         ["title", "score", "expected_yield_class", "source_hint",
-         "already_fetched", "positive_reasons", "negative_reasons"],
+         "already_fetched", "recheck_required", "positive_reasons", "negative_reasons"],
     )
 
     gate_report = {
@@ -596,6 +681,7 @@ def run_yield_ranked_frontier(
             "high_yield_pages": len(signals["high_yield_pages"]),
             "low_yield_pages": len(signals["low_yield_pages"]),
             "already_fetched": len(signals["already_fetched"]),
+            "stale_fact_signals": len(signals["stale_fact_signals"]),
         },
         "artifacts_written": [
             "incremental_yield_summary.json",
@@ -620,6 +706,8 @@ def select_yield_ranked_titles(
     snapshots_dir: str | Path | None = None,
     diagnostics_dir: str | Path | None = None,
     limit: int = _MAX_BATCH_PLAN,
+    gap_entities: set[str] | None = None,
+    stale_fact_signals: dict[str, dict] | None = None,
 ) -> list[str]:
     """Return an ordered list of yield-ranked, not-yet-fetched titles.
 
@@ -646,7 +734,10 @@ def select_yield_ranked_titles(
         manifest=manifest,
         high_yield_pages=high_yield_pages,
         low_yield_pages=low_yield_pages,
+        gap_entities=gap_entities,
+        stale_fact_signals=stale_fact_signals,
     )
+    frontier = _frontier_with_stale_rechecks(frontier, stale_fact_signals)
     scored = score_frontier(frontier, signals)
     plan = build_batch_plan(scored, limit=limit)
     return [entry["title"] for entry in plan]

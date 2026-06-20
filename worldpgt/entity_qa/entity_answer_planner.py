@@ -13,7 +13,15 @@ from worldpgt.entity_qa.types import (
     EntityQAEvidence,
     EntityQAPlan,
 )
+from worldpgt.knowledge.negation import (
+    classes_contradict,
+    coverage_score,
+    item_is_safe_negation_basis,
+    well_covered,
+)
+from worldpgt.knowledge.ontology_traversal import find_is_a_path
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
+from worldpgt.relation_extraction_v2.relation_policy import is_current_sensitive
 
 _CURRENT_AUDIT_REASON = (
     "This question asks for current/real-time data that is not available as "
@@ -29,6 +37,18 @@ _NO_DATA_AUDIT_REASON = (
     "No relevant information found in the wiki overlay for this question."
 )
 
+_WELL_COVERED_NOT_FOUND_REASON = (
+    "not found in well-covered entity, verify externally"
+)
+
+_QUESTION_NOT_UNDERSTOOD_REASON = "question not understood"
+
+_UNSUPPORTED_SEMANTIC_QUERY_REASON = (
+    "This structured question type is not supported by the entity QA planner."
+)
+
+_ANSWERABLE_STABILITIES = frozenset({"stable", "semi_stable"})
+
 
 def _norm(s: str) -> str:
     return " ".join((s or "").strip().lower().split()).removeprefix("the ")
@@ -38,17 +58,42 @@ def _asks_who_founded(question: str) -> bool:
     return (question or "").strip().lower().startswith("who ")
 
 
+def _is_answerable_relation(item: dict) -> bool:
+    predicate = str(item.get("predicate") or "")
+    stability = str(item.get("stability") or "")
+    return (
+        stability in _ANSWERABLE_STABILITIES
+        and not is_current_sensitive(predicate)
+        and str(item.get("risk") or "").lower() != "high"
+    )
+
+
 class EntityAnswerPlanner:
-    def __init__(self, provider: WikiMemoryOverlayProvider) -> None:
+    def __init__(
+        self,
+        provider: WikiMemoryOverlayProvider,
+        ontology_layer_items: list[dict] | None = None,
+    ) -> None:
         self._provider = provider
+        self._ontology_layer_items = list(ontology_layer_items or [])
 
     def plan(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
         intent = analyzed.intent
 
         if analyzed.is_unsupported or intent == "unknown_or_unsupported":
+            if analyzed.predicate_hint == "question_not_understood":
+                reason = _QUESTION_NOT_UNDERSTOOD_REASON
+            elif analyzed.predicate_hint == "intersection":
+                reason = _UNSUPPORTED_SEMANTIC_QUERY_REASON
+            else:
+                reason = (
+                    _CURRENT_AUDIT_REASON
+                    if analyzed.is_current_query
+                    else _PERSONAL_AUDIT_REASON
+                )
             return self._audit_plan(
                 analyzed,
-                _CURRENT_AUDIT_REASON if analyzed.is_current_query else _PERSONAL_AUDIT_REASON,
+                reason,
             )
 
         if intent == "define_entity":
@@ -108,6 +153,44 @@ class EntityAnswerPlanner:
         subject = analyzed.subject or ""
         predicate = analyzed.predicate_hint
         evidence = EntityQAEvidence()
+
+        if predicate == "is_a":
+            return self._plan_is_a_membership(analyzed)
+
+        if predicate == "intersection":
+            return self._plan_comparative_intersection(analyzed)
+
+        if (
+            analyzed.semantic_query is not None
+            and analyzed.semantic_query.unknown_position == "subject"
+            and predicate
+        ):
+            all_relations = [
+                r for r in self._provider.all_relations()
+                if r.get("predicate") == predicate
+                and _norm(r.get("object", "")) == _norm(subject)
+                and _is_answerable_relation(r)
+            ]
+            self._provider._items_used += len(all_relations)
+            for r in all_relations:
+                evidence.overlay_items_used.append(
+                    f"overlay_relation:{r['subject']}:{r['predicate']}:{r['object']}"
+                )
+            if not all_relations:
+                return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+            return EntityQAPlan(
+                analyzed=analyzed,
+                decision="answer",
+                audit_reason=None,
+                evidence=evidence,
+                render_template="inverse_relation_lookup",
+                render_args={
+                    "known_object": subject,
+                    "predicate": predicate,
+                    "relations": all_relations,
+                },
+                confidence=0.9,
+            )
 
         if predicate == "connection":
             # "How is X connected to Y?" — relations of X whose object is Y.
@@ -187,6 +270,219 @@ class EntityAnswerPlanner:
                 "founder_lookup": founder_lookup,
             },
             confidence=0.9,
+        )
+
+    def _plan_comparative_intersection(
+        self,
+        analyzed: AnalyzedEntityQuestion,
+    ) -> EntityQAPlan:
+        subject = analyzed.subject or ""
+        secondary = analyzed.secondary_entity or ""
+        evidence = EntityQAEvidence()
+
+        if not subject or not secondary:
+            return self._audit_plan(analyzed, "no common facts in current overlay")
+
+        left = self._comparison_facts(subject)
+        right = self._comparison_facts(secondary)
+
+        common_pair_keys = set(left["pairs"]).intersection(right["pairs"])
+        common_class_keys = set(left["classes"]).intersection(right["classes"])
+
+        common_pairs = [left["pairs"][key] for key in sorted(common_pair_keys)]
+        common_classes = [left["classes"][key] for key in sorted(common_class_keys)]
+
+        if not common_pairs and not common_classes:
+            return self._audit_plan(analyzed, "no common facts in current overlay")
+
+        for item in common_pairs:
+            evidence.overlay_items_used.append(
+                f"overlay_relation:{subject}:{item['predicate']}:{item['object']}"
+            )
+            evidence.overlay_items_used.append(
+                f"overlay_relation:{secondary}:{item['predicate']}:{item['object']}"
+            )
+        for item in common_classes:
+            evidence.overlay_items_used.append(f"overlay_is_a:{subject}:{item['class']}")
+            evidence.overlay_items_used.append(f"overlay_is_a:{secondary}:{item['class']}")
+
+        return EntityQAPlan(
+            analyzed=analyzed,
+            decision="answer",
+            audit_reason=None,
+            evidence=evidence,
+            render_template="comparative_intersection",
+            render_args={
+                "entity_a": subject,
+                "entity_b": secondary,
+                "common_pairs": common_pairs,
+                "common_classes": common_classes,
+            },
+            confidence=0.85,
+        )
+
+    def _comparison_facts(self, subject: str) -> dict[str, dict[str, dict]]:
+        pairs: dict[str, dict] = {}
+        classes: dict[str, dict] = {}
+
+        definition = self._provider.get_definition(subject)
+        if definition and definition.get("definition"):
+            cls = str(definition["definition"])
+            classes[_norm(cls)] = {"class": cls, "source": "definition"}
+
+        for relation in self._provider.get_relations(subject):
+            if not _is_answerable_relation(relation):
+                continue
+            predicate = str(relation.get("predicate") or "")
+            obj = str(relation.get("object") or "")
+            if not predicate or not obj:
+                continue
+            if predicate == "is_a":
+                classes[_norm(obj)] = {"class": obj, "source": "relation"}
+                continue
+            pairs[f"{predicate}\0{_norm(obj)}"] = {
+                "predicate": predicate,
+                "object": obj,
+                "stability": relation.get("stability"),
+            }
+
+        return {"pairs": pairs, "classes": classes}
+
+    def _plan_is_a_membership(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
+        subject = analyzed.subject or ""
+        target = analyzed.secondary_entity or ""
+        evidence = EntityQAEvidence()
+
+        if not subject or not target:
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        overlay_items = [
+            *self._provider.all_definitions(),
+            *self._provider.all_relations(),
+        ]
+        path = find_is_a_path(
+            subject,
+            target,
+            overlay_items,
+            ontology_layer_items=self._ontology_layer_items,
+        )
+        if path is None:
+            negation = self._find_is_a_negation(analyzed, subject, target)
+            if negation is not None:
+                return negation
+            if well_covered(self._provider, subject):
+                score = coverage_score(self._provider, subject)
+                return self._audit_plan(
+                    analyzed,
+                    f"{_WELL_COVERED_NOT_FOUND_REASON} (coverage_score={score})",
+                )
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        evidence.overlay_items_used.append(f"explicit is_a chain: {len(path)} hops")
+        for edge in path:
+            evidence.overlay_items_used.append(
+                f"{edge.overlay_type}:{edge.subject}:is_a:{edge.object}"
+            )
+
+        return EntityQAPlan(
+            analyzed=analyzed,
+            decision="answer",
+            audit_reason=None,
+            evidence=evidence,
+            render_template="ontology_is_a",
+            render_args={
+                "subject": subject,
+                "target": target,
+                "path": path,
+                "support": f"explicit is_a chain: {len(path)} hops",
+            },
+            confidence=0.9,
+        )
+
+    def _find_is_a_negation(
+        self,
+        analyzed: AnalyzedEntityQuestion,
+        subject: str,
+        target: str,
+    ) -> Optional[EntityQAPlan]:
+        """Return an explicit negative plan for incompatible class claims."""
+
+        evidence = EntityQAEvidence()
+        candidates: list[tuple[str, str, dict]] = []
+
+        definition = self._provider.get_definition(subject)
+        if definition and definition.get("definition"):
+            candidates.append(("definition", str(definition["definition"]), definition))
+
+        for relation in self._provider.get_relations(subject, "is_a"):
+            if relation.get("object"):
+                candidates.append(("is_a", str(relation["object"]), relation))
+
+        for source, actual_class, item in candidates:
+            if not item_is_safe_negation_basis(item):
+                continue
+            if not classes_contradict(actual_class, target):
+                continue
+            evidence.overlay_items_used.append(
+                f"{item.get('overlay_type')}:{subject}:is_a:{actual_class}"
+            )
+            return self._no_plan(
+                analyzed=analyzed,
+                subject=subject,
+                target=target,
+                actual_class=actual_class,
+                support_kind="explicit_type_contradiction",
+                support=f"explicit type contradiction from overlay {source}",
+                evidence=evidence,
+            )
+
+        entity = self._provider.get_entity(subject)
+        entity_type = str((entity or {}).get("entity_type") or "")
+        if entity_type and classes_contradict(entity_type, target):
+            entity_item = dict(entity or {})
+            entity_item.setdefault("overlay_type", "overlay_entity")
+            entity_item.setdefault("stability", "stable")
+            if item_is_safe_negation_basis(entity_item):
+                evidence.overlay_items_used.append(
+                    f"overlay_entity:{subject}:entity_type:{entity_type}"
+                )
+                return self._no_plan(
+                    analyzed=analyzed,
+                    subject=subject,
+                    target=target,
+                    actual_class=entity_type,
+                    support_kind="entity_type_mismatch",
+                    support="entity type mismatch",
+                    evidence=evidence,
+                )
+
+        return None
+
+    def _no_plan(
+        self,
+        *,
+        analyzed: AnalyzedEntityQuestion,
+        subject: str,
+        target: str,
+        actual_class: str,
+        support_kind: str,
+        support: str,
+        evidence: EntityQAEvidence,
+    ) -> EntityQAPlan:
+        return EntityQAPlan(
+            analyzed=analyzed,
+            decision="no",
+            audit_reason=None,
+            evidence=evidence,
+            render_template="negated_is_a",
+            render_args={
+                "subject": subject,
+                "target": target,
+                "actual_class": actual_class,
+                "support_kind": support_kind,
+                "support": support,
+            },
+            confidence=0.85,
         )
 
     def _plan_link_explanation(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:

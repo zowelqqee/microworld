@@ -16,12 +16,16 @@ from worldpgt.assistant_surface.types import (
     OVERLAY_MODE_PUMP_DRY_RUN,
     OVERLAY_MODE_SNAPSHOT_DRY_RUN,
 )
+from worldpgt.knowledge_pump.audit_event_logger import log_audit_event
 
 _SUPPORT_LABELS = {
     "stable_definition": "stable definition",
     "stable_relation": "stable relation",
     "semi_stable_relation": "semi-stable relation",
     "explicit_connection_path": "explicit connection path",
+    "explicit_is_a_chain": "explicit is_a chain",
+    "explicit_type_contradiction": "explicit type contradiction",
+    "entity_type_mismatch": "entity type mismatch",
     "source_qualified_fact": "source-qualified fact (volatile)",
     "safe_policy_answer": "safe policy explanation",
     "audit_blocked_context": "blocked by safety policy",
@@ -52,6 +56,12 @@ def render(answer: AssistantAnswer) -> str:
         lines.append(f"Support: {_SUPPORT_LABELS.get(answer.support_kind, answer.support_kind)}.")
         lines.append(f"Overlay: {answer.overlay_mode}.")
         lines.append("Decision: answer.")
+    elif answer.decision == "no":
+        lines.append(answer.answer_text.strip())
+        lines.append("")
+        lines.append(f"Support: {_SUPPORT_LABELS.get(answer.support_kind, answer.support_kind)}.")
+        lines.append(f"Overlay: {answer.overlay_mode}.")
+        lines.append("Decision: no.")
     else:
         lines.append("I can't answer that as a stable fact from Microworld's current memory.")
         lines.append("")
@@ -59,5 +69,6 @@ def render(answer: AssistantAnswer) -> str:
         lines.append(f"Reason: {reason}.")
         lines.append("Decision: audit.")
         lines.append(f"Overlay: {answer.overlay_mode}.")
+        log_audit_event(answer)
 
     return "\n".join(lines).strip()

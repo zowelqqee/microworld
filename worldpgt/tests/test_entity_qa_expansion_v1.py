@@ -275,7 +275,6 @@ def test_source_fact_is_volatile(planner):
     "Does Forbes lead Tesla?",
     "Is Tesla the founder of Elon Musk?",
     "Did SpaceX found Elon Musk?",
-    "Is Rocket a company?",
     "Is net worth a stable physical property?",
     "Is leadership a product made by Tesla?",
     "Is Bloomberg News the same as Bloomberg L.P.?",
@@ -285,6 +284,12 @@ def test_adversarial_and_current_audit(planner, question):
     decision, answer = _answer(planner, question)
     assert decision == "audit", f"{question} -> {answer}"
     assert "cannot answer" in answer.lower()
+
+
+def test_type_confusion_with_explicit_support_returns_no(planner):
+    decision, answer = _answer(planner, "Is Rocket a company?")
+    assert decision == "no"
+    assert answer.startswith("No.")
 
 
 # ---------------------------------------------------------------------------

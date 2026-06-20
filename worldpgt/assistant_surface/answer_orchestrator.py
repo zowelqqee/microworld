@@ -21,6 +21,9 @@ or trusted memory. No network, no ML.
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from worldpgt.assistant_surface.context_selector import ContextSelector, resolve_overlay
 from worldpgt.assistant_surface.question_router import route as route_question
 from worldpgt.assistant_surface.assistant_trace import (
@@ -56,15 +59,47 @@ _SOURCE_QUALIFIED_POLICY_TEXT = (
     "value."
 )
 
+_EXPERIMENTS = Path(__file__).resolve().parent.parent / "experiments"
+DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH = (
+    _EXPERIMENTS
+    / "knowledge_pump_v1"
+    / "wikidata_p279_ontology_v1"
+    / "wikidata_p279_ontology_layer.json"
+)
+
+
+def _load_ontology_layer(path: str | Path | None) -> list[dict]:
+    if path is None:
+        return []
+    p = Path(path)
+    if not p.is_file():
+        return []
+    rows = json.loads(p.read_text(encoding="utf-8"))
+    if not isinstance(rows, list):
+        return []
+    return [row for row in rows if isinstance(row, dict)]
+
 
 class AnswerOrchestrator:
-    def __init__(self, overlay_mode: str = "promoted", overlay_path: str | None = None) -> None:
+    def __init__(
+        self,
+        overlay_mode: str = "promoted",
+        overlay_path: str | None = None,
+        ontology_layer_path: str | None = None,
+    ) -> None:
         self.overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
         overlay_path_resolved = overlay_path
         if overlay_path_resolved is None:
             overlay_path_resolved, _ = resolve_overlay(overlay_mode)
         self._provider = WikiMemoryOverlayProvider(overlay_path_resolved)
-        self._entity_planner = EntityAnswerPlanner(provider=self._provider)
+        self.ontology_layer_path = ontology_layer_path
+        if self.ontology_layer_path is None and DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH.is_file():
+            self.ontology_layer_path = str(DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH)
+        ontology_layer_items = _load_ontology_layer(self.ontology_layer_path)
+        self._entity_planner = EntityAnswerPlanner(
+            provider=self._provider,
+            ontology_layer_items=ontology_layer_items,
+        )
         self._cross_page_planner = CrossPageAnswerPlanner(provider=self._provider)
         self._selector = ContextSelector(overlay_mode, overlay_path=overlay_path)
 
@@ -142,6 +177,15 @@ class AnswerOrchestrator:
 
     def _unknown_audit(self, route, ctx, trace) -> AssistantAnswer:
         finalize(trace, "context_pack", "missing_knowledge")
+        if route.notes == "semantic intersection query not supported":
+            reason = "structured intersection questions are not supported by the current QA planner"
+        elif route.notes == "question not understood":
+            reason = "question not understood"
+        else:
+            reason = (
+                "no explicitly supported answer exists in Microworld's current "
+                "memory for this question"
+            )
         return self._make(
             route, ctx, trace,
             decision="audit",
@@ -149,10 +193,7 @@ class AnswerOrchestrator:
             supported=False,
             support_kind="missing_knowledge",
             source_system="context_pack",
-            audit_reason=(
-                "no explicitly supported answer exists in Microworld's current "
-                "memory for this question"
-            ),
+            audit_reason=reason,
         )
 
     # ------------------------------------------------------------------ #
@@ -249,6 +290,44 @@ class AnswerOrchestrator:
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
 
+        if plan.decision == "no":
+            support_kind = str(plan.render_args.get("support_kind", "explicit_type_contradiction"))
+            finalize(trace, "entity_qa", support_kind)
+            return self._make(
+                route, ctx, trace,
+                decision="no",
+                answer_text=render_entity(plan),
+                supported=True,
+                support_kind=support_kind,
+                source_system="entity_qa",
+            )
+
+        if plan.decision == "answer" and plan.render_template == "ontology_is_a":
+            finalize(trace, "entity_qa", "explicit_is_a_chain")
+            return self._make(
+                route, ctx, trace,
+                decision="answer",
+                answer_text=render_entity(plan),
+                supported=True,
+                support_kind="explicit_is_a_chain",
+                source_system="entity_qa",
+            )
+
+        if plan.decision == "answer" and plan.render_template in {
+            "inverse_relation_lookup",
+            "comparative_intersection",
+        }:
+            support_kind = self._planner_relation_support_kind(plan.render_args)
+            finalize(trace, "entity_qa", support_kind)
+            return self._make(
+                route, ctx, trace,
+                decision="answer",
+                answer_text=render_entity(plan),
+                supported=True,
+                support_kind=support_kind,
+                source_system="entity_qa",
+            )
+
         if plan.decision == "answer" and (
             ctx.has_stable_relation or ctx.has_semi_stable_relation
         ):
@@ -273,8 +352,16 @@ class AnswerOrchestrator:
             supported=False,
             support_kind="missing_knowledge",
             source_system="entity_qa",
-            audit_reason="no stable relation for this subject is present in the overlay",
+            audit_reason=plan.audit_reason or "no stable relation for this subject is present in the overlay",
         )
+
+    @staticmethod
+    def _planner_relation_support_kind(render_args: dict) -> str:
+        relations = list(render_args.get("relations", []))
+        relations.extend(render_args.get("common_pairs", []))
+        if any(r.get("stability") == "semi_stable" for r in relations):
+            return "semi_stable_relation"
+        return "stable_relation"
 
     def _entity_definition_answer(self, route, ctx, trace) -> AssistantAnswer:
         analyzed = analyze_entity(route.question)

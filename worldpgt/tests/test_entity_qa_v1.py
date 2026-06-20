@@ -18,6 +18,7 @@ from worldpgt.entity_qa.entity_answer_planner import EntityAnswerPlanner
 from worldpgt.entity_qa.entity_answer_renderer import render
 from worldpgt.entity_qa.entity_answer_validator import validate
 from worldpgt.entity_qa.entity_question_analyzer import analyze
+from worldpgt.entity_qa.types import AnalyzedEntityQuestion, EntityQAEvidence, EntityQAPlan
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 
 _EXPERIMENTS = Path(__file__).parent.parent / "experiments"
@@ -151,6 +152,44 @@ def test_stock_price_audits(planner):
     decision, answer = _answer(planner, "What is Tesla's current stock price?")
     assert decision == "audit"
     assert "cannot answer" in answer.lower()
+
+
+def test_snapshot_relation_rendering_includes_as_of():
+    analyzed = AnalyzedEntityQuestion(
+        question="Who leads Acme?",
+        intent="relation_lookup",
+        subject="Ada",
+        predicate_hint="leader_of",
+        secondary_entity=None,
+        source_hint=None,
+        is_current_query=False,
+        is_unsupported=False,
+    )
+    plan = EntityQAPlan(
+        analyzed=analyzed,
+        decision="answer",
+        audit_reason=None,
+        evidence=EntityQAEvidence(),
+        render_template="relation_lookup",
+        render_args={
+            "subject": "Ada",
+            "predicate": "leader_of",
+            "relations": [
+                {
+                    "subject": "Ada",
+                    "predicate": "leader_of",
+                    "object": "Acme",
+                    "temporal_class": "snapshot",
+                    "as_of": "2026-06",
+                }
+            ],
+            "founder_lookup": False,
+        },
+        confidence=0.9,
+    )
+    answer = render(plan)
+    assert "as of 2026-06" in answer
+    assert "should be rechecked" in answer
 
 
 # ---------------------------------------------------------------------------

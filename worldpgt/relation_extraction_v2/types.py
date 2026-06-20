@@ -41,7 +41,19 @@ ALLOWED_STABLE_RELATIONS = frozenset({
     "type_of",
 })
 
-ALLOWED_RELATIONS = ALLOWED_SEMI_STABLE_RELATIONS | ALLOWED_STABLE_RELATIONS
+# Volatile relations: reflect real-time state that can change at any moment.
+# Facts extracted with these relations carry stability="volatile" and must not
+# be auto-accepted as stable memory without explicit human review.
+ALLOWED_VOLATILE_RELATIONS = frozenset({
+    "leader_of",   # Current leadership (CEO, president, head) — changes suddenly
+    "valued_at",   # Financial valuation — changes with market conditions daily
+})
+
+ALLOWED_RELATIONS = (
+    ALLOWED_SEMI_STABLE_RELATIONS
+    | ALLOWED_STABLE_RELATIONS
+    | ALLOWED_VOLATILE_RELATIONS
+)
 
 QUARANTINE_REASONS = frozenset({
     "weak_link_only",

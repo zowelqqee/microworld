@@ -41,7 +41,7 @@ AssistantIntent = Literal[
     "unknown_or_unsupported",
 ]
 
-AssistantDecision = Literal["answer", "audit"]
+AssistantDecision = Literal["answer", "audit", "no"]
 
 # Allowed support kinds.
 SupportKind = Literal[
@@ -49,6 +49,9 @@ SupportKind = Literal[
     "stable_relation",
     "semi_stable_relation",
     "explicit_connection_path",
+    "explicit_is_a_chain",
+    "explicit_type_contradiction",
+    "entity_type_mismatch",
     "source_qualified_fact",
     "safe_policy_answer",
     "audit_blocked_context",
@@ -62,6 +65,9 @@ ALLOWED_SUPPORT_KINDS = frozenset(
         "stable_relation",
         "semi_stable_relation",
         "explicit_connection_path",
+        "explicit_is_a_chain",
+        "explicit_type_contradiction",
+        "entity_type_mismatch",
         "source_qualified_fact",
         "safe_policy_answer",
         "audit_blocked_context",
@@ -77,6 +83,9 @@ FACTUAL_SUPPORT_KINDS = frozenset(
         "stable_relation",
         "semi_stable_relation",
         "explicit_connection_path",
+        "explicit_is_a_chain",
+        "explicit_type_contradiction",
+        "entity_type_mismatch",
         "source_qualified_fact",
     }
 )

@@ -1,0 +1,167 @@
+"""Tests for in-memory dialogue coreference resolution."""
+
+from __future__ import annotations
+
+import subprocess
+import sys
+from pathlib import Path
+
+from worldpgt.dialogue.conversation_context import ConversationContext, ConversationTurn
+from worldpgt.dialogue.coreference_resolver import resolve_coreferences
+from worldpgt.entity_qa.types import SemanticQuery
+from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+
+_ROOT = Path(__file__).resolve().parent.parent.parent
+_CLI = _ROOT / "worldpgt" / "experiments" / "ask_microworld_v1.py"
+_ACCEPTED_OVERLAY_PATH = _ROOT / "worldpgt" / "experiments" / "accepted_wiki_memory_overlay_v1.json"
+_PROMOTED_OVERLAY_PATH = (
+    _ROOT
+    / "worldpgt"
+    / "experiments"
+    / "self_ingestion_v1"
+    / "promotion"
+    / "promoted_wiki_memory_overlay_v1.json"
+)
+_SNAPSHOT_OVERLAY_PATH = (
+    _ROOT / "worldpgt" / "experiments" / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json"
+)
+
+
+def _index() -> EntitySurfaceIndex:
+    return EntitySurfaceIndex(
+        accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
+        promoted_overlay_path=_PROMOTED_OVERLAY_PATH,
+        snapshot_overlay_path=_SNAPSHOT_OVERLAY_PATH,
+    )
+
+
+def _semantic(
+    entity_a: str | None,
+    relation: str | None = None,
+    entity_b: str | None = None,
+) -> SemanticQuery:
+    return SemanticQuery(
+        entity_a=entity_a,
+        entity_b=entity_b,
+        relation_intent=relation,
+        unknown_position="relation",
+        query_type="lookup",
+        confidence=0.9,
+    )
+
+
+def _turn(
+    question: str,
+    primary: str | None,
+    mentioned: list[str],
+    relation: str | None = None,
+    decision: str = "answer",
+) -> ConversationTurn:
+    return ConversationTurn(
+        question=question,
+        semantic_query=_semantic(primary, relation),
+        decision=decision,
+        primary_entity=primary,
+        mentioned_entities=mentioned,
+        relation_type=relation,
+    )
+
+
+def test_pronoun_resolves_to_last_matching_person_in_context():
+    context = ConversationContext(
+        turns=[
+            _turn(
+                "Who founded SpaceX?",
+                primary="SpaceX",
+                mentioned=["SpaceX", "Elon Musk"],
+                relation="founded_by",
+            )
+        ]
+    )
+
+    result = resolve_coreferences("What else did he found?", context, _index())
+
+    assert result.resolved_question == "What else did Elon Musk found?"
+    assert result.replacements[0].reference == "he"
+    assert result.replacements[0].entities == ("Elon Musk",)
+
+
+def test_descriptor_prefers_recent_primary_organization():
+    context = ConversationContext(
+        turns=[
+            _turn("Who founded SpaceX?", "SpaceX", ["SpaceX", "Elon Musk"], "founded_by"),
+            _turn("What else did he found?", "Elon Musk", ["Elon Musk", "SpaceX"]),
+            _turn("Is he a businessman?", "Elon Musk", ["Elon Musk"], "is_a"),
+        ]
+    )
+
+    result = resolve_coreferences("What does the company develop?", context, _index())
+
+    assert result.resolved_question == "What does SpaceX develop?"
+    assert result.replacements[0].reference == "the company"
+    assert result.replacements[0].entities == ("SpaceX",)
+
+
+def test_it_resolves_to_latest_primary_thing_entity():
+    context = ConversationContext(
+        turns=[
+            _turn(
+                "What does SpaceX develop?",
+                primary="SpaceX",
+                mentioned=["SpaceX", "Falcon 9"],
+                relation="develops",
+            )
+        ]
+    )
+
+    result = resolve_coreferences("How is it connected to Falcon 9?", context, _index())
+
+    assert result.resolved_question == "How is SpaceX connected to Falcon 9?"
+    assert result.replacements[0].entities == ("SpaceX",)
+
+
+def test_plural_reference_resolves_to_last_two_primary_entities():
+    context = ConversationContext(
+        turns=[
+            _turn("Who founded SpaceX?", "SpaceX", ["SpaceX", "Elon Musk"], "founded_by"),
+            _turn("Who founded Blue Origin?", "Blue Origin", ["Blue Origin", "Jeff Bezos"], "founded_by"),
+        ]
+    )
+
+    result = resolve_coreferences("What do they have in common?", context, _index())
+
+    assert result.resolved_question == "What do SpaceX and Blue Origin have in common?"
+    assert result.replacements[0].entities == ("SpaceX", "Blue Origin")
+
+
+def test_ambiguous_reference_is_left_unresolved():
+    context = ConversationContext(
+        turns=[
+            _turn(
+                "Who founded OpenAI?",
+                primary="OpenAI",
+                mentioned=["OpenAI", "Elon Musk", "Jeff Bezos"],
+                relation="founded_by",
+            )
+        ]
+    )
+
+    result = resolve_coreferences("What did he found?", context, _index())
+
+    assert result.resolved_question == "What did he found?"
+    assert result.unresolved_reference == "he"
+    assert result.replacements == ()
+
+
+def test_interactive_cli_reports_unresolved_reference_before_guessing():
+    proc = subprocess.run(
+        [sys.executable, str(_CLI), "--interactive"],
+        input="What did he found?\nquit\n",
+        cwd=str(_ROOT),
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+
+    assert "unresolved_reference: could not determine what 'he' refers to" in proc.stdout
+    assert "Decision: audit." in proc.stdout

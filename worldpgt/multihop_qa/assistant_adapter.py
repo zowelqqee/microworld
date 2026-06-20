@@ -11,6 +11,7 @@ import re
 from dataclasses import dataclass
 from typing import Any
 
+from worldpgt.knowledge_pump.audit_event_logger import log_multihop_audit_event
 from worldpgt.multihop_qa.answer_renderer import render as render_multihop_plan
 from worldpgt.multihop_qa.path_planner import MultihopPlanner
 from worldpgt.multihop_qa.question_analyzer import analyze
@@ -145,5 +146,6 @@ def render_cli_multihop_result(
         lines.append(f"Reason: {reason}.")
         lines.append("Decision: audit.")
         lines.append(f"Overlay: {overlay_mode}.")
+        log_multihop_audit_event(result)
 
     return "\n".join(lines).strip()

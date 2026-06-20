@@ -34,6 +34,8 @@ from worldpgt.knowledge.wiki_ingestion_v2_types import (
     EntityCard,
     RelationClaim,
     SourceQualifiedFact,
+    WikiPageRecord,
+    WikiSource,
 )
 from worldpgt.knowledge.wiki_page_reader import WikiPageReader
 
@@ -156,6 +158,21 @@ def test_definition_extraction_tesla(pages):
     assert definition.object == "American electric vehicle and clean energy company"
     assert definition.stability == "stable"
     assert definition.risk == "low"
+
+
+def test_definition_extraction_rejects_self_loop_is_a():
+    page = WikiPageRecord(
+        page_id="wiki:satellite_internet",
+        title="Satellite internet",
+        lead_paragraph="Satellite internet is a Satellite internet.",
+        source=WikiSource(
+            source_id="fixture:self_loop",
+            source_type="local_fixture",
+            retrieved_at="2026-06-18",
+        ),
+    )
+
+    assert WikiClaimExtractor().extract_definition(page) is None
 
 
 def test_definition_extraction_for_all_required_pages(result):

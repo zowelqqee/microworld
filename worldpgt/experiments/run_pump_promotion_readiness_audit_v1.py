@@ -25,6 +25,9 @@ from worldpgt.knowledge_pump.frontier_title_extractor import (
     _PROSE_TERMINAL_WORDS,
     _has_prose_period_break,
 )
+from worldpgt.knowledge.temporal_classification import (
+    classify_temporal_class,
+)
 
 _EXPERIMENTS = Path(__file__).resolve().parent
 _PUMP_DIR = _EXPERIMENTS / "knowledge_pump_v1"
@@ -214,6 +217,18 @@ def _has_current_signal(item: dict[str, Any]) -> bool:
     return False
 
 
+def _temporal_class(item: dict[str, Any]) -> str | None:
+    explicit = item.get("temporal_class")
+    if explicit:
+        return str(explicit)
+    return classify_temporal_class(
+        str(item.get("predicate") or ("is_a" if item.get("overlay_type") == "overlay_definition" else "")),
+        str(item.get("stability") or ""),
+        overlay_type=str(item.get("overlay_type") or ""),
+        claim_type=str(item.get("claim_type") or ""),
+    )
+
+
 def _subject_problem(subject: str) -> str | None:
     subject = subject.strip()
     if not subject:
@@ -252,8 +267,6 @@ def _definition_reason(item: dict[str, Any]) -> tuple[str, list[str]]:
     subject_issue = _subject_problem(subject)
     if subject_issue:
         reasons.append(subject_issue)
-    if _has_current_signal(item):
-        reasons.append("current_or_volatile")
     if _looks_truncated(definition):
         reasons.append("definition_truncated_or_incomplete")
     if len(definition.split()) < 2:
@@ -264,8 +277,23 @@ def _definition_reason(item: dict[str, Any]) -> tuple[str, list[str]]:
         reasons.append("definition_broad_class")
     if item.get("source_page") and _norm(item.get("source_page")) != _norm(subject):
         reasons.append("source_page_subject_mismatch")
+    temporal_class = _temporal_class(item)
+    if temporal_class is None:
+        reasons.append("temporal_class_requires_review")
+    if temporal_class == "snapshot" and not item.get("as_of"):
+        reasons.append("snapshot_requires_as_of")
+    if temporal_class == "aggregate" and not item.get("as_of"):
+        reasons.append("aggregate_requires_as_of")
+    if _has_current_signal(item):
+        reasons.append("current_or_volatile")
 
-    if "current_or_volatile" in reasons or "definition_truncated_or_incomplete" in reasons:
+    if (
+        "current_or_volatile" in reasons
+        or "definition_truncated_or_incomplete" in reasons
+        or "snapshot_requires_as_of" in reasons
+    ):
+        return CLASS_REJECT, reasons
+    if "aggregate_requires_as_of" in reasons:
         return CLASS_REJECT, reasons
     if subject_issue or "definition_too_short" in reasons:
         return CLASS_REJECT, reasons
@@ -300,25 +328,43 @@ def _relation_reason(item: dict[str, Any]) -> tuple[str, list[str]]:
         reasons.append(subject_issue)
     if object_issue:
         reasons.append(object_issue)
-    if _has_current_signal(item):
-        reasons.append("current_or_volatile")
-    if predicate in HIGH_REVIEW_PREDICATES:
+    temporal_class = _temporal_class(item)
+    if temporal_class is None:
+        reasons.append("temporal_class_requires_review")
+    if temporal_class == "snapshot" and not item.get("as_of"):
+        reasons.append("snapshot_requires_as_of")
+    if temporal_class == "aggregate" and not item.get("as_of"):
+        reasons.append("aggregate_requires_as_of")
+    if predicate in HIGH_REVIEW_PREDICATES and not (
+        temporal_class == "snapshot" and item.get("as_of")
+    ):
         reasons.append("predicate_high_review")
-    if predicate == "owned_by":
+    if predicate == "owned_by" and not (temporal_class == "snapshot" and item.get("as_of")):
         reasons.append("ownership_semantic_ambiguity")
     if predicate in {"develops", "developed_by"} and len(obj.split()) > 3:
         reasons.append("complex_development_object")
     if predicate == "headquartered_in":
         reasons.append("headquarters_currentness_risk")
-    if predicate == "leader_of":
+    if predicate == "leader_of" and not (temporal_class == "snapshot" and item.get("as_of")):
         reasons.append("leader_currentness_risk")
     if predicate not in SAFE_RELATION_PREDICATES and predicate not in HIGH_REVIEW_PREDICATES:
         reasons.append("predicate_not_allowlisted")
     if str(item.get("risk", "")).casefold() == "high":
         reasons.append("high_risk_fact")
+    if _has_current_signal(item):
+        reasons.append("current_or_volatile")
 
-    if "current_or_volatile" in reasons or subject_issue or object_issue or "high_risk_fact" in reasons:
+    if (
+        "current_or_volatile" in reasons
+        or "snapshot_requires_as_of" in reasons
+        or "aggregate_requires_as_of" in reasons
+        or subject_issue
+        or object_issue
+        or "high_risk_fact" in reasons
+    ):
         return CLASS_REJECT, reasons
+    if temporal_class == "snapshot" and item.get("as_of"):
+        return CLASS_PROMOTION, ["snapshot_as_of_recheck_required"]
     if predicate in HIGH_REVIEW_PREDICATES:
         return CLASS_REVIEW, reasons
     if predicate in SAFE_RELATION_PREDICATES:
@@ -386,6 +432,8 @@ def _classify_item(
         "source_page": item.get("source_page", ""),
         "risk": item.get("risk", ""),
         "stability": item.get("stability", ""),
+        "temporal_class": _temporal_class(item) or "",
+        "as_of": item.get("as_of", ""),
         "trust": item.get("trust", ""),
         "evidence_text": item.get("evidence_text", ""),
         "qa_covered": qa_covered,
@@ -615,6 +663,8 @@ def run(
         "source_page",
         "risk",
         "stability",
+        "temporal_class",
+        "as_of",
         "qa_covered",
         "qa_current",
         "duplicate_of_text",

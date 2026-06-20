@@ -1,0 +1,253 @@
+{
+  "audit_name": "pump_promotion_readiness_audit_v1",
+  "promotion_ready": true,
+  "total_world_model_items": 912,
+  "total_answerable_facts": 249,
+  "relations_count": 47,
+  "definitions_count": 202,
+  "promotion_candidate_count": 152,
+  "proposal_only_count": 4,
+  "needs_review_count": 85,
+  "reject_recommendation_count": 8,
+  "qa_is_current": true,
+  "fact_count_matches_qa_fact_count": true,
+  "relation_count_matches_qa_relation_count": true,
+  "definition_count_matches_qa_definition_count": true,
+  "summary_pump_fact_qa_status": "current_from_qa_artifact",
+  "summary_says_pump_fact_qa_status_current_from_qa_artifact": true,
+  "all_promotion_candidates_covered_by_qa": true,
+  "duplicate_candidate_count": 0,
+  "duplicate_fact_count": 0,
+  "entity_card_excluded_count": 663,
+  "weak_context_excluded_count": 0,
+  "top_reasons_for_not_promoting": {
+    "source_page_subject_mismatch": 60,
+    "predicate_high_review": 20,
+    "current_or_volatile": 8,
+    "predicate_not_allowlisted": 4,
+    "missing_positive_qa_coverage": 3,
+    "definition_broad_class": 1,
+    "definition_too_broad": 1
+  },
+  "most_trustworthy_predicates": [
+    {
+      "predicate": "is_a",
+      "total": 204,
+      "promotion_candidate": 137,
+      "proposal_only": 0,
+      "needs_review": 62,
+      "reject_recommendation": 5,
+      "candidate_rate": 0.6716,
+      "top_reasons": {
+        "source_page_subject_mismatch": 60,
+        "current_or_volatile": 5,
+        "definition_broad_class": 1,
+        "definition_too_broad": 1
+      }
+    },
+    {
+      "predicate": "founded_by",
+      "total": 13,
+      "promotion_candidate": 13,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "predicate": "founded",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "predicate": "publishes",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    }
+  ],
+  "cleanest_source_pages": [
+    {
+      "source_page": "Intel Corporation",
+      "total": 3,
+      "promotion_candidate": 3,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "London Stock Exchange",
+      "total": 3,
+      "promotion_candidate": 3,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "International Energy Agency",
+      "total": 2,
+      "promotion_candidate": 2,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Rocket Science Games",
+      "total": 2,
+      "promotion_candidate": 2,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Satellite Radio",
+      "total": 2,
+      "promotion_candidate": 2,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "World Economic Forum",
+      "total": 2,
+      "promotion_candidate": 2,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Abe Fortas",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Affordable Connectivity Program",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Air Command",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Alpha Magnetic Spectrometer",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Amalgam Comics",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Amazon Basin",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Amazon Bookstore Cooperative",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Amazon Delta",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    },
+    {
+      "source_page": "Amazonian Guard",
+      "total": 1,
+      "promotion_candidate": 1,
+      "proposal_only": 0,
+      "needs_review": 0,
+      "reject_recommendation": 0,
+      "candidate_rate": 1.0,
+      "top_reasons": {}
+    }
+  ],
+  "source_artifacts": {
+    "precision_answerable_delta": "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/pump_precision_answerable_delta.json",
+    "pump_dry_run_overlay": "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/pump_dry_run_overlay.json",
+    "pump_fact_qa_summary": "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/pump_fact_qa_v1/pump_fact_qa_summary.json",
+    "precision_firewall_v2": "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/precision_firewall_v2",
+    "precision_cleanup_v2_1": "/Users/arseniyabramidze/mini-worldgrad/worldpgt/experiments/knowledge_pump_v1/precision_cleanup_v2_1"
+  },
+  "confirmations": {
+    "network_calls": false,
+    "trusted_memory_modified": false,
+    "accepted_overlay_modified": false,
+    "promoted_overlay_modified": false,
+    "snapshot_dry_run_overlay_modified": false,
+    "sense_memory_modified": false,
+    "auto_ingest": false,
+    "auto_promote": false,
+    "auto_apply": false,
+    "weak_context_excluded": true,
+    "entity_cards_excluded": true,
+    "neural_gpt_training_embedding_code_added": false,
+    "nanogpt_touched": false
+  }
+}

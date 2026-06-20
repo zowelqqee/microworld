@@ -40,7 +40,7 @@ def validate(
     """Check one entity QA output against its expected fields.
 
     Expected CSV columns:
-    - expected_decision: "answer" or "audit"
+    - expected_decision: "answer", "audit", or "no"
     - expected_intent: e.g. "define_entity"
     - expected_answer_contains: semicolon-separated keywords (for answer rows)
     """
@@ -61,7 +61,7 @@ def validate(
             return ValidationResult(is_correct=True, quality_flagged=False, quality_reason="")
         return ValidationResult(is_correct=False, quality_flagged=False, quality_reason="")
 
-    # Answer rows — check keyword containment.
+    # Answer/no rows — check keyword containment.
     if expected_contains_raw:
         keywords = [k.strip().lower() for k in expected_contains_raw.split(";") if k.strip()]
         answer_lower = answer.lower()

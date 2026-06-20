@@ -103,8 +103,8 @@ eqa-exp-v1-101,Is Tesla the founder of Elon Musk?,audit,unknown_or_unsupported,,
 eqa-exp-v1-102,Is SpaceX the founder of Elon Musk?,audit,unknown_or_unsupported,,,low
 eqa-exp-v1-103,Did SpaceX found Elon Musk?,audit,unknown_or_unsupported,,,low
 eqa-exp-v1-104,Did Tesla found Elon Musk?,audit,unknown_or_unsupported,,,low
-eqa-exp-v1-105,Is Rocket a company?,audit,unknown_or_unsupported,,,low
-eqa-exp-v1-106,Is leadership a company?,audit,unknown_or_unsupported,,,low
+eqa-exp-v1-105,Is Rocket a company?,no,relation_lookup,,No.;technology;company,low
+eqa-exp-v1-106,Is leadership a company?,no,relation_lookup,,No.;concept;company,low
 eqa-exp-v1-107,Is net worth a stable physical property?,audit,unknown_or_unsupported,,,low
 eqa-exp-v1-108,Is leadership a product made by Tesla?,audit,unknown_or_unsupported,,,low
 eqa-exp-v1-109,Is Bloomberg News the same as Bloomberg L.P.?,audit,unknown_or_unsupported,,,low

@@ -20,6 +20,9 @@ import re
 from pathlib import Path
 from typing import Optional
 
+from worldpgt.knowledge.entity_type_classifier import classify_entity_type
+from worldpgt.knowledge.entity_types import canonicalize_entity_type
+
 # Words that are too generic to be treated as entity surface forms.
 _BLOCKED_SURFACES = frozenset({
     "a", "an", "the", "it", "is", "in", "on", "at", "to", "by", "of", "or",
@@ -84,6 +87,15 @@ def _overlay_entities(overlay_path: Path) -> list[tuple[str, str]]:
     return pairs
 
 
+def _load_overlay_items(overlay_path: Path) -> list[dict]:
+    if not overlay_path.exists():
+        return []
+    items = json.loads(overlay_path.read_text(encoding="utf-8"))
+    if not isinstance(items, list):
+        return []
+    return [item for item in items if isinstance(item, dict)]
+
+
 class EntitySurfaceIndex:
     """Longest-match entity surface resolver."""
 
@@ -96,22 +108,32 @@ class EntitySurfaceIndex:
     ) -> None:
         self._surface_to_canonical: dict[str, str] = {}
         self._canonical_to_type: dict[str, str] = {}
+        self._canonical_to_definition: dict[str, str] = {}
 
         for path in (accepted_overlay_path, promoted_overlay_path, snapshot_overlay_path):
             for surface, canonical in _overlay_entities(path):
                 if not _is_blocked(surface):
                     self._surface_to_canonical.setdefault(surface, canonical)
 
+        # Definitions can come from any readable overlay source and are used
+        # only as a fallback when no explicit entity type exists.
+        for path in (accepted_overlay_path, promoted_overlay_path, snapshot_overlay_path):
+            for item in _load_overlay_items(path):
+                if item.get("overlay_type") != "overlay_definition":
+                    continue
+                subject = _norm(str(item.get("subject") or ""))
+                definition = _norm(str(item.get("definition") or ""))
+                if subject and definition:
+                    self._canonical_to_definition.setdefault(subject, definition)
+
         # Add entity type hints from promoted overlay (most authoritative).
         if promoted_overlay_path.exists():
-            items = json.loads(promoted_overlay_path.read_text(encoding="utf-8"))
-            if isinstance(items, list):
-                for item in items:
-                    if item.get("overlay_type") == "overlay_entity":
-                        label = _norm(str(item.get("label") or ""))
-                        etype = str(item.get("entity_type") or "")
-                        if label and etype:
-                            self._canonical_to_type[label] = etype
+            for item in _load_overlay_items(promoted_overlay_path):
+                if item.get("overlay_type") == "overlay_entity":
+                    label = _norm(str(item.get("label") or ""))
+                    etype = canonicalize_entity_type(str(item.get("entity_type") or ""))
+                    if label and etype:
+                        self._canonical_to_type[label] = etype
 
         # Add snapshot manifest titles.
         if snapshot_manifest_path and snapshot_manifest_path.exists():
@@ -136,7 +158,14 @@ class EntitySurfaceIndex:
         return self._surface_to_canonical.get(norm_s)
 
     def entity_type(self, canonical: str) -> Optional[str]:
-        return self._canonical_to_type.get(_norm(canonical))
+        norm_canonical = _norm(canonical)
+        explicit = self._canonical_to_type.get(norm_canonical)
+        if explicit:
+            return explicit
+        definition = self._canonical_to_definition.get(norm_canonical)
+        if definition:
+            return classify_entity_type(definition)
+        return None
 
     def all_surfaces(self) -> list[str]:
         return list(self._surfaces_sorted)

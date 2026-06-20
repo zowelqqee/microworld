@@ -317,4 +317,67 @@ PATTERNS: list[PatternSpec] = [
         "is_a", "A_subj_B_obj", "high", "stable", "low",
         "X is an <type> company/organization",
     ),
+
+    # ------------------------------------------------------------------- #
+    # LEADER_OF — volatile: leadership changes without notice
+    #
+    # stability = "volatile": the fact may be stale the moment it is read.
+    # risk = "high": presenting outdated leadership as current is misleading.
+    # These facts must not be auto-accepted and must never bridge a multi-hop
+    # chain (path_validator blocks them via CURRENT_SENSITIVE_PREDICATES).
+    # ------------------------------------------------------------------- #
+    PatternSpec(
+        "is_ceo_of",
+        _p(
+            r"\b(?P<A>" + _E + r")\s+is\s+(?:the\s+)?"
+            r"(?:ceo|chief\s+executive\s+officer|president|chairman|chairperson"
+            r"|head|director\s+general|managing\s+director)\s+of\s+(?P<B>" + _E + r")\b"
+        ),
+        "leader_of", "A_subj_B_obj", "high", "volatile", "high",
+        "X is CEO/president/chairman/head of Y",
+    ),
+    PatternSpec(
+        "serves_as_ceo_of",
+        _p(
+            r"\b(?P<A>" + _E + r")\s+(?:serves?|served)\s+as\s+(?:the\s+)?"
+            r"(?:ceo|chief\s+executive\s+officer|president|chairman|head|director)\s+"
+            r"of\s+(?P<B>" + _E + r")\b"
+        ),
+        "leader_of", "A_subj_B_obj", "high", "volatile", "high",
+        "X serves/served as CEO/president/head of Y",
+    ),
+    PatternSpec(
+        "leads_active",
+        _p(
+            r"\b(?P<A>" + _E + r")\s+(?:leads?|chairs?)\s+(?P<B>" + _E + r")\b"
+        ),
+        "leader_of", "A_subj_B_obj", "medium", "volatile", "high",
+        "X leads/chairs Y",
+    ),
+
+    # ------------------------------------------------------------------- #
+    # VALUED_AT — volatile: financial valuations change with market conditions
+    #
+    # stability = "volatile": valuation is a time-sensitive estimate.
+    # risk = "high": stating an outdated valuation as fact is misleading.
+    # These facts require source qualification and are never stable memory.
+    # ------------------------------------------------------------------- #
+    PatternSpec(
+        "valued_at_passive",
+        _p(
+            r"\b(?P<A>" + _E + r")\s+(?:is|was|has\s+been)\s+valued\s+at\s+"
+            r"(?P<B>(?:\$|USD\s*)?\d[\d.,]*\s*(?:billion|million|trillion|B|M|T)?)\b"
+        ),
+        "valued_at", "A_subj_B_obj", "high", "volatile", "high",
+        "X is valued at $N billion/million",
+    ),
+    PatternSpec(
+        "has_valuation_of",
+        _p(
+            r"\b(?P<A>" + _E + r")\s+(?:has|had)\s+a\s+valuation\s+of\s+"
+            r"(?P<B>(?:\$|USD\s*)?\d[\d.,]*\s*(?:billion|million|trillion|B|M|T)?)\b"
+        ),
+        "valued_at", "A_subj_B_obj", "high", "volatile", "high",
+        "X has a valuation of $N billion",
+    ),
 ]

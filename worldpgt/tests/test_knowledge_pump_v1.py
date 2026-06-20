@@ -100,6 +100,57 @@ def test_ask_cli_custom_overlay_path_resolves(tmp_path, capsys):
     assert "Test Widget is a device." in out
 
 
+def test_ask_cli_ontology_layer_extends_is_a_traversal(tmp_path, capsys):
+    overlay = tmp_path / "custom_overlay.json"
+    ontology = tmp_path / "ontology_layer.json"
+    overlay.write_text(
+        json.dumps(
+            [
+                {
+                    "overlay_type": "overlay_definition",
+                    "subject": "Elon Musk",
+                    "definition": "businessman",
+                    "predicate": "is_a",
+                    "trust": "overlay_candidate",
+                    "risk": "low",
+                    "stability": "stable",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+    ontology.write_text(
+        json.dumps(
+            [
+                {
+                    "overlay_type": "overlay_relation",
+                    "subject": "businessman",
+                    "predicate": "is_a",
+                    "object": "worker",
+                    "trust": "wikidata_p279_ontology",
+                    "risk": "low",
+                    "stability": "stable",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    code = ask_microworld_v1.main([
+        "Is Elon Musk a worker?",
+        "--overlay-path",
+        str(overlay),
+        "--ontology-layer",
+        str(ontology),
+    ])
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert "Yes. Elon Musk is a businessman, which is a worker." in out
+    assert "Support: explicit is_a chain." in out
+    assert "Decision: answer." in out
+
+
 def test_ask_cli_rejects_overlay_and_overlay_path_together(tmp_path, capsys):
     overlay = tmp_path / "custom_overlay.json"
     overlay.write_text("[]\n", encoding="utf-8")

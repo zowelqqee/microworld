@@ -248,6 +248,62 @@ def test_already_fetched_titles_not_selected_into_batch() -> None:
         assert entry["already_fetched"] is False
 
 
+def test_stale_snapshot_signal_allows_recheck_of_already_fetched_title() -> None:
+    signals = build_yield_signals(
+        [],
+        history=[{"fetch_success": ["Elon Musk"], "titles_fetched": ["Elon Musk"], "fetch_failed": []}],
+        stale_fact_signals={
+            "elon musk": {
+                "subject": "Elon Musk",
+                "predicate": "estimated_net_worth",
+                "object": "US$1.1 trillion",
+                "as_of": "2026-06",
+                "staleness_ratio": 0.6,
+            }
+        },
+    )
+    scored = score_title("Elon Musk", "stale_snapshot_recheck", "refresh net worth", 0, signals)
+    assert scored["already_fetched"] is False
+    assert scored["recheck_required"] is True
+    assert "stale_snapshot_recheck" in scored["positive_reasons"]
+    assert "staleness_boost:6.00" in scored["positive_reasons"]
+    assert "already_fetched" not in scored["negative_reasons"]
+
+
+def test_run_yield_ranked_frontier_injects_stale_title_when_missing_from_frontier(tmp_path) -> None:
+    pump_dir = tmp_path / "pump"
+    out_dir = tmp_path / "out"
+    pump_dir.mkdir()
+    (pump_dir / "pump_summary.json").write_text("{}", encoding="utf-8")
+    (pump_dir / "pump_batch_history.json").write_text(
+        json.dumps([
+            {"fetch_success": ["Elon Musk"], "titles_fetched": ["Elon Musk"], "fetch_failed": []}
+        ]),
+        encoding="utf-8",
+    )
+    (pump_dir / "frontier_titles.json").write_text("[]", encoding="utf-8")
+    (pump_dir / "pump_precision_answerable_delta.json").write_text("[]", encoding="utf-8")
+
+    result = run_yield_ranked_frontier(
+        pump_dir,
+        out_dir,
+        stale_fact_signals={
+            "elon musk": {
+                "subject": "Elon Musk",
+                "predicate": "estimated_net_worth",
+                "object": "US$1.1 trillion",
+                "as_of": "2026-06",
+                "staleness_ratio": 0.6,
+            }
+        },
+    )
+    assert result["plan"]
+    first = result["plan"][0]
+    assert first["title"] == "Elon Musk"
+    assert first["recheck_required"] is True
+    assert "stale_snapshot_recheck" in first["positive_reasons"]
+
+
 # ---------------------------------------------------------------------------
 # Integration tests against real pump artifacts (read-only)
 # ---------------------------------------------------------------------------

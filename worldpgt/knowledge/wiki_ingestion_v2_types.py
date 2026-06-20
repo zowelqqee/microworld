@@ -11,6 +11,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Literal, Optional
 
+from worldpgt.knowledge.entity_types import CanonicalEntityType
+
 # ---------------------------------------------------------------------------
 # Shared literal vocabularies
 # ---------------------------------------------------------------------------
@@ -23,19 +25,13 @@ ItemType = Literal[
     "source_qualified_fact",
 ]
 
-EntityType = Literal[
-    "person",
-    "organization",
-    "publication",
-    "concept",
-    "technology",
-    "product",
-    "unknown",
-]
+EntityType = CanonicalEntityType
 
 Stability = Literal["stable", "semi_stable", "volatile"]
 
 Risk = Literal["low", "medium", "high"]
+
+TemporalClass = Literal["historical", "snapshot", "aggregate", "derived"]
 
 # Status is always "candidate" for this pipeline — never trusted runtime memory.
 Status = Literal["candidate"]
@@ -107,7 +103,7 @@ class EntityCard:
     entity_id: str = ""
     label: str = ""
     aliases: list[str] = field(default_factory=list)
-    entity_type: EntityType = "unknown"
+    entity_type: EntityType = "other"
     source_page: str = ""
     risk: Risk = "low"
     status: Status = "candidate"
@@ -124,6 +120,7 @@ class DefinitionClaim:
     source_page: str = ""
     evidence_text: str = ""
     stability: Stability = "stable"
+    temporal_class: TemporalClass = "historical"
     risk: Risk = "low"
     status: Status = "candidate"
 
@@ -139,6 +136,8 @@ class RelationClaim:
     source_page: str = ""
     evidence_text: str = ""
     stability: Stability = "semi_stable"
+    temporal_class: TemporalClass = "historical"
+    as_of: str = ""
     risk: Risk = "medium"
     status: Status = "candidate"
 
@@ -173,6 +172,7 @@ class SourceQualifiedFact:
     source_name: str = ""
     as_of: str = ""
     claim_type: str = "time_sensitive_estimate"
+    temporal_class: TemporalClass = "snapshot"
     source_page: str = ""
     evidence_text: str = ""
     stability: Stability = "volatile"

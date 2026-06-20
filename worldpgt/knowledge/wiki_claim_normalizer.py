@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import re
 
+from worldpgt.knowledge.entity_types import canonicalize_entity_type
 from worldpgt.knowledge.wiki_ingestion_v2_types import (
     EntityType,
     Risk,
@@ -172,8 +173,13 @@ _LEAD_TYPE_PATTERNS: tuple[tuple[str, EntityType], ...] = (
     ("is a practice", "concept"),
     ("is the ability", "concept"),
     ("is a technology", "technology"),
-    ("is a vehicle", "technology"),
-    ("is a type of vehicle", "technology"),
+    ("is a vehicle", "vehicle"),
+    ("is a type of vehicle", "vehicle"),
+    ("is a product", "product"),
+    ("is a program", "program"),
+    ("is a project", "program"),
+    ("is a city", "place"),
+    ("is a country", "place"),
 )
 
 _INFOBOX_TYPE_HINTS: tuple[tuple[str, str, EntityType], ...] = (
@@ -195,6 +201,10 @@ _CATEGORY_TYPE_HINTS: tuple[tuple[str, EntityType], ...] = (
     ("magazines", "publication"),
     ("publications", "publication"),
     ("technology", "technology"),
+    ("vehicles", "vehicle"),
+    ("programs", "program"),
+    ("cities", "place"),
+    ("countries", "place"),
 )
 
 
@@ -202,15 +212,9 @@ def infer_entity_type(page: WikiPageRecord) -> EntityType:
     """Infer entity type deterministically from hint, lead, infobox, categories."""
     # 1. Explicit hint wins.
     hint = (page.entity_type_hint or "").strip().lower()
-    if hint in (
-        "person",
-        "organization",
-        "publication",
-        "concept",
-        "technology",
-        "product",
-    ):
-        return hint  # type: ignore[return-value]
+    canonical_hint = canonicalize_entity_type(hint)
+    if canonical_hint is not None:
+        return canonical_hint
 
     lead = page.lead_paragraph.lower()
 
@@ -233,4 +237,4 @@ def infer_entity_type(page: WikiPageRecord) -> EntityType:
         if any(needle in c for c in lowered_cats):
             return etype
 
-    return "unknown"
+    return "other"

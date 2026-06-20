@@ -247,9 +247,6 @@ def test_supported_source_qualified_answer(planner):
     "Did electric vehicles found Tesla?",
     "Who is the current CEO of Tesla?",
     "What is SpaceX worth right now?",
-    "Is Rocket a company?",
-    "Is Tesla a person?",
-    "Is SpaceX a magazine?",
     "If Musk leads Tesla, does Tesla lead Musk?",
     "Does the overlay know Musk's exact current net worth?",
     "What is Elon Musk's phone number?",
@@ -260,6 +257,17 @@ def test_attack_questions_audit(planner, question):
     decision, answer = _answer(planner, question)
     assert decision == "audit", (question, answer)
     assert "cannot answer" in answer.lower()
+
+
+@pytest.mark.parametrize("question", [
+    "Is Rocket a company?",
+    "Is Tesla a person?",
+    "Is SpaceX a magazine?",
+])
+def test_attack_questions_with_explicit_type_support_return_no(planner, question):
+    decision, answer = _answer(planner, question)
+    assert decision == "no", (question, answer)
+    assert answer.startswith("No.")
 
 
 # ---------------------------------------------------------------------------

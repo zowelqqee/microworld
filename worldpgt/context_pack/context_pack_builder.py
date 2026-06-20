@@ -140,6 +140,7 @@ class ContextPackBuilder:
                         definition=d.get("definition", ""),
                         predicate=d.get("predicate", ""),
                         stability=d.get("stability", ""),
+                        temporal_class=d.get("temporal_class", ""),
                         evidence_text=d.get("evidence_text", ""),
                     )
                 )
@@ -153,6 +154,8 @@ class ContextPackBuilder:
             stability=r.get("stability", ""),
             risk=r.get("risk", ""),
             trust=r.get("trust", ""),
+            temporal_class=r.get("temporal_class", ""),
+            as_of=r.get("as_of", ""),
             evidence_text=r.get("evidence_text", ""),
             source_page=r.get("source_page", ""),
         )
@@ -218,6 +221,7 @@ class ContextPackBuilder:
                         source_name=sf.get("source_name", ""),
                         as_of=sf.get("as_of", ""),
                         claim_type=sf.get("claim_type", ""),
+                        temporal_class=sf.get("temporal_class", ""),
                         stability=sf.get("stability", ""),
                         risk=sf.get("risk", ""),
                         trust=sf.get("trust", ""),

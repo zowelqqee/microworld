@@ -8,6 +8,16 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Literal, Optional
 
+UnknownPosition = Literal["subject", "object", "relation", "path", "intersection"]
+SemanticQueryType = Literal[
+    "lookup",
+    "inverse",
+    "aggregative",
+    "comparative",
+    "is_a",
+    "definition",
+]
+
 EntityQAIntent = Literal[
     "define_entity",
     "relation_lookup",
@@ -16,7 +26,27 @@ EntityQAIntent = Literal[
     "unknown_or_unsupported",
 ]
 
-EntityQADecision = Literal["answer", "audit"]
+EntityQADecision = Literal["answer", "audit", "no"]
+
+
+@dataclass
+class SemanticQuery:
+    entity_a: Optional[str]
+    entity_b: Optional[str]
+    relation_intent: Optional[str]
+    unknown_position: UnknownPosition
+    query_type: SemanticQueryType
+    confidence: float
+
+    def to_dict(self) -> dict:
+        return {
+            "entity_a": self.entity_a,
+            "entity_b": self.entity_b,
+            "relation_intent": self.relation_intent,
+            "unknown_position": self.unknown_position,
+            "query_type": self.query_type,
+            "confidence": self.confidence,
+        }
 
 
 @dataclass
@@ -29,6 +59,7 @@ class AnalyzedEntityQuestion:
     source_hint: Optional[str]
     is_current_query: bool
     is_unsupported: bool
+    semantic_query: Optional[SemanticQuery] = None
 
 
 @dataclass

@@ -15,6 +15,10 @@ from dataclasses import dataclass, field
 
 from worldpgt.self_ingestion.conflict_detector import ExistingOverlayIndex
 from worldpgt.self_ingestion.ingestion_delta import item_key
+from worldpgt.knowledge.temporal_classification import (
+    classify_temporal_class,
+    requires_as_of,
+)
 
 # --- block reason enums -------------------------------------------------
 REASON_MALFORMED = "malformed_overlay_item"
@@ -31,11 +35,15 @@ REASON_CONFLICTS_EXISTING = "conflicts_existing_fact"
 REASON_ENTITY_TYPE_MISMATCH = "entity_type_mismatch"
 REASON_DUPLICATE_EXISTING = "duplicate_existing_item"
 REASON_DUPLICATE_IN_DELTA = "duplicate_in_delta"
+REASON_SNAPSHOT_REQUIRES_AS_OF = "snapshot_requires_as_of"
+REASON_AGGREGATE_REQUIRES_AS_OF = "aggregate_requires_as_of"
+REASON_TEMPORAL_CLASS_REVIEW = "temporal_class_requires_review"
 
 _SAFETY_REASONS = frozenset({
     REASON_HIGH_RISK, REASON_VOLATILE, REASON_REQUIRES_RECHECK, REASON_PRIVATE,
     REASON_INVERTED, REASON_UNIVERSAL, REASON_WEAK_LINK_PROMOTED,
     REASON_CONFLICTS_EXISTING, REASON_ENTITY_TYPE_MISMATCH,
+    REASON_SNAPSHOT_REQUIRES_AS_OF, REASON_AGGREGATE_REQUIRES_AS_OF,
 })
 
 _KNOWN_TYPES = ("overlay_entity", "overlay_definition", "overlay_relation",
@@ -121,7 +129,22 @@ def _classify(item: dict, existing: ExistingOverlayIndex, seen: set) -> str | No
     # Volatile / source-qualified facts must never become stable overlay items.
     if otype == "overlay_source_fact" or item.get("stability") == "volatile":
         return REASON_VOLATILE
-    if item.get("requires_recheck") is True:
+
+    temporal_class = item.get("temporal_class") or classify_temporal_class(
+        item.get("predicate"),
+        item.get("stability"),
+        overlay_type=otype,
+        claim_type=item.get("claim_type"),
+    )
+    if otype in {"overlay_definition", "overlay_relation"} and temporal_class is None:
+        return REASON_TEMPORAL_CLASS_REVIEW
+    if temporal_class == "snapshot" and not item.get("as_of"):
+        return REASON_SNAPSHOT_REQUIRES_AS_OF
+    if temporal_class == "aggregate" and not item.get("as_of"):
+        return REASON_AGGREGATE_REQUIRES_AS_OF
+    if item.get("requires_recheck") is True and not (
+        temporal_class == "snapshot" and item.get("as_of")
+    ):
         return REASON_REQUIRES_RECHECK
     if item.get("risk") == "high":
         return REASON_HIGH_RISK
@@ -191,6 +214,14 @@ def validate_delta(delta_items: list, existing_items: list[dict]) -> ValidationR
             result.accepted_count += 1
             result.accepted_item_ids.append(item_id)
             result.accepted_items.append(item)
+            temporal_class = item.get("temporal_class") or classify_temporal_class(
+                item.get("predicate") if isinstance(item, dict) else None,
+                item.get("stability") if isinstance(item, dict) else None,
+                overlay_type=item.get("overlay_type") if isinstance(item, dict) else None,
+                claim_type=item.get("claim_type") if isinstance(item, dict) else None,
+            )
+            if temporal_class == "snapshot":
+                result.warnings.append(f"{item_id}:snapshot_as_of_recheck_required")
             seen.add(item_key(item))
         else:
             result.rejected_count += 1

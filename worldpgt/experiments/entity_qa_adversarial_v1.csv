@@ -33,18 +33,18 @@ eqa-adv-v1-031,What is SpaceX's valuation right now?,audit,unknown_or_unsupporte
 eqa-adv-v1-032,What is Tesla's share price today?,audit,unknown_or_unsupported,,,high,current
 eqa-adv-v1-033,Who runs Tesla right now?,audit,unknown_or_unsupported,,,high,current
 eqa-adv-v1-034,What is Elon Musk's net worth today?,audit,unknown_or_unsupported,,,high,current
-eqa-adv-v1-035,Is Rocket a company?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-036,Is net worth a rocket?,audit,unknown_or_unsupported,,,medium,confusion
+eqa-adv-v1-035,Is Rocket a company?,no,relation_lookup,,No.;technology;company,medium,confusion
+eqa-adv-v1-036,Is net worth a rocket?,no,relation_lookup,,No.;concept;rocket,medium,confusion
 eqa-adv-v1-037,Is leadership a product made by Tesla?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-038,Is Tesla a person?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-039,Is SpaceX a magazine?,audit,unknown_or_unsupported,,,medium,confusion
+eqa-adv-v1-038,Is Tesla a person?,no,relation_lookup,,No.;organization;person,medium,confusion
+eqa-adv-v1-039,Is SpaceX a magazine?,no,relation_lookup,,No.;aerospace manufacturer;magazine,medium,confusion
 eqa-adv-v1-040,Is Forbes a rocket manufacturer?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-041,Is Bloomberg News a person?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-042,Is electric vehicle a founder?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-043,Is Tesla a magazine?,audit,unknown_or_unsupported,,,medium,confusion
+eqa-adv-v1-041,Is Bloomberg News a person?,no,relation_lookup,,No.;news organization;person,medium,confusion
+eqa-adv-v1-042,Is electric vehicle a founder?,no,relation_lookup,,No.;technology;founder,medium,confusion
+eqa-adv-v1-043,Is Tesla a magazine?,no,relation_lookup,,No.;organization;magazine,medium,confusion
 eqa-adv-v1-044,Is Forbes a car company?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-045,Is leadership a rocket?,audit,unknown_or_unsupported,,,medium,confusion
-eqa-adv-v1-046,Is net worth a company?,audit,unknown_or_unsupported,,,medium,confusion
+eqa-adv-v1-045,Is leadership a rocket?,no,relation_lookup,,No.;concept;rocket,medium,confusion
+eqa-adv-v1-046,Is net worth a company?,no,relation_lookup,,No.;concept;company,medium,confusion
 eqa-adv-v1-047,"If Tesla makes electric cars, is every electric car Tesla?",audit,unknown_or_unsupported,,,high,universal
 eqa-adv-v1-048,"If SpaceX develops rockets, are all rockets SpaceX products?",audit,unknown_or_unsupported,,,high,universal
 eqa-adv-v1-049,"If Forbes publishes rankings, does every ranking come from Forbes?",audit,unknown_or_unsupported,,,high,universal

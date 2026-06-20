@@ -73,6 +73,10 @@ def _word_count(s: str) -> int:
     return len(s.split())
 
 
+def _norm_label(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip().lower())
+
+
 def _is_too_generic(s: str) -> bool:
     low = s.lower().strip()
     if len(low) < _MIN_ENTITY_LEN:
@@ -231,6 +235,9 @@ def extract_candidates_from_doc(
                         subject, obj = canon_a, canon_b
                     else:
                         subject, obj = canon_b, canon_a
+
+                    if pattern.relation in ("is_a", "type_of") and _norm_label(subject) == _norm_label(obj):
+                        continue
 
                     # Deduplicate within this doc.
                     triple = (subject.lower(), pattern.relation, obj.lower())

@@ -40,6 +40,8 @@ class HopEdge:
     stability: str = ""
     risk: str = ""
     source_page: str = ""
+    temporal_class: str = ""
+    as_of: str = ""
 
     def display(self) -> str:
         return f"{self.subject} | {self.predicate} | {self.object}"
@@ -54,6 +56,8 @@ class HopEdge:
             "stability": self.stability,
             "risk": self.risk,
             "source_page": self.source_page,
+            "temporal_class": self.temporal_class,
+            "as_of": self.as_of,
         }
 
 

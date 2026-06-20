@@ -27,6 +27,10 @@ from worldpgt.knowledge.wiki_memory_overlay_types import (
     OverlaySkipped,
     OverlaySourceFact,
 )
+from worldpgt.knowledge.temporal_classification import (
+    classify_temporal_class,
+    requires_as_of,
+)
 
 
 @dataclass
@@ -98,7 +102,7 @@ class WikiCandidateOverlayBuilder:
             entity_id=c["entity_id"],
             label=c["label"],
             aliases=list(c.get("aliases") or []),
-            entity_type=c.get("entity_type", "unknown"),
+            entity_type=c.get("entity_type", "other"),
             source_page=c.get("source_page", ""),
             source_candidate_type="entity_card",
             trust="overlay_candidate",
@@ -121,6 +125,7 @@ class WikiCandidateOverlayBuilder:
             trust="overlay_candidate",
             risk="low",
             stability="stable",
+            temporal_class="historical",
         )
 
     def _convert_relation(self, c: dict) -> OverlayRelation | OverlaySkipped:
@@ -132,6 +137,14 @@ class WikiCandidateOverlayBuilder:
             return OverlaySkipped("relation_claim", f"stability_not_allowed:{stability}", c.get("subject", ""))
         if not (c.get("subject") and c.get("object") and c.get("predicate") and c.get("evidence_text")):
             return OverlaySkipped("relation_claim", "missing_required_field", c.get("subject", ""))
+        temporal_class = c.get("temporal_class") or classify_temporal_class(
+            c.get("predicate"), stability
+        )
+        if temporal_class is None:
+            return OverlaySkipped("relation_claim", "temporal_class_requires_review", c.get("subject", ""))
+        if requires_as_of(temporal_class) and not c.get("as_of"):
+            reason = "aggregate_requires_as_of" if temporal_class == "aggregate" else "snapshot_requires_as_of"
+            return OverlaySkipped("relation_claim", reason, c.get("subject", ""))
         return OverlayRelation(
             subject=c["subject"],
             predicate=c["predicate"],
@@ -141,6 +154,8 @@ class WikiCandidateOverlayBuilder:
             trust="overlay_candidate",
             risk=risk,  # type: ignore[arg-type]
             stability=stability,  # type: ignore[arg-type]
+            temporal_class=temporal_class,  # type: ignore[arg-type]
+            as_of=c.get("as_of", ""),
         )
 
     def _convert_context_link(self, c: dict) -> OverlayContextLink | OverlaySkipped:
@@ -160,14 +175,23 @@ class WikiCandidateOverlayBuilder:
     def _convert_source_fact(self, c: dict) -> OverlaySourceFact | OverlaySkipped:
         if not c.get("source_name"):
             return OverlaySkipped("source_qualified_fact", "missing_source_name", c.get("subject", ""))
-        if not c.get("as_of"):
-            return OverlaySkipped("source_qualified_fact", "missing_as_of", c.get("subject", ""))
         if not c.get("requires_recheck", False):
             return OverlaySkipped("source_qualified_fact", "requires_recheck_false", c.get("subject", ""))
         if c.get("stability") != "volatile":
             return OverlaySkipped("source_qualified_fact", "stability_not_volatile", c.get("subject", ""))
         if c.get("risk") != "high":
             return OverlaySkipped("source_qualified_fact", "risk_not_high", c.get("subject", ""))
+        temporal_class = c.get("temporal_class") or classify_temporal_class(
+            c.get("predicate"),
+            c.get("stability"),
+            overlay_type="overlay_source_fact",
+            claim_type=c.get("claim_type"),
+        )
+        if temporal_class is None:
+            return OverlaySkipped("source_qualified_fact", "temporal_class_requires_review", c.get("subject", ""))
+        if requires_as_of(temporal_class) and not c.get("as_of"):
+            reason = "aggregate_requires_as_of" if temporal_class == "aggregate" else "snapshot_requires_as_of"
+            return OverlaySkipped("source_qualified_fact", reason, c.get("subject", ""))
         return OverlaySourceFact(
             subject=c.get("subject", ""),
             predicate=c.get("predicate", ""),
@@ -175,6 +199,7 @@ class WikiCandidateOverlayBuilder:
             source_name=c["source_name"],
             as_of=c["as_of"],
             claim_type=c.get("claim_type", "time_sensitive_estimate"),
+            temporal_class=temporal_class,  # type: ignore[arg-type]
             source_page=c.get("source_page", ""),
             evidence_text=c.get("evidence_text", ""),
             requires_recheck=True,
@@ -193,6 +218,7 @@ class WikiCandidateOverlayBuilder:
         by_overlay_type: Counter[str] = Counter()
         by_risk: Counter[str] = Counter()
         by_stability: Counter[str] = Counter()
+        by_temporal_class: Counter[str] = Counter()
 
         for item in items:
             by_overlay_type[getattr(item, "overlay_type", "unknown")] += 1
@@ -202,6 +228,9 @@ class WikiCandidateOverlayBuilder:
             s = getattr(item, "stability", None)
             if s:
                 by_stability[s] += 1
+            tc = getattr(item, "temporal_class", None)
+            if tc:
+                by_temporal_class[tc] += 1
 
         source_facts = by_overlay_type.get("overlay_source_fact", 0)
         context_links = by_overlay_type.get("overlay_context_link", 0)
@@ -217,6 +246,7 @@ class WikiCandidateOverlayBuilder:
             "by_overlay_type": dict(sorted(by_overlay_type.items())),
             "by_risk": dict(sorted(by_risk.items())),
             "by_stability": dict(sorted(by_stability.items())),
+            "by_temporal_class": dict(sorted(by_temporal_class.items())),
             "source_facts_count": source_facts,
             "weak_context_links_count": context_links,
             "safe_for_general_runtime": SAFE_FOR_GENERAL_RUNTIME,

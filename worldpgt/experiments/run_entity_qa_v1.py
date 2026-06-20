@@ -69,7 +69,9 @@ def run(
     rows = list(csv.DictReader(Path(qa_input_path).read_text(encoding="utf-8").splitlines()))
 
     results = []
-    by_intent: dict[str, dict] = defaultdict(lambda: {"answer": 0, "audit": 0, "correct": 0, "wrong": 0})
+    by_intent: dict[str, dict] = defaultdict(
+        lambda: {"answer": 0, "audit": 0, "no": 0, "correct": 0, "wrong": 0}
+    )
     qa_total = len(rows)
     correct_count = 0
     wrong_count = 0
@@ -96,7 +98,7 @@ def run(
             quality_flagged_count += 1
 
         intent = analyzed.intent
-        by_intent[intent]["answer" if plan.decision == "answer" else "audit"] += 1
+        by_intent[intent][plan.decision] += 1
         by_intent[intent]["correct" if is_correct else "wrong"] += 1
 
         source_facts_used_total += len(plan.evidence.source_facts_used)
@@ -130,6 +132,7 @@ def run(
     accuracy = correct_count / qa_total if qa_total else 0.0
     answer_count = sum(1 for r in output_rows if r["decision"] == "answer")
     audit_count = sum(1 for r in output_rows if r["decision"] == "audit")
+    no_count = sum(1 for r in output_rows if r["decision"] == "no")
     answer_precision = (
         sum(1 for r in output_rows if r["decision"] == "answer" and r["is_correct"]) / answer_count
         if answer_count else 0.0
@@ -139,6 +142,7 @@ def run(
         "qa_total": qa_total,
         "answer_count": answer_count,
         "audit_count": audit_count,
+        "no_count": no_count,
         "correct_count": correct_count,
         "wrong_count": wrong_count,
         "accuracy": round(accuracy, 4),
@@ -181,6 +185,7 @@ def main(argv: list[str] | None = None) -> None:
     print(f"[entity_qa_v1] quality_flagged:  {s['quality_flagged']}")
     print(f"[entity_qa_v1] answer_count:     {s['answer_count']}")
     print(f"[entity_qa_v1] audit_count:      {s['audit_count']}")
+    print(f"[entity_qa_v1] no_count:         {s['no_count']}")
     print(f"[entity_qa_v1] source_facts_used:  {s['source_facts_used']}")
     print(f"[entity_qa_v1] weak_links_used:    {s['weak_context_links_used']}")
     print(f"[entity_qa_v1] safe_for_general_runtime: {s['safe_for_general_runtime']}")

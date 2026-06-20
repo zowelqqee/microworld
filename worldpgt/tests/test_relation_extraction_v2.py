@@ -76,6 +76,126 @@ def _validated(tmp_path: Path, title: str, sentence: str):
     return safe, quarantine
 
 
+def test_entity_surface_index_returns_explicit_overlay_type(tmp_path):
+    accepted = tmp_path / "accepted.json"
+    promoted = tmp_path / "promoted.json"
+    snapshot = tmp_path / "snapshot.json"
+    _write_json(accepted, [])
+    _write_json(
+        promoted,
+        [
+            {
+                "overlay_type": "overlay_entity",
+                "label": "Falcon 9",
+                "aliases": [],
+                "entity_type": "product",
+            },
+            {
+                "overlay_type": "overlay_definition",
+                "subject": "Falcon 9",
+                "definition": "a medium-lift orbital launch vehicle",
+            },
+        ],
+    )
+    _write_json(snapshot, [])
+
+    index = EntitySurfaceIndex(accepted, promoted, snapshot)
+
+    assert index.entity_type("Falcon 9") == "product"
+
+
+def test_entity_surface_index_falls_back_to_definition_type(tmp_path):
+    accepted = tmp_path / "accepted.json"
+    promoted = tmp_path / "promoted.json"
+    snapshot = tmp_path / "snapshot.json"
+    _write_json(accepted, [])
+    _write_json(
+        promoted,
+        [
+            {"overlay_type": "overlay_entity", "label": "Falcon 9", "aliases": []},
+            {
+                "overlay_type": "overlay_definition",
+                "subject": "Falcon 9",
+                "definition": "a medium-lift orbital launch vehicle",
+            },
+        ],
+    )
+    _write_json(snapshot, [])
+
+    index = EntitySurfaceIndex(accepted, promoted, snapshot)
+
+    assert index.entity_type("Falcon 9") == "vehicle"
+
+
+def test_entity_surface_index_missing_type_and_definition_returns_none(tmp_path):
+    accepted = tmp_path / "accepted.json"
+    promoted = tmp_path / "promoted.json"
+    snapshot = tmp_path / "snapshot.json"
+    _write_json(accepted, [])
+    _write_json(promoted, [{"overlay_type": "overlay_entity", "label": "Mystery", "aliases": []}])
+    _write_json(snapshot, [])
+
+    index = EntitySurfaceIndex(accepted, promoted, snapshot)
+
+    assert index.entity_type("Mystery") is None
+
+
+def test_self_loop_is_a_candidate_is_not_extracted(tmp_path):
+    entity = {
+        "overlay_type": "overlay_entity",
+        "label": "Satellite internet",
+        "aliases": [],
+        "entity_type": "technology",
+    }
+    accepted = tmp_path / "accepted.json"
+    promoted = tmp_path / "promoted.json"
+    snapshot = tmp_path / "snapshot.json"
+    _write_json(accepted, [entity])
+    _write_json(promoted, [entity])
+    _write_json(snapshot, [entity])
+    index = EntitySurfaceIndex(accepted, promoted, snapshot)
+
+    raw, _scanned = extract_candidates_from_doc(
+        _doc(tmp_path, "Satellite internet", "Satellite internet is a satellite internet service."),
+        index,
+        lead_only=True,
+    )
+
+    assert not [
+        c for c in raw
+        if c.relation == "is_a" and c.subject.lower() == c.object.lower()
+    ]
+
+
+def test_entity_surface_index_does_not_load_ontology_layer_for_extraction(tmp_path):
+    accepted = tmp_path / "accepted.json"
+    promoted = tmp_path / "promoted.json"
+    snapshot = tmp_path / "snapshot.json"
+    ontology_layer = tmp_path / "wikidata_p279_ontology_layer.json"
+    _write_json(accepted, [])
+    _write_json(promoted, [])
+    _write_json(snapshot, [])
+    _write_json(
+        ontology_layer,
+        [
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "businessman",
+                "predicate": "is_a",
+                "object": "worker",
+                "trust": "wikidata_p279_ontology",
+                "risk": "low",
+                "stability": "stable",
+            }
+        ],
+    )
+
+    index = EntitySurfaceIndex(accepted, promoted, snapshot)
+
+    assert index.resolve("businessman") is None
+    assert index.resolve("worker") is None
+
+
 def test_spacex_was_founded_by_elon_musk_is_accepted(tmp_path):
     safe, quarantine = _validated(tmp_path, "SpaceX", "SpaceX was founded by Elon Musk.")
     assert any(c.subject == "SpaceX" and c.relation == "founded_by" and c.object == "Elon Musk" for c in safe)
