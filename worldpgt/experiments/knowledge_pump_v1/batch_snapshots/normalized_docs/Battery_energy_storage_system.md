@@ -1,7 +1,7 @@
 # Battery energy storage system
 
 Source: https://en.wikipedia.org/wiki/Battery_energy_storage_system
-Retrieved at: 2026-06-17T17:08:34Z
+Retrieved at: 2026-06-20T12:46:19Z
 Revision ID: 1359711896
 Raw text SHA256: 026f05e9e76aaa8e3a14b50848c8e49b4b806dbe1ed7d06d248c0b648e508b03
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

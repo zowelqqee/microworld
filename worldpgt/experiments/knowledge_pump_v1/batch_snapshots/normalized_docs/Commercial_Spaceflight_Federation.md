@@ -1,7 +1,7 @@
 # Commercial Spaceflight Federation
 
 Source: https://en.wikipedia.org/wiki/Commercial_Spaceflight_Federation
-Retrieved at: 2026-06-17T17:11:08Z
+Retrieved at: 2026-06-20T12:54:01Z
 Revision ID: 1348740253
 Raw text SHA256: 2c89fd899b4d61c5a0b95c7375a83f23caa9bd5d5017dd59e9bb0fae2b0b938d
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

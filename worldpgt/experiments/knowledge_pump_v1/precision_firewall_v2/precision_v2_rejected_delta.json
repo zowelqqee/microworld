@@ -61,26 +61,6 @@
   },
   {
     "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Arianespace SA",
-      "definition": "French company",
-      "predicate": "is_a",
-      "source_page": "Arianespace",
-      "evidence_text": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Arianespace SA is a French company founded in March 1980 as the world's first commercial launch service provider.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "definition_nationality_plus_single_noun"
-  },
-  {
-    "item": {
       "overlay_type": "overlay_relation",
       "subject": "Founding Aston Martin",
       "predicate": "founded_by",
@@ -282,26 +262,6 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Crew Exploration Vehicle",
-      "definition": "component of the U",
-      "predicate": "is_a",
-      "source_page": "Crew Exploration Vehicle",
-      "evidence_text": "The Crew Exploration Vehicle (CEV) was a component of the U.SU.S\u0000 NASA Vision for Space Exploration plan.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The Crew Exploration Vehicle (CEV) was a component of the U.SU.S\u0000 NASA Vision for Space Exploration plan.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "truncated_definition"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
       "subject": "Electrical engineering",
       "definition": "engineering discipline concerned",
       "predicate": "is_a",
@@ -458,26 +418,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "appositive_alias_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "General Electric Company",
-      "definition": "major British industrial conglomerate involved in consumer",
-      "predicate": "is_a",
-      "source_page": "General Electric Company",
-      "evidence_text": "The General Electric Company (GEC) was a major British industrial conglomerate involved in consumer and defence electronics, communications, and engineering.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The General Electric Company (GEC) was a major British industrial conglomerate involved in consumer and defence electronics, communications, and engineering.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "truncated_definition"
   },
   {
     "item": {
@@ -698,26 +638,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "appositive_alias_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Martin Forest Eberhard",
-      "definition": "American engineer",
-      "predicate": "is_a",
-      "source_page": "Martin Eberhard",
-      "evidence_text": "Martin Forest Eberhard (; born 1960) is an American engineer and entrepreneur who co-founded Tesla, IncInc\u0000 (then Tesla Motors) with Marc Tarpenning in July 2003, where Eberhard was its original CEO serving until late 2007.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Martin Forest Eberhard (; born 1960) is an American engineer and entrepreneur who co-founded Tesla, IncInc\u0000 (then Tesla Motors) with Marc Tarpenning in July 2003, where Eberhard was its original CEO serving until late 2007.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -1058,5 +978,21 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Raytheon Company",
+      "predicate": "founded_by",
+      "object": "Laurence K",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "The Raytheon Company was founded in 1922 in Cambridge, Massachusetts, by Laurence K.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3538924e:94934607",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
   }
 ]

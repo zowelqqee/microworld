@@ -171,8 +171,13 @@ def extract_candidates_from_doc(
     index: EntitySurfaceIndex,
     *,
     lead_only: bool = False,
+    enable_spacy: bool = False,
 ) -> tuple[list[ExtractedRelationCandidate], int]:
     """Extract raw relation candidates from one snapshot doc.
+
+    When *enable_spacy* is True the spaCy dependency-parse path runs in
+    addition to the regex path; results from both paths are merged and
+    deduplicated by (subject, predicate, object) before being returned.
 
     Returns (candidates, sentences_scanned).
     """
@@ -289,25 +294,53 @@ def extract_candidates_from_doc(
                         )
                     )
 
+    # Optional spaCy supplementary path — runs after regex, deduplicates.
+    if enable_spacy:
+        from worldpgt.relation_extraction_v2.spacy_extractor import (
+            extract_candidates_from_doc_spacy,
+        )
+        spacy_cands, _ = extract_candidates_from_doc_spacy(doc, index, lead_only=lead_only)
+        for cand in spacy_cands:
+            triple = (cand.subject.lower(), cand.relation, cand.object.lower())
+            if triple not in seen_triples:
+                seen_triples.add(triple)
+                candidates.append(cand)
+
     return candidates, sentences_scanned
 
 
 def extract_all_candidates(
     docs: list[ReadySnapshotDoc],
     index: EntitySurfaceIndex,
+    *,
+    enable_spacy: bool = False,
 ) -> tuple[list[ExtractedRelationCandidate], int, list[str]]:
     """Extract from all docs. Returns (candidates, total_sentences, errors)."""
+    import sys
 
     all_candidates: list[ExtractedRelationCandidate] = []
     total_sentences = 0
     errors: list[str] = []
+    total = len(docs)
+    _REPORT_EVERY = max(1, total // 10)
 
-    for doc in docs:
+    for idx, doc in enumerate(docs):
+        if idx % _REPORT_EVERY == 0:
+            print(
+                f"[extract_all_candidates] {idx}/{total} docs "
+                f"({len(all_candidates)} cands so far, spacy={enable_spacy})",
+                flush=True,
+            )
         try:
-            cands, sents = extract_candidates_from_doc(doc, index)
+            cands, sents = extract_candidates_from_doc(doc, index, enable_spacy=enable_spacy)
             all_candidates.extend(cands)
             total_sentences += sents
         except Exception as exc:
             errors.append(f"{doc.title}: {exc}")
 
+    print(
+        f"[extract_all_candidates] done {total}/{total} docs, "
+        f"{len(all_candidates)} cands, {total_sentences} sents, {len(errors)} errors",
+        flush=True,
+    )
     return all_candidates, total_sentences, errors

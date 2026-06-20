@@ -1,7 +1,7 @@
 # Mobile Satellite Services
 
 Source: https://en.wikipedia.org/wiki/Mobile_Satellite_Services
-Retrieved at: 2026-06-17T17:11:59Z
+Retrieved at: 2026-06-20T12:56:28Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

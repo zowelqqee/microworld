@@ -1,7 +1,7 @@
 # Financial market
 
 Source: https://en.wikipedia.org/wiki/Financial_market
-Retrieved at: 2026-06-17T17:08:48Z
+Retrieved at: 2026-06-20T12:47:03Z
 Revision ID: 1359650266
 Raw text SHA256: 1f98221d309a2e1d33c3432c4957f361bedd4393dc54d0381227713c0eba8a7e
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

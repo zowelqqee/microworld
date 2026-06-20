@@ -1,7 +1,7 @@
 # Bloomberg
 
 Source: https://en.wikipedia.org/wiki/Bloomberg
-Retrieved at: 2026-06-17T17:08:27Z
+Retrieved at: 2026-06-20T12:46:10Z
 Revision ID: 1330012560
 Raw text SHA256: 2c6b98313356f19b945277d60d30f5405115b6b718343524e2c0dbcb11dc36fb
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -1,7 +1,7 @@
 # Battery-Electric Transit Bus
 
 Source: https://en.wikipedia.org/wiki/Battery-Electric_Transit_Bus
-Retrieved at: 2026-06-17T17:10:56Z
+Retrieved at: 2026-06-20T12:53:14Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

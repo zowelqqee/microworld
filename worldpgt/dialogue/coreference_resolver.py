@@ -7,11 +7,14 @@ It never asserts a relation or creates a new fact.
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 import re
 
 from worldpgt.dialogue.conversation_context import ConversationContext
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+
+_log = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -119,6 +122,11 @@ def _resolve_reference(
 
     if normalized in {"he", "she", "his", "her", "the founder", "the same person"}:
         entity = _latest_entity_matching(context, index, _PERSON_TYPES)
+        _log.debug("resolve %r (person) → %r  (turns=%d)", reference, entity,
+                   len(context.turns))
+        for i, t in enumerate(context.turns):
+            _log.debug("  turn[%d] decision=%s primary=%r mentioned=%r",
+                       i, t.decision, t.primary_entity, t.mentioned_entities)
         return [entity] if entity else []
 
     if normalized in {"it", "its"}:

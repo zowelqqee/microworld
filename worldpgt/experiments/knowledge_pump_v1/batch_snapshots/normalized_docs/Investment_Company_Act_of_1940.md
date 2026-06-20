@@ -1,7 +1,7 @@
 # Investment Company Act of 1940
 
 Source: https://en.wikipedia.org/wiki/Investment_Company_Act_of_1940
-Retrieved at: 2026-06-17T17:09:48Z
+Retrieved at: 2026-06-20T12:50:00Z
 Revision ID: 1352606830
 Raw text SHA256: c3548261e27e45c68e74d8bc32c79a1d9a8bbcfcbb031823f9cdd5cce3ecbf02
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

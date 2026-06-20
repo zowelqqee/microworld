@@ -1,8 +1,8 @@
 # SpaceX Dragon 2
 
 Source: https://en.wikipedia.org/wiki/SpaceX_Dragon_2
-Retrieved at: 2026-06-17T17:10:41Z
-Revision ID: 1359822586
+Retrieved at: 2026-06-20T12:49:04Z
+Revision ID: 1360178281
 Raw text SHA256: 968e624f5e430d32d966f45e9e9e3b36f170a8ed084fe8e0f33cf7edf41528d8
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

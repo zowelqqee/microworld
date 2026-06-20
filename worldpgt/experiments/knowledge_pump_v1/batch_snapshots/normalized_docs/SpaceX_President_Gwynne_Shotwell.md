@@ -1,7 +1,7 @@
 # SpaceX President Gwynne Shotwell
 
 Source: https://en.wikipedia.org/wiki/SpaceX_President_Gwynne_Shotwell
-Retrieved at: 2026-06-17T17:10:18Z
+Retrieved at: 2026-06-20T12:51:19Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

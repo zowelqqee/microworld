@@ -1,7 +1,7 @@
 # Ford Motor Company
 
 Source: https://en.wikipedia.org/wiki/Ford_Motor_Company
-Retrieved at: 2026-06-17T17:20:43Z
+Retrieved at: 2026-06-20T12:49:00Z
 Revision ID: 1359510340
 Raw text SHA256: 12885f5b123790b6eb4c367b169f536d48db6deed10f23a38be14ac3c4900207
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

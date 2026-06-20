@@ -1,7 +1,7 @@
 # Aerospace manufacturer
 
 Source: https://en.wikipedia.org/wiki/Aerospace_manufacturer
-Retrieved at: 2026-06-17T17:08:53Z
+Retrieved at: 2026-06-20T12:47:09Z
 Revision ID: 1342299878
 Raw text SHA256: 4d2faea7623fa4c75c4f5d68c87ff37140e26de9ede2ce7e97ed59b9de7841fd
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

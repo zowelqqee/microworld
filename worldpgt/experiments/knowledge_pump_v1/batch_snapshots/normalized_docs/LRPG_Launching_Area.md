@@ -1,7 +1,7 @@
 # LRPG Launching Area
 
 Source: https://en.wikipedia.org/wiki/LRPG_Launching_Area
-Retrieved at: 2026-06-17T17:11:51Z
+Retrieved at: 2026-06-20T12:56:06Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

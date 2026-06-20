@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "microworld-api",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "worldpgt.api.server", "--overlay", "pump-dry-run"],
+      "port": 8000,
+      "autoPort": true
+    }
+  ]
+}

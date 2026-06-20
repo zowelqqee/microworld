@@ -164,6 +164,8 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "École Centrale Paris",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris",
       "snapshot_retrieved_at": "2026-06-17T20:46:27Z",
@@ -186,6 +188,7 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Aerospace",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Aerospace",
       "snapshot_retrieved_at": "2026-06-15T09:18:48Z",
@@ -208,13 +211,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Army Ballistic Missile Agency",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Army_Ballistic_Missile_Agency",
       "snapshot_retrieved_at": "2026-06-17T17:18:16Z",
       "snapshot_revision_id": 1325675904,
       "snapshot_raw_text_sha256": "35d2d74f5c8fb36fb09448ad616327788e42d3c31954f0df9fe53bf44223f064",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-057-overlay-001",
+      "snapshot_candidate_id": "snap-054-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -230,13 +234,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Arthur Ransome",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Arthur_Ransome",
       "snapshot_retrieved_at": "2026-06-17T20:45:19Z",
       "snapshot_revision_id": 1355678545,
       "snapshot_raw_text_sha256": "5e110a5e06a58b31e8f696fb97e3643c5cfbb8ddbf696863bb7ba6c44ed51e26",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-062-overlay-001",
+      "snapshot_candidate_id": "snap-059-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -252,104 +257,17 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Benjamin Franklin",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Benjamin_Franklin",
       "snapshot_retrieved_at": "2026-06-17T20:45:42Z",
       "snapshot_revision_id": 1359732941,
       "snapshot_raw_text_sha256": "497d5ba7d5d7bf95ebaae19cd053a34f19b5ccc2a4026a6c0fe5a395dc45a5f3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-098-overlay-001",
+      "snapshot_candidate_id": "snap-095-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "Business journalism",
-      "predicate": "known_for",
-      "object": "novels",
-      "source_page": "Business journalism",
-      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "snapshot_source_title": "Business journalism",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
-      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
-      "snapshot_revision_id": 1330899901,
-      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-142-overlay-001",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "known_for_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "Business journalism",
-      "predicate": "known_for",
-      "object": "especially Robinson Crusoe",
-      "source_page": "Business journalism",
-      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "snapshot_source_title": "Business journalism",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
-      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
-      "snapshot_revision_id": 1330899901,
-      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-142-overlay-002",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "known_for_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "Business journalism",
-      "predicate": "known_for",
-      "object": "began publishing business",
-      "source_page": "Business journalism",
-      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "snapshot_source_title": "Business journalism",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
-      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
-      "snapshot_revision_id": 1330899901,
-      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-142-overlay-003",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "known_for_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "Business journalism",
-      "predicate": "known_for",
-      "object": "economic news",
-      "source_page": "Business journalism",
-      "evidence_text": "known for his novels, especially Robinson Crusoe, began publishing business and economic news.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "snapshot_source_title": "Business journalism",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Business_journalism",
-      "snapshot_retrieved_at": "2026-06-17T17:09:59Z",
-      "snapshot_revision_id": 1330899901,
-      "snapshot_raw_text_sha256": "534cf014213e1dfc0b86001507ba199526c9b140434a58aa4baef5872278c0b3",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-142-overlay-004",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "known_for_bad_subject"
   },
   {
     "item": {
@@ -362,13 +280,37 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Cecil Rhodes",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Cecil_Rhodes",
       "snapshot_retrieved_at": "2026-06-17T20:46:24Z",
       "snapshot_revision_id": 1356285993,
       "snapshot_raw_text_sha256": "59be580daa36d59892943460faba235983c8cedd6eceabb38ca6767d904999fb",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-165-overlay-001",
+      "snapshot_candidate_id": "snap-159-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Cornelius Vanderbilt",
+      "definition": "Dutch farmer from the village of De Bilt in Utrecht",
+      "predicate": "is_a",
+      "source_page": "Cornelius Vanderbilt",
+      "evidence_text": "Ancestry Cornelius Vanderbilt's great-great-great-grandfather, Jan Aertson or Aertszoon (\"Aert's son\"), was a Dutch farmer from the village of De Bilt in Utrecht, Netherlands, who immigrated to New Amsterdam (later New York) as an indentured servant in 1650.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "temporal_class": "historical",
+      "snapshot_source_title": "Cornelius Vanderbilt",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Cornelius_Vanderbilt",
+      "snapshot_retrieved_at": "2026-06-20T13:25:04Z",
+      "snapshot_revision_id": 1352516620,
+      "snapshot_raw_text_sha256": "d86bbcf5a28a3c0bdbae17865de910bd175aa265a94d44c7ac501a1a6de9150b",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-194-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -384,13 +326,37 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Dalal Street",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Dalal_Street",
       "snapshot_retrieved_at": "2026-06-17T17:18:24Z",
       "snapshot_revision_id": 1304871657,
       "snapshot_raw_text_sha256": "3fb0cf7e5c7a17763bce1629945d18c9b7aa10f0a88d98d5684ef86358534e13",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-207-overlay-001",
+      "snapshot_candidate_id": "snap-204-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Global Analyst Research Settlements",
+      "definition": "conflict of interest between the investment banking and analysis departments of ten of the largest investment firms in the United States",
+      "predicate": "is_a",
+      "source_page": "Global Analyst Research Settlements",
+      "evidence_text": "Decision The central issue at hand that had been judged in court was the conflict of interest between the investment banking and analysis departments of ten of the largest investment firms in the United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "temporal_class": "historical",
+      "snapshot_source_title": "Global Analyst Research Settlements",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Global_Analyst_Research_Settlements",
+      "snapshot_retrieved_at": "2026-06-20T13:16:02Z",
+      "snapshot_revision_id": 1227800847,
+      "snapshot_raw_text_sha256": "6c40e4d8db254370781b37ac8dd6f5c284045bbd1a8dbab57897f1ae39fec210",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-295-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -406,13 +372,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Honeywell Aerospace",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Honeywell_Aerospace",
-      "snapshot_retrieved_at": "2026-06-17T17:11:32Z",
+      "snapshot_retrieved_at": "2026-06-20T12:55:07Z",
       "snapshot_revision_id": 1359736088,
       "snapshot_raw_text_sha256": "b6474ad3bdcebf1a4bc4ad174871e04eb833690fa90e4cb391329419892e44e2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-316-overlay-002",
+      "snapshot_candidate_id": "snap-317-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_bad_object"
@@ -428,13 +396,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Honeywell Aerospace",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Honeywell_Aerospace",
-      "snapshot_retrieved_at": "2026-06-17T17:11:32Z",
+      "snapshot_retrieved_at": "2026-06-20T12:55:07Z",
       "snapshot_revision_id": 1359736088,
       "snapshot_raw_text_sha256": "b6474ad3bdcebf1a4bc4ad174871e04eb833690fa90e4cb391329419892e44e2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-316-overlay-003",
+      "snapshot_candidate_id": "snap-317-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_bad_object"
@@ -450,6 +420,7 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Intercontinental Exchange",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Intercontinental_Exchange",
       "snapshot_retrieved_at": "2026-06-17T17:19:28Z",
@@ -472,13 +443,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "International Energy Agency",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
       "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
       "snapshot_revision_id": 1350653231,
       "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-334-overlay-002",
+      "snapshot_candidate_id": "snap-335-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_bad_object"
@@ -494,16 +467,41 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "International Energy Agency",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Energy_Agency",
       "snapshot_retrieved_at": "2026-06-17T17:18:38Z",
       "snapshot_revision_id": 1350653231,
       "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-334-overlay-004",
+      "snapshot_candidate_id": "snap-335-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Kings Canyon Unified School District",
+      "definition": "list of the schools that the KCUSD has to offer: Elementary",
+      "predicate": "is_a",
+      "source_page": "Kings Canyon Unified School District",
+      "evidence_text": "Schools Here is a list of the schools that the KCUSD has to offer: Elementary",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "temporal_class": "historical",
+      "snapshot_source_title": "Kings Canyon Unified School District",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Kings_Canyon_Unified_School_District",
+      "snapshot_retrieved_at": "2026-06-20T13:17:06Z",
+      "snapshot_revision_id": 1356316302,
+      "snapshot_raw_text_sha256": "5a268eb29d2d3a31c53fd57d32cbb38cb4b688bba5cab5d523d07f63b99c3bc1",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-380-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
   },
   {
     "item": {
@@ -516,13 +514,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Lawrence Sperry",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Lawrence_Sperry",
       "snapshot_retrieved_at": "2026-06-17T17:21:26Z",
       "snapshot_revision_id": 1350662847,
       "snapshot_raw_text_sha256": "88050941166a9d48374757c146c76f2359fd75b512b53192aa428ed7f87d203f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-381-overlay-001",
+      "snapshot_candidate_id": "snap-390-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -538,13 +537,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Linda Yaccarino",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Linda_Yaccarino",
       "snapshot_retrieved_at": "2026-06-17T17:17:57Z",
       "snapshot_revision_id": 1359416110,
       "snapshot_raw_text_sha256": "7870856ba123178f23b25e0e0fc0d6fdeca8ffb0d620d1134ac39f13fc7a09aa",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-383-overlay-001",
+      "snapshot_candidate_id": "snap-393-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -560,13 +560,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Lyndon Rive",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Lyndon_Rive",
       "snapshot_retrieved_at": "2026-06-17T17:17:58Z",
       "snapshot_revision_id": 1355723003,
       "snapshot_raw_text_sha256": "58aaeb0ea661f5c5878931a2253009222723931031c801e61baec2fb83a05e1f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-395-overlay-001",
+      "snapshot_candidate_id": "snap-406-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -582,13 +583,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-001",
+      "snapshot_candidate_id": "snap-484-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -604,13 +607,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-002",
+      "snapshot_candidate_id": "snap-484-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -626,13 +631,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-003",
+      "snapshot_candidate_id": "snap-484-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -648,13 +655,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-004",
+      "snapshot_candidate_id": "snap-484-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -670,13 +679,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-005",
+      "snapshot_candidate_id": "snap-484-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -692,13 +703,15 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-008",
+      "snapshot_candidate_id": "snap-484-overlay-008",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
@@ -714,16 +727,41 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Northrop Grumman",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Northrop_Grumman",
       "snapshot_retrieved_at": "2026-06-17T17:18:52Z",
       "snapshot_revision_id": 1359625638,
       "snapshot_raw_text_sha256": "92fe4f8cd72e1c9e166903274c7a1ebbb76512c4b75965d1bb390888448766f9",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-474-overlay-010",
+      "snapshot_candidate_id": "snap-484-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Oracle Rdb",
+      "definition": "component of the VAX Information Architecture",
+      "predicate": "is_a",
+      "source_page": "Oracle Rdb",
+      "evidence_text": "Product history Rdb was a component of the VAX Information Architecture, and was designed to interoperate with other Digital database tools and application frameworks such as the Application Control Management System, Datatrieve and the Common Data Dictionary.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "temporal_class": "historical",
+      "snapshot_source_title": "Oracle Rdb",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Oracle_Rdb",
+      "snapshot_retrieved_at": "2026-06-20T08:05:43Z",
+      "snapshot_revision_id": 1329264079,
+      "snapshot_raw_text_sha256": "8e2f93896a2e646154cf984b5ece4795c6a9c32fd310de7b400844b0b9c49405",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-498-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_not_lead_style"
   },
   {
     "item": {
@@ -736,13 +774,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Robert E. Wright",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Robert_E._Wright",
       "snapshot_retrieved_at": "2026-06-17T20:43:41Z",
       "snapshot_revision_id": 1353397453,
       "snapshot_raw_text_sha256": "ff6eafc400d9a15a98c38f0de615cc54044e7fd083d971c60e04e204ec9a3369",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-522-overlay-001",
+      "snapshot_candidate_id": "snap-540-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -758,13 +797,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Royal Mail Steam Packet Company",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Royal_Mail_Steam_Packet_Company",
       "snapshot_retrieved_at": "2026-06-17T17:12:26Z",
       "snapshot_revision_id": 1359693795,
       "snapshot_raw_text_sha256": "68cee56981e3be6a12631883f12677c20812c2ed55be939e6382c7581de7af62",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-534-overlay-001",
+      "snapshot_candidate_id": "snap-551-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -780,13 +820,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Saturn",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Saturn",
       "snapshot_retrieved_at": "2026-06-15T09:17:43Z",
       "snapshot_revision_id": 1355615822,
       "snapshot_raw_text_sha256": "a1138e3ed67905778d52d171ee770a3c8a65d86b5d143c269d07b04bb9f10e71",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-550-overlay-001",
+      "snapshot_candidate_id": "snap-567-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -802,13 +843,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Securities Exchange Act of 1934",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
       "snapshot_retrieved_at": "2026-06-17T17:17:07Z",
       "snapshot_revision_id": 1346097663,
       "snapshot_raw_text_sha256": "2149979db23f189a06112c8dba0b277f99580ac5ac6c24343f871b9d2a3c0917",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-558-overlay-001",
+      "snapshot_candidate_id": "snap-575-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -824,13 +866,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Silicon Valley",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Silicon_Valley",
       "snapshot_retrieved_at": "2026-06-17T17:17:43Z",
       "snapshot_revision_id": 1358841398,
       "snapshot_raw_text_sha256": "f06f74c8195bc528efeff902e8a07b9eddb2d24c647524176084a4dcc3a87c16",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-564-overlay-001",
+      "snapshot_candidate_id": "snap-581-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -846,38 +889,17 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Technology",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Technology",
       "snapshot_retrieved_at": "2026-06-15T09:18:11Z",
       "snapshot_revision_id": 1351642289,
       "snapshot_raw_text_sha256": "72538ca5d28007cf64fcc777fc2c55da0f8e2621e7f8420d98f361ea911c1205",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-628-overlay-001",
+      "snapshot_candidate_id": "snap-649-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "generic_definition_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Tesla Autopilot",
-      "definition": "good thing to have in planes",
-      "predicate": "is_a",
-      "source_page": "Tesla Autopilot",
-      "evidence_text": "History Elon Musk first discussed the Tesla Autopilot system publicly in 2013, noting that \"Autopilot is a good thing to have in planes, and we should have it in cars.\" At the time, no autopilot system in aircraft rendered them fully autonomous.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "snapshot_source_title": "Tesla Autopilot",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Autopilot",
-      "snapshot_retrieved_at": "2026-06-17T17:10:40Z",
-      "snapshot_revision_id": 1359291917,
-      "snapshot_raw_text_sha256": "8b19173bdd4fc2c8ab2b630eaed4efc81d552109194895d4fe8d2d44c2d71c6f",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-630-overlay-001",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "definition_not_lead_style"
   },
   {
     "item": {
@@ -890,13 +912,14 @@
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
+      "temporal_class": "historical",
       "snapshot_source_title": "Wet Nellie",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Wet_Nellie",
       "snapshot_retrieved_at": "2026-06-15T12:36:29Z",
       "snapshot_revision_id": 1336612850,
       "snapshot_raw_text_sha256": "1b8dde4f4fb62a2aff1a764bee3e1fae16fe5228ab0438e906c2353f13969623",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-692-overlay-001",
+      "snapshot_candidate_id": "snap-710-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_not_lead_style"
@@ -1164,6 +1187,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Berluti and Kenzo",
+      "predicate": "owned_by",
+      "object": "LVMH",
+      "source_page": "Bernard Arnault",
+      "evidence_text": "LVMH acquired Berluti and Kenzo in 1993, the same year Arnault bought out the French economic newspaper La Tribune.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "LVMH acquired Berluti and Kenzo in 1993, the same year Arnault bought out the French economic newspaper La Tribune.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "American news agency",
       "predicate": "headquartered_in",
       "object": "New York City",
@@ -1200,26 +1243,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "generic_relation_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Business journalism",
-      "definition": "part of journalism",
-      "predicate": "is_a",
-      "source_page": "Business journalism",
-      "evidence_text": "Business journalism is the part of journalism that tracks, records, analyzes, and interprets the business, economic and financial activities and changes that take place in societies.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Business journalism is the part of journalism that tracks, records, analyzes, and interprets the business, economic and financial activities and changes that take place in societies.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_definition_subject"
   },
   {
     "item": {
@@ -1424,6 +1447,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "American multinational technology company that has been",
+      "predicate": "headquartered_in",
+      "object": "Round Rock",
+      "source_page": "Dell Technologies",
+      "evidence_text": "Dell Technologies IncInc\u0000 is an American multinational technology company that has been headquartered in Round Rock, Texas, since 1994.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Dell Technologies IncInc\u0000 is an American multinational technology company that has been headquartered in Round Rock, Texas, since 1994.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Clothing is now produced by Christian Dior Couture, which",
       "predicate": "subsidiary_of",
       "object": "LVMH",
@@ -1527,7 +1570,7 @@
       "subject": "American multinational automobile manufacturer",
       "predicate": "headquartered_in",
       "object": "Dearborn",
-      "source_page": "Ford Motor",
+      "source_page": "Ford Motor Company",
       "evidence_text": "The Ford Motor Company (commonly known as Ford, sometimes abbreviated as FoMoCo) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -1560,106 +1603,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "subsidiary_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "GE Aerospace, is an American aircraft engine supplier that",
-      "predicate": "headquartered_in",
-      "object": "Evendale",
-      "source_page": "GE Aerospace",
-      "evidence_text": "General Electric Company, doing business as GE Aerospace, is an American aircraft engine supplier that is headquartered in Evendale, Ohio, outside Cincinnati.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "headquartered_in_v2",
-      "v2_pattern_id": "headquartered_in_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "General Electric Company, doing business as GE Aerospace, is an American aircraft engine supplier that is headquartered in Evendale, Ohio, outside Cincinnati.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_relation_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "W & T Avery",
-      "predicate": "owned_by",
-      "object": "GEC",
-      "source_page": "General Electric Company",
-      "evidence_text": "The company continued to expand via acquisitions; between 1979 and 1981, GEC acquired W & T Avery, Cincinnati Electronics, and Picker Corporation.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "acquired_active_v2",
-      "v2_pattern_id": "acquired_active_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The company continued to expand via acquisitions; between 1979 and 1981, GEC acquired W & T Avery, Cincinnati Electronics, and Picker Corporation.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "owned_by_no_ownership_evidence"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "British telephone system had been taken over and",
-      "predicate": "operated_by",
-      "object": "General Post Office",
-      "source_page": "General Electric Company",
-      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "operated_by_v2",
-      "v2_pattern_id": "operated_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_relation_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "British telephone system had been taken over and",
-      "predicate": "operated_by",
-      "object": "GPO",
-      "source_page": "General Electric Company",
-      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "operated_by_v2",
-      "v2_pattern_id": "operated_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_relation_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
-      "subject": "British telephone system had been taken over and",
-      "predicate": "operated_by",
-      "object": "BPO",
-      "source_page": "General Electric Company",
-      "evidence_text": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "operated_by_v2",
-      "v2_pattern_id": "operated_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The British telephone system had been taken over and was operated by the General Post Office (GPO or BPO, a government department).",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_relation_bad_subject"
   },
   {
     "item": {
@@ -2004,26 +1947,6 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "Corporation is an American multinational technology company",
-      "predicate": "headquartered_in",
-      "object": "Redmond",
-      "source_page": "Microsoft Corporation",
-      "evidence_text": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "headquartered_in_v2",
-      "v2_pattern_id": "headquartered_in_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "generic_relation_bad_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_relation",
       "subject": "Ames Research Center The Space Flight Operations Facility",
       "predicate": "operated_by",
       "object": "Jet Propulsion Laboratory",
@@ -2160,6 +2083,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ken Morris and David Duffield, PeopleSoft was originally",
+      "predicate": "headquartered_in",
+      "object": "Walnut Creek",
+      "source_page": "PeopleSoft Enterprise",
+      "evidence_text": "History Founded in 1987 by Ken Morris and David Duffield, PeopleSoft was originally headquartered in Walnut Creek, California, before moving to Pleasanton, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "History Founded in 1987 by Ken Morris and David Duffield, PeopleSoft was originally headquartered in Walnut Creek, California, before moving to Pleasanton, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "generic_relation_bad_subject"
   },
   {
     "item": {
@@ -2544,6 +2487,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Challenge Air",
+      "predicate": "owned_by",
+      "object": "UPS",
+      "source_page": "United Parcel Service",
+      "evidence_text": "UPS acquired Challenge Air in 1999 to expand its operations in Latin America.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "UPS acquired Challenge Air in 1999 to expand its operations in Latin America.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "American multinational conglomerate",
       "predicate": "headquartered_in",
       "object": "Farmington",
@@ -2720,6 +2683,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Accenture plc",
+      "predicate": "is_a",
+      "object": "Irish technology consulting company",
+      "source_page": "Andersen Consulting",
+      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:98c4d9e2:b5a607c9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Rockwell Collins",
+      "predicate": "owned_by",
+      "object": "United Technologies",
+      "source_page": "Aerospace manufacturing",
+      "evidence_text": "On September 4, 2017, United Technologies acquired Rockwell Collins in cash and stock for $23 billion, $30 billion including Rockwell Collins' net debt, for $500+ million of synergies expected by year four.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4d2faea7:e69362e2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Satellite internet",
       "predicate": "owned_by",
       "object": "Amazon",
@@ -2732,6 +2727,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Annapurna Labs",
+      "predicate": "owned_by",
+      "object": "Amazon",
+      "source_page": "Amazon Web Services",
+      "evidence_text": "In January 2015, Amazon Web Services acquired Annapurna Labs, an Israel-based microelectronics company for a reported US$350–370M.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:49734bd4:e4631591",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
   },
   {
     "item": {
@@ -2784,6 +2795,150 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Ampex Data Systems",
+      "predicate": "manufactures",
+      "object": "Energy storage",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "The Silicon Valley unit, known internally as Ampex Data Systems (ADS), manufactures digital data storage systems capable of functioning in harsh environments.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1de3ee64:315e519b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Her memoir",
+      "predicate": "published_by",
+      "object": "Palgrave Macmillan",
+      "source_page": "Anousheh Ansari",
+      "evidence_text": "Her memoir My Dream of Stars, co-written with American engineer Homer Hickam, was published by Palgrave Macmillan in 2010.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:76d54c92:e95e1a43",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Regis McKenna 's advertising operations",
+      "predicate": "owned_by",
+      "object": "Chiat - Day",
+      "source_page": "Apple II",
+      "evidence_text": "In 1981, Chiat-Day acquired Regis McKenna's advertising operations and Apple used Chiat-Day.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:eb6b3a1b:7af9b080",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sage Automotive Interiors",
+      "predicate": "owned_by",
+      "object": "Asahi Kasei",
+      "source_page": "Asahi Kasei",
+      "evidence_text": "In 2018, Asahi Kasei acquired Sage Automotive Interiors.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:7746f827:fdd3c4f0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Its predecessor",
+      "predicate": "founded_by",
+      "object": "Lionel Martin",
+      "source_page": "Aston Martin",
+      "evidence_text": "Its predecessor was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d1dac6bf:ab9a88bd",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Its predecessor",
+      "predicate": "founded_by",
+      "object": "Robert Bamford",
+      "source_page": "Aston Martin",
+      "evidence_text": "Its predecessor was founded in 1913 by Lionel Martin and Robert Bamford.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d1dac6bf:fc5dcaa8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Camden Yards",
+      "predicate": "founded",
+      "object": "Bird Bath splash zone",
+      "source_page": "Baltimore Orioles",
+      "evidence_text": "In May 2023, following the team's new water-themed celebrations, Camden Yards created a Bird Bath splash zone in left field, where fans in one section had the opportunity get sprayed by the water hose-wielding \"MrMr\u0000 Splash\" following an Orioles extra base hit.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:6fa7298e:2912deb0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "His father 's family",
+      "predicate": "founded",
+      "object": "Goldwater 's Department Store",
+      "source_page": "Barry Goldwater",
+      "evidence_text": "His father's family founded Goldwater's Department Store, a leading upscale department store in Phoenix.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d9752dc3:18dfb836",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Major utilities",
+      "predicate": "develops",
+      "object": "Energy storage",
+      "source_page": "Battery storage",
+      "evidence_text": "Major utilities such as Iberdrola and Solaria are now actively developing hybrid solar-plus-storage projects to mitigate the impact of solar overproduction and declining market prices.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:026f05e9:23527e3e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "This company",
       "predicate": "owned_by",
       "object": "Oracle Corporation",
@@ -2796,6 +2951,150 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "owned_by",
+      "object": "Lee Enterprises",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "In 2020, Lee Enterprises acquired BH Media Group's publications and The Buffalo News for $140 million in cash, retaining WPLG.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:e888d63d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "owned_by",
+      "object": "Lee Enterprises",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "In 2020, Lee Enterprises acquired BH Media Group's publications and The Buffalo News for $140 million in cash, retaining WPLG.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:1d695d2b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Chippewa Boots",
+      "predicate": "owned_by",
+      "object": "Justin Brands",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Justin Brands also owns Chippewa Boots, Nocona Boots, and Tony Lama Boots.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:243cda26",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Nocona Boots",
+      "predicate": "owned_by",
+      "object": "Justin Brands",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Justin Brands also owns Chippewa Boots, Nocona Boots, and Tony Lama Boots.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:5a4c3c20",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tony Lama Boots",
+      "predicate": "owned_by",
+      "object": "Justin Brands",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Justin Brands also owns Chippewa Boots, Nocona Boots, and Tony Lama Boots.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:02b03e3e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Clayton Homes",
+      "predicate": "owned_by",
+      "object": "Berkshire Hathaway",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "In August 2003, Berkshire Hathaway acquired Clayton Homes, a maker of manufactured housing, modular homes, storage trailers, chassis, intermodal piggyback trailers and domestic containers, headquartered near Knoxville, Tennessee, for $1.7 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:4dcbab0d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Precision Castparts CorpCorp\u0000",
+      "predicate": "owned_by",
+      "object": "Berkshire Hathaway",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "In January 2016, Berkshire Hathaway acquired Precision Castparts CorpCorp\u0000 for $32.1 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:9761e168",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Berkshire Hathaway",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "In October 2022, Berkshire Hathaway acquired insurance company Alleghany Corporation for $11.6 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:877b7386",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Berkshire Hathaway",
+      "predicate": "founded",
+      "object": "Class B shares",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "However, in 1996, Berkshire Hathaway created Class B shares, with a per-share value of 1⁄30 of that of the original shares (now Class A) and 1⁄200 of the per-share voting rights, and after the January 2010 split, at 1⁄1,500 the price and 1⁄10,000 the voting rights of the Class-A shares.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:978d88bf",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
   },
   {
     "item": {
@@ -2816,6 +3115,86 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Crew members",
+      "predicate": "founded",
+      "object": "T - shirts",
+      "source_page": "Blade Runner",
+      "evidence_text": "Crew members created T-shirts during filming saying, \"Yes Guv'nor, My Ass\" that mocked Scott's unfavorable comparison of U.SU.S\u0000 and British crews; Scott responded with a T-shirt of his own, \"Xenophobia Sucks\", making the incident known as the T-shirt war.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5419da1d:9e2e3440",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "RTS Realtime Systems",
+      "predicate": "owned_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg L.P",
+      "evidence_text": "On July 9, 2014, Bloomberg L.PL.P\u0000 acquired RTS Realtime Systems, a global provider of low-latency connectivity and trading support services.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f900dae8:6def5c04",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "published_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg UK",
+      "evidence_text": "In 2016, Bloomberg published a news release claiming to be from Vinci SA, a French construction company, that it had discovered accounting irregularities and had to revise its earnings reports.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5f2b497b:75d3b4c0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Current channels",
+      "predicate": "owned_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg Television",
+      "evidence_text": "Current channels Most of the channels listed are not directly operated by Bloomberg, but are operated by local companies which franchise the Bloomberg brand and may take some of its English-language programming.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2132e913:81226d6f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Unique FIGIs",
+      "predicate": "published_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg Professional Services",
+      "evidence_text": "Unique FIGIs are published by Bloomberg L.PL.P\u0000 It's a competitor to the CUSIP.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:182ad2a9:bb3850ce",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Private spaceflight",
       "predicate": "owned_by",
       "object": "Blue Origin",
@@ -2828,6 +3207,166 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dragon spacecraft",
+      "predicate": "developed_by",
+      "object": "Aerojet Rocketdyne",
+      "source_page": "Boeing Starliner",
+      "evidence_text": "The spacecraft's propulsion system is produced by Aerojet Rocketdyne and consists of 64 engines:",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d2036a52:7442cda7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stock exchange",
+      "predicate": "founded_by",
+      "object": "Jain businessman",
+      "source_page": "Bombay Stock Exchange",
+      "evidence_text": "Bombay Stock Exchange was founded by a Jain businessman Premchand Roychand in 1875.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b16689aa:b5012f2a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "CNBC",
+      "predicate": "operates",
+      "object": "Bloomberg News",
+      "source_page": "CNBC",
+      "evidence_text": "CNBC operates an accompanying financial news website, CNBC.com, which includes news articles, video and podcast content, as well as subscription-based services.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8ae2bc12:1c4c8bb5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Royal Proclamation",
+      "predicate": "founded",
+      "object": "First Nation treaty rights",
+      "source_page": "Canada",
+      "evidence_text": "The Royal Proclamation of 1763 established First Nation treaty rights, created the Province of Quebec out of New France, and annexed Cape Breton Island to Nova Scotia.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9565adfc:05cfef0f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Artificial intelligence",
+      "predicate": "founded",
+      "object": "CIA University",
+      "source_page": "Central Intelligence Agency",
+      "evidence_text": "In response, Director of Central Intelligence George Tenet established CIA University in 2002.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d6b5d9d8:0afa7e13",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The CIA",
+      "predicate": "founded",
+      "object": "Vandenberg Space Force Base",
+      "source_page": "Central Intelligence Agency",
+      "evidence_text": "The CIA established a base for the operation, with the cryptonym JMWAVE, at a disused naval facility on the University of Miami campus.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d6b5d9d8:ffc4c02c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Chrysler company",
+      "predicate": "founded_by",
+      "object": "Walter Chrysler",
+      "source_page": "Chrysler Corporation",
+      "evidence_text": "1925–1998: Chrysler Corporation The Chrysler company was founded by Walter Chrysler on June 6, 1925, when the Maxwell Motor Company (estest\u0000 1904) was re-organized into the Chrysler Corporation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8bb0a412:d24e070f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Global sales Chrysler",
+      "predicate": "is_a",
+      "object": "Aerospace manufacturer",
+      "source_page": "Chrysler Corporation",
+      "evidence_text": "Global sales Chrysler was the world's 11th largest vehicle manufacturer as ranked by OICA in 2012.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:8bb0a412:55fe2943",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Environmental initiatives",
+      "predicate": "produces",
+      "object": "Battery electric vehicle",
+      "source_page": "Chrysler Corporation",
+      "evidence_text": "Environmental initiatives In 1979, Chrysler, in cooperation with the United States Department of Energy, produced an experimental battery electric vehicle, the Chrysler ETV-1.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8bb0a412:bc5210c2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "develops",
+      "object": "Vandenberg Space Force Base",
+      "source_page": "Cornelius Vanderbilt",
+      "evidence_text": "During the 1830s, textile mills were built in large numbers in New England as the United States developed its manufacturing base.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d86bbcf5:846e7a9a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
   },
   {
     "item": {
@@ -2848,6 +3387,54 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Doctoroff 's book",
+      "predicate": "published_by",
+      "object": "PublicAffairs / Hachette Book Group",
+      "source_page": "Daniel Doctoroff",
+      "evidence_text": "In September 2017, Doctoroff's book Greater Than Ever: New York's Big Comeback, was published by PublicAffairs/Hachette Book Group.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9037d08a:bf32f057",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "DeLillo 's papers",
+      "predicate": "owned_by",
+      "object": "Kennedy Space Center",
+      "source_page": "Cleo Birdwell",
+      "evidence_text": "DeLillo's papers were acquired in 2004 by the Harry Ransom Humanities Research Center at the University of Texas at Austin, reputedly for \"half a million dollars\".",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2f4d61bd:79cb94fe",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Romans",
+      "predicate": "founded",
+      "object": "Crew Dragon",
+      "source_page": "Dragon",
+      "evidence_text": "The Romans created few original dragon myths, the only notable example being the story of the Dragon of the Bagrada river (now known as the Medjerda River, located in modern-day Algeria and Tunisia).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2d96e115:c954d6a3",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The range also uses instrumentation",
       "predicate": "owned_by",
       "object": "NASA",
@@ -2860,6 +3447,134 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Silicon - gate MOS technology",
+      "predicate": "developed_by",
+      "object": "Federico Faggin",
+      "source_page": "Electrical Engineering",
+      "evidence_text": "Silicon-gate MOS technology was developed by Federico Faggin at Fairchild in 1968.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:266ab77f:414f6df0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "owned_by",
+      "object": "Elevation Partners",
+      "source_page": "Elevation Partners",
+      "evidence_text": "On July 11, 2007 Elevation Partners acquired SDI Media Group, the world's largest provider of subtitling and language dubbing service to the entertainment industry.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5d60bd49:06e6c9a5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "ESA purchases seats",
+      "predicate": "operates",
+      "object": "Commercial Crew Program",
+      "source_page": "European Space Agency",
+      "evidence_text": "ESA purchases seats on the NASA operated Commercial Crew Program.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3369036f:e5f088e6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Thomas Gresham",
+      "predicate": "founded",
+      "object": "Stock exchange",
+      "source_page": "Exchange Alley",
+      "evidence_text": "Lombard Street and Change Alley were the open-air meeting place of London's mercantile community before Thomas Gresham founded the Royal Exchange in 1565.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4285101d:3a7548d2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "President Barack Obama",
+      "predicate": "founded",
+      "object": "YouTube video",
+      "source_page": "Federal Communications Commission",
+      "evidence_text": "On November 10, 2014, President Barack Obama created a YouTube video recommending that the FCC reclassify broadband Internet service as a telecommunications service in order to preserve net neutrality.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:fbfe6f18:1bab5021",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "produces",
+      "object": "TV series",
+      "source_page": "Foundation Series",
+      "evidence_text": "In June 2017, Deadline reported that Skydance Media would produce a TV series.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2bf0b802:b3b3ebee",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Vetco Gray",
+      "predicate": "owned_by",
+      "object": "GE Oil",
+      "source_page": "General Electric",
+      "evidence_text": "Also in 2007, GE Oil & Gas acquired Vetco Gray for $1.9 billion, followed by the acquisition of Hydril Pressure & Control in 2008 for $1.1 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e957fdd5:cd5272fe",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Vauxhall Motors",
+      "predicate": "owned_by",
+      "object": "Sloan Jr",
+      "source_page": "General Motors",
+      "evidence_text": "Sloan Jr., GM acquired Vauxhall Motors for $2.5 million in 1925.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d1e75879:3fa24926",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
   },
   {
     "item": {
@@ -2880,6 +3595,438 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The MTA",
+      "predicate": "operates",
+      "object": "Metro - North Railroad",
+      "source_page": "Borough President",
+      "evidence_text": "The MTA also operates the Staten Island Railway within Staten Island, as well as the Long Island Rail Road and Metro-North Railroad, both of which are commuter lines that have termini in the city but run largely in the suburban counties of New York State and Connecticut.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1ec44275:abaa8fad",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dumbarton Oaks",
+      "predicate": "owned_by",
+      "object": "Other Harvard",
+      "source_page": "Harvard University",
+      "evidence_text": "Other Harvard owns Dumbarton Oaks, a research library in Washington, D.C., Harvard Forest in Petersham, Massachusetts, Concord Field Station in Estabrook Woods in Concord, Massachusetts, the Villa I Tatti research center in Florence, Italy, and the Center for Hellenic Studies in Greece.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e2f08bb2:1609b782",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Cover Concepts",
+      "predicate": "owned_by",
+      "object": "Marvel Entertainment",
+      "source_page": "Hearst Corporation",
+      "evidence_text": "In December 2003, Marvel Entertainment acquired Cover Concepts from Hearst, to extend Marvel's demographic reach among public school children.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:16b76dd3:d8fd89b3",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Lifetime Entertainment Services",
+      "predicate": "owned_by",
+      "object": "A&E Networks",
+      "source_page": "Hearst Corporation",
+      "evidence_text": "In 2009, A&E Networks acquired Lifetime Entertainment Services, with Hearst ownership increasing to 42%.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:16b76dd3:26aa019f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Aero Engineering IncInc\u0000",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "Garrett Corporation also acquired Aero Engineering IncInc\u0000, Aero Sales Engineering, LtdLtd\u0000 and Air Cruisers Company in 1954.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b6474ad3:8fe6096e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bendix Aerospace",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "In 1982 Allied Corporation acquired Bendix Aerospace after coming in late in a protracted fight involving Bendix, Martin Marietta, and United Technologies.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b6474ad3:536d7f1b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sperry Aerospace",
+      "predicate": "owned_by",
+      "object": "Honeywell IncInc\u0000",
+      "source_page": "Honeywell Aerospace",
+      "evidence_text": "In 1985 The Signal Companies merged with Allied Corporation forming Allied-Signal IncInc\u0000 Allied-Signal (later renamed to Honeywell International in 1999) now includes [what was (in 1986) called] Honeywell IncInc\u0000, and in 1986 Honeywell IncInc\u0000 acquired Sperry Aerospace for $1.025 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b6474ad3:90045de8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "New York University 's team",
+      "predicate": "founded",
+      "object": "Electric vehicle",
+      "source_page": "TUM Boring",
+      "evidence_text": "New York University's team has created a vehicle that only allows cargo transportation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c56e24da:69ff34f7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Edmund Cartwright",
+      "predicate": "develops",
+      "object": "Solar power",
+      "source_page": "Industrial Revolution",
+      "evidence_text": "Realising expiration of the Arkwright patent would greatly increase the supply of spun cotton and lead to a shortage of weavers, Edmund Cartwright developed a vertical power loom which he patented in 1785.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0e062ed3:aa7eebcb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Intel Scientific Computers division",
+      "predicate": "founded_by",
+      "object": "Justin Rattner",
+      "source_page": "Intel Corporation",
+      "evidence_text": "Supercomputers The Intel Scientific Computers division was founded in 1984 by Justin Rattner to design and produce parallel computers based on Intel microprocessors connected in hypercube internetwork topology.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a691de6e:84e0ac9a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The IEA",
+      "predicate": "produces",
+      "object": "Tesla Energy",
+      "source_page": "International Energy Agency",
+      "evidence_text": "The IEA also produces in-depth energy reviews of its accession and association countries, as well as partner countries.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:feea7012:264e49b4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The IEA",
+      "predicate": "founded",
+      "object": "Tesla Energy",
+      "source_page": "International Energy Agency",
+      "evidence_text": "The IEA has created Energy Efficiency Indicators based on over ten years of data to highlight the drivers of individual nations' energy use in order to track energy efficiency and improve national policies.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:feea7012:872f0169",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Similar systems",
+      "predicate": "owned_by",
+      "object": "Iranian secret police",
+      "source_page": "Internet",
+      "evidence_text": "Similar systems are operated by Iranian secret police to identify and suppress dissidents.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5e766658:53a6a6d4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Many mailbox providers",
+      "predicate": "is_a",
+      "object": "Satellite Internet access",
+      "source_page": "ISPs",
+      "evidence_text": "Many mailbox providers are also access providers, but some are not (e.ge.g\u0000, Gmail, Yahoo!",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:b4d5712a:68634684",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Role - playing game",
+      "predicate": "published_by",
+      "object": "Victory Games",
+      "source_page": "James Bond",
+      "evidence_text": "Role-playing game From 1983 to 1987, a licensed tabletop role-playing game, James Bond 007: Role-Playing In Her Majesty's Secret Service, was published by Victory Games (a branch of Avalon Hill) and designed by Gerard Christopher Klug.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2985171a:f7889715",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Palmer series",
+      "predicate": "developed_by",
+      "object": "Harry Saltzman",
+      "source_page": "James Bond",
+      "evidence_text": "The Palmer series were produced by Harry Saltzman, who also used key crew members from the Bond series, including designer Ken Adam, editor Peter R.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2985171a:2d3f8a86",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Jeff Bezos",
+      "predicate": "founded",
+      "object": "Aerospace manufacturer",
+      "source_page": "Jeff Bezos",
+      "evidence_text": "Bezos founded the aerospace manufacturer and sub-orbital spaceflight services company Blue Origin in 2000, and he flew into space on Blue Origin NS-16 in 2021.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ea93df35:1db497e0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Jersey City native",
+      "predicate": "founded",
+      "object": "United States Securities and Exchange Commission",
+      "source_page": "Jersey City",
+      "evidence_text": "That same year, Jersey City native, governor Franklin Murphy (1902–1905), created the first \"State Tenement House Commission\" and the New Jersey Legislature passed the \"Tenement House Act\" to mandate statewide housing reform.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:7221bfec:1ed466d9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Personal Traits",
+      "predicate": "published_by",
+      "object": "Nicolay 's daughter",
+      "source_page": "John Nicolay",
+      "evidence_text": "In 1912, Nicolay's daughter, Helen Nicolay (1866–1954), published Personal Traits of Abraham Lincoln.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3bf82272:e274c117",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Elon Musk",
+      "predicate": "founded",
+      "object": "Plant Seed Day",
+      "source_page": "Kimbal Musk",
+      "evidence_text": "Musk and Big Green have established Plant a Seed Day, an international holiday.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:fa79335d:d9150955",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Big Green",
+      "predicate": "founded",
+      "object": "Plant Seed Day",
+      "source_page": "Kimbal Musk",
+      "evidence_text": "Musk and Big Green have established Plant a Seed Day, an international holiday.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:fa79335d:32da688c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Radio Classique",
+      "predicate": "owned_by",
+      "object": "Les Echos - Le Parisien Group",
+      "source_page": "Alain Chevalier",
+      "evidence_text": "Les Echos-Le Parisien Group also acquired Radio Classique, Connaissance des Arts, and Investir and bought 50% of Medici.tv as well as Mezzo TV and EuroArts.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:439822b2:60f780c1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Connaissance des Arts",
+      "predicate": "owned_by",
+      "object": "Les Echos - Le Parisien Group",
+      "source_page": "Alain Chevalier",
+      "evidence_text": "Les Echos-Le Parisien Group also acquired Radio Classique, Connaissance des Arts, and Investir and bought 50% of Medici.tv as well as Mezzo TV and EuroArts.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:439822b2:a1a34332",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tata Motors era",
+      "predicate": "founded",
+      "object": "Jaguar Land Rover Limited",
+      "source_page": "Land Rover",
+      "evidence_text": "Tata Motors era On 18 January 2008, Tata Motors, a part of the Tata Group, established Jaguar Land Rover Limited as a British-registered and wholly owned subsidiary.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f2467551:29233d5c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Low Earth orbit",
+      "predicate": "owned_by",
+      "object": "Sandia National Laboratories",
+      "source_page": "Lockheed Martin",
+      "evidence_text": "Martin Marietta products included Titan rockets, Sandia National Laboratories (management contract acquired in 1993), Space Shuttle External Tank, Viking 1 and Viking 2 landers, the Transfer Orbit Stage (under subcontract to Orbital Sciences Corporation) and various satellite models.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8fbd535e:342f92f4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Beontra AG",
+      "predicate": "owned_by",
+      "object": "Lockheed Martin",
+      "source_page": "Lockheed Martin",
+      "evidence_text": "In March 2014, Lockheed Martin acquired Beontra AG, a provider of integrated planning and demand forecasting tools for airport, planning to expand their business in commercial airport information technology solutions.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8fbd535e:7b2faeb0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Aerojet Rocketdyne Holdings",
+      "predicate": "owned_by",
+      "object": "Lockheed Martin",
+      "source_page": "Lockheed Martin",
+      "evidence_text": "On December 20, 2020, it was announced that Lockheed Martin would acquire Aerojet Rocketdyne Holdings for $4.4 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8fbd535e:bc60ed7c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Monte Titoli",
       "predicate": "operates",
       "object": "Stock exchange",
@@ -2892,6 +4039,310 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stock exchange",
+      "predicate": "founded_by",
+      "object": "English financier",
+      "source_page": "London Stock Exchange",
+      "evidence_text": "The Royal Exchange was founded by the English financier Thomas Gresham and Sir Richard Clough on the model of the Stock Exchange in Antwerp.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4dfb941b:71c3c2a7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Proquote Limited",
+      "predicate": "owned_by",
+      "object": "Stock exchange",
+      "source_page": "London Stock Exchange",
+      "evidence_text": "The Exchange also acquired Proquote Limited, a new generation supplier of real-time market data and trading systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4dfb941b:3279d01c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "IncInc\u0000",
+      "source_page": "Lyndon Rive",
+      "evidence_text": "After Tesla, IncInc\u0000 acquired SolarCity in 2016, Rive announced in 2017 that he would leave the company and spend his time with his family along with further entrepreneurial activities, including working on a new startup.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:58aaeb0e:8c7ecd52",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Carney 's first book",
+      "predicate": "published_by",
+      "object": "Signal Books",
+      "source_page": "Mark Carney",
+      "evidence_text": "Carney's first book, Value(s): Building a Better World for All, was published by Signal Books in 2021.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:aba23725:cf098431",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Business career",
+      "predicate": "founded",
+      "object": "Social media",
+      "source_page": "Max Levchin",
+      "evidence_text": "Business career In the summer of 1995, Levchin and fellow University of Illinois students Luke Nosek and Scott Banister founded SponsorNet New Media.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d887ccc6:a623a96a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Computer systems McDonnell Douglas",
+      "source_page": "McDonnell Douglas",
+      "evidence_text": "Computer systems McDonnell Douglas acquired Microdata Corporation in 1983.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:84c5a134:2a048b13",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "founded_by",
+      "object": "David Brock",
+      "source_page": "Media Matters",
+      "evidence_text": "Founding Media Matters for America was founded in May 2004 by David Brock, a formerly conservative journalist.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ae74393b:8cdeb35d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Their Research and Development department",
+      "predicate": "develops",
+      "object": "Lithium-ion battery",
+      "source_page": "Mercedes-Benz Group",
+      "evidence_text": "Their Research and Development department has developed a compostable battery that uses graphene-based organic cell chemistry.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e8075cbd:40ee57dd",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Public schools",
+      "predicate": "owned_by",
+      "object": "Brevard Public Schools",
+      "source_page": "Merritt Island",
+      "evidence_text": "Public schools are operated by Brevard Public Schools:",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b49174e1:7083bf45",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Spanish priest",
+      "predicate": "founded",
+      "object": "Mission San Francisco de Asís",
+      "source_page": "Mission District",
+      "evidence_text": "It was here that a Spanish priest named Father Francisco Palóu founded Mission San Francisco de Asís on June 29, 1776.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0595bdc7:8dd03c93",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Roman Catholic Archdiocese",
+      "predicate": "operates",
+      "object": "StSt\u0000 Peter 's Catholic School",
+      "source_page": "Mission District",
+      "evidence_text": "Rodriguez Early Education School Hilltop Special Service Center (special school for grades 7–12) The Roman Catholic Archdiocese of San Francisco operates StSt\u0000 Peter's Catholic School, which opened in 1878.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0595bdc7:3037f059",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "operates",
+      "object": "Kennedy Space Center",
+      "source_page": "Mission Control Center",
+      "evidence_text": "Parsons Corporation operates the Parsons Space Operations Center (PSOC) in Colorado Springs, Colorado to support command and control for the NOAA POES and DARPA Blackjack satellite programs.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ba4b9dee:d9d1b3bb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mitsubishi Jūkōgyō Kabushiki - kaisha",
+      "predicate": "is_a",
+      "object": "Oracle Corporation",
+      "source_page": "Mitsubishi Heavy Industries Aerospace",
+      "evidence_text": "Mitsubishi Heavy Industries, LtdLtd\u0000 (三菱重工業株式会社, Mitsubishi Jūkōgyō Kabushiki-kaisha; MHI) is a Japanese multinational engineering, electrical equipment and electronics corporation headquartered in Tokyo, Japan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:48c63be9:6936048b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Subsidiary",
+      "predicate": "manufactures",
+      "object": "Solar power",
+      "source_page": "Mitsubishi Heavy Industries Aerospace",
+      "evidence_text": "Subsidiary Mitsubishi Power manufactures solid oxide fuel cells (SOFCs) and hybrid SOFC and micro gas turbine Megamie power generation systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:48c63be9:216573be",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Van Kampen American Capital",
+      "predicate": "owned_by",
+      "object": "Morgan Stanley",
+      "source_page": "Morgan Stanley",
+      "evidence_text": "In 1996, Morgan Stanley acquired Van Kampen American Capital.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2385b9a6:55f111cf",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mesa West",
+      "predicate": "owned_by",
+      "object": "Morgan Stanley",
+      "source_page": "Morgan Stanley",
+      "evidence_text": "In March 2018, Morgan Stanley acquired Mesa West, a leading U.SU.S\u0000 commercial real estate credit platform, adding to its existing investment strategies and product offerings across real assets and private credit.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2385b9a6:7063b3e0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "GSFC personnel",
+      "predicate": "operates",
+      "object": "MSFN equipment",
+      "source_page": "Deep Space Network",
+      "evidence_text": "GSFC personnel would operate the MSFN equipment completely independently of DSN personnel.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0ffdca4a:2ceb25d8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The LSP Educational Outreach Office",
+      "predicate": "founded",
+      "object": "Rocket",
+      "source_page": "Launch Services Program",
+      "evidence_text": "The LSP Educational Outreach Office created the Rocket Science 101 Game.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:81ee28d3:94afcfce",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Stock exchange",
+      "source_page": "NYSE Group",
+      "evidence_text": "The corporation was then acquired by Intercontinental Exchange, which subsequently spun off Euronext.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a2ebfb44:0d9d8334",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
   },
   {
     "item": {
@@ -2912,6 +4363,86 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "SMARTS Group",
+      "predicate": "owned_by",
+      "object": "Nasdaq",
+      "source_page": "Nasdaq OMX",
+      "evidence_text": "SMARTS On July 27, 2010, NASDAQ OMX Group, IncInc\u0000 acquired SMARTS Group, a provider of market surveillance systems to exchanges, regulators and brokers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9325565b:19818e01",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Argentine Naval Aviation",
+      "predicate": "operates",
+      "object": "Vandenberg Space Force Base",
+      "source_page": "Naval Air Station",
+      "evidence_text": "Argentinean Navy The Argentine Naval Aviation operates four Base Aeronaval (BAN): from BAN Punta Indio (BAPI) in Buenos Aires Province through BAN Comandante Espora (BACE) and BAN Almirante Zar (BAAZ) in Patagonia to BAN Almirante Quijada (BARD) at Tierra del Fuego.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b2dddbfb:1b1a68ff",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Returning settlers",
+      "predicate": "founded",
+      "object": "La Villa de Alburquerque",
+      "source_page": "New Mexico",
+      "evidence_text": "Returning settlers founded La Villa de Alburquerque in 1706 at Old Town Albuquerque as a trading center for existing surrounding communities such as Barelas, Isleta, Los Ranchos, and Sandia; it was named for the viceroy of New Spain, Francisco Fernández de la Cueva, 10th Duke of Alburquerque.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a120ee7f:3065dbd6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The NYSE",
+      "predicate": "owned_by",
+      "object": "Stock exchange",
+      "source_page": "NYSE",
+      "evidence_text": "The NYSE is owned by Intercontinental Exchange, an American holding company that it also lists (ticker symbol ICE).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a0587376:0e93a453",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tesla",
+      "predicate": "develops",
+      "object": "Solar power",
+      "source_page": "Nikola Tesla",
+      "evidence_text": "In 1887, Tesla developed an induction motor that ran on alternating current (AC), a power system format that was rapidly expanding in Europe and the United States because of its advantages in long-distance, high-voltage transmission.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c4a45ed6:964d3a06",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Northrop Grumman",
       "predicate": "produces",
       "object": "Rocket",
@@ -2924,6 +4455,166 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "produces_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "owned_by",
+      "object": "Northrop Grumman",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "Later that year, Northrop Grumman acquired Newport News Shipbuilding.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:92fe4f8c:5e4dbc62",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "TRW IncInc\u0000",
+      "predicate": "owned_by",
+      "object": "Northrop Grumman",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "In 2002, Northrop Grumman acquired TRW IncInc\u0000 Northrop incorporated TRW's space and laser capabilities and system manufacturing infrastructure into its newly created Space Technology sector based in Redondo Beach, California (Space Park), and the Mission Systems sector based in Reston, Virginia.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:92fe4f8c:d785c2c5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Scaled Composites",
+      "predicate": "owned_by",
+      "object": "Northrop Grumman",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "In August 2007, Northrop Grumman acquired Scaled Composites in which it had previously owned a 40% stake.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:92fe4f8c:7ee25176",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Banque PSA Finance",
+      "predicate": "owned_by",
+      "object": "Financial services PSA",
+      "source_page": "PSA Group",
+      "evidence_text": "Financial services PSA wholly owns Banque PSA Finance which provides financial services, and 98.67% of GIE PSA Tresorerie which was founded in 1990 as a treasury and cash management services division.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5e7dfe57:bc9421ae",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The PSA Mangualde Plant",
+      "predicate": "produces",
+      "object": "Electric vehicle",
+      "source_page": "PSA Group",
+      "evidence_text": "The PSA Mangualde Plant in Portugal produced its millionth vehicle in 2012.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5e7dfe57:9706b8dc",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Missileer",
+      "predicate": "published_by",
+      "object": "Vandenberg Space Force Base",
+      "source_page": "Patrick Space Force Base",
+      "evidence_text": "Media The Missileer was published by the base weekly until 28 September 2012.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:850ac2a2:4dcd4622",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Fraud Sciences",
+      "predicate": "owned_by",
+      "object": "PayPal",
+      "source_page": "PayPal Holdings",
+      "evidence_text": "In January 2008, PayPal acquired Fraud Sciences, a privately held Israeli start-up that developed online risk tools, for $169 million.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c48f2f4c:69b200d5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Soviet Union",
+      "predicate": "develops",
+      "object": "Dragon spacecraft",
+      "source_page": "Project Gemini",
+      "evidence_text": "The Soviet Union during this period was developing the Soyuz spacecraft intended to take cosmonauts to the Moon, but political and technical problems began to get in the way, leading to the ultimate end of their crewed lunar program.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e54b59e0:4be48917",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Mercury space capsule",
+      "predicate": "developed_by",
+      "object": "McDonnell Aircraft",
+      "source_page": "Project Mercury",
+      "evidence_text": "The Mercury space capsule was produced by McDonnell Aircraft, and carried supplies of water, food and oxygen for about one day in a pressurized cabin.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:11795b10:7110ae8d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Redstone rockets",
+      "predicate": "developed_by",
+      "object": "Oracle Corporation",
+      "source_page": "Project Mercury",
+      "evidence_text": "Redstone rockets for suborbital launches were manufactured in Huntsville, Alabama, by the Chrysler Corporation and Atlas rockets by Convair in San Diego, California.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:11795b10:2024081d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
   },
   {
     "item": {
@@ -2960,15 +4651,255 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "If none of the previously",
-      "predicate": "develops",
-      "object": "Rocket",
-      "source_page": "Rocket engine",
-      "evidence_text": "If none of the previously developed rocket engines met the needs of the mission, a new rocket engine with specific requirements would be contracted to another DB specialised in LPRE development (oftentimes each DB had expertise in specific types of LPREs with different applications, propellants, or engine sizes).",
+      "subject": "BBN Technologies",
+      "predicate": "owned_by",
+      "object": "Raytheon purchased robotics company Sarcos",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "In November 2007, Raytheon purchased robotics company Sarcos, and in October 2009, Raytheon acquired BBN Technologies.",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "rv2:84beb196:4fa8c509",
+      "pump_relation_candidate_id": "spacy:3538924e:a05de1a7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bristol University",
+      "predicate": "develops",
+      "object": "STRICT expansion / deflection nozzle",
+      "source_page": "Reaction Engines",
+      "evidence_text": "With this funding, Reaction Engines completed a non-frosting sub-zero heat exchanger demonstration program, Bristol University developed the STRICT expansion/deflection nozzle, and DLR completed an oxidiser-cooled combustion chamber demonstration.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1f9638ee:dab53a20",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Blue Origin",
+      "predicate": "develops",
+      "object": "Rocket",
+      "source_page": "Reusable rocket",
+      "evidence_text": "Blue Origin was developing its New Glenn orbital rocket with a reusable first stage.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ee3f5c86:84126831",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dragon spacecraft",
+      "predicate": "developed_by",
+      "object": "The Spaceship Company",
+      "source_page": "Richard Branson",
+      "evidence_text": "The spacecraft, SpaceShipTwo, is manufactured by The Spaceship Company, which was founded by Branson and Rutan and is now solely owned by Virgin Galactic.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1f74ca65:9437b043",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Giovanni Fontana",
+      "predicate": "founded",
+      "object": "Rocket",
+      "source_page": "Rockets",
+      "evidence_text": "Giovanni Fontana, a Paduan engineer in 1420, created rocket-propelled animal figures.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:7d5a835d:5f4d8138",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Kistler Aerospace",
+      "predicate": "owned_by",
+      "object": "IncInc\u0000",
+      "source_page": "Kistler Aerospace",
+      "evidence_text": "It was formed in 2006 after Rocketplane Limited, IncInc\u0000 acquired Kistler Aerospace.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2d6700a9:bdc17cf7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Corporate history Kistler Aerospace",
+      "predicate": "founded_by",
+      "object": "Walter Kistler",
+      "source_page": "Kistler Aerospace",
+      "evidence_text": "Corporate history Kistler Aerospace was founded in Kirkland, Washington by Walter Kistler and Bob Citron in 1993 as a private company attempting to develop fully reusable vehicles capable of earth orbit at a minimal price.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2d6700a9:244ff3da",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Corporate history Kistler Aerospace",
+      "predicate": "founded_by",
+      "object": "Bob Citron",
+      "source_page": "Kistler Aerospace",
+      "evidence_text": "Corporate history Kistler Aerospace was founded in Kirkland, Washington by Walter Kistler and Bob Citron in 1993 as a private company attempting to develop fully reusable vehicles capable of earth orbit at a minimal price.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2d6700a9:9919e170",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Roots company",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "Roots Blower Company",
+      "evidence_text": "Five years later in 2015, the Roots company was acquired by Colfax Corporation, and became a part of Colfax's UK based engineering company Howden.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ba74075b:48e05f12",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The IAU",
+      "predicate": "founded",
+      "object": "Kennedy Space Center",
+      "source_page": "Satellites",
+      "evidence_text": "The IAU is establishing a center (CPS) to coordinate or aggregate measures to mitigate such detrimental effects.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:712c41ed:fdaabd3c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Eurasia WorldSpace",
+      "predicate": "founded_by",
+      "object": "Ethiopia - born lawyer Noah Samara",
+      "source_page": "Satellite Radio",
+      "evidence_text": "Africa and Eurasia WorldSpace was founded by Ethiopia-born lawyer Noah Samara in Washington, D.C., in 1990, with the goal of making satellite radio programming available to the developing world.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b828189b:09caa813",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded_by",
+      "object": "Martine Rothblatt",
+      "source_page": "Satellite Radio",
+      "evidence_text": "United States Sirius Satellite Radio was founded by Martine Rothblatt, who served as the new company's Chairman of the Board.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b828189b:da9ad723",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Fatih Özmen",
+      "source_page": "Sierra Nevada Corporation",
+      "evidence_text": "The corporation was acquired in 1994 by Fatih Özmen and Eren Özmen.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:bdf3e69e:4020d03e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Eren Özmen",
+      "source_page": "Sierra Nevada Corporation",
+      "evidence_text": "The corporation was acquired in 1994 by Fatih Özmen and Eren Özmen.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:bdf3e69e:7b8017a9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dragon spacecraft",
+      "predicate": "developed_by",
+      "object": "Space Systems / Loral",
+      "source_page": "Sirius Satellite Radio",
+      "evidence_text": "Sirius' spacecraft Radiosat 1 through Radiosat 4 were manufactured by Space Systems/Loral.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:95b97c77:8cca2120",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NCB electric vehicles",
+      "predicate": "developed_by",
+      "object": "Smith Electric Vehicles",
+      "source_page": "Smith Electric Vehicles",
+      "evidence_text": "All NCB electric vehicles were manufactured by Smith Electric Vehicles, which was based in Gateshead.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:02e398b3:41d72c7e",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "develops_bad_subject"
@@ -2979,7 +4910,7 @@
       "subject": "Bifacial cells",
       "predicate": "produces",
       "object": "Tesla Energy",
-      "source_page": "Solar panel",
+      "source_page": "solar panels",
       "evidence_text": "Bifacial cells produce energy on both sides which increases the total output of the module, this boost depends on the reflectivity of the surroundings and benefits from raised constructions since more light can reach the rear side.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -2988,6 +4919,86 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bifacial cells",
+      "predicate": "produces",
+      "object": "Clean energy",
+      "source_page": "solar panels",
+      "evidence_text": "Bifacial cells produce energy on both sides which increases the total output of the module, this boost depends on the reflectivity of the surroundings and benefits from raised constructions since more light can reach the rear side.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3c889a9d:c8028839",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Jan van Riebeeck",
+      "predicate": "founded",
+      "object": "International Space Station",
+      "source_page": "South Africa",
+      "evidence_text": "In 1652, a century and a half after the discovery of the Cape Route, Jan van Riebeeck established a victualling station at the Cape of Good Hope, at what would become Cape Town, on behalf of the Dutch East India Company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d51b60a1:1d981efe",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Explorezone.com",
+      "predicate": "owned_by",
+      "object": "Space.com",
+      "source_page": "Space.com",
+      "evidence_text": "As it expanded, Space.com acquired Explorezone.com in November 1999 and Starport.com in June 2000.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:08466a84:14642bce",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Falcon Heavy",
+      "source_page": "SpaceX Hawthorne",
+      "evidence_text": "SpaceX is developing a fully reusable super-heavy lift launch system known as Starship.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a2f6b45b:069f0841",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "manufactures",
+      "object": "Rocket",
+      "source_page": "SpaceX Hawthorne",
+      "evidence_text": "SpaceX manufactures its rocket engines, rocket stages, spacecraft, avionics, and flight software largely in-house.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a2f6b45b:b2285778",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_object"
   },
   {
     "item": {
@@ -3008,18 +5019,178 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "Economy of the United States",
-      "predicate": "owned_by",
-      "object": "Tesla",
-      "source_page": "Fremont Factory",
-      "evidence_text": "The Tesla Fremont Factory is an automobile manufacturing plant in Fremont, California, United States, operated by Tesla, IncInc\u0000 The factory originally opened as General Motors' Fremont Assembly in 1962, and then was operated by New United Motor Manufacturing, IncInc\u0000 (NUMMI), a joint venture of GM and Toyota from 1984.",
+      "subject": "SpaceX",
+      "predicate": "produces",
+      "object": "SpaceX Raptor",
+      "source_page": "Raptor Vacuum",
+      "evidence_text": "By November 2022, SpaceX produced more than one Raptor a day and had created a stockpile for future launches.",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "rv2:745f1c68:4aa284ab",
+      "pump_relation_candidate_id": "spacy:05ee6240:cc0d3bd6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "produces_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Rocket",
+      "source_page": "Interplanetary Transport System",
+      "evidence_text": "At the event, Musk announced SpaceX was developing a new rocket using Raptor engines called the Interplanetary Transport System.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c630549b:32f8bb67",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "StSt\u0000 Louis",
+      "predicate": "owned_by",
+      "object": "Economy of the United States",
+      "source_page": "St. Louis",
+      "evidence_text": "In 1804, the United States acquired StSt\u0000 Louis as part of the Louisiana Purchase.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c2b6789b:614a5b2e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Rod Holt",
+      "predicate": "develops",
+      "object": "Solar power",
+      "source_page": "Steve Jobs",
+      "evidence_text": "Primarily designed by Wozniak, Jobs oversaw the development of its unusual case and Rod Holt developed the unique power supply.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e79ff857:08457e8b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Q - layer",
+      "predicate": "owned_by",
+      "object": "Montalvo Systems",
+      "source_page": "Sun Microsystems",
+      "evidence_text": "February 2008: Innotek GmbH, developer of the VirtualBox virtualization product April 2008: Montalvo Systems, x86 microprocessor startup acquired before first silicon January 2009: Q-layer, a software company with cloud computing solutions",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d86897d4:000a88bd",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Java platform",
+      "predicate": "developed_by",
+      "object": "James Gosling",
+      "source_page": "Sun Microsystems",
+      "evidence_text": "The Java platform was developed at Sun by James Gosling in the early 1990s with the objective of allowing programs to function regardless of the device they were used on, sparking the slogan \"Write once, run anywhere\" (WORA).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d86897d4:27867736",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "MySQL AB",
+      "predicate": "owned_by",
+      "object": "Database management systems Sun",
+      "source_page": "Sun Microsystems",
+      "evidence_text": "Database management systems Sun acquired MySQL AB, the developer of the MySQL database in 2008 for US$1 billion.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:d86897d4:667c7dd4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sylvicultura economics",
+      "predicate": "published_by",
+      "object": "Hans Carl von Carlowitz",
+      "source_page": "Sustainable Development",
+      "evidence_text": "In response to a growing awareness of the depletion of timber resources in England, John Evelyn argued, in his 1662 essay Sylva, that \"sowing and planting of trees had to be regarded as a national duty of every landowner, in order to stop the destructive over- exploitation of natural resources.\" In 1713, Hans Carl von Carlowitz, a senior mining administrator in the service of Elector Frederick Augustus I of Saxony published Sylvicultura economics, a 400-page work on forestry.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a3a2edf2:a33eee5d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Important operational principles",
+      "predicate": "published_by",
+      "object": "Herman Daly",
+      "source_page": "Sustainable Development",
+      "evidence_text": "Important operational principles of sustainable development were published by Herman Daly in 1990: renewable resources should provide a sustainable yield (the rate of harvest should not exceed the rate of regeneration); for non-renewable resources there should be equivalent development of renewable substitutes; waste generation should not exceed the assimilative capacity of the environment.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a3a2edf2:0b2036cd",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Lithium-ion battery",
+      "predicate": "developed_by",
+      "object": "Tesla",
+      "source_page": "Tesla, Inc",
+      "evidence_text": "The battery was developed in-house by Tesla and is physically 5 times bigger than the 2170-type, again allowing for a higher capacity per cell and a lower number of cells per battery pack.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8d0f5aa9:36af104e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Maxwell Technologies",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Tesla, Inc",
+      "evidence_text": "Tesla acquired Maxwell Technologies for over $200 million – and sold in 2021.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8d0f5aa9:95c1fcd8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
   },
   {
     "item": {
@@ -3036,5 +5207,341 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "develops_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tammany Hall 's accounting books",
+      "predicate": "published_by",
+      "object": "The New - York Times",
+      "source_page": "New York Times",
+      "evidence_text": "In 1871, The New-York Times published Tammany Hall's accounting books; Tweed was tried in 1873 and sentenced to twelve years in prison.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9290972b:9e383083",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The New - York Times",
+      "predicate": "owned_by",
+      "object": "Chattanooga Times publisher Adolph Ochs",
+      "source_page": "New York Times",
+      "evidence_text": "In August 1896, Chattanooga Times publisher Adolph Ochs acquired The New-York Times, implementing significant alterations to the newspaper's structure.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9290972b:b8c65c35",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Athletic",
+      "predicate": "owned_by",
+      "object": "The New York Times Company",
+      "source_page": "New York Times",
+      "evidence_text": "The New York Times Company acquired The Athletic in January 2022.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9290972b:d650c8e4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The New York Times",
+      "predicate": "owned_by",
+      "object": "The New York Times Company",
+      "source_page": "New York Times",
+      "evidence_text": "The New York Times is owned by The New York Times Company, a publicly traded company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9290972b:ead91d3a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_subject_is_agent"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite Internet access",
+      "predicate": "published_by",
+      "object": "The New York Times",
+      "source_page": "New York Times",
+      "evidence_text": "The New York Times published Trump's Access Hollywood tape in October 2016, containing the words \"fuck\", \"pussy\", \"bitch\", and \"tits\", the first time the publication had published an expletive on its front page, and repeated an explicit phrase for fellatio stated by then-White House communications director Anthony Scaramucci in July 2017.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9290972b:c458b772",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_relation_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dow Jones",
+      "predicate": "owned_by",
+      "object": "Bloomberg News",
+      "source_page": "Wall Street Journal",
+      "evidence_text": "In 2007, News CorpCorp\u0000 acquired Dow Jones.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b27b0c28:12dec118",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "American animators",
+      "predicate": "founded",
+      "object": "Laugh - O - Gram Studio",
+      "source_page": "Walt Disney Company",
+      "evidence_text": "In 1921, American animators Walt Disney and Ub Iwerks founded Laugh-O-Gram Studio in Kansas City, Missouri.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c930c143:f9393978",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Waterbury Clock Company",
+      "predicate": "founded",
+      "object": "Mickey Mouse watch",
+      "source_page": "Walt Disney Company",
+      "evidence_text": "The Waterbury Clock Company created a Mickey Mouse watch, which became so popular it saved the company from bankruptcy during the Great Depression.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c930c143:c432b6d5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Artificial intelligence",
+      "predicate": "owned_by",
+      "object": "Twitter",
+      "source_page": "Obvious Corporation",
+      "evidence_text": "In June 2016, Twitter  acquired an artificial intelligence startup called Magic Pony for $150 million.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:92819d9b:81bad70e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Continental Airlines",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "UAL Corporation",
+      "evidence_text": "UAL Corporation would acquire Continental Airlines, IncInc\u0000 and change its name to United Continental Holdings (UCH).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:29d6acba:22c86202",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Poland UPS",
+      "predicate": "founded",
+      "object": "Kennedy Space Center",
+      "source_page": "United Parcel Service",
+      "evidence_text": "Poland UPS has established a 11,000 square meter package center in Mysłowice.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:31b76743:764d0d11",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The AEC",
+      "predicate": "develops",
+      "object": "Commercial Crew Program",
+      "source_page": "U.S. Atomic Energy Commission",
+      "evidence_text": "Domestic uranium procurement program The AEC developed a program for sourcing uranium domestically.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3c212723:5b62a826",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "develops_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Vector 's GalacticSky assets",
+      "predicate": "owned_by",
+      "object": "Lockheed Martin",
+      "source_page": "Vector Launch",
+      "evidence_text": "Lockheed Martin acquired Vector's GalacticSky assets by default after a bankruptcy court received no qualified bids.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5f3f3e07:7da4574d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Virgin Galactic",
+      "predicate": "founded_by",
+      "object": "British entrepreneur Sir Richard Branson",
+      "source_page": "Virgin Galactic",
+      "evidence_text": "Formation and early activities Virgin Galactic was founded in 2004 by British entrepreneur Sir Richard Branson, who had previously founded the Virgin Group and the Virgin Atlantic airline, and who had a long personal history of balloon and surface record-breaking activities.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1043f9dc:984c423f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Virgin Galactic",
+      "predicate": "founded",
+      "object": "Kennedy Space Center",
+      "source_page": "Virgin Galactic",
+      "evidence_text": "In 2015, Virgin Galactic established a 150,000-square-foot (14,000 m2) research, development, and manufacturing center for LauncherOne at the Long Beach Airport.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1043f9dc:f259f0b2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "International Space Station",
+      "predicate": "owned_by",
+      "object": "Hampshire Constabulary 's traffic division",
+      "source_page": "Volvo Amazon",
+      "evidence_text": "In total, five white Volvo Amazon station wagons were acquired by Hampshire Constabulary's traffic division, however the purchase of foreign police cars was the subject of local controversy, with letters of complaint written to Hampshire's Chief Constable and in Autocar magazine; Hampshire Constabulary would later find themselves the subject of national controversy and faced heavy criticism by the Home Office for purchasing multiple Volvo 144 saloons for traffic police use.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a594bb75:f83b6b83",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Archive-It.org",
+      "predicate": "developed_by",
+      "object": "Satellite internet",
+      "source_page": "Wayback Machine",
+      "evidence_text": "To overcome inconsistencies in partially cached websites, Archive-It.org was developed in 2005 by the Internet Archive as a means of allowing institutions and content creators to voluntarily harvest and preserve collections of digital content and create digital archives.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:82c419af:382a4c17",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "developed_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "WRC Promoter GmbH",
+      "predicate": "owned_by",
+      "object": "Social media",
+      "source_page": "World Rally",
+      "evidence_text": "WRC Promoter GmbH is jointly owned by Red Bull Media House and KW25 Beteiligungs GmbHGmbH\u0000 Through the Red Bull Content Pool, WRC provides news, articles and images for professional news and media outlets free of charge.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1f2667c3:60a2f947",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The WRC video game license",
+      "predicate": "owned_by",
+      "object": "French game development studio Kylotonn",
+      "source_page": "World Rally",
+      "evidence_text": "The WRC video game license was acquired by French game development studio Kylotonn from Milestone srl after the release of WRC 4: FIA World Rally Championship in 2013.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1f2667c3:b6a5e96e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_bad_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "founded_by",
+      "object": "Lt - Gen",
+      "source_page": "XCOR Aerospace",
+      "evidence_text": "History The Space Expedition Corporation (SXC) was founded by Harry van Hulten and Lt-Gen (ret.) Ben Droste in 2008.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8d8f75fa:cf8cd217",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_object_not_in_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Twitter",
+      "predicate": "owned_by",
+      "object": "Elon Musk",
+      "source_page": "X Corp",
+      "evidence_text": "On October 27, 2022, Musk acquired Twitter for $44 billion, and subsequently became its CEO.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1c50c8f7:e0bb60bf",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "owned_by_no_ownership_evidence"
   }
 ]

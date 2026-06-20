@@ -1,0 +1,15 @@
+{
+  "title": "Deutsche Post",
+  "normalized_title": "Deutsche Post",
+  "pageid": 20026893,
+  "revision_id": 1359421253,
+  "timestamp": "2026-06-15T05:17:25Z",
+  "source_url": "https://en.wikipedia.org/wiki/Deutsche_Post",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Deutsche+Post",
+  "retrieved_at": "2026-06-20T13:20:03Z",
+  "raw_text": "Deutsche Post (German pronunciation: [ˈdɔʏtʃə ˈpɔst], lit. 'German Post') is a DHL Group brand, (listed as \"Deutsche Post AG\"), used for its domestic mail services in Germany. The services offered under the brand are those of a traditional mail service, making the brand the successor of the former state-owned mail monopoly, Deutsche Bundespost. Deutsche Post's monopoly on these services expired in 2008.\n\n\nProducts\nAs of 2024, the following services are offered under the brand by DHL Group's Post & Parcel Germany (Post & Paket Deutschland) division:\n\nMail Communication handles the domestic mail service (except parcels).\nPress Services handles domestic distribution of print products (newspapers and magazines).\nRetail Outlets operates domestic retail outlets (post offices), which offer letter mail, parcel and Postbank services.\nDialogue Marketing provides services for direct marketing such as market research and address verification.\nOther services by the division, such as DHL Parcel (DHL Paket), use the DHL brand.\n\n\nSee also\nPostal codes in Germany\nList of national postal services\n\n\nReferences",
+  "raw_text_sha256": "5901dac187f1f826b6a59257eb84fcb5bee033b79614b99f4b2ea463e1d8d586",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

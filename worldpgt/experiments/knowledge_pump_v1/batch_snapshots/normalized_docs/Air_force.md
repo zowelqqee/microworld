@@ -1,7 +1,7 @@
 # Air force
 
 Source: https://en.wikipedia.org/wiki/Air_force
-Retrieved at: 2026-06-17T17:08:33Z
+Retrieved at: 2026-06-20T12:46:18Z
 Revision ID: 1345126428
 Raw text SHA256: 04e3228b2e1b1accb7650be9b353ba33ec235e8a49e71c9fea3c6aff2b929ad3
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

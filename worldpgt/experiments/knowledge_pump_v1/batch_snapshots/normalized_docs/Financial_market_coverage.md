@@ -1,7 +1,7 @@
-# Financial market coverage
+# financial market coverage
 
-Source: https://en.wikipedia.org/wiki/Financial_market_coverage
-Retrieved at: 2026-06-17T17:09:46Z
+Source: https://en.wikipedia.org/wiki/financial_market_coverage
+Retrieved at: 2026-06-20T12:49:54Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

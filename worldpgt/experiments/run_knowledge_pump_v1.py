@@ -24,12 +24,16 @@ _ROOT = Path(__file__).resolve().parent.parent.parent
 if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
+print("[INIT] importing worldpgt modules...", flush=True)
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
+print("[INIT] answer_orchestrator OK", flush=True)
 from worldpgt.knowledge_pump.expanded_allowlist_builder import (
     build_expanded_allowlist,
     write_allowlist,
 )
+print("[INIT] expanded_allowlist_builder OK", flush=True)
 from worldpgt.knowledge_pump.frontier_title_extractor import extract_frontier_titles
+print("[INIT] frontier_title_extractor OK", flush=True)
 from worldpgt.knowledge_pump.pump_batch_planner import plan_batches
 from worldpgt.knowledge_pump.pump_batch_runner import run_fetch_batch
 from worldpgt.knowledge_pump.pump_checkpoint import (
@@ -39,7 +43,9 @@ from worldpgt.knowledge_pump.pump_checkpoint import (
     utc_now,
     write_checkpoint,
 )
+print("[INIT] pump_checkpoint OK", flush=True)
 from worldpgt.knowledge_pump.delta_quality_firewall import classify_pump_delta, is_weak_context
+print("[INIT] delta_quality_firewall OK", flush=True)
 from worldpgt.knowledge_pump.precision_firewall import apply_precision_firewall
 from worldpgt.knowledge_pump.precision_firewall_v2 import (
     apply_precision_firewall_v2,
@@ -49,7 +55,9 @@ from worldpgt.knowledge_pump.precision_cleanup_v2_1 import (
     apply_precision_cleanup_v2_1,
     write_cleanup_v2_1_artifacts,
 )
+print("[INIT] precision firewalls OK", flush=True)
 from worldpgt.knowledge_pump.pump_regression_runner import run_assistant_regression
+print("[INIT] pump_regression_runner OK", flush=True)
 from worldpgt.knowledge_pump.pump_report import build_summary, write_frontier, write_json
 from worldpgt.knowledge_pump.safe_delta_merger import merge_with_fresh_deltas
 from worldpgt.knowledge_pump.title_ranker import normalize_title
@@ -58,16 +66,22 @@ from worldpgt.knowledge_pump.extraction_yield_v2 import (
     extract_yield_v2,
     write_extraction_yield_v2_artifacts,
 )
+print("[INIT] extraction_yield_v2 OK", flush=True)
 from worldpgt.knowledge_pump.pump_summary_qa_preserver import merge_qa_preservation
 from worldpgt.knowledge_pump.yield_ranked_frontier import run_yield_ranked_frontier
+from worldpgt.knowledge_pump.yield_ranked_frontier import normalize_page
+print("[INIT] yield_ranked_frontier OK", flush=True)
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+print("[INIT] entity_surface_index OK", flush=True)
 from worldpgt.relation_extraction_v2.relation_candidate_extractor import extract_all_candidates
+print("[INIT] relation_candidate_extractor OK", flush=True)
 from worldpgt.relation_extraction_v2.relation_candidate_validator import validate_candidates
 from worldpgt.wiki_snapshot_ingestion.snapshot_batch_ingestor import ingest_snapshot_batch, write_candidates
 from worldpgt.wiki_snapshot_ingestion.types import ReadySnapshotDoc
 from worldpgt.wiki_snapshots.snapshot_normalizer import safe_title_filename
 from worldpgt.wiki_snapshots.snapshot_readiness import evaluate_snapshot_readiness
 from worldpgt.wiki_snapshots.types import PageSnapshot
+print("[INIT] all imports done", flush=True)
 
 _EXPERIMENTS = Path(__file__).resolve().parent
 _OUT = _EXPERIMENTS / "knowledge_pump_v1"
@@ -374,6 +388,40 @@ def _write_relation_candidates(out_dir: Path, rows: list[dict[str, Any]]) -> Non
     )
 
 
+def _load_gap_frontier_signals(out_dir: Path) -> tuple[set[str], dict[str, dict]]:
+    """Load audit-driven frontier boost signals from ``gap_report.json``.
+
+    ``run_audit_driven_pump_v1.py`` is responsible for writing the production
+    gap report with eligibility filtering. The pump runner consumes that report
+    so the actual fetch batch uses the same cleaned acquisition targets.
+    """
+
+    report = _read_json(out_dir / "gap_report.json", {})
+    if not isinstance(report, dict):
+        return set(), {}
+
+    gap_entities = {
+        normalize_page(row.get("entity", ""))
+        for row in report.get("acquisition_candidates", [])
+        if isinstance(row, dict)
+        and row.get("entity")
+        and row.get("entity") != "[unknown entity]"
+    }
+    gap_entities = {entity for entity in gap_entities if entity}
+
+    stale_signals: dict[str, dict] = {}
+    for row in report.get("stale_candidates", []):
+        if not isinstance(row, dict):
+            continue
+        key = normalize_page(row.get("subject", ""))
+        if not key:
+            continue
+        previous = stale_signals.get(key)
+        if previous is None or row.get("staleness_ratio", 0) > previous.get("staleness_ratio", 0):
+            stale_signals[key] = row
+    return gap_entities, stale_signals
+
+
 def _write_empty_fresh_artifacts(out_dir: Path) -> None:
     write_json(out_dir / "pump_fresh_ingestion_candidates.json", [])
     _write_csv(out_dir / "pump_fresh_ingestion_candidates.csv", [], ["candidate_id", "source_doc_title", "source_doc_hash", "item_type"])
@@ -409,6 +457,7 @@ def _recompute_batch_derived(
     out_dir: Path,
     *,
     enable_extraction_yield_v2: bool = True,
+    enable_spacy: bool = False,
 ) -> dict[str, Any]:
     """Recompute derived counts over existing pump batch snapshots.
 
@@ -416,7 +465,9 @@ def _recompute_batch_derived(
     report zero new docs and no stale reuse.
     """
 
+    print("[RECOMPUTE] loading ready_docs...", flush=True)
     ready_docs = _ready_batch_docs(out_dir / "batch_snapshots")
+    print(f"[RECOMPUTE] ready_docs={len(ready_docs)}", flush=True)
     if not ready_docs:
         _write_empty_fresh_artifacts(out_dir)
         summary = {
@@ -442,14 +493,19 @@ def _recompute_batch_derived(
         return summary
 
     try:
+        print("[RECOMPUTE] ingest_snapshot_batch...", flush=True)
         candidates, overlay_items, failures, by_type, doc_status = ingest_snapshot_batch(ready_docs)
+        print(f"[RECOMPUTE] ingest done: {len(candidates)} candidates", flush=True)
         write_candidates(
             candidates,
             out_dir / "pump_fresh_ingestion_candidates.json",
             out_dir / "pump_fresh_ingestion_candidates.csv",
         )
+        print("[RECOMPUTE] EntitySurfaceIndex...", flush=True)
         index = EntitySurfaceIndex(_ACCEPTED, _PROMOTED, _SNAPSHOT_DRY_RUN, _SNAPSHOTS / "snapshot_manifest.json")
-        raw_relations, sentences, errors = extract_all_candidates(ready_docs, index)
+        print("[RECOMPUTE] extract_all_candidates...", flush=True)
+        raw_relations, sentences, errors = extract_all_candidates(ready_docs, index, enable_spacy=enable_spacy)
+        print(f"[RECOMPUTE] extract_all_candidates done: {len(raw_relations)} raw", flush=True)
         safe_relations, quarantine, duplicate_ids, conflict_ids = validate_candidates(
             raw_relations, index, _load_overlay_items()
         )
@@ -466,7 +522,9 @@ def _recompute_batch_derived(
             "extraction_yield_v2_candidate_by_pattern": {},
         }
         if enable_extraction_yield_v2:
+            print("[RECOMPUTE] extract_yield_v2...", flush=True)
             v2_items, v2_stats = extract_yield_v2(ready_docs, index)
+            print(f"[RECOMPUTE] extract_yield_v2 done: {len(v2_items)} items", flush=True)
             if v2_items:
                 overlay_items = list(overlay_items) + v2_items
             v2_artifact_dir = out_dir / "extraction_yield_v2"
@@ -573,11 +631,15 @@ def run(
     out_dir: Path = _OUT,
     include_weak_context: bool = False,
     enable_extraction_yield_v2: bool = True,
+    enable_spacy: bool = False,
     frontier_policy: str = "default",
     force_low_yield_fetch: bool = False,
 ) -> dict[str, Any]:
+    print("[RUN] start", flush=True)
     out_dir.mkdir(parents=True, exist_ok=True)
+    print("[RUN] _protected_hashes...", flush=True)
     before = _protected_hashes()
+    print("[RUN] _protected_hashes done", flush=True)
 
     if status:
         checkpoint = load_checkpoint(out_dir / "pump_checkpoint.json")
@@ -592,12 +654,16 @@ def run(
     }
     already_fetched |= fetched_existing
 
+    print("[RUN] _frontier_and_allowlist...", flush=True)
     frontier, allowlist = _frontier_and_allowlist(target_total, batch_size, already_fetched)
+    print(f"[RUN] frontier={len(frontier)} allowlist={len(allowlist)}", flush=True)
     write_frontier(frontier, out_dir / "frontier_titles.json", out_dir / "frontier_titles.csv")
     write_allowlist(allowlist, out_dir / "expanded_allowlist.json", out_dir / "expanded_allowlist.csv")
 
     start_batch = checkpoint.current_batch_index if checkpoint else 0
+    print("[RUN] plan_batches...", flush=True)
     default_batches = plan_batches(allowlist, batch_size, max_batches, already_fetched, start_batch)
+    print(f"[RUN] plan_batches done: {len(default_batches)} batches", flush=True)
 
     # --- v1.9 Yield-ranked frontier + incremental yield gate ---
     # Pure selection/control: reads prior pump artifacts, never fetches, never
@@ -610,13 +676,20 @@ def run(
     frontier_policy_fallback_reason = ""
     batches = default_batches
     try:
+        print("[RUN] _load_gap_frontier_signals...", flush=True)
+        gap_entities, stale_fact_signals = _load_gap_frontier_signals(out_dir)
+        print(f"[RUN] gap_entities={len(gap_entities)} stale_signals={len(stale_fact_signals)}", flush=True)
+        print("[RUN] run_yield_ranked_frontier...", flush=True)
         yield_result = run_yield_ranked_frontier(
             out_dir,
             out_dir / "yield_ranked_frontier_v1",
             snapshots_dir=_SNAPSHOTS,
             force=force_low_yield_fetch,
             frontier_policy=frontier_policy,
+            gap_entities=gap_entities,
+            stale_fact_signals=stale_fact_signals,
         )
+        print("[RUN] run_yield_ranked_frontier done", flush=True)
         yield_gate_info = yield_result["gate"]
         yield_summary = yield_result["incremental_summary"]
         yield_ranked_available_count = yield_summary.get("yield_ranked_available_count", 0)
@@ -637,8 +710,10 @@ def run(
                 for warning in yield_gate_info.get("warnings", []):
                     print(f"WARNING [yield-gate]: {warning}")
     except Exception as exc:  # pragma: no cover - defensive; keep pump robust
+        print(f"[RUN] yield_ranked_frontier ERROR: {exc}", flush=True)
         frontier_policy_fallback_reason = f"yield_ranked_frontier_error:{exc}"
 
+    print("[RUN] _write_batch_plan...", flush=True)
     _write_batch_plan(out_dir / "pump_batch_plan.json", batches)
 
     if checkpoint is None:
@@ -652,7 +727,9 @@ def run(
             last_run_at=utc_now(),
         )
 
+    print("[RUN] load_history...", flush=True)
     history = load_history(out_dir / "pump_batch_history.json")
+    print(f"[RUN] history loaded ({len(history)} records)", flush=True)
     batch_rows: list[dict] = []
 
     if allow_network and not plan_only:
@@ -685,10 +762,15 @@ def run(
         collection_summary["latest_batch_manifest_rows"] = len(batch_rows)
     write_json(out_dir / "pump_snapshot_collection_summary.json", collection_summary)
 
+    print("[RUN] _recompute_batch_derived...", flush=True)
     recompute_summary = _recompute_batch_derived(
-        out_dir, enable_extraction_yield_v2=enable_extraction_yield_v2
+        out_dir,
+        enable_extraction_yield_v2=enable_extraction_yield_v2,
+        enable_spacy=enable_spacy,
     )
+    print("[RUN] _recompute_batch_derived done", flush=True)
     ingestion_summary, relation_summary = _copy_existing_summaries(out_dir)
+    print("[RUN] merge_with_fresh_deltas...", flush=True)
     merge_result = merge_with_fresh_deltas(
         base_overlay_path=_SNAPSHOT_DRY_RUN,
         legacy_snapshot_delta_path=_SNAPSHOT_INGESTION / "snapshot_overlay_delta_proposal.json",
@@ -698,6 +780,7 @@ def run(
         output_overlay_path=out_dir / "pump_dry_run_overlay.json",
         output_delta_path=out_dir / "pump_safe_delta.json",
     )
+    print("[RUN] merge_with_fresh_deltas done", flush=True)
     merge_counts = merge_result["counts"]
     v2_safe_delta = [
         item for item in merge_result["fresh_safe_delta"]
@@ -706,7 +789,9 @@ def run(
     write_json(out_dir / "pump_extraction_yield_v2_safe_delta.json", v2_safe_delta)
 
     # --- v1.3 Delta Quality Firewall ---
+    print("[RUN] classify_pump_delta...", flush=True)
     classified = classify_pump_delta(merge_result["pump_delta"])
+    print("[RUN] classify_pump_delta done", flush=True)
     v13_answerable = classified["answerable"]
     pump_weak_context_delta = classified["weak_context"]
     pump_entity_delta = classified["entity"]
@@ -885,7 +970,9 @@ def run(
     final_overlay = overlay_with_weak if include_weak_context else overlay_without_weak
     pump_overlay_path = out_dir / "pump_dry_run_overlay.json"
     write_json(pump_overlay_path, final_overlay)
+    print("[RUN] _write_pump_fact_smoke...", flush=True)
     smoke_metrics = _write_pump_fact_smoke(out_dir, pump_overlay_path, pump_answerable_delta)
+    print("[RUN] _write_pump_fact_smoke done", flush=True)
 
     # Overlay-without-weak sizes before vs after the precision firewall.
     overlay_without_weak_before_precision = len(base_answerable) + answerable_before
@@ -949,7 +1036,9 @@ def run(
         },
     )
 
+    print("[RUN] run_assistant_regression...", flush=True)
     assistant_summary = run_assistant_regression(out_dir, overlay_path=pump_overlay_path)
+    print("[RUN] run_assistant_regression done", flush=True)
     baseline = _read_json(_EXPERIMENTS / "assistant_surface_v1" / "assistant_surface_summary.json", {})
     answer_gain = assistant_summary.get("answer_count", 0) - baseline.get("answer_count", assistant_summary.get("answer_count", 0))
 
@@ -1113,11 +1202,13 @@ def run(
         "frontier_policy_fallback_reason": frontier_policy_fallback_reason,
         "force_low_yield_fetch": force_low_yield_fetch,
     })
+    print("[RUN] merge_qa_preservation...", flush=True)
     merge_qa_preservation(
         summary,
         out_dir,
         current_fact_count=summary.get("pump_answerable_fact_delta_count", 0),
     )
+    print("[RUN] writing final artifacts...", flush=True)
     write_json(out_dir / "pump_summary.json", summary)
     write_json(
         out_dir / "pump_report.json",
@@ -1165,6 +1256,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--disable-extraction-yield-v2", action="store_false",
                         dest="enable_extraction_yield_v2",
                         help="Disable Extraction Yield v2 for before/after diagnostics.")
+    parser.add_argument("--enable-spacy", action="store_true", default=False,
+                        dest="enable_spacy",
+                        help="Enable spaCy dependency-parse extraction path (default: off). "
+                             "Adds passive-voice, coordination, and copula candidates on top of "
+                             "the regex path. Use to compare yield with and without spaCy.")
     parser.add_argument("--frontier-policy", choices=["default", "yield-ranked"],
                         default="default",
                         help="Frontier selection policy. 'default' keeps the "
@@ -1176,6 +1272,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     plan_only = args.plan_only or not args.allow_network
+    print("[MAIN] calling run()...", flush=True)
     result = run(
         plan_only=plan_only,
         allow_network=args.allow_network,
@@ -1188,6 +1285,7 @@ def main(argv: list[str] | None = None) -> int:
         delay_sec=args.delay_sec,
         include_weak_context=args.include_weak_context,
         enable_extraction_yield_v2=args.enable_extraction_yield_v2,
+        enable_spacy=args.enable_spacy,
         frontier_policy=args.frontier_policy,
         force_low_yield_fetch=args.force_low_yield_fetch,
     )

@@ -1,7 +1,7 @@
 # Limited liability company
 
 Source: https://en.wikipedia.org/wiki/Limited_liability_company
-Retrieved at: 2026-06-17T17:11:49Z
+Retrieved at: 2026-06-20T12:56:04Z
 Revision ID: 1359598984
 Raw text SHA256: 07ad77a025247e9b32b357209d882f87b263eff2a10ef5e37aa9dbedc3bff7ad
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

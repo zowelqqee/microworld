@@ -1,7 +1,7 @@
 # Relational model
 
 Source: https://en.wikipedia.org/wiki/Relational_model
-Retrieved at: 2026-06-17T17:10:14Z
+Retrieved at: 2026-06-20T12:51:06Z
 Revision ID: 1353740278
 Raw text SHA256: a26c83cb488b6edb7718c11f4c89795e6b19b1422297e7abc6a05b0b43d5f265
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

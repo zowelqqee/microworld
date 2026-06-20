@@ -1,7 +1,7 @@
 # Systems Corporation
 
 Source: https://en.wikipedia.org/wiki/Systems_Corporation
-Retrieved at: 2026-06-17T17:10:38Z
+Retrieved at: 2026-06-20T12:52:20Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

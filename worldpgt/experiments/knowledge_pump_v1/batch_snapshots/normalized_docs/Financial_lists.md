@@ -1,7 +1,7 @@
-# Financial lists
+# financial lists
 
-Source: https://en.wikipedia.org/wiki/Financial_lists
-Retrieved at: 2026-06-17T17:09:45Z
+Source: https://en.wikipedia.org/wiki/financial_lists
+Retrieved at: 2026-06-20T12:49:51Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

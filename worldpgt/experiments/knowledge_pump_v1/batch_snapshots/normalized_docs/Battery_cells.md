@@ -1,7 +1,7 @@
-# Battery cells
+# battery cells
 
-Source: https://en.wikipedia.org/wiki/Battery_cells
-Retrieved at: 2026-06-17T17:08:58Z
+Source: https://en.wikipedia.org/wiki/battery_cells
+Retrieved at: 2026-06-20T12:47:28Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

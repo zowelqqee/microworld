@@ -1,8 +1,8 @@
 # Airbus
 
 Source: https://en.wikipedia.org/wiki/Airbus
-Retrieved at: 2026-06-17T17:09:55Z
-Revision ID: 1359460696
+Retrieved at: 2026-06-20T12:50:09Z
+Revision ID: 1360097789
 Raw text SHA256: 938eb696536041f0ee3b5a7b778b843fc74d99fd7d37c31840810e772dc03e68
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

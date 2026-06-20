@@ -1,7 +1,7 @@
 # Outer Space Treaty
 
 Source: https://en.wikipedia.org/wiki/Outer_Space_Treaty
-Retrieved at: 2026-06-17T17:09:52Z
+Retrieved at: 2026-06-20T12:50:05Z
 Revision ID: 1346727738
 Raw text SHA256: 2d31a780c127852bac045b4825c42a0ae930d7a1231a8455ab10542938631ba2
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

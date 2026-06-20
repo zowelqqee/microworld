@@ -10,15 +10,33 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "snapshot",
+      "as_of": "2026-06",
       "snapshot_source_title": "Mark Carney",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Mark_Carney",
       "snapshot_retrieved_at": "2026-06-17T17:18:44Z",
       "snapshot_revision_id": 1359301317,
       "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-402-overlay-001",
+      "snapshot_candidate_id": "snap-414-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tesla Energy",
+      "predicate": "is_a",
+      "object": "Paris - based autonomous intergovernmental organization",
+      "source_page": "International Energy Agency",
+      "evidence_text": "The International Energy Agency (IEA) is a Paris-based autonomous intergovernmental organization, established in 1974, that provides policy recommendations, analysis and data on the global energy sector.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:feea7012:c9d3d920",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "object_has_descriptive_tail"
   }
 ]

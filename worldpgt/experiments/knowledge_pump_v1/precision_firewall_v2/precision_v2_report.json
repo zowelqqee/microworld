@@ -1,28 +1,30 @@
 {
   "precision_v2_enabled": true,
-  "answerable_before_v2": 981,
-  "answerable_after_v2": 927,
-  "relation_before_count": 78,
-  "relation_after_count": 58,
-  "definition_before_count": 240,
-  "definition_after_count": 206,
-  "rejected_count": 53,
-  "quarantined_count": 1,
+  "answerable_before_v2": 1143,
+  "answerable_after_v2": 1091,
+  "relation_before_count": 220,
+  "relation_after_count": 198,
+  "definition_before_count": 238,
+  "definition_after_count": 208,
+  "rejected_count": 50,
+  "quarantined_count": 2,
   "rejection_by_reason": {
     "appositive_alias_subject": 9,
     "dangling_comma_subject": 9,
-    "definition_nationality_plus_single_noun": 9,
+    "definition_nationality_plus_single_noun": 7,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
+    "founded_by_truncated_object": 1,
     "fragment_prefix_subject": 5,
     "geopolitical_subject_corporate_predicate": 1,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 12
+    "truncated_definition": 10
   },
   "quarantine_by_reason": {
+    "object_has_descriptive_tail": 1,
     "volatile_predicate": 1
   },
   "relation_examples_rejected": [
@@ -124,11 +126,6 @@
       "reason": "dangling_comma_subject"
     },
     {
-      "subject": "Arianespace SA",
-      "definition": "French company",
-      "reason": "definition_nationality_plus_single_noun"
-    },
-    {
       "subject": "Boeing Starliner",
       "definition": "spacecraft designed to transport crew to",
       "reason": "truncated_definition"
@@ -142,11 +139,6 @@
       "subject": "Charles David Walker",
       "definition": "American engineer",
       "reason": "definition_nationality_plus_single_noun"
-    },
-    {
-      "subject": "Crew Exploration Vehicle",
-      "definition": "component of the U",
-      "reason": "truncated_definition"
     },
     {
       "subject": "Electrical engineering",
@@ -174,11 +166,6 @@
       "reason": "appositive_alias_subject"
     },
     {
-      "subject": "General Electric Company",
-      "definition": "major British industrial conglomerate involved in consumer",
-      "reason": "truncated_definition"
-    },
-    {
       "subject": "Germany, officially the Federal Republic of Germany,",
       "definition": "country in Western",
       "reason": "appositive_alias_subject"
@@ -192,6 +179,21 @@
       "subject": "Hyperloop One, known as Virgin Hyperloop until November 2022,",
       "definition": "American transportation technology company",
       "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "Hyperloop Pod Competition",
+      "definition": "annual competition sponsored by SpaceX from 2015 to 2019 in",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "India, officially the Republic of India,",
+      "definition": "country in South Asia",
+      "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "Jersey City",
+      "definition": "second-most populous city in the U",
+      "reason": "truncated_definition"
     }
   ],
   "relation_examples_preserved": [
@@ -261,14 +263,14 @@
       "object": "Sonus Networks"
     },
     {
-      "subject": "Arianespace",
-      "predicate": "subsidiary_of",
-      "object": "ArianeGroup"
-    },
-    {
       "subject": "Now",
       "predicate": "headquartered_in",
       "object": "Tokyo"
+    },
+    {
+      "subject": "Sleepycat Software",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation"
     }
   ],
   "definition_examples_preserved": [
@@ -279,6 +281,10 @@
     {
       "subject": "HMS Amazon",
       "definition": "26-gun frigate"
+    },
+    {
+      "subject": "International Astronomical Union",
+      "definition": "international association of professional astronomers"
     },
     {
       "subject": "June",
@@ -327,10 +333,6 @@
     {
       "subject": "Amazon basin",
       "definition": "part of South America drained by the Amazon River"
-    },
-    {
-      "subject": "Amazonian Guard",
-      "definition": "unofficial name given to an all-female elite cadre of bodyguards officially"
     }
   ],
   "quarantine_examples": [
@@ -339,6 +341,12 @@
       "predicate": "leader_of",
       "object": "Liberal Party",
       "reason": "volatile_predicate"
+    },
+    {
+      "subject": "Tesla Energy",
+      "predicate": "is_a",
+      "object": "Paris - based autonomous intergovernmental organization",
+      "reason": "object_has_descriptive_tail"
     }
   ]
 }

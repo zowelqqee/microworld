@@ -1,7 +1,7 @@
 # All Model
 
 Source: https://en.wikipedia.org/wiki/All_Model
-Retrieved at: 2026-06-17T17:10:44Z
+Retrieved at: 2026-06-20T12:52:48Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

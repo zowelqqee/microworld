@@ -1,7 +1,7 @@
 # Broadway Technology
 
 Source: https://en.wikipedia.org/wiki/Broadway_Technology
-Retrieved at: 2026-06-17T17:11:01Z
+Retrieved at: 2026-06-20T12:53:35Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

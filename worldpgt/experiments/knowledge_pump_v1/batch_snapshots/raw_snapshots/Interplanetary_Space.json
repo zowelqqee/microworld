@@ -6,10 +6,10 @@
   "timestamp": "",
   "source_url": "https://en.wikipedia.org/wiki/Interplanetary_Space",
   "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Interplanetary+Space",
-  "retrieved_at": "2026-06-17T17:11:38Z",
+  "retrieved_at": "2026-06-20T12:55:24Z",
   "raw_text": "",
   "raw_text_sha256": "",
   "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
-  "fetch_status": "missing",
-  "error": "page_missing"
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests"
 }

@@ -1,15 +1,15 @@
 {
   "title": "Founder Technology",
   "normalized_title": "Founder Technology",
-  "pageid": 17716852,
-  "revision_id": 1359440420,
-  "timestamp": "2026-06-15T08:57:16Z",
+  "pageid": null,
+  "revision_id": null,
+  "timestamp": "",
   "source_url": "https://en.wikipedia.org/wiki/Founder_Technology",
   "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Founder+Technology",
-  "retrieved_at": "2026-06-17T17:11:22Z",
-  "raw_text": "Founder Technology Group Corporation (SSE: 600601), a subsidiary of Founder Group from Peking University, is an information technology state-owned enterprise in Shanghai, China. It is engaged in the development of personal computers and computer peripherals, under the brand of \"Fang Zheng\" (方正), and printed circuit boards.\n\n\nHistory\nFounder Technology was established in 1986 and listed on the Shanghai Stock Exchange in 1990.\n\n\nSee also\n\n\nReferences\n\n\nExternal links\nOfficial website (in English)\nOfficial website (in Chinese)",
-  "raw_text_sha256": "3a76f501127788670a60e7c92791cb9228b7ac9c6c57201be6e5f33fc5bfc8c6",
+  "retrieved_at": "2026-06-20T12:54:41Z",
+  "raw_text": "",
+  "raw_text_sha256": "",
   "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
-  "fetch_status": "success",
-  "error": ""
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests"
 }

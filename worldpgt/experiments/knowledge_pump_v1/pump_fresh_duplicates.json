@@ -1,113 +1,6 @@
 [
   {
-    "candidate_id": "snap-009-overlay-000",
-    "source_doc_title": "Aerospace manufacturer",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Aerospace_manufacturer",
-      "label": "Aerospace manufacturer",
-      "aliases": [
-        "Market In",
-        "manufacturer"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Aerospace manufacturer",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Aerospace manufacturer",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Aerospace_manufacturer",
-      "snapshot_retrieved_at": "2026-06-17T17:08:53Z",
-      "snapshot_revision_id": 1342299878,
-      "snapshot_raw_text_sha256": "4d2faea7623fa4c75c4f5d68c87ff37140e26de9ede2ce7e97ed59b9de7841fd",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-009-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-077-overlay-000",
-    "source_doc_title": "Automotive industry",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Automotive_industry",
-      "label": "Automotive industry",
-      "aliases": [
-        "industry"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Automotive industry",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Automotive industry",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Automotive_industry",
-      "snapshot_retrieved_at": "2026-06-17T17:19:59Z",
-      "snapshot_revision_id": 1355636928,
-      "snapshot_raw_text_sha256": "6d24a9be4d87b30a4e25e5298eea27267d5adbfa189662a7ef9090f23e11d3c7",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-077-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-078-overlay-000",
-    "source_doc_title": "Autopilot",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Autopilot",
-      "label": "Autopilot",
-      "aliases": [],
-      "entity_type": "unknown",
-      "source_page": "Autopilot",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Autopilot",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Autopilot",
-      "snapshot_retrieved_at": "2026-06-17T17:20:26Z",
-      "snapshot_revision_id": 1342840009,
-      "snapshot_raw_text_sha256": "11550916d6a93d5485711138c618ee3f612f98fe9297614ddb7614213fd19406",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-078-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-114-overlay-000",
-    "source_doc_title": "Bloomberg L.P.",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Bloomberg_L.P.",
-      "label": "Bloomberg L.P.",
-      "aliases": [
-        "L.P."
-      ],
-      "entity_type": "unknown",
-      "source_page": "Bloomberg L.P.",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Bloomberg L.P.",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Bloomberg_L.P.",
-      "snapshot_retrieved_at": "2026-06-17T20:44:30Z",
-      "snapshot_revision_id": 1359475756,
-      "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-114-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-114-overlay-002",
+    "candidate_id": "snap-111-overlay-002",
     "source_doc_title": "Bloomberg L.P.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -125,12 +18,12 @@
       "snapshot_revision_id": 1359475756,
       "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-114-overlay-002",
+      "snapshot_candidate_id": "snap-111-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-114-overlay-004",
+    "candidate_id": "snap-111-overlay-004",
     "source_doc_title": "Bloomberg L.P.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -148,67 +41,12 @@
       "snapshot_revision_id": 1359475756,
       "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-114-overlay-004",
+      "snapshot_candidate_id": "snap-111-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-138-overlay-000",
-    "source_doc_title": "Brain–computer interface",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Brain–computer_interface",
-      "label": "Brain–computer interface",
-      "aliases": [
-        "interface"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Brain–computer interface",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Brain–computer interface",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface",
-      "snapshot_retrieved_at": "2026-06-17T17:16:39Z",
-      "snapshot_revision_id": 1359491554,
-      "snapshot_raw_text_sha256": "58d75a095df0f561448cdf9c5e18290c0c29a9469e10d90a1a992248ba09845d",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-138-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-157-overlay-000",
-    "source_doc_title": "Cape Canaveral Space Force Station",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Cape_Canaveral_Space_Force_Station",
-      "label": "Cape Canaveral Space Force Station",
-      "aliases": [
-        "History The CCSFS",
-        "Station"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Cape Canaveral Space Force Station",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Cape Canaveral Space Force Station",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Cape_Canaveral_Space_Force_Station",
-      "snapshot_retrieved_at": "2026-06-17T17:21:19Z",
-      "snapshot_revision_id": 1357790373,
-      "snapshot_raw_text_sha256": "2be05b72903ea47c0b5739fa3a3d4612a5d1c2d60362a4a5169eca8a7dd4ae87",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-157-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-157-overlay-015",
+    "candidate_id": "snap-151-overlay-014",
     "source_doc_title": "Cape Canaveral Space Force Station",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -226,40 +64,12 @@
       "snapshot_revision_id": 1357790373,
       "snapshot_raw_text_sha256": "2be05b72903ea47c0b5739fa3a3d4612a5d1c2d60362a4a5169eca8a7dd4ae87",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-157-overlay-015",
+      "snapshot_candidate_id": "snap-151-overlay-014",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-186-overlay-000",
-    "source_doc_title": "Commercial Crew Program",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Commercial_Crew_Program",
-      "label": "Commercial Crew Program",
-      "aliases": [
-        "Background In",
-        "Program"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Commercial Crew Program",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Commercial Crew Program",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Commercial_Crew_Program",
-      "snapshot_retrieved_at": "2026-06-17T17:20:20Z",
-      "snapshot_revision_id": 1356327552,
-      "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-186-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-186-overlay-001",
+    "candidate_id": "snap-178-overlay-001",
     "source_doc_title": "Commercial Crew Program",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -277,12 +87,12 @@
       "snapshot_revision_id": 1356327552,
       "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-186-overlay-001",
+      "snapshot_candidate_id": "snap-178-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-186-overlay-010",
+    "candidate_id": "snap-178-overlay-009",
     "source_doc_title": "Commercial Crew Program",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -300,66 +110,12 @@
       "snapshot_revision_id": 1356327552,
       "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-186-overlay-010",
+      "snapshot_candidate_id": "snap-178-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-233-overlay-000",
-    "source_doc_title": "Economy of the United States",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Economy_of_the_United_States",
-      "label": "Economy of the United States",
-      "aliases": [
-        "States"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Economy of the United States",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Economy of the United States",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States",
-      "snapshot_retrieved_at": "2026-06-15T12:36:18Z",
-      "snapshot_revision_id": 1359403394,
-      "snapshot_raw_text_sha256": "9afcd0d8cde687772ce5cfe1c6aa38fb6b822ad5d1bf6d68a42c071b3610de44",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-233-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-236-overlay-000",
-    "source_doc_title": "Electric car",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Electric_car",
-      "label": "Electric car",
-      "aliases": [
-        "car"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Electric car",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Electric car",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Electric_car",
-      "snapshot_retrieved_at": "2026-06-17T17:08:59Z",
-      "snapshot_revision_id": 1359706682,
-      "snapshot_raw_text_sha256": "d9c1edb1ae57632259835813b7c0959da37632ffeb7e6446ea9227486647e260",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-236-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-236-overlay-002",
+    "candidate_id": "snap-241-overlay-001",
     "source_doc_title": "Electric car",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -377,141 +133,12 @@
       "snapshot_revision_id": 1359706682,
       "snapshot_raw_text_sha256": "d9c1edb1ae57632259835813b7c0959da37632ffeb7e6446ea9227486647e260",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-236-overlay-002",
+      "snapshot_candidate_id": "snap-241-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-257-overlay-010",
-    "source_doc_title": "Falcon Heavy",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_context_link",
-      "source_page": "Falcon Heavy",
-      "surface": "SpaceX",
-      "target": "SpaceX",
-      "relation": "mentioned_with",
-      "strength": "weak",
-      "trust": "weak_context_only",
-      "snapshot_source_title": "Falcon Heavy",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Falcon_Heavy",
-      "snapshot_retrieved_at": "2026-06-17T17:08:56Z",
-      "snapshot_revision_id": 1356912202,
-      "snapshot_raw_text_sha256": "9a1676c4f5e4ac1a23331469192cf1c7311882ce50bc5d0f0abe7b69f4cbffb2",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-257-overlay-010",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-306-overlay-015",
-    "source_doc_title": "Gwynne Shotwell",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_context_link",
-      "source_page": "Gwynne Shotwell",
-      "surface": "Rocket",
-      "target": "Rocket",
-      "relation": "mentioned_with",
-      "strength": "weak",
-      "trust": "weak_context_only",
-      "snapshot_source_title": "Gwynne Shotwell",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Gwynne_Shotwell",
-      "snapshot_retrieved_at": "2026-06-17T17:08:58Z",
-      "snapshot_revision_id": 1359811386,
-      "snapshot_raw_text_sha256": "0b6d528c2bb569ca3f4f073a3147d29d517b06df784fbdcc2b112552fa7c4b4f",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-306-overlay-015",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-335-overlay-000",
-    "source_doc_title": "International Space Station",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:International_Space_Station",
-      "label": "International Space Station",
-      "aliases": [
-        "Station"
-      ],
-      "entity_type": "unknown",
-      "source_page": "International Space Station",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "International Space Station",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/International_Space_Station",
-      "snapshot_retrieved_at": "2026-06-15T09:19:48Z",
-      "snapshot_revision_id": 1358928240,
-      "snapshot_raw_text_sha256": "2aa3e1a45174eee298c939c21c01e0e98634f7a71294ddb53df8d20f4f5de901",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-335-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-339-overlay-000",
-    "source_doc_title": "Internet service provider",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Internet_service_provider",
-      "label": "Internet service provider",
-      "aliases": [
-        "History The Internet",
-        "provider"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Internet service provider",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Internet service provider",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Internet_service_provider",
-      "snapshot_retrieved_at": "2026-06-15T09:17:42Z",
-      "snapshot_revision_id": 1357317919,
-      "snapshot_raw_text_sha256": "b4d5712aaa6e7e493a7b60686d163280e44fe4504be90053655c92212df1c43c",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-339-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-370-overlay-000",
-    "source_doc_title": "Kennedy Space Center",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Kennedy_Space_Center",
-      "label": "Kennedy Space Center",
-      "aliases": [
-        "Formation Since",
-        "Center"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Kennedy Space Center",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Kennedy Space Center",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Kennedy_Space_Center",
-      "snapshot_retrieved_at": "2026-06-17T17:10:08Z",
-      "snapshot_revision_id": 1355591236,
-      "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-370-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-370-overlay-001",
+    "candidate_id": "snap-378-overlay-001",
     "source_doc_title": "Kennedy Space Center",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -525,16 +152,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Kennedy Space Center",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Kennedy_Space_Center",
-      "snapshot_retrieved_at": "2026-06-17T17:10:08Z",
+      "snapshot_retrieved_at": "2026-06-20T12:49:06Z",
       "snapshot_revision_id": 1355591236,
       "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-370-overlay-001",
+      "snapshot_candidate_id": "snap-378-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-370-overlay-009",
+    "candidate_id": "snap-378-overlay-008",
     "source_doc_title": "Kennedy Space Center",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -548,91 +175,39 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Kennedy Space Center",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Kennedy_Space_Center",
-      "snapshot_retrieved_at": "2026-06-17T17:10:08Z",
+      "snapshot_retrieved_at": "2026-06-20T12:49:06Z",
       "snapshot_revision_id": 1355591236,
       "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-370-overlay-009",
+      "snapshot_candidate_id": "snap-378-overlay-008",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-374-overlay-000",
+    "candidate_id": "snap-383-overlay-001",
     "source_doc_title": "LVMH",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:LVMH",
-      "label": "LVMH",
-      "aliases": [
-        "History In"
-      ],
-      "entity_type": "unknown",
+      "overlay_type": "overlay_context_link",
       "source_page": "LVMH",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
+      "surface": "Bernard Arnault",
+      "target": "Bernard Arnault",
+      "relation": "mentioned_with",
+      "strength": "weak",
+      "trust": "weak_context_only",
       "snapshot_source_title": "LVMH",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/LVMH",
       "snapshot_retrieved_at": "2026-06-17T17:17:20Z",
       "snapshot_revision_id": 1359170740,
       "snapshot_raw_text_sha256": "439822b29406d40d1015734cf01478cbb398eafacc7bc694539fd57b07875656",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-374-overlay-000",
+      "snapshot_candidate_id": "snap-383-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-408-overlay-005",
-    "source_doc_title": "Martin Eberhard",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_context_link",
-      "source_page": "Martin Eberhard",
-      "surface": "Electric car",
-      "target": "Electric car",
-      "relation": "mentioned_with",
-      "strength": "weak",
-      "trust": "weak_context_only",
-      "snapshot_source_title": "Martin Eberhard",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Martin_Eberhard",
-      "snapshot_retrieved_at": "2026-06-17T17:08:46Z",
-      "snapshot_revision_id": 1336674443,
-      "snapshot_raw_text_sha256": "13e183e2661041c2d16f89003e66ffa13e0ee112de499c55f80a4c15de486786",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-408-overlay-005",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-448-overlay-000",
-    "source_doc_title": "Nasdaq",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Nasdaq",
-      "label": "Nasdaq",
-      "aliases": [],
-      "entity_type": "unknown",
-      "source_page": "Nasdaq",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Nasdaq",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Nasdaq",
-      "snapshot_retrieved_at": "2026-06-17T17:17:01Z",
-      "snapshot_revision_id": 1359846145,
-      "snapshot_raw_text_sha256": "625e6517fd6cd2a8ce338a6a0bf4ba43362e99e7d26c0a5332864a553e6694f8",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-448-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-448-overlay-002",
+    "candidate_id": "snap-459-overlay-002",
     "source_doc_title": "Nasdaq",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -650,64 +225,12 @@
       "snapshot_revision_id": 1359846145,
       "snapshot_raw_text_sha256": "625e6517fd6cd2a8ce338a6a0bf4ba43362e99e7d26c0a5332864a553e6694f8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-448-overlay-002",
+      "snapshot_candidate_id": "snap-459-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-467-overlay-000",
-    "source_doc_title": "New York Stock Exchange",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:New_York_Stock_Exchange",
-      "label": "New York Stock Exchange",
-      "aliases": [
-        "Exchange"
-      ],
-      "entity_type": "unknown",
-      "source_page": "New York Stock Exchange",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "New York Stock Exchange",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/New_York_Stock_Exchange",
-      "snapshot_retrieved_at": "2026-06-15T09:17:21Z",
-      "snapshot_revision_id": 1359317364,
-      "snapshot_raw_text_sha256": "a058737616744cb4e5d66613b398920471fd28206fd0cf3e69ad8419cc3eba02",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-467-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-493-overlay-000",
-    "source_doc_title": "PayPal",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:PayPal",
-      "label": "PayPal",
-      "aliases": [],
-      "entity_type": "unknown",
-      "source_page": "PayPal",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "PayPal",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/PayPal",
-      "snapshot_retrieved_at": "2026-06-17T17:22:04Z",
-      "snapshot_revision_id": 1359647615,
-      "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-493-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-493-overlay-003",
+    "candidate_id": "snap-508-overlay-003",
     "source_doc_title": "PayPal",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -725,12 +248,12 @@
       "snapshot_revision_id": 1359647615,
       "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-493-overlay-003",
+      "snapshot_candidate_id": "snap-508-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-493-overlay-010",
+    "candidate_id": "snap-508-overlay-010",
     "source_doc_title": "PayPal",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -748,66 +271,12 @@
       "snapshot_revision_id": 1359647615,
       "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-493-overlay-010",
+      "snapshot_candidate_id": "snap-508-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-504-overlay-000",
-    "source_doc_title": "Privately held company",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Privately_held_company",
-      "label": "Privately held company",
-      "aliases": [
-        "company"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Privately held company",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Privately held company",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Privately_held_company",
-      "snapshot_retrieved_at": "2026-06-17T17:12:17Z",
-      "snapshot_revision_id": 1356840178,
-      "snapshot_raw_text_sha256": "7d5256be38b6fff02cd4a85146b33bb5cdd635ecc19be11882f012c6f53a4b47",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-504-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-516-overlay-000",
-    "source_doc_title": "Reusable launch vehicle",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Reusable_launch_vehicle",
-      "label": "Reusable launch vehicle",
-      "aliases": [
-        "vehicle"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Reusable launch vehicle",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Reusable launch vehicle",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Reusable_launch_vehicle",
-      "snapshot_retrieved_at": "2026-06-17T17:08:32Z",
-      "snapshot_revision_id": 1358658592,
-      "snapshot_raw_text_sha256": "be57ef50f1e8bbe342f41ef15aba6fd8f0b9ddb5afad424d03d2dfe47c620485",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-516-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-516-overlay-013",
+    "candidate_id": "snap-534-overlay-012",
     "source_doc_title": "Reusable launch vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -821,16 +290,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Reusable launch vehicle",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Reusable_launch_vehicle",
-      "snapshot_retrieved_at": "2026-06-17T17:08:32Z",
-      "snapshot_revision_id": 1358658592,
-      "snapshot_raw_text_sha256": "be57ef50f1e8bbe342f41ef15aba6fd8f0b9ddb5afad424d03d2dfe47c620485",
+      "snapshot_retrieved_at": "2026-06-20T12:46:17Z",
+      "snapshot_revision_id": 1360129922,
+      "snapshot_raw_text_sha256": "ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-516-overlay-013",
+      "snapshot_candidate_id": "snap-534-overlay-012",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-516-overlay-014",
+    "candidate_id": "snap-534-overlay-013",
     "source_doc_title": "Reusable launch vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -844,44 +313,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Reusable launch vehicle",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Reusable_launch_vehicle",
-      "snapshot_retrieved_at": "2026-06-17T17:08:32Z",
-      "snapshot_revision_id": 1358658592,
-      "snapshot_raw_text_sha256": "be57ef50f1e8bbe342f41ef15aba6fd8f0b9ddb5afad424d03d2dfe47c620485",
+      "snapshot_retrieved_at": "2026-06-20T12:46:17Z",
+      "snapshot_revision_id": 1360129922,
+      "snapshot_raw_text_sha256": "ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-516-overlay-014",
+      "snapshot_candidate_id": "snap-534-overlay-013",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-548-overlay-000",
-    "source_doc_title": "Satellite Internet access",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Satellite_Internet_access",
-      "label": "Satellite Internet access",
-      "aliases": [
-        "History Following",
-        "access"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Satellite Internet access",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Satellite Internet access",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-      "snapshot_retrieved_at": "2026-06-17T17:08:30Z",
-      "snapshot_revision_id": 1359385224,
-      "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-548-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-548-overlay-016",
+    "candidate_id": "snap-565-overlay-015",
     "source_doc_title": "Satellite Internet access",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -895,16 +336,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Satellite Internet access",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-      "snapshot_retrieved_at": "2026-06-17T17:08:30Z",
+      "snapshot_retrieved_at": "2026-06-20T12:46:14Z",
       "snapshot_revision_id": 1359385224,
       "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-548-overlay-016",
+      "snapshot_candidate_id": "snap-565-overlay-015",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-548-overlay-019",
+    "candidate_id": "snap-565-overlay-018",
     "source_doc_title": "Satellite Internet access",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -918,39 +359,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Satellite Internet access",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-      "snapshot_retrieved_at": "2026-06-17T17:08:30Z",
+      "snapshot_retrieved_at": "2026-06-20T12:46:14Z",
       "snapshot_revision_id": 1359385224,
       "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-548-overlay-019",
+      "snapshot_candidate_id": "snap-565-overlay-018",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-572-overlay-003",
-    "source_doc_title": "SolarCity",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_context_link",
-      "source_page": "SolarCity",
-      "surface": "Solar energy",
-      "target": "Solar energy",
-      "relation": "mentioned_with",
-      "strength": "weak",
-      "trust": "weak_context_only",
-      "snapshot_source_title": "SolarCity",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/SolarCity",
-      "snapshot_retrieved_at": "2026-06-17T17:12:35Z",
-      "snapshot_revision_id": 1356428735,
-      "snapshot_raw_text_sha256": "b9041ffd928acf6b4c66c73e78b08de2bf3bd861d6010857fcb890c11159257e",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-572-overlay-003",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-586-overlay-005",
+    "candidate_id": "snap-602-overlay-004",
     "source_doc_title": "Space.com",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -968,12 +386,12 @@
       "snapshot_revision_id": 1287826411,
       "snapshot_raw_text_sha256": "08466a840f0bc1a0630ce79e225963f54c1f9202cf455750420b498b48af901c",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-586-overlay-005",
+      "snapshot_candidate_id": "snap-602-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-590-overlay-018",
+    "candidate_id": "snap-606-overlay-015",
     "source_doc_title": "SpaceX",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -991,39 +409,12 @@
       "snapshot_revision_id": 1359822755,
       "snapshot_raw_text_sha256": "a2f6b45b5d10bd4a5a97f32a2e4f5938a86e2910574a93f8f247c381af260779",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-590-overlay-018",
+      "snapshot_candidate_id": "snap-606-overlay-015",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-597-overlay-000",
-    "source_doc_title": "SpaceX Dragon 2",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:SpaceX_Dragon_2",
-      "label": "SpaceX Dragon 2",
-      "aliases": [
-        "2"
-      ],
-      "entity_type": "unknown",
-      "source_page": "SpaceX Dragon 2",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "SpaceX Dragon 2",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/SpaceX_Dragon_2",
-      "snapshot_retrieved_at": "2026-06-17T17:10:41Z",
-      "snapshot_revision_id": 1359822586,
-      "snapshot_raw_text_sha256": "968e624f5e430d32d966f45e9e9e3b36f170a8ed084fe8e0f33cf7edf41528d8",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-597-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-597-overlay-004",
+    "candidate_id": "snap-612-overlay-004",
     "source_doc_title": "SpaceX Dragon 2",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1037,44 +428,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "SpaceX Dragon 2",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/SpaceX_Dragon_2",
-      "snapshot_retrieved_at": "2026-06-17T17:10:41Z",
-      "snapshot_revision_id": 1359822586,
+      "snapshot_retrieved_at": "2026-06-20T12:49:04Z",
+      "snapshot_revision_id": 1360178281,
       "snapshot_raw_text_sha256": "968e624f5e430d32d966f45e9e9e3b36f170a8ed084fe8e0f33cf7edf41528d8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-597-overlay-004",
+      "snapshot_candidate_id": "snap-612-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-599-overlay-000",
-    "source_doc_title": "SpaceX Raptor",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:SpaceX_Raptor",
-      "label": "SpaceX Raptor",
-      "aliases": [
-        "Design Raptor",
-        "Raptor"
-      ],
-      "entity_type": "unknown",
-      "source_page": "SpaceX Raptor",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "SpaceX Raptor",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/SpaceX_Raptor",
-      "snapshot_retrieved_at": "2026-06-17T17:22:13Z",
-      "snapshot_revision_id": 1358679944,
-      "snapshot_raw_text_sha256": "05ee62403cacbbdc32f1bb14963636192a359bc6b79d241261cbebdd8d16f27b",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-599-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-599-overlay-006",
+    "candidate_id": "snap-614-overlay-004",
     "source_doc_title": "SpaceX Raptor",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1092,12 +455,12 @@
       "snapshot_revision_id": 1358679944,
       "snapshot_raw_text_sha256": "05ee62403cacbbdc32f1bb14963636192a359bc6b79d241261cbebdd8d16f27b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-599-overlay-006",
+      "snapshot_candidate_id": "snap-614-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-610-overlay-009",
+    "candidate_id": "snap-625-overlay-009",
     "source_doc_title": "Starlink",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1115,66 +478,12 @@
       "snapshot_revision_id": 1359590107,
       "snapshot_raw_text_sha256": "0cd6f6c38602011e7fdbc2c3e213ccbcdb127bc186050c72414cc75ac95d3e42",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-610-overlay-009",
+      "snapshot_candidate_id": "snap-625-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-626-overlay-000",
-    "source_doc_title": "Sustainable energy",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Sustainable_energy",
-      "label": "Sustainable energy",
-      "aliases": [
-        "energy"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Sustainable energy",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Sustainable energy",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Sustainable_energy",
-      "snapshot_retrieved_at": "2026-06-17T17:08:43Z",
-      "snapshot_revision_id": 1357725919,
-      "snapshot_raw_text_sha256": "83989647c115fa76be17a112181fc16b5ba44c3f32a6c2368d436dfa7b9a7371",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-626-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-629-overlay-000",
-    "source_doc_title": "Tesla, Inc.",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Tesla,_Inc.",
-      "label": "Tesla, Inc.",
-      "aliases": [
-        "Inc."
-      ],
-      "entity_type": "unknown",
-      "source_page": "Tesla, Inc.",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Tesla, Inc.",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla,_Inc.",
-      "snapshot_retrieved_at": "2026-06-17T20:43:06Z",
-      "snapshot_revision_id": 1359041831,
-      "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-629-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-629-overlay-008",
+    "candidate_id": "snap-650-overlay-006",
     "source_doc_title": "Tesla, Inc.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1192,12 +501,12 @@
       "snapshot_revision_id": 1359041831,
       "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-629-overlay-008",
+      "snapshot_candidate_id": "snap-650-overlay-006",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-629-overlay-016",
+    "candidate_id": "snap-650-overlay-014",
     "source_doc_title": "Tesla, Inc.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1215,35 +524,12 @@
       "snapshot_revision_id": 1359041831,
       "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-629-overlay-016",
+      "snapshot_candidate_id": "snap-650-overlay-014",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-633-overlay-003",
-    "source_doc_title": "Tesla Energy",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_context_link",
-      "source_page": "Tesla Energy",
-      "surface": "Solar energy",
-      "target": "Solar energy",
-      "relation": "mentioned_with",
-      "strength": "weak",
-      "trust": "weak_context_only",
-      "snapshot_source_title": "Tesla Energy",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Energy",
-      "snapshot_retrieved_at": "2026-06-17T17:08:28Z",
-      "snapshot_revision_id": 1354226973,
-      "snapshot_raw_text_sha256": "56fe78444492af8d17d6e35e478a4572380c86dcfa4adbcb78aef24867bc921f",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-633-overlay-003",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-633-overlay-005",
+    "candidate_id": "snap-653-overlay-003",
     "source_doc_title": "Tesla Energy",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1257,16 +543,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Tesla Energy",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Tesla_Energy",
-      "snapshot_retrieved_at": "2026-06-17T17:08:28Z",
+      "snapshot_retrieved_at": "2026-06-20T12:46:11Z",
       "snapshot_revision_id": 1354226973,
       "snapshot_raw_text_sha256": "56fe78444492af8d17d6e35e478a4572380c86dcfa4adbcb78aef24867bc921f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-633-overlay-005",
+      "snapshot_candidate_id": "snap-653-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-642-overlay-010",
+    "candidate_id": "snap-659-overlay-010",
     "source_doc_title": "The Boring Company",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1284,93 +570,12 @@
       "snapshot_revision_id": 1359791821,
       "snapshot_raw_text_sha256": "2a982c86dfd80cce0644b4065e6c34161fdffbfa5ee582402f7653e495198eb2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-642-overlay-010",
+      "snapshot_candidate_id": "snap-659-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-680-overlay-000",
-    "source_doc_title": "Vandenberg Space Force Base",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Vandenberg_Space_Force_Base",
-      "label": "Vandenberg Space Force Base",
-      "aliases": [
-        "Base"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Vandenberg Space Force Base",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Vandenberg Space Force Base",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Vandenberg_Space_Force_Base",
-      "snapshot_retrieved_at": "2026-06-17T17:20:27Z",
-      "snapshot_revision_id": 1357782503,
-      "snapshot_raw_text_sha256": "ab68b62709f65cfd9ff61793df0fd05f44617591f472fdba62f894cfe47b767b",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-680-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-708-overlay-000",
-    "source_doc_title": "X (social network)",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:X_(social_network)",
-      "label": "X (social network)",
-      "aliases": [
-        "network)"
-      ],
-      "entity_type": "unknown",
-      "source_page": "X (social network)",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "X (social network)",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/X_(social_network)",
-      "snapshot_retrieved_at": "2026-06-17T17:19:03Z",
-      "snapshot_revision_id": 1359763726,
-      "snapshot_raw_text_sha256": "098995c8df33c594c09671062bf04e6aed7841dfffffca6a2f53262cccf2b8f7",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-708-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-709-overlay-000",
-    "source_doc_title": "X Corp.",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:X_Corp.",
-      "label": "X Corp.",
-      "aliases": [
-        "Corp."
-      ],
-      "entity_type": "unknown",
-      "source_page": "X Corp.",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "X Corp.",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/X_Corp.",
-      "snapshot_retrieved_at": "2026-06-17T20:44:29Z",
-      "snapshot_revision_id": 1359349560,
-      "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-709-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-709-overlay-003",
+    "candidate_id": "snap-726-overlay-003",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1388,12 +593,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-709-overlay-003",
+      "snapshot_candidate_id": "snap-726-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-709-overlay-009",
+    "candidate_id": "snap-726-overlay-009",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1411,12 +616,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-709-overlay-009",
+      "snapshot_candidate_id": "snap-726-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-709-overlay-010",
+    "candidate_id": "snap-726-overlay-010",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1434,39 +639,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-709-overlay-010",
+      "snapshot_candidate_id": "snap-726-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-714-overlay-000",
-    "source_doc_title": "Zip2",
-    "source_kind": "fresh_snapshot",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_entity",
-      "entity_id": "wiki:Zip2",
-      "label": "Zip2",
-      "aliases": [
-        "History According"
-      ],
-      "entity_type": "unknown",
-      "source_page": "Zip2",
-      "source_candidate_type": "entity_card",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "snapshot_source_title": "Zip2",
-      "snapshot_source_url": "https://en.wikipedia.org/wiki/Zip2",
-      "snapshot_retrieved_at": "2026-06-17T17:20:51Z",
-      "snapshot_revision_id": 1359656073,
-      "snapshot_raw_text_sha256": "70cf7360b286b07359c1a353567adde249c80b05c31058c3f312f3975582a102",
-      "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-714-overlay-000",
-      "pump_source_kind": "fresh_snapshot"
-    }
-  },
-  {
-    "candidate_id": "snap-714-overlay-007",
+    "candidate_id": "snap-731-overlay-007",
     "source_doc_title": "Zip2",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1484,12 +662,12 @@
       "snapshot_revision_id": 1359656073,
       "snapshot_raw_text_sha256": "70cf7360b286b07359c1a353567adde249c80b05c31058c3f312f3975582a102",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-714-overlay-007",
+      "snapshot_candidate_id": "snap-731-overlay-007",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06308",
+    "candidate_id": "fresh_snapshot-06152",
     "source_doc_title": "July",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1512,7 +690,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06309",
+    "candidate_id": "fresh_snapshot-06153",
     "source_doc_title": "June",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1535,7 +713,30 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06390",
+    "candidate_id": "fresh_snapshot-06212",
+    "source_doc_title": "Oracle Rdb",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Oracle Rdb",
+      "definition": "relational database management system for the OpenVMS operating system",
+      "predicate": "is_a",
+      "source_page": "Oracle Rdb",
+      "evidence_text": "Oracle Rdb is a relational database management system for the OpenVMS operating system.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Oracle Rdb is a relational database management system for the OpenVMS operating system.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-06236",
     "source_doc_title": "Rocket Science Games",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1558,7 +759,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06396",
+    "candidate_id": "fresh_snapshot-06242",
     "source_doc_title": "Royal Mail Steam Packet Company",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1581,7 +782,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06411",
+    "candidate_id": "fresh_snapshot-06257",
     "source_doc_title": "Saturn",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1604,7 +805,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06425",
+    "candidate_id": "fresh_snapshot-06271",
     "source_doc_title": "Silicon Valley",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1627,7 +828,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00006",
+    "candidate_id": "fresh_relation-00019",
+    "source_doc_title": "Anousheh Ansari",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Telecom Technologies",
+      "predicate": "owned_by",
+      "object": "Sonus Networks",
+      "source_page": "Anousheh Ansari",
+      "evidence_text": "Telecom Technologies was acquired by Sonus Networks, IncInc\u0000 in 2001 in a stock-for-stock transaction for 10.8 million shares of Sonus stock.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:76d54c92:ba17c0b1",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00030",
     "source_doc_title": "Control Wheel Steering",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1646,7 +866,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00007",
+    "candidate_id": "fresh_relation-00040",
     "source_doc_title": "Berkeley DB",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1665,26 +885,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00011",
-    "source_doc_title": "Bloomberg UK",
+    "candidate_id": "fresh_relation-00043",
+    "source_doc_title": "Berkshire Hathaway",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
       "overlay_type": "overlay_relation",
-      "subject": "Bloomberg News",
-      "predicate": "is_a",
-      "object": "Bloomberg News",
-      "source_page": "Bloomberg UK",
-      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.PL.P\u0000 Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "subject": "National Indemnity",
+      "predicate": "founded_by",
+      "object": "Jack Dabney Ringwalt",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "National Indemnity was founded in 1940 by Jack Dabney Ringwalt.",
       "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "pump_relation_candidate_id": "rv2:5f2b497b:5821616c",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:01a52bde",
       "pump_source_kind": "fresh_relation"
     }
   },
   {
-    "candidate_id": "fresh_relation-00014",
+    "candidate_id": "fresh_relation-00068",
     "source_doc_title": "Blue Origin NS-18",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1703,7 +923,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00016",
+    "candidate_id": "fresh_relation-00070",
     "source_doc_title": "Blue Origin NS-20",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1722,7 +942,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00017",
+    "candidate_id": "fresh_relation-00071",
     "source_doc_title": "Blue Origin NS-21",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1741,26 +961,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00018",
-    "source_doc_title": "CBS News",
-    "source_kind": "fresh_relation",
-    "reason": "duplicate_existing_or_pump_delta",
-    "overlay_item": {
-      "overlay_type": "overlay_relation",
-      "subject": "Bloomberg News",
-      "predicate": "is_a",
-      "object": "Bloomberg News",
-      "source_page": "CBS News",
-      "evidence_text": "CBS News is the news division of the American television broadcaster CBS headquartered in New York City.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "pump_relation_candidate_id": "rv2:2f5f7a78:5821616c",
-      "pump_source_kind": "fresh_relation"
-    }
-  },
-  {
-    "candidate_id": "fresh_relation-00021",
+    "candidate_id": "fresh_relation-00092",
     "source_doc_title": "Communications Satellite",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1779,7 +980,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00024",
+    "candidate_id": "fresh_relation-00110",
     "source_doc_title": "electric cars",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1798,27 +999,46 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00029",
-    "source_doc_title": "ISPs",
+    "candidate_id": "fresh_relation-00139",
+    "source_doc_title": "Gigafactory New York",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
       "overlay_type": "overlay_relation",
-      "subject": "Internet service provider",
-      "predicate": "is_a",
-      "object": "Internet service provider",
-      "source_page": "ISPs",
-      "evidence_text": "Wireless ISP A wireless Internet service provider (WISP) is an Internet service provider with a network based on wireless networking.",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Gigafactory New York",
+      "evidence_text": "SolarCity purchased Silevo in 2014, and SolarCity was acquired by Tesla in 2016.",
       "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "pump_relation_candidate_id": "rv2:b4d5712a:11e1115f",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:67d751d0:fbc87a22",
       "pump_source_kind": "fresh_relation"
     }
   },
   {
-    "candidate_id": "fresh_relation-00030",
-    "source_doc_title": "Bezos",
+    "candidate_id": "fresh_relation-00162",
+    "source_doc_title": "Intel Corporation",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "Technology company",
+      "source_page": "Intel Corporation",
+      "evidence_text": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a691de6e:77901ab7",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00177",
+    "source_doc_title": "Jeff Bezos",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
@@ -1826,17 +1046,55 @@
       "subject": "Jeff Bezos",
       "predicate": "founded",
       "object": "Amazon",
-      "source_page": "Bezos",
+      "source_page": "Jeff Bezos",
       "evidence_text": "Three years after Bezos founded Amazon, he took it public with an initial public offering (IPO).",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "rv2:6879f50f:ec86b3cc",
+      "pump_relation_candidate_id": "rv2:ea93df35:ec86b3cc",
       "pump_source_kind": "fresh_relation"
     }
   },
   {
-    "candidate_id": "fresh_relation-00032",
+    "candidate_id": "fresh_relation-00195",
+    "source_doc_title": "Land Rover",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tata Motors",
+      "predicate": "founded",
+      "object": "Jaguar Land Rover Limited",
+      "source_page": "Land Rover",
+      "evidence_text": "Tata Motors era On 18 January 2008, Tata Motors, a part of the Tata Group, established Jaguar Land Rover Limited as a British-registered and wholly owned subsidiary.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f2467551:dedabe49",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00207",
+    "source_doc_title": "Lyndon Rive",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity",
+      "predicate": "is_a",
+      "object": "Internet service provider",
+      "source_page": "Lyndon Rive",
+      "evidence_text": "SolarCity was a provider of photovoltaic systems and related services.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:58aaeb0e:55feae47",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00209",
     "source_doc_title": "MacKenzie Scott",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1855,7 +1113,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00034",
+    "candidate_id": "fresh_relation-00215",
+    "source_doc_title": "Media Matters",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "David Brock",
+      "predicate": "founded",
+      "object": "Social media",
+      "source_page": "Media Matters",
+      "evidence_text": "Media Matters Action Network In 2010, David Brock established Media Matters Action Network, a 501(c)(4), to track conservative politicians and organizations.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ae74393b:bfa5eaa3",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00244",
     "source_doc_title": "Nasdaq Stock Market",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1874,7 +1151,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00037",
+    "candidate_id": "fresh_relation-00260",
     "source_doc_title": "OpenAI Global",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1893,7 +1170,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00042",
+    "candidate_id": "fresh_relation-00286",
+    "source_doc_title": "Reusable rocket",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Starship",
+      "source_page": "Reusable rocket",
+      "evidence_text": "SpaceX was also developing the fully reusable Starship launch system.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ee3f5c86:736d392b",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00293",
     "source_doc_title": "Rockets",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1912,7 +1208,45 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00045",
+    "candidate_id": "fresh_relation-00313",
+    "source_doc_title": "Saturn Corporation",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "Aerospace manufacturer",
+      "source_page": "Saturn Corporation",
+      "evidence_text": "The Saturn Corporation, also known as Saturn LLC, was an American automobile manufacturer, a registered trademark established on January 7, 1985, as a subsidiary of General Motors.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:ef21228b:1c554bfa",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00314",
+    "source_doc_title": "Saudi Arabia",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Saudi Arabia",
+      "predicate": "founded_by",
+      "object": "King Abdulaziz",
+      "source_page": "Saudi Arabia",
+      "evidence_text": "Saudi Arabia was founded in 1932 by King Abdulaziz, who united Hejaz, Najd, parts of Eastern Arabia and South Arabia (Asir) into a single state through a series of military and political campaigns beginning in 1901.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:300dfe91:750fe22d",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00320",
     "source_doc_title": "Sierra Nevada Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1931,26 +1265,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00046",
-    "source_doc_title": "Sirius Satellite Radio",
+    "candidate_id": "fresh_relation-00331",
+    "source_doc_title": "SolarCity Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
       "overlay_type": "overlay_relation",
-      "subject": "Satellite internet",
-      "predicate": "is_a",
-      "object": "Satellite internet",
-      "source_page": "Sirius Satellite Radio",
-      "evidence_text": "Sirius Internet Radio is an Internet-only subscription, allowing worldwide listeners to listen to the content without having to purchase a satellite radio receiver, the internet subscription can also be heard on Wi-Fi-enabled Internet radio for consumer and business purposes such as those designed by Grace Digital.",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "SolarCity Corporation",
+      "evidence_text": "Tesla acquired SolarCity in 2016, at a cost of approximately $2.6 billion (equivalent to $3.5 billion in 2025) and reorganized its solar business into Tesla Energy.",
       "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "pump_relation_candidate_id": "rv2:95b97c77:04577c9b",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b9041ffd:fbc87a22",
       "pump_source_kind": "fresh_relation"
     }
   },
   {
-    "candidate_id": "fresh_relation-00049",
+    "candidate_id": "fresh_relation-00341",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1969,7 +1303,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00050",
+    "candidate_id": "fresh_relation-00342",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1988,7 +1322,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00051",
+    "candidate_id": "fresh_relation-00343",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -2007,7 +1341,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00052",
+    "candidate_id": "fresh_relation-00344",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -2026,7 +1360,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00054",
+    "candidate_id": "fresh_relation-00355",
+    "source_doc_title": "Spaceflight",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "Rocket",
+      "source_page": "Spaceflight",
+      "evidence_text": "SpaceX is now developing a fully reusable super heavy lift rocket known as Starship, with the goal of drastically reducing the price of space exploration.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:41973567:32f8bb67",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00357",
     "source_doc_title": "SpaceX Starlink",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -2045,7 +1398,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00055",
+    "candidate_id": "fresh_relation-00358",
     "source_doc_title": "SpaceX Starlink",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -2064,7 +1417,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00056",
+    "candidate_id": "fresh_relation-00374",
     "source_doc_title": "Tesla, Inc",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -2083,7 +1436,64 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00064",
+    "candidate_id": "fresh_relation-00379",
+    "source_doc_title": "Tesla Energy",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Tesla Energy",
+      "evidence_text": "In November 2016, Tesla acquired SolarCity, in a US$2.6 billion deal, and added solar energy generation to Tesla Energy's business.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:56fe7844:fbc87a22",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00411",
+    "source_doc_title": "United Aircraft Corporation",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "United Aircraft Corporation",
+      "evidence_text": "On 25 October 2018, the United Aircraft Corporation was acquired from the Federal Agency for State Property Management by Russian conglomerate state corporation Rostec, with a turnover cost over one billion rubles (US$15 million).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:16485cd7:9b3560bd",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00427",
+    "source_doc_title": "Virgin Galactic",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Scaled Composites",
+      "predicate": "owned_by",
+      "object": "Northrop Grumman",
+      "source_page": "Virgin Galactic",
+      "evidence_text": "In 2012, after Northrop Grumman acquired Scaled Composites, Virgin Galactic acquired the remaining 30% of The Spaceship Company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1043f9dc:7ee25176",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00442",
     "source_doc_title": "Twitter Blue",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",

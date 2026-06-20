@@ -1,7 +1,7 @@
 # San Francisco
 
 Source: https://en.wikipedia.org/wiki/San_Francisco
-Retrieved at: 2026-06-17T17:09:10Z
+Retrieved at: 2026-06-20T12:48:04Z
 Revision ID: 1359500371
 Raw text SHA256: 08d1f0dd911f1163da4bce1277cdaf13daea922451c1ed433df69bf427d392b0
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

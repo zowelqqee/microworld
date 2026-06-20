@@ -68,6 +68,12 @@ class MultihopPlanner:
             return self._audit(q, _AUDIT_MISSING_ENDPOINT, "missing_endpoint")
 
         paths = self._graph.find_2hop_paths(a, c)
+        reversed_search = False
+        if not paths:
+            # Try reversed direction: C → B → A. Safety gates apply identically.
+            paths = self._graph.find_2hop_paths(c, a)
+            reversed_search = bool(paths)
+
         if not paths:
             return self._audit(q, _AUDIT_NO_PATH, "no_path")
 
@@ -77,11 +83,20 @@ class MultihopPlanner:
             return self._audit(q, f"path_blocked: {reason}", "blocked")
 
         label = chain_label(path.hop1.predicate, path.hop2.predicate)
+        # For a reversed search the found path is C→B→A; use the canonical
+        # endpoint names from the path so the answer reads "A is connected to C
+        # through B" while the edge clauses describe the actual found direction.
+        if reversed_search:
+            render_a = path.hop2.object   # canonical display name of original A
+            render_c = path.hop1.subject  # canonical display name of original C
+        else:
+            render_a = path.hop1.subject
+            render_c = path.hop2.object
         return MultihopPlan(
             question=q, decision="answer", audit_reason=None,
             path=path, chain_label=label,
             render_args={
-                "a": path.hop1.subject, "b": path.via_node, "c": path.hop2.object,
+                "a": render_a, "b": path.via_node, "c": render_c,
                 "hop1": path.hop1, "hop2": path.hop2,
             },
             evidence=_make_evidence(path),

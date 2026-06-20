@@ -1,7 +1,7 @@
 # Electric vehicle
 
 Source: https://en.wikipedia.org/wiki/Electric_vehicle
-Retrieved at: 2026-06-17T17:10:30Z
+Retrieved at: 2026-06-20T12:52:03Z
 Revision ID: 1359848574
 Raw text SHA256: 5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

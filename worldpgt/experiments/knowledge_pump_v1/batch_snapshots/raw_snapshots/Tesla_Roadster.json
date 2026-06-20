@@ -6,7 +6,7 @@
   "timestamp": "2025-02-27T19:17:12Z",
   "source_url": "https://en.wikipedia.org/wiki/Tesla_Roadster",
   "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Tesla+Roadster",
-  "retrieved_at": "2026-06-17T17:08:49Z",
+  "retrieved_at": "2026-06-20T12:47:04Z",
   "raw_text": "Tesla Roadster may refer to:\n\nTesla Roadster (first generation), an electric sports car produced by Tesla Motors between 2008 and 2012\nElon Musk's Tesla Roadster, a first generation Tesla Roadster that was launched into space in February 2018\nTesla Roadster (second generation), an upcoming sports car in development by Tesla, Inc.",
   "raw_text_sha256": "b81b12c24fe3482732fc3c30d290397e2fd910b62c102ae16ef7e0e7344e983e",
   "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",

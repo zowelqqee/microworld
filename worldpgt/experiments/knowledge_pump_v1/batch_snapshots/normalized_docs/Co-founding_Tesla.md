@@ -1,7 +1,7 @@
-# Co-founding Tesla
+# co-founding Tesla
 
-Source: https://en.wikipedia.org/wiki/Co-founding_Tesla
-Retrieved at: 2026-06-17T17:08:38Z
+Source: https://en.wikipedia.org/wiki/co-founding_Tesla
+Retrieved at: 2026-06-20T12:46:30Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

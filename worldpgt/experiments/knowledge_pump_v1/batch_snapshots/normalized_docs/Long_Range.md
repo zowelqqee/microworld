@@ -1,7 +1,7 @@
 # Long Range
 
 Source: https://en.wikipedia.org/wiki/Long_Range
-Retrieved at: 2026-06-17T17:10:32Z
+Retrieved at: 2026-06-20T12:52:05Z
 Revision ID: 1351431789
 Raw text SHA256: bed879a1cbeb5696bc86c59f0757b6d0356f3de432f95818b8e39af97b97951e
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

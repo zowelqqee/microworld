@@ -1,0 +1,36 @@
+# Commercial astronaut
+
+Source: https://en.wikipedia.org/wiki/Commercial_astronaut
+Retrieved at: 2026-06-20T08:06:04Z
+Revision ID: 1359118074
+Raw text SHA256: 756435e51bce341f9b253a98e58748ed1c3133c415b0f72f4a1d8294d40240c9
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+A commercial astronaut is a person who is a crew member of a privately-owned spacecraft. The designation was established by the Federal Aviation Administration (FAA) in 2004 to promote innovations in commercial spaceflight. FAA was awarding wings to people that flew into space. The program was ended in 2022 with the rise of commercial space tourism that involved spacecraft that are either ground-controlled or autonomously controlled entirely by on-board computers; people flying into space as such non-crew members are designated as spaceflight participants instead.
+
+Criteria
+The definition of "astronaut" and the criteria for determining who has achieved human spaceflight vary. The Fédération Aéronautique Internationale defines spaceflight as any flight over 100 kilometers (62 mi) of altitude. In the United States, professional, military, and commercial astronauts who travel above an altitude of 50 miles (80 km) are eligible to be awarded astronaut wings. Until 2003, professional space travelers were sponsored and trained exclusively by governments, whether by the military or by civilian space agencies. However, with the first sub-orbital flight by the privately funded Scaled Composites Tier One program in 2004, the commercial astronaut category was created. The next commercial program to achieve sub-orbital flight was Virgin Galactic's SpaceShipTwo program in 2018.  Criteria for commercial astronaut status in other countries have yet to be made public.
+By 2021, with the substantial increase in commercial spaceflight—with the first suborbital passenger flight by both Virgin Galactic's SpaceShipTwo and Blue Origin's New Shepard in July, and with SpaceX's first orbital private spaceflight completed on September 18, 2021—the roles and functions of people going to space are expanding. Criteria for the broader designation "astronaut" has become open to interpretation. Even in the US alone, the "FAA, U.S. military and NASA all have different definitions of what it means to be designated as an 'astronaut' and none of them fit perfectly with the way Blue Origin or Virgin Galactic are doing business." It is even possible that by the FAA commercial astronaut definition, one company's July flight participants may receive FAA commercial astronaut wings while the other will not. SpaceNews reported that "Blue Origin awarded their version of astronaut wings" to the four participants of the first Blue Origin passenger flight but was unclear on whether these included the FAA astronaut designation.
+
+FAA Commercial Astronaut rating
+With the advent of private commercial space flight ventures in the U.S., the FAA has been faced with the task of developing a certification process for the pilots of commercial spacecraft. The Commercial Space Launch Act of 1984 established the FAA's Office of Commercial Space Transportation and required companies to obtain a launch license for vehicles, but at the time crewed commercial flight – and the licensing of crewmembers – was not considered. The Commercial Space Launch Amendments Act has led to the issuance of draft guidelines by the FAA in February 2005 for the administration of vehicle and crew certifications. Currently, the FAA has not issued formal regulatory guidance for the issuance of a Commercial Astronaut Certificate, but as an interim measure, has established the practice of awarding "Commercial Astronaut Wings" to commercial pilots who have demonstrated the requisite proficiency. The content of 14 CFR Part 460 implies that an instrument rating and second-class medical certificate issued within the 12 months prior to the proposed qualifying flight will be included as a minimum standard.
+The FAA's Commercial Astronaut Wings Program is designed to recognize flight crewmembers who further the FAA's mission to promote the safety of vehicles designed to carry humans. Astronaut Wings are given to flight crew who have demonstrated a safe flight to and return from space on an FAA/AST licensed mission. To be eligible for FAA Commercial Space Astronaut Wings, commercial launch crewmembers must meet the following criteria:
+
+Meet the requirements for flight crew qualifications and training under Title 14 of the Code of Federal Regulations (14 CFR) part 460.
+Demonstrated flight beyond 50 statute miles above the surface of the Earth as flight crew on an FAA/AST licensed or permitted launch or reentry vehicle.
+Demonstrated activities during flight that were essential to public safety, or contributed to human spaceflight safety.
+
+Astronaut Wings
+
+The emblem for the first set of FAA Commercial Astronaut Wings issued in 2004 has in its center a green globe on a blue background, with the three-prong astronaut symbol superimposed on top. In yellow block text around the globe are the words "Commercial Space Transportation" in all capital letters. In a gold ring outside the blue are the words "Department of Transportation Federal Aviation Administration" in black. Beginning with the wings awarded for flights in 2018, the design has been simplified to be the astronaut symbol, surrounded by the words "Commercial Space Transportation", all in gold on a black background. In December 2021, the FAA reconsidered the Commercial Astronaut Wings program as commercial space travel increased, and decided to end the program in January 2022.  Despite this, the FAA will still continue to recognize future commercial astronauts and will maintain a list of commercial astronauts who have flown to an altitude of 50 miles or higher.
+
+List of commercial astronauts
+Beginning in January 2022, the FAA started to maintain a list of individuals who have received FAA human spaceflight recognition. As of July 2022, there are the names of 45 individuals on that list that qualify for FAA human spaceflight recognition, but only 30 individuals on that list received FAA Commercial Space Astronaut Wings.
+
+See also
+
+References
+
+External links
+FAA Commercial Human Spaceflight Recognition (includes list of commercial astronauts)

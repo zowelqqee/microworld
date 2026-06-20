@@ -96,6 +96,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "I-Pace",
+      "predicate": "developed_by",
+      "object": "Graz",
+      "source_page": "Jaguar I-Pace",
+      "evidence_text": "The I-Pace is built by contract manufacturer Magna Steyr in Graz, Austria, and the production version of the I-Pace was revealed in Graz on 1 March 2018.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The I-Pace is built by contract manufacturer Magna Steyr in Graz, Austria, and the production version of the I-Pace was revealed in Graz on 1 March 2018.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Affirm",
       "predicate": "developed_by",
       "object": "Levchin",
@@ -170,6 +190,54 @@
       "confidence_label": "pattern_explicit",
       "evidence_span": "The GAO is headquartered in Washington, D.C., and maintains an additional 11 field offices around the country.",
       "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "H - E - B",
+      "predicate": "headquartered_in",
+      "object": "San Antonio",
+      "source_page": "San Antonio",
+      "evidence_text": "H-E-B, the 5th-largest private company in the U.SU.S\u0000, is also headquartered in San Antonio.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a5e0091b:394c493c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The North American Development Bank",
+      "predicate": "headquartered_in",
+      "object": "San Antonio",
+      "source_page": "San Antonio",
+      "evidence_text": "The North American Development Bank, a development finance institution jointly held by the governments of the U.SU.S\u0000 and Mexico, is headquartered in San Antonio as well.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a5e0091b:af0126b5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sirius Satellite Radio IncInc\u0000",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "Sirius Satellite Radio",
+      "evidence_text": "Sirius Satellite Radio IncInc\u0000 was headquartered in New York City, and operated smaller studios in Los Angeles and Memphis.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:95b97c77:1cbb8c9f",
+      "pump_source_kind": "fresh_relation"
     },
     "reason": "headquartered_in_quarantine_default"
   }

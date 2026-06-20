@@ -1,28 +1,30 @@
 {
   "precision_v2_enabled": true,
-  "precision_v2_answerable_before_count": 981,
-  "precision_v2_answerable_after_count": 927,
-  "precision_v2_relation_before_count": 78,
-  "precision_v2_relation_after_count": 58,
-  "precision_v2_definition_before_count": 240,
-  "precision_v2_definition_after_count": 206,
-  "precision_v2_rejected_count": 53,
-  "precision_v2_quarantined_count": 1,
+  "precision_v2_answerable_before_count": 1143,
+  "precision_v2_answerable_after_count": 1091,
+  "precision_v2_relation_before_count": 220,
+  "precision_v2_relation_after_count": 198,
+  "precision_v2_definition_before_count": 238,
+  "precision_v2_definition_after_count": 208,
+  "precision_v2_rejected_count": 50,
+  "precision_v2_quarantined_count": 2,
   "precision_v2_rejection_by_reason": {
     "appositive_alias_subject": 9,
     "dangling_comma_subject": 9,
-    "definition_nationality_plus_single_noun": 9,
+    "definition_nationality_plus_single_noun": 7,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
+    "founded_by_truncated_object": 1,
     "fragment_prefix_subject": 5,
     "geopolitical_subject_corporate_predicate": 1,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 12
+    "truncated_definition": 10
   },
   "precision_v2_quarantine_by_reason": {
+    "object_has_descriptive_tail": 1,
     "volatile_predicate": 1
   }
 }

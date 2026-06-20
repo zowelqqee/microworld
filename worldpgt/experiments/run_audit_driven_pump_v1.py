@@ -116,6 +116,7 @@ def main(argv=None) -> int:
         period_days=args.period_days,
         overlay_path=_PUMP_OVERLAY,
         current_date=args.current_date,
+        require_acquisition_eligibility=True,
     )
     _print_report_summary(report)
 

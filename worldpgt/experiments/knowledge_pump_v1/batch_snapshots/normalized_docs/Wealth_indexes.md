@@ -1,7 +1,7 @@
 # Wealth indexes
 
 Source: https://en.wikipedia.org/wiki/Wealth_indexes
-Retrieved at: 2026-06-17T17:09:54Z
+Retrieved at: 2026-06-20T12:50:07Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -1,7 +1,7 @@
-# Financial coverage
+# financial coverage
 
-Source: https://en.wikipedia.org/wiki/Financial_coverage
-Retrieved at: 2026-06-17T17:09:43Z
+Source: https://en.wikipedia.org/wiki/financial_coverage
+Retrieved at: 2026-06-20T12:49:44Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -7,9 +7,12 @@ resolve explicit references without changing accepted memory or overlays.
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 
 from worldpgt.entity_qa.types import SemanticQuery
+
+_log = logging.getLogger(__name__)
 
 
 @dataclass
@@ -44,14 +47,35 @@ class ConversationContext:
                 return turn.relation_type
         return None
 
+    def append_turn(self, turn: "ConversationTurn") -> None:
+        _log.debug(
+            "context.append_turn #%d decision=%s primary=%r mentioned=%r",
+            len(self.turns), turn.decision, turn.primary_entity, turn.mentioned_entities,
+        )
+        self.turns.append(turn)
+
     def entities_in_window(self, n: int = 3) -> list[str]:
+        # Audit turns don't count toward n — confirmed entities stay in window
+        # across any number of intervening audit turns.
         seen: set[str] = set()
-        out: list[str] = []
-        for turn in self.turns[-n:]:
+        per_turn: list[list[str]] = []
+        confirmed_count = 0
+        for turn in reversed(self.turns):
+            if turn.decision == "audit":
+                continue
+            if confirmed_count >= n:
+                break
+            confirmed_count += 1
+            turn_ents: list[str] = []
             for entity in [turn.primary_entity, *turn.mentioned_entities]:
                 if not entity or entity in seen:
                     continue
                 seen.add(entity)
-                out.append(entity)
+                turn_ents.append(entity)
+            per_turn.append(turn_ents)
+        out: list[str] = []
+        for turn_ents in reversed(per_turn):
+            out.extend(turn_ents)
+        _log.debug("entities_in_window(n=%d) → %r  (confirmed=%d, total_turns=%d)", n, out, confirmed_count, len(self.turns))
         return out
 

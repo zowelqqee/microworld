@@ -1,15 +1,15 @@
 {
   "title": "Marc Tarpenning",
   "normalized_title": "Marc Tarpenning",
-  "pageid": 46736346,
-  "revision_id": 1319124380,
-  "timestamp": "2025-10-27T23:05:37Z",
+  "pageid": null,
+  "revision_id": null,
+  "timestamp": "",
   "source_url": "https://en.wikipedia.org/wiki/Marc_Tarpenning",
   "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Marc+Tarpenning",
-  "retrieved_at": "2026-06-17T17:08:45Z",
-  "raw_text": "Marc Tarpenning (born June 1, 1964) is an American engineer and technology entrepreneur who co-founded Tesla Inc. with Martin Eberhard in 2003. Tarpenning served as the chief financial officer (CFO) and vice president of engineering of Tesla.\n\n\nEarly life\nMarc Tarpenning was born in Sacramento, California, on June 1, 1964. He attended the University of California, Berkeley, and obtained a B.A. degree in computer science in 1985.\n\n\nCareer\nAfter graduating from Berkeley, Tarpenning spent several years working for Textron in Saudi Arabia. Tarpenning then developed software and firmware products for several companies, including Seagate Technology and Bechtel, and later served as vice president of engineering at Packet Design, a network technology company. In 1997, Tarpenning and Martin Eberhard founded NuvoMedia, a company that built an early e-book reader, the RocketBook, in 1998. In 2000, Gemstar–TV Guide International acquired NuvoMedia for $187 million.\nIn 2003, Tarpenning and Martin Eberhard collaborated again and founded Tesla Motors (now Tesla Inc.). The two co-founders funded the company until early 2004, when Elon Musk led the company's $6.5 million Series A financing round in February 2004 and became the chairman of the board. Tarpenning continued to serve as the chief financial officer (CFO) and the Vice President of Electrical Engineering in Tesla until 2008.\nAfter leaving Tesla, Tarpenning began to serve as an adviser or member of advisory board of several companies, including his alma mater (Sutardja Center for Entrepreneurship & Technology (SCET) and SkyDeck, UC Berkeley) and Spero Ventures, a VC firm.\n\n\nReferences",
-  "raw_text_sha256": "06203e57ecba5e869d90865a7059bcabc2cf9ed34ec6ea59c59d7b49b93e754d",
+  "retrieved_at": "2026-06-20T12:46:55Z",
+  "raw_text": "",
+  "raw_text_sha256": "",
   "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
-  "fetch_status": "success",
-  "error": ""
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests"
 }

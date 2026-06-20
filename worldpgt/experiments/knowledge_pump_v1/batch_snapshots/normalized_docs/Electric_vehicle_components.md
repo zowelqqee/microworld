@@ -1,7 +1,7 @@
-# Electric vehicle components
+# electric vehicle components
 
-Source: https://en.wikipedia.org/wiki/Electric_vehicle_components
-Retrieved at: 2026-06-17T17:09:00Z
+Source: https://en.wikipedia.org/wiki/electric_vehicle_components
+Retrieved at: 2026-06-20T12:47:36Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

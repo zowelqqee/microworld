@@ -1,8 +1,8 @@
 # United Kingdom
 
 Source: https://en.wikipedia.org/wiki/United_Kingdom
-Retrieved at: 2026-06-17T17:08:47Z
-Revision ID: 1359806284
+Retrieved at: 2026-06-20T12:47:02Z
+Revision ID: 1359976158
 Raw text SHA256: c0dd3b59f3b3818e538e6be05f18a18419eced3dd111f47b792110003e027aa4
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

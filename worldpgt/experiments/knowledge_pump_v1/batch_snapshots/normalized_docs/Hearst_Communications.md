@@ -1,7 +1,7 @@
 # Hearst Communications
 
 Source: https://en.wikipedia.org/wiki/Hearst_Communications
-Retrieved at: 2026-06-17T17:11:30Z
+Retrieved at: 2026-06-20T12:55:05Z
 Revision ID: 1358189233
 Raw text SHA256: 16b76dd30e97ce495464f5ae7805cbd9264ab700b0ed1a9b25bfb0b5792af14c
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

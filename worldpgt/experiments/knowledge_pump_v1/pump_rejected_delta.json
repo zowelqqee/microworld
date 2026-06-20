@@ -136,16 +136,34 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
       "snapshot_source_title": "Electric vehicle",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Electric_vehicle",
-      "snapshot_retrieved_at": "2026-06-17T17:10:30Z",
+      "snapshot_retrieved_at": "2026-06-20T12:52:03Z",
       "snapshot_revision_id": 1359848574,
       "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-238-overlay-001",
+      "snapshot_candidate_id": "snap-243-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Alphabet IncInc\u0000",
+      "predicate": "is_a",
+      "object": "American multinational technology conglomerate holding company",
+      "source_page": "Alphabet Inc",
+      "evidence_text": "Alphabet IncInc\u0000 is an American multinational technology conglomerate holding company headquartered in Mountain View, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:7afb5ed6:11fb32ec",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
   },
   {
     "item": {
@@ -166,6 +184,70 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American electronics company",
+      "source_page": "Ampex Corporation",
+      "evidence_text": "Ampex Data Systems Corporation is an American electronics company founded in 1944 by Alexander M.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:1de3ee64:bb48cbc1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Electric vehicle",
+      "predicate": "owned_by",
+      "object": "Volkswagen AG",
+      "source_page": "Bentley Motors Limited",
+      "evidence_text": "Volkswagen AG acquired the vehicle designs, model nameplates, production and administrative facilities, the Spirit of Ecstasy and Rolls-Royce grille shape trademarks, but not the rights to the use of the Rolls-Royce name or logo, which are owned by Rolls-Royce Holdings plcplc\u0000 In 1998, BMW started supplying components for the new range of Rolls-Royce and Bentley cars—notably V8 engines for the Bentley Arnage and V12 engines for the Rolls-Royce Silver Seraph, however, the supply contract allowed BMW to terminate its supply deal with Rolls-Royce with 12 months' notice, which would not be enough time for Volkswagen to re-engineer the cars.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b2918c85:b5e4b20f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Berkshire Hathaway IncInc\u0000",
+      "predicate": "is_a",
+      "object": "American multinational conglomerate holding company",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "Berkshire Hathaway IncInc\u0000 () is an American multinational conglomerate holding company headquartered in Omaha, Nebraska.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:1aef389c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "owned_by",
+      "object": "Oracle Corporation",
+      "source_page": "Berkshire Hathaway",
+      "evidence_text": "CORT Business Services Corporation was acquired in February 2000 by Wesco Financial Corporation, an 80.1% owned subsidiary of Berkshire and is the largest US provider of rental furniture, accessories and related services in the \"rent-to-rent\" segment of the furniture rental industry.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f63567ba:9b3560bd",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Jeff Bezos",
       "predicate": "is_a",
       "object": "American investment firm",
@@ -178,6 +260,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Internet service provider",
+      "predicate": "owned_by",
+      "object": "Michael Bloomberg",
+      "source_page": "Bloomberg L.P",
+      "evidence_text": "Bloomberg PolarLake In May 2012, Bloomberg L.PL.P\u0000 acquired Dublin-based software provider PolarLake and launched a new enterprise data management service to help companies acquire, manage, and distribute data across its organizations.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f900dae8:70f43710",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
   },
   {
     "item": {
@@ -214,18 +312,306 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "Satellite internet",
-      "predicate": "is_a",
-      "object": "Satellite internet",
-      "source_page": "Internet",
-      "evidence_text": "The most prominent component of the Internet model is the Internet Protocol.",
+      "subject": "Bloomberg News",
+      "predicate": "produces",
+      "object": "Bloomberg News",
+      "source_page": "CBS News",
+      "evidence_text": "CBS News Radio produces the oldest daily news show on radio or television, the CBS World News Roundup, which first aired in 1938; in 2018, it celebrated its 80th anniversary.",
       "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "pump_relation_candidate_id": "rv2:5e766658:04577c9b",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2f5f7a78:ee77acff",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "BYD Auto",
+      "predicate": "is_a",
+      "object": "Electric vehicle",
+      "source_page": "electric cars",
+      "evidence_text": "BYD Auto is another leading electric vehicle manufacturer, with the majority of its sales coming from China.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:d9c1edb1:1667ebab",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Elevation Partners",
+      "predicate": "is_a",
+      "object": "American private equity firm",
+      "source_page": "Elevation Partners",
+      "evidence_text": "Elevation Partners was an American private equity firm that invested in intellectual property, technology and media companies.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:5d60bd49:f92c0f33",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "National space organisations",
+      "predicate": "is_a",
+      "object": "French government space agency",
+      "source_page": "European Space Agency",
+      "evidence_text": "National space organisations of member states The Centre National d'Études Spatiales (CNES) (National Centre for Space Study) is the French government space agency (administratively, a \"public establishment of industrial and commercial character\").",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:3369036f:7246c754",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Fidelity Investments",
+      "predicate": "is_a",
+      "object": "American financial services company",
+      "source_page": "Fidelity Investments",
+      "evidence_text": "Fidelity Investments, formerly known as Fidelity Management & Research (FMR), is an American financial services company.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:135452f0:26a12341",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Commercial Crew Program",
+      "predicate": "founded",
+      "object": "Commercial Crew Program",
+      "source_page": "Ford Motor Company",
+      "evidence_text": "FordWorks Program Ford Motor Company created the FordWorks program in 2016 with the aim to bring people with disabilities back into the workforce.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:12885f5b:f06ce787",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "General Electric Company",
+      "predicate": "is_a",
+      "object": "American multinational conglomerate",
+      "source_page": "General Electric",
+      "evidence_text": "General Electric Company (GE) was an American multinational conglomerate founded in 1892, incorporated in the state of New York and headquartered, during its final year of operation, in Boston.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:e957fdd5:7062e263",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "General Motors Company",
+      "predicate": "is_a",
+      "object": "American multinational automotive manufacturing company",
+      "source_page": "General Motors",
+      "evidence_text": "General Motors Company (GM) is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:d1e75879:4f974b25",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Goodrich Company",
+      "predicate": "is_a",
+      "object": "American manufacturing company",
+      "source_page": "Goodrich Corporation",
+      "evidence_text": "Goodrich Company, was an American manufacturing company based in Charlotte, North Carolina.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:d51fe1ff:2e40d844",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Hearst Corporation",
+      "evidence_text": "Hearst Corporation, Hearst Holdings IncInc\u0000 and Hearst Communications IncInc\u0000 is an American multinational mass media and business information conglomerate owned by the Hearst family and based in Hearst Tower in Midtown Manhattan in New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:16b76dd3:36202075",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Hyperloop",
+      "predicate": "is_a",
+      "object": "American research company",
+      "source_page": "Hyperloop Transportation Technologies",
+      "evidence_text": "Hyperloop Transportation Technologies, also known as HyperloopTT, is an American research company formed using a crowd collaboration approach (a mix of team collaboration and crowdsourcing) to develop around the world commercial transportation systems based on the Hyperloop concept.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:3e2c8d72:0b2f62f4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stock exchange",
+      "predicate": "is_a",
+      "object": "American multinational financial services company",
+      "source_page": "Intercontinental Exchange",
+      "evidence_text": "Intercontinental Exchange, IncInc\u0000 (ICE) is an American multinational financial services company formed in 2000 that operates global financial exchanges and clearing houses and provides mortgage technology, data and listing services.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:cc0144e3:c5c31be8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stock exchange",
+      "predicate": "owned_by",
+      "object": "Stock exchange",
+      "source_page": "Intercontinental Exchange",
+      "evidence_text": "2010: Climate Exchange In April 2010, ICE acquired Climate Exchange PLC for 395 million pounds ($622 million) and European Climate Exchange (ECX) as part of its purchase.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:cc0144e3:1c996c56",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Strategic Space Development",
+      "predicate": "founded",
+      "object": "Strategic Space Development",
+      "source_page": "Jim Cantrell",
+      "evidence_text": "Strategic Space Development After ending his consulting work with SpaceX, Cantrell founded Strategic Space Development, an aerospace and technology consultancy and took on the position of president and CEO.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ab4f316f:bac2a19d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "LVMH",
+      "predicate": "is_a",
+      "object": "French multinational holding company",
+      "source_page": "Alain Chevalier",
+      "evidence_text": "LVMH Moet Hennessy Louis Vuitton SE is a French multinational holding company and conglomerate that specializes in luxury goods and has its headquarters in Paris.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:439822b2:2715a043",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "LVMH",
+      "predicate": "founded",
+      "object": "LVMH",
+      "source_page": "Alain Chevalier",
+      "evidence_text": "In November 2013, LVMH created the LVMH Young Fashion Designer Prize, which comes with a €300,000 grant with a year of mentoring; it was the brainchild of Delphine Arnault.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:439822b2:1cc03f7a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Lehman Brothers Holdings IncInc\u0000",
+      "predicate": "is_a",
+      "object": "American global financial services firm",
+      "source_page": "Lehman Brothers",
+      "evidence_text": "Lehman Brothers Holdings IncInc\u0000 ( LEE-mən) was an American global financial services firm founded in 1850.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:83cb328c:f9ba9ad6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "founded",
+      "object": "Social media",
+      "source_page": "Media Matters",
+      "evidence_text": "Media Matters Action Network In 2010, David Brock established Media Matters Action Network, a 501(c)(4), to track conservative politicians and organizations.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ae74393b:b160b5f7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mercedes - Benz Group AG",
+      "predicate": "is_a",
+      "object": "German multinational automotive company",
+      "source_page": "Mercedes-Benz Group",
+      "evidence_text": "Mercedes-Benz Group AG (formerly Daimler-Benz, DaimlerChrysler, and Daimler) is a German multinational automotive company headquartered in Stuttgart, Baden-Württemberg, Germany.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:e8075cbd:2dd3b4eb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
   },
   {
     "item": {
@@ -242,6 +628,86 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American aerospace and defense company",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "Northrop Grumman Corporation, headquartered in West Falls Church, Virginia, is an American aerospace and defense company that designs and manufactures systems for aeronautics, defense, missions, and space.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:92fe4f8c:8025fef8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "OpenAI",
+      "predicate": "owned_by",
+      "object": "OpenAI",
+      "source_page": "OpenAI Global",
+      "evidence_text": "OpenAI formed three subsidiaries: the holding company OpenAI LP, the holding company OpenAI GP LLC, and the capped for-profit company OpenAI Global, LLCLLC\u0000 The holding company OpenAI LP was owned by the nonprofit OpenAI, IncInc\u0000, OpenAI employees, and investors, whereas OpenAI Global, LLC, was owned by OpenAI LP and Microsoft, the latter of which had a minority non-voting stake.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2ab1ff76:0001bf78",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Peugeot S.AS.A\u0000",
+      "predicate": "is_a",
+      "object": "French multinational automotive manufacturing company",
+      "source_page": "PSA Group",
+      "evidence_text": "Peugeot S.AS.A\u0000, commonly known by the acronym PSA and PSA Group (French pronunciation: [ɡʁup pe ɛs ɑ]) (formerly PSA Peugeot Citroën and PSA Peugeot Talbot Citroën) was a French multinational automotive manufacturing company which produced automobiles and motorcycles under the Peugeot, Citroën, DS, Opel and Vauxhall brands.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:5e7dfe57:4607a81e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American multinational aerospace and defense conglomerate",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "RTX Corporation, formerly Raytheon Technologies Corporation, is an American multinational aerospace and defense conglomerate headquartered in Arlington, Virginia.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:3538924e:d562e62e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Internet service provider",
+      "predicate": "owned_by",
+      "object": "Raytheon|Websense",
+      "source_page": "Raytheon Technologies Corporation",
+      "evidence_text": "In January 2016, Raytheon|Websense acquired the firewall provider Stonesoft from Intel Security for an undisclosed amount and renamed itself to Forcepoint.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3538924e:b0ad24b7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
   },
   {
     "item": {
@@ -278,6 +744,134 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Pioneer Astronautics",
+      "predicate": "founded",
+      "object": "Pioneer Astronautics",
+      "source_page": "Robert Zubrin",
+      "evidence_text": "Pioneer Astronautics In 1996, Zubrin founded Pioneer Astronautics (formerly Pioneer Invention), a research and development company committed to developing innovative technologies to further space exploration and improve life on earth.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c85ab676:aa658999",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Roots Blower Company",
+      "predicate": "is_a",
+      "object": "American engineering company",
+      "source_page": "Roots Blower Company",
+      "evidence_text": "The Roots Blower Company was an American engineering company based in Connersville, Indiana.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:ba74075b:9fbb42d6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "is_a",
+      "object": "Spanish company",
+      "source_page": "Satellite Radio",
+      "evidence_text": "The satellites are now transmitting educational data and operate under the name of Yazmi USA, LLCLLC\u0000 Ondas Media was a Spanish company which had proposed to launch a subscription-based satellite radio system to serve Spain and much of Western Europe, but failed to acquire licenses throughout Europe.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:b828189b:ca6ddb53",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Onde Numérique",
+      "predicate": "is_a",
+      "object": "French company",
+      "source_page": "Satellite Radio",
+      "evidence_text": "Onde Numérique was a French company which had proposed to launch a subscription-based satellite radio system to serve France and several other countries in Western Europe but has suspended its plans indefinitely, effective December, 2016.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:b828189b:3d3b795b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The South Sea Company",
+      "predicate": "is_a",
+      "object": "British joint - stock company",
+      "source_page": "South Sea Company",
+      "evidence_text": "The South Sea Company was a British joint-stock company founded in January 1711, created as a public-private partnership to consolidate and reduce the cost of the national debt.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:deeae6b1:1ca6e864",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stoke Space Technologies",
+      "predicate": "is_a",
+      "object": "American space launch company",
+      "source_page": "Stoke Space",
+      "evidence_text": "Stoke Space Technologies is an American space launch company based in the Seattle suburb of Kent, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:775ef9b9:243a59a6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "TBS Holdings",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Tokyo Broadcasting System",
+      "evidence_text": "TBS Holdings, IncInc\u0000, (formerly Tokyo Broadcasting System Holdings, IncInc\u0000,) is a privately owned media company in Japan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:bf9f6de0:2f163229",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Electric vehicle",
+      "predicate": "is_a",
+      "object": "Lithium-ion battery",
+      "source_page": "Tesla, Inc",
+      "evidence_text": "The Tesla next-generation vehicle is an announced battery electric platform.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:8d0f5aa9:11816276",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Tesla",
       "predicate": "owned_by",
       "object": "Tesla",
@@ -310,6 +904,54 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Electric vehicle",
+      "predicate": "is_a",
+      "object": "Electric car",
+      "source_page": "Lars Moravy",
+      "evidence_text": "The Tesla next-generation vehicle is an electric car platform under development by Tesla after 2022.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a758925e:66817030",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Walt Disney Company",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Walt Disney Company",
+      "evidence_text": "The Walt Disney Company, commonly and globally known as simply Disney, is an American multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:c930c143:9a272ce6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Thomas Pink",
+      "predicate": "is_a",
+      "object": "British clothing company",
+      "source_page": "Thomas Pink",
+      "evidence_text": "Thomas Pink is a British clothing company that sells men's shirts, as well as other menswear and accessories.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:683aadd8:69b69650",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Thomas John Mueller",
       "predicate": "is_a",
       "object": "American aerospace",
@@ -319,6 +961,102 @@
       "risk": "low",
       "stability": "stable",
       "pump_relation_candidate_id": "rv2:2d47cf1d:b81992f1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Twitter",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Obvious Corporation",
+      "evidence_text": "Twitter, IncInc\u0000 was an American social media company based in San Francisco, California, which operated and was named for its flagship social media network of the same name, prior to its rebrand as X.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:92819d9b:0fb92d50",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "IncInc\u0000",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Obvious Corporation",
+      "evidence_text": "Twitter, IncInc\u0000 was an American social media company based in San Francisco, California, which operated and was named for its flagship social media network of the same name, prior to its rebrand as X.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:92819d9b:e1ef78e8",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Twitter",
+      "predicate": "is_a",
+      "object": "American social networking service",
+      "source_page": "Obvious Corporation",
+      "evidence_text": "Twitter was an American social networking service that was rebranded to X in 2023.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:92819d9b:c3467372",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Commercial Crew Program",
+      "predicate": "develops",
+      "object": "Commercial Crew Program",
+      "source_page": "U.S. Atomic Energy Commission",
+      "evidence_text": "Domestic uranium procurement program The AEC developed a program for sourcing uranium domestically.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3c212723:9f554f10",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American multinational conglomerate",
+      "source_page": "United Technologies",
+      "evidence_text": "United Technologies Corporation (UTC) was an American multinational conglomerate headquartered in Farmington, Connecticut.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:3bc48363:79b7c35e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Virgin Group Limited",
+      "predicate": "is_a",
+      "object": "British multinational venture capital conglomerate",
+      "source_page": "Virgin Group",
+      "evidence_text": "Virgin Group Limited is a British multinational venture capital conglomerate based in London, England, founded by Richard Branson and Nik Powell in February 1970.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:7af3f204:4abefa6c",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
@@ -362,6 +1100,310 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Koch Industries",
+      "predicate": "is_a",
+      "object": "Privately held company",
+      "source_page": "Charles Koch",
+      "evidence_text": "Koch Industries is the largest privately held company by revenue in the United States, according to Forbes.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:1a785be3:176f1c86",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Algorithm",
+      "predicate": "published_by",
+      "object": "Jon McNeill",
+      "source_page": "Elon Musk",
+      "evidence_text": "In 2026, Jon McNeill, who served as president of Tesla from 2015 to 2018 and oversaw a period of revenue growth from $2 billion to $20 billion, published The Algorithm, a book detailing the five-step operational framework used at Tesla and SpaceX.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e7869870:afc55326",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Elon Musk",
+      "evidence_text": "Tesla acquired SolarCity for $2 billion in 2016 (equivalent to $2,700,000,000 in 2025) and merged it with its battery unit to create Tesla Energy.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e7869870:fbc87a22",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Gigafactory",
+      "predicate": "produces",
+      "object": "Tesla",
+      "source_page": "Giga Nevada",
+      "evidence_text": "On July 31 2024, a month later, Gigafactory Nevada produced the 10 millionth Tesla drive unit as counted from all of Tesla's factories.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2bf452a7:7d0e2b7e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Securities and Exchange Commission",
+      "predicate": "founded_by",
+      "object": "Texas governor Greg Abbott",
+      "source_page": "Manned Spacecraft Center",
+      "evidence_text": "The Texas Space Commission was established by Texas governor Greg Abbott on March 26, 2024, at Johnson Space Center.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:deb567a7:b3dbb1f2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Motor Trend Group",
+      "predicate": "owned_by",
+      "object": "Hearst Communications",
+      "source_page": "Motor Trend",
+      "evidence_text": "In December 2024, Hearst Communications acquired Motor Trend Group and most its assets including Motor Trend from Warner Bros.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:65d9ff1f:244e3e8c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Northrop Grumman",
+      "predicate": "founded",
+      "object": "AMSEC LLC",
+      "source_page": "Northrop Grumman",
+      "evidence_text": "In 1999, Northrop Grumman and SAIC created AMSEC LLC as a joint venture, which grew \"from $100 million in revenue in 2000 to approximately $500 million in fiscal year 2007\".",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:92fe4f8c:449a5560",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Software Applications Incorporated",
+      "predicate": "owned_by",
+      "object": "OpenAI",
+      "source_page": "OpenAI Global",
+      "evidence_text": "In October 2025, OpenAI acquired Software Applications Incorporated, the developer of Sky, a macOS-based natural language interface designed to operate across desktop applications.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2ab1ff76:3821d4e1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Python tool developer Astral",
+      "predicate": "owned_by",
+      "object": "OpenAI",
+      "source_page": "OpenAI Global",
+      "evidence_text": "OpenAI acquired Python tool developer Astral in March 2026.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2ab1ff76:d2d2f344",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Athena Technologies",
+      "predicate": "owned_by",
+      "object": "Rockwell Collins",
+      "source_page": "Rockwell Collins",
+      "evidence_text": "Acquisitions In 2008, Rockwell Collins acquired Athena Technologies for US$107 million (equivalent to $160 million in 2025).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:be12d527:f3b0675f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Building Solutions",
+      "predicate": "owned_by",
+      "object": "SolarCity",
+      "source_page": "SolarCity Corporation",
+      "evidence_text": "Energy efficiency evaluations and retrofits In 2010, SolarCity acquired Building Solutions, a home energy audit firm and began to offer energy efficiency evaluations and upgrades.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b9041ffd:fd9f0fb4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Artificial intelligence",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "SpaceX Hawthorne",
+      "evidence_text": "In 2026, SpaceX acquired Musk's artificial intelligence company xAI, and announced a joint venture with Tesla, IncInc\u0000 to build Terafab, a large plant for semiconductor device fabrication.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a2f6b45b:82123c15",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SpaceX",
+      "predicate": "produces",
+      "object": "Merlin engines",
+      "source_page": "SpaceX Merlin",
+      "evidence_text": "Production As of August 2011, SpaceX was producing Merlin engines at the rate of eight per month, planning eventually to raise production to about 33 engines per month (or 400 per year).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:e83b645e:b4eb911b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Journal",
+      "predicate": "published_by",
+      "object": "Dow Jones",
+      "source_page": "Wall Street Journal",
+      "evidence_text": "The Journal is published six days a week by Dow Jones & Company, a division of News CorpCorp\u0000 As of 2025, The Wall Street Journal is the largest newspaper in the United States by print circulation, with 412,000 print subscribers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b27b0c28:470d7e04",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Thomas Pink",
+      "predicate": "owned_by",
+      "object": "Icon Luxury Group",
+      "source_page": "Thomas Pink",
+      "evidence_text": "In December 2024, Thomas Pink was acquired by Icon Luxury Group and CP Brands in a joint venture.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:683aadd8:b5d7d36b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Thomas Pink",
+      "predicate": "owned_by",
+      "object": "CP Brands",
+      "source_page": "Thomas Pink",
+      "evidence_text": "In December 2024, Thomas Pink was acquired by Icon Luxury Group and CP Brands in a joint venture.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:683aadd8:ea619cd4",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Vector Launch",
+      "predicate": "owned_by",
+      "object": "Phantom Space",
+      "source_page": "Vector Launch",
+      "evidence_text": "Acquisition by Former CEO On February 26, 2026, it was announced that Vector Launch would be acquired by Phantom Space, headed by the original CEO of Vector Launch, Jim Cantrell, for an undisclosed eight-figure range.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5f3f3e07:020e9358",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Robert Cleave",
+      "predicate": "founded",
+      "object": "NewSpace Networks",
+      "source_page": "Vector Launch",
+      "evidence_text": "Several members of the former GalacticSky team including the primary author of many of its patents and a Vector co-founder, chief sales/marketing officer and SVP/general manager of GalacticSky, Shaun Coleman, former GalacticSky VP of engineering John Metzger, former Vector chief revenue officer, and Lockheed VP of Advanced programs Robert Cleave have since founded NewSpace Networks, a company focused on extending the cloud and making satellite networks more efficient.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:5f3f3e07:587799ae",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "X CorpCorp\u0000",
+      "predicate": "owned_by",
+      "object": "xAI",
+      "source_page": "Twitter Blue",
+      "evidence_text": "In March 2025, X CorpCorp\u0000 was acquired by xAI, Musk's artificial intelligence company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:098995c8:c709961b",
+      "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"
   }

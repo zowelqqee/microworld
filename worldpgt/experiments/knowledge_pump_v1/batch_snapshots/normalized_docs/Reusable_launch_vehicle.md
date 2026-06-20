@@ -1,15 +1,15 @@
 # Reusable launch vehicle
 
 Source: https://en.wikipedia.org/wiki/Reusable_launch_vehicle
-Retrieved at: 2026-06-17T17:08:32Z
-Revision ID: 1358658592
-Raw text SHA256: be57ef50f1e8bbe342f41ef15aba6fd8f0b9ddb5afad424d03d2dfe47c620485
+Retrieved at: 2026-06-20T12:46:17Z
+Revision ID: 1360129922
+Raw text SHA256: ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
 A reusable launch vehicle has parts that can be recovered and reflown, while carrying payloads from the surface to outer space. Rocket stages are the most common launch vehicle parts aimed for reuse. Smaller parts such as fairings, boosters or rocket engines can also be reused, though reusable spacecraft may be launched on top of an expendable launch vehicle. Reusable launch vehicles do not need to make these parts for each launch, therefore reducing its launch cost significantly. However, these benefits can be diminished by the cost of recovery and refurbishment.
 Reusable launch vehicles may contain additional avionics and propellant, making them heavier than their expendable counterparts. Reused parts may need to enter the atmosphere and navigate through it, so they are often equipped with heat shields, grid fins, and other flight control surfaces. By modifying their shape, spaceplanes can leverage aviation mechanics to aid in its recovery, such as gliding or lift. In the atmosphere, parachutes or retrorockets may also be needed to slow it down further. Reusable parts may also need specialized recovery facilities such as runways or autonomous spaceport drone ships. Some concepts rely on ground infrastructures such as mass drivers to accelerate the launch vehicle beforehand.
-Since at least in the early 20th century, single-stage-to-orbit reusable launch vehicles have existed in science fiction. In the 1970s, the first reusable launch vehicle, the Space Shuttle, was developed. However, in the 1990s, due to the program's failure to meet expectations, reusable launch vehicle concepts were reduced to prototype testing. The rise of private spaceflight companies in the 2000s and 2010s lead to a resurgence of their development, such as in SpaceShipOne, New Shepard, New Glenn, Electron, Falcon 9, and Falcon Heavy. Many launch vehicles are now expected to debut with reusability in the 2020s, such as Starship, Neutron, Maia, Miura 5, Long March 10 and 12, Tianlong-3, Terran R, Stoke Space Nova, Eclipse, LandSpace Zhuque-3, and the suborbital Dawn Mk-II Aurora.
+Since at least in the early 20th century, single-stage-to-orbit reusable launch vehicles have existed in science fiction. In the 1970s, the first reusable launch vehicle, the Space Shuttle, was developed. However, in the 1990s, due to the program's failure to meet expectations, reusable launch vehicles were reduced to prototype testing. The growth of private spaceflight companies in the 2010s lead to a resurgence of their development, such as in SpaceShipOne, New Shepard, New Glenn, Electron, Falcon 9, and Falcon Heavy. At the same time, the US Boeing X-37 and Chinese CSSHQ military spaceplanes began deploying small satellites. Many launch vehicles are now expected to debut with reusability in the 2020s, such as the US Starship, Neutron, Terran R, Stoke Space Nova, and Eclipse, the Chinese Long March 10 and 12, Tianlong-3, LandSpace Zhuque-3, and the European Maia and Miura 5.
 The impact of reusability in launch vehicles has been momentous for the spaceflight industry. In 2024, the Cape Canaveral Space Force Station initiated a 50-year forward looking plan for the Cape that involved major infrastructure upgrades (including to Port Canaveral) to support a higher anticipated launch cadence and landing sites for the new generation of vehicles.
 
 Configurations

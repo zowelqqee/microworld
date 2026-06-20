@@ -1,7 +1,7 @@
 # Automated Transfer Vehicle
 
 Source: https://en.wikipedia.org/wiki/Automated_Transfer_Vehicle
-Retrieved at: 2026-06-17T17:10:49Z
+Retrieved at: 2026-06-20T12:53:02Z
 Revision ID: 1353310776
 Raw text SHA256: 7a0e8c103508108823a2176a2233f5c99b4c46368eba32b2d95c278bb7c1a11c
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

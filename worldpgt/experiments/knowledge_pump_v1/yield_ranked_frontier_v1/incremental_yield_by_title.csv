@@ -1,153 +1,206 @@
 source_page,answerable_facts,relations,definitions,ingestion_candidates,is_high_yield,is_low_yield
+Community Memory,8,7,1,8,True,False
+Sun Microsystems,6,6,0,10,True,True
+NYSE Group,5,5,0,0,True,False
+Apple Computer,4,4,0,0,True,False
+Elon Reeve Musk,4,4,0,0,True,False
+Hughes Aircraft Company,4,3,1,7,True,True
+London Stock Exchange,4,3,1,5,True,False
 Saturn IB,4,4,0,8,True,False
+Amazon Bookstore Cooperative,3,2,1,5,True,False
+Bloomberg L.P,3,3,0,0,True,False
+Bloomberg Radio,3,2,1,14,True,False
+Compaq Computer,3,2,1,0,True,False
+General Electric,3,3,0,7,True,True
+Government Accountability Office,3,2,1,0,True,False
 Intel Corporation,3,2,1,0,True,False
-London Stock Exchange,3,2,1,5,True,False
+Jaguar Land Rover,3,2,1,10,True,False
 Northrop Grumman,3,3,0,20,True,False
+Oracle Rdb,3,3,0,11,True,False
+Reaction Engines,3,2,1,12,True,False
+Royal Navy,3,2,1,4,True,False
+SpaceX Hawthorne,3,3,0,0,True,False
+World Economic Forum,3,2,1,6,True,False
+Alain Chevalier,2,1,1,0,True,False
+Amazon Web Services,2,2,0,5,True,True
+Bankers Trust,2,1,1,5,True,False
 Berkeley DB,2,2,0,9,True,False
 Bloomberg Government,2,1,1,7,True,False
-Bloomberg L.P,2,2,0,0,True,False
-Bloomberg Radio,2,1,1,15,True,False
-Boeing X-37,2,2,0,16,True,False
-Compaq Computer,2,1,1,0,True,False
-Exos Aerospace,2,1,1,12,True,False
+Blue Ring Pathfinder,2,1,1,0,True,False
+Boeing X-37,2,2,0,15,True,False
+Canada,2,1,1,6,True,False
+Caterham Cars,2,2,0,6,True,True
+CBS News,2,1,1,5,True,False
+Dow Jones,2,1,1,5,True,False
+Financial Industry Regulatory Authority,2,1,1,10,True,False
 Giga Nevada,2,2,0,0,True,False
+Harvard University,2,1,1,6,True,False
+Henrik Fisker,2,1,1,7,True,False
 International Energy Agency,2,1,1,10,True,False
+Kistler Aerospace,2,1,1,0,True,False
+New York Times,2,2,0,0,True,False
+Project Mercury,2,1,1,16,True,False
+Richard Branson,2,1,1,5,True,False
 Rocket Science Games,2,1,1,9,True,False
 Satellite Radio,2,2,0,14,True,True
-World Economic Forum,2,1,1,6,True,False
+Scaled Composites,2,2,0,11,True,True
+Sea Launch,2,2,0,21,True,True
+Sierra Nevada Corporation,2,2,0,18,True,True
+Silicon Valley,2,2,0,10,True,True
+Smith Electric Vehicles,2,1,1,8,True,False
+Wayback Machine,2,1,1,11,True,False
+White Sands Missile Range,2,1,1,15,True,False
+World Government,2,1,1,3,True,True
 École Centrale Paris,2,2,0,9,True,False
 Abe Fortas,1,0,1,6,False,False
 Advanced Vehicle Systems,1,0,1,0,False,False
+Aerospace manufacturing,1,1,0,0,False,False
 Affordable Connectivity Program,1,0,1,11,False,False
 Air Command,1,0,1,5,False,True
-Alain Chevalier,1,0,1,0,False,False
 Aliko Dangote,1,0,1,5,False,False
 Alpha Magnetic Spectrometer,1,0,1,9,False,False
 Amalgam Comics,1,0,1,8,False,False
 Amazon Basin,1,0,1,6,False,True
-Amazon Bookstore Cooperative,1,0,1,5,False,False
 Amazon Delta,1,0,1,11,False,False
 Amazonian Guard,1,0,1,5,False,False
 Amazons Company,1,0,1,0,False,False
-Amdahl Corporation,1,0,1,6,False,False
 Ampex Corporation,1,0,1,0,False,False
 Amsterdam Stock Exchange,1,0,1,0,False,False
 analytics,1,0,1,2,False,False
 Andersen Consulting,1,0,1,0,False,False
+Andrew Carnegie,1,1,0,6,False,True
 Anousheh Ansari,1,1,0,10,False,False
+Apollo Applications Program,1,1,0,13,False,True
 Apple II,1,0,1,2,False,False
 April,1,0,1,4,False,False
-Arianespace,1,1,0,13,False,False
+Aristotle Onassis,1,1,0,9,False,True
 Armadillo Aerospace,1,0,1,5,False,False
-Artemis Accords,1,0,1,18,False,False
+Artemis Accords,1,0,1,17,False,False
 Artemis III,1,0,1,12,False,False
 Arthur Ransome,1,0,1,6,False,False
 Arthur Wing Pinero,1,0,1,3,False,False
 Aston Martin,1,0,1,6,False,False
-Atlas II,1,0,1,14,False,False
+Atlas II,1,0,1,13,False,False
 Audi Q8,1,0,1,8,False,False
 August,1,0,1,8,False,False
 Axiom Station,1,0,1,8,False,False
 B-50 Superfortress,1,0,1,0,False,False
-B. C. Forbes,1,0,1,11,False,False
-Bangladesh Satellite-1,1,0,1,13,False,False
-Bankers Trust,1,0,1,6,False,False
+B. C. Forbes,1,0,1,10,False,False
+BAE Systems,1,1,0,10,False,True
+Bangladesh Satellite-1,1,0,1,12,False,False
+Bell Telephone Laboratories,1,1,0,0,False,False
+Bentley Motors Limited,1,1,0,0,False,False
 Berkshire Hathaway,1,1,0,4,False,False
-Bigelow Aerospace,1,1,0,12,False,False
+Berlin Model,1,1,0,4,False,True
 Bloomberg Law,1,0,1,10,False,False
 Bloomberg Markets,1,0,1,7,False,False
-Bloomberg News,1,1,0,9,False,False
+Bloomberg News,1,1,0,8,False,False
 Bloomberg Professional Services,1,0,1,0,False,False
-Blue Origin NS-16,1,0,1,3,False,False
-Blue Origin NS-17,1,0,1,10,False,False
+Blue Origin NS-16,1,0,1,2,False,False
+Blue Origin NS-17,1,0,1,9,False,False
 Blue Origin NS-18,1,0,1,9,False,False
-Blue Origin NS-19,1,0,1,7,False,False
+Blue Origin NS-19,1,0,1,6,False,False
 Blue Origin NS-20,1,0,1,1,False,False
-Blue Origin NS-21,1,0,1,9,False,False
-Blue Origin NS-23,1,0,1,10,False,False
-Blue Ring Pathfinder,1,0,1,0,False,False
+Blue Origin NS-21,1,0,1,8,False,False
+Blue Origin NS-23,1,0,1,9,False,False
+Boeing Starliner,1,1,0,16,False,True
 Bombay Stock Exchange,1,1,0,13,False,False
-Buttonwood Agreement,1,0,1,6,False,False
-Canada,1,0,1,6,False,False
-Cape Kennedy,1,0,1,0,False,False
+Buttonwood Agreement,1,0,1,5,False,False
+BYD T3,1,1,0,0,False,False
+Cargo Dragon,1,0,1,0,False,False
 Carson City,1,0,1,0,False,False
-CBS News,1,0,1,6,False,False
 Centrale Paris,1,1,0,0,False,False
 Cerberus Fossae,1,0,1,1,False,False
 Chevrolet Volt,1,0,1,10,False,False
+Christian Dior SE,1,1,0,0,False,False
+Chrysler Corporation,1,1,0,0,False,False
+Combined Charging System,1,0,1,12,False,False
 Commercial Orbital Transportation Services,1,0,1,6,False,False
+Commonwealth English,1,0,1,0,False,False
 Communications Satellite,1,1,0,9,False,True
 Companies Act,1,0,1,9,False,False
+Cooke Air Force Base,1,1,0,0,False,False
 Corporations Act,1,0,1,0,False,False
 Dawn Aerospace,1,0,1,10,False,False
 Deep Space Network,1,0,1,0,False,False
-Delta IV,1,0,1,18,False,False
-Dow Jones,1,0,1,6,False,False
-Dragon Spacecraft Qualification Unit,1,0,1,21,False,False
+Delta IV,1,0,1,16,False,False
+Drake Landing Solar Community,1,0,1,2,False,False
 Duke University,1,0,1,3,False,False
 Earth,1,0,1,2,False,False
+electric cars,1,1,0,0,False,False
+Electric Company,1,1,0,0,False,False
 Engineering,1,0,1,3,False,False
 Errol Musk,1,0,1,10,False,False
 Exchange Alley,1,0,1,4,False,False
 Falcon 9,1,1,0,0,False,False
 February,1,0,1,6,False,False
 Federal Communications Commission,1,0,1,5,False,False
-Financial Industry Regulatory Authority,1,0,1,11,False,False
 Flight,1,0,1,4,False,False
 Flight Test,1,0,1,5,False,True
 Foothill Transit,1,0,1,4,False,False
+Ford Motor Company,1,1,0,6,False,True
 Fort Lauderdale,1,0,1,0,False,False
 Foundation Series,1,0,1,0,False,False
-Fremont Factory,1,0,1,0,False,False
 General Motors,1,0,1,9,False,False
 Gigafactory Mexico,1,0,1,12,False,False
-Gigafactory New York,1,1,0,9,False,False
-Goddard Space Flight Center,1,0,1,13,False,False
+Goddard Space Flight Center,1,0,1,12,False,False
 Google Cloud,1,0,1,0,False,False
-Government Accountability Office,1,0,1,0,False,False
-Great Depression,1,0,1,7,False,False
+Great Depression,1,0,1,6,False,False
 Greenhouse gas,1,0,1,5,False,False
 Harvard Business School,1,0,1,4,False,False
-Harvard University,1,0,1,6,False,False
-Henrik Fisker,1,0,1,7,False,False
 HMS Amazon,1,0,1,6,False,False
+Honeywell Aerospace,1,1,0,13,False,True
 Hong Kong,1,0,1,4,False,False
 Horniman Circle,1,0,1,0,False,False
-Hubble Space Telescope,1,0,1,5,False,False
-Hughes Aircraft,1,0,1,0,False,False
+Hyperloop One,1,1,0,15,False,True
 IBM System,1,0,1,5,False,False
-Integrate-Transfer-Launch Complex,1,0,1,10,False,False
+Informix Software,1,1,0,0,False,False
 Internet,1,0,1,7,False,False
+ISPs,1,1,0,0,False,False
 Jack Dorsey,1,0,1,13,False,False
-Jaguar Land Rover,1,0,1,10,False,False
 January,1,0,1,7,False,False
 Japan,1,0,1,3,False,False
+JD Edwards,1,1,0,8,False,True
 Jeff Bezos,1,1,0,17,False,False
+Jersey City,1,1,0,0,False,False
+Jim Cantrell,1,1,0,13,False,True
 John Micklethwait,1,0,1,14,False,False
 Joint Long Range Proving Ground,1,0,1,0,False,False
 June,1,0,1,12,False,False
-Kistler Aerospace,1,0,1,0,False,False
+Kimbal Musk,1,1,0,21,False,True
 Land Rover,1,0,1,9,False,False
 Lars Moravy,1,0,1,0,False,False
+Las Vegas,1,1,0,4,False,True
+Launch Services Program,1,1,0,0,False,False
+Lockheed Martin,1,1,0,13,False,True
+Los Angeles,1,1,0,6,False,True
 Lotus Esprit,1,0,1,7,False,False
 Lyndon Rive,1,0,1,14,False,False
 Major General,1,0,1,5,False,True
+Manned Spacecraft Center,1,1,0,0,False,False
 March,1,0,1,8,False,False
-McDonnell Douglas,1,0,1,13,False,False
+McDonnell Douglas,1,0,1,10,False,False
 Media Matters,1,0,1,0,False,False
 Merlin,1,0,1,1,False,False
 Merritt Island,1,0,1,0,False,False
+Meta Platforms,1,1,0,6,False,True
 Michael Arougheti,1,0,1,0,False,False
 Michael Liebreich,1,0,1,8,False,False
-Microsoft Corporation,1,0,1,0,False,False
+Microsoft Azure,1,1,0,5,False,True
 Middle East,1,0,1,5,False,False
 Millennium Falcon,1,0,1,6,False,False
+Mitsubishi Heavy Industries Aerospace,1,1,0,0,False,False
 Moon,1,0,1,4,False,False
-Municipal Securities Rulemaking Board,1,0,1,6,False,False
+Morgan Motor Company,1,1,0,6,False,True
+Motor Trend,1,1,0,5,False,True
+Municipal Securities Rulemaking Board,1,0,1,5,False,False
 Musk,1,0,1,4,False,False
 Nasdaq Composite,1,0,1,7,False,False
+Nasdaq OMX,1,1,0,0,False,False
 National Affairs,1,0,1,4,False,False
-New Glenn,1,0,1,12,False,False
+Naval Air Station,1,1,0,4,False,True
+New Deal,1,1,0,3,False,True
+New Glenn,1,0,1,10,False,False
 New Horizons,1,0,1,14,False,False
 New Mexico,1,0,1,3,False,False
 Nikola Tesla,1,0,1,5,False,False
@@ -155,28 +208,27 @@ Noah Glass,1,0,1,3,False,False
 North American,1,0,1,0,False,False
 NYSE,1,1,0,0,False,False
 Olympus Mons,1,0,1,3,False,False
-Oracle Cloud Infrastructure,1,0,1,0,False,False
+Oracle Cloud,1,0,1,8,False,True
+Oracle Enterprise Manager,1,0,1,7,False,False
+Oracle NoSQL Database,1,0,1,5,False,False
 Oxford English Dictionary,1,0,1,3,False,False
-Pecora Commission,1,0,1,8,False,False
+PayPal Holdings,1,1,0,0,False,False
+Pecora Commission,1,0,1,7,False,False
 Peter Thiel,1,0,1,7,False,False
 Princeton University,1,0,1,7,False,False
 Project Gemini,1,0,1,18,False,False
 Project Juno,1,0,1,9,False,False
-Project Mercury,1,0,1,17,False,False
-Reaction Engines,1,0,1,14,False,False
 Redwood Shores,1,0,1,12,False,False
-Reuters,1,1,0,4,False,False
-Richard Branson,1,0,1,5,False,False
-Richard Sylla,1,0,1,10,False,False
-Robert Zubrin,1,0,1,12,False,False
-Roots Blower Company,1,0,1,7,False,False
+Richard Sylla,1,0,1,9,False,False
+Robert Zubrin,1,0,1,11,False,False
+Rockwell Collins,1,1,0,16,False,True
+Roots Blower Company,1,0,1,6,False,False
 Royal Mail Steam Packet Company,1,1,0,16,False,False
-Royal Navy,1,0,1,4,False,False
+Salomon Brothers,1,1,0,7,False,True
 Sam Altman,1,1,0,9,False,False
 San Francisco Bay Area,1,0,1,5,False,False
 Saudi Arabia,1,1,0,3,False,False
 September,1,0,1,6,False,False
-Smith Electric Vehicles,1,0,1,8,False,False
 SMS Amazone,1,0,1,3,False,False
 Software Development,1,0,1,5,False,True
 SolarCity Corporation,1,0,1,0,False,False
@@ -186,43 +238,44 @@ South Sea Company,1,0,1,10,False,False
 Soyuz MS-17,1,0,1,6,False,False
 Space,1,0,1,3,False,False
 Space Age,1,0,1,17,False,False
+Space.com,1,1,0,20,False,True
 Spaceflight,1,0,1,8,False,False
-SpaceShipTwo,1,0,1,11,False,False
-SpaceX,1,1,0,21,False,False
-SpaceX Crew-2,1,0,1,17,False,False
+SpaceShipTwo,1,0,1,10,False,False
+SpaceX,1,1,0,18,False,False
+SpaceX Crew-2,1,0,1,16,False,False
 SpaceX Crew-3,1,0,1,12,False,False
 SpaceX Starlink,1,0,1,0,False,False
-Sperry Corporation,1,0,1,13,False,False
+Sperry Corporation,1,0,1,12,False,False
 Stennis Space Center,1,0,1,17,False,False
 Stoke Space,1,0,1,16,False,False
-Strategic Air Command,1,0,1,17,False,False
+Strategic Air Command,1,0,1,16,False,False
 Sustainable Development,1,0,1,5,False,True
 Tesla Powerpack,1,0,1,17,False,False
 Tesla Robotaxi,1,0,1,13,False,False
-Tesla Semi,1,0,1,11,False,False
+"Tesla, Inc",1,1,0,0,False,False
 Texas,1,0,1,2,False,False
 Thomas Pink,1,0,1,9,False,False
-Titan IV,1,0,1,11,False,False
-Tom Mueller,1,0,1,13,False,False
-UAL Corporation,1,0,1,17,False,False
+Titan IV,1,0,1,9,False,False
+Tom Mueller,1,0,1,12,False,False
+UAL Corporation,1,0,1,15,False,False
 UC Davis,1,0,1,0,False,False
+United Aircraft Corporation,1,1,0,9,False,True
 US Air,1,0,1,0,False,False
 US Air Force,1,0,1,0,False,False
 US Army,1,0,1,0,False,False
-US Deorbit Vehicle,1,0,1,0,False,False
 US Navy,1,0,1,0,False,False
 USS Amazon,1,0,1,6,False,False
+Vector Launch,1,1,0,19,False,True
+Virgin Galactic,1,1,0,15,False,True
 Volvo Amazon,1,0,1,10,False,False
-Vulcan Centaur,1,0,1,17,False,False
-Wall Street,1,0,1,5,False,False
-Wayback Machine,1,0,1,11,False,False
-Webb Space Telescope,1,0,1,0,False,False
-White Sands Missile Range,1,0,1,16,False,False
+Vulcan Centaur,1,0,1,15,False,False
+Walt Disney Company,1,1,0,0,False,False
 Wojciech Zaremba,1,0,1,7,False,False
 World Bank,1,0,1,0,False,False
-World Government,1,0,1,3,False,True
 World Government Summit,1,0,1,0,False,False
 World Rally,1,0,1,0,False,False
 World Values Survey,1,0,1,1,False,False
+X Corp,1,1,0,0,False,False
+XCOR Aerospace,1,1,0,13,False,True
 York City,1,0,1,0,False,False
-Yuri Gagarin,1,0,1,6,False,False
+Yuri Gagarin,1,0,1,5,False,False

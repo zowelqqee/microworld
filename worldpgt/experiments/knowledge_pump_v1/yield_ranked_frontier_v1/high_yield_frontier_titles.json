@@ -1,46 +1,14 @@
 [
   {
-    "title": "SpaceX",
-    "score": 140.0,
-    "positive_reasons": [
-      "source_page_produced_accepted_fact",
-      "subject_of_accepted_fact",
-      "object_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "Blue Origin",
-    "expected_yield_class": "high",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Bloomberg News",
-    "score": 115.0,
-    "positive_reasons": [
-      "source_page_produced_accepted_fact",
-      "subject_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source",
-      "gap_driven_entity"
-    ],
-    "source_hint": "Bloomberg L.P.",
-    "expected_yield_class": "high",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
     "title": "Jeff Bezos",
-    "score": 111.0,
+    "score": 111.333,
     "positive_reasons": [
       "source_page_produced_accepted_fact",
       "subject_of_accepted_fact",
       "encyclopedic_entity_form",
       "relation_or_overlay_source",
       "stale_snapshot_recheck",
-      "staleness_boost:6.00"
+      "staleness_boost:6.33"
     ],
     "source_hint": "Billionaire",
     "expected_yield_class": "high",
@@ -50,272 +18,77 @@
       "predicate": "estimated_net_worth",
       "object": "US$200 billion",
       "as_of": "2026-06",
-      "age_days": 18,
+      "age_days": 19,
       "freshness_window": 30,
-      "staleness_ratio": 0.6,
+      "staleness_ratio": 0.6333,
       "source_page": "Jeff Bezos",
       "temporal_class": "snapshot",
       "is_stale": false
     }
   },
   {
-    "title": "Falcon 9",
-    "score": 109.64,
-    "positive_reasons": [
-      "source_page_produced_accepted_fact",
-      "object_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "high",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Oracle Corporation",
-    "score": 49.64,
+    "title": "North American Aviation",
+    "score": 43.04,
     "positive_reasons": [
       "object_of_accepted_fact",
       "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
+      "term_in_accepted_fact_objects"
     ],
-    "source_hint": "Larry Ellison",
+    "source_hint": "NASA",
     "expected_yield_class": "medium",
     "recheck_required": false,
     "stale_fact": {}
   },
   {
-    "title": "Battery electric vehicle",
-    "score": 25.0,
+    "title": "Marconi Electronic Systems",
+    "score": 33.02,
     "positive_reasons": [
+      "subject_of_accepted_fact",
       "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
+      "term_in_accepted_fact_objects"
     ],
-    "source_hint": "",
+    "source_hint": "Aerospace manufacturer",
     "expected_yield_class": "medium",
     "recheck_required": false,
     "stale_fact": {}
   },
   {
-    "title": "Launch vehicle",
-    "score": 25.0,
+    "title": "Deutsche Bank",
+    "score": 28.04,
     "positive_reasons": [
+      "object_of_accepted_fact",
       "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
+      "term_in_accepted_fact_objects"
     ],
-    "source_hint": "",
+    "source_hint": "Forbes",
     "expected_yield_class": "medium",
     "recheck_required": false,
     "stale_fact": {}
   },
   {
-    "title": "Stock Exchange",
-    "score": 25.0,
+    "title": "Michael Bloomberg",
+    "score": 21.333,
     "positive_reasons": [
+      "subject_of_accepted_fact",
+      "object_of_accepted_fact",
       "encyclopedic_entity_form",
       "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "Economy of the United States",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Falcon 1",
-    "score": 24.64,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Renewable energy",
-    "score": 24.52,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Energy storage",
-    "score": 24.44,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Satellite Constellation",
-    "score": 24.44,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "Satellite constellation",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Tesla Model 3",
-    "score": 24.36,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Tesla Model S",
-    "score": 24.36,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Tesla Model X",
-    "score": 24.36,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Tesla Model Y",
-    "score": 24.36,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "SpaceX Starship",
-    "score": 24.22,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "Launch vehicle",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Energy industry",
-    "score": 24.2,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Technology company",
-    "score": 24.2,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "United States Securities and Exchange Commission",
-    "score": 24.2,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Public company",
-    "score": 24.12,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects",
-      "relation_or_overlay_source"
-    ],
-    "source_hint": "",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Bernard Arnault",
-    "score": 21.0,
-    "positive_reasons": [
-      "encyclopedic_entity_form",
       "relation_or_overlay_source",
       "stale_snapshot_recheck",
-      "staleness_boost:6.00"
+      "staleness_boost:6.33"
     ],
-    "source_hint": "Bernard Arnault",
+    "source_hint": "Bloomberg L.P.",
     "expected_yield_class": "medium",
     "recheck_required": true,
     "stale_fact": {
-      "subject": "Bernard Arnault",
+      "subject": "Michael Bloomberg",
       "predicate": "estimated_net_worth",
-      "object": "US$180 billion",
+      "object": "US$100 billion",
       "as_of": "2026-06",
-      "age_days": 18,
+      "age_days": 19,
       "freshness_window": 30,
-      "staleness_ratio": 0.6,
-      "source_page": "Bernard Arnault",
+      "staleness_ratio": 0.6333,
+      "source_page": "Michael Bloomberg",
       "temporal_class": "snapshot",
       "is_stale": false
     }

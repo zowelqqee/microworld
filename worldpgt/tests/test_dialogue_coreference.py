@@ -153,6 +153,53 @@ def test_ambiguous_reference_is_left_unresolved():
     assert result.replacements == ()
 
 
+def test_entities_in_window_skips_audit_turns():
+    """Audit turns must not consume window slots; confirmed entities persist."""
+    ctx = ConversationContext()
+    ctx.turns = [
+        _turn("What is SpaceX?", "SpaceX", ["SpaceX", "Elon Musk"]),
+        _turn("audit 1", None, [], decision="audit"),
+        _turn("audit 2", None, [], decision="audit"),
+        _turn("audit 3", None, [], decision="audit"),
+    ]
+    window = ctx.entities_in_window(n=3)
+    assert "SpaceX" in window
+    assert "Elon Musk" in window
+
+
+def test_entities_in_window_respects_n_confirmed_turns():
+    """Window of n=2 should only include last 2 non-audit turns."""
+    ctx = ConversationContext()
+    ctx.turns = [
+        _turn("turn 0", "Entity0", []),
+        _turn("turn 1", "Entity1", []),
+        _turn("turn 2", "Entity2", []),
+    ]
+    window = ctx.entities_in_window(n=2)
+    assert "Entity2" in window
+    assert "Entity1" in window
+    assert "Entity0" not in window
+
+
+def test_he_resolves_to_person_after_audit_turns():
+    """'he' must resolve to Elon Musk even when audit turns follow Q2."""
+    ctx = ConversationContext()
+    ctx.turns = [
+        _turn("What is SpaceX?", "SpaceX", ["SpaceX"]),
+        # After "Who founded SpaceX?" → Elon Musk is primary + mentioned
+        _turn("Who founded SpaceX?", "Elon Musk", ["Elon Musk", "SpaceX"], "founded_by"),
+        _turn("audit 1", None, [], decision="audit"),
+        _turn("audit 2", None, [], decision="audit"),
+        _turn("audit 3", None, [], decision="audit"),
+    ]
+
+    result = resolve_coreferences("What else did he found?", ctx, _index())
+
+    assert result.resolved_question == "What else did Elon Musk found?"
+    assert result.replacements[0].reference == "he"
+    assert result.replacements[0].entities == ("Elon Musk",)
+
+
 def test_interactive_cli_reports_unresolved_reference_before_guessing():
     proc = subprocess.run(
         [sys.executable, str(_CLI), "--interactive"],

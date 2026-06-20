@@ -1,0 +1,154 @@
+# James J. Hill
+
+Source: https://en.wikipedia.org/wiki/James_J._Hill
+Retrieved at: 2026-06-20T13:16:09Z
+Revision ID: 1357197252
+Raw text SHA256: 3d917b5a324f13f9fc5b69c648f6bf3e974738ef405ae8b5278d0a7be60fb6fb
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+James Jerome Hill (September 16, 1838 – May 29, 1916) was an American railway entrepreneur. He was the chief executive officer of a family of lines headed by the Great Northern Railway, which served a substantial area of the Upper Midwest, the northern Great Plains and the Pacific Northwest in the United States. Because of the size of this region and the economic dominance exerted by the Hill lines, Hill became known during his lifetime as "The Empire Builder", and died in 1916 with a fortune of about $63 million about $1.3 to 1.7 billion today. His former home, James J. Hill House, is now a museum in Saint Paul, Minnesota.
+
+Biography
+
+Childhood and youth
+James J. Hill was born September 16, 1838, in Eramosa Township, Upper Canada (now Ontario) to James Hill Jr. and Ann Dunbar. A childhood accident with a bow and arrow blinded him in the right eye. He had nine years of formal schooling. He attended the Rockwood Academy for a short while, where the head of the academy gave him free tuition. He was forced to leave school in 1852 after the death of his father. By that time, he was adept at math, land surveying, and English. His particular talents for English and mathematics were helpful in his career.
+
+After working as a clerk in Kentucky (during which he learned bookkeeping), Hill decided to permanently move to the United States and settled in St. Paul, Minnesota, at the age of 18. His first job in St. Paul was with a steamboat company, where he worked as a bookkeeper. By 1860, he was working for wholesale grocers, for whom he handled freight transfers, especially with railroads and steamboats. Through this work, he learned the freight and transportation business. During this period, Hill began to work for himself for the first time. In the winter, when the Mississippi River was frozen and steamboats could not run, Hill started bidding on other contracts and won several.
+Hill was a member of the Pioneer Guard. When the Civil War broke out, he wanted to join the First Minnesota Volunteer Infantry Regiment, but due to blindness in one eye he did not pass medical inspection.
+
+Young businessman
+Because of his previous experiences in shipping and fuel supply, Hill was able to enter both the coal and steamboat businesses. In 1870, he and his partners started the Red River Transportation Company, which offered steam boat transportation between St. Paul and Winnipeg. By 1879 he had a local monopoly by merging with Norman Kittson. In 1867, Hill entered the coal business, and by 1879 it had expanded five times over, giving Hill a local monopoly in the anthracite coal business. During this same period, he also entered into banking and quickly became a member of several major banks' boards of directors. He also bought out bankrupt businesses, built them up again, and resold them—often at a substantial profit. Hill said the secret to his success was "work, hard work, intelligent work, and then more work."
+
+Entry into Gilded Era railroading
+During the Panic of 1873, a number of railroads, including the St. Paul and Pacific Railroad (StP&P), went bankrupt. The StP&P was caught in an almost hopeless legal muddle. Hill researched the StP&P for three years and concluded that it would be possible to turn a profit off the StP&P, provided that the initial capital could be found. He teamed up with Norman Kittson (the man he had merged steamboat businesses with), Donald Smith, George Stephen, and John Stewart Kennedy. Together they not only bought the railroad but also vastly expanded it by bargaining for trackage rights with the Northern Pacific Railway. In May 1879, the St. Paul, Minneapolis, and Manitoba Railway Co. (StPM&M) formed with Hill as general manager. His first goal was to expand and upgrade even more.
+Hill was a hands-on, detail-obsessed manager. A Canadian of Scotch-Irish Protestant ancestry, he brought many men of the same background into high management. He wanted people to settle along his rail lines, so he sold homesteads to immigrants while transporting them to their new homes on his rail lines. When he was looking for the best path for a track to take, he went on horseback and scouted it personally. Under his management, StPM&M prospered. In 1880, its net worth was $728,000 (equal to $24,287,586 today); in 1885 it was $25,000,000, equal to $895,833,333 today.
+One of Hill's challenges was to avoid federal action against railroads. If the federal government believed that the railroads were making too much profit, they might see this as an opportunity to force lowering of the railway tariff rates. Hill avoided this by investing much of the railroad's profit back into the railroad itself—and charged those investments to operating expense.
+
+"Empire Builder"
+Between 1883 and 1889, Hill built his railroads across Minnesota, into Wisconsin, and across North Dakota to Montana.
+When there was not enough industry in the areas Hill was building, Hill brought the industry in, often by buying out a company and placing plants along his railroad lines. By 1889, he decided that his future lay in expanding into a transcontinental railroad.
+Hill said: "What we want is the best possible line, shortest distance, lowest grades, and least curvature we can build. We do not care enough for Rocky Mountains scenery to spend a large sum of money developing it." He got what he wanted, and in January 1893 his Great Northern Railway, running from St. Paul to Seattle, Washington—a distance of more than 1,700 miles (2,700 km)—was completed. The Great Northern was the first transcontinental built without public money and just a few land grants, and one of the few transcontinental railroads not to go bankrupt.
+Hill built his transcontinental railroad north of the competing Northern Pacific line, which had reached the Pacific Northwest over much more difficult terrain with more bridges, steeper grades, and tunnelling. He did much of the route planning himself, traveling over proposed routes on horseback. The key to the Great Northern line was Hill's use of the previously unmapped Marias Pass in northernmost Montana. The pass had initially been described by Lewis and Clark in 1805, but no one since had been able to find it. Hill hired Santiago Jameson to find it. Jameson discovered the pass 1889 and it shortened the Great Northern's route by almost one hundred miles. The pass had been discovered by John Frank Stevens, principal engineer of the Great Northern Railway, in December 1889, and offered an easier route across the Rockies than that taken by the Northern Pacific.
+The Great Northern reached Seattle on January 7, 1893.
+In 1898 Hill purchased control of large parts of the Mesabi Range iron mining district in Minnesota, along with its rail lines. The Great Northern began large-scale shipment of ore to the steel mills of the Midwest.
+
+Settlements
+The Great Northern energetically promoted settlement along its lines in North Dakota and Montana, especially by Germans and Scandinavians from Europe. The Great Northern bought its lands from the federal government—it received no land grants—and resold them to farmers at cheap prices. It operated agencies in Germany and Scandinavia that promoted its lands, and brought families over at low cost. Hill also invested in founding schools and churches for these communities and promoted a variety of progressive techniques to ensure they prospered.
+This "Dakota Boom" of largely Northern Europeans pouring into North Dakota's Red River Valley along the Minnesota border between 1871 and 1890 peaked in 1882 with 42,000 immigrants.
+
+Hill Lines in the 1890s
+Six months after the railroad reached Seattle came the deep nationwide depression called the Panic of 1893. Hill's leadership became a case study in the successful management of a capital-intensive business during the economic downturn. In order to ensure that he did not lose his patronage during the crisis, Hill lowered rail tariff shipping rates for farmers, gave credit to many of the businesses he owned so they could continue paying their workers, and started a "10 dollar trip" (equal to $358.33 today) for immigrants. He also took strong measures to economize—in just one year, Hill cut the railway's expense of carrying a ton of freight by 13%. Because of these measures, Hill not only stayed in business, but also increased the net worth of his railroad by nearly $10,000,000 (equal to $358,333,333 today). Meanwhile, nearly every other transcontinental railroad went bankrupt. His ability to ride out the depression garnered him fame and admiration.  Hill saved money by repeatedly cutting wages, made possible by a time of deflation when prices were falling generally.
+In 1893, Hill began the process of looking for a source of labor other than Chinese workers. For a brief period of time, he hired Italian and Greek laborers, but company officials were not satisfied with their performance. Hill sent emissaries to the Pacific who found that Japan had the most potential in the market of "Oriental Trade," and he decided to capitalize on this opportunity.
+In this time he also began to focus his energies on securing trade with Asian countries. He offered Japanese Industrialists Southern cotton and would even ship it for free if they would compare it with the short staple cotton they were using with the promise of a refund if they were dissatisfied, which they were not. With these friendly relations established, Hill managed to secure the industrializing Japanese order for 15,000 tons of rails against competition from England and Belgium. From 1886 to 1905, American exports to Japan leapt from $7.7 million a year (equal to $275,916,667 today) to $51.7 million, equal to $1,852,583,333 today.
+Leonard says that after 1900 Hill exhibited poor business judgment regarding one Canadian subsidiary,  the Vancouver, Westminster and Yukon Railway Company (VW&Y). He ousted its president John Hendry, thereby worsening the problems, prolonging the delays, and adding to the costs of taking over the VW&Y. Hill's top aides were careless about details, bookkeeping, correspondence, and reports.
+
+The Northern Pacific and the "short squeeze" of 1901
+With 1901 and the start of the new century, James Hill now had control of both the Great Northern Railway, and the Northern Pacific (which he had obtained with the help of his friend J. P. Morgan, when that railroad went bankrupt in the depression of the mid-1890s).  Hill also wanted control of the Chicago, Burlington and Quincy railroad because of its Midwestern lines and access to Chicago. The Union Pacific Railroad was the biggest competitor of Great Northern and Northern Pacific Railroads. Although Great Northern and Northern Pacific were backed by J. P. Morgan and James J. Hill, the Union Pacific was backed not only by its president, Edward H. Harriman, but by the extremely powerful William Rockefeller and Jacob Schiff.
+Quietly, Harriman began buying stock in Northern Pacific with the intention of gaining control of Chicago, Burlington, and Quincy. He was within 40,000 shares of control when Hill learned of Harriman's activities and quickly contacted J. P. Morgan, who ordered his men to buy everything they could get their hands on.
+The result was chaos on Wall Street. Northern Pacific stock was forced up to $1,000 per share. Many speculators, who had sold Northern Pacific "short" in the anticipation of a drop in the railroad's price, faced ruin. The threat of a real economic panic loomed. Neither side could win a distinct advantage, and the parties soon realized that a truce would have to be called. The outcome was the formation of the Northern Securities Company, which added Harriman to the joint control of the Northern Pacific, Great Northern, and Chicago, Burlington and Quincy railroads.
+
+Northern Securities Company gets Trust Busted
+Just as the Hill-Morgan-Harriman alliance formed, Theodore Roosevelt became president and turned his energies against the great trusts that were monopolizing trade. He sent his Justice Department to sue the Northern Securities Company in 1902. The Supreme Court in 1904 ordered it to be dissolved as a monopoly. (Ironically, the Burlington Route, Northern Pacific, and Great Northern would later merge in 1970 to form the Burlington Northern Railroad.) This ended Hill's ability to maintain competitive rates in Asian countries and in the subsequent two years American trade with Japan and China dropped 40% (or $41 million).
+
+Hill continues on
+In the aftermath of the dissolution of the Northern Securities Company Hill moved on without the benefit of a central company, and acquired the Colorado and Southern Railway lines into Texas. He also built the Spokane, Portland and Seattle Railway.
+The Great Northern Railway and the Northern Pacific tried to merge four times, in 1896, 1901, 1927, and 1955. This last attempt lasted from 1955 until final Supreme Court approval and merger in March 1970, which created the Burlington Northern Railroad. In 1995, Burlington Northern merged with the Atchison, Topeka and Santa Fe Railway to become the Burlington Northern and Santa Fe Railway.
+By the time of his death in 1916, James J. Hill was worth more than $63 million, equivalent to $1,863,990,826 today, and over $200 million in related assets. When his estate was divided his widow received over $16 million, and each of his children received almost $4 million; $1.5 million was paid in income and inheritance taxes.
+
+Personal life
+
+In addition to philanthropic endeavors, Hill lead a substantial and active life outside of business, resulting in a diverse legacy.
+In 1867, he married Mary Theresa Mehegan, a Roman Catholic (born 1846, New York City); they had ten children, nine reaching adulthood:
+
+Mary Frances "Mamie" (Hill) Hill (1869–1947), who married Samuel Hill of Washington D.C. and Seattle. Samuel Hill was an executive at the Great Northern Railway when he married Mary Hill.
+James Norman "Jimmy" Hill (1870–1932) of New York City, married socialite Marguerite Sawyer. His family did not attend the wedding reportedly owing to Marguerite's status as a divorcee.
+Louis Warren Hill (1872–1948) of St. Paul, Minnesota, who was named president of the GN in 1907 and board chairman in 1912. He married Maud Van Cortlandt Taylor.
+Clara Anne (Hill) Lindley (1873–1947), who married E. C. Lindley of St. Paul, Minnesota, who was vice-president, counsel general, and a member of the board of directors of the Great Northern Railway.
+Katherine Theresa Hill (1875–1876; died in infancy)
+Charlotte Elizabeth (Hill) Slade (1877–1923), who married George T. Slade of New York City and St. Paul, Minnesota. George T. Slade was an executive at The Great Northern Railway and Yale classmate of Louis W. Hill.
+Ruth (Hill) Beard (1879–1959), who married Anson McCook Beard of New York City.
+Rachel (Hill) Boeckmann (1881–1967), who married Egil Boeckmann of St. Paul, Minnesota.
+Gertrude (Hill) Gavin (1883–1961), who married Michael Gavin of New York City.
+Walter Jerome Hill (1885–1944) of St. Paul, Minnesota. Walthill, Nebraska, was named for Walter.
+In October 1880, Hill became citizen of the United States and renounced his Canadian citizenship.
+
+From 1901 to 1915, Hill took an annual salmon fishing trip to Riviere Ste. Jean in Quebec aboard his yacht Wacouta.  Members of his family accompanied him on many of these trips as did such notables at former President Grover Cleveland, former Secretary of War Daniel S. Lamont, and George F. Baker, President of the First National Bank of New York.
+
+Death
+By early 1916, Hill began pouring more attention into philanthropy, donating thousands of dollars to various institutions as he privately struggled with a variety of increasingly painful ailments. His condition deteriorated quickly in mid-May, but even with the help of many respected doctors his condition worsened. After falling into a coma, he died in his home in St. Paul, Minnesota, on May 29, 1916.[14] Mary Theresa Hill died in 1921 and was buried next to her husband by the shore of Pleasant Lake on their North Oaks farm. They were later reinterred at Resurrection Cemetery in Mendota Heights.
+
+Legacy
+Give me Swedes, snuff and whiskey, and I'll build a railroad through hell.
+Politically, Hill was a conservative Bourbon Democrat. The Democratic Party's support of the Populist movement and
+William Jennings Bryan led Hill to back Republican presidential candidates William McKinley (1896 and 1900), Theodore Roosevelt (1904), and William Howard Taft (1908 and 1912). Hill was a supporter of free trade and was one of the few supporters of free trade with Canada.
+In St. Paul, the city's main library building and the adjoining Hill Business Library were funded by him. In addition, he donated to numerous schools, including the Saint Paul Seminary. Hill was a member of the Jekyll Island Club (aka The Millionaires Club) on Jekyll Island, Georgia, along with J. P. Morgan and William Rockefeller.
+
+In 1891, after three years of construction, work was completed on Hill's massive new mansion in St. Paul. Over 400 workers labored to build the 36,000 sq ft (3,300 m2) James J. Hill House, at a cost of $930,000. As with his business dealings, Hill supervised the construction and design himself, hiring and firing several architects in the process. The house has many early electrical and mechanical systems that predate widespread adoption in modern domestic structures.
+Upon completion of the new residence, Hill had the family's old house, which he had constructed in 1878, razed. After the death of Hill's wife in 1921, the house was donated to the Archdiocese of Saint Paul and Minneapolis. It was obtained by the Minnesota Historical Society in 1978 and today is operated as a museum and gallery.
+Though a Protestant, Hill was married to a practicing Catholic,  and maintained a strong philanthropic relationship with the Catholic Church in St. Paul and throughout the northwest. Hill's historic home is located next to the cathedral, largely due to the special relationship Hill's wife had with the Diocese. The Hills maintained close ties with Archbishop John Ireland, and Hill was a major contributor to the Saint Paul Seminary, Macalester College, Hamline University, the University of St. Thomas, Carleton College, and other educational, religious and charitable organizations. He was the first major donor to the Marquette University School of Medicine.
+In order to generate business for his railroad, Hill encouraged European immigrants to settle along his line, often paying for Russian and Scandinavian settlers to travel from Europe. To promote settlement and revenue for his rail business, Hill experimented with agriculture and worked to hybridize Russian wheat for Dakota soil and weather conditions. He also ran model experimental farms in Minnesota, such as North Oaks, to experiment in dairying and develop superior livestock and crop yields for the settlers locating near his railroads.
+An enthusiastic conservationist, Hill was invited by President Theodore Roosevelt to a governors' conference on conservation of natural resources, and later appointed to a lands commission.
+Drawing on his experience in the development of Minnesota's Iron Range, Hill was, during 1911–1912, in close contact with Gaspard Farrer of Baring Brothers & Company of London regarding the formation of the Brazilian Iron Ore Company to tap that nation's rich mineral deposits.
+Near the end of his life, Hill played what a recent biographer, Albro Martin, called his "last and greatest role." After the first punishing year of World War I, the Allied Powers desperately needed financial support to continue the war effort. To that end, Hill was a major figure in the effort launched by J.P. Morgan to float the Anglo-French Bond drive of 1915, which allowed the Allies to purchase much-needed foodstuffs and other supplies. In September 1915, the first public loan, the $500,000,000 Anglo-French loan, was floated after negotiations with the Anglo-French Financial Commission. Concomitantly, the resulting trade in munitions with England and France carried the United States from a depression in 1914 to boom years in 1915 and 1916.
+Hillsboro, North Dakota; Hill County, Montana; and Hillyard, Washington (now a neighborhood of Spokane), are named for him. Jim Hill Mountain near Stevens Pass in the Cascade Range is named after him, also.  The introduced crop weed in Western US wheat-growing areas Sisymbrium altissimum also has a common name "Jim Hill Mustard", after the belief by farmers that it was spread from contaminated seed leaking out of railway stock along the railroads he controlled.
+In 1929, the Great Northern Railway inaugurated a long-distance passenger train extending from Chicago to Seattle, and named it the Empire Builder in his honor. The train served as Great Northern's flagship train, and is still operated today by Amtrak. using former Great Northern tracks west of St. Paul. The James J. Hill House in St. Paul, is a National Historic Landmark.
+In 1887, the Great Northern's first company headquarters building was constructed in St. Paul. It was designed by James Brodie, who also built the Hill house on Summit Avenue. The 1887 building was converted between 2000 and 2004 to a 53 unit condo in the Historic Lowertown District of St. Paul. Hill had seen the devastation done downtown by the Great Chicago Fire. As a result, one feature Hill integrated into the construction of the 1887 company headquarters (the Great Northern General Office Building) was barrel-vaulted ceilings constructed of brick and railroad steel rails that held up a layer of sand several inches deep. The theory was that if a fire broke out and the ceiling caved in, the sand would drop and retard or suppress the fire.
+Hill was intimately involved in the planning and construction (1914–1916) of a new company headquarters in St. Paul (to be known as the Great Northern Office Building), which was to house the corporate staffs of the Great Northern, the Northern Pacific and Hill's banking enterprises. The 14-story building cost $14 million to construct.
+Hill's heirs established the James J. Hill Reference Library in St. Paul, which is considered by the Small Business Administration the premier source for publicly accessible practical business information in the United States, and many SBA programs rely on the Hill Library's HillSearch service to provide business information resources to small businesses nationwide. The Hill Library has developed numerous online programs and now serves millions of small business owners worldwide.
+In The Great Gatsby, Hill is the man whom Gatsby's father says Gatsby would have equalled if he had lived long enough.
+Hill and his railway are mentioned in the Harry McClintock song "Hallelujah, I'm a Bum."
+In Minnesota in 1959, Hill High in St. Paul was established as a school from the funds set aside from Hill's wife for education. The all-male school consolidated in 1971 with the all-female Archbishop Murray School to form Hill-Murray School in Maplewood.  In North Dakota in 1964, Minot Public Schools opened Jim Hill Junior High School (now a middle school).
+Hill Capital is a venture capital fund established in 2016 "aligned with James J. Hill's belief in the cooperation of the production, distribution and exchange of wealth as outlined in his writings". The Hill library owns 75 shares. As of September 2016, the fund is not yet closed.
+In 1958, he was inducted into the Hall of Great Westerners of the National Cowboy & Western Heritage Museum.
+A bust of Hill is located on the University of Washington campus in Seattle, Washington. It is currently situated in front of More Hall.
+
+See also
+
+Charles T. Hinde railroad executive, founder of the Hotel del Coronado, and long time friend of James J. Hill.
+Pierce Butler (justice)
+List of railroad executives
+James J. Hill Sapphire
+
+Footnotes
+
+Further reading
+Folsom, Burton W. (2003). The Myth of the Robber Barons: A New Look at the Rise of Big Business in America. Herdon, VA: Young America's Foundation. ISBN 978-0-9630-2031-4. OCLC 260332319.
+Haeg, Larry, Harriman vs Hill: Wall Street's Great Railroad War. (U of Minnesota Press, 2013)
+Holbrook, Stewart H. James J. Hill: a great life in brief (Epicenter Press, 2018).
+Joslin-Zirngible, Rachel. "James J. Hill: Philanthropy and Reputation in Twentieth Century St. Paul." (PhD Diss. U of Wisconsin 2015) online.
+Malone, Michael P., James J. Hill: Empire Builder of the Northwest. (Norman, OK: University of Oklahoma Press, 1996).
+Martin, Albro (1976). James J. Hill and the Opening of the Northwest. New York: Oxford University Press.
+Pyle, Joseph G. "James J. Hill" Minnesota History Bulletin 2#5 (1918), pp. 295–323. online short scholarly biography
+Pyle, Joseph Gilpin. The Life of James J. Hill (2 vol 1917)
+online vol 1; also online vol 2; long scholarly biography
+online review
+Schonberger, Howard. "James J. Hill and the Trade with the Orient." Minnesota History 41.4 (1968): 178–190. online Archived May 31, 2023, at the Wayback Machine
+Sherman, T. Gary, Conquest and Catastrophe: The Triumph and tragedy of the Great Northern Railway Through Stevens Pass, AuthorHouse, 2004.
+Sobel, Robert (1974). "James J. Hill : The Business of Empire". The Entrepreneurs: Explorations Within the American Business Tradition. New York: Weybright & Talley. pp. 110–147. ISBN 0-679-40064-8.
+White, Richard (2011). Railroaded: The Transcontinentals and the Making of Modern America. W. W. Norton & Company. ISBN 978-0-393-06126-0.
+White, W. Thomas. "A Gilded Age Businessman in Politics: James J. Hill, the Northwest, and the American Presidency, 1884-1912," Pacific Historical Review, vol. 57, no. 4 (Nov. 1988), pp. 439–456. In JSTOR
+Wills, Jocelyn (2005). Boosters, Hustlers, and Speculators: Entrepreneurial Culture and the Rise of Minneapolis and St. Paul, 1849-1883. Minnesota Historical Society Press. ISBN 978-0-87351-510-8.
+Dutiful Son: Louis W. Hill Sr. Book, Book about Louis W. Hill Sr., son and successor of empire builder James J. Hill at Ramsey County Historical Society.
+
+Primary Sources
+JJ Hill Papers. "James J. Hill; An Inventory of His Papers at the Minnesota Historical Society". Minnesota Historical Society.
+Great Northern Railway Company Records, Minnesota Historical Society.
+Northern Pacific Railway Corporate Records, Minnesota Historical Society.
+
+External links
+
+Mary Theresa Mehegan Hill in MNopedia, the Minnesota Encyclopedia
+James J. Hill in MNopedia, the Minnesota Encyclopedia
+James J. Hill Washington State History
+James J. Hill Reference Library
+James J. Hill and the Building of His Railroad Empire Archived September 30, 2019, at the Wayback Machine
+The Destruction of a Wealth and Jobs Creator by Parasitical-Elites A criticism of government intervention in the business of Hill
+Biography at the Dictionary of Canadian Biography Online
+James J. Hill Scrapbook, 1916 Archives Center, National Museum of American History, Smithsonian Institution.
+Webvideo:James J. Hill and the Building of the Stone Arch Bridge on YouTube
+The Truth About the "Robber Barons" A discussion of Hill's building of the transcontinental railroad by Thomas DiLorenzo
+"Hill, James Jerome" . Encyclopedia Americana. 1920.
+"Hill, James Jerome" . The New Student's Reference Work . 1914.
+Works by or about James J. Hill at the Internet Archive
+Works by James J. Hill at LibriVox (public domain audiobooks)

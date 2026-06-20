@@ -1,7 +1,7 @@
 # Digital Equipment Corporation
 
 Source: https://en.wikipedia.org/wiki/Digital_Equipment_Corporation
-Retrieved at: 2026-06-17T17:14:01Z
+Retrieved at: 2026-06-20T13:20:04Z
 Revision ID: 1359387528
 Raw text SHA256: 1d5ca6c5c0eb35f415ac823b3c51005e9396958d3cb40459f460911f04858d44
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -1,7 +1,7 @@
 # Relational Software
 
 Source: https://en.wikipedia.org/wiki/Relational_Software
-Retrieved at: 2026-06-17T17:10:14Z
+Retrieved at: 2026-06-20T12:51:07Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

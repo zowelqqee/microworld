@@ -1,9 +1,9 @@
 # Los Angeles
 
 Source: https://en.wikipedia.org/wiki/Los_Angeles
-Retrieved at: 2026-06-17T17:10:33Z
-Revision ID: 1359741130
-Raw text SHA256: fdf483edee0ce1de7c24f7a41e2b71a5d68da369a7af4c5a96943ec8e8483958
+Retrieved at: 2026-06-20T12:52:07Z
+Revision ID: 1360189520
+Raw text SHA256: 84352c7dd904872a4475720b723e08683de45214b51b04ec1d4b24f175b80045
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
@@ -30,12 +30,12 @@ In 1771, Franciscan friar Junípero Serra directed the building of the Mission S
 
 Mexican rule
 
-New Spain achieved its independence from the Spanish Empire in 1821, and the pueblo existed within the new Mexican Republic. During Mexican rule, Governor Pío Pico made Los Angeles the regional capital of Alta California. By this time, the new republic introduced more secularization acts within the Los Angeles region. In 1846, during the wider Mexican–American War, marines from the United States occupied the pueblo. This resulted in the siege of Los Angeles, where 150 Mexican militias fought the occupiers, who eventually surrendered.
+New Spain achieved its independence from the Spanish Empire in 1821, after which the pueblo existed within the new Mexican Republic. During Mexican rule, Governor Pío Pico made Los Angeles the regional capital of Alta California. By this time, the new republic introduced more secularization acts within the Los Angeles region. In 1846, during the wider Mexican–American War, marines from the United States occupied the pueblo. This resulted in the siege of Los Angeles, where 150 Mexican militias fought the occupiers, who eventually surrendered.
 Mexican rule ended following the American Conquest of California, part of the larger Mexican-American War. Americans took control from the Californios after a series of battles, culminating with the signing of the Treaty of Cahuenga on January 13, 1847. The Mexican Cession was formalized in the Treaty of Guadalupe Hidalgo in 1848, which ceded Los Angeles and the rest of Alta California to the United States.
 
 Post-Conquest era
 
-Railroads arrived with the completion of the transcontinental Southern Pacific line from New Orleans to Los Angeles in 1876 and the Santa Fe Railroad in 1885. Petroleum was discovered in the city and surrounding area in 1892, and by 1923, the discoveries helped California become the country's largest oil producer, accounting for about one-quarter of the world's petroleum output.
+Railroads arrived with the completion of the Southern Pacific line from San Francisco to Los Angeles in 1876 and the Santa Fe Railroad in 1885. Petroleum was discovered in the city and surrounding area in 1892, and by 1923, the discoveries helped California become the country's largest oil producer, accounting for about one-quarter of the world's petroleum output.
 By 1900, the population had grown to more than 102,000, putting pressure on the city's water supply. The completion of the Los Angeles Aqueduct in 1913, under the supervision of William Mulholland, ensured the continued growth of the city. Because of clauses in the city's charter that prevented the City of Los Angeles from selling or providing water from the aqueduct to any area outside its borders, many adjacent cities and communities felt compelled to join Los Angeles.
 
 Los Angeles created the first municipal zoning ordinance in the United States. On September 14, 1908, the Los Angeles City Council promulgated residential and industrial land use zones. The new ordinance established three residential zones of a single type, where industrial uses were prohibited. The proscriptions included barns, lumber yards, and any industrial land use employing machine-powered equipment. These laws were enforced against industrial properties after the fact. These prohibitions were in addition to existing activities that were already regulated as nuisances. These included explosives warehousing, gas works, oil drilling, slaughterhouses, and tanneries. Although the council designated seven industrial zones, exemptions granted between 1908 and 1915 permitted industrial development within designated residential areas. There are two differences between the 1908 Residence District Ordinance and later zoning laws in the United States. First, the 1908 laws did not establish a comprehensive zoning map as the 1916 New York City Zoning Ordinance did. Second, the residential zones did not distinguish types of housing; they treated apartments, hotels, and detached single-family housing equally.

@@ -1,7 +1,7 @@
 # Communications satellite
 
 Source: https://en.wikipedia.org/wiki/Communications_satellite
-Retrieved at: 2026-06-17T17:09:09Z
+Retrieved at: 2026-06-20T12:48:03Z
 Revision ID: 1359818425
 Raw text SHA256: 14d5da8bd2038efe58236df34333766c6009fb51a67fc55ea79d5f73f7029bad
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -1,0 +1,15 @@
+{
+  "title": "Commodore Perry",
+  "normalized_title": "Commodore Perry",
+  "pageid": 233452,
+  "revision_id": 1105201050,
+  "timestamp": "2022-08-19T02:23:11Z",
+  "source_url": "https://en.wikipedia.org/wiki/Commodore_Perry",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Commodore+Perry",
+  "retrieved_at": "2026-06-20T08:06:06Z",
+  "raw_text": "Commodore Perry may refer to:\n\nCommodore Matthew Perry (1794–1858), United States Navy officer\nCommodore Oliver Hazard Perry (1785–1819), United States Navy officer\nCommodore Perry Owens (1852–1919), American gunfighter\nUSS Commodore Perry (1859), a United States Navy steamship\nLyman Perry (1897–1975), United States Navy officer with rank of commodore and All-American football player",
+  "raw_text_sha256": "de749f33f792cc7fd920a8b2e1db3e6dd229bab9e728ea0743bce6752fb9fb66",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

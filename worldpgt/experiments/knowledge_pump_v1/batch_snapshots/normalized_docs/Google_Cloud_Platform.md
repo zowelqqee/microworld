@@ -1,7 +1,7 @@
 # Google Cloud Platform
 
 Source: https://en.wikipedia.org/wiki/Google_Cloud_Platform
-Retrieved at: 2026-06-17T17:11:29Z
+Retrieved at: 2026-06-20T12:55:03Z
 Revision ID: 1359777441
 Raw text SHA256: 06cede9ddbee065bc2d1e7b6bb8f7e3ea7bdc40fb4f0b61126f033c5e43694a0
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

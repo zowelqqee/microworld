@@ -1,17 +1,17 @@
 # New Glenn
 
 Source: https://en.wikipedia.org/wiki/New_Glenn
-Retrieved at: 2026-06-17T17:09:06Z
-Revision ID: 1359117679
-Raw text SHA256: 7b75db79607a194347cde03ce3c11460f9df72a7a1619c09d91847178390531e
+Retrieved at: 2026-06-20T12:48:00Z
+Revision ID: 1360131593
+Raw text SHA256: a6e17a0fbd5a62c4d87931c1a3b6cc51134cd52951f5a3238a2f7cf8cac8a749
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
-New Glenn is a family of launch vehicles developed and operated by the American company Blue Origin. The rocket has two configurations, one inactive after a 2026 explosion that damaged the rocket's launch pad, and one under development, both using a two stage partially reusable design with a seven-meter (23 ft) diameter.
+New Glenn is a family of two-stage partially reusable launch vehicles developed and operated by the American company Blue Origin. The rocket has an operational heavy-lift New Glenn 7×2 configuration and under-development super heavy-lift New Glenn 9×4 configuration, both using seven-meter (23 ft) diameter stages. With a payload capacity of 45 tons to low Earth orbit, it is the most powerful reusable launch vehicle to reach orbit.
 Development of New Glenn began before 2013 and was officially announced in 2016. The rocket is named for NASA astronaut John Glenn, the first American to orbit Earth. The inaugural vehicle was unveiled on the launch pad in February 2024. Its first flight, NG-1, took place on January 16, 2025, from Cape Canaveral Launch Complex 36. Carrying the Blue Ring Pathfinder, the launch served as the first of several demonstration flights required for certification for the National Security Space Launch program.
 As with Blue Origin's suborbital New Shepard rocket, New Glenn's first stage is designed for reuse. It lands at sea on a barge called Landing Platform Vessel 1. The first stage achieved its first successful landing on November 13, 2025, during New Glenn's second flight, NG-2. New Glenn is slated to launch Blue Origin's Blue Moon Mark 1 lunar lander on robotic missions.
-The first version of New Glenn, or New Glenn 7×2, is a heavy-lift launch vehicle. The first stage is powered by seven BE-4 engines, while the second stage uses two BE-3U engines; both engine types are designed and built by Blue Origin. It launches from Cape Canaveral Launch Complex 36, with future missions planned from Vandenberg Space Launch Complex 9. It is one of three operational US heavy-lift rockets, alongside United Launch Alliance's Vulcan Centaur and SpaceX's Falcon Heavy.
-A super heavy-lift version called New Glenn 9×4 is in development as of 2025. It has nine BE-4 engines on the first stage, four BE-3U engines on the second stage, and a larger payload fairing measuring 8.7 meters (29 ft) in diameter.
+The New Glenn 7×2 first stage is powered by seven methalox BE-4 engines, while the second stage uses two hydrolox BE-3U engines; both engine types are designed and built by Blue Origin. It launches from Cape Canaveral Launch Complex 36 (LC-36), with future missions planned from Vandenberg Space Launch Complex 9. It is one of three operational US heavy-lift rockets, alongside United Launch Alliance's Vulcan Centaur and SpaceX's Falcon Heavy. A May 2026 explosion of this version during preparation for an Amazon Leo launch heavily damaged LC-36.
+New Glenn 9×4 is in development as of 2025. It has nine BE-4 engines on the first stage, four BE-3U engines on the second stage, and a larger payload fairing measuring 8.7 meters (29 ft) in diameter.
 
 History
 Blue Origin, which had begun to develop an orbital rocket system before 2012, said on its website in 2013 that the first stage would do a powered vertical landing and be reusable. It publicly declared orbital launch vehicle intentions in September 2015, and four months later said the new rocket would be many times larger than New Shepard, and the first of a Blue Origin family of orbital vehicles. In September 2016, Blue Origin released the basic design of the vehicle, declared its intent to build two- and three-stage variants, and announced the name New Glenn.

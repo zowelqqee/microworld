@@ -5,9 +5,9 @@
   },
   "quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 2,
+    "headquartered_in_quarantine_default": 5,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 2
+    "truncated_person_alias": 3
   }
 }

@@ -234,3 +234,36 @@ class TestAnalyzeGaps:
         _write_log(log, [_entry("Starbase", "unsupported")])
         report = analyze_gaps(log, period_days=30)
         assert report.acquisition_candidates[0].gap_type == "unknown_entity"
+
+    def test_eligibility_filter_keeps_source_backed_entity(self, tmp_path):
+        log = tmp_path / "audit.jsonl"
+        _write_log(log, [
+            _entry("Starlink", "missing_knowledge"),
+            _entry("Zaphod Beeblebrox", "missing_knowledge", reason="no stable definition"),
+        ])
+        report = analyze_gaps(log, period_days=30, require_acquisition_eligibility=True)
+        entities = {entry.entity for entry in report.acquisition_candidates}
+
+        assert "Starlink" in entities
+        assert "Zaphod Beeblebrox" not in entities
+
+    def test_eligibility_filter_excludes_synthetic_source_even_if_known(self, tmp_path):
+        log = tmp_path / "audit.jsonl"
+        entry = _entry("SpaceX", "missing_knowledge", source="synthetic_fixture")
+        _write_log(log, [entry])
+        report = analyze_gaps(log, period_days=30, require_acquisition_eligibility=True)
+
+        assert report.acquisition_candidates == []
+
+    def test_synthetic_edge_cases_remain_available_without_production_filter(self, tmp_path):
+        log = tmp_path / "audit.jsonl"
+        _write_log(log, [
+            _entry("Zaphod Beeblebrox", "missing_knowledge", reason="no stable definition"),
+            _entry("the Galactic Empire", "missing_knowledge", reason="no stable relation"),
+        ])
+        report = analyze_gaps(log, period_days=30)
+
+        assert {entry.entity for entry in report.acquisition_candidates} == {
+            "Zaphod Beeblebrox",
+            "the Galactic Empire",
+        }

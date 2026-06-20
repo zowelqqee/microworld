@@ -1,7 +1,7 @@
 # Kennedy Space Center Launch Complex
 
 Source: https://en.wikipedia.org/wiki/Kennedy_Space_Center_Launch_Complex
-Retrieved at: 2026-06-17T17:11:42Z
+Retrieved at: 2026-06-20T12:55:41Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

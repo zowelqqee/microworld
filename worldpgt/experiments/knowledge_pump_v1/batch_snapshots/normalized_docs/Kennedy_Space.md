@@ -1,7 +1,7 @@
 # Kennedy Space
 
 Source: https://en.wikipedia.org/wiki/Kennedy_Space
-Retrieved at: 2026-06-17T17:09:14Z
+Retrieved at: 2026-06-20T12:48:10Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

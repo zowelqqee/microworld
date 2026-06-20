@@ -1,23 +1,23 @@
 {
   "precision_cleanup_v2_1_enabled": true,
-  "answerable_before_cleanup": 927,
-  "answerable_after_cleanup": 912,
-  "relation_before_count": 58,
-  "relation_after_count": 47,
-  "definition_before_count": 206,
-  "definition_after_count": 202,
+  "answerable_before_cleanup": 1091,
+  "answerable_after_cleanup": 1072,
+  "relation_before_count": 198,
+  "relation_after_count": 183,
+  "definition_before_count": 208,
+  "definition_after_count": 204,
   "rejected_count": 6,
-  "quarantined_count": 9,
+  "quarantined_count": 13,
   "rejection_by_reason": {
     "composite_region_subject": 2,
     "definition_truncated_participle": 4
   },
   "quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 2,
+    "headquartered_in_quarantine_default": 5,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 2
+    "truncated_person_alias": 3
   },
   "duplicate_relation_groups": [
     {
@@ -104,6 +104,13 @@
       "reason": "subject_alias_too_short"
     },
     {
+      "subject": "I-Pace",
+      "predicate": "developed_by",
+      "object": "Graz",
+      "definition": null,
+      "reason": "truncated_person_alias"
+    },
+    {
       "subject": "Affirm",
       "predicate": "developed_by",
       "object": "Levchin",
@@ -128,6 +135,27 @@
       "subject": "GAO",
       "predicate": "headquartered_in",
       "object": "Washington",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "H - E - B",
+      "predicate": "headquartered_in",
+      "object": "San Antonio",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "The North American Development Bank",
+      "predicate": "headquartered_in",
+      "object": "San Antonio",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "Sirius Satellite Radio IncInc\u0000",
+      "predicate": "headquartered_in",
+      "object": "New York City",
       "definition": null,
       "reason": "headquartered_in_quarantine_default"
     }
@@ -194,11 +222,6 @@
       "object": "Sonus Networks"
     },
     {
-      "subject": "Arianespace",
-      "predicate": "subsidiary_of",
-      "object": "ArianeGroup"
-    },
-    {
       "subject": "Sleepycat Software",
       "predicate": "owned_by",
       "object": "Oracle Corporation"
@@ -214,11 +237,6 @@
       "object": "Jack Dabney Ringwalt"
     },
     {
-      "subject": "Bigelow Aerospace",
-      "predicate": "founded_by",
-      "object": "Robert Bigelow"
-    },
-    {
       "subject": "Bloomberg Government",
       "predicate": "service_of",
       "object": "Bloomberg"
@@ -232,6 +250,16 @@
       "subject": "Michael Liebreich",
       "predicate": "develops",
       "object": "New Energy Finance"
+    },
+    {
+      "subject": "Bloomberg Radio",
+      "predicate": "service_of",
+      "object": "Bloomberg"
+    },
+    {
+      "subject": "X-37",
+      "predicate": "operated_by",
+      "object": "Department"
     }
   ],
   "definition_examples_preserved": [
@@ -242,6 +270,10 @@
     {
       "subject": "HMS Amazon",
       "definition": "26-gun frigate"
+    },
+    {
+      "subject": "International Astronomical Union",
+      "definition": "international association of professional astronomers"
     },
     {
       "subject": "June",
@@ -270,10 +302,6 @@
     {
       "subject": "Alpha Magnetic Spectrometer",
       "definition": "particle physics experiment module"
-    },
-    {
-      "subject": "Amalgam Comics",
-      "definition": "collaborative publishing imprint shared by DC Comics"
     }
   ]
 }

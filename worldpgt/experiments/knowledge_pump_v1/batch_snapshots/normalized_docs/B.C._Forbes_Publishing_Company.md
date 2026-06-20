@@ -1,7 +1,7 @@
 # B.C. Forbes Publishing Company
 
 Source: https://en.wikipedia.org/wiki/B.C._Forbes_Publishing_Company
-Retrieved at: 2026-06-17T17:10:53Z
+Retrieved at: 2026-06-20T12:53:08Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

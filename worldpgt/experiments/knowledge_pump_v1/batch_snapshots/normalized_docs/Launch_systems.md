@@ -1,7 +1,7 @@
 # Launch systems
 
 Source: https://en.wikipedia.org/wiki/Launch_systems
-Retrieved at: 2026-06-17T17:08:51Z
+Retrieved at: 2026-06-20T12:47:07Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

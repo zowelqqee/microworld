@@ -1,7 +1,7 @@
 # Berlin-made Model
 
 Source: https://en.wikipedia.org/wiki/Berlin-made_Model
-Retrieved at: 2026-06-17T17:09:57Z
+Retrieved at: 2026-06-20T12:50:16Z
 Revision ID: 
 Raw text SHA256: 
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

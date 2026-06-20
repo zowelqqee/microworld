@@ -1,7 +1,7 @@
 # Armadillo Aerospace
 
 Source: https://en.wikipedia.org/wiki/Armadillo_Aerospace
-Retrieved at: 2026-06-17T17:09:29Z
+Retrieved at: 2026-06-20T12:49:03Z
 Revision ID: 1359334743
 Raw text SHA256: 17b2adcc001cdd4ba6e0e2571613557d4c0cf062e78c1543e7fd76a1a77c9433
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

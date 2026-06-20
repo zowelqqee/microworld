@@ -1,23 +1,23 @@
 {
   "precision_cleanup_v2_1_enabled": true,
-  "precision_cleanup_v2_1_answerable_before_count": 927,
-  "precision_cleanup_v2_1_answerable_after_count": 912,
-  "precision_cleanup_v2_1_relation_before_count": 58,
-  "precision_cleanup_v2_1_relation_after_count": 47,
-  "precision_cleanup_v2_1_definition_before_count": 206,
-  "precision_cleanup_v2_1_definition_after_count": 202,
+  "precision_cleanup_v2_1_answerable_before_count": 1091,
+  "precision_cleanup_v2_1_answerable_after_count": 1072,
+  "precision_cleanup_v2_1_relation_before_count": 198,
+  "precision_cleanup_v2_1_relation_after_count": 183,
+  "precision_cleanup_v2_1_definition_before_count": 208,
+  "precision_cleanup_v2_1_definition_after_count": 204,
   "precision_cleanup_v2_1_rejected_count": 6,
-  "precision_cleanup_v2_1_quarantined_count": 9,
+  "precision_cleanup_v2_1_quarantined_count": 13,
   "precision_cleanup_v2_1_rejection_by_reason": {
     "composite_region_subject": 2,
     "definition_truncated_participle": 4
   },
   "precision_cleanup_v2_1_quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 2,
+    "headquartered_in_quarantine_default": 5,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 2
+    "truncated_person_alias": 3
   },
   "precision_cleanup_v2_1_duplicate_alias_relation_count": 1,
   "precision_cleanup_v2_1_canonicalized_relation_count": 1,

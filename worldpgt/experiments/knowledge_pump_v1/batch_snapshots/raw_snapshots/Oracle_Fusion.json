@@ -1,0 +1,15 @@
+{
+  "title": "Oracle Fusion",
+  "normalized_title": "Oracle Fusion",
+  "pageid": 28574063,
+  "revision_id": 555492965,
+  "timestamp": "2013-05-17T10:42:34Z",
+  "source_url": "https://en.wikipedia.org/wiki/Oracle_Fusion",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Oracle+Fusion",
+  "retrieved_at": "2026-06-20T08:05:40Z",
+  "raw_text": "Oracle Fusion may refer to:\n\nOracle Fusion Architecture, a standards-based technology reference blueprint for building applications\nOracle Fusion Middleware (OFM), the middleware technology stack on which Oracle applications are built using Oracle Fusion Architecture as blueprint\nOracle Fusion Applications (OFA), Oracle applications built on top of the Oracle Fusion Middleware technology stack using Oracle Fusion Architecture as blueprint",
+  "raw_text_sha256": "ae83c4782603ba0aa40393d3d2087a12c24d2af3bb14ed0b2d49eadaf89b15ad",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

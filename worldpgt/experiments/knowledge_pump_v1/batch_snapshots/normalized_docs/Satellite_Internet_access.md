@@ -1,7 +1,7 @@
 # Satellite Internet access
 
 Source: https://en.wikipedia.org/wiki/Satellite_Internet_access
-Retrieved at: 2026-06-17T17:08:30Z
+Retrieved at: 2026-06-20T12:46:14Z
 Revision ID: 1359385224
 Raw text SHA256: 04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

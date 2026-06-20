@@ -1,11 +1,11 @@
 history_position,batch_index,status,titles_selected,titles_fetched,fetch_success,ready_docs,ingestion_candidates,relation_candidates,safe_delta_items,weak_context_items,precision_accepted_relations,precision_accepted_definitions,new_answerable_facts,new_world_model_items,yield_score,attribution_mode
-0,0,completed,250,250,199,147,800,10,825,662,4,26,30,124,0.204082,title_source_first_fetch
-1,0,completed,250,250,128,122,409,2,450,367,4,16,20,59,0.163934,title_source_first_fetch
+0,0,completed,250,250,199,147,503,36,553,398,8,25,33,109,0.22449,title_source_first_fetch
+1,0,completed,250,250,128,122,237,27,290,213,12,12,24,45,0.196721,title_source_first_fetch
 2,0,completed,250,250,128,122,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
-3,1,completed,250,250,72,70,418,19,476,380,3,17,20,57,0.285714,title_source_first_fetch
-4,2,completed,250,250,95,89,532,6,589,471,8,23,31,89,0.348315,title_source_first_fetch
-5,3,completed,250,250,173,155,995,13,1069,863,9,39,48,156,0.309677,title_source_first_fetch
-6,4,completed,250,250,155,139,740,10,805,632,4,34,38,138,0.273381,title_source_first_fetch
+3,1,completed,250,250,72,70,404,79,509,366,17,14,31,68,0.442857,title_source_first_fetch
+4,2,completed,250,250,95,89,512,85,640,451,31,22,53,111,0.595506,title_source_first_fetch
+5,3,completed,250,250,173,155,967,84,1099,835,28,38,66,174,0.425806,title_source_first_fetch
+6,4,completed,250,250,155,139,712,84,842,604,31,33,64,164,0.460432,title_source_first_fetch
 7,0,completed,250,250,128,122,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
 8,1,completed,250,250,72,70,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
 9,2,completed,250,250,95,89,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
@@ -14,4 +14,8 @@ history_position,batch_index,status,titles_selected,titles_fetched,fetch_success
 12,1,completed,250,250,78,75,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
 13,2,completed,250,250,155,143,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
 14,3,completed,250,250,181,164,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch
-15,0,completed,250,250,148,137,703,12,782,597,9,47,56,155,0.408759,title_source_first_fetch
+15,0,completed,250,250,148,137,687,67,817,581,30,47,77,176,0.562044,title_source_first_fetch
+16,0,completed,25,25,12,10,69,1,75,61,3,3,6,13,0.6,title_source_first_fetch
+17,0,completed,5,5,2,2,8,5,17,7,7,2,9,10,4.5,title_source_first_fetch
+18,0,completed,5,5,3,3,29,5,30,26,1,1,2,3,0.666667,title_source_first_fetch
+19,0,completed,250,250,57,52,0,0,0,0,0,0,0,0,0.0,title_source_first_fetch

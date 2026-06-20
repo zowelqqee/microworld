@@ -1,8 +1,8 @@
 # Apollo Applications Program
 
 Source: https://en.wikipedia.org/wiki/Apollo_Applications_Program
-Retrieved at: 2026-06-17T17:10:48Z
-Revision ID: 1339337343
+Retrieved at: 2026-06-20T12:53:00Z
+Revision ID: 1359959186
 Raw text SHA256: ea0dd5f7bbae8f2149df4430e22f8f696e8c43b6e8e4f8cac2d239064a4e5c4d
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

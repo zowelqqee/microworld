@@ -1,0 +1,25 @@
+# Stat (website)
+
+Source: https://en.wikipedia.org/wiki/Stat_(website)
+Retrieved at: 2026-06-20T13:24:02Z
+Revision ID: 1320421563
+Raw text SHA256: a1400e1f43d87be2140f0ce391bca887479f2261bfa521258a668145246c69df
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Stat (stylized STAT, sometimes also called Stat News) is an American health-oriented news website launched on November 4, 2015, by John W. Henry, the owner of The Boston Globe. It is produced by Boston Globe Media and is headquartered in the Globe's own building in Boston. Its executive editor is Rick Berke, who formerly worked at both The New York Times and Politico. According to Kelsey Sutton of Politico, the website is Henry's "biggest and most ambitious standalone site yet". The site's name comes from the term "stat", short for statim, or "immediately"—a term that has long been used in medical contexts.
+STAT grew from 45 staff members in 2016 to 100 by 2025.
+
+Impact
+Notable stories Stat has broken include one about Robert Califf's research, published after then–President of the United States Barack Obama announced he would be his nominee to lead the Food and Drug Administration. The site also uncovered claims made by a vitamin company to which President Donald Trump had licensed his name. The site's reporting has also inspired another presidential candidate, Bernie Sanders, to return a contribution that a disgraced former pharmaceutical industry CEO made to his campaign. The site has also sent multiple journalists to Colombia, Haiti, and Brazil to cover the zika outbreaks there. Stat began covering the Coronavirus outbreak early, starting with an article by Helen Branswell on 4 January 2020. Helen Branswell was among the first to link the virus back to China, and its early coverage led to a surge in reader traffic 4-5 times above typical volumes. STAT estimated in 2023 that it reaches about 2.3 million unique readers every month, with over 196,000 newsletter subscribers. STAT has won a number of awards and was twice a finalist for the Pulitzer Prize.
+
+Remdesivir trial leak
+An April 16, 2020 article entitled "Early peek at data on Gilead coronavirus drug suggests patients are responding to treatment" by Adam Feuerstein contained early, incomplete results of a University of Chicago clinical trial of the COVID-19 drug remdesivir, which were leaked to STAT without permission. Shares of Gilead Sciences, the developer of remdesivir, jumped higher in after-hours trading immediately after the report was published. In a statement to CNBC, a University of Chicago spokesperson said, “Partial data from an ongoing clinical trial is by definition incomplete and should never be used to draw conclusions about the safety or efficacy of a potential treatment that is under investigation." Lloyd Doggett, chair of the House Ways and Means Health Subcommittee, called for an investigation of the leak, noting that "providing information that's designed to impact the stock market is not something that is permitted under federal securities law."
+
+See also
+KFF Health News
+
+References
+
+External links
+Official website

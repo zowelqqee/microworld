@@ -1,7 +1,7 @@
 # Large language model
 
 Source: https://en.wikipedia.org/wiki/Large_language_model
-Retrieved at: 2026-06-17T17:08:54Z
+Retrieved at: 2026-06-20T12:47:10Z
 Revision ID: 1359256792
 Raw text SHA256: 4e13a68a7b493f0a399e9221d82a79d4f9a0aabefd6ca1d08e67d0e17a6c61b0
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
