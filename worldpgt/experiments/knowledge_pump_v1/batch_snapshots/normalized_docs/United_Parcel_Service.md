@@ -1,7 +1,7 @@
 # United Parcel Service
 
 Source: https://en.wikipedia.org/wiki/United_Parcel_Service
-Retrieved at: 2026-06-20T13:19:04Z
+Retrieved at: 2026-06-22T07:34:07Z
 Revision ID: 1359606647
 Raw text SHA256: 31b767439b85979e5613b6112941374bf4c395d366ed438f71007086e50f47df
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

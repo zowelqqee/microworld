@@ -48,6 +48,23 @@ and "volatile" refer to how quickly the fact can change in the real world.
   platform_of         semi-stable  NOT current-sensitive  (stable platform relation)
   uses                semi-stable  NOT current-sensitive  (changes slowly)
   part_of             semi-stable  NOT current-sensitive  (structural, changes rarely)
+  alias               stable       NOT current-sensitive  (alternate name)
+  based_at            semi-stable  NOT current-sensitive  (location/base)
+  ceased_operations   stable       NOT current-sensitive  (historical event)
+  construction_started stable      NOT current-sensitive  (historical event)
+  filed_for_bankruptcy stable      NOT current-sensitive  (historical legal event)
+  first_released      stable       NOT current-sensitive  (historical release)
+  funded_by           stable       NOT current-sensitive  (historical funding)
+  has_facility        semi-stable  NOT current-sensitive  (infrastructure)
+  hosted_flight_to    stable       NOT current-sensitive  (historical/mission relation)
+  introduced          stable       NOT current-sensitive  (historical release)
+  located_in          semi-stable  NOT current-sensitive  (location)
+  marketed_as         semi-stable  NOT current-sensitive  (product naming)
+  merged_with         stable       NOT current-sensitive  (historical event)
+  offers              semi-stable  NOT current-sensitive  (service/product offering)
+  runs_on             semi-stable  NOT current-sensitive  (platform compatibility)
+  supports            semi-stable  NOT current-sensitive  (capability)
+  variant_of          stable       NOT current-sensitive  (taxonomy/product family)
   is_a                stable       NOT current-sensitive  (definitional)
   type_of             stable       NOT current-sensitive  (definitional)
   leader_of           volatile     CURRENT-SENSITIVE      (CEO/head changes suddenly)
@@ -141,6 +158,12 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "started": "founded_by",
     "founded": "founded_by",
     "found": "founded_by",
+    "kick off": "founded_by",
+    "launch": "founded_by",
+    "kicked off": "founded_by",
+    "establish": "founded_by",
+    "established": "founded_by",
+    "co-established": "founded_by",
     "created by": "created_by",
     "create": "founded_by",
     "created": "created_by",
@@ -151,6 +174,8 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "acquired by": "owned_by",
     "owns": "owned_by",
     "own": "owned_by",
+    "controls": "owned_by",
+    "control": "owned_by",
     "parent company of": "parent_company_of",
     "subsidiary of": "subsidiary_of",
     "subsidiary": "subsidiary_of",
@@ -162,6 +187,8 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "manufactured by": "developed_by",
     "develop": "develops",
     "develops": "develops",
+    "engineer": "develops",
+    "engineers": "develops",
     "build": "develops",
     "builds": "develops",
     "make": "develops",
@@ -201,6 +228,41 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "uses": "uses",
     "use": "uses",
     "part of": "part_of",
+    "also known as": "alias",
+    "known as": "alias",
+    "formerly known as": "alias",
+    "nicknamed": "alias",
+    "marketed as": "marketed_as",
+    "based at": "based_at",
+    "located in": "located_in",
+    "located at": "located_in",
+    "where is": "located_in",
+    "funded by": "funded_by",
+    "funded": "funded_by",
+    "financed by": "funded_by",
+    "merged with": "merged_with",
+    "merge with": "merged_with",
+    "first released": "first_released",
+    "released in": "first_released",
+    "introduced in": "introduced",
+    "introduced": "introduced",
+    "runs on": "runs_on",
+    "run on": "runs_on",
+    "supports": "supports",
+    "support": "supports",
+    "offers": "offers",
+    "offered on": "offers",
+    "offered inside": "offers",
+    "variant of": "variant_of",
+    "version of": "variant_of",
+    "filed for bankruptcy": "filed_for_bankruptcy",
+    "ceased operations": "ceased_operations",
+    "cease operations": "ceased_operations",
+    "construction began": "construction_started",
+    "has facilities": "has_facility",
+    "customs facilities": "has_facility",
+    "flew missions to": "hosted_flight_to",
+    "ferrying crew to": "hosted_flight_to",
     # type / class
     "type of": "type_of",
     "kind of": "type_of",

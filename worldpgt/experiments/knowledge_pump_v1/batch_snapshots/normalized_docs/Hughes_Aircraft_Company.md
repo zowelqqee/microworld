@@ -1,7 +1,7 @@
 # Hughes Aircraft Company
 
 Source: https://en.wikipedia.org/wiki/Hughes_Aircraft_Company
-Retrieved at: 2026-06-20T12:55:08Z
+Retrieved at: 2026-06-22T08:28:03Z
 Revision ID: 1359538280
 Raw text SHA256: 4c855aa0d13bc35f81a2b6135a3f270fda82c56b00eedfc2eddfbc25289ef851
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

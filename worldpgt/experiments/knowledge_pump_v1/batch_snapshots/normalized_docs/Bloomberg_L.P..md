@@ -1,7 +1,7 @@
 # Bloomberg L.P.
 
 Source: https://en.wikipedia.org/wiki/Bloomberg_L.P.
-Retrieved at: 2026-06-17T20:44:30Z
+Retrieved at: 2026-06-23T05:41:04Z
 Revision ID: 1359475756
 Raw text SHA256: f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

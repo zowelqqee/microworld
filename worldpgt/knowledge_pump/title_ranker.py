@@ -16,7 +16,7 @@ _GENERIC = {"Company", "Product", "Founder", "Revenue", "Organization", "Leaders
 
 
 def normalize_title(title: str) -> str:
-    title = re.sub(r"\s+", " ", (title or "").replace("_", " ")).strip(" .,:;()[]{}")
+    title = re.sub(r"\s+", " ", (title or "").replace("_", " ")).strip(" .,:;[]{}")
     return title
 
 
@@ -57,4 +57,3 @@ def rank_titles(frontier: list[FrontierTitle]) -> list[tuple[FrontierTitle, int,
         seen.add(key)
         ranked.append((FrontierTitle(title, item.source, item.reason, item.weight), priority_for(item), risk_hint(title)))
     return sorted(ranked, key=lambda x: (-x[1], x[0].title.casefold()))
-

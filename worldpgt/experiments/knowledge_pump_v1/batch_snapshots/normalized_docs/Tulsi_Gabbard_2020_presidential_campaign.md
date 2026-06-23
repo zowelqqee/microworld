@@ -1,0 +1,103 @@
+# Tulsi Gabbard 2020 presidential campaign
+
+Source: https://en.wikipedia.org/wiki/Tulsi_Gabbard_2020_presidential_campaign
+Retrieved at: 2026-06-23T04:54:00Z
+Revision ID: 1355971987
+Raw text SHA256: 20f0f9792eb4b042bfaf93c30863bd21eadd28263586404bdb74f722d8821af9
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The 2020 presidential campaign of Tulsi Gabbard, the U.S. representative for Hawaii's 2nd congressional district, was announced in January 2019, and officially launched in February 2019. Gabbard was the first female combat veteran to run for president. Her foreign policy platform was described as anti-interventionist and her economic platform was considered populist by political analysts.
+While Gabbard gained attention in the 2020 Democratic primary debates, her polling numbers remained low and in January 2020, she was polling at about 1 to 2 percent. On March 19, 2020, Gabbard dropped out of the 2020 election and endorsed Joe Biden.
+
+Background
+Gabbard had been a rising figure in the Democratic Party in the lead-up to the 2016 election cycle, when she served as vice-chairman of the Democratic National Committee (DNC).
+Gabbard appeared on Joe Rogan's podcast in both September 2018 and November 2020, the latter along with Jocko Willink. On October 19, 2018, Politico reported that Gabbard was "weighing a 2020 presidential bid" but would not make an announcement until after the 2018 midterm elections. On December 12, 2018, Gabbard said on MSNBC's Hardball with Chris Matthews that she was "seriously considering" running for president in 2020.
+
+Democratic primary campaign
+
+Launch
+On January 11, 2019, in an interview with CNN's Van Jones, Gabbard confirmed her intention to seek the Democratic presidential nomination. On January 24, she formally launched her campaign by releasing a video on her website.
+The following week, NBC News notified the Gabbard campaign they would be publishing a story the week after her campaign kickoff rally, where NBC would assert Gabbard was supported by the "Russian propaganda machine". Instead, NBC released the story two hours before her campaign kickoff in Hawaii on February 2. Glenn Greenwald criticized NBC for relying on a firm that had previously tried to imitate "an elaborate 'false flag' operation" that would plant the idea that Alabama Senatorial candidate Roy Moore was being supported by a "Russian botnet".
+Shortly after the announcement, campaign manager Rania Batrice and consulting firm Revolution Messaging departed from the campaign. Politico reported that sources "familiar with the campaign" referred to Gabbard as "indecisive and impulsive". Her staff insists that the vacancy in the campaign manager position is the result of "careful deliberation, not campaign dysfunction."
+
+Debates
+
+Gabbard was the most-searched-for candidate on Google after both the first and second Democratic primary debates. During the second debate, Gabbard criticized Kamala Harris's record as attorney general of California, accusing her of holding innocent people on death row and pointing out Harris's prosecution of marijuana crimes after admitting her own use. Gabbard attacked Harris's prosecutorial record, which has been often been re-reported in the 2024 presidential elections. In a viral moment, Gabbard censured Harris, saying, "I'm deeply concerned about this record. There are too many examples to cite, but she put over 1,500 people in jail for marijuana violations and then laughed about it when she was asked if she ever smoked marijuana.".
+In May 2019, the DNC announced that candidates would need to have at least 130,000 individual donors and have received at least 2% support in four qualifying polls between June 28 and August 28 in order to qualify for the third primary debate. By August 2, the campaign had met the qualifying donor threshold, but had not yet reached the polling threshold.
+On July 27, Tulsi Now Inc. filed a lawsuit against Google alleging that the internet company suspended, for no proper cause, the campaign's Google Ads account for several hours after the first primary debate. Gabbard declared: "Google plays favorites, with no warning, no transparency — and no accountability (until now)." The lawsuit contends that Google had treated the campaign's mail differently than it treated other campaigns' mail and seeks "an injunction against Google from further meddling in the election and damages of at least $50 million."
+On March 3, 2020, the lawsuit was dismissed by a federal judge.
+
+On August 23, the Gabbard campaign criticized the stark drop in number of polls released by DNC-qualified polling organizations following the second debate. Five polls were released in the two weeks following the third debate. By August 26, two days before the deadline, the Gabbard campaign had exceeded the threshold on only two qualifying polls. The campaign called on the DNC to expand the selection of polls considered for qualification, noting that Gabbard had exceeded the 2% threshold in several unapproved polls. Nevertheless, Gabbard went on to qualify for both the October and November debates.
+
+On December 9, Gabbard announced that she would not attend the December debate "regardless of whether or not there are qualifying polls." At the time of her announcement she had met the donor requirement and was one poll short of meeting the polling requirement for that debate. Between the November debate and her announcement there had been no qualifying polls in the early primary states and only two nationwide polls and Gabbard's campaign had unsuccessfully requested the DNC to accept an additional poll in New Hampshire as qualifying. Although she met the donor requirement for the December debate, she did not meet the polling requirement. The Boston Globe's Joe Battenfeld wrote that Gabbard and several other low-polling candidates "never had much of a chance" to qualify because of the low number of DNC-certified polls after the November debate. Nine presidential contenders signed an open letter from candidate Cory Booker to the DNC in which they criticized the committee for "unnecessarily and artificially narrowing" the pool of presidential candidates "before voters have had a chance to be heard". The DNC rejected the request by noting that candidates had a chance to give their feedback on the process before it was adopted and "not one campaign objected" to it.
+Following Gabbard's participation in the November 2019 debate, she has not qualified for any further debates. Although Gabbard did have enough delegates to participate in the mid-March debate under the rules for previous debates, the qualification threshold increased. A DNC spokesperson stated, "Whoever is on the path of getting those delegates, we made sure we had a criterion that is fair and to make sure that people who are viable for the presidency and for the nomination are going to be on that."
+
+Fundraising
+
+In mid-2017 Gabbard pledged to no longer accept money from political action committees.
+In the first quarter of 2019, the campaign raised $4,495,770, with $1,995,770 from individual donations and $2,500,000 transferred from Gabbard's congressional campaign.
+In the second quarter, the campaign raised $1,567,204, bringing the total to $6,062,974 with 69% coming from "small dollar" donors giving $200 or less.
+In the third quarter, the campaign raised $3,032,159, bringing the total to $9,095,133 with 68% coming from small dollar donors giving $200 or less.
+In the fourth quarter, the campaign raised $3.4 million, bringing the total to $12.6 million.
+During 2019, Gabbard's campaign raised $10 million from individual contributions, which is the 11th position among all Democratic candidates. 61% of these contributions were small dollar donations below $200.
+By January 26, 2020, the campaign had met the DNC's 225,000 individual donors qualifying criterion for participating in the first February 2020 debate, though she failed to reach the polling criteria.
+
+Media coverage and controversy
+Gabbard again appeared on The Joe Rogan Experience in May 2019, which was praised by Medium's Jake Mercier.
+However, Gabbard received disproportionately little mainstream media coverage in relation to her polling position. A study by Axios found that at end of August 2019, Gabbard was the 14th-most-mentioned candidate in cable news coverage even though she was polling in ninth place nationally. In addition, much of the coverage her campaign has received has been negative. In May 2019, Rolling Stone's Matt Taibbi stated, "we have hit a new low in campaign hit pieces" after critical coverage of Gabbard's campaign by CNN, The Daily Beast, and Politico. The Hill's Krystal Ball and Saagar Enjeti both described Gabbard as "the most unfairly maligned person in Washington". Lexicostatistical analysis confirmed that she received the most negative coverage during the June–September period.
+After both the November and December 2019 Democratic debates, Saturday Night Live's parodies of the debates portrayed Gabbard as a villain, introducing her with menacing music and flashing lights.
+In January and February 2020, CNN was criticized for snubbing Gabbard when the network did not invite her to their February New Hampshire town halls, although they invited lower-polling candidates. Gabbard's supporters held a protest near the venue against her exclusion by CNN. Ryan Grim opined that Gabbard's exclusion from CNN's town halls showed that the media perceived Gabbard as an illegitimate candidate and that her exclusion is undemocratic.
+
+"Russian asset" accusations
+During the 2016 United States presidential election, Tulsi Gabbard—then a member of the U.S. House of Representatives and vice chair of the Democratic National Committee (DNC)—endorsed Bernie Sanders for the Democratic Party's presidential nominee over his rival Hillary Clinton. In order to issue the endorsement, Gabbard first resigned as DNC vice-chair. According to The Washington Post, Gabbard's endorsement of Sanders was the genesis of what is described as "bad blood" between her and Clinton.
+On the day Gabbard held her 2020 campaign launch event, NBC reported that "the main English-language news sites employed by Russia in its 2016 election meddling shows... Gabbard... has become a favorite of the sites Moscow used when it interfered in 2016." In October 2019, The New York Times reported that "an independent analysis of the Russian news media found that RT, the Kremlin-backed news agency, mentioned Gabbard frequently for a candidate polling in single digits, according to data collected by the Alliance for Securing Democracy."
+In an October 12, 2019 article in The New York Times, correspondent Lisa Lerer reported that unnamed members of the Democratic Party had unspecified concerns "about supportive signs from online bot activity and the Russian news media" for Tulsi Gabbard, who was at the time seeking the party's nomination in the 2020 United States presidential election. Lerer also reported that the unspecified concerns were dismissed by Gabbard's supporters who considered them to be a conspiracy theory "designed to delegitimize her campaign and her foreign policy views".
+On October 18, 2019, Hillary Clinton was reported to have said in an interview the day before on David Plouffe's podcast Campaign HQ with David Plouffe that Russia was "grooming" a female Democrat to run as a third-party candidate who would help President Trump win re-election by a spoiler effect.  In the interview, Clinton stated, "I'm not making any predictions, but I think they've got their eye on somebody who is currently in the Democratic primary and are grooming her to be the third-party candidate. She's the favorite of the Russians". Following her remarks about Gabbard, Clinton then declared that Jill Stein was "also a Russian asset... she's a Russian asset, I mean, totally". That afternoon, Gabbard reacted to the widespread media reports by condemning Clinton's remarks in a series of Tweets. CNN host Van Jones, meanwhile, opined that Clinton's statement was "a complete smear with no facts". Several of her 2020 Democratic primary contenders defended Gabbard, including Bernie Sanders who tweeted "it is outrageous for anyone to suggest that Tulsi is a foreign asset".  In reference to Clinton's allegation against Jill Stein, the Green Party issued a statement describing Clinton as "an asset of Wall Street, the police state and war" and declaring the assertion to be "salty neo-McCarthyism".
+A CNN reporter subsequently inquired of Clinton spokesman Nick Merrill if Clinton was referring to Gabbard when she stated "somebody who is currently in the Democratic primary", to which Merrill replied, "If the nesting doll fits." Merrill added that Gabbard were "aligned with Russian interests." During the evening, after Clinton's comments drew considerable criticism from both Democrats and Republicans, Merrill tweeted that Clinton was alleging Republicans were "grooming" Gabbard, not "the Russians", and that Clinton had been misinterpreted. During the following week, Clinton's "Russian asset" accusation against Gabbard was widely reported in the media and drew a lot of criticism, until some outlets published corrections on October 24, changing the identity of the "grooming" entity from "Russians" to "Republicans".
+The Nation's James Carden compared the insinuations by Clinton and some establishment journalists against Gabbard with similar events involving other politicians and opined that these insinuations were part of what he felt was a long campaign of demonization and vilification against critics of the establishment consensus regarding Russia, and showed that McCarthyism had gone mainstream. Gabbard thanked Clinton on Twitter for "com[ing] out from behind the curtain" of what she called "a concerted campaign to destroy [her] reputation".
+In December 2019, about 25 to 30 of Gabbard's campaign advertisement signs in Keene, New Hampshire, were the target of political vandalism when unknown persons defaced the signs by gluing the hammer and sickle symbol from the national flag of the Soviet Union onto them. Gabbard's campaign said this was "a continuation of the campaign of smears and intimidation that has been waged against Tulsi since she announced her candidacy."
+
+Gabbard v. Clinton
+Gabbard demanded a public retraction in November 2019, and, after not receiving one, she and her campaign organization, Tulsi Now, filed a defamation lawsuit on January 22, 2020, in the United States District Court for the Southern District of New York against Clinton, seeking damages in excess of $50 million. Gabbard's complaint alleged that Clinton's remark was intended to impugn Gabbard as an agent of influence of the Russian Federation and "derail Tulsi's presidential campaign".
+Legal experts stated that Gabbard's lawsuit was highly unlikely to succeed given the high "actual malice" standard that applies to suits claiming defamation of a public figure.  CNN's Dan Merica and New York's Ed Kilgore suggested that the lawsuit is a stunt to gain Gabbard publicity. In May 2020, Gabbard dropped her lawsuit against Clinton.
+Gabbard also filed a lawsuit against Google for temporarily suspending her campaign's advertising account after an automated Google system detected unusual activity (the account was quickly reinstated). Gabbard asserted that Google had engaged in "election manipulation" and tried to "silence" her in violation of the First Amendment. A federal judge dismissed the lawsuit in March 2020, ruling that Google,  as a private company, is not a state actor subject to the First Amendment.
+
+Polling
+
+Gabbard consistently polled in single digits in national polls. Gabbard polled at 1% in several major polls. In a poll conducted between July 9 and 18 of registered Democrats in New Hampshire, Gabbard and former Representative Beto O'Rourke were tied in sixth place at 2%. On August 19, 2019, Gabbard garnered 4.8% of the Iowa State Fair Straw Poll, placing 7th in a field of 24. On August 23, 2019, Gabbard's campaign stated that she had received 2% or more in 26 national and statewide polls, but only two of the polls were certified by the DNC. Gabbard received 4% in the early primary states subset of two non-qualifying Morning Consult national polls from August 25 and September 1. On September 4 she received 1% in the same states in qualifying polls sponsored by CBS News.
+Between the debates of July 31 and September 12, Gabbard's polling average in New Hampshire was 1% in one debate-qualifying poll and 4.6% in five non-qualifying polls. By November 27, Gabbard held the fifth position in New Hampshire.
+
+In early February 2020, Gabbard received 1.8% in the national polling average and 4.7% in the New Hampshire polling average. A national poll in March 2020 gave her 5%.
+
+Primary elections
+
+February
+
+In Iowa, Gabbard spent $195,000 on television advertisements. She received 0.2% of votes in the initial alignment of the Iowa caucuses and no delegates for the national convention. After the reporting difficulties at the caucus, Gabbard called for DNC chair Tom Perez to resign.
+In New Hampshire, Gabbard spent $1 million on television advertising, amounting to 19% of Bernie Sanders' expenses. She held 130 campaign events, the second most after Andrew Yang, but neither gained traction in polls. In the New Hampshire primary, Gabbard received 3.3% of votes and no national delegates.
+In Nevada, she received 353 votes (0.3%) in the first alignment and 32 in the final alignment to get 4 of the 14,491 county convention delegates.
+
+March
+In the American Samoan caucus, Gabbard received 103 votes — or 29.3% of the total caucus-goers — and, initially, one delegate. She later earned a second delegate from American Samoa after an error made by the officials was discovered. Of the Super Tuesday primaries in the contiguous states, Gabbard received her highest percentage in Oklahoma, where she won 1.7% of the votes. In Super Tuesday II, Gabbard received 868 votes (1%) in Idaho, 9,461 votes (1%) in Michigan, 989 votes (0%) in Mississippi, 4,879 votes (1%) in Missouri, and 89 votes (1%) in North Dakota. She received 12,391 votes, or 0.85%, in the Washington State Democratic Primary. Gabbard had a similar performance in the Super Tuesday III primaries, in each of which she received less than 1% of the vote.
+Following the suspension of the campaigns of all the Democratic Party candidates except Joe Biden and Bernie Sanders by early March 2020, Gabbard became the only woman or person of color still in the presidential race. She told ABC News she was staying in the race because it is "an opportunity to speak to Americans every single day about the sea change we need in our foreign policy."
+In March, during the coronavirus pandemic, Gabbard stated in a tweet that she was opposed to holding primaries until the pandemic eases due to the risk of the virus spreading, along with concerns that it could reduce turnout among elderly voters.
+On March 19, 2020, Gabbard dropped out of the 2020 election and endorsed then-candidate Joe Biden. In her 2024 memoir, she wrote: "At that point, I had heard that Bernie Sanders was just days away from endorsing Biden, so it was clear to me that the primary election was basically over. Knowing Biden would be the nominee, I suspended my campaign and endorsed him, concluding that this would provide the best, and probably only, opportunity for me to be in a position to try to influence him".
+
+After campaign suspension
+After Gabbard's withdrawal from the race, she received several results that were higher than her contiguous Super Tuesday peak of 1.7% in Oklahoma. This included her 3.08% in Puerto Rico, 2.75% in Nebraska, 2.70% in Pennsylvania, 2.23% in West Virginia, and 1.73% in Oregon. She did not earn any further delegates.
+Gabbard, who is of Samoan descent and 26% Southeast Asian became the second woman of color (after Shirley Chisholm) and the first Asian-American and Pacific-Islander (AAPI) presidential candidate to earn major party primary delegates. She was also the only non-white Democratic party candidate to earn delegates in the 2020 election cycle.
+Gabbard was the only candidate with primary delegates to not be invited to the 2020 Democratic National Convention (DNC).
+
+See also
+Political positions of Tulsi Gabbard
+Endorsements in the 2020 Democratic Party presidential primaries
+
+Notes
+
+References
+
+External links
+
+Official website
+Tulsi Gabbard on the issues - TulsiGabbard.org Archived March 19, 2020, at the Wayback Machine

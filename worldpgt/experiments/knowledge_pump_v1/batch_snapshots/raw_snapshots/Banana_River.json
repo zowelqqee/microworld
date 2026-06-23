@@ -1,0 +1,15 @@
+{
+  "title": "Banana River",
+  "normalized_title": "Banana River",
+  "pageid": 2045721,
+  "revision_id": 1340778074,
+  "timestamp": "2026-02-27T16:46:39Z",
+  "source_url": "https://en.wikipedia.org/wiki/Banana_River",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Banana+River",
+  "retrieved_at": "2026-06-22T10:05:00Z",
+  "raw_text": "The Banana River is a 31-mile-long (50 km) lagoon that lies between the outer barrier islands and Merritt Island in Brevard County, Florida in the United States. It is part of the Indian River Lagoon system, and connects at its south end to the Indian River; it is the only part of the lagoon system not in the Intracoastal Waterway. It also has an outlet to the Atlantic Ocean via a lock into Port Canaveral. The lagoon includes salt marshes, mangrove swamps, seagrass beds, drift algae, oyster bars, tidal flats, and spoil islands, providing habitats for many marine species. These are brackish waters mixed of salt and fresh water; waist deep with a soft bottom sand/grass. Commercial and recreational activities in the lagoon generate more than US$800 million annually for the local economy.\nHistorically, the Banana River was a continuous waterway that completely separated Merritt Island from Cape Canaveral (which was considered part of the mainland until the construction of the Haulover Canal).  In 1964, the Crawlerway was built at Kennedy Space Center, connecting Merritt Island to Cape Canaveral and dividing the Banana River into northern and southern lagoons.\n\n\nEcology\nThe lagoon contains dolphins, manatee, and stingrays. A large number of manatees inhabit the lagoon year-round. The northern part of the lagoon is an important habitat for the manatees, with roughly 300 to 500 individuals per day surveyed.\n\n\nSee also\n\nCanaveral Barge Canal\n\n\nReferences\n\n\nFurther reading\n\"About the Banana River Aquatic Preserve\". dept.state.fl.us.",
+  "raw_text_sha256": "d917ff430c13ae81c87ccc0d41a733710eab27d5b5af2a11c0dde49c712b8bd3",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

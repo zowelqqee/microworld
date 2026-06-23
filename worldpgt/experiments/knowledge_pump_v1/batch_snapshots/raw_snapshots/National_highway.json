@@ -1,0 +1,15 @@
+{
+  "title": "National Highway",
+  "normalized_title": "National highway",
+  "pageid": 792362,
+  "revision_id": 1299245600,
+  "timestamp": "2025-07-07T07:52:45Z",
+  "source_url": "https://en.wikipedia.org/wiki/National_highway",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=National+Highway",
+  "retrieved_at": "2026-06-22T07:33:04Z",
+  "raw_text": "National highway or National Highway may refer to:\n\nNational Highways (England)\nNational Highway (Australia)\nList of national roads in Belgium\nBrunei National Roads System\nNational Highway System (Canada)\nTrans-Canada Highway\nYellowhead Highway\nNational highways of China\nDanish national road network\nRoute nationale\nBundesstraßen\nNational highways of India\nNational primary road\nNational secondary road\nState highways (Italy)\nNational highways of Japan\nList of national roads in Latvia\nMalaysian Federal Roads System\nMexican Federal Highway\nNew Zealand state highway network\nNational Highway System (Nepal)\nNorwegian national road\nNational highways of Pakistan\nNational roads in Poland\nRussian federal highways\nNational routes in South Africa\nNational highways of South Korea\nList of national roads in Spain\nSwedish national road\nTurkish State Highway System\nState highways (Ukraine)\nNational Routes of Uruguay\n\n\nUnited States\nNational Highway System (United States)\nUnited States Numbered Highway System\nNational Road\nNational Old Trails Road\n\n\nSee also\nHighway systems by country\nList of controlled-access highway systems\nNational road (disambiguation)\nNational Highway, a 1987 Indian short animated film by R. N. Mistry, winner of the National Film Award for Best Non-Feature Animation Film",
+  "raw_text_sha256": "0c81adfb4b1c80cfd62c56a077c7778197944886f6c1431350c17ec69e83223f",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

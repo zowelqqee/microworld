@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-22T13:46:02.637083+00:00",
+  "overlay_mode": "pump-dry-run",
+  "questions": 1000,
+  "overlay_facts": 1877,
+  "warmup": 5,
+  "latency_ms": {
+    "p50": 9.42,
+    "p95": 16.35,
+    "p99": 18.11,
+    "min": 5.08,
+    "max": 27.28,
+    "mean": 9.68
+  },
+  "throughput": {
+    "requests_per_sec": 103.3,
+    "total_time_sec": 9.68
+  },
+  "memory_mb": {
+    "overlay_load": 8.4,
+    "peak_rss": 311.7
+  },
+  "gpt4_comparison": {
+    "gpt4_typical_ms": 800.0,
+    "speedup_vs_gpt4": 84.9
+  },
+  "hardware": "Apple M1, 8 GB RAM"
+}

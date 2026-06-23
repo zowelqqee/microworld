@@ -14,7 +14,7 @@ from typing import Dict, List, Optional
 
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 
-from .entity_matcher import match_entities
+from .entity_matcher import _get_pattern, _norm as _ematch_norm, build_surface_index, match_entities
 from .types import (
     OVERLAY_ACCEPTED,
     OVERLAY_PROMOTED,
@@ -93,13 +93,75 @@ class ContextPackBuilder:
         self._provider = WikiMemoryOverlayProvider(overlay_json_path)
         self._overlay = _OverlayAccess(self._provider)
         self._knowledge_requests = knowledge_requests or []
+        # Build all inverted indices once — O(n) amortized, O(1) per query.
+        self._surface_index = build_surface_index(self._overlay)
+        # Warm the pattern cache for all surfaces at init time so match_entities
+        # never recompiles a regex during a live query.
+        for surface, _kind, _meta in self._surface_index:
+            _get_pattern(_ematch_norm(surface))
+        self._build_indices()
+
+    def _build_indices(self) -> None:
+        """Construct per-type lookup dicts keyed by _norm(field)."""
+        self._entity_equivalents_by_term: Dict[str, set[str]] = {}
+        for e in self._overlay.entities():
+            terms = {
+                _norm(e.get("label", "")),
+                _norm(e.get("source_page", "")),
+                *{_norm(alias) for alias in (e.get("aliases") or [])},
+            }
+            terms = {term for term in terms if term}
+            for term in terms:
+                self._entity_equivalents_by_term.setdefault(term, set()).update(terms)
+
+        self._defs_by_subj: Dict[str, List[dict]] = {}
+        for d in self._overlay.definitions():
+            self._defs_by_subj.setdefault(_norm(d.get("subject", "")), []).append(d)
+
+        self._rels_by_subj: Dict[str, List[dict]] = {}
+        self._rels_by_obj: Dict[str, List[dict]] = {}
+        self._stable_rels_by_subj: Dict[str, List[dict]] = {}
+        for r in self._overlay.relations():
+            s = _norm(r.get("subject", ""))
+            o = _norm(r.get("object", ""))
+            self._rels_by_subj.setdefault(s, []).append(r)
+            self._rels_by_obj.setdefault(o, []).append(r)
+            if r.get("stability") in STABLE_STABILITIES:
+                self._stable_rels_by_subj.setdefault(s, []).append(r)
+
+        self._links_by_node: Dict[str, List[dict]] = {}
+        for c in self._overlay.context_links():
+            for field in ("source_page", "surface", "target"):
+                k = _norm(c.get(field, ""))
+                if k:
+                    self._links_by_node.setdefault(k, []).append(c)
+
+        self._sf_by_subj: Dict[str, List[dict]] = {}
+        self._sf_by_obj: Dict[str, List[dict]] = {}
+        for sf in self._overlay.source_facts():
+            s = _norm(sf.get("subject", ""))
+            o = _norm(sf.get("object", ""))
+            if s:
+                self._sf_by_subj.setdefault(s, []).append(sf)
+            if o:
+                self._sf_by_obj.setdefault(o, []).append(sf)
+
+        # Inversion set: (subject_norm, object_norm) for relation-inversion detection.
+        self._inversion_pairs: set = set()
+        for r in self._overlay.relations():
+            if r.get("predicate") in ("founded", "leader_of", "known_for"):
+                s = _norm(r.get("subject", ""))
+                o = _norm(r.get("object", ""))
+                if s and o:
+                    self._inversion_pairs.add((s, o))
 
     # ------------------------------------------------------------------ #
     def build(self, question: str) -> WorkingContextPack:
-        matched = match_entities(question, self._overlay)
+        matched = match_entities(question, self._overlay, prebuilt_index=self._surface_index)
         matched_names = {_norm(m.name) for m in matched}
         matched_surfaces = {_norm(m.surface) for m in matched}
         all_matched = matched_names | matched_surfaces
+        all_matched = self._expand_entity_equivalents(all_matched)
 
         pack = WorkingContextPack(
             question=question,
@@ -130,10 +192,16 @@ class ContextPackBuilder:
         return pack
 
     # ------------------------------------------------------------------ #
+    def _expand_entity_equivalents(self, matched: set) -> set:
+        expanded = set(matched)
+        for key in list(matched):
+            expanded.update(self._entity_equivalents_by_term.get(key, set()))
+        return expanded
+
     def _definitions_for(self, matched: set) -> List[ContextDefinition]:
         out: List[ContextDefinition] = []
-        for d in self._overlay.definitions():
-            if _norm(d.get("subject", "")) in matched:
+        for k in matched:
+            for d in self._defs_by_subj.get(k, []):
                 out.append(
                     ContextDefinition(
                         subject=d.get("subject", ""),
@@ -161,10 +229,14 @@ class ContextPackBuilder:
         )
 
     def _direct_relations(self, matched: set) -> List[ContextRelation]:
+        seen: set = set()
         out: List[ContextRelation] = []
-        for r in self._overlay.relations():
-            if _norm(r.get("subject", "")) in matched or _norm(r.get("object", "")) in matched:
-                out.append(self._rel_obj(r))
+        for k in matched:
+            for r in self._rels_by_subj.get(k, []) + self._rels_by_obj.get(k, []):
+                rid = id(r)
+                if rid not in seen:
+                    seen.add(rid)
+                    out.append(self._rel_obj(r))
         return out
 
     def _neighbors(self, direct: List[ContextRelation], matched: set) -> set:
@@ -179,66 +251,69 @@ class ContextPackBuilder:
         self, neighbors: set, matched: set, direct: List[ContextRelation]
     ) -> List[ContextRelation]:
         direct_keys = {(r.subject, r.predicate, r.object) for r in direct}
+        seen: set = set()
         out: List[ContextRelation] = []
-        for r in self._overlay.relations():
-            key = (r.get("subject", ""), r.get("predicate", ""), r.get("object", ""))
-            if key in direct_keys:
-                continue
-            if _norm(r.get("subject", "")) in neighbors or _norm(r.get("object", "")) in neighbors:
-                out.append(self._rel_obj(r))
+        for nb in neighbors:
+            for r in self._rels_by_subj.get(nb, []) + self._rels_by_obj.get(nb, []):
+                rid = id(r)
+                if rid in seen:
+                    continue
+                seen.add(rid)
+                key = (r.get("subject", ""), r.get("predicate", ""), r.get("object", ""))
+                if key not in direct_keys:
+                    out.append(self._rel_obj(r))
         return out
 
     def _weak_links(self, matched: set) -> List[ContextWeakLink]:
+        seen: set = set()
         out: List[ContextWeakLink] = []
-        for c in self._overlay.context_links():
-            blob = {
-                _norm(c.get("source_page", "")),
-                _norm(c.get("surface", "")),
-                _norm(c.get("target", "")),
-            }
-            if blob & matched:
-                out.append(
-                    ContextWeakLink(
-                        source_page=c.get("source_page", ""),
-                        surface=c.get("surface", ""),
-                        target=c.get("target", ""),
-                        relation=c.get("relation", ""),
-                        strength=c.get("strength", ""),
-                        trust=c.get("trust", ""),
+        for k in matched:
+            for c in self._links_by_node.get(k, []):
+                cid = id(c)
+                if cid not in seen:
+                    seen.add(cid)
+                    out.append(
+                        ContextWeakLink(
+                            source_page=c.get("source_page", ""),
+                            surface=c.get("surface", ""),
+                            target=c.get("target", ""),
+                            relation=c.get("relation", ""),
+                            strength=c.get("strength", ""),
+                            trust=c.get("trust", ""),
+                        )
                     )
-                )
         return out
 
     def _source_facts(self, matched: set) -> List[ContextSourceFact]:
+        seen: set = set()
         out: List[ContextSourceFact] = []
-        for sf in self._overlay.source_facts():
-            if _norm(sf.get("subject", "")) in matched or _norm(sf.get("object", "")) in matched:
-                out.append(
-                    ContextSourceFact(
-                        subject=sf.get("subject", ""),
-                        predicate=sf.get("predicate", ""),
-                        object=sf.get("object", ""),
-                        source_name=sf.get("source_name", ""),
-                        as_of=sf.get("as_of", ""),
-                        claim_type=sf.get("claim_type", ""),
-                        temporal_class=sf.get("temporal_class", ""),
-                        stability=sf.get("stability", ""),
-                        risk=sf.get("risk", ""),
-                        trust=sf.get("trust", ""),
-                        requires_recheck=bool(sf.get("requires_recheck", True)),
-                        evidence_text=sf.get("evidence_text", ""),
+        for k in matched:
+            for sf in self._sf_by_subj.get(k, []) + self._sf_by_obj.get(k, []):
+                sfid = id(sf)
+                if sfid not in seen:
+                    seen.add(sfid)
+                    out.append(
+                        ContextSourceFact(
+                            subject=sf.get("subject", ""),
+                            predicate=sf.get("predicate", ""),
+                            object=sf.get("object", ""),
+                            source_name=sf.get("source_name", ""),
+                            as_of=sf.get("as_of", ""),
+                            claim_type=sf.get("claim_type", ""),
+                            temporal_class=sf.get("temporal_class", ""),
+                            stability=sf.get("stability", ""),
+                            risk=sf.get("risk", ""),
+                            trust=sf.get("trust", ""),
+                            requires_recheck=bool(sf.get("requires_recheck", True)),
+                            evidence_text=sf.get("evidence_text", ""),
+                        )
                     )
-                )
         return out
 
     # ------------------------------------------------------------------ #
     def _stable_edges_from(self, node_norm: str):
         """Yield stable/semi-stable relations whose subject is node_norm."""
-        for r in self._overlay.relations():
-            if r.get("stability") not in STABLE_STABILITIES:
-                continue
-            if _norm(r.get("subject", "")) == node_norm:
-                yield r
+        yield from self._stable_rels_by_subj.get(node_norm, [])
 
     def _build_paths(self, question, matched, matched_set, pack) -> None:
         # Anchor/target pairs from matched entities (ordered by appearance).
@@ -287,9 +362,7 @@ class ContextPackBuilder:
                 )
 
     def _find_stable_direct(self, a_n: str, t_n: str) -> Optional[ContextRelation]:
-        for r in self._overlay.relations():
-            if r.get("stability") not in STABLE_STABILITIES:
-                continue
+        for r in self._stable_rels_by_subj.get(a_n, []) + self._stable_rels_by_subj.get(t_n, []):
             s, o = _norm(r.get("subject", "")), _norm(r.get("object", ""))
             if {s, o} == {a_n, t_n}:
                 return self._rel_obj(r)
@@ -318,21 +391,32 @@ class ContextPackBuilder:
         Covers a direct shared weak link and a weak bridge (anchor weakly linked
         to some node that is also weakly linked to the target).
         """
-        a_ends: set = set()
-        t_ends: set = set()
-        for c in self._overlay.context_links():
+        a_links = self._links_by_node.get(a_n, [])
+        t_links = self._links_by_node.get(t_n, [])
+        # Direct shared weak link: a link that mentions both a_n and t_n.
+        for c in a_links:
             ends = {
                 _norm(c.get("source_page", "")),
                 _norm(c.get("surface", "")),
                 _norm(c.get("target", "")),
             }
-            if a_n in ends and t_n in ends:
-                return True  # direct shared weak link
-            if a_n in ends:
-                a_ends |= ends
             if t_n in ends:
-                t_ends |= ends
+                return True
         # Weak bridge through a shared intermediate node.
+        a_ends: set = set()
+        for c in a_links:
+            a_ends |= {
+                _norm(c.get("source_page", "")),
+                _norm(c.get("surface", "")),
+                _norm(c.get("target", "")),
+            }
+        t_ends: set = set()
+        for c in t_links:
+            t_ends |= {
+                _norm(c.get("source_page", "")),
+                _norm(c.get("surface", "")),
+                _norm(c.get("target", "")),
+            }
         return bool((a_ends & t_ends) - {a_n, t_n})
 
     # ------------------------------------------------------------------ #
@@ -404,11 +488,8 @@ class ContextPackBuilder:
         s_n, o_n = _norm(subj), _norm(obj)
         # Inversion if the overlay has a stable relation in the REVERSE direction
         # (obj is subject of a founded/leader_of relation whose object is subj).
-        for r in self._overlay.relations():
-            if r.get("predicate") not in ("founded", "leader_of", "known_for"):
-                continue
-            if _norm(r.get("subject", "")) == o_n and _norm(r.get("object", "")) == s_n:
-                return subj, obj
+        if (o_n, s_n) in self._inversion_pairs:
+            return subj, obj
         return None
 
     def _has_supporting_source_fact(self, pack) -> bool:

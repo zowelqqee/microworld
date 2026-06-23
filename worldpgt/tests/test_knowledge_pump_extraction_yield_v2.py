@@ -328,6 +328,37 @@ def test_lead_definition_v2_exos_exact_class() -> None:
     assert any(d.get("definition") == "aerospace manufacturer" for d in defs)
 
 
+def test_lead_definition_v2_historical_biography_with_dates() -> None:
+    sent = (
+        "Raymond Albert Kroc (October 5, 1902 – January 14, 1984) "
+        "was an American businessman who was instrumental in turning McDonald's "
+        "into the most successful global fast food corporation by revenue."
+    )
+    items = extract_from_sentence(sent, "Ray Kroc", is_lead=True)
+    defs = [i for i in items if i.get("overlay_type") == "overlay_definition"]
+    assert any(
+        d.get("subject") == "Raymond Albert Kroc"
+        and d.get("definition") == "American businessman"
+        and d.get("predicate") == "is_a"
+        and d.get("stability") == "stable"
+        for d in defs
+    )
+
+
+def test_lead_definition_v2_honorific_parenthetical_appositive() -> None:
+    sent = (
+        "Sir Timothy John Berners-Lee (born 8 June 1955), also known as TimBL, "
+        "is an English computer scientist best known as the inventor of the World Wide Web."
+    )
+    items = extract_from_sentence(sent, "Tim Berners-Lee", is_lead=True)
+    defs = [i for i in items if i.get("overlay_type") == "overlay_definition"]
+    assert any(
+        d.get("subject") == "Timothy John Berners-Lee"
+        and d.get("definition") == "English computer scientist"
+        for d in defs
+    )
+
+
 @pytest.mark.parametrize("sent", [
     "OpenAI is artificial intelligence.",
     "The Boring Company is American infrastructure.",
@@ -735,6 +766,88 @@ def test_v2_candidates_pass_existing_precision_firewall() -> None:
     assert accepted
     assert not any(i.get("overlay_type") == "overlay_context_link" for i in accepted)
     assert not any(i.get("overlay_type") == "overlay_entity" for i in accepted)
+
+
+def test_zero_yield_audit_patterns_extract_real_lead_relations() -> None:
+    cases = [
+        (
+            "Design of this version was funded by NASA with $396 million awarded through the Commercial Orbital Transportation Services program.",
+            "SpaceX Dragon",
+            "funded_by",
+            "NASA",
+        ),
+        (
+            "Gigafactory Texas (also known as Giga Texas) is a Tesla, Inc. automotive manufacturing facility in unincorporated Travis County, Texas, just outside of Austin.",
+            "Gigafactory Texas",
+            "located_in",
+            "unincorporated Travis County, Texas",
+        ),
+        (
+            "The BYD M3, also marketed as the BYD ETP3 in Europe and BYD T3 is a 5-door van designed and produced by the Chinese automaker BYD Auto since 2014.",
+            "BYD M3",
+            "marketed_as",
+            "BYD ETP3",
+        ),
+        (
+            "Oracle Database was first released in 1979.",
+            "Oracle Database",
+            "first_released",
+            "1979",
+        ),
+        (
+            "Oracle Database supports multiple data models, including relational, JSON document, XML, spatial, graph, text, and vector data.",
+            "Oracle Database",
+            "supports",
+            "multiple data models",
+        ),
+        (
+            "XCOR Aerospace ceased operations in 2017.",
+            "XCOR Aerospace",
+            "ceased_operations",
+            "2017",
+        ),
+        (
+            "XCOR Aerospace filed for Chapter 7 bankruptcy.",
+            "XCOR Aerospace",
+            "filed_for_bankruptcy",
+            "Chapter 7 bankruptcy",
+        ),
+    ]
+
+    for sent, page, predicate, obj in cases:
+        items = extract_from_sentence(sent, page)
+        assert any(
+            item.get("predicate") == predicate and item.get("object") == obj
+            for item in items
+        ), f"Expected {predicate}={obj!r} from {sent!r}, got {items}"
+
+
+def test_zero_yield_audit_patterns_pass_precision_firewall() -> None:
+    candidates = []
+    for sent, page in [
+        (
+            "Design of this version was funded by NASA with $396 million awarded through the Commercial Orbital Transportation Services program.",
+            "SpaceX Dragon",
+        ),
+        (
+            "Oracle Database was first released in 1979.",
+            "Oracle Database",
+        ),
+        (
+            "XCOR Aerospace ceased operations in 2017.",
+            "XCOR Aerospace",
+        ),
+    ]:
+        candidates.extend(extract_from_sentence(sent, page))
+
+    result = apply_precision_firewall(candidates)
+    accepted = {
+        (item.get("subject"), item.get("predicate"), item.get("object"))
+        for item in result["accepted"]
+    }
+    assert ("SpaceX Dragon", "funded_by", "NASA") in accepted
+    assert ("Oracle Database", "first_released", "1979") in accepted
+    assert ("XCOR Aerospace", "ceased_operations", "2017") in accepted
 
 
 def test_write_extraction_yield_v2_artifacts(tmp_path) -> None:

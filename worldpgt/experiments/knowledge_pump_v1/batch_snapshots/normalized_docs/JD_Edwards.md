@@ -1,7 +1,7 @@
 # JD Edwards
 
 Source: https://en.wikipedia.org/wiki/JD_Edwards
-Retrieved at: 2026-06-17T17:17:32Z
+Retrieved at: 2026-06-22T06:44:01Z
 Revision ID: 1356748423
 Raw text SHA256: ae6de8dda30e3bb1215bc517f049e45a4af32a76f4279b725a0d20194e566497
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

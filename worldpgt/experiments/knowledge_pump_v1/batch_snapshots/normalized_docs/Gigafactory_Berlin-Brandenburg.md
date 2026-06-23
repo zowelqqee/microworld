@@ -1,7 +1,7 @@
 # Gigafactory Berlin-Brandenburg
 
 Source: https://en.wikipedia.org/wiki/Gigafactory_Berlin-Brandenburg
-Retrieved at: 2026-06-17T17:20:50Z
+Retrieved at: 2026-06-22T06:41:10Z
 Revision ID: 1359474084
 Raw text SHA256: cafa37433f7ebbb91bc316af0aa46045849cd5d4f5477f297cc002d75dc2a3d7
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

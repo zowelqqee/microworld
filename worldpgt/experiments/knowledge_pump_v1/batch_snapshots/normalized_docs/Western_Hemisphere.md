@@ -1,0 +1,58 @@
+# Western Hemisphere
+
+Source: https://en.wikipedia.org/wiki/Western_Hemisphere
+Retrieved at: 2026-06-22T09:56:53Z
+Revision ID: 1353344913
+Raw text SHA256: 7ccaa860e9f0ae4ceaa86384ab34920c3c1f3b4f176c6001ff0db52b85adffbd
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Western Hemisphere is the half of the planet Earth that lies west of the Prime Meridian and east of the 180th meridian. The other half is called the Eastern Hemisphere. In the United States, the term "Western Hemisphere" is often used as a metonym for the Americas, even though geographically, the hemisphere also includes parts of other continents.
+
+Geography
+
+The Western Hemisphere comprises the Americas, except some of the Aleutian Islands to the southwest of the Alaskan mainland; the westernmost parts of Europe and Africa, both mainland and islands; the extreme eastern tip of the Russian mainland and islands (North Asia); many territories in Oceania; and a large part of Antarctica.
+The center of the Western Hemisphere on the surface of the Earth is in the Pacific Ocean, at the intersection of the 90th meridian west and the Equator, among the Galápagos Islands. The nearest land is Genovesa Island at 0°19′N 89°57′W.
+The highest mountain in the Western Hemisphere is Aconcagua, in the Andes of Argentina, at 6,960.8 metres (22,837 feet).
+
+The tallest freestanding structure in the Western Hemisphere is the CN Tower, in Toronto, at 553.3 metres (1,815 ft). The tallest building in the Western Hemisphere is One World Trade Center, in New York City, at 1,776 feet (541.3 m).
+
+Other definitions
+In an attempt to match the Western Hemisphere more closely with the Americas, some sources use the 20th meridian west and the diametrically opposed 160th meridian east to define the hemisphere. This definition excludes all of the European and African mainlands, but still includes some islands associated with these continents, more of eastern Russia and Oceania, and part of Antarctica. It includes all islands of Alaska, but excludes a small portion of northeast Greenland. There is no hemisphere that includes all of the Americas that also excludes all land outside the Americas, regardless of the meridians or points chosen to define it.
+
+Sovereign states in both hemispheres
+Below is a list of the sovereign states in both the Western and Eastern hemispheres on the IERS Reference Meridian, in order from north to south:
+
+Denmark, due to the entirety of Greenland and the Faroe Islands. Denmark proper lies entirely within the Eastern Hemisphere.
+Norway, due only to Jan Mayen. Mainland Norway, Svalbard and Bouvet Island lie entirely within the Eastern Hemisphere.
+United Kingdom, passing through Greenwich, London. Most of the country lies within the Western Hemisphere, as do most of its Overseas Territories.
+The Netherlands has overseas islands that lie entirely within the Western Hemisphere, while mainland Netherlands lies entirely within the Eastern Hemisphere.
+France, passing through Puynormand (Gironde). About 1/3 of the country, including cities like Nantes or Bordeaux, as well as the overseas regions of Guadeloupe, Martinique, and French Guiana lie within the Western Hemisphere.
+Spain, passing through Castellón de la Plana (Valencian Community). Most of Spain, including the capital Madrid, the Canary Islands and the southern half of its Mediterranean territorial waters, lies within the Western Hemisphere. Spanish, Moroccan and Algerian Mediterranean waters are the only part of the Mediterranean Sea located in the Western Hemisphere.
+Algeria, passing through Stidia. About 1/4 of the country, including Oran, Algeria's second-largest city, lies within the Western Hemisphere.
+Mali, passing through the municipal area of Gao. Most of Mali, including the capital Bamako, lies within the Western Hemisphere.
+Burkina Faso, passing through Lalgaye. Most of the country, including the capital Ouagadougou, lies within the Western Hemisphere.
+Ghana, passing through Tema. Most of Ghana, including the capital Accra, lies within the Western Hemisphere.
+Togo, passing near Tami (Tône Prefecture in Savanes Region).
+Below is a list of additional sovereign states which are in both the Western and Eastern hemispheres along the 180th meridian, in order from north to south. (France is not listed below due to its inclusion above, though the meridian does pass Wallis and Futuna.) With the exception of the United States (due to Wake Island, Guam and the Northern Mariana Islands), all of them are located on just one side of the International Date Line, which curves around them.
+
+Russia, passing through Chukotka Autonomous Okrug. Its portion lying east of the 180th meridian is the only part of the country lying in the Western Hemisphere.
+United States, passing through the Aleutian Islands (Alaska). Except for the portion of Aleutian Islands and waters lying west of the 180th meridian, Guam, the Northern Mariana Islands, and Wake Island, most of the country lies east of the 180th meridian.
+Kiribati, passing close to Arorae. The country has both the Equator and the 180th meridian (antimeridian) crossing through its territory. It is the only country located in four hemispheres.
+Tuvalu, passing close to its capital, Funafuti.
+Fiji, passing close to its dependency Rotuma and passing through Taveuni.
+Most of New Zealand proper lies within the Eastern Hemisphere; but Chatham Islands and Kermadec Islands, as well as the self-governing states of the Cook Islands and Niue and the dependent territory of Tokelau, lie east of the 180th meridian.
+
+Countries, dependencies and other territories in the Western Hemisphere
+The following countries and territories lie entirely, mostly, or partially within the Western Hemisphere:
+
+See also
+Eastern Hemisphere
+Land and water hemispheres
+Western world
+
+References
+
+External links
+
+"Western Hemisphere" at Encyclopædia Britannica

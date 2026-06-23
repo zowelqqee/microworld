@@ -1,0 +1,76 @@
+# Thorsten O. Zander
+
+Source: https://en.wikipedia.org/wiki/Thorsten_O._Zander
+Retrieved at: 2026-06-22T07:18:04Z
+Revision ID: 1360313926
+Raw text SHA256: 413ef52322f0897ca87500c8cacdaf8f42f706daee019ff39b7b75802c072d46
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Thorsten O. Zander (born 1975 in Lüdenscheid, Germany) is a German scientist who introduced the concept of passive brain-computer interface. He co-founded Zander Labs, a German-Dutch company in the field of passive brain computer interface (pBCI) and neuro-adaptive technology (NAT).
+
+Education
+Zander attended the University of Münster from 1998 to 2004 where he graduated in mathematics, with focus on mathematical logic.
+During his studies, he worked for the university's office supporting visually impaired users and at the Fraunhofer Institute First in Berlin.
+In 2011, he obtained his PhD from the chair of Human-Maschine Systems at Technische Universität Berlin, supervised by Prof. Dr.-Ing. Matthias Roetting and Dr. Scott Makeig (Director of the SCCN at UCSD).
+
+Scientific career
+During his studies at University of Münster,  Zander started working on concepts related to human and artificial intelligence. His work in the Brain-Computer Interfaces (BCI) field started during his collaboration with the Fraunhofer Institute First, where he was involved in research connected to applications meant to enable disabled people to communicate with the outside world.
+He then went on to obtain his PhD from Technische Universität Berlin and started a workgroup called "Team PhyPA" (Physiological Parameters for Adaptation of Human‐Machine Systems), which is still functioning today. In 2008, together with this group, he developed the concept of passive brain-computer interfaces (pBCIs) that refers to the use of BCIs to improve human-computer interaction by assessing information about the user state.
+This approach is different compared to traditional BCIs, as no explicit commands are involved and thus, no additional effort is expected from the user. Due to his work on passive BCIs, Zander gained international recognition within the scientific community and the media.
+He founded the Community for Passive BCI Research group, that then transitioned into the Society for Neuroadaptive Technology that Zander co-leads with Prof. Dr. Stephen Fairclough. He organized a series of conferences about the topic of Neuroadaptive Technologies that received great international attention.
+He collaborated in research outside of Germany, such as the partnership with the Swartz Center for Computational Neuroscience Department and the Cognitive Science Department in San Diego, USA. Together with the Leibniz Institute for Knowledge Media, from Tübingen, he conducted a research on the implications of passive BCI in education as an aiding tool meant to combat boredom through adaptive and personalized learning.
+After cooperating with a robotics study with the Max Planck Institute, he joined Bernhard Schölkopf's postdoctoral workgroup, where he further focused on developing machine learning algorithms in the context of passive BCI. Here, he helped to improve and stabilize the initial methodology and became more determined to work on human-computer interaction bottlenecks.
+When returning to Technische Universität Berlin he researched the autonomous detection of user models through passive BCI. In the study, an implicit cursor control experiment demonstrated the adaptation of a computer to the users by decoding their expectations in real time.
+The topic became Zander's main research interest and is now called neuroadaptive technology. His publications address the ethical considerations of this innovation, as it implies potential threats to the privacy of thought and ownership. In 2020, he obtained a full Professorship for Neuroadaptive Human-Computer Interaction department at Brandenburg University of Technology.
+Apart from teaching courses related to BCI, he still actively leads "Team PhyPA". Their studies focus on neuroadaptive technologies, usability investigations in the context of human‐computer interaction and other neuroscientific topics. The team also organizes regular workshops at conferences such as at the Neuroergonomics Conference,
+In the corporate sphere, Zander collaborated with companies such as Microsoft, Volkswagen, Brain Products, Cognionics or Airbus Central R&T. He is also the co-founder of the Zander Laboratories company in Amsterdam, which aims to provide expertise in research questions regarding Human-Computer Interaction.
+He is currently a Lichtenberg professor, awarded by the Volkswagen Foundation.
+
+Passive brain-computer interfaces
+Zander and Christian Kothe introduced the concept of passive BCI in 2008 during the Graz BCI Conference, after having contrasted "passive control of a system" in one experiment with "active motor control" in an earlier publication at a SIGCHI Workshop at CHI 2008. This concept was formally expounded in 2011, offering passive BCI as a "[fusion of] BCI technology with cognitive monitoring"  to constitute a third category of BCI systems aside from "active" and "reactive". In this categorization, a passive BCI system "derives its outputs from arbitrary brain activity arising without the purpose of voluntary control, for enriching a human–machine interaction with implicit information on the actual user state. Active and reactive systems, on the other hand, are consciously used by users with the intention to control an application.
+The word "passive" in passive BCI "(…) refers to the role of the end user of a system with respect to the BCI: (…) it is an inherent and defining aspect that the user exerts no effort to actively, explicitly, or voluntarily elicit or modulate [the targeted brain] activity. Instead, the user focuses on the task at hand while a passive BCI system, in the background, monitors their brain activity for informative correlates of relevant cognitive or affective states." As a result, the decoded cognitive or affective states can be used as implicit input to a system, "independently of any intentionally communicated command."
+Although criticized for being a subjective term and lacking a "clear neuroscientific definition", passive BCI was later identified as one of the guiding principles of future BCI research, and research into passive BCI has increased relative to more traditional, i.e. active and reactive, applications
+
+Neuroadaptive technologies
+With passive BCI providing the technological means to obtain implicit input from brain activity to a system, it can be used to various ends. Zander organized the Passive BCI Community Meeting in Delmenhorst, 2014, where the term neuroadaptive technology was elected to represent a line of research that uses implicit input from a passive BCI to create closed-loop adaptive systems. The Society for Neuroadaptive Technology, which organizes the Neuroadaptive Technology Conferences, explains that "neuroadaptive technology utilises real-time measures of neurophysiological activity within a closed control loop to enable intelligent software adaptation." A more recent definition proposes that "a technology is neuroadaptive when it acquires implicit input through a brain-computer interface, and uses this input to enable control"
+An example of implicit input enabling control and resulting in neuroadaptive technology was given by Zander and colleagues in 2016, demonstrating how users could guide the movements of a computer cursor to a designated or self-chosen target without being aware of doing so. Instead of the user providing explicit instructions to steer the cursor, the cursor instead moved autonomously in initially random directions, and obtained the user's implicit brain response to each individual movement from a passive BCI. This response reflected the user's agreement or disagreement with each movement, allowing a reinforcement learning algorithm to, over time, infer the user's desired direction of movement.
+Stephen Fairclough explains that neuroadaptive technology must necessarily have its own agenda, i.e. the goal for towards which it guides the interaction, and notes that this agenda may or may not be in line with the user's, opening up a number of potential ethical, legal, and societal issues . Zander and colleagues similarly note that implicit interaction "may even function outside of conscious awareness", exacerbating these potential issues, but emphasize that neuroadaptive technology embodies the "cybernetic convergence of human and machine intelligence" with significant implications for future technological developments.
+
+Honors and awards
+IEEE SMC, BRAIN Initiative (Best Paper Award Nominee together with Laurens Krol) (2019)
+Neuroergonomics Society, Raja Parasuraman Award for Senior Research in the field of Neuroergonomics (2016)
+Hamlyn Symposium on Medicine and Robotics, 2nd Best Poster Award (2013)
+Willumeit‐Stiftung, Berlin, Best Dissertation (2011)
+4th International BCI meeting, Asilomar, USA, Best Poster Award (2010)
+HCI International, Orlando, USA, 2nd Best Paper Award (Overall) (2009)
+HCI International, Orlando, USA, Best Paper Award in a specific area, Universal Access in HCI (2009)
+Society for Cognitive Science Research Germany, Best Poster Award, Award (2009)
+BBCI workshop, Berlin, Best Poster Award (2009)
+
+Bibliography
+Neuroergonomics, edited by: Klaus Gramann, Thorsten O. Zander, Stephen Fairclough, Hasan Ayaz, Frontiers Publishing Group, 2017
+Trends in Neuroergonomics, edited by: Klaus Gramann, Thorsten O. Zander, Carolin Wienrich, Verlag der Technischen Universität Berlin, ISBN 978-3-7983-2803-7, 2016
+Using Neurophysiological Signals that Reflect Cognitive or Affective State, edited by: Anne‐Marie Brouwer, Thorsten O. Zander, Jan B. F. van Erp, Frontiers Publishing Group, ISBN 978-2-88919-613-5, 2015
+Krol, L. R., Andreessen, L. M., & Zander, T. O. (2018). Passive brain‐computer interfaces: a perspective on increased interactivity. Brain‐Computer Interfaces, Handbook: Technological and Theoretical Advances, 69‐86, 2018
+Zander T. O., Brönstrup J., Lorenz R., Krol L. R., Towards implicit control in Human Computer Interaction, Advances in Physiological Computing, Springer Berlin Heidelberg, 2014.
+Zander T. O., Brönstrup J., Klose E., Sonnenberg R. S., Vos W. K., Grootjen M., Towards Implicit Control through Steady‐State Somatosensory Evoked Potentials, Universal Access in Human‐Computer Interaction. Design Methods, Tools, and Interaction Techniques for eInclusion, 682‐688, Springer Berlin Heidelberg, 2013.
+Protzak J., Ihme K., Zander T. O., A Passive Brain‐Computer Interface for Supporting Gaze‐Based Human‐Machine Interaction, Universal Access in Human‐Computer Interaction. Design Methods, Tools, and Interaction Techniques for eInclusion, 662‐ 671, Springer Berlin Heidelberg, 2013.
+Meyer T., Peters J., Zander T. O., Brötz D., Soekadar S. R., Schölkopf B., Grosse‐Wentrup, Investigating the Neural Basis of Brain‐Computer Interface (BCI)‐Based Stroke Rehabilitation, Converging Clinical and Engineering Research on Neurorehabilitation, 617‐621, Springer Berlin Heidelberg, 2012
+Delorme A., Kothe C., Vankov A., Bigdely‐Shamlo N., Oostenveldt R., Zander T. O., Makeig S., MATLAB‐based tools for BCI research, In Tan, Nijholt (Eds.): Brain‐Computer Interfaces: applying our minds to Human‐Computer Interaction, 2010.
+Zander T. O., Kothe C., Jatzev S., Gärtner M., Enhancing Human‐Computer Interaction with input from active and passive Brain‐Computer Interfaces, In Tan, Nijholt (Eds.): Brain‐Computer Interfaces: applying our minds to Human‐Computer Interaction, 2010.
+Vilimek R., Zander T. O., BC(eye): Combining Eye‐Gaze Input with Brain‐Computer Interaction, In Hofmann A. (Ed.): Lecture Notes in Computer Science, Springer, Heidelberg Berlin, 2009.
+Zander T. O., Kothe C., Welke S., Rötting M., Utilizing Secondary Input from Passive Brain‐Computer Interfaces for Enhancing Human‐Machine Interaction, In Hofmann A. (Ed.): Lecture Notes in Computer Science, Springer, Berlin Heidelberg, 2009.
+Rötting M., Zander T. O., Trösterer S., Dzaack J., Implicit Interaction in Multimodal Human‐Machine Systems, In Schlick C. (Ed.): Industrial Engineering and Ergonomics Visions, Concepts, Methods and Tools, Springer, Berlin Heidelberg, Germany, 2009.
+
+Selected publications
+Zander, T. O., Krol, L. R., Birbaumer, N. P., & Gramann, K. (2016). Neuroadaptive technology enables implicit cursor control based on medial prefrontal cortex activity. Proceedings of the National Academy of Sciences, 113(52), 14898–14903.
+Zander TO, Jatzev S. Context-aware brain- computer interfaces: exploring the information space of user, technical system and environment. J Neural Eng, 9(1), 2012, 016003
+Zander TO, Kothe CA, Welke S, Rötting M. Enhancing human-machine systems with secondary input from passive brain-computer interfaces. In Proc 4th Int Graz, Graz, Austria, 2008, 144–149
+Zander, T. O., & Jatzev, S. (2009, September). Detecting affective covert user states with passive brain-computer interfaces. In 2009 3rd International Conference on Affective Computing and Intelligent Interaction and Workshops (pp. 1–9). IEEE.
+Krol, L. R., & Zander, T. O. (2017). Passive BCI-based Neuroadaptive Systems. In GBCIC.
+Krol, L. R., & Zander, T. O. (2017, December). Towards a conceptual framework for cognitive probing. In International Workshop on Symbiotic Interaction (pp. 74–78). Springer, Cham.
+Krol, L. R., & Zander, T. O. (2017, July). Cognitive probing for automated neuroadaptation. In The First Biannual Neuroadaptive Technology Conference (p. 22).
+Krol, L. R., Haselager, P., & Zander, T. O. (2020). Cognitive and affective probing: a tutorial and review of active learning for neuroadaptive technology. Journal of Neural Engineering, 17(1), 012001.
+
+References

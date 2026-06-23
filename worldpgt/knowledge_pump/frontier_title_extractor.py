@@ -60,11 +60,17 @@ _ALLOWLISTED_SINGLE = {
 _TRUSTED_SOURCES = {
     "snapshot_link", "relation_v2", "knowledge_requests", "overlay_entity",
     "overlay_alias", "overlay_relation", "weak_context_link",
+    "dynamic_wiki_link",
 }
+_SERVICE_NAMESPACE_PREFIXES = (
+    "category:", "template:", "file:", "image:", "help:", "wikipedia:",
+    "portal:", "talk:", "user:", "module:", "draft:", "special:",
+    "mediawiki:", "book:", "timedtext:",
+)
 
 
 def _clean_title(title: str) -> str:
-    title = re.sub(r"\s+", " ", title.replace("_", " ")).strip(" .,:;()[]{}")
+    title = re.sub(r"\s+", " ", title.replace("_", " ")).strip(" .,:;[]{}")
     return title
 
 
@@ -106,7 +112,7 @@ def _usable(title: str, source: str) -> bool:
         return False
     if len(title) < 4 or len(title) > 90:
         return False
-    if title.lower().startswith(("list of ", "category:", "template:")):
+    if title.lower().startswith(("list of ",) + _SERVICE_NAMESPACE_PREFIXES):
         return False
     words = title.split()
     if words and words[0] in _FRAGMENT_STARTERS:
@@ -135,6 +141,10 @@ def _usable(title: str, source: str) -> bool:
     if re.fullmatch(r"\d+|\d{4}", title):
         return False
     return True
+
+
+def is_usable_frontier_title(title: str, source: str = "dynamic_wiki_link") -> bool:
+    return _usable(_clean_title(title), source)
 
 
 def _add(out: dict[str, FrontierTitle], title: str, source: str, reason: str, weight: int) -> None:

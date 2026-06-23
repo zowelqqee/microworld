@@ -1,7 +1,7 @@
 # Intercontinental Exchange
 
 Source: https://en.wikipedia.org/wiki/Intercontinental_Exchange
-Retrieved at: 2026-06-17T17:19:28Z
+Retrieved at: 2026-06-22T08:28:08Z
 Revision ID: 1359551533
 Raw text SHA256: cc0144e30bdfa558c1f1840a241b3cb97c66e00f8e2b6e8137131e95e930274b
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

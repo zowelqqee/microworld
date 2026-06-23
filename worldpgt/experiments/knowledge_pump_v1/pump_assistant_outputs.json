@@ -134,12 +134,12 @@
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -215,12 +215,12 @@
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -296,12 +296,12 @@
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -364,14 +364,14 @@
           ],
           "blocked_paths": [],
           "weak_links": [
+            "SpaceX->Rocket (mentioned_with)",
+            "Blue Origin->Rocket (mentioned_with)",
             "Elon Musk->Businessperson (mentioned_with)",
             "Elon Musk->Leadership (mentioned_with)",
             "Elon Musk->Tesla, Inc. (mentioned_with)",
             "Elon Musk->SpaceX (mentioned_with)",
             "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
-            "SpaceX->Rocket (mentioned_with)",
-            "Blue Origin->Rocket (mentioned_with)"
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
@@ -380,16 +380,16 @@
             "Elon Musk: businessman"
           ],
           "direct_relations": [
+            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
+            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]"
+            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -452,14 +452,14 @@
           ],
           "blocked_paths": [],
           "weak_links": [
+            "SpaceX->Rocket (mentioned_with)",
+            "Blue Origin->Rocket (mentioned_with)",
             "Elon Musk->Businessperson (mentioned_with)",
             "Elon Musk->Leadership (mentioned_with)",
             "Elon Musk->Tesla, Inc. (mentioned_with)",
             "Elon Musk->SpaceX (mentioned_with)",
             "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
-            "SpaceX->Rocket (mentioned_with)",
-            "Blue Origin->Rocket (mentioned_with)"
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
@@ -468,16 +468,16 @@
             "Elon Musk: businessman"
           ],
           "direct_relations": [
+            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
+            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]"
+            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -556,12 +556,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -640,12 +640,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -712,7 +712,6 @@
             "Tesla->Clean energy (mentioned_with)",
             "Tesla->Electric car (mentioned_with)",
             "Martin Eberhard->Tesla, Inc. (mentioned_with)",
-            "Martin Eberhard->Electric car (mentioned_with)",
             "Marc Tarpenning->Tesla, Inc. (mentioned_with)",
             "Tesla Energy->Tesla, Inc. (mentioned_with)",
             "Tesla Model S->Tesla, Inc. (mentioned_with)",
@@ -722,19 +721,20 @@
             "Tesla Cybertruck->Tesla, Inc. (mentioned_with)",
             "Supercharger->Tesla, Inc. (mentioned_with)",
             "Tesla Roadster->Tesla (mentioned_with)",
-            "Gigafactory->Tesla (mentioned_with)"
+            "Gigafactory->Tesla (mentioned_with)",
+            "Martin Eberhard->Electric car (mentioned_with)"
           ],
           "source_facts": [],
           "definitions": [
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -866,33 +866,33 @@
             "Forbes -> Elon Musk (weak_only_path)"
           ],
           "weak_links": [
-            "Elon Musk->Businessperson (mentioned_with)",
-            "Elon Musk->Leadership (mentioned_with)",
-            "Elon Musk->Tesla, Inc. (mentioned_with)",
-            "Elon Musk->SpaceX (mentioned_with)",
             "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
             "Forbes->Business journalism (mentioned_with)",
             "Forbes->Ranking (mentioned_with)",
             "Jeff Bezos->Forbes (mentioned_with)",
             "Michael Bloomberg->Forbes (mentioned_with)",
-            "Larry Ellison->Forbes (mentioned_with)"
+            "Larry Ellison->Forbes (mentioned_with)",
+            "Elon Musk->Businessperson (mentioned_with)",
+            "Elon Musk->Leadership (mentioned_with)",
+            "Elon Musk->Tesla, Inc. (mentioned_with)",
+            "Elon Musk->SpaceX (mentioned_with)",
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman",
-            "Forbes: American business magazine"
+            "Forbes: American business magazine",
+            "Elon Musk: businessman"
           ],
           "direct_relations": [
+            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
+            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
@@ -961,40 +961,40 @@
             "Forbes -> Net worth (weak_only_path)"
           ],
           "weak_links": [
+            "Elon Musk->Forbes (mentioned_with)",
+            "Forbes->Business journalism (mentioned_with)",
+            "Forbes->Ranking (mentioned_with)",
+            "Jeff Bezos->Forbes (mentioned_with)",
+            "Michael Bloomberg->Forbes (mentioned_with)",
+            "Larry Ellison->Forbes (mentioned_with)",
             "Elon Musk->Businessperson (mentioned_with)",
             "Elon Musk->Leadership (mentioned_with)",
             "Elon Musk->Tesla, Inc. (mentioned_with)",
             "Elon Musk->SpaceX (mentioned_with)",
-            "Elon Musk->Forbes (mentioned_with)",
             "Elon Musk->Net worth (mentioned_with)",
-            "Forbes->Business journalism (mentioned_with)",
-            "Forbes->Ranking (mentioned_with)",
             "Net worth->Asset (mentioned_with)",
             "Net worth->Liability (mentioned_with)",
             "Jeff Bezos->Net worth (mentioned_with)",
-            "Jeff Bezos->Forbes (mentioned_with)",
             "Bernard Arnault->Net worth (mentioned_with)",
             "Michael Bloomberg->Net worth (mentioned_with)",
-            "Michael Bloomberg->Forbes (mentioned_with)",
-            "Larry Ellison->net worth (mentioned_with)",
-            "Larry Ellison->Forbes (mentioned_with)"
+            "Larry Ellison->net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman",
             "Forbes: American business magazine",
+            "Elon Musk: businessman",
             "Net worth: value of all assets minus liabilities"
           ],
           "direct_relations": [
+            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
+            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
@@ -1260,12 +1260,12 @@
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -1328,14 +1328,14 @@
           ],
           "blocked_paths": [],
           "weak_links": [
+            "SpaceX->Rocket (mentioned_with)",
+            "Blue Origin->Rocket (mentioned_with)",
             "Elon Musk->Businessperson (mentioned_with)",
             "Elon Musk->Leadership (mentioned_with)",
             "Elon Musk->Tesla, Inc. (mentioned_with)",
             "Elon Musk->SpaceX (mentioned_with)",
             "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
-            "SpaceX->Rocket (mentioned_with)",
-            "Blue Origin->Rocket (mentioned_with)"
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
@@ -1344,16 +1344,16 @@
             "Elon Musk: businessman"
           ],
           "direct_relations": [
+            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
+            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]"
+            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -1434,12 +1434,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -1581,12 +1581,7 @@
             "SpaceX -> Elon Musk (relation_inversion)"
           ],
           "weak_links": [
-            "Elon Musk->Businessperson (mentioned_with)",
-            "Elon Musk->Leadership (mentioned_with)",
-            "Elon Musk->Tesla, Inc. (mentioned_with)",
             "Elon Musk->SpaceX (mentioned_with)",
-            "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
             "SpaceX->Aerospace manufacturing (mentioned_with)",
             "SpaceX->Rocket (mentioned_with)",
             "SpaceX->Spacecraft (mentioned_with)",
@@ -1597,26 +1592,31 @@
             "Dragon spacecraft->SpaceX (mentioned_with)",
             "Starlink->SpaceX (mentioned_with)",
             "Falcon 1->SpaceX (mentioned_with)",
-            "Crew Dragon->SpaceX (mentioned_with)"
+            "Crew Dragon->SpaceX (mentioned_with)",
+            "Elon Musk->Businessperson (mentioned_with)",
+            "Elon Musk->Leadership (mentioned_with)",
+            "Elon Musk->Tesla, Inc. (mentioned_with)",
+            "Elon Musk->Forbes (mentioned_with)",
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman",
-            "SpaceX: aerospace manufacturer and space transportation company"
+            "SpaceX: aerospace manufacturer and space transportation company",
+            "Elon Musk: businessman"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
@@ -1692,26 +1692,26 @@
             "SpaceX->Rocket (mentioned_with)",
             "SpaceX->Spacecraft (mentioned_with)",
             "Gwynne Shotwell->SpaceX (mentioned_with)",
-            "Blue Origin->Rocket (mentioned_with)",
             "Falcon 9->SpaceX (mentioned_with)",
             "Falcon Heavy->SpaceX (mentioned_with)",
             "Starship->SpaceX (mentioned_with)",
             "Dragon spacecraft->SpaceX (mentioned_with)",
             "Starlink->SpaceX (mentioned_with)",
             "Falcon 1->SpaceX (mentioned_with)",
-            "Crew Dragon->SpaceX (mentioned_with)"
+            "Crew Dragon->SpaceX (mentioned_with)",
+            "Blue Origin->Rocket (mentioned_with)"
           ],
           "source_facts": [],
           "definitions": [
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]"
@@ -1781,33 +1781,33 @@
             "Forbes -> Elon Musk (weak_only_path)"
           ],
           "weak_links": [
-            "Elon Musk->Businessperson (mentioned_with)",
-            "Elon Musk->Leadership (mentioned_with)",
-            "Elon Musk->Tesla, Inc. (mentioned_with)",
-            "Elon Musk->SpaceX (mentioned_with)",
             "Elon Musk->Forbes (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
             "Forbes->Business journalism (mentioned_with)",
             "Forbes->Ranking (mentioned_with)",
             "Jeff Bezos->Forbes (mentioned_with)",
             "Michael Bloomberg->Forbes (mentioned_with)",
-            "Larry Ellison->Forbes (mentioned_with)"
+            "Larry Ellison->Forbes (mentioned_with)",
+            "Elon Musk->Businessperson (mentioned_with)",
+            "Elon Musk->Leadership (mentioned_with)",
+            "Elon Musk->Tesla, Inc. (mentioned_with)",
+            "Elon Musk->SpaceX (mentioned_with)",
+            "Elon Musk->Net worth (mentioned_with)"
           ],
           "source_facts": [
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman",
-            "Forbes: American business magazine"
+            "Forbes: American business magazine",
+            "Elon Musk: businessman"
           ],
           "direct_relations": [
+            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
+            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes business rankings [stability=semi_stable, trust=overlay_candidate]",
-            "Forbes publishes financial lists [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
@@ -1877,16 +1877,10 @@
           ],
           "weak_links": [
             "Elon Musk->SpaceX (mentioned_with)",
-            "Elon Musk->Net worth (mentioned_with)",
             "SpaceX->Aerospace manufacturing (mentioned_with)",
             "SpaceX->Rocket (mentioned_with)",
             "SpaceX->Spacecraft (mentioned_with)",
-            "Net worth->Asset (mentioned_with)",
-            "Net worth->Liability (mentioned_with)",
             "Gwynne Shotwell->SpaceX (mentioned_with)",
-            "Jeff Bezos->Net worth (mentioned_with)",
-            "Bernard Arnault->Net worth (mentioned_with)",
-            "Michael Bloomberg->Net worth (mentioned_with)",
             "Falcon 9->SpaceX (mentioned_with)",
             "Falcon Heavy->SpaceX (mentioned_with)",
             "Starship->SpaceX (mentioned_with)",
@@ -1894,6 +1888,12 @@
             "Starlink->SpaceX (mentioned_with)",
             "Falcon 1->SpaceX (mentioned_with)",
             "Crew Dragon->SpaceX (mentioned_with)",
+            "Elon Musk->Net worth (mentioned_with)",
+            "Net worth->Asset (mentioned_with)",
+            "Net worth->Liability (mentioned_with)",
+            "Jeff Bezos->Net worth (mentioned_with)",
+            "Bernard Arnault->Net worth (mentioned_with)",
+            "Michael Bloomberg->Net worth (mentioned_with)",
             "Larry Ellison->net worth (mentioned_with)"
           ],
           "source_facts": [],
@@ -1902,12 +1902,12 @@
             "Net worth: value of all assets minus liabilities"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -1993,12 +1993,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -2238,12 +2238,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -2491,16 +2491,16 @@
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]"
+            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -2573,7 +2573,6 @@
             "Tesla->Clean energy (mentioned_with)",
             "Tesla->Electric car (mentioned_with)",
             "Martin Eberhard->Tesla, Inc. (mentioned_with)",
-            "Martin Eberhard->Electric car (mentioned_with)",
             "Marc Tarpenning->Tesla, Inc. (mentioned_with)",
             "Tesla Energy->Tesla, Inc. (mentioned_with)",
             "Tesla Model S->Tesla, Inc. (mentioned_with)",
@@ -2583,19 +2582,20 @@
             "Tesla Cybertruck->Tesla, Inc. (mentioned_with)",
             "Supercharger->Tesla, Inc. (mentioned_with)",
             "Tesla Roadster->Tesla (mentioned_with)",
-            "Gigafactory->Tesla (mentioned_with)"
+            "Gigafactory->Tesla (mentioned_with)",
+            "Martin Eberhard->Electric car (mentioned_with)"
           ],
           "source_facts": [],
           "definitions": [
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -2645,7 +2645,7 @@
         "steps": [
           "router: intent=unsupported_universal",
           "router: hard-safety route engaged",
-          "context: pack built (valid=True, entities=2, paths=0, blocked=2, weak=18, source_facts=0)",
+          "context: pack built (valid=True, entities=2, paths=0, blocked=2, weak=24, source_facts=0)",
           "context: safety_notes=unsupported_universal_claim: blocked; cannot generalize from specific overlay relations; weak_only_path: weak context link cannot establish a stable relation",
           "decision: source_system=safety_gate, support_kind=audit_blocked_context"
         ],
@@ -2667,33 +2667,40 @@
             "SpaceX->Aerospace manufacturing (mentioned_with)",
             "SpaceX->Rocket (mentioned_with)",
             "SpaceX->Spacecraft (mentioned_with)",
-            "Rocket->Thrust (mentioned_with)",
-            "Rocket->Rocket engine (mentioned_with)",
-            "Rocket->Spaceflight (mentioned_with)",
             "Gwynne Shotwell->SpaceX (mentioned_with)",
-            "Gwynne Shotwell->Rocket (mentioned_with)",
-            "Blue Origin->Rocket (mentioned_with)",
             "Falcon 9->SpaceX (mentioned_with)",
             "Falcon Heavy->SpaceX (mentioned_with)",
             "Starship->SpaceX (mentioned_with)",
             "Dragon spacecraft->SpaceX (mentioned_with)",
             "Starlink->SpaceX (mentioned_with)",
-            "Launch vehicle->Rocket (mentioned_with)",
             "Falcon 1->SpaceX (mentioned_with)",
-            "Crew Dragon->SpaceX (mentioned_with)"
+            "Crew Dragon->SpaceX (mentioned_with)",
+            "Falcon 9->Reusable rocket (mentioned_with)",
+            "Falcon Heavy->Reusable rocket (mentioned_with)",
+            "Starship->Reusable rocket (mentioned_with)",
+            "Reusable rocket->Launch vehicle (mentioned_with)",
+            "Reusable rocket->Spaceflight (mentioned_with)",
+            "Falcon 1->reusable rocket (mentioned_with)",
+            "Rocket->Thrust (mentioned_with)",
+            "Rocket->Rocket engine (mentioned_with)",
+            "Rocket->Spaceflight (mentioned_with)",
+            "Gwynne Shotwell->Rocket (mentioned_with)",
+            "Blue Origin->Rocket (mentioned_with)",
+            "Launch vehicle->Rocket (mentioned_with)"
           ],
           "source_facts": [],
           "definitions": [
             "SpaceX: aerospace manufacturer and space transportation company",
+            "Reusable rocket: launch vehicle designed to be used more than once",
             "Rocket: vehicle that obtains thrust from a rocket engine"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -2779,12 +2786,12 @@
             "Tesla: American electric vehicle and clean energy company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -2895,7 +2902,7 @@
       "question": "How is Elon Musk connected to the Moon?",
       "decision": "audit",
       "route": "connection_path",
-      "answer_text": "the overlay has no explicit stable path connecting these entities (only weak or no links)",
+      "answer_text": "no explicit stable path connects these entities (only weak or no links)",
       "overlay_mode": "promoted",
       "supported_by_context": false,
       "support_kind": "missing_knowledge",
@@ -2976,7 +2983,7 @@
       "question": "Who is Zaphod Beeblebrox?",
       "decision": "audit",
       "route": "entity_definition",
-      "answer_text": "no stable definition for this entity is present in the overlay",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
       "overlay_mode": "promoted",
       "supported_by_context": false,
       "support_kind": "missing_knowledge",
@@ -3031,7 +3038,7 @@
       "question": "What does the Galactic Empire develop?",
       "decision": "audit",
       "route": "entity_relation",
-      "answer_text": "No relevant information found in the wiki overlay for this question.",
+      "answer_text": "No relevant information found for this question.",
       "overlay_mode": "promoted",
       "supported_by_context": false,
       "support_kind": "missing_knowledge",
@@ -3115,7 +3122,8 @@
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman"
+            "Elon Musk: businessman",
+            "Musk: class of aromatic substances commonly used as base notes in perfumery"
           ],
           "direct_relations": [
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
@@ -3190,20 +3198,20 @@
             "SpaceX: aerospace manufacturer and space transportation company"
           ],
           "direct_relations": [
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops Falcon 9 [stability=semi_stable, trust=overlay_candidate]",
-            "Falcon 9 owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops Starship [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops Launch vehicle [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]"
+            "SpaceX develops Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Falcon 9 owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [],
@@ -3268,19 +3276,20 @@
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
-            "Elon Musk: businessman"
+            "Elon Musk: businessman",
+            "Musk: class of aromatic substances commonly used as base notes in perfumery"
           ],
           "direct_relations": [
+            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
+            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "Blue Origin develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Zip2 [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Big Green [stability=semi_stable, trust=overlay_candidate]"
           ],
@@ -3342,19 +3351,20 @@
           "weak_links": [],
           "source_facts": [],
           "definitions": [
-            "Tesla: American electric vehicle and clean energy company"
+            "Tesla: American electric vehicle and clean energy company",
+            "Nikola Tesla: Serbian-American engineer"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
-            "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric car [stability=semi_stable, trust=overlay_candidate]",
-            "Tesla is_a Clean energy [stability=stable, trust=overlay_candidate]"
+            "Tesla is_a Clean energy [stability=stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [],
@@ -3414,19 +3424,20 @@
           "weak_links": [],
           "source_facts": [],
           "definitions": [
-            "Tesla: American electric vehicle and clean energy company"
+            "Tesla: American electric vehicle and clean energy company",
+            "Nikola Tesla: Serbian-American engineer"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces battery energy storage [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric cars [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Battery storage [stability=semi_stable, trust=overlay_candidate]",
-            "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Tesla produces Electric car [stability=semi_stable, trust=overlay_candidate]",
-            "Tesla is_a Clean energy [stability=stable, trust=overlay_candidate]"
+            "Tesla is_a Clean energy [stability=stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Martin Eberhard founded Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Marc Tarpenning founded Tesla [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -3497,31 +3508,32 @@
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
+            "SpaceX: aerospace manufacturer and space transportation company",
             "Elon Musk: businessman",
-            "SpaceX: aerospace manufacturer and space transportation company"
+            "Musk: class of aromatic substances commonly used as base notes in perfumery"
           ],
           "direct_relations": [
-            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX develops spacecraft [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Falcon rockets [stability=semi_stable, trust=overlay_candidate]",
             "SpaceX produces Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "SpaceX develops Falcon 9 [stability=semi_stable, trust=overlay_candidate]",
+            "SpaceX develops Starship [stability=semi_stable, trust=overlay_candidate]",
+            "SpaceX develops Launch vehicle [stability=semi_stable, trust=overlay_candidate]",
+            "SpaceX develops Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Gwynne Shotwell leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Falcon 9 owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
+            "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops Falcon 9 [stability=semi_stable, trust=overlay_candidate]",
-            "Falcon 9 owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
-            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Zip2 [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops Starship [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded Big Green [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops Launch vehicle [stability=semi_stable, trust=overlay_candidate]",
-            "SpaceX develops Dragon spacecraft [stability=semi_stable, trust=overlay_candidate]"
+            "Elon Musk founded Big Green [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [
@@ -3558,7 +3570,7 @@
       "question": "How is Starlink connected to Elon Musk?",
       "decision": "audit",
       "route": "connection_path",
-      "answer_text": "the overlay has no explicit stable path connecting these entities (only weak or no links)",
+      "answer_text": "no explicit stable path connects these entities (only weak or no links)",
       "overlay_mode": "snapshot-dry-run",
       "supported_by_context": false,
       "support_kind": "missing_knowledge",
@@ -3591,10 +3603,14 @@
             "Elon Musk estimated_net_worth US$1.1 trillion [src=Forbes, stability=volatile]"
           ],
           "definitions": [
+            "Starlink: satellite internet constellation operated by SpaceX",
             "Elon Musk: businessman",
-            "Starlink: satellite internet constellation operated by SpaceX"
+            "Musk: class of aromatic substances commonly used as base notes in perfumery"
           ],
           "direct_relations": [
+            "Starlink is_a Satellite internet [stability=stable, trust=overlay_candidate]",
+            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
+            "Starlink is_a Satellite constellation [stability=stable, trust=overlay_candidate]",
             "Elon Musk leader_of Tesla [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk leader_of SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk known_for Tesla [stability=semi_stable, trust=overlay_candidate]",
@@ -3603,11 +3619,8 @@
             "Elon Musk founded Neuralink [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded The Boring Company [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded xAI [stability=semi_stable, trust=overlay_candidate]",
-            "Starlink is_a Satellite internet [stability=stable, trust=overlay_candidate]",
-            "Starlink owned_by SpaceX [stability=semi_stable, trust=overlay_candidate]",
             "Elon Musk founded Zip2 [stability=semi_stable, trust=overlay_candidate]",
-            "Elon Musk founded Big Green [stability=semi_stable, trust=overlay_candidate]",
-            "Starlink is_a Satellite constellation [stability=stable, trust=overlay_candidate]"
+            "Elon Musk founded Big Green [stability=semi_stable, trust=overlay_candidate]"
           ],
           "missing_hints": [],
           "safety_notes": [

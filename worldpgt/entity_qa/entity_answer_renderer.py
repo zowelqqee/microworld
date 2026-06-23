@@ -12,8 +12,6 @@ from worldpgt.entity_qa.types import EntityQAPlan
 from worldpgt.knowledge.temporal_classification import temporal_caveat, weakest_temporal_class
 from worldpgt.relation_extraction_v2.relation_policy import should_hedge_render
 
-_AUDIT_PREFIX = "I cannot answer from the wiki overlay because "
-
 _ORDINAL_START_RE = re.compile(
     r"^\s*(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|"
     r"eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|"
@@ -41,6 +39,23 @@ _VERB_OBJECT_PHRASE: dict[str, str] = {
     "owned_by": "is owned by",
     "related_to": "is related to",
     "part_of": "is part of",
+    "alias": "is also known as",
+    "based_at": "is based at",
+    "ceased_operations": "ceased operations in",
+    "construction_started": "construction began in",
+    "filed_for_bankruptcy": "filed for",
+    "first_released": "was first released in",
+    "funded_by": "was funded by",
+    "has_facility": "has",
+    "hosted_flight_to": "flew missions to",
+    "introduced": "was introduced in",
+    "located_in": "is located in",
+    "marketed_as": "is marketed as",
+    "merged_with": "merged with",
+    "offers": "is offered on",
+    "runs_on": "runs on",
+    "supports": "supports",
+    "variant_of": "is a variant of",
 }
 
 
@@ -53,6 +68,8 @@ def render(plan: EntityQAPlan) -> str:
     t = plan.render_template
     args = plan.render_args
 
+    if t == "open_synthesis":
+        return _render_open_synthesis(args)
     if t == "define_entity":
         return _render_define(args)
     if t == "relation_lookup":
@@ -83,8 +100,23 @@ def render(plan: EntityQAPlan) -> str:
 
 
 def _render_audit(plan: EntityQAPlan) -> str:
-    reason = plan.render_args.get("reason", plan.audit_reason or "unsupported query")
-    return _AUDIT_PREFIX + _lowercase_first(str(reason))
+    reason = str(plan.render_args.get("reason", plan.audit_reason or ""))
+    r_lower = reason.lower()
+    if "no relevant information" in r_lower:
+        return "I don't have verified information about this."
+    if "no stable definition" in r_lower:
+        return "I don't have a definition for this in my knowledge base."
+    if reason:
+        clean = (
+            reason
+            .replace("wiki overlay", "my knowledge base")
+            .replace(" in the overlay", "")
+            .replace(" from the overlay", "")
+            .strip()
+            .rstrip(".")
+        )
+        return f"I don't have verified information about this. {clean}."
+    return "I don't have verified information about this."
 
 
 def _render_negated_is_a(args: dict) -> str:
@@ -104,6 +136,118 @@ def _render_negated_is_a(args: dict) -> str:
         f"No. {subject} is known to be {_article_phrase(actual_class)}, "
         f"which contradicts {_article_phrase(target)}."
     )
+
+
+def _definition_sentence(subject: str, def_text: str) -> str:
+    if def_text and _should_use_the(def_text):
+        article = "the"
+    elif def_text and def_text[0].lower() in "aeiou":
+        article = "an"
+    else:
+        article = "a"
+    return f"{subject} is {article} {def_text}."
+
+
+# Forward predicate -> "{subject} <clause> {objects}." (subject is the actor).
+_FWD_SYNTH_VERB: dict[str, str] = {
+    "develops": "develops",
+    "produces": "produces",
+    "publishes": "publishes",
+    "known_for": "is known for",
+    "leader_of": "leads",
+    "founded": "founded",
+    "owned_by": "is owned by",
+    "operates": "operates",
+    "provides": "provides",
+}
+# Inverse predicate -> "{subject} <clause> {others}." (subject is the target).
+_INV_SYNTH_VERB: dict[str, str] = {
+    "founded": "was founded by",
+    "leader_of": "is led by",
+    "owned_by": "owns",
+    "develops": "is developed by",
+    "produces": "is produced by",
+    "publishes": "is published by",
+}
+
+
+def _synthesis_clause(subject: str, group) -> str:
+    objs = _join_list(list(group.objects))
+    pred = group.predicate
+    if group.kind == "inverse_relation":
+        verb = _INV_SYNTH_VERB.get(pred)
+        if verb:
+            return f"{subject} {verb} {objs}."
+        return f"{subject} is linked to {objs} via {pred}."
+    # forward relation
+    if pred == "is_a":
+        return f"{subject} is {_article_phrase(objs)}."
+    verb = _FWD_SYNTH_VERB.get(pred)
+    if verb:
+        return f"{subject} {verb} {objs}."
+    return f"{subject} is linked to {objs} via {pred}."
+
+
+def _snapshot_clause(subject: str, group) -> str:
+    obj = group.objects[0] if group.objects else ""
+    pred_phrase = group.predicate.replace("_", " ")
+    source = group.source_name or "an unknown source"
+    as_of = group.as_of or "an unknown date"
+    return (
+        f"According to {source} (as of {as_of}), {subject}'s {pred_phrase} is {obj} "
+        f"— a volatile, source-qualified estimate that should be rechecked."
+    )
+
+
+def _synthesis_footer(verified: int, snapshot: int, unknown_notes: list[str]) -> str:
+    segments: list[str] = []
+    if verified:
+        noun = "fact" if verified == 1 else "facts"
+        segments.append(f"VERIFIED — {verified} {noun} from knowledge base")
+    if snapshot:
+        noun = "fact" if snapshot == 1 else "facts"
+        segments.append(f"SNAPSHOT — {snapshot} dated {noun}")
+    if unknown_notes:
+        segments.append(f"UNKNOWN — {_join_list(list(unknown_notes))}")
+    if not segments:
+        segments.append("UNKNOWN — no verified facts found")
+    return "[" + " | ".join(segments) + "]"
+
+
+def _render_open_synthesis(args: dict) -> str:
+    result = args.get("synthesis")
+    if result is None or not getattr(result, "matched", False):
+        return "I don't have verified information about this."
+
+    subject = result.subject or ""
+    lines: list[str] = []
+
+    if result.match_kind == "keyword":
+        lines.append(
+            f"I don't have an entity named exactly that, but here is the closest "
+            f"match I know — {subject}:"
+        )
+
+    if result.definition:
+        lines.append(_definition_sentence(subject, result.definition))
+    elif result.entity_type:
+        lines.append(f"{subject} is {_article_phrase(result.entity_type)}.")
+
+    snapshot_lines: list[str] = []
+    for group in result.groups:
+        if group.tier == "SNAPSHOT":
+            snapshot_lines.append(_snapshot_clause(subject, group))
+        else:
+            lines.append(_synthesis_clause(subject, group))
+    lines.extend(snapshot_lines)
+
+    for note in result.unknown_notes:
+        lines.append(f"I don't have verified information about {note}.")
+
+    footer = _synthesis_footer(
+        result.verified_count, result.snapshot_count, result.unknown_notes
+    )
+    return " ".join(lines) + "\n\n" + footer
 
 
 def _render_define(args: dict) -> str:
@@ -164,6 +308,12 @@ def _render_define(args: dict) -> str:
                 verb_clauses.append(f"publishes {obj_list}")
             elif pred == "is_a":
                 copular_clauses.append(_article_phrase(obj_list))
+            elif pred in _VERB_OBJECT_PHRASE:
+                phrase = _VERB_OBJECT_PHRASE[pred]
+                if phrase.startswith("is "):
+                    copular_clauses.append(f"{phrase.removeprefix('is ')} {obj_list}")
+                else:
+                    verb_clauses.append(f"{phrase} {obj_list}")
             else:
                 copular_clauses.append(f"linked to {obj_list} via {pred}")
 
@@ -193,7 +343,7 @@ def _render_relation(args: dict) -> str:
     founder_lookup: bool = args.get("founder_lookup", False)
 
     if not relations:
-        return f"No relation data found for {subject} in the overlay."
+        return f"No relation data found for {subject}."
 
     # "Who founded X?" — relations have X as object, founders as subject.
     if founder_lookup:
@@ -317,7 +467,7 @@ def _render_comparative_intersection(args: dict) -> str:
                 clauses.append(f"both have {predicate} {obj_list}")
 
     if not clauses:
-        return f"No common facts found for {entity_a} and {entity_b} in the overlay."
+        return f"No common facts found for {entity_a} and {entity_b}."
 
     return f"{entity_a} and {entity_b} have these facts in common: {_join_clauses(clauses)}."
 
@@ -326,7 +476,7 @@ def _render_ontology_is_a(args: dict) -> str:
     subject: str = args.get("subject", "")
     path: list = args.get("path", [])
     if not path:
-        return f"No explicit is_a path found for {subject} in the overlay."
+        return f"No explicit is_a path found for {subject}."
 
     clauses: list[str] = []
     for idx, edge in enumerate(path):
@@ -361,7 +511,7 @@ def _render_link_explanation(args: dict) -> str:
 def _render_source_fact(args: dict) -> str:
     facts: list[dict] = args.get("facts", [])
     if not facts:
-        return "No source-qualified fact found in the overlay for this query."
+        return "No source-qualified fact found for this query."
 
     parts: list[str] = []
     for f in facts:
@@ -433,7 +583,7 @@ def _render_stability_check(args: dict) -> str:
             f"estimate that requires rechecking. It is not a stable or current fact."
         )
 
-    return "No source-qualified stability information found in the overlay."
+    return "No source-qualified stability information found."
 
 
 def _render_link_policy(args: dict) -> str:
@@ -461,6 +611,7 @@ def _join_clauses(clauses: list[str]) -> str:
 
 
 def _join_list(items: list[str]) -> str:
+    items = list(dict.fromkeys(items))  # deduplicate, preserve order
     if not items:
         return ""
     if len(items) == 1:

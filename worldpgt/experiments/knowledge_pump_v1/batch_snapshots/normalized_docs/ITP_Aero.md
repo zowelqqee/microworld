@@ -1,0 +1,77 @@
+# ITP Aero
+
+Source: https://en.wikipedia.org/wiki/ITP_Aero
+Retrieved at: 2026-06-22T09:38:06Z
+Revision ID: 1351811787
+Raw text SHA256: 73a473fa6430c5fd91d15b2942bee9d532d0c68e068e7b0179bc3bad270131b7
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+ITP Aero is a Spanish company specialised in designing, developing, manufacturing and providing lifecycle propulsion services for aeroengines.
+It was established in 1989 and operates in Spain, the United Kingdom, the United States, India, Norway and Mexico.
+ITP Aero participates in the world's leading commercial and defence aircraft engine programmes. In commercial aviation, it is a Tier 1 supplier to the world's leading Original Equipment Manufacturers (OEM) such as Rolls-Royce, Pratt & Whitney, Honeywell and GE Aviation, and is responsible for the design, development, production and assembly of engine subsystems and components.
+In the defence sector, ITP Aero is partner of major European defence aeroengines consortiums. It is specialised in the design, development, production, certification, in-service support and maintenance of the EJ200, TP400 and MTR390-E engines. In addition, ITP Aero is Spain's lead company for the engine pillar of the FCAS (Future Combat Air System).
+It also provides MRO (Maintenance, Repair and Overhaul) services, fleet management, engineering services, supply chain solutions and customer support.
+ITP Aero's headquarters are located in Zamudio, close to the city of Bilbao in Spain.
+
+History
+Industria de Turbo Propulsores SA (ITP) was established in 1989. It was originally structured as a joint venture between Spanish engineering conglomerate SENER and British aero engine manufacturer Rolls-Royce Holdings. Its formation was closely associated with the creation of EuroJet Turbo GmbH, a multinational engine consortium to develop and produce the EJ200 turbojet engine to power the Eurofighter Typhoon.
+In 1990, ITP acquired an engine maintenance plant located in Ajalvir, Madrid, from Spanish aircraft manufacturer Construcciones Aeronáuticas SA (CASA). During the following year, it launched engine component manufacturing activity at its plant in Zamudio, Bizkaia. In 1992, the company secured its first contract with Rolls-Royce, performing work on the Rolls-Royce Trent turbofan engine for civilian airliners such as the Airbus A330 and the Boeing 767.
+During 1998, ITP began developing an international presence via its acquisition of a majority stake in Mexican engine specialist Turborreactores. In 2001, it created a new business unit dedicated to the Castings sector. By 2008, ITP had opened new overseas facilities in the United Kingdom, Malta and the United States.
+Over time, ITP has participated in various international aero engine programmes in both the military and civil sectors. Accordingly, it has collaborated with companies such as Rolls-Royce, General Electric, Pratt & Whitney, SNECMA and Honeywell on such endeavours. The company has specialised in the manufacture and development of gas turbine components and modules. It also offers in-house support services, such as maintenance, repair and overhaul (MRO) activities and high value-added services on behalf of other engine manufacturers.
+During the 2000s, ITP became involved in the production of the Europrop TP400, the largest turboprop engine developed in Europe, to power the Airbus A400M Atlas, a military transport plane. By this time, the firm was also engaged in multiple such collaborative defense aero engine programmes, such as EuroJet Turbo GmbH for the EJ200, and MTU Turbomeca Rolls-Royce for the MTR390.
+By the mid-2010s, ITP had become the ninth largest aero engine and components manufacturing company in the world in terms of revenue, employing roughly 3,000 people around the globe. It has been closely involved with Rolls-Royce on the latter's Trent engine family, having acted as a key risk and revenue sharing partner on the programme in addition to applying various turbine-related technologies.
+On 11 July 2016, Rolls-Royce Holdings announced that it was in the process of purchasing the outstanding 53.1% shareholding in the IPT joint venture in exchange for €720m. The deal was promoted as increasing Rolls-Royce's long-term aftermarket revenues, along with its stake in various defense-related manufacturing and services programmes, such as the EuroProp consortium that produce the TP400 engine. During December 2017, final approval from Spanish authorities was received for the takeover.
+During June 2019, it was reported that Spanish technology group Indra Sistemas was engaging in discussions to purchase a minority stake in the company.
+During October 2019, there was some political tensions over a decision by ITP Engines UK to refuse to issue a quote or trial version of its ESATAN-TMS CAD software to a researcher from Istanbul Technical University; this refusal was stated by the company to be in-line with recent sanctions that had been enacted upon Turkey by the UK government.
+In September 2022, Rolls-Royce sold ITP Aero to American private equity firm Bain Capital for 1700 million euros.
+
+In December 2025, it was announced that ITP Aero had signed a binding agreement to acquire Aero Norway, a Norwegian specialist in CFM56 engine overhaul and repair. The acquisition, expected to close in the first half of 2026 subject to regulatory approvals, added Aero Norway’s maintenance operations in Stavanger to ITP Aero’s aerospace aftermarket activities.
+
+Shareholders
+The main shareholders in July 2023 are:
+
+Major programmes
+
+Civil
+Source: Industria de Turbo Propulsores
+
+Engines for widebody aircraft
+Rolls-Royce Trent 700
+Rolls-Royce Trent 800
+Rolls-Royce Trent 900
+Rolls-Royce Trent XWB
+Rolls-Royce Trent 1000
+Rolls-Royce Trent 7000
+
+Engines for single aisle aircraft
+Pratt & Whitney PW1000G
+
+Engines for business aviation
+Pratt & Whitney Canada PW800
+Honeywell HTF7000
+Honeywell TFE731
+CFE CFE738
+
+Industrial turbines
+General Electric LMS100
+General Electric LM2500
+
+Defence
+Source: ITP Aero
+
+Eurojet EJ200 (European consortium Eurojet Turbo GmbH) for Eurofighter Typhoon fighter aircraft.
+Europrop TP400 (European consortium Europrop International) for Airbus A400M Atlas transport aircraft.
+General Electric CT7-8F5
+General Electric F414
+General Electric J85-5-21
+MTR MTR390-E (European consortium MTRI) for Eurocopter Tiger attack helicopter.
+
+References
+
+External links
+Official ITP website
+25 years of ITP
+Rolls-Royce venture to back UltraFan turbine research Flighglobal 15 JULY, 2015.
+Rolls-Royce venture to back UltraFan turbine research Flighglobal 15 JUNE, 2015.
+Pratt & Whitney Canada's Next-Generation PurePower® PW800 Engines Selected To Power Gulfstream's New Business Jet Family PR Newswire 14 OCTOBER, 2014.

@@ -1,0 +1,25 @@
+# Opportunity Fund
+
+Source: https://en.wikipedia.org/wiki/Opportunity_Fund
+Retrieved at: 2026-06-22T10:58:01Z
+Revision ID: 1328882441
+Raw text SHA256: b9bb2d15a6dacd9703e5d4e3437eb3e40fc3e16a8ebf408814f2b042a3d612d7
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Opportunity Fund is a US-based nonprofit organization that provides financing to underserved small-business owners.
+
+History
+About 90 percent of the Opportunity Fund's clients are racial and ethnic minorities, nearly 70 percent are low-income, and about a third are female. The organization receives funding from big foundations, banks, donors and government grants, including Bank of America; Goldman Sachs; JP Morgan Chase Foundation; Knight Foundation; Calvert Foundation; philanthropist Mark Leslie, the founding chairman and CEO of Veritas Software; and entrepreneur and investor, Bud Colligan.
+The organization ranks among the largest and fastest growing nonprofit lending organizations for small businesses in the United States. In fiscal year 2017, the organization gave more than $92.5M in loans to more than 2,900 small businesses.
+Marketplace lending company Lending Club works with Opportunity Fund to make loans to small businesses that otherwise would have had their applications rejected. The two organizations aim to provide $10 million in loans to small businesses in underserved areas of 13 states, helping an estimated 400 businesses create more than 1,000 jobs. Former President Bill Clinton announced the partnership at a Clinton Global Initiative America meeting in Denver.
+Since 2012, Opportunity Fund has earned Charity Navigator's highest rating of four stars every year as published by the charity evaluator.
+
+Advocacy
+Opportunity Fund was founded in 1994 by Eric Weaver in response to the challenges faced by businesses owned by women or minorities, or those who want small dollar loans that are not profitable enough for banks to provide. The emergence of predatory lending practices among some of the non-bank lenders that stepped in to fill the vacuum in the small business lending market after the recession of 2008, led Opportunity Fund to also take on a greater advocacy role for the rights of small business borrowers.
+In 2015, Opportunity Fund was part of a coalition of nonprofit and industry leaders that joined to launch a "Small Business Borrowers Bill of Rights" that outlined key rights all borrowers should have. In 2018, the organization worked to develop and pass a bipartisan bill, California Senate Bill 1235, which created consumer-style disclosure standards for small business lenders.
+
+References
+
+External links
+Official website

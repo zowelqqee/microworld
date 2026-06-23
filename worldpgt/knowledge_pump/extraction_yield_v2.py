@@ -78,7 +78,13 @@ _VOLATILE_YEAR_RE = re.compile(r"\b(202[3-9])\b")
 
 def screen_sentence(sentence: str) -> bool:
     """Return True if sentence passes all safety screens (safe to extract from)."""
-    if _NEGATION_RE.search(sentence):
+    negation_scope = re.sub(
+        r",\s*not\s+designed\s+to\s+[^,]+,",
+        ",",
+        sentence,
+        flags=re.IGNORECASE,
+    )
+    if _NEGATION_RE.search(negation_scope):
         return False
     if _CURRENT_LIVE_RE.search(sentence):
         return False
@@ -214,9 +220,27 @@ def extract_named_entities(raw: str) -> list[str]:
     names = []
     for name in _ENTITY_SEQ_RE.findall(clean):
         stripped = name.strip(" ,.;")
+        if stripped.endswith("'s") or stripped.endswith("'"):
+            continue
         if stripped and stripped.lower() not in {"the", "a", "an"}:
             names.append(stripped)
     return names
+
+
+def extract_aliases(raw: str) -> list[str]:
+    """Extract alias/product-name spans from an appositive naming clause."""
+    clean = raw.strip().rstrip(".,; ")
+    clean = re.sub(r"\s+in\s+[A-Z][A-Za-z ,]+?(?=\s+and\b|$)", "", clean)
+    clean = re.sub(r"^(?:the|a|an)\s+", "", clean, flags=re.IGNORECASE)
+    aliases: list[str] = []
+    for part in re.split(r"\s+and\s+|,\s*", clean):
+        part = re.sub(r"^(?:the|a|an)\s+", "", part.strip(), flags=re.IGNORECASE)
+        if not part:
+            continue
+        if not re.search(r"[A-Z0-9]", part):
+            continue
+        aliases.append(part)
+    return aliases
 
 
 # ---------------------------------------------------------------------------
@@ -225,7 +249,7 @@ def extract_named_entities(raw: str) -> list[str]:
 
 _DEF_TRUNCATE_RE = re.compile(
     r"\s+(?:and\b|or\b|that\b|which\b|who\b|with\b|through\b"
-    r"|founded\b|based\b|known\b|located\b|headquartered\b"
+    r"|founded\b|based\b|best\s+known\b|known\b|located\b|headquartered\b"
     r"|developed\b|owned\b|operated\b|manufactured\b"
     r"|serving\b|offering\b|also\b|originally\b|currently\b|formerly\b"
     r")",
@@ -254,6 +278,12 @@ _BAD_DEFINITION_HEADS = frozenset({
 _GOOD_NATIONALITY_HEADS = frozenset({
     "company", "manufacturer", "studio", "organization", "agency", "engineer",
     "entrepreneur", "publication", "newspaper", "provider", "service",
+    # person roles — biographies of individuals use "American philanthropist",
+    # "British scientist", etc. which are equally precise definitions.
+    "philanthropist", "businessman", "businesswoman", "magnate", "billionaire",
+    "investor", "politician", "executive", "scientist", "author", "journalist",
+    "activist", "founder", "inventor", "diplomat", "academic", "professor",
+    "economist", "architect", "designer", "filmmaker", "attorney", "lawyer",
 })
 
 
@@ -379,15 +409,19 @@ _SERVICE_OF_V2 = re.compile(
 )
 
 # Group 4 — lead_definition_v2  (applied to first sentence only)
-# Matches "ENTITY [optional (abbr)] is/was/are/were a/an/the DEFINITION_PHRASE"
+# Matches lead-biography forms such as:
+#   "Raymond Albert Kroc (dates) was an American businessman ..."
+#   "Sir Timothy John Berners-Lee (born ...), also known as TimBL, is an English computer scientist ..."
 # and stops the definition at clause boundaries.
 _LEAD_DEF_V2 = re.compile(
-    r"(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,60}?)"
-    r"(?:\s*\([^)]{0,30}\))?"       # optional abbreviation: (XYZ)
+    r"(?:Sir|Dame|Dr\.?|Professor|Prof\.?)?\s*"
+    r"(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,80}?)"
+    r"(?:\s*\([^)]{0,80}\))?"       # optional dates/abbreviation: (born ...), (XYZ)
+    r"(?:,\s+also\s+known\s+as\s+[^,]{1,60},)?"
     r"\s+(?:is|are|was|were)\s+(?:a|an|the)\s+"
     r"(?P<defn>[A-Za-z][A-Za-z0-9 \-']{2,80}?)"
     r"(?=[,.]"
-    r"|\s+(?:and\b|that\b|which\b|who\b|founded\b|based\b|known\b"
+    r"|\s+(?:and\b|that\b|which\b|who\b|founded\b|based\b|best\s+known\b|known\b"
     r"|located\b|headquartered\b|serving\b|formerly\b|also\b)"
     r"|$)",
 )
@@ -446,6 +480,99 @@ _HEADQUARTERED_V2 = re.compile(
     r"(?=[,.]|$)",
 )
 
+# Group 8 — audited zero-yield lead relation types.
+_ALIAS_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"(?:\s*\([^)]{0,120}\))?,?\s+"
+    r"(?P<verb>also\s+marketed\s+as|marketed\s+as|also\s+known\s+as|"
+    r"formerly\s+known\s+as|nicknamed)\s+(?P<raw_obj>[^.;]{1,160}?)"
+    r"(?=,?\s+(?:is|was)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_FUNDED_BY_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,80}?|Design\s+of\s+this\s+version)"
+    r"\s+(?:was|were)\s+funded\s+by\s+(?P<obj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"(?=\s+with\b|[,.]|$)",
+)
+
+_LOCATED_IN_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"(?:\s*\([^)]{0,120}\))?\s+(?:is|was)\s+(?:an?\s+|the\s+)?"
+    r".{0,140}?\s+in\s+(?P<obj>(?:unincorporated\s+)?[A-Z][A-Za-z ,.'\-]{1,80}?)"
+    r"(?=,\s+(?:just|near|and|which)\b|[.;]|$)",
+)
+
+_BASED_AT_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"\s+(?:was|is)\s+[^.]{0,80}?\bbased\s+at\s+(?:the\s+)?"
+    r"(?P<obj>[A-Z][A-Za-z0-9 ,.'&\-]{1,80}?)"
+    r"(?=,\s+|[.;]|$)",
+)
+
+_INTRODUCED_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"\s+(?:was\s+)?introduced\s+in\s+(?P<obj>(?:18|19|20)\d{2})\b",
+)
+
+_FIRST_RELEASED_V2 = re.compile(
+    r"\b(?:first\s+released\s+in|released\s+in)\s+"
+    r"(?P<obj>(?:18|19|20)\d{2})\b",
+    re.IGNORECASE,
+)
+
+_CONSTRUCTION_STARTED_V2 = re.compile(
+    r"\bconstruction\s+began\s+in\s+(?P<obj>[A-Z][A-Za-z]+\s+(?:18|19|20)\d{2})\b",
+    re.IGNORECASE,
+)
+
+_CEASED_OPERATIONS_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"\s+ceased\s+operations\s+in\s+(?P<obj>(?:18|19|20)\d{2})\b",
+)
+
+_FILED_BANKRUPTCY_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"\s+filed\s+for\s+(?P<obj>Chapter\s+\d+\s+bankruptcy)\b",
+)
+
+_MERGED_WITH_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+merged\s+[^.]{0,80}?\bwith\s+(?P<raw_obj>[^.;]{1,160}?)"
+    r"\s+to\s+form\s+(?P<form>[A-Z][A-Za-z0-9 ,.'&\-]{1,59})\b",
+    re.IGNORECASE,
+)
+
+_SUPPORTS_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+supports\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=,\s+(?:including|all)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_RUNS_ON_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+runs\s+on\s+(?P<raw_obj>[^.;]{1,160})",
+    re.IGNORECASE,
+)
+
+_OFFERED_ON_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+is\s+also\s+offered\s+(?:inside|on)\s+(?P<raw_obj>[^.;]{1,160})",
+    re.IGNORECASE,
+)
+
+_HOSTED_FLIGHT_TO_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?)"
+    r"\s+flew\s+\d+\s+cargo\s+missions\s+to\s+(?:the\s+)?"
+    r"(?P<obj>[A-Z][A-Za-z0-9 ()]{1,59}?)(?=\s+between\b|[.;]|$)",
+)
+
+_HAS_FACILITY_V2 = re.compile(
+    r"\b(?P<subj>[Aa]n?\s+[a-z][A-Za-z0-9 \-]{1,59})"
+    r"\s+is\s+[^.]{0,80}?\bwith\s+(?P<obj>customs\s+and\s+border\s+control\s+facilities)\b",
+)
+
 
 # ---------------------------------------------------------------------------
 # Per-sentence extraction
@@ -474,6 +601,26 @@ def extract_from_sentence(
     def _bump(key: str) -> None:
         if stats is not None:
             stats[key] += 1
+
+    def _page_subject() -> str:
+        return source_page.replace("_", " ").strip()
+
+    def _subject_or_page(raw: str) -> str:
+        subj = _canonical_subject(raw)
+        if subj.lower() in {"it", "this version", "design of this version"}:
+            return _page_subject()
+        subj_norm = " ".join(subj.lower().split())
+        if "," in subj or any(
+            marker in subj_norm
+            for marker in (
+                " and ",
+                " closed ",
+                " doors ",
+                " development team",
+            )
+        ):
+            return _page_subject()
+        return subj
 
     # -- Group 1: founded_by_v2 -----------------------------------------------
     for m in _FOUNDED_BY_V2.finditer(sentence):
@@ -635,6 +782,121 @@ def extract_from_sentence(
             )
         )
         _bump("headquartered_in_v2")
+
+    # -- Group 8: audited zero-yield relation types --------------------------
+    for m in _ALIAS_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        predicate = "marketed_as" if "marketed" in m.group("verb").lower() else "alias"
+        if not subj or not subj[0].isupper():
+            continue
+        if is_fragment_subject(subj) or is_generic_subject(subj):
+            continue
+        for alias in extract_aliases(m.group("raw_obj")):
+            items.append(_make_relation(subj, predicate, alias, source_page, sentence, f"{predicate}_v2", risk="low", stability="semi_stable"))
+            _bump(f"{predicate}_v2")
+
+    for m in _FUNDED_BY_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "funded_by", obj, source_page, sentence, "funded_by_v2", risk="low", stability="stable"))
+            _bump("funded_by_v2")
+
+    for m in _LOCATED_IN_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip().rstrip(",")
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "located_in", obj, source_page, sentence, "located_in_v2", risk="low", stability="semi_stable"))
+            _bump("located_in_v2")
+
+    for m in _BASED_AT_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip().rstrip(",")
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "based_at", obj, source_page, sentence, "based_at_v2", risk="low", stability="semi_stable"))
+            _bump("based_at_v2")
+
+    for m in _INTRODUCED_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "introduced", obj, source_page, sentence, "introduced_v2", risk="low", stability="stable"))
+            _bump("introduced_v2")
+
+    for m in _FIRST_RELEASED_V2.finditer(sentence):
+        subj = _page_subject()
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper():
+            items.append(_make_relation(subj, "first_released", obj, source_page, sentence, "first_released_v2", risk="low", stability="stable"))
+            _bump("first_released_v2")
+
+    for m in _CONSTRUCTION_STARTED_V2.finditer(sentence):
+        subj = _page_subject()
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper():
+            items.append(_make_relation(subj, "construction_started", obj, source_page, sentence, "construction_started_v2", risk="low", stability="stable"))
+            _bump("construction_started_v2")
+
+    for m in _CEASED_OPERATIONS_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "ceased_operations", obj, source_page, sentence, "ceased_operations_v2", risk="low", stability="stable"))
+            _bump("ceased_operations_v2")
+
+    for m in _FILED_BANKRUPTCY_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "filed_for_bankruptcy", obj, source_page, sentence, "filed_for_bankruptcy_v2", risk="low", stability="stable"))
+            _bump("filed_for_bankruptcy_v2")
+
+    for m in _MERGED_WITH_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        if not subj or not subj[0].isupper() or is_fragment_subject(subj) or is_generic_subject(subj):
+            continue
+        for obj in extract_named_entities(m.group("raw_obj")):
+            items.append(_make_relation(subj, "merged_with", obj, source_page, sentence, "merged_with_v2", risk="low", stability="stable"))
+            _bump("merged_with_v2")
+
+    for m in _SUPPORTS_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "supports", obj, source_page, sentence, "supports_v2", risk="low", stability="semi_stable"))
+            _bump("supports_v2")
+
+    for m in _RUNS_ON_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        if not subj or not subj[0].isupper() or is_fragment_subject(subj) or is_generic_subject(subj):
+            continue
+        raw_obj = m.group("raw_obj")
+        for obj in ["on-premises", *extract_named_entities(raw_obj)]:
+            if obj in raw_obj:
+                items.append(_make_relation(subj, "runs_on", obj, source_page, sentence, "runs_on_v2", risk="low", stability="semi_stable"))
+                _bump("runs_on_v2")
+
+    for m in _OFFERED_ON_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        if not subj or not subj[0].isupper() or is_fragment_subject(subj) or is_generic_subject(subj):
+            continue
+        for obj in extract_named_entities(m.group("raw_obj")):
+            items.append(_make_relation(subj, "offers", obj, source_page, sentence, "offers_v2", risk="low", stability="semi_stable"))
+            _bump("offers_v2")
+
+    for m in _HOSTED_FLIGHT_TO_V2.finditer(sentence):
+        subj = _subject_or_page(m.group("subj"))
+        obj = m.group("obj").strip()
+        if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
+            items.append(_make_relation(subj, "hosted_flight_to", obj, source_page, sentence, "hosted_flight_to_v2", risk="low", stability="stable"))
+            _bump("hosted_flight_to_v2")
+
+    for m in _HAS_FACILITY_V2.finditer(sentence):
+        subj = _page_subject()
+        obj = m.group("obj").strip()
+        if subj and obj:
+            items.append(_make_relation(subj, "has_facility", obj, source_page, sentence, "has_facility_v2", risk="low", stability="semi_stable"))
+            _bump("has_facility_v2")
 
     return items
 

@@ -1,0 +1,15 @@
+{
+  "title": "Science Museum",
+  "normalized_title": "Science Museum",
+  "pageid": 34566959,
+  "revision_id": 1212323493,
+  "timestamp": "2024-03-07T07:37:47Z",
+  "source_url": "https://en.wikipedia.org/wiki/Science_Museum",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Science+Museum",
+  "retrieved_at": "2026-06-22T09:59:06Z",
+  "raw_text": "Science Museum may refer to:\n\nScience museum, a type of museum\nArktikum Science Museum, a museum in Rovaniemi, Finland\nHong Kong Science Museum, a museum in Kowloon, Hong Kong\nScience Museum of the University of Coimbra, a museum in Coimbra, Portugal\n\n\nUnited Kingdom\nScience Museum, Birmingham, a former name of the Museum of Science and Industry, Birmingham, UK\nScience Museum, London, a museum in London, UK\nScience and Industry Museum, Manchester, UK\nScience Museum at Wroughton, the object store near Swindon for the London Science Museum, UK\n\n\nUnited States\nMuseum of Science (Boston), USA\nScience Museum Oklahoma, a museum in Oklahoma City, Oklahoma, USA\nScience Museum of Virginia, a museum in Richmond, Virginia, USA\nScience Museum of Minnesota, a museum in Saint Paul, Minnesota, USA\n\n\nSee also\nList of science museums\nNational Science Museum (disambiguation)\nNational Museum of Science (disambiguation)\nScience and Technology Museum (disambiguation)\nAll pages with titles containing science museum",
+  "raw_text_sha256": "d988b4fdf998add048a722453503b3691528d638cc4bf2c293740de5e1ae277e",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

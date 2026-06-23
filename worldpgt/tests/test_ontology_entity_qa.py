@@ -143,7 +143,7 @@ def test_is_a_weak_coverage_audits_not_no(tmp_path):
 
     assert plan.decision == "audit"
     assert "not found in well-covered entity, verify externally" in (plan.audit_reason or "")
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_is_a_volatile_contradiction_basis_audits_not_no(tmp_path):
@@ -155,7 +155,7 @@ def test_is_a_volatile_contradiction_basis_audits_not_no(tmp_path):
     plan, answer = _answer(planner, "Is Acme a person?")
 
     assert plan.decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_is_a_absent_fact_audits_not_no(tmp_path):
@@ -166,7 +166,7 @@ def test_is_a_absent_fact_audits_not_no(tmp_path):
     plan, answer = _answer(planner, "Is UnknownCo a company?")
 
     assert plan.decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_is_a_reverse_inference_audits(tmp_path):

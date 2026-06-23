@@ -1,0 +1,108 @@
+# Port Canaveral
+
+Source: https://en.wikipedia.org/wiki/Port_Canaveral
+Retrieved at: 2026-06-22T09:57:09Z
+Revision ID: 1344674735
+Raw text SHA256: 3892d88231ae9439b704a6d10f70f06b2797eb8aa3d81dc38fbb15a60e506936
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Port Canaveral is a cruise, cargo, and naval port in Brevard County, Florida, United States. As of 2025, the port has the busiest cruise terminals in the world with over 8.6 million revenue passenger movements during the fiscal year. Additionally, over 5.4 million tonnes of bulk cargo moves through each year.
+Primary cargoes include slag, salt, vehicles, containers, petroleum, heavy equipment, lumber, and aggregate. The port has conveyors and hoppers for loading products directly into trucks and facilities for bulk-cargo containers. The channel is about 44 feet (13 m) deep.
+The port exports fresh citrus; bulk-frozen citrus juice stored in one of the largest freezer warehouses in the state; cement; and building materials. The port receives lumber, salt for water-softening, automobiles, and steel sheet and plate. It transships items for land, sea, air, and space.
+On average, ten ships enter the port each day. This includes ships from cruise lines such as Carnival, Disney, Royal Caribbean, Norwegian, and more.
+
+Governing authority
+The Canaveral Port Authority was established in 1953 by the State Legislature and consists of the Board of Commissioners and the Executive Management Team. The Board sets policies such as fiscal, regulatory, and operations, while the executives are responsible for administrative and operational duties. In October 2015 the board voted unanimously to terminate embattled CEO John Walsh. Walsh clashed with residents over a controversial plan to build a cargo railway through a federally managed wildlife refuge. Walsh drew community outrage after calling opponents of his plan "Luddites" and "dogs chasing moving cars." Walsh lied about documentation from the United States Air Force, relating to building the Canaveral Rail through the Cape Canaveral Air Force Station.
+The five Commissioners of the Board are elected from the surrounding area by popular vote. They must live in specific areas but are elected by voters in all five districts.  The races are partisan.
+
+District 1 (Kennedy Space Center / Titusville) - Jerry Allender
+District 2 (Area between Titusville and Cocoa and west of the US 1) - Micah Loyd
+District 3 (Cocoa / Rockledge) - Wayne Justice
+District 4 (East of the US 1 and Cape Canaveral) - Bob Harvey
+District 5 (Port Canaveral / Cocoa Beach) - Robyn Hattaway
+Salary is $10,083.72 annually.
+The Executive Management Team is headed by the Chief Executive Officer (CEO).
+In 2013, there were 233 staff members, 162 full-time, 71 part-time.
+In FY 2017, the Canaveral Port Authority had 223 full-time equivalent employees.
+
+History
+A columnist grouped the history of the actual port into four eras, roughly paralleling the terms of the several directors: 1) initial construction and operation of the port with no clearcut separation of governance and management 1947–2004, 2) expansion of port facilities. Port becomes second in cruise business worldwide 2004–2013, 3) political friction between governance and management 2013–2016, 4) modern era 2016–present.
+
+Artesia
+A post office in the area was built and listed in the US Post Office application as Artesia. and retained this name from 1893 to 1954; and then went into service for Port Canaveral from
+1954–1962.
+
+Dredging a port
+
+The idea of developing a port at this location was first conceived in the 1880s. The port was dredged between 1951 and 1955. Dedication occurred November 4, 1953, with the United States Navy destroyer escort USS McClelland participating. Florida U.S. Senator Spessard Holland was the keynote speaker.
+Noah Butt, a former speaker of the Florida House of Representatives, was the first Chairman of the Canaveral Port Authority. The first port manager, George King, was announced in 1954. Commercial fishing had already begun at the port, and in the next year commercial shipping began, with a load of bagged cement delivered by the SS MormacSpruce. In 1955, the Tropicana Corporation began building a refrigerated warehouse for storing orange juice, a local agricultural product, prior to shipping.
+
+Port
+
+Cruise traffic appeared at the port in 1964, with the SS Yarmouth Castle, recently purchased by Yarmouth Cruise Lines from the Chadade Steamship Company. The ship was American owned, with registration from Panama. The ship burned at sea between Miami and Nassau, Bahamas in 1965, and cruise traffic was limited until the 1980s.
+In 1965, a lock was dedicated at the port, as part of the Canaveral Barge Canal. The Canaveral Lock is still in operation and is maintained by the United States Army Corps of Engineers. The focus of the port throughout the 1960s and 1970s remained commercial fishing and shipping, with three 400-foot (120 m) cargo piers built on the north side of the Port in 1976, and a succession of warehouses built in the port area.
+
+Port Canaveral has played a role in support of NASA projects out of nearby Kennedy Space Center. During the Apollo program, segments of the Saturn V rocket transited through the port and lock.  Most recently, the external fuel tanks of the Space Shuttle were floated into Port Canaveral for each mission, and the solid rocket boosters towed back through Port Canaveral upon retrieval from the Atlantic Ocean after each launch.  NASA contributed $250,000 for improvements in the lock in 1965.
+In 1990, Morton Salt began operations at the port. In 2018, it imported salt from the Bahamas and produced 200,000 short tons (180,000 t) of pool, water softener, sea salt, and agricultural salts.
+Prior to its disestablishment in 2000, Premier Cruise Line was headquartered in Cape Canaveral.
+In 2008, Sterling Casino Lines ceased doing business at the port.  A week later, the Las Vegas Casino Line began operating gambling cruises. On March 25, 2009, the Las Vegas Casino Line filed for bankruptcy, joining the Sterling Casino on the list of failed 'Casino Lines' to operate out of Port Canaveral.
+In 2009, a commissioner resigned and the Florida Department of Law Enforcement announced that it was conducting an investigation into possible corruption at the port.
+In 2009, the last cruise company to offer gambling, SunCruz Casinos, filed for Chapter 7 bankruptcy (liquidation). The companies failed due to competition from land-based gambling activities in Seminole Casinos, and Greyhound racing venues. Gambling liners hit a high on 1.0 million passengers in 2004, before starting to decline. Casino operations generated about $5–$6 million annually for the port.
+Mega-cruise ships Freedom of the Seas and Carnival Dream were homeported in Port Canaveral in 2009, followed by the Disney Dream in 2011.
+In the 2010s, SpaceX began using the port for their autonomous spaceport drone ships (ASDS). In April 2016, the ASDS Of Course I Still Love You returned the first Falcon 9 booster recovered at sea to Port Canaveral.
+Seaport Canaveral was completed in 2010. Vitol SA built a fuel-tank depot with a pipeline to Orlando International Airport. The 36-acre (15 ha), 117,000,000-US-gallon (440,000,000 L; 97,000,000 imp gal) storage depot cost $150 million.
+Cruise Terminal 6 opened in mid-2012, for Carnival Dream, Carnival Sensation, and other Carnival ships.
+
+Exploration Tower
+The seven-story Exploration Tower opened in 2013, offering visitors almost 550,000 square feet (51,000 m2) of exhibit space, interactive displays, two observation decks – one inside and one outside – a 72-seat auditorium, event rooms, and a café and gift shop. Hours at the tower were reduced in 2020 due to the COVID-19 pandemic, and the tower closed for maintenance in 2022. In 2024, after repairs were completed, Port Canaveral said it no longer wanted to operate the tower, and was looking for a company to lease and operate the space. As of January 2026, the tower had not reopened and no lessor had been found.
+
+Canaveral Pilots
+In the year 1968 the Canaveral Pilots Association was founded by pilots Frederick Dezendorf and Frederick Jonassen. The Canaveral Pilots Association is the local association of state and federally licensed harbor pilots who board all inbound and outbound foreign-flagged ocean-going ships, as well as select U.S. flagged vessels who call on the port. While on board the ships, the pilot take conn and direct the movement of the vessels when navigating the channels and basins of Port Canaveral. The association currently owns two single screw, aluminum hull Bill Preston-designed pilot boats that are used to pick up and drop off pilots from a vessel. As of September 2022, there is currently eight state licensed pilots at the port along with two deputy pilots. In Port Canaveral the pilot boarding station for most large foreign flagged inbound vessels is two miles southeast of sea-buoys 3/4. Pilot boarding/disembarkation speed is 6-to-8 knots.
+
+Cruise traffic
+Port Canaveral is served by several major cruise operators, including Carnival Corporation & plc, Disney Cruise Line, Norwegian Cruise Line Holdings, MSC Cruises, and Royal Caribbean Group, which operate from five cruise terminals. A sixth terminal is used by the small cruise ship Victory I.
+Cruise traffic grew steadily in the late 2000s, with 109,175 multi-day cruise passengers recorded in October 2008 and a peak of 307,005 passengers in April 2009, before declining to 221,557 passengers in October of that year. In 2010, the port handled approximately 2.8 million cruise passengers.
+Cruise operations at Port Canaveral expanded significantly beginning in the early 1980s under port director Charles Rowland, who shifted the port’s strategic focus toward cruise traffic. In 1982, a 20,000 square feet (2,000 m2) warehouse was converted into Cruise Terminal 1, and the SS Scandinavian Sea became the first cruise ship to homeport at the facility. Additional terminals were established in 1983 using former NASA Bicentennial exhibit halls, followed by the homeporting of the SS Royale of Premier Cruise Line in 1984, which introduced year-round three- and four-day cruises to the Bahamas. A fourth terminal opened in 1986, and further expansion into the Western Turning Basin included the construction of Terminal 5, from which the Carnival Fantasy began service, marking the port’s first homeported mega-ship.
+In December 2014, Port Canaveral and Royal Caribbean International opened a new Terminal 1 designed to accommodate Oasis-class vessels. In March 2015, the port was announced as the future home port of the Oasis of the Seas.
+
+Current passenger terminals
+
+US Navy
+The Naval Ordnance Test Unit operates the naval port. They have 100 sailors and 70 subcontractors.
+In 2011, the support ship USNS Waters was homeported at the port.
+The Trident Turning Basin supports Navy ballistic missile submarines.
+
+Statistics
+In 2011, about 75 percent of cargo was fuel. Overall tonnage rose  40 percent ahead of 2010.
+In fiscal year 2007–2008, there was a 44.5% drop in cargo in October and November compared with the preceding year. Multi-day cruise passengers dropped 14.4%, and gambling passengers dropped 23.7%. Cargo slowdown was attributed to a slowdown in construction in Florida due to the weakened housing market. In 2008, cruise passengers held fairly steady at about 200,000 per month for the year.
+In 2007, cement imports, tied to construction, was 13,917 short tons (12,625 t), a drop of 87.6% for the two-month comparison with the previous year. Petroleum, the ports largest single import, was 129,256 short tons (117,259 t), a drop of 25% over the same period. The port handled 11.3 million barrels (1,800,000 m3) of petroleum, equivalent to 473 million US gallons (1,790,000 m3) of fuel in 2010.
+Carnival has 140 employees resident at the port.
+The channel leading to the port is 400 feet (120 m) wide and 3.5 miles (5.6 km) long. The maximum allowable draft for vessels calling at Port Canaveral is 40″ 00″. Any vessel with a draft that does not exceed 38′ 00″ may transit the channels and basins at any time and stage of the tide. Vessels that draft more than 38″ 00″ are considered “tide jobs” and generally are scheduled to transit inbound two hours prior to high tide.
+
+SeaFest
+The SeaFest seafood festival was first held in 1983. The celebration occurred over three days in early spring, and was co-hosted by the Cocoa Beach Area Chamber of Commerce and the Canaveral Port Authority. It featured live music, local artists, and seafood. In 2005, the final year of the festival at the port, 5,000 pounds (2,300 kg) of freshly caught fish, including flounder, Florida rock shrimp, blue crab claws and 100 US gallons (380 L; 83 imp gal) of seafood chowder were consumed at the festival. In 2006, because of security concerns and the site being needed for cargo, the festival was forced to move elsewhere and was renamed. In 2008 it tried to move back but was canceled.
+
+Twenty-first century
+Two cranes, 273 feet (83 m) tall, and weighing 387,600 pounds (175,800 kg), were installed for use with cargo in 2014. These were used, cost $50,000 and required remodeling.
+In FY 2017–2018, the port expected to gross $100 million, and net $3 million. About 60% of revenue came from cruise lines. Cruise-related parking was 18%. About 22% was derived from cargo. Petroleum and related bottled products constituted 43% of cargo.
+In 2017, the port planned to replace the small third terminal with a $150 million one, 190,000 square feet (18,000 m2), in 2019.
+In 2018, the port announced a planned agreement with Carnival Cruise Line to accommodate Carnival's new 180,000-short-ton (160,000 t) ship. This ship would use the now under construction Terminal 3 as its home-port.
+
+Recreation
+The Canaveral Port Authority owns and operates Jetty Park. In 2016, 325,000 people visited the park.
+
+Impact
+Ocean currents move sand along the coast in a natural process known as longshore drift. Because Port Canaveral interrupts this movement of sand, each year about 200,000 cubic yards (150,000 m3) of sand builds up on the beaches located 1 to 2 miles (1.6 to 3.2 km) north of the port's jetties, and sand erodes from the beaches 10 to 15 miles (16 to 24 km) south of the jetties.
+To counteract this effect the Canaveral Harbor Federal Sand Bypass Project transfers sand from the shoreline north of the harbor entrance to areas of shoreline south of the entrance. This plan is implemented through a partnership of Canaveral Port Authority, the U.S. Army Corps of Engineers (Jacksonville District), and the State of Florida and Brevard County.
+
+See also
+PortMiami and Port Everglades, South Florida ports competing for most cruise passengers
+
+References
+
+External links
+Media related to Port Canaveral at Wikimedia Commons
+Official website
+Canaveral Lock
+Port Canaveral Webcam

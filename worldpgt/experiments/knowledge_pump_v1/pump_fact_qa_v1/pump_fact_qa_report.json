@@ -1,46 +1,47 @@
 {
   "summary": {
     "pump_fact_qa_enabled": true,
-    "pump_fact_qa_fact_count": 249,
-    "pump_fact_qa_relation_fact_count": 47,
-    "pump_fact_qa_definition_fact_count": 202,
-    "pump_fact_qa_positive_prompt_count": 489,
-    "pump_fact_qa_adversarial_prompt_count": 35,
+    "pump_fact_qa_fact_count": 570,
+    "pump_fact_qa_relation_fact_count": 269,
+    "pump_fact_qa_definition_fact_count": 301,
+    "pump_fact_qa_positive_prompt_count": 1052,
+    "pump_fact_qa_adversarial_prompt_count": 143,
     "pump_fact_qa_current_prompt_count": 5,
-    "pump_fact_qa_total_prompt_count": 529,
-    "pump_fact_qa_positive_answer_count": 489,
-    "pump_fact_qa_positive_audit_count": 0,
-    "pump_fact_qa_positive_planner_gap_count": 0,
+    "pump_fact_qa_total_prompt_count": 1200,
+    "pump_fact_qa_positive_answer_count": 1041,
+    "pump_fact_qa_positive_audit_count": 11,
+    "pump_fact_qa_positive_planner_gap_count": 11,
     "pump_fact_qa_positive_wrong_count": 0,
     "pump_fact_qa_positive_unsupported_count": 0,
-    "pump_fact_qa_adversarial_pass_count": 35,
+    "pump_fact_qa_adversarial_pass_count": 143,
     "pump_fact_qa_adversarial_fail_count": 0,
     "pump_fact_qa_current_safety_pass_count": 5,
     "pump_fact_qa_current_safety_fail_count": 0,
     "pump_fact_qa_answer_precision": 1.0,
-    "pump_fact_qa_supported_answer_rate": 1.0,
-    "pump_fact_qa_planner_gap_rate": 0.0,
+    "pump_fact_qa_supported_answer_rate": 0.9895,
+    "pump_fact_qa_planner_gap_rate": 0.0105,
     "wrong_count": 0,
     "unsupported_answer_count": 0,
     "unsafe_current_answer_count": 0,
     "inversion_false_answer_count": 0,
     "pump_fact_qa_all_critical_passed": true,
     "classification_counts": {
-      "ok": 529
+      "ok": 1189,
+      "planner_gap": 11
     },
-    "fact_count": 249,
-    "relation_fact_count": 47,
-    "definition_fact_count": 202,
-    "positive_prompt_count": 489,
-    "positive_answer_count": 489,
-    "positive_audit_count": 0,
-    "positive_planner_gap_count": 0,
+    "fact_count": 570,
+    "relation_fact_count": 269,
+    "definition_fact_count": 301,
+    "positive_prompt_count": 1052,
+    "positive_answer_count": 1041,
+    "positive_audit_count": 11,
+    "positive_planner_gap_count": 11,
     "wrong_answer_count": 0,
     "adversarial_fail_count": 0,
     "current_safety_fail_count": 0,
     "answer_precision": 1.0,
-    "supported_answer_rate": 1.0,
-    "planner_gap_rate": 0.0,
+    "supported_answer_rate": 0.9895,
+    "planner_gap_rate": 0.0105,
     "all_critical_passed": true,
     "confirmations": {
       "network_calls": false,
@@ -58,7 +59,291 @@
     }
   },
   "failures": [],
-  "planner_gaps": [],
+  "planner_gaps": [
+    {
+      "prompt": {
+        "prompt_id": "pos-0008",
+        "question": "What is Alfa Romeo Automobiles S.p.A.?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Alfa Romeo Automobiles S.p.A.",
+        "obj": "Italian car manufacturer",
+        "expected_tokens": [
+          "Alfa Romeo Automobiles S.p.A.",
+          "Italian",
+          "car"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0009",
+        "question": "Define Alfa Romeo Automobiles S.p.A..",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Alfa Romeo Automobiles S.p.A.",
+        "obj": "Italian car manufacturer",
+        "expected_tokens": [
+          "Alfa Romeo Automobiles S.p.A.",
+          "Italian",
+          "car"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0296",
+        "question": "What is Loro Piana S.p.A.?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Loro Piana S.p.A.",
+        "obj": "Italian luxury brand specialized in textile manufacturing",
+        "expected_tokens": [
+          "Loro Piana S.p.A.",
+          "Italian",
+          "luxury"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0297",
+        "question": "Define Loro Piana S.p.A..",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Loro Piana S.p.A.",
+        "obj": "Italian luxury brand specialized in textile manufacturing",
+        "expected_tokens": [
+          "Loro Piana S.p.A.",
+          "Italian",
+          "luxury"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0340",
+        "question": "What is Nasarawa Amazons F.C.?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Nasarawa Amazons F.C.",
+        "obj": "women's association football club",
+        "expected_tokens": [
+          "Nasarawa Amazons F.C.",
+          "women's",
+          "association"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0341",
+        "question": "Define Nasarawa Amazons F.C..",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Nasarawa Amazons F.C.",
+        "obj": "women's association football club",
+        "expected_tokens": [
+          "Nasarawa Amazons F.C.",
+          "women's",
+          "association"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0570",
+        "question": "What is Warner Bros.?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Warner Bros.",
+        "obj": "brand name",
+        "expected_tokens": [
+          "Warner Bros.",
+          "brand",
+          "name"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0571",
+        "question": "Define Warner Bros..",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "is_a",
+        "subject": "Warner Bros.",
+        "obj": "brand name",
+        "expected_tokens": [
+          "Warner Bros.",
+          "brand",
+          "name"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-0900",
+        "question": "Who founded Subsidiary?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "founded",
+        "subject": "Oracle Corporation",
+        "obj": "Subsidiary",
+        "expected_tokens": [
+          "Oracle Corporation",
+          "Subsidiary"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "No relevant information found for this question.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-1013",
+        "question": "What does To develop?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "develops",
+        "subject": "To",
+        "obj": "Motors The new rocket motors",
+        "expected_tokens": [
+          "To",
+          "Motors The new rocket motors"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "No relevant information found for this topic.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    },
+    {
+      "prompt": {
+        "prompt_id": "pos-1014",
+        "question": "What is developed by To?",
+        "category": "positive",
+        "expected_decision": "answer",
+        "predicate": "develops",
+        "subject": "To",
+        "obj": "Motors The new rocket motors",
+        "expected_tokens": [
+          "To",
+          "Motors The new rocket motors"
+        ],
+        "notes": ""
+      },
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "supported_by_context": false,
+      "overlay_mode": "pump-dry-run",
+      "answer_text": "No relevant information found for this topic.",
+      "risk_flags": [],
+      "valid": false,
+      "classification": "planner_gap",
+      "is_critical_failure": false
+    }
+  ],
   "facts": [
     {
       "kind": "definition",
@@ -87,6 +372,13 @@
       "predicate": "is_a",
       "obj": "term used to refer to the command structure of some air forces",
       "source_page": "Air Command"
+    },
+    {
+      "kind": "definition",
+      "subject": "Alfa Romeo Automobiles S.p.A.",
+      "predicate": "is_a",
+      "obj": "Italian car manufacturer",
+      "source_page": "Alfa Romeo"
     },
     {
       "kind": "definition",
@@ -139,13 +431,6 @@
     },
     {
       "kind": "definition",
-      "subject": "Amdahl Corporation",
-      "predicate": "is_a",
-      "obj": "information technology company",
-      "source_page": "Amdahl Corporation"
-    },
-    {
-      "kind": "definition",
       "subject": "Ampex Data Systems Corporation",
       "predicate": "is_a",
       "obj": "American electronics company",
@@ -160,6 +445,27 @@
     },
     {
       "kind": "definition",
+      "subject": "Andrej Karpathy",
+      "predicate": "is_a",
+      "obj": "Slovak-Canadian AI researcher",
+      "source_page": "Andrej Karpathy"
+    },
+    {
+      "kind": "definition",
+      "subject": "Andrew Morrison, SJ",
+      "predicate": "is_a",
+      "obj": "Guyanese Roman Catholic Jesuit priest",
+      "source_page": "Andrew Morrison"
+    },
+    {
+      "kind": "definition",
+      "subject": "Apparel Group LLC",
+      "predicate": "is_a",
+      "obj": "UAE-based fashion",
+      "source_page": "Apparel Group"
+    },
+    {
+      "kind": "definition",
       "subject": "Apple II",
       "predicate": "is_a",
       "obj": "series of microcomputers",
@@ -171,6 +477,13 @@
       "predicate": "is_a",
       "obj": "fourth month of the year in the Gregorian",
       "source_page": "April"
+    },
+    {
+      "kind": "definition",
+      "subject": "Ares I-X",
+      "predicate": "is_a",
+      "obj": "only test flight of a launch vehicle like the Ares I",
+      "source_page": "Ares I-X"
     },
     {
       "kind": "definition",
@@ -265,6 +578,20 @@
     },
     {
       "kind": "definition",
+      "subject": "Biomedical Research",
+      "predicate": "is_a",
+      "obj": "quarterly peer-reviewed medical journal covering research on biomedical sciences",
+      "source_page": "Biomedical Research"
+    },
+    {
+      "kind": "definition",
+      "subject": "Black Thursday",
+      "predicate": "is_a",
+      "obj": "term used to refer to typically negative",
+      "source_page": "Black Thursday"
+    },
+    {
+      "kind": "definition",
       "subject": "Bloomberg Government",
       "predicate": "is_a",
       "obj": "division of Bloomberg Industry Group",
@@ -356,10 +683,31 @@
     },
     {
       "kind": "definition",
+      "subject": "Boeing B-29 Superfortress",
+      "predicate": "is_a",
+      "obj": "retired American four-engined propeller-driven heavy bomber",
+      "source_page": "Boeing B-29 Superfortress"
+    },
+    {
+      "kind": "definition",
       "subject": "Boeing B-50 Superfortress",
       "predicate": "is_a",
       "obj": "retired American strategic bomber",
       "source_page": "B-50 Superfortress"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bruce David Forbes",
+      "predicate": "is_a",
+      "obj": "ordained minister in the United Methodist Church",
+      "source_page": "Bruce Forbes"
+    },
+    {
+      "kind": "definition",
+      "subject": "Bryanston High School",
+      "predicate": "is_a",
+      "obj": "state-run English-medium co-educational high school in the suburb of Bryanston",
+      "source_page": "Bryanston High School"
     },
     {
       "kind": "definition",
@@ -370,6 +718,13 @@
     },
     {
       "kind": "definition",
+      "subject": "California Air Resources Board",
+      "predicate": "is_a",
+      "obj": "agency of the government of California",
+      "source_page": "Air Resources Board"
+    },
+    {
+      "kind": "definition",
       "subject": "Canada",
       "predicate": "is_a",
       "obj": "country in North America",
@@ -377,17 +732,17 @@
     },
     {
       "kind": "definition",
-      "subject": "Cape Canaveral",
-      "predicate": "is_a",
-      "obj": "cape in Brevard County",
-      "source_page": "Cape Kennedy"
-    },
-    {
-      "kind": "definition",
       "subject": "Cape Canaveral Space Force Station",
       "predicate": "is_a",
       "obj": "installation of the United States Space Force's Space Launch Delta 45",
       "source_page": "Joint Long Range Proving Ground"
+    },
+    {
+      "kind": "definition",
+      "subject": "Captain Joseph Ellison",
+      "predicate": "is_a",
+      "obj": "Royal Navy officer",
+      "source_page": "Joseph Ellison"
     },
     {
       "kind": "definition",
@@ -419,6 +774,27 @@
     },
     {
       "kind": "definition",
+      "subject": "Chicago Express",
+      "predicate": "is_a",
+      "obj": "professional ice hockey team",
+      "source_page": "Chicago Express"
+    },
+    {
+      "kind": "definition",
+      "subject": "Clark University",
+      "predicate": "is_a",
+      "obj": "private research university in Worcester",
+      "source_page": "Clark University"
+    },
+    {
+      "kind": "definition",
+      "subject": "Combined Charging System",
+      "predicate": "is_a",
+      "obj": "charging station standard for plug-in electric vehicles",
+      "source_page": "Combined Charging System"
+    },
+    {
+      "kind": "definition",
       "subject": "Commercial Orbital Transportation Services",
       "predicate": "is_a",
       "obj": "NASA program to spur the development of private spacecraft",
@@ -426,10 +802,38 @@
     },
     {
       "kind": "definition",
+      "subject": "Commonwealth English",
+      "predicate": "is_a",
+      "obj": "set of varieties of the English language used in current",
+      "source_page": "Commonwealth English"
+    },
+    {
+      "kind": "definition",
+      "subject": "Community Memory",
+      "predicate": "is_a",
+      "obj": "first public computerized bulletin board system",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "definition",
+      "subject": "Community Notes",
+      "predicate": "is_a",
+      "obj": "feature on X where contributors can add context such as fact-checks under a post",
+      "source_page": "Community Notes"
+    },
+    {
+      "kind": "definition",
       "subject": "Companies Act",
       "predicate": "is_a",
       "obj": "stock short title used for legislation in Botswana",
       "source_page": "Companies Act"
+    },
+    {
+      "kind": "definition",
+      "subject": "Companies House",
+      "predicate": "is_a",
+      "obj": "executive agency of the British Government",
+      "source_page": "Companies House"
     },
     {
       "kind": "definition",
@@ -461,6 +865,34 @@
     },
     {
       "kind": "definition",
+      "subject": "Department of Government Efficiency",
+      "predicate": "is_a",
+      "obj": "second Trump administration initiative in the United States",
+      "source_page": "Government Efficiency"
+    },
+    {
+      "kind": "definition",
+      "subject": "Detroit Electric",
+      "predicate": "is_a",
+      "obj": "electric car produced by the Anderson Electric Car Company in Detroit",
+      "source_page": "Detroit Electric"
+    },
+    {
+      "kind": "definition",
+      "subject": "Digital Services Act",
+      "predicate": "is_a",
+      "obj": "EU regulation",
+      "source_page": "Digital Services Act"
+    },
+    {
+      "kind": "definition",
+      "subject": "Dodger Stadium",
+      "predicate": "is_a",
+      "obj": "ballpark in the Elysian Park neighborhood of Los Angeles",
+      "source_page": "Dodger Stadium"
+    },
+    {
+      "kind": "definition",
       "subject": "Dow Jones",
       "predicate": "is_a",
       "obj": "combination of the names of business partners Charles Dow",
@@ -471,14 +903,14 @@
       "subject": "Dragon 2",
       "predicate": "is_a",
       "obj": "class of partially reusable spacecraft",
-      "source_page": "US Deorbit Vehicle"
+      "source_page": "Cargo Dragon"
     },
     {
       "kind": "definition",
-      "subject": "Dragon Spacecraft Qualification Unit",
+      "subject": "Drake Landing Solar Community",
       "predicate": "is_a",
-      "obj": "boilerplate version of the Dragon spacecraft",
-      "source_page": "Dragon Spacecraft Qualification Unit"
+      "obj": "planned community in Okotoks",
+      "source_page": "Drake Landing Solar Community"
     },
     {
       "kind": "definition",
@@ -496,10 +928,45 @@
     },
     {
       "kind": "definition",
+      "subject": "East India",
+      "predicate": "is_a",
+      "obj": "region consisting of the Indian states of Bihar",
+      "source_page": "East India"
+    },
+    {
+      "kind": "definition",
+      "subject": "Edward Mounier Boxer",
+      "predicate": "is_a",
+      "obj": "English inventor",
+      "source_page": "Edward Mounier Boxer"
+    },
+    {
+      "kind": "definition",
       "subject": "Engineering",
       "predicate": "is_a",
       "obj": "practice of systematically applying natural science",
       "source_page": "Engineering"
+    },
+    {
+      "kind": "definition",
+      "subject": "Environmental impact assessment",
+      "predicate": "is_a",
+      "obj": "assessment of the environmental consequences of a plan",
+      "source_page": "Environmental Assessment"
+    },
+    {
+      "kind": "definition",
+      "subject": "Environmental resource management",
+      "predicate": "is_a",
+      "obj": "issue of increasing concern",
+      "source_page": "Environmental resource management"
+    },
+    {
+      "kind": "definition",
+      "subject": "Environmental resource management or environmental management",
+      "predicate": "is_a",
+      "obj": "management of the interaction",
+      "source_page": "Environmental Management"
     },
     {
       "kind": "definition",
@@ -517,17 +984,17 @@
     },
     {
       "kind": "definition",
+      "subject": "Evoked potential",
+      "predicate": "is_a",
+      "obj": "electrical response of the brain to a sensory stimulus",
+      "source_page": "Evoked potential"
+    },
+    {
+      "kind": "definition",
       "subject": "Exchange Alley or Change Alley",
       "predicate": "is_a",
       "obj": "narrow alleyway connecting shops",
       "source_page": "Exchange Alley"
-    },
-    {
-      "kind": "definition",
-      "subject": "Exos Aerospace Systems & Technologies",
-      "predicate": "is_a",
-      "obj": "aerospace manufacturer",
-      "source_page": "Exos Aerospace"
     },
     {
       "kind": "definition",
@@ -541,7 +1008,7 @@
       "subject": "Federal Communications Commission",
       "predicate": "is_a",
       "obj": "independent agency of the United States federal government",
-      "source_page": "Federal Communications Commission"
+      "source_page": "U.S. Federal Communications Commission"
     },
     {
       "kind": "definition",
@@ -566,10 +1033,24 @@
     },
     {
       "kind": "definition",
+      "subject": "Flocken Elektrowagen",
+      "predicate": "is_a",
+      "obj": "four-wheeled electric car designed by German entrepreneur",
+      "source_page": "Flocken Elektrowagen"
+    },
+    {
+      "kind": "definition",
       "subject": "Foothill Transit",
       "predicate": "is_a",
       "obj": "public transit agency",
       "source_page": "Foothill Transit"
+    },
+    {
+      "kind": "definition",
+      "subject": "Forbes Travel Guide",
+      "predicate": "is_a",
+      "obj": "oldest travel guide in the United States",
+      "source_page": "Forbes Travel Guide"
     },
     {
       "kind": "definition",
@@ -587,6 +1068,27 @@
     },
     {
       "kind": "definition",
+      "subject": "Full Thrust",
+      "predicate": "is_a",
+      "obj": "science fiction strategy wargame written by Jon Tuffley",
+      "source_page": "Full Thrust"
+    },
+    {
+      "kind": "definition",
+      "subject": "Gaia Online",
+      "predicate": "is_a",
+      "obj": "English-language anime-themed social networking",
+      "source_page": "Gaia Online"
+    },
+    {
+      "kind": "definition",
+      "subject": "Game Boy",
+      "predicate": "is_a",
+      "obj": "handheld game console",
+      "source_page": "Game Boy"
+    },
+    {
+      "kind": "definition",
       "subject": "General Motors Company",
       "predicate": "is_a",
       "obj": "American multinational automotive manufacturing company",
@@ -594,10 +1096,38 @@
     },
     {
       "kind": "definition",
+      "subject": "General Public",
+      "predicate": "is_a",
+      "obj": "English new wave band",
+      "source_page": "General Public"
+    },
+    {
+      "kind": "definition",
       "subject": "Gigafactory Mexico",
       "predicate": "is_a",
       "obj": "proposed manufacturing plant for Tesla",
       "source_page": "Gigafactory Mexico"
+    },
+    {
+      "kind": "definition",
+      "subject": "Giving Pledge",
+      "predicate": "is_a",
+      "obj": "charitable campaign",
+      "source_page": "Giving Pledge"
+    },
+    {
+      "kind": "definition",
+      "subject": "Global Analyst Research Settlement",
+      "predicate": "is_a",
+      "obj": "enforcement agreement reached in the United States on April 28",
+      "source_page": "Global Settlement"
+    },
+    {
+      "kind": "definition",
+      "subject": "GNU General Public Licenses",
+      "predicate": "is_a",
+      "obj": "series of widely used free software licenses",
+      "source_page": "General Public License"
     },
     {
       "kind": "definition",
@@ -650,10 +1180,24 @@
     },
     {
       "kind": "definition",
+      "subject": "Hawaiian Islands",
+      "predicate": "is_a",
+      "obj": "archipelago of eight major volcanic islands",
+      "source_page": "Hawaiian Islands"
+    },
+    {
+      "kind": "definition",
       "subject": "Henrik Fisker",
       "predicate": "is_a",
       "obj": "Danish automotive designer",
       "source_page": "Henrik Fisker"
+    },
+    {
+      "kind": "definition",
+      "subject": "Hesperia Planum",
+      "predicate": "is_a",
+      "obj": "broad lava plain in the southern highlands of the planet Mars",
+      "source_page": "Hesperia Planum"
     },
     {
       "kind": "definition",
@@ -678,17 +1222,17 @@
     },
     {
       "kind": "definition",
-      "subject": "Hubble Space Telescope",
-      "predicate": "is_a",
-      "obj": "space telescope",
-      "source_page": "Hubble Space Telescope"
-    },
-    {
-      "kind": "definition",
       "subject": "Hughes Aircraft Company",
       "predicate": "is_a",
       "obj": "major American aerospace",
-      "source_page": "Hughes Aircraft"
+      "source_page": "Hughes Aircraft Co"
+    },
+    {
+      "kind": "definition",
+      "subject": "Ian Edward Wright",
+      "predicate": "is_a",
+      "obj": "English media personality",
+      "source_page": "Ian Wright"
     },
     {
       "kind": "definition",
@@ -699,10 +1243,17 @@
     },
     {
       "kind": "definition",
-      "subject": "Integrate-Transfer-Launch Complex",
+      "subject": "Inspiration Mars Foundation",
       "predicate": "is_a",
-      "obj": "rocket launch site",
-      "source_page": "Integrate-Transfer-Launch Complex"
+      "obj": "American nonprofit organization",
+      "source_page": "Inspiration Mars"
+    },
+    {
+      "kind": "definition",
+      "subject": "Integrated Services Digital Network",
+      "predicate": "is_a",
+      "obj": "set of communication standards for simultaneous digital transmission of voice",
+      "source_page": "Integrated Services Digital Network"
     },
     {
       "kind": "definition",
@@ -710,6 +1261,34 @@
       "predicate": "is_a",
       "obj": "American multinational technology company",
       "source_page": "Intel Corporation"
+    },
+    {
+      "kind": "definition",
+      "subject": "International Astronautical Federation",
+      "predicate": "is_a",
+      "obj": "international space advocacy organization",
+      "source_page": "International Astronautical Federation"
+    },
+    {
+      "kind": "definition",
+      "subject": "International Astronomical Union",
+      "predicate": "is_a",
+      "obj": "international association of professional astronomers",
+      "source_page": "International Astronomical Union"
+    },
+    {
+      "kind": "definition",
+      "subject": "International Civil Aviation Organization",
+      "predicate": "is_a",
+      "obj": "specialized agency of the United Nations",
+      "source_page": "Civil Aviation Organization"
+    },
+    {
+      "kind": "definition",
+      "subject": "International Docking System Standard",
+      "predicate": "is_a",
+      "obj": "international standard for spacecraft docking systems",
+      "source_page": "International Docking System Standard"
     },
     {
       "kind": "definition",
@@ -727,6 +1306,13 @@
     },
     {
       "kind": "definition",
+      "subject": "ITP Aero",
+      "predicate": "is_a",
+      "obj": "Spanish company specialised in designing",
+      "source_page": "ITP Aero"
+    },
+    {
+      "kind": "definition",
       "subject": "Jack Patrick Dorsey",
       "predicate": "is_a",
       "obj": "American tech entrepreneur",
@@ -738,13 +1324,6 @@
       "predicate": "is_a",
       "obj": "British multinational automobile manufacturer",
       "source_page": "Jaguar Land Rover"
-    },
-    {
-      "kind": "definition",
-      "subject": "James Webb Space Telescope",
-      "predicate": "is_a",
-      "obj": "space telescope designed to conduct infrared astronomy",
-      "source_page": "Webb Space Telescope"
     },
     {
       "kind": "definition",
@@ -762,10 +1341,31 @@
     },
     {
       "kind": "definition",
+      "subject": "Jet propulsion",
+      "predicate": "is_a",
+      "obj": "propulsion of an object in one direction",
+      "source_page": "Jet Propulsion"
+    },
+    {
+      "kind": "definition",
       "subject": "June",
       "predicate": "is_a",
       "obj": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world",
       "source_page": "June"
+    },
+    {
+      "kind": "definition",
+      "subject": "Keith Rupert Murdoch",
+      "predicate": "is_a",
+      "obj": "Australian-born American former business magnate",
+      "source_page": "Rupert Murdoch"
+    },
+    {
+      "kind": "definition",
+      "subject": "Konrad Kyeser",
+      "predicate": "is_a",
+      "obj": "German military engineer",
+      "source_page": "Konrad Kyeser"
     },
     {
       "kind": "definition",
@@ -783,6 +1383,20 @@
     },
     {
       "kind": "definition",
+      "subject": "Loro Piana S.p.A.",
+      "predicate": "is_a",
+      "obj": "Italian luxury brand specialized in textile manufacturing",
+      "source_page": "Loro Piana"
+    },
+    {
+      "kind": "definition",
+      "subject": "Los Angeles Air Force Base",
+      "predicate": "is_a",
+      "obj": "United States Space Force base",
+      "source_page": "Los Angeles Air Force Base"
+    },
+    {
+      "kind": "definition",
       "subject": "Lotus Esprit",
       "predicate": "is_a",
       "obj": "sports car built by Lotus Cars from 1976 to 2004 at their Hethel",
@@ -793,7 +1407,7 @@
       "subject": "LVMH Moet Hennessy Louis Vuitton SE",
       "predicate": "is_a",
       "obj": "French multinational holding company",
-      "source_page": "Alain Chevalier"
+      "source_page": "Moet Hennessy"
     },
     {
       "kind": "definition",
@@ -815,6 +1429,13 @@
       "predicate": "is_a",
       "obj": "third month of the year in both the Julian",
       "source_page": "March"
+    },
+    {
+      "kind": "definition",
+      "subject": "Mazda MX-5",
+      "predicate": "is_a",
+      "obj": "lightweight two-seat sports car",
+      "source_page": "Mazda Roadster"
     },
     {
       "kind": "definition",
@@ -846,17 +1467,24 @@
     },
     {
       "kind": "definition",
+      "subject": "Miami Herald",
+      "predicate": "is_a",
+      "obj": "American daily newspaper",
+      "source_page": "Silver Knight Award"
+    },
+    {
+      "kind": "definition",
+      "subject": "Miami Palmetto Senior High School",
+      "predicate": "is_a",
+      "obj": "public high school",
+      "source_page": "Miami Palmetto High"
+    },
+    {
+      "kind": "definition",
       "subject": "Michael Liebreich",
       "predicate": "is_a",
       "obj": "businessman in the field of clean energy",
       "source_page": "Michael Liebreich"
-    },
-    {
-      "kind": "definition",
-      "subject": "Microsoft Corporation",
-      "predicate": "is_a",
-      "obj": "American multinational technology company",
-      "source_page": "Microsoft Corporation"
     },
     {
       "kind": "definition",
@@ -895,6 +1523,13 @@
     },
     {
       "kind": "definition",
+      "subject": "MySQL AB",
+      "predicate": "is_a",
+      "obj": "Swedish software company",
+      "source_page": "MySQL AB"
+    },
+    {
+      "kind": "definition",
       "subject": "NASA Deep Space Network",
       "predicate": "is_a",
       "obj": "worldwide network of spacecraft communication ground segment facilities",
@@ -902,10 +1537,24 @@
     },
     {
       "kind": "definition",
+      "subject": "Nasarawa Amazons F.C.",
+      "predicate": "is_a",
+      "obj": "women's association football club",
+      "source_page": "Nasarawa Amazons"
+    },
+    {
+      "kind": "definition",
       "subject": "NASDAQ Composite",
       "predicate": "is_a",
       "obj": "stock market index",
-      "source_page": "Nasdaq Composite"
+      "source_page": "Nasdaq Composite Index"
+    },
+    {
+      "kind": "definition",
+      "subject": "Nasdaq Nordic",
+      "predicate": "is_a",
+      "obj": "common name for the subsidiaries of Nasdaq",
+      "source_page": "Nasdaq Nordic"
     },
     {
       "kind": "definition",
@@ -916,10 +1565,38 @@
     },
     {
       "kind": "definition",
+      "subject": "National Business Daily",
+      "predicate": "is_a",
+      "obj": "nationwide Chinese financial",
+      "source_page": "National Business Daily"
+    },
+    {
+      "kind": "definition",
+      "subject": "National Merit Scholarship Program",
+      "predicate": "is_a",
+      "obj": "United States academic scholarship competition for recognition",
+      "source_page": "National Merit"
+    },
+    {
+      "kind": "definition",
+      "subject": "Neutron Star Interior Composition Explorer",
+      "predicate": "is_a",
+      "obj": "NASA telescope on the International Space Station",
+      "source_page": "Neutron Star Interior Composition Explorer"
+    },
+    {
+      "kind": "definition",
       "subject": "New Glenn",
       "predicate": "is_a",
-      "obj": "family of launch vehicles",
+      "obj": "family of two-stage partially reusable launch vehicles",
       "source_page": "New Glenn"
+    },
+    {
+      "kind": "definition",
+      "subject": "New Hampshire",
+      "predicate": "is_a",
+      "obj": "state in the New England region of the Northeastern United States",
+      "source_page": "New Hampshire"
     },
     {
       "kind": "definition",
@@ -934,6 +1611,27 @@
       "predicate": "is_a",
       "obj": "landlocked state in the Southwestern region of the United States",
       "source_page": "New Mexico"
+    },
+    {
+      "kind": "definition",
+      "subject": "New South Wales",
+      "predicate": "is_a",
+      "obj": "state on the east coast of Australia",
+      "source_page": "New South Wales"
+    },
+    {
+      "kind": "definition",
+      "subject": "New South, New South Democracy or New South Creed",
+      "predicate": "is_a",
+      "obj": "slogan in the history of the Southern United States",
+      "source_page": "New South"
+    },
+    {
+      "kind": "definition",
+      "subject": "New York City Council",
+      "predicate": "is_a",
+      "obj": "lawmaking body of New York City in the United States",
+      "source_page": "City Council Speaker"
     },
     {
       "kind": "definition",
@@ -958,6 +1656,27 @@
     },
     {
       "kind": "definition",
+      "subject": "North American Aviation",
+      "predicate": "is_a",
+      "obj": "major American aerospace manufacturer",
+      "source_page": "North American Aviation"
+    },
+    {
+      "kind": "definition",
+      "subject": "Ohio State University",
+      "predicate": "is_a",
+      "obj": "public research university in Columbus",
+      "source_page": "Ohio State University"
+    },
+    {
+      "kind": "definition",
+      "subject": "Oliver Daemen",
+      "predicate": "is_a",
+      "obj": "Dutch space tourist",
+      "source_page": "Oliver Daemen"
+    },
+    {
+      "kind": "definition",
       "subject": "Olympus Mons",
       "predicate": "is_a",
       "obj": "large shield volcano on Mars",
@@ -965,10 +1684,31 @@
     },
     {
       "kind": "definition",
+      "subject": "Opportunity Fund",
+      "predicate": "is_a",
+      "obj": "US-based nonprofit organization",
+      "source_page": "Opportunity Fund"
+    },
+    {
+      "kind": "definition",
       "subject": "Oracle Cloud",
       "predicate": "is_a",
       "obj": "cloud computing service offered by Oracle Corporation providing servers",
-      "source_page": "Oracle Cloud Infrastructure"
+      "source_page": "Oracle Cloud"
+    },
+    {
+      "kind": "definition",
+      "subject": "Oracle Enterprise Manager",
+      "predicate": "is_a",
+      "obj": "set of web-based tools aimed at managing software",
+      "source_page": "Oracle Enterprise Manager"
+    },
+    {
+      "kind": "definition",
+      "subject": "Oracle NoSQL Database",
+      "predicate": "is_a",
+      "obj": "NoSQL-type distributed key-value database from Oracle Corporation",
+      "source_page": "Oracle NoSQL Database"
     },
     {
       "kind": "definition",
@@ -990,6 +1730,41 @@
       "predicate": "is_a",
       "obj": "German-American entrepreneur",
       "source_page": "Peter Thiel"
+    },
+    {
+      "kind": "definition",
+      "subject": "Pew Research Center",
+      "predicate": "is_a",
+      "obj": "nonpartisan American think tank",
+      "source_page": "Pew Research Center"
+    },
+    {
+      "kind": "definition",
+      "subject": "PGM-19 Jupiter",
+      "predicate": "is_a",
+      "obj": "first nuclear armed",
+      "source_page": "PGM-19 Jupiter"
+    },
+    {
+      "kind": "definition",
+      "subject": "Phi Beta Kappa Society",
+      "predicate": "is_a",
+      "obj": "oldest academic honor society in the United States",
+      "source_page": "Phi Beta Kappa"
+    },
+    {
+      "kind": "definition",
+      "subject": "Phillip Kennedy",
+      "predicate": "is_a",
+      "obj": "Irish former professional rugby league footballer",
+      "source_page": "Phillip Kennedy"
+    },
+    {
+      "kind": "definition",
+      "subject": "Point Arguello",
+      "predicate": "is_a",
+      "obj": "headland on the Gaviota Coast",
+      "source_page": "Point Arguello"
     },
     {
       "kind": "definition",
@@ -1070,6 +1845,20 @@
     },
     {
       "kind": "definition",
+      "subject": "Rockwell International",
+      "predicate": "is_a",
+      "obj": "major American manufacturing conglomerate",
+      "source_page": "Rockwell International"
+    },
+    {
+      "kind": "definition",
+      "subject": "Roots blower",
+      "predicate": "is_a",
+      "obj": "positive displacement lobe pump",
+      "source_page": "Roots Blower"
+    },
+    {
+      "kind": "definition",
       "subject": "Roots Blower Company",
       "predicate": "is_a",
       "obj": "American engineering company",
@@ -1081,6 +1870,13 @@
       "predicate": "is_a",
       "obj": "naval warfare force of the United Kingdom",
       "source_page": "Royal Navy"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sahara",
+      "predicate": "is_a",
+      "obj": "desert spanning North Africa",
+      "source_page": "Saharan Africa"
     },
     {
       "kind": "definition",
@@ -1098,6 +1894,13 @@
     },
     {
       "kind": "definition",
+      "subject": "Scaled Composites Model 348 White Knight Two",
+      "predicate": "is_a",
+      "obj": "quadjet cargo aircraft",
+      "source_page": "White Knight Two"
+    },
+    {
+      "kind": "definition",
       "subject": "September",
       "predicate": "is_a",
       "obj": "ninth month of the year in the Julian",
@@ -1112,10 +1915,31 @@
     },
     {
       "kind": "definition",
+      "subject": "Short Message Service",
+      "predicate": "is_a",
+      "obj": "text messaging service component of most telephone",
+      "source_page": "Short Message Service"
+    },
+    {
+      "kind": "definition",
+      "subject": "Simple Mail Transfer Protocol",
+      "predicate": "is_a",
+      "obj": "Internet standard communication protocol for electronic mail transmission",
+      "source_page": "Mail Transfer Protocol"
+    },
+    {
+      "kind": "definition",
       "subject": "Sir Arthur Wing Pinero",
       "predicate": "is_a",
       "obj": "English playwright",
       "source_page": "Arthur Wing Pinero"
+    },
+    {
+      "kind": "definition",
+      "subject": "Sir Michael Stanley Whittingham",
+      "predicate": "is_a",
+      "obj": "British-American chemist",
+      "source_page": "Stanley Whittingham"
     },
     {
       "kind": "definition",
@@ -1150,7 +1974,7 @@
       "subject": "SolarCity Corporation",
       "predicate": "is_a",
       "obj": "publicly traded company",
-      "source_page": "SolarCity Corporation"
+      "source_page": "Peter Rive"
     },
     {
       "kind": "definition",
@@ -1175,6 +1999,20 @@
     },
     {
       "kind": "definition",
+      "subject": "South Wales",
+      "predicate": "is_a",
+      "obj": "loosely defined region of Wales bordered by England to the east",
+      "source_page": "South Wales"
+    },
+    {
+      "kind": "definition",
+      "subject": "Southeast Asia",
+      "predicate": "is_a",
+      "obj": "geographical southeastern region of Asia",
+      "source_page": "Southeast Asian"
+    },
+    {
+      "kind": "definition",
       "subject": "Soyuz MS-17",
       "predicate": "is_a",
       "obj": "Soyuz spaceflight",
@@ -1193,6 +2031,13 @@
       "predicate": "is_a",
       "obj": "period encompassing the activities related to the Space Race",
       "source_page": "Space Age"
+    },
+    {
+      "kind": "definition",
+      "subject": "Space Launch Delta 45",
+      "predicate": "is_a",
+      "obj": "unit of the United States Space Force",
+      "source_page": "Air Force Missile Test Center"
     },
     {
       "kind": "definition",
@@ -1224,10 +2069,24 @@
     },
     {
       "kind": "definition",
+      "subject": "Standard Oil Company",
+      "predicate": "is_a",
+      "obj": "corporate trust in the petroleum industry",
+      "source_page": "Standard Oil"
+    },
+    {
+      "kind": "definition",
       "subject": "Starlink Services, LLC",
       "predicate": "is_a",
       "obj": "satellite internet constellation subsidiary of the American space company SpaceX",
       "source_page": "SpaceX Starlink"
+    },
+    {
+      "kind": "definition",
+      "subject": "Starship HLS",
+      "predicate": "is_a",
+      "obj": "lunar lander variant of the Starship spacecraft",
+      "source_page": "Starship Human Landing System"
     },
     {
       "kind": "definition",
@@ -1252,6 +2111,13 @@
     },
     {
       "kind": "definition",
+      "subject": "SuperSport United Football Club",
+      "predicate": "is_a",
+      "obj": "South African professional football club",
+      "source_page": "Pretoria City"
+    },
+    {
+      "kind": "definition",
       "subject": "Sustainable development",
       "predicate": "is_a",
       "obj": "approach to growth",
@@ -1259,10 +2125,10 @@
     },
     {
       "kind": "definition",
-      "subject": "Tesla Fremont Factory",
+      "subject": "Synanceia",
       "predicate": "is_a",
-      "obj": "automobile manufacturing plant in Fremont",
-      "source_page": "Fremont Factory"
+      "obj": "genus of ray-finned fish belonging to the subfamily Synanceiinae",
+      "source_page": "Stone Fish"
     },
     {
       "kind": "definition",
@@ -1287,10 +2153,10 @@
     },
     {
       "kind": "definition",
-      "subject": "Tesla Semi",
+      "subject": "Test Site",
       "predicate": "is_a",
-      "obj": "battery electric semi-trailer truck built by Tesla",
-      "source_page": "Tesla Semi"
+      "obj": "relational art installation",
+      "source_page": "Test Site"
     },
     {
       "kind": "definition",
@@ -1315,10 +2181,38 @@
     },
     {
       "kind": "definition",
+      "subject": "Tim Gardner",
+      "predicate": "is_a",
+      "obj": "American-born Canadian painter",
+      "source_page": "Tim Gardner"
+    },
+    {
+      "kind": "definition",
+      "subject": "Timbavati Private Nature Reserve",
+      "predicate": "is_a",
+      "obj": "nature reserve on the western edge of Kruger National Park in Mpumalanga Province",
+      "source_page": "Timbavati Private Nature Reserve"
+    },
+    {
+      "kind": "definition",
       "subject": "Titan IV",
       "predicate": "is_a",
       "obj": "family of heavy-lift space launch vehicles",
       "source_page": "Titan IV"
+    },
+    {
+      "kind": "definition",
+      "subject": "Tontine Coffee House",
+      "predicate": "is_a",
+      "obj": "coffeehouse in Manhattan",
+      "source_page": "Tontine Coffee House"
+    },
+    {
+      "kind": "definition",
+      "subject": "Transport economics",
+      "predicate": "is_a",
+      "obj": "branch of economics",
+      "source_page": "Transportation Economics"
     },
     {
       "kind": "definition",
@@ -1336,10 +2230,38 @@
     },
     {
       "kind": "definition",
+      "subject": "United States Armed Forces",
+      "predicate": "is_a",
+      "obj": "military forces of the United States",
+      "source_page": "US Armed Forces"
+    },
+    {
+      "kind": "definition",
       "subject": "United States Army",
       "predicate": "is_a",
       "obj": "land service branch of the United States Armed Forces",
       "source_page": "US Army"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Army Air Corps",
+      "predicate": "is_a",
+      "obj": "aerial warfare service component of the United States Army between 1926",
+      "source_page": "U.S. Army Air Corps"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Bicentennial",
+      "predicate": "is_a",
+      "obj": "series of celebrations",
+      "source_page": "U.S. Bicentennial"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Congress",
+      "predicate": "is_a",
+      "obj": "legislative branch of the federal government of the United States",
+      "source_page": "U.S. Congress"
     },
     {
       "kind": "definition",
@@ -1350,10 +2272,31 @@
     },
     {
       "kind": "definition",
+      "subject": "United States National Science Foundation",
+      "predicate": "is_a",
+      "obj": "independent agency of the United States federal government",
+      "source_page": "National Science Foundation"
+    },
+    {
+      "kind": "definition",
       "subject": "United States Navy",
       "predicate": "is_a",
       "obj": "maritime service branch of the United States Armed Forces",
       "source_page": "US Navy"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Small Business Administration",
+      "predicate": "is_a",
+      "obj": "independent agency of the United States government",
+      "source_page": "Small Business Administration"
+    },
+    {
+      "kind": "definition",
+      "subject": "United States Steel Corporation",
+      "predicate": "is_a",
+      "obj": "Japanese-owned American steel company",
+      "source_page": "U.S. Steel"
     },
     {
       "kind": "definition",
@@ -1367,7 +2310,7 @@
       "subject": "US Airways",
       "predicate": "is_a",
       "obj": "major airline",
-      "source_page": "US Air"
+      "source_page": "U.S. Air"
     },
     {
       "kind": "definition",
@@ -1375,6 +2318,13 @@
       "predicate": "is_a",
       "obj": "wooden-hulled bark of 318 tons",
       "source_page": "USS Amazon"
+    },
+    {
+      "kind": "definition",
+      "subject": "Virgin Mobile",
+      "predicate": "is_a",
+      "obj": "wireless communications brand used by seven independent brand-licensees worldwide",
+      "source_page": "Virgin Mobile"
     },
     {
       "kind": "definition",
@@ -1392,10 +2342,10 @@
     },
     {
       "kind": "definition",
-      "subject": "Wall Street",
+      "subject": "Warner Bros.",
       "predicate": "is_a",
-      "obj": "street in the Financial District of Lower Manhattan in New York City",
-      "source_page": "Wall Street"
+      "obj": "brand name",
+      "source_page": "Warner Bros"
     },
     {
       "kind": "definition",
@@ -1403,6 +2353,27 @@
       "predicate": "is_a",
       "obj": "digital archive of the World Wide Web",
       "source_page": "Wayback Machine"
+    },
+    {
+      "kind": "definition",
+      "subject": "West Covina",
+      "predicate": "is_a",
+      "obj": "city in Los Angeles County",
+      "source_page": "West Covina"
+    },
+    {
+      "kind": "definition",
+      "subject": "Western Hemisphere",
+      "predicate": "is_a",
+      "obj": "half of the planet Earth",
+      "source_page": "Western Hemisphere"
+    },
+    {
+      "kind": "definition",
+      "subject": "White III",
+      "predicate": "is_a",
+      "obj": "musician from Austin",
+      "source_page": "Ralph White"
     },
     {
       "kind": "definition",
@@ -1475,18 +2446,186 @@
       "source_page": "Yuri Gagarin"
     },
     {
-      "kind": "relation",
-      "subject": "Arianespace",
-      "predicate": "subsidiary_of",
-      "obj": "ArianeGroup",
-      "source_page": "Arianespace"
+      "kind": "definition",
+      "subject": "Zep Solar",
+      "predicate": "is_a",
+      "obj": "manufacturer of mounting",
+      "source_page": "Zep Solar"
     },
     {
       "kind": "relation",
-      "subject": "Bigelow Aerospace",
+      "subject": "Abacus",
+      "predicate": "owned_by",
+      "obj": "Alliance Data's Epsilon",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Abacus",
+      "predicate": "owned_by",
+      "obj": "DoubleClick",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Advocacy Opportunity Fund",
       "predicate": "founded_by",
-      "obj": "Robert Bigelow",
-      "source_page": "Bigelow Aerospace"
+      "obj": "Eric Weaver",
+      "source_page": "Opportunity Fund"
+    },
+    {
+      "kind": "relation",
+      "subject": "Afara Websystems",
+      "predicate": "develops",
+      "obj": "SPARC processor",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
+      "subject": "Albert Francis Hegenberger",
+      "predicate": "develops",
+      "obj": "U.SU.S\u0000 Army system",
+      "source_page": "Instrument Landing"
+    },
+    {
+      "kind": "relation",
+      "subject": "Alfa Romeo Automobiles S.p",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Alfa Romeo"
+    },
+    {
+      "kind": "relation",
+      "subject": "Alliant Techsystems",
+      "predicate": "develops",
+      "obj": "Pegasus's three Orion solid motors",
+      "source_page": "Orbital Sciences Pegasus"
+    },
+    {
+      "kind": "relation",
+      "subject": "Amazon",
+      "predicate": "founded_by",
+      "obj": "Julie Morse Quist",
+      "source_page": "Amazon Bookstore Cooperative"
+    },
+    {
+      "kind": "relation",
+      "subject": "Amazon",
+      "predicate": "founded_by",
+      "obj": "Rosina Richter Christy",
+      "source_page": "Amazon Bookstore Cooperative"
+    },
+    {
+      "kind": "relation",
+      "subject": "Amtrak California",
+      "predicate": "operates",
+      "obj": "Amtrak Thruway dedicated service",
+      "source_page": "Las Vegas"
+    },
+    {
+      "kind": "relation",
+      "subject": "Andy Bechtolsheim",
+      "predicate": "founded",
+      "obj": "Sun Microsystems",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple Computer Company",
+      "predicate": "founded_by",
+      "obj": "Ronald Wayne",
+      "source_page": "Apple Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple Computer Company",
+      "predicate": "founded_by",
+      "obj": "Steve Jobs",
+      "source_page": "Apple Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple Computer Company",
+      "predicate": "founded_by",
+      "obj": "Steve Wozniak",
+      "source_page": "Apple Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Apple IncInc\u0000",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Apple Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Applied Materials",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Applied Materials"
+    },
+    {
+      "kind": "relation",
+      "subject": "Aristotle Onassis",
+      "predicate": "founded",
+      "obj": "Global Shipping",
+      "source_page": "Aristotle Onassis"
+    },
+    {
+      "kind": "relation",
+      "subject": "Aspen Marketing Services",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Aspen Marketing Services",
+      "predicate": "owned_by",
+      "obj": "Epsilon",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Aston Martin",
+      "predicate": "founded",
+      "obj": "Fisker Automotive",
+      "source_page": "Henrik Fisker"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bankers Trust",
+      "predicate": "owned_by",
+      "obj": "Deutsche Bank",
+      "source_page": "Bankers Trust"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bedford College",
+      "predicate": "founded_by",
+      "obj": "Elizabeth Jesser Reid",
+      "source_page": "Royal Holloway"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bernard Arnault",
+      "predicate": "founded",
+      "obj": "LVMH",
+      "source_page": "Moet Hennessy"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bigfoot Interactive",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Björgólfur Thor",
+      "predicate": "founded",
+      "obj": "Novator Partners",
+      "source_page": "Thor Bjorgolfsson"
     },
     {
       "kind": "relation",
@@ -1499,8 +2638,22 @@
       "kind": "relation",
       "subject": "Bloomberg News",
       "predicate": "founded_by",
+      "obj": "Glen Taylor",
+      "source_page": "Financial News Network"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bloomberg News",
+      "predicate": "founded_by",
       "obj": "Michael Bloomberg",
       "source_page": "Bloomberg News"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bloomberg News",
+      "predicate": "operates",
+      "obj": "Silicon Valley bureaus",
+      "source_page": "Silicon Valley"
     },
     {
       "kind": "relation",
@@ -1511,10 +2664,129 @@
     },
     {
       "kind": "relation",
+      "subject": "Blue Ring",
+      "predicate": "is_a",
+      "obj": "Dragon spacecraft",
+      "source_page": "Blue Ring Pathfinder"
+    },
+    {
+      "kind": "relation",
       "subject": "Bombay Stock Exchange",
       "predicate": "founded_by",
       "obj": "Premchand Roychand",
       "source_page": "Bombay Stock Exchange"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "obj": "Amelia",
+      "source_page": "Bonnier Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "obj": "Damernas Värld",
+      "source_page": "Bonnier Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "obj": "Resume",
+      "source_page": "Bonnier Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "obj": "Sköna hem",
+      "source_page": "Bonnier Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "obj": "Teknikens Värld",
+      "source_page": "Bonnier Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Bread Financial Holdings",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "British Aerospace",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "BAE Systems"
+    },
+    {
+      "kind": "relation",
+      "subject": "Burt Rutan",
+      "predicate": "founded",
+      "obj": "Rutan Aircraft Factory",
+      "source_page": "Scaled Composites"
+    },
+    {
+      "kind": "relation",
+      "subject": "CAE - Link",
+      "predicate": "owned_by",
+      "obj": "Hughes Aircraft",
+      "source_page": "Hughes Aircraft Co"
+    },
+    {
+      "kind": "relation",
+      "subject": "Carnegie Steel",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Andrew Carnegie"
+    },
+    {
+      "kind": "relation",
+      "subject": "Carsten H",
+      "predicate": "develops",
+      "obj": "Test Site",
+      "source_page": "Test Site"
+    },
+    {
+      "kind": "relation",
+      "subject": "Caterham Cars",
+      "predicate": "owned_by",
+      "obj": "VT Holdings",
+      "source_page": "Caterham Cars"
+    },
+    {
+      "kind": "relation",
+      "subject": "Caterham Cars LtdLtd\u0000",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Caterham Cars"
+    },
+    {
+      "kind": "relation",
+      "subject": "CBS Newspath CBS Newspath",
+      "predicate": "is_a",
+      "obj": "Bloomberg News",
+      "source_page": "CBS News"
+    },
+    {
+      "kind": "relation",
+      "subject": "Charles Bergstresser",
+      "predicate": "founded",
+      "obj": "Dow Jones",
+      "source_page": "Dow Jones"
+    },
+    {
+      "kind": "relation",
+      "subject": "Christian Dior SE",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Christian Dior SE"
     },
     {
       "kind": "relation",
@@ -1525,10 +2797,150 @@
     },
     {
       "kind": "relation",
+      "subject": "Citigroup Salomon",
+      "predicate": "owned_by",
+      "obj": "Travelers Group",
+      "source_page": "Salomon Smith Barney"
+    },
+    {
+      "kind": "relation",
+      "subject": "Clement Melville Keys",
+      "predicate": "founded",
+      "obj": "North American",
+      "source_page": "North American Aviation"
+    },
+    {
+      "kind": "relation",
+      "subject": "Colloquy / Frequency Marketing",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Commercial Crew Program",
+      "predicate": "created_by",
+      "obj": "NASA",
+      "source_page": "Apollo Applications"
+    },
+    {
+      "kind": "relation",
+      "subject": "Commercial Crew Program",
+      "predicate": "founded",
+      "obj": "Water Resources Research Institute",
+      "source_page": "United States Geological Survey"
+    },
+    {
+      "kind": "relation",
+      "subject": "Commercial Crew Program",
+      "predicate": "operates",
+      "obj": "Hangar AE",
+      "source_page": "Launch Services Program"
+    },
+    {
+      "kind": "relation",
       "subject": "Compaq",
       "predicate": "owned_by",
       "obj": "Hewlett-Packard",
       "source_page": "Compaq Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "Constitution's First Article",
+      "predicate": "develops",
+      "obj": "Congress",
+      "source_page": "U.S. Congress"
+    },
+    {
+      "kind": "relation",
+      "subject": "Cornelia Foster Bradford",
+      "predicate": "founded",
+      "obj": "Whittier House",
+      "source_page": "Jersey City"
+    },
+    {
+      "kind": "relation",
+      "subject": "Cosmos DB",
+      "predicate": "is_a",
+      "obj": "NoSQL database service",
+      "source_page": "Microsoft Azure"
+    },
+    {
+      "kind": "relation",
+      "subject": "Danish Americans",
+      "predicate": "founded",
+      "obj": "Danish Pioneer",
+      "source_page": "Danish American"
+    },
+    {
+      "kind": "relation",
+      "subject": "Danish Americans",
+      "predicate": "founded",
+      "obj": "Den Danske Pioneer",
+      "source_page": "Danish American"
+    },
+    {
+      "kind": "relation",
+      "subject": "Dell Technologies IncInc\u0000",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Dell Technologies"
+    },
+    {
+      "kind": "relation",
+      "subject": "Derby",
+      "predicate": "develops",
+      "obj": "Some 50 versions of the Merlin",
+      "source_page": "Rolls-Royce Merlin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Discovery Air",
+      "predicate": "created_by",
+      "obj": "David Taylor",
+      "source_page": "Government Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "Discovery Air Defence",
+      "predicate": "owned_by",
+      "obj": "Clearvest",
+      "source_page": "Government Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "Discovery Air Defence",
+      "predicate": "owned_by",
+      "obj": "DA Defence",
+      "source_page": "Government Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "Discovery Mining Services",
+      "predicate": "is_a",
+      "obj": "NWT - based company",
+      "source_page": "Government Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "DKSH Thailand",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "BYD T3"
+    },
+    {
+      "kind": "relation",
+      "subject": "DM&IR",
+      "predicate": "owned_by",
+      "obj": "Canadian National",
+      "source_page": "U.S. Steel"
+    },
+    {
+      "kind": "relation",
+      "subject": "Dominican",
+      "predicate": "develops",
+      "obj": "Boca Chica",
+      "source_page": "Boca Chica"
     },
     {
       "kind": "relation",
@@ -1539,10 +2951,234 @@
     },
     {
       "kind": "relation",
-      "subject": "Exos Aerospace Systems & Technologies",
+      "subject": "Education Las Cruces Public Schools",
+      "predicate": "operates",
+      "obj": "White Sands School",
+      "source_page": "White Sands Missile Range"
+    },
+    {
+      "kind": "relation",
+      "subject": "ELN",
+      "predicate": "developed_by",
+      "obj": "Jim Starkey",
+      "source_page": "Oracle Rdb"
+    },
+    {
+      "kind": "relation",
+      "subject": "Elon Musk",
+      "predicate": "founded",
+      "obj": "Big Green",
+      "source_page": "Kimbal Musk"
+    },
+    {
+      "kind": "relation",
+      "subject": "Elon Musk",
+      "predicate": "founded",
+      "obj": "Zip2",
+      "source_page": "Elon Musk"
+    },
+    {
+      "kind": "relation",
+      "subject": "Enron Wind",
       "predicate": "is_a",
       "obj": "Aerospace manufacturer",
-      "source_page": "Exos Aerospace"
+      "source_page": "General Electric"
+    },
+    {
+      "kind": "relation",
+      "subject": "Epsilon",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "European Centre for Algorithmic Transparency",
+      "predicate": "developed_by",
+      "obj": "European Commission",
+      "source_page": "Digital Services Act"
+    },
+    {
+      "kind": "relation",
+      "subject": "European Commission",
+      "predicate": "develops",
+      "obj": "European Centre for Algorithmic Transparency",
+      "source_page": "Digital Services Act"
+    },
+    {
+      "kind": "relation",
+      "subject": "Express",
+      "predicate": "owned_by",
+      "obj": "Craig Drecktrah",
+      "source_page": "Chicago Express"
+    },
+    {
+      "kind": "relation",
+      "subject": "Falcon 9",
+      "predicate": "owned_by",
+      "obj": "SpaceX",
+      "source_page": "CST-100 Starliner"
+    },
+    {
+      "kind": "relation",
+      "subject": "Falcon Heavy",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Kawasaki Heavy Industries"
+    },
+    {
+      "kind": "relation",
+      "subject": "Falcon Heavy",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Mitsubishi Heavy Industries Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Federal Fiscal Outlook Report",
+      "predicate": "published_by",
+      "obj": "US public debt",
+      "source_page": "Government Accountability Office"
+    },
+    {
+      "kind": "relation",
+      "subject": "Free ISPs Free ISPs",
+      "predicate": "is_a",
+      "obj": "Satellite internet",
+      "source_page": "ISPs"
+    },
+    {
+      "kind": "relation",
+      "subject": "Frequency Marketing",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Fujian Soviet",
+      "predicate": "founded_by",
+      "obj": "Mao Zedong",
+      "source_page": "Long March"
+    },
+    {
+      "kind": "relation",
+      "subject": "GE Lighting",
+      "predicate": "owned_by",
+      "obj": "Savant Systems",
+      "source_page": "General Electric"
+    },
+    {
+      "kind": "relation",
+      "subject": "General Education",
+      "predicate": "published_by",
+      "obj": "Harvard faculty",
+      "source_page": "Harvard University"
+    },
+    {
+      "kind": "relation",
+      "subject": "General Imaging",
+      "predicate": "manufactures",
+      "obj": "GE digital cameras",
+      "source_page": "General Electric"
+    },
+    {
+      "kind": "relation",
+      "subject": "Golf Variant Twin Drive",
+      "predicate": "develops",
+      "obj": "Electric vehicle",
+      "source_page": "Volkswagen Golf"
+    },
+    {
+      "kind": "relation",
+      "subject": "Graz",
+      "predicate": "develops",
+      "obj": "I-Pace",
+      "source_page": "Jaguar I-Pace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Hamilton Sundstrand Sensor Systems",
+      "predicate": "develops",
+      "obj": "OCO instrument",
+      "source_page": "Orbiting Carbon Observatory"
+    },
+    {
+      "kind": "relation",
+      "subject": "Heed Their Rising Voices",
+      "predicate": "published_by",
+      "obj": "The New York Times",
+      "source_page": "New York Times"
+    },
+    {
+      "kind": "relation",
+      "subject": "Hercules",
+      "predicate": "develops",
+      "obj": "Motors The new rocket motors",
+      "source_page": "Pershing II"
+    },
+    {
+      "kind": "relation",
+      "subject": "Hercules Aerospace",
+      "predicate": "develops",
+      "obj": "Pegasus's three Orion solid motors",
+      "source_page": "Orbital Sciences Pegasus"
+    },
+    {
+      "kind": "relation",
+      "subject": "Honeywell Aerospace",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Honeywell Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Hughes Aircraft",
+      "predicate": "owned_by",
+      "obj": "General Motors",
+      "source_page": "Hughes Aircraft Co"
+    },
+    {
+      "kind": "relation",
+      "subject": "Humanity United",
+      "predicate": "founded",
+      "obj": "Enterprise Zimbabwe",
+      "source_page": "Richard Branson"
+    },
+    {
+      "kind": "relation",
+      "subject": "Hyperloop",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Virgin Hyperloop One"
+    },
+    {
+      "kind": "relation",
+      "subject": "I-Pace",
+      "predicate": "developed_by",
+      "obj": "Magna Steyr",
+      "source_page": "Jaguar I-Pace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Ian Callum",
+      "predicate": "develops",
+      "obj": "Jaguar I-Pace",
+      "source_page": "Jaguar I-Pace"
+    },
+    {
+      "kind": "relation",
+      "subject": "IncInc\u0000",
+      "predicate": "founded_by",
+      "obj": "Jack Warner",
+      "source_page": "Warner Bros"
+    },
+    {
+      "kind": "relation",
+      "subject": "IncInc\u0000",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Applied Materials"
     },
     {
       "kind": "relation",
@@ -1567,6 +3203,41 @@
     },
     {
       "kind": "relation",
+      "subject": "ITP Aero",
+      "predicate": "is_a",
+      "obj": "Spain 's lead company",
+      "source_page": "ITP Aero"
+    },
+    {
+      "kind": "relation",
+      "subject": "Its Future",
+      "predicate": "published_by",
+      "obj": "The Times",
+      "source_page": "New York Times"
+    },
+    {
+      "kind": "relation",
+      "subject": "Jaguar I-Pace",
+      "predicate": "developed_by",
+      "obj": "Ian Callum",
+      "source_page": "Jaguar I-Pace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Jaguar Land Rover Automotive PLC",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Jaguar Land Rover"
+    },
+    {
+      "kind": "relation",
+      "subject": "JD Edwards",
+      "predicate": "founded_by",
+      "obj": "Jack Thompson",
+      "source_page": "JD Edwards EnterpriseOne"
+    },
+    {
+      "kind": "relation",
       "subject": "Jean Fayeton",
       "predicate": "develops",
       "obj": "Malabry campus",
@@ -1581,6 +3252,90 @@
     },
     {
       "kind": "relation",
+      "subject": "Jiao Yu",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Fire Drake Manual"
+    },
+    {
+      "kind": "relation",
+      "subject": "Jim Starkey",
+      "predicate": "develops",
+      "obj": "ELN",
+      "source_page": "Oracle Rdb"
+    },
+    {
+      "kind": "relation",
+      "subject": "Kennedy Space Center",
+      "predicate": "operates",
+      "obj": "MV Retriever",
+      "source_page": "Manned Spacecraft Center"
+    },
+    {
+      "kind": "relation",
+      "subject": "Larry Ellison",
+      "predicate": "founded",
+      "obj": "BMW Oracle Racing",
+      "source_page": "Lawrence Joseph Ellison"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lavochkin",
+      "predicate": "develops",
+      "obj": "interplanetary probes",
+      "source_page": "Lavochkin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lavochkin",
+      "predicate": "develops",
+      "obj": "satellites",
+      "source_page": "Lavochkin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lavochkin",
+      "predicate": "produces",
+      "obj": "interplanetary probes",
+      "source_page": "Lavochkin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lavochkin",
+      "predicate": "produces",
+      "obj": "satellites",
+      "source_page": "Lavochkin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lee Felsenstein",
+      "predicate": "develops",
+      "obj": "People Community Memory",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "LG - OTIS",
+      "predicate": "founded",
+      "obj": "Sigma Elevator",
+      "source_page": "Otis Worldwide"
+    },
+    {
+      "kind": "relation",
+      "subject": "LG Chem Michigan",
+      "predicate": "subsidiary_of",
+      "obj": "LG",
+      "source_page": "LG Chem"
+    },
+    {
+      "kind": "relation",
+      "subject": "Lon Operations IncInc\u0000",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
       "subject": "Loopt",
       "predicate": "owned_by",
       "obj": "Green Dot Corporation",
@@ -1588,10 +3343,80 @@
     },
     {
       "kind": "relation",
+      "subject": "LoyaltyOne",
+      "predicate": "owned_by",
+      "obj": "Alliance Data",
+      "source_page": "Comenity Capital Bank"
+    },
+    {
+      "kind": "relation",
+      "subject": "Luminar Technologies IncInc\u0000",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Luminar Technologies"
+    },
+    {
+      "kind": "relation",
+      "subject": "Magna Steyr",
+      "predicate": "develops",
+      "obj": "I-Pace",
+      "source_page": "Jaguar I-Pace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Magnavox Electronic Systems",
+      "predicate": "owned_by",
+      "obj": "Hughes Electronics",
+      "source_page": "Hughes Aircraft Co"
+    },
+    {
+      "kind": "relation",
+      "subject": "Marconi Electronic Systems",
+      "predicate": "owned_by",
+      "obj": "British Aerospace",
+      "source_page": "Aerospace manufacturing"
+    },
+    {
+      "kind": "relation",
+      "subject": "Mathematical Theory",
+      "predicate": "published_by",
+      "obj": "Claude Shannon",
+      "source_page": "Bell Telephone Laboratories"
+    },
+    {
+      "kind": "relation",
+      "subject": "Meanwhile, Paramount Pictures",
+      "predicate": "owned_by",
+      "obj": "Gulf",
+      "source_page": "Paramount Skydance"
+    },
+    {
+      "kind": "relation",
+      "subject": "Meanwhile, Paramount Pictures",
+      "predicate": "owned_by",
+      "obj": "Western Industries",
+      "source_page": "Paramount Skydance"
+    },
+    {
+      "kind": "relation",
+      "subject": "Meta Platforms",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Meta Platforms"
+    },
+    {
+      "kind": "relation",
+      "subject": "Michael Bloomberg",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Bloomberg Radio"
+    },
+    {
+      "kind": "relation",
       "subject": "Michael Liebreich",
       "predicate": "develops",
       "obj": "New Energy Finance",
-      "source_page": "Bloomberg L.P"
+      "source_page": "Bloomberg Media"
     },
     {
       "kind": "relation",
@@ -1599,6 +3424,48 @@
       "predicate": "develops",
       "obj": "S-IB stage",
       "source_page": "Saturn IB"
+    },
+    {
+      "kind": "relation",
+      "subject": "MIT Project Athena",
+      "predicate": "produces",
+      "obj": "Kerberized version",
+      "source_page": "Post Office Protocol"
+    },
+    {
+      "kind": "relation",
+      "subject": "Monte Titoli",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "London Stock Exchange"
+    },
+    {
+      "kind": "relation",
+      "subject": "Morgan Motor Company Limited",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Morgan Motor Company"
+    },
+    {
+      "kind": "relation",
+      "subject": "Motor Trend",
+      "predicate": "published_by",
+      "obj": "Petersen Publishing Company",
+      "source_page": "Motor Trend"
+    },
+    {
+      "kind": "relation",
+      "subject": "MySQL AB",
+      "predicate": "is_a",
+      "obj": "Swedish software company",
+      "source_page": "MySQL AB"
+    },
+    {
+      "kind": "relation",
+      "subject": "Nasdaq",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Nasdaq OMX Group"
     },
     {
       "kind": "relation",
@@ -1612,7 +3479,14 @@
       "subject": "New Energy Finance",
       "predicate": "developed_by",
       "obj": "Michael Liebreich",
-      "source_page": "Bloomberg L.P"
+      "source_page": "Bloomberg Media"
+    },
+    {
+      "kind": "relation",
+      "subject": "North American Aviation",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "North American Aviation"
     },
     {
       "kind": "relation",
@@ -1637,17 +3511,248 @@
     },
     {
       "kind": "relation",
-      "subject": "NYSE",
+      "subject": "NQB",
       "predicate": "owned_by",
-      "obj": "Intercontinental Exchange",
-      "source_page": "NYSE"
+      "obj": "CCH",
+      "source_page": "OTC Pink"
     },
     {
       "kind": "relation",
-      "subject": "Reuters",
+      "subject": "NYSE",
       "predicate": "owned_by",
-      "obj": "Canadian Thomson Corporation",
-      "source_page": "Reuters"
+      "obj": "Intercontinental Exchange",
+      "source_page": "Big Board"
+    },
+    {
+      "kind": "relation",
+      "subject": "NYSE Alternext NYSE Alternext",
+      "predicate": "created_by",
+      "obj": "NYSE Euronext",
+      "source_page": "NYSE Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "NYSE Euronext",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "NYSE Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "NYSE Euronext",
+      "predicate": "operates",
+      "obj": "NYSE Technologies",
+      "source_page": "NYSE Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "NYSE Magazine NYSE Magazine",
+      "predicate": "is_a",
+      "obj": "NYSE Euronext 's quarterly publication",
+      "source_page": "NYSE Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Opportunity Fund",
+      "predicate": "is_a",
+      "obj": "US - based nonprofit organization",
+      "source_page": "Opportunity Fund"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "founded",
+      "obj": "Subsidiary",
+      "source_page": "Sierra Nevada Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "founded_by",
+      "obj": "Harry van Hulten",
+      "source_page": "XCOR Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "founded_by",
+      "obj": "John Chisholm",
+      "source_page": "Sierra Nevada Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "founded_by",
+      "obj": "Walter Chrysler",
+      "source_page": "Chrysler Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Lockheed Martin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Compaq Computer"
+    },
+    {
+      "kind": "relation",
+      "subject": "ORBCOMM Orbital",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Orbital Sciences"
+    },
+    {
+      "kind": "relation",
+      "subject": "OTC Markets Group",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "OTC Pink"
+    },
+    {
+      "kind": "relation",
+      "subject": "Otis Elevator Company",
+      "predicate": "owned_by",
+      "obj": "United Technologies",
+      "source_page": "Otis Worldwide"
+    },
+    {
+      "kind": "relation",
+      "subject": "Paramount Pictures",
+      "predicate": "owned_by",
+      "obj": "Western Industries",
+      "source_page": "Paramount Skydance"
+    },
+    {
+      "kind": "relation",
+      "subject": "Patria Plc",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Patria Plc"
+    },
+    {
+      "kind": "relation",
+      "subject": "PayPal",
+      "predicate": "operates",
+      "obj": "Student Accounts",
+      "source_page": "PayPal Holdings"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "created_by",
+      "obj": "Efrem Lipkin",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "created_by",
+      "obj": "Jude Milhon",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "created_by",
+      "obj": "Ken Colstad",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "created_by",
+      "obj": "Lee Felsenstein",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "created_by",
+      "obj": "Mark Szpakowski",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "People Community Memory",
+      "predicate": "developed_by",
+      "obj": "Lee Felsenstein",
+      "source_page": "Community Memory"
+    },
+    {
+      "kind": "relation",
+      "subject": "Phantom Space Cantrell",
+      "predicate": "founded",
+      "obj": "Phantom Space",
+      "source_page": "Jim Cantrell"
+    },
+    {
+      "kind": "relation",
+      "subject": "Philanthropy Jensen Huang",
+      "predicate": "founded",
+      "obj": "Lori Huang Foundation",
+      "source_page": "Jensen Huang"
+    },
+    {
+      "kind": "relation",
+      "subject": "Pomona",
+      "predicate": "develops",
+      "obj": "OCO instrument",
+      "source_page": "Orbiting Carbon Observatory"
+    },
+    {
+      "kind": "relation",
+      "subject": "Public Act",
+      "predicate": "founded",
+      "obj": "Federal Credit Union Law",
+      "source_page": "New Deal"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rdb / ELN",
+      "predicate": "created_by",
+      "obj": "Jim Starkey",
+      "source_page": "Oracle Rdb"
+    },
+    {
+      "kind": "relation",
+      "subject": "Reaction Engines",
+      "predicate": "founded_by",
+      "obj": "Alan Bond",
+      "source_page": "Reaction Engines"
+    },
+    {
+      "kind": "relation",
+      "subject": "Reaction Engines Limited",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Reaction Engines"
+    },
+    {
+      "kind": "relation",
+      "subject": "Relational Database Systems IncInc\u0000",
+      "predicate": "created_by",
+      "obj": "Roger Sippl",
+      "source_page": "Informix Software"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rocket",
+      "predicate": "developed_by",
+      "obj": "North American Aviation",
+      "source_page": "Project Mercury"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rocket",
+      "predicate": "developed_by",
+      "obj": "SDO Yuzhnoye / PO Yuzhmash",
+      "source_page": "Sea Launch"
     },
     {
       "kind": "relation",
@@ -1655,6 +3760,41 @@
       "predicate": "founded_by",
       "obj": "Steve Blank",
       "source_page": "Rocket Science Games"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rocketplane Kistler",
+      "predicate": "is_a",
+      "obj": "Reusable launch system",
+      "source_page": "Kistler Aerospace"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rockwell Collins",
+      "predicate": "is_a",
+      "obj": "Oracle Corporation",
+      "source_page": "Rockwell Collins"
+    },
+    {
+      "kind": "relation",
+      "subject": "Roger Williams",
+      "predicate": "founded",
+      "obj": "Providence Plantations",
+      "source_page": "Thirteen Colonies"
+    },
+    {
+      "kind": "relation",
+      "subject": "Rolls-Royce",
+      "predicate": "develops",
+      "obj": "Some 50 versions of the Merlin",
+      "source_page": "Rolls-Royce Merlin"
+    },
+    {
+      "kind": "relation",
+      "subject": "Roy Disney",
+      "predicate": "founded",
+      "obj": "Disney Brothers Cartoon Studio",
+      "source_page": "Walt Disney Company"
     },
     {
       "kind": "relation",
@@ -1672,6 +3812,13 @@
     },
     {
       "kind": "relation",
+      "subject": "Royal Mail",
+      "predicate": "founded",
+      "obj": "Royal Mail Engineering",
+      "source_page": "Royal Mail"
+    },
+    {
+      "kind": "relation",
       "subject": "S-IVB",
       "predicate": "developed_by",
       "obj": "Douglas Aircraft Company",
@@ -1679,10 +3826,45 @@
     },
     {
       "kind": "relation",
+      "subject": "Safe Speed",
+      "predicate": "is_a",
+      "obj": "UK group",
+      "source_page": "Traffic Safety"
+    },
+    {
+      "kind": "relation",
       "subject": "Saudi Arabia",
       "predicate": "founded_by",
       "obj": "King Abdulaziz",
       "source_page": "Saudi Arabia"
+    },
+    {
+      "kind": "relation",
+      "subject": "Scott McNealy",
+      "predicate": "founded",
+      "obj": "Sun Microsystems",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
+      "subject": "Sea Launch",
+      "predicate": "is_a",
+      "obj": "Dragon spacecraft",
+      "source_page": "Sea Launch"
+    },
+    {
+      "kind": "relation",
+      "subject": "Sir Humphrey Gilbert",
+      "predicate": "founded",
+      "obj": "St John",
+      "source_page": "Canada"
+    },
+    {
+      "kind": "relation",
+      "subject": "Skydance Media",
+      "predicate": "founded_by",
+      "obj": "David Ellison",
+      "source_page": "Paramount Skydance"
     },
     {
       "kind": "relation",
@@ -1700,10 +3882,45 @@
     },
     {
       "kind": "relation",
+      "subject": "SmartPool SmartPool Trading Limited",
+      "predicate": "is_a",
+      "obj": "UK - registered company",
+      "source_page": "NYSE Group"
+    },
+    {
+      "kind": "relation",
+      "subject": "Smith Electric Vehicles",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Smith Electric Vehicles"
+    },
+    {
+      "kind": "relation",
       "subject": "SolarCity",
-      "predicate": "owned_by",
-      "obj": "Tesla",
-      "source_page": "Gigafactory New York"
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Elon Musk"
+    },
+    {
+      "kind": "relation",
+      "subject": "Space.com",
+      "predicate": "founded_by",
+      "obj": "Rich Zahradnik",
+      "source_page": "Space.com"
+    },
+    {
+      "kind": "relation",
+      "subject": "SpaceBEE NZ",
+      "predicate": "is_a",
+      "obj": "Satellite constellation",
+      "source_page": "Swarm Technologies"
+    },
+    {
+      "kind": "relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "obj": "Dragon spacecraft",
+      "source_page": "SpaceX Hawthorne"
     },
     {
       "kind": "relation",
@@ -1711,6 +3928,41 @@
       "predicate": "develops",
       "obj": "Falcon 9",
       "source_page": "Falcon 9"
+    },
+    {
+      "kind": "relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "obj": "Launch vehicle",
+      "source_page": "SpaceX Hawthorne"
+    },
+    {
+      "kind": "relation",
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "obj": "Starship",
+      "source_page": "Elon Musk"
+    },
+    {
+      "kind": "relation",
+      "subject": "Spidey Super Stories",
+      "predicate": "published_by",
+      "obj": "Marvel Comics",
+      "source_page": "Electric Company"
+    },
+    {
+      "kind": "relation",
+      "subject": "Stanford University",
+      "predicate": "founded_by",
+      "obj": "Jane Stanford",
+      "source_page": "Stanford University"
+    },
+    {
+      "kind": "relation",
+      "subject": "Starlink",
+      "predicate": "is_a",
+      "obj": "Satellite constellation",
+      "source_page": "SpaceX Hawthorne"
     },
     {
       "kind": "relation",
@@ -1728,10 +3980,192 @@
     },
     {
       "kind": "relation",
+      "subject": "STIR Magazine",
+      "predicate": "founded_by",
+      "obj": "Diana Levine",
+      "source_page": "Clark University"
+    },
+    {
+      "kind": "relation",
+      "subject": "Sun Microsystems",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
+      "subject": "TA Design Handbook",
+      "predicate": "published_by",
+      "obj": "The GAO",
+      "source_page": "Government Accountability Office"
+    },
+    {
+      "kind": "relation",
+      "subject": "Tata Motors",
+      "predicate": "founded",
+      "obj": "Jaguar Land Rover Limited",
+      "source_page": "Jaguar Land Rover"
+    },
+    {
+      "kind": "relation",
       "subject": "Telecom Technologies",
       "predicate": "owned_by",
       "obj": "Sonus Networks",
       "source_page": "Anousheh Ansari"
+    },
+    {
+      "kind": "relation",
+      "subject": "Telewizja Polska",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Wayback Machine"
+    },
+    {
+      "kind": "relation",
+      "subject": "Tesla",
+      "predicate": "is_a",
+      "obj": "Clean energy",
+      "source_page": "Tesla, Inc"
+    },
+    {
+      "kind": "relation",
+      "subject": "Tesla",
+      "predicate": "produces",
+      "obj": "Electric car",
+      "source_page": "electric cars"
+    },
+    {
+      "kind": "relation",
+      "subject": "Tesla Energy",
+      "predicate": "created_by",
+      "obj": "Michael Liebreich",
+      "source_page": "Bloomberg Media"
+    },
+    {
+      "kind": "relation",
+      "subject": "Test Site",
+      "predicate": "developed_by",
+      "obj": "Carsten H",
+      "source_page": "Test Site"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Atlas V",
+      "predicate": "developed_by",
+      "obj": "Lockheed Martin",
+      "source_page": "Cooke Air Force Base"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Berlin Model",
+      "predicate": "developed_by",
+      "obj": "Paul Heimann",
+      "source_page": "Berlin Model"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Board",
+      "predicate": "operates",
+      "obj": "Audit Inspection Unit",
+      "source_page": "Accounting Standards Board"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Institutes",
+      "predicate": "published_by",
+      "obj": "James Lorimer",
+      "source_page": "World Government"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Key Reporter",
+      "predicate": "published_by",
+      "obj": "The Phi Beta Kappa Society",
+      "source_page": "Phi Beta Kappa"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Mystery",
+      "predicate": "published_by",
+      "obj": "National Business Daily",
+      "source_page": "National Business Daily"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Navy",
+      "predicate": "operates",
+      "obj": "Estacion Aeronaval",
+      "source_page": "Naval Air Station"
+    },
+    {
+      "kind": "relation",
+      "subject": "The New Palgrave Dictionary",
+      "predicate": "published_by",
+      "obj": "Palgrave Macmillan",
+      "source_page": "Palgrave Macmillan"
+    },
+    {
+      "kind": "relation",
+      "subject": "The North China Department",
+      "predicate": "operates",
+      "obj": "Subsidiary",
+      "source_page": "Standard Oil"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Regional Transportation District",
+      "predicate": "operates",
+      "obj": "Line rail service",
+      "source_page": "Denver International Airport"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Royal Navy",
+      "predicate": "operates",
+      "obj": "Response Force Task Group",
+      "source_page": "Royal Navy"
+    },
+    {
+      "kind": "relation",
+      "subject": "The UAC",
+      "predicate": "created_by",
+      "obj": "Russian president Vladimir Putin",
+      "source_page": "United Aircraft Corporation"
+    },
+    {
+      "kind": "relation",
+      "subject": "The Wall Street Journal",
+      "predicate": "operates",
+      "obj": "Silicon Valley bureaus",
+      "source_page": "Silicon Valley"
+    },
+    {
+      "kind": "relation",
+      "subject": "The WHO",
+      "predicate": "operates",
+      "obj": "Goodwill Ambassadors",
+      "source_page": "Health Organization"
+    },
+    {
+      "kind": "relation",
+      "subject": "Thereafter Pinkham",
+      "predicate": "develops",
+      "obj": "Amazon",
+      "source_page": "Amazon Web Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "To",
+      "predicate": "develops",
+      "obj": "Motors The new rocket motors",
+      "source_page": "Pershing II"
+    },
+    {
+      "kind": "relation",
+      "subject": "Transdev Sydney Ferries",
+      "predicate": "operates",
+      "obj": "Sydney Ferries services",
+      "source_page": "New South Wales"
     },
     {
       "kind": "relation",
@@ -1749,6 +4183,20 @@
     },
     {
       "kind": "relation",
+      "subject": "United Technologies Otis",
+      "predicate": "owned_by",
+      "obj": "United Technologies",
+      "source_page": "Otis Worldwide"
+    },
+    {
+      "kind": "relation",
+      "subject": "UNIX System V Release",
+      "predicate": "developed_by",
+      "obj": "AT&T",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
       "subject": "USA Parkway",
       "predicate": "developed_by",
       "obj": "TRIC",
@@ -1756,10 +4204,80 @@
     },
     {
       "kind": "relation",
+      "subject": "Vacuum Oil",
+      "predicate": "owned_by",
+      "obj": "Standard Oil",
+      "source_page": "Jersey Standard"
+    },
+    {
+      "kind": "relation",
+      "subject": "Vector Launch",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "Vector Launch"
+    },
+    {
+      "kind": "relation",
+      "subject": "Vinod Khosla",
+      "predicate": "founded",
+      "obj": "Sun Microsystems",
+      "source_page": "Sun Microsystems"
+    },
+    {
+      "kind": "relation",
+      "subject": "Virgin Mobile Ireland",
+      "predicate": "operated_by",
+      "obj": "Virgin Media Limited",
+      "source_page": "Virgin Mobile"
+    },
+    {
+      "kind": "relation",
+      "subject": "Virgin Mobile Poland",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Virgin Mobile"
+    },
+    {
+      "kind": "relation",
+      "subject": "Volkswagen AG",
+      "predicate": "is_a",
+      "obj": "Internet service provider",
+      "source_page": "Bentley Motors Limited"
+    },
+    {
+      "kind": "relation",
       "subject": "WEF",
       "predicate": "founded_by",
       "obj": "Klaus Schwab",
       "source_page": "World Economic Forum"
+    },
+    {
+      "kind": "relation",
+      "subject": "Willem van Biljon",
+      "predicate": "develops",
+      "obj": "Amazon",
+      "source_page": "Amazon Web Services"
+    },
+    {
+      "kind": "relation",
+      "subject": "World Health Report",
+      "predicate": "published_by",
+      "obj": "The WHO",
+      "source_page": "Health Organization"
+    },
+    {
+      "kind": "relation",
+      "subject": "Wyman - Gordon",
+      "predicate": "owned_by",
+      "obj": "Precision Castparts CorpCorp\u0000",
+      "source_page": "Scaled Composites"
+    },
+    {
+      "kind": "relation",
+      "subject": "X CorpCorp\u0000",
+      "predicate": "is_a",
+      "obj": "Technology company",
+      "source_page": "X Corp"
     },
     {
       "kind": "relation",
@@ -1788,6 +4306,20 @@
       "predicate": "founded_by",
       "obj": "Lon Levin",
       "source_page": "Satellite Radio"
+    },
+    {
+      "kind": "relation",
+      "subject": "Zep Solar",
+      "predicate": "is_a",
+      "obj": "Aerospace manufacturer",
+      "source_page": "Zep Solar"
+    },
+    {
+      "kind": "relation",
+      "subject": "Zep Solar",
+      "predicate": "owned_by",
+      "obj": "SolarCity",
+      "source_page": "Zep Solar"
     },
     {
       "kind": "relation",

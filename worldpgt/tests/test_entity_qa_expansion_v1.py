@@ -283,7 +283,7 @@ def test_source_fact_is_volatile(planner):
 def test_adversarial_and_current_audit(planner, question):
     decision, answer = _answer(planner, question)
     assert decision == "audit", f"{question} -> {answer}"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_type_confusion_with_explicit_support_returns_no(planner):

@@ -1,0 +1,15 @@
+{
+  "title": "Red Planet",
+  "normalized_title": "Red Planet",
+  "pageid": 45913,
+  "revision_id": 1292451743,
+  "timestamp": "2025-05-27T01:11:23Z",
+  "source_url": "https://en.wikipedia.org/wiki/Red_Planet",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Red+Planet",
+  "retrieved_at": "2026-06-22T07:14:09Z",
+  "raw_text": "Red Planet may refer to:\n\nMars, the planet, due to its surface color\nRed Planet (novel) by Robert A. Heinlein (1949)\nRed Planet (miniseries), a 1994 animated adaptation of the novel\nRed Planet (film), a 2000 film starring Val Kilmer\nRed Planet (game), a BattleTech game scenario (ca. 1993)\nThe Red Planet, an album by Rick Wakeman (2020)\nRed Planet Hotels, a regional hotel chain in Indonesia, Japan, the Philippines and Thailand\nRed Planet Mars a 1952 film based on a 1932 play Red Planet\nMission: Red Planet, a 2005 boardgame by Bruno Cathala and Bruno Faidutti\n\"Red Planet\", an episode in the game Angry Birds Space\n\"Red Planet\", a song by Little Mix featuring T-Boz from their debut album, DNA (2012)\n\"Red Planet\", a song by the Canadian indie band Alvvays from their eponymous debut album (2014)\nRed Planet, the source of the J-Jewel in The King of Braves GaoGaiGar",
+  "raw_text_sha256": "c962d54d406b14b3507b7421603ebf037ae751a0d87abe87406df7ae18da393c",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

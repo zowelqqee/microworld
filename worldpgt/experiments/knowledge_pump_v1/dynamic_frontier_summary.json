@@ -1,0 +1,33 @@
+{
+  "dynamic_frontier_initial_total": 131139,
+  "dynamic_frontier_previous_total": 131139,
+  "dynamic_frontier_added_this_run": 1185,
+  "dynamic_frontier_total": 132324,
+  "dynamic_frontier_pages_processed": 15,
+  "dynamic_frontier_candidate_count": 7324,
+  "dynamic_frontier_rejected_already_fetched": 157,
+  "dynamic_frontier_rejected_current_allowlist": 1696,
+  "dynamic_frontier_rejected_hygiene": 1366,
+  "dynamic_frontier_added_sample": [
+    "10th Avenue (IRT Flushing Line)",
+    "125th Street (IND Eighth Avenue Line)",
+    "125th Street (IRT Broadway–Seventh Avenue Line)",
+    "125th Street station (IRT Broadway–Seventh Avenue Line)",
+    "12 (BMT rapid transit service)",
+    "137th Street–City College station",
+    "13 (BMT rapid transit service)",
+    "145th Street (IRT Lenox Avenue Line)",
+    "145th Street station (IND lines)",
+    "145th Street station (IRT Broadway–Seventh Avenue Line)",
+    "14th Street/Sixth Avenue station",
+    "14th Street Tunnel shutdown",
+    "14th Street–Eighth Avenue (New York City Subway)",
+    "1889 World Series",
+    "1921 World Series",
+    "1922 World Series",
+    "1923 World Series",
+    "1928 Times Square derailment",
+    "1936 World Series",
+    "1937 World Series"
+  ]
+}

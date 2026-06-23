@@ -36,6 +36,66 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "BNN Bloomberg",
+      "predicate": "headquartered_in",
+      "object": "Scarborough",
+      "source_page": "BNN Bloomberg",
+      "evidence_text": "BNN Bloomberg is headquartered in Scarborough, Ontario.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "BNN Bloomberg is headquartered in Scarborough, Ontario.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg Beta",
+      "predicate": "headquartered_in",
+      "object": "San Francisco",
+      "source_page": "Bloomberg Beta",
+      "evidence_text": "Bloomberg Beta is headquartered in San Francisco, California, with additional operations in New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg Beta is headquartered in San Francisco, California, with additional operations in New York City.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Boca Chica",
+      "predicate": "developed_by",
+      "object": "Dominican",
+      "source_page": "Boca Chica",
+      "evidence_text": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Compaq",
       "predicate": "owned_by",
       "object": "HP",
@@ -52,6 +112,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "duplicate_alias_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Facilities RSC Energia",
+      "predicate": "headquartered_in",
+      "object": "Korolyov",
+      "source_page": "RSC Energia",
+      "evidence_text": "Facilities RSC Energia is headquartered in Korolyov, Moscow Oblast, where it maintains design, assembly, and testing facilities.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Facilities RSC Energia is headquartered in Korolyov, Moscow Oblast, where it maintains design, assembly, and testing facilities.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
   },
   {
     "item": {
@@ -176,6 +256,106 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "National Guard Bureau",
+      "predicate": "headquartered_in",
+      "object": "Arlington County",
+      "source_page": "National Guard (United States)",
+      "evidence_text": "The National Guard Bureau is headquartered in Arlington County, Virginia, and is a joint activity of the Department of Defense to conduct all the administrative matters pertaining to the Army National Guard and the Air National Guard.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The National Guard Bureau is headquartered in Arlington County, Virginia, and is a joint activity of the Department of Defense to conduct all the administrative matters pertaining to the Army National Guard and the Air National Guard.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NRO",
+      "predicate": "headquartered_in",
+      "object": "Chantilly",
+      "source_page": "National Reconnaissance Office",
+      "evidence_text": "The NRO is headquartered in Chantilly, Virginia, 2 miles (3.2 km) south of Washington Dulles International Airport.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The NRO is headquartered in Chantilly, Virginia, 2 miles (3.2 km) south of Washington Dulles International Airport.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Pegasus",
+      "predicate": "develops",
+      "object": "Pegasus's three Orion solid motors",
+      "source_page": "Orbital Sciences Pegasus",
+      "evidence_text": "The Pegasus's three Orion solid motors were developed by Hercules Aerospace (later Alliant Techsystems) specifically for the Pegasus launcher but using advanced carbon fiber, propellant formulation and case insulation technologies originally developed for the terminated USAF Small ICBM program.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Pegasus's three Orion solid motors were developed by Hercules Aerospace (later Alliant Techsystems) specifically for the Pegasus launcher but using advanced carbon fiber, propellant formulation and case insulation technologies originally developed for the terminated USAF Small ICBM program.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Red Bull GmbH",
+      "predicate": "headquartered_in",
+      "object": "Fuschl am See",
+      "source_page": "Red Bull",
+      "evidence_text": "Red Bull GmbH is headquartered in Fuschl am See, an Austrian village of about 1,500 inhabitants near Salzburg.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Red Bull GmbH is headquartered in Fuschl am See, an Austrian village of about 1,500 inhabitants near Salzburg.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Silver Lake",
+      "predicate": "headquartered_in",
+      "object": "New York City and Menlo Park",
+      "source_page": "Silver Lake Partners",
+      "evidence_text": "Silver Lake is headquartered in New York City and Menlo Park, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Silver Lake is headquartered in New York City and Menlo Park, California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "GAO",
       "predicate": "headquartered_in",
       "object": "Washington",
@@ -190,6 +370,58 @@
       "confidence_label": "pattern_explicit",
       "evidence_span": "The GAO is headquartered in Washington, D.C., and maintains an additional 11 field offices around the country.",
       "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Uniforms for the WAFS",
+      "predicate": "developed_by",
+      "object": "Love",
+      "source_page": "Women Airforce Service Pilots",
+      "evidence_text": "Uniforms for the WAFS were designed by Love and consisted of a gray gabardine jacket with brass buttons and square shoulders.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Uniforms for the WAFS were designed by Love and consisted of a gray gabardine jacket with brass buttons and square shoulders.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The National Guard Bureau",
+      "predicate": "headquartered_in",
+      "object": "Arlington County",
+      "source_page": "National Guard (United States)",
+      "evidence_text": "The National Guard Bureau is headquartered in Arlington County, Virginia, and is a joint activity of the Department of Defense to conduct all the administrative matters pertaining to the Army National Guard and the Air National Guard.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:f2f6a212:dd7de124",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Premier Cruise Line",
+      "predicate": "headquartered_in",
+      "object": "Cape Canaveral",
+      "source_page": "Port Canaveral",
+      "evidence_text": "Prior to its disestablishment in 2000, Premier Cruise Line was headquartered in Cape Canaveral.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:3892d882:9f030655",
+      "pump_source_kind": "fresh_relation"
     },
     "reason": "headquartered_in_quarantine_default"
   },
@@ -228,6 +460,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Silver Lake",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "Silver Lake Partners",
+      "evidence_text": "Silver Lake is headquartered in New York City and Menlo Park, California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:078ddd09:5ec1df02",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Sirius Satellite Radio IncInc\u0000",
       "predicate": "headquartered_in",
       "object": "New York City",
@@ -237,6 +485,22 @@
       "risk": "low",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:95b97c77:1cbb8c9f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Virgin Mobile USA",
+      "predicate": "headquartered_in",
+      "object": "Kansas City",
+      "source_page": "Virgin Mobile",
+      "evidence_text": "Virgin Mobile USA was headquartered in Kansas City, Missouri, and provided service to approximately 6 million customers.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:785437a5:b4862ef2",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "headquartered_in_quarantine_default"

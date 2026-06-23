@@ -410,6 +410,16 @@ class TestGoodDefinitionsPreserved:
         r = _run([item])
         assert _verdict(r, item) == "accept"
 
+    def test_historical_person_role_definition(self):
+        item = _def("Raymond Albert Kroc", "American businessman")
+        r = _run([item])
+        assert _verdict(r, item) == "accept"
+
+    def test_vague_nationality_definition_still_rejected(self):
+        item = _def("The Boring Company", "American infrastructure")
+        r = _run([item])
+        assert _verdict(r, item) == "reject"
+
     def test_canada(self):
         item = _def("Canada", "country in North America")
         r = _run([item])

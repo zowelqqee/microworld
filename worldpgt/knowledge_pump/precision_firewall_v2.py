@@ -307,6 +307,35 @@ _TRUNCATED_DEF_ENDINGS = (
 # Short one-word endings that signal truncation only when the def is short.
 _SHORT_TRUNCATED_ENDS = frozenset({"to", "of", "in", "at", "by", "for", "and", "or"})
 
+_NATIONALITY_PERSON_ROLE_NOUNS = frozenset({
+    "academic",
+    "activist",
+    "architect",
+    "artist",
+    "author",
+    "billionaire",
+    "businessman",
+    "businesswoman",
+    "designer",
+    "diplomat",
+    "economist",
+    "engineer",
+    "entrepreneur",
+    "executive",
+    "filmmaker",
+    "founder",
+    "inventor",
+    "investor",
+    "journalist",
+    "lawyer",
+    "magnate",
+    "philanthropist",
+    "pilot",
+    "politician",
+    "professor",
+    "scientist",
+})
+
 
 def _definition_is_truncated(definition: str) -> bool:
     """True if the definition looks cut off mid-sentence."""
@@ -349,9 +378,14 @@ def _check_definition_v2(item: dict[str, Any]) -> tuple[str, str]:
 
     # --- Definitions that are too vague (single nationality adjective + noun) ---
     ndef = _norm(definition)
-    if re.match(r"^(?:american|british|french|german|chinese|canadian|"
-                r"australian|japanese|korean|indian|spanish|italian|"
-                r"russian)\s+\w{1,12}\s*$", ndef):
+    nationality_match = re.match(
+        r"^(?:american|british|french|german|chinese|canadian|"
+        r"australian|japanese|korean|indian|spanish|italian|"
+        r"russian|scottish|english|austrian|serbian|irish|israeli)"
+        r"\s+(\w{1,20})\s*$",
+        ndef,
+    )
+    if nationality_match and nationality_match.group(1) not in _NATIONALITY_PERSON_ROLE_NOUNS:
         return "reject", "definition_nationality_plus_single_noun"
 
     return "accept", ""

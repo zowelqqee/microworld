@@ -1,0 +1,137 @@
+# SMS
+
+Source: https://en.wikipedia.org/wiki/SMS
+Retrieved at: 2026-06-22T08:49:04Z
+Revision ID: 1359575861
+Raw text SHA256: 6cb521b764c4411870bc94543867b16a92b211aa3721198437bbd95861d13ca6
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Short Message Service (SMS) is a text messaging service component of most telephone, Internet and mobile device systems. It uses standardized communication protocols that let mobile phones exchange short text messages, typically transmitted over cellular networks.
+Developed as part of the GSM standards, and based on the SS7 signalling protocol, SMS rolled out on digital cellular networks starting in 1993 and was originally intended for customers to receive alerts from their carrier/operator. The service allows users to send and receive text messages of up to 160 characters, originally to and from GSM phones and later also CDMA and Digital AMPS; it has since been defined and supported on newer networks, including present-day 5G ones. Using SMS gateways, messages can be transmitted over the Internet through an SMSC, allowing communication to computers, fixed landlines, and satellite. MMS was later introduced as an upgrade to SMS with "picture messaging" capabilities.
+In addition to recreational texting between people, SMS is also used for mobile marketing (a type of direct marketing), two-factor authentication logging-in, televoting, mobile banking (see SMS banking), and for other commercial content. The SMS standard has been hugely popular worldwide as a method of text communication: by the end of 2010, it was the most widely used data application with an estimated 3.5 billion active users, or about 80% of all mobile phone subscribers. More recently, SMS has become increasingly challenged by newer proprietary instant messaging services; Rich Communication Services (RCS) has been designated as the potential open standard successor to SMS.
+
+Developmental history
+SMS technology originated from radio telegraphy in radio memo pagers that used standardized phone protocols. These were defined in 1986 as part of the Global System for Mobile Communications (GSM) series of standards. The first SMS message was sent on 3 December 1992, when Neil Papworth, a test engineer for Sema Group, sent "Merry Christmas" to the Orbitel 901 phone of colleague Richard Jarvis.
+
+Initial concept
+Adding text messaging functionality to mobile devices began in the early 1980s. The first action plan of the CEPT Group GSM was approved in December 1982, requesting that "The services and facilities offered in the public switched telephone networks and public data networks ... should be available in the mobile system." This plan included the exchange of text messages either directly between mobile stations, or transmitted via message handling systems in use at that time.
+The SMS concept was developed in the Franco-German GSM cooperation in 1984 by Friedhelm Hillebrand and Bernard Ghillebaert. The GSM is optimized for telephony, since this was identified as its main application. The key idea for SMS was to use this telephone-optimized system, and to transport messages on the signalling paths needed to control the telephone traffic during periods when no signalling traffic existed. In this way, unused resources in the system could be used to transport messages at minimal cost. However, it was necessary to limit the length of the messages to 128 bytes (later improved to 160 seven-bit characters) so that the messages could fit into the existing signalling formats. Based on his personal observations and on analysis of the typical lengths of postcard and Telex messages, Hillebrand argued that 160 characters was sufficient for most brief communications.
+SMS could be implemented in every mobile station by updating its software. Hence, a large base of SMS-capable terminals and networks existed when people began to use SMS. A new network element required was a specialized short message service centre, and enhancements were required to the radio capacity and network transport infrastructure to accommodate growing SMS traffic.
+
+Early development
+The technical development of SMS was a multinational collaboration supporting the framework of standards bodies.  Through these organizations the technology was made freely available to the whole world.
+The first proposal which initiated the development of SMS was made by a contribution of Germany and France in the GSM group meeting in February 1985 in Oslo. This proposal was further elaborated in GSM subgroup WP1 Services (Chairman Martine Alvernhe, France Telecom) based on a contribution from Germany. There were also initial discussions in the subgroup WP3 network aspects chaired by Jan Audestad (Telenor). The result was approved by the main GSM group in a June 1985 document which was distributed to industry. The input documents on SMS had been prepared by Friedhelm Hillebrand of Deutsche Telekom, with contributions from Bernard Ghillebaert of France Télécom. The definition that Friedhelm Hillebrand and Bernard Ghillebaert brought into GSM called for the provision of a message transmission service of alphanumeric messages to mobile users "with acknowledgement capabilities". The last three words transformed SMS into something much more useful than the electronic paging services used at the time that some in GSM might have had in mind.
+SMS was considered in the main GSM group as a possible service for the new digital cellular system. In GSM document "Services and Facilities to be provided in the GSM System," both mobile-originated and mobile-terminated short messages appear on the table of GSM teleservices.
+The discussions on the GSM services were concluded in the recommendation GSM 02.03 "TeleServices supported by a GSM PLMN." Here a rudimentary description of the three services was given:
+
+Short message mobile-terminated (SMS-MT)/ Point-to-Point: the ability of a network to transmit a Short Message to a mobile phone. The message can be sent by phone or by a software application.
+Short message mobile-originated (SMS-MO)/ Point-to-Point: the ability of a network to transmit a Short Message sent by a mobile phone. The message can be sent to a phone or to a software application.
+Short message cell broadcast.
+WP4 created a Drafting Group Message Handling (DGMH), which was responsible for the specification of SMS. Finn Trosby of Telenor chaired the draft group through its first three years, in which the design of SMS was established. DGMH had five to eight participants, and Finn Trosby mentions as major contributors Kevin Holley, Eija Altonen, Didier Luizard and Alan Cox. The first action plan mentions for the first time the Technical Specification 03.40 "Technical Realisation of the Short Message Service". Responsible editor was Finn Trosby. The first and very rudimentary draft of the technical specification was completed in November 1987. However, drafts useful for the manufacturers followed at a later stage in the period. A comprehensive description of the work in this period is given in.
+
+Early implementations
+The first SMS message was sent over the Vodafone GSM network in the United Kingdom on 3 December 1992, from Neil Papworth of Sema Group (now Mavenir Systems) using a personal computer to Richard Jarvis of Vodafone using an Orbitel 901 handset. The text of the message was "Merry Christmas."
+The first commercial deployment of a short message service center (SMSC) was by Aldiscon part of Logica (now part of CGI) with Telia (now TeliaSonera) in Sweden in 1993, followed by Fleet Call (now Nextel) in the US, Telenor in Norway and BT Cellnet (now O2 UK).
+The first commercially sold SMS service was offered to consumers, as a person-to-person text messaging service by Radiolinja (now part of Elisa) in Finland in 1993.  Most early GSM mobile phone handsets did not support the ability to send SMS text messages, and Nokia was the only handset manufacturer whose total GSM phone line in 1993 supported user-sending of SMS text messages. According to Matti Makkonen, an engineer at Nokia at the time, the Nokia 2010, which was released in January 1994, was the first mobile phone to support composing SMSes easily.
+
+Growth and adoption
+Initial growth was slow, with customers in 1995 sending on average only 0.4 messages per GSM customer per month. Initially, networks in the UK only allowed customers to send messages to other users on the same network, limiting the usefulness of the service. This restriction was lifted in 1999. Over time, this issue was eliminated by switch billing instead of billing at the SMSC and by new features within SMSCs to allow blocking of foreign mobile users sending messages through it. By the end of 2000, the average number of messages reached 35 per user per month, and on Christmas Day 2006, over 205 million messages were sent in the UK alone. SMS had become a social phenomenon in Finland among teens and youngsters by 1999. SMS traffic across Europe reached 4 billion messages as of January 2000.
+SMS became extremely popular in the Philippines by 2001 and the country was dubbed the "texting capital of the world", partly helped by large numbers of free text messages offered by the mobile operators in monthly subscriptions. SMS adoption was limited to parts of Europe and Asia during these earlier years, with U.S. adoption being low partly due to incompatible networks and cheap voice calls relative to other countries. The Economist wrote in 2003, as noted by an analyst:
+
+This is also backed by the fact that as of 2003, American internet users were spending on average five times more time online than Europeans, and many poorer countries in Europe and other regions around the world had significantly lower rates of internet access compared to the United States at the time (see digital divide), hence making SMS more accessible.
+
+Contemporary usage
+
+SMS has become a large commercial industry, earning $114.6 billion globally in 2010. In the year 2002, 366 billion SMS text messages were sent globally, a number that rose to 6.1 trillion in 2010. In 2015, the actual cost of sending an SMS in Australia was found to be $0.00016 per SMS. The global SMS messaging business was estimated to be worth over US$240 billion in 2013, accounting for almost half of all revenue generated by mobile messaging.
+The popularity of SMS also led to the spontaneous creation of the so-called 'SMS language' phenomenon, where words are shortened in order to deal with the 160 character limit of SMS messages. Usage of SMS for mobile data services became increasingly prominent in the early 2000s due to its ubiquity, reliability, and cold reception of the newer WAP standard. (see Premium-rated services below). In the early and mid 2000s, Multimedia Messaging Service (MMS) was developed as an improved version of SMS that supports sending of pictures and video.
+SMS has been increasingly challenged by Internet Protocol-based messaging services with additional features for modern mobile devices, such as Facebook Messenger, WhatsApp, Telegram, or WeChat. These services run independently from mobile network operators and typically don't provide cross-platform messaging capabilities like SMS or email does. For example, between 2010 and 2022, SMS telecom revenue in India dropped 94 percent, while "revenue share per user from data usage...grew over 10 times.", although in some regions such as North America SMS continues to be used by over 80 percent of the population as of 2023. In order to create a modern successor to SMS that isn't run by a single company and is fully interoperable between devices, industry figures have created the RCS 'Universal Profile' initiative. It was supported by Apple when iOS 18 came out in 2024, which will mean that virtually all new mobile phones (iOS and Android platforms) will have RCS texting capabilities, though this may also depend on if the network operator supports it.
+
+Premium-rated services
+
+SMS may be used to provide premium rate services to subscribers of a network. Today, they are also used to pay smaller payments online—for example, for file-sharing services, in mobile application stores, or VIP section entrance. Outside the online world, one can buy a bus ticket or beverages.
+
+Other uses
+Additionally, an intermediary service can facilitate a text-to-voice conversion to be sent to landlines.
+In 2014, Caktus Group developed the world's first SMS-based voter registration system in Libya. As of February 2015 more than 1.5 million people have registered using that system, providing Libyan voters with unprecedented access to the democratic process.
+
+Flash SMS
+A Flash SMS is a type of SMS that appears directly on the main screen without user interaction and is not automatically stored in the inbox. It can be useful in emergencies, such as a fire alarm or cases of confidentiality, as in delivering one-time passwords.
+
+Silent SMS
+In 2010, almost half a million silent SMS messages were sent by the German federal police, customs and the federal domestic intelligence service Verfassungsschutz. These silent messages, also known as silent TMS, stealth SMS, stealth ping or Short Message Type 0, are used to locate a person and thus to create a complete movement profile. They do not show up on a display, nor trigger any acoustical signal when received.  Their primary purpose was to deliver special services of the network operator to any cell phone.
+
+SMS bombs
+In March 2001, Dutch police in Amsterdam attempted to fight increasing cell phone theft by sending an SMS every three minutes to a phone that has been reported stolen, with the message "This handset was nicked, buying or selling is a crime. The police."
+
+Technical details
+
+GSM
+
+The Short Message Service—Point to Point (SMS-PP)—was originally defined in GSM recommendation 03.40, which is now maintained in 3GPP as TS 23.040. GSM 03.41 (now 3GPP TS 23.041) defines the Short Message Service—Cell Broadcast (SMS-CB), which allows messages (advertising, public information, etc.) to be broadcast to all mobile users in a specified geographical area. Cell broadcast is the technology behind Wireless Emergency Alerts in the US which is used for public safety messages and AMBER alerts, and similar public safety messages in other countries. These messages are similar to SMS messages.
+Messages are sent to a short message service center (SMSC), which provides a "store and forward" mechanism. It attempts to send messages to the SMSC's recipients. If a recipient is not reachable, the SMSC queues the message for later retry. Some SMSCs also provide a "forward and forget" option where transmission is tried only once. Both mobile terminated (MT, for messages sent to a mobile handset) and mobile originating (MO, for those sent from the mobile handset) operations are supported. Message delivery is "best effort", so there are no guarantees that a message will actually be delivered to its recipient, but delay or complete loss of a message is uncommon, typically affecting less than 5 percent of messages. Some providers allow users to request delivery reports, either via the SMS settings of most modern phones, or by prefixing each message with *0#.
+
+Message size
+Transmission of short messages between the SMSC and the handset is done whenever using the Mobile Application Part (MAP) of the SS7 protocol.  Messages are sent with the MAP MO- and MT-ForwardSM operations, whose payload length is limited by the constraints of the signaling protocol to precisely 140 bytes (140 bytes × 8 bits / byte = 1120 bits).
+Short messages can be encoded using a variety of alphabets: the default GSM 7-bit alphabet, the 8-bit data alphabet, and the 16-bit UCS-2 or UTF-16 alphabets. Depending on which alphabet the subscriber has configured in the handset, this leads to the maximum individual short message sizes of 160 7-bit characters, 140 8-bit characters, or 70 16-bit characters. GSM 7-bit alphabet support is mandatory for GSM handsets and network elements.
+Larger content (concatenated SMS, multipart or segmented SMS, or "long SMS") can be sent using multiple messages, in which case each message will start with a User Data Header (UDH) containing segmentation information. Since UDH is part of the payload, the number of available characters per segment is lower: 153 for 7-bit encoding, 134 for 8-bit encoding and 67 for 16-bit encoding. The receiving handset is then responsible for reassembling the message and presenting it to the user as one long message. While the standard theoretically permits up to 255 segments, 10 segments is the practical maximum with some carriers, and long messages are often billed as equivalent to multiple SMS messages. In some cases 127 segments are supported.
+
+Interconnectivity with other networks
+On some carriers non-subscribers can send messages to a subscriber's phone using an Email-to-SMS gateway. Additionally, many carriers, including AT&T Mobility, T-Mobile USA, Sprint, and Verizon Wireless, offer the ability to do this through their respective websites.
+For example, an AT&T subscriber whose phone number was 555-555-5555 would receive emails addressed to 5555555555@txt.att.net as text messages. Subscribers can easily reply to these SMS messages, and the SMS reply is sent back to the original email address. Sending email to SMS is free for the sender, but the recipient is subject to the standard delivery charges. Only the first 160 characters of an email message can be delivered to a phone, and only 160 characters can be sent from a phone.  However, longer messages may be broken up into multiple texts, depending upon the telephone service provider.
+Text-enabled fixed-line handsets are required to receive messages in text format. However, messages can be delivered to non enabled phones using text-to-speech conversion.
+Short messages can send binary content such as ringtones or logos, as well as Over-the-air programming (OTA) or configuration data. Such uses are a vendor-specific extension of the GSM specification and there are multiple competing standards, although Nokia's Smart Messaging is common.
+GPRS is offered by smaller telco players as a route of sending SMS text to reduce the cost of SMS texting internationally.
+
+Support in other architectures
+The Mobile Application Part (MAP) of the SS7 protocol included support for the transport of Short Messages through the Core Network from its inception. MAP Phase 2 expanded support for SMS by introducing a separate operation code for Mobile Terminated Short Message transport.
+From 3GPP Releases 99 and 4 onwards, CAMEL Phase 3 introduced the ability for the Intelligent Network (IN) to control aspects of the Mobile Originated Short Message Service, while CAMEL Phase 4, as part of 3GPP Release 5 and onwards, provides the IN with the ability to control the Mobile Terminated service.
+
+AT commands
+Many mobile and satellite transceiver units support the sending and receiving of SMS using an extended version of the Hayes command set. The extensions were standardised as part of the GSM Standards and extended as part of the 3GPP standards process.
+The connection between the terminal equipment and the transceiver can be realized with a serial cable (e.g., USB), a Bluetooth link, an infrared link, etc. Common AT commands include AT+CMGS (send message), AT+CMSS (send message from storage), AT+CMGL (list messages) and AT+CMGR (read message).
+However, not all modern devices support receiving of messages if the message storage (for instance the device's internal memory) is not accessible using AT commands.
+
+Premium-rated short messages
+An alternative to inbound SMS is based on long numbers (international number format, such as "+44 762 480 5000"), which can be used in place of short codes for SMS reception in several applications, such as TV voting, product promotions and campaigns. Long numbers work internationally, allow businesses to use their own numbers, rather than short codes, which are usually shared across many brands. Additionally, long numbers are nonpremium inbound numbers.
+
+Threaded SMS
+Threaded SMS is a visual styling orientation of SMS message history that arranges messages to and from a contact in chronological order on a single screen. It was first invented by a developer working to implement the SMS client for the BlackBerry, who was looking to make use of the blank screen left below the message on a device with a larger screen capable of displaying far more than the usual 160 characters, and was inspired by threaded Reply conversations in email.
+Visually, this style of representation provides a back-and-forth chat-like history for each individual contact.  Hierarchical-threading at the conversation-level (as typical in blogs and online messaging boards) is not widely supported by SMS messaging clients.  This limitation is due to the fact that there is no session identifier or subject-line passed back and forth between sent and received messages in the header data (as specified by SMS protocol) from which the client device can properly thread an incoming message to a specific dialogue, or even to a specific message within a dialogue.
+Session-tracking is used to extend the functionality of many Instant Messenger (IM) applications such that they are able to communicate over two-way dialogues with the much larger SMS user-base.
+
+Application-to-person (A2P) SMS
+While SMS reached its popularity as a person-to-person messaging, another type of SMS became popular by 2017: application-to-person (A2P) messaging. A2P is a type of SMS sent from a subscriber to an application or sent from an application to a subscriber. It is commonly used by businesses, such as banks, e-gaming, logistic companies, e-commerce, to send SMS messages from their systems to their customers.
+In the US, carriers have traditionally preferred that A2P messages be sent using a short code rather than a standard long code. In 2021, US carriers introduced a new service called A2P 10DLC, supporting the used of 10-digit long codes for A2P messages. In the United Kingdom A2P messages can be sent with a dynamic 11 character sender ID; however, short codes are used for OPTOUT commands.
+
+Satellite phone networks
+While early Iridium handsets only support incoming SMS, later models can also send messages. The price per message varies for different networks. Unlike some mobile phone networks, there is no extra charge for sending international SMS or to send one to a different satellite phone network. SMS can sometimes be sent from areas where the signal is too poor to make a voice call.
+Satellite phone networks usually have web-based or email-based SMS portals where one can send free SMS to phones on that particular network.
+
+Unreliability
+Unlike dedicated texting systems like the Simple Network Paging Protocol and Motorola's ReFLEX protocol, SMS message delivery is not guaranteed, and many implementations provide no mechanism through which a sender can determine whether an SMS message has been delivered in a timely manner. SMS messages are generally treated as lower-priority traffic than voice, and various studies have shown that around 1% to 5% of messages are lost entirely, even during normal operation conditions, and others may not be delivered until long after their relevance has passed. The use of SMS as an emergency notification service in particular has been questioned.
+
+Vulnerabilities
+
+The Global Service for Mobile communications (GSM), with the greatest worldwide number of users, succumbs to several security vulnerabilities. In the GSM, only the airway traffic between the Mobile Station (MS) and the Base Transceiver Station (BTS) is optionally encrypted with a weak and broken stream cipher (A5/1 or A5/2). The authentication is unilateral and also vulnerable. There are also many other security vulnerabilities and shortcomings. Such vulnerabilities are inherent to SMS as one of the superior and well-tried services with a global availability in the GSM networks. SMS messaging has some extra security vulnerabilities due to its store-and-forward feature, and the problem of fake SMS that can be conducted via the Internet. When a user is roaming, SMS content passes through different networks, perhaps including the Internet, and is exposed to various vulnerabilities and attacks. Another concern arises when an adversary gets access to a phone and reads the previous unprotected messages.
+In October 2005, researchers from the Pennsylvania State University published an analysis of vulnerabilities in SMS-capable cellular networks. The researchers speculated that attackers might exploit the open functionality of these networks to disrupt them or cause them to fail, possibly on a nationwide scale.
+
+SMS spoofing
+
+The GSM industry has identified a number of potential fraud attacks on mobile operators that can be delivered via abuse of SMS messaging services. One threat is SMS spoofing, which occurs when a fraudster manipulates address information in order to impersonate a user that has roamed onto a foreign network and is submitting messages to the home network. Frequently, these messages are addressed to destinations outside the home network—with the home SMSC essentially being "hijacked" to send messages into other networks.
+The only sure way of detecting and blocking spoofed messages is to screen incoming mobile-originated messages to verify that the sender is a valid subscriber and that the message is coming from a valid and correct location. This can be implemented by adding an intelligent routing function to the network that can query originating subscriber details from the home location register (HLR) before the message is submitted for delivery. This kind of intelligent routing function is beyond the capabilities of legacy messaging infrastructure.
+
+Limitation
+In an effort to limit telemarketers who had taken to bombarding users with hordes of unsolicited messages, India introduced new regulations in September 2011, including a cap of 3,000 SMS messages per subscriber per month, or an average of 100 per subscriber per day.  Due to representations received from some of the service providers and consumers, TRAI (Telecom Regulatory Authority of India) has raised this limit to 200 SMS messages per SIM per day in case of prepaid services, and up to 6,000 SMS messages per SIM per month in case of postpaid services with effect from November 1, 2011. However, it was ruled unconstitutional by the Delhi high court, but there are some limitations.
+
+See also
+
+Notes
+
+References
+
+External links
+
+3GPP – the organization that maintains the SMS specification
+ISO Standards (In Zip file format)
+GSM 03.38 to Unicode – how the GSM 7-bit default alphabet characters map into Unicode

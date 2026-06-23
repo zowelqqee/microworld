@@ -1,0 +1,180 @@
+# Geneva Conventions
+
+Source: https://en.wikipedia.org/wiki/Geneva_Conventions
+Retrieved at: 2026-06-22T09:36:01Z
+Revision ID: 1358379876
+Raw text SHA256: 8572144321b87bceff89ed20b1ce5279bcd313e6ef602553a9f0da4e37da74f1
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Geneva Conventions are a series of four international treaties (1949) and their three additional protocols that form the core of international humanitarian law. They establish legal standards for humanitarian treatment of non-combatants in war and protect people who are not or are no longer actively taking part in hostilities. This category includes not only civilians and civilian populations but also former combatants, such as prisoners of war and fighters rendered hors de combat due to injury, illness, shipwreck or those who have surrendered. The four 1949 Geneva Conventions, adopted in response to the inhumanities of World War II, updated and added to previous Geneva Conventions (1864, 1906, 1929). The 1949 Geneva Conventions address the treatment of sick and wounded soldiers in the field ("Geneva Convention I"), wounded, sick and shipwrecked soldiers at sea (“Geneva Convention II”), prisoners of war (“Geneva Convention III”), and civilians in time of war (“Geneva Convention IV”). In 1977, these rules were updated by two Additional Protocols, the first concerning international armed conflicts (“Additional Protocol I”) and the second, non-international armed conflicts (“Additional Protocol II”).
+Aside from the UN Charter, the Geneva Conventions are among the most widely ratified international agreements. The four 1949 Geneva Conventions were ratified, in their entirety or with reservations, by 196 countries. Much of the international humanitarian law contained in the Geneva Conventions has become customary international law, and therefore would apply to all states and non-state armed groups, even those that are not a party to the Geneva Conventions. The legal obligations created under the Geneva Conventions are somewhat different from other international treaties in that a breach of the Geneva Conventions by one party does not furnish a directly affected party with the option to cease complying with its treaty obligations.
+The Geneva Conventions define the basic rights and protections afforded to those non-combatants who fulfill the criteria of being protected persons. The Geneva Conventions define the rights of civilians, prisoners of war, and military personnel; establish protections for the wounded, sick, and shipwrecked; and provide humanitarian protections for civilians in and around war zones. The use of conventional weapons in wartime is addressed by the Hague Conventions of 1899 and 1907 and the 1980 Convention on Certain Conventional Weapons, while the use of biological and chemical weapons in international armed conflicts is addressed by the 1925 Geneva Protocol. Violations of these earlier conventions constituted some of the grounds for the judgments of the Nuremberg, Tokyo, and other war crimes tribunals.
+Much of the 1949 Geneva Conventions, “have come to be recognized as customary law; hence they apply regardless of whether parties to the conflicts have ratified” the conventions.
+
+History
+
+The Swiss businessman Henry Dunant went to visit wounded soldiers after the Battle of Solferino in 1859. He was both outraged and shocked by the lack of facilities, personnel, and medical aid available to help these soldiers. As a result, he published his book, A Memory of Solferino, in 1862, on the horrors of war. His wartime experiences inspired Dunant to propose:
+
+A permanent relief agency for humanitarian aid in times of war
+A government treaty recognizing the neutrality of the agency and allowing it to provide aid in a war zone
+The former proposal led to the establishment of the International Committee of the Red Cross (ICRC) in Geneva. The latter led to the 1864 Geneva Convention, which was the first codified international treaty that covered the sick and wounded soldiers on the battlefield. On 22 August 1864, the Swiss government invited the governments of all European countries, as well as the United States, Brazil, and Mexico, to attend an official diplomatic conference. Overall, 16 countries sent a total of 26 delegates to Geneva. On 22 August 1864, the conference adopted the first Geneva Convention "for the Amelioration of the Condition of the Wounded in Armies in the Field.” Representatives of 12 states and kingdoms signed the convention:
+
+For both of these accomplishments, Henry Dunant became corecipient of the first Nobel Peace Prize in 1901.
+On 20 October 1868 the first unsuccessful attempt to expand the 1864 treaty was undertaken. With the 'Additional Articles relating to the Condition of the Wounded in War' an attempt was initiated to clarify some rules of the 1864 convention and to extend them to maritime warfare. The Articles were signed but were only ratified by the Netherlands and the United States of America. The Netherlands later withdrew their ratification. The protection of the victims of maritime warfare was later realized by the third Hague Convention of 1899 and the tenth Hague Convention of 1907.
+In 1906, thirty-five states attended a conference convened by the Swiss government. On 6 July 1906 it resulted in the adoption of the "Convention for the Amelioration of the Condition of the Wounded and Sick in Armies in the Field", which improved and supplemented, for the first time, the 1864 Convention. It remained in force until 1970 when Costa Rica acceded to the 1949 Geneva Conventions.
+The 1929 conference yielded two conventions that were signed on 27 July 1929. One, the "Convention for the Amelioration of the Condition of the Wounded and Sick in Armies in the Field," was the third version to replace the original convention of 1864. The other was adopted after experiences in World War I had shown the deficiencies in the protection of prisoners of war under the Hague Conventions of 1899 and 1907. The "Convention relative to the Treatment of Prisoners of War" was not to replace these earlier conventions signed at The Hague; rather it supplemented them.
+There was considerable debate over whether the Geneva Convention should prohibit indiscriminate forms of warfare, such as aerial bombings, nuclear bombings and starvation, but no agreement was reached on those forms of violence.
+Inspired by the wave of humanitarian and pacifistic enthusiasm following World War II and the outrage towards the war crimes disclosed by the Nuremberg and Tokyo trials, a series of conferences were held in 1949 reaffirming, expanding and updating the prior Geneva and Hague Conventions. It yielded four distinct conventions:
+
+The First Geneva Convention "for the Amelioration of the Condition of the Wounded and Sick in Armed Forces in the Field" was the fourth update of the original 1864 convention and replaced the 1929 convention on the same subject matter.
+The Second Geneva Convention "for the Amelioration of the Condition of Wounded, Sick and Shipwrecked Members of Armed Forces at Sea" replaced the Hague Convention (X) of 1907. It was the first Geneva Convention on the protection of the victims of maritime warfare and mimicked the structure and provisions of the First Geneva Convention.
+The Third Geneva Convention "relative to the Treatment of Prisoners of War" replaced the 1929 Geneva Convention that dealt with prisoners of war.
+The Fourth Geneva Convention "relative to the Protection of Civilian Persons in Time of War" was the first Geneva Convention not to deal with combatants. The 1899 and 1907 Hague Conventions had already contained some provisions on the protection of civilians and occupied territory. Article 154 specifically provides that the Fourth Geneva Convention is supplementary to these provisions in the Hague Conventions.
+
+Despite the length of these documents, they were found over time to be incomplete. The nature of armed conflicts had changed with the beginning of the Cold War era, leading many to believe that the 1949 Geneva Conventions were addressing a largely extinct reality: on the one hand, most armed conflicts had become internal, or civil wars, while on the other, most wars had become increasingly asymmetric. Modern armed conflicts were inflicting an increasingly higher toll on civilians, which brought the need to provide civilian persons and objects with tangible protections in time of combat, bringing a much needed update to the Hague Conventions of 1899 and 1907.
+In light of these developments, two Protocols were adopted in 1977 that extended the terms of the 1949 Conventions with additional protections. In 2005, a third brief Protocol was added establishing an additional protective sign for medical services, the Red Crystal, as an alternative to the ubiquitous Red Cross and Red Crescent emblems, for those countries that find them objectionable.
+
+Commentaries
+The Geneva Conventions of 12 August 1949: Commentary (The Commentaries) is a series of four volumes of books published between 1952 and 1958 containing commentaries to each of the four Geneva Conventions. The series was edited by Jean Pictet who was the vice-president of the ICRC. The Commentaries are often relied upon to provide authoritative interpretation of the articles.
+
+Contents
+
+The Geneva Conventions are rules that apply only in times of armed conflict and seek to protect people who are not or are no longer taking part in hostilities.
+The First Geneva Convention dealt with the treatment of wounded and sick armed forces in the field. The Second Geneva Convention dealt with the sick, wounded, and shipwrecked members of armed forces at sea. The Third Geneva Convention dealt with the treatment of prisoners of war during times of conflict. The Fourth Geneva Convention dealt with the treatment of civilians and their protection during wartime.
+Individuals who fulfill the criteria of protected persons in international armed conflicts are protected by the 1949 conventions. Those not listed as protected persons in such conflicts are instead protected by international human rights law and general treaties concerning the legal status of aliens in belligerent nations.
+In addition, there are provisions such as Article 15 of the First Geneva Convention which provides that, "whenever circumstances permit, an armistice or a suspension of fire shall be arranged, or local arrangements made, to permit the removal, exchange and transport of the wounded left on the battlefield.” Another provision, such as Article 16 of the Fourth Geneva Convention, states that, “as far as military considerations allow, each Party to the conflict shall facilitate the steps taken to search for the killed and wounded, to assist the shipwrecked and other persons exposed to grave danger, and to protect them against pillage and ill-treatment.”
+
+Geneva Conventions of 1949
+In international law and diplomacy the term convention refers to an international agreement, or treaty.
+
+First Geneva Convention "for the Amelioration of the Condition of the Wounded and Sick in Armed Forces in the Field" (first adopted in 1864, revised in 1906, 1929 and 1949);
+Second Geneva Convention "for the Amelioration of the Condition of Wounded, Sick and Shipwrecked Members of Armed Forces at Sea" (first adopted in 1949, successor of the Hague Convention (X) of 1907);
+Third Geneva Convention "relative to the Treatment of Prisoners of War" (first adopted in 1929, last revision in 1949);
+Fourth Geneva Convention "relative to the Protection of Civilian Persons in Time of War" (first adopted in 1949 based on parts of the Hague Conventions (II and IV) of 1899 and 1907).
+With two Geneva Conventions revised and adopted and two added in 1949, the whole is referred to as the "Geneva Conventions of 1949" or simply the "Geneva Conventions". Usually only the Geneva Conventions of 1949 are referred to as First, Second, Third or Fourth Geneva Conventions. The treaties of 1949 were ratified, in whole or with reservations, by 196 countries.
+
+Protocols Additional to the 1949 Geneva Conventions
+The 1949 Geneva Conventions have been amended with three optional protocols:
+
+Protocol I (1977) relating to the Protection of Victims of International Armed Conflicts;
+Protocol II (1977) relating to the Protection of Victims of Non-International Armed Conflicts;
+Protocol III (2005) relating to the Adoption of an Additional Distinctive Emblem.
+
+Application
+The Geneva Conventions apply at times of war and armed conflict to governments who have ratified its terms. The details of applicability are spelled out in Common Articles 2 and 3.
+
+Common Article 2 relating to international armed conflict (IAC)
+Common Article 2 states that the Geneva Conventions apply to all the cases of international armed conflict (IAC), where at least one of the warring nations has ratified the Conventions. Primarily:
+
+The Conventions apply to all cases of declared war between signatory nations. This is the original sense of applicability, which predates the 1949 version.
+The Conventions apply to all cases of armed conflict between two or more signatory nations. This language was added in 1949 to accommodate situations that have all the characteristics of war without the existence of a formal declaration of war, such as a police action.
+The Conventions apply to a signatory nation even if the opposing nation is not a signatory, but only if the opposing nation "accepts and applies the provisions" of the Conventions.
+Article 1 of Protocol I to the Geneva Conventions further clarifies that armed conflict against colonial domination and foreign occupation also qualifies as an international conflict. When the criteria of international armed conflict have been met, the full protections of the Conventions are considered to apply.
+Common Article 2 makes it clear that IHL applies not only to declared wars but also to all other armed conflicts.
+
+Common Article 3 relating to non-international armed conflict (NIAC)
+Common Article 3 states that the certain minimum rules of war apply to armed conflicts "not of an international character." The International Committee of the Red Cross has explained that this language describes non-international armed conflict (NIAC) "where at least one Party is not a State." For example, it would apply to conflicts between state forces and non-state actors (NSAs), or between two NSAs, or to other conflicts that have all the characteristics of war, whether carried out within the confines of one country or not.
+There are two criteria to distinguish non-international armed conflicts from lower forms of violence. The level of violence has to be of certain intensity, for example when the state cannot contain the situation with regular police forces. Also, involved non-state groups need to have a certain level of organization, like a military command structure.
+The other Geneva Conventions are not applicable in this situation but only the provisions contained within Article 3, and additionally within the language of Protocol II. The rationale for the limitation is to avoid conflict with the rights of Sovereign States that were not part of the treaties. When the provisions of this article apply, it states that:
+
+Persons taking no active part in the hostilities, including members of armed forces who have laid down their arms and those placed hors de combat by sickness, wounds, detention, or any other cause, shall in all circumstances be treated humanely, without any adverse distinction founded on race, colour, religion or faith, sex, birth or wealth, or any other similar criteria. To this end, the following acts are and shall remain prohibited at any time and in any place whatsoever with respect to the above-mentioned persons:
+violence to life and person, in particular murder of all kinds, mutilation, cruel treatment and torture;
+taking of hostages;
+outrages upon dignity, in particular humiliating and degrading treatment; and
+the passing of sentences and the carrying out of executions without previous judgment pronounced by a regularly constituted court, affording all the judicial guarantees which are recognized as indispensable by civilized peoples.
+The wounded and sick shall be collected and cared for.
+During the negotiation of the Geneva Conventions, France and Britain were initially staunchly opposed to Common Article 3. However, to save face during negotiations and make strategic concessions, France and Britain deliberately introduced ambiguous language in the text of Common Article 3 that made it easy for states to avoid the obligations of the rule. As a consequence, Common Article 3 only concerns with humane treatment and does not deal with methods and means of hostilities, such as bombings committed by non-state armed groups or state forces against civilian targets in the Algerian War and the Troubles.
+On 7 February 2002, President Bush adopted the view that Common Article 3 did not protect al Qaeda prisoners because the United States-al Qaeda conflict was not "not of an international character." The Supreme Court of the United States invalidated the Bush Administration view of Common Article 3, in Hamdan v. Rumsfeld, by ruling that Common Article Three of the Geneva Conventions applies to detainees in the "War on Terror", and that the Guantanamo military commission process used to try these suspects was in violation of U.S. and international law. In response to Hamdan, Congress passed the Military Commissions Act of 2006, which President Bush signed into law on 17 October 2006. Like the Military Commissions Act of 2006, its successor the Military Commissions Act of 2009 explicitly forbids the invocation of the Geneva Conventions "as a basis for a private right of action."
+
+... Common Article 3 continues the conventional practice (reflected in both the 'Lieber' and 'The Hague' provisions) of according humanitarian protections only to 'belligerents' who defer to the laws and customs of war: not to 'insurrectionists' who defy these norms from the very outset of hostilities. Observance of the rules of warfare is what elevates an 'insurrectionist' to the legally cognizable status of 'belligerent' under the 'International law of war'; nothing short of such an 'observance' suffices to effect this transformation from the infra legal to legal.
+
+IAC or NIAC classification
+Whether the conflict is an IAC or a NIAC or both depends on the nature and circumstances of the situation. Since there is a general prohibition against the use of force between States (as is reflected within article 2(4) of the United Nations Charter) with respect to Common Article 2, it is generally presumed that any use of such military force which is governed by international humanitarian law is attributable to deliberate belligerent intent.
+Regarding Common Article 3, the International Committee of the Red Cross in its 2016 commentary stated the provision includes not just a conflict between territorial government forces and NSAs or NSAs themselves, but also a foreign military intervention against a NSA only if the territorial state consents to such intervention in its territory. Should the intervening country do so without the consent of the territorial state or in support of a NSA against that state, then Common Article 2 applies. For example, U.S. intervention in the Syrian civil war became both an IAC with Syria and a NIAC with the Islamic State because the U.S. intervened in Syrian territory without the former's consent. On the other hand, Russia intervened in Syrian territory against the Free Syrian Army upon invitation by Syria, making Russia's participation subject only to Common Article 3 and therefore Protocol II (which Russia ratified on 29 September 1989).
+The U.S.-led NATO invasion of Afghanistan from October 7 to December 17, 2001, was initially an IAC because it waged war against the Islamic Emirate of Afghanistan under Taliban rule. Once the new Karzai administration was established and recognized internationally, the conflict changed from an IAC to a NIAC, with NATO troops under International Security Assistance Force (ISAF) and Resolute Support Mission (RSM) auspices assisting the Islamic Republic of Afghanistan with its consent in battling Taliban insurgents. In contrast, the Soviet–Afghan War was an IAC because the Soviet Union invaded the Democratic Republic of Afghanistan (DRA) to remove Afghan communist leader Hafizullah Amin from power, then installed puppet leader Babrak Karmal, who "invited" Soviet troops to intervene against the Afghan mujahideen fighters.
+While non-state armed groups are automatically presumed to engage in NIACs, they also can cross into the threshold of an IAC. The 2020 ICRC commentary on the Third Geneva Convention requires two elements for this classification: "the group must in fact fight on behalf of that Party" and "that Party must accept both the fighting role of the group and the fact that the fighting is done on its behalf." It further states that "[w]here a Party to a conflict has overall control over the militia, volunteer corps or organized resistance movement that has a fighting function and fights on the State's behalf, a relationship of belonging for the purposes of Article 4A(2) exists." For example, the Viet Cong was under effective control and direction by North Vietnam during the Vietnam War, therefore Common Article 2 solely applied to the conflict.
+
+Grave breaches of the Geneva Conventions
+Not all violations of the treaty are treated equally. The most serious crimes are termed grave breaches and provide a legal definition of a war crime. Grave breaches of the Third and Fourth Geneva Conventions include the following acts if committed against a person specifically protected by the conventions:
+
+willful killing, torture or inhumane treatment, including biological experiments
+willfully causing great suffering or serious injury to body or health
+compelling a protected person to serve in the armed forces of a hostile power
+willfully depriving a protected person of the right to a fair trial if accused of a war crime.
+Also considered grave breaches of the Fourth Geneva Convention are the following:
+
+taking of hostages
+extensive destruction and appropriation of property not justified by military necessity and carried out unlawfully and wantonly
+unlawful deportation, transfer, or confinement.
+Nations that are party to these treaties must enact and enforce legislation penalizing any of these crimes. Nations are also obligated to search for persons alleged to commit these crimes, or persons having ordered them to be committed, and to bring them to trial regardless of their nationality and regardless of the place where the crimes took place.
+
+Enforcement
+
+Protecting powers
+
+The term protecting power has a specific meaning under these Conventions. A protecting power is a state that is not taking part in the armed conflict, but that has agreed to look after the interests of a state that is a party to the conflict. The protecting power is a mediator enabling the flow of communication between the parties to the conflict. The protecting power also monitors the implementation of these Conventions, such as by visiting the zone of conflict and prisoners of war. The protecting power must act as an advocate for prisoners, the wounded, and civilians.
+
+Universal jurisdiction
+The principle of universal jurisdiction also applies to the enforcement of grave breaches when the United Nations Security Council (UNSC) asserts its authority and jurisdiction from the UN Charter to apply universal jurisdiction. The UNSC did this when it established the International Criminal Tribunal for Rwanda and the International Criminal Tribunal for the former Yugoslavia to investigate and prosecute alleged violations.
+For grave breaches of the Geneva Conventions, states are obligated to establish and exercise universal jurisdiction. All four of the 1949 Geneva Conventions—in Articles 49, 50, 129, and 146 (respectively)—all contain provisions obligating parties to search for alleged violators, regardless of their nationality or place of offense, and to either try violators before their own courts or to hand them over to another party for trial. This principle of universal jurisdiction is rooted in the belief that grave breaches of the Geneva Convention are such serious crimes that all states have an obligation to bring those responsible to justice.
+
+Right to a fair trial when no crime is alleged
+Soldiers, as prisoners of war, will not receive a trial unless the allegation of a war crime has been made. According to Article 43 of the 1949 Conventions, soldiers are employed for the purpose of serving in war; engaging in armed conflict is legitimate, and does not constitute a grave breach of the Geneva Conventions. Should a soldier be arrested by belligerent forces, they are to be considered "lawful combatants" and afforded the protectorate status of a prisoner of war (POW) until the cessation of the conflict. Human rights law applies to any incarcerated individual, including the right to a fair trial.
+Charges may only be brought against an enemy POW after a fair trial, but the initial crime being accused must be an explicit violation of the accords, more severe than simply fighting against the captor in battle. No trial will otherwise be afforded to a captured soldier, as deemed by human rights law. This element of the convention has been confused during past incidents of detainment of US soldiers by North Vietnam, where the regime attempted to try all imprisoned soldiers in court for committing grave breaches, on the incorrect assumption that their sole existence as enemies of the state violated international law.
+
+Legacy
+Although warfare has changed dramatically since the Geneva Conventions of 1949, they are still considered the cornerstone of contemporary international humanitarian law. They protect combatants who find themselves hors de combat, and they protect civilians caught up in the zone of war. These treaties came into play for all recent non-international armed conflicts, including the War in Afghanistan, the Iraq War, the invasion of Chechnya (1994–2017) and the Russo-Georgian War. The Geneva Conventions also protect those affected by non-international armed conflicts such as the Syrian civil war.
+The lines between combatants and civilians have blurred when the actors are not exclusively High Contracting Parties (HCP).  In the Geneva Conventions, the term "High Contracting Parties" refers to the states that have joined the conventions and are therefore bound to uphold them. Since the fall of the Soviet Union, an HCP often is faced with a non-state actor, as argued by General Wesley Clark in 2007. Examples of such conflict include the Sri Lankan Civil War, the Sudanese Civil War, and the Colombian Armed Conflict, as well as most military engagements of the US since 2000.
+Some scholars hold that Common Article 3 deals with these situations, supplemented by Protocol II (1977). These set out minimum legal standards that must be followed for internal conflicts. International tribunals, particularly the International Criminal Tribunal for the former Yugoslavia (ICTY), have clarified international law in this area. In the 1999 Prosecutor v. Dusko Tadic judgement, the ICTY ruled that grave breaches apply not only to international conflicts, but also to internal armed conflict. Further, those provisions are considered customary international law.
+Controversy has arisen over the US designation of irregular opponents as "unlawful enemy combatants" (see also unlawful combatant), especially in the U.S. Supreme Court judgments over the Guantanamo Bay detention camp brig facility Hamdi v. Rumsfeld, Hamdan v. Rumsfeld and Rasul v. Bush , and later Boumediene v. Bush. President George W. Bush, aided by Attorneys-Generals John Ashcroft and Alberto Gonzales and General Keith B. Alexander, claimed the power, as Commander-in-Chief of the Armed Forces, to determine that any person, including an American citizen, who is suspected of being a member, agent, or associate of Al Qaeda, the Taliban, or possibly any other terrorist organization, is an "enemy combatant" who can be detained in U.S. military custody until hostilities end, pursuant to the international law of war.
+The application of the Geneva Conventions in the Russo-Ukrainian War (2014–present) has been troublesome because some of the personnel who engaged in combat against the Ukrainians were not identified by insignia, although they did wear military-style fatigues. The types of comportment qualified as acts of perfidy under jus in bello doctrine are listed in Articles 37 through 39 of the Geneva Convention; the prohibition of fake insignia is listed at Article 39.2, but the law is silent on the complete absence of insignia. The status of POWs captured in this circumstance remains a question.
+Educational institutions and organizations including Harvard University, the International Committee of the Red Cross, and the Rohr Jewish Learning Institute use the Geneva Convention as a primary text investigating torture and warfare.
+
+Contemporary challenges
+Artificial intelligence and autonomous weapon systems, such as military robots and cyber-weapons, are creating challenges in the creation, interpretation and application of the laws of armed conflict. The complexity of these new challenges, as well as the speed in which they are developed, complicates the application of the Conventions, which have not been updated in a long time. Adding to this challenge is the very slow speed of the procedure of developing new treaties to deal with new forms of warfare, and determining agreed-upon interpretations to existing ones, meaning that by the time a decision can be made, armed conflict may have already evolved in a way that makes the changes obsolete.
+In a speech given at the Graduate Institute of International and Development Studies on 13 March 2019, International Committee of the Red Cross President Peter Maurer argued that the "collective challenge [for the ICRC] today is to find ways to ensure greater respect within the changing dynamics of conflict." This would involve "more tailor-made rules to protect civilians from conflict’s future front lines" regarding issues such as "armed actors and civilians intermingling and individuals changing from fighters at night to civilians by day; different forms of violence blending together, on increasingly fuzzy battlefields," as well as "fierce public defence" of any new suggested rules.
+Tilman Rodenhäuser and Mauro Vignati, advisors on legal issues and digital technology at the ICRC, have since proposed rules of engagement for civilian hackers in 2023. The rules seek to mitigate or prevent any cyber attacks on civilian objects, infrastructure, and essential services, while encouraging states to implement "national laws that regulate civilian hacking."
+
+See also
+
+Attacks on humanitarian workers
+Convention on Certain Conventional Weapons
+Customary international humanitarian law
+Declaration on the Protection of Women and Children in Emergency and Armed Conflict
+Geneva Conference (disambiguation)
+Geneva Academy of International Humanitarian Law and Human Rights
+German Prisoners of War in the United States
+Hague Conventions of 1899 and 1907 – traditional rules on fighting wars
+Human rights
+Human shield
+International Committee of the Red Cross
+International Federation of Red Cross and Red Crescent Societies
+International humanitarian law
+Laws of war
+Lieber Code General Order 100
+Nuremberg Principles
+Reprisals
+Rule of Law in Armed Conflicts Project
+Saint Petersburg Declaration of 1868
+Targeted killing
+
+References
+
+Further reading
+Matthew Evangelista and Nina Tannenwald (eds.). 2017. Do the Geneva Conventions Matter? Oxford University Press.
+Giovanni Mantilla, "Conforming Instrumentalists: Why the USA and the United Kingdom Joined the 1949 Geneva Conventions," European Journal of International Law, Volume 28, Issue 2, May 2017, Pages 483–511.
+Helen Kinsella, "The image before the weapon : a critical history of the distinction between combatant and civilian" Cornell University Press.
+Boyd van Dijk (2022). Preparing for War: The Making of the Geneva Conventions. Oxford University Press.
+
+External links
+
+The Geneva Conventions of 12 August 1949 public domain audiobook at LibriVox
+Texts and commentaries of 1949 Conventions & Additional Protocols
+The Geneva Conventions: the core of international humanitarian law, ICRC
+Rules of war (in a nutshell)—video
+Commentaries:
+GCI: Commentary (PDF)
+GCII: Commentary (PDF)
+GCIII: Commentary (PDF)
+GCIV: Commentary (PDF)

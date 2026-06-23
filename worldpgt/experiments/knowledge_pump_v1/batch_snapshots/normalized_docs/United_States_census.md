@@ -1,0 +1,115 @@
+# United States census
+
+Source: https://en.wikipedia.org/wiki/United_States_census
+Retrieved at: 2026-06-23T00:23:04Z
+Revision ID: 1338161048
+Raw text SHA256: 67a0b6118d8952e3125d681054108da964c586576327169459a19d0a3cfe45ab
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The United States census (plural censuses or census) is a decennial census that is legally mandated by the Constitution of the United States. The first census after the American Revolution was taken in 1790 under Secretary of State Thomas Jefferson. There have been 24 federal censuses since that time. The census includes territories of the United States. The United States Census Bureau is responsible for conducting the census.
+The most recent national census took place in 2020; the next census is scheduled for 2030. Since 2013, the Census Bureau began discussions on using technology to aid data collection starting with the 2020 census. In 2020, every household received an invitation to complete the census over the Internet, by phone or by paper questionnaire. For years between the decennial censuses, the Census Bureau issues estimates made using surveys and statistical models, in particular, the Population Estimates Program and American Community Survey.
+Censuses between 1940 and 2000 (both included) also had a "long form" version, sent to only a subset of the households, with additional questions about socioeconomic and housing characteristics.
+The United States census is distinct from the Census of Agriculture, which is no longer the responsibility of the Census Bureau. It is also distinct from local censuses conducted by some states or local jurisdictions.
+
+Legal basis
+The U.S. census is mandated by Article I, Section 2 of the United States Constitution, which states: "Representatives and direct Taxes shall be apportioned among the several States... according to their respective Numbers... . The actual Enumeration shall be made within three years after the first meeting of the Congress of the United States, and within every subsequent Term of ten Years". Section 2 of the Fourteenth Amendment amended Article I, Section 2 to include that the "respective Numbers" of the "several States" will be determined by "counting the whole number of persons in each State, excluding Indians not taxed." The United States Census Bureau (officially the Bureau of the Census, as defined in Title 13 U.S.C. § 11) is responsible for the United States census. The Bureau of the Census is part of the United States Department of Commerce.
+Title 13 of the United States Code governs how the census is conducted and how its data is handled. Information is confidential as per 13 U.S.C. § 9. The census law, coupled with the Sentencing Reform Act of 1984 (Title 18 of the United States Code, Sections 3551, 3559, and 3571), provides for penalties of up to $5,000 for not responding or for willfully providing false answers to any question.
+
+Procedure
+
+Decennial U.S. census figures are based on actual counts of persons dwelling in U.S. residential structures. They include citizens, non-citizen legal residents, non-citizen long-term visitors and undocumented immigrants. The Census Bureau bases its decision about whom to count on the concept of usual residence. Usual residence, a principle established by the Census Act of 1790, is defined as the place a person lives and sleeps most of the time. The Census Bureau uses special procedures to ensure that those without conventional housing are counted. Data from these operations are not as accurate as data obtained from traditional procedures.
+In instances where the bureau is unsure of the number of residents at an address after a field visit, its population characteristics are inferred from its nearest similar neighbor (hot-deck imputation). This practice has effects across many areas, but is seen by some as controversial. The practice was ruled constitutional by the U.S. Supreme Court in Utah v. Evans.
+Certain American citizens living overseas are specifically excluded from being counted in the census even though they may vote. Only Americans living abroad who are "federal employees (military and civilian) and their dependents living overseas with them" are counted. "Private U.S. citizens living abroad who are not affiliated with the federal government (either as employees or their dependents) will not be included in the overseas counts. These overseas counts are used solely for reapportioning seats in the U.S. House of Representatives".
+According to the Census Bureau, "Census Day" has been April 1 since 1930. Previously, from 1790 to 1820, the census counted the population as of the first Monday in August. It moved to June 1 in 1830, June 2 in 1890, April 15 in 1910, and January 1 in 1920.
+Because people are born, die, and move during the year, the census counts people where they were or expect to be living on this specific reference date in an attempt to get a coherent snapshot and avoid double counting. The actual census-taking begins before this date and extends for months thereafter. In 2020, the earliest responses were collected starting January 21 in remote parts of Alaska, and March 12 for most Americans.
+
+Applications
+In addition to its primary purpose of reapportioning the House of Representatives, census data are used for a wide variety of applications, including:
+
+Apportionment of federal funding in a large number of programs, estimated at somewhere between $675 billion and $1.5 trillion per year.
+Infrastructure and transportation planning
+Military and disaster response planning
+Economic analysis
+Commercial investment and marketing decisions
+Computer programs that can disambiguate place names based on which has the highest population
+General reference works
+
+Controversy
+
+The census has historically and up to the present been controversial due to its role in reapportioning political representation. In the 1850s, census planners suppressed information about slavery due to pressure from Southern lawmakers. The results of the 1920 census were ignored and no reapportionment took place, as rural lawmakers feared losing power to urban areas. In the 1940s, census officials were involved in organizing Japanese-American internment.
+The census is controversial; up to one-third of all U.S. residents do not respond to repeated reminders. In recent censuses, the nonresponse rate has been less than 1% (it was about 0.4% in 2010), but during the 2020 census, as of September 11, many experts believed the nonresponse rate could reach double digits. By October 19, 2020, all states had topped a 99% response rate, with all but one state having a nonresponse rate below 0.1%.
+The Census Bureau estimates that in 1970 over six percent of African Americans went uncounted, whereas only around two percent of European Americans went uncounted. Democrats often argue that modern sampling techniques should be used so that more accurate and complete data can be inferred. Republicans often argue against such sampling techniques, stating the U.S. Constitution requires an "actual enumeration" for apportionment of House seats, and that political appointees would be tempted to manipulate the sampling formulas.
+Groups like the Prison Policy Initiative assert that the census practice of counting prisoners as residents of prisons, not their pre-incarceration addresses, leads to misleading information about racial demographics and population numbers.
+
+2020
+
+The 2020 census drew a number of controversies and legal challenges under the Trump administration due to President Donald Trump's policies on illegal immigration, particularly those undocumented in the country. Prior to the publication of the census, the Commerce Department stated its intention to add a question asking responders about their immigration status, which many states and activists stated would cause illegal immigrants to not respond out of fear of prosecution and lead to undercounting, affecting state representation and federal funding. The Supreme Court case Department of Commerce v. New York, decided in June 2019, found the rationale to add the question was arbitrary and capricious and required the department to provide a better reasoning before inclusion. The department dropped the question by the form's publication time. Following the decision, Trump issued an executive order directing the department to obtain citizenship data from other federal agencies rather than via the census. On July 21, 2020, Trump signed a presidential memorandum ordering the exclusion of illegal immigrants from the numbers in the 2020 census that are used to apportion seats in the House of Representatives.
+The COVID-19 pandemic made the collection of the census results difficult, and the department had extended the deadline to complete collection to October 31 instead of July 31, 2020. On August 3, the department announced its Replan Schedule that would end collection early on September 30, aware this would leave them with incomplete data that they would have to estimate total numbers to complete. This move was again challenged in the courts. While lower courts had ruled for an injunction against the department from implementing the Replan Schedule, the Supreme Court issued a stay of the injunction in October 2020, allowing the census to end early.
+Around the same time, Trump issued a memo to the Commerce Department on July 21, 2020, instructing them to use estimates of undocumented immigrants and subtract their numbers from the totals, claiming that he had the authority to make this determination on a Constitutional and past legal basis. Several legal challenges were filed, and a combined suit from 22 states and several non-governmental organizations were found against Trump, ruling that only Congress has the authority to interpret the manner of which people the census includes. Trump petitioned to the Supreme Court which certified the case Trump v. New York for an expedited hearing in November, given the results were to be delivered to Congress by December 31, 2020. The Court issued a per curiam decision on December 18, 2020, which vacated the District Court's ruling and remanded the case to that court with orders to dismiss it.
+
+History
+
+Censuses had been taken prior to the Constitution's ratification; in the early 17th century, a census was taken in Virginia, and people were counted in almost all of the British colonies that became the United States. Between 1781 and 1786, the first "actual enumeration" was conducted separately in each state and compiled by John Kean for consideration at the Constitutional Convention in 1787.
+Throughout the years, the country's needs and interests became more complicated. This meant that statistics were needed to help people understand what was happening and have a basis for planning. The content of the decennial census changed accordingly. In 1810, the first inquiry on manufactures, quantity and value of products occurred; in 1840, inquiries on fisheries were added; and in 1850, the census included inquiries on social issues, such as taxation, churches, pauperism, and crime. The censuses also spread geographically, to new states and territories added to the Union, as well as to other areas under U.S. sovereignty or jurisdiction. There were so many more inquiries of all kinds in the census of 1880 that almost a full decade was needed to publish all the results. In response to this, the census was mechanized in 1890, with tabulating machines made by Herman Hollerith. This reduced the processing time to two and a half years.
+For the first six censuses (1790–1840), enumerators recorded only the names of the heads of household and a general demographic accounting of the remaining members of the household. Beginning in 1850, all members of the household were named on the census. The first slave schedules were also completed in 1850, with the second (and last) in 1860. Censuses of the late 19th century also included agricultural and industrial schedules to gauge the productivity of the nation's economy. Mortality schedules (taken between 1850 and 1880) captured a snapshot of life spans and causes of death throughout the country.
+The first nine censuses (1790–1870) were conducted by U.S. Marshals before the Census Bureau was created. Appointed U.S. Marshals of each judicial district hired assistant marshals to conduct the actual enumeration. The census enumerators were typically from the village or neighborhood and often knew the residents. Before enabling self-identification on the censuses, the U.S. Census Bureau relied on local people to have some knowledge of residents. Racial classification was made by the census enumerator in these decades, rather than by the individual.
+
+Respondent confidentiality
+One purpose of the census is to divide the house seats by population. Furthermore, as with any Census Bureau survey, the data provides a beginning for the allocation of resources. In addition, collected data are used in aggregate for statistical purposes. Replies are obtained from individuals and establishments only to enable the compilation of such general statistics. The confidentiality of these replies is very important. By law, no one—neither the census takers nor any other Census Bureau employee—is permitted to reveal identifiable information about any person, household, or business.
+By law (Pub. L. 95–416, 92 Stat. 915, enacted October 5, 1978), individual decennial census records are sealed for 72 years. One explanation for this number is that it was chosen in 1952 as slightly higher than the average female life expectancy, 71.6. Another explanation (which disputes the life expectancy number) is that this number is a holdover from 1942, when a disagreement between the Census Bureau and the National Archives was resolved with 1870 as the boundary between confidential and public records. The individual census data most recently released to the public is the 1950 census, released on April 1, 2022. Aggregate census data are released when available.
+
+FBI data use
+Under the administration of President Franklin D. Roosevelt, the Federal Bureau of Investigation (FBI), using primarily census records, compiled (1939–1941) the Custodial Detention Index ("CDI") on citizens, enemy aliens, and foreign nationals, who might be dangerous. The Second War Powers Act of 1941 repealed the legal protection of confidential census data, which was not restored until 1947. This information facilitated the internment of Japanese-Americans, following the Japanese attack on the U.S. at Pearl Harbor on December 7, 1941, and the internment of Italian- and German-Americans following the United States' entry into World War II.
+In 1980, four FBI agents went to the Census Bureau's Colorado Springs office with warrants to seize census documents, but were forced to leave with nothing. Courts upheld that no agency, including the FBI, has access to census data.
+
+Data analysis
+The census records data specific to individual respondents are not available to the public until 72 years after a given census was taken, but aggregate statistical data derived from the census are released as soon as they are available. Every census up to and including 1950 is currently available to the public and can be viewed on microfilm released by the National Archives and Records Administration, the official keeper of archived federal census records. Complete online census records can be accessed for no cost from National Archives facilities and many libraries, and a growing portion of the census is freely available from non-commercial online sources.
+Census microdata for research purposes are available for all censuses from 1790 forward except for 1890 through the Integrated Public Use Microdata Series (IPUMS), and scanned copies of each of the decennial census questionnaires are available online from many websites. Computerized aggregate data describing the characteristics of small geographic areas for the entire period from 1790 to 2010 are available from the National Historical Geographic Information System.
+
+Regions and divisions
+
+The bureau recognizes four census regions within the United States and further organizes them into nine divisions. These regions are groupings of states that subdivide the United States for the presentation of data.
+
+Poverty measures
+The official poverty measure (OPM), in use in America since the 1960s, defines poverty by comparing pre-tax money income to a poverty threshold that is adjusted by family composition. The pre-tax money income excludes the value of government noncash benefits provided either privately or publicly, such as health insurance, food stamps, or housing assistance. The threshold was derived from the cost of a minimum food diet multiplied by three to account for other family expenses.
+The supplemental poverty measure (SPM), introduced in 2011, aims to provide a more accurate picture of the true extent of poverty in the United States than the OPM, by taking into account non-cash benefits and geographic variations in the cost-of-living. The SPM has been published by the Census Bureau since 2011 and expands the money income definition of poverty used by the official poverty measure.
+
+See also
+Norman K. Brown, known as "Mr. Census" for having worked as an enumerator on every census from 1960 to 2020
+Census-designated place (CDP), a populated community that lacks a separate municipal government
+Combined statistical area (CSA), an area that combines adjacent μSAs and MSAs
+DUALabs
+List of U.S. states by historical population, state-level U.S. census data, 1790–2020, in table form
+Race and ethnicity in the United States census
+State censuses in the United States of America
+United States metropolitan area (MSA), an area that includes adjacent communities to major cities
+United States micropolitan area (μSA), an urban area based around a core city or town with a population of 10,000 to 49,999
+
+Notes
+
+References
+
+Further reading
+Anderson, Margo J. The American Census: A Social History. New Haven: Yale University Press, 1988. ISBN 0-300-04014-8
+Anderson, Margo J. The American Census: A Social History, Second Edition. New Haven: Yale University Press, 2015. ISBN 978-0-300-19542-2
+Anderson, Margo J. Encyclopedia of the U.S. Census. Washington, DC: CQ Press, 2000. ISBN 1-56802-428-2.
+Dorman, Robert L. "The Creation and Destruction of the 1890 Federal Census", American Archivist, 71 (Fall–Winter 2008), 350–83.
+Kruger, Stephen. "The Decennial Census" (2025). https://ssrn.com/abstract=1985554.
+Ruggles, Steven, Diana L Magnuson. 2020. "Census Technology, Politics, and Institutional Change, 1790–2020", Journal of American History 107(1): 19–51.
+Schor, Paul. Counting Americans: How the US Census Classified the Nation. New York: Oxford University Press, 2017.
+Lavin, Michael R. "Understanding the Census: A Guide for Marketers, Planners, Grant Writers, and Other Data Users". Kenmore, NY: Epoch Books, 1996. ISBN 0-89774-995-2.
+U.S. Department of Commerce, U.S. Census Bureau. Measuring America: the decennial censuses from 1790 to 2000. 2002
+
+External links
+
+U.S. Census Bureau official website
+Historical Census of Population and Housing reports
+National Historical Geographic Information System, a main source for freely downloading census data for the period 1790 through the present
+Integrated Public Use Microdata Series, the main source for census microdata for the period 1850 through the present
+CensusScope, from the Social Science Data Analysis Network
+Historical U.S. Census Browser, from the University of Virginia Library
+Census Findings – Questions Asked in Each Census Year, from CensusFinder.com.
+How the Census Works, from HowStuffWorks, Inc.
+Sources of U.S. Census Data, from MIT Libraries
+1890 Census Supplement Book-Set

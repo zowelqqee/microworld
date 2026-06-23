@@ -1,13 +1,13 @@
 # Nasdaq, Inc.
 
 Source: https://en.wikipedia.org/wiki/Nasdaq,_Inc.
-Retrieved at: 2026-06-15T12:37:51Z
-Revision ID: 1356732769
-Raw text SHA256: 9325565bc8ad428abdd3db34c4c68a9e175c195c0e8299186441c5b7850fcc07
+Retrieved at: 2026-06-22T08:30:05Z
+Revision ID: 1360518038
+Raw text SHA256: b74c6627fa9d8e1689870d37798968ae3f7aa1d0de6044514aaebe0302521680
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
-Nasdaq, Inc. is an American multinational financial services corporation providing data, analytics, software, exchange capabilities, and advisory services to corporate clients, investment managers, banks, brokers, and exchange operators across the global financial system. Nasdaq was founded in 1971 as the world's first electronic stock market, and became publicly traded in 2000. It is headquartered in New York City, and its chair and chief executive officer is Adena Friedman.
+Nasdaq, Inc. (  NAZ-dak) is an American multinational financial services corporation providing data, analytics, software, exchange capabilities, and advisory services to corporate clients, investment managers, banks, brokers, and exchange operators across the global financial system. Nasdaq was founded in 1971 as the world's first electronic stock market, and became publicly traded in 2000. It is headquartered in New York City, and its chair and chief executive officer is Adena Friedman.
 The company owns and operates three stock exchanges in the United States: the Nasdaq Stock Exchange (on which it is also listed), the Philadelphia Stock Exchange, and the Boston Stock Exchange, as well as seven European stock exchanges: Nasdaq Copenhagen, Nasdaq Helsinki, Nasdaq Iceland, Nasdaq Riga, Nasdaq Stockholm, Nasdaq Tallinn, and Nasdaq Vilnius.
 The European operations originated from OMX AB (Aktiebolaget Optionsmäklarna/Helsinki Stock Exchange), which was formed in 2003 through a merger between Sweden's OM AB and Finland's HEX plc. The operations have been part of Nasdaq, Inc. (formerly known as Nasdaq OMX Group) since February 2008. They are now known as Nasdaq Nordic, which provides financial services and operates marketplaces for securities in the Nordic and Baltic regions of Europe.
 

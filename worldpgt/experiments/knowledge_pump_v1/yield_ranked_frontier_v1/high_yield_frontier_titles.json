@@ -1,9 +1,10 @@
 [
   {
     "title": "Jeff Bezos",
-    "score": 111.333,
+    "score": 151.333,
     "positive_reasons": [
       "source_page_produced_accepted_fact",
+      "in_high_yield_source_pages",
       "subject_of_accepted_fact",
       "encyclopedic_entity_form",
       "relation_or_overlay_source",
@@ -27,48 +28,10 @@
     }
   },
   {
-    "title": "North American Aviation",
-    "score": 43.04,
-    "positive_reasons": [
-      "object_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects"
-    ],
-    "source_hint": "NASA",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Marconi Electronic Systems",
-    "score": 33.02,
-    "positive_reasons": [
-      "subject_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects"
-    ],
-    "source_hint": "Aerospace manufacturer",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
-    "title": "Deutsche Bank",
-    "score": 28.04,
-    "positive_reasons": [
-      "object_of_accepted_fact",
-      "encyclopedic_entity_form",
-      "term_in_accepted_fact_objects"
-    ],
-    "source_hint": "Forbes",
-    "expected_yield_class": "medium",
-    "recheck_required": false,
-    "stale_fact": {}
-  },
-  {
     "title": "Michael Bloomberg",
-    "score": 21.333,
+    "score": 81.333,
     "positive_reasons": [
+      "source_page_produced_accepted_fact",
       "subject_of_accepted_fact",
       "object_of_accepted_fact",
       "encyclopedic_entity_form",
@@ -78,7 +41,7 @@
       "staleness_boost:6.33"
     ],
     "source_hint": "Bloomberg L.P.",
-    "expected_yield_class": "medium",
+    "expected_yield_class": "high",
     "recheck_required": true,
     "stale_fact": {
       "subject": "Michael Bloomberg",
@@ -92,5 +55,571 @@
       "temporal_class": "snapshot",
       "is_stale": false
     }
+  },
+  {
+    "title": "Elon Musk",
+    "score": 76.333,
+    "positive_reasons": [
+      "source_page_produced_accepted_fact",
+      "in_high_yield_source_pages",
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "relation_or_overlay_source",
+      "gap_driven_entity",
+      "stale_snapshot_recheck",
+      "staleness_boost:6.33"
+    ],
+    "source_hint": "Billionaire",
+    "expected_yield_class": "high",
+    "recheck_required": true,
+    "stale_fact": {
+      "subject": "Elon Musk",
+      "predicate": "estimated_net_worth",
+      "object": "US$1.1 trillion",
+      "as_of": "2026-06",
+      "age_days": 19,
+      "freshness_window": 30,
+      "staleness_ratio": 0.6333,
+      "source_page": "Elon Musk",
+      "temporal_class": "snapshot",
+      "is_stale": false
+    }
+  },
+  {
+    "title": "Lew Rockwell",
+    "score": 73.3,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "high",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Roger Williams",
+    "score": 73.24,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "high",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Robert Noyce",
+    "score": 73.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "high",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "United States of America",
+    "score": 48.3,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Louisiana Creoles",
+    "score": 48.22,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Officer Training School",
+    "score": 48.18,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "American conservative",
+    "score": 48.14,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "New York Observer",
+    "score": 48.14,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "American Spectator",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Daily Caller",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Frank Comerford Walker",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Gary Earl Johnson",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "John Diebold",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "New York Review of Books",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Skydance Media",
+    "score": 48.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Air Force Reserve Command",
+    "score": 43.36,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "The Des Moines Register",
+    "score": 43.32,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Brooke Rollins",
+    "score": 43.24,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Mao Zedong",
+    "score": 43.2,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Samuel Gompers",
+    "score": 43.2,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Frank Collin",
+    "score": 43.16,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Margaret Sanger",
+    "score": 43.16,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Providence Plantations",
+    "score": 43.16,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Claude Shannon",
+    "score": 43.14,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Marvel Comics",
+    "score": 43.14,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Southern Baptist",
+    "score": 43.14,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Canadian National",
+    "score": 43.12,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Henry VIII",
+    "score": 43.12,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Kurt Mertig",
+    "score": 43.12,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Wallace Fard Muhammad",
+    "score": 43.12,
+    "positive_reasons": [
+      "object_of_accepted_fact",
+      "encyclopedic_entity_form",
+      "term_in_accepted_fact_objects"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "The Nation",
+    "score": 38.42,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Socialist Labor Party",
+    "score": 38.18,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Carnegie Steel",
+    "score": 38.14,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Prohibition era",
+    "score": 38.14,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Enrico Tonti",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Epic Games",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Jean Fayeton",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Standing Rules of the Senate",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Telewizja Polska",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "The Antitrust Paradox",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "Willem van Biljon",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
+  },
+  {
+    "title": "William Randolph I",
+    "score": 38.12,
+    "positive_reasons": [
+      "subject_of_accepted_fact",
+      "encyclopedic_entity_form"
+    ],
+    "source_hint": "",
+    "expected_yield_class": "medium",
+    "recheck_required": false,
+    "stale_fact": {}
   }
 ]

@@ -151,7 +151,7 @@ def test_net_worth_stability_check(planner):
 def test_stock_price_audits(planner):
     decision, answer = _answer(planner, "What is Tesla's current stock price?")
     assert decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_snapshot_relation_rendering_includes_as_of():
@@ -200,7 +200,7 @@ def test_snapshot_relation_rendering_includes_as_of():
 def test_favorite_food_audits(planner):
     decision, answer = _answer(planner, "What is Elon Musk's favorite food?")
     assert decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 # ---------------------------------------------------------------------------

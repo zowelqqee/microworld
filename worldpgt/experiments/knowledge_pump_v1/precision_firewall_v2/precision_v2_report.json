@@ -1,33 +1,40 @@
 {
   "precision_v2_enabled": true,
-  "answerable_before_v2": 1143,
-  "answerable_after_v2": 1091,
-  "relation_before_count": 220,
-  "relation_after_count": 198,
-  "definition_before_count": 238,
-  "definition_after_count": 208,
-  "rejected_count": 50,
-  "quarantined_count": 2,
+  "answerable_before_v2": 2959,
+  "answerable_after_v2": 2861,
+  "relation_before_count": 428,
+  "relation_after_count": 390,
+  "definition_before_count": 671,
+  "definition_after_count": 611,
+  "rejected_count": 92,
+  "quarantined_count": 6,
   "rejection_by_reason": {
-    "appositive_alias_subject": 9,
-    "dangling_comma_subject": 9,
-    "definition_nationality_plus_single_noun": 7,
+    "appositive_alias_subject": 11,
+    "dangling_comma_subject": 24,
+    "definition_nationality_plus_single_noun": 11,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
-    "founded_by_truncated_object": 1,
+    "founded_by_truncated_object": 8,
     "fragment_prefix_subject": 5,
-    "geopolitical_subject_corporate_predicate": 1,
+    "geopolitical_subject_corporate_predicate": 3,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 10
+    "truncated_definition": 22
   },
   "quarantine_by_reason": {
+    "headquarters_subject_or_clause_uncertain": 1,
     "object_has_descriptive_tail": 1,
-    "volatile_predicate": 1
+    "volatile_predicate": 4
   },
   "relation_examples_rejected": [
+    {
+      "subject": "Origin Joyo.com",
+      "predicate": "founded_by",
+      "object": "Lei Jun",
+      "reason": "founded_by_truncated_object"
+    },
     {
       "subject": "Amazon Leo,",
       "predicate": "subsidiary_of",
@@ -71,6 +78,12 @@
       "reason": "owned_by_geopolitical_object"
     },
     {
+      "subject": "Leadership CNP",
+      "predicate": "founded_by",
+      "object": "Tim La",
+      "reason": "founded_by_truncated_object"
+    },
+    {
       "subject": "Andrew Nyberg",
       "predicate": "develops",
       "object": "Insignia and livery The mission insignia",
@@ -105,25 +118,48 @@
       "predicate": "founded_by",
       "object": "Stock Exchange",
       "reason": "founded_by_generic_object"
-    },
-    {
-      "subject": "Ad Astra The Society",
-      "predicate": "publishes",
-      "object": "Ad Astra",
-      "reason": "publishes_phrase_subject"
-    },
-    {
-      "subject": "Northrop Grumman Corporation,",
-      "predicate": "headquartered_in",
-      "object": "West Falls Church",
-      "reason": "dangling_comma_subject"
     }
   ],
   "definition_examples_rejected": [
     {
+      "subject": "Tesla, provisional designation 1952 UW1,",
+      "definition": "carbonaceous asteroid from the central region of the asteroid belt",
+      "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Akira Yoshino",
+      "definition": "Japanese chemist",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Alessandro Giuseppe Antonio Anastasio Volta",
+      "definition": "Italian chemist",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Amazon Drive, formerly known as Amazon Cloud Drive,",
+      "definition": "cloud storage application managed by Amazon",
+      "reason": "appositive_alias_subject"
+    },
+    {
+      "subject": "Amazon Echo, often shortened to Echo,",
+      "definition": "brand of smart speakers",
+      "reason": "dangling_comma_subject"
+    },
+    {
       "subject": "Amazon Reef, or Amazonian Reef,",
       "definition": "extensive coral",
       "reason": "dangling_comma_subject"
+    },
+    {
+      "subject": "Arthur Wing Pinero",
+      "definition": "English playwright",
+      "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Bexar County",
+      "definition": "county in the U",
+      "reason": "truncated_definition"
     },
     {
       "subject": "Boeing Starliner",
@@ -131,14 +167,14 @@
       "reason": "truncated_definition"
     },
     {
-      "subject": "Byron Kurt Lichtenberg",
-      "definition": "American engineer",
-      "reason": "definition_nationality_plus_single_noun"
+      "subject": "Democratic Party of the Virgin Islands",
+      "definition": "political party in the U",
+      "reason": "truncated_definition"
     },
     {
-      "subject": "Charles David Walker",
-      "definition": "American engineer",
-      "reason": "definition_nationality_plus_single_noun"
+      "subject": "East North Central states",
+      "definition": "region of the United States defined by the U",
+      "reason": "truncated_definition"
     },
     {
       "subject": "Electrical engineering",
@@ -159,41 +195,6 @@
       "subject": "Founders Park, formerly known as Carolina Stadium,",
       "definition": "ballpark in Columbia",
       "reason": "appositive_alias_subject"
-    },
-    {
-      "subject": "France, officially the French Republic,",
-      "definition": "country primarily",
-      "reason": "appositive_alias_subject"
-    },
-    {
-      "subject": "Germany, officially the Federal Republic of Germany,",
-      "definition": "country in Western",
-      "reason": "appositive_alias_subject"
-    },
-    {
-      "subject": "Gregory Brockman",
-      "definition": "American entrepreneur",
-      "reason": "definition_nationality_plus_single_noun"
-    },
-    {
-      "subject": "Hyperloop One, known as Virgin Hyperloop until November 2022,",
-      "definition": "American transportation technology company",
-      "reason": "appositive_alias_subject"
-    },
-    {
-      "subject": "Hyperloop Pod Competition",
-      "definition": "annual competition sponsored by SpaceX from 2015 to 2019 in",
-      "reason": "truncated_definition"
-    },
-    {
-      "subject": "India, officially the Republic of India,",
-      "definition": "country in South Asia",
-      "reason": "appositive_alias_subject"
-    },
-    {
-      "subject": "Jersey City",
-      "definition": "second-most populous city in the U",
-      "reason": "truncated_definition"
     }
   ],
   "relation_examples_preserved": [
@@ -233,50 +234,66 @@
       "object": "000 engineers"
     },
     {
-      "subject": "International Energy Agency",
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "few officers"
+    },
+    {
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "competitive for college graduates"
+    },
+    {
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "particularly USAF enlisted service"
+    },
+    {
+      "subject": "Bonnier Group",
       "predicate": "publishes",
-      "object": "annual World Energy Outlook"
+      "object": "Damernas Värld"
     },
     {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "F/A-18 Super Hornet"
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Amelia"
     },
     {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "Grumman E-2 Hawkeye airborne early warning"
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Sköna hem"
     },
     {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "MQ-4C Triton unmanned aerial vehicle"
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Teknikens Värld"
     },
     {
-      "subject": "Jean Fayeton",
-      "predicate": "develops",
-      "object": "Malabry campus"
-    },
-    {
-      "subject": "Telecom Technologies",
-      "predicate": "owned_by",
-      "object": "Sonus Networks"
-    },
-    {
-      "subject": "Now",
-      "predicate": "headquartered_in",
-      "object": "Tokyo"
-    },
-    {
-      "subject": "Sleepycat Software",
-      "predicate": "owned_by",
-      "object": "Oracle Corporation"
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Resume"
     }
   ],
   "definition_examples_preserved": [
     {
       "subject": "Abe Fortas",
       "definition": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis"
+    },
+    {
+      "subject": "Ares I-X",
+      "definition": "only test flight of a launch vehicle like the Ares I"
+    },
+    {
+      "subject": "Environmental resource management",
+      "definition": "issue of increasing concern"
+    },
+    {
+      "subject": "Evoked potential",
+      "definition": "electrical response of the brain to a sensory stimulus"
+    },
+    {
+      "subject": "Forbes Travel Guide",
+      "definition": "oldest travel guide in the United States"
     },
     {
       "subject": "HMS Amazon",
@@ -291,48 +308,32 @@
       "definition": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world"
     },
     {
+      "subject": "Naval Academy Preparatory School",
+      "definition": "Navy's fourth oldest school; only the Naval War College"
+    },
+    {
       "subject": "Rocket Science Games",
       "definition": "independent game studio"
+    },
+    {
+      "subject": "Chicago real estate bubble of the 1830s",
+      "definition": "real estate bubble"
+    },
+    {
+      "subject": "Abraham Fortas",
+      "definition": "American lawyer"
     },
     {
       "subject": "Accenture plc",
       "definition": "Irish technology consulting company"
     },
     {
+      "subject": "Adam Smith",
+      "definition": "Scottish economist"
+    },
+    {
       "subject": "Affordable Connectivity Program",
       "definition": "United States government-sponsored program"
-    },
-    {
-      "subject": "Air command",
-      "definition": "term used to refer to the command structure of some air forces"
-    },
-    {
-      "subject": "Aliko Mohammad Dangote",
-      "definition": "Nigerian businessman"
-    },
-    {
-      "subject": "Alpha Magnetic Spectrometer",
-      "definition": "particle physics experiment module"
-    },
-    {
-      "subject": "Amalgam Comics",
-      "definition": "collaborative publishing imprint shared by DC Comics"
-    },
-    {
-      "subject": "Amazon Bookstore Cooperative",
-      "definition": "feminist bookstore"
-    },
-    {
-      "subject": "Amazon Delta",
-      "definition": "vast river delta formed by the Amazon River"
-    },
-    {
-      "subject": "Amazon Kindle",
-      "definition": "series of e-readers designed"
-    },
-    {
-      "subject": "Amazon basin",
-      "definition": "part of South America drained by the Amazon River"
     }
   ],
   "quarantine_examples": [
@@ -341,6 +342,30 @@
       "predicate": "leader_of",
       "object": "Liberal Party",
       "reason": "volatile_predicate"
+    },
+    {
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "United States Senate",
+      "reason": "volatile_predicate"
+    },
+    {
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "after the party leader",
+      "reason": "volatile_predicate"
+    },
+    {
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "whip",
+      "reason": "volatile_predicate"
+    },
+    {
+      "subject": "Air Combat Command",
+      "predicate": "headquartered_in",
+      "object": "Langley Air Force Base",
+      "reason": "headquarters_subject_or_clause_uncertain"
     },
     {
       "subject": "Tesla Energy",

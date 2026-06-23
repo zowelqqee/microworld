@@ -1,0 +1,15 @@
+{
+  "title": "Tom Truscott",
+  "normalized_title": "Tom Truscott",
+  "pageid": 9749696,
+  "revision_id": 1342398552,
+  "timestamp": "2026-03-08T19:21:59Z",
+  "source_url": "https://en.wikipedia.org/wiki/Tom_Truscott",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Tom+Truscott",
+  "retrieved_at": "2026-06-22T07:18:11Z",
+  "raw_text": "Tom Truscott is an American computer scientist known best for creating Usenet with Jim Ellis, when both were graduate students at Duke University. He is also a member of ACM, IEEE, and Sigma Xi. One of his first endeavors concerning computers was writing a computer chess program and then later working on a global optimizer for C at Bell Labs. This computer chess program competed in multiple computer chess tournaments such as the Toronto chess tournament in 1977 (2nd place) and the Linz tournament in 1980 (3rd place). Presently, Truscott works on applications that analyze software as a software developer for a company named SAS Institute.\nTruscott received the USENIX Lifetime Achievement Award for Usenet.\n\n\nFurther reading\nHauben, Michael; Hauben, Ronda; Truscott, Tom (April 27, 1997). Netizens: On the History and Impact of Usenet and the Internet (Perspectives). Wiley-IEEE Computer Society P. ISBN 0-8186-7706-6.\n\n\nReferences\n\n\nExternal links\nThe Evolution Of Usenet: The Poor Man's ARPANET Contains excerpts of Invitation to a General Access UNIX* Network, the original USENIX handout describing Usenet\nInterview with Tom Truscott\nTom Truscott Biography Contains Full Biography of Tom Truscott",
+  "raw_text_sha256": "7b1b29c63be470666dfe5d0253b293133991724b77fbf3d790326e0f3f15396e",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

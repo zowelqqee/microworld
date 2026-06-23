@@ -1,0 +1,15 @@
+{
+  "title": "Medical Center",
+  "normalized_title": "Medical Center",
+  "pageid": 800141,
+  "revision_id": 1300867719,
+  "timestamp": "2025-07-16T20:45:18Z",
+  "source_url": "https://en.wikipedia.org/wiki/Medical_Center",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Medical+Center",
+  "retrieved_at": "2026-06-22T07:10:00Z",
+  "raw_text": "Medical center or medical centre may refer to:\n\n\nMedical care\nA collection of medical services on the same site, such as the services of a general practitioner, pharmacist, pathology, radiology, dentist, etc., either as part of a unified health system or separate offices within an office complex\nClinic\nHospital\nAcademic medical centre, often including hospitals, research facilities, medical schools, and/or other health care facilities\nCentro Medico Excel in Tijuana, Mexico\nCentro Medico (Guatemala)\n\n\nTransit\nMedical Center station (disambiguation), transit stations of the name\n\n\nOther\nMedical Center (TV series), a 1969–1976 medical drama series on CBS\n\n\nSee also\nIllinois Medical District, a neighborhood in the Near West Side community area of Chicago, Illinois alternatively known as \"Medical Center\"\nIllinois Medical District station, a station on the Chicago Transit Authority's Blue Line serving the above neighborhood; previously known as \"Medical Center\"\nTufts Medical Center (MBTA station), a subway and BRT station in Boston commonly referred to as \"Medical Center\"",
+  "raw_text_sha256": "3589edb0948cad3d8ab4be022c3e7536a9cd587d479da7e1fc5be0ea9bdedb8d",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

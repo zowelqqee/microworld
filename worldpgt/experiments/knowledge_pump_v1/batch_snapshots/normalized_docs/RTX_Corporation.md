@@ -1,8 +1,8 @@
 # RTX Corporation
 
 Source: https://en.wikipedia.org/wiki/RTX_Corporation
-Retrieved at: 2026-06-17T17:12:21Z
-Revision ID: 1359674585
+Retrieved at: 2026-06-22T09:12:09Z
+Revision ID: 1360271491
 Raw text SHA256: 3538924ec06f70ab92bd5616556dff1e3eb318a420731b49f6d247fe74b987e7
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

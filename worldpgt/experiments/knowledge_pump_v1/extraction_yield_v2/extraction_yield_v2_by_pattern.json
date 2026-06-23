@@ -1,15 +1,15 @@
 {
-  "acquired_active_v2": 23,
-  "acquired_by_v2": 22,
-  "developed_by_v2": 16,
-  "develops_inverse_v2": 16,
-  "founded_by_v2": 29,
-  "headquartered_in_v2": 31,
-  "lead_definition_v2": 244,
+  "acquired_active_v2": 36,
+  "acquired_by_v2": 44,
+  "developed_by_v2": 49,
+  "develops_inverse_v2": 49,
+  "founded_by_v2": 45,
+  "headquartered_in_v2": 60,
+  "lead_definition_v2": 684,
   "manufactured_by_v2": 1,
-  "operated_by_v2": 5,
-  "owned_by_v2": 6,
-  "publishes_direct_v2": 3,
-  "service_of_v2": 2,
-  "subsidiary_of_v2": 4
+  "operated_by_v2": 6,
+  "owned_by_v2": 10,
+  "publishes_direct_v2": 6,
+  "service_of_v2": 3,
+  "subsidiary_of_v2": 5
 }

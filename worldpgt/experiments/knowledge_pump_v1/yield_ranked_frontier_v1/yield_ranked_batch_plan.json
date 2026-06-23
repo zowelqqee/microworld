@@ -5,9 +5,10 @@
   "titles": [
     {
       "title": "Jeff Bezos",
-      "score": 111.333,
+      "score": 151.333,
       "positive_reasons": [
         "source_page_produced_accepted_fact",
+        "in_high_yield_source_pages",
         "subject_of_accepted_fact",
         "encyclopedic_entity_form",
         "relation_or_overlay_source",
@@ -33,58 +34,10 @@
       "expected_yield_class": "high"
     },
     {
-      "title": "North American Aviation",
-      "score": 43.04,
-      "positive_reasons": [
-        "object_of_accepted_fact",
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "medium"
-    },
-    {
-      "title": "Marconi Electronic Systems",
-      "score": 33.02,
-      "positive_reasons": [
-        "subject_of_accepted_fact",
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [
-        "adjacent_to_low_yield_source_page"
-      ],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Aerospace manufacturer",
-      "expected_yield_class": "medium"
-    },
-    {
-      "title": "Deutsche Bank",
-      "score": 28.04,
-      "positive_reasons": [
-        "object_of_accepted_fact",
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [
-        "adjacent_to_low_yield_source_page"
-      ],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Forbes",
-      "expected_yield_class": "medium"
-    },
-    {
       "title": "Michael Bloomberg",
-      "score": 21.333,
+      "score": 81.333,
       "positive_reasons": [
+        "source_page_produced_accepted_fact",
         "subject_of_accepted_fact",
         "object_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -112,3162 +65,14 @@
         "is_stale": false
       },
       "source_hint": "Bloomberg L.P.",
-      "expected_yield_class": "medium"
-    },
-    {
-      "title": "CubeSat Database",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Customer Service",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Danish American",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "DC Comics",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Amazon",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dell Technologies",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Deutsche Post DHL",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Digital Media City",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dow Jones News Services",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Electric Power Research Institute",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Enterprise Search",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Aviation Administration",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Reserve",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Economy of the United States",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Trade Commission",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Ford Technologies Limited",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Founder Group",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Founder",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "G. Jones",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Supercharger",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Entrepreneurship Monitor",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Entrepreneurship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Innovation",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Positioning System",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Settlement",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "GNU General Public License",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Howard Hughes",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Informix CEO Phil White",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "International Astronomical Union",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Italian-American United States Army Air Corps",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jaguar I-Pace",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Tesla Model Y",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James J. Hill",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James Lovell",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James M. Landis",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James Webb",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jefferies Financial Group",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Castaing",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Stock exchange",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Frederic Daniell",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Electric battery",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Garvey",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Goodenough",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Lithium-ion battery",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Law",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Stock exchange",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Maynard Keynes",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Economy of the United States",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John McCain",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Nicolay",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Kings Canyon Unified School District",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Lehman Brothers",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Economy of the United States",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Lockheed Constellation",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Supercharger",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Major General Samuel C. Phillips",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Mark Bezos",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Blue Origin",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Mark Mateschitz",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "The World's Billionaires",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Monitoring Constellation",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Napa Valley",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA Associate Administrator Bill Gerstenmaier",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA COTS",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Falcon 9",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA Saturn",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX Starship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA Stennis",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Blue Origin",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Native American",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York Attorney General Eliot Spitzer",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "News Report",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Social media",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American Charging Standard",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Tesla Model Y",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American Industry Classification System",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North Carolina",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Social media",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North Korea",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Spacecraft",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Paul Allen",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Paul Merolla",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Neuralink",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "PeopleSoft Enterprise",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Precision Neuroscience",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Neuralink",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Donald Trump",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Eisenhower",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Jimmy Carter",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Solar power",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Kennedy",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Ralph White",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Leadership",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Registered Representative",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "River Oaks Elementary School",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Ronald Lipitt",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Leadership",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Rosen Electronics Letter",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "S&P Dow Jones Indices",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Market capitalization",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Secure Enterprise",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Secure Enterprise Search",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Siebel Systems",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Silicon Docks",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Silicon Hills",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Silicon Wadi",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Sir James Dyson",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "South Shore High School",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Starlink Group",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Falcon 9",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Starship HLS",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Blue Origin",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Starship Human Landing System",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX Starship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Swarm Technologies",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Transportation Technologies",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Hyperloop",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "United Parcel Service",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Public company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "United States President George",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "US President Ronald Reagan",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "VSS Enterprise",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space tourism",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Walker Constellation",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Washington School",
-      "score": 18.04,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Brain–computer interface",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "AI Database",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Astronomical Union",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Attorney General",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Attorney General Eliot",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Aviation Administration",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bentley Motors",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Board System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Social media",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Broadcasting System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space tourism",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "BSE Limited",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Stock exchange",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bulletin Board System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Social media",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Canyon Unified School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "CEO Mark",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "CEO Phil White",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Charging System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Tesla Model Y",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Classification System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Constellation Visualization",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Crew Transportation System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Deutsche Post",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Digital Equipment",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Digital Media",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Technology company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dow Jones Indices",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Market capitalization",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dow Jones News",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dragon Demo-1",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Falcon 9",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dragon Demo-2",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Falcon 9",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Electric Power",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Electric Power Research",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Electronics Letter",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Elementary School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Enterprise Manager",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Exploration Technologies",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Aviation",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Photovoltaic",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Solar power",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Photovoltaic Utilization",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Solar power",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Federal Trade",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Financial Group",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Fixed Service",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Ford Technologies",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Eliot",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Eliot Spitzer",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Public",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Public License",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Samuel",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General Samuel C",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Business",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Business Unit",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Entrepreneurship",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Entrepreneurship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Industry",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Industry Classification",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Positioning",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Strike",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "GNU General",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "GNU General Public",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Human Landing System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX Starship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Independent System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Independent System Operator",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Industry Classification System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Italian-American United",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Italian-American United States",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James Dyson",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James J",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James M",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Joaquin Valley",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Frederic",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Electric battery",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Hay",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Maynard",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Economy of the United States",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Walker",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jones Indices",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Market capitalization",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jones News",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jones News Services",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Major General Samuel",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Motors Limited",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Mountain View Community",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA Associate",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NASA Associate Administrator",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York Attorney",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "News DC",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "News DC Bureau",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "News Service",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "News Services",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American Charging",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Tesla Model Y",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American Industry",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy industry",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American International",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Tesla Model S",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "North American X-15",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "NoSQL Database",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Oaks Elementary School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Observing System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Palmetto High School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Parcel Service",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Public company",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Phil White",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Positioning System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Satellite constellation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Post News",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Post News Service",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Abraham",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Abraham Lincoln",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Donald",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Jimmy",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Solar power",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Ronald",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "President Ronald Reagan",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Prompt Global",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Prompt Global Strike",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Public License",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Rosen Electronics",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Oracle Corporation",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "S&P Dow Jones",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Market capitalization",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "San Joaquin Valley",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "School District",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Shore High School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Sir James",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Smith Electric",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Starship Human",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX Starship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Starship Human Landing",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX Starship",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Stat News",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Neuralink",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "States President",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "States President George",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Student Science",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Student Science Training",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Jeff Bezos",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "System Operator",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Energy storage",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Task Group",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "NASA",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Technologies Limited",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Tokyo Broadcasting System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Space tourism",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Transportation System",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "U.S. President",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "U.S. President Abraham",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Unified School",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Unified School District",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "United States President",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "US President",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "US President Ronald",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Private spaceflight",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "View Community",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "View Community Shuttles",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Battery electric vehicle",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Walt Disney",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Subsidiary",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Washington Post News",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "White House",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Bloomberg News",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "York Attorney",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "York Attorney General",
-      "score": 18.02,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "Initial public offering",
-      "expected_yield_class": "low"
+      "expected_yield_class": "high"
     },
     {
       "title": "Elon Musk",
-      "score": 16.333,
+      "score": 76.333,
       "positive_reasons": [
+        "source_page_produced_accepted_fact",
+        "in_high_yield_source_pages",
         "subject_of_accepted_fact",
         "encyclopedic_entity_form",
         "relation_or_overlay_source",
@@ -3276,7 +81,8 @@
         "staleness_boost:6.33"
       ],
       "negative_reasons": [
-        "low_yield_source_page_recheck_penalty"
+        "low_yield_source_page_recheck_penalty",
+        "historically_failed_fetch"
       ],
       "already_fetched": false,
       "recheck_required": true,
@@ -3293,258 +99,3502 @@
         "is_stale": false
       },
       "source_hint": "Billionaire",
-      "expected_yield_class": "low"
+      "expected_yield_class": "high"
     },
     {
-      "title": "CoO2 C6",
-      "score": 8.04,
+      "title": "Lew Rockwell",
+      "score": 73.3,
       "positive_reasons": [
+        "subject_of_accepted_fact",
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "Roger Williams",
+      "score": 73.24,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "Robert Noyce",
+      "score": 73.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "United States of America",
+      "score": 48.3,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Louisiana Creoles",
+      "score": 48.22,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Officer Training School",
+      "score": 48.18,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "American conservative",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "New York Observer",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "American Spectator",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Daily Caller",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Frank Comerford Walker",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Gary Earl Johnson",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "John Diebold",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "New York Review of Books",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Skydance Media",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Air Force Reserve Command",
+      "score": 43.36,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "The Des Moines Register",
+      "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Brooke Rollins",
+      "score": 43.24,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Mao Zedong",
+      "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Samuel Gompers",
+      "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Frank Collin",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Margaret Sanger",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Providence Plantations",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Claude Shannon",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Marvel Comics",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Southern Baptist",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Canadian National",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Henry VIII",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Kurt Mertig",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Wallace Fard Muhammad",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "The Nation",
+      "score": 38.42,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Lithium-ion battery",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Cornelius Vanderbilt",
-      "score": 8.04,
+      "title": "Socialist Labor Party",
+      "score": 38.18,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Business magnate",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "COTS Demo Flight",
-      "score": 8.04,
+      "title": "Carnegie Steel",
+      "score": 38.14,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "SpaceX",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Dahomey Amazons",
-      "score": 8.04,
+      "title": "Prohibition era",
+      "score": 38.14,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Amazon",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Daimler-Benz DB",
-      "score": 8.04,
+      "title": "Enrico Tonti",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Supercharger",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Damage Caused",
-      "score": 8.04,
+      "title": "Epic Games",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Space industry",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Daryl Chapin",
-      "score": 8.04,
+      "title": "Jean Fayeton",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Solar power",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "Data Banks",
-      "score": 8.04,
+      "title": "Standing Rules of the Senate",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "David Ellison",
-      "score": 8.04,
+      "title": "Telewizja Polska",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Larry Ellison",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "David Koch",
-      "score": 8.04,
+      "title": "The Antitrust Paradox",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "The World's Billionaires",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "David McClelland",
-      "score": 8.04,
+      "title": "Willem van Biljon",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Leadership",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "David Rockefeller",
-      "score": 8.04,
+      "title": "William Randolph I",
+      "score": 38.12,
       "positive_reasons": [
+        "subject_of_accepted_fact",
         "encyclopedic_entity_form"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "The World's Billionaires",
-      "expected_yield_class": "low"
+      "source_hint": "",
+      "expected_yield_class": "medium"
     },
     {
-      "title": "David Saperstein",
-      "score": 8.04,
+      "title": "Concurrent resolution",
+      "score": 18.98,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "United States Securities and Exchange Commission",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "De Press",
-      "score": 8.04,
+      "title": "Internal Revenue Service",
+      "score": 18.68,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Product",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "Decision Directive",
-      "score": 8.04,
+      "title": "New York City Subway",
+      "score": 18.5,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Private spaceflight",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "Decision Directive Number",
-      "score": 8.04,
+      "title": "New York Civil Liberties Union",
+      "score": 18.5,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Private spaceflight",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "Defense Advanced Research Projects Agency",
-      "score": 8.04,
+      "title": "Anglican Church of Southern Africa",
+      "score": 18.48,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Brain–computer interface",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "Del Valle",
-      "score": 8.04,
+      "title": "Audible (service)",
+      "score": 18.48,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Neuralink",
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
-      "title": "Delaware Chancery Court Chief Judge Kathaleen",
-      "score": 8.04,
+      "title": "Bloomberg Beta",
+      "score": 18.48,
       "positive_reasons": [
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
-      "source_hint": "Neuralink",
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bloomberg Industry Group",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bloomberg Innovation Index",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bloomberg View",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "BNN Bloomberg",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Business jet",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Charitable organization",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Claude Elwood Shannon",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Congregation Emanu-El of New York",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Culture of New York City",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Packard",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Watson Taylor",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Willetts",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Electoral history of Michael Bloomberg",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Frank Baldwin Jewett",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Frank Julian Sprague",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Frank Kreith",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Gordon A. Cain",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Governor of the Bank of England",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Harry Alonzo Winne",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Hebrew school",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Henry Marion Howe",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Howard University College of Medicine",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Investment bank",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "James Douglas (businessman)",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "James Mattis",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jewish Council for Public Affairs",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jimmy Walker",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John A. Swanson",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Edson Sweet",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Frank Stevens",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Fritz",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Fritz Medal",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John J. Marchi",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Joseph Carty",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John L. Savage",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John R. Suman",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Ripley Freeman",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John W. Fisher",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Johns Hopkins School of Medicine",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "M. C. Frank Chang",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Mark Joseph Stern",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Mary Barra",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Mass media in Russia",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Master of Business Administration",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Mayoralty of Eric Adams",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Mayoralty of Michael Bloomberg",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Meharry Medical College",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Michael Douglas",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Michael Lawrence Haider",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "National Enquirer",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "National League of Cities",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "National Museum of American History",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "National September 11 Memorial & Museum",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York City Board of Education",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York City Hall",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York City mayoral elections",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York City Public Advocate",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York County District Attorney",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "New York Police Department",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Observer Media",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Ohio River Valley",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Palantir Technologies",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Paul C. W. Chu",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Paul Dyer Merica",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "PBS News",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "People (magazine)",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Prodigy (online service)",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Public education",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert F. Wagner Jr",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert G. Heitz",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert Hadfield",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert N. Noyce",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert S. Langer",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Robert Woolston Hunt",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Russian-occupied territories of Ukraine",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Senior Advisor to the President of the United States",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Southampton, New York",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Stem-cell research",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Steve Chen",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Super Bowl commercials",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "The Economic Times",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "The Portable Bloomberg: The Wit and Wisdom of Michael Bloomberg",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Thomas O. Paine",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Trinity College Dublin",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Universal basic income",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Van Jones",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Walter H. Aldridge",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "William Henry White",
+      "score": 18.48,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Anti-competitive practices",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Artificial general intelligence",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Baccalaureate service",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Baker Library/Bloomberg Center",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Beechcraft Super King Air",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bezos Family Foundation",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bilderberg Group",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bill Thompson (New York)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bloomberg Distinguished Professorships",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Bloomberg Global Business Forum",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Blue Coat Systems",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Blue Origin Federation, LLC v. United States",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Boring test tunnel",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Born Rich (2003 film)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Box Office Mojo",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Breakthrough Energy Ventures",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "British politics",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Brussels Times",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Business career of Elon Musk",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Business plan",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "C40 Cities Climate Leadership Group",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Campaign for Tobacco-Free Kids",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Cathie Martin",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Centre for the Study of Existential Risk",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Christopher North (businessman)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Cobalt Networks",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Community Banana Stand",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Congress of Essential Workers",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Crash test dummy",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Criticism of Amazon",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Dassault Falcon 900",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Data security",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Broder",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Dinkins",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Filo",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Geffen",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Gobel",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Maraniss",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David O. Sacks",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Pearce (philosopher)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Pecker",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Richardson (physicist)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "David Shipley",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Defense Innovation Advisory Board",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Defense Innovation Board",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Developing world",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Dialog (organization)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Diana Taylor (superintendent)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Digital Insight",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Digital Photography Review",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Direct mail",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Drug test",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Dynamo (storage system)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "E-commerce payment system",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Early childhood education",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Edwardsville Amazon warehouse collapse",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Elizabeth Benjamin (journalist)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Eric Berger (journalist)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Eric M. Jackson",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Existential risk from artificial intelligence",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Facial recognition system",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Falcon Heavy test flight",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Fellow of the Royal Society",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Foresight Institute",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Foundation (book series)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Foundation (nonprofit)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Foundation Center",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Frank Wilczek",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Fred Hutchinson Cancer Research Center",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "FTC v. Amazon",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Future of Humanity Institute",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Future of Life Institute",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "General partner",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Georgina Bloomberg",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Global Crossing",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Global Healthcare",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Greylock Partners",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Harvard Business Review",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Henry Blodget",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "History of Amazon",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "History of New York City",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Honorary Knight Commander of the Order of the British Empire",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Institute for Ethics and Emerging Technologies",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Internet America",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "IRT Lexington Avenue Line",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jack Grubman",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jack Warner Estate",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "James H. Clark",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "James Hughes (sociologist)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jeff Bezos phone hacking incident",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jefferson Awards Foundation",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jewish News",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Jewish Telegraph Agency",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Francis Hylan",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Harris (bioethicist)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John P. O'Brien",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Purroy Mitchel",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Smol",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "John Speakman",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Johns Hopkins Bloomberg School of Public Health",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Joint custody (United States)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Joint Enterprise Defense Infrastructure",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Julie Wainwright",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "K. Eric Drexler",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Kindle Direct Publishing",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Kiva (organization)",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Leverhulme Centre for the Future of Intelligence",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Living Legends of Aviation",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Lori Garver",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "low"
+    },
+    {
+      "title": "Machine Intelligence Research Institute",
+      "score": 18.46,
+      "positive_reasons": [
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
       "expected_yield_class": "low"
     },
     {
       "title": "Bernard Arnault",
-      "score": -13.667,
+      "score": 11.333,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -3553,8 +3603,7 @@
         "staleness_boost:6.33"
       ],
       "negative_reasons": [
-        "low_yield_source_page_recheck_penalty",
-        "adjacent_to_low_yield_source_page"
+        "historically_failed_fetch"
       ],
       "already_fetched": false,
       "recheck_required": true,

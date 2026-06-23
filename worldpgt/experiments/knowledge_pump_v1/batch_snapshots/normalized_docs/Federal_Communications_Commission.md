@@ -1,7 +1,7 @@
 # Federal Communications Commission
 
 Source: https://en.wikipedia.org/wiki/Federal_Communications_Commission
-Retrieved at: 2026-06-17T17:19:22Z
+Retrieved at: 2026-06-22T08:50:06Z
 Revision ID: 1354106477
 Raw text SHA256: fbfe6f18c23f9d8ec3ac73f89d22359fc8a07611e095ba1339e9221d12d2ee3b
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

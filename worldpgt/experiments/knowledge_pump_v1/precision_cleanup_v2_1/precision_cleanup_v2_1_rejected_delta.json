@@ -22,6 +22,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Delta II",
+      "definition": "expendable launch system designed",
+      "predicate": "is_a",
+      "source_page": "Delta II",
+      "evidence_text": "Delta II was an expendable launch system designed and built by McDonnell Douglas, sometimes known as the Thorad Delta 1.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Delta II was an expendable launch system designed and built by McDonnell Douglas, sometimes known as the Thorad Delta 1.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Embraer E-Jet E2 family",
       "definition": "series of four-abreast narrow-body regional jet airliners designed",
       "predicate": "is_a",
@@ -45,7 +65,7 @@
       "subject": "Ford F-Series",
       "definition": "series of light-duty trucks marketed",
       "predicate": "is_a",
-      "source_page": "Ford F-150",
+      "source_page": "Ford F-250",
       "evidence_text": "The Ford F-Series is a series of light-duty trucks marketed and manufactured by the Ford Motor Company since model year 1948 as a range of full-size pickup trucks — positioned between Ford's Ranger and Super Duty pickup trucks.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -55,6 +75,26 @@
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
       "evidence_span": "The Ford F-Series is a series of light-duty trucks marketed and manufactured by the Ford Motor Company since model year 1948 as a range of full-size pickup trucks — positioned between Ford's Ranger and Super Duty pickup trucks.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_truncated_participle"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Pershing II Weapon System",
+      "definition": "solid-fueled two-stage medium-range ballistic missile designed",
+      "predicate": "is_a",
+      "source_page": "Pershing II",
+      "evidence_text": "The Pershing II Weapon System was a solid-fueled two-stage medium-range ballistic missile designed and built by Martin Marietta to replace the Pershing 1a Field Artillery Missile System as the United States Army's primary nuclear-capable theater-level weapon.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Pershing II Weapon System was a solid-fueled two-stage medium-range ballistic missile designed and built by Martin Marietta to replace the Pershing 1a Field Artillery Missile System as the United States Army's primary nuclear-capable theater-level weapon.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_truncated_participle"

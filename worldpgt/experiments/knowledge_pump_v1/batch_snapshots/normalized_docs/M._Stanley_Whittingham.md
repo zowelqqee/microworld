@@ -1,0 +1,72 @@
+# M. Stanley Whittingham
+
+Source: https://en.wikipedia.org/wiki/M._Stanley_Whittingham
+Retrieved at: 2026-06-22T08:21:48Z
+Revision ID: 1351154262
+Raw text SHA256: de31f9f70eda6ef73efa5c3fa7c5bb7182bfda47a90db4256a0689867dc56a44
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Sir Michael Stanley Whittingham (born 22 December 1941) is a British-American chemist. He is a professor of chemistry and director of both the Institute for Materials Research and the Materials Science and Engineering program at Binghamton University, State University of New York. He also serves as director of the Northeastern Center for Chemical Energy Storage (NECCES) of the U.S. Department of Energy at Binghamton. He was awarded the Nobel Prize in Chemistry in 2019 alongside Akira Yoshino and John B. Goodenough.
+Whittingham is a key figure in the history of lithium-ion batteries, which are used in everything from mobile phones to electric vehicles. He discovered intercalation electrodes and thoroughly described intercalation reactions in rechargeable batteries in the 1970s. He holds the patents on the concept of using intercalation chemistry in high power-density, highly reversible lithium-ion batteries. He also invented the first rechargeable lithium metal battery (LMB), patented in 1977 and assigned to Exxon for commercialization in small devices and electric vehicles. Whittingham's rechargeable lithium metal battery is based on a LiAl anode and an intercalation-type TiS2 cathode. His work on lithium batteries laid the foundation for others' developments, so he is called the founding father of lithium-ion batteries.
+
+Education and career
+Whittingham was born in the Carlton suburb of Nottingham, England, on 22 December 1941. His father was a civil engineer, the first in the family to go to college. His mother Dorothy Mary (née Findley) was a chemist before marriage.  He was educated at Stamford School from 1951 to 1960, before going up to New College, Oxford to read chemistry. At the University of Oxford, he took his BA (1964), MA (1967), and DPhil (1968). After completing his graduate studies, Whittingham became a postdoctoral fellow at Stanford University. He worked 16 years for Exxon Research & Engineering Company and four years working for Schlumberger prior to becoming a professor at Binghamton University.
+From 1994 to 2000, he served as the university's vice provost for research. He also served as vice-chair of the Research Foundation of the State University of New York for six years. He is a Distinguished Professor of Chemistry and Materials Science and Engineering at Binghamton University. Whittingham was named Chief Scientific Officer of NAATBatt International in 2017.
+Whittingham co-chaired the DOE study of Chemical Energy Storage in 2007, and is a director of the Northeastern Center for Chemical Energy Storage (NECCES), a U.S. Department of Energy Energy Frontier Research Center (EFRC) at Binghamton. In 2014, NECCES was awarded $12.8 million, from the U.S. Department of Energy to help accelerate scientific breakthroughs needed to build the 21st-century economy. In 2018, NECCES was granted another $3 million by the Department of Energy to continue its research on batteries. The NECCES team is using the funding to improve energy-storage materials and to develop new materials that are "cheaper, environmentally friendly, and able to store more energy than current materials can".
+
+Research
+Whittingham and his boss, Fred Gamble, PhD, conceived the intercalation electrode. Exxon manufactured Whittingham's lithium-ion battery in the 1970s, based on a titanium disulfide cathode and a lithium-aluminum anode. The battery had high energy density and the diffusion of lithium ions into the titanium disulfide cathode was reversible, making the battery rechargeable. In addition, titanium disulfide has a particularly fast rate of lithium ion diffusion into the crystal lattice. Exxon threw its resources behind the commercialization of a Li/LiClO4/ TiS2 battery. However, safety concerns led Exxon to end the project. Whittingham and his team continued to publish their work in academic journals of electrochemistry and solid-state physics. He left Exxon in 1984, following Gamble to Schlumberger where he worked as a manager. In 1988, he became Professor at the Chemistry Department, Binghamton University, U.S. to pursue his academic interests.
+"All these batteries are called intercalation batteries. It’s like putting jam in a sandwich. In the chemical terms, it means you have a crystal structure, and we can put lithium ions in, take them out, and the structure’s exactly the same afterwards," Whittingham said. "We retain the crystal structure. That’s what makes these lithium batteries so good, allows them to cycle for so long."
+Lithium batteries have limited capacity because less than one lithium-ion/electron is reversibly intercalated per transition metal redox center. To achieve higher energy densities, one approach is to go beyond the one-electron redox intercalation reactions. Whittingham's research has advanced to multi-electron intercalation reactions, which can increase the storage capacity by intercalating multiple lithium ions. A few multi-electron intercalation materials have been successfully developed by Whittingham, like LiVOPO4/VOPO4. The multivalent vanadium cation (V3+V5+) plays an important role to accomplish the multi-electron reactions. These promising materials shine lights on the battery industry to increase energy density rapidly.
+Whittingham received the Young Author Award from The Electrochemical Society in 1971, the Battery Research Award in 2003, and was elected a Fellow in 2004. In 2010, he was listed as one of the Top 40 innovators for contributions to advancing green technology by Greentech Media. In 2012, Whittingham received the IBA Yeager Award for Lifetime Contribution to Lithium Battery Materials Research, and he was elected a Fellow of Materials Research Society in 2013. He was listed along with John B. Goodenough, for pioneering research leading to the development of the lithium-ion battery on a list of Clarivate Citation Laureates for the Nobel Prize in Chemistry by Thomson Reuters in 2015. In 2018, Whittingham was elected to the National Academy of Engineering, "for pioneering the application of intercalation chemistry for energy storage materials."
+In 2019, Whittingham, along with John B. Goodenough and Akira Yoshino, was awarded the 2019 Nobel Prize in Chemistry "for the development of lithium-ion batteries."
+
+Personal life
+Stanley is married to Dr. Georgina Whittingham, a professor of Spanish at the State University of New York at Oswego. He has two children, Michael Whittingham and Jenniffer Whittingham-Bras.
+
+Recognition
+2007 Chancellor's Award for Excellence in Scholarship and Creative Activities, and Outstanding Research Award, State University of New York
+2010 Award for Lifetime Contributions from the American Chemical Society
+2015 Thomson Reuters Citation Laureate
+2017 Senior Scientist Award from the International Society for Solid State Ionics
+2018 Turnbull Award from the Materials Research Society
+2018 Member National Academy of Engineering
+2019 Nobel Prize in Chemistry with John B. Goodenough and Akira Yoshino
+2020 Great Immigrants Award by the Carnegie Corporation of New York
+2023 VinFuture Grand Prize with Martin Green, Rachid Yazami and Akira Yoshino
+2024 Knighted in the 2024 King's Birthday Honours "for services to chemistry".
+
+Books
+J. B. Goodenough & M. S. Whittingham (1977). Solid State Chemistry of Energy Conversion and Storage. American Chemical Society Symposium Series #163. ISBN 978-0-8412-0358-7.
+G. G. Libowitz & M. S. Whittingham (1979). Materials Science in Energy Technology. Academic Press. ISBN 978-0-12-447550-2.
+M. S. Whittingham & A. J. Jacobson (1984). Intercalation Chemistry. Academic Press. ISBN 978-0-12-747380-2.
+D. L. Nelson, M. S. Whittingham and T. F. George (1987). Chemistry of High Temperature Superconductors. American Chemical Society Symposium Series #352. ISBN 978-0-8412-1431-6.
+M. A. Alario-Franco, M. Greenblatt, G. Rohrer and M. S. Whittingham (2003). Solid-state chemistry of inorganic materials IV. Materials Research Society. ISBN 978-1-55899-692-2.:  CS1 maint: multiple names: authors list (link)
+
+Most-cited papers
+(As of 2019:)
+
+Whittingham, M. S. (1976). "Electrical energy storage and intercalation chemistry". Science. 192 (4244): 1126–1127. Bibcode:1976Sci...192.1126W. doi:10.1126/science.192.4244.1126. PMID 17748676. S2CID 36607505.
+Whittingham, M. Stanley (1976). "The role of ternary phases in cathode reactions". Journal of the Electrochemical Society. 123 (3): 315–320. Bibcode:1976JElS..123..315W. doi:10.1149/1.2132817.
+Whittingham, M.Stanley (1978). "Chemistry of intercalation compounds: metal guests in chalcogenide hosts". Progress in Solid State Chemistry. 12 (1): 41–99. doi:10.1016/0079-6786(78)90003-1.
+Whittingham, M. Stanley (October 2004). "Lithium batteries and cathode materials" (PDF). Chemical Reviews. 104 (10): 4271–4301. doi:10.1021/cr020731c. PMID 15669156. S2CID 888879.
+Whittingham, M. Stanley (October 2014). "Ultimate limits to intercalation reactions for lithium batteries". Chemical Reviews. 114 (23): 11414–11443. doi:10.1021/cr5003003. PMID 25354149.
+Chirayil, Thomas; Zavalij, Peter Y.; Whittingham, M. Stanley (October 1998). "Hydrothermal synthesis of vanadium oxides". Chemistry of Materials. 10 (10): 2629–2640. doi:10.1021/cm980242m.
+Zavalij, Peter Y.; Whittingham, M. Stanley (October 1999). "Structural chemistry of vanadium oxides with open frameworks". Acta Crystallographica Section B. 55 (5): 627–663. Bibcode:1999AcCrB..55..627Z. doi:10.1107/S0108768199004000. PMID 10927405.
+Chen, Rongji; Zavalij, Peter; Whittingham, M. Stanley (June 1996). "Hydrothermal Synthesis and Characterization of KxMnO2·yH2O". Chemistry of Materials. 8 (6): 1275–1280. doi:10.1021/cm950550.
+Janauer, Gerald G.; Dobley, Arthur; Guo, Jingdong; Zavalij, Peter; Whittingham, M. Stanley (August 1996). "Novel tungsten, molybdenum, and vanadium oxides containing surfactant ions". Chemistry of Materials. 8 (8): 2096–2101. doi:10.1021/cm960111q.
+Yang, Shoufeng; Song, Yanning; Zavalij, Peter Y.; Stanley Whittingham, M. (March 2002). "Reactivity, stability and electrochemical behavior of lithium iron phosphates". Electrochemistry Communications. 4 (3): 239–244. doi:10.1016/S1388-2481(01)00298-3.
+Yang, Shoufeng; Zavalij, Peter Y.; Stanley Whittingham, M. (September 2001). "Hydrothermal synthesis of lithium iron phosphate cathodes". Electrochemistry Communications. 3 (9): 505–508. doi:10.1016/S1388-2481(01)00200-4.
+Whittingham, M. Stanley; Guo, Jing-Dong; Chen, Rongji; Chirayil, Thomas; Janauer, Gerald; Zavalij, Peter (January 1995). "The hydrothermal synthesis of new oxide materials". Solid State Ionics. 75: 257–268. doi:10.1016/0167-2738(94)00220-M.
+Petkov, V.; Zavalij, P. Y.; Lutta, S.; Whittingham, M. S.; Parvanov, V.; Shastri, S. (February 2004). "Structure beyond Bragg: Study of V2O5 nanotubes" (PDF). Physical Review B. 69 (8): 085410 (1–6). Bibcode:2004PhRvB..69h5410P. doi:10.1103/PhysRevB.69.085410. Archived from the original (PDF) on 9 October 2019.
+Hong, Jian; Wang, C. S.; Chen, X.; Upreti, S.; Whittingham, M. Stanley (February 2009). "Vanadium modified LiFePO4 cathode for Li-ion batteries". Electrochemical and Solid-State Letters. 12 (2): A33–A38. doi:10.1149/1.3039795.
+Zhou, Hui; Upreti, Shailesh; Chernova, Natasha A.; Hautier, Geoffroy; Ceder, Gerbrand; Whittingham, M. Stanley (December 2010). "Iron and Manganese Pyrophosphates as cathodes for Lithium-Ion batteries" (PDF). Chemistry of Materials. 23 (2): 293–300. doi:10.1021/cm102922q.
+
+References
+
+External links
+
+M. Stanley Whittingham's profile at Binghamton University website
+M. Stanley Whittingham's interview [1] at École supérieure de physique et de chimie industrielles de la ville de Paris history of science website
+M. Stanley Whittingham on Nobelprize.org  including the Nobel Lecture on Sunday 8 December 2019 The Origins of the Lithium Battery

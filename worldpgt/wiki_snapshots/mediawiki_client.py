@@ -71,14 +71,31 @@ class MediaWikiClient:
             "action": "query",
             "format": "json",
             "formatversion": "2",
-            "prop": "extracts|revisions|info",
+            "prop": "extracts|revisions|info|links",
             "explaintext": "1",
             "exsectionformat": "plain",
             "rvprop": "ids|timestamp",
             "inprop": "url",
+            "plnamespace": "0",
+            "pllimit": "max",
             "redirects": "1",
             "titles": title,
         }
+        return self.endpoint + "?" + urllib.parse.urlencode(params)
+
+    def build_links_api_url(self, title: str, continuation: dict | None = None) -> str:
+        params = {
+            "action": "query",
+            "format": "json",
+            "formatversion": "2",
+            "prop": "links",
+            "plnamespace": "0",
+            "pllimit": "max",
+            "redirects": "1",
+            "titles": title,
+        }
+        if continuation:
+            params.update({str(k): str(v) for k, v in continuation.items()})
         return self.endpoint + "?" + urllib.parse.urlencode(params)
 
     def fetch_page(self, title: str) -> PageSnapshot:
@@ -99,12 +116,52 @@ class MediaWikiClient:
                 self.network_calls += 1
                 with urllib.request.urlopen(request, timeout=self.timeout_sec) as response:
                     body = response.read().decode("utf-8")
-                return self._snapshot_from_response(title, api_url, body)
+                snapshot = self._snapshot_from_response(title, api_url, body)
+                if snapshot.fetch_status == "success":
+                    snapshot.links = self._fetch_remaining_links(
+                        snapshot.normalized_title or title,
+                        body,
+                        snapshot.links,
+                    )
+                return snapshot
             except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as exc:
                 last_error = str(exc)
                 if attempt >= self.retries:
                     break
         return self._error_snapshot(title, api_url, last_error)
+
+    def _fetch_remaining_links(self, title: str, first_body: str, links: list[str]) -> list[str]:
+        out: list[str] = []
+        seen: set[str] = set()
+        for link in links:
+            key = link.casefold()
+            if key not in seen:
+                out.append(link)
+                seen.add(key)
+        try:
+            continuation = json.loads(first_body).get("continue") or {}
+        except (json.JSONDecodeError, AttributeError):
+            continuation = {}
+        while continuation.get("plcontinue"):
+            url = self.build_links_api_url(title, continuation)
+            try:
+                request = urllib.request.Request(url, headers={"User-Agent": self.user_agent})
+                self.network_calls += 1
+                with urllib.request.urlopen(request, timeout=self.timeout_sec) as response:
+                    body = response.read().decode("utf-8")
+                data = json.loads(body)
+            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError):
+                break
+            pages = data.get("query", {}).get("pages", [])
+            page = pages[0] if pages else {}
+            for item in page.get("links") or []:
+                link = str(item.get("title") or "").strip()
+                key = link.casefold()
+                if link and key not in seen:
+                    out.append(link)
+                    seen.add(key)
+            continuation = data.get("continue") or {}
+        return out
 
     def _snapshot_from_response(self, requested_title: str, api_url: str, body: str) -> PageSnapshot:
         retrieved_at = utc_now_iso()
@@ -119,6 +176,11 @@ class MediaWikiClient:
             revision = revisions[0] if revisions else {}
             revision_id = revision.get("revid")
             timestamp = str(revision.get("timestamp") or "")
+            links = [
+                str(link.get("title") or "").strip()
+                for link in (page.get("links") or [])
+                if str(link.get("title") or "").strip()
+            ]
             status = "missing" if missing else "success"
             error = "page_missing" if missing else ""
             sha = hashlib.sha256(raw_text.encode("utf-8")).hexdigest() if raw_text else ""
@@ -137,6 +199,7 @@ class MediaWikiClient:
                 license_note=LICENSE_NOTE,
                 fetch_status=status,
                 error=error,
+                links=links,
             )
         except (json.JSONDecodeError, TypeError, KeyError) as exc:
             return self._error_snapshot(requested_title, api_url, f"parse_error:{exc}")
@@ -157,4 +220,3 @@ class MediaWikiClient:
             fetch_status="error",
             error=error,
         )
-

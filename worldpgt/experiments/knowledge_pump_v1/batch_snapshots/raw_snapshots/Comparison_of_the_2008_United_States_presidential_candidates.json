@@ -1,0 +1,16 @@
+{
+  "title": "Comparison of the 2008 United States presidential candidates",
+  "normalized_title": "Comparison of the 2008 United States presidential candidates",
+  "pageid": null,
+  "revision_id": null,
+  "timestamp": "",
+  "source_url": "https://en.wikipedia.org/wiki/Comparison_of_the_2008_United_States_presidential_candidates",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo%7Clinks&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&plnamespace=0&pllimit=max&redirects=1&titles=Comparison+of+the+2008+United+States+presidential+candidates",
+  "retrieved_at": "2026-06-23T01:23:25Z",
+  "raw_text": "",
+  "raw_text_sha256": "",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests",
+  "links": []
+}

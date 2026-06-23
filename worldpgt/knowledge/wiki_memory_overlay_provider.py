@@ -93,6 +93,21 @@ class WikiMemoryOverlayProvider:
             if _normalize(d.get("subject", "")) == norm:
                 self._items_used += 1
                 return d
+        entity = self.get_entity(subject)
+        if entity:
+            candidate_subjects = [
+                entity.get("label", ""),
+                entity.get("source_page", ""),
+                *(entity.get("aliases") or []),
+            ]
+            for candidate in candidate_subjects:
+                candidate_norm = _normalize(candidate)
+                if not candidate_norm or candidate_norm == norm:
+                    continue
+                for d in self._definitions:
+                    if _normalize(d.get("subject", "")) == candidate_norm:
+                        self._items_used += 1
+                        return d
         return None
 
     def get_relations(

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -16,6 +17,75 @@ from worldpgt.self_ingestion.conflict_detector import (
 
 def _norm(s: str) -> str:
     return " ".join((s or "").strip().lower().split())
+
+
+_HONORIFIC_RE = re.compile(r"^(?:sir|dame|dr\.?|professor|prof\.?)\s+", re.IGNORECASE)
+_NAME_TOKEN_RE = re.compile(r"^[A-Z][A-Za-z'’-]*(?:-[A-Z][A-Za-z'’-]*)?$")
+
+
+def _name_tokens(name: str) -> list[str]:
+    return [tok for tok in _HONORIFIC_RE.sub("", name or "").strip().split() if tok]
+
+
+def _is_three_part_person_name(name: str) -> bool:
+    tokens = _name_tokens(name)
+    return len(tokens) == 3 and all(_NAME_TOKEN_RE.match(tok) for tok in tokens)
+
+
+def _is_two_part_person_name(name: str) -> bool:
+    tokens = _name_tokens(name)
+    return len(tokens) == 2 and all(_NAME_TOKEN_RE.match(tok) for tok in tokens)
+
+
+def _same_last_name(short_name: str, full_name: str) -> bool:
+    short_tokens = _name_tokens(short_name)
+    full_tokens = _name_tokens(full_name)
+    return bool(short_tokens and full_tokens and short_tokens[-1] == full_tokens[-1])
+
+
+def _augment_full_name_aliases(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Add full-name definition subjects as aliases to matching entity cards.
+
+    This keeps the alias repair in the ingestion/pump merge path rather than in
+    a one-off artifact edit. The match is intentionally narrow: same source
+    page, two-part person-like entity label, three-part person-like definition
+    subject, and identical last token.
+    """
+
+    definitions_by_source: dict[str, list[str]] = {}
+    for item in items:
+        if item.get("overlay_type") != "overlay_definition":
+            continue
+        subject = str(item.get("subject") or "").strip()
+        source_page = str(item.get("source_page") or "").strip()
+        if source_page and _is_three_part_person_name(subject):
+            definitions_by_source.setdefault(_norm(source_page), []).append(subject)
+
+    if not definitions_by_source:
+        return items
+
+    augmented: list[dict[str, Any]] = []
+    for item in items:
+        if item.get("overlay_type") != "overlay_entity":
+            augmented.append(item)
+            continue
+        label = str(item.get("label") or "").strip()
+        source_page = str(item.get("source_page") or "").strip()
+        candidates = definitions_by_source.get(_norm(source_page), [])
+        if not _is_two_part_person_name(label) or not candidates:
+            augmented.append(item)
+            continue
+        aliases = list(item.get("aliases") or [])
+        changed = False
+        for full_name in candidates:
+            if _same_last_name(label, full_name) and full_name != label and full_name not in aliases:
+                aliases.insert(0, full_name)
+                changed = True
+        if changed:
+            item = dict(item)
+            item["aliases"] = aliases
+        augmented.append(item)
+    return augmented
 
 
 def overlay_key(item: dict[str, Any]) -> tuple:
@@ -251,6 +321,7 @@ def merge_with_fresh_deltas(
         legacy_snapshot_delta, legacy_relation_rows
     )
     legacy_delta = _merge_legacy_items(base, legacy_items)
+    fresh_snapshot_overlay_items = _augment_full_name_aliases(fresh_snapshot_overlay_items)
 
     fresh_relation_items: list[dict[str, Any]] = []
     relation_rejected: list[dict[str, Any]] = []

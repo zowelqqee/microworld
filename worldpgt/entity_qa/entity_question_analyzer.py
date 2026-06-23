@@ -247,6 +247,16 @@ _PASSIVE_VERB_PREDICATE: dict[str, str] = {
 
 _SEMANTIC_HIGH_CONFIDENCE = 0.75
 
+# Open-information openers for the synthesis fallback. Deliberately excludes
+# yes/no and conditional starts (is/are/will/does/since/if) so over-inference
+# and volatility traps keep auditing.
+_OPEN_INFO_OPENER_RE = re.compile(
+    r"^(?:tell\s+me\b|what\s+do\s+you\s+know\b|what\s+can\s+you\b|"
+    r"what'?s\s+(?:the\s+)?(?:deal|story)\b|describe\b|give\s+me\b|"
+    r"overview\b|anything\s+(?:else\s+)?about\b)",
+    re.IGNORECASE,
+)
+
 # verb -> predicate mapping
 _VERB_PREDICATE: dict[str, str] = {
     "produce": "produces",
@@ -730,6 +740,24 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    # Synthesis fallback: rather than auditing immediately, if the question is
+    # an open information request ("tell me about ...", "what's the deal with
+    # ...") that names an entity we recognise, hand it to the synthesis layer.
+    # Yes/no and assertion phrasings never match the opener, so adversarial
+    # over-inference traps continue to audit.
+    if semantic.entity_a and _OPEN_INFO_OPENER_RE.match(q):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="open_synthesis",
+            subject=semantic.entity_a,
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
     # Default: unsupported
     return AnalyzedEntityQuestion(
         question=q,
@@ -759,6 +787,19 @@ def _analyze_semantic(
     question: str,
     semantic: SemanticQuery,
 ) -> Optional[AnalyzedEntityQuestion]:
+    if semantic.query_type == "open_synthesis" and semantic.entity_a:
+        return AnalyzedEntityQuestion(
+            question=question,
+            intent="open_synthesis",
+            subject=semantic.entity_a,
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+            semantic_query=semantic,
+        )
+
     if semantic.confidence < _SEMANTIC_HIGH_CONFIDENCE:
         return None
 
@@ -822,6 +863,21 @@ def _analyze_semantic(
             r"^(?:what|which)\b.*\bdid\s+.+?\s+found\b",
             question,
             re.IGNORECASE,
+        ):
+            predicate_hint = "founded"
+        if (
+            predicate_hint == "founded_by"
+            and semantic is not None
+            and semantic.unknown_position == "object"
+            and semantic.entity_a is not None
+            and f"did {semantic.entity_a.lower()}" in question.lower()
+        ):
+            predicate_hint = "founded"
+        if (
+            predicate_hint == "founded_by"
+            and semantic is not None
+            and semantic.unknown_position == "object"
+            and re.search(r"\bdid\b", question, re.IGNORECASE)
         ):
             predicate_hint = "founded"
         return AnalyzedEntityQuestion(

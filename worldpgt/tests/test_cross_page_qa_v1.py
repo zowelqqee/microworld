@@ -169,7 +169,7 @@ def test_musk_connected_to_starlink_matches_csv(planner):
     decision, answer = _answer(planner, "How is Elon Musk connected to Starlink?")
     assert decision == _csv_decision("How is Elon Musk connected to Starlink?")
     if decision == "audit":
-        assert "cannot answer" in answer.lower()
+        assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
     else:
         # If ever answered, it must be an explicit/honest path, never hallucinated.
         assert "in the overlay" in answer.lower()
@@ -215,7 +215,7 @@ def test_can_weak_links_prove_claims(planner):
 def test_current_stock_price_audits(planner):
     decision, answer = _answer(planner, "What is Tesla's current stock price through the overlay?")
     assert decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_universal_rockets_audits(planner):

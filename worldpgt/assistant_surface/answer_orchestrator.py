@@ -43,6 +43,9 @@ from worldpgt.cross_page_qa.cross_page_question_analyzer import analyze as analy
 from worldpgt.entity_qa.entity_answer_planner import EntityAnswerPlanner
 from worldpgt.entity_qa.entity_answer_renderer import render as render_entity
 from worldpgt.entity_qa.entity_question_analyzer import analyze as analyze_entity
+from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
+from worldpgt.query_engine import executor as qe_executor
+from worldpgt.query_engine import plan_builder as qe_plan_builder
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 
 # Static, deterministic policy explanations (no factual claims, no overlay data).
@@ -96,12 +99,15 @@ class AnswerOrchestrator:
         if self.ontology_layer_path is None and DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH.is_file():
             self.ontology_layer_path = str(DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH)
         ontology_layer_items = _load_ontology_layer(self.ontology_layer_path)
+        self._ontology_layer_items = ontology_layer_items
         self._entity_planner = EntityAnswerPlanner(
             provider=self._provider,
             ontology_layer_items=ontology_layer_items,
         )
         self._cross_page_planner = CrossPageAnswerPlanner(provider=self._provider)
         self._selector = ContextSelector(overlay_mode, overlay_path=overlay_path)
+
+    _QE_ONLY_HINTS: frozenset[str] = frozenset({"count", "size_compare", "filtered_lookup"})
 
     # ------------------------------------------------------------------ #
     def answer(self, question: str) -> AssistantAnswer:
@@ -225,7 +231,7 @@ class AnswerOrchestrator:
             support_kind="missing_knowledge",
             source_system="cross_page_qa",
             audit_reason=(
-                "the overlay has no explicit stable path connecting these entities "
+                "no explicit stable path connects these entities "
                 "(only weak or no links)"
             ),
         )
@@ -256,7 +262,7 @@ class AnswerOrchestrator:
             support_kind="missing_knowledge",
             source_system="entity_qa",
             audit_reason=(
-                "no source-qualified fact for this subject is present in the overlay"
+                "no source-qualified fact was found for this subject"
             ),
         )
 
@@ -286,6 +292,21 @@ class AnswerOrchestrator:
         )
 
     def _entity_relation_answer(self, route, ctx, trace) -> AssistantAnswer:
+        semantic = parse_semantic_query(route.question)
+        qe_plan = qe_plan_builder.build(route.question, semantic)
+        if qe_plan.question_type_hint in self._QE_ONLY_HINTS and qe_plan.confidence > 0.7:
+            qe_result = qe_executor.execute(qe_plan, self._provider, self._ontology_layer_items)
+            if qe_result.success:
+                finalize(trace, "query_engine", qe_result.support_kind or "stable_relation")
+                return self._make(
+                    route, ctx, trace,
+                    decision=qe_result.decision,
+                    answer_text=qe_result.answer_text or "",
+                    supported=True,
+                    support_kind=qe_result.support_kind or "stable_relation",
+                    source_system="query_engine",
+                )
+
         analyzed = analyze_entity(route.question)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
@@ -352,7 +373,7 @@ class AnswerOrchestrator:
             supported=False,
             support_kind="missing_knowledge",
             source_system="entity_qa",
-            audit_reason=plan.audit_reason or "no stable relation for this subject is present in the overlay",
+            audit_reason=plan.audit_reason or "No relevant information found for this topic.",
         )
 
     @staticmethod
@@ -406,7 +427,7 @@ class AnswerOrchestrator:
             supported=False,
             support_kind="missing_knowledge",
             source_system="entity_qa",
-            audit_reason="no stable definition for this entity is present in the overlay",
+            audit_reason="I don't have a definition for this in my knowledge base.",
         )
 
     # ------------------------------------------------------------------ #

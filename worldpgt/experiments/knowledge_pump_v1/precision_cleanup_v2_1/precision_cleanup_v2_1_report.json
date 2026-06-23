@@ -1,23 +1,23 @@
 {
   "precision_cleanup_v2_1_enabled": true,
-  "answerable_before_cleanup": 1091,
-  "answerable_after_cleanup": 1072,
-  "relation_before_count": 198,
-  "relation_after_count": 183,
-  "definition_before_count": 208,
-  "definition_after_count": 204,
-  "rejected_count": 6,
-  "quarantined_count": 13,
+  "answerable_before_cleanup": 2861,
+  "answerable_after_cleanup": 2826,
+  "relation_before_count": 390,
+  "relation_after_count": 361,
+  "definition_before_count": 611,
+  "definition_after_count": 605,
+  "rejected_count": 8,
+  "quarantined_count": 27,
   "rejection_by_reason": {
     "composite_region_subject": 2,
-    "definition_truncated_participle": 4
+    "definition_truncated_participle": 6
   },
   "quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 5,
+    "headquartered_in_quarantine_default": 16,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 3
+    "truncated_person_alias": 6
   },
   "duplicate_relation_groups": [
     {
@@ -52,6 +52,11 @@
       "reason": "definition_truncated_participle"
     },
     {
+      "subject": "Delta II",
+      "definition": "expendable launch system designed",
+      "reason": "definition_truncated_participle"
+    },
+    {
       "subject": "Embraer E-Jet E2 family",
       "definition": "series of four-abreast narrow-body regional jet airliners designed",
       "reason": "definition_truncated_participle"
@@ -59,6 +64,11 @@
     {
       "subject": "Ford F-Series",
       "definition": "series of light-duty trucks marketed",
+      "reason": "definition_truncated_participle"
+    },
+    {
+      "subject": "Pershing II Weapon System",
+      "definition": "solid-fueled two-stage medium-range ballistic missile designed",
       "reason": "definition_truncated_participle"
     },
     {
@@ -83,11 +93,39 @@
       "reason": "headquartered_in_quarantine_default"
     },
     {
+      "subject": "BNN Bloomberg",
+      "predicate": "headquartered_in",
+      "object": "Scarborough",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "Bloomberg Beta",
+      "predicate": "headquartered_in",
+      "object": "San Francisco",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "Boca Chica",
+      "predicate": "developed_by",
+      "object": "Dominican",
+      "definition": null,
+      "reason": "truncated_person_alias"
+    },
+    {
       "subject": "Compaq",
       "predicate": "owned_by",
       "object": "HP",
       "definition": null,
       "reason": "duplicate_alias_relation"
+    },
+    {
+      "subject": "Facilities RSC Energia",
+      "predicate": "headquartered_in",
+      "object": "Korolyov",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
     },
     {
       "subject": "Harvard",
@@ -132,6 +170,41 @@
       "reason": "subject_alias_too_short"
     },
     {
+      "subject": "National Guard Bureau",
+      "predicate": "headquartered_in",
+      "object": "Arlington County",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "NRO",
+      "predicate": "headquartered_in",
+      "object": "Chantilly",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "Pegasus",
+      "predicate": "develops",
+      "object": "Pegasus's three Orion solid motors",
+      "definition": null,
+      "reason": "truncated_person_alias"
+    },
+    {
+      "subject": "Red Bull GmbH",
+      "predicate": "headquartered_in",
+      "object": "Fuschl am See",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
+      "subject": "Silver Lake",
+      "predicate": "headquartered_in",
+      "object": "New York City and Menlo Park",
+      "definition": null,
+      "reason": "headquartered_in_quarantine_default"
+    },
+    {
       "subject": "GAO",
       "predicate": "headquartered_in",
       "object": "Washington",
@@ -139,25 +212,11 @@
       "reason": "headquartered_in_quarantine_default"
     },
     {
-      "subject": "H - E - B",
-      "predicate": "headquartered_in",
-      "object": "San Antonio",
+      "subject": "Uniforms for the WAFS",
+      "predicate": "developed_by",
+      "object": "Love",
       "definition": null,
-      "reason": "headquartered_in_quarantine_default"
-    },
-    {
-      "subject": "The North American Development Bank",
-      "predicate": "headquartered_in",
-      "object": "San Antonio",
-      "definition": null,
-      "reason": "headquartered_in_quarantine_default"
-    },
-    {
-      "subject": "Sirius Satellite Radio IncInc\u0000",
-      "predicate": "headquartered_in",
-      "object": "New York City",
-      "definition": null,
-      "reason": "headquartered_in_quarantine_default"
+      "reason": "truncated_person_alias"
     }
   ],
   "relation_examples_preserved": [
@@ -192,80 +251,96 @@
       "object": "000 engineers"
     },
     {
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "few officers"
+    },
+    {
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "competitive for college graduates"
+    },
+    {
+      "subject": "Air Force Officer Training School",
+      "predicate": "produces",
+      "object": "particularly USAF enlisted service"
+    },
+    {
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Damernas Värld"
+    },
+    {
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Amelia"
+    },
+    {
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Sköna hem"
+    },
+    {
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Teknikens Värld"
+    },
+    {
+      "subject": "Bonnier Group",
+      "predicate": "publishes",
+      "object": "Resume"
+    },
+    {
+      "subject": "Frank Knight",
+      "predicate": "known_for",
+      "object": "Risk"
+    },
+    {
+      "subject": "Frank Knight",
+      "predicate": "known_for",
+      "object": "Uncertainty"
+    },
+    {
+      "subject": "Frank Knight",
+      "predicate": "known_for",
+      "object": "Profit"
+    },
+    {
       "subject": "International Energy Agency",
       "predicate": "publishes",
       "object": "annual World Energy Outlook"
     },
     {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "F/A-18 Super Hornet"
+      "subject": "Lavochkin",
+      "predicate": "produces",
+      "object": "satellites"
     },
     {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "Grumman E-2 Hawkeye airborne early warning"
-    },
-    {
-      "subject": "Northrop Grumman",
-      "predicate": "develops",
-      "object": "MQ-4C Triton unmanned aerial vehicle"
-    },
-    {
-      "subject": "Jean Fayeton",
-      "predicate": "develops",
-      "object": "Malabry campus"
-    },
-    {
-      "subject": "Telecom Technologies",
-      "predicate": "owned_by",
-      "object": "Sonus Networks"
-    },
-    {
-      "subject": "Sleepycat Software",
-      "predicate": "owned_by",
-      "object": "Oracle Corporation"
-    },
-    {
-      "subject": "Sleepycat Software",
-      "predicate": "owned_by",
-      "object": "February"
-    },
-    {
-      "subject": "National Indemnity",
-      "predicate": "founded_by",
-      "object": "Jack Dabney Ringwalt"
-    },
-    {
-      "subject": "Bloomberg Government",
-      "predicate": "service_of",
-      "object": "Bloomberg"
-    },
-    {
-      "subject": "New Energy Finance",
-      "predicate": "developed_by",
-      "object": "Michael Liebreich"
-    },
-    {
-      "subject": "Michael Liebreich",
-      "predicate": "develops",
-      "object": "New Energy Finance"
-    },
-    {
-      "subject": "Bloomberg Radio",
-      "predicate": "service_of",
-      "object": "Bloomberg"
-    },
-    {
-      "subject": "X-37",
-      "predicate": "operated_by",
-      "object": "Department"
+      "subject": "Lavochkin",
+      "predicate": "produces",
+      "object": "interplanetary probes"
     }
   ],
   "definition_examples_preserved": [
     {
       "subject": "Abe Fortas",
       "definition": "youngest of five children born to Orthodox Jewish immigrants Woolfe Fortas (Yiddish: וואָלף פאָרטאַס) and Rachel \"Ray\" Berzansky Fortas (Yiddish: רחל בערזשאנסקי פארטאס) in Memphis"
+    },
+    {
+      "subject": "Ares I-X",
+      "definition": "only test flight of a launch vehicle like the Ares I"
+    },
+    {
+      "subject": "Environmental resource management",
+      "definition": "issue of increasing concern"
+    },
+    {
+      "subject": "Evoked potential",
+      "definition": "electrical response of the brain to a sensory stimulus"
+    },
+    {
+      "subject": "Forbes Travel Guide",
+      "definition": "oldest travel guide in the United States"
     },
     {
       "subject": "HMS Amazon",
@@ -280,28 +355,12 @@
       "definition": "sixth month of the year in the Julian and Gregorian calendars—the latter the most widely used calendar in the world"
     },
     {
+      "subject": "Naval Academy Preparatory School",
+      "definition": "Navy's fourth oldest school; only the Naval War College"
+    },
+    {
       "subject": "Rocket Science Games",
       "definition": "independent game studio"
-    },
-    {
-      "subject": "Accenture plc",
-      "definition": "Irish technology consulting company"
-    },
-    {
-      "subject": "Affordable Connectivity Program",
-      "definition": "United States government-sponsored program"
-    },
-    {
-      "subject": "Air command",
-      "definition": "term used to refer to the command structure of some air forces"
-    },
-    {
-      "subject": "Aliko Mohammad Dangote",
-      "definition": "Nigerian businessman"
-    },
-    {
-      "subject": "Alpha Magnetic Spectrometer",
-      "definition": "particle physics experiment module"
     }
   ]
 }

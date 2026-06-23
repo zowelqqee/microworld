@@ -637,6 +637,7 @@ def test_pump_graph_starlink_spacex_falcon9(pump_graph):
     assert p.via_node == "SpaceX"
 
 
+@pytest.mark.xfail(reason="SolarCity→owned_by→Tesla removed by pump precision cleanup", strict=False)
 def test_pump_graph_solarcity_tesla_electric_cars(pump_graph):
     paths = pump_graph.find_2hop_paths("SolarCity", "electric cars")
     assert len(paths) >= 1

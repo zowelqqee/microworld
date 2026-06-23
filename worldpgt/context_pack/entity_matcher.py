@@ -14,6 +14,21 @@ from typing import Dict, List, Tuple
 
 from .types import MatchedEntity
 
+# Pre-compiled pattern cache keyed by normalised surface string.
+# Python's built-in re cache holds only 512 entries; with ~1700 overlay
+# surfaces it evicts and recompiles on every match_entities call.  This
+# unbounded dict persists for the process lifetime (overlays are read-only).
+_PATTERN_CACHE: Dict[str, re.Pattern] = {}
+
+
+def _get_pattern(norm_surface: str) -> re.Pattern:
+    try:
+        return _PATTERN_CACHE[norm_surface]
+    except KeyError:
+        p = re.compile(r"(?<![\w])" + re.escape(norm_surface) + r"(?![\w])")
+        _PATTERN_CACHE[norm_surface] = p
+        return p
+
 # Generic tokens that must never be matched as entities on their own.
 _GENERIC_STOPWORDS = frozenset(
     {
@@ -111,8 +126,13 @@ def build_surface_index(overlay) -> List[Tuple[str, str, dict]]:
     return indexed
 
 
-def match_entities(question: str, overlay) -> List[MatchedEntity]:
-    surfaces = build_surface_index(overlay)
+def match_entities(
+    question: str,
+    overlay,
+    *,
+    prebuilt_index: List[Tuple[str, str, dict]] | None = None,
+) -> List[MatchedEntity]:
+    surfaces = prebuilt_index if prebuilt_index is not None else build_surface_index(overlay)
     qlow = " " + _norm(question) + " "
     consumed_spans: List[Tuple[int, int]] = []
     matched: List[MatchedEntity] = []
@@ -121,8 +141,7 @@ def match_entities(question: str, overlay) -> List[MatchedEntity]:
     for surface, kind, meta in surfaces:
         n = _norm(surface)
         # Word-boundary search over the normalized question.
-        pattern = r"(?<![\w])" + re.escape(n) + r"(?![\w])"
-        m = re.search(pattern, qlow)
+        m = _get_pattern(n).search(qlow)
         if not m:
             continue
         start, end = m.start(), m.end()

@@ -1,0 +1,15 @@
+{
+  "title": "Sir William",
+  "normalized_title": "Sir William",
+  "pageid": 25372983,
+  "revision_id": 986599569,
+  "timestamp": "2020-11-01T21:16:42Z",
+  "source_url": "https://en.wikipedia.org/wiki/Sir_William",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Sir+William",
+  "retrieved_at": "2026-06-22T11:02:03Z",
+  "raw_text": "Sir William may refer to:\n\nSir William (horse), a British Thoroughbred racehorse\nBill Dundee (born 1943), Scottish born-Australian professional wrestler\n\"(Little) Sir William\", an alternative name of the folk song \"Sir Hugh\"\n\n\nSee also\nWilliam (disambiguation)",
+  "raw_text_sha256": "7e75c5d3f02092a0ce4fa6fe8ae3ea6c7aa1ca696ce0f3a18ffae647827ffc4b",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

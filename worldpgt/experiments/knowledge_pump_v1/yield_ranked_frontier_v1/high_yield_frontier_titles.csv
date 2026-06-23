@@ -1,6 +1,46 @@
 title,score,expected_yield_class,source_hint,positive_reasons
-Jeff Bezos,111.333,high,Billionaire,source_page_produced_accepted_fact; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
-North American Aviation,43.04,medium,NASA,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Marconi Electronic Systems,33.02,medium,Aerospace manufacturer,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Deutsche Bank,28.04,medium,Forbes,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Michael Bloomberg,21.333,medium,Bloomberg L.P.,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Jeff Bezos,151.333,high,Billionaire,source_page_produced_accepted_fact; in_high_yield_source_pages; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Michael Bloomberg,81.333,high,Bloomberg L.P.,source_page_produced_accepted_fact; subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Elon Musk,76.333,high,Billionaire,source_page_produced_accepted_fact; in_high_yield_source_pages; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; gap_driven_entity; stale_snapshot_recheck; staleness_boost:6.33
+Lew Rockwell,73.3,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Roger Williams,73.24,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Robert Noyce,73.12,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+United States of America,48.3,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Louisiana Creoles,48.22,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Officer Training School,48.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+American conservative,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+New York Observer,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+American Spectator,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Daily Caller,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Frank Comerford Walker,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Gary Earl Johnson,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+John Diebold,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+New York Review of Books,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Skydance Media,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Air Force Reserve Command,43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+The Des Moines Register,43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Brooke Rollins,43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Mao Zedong,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Samuel Gompers,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Frank Collin,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Margaret Sanger,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Providence Plantations,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Claude Shannon,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Marvel Comics,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Southern Baptist,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Canadian National,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Henry VIII,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Kurt Mertig,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Wallace Fard Muhammad,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+The Nation,38.42,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Socialist Labor Party,38.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Carnegie Steel,38.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Prohibition era,38.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Enrico Tonti,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Epic Games,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Jean Fayeton,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Standing Rules of the Senate,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Telewizja Polska,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+The Antitrust Paradox,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Willem van Biljon,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+William Randolph I,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form

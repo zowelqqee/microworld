@@ -1,0 +1,15 @@
+{
+  "title": "Media City",
+  "normalized_title": "Media City",
+  "pageid": 39187895,
+  "revision_id": 1046852256,
+  "timestamp": "2021-09-27T18:48:15Z",
+  "source_url": "https://en.wikipedia.org/wiki/Media_City",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Media+City",
+  "retrieved_at": "2026-06-22T08:03:02Z",
+  "raw_text": "Media City may refer to:\n\nDubai Media City\nJordan Media City\nMediaCityUK",
+  "raw_text_sha256": "f1c3b3d41357840b5520e444e684d87bb32a5a6fe8e5b2fd775fdbfcfd836bfa",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

@@ -1,0 +1,15 @@
+{
+  "title": "National Magazine",
+  "normalized_title": "National Magazine",
+  "pageid": 57757532,
+  "revision_id": 1014331160,
+  "timestamp": "2021-03-26T14:02:58Z",
+  "source_url": "https://en.wikipedia.org/wiki/National_Magazine",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=National+Magazine",
+  "retrieved_at": "2026-06-22T08:58:09Z",
+  "raw_text": "Several publications have been issued under the name National Magazine, including:\n\nMagazine of Western History, known as The National Magazine from 1891 to 1894\nThe National Magazine (1896), published from 1894 to 1896 as The Bostonian, and from 1896 to 1933 under the new name\nThe National Sunday Magazine, published on a semimonthly basis during the early part of the 20th century by the Abbott & Briggs Company. Wilbur Griffith was the editor.\n\n\nSee also\nNat Mags, or National Magazine Company, a British magazine publisher",
+  "raw_text_sha256": "178faa96e5281aed12e704ad40f5600358e89904ddaba7920bb0477da8c56685",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

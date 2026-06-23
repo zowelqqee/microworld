@@ -1,0 +1,86 @@
+# William Randolph
+
+Source: https://en.wikipedia.org/wiki/William_Randolph
+Retrieved at: 2026-06-22T08:23:06Z
+Revision ID: 1356745675
+Raw text SHA256: f0b1f1fc1e470d9dbbaeb6baa2e9b43ddb1b91c308d2c8eb1b9557aeccedf909
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+William Randolph I (bapt. 7 November 1650 – 21 April 1711) was an English-born planter, merchant and politician in colonial Virginia who played an important role in the development of the colony. Born in Moreton Morrell, Warwickshire, Randolph moved to the Colony of Virginia sometime between 1669 and 1673, and married Mary Isham (c. 1659 – 29 December 1735) a few years later. His descendants include many prominent individuals including Peyton Randolph, Thomas Jefferson, John Marshall, Edmund Randolph, John Randolph of Roanoke, Edmund Ruffin, Paschal Beverly Randolph, George W. Randolph and Robert E. Lee. Due to his and Mary's many progeny and marital alliances, they have been referred to as "the Adam and Eve of Virginia".
+
+Early years
+Randolph was baptized in Moreton Morrell in Warwickshire, England on 7 November 1650. He was the son of Richard Randolph (21 February 1621 – 2 May 1678) and wife Elizabeth Ryland (21 October 1621 – 1669) of Warwickshire. Richard Randolph was originally from Little Houghton (also called Houghton Parva), a small village east of Northampton, where Richard Randolph's father, William, was a "steward and servant" to Edward la Zouche, 11th Baron Zouche (1556–1625), having previously served in that same capacity to Sir George Goring, a landowner in Sussex. William was the fourth of seven Randolph children.
+Richard and Elizabeth moved to Warwickshire before the birth of their first child in Moreton Morrell in 1647. They lived within the "heart of Parliamentarian Warwickshire" through the end of the English Civil Wars. His family was among the Cavaliers who supported the king. In 1657, the last of their children was born in Moreton Morrell. The same year, Elizabeth's father was buried there. The family subsequently moved to Dublin. His mother died there around 1669 and his father about two years later.
+William's uncle, Henry Randolph (1623–1673), traveled to England and Ireland from Virginia in 1669 and sponsored William to emigrate to colonial Virginia. William arrived with only an axe and without money, in an area replete with others whose families had also supported the king during the Civil War. His family had long been members of the court. William Randolph was in the colony by 12 February 1672, when he appears in the record as witness to a land transaction.
+
+These were men who had fought on the royal side in the Civil War in England and now sought refuge in Virginia. They were known as 'Cavaliers,’ and they gave Virginia a social atmosphere it never subsequently lost.
+
+Career
+
+The Chesapeake economy of the late 17th century was centered around tobacco, grown within the English mercantile system for export to markets in Britain and Europe. Indentured servants and slaves supported the tobacco industry at that time. By 1674 Randolph imported 12 persons into the colony and thereby earned his first land patent. Over the course of his life, he imported 168 slaves and indentured servants to Virginia. In later years Randolph became a merchant and a planter, and co-owned several ships used to transport tobacco to England and goods back to Virginia. He established several of his sons as merchants and ship captains.
+Randolph trained as a lawyer and was a partner with Peter Perry and Edward Hill, Jr. in the law firm Hill, Perry & Randolph in the 1680s. He held multiple official appointments. At the local level, he became clerk of Henrico County Court in 1673 and held the position until he was asked to serve as a justice of the peace in 1683. He also served as sheriff and coroner. Randolph represented Henrico County in every assembly of the House of Burgesses from 1684 to 1698, was Speaker of the House of Burgesses in 1698, and was the Clerk of the House from 1699 to 1702. He had briefly been attorney-general of the colony, but according to a Crown report of September 1696 by Edward Randolph of New England, "is wholly unacquainted with the laws and practice of the Courts in England". He fell ill in August 1702 and his son, William, took his place. Randolph resigned the clerkship completely in March 1703.
+Randolph was a founder and one of the first trustees of the College of William & Mary. Randolph was a friend of William Byrd, and he served as an advisor to Byrd's sons during their political careers. He is mentioned in one of Byrd's diaries as "Colonel Randolph", his militia title.
+
+Property
+Randolph was the founder of a dynasty of individuals who shaped commerce and governmental administration in Virginia for years. They were "one of the most numerous and wealthiest" of the "first families" of the colony. Between Randolph and his heirs, they acquired tens of thousands of acres, including or establishing eleven large neighboring plantations that were worked by hundreds of slaves.
+
+Turkey Island Plantation
+
+Randolph acquired property by purchase, headright, marital interest, and land grant. His early acquisitions were in the neighborhood of Turkey Island, located in the James River about 20 miles (32 km) southeast of present-day Richmond. Randolph began living at the Turkey Hill estate, which included the island and surrounding area, in 1670. That residence no longer exists. William Randolph's residence overlooked Turkey Island, and he is buried near the site of the house. Randolph's Turkey Island Plantation became the seat of the Randolph family.
+
+Curles Neck Plantation
+In 1676, a Virginia colonist named Nathaniel Bacon rebelled unsuccessfully against the colonial government and his estate was forfeited. This was Curles Neck Plantation, located near Turkey Island. Randolph made an assessment of the property for Governor William Berkeley and was allowed to buy it for his estimated price, adding 1,230 acres (5.0 km2) to Randolph's previous land holdings. The property eventually became the home of William's fifth son, Richard Randolph.
+
+Tuckahoe and Dungeness
+Around 1700, when Randolph's political career was at its peak, he received land grants to almost 10,000 acres (40 km2) of newly opened land near Richmond; a 3,256-acre (13.18 km2) tract at Tuckahoe Creek and a 5,142-acre (20.81 km2) plot at Westham. This land became the basis of the Tuckahoe and Dungeness Plantations, which were later founded by two of William Randolph's sons.
+
+Marriage and children
+
+Randolph married Mary Isham (Bermuda Hundred, Henrico County, c. 1659–Turkey Island, Henrico County, 29 December 1735), in Henrico County around 1676. Her father was Henry Isham of Northamptonshire. Her mother, Katherine Banks (first married to Captain Joseph Royall), was one of the wealthiest women in the colonies for their time. In Henrico County, the Ishams owned a large estate in Bermuda Hundred which was across the river from Randolph's Turkey Island estate.
+William Randolph had twelve children who survived into adulthood:
+
+Elizabeth Randolph (c. 1679–1685), died young.
+Sarah Isham Randolph (c. 1681–1760)
+William Randolph II (born 1 November 1681), married Elizabeth Beverley (the daughter of Peter Beverley, a Speaker of the House of Burgesses and Treasurer of Virginia) around 1705 and had five children who lived to adulthood. He was the grandfather of Beverley Randolph, the eighth governor of Virginia, and Ann Bolling Randolph Fitzhugh.
+Henry Randolph (born between 1681 and 1686) did not marry.
+Mary Randolph (born probably November 1683) married Captain John Stith, a member of the Virginia House of Burgesses and the son of John Stith, around 1712. Her son, William Stith, was the third president of the College of William & Mary; her son-in-law, William Dawson, was the second president of the College of William & Mary. Mary was the great-grandmother of Congressman William Johnston Dawson. Her second son, John Stith III, was the great-great-grandfather of Armistead C. Gordon and also Junius Daniel, Brigadier General of the Confederate States Army.
+Elizabeth Randolph (born before April 1685) married Richard Bland around 1711 and had five children, including Mary Bland (who married Henry Lee I and was the mother of Henry Lee II, the grandmother of Henry "Light-Horse Harry" Lee III, and the great-grandmother of Robert E. Lee), Theodorick Bland of Cawsons (who was the father of Congressman Theodorick Bland as well as grandfather to John Randolph of Roanoke), and the statesman and Founding Father Richard Bland (who was the great-great-grandfather of Roger Atkinson Pryor).
+Isham Randolph of Dungeness (born 24 February 1687) married Jane Rogers in 1717 and had nine children, including Jane Randolph (who married Peter Jefferson and was the mother of Thomas Jefferson), Mary Randolph (who was the mother of Charles Lilburn Lewis and grandmother of Isham and Lilburn Lewis), Ann Randolph (who was the mother of James Pleasants Jr., the 22nd Governor of Virginia), and Susannah Randolph (who married Carter Henry Harrison I and was the great-grandmother of Carter Henry Harrison III and great-great-grandmother of Carter Henry Harrison IV – both five-time mayors of Chicago).
+Thomas Randolph of Tuckahoe (born 1689) married Judith Fleming on 16 October 1712. He was the great-grandfather of John Marshall, as well as the great-great-grandfather of Ann Cary (Nancy) Randolph, who married Gouverneur Morris, and her brother Thomas Mann Randolph Jr., who married Thomas Jefferson's daughter, Martha.
+Richard Randolph (born 1691) married Jane Bolling, a descendant of Pocahontas, around 1714.  He was the grandfather of the colorful Congressman John Randolph of Roanoke.
+Sir John Randolph (born 1692) married Susanna Beverley (another daughter of Peter Beverley) around 1718. He studied at the Inns of Court and practiced law in Williamsburg. John was the only native of the American Colonies to receive a knighthood. He was the father of Peyton Randolph, President of the First Continental Congress, and John Randolph, a Loyalist. The latter's son, Edmund Randolph, served as a Virginia delegate to the Constitutional Convention, became the first United States Attorney General and was the great-great grandfather of Robert Williams Daniel, a banker who survived the Titanic disaster.
+Edward Randolph (born c. November 1693) married Miss (Elizabeth?) Grosvenor around 1715.
+The sons of William Randolph were each distinguished by the estates left to them. Early generations of Randolphs married into several other gentry families, including Beverley, Bland, Bolling, Dilliard, Fleming, Byrd, Fitzhugh, Carter, Cary, Harrison and Page.  ater affiliations included members of the Lewis, Meriwether and Skipwith families.
+
+Death
+William Randolph died on 21 April 1711 at his Turkey Island plantation. Mary and two of their sons, Thomas and William, were executors of the estate that spelled out the manner in which his numerous land holdings were distributed to his sons. Profits from the Pigeon Swamp plantation were to pay off his debt of £3,259 to Micajah Perry III's law firm before title was to be transferred in accordance with the will.
+
+Legacy
+In their wealth and social status, the Randolphs were much like other families of the Chesapeake elite; if anything set them apart it was their participation in the political life of the colony, which is clearly traceable to William Randolph's example. The Randolphs and their close relatives formed the predominant political faction in the Virginia colonial government during the 18th century, with many members of the family being elected to the House of Burgesses or appointed to the more exclusive Council.
+Most of the Randolphs, like the rest of the Virginia gentry, strongly supported the Revolution. However, John Randolph (son of Sir John), in opposition to both his brother Peyton and son Edmund, remained loyal to Great Britain and left Virginia. Thomas Jefferson wrote the Declaration of Independence, and 18-year-old John Marshall was at Valley Forge for the trying winter of 1777–1778.
+
+See also
+Randolph family of Virginia
+Ancestry of Thomas Jefferson
+
+Notes
+
+References
+
+Bibliography
+Colonial Wills of Henrico County, Virginia, Part One, 1654–1737, abstracted and compiled by Benjamin B. Weisiger III, p. 90. http://boards.ancestry.com/localities.northam.usa.states.virginia.counties.henrico/2157/mb.ashx
+Daniels, Jonathan Worth.  1972. The Randolphs of Virginia, Doubleday.
+Eckenrode, H.J. 1946. The Randolphs: The story of a Virginia family. New York: The Bobbs Merrill Company.
+Fischer, David Hackett, 1989.  "Albion's Seed: Four British Folkways in America", Oxford University Press, USA.
+Fiske, John; Wilson, James Grant, eds. (1900). "Randolph, William". Appleton’s Cyclopaedia of American Biography. Vol. V: Pickering – Sumter. New York: D. Appleton and Company. pp. 174–179.
+Kukla, Jon. 1981. Speakers and clerks of the Virginia House of Burgesses 1643–1776. Richmond, VA: Virginia State Library.
+Malone, Dumas (Ed.). 1963. Dictionary of American biography, volume VIII: Platt-Seward, 371–372. New York: Charles Scribner's Sons.
+Randolph, Wassell.. William Randolph I of Turkey Island (Henrico County) Virginia and his immediate descendants. Memphis, Tenn.: Seebode Mimeo Service : Distributed by Cossitt Library, 1949.
+
+External links
+Portrait of William Randolph: Virginia Historical Society
+Portrait of Mary Isham Randolph: Virginia Historical Society
+Picture of Virginia Historical Marker for Turkey Island
+Photographs from Turkey Island, including excavation of Randolph's mansion
+1751 Fry-Jefferson Map

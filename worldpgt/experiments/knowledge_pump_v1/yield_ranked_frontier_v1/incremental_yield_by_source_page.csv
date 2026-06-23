@@ -1,756 +1,2074 @@
 source_page,answerable_facts,ingestion_candidates,is_high_yield,is_low_yield
+comenity capital bank,11,0,True,False
 community memory,8,8,True,False
-sun microsystems,6,10,True,True
+sun microsystems,6,13,True,True
+bonnier group,5,15,True,False
+jaguar i-pace,5,9,True,False
 nyse group,5,0,True,False
-saturn ib,4,8,True,False
-hughes aircraft company,4,7,True,True
+air force officer training school,4,18,True,False
+lavochkin,4,18,True,False
+seventh air force,4,17,True,False
+the epoch times,4,14,True,False
+saturn ib,4,9,True,False
+frank knight,4,8,True,False
+paramount skydance,4,8,True,False
+otis worldwide,4,6,True,False
+colonial history of the united states,4,5,True,False
 london stock exchange,4,5,True,False
+the times,4,5,True,False
 apple computer,4,0,True,False
-elon reeve musk,4,0,True,False
+government services,4,0,True,False
+hughes aircraft co,4,0,True,False
 northrop grumman,3,20,True,False
+boeing x-37,3,16,True,False
 bloomberg radio,3,14,True,False
-reaction engines,3,12,True,False
+long march,3,12,True,False
+zep solar,3,12,True,False
+jaguar land rover,3,11,True,False
+north american aviation,3,11,True,False
 oracle rdb,3,11,True,False
-jaguar land rover,3,10,True,False
-general electric,3,7,True,True
-world economic forum,3,6,True,False
+virgin mobile,3,11,True,False
+elon musk,3,9,True,True
+national socialist party of america,3,9,True,False
+the daily caller,3,9,True,False
+école centrale paris,3,9,True,False
+general electric,3,8,True,True
+world economic forum,3,7,True,False
+chicago express,3,6,True,False
 amazon bookstore cooperative,3,5,True,False
+opportunity fund,3,5,True,False
+digital services act,3,4,True,False
 royal navy,3,4,True,False
-bloomberg l.p,3,0,True,False
+test site,3,1,True,False
+bloomberg media,3,0,True,False
 compaq computer,3,0,True,False
+frank l. vandersloot,3,0,True,False
+giga nevada,3,0,True,False
 government accountability office,3,0,True,False
+health organization,3,0,True,False
 intel corporation,3,0,True,False
+reaction engines limited,3,0,True,False
 spacex hawthorne,3,0,True,False
+applied materials,2,25,True,False
 sea launch,2,21,True,True
-sierra nevada corporation,2,18,True,True
-project mercury,2,16,True,False
-boeing x-37,2,15,True,False
+united states merchant marine academy,2,21,True,False
+itp aero,2,20,True,False
+project mercury,2,19,True,False
+sierra nevada corporation,2,19,True,True
+jeff bezos,2,16,True,False
 white sands missile range,2,15,True,False
+jim cantrell,2,14,True,True
 satellite radio,2,14,True,True
+bombay stock exchange,2,13,True,False
+honeywell aerospace,2,13,True,True
+ron paul,2,13,True,False
+civil air patrol,2,12,True,False
+the american conservative,2,12,True,False
+american academy of achievement,2,11,True,False
+anousheh ansari,2,11,True,False
+berkeley db,2,11,True,False
+clark university,2,11,True,False
+orbiting carbon observatory,2,11,True,False
+sam altman,2,11,True,False
 scaled composites,2,11,True,True
+silicon valley,2,11,True,True
 wayback machine,2,11,True,False
+council for national policy,2,10,True,False
 financial industry regulatory authority,2,10,True,False
 international energy agency,2,10,True,False
-silicon valley,2,10,True,True
-berkeley db,2,9,True,False
+mysql ab,2,10,True,False
+henrik fisker,2,9,True,False
+mises institute,2,9,True,False
+national business daily,2,9,True,False
+national democratic redistricting committee,2,9,True,False
 rocket science games,2,9,True,False
-école centrale paris,2,9,True,False
+caterham cars,2,8,True,True
+denver international airport,2,8,True,False
+pershing ii,2,8,True,False
+rolls-royce merlin,2,8,True,False
 smith electric vehicles,2,8,True,False
+united press international,2,8,True,False
+women airforce service pilots,2,8,True,False
+alfa romeo,2,7,True,False
+bankers trust,2,7,True,False
 bloomberg government,2,7,True,False
-henrik fisker,2,7,True,False
+ford motor company,2,7,True,True
+new south wales,2,7,True,False
+small business administration,2,7,True,False
+abe fortas,2,6,True,False
+andrew carnegie,2,6,True,True
 canada,2,6,True,False
-caterham cars,2,6,True,True
 harvard university,2,6,True,False
+nanobots (album),2,6,True,False
+phi beta kappa,2,6,True,False
 amazon web services,2,5,True,True
-bankers trust,2,5,True,False
 cbs news,2,5,True,False
 dow jones,2,5,True,False
 richard branson,2,5,True,False
+congressional budget office,2,4,True,False
+democratic attorneys general association,2,4,True,False
+standard oil,2,4,True,False
+palgrave macmillan,2,3,True,False
+public domain,2,3,True,False
+united states foreign intelligence surveillance court,2,3,True,False
 world government,2,3,True,True
-alain chevalier,2,0,True,False
+amazon glacier,2,0,True,False
+bentley motors limited,2,0,True,False
 blue ring pathfinder,2,0,True,False
-giga nevada,2,0,True,False
+danish american,2,0,True,False
 kistler aerospace,2,0,True,False
+lawrence joseph ellison,2,0,True,False
+mail transfer protocol,2,0,True,False
+moet hennessy,2,0,True,False
 new york times,2,0,True,False
+orbital sciences,2,0,True,False
+orbital sciences pegasus,2,0,True,False
+otc pink,2,0,True,False
+patria plc,2,0,True,False
+u.s. congress,2,0,True,False
+united states steel corporation,2,0,True,False
+us armed forces,2,0,True,False
+warner bros,2,0,True,False
+amazon prime video,1,21,False,False
+brian binnie,1,21,False,True
+greg brockman,1,21,False,True
 kimbal musk,1,21,False,True
+safra catz,1,20,False,True
 space.com,1,20,False,True
-vector launch,1,19,False,True
+vector launch,1,20,False,True
+air force research laboratory,1,19,False,False
+naval academy preparatory school,1,19,False,False
+joseph schumpeter,1,18,False,True
 project gemini,1,18,False,False
+space age,1,18,False,False
 spacex,1,18,False,False
+stennis space center,1,18,False,False
+tesla powerpack,1,18,False,False
+ual corporation,1,18,False,False
 artemis accords,1,17,False,False
-jeff bezos,1,17,False,False
-space age,1,17,False,False
-stennis space center,1,17,False,False
-tesla powerpack,1,17,False,False
-boeing starliner,1,16,False,True
-delta iv,1,16,False,False
-rockwell collins,1,16,False,True
-royal mail steam packet company,1,16,False,False
+asahi kasei,1,17,False,True
+bob miner,1,17,False,True
+delta iv,1,17,False,False
+john overdeck,1,17,False,False
+nasdaq nordic,1,17,False,False
+rockwell collins,1,17,False,True
+royal mail steam packet company,1,17,False,False
+stoke space,1,17,False,False
+strategic air command,1,17,False,False
+gordon cooper,1,16,False,True
+military history of the united states during world war ii,1,16,False,False
 spacex crew-2,1,16,False,False
-stoke space,1,16,False,False
-strategic air command,1,16,False,False
-hyperloop one,1,15,False,True
-ual corporation,1,15,False,False
+sperry corporation,1,16,False,False
+black thursday,1,15,False,False
+community notes,1,15,False,False
+jack dorsey,1,15,False,False
+john micklethwait,1,15,False,False
+los angeles air force base,1,15,False,False
+mercury control center,1,15,False,True
+new horizons,1,15,False,False
+rotating regional primary system,1,15,False,False
+sergey brin,1,15,False,True
+sixteenth air force,1,15,False,False
 virgin galactic,1,15,False,True
 vulcan centaur,1,15,False,False
-john micklethwait,1,14,False,False
+air force historical research agency,1,14,False,False
+apparel group,1,14,False,False
+atlas ii,1,14,False,False
+chevrolet volt,1,14,False,False
+dennis tito,1,14,False,False
+frank c. walker,1,14,False,False
+international astronautical federation,1,14,False,False
+launch control center,1,14,False,True
+lockheed martin,1,14,False,True
 lyndon rive,1,14,False,False
-new horizons,1,14,False,False
-apollo applications program,1,13,False,True
-atlas ii,1,13,False,False
-bombay stock exchange,1,13,False,False
-honeywell aerospace,1,13,False,True
-jack dorsey,1,13,False,False
-jim cantrell,1,13,False,True
-lockheed martin,1,13,False,True
-tesla robotaxi,1,13,False,False
+nissan leaf,1,14,False,True
+numbered air force,1,14,False,False
+saturn corporation,1,14,False,True
+second air force,1,14,False,False
+swarm technologies,1,14,False,False
+tesla robotaxi,1,14,False,False
+tom wheeler,1,14,False,True
+uniformed services university of the health sciences,1,14,False,False
+airspan networks,1,13,False,False
+ares i-x,1,13,False,False
+artemis iii,1,13,False,False
+bae systems,1,13,False,True
+center for security policy,1,13,False,False
+combined charging system,1,13,False,False
+deep space climate observatory,1,13,False,True
+detroit electric,1,13,False,False
+goddard space flight center,1,13,False,False
+hermann oberth,1,13,False,True
+john c. breckinridge,1,13,False,False
+john foster dulles,1,13,False,False
+john franklyn mars,1,13,False,False
+malcolm forbes,1,13,False,True
+mark hurd,1,13,False,True
+michael bloomberg,1,13,False,True
+national reconnaissance office,1,13,False,False
+patrick space force base,1,13,False,True
+russell senate office building,1,13,False,False
+united nations security council,1,13,False,False
+united states capitol complex,1,13,False,False
+volkswagen golf,1,13,False,False
 xcor aerospace,1,13,False,True
-artemis iii,1,12,False,False
+affordable connectivity program,1,12,False,False
 bangladesh satellite-1,1,12,False,False
-combined charging system,1,12,False,False
+bse sensex,1,12,False,True
+charles d. walker,1,12,False,True
+christy walton,1,12,False,True
+eric holder,1,12,False,False
 gigafactory mexico,1,12,False,False
-goddard space flight center,1,12,False,False
+jensen huang,1,12,False,False
+john franklin enders,1,12,False,False
 june,1,12,False,False
+michael flynn,1,12,False,False
+neutron star interior composition explorer,1,12,False,False
+project juno,1,12,False,False
 redwood shores,1,12,False,False
+robert h. michel,1,12,False,False
+robert zubrin,1,12,False,False
 spacex crew-3,1,12,False,False
-sperry corporation,1,12,False,False
+thomas s. power,1,12,False,False
 tom mueller,1,12,False,False
-affordable connectivity program,1,11,False,False
+vegas loop,1,12,False,False
+wikimedia foundation,1,12,False,False
+alan bovik,1,11,False,False
 amazon delta,1,11,False,False
-robert zubrin,1,11,False,False
-anousheh ansari,1,10,False,False
+amazon labor union,1,11,False,False
+andrej karpathy,1,11,False,False
+barry goldwater,1,11,False,True
+bloomberg law,1,11,False,False
+communications satellite,1,11,False,True
+fundraising for the 2012 united states presidential election,1,11,False,False
+general motors,1,11,False,False
+los angeles times,1,11,False,False
+national security of the united states,1,11,False,False
+new glenn,1,11,False,False
+post–world war i recession,1,11,False,False
+richard sylla,1,11,False,False
+south sea company,1,11,False,False
+spaceshiptwo,1,11,False,False
+steve ballmer,1,11,False,False
+tim berners-lee,1,11,False,False
+aristotle onassis,1,10,False,True
 b. c. forbes,1,10,False,False
-bae systems,1,10,False,True
-bloomberg law,1,10,False,False
-chevrolet volt,1,10,False,False
+blue origin ns-17,1,10,False,False
+blue origin ns-23,1,10,False,False
+charles koch,1,10,False,True
 dawn aerospace,1,10,False,False
+dell technologies,1,10,False,False
+ed koch,1,10,False,False
 errol musk,1,10,False,False
-mcdonnell douglas,1,10,False,False
-new glenn,1,10,False,False
-south sea company,1,10,False,False
-spaceshiptwo,1,10,False,False
+flocken elektrowagen,1,10,False,False
+gary johnson,1,10,False,False
+hart senate office building,1,10,False,False
+human rights party (united states),1,10,False,False
+james wilson (founding father),1,10,False,False
+land rover,1,10,False,False
+luminar technologies,1,10,False,False
+peter grauer,1,10,False,True
+prohibition in the united states,1,10,False,False
+ray kroc,1,10,False,False
+united states air force thunderbirds,1,10,False,False
 volvo amazon,1,10,False,False
+yoshua bengio,1,10,False,False
 alpha magnetic spectrometer,1,9,False,False
-aristotle onassis,1,9,False,True
-blue origin ns-17,1,9,False,False
+american city business journals,1,9,False,False
+axiom station,1,9,False,False
 blue origin ns-18,1,9,False,False
-blue origin ns-23,1,9,False,False
-communications satellite,1,9,False,True
+boeing b-29 superfortress,1,9,False,False
 companies act,1,9,False,False
-general motors,1,9,False,False
-land rover,1,9,False,False
-project juno,1,9,False,False
-richard sylla,1,9,False,False
-sam altman,1,9,False,False
+financial news network,1,9,False,False
+forbes travel guide,1,9,False,False
+francis e. warren,1,9,False,False
+gigafactory new york,1,9,False,False
+gordon moore,1,9,False,False
+john mccain,1,9,False,False
+joseph ellison,1,9,False,False
+kawasaki heavy industries,1,9,False,False
+loro piana,1,9,False,False
+max hodak,1,9,False,True
+naval history and heritage command,1,9,False,False
+oliver daemen,1,9,False,False
+pecora commission,1,9,False,False
+pgm-19 jupiter,1,9,False,False
+point arguello,1,9,False,False
+quinnipiac university polling institute,1,9,False,False
+richard rush,1,9,False,False
+rockwell international,1,9,False,False
+shirley chisholm,1,9,False,False
+spaceflight,1,9,False,False
 thomas pink,1,9,False,False
 titan iv,1,9,False,False
 united aircraft corporation,1,9,False,True
+united states air force basic military training,1,9,False,False
+united states secretary of the treasury,1,9,False,False
 amalgam comics,1,8,False,False
+amazon dash,1,8,False,False
+amazon go,1,8,False,False
+america first policy institute,1,8,False,False
 audi q8,1,8,False,False
 august,1,8,False,False
-axiom station,1,8,False,False
+bbc news,1,8,False,False
 bloomberg news,1,8,False,False
 blue origin ns-21,1,8,False,False
-jd edwards,1,8,False,True
+charles luckman,1,8,False,False
+david rubenstein,1,8,False,False
+edward bernays,1,8,False,False
+george white (ohio politician),1,8,False,False
+gulf coast of the united states,1,8,False,False
+ilya sutskever,1,8,False,False
+internet,1,8,False,False
+justice party (united states),1,8,False,False
+lotus esprit,1,8,False,False
 march,1,8,False,False
 michael liebreich,1,8,False,False
+morgan motor company,1,8,False,True
+new south,1,8,False,False
 oracle cloud,1,8,False,True
-spaceflight,1,8,False,False
+oracle enterprise manager,1,8,False,False
+peter thiel,1,8,False,False
+pew research center,1,8,False,False
+pierce butler (american politician),1,8,False,False
+roots blower company,1,8,False,False
+roy moore,1,8,False,False
+rupert murdoch,1,8,False,False
+sam walton,1,8,False,False
+the new york observer,1,8,False,False
+trevor blackwell,1,8,False,False
+united states capitol visitor center,1,8,False,False
+wojciech zaremba,1,8,False,False
+arthur c. clarke,1,7,False,False
+aston martin,1,7,False,False
+bernie ecclestone,1,7,False,True
 bloomberg markets,1,7,False,False
-internet,1,7,False,False
+brian moore (political activist),1,7,False,False
+camille jenatzy,1,7,False,False
+christian lacroix,1,7,False,True
+christopher payne,1,7,False,False
+dodger stadium,1,7,False,False
+european commission,1,7,False,False
+ferdinand pecora,1,7,False,False
+fernando ferrer,1,7,False,False
+foundation for moral law,1,7,False,False
+fred thompson,1,7,False,False
+game boy,1,7,False,False
+george washington jones (tennessee politician),1,7,False,False
+ginni thomas,1,7,False,False
+glen taylor,1,7,False,False
+harry reid,1,7,False,False
+hms amazon,1,7,False,False
+international astronomical union,1,7,False,False
+james j. hill,1,7,False,False
 january,1,7,False,False
-lotus esprit,1,7,False,False
-nasdaq composite,1,7,False,False
-oracle enterprise manager,1,7,False,False
-pecora commission,1,7,False,False
-peter thiel,1,7,False,False
+john coyle white,1,7,False,False
+konrad kyeser,1,7,False,False
+larry page,1,7,False,True
+los angeles,1,7,False,True
+mark krikorian (activist),1,7,False,False
+mason patrick,1,7,False,False
+mercedes-benz group,1,7,False,True
+millennium falcon,1,7,False,False
+north carolina democratic party,1,7,False,False
+northeastern united states,1,7,False,False
+officer candidate school (united states army),1,7,False,False
+paul sahre,1,7,False,False
 princeton university,1,7,False,False
-salomon brothers,1,7,False,True
-wojciech zaremba,1,7,False,False
-abe fortas,1,6,False,False
+stanford university,1,7,False,False
+steve jobs,1,7,False,True
+the mercury news,1,7,False,False
+united states air force academy,1,7,False,False
+united states coast guard,1,7,False,False
+united states marine corps history division,1,7,False,False
+uss amazon,1,7,False,False
+william r. king,1,7,False,False
+air command,1,6,False,True
 amazon basin,1,6,False,True
-andrew carnegie,1,6,False,True
+amazon breakthrough novel award,1,6,False,False
+american party (1924),1,6,False,False
 arthur ransome,1,6,False,False
-aston martin,1,6,False,False
+baidu tieba,1,6,False,True
+bard college,1,6,False,False
 blue origin ns-19,1,6,False,False
+buttonwood agreement,1,6,False,False
+christian dior,1,6,False,True
 commercial orbital transportation services,1,6,False,False
 february,1,6,False,False
-ford motor company,1,6,False,True
+federal election commission,1,6,False,False
+fifth party system,1,6,False,False
+flight test,1,6,False,True
+giorgetto giugiaro,1,6,False,False
 great depression,1,6,False,False
-hms amazon,1,6,False,False
-los angeles,1,6,False,True
+hesperia planum,1,6,False,False
+household income in the united states,1,6,False,False
+ibm system,1,6,False,False
+inspector general,1,6,False,False
+jean-baptiste say,1,6,False,True
+john hickenlooper,1,6,False,False
+johns hopkins university,1,6,False,True
+louisiana creole people,1,6,False,False
+mark mateschitz,1,6,False,False
 meta platforms,1,6,False,True
-millennium falcon,1,6,False,False
-morgan motor company,1,6,False,True
-roots blower company,1,6,False,False
+middle east,1,6,False,False
+mojave desert,1,6,False,True
+motor trend,1,6,False,True
+national convention,1,6,False,False
+national party (united states),1,6,False,False
+ohio state university,1,6,False,False
+pat buchanan,1,6,False,False
+paul g. kirk,1,6,False,False
+richard cantillon,1,6,False,True
+roger ailes,1,6,False,False
 september,1,6,False,False
+socialist workers party (united states),1,6,False,False
+software development,1,6,False,True
+south wales,1,6,False,False
 soyuz ms-17,1,6,False,False
-uss amazon,1,6,False,False
-air command,1,5,False,True
+thomas taggart,1,6,False,False
+trade union,1,6,False,False
+united states air force honor guard,1,6,False,False
+united states coast guard training center cape may,1,6,False,False
+united states department of justice,1,6,False,False
+united states house committee on ways and means,1,6,False,False
+warren buffett,1,6,False,True
+western hemisphere,1,6,False,False
+william randolph,1,6,False,False
+york university,1,6,False,False
+1944 united states presidential election,1,5,False,False
+alejandro agag,1,5,False,False
 aliko dangote,1,5,False,False
+amancio ortega,1,5,False,True
+amazon clinic,1,5,False,False
 amazonian guard,1,5,False,False
+american enterprise institute,1,5,False,False
+american system (economic plan),1,5,False,False
+andrew morrison,1,5,False,False
 armadillo aerospace,1,5,False,False
-buttonwood agreement,1,5,False,False
-federal communications commission,1,5,False,False
-flight test,1,5,False,True
-greenhouse gas,1,5,False,False
-ibm system,1,5,False,False
+bill gates,1,5,False,True
+bryanston high school,1,5,False,False
+david brooks (commentator),1,5,False,False
+election day (united states),1,5,False,False
+family research council,1,5,False,False
+general public,1,5,False,False
+international docking system standard,1,5,False,False
+islam in the united states,1,5,False,False
+john boehner,1,5,False,False
+john d. rockefeller,1,5,False,True
+john sirica,1,5,False,False
+las vegas,1,5,False,True
+lg chem,1,5,False,False
 major general,1,5,False,True
+marc jacobs,1,5,False,True
+mark zuckerberg,1,5,False,True
 microsoft azure,1,5,False,True
-middle east,1,5,False,False
-motor trend,1,5,False,True
+moon,1,5,False,False
 municipal securities rulemaking board,1,5,False,False
+national affairs,1,5,False,False
+national federation of independent business,1,5,False,False
+national renaissance party (united states),1,5,False,False
+new hampshire,1,5,False,False
 nikola tesla,1,5,False,False
+north carolina republican party,1,5,False,False
 oracle nosql database,1,5,False,False
+project for the new american century,1,5,False,False
+roger sherman,1,5,False,False
+russell ohl,1,5,False,False
+samuel p. huntington,1,5,False,False
 san francisco bay area,1,5,False,False
-software development,1,5,False,True
 south america,1,5,False,False
 south carolina,1,5,False,False
+standing rules of the united states senate,1,5,False,False
+structure of the united states air force,1,5,False,False
 sustainable development,1,5,False,True
+thirteen colonies,1,5,False,False
+u.s. news & world report,1,5,False,False
+united states geological survey,1,5,False,False
+united states naval academy,1,5,False,False
+wallace h. white,1,5,False,False
+world wide web,1,5,False,True
+world wireless system,1,5,False,False
 yuri gagarin,1,5,False,False
+airbus,1,4,False,True
 april,1,4,False,False
+bank of north america,1,4,False,False
 berkshire hathaway,1,4,False,False
 berlin model,1,4,False,True
+companies house,1,4,False,False
+dance in the united states,1,4,False,False
+deutsche post,1,4,False,False
+edward mounier boxer,1,4,False,False
+eliot spitzer,1,4,False,False
+environmental resource management,1,4,False,False
+eric hass,1,4,False,False
 exchange alley,1,4,False,False
 flight,1,4,False,False
 foothill transit,1,4,False,False
+frank e. mckinney,1,4,False,False
+full thrust,1,4,False,False
 harvard business school,1,4,False,False
 hong kong,1,4,False,False
-las vegas,1,4,False,True
-moon,1,4,False,False
+hugh lawson white,1,4,False,False
+japan,1,4,False,False
+jet propulsion,1,4,False,False
+john a. brooks,1,4,False,False
+kamen rider,1,4,False,True
+martin van buren,1,4,False,False
 musk,1,4,False,False
-national affairs,1,4,False,False
+national federation of democratic women,1,4,False,False
+national republican congressional committee,1,4,False,False
+national republican senatorial committee,1,4,False,False
 naval air station,1,4,False,True
-arthur wing pinero,1,3,False,False
+new mexico,1,4,False,False
+olympus mons,1,4,False,False
+reserve officers' training corps,1,4,False,False
+roger b. taney,1,4,False,False
+san diego,1,4,False,False
+the american spectator,1,4,False,False
+the daily signal,1,4,False,False
+thomas s. martin,1,4,False,False
+tom truscott,1,4,False,False
+united states census,1,4,False,False
+united states government manual,1,4,False,False
+virgil goode 2012 presidential campaign,1,4,False,False
+adam smith,1,3,False,True
+air force specialty code,1,3,False,False
+amazon redshift,1,3,False,False
+apple ii,1,3,False,False
+bank war,1,3,False,False
+benjamin hav,1,3,False,False
+biomedical research,1,3,False,False
+blue origin ns-16,1,3,False,False
+boca chica,1,3,False,False
+cecil rhodes,1,3,False,True
+constitutional union party (united states),1,3,False,False
+disability in the united states,1,3,False,False
 duke university,1,3,False,False
+east india,1,3,False,False
 engineering,1,3,False,False
-japan,1,3,False,False
+evoked potential,1,3,False,False
+florida,1,3,False,True
+gaia online,1,3,False,False
+hawaiian islands,1,3,False,False
+house office building commission,1,3,False,False
+john adams,1,3,False,False
+laurie hays,1,3,False,False
+marty markowitz,1,3,False,False
+national science foundation,1,3,False,False
 new deal,1,3,False,True
-new mexico,1,3,False,False
+new orleans,1,3,False,False
+new party (united states),1,3,False,False
+new york circular letter,1,3,False,False
 noah glass,1,3,False,False
-olympus mons,1,3,False,False
+o'neill house office building,1,3,False,False
 oxford english dictionary,1,3,False,False
+paul butler (lawyer),1,3,False,False
+phillip kennedy,1,3,False,False
+post office protocol,1,3,False,False
+ronald reagan,1,3,False,True
+roots blower,1,3,False,False
+royal mail,1,3,False,False
 saudi arabia,1,3,False,False
 sms amazone,1,3,False,False
 space,1,3,False,False
+suspension of the rules in the united states congress,1,3,False,False
+the new york review of books,1,3,False,False
+timbavati private nature reserve,1,3,False,False
+tontine coffee house,1,3,False,False
+united states secretary of the interior,1,3,False,False
+video games in the united states,1,3,False,False
+whitelaw reid,1,3,False,False
+american vegetarian party,1,2,False,False
 analytics,1,2,False,False
-apple ii,1,2,False,False
-blue origin ns-16,1,2,False,False
+charles fritts,1,2,False,True
+constitutionalism in the united states,1,2,False,False
 drake landing solar community,1,2,False,False
 earth,1,2,False,False
+green party of the united states,1,2,False,False
+ian wright,1,2,False,False
+jessica amanda salmonson,1,2,False,False
+national taxpayers union,1,2,False,False
+no religious test clause,1,2,False,False
+north dakota republican party,1,2,False,False
+ralph white,1,2,False,False
 texas,1,2,False,False
+thomas jefferson building,1,2,False,False
+william wirt (attorney general),1,2,False,False
+amazon light,1,1,False,False
 blue origin ns-20,1,1,False,False
+bruce forbes,1,1,False,False
 cerberus fossae,1,1,False,False
 merlin,1,1,False,False
+richard richards (utah politician),1,1,False,False
+tim gardner,1,1,False,False
+unconditional union party,1,1,False,False
+union labor party,1,1,False,False
 world values survey,1,1,False,False
+1972 socialist labor national convention,1,0,False,False
+accounting standards board,1,0,False,False
 advanced vehicle systems,1,0,False,False
 aerospace manufacturing,1,0,False,False
+affirm (company),1,0,False,False
+air force missile test center,1,0,False,False
+air resources board,1,0,False,False
+amazon locker,1,0,False,False
+amazon prime pantry,1,0,False,False
 amazons company,1,0,False,False
 ampex corporation,1,0,False,False
 amsterdam stock exchange,1,0,False,False
 andersen consulting,1,0,False,False
+anglican church,1,0,False,False
+apollo applications,1,0,False,False
+ashanti empire,1,0,False,False
 b-50 superfortress,1,0,False,False
 bell telephone laboratories,1,0,False,False
-bentley motors limited,1,0,False,False
+big board,1,0,False,False
 bloomberg professional services,1,0,False,False
 byd t3,1,0,False,False
+byron lichtenberg,1,0,False,False
 cargo dragon,1,0,False,False
 carson city,1,0,False,False
-centrale paris,1,0,False,False
+chicago real estate bubble of the 1830s,1,0,False,False
 christian dior se,1,0,False,False
 chrysler corporation,1,0,False,False
+city council,1,0,False,False
+city council speaker,1,0,False,False
+civil aviation organization,1,0,False,False
 commonwealth english,1,0,False,False
+communications commission,1,0,False,False
 cooke air force base,1,0,False,False
 corporations act,1,0,False,False
+cst-100 starliner,1,0,False,False
+daniel doctoroff,1,0,False,False
 deep space network,1,0,False,False
+dragon c2,1,0,False,False
+duncan niederauer,1,0,False,False
 electric cars,1,0,False,False
 electric company,1,0,False,False
+elmer sperry,1,0,False,False
+environmental assessment,1,0,False,False
+environmental management,1,0,False,False
 falcon 9,1,0,False,False
+farris bryant,1,0,False,False
+federal reserve system,1,0,False,False
+fire drake manual,1,0,False,False
 fort lauderdale,1,0,False,False
 foundation series,1,0,False,False
+general public license,1,0,False,False
+george w,1,0,False,False
+giga berlin,1,0,False,False
+giving pledge,1,0,False,False
+global settlement,1,0,False,False
 google cloud,1,0,False,False
+government efficiency,1,0,False,False
+governor gavin newsom,1,0,False,False
+greenhouse gases,1,0,False,False
+group of seven,1,0,False,False
+groupe arnault,1,0,False,False
+hewlett packard,1,0,False,False
+history of abortion in the united states,1,0,False,False
 horniman circle,1,0,False,False
 informix software,1,0,False,False
+inspiration mars,1,0,False,False
+instrument landing,1,0,False,False
+integrated services digital network,1,0,False,False
+investment company act,1,0,False,False
 isps,1,0,False,False
+jb straubel,1,0,False,False
+jd edwards enterpriseone,1,0,False,False
 jersey city,1,0,False,False
+jersey standard,1,0,False,False
+john nicolay,1,0,False,False
 joint long range proving ground,1,0,False,False
 lars moravy,1,0,False,False
 launch services program,1,0,False,False
+los angeles auto,1,0,False,False
 manned spacecraft center,1,0,False,False
+marine corps,1,0,False,False
+maritime history of the united states,1,0,False,False
+mark r. shaw,1,0,False,False
+mazda roadster,1,0,False,False
+mcdonnell douglas corporation,1,0,False,False
 media matters,1,0,False,False
 merritt island,1,0,False,False
+miami palmetto high,1,0,False,False
 michael arougheti,1,0,False,False
 mitsubishi heavy industries aerospace,1,0,False,False
-nasdaq omx,1,0,False,False
+nasarawa amazons,1,0,False,False
+nasdaq composite index,1,0,False,False
+nasdaq omx group,1,0,False,False
+national merit,1,0,False,False
 north american,1,0,False,False
-nyse,1,0,False,False
+palo alto,1,0,False,False
 paypal holdings,1,0,False,False
-solarcity corporation,1,0,False,False
+peter rive,1,0,False,False
+peter vallone,1,0,False,False
+president barack,1,0,False,False
+president donald trump,1,0,False,False
+pretoria city,1,0,False,False
+randolph hearst,1,0,False,False
+republican party of the united states,1,0,False,False
+royal holloway,1,0,False,False
+saharan africa,1,0,False,False
+salomon smith barney,1,0,False,False
+security centre,1,0,False,False
+short message service,1,0,False,False
+silver knight award,1,0,False,False
+southeast asian,1,0,False,False
+spacex demo-1,1,0,False,False
+spacex demo-2,1,0,False,False
 spacex starlink,1,0,False,False
+stanley jevons,1,0,False,False
+stanley whittingham,1,0,False,False
+starship human landing system,1,0,False,False
+stone fish,1,0,False,False
 "tesla, inc",1,0,False,False
+thor bjorgolfsson,1,0,False,False
+traffic safety,1,0,False,False
+transportation economics,1,0,False,False
+u.s. air,1,0,False,False
+u.s. army air corps,1,0,False,False
+u.s. bicentennial,1,0,False,False
+u.s. federal communications commission,1,0,False,False
 uc davis,1,0,False,False
-us air,1,0,False,False
+united states constitution,1,0,False,False
 us air force,1,0,False,False
 us army,1,0,False,False
 us navy,1,0,False,False
+valor equity partners,1,0,False,False
+virgin hyperloop one,1,0,False,False
 walt disney company,1,0,False,False
+washington post,1,0,False,False
+west covina,1,0,False,False
+white knight two,1,0,False,False
 world bank,1,0,False,False
 world government summit,1,0,False,False
 world rally,1,0,False,False
 x corp,1,0,False,False
 york city,1,0,False,False
+ellison,0,23,False,True
 aerospace,0,22,False,True
+army ballistic missile agency,0,22,False,True
+sequoia capital,0,22,False,True
+air force reserve officer training corps,0,21,False,True
+ashlee vance,0,21,False,True
 bloomberg billionaires index,0,21,False,True
 byron k. lichtenberg,0,21,False,True
+cape canaveral space force station,0,21,False,True
 commercial resupply services,0,21,False,True
 mission control center,0,21,False,True
 nasa launch services program,0,21,False,True
+nasa railroad,0,21,False,True
 satellite internet access,0,21,False,True
-army ballistic missile agency,0,20,False,True
-ellison,0,20,False,True
-greg brockman,0,20,False,True
+xai (company),0,21,False,True
+1900 united states house of representatives elections,0,20,False,True
+energia (corporation),0,20,False,True
+oracle database,0,20,False,True
+"tesla, inc.",0,20,False,True
+1894 united states house of representatives elections,0,19,False,True
+1902 united states house of representatives elections,0,19,False,True
 aerospace manufacturer,0,19,False,True
-brian binnie,0,19,False,True
+barbara morgan,0,19,False,True
 development of the commercial crew program,0,19,False,True
+j.d. power,0,19,False,True
+precision neuroscience,0,19,False,True
 reusable launch vehicle,0,19,False,True
 rocketplane kistler,0,19,False,True
-cape canaveral space force station,0,18,False,True
+spacex launch vehicles,0,19,False,True
+tesla energy,0,19,False,True
+tesla model s,0,19,False,True
+united states armed forces,0,19,False,True
+x corp.,0,19,False,True
+100th united states congress,0,18,False,True
+108th united states congress,0,18,False,True
+1896 united states house of representatives elections,0,18,False,True
+amazon prime,0,18,False,True
 commercial spaceflight federation,0,18,False,True
 crew dragon demo-1,0,18,False,True
-oracle database,0,18,False,True
-safra catz,0,18,False,True
-tesla energy,0,18,False,True
-"tesla, inc.",0,18,False,True
-asahi kasei,0,17,False,True
+jacklyn (lpv1),0,18,False,True
+mike melvill,0,18,False,True
+tesla cybertruck,0,18,False,True
+vss unity,0,18,False,True
+xoom (money transfer service),0,18,False,True
+1886 united states house of representatives elections,0,17,False,True
+akamai technologies,0,17,False,True
 axiom space,0,17,False,True
-joseph schumpeter,0,17,False,True
-mike melvill,0,17,False,True
-spacex launch vehicles,0,17,False,True
+orbital sciences corporation,0,17,False,True
+paypal,0,17,False,True
+planet labs,0,17,False,True
+space launch delta 45,0,17,False,True
 spacex starship design history,0,17,False,True
-x corp.,0,17,False,True
-xoom (money transfer service),0,17,False,True
+2004 united states presidential election,0,16,False,True
+amazon publishing,0,16,False,True
 automated transfer vehicle,0,16,False,True
 ballistic missile,0,16,False,True
-bob miner,0,16,False,True
+boeing starliner,0,16,False,True
 boing boing,0,16,False,True
+electric vehicle,0,16,False,True
 gigafactory nevada,0,16,False,True
-tesla cybertruck,0,16,False,True
-barbara morgan,0,15,False,True
+hyperloop one,0,16,False,True
+john glenn,0,16,False,True
+johnson space center,0,16,False,True
+lawrence sperry,0,16,False,True
+marshall space flight center,0,16,False,True
+ronald reagan space and missile test range,0,16,False,True
+space shuttle,0,16,False,True
+the boring company,0,16,False,True
+x (social network),0,16,False,True
+artemis ii,0,15,False,True
+australian home front during world war ii,0,15,False,True
+calvin souther fuller,0,15,False,True
+commercial astronaut,0,15,False,True
 commercial crew program,0,15,False,True
+delta ii,0,15,False,True
 disaster monitoring constellation,0,15,False,True
-john glenn,0,15,False,True
-johnson space center,0,15,False,True
-lawrence sperry,0,15,False,True
-marshall space flight center,0,15,False,True
-paypal,0,15,False,True
-ronald reagan space and missile test range,0,15,False,True
-space shuttle,0,15,False,True
+fisker karma,0,15,False,True
+history of the united states (1991–2016),0,15,False,True
+marconi electronic systems,0,15,False,True
+mark bezos,0,15,False,True
+michael bloomberg 2020 presidential campaign,0,15,False,True
+national security space launch,0,15,False,True
+openai,0,15,False,True
+phibro,0,15,False,True
+solarcity,0,15,False,True
 spacex cots demo flight 2,0,15,False,True
+starlink,0,15,False,True
 stoke space nova,0,15,False,True
-the boring company,0,15,False,True
+thirteenth expeditionary air force,0,15,False,True
+"twitter, inc.",0,15,False,True
+1890 united states house of representatives elections,0,14,False,True
 abbott laboratories,0,14,False,True
-artemis ii,0,14,False,True
+air combat command,0,14,False,True
+alan shepard,0,14,False,True
+amazon china,0,14,False,True
+ampex,0,14,False,True
 astrium,0,14,False,True
-commercial astronaut,0,14,False,True
+baikonur cosmodrome,0,14,False,True
+big tech,0,14,False,True
+buzz aldrin,0,14,False,True
+cnbc,0,14,False,True
 crew dragon demo-2,0,14,False,True
-fisker karma,0,14,False,True
-launch control center,0,14,False,True
-national security space launch,0,14,False,True
-phibro,0,14,False,True
-solarcity,0,14,False,True
-starlink,0,14,False,True
-x (social network),0,14,False,True
+discovery air,0,14,False,True
+economic impact of the covid-19 pandemic in the united states,0,14,False,True
+elevation partners,0,14,False,True
+ford f-150 lightning,0,14,False,True
+goodleap,0,14,False,True
+inspiration mars foundation,0,14,False,True
+intercontinental exchange,0,14,False,True
+international financial reporting standards,0,14,False,True
+international geophysical year,0,14,False,True
+kennedy space center,0,14,False,True
+list of launch complexes,0,14,False,True
+michael whatley,0,14,False,True
+neil armstrong,0,14,False,True
+samuel alito,0,14,False,True
+steve forbes,0,14,False,True
+tesla next-generation vehicle platform,0,14,False,True
+third air force,0,14,False,True
+united states copyright office,0,14,False,True
+united states department of homeland security,0,14,False,True
+vehicle,0,14,False,True
+vss enterprise,0,14,False,True
+xm satellite radio,0,14,False,True
+109th united states congress,0,13,False,True
+1838–39 united states house of representatives elections,0,13,False,True
+1844–45 united states house of representatives elections,0,13,False,True
+1952 united states presidential election,0,13,False,True
+2012 democratic national convention,0,13,False,True
+2012 libertarian national convention,0,13,False,True
+accounting standard,0,13,False,True
+adena friedman,0,13,False,True
+amazon hq2,0,13,False,True
 amazon leo,0,13,False,True
-ampex,0,13,False,True
+apollo applications program,0,13,False,True
 ares management,0,13,False,True
-baikonur cosmodrome,0,13,False,True
-big tech,0,13,False,True
-calvin souther fuller,0,13,False,True
-cnbc,0,13,False,True
+bread financial,0,13,False,True
+british aerospace,0,13,False,True
+chief scientist of the united states air force,0,13,False,True
+corn ranch,0,13,False,True
+dan schulman,0,13,False,True
+dave limp,0,13,False,True
 dream chaser,0,13,False,True
-electric vehicle,0,13,False,True
-elevation partners,0,13,False,True
+frank moore (performance artist),0,13,False,True
+hispanic and latino americans in the united states congress,0,13,False,True
 hyperloop transportation technologies,0,13,False,True
-kennedy space center,0,13,False,True
-lvmh,0,13,False,True
-malcolm forbes,0,13,False,True
-michael bloomberg,0,13,False,True
-neil armstrong,0,13,False,True
-nissan leaf,0,13,False,True
+international civil aviation organization,0,13,False,True
+iridium communications,0,13,False,True
+jim lovell,0,13,False,True
+naval reserve officers training corps,0,13,False,True
+nuclear weapons of the united states,0,13,False,True
 nyse euronext,0,13,False,True
+peoplesoft,0,13,False,True
 pgm-17 thor,0,13,False,True
 playstation,0,13,False,True
-sergey brin,0,13,False,True
+sleepycat software,0,13,False,True
+space policy of the united states,0,13,False,True
 spacex crs-33,0,13,False,True
-steve forbes,0,13,False,True
-bse sensex,0,12,False,True
-charles d. walker,0,12,False,True
+tbs holdings,0,13,False,True
+united states atomic energy commission,0,13,False,True
+zip2,0,13,False,True
+1938 united states house of representatives elections,0,12,False,True
+1944 united states house of representatives elections,0,12,False,True
+1988 united states house of representatives elections,0,12,False,True
+2020s energy crisis,0,12,False,True
+air force,0,12,False,True
+alan greenspan,0,12,False,True
+automotive industry,0,12,False,True
+badges of the united states air force,0,12,False,True
+bentley,0,12,False,True
+bezos expeditions,0,12,False,True
+bill ready,0,12,False,True
+bloomberg l.p.,0,12,False,True
+bloomberg television,0,12,False,True
 christa mcauliffe,0,12,False,True
-deep space climate observatory,0,12,False,True
+chuck baldwin 2008 presidential campaign,0,12,False,True
+constitution party national convention,0,12,False,True
+cynthia mckinney 2008 presidential campaign,0,12,False,True
+daryl chapin,0,12,False,True
+department of government efficiency,0,12,False,True
+douglas aircraft company,0,12,False,True
+eastern range,0,12,False,True
+factions in the democratic party (united states),0,12,False,True
 fidelity investments,0,12,False,True
-gordon cooper,0,12,False,True
-hermann oberth,0,12,False,True
-list of launch complexes,0,12,False,True
-mercury control center,0,12,False,True
+financière agache,0,12,False,True
+ford of britain,0,12,False,True
+frank meyer (political philosopher),0,12,False,True
+fundraising for the 2008 united states presidential election,0,12,False,True
+fundraising in the 2020 united states presidential election,0,12,False,True
+fundraising in the 2024 united states presidential election,0,12,False,True
+game boy color,0,12,False,True
+global financial crisis in december 2008,0,12,False,True
+hewlett-packard,0,12,False,True
+j. b. straubel,0,12,False,True
+kamala harris 2024 presidential campaign,0,12,False,True
+lvmh,0,12,False,True
+marianne williamson 2020 presidential campaign,0,12,False,True
+maritime history of the united states (1776–1799),0,12,False,True
+mazda mx-5 (na),0,12,False,True
+mcdonnell douglas,0,12,False,True
+national republican redistricting trust,0,12,False,True
 omelek island,0,12,False,True
-openai,0,12,False,True
+oracle applications,0,12,False,True
+orbital reef,0,12,False,True
 orbital space plane program,0,12,False,True
-patrick space force base,0,12,False,True
-saturn corporation,0,12,False,True
-space policy of the united states,0,12,False,True
-tesla next-generation vehicle platform,0,12,False,True
-"twitter, inc.",0,12,False,True
+reaction engines,0,12,False,True
+robert kagan,0,12,False,True
+scaled composites white knight two,0,12,False,True
+space shuttle challenger,0,12,False,True
+tim pawlenty 2012 presidential campaign,0,12,False,True
+ulrike malmendier,0,12,False,True
+united states air force band,0,12,False,True
+united states army air corps,0,12,False,True
+united states in world war i,0,12,False,True
+united states marine corps,0,12,False,True
+united states senate democratic steering and outreach committee,0,12,False,True
 utc aerospace systems,0,12,False,True
 vehicle assembly building,0,12,False,True
-zip2,0,12,False,True
-air force,0,11,False,True
-alan shepard,0,11,False,True
+world war,0,12,False,True
+world war i,0,12,False,True
+1892 democratic national convention,0,11,False,True
+1924 united states house of representatives elections,0,11,False,True
+1946 united states house of representatives elections,0,11,False,True
+1968 united states house of representatives elections,0,11,False,True
+1974 conference on democratic policy and organization,0,11,False,True
+2000 united states presidential election,0,11,False,True
+2021 united states house of representatives elections,0,11,False,True
+affirm holdings,0,11,False,True
 apple inc.,0,11,False,True
-automotive industry,0,11,False,True
-barry goldwater,0,11,False,True
-bentley,0,11,False,True
-bezos expeditions,0,11,False,True
-bloomberg l.p.,0,11,False,True
-bloomberg television,0,11,False,True
-christy walton,0,11,False,True
+autopilot,0,11,False,True
+byd auto,0,11,False,True
+citizen watch,0,11,False,True
+concept car,0,11,False,True
 control data corporation,0,11,False,True
-dan schulman,0,11,False,True
-dave limp,0,11,False,True
-ford of britain,0,11,False,True
+danish americans,0,11,False,True
+darpa falcon project,0,11,False,True
+dreamcast,0,11,False,True
+duncan l. niederauer,0,11,False,True
+electric car,0,11,False,True
+federal holidays in the united states,0,11,False,True
+gerald pearson,0,11,False,True
+gigafactory shanghai,0,11,False,True
+heartland institute,0,11,False,True
+helen sharman,0,11,False,True
+hispanics in the american civil war,0,11,False,True
 hyperloop pod competition,0,11,False,True
-intercontinental exchange,0,11,False,True
+hypocenter,0,11,False,True
+integrated truss structure,0,11,False,True
+international democracy union,0,11,False,True
+james a. garfield monument,0,11,False,True
+joe walsh 2020 presidential campaign,0,11,False,True
+july,0,11,False,True
+korean war,0,11,False,True
+la jamais contente,0,11,False,True
+larry ellison,0,11,False,True
+logistics of the 2020 democratic national convention,0,11,False,True
 mackenzie scott,0,11,False,True
-mark hurd,0,11,False,True
+mcdonnell douglas dc-x,0,11,False,True
+nasdaq,0,11,False,True
 "nasdaq, inc.",0,11,False,True
+national debt of the united states,0,11,False,True
 national space biomedical research institute,0,11,False,True
-oracle applications,0,11,False,True
+oath of office of the president of the united states,0,11,False,True
 outer space treaty,0,11,False,True
-tom wheeler,0,11,False,True
-ulrike malmendier,0,11,False,True
-united states atomic energy commission,0,11,False,True
+patria (company),0,11,False,True
+ranger program,0,11,False,True
+red bull,0,11,False,True
+satellite,0,11,False,True
+sirius satellite radio,0,11,False,True
+solid-propellant rocket,0,11,False,True
+space station,0,11,False,True
+springer science+business media,0,11,False,True
+state university system,0,11,False,True
+tenth air force,0,11,False,True
+the giving pledge,0,11,False,True
+timeline of the 2024 united states presidential election,0,11,False,True
+tulsi gabbard 2020 presidential campaign,0,11,False,True
+u.s. bancorp,0,11,False,True
+u.s. steel,0,11,False,True
+united nations,0,11,False,True
+united states africa command,0,11,False,True
 vandenberg space force base,0,11,False,True
-vehicle,0,11,False,True
-world war,0,11,False,True
-xm satellite radio,0,11,False,True
+warsaw pact,0,11,False,True
+1842–43 united states house of representatives elections,0,10,False,True
+1848–49 united states house of representatives elections,0,10,False,True
+1932 united states presidential election,0,10,False,True
+1970 united states senate election in new york,0,10,False,True
+1972 united states presidential election,0,10,False,True
+2020 american samoa presidential caucuses,0,10,False,True
+2025 united states house of representatives elections,0,10,False,True
 akira yoshino,0,10,False,True
+alphabet inc.,0,10,False,True
 antonio gracias,0,10,False,True
-bernard arnault,0,10,False,True
-buzz aldrin,0,10,False,True
+associate justice of the supreme court of the united states,0,10,False,True
+barack obama 2008 presidential campaign,0,10,False,True
+bill richardson 2008 presidential campaign,0,10,False,True
+business insider,0,10,False,True
 california,0,10,False,True
-charles koch,0,10,False,True
+california air resources board,0,10,False,True
+charles breyer,0,10,False,True
+chris dodd 2008 presidential campaign,0,10,False,True
+chrysler,0,10,False,True
+cold war,0,10,False,True
 commercial space launch competitiveness act of 2015,0,10,False,True
-corn ranch,0,10,False,True
 ct corporation,0,10,False,True
 digitalbridge,0,10,False,True
-eastern range,0,10,False,True
+ed oates,0,10,False,True
 edgar f. codd,0,10,False,True
-gigafactory shanghai,0,10,False,True
-j. b. straubel,0,10,False,True
-korean war,0,10,False,True
+elmer ambrose sperry,0,10,False,True
+flux pavilion,0,10,False,True
+forbes,0,10,False,True
+frank vandersloot,0,10,False,True
+george h. w. bush,0,10,False,True
+goodrich corporation,0,10,False,True
+google checkout,0,10,False,True
+inflation reduction act,0,10,False,True
+international airport,0,10,False,True
+investment company act of 1940,0,10,False,True
+iraq war,0,10,False,True
+james madison memorial building,0,10,False,True
+joe biden 2020 presidential campaign,0,10,False,True
+kawasaki aerospace systems company,0,10,False,True
+libertarian national convention,0,10,False,True
+linda yaccarino,0,10,False,True
+list of flags of the united states,0,10,False,True
+logistics of the 2020 republican national convention,0,10,False,True
+mary ruwart,0,10,False,True
 max levchin,0,10,False,True
-mazda mx-5 (na),0,10,False,True
-nasdaq,0,10,False,True
-peter grauer,0,10,False,True
-ranger program,0,10,False,True
-sirius satellite radio,0,10,False,True
-space station,0,10,False,True
+near earth network,0,10,False,True
+nikola tesla in popular culture,0,10,False,True
+oracle fusion middleware,0,10,False,True
+privately held company,0,10,False,True
+randolph nudo,0,10,False,True
+rocket,0,10,False,True
+ron paul 2008 presidential campaign,0,10,False,True
+sam brownback 2008 presidential campaign,0,10,False,True
+skylon (spacecraft),0,10,False,True
+sm-65f atlas,0,10,False,True
+spaceshipone,0,10,False,True
 spacex dragon,0,10,False,True
 stock market,0,10,False,True
+super tuesday,0,10,False,True
+timeline of the 2028 united states presidential election,0,10,False,True
+twenty-second air force,0,10,False,True
+united states marine corps recruit training,0,10,False,True
+united states militarism,0,10,False,True
+united states military aircraft designation systems,0,10,False,True
+united states pirate party,0,10,False,True
 us orbital segment,0,10,False,True
+war bond,0,10,False,True
+warner bros.,0,10,False,True
+waterkloof house preparatory school,0,10,False,True
+william randolph hearst,0,10,False,True
+world bank group,0,10,False,True
+107th united states congress,0,9,False,True
+114th united states congress,0,9,False,True
+1840 united states presidential election,0,9,False,True
+1852 whig national convention,0,9,False,True
+1872 prohibition national convention,0,9,False,True
+1960 united states presidential election,0,9,False,True
+2000 united states house of representatives elections,0,9,False,True
+2002 united states house of representatives elections,0,9,False,True
+2003 united states house of representatives elections,0,9,False,True
+2020 puerto rican general election,0,9,False,True
+2020 united states presidential debates,0,9,False,True
+2022 united states house of representatives election ratings,0,9,False,True
+2024 republican national committee leadership elections,0,9,False,True
 air base,0,9,False,True
-alphabet inc.,0,9,False,True
+allison v-1710,0,9,False,True
+amazon drive,0,9,False,True
+amazon relational database service,0,9,False,True
+andrew yang 2020 presidential campaign,0,9,False,True
 barack obama,0,9,False,True
+bell x-1,0,9,False,True
 benjamin franklin,0,9,False,True
+bernie sanders 2020 presidential campaign,0,9,False,True
+beto o'rourke 2020 presidential campaign,0,9,False,True
+"bexar county, texas",0,9,False,True
+björgólfur thor,0,9,False,True
 bloomberg businessweek,0,9,False,True
-cold war,0,9,False,True
+bubble act,0,9,False,True
+c. farris bryant,0,9,False,True
+calorimetric electron telescope,0,9,False,True
+cannon house office building,0,9,False,True
+clay shaw (politician),0,9,False,True
+collier trophy,0,9,False,True
+colonization of mars,0,9,False,True
 compaq,0,9,False,True
-ed oates,0,9,False,True
+d. e. shaw & co.,0,9,False,True
+digital media,0,9,False,True
+dissolution of the soviet union,0,9,False,True
+donald trump,0,9,False,True
+energia (rocket),0,9,False,True
+euronext amsterdam,0,9,False,True
+federal government of the united states,0,9,False,True
+flash crash,0,9,False,True
+franklin news foundation,0,9,False,True
+g7,0,9,False,True
+gary johnson 2012 presidential campaign,0,9,False,True
+gatestone institute,0,9,False,True
 gigafactory berlin-brandenburg,0,9,False,True
-gigafactory new york,0,9,False,True
-goodrich corporation,0,9,False,True
+global financial crisis in 2009,0,9,False,True
+global financial crisis in november 2008,0,9,False,True
+harry v. jaffa,0,9,False,True
+hearst communications,0,9,False,True
+hispanics in the united states air force,0,9,False,True
+history of the united states (2016–present),0,9,False,True
+history of the united states congress,0,9,False,True
+howard hughes,0,9,False,True
 intel,0,9,False,True
-investment company act of 1940,0,9,False,True
-july,0,9,False,True
-kawasaki aerospace systems company,0,9,False,True
-linda yaccarino,0,9,False,True
+james harris (socialist workers party politician),0,9,False,True
+kamala harris 2020 presidential campaign,0,9,False,True
+la auto show,0,9,False,True
+maritime history of the united states (2000–present),0,9,False,True
+miguel nicolelis,0,9,False,True
+mikhail gorbachev,0,9,False,True
+muslims in the united states military,0,9,False,True
 national space society,0,9,False,True
-oracle fusion middleware,0,9,False,True
-privately held company,0,9,False,True
+newspaper endorsements in the 2012 united states presidential election,0,9,False,True
+north american free trade agreement,0,9,False,True
+northrop grumman pegasus,0,9,False,True
+"palo alto, california",0,9,False,True
+port canaveral,0,9,False,True
+prohibition party,0,9,False,True
+psa group,0,9,False,True
+rayburn house office building,0,9,False,True
+rick santorum 2012 presidential campaign,0,9,False,True
+robert bork,0,9,False,True
 san francisco bay,0,9,False,True
-skylon (spacecraft),0,9,False,True
-spaceshipone,0,9,False,True
+securities act of 1933,0,9,False,True
+stat (website),0,9,False,True
+statue of thomas jefferson (david d'angers),0,9,False,True
+supersport united f.c.,0,9,False,True
 surrey satellite technology,0,9,False,True
+tesla supercharger,0,9,False,True
+thaddeus mccotter 2012 presidential campaign,0,9,False,True
 the wall street journal,0,9,False,True
-united nations,0,9,False,True
+tom ognibene,0,9,False,True
+twelfth air force,0,9,False,True
+ulf merbold,0,9,False,True
+united states air force enlisted rank insignia,0,9,False,True
+united states bicentennial,0,9,False,True
+united states court of appeals for the fifth circuit,0,9,False,True
+united states court of appeals for the first circuit,0,9,False,True
 united technologies,0,9,False,True
-world bank group,0,9,False,True
+vermont avenue,0,9,False,True
+wally funk,0,9,False,True
+workers world party,0,9,False,True
+world resources institute,0,9,False,True
+1846–47 united states house of representatives elections,0,8,False,True
+1852 united states presidential election,0,8,False,True
+1874–75 united states house of representatives elections,0,8,False,True
+1876 democratic national convention,0,8,False,True
+1900 republican national convention,0,8,False,True
+1924 republican national convention,0,8,False,True
+1948 united states presidential election,0,8,False,True
+1988 united states presidential election,0,8,False,True
+1992 democratic national convention,0,8,False,True
+2004 republican national convention,0,8,False,True
+2010 united states census,0,8,False,True
 accenture,0,8,False,True
-allison v-1710,0,8,False,True
+african americans in the united states congress,0,8,False,True
 amazon eve,0,8,False,True
+amazon lab126,0,8,False,True
+american exceptionalism,0,8,False,True
+amy klobuchar 2020 presidential campaign,0,8,False,True
 apollo lunar module,0,8,False,True
 atomic energy commission,0,8,False,True
-autopilot,0,8,False,True
-bell x-1,0,8,False,True
+augustin mouchot,0,8,False,True
 bloomberg terminal,0,8,False,True
 blue ring,0,8,False,True
-bubble act,0,8,False,True
-chrysler,0,8,False,True
-darpa falcon project,0,8,False,True
+breitbart news,0,8,False,True
+british neoconservatism,0,8,False,True
+company,0,8,False,True
+constitution of the united states,0,8,False,True
+dalal street,0,8,False,True
+david churbuck,0,8,False,True
+david wilhelm,0,8,False,True
 december,0,8,False,True
-donald trump,0,8,False,True
-electric car,0,8,False,True
-elmer ambrose sperry,0,8,False,True
+delta iii,0,8,False,True
+dennis kucinich 2008 presidential campaign,0,8,False,True
+division (military),0,8,False,True
+dodd–frank act,0,8,False,True
+douglas c-124 globemaster ii,0,8,False,True
+driving in the united states,0,8,False,True
 european space agency,0,8,False,True
-forbes,0,8,False,True
+founding fathers of the united states,0,8,False,True
+fred thompson 2008 presidential campaign,0,8,False,True
+fundraising in the 2016 united states presidential election,0,8,False,True
+geography of the united states,0,8,False,True
 george w. bush,0,8,False,True
 gigafactory texas,0,8,False,True
+giorgio armani,0,8,False,True
+global positioning system,0,8,False,True
+great lakes,0,8,False,True
 henry racamier,0,8,False,True
+history of the united states constitution,0,8,False,True
+hughes aircraft company,0,8,False,True
 institute of technology,0,8,False,True
+instrument landing system,0,8,False,True
+internet in the united states,0,8,False,True
+january 6 commission,0,8,False,True
+jd edwards,0,8,False,True
+"jersey city, new jersey",0,8,False,True
+john delaney 2020 presidential campaign,0,8,False,True
 john f. kennedy,0,8,False,True
+john maynard keynes,0,8,False,True
+john mcafee,0,8,False,True
+john monds,0,8,False,True
+lockheed constellation,0,8,False,True
 mark carney,0,8,False,True
-max hodak,0,8,False,True
-"palo alto, california",0,8,False,True
+mark charles,0,8,False,True
+miami herald,0,8,False,True
+michael dukakis 1988 presidential campaign,0,8,False,True
+military budget of the united states,0,8,False,True
+mitt romney 2012 presidential campaign,0,8,False,True
+national highway traffic safety administration,0,8,False,True
+national historic landmark,0,8,False,True
+newlands resolution,0,8,False,True
+north america,0,8,False,True
+old right (united states),0,8,False,True
+organization of the united states marine corps,0,8,False,True
+otc markets group,0,8,False,True
 premchand roychand,0,8,False,True
-psa group,0,8,False,True
-rocket,0,8,False,True
+presidency of dwight d. eisenhower,0,8,False,True
+presidency of john quincy adams,0,8,False,True
+"proposed ""liberty"" amendment to the united states constitution",0,8,False,True
+rancho cucamonga,0,8,False,True
+republican party (united states),0,8,False,True
+research institute,0,8,False,True
+ron paul 2012 presidential campaign,0,8,False,True
 royal air force,0,8,False,True
-satellite,0,8,False,True
-securities act of 1933,0,8,False,True
+salomon brothers,0,8,False,True
+senior advisor,0,8,False,True
 sha-2,0,8,False,True
+signal corps,0,8,False,True
+sky news,0,8,False,True
 sm-65 atlas,0,8,False,True
+socialist labor party of america,0,8,False,True
+software,0,8,False,True
 solid rocket booster,0,8,False,True
-solid-propellant rocket,0,8,False,True
+southern africa,0,8,False,True
 spacex merlin,0,8,False,True
+star wars,0,8,False,True
+strategic defense initiative,0,8,False,True
 tesla cyberquad,0,8,False,True
-tesla supercharger,0,8,False,True
 the washington post,0,8,False,True
+titan iiie,0,8,False,True
+union army,0,8,False,True
+united airlines,0,8,False,True
+united parcel service,0,8,False,True
+united states air force academy cadet insignia,0,8,False,True
+united states capitol subway system,0,8,False,True
+united states home front during world war i,0,8,False,True
+united states secretary of the navy,0,8,False,True
+united states senate democratic policy committee,0,8,False,True
+united states southern command,0,8,False,True
+von holzhausen,0,8,False,True
+walter mondale,0,8,False,True
+wayne messam,0,8,False,True
+xenophobia in the united states,0,8,False,True
+yellow pages,0,8,False,True
+ze'ev drori,0,8,False,True
+1848 free soil & liberty national conventions,0,7,False,True
+1855–56 speaker of the united states house of representatives election,0,7,False,True
+1900 united states presidential election,0,7,False,True
+1912 democratic national convention,0,7,False,True
+1924 workers national convention,0,7,False,True
+1928 farmer–labor national convention,0,7,False,True
+1940 democratic national convention,0,7,False,True
+2012 republican national convention,0,7,False,True
+2014 russian annexation of crimea,0,7,False,True
+2017 speaker of the united states house of representatives election,0,7,False,True
+2019 speaker of the united states house of representatives election,0,7,False,True
+2020 united states elections,0,7,False,True
+2021 speaker of the united states house of representatives election,0,7,False,True
+2023 united states banking crisis,0,7,False,True
+2244 tesla,0,7,False,True
+african americans,0,7,False,True
 alessandro volta,0,7,False,True
+alvin lucier,0,7,False,True
+american jews,0,7,False,True
 andreas kaplan,0,7,False,True
+bank run,0,7,False,True
+beta kappa,0,7,False,True
+billie jean king,0,7,False,True
+black conservatism in the united states,0,7,False,True
 blade runner,0,7,False,True
 boeing b-50 superfortress,0,7,False,True
+canadian international council,0,7,False,True
+carl sagan,0,7,False,True
 carlos slim,0,7,False,True
-company,0,7,False,True
+central intelligence agency,0,7,False,True
+computer security,0,7,False,True
+cornelius vanderbilt,0,7,False,True
 corporation,0,7,False,True
-d. e. shaw & co.,0,7,False,True
-dalal street,0,7,False,True
+corruption in the united states,0,7,False,True
+daniel l. doctoroff,0,7,False,True
+democratic party (united states) organizations,0,7,False,True
+deutsche bank,0,7,False,True
 dior,0,7,False,True
-douglas c-124 globemaster ii,0,7,False,True
+discover card,0,7,False,True
 dow jones industrial average,0,7,False,True
+dwight d. eisenhower,0,7,False,True
 early modern period,0,7,False,True
-elon musk,0,7,False,True
 embraer e-jet e2 family,0,7,False,True
-euronext amsterdam,0,7,False,True
-hearst communications,0,7,False,True
+energy in the united states,0,7,False,True
+executive session,0,7,False,True
+exxonmobil,0,7,False,True
+financial accounting standards board,0,7,False,True
+financial institution,0,7,False,True
+gavin newsom,0,7,False,True
+geological history of north america,0,7,False,True
+george polk awards,0,7,False,True
+gerald f. davis,0,7,False,True
+history of the british national debt,0,7,False,True
+history of the jews in the united states,0,7,False,True
+history of the lumber industry in the united states,0,7,False,True
+history of the united states army,0,7,False,True
+history of the west coast of north america,0,7,False,True
 industrial revolution,0,7,False,True
-international airport,0,7,False,True
+international space station,0,7,False,True
+investment advisers act of 1940,0,7,False,True
+james e. webb,0,7,False,True
+joe biden,0,7,False,True
 john law's company,0,7,False,True
-larry page,0,7,False,True
 list of government space agencies,0,7,False,True
+lists of the united states congress,0,7,False,True
+longworth house office building,0,7,False,True
+loyalist (american revolution),0,7,False,True
+m. stanley whittingham,0,7,False,True
+manufacturing in the united states,0,7,False,True
+maria ressa,0,7,False,True
+mario lópez estrada,0,7,False,True
+maritime history of the united states (1800–1899),0,7,False,True
+mazda mx-5,0,7,False,True
+meghan murphy,0,7,False,True
 mitsubishi heavy industries,0,7,False,True
 morgan stanley,0,7,False,True
-national historic landmark,0,7,False,True
-north america,0,7,False,True
+nasa deep space network,0,7,False,True
+nasarawa state,0,7,False,True
+nasdaq composite,0,7,False,True
+national guard (united states),0,7,False,True
+new jersey,0,7,False,True
+new york city council,0,7,False,True
+officer candidate school (united states navy),0,7,False,True
+parcel locker,0,7,False,True
 phiroze jeejeebhoy towers,0,7,False,True
-research institute,0,7,False,True
-software,0,7,False,True
+phoenix suns,0,7,False,True
+postage stamps and postal history of the united states,0,7,False,True
+proterra ecoride,0,7,False,True
+public health insurance option,0,7,False,True
+race and ethnicity in the united states,0,7,False,True
+reserve components of the united states armed forces,0,7,False,True
+shadow racing cars,0,7,False,True
+simple mail transfer protocol,0,7,False,True
+solar panel,0,7,False,True
 spacex raptor,0,7,False,True
-super tuesday,0,7,False,True
+stacey cunningham,0,7,False,True
+starship hls,0,7,False,True
 titan (rocket family),0,7,False,True
-tom ognibene,0,7,False,True
+twenty-seventh amendment to the united states constitution,0,7,False,True
+united nations climate change conference,0,7,False,True
+united states court of appeals for the third circuit,0,7,False,True
+united states electoral college,0,7,False,True
+united states marine corps rank insignia,0,7,False,True
+united states military academy preparatory school,0,7,False,True
+united states secretary of defense,0,7,False,True
 university,0,7,False,True
-yellow pages,0,7,False,True
+us airways,0,7,False,True
+vermin supreme 2020 presidential campaign,0,7,False,True
+walter j. ong,0,7,False,True
+"west covina, california",0,7,False,True
+wet nellie,0,7,False,True
 york city f.c.,0,7,False,True
+119th united states congress,0,6,False,True
+1872 united states presidential election,0,6,False,True
+1908 united states presidential election,0,6,False,True
+1928 democratic national convention,0,6,False,True
+1952 democratic national convention,0,6,False,True
+1972 united states senate election in louisiana,0,6,False,True
+1997 united states house of representatives elections,0,6,False,True
+2001 new york city mayoral election,0,6,False,True
+2012 green party presidential primaries,0,6,False,True
+2024 green national convention,0,6,False,True
+air staff (united states),0,6,False,True
+amazon and trade unions,0,6,False,True
+amazon digital software & video games,0,6,False,True
+amazon dynamodb,0,6,False,True
 amazon kindle,0,6,False,True
-baidu tieba,0,6,False,True
+amazon river,0,6,False,True
+american indian wars,0,6,False,True
+andreas flocken,0,6,False,True
+anik (satellite),0,6,False,True
+athabasca valles,0,6,False,True
+automatic identification system,0,6,False,True
 battery energy storage system,0,6,False,True
-bernie ecclestone,0,6,False,True
+black codes (united states),0,6,False,True
 bombardier aviation,0,6,False,True
+bush (surname),0,6,False,True
 businessperson,0,6,False,True
 byd m3,0,6,False,True
-canadian international council,0,6,False,True
-carl sagan,0,6,False,True
+canada–united states relations,0,6,False,True
 chief justice,0,6,False,True
-christian dior,0,6,False,True
-christian lacroix,0,6,False,True
-division (military),0,6,False,True
-financial accounting standards board,0,6,False,True
+chiefs of chaplains of the united states,0,6,False,True
+civil aviation,0,6,False,True
+corporate debt bubble,0,6,False,True
+dc comics,0,6,False,True
+dean trantalis,0,6,False,True
+east north central states,0,6,False,True
+federal communications commission,0,6,False,True
+financial reporting council,0,6,False,True
+frank fahrenkopf,0,6,False,True
+gnu general public license,0,6,False,True
+haynes roadster,0,6,False,True
+historian of the united states house of representatives,0,6,False,True
+history of monetary policy in the united states,0,6,False,True
+holding company,0,6,False,True
+homelessness in the united states,0,6,False,True
 horniman circle gardens,0,6,False,True
-international space station,0,6,False,True
-jean-baptiste say,0,6,False,True
-"jersey city, new jersey",0,6,False,True
-johns hopkins university,0,6,False,True
+incarceration in the united states,0,6,False,True
+intelligence agency,0,6,False,True
+internet service provider,0,6,False,True
+jimmy carter,0,6,False,True
+john abele,0,6,False,True
+john birch society,0,6,False,True
+john c. frémont,0,6,False,True
 large language model,0,6,False,True
+lehman brothers,0,6,False,True
+lgm-25c titan ii,0,6,False,True
+limited liability partnership,0,6,False,True
+liquid fly-back booster,0,6,False,True
+local government,0,6,False,True
 louis vuitton,0,6,False,True
-mercedes-benz group,0,6,False,True
+lvmh tower,0,6,False,True
+mace of the united states house of representatives,0,6,False,True
+marie-odile amaury,0,6,False,True
+maritime history of the united states (1900–1999),0,6,False,True
+mass media,0,6,False,True
 merrill (company),0,6,False,True
 michael rubens,0,6,False,True
+military health system,0,6,False,True
+mini coupé and roadster,0,6,False,True
 "mission district, san francisco",0,6,False,True
-nasa deep space network,0,6,False,True
-new jersey,0,6,False,True
+municipality,0,6,False,True
+nasdaq financial-100,0,6,False,True
+naval criminal investigative service,0,6,False,True
+net neutrality,0,6,False,True
+new york stock exchange,0,6,False,True
 nobel prize,0,6,False,True
 november,0,6,False,True
+ombudsman,0,6,False,True
 oracle,0,6,False,True
+orbcomm (satellite),0,6,False,True
 outer space,0,6,False,True
+outline of the history of the united states,0,6,False,True
 paypal credit,0,6,False,True
-richard cantillon,0,6,False,True
+pretoria boys high school,0,6,False,True
+r street institute,0,6,False,True
+radical right (united states),0,6,False,True
+ratification of the united states constitution by massachusetts,0,6,False,True
+regional effects of the 2021–2023 global energy crisis,0,6,False,True
+register of copyrights,0,6,False,True
+richard dobbs spaight,0,6,False,True
+san jose international airport,0,6,False,True
 securities exchange act of 1934,0,6,False,True
-shadow racing cars,0,6,False,True
-solar panel,0,6,False,True
+sergeant at arms of the united states senate,0,6,False,True
+signing of the united states constitution,0,6,False,True
+silver lake (investment firm),0,6,False,True
+singer roadster,0,6,False,True
+social media stock bubble,0,6,False,True
+space colonization,0,6,False,True
 spacex dragon 2,0,6,False,True
-steve jobs,0,6,False,True
+super pac,0,6,False,True
 sustainable energy,0,6,False,True
 tableau software,0,6,False,True
+the new york times,0,6,False,True
+thomas molnar,0,6,False,True
+town hall,0,6,False,True
+tucker carlson,0,6,False,True
 tunnel,0,6,False,True
-us airways,0,6,False,True
+u.s. air force aeronautical rating,0,6,False,True
+unionist politician (american civil war),0,6,False,True
+united states capitol cornerstone laying,0,6,False,True
+united states congressional subcommittee,0,6,False,True
+united states court of appeals for the seventh circuit,0,6,False,True
+united states department of commerce,0,6,False,True
+united states department of state,0,6,False,True
+united states house of representatives,0,6,False,True
+united states marine corps reserve,0,6,False,True
+united states military academy,0,6,False,True
 virgin group,0,6,False,True
-wet nellie,0,6,False,True
-amancio ortega,0,5,False,True
-amazon river,0,5,False,True
+voting rights in the united states,0,6,False,True
+vought f4u corsair,0,6,False,True
+western united states,0,6,False,True
+whaling in western australia,0,6,False,True
+white paper,0,6,False,True
+1860 united states presidential election,0,5,False,True
+1884 united states presidential election,0,5,False,True
+1904 united states presidential election,0,5,False,True
+1923 speaker of the united states house of representatives election,0,5,False,True
+1940 communist national convention,0,5,False,True
+1952 progressive national convention,0,5,False,True
+1974 united states senate election in florida,0,5,False,True
+1982 united states house of representatives elections,0,5,False,True
+1984 republican national convention,0,5,False,True
+1996 united states house of representatives elections,0,5,False,True
+2019 united states house of representatives elections,0,5,False,True
+2020 united states senate election in alaska,0,5,False,True
+2023 united states house of representatives elections,0,5,False,True
+2025 speaker of the united states house of representatives election,0,5,False,True
+abraham lincoln,0,5,False,True
+advisory committee,0,5,False,True
+air force officer qualifying test,0,5,False,True
+air suspension,0,5,False,True
+amazon s3 glacier,0,5,False,True
+amazon.com inc v canada (commissioner of patents),0,5,False,True
+american nazi party,0,5,False,True
+app store,0,5,False,True
+assassination of robert f. kennedy,0,5,False,True
+auto show,0,5,False,True
 baby boom,0,5,False,True
-bill gates,0,5,False,True
 biz stone,0,5,False,True
+black indians in the united states,0,5,False,True
+bob barr 2008 presidential campaign,0,5,False,True
+border states (american civil war),0,5,False,True
+british america,0,5,False,True
 cal ripken jr.,0,5,False,True
+campaign finance reform amendment,0,5,False,True
+car,0,5,False,True
 central intelligence,0,5,False,True
-central intelligence agency,0,5,False,True
 climate change,0,5,False,True
+code of the united states fighting force,0,5,False,True
 commercial space launch act of 1984,0,5,False,True
-daniel l. doctoroff,0,5,False,True
+corporations act 2001,0,5,False,True
+crime in the united states,0,5,False,True
+dahomey amazons,0,5,False,True
+debt crisis,0,5,False,True
+debt monetization,0,5,False,True
+democratic party of the virgin islands,0,5,False,True
 digital equipment corporation,0,5,False,True
+dutch east india company,0,5,False,True
+english in the commonwealth of nations,0,5,False,True
 financial analysis,0,5,False,True
+flight management system,0,5,False,True
 "fort lauderdale, florida",0,5,False,True
+full faith and credit clause,0,5,False,True
+general ticket,0,5,False,True
+gerrymandering in the united states,0,5,False,True
+global analyst research settlements,0,5,False,True
+government of india,0,5,False,True
+governor (united states),0,5,False,True
+graduated random presidential primary system,0,5,False,True
+great lakes megalopolis,0,5,False,True
 great recession,0,5,False,True
+greater los angeles,0,5,False,True
+greenhouse gas,0,5,False,True
 gus grissom,0,5,False,True
+healthcare in the united states,0,5,False,True
+historiography of the united states,0,5,False,True
+history of native americans in the united states,0,5,False,True
+history of rail transport in pakistan,0,5,False,True
+history of rail transportation in the united states,0,5,False,True
+history of taxation in the united states,0,5,False,True
+history of the republican party (united states),0,5,False,True
+history of the united states (1980–1991),0,5,False,True
+history of the united states debt ceiling,0,5,False,True
+hospice care in the united states,0,5,False,True
+huolongjing,0,5,False,True
+hyder ali,0,5,False,True
+immigrant health care in the united states,0,5,False,True
+indian ocean,0,5,False,True
 informix corporation,0,5,False,True
-internet service provider,0,5,False,True
-james e. webb,0,5,False,True
-john d. rockefeller,0,5,False,True
+james e. watson,0,5,False,True
+january 6 united states capitol attack,0,5,False,True
+john g. carlisle,0,5,False,True
+john george nicolay,0,5,False,True
+john hay,0,5,False,True
+joint base,0,5,False,True
+kings canyon unified school district,0,5,False,True
+konstantin tsiolkovsky,0,5,False,True
 late heavy bombardment,0,5,False,True
+list of national lakeshores and seashores of the united states,0,5,False,True
 livery company,0,5,False,True
 lyndon b. johnson,0,5,False,True
-marc jacobs,0,5,False,True
-mark zuckerberg,0,5,False,True
-mass media,0,5,False,True
+mark callahan,0,5,False,True
+mary celeste,0,5,False,True
+media coverage of bernie sanders,0,5,False,True
+media research center,0,5,False,True
+miami palmetto senior high school,0,5,False,True
 michael faraday,0,5,False,True
-mojave desert,0,5,False,True
+michael knowles (political commentator),0,5,False,True
+microsoft sql server,0,5,False,True
+middle ages,0,5,False,True
+national conference of democratic mayors,0,5,False,True
+national democratic training committee,0,5,False,True
+national statuary hall collection,0,5,False,True
 nevada corporation,0,5,False,True
+new york (magazine),0,5,False,True
 new york stock exchange building,0,5,False,True
+northern united states,0,5,False,True
+observatory,0,5,False,True
 october,0,5,False,True
+packet boat,0,5,False,True
+paul gottfried,0,5,False,True
+political positions of paul ryan,0,5,False,True
+president pro tempore of the united states senate,0,5,False,True
+radarsat constellation,0,5,False,True
+ratification of the united states constitution by rhode island,0,5,False,True
+reform party of the united states of america,0,5,False,True
+robert e. wright,0,5,False,True
+"royal holloway, university of london",0,5,False,True
 rtx corporation,0,5,False,True
+rudy giuliani 2008 presidential campaign,0,5,False,True
 san antonio,0,5,False,True
+"san bernardino, california",0,5,False,True
+"santa barbara county, california",0,5,False,True
+secession in the united states,0,5,False,True
+security and maintenance,0,5,False,True
+service number (united states air force),0,5,False,True
 society,0,5,False,True
 solucar complex,0,5,False,True
 soviet union,0,5,False,True
 star trek,0,5,False,True
 starship,0,5,False,True
+stephen zaccaro,0,5,False,True
+streaming media,0,5,False,True
 technology,0,5,False,True
-the new york times,0,5,False,True
+television in the united states,0,5,False,True
 the walt disney company,0,5,False,True
+thomas r. marshall,0,5,False,True
+thorsten o. zander,0,5,False,True
+uniforms of the united states air force,0,5,False,True
+united states air force medical service,0,5,False,True
 united states army,0,5,False,True
-united states department of state,0,5,False,True
-warren buffett,0,5,False,True
-advisory committee,0,4,False,True
+united states congressional serial set,0,5,False,True
+united states court of appeals for the ninth circuit,0,5,False,True
+united states court of appeals for the second circuit,0,5,False,True
+united states environmental protection agency,0,5,False,True
+united states foreign intelligence surveillance court of review,0,5,False,True
+united states presidential debates,0,5,False,True
+united states presidential elections in new mexico,0,5,False,True
+united states presidential elections in north carolina,0,5,False,True
+walter chrysler,0,5,False,True
+war goddess,0,5,False,True
+william o. douglas,0,5,False,True
+williams college,0,5,False,True
+world governments summit,0,5,False,True
+world rally championship,0,5,False,True
+worldwide influence of the constitution of the united states,0,5,False,True
+1788–89 united states house of representatives elections,0,4,False,True
+1792 united states presidential election,0,4,False,True
+1824 united states presidential election,0,4,False,True
+1830s chicago real estate bubble,0,4,False,True
+1848 whig national convention,0,4,False,True
+1852 democratic national convention,0,4,False,True
+1856 united states presidential election,0,4,False,True
+1864 united states presidential election,0,4,False,True
+1892 united states presidential election,0,4,False,True
+1912 prohibition national convention,0,4,False,True
+1952 republican national convention,0,4,False,True
+1952 united states senate election in california,0,4,False,True
+1964 democratic national convention,0,4,False,True
+1964 republican national convention,0,4,False,True
+1966 united states house of representatives elections,0,4,False,True
+1973 united states vice presidential confirmation,0,4,False,True
+1996 united states presidential election,0,4,False,True
+2002 united states house of representatives election ratings,0,4,False,True
+2004 republican national convention protest activity,0,4,False,True
+2014 united states house of representatives elections,0,4,False,True
+2020 united states senate election in arkansas,0,4,False,True
+2024 libertarian national convention,0,4,False,True
+amazon cloudfront,0,4,False,True
+amazon echo,0,4,False,True
 amazon reef,0,4,False,True
-andreas flocken,0,4,False,True
+amazon rekognition,0,4,False,True
+apple silicon,0,4,False,True
 arthur perdue,0,4,False,True
-auto show,0,4,False,True
+article two of the united states constitution,0,4,False,True
+awards and decorations of the united states department of the air force,0,4,False,True
+bank failure,0,4,False,True
 capital market,0,4,False,True
 carl menger,0,4,False,True
+"carson city, nevada",0,4,False,True
+catholic church in the united states,0,4,False,True
+chief operating officer,0,4,False,True
 cloud computing,0,4,False,True
+compact (american magazine),0,4,False,True
+conscription in the united states,0,4,False,True
+customer service,0,4,False,True
 don delillo,0,4,False,True
+east germany,0,4,False,True
 electrical engineering,0,4,False,True
-english in the commonwealth of nations,0,4,False,True
-flight management system,0,4,False,True
+episcopal church (united states),0,4,False,True
+fashion group international,0,4,False,True
+federal reserve act,0,4,False,True
+financial statement,0,4,False,True
+florian weber,0,4,False,True
+ford f-series,0,4,False,True
 foundation (novel series),0,4,False,True
 founders park,0,4,False,True
+free people of color,0,4,False,True
+general glut,0,4,False,True
+geneva conventions,0,4,False,True
+gold standard,0,4,False,True
 greek battalion of balaklava,0,4,False,True
+guidon (united states),0,4,False,True
+harry s. truman,0,4,False,True
+historian of the united states senate,0,4,False,True
+history of banking in the united states,0,4,False,True
+history of central banking in the united states,0,4,False,True
+history of coal mining in the united states,0,4,False,True
+history of immigration to the united states,0,4,False,True
+history of north dakota,0,4,False,True
+history of the iron and steel industry in the united states,0,4,False,True
+history of the united states merchant marine,0,4,False,True
+homeland security,0,4,False,True
+homeownership in the united states,0,4,False,True
+initial public offering of facebook,0,4,False,True
+integrated services,0,4,False,True
 international telecommunication union,0,4,False,True
-investment advisers act of 1940,0,4,False,True
+james k. polk,0,4,False,True
+jerome frank,0,4,False,True
 johns hopkins,0,4,False,True
 journalism,0,4,False,True
 kamen rider amazon,0,4,False,True
+leland stanford,0,4,False,True
 limited liability company,0,4,False,True
+listing rules,0,4,False,True
 litvaks,0,4,False,True
+lunar orbiter program,0,4,False,True
 mars in fiction,0,4,False,True
-microsoft sql server,0,4,False,True
-middle ages,0,4,False,True
+mid-atlantic (united states),0,4,False,True
+military,0,4,False,True
+mohamed m. atalla,0,4,False,True
+naming in the united states,0,4,False,True
+nasarawa amazons f.c.,0,4,False,True
+national magazine awards,0,4,False,True
+national merit scholarship program,0,4,False,True
 national security,0,4,False,True
-new york stock exchange,0,4,False,True
-radarsat constellation,0,4,False,True
-robert e. wright,0,4,False,True
+ninth amendment to the united states constitution,0,4,False,True
+operating system,0,4,False,True
+opioid epidemic in the united states,0,4,False,True
+pacific ocean,0,4,False,True
+paramount pictures,0,4,False,True
+pardon of richard nixon,0,4,False,True
+peter vallone sr.,0,4,False,True
+pre-2012 statewide opinion polling for the 2012 united states presidential election,0,4,False,True
+preamble to the united states constitution,0,4,False,True
+presidency of ronald reagan,0,4,False,True
+public holidays in the united states,0,4,False,True
+public utility,0,4,False,True
+rally championships,0,4,False,True
+regulatory taking,0,4,False,True
+sahara,0,4,False,True
+san bernardino county transportation authority,0,4,False,True
 san francisco,0,4,False,True
 saturn,0,4,False,True
 secondary school,0,4,False,True
+slavery in the united states,0,4,False,True
+sm-65d atlas,0,4,False,True
+small business,0,4,False,True
+sms,0,4,False,True
+southeast asia,0,4,False,True
+southwestern united states,0,4,False,True
+stephen colbert 2008 presidential campaign,0,4,False,True
+super bowl,0,4,False,True
 super low altitude test satellite,0,4,False,True
-town hall,0,4,False,True
+task force,0,4,False,True
+taxation in the united states,0,4,False,True
+tenth amendment to the united states constitution,0,4,False,True
+the buffalo news,0,4,False,True
+the last of the masters,0,4,False,True
+the u.s. air force (song),0,4,False,True
+transport economics,0,4,False,True
+twenty-first amendment to the united states constitution,0,4,False,True
+twenty-fourth amendment to the united states constitution,0,4,False,True
 united states air force,0,4,False,True
+united states capitol crypt,0,4,False,True
+united states capitol guide service,0,4,False,True
+united states court of federal claims,0,4,False,True
+united states federal executive departments,0,4,False,True
 united states navy,0,4,False,True
+united states presidential elections in florida,0,4,False,True
+united states presidential elections in new hampshire,0,4,False,True
+united states presidential elections in new jersey,0,4,False,True
+united states supreme court building,0,4,False,True
+united states virgin islands,0,4,False,True
 "university of california, davis",0,4,False,True
 web service,0,4,False,True
-world wide web,0,4,False,True
-adam smith,0,3,False,True
-airbus,0,3,False,True
+white primary,0,4,False,True
+working class in the united states,0,4,False,True
+world trade center (1973–2001),0,4,False,True
+1820 united states presidential election,0,3,False,True
+1872 republican national convention,0,3,False,True
+1888 prohibition national convention,0,3,False,True
+1888 republican national convention,0,3,False,True
+1900 prohibition national convention,0,3,False,True
+1912 progressive national convention,0,3,False,True
+1912 republican national convention,0,3,False,True
+1912 united states presidential election,0,3,False,True
+1952 united states senate election in maine,0,3,False,True
+1972 united states house of representatives elections,0,3,False,True
+1997 asian financial crisis,0,3,False,True
+2004 united states house of representatives election ratings,0,3,False,True
+2017 united states house of representatives elections,0,3,False,True
+2018 united states house of representatives election ratings,0,3,False,True
+aftermath of the january 6 united states capitol attack,0,3,False,True
+altitude,0,3,False,True
+american broadcasting company,0,3,False,True
+arthur wing pinero,0,3,False,True
+article six of the united states constitution,0,3,False,True
+article three of the united states constitution,0,3,False,True
 baltimore orioles,0,3,False,True
 bell labs,0,3,False,True
+bibliography of the united states constitution,0,3,False,True
+bill (united states congress),0,3,False,True
 blue moon,0,3,False,True
+brain–computer interface,0,3,False,True
+bulletin board,0,3,False,True
 business,0,3,False,True
 capitoline hill,0,3,False,True
-"carson city, nevada",0,3,False,True
-cecil rhodes,0,3,False,True
+censure in the united states,0,3,False,True
+chancellor (education),0,3,False,True
 china,0,3,False,True
+classes of united states senators,0,3,False,True
 contingent negative variation,0,3,False,True
+control unit,0,3,False,True
+convention to propose amendments to the united states constitution,0,3,False,True
+council–manager government,0,3,False,True
+county executive,0,3,False,True
+credit crunch,0,3,False,True
 europe,0,3,False,True
-florida,0,3,False,True
-ford f-series,0,3,False,True
+expulsion from the united states congress,0,3,False,True
+federal impeachment in the united states,0,3,False,True
+federal reserve,0,3,False,True
+fifteenth amendment to the united states constitution,0,3,False,True
+filibuster in the united states senate,0,3,False,True
+financial crisis,0,3,False,True
+"fisherville, british columbia",0,3,False,True
+food safety in the united states,0,3,False,True
 france,0,3,False,True
+freedom of information act (united states),0,3,False,True
 google cloud platform,0,3,False,True
 henry ford,0,3,False,True
-homeland security,0,3,False,True
+henry wilson,0,3,False,True
+history of antisemitism in the united states,0,3,False,True
+history of conservatism in the united states,0,3,False,True
+history of north carolina,0,3,False,True
+history of religion in the united states,0,3,False,True
+history of the democratic party (united states),0,3,False,True
+history of the united states virgin islands,0,3,False,True
+illegal immigration to the united states,0,3,False,True
 in september,0,3,False,True
 india,0,3,False,True
-kamen rider,0,3,False,True
+james a. garfield,0,3,False,True
+japan–united states relations,0,3,False,True
+jo jorgensen 2020 presidential campaign,0,3,False,True
+know your customer,0,3,False,True
 kwajalein atoll,0,3,False,True
+landing zone,0,3,False,True
+list,0,3,False,True
+list of united states congresses,0,3,False,True
+"los angeles county, california",0,3,False,True
+margaret masterman,0,3,False,True
 market value,0,3,False,True
+maryland transportation authority,0,3,False,True
 media matters for america,0,3,False,True
-military,0,3,False,True
+model,0,3,False,True
 neurotechnology,0,3,False,True
+northeast ohio,0,3,False,True
+nvidia tesla,0,3,False,True
+o'neill house office building (1947),0,3,False,True
 o. douglas,0,3,False,True
-pacific ocean,0,3,False,True
+pearl harbor,0,3,False,True
 powerwall,0,3,False,True
+quadrangle club,0,3,False,True
+race and ethnicity in the united states census,0,3,False,True
+racism in the united states,0,3,False,True
+real gross domestic product,0,3,False,True
+regulatory agency,0,3,False,True
 relational model,0,3,False,True
-ronald reagan,0,3,False,True
+right to keep and bear arms in the united states,0,3,False,True
+river oaks elementary school,0,3,False,True
+road safety,0,3,False,True
+rolling stone,0,3,False,True
+rufus king,0,3,False,True
+secretary of the united states senate,0,3,False,True
 sierra nevada,0,3,False,True
+south africa,0,3,False,True
 south korea,0,3,False,True
-super bowl,0,3,False,True
+south pole,0,3,False,True
+stewart alexander 2012 presidential campaign,0,3,False,True
+superior court,0,3,False,True
+synanceia,0,3,False,True
+terrorism in the united states,0,3,False,True
 they,0,3,False,True
 thomas carlyle,0,3,False,True
+"union square (washington, d.c.)",0,3,False,True
 united kingdom,0,3,False,True
-united states federal executive departments,0,3,False,True
-william o. douglas,0,3,False,True
-world governments summit,0,3,False,True
-world rally championship,0,3,False,True
+united states air force fitness assessment,0,3,False,True
+united states capitol police,0,3,False,True
+united states congress,0,3,False,True
+united states declaration of independence,0,3,False,True
+united states government accountability office,0,3,False,True
+united states merchant marine,0,3,False,True
+united states presidential election,0,3,False,True
+united states presidential elections in delaware,0,3,False,True
+united states presidential elections in georgia,0,3,False,True
+united states presidential elections in hawaii,0,3,False,True
+united states presidential elections in illinois,0,3,False,True
+united states presidential elections in wisconsin,0,3,False,True
+visual art of the united states,0,3,False,True
+william stanley jevons,0,3,False,True
+wizard: the life and times of nikola tesla,0,3,False,True
+world energy supply and consumption,0,3,False,True
+world health organization,0,3,False,True
+1931 united states house of representatives elections,0,2,False,False
+1952 united states senate election in new york,0,2,False,False
+2012 green national convention,0,2,False,False
+2020 united states presidential election predictions,0,2,False,False
+abortion in the united states,0,2,False,False
 adposition,0,2,False,False
 alfa romeo p2,0,2,False,False
 amazon creek,0,2,False,False
+amazon product advertising api,0,2,False,False
 amazonis planitia,0,2,False,False
 amit agarwal,0,2,False,False
+anglicanism,0,2,False,False
+archibald low,0,2,False,False
 asante empire,0,2,False,False
 atlantic ocean,0,2,False,False
 atlas,0,2,False,False
 atomic energy,0,2,False,False
-brain–computer interface,0,2,False,False
+bloomberg l.p. v. board of governors of the federal reserve system,0,2,False,False
 cagiva roadster,0,2,False,False
-charles fritts,0,2,False,True
-corporations act 2001,0,2,False,False
+campaign finance in the united states,0,2,False,False
+ceremonial roll call for the 2020 democratic national convention,0,2,False,False
+city loop,0,2,False,False
+committee,0,2,False,False
+constitutional convention (united states),0,2,False,False
+credit cycle,0,2,False,False
 das model,0,2,False,False
 dragon,0,2,False,False
 economy of the united states,0,2,False,False
 electric motor,0,2,False,False
 energy,0,2,False,False
+environmental impact assessment,0,2,False,False
 falcon,0,2,False,False
+financial costs of the american revolutionary war,0,2,False,False
 financial market,0,2,False,False
 following,0,2,False,False
 germany,0,2,False,False
+government of new york city,0,2,False,False
+history of rail transport in great britain to 1830,0,2,False,False
+history of sexual slavery in the united states,0,2,False,False
+history of the petroleum industry in the united states,0,2,False,False
+history of the southern united states,0,2,False,False
+history of the united states public debt,0,2,False,False
+isdn,0,2,False,False
 james bond,0,2,False,False
-list,0,2,False,False
+john randolph of roanoke,0,2,False,False
+lesa lewis,0,2,False,False
+letu štuke,0,2,False,False
+marines,0,2,False,False
 "merritt island, florida",0,2,False,False
-model,0,2,False,False
+national magazine,0,2,False,False
+national wildlife,0,2,False,False
+neutron star,0,2,False,False
+north dakota democratic–nonpartisan league party,0,2,False,False
+race and health in the united states,0,2,False,False
+racial segregation in the united states,0,2,False,False
+reform judaism,0,2,False,False
+registered representative (securities),0,2,False,False
+right to petition in the united states,0,2,False,False
+roman emperor,0,2,False,False
 russia,0,2,False,False
-south africa,0,2,False,False
-south pole,0,2,False,False
+school prayer amendment,0,2,False,False
+seventh amendment to the united states constitution,0,2,False,False
+sixteenth amendment to the united states constitution,0,2,False,False
 st. louis,0,2,False,False
 states department,0,2,False,False
+stop-and-frisk in new york city,0,2,False,False
+sysop,0,2,False,False
+territories of the united states,0,2,False,False
 the electric company,0,2,False,False
 united arab emirates,0,2,False,False
-united states government accountability office,0,2,False,False
+united states constitutional sentencing law,0,2,False,False
+united states military award devices,0,2,False,False
+united states presidential elections in connecticut,0,2,False,False
+united states presidential elections in new york,0,2,False,False
+united states senate,0,2,False,False
+united states virgin islands' at-large congressional district,0,2,False,False
+wright brothers,0,2,False,False
+1889 united states house of representatives elections,0,1,False,False
 apollo,0,1,False,False
+banana river,0,1,False,False
 bernard jean,0,1,False,False
 communications and utilities regulatory authority,0,1,False,False
+constitutional law of the united states,0,1,False,False
 electricity,0,1,False,False
+elisabeth bürstenbinder,0,1,False,False
+enrique lores,0,1,False,False
 executive order,0,1,False,False
-government of new york city,0,1,False,False
+fourth amendment to the united states constitution,0,1,False,False
+hart bochner,0,1,False,False
+history of the english fiscal system,0,1,False,False
+history of the oil shale industry in the united states,0,1,False,False
 in august,0,1,False,False
+j. hill,0,1,False,False
+limited government,0,1,False,False
+mezzo tv,0,1,False,False
+politics of the united states,0,1,False,False
+resignation from the united states senate,0,1,False,False
+richard bond (political executive),0,1,False,False
 risk management,0,1,False,False
 roman republic,0,1,False,False
 social group,0,1,False,False
-united states district court,0,1,False,False
+united states capitol dome,0,1,False,False
+united states presidential elections in west virginia,0,1,False,False
+united states presidential elections in wyoming,0,1,False,False
+united states presidential line of succession,0,1,False,False
+united states presidential straw polls in guam,0,1,False,False
+united states presidential straw polls in puerto rico,0,1,False,False
+water supply and sanitation in the united states,0,1,False,False
 while,0,1,False,False

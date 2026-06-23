@@ -1,0 +1,289 @@
+# Road safety
+
+Source: https://en.wikipedia.org/wiki/Road_safety
+Retrieved at: 2026-06-22T08:22:10Z
+Revision ID: 1358605843
+Raw text SHA256: 4e6f25fa3fc8fc2b801cb908cee92b7f2b6eb225a53e782207fc9b2fd7c38a0c
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Road traffic safety refers to the methods and measures, such as traffic calming, to prevent road users from being killed or seriously injured. Typical road users include pedestrians, cyclists, motorists, passengers of vehicles, and passengers of on-road public transport, mainly buses and trams.
+Best practices in modern road safety strategy:
+
+The basic strategy of a Safe System approach is to ensure that in the event of a crash, the impact energies remain below the threshold likely to produce either death or serious injury. This threshold will vary from crash scenario to crash scenario, depending upon the level of protection offered to the road users involved. For example, the chances of survival for an unprotected pedestrian hit by a vehicle diminish rapidly at speeds greater than 30 km/h, whereas for a properly restrained motor vehicle occupant the critical impact speed is 50 km/h (for side impact crashes) and 70 km/h (for head-on crashes).
+As sustainable solutions for classes of road safety have not been identified, particularly low-traffic rural and remote roads, a hierarchy of control should be applied, similar to classifications used to improve occupational safety and health. At the highest level is sustainable prevention of serious injury and death crashes, with sustainable requiring all key result areas to be considered. At the second level is real-time risk reduction, which involves providing users at severe risk with a specific warning to enable them to take mitigating action. The third level is about reducing the crash risk which involves applying the road-design standards and guidelines (such as from AASHTO), improving driver behavior and enforcement. Drivers' traffic behaviors are significantly influenced by their perceptions and attitudes.
+Traffic safety has been studied as a science for more than 75 years.
+
+Background
+
+Traffic collisions have become one of the world's largest public-health and injury-prevention problems. The issue is all the more acute because the victims are overwhelmingly healthy before their crashes. According to the World Health Organization (WHO), more than 1 million people are killed on the world's roads each year. A report published by the WHO in 2004 estimated that some 1.2 million people were killed and 50 million injured in traffic collisions on the roads around the world each year and that traffic accidents were the leading cause of death among children 10–19 years of age. The report also noted that the problem was most severe in developing countries and that simple prevention-measures could halve the number of deaths.
+The standard measures used in assessing road safety interventions are fatalities and killed-or-seriously-injured (KSI) rates, usually expressed per billion (109) passenger kilometres. Countries using older road-safety paradigms replace KSI rates with crash rates – for example, crashes per million vehicle-miles.
+Vehicle speed within the human tolerances for avoiding serious injury and death is a key goal of modern road-design, because impact speed affects the severity of injury both to vehicle occupants and to pedestrians. For occupants, Joksch (1993) found the probability of death for drivers in multi-vehicle collisions increased as the fourth power of impact speed (often referred to by the mathematical term δv ("delta V"), meaning change in velocity). Injuries are caused by sudden, severe acceleration (or deceleration); this is difficult to measure. However, crash reconstruction techniques can estimate vehicle speeds before a crash. Therefore, the change in speed is used as a surrogate for acceleration. This enabled the Swedish Road Administration to identify the KSI risk curves using actual crash-reconstruction data which led to the human tolerances for serious injury and death referenced above.
+Interventions are generally much easier to identify in the modern road-safety paradigm, which focusses on the human tolerances for serious injury and death. For example, the elimination of head-on KSI crashes simply required the installation of an appropriate median crash-barrier. Also, roundabouts, often with speed-reducing approaches, feature very few KSI crashes.
+The old road-safety paradigm of purely crash risk is a far more complex matter. Contributing factors to highway crashes may be related to the driver (such as driver error, illness, or fatigue), the vehicle (brake, steering, or throttle failures), or the road itself (lack of sight distance, poor roadside clear- zones, etc.). Interventions may seek to reduce or compensate for these factors, or to reduce the severity of crashes. A comprehensive outline of interventions areas can be seen in management systems for road safety. Study conducted in Finland revealed that the fatality risk is increased most when a collision type is either pedestrian or meeting of the vehicles.
+In addition to management systems, which apply predominantly to networks in built-up areas, another class of interventions relates to the design of roadway networks for new districts. Such interventions explore the configurations of a network that will inherently reduce the probability of collisions.
+Interventions for the prevention of road traffic injuries are often evaluated; the Cochrane Library has published a wide variety of reviews of interventions for the prevention of road-traffic injuries.
+For the purposes of road-traffic safety it can be helpful to classify roads into three usages:
+
+built-up urban streets with slower speeds, greater densities, and more diversity among road users
+non built-up rural roads with higher speeds
+major highways (motorways/ Interstates/ freeways/ Autobahns, autostrade, etc.) reserved for motor-vehicles, and which are often designed to minimize and attenuate crashes
+Most injuries occur on urban streets but most fatalities on rural roads, while motorways are the safest in relation to distance traveled. For example, in 2013, German autobahns carried 31% of motorized road traffic (in travel-kilometres) while accounting for 13% of Germany's traffic deaths. The autobahn fatality-rate of 1.9 deaths per billion-travel-kilometres compared favorably with the 4.7 rate on urban streets and 6.6 rate on rural roads.
+
+History
+
+Roadways originally carried all sorts of traffic indiscriminately - beasts of burden as well as pedestrians. Road behavior and rules have developed to prioritize certain types of traffic.
+Important people traversing crowded streets and alleys in ancient Rome (famous for its Roman roads) deployed minions to clear the way for their litters or (if allowed) carts and chariots.
+Even the mighty preferred not to trample the bystanders.
+In the 19th century the advent of powered vehicles inspired British road-safety law to impose speed limits and to require a person on foot carrying a red flag warning of the arrival of a frightening noisy mechanical contrivance.
+Subsequently, motoring lobby-groups pressed for the priority of motorized traffic, and safety laws drove playing children off the streets and ghettoized the likes of walkers, bicycles, wheel-chairs and scooters to the margins.
+Concepts like shared space, living streets and woonerven developed to counter this paradigm.
+
+Mortality
+
+Mortality units
+According to the WHO/IRTAD:
+
+Traffic  accident  data  are  often  compared  between  countries  and  between  regions.  These  comparisons  are  done  in  numbers  of  casualties,  but  also  in  relation  to  the  number  of  inhabitants  (a  measure  of  national  health  risk),  the  number  of  vehicle  kilometres  driven  (a  measure  of  the  transport  risk) as well as the number of cars in a country, etc. For a reliable comparison the real volumes should be used (rather than recorded numbers with different recording rates)
+
+Mortality statistics
+
+EU source: European institutions (EC): EU28 2013; EU27 2019
+Japan source: WHITE PAPER ON TRAFFIC SAFETY IN JAPAN 2018
+US Source: OECD
+US Source, 2019: NHTSA
+
+Built-up areas
+
+On neighborhood roads where many vulnerable road users, such as pedestrians and bicyclists can be found, traffic calming can be a tool for road safety. Though not strictly a traffic calming measure, mini-traffic circles implanted in normal intersections of neighbourhood streets have been shown to reduce collisions at intersections dramatically (see picture). Shared space schemes, which rely on human instincts and interactions, such as eye contact, for their effectiveness, and are characterised by the removal of traditional traffic signals and signs, and even by the removal of the distinction between carriageway (roadway) and footway (sidewalk), are also becoming increasingly popular. Both approaches can be shown to be effective.
+For planned neighbourhoods, studies recommend new network configurations, such as the Fused Grid or 3-Way Offset. These layout models organize a neighbourhood area as a zone of no cut-through traffic by means of loops or dead-end streets. They also ensure that pedestrians and bicycles have a distinct advantage by introducing exclusive shortcuts by path connections through blocks and parks. Such a principle of organization is referred to as "Filtered Permeability" implying a preferential treatment of active modes of transport. These new patterns, which are recommended for laying out neighbourhoods, are based on analyses of collision data of large regional districts and over extended periods. They show that four-way intersections combined with cut-through traffic are the most significant contributors to increased collisions.
+Modern safety barriers are designed to absorb impact energy and minimize the risk to the occupants of cars and bystanders. For example, most side rails are now anchored to the ground, so that they cannot skewer a passenger compartment. Most light poles are designed to break at the base rather than violently stop a car that hits them. Some road fixtures such as signs and fire hydrants are designed to collapse on impact. authorities have removed trees in the vicinity of roads; while the idea of "dangerous trees" has attracted a certain amount of skepticism, unforgiving objects such as trees can cause severe damage and injury to errant road users. Safety barriers can provide some combination of physical protection and visual protection depending on their environment. Physical protection is important for protecting sensitive building and pedestrian areas. Visual protection is necessary to alert drivers to changes in road patterns.
+Most roads are cambered (crowned), that is, made so that they have rounded surfaces, to reduce standing water and ice, primarily to prevent frost damage but also increasing traction in poor weather. Some sections of road are now surfaced with porous bitumen to enhance drainage; this is particularly done on bends. These are just a few elements of highway engineering. As well as that, there are often grooves cut into the surface of cement highways to channel water away, and rumble strips at the edges of highways to rouse inattentive drivers with the loud noise they make when driven over. In some cases, there are raised markers between lanes to reinforce the lane boundaries; these are often reflective. In pedestrian areas, speed bumps are often placed to slow cars, preventing them from going too fast near pedestrians.
+Poor road surfaces can lead to safety problems. If too much asphalt or bituminous binder is used in asphalt concrete, the binder can 'bleed' or flush' to the surface, leaving a very smooth surface that provides little traction when wet. Certain kinds of stone aggregate become very smooth or polished under the constant wearing action of vehicle tyres, again leading to poor wet-weather traction. Either of these problems can increase wet-weather crashes by increasing braking distances or contributing to loss of control. If the pavement is insufficiently sloped or poorly drained, standing water on the surface can also lead to wet-weather crashes due to hydroplaning.
+Lane markers in some countries and states are marked with cat's eyes, Botts' dots or reflective raised pavement markers that do not fade like paint. Botts dots are not used where it is icy in the winter, because frost and snowplows can break the glue that holds them to the road, although they can be embedded in short, shallow trenches carved in the roadway, as is done in the mountainous regions of California.
+Road hazards and intersections in some areas are now usually marked several times, roughly five, twenty, and sixty seconds in advance so that drivers are less likely to attempt violent manoeuvres.
+Most road signs and pavement marking materials are retro-reflective, incorporating small glass spheres or prisms to more efficiently reflect light from vehicle headlights back to the driver's eyes.
+
+Turning across traffic
+Turning across traffic (i.e., turning left in right-hand drive countries, turning right in left-hand drive countries) poses several risks. The more serious risk is a collision with oncoming traffic. Since this is nearly a head-on collision, injuries are common. It is the most common cause of fatalities in a built-up area. Another major risk is involvement in a rear-end collision while waiting for a gap in oncoming traffic.
+Countermeasures for this type of collision include:
+
+Addition of left turn lanes
+Providing protected turn phasing at signalized intersections
+Using indirect turn treatments such as the Michigan left
+Converting conventional intersections to roundabouts
+In the absence of these facilities as a driver about to turn:
+
+Keep your wheels straight, so that in the event of a rear end shunt, you are not pushed into on-coming traffic.
+When you think it is clear, look away, to the road that you are entering. There is an optical illusion that, after a time, presents an oncoming vehicle as further away and travelling slower. Looking away breaks this illusion.
+There is no presumption of negligence which arises from the bare fact of a collision at an intersection, and circumstances may dictate that a left turn is safer than to turn right. The American Association of State Highway Transportation Officials (AASHTO) recommends in their publication Geometric Design of Highways and Streets that left or right turns are to be provided the same time gap. Some states have recognized this in statute, and a presumption of negligence is only raised because of the turn if and only if the turn was prohibited by an erected sign.
+Turns across traffic have been shown to be problematic for older drivers.
+
+Designing for pedestrians and cyclists
+
+Pedestrians and cyclists are among the most vulnerable road users and in some countries constitute over half of all road deaths. Interventions aimed at improving safety of non-motorised users:
+
+Sidewalks (or pavements in British English) of suitable width for pedestrian traffic
+Pedestrian crossings close to the desire line which allow pedestrians to cross roads safely
+Segregated pedestrian routes and cycle lanes away from the main highway
+Overbridges (tend to be unpopular with pedestrians and cyclists due to additional distance and effort)
+Underpasses (these can pose heightened risk from crime if not designed well, can work for cyclists in some cases)
+Traffic calming and speed humps
+Intersection daylighting to enhance visibility
+Low speed limits that are rigorously enforced, possibly by speed cameras
+Shared space schemes giving ownership of the road space and equal priority to all road users, regardless of mode of use
+Pedestrian barriers to prevent pedestrians crossing dangerous locations
+Cycling infrastructure
+Protected intersection
+American passive traffic safety measures which were adopted in the mid-20th century created roadways which were forgiving to motorists traveling at high speeds but which de-prioritized cycling and pedestrian facilities. Passive traffic safety policies led to excessively wide streets, clear zones adjacent to roadways, wide turn radii and a focus on protecting drivers from the consequences of high speeds. Passive traffic safety measures sought to avoid influencing the behavior of drivers while giving automobiles maximum convenience. Recent complete street policies seek to create design-oriented traffic safety improvements which actively slow drivers down by narrowing roadways while better accommodating pedestrians and cyclists.
+Pedestrians' advocates question the equitability of schemes if they impose extra time and effort on the pedestrian to remain safe from vehicles, for example overbridges with long slopes or steps up and down, underpasses with steps and addition possible risk of crime and at-grade crossings off the desired crossing line. Make Roads Safe was criticised in 2007 for proposing such features. Successful pedestrian schemes tend to avoid over-bridges and underpasses and instead use at-grade crossings (such as pedestrian crossings) close to the intended route. Successful cycling schemes by contrast avoid frequent stops even if some additional distance is involved, because cyclists expend more energy when starting off.
+In Costa Rica 57% of road deaths are pedestrians. However, a partnership between AACR, Cosevi, MOPT and iRAP has proposed the construction of 190 km of pedestrian footpaths and 170 pedestrian crossings which could save over 9000 fatal or serious injuries over 20 years.
+
+Shared space
+
+By 1947 the Pedestrians' Association was suggesting that many of the safety features being introduced (speed limits, traffic calming, road signs and road markings, traffic lights, Belisha beacons, pedestrian crossings, cycle lanes, etc.) were potentially self-defeating because "every nonrestrictive safety measure, however admirable in itself, is treated by the drivers as an opportunity for more speeding, so that the net amount of danger is increased and the latter state is worse than the first."
+During the 1990s a new approach, known as 'shared space' was developed which removed many of these features in some places has attracted the attention of authorities around the world. The approach was developed by Hans Monderman who believed that "if you treat drivers like idiots, they act as idiots" and proposed that trusting drivers to behave was more successful than forcing them to behave. Professor John Adams, an expert on risk compensation, suggested that traditional traffic engineering measures assumed that motorists were "selfish, stupid, obedient automatons who had to be protected from their own stupidity" and non-motorists were treated as "vulnerable, stupid, obedient automatons who had to be protected from cars – and their own stupidity".
+Reported results indicate that the 'shared space' approach leads to significantly reduced traffic speeds, the virtual elimination of road casualties, and a reduction in congestion. Living streets share some similarities with shared spaces. The woonerven also sought to reduce traffic speeds in community and housing zones by the use of lower speed limits enforced by the use of special signage and road markings, the introduction of traffic calming measures, and by giving pedestrians priority over motorists.
+
+Non-built-up areas
+Roads outside built-up areas, also known as rural roads not including motorways, are roads which are not classified as urban road and which are not classified as motorway.
+In the European Union, this is the kind of road with the most people killed (54.3%) in 2015, more than inside urban areas (36.8%). However, such numbers might change country by country.
+
+Fatalities on the rural roads come from the many collisions due to the dangers that exist on such roads, and the important energy involved in those collisions due to the practiced speeds. In contrast, risks of collision are less numerous on motorways, and speeds are lower on rural roads.
+
+Major highways
+
+Major highways including motorways, freeways, Autobahnen, autostrade and interstates are designed for safer high-speed operation and generally have lower levels of injury per vehicle km than other roads; for example, in 2013, the German autobahn fatality rate of 1.9 deaths per billion-travel-kilometers compared favorably with the 4.7 rate on urban streets and 6.6 rate on rural roads.
+Safety features include:
+
+Limited access from the properties and local roads.
+Grade separated junctions
+Median dividers between opposite-direction traffic to reduce likelihood of head-on collisions
+Removing roadside obstacles.
+Prohibition of more vulnerable road users and slower vehicles.
+Placements of energy attenuation devices (e.g. guard rails, wide grassy areas, sand barrels).
+Eliminating road toll booths
+The ends of some guard in rails on high-speed highways in the United States are protected with impact attenuators, designed to gradually absorb the kinetic energy of a vehicle and slow it more gently before it can strike the end of the guard rail head on, which would be devastating at high speed. Several mechanisms are used to dissipate kinetic energy. Fitch barriers, a system of sand-filled barrels, uses momentum transfer from the vehicle to the sand. Many other systems are tear or deform steel members to absorb energy and gradually stop the vehicle.
+In some countries major roads have "tone bands" impressed or cut into the edges of the legal roadway, so that drowsing drivers are awakened by a loud hum as they release the steering and drift off the edge of the road. Tone bands are also referred to as "rumble strips", owing to the sound they create. An alternative method is the use of "Raised Rib" markings, which consists of a continuous line marking with ribs across the line at regular intervals. They were first specially authorised for use on motorways as an edge line marking to separate the edge of the hard shoulder from the main carriageway. The objective of the marking is to achieve improved visual delineation of the carriageway edge in wet conditions at night. It also provides an audible/vibratory warning to vehicle drivers, should they stray from the carriageway, and run onto the marking.
+Better motorways are banked on curves to reduce the need for tire-traction and increase stability for vehicles with high centers of gravity.
+The US has developed a prototype automated roadway, to reduce driver fatigue and increase the carrying capacity of the roadway. Roadside units participating in future wireless vehicle safety communications networks have been studied.
+Motorways are far more expensive and space-consumptive to build than ordinary roads, so are only used as principal arterial routes. In developed nations, motorways bear a significant portion of motorized travel; for example, the United Kingdom's 3533 km of motorways represented less than 1.5% of the United Kingdom's roadways in 2003, but carry 23% of road traffic.
+The proportion of traffic borne by motorways is a significant safety factor. For example, even though the United Kingdom had a higher fatality rates on both motorways and non-motorways than Finland, both nations shared the same overall fatality rate in 2003. This result was due to the United Kingdom's higher proportion of motorway travel.
+Similarly, the reduction of conflicts with other vehicles on motorways results in smoother traffic flow, reduced collision rates, and reduced fuel consumption compared with stop-and-go traffic on other roadways.
+The improved safety and fuel economy of motorways are common justifications for building more motorways. However, the planned capacity of motorways is often exceeded in a shorter timeframe than initially planned, due to the under estimation of the extent of the suppressed demand for road travel. In developing nations, there is significant public debate on the desirability of continued investment in motorways.
+With effect from January 2005 and based primarily on safety grounds, the UK's Highways Agency's policy is that all new motorway schemes are to use high containment concrete step barriers in the central reserve. All existing motorways will introduce concrete barriers into the central reserve as part of ongoing upgrades and through replacement as and when these systems have reached the end of their useful life. This change of policy applies only to barriers in the central reserve of high speed roads and not to verge side barriers. Other routes will continue to use steel barriers.
+More people die on the hard shoulder than on the highway itself. Without other vehicles passing a parked car, following drivers are unaware that the vehicle is parked, despite hazard lights. Truck drivers indicate that they are parked by putting their cab seat behind their truck. In the UK, the AA and police park their vehicles on the hard shoulder at a slight angle so that following drivers can see down the side of their vehicle and are therefore aware that they are stopped.
+30% of highway crashes occur in the vicinity of toll collection booths in the countries that have them, these can be reduced by switching to electronic toll systems.
+
+Vehicle safety
+Safety can be improved in various ways depending on the transport taken.
+
+Buses and coaches
+
+Safety can be improved in various simple ways to reduce the chance of a crash occurring. Avoiding rushing or standing in unsafe places on the bus or coach and following the rules on the bus or coach itself will greatly increase the safety of a person travelling by bus or coach. Various safety features can also be implemented into buses and coaches to improve safety including safety bars for people to hold onto.
+The main ways to stay safe when travelling by bus or coach are as follows:
+
+Leave your location early so that you do not have to run to catch the bus or coach.
+At the bus stop, always follow the queue.
+Do not board or alight at a bus stop other than an official one.
+Never board or alight at a red light crossing or unauthorized bus stop.
+Board the bus only after it has come to a halt without rushing in or pushing others.
+Do not sit, stand or travel on the footboard of the bus.
+Do not put any part of your body outside a moving or a stationary bus.
+While in the bus, refrain from shouting or making noise as it can distract the driver.
+Always hold onto the handrail if standing in a moving bus, especially on sharp turns.
+Always adhere to the bus safety rules.
+
+Cars
+
+Safety can be improved by reducing the chances of a driver making an error, or by designing vehicles to reduce the severity of crashes that do occur. Most industrialized countries have comprehensive requirements and specifications for safety-related vehicle devices, systems, design, and construction. These may include:
+
+Passenger restraints such as seat belts – often in conjunction with laws requiring their use – and airbags
+Crash avoidance equipment such as lights and reflectors
+Driver assistance systems such as Electronic Stability Control
+Crash survivability design including fire-retardant interior materials, standards for fuel system integrity, and the use of safety glass
+Sobriety detectors: These interlocks prevent the ignition key from working if the driver breathes into one and it detects significant quantities of alcohol. They have been used by some commercial transport companies, or suggested for use with persistent drunk-driving offenders on a voluntary basis
+
+Motorists and passengers – both front and rear – can make dooring less likely by practicing the "Dutch reach" – opening the car door by reaching across the body with the more distant hand.
+
+Motorbikes
+
+UK road casualty statistics show that motorcycle riders are nine times more likely to crash, and 17 times more likely to die in a crash, than car drivers. The higher fatality risk is due in part to the lack of crash protection (unlike in enclosed vehicles such as cars), combined with the high speeds motorcycles typically travel at. According to US statistics, the percentage of intoxicated motorcyclists in fatal crashes is higher than other riders on roads.  Helmets also play a major role in the safety of motorcyclists. In 2008, The National Highway Traffic Safety Administration (NHTSA) estimated the helmets are 37 percent effective in saving lives of motorcyclists involved in crashes.
+
+Trucks
+According to the European Commission Transportation Department "it has been estimated that up to 25% of accidents involving trucks can be attributable to inadequate cargo securing". Improperly-secured cargo can cause severe crashes and lead to loss of cargo, loss of lives, loss of vehicles, and can be a hazard for the environment. One way to stabilize, secure, and protect cargo during transportation on the road is by using dunnage bags, which are placed in the voids among the cargo and are designed to prevent the load from moving during transport.
+Together for Safer Roads (TSR) has developed best practices for implementing corporate road safety programs that includes data management and analysis, route mapping, investment and upkeep of fleets, safety policies and training for employees, and first-aid/safety training in case collisions do occur.
+
+Police
+Hundreds of people are killed each year due to high-speed chases of fleeing suspects by police.  Different jurisdictions allow such pursuits in different circumstances; fewer injuries might occur if these are restricted to violent felonies.
+
+Regulation of road users
+Various types of road user regulations are in force or have been tried in most jurisdictions around the world, some these are discussed by road user type below.
+
+Motor vehicle users
+Dependent on jurisdiction, driver's age, road type and vehicle type, motor vehicle drivers may be required to pass a driving test (public transport and goods vehicle drivers may need additional training and licensing), conform to restrictions on driving after consuming alcohol or various drugs, comply with restrictions on use of mobile phones, be covered by compulsory insurance, wear seat belts and comply with certain speed limits. Motorcycle riders may additionally be compelled to wear a motorcycle helmet. Drivers of certain vehicle types may be subject to maximum driving hour regulations.
+Some jurisdictions, such as the US states Virginia and Maryland, have implemented specific regulations such as the prohibiting mobile phone use by, and limiting the number of passengers accompanying, young and inexperienced drivers. The State of Safety Report from the National Safety Council released in 2017 ranks states on these road safety regulations. It has been noticed that more serious collisions occur at night, when vehicles are more likely to have multiple occupants, and when seat belts are less likely to be used.
+The Insurance Institute for Highway Safety proposes restrictions for new drivers, including a "curfew" imposed on young drivers to prevent them driving at night, an experienced supervisor to chaperone the less experienced driver, forbidding the carrying of passengers, zero alcohol tolerance, raising the standards required for driving instructors and improving the driving test, vehicle restrictions (e.g. restricting access to 'high-performance' vehicles), a sign placed on the back of the vehicle (an N- or P-Plate) to notify other drivers of a novice driver and encouraging good behaviour in the post-test period.
+While government has primary responsibility for providing safe roads, the challenges of development and equity require that all segments of society engage and contribute, including the private sector. Private and public sector coalitions, like Together for Safer Roads (TSR) and the Road to Zero Coalition exist to work alongside government policies to advance the business case of having safer roads; they help companies meet their duty of care to employees and minimize fleet-related dangers to the wider community. Safer roads also benefit business by improving employee health and safety, by protecting assets, reducing productivity losses and healthcare costs, and enhancing the efficiency and effectiveness of supply chains.
+Some countries or states have already implemented some of these ideas through Vision Zero networks. Pay-as-you-drive adjusts insurance costs according to when and where the person drives.
+
+Pedal bicycle users
+Dependent on jurisdiction, road type and age, pedal cyclists may be required conform to restrictions on driving after consuming alcohol or various drugs, comply with restrictions on use of
+mobile phones, be covered by compulsory insurance, wear a bicycle helmet and comply with certain speed limits.
+
+Pedestrians
+
+Dependent on jurisdiction, jaywalking may be prohibited. The frequent road safety education for the children helps to improve the dangerous behaviors.
+
+Animals
+
+Collisions with animals are usually fatal to the animals, and occasionally to drivers as well.
+
+Information campaigns
+
+Information campaigns can be used to raise awareness of initiatives designed to reduce road casualty levels. Examples include:
+
+Think! encouraging use of seatbelts (UK 2000–present)
+Decade of Action by World Health Organization and Fédération Internationale de l'Automobile (2011–2020)
+Traffic awareness campaigns such as the "one false move" campaign documented by Hillman et al.
+Speeding. No one thinks big of you. (New South Wales, Australia, 2007)
+Road Safety is no Accident World Health Organization
+Designated driver campaign, (US, 1970s–present)
+Click It or Ticket, (US, 1993–present)
+Clunk Click Every Trip (UK 1971)
+Green Cross Code (UK 1970–present)
+
+Statistics
+
+Rating roads for safety
+Since 1999 the EuroRAP initiative has been assessing major roads in Europe with a road protection score. This results in a star rating for roads based on how well its design would protect car occupants from being severely injured or killed if a head-on, run-off, or intersection crash occurs, with 4 stars representing a road with the best survivability features. The scheme states it has highlighted thousands of road sections across Europe where road-users are routinely maimed and killed for want of safety features, sometimes for little more than the cost of safety fencing or the paint required to improve road markings.
+There are plans to extend the measurements to rate the probability of a collision for the road. These ratings are being used to inform planning and authorities' targets. For example, in Britain two-thirds of all road deaths happen on rural roads, which score badly when compared to the high quality motorway network; single carriageways claim 80% of rural deaths and serious injuries, while 40% of rural car occupant casualties are in cars that hit roadside objects, such as trees. Improvements in driver training and safety features for rural roads are hoped to reduce this statistic.
+The number of designated traffic officers in the UK fell from 15% to 20% of police force strength
+in 1966 to seven per cent of force strength in 1998, and between 1999 and 2004 by 21%. It is an item of debate whether the reduction in traffic collisions per 100 million miles driven over this time has been due to robotic enforcement.
+In the United States, roads are not government-rated, for media-releases and public knowledge on their actual safety features. [unclear] However, in 2011, the National Highway Traffic Safety Administration's Traffic Safety Facts found that over 800 persons were killed across the US by "non-fixed objects" that includes roadway debris. California had the highest number of total deaths from those crashes; New Mexico had a best chance for an individual to die from experiencing any vehicle-debris crash.
+
+KSI statistics
+
+According to WHO in 2010 it was estimated that 1.24 million people were killed worldwide and 50 million more were injured in motor vehicle collisions. Young adults aged between 15 and 44 years account for 59% of global road traffic deaths. Other key facts according to the WHO report are:
+
+Road traffic injuries are the leading cause of death among young people, aged 15–29 years.
+91% of the world's fatalities on the roads occur in low-income and middle-income countries, even though these countries have approximately half of the world's vehicles.
+Half of those dying on the world's roads are "vulnerable road users": pedestrians, cyclists and motorcyclists.
+Without action, road traffic crashes are predicted to result in the deaths of around 1.9 million people annually by 2020.
+Only 28 countries, representing 416 million people (7% of the world's population), have adequate laws that address all five risk factors (speed, drunk-driving, helmets, seat-belts and child restraints).
+It is estimated that motor vehicle collisions caused the death of around 60 million people during the 20th century, around the same number of World War II casualties.
+As the comparatively poor improvements in pedestrian safety have become a concern at OECD level, the Joint Transport Research Centre of OECD and the International Transport Forum (JTRC) convened an international expert group and published a report entitled "Pedestrian Safety, Urban Space and Health in 2012".
+According to BITRE/Australia agency changes in growth in population, vehicle registration, and estimated vehicle kilometres travelled have various impact on death trend from OECD countries.
+
+KSI 2013
+According to the OECD's International Transport Forum (ITF), in 2013 the key figures among their 37 member states and observer countries looked like the following:
+
+KSI 2020
+According to the OECD's International Transport Forum (ITF)/IRTAD, in 2020 the key figures of 34 members among their 62 member states and observer countries looked like the following:
+
+Time effect
+
+Traveled distance effect
+In some countries, the safety is computed mixing two metrics: the fatalities and the traveled distance, to establish fatalities by traveled distance.
+
+According to the BITRE, traveled distance has a limited impact on death trend from OECD countries.
+
+Road traffic safety professional societies
+Institute of Transportation Engineers: An international educational and scientific association of transportation professionals who are responsible for meeting mobility and safety needs.
+National Association of City Transportation Officials
+International Municipal Signal Association: A traffic standard organization.
+
+Road traffic safety guide and reference manuals
+
+Signalized Intersections Informational Guide
+Published by the Federal Highway Association of the U.S. Department of Transportation.
+
+Advocacy groups
+The Automobile Association was established in 1905 in the United Kingdom to help motorists avoid police speed traps. They became involved in other safety issues and also erected thousands of roadside warning signs.
+The Pedestrians Association (now known as Living Streets) in the United Kingdom was formed in 1929 to press for better road safety. Other groups have been active in other countries.
+The International Road Federation has an issue area and working group dedicated to road safety. They work with their membership to advocate measures that improve road safety through infrastructure and cooperation with other international organizations.
+Motoring advocacy groups including the Association of British Drivers (UK), Speed cameras.org (UK), National Motorists Association (US/Canada) argue that the strict enforcement of speed limits does not necessarily result in safer driving, and may even have negative effect on road safety in general. Safe Speed was a UK group set up specifically to campaign against the use of speed cameras.
+Together for Safer Roads (TSR) is a coalition that brings together global private sector companies, across industries, to collaborate on improving road safety. TSR brings together members' knowledge, data, technology, and global networks to focus on five road safety areas with the goal of bringing about the greatest impact globally and within local communities.
+In 1965, Ralph Nader put pressure on car manufacturers in his book Unsafe at Any Speed, detailing resistance by car manufacturers to the introduction of safety features such as seat belts, and their general reluctance to spend money on improving safety. The GM President James Roche was later forced to appear before a United States Senate subcommittee, and to apologize to Nader for the company's campaign of harassment and intimidation. Nader later successfully sued GM for excessive invasion of privacy.
+RoadPeace was formed in 1991 in the United Kingdom to advocate for better road safety and founded World Day of Remembrance for Road Traffic Victims in 1993 which received support from the United Nations General Assembly in 2005.
+
+See also
+
+Notes and references
+
+Notes
+
+References
+
+Sources
+World Health Organization (2013). "Global status report on road safety 2013". Archived from the original on 17 March 2013. Retrieved 15 March 2013.
+Department for Transport (2008). "Reported Road Casualties Great Britain: 2008 Annual Report" (PDF). Road Casualties Great Britain. Archived from the original (PDF) on 11 October 2010. Retrieved 9 January 2010.
+Mayer Hillman; John Adams; John Whitelegg (2000) [1991]. One False Move: a study of children's independent mobility. Policy Studies Institute. ISBN 978-0-85374-494-8.
+Robert Davis (1993). Death on the Streets: Cars and the mythology of road safety. Leading Edge Press. ISBN 978-0-948135-46-0.
+John Adams (1995). Risk. UCL Press. ISBN 978-1-85728-068-5.
+Leonard Evans (2004). Traffic Safety. Science Serving Society. ISBN 978-0-9754871-0-5.
+
+External links
+
+WHO road traffic injuries
+Mortality from Road Crashes in 193 Countries: A Comparison with Other Leading Causes of Death, University of Michigan Transportation Research Institute, February 2014

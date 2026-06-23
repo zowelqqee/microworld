@@ -1,0 +1,872 @@
+{
+  "timestamp": "2026-06-22T13:46:05.359624+00:00",
+  "overlay_mode": "pump-dry-run",
+  "total_questions": 100,
+  "overlay_facts": 1877,
+  "total_time_sec": 0.81,
+  "summary": {
+    "answer": 70,
+    "no": 0,
+    "audit": 30
+  },
+  "by_type": {
+    "definition": {
+      "total": 20,
+      "expected": 20,
+      "answer": 20,
+      "no": 0,
+      "audit": 0
+    },
+    "relation": {
+      "total": 20,
+      "expected": 20,
+      "answer": 14,
+      "no": 0,
+      "audit": 6
+    },
+    "multihop": {
+      "total": 10,
+      "expected": 10,
+      "answer": 7,
+      "no": 0,
+      "audit": 3
+    },
+    "is_a": {
+      "total": 10,
+      "expected": 10,
+      "answer": 10,
+      "no": 0,
+      "audit": 0
+    },
+    "comparative": {
+      "total": 10,
+      "expected": 10,
+      "answer": 4,
+      "no": 0,
+      "audit": 6
+    },
+    "count": {
+      "total": 10,
+      "expected": 10,
+      "answer": 10,
+      "no": 0,
+      "audit": 0
+    },
+    "paraphrase": {
+      "total": 10,
+      "expected": 10,
+      "answer": 5,
+      "no": 0,
+      "audit": 5
+    },
+    "adversarial": {
+      "total": 10,
+      "expected": 10,
+      "answer": 0,
+      "no": 0,
+      "audit": 10
+    }
+  },
+  "rows": [
+    {
+      "id": "def-01",
+      "type": "definition",
+      "question": "What is Tesla?",
+      "decision": "answer",
+      "answer_text": "Tesla is an American electric vehicle and clean energy company. In the overlay, Tesla is a Clean energy, and it produces",
+      "latency_ms": 10.63
+    },
+    {
+      "id": "def-02",
+      "type": "definition",
+      "question": "What is SpaceX?",
+      "decision": "answer",
+      "answer_text": "SpaceX is an aerospace manufacturer and space transportation company. In the overlay, SpaceX develops rockets, spacecraf",
+      "latency_ms": 10.43
+    },
+    {
+      "id": "def-03",
+      "type": "definition",
+      "question": "What is Forbes?",
+      "decision": "answer",
+      "answer_text": "Forbes is an American business magazine. In the overlay, Forbes publishes business rankings and financial lists.",
+      "latency_ms": 10.41
+    },
+    {
+      "id": "def-04",
+      "type": "definition",
+      "question": "Who is Elon Musk?",
+      "decision": "answer",
+      "answer_text": "Elon Musk is a businessman. In the overlay, Elon Musk is linked to Tesla and SpaceX through leadership, known for Tesla ",
+      "latency_ms": 10.65
+    },
+    {
+      "id": "def-05",
+      "type": "definition",
+      "question": "Who is Jeff Bezos?",
+      "decision": "answer",
+      "answer_text": "Jeff Bezos is a businessman. In the overlay, Jeff Bezos is linked to Blue Origin through leadership and listed as the fo",
+      "latency_ms": 10.67
+    },
+    {
+      "id": "def-06",
+      "type": "definition",
+      "question": "What is Neuralink?",
+      "decision": "answer",
+      "answer_text": "Neuralink is a neurotechnology company. In the overlay, Neuralink develops brain-computer interfaces.",
+      "latency_ms": 10.44
+    },
+    {
+      "id": "def-07",
+      "type": "definition",
+      "question": "What is Blue Origin?",
+      "decision": "answer",
+      "answer_text": "Blue Origin is an American aerospace company. In the overlay, Blue Origin develops rockets and spacecraft.",
+      "latency_ms": 10.69
+    },
+    {
+      "id": "def-08",
+      "type": "definition",
+      "question": "What is Bloomberg News?",
+      "decision": "answer",
+      "answer_text": "Bloomberg News is an international news organization. In the overlay, Bloomberg News is founded by Michael Bloomberg and",
+      "latency_ms": 10.76
+    },
+    {
+      "id": "def-09",
+      "type": "definition",
+      "question": "What is SolarCity?",
+      "decision": "answer",
+      "answer_text": "SolarCity is a solar energy company. In the overlay, SolarCity is an Internet service provider, and it produces solar pa",
+      "latency_ms": 10.47
+    },
+    {
+      "id": "def-10",
+      "type": "definition",
+      "question": "What is Falcon 9?",
+      "decision": "answer",
+      "answer_text": "Falcon 9 is a reusable launch vehicle developed by SpaceX. In the overlay, Falcon 9 is owned by SpaceX.",
+      "latency_ms": 10.54
+    },
+    {
+      "id": "def-11",
+      "type": "definition",
+      "question": "Who is Gwynne Shotwell?",
+      "decision": "answer",
+      "answer_text": "Gwynne Shotwell is a businesswoman. In the overlay, Gwynne Shotwell is linked to SpaceX through leadership.",
+      "latency_ms": 10.74
+    },
+    {
+      "id": "def-12",
+      "type": "definition",
+      "question": "Who is Martin Eberhard?",
+      "decision": "answer",
+      "answer_text": "Martin Eberhard is an engineer. In the overlay, Martin Eberhard is listed as the founder of Tesla and known for co-found",
+      "latency_ms": 10.74
+    },
+    {
+      "id": "def-13",
+      "type": "definition",
+      "question": "What is an electric vehicle?",
+      "decision": "answer",
+      "answer_text": "Electric vehicle is a vehicle that uses one or more electric motors for propulsion.",
+      "latency_ms": 6.9
+    },
+    {
+      "id": "def-14",
+      "type": "definition",
+      "question": "What is a rocket?",
+      "decision": "answer",
+      "answer_text": "Rocket is a vehicle that obtains thrust from a rocket engine. In the overlay, Rocket is linked to North American Aviatio",
+      "latency_ms": 6.29
+    },
+    {
+      "id": "def-15",
+      "type": "definition",
+      "question": "What is OpenAI?",
+      "decision": "answer",
+      "answer_text": "OpenAI is an artificial intelligence research organization. In the overlay, OpenAI develops large language models.",
+      "latency_ms": 10.42
+    },
+    {
+      "id": "def-16",
+      "type": "definition",
+      "question": "What is NASA?",
+      "decision": "answer",
+      "answer_text": "NASA is an American space agency. In the overlay, NASA develops spacecraft and launch systems.",
+      "latency_ms": 10.18
+    },
+    {
+      "id": "def-17",
+      "type": "definition",
+      "question": "What is The Boring Company?",
+      "decision": "answer",
+      "answer_text": "The Boring Company is an infrastructure company. In the overlay, The Boring Company develops tunnels and transportation ",
+      "latency_ms": 12.23
+    },
+    {
+      "id": "def-18",
+      "type": "definition",
+      "question": "What is Tesla Energy?",
+      "decision": "answer",
+      "answer_text": "Tesla Energy is a clean energy division of Tesla. In the overlay, Tesla Energy is linked to Michael Liebreich via create",
+      "latency_ms": 10.78
+    },
+    {
+      "id": "def-19",
+      "type": "definition",
+      "question": "What is Starlink?",
+      "decision": "answer",
+      "answer_text": "Starlink is a satellite internet constellation operated by SpaceX. In the overlay, Starlink is a Satellite internet and ",
+      "latency_ms": 10.48
+    },
+    {
+      "id": "def-20",
+      "type": "definition",
+      "question": "Who is Bernard Arnault?",
+      "decision": "answer",
+      "answer_text": "Bernard Arnault is a businessman. In the overlay, Bernard Arnault is linked to luxury goods companies through leadership",
+      "latency_ms": 10.76
+    },
+    {
+      "id": "rel-01",
+      "type": "relation",
+      "question": "Who founded SpaceX?",
+      "decision": "answer",
+      "answer_text": "SpaceX was founded by Elon Musk.",
+      "latency_ms": 6.76
+    },
+    {
+      "id": "rel-02",
+      "type": "relation",
+      "question": "Who founded Tesla?",
+      "decision": "answer",
+      "answer_text": "Tesla was founded by Martin Eberhard and Marc Tarpenning.",
+      "latency_ms": 6.52
+    },
+    {
+      "id": "rel-03",
+      "type": "relation",
+      "question": "Who founded Blue Origin?",
+      "decision": "answer",
+      "answer_text": "Blue Origin was founded by Jeff Bezos.",
+      "latency_ms": 6.71
+    },
+    {
+      "id": "rel-04",
+      "type": "relation",
+      "question": "What does SpaceX develop?",
+      "decision": "answer",
+      "answer_text": "SpaceX develops rockets, spacecraft, Falcon 9, Starship, Launch vehicle, and Dragon spacecraft.",
+      "latency_ms": 6.8
+    },
+    {
+      "id": "rel-05",
+      "type": "relation",
+      "question": "What does Tesla produce?",
+      "decision": "answer",
+      "answer_text": "Tesla produces electric cars, battery energy storage, Electric cars, Battery storage, and Electric car.",
+      "latency_ms": 6.73
+    },
+    {
+      "id": "rel-06",
+      "type": "relation",
+      "question": "Who leads SpaceX?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.22
+    },
+    {
+      "id": "rel-07",
+      "type": "relation",
+      "question": "Who leads Tesla?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.22
+    },
+    {
+      "id": "rel-08",
+      "type": "relation",
+      "question": "What does Forbes publish?",
+      "decision": "answer",
+      "answer_text": "Forbes publishes business rankings and financial lists.",
+      "latency_ms": 6.75
+    },
+    {
+      "id": "rel-09",
+      "type": "relation",
+      "question": "What is SolarCity owned by?",
+      "decision": "answer",
+      "answer_text": "SolarCity owns Zep Solar.",
+      "latency_ms": 6.38
+    },
+    {
+      "id": "rel-10",
+      "type": "relation",
+      "question": "What does Elon Musk lead?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.52
+    },
+    {
+      "id": "rel-11",
+      "type": "relation",
+      "question": "What companies did Elon Musk found?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 7.15
+    },
+    {
+      "id": "rel-12",
+      "type": "relation",
+      "question": "What did Jeff Bezos found?",
+      "decision": "answer",
+      "answer_text": "Jeff Bezos founded Blue Origin and Amazon.",
+      "latency_ms": 6.63
+    },
+    {
+      "id": "rel-13",
+      "type": "relation",
+      "question": "What does SpaceX own?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.99
+    },
+    {
+      "id": "rel-14",
+      "type": "relation",
+      "question": "What companies has Elon Musk started?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 7.53
+    },
+    {
+      "id": "rel-15",
+      "type": "relation",
+      "question": "Which entities did Elon Musk found?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 6.95
+    },
+    {
+      "id": "rel-16",
+      "type": "relation",
+      "question": "What does Neuralink develop?",
+      "decision": "answer",
+      "answer_text": "Neuralink develops brain-computer interfaces.",
+      "latency_ms": 6.96
+    },
+    {
+      "id": "rel-17",
+      "type": "relation",
+      "question": "What is Tesla known for?",
+      "decision": "answer",
+      "answer_text": "Tesla produces electric cars, battery energy storage, Electric cars, Battery storage, and Electric car. Tesla is a Clean",
+      "latency_ms": 7.18
+    },
+    {
+      "id": "rel-18",
+      "type": "relation",
+      "question": "What does Bloomberg News publish?",
+      "decision": "answer",
+      "answer_text": "Bloomberg News publishes financial market coverage and wealth indexes.",
+      "latency_ms": 7.09
+    },
+    {
+      "id": "rel-19",
+      "type": "relation",
+      "question": "What rockets does SpaceX develop?",
+      "decision": "answer",
+      "answer_text": "SpaceX develops rockets, spacecraft, Falcon 9, Starship, Launch vehicle, and Dragon spacecraft.",
+      "latency_ms": 7.18
+    },
+    {
+      "id": "rel-20",
+      "type": "relation",
+      "question": "What is Starlink owned by?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.33
+    },
+    {
+      "id": "mhop-01",
+      "type": "multihop",
+      "question": "How is Starlink connected to Falcon 9?",
+      "decision": "answer",
+      "answer_text": "In the overlay, Starlink is connected to Falcon 9 through SpaceX: Starlink is linked to SpaceX via owned_by, and SpaceX ",
+      "latency_ms": 6.57
+    },
+    {
+      "id": "mhop-02",
+      "type": "multihop",
+      "question": "How is Starlink connected to rockets?",
+      "decision": "answer",
+      "answer_text": "In the overlay, Starlink is connected to rockets through SpaceX: Starlink is linked to SpaceX via owned_by, and SpaceX d",
+      "latency_ms": 6.55
+    },
+    {
+      "id": "mhop-03",
+      "type": "multihop",
+      "question": "How is SolarCity connected to electric cars?",
+      "decision": "audit",
+      "answer_text": "no explicit stable path connects these entities (only weak or no links)",
+      "latency_ms": 6.89
+    },
+    {
+      "id": "mhop-04",
+      "type": "multihop",
+      "question": "What links SolarCity to electric cars?",
+      "decision": "audit",
+      "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+      "latency_ms": 15.14
+    },
+    {
+      "id": "mhop-05",
+      "type": "multihop",
+      "question": "How is Elon Musk connected to SpaceX?",
+      "decision": "answer",
+      "answer_text": "In the overlay, Elon Musk is connected to SpaceX: Elon Musk is linked to SpaceX through leadership. This is an explicit ",
+      "latency_ms": 6.72
+    },
+    {
+      "id": "mhop-06",
+      "type": "multihop",
+      "question": "How is Elon Musk connected to Tesla?",
+      "decision": "answer",
+      "answer_text": "In the overlay, Elon Musk is connected to Tesla: Elon Musk is linked to Tesla through leadership. This is an explicit se",
+      "latency_ms": 6.51
+    },
+    {
+      "id": "mhop-07",
+      "type": "multihop",
+      "question": "How is SpaceX connected to rockets?",
+      "decision": "answer",
+      "answer_text": "In the overlay, SpaceX is connected to rockets: SpaceX develops rockets. This is an explicit semi-stable relation in the",
+      "latency_ms": 6.43
+    },
+    {
+      "id": "mhop-08",
+      "type": "multihop",
+      "question": "How is SpaceX connected to spacecraft?",
+      "decision": "answer",
+      "answer_text": "In the overlay, SpaceX is connected to spacecraft: SpaceX develops spacecraft. This is an explicit semi-stable relation ",
+      "latency_ms": 6.58
+    },
+    {
+      "id": "mhop-09",
+      "type": "multihop",
+      "question": "How is Starlink connected to spacecraft?",
+      "decision": "answer",
+      "answer_text": "In the overlay, Starlink is connected to spacecraft through SpaceX: Starlink is linked to SpaceX via owned_by, and Space",
+      "latency_ms": 6.64
+    },
+    {
+      "id": "mhop-10",
+      "type": "multihop",
+      "question": "How is SolarCity connected to SpaceX?",
+      "decision": "audit",
+      "answer_text": "no explicit stable path connects these entities (only weak or no links)",
+      "latency_ms": 6.67
+    },
+    {
+      "id": "isa-01",
+      "type": "is_a",
+      "question": "Is Elon Musk a businessman?",
+      "decision": "answer",
+      "answer_text": "Yes. Elon Musk is a businessman.",
+      "latency_ms": 16.67
+    },
+    {
+      "id": "isa-02",
+      "type": "is_a",
+      "question": "Is Elon Musk a worker?",
+      "decision": "answer",
+      "answer_text": "Yes. Elon Musk is a businessman, which is a worker.",
+      "latency_ms": 15.8
+    },
+    {
+      "id": "isa-03",
+      "type": "is_a",
+      "question": "Is Martin Eberhard an engineer?",
+      "decision": "answer",
+      "answer_text": "Yes. Martin Eberhard is an engineer.",
+      "latency_ms": 8.54
+    },
+    {
+      "id": "isa-04",
+      "type": "is_a",
+      "question": "Is Jeff Bezos a businessman?",
+      "decision": "answer",
+      "answer_text": "Yes. Jeff Bezos is a businessman.",
+      "latency_ms": 16.01
+    },
+    {
+      "id": "isa-05",
+      "type": "is_a",
+      "question": "Is Gwynne Shotwell a businesswoman?",
+      "decision": "answer",
+      "answer_text": "Yes. Gwynne Shotwell is a businesswoman.",
+      "latency_ms": 16.32
+    },
+    {
+      "id": "isa-06",
+      "type": "is_a",
+      "question": "Is Marc Tarpenning an engineer?",
+      "decision": "answer",
+      "answer_text": "Yes. Marc Tarpenning is an engineer.",
+      "latency_ms": 8.5
+    },
+    {
+      "id": "isa-07",
+      "type": "is_a",
+      "question": "Is Bernard Arnault a businessman?",
+      "decision": "answer",
+      "answer_text": "Yes. Bernard Arnault is a businessman.",
+      "latency_ms": 16.17
+    },
+    {
+      "id": "isa-08",
+      "type": "is_a",
+      "question": "What type of professional is Elon Musk?",
+      "decision": "answer",
+      "answer_text": "Elon Musk is a businessman. In the overlay, Elon Musk is linked to Tesla and SpaceX through leadership, known for Tesla ",
+      "latency_ms": 7.43
+    },
+    {
+      "id": "isa-09",
+      "type": "is_a",
+      "question": "What type of professional is Jeff Bezos?",
+      "decision": "answer",
+      "answer_text": "Jeff Bezos is a businessman. In the overlay, Jeff Bezos is linked to Blue Origin through leadership and listed as the fo",
+      "latency_ms": 7.09
+    },
+    {
+      "id": "isa-10",
+      "type": "is_a",
+      "question": "What kind of professional is Gwynne Shotwell?",
+      "decision": "answer",
+      "answer_text": "Gwynne Shotwell is a businesswoman. In the overlay, Gwynne Shotwell is linked to SpaceX through leadership.",
+      "latency_ms": 7.36
+    },
+    {
+      "id": "cmp-01",
+      "type": "comparative",
+      "question": "What companies did Elon Musk and Jeff Bezos both found?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 8.18
+    },
+    {
+      "id": "cmp-02",
+      "type": "comparative",
+      "question": "Which entities did Elon Musk found?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 7.11
+    },
+    {
+      "id": "cmp-03",
+      "type": "comparative",
+      "question": "Which companies does SpaceX own?",
+      "decision": "answer",
+      "answer_text": "SpaceX owns Falcon 9 and Starlink.",
+      "latency_ms": 7.04
+    },
+    {
+      "id": "cmp-04",
+      "type": "comparative",
+      "question": "Which organizations has Elon Musk started?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 7.69
+    },
+    {
+      "id": "cmp-05",
+      "type": "comparative",
+      "question": "What has Elon Musk founded and leads?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 7.35
+    },
+    {
+      "id": "cmp-06",
+      "type": "comparative",
+      "question": "What companies has Jeff Bezos started?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 7.35
+    },
+    {
+      "id": "cmp-07",
+      "type": "comparative",
+      "question": "What companies did Elon Musk create?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 7.0
+    },
+    {
+      "id": "cmp-08",
+      "type": "comparative",
+      "question": "Which rockets does SpaceX develop?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.77
+    },
+    {
+      "id": "cmp-09",
+      "type": "comparative",
+      "question": "Which spacecraft does SpaceX develop?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.81
+    },
+    {
+      "id": "cmp-10",
+      "type": "comparative",
+      "question": "What does Tesla own?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.82
+    },
+    {
+      "id": "cnt-01",
+      "type": "count",
+      "question": "How many companies did Elon Musk found?",
+      "decision": "answer",
+      "answer_text": "Elon Musk founded 6 companies: SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.",
+      "latency_ms": 7.26
+    },
+    {
+      "id": "cnt-02",
+      "type": "count",
+      "question": "How many things does SpaceX develop?",
+      "decision": "answer",
+      "answer_text": "SpaceX has 6 develops results: rockets, spacecraft, Falcon 9, Starship, Launch vehicle, and Dragon spacecraft.",
+      "latency_ms": 7.0
+    },
+    {
+      "id": "cnt-03",
+      "type": "count",
+      "question": "How many products does Tesla produce?",
+      "decision": "answer",
+      "answer_text": "Tesla has 5 produces results: electric cars, battery energy storage, Electric cars, Battery storage, and Electric car.",
+      "latency_ms": 6.98
+    },
+    {
+      "id": "cnt-04",
+      "type": "count",
+      "question": "How many companies did Jeff Bezos found?",
+      "decision": "answer",
+      "answer_text": "Jeff Bezos founded 2 companies: Blue Origin and Amazon.",
+      "latency_ms": 7.38
+    },
+    {
+      "id": "cnt-05",
+      "type": "count",
+      "question": "How many things does Neuralink develop?",
+      "decision": "answer",
+      "answer_text": "Neuralink has 1 develops result: brain-computer interfaces.",
+      "latency_ms": 7.26
+    },
+    {
+      "id": "cnt-06",
+      "type": "count",
+      "question": "How many publications does Forbes publish?",
+      "decision": "answer",
+      "answer_text": "Forbes has 2 publishes results: business rankings and financial lists.",
+      "latency_ms": 7.07
+    },
+    {
+      "id": "cnt-07",
+      "type": "count",
+      "question": "How many rockets does SpaceX develop?",
+      "decision": "answer",
+      "answer_text": "SpaceX has 6 develops results: rockets, spacecraft, Falcon 9, Starship, Launch vehicle, and Dragon spacecraft.",
+      "latency_ms": 7.28
+    },
+    {
+      "id": "cnt-08",
+      "type": "count",
+      "question": "How many companies does Elon Musk lead?",
+      "decision": "answer",
+      "answer_text": "Elon Musk is linked to Tesla and SpaceX through leadership.",
+      "latency_ms": 8.28
+    },
+    {
+      "id": "cnt-09",
+      "type": "count",
+      "question": "How many companies did Martin Eberhard found?",
+      "decision": "answer",
+      "answer_text": "Martin Eberhard founded 1 company: Tesla.",
+      "latency_ms": 7.51
+    },
+    {
+      "id": "cnt-10",
+      "type": "count",
+      "question": "How many things does Tesla Energy produce?",
+      "decision": "answer",
+      "answer_text": "Tesla Energy has 4 produces results: solar panels, battery storage, Solar panels, and Battery storage.",
+      "latency_ms": 7.26
+    },
+    {
+      "id": "par-01",
+      "type": "paraphrase",
+      "question": "Who exactly is Elon Musk?",
+      "decision": "audit",
+      "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+      "latency_ms": 8.65
+    },
+    {
+      "id": "par-02",
+      "type": "paraphrase",
+      "question": "What exactly is Tesla?",
+      "decision": "audit",
+      "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+      "latency_ms": 7.68
+    },
+    {
+      "id": "par-03",
+      "type": "paraphrase",
+      "question": "Who started SpaceX?",
+      "decision": "answer",
+      "answer_text": "SpaceX was founded by Elon Musk.",
+      "latency_ms": 6.72
+    },
+    {
+      "id": "par-04",
+      "type": "paraphrase",
+      "question": "What was SpaceX established for?",
+      "decision": "answer",
+      "answer_text": "SpaceX was founded by Elon Musk.",
+      "latency_ms": 6.9
+    },
+    {
+      "id": "par-05",
+      "type": "paraphrase",
+      "question": "Who set up Blue Origin?",
+      "decision": "audit",
+      "answer_text": "no explicitly supported answer exists in Microworld's current memory for this question",
+      "latency_ms": 8.28
+    },
+    {
+      "id": "par-06",
+      "type": "paraphrase",
+      "question": "What kind of company is Tesla?",
+      "decision": "answer",
+      "answer_text": "Tesla is an American electric vehicle and clean energy company. In the overlay, Tesla is a Clean energy, and it produces",
+      "latency_ms": 6.84
+    },
+    {
+      "id": "par-07",
+      "type": "paraphrase",
+      "question": "What sort of company is SpaceX?",
+      "decision": "answer",
+      "answer_text": "SpaceX is an aerospace manufacturer and space transportation company. In the overlay, SpaceX develops rockets, spacecraf",
+      "latency_ms": 12.13
+    },
+    {
+      "id": "par-08",
+      "type": "paraphrase",
+      "question": "What kind of organization is NASA?",
+      "decision": "answer",
+      "answer_text": "NASA is an American space agency. In the overlay, NASA develops spacecraft and launch systems.",
+      "latency_ms": 7.09
+    },
+    {
+      "id": "par-09",
+      "type": "paraphrase",
+      "question": "Who is the leader of Tesla?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.42
+    },
+    {
+      "id": "par-10",
+      "type": "paraphrase",
+      "question": "Who is the CEO of SpaceX?",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "latency_ms": 6.37
+    },
+    {
+      "id": "adv-01",
+      "type": "adversarial",
+      "question": "Did SpaceX found Elon Musk?",
+      "decision": "audit",
+      "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "latency_ms": 5.33
+    },
+    {
+      "id": "adv-02",
+      "type": "adversarial",
+      "question": "Is SpaceX the founder of Elon Musk?",
+      "decision": "audit",
+      "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "latency_ms": 5.57
+    },
+    {
+      "id": "adv-03",
+      "type": "adversarial",
+      "question": "Did Tesla found Elon Musk?",
+      "decision": "audit",
+      "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "latency_ms": 5.28
+    },
+    {
+      "id": "adv-04",
+      "type": "adversarial",
+      "question": "What is the current stock price of Tesla?",
+      "decision": "audit",
+      "answer_text": "this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory",
+      "latency_ms": 5.79
+    },
+    {
+      "id": "adv-05",
+      "type": "adversarial",
+      "question": "What is Elon Musk's real-time net worth right now?",
+      "decision": "audit",
+      "answer_text": "this asks for current/live data, and no current source-qualified snapshot is available in Microworld's memory",
+      "latency_ms": 6.11
+    },
+    {
+      "id": "adv-06",
+      "type": "adversarial",
+      "question": "Does every businessman lead a company?",
+      "decision": "audit",
+      "answer_text": "this asks for an unsupported universal generalization, which the overlay never licenses from individual relations",
+      "latency_ms": 5.61
+    },
+    {
+      "id": "adv-07",
+      "type": "adversarial",
+      "question": "Are all aerospace companies founded by Elon Musk?",
+      "decision": "audit",
+      "answer_text": "this asks for an unsupported universal generalization, which the overlay never licenses from individual relations",
+      "latency_ms": 6.13
+    },
+    {
+      "id": "adv-08",
+      "type": "adversarial",
+      "question": "What is Elon Musk's home address?",
+      "decision": "audit",
+      "answer_text": "this asks for private/sensitive personal information, which Microworld's memory does not hold and must not fabricate",
+      "latency_ms": 5.39
+    },
+    {
+      "id": "adv-09",
+      "type": "adversarial",
+      "question": "What is the private email of Jeff Bezos?",
+      "decision": "audit",
+      "answer_text": "this asks for private/sensitive personal information, which Microworld's memory does not hold and must not fabricate",
+      "latency_ms": 5.7
+    },
+    {
+      "id": "adv-10",
+      "type": "adversarial",
+      "question": "Did Blue Origin found Jeff Bezos?",
+      "decision": "audit",
+      "answer_text": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "latency_ms": 5.46
+    }
+  ]
+}

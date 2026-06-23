@@ -34,6 +34,23 @@ ALLOWED_SEMI_STABLE_RELATIONS = frozenset({
     "platform_of",
     "uses",
     "part_of",
+    "alias",
+    "based_at",
+    "ceased_operations",
+    "construction_started",
+    "filed_for_bankruptcy",
+    "first_released",
+    "funded_by",
+    "has_facility",
+    "hosted_flight_to",
+    "introduced",
+    "located_in",
+    "marketed_as",
+    "merged_with",
+    "offers",
+    "runs_on",
+    "supports",
+    "variant_of",
 })
 
 ALLOWED_STABLE_RELATIONS = frozenset({

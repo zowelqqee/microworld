@@ -1,0 +1,15 @@
+{
+  "title": "Biomedical Research Institute",
+  "normalized_title": "Biomedical Research Institute",
+  "pageid": 14728064,
+  "revision_id": 474185791,
+  "timestamp": "2012-01-31T09:49:50Z",
+  "source_url": "https://en.wikipedia.org/wiki/Biomedical_Research_Institute",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Biomedical+Research+Institute",
+  "retrieved_at": "2026-06-22T08:52:03Z",
+  "raw_text": "Biomedical Research Institute may refer to:\n\nBiomedisch Onderzoeksinstituut or BIOMED in Belgium\nLos Angeles Biomedical Research Institute or LA BioMed\nPart of Louisiana State University Health Sciences Center Shreveport",
+  "raw_text_sha256": "4412e2e457a38daf88db67985a456d128960b4e231a9a0bdbf65cb716ee50e8a",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

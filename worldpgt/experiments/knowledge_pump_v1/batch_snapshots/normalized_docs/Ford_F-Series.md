@@ -1,7 +1,7 @@
 # Ford F-Series
 
 Source: https://en.wikipedia.org/wiki/Ford_F-Series
-Retrieved at: 2026-06-17T17:18:34Z
+Retrieved at: 2026-06-22T10:28:04Z
 Revision ID: 1359711939
 Raw text SHA256: ffbd89305ee729b08d2db088a2e66a3b0c0bac156a5688c5b6d78f2030042a17
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from typing import Optional
 
+from worldpgt.entity_qa.synthesis_engine import synthesize
 from worldpgt.entity_qa.types import (
     AnalyzedEntityQuestion,
     EntityQAEvidence,
@@ -25,16 +26,16 @@ from worldpgt.relation_extraction_v2.relation_policy import is_current_sensitive
 
 _CURRENT_AUDIT_REASON = (
     "This question asks for current/real-time data that is not available as "
-    "an accepted source-qualified fact in the overlay."
+    "an accepted source-qualified fact in my knowledge base."
 )
 
 _PERSONAL_AUDIT_REASON = (
     "This question asks for personal or unsupported information not present "
-    "in the wiki overlay."
+    "in my knowledge base."
 )
 
 _NO_DATA_AUDIT_REASON = (
-    "No relevant information found in the wiki overlay for this question."
+    "No relevant information found for this question."
 )
 
 _WELL_COVERED_NOT_FOUND_REASON = (
@@ -96,6 +97,8 @@ class EntityAnswerPlanner:
                 reason,
             )
 
+        if intent == "open_synthesis":
+            return self._plan_open_synthesis(analyzed)
         if intent == "define_entity":
             return self._plan_define(analyzed)
         if intent == "relation_lookup":
@@ -110,6 +113,45 @@ class EntityAnswerPlanner:
     # ------------------------------------------------------------------
     # Intent-specific planners
     # ------------------------------------------------------------------
+
+    def _plan_open_synthesis(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
+        """Layer 3: synthesize an answer from every fact known about the entity."""
+        subject = analyzed.subject or ""
+        result = synthesize(self._provider, subject, analyzed.question)
+
+        # Nothing in the graph (no entity, no keyword neighbour, no facts) — be
+        # honest and audit rather than emit an empty answer.
+        if not result.matched or (
+            result.definition is None
+            and not result.entity_type
+            and not result.groups
+        ):
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        evidence = EntityQAEvidence()
+        if result.definition:
+            evidence.overlay_items_used.append(f"overlay_definition:{result.subject}")
+        for group in result.groups:
+            if group.kind == "snapshot":
+                for obj in group.objects:
+                    evidence.source_facts_used.append(
+                        f"source_fact:{result.subject}:{group.predicate}:{group.source_name}"
+                    )
+            else:
+                for obj in group.objects:
+                    evidence.overlay_items_used.append(
+                        f"overlay_relation:{group.predicate}:{obj}"
+                    )
+
+        return EntityQAPlan(
+            analyzed=analyzed,
+            decision="answer",
+            audit_reason=None,
+            evidence=evidence,
+            render_template="open_synthesis",
+            render_args={"synthesis": result},
+            confidence=0.9,
+        )
 
     def _plan_define(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
         subject = analyzed.subject or ""

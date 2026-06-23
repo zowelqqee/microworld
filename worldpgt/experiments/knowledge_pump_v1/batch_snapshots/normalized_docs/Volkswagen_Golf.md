@@ -1,0 +1,152 @@
+# Volkswagen Golf
+
+Source: https://en.wikipedia.org/wiki/Volkswagen_Golf
+Retrieved at: 2026-06-22T07:35:02Z
+Revision ID: 1358337623
+Raw text SHA256: 84a9e273665f6ae35c7a478a1f1274f7fb902d057c8cd1391b20565f97e09db4
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Volkswagen Golf () is a compact car/small family car (C-segment) produced by the German automotive manufacturer Volkswagen since 1974, marketed worldwide across eight generations, in various body configurations and under various nameplates – including as the Volkswagen Rabbit in the United States and Canada (Mk1 and Mk5), and as the Volkswagen Caribe in Mexico (Mk1). The Golf is Volkswagen's best-selling model and the third best-selling automobile of all time, with over 37 million units sold worldwide.
+The original Golf Mk1 was a front-engined, front-wheel drive replacement for the air-cooled, rear-engined, rear-wheel drive Volkswagen Beetle.
+Initially, most Golfs were hatchbacks, with the three-door version being somewhat more popular than the five-door. Other variants include an estate (Variant, from 1993), convertible (Cabriolet or Cabrio, from 1979), and a Golf-based saloon called the Jetta, Vento (from 1992), or Bora (from 1999). The Golf covers economy to high-performance market segments.
+The Golf has won awards, including the World Car of the Year in 2009, with the Mk6 and in 2013 with the Mk7. Along with the Renault Clio and the Vauxhall Astra, the Golf is one of only three cars to have won European Car of the Year twice, in 1992 and 2013. The Golf has made the annual Car and Driver 10Best list multiple times. The Mk7 won the Motor Trend Car of the Year award in 2015, and the Mk1 GTI also won the award in 1985. The Mk4 won for the best-selling car in Europe in 2001.
+
+First generation (Mk1/A1, Typ 17; 1974)
+
+In May 1974, Volkswagen presented the first-generation Golf as a modern front-wheel-drive, long-range replacement for the Volkswagen Beetle. Later Golf variations included the Golf GTI (introduced in June 1976 with a fuel-injected 1.6-litre engine capable of 180 km/h (110 mph)), a diesel-powered version (from September 1976), the Jetta notchback saloon version (from October 1979), the Volkswagen Golf Cabriolet (from January 1980 through 1994) and a Golf-based van and pickup, the Volkswagen Caddy.
+The Golf Mk1 was sold as the Volkswagen Rabbit in the United States and Canada and as the Volkswagen Caribe in Mexico.
+A facelifted version of the Golf Mk1 was produced in South Africa as the Citi Golf from 1984 to 2009.
+
+Second generation (Mk2/A2, Typ 19E/1G; 1983)
+
+September 1983 saw the introduction of the second-generation Golf (Mk2) which grew slightly in terms of wheelbase, and exterior, and interior dimensions, while retaining, in a more rounded form, the Mk1's overall look. Although it was available on the home market and indeed most other left-hand drive markets by the end of 1983, it was not launched in the UK until March 1984.
+The Mk2 GTI featured a 1.8-litre 8-valve fuel-injected engine from its launch, with a 16-valve version capable of more than 220 km/h (137 mph) being introduced in 1985.
+In 1985, the first Golfs with four-wheel-drive (Golf Syncro) went on sale with the same Syncro four-wheel-drive system being employed on the supercharged G60 models, exclusively released in continental Europe in 1989 with 120 kW (161 hp; 163 PS) and anti-lock brakes (ABS).
+An Mk2-based second-generation Jetta was unveiled in January 1984. There was no Mk2-based cabriolet model; instead, the Mk1 Cabriolet was continued over the Mk2's entire production run.
+
+Third generation (Mk3/A3, Typ 1H/1E/1V; 1991)
+
+The third-generation Golf (Mk3) made its home-market debut in August 1991 and again grew slightly in comparison with its immediate predecessor, while its wheelbase remained unchanged.
+New engines included the first Turbocharged Direct Injection (TDI) diesel engine in a Golf, and a narrow-angle 2.8-litre VR6 engine. US Environmental Protection Agency (EPA) fuel consumption estimates are 9.0 L/100 km (31 mpg‑imp; 26 mpg‑US) (city) and 7.4 L/100 km (38 mpg‑imp; 32 mpg‑US) (highway), with 420 km (261 mi) per tank (city) and 584 km (363 mi) per tank (highway). For the first time ever, a Golf estate (Golf Variant) joined the line-up in September 1993 (although most markets did not receive this model until early 1994). At the same time, a completely new Mk3-derived Cabriolet was introduced, replacing the 13-year-old Mk1-based version with one based on the Mk3 Golf platform from 1995 to early 1999. The Mk3 Golf Cabrio received an Mk4-style facelift in late 1999 and was continued until 2002.
+The notchback version, called VW Vento (or Jetta in North America), was presented in January 1992.
+It was European Car of the Year for 1992, ahead of the new Citroën ZX and General Motors' new Opel Astra model.
+The Mk3 continued to be sold until 1999 in the United States, Canada, and parts of South America, also in Mexico as a special edition called "Mi" (basically a Golf CL 4-door with added air conditioning, special interior, original equipment (OEM) black-tinted rear brake lights, and anti-lock brakes (ABS), but without a factory-fitted radio). The "i" in "Mi" is coloured red, which designates that multi-point fuel injection was equipped and the 1.8-litre engine was upgraded to 2.0-litre. Heated seats were offered on all trims.
+
+Fourth generation (Mk4/A4, Typ 1J; 1997)
+
+The Golf Mk4 was first introduced in August 1997 and later released in October of that same year as the 1998 model, followed by a notchback version (VW Bora or, in North America, again VW Jetta) in August 1998 and a new Golf Variant (estate) in March 1999. There was no Mk4-derived Cabriolet, although the Mk3 Cabriolet received a facelift in late 1999 that consisted of bumpers, grille, and headlights similar to those of the Mark IV models.
+As with the earlier three versions of the Golf, the UK and other right-hand drive markets received each version several months later than the rest of Europe. The hatchback version was launched there in the spring of 1998 and the estate some 12 months later (around the same time as the Bora).
+New high-performance models included the 3.2-litre VR6-engined four-wheel-drive Golf "R32" introduced in 2002, its predecessor, the 2.8-litre VR6-engined "Golf V6 4Motion" (succeeding the 2.9-litre Mk3 "Golf VR6 Syncro"), as well as the famous 1.8T (turbo) 4-cylinder used in various Volkswagen Group models. The Golf GTI was offered with both 1.8T and 2.8-litre VR6 for this generation.
+
+Extended production (Mk4.5)
+
+Since 2008, certain variants of the Golf/Bora Mk4 (nicknamed the Mk4.5) were still in production in Brazil, China, and Mexico. Revised versions of the Mk4.5 were sold in Canada and marketed as the City Golf and Jetta City from 2007 to 2010. The two models were VW Canada's entry-level offerings. They received a significant refresh for the 2008 model year, including revised headlamps, taillamps, front and rear fascias, sound systems, and wheels. Both models were offered only with the 2.0-litre, 8-valve single overhead cam (SOHC) four-cylinder gasoline engine, rated at 86 kW (115 hp; 117 PS). They were the only entry-level offerings with an optional six-speed automatic transmission. Production of the European variant of the Golf Mk4 ceased at the end of the 2006 model year. Production of the U.S. version ended in 2006.
+When the Chinese market Bora received a July 2006 facelift, the Golf did too, becoming the "Bora HS" in the process.
+The Mk4.5 facelift was produced in Brazil until 2013.
+
+Fifth generation (Mk5/A5, Typ 1K; 2003)
+
+The Golf Mk5 was introduced in Europe in the autumn of 2003, reaching the UK market in early 2004. In North America, Volkswagen brought back the Rabbit nameplate when it introduced the vehicle in 2006. In Canada, the Golf is still the prevalent nameplate of the fifth generation (though both Rabbit and Golf have been used historically). The North American base model is powered by a 2.5-litre five-cylinder engine, which produced 112 kW (150 hp; 152 PS) in 2006 and 2007, but was upped to 127 kW (170 hp; 173 PS) in the later models. A GTI version is powered by a turbocharged version of the 2.0-litre FSI engine, producing 147 kW (197 hp; 200 PS).
+An R32 version features the 3.2-litre VR6 engine, increasing power output to 184 kW (247 hp; 250 PS) and including the Haldex Traction-based 4motion part-time four-wheel drive system. The R32 went on a limited production run in 2005 for the European market. Then in 2007, 5000 units of the R32 were made for the US, each with its production number laser etched on its steering wheel.
+Volkswagen also introduced the "Fast" marketing campaign for the US, "dedicated to the 'fast' that lives inside every driver," with a spirit totem character illustrating the concept and purchasers of the GTI Mk5 receiving a plastic figurine of the Fast. The GTI version is the only version on sale in Mexico.
+The saloon/sedan version, again widely marketed by Volkswagen as the Jetta, is assembled in Germany, South Africa, as well as Mexico. It is marketed in certain markets, including European markets and Mexico as Bora. It was followed in 2007 by a new Golf Variant. The front ends of the car are the same, with the only difference being that the GLI is a sedan, while the GTI is a hatchback.
+Later models of the Mk5 introduced the 1.4-litre TSI turbocharged petrol engine with front-wheel drive.
+In a comparison test conducted by Car and Driver Magazine, the Rabbit won vs eight small cars. It was praised for its driving position, instruments, and engine; and was criticized for road noise, seating, and poor fuel economy. The Rabbit also placed first in their final comparison in December 2006.
+
+Sixth generation (Mk6/A6, Typ 5K; 2008)
+
+Volkswagen based the Golf Mk6 on the existing PQ35 platform from the Golf Mk5. This vehicle was debuted at the 2008 Paris Motor Show.
+The Mk6 Golf was designed by Volkswagen's chief designer Walter de'Silva. The design is said to be more aerodynamic, helping fuel efficiency, and is quieter than its predecessor. Following criticism of the downgraded interior trim quality of the Mk5 Golf in comparison to the Mk4, Volkswagen opted to overhaul the interior to match the quality of the Mk4 Golf, while maintaining the same user friendliness from the Mk5. The car is also cheaper to build than its predecessor; Volkswagen claims it consequently will be able to pass these savings on to the customer.
+The Mk6 Jetta was released in Mexico in mid-2010, and by late 2011 it was available in all markets. Turbocharged Direct Injection diesel engines which uses common rail injection technology replaced the longstanding Pumpe Düse (PD) Unit Injector system. New on the Golf is the optional Volkswagen Adaptive Chassis Control (not available in the North American market), which allows the driver to select between 'normal', 'comfort', and 'sports' modes, which will vary the suspension, steering, and accelerator behavior accordingly.
+The Mk6 Golf is available with both 5- and 6-speed manual transmission, and 6- or 7-speed Direct-Shift Gearbox (DSG)(with Dual Clutch) transmission options. In North America, the Mk5 version was originally sold as the Rabbit from 2006 to 2009. In 2010, Volkswagen brought back the Golf nameplate with the mid-cycle refresh. With it came a 130 kW (177 PS; 174 hp), 2.5-litre inline five-cylinder with 240 N⋅m (177 lb⋅ft) of torque and a 2.0-litre, 100 kW (136 PS; 134 hp) turbocharged inline four-cylinder diesel engine that generates 320 N⋅m (236 lb⋅ft) of torque. The GTI version is equipped with a 157 kW (213 PS; 211 hp) turbocharged inline four-cylinder TSI gasoline engine while the Golf R has a 191 kW (260 PS; 256 hp) turbocharged TFSI inline-four engine. All three engines can be paired with a DSG dual-clutch 6-speed automatic or 6-speed manual transmission in either a 3- or 5-door configuration.
+The car was introduced for sale in the UK in January 2009, and in North America in October 2009 as the 2010 Golf, rather than Rabbit. The Mk6 also reintroduced a diesel engine option to the North American market.
+The Volkswagen Golf Mk6 was a 2012 Insurance Institute for Highway Safety (IIHS) Top Safety Pick.
+
+Seventh generation (Mk7, Typ 5G; 2012)
+
+The seventh-generation Golf had its debut in September 2012 at the Paris Motor Show.
+The Golf VII, Typ 5G used the new MQB platform, shared with the third-generation Audi A3, SEAT León and Škoda Octavia. It was slightly larger than the Mk6 while managing to be approximately 100  kg lighter, depending on engine choice. The GTI offered a 154 kW (207 hp; 209 PS) turbocharged 2.0-litre four-cylinder with an available performance pack to raise the output to 162 kW (217 hp; 220 PS). The Golf R had a 220 kW (300 hp; 300 PS) turbocharged 2.0-litre four-cylinder with Haldex Traction all-wheel-drive.
+A version of the GTI dubbed the GTI Clubsport making 195 kW (261 hp; 265 PS) was released in 2016. A variant of the Clubsport called the Clubsport S held the record for the fastest front-wheel-drive car around the Nürburgring until the 2017 Honda Civic Type-R took the record once again.
+The Golf line was available in all the relevant drive systems: the Golf TSI, including GTI, was petrol-powered; Golf TDI diesel (Turbo Direct Injection), including GTD, was diesel-powered; the Golf TGI was powered by compressed natural gas (CNG); the e-Golf was powered by electricity, and the Golf GTE was a plug-in hybrid. The use of a modular transverse matrix assembly kit enabled the manufacturing of Golf models with gasoline, diesel, natural gas, electric, and hybrid drives from bumper to bumper at Volkswagen factories.
+In November 2016, Volkswagen revealed a facelifted version (Golf 7.5) to the 3-door hatchback, 5-door hatchback, 5-door estate, GTI, and GTE, in addition to a new "R-Line" Golf. With those models, came a new economical engine: 1.5-litre TSI EVO which produced 97 kW (130 hp; 132 PS) or 110 kW (148 hp; 150 PS) and replaced the 1.4-litre TSI. The updated GTI version featured a 230 hp as standard (220 hp previously) or 247 hp in the optional performance pack (230 hp previously).
+In terms of interior technology, the Golf featured a 12.3" TFT display as an option similar to Audi models and known as "Virtual Cockpit", full LED lights, animated tail indicators as an option (also used in Audi models), etc.
+The most powerful Golf in the range was the Golf R. Built as a 3 or 5 door hatchback, it was powered by a newly developed version of the 1,984 cc (2.0 L; 121.1 cu in) turbocharged EA888 petrol FSI straight-four engine used in the latest Golf GTI (and Audi S3), but in this application producing 300 PS (296 bhp; 221 kW) (206 kW (280 PS; 276 bhp) for "hot climate" markets such as Australia, Japan, USA) from 5,500 to 6,200 rpm and 380 N⋅m (280 lb⋅ft) from 1,800 to 5,500 rpm of torque. 0-62 mph (100 km/h) takes 5.1 seconds (versus 5.7 seconds for previous Golf R), or 4.9 seconds with optional DSG gearbox. In 3rd-party testing, it has been recorded at 4.5 seconds using Launch Control. The top speed is electronically limited to 155 mph (249 km/h).
+Volkswagen produced a "Rabbit Edition" GTI for the 2019 model year. Only 3,000 were produced for the US market: 1000 in Cornflower Blue, 1000 in Urano Gray, 500 in Black, and 500 in White, all split evenly between DSG automatic and 6-speed manual transmissions. The Rabbit Edition featured a LED lighting package, a "Vmax" spoiler, 18-inch "Pretoria" alloy wheels painted in gloss black, no sunroof, and Clark plaid seats with red tags embroidered with the VW Rabbit logo. Canada also received a Rabbit Edition in 2019. Only 900 were produced: 272 in Cornflower Blue, 272 in Urano Grey, 178 in Pure White and 178 in Pure Black Pearl. The Canadian variant came with all the Rabbit specific cosmetic upgrades, but also included all the same features as the top level Autobahn package with the exception of the sunroof, satnav and leather seats.
+In Mexico, the production of the Volkswagen Golf VII finished in 2021.
+
+Eighth generation (Mk8, CD1; 2019)
+
+The Mk8 Golf was revealed on 24 October 2019 in Wolfsburg. It rides on an updated version of the MQB platform, with engine options consisting of compact petrol, diesel, and hybrid powertrains. At launch, the five-door hatchback was the only model available, with the three-door hatchback having been discontinued due to poor sales. The Golf VIII's interior receives a major overhaul with an entirely digital driver's display and digital control panel. All Mk8s have advanced safety features available such as travel assist, Car2X, and an oncoming vehicle while braking function, the latter two of which are the first to be used on a production Volkswagen model.
+Powertrain options now have three ETSI mild-hybrid and two hybrids plug-in hybrid engines in addition to existing TSI petrol, TDI diesel, and TGI compressed natural gas (CNG) options. All TSI engines with an output up to 130 PS feature the efficient TSI Miller combustion process and a turbocharger with variable turbocharger geometry, and the 1.5-litre engines have temporary Active Cylinder Management. ETSI models use a 12 V vehicle electrical system and 48 V belt starter generator driven by the 48 V lithium-ion battery, whereas hybrid models have a 13 kWh lithium-ion battery capable of running in EV mode. TDI models utilize a new twin dosing SCR system featuring dual AdBlue selective catalytic reduction, which lowers nitrogen oxide emissions (NOx) up to 80% compared to the Mk7. Performance models consist of the GTE, GTI, GTD, and Golf R. The GTE and GTI produce 180 kW (245 PS; 241 hp), the GTD produces 147 kW (200 PS; 197 hp), while the R produces 235 kW (320 PS; 315 hp) The e-Golf previously offered on the Mk7 has been replaced by the ID.3.
+In January 2024, Volkswagen unveiled a facelifted version, called the Mk8.5 by some, to coincide with the Golf's 50th anniversary. Exterior revisions include redesigned headlamps, taillights, and bumpers, while some engines were also upgraded and the interior replaced the controversial touch-sensitive steering wheel controls with physical buttons in response to customer feedback.
+
+Electric versions
+
+The VW Golf has had several generations made into electric CityStromer models. The first of these was in the 1970s when VW took a standard Golf Mk1 and converted it to electric power. By the time the Golf Mk2 came into production a limited number of electric Golfs were made, using lead–acid battery packs and a custom-made motor and controller. VW continued with the production of limited numbers of CityStromer electric cars with the introduction of the Golf Mk3. The electric CityStromer Mk3 included a Siemens-based AC drive system, and lead–acid battery packs. They had a maximum speed of 97 km/h (60 mph) and a range of approximately 80 km (50 mi). With a few exceptions, only left-hand drive Golfs were converted by VW into Citystromer models. These vehicles are still used today and have popularity in mainland Europe with only a few present in Great Britain. Only two right-hand drive Mk2 CityStromers were built for the UK market and it is believed only one remains today. It is owned by EV advocate and broadcaster Nikki Gordon-Bloomfield, host of Transport Evolved.
+
+Golf Variant Twin Drive
+As part of the "Fleet study in electric mobility" project that began in 2008, VW developed the Golf Variant twinDRIVE plug-in hybrid electric vehicle, and built twenty examples for research. These vehicles have an all-electric range of 57 km (35 mi) and the internal combustion engine provides for a total range of 900 km (560 mi). The plug-in hybrid drive of the Golf Variant twinDRIVE is equipped with either an 11.2 kWh or a 13.2 kWh lithium-ion battery pack, as Volkswagen is testing packs from two vendors. Ten vehicles are equipped with batteries from the American-German manufacturer GAIA with cathode type nickel cobalt aluminium dioxide (NCA). The other ten is powered by lithium-ion batteries with nickel manganese cobalt (NMC) cathodes from the Korean-German joint venture SB LiMotive (Samsung and Bosch). These 10 vehicles have been in use since early 2011. Both battery systems offer high power and energy density. They each weigh about 150 kg (330 lb). The gasoline engine is used to support the electric heating system when outdoor temperatures are low.
+Using guidelines for determining the fuel consumption of plug-in hybrids, VW estimated a fuel consumption of 2.1 L/100 km (112 mpg US), which is equivalent to 49 g/km CO2. When the battery is fully charged, the Golf Variant twinDRIVE is designed to maximize the share of pure electrical energy used for driving, and only when longer distances are driven does the share of supplemental gasoline fuel increase. Top speed of the car is 170 km/h (106 mph) and it accelerates to 100 km/h (62 mph) in under 12 seconds. When operated in pure electric mode, the Golf Variant twinDRIVE can reach a top speed of 120 km/h (75 mph).
+The production version was expected to be based on Mk6 Golf featuring a 1.5 L turbodiesel engine and electric motor, with estimated arrival date of 2015. A SEAT León prototype with the Twin Drive system was also under development.
+
+Volkswagen e-Golf
+
+Concept version
+
+Based on the Golf Mk6, the Golf blue-e-motion concept has a range of 150 km (93 mi). Volkswagen scheduled a field testing program with 500 units to begin in 2011. The first 10 units began field testing in Wolfsburg in May 2011. A second batch of 80 test cars began testing in June 2011 in Berlin, Hannover and Wolfsburg. In February 2012, the first e-Golf, as the production version was renamed, was delivered in Belmont, California. A total of 20 e-Golfs were allocated to the U.S. field testing program.
+The Golf blue-emotion concept has a 26.5 kWh lithium-ion battery pack and is powered by an 85 kW electric motor which drives the front wheels through a single-speed transmission. It will accelerate to 100 km/h (62 mph) in 11.8 seconds and has a top speed of 138 km/h (86 mph). Paddle shifters are used to adjust the amount of regenerative braking. The vehicle's PRNDL stick has an additional 'B' mode as found on some other electric vehicles to set the regenerative braking effort to the maximum for sustained downhill travelling.
+
+Production version
+
+The production version of the 2015 Volkswagen e-Golf was unveiled at the 2013 Frankfurt Motor Show. According to VW the e-Golf has a practical all-electric range of 130 to 190 km (81 to 118 mi), with an official NEDC cycle of 190 km (120 mi), and the winter range is expected to be 80 to 120 km (50 to 75 mi). The 2015 e-Golf has an official EPA rated all-electric range of 134 km (83 mi), and a combined fuel economy of 116 miles per gallon gasoline equivalent (MPGe) for an energy consumption of 29 kW-hrs/100 mi. The EPA rating for city driving is 126 MPGe and 105 MPGe for the highway. Production of vehicles destined for retail customers began in March 2014.
+For the 2017 model year, the e-Golf received an update, which included an improved range, better fuel economy, and more power than the outgoing model. With a new 35.8 kWh lithium-ion battery, the upgraded car is said to achieve an EPA-estimated range of 144 to 201 km (89 to 125 mi), and have a combined 119 MPGe. The 2017 e-Golf also provides a faster charging time; SE and SEL Premium trim levels have a 7.2 kW unit that allows the battery to be fully charged in under six hours at a 240 V charging station. There is an optional (standard on SEL Premium) DC Fast Charging feature that allows the car to be charged to 80% in only an hour at a DC fast charging station.
+
+Markets and sales
+On 14 February 2014, Volkswagen launched sales of the e-Golf in Germany. On 11 March 2014, Volkswagen opened ordering for the e-Golf in the UK, with deliveries began at the end of June.
+In Norway, the e-Golf became available for pre-order on 25 February 2014 for delivery in June 2014. European sales totaled 3,328 units in 2014, and 1,214 units in 2015.
+The 2015 e-Golf did not have a liquid-cooled battery pack because strict testing showed high ambient temperatures did not affect battery performance. U.S. sales were slated to start in selected states in November 2014. In January 2015, the e-Golf started to show up at dealerships throughout the Northeast.
+Production of the e-Golf ended in December 2020.
+
+Volkswagen Golf GTE
+
+The Golf GTE is a plug-in hybrid version of the Golf hatchback unveiled at the 2014 Geneva Motor Show. The Golf GTE shares the basic powertrain hardware with the Audi A3 Sportback e-tron but the software controls are different. The Golf GTE also shares the same plug-in hybrid powertrain with the Volkswagen Passat GTE, but the Passat has a larger 9.9 kWh Li-ion battery pack.
+The GTE Mark 7 generation was powered by a 1.4-litre 110 kW (150 hp) TSI direct-injection gasoline engine combined with a 75 kW (101 hp) electric motor, powered by a 400 V 8.8 kWh lithium-ion battery, for a total hybrid system power of around 153 kW (205 hp). The electric motor delivered a theoretical all-electric range of 50 km (31 mi) and the hybrid system a total theoretical range of 933 km (580 mi) (measured using NEDC). The all-electric mode can be activated at the push of a button. Under the New European Driving Cycle, combined fuel economy is 1.50 L/100 km (157 mpg‑US) equivalent (1.332 L/100 km (176.6 mpg‑US) in generation 8). The Golf GTE has a top speed of 210 km/h (130 mph) in the all-electric mode and accelerates from 0 to 100 km/h (0 to 62 mph) in under 7.6 seconds.
+In the Mark 8 generation, available from model year 2021, the electric motor power was increased to 81 kW (109 hp), the total system power to 180 kW (240 hp), the battery capacity to 13 kWh, and the all-electric range to 60 kilometers (measured using WLTP). The fuel tank was diminished from 50 litres (10.6 gallons) to 40 litres (8.8 gallons).
+The vehicle can be recharged from a Type 2 charging point in about 2 hours, or from a standard 230 V wall outlet in approximately 4 hours (6 hours for generation 8). In common with other plug-in hybrid vehicles, the vehicle may be used in pure electric mode, parallel-hybrid (petrol + electric), and range-extender mode (petrol engine recharging the high-voltage battery).
+The GTE release to retail customers was scheduled for the fourth quarter of 2014. The first units were registered in Germany in August 2014. The Golf GTE, with 1,695 units sold, was the best-selling plug-in hybrid in France in 2015, representing 30.3% of the segment sales. With 17,300 units sold in Europe in 2015, the Golf GTE ranked as the second top selling plug-in hybrid after the Mitsubishi Outlander P-HEV (31,214). According to JATO Dynamics, a total of 18,397 units have been registered in Europe through December 2015. The Golf GTE was temporarily discontinued in 2018, due to high demand leading to long lead times, according to Volkswagen.
+
+Motorsport
+
+In auto racing, APR Motorsport has led two MKV VW GTIs to victory in the Grand-Am KONI Sports Car Challenge Street Tuner (ST) class.
+
+Golf GTI
+
+The Golf GTI competed in the British GT Championship in 2003 with Steve Wood and Stuart Scott at the wheel.
+
+Golf TCR and Golf GTI TCR
+
+Volkswagen Motorsport, the motorsport division of the brand, built the Golf TCR touring car in 2015 for use in various international and national competitions which use TCR regulations. In 2016 the car was updated and renamed Golf GTI TCR.
+
+Volkswagen emissions scandal
+Volkswagen Golfs are among the models included in the September 2015 Volkswagen emissions scandal in which Volkswagen manufactured and installed in their diesel vehicles a software program that manipulated the cars' vehicle emissions control during testing, thereby violating numerous countries' regulations. The program caused the vehicles' nitrogen oxide (NOx) output to meet US standards during regulatory testing but emit up to 40 times more NOx in real-world driving.
+
+Awards and recognition
+The Golf Mk3 won the 1992 European Car of the Year award.
+In April 2010 Kelley Blue Book included the VW Golf TDI (clean diesel) among its Top 10 Green Cars for 2010.
+The Golf Mk7 was named "The All The Car You'll Ever Need Car of the Year 2012" by Top Gear.
+The Golf Mk7 won the 2013 European Car of the Year award for the second time.
+The Golf Mk7 won the 2013 World Car of the Year award.
+Volkswagen Golf has been selected as the Car of the Year Japan 2013–2014, becoming the first imported car to win the award created in 1980.
+The entire Volkswagen Golf Mk7 line-up, including the 1.8T, Golf TDI Clean Diesel, Golf GTI, and e-Golf models, was named 2015 Motor Trend Car of the Year.
+The Golf GTI Mk7 won the 2015 Yahoo! Car of the Year award.
+South African Car of the Year 2010
+The Volkswagen GTI has received the Car and Driver 10Best award for the 12th consecutive year in 2018.
+
+Sales
+
+References
+
+External links
+
+Official website (Germany)

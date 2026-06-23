@@ -1,0 +1,194 @@
+# Royal Holloway, University of London
+
+Source: https://en.wikipedia.org/wiki/Royal_Holloway,_University_of_London
+Retrieved at: 2026-06-22T07:15:03Z
+Revision ID: 1360212922
+Raw text SHA256: 388cadadc9697787e940dc35fa469121a2e36e88f2294d621554570de79e5bed
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Royal Holloway, University of London (RH), formally incorporated as Royal Holloway and Bedford New College, is a public research university and a member institution of the federal University of London. It has six schools, 21 academic departments and approximately 10,500 undergraduate and postgraduate students from more than 100 countries. The campus is located west of Egham, Surrey, 19 miles (31 km) from central London.
+The Egham campus was founded in 1879 by the Victorian entrepreneur and philanthropist Thomas Holloway. Royal Holloway College was officially opened in 1886 by Queen Victoria as an all-women college. It became a member of the University of London in 1900. In 1945, the college admitted male postgraduate students, and in 1965, around 100 of the first male undergraduates. In 1985, Royal Holloway merged with Bedford College (another former all-women's college in London). The merged college was named Royal Holloway and Bedford New College (RHBNC), this remaining the official registered name of the college by Act of Parliament. In 2022, it became a university in its own right within the University of London. The campus is dominated by the Founder's Building, a Grade I listed red-brick building modelled on the Château de Chambord of the Loire Valley, France. The annual income of the institution for 2024–25 was £224.9 million of which £16.5 million was from research grants and contracts, with an expenditure of £218.2 million.
+
+History
+
+Royal Holloway College
+
+Royal Holloway College, originally a women-only college, was founded by the Victorian entrepreneur Thomas Holloway in 1879 on the Mount Lee Estate in Egham. The founding of the college was brought about after Holloway, seeking to fulfil a philanthropic gesture, began a public debate through The Builder regarding "How best to spend a quarter of a million or more", at which point his wife, Jane Holloway, proposed to build a college especially for women. Holloway later increased his original sum of money to half a million, and today, the campus is still best known for its original 600-bed building, known as the Founder's Building, designed by William Henry Crossland and inspired by the Château de Chambord in the Loire Valley, France.
+
+Sir Nikolaus Pevsner called the original college building "the most ebullient Victorian building in the Home Counties", and noted that together with its sister building the Holloway Sanatorium, it represents "the summit of High Victorian design". The Founder's Building, which is now Grade I listed, was officially opened in 1886 by Queen Victoria, who granted the use of "Royal" in the college's name. Founder's has been described by The Times as "one of Britain's most remarkable university buildings", largely for its elaborate architecture, and according to The Sunday Times it "makes the college instantly recognisable". The college also has a Chapel, completed in 1886 as one of the last parts of the university to be finished. October 1887 saw the arrival of the first 28 students at Royal Holloway College. It later became a constituent of the University of London in 1900, as did Bedford College, which eventually merged with Royal Holloway College. Male students started to be admitted for undergraduate studies in 1965.
+
+Merger of Royal Holloway College and Bedford College (1985)
+
+Bedford College was founded by Elizabeth Jesser Reid in 1849 as a higher education college for the education of women. Reid leased a house at 47 Bedford Square in the Bloomsbury area of London, and opened the Ladies College in Bedford Square. The intention was to provide a liberal and non-sectarian education for women, something no other institution in the United Kingdom provided at the time. The college moved to 8 and 9 York Place (off Baker Street) in 1874, and then to Regent's Park in 1908. In 1900, the college became a constituent school of the University of London. Like RHC, following its membership of the University of London, in 1965, it allowed male undergraduates to study on its premises for the first time.
+RHC and Bedford merged in 1985. The pressure for the merger was due to a lack of government funding for higher education, and the college was named Royal Holloway and Bedford New College (RHBNC), with an inauguration being held at the College Chapel in 1986 by Elizabeth II. The newest title remains the official registered name of the college, though this was changed for day-to-day use to "Royal Holloway, University of London" by the College Council in 1992.
+Since the merger with Bedford College, Royal Holloway has entered into collaborative discussions with Brunel University and St George's, University of London. The latter project was cancelled in September 2009. Royal Holloway, St George's and Kingston University continue to work together in the field of health and social care teaching and research.
+Royal Holloway applied for university status in its own right following the passing of the University of London Act 2018. Following approval of the application, an Order of Council approving an update to statutes under the Royal Holloway and Bedford New College Act 1985, specifying that it is "a higher education institution which holds university title", was made on 30 November 2022.
+
+Campus
+
+Location
+
+Royal Holloway's campus is set in 135 acres (55 ha) of woodland, between Windsor and Heathrow. Around 200 species of shrubs, 150 different types of tree and numerous wild flowering plants can be found in RHC's parkland. The nearest station is Egham. The campus is about 40–50 minutes from Waterloo station in central London about 19 miles (31 km) away, and Windsor is 5 miles (8 km). The campus is 2 miles (3.2 km) from M25 junction 13 and close to the M3, M4 and M40 and London Heathrow Airport.
+
+Founder's Building
+
+The Founder's Building, dominating the campus, has striking north and south towers and two large quadrangles and contains a chapel, kitchen and dining hall, lecture theatre and the original reading room along with student rooms and offices. Founder's has often been the centre of media attention and is a popular filming location for TV and film as a grandiose "university" or "public school".
+
+Campus redevelopment
+Between 2002 and 2008, the college underwent a £100 million investment programme and a re-development of its campus, as a result of the merger with Bedford College and the sale of Bedford's site in Regent's Park.
+A number of recent projects undertaken by Royal Holloway have included an extension to the School of Management (2005 and 2011) and the library (which holds half a million books). The biological sciences laboratories have also been renovated and the Windsor Building (opened in 2007) houses seminar rooms and a 400-seat auditorium. In 2013, the Student Services Centre, which is a single point of contact for all non-academic enquiries, was opened in the Windsor Building. The Drama Department expanded its performance space with the opening of the Caryl Churchill Theatre, which seats almost 200 audience members across two levels and has a third floor for technical operation, in 2013. The department also uses the onsite 19th-century boilerhouse, which was converted into a performance space with a sprung dance floor in 2014.
+The International Building, opened in 2000 by The Princess Royal, houses the Language Centre along with the English, French, German, Italian and Hispanic Studies Departments. The new developments have also been followed by the establishment of formal links with New York University, the University of Sydney, and Yale University, and connections with the Royal College of Music means that music students at Royal Holloway have the opportunity to take lessons there.
+The size of the campus has allowed the college to develop some of the best sports facilities of any university institution in the London area, and helped build the college's reputation as a sporting institution of excellence. An aerobics studio, fitness suite, sports Hall, sports fields and tennis courts account for some of the sporting facilities that Royal Holloway offers. The Sports Centre was refurbished in 2013 while a bequest by Margaret Young in 2014 enabled the college to further develop its sports facilities. New for the 2014/15 sporting season were floodlit outdoor pitches and courts, which provide all-weather playing surfaces for a wide range of sports.
+
+Situated on the campus are restaurants and cafés, a college shop, a health centre, a Chapel, a careers centre, teaching and social spaces and sports facilities. As a result of an evaluation by People & Planet in 2007, Royal Holloway was ranked 60th out of 120 universities for environmental performance. The university has put into place initiatives to enhance environmental performance, such as the improvement of woodland management to develop nature conservation and more recycling banks have been introduced to halls of residence.
+Starting in 2015, work on constructing a new Library and Student Services Centre began. In January 2017 it was announced that the building would be named after alumna Emily Wilding Davison. It was opened by The Princess Royal on 18 October 2017.
+
+Organisation and administration
+
+Governance
+The University Council is the governing body of the University with responsibility for "financial integrity and setting the overall strategic direction of Royal Holloway." There are 25 members of the council, many of whom are lay members from outside Royal Holloway who are initially appointed for five years. A total of 16 lay members are appointed; two from local authorities; one selected by the Privy Council; another by the University of London; two more are appointed as alumni from Royal Holloway, Bedford College or Royal Holloway College; and the rest are chosen to offer a range of skills and experience. The council's Chairman, who is appointed for five years, is also a lay member. One of The Chairman's duties is to chair a number of committees including the Remuneration Committee, which handles the pay and benefits of the senior staff. The Vice Chancellor is answerable to the chairman.
+The remaining members of the Council comprise three elected by non-academic members of staff, two elected by academics and one member of academic staff elected by the Academic Board. There is also one student member elected by the students.
+
+Coat of arms
+Royal Holloway's coat of arms consists of the Royal Holloway shield and its surrounding elements. There are three crescents shown on the coat of arms, which are taken from Thomas Holloway's own coat of arms. Taken from the Bedford coat of arms, the field is coloured black and gold in a chequered design, with the addition of ermine spots (feather-like symbols representing ermine tails) from the Royal Holloway coat. Placed between two black lozenges, there is a lamp of learning. Traditionally, a lozenge is used on the arms of unmarried women or widows; the lozenges on the colleges' coat of arms act as a reminder that they were founded for women. Below, the motto is displayed which is taken from the arms of Bedford College, and reads esse quam videri.
+The Royal Holloway shield was created following the merger of Bedford and Royal Holloway Colleges in 1985. The shield appears (in a black and white form) on legal documents and stationery for legal reasons, along with the following: "Incorporated by Act of Parliament. Royal Holloway and Bedford New College."
+The use of the university's identifying marks is governed by the Communications and External Relations Department.
+
+Schools and departments
+As of 1 August 2019, the university operates using a School structure. Each school is led by an Executive Dean, who in turn reports to the university's executive team. The six new schools replaced the previous three faculties.
+The schools are as follows:
+
+There is additionally a Doctoral School for the university's PhD students.
+
+Finances
+In the financial year ended 31 July 2020, Royal Holloway had a total income £188.9m (2018/19 – £188.7m) and total expenditure of £167.8m (2018/19 – £223.9m). Key sources of income included £119.9m from tuition fees and education contracts (2018/19 – £114.7m), £18.6m from Office for Students and Research England grants (2018/19 – £17.3m), £17.2m from research grants and contracts (2018/19 – £16.4m) and £2.3m from donations and endowment income (2018/19 – £2.6m).
+During the 2019/20 financial year Royal Holloway had a capital expenditure of £10.2m (2018/19 – £21.4m). At year end Royal Holloway had endowments of £78.8m (31 July 2019 – £81.2m).
+
+Academics
+
+Royal Holloway employs around 2,300 members of staff, including 534 academic staff and 132 research staff. The total number of undergraduate and postgraduate students is 11,530, from 100 countries.
+
+Research
+In the Research Excellence Framework (REF) 2021, published on 12 May 2022, it was confirmed that Royal Holloway sits within the top 25 per cent of UK universities for "world-leading" and "internationally excellent" research. In the REF assessment, 88 per cent of Royal Holloway's research is rated as world-leading (4*) and internationally excellent (3*), which is an increase of 8.6 per cent from REF 2014, which is the last time an exercise on this scale was conducted. In addition, 42 per cent of Royal Holloway's research is rated as world-leading (4*), which is an increase of 40 per cent on 2014 when 30 per cent of Royal Holloway's research was ranked in this category. In particular, Royal Holloway's 4* research output has increased to 43% in 2021, up from 27% in 2014.
+In 1998, Royal Holloway's Information Security Group (ISG) was awarded a Queen's Anniversary Prize in recognition of its work in information security. The ISG introduced a MSc in Information Security in 1992, making Royal Holloway the first university to offer a postgraduate course on this subject. Currently the ISG hosts one of only two UK Centres for Doctoral Training in cyber security.
+On 14 March 2014, Queen Elizabeth II and Prince Philip, Duke of Edinburgh, were welcomed to Royal Holloway when they attended a ceremony to celebrate the Regius Professorship being bestowed on the Department of Music: the first of its kind. The Music Department was awarded the Regius Professorship by the Queen to mark her Diamond Jubilee. The prestigious award acknowledges the university's exceptionally high standards of music teaching and research.
+The current research policy chief of the Higher Education Funding Council for England, David Sweeney and his predecessor Rama Thirunamachandran were both sourced directly from Royal Holloway.
+
+Admissions
+
+New students entering the university in 2020 had an average of 128 points (the equivalent of ABB at A Level). According to the 2023 Times and Sunday Times Good University Guide, approximately 10% of Royal Holloway's undergraduates come from independent schools.
+
+Courses
+
+Royal Holloway runs a variety of academic degree programmes, including Single Honours and Joint Honours, with fees of £9,000 for full-time undergraduate students (2015–2016 entry) and some financial help schemes The study of an undergraduate programme leads to one of five University of London degrees, which include Bachelor of Arts, Bachelor of Science, Bachelor of Science (Economics), Bachelor of Music and Master in Science. Discounted fees are offered to students who stay on to complete a postgraduate degree. The university also runs e-degrees in history and business management.
+On a competitive basis, Principal's Excellence Scholarships worth £3,000 a year are given to students who achieve AAA+ and have applied to study Maths, Physics, Modern Languages or European Studies at Royal Holloway from September 2015. Other bursaries and scholarships are also offered to students, including bursaries of £1,750 per year for undergraduate students with a family income less than £25,000.
+In the Research Assessment Exercise (RAE) of 2008, Royal Holloway's School of Biological Sciences was ranked joint third achieving a proportion of 4* and 5* rankings.
+The School of Management has all three of its MBA programmes accredited by AMBA, and obtained management school status in 1993. Royal Holloway also runs the University of London MBA distance-learning programme.
+An Advanced Skills Programme is also run at the university, featuring information technology, communication skills and foreign languages.
+
+Study-abroad programmes
+Royal Holloway has developed a variety of study-abroad programmes, allowing its students to spend a year in institutions including;
+
+Royal Holloway collaborates with Queen Mary, University of London to run programmes at the University of London Institute in Paris (ULIP), a central academic body of the University of London in Paris, France. This offers undergraduate and graduate students the chance to study University of London ratified French Studies degrees in France. Students who take a degree in French, German, Italian or Hispanic Studies will all take a year abroad as an integral part of the course.
+
+Reputation and rankings
+
+According to Complete University Guide 2025, Royal Holloway has graduate prospects of 79%, ranking it 53rd out of 130 universities. Royal Holloway is in the top 25% of universities in the UK for overall satisfaction (89%), according to the National Student Survey 2014.
+In 2014–15, the Times Higher Education World University Rankings ranked the college 47th in Europe and 118th in the world.
+Royal Holloway was ranked 29th overall in The Times Good University Guide ranking of British universities based on consistent league table performance between 1998 and 2007.
+
+Collaborations
+Royal Holloway has forged successful academic links with other universities in the Greater London area and beyond.
+Royal Holloway's Department of Physics is a founding member of SEPnet, the south-east Physics Network, which supports collaboration between seven universities in south-east England on physics research, outreach and postgraduate teaching. The John Adams Institute for Accelerator Research (JAI) is a major collaboration in the field of particle physics between Royal Holloway and the University of Oxford.
+In the field of health and social care research, the SWan (South West London academic network) between Royal Holloway, St George's and Kingston University based at St George's in Tooting is another of Royal Holloway's major collaborative projects.
+In 2011, Pearson, the international education company, and RHC set up a partnership. Royal Holloway is responsible for validating Pearson's new business degree. Currently, Royal Holloway awards University of London degrees but has the power to validate its own degrees, which it has not exercised so far.
+
+Picture gallery and art collection
+
+Royal Holloway has a collection of important paintings, sculptures, prints, drawings and watercolours from the 17th century and later. Artists include Sir John Everett Millais, Edward Burne-Jones, Christopher Nevinson, John Nash and Dame Laura Knight. The gallery is in Founder's and is open to the public every Wednesday during the autumn and spring terms and some weekends throughout the year. At the heart of the collections are the legacies of two Victorian collectors: founder Thomas Holloway and artist Christiana Herringham (1852–1929). Their collections have been enhanced with additional acquisitions and commissions. Following the death of Herringham part of her eclectic art collection, including paintings by her and other women artists as well as Indian miniatures and Japanese woodblock prints, was given to Bedford College by her husband. Having merged with Royal Holloway, these are now part of Royal Holloway's art collection. Several items are on display on the Victorian corridor including a very personal portrait of her children. Other items can be seen by appointment.
+
+The initial plans for the college did not include a picture gallery but Holloway was inspired to start his own art collection for his students after his brother-in-law visited Vassar College, then the world's leading college for women, which had a superb collection of art. In 1881, at the age of 81, Holloway started to buy paintings to form his collection. He amassed paintings at a fast rate and he had completed his art collection by 1883. In total he purchased 77 paintings. In most cases he bought from Christie's auction house. In two cases he broke the record for the highest sum ever paid at auction for a contemporary artist in order to buy the pictures he desired. Highlights of the collection include Sir John Everett Millais' The Princes in the Tower (1878), Sir Edwin Landseer's Man Proposes, God Disposes (1864), Edwin Long's Babylonian Marriage Market (1875) and William Powell Frith's The Railway Station (1862).
+The pieces in the Herringham collection reflect her interests in the old masters, Indian art and women's suffrage. The collections are a teaching resource for the Victorian Studies Centre for teaching and research in Victorian art, architecture and literature, including a taught MA under the Department of English. It is also used to teach students from departments including history, geography, drama and media arts.
+Between 1993 and 1995, in order to fund the maintenance of Founder's, three of the most valuable paintings were sold for a total of £21m, a Turner fetching £11m on its own.  The principal at the time, Dorothy Wedderburn, began the sale process which was completed by her successor,
+Norman Gowar. The paintings were a Turner ("Van Tromp going about to please his Masters, Ships at Sea, getting a good wetting" c.1844); a Constable ("A Sketch for View on the Stour, nr Dedham" c.1821/2) and a Gainsborough ("Peasants going to Market: Early Morning"  c.1770). The remaining paintings had a current value of £16.6 million in 2014. The Turner is now in the J. Paul Getty Museum in Los Angeles. There are no figures available for the Herringham collection.
+
+Student life
+
+Students' union
+
+The Royal Holloway Students' Union (RHSU) actively represents and provides a service for the needs and interests of all students studying at Royal Holloway. It is claimed to have "a reputation as one of the best unions in the London area", in the words of The Independent. The students' union provides much of the on-campus entertainment, organising and sponsoring the sport clubs and special-interest societies, on top of providing welfare advice to students through the Student Advice Centre.
+The students' union runs general meetings, which provide an opportunity to discuss issues, make student announcements and engage in lively debate. Whilst representatives are elected to sit on and run a General Meeting, any student is eligible to attend, vote and have their say. The direction and development of the students' union is the responsibility of the trustee board, which is made up of two student trustees, one college trustee, three external trustees and four student sabbatical officers, consisting of the president, and vice presidents for education; sports, societies and media; and wellbeing and diversity. The Union runs a number of campaigns throughout the year, including various history months, awareness campaigns, and lobbying actions.
+The sabbatical officers are elected for one year in office and work full-time either during or after completing their degree.
+The union also employs more than 50 permanent members of staff who oversee the administrative, democratic and commercial activities of the organisation. The main union building on campus includes a large function hall, two bars, the Tommy's Kitchen food outlet and its administrative offices. Elsewhere on campus, the union operates Medicine – a bar and games venue designed by the creators of the Ministry of Sound – and the campus pub The Packhorse (formerly the privately owned The Monkey's Forehead), just across the A30 from the main campus.
+
+Student media
+
+The Orbital is the Royal Holloway campus magazine and published by the Students' Union, covering subjects from higher education news, opinion, arts, and reviews. The original official Royal Holloway student publication was in the format of a newspaper called The Egham Sun, but this was replaced with the magazine edition in the early 1990s. The magazine is regularly published in print and online.
+rhubarbTV is Royal Holloway's student television station, which relaunched in March 2013. In June 2014, rhubarbTV was named the Royal Holloway Media Outlet of the Year at the first-ever Student Media Awards.
+
+Insanity Radio 103.2FM
+The student and community radio station Insanity Radio 103.2FM was established in 1998. Available locally on 103.2 FM, Insanity Radio broadcasts 24 hours a day, seven days a week, with live presenters in the studio all day in term time and some holiday periods. The station is also available worldwide through the internet. The station takes its name from the Holloway Sanitorium, founded by Thomas Holloway, along with the college that became Royal Holloway. The station has twice won the Silver Award for Best Student Radio Station at BBC Radio 1's Student Radio Awards, and is one of few student radio stations to hold a community/FM radio licence.
+
+The Founder
+
+The Founder is the independent student newspaper. Founded in 2006, 4,000 free copies are printed and distributed fortnightly across campus and locally. It gets no financial support from the college or SURHUL and advertising revenue acquired by the students on the editorial board pays for printing.
+At the 2007 Guardian Student Media Awards, Christian Anthony was shortlisted for the Student critic of the year Award. At the inaugural 2011 London Student Journalism Awards Kate Brook, the newspaper's Features Editor, was recognised with the Best Feature Writer award. At the 2016 Student Publication Association Awards, Features Editor Zak Derler received Special Mention in the Best Feature category for his story on the refugee crisis in the Mediterranean.
+
+Halls of residence
+Most halls are part of the main campus, and initially allocated to first year students who firmly accept a conditional or unconditional offer. Accommodation prices at the university can vary, ranging from £85-£163 per week. Halls are either self-catered or catered, with students living in the latter entitled to a 50 per cent discount off the normal price of the majority of food sold in the dining halls. Around 2,900 students live in halls of residence.
+The Founder's Building houses 493 students in original Victorian rooms and converted space, which underwent refurbishment in 2012. Meals for catered students are provided in Founder's dining hall.
+Also on campus, Gowar and Wedderburn, a construction of 570 study bedrooms in two new blocks opened in September 2004. These halls were also used as accommodation for rowers at the 2012 Olympic Games.
+Similar accommodation blocks, named Butler, Tuke and Williamson, were completed in September 2007 to replace the ageing Athlone, Cameron and Williamson Halls. Of the waste created by the demolition of Athlone, Cameron and Williamson, 98 per cent was recycled. All five of these new halls were named after former principals and have been designed to be environmentally friendly, accomplished by sedum-planted roofs that change colour by season, as well as being designed to improve insulation. In a BREEAM environmental performance assessment, the Butler, Tuke and Williamson halls were rated "Very Good", as their construction was designed to reduce heat loss.
+Kingswood I and II are 1-mile (1.6 km) away. These halls hold more than 400 students, and a free bus service operates to the campus. It closed in 2023. Other accommodation includes Highfield Court (125 students), Penrose Court (200 students), Reid Hall (287 students), and Runnymede Hall (441 students) which was opened by The Princess Royal in 1992.
+
+Notable people
+
+The visitor of the college is Lady Arden of Heswall, former justice of the Supreme Court of the United Kingdom.
+
+Principals / Vice Chancellors
+
+Since the merger of Royal Holloway College and Bedford College in 1985, the college has had six principals:
+
+1985 to 1990: Dorothy Wedderburn
+1990 to 2000: Norman Gowar
+2000 to 2002: Sir Drummond Bone
+2002 to 2009: Stephen Hill
+2010 to 2022: Paul Layzell
+2022 to present: Julie Sanders
+
+Chairs of council
+Since the merger of Royal Holloway College and Bedford College in 1985, the college has had six chairs of council:
+
+1985 to 1992: Philip Allen, Baron Allen of Abbeydale
+1992 to 1999: Sir Robert Andrew
+1999 to 2004: Sir Robin McLaren
+2004 to 2011: Sir Andrew Burns
+2011 to 2018: Stephen Cox
+2018 to present: Margaret Hodge, Baroness Hodge of Barking
+
+Notable alumni
+
+Notable staff
+
+See also
+Armorial of UK universities
+Holloway Sanatorium – the other of Holloway's great philanthropic institutions, opened 1885 in nearby Virginia Water
+Institute of Musical Research
+List of universities in the UK
+University of London Institute in Paris (ULIP)
+
+References
+
+Further reading
+Bingham, Caroline (1987). The history of the Royal Holloway College 1886–1986. London: Constable. ISBN 0-09-468200-3.
+Chapel, Jennie (1982). Victorian Taste – The complete catalogue of paintings at the Royal Holloway College. Great Britain: A Zwemmer Ltd. ISBN 0-902194 08 9.
+Lawless, Erin (2013). The Best Thing I Never Had. HarperCollins. ISBN 978-0007575503., a contemporary novel set in a semi-fictionalised Royal Holloway.
+
+External links
+
+Official website
+Students' Union of Royal Holloway, University of London official website
+Royal Holloway, University of London student lists
+Pathé video of Queen Mary's visit to the college in 1937
+The Founder website

@@ -1,7 +1,7 @@
 # PeopleSoft
 
 Source: https://en.wikipedia.org/wiki/PeopleSoft
-Retrieved at: 2026-06-20T13:18:01Z
+Retrieved at: 2026-06-22T07:13:00Z
 Revision ID: 1359650220
 Raw text SHA256: d69bd08731aa66069306bfc98b32ce3451f7bce4b083345f325c826e56553bcb
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

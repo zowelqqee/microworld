@@ -1,8 +1,8 @@
 # École Centrale Paris
 
 Source: https://en.wikipedia.org/wiki/%C3%89cole_Centrale_Paris
-Retrieved at: 2026-06-17T20:46:27Z
-Revision ID: 1327364105
+Retrieved at: 2026-06-22T21:29:54Z
+Revision ID: 1359920834
 Raw text SHA256: 0f0a057ad9cf6855514ae9f7c4d1b975e0552e054b23ed49acade9cde98cebb4
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

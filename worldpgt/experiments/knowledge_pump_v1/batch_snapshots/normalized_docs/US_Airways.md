@@ -1,7 +1,7 @@
 # US Airways
 
 Source: https://en.wikipedia.org/wiki/US_Airways
-Retrieved at: 2026-06-17T17:19:50Z
+Retrieved at: 2026-06-22T09:16:00Z
 Revision ID: 1357018116
 Raw text SHA256: 30c9fa329fdcc66c03e3a5052979e89d7e8ba2ba1faf536bb51fb337ddfd7c1e
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

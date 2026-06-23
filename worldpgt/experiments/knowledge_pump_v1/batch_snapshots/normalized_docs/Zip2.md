@@ -1,8 +1,8 @@
 # Zip2
 
 Source: https://en.wikipedia.org/wiki/Zip2
-Retrieved at: 2026-06-17T17:20:51Z
-Revision ID: 1359656073
+Retrieved at: 2026-06-22T10:03:05Z
+Revision ID: 1360090220
 Raw text SHA256: 70cf7360b286b07359c1a353567adde249c80b05c31058c3f312f3975582a102
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

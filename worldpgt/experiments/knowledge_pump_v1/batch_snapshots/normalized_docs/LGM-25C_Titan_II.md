@@ -1,0 +1,212 @@
+# LGM-25C Titan II
+
+Source: https://en.wikipedia.org/wiki/LGM-25C_Titan_II
+Retrieved at: 2026-06-22T10:01:03Z
+Revision ID: 1356017870
+Raw text SHA256: 8b44a9debc04096a1bc61c0c21f8a5aa4012f3918ddb93ba4128df8e36dde78d
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Titan II was an intercontinental ballistic missile (ICBM) developed by the Glenn L. Martin Company from the earlier Titan I missile. Titan II was originally designed and used as an ICBM, but was later adapted as a medium-lift space launch vehicle (these adaptations were designated Titan II GLV and Titan 23G) to carry payloads to Earth orbit for the United States Air Force (USAF), National Aeronautics and Space Administration (NASA) and National Oceanic and Atmospheric Administration (NOAA). Those payloads included the USAF Defense Meteorological Satellite Program (DMSP), NOAA weather satellites, and NASA's Gemini crewed space capsules. The modified Titan II SLVs (Space Launch Vehicles) were launched from Vandenberg Air Force Base, California, up until 2003.
+
+Titan II missile
+Part of the Titan rocket family, the Titan II ICBM was the successor to the Titan I, with double the payload. Unlike the Titan I, it used hydrazine-based hypergolic propellant which was storable and reliably ignited. This reduced time to launch and permitted it to be launched from its silo. Titan II carried the largest single warhead of any American ICBM.
+
+LGM-25C missile
+The missile consists of a two-stage, rocket engine powered vehicle and a re-entry vehicle (RV). Provisions are included for in-flight separation of Stage II from Stage I, and separation of the RV from Stage II. Stage I and Stage II vehicles each contain propellant and pressurization, rocket engine, hydraulic and electrical systems, and explosive components. In addition, Stage II contains the flight control system and missile guidance system. Stage I contained three gyros and the Autopilot. The Autopilot attempted to keep the missile straight during first stage flight and sent commands to the Inertial Measurement Unit (IMU) on the 2nd stage. The IMU would compensate and send steering commands to the engine actuators.
+
+Airframe
+The airframe is a two-stage, aerodynamically stable structure that houses and protects the airborne missile equipment during powered flight. The missile guidance system enables the shutdown and staging enable relay to initiate Stage I separation. Each stage is 10 feet (3.0 m) in diameter and has fuel and oxidizer tanks in tandem, with the walls of the tanks forming the skin of the missile in those areas. External conduits are attached to the outside surface of the tanks to provide passage for the wire bundles and tubing. Access doors are provided on the missile forward, aft and between-tanks structure for inspection and maintenance. A removable cover for tank entry is located on the forward dome of each tank.
+
+Stage I airframe
+The Stage I airframe consists of an interstage structure, oxidizer tank forward skirt, oxidizer tank, inter-tank structure, and fuel tank. The interstage structure, oxidizer tank forward skirt, and inter-tank structure are all fabricated assemblies using riveted skin, stringers and frame. The oxidizer tank is a welded structure consisting of a forward dome, tank barrel, an aft dome and a feedline. The fuel tank, also a welded structure, consists of a forward dome, tank barrel, aft cone, and internal conduit.
+
+Stage II airframe
+The Stage II airframe consists of a transition section, oxidizer tank, inter-tank structure, fuel tank and aft skirt. The transition section, inter-tank structure and aft skirt are all fabricated assemblies using riveted skin, stringers and frame. The oxidizer tank and fuel tank are welded structures consisting of forward and aft domes.
+
+Missile characteristics
+The following data is from publication T.O. 21M-LGM25C-1  – via Wikisource. (Dash 1)
+
+Guidance
+The first Titan II guidance system was built by ACDelco. It used an IMU (inertial measurement unit, a gyroscopic sensor) made by ACDelco derived from original designs from MIT Draper Labs. The missile guidance computer (MGC) was the IBM ASC-15. Stage I contained three gyros and the Autopilot. The Autopilot attempted to keep the missile straight during first stage flight and sent commands to the IMU on the 2nd stage. The IMU would compensate and send steering commands to the engine actuators. When spares for this system became hard to obtain, it was replaced by a more modern guidance system, the Delco Universal Space Guidance System (USGS). The USGS used a Carousel IV IMU and a Magic 352 computer.
+
+Launching
+Titan II missiles were designed to be launched from underground missile silos that were hardened against nuclear attack. This was intended to allow for the United States to survive a nuclear first strike by an enemy and be able to retaliate with a second strike response.
+The authority to order the launch of a Titan II was vested exclusively in the US President. Once an order was given to launch, launch codes were sent to the silos from SAC HQ or its backup in California. The signal was an audio transmission of a thirty-five-letter code.
+
+The two missile operators would record the code in a notebook. The codes were compared to each other and if they matched, both operators proceeded to a red safe containing the missile launch documents. The safe featured a separate lock for each operator, who unlocked it using a combination known only to themself. The safe contained a number of paper envelopes with two letters on the front. Embedded in the thirty-five letter code sent from HQ was a seven-letter sub-code. The first two letters of the sub-code indicated which envelope to open. Inside was a plastic "cookie", with five more letters written on it. If the cookie matched the remaining five digits in the sub-code, the launch order was authenticated.
+The message also contained a six-letter code that unlocked the missile. This code was entered on a separate system that opened a butterfly valve on one of the oxidizer lines on the missile engines. Once unlocked, the missile was ready to launch. Other portions of the message contained a launch time, which might be immediate or might be any time in the future.
+
+When that time was reached, the two operators inserted keys into their respective control panels and turned them to launch. The keys had to be turned within two seconds of each other, and had to be held for five seconds. The consoles were too far apart for one person to turn them both within the required timing.
+Successfully turning the keys would start the missile launch sequence. First, the Titan II's batteries would be charged up completely and the missile would disconnect itself from silo power. Then the silo doors would slide open, giving a "SILO SOFT" alarm inside the control room. The guidance system of the Titan II would then configure itself to take control of the missile and ingest data to guide the missile to the target. Subsequently, main engine ignition would occur. Thrust would be allowed to build for a few seconds, then the supports holding the missile in place inside the silo would be released using pyrotechnic bolts, allowing the missile to lift off.
+
+Development
+
+The Titan rocket family was established in October 1955, when the Air Force awarded the Glenn L. Martin Company a contract to build an intercontinental ballistic missile (ICBM). It became known as the Titan I, the nation's first two-stage ICBM and first underground silo-based ICBM. The Martin Company realized that the Titan I could be further improved and presented a proposal to the U.S. Air Force for an improved version. It would carry a larger warhead over a greater range with better accuracy and could be launched more quickly. The Martin company received a contract for the new missile, designated SM-68B Titan II, in June 1960. The Titan II was 50% heavier than the Titan I, with a longer first stage and a larger diameter second stage. The Titan II also used storable propellants: Aerozine 50 fuel, which is a 1:1 mixture of hydrazine and unsymmetrical dimethylhydrazine (UDMH), and dinitrogen tetroxide oxidizer. The Titan I, whose liquid oxygen oxidizer had to be loaded immediately before launching, had to be raised from its silo and fueled before launch. The use of storable propellants enabled the Titan II to be launched within 60 seconds directly from within its silo. Their hypergolic nature made them dangerous to handle; a leak could (and did) lead to explosions, and the fuel was highly toxic. However, it allowed for a rapid launch once the order was received, a significant advantage vs earlier cryogenic ICBMs which could not remain fueled indefinitely and had to be fueled before launch.
+The first flight of the Titan II was in March 1962 and the missile, now designated LGM-25C, reached initial operating capability in October 1963. The Titan II contained one W-53 nuclear warhead in a Mark 6 re-entry vehicle with a range of 8,700 nautical miles (10,000 mi; 16,100 km). The W-53 had a yield of 9 megatons. This warhead was guided to its target using an inertial guidance unit. The 54 deployed Titan IIs formed the backbone of America's strategic deterrent force until the LGM-30 Minuteman ICBM was deployed en masse during the early to mid-1960s. Twelve Titan IIs were flown in NASA's Gemini crewed space program in the mid-1960s.
+The Department of Defense predicted that a Titan II missile could eventually carry a warhead with a 35 megaton yield, based on projected improvements. However, that warhead was never developed or deployed. This would have made this warhead one of the most powerful ever, with almost double the power-to-weight ratio of the B41 nuclear bomb.
+
+Launch history and development
+
+The first Titan II launch, Missile N-2, was carried out on 16 March 1962 from LC-16 at Cape Canaveral and performed extremely well, flying 5,000 miles (8,000 km) downrange and depositing its reentry vehicle in the Ascension splash net. There was only one problem: a high rate of longitudinal vibrations during first stage burn. While this did not affect missile launches for the Air Force, NASA officials were concerned that this phenomenon would be harmful to astronauts on a crewed Gemini flight. The second launch, Missile N-1, lifted from LC-15 on 7 June. First stage performance was near-nominal, but the second stage developed low thrust due to a restriction in the gas generator feed. The Range Safety officer sent a manual shutdown command to the second stage, causing premature RV separation and impact well short of the intended target point. The third launch, Missile N-6 on 11 July, was completely successful. Aside from pogo oscillation (the nickname NASA engineers invented for the Titan's vibration problem since it was thought to resemble the action of a pogo stick), the Titan II was experiencing other teething problems that were expected of a new launch vehicle. The 25 July test (Vehicle N-4) had been scheduled for 27 June, but was delayed by a month when the Titan's right engine experienced severe combustion instability at ignition that caused the entire thrust chamber to break off of the booster and fall down the flame deflector pit, landing about 20 feet from the pad (the Titan's onboard computer shut the engines down the moment loss of thrust occurred). The problem was traced to a bit of cleaning alcohol carelessly left in the engine. A new set of engines had to be ordered from Aerojet, and the missile lifted off from LC-16 on the morning of 25 July. The flight went entirely according to plan up to first stage burn, but the second stage malfunctioned again when the hydraulic pump failed and thrust dropped nearly 50%. The computer system compensated by running the engine for an additional 111 seconds, when propellant depletion occurred. Because the computer had not sent a manual cutoff command, reentry vehicle separation and vernier solo phase did not occur. Impact occurred 1,500 miles (2,400 km) downrange, half the planned distance.
+The next three launches Missile N-5 (12 September), N-9 (12 October), and N-12 (26 October), were entirely successful, but the nagging pogo problem remained and the booster could not be considered man-rated until this was fixed. Martin–Marietta thus added a surge-suppressor standpipe to the oxidizer feed line in the first stage, but when the system was tested on Titan N-11 on 6 December, the effect was instead to worsen pogo in the first stage, which ended up vibrating so strongly that unstable engine thrust resulted. The result of this was to trip the first stage pressure switch and terminate thrust early. The second stage then separated and began its burn, but due to the improper speed and attitude at separation, the guidance system malfunctioned and caused an unstable flight trajectory. Impact occurred only 700 miles (1,100 km) downrange.
+Vehicle N-13 was launched 13 days later and carried no standpipes, but it did have increased pressure in the first stage propellant tanks, which did cut down on vibration. In addition, the oxidizer feedlines were made of aluminum instead of steel. On the other hand, the exact reason for pogo was still unclear and a vexing problem for NASA.
+The tenth Titan II flight (Vehicle N-15) took place on 10 January, the only nighttime Titan II test. While it appeared that the pogo problem was largely contained on this flight, the second stage lost thrust again due to a restriction in the gas generator and so only achieved half its intended range. While previous second stage problems were blamed on pogo, this could not be the case for N-15. Meanwhile, combustion instability was still an issue and was confirmed by Aerojet static-firing tests which showed that the LR91 Liquid-propellant engine had difficulty attaining smooth burning after the shock of startup.
+Efforts to human-rate the Titan II also ran afoul of the fact that the Air Force and not NASA was in charge of its development. The former's primary aim was to develop a missile system, not a launch vehicle for Project Gemini, and they were only interested in technical improvements to the booster insofar as they had relevance to that program. On 29 January, the Air Force Ballistic Systems Division (BSD) declared that pogo in the Titan had been reduced enough for inter-continental ballistic missile (ICBM) use and that no further improvements needed to be made. While adding more pressure to the propellant tanks had reduced vibration, it could only be done so much before putting unsafe structural loads on the Titan and in any case the results were still unsatisfactory from NASA's point of view. While BSD tried to come up with a way to help NASA out, they finally decided that it was not worth the time, resources, and risk of trying to cut down further on pogo and that the ICBM program ultimately came first.
+Despite the Air Force's lack of interest in human-rating the Titan II, General Bernard Adolph Schriever assured that any problems with the booster would be fixed. BSD decided that 0.6 Gs was good enough despite NASA's goal of 0.25 Gs and they stubbornly declared that no more resources were to be expended on it. On 29 March 1963, Schriever invited Space Systems Development (SSD) and BSD officials to his headquarters at Andrews Air Force Base in Maryland, but the meeting was not encouraging. Brig. Gen John L. McCoy (director of the Titan Systems Program Office) reaffirmed BSD's stance that the pogo and combustion instability problems in the Titan were not a serious issue to the ICBM program and it would be too difficult and risky at this point to try to improve them for NASA's sake. Meanwhile, Martin–Marietta and Aerojet both argued that most of the major development problems with the booster had been solved and it would only take a little more work to man-rate it. They proposed adding more standpipes to the first stage and using baffled injectors in the second stage.
+
+A closed-door meeting of NASA and Air Force officials led to the former arguing that without any definitive answer to the pogo and combustion instability problems, the Titan could not safely fly human passengers. But by this point, the Air Force was taking a bigger role in the Gemini program due to proposed uses of the spacecraft for military applications (e.g., Blue Gemini). During the first week of April, a joint plan was drafted which would ensure that pogo was to be reduced to fit NASA's target and to make design improvements to both Titan stages. The program carried the conditions that the ICBM program retained first priority and was not to be delayed by Gemini, and that General McCoy would have final say on all matters.
+Meanwhile, the Titan II development program ran into difficulties during the first half of 1963. On 16 February, Vehicle N-7 was launched from a silo at Vandenberg Air Force Base in California and malfunctioned almost immediately at liftoff. An umbilical cord failed to separate cleanly, ripping out wiring in the second stage which not only cut power to the guidance system, but also prevented the range safety charges from being armed. The missile lifted with a continuous uncontrolled roll, and at about T+15 seconds, when the pitch and roll program would normally begin, it began a sudden sharp downward pitch. Launch crews were in a panic as they had a missile that was not only out of control, but could not be destroyed and might end up crashing into a populated area. Fortunately, the Titan's errant flight came to an end after flipping almost completely upside-down which caused the second stage to separate from the stack. The ISDS (Inadvertent Separation Destruct System) then activated and blew up the first stage. Most of the debris from the missile fell offshore or on the beach, and the second stage impacted the water mostly intact, although the oxidizer tank had been ruptured by flying debris from first stage destruction. Navy crews launched a salvage effort to recover the reentry vehicle and the guidance system from the sea floor. The reentry vehicle was found and dredged up along with parts of the second stage, but the guidance system was not recovered.
+The mishap was traced to an unforeseen design flaw in the silo's construction – there was not enough room for the umbilicals to detach properly which resulted in wiring being ripped out of the Titan. It was solved by adding extra lanyards to the umbilicals so they would have sufficient "play" in them to separate without damaging the missile. The flight was nonetheless considered a "partial" success in that the Titan had cleared the silo successfully. The inadvertent rolling motion of the vehicle may have also prevented a worse disaster as it added stability and prevented it from colliding with the silo walls as it ascended.
+While N-18 flew successfully from the Cape on 21 March, N-21 suffered another second stage failure after having been delayed several weeks due to another episode of the first stage thrust chambers breaking off prior to launch. This was followed by a launch from VAFB on 27 April when Missile N-8 flew successfully. N-14 (9 May), flown from LC-16 at the Cape, suffered another early second stage shutdown due to a leaking oxidizer line. Missiles N-19 on 13 May (VAFB) and N-17 on 24 May (CCAS) were successful, but of 18 Titan II launches so far, only 10 had met all of their objectives. On 29 May, Missile N-20 was launched from LC-16 with a new round of pogo-suppressing devices on board. Unfortunately, a fire broke out in the thrust section soon after liftoff, leading to loss of control during ascent. The missile pitched down and the second stage separated from the stack at T+52 seconds, triggering the ISDS, which blew the first stage to pieces. The second stage was manually destroyed by the Range Safety officer shortly thereafter. No useful pogo data was obtained due to the early termination of the flight, and the accident was traced to a stress corrosion of the aluminum fuel valve, which resulted in a propellant leak that caught fire from contacting hot engine parts.
+The next flight was Missile N-22, a silo test from Vandenberg Air Force Base on 20 June, but once again the second stage lost thrust due to a gas generator restriction. At this point, BSD suspended further flights. Of the 20 Titan launches, seven would have required the abort of a crewed launch, and General McCoy had to make good 12 of the 13 remaining scheduled tests. Since the ICBM program came first, pogo suppression had to be shelved.
+On the other hand, only Missile N-11 suffered a malfunction due to pogo and the combustion instability issue had occurred in static firings, but not any actual flights. All Titan II failures save for N-11 were caused by gas generator restrictions, broken plumbing, or faulty welds. The trouble appeared to be with Aerojet, and a visit of MSC officials to their Sacramento, California, plant in July revealed a number of extremely careless handling and manufacturing processes. A systematic effort to improve the quality control of the LR-87 engines was launched, which included extensive redesigns of components to improve reliability as well as fixes to the gas generator restriction issue.
+
+Service history
+The Titan II was in service from 1963 to 1987. There were originally 54 Titan II Strategic Air Command missiles.
+The 54 Titan II missiles were on 24-hour continuous alert with 18 missiles each surrounding three bases: Davis–Monthan Air Force Base near Tucson, Arizona, Little Rock Air Force Base in Arkansas, and McConnell Air Force Base in Wichita, Kansas.
+
+Mishaps
+On 9 August 1965, a fire and resultant loss of oxygen when a high-pressure hydraulic line was cut with an oxyacetylene torch in a missile silo (Site 373–4) near Searcy, Arkansas, killed 53 people, mostly civilian repairmen doing maintenance. The fire occurred while the 750-ton silo lid was closed, which contributed to a reduced oxygen level for the men who survived the initial fire. Two men escaped alive, both with injuries due to the fire and smoke, one by groping in complete darkness for the exit. The missile survived and was undamaged.
+On 20 June 1974, one of two start cartridges failed to ignite due to faulty wiring on a Titan II launch from Silo 395C at Vandenberg AFB in California. The launch was part of the anti-ballistic missile program and was witnessed by an entourage of general officers and congressmen. The Titan suffered severe structural failure with both the hypergolic fuel tank and the oxidizer tank leaking and accumulating in the bottom of the silo. A large number of civilian contractors were evacuated from the Command and Control Bunker.
+On 24 August 1978, SSgt Robert Thomas was killed at a site outside Rock, Kansas when a missile in its silo leaked propellant. Another airman, A1C Erby Hepstall, later died from lung injuries sustained in the spill.
+
+On 19 September 1980, a major explosion occurred after a socket from a large socket wrench rolled off a platform, fell, and punctured the missile's lower-stage fuel tank, causing a fuel leak. Because of the hypergolic propellants involved, the entire missile exploded a few hours later, killing an Air Force airman, SrA David Livingston, and destroying the silo (374-7, near Damascus, Arkansas). This was the same missile that had been in the silo during the deadly fire at site 373–4, refurbished and relocated after the incident. Due to the warhead's built-in safety features, it did not detonate and was recovered about 300 feet (100 m) away. The 1988 television movie Disaster at Silo 7 is loosely based on the event. Author Eric Schlosser published a book centered on the accident, Command and Control: Nuclear Weapons, the Damascus Accident, and the Illusion of Safety, in September 2013. Command and Control, a documentary film based on Schlosser's book, aired on PBS on 10 January 2017.
+
+Retirement
+
+The Titan II was originally expected to be in service for only 5–7 years, but ended up lasting far longer than anyone expected in part because of its large size and throw-weight. Leadership within the USAF and SAC were reluctant to retire the Titan II because while it made up only a small fraction of the total number of missiles on standby, it represented a significant portion of the total megatonnage that was deployed by Air Force ICBMs.
+It is a common misconception that the Titan IIs were decommissioned because of a weapons reduction treaty, but in fact, they were simply aging victims of a weapons modernization program. Because of the volatility of the liquid fuel and the problem with aging seals, the Titan II missiles had originally been scheduled to be retired beginning in 1971. By the mid-1970s, the original AC Delco inertial guidance system had become obsolete and spare parts could no longer be obtained for it, so the guidance packages in the stock of Titan missiles were replaced by the Universal Space Guidance System. After the two accidents in 1978 and 1980, respectively, deactivation of the Titan II ICBM system finally began in July 1982. The last Titan II missile, located at Silo 373-8 near Judsonia, Arkansas, was deactivated on 5 May 1987. With their warheads removed, the deactivated missiles were initially placed in storage at Davis–Monthan Air Force Base, Arizona, and the former Norton Air Force Base, California, but were later broken up for salvage by 2009.
+A single Titan II complex belonging to the former strategic missile wing at Davis–Monthan Air Force Base escaped destruction after decommissioning and is open to the public as the Titan Missile Museum at Sahuarita, Arizona. The missile resting in the silo is a real Titan II, but was a training missile and never contained fuel, oxidizer, or a warhead.
+Number of Titan II missiles in service, by year:
+
+1963: 56
+1964: 59
+1965: 59
+1966: 60
+1967: 63
+1968: 59 (3 deactivated at Vandenberg Air Force Base)
+1969: 60
+1970: 57 (3 more deactivated at Vandenberg Air Force Base)
+1971: 58
+1972: 57
+1973: 57
+1974: 57
+1975: 57
+1976: 58
+1977: 57
+1978: 57
+1979: 57
+1980: 56
+1981: 56 (President Ronald Reagan announces retirement of Titan II systems)
+1983: 53
+1984: 43 (Davis–Monthan Air Force Base site closure completed)
+1985: 21
+1986: 9 (Little Rock Air Force Base closure completed in 1987)
+
+Operational units
+Each Titan II ICBM wing was equipped with eighteen missiles; nine per squadron with one each at dispersed launch silos in the general area of the assigned base. See squadron article for geographic locations and other information about the assigned launch sites.
+A real Alert Real Response AAFM September 1999
+
+308th Strategic Missile Wing 1 April 1962 – 18 August 1987
+Little Rock Air Force Base, Arkansas
+373d Strategic Missile Squadron
+374th Strategic Missile Squadron
+308th Missile Inspection and Maintenance Squadron
+381st Strategic Missile Wing 1 March 1962 – 8 August 1986
+McConnell Air Force Base, Kansas
+532d Strategic Missile Squadron
+533d Strategic Missile Squadron
+390th Strategic Missile Wing 1 January 1962 – 31 July 1984
+Davis–Monthan Air Force Base, Arizona
+570th Strategic Missile Squadron
+571st Strategic Missile Squadron
+1st Strategic Aerospace Division
+Vandenberg Air Force Base, California
+395th Strategic Missile Squadron, 1 February 1959 – 31 December 1969
+Operated 3 silos for technical development and testing, 1963–1969
+Note: In 1959, a fifth Titan II installation comprising the 13th and 14th squadrons at the former Griffiss Air Force Base, New York, was proposed, but never constructed.
+
+Titan II missile disposition
+
+Thirty-three Titan-II Research Test (N-type) missiles were built and all but one were launched either at Cape Canaveral Air Force Station, Florida, or Vandenberg Air Force Base, California, in 1962–64. The surviving N-10, AF Ser. No. 61-2738/60-6817 resides in the silo at the Titan Missile Museum (ICBM Site 571–7), operated by the Pima Air & Space Museum at Green Valley, south of Tucson, Arizona, on Interstate-19.
+Twelve Titan-II Gemini Launch Vehicles (GLVs) were produced. All were launched from the then-Cape Kennedy Air Force Station in 1964–66. The top half of GLV-5 62-12560 was recovered offshore following its launch and is on display at the U.S. Space & Rocket Center, Alabama.
+One hundred and eight Titan-II ICBM (B-Types) were produced. Forty-nine were launched for testing at Vandenberg Air Force Base from 1964 to 1976. Two were lost in accidents within silos. One B-2, AF Ser. No. 61-2756, was given to the U.S. Space & Rocket Center in Huntsville, Alabama, in the 1970s.
+The 56 surviving missiles were pulled from silos and individual base stores and all transferred to the then-Norton Air Force Base, California, during the 1980s. They were stored under plastic coverings and had helium pumped into their engine components to prevent rust. Norton Air Force Base buildings 942 and 945 held the missiles. Building 945 held 30 missiles, while Building 942 held 11 plus a single stage 1. The buildings also held extra stage engines and the interstages. 14 full missiles and one extra second stage had been transferred from Norton Air Force Base to the manufacturer, Martin Marietta, at Martin's Denver, Colorado, facility for refurbishment by the end of the decade. 13 of the 14 were launched as 23Gs. One missile, B-108, AF Ser. No. 66-4319 (23G-10 the spare for the 23G program), went to the Evergreen Aviation & Space Museum in McMinnville, Oregon. Finally, B-34 Stage 2 was delivered from Norton Air Force Base to Martin Marietta on 28 April 1986, but was not modified to a G, nor was it listed as arriving or being destroyed at the 309th Aerospace Maintenance and Regeneration Group at Davis–Monthan Air Force Base; it is therefore unaccounted for within the open source public domain.
+Forty-two B-series missiles remained, 41 full and one first stage at Norton Air Force Base, and the second stage at Martin. Of these, 38 and one second stage were stored outside at the Aerospace Maintenance and Regeneration Center (AMARC), now known as the 309th Aerospace Maintenance and Regeneration Group (309 AMARG), adjacent to Davis–Monthan Air Force Base, to await final destruction between 2004 and 2008. Four of the 42 were saved and sent to museums (below).
+Air Force Base Silo Deactivation date ranges:
+
+Davis–Monthan Air Force Base 10 Aug 82 – 28 June 1984
+McConnell Air Force Base 31 July 1984 – 18 June 1986
+Little Rock Air Force Base 31 May 1985 – 27 June 1987
+Titan II Movement Dates:
+
+Titan II Bs moved to Norton Air Force Base between – 12 March 1982 through 20 August 1987
+Missiles relocated to AMARC at Davis–Monthan Air Force Base prior to Apr 1994 closure of Norton Air Force Base due to BRAC 1989 action
+Titan II Bs delivered to Martin Marietta/Denver between – 29 February 1986 through 20 September 1988
+Titan II Bs delivered to AMARC – 25 October 1982 through 23 August 1987
+Titan II Bs destroyed at AMARC – 7 April 2004 through 15 October 2008
+Titan II Bs destruction periods at AMARC – 7 April 2004 x2; 17 August 2005 x 5; 12–17 Jan 2006 x 10; 9 August 2007 x 3; 7–15 Oct 2008 x 18; 2 shipped out to museums, Aug 2009
+Official Count: 108 Titan-2 'B' Series Vehicles were delivered to USAF: 49 Test launches, 2 Silo losses, 13 Space launches, 6 in museums, 37.5 destroyed at AMARC, +.5 (one second stage missing B-34)=108.
+
+Titan-II surviving missiles/ Museum locations within the United States:
+
+GLV-5, AF Ser. No. 62-12560 top half of Stage 1 was recovered offshore following its launch and is on display at the Alabama Space & Rocket Center in Huntsville, Alabama.
+N-10 AF Ser. No. 61-2738/60-6817 in the silo at the Titan Missile Museum (ICBM Site 571–7), southwest of Davis–Monthan Air Force Base in Green Valley, Tucson, Arizona.
+B-2 AF Ser. No 61–2756 at the U.S. Space & Rocket Center, Huntsville, Alabama, in the 1970s.
+B-5 AF Ser. No. 61–2759 at the National Museum of the United States Air Force, Wright-Patterson Air Force Base, Dayton, Ohio.
+B-14/20 AF Ser. No. 61–2768 at the Stafford Museum, Oklahoma.
+B-44/16 AF Ser. No. 62–0025 at the National Museum of Nuclear Science & History adjacent to Kirtland Air Force Base, Albuquerque, New Mexico.
+B-104 AF Ser. No 66–4315 at the Spaceport USA Rocket Garden, Kennedy Space Center, Florida.
+B-108 AF Ser. No. 66-4319 (23G-10 the spare for the 23G program) at the Evergreen Aviation and Space Museum in McMinnville, Oregon.
+
+Titan II launch vehicle
+
+The Titan II space-launch vehicles were purpose-built as space launchers or are decommissioned ICBMs that have been refurbished and equipped with hardware required for use as space launch vehicles. All twelve Gemini capsules, including ten crewed, were launched by Titan II launchers.
+The Titan II space launch vehicle is a two-stage liquid fueled booster, designed to provide a small-to-medium weight class capability. It is able to lift approximately 1,900 kg (4,200 lb) into a circular polar low-Earth orbit. The first stage consists of one ground ignited Aerojet LR-87 liquid propellant rocket engine (with two combustion chambers and nozzles but a single turbopump system), while the second stage consists of an Aerojet LR91 Liquid-propellant engine.
+By the mid-1980s, with the stock of refurbished Atlas E/F missiles finally starting to run out, the Air Force decided to reuse decommissioned Titan IIs for space launches. The Martin Marietta Astronautics Group was awarded a contract in January 1986 to refurbish, integrate, and launch fourteen Titan II ICBMs for government space launch requirements. These were designated Titan 23G. The Air Force successfully launched the first Titan 23G space launch vehicle from Vandenberg Air Force Base 5 September 1988. NASA's Clementine spacecraft was launched aboard a Titan 23G in January 1994. All Titan 23G missions were launched from Space Launch Complex 4 West (SLC-4W) on Vandenberg Air Force Base, under the operational command of the 6595th Aerospace Test Group and its follow-on organizations of the 4th Space Launch Squadron and 2nd Space Launch Squadron. The Titan 23G ended up being less of a cost-saving measure than anticipated as the expense of refurbishing the missiles for space launches turned out to be more than the cost of flying a brand-new Delta booster. Unlike refurbished Atlas missiles, which were completely torn down and rebuilt from the ground up, the Titan 23G had relatively few changes aside from replacing the warhead interface and adding range safety and telemetry packages. The engines were merely given a brief static firing to verify their functionality. Of the 13 launches, there was one failure, when a launch of a Landsat satellite in 1993 ended in a useless orbit due to a malfunction of the satellite kick motor. The last Titan II launch was on 18 October 2003 when a DMSP weather satellite was successfully launched. This flight had been scheduled for launch in early 2001, but persistent problems with the booster and satellite delayed it over two years. A total of 282 Titan IIs were launched between 1962 and 2003, of which 25 were space launches.
+
+See also
+
+Strategic Air Command
+Related development
+
+Titan (rocket family)
+Titan I
+Titan 23B
+ASC-15
+Blue Streak (missile)
+Aircraft of comparable role, configuration, and era
+
+Atlas (missile)
+SS-18 Satan
+DF-5
+
+Related lists
+
+List of military aircraft of the United States
+List of missiles
+
+References
+
+This article incorporates public domain material from websites or documents of the National Aeronautics and Space Administration.
+
+External links
+Google Map of 62 Titan II Missile Sites throughout the United States
+Titan Missile Museum
+Titan Missile at Evergreen Space Museum (site of Spruce Goose)
+Titan missiles & variations
+Titan II Missile Information
+Original Titan II ICBM Web Site
+
+References
+Conine, Gary, B., “Not For Ourselves Alone” The Evolution and Role of the Titan II Missile in the Cold War New York: CreateSpace Publishing ISBN 978-1-5122152-0-5, (2015)
+Green, Warren E., “The Development of The SM-68 Titan”, Historical Office Deputy Commander for Aerospace Systems, Air Force Systems Command, 1962
+Lonnquest, John C and Winkler, David F., “To Defend and Deter: the Legacy of the Cold War Missile program,” U.S. Army Construction Engineering Research Laboratories, Champaign, IL Defense Publishing Service, Rock Island, IL,1996
+Hacker, Barton C., and Grimwood, James M., “On The Shoulders Of Titans A History of Project Gemini,” National Aeronautics and Space Administration, Washington, D.C. 1977
+Rosenberg, Max, “The Air Force and The National Guided Missile Program 1944-1949,” USAF Historical Division Liaison Office, Ann Arbor, 1964
+Sheehan, Neil, “A Fiery Peace in a Cold War: Bernard Schriever and the Ultimate Weapon.” New York: Random House. ISBN 978-0679-42284-6, (2009)
+Spirers, David N., “On Alert An Operational History of the United States Air Force Intercontinental Ballistic Missile (ICBM) Program, 1945-2011,” Air Force Space Command, United States Air Force, Colorado Springs, Colorado, 2012
+Stumpf, David K., Titan II, The University of Arkansas Press, Fayetteville, Arkansas, 2000 ISBN 1-55728-601-9
+Sutton, George P., “History of Liquid Propellant Rocket Engines,” American Institute of Aeronautics and Astronautics, Reston, VA, ISBN 1-56347-649-5, 2006
+United States Air Force, “T.O. 21M-HGM25A-1-1, “Technical Manual, Operation and Organizational Maintenance USAF Model HGM-25A Missile Weapon System

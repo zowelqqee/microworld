@@ -1,21 +1,22 @@
 {
   "rejection_by_reason": {
-    "appositive_alias_subject": 9,
-    "dangling_comma_subject": 9,
-    "definition_nationality_plus_single_noun": 7,
+    "appositive_alias_subject": 11,
+    "dangling_comma_subject": 24,
+    "definition_nationality_plus_single_noun": 11,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
-    "founded_by_truncated_object": 1,
+    "founded_by_truncated_object": 8,
     "fragment_prefix_subject": 5,
-    "geopolitical_subject_corporate_predicate": 1,
+    "geopolitical_subject_corporate_predicate": 3,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 10
+    "truncated_definition": 22
   },
   "quarantine_by_reason": {
+    "headquarters_subject_or_clause_uncertain": 1,
     "object_has_descriptive_tail": 1,
-    "volatile_predicate": 1
+    "volatile_predicate": 4
   }
 }

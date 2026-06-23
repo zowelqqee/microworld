@@ -1,0 +1,160 @@
+=== Run 1/20 Tue Jun 23 00:16:00 MSK 2026 ===
+  frontier_titles_total: 7972
+  pump_dry_run_overlay_items_count: 2020
+  all_critical_passed: True
+  recent_new_answerable_facts: 0
+  recent_answerable_yield_per_ready_doc: 0.0
+  negative_yield_detected: True
+--- done ---
+=== Run 2/20 Tue Jun 23 00:29:50 MSK 2026 ===
+  frontier_titles_total: 28498
+  pump_dry_run_overlay_items_count: 2133
+  all_critical_passed: True
+  recent_new_answerable_facts: 3
+  recent_answerable_yield_per_ready_doc: 0.15
+  negative_yield_detected: False
+--- done ---
+=== Run 3/20 Tue Jun 23 00:55:23 MSK 2026 ===
+  frontier_titles_total: 35963
+  pump_dry_run_overlay_items_count: 2178
+  all_critical_passed: True
+  recent_new_answerable_facts: 45
+  recent_answerable_yield_per_ready_doc: 0.459184
+  negative_yield_detected: False
+--- done ---
+=== Run 4/20 Tue Jun 23 01:22:46 MSK 2026 ===
+  frontier_titles_total: 46246
+  pump_dry_run_overlay_items_count: 2293
+  all_critical_passed: True
+  recent_new_answerable_facts: 48
+  recent_answerable_yield_per_ready_doc: 0.322148
+  negative_yield_detected: False
+--- done ---
+=== Run 5/20 Tue Jun 23 01:50:31 MSK 2026 ===
+  frontier_titles_total: 57648
+  pump_dry_run_overlay_items_count: 2377
+  all_critical_passed: True
+  recent_new_answerable_facts: 89
+  recent_answerable_yield_per_ready_doc: 0.390351
+  negative_yield_detected: False
+--- done ---
+=== Run 6/20 Tue Jun 23 02:17:43 MSK 2026 ===
+  frontier_titles_total: 69248
+  pump_dry_run_overlay_items_count: 2460
+  all_critical_passed: True
+  recent_new_answerable_facts: 104
+  recent_answerable_yield_per_ready_doc: 0.363636
+  negative_yield_detected: False
+--- done ---
+=== Run 7/20 Tue Jun 23 02:46:14 MSK 2026 ===
+  frontier_titles_total: 81973
+  pump_dry_run_overlay_items_count: 2546
+  all_critical_passed: True
+  recent_new_answerable_facts: 85
+  recent_answerable_yield_per_ready_doc: 0.317164
+  negative_yield_detected: False
+--- done ---
+=== Run 8/20 Tue Jun 23 03:15:31 MSK 2026 ===
+  frontier_titles_total: 93729
+  pump_dry_run_overlay_items_count: 2620
+  all_critical_passed: True
+  recent_new_answerable_facts: 109
+  recent_answerable_yield_per_ready_doc: 0.393502
+  negative_yield_detected: False
+--- done ---
+=== Run 9/20 Tue Jun 23 03:45:41 MSK 2026 ===
+  frontier_titles_total: 103422
+  pump_dry_run_overlay_items_count: 2695
+  all_critical_passed: True
+  recent_new_answerable_facts: 83
+  recent_answerable_yield_per_ready_doc: 0.320463
+  negative_yield_detected: False
+--- done ---
+=== Run 10/20 Tue Jun 23 04:16:18 MSK 2026 ===
+  frontier_titles_total: 111021
+  pump_dry_run_overlay_items_count: 2770
+  all_critical_passed: True
+  recent_new_answerable_facts: 77
+  recent_answerable_yield_per_ready_doc: 0.300781
+  negative_yield_detected: False
+--- done ---
+=== Run 11/20 Tue Jun 23 04:46:46 MSK 2026 ===
+  frontier_titles_total: 116902
+  pump_dry_run_overlay_items_count: 2842
+  all_critical_passed: True
+  recent_new_answerable_facts: 70
+  recent_answerable_yield_per_ready_doc: 0.27451
+  negative_yield_detected: False
+--- done ---
+=== Run 12/20 Tue Jun 23 05:17:45 MSK 2026 ===
+  frontier_titles_total: 122192
+  pump_dry_run_overlay_items_count: 2906
+  all_critical_passed: True
+  recent_new_answerable_facts: 55
+  recent_answerable_yield_per_ready_doc: 0.213178
+  negative_yield_detected: False
+--- done ---
+=== Run 13/20 Tue Jun 23 05:48:59 MSK 2026 ===
+  frontier_titles_total: 125800
+  pump_dry_run_overlay_items_count: 2938
+  all_critical_passed: True
+  recent_new_answerable_facts: 52
+  recent_answerable_yield_per_ready_doc: 0.203922
+  negative_yield_detected: False
+--- done ---
+=== Run 14/20 Tue Jun 23 06:15:58 MSK 2026 ===
+  frontier_titles_total: 128665
+  pump_dry_run_overlay_items_count: 2960
+  all_critical_passed: True
+  recent_new_answerable_facts: 49
+  recent_answerable_yield_per_ready_doc: 0.224771
+  negative_yield_detected: False
+--- done ---
+=== Run 15/20 Tue Jun 23 06:41:36 MSK 2026 ===
+  frontier_titles_total: 130694
+  pump_dry_run_overlay_items_count: 2986
+  all_critical_passed: True
+  recent_new_answerable_facts: 38
+  recent_answerable_yield_per_ready_doc: 0.214689
+  negative_yield_detected: False
+--- done ---
+=== Run 16/20 Tue Jun 23 07:05:24 MSK 2026 ===
+  frontier_titles_total: 131353
+  pump_dry_run_overlay_items_count: 2995
+  all_critical_passed: True
+  recent_new_answerable_facts: 35
+  recent_answerable_yield_per_ready_doc: 0.269231
+  negative_yield_detected: False
+--- done ---
+=== Run 17/20 Tue Jun 23 07:28:25 MSK 2026 ===
+  frontier_titles_total: 132641
+  pump_dry_run_overlay_items_count: 3016
+  all_critical_passed: True
+  recent_new_answerable_facts: 22
+  recent_answerable_yield_per_ready_doc: 0.261905
+  negative_yield_detected: False
+--- done ---
+=== Run 18/20 Tue Jun 23 07:52:38 MSK 2026 ===
+  frontier_titles_total: 133170
+  pump_dry_run_overlay_items_count: 3031
+  all_critical_passed: True
+  recent_new_answerable_facts: 17
+  recent_answerable_yield_per_ready_doc: 0.22973
+  negative_yield_detected: False
+--- done ---
+=== Run 19/20 Tue Jun 23 08:17:23 MSK 2026 ===
+  frontier_titles_total: 135004
+  pump_dry_run_overlay_items_count: 3041
+  all_critical_passed: True
+  recent_new_answerable_facts: 14
+  recent_answerable_yield_per_ready_doc: 0.194444
+  negative_yield_detected: False
+--- done ---
+=== Run 20/20 Tue Jun 23 08:40:43 MSK 2026 ===
+  frontier_titles_total: 136177
+  pump_dry_run_overlay_items_count: 3053
+  all_critical_passed: True
+  recent_new_answerable_facts: 7
+  recent_answerable_yield_per_ready_doc: 0.111111
+  negative_yield_detected: False
+--- done ---

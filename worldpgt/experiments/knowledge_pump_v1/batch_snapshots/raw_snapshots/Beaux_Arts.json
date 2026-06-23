@@ -1,0 +1,15 @@
+{
+  "title": "Beaux Arts",
+  "normalized_title": "Beaux Arts",
+  "pageid": 603092,
+  "revision_id": 1243301886,
+  "timestamp": "2024-08-31T18:24:35Z",
+  "source_url": "https://en.wikipedia.org/wiki/Beaux_Arts",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Beaux+Arts",
+  "retrieved_at": "2026-06-22T09:18:03Z",
+  "raw_text": "Beaux Arts, Beaux arts, or Beaux-Arts is a French term corresponding to fine arts in English.  Capitalized, it may refer to:\n\nAcadémie des Beaux-Arts, a French arts institution (not a school)\nAcadémie Royale des Beaux-Arts, a Belgian arts school\nBeaux-Arts architecture, an architectural style\nBeaux Arts Gallery, a gallery of British modern art\nBeaux-Arts Institute of Design a.k.a. BAID, New York City based art and architecture school\nBeaux Arts Magazine, French magazine\nBeaux Arts Trio, a classical music chamber group\nBeaux Arts Village, Washington, a small town in the Seattle metropolitan area\nÉcole des Beaux-Arts, several art schools in France\nÉcole nationale des beaux-arts de Lyon\nÉcole nationale supérieure des Beaux-Arts, Paris\nFine art, a style of painting popular at the turn of the 19th and 20th century, the source of the generalized concept of \"fine arts\", i.e. art for art's sake\nPalais des Beaux Arts, a federal cultural venue in Brussels, Belgium\n\n\nSee also\nMusée des Beaux Arts (disambiguation)",
+  "raw_text_sha256": "f6ec308cc4ee2a7bd121dc57b8f1fc1aad1beee734ab5a8563437d0bb7accc9e",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

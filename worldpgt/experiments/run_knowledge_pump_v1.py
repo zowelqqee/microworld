@@ -32,6 +32,12 @@ from worldpgt.knowledge_pump.expanded_allowlist_builder import (
     write_allowlist,
 )
 print("[INIT] expanded_allowlist_builder OK", flush=True)
+from worldpgt.knowledge_pump.dynamic_frontier import (
+    load_dynamic_frontier,
+    merge_frontiers,
+    update_dynamic_frontier_from_fetch_rows,
+)
+print("[INIT] dynamic_frontier OK", flush=True)
 from worldpgt.knowledge_pump.frontier_title_extractor import extract_frontier_titles
 print("[INIT] frontier_title_extractor OK", flush=True)
 from worldpgt.knowledge_pump.pump_batch_planner import plan_batches
@@ -270,13 +276,20 @@ def _load_allowlist(path: Path) -> list[ExpandedAllowlistEntry]:
     return [ExpandedAllowlistEntry(**row) for row in rows]
 
 
-def _frontier_and_allowlist(target_total: int, batch_size: int, already_fetched: set[str]) -> tuple[list, list[ExpandedAllowlistEntry]]:
-    frontier = extract_frontier_titles(
+def _frontier_and_allowlist(
+    target_total: int,
+    batch_size: int,
+    already_fetched: set[str],
+    out_dir: Path = _OUT,
+) -> tuple[list, list[ExpandedAllowlistEntry]]:
+    static_frontier = extract_frontier_titles(
         _SNAPSHOTS,
         _RELATION_V2 / "relation_extraction_v2_candidates.json",
         _KNOWLEDGE_REQUESTS,
         [_ACCEPTED, _PROMOTED, _SNAPSHOT_DRY_RUN],
     )
+    dynamic_frontier = load_dynamic_frontier(out_dir / "dynamic_frontier_titles.json")
+    frontier = merge_frontiers([static_frontier, dynamic_frontier])
     allowlist = build_expanded_allowlist(frontier, target_total, batch_size, already_fetched)
     return frontier, allowlist
 
@@ -340,6 +353,7 @@ def _ready_batch_docs(batch_dir: Path) -> list[ReadySnapshotDoc]:
             license_note=str(row.get("license_note") or ""),
             fetch_status=str(row.get("fetch_status") or "error"),
             error=str(row.get("error") or ""),
+            links=list(row.get("links") or []),
         )
         if not evaluate_snapshot_readiness(snapshot, doc_path).ready_for_self_ingestion:
             continue
@@ -655,10 +669,23 @@ def run(
     already_fetched |= fetched_existing
 
     print("[RUN] _frontier_and_allowlist...", flush=True)
-    frontier, allowlist = _frontier_and_allowlist(target_total, batch_size, already_fetched)
+    frontier, allowlist = _frontier_and_allowlist(target_total, batch_size, already_fetched, out_dir)
     print(f"[RUN] frontier={len(frontier)} allowlist={len(allowlist)}", flush=True)
     write_frontier(frontier, out_dir / "frontier_titles.json", out_dir / "frontier_titles.csv")
     write_allowlist(allowlist, out_dir / "expanded_allowlist.json", out_dir / "expanded_allowlist.csv")
+    dynamic_frontier_initial_total = len(load_dynamic_frontier(out_dir / "dynamic_frontier_titles.json"))
+    dynamic_frontier_summary: dict[str, Any] = {
+        "dynamic_frontier_initial_total": dynamic_frontier_initial_total,
+        "dynamic_frontier_previous_total": dynamic_frontier_initial_total,
+        "dynamic_frontier_added_this_run": 0,
+        "dynamic_frontier_total": dynamic_frontier_initial_total,
+        "dynamic_frontier_pages_processed": 0,
+        "dynamic_frontier_candidate_count": 0,
+        "dynamic_frontier_rejected_already_fetched": 0,
+        "dynamic_frontier_rejected_current_allowlist": 0,
+        "dynamic_frontier_rejected_hygiene": 0,
+        "dynamic_frontier_added_sample": [],
+    }
 
     start_batch = checkpoint.current_batch_index if checkpoint else 0
     print("[RUN] plan_batches...", flush=True)
@@ -748,6 +775,44 @@ def run(
             checkpoint.not_ready_titles = sorted(set(checkpoint.not_ready_titles) | set(not_ready_titles))
             checkpoint.last_completed_stage = "batch_fetch_completed"
             write_checkpoint(out_dir / "pump_checkpoint.json", checkpoint)
+            batch_dynamic_summary = update_dynamic_frontier_from_fetch_rows(
+                rows,
+                dynamic_frontier_path=out_dir / "dynamic_frontier_titles.json",
+                dynamic_frontier_csv_path=out_dir / "dynamic_frontier_titles.csv",
+                already_fetched_titles=set(checkpoint.already_fetched_titles),
+                current_allowlist=allowlist,
+            )
+            dynamic_frontier_summary["dynamic_frontier_added_this_run"] += batch_dynamic_summary[
+                "dynamic_frontier_added_this_run"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_total"] = batch_dynamic_summary["dynamic_frontier_total"]
+            dynamic_frontier_summary["dynamic_frontier_pages_processed"] += batch_dynamic_summary[
+                "dynamic_frontier_pages_processed"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_candidate_count"] += batch_dynamic_summary[
+                "dynamic_frontier_candidate_count"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_rejected_already_fetched"] += batch_dynamic_summary[
+                "dynamic_frontier_rejected_already_fetched"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_rejected_current_allowlist"] += batch_dynamic_summary[
+                "dynamic_frontier_rejected_current_allowlist"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_rejected_hygiene"] += batch_dynamic_summary[
+                "dynamic_frontier_rejected_hygiene"
+            ]
+            dynamic_frontier_summary["dynamic_frontier_added_sample"].extend(
+                batch_dynamic_summary["dynamic_frontier_added_sample"]
+            )
+        if batch_rows:
+            frontier, allowlist = _frontier_and_allowlist(
+                target_total,
+                batch_size,
+                set(checkpoint.already_fetched_titles),
+                out_dir,
+            )
+            write_frontier(frontier, out_dir / "frontier_titles.json", out_dir / "frontier_titles.csv")
+            write_allowlist(allowlist, out_dir / "expanded_allowlist.json", out_dir / "expanded_allowlist.csv")
     else:
         checkpoint.last_completed_stage = "planned"
         checkpoint.can_resume = True
@@ -755,6 +820,11 @@ def run(
         write_checkpoint(out_dir / "pump_checkpoint.json", checkpoint)
         if not (out_dir / "pump_batch_history.json").exists():
             write_json(out_dir / "pump_batch_history.json", [])
+
+    dynamic_frontier_summary["dynamic_frontier_added_sample"] = dynamic_frontier_summary[
+        "dynamic_frontier_added_sample"
+    ][:20]
+    write_json(out_dir / "dynamic_frontier_summary.json", dynamic_frontier_summary)
 
     history = load_history(out_dir / "pump_batch_history.json")
     collection_summary = _collection_summary(history, allow_network)
@@ -1187,6 +1257,20 @@ def run(
     # --- v1.9 yield-aware frontier control summary fields ---
     summary.update({
         "frontier_policy": frontier_policy,
+        "dynamic_frontier_enabled": True,
+        "dynamic_frontier_initial_total": dynamic_frontier_summary.get("dynamic_frontier_initial_total"),
+        "dynamic_frontier_total": dynamic_frontier_summary.get("dynamic_frontier_total"),
+        "dynamic_frontier_added_this_run": dynamic_frontier_summary.get("dynamic_frontier_added_this_run"),
+        "dynamic_frontier_pages_processed": dynamic_frontier_summary.get("dynamic_frontier_pages_processed"),
+        "dynamic_frontier_candidate_count": dynamic_frontier_summary.get("dynamic_frontier_candidate_count"),
+        "dynamic_frontier_rejected_already_fetched": dynamic_frontier_summary.get(
+            "dynamic_frontier_rejected_already_fetched"
+        ),
+        "dynamic_frontier_rejected_current_allowlist": dynamic_frontier_summary.get(
+            "dynamic_frontier_rejected_current_allowlist"
+        ),
+        "dynamic_frontier_rejected_hygiene": dynamic_frontier_summary.get("dynamic_frontier_rejected_hygiene"),
+        "dynamic_frontier_added_sample": dynamic_frontier_summary.get("dynamic_frontier_added_sample"),
         "yield_gate_enabled": True,
         "recent_new_answerable_facts": yield_summary.get("recent_new_answerable_facts"),
         "recent_answerable_yield_per_ready_doc": yield_summary.get(

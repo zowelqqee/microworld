@@ -68,6 +68,7 @@ def _read_snapshot(path: Path) -> PageSnapshot:
         license_note=data.get("license_note", ""),
         fetch_status=data.get("fetch_status", "error"),
         error=data.get("error", ""),
+        links=list(data.get("links") or []),
     )
 
 

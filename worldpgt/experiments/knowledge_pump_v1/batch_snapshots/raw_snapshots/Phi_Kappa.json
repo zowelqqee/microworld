@@ -1,0 +1,15 @@
+{
+  "title": "Phi Kappa",
+  "normalized_title": "Phi Kappa",
+  "pageid": 2221247,
+  "revision_id": 1340591318,
+  "timestamp": "2026-02-26T15:02:19Z",
+  "source_url": "https://en.wikipedia.org/wiki/Phi_Kappa",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Phi+Kappa",
+  "retrieved_at": "2026-06-22T09:11:09Z",
+  "raw_text": "Phi Kappa may refer to:\n\nPhi Kappa (Catholic fraternity), a higher education fraternity founded in 1889 and one of the two fraternities that merged to form Phi Kappa Theta\nPhi Kappa Literary Society, a debate society founded in 1820 at the University of Georgia\nPhi Kappa (secondary), a secondary school (high school) fraternity founded in 1900",
+  "raw_text_sha256": "f2b1c6ca5f9e33aada337f16909b5bb8c6ced6b2c3064f07c9d47eb0b4366de8",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

@@ -1,6 +1,126 @@
 [
   {
     "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Tesla, provisional designation 1952 UW1,",
+      "definition": "carbonaceous asteroid from the central region of the asteroid belt",
+      "predicate": "is_a",
+      "source_page": "2244 Tesla",
+      "evidence_text": "2244 Tesla, provisional designation 1952 UW1, is a carbonaceous asteroid from the central region of the asteroid belt, approximately 25 kilometers in diameter.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "2244 Tesla, provisional designation 1952 UW1, is a carbonaceous asteroid from the central region of the asteroid belt, approximately 25 kilometers in diameter.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Akira Yoshino",
+      "definition": "Japanese chemist",
+      "predicate": "is_a",
+      "source_page": "Akira Yoshino",
+      "evidence_text": "Akira Yoshino (吉野 彰, Yoshino Akira; born 30 January 1948) is a Japanese chemist.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Akira Yoshino (吉野 彰, Yoshino Akira; born 30 January 1948) is a Japanese chemist.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Alessandro Giuseppe Antonio Anastasio Volta",
+      "definition": "Italian chemist",
+      "predicate": "is_a",
+      "source_page": "Alessandro Volta",
+      "evidence_text": "Alessandro Giuseppe Antonio Anastasio Volta (18 February 1745 – 5 March 1827) was an Italian chemist and physicist who was a pioneer of electricity and power, and is credited as the inventor of the electric battery and the discoverer of methane.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Alessandro Giuseppe Antonio Anastasio Volta (18 February 1745 – 5 March 1827) was an Italian chemist and physicist who was a pioneer of electricity and power, and is credited as the inventor of the electric battery and the discoverer of methane.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Origin Joyo.com",
+      "predicate": "founded_by",
+      "object": "Lei Jun",
+      "source_page": "Amazon China",
+      "evidence_text": "Origin Joyo.com was founded by Lei Jun, Chinese entrepreneur and owner of Kingsoft, in May 2000.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Origin Joyo.com was founded by Lei Jun, Chinese entrepreneur and owner of Kingsoft, in May 2000.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Drive, formerly known as Amazon Cloud Drive,",
+      "definition": "cloud storage application managed by Amazon",
+      "predicate": "is_a",
+      "source_page": "Amazon Drive",
+      "evidence_text": "Amazon Drive, formerly known as Amazon Cloud Drive, was a cloud storage application managed by Amazon.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Drive, formerly known as Amazon Cloud Drive, was a cloud storage application managed by Amazon.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Amazon Echo, often shortened to Echo,",
+      "definition": "brand of smart speakers",
+      "predicate": "is_a",
+      "source_page": "Amazon Echo",
+      "evidence_text": "Amazon Echo, often shortened to Echo, is a brand of smart speakers developed by Amazon.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amazon Echo, often shortened to Echo, is a brand of smart speakers developed by Amazon.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_relation",
       "subject": "Amazon Leo,",
       "predicate": "subsidiary_of",
@@ -61,6 +181,26 @@
   },
   {
     "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Arthur Wing Pinero",
+      "definition": "English playwright",
+      "predicate": "is_a",
+      "source_page": "Arthur Wing Pinero",
+      "evidence_text": "Sir Arthur Wing Pinero (24 May 1855 – 23 November 1934) was an English playwright and, early in his career, actor.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Sir Arthur Wing Pinero (24 May 1855 – 23 November 1934) was an English playwright and, early in his career, actor.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_relation",
       "subject": "Founding Aston Martin",
       "predicate": "founded_by",
@@ -102,10 +242,30 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Bexar County",
+      "definition": "county in the U",
+      "predicate": "is_a",
+      "source_page": "Bexar County",
+      "evidence_text": "Bexar County ( BAIR or   BAY-ər; Spanish: Béxar [ˈbexaɾ]) is a county in the U.SU.S\u0000 state of Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bexar County ( BAIR or   BAY-ər; Spanish: Béxar [ˈbexaɾ]) is a county in the U.SU.S\u0000 state of Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Boeing Starliner",
       "definition": "spacecraft designed to transport crew to",
       "predicate": "is_a",
-      "source_page": "Boeing Starliner",
+      "source_page": "CST-100 Starliner",
       "evidence_text": "The Boeing Starliner (or CST-100) is a spacecraft designed to transport crew to and from the International Space Station (ISS) and other low-Earth-orbit destinations.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -118,26 +278,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Byron Kurt Lichtenberg",
-      "definition": "American engineer",
-      "predicate": "is_a",
-      "source_page": "Byron Lichtenberg",
-      "evidence_text": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Byron Kurt Lichtenberg (born February 19, 1948) is an American engineer and fighter pilot who flew aboard two NASA Space Shuttle missions as a Payload Specialist.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -158,26 +298,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "dangling_comma_subject"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Charles David Walker",
-      "definition": "American engineer",
-      "predicate": "is_a",
-      "source_page": "Charles D. Walker",
-      "evidence_text": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Charles David Walker (born August 29, 1948) is an American engineer and astronaut who flew on three Space Shuttle missions in 1984 and 1985 as a Payload Specialist for the McDonnell Douglas Corporation.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -222,6 +342,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Leadership CNP",
+      "predicate": "founded_by",
+      "object": "Tim La",
+      "source_page": "Council for National Policy",
+      "evidence_text": "Leadership CNP was founded in 1981 by Southern Baptist pastor Tim LaHaye, author of The Battle for the Mind (1980) and the Left Behind series of books.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Leadership CNP was founded in 1981 by Southern Baptist pastor Tim LaHaye, author of The Battle for the Mind (1980) and the Left Behind series of books.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Andrew Nyberg",
       "predicate": "develops",
       "object": "Insignia and livery The mission insignia",
@@ -258,6 +398,46 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "develops_design_artifact_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Democratic Party of the Virgin Islands",
+      "definition": "political party in the U",
+      "predicate": "is_a",
+      "source_page": "Democratic Party of the Virgin Islands",
+      "evidence_text": "The Democratic Party of the Virgin Islands is a political party in the U.SU.S\u0000 Virgin Islands, and is affiliated with the Democratic Party at the nationwide level.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Democratic Party of the Virgin Islands is a political party in the U.SU.S\u0000 Virgin Islands, and is affiliated with the Democratic Party at the nationwide level.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "East North Central states",
+      "definition": "region of the United States defined by the U",
+      "predicate": "is_a",
+      "source_page": "East North Central States",
+      "evidence_text": "The East North Central states is a region of the United States defined by the U.SU.S\u0000 Census Bureau, containing five states: Illinois, Indiana, Michigan, Ohio and Wisconsin.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The East North Central states is a region of the United States defined by the U.SU.S\u0000 Census Bureau, containing five states: Illinois, Indiana, Michigan, Ohio and Wisconsin.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
   },
   {
     "item": {
@@ -422,6 +602,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Fahrenkopf Jr.",
+      "definition": "American attorney",
+      "predicate": "is_a",
+      "source_page": "Frank Fahrenkopf",
+      "evidence_text": "Fahrenkopf Jr. (born August 28, 1939) is an American attorney, political executive, and lobbyist who was chairman of the Republican National Committee from 1983 to 1989.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Fahrenkopf Jr. (born August 28, 1939) is an American attorney, political executive, and lobbyist who was chairman of the Republican National Committee from 1983 to 1989.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Germany, officially the Federal Republic of Germany,",
       "definition": "country in Western",
       "predicate": "is_a",
@@ -442,11 +642,11 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Gregory Brockman",
-      "definition": "American entrepreneur",
+      "subject": "Greater Los Angeles",
+      "definition": "most populous metropolitan area in the U",
       "predicate": "is_a",
-      "source_page": "Greg Brockman",
-      "evidence_text": "Gregory Brockman (born November 29, 1987) is an American entrepreneur and software engineer.",
+      "source_page": "Los Angeles Area",
+      "evidence_text": "Greater Los Angeles is the most populous metropolitan area in the U.SU.S\u0000 state of California, encompassing five counties in Southern California extending from Ventura County in the west to San Bernardino County and Riverside County in the east, with the city of Los Angeles and Los Angeles County at its center, and Orange County to the southeast.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
@@ -454,10 +654,30 @@
       "extraction_pattern": "lead_definition_v2",
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Gregory Brockman (born November 29, 1987) is an American entrepreneur and software engineer.",
+      "evidence_span": "Greater Los Angeles is the most populous metropolitan area in the U.SU.S\u0000 state of California, encompassing five counties in Southern California extending from Ventura County in the west to San Bernardino County and Riverside County in the east, with the city of Los Angeles and Los Angeles County at its center, and Orange County to the southeast.",
       "pump_source_kind": "fresh_snapshot"
     },
-    "reason": "definition_nationality_plus_single_noun"
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States Virgin Islands, often abbreviated USVI,",
+      "definition": "group of islands",
+      "predicate": "is_a",
+      "source_page": "History of the United States Virgin Islands",
+      "evidence_text": "The United States Virgin Islands, often abbreviated USVI, are a group of islands and cays located in the Lesser Antilles of the Eastern Caribbean, consisting of three main islands (Saint Croix, Saint John, and Saint Thomas) and fifty smaller islets and cays.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States Virgin Islands, often abbreviated USVI, are a group of islands and cays located in the Lesser Antilles of the Eastern Caribbean, consisting of three main islands (Saint Croix, Saint John, and Saint Thomas) and fifty smaller islets and cays.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
   },
   {
     "item": {
@@ -465,7 +685,7 @@
       "subject": "Hyperloop One, known as Virgin Hyperloop until November 2022,",
       "definition": "American transportation technology company",
       "predicate": "is_a",
-      "source_page": "Hyperloop One",
+      "source_page": "Virgin Hyperloop One",
       "evidence_text": "Hyperloop One, known as Virgin Hyperloop until November 2022, was an American transportation technology company that worked to commercialize high-speed travel utilizing the Hyperloop concept which was a variant of the vacuum train.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -542,11 +762,11 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Jim Cantrell",
-      "definition": "American entrepreneur",
+      "subject": "John Griffin Carlisle",
+      "definition": "American attorney",
       "predicate": "is_a",
-      "source_page": "Jim Cantrell",
-      "evidence_text": "Jim Cantrell (born October 5, 1965) is an American entrepreneur and mechanical engineer.",
+      "source_page": "John G. Carlisle",
+      "evidence_text": "John Griffin Carlisle (September 5, 1834 – July 31, 1910) was an American attorney and Democratic Party politician from Kentucky.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
@@ -554,10 +774,30 @@
       "extraction_pattern": "lead_definition_v2",
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Jim Cantrell (born October 5, 1965) is an American entrepreneur and mechanical engineer.",
+      "evidence_span": "John Griffin Carlisle (September 5, 1834 – July 31, 1910) was an American attorney and Democratic Party politician from Kentucky.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "John Law's Company, founded in 1717 by Scottish economist and financier John Law,",
+      "definition": "joint-stock company",
+      "predicate": "is_a",
+      "source_page": "Mississippi Company",
+      "evidence_text": "John Law's Company, founded in 1717 by Scottish economist and financier John Law, was a joint-stock company that occupies a unique place in French and European monetary history, as it was for a brief moment granted the entire revenue-raising capacity of the French state.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "John Law's Company, founded in 1717 by Scottish economist and financier John Law, was a joint-stock company that occupies a unique place in French and European monetary history, as it was for a brief moment granted the entire revenue-raising capacity of the French state.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
   },
   {
     "item": {
@@ -601,6 +841,26 @@
   },
   {
     "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Amasa Leland Stanford",
+      "definition": "American attorney",
+      "predicate": "is_a",
+      "source_page": "Leland Stanford",
+      "evidence_text": "Amasa Leland Stanford (March 9, 1824 – June 21, 1893) was an American attorney, industrialist, philanthropist, and Republican Party politician from Watervliet, New York.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Amasa Leland Stanford (March 9, 1824 – June 21, 1893) was an American attorney, industrialist, philanthropist, and Republican Party politician from Watervliet, New York.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_relation",
       "subject": "Royal Exchange",
       "predicate": "founded_by",
@@ -622,7 +882,7 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Los Angeles, also known as L.A.,",
+      "subject": "Los Angeles",
       "definition": "most populous city in the U",
       "predicate": "is_a",
       "source_page": "Los Angeles",
@@ -637,16 +897,16 @@
       "evidence_span": "Los Angeles, also known as L.A., is the most populous city in the U.SU.S\u0000 state of California, and the commercial, financial, and cultural center of Southern California.",
       "pump_source_kind": "fresh_snapshot"
     },
-    "reason": "appositive_alias_subject"
+    "reason": "truncated_definition"
   },
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Max Hodak",
-      "definition": "American entrepreneur",
+      "subject": "Los Angeles County, sometimes abbreviated as LA County,",
+      "definition": "county in the U",
       "predicate": "is_a",
-      "source_page": "Max Hodak",
-      "evidence_text": "Max Hodak is an American entrepreneur and biomedical engineer.",
+      "source_page": "Los Angeles County",
+      "evidence_text": "Los Angeles County, sometimes abbreviated as LA County, is a county in the U.SU.S\u0000 state of California, in the southern region of the state.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
@@ -654,7 +914,27 @@
       "extraction_pattern": "lead_definition_v2",
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Max Hodak is an American entrepreneur and biomedical engineer.",
+      "evidence_span": "Los Angeles County, sometimes abbreviated as LA County, is a county in the U.SU.S\u0000 state of California, in the southern region of the state.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Michael Faraday",
+      "definition": "English chemist",
+      "predicate": "is_a",
+      "source_page": "Michael Faraday",
+      "evidence_text": "Michael Faraday (; 22 September 1791 – 25 August 1867) was an English chemist and physicist who contributed vastly to the study of electrochemistry and electromagnetism.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Michael Faraday (; 22 September 1791 – 25 August 1867) was an English chemist and physicist who contributed vastly to the study of electrochemistry and electromagnetism.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_nationality_plus_single_noun"
@@ -662,7 +942,7 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Azure, sometimes stylized Azure, and formerly Windows Azure,",
+      "subject": "Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure,",
       "definition": "cloud computing platform",
       "predicate": "is_a",
       "source_page": "Microsoft Azure",
@@ -678,6 +958,66 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Ludwig von Mises Institute for Austrian Economics, or Mises Institute,",
+      "definition": "nonprofit educational",
+      "predicate": "is_a",
+      "source_page": "Mises Institute",
+      "evidence_text": "The Ludwig von Mises Institute for Austrian Economics, or Mises Institute, is a nonprofit educational, research, and publishing institution for Austrian economic thought, headquartered in Auburn, Alabama.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Ludwig von Mises Institute for Austrian Economics, or Mises Institute, is a nonprofit educational, research, and publishing institution for Austrian economic thought, headquartered in Auburn, Alabama.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "National Highway Traffic Safety Administration",
+      "definition": "agency of the U",
+      "predicate": "is_a",
+      "source_page": "National Highway Traffic Safety Administration",
+      "evidence_text": "The National Highway Traffic Safety Administration (NHTSA  NITS-ə) is an agency of the U.SU.S\u0000 federal government, part of the Department of Transportation, focused on automobile safety regulations.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The National Highway Traffic Safety Administration (NHTSA  NITS-ə) is an agency of the U.SU.S\u0000 federal government, part of the Department of Transportation, focused on automobile safety regulations.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "National Republican Redistricting Trust",
+      "definition": "American organization",
+      "predicate": "is_a",
+      "source_page": "National Republican Redistricting Trust",
+      "evidence_text": "The National Republican Redistricting Trust (NRRT) is an American organization founded to strengthen the Republican Party's influence in the 2020 redistricting cycle.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The National Republican Redistricting Trust (NRRT) is an American organization founded to strengthen the Republican Party's influence in the 2020 redistricting cycle.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -702,6 +1042,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Naval History and Heritage Command, formerly the Naval Historical Center,",
+      "definition": "Echelon II command responsible for the preservation",
+      "predicate": "is_a",
+      "source_page": "Naval History and Heritage Command",
+      "evidence_text": "The Naval History and Heritage Command, formerly the Naval Historical Center, is an Echelon II command responsible for the preservation, analysis, and dissemination of U.SU.S\u0000 naval history and heritage located at the historic Washington Navy Yard.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Naval History and Heritage Command, formerly the Naval Historical Center, is an Echelon II command responsible for the preservation, analysis, and dissemination of U.SU.S\u0000 naval history and heritage located at the historic Washington Navy Yard.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Nevada corporation",
       "definition": "corporation incorporated under Chapter 78 of the Nevada Revised Statutes of the U",
       "predicate": "is_a",
@@ -718,6 +1078,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Newlands Resolution, 30 Stat. 750,",
+      "definition": "joint resolution passed on July 7",
+      "predicate": "is_a",
+      "source_page": "Newlands Resolution",
+      "evidence_text": "The Newlands Resolution, 30 Stat. 750, was a joint resolution passed on July 7, 1898, by the United States Congress to annex the independent Republic of Hawaii, for the purpose of colonizing the island.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Newlands Resolution, 30 Stat. 750, was a joint resolution passed on July 7, 1898, by the United States Congress to annex the independent Republic of Hawaii, for the purpose of colonizing the island.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
   },
   {
     "item": {
@@ -738,6 +1118,46 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Anna Masterton Buchan",
+      "definition": "Scottish novelist",
+      "predicate": "is_a",
+      "source_page": "O. Douglas",
+      "evidence_text": "Anna Masterton Buchan (24 March 1877 – 24 November 1948) was a Scottish novelist who wrote under the pen name O.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Anna Masterton Buchan (24 March 1877 – 24 November 1948) was a Scottish novelist who wrote under the pen name O.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Old Right, also called the Old Guard,",
+      "definition": "informal designation used for a branch of American conservatism",
+      "predicate": "is_a",
+      "source_page": "Old Right (United States)",
+      "evidence_text": "The Old Right, also called the Old Guard, is an informal designation used for a branch of American conservatism that was most prominent from 1910 to the mid-1950s.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Old Right, also called the Old Guard, is an informal designation used for a branch of American conservatism that was most prominent from 1910 to the mid-1950s.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
   },
   {
     "item": {
@@ -762,6 +1182,66 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Rayburn House Office Building",
+      "definition": "congressional office building for the U",
+      "predicate": "is_a",
+      "source_page": "Rayburn House Office Building",
+      "evidence_text": "The Rayburn House Office Building (RHOB) is a congressional office building for the U.SU.S\u0000 House of Representatives in the Capitol Hill neighborhood of Washington, D.C., between South Capitol Street and First Street.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Rayburn House Office Building (RHOB) is a congressional office building for the U.SU.S\u0000 House of Representatives in the Capitol Hill neighborhood of Washington, D.C., between South Capitol Street and First Street.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Republican Party",
+      "predicate": "founded_by",
+      "object": "Nebraska Act",
+      "source_page": "Republican Party of the United States",
+      "evidence_text": "The Republican Party was founded in 1854 by anti-slavery activists who opposed the Kansas–Nebraska Act and the expansion of slavery into American territories.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "founded_by_v2",
+      "v2_pattern_id": "founded_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Republican Party was founded in 1854 by anti-slavery activists who opposed the Kansas–Nebraska Act and the expansion of slavery into American territories.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Royal Mail Group Limited, trading as Royal Mail,",
+      "definition": "British postal service",
+      "predicate": "is_a",
+      "source_page": "Royal Mail",
+      "evidence_text": "Royal Mail Group Limited, trading as Royal Mail, is a British postal service and courier company.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Royal Mail Group Limited, trading as Royal Mail, is a British postal service and courier company.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Russia, or the Russian Federation,",
       "definition": "country in Eastern Europe",
       "predicate": "is_a",
@@ -782,11 +1262,11 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
-      "subject": "Samuel Harris Altman",
-      "definition": "American entrepreneur",
+      "subject": "SM-65D Atlas, or Atlas D,",
+      "definition": "first operational version of the U",
       "predicate": "is_a",
-      "source_page": "Sam Altman",
-      "evidence_text": "Samuel Harris Altman (born April 22, 1985) is an American entrepreneur and investor who has been the chief executive officer (CEO) of the artificial intelligence company OpenAI since 2019.",
+      "source_page": "SM-65D Atlas",
+      "evidence_text": "The SM-65D Atlas, or Atlas D, was the first operational version of the U.SU.S\u0000 Atlas missile.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
@@ -794,10 +1274,70 @@
       "extraction_pattern": "lead_definition_v2",
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Samuel Harris Altman (born April 22, 1985) is an American entrepreneur and investor who has been the chief executive officer (CEO) of the artificial intelligence company OpenAI since 2019.",
+      "evidence_span": "The SM-65D Atlas, or Atlas D, was the first operational version of the U.SU.S\u0000 Atlas missile.",
       "pump_source_kind": "fresh_snapshot"
     },
-    "reason": "definition_nationality_plus_single_noun"
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "SM-65F Atlas, or Atlas-F,",
+      "definition": "final operational variant of the Atlas missile",
+      "predicate": "is_a",
+      "source_page": "SM-65F Atlas",
+      "evidence_text": "The SM-65F Atlas, or Atlas-F, was the final operational variant of the Atlas missile, only differing from the Atlas E in the launch facility and guidance package used.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The SM-65F Atlas, or Atlas-F, was the final operational variant of the Atlas missile, only differing from the Atlas E in the launch facility and guidance package used.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "San Antonio",
+      "definition": "city in the U",
+      "predicate": "is_a",
+      "source_page": "San Antonio",
+      "evidence_text": "San Antonio ( SAN an-TOH-nee-oh; Spanish for \"Saint Anthony\") is a city in the U.SU.S\u0000 state of Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "San Antonio ( SAN an-TOH-nee-oh; Spanish for \"Saint Anthony\") is a city in the U.SU.S\u0000 state of Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "San Bernardino",
+      "definition": "city in",
+      "predicate": "is_a",
+      "source_page": "San Bernardino",
+      "evidence_text": "San Bernardino (  SAN BUR-nə-DEE-noh) is a city in and the county seat of San Bernardino County, California, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "San Bernardino (  SAN BUR-nə-DEE-noh) is a city in and the county seat of San Bernardino County, California, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
   },
   {
     "item": {
@@ -818,26 +1358,6 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
-  },
-  {
-    "item": {
-      "overlay_type": "overlay_definition",
-      "subject": "Saturn Corporation, also known as Saturn LLC,",
-      "definition": "American automobile manufacturer",
-      "predicate": "is_a",
-      "source_page": "Saturn Corporation",
-      "evidence_text": "The Saturn Corporation, also known as Saturn LLC, was an American automobile manufacturer, a registered trademark established on January 7, 1985, as a subsidiary of General Motors.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The Saturn Corporation, also known as Saturn LLC, was an American automobile manufacturer, a registered trademark established on January 7, 1985, as a subsidiary of General Motors.",
-      "pump_source_kind": "fresh_snapshot"
-    },
-    "reason": "appositive_alias_subject"
   },
   {
     "item": {
@@ -902,6 +1422,46 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Space colonization, or extraterrestrial colonization,",
+      "definition": "establishment of human settlements",
+      "predicate": "is_a",
+      "source_page": "Space colonization",
+      "evidence_text": "Space colonization, or extraterrestrial colonization, is the establishment of human settlements or colonies in outer space and on astronomical bodies.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Space colonization, or extraterrestrial colonization, is the establishment of human settlements or colonies in outer space and on astronomical bodies.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Leland Stanford Junior University, commonly referred to as Stanford University,",
+      "definition": "private research university in Stanford",
+      "predicate": "is_a",
+      "source_page": "Stanford University",
+      "evidence_text": "Leland Stanford Junior University, commonly referred to as Stanford University, is a private research university in Stanford, California, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Leland Stanford Junior University, commonly referred to as Stanford University, is a private research university in Stanford, California, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "States Department, later States Ministry,",
       "definition": "department of the Government of India headed by the Minister of States",
       "predicate": "is_a",
@@ -922,6 +1482,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Streaming media",
+      "definition": "method by",
+      "predicate": "is_a",
+      "source_page": "Streaming media",
+      "evidence_text": "Streaming media is the method by which multimedia data is delivered through a network for playback using a digital media player or media player software.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Streaming media is the method by which multimedia data is delivered through a network for playback using a digital media player or media player software.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Surrey Satellite Technology Ltd, or SSTL,",
       "definition": "company involved in the manufacture",
       "predicate": "is_a",
@@ -935,6 +1515,126 @@
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
       "evidence_span": "Surrey Satellite Technology Ltd, or SSTL, is a company involved in the manufacture and operation of small satellites.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Tenth Air Force",
+      "definition": "unit of the U",
+      "predicate": "is_a",
+      "source_page": "Tenth Air Force",
+      "evidence_text": "The Tenth Air Force (10 AF) is a unit of the U.SU.S\u0000 Air Force, specifically a numbered air force of the Air Force Reserve Command (AFRC). 10 AF is headquartered at Naval Air Station Fort Worth Joint Reserve Base/Carswell Field (formerly Carswell AFB), Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Tenth Air Force (10 AF) is a unit of the U.SU.S\u0000 Air Force, specifically a numbered air force of the Air Force Reserve Command (AFRC). 10 AF is headquartered at Naval Air Station Fort Worth Joint Reserve Base/Carswell Field (formerly Carswell AFB), Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Thomas Carlyle",
+      "definition": "Scottish essayist",
+      "predicate": "is_a",
+      "source_page": "Thomas Carlyle",
+      "evidence_text": "Thomas Carlyle (4 December 1795 – 5 February 1881) was a Scottish essayist, historian and philosopher.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Thomas Carlyle (4 December 1795 – 5 February 1881) was a Scottish essayist, historian and philosopher.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Expeditionary Mobility Task Force,",
+      "predicate": "headquartered_in",
+      "object": "McGuire Air Force Base",
+      "source_page": "Twenty-Second Air Force",
+      "evidence_text": "In the event of mobilization, some of the Twenty-Second Air Force's subordinate units would come under the operational control (OPCON) of the Air Mobility Command's (AMC) 21st Expeditionary Mobility Task Force, headquartered at McGuire Air Force Base, New Jersey, while others would come under OPCON of Air Education and Training Command's 19th Air Force at Randolph AFB, Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In the event of mobilization, some of the Twenty-Second Air Force's subordinate units would come under the operational control (OPCON) of the Air Mobility Command's (AMC) 21st Expeditionary Mobility Task Force, headquartered at McGuire Air Force Base, New Jersey, while others would come under OPCON of Air Education and Training Command's 19th Air Force at Randolph AFB, Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tennessee Coal, Iron and Railroad Company,",
+      "predicate": "headquartered_in",
+      "object": "Birmingham",
+      "source_page": "United States Steel Corporation",
+      "evidence_text": "In 1907, U.SU.S\u0000 Steel acquired its largest competitor, the Tennessee Coal, Iron and Railroad Company, headquartered in Birmingham, Alabama, and Tennessee Coal was replaced on the Dow Jones Industrial Average by General Electric.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 1907, U.SU.S\u0000 Steel acquired its largest competitor, the Tennessee Coal, Iron and Railroad Company, headquartered in Birmingham, Alabama, and Tennessee Coal was replaced on the Dow Jones Industrial Average by General Electric.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States",
+      "predicate": "headquartered_in",
+      "object": "Chicago",
+      "source_page": "United Airlines",
+      "evidence_text": "United Airlines, IncInc\u0000 is a major airline in the United States headquartered in Chicago, Illinois.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "United Airlines, IncInc\u0000 is a major airline in the United States headquartered in Chicago, Illinois.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "geopolitical_subject_corporate_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Department of Defense,",
+      "predicate": "headquartered_in",
+      "object": "Kelley Barracks in Stuttgart",
+      "source_page": "United States Africa Command",
+      "evidence_text": "The United States Africa Command (USAFRICOM, U.SU.S\u0000 AFRICOM, and AFRICOM) is one of the eleven unified combatant commands of the United States Department of Defense, headquartered at Kelley Barracks in Stuttgart, Germany.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States Africa Command (USAFRICOM, U.SU.S\u0000 AFRICOM, and AFRICOM) is one of the eleven unified combatant commands of the United States Department of Defense, headquartered at Kelley Barracks in Stuttgart, Germany.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "dangling_comma_subject"
@@ -961,12 +1661,32 @@
   },
   {
     "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Congress",
+      "predicate": "developed_by",
+      "object": "Constitution's First Article",
+      "source_page": "U.S. Congress",
+      "evidence_text": "Congress was created by the Constitution's First Article and first met in 1789, replacing the Congress of the Confederation in its legislative function.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Congress was created by the Constitution's First Article and first met in 1789, replacing the Congress of the Confederation in its legislative function.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "geopolitical_subject_corporate_predicate"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_definition",
-      "subject": "United States district courts",
-      "definition": "trial courts of the U",
+      "subject": "United States Department of Commerce",
+      "definition": "executive department of the U",
       "predicate": "is_a",
-      "source_page": "U.S. District Court",
-      "evidence_text": "The United States district courts are the trial courts of the U.SU.S\u0000 federal judiciary.",
+      "source_page": "United States Department of Commerce",
+      "evidence_text": "The United States Department of Commerce (DOC) is an executive department of the U.SU.S\u0000 federal government.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "stable",
@@ -974,7 +1694,47 @@
       "extraction_pattern": "lead_definition_v2",
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "The United States district courts are the trial courts of the U.SU.S\u0000 federal judiciary.",
+      "evidence_span": "The United States Department of Commerce (DOC) is an executive department of the U.SU.S\u0000 federal government.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States Virgin Islands, officially the Virgin Islands of the United States,",
+      "definition": "Caribbean insular  territory of the United States",
+      "predicate": "is_a",
+      "source_page": "United States Virgin Islands",
+      "evidence_text": "The United States Virgin Islands, officially the Virgin Islands of the United States, are a Caribbean insular  territory of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States Virgin Islands, officially the Virgin Islands of the United States, are a Caribbean insular  territory of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States presidential line of succession",
+      "definition": "order in",
+      "predicate": "is_a",
+      "source_page": "United States presidential line of succession",
+      "evidence_text": "The United States presidential line of succession is the order in which the vice president of the United States and other officers of the U.SU.S\u0000 federal government assume the powers and duties of the U.SU.S\u0000 presidency (or the office itself, in the instance of succession by the vice president) upon an elected president's death, resignation, removal from office, or incapacity.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The United States presidential line of succession is the order in which the vice president of the United States and other officers of the U.SU.S\u0000 federal government assume the powers and duties of the U.SU.S\u0000 presidency (or the office itself, in the instance of succession by the vice president) upon an elected president's death, resignation, removal from office, or incapacity.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
@@ -982,15 +1742,79 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Blue Origin",
+      "predicate": "founded_by",
+      "object": "Lei Jun",
+      "source_page": "Amazon China",
+      "evidence_text": "Origin Joyo.com was founded by Lei Jun, Chinese entrepreneur and owner of Kingsoft, in May 2000.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:b673678f:a33d2647",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Jiangxi",
+      "predicate": "founded_by",
+      "object": "Zhu De",
+      "source_page": "Long March",
+      "evidence_text": "1920s–1934 23 July 1921: The Chinese Communist Party is formally founded. 1928: The CCP's Red Army is founded, concentrated in Jiangxi and Fujian. 7 November 1931: The Jiangxi–Fujian Soviet is founded by Mao Zedong and Zhu De in the capital of Ruijin, as the first member of the Chinese Soviet Republic.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0801b7c3:e41ed396",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Fujian Soviet",
+      "predicate": "founded_by",
+      "object": "Zhu De",
+      "source_page": "Long March",
+      "evidence_text": "1920s–1934 23 July 1921: The Chinese Communist Party is formally founded. 1928: The CCP's Red Army is founded, concentrated in Jiangxi and Fujian. 7 November 1931: The Jiangxi–Fujian Soviet is founded by Mao Zedong and Zhu De in the capital of Ruijin, as the first member of the Chinese Soviet Republic.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:0801b7c3:a3c9a748",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The Raytheon Company",
       "predicate": "founded_by",
       "object": "Laurence K",
-      "source_page": "Raytheon Technologies Corporation",
+      "source_page": "Raytheon Technologies",
       "evidence_text": "The Raytheon Company was founded in 1922 in Cambridge, Massachusetts, by Laurence K.",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:3538924e:94934607",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The New York Review",
+      "predicate": "founded_by",
+      "object": "Robert B",
+      "source_page": "The New York Review of Books",
+      "evidence_text": "Early years The New York Review was founded by Robert B.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2a974dc1:61f22648",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "founded_by_truncated_object"

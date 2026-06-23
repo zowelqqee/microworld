@@ -144,10 +144,82 @@
       "snapshot_revision_id": 1359848574,
       "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-243-overlay-001",
+      "snapshot_candidate_id": "snap-612-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Boca Chica",
+      "predicate": "developed_by",
+      "object": "Boca Chica",
+      "source_page": "Boca Chica",
+      "evidence_text": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Boca Chica",
+      "predicate": "develops",
+      "object": "Boca Chica",
+      "source_page": "Boca Chica",
+      "evidence_text": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Airspan Networks",
+      "predicate": "is_a",
+      "object": "American telecommunications company",
+      "source_page": "Airspan Networks",
+      "evidence_text": "Airspan Networks is an American telecommunications company, headquartered in Boca Raton, Florida.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:499cda4b:880ea764",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Akamai Technologies",
+      "predicate": "is_a",
+      "object": "American company",
+      "source_page": "Akamai Technologies",
+      "evidence_text": "Akamai Technologies, IncInc\u0000 is an American company specializing in content delivery network (CDN), cybersecurity, DDoS mitigation, and cloud services.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:d35bcdf3:fcf15898",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
   },
   {
     "item": {
@@ -196,6 +268,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "produces",
+      "object": "Bloomberg News",
+      "source_page": "BBC News",
+      "evidence_text": "Radio BBC Radio News produces bulletins for the BBC's national radio stations and provides content for local BBC radio stations via the General News Service (GNS), a BBC-internal news distribution service.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:446c8efa:ee77acff",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -267,7 +355,7 @@
       "subject": "Internet service provider",
       "predicate": "owned_by",
       "object": "Michael Bloomberg",
-      "source_page": "Bloomberg L.P",
+      "source_page": "Bloomberg Innovation Index",
       "evidence_text": "Bloomberg PolarLake In May 2012, Bloomberg L.PL.P\u0000 acquired Dublin-based software provider PolarLake and launched a new enterprise data management service to help companies acquire, manage, and distribute data across its organizations.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -296,6 +384,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Bonnier AB",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Bonnier AB",
+      "evidence_text": "Bonnier AB (Swedish pronunciation: [ˈbʊ̂nːiːr]), also the Bonnier Group, is a privately held Swedish media group of 175 companies operating in 15 countries.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:fb02d9f0:e4fd9c4f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Bloomberg News",
       "predicate": "operates",
       "object": "Bloomberg News",
@@ -312,18 +416,18 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "Bloomberg News",
-      "predicate": "produces",
-      "object": "Bloomberg News",
-      "source_page": "CBS News",
-      "evidence_text": "CBS News Radio produces the oldest daily news show on radio or television, the CBS World News Roundup, which first aired in 1938; in 2018, it celebrated its 80th anniversary.",
+      "subject": "The Douglas Aircraft Company",
+      "predicate": "is_a",
+      "object": "American aerospace and defense company",
+      "source_page": "Douglas Aircraft Company",
+      "evidence_text": "The Douglas Aircraft Company was an American aerospace and defense company that was based in Southern California.",
       "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:2f5f7a78:ee77acff",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:1a7f6d8a:d5b656ee",
       "pump_source_kind": "fresh_relation"
     },
-    "reason": "self_relation"
+    "reason": "is_a_object_truncated_nationality"
   },
   {
     "item": {
@@ -456,6 +560,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Green New Deal",
+      "predicate": "develops",
+      "object": "Green New Deal",
+      "source_page": "Green Party of the United States",
+      "evidence_text": "Green New Deal In 2006, the Green Party developed a Green New Deal that would ultimately serve as a transitional plan to a 100% clean, renewable energy including solar and wind energy by 2030 utilizing a carbon tax, jobs guarantee, tuition-free college, single-payer healthcare and a focus on using public programs.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:ee716ce8:d7bee5b9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Oracle Corporation",
       "predicate": "is_a",
       "object": "Social media",
@@ -488,10 +608,42 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "ITP Aero",
+      "predicate": "is_a",
+      "object": "Spanish company",
+      "source_page": "ITP Aero",
+      "evidence_text": "ITP Aero is a Spanish company specialised in designing, developing, manufacturing and providing lifecycle propulsion services for aeroengines.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:73a473fa:192d557d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mars",
+      "predicate": "is_a",
+      "object": "American nonprofit organization",
+      "source_page": "Inspiration Mars",
+      "evidence_text": "Inspiration Mars Foundation was an American nonprofit organization founded by Dennis Tito that in 2013 proposed to launch a crewed mission to flyby Mars in January 2018, or 2021 if they missed the first synodic opportunity in 2018.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a389013f:5337616b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Stock exchange",
       "predicate": "is_a",
       "object": "American multinational financial services company",
-      "source_page": "Intercontinental Exchange",
+      "source_page": "Intercontinental Exchange Inc",
       "evidence_text": "Intercontinental Exchange, IncInc\u0000 (ICE) is an American multinational financial services company formed in 2000 that operates global financial exchanges and clearing houses and provides mortgage technology, data and listing services.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -507,12 +659,44 @@
       "subject": "Stock exchange",
       "predicate": "owned_by",
       "object": "Stock exchange",
-      "source_page": "Intercontinental Exchange",
+      "source_page": "Intercontinental Exchange Inc",
       "evidence_text": "2010: Climate Exchange In April 2010, ICE acquired Climate Exchange PLC for 395 million pounds ($622 million) and European Climate Exchange (ECX) as part of its purchase.",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:cc0144e3:1c996c56",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Moorish Science Temple",
+      "predicate": "is_a",
+      "object": "American organization",
+      "source_page": "Islam in the United States",
+      "evidence_text": "The Moorish Science Temple of America is an American organization founded in 1913 by Noble Drew Ali, making it the oldest Islamic organization in the United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a2ee5adf:9cf04888",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Solar power",
+      "predicate": "founded_by",
+      "object": "Solar power",
+      "source_page": "J.D. Power",
+      "evidence_text": "History JD Power was founded in 1968 by James David Power III.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:103b9f86:df17b518",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
@@ -539,7 +723,7 @@
       "subject": "LVMH",
       "predicate": "is_a",
       "object": "French multinational holding company",
-      "source_page": "Alain Chevalier",
+      "source_page": "Moet Hennessy",
       "evidence_text": "LVMH Moet Hennessy Louis Vuitton SE is a French multinational holding company and conglomerate that specializes in luxury goods and has its headquarters in Paris.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -555,7 +739,7 @@
       "subject": "LVMH",
       "predicate": "founded",
       "object": "LVMH",
-      "source_page": "Alain Chevalier",
+      "source_page": "Moet Hennessy",
       "evidence_text": "In November 2013, LVMH created the LVMH Young Fashion Designer Prize, which comes with a €300,000 grant with a year of mentoring; it was the brainchild of Delphine Arnault.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -577,6 +761,22 @@
       "risk": "low",
       "stability": "stable",
       "pump_relation_candidate_id": "spacy:83cb328c:f9ba9ad6",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Mark Allen Callahan",
+      "predicate": "is_a",
+      "object": "American information technology",
+      "source_page": "Mark Callahan",
+      "evidence_text": "Mark Allen Callahan (born May 11, 1977) is an American information technology consultant and perennial candidate.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:967cac44:01eb1e7a",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
@@ -609,6 +809,38 @@
       "risk": "low",
       "stability": "stable",
       "pump_relation_candidate_id": "spacy:e8075cbd:2dd3b4eb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The National Renaissance Party",
+      "predicate": "is_a",
+      "object": "American neo - Nazi group",
+      "source_page": "National Renaissance Party (United States)",
+      "evidence_text": "The National Renaissance Party (NRP) was an American neo-Nazi group founded in 1949 by James H.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a9baa651:79e1f924",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The National Republican Redistricting Trust",
+      "predicate": "is_a",
+      "object": "American organization",
+      "source_page": "National Republican Redistricting Trust",
+      "evidence_text": "The National Republican Redistricting Trust (NRRT) is an American organization founded to strengthen the Republican Party's influence in the 2020 redistricting cycle.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:beb803ae:b7dbc0bc",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
@@ -664,6 +896,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American company",
+      "source_page": "Orbital Sciences",
+      "evidence_text": "Orbital Sciences Corporation (commonly referred to as Orbital) was an American company specializing in the design, manufacture, and launch of small- and medium- class space and launch vehicle systems for commercial, military and other government customers.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:9538b971:7395fed5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded",
+      "object": "Economy of the United States",
+      "source_page": "Timeline of United States history",
+      "evidence_text": "The State of Texas becomes the 7th state to secede from the Union on February 1, 1861 The 7 States of South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana, and Texas create the Confederate States of America on February 4, 1861 The Territory of Colorado is organized, February 28, 1861 The Territory of Nevada is organized, March 2, 1861 The Territory of Dakota is organized, March 2, 1861 Abraham Lincoln becomes the 16th president of the United States on March 4, 1861 A rump government declares itself the Confederate Territory of Arizona on March 16, 1861 American Civil War, April 12, 1861 – May 13, 1865 Battle of Fort Sumter, April 12, 1861 – April 13, 1861 The Commonwealth of Virginia becomes the 8th state to secede from the Union on April 17, 1861 Union naval blockade of the Confederacy, April 19, 1861 – April 9, 1865 The State of Arkansas becomes the 9th state to secede from the Union on May 6, 1861 The Commonwealth of Virginia becomes the 8th state admitted to the Confederacy on May 7, 1861 The State of North Carolina becomes the 10th state to secede from the Union on May 20, 1861 The State of Arkansas becomes the 9th state admitted to the Confederacy on May 18, 1861 The State of North Carolina becomes the 10th state admitted to the Confederacy on May 21, 1861 The State of Tennessee becomes the 11th state to secede from the Union on June 8, 1861 The State of Tennessee becomes the 11th state admitted to the Confederacy on July 2, 1861 First Battle of Bull Run, July 21, 1861 A rump government claiming to represent the State of Missouri declares its secession from the Union on October 31, 1861 A rump government claiming to represent the Commonwealth of Kentucky declares its secession from the Union on November 20, 1861 The rump government of the State of Missouri becomes the 12th state admitted to the Confederacy on November 28, 1861 The rump government of the Commonwealth of Kentucky becomes the 13th state admitted to the Confederacy on December 10, 1861 The rump government of the Confederate Territory of Arizona becomes the only Confederate Territory on February 14, 1862 Battle of Shiloh, April 6, 1862 – April 7, 1862 Battle of Antietam, September 17, 1862 The Territory of Arizona is organized, February 24, 1863 The Territory of Idaho is organized, March 4, 1863 Siege of Vicksburg, May 18, 1863 – July 4, 1863 The northwestern region of the Commonwealth of Virginia is admitted to the Union as the State of West Virginia (the 35th state) on June 20, 1863 Battle of Gettysburg, July 1, 1863 – July 3, 1863 President Lincoln issues the Emancipation Proclamation on September 22, 1863 Siege of Atlanta, May 7, 1864 – September 2, 1864 The Territory of Montana is organized, May 28, 1864 The State of Nevada is admitted to the Union as the 36th state on October 31, 1864 Battle of Appomattox Courthouse, April 9, 1865 Assassination of President Abraham Lincoln in Washington, D.C., on April 14, 1865 President Abraham Lincoln dies on April 15, 1865 Andrew Johnson becomes 17th president of the United States on April 15, 1865 The Thirteenth Amendment to the United States Constitution takes effect, December 18, 1865 The State of Tennessee becomes the 1st Confederate State readmitted to the Union on July 24, 1866 The Territory of Nebraska is admitted to the Union as the State of Nebraska (the 37th state) on March 1, 1867 President Andrew Johnson is impeached by the United States House of Representatives, February 24, 1868 President Andrew Johnson is acquitted by the United States Senate, May 16, 1868 The State of Arkansas becomes the 2nd Confederate State readmitted to the Union on June 22, 1868 The State of Florida becomes the 3rd Confederate State readmitted to the Union on June 25, 1868 The State of North Carolina becomes the 4th Confederate State readmitted to the Union on July 4, 1868 The Fourteenth Amendment to the United States Constitution takes effect, July 9, 1868 The State of Louisiana becomes the 5th Confederate State readmitted to the Union on July 9, 1868 The State of South Carolina becomes the 6th Confederate State readmitted to the Union on July 9, 1868 The State of Alabama becomes the 7th Confederate State readmitted to the Union on July 13, 1868 The Territory of Wyoming is organized, July 25, 1868 Ulysses S.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:a601b22e:db74703c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Peugeot S.AS.A\u0000",
       "predicate": "is_a",
       "object": "French multinational automotive manufacturing company",
@@ -680,10 +944,58 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Palgrave Macmillan",
+      "predicate": "is_a",
+      "object": "British academic and trade publishing company",
+      "source_page": "Palgrave Macmillan",
+      "evidence_text": "Palgrave Macmillan is a British academic and trade publishing company headquartered in the London Borough of Camden.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:dce3bf9f:b7e9af2d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American film production and distribution company",
+      "source_page": "Paramount Pictures",
+      "evidence_text": "Paramount Pictures Corporation, commonly known as Paramount Pictures or simply Paramount, is an American film production and distribution company and the flagship namesake subsidiary of Paramount Skydance.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:08a6f372:a6c5d1d0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite constellation",
+      "predicate": "owned_by",
+      "object": "Planet Labs",
+      "source_page": "Planet Labs",
+      "evidence_text": "In July 2015, Planet Labs acquired BlackBridge and its RapidEye constellation.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c09f3991:bb86adbc",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Oracle Corporation",
       "predicate": "is_a",
       "object": "American multinational aerospace and defense conglomerate",
-      "source_page": "Raytheon Technologies Corporation",
+      "source_page": "Raytheon Technologies",
       "evidence_text": "RTX Corporation, formerly Raytheon Technologies Corporation, is an American multinational aerospace and defense conglomerate headquartered in Arlington, Virginia.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -699,7 +1011,7 @@
       "subject": "Internet service provider",
       "predicate": "owned_by",
       "object": "Raytheon|Websense",
-      "source_page": "Raytheon Technologies Corporation",
+      "source_page": "Raytheon Technologies",
       "evidence_text": "In January 2016, Raytheon|Websense acquired the firewall provider Stonesoft from Intel Security for an undisclosed amount and renamed itself to Forcepoint.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -776,6 +1088,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Royal Mail Group Limited",
+      "predicate": "is_a",
+      "object": "British postal service",
+      "source_page": "Royal Mail",
+      "evidence_text": "Royal Mail Group Limited, trading as Royal Mail, is a British postal service and courier company.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:ad5e59c0:722e1b98",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Social media",
       "predicate": "is_a",
       "object": "Spanish company",
@@ -808,6 +1136,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Silver Lake Technology Management",
+      "predicate": "is_a",
+      "object": "American global private equity firm",
+      "source_page": "Silver Lake Partners",
+      "evidence_text": "Silver Lake Technology Management, L.L.CL.L.C\u0000, is an American global private equity firm focused on technology and technology-enabled investments.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:078ddd09:14249676",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The South Sea Company",
       "predicate": "is_a",
       "object": "British joint - stock company",
@@ -820,6 +1164,38 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Social media",
+      "predicate": "is_a",
+      "object": "German multinational publishing company",
+      "source_page": "Springer Science",
+      "evidence_text": "Springer Science+Business Media, commonly known as Springer, is a German multinational publishing company of books, e-books and peer-reviewed journals in science, humanities, technical and medical (STM) publishing.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:cf02e267:3cc23d25",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Star Wars",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Star Wars",
+      "evidence_text": "Star Wars is an American media franchise created by George Lucas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:c3464ab1:a755af95",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
   },
   {
     "item": {
@@ -843,7 +1219,7 @@
       "subject": "TBS Holdings",
       "predicate": "is_a",
       "object": "Social media",
-      "source_page": "Tokyo Broadcasting System",
+      "source_page": "Tokyo Broadcasting",
       "evidence_text": "TBS Holdings, IncInc\u0000, (formerly Tokyo Broadcasting System Holdings, IncInc\u0000,) is a privately owned media company in Japan.",
       "trust": "overlay_candidate",
       "risk": "low",
@@ -852,6 +1228,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NASA",
+      "predicate": "owned_by",
+      "object": "NASA",
+      "source_page": "Television in the United States",
+      "evidence_text": "NASA TV, operated by NASA, provided linear feeds of content related to the United States space program and educational content from 1980 to 2024.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:10fbf2e1:1d5a46fd",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -916,6 +1308,38 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Epoch Times",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "The Epoch Times",
+      "evidence_text": "The Epoch Times is a far-right international multi-language newspaper and media company affiliated with Falun Gong, a new religious movement.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a0dcbd94:207b9725",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "subsidiary_of",
+      "object": "Bloomberg News",
+      "source_page": "The Times",
+      "evidence_text": "1785 to 1803: John Walter 1803 to 1847: John Walter, 2nd 1847 to 1894: John Walter III 1894 to 1908: Arthur Fraser Walter 1908 to 1922: Lord Northcliffe 1922 to 1966: Astor family 1966 to 1981: Roy Thomson and the International Thomson Organization 1981 to present: News UK (formerly News International, a wholly owned subsidiary of News Corp, run by Rupert Murdoch)",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:76233cc7:388396aa",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -1016,6 +1440,86 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "U.SU.S\u0000 Bancorp",
+      "predicate": "is_a",
+      "object": "American multinational banking institution",
+      "source_page": "U.S. Bancorp",
+      "evidence_text": "U.SU.S\u0000 Bancorp (stylized as us bancorp) is an American multinational banking institution headquartered in Minneapolis, Minnesota and incorporated in Delaware.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:aba3af78:ae5b09e2",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "U.S. News & World Report",
+      "evidence_text": "U.SU.S\u0000 News & World Report (USNWR, U.SU.S\u0000 NEWS) is an American media company publishing news, consumer advice, rankings, and analysis.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "rv2:7dcf6cd8:1ee45b1c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "U.SU.S\u0000",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "U.S. News & World Report",
+      "evidence_text": "U.SU.S\u0000 News & World Report (USNWR, U.SU.S\u0000 NEWS) is an American media company publishing news, consumer advice, rankings, and analysis.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:7dcf6cd8:4fcd368f",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "Japanese - owned American steel company",
+      "source_page": "United States Steel Corporation",
+      "evidence_text": "The United States Steel Corporation is a Japanese-owned American steel company based in Pittsburgh, Pennsylvania, that maintains production facilities at several additional locations in the U.SU.S\u0000 and Central Europe.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:5e6fcecb:4024ac1d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "British United Press",
+      "predicate": "founded",
+      "object": "British United Press",
+      "source_page": "United Press International",
+      "evidence_text": "British United Press In 1923, UP founded British United Press as its Canadian subsidiary with headquarters in Montreal.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:69a677ed:a6cc8454",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Commercial Crew Program",
       "predicate": "develops",
       "object": "Commercial Crew Program",
@@ -1025,6 +1529,38 @@
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:3c212723:9f554f10",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Water Resources Research Institute",
+      "predicate": "founded",
+      "object": "Water Resources Research Institute",
+      "source_page": "United States Geological Survey",
+      "evidence_text": "Water Resources Research Institute As part of the Water Resources Research Act of 1984, the State Water Resources Research Act Program created a Water Resources Research Institute (WRRI) in each state, along with Washington DC, Puerto Rico, the US Virgin Islands, and Guam.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4284e1bd:ad1e1363",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Kennedy Space Center",
+      "predicate": "operates",
+      "object": "Kennedy Space Center",
+      "source_page": "United States Geological Survey",
+      "evidence_text": "National Wildlife Health Center The USGS also operates the National Wildlife Health Center, whose mission is \"to serve the nation and its natural resources by providing sound science and technical support, and to disseminate information to promote science-based decisions affecting wildlife and ecosystem health.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4284e1bd:35e0b9c8",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
@@ -1048,6 +1584,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Riot Games",
+      "predicate": "is_a",
+      "object": "American company",
+      "source_page": "Video games in the United States",
+      "evidence_text": "Based in Los Angeles, California, Riot Games is an American company that creates video games and organizes esports competitions.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:45d879ac:410aa665",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Virgin Group Limited",
       "predicate": "is_a",
       "object": "British multinational venture capital conglomerate",
@@ -1060,6 +1612,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Monolithic Memories",
+      "predicate": "founded",
+      "object": "Monolithic Memories",
+      "source_page": "Ze'ev Drori",
+      "evidence_text": "Monolithic Memories In 1970, Drori founded Monolithic Memories, a semiconductor firm that pioneered advances in memory and logic technology.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8565471a:12c2d1c7",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -1106,6 +1674,166 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Revenue Cutter Service",
+      "predicate": "developed_by",
+      "object": "Congress",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Congress",
+      "predicate": "develops",
+      "object": "Revenue Cutter Service",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Revenue Cutter Service",
+      "predicate": "developed_by",
+      "object": "Revenue-Marine",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Revenue-Marine",
+      "predicate": "develops",
+      "object": "Revenue Cutter Service",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Revenue Cutter Service",
+      "predicate": "developed_by",
+      "object": "August",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "August",
+      "predicate": "develops",
+      "object": "Revenue Cutter Service",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Revenue Cutter Service",
+      "predicate": "developed_by",
+      "object": "Alexander Hamilton",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Alexander Hamilton",
+      "predicate": "develops",
+      "object": "Revenue Cutter Service",
+      "source_page": "United States Coast Guard",
+      "evidence_text": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Revenue Cutter Service was created by Congress as the Revenue-Marine on 4 August 1790 at the request of Alexander Hamilton, and is therefore the oldest continuously operating naval service of the United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Koch Industries",
       "predicate": "is_a",
       "object": "Privately held company",
@@ -1122,6 +1850,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Twitter",
+      "predicate": "owned_by",
+      "object": "Elon Musk",
+      "source_page": "Government Efficiency",
+      "evidence_text": "Records show that those who were workshopping the plan include: Stephanie Holmes, former Jones Day lawyer specialized in anti-DEI corporate work; Anthony Armstrong, who helped Musk acquire Twitter; Brian Bjelde, longtime SpaceX employee; Noah Peters, involved in Project 2025; and Adam Ramada, a venture capitalist turned DOGE Team lead.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:8fa05c4e:e0bb60bf",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The Algorithm",
       "predicate": "published_by",
       "object": "Jon McNeill",
@@ -1130,7 +1874,7 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:e7869870:afc55326",
+      "pump_relation_candidate_id": "spacy:a00cd7c5:afc55326",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"
@@ -1146,7 +1890,7 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:e7869870:fbc87a22",
+      "pump_relation_candidate_id": "spacy:a00cd7c5:fbc87a22",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"
@@ -1170,6 +1914,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded",
+      "object": "Revenue",
+      "source_page": "Maritime history of the United States",
+      "evidence_text": "Because of rampant smuggling, the need was immediate for strong enforcement of tariff laws, and on August 4, 1790, the United States Congress, urged on by Secretary of the Treasury Alexander Hamilton, created the Revenue-Marine, later renamed Revenue Cutter Service in 1862.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:c84affc8:126c73d9",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sutskever co",
+      "predicate": "founded",
+      "object": "Safe Superintelligence IncInc\u0000",
+      "source_page": "Ilya Sutskever",
+      "evidence_text": "In June 2024, Sutskever co-founded the company Safe Superintelligence IncInc\u0000, alongside Daniel Gross and Daniel Levy.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:699e7354:7596797d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "United States Securities and Exchange Commission",
       "predicate": "founded_by",
       "object": "Texas governor Greg Abbott",
@@ -1186,6 +1962,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "is_a",
+      "object": "Aerospace manufacturer",
+      "source_page": "Manufacturing in the United States",
+      "evidence_text": "The United States is the world's second-largest manufacturer after the People's Republic of China with a record high real output in 2024 of $2.913 trillion.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:ef420b0d:c0dc636d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Motor Trend Group",
       "predicate": "owned_by",
       "object": "Hearst Communications",
@@ -1195,6 +1987,22 @@
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:65d9ff1f:244e3e8c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "New York Magazine",
+      "predicate": "owned_by",
+      "object": "Social media",
+      "source_page": "New York (magazine)",
+      "evidence_text": "In 2026, James Murdoch’s Lupa Systems media and tech holding company acquired New York Magazine, the Vox Media Podcast Network and Vox.com, reportedly for over $300 million.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9afa62eb:c9bd1ed3",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"
@@ -1269,7 +2077,7 @@
       "subject": "Building Solutions",
       "predicate": "owned_by",
       "object": "SolarCity",
-      "source_page": "SolarCity Corporation",
+      "source_page": "Peter Rive",
       "evidence_text": "Energy efficiency evaluations and retrofits In 2010, SolarCity acquired Building Solutions, a home energy audit firm and began to offer energy efficiency evaluations and upgrades.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -1394,15 +2202,31 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
-      "subject": "X CorpCorp\u0000",
+      "subject": "xAI",
       "predicate": "owned_by",
-      "object": "xAI",
-      "source_page": "Twitter Blue",
-      "evidence_text": "In March 2025, X CorpCorp\u0000 was acquired by xAI, Musk's artificial intelligence company.",
+      "object": "Subsidiary",
+      "source_page": "X.AI Corp",
+      "evidence_text": "Subsidiary of SpaceX, restructuring and rebranding (2026–present) On February 2, 2026, SpaceX acquired xAI in an all-stock transaction that structured xAI as a wholly owned subsidiary of SpaceX.",
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:098995c8:c709961b",
+      "pump_relation_candidate_id": "spacy:aac2a135:e62baf9c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "X CorpCorp\u0000",
+      "predicate": "owned_by",
+      "object": "xAI",
+      "source_page": "X.AI Corp",
+      "evidence_text": "On March 28, 2025, xAI acquired X CorpCorp\u0000, the developer of the social media platform X.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:aac2a135:c709961b",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"

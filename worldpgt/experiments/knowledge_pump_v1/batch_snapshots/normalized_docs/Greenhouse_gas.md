@@ -1,7 +1,7 @@
 # Greenhouse gas
 
 Source: https://en.wikipedia.org/wiki/Greenhouse_gas
-Retrieved at: 2026-06-17T17:16:43Z
+Retrieved at: 2026-06-22T21:30:07Z
 Revision ID: 1340000048
 Raw text SHA256: 572f00ab0d8fcfc7146d1b893fb99d185807356ebc3c873b4990926c2166432c
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

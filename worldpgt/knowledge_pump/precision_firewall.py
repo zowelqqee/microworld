@@ -370,6 +370,30 @@ def _check_generic_relation(item: dict[str, Any]) -> tuple[str, str]:
     return "accept", ""
 
 
+def _check_event_or_date_relation(item: dict[str, Any]) -> tuple[str, str]:
+    subject, obj = item.get("subject", ""), item.get("object", "")
+    evidence = item.get("evidence_text", "")
+    if not _subject_ok(subject):
+        return "reject", "event_relation_bad_subject"
+    if not obj or len(obj.split()) > 5:
+        return "reject", "event_relation_bad_object"
+    if not _in_evidence(obj, evidence):
+        return "reject", "event_relation_object_not_in_evidence"
+    return "accept", ""
+
+
+def _check_concept_relation(item: dict[str, Any]) -> tuple[str, str]:
+    subject, obj = item.get("subject", ""), item.get("object", "")
+    evidence = item.get("evidence_text", "")
+    if not subject or not subject[0].isupper() or len(subject.split()) > 6:
+        return "reject", "concept_relation_bad_subject"
+    if not _object_phrase_ok(obj):
+        return "reject", "concept_relation_bad_object"
+    if not _in_evidence(obj, evidence):
+        return "reject", "concept_relation_object_not_in_evidence"
+    return "accept", ""
+
+
 _RELATION_HANDLERS = {
     "known_for": _check_known_for,
     "subsidiary_of": _check_subsidiary_of,
@@ -381,6 +405,12 @@ _RELATION_HANDLERS = {
     "published_by": _check_generic_relation,
     "founded": _check_founded,
     "founded_by": _check_founded,
+    "ceased_operations": _check_event_or_date_relation,
+    "construction_started": _check_event_or_date_relation,
+    "filed_for_bankruptcy": _check_event_or_date_relation,
+    "first_released": _check_event_or_date_relation,
+    "introduced": _check_event_or_date_relation,
+    "has_facility": _check_concept_relation,
     "is_a": _check_is_a,
 }
 
@@ -447,8 +477,11 @@ def _check_definition(item: dict[str, Any]) -> tuple[str, str, dict[str, Any] | 
     if not def_lead:
         return "reject", "definition_not_lead_style", None
     pattern = re.compile(
-        r"\b" + re.escape(nsubj)
-        + r"(?:\s*\([^)]*\))?\s+(?:is|was|are|were)\s+(?:a\s+|an\s+|the\s+)?"
+        r"\b(?:sir|dame|dr\.?|professor|prof\.?)?\s*"
+        + re.escape(nsubj)
+        + r"(?:\s*\([^)]*\))?"
+        + r"(?:,\s+also\s+known\s+as\s+[^,]{1,60},)?"
+        + r"\s+(?:is|was|are|were)\s+(?:a\s+|an\s+|the\s+)?"
         + re.escape(def_lead)
     )
     if not pattern.search(nev):

@@ -1,0 +1,148 @@
+# Patria (company)
+
+Source: https://en.wikipedia.org/wiki/Patria_(company)
+Retrieved at: 2026-06-22T09:56:54Z
+Revision ID: 1359655899
+Raw text SHA256: f58bf3dc7354039d361af8ea701eb8ae8b69ac5e3ebfb395468985c92a2dc5bb
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Patria Plc (Finnish: Patria Oyj, Swedish: Patria Abp) is a Finnish provider of defence, security and aviation life-cycle support services. Patria is owned 50.1% by the Finnish government and 49.9% by Norwegian defence group Kongsberg Defense & Aerospace AS.
+
+Operating model
+Patria Group's growth continued in 2024. Patria's net sales and order stock grew driven especially by vehicle programmes. A major part of operational focus has been on building production capacity for the new vehicle orders as well as developing and enhancing productivity of internal operating model. TPatria's operating model reform progressed to its final stage as the Operations unit, which is responsible for production and supply chains, adopted a new organisational and operating model on 1 January 2024.
+
+Highlights
+The Finnish Defence Forces purchased more Patria 6x6 armoured vehicles by redeeming the additional purchase option related to the agreement signed in June 2023. The agreement included a purchase option up to 70 vehicles of which the Finnish Defence Forces redeemed 41 vehicles in January and 29 vehicles in September. The ordered vehicles will be delivered by the end of 2025.
+Signed in January 2024, the strategic partnership agreement between Patria and the Finnish Defence Forces was updated. With the agreement, the ongoing cooperation was deepened, the quality assurance and material management procedures were specified, and the partnership management structures were updated.
+In February Patria signed two agreements to supply the Patria ARIS electronic intelligence systems (ELINT) to European NATO member countries. With the agreements, customers will have access to the latest version of a high-performance signal intelligence system tailored to the needs of the countries in question.
+Patria, DSL (part of KNDS group) and FFG announced that they are teaming up to offer the German design, production, and sustainment of variants of Patria's 6x6 armoured personnel carrier, which could replace the German FUCHS-fleet. Under the international Common Armoured Vehicles System (CAVS) programme Patria will be the prime contractor if Germany decides to procure Patria vehicles.
+In March the Swedish Defence Procurement Agency (FMV) signed a contract to buy 321 six-wheeled armoured vehicles from Patria. The contract has a value of around EUR 470 million and is one of the largest ever in Sweden for Patria. Patria has previously delivered 20 6x6 vehicles which were ordered in a separate contract signed in April 2023.
+Patria signed a contract with Kongsberg Defence & Aerospace AS (Kongsberg) for the delivery of PROTECTOR remote weapon stations to more than 300 Sweden's and Finland's Patria 6x6 vehicles within the Common Armoured Vehicle System (CAVS) programme. The contract model is very unique as supplies to multiple customers are contracted under same contract between Patria and Kongsberg. The deliveries are starting from 2025 and last into the 2030s.
+Patria and Lockheed Martin signed their second Memorandum of Agreement (MoA) for direct work within Finland's F-35 industrial participation programme. This MoA provides the contractual framework for the stand-up and qualification of a landing gear doors production line at Patria's Halli facility in Jämsä, Finland. The production line will deliver landing gear doors for the F-35 global fleet.
+
+History
+Patria's history begins in 1921 with the establishment of the Finnish Air Force Aircraft Factory at Suomenlinna. The operations begin with licensed manufacturing of the German Hansa-Brandenburg aircraft, with the total production volume between 1922 and 1926 amounting to 120 aircraft. Patria's centenary issue describes the company's history.
+During March 2016, it was announced that Norwegian defense group Kongsberg Defense & Aerospace AS had agreed terms to purchase a 49.9% stake in Patria; Walter Qvam, Kongsberg chief executive, stated that the company was keen to leverage new advantages from the deal, including Patria's 50 per cent ownership in Norwegian ammunition manufacturer Nammo. The transaction placed a total value of 283.5 million euros on Patria.
+During 2001, Patria had secured contracts to build several elements of the NHIndustries NH90 helicopter, such as the rear fuselage, rear ramp, sponsons and sliding doors; the firm also signed Memorandum of understanding to perform final assembly of both the helicopter and its engines. In March 2008, deliveries of Finland's NH90 commenced; deliveries had been delayed from an initial 2004 date thus, to minimize further delay, helicopters were first delivered to an Initial Operational Configuration (IOC-) and Nearly Operational Configuration (IOC+), to be later modified by Patria into a Final Operational Configuration (FOC). In September 2011, the Finnish Defence Forces and Patria signed an agreement to provide ballistic protection for onboard personnel across the NH90 fleet. On 18 June 2015, delivery of the final Finnish NH90 took place.
+Patria has produced components for numerous aircraft manufacturers; it has manufactured elements of the Airbus A380, the world's largest passenger airliner, as well as being a long-term supplier to the Airbus A320 family and the Embraer ERJ-145. Patria has also produced components for multiple programmes headed by the European Space Agency. During late 2004, the company was actively perusing work on Airbus' A350 XWB and A400M Atlas, as well as Boeing's 787.
+Patria also provides support and maintenance, repair, and operations (MRO) services for various aircraft. During 2009, it won a contract to modernise the Finnish Air Force's 49 BAE Systems Hawk 51/51As with CMC Electronics's Cockpit 4000 avionics suite; months later, Patria was awarded a second contract to upgrade the avionics of 18 Finnish Hawk 66s. Furthermore, it has made offers to supply and support Hawks for foreign operators, including a bid for the Polish Air Force in 2011. In March 2014, the company partnered with Swiss aerospace company RUAG to offer MRO services to McDonnell Douglas F/A-18 Hornet operators worldwide.
+
+Military equipment
+
+Vehicles
+
+Armoured vehicles
+
+Patria 6×6 (Patria XA-300), a 6×6 multi-role armoured fighting vehicle. The variants include:
+APC, an armoured personnel carrier
+HAPC, a heavy armoured personnel carrier with a remote controlled turret with small or medium calibres and anti-tank guided missiles
+CAVS NEMO, a mortar carrier
+Command vehicle
+Medical evacuation
+Patria AMV, a 8×8 multi-role armoured fighting vehicle.
+APC, an armoured personnel carrier
+KTO Rosomak, a Patria AMV produced under licence in Poland. The Rosomak exists in multiple locally developed variants. These include high roof, lengthened chassis, combat and support variants.
+Patria AMXXP, a 8×8 multi-role armoured fighting vehicle
+Standard height:
+IFV, an infantry fighting vehicle
+APC, an armoured personnel carrier
+Anti-tank vehicle
+Reconnaissance vehicle
+Armoured repair and recovery vehicle
+Fires-support (105 / 120 mm guns)
+Mortar carrier
+Ambulance
+High roof:
+Command (C4I)
+Ambulance
+Workshop vehicle
+Patria TRACKX APC, a tracked armoured personnel carrier with a crew of 2 and seat for up to 10 dismounts
+
+Indirect fire
+
+Artillery
+Patria 155 GH52 field gun
+Patria ARVE, a self-propelled howitzer, using the Patria 155 GH52 field gun on a SISU E13TP truck
+
+Mortar systems
+Patria AMOS,  a twin 120mm barrel mortar turret
+Patria NEMO, a single 120mm barrel mortar turret The variants include:
+Patria NEMO turret for vehicles (CAVS NEMO, Patria AMV, BAE AMPV, GTK Boxer)
+Patria NEMO container
+Patria NEMO Navy, a turret for naval vessels (Swedish variant, UAE variant)
+Patria TREMOS (Traditional REborn Mortar System), a light 81 or 120mm mortar system. This system is suitable for 4x4, 6x6, 8x8 and light tracked vehicles
+
+Aircraft
+Assembly and maintenance center of the P&W F135, the engine of the F-35A
+Production of 400 F-35A front fuselages
+Production of F-35A landing gear door sets
+Patria Aerostructures provides design and production of composite parts for some aircraft:
+NHIndustries NH90
+Airbus A400M
+Airbus A320
+Airbus A350F
+
+Unmanned Systems
+Patria ONE, modular FPV drone, with different types of payloads, and radio or fibre optics guidance
+Patria SKY, long-range multi-purpose quadcopter drones
+Patria GEO, a terrain-mapping drone
+
+Electronic systems
+
+Radar
+Patria MUSCL, a passive radar
+Patria WISPR, passive counter-battery radar
+
+Electronic intelligence
+Patria ARIS, an ELINT system analysing the signal environment
+Patria ARIS-E, an ESM system that intercepts, recognises, geolocates and tracks radar platforms
+Patria CRAWLR, an open source intelligence and analytics tool for cyber intelligence
+
+Communication systems
+Patria CANDL, Compact Airborne Networking Data Link (data link solution for communications requiring high reliability, such as UAS payload data and C2). It enables MUM-T operations, and is used by the Airbus SIRTAP.
+
+Data systems
+Patria TADS, Tactical Debriefing System
+Patria DOME, real-time situational awareness data
+
+Training systems
+Patria AMV PTT, Part Task Trainer
+Patria SHIFTR, a simulator with training scenarios for a vehicle crew
+Patria NEMO Training Simulator
+Patria ASW Training Target
+Patria LVC, Live, Virtual and Constructive, a training system for fighter pilots
+
+Naval systems
+
+Sea mine systems
+Patria SONAC ACS, an underwater minesweeping robot
+Patria SONAC DTS, a dual towed sonar system for anti-submarine operations
+Patria SIGMA, underwater measurement systems that capture the signature of vessels passing by (magnetic, electric, pressure and acoustic signals)
+Patria SIGMA Light, a smaller variant of the SIGMA that can be deployed with smaller boats, but with a shorter signals tracking capacity.
+Sea Mine 2000, a naval mine
+
+Military equipment formerly produced
+
+Vehicles
+
+Armoured vehicles
+Patria Pasi, a 6×6 multi-role armoured fighting vehicle
+XA-180
+XA-180
+XA-182
+XA-185
+XA-186
+XA-188
+XA-202
+XA-203
+Sisu RA-140 DS, a flail-type demining vehicle, initially produced by Sisu, then by Patria.
+
+Weapon systems
+Patria PML 127 OWS, a remote weapon station
+
+References
+
+External links
+
+Official website

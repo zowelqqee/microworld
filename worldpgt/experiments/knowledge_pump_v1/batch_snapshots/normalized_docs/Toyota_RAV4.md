@@ -1,0 +1,9 @@
+# Toyota RAV4
+
+Source: https://en.wikipedia.org/wiki/Toyota_RAV4
+Retrieved at: 2026-06-22T07:18:21Z
+Revision ID: 
+Raw text SHA256: 
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true

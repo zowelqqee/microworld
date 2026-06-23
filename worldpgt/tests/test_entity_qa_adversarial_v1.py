@@ -186,7 +186,7 @@ def test_did_spacex_found_elon_musk_audits(planner):
     decision, answer = _answer(planner, "Did SpaceX found Elon Musk?")
     assert decision == "audit"
     assert "spacex founded elon musk" not in answer.lower()
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_weak_link_leads_forbes(planner):
@@ -203,7 +203,7 @@ def test_weak_link_leads_forbes(planner):
 def test_current_stock_price_audits(planner):
     decision, answer = _answer(planner, "What is Tesla's current stock price?")
     assert decision == "audit"
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 def test_net_worth_not_permanent(planner):
@@ -256,7 +256,7 @@ def test_supported_source_qualified_answer(planner):
 def test_attack_questions_audit(planner, question):
     decision, answer = _answer(planner, question)
     assert decision == "audit", (question, answer)
-    assert "cannot answer" in answer.lower()
+    assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
 
 
 @pytest.mark.parametrize("question", [

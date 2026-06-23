@@ -11,6 +11,7 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 import re
+from typing import Optional
 
 from worldpgt.entity_qa.types import SemanticQuery
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
@@ -50,6 +51,24 @@ _INTERSECTION_RE = re.compile(
     r"\b(?:have\s+in\s+common|in\s+common|share|common\s+between)\b",
     re.IGNORECASE,
 )
+# ── Open synthesis (layer 3) ──────────────────────────────────────────────
+# Open-ended "tell me everything you know" style questions. These intentionally
+# do NOT name a single relation_intent: the synthesis layer gathers *all* facts
+# about the entity rather than answering one slot. "Tell me who X is" stays a
+# definition (handled below), so the alternation here excludes "who".
+_OPEN_QUERY_RE = re.compile(
+    r"^(?:"
+    r"tell\s+me\s+(?:about|everything\s+about|more\s+about|all\s+about)\s+(?P<a>.+?)|"
+    r"what\s+(?:do|can)\s+you\s+(?:know|tell\s+me)\s+about\s+(?P<b>.+?)|"
+    r"what\s+can\s+you\s+tell\s+me\s+about\s+(?P<c>.+?)|"
+    r"(?:describe|summari[sz]e)\s+(?P<d>.+?)|"
+    r"give\s+me\s+(?:an?\s+)?overview\s+of\s+(?P<e>.+?)|"
+    r"what\s+does\s+(?P<f>.+?)\s+do|"
+    r"how\s+(?:does|do)\s+(?P<g>.+?)\s+(?:work|works|operate|operates|function|functions)"
+    r")[\?\.]?$",
+    re.IGNORECASE,
+)
+
 _SUBJECT_WH_RE = re.compile(r"^(?:who|which|what)\b", re.IGNORECASE)
 _PASSIVE_BY_RE = re.compile(r"\b(?:by|belong\s+to|belongs\s+to)\b", re.IGNORECASE)
 
@@ -76,6 +95,140 @@ _ACTIVE_LEADER_RE = re.compile(r"^(?:who|which\s+person)\s+(?:leads?|runs?|heads
 _ACTIVE_RELATION_SUBJECT_RE = re.compile(
     r"^(?:who|which\s+.+?)\s+"
     r"(?:develops?|builds?|makes?|produces?|manufactures?|publishes?)\b",
+    re.IGNORECASE,
+)
+
+# ── Verb phrase extraction (for embedding fallback) ───────────────────────────
+
+# Lemmas that carry no relation signal — filtered before embedding lookup.
+_STOP_VERB_LEMMAS: frozenset[str] = frozenset({
+    "be", "do", "have", "will", "would", "could", "should", "may",
+    "might", "shall", "get", "go", "come", "say", "tell", "know",
+    "what", "who", "which", "how", "where", "when", "whom", "whose",
+})
+
+# Matches hyphenated compounds like "co-established", "pre-funded", "re-launched"
+_HYPHEN_COMPOUND_RE = re.compile(r'\b\w+(?:-\w+)+\b')
+
+# Noun-forming suffixes — lemmas ending in these are nominal even when spaCy
+# mislabels them as VERB (e.g. "leadership" tagged VB in predicative position).
+_NOUN_SUFFIX_RE = re.compile(
+    r'(?:ship|ment|tion|sion|ness|hood|ity|ism|ance|ence)$'
+)
+
+_NLP = None
+_NLP_LOCK = None
+
+
+def _get_spacy_nlp():
+    """Lazy-load the shared spaCy model (en_core_web_sm)."""
+    global _NLP, _NLP_LOCK
+    if _NLP_LOCK is None:
+        import threading
+        _NLP_LOCK = threading.Lock()
+    if _NLP is None:
+        with _NLP_LOCK:
+            if _NLP is None:
+                try:
+                    import spacy
+                    _NLP = spacy.load("en_core_web_sm")
+                except (ImportError, OSError):
+                    _NLP = False  # sentinel: spaCy unavailable
+    return _NLP if _NLP is not False else None
+
+
+def extract_verb_phrases(text: str) -> list[str]:
+    """Return candidate verb/phrase strings for embedding-based relation lookup.
+
+    Uses two passes:
+    1. Regex pre-pass: finds hyphenated compounds in the raw text (spaCy splits
+       "co-established" into "co" + "-" + "established" as separate tokens, losing
+       the compound). Adds each part and the full compound.
+    2. spaCy dep-parse pass: ROOT verb + prt (phrasal particles), all VERB tokens,
+       and the ROOT even when tagged NOUN (handles "What does SpaceX engineer?").
+
+    Returns a deduplicated, lower-cased list, longest candidates first.
+    """
+    seen: set[str] = set()
+    results: list[str] = []
+
+    def _add(phrase: str) -> None:
+        key = phrase.lower().strip()
+        if key and key not in seen and key not in _STOP_VERB_LEMMAS:
+            seen.add(key)
+            results.append(key)
+
+    # ── Pass 1: hyphenated compounds from raw text ────────────────────────────
+    # spaCy splits "co-established" → ["co", "-", "established"], so the
+    # hyphenated form is only recoverable from the original string.
+    for m in _HYPHEN_COMPOUND_RE.finditer(text.lower()):
+        compound = m.group(0)
+        _add(compound)
+        for part in compound.split("-"):
+            _add(part)
+
+    # ── Pass 2: spaCy dependency parse ───────────────────────────────────────
+    nlp = _get_spacy_nlp()
+    if nlp is None:
+        results.sort(key=lambda s: -len(s))
+        return results
+
+    doc = nlp(text)
+
+    def _process_tok(tok) -> None:
+        lemma = tok.lemma_.lower()
+        if lemma in _STOP_VERB_LEMMAS:
+            return
+        if _NOUN_SUFFIX_RE.search(lemma):
+            return
+        particles = [c.text.lower() for c in tok.children if c.dep_ == "prt"]
+        if particles:
+            _add(lemma + " " + particles[0])
+        _add(lemma)
+        surface = tok.text.lower()
+        if "-" in surface:
+            _add(surface)
+            for part in surface.split("-"):
+                _add(part)
+
+    def _is_misparse_subject_as_verb(tok) -> bool:
+        """Return True when spaCy mislabels a WH-question subject as a VERB ROOT."""
+        if tok.dep_ != "ROOT" or tok.pos_ != "VERB":
+            return False
+        wh_lemmas = frozenset({"who", "which", "what", "whose", "whom"})
+        has_wh = any(
+            c.dep_ in ("nsubj", "det", "nsubjpass") and c.lemma_.lower() in wh_lemmas
+            for c in tok.children
+        )
+        has_verb_dobj = any(c.dep_ == "dobj" and c.pos_ == "VERB" for c in tok.children)
+        return has_wh and has_verb_dobj
+
+    for tok in doc:
+        if tok.dep_ == "ROOT":
+            if tok.pos_ == "VERB" and not _is_misparse_subject_as_verb(tok):
+                _process_tok(tok)
+            elif tok.pos_ in ("NOUN", "PROPN") and any(
+                c.dep_ == "aux" for c in tok.children
+            ):
+                _process_tok(tok)
+
+    for tok in doc:
+        if tok.pos_ == "VERB" and tok.dep_ != "ROOT":
+            _process_tok(tok)
+
+    results.sort(key=lambda s: -len(s))
+    return results
+
+
+# "Which [NOUN] that [ENTITY] [VERB1] [VERB2] [OBJECT]?"
+# Captures: (entity_phrase, verb1, verb2, filter_object)
+# verb1 maps via relation_intent_from_text to relation_intent (e.g. founded → founded_by)
+# verb2 maps via relation_intent_from_text to filter_predicate  (e.g. develop → develops)
+_FILTERED_LOOKUP_RE = re.compile(
+    r"^which\s+\w+\s+that\s+(.+?)\s+"
+    r"(found(?:ed)?|start(?:ed)?|launch(?:ed)?|establish(?:ed)?|creat(?:ed)?|kick(?:ed)?(?:\s+off)?)\s+"
+    r"(develop(?:s)?|build(?:s)?|make(?:s)?|produce(?:s)?|manufactures?|publish(?:es)?|use(?:s)?)\s+"
+    r"(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 
@@ -169,6 +322,43 @@ def _unknown_position(question: str, relation: str | None) -> str:
     return "relation"
 
 
+_EMBEDDING_SKIP_PREFIX_RE = re.compile(
+    r"^(?:why|how|tell\s+me\s+why|explain\s+why)\b", re.IGNORECASE
+)
+
+
+def _relation_with_embedding_fallback(
+    verb_phrases: list[str],
+    confidence_out: list[float],
+) -> Optional[str]:
+    """Embedding-only relation lookup over pre-extracted verb phrases.
+
+    Caller must already have checked ``relation_intent_from_text`` (exact match)
+    and extracted verb phrases via ``extract_verb_phrases``.  This function only
+    runs the embedding similarity step.
+
+    Writes 0.8 into *confidence_out[0]* on a hit, 0.0 on a miss.
+    """
+    if not verb_phrases:
+        confidence_out[0] = 0.0
+        return None
+
+    try:
+        from worldpgt.knowledge.relation_embedding_index import get_default_index
+    except ImportError:
+        confidence_out[0] = 0.0
+        return None
+
+    index = get_default_index()
+    intent, _sim = index.find_relation_intent(verb_phrases)
+    if intent is not None:
+        confidence_out[0] = 0.8
+        return intent
+
+    confidence_out[0] = 0.0
+    return None
+
+
 def parse_semantic_query(
     question: str,
     index: EntitySurfaceIndex | None = None,
@@ -179,7 +369,58 @@ def parse_semantic_query(
     surface_index = index or default_surface_index()
     mentions = _entity_mentions(q, surface_index)
     entities = [canonical for _surface, canonical, _start, _end in mentions]
+
+    # Open synthesis: explicit "tell me about / what do you know about / how does
+    # X work" phrasings. Resolve the entity loosely — synthesis tolerates an
+    # unresolved subject and falls back to keyword overlap downstream.
+    open_match = _OPEN_QUERY_RE.match(q)
+    if open_match:
+        raw_subject = _clean(next((g for g in open_match.groups() if g), ""))
+        subject = surface_index.resolve(raw_subject)
+        if subject is None:
+            subject = entities[0] if entities else (raw_subject or None)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent=None,
+            unknown_position="relation",
+            query_type="open_synthesis",
+            confidence=0.85,
+        )
+
+    fl_match = _FILTERED_LOOKUP_RE.match(q)
+    if fl_match:
+        entity_raw = _clean(fl_match.group(1))
+        verb1     = fl_match.group(2).lower().replace(" ", "_")
+        verb2     = fl_match.group(3).lower()
+        obj       = _clean(fl_match.group(4))
+        entity_a  = surface_index.resolve(entity_raw) or entity_raw or (entities[0] if entities else None)
+        rel_intent  = relation_intent_from_text(verb1) or relation_intent_from_text(fl_match.group(2))
+        filt_pred   = relation_intent_from_text(verb2)
+        return SemanticQuery(
+            entity_a=entity_a,
+            entity_b=None,
+            relation_intent=rel_intent,
+            unknown_position="object",
+            query_type="filtered_lookup",
+            confidence=0.9,
+            filter_predicate=filt_pred,
+            filter_object=obj,
+        )
+
+    # Fast path: exact keyword match — no spaCy, no embeddings.
+    # Slow path: spaCy verb-phrase extraction + embedding similarity only when
+    # exact match returns None.
+    _relation_confidence: list[float] = [0.0]
+    _embedding_matched = False
     relation = relation_intent_from_text(q)
+    if relation is not None:
+        _relation_confidence[0] = 1.0
+    elif not _EMBEDDING_SKIP_PREFIX_RE.match(q.strip()):
+        verb_phrases = extract_verb_phrases(q)
+        relation = _relation_with_embedding_fallback(verb_phrases, _relation_confidence)
+        _embedding_matched = _relation_confidence[0] == 0.8
+
     if relation == "develops" and _PRODUCTS_MAKE_RE.search(q):
         relation = "produces"
     if relation == "manufactures" and _OPEN_MANUFACTURE_RE.search(q):
@@ -269,13 +510,14 @@ def parse_semantic_query(
 
     if relation and entities:
         unknown = _unknown_position(q, relation)
+        base_conf = 0.8 if _embedding_matched else 0.9
         return SemanticQuery(
             entity_a=entities[0],
             entity_b=entities[1] if len(entities) > 1 else None,
             relation_intent=relation,
             unknown_position=unknown,  # type: ignore[arg-type]
             query_type="inverse" if unknown == "subject" else "lookup",
-            confidence=0.9,
+            confidence=base_conf,
         )
 
     if entities:

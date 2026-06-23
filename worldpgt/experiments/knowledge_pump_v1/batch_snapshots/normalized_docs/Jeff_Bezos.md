@@ -1,9 +1,9 @@
 # Jeff Bezos
 
 Source: https://en.wikipedia.org/wiki/Jeff_Bezos
-Retrieved at: 2026-06-20T13:15:00Z
-Revision ID: 1359909615
-Raw text SHA256: ea93df35ffe3a7df197c8a9716e45b60b9ddc02780dfff224a9d44d3e0803bc0
+Retrieved at: 2026-06-23T05:40:48Z
+Revision ID: 1360298836
+Raw text SHA256: eba38880a59e871e3343700c03aae260c0915190beb1d7e1433ee6047afdf56c
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
@@ -18,6 +18,7 @@ Ted struggled with alcohol and with his finances. Jacklyn left her husband to li
 After Mike received his degree from the University of New Mexico, the family moved to Houston, Texas, so that he could begin working as an engineer for Exxon. Jeff attended River Oaks Elementary School in Houston from fourth to sixth grade. Jeff's maternal grandfather was Lawrence Preston Gise, a regional director of the U.S. Atomic Energy Commission (AEC) in Albuquerque.
 Gise retired early to his family's ranch near Cotulla, Texas, where his grandson would spend many summers in his youth and which he would later purchase and expand from 25,000 acres (10,117 ha) to 160,000 acres (64,750 ha). Jeff displayed scientific interests and technological proficiency and once rigged an electric alarm to keep his younger half-siblings out of his room. The family moved to Miami, Florida, where Jeff attended Miami Palmetto High School. In high school, he worked at McDonald's as a short-order line cook during the breakfast shift.
 Bezos attended the Student Science Training Program at the University of Florida. He was high school valedictorian, a National Merit Scholar, and a Silver Knight Award winner in 1982. In his graduation speech, Bezos spoke about the possibility of human space colonization. A local newspaper quoted him as saying that he hoped humanity would eventually move heavy industry and large populations into space while preserving Earth as "a huge national park".
+
 After graduating from high school in 1982, Bezos attended Princeton University. He initially majored in physics but later switched to electrical engineering and computer science. In 2018, during a talk at the Economic Club of Washington, D.C., Bezos revealed that, some thirty years ago, his Princeton classmate Yasantha Rajakarunanayake had defeated him in solving a mathematical problem, causing him to give up on his dreams of becoming a theoretical physicist.
 Bezos was a member of the Quadrangle Club, one of Princeton's 11 eating clubs. Additionally, he was the president of the Princeton chapter of the Students for the Exploration and Development of Space (SEDS). He had a 4.2 GPA and was elected to Phi Beta Kappa and Tau Beta Pi. Bezos graduated from Princeton in 1986 with a Bachelor of Science in Engineering (BSE), summa cum laude.
 

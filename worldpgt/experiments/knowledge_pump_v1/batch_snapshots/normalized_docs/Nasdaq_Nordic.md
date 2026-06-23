@@ -1,0 +1,76 @@
+# Nasdaq Nordic
+
+Source: https://en.wikipedia.org/wiki/Nasdaq_Nordic
+Retrieved at: 2026-06-22T09:42:04Z
+Revision ID: 1359722083
+Raw text SHA256: cecc586d9278a38b1b3ea73728601e4ce58d6cfd0f9846f7cd348c67cfd5249b
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Nasdaq Nordic is the common name for the subsidiaries of Nasdaq, Inc. that provide financial services and operate marketplaces for securities in the Nordic and Baltic regions of Europe.
+Historically, the operations were known by the company name OMX AB (Aktiebolaget Optionsmäklarna/Helsinki Stock Exchange), created in 2003 with the merger between OM AB and HEX plc. In 2015, the legal entity OMX AB was renamed Nasdaq AB, but it also operates under the name Nasdaq OMX AB. The operations have been part of Nasdaq, Inc. (formerly known as Nasdaq OMX Group) since February 2008.
+On 23 August 2023, the company formed EuroCTP as a joint venture with 13 other bourses, in an effort to provide a consolidated tape for the European Union, as part of the Capital Markets Union proposed by the European Commission.
+
+History
+
+Origins
+OM AB (Optionsmäklarna) was a futures exchange founded by Olof Stenhammar in the 1980s to introduce trading in standardized option contracts in Sweden. OM acquired the Stockholm Stock Exchange in 1998 and unsuccessfully attempted acquisition of the London Stock Exchange in 2001. During the dot-com bubble in the early 2000s, OM, together with investment bank Morgan Stanley Dean Witter, launched a virtual European stock exchange called Jiway. The project was not successful and was cancelled on 14 October 2002.
+
+Acquisition of other exchanges
+On 3 September 2003, the Helsinki Stock Exchange (HEX) merged with OM and the joint company became OM HEX. On 31 August 2004, the company name was changed to OMX. OMX then acquired the Copenhagen Stock Exchange in January 2005 for €164 million. On 19 September 2006, Iceland Stock Exchange owner Eignarhaldsfelagid Verdbrefathing (EV) announced it would be acquired by OMX in a deal valuing the company at 250 million SEK. The transaction was completed by the end of the year.
+The company took a 10% stake in Oslo Børs Holding ASA, the owner of the Oslo Stock Exchange in October 2006. As of September 2016, Nasdaq is not a major shareholder in the Oslo Stock Exchange holding company, which following a merger is currently called Oslo Børs VPS Holding ASA. Nasdaq has, however, publicly stated its interest in eventually acquiring the Oslo Stock Exchange.
+In November 2007, OMX acquired the Armenian Stock Exchange and the Central Depository of Armenia.
+
+Expansion of offerings
+In December 2005, OMX started First North, an alternative exchange for smaller companies, in Denmark. The First North exchange expanded to Stockholm in June 2006, Iceland in January 2007 and Helsinki in April 2007. The Markets Technology division of Computershare was acquired in 2006. The acquisition greatly expanded its product offerings and made its client list the largest of all trading system technology providers.
+On 2 October 2006, the group launched a virtual Nordic Stock Exchange after merging the individual lists of shares traded at its three wholly owned Nordic exchanges into a combined Nordic List. Companies listed on the Iceland Stock Exchange have also since been merged into the list. OMX also launched a pan-regional benchmark index known as the OMX Nordic 40 on the same date; however, the individual exchanges also retained their own national benchmark indices.
+
+NASDAQ takeover
+
+On 25 May 2007, American stock exchange NASDAQ agreed to buy OMX for US$3.7 billion. In August, however, Borse Dubai offered US$4 billion, prompting speculation of a bidding war. On 20 September 2007, Borse Dubai agreed to stop competing to buy OMX in return for a 20% stake and 5 percent of votes in NASDAQ, as well as NASDAQ's then-28% stake in the London Stock Exchange. In a complex transaction, Borse Dubai acquired 97.2% of OMX's outstanding shares before selling them to NASDAQ. The newly merged company was renamed the NASDAQ OMX Group upon completion of the deal on 27 February 2008.
+
+Exchanges
+
+The following exchanges, with official market names in parentheses, are operated by Nasdaq Nordic:
+
+Copenhagen Stock Exchange (Nasdaq Copenhagen)
+Stockholm Stock Exchange (Nasdaq Stockholm)
+Helsinki Stock Exchange (Nasdaq Helsinki)
+Iceland Stock Exchange (Nasdaq Iceland)
+Tallinn Stock Exchange (Nasdaq Baltic)
+Riga Stock Exchange (Nasdaq Baltic)
+Vilnius Stock Exchange (Nasdaq Baltic)
+
+Divisions
+The company's stock market activities are made up of three entities:
+
+Nordic Market (Copenhagen, Stockholm, Helsinki, Iceland)
+Baltic Market (Tallinn, Riga, Vilnius)
+First North (alternative exchange)
+
+See also
+List of stock exchanges
+List of European stock exchanges
+List of Danish companies
+List of Finnish companies
+List of Faroese companies
+List of Greenlandic companies
+List of Icelandic companies
+List of Swedish companies
+List of Ålandic companies
+Nasdaq Copenhagen
+Nasdaq Stockholm
+Nasdaq Helsinki
+Nasdaq Vilnius
+Nasdaq Riga
+Nasdaq Tallinn
+Nasdaq Iceland
+Nasdaq First North
+
+References
+
+External links
+www.nasdaq.com - Official group site
+nasdaqomxnordic.com - Official Nordic site
+nasdaqbaltic.com - Official Baltic site
+Nasdaq OMX Armenia - Official Armenian site

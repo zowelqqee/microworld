@@ -18,10 +18,102 @@
       "snapshot_revision_id": 1359301317,
       "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-414-overlay-001",
+      "snapshot_candidate_id": "snap-1082-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "United States Senate",
+      "source_page": "United States Senate Democratic Policy Committee",
+      "evidence_text": "leadership of the United States Senate, after the party leader and whip",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "temporal_class": "snapshot",
+      "as_of": "2026-06",
+      "snapshot_source_title": "United States Senate Democratic Policy Committee",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/United_States_Senate_Democratic_Policy_Committee",
+      "snapshot_retrieved_at": "2026-06-22T22:28:04Z",
+      "snapshot_revision_id": 1305529140,
+      "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-1783-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "after the party leader",
+      "source_page": "United States Senate Democratic Policy Committee",
+      "evidence_text": "leadership of the United States Senate, after the party leader and whip",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "temporal_class": "snapshot",
+      "as_of": "2026-06",
+      "snapshot_source_title": "United States Senate Democratic Policy Committee",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/United_States_Senate_Democratic_Policy_Committee",
+      "snapshot_retrieved_at": "2026-06-22T22:28:04Z",
+      "snapshot_revision_id": 1305529140,
+      "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-1783-overlay-003",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Senate Democratic Policy Committee",
+      "predicate": "leader_of",
+      "object": "whip",
+      "source_page": "United States Senate Democratic Policy Committee",
+      "evidence_text": "leadership of the United States Senate, after the party leader and whip",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "temporal_class": "snapshot",
+      "as_of": "2026-06",
+      "snapshot_source_title": "United States Senate Democratic Policy Committee",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/United_States_Senate_Democratic_Policy_Committee",
+      "snapshot_retrieved_at": "2026-06-22T22:28:04Z",
+      "snapshot_revision_id": 1305529140,
+      "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-1783-overlay-004",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Air Combat Command",
+      "predicate": "headquartered_in",
+      "object": "Langley Air Force Base",
+      "source_page": "Air Combat Command",
+      "evidence_text": "Air Combat Command is headquartered at Langley Air Force Base, Joint Base Langley–Eustis, Virginia, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Air Combat Command is headquartered at Langley Air Force Base, Joint Base Langley–Eustis, Virginia, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquarters_subject_or_clause_uncertain"
   },
   {
     "item": {

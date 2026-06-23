@@ -1,0 +1,15 @@
+{
+  "title": "Miles O'Brien",
+  "normalized_title": "Miles O'Brien",
+  "pageid": 2493118,
+  "revision_id": 1141385870,
+  "timestamp": "2023-02-24T20:22:03Z",
+  "source_url": "https://en.wikipedia.org/wiki/Miles_O%27Brien",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Miles+O%27Brien",
+  "retrieved_at": "2026-06-22T07:10:08Z",
+  "raw_text": "Miles O'Brien may refer to:\n\nMiles O'Brien (journalist) (born 1959), news journalist\nMiles M. O'Brien (1852–1910), banker and former president of the New York City Board of Education\nMiles O'Brien (Star Trek), a fictional character from Star Trek: The Next Generation and Star Trek: Deep Space Nine, played by Colm Meaney",
+  "raw_text_sha256": "01de41843b52a527a982a1ba13c7b8e5e0efe2c4700ff5d0d248f7d268ffa758",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

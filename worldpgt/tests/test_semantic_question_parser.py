@@ -27,6 +27,14 @@ def test_relation_keyword_mapping_covers_system_predicates():
         "What is Starlink a service of?": "service_of",
         "What is Falcon 9 part of?": "part_of",
         "What is Elon Musk's estimated net worth?": "estimated_net_worth",
+        "Where is Gigafactory Texas located?": "located_in",
+        "What funded SpaceX Dragon?": "funded_by",
+        "What is BYD M3 marketed as?": "marketed_as",
+        "What does Oracle Database support?": "supports",
+        "What does Oracle Database run on?": "runs_on",
+        "When was Oracle Database first released?": "first_released",
+        "What did Euronext Amsterdam merge with?": "merged_with",
+        "When did XCOR Aerospace cease operations?": "ceased_operations",
     }
     for text, expected in examples.items():
         assert relation_intent_from_text(text) == expected

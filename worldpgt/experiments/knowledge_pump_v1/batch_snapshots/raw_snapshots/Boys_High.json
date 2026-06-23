@@ -1,0 +1,15 @@
+{
+  "title": "Boys High",
+  "normalized_title": "Boys High",
+  "pageid": 41563746,
+  "revision_id": 606928428,
+  "timestamp": "2014-05-03T18:32:30Z",
+  "source_url": "https://en.wikipedia.org/wiki/Boys_High",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Boys+High",
+  "retrieved_at": "2026-06-22T06:37:08Z",
+  "raw_text": "Boys High may refer to:\n\nBoys High School (Brooklyn), Brooklyn, New York, United States\nBoys' High School & College (Allahabad, Uttar Pradesh), Allahabad, India\nPretoria Boys High School, Brooklyn, Pretoria, South Africa",
+  "raw_text_sha256": "68966991c955e78375293d0ace61730c16f61bc70b9e28f3cc9e169afbbed14a",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

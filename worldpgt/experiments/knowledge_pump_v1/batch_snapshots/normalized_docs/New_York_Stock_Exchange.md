@@ -1,8 +1,8 @@
 # New York Stock Exchange
 
 Source: https://en.wikipedia.org/wiki/New_York_Stock_Exchange
-Retrieved at: 2026-06-15T09:17:21Z
-Revision ID: 1359317364
+Retrieved at: 2026-06-22T09:18:09Z
+Revision ID: 1359615588
 Raw text SHA256: a058737616744cb4e5d66613b398920471fd28206fd0cf3e69ad8419cc3eba02
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false

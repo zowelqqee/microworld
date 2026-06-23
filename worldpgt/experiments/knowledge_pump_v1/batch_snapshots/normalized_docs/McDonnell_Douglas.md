@@ -1,7 +1,7 @@
 # McDonnell Douglas
 
 Source: https://en.wikipedia.org/wiki/McDonnell_Douglas
-Retrieved at: 2026-06-17T17:17:59Z
+Retrieved at: 2026-06-23T01:46:56Z
 Revision ID: 1359583039
 Raw text SHA256: 84c5a134500beabd298919f416a3fae811efad85333b717e288b191bd28ebb83
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

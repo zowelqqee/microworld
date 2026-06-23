@@ -1,0 +1,52 @@
+# XAI (company)
+
+Source: https://en.wikipedia.org/wiki/XAI_(company)
+Retrieved at: 2026-06-22T11:06:00Z
+Revision ID: 1359880296
+Raw text SHA256: aac2a13519a18ba64dcf0293b7976b2743ac669c25ec10cc9f180c354b5c1d3c
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+X.AI LLC, doing business as xAI, is a subsidiary of the American spaceflight company SpaceX working in the areas of artificial intelligence (AI) and social media. xAI's flagship products are the generative AI chatbot Grok and the social network X, which was acquired in March 2025. It has also constructed the Colossus supercomputer and launched a data center business. The company was going to develop a humanoid AI platform called Macrohard, which was intended for integration into a future robotic workforce across a range of applications; its current focus is developing virtual assistants. Prior to being acquired by SpaceX in February 2026, xAI's assets were part of a standalone corporation named X.AI Corp., founded by Elon Musk and 11 researchers in 2023.
+
+History
+
+Beginnings (2023–2025)
+Elon Musk founded xAI on March 9, 2023. The company's founding team of AI researchers were Jimmy Ba, Zihang Dai, Kyle Kosic, Manuel Kroiss, Ross Nordeen, Toby Pohlen, Christian Szegedy, Yuhuai Wu, Greg Yang, and Guodong Zhang, led by chief engineer Igor Babuschkin, formerly associated with Google DeepMind. Musk announced xAI on July 12, 2023.
+As of May 2026, xAI was headquartered in the San Francisco Bay Area. It was initially incorporated in Nevada as a public-benefit corporation. By May 2024, it had dropped the public-benefit status.
+As of August 2024, Musk was diverting a large number of Nvidia chips that had been ordered by Tesla, Inc. to X and xAI. On December 23, 2024, xAI raised US$6 billion in a private funding round supported by Fidelity, BlackRock, Sequoia Capital, among others, making its total funding to date over $12 billion. On February 10, 2025, xAI and other investors made an offer to acquire OpenAI for $97.4 billion. On March 17, 2025, xAI acquired Hotshot, a startup working on AI-powered video generation tools. On March 28, 2025, Musk announced that xAI acquired sister company X Corp., the developer of social media platform X (social network), which was previously acquired by Musk in October 2022. The deal, an all-stock transaction, valued X at $33 billion, with a full valuation of $45 billion when factoring in $12 billion in debt. Meanwhile, xAI itself was valued at $80 billion. Both companies were combined into a single entity called X.AI Holdings Corp.
+On July 14, 2025, United States Department of Defense announced that xAI had received a $200 million contract for AI in the military. On September 12, xAI laid off 500 data annotation workers. The division, previously the company's largest, had worked to train Grok, xAI's chatbot.
+xAI purchased a third building on December 30, 2025 to increase its training capacity to nearly 2 gigawatts of compute power. Simultaneously, xAI announced plans to expand its Colossus supercomputer to have at least 1 million graphics processing units.
+
+Subsidiary of SpaceX, restructuring and rebranding (2026–present)
+On February 2, 2026, SpaceX acquired xAI in an all-stock transaction that structured xAI as a wholly owned subsidiary of SpaceX. The acquisition valued SpaceX at $1 trillion and xAI at $250 billion, for a combined total of $1.25 trillion.
+In February 2026, following the SpaceX acquisition, xAI laid off some employees as the company was restructured into four primary development teams. Around this time, half of the company's co-founders left. In early March 2026, two more co-founders, Guodong Zhang, head of xAI's Imagine team, and Zihang Dai, left, coinciding with an audit performed by SpaceX and Tesla, leaving only Musk and one other co-founder, Ross Nordeen, who left later in the month.
+On April 10, 2026, xAI restructured its staff. Chief Financial Officer Anthony Armstrong departed the company and Michael Nicolls, vice president of SpaceX's Starlink, became xAI's president.
+On April 21, 2026, xAI announced that it struck a deal with software company Anysphere to have the right to acquire the company for $60 billion later in 2026, or to pay $10 billion for work they are doing together.
+In May 2026, Musk announced that xAI would cease to exist as a separate company, with Grok and X now being the AI division of SpaceX. In the same month, it laid off another 10 employees and restructured its Grok team.
+
+Environmental impact
+In June 2024, the Greater Memphis Chamber announced xAI was planning on building Colossus, the world's largest supercomputer, in Memphis, Tennessee. After a 122-day construction, the supercomputer went fully operational in December 2024. Local government in Memphis has voiced concerns regarding the increased usage of electricity, 150 megawatts of power at peak, and while the agreement with the city is being worked out, the company deployed 14 VoltaGrid portable methane-gas powered generators.
+Environmental advocates said that the gas-burning turbines emit large quantities of gases causing air pollution, and that xAI was operating the turbines illegally, because it did not have the necessary permits. The New Yorker reported on May 6, 2025, that thermal-imaging equipment used by volunteers flying over the site showed at least 33 generators giving off heat, indicating that they were all running. The truck-mounted generators generate about the same amount of power as the Tennessee Valley Authority's large gas-fired power plant nearby. In June 2025, the NAACP threatened to file a lawsuit. From 2020 through 2024, the Memphis metro area violated national smog standards. In 2025, the American Lung Association again gave Shelby County an "F" for smog. The predominantly African-American residents of Southeast Memphis were reported to face a risk of developing cancer at four times the national average in 2013, potentially due to pre-existing air pollution.
+In July 2025, the Shelby County Health Department granted xAI an air permit for the project. On November 26, 2025, xAI announced plans to build a solar farm near Colossus with an estimated output of 30 megawatts of electricity, which is 10% of the data center's estimated power use.
+
+Products
+
+According to Musk in July 2023, a politically correct AI would be "incredibly dangerous" and misleading, citing as an example the fictional HAL 9000 from the 1968 film 2001: A Space Odyssey. Musk instead said that xAI would be "maximally truth-seeking". Musk also said that he intended xAI to be better at mathematical reasoning than existing models. On November 4, 2023, xAI unveiled Grok, an AI chatbot that is integrated with X. xAI stated that when the bot is out of beta, it would only be available to X's Premium+ subscribers.
+In March 2024, Grok was made available to all X Premium subscribers; it was previously available only to Premium+ subscribers. On March 17, 2024, xAI released Grok-1 as open source. On March 29, 2024, Grok-1.5 was announced, with "improved reasoning capabilities" and a context length of 128,000 tokens. On April 12, 2024, Grok-1.5 Vision (Grok-1.5V) was announced. On August 14, 2024, Grok-2 was made available to X Premium subscribers. It was the first Grok model with image generation capabilities.
+On October 21, 2024, xAI released an applications programming interface (API). On December 9, 2024, xAI released a text-to-image model named Aurora. On February 17, 2025, xAI released Grok-3, which included a reflection feature. xAI also introduced a websearch function called DeepSearch. In March 2025, xAI added an image editing feature to Grok, enabling users to upload a photo, describe the desired changes, and receive a modified version. Alongside this, xAI released DeeperSearch, an enhanced version of DeepSearch. On July 9, 2025, xAI unveiled Grok-4. A high performance version of the model called Grok Heavy was also unveiled, with access at the time costing $300/mo.
+On March 28, 2025, xAI acquired X Corp., the developer of the social media platform X. The platform was then integrated within xAI and became its second main product.
+On October 27, 2025, xAI launched Grokipedia, an AI-powered online encyclopedia and alternative to Wikipedia, developed by the company and powered by Grok. Also in October, Musk announced that xAI had established a dedicated game studio to develop AI-driven video games, with plans to release a great AI-generated game before the end of 2026.
+
+Finance
+In November 2023, Musk stated that "X Corp investors will own 25% of xAI". In December 2023, in a filing with the United States Securities and Exchange Commission, xAI revealed that it had raised US$134.7 million in outside funding out of a total of up to $1 billion. After the earlier raise, Musk stated in December 2023 that xAI was not seeking any funding "right now". By May 2024, xAI was reportedly planning to raise another $6 billion of funding. Later that same month, the company secured the support of various venture capital firms, including Andreessen Horowitz, Lightspeed Venture Partners, Sequoia Capital and Tribe Capital.
+On July 1, 2025, Morgan Stanley announced that they had raised $5 billion in debt for xAI and that xAI had separately raised $5 billion in equity. The debt consists of secured notes and term loans. Morgan Stanley took no stake in the debt. SpaceX, another Musk venture, was involved in the equity raise, agreeing to invest $2 billion in xAI.
+
+Valuation
+
+Notes
+
+References
+
+External links
+Official website

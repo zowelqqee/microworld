@@ -1,0 +1,15 @@
+{
+  "title": "Atacama Desert",
+  "normalized_title": "Atacama Desert",
+  "pageid": null,
+  "revision_id": null,
+  "timestamp": "",
+  "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Atacama+Desert",
+  "retrieved_at": "2026-06-22T10:04:20Z",
+  "raw_text": "",
+  "raw_text_sha256": "",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests"
+}

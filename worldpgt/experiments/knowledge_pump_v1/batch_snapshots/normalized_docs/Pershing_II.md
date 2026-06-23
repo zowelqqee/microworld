@@ -1,0 +1,128 @@
+# Pershing II
+
+Source: https://en.wikipedia.org/wiki/Pershing_II
+Retrieved at: 2026-06-22T09:57:01Z
+Revision ID: 1352612127
+Raw text SHA256: 1724be2da74d9310e54fbce6f23bbc08c5fa672bab73c2cc7b505fc92d8060a9
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Pershing II Weapon System was a solid-fueled two-stage medium-range ballistic missile designed and built by Martin Marietta to replace the Pershing 1a Field Artillery Missile System as the United States Army's primary nuclear-capable theater-level weapon. The U.S. Army replaced the Pershing 1a with the Pershing II Weapon System in 1983, while the German Air Force retained Pershing 1a until all Pershings were eliminated in 1991. The U.S. Army Missile Command (MICOM) managed the development and improvements, while the Field Artillery Branch deployed the systems and developed tactical doctrine.
+
+Development
+Development began in 1973 for an updated Pershing. The Pershing 1a had a 400 kt warhead, which was greatly over-powered for the Quick Reaction Alert (QRA) tactical role the weapon system filled. Reducing warhead yield, however, required a significant increase in accuracy to match Pershing 1a's ability to kill hard targets like command bunkers. The contract went to Martin Marietta in 1975 with the first development launches in 1977. The first launch took place on July 22, 1982 from Launch Complex 16 at Cape Canaveral Air Force Station. Pershing II was to use the new W85 warhead with a 5 to 80 kt variable yield or an earth-penetrator W86 warhead as nuclear bunker buster. The warhead was packaged in a maneuverable reentry vehicle (MARV) with active radar guidance and would use the existing rocket motors. Requests from Israel to buy the new Pershing II were rejected in 1975.
+The Soviet Union began deployment of the RSD-10 Pioneer (NATO designation SS-20 Saber) in 1976. Since the first version of the RSD-10 had a range of 2,700 miles (4,300 km) and two warheads, the Pershing II requirement was changed to increase the range to 900 miles (1,400 km), giving the ability to reach targets in eastern Ukraine, Belarus or Lithuania. The NATO Double-Track Decision was made to deploy both the medium-range Pershing and the longer-range, but slower BGM-109G Ground Launched Cruise Missile (GLCM) to strike potential targets farther to the east. The Pershing II with the longer-range motors was initially referred to as Pershing II Extended Range (PIIXR), then reverting to Pershing II.
+Both the hard-target capability and W86 nuclear warhead were cancelled in 1980, and all production Pershing II missiles carried the W85. A concept warhead using kinetic energy penetrators for counter-airfield operations never materialized.
+
+System
+
+Technical data
+
+Launcher
+Because of SALT II agreements, no new launchers could be built, therefore the Pershing 1a M790 launchers were modified into the Pershing II M1003 launchers. The functions of the vehicle-mounted programmer test station needed for the older systems were consolidated into the Launch Control Assembly (LCA) in the Ground Integrated Electronics Unit (GIEU) on the side of the launcher. The warhead and radar sections were carried as an assembly on a pallet that rotated to mate with the main missile.
+There were two prime movers for the launcher, both with a crane used for missile assembly and a generator to provide power for the launcher and missile. The U.S. units used the M983 HEMTT with a Hiab 8001 crane and a 30 kW generator. Tactical units in Germany used the M1001 MAN tractor with an Atlas Maschinen GmbH AK4300 M5 crane and a 30 kW generator. Since the new guidance system was self-orienting, the launcher could be emplaced on any surveyed site and the missile launched within minutes.
+
+Missile
+
+Motors
+The new rocket motors were built by Hercules: To minimize airframe weight, the rocket cases were spun from Kevlar with aluminum attachment rings. The Pershing 1a cable mast was replaced by a conduit attached to each motor containing two cables. Cables internally connected from motor to motor and to the G&C. The aft end of the first stage had two tail plugs that connected to the GIEU.
+
+Reentry vehicle
+The reentry vehicle (RV) was structurally and functionally divided into three sections: the radar section (RS), the warhead section (WHS), and the guidance and control/adapter (G&C/A) section.
+
+Guidance and control/adapter
+The guidance and control/adapter (G&C/A) section consisted of two separate portions, the G&C and the adapter connected by a manufactured splice. At the forward end of the G&C there was a quick access splice for attachment to the warhead section. At the aft end, the adapter was grooved to accept the V-band that spliced the propulsion section to the G&C section. The RV separation system consisted of a linear shaped charge ring assembly bolted to the G&C section so that separation occurred just forward of the G&C manufactured splice. A protective collar on the outer surface of the adapter, mounted over the linear shaped charge, provided personnel protection during G&C/A handling operations.
+The G&C portion contained two guidance systems: a Singer-Kearfott inertial navigation system that provided guidance through the terminal phase and as primary terminal guidance system a Goodyear Aerospace active radar guidance system. Using radar maps of the target area, the Pershing II had an accuracy of 30 metres (100 ft) circular error probable. If the radar guidance failed, the inertial guidance would keep the missile on-target with a lower accuracy. The G&C also contained the Pershing Airborne Computer (PAC), the digital correlator unit (DCU) and actuators to drive the air fins.
+
+Warhead section
+
+The warhead section contained the W85 warhead, the rate gyro unit and the cables that passed from the G&C section to the RS.
+
+Radar section
+The radar section consisted of the Goodyear radar unit with the antenna enclosed in an ablative radome. The radar unit transmitted radio waves to the target area during the terminal phase, received altitude and video information and sent the detected video and altitude data to the data correlator unit (DCU) in the G&C section.
+
+The highly accurate terminal guidance technique used by the Pershing II RV was radar area correlation, using a Goodyear Aerospace active radar homing system. This technique compared live radar video return to pre-stored reference scenes of the target area and determined RV position errors with respect to its trajectory and target location. These position errors updated the inertial guidance system, which in turn sent commands to the vane control system to guide the RV to the target.
+At a predetermined altitude, the radar unit activated to provide altitude update data and begin scanning the target area. The analog radar video return was digitized into two-bit pixels by the correlator unit and was formatted into a 128 by 128 array. The target reference scene data, loaded prior to launch via the ground and missile data links, were also encoded as two-bit pixels and placed in reference memory formatted in a 256 by 256 array. The reference scene resolution necessary to correspond to the decreasing altitude of the RV was effected by placing four reference data arrays in memory, each representing a given altitude band. This correlation process was performed several times during each of four altitude bands and continued to update the inertial guidance system until just before the impact.
+If for some reason the correlator system failed to operate or if the correlation data quality was faulty the inertial guidance system continued to operate and guided the RV to the target area with inertial accuracy only.
+Goodyear also developed the Reference Scene Generation Facility, a truck-mounted shelter containing the equipment required to program the missile targeting controlled by a DEC PDP-11/70. Radar maps of target areas were stored on disk, then specific targeting data was transferred to a quarter-inch cartridge in a hardened carrier. During countdown operations, the cartridge was plugged into the launcher control panel to program the missile with targeting data.
+
+Flight
+
+Prior to launch, the missile was referenced in azimuth by its gyrocompass inertial platform. After launch, the missile followed an inertially guided trajectory until RV separation. Attitude and guidance commands during powered flight (except for roll attitude) were executed via the swivel nozzles in the two propulsion sections. Roll control was provided by two movable air vanes on the first stage during first stage flight and by the RV air vanes during second stage flight. The first stage also had two fixed air vanes for stability during first stage powered flight.
+The midcourse phase of the trajectory was initiated at RV separation and continued until the terminal phase began. At the beginning of the midcourse phase, the RV was pitched down to orient it for reentry and to reduce its radar cross-section. The midcourse attitude was then controlled by the RV vane control system during atmospheric exit and reentry, and by a reaction control system during exoatmospheric flight.
+At a predetermined altitude above the target, the terminal phase would begin. A velocity control manoeuvre (pull up, pull down) was executed under inertial guidance control to slow down the RV and achieve the proper impact velocity. The radar correlator system was activated and the radar scanned the target area. Radar return data was compared to pre-stored reference data and the resulting position fix information was used to update the inertial guidance system and generate RV steering commands. The RV was then manoeuvered to the target by the RV vane control system.
+
+Range
+The weapon had a range of 1,770 kilometres (1,100 mi).
+Soviet estimates put the system's range at 2,500 kilometres (1,600 mi) and they also believed that the missile was armed with an earth-penetrating warhead. These two errors contributed to Soviet fears of the weapon, believing it could be used to decapitate the Soviet Union. In reality, from positions in West Germany the system could not target Moscow.
+
+Deployment
+On 12 December 1979, at a special meeting of NATO Foreign and Defence Ministers in Brussels, the NATO Double-Track Decision was adopted. The ministers resolved to deploy 108 Pershing II launchers to Western Europe to replace existing Pershing 1a launchers and 464 BGM-109G Ground Launched Cruise Missiles. Separately, the German Air Force had planned to replace their 72 Pershing 1a missiles with the short-range Pershing 1b, but this never materialised. On 26 August 1987, West German Chancellor Helmut Kohl pledged to unilaterally dismantle these missiles if the United States and the Soviet Union scrapped all their INF missiles. These missiles were decommissioned by 1991 due to the Intermediate-Range Nuclear Forces Treaty.
+The first Pershing II launchers were deployed in West Germany beginning in late November 1983 and the deployment was completed in late 1985 with a total of 108 launchers. Initial Operational Status (IOS) was achieved on 15 December 1983 when A Battery, 1st Battalion, 41st Field Artillery Regiment rotated onto operational status with the Pershing II at its site in Mutlangen. The West German government announced on 13 December 1985 that the US Army 56th Field Artillery Brigade was equipped with 108 Pershing II launchers across three missile battalions stationed at Neu-Ulm, Mutlangen and Neckarsulm.
+
+Protests
+
+The deployment of Pershing II and GLCM missiles was a cause of significant protests in Europe and the US, many organized by the Campaign for Nuclear Disarmament.
+Protests against the short-range MGM-52 Lance nuclear missile began in July 1981 in Engstingen, West Germany. In October 1981, 300,000 protesters assembled in Bonn. European Nuclear Disarmament began a campaign for nuclear disarmament in 1982. The Seneca Women's Encampment for a Future of Peace and Justice was formed in 1983 to protest the deployment.
+In 1983, protesters went to court to stop the Pershing II deployment as a violation of Article 26(1) of the Basic Law for the Federal Republic of Germany, which prohibited West Germany from preparing for an offensive war. The Federal Constitutional Court rejected these claims. Again in Bonn in October 1983, as many as 500,000 people protested the deployment and a human chain was formed from the US Army headquarters in Stuttgart to the gates of Wiley Barracks in Neu-Ulm, the site of one of the Pershing battalions. Due to accessibility, the protests focused on the Mutlangen Missile Storage Area from Easter 1983 until the signing of the Intermediate-Range Nuclear Forces Treaty in 1987. On 19 April 1985, the US Army wrote to Congress that a security review conducted after the January 1985 explosion found the missiles "extremely vulnerable" to terrorist attacks and requested funds to secure the missiles in concrete sheds.
+The Plowshares movement was active in actions against the deployment. 14 July 1983, Plowshare activists entered the Avco plant in Wilmington, Massachusetts and damaged equipment related to Pershing II and MX missiles. On 4 December 1983, four Plowshare activists cut through a fence in Schwäbisch Gmünd and damaged a truck. On 22 April 1984, eight Plowshare activists associated entered the Martin Marietta Aerospace plant in Orlando, Florida where they damaged Pershing II components and a Patriot missile launcher and poured containers of their own blood on equipment. Four Plowshare activists entered the missile storage area (MSA) at Schwäbisch Gmünd, West Germany on 12 December 1986 and damaged the tractor of a Pershing II erector launcher and hung a banner over the truck.
+
+Incidents
+
+1984 rollover
+On 24 September 1984, elements of 1st Battalion, 41st Field Artillery were on a field exercise near Mutlangen. A launcher and MAN tractor were parked on the edge of a dirt road when it slid off and rolled over into deep snow. The equipment was recovered after a six-hour operation.
+
+1985 fire
+On 11 January 1985, three soldiers of C Battery, 3rd Battalion, 84th Field Artillery Regiment were killed in fire at Camp Redleg, the CAS site near Heilbronn. The fire occurred while removing a missile stage from the storage container during an assembly operation. An investigation revealed that the Kevlar rocket bottle had accumulated a triboelectric charge in the cold dry weather; as the motor was removed from the container, the electrical charge began to flow and created a hot spot that ignited the propellant. A moratorium on missile movement was enacted through late 1986, when new grounding and handling procedures were put into place. Ballistic covers were later added to the Pershing II missiles and to the Pershing 1a missiles still in use by the German Air Force.
+The fire provoked further protests against the Pershing II deployment in the name of safety. The 56th Field Artillery Command worked closely with local authorities, the press and representatives of the protest groups to keep them informed.
+
+Variants
+
+Pershing 1b was a single-stage, reduced-range version of Pershing II with the same range as the Pershing 1a. The Pershing II launcher was designed so that the cradle could be easily repositioned to handle the shorter missile airframe. The intent was to replace the German Air Force's Pershing 1a systems with Pershing 1b, since SALT II limited the range of German-owned missiles. The German government agreed to destroy its Pershing 1a systems when the U.S. and the U.S.S.R. signed the INF Treaty, thus the Pershing 1b was never deployed. The single-stage missile was used for launches from White Sands Missile Range due to range limitations.
+Pershing II Reduced Range (RR) was a follow-on concept that would have modified the launchers to hold two single-stage missiles.
+Pershing III was a proposal for a four-stage 25,000 pounds (11,000 kg) version that would have replaced the LGM-118 Peacekeeper.
+Pershing III is also a proposal for a coast-based missile system to counter the Chinese DF-21D anti-ship ballistic missile.
+
+Operators
+United States: United States Army
+
+56th Field Artillery Command, formerly 56th Artillery Brigade
+1st Battalion, 9th Field Artillery, formerly 1st Battalion, 81st Field Artillery
+2nd Battalion, 9th Field Artillery, formerly 4th Battalion, 41st Field Artillery
+4th Battalion, 9th Field Artillery, formerly 3rd Battalion, 84th Field Artillery
+214th Field Artillery Brigade
+3rd Battalion, 9th Field Artillery
+
+Elimination
+
+The Pershing systems were eliminated after the ratification of the Intermediate-Range Nuclear Forces Treaty on 27 May 1988. The missiles began to be withdrawn in October 1988 and the last of the missiles were destroyed by the static burn of their motors and subsequently crushed in May 1991 at the Longhorn Army Ammunition Plant near Caddo Lake, Texas. Although not covered by the treaty, West Germany agreed unilaterally to the removal of the Pershing 1a missiles from its inventory in 1991, and the missiles were destroyed in the United States.
+
+Legacy
+The INF treaty only covered the destruction of the launchers and rocket motors. The W-85 warheads used in the Pershing II missiles were removed, modified, and reused in the B61 nuclear bomb.
+The Orbital Sciences Storm I target missile used air vanes from the Pershing 1a. The Pershing II guidance section was re-used in the Coleman Aerospace Hera and the Orbital Sciences Corporation Storm II target missiles.
+
+Displays
+
+The INF Treaty allowed for seven inert Pershing II missiles to be retained for display purposes. One is now on display in the Smithsonian Institution's National Air and Space Museum in Washington, D.C., alongside a Soviet SS-20 missile. Another is at the Central Armed Forces Museum in Moscow, Russia, also with an SS-20. A number of inert Pershing 1 and Pershing 1a missiles are displayed in the U.S. and Germany.
+Scrap material from the Pershing II and SS-20 missiles was used in several projects. Zurab Tsereteli created a sculpture called Good Defeats Evil, a 39-foot (12 m), 40-short-ton (36,000 kg) monumental bronze statue of Saint George fighting the dragon of nuclear war, with the dragon being made from sections of the Pershing II and SS-20 missiles. The sculpture was donated to the United Nations by the Soviet Union in 1990 and is located on the grounds of the United Nations Headquarters in New York City.
+In 1991, Leonard Cheshire's World Memorial Fund for Disaster Relief sold badges of the group logo made of scrap material. The Parker Pen Company created a series of pens with a Memorial Fund badge made of scrap missile material, with half the proceeds going to the fund.
+On 4 November 1991 the Ronald Reagan Presidential Library opened in Simi Valley, California. The then five living presidents, Richard Nixon, Gerald Ford, George Bush, Jimmy Carter and Ronald Reagan were present at the opening. Parker presented them each with a black ballpoint Duofold Centennial with the Presidential seal on the crown formed from scrap Pershing and SS-20 material, and engraved signatures of the presidents. The pen was also offered in a walnut box also with the names of all five presidents and the Presidential seal.
+
+Veterans
+In 2000, a number of U.S. Army Pershing missile veterans decided to seek out their fellow veterans and to start acquiring information and artifacts on the Pershing systems. In 2004, the Pershing Professionals Association was incorporated to meet the long-term goals—to preserve, interpret and encourage interest in the history of the Pershing missile systems and the soldiers who served, and to make such information accessible to present and future generations to foster a deeper appreciation of the role that Pershing played in world history.
+Veterans of the 2nd Battalion, 4th Infantry Regiment, who had performed the security for the Pershing systems formed a subchapter known as the Pershing Tower Rats. The two German Air Force missile squadrons also formed veterans groups known as the Flugkörpergeschwader 1 eV.
+
+See also
+Long-Range Hypersonic Weapon (MRBM)
+OpFires (MRBM)
+Medium-range ballistic missile (MRBM)
+Intermediate-Range Nuclear Forces Treaty
+
+Notes
+
+References
+
+Bibliography
+
+External links
+Media related to MGM-31 Pershing at Wikimedia Commons

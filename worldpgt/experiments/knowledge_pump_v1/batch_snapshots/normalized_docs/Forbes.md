@@ -1,7 +1,7 @@
 # Forbes
 
 Source: https://en.wikipedia.org/wiki/Forbes
-Retrieved at: 2026-06-17T17:18:32Z
+Retrieved at: 2026-06-22T09:35:08Z
 Revision ID: 1358924667
 Raw text SHA256: ccb3cdbf3d496afe7d3bf59bc7ff54bd930518101f0cba6e90f02bd92e9a3bf4
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

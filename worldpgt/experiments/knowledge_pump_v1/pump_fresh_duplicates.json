@@ -1,6 +1,6 @@
 [
   {
-    "candidate_id": "snap-111-overlay-002",
+    "candidate_id": "snap-364-overlay-002",
     "source_doc_title": "Bloomberg L.P.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -14,16 +14,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Bloomberg L.P.",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Bloomberg_L.P.",
-      "snapshot_retrieved_at": "2026-06-17T20:44:30Z",
+      "snapshot_retrieved_at": "2026-06-23T05:41:04Z",
       "snapshot_revision_id": 1359475756,
       "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-111-overlay-002",
+      "snapshot_candidate_id": "snap-364-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-111-overlay-004",
+    "candidate_id": "snap-364-overlay-005",
     "source_doc_title": "Bloomberg L.P.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -37,16 +37,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Bloomberg L.P.",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Bloomberg_L.P.",
-      "snapshot_retrieved_at": "2026-06-17T20:44:30Z",
+      "snapshot_retrieved_at": "2026-06-23T05:41:04Z",
       "snapshot_revision_id": 1359475756,
       "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-111-overlay-004",
+      "snapshot_candidate_id": "snap-364-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-151-overlay-014",
+    "candidate_id": "snap-430-overlay-018",
     "source_doc_title": "Cape Canaveral Space Force Station",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -64,12 +64,35 @@
       "snapshot_revision_id": 1357790373,
       "snapshot_raw_text_sha256": "2be05b72903ea47c0b5739fa3a3d4612a5d1c2d60362a4a5169eca8a7dd4ae87",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-151-overlay-014",
+      "snapshot_candidate_id": "snap-430-overlay-018",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-178-overlay-001",
+    "candidate_id": "snap-482-overlay-006",
+    "source_doc_title": "Colonization of Mars",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_context_link",
+      "source_page": "Colonization of Mars",
+      "surface": "SpaceX",
+      "target": "SpaceX",
+      "relation": "mentioned_with",
+      "strength": "weak",
+      "trust": "weak_context_only",
+      "snapshot_source_title": "Colonization of Mars",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Colonization_of_Mars",
+      "snapshot_retrieved_at": "2026-06-22T07:12:01Z",
+      "snapshot_revision_id": 1356047913,
+      "snapshot_raw_text_sha256": "a8fa0d3531d2970d5b760b601bdf2aa49d145f8edf731bad62251956cf574e9b",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-482-overlay-006",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-484-overlay-001",
     "source_doc_title": "Commercial Crew Program",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -87,12 +110,12 @@
       "snapshot_revision_id": 1356327552,
       "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-178-overlay-001",
+      "snapshot_candidate_id": "snap-484-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-178-overlay-009",
+    "candidate_id": "snap-484-overlay-009",
     "source_doc_title": "Commercial Crew Program",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -110,12 +133,12 @@
       "snapshot_revision_id": 1356327552,
       "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-178-overlay-009",
+      "snapshot_candidate_id": "snap-484-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-241-overlay-001",
+    "candidate_id": "snap-610-overlay-002",
     "source_doc_title": "Electric car",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -133,12 +156,12 @@
       "snapshot_revision_id": 1359706682,
       "snapshot_raw_text_sha256": "d9c1edb1ae57632259835813b7c0959da37632ffeb7e6446ea9227486647e260",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-241-overlay-001",
+      "snapshot_candidate_id": "snap-610-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-378-overlay-001",
+    "candidate_id": "snap-995-overlay-001",
     "source_doc_title": "Kennedy Space Center",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -156,12 +179,12 @@
       "snapshot_revision_id": 1355591236,
       "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-378-overlay-001",
+      "snapshot_candidate_id": "snap-995-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-378-overlay-008",
+    "candidate_id": "snap-995-overlay-009",
     "source_doc_title": "Kennedy Space Center",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -179,12 +202,12 @@
       "snapshot_revision_id": 1355591236,
       "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-378-overlay-008",
+      "snapshot_candidate_id": "snap-995-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-383-overlay-001",
+    "candidate_id": "snap-1006-overlay-001",
     "source_doc_title": "LVMH",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -198,16 +221,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "LVMH",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/LVMH",
-      "snapshot_retrieved_at": "2026-06-17T17:17:20Z",
+      "snapshot_retrieved_at": "2026-06-22T10:56:38Z",
       "snapshot_revision_id": 1359170740,
       "snapshot_raw_text_sha256": "439822b29406d40d1015734cf01478cbb398eafacc7bc694539fd57b07875656",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-383-overlay-001",
+      "snapshot_candidate_id": "snap-1006-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-459-overlay-002",
+    "candidate_id": "snap-1166-overlay-002",
     "source_doc_title": "Nasdaq",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -221,16 +244,16 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Nasdaq",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Nasdaq",
-      "snapshot_retrieved_at": "2026-06-17T17:17:01Z",
-      "snapshot_revision_id": 1359846145,
+      "snapshot_retrieved_at": "2026-06-22T08:30:02Z",
+      "snapshot_revision_id": 1360517984,
       "snapshot_raw_text_sha256": "625e6517fd6cd2a8ce338a6a0bf4ba43362e99e7d26c0a5332864a553e6694f8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-459-overlay-002",
+      "snapshot_candidate_id": "snap-1166-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-508-overlay-003",
+    "candidate_id": "snap-1310-overlay-005",
     "source_doc_title": "PayPal",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -248,12 +271,12 @@
       "snapshot_revision_id": 1359647615,
       "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-508-overlay-003",
+      "snapshot_candidate_id": "snap-1310-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-508-overlay-010",
+    "candidate_id": "snap-1310-overlay-012",
     "source_doc_title": "PayPal",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -271,12 +294,12 @@
       "snapshot_revision_id": 1359647615,
       "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-508-overlay-010",
+      "snapshot_candidate_id": "snap-1310-overlay-012",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-534-overlay-012",
+    "candidate_id": "snap-1396-overlay-012",
     "source_doc_title": "Reusable launch vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -294,12 +317,12 @@
       "snapshot_revision_id": 1360129922,
       "snapshot_raw_text_sha256": "ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-534-overlay-012",
+      "snapshot_candidate_id": "snap-1396-overlay-012",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-534-overlay-013",
+    "candidate_id": "snap-1396-overlay-013",
     "source_doc_title": "Reusable launch vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -317,12 +340,12 @@
       "snapshot_revision_id": 1360129922,
       "snapshot_raw_text_sha256": "ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-534-overlay-013",
+      "snapshot_candidate_id": "snap-1396-overlay-013",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-565-overlay-015",
+    "candidate_id": "snap-1471-overlay-017",
     "source_doc_title": "Satellite Internet access",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -340,12 +363,12 @@
       "snapshot_revision_id": 1359385224,
       "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-565-overlay-015",
+      "snapshot_candidate_id": "snap-1471-overlay-017",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-565-overlay-018",
+    "candidate_id": "snap-1471-overlay-020",
     "source_doc_title": "Satellite Internet access",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -363,12 +386,12 @@
       "snapshot_revision_id": 1359385224,
       "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-565-overlay-018",
+      "snapshot_candidate_id": "snap-1471-overlay-020",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-602-overlay-004",
+    "candidate_id": "snap-1540-overlay-004",
     "source_doc_title": "Space.com",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -386,12 +409,12 @@
       "snapshot_revision_id": 1287826411,
       "snapshot_raw_text_sha256": "08466a840f0bc1a0630ce79e225963f54c1f9202cf455750420b498b48af901c",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-602-overlay-004",
+      "snapshot_candidate_id": "snap-1540-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-606-overlay-015",
+    "candidate_id": "snap-1544-overlay-015",
     "source_doc_title": "SpaceX",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -409,12 +432,12 @@
       "snapshot_revision_id": 1359822755,
       "snapshot_raw_text_sha256": "a2f6b45b5d10bd4a5a97f32a2e4f5938a86e2910574a93f8f247c381af260779",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-606-overlay-015",
+      "snapshot_candidate_id": "snap-1544-overlay-015",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-612-overlay-004",
+    "candidate_id": "snap-1550-overlay-004",
     "source_doc_title": "SpaceX Dragon 2",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -432,12 +455,12 @@
       "snapshot_revision_id": 1360178281,
       "snapshot_raw_text_sha256": "968e624f5e430d32d966f45e9e9e3b36f170a8ed084fe8e0f33cf7edf41528d8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-612-overlay-004",
+      "snapshot_candidate_id": "snap-1550-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-614-overlay-004",
+    "candidate_id": "snap-1552-overlay-004",
     "source_doc_title": "SpaceX Raptor",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -455,12 +478,12 @@
       "snapshot_revision_id": 1358679944,
       "snapshot_raw_text_sha256": "05ee62403cacbbdc32f1bb14963636192a359bc6b79d241261cbebdd8d16f27b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-614-overlay-004",
+      "snapshot_candidate_id": "snap-1552-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-625-overlay-009",
+    "candidate_id": "snap-1572-overlay-010",
     "source_doc_title": "Starlink",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -478,12 +501,12 @@
       "snapshot_revision_id": 1359590107,
       "snapshot_raw_text_sha256": "0cd6f6c38602011e7fdbc2c3e213ccbcdb127bc186050c72414cc75ac95d3e42",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-625-overlay-009",
+      "snapshot_candidate_id": "snap-1572-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-650-overlay-006",
+    "candidate_id": "snap-1618-overlay-007",
     "source_doc_title": "Tesla, Inc.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -501,12 +524,12 @@
       "snapshot_revision_id": 1359041831,
       "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-650-overlay-006",
+      "snapshot_candidate_id": "snap-1618-overlay-007",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-650-overlay-014",
+    "candidate_id": "snap-1618-overlay-015",
     "source_doc_title": "Tesla, Inc.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -524,12 +547,12 @@
       "snapshot_revision_id": 1359041831,
       "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-650-overlay-014",
+      "snapshot_candidate_id": "snap-1618-overlay-015",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-653-overlay-003",
+    "candidate_id": "snap-1621-overlay-003",
     "source_doc_title": "Tesla Energy",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -547,12 +570,12 @@
       "snapshot_revision_id": 1354226973,
       "snapshot_raw_text_sha256": "56fe78444492af8d17d6e35e478a4572380c86dcfa4adbcb78aef24867bc921f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-653-overlay-003",
+      "snapshot_candidate_id": "snap-1621-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-659-overlay-010",
+    "candidate_id": "snap-1632-overlay-011",
     "source_doc_title": "The Boring Company",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -570,12 +593,12 @@
       "snapshot_revision_id": 1359791821,
       "snapshot_raw_text_sha256": "2a982c86dfd80cce0644b4065e6c34161fdffbfa5ee582402f7653e495198eb2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-659-overlay-010",
+      "snapshot_candidate_id": "snap-1632-overlay-011",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-726-overlay-003",
+    "candidate_id": "snap-1899-overlay-005",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -593,12 +616,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-726-overlay-003",
+      "snapshot_candidate_id": "snap-1899-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-726-overlay-009",
+    "candidate_id": "snap-1899-overlay-011",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -616,12 +639,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-726-overlay-009",
+      "snapshot_candidate_id": "snap-1899-overlay-011",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-726-overlay-010",
+    "candidate_id": "snap-1899-overlay-012",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -639,12 +662,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-726-overlay-010",
+      "snapshot_candidate_id": "snap-1899-overlay-012",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-731-overlay-007",
+    "candidate_id": "snap-1909-overlay-008",
     "source_doc_title": "Zip2",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -658,16 +681,131 @@
       "trust": "weak_context_only",
       "snapshot_source_title": "Zip2",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Zip2",
-      "snapshot_retrieved_at": "2026-06-17T17:20:51Z",
-      "snapshot_revision_id": 1359656073,
+      "snapshot_retrieved_at": "2026-06-22T10:03:05Z",
+      "snapshot_revision_id": 1360090220,
       "snapshot_raw_text_sha256": "70cf7360b286b07359c1a353567adde249c80b05c31058c3f312f3975582a102",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-731-overlay-007",
+      "snapshot_candidate_id": "snap-1909-overlay-008",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06152",
+    "candidate_id": "fresh_snapshot-14698",
+    "source_doc_title": "Ares I-X",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Ares I-X",
+      "definition": "first-stage prototype",
+      "predicate": "is_a",
+      "source_page": "Ares I-X",
+      "evidence_text": "Ares I-X was the first-stage prototype and design concept demonstrator of Ares I, a launch system for human spaceflight developed by the National Aeronautics and Space Administration (NASA).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ares I-X was the first-stage prototype and design concept demonstrator of Ares I, a launch system for human spaceflight developed by the National Aeronautics and Space Administration (NASA).",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-14932",
+    "source_doc_title": "Accounting Standards Board",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Financial Reporting Council",
+      "definition": "independent regulator in the UK",
+      "predicate": "is_a",
+      "source_page": "Accounting Standards Board",
+      "evidence_text": "The Financial Reporting Council (FRC) is an independent regulator in the UK and Ireland based in London Wall in the City of London, responsible for regulating auditors, accountants and actuaries, and setting the UK's Corporate Governance and Stewardship Codes.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Financial Reporting Council (FRC) is an independent regulator in the UK and Ireland based in London Wall in the City of London, responsible for regulating auditors, accountants and actuaries, and setting the UK's Corporate Governance and Stewardship Codes.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-14938",
+    "source_doc_title": "Forbes Travel Guide",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Forbes Travel Guide",
+      "definition": "star rating service",
+      "predicate": "is_a",
+      "source_page": "Forbes Travel Guide",
+      "evidence_text": "Forbes Travel Guide (formerly known as Mobil Guide or Mobil Travel Guide) is a star rating service and online travel guide for hotels, restaurants and spas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Forbes Travel Guide (formerly known as Mobil Guide or Mobil Travel Guide) is a star rating service and online travel guide for hotels, restaurants and spas.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15001",
+    "source_doc_title": "Haynes Roadster",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Haynes Roadster",
+      "definition": "replica of a Lotus Seven home-built car",
+      "predicate": "is_a",
+      "source_page": "Haynes Roadster",
+      "evidence_text": "Haynes Roadster is a replica of a Lotus Seven home-built car, according to the book Build Your Own Sports Car: On a Budget by Chris Gibbs (ISBN 1-84425-391-0).",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Haynes Roadster is a replica of a Lotus Seven home-built car, according to the book Build Your Own Sports Car: On a Budget by Chris Gibbs (ISBN 1-84425-391-0).",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15080",
+    "source_doc_title": "John Monds",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "John Monds",
+      "definition": "American politician",
+      "predicate": "is_a",
+      "source_page": "John Monds",
+      "evidence_text": "John Monds (born June 17, 1965) is an American politician and activist.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "John Monds (born June 17, 1965) is an American politician and activist.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15086",
     "source_doc_title": "July",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -690,7 +828,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06153",
+    "candidate_id": "fresh_snapshot-15087",
     "source_doc_title": "June",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -713,7 +851,30 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06212",
+    "candidate_id": "fresh_snapshot-15106",
+    "source_doc_title": "Linda Yaccarino",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Linda Yaccarino",
+      "definition": "American business executive",
+      "predicate": "is_a",
+      "source_page": "Linda Yaccarino",
+      "evidence_text": "Linda Yaccarino (born December 21, 1963) is an American business executive.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Linda Yaccarino (born December 21, 1963) is an American business executive.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15244",
     "source_doc_title": "Oracle Rdb",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -736,7 +897,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06236",
+    "candidate_id": "fresh_snapshot-15323",
     "source_doc_title": "Rocket Science Games",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -759,7 +920,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06242",
+    "candidate_id": "fresh_snapshot-15347",
     "source_doc_title": "Royal Mail Steam Packet Company",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -782,7 +943,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06257",
+    "candidate_id": "fresh_snapshot-15376",
     "source_doc_title": "Saturn",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -805,7 +966,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-06271",
+    "candidate_id": "fresh_snapshot-15396",
     "source_doc_title": "Silicon Valley",
     "source_kind": "fresh_snapshot",
     "reason": "duplicate_existing_or_pump_delta",
@@ -828,7 +989,99 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00019",
+    "candidate_id": "fresh_snapshot-15413",
+    "source_doc_title": "Southern Africa",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Southern Africa",
+      "definition": "southernmost region of Africa",
+      "predicate": "is_a",
+      "source_page": "Southern Africa",
+      "evidence_text": "Southern Africa is the southernmost region of Africa.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Southern Africa is the southernmost region of Africa.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15426",
+    "source_doc_title": "Shuttle Challenger",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Space Shuttle Challenger",
+      "definition": "Space Shuttle orbiter",
+      "predicate": "is_a",
+      "source_page": "Shuttle Challenger",
+      "evidence_text": "Space Shuttle Challenger (OV-099) was a Space Shuttle orbiter manufactured by Rockwell International and operated by NASA.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Space Shuttle Challenger (OV-099) was a Space Shuttle orbiter manufactured by Rockwell International and operated by NASA.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15556",
+    "source_doc_title": "United States Marine Corps rank insignia",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "United States Marine Corps rank insignia",
+      "definition": "devices worn by officers in the United States Marine Corps",
+      "predicate": "is_a",
+      "source_page": "United States Marine Corps rank insignia",
+      "evidence_text": "United States Marine Corps rank insignia are the devices worn by officers in the United States Marine Corps, in order to provide distinction from other ranks.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "United States Marine Corps rank insignia are the devices worn by officers in the United States Marine Corps, in order to provide distinction from other ranks.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_snapshot-15595",
+    "source_doc_title": "Williams College",
+    "source_kind": "fresh_snapshot",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Williams College",
+      "definition": "private liberal arts college in Williamstown",
+      "predicate": "is_a",
+      "source_page": "Williams College",
+      "evidence_text": "Williams College is a private liberal arts college in Williamstown, Massachusetts, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Williams College is a private liberal arts college in Williamstown, Massachusetts, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00044",
     "source_doc_title": "Anousheh Ansari",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -847,7 +1100,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00030",
+    "candidate_id": "fresh_relation-00059",
     "source_doc_title": "Control Wheel Steering",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -866,7 +1119,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00040",
+    "candidate_id": "fresh_relation-00075",
     "source_doc_title": "Berkeley DB",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -885,7 +1138,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00043",
+    "candidate_id": "fresh_relation-00078",
     "source_doc_title": "Berkshire Hathaway",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -904,7 +1157,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00068",
+    "candidate_id": "fresh_relation-00106",
     "source_doc_title": "Blue Origin NS-18",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -923,7 +1176,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00070",
+    "candidate_id": "fresh_relation-00108",
     "source_doc_title": "Blue Origin NS-20",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -942,7 +1195,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00071",
+    "candidate_id": "fresh_relation-00109",
     "source_doc_title": "Blue Origin NS-21",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -961,7 +1214,64 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00092",
+    "candidate_id": "fresh_relation-00118",
+    "source_doc_title": "Comenity Capital Bank",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bigfoot Interactive",
+      "predicate": "owned_by",
+      "object": "Alliance Data",
+      "source_page": "Comenity Capital Bank",
+      "evidence_text": "Company acquisitions and divestitures 1998: LoyaltyOne was acquired by Alliance Data. 2002: Colloquy/Frequency Marketing was acquired by Alliance Data. 2004: Epsilon was acquired by Alliance Data. 2005: Bigfoot Interactive was acquired by Alliance Data. 2006: Abacus was acquired by Alliance Data's Epsilon from DoubleClick. 2008: Heartland Payment Systems acquired Alliance Data's Network Services business. 2008: Vertex acquired Alliance Data’s Utility Services business. 2011: Aspen Marketing Services was acquired by Alliance Data (to be a part of Epsilon). 2012: Alliance Data acquired the $475 million private label credit card portfolio of The Bon-Ton Stores, IncInc\u0000 2012: Epsilon acquires Hyper Marketing and agencies Ryan Partnership & Catapult. 2014: AD acquired Conversant Formerly known as ValueClick; Conversant specialized in the affiliate marketing business, which revolved around video and mobile channels. 2014: Alliance Data acquires BrandLoyalty. 2014: Epsilon acquires Conversant, formerly ValueClick. 2019: Alliance Data sells off Epsilon to Publicis for $4.4B. 2019: Alliance Data acquired Lon Operations IncInc\u0000, a digital payments company operating under the trademark Bread. 2020: Alliance Data closes Bread deal in December.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:645037cb:932d836f",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00119",
+    "source_doc_title": "Comenity Capital Bank",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Aspen Marketing Services",
+      "predicate": "owned_by",
+      "object": "Alliance Data",
+      "source_page": "Comenity Capital Bank",
+      "evidence_text": "Company acquisitions and divestitures 1998: LoyaltyOne was acquired by Alliance Data. 2002: Colloquy/Frequency Marketing was acquired by Alliance Data. 2004: Epsilon was acquired by Alliance Data. 2005: Bigfoot Interactive was acquired by Alliance Data. 2006: Abacus was acquired by Alliance Data's Epsilon from DoubleClick. 2008: Heartland Payment Systems acquired Alliance Data's Network Services business. 2008: Vertex acquired Alliance Data’s Utility Services business. 2011: Aspen Marketing Services was acquired by Alliance Data (to be a part of Epsilon). 2012: Alliance Data acquired the $475 million private label credit card portfolio of The Bon-Ton Stores, IncInc\u0000 2012: Epsilon acquires Hyper Marketing and agencies Ryan Partnership & Catapult. 2014: AD acquired Conversant Formerly known as ValueClick; Conversant specialized in the affiliate marketing business, which revolved around video and mobile channels. 2014: Alliance Data acquires BrandLoyalty. 2014: Epsilon acquires Conversant, formerly ValueClick. 2019: Alliance Data sells off Epsilon to Publicis for $4.4B. 2019: Alliance Data acquired Lon Operations IncInc\u0000, a digital payments company operating under the trademark Bread. 2020: Alliance Data closes Bread deal in December.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:645037cb:4d8de6d9",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00125",
+    "source_doc_title": "CBS News",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "produces",
+      "object": "Bloomberg News",
+      "source_page": "CBS News",
+      "evidence_text": "CBS News Radio produces the oldest daily news show on radio or television, the CBS World News Roundup, which first aired in 1938; in 2018, it celebrated its 80th anniversary.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2f5f7a78:ee77acff",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00154",
     "source_doc_title": "Communications Satellite",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -980,7 +1290,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00110",
+    "candidate_id": "fresh_relation-00188",
     "source_doc_title": "electric cars",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -999,7 +1309,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00139",
+    "candidate_id": "fresh_relation-00232",
     "source_doc_title": "Gigafactory New York",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1018,7 +1328,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00162",
+    "candidate_id": "fresh_relation-00276",
     "source_doc_title": "Intel Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1037,7 +1347,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00177",
+    "candidate_id": "fresh_relation-00296",
     "source_doc_title": "Jeff Bezos",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1051,12 +1361,12 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "rv2:ea93df35:ec86b3cc",
+      "pump_relation_candidate_id": "rv2:eba38880:ec86b3cc",
       "pump_source_kind": "fresh_relation"
     }
   },
   {
-    "candidate_id": "fresh_relation-00195",
+    "candidate_id": "fresh_relation-00319",
     "source_doc_title": "Land Rover",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1075,7 +1385,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00207",
+    "candidate_id": "fresh_relation-00324",
+    "source_doc_title": "History of the flags of the United States",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Civil Air Patrol",
+      "predicate": "is_a",
+      "object": "Oracle Corporation",
+      "source_page": "History of the flags of the United States",
+      "evidence_text": "Civil Air Patrol The Civil Air Patrol (CAP) is a congressionally chartered, federally supported non-profit corporation that serves as the official civilian auxiliary of the U.SU.S\u0000 Air Force.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:c6d97cb9:9eb9e2ce",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00345",
     "source_doc_title": "Lyndon Rive",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1094,7 +1423,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00209",
+    "candidate_id": "fresh_relation-00347",
     "source_doc_title": "MacKenzie Scott",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1113,7 +1442,64 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00215",
+    "candidate_id": "fresh_relation-00351",
+    "source_doc_title": "Maritime history of the United States (1776–1799)",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded",
+      "object": "Revenue",
+      "source_page": "Maritime history of the United States (1776–1799)",
+      "evidence_text": "Because of rampant smuggling, the need was immediate for strong enforcement of tariff laws, and on August 4, 1790, the United States Congress, urged on by Secretary of the Treasury Alexander Hamilton, created the Revenue-Marine, later renamed Revenue Cutter Service in 1862.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:4ece84fc:126c73d9",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00352",
+    "source_doc_title": "Maritime history of the United States (1800–1899)",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The American Federation",
+      "predicate": "founded_by",
+      "object": "Samuel Gompers",
+      "source_page": "Maritime history of the United States (1800–1899)",
+      "evidence_text": "The American Federation of Labor (AFL) was founded in 1886 by Samuel Gompers as a national federation of skilled workers' unions.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:88d71c61:799e0851",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00353",
+    "source_doc_title": "Maritime history of the United States (1900–1999)",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Merchant Marine Act",
+      "predicate": "founded",
+      "object": "United States Securities and Exchange Commission",
+      "source_page": "Maritime history of the United States (1900–1999)",
+      "evidence_text": "The Merchant Marine Act, approved on June 29, 1936, created the U.SU.S\u0000 Maritime Commission \"to further the development and maintenance of an adequate and well balanced American merchant marine, to promote the commerce of the United States, and to aid in the national defense.\" The commission realized that a trained merchant marine work force was vital to the national interest.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:2c5fb343:b565eb32",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00360",
     "source_doc_title": "Media Matters",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1132,8 +1518,8 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00244",
-    "source_doc_title": "Nasdaq Stock Market",
+    "candidate_id": "fresh_relation-00393",
+    "source_doc_title": "Nasdaq Global Select Market",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
@@ -1141,7 +1527,7 @@
       "subject": "Stock exchange",
       "predicate": "owned_by",
       "object": "Nasdaq",
-      "source_page": "Nasdaq Stock Market",
+      "source_page": "Nasdaq Global Select Market",
       "evidence_text": "The exchange platform is owned by Nasdaq, IncInc\u0000, which also owns the Nasdaq Nordic stock market network and several U.SU.S\u0000-based stock and options exchanges.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -1151,7 +1537,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00260",
+    "candidate_id": "fresh_relation-00427",
     "source_doc_title": "OpenAI Global",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1170,7 +1556,64 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00286",
+    "candidate_id": "fresh_relation-00438",
+    "source_doc_title": "Otis Worldwide",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "American company",
+      "source_page": "Otis Worldwide",
+      "evidence_text": "Otis Worldwide Corporation, doing business as its former legal name Otis Elevator Company and styled as OTIS, is an American company that develops, manufactures and markets elevators, escalators, moving walkways, and related equipment.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:34029394:7395fed5",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00440",
+    "source_doc_title": "Otis Worldwide",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United Technologies Otis",
+      "predicate": "owned_by",
+      "object": "United Technologies",
+      "source_page": "Otis Worldwide",
+      "evidence_text": "United Technologies Otis was acquired by United Technologies in 1976 and became a wholly owned subsidiary. 1977 saw the introduction of \"Elevonic\" - the successor to Autotronic - which was the first solid state, digital microprocessor-based elevator control system.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:34029394:577094ee",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00455",
+    "source_doc_title": "Paramount Skydance",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Oracle Corporation",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Paramount Skydance",
+      "evidence_text": "Paramount Skydance Corporation (doing business as Paramount) is an American multinational mass media and entertainment conglomerate.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:a4c6ccad:36202075",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00487",
     "source_doc_title": "Reusable rocket",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1189,7 +1632,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00293",
+    "candidate_id": "fresh_relation-00495",
     "source_doc_title": "Rockets",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1208,7 +1651,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00313",
+    "candidate_id": "fresh_relation-00510",
+    "source_doc_title": "Royal Holloway",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bedford College",
+      "predicate": "founded_by",
+      "object": "Elizabeth Jesser Reid",
+      "source_page": "Royal Holloway",
+      "evidence_text": "Bedford College was founded by Elizabeth Jesser Reid in 1849 as a higher education college for the education of women.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:388cadad:12ae97d5",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00534",
     "source_doc_title": "Saturn Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1227,7 +1689,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00314",
+    "candidate_id": "fresh_relation-00535",
     "source_doc_title": "Saudi Arabia",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1246,7 +1708,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00320",
+    "candidate_id": "fresh_relation-00541",
     "source_doc_title": "Sierra Nevada Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1265,8 +1727,8 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00331",
-    "source_doc_title": "SolarCity Corporation",
+    "candidate_id": "fresh_relation-00558",
+    "source_doc_title": "Peter Rive",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
     "overlay_item": {
@@ -1274,7 +1736,7 @@
       "subject": "SolarCity",
       "predicate": "owned_by",
       "object": "Tesla",
-      "source_page": "SolarCity Corporation",
+      "source_page": "Peter Rive",
       "evidence_text": "Tesla acquired SolarCity in 2016, at a cost of approximately $2.6 billion (equivalent to $3.5 billion in 2025) and reorganized its solar business into Tesla Energy.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -1284,7 +1746,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00341",
+    "candidate_id": "fresh_relation-00568",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1303,7 +1765,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00342",
+    "candidate_id": "fresh_relation-00569",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1322,7 +1784,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00343",
+    "candidate_id": "fresh_relation-00570",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1341,7 +1803,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00344",
+    "candidate_id": "fresh_relation-00571",
     "source_doc_title": "SpaceX Hawthorne",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1360,7 +1822,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00355",
+    "candidate_id": "fresh_relation-00583",
     "source_doc_title": "Spaceflight",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1379,7 +1841,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00357",
+    "candidate_id": "fresh_relation-00588",
+    "source_doc_title": "Stanford University",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Stanford University",
+      "predicate": "founded_by",
+      "object": "Jane Stanford",
+      "source_page": "Stanford University",
+      "evidence_text": "Stanford University was founded in 1885 by Leland and Jane Stanford as a tribute to the memory of their only child, Leland Stanford Jr.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:14a54732:32405d75",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00591",
     "source_doc_title": "SpaceX Starlink",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1398,7 +1879,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00358",
+    "candidate_id": "fresh_relation-00592",
     "source_doc_title": "SpaceX Starlink",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1417,7 +1898,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00374",
+    "candidate_id": "fresh_relation-00596",
+    "source_doc_title": "Structure of the United States Air Force",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Civil Air Patrol",
+      "predicate": "is_a",
+      "object": "Oracle Corporation",
+      "source_page": "Structure of the United States Air Force",
+      "evidence_text": "Civil Air Patrol (CAP) is a congressionally chartered, federally supported, non-profit corporation that serves as the official auxiliary of the USAF.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:94af2d06:9eb9e2ce",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00612",
     "source_doc_title": "Tesla, Inc",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1436,7 +1936,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00379",
+    "candidate_id": "fresh_relation-00617",
     "source_doc_title": "Tesla Energy",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1455,7 +1955,7 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00411",
+    "candidate_id": "fresh_relation-00677",
     "source_doc_title": "United Aircraft Corporation",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1474,7 +1974,45 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00427",
+    "candidate_id": "fresh_relation-00684",
+    "source_doc_title": "US Armed Forces",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded",
+      "object": "Economy of the United States",
+      "source_page": "US Armed Forces",
+      "evidence_text": "The United States Congress created the current United States Navy on 27 March 1794 and the current United States Marine Corps on 11 July 1798.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1866033f:db74703c",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00693",
+    "source_doc_title": "United States Department of Commerce",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Economy of the United States",
+      "predicate": "founded_by",
+      "object": "Economy of the United States",
+      "source_page": "United States Department of Commerce",
+      "evidence_text": "The United States Travel Service was established by the United States Secretary of Commerce on July 1, 1961, pursuant to the International Travel Act of 1961 (75 Stat. 129; 22 U.SU.S\u0000C. 2121 note) The Economic Development Administration was created in 1965.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:9e60cfde:9b9c38c5",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00716",
     "source_doc_title": "Virgin Galactic",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1493,7 +2031,26 @@
     }
   },
   {
-    "candidate_id": "fresh_relation-00442",
+    "candidate_id": "fresh_relation-00745",
+    "source_doc_title": "X.AI Corp",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "xAI",
+      "predicate": "owned_by",
+      "object": "SpaceX",
+      "source_page": "X.AI Corp",
+      "evidence_text": "Subsidiary of SpaceX, restructuring and rebranding (2026–present) On February 2, 2026, SpaceX acquired xAI in an all-stock transaction that structured xAI as a wholly owned subsidiary of SpaceX.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:aac2a135:efda86b2",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00750",
     "source_doc_title": "Twitter Blue",
     "source_kind": "fresh_relation",
     "reason": "duplicate_existing_or_pump_delta",
@@ -1508,6 +2065,63 @@
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "rv2:098995c8:efda86b2",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00751",
+    "source_doc_title": "Twitter Blue",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "X CorpCorp\u0000",
+      "predicate": "owned_by",
+      "object": "xAI",
+      "source_page": "Twitter Blue",
+      "evidence_text": "In March 2025, X CorpCorp\u0000 was acquired by xAI, Musk's artificial intelligence company.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:098995c8:c709961b",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00753",
+    "source_doc_title": "X Corp",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Twitter",
+      "predicate": "owned_by",
+      "object": "Elon Musk",
+      "source_page": "X Corp",
+      "evidence_text": "On October 27, 2022, Musk acquired Twitter for $44 billion, and subsequently became its CEO.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1c50c8f7:e0bb60bf",
+      "pump_source_kind": "fresh_relation"
+    }
+  },
+  {
+    "candidate_id": "fresh_relation-00755",
+    "source_doc_title": "Zep Solar",
+    "source_kind": "fresh_relation",
+    "reason": "duplicate_existing_or_pump_delta",
+    "overlay_item": {
+      "overlay_type": "overlay_relation",
+      "subject": "SolarCity",
+      "predicate": "owned_by",
+      "object": "Tesla",
+      "source_page": "Zep Solar",
+      "evidence_text": "Zep Solar operated as an independent business unit until SolarCity was acquired by Tesla, IncInc\u0000 in 2016, at which time Zep Solar was merged into the company's Tesla Energy subsidiary.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:0b636083:fbc87a22",
       "pump_source_kind": "fresh_relation"
     }
   }

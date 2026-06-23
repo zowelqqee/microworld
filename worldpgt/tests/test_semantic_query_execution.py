@@ -9,12 +9,12 @@ from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
 from worldpgt.assistant_surface.surface_validator import validate_answer
 
 
-def _entity(label: str) -> dict:
+def _entity(label: str, aliases: list[str] | None = None) -> dict:
     return {
         "overlay_type": "overlay_entity",
         "entity_id": f"test:{label}",
         "label": label,
-        "aliases": [],
+        "aliases": aliases or [],
         "entity_type": "organization",
     }
 
@@ -75,6 +75,23 @@ def test_comparative_intersection_answers_common_relation_and_class(tmp_path):
     assert answer.support_kind == "semi_stable_relation"
     assert "both are an aerospace company" in answer.answer_text
     assert "both develop rockets" in answer.answer_text
+    assert validate_answer(answer) == []
+
+
+def test_definition_uses_entity_alias_subject(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _entity("Sam Walton", aliases=["Samuel Moore Walton", "Walton"]),
+            _definition("Samuel Moore Walton", "American philanthropist"),
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("What is Sam Walton?")
+
+    assert answer.decision == "answer"
+    assert answer.support_kind == "stable_definition"
+    assert answer.answer_text == "Samuel Moore Walton is an American philanthropist."
     assert validate_answer(answer) == []
 
 

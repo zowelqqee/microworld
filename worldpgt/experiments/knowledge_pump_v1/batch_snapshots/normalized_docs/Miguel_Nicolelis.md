@@ -1,0 +1,57 @@
+# Miguel Nicolelis
+
+Source: https://en.wikipedia.org/wiki/Miguel_Nicolelis
+Retrieved at: 2026-06-22T07:10:05Z
+Revision ID: 1342827670
+Raw text SHA256: a97244c9e54e8fcf2e70c1fea4caaa5c6a1574779a63329086790bfe89df1eee
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Miguel Ângelo Laporta Nicolelis (Portuguese pronunciation: [miˈɡɛw ˈɐ̃ʒelu lɐˈpɔɾtɐ nikoˈlɛlis], born March 7, 1961), is a Brazilian scientist, physician and Duke School of Medicine Professor in Neuroscience at Duke University, best known for his pioneering work surrounding brain-computer interface (also known as "brain-machine interface") technology.
+
+Biography
+Nicolelis holds a medical degree from the University of São Paulo (1984), a doctorate in Sciences (General Physiology) from the University of São Paulo (1989) and a PhD in Physiology and Biophysics from Hahnemann University (now Drexel University College of Medicine). He is a full professor in the Department of Neurobiology and Co-Director of the Neuroengineering Center at Duke University (USA). Founder of the Alberto Santos Dumont Association for Research Support (AASDAP) and the Santos Dumont Institute (ISD), he proposed the use of science as an agent of social and economic transformation. Nicolelis is a Researcher at the International Institute of Neurosciences Edmond and Lily Safra (IIN-ELS) and Coordinator of the Andar de Novo Project, developed at AASDAP in São Paulo.
+He and his colleagues at Duke University implanted electrode arrays into a monkey's brain that were able to detect the monkey's motor intent and thus able to control reaching and grasping movements performed by a robotic arm. This was possible by decoding signals of hundreds of neurons recorded in volitional areas of the cerebral cortex while the monkey played with a hand-held joystick to move a shape in a video game. These signals were sent to the robot arm, which then mimicked the monkey's movements and thus controlled the game. After a while the monkey realised that thinking about moving the shape was enough and it no longer needed to move the joystick. So it let go of the joystick and controlled the game purely through thought. A system in which brain signals directly control an artificial actuator is commonly referred to as brain-computer interface ("BCI").
+On January 15, 2008, Nicolelis lab saw a monkey implanted with a new BCI successfully control a  robot walking on a treadmill in Kyoto, Japan. The monkey could see the robot, named CB, on a screen in front of him, and was rewarded for walking in sync with the robot (which was under the control of the monkey). After an hour the monkey's treadmill was turned off, but he was able to continue to direct the robot to walk normally for another few minutes, indicating that a part of the brain not sufficient to induce a motor response in the monkey had become dedicated to controlling the robot, as if it were an extension of itself.
+In 2011 Miguel Nicolelis's team at Duke placed electrodes in the brains of 11 patients with Parkinson's disease while they were undergoing separate brain surgery. The team could predict hand movements from the brain signals.
+Nicolelis is a co-founder and scientific director of the Edmond and Lily Safra International Institute for Neuroscience of Natal, a brain research facility in Brazil in 2006 and the Santos Dumont Institute built and qualified as a Social Organization in 2014.
+On August 3, 2010, Nicolelis was awarded an NIH Director's Pioneer Award to continue his research on brain-machine interface technology. On January 5, 2011, Dr. Nicolelis was appointed by Pope Benedict XVI as an ordinary member of the Pontifical Academy of Sciences. He was interviewed by Charlie Rose in 2003.
+Nicolelis is a fan of Sociedade Esportiva Palmeiras, a Brazilian football club; a football ball with Palmeiras crest can be seen at his website. He is currently working on a project that allowed paraplegic Juliano Pinto, a 29-year-old with complete paralysis of the lower trunk to deliver the kickoff at the opening game of the 2014 FIFA World Cup, in Brazil.
+
+Brain to brain
+
+In 2013, a report of research by Nicolelis and others was published which showed brain to brain communication between two rats using brain–computer interfaces. This result may demonstrate the feasibility of a biological computer consisting of a network of animal, or human, brains. Currently, researchers are divided on their views of this research. Critics state that there are flaws in the scientific methods used and that there is lack of controls. They claim that some of the scientific claims are rendered "far-fetched at best." One researcher stated the work was similar to a "poor Hollywood science fiction script." Proponents have praised this research for drawing attention to Brain to Brain Interfaces as a way of studying neural systems: "The study helps to promote the role of BMIs not only in prosthetic applications, but also as scientific tools. It's a contribution to that." Ron Frostig, a neuroscientist at the University of California, Irvine, has described this brain to brain work as "an amazing paper" and a "beautiful proof of principle" that information can be transferred from one brain to another in real time.
+
+Critiques of Neuralink
+Nicolelis's evaluation of Elon Musk's Neuralink, is that most of what Neuralink claims as "novelty" had already been performed by his lab in the early 2000s; that there are ethical concerns about how the company markets and uses this technology; and that most patients do not want to undergo surgery to recover their movements. Other researchers have raised questions about Neuralink's transparency in scientific research processes, patient safety considerations, and the potential implications for neurotechnology.
+
+The True Creator of Everything
+In August 10, 2020, the neuroscientist Nicolelis published his book entitled The True Creator of Everything: How the Human Brain Shaped the Universe as We Know It. It is the third book of a trilogy that starts with the book Muito Além do Nosso eu (Portuguese version) in 2011, and continues with Made In Macaíba published in 2016.
+In this book, Nicolelis explores the thesis that the human brain would be the center of the universe and tries to explain the history, the culture and the human civilization based on recently discovered principles regarding human brain function: The True Creator of Everything is a story about the creations of the human brain and the center position it should occupy in the cosmology of the universe.
+According to the author, the human mind works in a relative way, meaning that every movement is relative, and the mind creates its own model of reality which is constantly renewed with the information it obtains from the world. Such a theory is called by Nicolelis the "Theory of The Relativistic Brain."
+Building on his work with mathematician Ronald Cicurel, which they described in their 2015 monograph, he argues for a more central position for the human brain in other areas of scientific knowledge beyond just neuroscience. Nicolelis takes inspiration from Ernst Gombrich's "The Story of Art".
+
+Further reading
+"50 Award: Research Leaders". Scientific American. Dec 2014 [Nov 11, 2004]. p. 46. Retrieved Jun 12, 2014.
+
+Selected publications on brain-machine interfaces
+Carmena, JM; Lebedev, MA; Crist, RE; O'Doherty, JE; Santucci, DM; Dimitrov, DF; Patil, PG; Henriquez, CS; et al. (2003), "Learning to control a brain-machine interface for reaching and grasping by primates", PLOS Biology, 1 (2): 193–208, doi:10.1371/journal.pbio.0000042, PMC 261882, PMID 14624244.
+Lebedev, MA; Carmena, JM; O'Doherty, JE; Zacksenhouse, M; Henriquez, CS; Principe, JC; Nicolelis, Miguel Ângelo Laporta (2005), "Cortical ensemble adaptation to represent actuators controlled by a brain machine interface", J. Neurosci., 25 (19): 4681–93, doi:10.1523/jneurosci.4088-04.2005, PMC 6724781, PMID 15888644.
+Nicolelis, Miguel Ângelo Laporta (2003), "Brain-machine interfaces to restore motor function and probe neural circuits", Nat Rev Neurosci, 4 (5): 417–22, doi:10.1038/nrn1105, PMID 12728268, S2CID 796658.
+Nicolelis, Miguel Ângelo Laporta (March 15, 2011), Beyond Boundaries: The New Neuroscience of Connecting Brains with Machines — and How It Will Change Our Lives, Times Books, ISBN 978-0-80509052-9.
+Pais-Vieira, Miguel; Lebedev, Mikhail; Kunicki, Carolina; Wang, Jing; Nicolelis, Miguel Ângelo Laporta (February 28, 2013), "A Brain-to-Brain Interface for Real-Time Sharing of Sensorimotor Information", Scientific Reports, 3: 1319, Bibcode:2013NatSR...3.1319P, doi:10.1038/srep01319, PMC 3584574, PMID 23448946, Article no. 1319, A brain-to-brain interface (BTBI) enabled a real-time transfer of behaviorally meaningful sensorimotor information between the brains of two rats.
+Santucci, DM; Kralik, JD; Lebedev, MA; Nicolelis, Miguel Ângelo Laporta (2005), "Frontal and parietal cortical ensembles predict single-trial muscle activity during reaching movements", Eur. J. Neurosci., 22 (6): 1529–40, doi:10.1111/j.1460-9568.2005.04320.x, PMID 16190906, S2CID 31277881.
+Wessberg, J; Stambaugh, CR; JD, Kralik; Beck, PD; Laubach, M; Chapin, JK; Kim, J; Biggs, SJ; Srinivasan, MA; Nicolelis, Miguel Ângelo Laporta (2000), "Real-time prediction of hand trajectory by ensembles of cortical neurons in primates", Nature, 408 (6810): 361–65, Bibcode:2000Natur.408..361W, doi:10.1038/35042582, PMID 11099043, S2CID 795720.
+20 Years of Brain-Machine Interface. Vol. 1. 24 October 2019. p. 452.
+20 Years of Brain-Machine Interface Research. Vol. 2. 24 October 2019. p. 436.
+
+References
+
+External links
+Nicolelis Lab
+CV and awards
+Miguel Nicolelis at TED
+International Institute for Neuroscience of Natal (IINN)
+"Mindful Motion: Miguel Nicolelis and Mind-Powered Robots; and Creating Science Cities in Brazil and Beyond" (podcast), Scientific American, January 16, 2008
+Computing with Neural Ensembles (video), FR: ESPCI, Nov 2, 2011.
+"Minds and Machines – A conversation with Miguel Nicolelis", Ideas Roadshow, 2013

@@ -1,0 +1,15 @@
+{
+  "title": "Test Site",
+  "normalized_title": "Test Site",
+  "pageid": 7899884,
+  "revision_id": 1280917204,
+  "timestamp": "2025-03-17T05:03:31Z",
+  "source_url": "https://en.wikipedia.org/wiki/Test_Site",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Test+Site",
+  "retrieved_at": "2026-06-22T07:18:01Z",
+  "raw_text": "Test Site is a relational art installation, that was displayed in the turbine hall of Tate Modern in London, UK, between October 2006 and 9 April 2007. Test Site was designed by Carsten Höller, and is the seventh commission of the series of works in the turbine hall sponsored by Unilever known as \"The Unilever Series\".\nThe exhibit consisted of a series of metal slides. There is a total of five slides, two starting on the second floor, and one on each floor after that up to the 5th floor. The slides were composed of metal and fibreglass, and covered all the way around.\nVisitors could slide down the slides of the installation free, but timed entry tickets were required for all but the second floor slides.\n\n\nReferences\n\n\nExternal links\nThe Unilever Series: Carsten Höller from Tate Online",
+  "raw_text_sha256": "789f0416678c1ff4d953aa427e5b52084931da0d60c665cfede6f923234b56fc",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

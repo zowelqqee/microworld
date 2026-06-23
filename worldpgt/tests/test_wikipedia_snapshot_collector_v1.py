@@ -100,8 +100,40 @@ def test_mediawiki_client_builds_url_only_for_allowlisted_titles():
     client = MediaWikiClient(["Elon Musk"], allow_network=False)
     url = client.build_api_url("Elon Musk")
     assert "titles=Elon+Musk" in url
+    assert "links" in url
+    assert "plnamespace=0" in url
     with pytest.raises(ValueError):
         client.build_api_url("Not Allowlisted")
+
+
+def test_mediawiki_client_builds_link_continuation_url():
+    client = MediaWikiClient(["Seed Page"], allow_network=False)
+    url = client.build_links_api_url("Seed Page", {"continue": "||", "plcontinue": "1|0|Next"})
+    assert "prop=links" in url
+    assert "titles=Seed+Page" in url
+    assert "plcontinue=1%7C0%7CNext" in url
+
+
+def test_mediawiki_client_preserves_internal_links_from_response():
+    client = MediaWikiClient(["Seed Page"], allow_network=False)
+    body = json.dumps(
+        {
+            "query": {
+                "pages": [
+                    {
+                        "title": "Seed Page",
+                        "pageid": 1,
+                        "fullurl": "https://en.wikipedia.org/wiki/Seed_Page",
+                        "extract": "Seed page text.",
+                        "revisions": [{"revid": 10, "timestamp": "2026-01-01T00:00:00Z"}],
+                        "links": [{"title": "Linked Page"}, {"title": "Another Page"}],
+                    }
+                ]
+            }
+        }
+    )
+    snapshot = client._snapshot_from_response("Seed Page", client.build_api_url("Seed Page"), body)
+    assert snapshot.links == ["Linked Page", "Another Page"]
 
 
 def test_snapshot_normalizer_preserves_provenance_header():

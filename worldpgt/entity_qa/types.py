@@ -16,6 +16,8 @@ SemanticQueryType = Literal[
     "comparative",
     "is_a",
     "definition",
+    "filtered_lookup",
+    "open_synthesis",
 ]
 
 EntityQAIntent = Literal[
@@ -23,8 +25,12 @@ EntityQAIntent = Literal[
     "relation_lookup",
     "link_explanation",
     "source_fact_lookup",
+    "open_synthesis",
     "unknown_or_unsupported",
 ]
+
+# Confidence tiers used by the synthesis layer (layer 3).
+SynthesisTier = Literal["VERIFIED", "SNAPSHOT", "UNKNOWN"]
 
 EntityQADecision = Literal["answer", "audit", "no"]
 
@@ -37,6 +43,8 @@ class SemanticQuery:
     unknown_position: UnknownPosition
     query_type: SemanticQueryType
     confidence: float
+    filter_predicate: str | None = None
+    filter_object: str | None = None
 
     def to_dict(self) -> dict:
         return {
@@ -46,6 +54,8 @@ class SemanticQuery:
             "unknown_position": self.unknown_position,
             "query_type": self.query_type,
             "confidence": self.confidence,
+            "filter_predicate": self.filter_predicate,
+            "filter_object": self.filter_object,
         }
 
 
@@ -85,6 +95,83 @@ class EntityQAPlan:
     render_template: str
     render_args: dict
     confidence: float
+
+
+@dataclass
+class SynthesisFactGroup:
+    """One group of synthesized facts sharing a predicate and confidence tier.
+
+    ``kind`` records how the fact was obtained relative to the synthesized
+    subject:
+      - ``"forward_relation"``  — subject is the relation *subject*  (SpaceX develops X)
+      - ``"inverse_relation"``  — subject is the relation *object*   (X founded SpaceX)
+      - ``"snapshot"``          — a dated, source-qualified estimate (net worth)
+    ``objects`` always lists the *other* side of the relation as displayed.
+    """
+
+    kind: str
+    predicate: str
+    objects: list[str]
+    tier: str  # "VERIFIED" | "SNAPSHOT"
+    source_name: Optional[str] = None
+    as_of: Optional[str] = None
+
+    def to_dict(self) -> dict:
+        return {
+            "kind": self.kind,
+            "predicate": self.predicate,
+            "objects": list(self.objects),
+            "tier": self.tier,
+            "source_name": self.source_name,
+            "as_of": self.as_of,
+        }
+
+
+@dataclass
+class SynthesisAnswer:
+    """Structured result of synthesizing everything known about one entity.
+
+    The synthesis engine never invents facts: every clause is backed by an
+    overlay item. ``matched`` is False when no entity could be resolved (even
+    via keyword overlap), in which case the planner audits instead of answering.
+    """
+
+    subject: Optional[str]
+    matched: bool
+    match_kind: str  # "exact" | "keyword" | "none"
+    definition: Optional[str]
+    entity_type: Optional[str]
+    groups: list[SynthesisFactGroup] = field(default_factory=list)
+    unknown_notes: list[str] = field(default_factory=list)
+    candidate_entities: list[str] = field(default_factory=list)
+
+    @property
+    def verified_count(self) -> int:
+        n = 1 if self.definition else 0
+        for g in self.groups:
+            if g.tier == "VERIFIED":
+                n += len(g.objects)
+        return n
+
+    @property
+    def snapshot_count(self) -> int:
+        return sum(
+            len(g.objects) for g in self.groups if g.tier == "SNAPSHOT"
+        )
+
+    def to_dict(self) -> dict:
+        return {
+            "subject": self.subject,
+            "matched": self.matched,
+            "match_kind": self.match_kind,
+            "definition": self.definition,
+            "entity_type": self.entity_type,
+            "groups": [g.to_dict() for g in self.groups],
+            "unknown_notes": list(self.unknown_notes),
+            "candidate_entities": list(self.candidate_entities),
+            "verified_count": self.verified_count,
+            "snapshot_count": self.snapshot_count,
+        }
 
 
 @dataclass

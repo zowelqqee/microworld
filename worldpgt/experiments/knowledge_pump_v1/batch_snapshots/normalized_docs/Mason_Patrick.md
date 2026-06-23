@@ -1,0 +1,88 @@
+# Mason Patrick
+
+Source: https://en.wikipedia.org/wiki/Mason_Patrick
+Retrieved at: 2026-06-22T10:33:06Z
+Revision ID: 1352241692
+Raw text SHA256: 21bdb697552e5af84312bc0aef09ef69e7598b215c5dd68108648ff01065b4fc
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Mason Mathews Patrick (December 13, 1863 – January 29, 1942) was a general officer in the United States Army who led the United States Army Air Service during and after World War I and became the first Chief of the Army Air Corps when it was created on July 2, 1926.
+He was born and educated in Lewisburg, West Virginia, and at age 18 entered U.S. Military Academy at West Point, where he finished second in his class. Early in his career, he served as chief engineer for the Army of Cuban Pacification and 1st U.S. Army Engineers on the U.S.-Mexico border. He served in France during World War I and was appointed Chief of Air Service by General Pershing in May 1918. Under his direction the Air Service established experimental facilities at Wright Field, Ohio, and San Antonio, Texas.
+In 1926, Patrick drafted and proposed the Air Corps Act (44 Stat. 780) to the Military Affairs Committee of the Congress. The act created the United States Army Air Corps from the existing Air Service. Patrick served as commander of the Air Corps until his retirement in 1927. He died in Washington, D.C., on January 29, 1942. The Patrick Space Force Base in Brevard County, Florida, is named for him.
+
+Early years
+
+Mason Mathews Patrick was born in Lewisburg, Greenbrier County, West Virginia, on December 13, 1863, to Alfred Spicer Patrick and Virginia (Mathews) Patrick. His father was a surgeon in the Confederate States Army during the American Civil War. His paternal grandfather, Spicer Patrick, served in the Virginia General Assembly during the American Civil War on the side of the Union, and was later the first speaker of the West Virginia House of Delegates on the creation of that state in 1863. His maternal grandfather, Mason Mathews, served in the Confederate Virginia House of Delegates. In Lewisburg, Patrick attended local public and private schools and on graduation taught for two years at his former high school.
+
+U.S. Army career
+
+West Point
+Patrick, at age 18, entered the U.S. Military Academy at West Point on July 1, 1882. Patrick excelled at West Point in mathematics and engineering, and he was reported to have spoken excellent French. Biographer Robert P. White described young Patrick as "well read, almost Renaissance in nature." Outside of the classroom, he received numerous demerits for misconduct; his infractions included tobacco use, use of profanity, lateness, two citations for "sliding down the banister," and he was cited 24 times for being improperly dressed. At the academy, he became a friend to classmate John J. Pershing. Pershing and Patrick held the top two posts in their senior class, being first and second captains of the Corps of Cadets, respectively. On graduation, Patrick's high standing allowed him to choose a career in engineering. He  was commissioned a second lieutenant of Engineers on June 12, 1886. The following three years he attended the Engineer School of Application, Willets Point, New York, graduating in June 1889. He was promoted to first lieutenant the following July.
+He returned to West Point as an instructor in 1892, spending the next three years teaching engineering. Patrick was involved in Mississippi River improvements from 1897 to 1901, and after two years in the office of the Chief of Engineers, he again returned to the West Point faculty in 1903. He was promoted to major in 1904. He was the chief engineer for the Army of Cuban Pacification from 1907 to 1909 and then worked on river and harbor projects in Virginia (1909–1912) and Michigan (1912–1916). He was also a member of a board directing the raising of the USS Maine in Havana Harbor (1910–1912). During this period, he was promoted to lieutenant colonel in June 1910 and colonel on March 24, 1916, and found himself in command of the 1st U.S. Army Engineers serving on the U.S.-Mexico border in that same year.
+
+World War I
+
+Patrick was promoted to brigadier general on August 5, 1917. He was sent to France that month after America declared war on Germany on August 6 and in September was named Chief Engineer of Lines of Communication and Director of Construction and Forestry of the American Expeditionary Forces.
+In May 1918, Patrick was appointed by his old classmate General John J. Pershing to command the combined Air Service, and subsequently promoted to temporary major general in June. Patrick replaced general Benjamin Foulois as commander, as Pershing had felt staff planning under Foulois had been inefficient, with considerable internal friction as well as conflict between its members and those of Pershing's General Staff. Pershing also felt aircraft and unit totals lagged far behind those promised by Foulois. Considerable house-cleaning of the existing staff resulted from Patrick's appointment, bringing in experienced staff officers to administrate, and tightening up lines of communication. The situation at Air Service headquarters was described as "a tangled mess" before Patrick was brought in. Pershing acknowledged that Foulois requested relief before he was replaced, but the request came only after Foulois became aware of the severity of Pershing's displeasure and attempts in April to rein in his own staff had failed.
+Patrick oversaw the organization of 28 air squadrons for the battle, with the French, British, and Italians contributing additional units to bring the total force numbers to 701 pursuit planes, 366 observation planes, 323 day bombers, and 91 night bombers. The 1,481 total aircraft made it the largest air operation of the war.
+Patrick remained with the Air Service until June 1919, returning then to the U.S. and to various engineering duties, including Assistant Chief of Engineers in 1920.
+
+Interwar period
+
+Patrick was again appointed Chief of the Air Service on October 5, 1921 with the permanent rank of major general.
+Under Patrick's direction, the Air Service established experimental facilities at Wright Field, Ohio, and a large training facility at San Antonio, Texas. It was here in 1922 that he learned how to fly, receiving the rating of Junior Airplane Pilot at the age of 59 years. This was a requirement of his position as Chief of the Air Service, as Air Service officers holding command positions were required by the National Defense Act of 1920 to be rated pilots.
+At this time Patrick began having an increasingly difficult time managing his Assistant Chief of Air Service, Billy Mitchell. Patrick made it clear to Mitchell that although he would accept Mitchell's expertise as counsel, all decisions would be made by Patrick. Mitchell, however, known for his outspoken personality, began fervently pushing his personal agenda for air power independence by breaking chain of command and speaking directly with the press. When Mitchell soon got into a minor but embarrassing protocol rift with R/Adm. William A. Moffett at the start of the naval arms limitation conference, Patrick used the opportunity to assign him to an inspection tour of Europe with Alfred V. Verville and Lt. Clayton Bissell that lasted the duration of the conference over the winter of 1921–22.
+Around this time Patrick displayed a concern for military vulnerabilities in the Pacific, and again sent Mitchell on an inspection tour, this time a survey of the Pacific and the East. Patrick called Mitchell's subsequent report, which identified vulnerabilities in Hawaii, a “theoretical treatise on employment of airpower in the Pacific, which, in all probability undoubtedly will be of extreme value some 10 or 15 years hence.”
+In 1924, Patrick hand-picked Henry "Hap" Arnold, despite a mutual dislike, to head the Air Service's Information Division, working closely with Billy Mitchell, Assistant Chief of Air Service. Mitchell began using Arnold's Information Division as an outlet to promote his personal opinions on the need for air power independence. When Mitchell was later court-martialed for accusing Army and Navy leaders of an "almost treasonable administration of the national defense" for investing in battleships instead of aircraft carriers as he so wished, Arnold and other high-ranking officers on Patrick's staff, including Carl Spaatz, and Ira Eaker were warned that they would jeopardize their careers should they vocally support Mitchell, but they testified on his behalf anyway. After Mitchell was convicted on December 17, 1925, Arnold and other officers continued to use the Information Division to mail pro-Mitchell information to airpower-friendly congressmen and Air Service reservists. In February 1926, Secretary of War Dwight F. Davis ordered Patrick to find and discipline the culprits. Patrick was already aware of the activity and chose Arnold to set an example. He gave Arnold the choice of resignation or a general court-martial, but when Arnold chose the latter, Patrick decided to avoid another public fiasco and instead transferred him to Ft. Riley, far from the aviation mainstream, where he eventually took command of the 16th Observation Squadron.
+
+Creation of the Air Corps
+
+In early 1926, the Military Affairs Committee of the Congress reviewed bills set forth before it to create a more autonomous air power. Patrick, in his "Air Corps Act", proposed that the Air Service be made a semi-independent service within the War Department along the lines of the Marine Corps within the Department of the Navy, requesting a "five-year plan" for expansion and development. His proposal was met with criticism and the service that was created, though retaining the name of Air Corps, would not achieve the independence he envisioned until the creation of the United States Air Force in 1947.
+The Air Corps Act (44 Stat. 780) became law on 2 July 1926. In accordance with the Morrow Board's recommendations, the act created an additional Assistant Secretary of War to "help foster military aeronautics", and established an air section in each division of the General Staff for a period of three years. Previous provisions of the National Defense Act of 1920 that all flying units be commanded only by rated personnel and that flight pay be awarded were continued. The Air Corps also retained the "Prop and Wings" as its branch insignia through its disestablishment in 1947. Patrick became Chief of the Air Corps and Brig. Gen. James E. Fechet continued as his first assistant chief.
+
+Retirement and death
+Patrick retired from the Army on December 12, 1927. He remained in Washington, D.C. and was an advisor to Presidents Herbert Hoover and Franklin D. Roosevelt. The following year he published The United States in the Air (1928). He was the Public Utilities Commissioner for the District of Columbia from 1929 to 1933.
+Patrick died at Walter Reed General Hospital in Washington, D.C., on January 29, 1942 and was buried in Arlington National Cemetery on January 31, 1942.
+
+U.S. military ranks and awards
+
+Officer ranks
+Patrick obtained the following ranks:
+
+Military awards
+Patrick's military decorations and awards include:
+
+Distinguished Service Medal
+Spanish War Service Medal
+Mexican Border Service Medal
+World War I Victory Medal with 3⁄16" bronze star
+Commander of the Order of Leopold (Belgium)
+Knight Commander of the Order of the British Empire
+French Legion of Honor
+Italian Order of St. Maurice and St. Lazarus
+
+Army Distinguished Service Medal citation
+Patrick's DSM citation reads as follows:
+
+Major General Mason M. Patrick, Chief of Air Service, American Expeditionary Forces
+War Department, General Orders No. 12 (1919)
+The President of the United States of America, authorized by Act of Congress, July 9, 1918, takes pleasure in presenting the Army Distinguished Service Medal to Major General Mason M. Patrick, United States Army Air Service, for exceptionally meritorious and distinguished services to the Government of the United States, in a duty of great responsibility during World War I. General Patrick displayed much ability to duty as Director of Construction and Forestry and later as Chief of the Air Service of the American Expeditionary Forces, he perfected and ably administered the organization of this important Department.
+
+Namings
+
+The following U.S. Navy ship and U.S. Space Force base was named after Patrick:
+
+U.S. Navy transport ship USS General M. M. Patrick (AP-150) was commissioned on September 4, 1944. It was recommissioned the USAT General M.M. Patrick in 1946 and then went into service in 1950 with the Military Military Sea Transportation Service as the USNS General M.M. Patrick (T-AP-150).
+Patrick Space Force Base: In August 1950, the Air Force renamed the Joint Long Range Proving Ground in eastern Florida as Patrick Air Force Base, which was renamed in 2020 to Patrick Space Force Base.
+
+References
+
+Bibliography
+
+Patrick, Mason M. (1928). The United States in the Air. Garden City, NJ: Doubleday, Doran & Company.
+Clay, Steven E. (2010). US Army Order of Battle 1919-1941 (PDF). Vol. 3 The Services: Air Service, Engineers, and Special Troops 1919-1941. Fort Leavenworth, KS: Combat Studies Institute Press. ISBN 978-0-98419-014-0. LCCN 2010022326. OCLC 637712205. Archived (PDF) from the original on 27 September 2020.
+Coffey, Thomas M. (1982). Hap: The Story of the U.S. Air Force and the Man Who Built It General Henry H. 'Hap' Arnold. Viking Press. ISBN 0-670-36069-4.
+DuPre, Flint, O. "Major General Mason M. Patrick, From the book U.S. Air Force Biographical Dictionary". Air Force. Retrieved April 17, 2020.:  CS1 maint: multiple names: authors list (link)
+Huston, John W. (2002). "Biography". In Huston, John W. (ed.). American Airpower Comes of Age: General Henry H. "Hap" Arnold's World War II Diaries. Air University Press. ISBN 1-58566-093-0.
+White, Robert (2001). Mason Patrick. Washington, D.C.: Smithsonian. ISBN 1560989432. OCLC 48628479.
