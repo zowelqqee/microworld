@@ -73,6 +73,7 @@ the tested overlay scale, runs offline, and does not need a GPU or API calls.
 - [Run It](#run-it)
 - [Project Layout](#project-layout)
 - [Research Tracks Preserved From Earlier Work](#research-tracks-preserved-from-earlier-work)
+- [Research Results](#research-results)
 - [Known Limits](#known-limits)
 - [Next Work](#next-work)
 
@@ -551,6 +552,23 @@ The repository also contains earlier Microworld research tracks around:
 Those results remain part of the project history. The current README foregrounds
 the `worldpgt` explicit-memory QA/pump system because that is the active
 runtime path.
+
+## Research Results
+
+Demonstrated in the current repository and preserved research artifacts:
+
+- ✓ Audit-driven trust learning
+- ✓ Trust transfer on unseen data
+- ✓ Feedback compression (1598x)
+- ✓ Local QA latency (8ms p50)
+- ✓ Scalable indexed retrieval
+- ✓ Multi-hop explicit reasoning
+
+Not demonstrated:
+
+- Open-domain QA
+- General intelligence
+- Neural model replacement
 
 ## Known Limits
 
