@@ -1,32 +1,32 @@
 {
   "precision_v2_enabled": true,
-  "answerable_before_v2": 2959,
-  "answerable_after_v2": 2861,
-  "relation_before_count": 428,
-  "relation_after_count": 390,
-  "definition_before_count": 671,
-  "definition_after_count": 611,
-  "rejected_count": 92,
-  "quarantined_count": 6,
+  "answerable_before_v2": 4669,
+  "answerable_after_v2": 4532,
+  "relation_before_count": 1525,
+  "relation_after_count": 1462,
+  "definition_before_count": 827,
+  "definition_after_count": 753,
+  "rejected_count": 109,
+  "quarantined_count": 28,
   "rejection_by_reason": {
-    "appositive_alias_subject": 11,
-    "dangling_comma_subject": 24,
-    "definition_nationality_plus_single_noun": 11,
+    "appositive_alias_subject": 13,
+    "dangling_comma_subject": 30,
+    "definition_nationality_plus_single_noun": 13,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
-    "founded_by_truncated_object": 8,
-    "fragment_prefix_subject": 5,
+    "founded_by_truncated_object": 9,
+    "fragment_prefix_subject": 6,
     "geopolitical_subject_corporate_predicate": 3,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 22
+    "truncated_definition": 27
   },
   "quarantine_by_reason": {
     "headquarters_subject_or_clause_uncertain": 1,
-    "object_has_descriptive_tail": 1,
-    "volatile_predicate": 4
+    "object_has_descriptive_tail": 22,
+    "volatile_predicate": 5
   },
   "relation_examples_rejected": [
     {
@@ -96,6 +96,12 @@
       "reason": "develops_design_artifact_object"
     },
     {
+      "subject": "Founding The House of Dior",
+      "predicate": "located_in",
+      "object": "Paris",
+      "reason": "fragment_prefix_subject"
+    },
+    {
       "subject": "Founding Elevation Partners",
       "predicate": "founded_by",
       "object": "Silver Lake Partners",
@@ -112,12 +118,6 @@
       "predicate": "founded_by",
       "object": "Marc Bodnick",
       "reason": "fragment_prefix_subject"
-    },
-    {
-      "subject": "Royal Exchange",
-      "predicate": "founded_by",
-      "object": "Stock Exchange",
-      "reason": "founded_by_generic_object"
     }
   ],
   "definition_examples_rejected": [
@@ -130,6 +130,11 @@
       "subject": "Akira Yoshino",
       "definition": "Japanese chemist",
       "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "subject": "Albuquerque",
+      "definition": "most populous city in the U",
+      "reason": "truncated_definition"
     },
     {
       "subject": "Alessandro Giuseppe Antonio Anastasio Volta",
@@ -167,6 +172,21 @@
       "reason": "truncated_definition"
     },
     {
+      "subject": "California Republican Party",
+      "definition": "affiliate of the United States Republican Party in  the U",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Cameron County",
+      "definition": "southernmost county in the U",
+      "reason": "truncated_definition"
+    },
+    {
+      "subject": "Cotulla",
+      "definition": "city in",
+      "reason": "truncated_definition"
+    },
+    {
       "subject": "Democratic Party of the Virgin Islands",
       "definition": "political party in the U",
       "reason": "truncated_definition"
@@ -175,26 +195,6 @@
       "subject": "East North Central states",
       "definition": "region of the United States defined by the U",
       "reason": "truncated_definition"
-    },
-    {
-      "subject": "Electrical engineering",
-      "definition": "engineering discipline concerned",
-      "reason": "truncated_definition"
-    },
-    {
-      "subject": "Electricity",
-      "definition": "set of physical phenomena associated",
-      "reason": "truncated_definition"
-    },
-    {
-      "subject": "Financial Accounting Standards Board",
-      "definition": "private standard-setting body whose primary purpose is to establish",
-      "reason": "truncated_definition"
-    },
-    {
-      "subject": "Founders Park, formerly known as Carolina Stadium,",
-      "definition": "ballpark in Columbia",
-      "reason": "appositive_alias_subject"
     }
   ],
   "relation_examples_preserved": [
@@ -312,6 +312,10 @@
       "definition": "Navy's fourth oldest school; only the Naval War College"
     },
     {
+      "subject": "RSS First Step",
+      "definition": "third New Shepard capsule built by Blue Origin"
+    },
+    {
       "subject": "Rocket Science Games",
       "definition": "independent game studio"
     },
@@ -320,23 +324,25 @@
       "definition": "real estate bubble"
     },
     {
-      "subject": "Abraham Fortas",
-      "definition": "American lawyer"
+      "subject": "Referendum 74",
+      "definition": "Washington state referendum to approve"
     },
     {
-      "subject": "Accenture plc",
-      "definition": "Irish technology consulting company"
+      "subject": "AI Futures Project",
+      "definition": "nonprofit research organization"
     },
     {
-      "subject": "Adam Smith",
-      "definition": "Scottish economist"
-    },
-    {
-      "subject": "Affordable Connectivity Program",
-      "definition": "United States government-sponsored program"
+      "subject": "AI safety",
+      "definition": "interdisciplinary field focused on preventing accidents"
     }
   ],
   "quarantine_examples": [
+    {
+      "subject": "Canadian Space Agency",
+      "predicate": "leader_of",
+      "object": "John H",
+      "reason": "volatile_predicate"
+    },
     {
       "subject": "Mark Carney",
       "predicate": "leader_of",
@@ -368,9 +374,57 @@
       "reason": "headquarters_subject_or_clause_uncertain"
     },
     {
-      "subject": "Tesla Energy",
-      "predicate": "is_a",
-      "object": "Paris - based autonomous intergovernmental organization",
+      "subject": "Julia",
+      "predicate": "located_in",
+      "object": "Tallahassee when she met Farris Bryant",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Dodger Stadium",
+      "predicate": "located_in",
+      "object": "MLB west of the Mississippi River",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Graduated Random Presidential Primary System",
+      "predicate": "alias",
+      "object": "California Plan or the American Plan",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Gulf Coast of the United States",
+      "predicate": "alias",
+      "object": "Gulf South or the South Coast",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Venice HyperloopTT",
+      "predicate": "located_in",
+      "object": "Venice through its subsidiary Hyperloop Italia",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Inspiration Mars",
+      "predicate": "located_in",
+      "object": "US and Keio University in Japan",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "ISRO",
+      "predicate": "located_in",
+      "object": "Gaganyaan and the Bharatiya Antariksha Station",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Nihon",
+      "predicate": "located_in",
+      "object": "Japanese phonology during the Edo period",
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "subject": "Ted",
+      "predicate": "located_in",
+      "object": "Chicago to a family of Baptists",
       "reason": "object_has_descriptive_tail"
     }
   ]

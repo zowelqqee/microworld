@@ -258,6 +258,13 @@ def route(question: str) -> AssistantRoute:
                 subject=semantic.entity_a,
                 notes="semantic definition query",
             )
+        if semantic.query_type == "open_synthesis" and semantic.entity_a:
+            return AssistantRoute(
+                question=q,
+                intent="entity_definition",
+                subject=semantic.entity_a,
+                notes="semantic open synthesis query",
+            )
         if semantic.query_type == "comparative":
             return AssistantRoute(
                 question=q,

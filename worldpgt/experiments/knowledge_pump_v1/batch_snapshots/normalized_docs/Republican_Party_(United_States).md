@@ -1,9 +1,9 @@
 # Republican Party (United States)
 
 Source: https://en.wikipedia.org/wiki/Republican_Party_(United_States)
-Retrieved at: 2026-06-23T04:54:07Z
-Revision ID: 1360719332
-Raw text SHA256: eda1c5e2c0f4c0c97ca9241a30c70aa6d3632fae9d05a81e96c4a193f9516e62
+Retrieved at: 2026-06-24T01:57:04Z
+Revision ID: 1360755925
+Raw text SHA256: ba4f64f841a5d2c299cac62003592dc155f650b600560fed303b52db70e1ee9a
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true

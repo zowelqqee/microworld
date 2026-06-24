@@ -1,0 +1,253 @@
+# Online age verification laws by country
+
+Source: https://en.wikipedia.org/wiki/Online_age_verification_laws_by_country
+Retrieved at: 2026-06-24T01:24:01Z
+Revision ID: 1360833319
+Raw text SHA256: 7d744cd9d8df18d0d84b3286eff1781cf2f825c209c2f5d48ce89b97f6c2bc28
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Since the passage of the Online Safety Act 2023 in the United Kingdom and the publication of The Anxious Generation by Jonathan Haidt in 2024, which became the catalyst for Australia's social media ban, many countries across the globe have passed or proposed laws to require age verification for parts of the internet including social networks, social media services, devices, and other digital services with the intention of protecting young people from harmful and illegal content. Such laws began primarily after Australia's social media ban for under-16-year-olds which was passed on 28 November 2024 and came into force on 10 December 2025. Legislation regarding social media age verification began in the United States at the state level after Utah passed the Utah Social Media Regulation Act in March 2023. It was challenged due to First Amendment concerns and has not been taken into effect. These bills and laws vary greatly, with some of them restricting access only to certain features or distinguishing between different users online, which could lead to companies requiring age verification to comply with such restrictions as the Kids Online Safety Act, or banning users under a certain age, which is the approach of the  Online Safety Amendment in Australia which fully prohibits anyone under 16 years old from holding social media accounts. A few nations, such as Pakistan punish those who allow minors to access these services.
+These laws, which claimed to be for "protecting kids", have received criticism from the general public, as well as organizations that focus on digital and civil rights (such as the Electronic Frontier Foundation, Access Now and American Civil Liberties Union in the United States) for normalizing surveillance and restricting freedom of speech through the elimination of anonymous accounts. The New Zealand Council for Civil Liberties, UNICEF, and the Council of Europe Commissioner for Human Rights have also opposed such laws on the bases that they constitute violations of the rights to freedom of speech and privacy, that such laws may backfire, and that there are better ways of protecting children online.
+These laws can also be bypassed by loopholes, such as VPNs, which have seen a significant amount of new and existing users in countries where such laws are enforced. While these laws typically only apply in their respective countries, some online platforms made their age verification policies global, such as Roblox and Discord, which require age verification for certain features to close said loopholes to avoid receiving a lawsuit.
+Opponents claim that this is the newest form of censorship on the internet after many countries, mostly outside the Western world, had blocked or throttled online platforms, or use national intranet like the Great Firewall in China, shut down internet access, and restricted VPN usage.
+Before Australia passed its social media ban, attempts to make online censorship global such as the EU's UploadFilter, which passed in March 2019, or planning to repeal Section 230 failed due to free speech concerns along with large protests and outcry.
+
+Social Media Age Restriction Laws
+Many of the laws regarding social media age verification revolve around setting a minimum age to have an account on social media platforms, with the youngest proposed minimum age set at 12 by Trinidad and Tobago (cf. the minimum age of the COPPA law from the United States, which is 13) and the oldest being 18 set by Zimbabwe. Neither of these examples give an exception with parental consent, with most countries (such as Turkey, France and Greece) setting the minimum age at either 15 or (in Australia, Indonesia, Malaysia and Spain) at 16. Some of the proposed or passed laws that set a minimum age for social media allow exceptions with parental consent, such as those passed in Brazil, (set minimum age of 16 with parental consent exception), Denmark (set minimum age of 15, parental consent from 13), Portugal and the European Union (set minimum age of 16 with parental consent from 13).
+
+Laws in effect
+
+Australia
+
+In November 2024, Australia's federal parliament passed the Online Safety Amendment (Social Media Minimum Age) Act, which requires social media companies such as Facebook, Snapchat, TikTok and X (formerly Twitter) to take reasonable steps to prohibit minors under the age of 16 from owning accounts. YouTube was originally excluded, however was later included and companies that do not comply can be fined up to 50 million AUD and is enforced by the eSafety Commissioner. The ban came into effect on 10 December 2025. Australia then became the first country in the world to ban social media, banning platforms such as YouTube, TikTok, X, Facebook, Instagram, Snapchat, Twitch, Kick and Threads for individuals under 16. This meant that anyone over 16 must verify their age using methods such as facial scan or ID in order to create, log or continue using accounts by 10 December 2025.
+On 9 March 2026, Australia became the second country in the world to enforce age verification on social networks such as adult sites, search engines, online platforms like X that are allowing harmful content such as NSFW, online chats from Xbox, PlayStation and even on games such as GTA. Apps rated 18+ and AI Chatbots that allow explicit material also became affected by this enforced age verification.
+In March 2026, over 310,000 accounts who are reportedly owned by children under 16 have been deactivated and blocked by the age filters.
+
+Brazil
+In September 2025, Brazil passed a law that would require social media companies to implement age verification and link accounts under 16 with their parents and only allow children access to content that is intended for them. The law also requires parental consent to download apps for underaged individuals aged between 12 and 18 years old and bans lootboxes in video games similar to a law enacted in Belgium in 2018. If platforms do not comply, they can be fined up to 50 million BRL. The law came into effect on March 17, 2026, resulting in Brazil becoming the second country overall, and the first non-English speaking and Latin American country to ban social media and all online platforms and social networking services for individuals under 16 without parental consent, and forces them to verify their age through ID or facial scans. It also became the third country in the world to enforce age verification on social networks such as adult sites, search engines, online platforms like X allowing harmful content such as NSFW, online chats from Xbox, PlayStation and even on games such as GTA and mobile apps rated 18+. Due to the law banning lootboxes for those under 18, many video games such as Roblox, Minion Rush, Mario Kart Tour, EA Sports FC, Counter Strike, Genshin Impact, Fortnite and more have restricted in-app purchases or even entire games for non-verified users.
+
+China
+China already has its own strict internet censorship, such as the Great Firewall that blocks certain foreign websites, as well as laws mandating ID and real name verification. These laws must be followed in order to create accounts on platforms such as Bilibili, Douyin, and Kuaishou. Since 2 August 2023, China adopted Minor Mode, which cuts off internet access for individuals under 18 between 22:00 and 6:00. Time limits include up to 40 minutes for those under 8, 1 hour for those aged 8-15, and 2 hours maximum for 16-17 year olds per day. Minor Mode came into force by January 2024. Since September 2021, those under 18 will only be allowed to play online games only on weekends and legal holidays between 20:00 to 21:00.
+
+Indonesia
+During 2025, the Indonesian Government had been looking into the idea of setting a minimum age to use social media as well as other protections that would be similar to Australia's. This proposal had been met with support and caution by the public.
+On 28 March 2026, Indonesia banned social media for children under the age of 16, becoming the first non-Western, Asian and Muslim country and the third country in the world to enforce a social media ban. Platforms such as YouTube, TikTok, X (formerly known as Twitter), Facebook, Instagram, Threads, Roblox and Bigo Live were the first to be banned with measures similar to Australia. Enforcement and account deactivation will be rolled out gradually, affecting all accounts that are reported to be under 16.
+
+Malaysia
+In November 2025, the Malaysian Communications Minister Fahmi Fadzil announced that starting 1 January 2026, all social media platforms would have to ban all users under 16 years of age and implement age verification via eKYC, saying this was in line with the country's Online Safety Act which was enacted in 2025 and took effect the same day the ban does. The effective date was later changed to 1 June 2026 from 1 January 2026. Malaysia then became the second Asian and Muslim country, and fourth country in the world to ban social media and online platforms that have more than 8 million users for individuals under 16 on 1 June 2026, with measures also similar to Australia. Targeted platforms with over 8 million users included platforms such as YouTube, TikTok, Facebook and Instagram.
+
+United Kingdom
+
+The United Kingdom became the first country in the world on July 25, 2025 to enforce age verification under the Online Safety Act 2023, which although does not set an age limit for social media, requires providers of "user-to-user" services (which includes many popular social media services) to prevent access by children of content deemed harmful, including but not limited to pornographic content. Platforms including Reddit and Bluesky have implemented age verification for UK users as a result.
+On June 17, 2026, Keir Starmer announced that the Children's Wellbeing and Schools Act 2026 has passed, which puts a ban on children under 16 having accounts on social media apps such as Snapchat, Tiktok, Instagram, Facebook, X and Youtube effective from spring 2027.
+
+Effect on platforms
+
+Roblox
+
+Despite many lawsuits in recent years for failing to protect children from predators online as well as moderation failure, leading to quite a few countries imposing restrictions or outright banning the platform, such as Turkey in August 2024. Roblox has recently added a plethora of safety features, but countries are still continuing their investigations. On 19 November 2025, Roblox announced that they would be requiring users to verify their age to be able to use the chat in-game. This system places users into age groups, and players can only chat with people in neighboring age groups. Roblox's age verification is done by scanning a user's face to estimate their age, or having them upload a picture of their ID. Both methods are done with Persona.
+In June 2026, the platform will introduce more age-based restrictions by dividing user accounts into different tiers: Roblox Kids, which is assigned to users under the age of 9, Roblox Select, which is assigned to users age 9 to 15, and standard Roblox which is assigned to users 16 and above. If a user does not verify their age, they are restricted to only playing games with an age rating of 9+ or lower. It was also recently announced that, along with a number of other restrictions, age verification will be required to publish a game on the platform.
+Citing high risk, Indonesia restricted the platform for users under 16 under its social media ban on 28 March 2026, and Brazil restricted the platform for users under 16 on 17 March 2026. Formerly, Brazil restricted the platform to users under 18 due to the country's ban on lootboxes for users under 18, however after the platform announced they would regulate lootboxes, Brazil lowered the limit to 16.
+
+Discord
+Despite many lawsuits in recent years for failing to protect children from predators online as well as moderation failure, since early 2024, Discord began to blur out sensitive and harmful content. If anyone wants to unblur, they can click the eye icon to reveal said blurred content. However, since July 2025, Discord had locked the aforementioned sensitive and harmful content, including NSFW material, behind age verification via ID for those residing in the UK to comply with the Online Safety Act 2023. This age verification measure then rolled out in Australia by 10 December 2025, then in Brazil by 17 March 2026, which included a ban for individuals under 16 without parental consent. In late 2025, Discord had expanded age verification to include DMs from people who are not on one's friends list, which are automatically locked and sent to a separate "Message Requests" folder, of which this restriction cannot be disabled or moved to the main inbox without age verification and are restricted from speaking on Stage Channels in public servers without age verification.
+In February 2026, Discord announced its teen safety protections, which would be rolled out to its user base worldwide. These protections make it impossible to bypass using bypassing mechanisms such as VPNs and will include YouTube style AI Age detection to flag any behaviour as "teen-appropriate", similar to Instagram. Originally, these protections were supposed to come into force by March , but due to backlash over recent leaks of 70,000 user ID photos that happened in September 2025, it was delayed to the second half of 2026.
+
+Africa
+
+Egypt
+In January 2026, Egypt's parliament debated legislation discussing children's use of social media. On 25 January 2026, the House of Representatives announced their intent to introduce legislation regulating children's use of social media networks. Prior to that, President Abdel Fattah El Sisi had appeared on television urging lawmakers to restrict children's use of social media "until they reach an age when they can handle it properly." As of June 2026, no law has yet been introduced.
+
+Gabon
+On 8 April 2026, Gabon published an ordinance regulating social media platforms among the requirements would be that social media platforms would have to implement age verification and set a digital age of majority of 16 and platforms could only allow minors under 16 to have an account with parental consent. The age verification process, unlike that of many other countries, would require any person who wants to join a platform to provide their name, address, and personal identification number; this goes further than the requirements of other countries, which only require obtaining the verified age of a person.
+Gabon's High Authority for Communication has already temporally fully blocked social media in February 2026 due to false information, cyberbullying and data collection practices.
+
+Kenya
+In May 2025, the Communication Authority of Kenya published guidelines on online safety for children. One of the requirements for these guidelines was to require Application Service Providers (ASP) and Content Service Providers (CSP) to have age verification to restrict harmful content. Alongside this, the Kenya Parliament introduced the Kenya Information and Communications (Amendment) Bill, 2025 which requires age verification for social media services such as Facebook and WhatsApp. However, as of August 2025 the bill proposed by the Parliament has not passed and the status of the guidelines by the Communications Authority remain unclear.
+Kenya on 17 February 2026 has ruled out a ban on TikTok due to the platform providing communication, creativity, and entrepreneurship among youth as well as it infringing on fundamental rights and stifling economic growth, and with instead regulate the app with two of countries ministers expecting to report to the House on how to strengthen age verification, as well as data localization and media literacy on privacy and responsible use of social media.
+
+Mauritius
+In September 2025, the Minister of Information Technology, Communication and Innovation, Avinash RamtohulI stated that they were trying to foster a healthy and favourable digital environment for young people.” On 12 December 2025, the Information and Communication Technologies Authority published a directive for the deployment of child online protection measures.
+
+Nigeria
+On 10 March 2026, Bosun Tijani who is the head of the Federal Ministry of Communications, Innovation and Digital Economy announced a public consultation on possible restrictions on social media to help strengthen child safety with the possibility that the Nigerian Government considers strengthening age verification for social media platforms or sets a minimum age on them, however as of May 2026 no minimum age or age verification requirement has been set and is still in the consideration phase with the government stating they will rely on evidence based policies.
+
+Rwanda
+On 29 April 2026, the Minister of Information Communications Technology and Innovation, Paula Ingabire, said that “relevant institutions” within the Rwandan government are working together on drafting a proposed law that will forbid children under 16 from using social media. Authorities said that the law is part of a greater initiative to create a safer environment for Rwandan children.
+
+Zimbabwe
+On 8 March 2026, The Zimbabwe Minister of Information Communication Technology, Postal and Courier Services, Tatenda Mavetera announced that the country would look into a ban on the access of social media platforms for minors under 18 years of age as the country considers regulating social media platforms. The proposal was criticized as Zimbabwe has already existing online safety laws such as the Zimbabwe Data Protection Act and that enforcing them would be better than blanket under-18 bans.
+
+Asia
+
+Bahrain
+Since January 2026, Bahrain has been considering prohibiting social media accounts for users younger than 15 within the country and would require platforms to put certain safeguards for children between 15 - 17 years old to help limit exposure to harmful content. The draft law is an amendment to the Child Law No 37 of 2012 in Bahrain.
+
+India
+In 2025, the ZEP Foundation petitioned the Supreme Court of India for social media regulation. The court denied the request to ban children under 13 from social media saying it was something for the parliament to do and not the courts, however granted the foundations request to propose to the Central Government to require age verification for social media and prohibit usage for those under 16 or 18 years old and set an 8-week deadline, however as of September 2025 no laws have passed that resemble what the petition requested in India.
+
+Japan
+In June 2026, an advisory panel of the Ministry of Internal Affairs and Communications proposed a draft set of measures that would limit the access of underaged persons to social networking services. These measures called for stricter age verification laws, but also rejected the enactment of a unified age verification law similar to Australia’s, which was referred to as “undesirable”.
+
+Kazakhstan
+Kazakhstan is considering a social media ban for minors under 16 years of age similar to Australia's. However, this proposed law does not have a set effective date of when it will take effect.
+
+Lebanon
+
+Mongolia
+In February 2026 the Mongolian Minister of Education, Purevsuren Naranbayar, was reportedly working on a draft law that would ban children under 16 years of age from using what was defined as age restricted social media platforms similar to Australia's law. Before the introduction of the draft law in Mongolia in 2025, a group led by his advisor were studying similar social media restriction laws that were enacted in other countries, which included various European countries.
+
+Pakistan
+In July 2025, a bill was introduced in the Pakistan Senate that would ban social media for minors under 16 and that platforms must implement age verification that are affected by the bill, however unlike other bills that have been either introduced or passed in countries like Australia were the penalties only apply to platforms. The Pakistani version of the under 16 bans also imprisons anyone who makes a social media account for a minor for up to 6 months. The bill however was later withdrawn in August 2025 after controversy; however, the Pakistani Government is still looking to implement a lower age limit of 13 or 14 for social media access and removing the 6 months imprisonment penalty.
+
+Philippines
+In the 20th Congress of the Philippines, a bill was introduced by Ping Lacson to ban social media for minors under 18 in July 2025, ban social media for minors under 16 by Imee Marcos in February 2026, Loren Legarda in March 2026, and Sherwin Gatchalian in April 2026, ban social media and other online platforms for minors under 15 by Joel Villanueva in April 2026, whilst allowing for minors aged 13 to 17 with verified parental or guardian consent by Erwin Tulfo in July 2025, another bill allowing for minors aged 12 to 17 with verified parental or guardian consent by Camille Villar in July 2025 in the Senate of the Philippines. A bill was also introduced to ban social media for minors under 16 by Eddie Villanueva in March 2026, independent account on social media for minors ban under age 13, aged 13 to 15 with a parental consent, and allow independent access for those aged 16 to 17, and requiring platforms to apply enhanced protection safety defaults by Roger Mercado in March 2026 in the House of Representatives of the Philippines.
+
+South Korea
+South Korea has introduced seven bills related to social media age verification for social including prohibiting the use of social media for user children under 14, requiring parental consent for users under 16 and banning information based algorithms for users under 19. Kim Jong Cheol who is the President of the Korea Media and Communications Commission has stated that he supports placing age restrictions on social media platforms, however South Korea is more considering softer and graduated restrictions then a ban on social media accounts under a certain age due to the country's failure with a previous shutdown law that prohibited minors under 16 from playing video games at night.
+
+Tajikistan
+In October 2025, lawmaker and member of parliament Dilnoza Ahmadzoda proposed a law that would ban children under 14 from gaining access to social media, as well as requiring written parental consent for children aged 14-17. She noted that recent amendments to the Law on the Protection of Children’s Rights, which focused on cracking down on harmful content, were insufficient, and that a ban was necessary.
+
+Türkiye
+Türkiye's Grand National Assembly along with the country's president Recep Tayyip Erdoğan has been discussing a draft law that would have social media banned for minors under 15 and provide parental controls to minors who are 15 -17 as well as to have social media platforms implement age and identity verification to prevent minors under 15 from becoming users of social media, along with this the draft law proposes making it easier to remove problematic content and  implement measures to make bypassing the restrictions with a VPN harder. The draft law has already been accepted by the commission and now must pass the Grand National Assembly of Türkiye and be published in the Official Gazette of Türkiye in which it will take effect 6 months after publication. The law was passed by the Turkish parliament in April 2026.
+
+United Arab Emirates
+On 18 June 2026, UAE announced that they will ban social media for children under 15, which would come onto force by mid-2027. Any online platforms who fail to comply within 12 months will face heavy daily fines, throttling or being blocked in the country.
+
+Europe
+
+European Union
+On 26 November 2025, the EU Parliament voted on a non-legislative report by a vote of 483–92–86. The report would set a minimum age of 16 for social media, while allowing those aged 13 – 15 with parental consent. The report also bans things such as infinite scrolling, auto-play and would protect minors from commercial exploitation. It would also prohibit access to services that do not comply with the law within the EU.
+
+Austria
+In March 2026, Vice Chancellor of Austria Andreas Babler said that the country was considering a social media ban for users under 14 years of age saying that the ban would help prevent children from developing a social media addiction. The proposed ban will be drafted by the end of June 2026 and will include "technically modern methods" of age verification to prevent children under 14 from using social media platforms covered by the ban. Unlike other countries in the EU that have set an effective date for their social media ban such as September 2026 for France or January 2027 for Greece, there does not appear to be a set effective date yet for Austria's proposal.
+
+Belgium
+In April 2026, the Flemish Government announced that it was considering a social media ban for users under 13 years of age, some communities in Belgium have proposed an even higher minimum age of 15 or 16. The age verification method will likely be through a centralized age verification tool such as Itsme or MyGov.be, however this proposal has been controversial since the ban is not a competence issue for the federal or regional government but one for communities meaning that the ban would likely only apply to Dutch speaking communities and not French speaking ones.
+Internet safety groups for Belgium such as Belgian Safer Internet Centre and Child Focus have stated that a social media ban is not likely to be very effective since the minimum age of 13 within the GDPR is already largely ignored and so increasing the age to 15 or 16 for social media use is not likely to be effective and that a better solution would be to increased media literacy and giving more tools and better resources to parents to protect their children and to make the internet safer.
+
+Bosnia and Herzegovina
+In December 2025, the President of the Party of Democratic Progress and the Mayor of Banja Luka, Draško Stanivuković, submitted the Resolution on the protection of children in the digital environment and the responsible use of social networks to the National Assembly of Republika Srpska. Stanivuković stated that the key message of the resolution is to limit the use of social media for children up to the age of 15.
+
+Cyprus
+In April 2026, The European Commission launched an age verification app to restrict the access of social media to underage persons in five European countries, with Cyprus being one of them. President Nikos Christodoulides announced that the minimum age for social media in the country will be 15, further stating that the proposal will be integrated into the national digital wallet application “Digital Citizen” within the same year.
+
+Denmark
+On 7 October 2025, the Danish prime minister announced that the government was looking into banning social media for minors under 15, but have stated that they will likely include an exemption for those aged 13 or 14 with parental consent. The government plans to implement this policy as early as 2026. On 7 November 2025, Denmark's government announced an agreement to ban access to social media for anyone under 15 years of age, one of the strongest steps by a European Union government. How the ban would be enforced was not shared, but may rely on Denmark's national electronic ID system.
+
+Finland
+
+France
+On 29 June 2023, France passed a law which would require parental consent for anyone under 15 to use social media, however the bill passed without a clear effective date, stating that they would apply it as soon as possible. If the bill does go into effect, then companies would be fined up to one percent of their revenue if they do not comply with the law. Since this law has passed the President of France Emmanuel Macron has said he could look into a complete ban for anyone under 15 to use social media.
+In January 2026, the French National Assembly approved a government-backed bill banning the use of social media by children under the age of 15. The legislation, supported by President Emmanuel Macron's administration, was adopted by 116 votes to 23 and aims to "protect minors mental health by mitigating risks such as online harassment and psychological harm". The law requires social media platforms to implement age-verification mechanisms, while allowing exemptions for educational resources such as online encyclopedias. This proposed legislation was championed by President Emmanuel Macron and was passed by the Senate. The law takes effect September 2026.
+
+Germany
+Germany's upper House called for a ban on social media use for children under 14 and restrictions on the use of it for those under 16 with the Chancellor of Germany Friedrich Merz supporting the proposal. A social media ban in Germany could possibly face legal challenges as Germany's constitution gives parents the right to take care of the upbringing of their children.
+
+Greece
+On 8 April 2026, the government announced a ban on children under 15 years old from accessing social media effective in January 2027.
+
+Italy
+
+Netherlands
+In 2026, the new Dutch Government (which is made up of the D66, VVD and CDA parties) was considering a social media ban for minors under 15 years of age within the country, however the proposal is still vague as all the government has said is that the ban would be enforced through privacy-friendly age verification and would remain for as long as social media is insufficiently secure without defining what exactly these mean. The former Dutch Government has opposed a social media ban stating that would be ineffective and would instead release guidance that social interaction platforms such as Instagram or TikTok should be avoided before 15 and that only messaging platforms such as WhatsApp or Signal be used if they are over 13.
+
+Norway
+In Late 2024, the Norwegian Government announced it was setting a minimum age of 15 for social media and would require age verification to access social networks. In June 2025, the Government would introduce the bill to set the age limit for consultation and the deadline for this consultation is 7 October 2025.
+
+Poland
+In February 2026, the Minister of Education in Poland Barbara Nowacka has presented plans to ban social media use for children under 15 as well as ban use of mobile phones in primary schools which is currently up to individual schools. Companies that do not comply can face fines up to 6 percent of their annual revenue.
+
+Portugal
+On 12 February 2026 the Assembly of the Republic (Portugal) the legislative body of Portugal approved of a bill by a vote of 148-69 that would prohibit children under 13 from having social media accounts and require parental consent for those aged between 13 - 15 years old. Parental consent would be verified through a system known as the Digital Mobile Key (DMK) and the proposed bill would fine platforms if they are noncompliant up to 2 percent of their global revenue. The bill still needs a final vote to pass and become law.
+
+Slovenia
+In February 2026, Matej Arčon said that the Slovenian Minister of Education was preparing for a draft legislation for a social media ban to children under 15 within the country, citing platforms such as TikTok, Snapchat, and Instagram.
+
+Spain
+In February 2026, Spain announced plans to ban access to social media platforms for users under the age of 16. The announcement was made by Prime Minister Pedro Sánchez, who stated that the government intends to require social media companies to implement mandatory age-verification systems. According to Sánchez, the proposed measure aims to protect children and adolescents from potential harms in the digital environment, which he described as a “digital wild west.” The policy forms part of broader efforts to strengthen online safety regulations for minors and increase platform accountability.
+
+Sweden
+
+North America
+
+United States
+
+Federal level
+Since 2022, multiple members of congress have introduced bills that would either require age verification for social media platforms such as YouTube, Facebook, or Instagram, or heavily lean towards it even if it does not require it outright.
+
+Kids Online Safety Act
+The Kids Online Safety Act, also known as KOSA, is a bill in United States Congress that requires online platforms, not just social media companies, that are likely to be used by children to reduce addiction and online harms to them through a duty of care; however, the bill has been criticized by multiple civil rights groups such the ACLU and EFF for potentially leading to online censorship on services using age verification.
+
+Kids Off Social Media Act
+The Kids Off Social Media Act is a bill that was introduced originally in April 2024 but died before advancing. It was later reintroduced in January 2025 and advanced out of committee in February 2025; as of June 2025, the bill has been placed on the general calendar, meaning it can be taken up for a vote at any time. The bill bans anyone under 13 from having a social media account and bans certain algorithmic recommendations for anyone under 17; those opposed to it such as the ACLU and Centers for Democracy and Technology have warned that the bill could lead social media platforms into doing age verification via government ID to avoid liability.
+
+Protecting Kids on Social Media Act
+In April 2023, the Protecting Kids on Social Media Act was introduced, and it, like the Kids Off Social Media Act, bans social media services for children under 13, and also bans algorithmic recommendations, but instead of banning them for those under 17, it bans it for all minors under 18 and requires parental consent to use social media if the person creating the account is 13–17 years old. The bill was opposed by the Electronic Frontier Foundation because the age verification part of bill would invade privacy rights and would make it easier for the government to identify people and that the parental consent provision could be problematic for older minors; the bill has since died and has not been reintroduced.
+
+State level
+
+Since 2022, multiple states have passed laws requiring age verification for social media services such as California, Utah and Florida; however, very few have taken effect due to legal challenges against them. The only four exceptions to this are Tennessee, Mississippi, Florida and Ohio. The law in Tennessee took effect after a Federal Judge denied a request to block the law in June 2025, and Mississippi's law HB 1126 was originally blocked from taking effect; however, in July 2025, the Fifth Circuit Court of Appeals stayed the order blocking the law; this then led to the ones challenging the law NetChoice to ask the U.S Supreme Court to block the law again which it denied in August 2025. What has resulted from this is that Nextdoor has banned anyone under 18 from making an account on their service in Tennessee, and Bluesky has blocked Mississippi users entirely. So far over 17 states have passed similar laws and over 32 have introduced them, the only states that have not introduced nor passed one are North Dakota and Delaware. So far eight states have rejected bills that propose age verification for social media them being Colorado, Hawaii, Montana, Maine, New Hampshire, Wisconsin, Washington, and Wyoming. One state, Vermont, had formally rejected a social media age verification bill which was rejected in June 2024, but then a year later in June 2025 passed one known as S. 69 which takes effect on January 1, 2027.
+
+Rejected social media age verification bills in state legislatures
+The list below is of bills that propose to require age verification to use social media platforms but were rejected this list include bills that were intentionally rejected either by being vetoed by the governor and that veto not being overturned or voted down in the state's legislature, not bills that died because they expired in the legislative session.
+
+Canada
+
+Federal level
+
+Bill C-34
+On June 10, 2026, Canada's Culture Minister Marc Miller introduced Bill C-34, also known as the Safe Social Media Act, in the House of Commons. This would require social media companies to prohibit children under 16 years of age from having an account. However, social media platforms can be exempt if they maintain safeguards for children on their platform. The bill exempts video games and AI chatbots from the account ban for children under 16, though AI chatbots are regulated elsewhere in the bill. The bill does need to be approved by parliament first before taking effect.
+
+Quebec
+In May 2025, a committee of Quebec Legislative members recommended that social media be banned for those under 14 without parental consent, though it is unclear if they plan on introducing legislation to implement this policy.
+
+Nova Scotia
+Iain Rankin, former premier of Nova Scotia said that his party, the Liberal Party, is planning on introducing a bill to ban anyone under 16 from social media.
+
+Costa Rica
+On 9 December 2025, a bill known as File 25536 was introduced in the Legislative Assembly of Costa Rica. The bill would ban social media accounts for users under 14 and only allow children to use services designed for children, and require age verification to create accounts as well as parental consent for users who are between 14 to 17 years of age. The age verification would be through Costa Rica's minor card which is known as a TIM. The bill would later be advanced out of committee on 14 April 2026 unanimously to be debated and voted on. However, as of 16 May no vote has been done.
+
+Trinidad and Tobago
+In January 2026, The Prime Minister of Trinidad and Tobago Kamla Persad-Bissessar said the government would ban social media use for children under 12 years of age. However, she has not made clear what will be used to determine the age of users or when it will take effect.
+
+South America
+
+Ecuador
+In March 2026, Ecuador Assembly Member Katherine Pacheco Machuca would introduce a bill that would ban social media use for children under 15 years old with penalties for noncompliance being up to 5 percent of their local annual revenue and would take effect 18 months after being published in the official registry of Ecuador. The bill is meant to combat growing crime within the country and was introduced after a report from the Ecuador’s Organized Crime Observatory found that 27% of youth who had been recruited into organized crime had been through social media. Ecuador is also considering other measures to address the growing organized crime within the country other than the social media ban.
+
+Oceania
+
+Fiji
+The Fiji Minister for Information Lynda Tabuya and the Fiji Minister for Communication Ioane Naivalurua have launched a taskforce to study the effects of international laws on social media age restrictions and to possibly propose prohibiting those under 16 from social media within the country. However, they have stated that such a bill would not be introduced to the Parliament of Fiji without public consultation first.
+
+Papua New Guinea
+In October 2025, the government of Papua New Guinea approved its 2025 social media policy which included a plan to require users in Papua New Guinea to verify their age to prove they are 14 years old or older to access social media platforms such as TikTok or Instagram, the age verification is done via SevisPass digital ID. Platforms must also set up locations in the country and be closely monitored for supposed harmful content. The Government claims the reason for the policy is crackdown on fake news and scams, however the policy has been criticized for potentially limiting free speech.
+
+Countries that have rejected online age verification laws
+
+Europe
+
+Croatia
+In March 2026, the parliamentary club We Can! requested that access to social networks be restricted for those under the age of 15. According to their proposal, access to social media would be allowed to those under the age of 15 only with the consent of a parent or guardian, although their access would still be restricted between 10 p.m. and 8 a.m. The Minister of Justice, Public Administration and Digital Transformation Damir Habijan rejected the proposal saying that the issue of the technical implementation of such a ban has not yet been resolved.
+
+Estonia
+Estonia Justice and Digital Affairs Minister Liisa Pakosta supports the idea of finding ways to decrease the harmful effects of social media for young people, however, does not support the idea of implementing age verification saying that it could affect everyone and could easily be bypassed by young people and instead supports enforcing existing EU Laws and better education for young people and parents.
+
+Oceania
+
+New Zealand
+In inspiration of Australia's Online Safety Amendment, the Nationals Party of New Zealand along with the Prime Minister of New Zealand Christopher Luxon introduced the Social Media (Age-Restricted Users) Bill in May 2025, which, just like its Australian counterpart, bans social media accounts for children under 16, with the maximum fine that can be imposed being 2 million NZD. The bill has been placed on pause following consideration of wide regulation change.
+
+See also
+Parental controls
+Internet censorship and surveillance by country
+Internet censorship
+Censorship
+Internet
+Age verification
+Network Surveillance
+
+References

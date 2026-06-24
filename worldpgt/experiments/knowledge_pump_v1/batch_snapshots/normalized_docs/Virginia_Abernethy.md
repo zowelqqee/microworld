@@ -1,0 +1,41 @@
+# Virginia Abernethy
+
+Source: https://en.wikipedia.org/wiki/Virginia_Abernethy
+Retrieved at: 2026-06-24T05:41:07Z
+Revision ID: 1358881204
+Raw text SHA256: 6b7c4f3899d7b29d36ad6aec844cbc79a3ce78e757a49b08d7ad231e1046e565
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Virginia Deane Abernethy (born October 4, 1934) is an American social anthropologist, far-right activist, white nationalist, and self-described "ethnic separatist." She is a professor emerita of psychiatry at the Vanderbilt University School of Medicine. She has published research on population demography and immigration. She ran for Vice President of the United States in 2012 alongside Merlin Miller for the American Third Position, a party that promotes white nationalism.
+
+Early life and education
+Virginia Deane Abernethy was born in 1934 in Havana, Cuba, to American parents. She was raised in Argentina and New York City. While in New York, she attended the Riverdale Country School. After graduating from Wellesley College with a B.A., she earned an M.A. in 1968 and her Ph.D. in social anthropology in 1970 from Harvard University, where she was a doctoral student in the Harvard Department of Social Relations. Her doctoral dissertation was titled, "Husband, mother, and social network in relation to the maternal response". In 1981, she earned an M.B.A. from Vanderbilt University.
+
+Career and opinions
+
+Abernethy was a post-doctoral researcher and faculty member at Harvard Medical School in the early 1970s. She left Harvard when she was offered a position at Vanderbilt University in Nashville, Tennessee and described the experience of leaving Massachusetts in her 2023 book, Born Abroad: A Patriot’s Tale of Choice and Chance “The exuberance with which I drove out of Massachusetts (gun-controlled Taxachusetts) toward Tennessee in my little Ford can hardly be imagined.”
+She remained at Vanderbilt for 20 years, working in the Department of Psychiatry of the Vanderbilt School of Medicine from 1975 to 1999. She was appointed as Assistant Professor of Psychiatry, promoted to Associate Professor in 1976 and Professor in 1980. She retired in 1999, and still retains an office on campus as Professor Emerita. She is an anthropology fellow of the American Association for the Advancement of Science.
+An outspoken opponent of immigration, she has called for a complete moratorium on immigration into the United States. She claims that immigrants devalue the workforce, deplete scarce resources, adversely impact carrying capacity, and that Third World immigration has led to a rise in dangerous diseases within the United States. She has countered claims of racism against her by pointing to her friendship with Jesse Lee Peterson.
+In a letter to The Washington Times published on September 30, 2004, she rejected their reporting of her as a "self-described 'racial separatist'", preferring "ethnic separatist." The Anti-Defamation League in 2012 described her as being a "white supremacist."
+On June 29, 2011, the American Third Position (now the American Freedom Party), a whites-only party, announced that she had joined their board of directors. She was later nominated as their vice presidential nominee. Abernethy ran in election for vice president of the United States in 2012 as the running mate of Merlin Miller, who ran for president, in the 2012 U.S. presidential election, gaining a total of 12,900 votes nationally.
+
+Fertility-opportunity hypothesis
+Her research has focused on the issues of population and culture. Her best known work discounts the demographic transition theory, which holds that fertility drops as women become more educated and contraceptives become more available. In its place, she has developed a ″fertility-opportunity hypothesis", which states that fertility follows perceived economic opportunity. A corollary to the hypothesis is that food aid to developing nations only exacerbates overpopulation. She has advocated in favor of microloans to women in the place of international aid because she believes that they allow improvement in the lives of families without leading to higher fertility.
+She has opposed programs that would spur economic development in less developed countries on the grounds that they are self-defeating. For the December 1994 issue of The Atlantic Monthly, she wrote an article entitled "Optimism and Overpopulation" in which she argued that "efforts to alleviate poverty often spur population growth, as does leaving open the door to immigration. Subsidies, windfalls, and the prospect of economic opportunity remove the immediacy of needing to conserve. The mantras of democracy, redistribution, and economic development raise expectations and fertility rates, fostering population growth and thereby steepening a downward environmental and economic spiral."
+
+Positions held and publications
+From 1989 to 1999, she served as the editor of the academic journal Population and Environment. She also served on the editorial board of The Citizen Informer, the newsletter of the Council of Conservative Citizens (CofCC), a neo-Confederate organization. She has also appeared as a guest on the CofCC-affiliated radio show, The Political Cesspool hosted by James Edwards. Abernethy regularly addresses meetings of the CofCC. In 2004, she was listed as a member of the editorial advisory board of The Occidental Quarterly, a white nationalist journal, on which she remained in 2013. She serves on the board of directors of the Carrying Capacity Network, an immigration-reduction and sustainability organization, and also on the Board of Population-Environment BALANCE, which advocates an immigration moratorium in order to balance population size with resources and the environment's capacity to cope with pollution. However, Population-Environment BALANCE has been characterized as an organization that promotes a right-wing, nativist agenda under the guise of environmentalist activism.
+Abernethy has written or edited several books, including: Population Politics: The Choices that Shape our Future (1993) and Population Pressure and Cultural Adjustment (1979). Abernethy has written articles that have appeared in Chronicles, The Social Contract Press, The Atlantic Monthly, and numerous academic journals. She has also made occasional contributions to the weblog VDARE, which have been republished by the Center for Immigration Studies (CIS), an organisation which the SPLC describes as being a hate group. In a blog post circulated by CIS in 2012, she said, responding to Karl Rove, the George W. Bush administration strategist, "those who advocate continued mass immigration choose the path of national suicide."
+At a shared conference of the American Freedom Party and the Council of Conservative Citizens in June 2018 at the Montgomery Bell State Park in Tennessee, Abernethy was a speaker along with Kevin MacDonald, also a leading member of the AFP, and David Duke who was the principal speaker.
+In 2012, the Anti-Defamation League referred to Abernathy as an "unabashed white supremacist", and the Southern Poverty Law Center called her a "full-fledged professor of hate," adding her to a list of 30 new activists heading the radical right. Abernethy denied that she was a "white supremacist," preferring to describe herself as an "ethnic separatist."
+
+Protect Arizona Now
+She was involved in Arizona's Proposition 200 campaign. She was Chair of the National Advisory Board of the Protect Arizona Now (PAN) committee which promoted Proposition 200 in that state's 2004 election. Proposition 200, which passed, limited undocumented immigrants access to government benefits and required proof of citizenship for registering to vote.
+During the campaign, she replied to a journalist's question about her views by stating how she distinguished between being a separatist, rather than a supremacist: "Groups tend to self-segregate. I know that I'm not a supremacist. I know that ethnic groups are more comfortable with their own kind."
+
+References
+
+External links
+Official website
+Anthropologist proposes link between per capita energy use and fertility rate - Vanderbilt University news release (archived copy)

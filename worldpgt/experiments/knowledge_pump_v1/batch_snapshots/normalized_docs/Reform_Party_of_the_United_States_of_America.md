@@ -1,7 +1,7 @@
 # Reform Party of the United States of America
 
 Source: https://en.wikipedia.org/wiki/Reform_Party_of_the_United_States_of_America
-Retrieved at: 2026-06-22T22:23:02Z
+Retrieved at: 2026-06-24T00:51:03Z
 Revision ID: 1359245124
 Raw text SHA256: b228437253b61b4e654904171727e84bd269afbc4ab16f7ab816eac416baf873
 Status: LOCAL_WIKIPEDIA_SNAPSHOT

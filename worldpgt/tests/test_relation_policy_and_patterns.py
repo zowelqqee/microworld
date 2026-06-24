@@ -20,6 +20,7 @@ from worldpgt.relation_extraction_v2.relation_policy import (
     is_current_sensitive,
     is_volatile_predicate,
     freshness_window_days,
+    relation_intent_from_text,
     should_hedge_render,
 )
 from worldpgt.relation_extraction_v2.relation_patterns import PATTERNS
@@ -57,6 +58,13 @@ class TestCurrentSensitivePredicates:
 
     def test_helper_develops_false(self):
         assert is_current_sensitive("develops") is False
+
+    @pytest.mark.parametrize(
+        "predicate",
+        ["uses", "provides", "enables", "used_for", "works_by"],
+    )
+    def test_explanatory_predicates_not_current_sensitive(self, predicate):
+        assert is_current_sensitive(predicate) is False
 
 
 class TestFreshnessWindows:
@@ -167,6 +175,31 @@ class TestVolatilePatternSpecs:
     def test_valued_at_passive_pattern_exists(self):
         ids = {p.pattern_id for p in PATTERNS}
         assert "valued_at_passive" in ids
+
+
+class TestExplanatoryPatternSpecs:
+    @pytest.mark.parametrize(
+        "predicate",
+        ["uses", "provides", "enables", "used_for", "works_by"],
+    )
+    def test_explanatory_patterns_exist_and_are_semi_stable(self, predicate):
+        matches = [p for p in PATTERNS if p.relation == predicate]
+        assert matches, f"No PatternSpec for {predicate}"
+        assert all(p.stability == "semi_stable" for p in matches)
+        assert all(p.risk == "medium" for p in matches)
+
+    @pytest.mark.parametrize(
+        ("text", "predicate"),
+        [
+            ("What does Starlink provide?", "provides"),
+            ("What does Starlink enable?", "enables"),
+            ("What is Falcon 9 used for?", "used_for"),
+            ("How does Starlink work by routing traffic?", "works_by"),
+            ("What does Starlink use?", "uses"),
+        ],
+    )
+    def test_explanatory_keywords_map_to_relation_intents(self, text, predicate):
+        assert relation_intent_from_text(text) == predicate
 
     def test_leads_active_pattern_exists(self):
         ids = {p.pattern_id for p in PATTERNS}

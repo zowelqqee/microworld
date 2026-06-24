@@ -149,7 +149,7 @@ class EntityAnswerPlanner:
             audit_reason=None,
             evidence=evidence,
             render_template="open_synthesis",
-            render_args={"synthesis": result},
+            render_args={"synthesis": result, "question": analyzed.question},
             confidence=0.9,
         )
 

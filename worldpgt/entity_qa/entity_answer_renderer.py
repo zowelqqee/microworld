@@ -8,6 +8,10 @@ from __future__ import annotations
 
 import re
 
+from worldpgt.entity_qa.semantic_speech_planner import (
+    build_speech_plan,
+    render_speech_plan,
+)
 from worldpgt.entity_qa.types import EntityQAPlan
 from worldpgt.knowledge.temporal_classification import temporal_caveat, weakest_temporal_class
 from worldpgt.relation_extraction_v2.relation_policy import should_hedge_render
@@ -55,6 +59,11 @@ _VERB_OBJECT_PHRASE: dict[str, str] = {
     "offers": "is offered on",
     "runs_on": "runs on",
     "supports": "supports",
+    "uses": "uses",
+    "provides": "provides",
+    "enables": "enables",
+    "used_for": "is used for",
+    "works_by": "works by",
     "variant_of": "is a variant of",
 }
 
@@ -148,106 +157,29 @@ def _definition_sentence(subject: str, def_text: str) -> str:
     return f"{subject} is {article} {def_text}."
 
 
-# Forward predicate -> "{subject} <clause> {objects}." (subject is the actor).
-_FWD_SYNTH_VERB: dict[str, str] = {
-    "develops": "develops",
-    "produces": "produces",
-    "publishes": "publishes",
-    "known_for": "is known for",
-    "leader_of": "leads",
-    "founded": "founded",
-    "owned_by": "is owned by",
-    "operates": "operates",
-    "provides": "provides",
-}
-# Inverse predicate -> "{subject} <clause> {others}." (subject is the target).
-_INV_SYNTH_VERB: dict[str, str] = {
-    "founded": "was founded by",
-    "leader_of": "is led by",
-    "owned_by": "owns",
-    "develops": "is developed by",
-    "produces": "is produced by",
-    "publishes": "is published by",
-}
-
-
-def _synthesis_clause(subject: str, group) -> str:
-    objs = _join_list(list(group.objects))
-    pred = group.predicate
-    if group.kind == "inverse_relation":
-        verb = _INV_SYNTH_VERB.get(pred)
-        if verb:
-            return f"{subject} {verb} {objs}."
-        return f"{subject} is linked to {objs} via {pred}."
-    # forward relation
-    if pred == "is_a":
-        return f"{subject} is {_article_phrase(objs)}."
-    verb = _FWD_SYNTH_VERB.get(pred)
-    if verb:
-        return f"{subject} {verb} {objs}."
-    return f"{subject} is linked to {objs} via {pred}."
-
-
-def _snapshot_clause(subject: str, group) -> str:
-    obj = group.objects[0] if group.objects else ""
-    pred_phrase = group.predicate.replace("_", " ")
-    source = group.source_name or "an unknown source"
-    as_of = group.as_of or "an unknown date"
-    return (
-        f"According to {source} (as of {as_of}), {subject}'s {pred_phrase} is {obj} "
-        f"— a volatile, source-qualified estimate that should be rechecked."
-    )
-
-
-def _synthesis_footer(verified: int, snapshot: int, unknown_notes: list[str]) -> str:
-    segments: list[str] = []
-    if verified:
-        noun = "fact" if verified == 1 else "facts"
-        segments.append(f"VERIFIED — {verified} {noun} from knowledge base")
-    if snapshot:
-        noun = "fact" if snapshot == 1 else "facts"
-        segments.append(f"SNAPSHOT — {snapshot} dated {noun}")
-    if unknown_notes:
-        segments.append(f"UNKNOWN — {_join_list(list(unknown_notes))}")
-    if not segments:
-        segments.append("UNKNOWN — no verified facts found")
-    return "[" + " | ".join(segments) + "]"
-
-
 def _render_open_synthesis(args: dict) -> str:
     result = args.get("synthesis")
     if result is None or not getattr(result, "matched", False):
         return "I don't have verified information about this."
 
     subject = result.subject or ""
-    lines: list[str] = []
-
+    prefix = ""
     if result.match_kind == "keyword":
-        lines.append(
+        prefix = (
             f"I don't have an entity named exactly that, but here is the closest "
             f"match I know — {subject}:"
         )
 
-    if result.definition:
-        lines.append(_definition_sentence(subject, result.definition))
-    elif result.entity_type:
-        lines.append(f"{subject} is {_article_phrase(result.entity_type)}.")
-
-    snapshot_lines: list[str] = []
-    for group in result.groups:
-        if group.tier == "SNAPSHOT":
-            snapshot_lines.append(_snapshot_clause(subject, group))
-        else:
-            lines.append(_synthesis_clause(subject, group))
-    lines.extend(snapshot_lines)
-
-    for note in result.unknown_notes:
-        lines.append(f"I don't have verified information about {note}.")
-
-    footer = _synthesis_footer(
-        result.verified_count, result.snapshot_count, result.unknown_notes
+    body = render_speech_plan(
+        build_speech_plan(
+            result,
+            str(args.get("question") or ""),
+            answer_style=str(args.get("answer_style") or "normal"),
+        )
     )
-    return " ".join(lines) + "\n\n" + footer
+    if prefix:
+        body = f"{prefix} {body}".strip()
+    return body
 
 
 def _render_define(args: dict) -> str:
@@ -374,6 +306,16 @@ def _render_relation(args: dict) -> str:
             sentences.append(f"{subject} produces {obj_list}.")
         elif pred == "develops":
             sentences.append(f"{subject} develops {obj_list}.")
+        elif pred == "uses":
+            sentences.append(f"{subject} uses {obj_list}.")
+        elif pred == "provides":
+            sentences.append(f"{subject} provides {obj_list}.")
+        elif pred == "enables":
+            sentences.append(f"{subject} enables {obj_list}.")
+        elif pred == "used_for":
+            sentences.append(f"{subject} is used for {obj_list}.")
+        elif pred == "works_by":
+            sentences.append(f"{subject} works by {obj_list}.")
         elif pred == "publishes":
             sentences.append(f"{subject} publishes {obj_list}.")
         elif pred == "founded":
@@ -641,9 +583,3 @@ def _article_phrase(text: str) -> str:
         return text
     article = "an" if text[0].lower() in "aeiou" else "a"
     return f"{article} {text}"
-
-
-def _lowercase_first(s: str) -> str:
-    if not s:
-        return s
-    return s[0].lower() + s[1:]

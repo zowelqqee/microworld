@@ -1,780 +1,1510 @@
 source_page,candidate_count,relation_count,definition_count
-Comenity Capital Bank,11,11,0
-United States Coast Guard,9,8,1
+Comenity Capital Bank,13,13,0
+Microsoft SQL Server,12,12,0
+Berkeley DB,10,10,0
+Google Cloud,10,9,1
+Mission Control Center,10,10,0
+United States Coast Guard,10,9,1
+Satellite Radio,9,9,0
+Government Services,8,8,0
+Microsoft Azure,8,7,1
 Saturn IB,8,8,0
-Government Services,6,6,0
-Jaguar I-Pace,6,6,0
-Orbital Sciences Pegasus,6,6,0
-United States Court of Appeals for the Ninth Circuit,6,6,0
-Informix Software,5,5,0
+Facial recognition system,7,7,0
+Jaguar I-Pace,7,7,0
+Orbital Sciences Pegasus,7,7,0
+Orbiting Carbon Observatory,7,7,0
+Political positions of Paul Ryan,7,7,0
+U.S. Bancorp,7,7,0
+United States Air Force Basic Military Training,7,6,1
+United States Court of Appeals for the Ninth Circuit,7,7,0
+CST-100 Starliner,6,5,1
+Fourth Industrial Revolution,6,5,1
+Henrik Fisker,6,5,1
+Informix Software,6,6,0
+Intel Corporation,6,5,1
+London Stock Exchange,6,5,1
+Long March,6,6,0
+Oracle Database,6,6,0
+Paramount Skydance,6,6,0
+Sergey Brin,6,5,1
+Stanford University,6,5,1
+The Mercury News,6,5,1
+University of Pretoria,6,5,1
+Air Force Reserve Officer Training Corps,5,5,0
+Amsterdam Stock Exchange,5,4,1
+Andersen Consulting,5,4,1
+Barry Goldwater,5,4,1
+Bloomberg Industry Group,5,5,0
+Boeing X-37,5,4,1
+Cecil Rhodes,5,4,1
+Community Memory,5,4,1
+Detroit Electric,5,4,1
+Elevation Partners,5,5,0
+Everytown for Gun Safety,5,4,1
+Giga Berlin,5,4,1
+Government Accountability Office,5,4,1
+Illinois Freedom Caucus,5,4,1
+International Docking System Standard,5,4,1
+Near Earth Network,5,5,0
+New York State Banking Department,5,5,0
+O. Douglas,5,4,1
+Oracle E-Business Suite,5,5,0
+Otis Worldwide,5,5,0
+Party for Socialism and Liberation,5,4,1
 Pershing II,5,4,1
+President Eisenhower,5,5,0
+Public domain,5,5,0
+Raytheon Technologies,5,5,0
+Ronald Reagan,5,4,1
+Sequoia Capital,5,5,0
 SpaceX Demo-2,5,4,1
+St. Louis,5,5,0
+Texas,5,4,1
+Time Magazine,5,5,0
+United Technologies,5,5,0
+Williams College,5,4,1
+Adam Smith,4,3,1
+Alejandro Agag,4,3,1
+Aliko Dangote,4,3,1
+Amazon Bookstore Cooperative,4,3,1
+Amazon China,4,4,0
+Amazon Kindle,4,3,1
 American City Business Journals,4,4,0
+American Vegetarian Party,4,3,1
+Andrew Carnegie,4,3,1
+Anousheh Ansari,4,3,1
+Arthur C. Clarke,4,3,1
+BNN Bloomberg,4,4,0
+Blade Runner,4,4,0
 Boca Chica,4,4,0
+Bombay Stock Exchange,4,3,1
+Boston University,4,3,1
+Charles D. Walker,4,3,1
+Charles Koch,4,3,1
+Christopher Payne,4,3,1
+Chrysler Corporation,4,4,0
 Compaq Computer,4,3,1
-Elevation Partners,4,4,0
-Intel Corporation,4,3,1
-London Stock Exchange,4,3,1
-Orbiting Carbon Observatory,4,4,0
-Paramount Skydance,4,4,0
-Public domain,4,4,0
+Dawn Aerospace,4,3,1
+Dream Chaser,4,4,0
+Elon Musk,4,4,0
+Fashion Group,4,4,0
+Fellow of the Royal Society,4,3,1
+France,4,3,1
+General Motors,4,3,1
+Germany,4,3,1
+Giga Nevada,4,3,1
+Great Lakes Megaregion,4,4,0
+Hart Senate Office Building,4,3,1
+Harvard University,4,3,1
+Hughes Aircraft Co,4,3,1
+JB Straubel,4,3,1
+James A. Garfield,4,4,0
+Jeff Bezos,4,3,1
+Jersey City,4,3,1
+John C. Breckinridge,4,3,1
+Justice Party (United States),4,3,1
+Kamen Rider Amazon,4,3,1
+Ketanji Brown Jackson,4,3,1
+LG Chem,4,4,0
+Los Angeles Auto,4,3,1
+Marty Markowitz,4,3,1
+Mazda Roadster,4,3,1
+"Medford, Massachusetts",4,3,1
+Merlin,4,3,1
+Michael Bloomberg,4,3,1
+Middle East,4,3,1
+Mises Institute,4,3,1
+Mississippi River,4,3,1
+Moet Hennessy,4,3,1
+NASA Railroad,4,4,0
+Nevada Corporation,4,3,1
+OpenAI Global,4,4,0
+Oracle Enterprise Manager,4,3,1
+Oracle NoSQL Database,4,3,1
+Pat Buchanan,4,3,1
+Patria Plc,4,3,1
+PeopleSoft EnterpriseOne,4,4,0
+Peter Grauer,4,3,1
+Point Arguello,4,3,1
+RSS Kármán Line,4,4,0
+Ralph White,4,3,1
+Ray Kroc,4,3,1
+Rockwell International,4,3,1
 Rolls-Royce Merlin,4,4,0
-Satellite Radio,4,4,0
+Royal Holloway,4,4,0
+Royal Mail,4,3,1
+Rupert Murdoch,4,3,1
+Russia,4,3,1
+San Jose International,4,4,0
+Securities Act,4,4,0
+September,4,3,1
+Shirley Chisholm,4,3,1
+Silicon Valley,4,3,1
+Silver Lake Partners,4,4,0
+Sony PlayStation,4,4,0
+South China Morning Post,4,4,0
+TED (conference),4,3,1
+Tableau Software,4,4,0
+The Times,4,3,1
+Thomas Carlyle,4,3,1
+U.S. Customs and Border Protection,4,4,0
+Uniforms of the United States Air Force,4,4,0
+United States Copyright Office,4,4,0
 United States Court of Appeals for the Seventh Circuit,4,4,0
+United States Marine Corps History Division,4,3,1
 United States Secretary of Defense,4,4,0
-Amazon Bookstore Cooperative,3,2,1
+United States Southern Command,4,4,0
+Volvo Amazon,4,3,1
+Warner Bros,4,3,1
+Washington Post,4,3,1
+Web Services,4,4,0
+William R. King,4,3,1
+William Randolph,4,3,1
+World Economic Forum,4,3,1
+X (formerly Twitter),4,4,0
+1928 Farmer–Labor National Convention,3,3,0
+Accounting Standards Board,3,2,1
+Advanced Vehicle Systems,3,2,1
+African Americans in Alabama,3,3,0
+Air Combat Command,3,3,0
+Airbus,3,2,1
+Airspan Networks,3,2,1
+Amazon Drive,3,2,1
+Amazon Go,3,2,1
+Amazon Locker,3,3,0
+Amazon Prime Pantry,3,2,1
+Amazon Rekognition,3,3,0
 Ampex Corporation,3,2,1
+Andrew Morrison,3,2,1
+Anglican Church,3,2,1
+Apparel Group,3,2,1
+Apple Computer,3,3,0
+Armadillo Aerospace,3,2,1
+Arthur Wing Pinero,3,2,1
 Aston Martin,3,2,1
-BNN Bloomberg,3,3,0
+BYD T3,3,3,0
+Bellevue 600,3,2,1
 Berkshire Hathaway,3,3,0
-Boeing X-37,3,2,1
-Cecil Rhodes,3,2,1
-Community Memory,3,2,1
+Bernard Arnault,3,3,0
+Bezos Expeditions,3,3,0
+Big Board,3,3,0
+Bloomberg Beta,3,3,0
+Bloomberg Government,3,2,1
+Bloomberg Radio,3,2,1
+Bloomberg View,3,2,1
+Brian Sewell,3,2,1
+C-124 Globemaster,3,3,0
+CBS News,3,2,1
+Campaign for Tobacco-Free Kids,3,2,1
+Capitol Power Plant,3,2,1
+Carolina Stadium,3,2,1
+Chevrolet Volt,3,2,1
+Chicago Express,3,2,1
+Civil Air Patrol,3,2,1
+Civil Aviation Organization,3,2,1
+Combined Charging System,3,2,1
+Constitution Party National Convention,3,3,0
+Cornel West,3,3,0
+Cornelius Vanderbilt,3,3,0
+Corporations Act,3,2,1
 Council for National Policy,3,2,1
+Daniel Doctoroff,3,2,1
+Dennis Tito,3,2,1
+Deutsche Post,3,2,1
 Digital Services Act,3,2,1
-General Motors,3,2,1
-Giga Nevada,3,2,1
-Google Cloud,3,2,1
-Harvard University,3,2,1
-Mises Institute,3,2,1
-Mission Control Center,3,3,0
+Douglas Aircraft Company,3,3,0
+Edward Bernays,3,2,1
+Equal Rights Party (United States),3,2,1
+Fifth Party System,3,2,1
+Financial Accounting Standards Board,3,2,1
+Financial Stability Board,3,2,1
+Ford Motor Company,3,2,1
+Foundation for Moral Law,3,2,1
+George W,3,2,1
+George White (Ohio politician),3,2,1
+Gigafactory New York,3,2,1
+Giorgio Armani,3,3,0
+Gordon Cooper,3,2,1
+Gordon Moore,3,3,0
+Groupe Arnault,3,2,1
+Gun Owners of America,3,2,1
+Helen Sharman,3,3,0
+Hyder Ali,3,3,0
+Indian maritime history,3,3,0
+Internet America,3,2,1
+Iridium Communications Inc,3,3,0
+Jaguar Land Rover,3,2,1
+James Wilson (Founding Father),3,2,1
+Japan,3,2,1
+Jean-Baptiste Say,3,2,1
+Jersey Standard,3,3,0
+Jewish News,3,2,1
+John A. Brooks,3,2,1
+John Adams,3,2,1
+John Birch Society,3,3,0
+John Coyle White,3,2,1
+John D. Rockefeller,3,2,1
+John Glenn,3,3,0
+John Hickenlooper,3,2,1
+John McAfee,3,3,0
+Johns Hopkins University,3,2,1
+Joint Base,3,3,0
+Jose Mugrabi,3,2,1
+"Kingston, Ontario",3,2,1
+Land Rover,3,2,1
+Larry Page,3,2,1
+Laurie Hays,3,2,1
+Leland Stanford,3,2,1
+Leonard Peltier,3,2,1
+Liberty University,3,3,0
+Loro Piana,3,2,1
+Mandate for Leadership,3,2,1
+Max Levchin,3,3,0
+Media Research Center,3,3,0
+Mercedes-Benz Group,3,2,1
+Merritt Island,3,2,1
+Michael Flynn,3,2,1
+Michael Liebreich,3,2,1
+Modern immigration to the United Kingdom,3,3,0
+Mojave Desert,3,2,1
+Morgan Motor Company,3,3,0
+Musk Foundation,3,3,0
+Nanobots (album),3,3,0
+Nasdaq OMX Group,3,3,0
+National Guard (United States),3,3,0
+National Merit,3,2,1
+National Space Society,3,3,0
+National Taxpayers Union,3,2,1
+Naval History and Heritage Command,3,2,1
+Nevada Republican Party,3,2,1
+New York Times,3,3,0
+O'Neill House Office Building,3,2,1
+Obvious Corporation,3,3,0
+Officer Candidate School (United States Army),3,2,1
+Operating system,3,3,0
+Oracle Cloud,3,2,1
 Oracle Rdb,3,2,1
-Raytheon Technologies,3,3,0
+Paul Sahre,3,2,1
+Personal Choice Party,3,3,0
+Pew Research Center,3,2,1
+Port Canaveral,3,3,0
+Precision Neuroscience,3,3,0
+President Barack,3,2,1
+President Kennedy,3,3,0
+Princeton University,3,2,1
+Quinnipiac University Polling Institute,3,2,1
+Red Bull,3,3,0
+Redwood Shores,3,2,1
+Republican Party (US),3,2,1
+Republican Party of Guam,3,3,0
+Republican Party of New Mexico,3,2,1
+Republican Party of Puerto Rico,3,2,1
+Revolutionary Communists of America,3,2,1
+Robert Bork,3,3,0
+Robert H. Michel,3,2,1
+Robert Hadfield,3,2,1
 Rocket Science Games,3,2,1
-Royal Holloway,3,3,0
+Roger B. Taney,3,2,1
+Roots Blower Company,3,2,1
+Rufus King,3,3,0
+Russell Kirk Center for Cultural Renewal,3,2,1
+SM-65 Atlas,3,3,0
 Sam Altman,3,2,1
-Stanford University,3,2,1
+Saturn Corporation,3,2,1
+Small Business Administration,3,2,1
+Smith Electric Vehicles,3,2,1
+SpaceX Dragon,3,3,0
+SpaceX Hawthorne,3,3,0
+SpaceX Starlink,3,2,1
+Sperry Corporation,3,2,1
+Super Tuesday,3,3,0
+Tenth Air Force,3,2,1
+Tesla Powerpack,3,2,1
+Tesla Supercharger,3,2,1
 Test Site,3,2,1
-The Times,3,2,1
+The American Conservative,3,2,1
+The Business Council,3,2,1
+The Epoch Times,3,2,1
+Third Air Force,3,3,0
+Thomas Jefferson Building,3,2,1
+Thomas Taggart,3,2,1
+Titan II,3,3,0
+Tom Wheeler,3,2,1
 U.S. Congress,3,2,1
+U.S. News & World Report,3,2,1
+US Air Force,3,2,1
+US Armed Forces,3,2,1
 United States Air Force Honor Guard,3,2,1
-United Technologies,3,3,0
-Warner Bros,3,2,1
+United States Coast Guard Training Center Cape May,3,2,1
+United States census,3,2,1
+University of Pennsylvania,3,2,1
+Valor Equity Partners,3,2,1
+Variety (magazine),3,3,0
+Virgin Mobile,3,2,1
+Volkswagen Golf,3,3,0
+Vulcan Centaur,3,2,1
+Wallace H. White,3,2,1
+Washington State Republican Party,3,2,1
+Whaling in Western Australia,3,3,0
+William Jennings Bryan,3,2,1
+William Wirt (attorney general),3,2,1
 Women Airforce Service Pilots,3,2,1
-Advanced Vehicle Systems,2,1,1
+World Values Survey,3,2,1
+XCOR Aerospace,3,3,0
+York City,3,2,1
+Yoshua Bengio,3,2,1
+Yuri Gagarin,3,2,1
+École Centrale Paris,3,3,0
+1952 Republican National Convention,2,2,0
+1980 Republican Party presidential primaries,2,2,0
+Abbott Laboratories,2,2,0
+Abe Fortas,2,1,1
 Aerospace manufacturing,2,2,0
 Affirm (company),2,2,0
+Air Force Base,2,2,0
 Air Force Missile Test Center,2,1,1
-Airspan Networks,2,1,1
-Andersen Consulting,2,1,1
-Anousheh Ansari,2,1,1
-Apparel Group,2,1,1
-Apple Computer,2,2,0
+Air Force Officer Training School,2,1,1
+Air Force Research Laboratory,2,1,1
+Air Force Specialty Code,2,1,1
+Air Resources Board,2,1,1
+Akamai Technologies,2,2,0
+Akira Yoshino,2,1,1
+Alan Shepard,2,2,0
+Amazon Basin,2,1,1
+Amazon Dash,2,1,1
+Amazon Echo,2,1,1
+Amazon Glacier,2,1,1
+Amazon Redshift,2,1,1
+Amazon Reef,2,1,1
+Amazonian Guard,2,1,1
+American Broadcasting Company,2,2,0
+American Party (1924),2,1,1
+Andreas Kaplan,2,2,0
+Andrej Karpathy,2,1,1
+Apple II,2,1,1
+April,2,1,1
+Arizona Republican Party,2,1,1
+Army Ballistic Missile Agency,2,2,0
+Arthur Ransome,2,1,1
+Article Three of the United States Constitution,2,2,0
 Asahi Kasei,2,1,1
+Ashanti Empire,2,1,1
+Audible (service),2,2,0
+Axiom Space,2,2,0
+B-50 Superfortress,2,1,1
+B. C. Forbes,2,1,1
+BSE SENSEX,2,1,1
+Bachelor of Science,2,1,1
+Baidu Tieba,2,1,1
 Bank of North America,2,1,1
-Berkeley DB,2,2,0
-Bloomberg Government,2,1,1
+Barack Obama 2008 presidential campaign,2,2,0
+Barbara Jordan,2,1,1
+Barbara Morgan,2,2,0
+Bard College,2,1,1
+Bell Telephone Laboratories,2,2,0
+Bentley Motors Limited,2,1,1
+Bexar County,2,1,1
+Bill Gates,2,1,1
 Bloomberg Innovation Index,2,2,0
-Bloomberg Radio,2,1,1
-Bloomberg View,2,1,1
-Bombay Stock Exchange,2,1,1
-CBS News,2,1,1
-Chicago Express,2,1,1
-Chrysler Corporation,2,2,0
-Daniel Doctoroff,2,1,1
+Bloomberg Law,2,1,1
+Blue Origin Goddard,2,1,1
+Blue Origin NS-19,2,1,1
+Blue Origin NS-20,2,1,1
+Blue Origin NS-21,2,1,1
+Bob Miner,2,1,1
+Bombardier Aerospace,2,2,0
+Borough President,2,2,0
+Brian Moore (political activist),2,1,1
+Bruce Forbes,2,1,1
+Buttonwood Agreement,2,1,1
+Campaign finance reform amendment,2,2,0
+Canada,2,1,1
+Canada convoy protest,2,1,1
+Canadian Space Agency,2,1,1
+Cargo Dragon,2,1,1
+Carl Menger,2,2,0
+Central Intelligence Agency,2,2,0
+Charles Fritts,2,1,1
+Christian Coalition of America,2,2,0
+Christian Dior,2,1,1
+Christian Dior SE,2,2,0
+Citizen Watch,2,2,0
+City Racing,2,1,1
+Civil rights movements,2,1,1
+Clark University,2,1,1
+Colonial history of the United States,2,2,0
+Commercial Spaceflight Federation,2,2,0
+Congressional Budget Office,2,1,1
+Congressional Hispanic Caucus,2,1,1
+Control Unit,2,2,0
+"Cotulla, Texas",2,1,1
+Covenant of Mayors,2,1,1
+Dan Schulman,2,2,0
+Daniel J. Boorstin,2,2,0
+Deep Space Climate Observatory,2,1,1
+Deep Space Network,2,1,1
+Dell Technologies,2,2,0
+Demand for money,2,2,0
+Dennis Kucinich 2008 presidential campaign,2,2,0
+Deutsche Bank,2,2,0
+Disability in the United States,2,1,1
+Dodger Stadium,2,1,1
 Dow Jones,2,1,1
-Dream Chaser,2,2,0
-Ford Motor Company,2,1,1
-Gigafactory New York,2,1,1
-Government Accountability Office,2,1,1
-Henrik Fisker,2,1,1
+Dragon,2,2,0
+Dragon C2,2,1,1
+Drake Landing Solar Community,2,1,1
+Duke University,2,1,1
+Dutch East India,2,2,0
+E. Shaw,2,2,0
+EADS Astrium,2,2,0
+Early Modern,2,2,0
+East India,2,1,1
+East North Central States,2,1,1
+Edwardsville Amazon warehouse collapse,2,2,0
+Elmer Sperry,2,1,1
+Engineering,2,1,1
+English language,2,2,0
+Environmental Assessment,2,1,1
+Eric Holder,2,1,1
+F4U Corsair,2,2,0
+Falcon Heavy test flight,2,1,1
+Farris Bryant,2,1,1
+Federal Reserve System,2,1,1
+Ferdinand Pecora,2,1,1
+Financial News Network,2,2,0
+Fire Drake Manual,2,2,0
+Flight Test,2,1,1
+Florida,2,1,1
+Foothill Transit,2,1,1
+Forbes Travel Guide,2,1,1
+Ford F-150 Lightning,2,2,0
+Ford Motor Company Limited,2,2,0
+Fort Lauderdale,2,1,1
+Foundation Series,2,1,1
+Francis E. Warren,2,1,1
+Frank L. VanderSloot,2,1,1
+Franklin News Foundation,2,2,0
+Fred Thompson,2,1,1
+Frieze Art Fair,2,1,1
+Full Thrust,2,1,1
+Gaia Online,2,1,1
+Game Boy,2,1,1
+Gary Hume,2,1,1
+Gary Johnson,2,1,1
+General Public License,2,1,1
+George Wallace,2,1,1
+Georgia (U.S. state),2,2,0
+Georgia Freedom Caucus,2,1,1
+Georgia Republican Party,2,1,1
+Gigafactory Texas,2,2,0
+Ginni Thomas,2,1,1
+Giving Pledge,2,1,1
+Glen Taylor,2,1,1
+Goddard Space Flight Center,2,1,1
+Great Lakes,2,2,0
+Great Recession in Oceania,2,1,1
+Greg Brockman,2,1,1
+Gulf Coast of the United States,2,1,1
+H. W. Bush,2,2,0
+Hans Moravec,2,1,1
+Harry Reid,2,1,1
+Harvard Business Review,2,2,0
+Harvard Business School,2,1,1
+Health Organization,2,2,0
+Henry Ford,2,2,0
+Hewlett Packard,2,2,0
+High Holidays,2,2,0
+History of Amazon,2,2,0
+Homeland Security,2,2,0
 Honeywell Aerospace,2,1,1
-Jaguar Land Rover,2,1,1
-Jersey Standard,2,2,0
-LG Chem,2,2,0
+Horniman Circle,2,1,1
+Howard University College of Medicine,2,1,1
+Hubert Work,2,1,1
+Hyperloop Transportation Technologies,2,2,0
+IRT Lexington Avenue Line,2,2,0
+ISPs,2,2,0
+ITP Aero,2,1,1
+Ilya Sutskever,2,1,1
+India,2,1,1
+Indian Ocean,2,1,1
+Inspiration Mars,2,1,1
+Integrated Services,2,2,0
+International Airport,2,2,0
+International Astronautical Federation,2,1,1
+International Energy Agency,2,1,1
+Islam in the United States,2,2,0
+Jack Warner Estate,2,1,1
+James A. Garfield Monument,2,2,0
+James H. Clark,2,1,1
+James J. Hill,2,1,1
+James K. Polk,2,2,0
+January,2,1,1
+Japan–United States relations,2,2,0
+Jeff Bezos phone hacking incident,2,2,0
+Jensen Huang,2,2,0
+Jesse Jackson,2,2,0
+Jet Propulsion,2,1,1
+Jewish Telegraph Agency,2,1,1
+Jewish communities,2,2,0
+Jim Cantrell,2,1,1
+Jo Jorgensen 2020 presidential campaign,2,2,0
+John Boehner,2,1,1
+John Foster Dulles,2,1,1
+John G. Carlisle,2,1,1
+John Hay,2,2,0
+John Micklethwait,2,1,1
+John Nicolay,2,1,1
+John Overdeck,2,1,1
+John Sirica,2,1,1
+Joint Long Range Proving Ground,2,1,1
+Joseph Ellison,2,1,1
+Joseph McCarthy,2,1,1
+Joseph Schumpeter,2,1,1
+Kamen Rider,2,1,1
+Kansas Republican Party,2,1,1
+Kistler Aerospace,2,1,1
+Kristina M. Johnson,2,2,0
+Las Vegas,2,1,1
+Launch Services Program,2,2,0
+Lawrence Joseph Ellison,2,1,1
+League of Conservation Voters,2,2,0
+Logistics of the 2020 Republican National Convention,2,2,0
+Longworth House Office Building,2,2,0
+Los Angeles,2,1,1
+Los Angeles Air Force Base,2,1,1
+Los Angeles County,2,1,1
+Los Angeles Times,2,1,1
 Luminar Technologies,2,2,0
-Max Levchin,2,2,0
-Mercedes-Benz Group,2,1,1
-Michael Liebreich,2,1,1
-Moet Hennessy,2,1,1
-Morgan Motor Company,2,2,0
+Maine Republican Party,2,1,1
+Manned Spacecraft Center,2,2,0
+Marc Jacobs,2,1,1
+March,2,1,1
+Maritime history of Scotland,2,2,0
+Mark Callahan,2,2,0
+Mark Carney,2,2,0
+Mark Hurd,2,1,1
+Mark Krikorian (activist),2,1,1
+Mark R. Shaw,2,1,1
+Mark Zuckerberg,2,1,1
+Martin Van Buren,2,1,1
+Mary Meeker,2,2,0
+Mason Patrick,2,1,1
+Max Hodak,2,1,1
+McDonnell Douglas Corporation,2,1,1
+Medford High School (Massachusetts),2,1,1
+Mercury Control Center,2,1,1
+Miami Palmetto High,2,1,1
+Michael Arougheti,2,1,1
+Michael Faraday,2,1,1
+Michael J. Saylor,2,2,0
+Michael Knowles (political commentator),2,2,0
+Michael Lawrence Haider,2,1,1
+Mississippi Republican Party,2,1,1
+Missouri Freedom Caucus,2,1,1
+Missouri River,2,1,1
+Mithril Capital,2,2,0
+Modern Age (periodical),2,1,1
+Motor Car,2,2,0
+Motor Trend,2,2,0
+Municipal council,2,2,0
+Musk,2,1,1
+Muslims in the United States military,2,2,0
 MySQL AB,2,1,1
-Nanobots (album),2,2,0
+Nasarawa Amazons,2,1,1
+Nasdaq Nordic,2,1,1
+National Business Daily,2,1,1
+National Democratic Redistricting Committee,2,1,1
+National Federation of Democratic Women,2,1,1
+National Federation of Independent Business,2,1,1
+National Highway Traffic Safety Administration,2,1,1
+National League of Cities,2,1,1
 National Reconnaissance Office,2,1,1
-Nevada Corporation,2,1,1
-OpenAI Global,2,2,0
+National Statuary Hall Collection,2,2,0
+Neil Harbisson,2,1,1
+Network Solutions,2,1,1
+Neutron Star Interior Composition Explorer,2,1,1
+New Glenn,2,1,1
+New Hampshire,2,1,1
+New Horizons,2,1,1
+New Jersey Republican Party,2,1,1
+New Mexico,2,1,1
+New Party (United States),2,1,1
+New York City Hall,2,1,1
+Nikola Tesla,2,1,1
+Nobel Prize,2,2,0
+North Carolina Democratic Party,2,1,1
+North Carolina Republican Party,2,1,1
+Nullifier Party,2,1,1
+Ohio State University,2,1,1
+Oliver Daemen,2,1,1
+Opportunity Fund,2,1,1
+Oracle Fusion Middleware,2,2,0
 Orbital Sciences,2,1,1
-Otis Worldwide,2,2,0
+Outer Space Treaty,2,2,0
+Oxford English Dictionary,2,1,1
+Patrick Space Force Base,2,1,1
+Paul G. Kirk,2,1,1
+Paul Wolfowitz,2,1,1
+Peace and Freedom Party,2,1,1
 Peter Rive,2,1,1
-Republican Party of the United States,2,1,1
+Peter Vallone,2,1,1
+Phi Beta Kappa,2,1,1
+Phibro Corporation,2,2,0
+Phoenix Suns,2,2,0
+Pierce Butler (American politician),2,1,1
+Post Office Protocol,2,2,0
+President Donald Trump,2,1,1
+President Harry S. Truman,2,2,0
+President Lyndon B. Johnson,2,2,0
+Pretoria City,2,1,1
+Project for the New American Century,2,1,1
+Protection Agency,2,2,0
+Public Advocate,2,2,0
+R Street Institute,2,2,0
+RSC Energia,2,2,0
+Racial segregation in the United States,2,2,0
+Rancho Cucamonga,2,2,0
+Raptor Vacuum,2,2,0
+Reaction Engines Limited,2,1,1
+Reagan Democrat,2,1,1
+Reagan Test Site,2,2,0
+Regent University,2,1,1
+Republican Party of Kentucky,2,1,1
+Republican Party of Virginia,2,1,1
+Research Center,2,2,0
+Revenge of the Electric Car,2,2,0
+Rhode Island Republican Party,2,1,1
+Richard Branson,2,1,1
+Richard Cantillon,2,1,1
+Richard Rush,2,1,1
 Robert Zubrin,2,1,1
-Rockwell International,2,1,1
-Roots Blower Company,2,1,1
+Rockwell Collins,2,2,0
+Roger Sherman,2,1,1
+Roman Emperor,2,2,0
+Roman Yampolskiy,2,1,1
 Royal Mail Steam Packet Company,2,1,1
-Smith Electric Vehicles,2,1,1
-Sony PlayStation,2,2,0
-Sperry Corporation,2,1,1
-The Epoch Times,2,1,1
-The Mercury News,2,1,1
-Titan II,2,2,0
-Twitter Blue,2,2,0
-U.S. News & World Report,2,1,1
-US Armed Forces,2,1,1
+SHA256,2,2,0
+Safra Catz,2,1,1
+Salomon Smith Barney,2,2,0
+Sam Walton,2,1,1
+Same-sex marriage,2,1,1
+Samuel P. Huntington,2,1,1
+San Antonio,2,1,1
+San Bernardino County Transportation Authority,2,2,0
+San Diego,2,1,1
+San Francisco Bay,2,1,1
+Satellites,2,2,0
+Saudi Arabia,2,2,0
+Security Centre,2,1,1
+Senate Staff Health and Fitness Facility,2,1,1
+Seventh Air Force,2,2,0
+Silver Knight Award,2,1,1
+Silver Party,2,1,1
+Singer Roadster,2,2,0
+Sixteenth Amendment to the United States Constitution,2,2,0
+Sky News,2,2,0
+Small Business,2,2,0
+Social Democratic Party of America,2,1,1
+Social networking service,2,2,0
+Software Development,2,1,1
+South Africa,2,2,0
+South America,2,1,1
+South Korea,2,2,0
+South Wales,2,1,1
+"Southampton, New York",2,1,1
+Southeast Asian,2,1,1
+Southwestern United States,2,2,0
+Space Age,2,1,1
+SpaceX CRS-33,2,2,0
+Spencer Abraham,2,1,1
+Standard Oil,2,1,1
+Standing Rules of the United States Senate,2,1,1
+Stone Fish,2,1,1
+Sun Microsystems,2,2,0
+Supply-side economics,2,1,1
+Surrey Satellite Technology,2,1,1
+Tesla Robotaxi,2,1,1
+Texas oil boom,2,1,1
+The Daily Caller,2,1,1
+Thomas Pink,2,1,1
+Thor Bjorgolfsson,2,2,0
+Tim Berners-Lee,2,1,1
+Timbavati Private Nature Reserve,2,1,1
+Titan III,2,2,0
+Tobacco control,2,1,1
+Tokyo Broadcasting,2,2,0
+Transportation Economics,2,1,1
+Trevor Blackwell,2,1,1
+Trinity College Dublin,2,2,0
+Truth Social,2,2,0
+U.S. Army Air Corps,2,1,1
+U.S. Bicentennial,2,1,1
+UAL Corporation,2,1,1
+US Navy,2,1,1
+US Orbital Segment,2,2,0
+Ulf Merbold,2,2,0
+Ulrike Malmendier,2,2,0
+United Aircraft Corporation,2,2,0
+United Airlines,2,2,0
+United Online,2,2,0
+United Parcel,2,2,0
+United Press International,2,1,1
+United States Africa Command,2,2,0
+United States Air Force Academy,2,1,1
+United States Capitol Complex,2,1,1
+United States Court of Appeals for the First Circuit,2,2,0
 United States Foreign Intelligence Surveillance Court,2,2,0
+United States Government Manual,2,1,1
+United States Marine Corps,2,2,0
+United States Marine Corps Reserve,2,2,0
+United States Merchant Marine Academy,2,1,1
+United States Naval Academy,2,1,1
+United States Senate,2,2,0
 United States Steel Corporation,2,1,1
-Virgin Mobile,2,1,1
-Washington Post,2,1,1
-World Economic Forum,2,1,1
-École Centrale Paris,2,2,0
+United States Supreme Court Building,2,2,0
+United States congressional subcommittee,2,2,0
+University of Oxford,2,1,1
+Upper East Side,2,1,1
+Vegas Loop,2,1,1
+Villanova University,2,1,1
+Virgin Galactic,2,2,0
+Walter Chrysler,2,2,0
+Walter J. Ong,2,2,0
+Walter Mondale,2,2,0
+Warren Buffett,2,1,1
+Water supply and sanitation in the United States,2,2,0
+Wayback Machine,2,1,1
+West Covina,2,1,1
+West Virginia Republican Party,2,1,1
+White Knight Two,2,1,1
+White Sands Missile Range,2,1,1
+Whitelaw Reid,2,1,1
+Wisconsin Public Radio,2,1,1
+Wojciech Zaremba,2,1,1
+Workers World Party,2,2,0
+Work–life balance,2,2,0
+World Bank,2,1,1
+World Government Summit,2,1,1
+World Lung Foundation,2,1,1
+World Rally,2,1,1
+World War I,2,2,0
+World Wide Web,2,1,1
+York University,2,1,1
+Ze'ev Drori,2,2,0
+analytics,2,1,1
+100th United States Congress,1,1,0
+1840 United States presidential election,1,1,0
+1886 United States House of Representatives elections,1,1,0
+1900 Prohibition National Convention,1,1,0
+1900 Social Democratic National Convention,1,1,0
+1916 Republican Party presidential primaries,1,1,0
+1920 Republican Party presidential primaries,1,1,0
+1940 Communist National Convention,1,1,0
+1948 United States presidential election,1,1,0
+1952 United States presidential election,1,1,0
+1964 Democratic National Convention,1,1,0
 1972 Socialist Labor National Convention,1,0,1
+1979 Libertarian National Convention,1,1,0
+1984 Republican National Convention,1,1,0
+1988 United States presidential election,1,1,0
+2008 Republican Party presidential debates and forums,1,1,0
+2012 Republican National Convention,1,1,0
+2020 Democratic Party vice presidential candidate selection,1,1,0
+2020 United States presidential debates,1,1,0
+2022 stock market decline,1,1,0
 2244 Tesla,1,0,1
-Abe Fortas,1,0,1
-Accounting Standards Board,1,0,1
-Adam Smith,1,0,1
+AI Futures Project,1,0,1
+AI safety,1,0,1
+Abigail Johnson,1,0,1
 Affordable Connectivity Program,1,0,1
-Air Combat Command,1,1,0
+African-American middle class,1,1,0
+Aftermath of the January 6 United States Capitol attack,1,1,0
 Air Command,1,0,1
 Air Force Historical Research Agency,1,0,1
-Air Force Officer Training School,1,0,1
-Air Force Research Laboratory,1,0,1
-Air Force Specialty Code,1,0,1
-Air Resources Board,1,0,1
-Airbus,1,0,1
-Akira Yoshino,1,0,1
+Air Suspension,1,1,0
+Al Jazeera English,1,1,0
+Alabama Fever,1,0,1
+Alabama real estate bubble of the 1810s,1,0,1
 Alan Bovik,1,0,1
-Alejandro Agag,1,0,1
+Alan Greenspan,1,1,0
+"Albuquerque, New Mexico",1,0,1
 Alessandro Volta,1,0,1
 Alfa Romeo,1,0,1
-Aliko Dangote,1,0,1
 Alpha Magnetic Spectrometer,1,0,1
+Alternative for Germany,1,1,0
+Alvin Lucier,1,1,0
 Amalgam Comics,1,0,1
 Amancio Ortega,1,0,1
-Amazon Basin,1,0,1
 Amazon Breakthrough Novel Award,1,0,1
-Amazon China,1,1,0
 Amazon Clinic,1,0,1
-Amazon Dash,1,0,1
+Amazon CloudFront,1,1,0
 Amazon Delta,1,0,1
-Amazon Drive,1,0,1
-Amazon Echo,1,0,1
-Amazon Glacier,1,0,1
-Amazon Go,1,0,1
-Amazon Kindle,1,0,1
+Amazon DynamoDB,1,1,0
+Amazon Eve,1,1,0
+Amazon HQ2,1,1,0
+Amazon Lab126,1,1,0
 Amazon Labor Union,1,0,1
 Amazon Light,1,0,1
-Amazon Locker,1,1,0
-Amazon Prime Pantry,1,0,1
-Amazon Redshift,1,0,1
-Amazon Reef,1,0,1
-Amazonian Guard,1,0,1
+Amazon Prime Video,1,1,0
+Amazon Product Advertising API,1,1,0
+Amazon Web Services,1,1,0
+Amazon.com Inc v Canada (Commissioner of Patents),1,1,0
 Amazons Company,1,0,1
+America First Committee,1,1,0
 America First Policy Institute,1,1,0
 American Academy of Achievement,1,0,1
-American Party (1924),1,0,1
+American Jews,1,1,0
+American Nazi Party,1,1,0
 American System (economic plan),1,0,1
-American Vegetarian Party,1,0,1
-Amsterdam Stock Exchange,1,0,1
-Andrej Karpathy,1,0,1
-Andrew Carnegie,1,0,1
-Andrew Morrison,1,0,1
-Anglican Church,1,0,1
-Apple II,1,0,1
-April,1,0,1
+Amie Street,1,0,1
+Amy Klobuchar 2020 presidential campaign,1,1,0
+Andrew Graham-Dixon,1,1,0
+Andrew Yang 2020 presidential campaign,1,1,0
+Anti-Masonic Party,1,0,1
+Apollo,1,1,0
+Apple silicon,1,1,0
+Arab Emirates,1,1,0
+Archibald Low,1,1,0
 Ares I-X,1,0,1
-Armadillo Aerospace,1,0,1
+Aristotle Onassis,1,1,0
+Armed Forces,1,1,0
 Artemis Accords,1,0,1
+Artemis II,1,1,0
 Artemis III,1,0,1
-Arthur C. Clarke,1,0,1
-Arthur Ransome,1,0,1
-Arthur Wing Pinero,1,0,1
-Ashanti Empire,1,0,1
+Arthur Perdue,1,1,0
+Article Six of the United States Constitution,1,1,0
+Article Two of the United States Constitution,1,1,0
+Ashlee Vance,1,1,0
+Assassination of Robert F. Kennedy,1,1,0
+Athabasca Valles,1,1,0
 Atlantic Ocean,1,0,1
 Atlas II,1,0,1
+Atomic Energy,1,1,0
 Audi Q8,1,0,1
 August,1,0,1
-Axiom Space,1,1,0
+Automated Transfer Vehicle,1,1,0
+Automobile Industry,1,1,0
 Axiom Station,1,0,1
-B-50 Superfortress,1,0,1
-B. C. Forbes,1,0,1
-BSE SENSEX,1,0,1
-Baidu Tieba,1,0,1
+BAE Systems,1,1,0
+BBC News,1,1,0
+BYD Auto,1,1,0
+Banana River,1,1,0
 Bangladesh Satellite-1,1,0,1
 Bank War,1,0,1
 Bankers Trust,1,0,1
-Bard College,1,0,1
-Barry Goldwater,1,0,1
+Battery storage,1,1,0
+Benjamin Franklin,1,1,0
 Benjamin Hav,1,0,1
-Bentley Motors Limited,1,0,1
-Bernard Arnault,1,1,0
+Bernard Jean,1,1,0
 Bernie Ecclestone,1,0,1
-Bexar County,1,0,1
-Big Board,1,1,0
-Bill Gates,1,0,1
+Beta Kappa,1,1,0
+Big Tech,1,1,0
+Bill Richardson 2008 presidential campaign,1,1,0
+Bill Thompson (New York),1,0,1
+Billie Jean King,1,1,0
 Biomedical Research,1,0,1
+Biz Stone,1,1,0
+Black Panther Party,1,1,0
 Black Thursday,1,0,1
-Bloomberg Beta,1,1,0
-Bloomberg Law,1,0,1
+Bloomberg Global Business Forum,1,0,1
 Bloomberg Markets,1,0,1
 Bloomberg Professional Services,1,0,1
+Blue Coat Systems,1,1,0
 Blue Origin NS-16,1,0,1
 Blue Origin NS-17,1,0,1
 Blue Origin NS-18,1,0,1
-Blue Origin NS-19,1,0,1
-Blue Origin NS-20,1,0,1
-Blue Origin NS-21,1,0,1
 Blue Origin NS-23,1,0,1
+Blue Origin NS-38,1,1,0
+Blue Origin PM2,1,1,0
+Blue Origin facilities,1,1,0
 Blue Ring Pathfinder,1,0,1
-Bob Miner,1,0,1
+Blue jay,1,1,0
+Bob Barr 2008 presidential campaign,1,1,0
 Boeing B-29 Superfortress,1,0,1
-Bombardier Aerospace,1,1,0
+Boring test tunnel,1,1,0
+Break Down (Landy artwork),1,0,1
+Breakthrough Energy Ventures,1,0,1
+Breitbart News,1,1,0
 Brian Binnie,1,0,1
-Brian Moore (political activist),1,0,1
-Bruce Forbes,1,0,1
+British Aerospace,1,1,0
+British America,1,1,0
+British neoconservatism,1,1,0
 Bryanston High School,1,0,1
-Buttonwood Agreement,1,0,1
+Bull Moose Party,1,1,0
+Bulletin Board,1,1,0
+Business Insider,1,1,0
+Buzz Aldrin,1,1,0
 Byron Lichtenberg,1,0,1
 CNBC,1,1,0
-CST-100 Starliner,1,0,1
 CT Corporation,1,1,0
+Cal Ripken,1,1,0
+California Republican Party,1,0,1
+"Cameron County, Texas",1,0,1
 Camille Jenatzy,1,0,1
-Canada,1,0,1
-Cargo Dragon,1,0,1
-Carolina Stadium,1,0,1
+Campaign finance in the United States,1,1,0
+Capitol Police Board,1,1,0
+Carlos Slim,1,1,0
 Carson City,1,0,1
+Catholic Church in the United States,1,1,0
 Center for Security Policy,1,0,1
 Cerberus Fossae,1,0,1
-Charles D. Walker,1,0,1
-Charles Fritts,1,0,1
-Charles Koch,1,0,1
+Charles Breyer,1,1,0
 Charles Luckman,1,0,1
-Chevrolet Volt,1,0,1
 Chicago real estate bubble of the 1830s,1,0,1
-Christian Dior,1,0,1
-Christian Dior SE,1,1,0
+China,1,1,0
+Christa McAuliffe,1,1,0
 Christian Lacroix,1,0,1
-Christopher Payne,1,0,1
+Christian nationalism,1,1,0
 Christy Walton,1,0,1
+City Council,1,1,0
 City Council Speaker,1,0,1
-Civil Air Patrol,1,0,1
-Civil Aviation Organization,1,0,1
-Clark University,1,0,1
-Combined Charging System,1,0,1
+Civil Aviation,1,1,0
+Civil rights,1,0,1
+Clarium Capital,1,1,0
+Code of the United States Fighting Force,1,1,0
+Collier Trophy,1,1,0
+Commercial Crew Transportation Capability,1,1,0
 Commercial Orbital Transportation Services,1,0,1
 Commercial Resupply Services,1,0,1
 Commonwealth English,1,0,1
 Communications Commission,1,0,1
+Communications Satellite,1,1,0
 Community Notes,1,0,1
 Companies Act,1,0,1
 Companies House,1,0,1
-Congressional Budget Office,1,0,1
+Congressional Hispanic Conference,1,0,1
+Congressional Jewish Caucus,1,0,1
+Congressional Pictorial Directory,1,0,1
 Constitutional Union Party (United States),1,0,1
 Constitutionalism in the United States,1,0,1
-Corporations Act,1,0,1
+Control Data Corporation,1,1,0
+Convention to propose amendments to the United States Constitution,1,1,0
+Cooke Air Force Base,1,1,0
+Crime in the United States,1,1,0
+Customer Service,1,1,0
+Dahomey Amazons,1,1,0
 Dance in the United States,1,0,1
+Daryl Chapin,1,1,0
 David Brooks (commentator),1,0,1
+David Maraniss,1,1,0
+David Pecker,1,0,1
 David Rubenstein,1,0,1
-Dawn Aerospace,1,0,1
-Deep Space Climate Observatory,1,0,1
-Deep Space Network,1,0,1
-Dell Technologies,1,1,0
+David Wilhelm,1,1,0
+De-industrialisation of India,1,1,0
+Delaware Moors,1,0,1
+Delaware Supreme Court,1,0,1
 Delta II,1,0,1
 Delta IV,1,0,1
 Democratic Attorneys General Association,1,0,1
 Democratic Party of the Virgin Islands,1,0,1
-Dennis Tito,1,0,1
+Democratic Senatorial Campaign Committee,1,0,1
+Democratic Socialists of America,1,1,0
+Democratic socialism,1,0,1
 Denver International Airport,1,0,1
-Detroit Electric,1,0,1
-Deutsche Post,1,0,1
-Disability in the United States,1,0,1
-Dodger Stadium,1,0,1
-Dragon C2,1,0,1
-Drake Landing Solar Community,1,0,1
-Duke University,1,0,1
+Disaster Monitoring Constellation,1,1,0
+Discover Card,1,1,0
 Duncan Niederauer,1,0,1
 E-jet E2,1,0,1
+Early childhood education,1,0,1
 Earth,1,0,1
-East India,1,0,1
-East North Central States,1,0,1
+East Germany,1,1,0
+Economic effects of the September 11 attacks,1,1,0
+Economic impact of the COVID-19 pandemic in the United States,1,1,0
 Ed Koch,1,0,1
-Edward Bernays,1,0,1
+Edgar F. Codd,1,1,0
 Edward Mounier Boxer,1,0,1
 Election Day (United States),1,0,1
 Electric,1,0,1
 Electrical Engineering,1,0,1
 Eliot Spitzer,1,0,1
-Elmer Sperry,1,0,1
-Engineering,1,0,1
-Environmental Assessment,1,0,1
+Enrique Lores,1,1,0
 Environmental Management,1,0,1
+Episcopal Church (United States),1,1,0
 Eric Hass,1,0,1
-Eric Holder,1,0,1
+Ernst Werner,1,1,0
 Errol Musk,1,0,1
+Eunos Roadster,1,1,0
 European Commission,1,0,1
+European Space Agency,1,1,0
+Everyone I Have Ever Slept With 1963–1995,1,1,0
 Exchange Alley,1,0,1
-Farris Bryant,1,0,1
-Fashion Group,1,1,0
+Family Research Council,1,1,0
+Family values,1,1,0
+Farmer–Labor Party,1,1,0
 February,1,0,1
 Federal Election Commission,1,0,1
-Federal Reserve System,1,0,1
-Ferdinand Pecora,1,0,1
+Federal holidays in the United States,1,1,0
 Fernando Ferrer,1,0,1
-Fifth Party System,1,0,1
-Financial Accounting Standards Board,1,0,1
+Fidelity Investments,1,1,0
 Financial Industry Regulatory Authority,1,0,1
+Financial Institution,1,1,0
+Financial Reporting,1,1,0
+First presidential transition of Donald Trump,1,1,0
 Flight,1,0,1
-Flight Test,1,0,1
 Flocken Elektrowagen,1,0,1
-Florida,1,0,1
-Foothill Transit,1,0,1
-Forbes Travel Guide,1,0,1
+Florian Weber,1,1,0
+Forbes Magazine,1,1,0
 Ford F-250,1,0,1
-Ford Motor Company Limited,1,1,0
-Fort Lauderdale,1,0,1
-Foundation Series,1,0,1
-Foundation for Moral Law,1,0,1
-France,1,0,1
-Francis E. Warren,1,0,1
+Foundation Center,1,0,1
 Frank C. Walker,1,0,1
+Frank Cohen,1,0,1
 Frank E. McKinney,1,0,1
 Frank Fahrenkopf,1,0,1
 Frank Knight,1,0,1
-Frank L. VanderSloot,1,0,1
-Fred Thompson,1,0,1
-Full Thrust,1,0,1
+Frank Moore (performance artist),1,1,0
+Freedom of Information Act (United States),1,1,0
 Fundraising for the 2012 United States presidential election,1,0,1
-Gaia Online,1,0,1
-Game Boy,1,0,1
-Gary Johnson,1,0,1
+Game Boy Color,1,1,0
 General Public,1,0,1
-General Public License,1,0,1
-George W,1,0,1
+General glut,1,1,0
+Geneva Convention,1,1,0
 George Washington Jones (Tennessee politician),1,0,1
-George White (Ohio politician),1,0,1
-Germany,1,0,1
-Giga Berlin,1,0,1
+Gerald Pearson,1,1,0
 Gigafactory Mexico,1,0,1
-Ginni Thomas,1,0,1
 Giorgetto Giugiaro,1,0,1
-Giving Pledge,1,0,1
-Glen Taylor,1,0,1
+Global Positioning System,1,1,0
 Global Settlement,1,0,1
-Goddard Space Flight Center,1,0,1
-Gordon Cooper,1,0,1
+Goodrich Corporation,1,1,0
 Government Efficiency,1,0,1
+Governor (United States),1,1,0
 Governor Gavin Newsom,1,0,1
+Graduated Random Presidential Primary System,1,1,0
 Great Depression,1,0,1
+Great Recession in Asia,1,1,0
+Great Recession in Europe,1,1,0
 Green Party of the United States,1,0,1
 Greenhouse gases,1,0,1
-Greg Brockman,1,0,1
+Gregory Stock,1,1,0
 Group of Seven,1,0,1
-Groupe Arnault,1,0,1
-Gulf Coast of the United States,1,0,1
-Harry Reid,1,0,1
-Hart Senate Office Building,1,0,1
-Harvard Business School,1,0,1
+Gus Grissom,1,1,0
 Hawaiian Islands,1,0,1
+"Hawthorne, California",1,0,1
 Haynes Roadster,1,0,1
+Hearst Corporation,1,1,0
 Heartland Institute,1,1,0
+Henry Marion Howe,1,1,0
 Hermann Oberth,1,0,1
 Hesperia Planum,1,0,1
+High School,1,1,0
+Hillary Clinton 2016 presidential campaign,1,1,0
+Hispanics in the United States Air Force,1,1,0
+Historiography of the United States,1,1,0
+History of antisemitism in the United States,1,1,0
+History of taxation in the United States,1,1,0
+History of the United States (1991–2016),1,1,0
+History of the United States Republican Party,1,1,0
 History of the United States Virgin Islands,1,0,1
-Homeland Security,1,1,0
+History of the oil shale industry in the United States,1,1,0
 Hong Kong,1,0,1
-Horniman Circle,1,0,1
 House Office Building Commission,1,0,1
 Household income in the United States,1,0,1
+Howard Dean,1,1,0
+Howard Hughes,1,1,0
 Hugh Lawson White,1,0,1
-Hughes Aircraft Co,1,0,1
 Human Rights Party (United States),1,0,1
 IBM System,1,0,1
-ITP Aero,1,0,1
 Ian Wright,1,0,1
-Ilya Sutskever,1,0,1
+In August,1,1,0
 Incarceration in the United States,1,1,0
-India,1,0,1
-Indian Ocean,1,0,1
-Inspiration Mars,1,0,1
+Indian Government,1,1,0
+Indiana Republican Party,1,1,0
+Inflation Reduction Act,1,1,0
+Instrument Landing,1,1,0
 Integrated Services Digital Network,1,0,1
-International Astronautical Federation,1,0,1
-International Docking System Standard,1,0,1
-International Energy Agency,1,0,1
+Intercontinental Exchange Inc,1,1,0
+International Astronomical Union,1,1,0
+International Democracy Union,1,1,0
+International Financial Reporting Standards,1,1,0
 International Journal,1,1,0
+International Rescue Committee,1,0,1
+International Telecommunication Union,1,1,0
+International trade,1,0,1
 Internet,1,0,1
+Investment Advisers Act,1,1,0
 Investment Company Act,1,0,1
-Iridium Communications Inc,1,1,0
-JB Straubel,1,0,1
+Investment bank,1,0,1
+Iraq War,1,1,0
+J. Waldo Smith,1,0,1
+J.D. Power,1,1,0
+JD Edwards EnterpriseOne,1,1,0
 Jack Dorsey,1,0,1
-James J. Hill,1,0,1
-James Wilson (Founding Father),1,0,1
-January,1,0,1
-Japan,1,0,1
-Jean-Baptiste Say,1,0,1
-Jeff Bezos,1,0,1
-Jersey City,1,0,1
+James Douglas (businessman),1,0,1
+James E. Watson,1,1,0
+James E. Webb,1,1,0
+James Harris (Socialist Workers Party politician),1,1,0
+James Madison Memorial Building,1,1,0
 Jessica Amanda Salmonson,1,0,1
-Jet Propulsion,1,0,1
-Jim Cantrell,1,0,1
-John A. Brooks,1,0,1
-John Adams,1,0,1
-John Boehner,1,0,1
-John C. Breckinridge,1,0,1
-John Coyle White,1,0,1
-John D. Rockefeller,1,0,1
-John Foster Dulles,1,0,1
 John Franklin Enders,1,0,1
 John Franklyn Mars,1,0,1
-John G. Carlisle,1,0,1
-John Hickenlooper,1,0,1
 John McCain,1,0,1
-John Micklethwait,1,0,1
 John Monds,1,0,1
-John Nicolay,1,0,1
-John Overdeck,1,0,1
-John Sirica,1,0,1
-Johns Hopkins University,1,0,1
-Joint Long Range Proving Ground,1,0,1
-Joseph Ellison,1,0,1
-Joseph Schumpeter,1,0,1
+John Randolph of Roanoke,1,1,0
+Johns Hopkins,1,1,0
+Julian Bond,1,0,1
 July,1,0,1
 June,1,0,1
-Justice Party (United States),1,0,1
-Kamen Rider,1,0,1
-Kamen Rider Amazon,1,0,1
-Kistler Aerospace,1,0,1
+K. Eric Drexler,1,0,1
+Kamala Harris,1,1,0
+Kamala Harris 2020 presidential campaign,1,1,0
+Kawasaki Heavy Industries Aerospace,1,1,0
+Kimbal Musk,1,1,0
+Kiva (organization),1,1,0
 Konrad Kyeser,1,0,1
-Land Rover,1,0,1
-Larry Page,1,0,1
+Konstantin Tsiolkovsky,1,1,0
+Korean War,1,1,0
+LVMH Tower,1,1,0
+La Jamais Contente,1,1,0
 Lars Moravy,1,0,1
-Las Vegas,1,0,1
 Launch Control Center,1,0,1
-Laurie Hays,1,0,1
-Lawrence Joseph Ellison,1,0,1
-Leland Stanford,1,0,1
+Launch Operations Center,1,1,0
+Launch Site One,1,1,0
+Laurence Kotlikoff,1,0,1
+Le Bon Marché,1,1,0
+Leadership for Healthy Communities,1,1,0
+Left-wing politics,1,0,1
+Legal Marijuana Now Party,1,0,1
+Leonard Leo,1,0,1
+Leonard W. Hall,1,0,1
+Les Echos (France),1,0,1
+Lesa Lewis,1,1,0
+Leverhulme Centre for the Future of Intelligence,1,0,1
+Limited Liability Partnership,1,1,0
 Linda Yaccarino,1,0,1
-Loro Piana,1,0,1
-Los Angeles,1,0,1
-Los Angeles Air Force Base,1,0,1
+Lithuanian Jewish,1,1,0
+Lockheed Martin,1,1,0
 Los Angeles Area,1,0,1
-Los Angeles Auto,1,0,1
-Los Angeles County,1,0,1
-Los Angeles Times,1,0,1
 Lotus Esprit,1,0,1
+Louis Vuitton,1,1,0
+Louisiana Creole people,1,1,0
+Louisiana Purchase,1,1,0
+Ludicrous Mode,1,1,0
 Lyndon Rive,1,0,1
+M. Atalla,1,1,0
+MGM Holdings,1,1,0
 Mail Transfer Protocol,1,0,1
 Major General,1,0,1
+Make America Wait Again,1,0,1
 Malcolm Forbes,1,0,1
-Marc Jacobs,1,0,1
-March,1,0,1
-Mark Hurd,1,0,1
-Mark Krikorian (activist),1,0,1
+Marconi Electronic Systems,1,1,0
+Margaret Masterman,1,1,0
+Maria Ressa,1,1,0
+Marie-Odile Amaury,1,1,0
+Mario Lopez Estrada,1,1,0
+Maritime history of England,1,1,0
+Maritime history of the United States (1800–1899),1,1,0
+Maritime history of the United States (1900–1999),1,1,0
+Mark Alan Walker,1,0,1
+Mark Bezos,1,1,0
+Mark Charles,1,1,0
 Mark Mateschitz,1,0,1
-Mark R. Shaw,1,0,1
-Mark Zuckerberg,1,0,1
 Market value,1,0,1
-Martin Van Buren,1,0,1
-Marty Markowitz,1,0,1
-Mason Patrick,1,0,1
-Max Hodak,1,0,1
-Mazda Roadster,1,0,1
-McDonnell Douglas Corporation,1,0,1
+Mary Celeste,1,1,0
+Mary Ruwart,1,1,0
+Mass media,1,1,0
+Massachusetts Republican Party,1,0,1
+Mayor Dean Trantalis,1,1,0
+Mayor of Paris,1,1,0
+MeToo movement,1,1,0
 Media Matters,1,0,1
-Mercury Control Center,1,0,1
-Merlin,1,0,1
-Merritt Island,1,0,1
 Meta Platforms,1,1,0
-Miami Palmetto High,1,0,1
-Michael Arougheti,1,0,1
-Michael Bloomberg,1,0,1
-Michael Faraday,1,0,1
-Michael Flynn,1,0,1
-Microsoft Azure,1,0,1
-Middle East,1,0,1
+Michael Bloomberg 2020 presidential campaign,1,1,0
+Michael Douglas,1,1,0
+Michael Dukakis 1988 presidential campaign,1,1,0
+Mid-Atlantic (United States),1,1,0
+Military Health System,1,1,0
+Military history of African Americans,1,1,0
 Millennium Falcon,1,0,1
 Mississippi Company,1,0,1
-Mojave Desert,1,0,1
+Mitt Romney 2012 presidential campaign,1,1,0
 Moon,1,0,1
+Morgan Stanley,1,1,0
 Municipal Securities Rulemaking Board,1,0,1
-Musk,1,0,1
-Nasarawa Amazons,1,0,1
+Nasarawa State,1,1,0
 Nasdaq Composite Index,1,0,1
-Nasdaq Nordic,1,0,1
+Nasdaq Financial-100,1,1,0
+Nation of Islam,1,0,1
 National Affairs,1,0,1
-National Business Daily,1,0,1
+National Conference of Democratic Mayors,1,1,0
 National Convention,1,0,1
-National Democratic Redistricting Committee,1,0,1
-National Federation of Democratic Women,1,0,1
-National Federation of Independent Business,1,0,1
-National Guard (United States),1,1,0
-National Highway Traffic Safety Administration,1,0,1
-National Merit,1,0,1
+National Enquirer,1,0,1
+National Historic Landmark,1,1,0
 National Party (United States),1,0,1
+National Renaissance Party (United States),1,1,0
 National Republican Congressional Committee,1,0,1
 National Republican Redistricting Trust,1,0,1
 National Republican Senatorial Committee,1,0,1
 National Science Foundation,1,0,1
+National September 11 Memorial & Museum,1,1,0
 National Socialist Party of America,1,0,1
-National Space Society,1,1,0
-National Taxpayers Union,1,0,1
 National security of the United States,1,0,1
-Naval History and Heritage Command,1,0,1
-Neutron Star Interior Composition Explorer,1,0,1
-New Glenn,1,0,1
-New Hampshire,1,0,1
-New Horizons,1,0,1
-New Mexico,1,0,1
+Nativism (politics),1,1,0
+Naval Air Station,1,1,0
+Naval Criminal Investigative Service,1,1,0
+Naval Reserve Officers Training Corps,1,1,0
+Neurotechnology,1,1,0
+New Jersey,1,1,0
 New Orleans,1,0,1
-New Party (United States),1,0,1
 New South,1,0,1
 New South Wales,1,0,1
 New York Circular Letter,1,0,1
+New York City Board of Education,1,1,0
 New York City Subway,1,0,1
-New York Times,1,1,0
+"New York City mayoral election, 2001",1,1,0
+New York Stock Exchange Building,1,1,0
+New York Theatre Workshop,1,0,1
 Newlands Resolution,1,0,1
-Nikola Tesla,1,0,1
+Nikola Tesla in popular culture,1,1,0
 Nissan Leaf,1,0,1
 No Religious Test Clause,1,0,1
 Noah Glass,1,0,1
 North American,1,0,1
 North American Aviation,1,0,1
-North Carolina Democratic Party,1,0,1
-North Carolina Republican Party,1,0,1
 North Dakota Republican Party,1,0,1
+Northeast Ohio,1,1,0
 Northeastern United States,1,1,0
 Northrop Grumman,1,1,0
+November,1,1,0
 Numbered Air Force,1,0,1
-O'Neill House Office Building,1,0,1
-O. Douglas,1,0,1
 OTC Pink,1,1,0
-Obvious Corporation,1,1,0
-Officer Candidate School (United States Army),1,0,1
-Ohio State University,1,0,1
 Old Right (United States),1,0,1
-Oliver Daemen,1,0,1
 Olympus Mons,1,0,1
-Opportunity Fund,1,0,1
-Oracle Cloud,1,0,1
-Oracle Enterprise Manager,1,0,1
-Oracle NoSQL Database,1,0,1
-Oxford English Dictionary,1,0,1
+Oracle,1,1,0
+Orbcomm OG2,1,1,0
+Order of Merit of the Italian Republic,1,0,1
+"Our Enemy, the State",1,0,1
+Outer Space,1,1,0
+Oxford University Press,1,0,1
 PGM-19 Jupiter,1,0,1
+PSA Group,1,1,0
+Pacific Justice Institute,1,0,1
 Palgrave Macmillan,1,0,1
 Palo Alto,1,0,1
-Pat Buchanan,1,0,1
-Patria Plc,1,0,1
-Patrick Space Force Base,1,0,1
+Paramount Equity,1,1,0
+Parent company,1,1,0
 Paul Butler (lawyer),1,0,1
-Paul G. Kirk,1,0,1
-Paul Sahre,1,0,1
+Paul C. W. Chu,1,0,1
+Paul Dyer Merica,1,1,0
+Paul Krugman,1,0,1
+Pearl Harbor,1,1,0
 Pecora Commission,1,0,1
-PeopleSoft EnterpriseOne,1,1,0
-Peter Grauer,1,0,1
 Peter Thiel,1,0,1
-Peter Vallone,1,0,1
-Pew Research Center,1,0,1
-Phi Beta Kappa,1,0,1
-Phibro Corporation,1,1,0
 Phillip Kennedy,1,0,1
-Pierce Butler (American politician),1,0,1
-Point Arguello,1,0,1
-Port Canaveral,1,1,0
+Political positions of Kamala Harris,1,1,0
+Political positions of the 2008 Republican Party presidential primary candidates,1,1,0
+Populist Party (United States),1,0,1
+Post-election lawsuits related to the 2020 U.S. presidential election from Arizona,1,1,0
+Postage stamps and postal history of the United States,1,1,0
 Post–World War I recession,1,0,1
-President Barack,1,0,1
-President Donald Trump,1,0,1
-Pretoria City,1,0,1
-Princeton University,1,0,1
+Powerwall,1,1,0
+Presidency of John Quincy Adams,1,1,0
+President Abraham Lincoln,1,1,0
+President Joe Biden,1,1,0
+Pretoria Boys High School,1,1,0
 Prohibition in the United States,1,0,1
 Project Gemini,1,0,1
 Project Juno,1,0,1
 Project Kuiper,1,1,0
 Project Mercury,1,0,1
-Project for the New American Century,1,0,1
-Quinnipiac University Polling Institute,1,0,1
-R Street Institute,1,1,0
-RSC Energia,1,1,0
-Ralph White,1,0,1
+Proterra EcoRide,1,1,0
+Public health insurance option,1,1,0
+Public holidays in the United States,1,1,0
+RADARSAT Constellation,1,1,0
+RSS First Step,1,0,1
+Rally Championships,1,1,0
 Randolph Hearst,1,0,1
-Ray Kroc,1,0,1
 Rayburn House Office Building,1,0,1
-Reaction Engines Limited,1,0,1
-Red Bull,1,1,0
-Redwood Shores,1,0,1
+Real GDP,1,1,0
+Republican Party of Arkansas,1,1,0
 Reserve Officers' Training Corps,1,0,1
-Richard Branson,1,0,1
-Richard Cantillon,1,0,1
+Resignation from the United States Senate,1,1,0
+Restore Britain,1,0,1
+Results of the 2008 Democratic Party presidential primaries,1,1,0
+Reusable rocket,1,1,0
+"Revolutionary Communist Party, USA",1,0,1
 Richard Richards (Utah politician),1,0,1
-Richard Rush,1,0,1
 Richard Sylla,1,0,1
-Robert H. Michel,1,0,1
+Right Side Broadcasting Network,1,1,0
+Right to keep and bear arms in the United States,1,1,0
+Right to property,1,1,0
+Robert F. Wagner Jr,1,0,1
+Robert Freitas,1,1,0
+Robert Kagan,1,1,0
+Robert N. Noyce,1,1,0
+Robert S. Langer,1,1,0
+Rockets,1,1,0
 Roger Ailes,1,0,1
-Roger B. Taney,1,0,1
-Roger Sherman,1,0,1
+Rolling Stone,1,1,0
 Ron Paul,1,0,1
-Ronald Reagan,1,0,1
 Roots Blower,1,0,1
 Rotating Regional Primary System,1,0,1
 Roy Moore,1,0,1
-Royal Mail,1,0,1
+Royal Air Force,1,1,0
 Royal Navy,1,0,1
-Rupert Murdoch,1,0,1
 Russell Ohl,1,0,1
 Russell Senate Office Building,1,0,1
-Russia,1,0,1
 SM-65D Atlas,1,0,1
 SM-65F Atlas,1,0,1
 SMS Amazone,1,0,1
-Safra Catz,1,0,1
 Saharan Africa,1,0,1
-Salomon Smith Barney,1,1,0
-Sam Walton,1,0,1
-Samuel P. Huntington,1,0,1
-San Antonio,1,0,1
+Samuel Alito,1,1,0
 San Bernardino,1,0,1
-San Diego,1,0,1
-San Francisco Bay,1,0,1
+San Francisco,1,1,0
 San Francisco Bay Area,1,0,1
-San Jose International,1,1,0
+Santa Barbara County,1,1,0
 Saturn,1,0,1
-Saturn Corporation,1,0,1
-Saudi Arabia,1,1,0
+Scaled Composites,1,1,0
+Sea Launch,1,1,0
 Second Air Force,1,0,1
-Security Centre,1,0,1
-September,1,0,1
-Sequoia Capital,1,1,0
-Sergey Brin,1,0,1
-Shirley Chisholm,1,0,1
+Secretary of the United States Senate,1,1,0
+Senate Republican Conference,1,0,1
+Serve America Movement,1,0,1
+Service number (United States Air Force),1,1,0
 Short Message Service,1,0,1
 Shuttle Challenger,1,0,1
-Silicon Valley,1,0,1
-Silver Knight Award,1,0,1
-Silver Lake Partners,1,1,0
+Silver Republican Party,1,0,1
 Sirius Satellite Radio,1,1,0
-Small Business Administration,1,0,1
+Sixteenth Air Force,1,1,0
+Slavery in Canada,1,1,0
 Socialist Workers Party (United States),1,0,1
-Software Development,1,0,1
-South America,1,0,1
+Software,1,1,0
+Solnova Solar Power Station,1,1,0
 South Carolina,1,0,1
+South Carolina presidential primary,1,0,1
+South Pole,1,1,0
 South Sea Company,1,0,1
-South Wales,1,0,1
-Southeast Asian,1,0,1
 Southern Africa,1,0,1
+Soviet Union,1,1,0
 Soyuz MS-17,1,0,1
 Space,1,0,1
-Space Age,1,0,1
+Space Station,1,1,0
 Space colonization,1,0,1
 Space.com,1,0,1
+SpaceShipOne,1,1,0
 SpaceShipTwo,1,0,1
 SpaceX Crew-2,1,0,1
 SpaceX Crew-3,1,0,1
 SpaceX Demo-1,1,0,1
-SpaceX Hawthorne,1,1,0
-SpaceX Starlink,1,0,1
+SpaceX Falcon,1,1,0
+SpaceX Merlin,1,1,0
 Spaceflight,1,0,1
-Standard Oil,1,0,1
-Standing Rules of the United States Senate,1,0,1
+Springer Science,1,1,0
+Standing Committee,1,1,0
 Stanley Jevons,1,0,1
 Stanley Whittingham,1,0,1
+Star Trek,1,1,0
+Star Trek Beyond,1,1,0
+Starlink in the Russo-Ukrainian War,1,1,0
+Starship,1,1,0
 Starship Human Landing System,1,0,1
+Stat News,1,1,0
+State Department,1,1,0
+State University,1,1,0
 States Department,1,0,1
 Stennis Space Center,1,0,1
+Stephen Colbert 2008 presidential campaign,1,1,0
 Steve Ballmer,1,0,1
 Steve Jobs,1,0,1
 Stoke Space,1,0,1
-Stone Fish,1,0,1
 Strategic Air Command,1,0,1
+Strategic Defense Initiative,1,1,0
 Streaming media,1,0,1
-Surrey Satellite Technology,1,0,1
+Super Bowl,1,1,0
 Suspension of the rules in the United States Congress,1,0,1
 Sustainable Development,1,0,1
 TUM Boring,1,0,1
-Tenth Air Force,1,0,1
-Tesla Powerpack,1,0,1
-Tesla Robotaxi,1,0,1
-Tesla Supercharger,1,0,1
-Texas,1,0,1
-The American Conservative,1,0,1
+Task Group,1,1,0
+Technical University,1,1,0
+Technocracy movement,1,1,0
+Technological and industrial history of Canada,1,1,0
+Technological singularity,1,1,0
+Thaddeus McCotter 2012 presidential campaign,1,1,0
 The American Spectator,1,0,1
-The Daily Caller,1,0,1
+The Great Debasement,1,1,0
+The International Space Station,1,1,0
 The New York Observer,1,0,1
 The New York Review of Books,1,0,1
-Third Air Force,1,1,0
-Thomas Carlyle,1,0,1
-Thomas Jefferson Building,1,0,1
-Thomas Pink,1,0,1
+Thomas R. Marshall,1,1,0
 Thomas S. Martin,1,0,1
 Thomas S. Power,1,0,1
-Thomas Taggart,1,0,1
-Tim Berners-Lee,1,0,1
+Thorsten O. Zander,1,1,0
 Tim Gardner,1,0,1
-Timbavati Private Nature Reserve,1,0,1
+Tim Pawlenty 2012 presidential campaign,1,1,0
+Time Person of the Year,1,0,1
+Timeline of the 2004 United States presidential election,1,1,0
+Timeline of the 2024 United States presidential election,1,1,0
+Titan IIIE,1,1,0
 Titan IV,1,0,1
 Tom Mueller,1,0,1
 Tom Truscott,1,0,1
-Tom Wheeler,1,0,1
 Tontine Coffee House,1,0,1
-Transportation Economics,1,0,1
-Trevor Blackwell,1,0,1
+Tony Honors for Excellence in Theatre,1,0,1
+Trade union,1,1,0
+Tucker Carlson,1,1,0
+Tulsa race massacre,1,0,1
+Twelfth Air Force,1,1,0
 Twenty-Second Air Force,1,1,0
 U.S. Air,1,0,1
-U.S. Army Air Corps,1,0,1
 U.S. Atomic Energy Commission,1,0,1
-U.S. Bancorp,1,1,0
-U.S. Bicentennial,1,0,1
 U.S. Federal Communications Commission,1,0,1
-UAL Corporation,1,0,1
+U.S. House of Representatives,1,1,0
 UC Davis,1,0,1
-US Air Force,1,0,1
 US Army,1,0,1
-US Navy,1,0,1
 USS Amazon,1,0,1
+UTC Aerospace,1,1,0
 Unconditional Union Party,1,0,1
 Uniformed Services University of the Health Sciences,1,0,1
 Union Labor Party,1,0,1
-United Airlines,1,1,0
-United Parcel,1,1,0
-United Press International,1,0,1
-United States Africa Command,1,1,0
-United States Air Force Academy,1,0,1
-United States Air Force Basic Military Training,1,0,1
+Union Party (United States),1,0,1
+"Union Square (Washington, D.C.)",1,1,0
+Unionist politician (American Civil War),1,1,0
+United Nations,1,1,0
+United Nations Climate Change Conference,1,1,0
+United States Air Force Band,1,1,0
 United States Air Force Thunderbirds,1,0,1
-United States Capitol Complex,1,0,1
 United States Capitol Visitor Center,1,0,1
-United States Coast Guard Training Center Cape May,1,0,1
 United States Constitution,1,0,1
+United States Court of Appeals for the Fifth Circuit,1,1,0
 United States Department of Commerce,1,0,1
 United States Department of Justice,1,0,1
-United States Government Manual,1,0,1
+United States Geological Survey,1,1,0
 United States House Committee on Ways and Means,1,0,1
-United States Marine Corps History Division,1,0,1
+United States Marine Corps Recruit Training,1,1,0
 United States Marine Corps rank insignia,1,0,1
-United States Merchant Marine Academy,1,0,1
-United States Naval Academy,1,0,1
+United States Military Academy Preparatory School,1,1,0
 United States Secretary of the Interior,1,0,1
+United States Secretary of the Navy,1,1,0
 United States Secretary of the Treasury,1,0,1
+United States Senate Democratic Steering and Outreach Committee,1,1,0
 United States Virgin Islands,1,0,1
-United States census,1,0,1
+United States in World War I,1,1,0
+United States presidential election,1,1,0
+United States presidential elections in Wyoming,1,1,0
 United States presidential line of succession,1,0,1
-Valor Equity Partners,1,0,1
 Vector Launch,1,1,0
-Vegas Loop,1,0,1
-Virgin Galactic,1,1,0
+Vehicles,1,1,0
+Vermont Avenue,1,1,0
+Virgin Galactic Unity 22,1,0,1
+Virgin Group,1,1,0
 Virgin Hyperloop One,1,0,1
-Volvo Amazon,1,0,1
-Vulcan Centaur,1,0,1
-Wallace H. White,1,0,1
-Warren Buffett,1,0,1
-Wayback Machine,1,0,1
-West Covina,1,0,1
+Virginia Abernethy,1,1,0
+Visual art of the United States,1,1,0
+Von Holzhausen,1,1,0
+Wall Street Journal,1,1,0
+Wally Funk,1,1,0
+Walt Disney Company,1,1,0
+Washington Referendum 74,1,0,1
+Wayne Messam,1,1,0
 Western Hemisphere,1,0,1
-White Knight Two,1,0,1
-White Sands Missile Range,1,0,1
-Whitelaw Reid,1,0,1
-William R. King,1,0,1
-William Randolph,1,0,1
-William Wirt (attorney general),1,0,1
-Williams College,1,0,1
-Wojciech Zaremba,1,0,1
-World Bank,1,0,1
+While,1,1,0
+Wikimedia Foundation,1,1,0
+William T. Collins,1,0,1
+World (magazine),1,1,0
 World Government,1,0,1
-World Government Summit,1,0,1
-World Rally,1,0,1
-World Values Survey,1,0,1
-World Wide Web,1,0,1
+World Resources Institute,1,1,0
+World Trade Center (1973–2001),1,1,0
+World Wildlife Fund,1,1,0
 World Wireless System,1,0,1
 X Corp,1,1,0
-York City,1,0,1
-York University,1,0,1
-Yoshua Bengio,1,0,1
-Yuri Gagarin,1,0,1
-Ze'ev Drori,1,1,0
+X.AI Corp,1,1,0
+Xoom Corporation,1,1,0
 Zep Solar,1,0,1
-analytics,1,0,1

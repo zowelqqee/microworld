@@ -296,6 +296,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "New York State Banking Department",
+      "predicate": "developed_by",
+      "object": "April",
+      "source_page": "New York State Banking Department",
+      "evidence_text": "The New York State Banking Department was created by the New York Legislature on April 15, 1851, with a chief officer to be known as the Superintendent.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The New York State Banking Department was created by the New York Legislature on April 15, 1851, with a chief officer to be known as the Superintendent.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Pegasus",
       "predicate": "develops",
       "object": "Pegasus's three Orion solid motors",
@@ -356,6 +376,26 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "United Online",
+      "predicate": "headquartered_in",
+      "object": "Woodland Hills",
+      "source_page": "United Online",
+      "evidence_text": "United Online is headquartered in Woodland Hills, California, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "United Online is headquartered in Woodland Hills, California, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "headquartered_in_quarantine_default"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "GAO",
       "predicate": "headquartered_in",
       "object": "Washington",
@@ -392,6 +432,22 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_person_alias"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "BU London Programmes",
+      "predicate": "headquartered_in",
+      "object": "South Kensington",
+      "source_page": "Boston University",
+      "evidence_text": "BU London Programmes are headquartered in South Kensington, London.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:1fb2219b:a8c6ea21",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "headquartered_in_quarantine_default"
   },
   {
     "item": {

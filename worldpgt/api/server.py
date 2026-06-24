@@ -34,6 +34,7 @@ from worldpgt.assistant_surface.types import (
 )
 from worldpgt.dialogue.conversation_context import ConversationContext, ConversationTurn
 from worldpgt.dialogue.coreference_resolver import resolve_coreferences
+from worldpgt.dialogue.followup_rewriter import rewrite_followup
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.multihop_qa.assistant_adapter import try_answer_multihop
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
@@ -102,7 +103,8 @@ def ask(req: AskRequest) -> AskResponse:
 
     # Coreference resolution against conversation history.
     resolution = resolve_coreferences(req.question, context, _surface_index)
-    effective_question = resolution.resolved_question
+    followup = rewrite_followup(resolution.resolved_question, context, _surface_index)
+    effective_question = followup.resolved_question
     semantic_query = parse_semantic_query(effective_question, _surface_index)
 
     resolved_refs = [
@@ -120,7 +122,10 @@ def ask(req: AskRequest) -> AskResponse:
             req.question, _overlay_mode, resolution.unresolved_reference
         )
     else:
-        answer = _orchestrator.answer(effective_question)
+        answer = _orchestrator.answer(
+            effective_question,
+            answer_style=followup.answer_style,
+        )
 
     # Optional multi-hop pass.
     answer_text = answer.answer_text
@@ -272,7 +277,7 @@ def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
     _orchestrator = AnswerOrchestrator(overlay_mode, overlay_path=overlay_path)
     _surface_index = EntitySurfaceIndex(
         accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
-        promoted_overlay_path=_PROMOTED_OVERLAY_PATH,
+        promoted_overlay_path=Path(resolved_path),
         snapshot_overlay_path=_SNAPSHOT_OVERLAY_PATH,
     )
     _overlay_items = _load_overlay_items(resolved_path)

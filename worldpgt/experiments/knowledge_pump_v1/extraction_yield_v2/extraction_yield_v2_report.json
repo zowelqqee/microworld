@@ -2,64 +2,127 @@
   "summary": {
     "extraction_yield_v2_enabled": true,
     "candidate_source": "pump_extraction_yield_v2",
-    "extraction_yield_v2_candidate_count": 998,
-    "extraction_yield_v2_relation_candidate_count": 314,
-    "extraction_yield_v2_definition_candidate_count": 684,
+    "extraction_yield_v2_candidate_count": 2962,
+    "extraction_yield_v2_relation_candidate_count": 2113,
+    "extraction_yield_v2_definition_candidate_count": 849,
     "extraction_yield_v2_rejected_count": 0,
     "extraction_yield_v2_quarantined_count": 0,
     "extraction_yield_v2_candidate_by_pattern": {
-      "acquired_active_v2": 36,
-      "acquired_by_v2": 44,
-      "developed_by_v2": 49,
-      "develops_inverse_v2": 49,
-      "founded_by_v2": 45,
-      "headquartered_in_v2": 60,
-      "lead_definition_v2": 684,
+      "acquired_active_v2": 38,
+      "acquired_by_v2": 45,
+      "alias_v2": 140,
+      "based_at_v2": 9,
+      "ceased_operations_v2": 2,
+      "construction_started_v2": 5,
+      "developed_by_v2": 56,
+      "develops_inverse_v2": 56,
+      "enables_v2": 12,
+      "filed_for_bankruptcy_v2": 5,
+      "first_released_v2": 37,
+      "founded_by_v2": 52,
+      "funded_by_v2": 2,
+      "has_facility_v2": 1,
+      "headquartered_in_v2": 67,
+      "hosted_flight_to_v2": 1,
+      "introduced_v2": 28,
+      "lead_definition_v2": 849,
+      "located_in_v2": 1086,
       "manufactured_by_v2": 1,
+      "marketed_as_v2": 10,
+      "merged_with_v2": 25,
+      "offers_v2": 3,
       "operated_by_v2": 6,
-      "owned_by_v2": 10,
+      "owned_by_v2": 16,
+      "provides_v2": 147,
       "publishes_direct_v2": 6,
+      "runs_on_v2": 12,
       "service_of_v2": 3,
-      "subsidiary_of_v2": 5
+      "subsidiary_of_v2": 5,
+      "supports_v2": 81,
+      "used_for_v2": 32,
+      "uses_v2": 114,
+      "works_by_v2": 10
     },
-    "docs_processed": 1910,
+    "docs_processed": 2368,
     "docs_errors": 0,
     "screened_out_sentence_count": 0,
     "network_calls": false
   },
   "stats": {
-    "docs_processed": 1910,
+    "docs_processed": 2368,
     "docs_errors": 0,
     "docs_error_details": [],
-    "total_candidates": 998,
-    "relation_candidates": 314,
-    "definition_candidates": 684,
+    "total_candidates": 2962,
+    "relation_candidates": 2113,
+    "definition_candidates": 849,
     "pattern_counts": {
-      "acquired_active_v2": 36,
-      "acquired_by_v2": 44,
-      "developed_by_v2": 49,
-      "founded_by_v2": 46,
-      "headquartered_in_v2": 60,
-      "lead_definition_v2": 686,
+      "acquired_active_v2": 38,
+      "acquired_by_v2": 45,
+      "alias_v2": 141,
+      "based_at_v2": 9,
+      "ceased_operations_v2": 2,
+      "construction_started_v2": 5,
+      "developed_by_v2": 56,
+      "enables_v2": 12,
+      "filed_for_bankruptcy_v2": 5,
+      "first_released_v2": 38,
+      "founded_by_v2": 53,
+      "funded_by_v2": 2,
+      "has_facility_v2": 1,
+      "headquartered_in_v2": 67,
+      "hosted_flight_to_v2": 1,
+      "introduced_v2": 29,
+      "lead_definition_v2": 851,
+      "located_in_v2": 1094,
       "manufactured_by_v2": 1,
+      "marketed_as_v2": 10,
+      "merged_with_v2": 25,
+      "offers_v2": 3,
       "operated_by_v2": 6,
-      "owned_by_v2": 10,
+      "owned_by_v2": 16,
+      "provides_v2": 147,
       "publishes_direct_v2": 6,
-      "screened_out": 6361,
+      "runs_on_v2": 12,
+      "screened_out": 7949,
       "service_of_v2": 3,
-      "subsidiary_of_v2": 5
+      "subsidiary_of_v2": 5,
+      "supports_v2": 81,
+      "used_for_v2": 32,
+      "uses_v2": 114,
+      "works_by_v2": 10
     },
     "predicates": [
+      "alias",
+      "based_at",
+      "ceased_operations",
+      "construction_started",
       "developed_by",
       "develops",
+      "enables",
+      "filed_for_bankruptcy",
+      "first_released",
       "founded_by",
+      "funded_by",
+      "has_facility",
       "headquartered_in",
+      "hosted_flight_to",
+      "introduced",
+      "located_in",
+      "marketed_as",
+      "merged_with",
+      "offers",
       "operated_by",
       "owned_by",
       "produces",
+      "provides",
       "publishes",
+      "runs_on",
       "service_of",
-      "subsidiary_of"
+      "subsidiary_of",
+      "supports",
+      "used_for",
+      "uses",
+      "works_by"
     ],
     "network_calls": false,
     "candidate_source": "pump_extraction_yield_v2"
@@ -98,6 +161,38 @@
       "evidence_span": "The Châtenay-Malabry campus was designed by architect Jean Fayeton, and was inaugurated by President Georges Pompidou, who was accompanied on this occasion by Robert Galley."
     },
     {
+      "overlay_type": "overlay_relation",
+      "subject": "École Centrale Paris",
+      "predicate": "located_in",
+      "object": "Europe",
+      "source_page": "École Centrale Paris",
+      "evidence_text": "It was a founding member of the TIME (Top Industrial Managers for Europe) network among top engineering schools in Europe, and also a member of the UniverSud Paris and the CESAER association of European engineering schools.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "It was a founding member of the TIME (Top Industrial Managers for Europe) network among top engineering schools in Europe, and also a member of the UniverSud Paris and the CESAER association of European engineering schools."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Compromise that resulted in Congress's present structure",
+      "predicate": "located_in",
+      "object": "Independence Hall",
+      "source_page": "100th United States Congress",
+      "evidence_text": "July 16, 1987: The bicentennial of the Connecticut Compromise that resulted in Congress's present structure is marked, by an unprecedented joint meeting outside Washington, in Independence Hall.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "July 16, 1987: The bicentennial of the Connecticut Compromise that resulted in Congress's present structure is marked, by an unprecedented joint meeting outside Washington, in Independence Hall."
+    },
+    {
       "overlay_type": "overlay_definition",
       "subject": "Chicago real estate bubble of the 1830s",
       "definition": "real estate bubble",
@@ -114,276 +209,244 @@
       "evidence_span": "The Chicago real estate bubble of the 1830s was a real estate bubble, during which time the per acre prices (in 2012 dollars) in the future Chicago Loop increased from $800 in 1830 to $327,000 in 1836, before falling to $38,000 per acre by 1841."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Tesla, provisional designation 1952 UW1,",
-      "definition": "carbonaceous asteroid from the central region of the asteroid belt",
-      "predicate": "is_a",
-      "source_page": "2244 Tesla",
-      "evidence_text": "2244 Tesla, provisional designation 1952 UW1, is a carbonaceous asteroid from the central region of the asteroid belt, approximately 25 kilometers in diameter.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "2244 Tesla, provisional designation 1952 UW1, is a carbonaceous asteroid from the central region of the asteroid belt, approximately 25 kilometers in diameter."
-    },
-    {
-      "overlay_type": "overlay_definition",
-      "subject": "Abraham Fortas",
-      "definition": "American lawyer",
-      "predicate": "is_a",
-      "source_page": "Abe Fortas",
-      "evidence_text": "Abraham Fortas (June 19, 1910 – April 5, 1982) was an American lawyer and jurist who served as an associate justice of the Supreme Court of the United States from 1965 to 1969.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Abraham Fortas (June 19, 1910 – April 5, 1982) was an American lawyer and jurist who served as an associate justice of the Supreme Court of the United States from 1965 to 1969."
-    },
-    {
-      "overlay_type": "overlay_definition",
-      "subject": "Accenture plc",
-      "definition": "Irish technology consulting company",
-      "predicate": "is_a",
-      "source_page": "Andersen Consulting",
-      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland."
-    },
-    {
       "overlay_type": "overlay_relation",
-      "subject": "Accenture plc is an Irish technology consulting company",
-      "predicate": "headquartered_in",
-      "object": "Dublin",
-      "source_page": "Andersen Consulting",
-      "evidence_text": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland.",
+      "subject": "Birney",
+      "predicate": "located_in",
+      "object": "England until November",
+      "source_page": "1840 United States presidential election",
+      "evidence_text": "Birney was unable to campaign during the election as he was in England until November.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "headquartered_in_v2",
-      "v2_pattern_id": "headquartered_in_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Accenture plc is an Irish technology consulting company headquartered in Dublin, Ireland."
-    },
-    {
-      "overlay_type": "overlay_definition",
-      "subject": "Adam Smith",
-      "definition": "Scottish economist",
-      "predicate": "is_a",
-      "source_page": "Adam Smith",
-      "evidence_text": "Adam Smith (baptised 16 June  [O.S. 5 June] 1723 – 17 July 1790) was a Scottish economist and philosopher who was a pioneer in the field of political economy and key figure during the Scottish Enlightenment.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Adam Smith (baptised 16 June  [O.S. 5 June] 1723 – 17 July 1790) was a Scottish economist and philosopher who was a pioneer in the field of political economy and key figure during the Scottish Enlightenment."
+      "evidence_span": "Birney was unable to campaign during the election as he was in England until November."
     },
     {
       "overlay_type": "overlay_relation",
-      "subject": "Systems, a subsidiary of the General Electric Company,",
-      "predicate": "owned_by",
-      "object": "British Aerospace",
-      "source_page": "Aerospace manufacturing",
-      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "acquired_by_v2",
-      "v2_pattern_id": "acquired_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
-    },
-    {
-      "overlay_type": "overlay_relation",
-      "subject": "Systems, a subsidiary of the General Electric Company,",
-      "predicate": "owned_by",
-      "object": "US",
-      "source_page": "Aerospace manufacturing",
-      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "acquired_by_v2",
-      "v2_pattern_id": "acquired_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
-    },
-    {
-      "overlay_type": "overlay_relation",
-      "subject": "Early years Affirm",
-      "predicate": "founded_by",
-      "object": "Max Levchin",
-      "source_page": "Affirm (company)",
-      "evidence_text": "2012–2015: Early years Affirm was founded in 2012 by Max Levchin, Nathan Gettings, Jeffrey Kaditz, and Alex Rampell as part of the initial portfolio of startup studio HVF.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "founded_by_v2",
-      "v2_pattern_id": "founded_by_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "2012–2015: Early years Affirm was founded in 2012 by Max Levchin, Nathan Gettings, Jeffrey Kaditz, and Alex Rampell as part of the initial portfolio of startup studio HVF."
-    },
-    {
-      "overlay_type": "overlay_relation",
-      "subject": "Returnly",
-      "predicate": "owned_by",
-      "object": "Growth In May 2021, Affirm",
-      "source_page": "Affirm (company)",
-      "evidence_text": "2021–2022: Growth In May 2021, Affirm acquired Returnly, a financial technology service company, for US$300 million.",
-      "trust": "overlay_candidate",
-      "risk": "medium",
-      "stability": "semi_stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "acquired_active_v2",
-      "v2_pattern_id": "acquired_active_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "2021–2022: Growth In May 2021, Affirm acquired Returnly, a financial technology service company, for US$300 million."
-    },
-    {
-      "overlay_type": "overlay_definition",
-      "subject": "Affordable Connectivity Program",
-      "definition": "United States government-sponsored program",
-      "predicate": "is_a",
-      "source_page": "Affordable Connectivity Program",
-      "evidence_text": "The Affordable Connectivity Program (ACP) was a United States government-sponsored program that  provided internet access to low-income households.",
-      "trust": "overlay_candidate",
-      "risk": "low",
-      "stability": "stable",
-      "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
-      "confidence_label": "pattern_explicit",
-      "evidence_span": "The Affordable Connectivity Program (ACP) was a United States government-sponsored program that  provided internet access to low-income households."
-    },
-    {
-      "overlay_type": "overlay_relation",
-      "subject": "Air Combat Command",
-      "predicate": "headquartered_in",
-      "object": "Langley Air Force Base",
-      "source_page": "Air Combat Command",
-      "evidence_text": "Air Combat Command is headquartered at Langley Air Force Base, Joint Base Langley–Eustis, Virginia, United States.",
+      "subject": "One Independent",
+      "predicate": "located_in",
+      "object": "North Carolina",
+      "source_page": "1886 United States House of Representatives elections",
+      "evidence_text": "One Independent was also elected in North Carolina.",
       "trust": "overlay_candidate",
       "risk": "low",
       "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "headquartered_in_v2",
-      "v2_pattern_id": "headquartered_in_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Air Combat Command is headquartered at Langley Air Force Base, Joint Base Langley–Eustis, Virginia, United States."
+      "evidence_span": "One Independent was also elected in North Carolina."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Air Force Historical Research Agency",
-      "definition": "Department of the Air Force's central repository for physical",
-      "predicate": "is_a",
-      "source_page": "Air Force Historical Research Agency",
-      "evidence_text": "The Air Force Historical Research Agency (AFHRA) is the Department of the Air Force's central repository for physical and digital documentation.",
+      "overlay_type": "overlay_relation",
+      "subject": "Logistics The convention",
+      "predicate": "located_in",
+      "object": "Chicago, Illinois",
+      "source_page": "1900 Prohibition National Convention",
+      "evidence_text": "Logistics The convention was held July 27 and 28 in Chicago, Illinois.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "The Air Force Historical Research Agency (AFHRA) is the Department of the Air Force's central repository for physical and digital documentation."
+      "evidence_span": "Logistics The convention was held July 27 and 28 in Chicago, Illinois."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Officer Training School",
-      "definition": "United States Air Force",
-      "predicate": "is_a",
-      "source_page": "Air Force Officer Training School",
-      "evidence_text": "Officer Training School (OTS) is a United States Air Force and United States Space Force officer accession and training program located at Maxwell Air Force Base in Montgomery, Alabama.",
+      "overlay_type": "overlay_relation",
+      "subject": "There",
+      "predicate": "located_in",
+      "object": "June for his nomination as vice president on the ticket alongside Bryan",
+      "source_page": "1900 Social Democratic National Convention",
+      "evidence_text": "There was some support in June for his nomination as vice president on the ticket alongside Bryan; however, Dewey resolutely refused to be considered.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Officer Training School (OTS) is a United States Air Force and United States Space Force officer accession and training program located at Maxwell Air Force Base in Montgomery, Alabama."
+      "evidence_span": "There was some support in June for his nomination as vice president on the ticket alongside Bryan; however, Dewey resolutely refused to be considered."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Air Force Research Laboratory",
-      "definition": "scientific research",
-      "predicate": "is_a",
-      "source_page": "Air Force Research Laboratory",
-      "evidence_text": "The Air Force Research Laboratory (AFRL) is a scientific research and development detachment of the United States Air Force Materiel Command dedicated to leading the discovery, development, and integration of direct-energy based aerospace warfighting technologies, planning and executing the Air Force science and technology program, and providing warfighting capabilities to United States air, space, and cyberspace forces.",
+      "overlay_type": "overlay_relation",
+      "subject": "Roosevelt",
+      "predicate": "located_in",
+      "object": "February, as he took more conservative stances on corporatism and wealth",
+      "source_page": "1916 Republican Party presidential primaries",
+      "evidence_text": "Roosevelt was floated as a Republican candidate in February, as he took more conservative stances on corporatism and wealth.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "The Air Force Research Laboratory (AFRL) is a scientific research and development detachment of the United States Air Force Materiel Command dedicated to leading the discovery, development, and integration of direct-energy based aerospace warfighting technologies, planning and executing the Air Force science and technology program, and providing warfighting capabilities to United States air, space, and cyberspace forces."
+      "evidence_span": "Roosevelt was floated as a Republican candidate in February, as he took more conservative stances on corporatism and wealth."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Air Force Specialty Code",
-      "definition": "alphanumeric code used by the United States Air Force to identify a specific job",
-      "predicate": "is_a",
-      "source_page": "Air Force Specialty Code",
-      "evidence_text": "The Air Force Specialty Code (AFSC) is an alphanumeric code used by the United States Air Force to identify a specific job.",
+      "overlay_type": "overlay_relation",
+      "subject": "Quentin",
+      "predicate": "located_in",
+      "object": "July",
+      "source_page": "1920 Republican Party presidential primaries",
+      "evidence_text": "However, Roosevelt's had physical condition deteriorated rapidly after his son Quentin was killed in action in July, and he died at the age of sixty on January 6, 1919.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "The Air Force Specialty Code (AFSC) is an alphanumeric code used by the United States Air Force to identify a specific job."
+      "evidence_span": "However, Roosevelt's had physical condition deteriorated rapidly after his son Quentin was killed in action in July, and he died at the age of sixty on January 6, 1919."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Air command",
-      "definition": "term used to refer to the command structure of some air forces",
-      "predicate": "is_a",
-      "source_page": "Air Command",
-      "evidence_text": "Air command is a term used to refer to the command structure of some air forces.",
+      "overlay_type": "overlay_relation",
+      "subject": "Labor National Convention",
+      "predicate": "located_in",
+      "object": "Chicago, Illinois",
+      "source_page": "1928 Farmer–Labor National Convention",
+      "evidence_text": "The 1928 Farmer–Labor National Convention was held July 10–11, 1928 in Chicago, Illinois.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Air command is a term used to refer to the command structure of some air forces."
+      "evidence_span": "The 1928 Farmer–Labor National Convention was held July 10–11, 1928 in Chicago, Illinois."
     },
     {
-      "overlay_type": "overlay_definition",
-      "subject": "Airbus SE",
-      "definition": "European aerospace corporation",
-      "predicate": "is_a",
-      "source_page": "Airbus",
-      "evidence_text": "Airbus SE ( AIR-buss; French: [ɛʁbys] ; German: [ˈɛːɐ̯bʊs] ; Spanish: [ˈejɾβus]) is a European aerospace corporation.",
+      "overlay_type": "overlay_relation",
+      "subject": "Henry Quincy Alexander of North Carolina",
+      "predicate": "located_in",
+      "object": "Reed's stead",
+      "source_page": "1928 Farmer–Labor National Convention",
+      "evidence_text": "A third man, DrDr\u0000 Henry Quincy Alexander of North Carolina was then nominated in Reed's stead.",
       "trust": "overlay_candidate",
       "risk": "low",
-      "stability": "stable",
+      "stability": "semi_stable",
       "candidate_source": "pump_extraction_yield_v2",
-      "extraction_pattern": "lead_definition_v2",
-      "v2_pattern_id": "lead_definition_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
       "confidence_label": "pattern_explicit",
-      "evidence_span": "Airbus SE ( AIR-buss; French: [ɛʁbys] ; German: [ˈɛːɐ̯bʊs] ; Spanish: [ˈejɾβus]) is a European aerospace corporation."
+      "evidence_span": "A third man, DrDr\u0000 Henry Quincy Alexander of North Carolina was then nominated in Reed's stead."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Tillman",
+      "predicate": "located_in",
+      "object": "Alexander's stead",
+      "source_page": "1928 Farmer–Labor National Convention",
+      "evidence_text": "Tillman (a nephew of the late Senator Benjamin Tillman of South Carolina) was nominated in Alexander's stead.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Tillman (a nephew of the late Senator Benjamin Tillman of South Carolina) was nominated in Alexander's stead."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Logistics The convention",
+      "predicate": "located_in",
+      "object": "New York City",
+      "source_page": "1940 Communist National Convention",
+      "evidence_text": "Logistics The convention was held May 30–June 2 in New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Logistics The convention was held May 30–June 2 in New York City."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Truman's surprise victory",
+      "predicate": "located_in",
+      "object": "United States history",
+      "source_page": "1948 United States presidential election",
+      "evidence_text": "Truman's surprise victory was the fifth consecutive presidential win for the Democratic Party, its longest winning streak and the longest for either party in United States history.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Truman's surprise victory was the fifth consecutive presidential win for the Democratic Party, its longest winning streak and the longest for either party in United States history."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Eisenhower of New York",
+      "predicate": "alias",
+      "object": "\"Ike\"",
+      "source_page": "1952 Republican National Convention",
+      "evidence_text": "Eisenhower of New York, nicknamed \"Ike\", for president and then Richard M.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Eisenhower of New York, nicknamed \"Ike\", for president and then Richard M."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Eisenhower of New York",
+      "predicate": "alias",
+      "object": "then Richard M",
+      "source_page": "1952 Republican National Convention",
+      "evidence_text": "Eisenhower of New York, nicknamed \"Ike\", for president and then Richard M.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Eisenhower of New York, nicknamed \"Ike\", for president and then Richard M."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Republican nomination",
+      "predicate": "located_in",
+      "object": "World War II",
+      "source_page": "1952 United States presidential election",
+      "evidence_text": "The Republican nomination was primarily contested by Eisenhower, a general, widely popular for his leadership in World War II, and the conservative Ohio senator Robert A.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Republican nomination was primarily contested by Eisenhower, a general, widely popular for his leadership in World War II, and the conservative Ohio senator Robert A."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Kennedy",
+      "predicate": "located_in",
+      "object": "Dallas, Texas",
+      "source_page": "1964 Democratic National Convention",
+      "evidence_text": "Kennedy was assassinated in Dallas, Texas, and Kennedy's legacy was present throughout the convention.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Kennedy was assassinated in Dallas, Texas, and Kennedy's legacy was present throughout the convention."
     }
   ],
   "rejected_examples": [],
@@ -391,14 +454,56 @@
   "by_source_page": [
     {
       "source_page": "Comenity Capital Bank",
-      "candidate_count": 11,
-      "relation_count": 11,
+      "candidate_count": 13,
+      "relation_count": 13,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Microsoft SQL Server",
+      "candidate_count": 12,
+      "relation_count": 12,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Berkeley DB",
+      "candidate_count": 10,
+      "relation_count": 10,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Google Cloud",
+      "candidate_count": 10,
+      "relation_count": 9,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Mission Control Center",
+      "candidate_count": 10,
+      "relation_count": 10,
       "definition_count": 0
     },
     {
       "source_page": "United States Coast Guard",
+      "candidate_count": 10,
+      "relation_count": 9,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Satellite Radio",
       "candidate_count": 9,
+      "relation_count": 9,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Government Services",
+      "candidate_count": 8,
       "relation_count": 8,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Microsoft Azure",
+      "candidate_count": 8,
+      "relation_count": 7,
       "definition_count": 1
     },
     {
@@ -408,285 +513,243 @@
       "definition_count": 0
     },
     {
-      "source_page": "Government Services",
-      "candidate_count": 6,
-      "relation_count": 6,
+      "source_page": "Facial recognition system",
+      "candidate_count": 7,
+      "relation_count": 7,
       "definition_count": 0
     },
     {
       "source_page": "Jaguar I-Pace",
-      "candidate_count": 6,
-      "relation_count": 6,
+      "candidate_count": 7,
+      "relation_count": 7,
       "definition_count": 0
     },
     {
       "source_page": "Orbital Sciences Pegasus",
-      "candidate_count": 6,
-      "relation_count": 6,
+      "candidate_count": 7,
+      "relation_count": 7,
       "definition_count": 0
+    },
+    {
+      "source_page": "Orbiting Carbon Observatory",
+      "candidate_count": 7,
+      "relation_count": 7,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Political positions of Paul Ryan",
+      "candidate_count": 7,
+      "relation_count": 7,
+      "definition_count": 0
+    },
+    {
+      "source_page": "U.S. Bancorp",
+      "candidate_count": 7,
+      "relation_count": 7,
+      "definition_count": 0
+    },
+    {
+      "source_page": "United States Air Force Basic Military Training",
+      "candidate_count": 7,
+      "relation_count": 6,
+      "definition_count": 1
     },
     {
       "source_page": "United States Court of Appeals for the Ninth Circuit",
+      "candidate_count": 7,
+      "relation_count": 7,
+      "definition_count": 0
+    },
+    {
+      "source_page": "CST-100 Starliner",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Fourth Industrial Revolution",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Henrik Fisker",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Informix Software",
       "candidate_count": 6,
       "relation_count": 6,
       "definition_count": 0
     },
     {
-      "source_page": "Informix Software",
+      "source_page": "Intel Corporation",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "London Stock Exchange",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Long March",
+      "candidate_count": 6,
+      "relation_count": 6,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Oracle Database",
+      "candidate_count": 6,
+      "relation_count": 6,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Paramount Skydance",
+      "candidate_count": 6,
+      "relation_count": 6,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Sergey Brin",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Stanford University",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "The Mercury News",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "University of Pretoria",
+      "candidate_count": 6,
+      "relation_count": 5,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Air Force Reserve Officer Training Corps",
       "candidate_count": 5,
       "relation_count": 5,
       "definition_count": 0
     },
     {
-      "source_page": "Pershing II",
+      "source_page": "Amsterdam Stock Exchange",
       "candidate_count": 5,
       "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "SpaceX Demo-2",
+      "source_page": "Andersen Consulting",
       "candidate_count": 5,
       "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "American City Business Journals",
-      "candidate_count": 4,
+      "source_page": "Barry Goldwater",
+      "candidate_count": 5,
       "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Boca Chica",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Compaq Computer",
-      "candidate_count": 4,
-      "relation_count": 3,
       "definition_count": 1
     },
     {
-      "source_page": "Elevation Partners",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Intel Corporation",
-      "candidate_count": 4,
-      "relation_count": 3,
-      "definition_count": 1
-    },
-    {
-      "source_page": "London Stock Exchange",
-      "candidate_count": 4,
-      "relation_count": 3,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Orbiting Carbon Observatory",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Paramount Skydance",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Public domain",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Rolls-Royce Merlin",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Satellite Radio",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "United States Court of Appeals for the Seventh Circuit",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "United States Secretary of Defense",
-      "candidate_count": 4,
-      "relation_count": 4,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Amazon Bookstore Cooperative",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Ampex Corporation",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Aston Martin",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "BNN Bloomberg",
-      "candidate_count": 3,
-      "relation_count": 3,
-      "definition_count": 0
-    },
-    {
-      "source_page": "Berkshire Hathaway",
-      "candidate_count": 3,
-      "relation_count": 3,
+      "source_page": "Bloomberg Industry Group",
+      "candidate_count": 5,
+      "relation_count": 5,
       "definition_count": 0
     },
     {
       "source_page": "Boeing X-37",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
       "source_page": "Cecil Rhodes",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
       "source_page": "Community Memory",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "Council for National Policy",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "source_page": "Detroit Electric",
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "Digital Services Act",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "General Motors",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Giga Nevada",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Google Cloud",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Harvard University",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Mises Institute",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Mission Control Center",
-      "candidate_count": 3,
-      "relation_count": 3,
+      "source_page": "Elevation Partners",
+      "candidate_count": 5,
+      "relation_count": 5,
       "definition_count": 0
     },
     {
-      "source_page": "Oracle Rdb",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "source_page": "Everytown for Gun Safety",
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "Raytheon Technologies",
-      "candidate_count": 3,
-      "relation_count": 3,
+      "source_page": "Giga Berlin",
+      "candidate_count": 5,
+      "relation_count": 4,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Government Accountability Office",
+      "candidate_count": 5,
+      "relation_count": 4,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Illinois Freedom Caucus",
+      "candidate_count": 5,
+      "relation_count": 4,
+      "definition_count": 1
+    },
+    {
+      "source_page": "International Docking System Standard",
+      "candidate_count": 5,
+      "relation_count": 4,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Near Earth Network",
+      "candidate_count": 5,
+      "relation_count": 5,
       "definition_count": 0
     },
     {
-      "source_page": "Rocket Science Games",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Royal Holloway",
-      "candidate_count": 3,
-      "relation_count": 3,
+      "source_page": "New York State Banking Department",
+      "candidate_count": 5,
+      "relation_count": 5,
       "definition_count": 0
     },
     {
-      "source_page": "Sam Altman",
-      "candidate_count": 3,
-      "relation_count": 2,
+      "source_page": "O. Douglas",
+      "candidate_count": 5,
+      "relation_count": 4,
       "definition_count": 1
     },
     {
-      "source_page": "Stanford University",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "Test Site",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "The Times",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "U.S. Congress",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "United States Air Force Honor Guard",
-      "candidate_count": 3,
-      "relation_count": 2,
-      "definition_count": 1
-    },
-    {
-      "source_page": "United Technologies",
-      "candidate_count": 3,
-      "relation_count": 3,
+      "source_page": "Oracle E-Business Suite",
+      "candidate_count": 5,
+      "relation_count": 5,
       "definition_count": 0
     }
   ]

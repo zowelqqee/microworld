@@ -18,7 +18,7 @@
       "snapshot_revision_id": 1358190937,
       "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-172-overlay-001",
+      "snapshot_candidate_id": "snap-231-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -42,7 +42,7 @@
       "snapshot_revision_id": 1358190937,
       "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-172-overlay-002",
+      "snapshot_candidate_id": "snap-231-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -66,7 +66,7 @@
       "snapshot_revision_id": 1358190937,
       "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-172-overlay-003",
+      "snapshot_candidate_id": "snap-231-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -90,7 +90,7 @@
       "snapshot_revision_id": 1358190937,
       "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-172-overlay-004",
+      "snapshot_candidate_id": "snap-231-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -114,7 +114,7 @@
       "snapshot_revision_id": 1359346089,
       "snapshot_raw_text_sha256": "fb02d9f084f32693b87f87baae817f5e4fe3ef1a8344a3c75b333cbc5ed4b7ea",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-391-overlay-001",
+      "snapshot_candidate_id": "snap-483-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_unnamed_publication"
@@ -138,7 +138,7 @@
       "snapshot_revision_id": 1359346089,
       "snapshot_raw_text_sha256": "fb02d9f084f32693b87f87baae817f5e4fe3ef1a8344a3c75b333cbc5ed4b7ea",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-391-overlay-008",
+      "snapshot_candidate_id": "snap-483-overlay-008",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_unnamed_publication"
@@ -162,7 +162,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-001",
+      "snapshot_candidate_id": "snap-781-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -186,7 +186,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-002",
+      "snapshot_candidate_id": "snap-781-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -210,7 +210,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-003",
+      "snapshot_candidate_id": "snap-781-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -234,7 +234,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-004",
+      "snapshot_candidate_id": "snap-781-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -258,7 +258,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-005",
+      "snapshot_candidate_id": "snap-781-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -282,7 +282,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-006",
+      "snapshot_candidate_id": "snap-781-overlay-006",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -306,7 +306,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-007",
+      "snapshot_candidate_id": "snap-781-overlay-007",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -330,7 +330,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-008",
+      "snapshot_candidate_id": "snap-781-overlay-008",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -354,7 +354,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-009",
+      "snapshot_candidate_id": "snap-781-overlay-009",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -378,7 +378,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-010",
+      "snapshot_candidate_id": "snap-781-overlay-010",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -402,7 +402,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-011",
+      "snapshot_candidate_id": "snap-781-overlay-011",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -426,7 +426,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-012",
+      "snapshot_candidate_id": "snap-781-overlay-012",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -450,7 +450,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-013",
+      "snapshot_candidate_id": "snap-781-overlay-013",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -474,7 +474,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-014",
+      "snapshot_candidate_id": "snap-781-overlay-014",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -498,7 +498,7 @@
       "snapshot_revision_id": 1329875571,
       "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-618-overlay-015",
+      "snapshot_candidate_id": "snap-781-overlay-015",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -522,7 +522,7 @@
       "snapshot_revision_id": 1357475223,
       "snapshot_raw_text_sha256": "aeaab92754e6764b3493546b0cb2446e17dcd148cb234150e44cb72c6859ad45",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-704-overlay-004",
+      "snapshot_candidate_id": "snap-888-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -546,7 +546,7 @@
       "snapshot_revision_id": 1351041139,
       "snapshot_raw_text_sha256": "d6666e68c02b1d4a35bb214a6ad91d68b70342f80fde5c5628626a16aead2c3d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-727-overlay-001",
+      "snapshot_candidate_id": "snap-913-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -570,7 +570,31 @@
       "snapshot_revision_id": 1351041139,
       "snapshot_raw_text_sha256": "d6666e68c02b1d4a35bb214a6ad91d68b70342f80fde5c5628626a16aead2c3d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-727-overlay-002",
+      "snapshot_candidate_id": "snap-913-overlay-002",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "known_for_default_quarantine"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Hans Moravec",
+      "predicate": "known_for",
+      "object": "work on space tethers",
+      "source_page": "Hans Moravec",
+      "evidence_text": "known for his work on space tethers.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "temporal_class": "historical",
+      "as_of": "",
+      "snapshot_source_title": "Hans Moravec",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Hans_Moravec",
+      "snapshot_retrieved_at": "2026-06-24T01:54:05Z",
+      "snapshot_revision_id": 1354764850,
+      "snapshot_raw_text_sha256": "b63d6e0d31622ad61bfb215d0820c4549eb3efb227c037387fe83e6ea4d41606",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-989-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -594,7 +618,7 @@
       "snapshot_revision_id": 1359736088,
       "snapshot_raw_text_sha256": "b6474ad3bdcebf1a4bc4ad174871e04eb833690fa90e4cb391329419892e44e2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-854-overlay-001",
+      "snapshot_candidate_id": "snap-1065-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_unnamed_publication"
@@ -618,7 +642,7 @@
       "snapshot_revision_id": 1359801281,
       "snapshot_raw_text_sha256": "a691de6e3251789655e2ecddbe8d6a5079b8bf28013fc59ef265d241e49d3cda",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-892-overlay-001",
+      "snapshot_candidate_id": "snap-1111-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -642,7 +666,7 @@
       "snapshot_revision_id": 1359801281,
       "snapshot_raw_text_sha256": "a691de6e3251789655e2ecddbe8d6a5079b8bf28013fc59ef265d241e49d3cda",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-892-overlay-002",
+      "snapshot_candidate_id": "snap-1111-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -666,7 +690,7 @@
       "snapshot_revision_id": 1359801281,
       "snapshot_raw_text_sha256": "a691de6e3251789655e2ecddbe8d6a5079b8bf28013fc59ef265d241e49d3cda",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-892-overlay-003",
+      "snapshot_candidate_id": "snap-1111-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -690,7 +714,7 @@
       "snapshot_revision_id": 1350653231,
       "snapshot_raw_text_sha256": "feea70121189f972f591ba83f0ee1440f7a2d6de3607f2aa8458cffe71222550",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-900-overlay-001",
+      "snapshot_candidate_id": "snap-1119-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_vague_object"
@@ -714,7 +738,7 @@
       "snapshot_revision_id": 1359198435,
       "snapshot_raw_text_sha256": "103b9f86ad92a43275da4bf28a922f57a1ae136fa9157b08fecfe3e2cf245576",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-914-overlay-001",
+      "snapshot_candidate_id": "snap-1137-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -738,7 +762,7 @@
       "snapshot_revision_id": 1359198435,
       "snapshot_raw_text_sha256": "103b9f86ad92a43275da4bf28a922f57a1ae136fa9157b08fecfe3e2cf245576",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-914-overlay-002",
+      "snapshot_candidate_id": "snap-1137-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -762,7 +786,7 @@
       "snapshot_revision_id": 1359198435,
       "snapshot_raw_text_sha256": "103b9f86ad92a43275da4bf28a922f57a1ae136fa9157b08fecfe3e2cf245576",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-914-overlay-003",
+      "snapshot_candidate_id": "snap-1137-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -786,7 +810,7 @@
       "snapshot_revision_id": 1359750981,
       "snapshot_raw_text_sha256": "2c10af76a1038b5d7aa9907afd08c0cc6f060b99f9131a78b8debfbd2e773363",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-984-overlay-001",
+      "snapshot_candidate_id": "snap-1220-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -810,7 +834,7 @@
       "snapshot_revision_id": 1359750981,
       "snapshot_raw_text_sha256": "2c10af76a1038b5d7aa9907afd08c0cc6f060b99f9131a78b8debfbd2e773363",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-984-overlay-002",
+      "snapshot_candidate_id": "snap-1220-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -834,7 +858,7 @@
       "snapshot_revision_id": 1359750981,
       "snapshot_raw_text_sha256": "2c10af76a1038b5d7aa9907afd08c0cc6f060b99f9131a78b8debfbd2e773363",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-984-overlay-003",
+      "snapshot_candidate_id": "snap-1220-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -858,7 +882,7 @@
       "snapshot_revision_id": 1359750981,
       "snapshot_raw_text_sha256": "2c10af76a1038b5d7aa9907afd08c0cc6f060b99f9131a78b8debfbd2e773363",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-984-overlay-004",
+      "snapshot_candidate_id": "snap-1220-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -882,7 +906,7 @@
       "snapshot_revision_id": 1359750981,
       "snapshot_raw_text_sha256": "2c10af76a1038b5d7aa9907afd08c0cc6f060b99f9131a78b8debfbd2e773363",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-984-overlay-005",
+      "snapshot_candidate_id": "snap-1220-overlay-005",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -906,7 +930,7 @@
       "snapshot_revision_id": 1357428994,
       "snapshot_raw_text_sha256": "43799a3cbb778ca8516561b9d8e0d934b2b4f6f03dd2de86b5d670c27e03eea8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1008-overlay-001",
+      "snapshot_candidate_id": "snap-1252-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -930,7 +954,7 @@
       "snapshot_revision_id": 1357428994,
       "snapshot_raw_text_sha256": "43799a3cbb778ca8516561b9d8e0d934b2b4f6f03dd2de86b5d670c27e03eea8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1008-overlay-002",
+      "snapshot_candidate_id": "snap-1252-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -954,7 +978,7 @@
       "snapshot_revision_id": 1355137427,
       "snapshot_raw_text_sha256": "05914fbb2a471c3af4dd9164afd522c9da01e4828e5916bb09e158f5d7f87fb3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1360-overlay-001",
+      "snapshot_candidate_id": "snap-1703-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -978,7 +1002,7 @@
       "snapshot_revision_id": 1355137427,
       "snapshot_raw_text_sha256": "05914fbb2a471c3af4dd9164afd522c9da01e4828e5916bb09e158f5d7f87fb3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1360-overlay-002",
+      "snapshot_candidate_id": "snap-1703-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -1002,7 +1026,7 @@
       "snapshot_revision_id": 1358978070,
       "snapshot_raw_text_sha256": "97a3dffadd10c994388b5ce69356e8595bdd91c1423e1f9ebf8306128e73e233",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1622-overlay-001",
+      "snapshot_candidate_id": "snap-2035-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -1026,7 +1050,7 @@
       "snapshot_revision_id": 1358978070,
       "snapshot_raw_text_sha256": "97a3dffadd10c994388b5ce69356e8595bdd91c1423e1f9ebf8306128e73e233",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1622-overlay-002",
+      "snapshot_candidate_id": "snap-2035-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "known_for_default_quarantine"
@@ -1050,7 +1074,7 @@
       "snapshot_revision_id": 1358808136,
       "snapshot_raw_text_sha256": "a0dcbd947731b1c3088e4289adc8da9ab9f3c8a473b558bf90e478d6da072232",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1637-overlay-002",
+      "snapshot_candidate_id": "snap-2054-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "publishes_unnamed_publication"

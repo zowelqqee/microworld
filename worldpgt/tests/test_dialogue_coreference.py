@@ -8,6 +8,7 @@ from pathlib import Path
 
 from worldpgt.dialogue.conversation_context import ConversationContext, ConversationTurn
 from worldpgt.dialogue.coreference_resolver import resolve_coreferences
+from worldpgt.dialogue.followup_rewriter import rewrite_followup
 from worldpgt.entity_qa.types import SemanticQuery
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 
@@ -151,6 +152,45 @@ def test_ambiguous_reference_is_left_unresolved():
     assert result.resolved_question == "What did he found?"
     assert result.unresolved_reference == "he"
     assert result.replacements == ()
+
+
+def test_followup_rewriter_expands_bare_entity_turn():
+    context = ConversationContext(
+        turns=[
+            _turn(
+                "Tell me about SpaceX.",
+                primary="SpaceX",
+                mentioned=["SpaceX", "Starlink"],
+            )
+        ]
+    )
+
+    result = rewrite_followup("а Starlink?", context, _index())
+
+    assert result.resolved_question == "Tell me about Starlink."
+    assert result.answer_style == "followup"
+    assert result.reason == "bare_entity_followup"
+
+
+def test_followup_rewriter_supplies_last_subject_for_founding_question():
+    context = ConversationContext(
+        turns=[
+            ConversationTurn(
+                question="Tell me about Blue Origin.",
+                semantic_query=_semantic("Blue Origin"),
+                decision="answer",
+                primary_entity="Jeff Bezos",
+                mentioned_entities=["Blue Origin", "Jeff Bezos"],
+                relation_type=None,
+            )
+        ]
+    )
+
+    result = rewrite_followup("кто основал?", context, _index())
+
+    assert result.resolved_question == "Who founded Blue Origin?"
+    assert result.answer_style == "followup"
+    assert result.reason == "omitted_subject_founding"
 
 
 def test_entities_in_window_skips_audit_turns():

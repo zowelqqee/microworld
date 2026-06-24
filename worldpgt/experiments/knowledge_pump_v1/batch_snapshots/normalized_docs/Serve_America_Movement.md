@@ -1,0 +1,60 @@
+# Serve America Movement
+
+Source: https://en.wikipedia.org/wiki/Serve_America_Movement
+Retrieved at: 2026-06-24T01:22:08Z
+Revision ID: 1337403739
+Raw text SHA256: 90815c3c688d00cc75b5296b1297dfb2b67a87ba4732970a4e69944dec44d60b
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+The Serve America Movement (SAM) was a big tent political organization founded in 2017 by Morgan Stanley attorney Eric Grossman. The party achieved its first state party in New York with ballot access, but as of November 4, 2021, it lost its ballot status. Under New York election law, parties must get more than 130,000 votes every two years to maintain ballot access. Party officials said afterward they intended to surpass the state elections vote requirement and use petitions to gain ballot access in other states, in order to contest future elections.
+The party contested its first election in the New York gubernatorial election of 2018 with candidate Stephanie A. Miner (SAM), former chairperson of the New York Democratic Party and former mayor of Syracuse. It merged with the Forward Party and the Renew America Movement in 2022.
+
+Foundation and history
+The party's founders previously worked as staffers for George W. Bush, including CEO Sarah Lenti, who served under Condoleezza Rice as a Director on the National Security Council, and Reed Galen, who worked on three presidential campaigns and is chief strategist of the party.
+On June 18, 2018, Stephanie Miner, a member of the Democratic Party, announced she would run for the 2018 New York gubernatorial election under the party. Miner subsequently picked former Republican Mayor of Pelham Michael Volpe as her running mate.
+The former party chair, Scott Muller, stated that he intends to register the party in New York before expanding to create a national party. Miner was required to achieve 50,000 votes in the election, or use petitions, to gain permanent ballot access for the next four years.
+SAM announced in 2018 that they would work with the newly created, Kansas-based Party of the Center to gather the 18,000 petition signatures necessary to certify the party on Kansas ballots.
+On August 21, 2018, SAM achieved ballot access for their first electoral race in the New York gubernatorial election in 2018. The party gained 40,000 signatures, which far exceeded the 15,000 required, and the petitions were subsequently deemed valid. This enabled them to form a SAM party within the state of New York to contest any future elections they choose to enter. On November 11, 2018, SAM became a ballot-access qualified party in New York state after Miner got 50,672 votes on the party line.
+On January 14, 2020, SAM filed a lawsuit against a new law enacted in New York which would remove ballot access from parties if they do not receive 130,000 votes or 2% of the presidential popular vote, whichever is greater.
+In May 2020, SAM named David Jolly as executive chairman. Jolly is a former Republican who served as a Member of Congress from Florida's 13th congressional district from 2014 to 2017.
+As of November 1, 2020, there were 649 registered members of SAM in New York.
+The party has received most of its financial support from Charles Wall, a former vice chairman of Philip Morris International, who provided more than 93% of the group's funding in 2020.
+The party announced they were merging with the Forward Party and the Renew America Movement on July 27, 2022.
+
+Ideology
+The party generally took a big tent approach, as it was founded by former George W. Bush administration staff members. As a result of the ideological foundations of the party, it aimed to attract both moderate Republicans, Independents, and centrist Democrats in a movement to work for numerous electoral reforms like Ranked Choice Voting, and Open primaries.
+
+Party platform
+The party followed a set of general principles rather than an objective ideology of policies, in order to pursue a common outcome without divisive political differences.
+The party's priorities include:
+
+Addressing income inequality
+Innovating health care
+Improving the education system
+Remaining fiscally responsible
+Promoting diversity
+Embracing free markets
+Providing simple and fair tax
+Supporting liberal democracy domestically and internationally
+Undertaking criminal justice reform
+Pursue electoral reform (including repealing sore loser laws)
+Rejecting isolationism
+
+Electoral history
+
+Gubernatorial nominees
+
+Voter registration
+New York:
+
+In the 2020 New York primary, more votes were recorded for the party than the number of its registered voters.
+
+See also
+Libertarian Party of New York
+List of political parties in the United States
+
+References
+
+External links
+Official website

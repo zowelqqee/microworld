@@ -19,11 +19,6 @@
 
   .bubble .refs { font-style: italic; color: #666; margin-bottom: 6px; font-size: 13px; }
   .bubble .answer-text { color: #111; }
-  .bubble .support { font-size: 12px; color: #888; margin-top: 6px; }
-  .bubble .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 99px; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 6px; }
-  .badge.answer { background: #d4edda; color: #1a6b35; }
-  .badge.no     { background: #f8d7da; color: #721c24; }
-  .badge.audit  { background: #e2e3e5; color: #383d41; }
 
   #footer { padding: 14px 20px; background: #fff; border-top: 1px solid #ddd; display: flex; gap: 10px; }
   #input { flex: 1; padding: 10px 14px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; outline: none; }
@@ -84,11 +79,6 @@ function addAssistantBubble(data) {
   const div = document.createElement('div');
   div.className = 'bubble assistant';
 
-  const badge = document.createElement('div');
-  badge.className = `badge ${data.decision}`;
-  badge.textContent = data.decision;
-  div.appendChild(badge);
-
   if (data.resolved_references && data.resolved_references.length > 0) {
     const refs = document.createElement('div');
     refs.className = 'refs';
@@ -100,11 +90,6 @@ function addAssistantBubble(data) {
   text.className = 'answer-text';
   text.textContent = data.answer || '(no answer text)';
   div.appendChild(text);
-
-  const support = document.createElement('div');
-  support.className = 'support';
-  support.textContent = data.support || '';
-  div.appendChild(support);
 
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;

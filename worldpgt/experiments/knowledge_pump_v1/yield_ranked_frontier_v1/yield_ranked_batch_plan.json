@@ -1,6 +1,6 @@
 {
   "frontier_policy": "yield-ranked",
-  "selected_count": 251,
+  "selected_count": 250,
   "batch_plan_limit": 250,
   "titles": [
     {
@@ -35,9 +35,10 @@
     },
     {
       "title": "Michael Bloomberg",
-      "score": 81.333,
+      "score": 121.333,
       "positive_reasons": [
         "source_page_produced_accepted_fact",
+        "in_high_yield_source_pages",
         "subject_of_accepted_fact",
         "object_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -65,6 +66,22 @@
         "is_stale": false
       },
       "source_hint": "Bloomberg L.P.",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "Environmental resource management",
+      "score": 108.12,
+      "positive_reasons": [
+        "source_page_produced_accepted_fact",
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
       "expected_yield_class": "high"
     },
     {
@@ -103,7 +120,7 @@
     },
     {
       "title": "Lew Rockwell",
-      "score": 73.3,
+      "score": 73.32,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "object_of_accepted_fact",
@@ -134,8 +151,8 @@
       "expected_yield_class": "high"
     },
     {
-      "title": "Robert Noyce",
-      "score": 73.12,
+      "title": "Northern California",
+      "score": 73.2,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "object_of_accepted_fact",
@@ -150,8 +167,70 @@
       "expected_yield_class": "high"
     },
     {
-      "title": "United States of America",
-      "score": 48.3,
+      "title": "New York Legislature",
+      "score": 73.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "Bernard Arnault",
+      "score": 71.333,
+      "positive_reasons": [
+        "source_page_produced_accepted_fact",
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "relation_or_overlay_source",
+        "stale_snapshot_recheck",
+        "staleness_boost:6.33"
+      ],
+      "negative_reasons": [
+        "historically_failed_fetch"
+      ],
+      "already_fetched": false,
+      "recheck_required": true,
+      "stale_fact": {
+        "subject": "Bernard Arnault",
+        "predicate": "estimated_net_worth",
+        "object": "US$180 billion",
+        "as_of": "2026-06",
+        "age_days": 19,
+        "freshness_window": 30,
+        "staleness_ratio": 0.6333,
+        "source_page": "Bernard Arnault",
+        "temporal_class": "snapshot",
+        "is_stale": false
+      },
+      "source_hint": "Bernard Arnault",
+      "expected_yield_class": "high"
+    },
+    {
+      "title": "Muhammad Ali",
+      "score": 48.58,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "German language",
+      "score": 48.38,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -166,7 +245,82 @@
     },
     {
       "title": "Louisiana Creoles",
-      "score": 48.22,
+      "score": 48.34,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Chinese Communist Party",
+      "score": 48.32,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "United States of America",
+      "score": 48.32,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "National Guard Bureau",
+      "score": 48.28,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Socialist Labor Party",
+      "score": 48.24,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Montgomery Blair",
+      "score": 48.18,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -196,6 +350,66 @@
     },
     {
       "title": "American conservative",
+      "score": 48.16,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Flight testing",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Liberty Central",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Lyndon Baines Johnson",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Mercury News",
       "score": 48.14,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -225,6 +439,66 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "New York Review of Books",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Quinnipiac University Poll",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Skydance Media",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Third Industrial Revolution",
+      "score": 48.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "American Spectator",
       "score": 48.12,
       "positive_reasons": [
@@ -240,7 +514,52 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "Auris Health",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "Daily Caller",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Dassault Aviation",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Dwight David Eisenhower",
       "score": 48.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -300,7 +619,7 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "New York Review of Books",
+      "title": "Louis de Buade de Frontenac",
       "score": 48.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -315,10 +634,280 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Skydance Media",
+      "title": "Marine Forces Reserve",
       "score": 48.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Saylor Academy",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Standing Rules of the Senate",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Virginia Thomas",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "William Randolph I",
+      "score": 48.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Richmond, Virginia",
+      "score": 43.52,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "El Paso, Texas",
+      "score": 43.5,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Orlando, Florida",
+      "score": 43.5,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "The Des Moines Register",
+      "score": 43.5,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Albany, New York",
+      "score": 43.48,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Des Moines, Iowa",
+      "score": 43.48,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Cleveland, Ohio",
+      "score": 43.46,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Charlotte, North Carolina",
+      "score": 43.44,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Omaha, Nebraska",
+      "score": 43.44,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Montgomery, Alabama",
+      "score": 43.42,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Arlington County, Virginia",
+      "score": 43.4,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Colorado Springs, Colorado",
+      "score": 43.38,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Michael Harrington",
+      "score": 43.38,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Washington, DC",
+      "score": 43.38,
+      "positive_reasons": [
+        "object_of_accepted_fact",
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
       ],
@@ -345,8 +934,383 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "The Des Moines Register",
+      "title": "Denver, Colorado",
+      "score": 43.36,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Houston, Texas",
+      "score": 43.36,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Jackson, Mississippi",
+      "score": 43.36,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Saint Paul, Minnesota",
+      "score": 43.36,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Cambridge, Massachusetts",
+      "score": 43.34,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Health care",
+      "score": 43.34,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "New Haven, Connecticut",
+      "score": 43.34,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Margaret Sanger",
       "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Miami-Dade County, Florida",
+      "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Southern California",
+      "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Tulsa, Oklahoma",
+      "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Upper Midwest",
+      "score": 43.32,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Los Angeles, California",
+      "score": 43.3,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Pittsburgh, Pennsylvania",
+      "score": 43.3,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Sioux City, Iowa",
+      "score": 43.3,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Western Europe",
+      "score": 43.3,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Dallas, Texas",
+      "score": 43.28,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Deficit spending",
+      "score": 43.28,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Milwaukee, Wisconsin",
+      "score": 43.28,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "New Amsterdam",
+      "score": 43.28,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Yale Law School",
+      "score": 43.28,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Arlington, Virginia",
+      "score": 43.26,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Boca Raton, Florida",
+      "score": 43.26,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Johnson & Johnson",
+      "score": 43.26,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Mao Zedong",
+      "score": 43.26,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Philadelphia, Pennsylvania",
+      "score": 43.26,
       "positive_reasons": [
         "object_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -375,8 +1339,53 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Mao Zedong",
-      "score": 43.2,
+      "title": "Detroit, Michigan",
+      "score": 43.24,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "East Asia",
+      "score": 43.24,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Natural gas",
+      "score": 43.24,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "New York City, New York",
+      "score": 43.24,
       "positive_reasons": [
         "object_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -391,7 +1400,382 @@
     },
     {
       "title": "Samuel Gompers",
+      "score": 43.24,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Claude Shannon",
+      "score": 43.22,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "East Harlem",
+      "score": 43.22,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Miami, Florida",
+      "score": 43.22,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Starbase, Texas",
+      "score": 43.22,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Yellowstone National Park",
+      "score": 43.22,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "David Chalmers",
       "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "El Segundo, California",
+      "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Independence, Missouri",
+      "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "United States corporate law",
+      "score": 43.2,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Auburn, Alabama",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Burbank, California",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Digital Revolution",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Hamilton, Ontario",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Honolulu, Hawaii",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Maritime Southeast Asia",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Milton, Massachusetts",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Newton, Massachusetts",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Prescott, Arizona",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Salem, Oregon",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "South Asia",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Sunnyvale, California",
+      "score": 43.18,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "American history",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Anne Arundel County, Maryland",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Asheville, North Carolina",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Chapter 11 bankruptcy",
+      "score": 43.16,
       "positive_reasons": [
         "object_of_accepted_fact",
         "encyclopedic_entity_form",
@@ -420,7 +1804,52 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Margaret Sanger",
+      "title": "GHQ Air Force",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Henry VIII",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Marvel Comics",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "McDonnell Aircraft",
       "score": 43.16,
       "positive_reasons": [
         "object_of_accepted_fact",
@@ -450,7 +1879,37 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Claude Shannon",
+      "title": "Salem, Virginia",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Santa Clara, California",
+      "score": 43.16,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Bedford Hills, New York",
       "score": 43.14,
       "positive_reasons": [
         "object_of_accepted_fact",
@@ -465,7 +1924,217 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Marvel Comics",
+      "title": "Braintree, Massachusetts",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Brevard County, Florida",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Cape Canaveral, Florida",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Google Search",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Harris County, Texas",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Herndon, Virginia",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Howard County, Maryland",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Jacksonville, Illinois",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Menlo Park, California",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Moreland Hills, Ohio",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Mountain View, California",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Queens, New York",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Redmond, Washington",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Scarborough, Ontario",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Secondary education",
       "score": 43.14,
       "positive_reasons": [
         "object_of_accepted_fact",
@@ -495,6 +2164,171 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "Suitland, Maryland",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Technological revolution",
+      "score": 43.14,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Antebellum South Carolina",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Basel, Switzerland",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Basic training",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Beijing, China",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Belcourt, North Dakota",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Brian Christian",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Brighton, Massachusetts",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Calvert County, Maryland",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Camden, Maine",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "Canadian National",
       "score": 43.12,
       "positive_reasons": [
@@ -510,7 +2344,127 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Henry VIII",
+      "title": "Cannabis legalization",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Chapter 7 bankruptcy",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Coronado, California",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Google Docs",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Great War",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Greenwich, Connecticut",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Hamden, Connecticut",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Joseph Bonne",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Klaus Schwab",
       "score": 43.12,
       "positive_reasons": [
         "object_of_accepted_fact",
@@ -540,6 +2494,261 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "Landes Bioscience",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Lompoc, California",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Mecosta, Michigan",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Norwalk, Connecticut",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Orange County, Indiana",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Pineville, North Carolina",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Providence Equity Partners",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Redlands, California",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Robert Kuok",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "San Mateo County",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Sheffield, Alabama",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Springfield, Minnesota",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Statuary Hall",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Steve Wozniak",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Stratford Centre",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Thomas Gresham",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "US Organization",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "Wallace Fard Muhammad",
       "score": 43.12,
       "positive_reasons": [
@@ -555,11 +2764,12 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "The Nation",
-      "score": 38.42,
+      "title": "Yana Peel",
+      "score": 43.12,
       "positive_reasons": [
-        "subject_of_accepted_fact",
-        "encyclopedic_entity_form"
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
@@ -569,7 +2779,22 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Socialist Labor Party",
+      "title": "Yucaipa, California",
+      "score": 43.12,
+      "positive_reasons": [
+        "object_of_accepted_fact",
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Census Bureau",
       "score": 38.18,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -597,8 +2822,50 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "Household income",
+      "score": 38.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "Prohibition era",
       "score": 38.14,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Alouette 1",
+      "score": 38.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Emlen Institution",
+      "score": 38.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
         "encyclopedic_entity_form"
@@ -639,6 +2906,20 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "George Herbert Walker Bush",
+      "score": 38.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "Jean Fayeton",
       "score": 38.12,
       "positive_reasons": [
@@ -653,7 +2934,21 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "Standing Rules of the Senate",
+      "title": "Mind Children",
+      "score": 38.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Outset Contemporary Art Fund",
       "score": 38.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -681,7 +2976,35 @@
       "expected_yield_class": "medium"
     },
     {
+      "title": "The Alignment Problem",
+      "score": 38.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
       "title": "The Antitrust Paradox",
+      "score": 38.12,
+      "positive_reasons": [
+        "subject_of_accepted_fact",
+        "encyclopedic_entity_form"
+      ],
+      "negative_reasons": [],
+      "already_fetched": false,
+      "recheck_required": false,
+      "stale_fact": {},
+      "source_hint": "",
+      "expected_yield_class": "medium"
+    },
+    {
+      "title": "Thunder Bay",
       "score": 38.12,
       "positive_reasons": [
         "subject_of_accepted_fact",
@@ -709,22 +3032,22 @@
       "expected_yield_class": "medium"
     },
     {
-      "title": "William Randolph I",
-      "score": 38.12,
+      "title": "Concurrent resolution",
+      "score": 19.0,
       "positive_reasons": [
-        "subject_of_accepted_fact",
-        "encyclopedic_entity_form"
+        "encyclopedic_entity_form",
+        "term_in_accepted_fact_objects"
       ],
       "negative_reasons": [],
       "already_fetched": false,
       "recheck_required": false,
       "stale_fact": {},
       "source_hint": "",
-      "expected_yield_class": "medium"
+      "expected_yield_class": "low"
     },
     {
-      "title": "Concurrent resolution",
-      "score": 18.98,
+      "title": "Concurrent powers",
+      "score": 18.94,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -738,7 +3061,7 @@
     },
     {
       "title": "Internal Revenue Service",
-      "score": 18.68,
+      "score": 18.88,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -751,8 +3074,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "New York City Subway",
-      "score": 18.5,
+      "title": "Ted Lerner",
+      "score": 18.62,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -765,8 +3088,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "New York Civil Liberties Union",
-      "score": 18.5,
+      "title": "The Apotheosis of Washington",
+      "score": 18.62,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -779,8 +3102,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Anglican Church of Southern Africa",
-      "score": 18.48,
+      "title": "African-American culture",
+      "score": 18.6,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -793,8 +3116,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Audible (service)",
-      "score": 18.48,
+      "title": "Underground Railroad",
+      "score": 18.6,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -807,8 +3130,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Bloomberg Beta",
-      "score": 18.48,
+      "title": "Black Nova Scotians",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -821,8 +3144,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Bloomberg Industry Group",
-      "score": 18.48,
+      "title": "Plantation complexes in the Southern United States",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -835,8 +3158,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Bloomberg Innovation Index",
-      "score": 18.48,
+      "title": "State Britain",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -849,8 +3172,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Bloomberg View",
-      "score": 18.48,
+      "title": "Stephen Park (artist)",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -863,8 +3186,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "BNN Bloomberg",
-      "score": 18.48,
+      "title": "Tense (artwork)",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -877,8 +3200,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Business jet",
-      "score": 18.48,
+      "title": "The Brussels Times",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -891,8 +3214,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Charitable organization",
-      "score": 18.48,
+      "title": "The Jerusalem Post",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -905,8 +3228,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Claude Elwood Shannon",
-      "score": 18.48,
+      "title": "The Woodrow Wilson Award for Global Corporate Citizenship",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -919,8 +3242,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Congregation Emanu-El of New York",
-      "score": 18.48,
+      "title": "Treatment of slaves in the United States",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -933,8 +3256,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Culture of New York City",
-      "score": 18.48,
+      "title": "U.S. Customs and Border Protection",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -947,8 +3270,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "David Packard",
-      "score": 18.48,
+      "title": "Variety (magazine)",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -961,8 +3284,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "David Watson Taylor",
-      "score": 18.48,
+      "title": "Villanova University",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -975,8 +3298,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "David Willetts",
-      "score": 18.48,
+      "title": "Virgin Galactic Unity 22",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -989,8 +3312,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Electoral history of Michael Bloomberg",
-      "score": 18.48,
+      "title": "Virginia Abernethy",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1003,8 +3326,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Frank Baldwin Jewett",
-      "score": 18.48,
+      "title": "Vulnerable world hypothesis",
+      "score": 18.58,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1017,8 +3340,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Frank Julian Sprague",
-      "score": 18.48,
+      "title": "African Americans in Alabama",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1031,8 +3354,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Frank Kreith",
-      "score": 18.48,
+      "title": "African Americans in Oklahoma",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1045,8 +3368,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Gordon A. Cain",
-      "score": 18.48,
+      "title": "African-American art",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1059,8 +3382,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Governor of the Bank of England",
-      "score": 18.48,
+      "title": "African-American dance",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1073,8 +3396,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Harry Alonzo Winne",
-      "score": 18.48,
+      "title": "African-American English",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1087,8 +3410,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Hebrew school",
-      "score": 18.48,
+      "title": "African-American folktales",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1101,8 +3424,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Henry Marion Howe",
-      "score": 18.48,
+      "title": "African-American leftism",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1115,8 +3438,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Howard University College of Medicine",
-      "score": 18.48,
+      "title": "African-American LGBTQ community",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1129,8 +3452,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Investment bank",
-      "score": 18.48,
+      "title": "African-American names",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1143,8 +3466,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "James Douglas (businessman)",
-      "score": 18.48,
+      "title": "African-American neighborhood",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1157,8 +3480,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "James Mattis",
-      "score": 18.48,
+      "title": "African-American self-determination",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1171,8 +3494,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Jewish Council for Public Affairs",
-      "score": 18.48,
+      "title": "African-American Vernacular English",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1185,8 +3508,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Jimmy Walker",
-      "score": 18.48,
+      "title": "Association for the Study of African American Life and History",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1199,8 +3522,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John A. Swanson",
-      "score": 18.48,
+      "title": "Central Intercollegiate Athletic Association",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1213,8 +3536,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Edson Sweet",
-      "score": 18.48,
+      "title": "China–United States trade war",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1227,8 +3550,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Frank Stevens",
-      "score": 18.48,
+      "title": "Civil rights movements",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1241,8 +3564,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Fritz",
-      "score": 18.48,
+      "title": "Democratic Senatorial Campaign Committee",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1255,8 +3578,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Fritz Medal",
-      "score": 18.48,
+      "title": "First impeachment of Donald Trump",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1269,8 +3592,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John J. Marchi",
-      "score": 18.48,
+      "title": "Louisiana Purchase",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1283,8 +3606,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Joseph Carty",
-      "score": 18.48,
+      "title": "Lynching in the United States",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1297,8 +3620,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John L. Savage",
-      "score": 18.48,
+      "title": "Make America Great Again",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1311,8 +3634,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John R. Suman",
-      "score": 18.48,
+      "title": "Milton Friedman",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1325,8 +3648,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John Ripley Freeman",
-      "score": 18.48,
+      "title": "Mina (Louisiana)",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1339,8 +3662,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "John W. Fisher",
-      "score": 18.48,
+      "title": "Modern Medicine (art exhibition)",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1353,8 +3676,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Johns Hopkins School of Medicine",
-      "score": 18.48,
+      "title": "Moorish Science Temple of America",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1367,8 +3690,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "M. C. Frank Chang",
-      "score": 18.48,
+      "title": "National Baptist Convention of America International",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1381,8 +3704,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Mark Joseph Stern",
-      "score": 18.48,
+      "title": "National Baptist Convention, USA",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1395,8 +3718,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Mary Barra",
-      "score": 18.48,
+      "title": "National Urban League",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1409,8 +3732,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Mass media in Russia",
-      "score": 18.48,
+      "title": "New Great Migration",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1423,8 +3746,8 @@
       "expected_yield_class": "low"
     },
     {
-      "title": "Master of Business Administration",
-      "score": 18.48,
+      "title": "New Orleans Voodoo Revival",
+      "score": 18.56,
       "positive_reasons": [
         "encyclopedic_entity_form",
         "term_in_accepted_fact_objects"
@@ -1434,2192 +3757,6 @@
       "recheck_required": false,
       "stale_fact": {},
       "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Mayoralty of Eric Adams",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Mayoralty of Michael Bloomberg",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Meharry Medical College",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Michael Douglas",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Michael Lawrence Haider",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "National Enquirer",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "National League of Cities",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "National Museum of American History",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "National September 11 Memorial & Museum",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York City Board of Education",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York City Hall",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York City mayoral elections",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York City Public Advocate",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York County District Attorney",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "New York Police Department",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Observer Media",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Ohio River Valley",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Palantir Technologies",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Paul C. W. Chu",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Paul Dyer Merica",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "PBS News",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "People (magazine)",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Prodigy (online service)",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Public education",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert F. Wagner Jr",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert G. Heitz",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert Hadfield",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert N. Noyce",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert S. Langer",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Robert Woolston Hunt",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Russian-occupied territories of Ukraine",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Senior Advisor to the President of the United States",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Southampton, New York",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Stem-cell research",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Steve Chen",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Super Bowl commercials",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "The Economic Times",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "The Portable Bloomberg: The Wit and Wisdom of Michael Bloomberg",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Thomas O. Paine",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Trinity College Dublin",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Universal basic income",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Van Jones",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Walter H. Aldridge",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "William Henry White",
-      "score": 18.48,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Anti-competitive practices",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Artificial general intelligence",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Baccalaureate service",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Baker Library/Bloomberg Center",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Beechcraft Super King Air",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bezos Family Foundation",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bilderberg Group",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bill Thompson (New York)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bloomberg Distinguished Professorships",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bloomberg Global Business Forum",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Blue Coat Systems",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Blue Origin Federation, LLC v. United States",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Boring test tunnel",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Born Rich (2003 film)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Box Office Mojo",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Breakthrough Energy Ventures",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "British politics",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Brussels Times",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Business career of Elon Musk",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Business plan",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "C40 Cities Climate Leadership Group",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Campaign for Tobacco-Free Kids",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Cathie Martin",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Centre for the Study of Existential Risk",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Christopher North (businessman)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Cobalt Networks",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Community Banana Stand",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Congress of Essential Workers",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Crash test dummy",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Criticism of Amazon",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dassault Falcon 900",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Data security",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Broder",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Dinkins",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Filo",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Geffen",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Gobel",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Maraniss",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David O. Sacks",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Pearce (philosopher)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Pecker",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Richardson (physicist)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "David Shipley",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Defense Innovation Advisory Board",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Defense Innovation Board",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Developing world",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dialog (organization)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Diana Taylor (superintendent)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Digital Insight",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Digital Photography Review",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Direct mail",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Drug test",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Dynamo (storage system)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "E-commerce payment system",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Early childhood education",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Edwardsville Amazon warehouse collapse",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Elizabeth Benjamin (journalist)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Eric Berger (journalist)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Eric M. Jackson",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Existential risk from artificial intelligence",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Facial recognition system",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Falcon Heavy test flight",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Fellow of the Royal Society",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Foresight Institute",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Foundation (book series)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Foundation (nonprofit)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Foundation Center",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Frank Wilczek",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Fred Hutchinson Cancer Research Center",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "FTC v. Amazon",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Future of Humanity Institute",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Future of Life Institute",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "General partner",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Georgina Bloomberg",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Crossing",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Global Healthcare",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Greylock Partners",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Harvard Business Review",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Henry Blodget",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "History of Amazon",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "History of New York City",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Honorary Knight Commander of the Order of the British Empire",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Institute for Ethics and Emerging Technologies",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Internet America",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "IRT Lexington Avenue Line",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jack Grubman",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jack Warner Estate",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James H. Clark",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "James Hughes (sociologist)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jeff Bezos phone hacking incident",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jefferson Awards Foundation",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jewish News",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Jewish Telegraph Agency",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Francis Hylan",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Harris (bioethicist)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John P. O'Brien",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Purroy Mitchel",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Smol",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "John Speakman",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Johns Hopkins Bloomberg School of Public Health",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Joint custody (United States)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Joint Enterprise Defense Infrastructure",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Julie Wainwright",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "K. Eric Drexler",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Kindle Direct Publishing",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Kiva (organization)",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Leverhulme Centre for the Future of Intelligence",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Living Legends of Aviation",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Lori Garver",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Machine Intelligence Research Institute",
-      "score": 18.46,
-      "positive_reasons": [
-        "encyclopedic_entity_form",
-        "term_in_accepted_fact_objects"
-      ],
-      "negative_reasons": [],
-      "already_fetched": false,
-      "recheck_required": false,
-      "stale_fact": {},
-      "source_hint": "",
-      "expected_yield_class": "low"
-    },
-    {
-      "title": "Bernard Arnault",
-      "score": 11.333,
-      "positive_reasons": [
-        "subject_of_accepted_fact",
-        "encyclopedic_entity_form",
-        "relation_or_overlay_source",
-        "stale_snapshot_recheck",
-        "staleness_boost:6.33"
-      ],
-      "negative_reasons": [
-        "historically_failed_fetch"
-      ],
-      "already_fetched": false,
-      "recheck_required": true,
-      "stale_fact": {
-        "subject": "Bernard Arnault",
-        "predicate": "estimated_net_worth",
-        "object": "US$180 billion",
-        "as_of": "2026-06",
-        "age_days": 19,
-        "freshness_window": 30,
-        "staleness_ratio": 0.6333,
-        "source_page": "Bernard Arnault",
-        "temporal_class": "snapshot",
-        "is_stale": false
-      },
-      "source_hint": "Bernard Arnault",
       "expected_yield_class": "low"
     }
   ]

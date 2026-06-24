@@ -1,46 +1,199 @@
 title,score,expected_yield_class,source_hint,positive_reasons
 Jeff Bezos,151.333,high,Billionaire,source_page_produced_accepted_fact; in_high_yield_source_pages; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
-Michael Bloomberg,81.333,high,Bloomberg L.P.,source_page_produced_accepted_fact; subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Michael Bloomberg,121.333,high,Bloomberg L.P.,source_page_produced_accepted_fact; in_high_yield_source_pages; subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Environmental resource management,108.12,high,,source_page_produced_accepted_fact; subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Elon Musk,76.333,high,Billionaire,source_page_produced_accepted_fact; in_high_yield_source_pages; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; gap_driven_entity; stale_snapshot_recheck; staleness_boost:6.33
-Lew Rockwell,73.3,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Lew Rockwell,73.32,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Roger Williams,73.24,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Robert Noyce,73.12,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-United States of America,48.3,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Louisiana Creoles,48.22,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Northern California,73.2,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+New York Legislature,73.14,high,,subject_of_accepted_fact; object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Bernard Arnault,71.333,high,Bernard Arnault,source_page_produced_accepted_fact; subject_of_accepted_fact; encyclopedic_entity_form; relation_or_overlay_source; stale_snapshot_recheck; staleness_boost:6.33
+Muhammad Ali,48.58,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+German language,48.38,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Louisiana Creoles,48.34,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Chinese Communist Party,48.32,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+United States of America,48.32,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+National Guard Bureau,48.28,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Socialist Labor Party,48.24,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Montgomery Blair,48.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Officer Training School,48.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-American conservative,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+American conservative,48.16,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Flight testing,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Liberty Central,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Lyndon Baines Johnson,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Mercury News,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 New York Observer,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+New York Review of Books,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Quinnipiac University Poll,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Skydance Media,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Third Industrial Revolution,48.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 American Spectator,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Auris Health,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Daily Caller,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Dassault Aviation,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Dwight David Eisenhower,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Frank Comerford Walker,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Gary Earl Johnson,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 John Diebold,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-New York Review of Books,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Skydance Media,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Louis de Buade de Frontenac,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Marine Forces Reserve,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Saylor Academy,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Standing Rules of the Senate,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Virginia Thomas,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+William Randolph I,48.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Richmond, Virginia",43.52,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"El Paso, Texas",43.5,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Orlando, Florida",43.5,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+The Des Moines Register,43.5,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Albany, New York",43.48,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Des Moines, Iowa",43.48,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Cleveland, Ohio",43.46,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Charlotte, North Carolina",43.44,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Omaha, Nebraska",43.44,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Montgomery, Alabama",43.42,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Arlington County, Virginia",43.4,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Colorado Springs, Colorado",43.38,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Michael Harrington,43.38,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Washington, DC",43.38,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Air Force Reserve Command,43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-The Des Moines Register,43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Denver, Colorado",43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Houston, Texas",43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Jackson, Mississippi",43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Saint Paul, Minnesota",43.36,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Cambridge, Massachusetts",43.34,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Health care,43.34,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"New Haven, Connecticut",43.34,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Margaret Sanger,43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Miami-Dade County, Florida",43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Southern California,43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Tulsa, Oklahoma",43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Upper Midwest,43.32,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Los Angeles, California",43.3,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Pittsburgh, Pennsylvania",43.3,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Sioux City, Iowa",43.3,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Western Europe,43.3,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Dallas, Texas",43.28,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Deficit spending,43.28,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Milwaukee, Wisconsin",43.28,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+New Amsterdam,43.28,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Yale Law School,43.28,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Arlington, Virginia",43.26,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Boca Raton, Florida",43.26,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Johnson & Johnson,43.26,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Mao Zedong,43.26,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Philadelphia, Pennsylvania",43.26,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Brooke Rollins,43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Mao Zedong,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Samuel Gompers,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Detroit, Michigan",43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+East Asia,43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Natural gas,43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"New York City, New York",43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Samuel Gompers,43.24,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Claude Shannon,43.22,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+East Harlem,43.22,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Miami, Florida",43.22,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Starbase, Texas",43.22,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Yellowstone National Park,43.22,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+David Chalmers,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"El Segundo, California",43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Independence, Missouri",43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+United States corporate law,43.2,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Auburn, Alabama",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Burbank, California",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Digital Revolution,43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Hamilton, Ontario",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Honolulu, Hawaii",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Maritime Southeast Asia,43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Milton, Massachusetts",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Newton, Massachusetts",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Prescott, Arizona",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Salem, Oregon",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+South Asia,43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Sunnyvale, California",43.18,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+American history,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Anne Arundel County, Maryland",43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Asheville, North Carolina",43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Chapter 11 bankruptcy,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Frank Collin,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Margaret Sanger,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+GHQ Air Force,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Henry VIII,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Marvel Comics,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+McDonnell Aircraft,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Providence Plantations,43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Claude Shannon,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Marvel Comics,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Salem, Virginia",43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Santa Clara, California",43.16,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Bedford Hills, New York",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Braintree, Massachusetts",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Brevard County, Florida",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Cape Canaveral, Florida",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Google Search,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Harris County, Texas",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Herndon, Virginia",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Howard County, Maryland",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Jacksonville, Illinois",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Menlo Park, California",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Moreland Hills, Ohio",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Mountain View, California",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Queens, New York",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Redmond, Washington",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Scarborough, Ontario",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Secondary education,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Southern Baptist,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Suitland, Maryland",43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Technological revolution,43.14,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Antebellum South Carolina,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Basel, Switzerland",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Basic training,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Beijing, China",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Belcourt, North Dakota",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Brian Christian,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Brighton, Massachusetts",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Calvert County, Maryland",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Camden, Maine",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Canadian National,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-Henry VIII,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Cannabis legalization,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Chapter 7 bankruptcy,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Coronado, California",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Google Docs,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Great War,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Greenwich, Connecticut",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Hamden, Connecticut",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Joseph Bonne,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Klaus Schwab,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Kurt Mertig,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Landes Bioscience,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Lompoc, California",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Mecosta, Michigan",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Norwalk, Connecticut",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Orange County, Indiana",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Pineville, North Carolina",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Providence Equity Partners,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Redlands, California",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Robert Kuok,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+San Mateo County,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Sheffield, Alabama",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Springfield, Minnesota",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Statuary Hall,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Steve Wozniak,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Stratford Centre,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Thomas Gresham,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+US Organization,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
 Wallace Fard Muhammad,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
-The Nation,38.42,medium,,subject_of_accepted_fact; encyclopedic_entity_form
-Socialist Labor Party,38.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Yana Peel,43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+"Yucaipa, California",43.12,medium,,object_of_accepted_fact; encyclopedic_entity_form; term_in_accepted_fact_objects
+Census Bureau,38.18,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Carnegie Steel,38.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Household income,38.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Prohibition era,38.14,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Alouette 1,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Emlen Institution,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Enrico Tonti,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Epic Games,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+George Herbert Walker Bush,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Jean Fayeton,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
-Standing Rules of the Senate,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Mind Children,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Outset Contemporary Art Fund,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Telewizja Polska,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+The Alignment Problem,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 The Antitrust Paradox,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
+Thunder Bay,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
 Willem van Biljon,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form
-William Randolph I,38.12,medium,,subject_of_accepted_fact; encyclopedic_entity_form

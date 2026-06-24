@@ -42,6 +42,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Albuquerque",
+      "definition": "most populous city in the U",
+      "predicate": "is_a",
+      "source_page": "Albuquerque, New Mexico",
+      "evidence_text": "Albuquerque is the most populous city in the U.SU.S\u0000 state of New Mexico.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Albuquerque is the most populous city in the U.SU.S\u0000 state of New Mexico.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Alessandro Giuseppe Antonio Anastasio Volta",
       "definition": "Italian chemist",
       "predicate": "is_a",
@@ -301,6 +321,46 @@
   },
   {
     "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "California Republican Party",
+      "definition": "affiliate of the United States Republican Party in  the U",
+      "predicate": "is_a",
+      "source_page": "California Republican Party",
+      "evidence_text": "The California Republican Party (CAGOP) is the affiliate of the United States Republican Party in  the U.SU.S\u0000 state of California.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The California Republican Party (CAGOP) is the affiliate of the United States Republican Party in  the U.SU.S\u0000 state of California.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Cameron County",
+      "definition": "southernmost county in the U",
+      "predicate": "is_a",
+      "source_page": "Cameron County, Texas",
+      "evidence_text": "Cameron County is the southernmost county in the U.SU.S\u0000 state of Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Cameron County is the southernmost county in the U.SU.S\u0000 state of Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_relation",
       "subject": "United States,",
       "predicate": "headquartered_in",
@@ -338,6 +398,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "owned_by_geopolitical_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Cotulla",
+      "definition": "city in",
+      "predicate": "is_a",
+      "source_page": "Cotulla, Texas",
+      "evidence_text": "Cotulla ( kə-TEW-lə) is a city in and the county seat of La Salle County, Texas, United States.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Cotulla ( kə-TEW-lə) is a city in and the county seat of La Salle County, Texas, United States.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
   },
   {
     "item": {
@@ -418,6 +498,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Founding The House of Dior",
+      "predicate": "located_in",
+      "object": "Paris",
+      "source_page": "Christian Dior SE",
+      "evidence_text": "Founding The House of Dior was established on 16 December 1946 at 30 Avenue Montaigne in Paris.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Founding The House of Dior was established on 16 December 1946 at 30 Avenue Montaigne in Paris.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "fragment_prefix_subject"
   },
   {
     "item": {
@@ -575,6 +675,26 @@
       "v2_pattern_id": "lead_definition_v2",
       "confidence_label": "pattern_explicit",
       "evidence_span": "Founders Park, formerly known as Carolina Stadium, is a ballpark in Columbia, South Carolina on the banks of the Congaree River.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Industrial Revolution, also known as 4IR, Industry 4.0 or the Intelligence Age,",
+      "definition": "neologism describing rapid technological advancement in the 21st century",
+      "predicate": "is_a",
+      "source_page": "Fourth Industrial Revolution",
+      "evidence_text": "The Fourth Industrial Revolution, also known as 4IR, Industry 4.0 or the Intelligence Age, is a neologism describing rapid technological advancement in the 21st century.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Fourth Industrial Revolution, also known as 4IR, Industry 4.0 or the Intelligence Age, is a neologism describing rapid technological advancement in the 21st century.",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "appositive_alias_subject"
@@ -922,6 +1042,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Massachusetts Republican Party",
+      "definition": "Massachusetts branch of the U",
+      "predicate": "is_a",
+      "source_page": "Massachusetts Republican Party",
+      "evidence_text": "The Massachusetts Republican Party (MassGOP) is the Massachusetts branch of the U.SU.S\u0000 Republican Party.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Massachusetts Republican Party (MassGOP) is the Massachusetts branch of the U.SU.S\u0000 Republican Party.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Michael Faraday",
       "definition": "English chemist",
       "predicate": "is_a",
@@ -1122,6 +1262,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "State Rights and Free Trade Party, commonly known as the Nullifier Party,",
+      "definition": "political party in Antebellum South Carolina",
+      "predicate": "is_a",
+      "source_page": "Nullifier Party",
+      "evidence_text": "The State Rights and Free Trade Party, commonly known as the Nullifier Party, was a political party in Antebellum South Carolina.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The State Rights and Free Trade Party, commonly known as the Nullifier Party, was a political party in Antebellum South Carolina.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Anna Masterton Buchan",
       "definition": "Scottish novelist",
       "predicate": "is_a",
@@ -1182,6 +1342,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "People's Party, usually known as the Populist Party or simply the Populists,",
+      "definition": "agrarian populist political party in the United States in the late 19th century",
+      "predicate": "is_a",
+      "source_page": "Populist Party (United States)",
+      "evidence_text": "The People's Party, usually known as the Populist Party or simply the Populists, was an agrarian populist political party in the United States in the late 19th century.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The People's Party, usually known as the Populist Party or simply the Populists, was an agrarian populist political party in the United States in the late 19th century.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Rayburn House Office Building",
       "definition": "congressional office building for the U",
       "predicate": "is_a",
@@ -1205,7 +1385,7 @@
       "subject": "Republican Party",
       "predicate": "founded_by",
       "object": "Nebraska Act",
-      "source_page": "Republican Party of the United States",
+      "source_page": "Republican Party (US)",
       "evidence_text": "The Republican Party was founded in 1854 by anti-slavery activists who opposed the Kansas–Nebraska Act and the expansion of slavery into American territories.",
       "trust": "overlay_candidate",
       "risk": "medium",
@@ -1218,6 +1398,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "founded_by_truncated_object"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Robert Abbott Hadfield, 1st Baronet FRS",
+      "definition": "English metallurgist",
+      "predicate": "is_a",
+      "source_page": "Robert Hadfield",
+      "evidence_text": "Sir Robert Abbott Hadfield, 1st Baronet FRS (28 November 1858 in Sheffield – 30 September 1940 in Surrey) was an English metallurgist, noted for his 1882 discovery of manganese steel, one of the first steel alloys.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Sir Robert Abbott Hadfield, 1st Baronet FRS (28 November 1858 in Sheffield – 30 September 1940 in Surrey) was an English metallurgist, noted for his 1882 discovery of manganese steel, one of the first steel alloys.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -1401,6 +1601,26 @@
   },
   {
     "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Silver Republican Party, later known as the Lincoln Republican Party,",
+      "definition": "United States political party from 1896 to 1901",
+      "predicate": "is_a",
+      "source_page": "Silver Republican Party",
+      "evidence_text": "The Silver Republican Party, later known as the Lincoln Republican Party, was a United States political party from 1896 to 1901.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Silver Republican Party, later known as the Lincoln Republican Party, was a United States political party from 1896 to 1901.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
       "overlay_type": "overlay_relation",
       "subject": "Smith Electric Vehicles",
       "predicate": "produces",
@@ -1422,6 +1642,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Southampton, officially the Town of Southampton,",
+      "definition": "town in southeastern Suffolk County",
+      "predicate": "is_a",
+      "source_page": "Southampton, New York",
+      "evidence_text": "Southampton, officially the Town of Southampton, is a town in southeastern Suffolk County, New York, partly on the South Fork of Long Island.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Southampton, officially the Town of Southampton, is a town in southeastern Suffolk County, New York, partly on the South Fork of Long Island.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "appositive_alias_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Space colonization, or extraterrestrial colonization,",
       "definition": "establishment of human settlements",
       "predicate": "is_a",
@@ -1438,6 +1678,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Edward Spencer Abraham",
+      "definition": "American attorney",
+      "predicate": "is_a",
+      "source_page": "Spencer Abraham",
+      "evidence_text": "Edward Spencer Abraham (born June 12, 1952) is an American attorney, author, and politician who served as the 10th United States Secretary of Energy from 2001 to 2005, under President George W.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Edward Spencer Abraham (born June 12, 1952) is an American attorney, author, and politician who served as the 10th United States Secretary of Energy from 2001 to 2005, under President George W.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "definition_nationality_plus_single_noun"
   },
   {
     "item": {
@@ -1542,6 +1802,26 @@
   {
     "item": {
       "overlay_type": "overlay_definition",
+      "subject": "Texas oil boom, sometimes called the gusher age,",
+      "definition": "period of dramatic change",
+      "predicate": "is_a",
+      "source_page": "Texas oil boom",
+      "evidence_text": "The Texas oil boom, sometimes called the gusher age, was a period of dramatic change and economic growth in the U.SU.S\u0000 state of Texas during the early 20th century that began with the discovery of a large petroleum reserve at Spindletop near Beaumont, Texas.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Texas oil boom, sometimes called the gusher age, was a period of dramatic change and economic growth in the U.SU.S\u0000 state of Texas during the early 20th century that began with the discovery of a large petroleum reserve at Spindletop near Beaumont, Texas.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
       "subject": "Thomas Carlyle",
       "definition": "Scottish essayist",
       "predicate": "is_a",
@@ -1558,6 +1838,26 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "definition_nationality_plus_single_noun"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_definition",
+      "subject": "Person of the Year, called Man of the Year or Woman of the Year until 1999,",
+      "definition": "annual issue of the American news magazine",
+      "predicate": "is_a",
+      "source_page": "Time Person of the Year",
+      "evidence_text": "Person of the Year, called Man of the Year or Woman of the Year until 1999, is an annual issue of the American news magazine and website Time featuring a person, group, idea, or object that \"for better or for worse ... has done the most to influence the events of the year\".",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Person of the Year, called Man of the Year or Woman of the Year until 1999, is an annual issue of the American news magazine and website Time featuring a person, group, idea, or object that \"for better or for worse ... has done the most to influence the events of the year\".",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
   },
   {
     "item": {
@@ -1738,6 +2038,42 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "truncated_definition"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "United States Republican Party,",
+      "predicate": "headquartered_in",
+      "object": "Bellevue",
+      "source_page": "Washington State Republican Party",
+      "evidence_text": "The Washington State Republican Party (WSRP) is the state affiliate of the national United States Republican Party, headquartered in Bellevue.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Washington State Republican Party (WSRP) is the state affiliate of the national United States Republican Party, headquartered in Bellevue.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "dangling_comma_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The Penny Savings Bank",
+      "predicate": "founded_by",
+      "object": "William R",
+      "source_page": "African Americans in Alabama",
+      "evidence_text": "Business and finance In 1890, The Penny Savings Bank, the first black-owned and black-operated financial institution in Alabama, was founded by William R.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:6826ca21:37eb5791",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "founded_by_truncated_object"
   },
   {
     "item": {

@@ -1,122 +1,168 @@
 {
-  "answerable_delta_before_precision": 3607,
-  "answerable_delta_after_precision": 2826,
-  "precision_rejected_count": 600,
-  "precision_quarantined_count": 47,
+  "answerable_delta_before_precision": 6165,
+  "answerable_delta_after_precision": 4473,
+  "precision_rejected_count": 1447,
+  "precision_quarantined_count": 48,
   "precision_property_candidate_count": 1,
   "precision_rejection_by_reason": {
-    "definition_not_lead_style": 80,
+    "concept_relation_bad_object": 178,
+    "concept_relation_bad_subject": 27,
+    "concept_relation_object_not_in_evidence": 43,
+    "definition_not_lead_style": 100,
     "developed_by_bad_object": 3,
-    "develops_bad_object": 22,
-    "develops_bad_subject": 53,
+    "develops_bad_object": 24,
+    "develops_bad_subject": 58,
     "develops_object_not_in_evidence": 11,
-    "founded_bad_object": 27,
-    "founded_bad_subject": 54,
+    "event_relation_bad_subject": 12,
+    "founded_bad_object": 32,
+    "founded_bad_subject": 59,
     "founded_object_not_in_evidence": 20,
     "generic_definition_subject": 1,
-    "generic_relation_bad_object": 4,
-    "generic_relation_bad_subject": 80,
-    "generic_relation_object_not_in_evidence": 21,
-    "is_a_bad_subject": 7,
+    "generic_relation_bad_object": 225,
+    "generic_relation_bad_subject": 387,
+    "generic_relation_object_not_in_evidence": 22,
+    "is_a_bad_subject": 11,
     "known_for_bad_subject": 3,
-    "owned_by_bad_object": 36,
-    "owned_by_bad_subject": 67,
-    "owned_by_no_ownership_evidence": 66,
-    "owned_by_object_not_in_evidence": 2,
+    "owned_by_bad_object": 38,
+    "owned_by_bad_subject": 74,
+    "owned_by_no_ownership_evidence": 67,
+    "owned_by_object_not_in_evidence": 4,
     "owned_by_subject_is_agent": 2,
     "produces_bad_object": 8,
     "produces_bad_subject": 11,
-    "produces_object_not_in_evidence": 4,
+    "produces_object_not_in_evidence": 5,
     "publishes_bad_object": 8,
-    "publishes_bad_subject": 2,
+    "publishes_bad_subject": 5,
     "subsidiary_bad_object": 1,
     "subsidiary_bad_subject": 4,
-    "subsidiary_subject_not_in_evidence": 3
+    "subsidiary_subject_not_in_evidence": 4
   },
   "precision_quarantine_by_reason": {
     "definition_birthstone": 1,
-    "known_for_default_quarantine": 39,
+    "known_for_default_quarantine": 40,
     "publishes_unnamed_publication": 4,
     "publishes_vague_object": 1,
     "truncated_is_a_object": 3
   },
   "relation_precision_before_by_predicate": {
-    "created_by": 17,
-    "developed_by": 69,
-    "develops": 96,
-    "founded": 101,
-    "founded_by": 119,
-    "headquartered_in": 73,
-    "is_a": 90,
-    "known_for": 45,
-    "leader_of": 8,
+    "alias": 138,
+    "based_at": 9,
+    "ceased_operations": 2,
+    "construction_started": 5,
+    "created_by": 18,
+    "developed_by": 76,
+    "develops": 104,
+    "enables": 19,
+    "filed_for_bankruptcy": 5,
+    "first_released": 37,
+    "founded": 111,
+    "founded_by": 140,
+    "funded_by": 2,
+    "has_facility": 1,
+    "headquartered_in": 81,
+    "hosted_flight_to": 1,
+    "introduced": 28,
+    "is_a": 105,
+    "known_for": 46,
+    "leader_of": 10,
+    "located_in": 1080,
     "manufactures": 5,
+    "marketed_as": 10,
+    "merged_with": 25,
+    "offers": 3,
     "operated_by": 6,
-    "operates": 36,
-    "owned_by": 218,
-    "produces": 33,
-    "published_by": 40,
-    "publishes": 25,
+    "operates": 39,
+    "owned_by": 235,
+    "produces": 35,
+    "provides": 183,
+    "published_by": 52,
+    "publishes": 28,
+    "runs_on": 12,
     "service_of": 3,
-    "subsidiary_of": 10
+    "subsidiary_of": 11,
+    "supports": 80,
+    "used_for": 32,
+    "uses": 132,
+    "works_by": 10
   },
   "relation_precision_after_by_predicate": {
-    "created_by": 14,
-    "developed_by": 22,
-    "develops": 54,
-    "founded": 41,
-    "founded_by": 78,
-    "headquartered_in": 25,
-    "is_a": 80,
+    "alias": 85,
+    "based_at": 6,
+    "ceased_operations": 2,
+    "construction_started": 5,
+    "created_by": 15,
+    "developed_by": 25,
+    "develops": 59,
+    "enables": 8,
+    "filed_for_bankruptcy": 5,
+    "first_released": 36,
+    "founded": 46,
+    "founded_by": 94,
+    "funded_by": 2,
+    "has_facility": 1,
+    "headquartered_in": 28,
+    "hosted_flight_to": 1,
+    "introduced": 17,
+    "is_a": 91,
     "known_for": 3,
-    "leader_of": 4,
+    "leader_of": 5,
+    "located_in": 682,
     "manufactures": 1,
+    "marketed_as": 5,
+    "merged_with": 23,
+    "offers": 3,
     "operated_by": 3,
     "operates": 16,
-    "owned_by": 45,
-    "produces": 10,
-    "published_by": 17,
+    "owned_by": 50,
+    "produces": 11,
+    "provides": 37,
+    "published_by": 25,
     "publishes": 10,
+    "runs_on": 12,
     "service_of": 3,
-    "subsidiary_of": 2
+    "subsidiary_of": 2,
+    "supports": 25,
+    "used_for": 15,
+    "uses": 62,
+    "works_by": 6
   },
-  "definition_precision_before_count": 753,
-  "definition_precision_after_count": 671,
-  "pump_world_model_delta_count": 2826,
-  "pump_entity_delta_count": 1860,
-  "pump_answerable_fact_delta_count": 966,
-  "pump_relation_delta_count": 361,
-  "pump_definition_delta_count": 605,
+  "definition_precision_before_count": 929,
+  "definition_precision_after_count": 827,
+  "pump_world_model_delta_count": 4473,
+  "pump_entity_delta_count": 2317,
+  "pump_answerable_fact_delta_count": 2156,
+  "pump_relation_delta_count": 1409,
+  "pump_definition_delta_count": 747,
   "pump_property_candidate_count": 1,
   "include_weak_context": false,
   "precision_v2_enabled": true,
-  "precision_v2_answerable_before_count": 2959,
-  "precision_v2_answerable_after_count": 2826,
-  "precision_v2_relation_before_count": 428,
-  "precision_v2_relation_after_count": 390,
-  "precision_v2_definition_before_count": 671,
-  "precision_v2_definition_after_count": 611,
-  "precision_v2_rejected_count": 92,
-  "precision_v2_quarantined_count": 6,
+  "precision_v2_answerable_before_count": 4669,
+  "precision_v2_answerable_after_count": 4473,
+  "precision_v2_relation_before_count": 1525,
+  "precision_v2_relation_after_count": 1462,
+  "precision_v2_definition_before_count": 827,
+  "precision_v2_definition_after_count": 753,
+  "precision_v2_rejected_count": 109,
+  "precision_v2_quarantined_count": 28,
   "precision_v2_rejection_by_reason": {
-    "appositive_alias_subject": 11,
-    "dangling_comma_subject": 24,
-    "definition_nationality_plus_single_noun": 11,
+    "appositive_alias_subject": 13,
+    "dangling_comma_subject": 30,
+    "definition_nationality_plus_single_noun": 13,
     "developed_by_location_object": 1,
     "develops_design_artifact_object": 3,
     "founded_by_generic_object": 1,
-    "founded_by_truncated_object": 8,
-    "fragment_prefix_subject": 5,
+    "founded_by_truncated_object": 9,
+    "fragment_prefix_subject": 6,
     "geopolitical_subject_corporate_predicate": 3,
     "owned_by_geopolitical_object": 1,
     "produces_universal_object": 1,
     "publishes_phrase_subject": 1,
-    "truncated_definition": 22
+    "truncated_definition": 27
   },
   "precision_v2_quarantine_by_reason": {
     "headquarters_subject_or_clause_uncertain": 1,
-    "object_has_descriptive_tail": 1,
-    "volatile_predicate": 4
+    "object_has_descriptive_tail": 22,
+    "volatile_predicate": 5
   },
   "precision_rejected_examples": [
     {
@@ -280,7 +326,7 @@
         "snapshot_revision_id": 1358190937,
         "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-172-overlay-001",
+        "snapshot_candidate_id": "snap-231-overlay-001",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -304,7 +350,7 @@
         "snapshot_revision_id": 1358190937,
         "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-172-overlay-002",
+        "snapshot_candidate_id": "snap-231-overlay-002",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -328,7 +374,7 @@
         "snapshot_revision_id": 1358190937,
         "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-172-overlay-003",
+        "snapshot_candidate_id": "snap-231-overlay-003",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -352,7 +398,7 @@
         "snapshot_revision_id": 1358190937,
         "snapshot_raw_text_sha256": "8f70d1fdc5925347459f629edf31300dddee2179e5ce8aa6fd808fadd905a688",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-172-overlay-004",
+        "snapshot_candidate_id": "snap-231-overlay-004",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -376,7 +422,7 @@
         "snapshot_revision_id": 1359346089,
         "snapshot_raw_text_sha256": "fb02d9f084f32693b87f87baae817f5e4fe3ef1a8344a3c75b333cbc5ed4b7ea",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-391-overlay-001",
+        "snapshot_candidate_id": "snap-483-overlay-001",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "publishes_unnamed_publication"
@@ -400,7 +446,7 @@
         "snapshot_revision_id": 1359346089,
         "snapshot_raw_text_sha256": "fb02d9f084f32693b87f87baae817f5e4fe3ef1a8344a3c75b333cbc5ed4b7ea",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-391-overlay-008",
+        "snapshot_candidate_id": "snap-483-overlay-008",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "publishes_unnamed_publication"
@@ -424,7 +470,7 @@
         "snapshot_revision_id": 1329875571,
         "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-618-overlay-001",
+        "snapshot_candidate_id": "snap-781-overlay-001",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -448,7 +494,7 @@
         "snapshot_revision_id": 1329875571,
         "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-618-overlay-002",
+        "snapshot_candidate_id": "snap-781-overlay-002",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -472,7 +518,7 @@
         "snapshot_revision_id": 1329875571,
         "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-618-overlay-003",
+        "snapshot_candidate_id": "snap-781-overlay-003",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -496,7 +542,7 @@
         "snapshot_revision_id": 1329875571,
         "snapshot_raw_text_sha256": "8ce54be64ff1a00cad584ad0b8fbc603dfb26fba3d6c88a20def4bb02937374f",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-618-overlay-004",
+        "snapshot_candidate_id": "snap-781-overlay-004",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "known_for_default_quarantine"
@@ -556,6 +602,26 @@
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "definition_nationality_plus_single_noun"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_definition",
+        "subject": "Albuquerque",
+        "definition": "most populous city in the U",
+        "predicate": "is_a",
+        "source_page": "Albuquerque, New Mexico",
+        "evidence_text": "Albuquerque is the most populous city in the U.SU.S\u0000 state of New Mexico.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "lead_definition_v2",
+        "v2_pattern_id": "lead_definition_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Albuquerque is the most populous city in the U.SU.S\u0000 state of New Mexico.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "truncated_definition"
     },
     {
       "item": {
@@ -696,29 +762,33 @@
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "dangling_comma_subject"
-    },
-    {
-      "item": {
-        "overlay_type": "overlay_definition",
-        "subject": "Arthur Wing Pinero",
-        "definition": "English playwright",
-        "predicate": "is_a",
-        "source_page": "Arthur Wing Pinero",
-        "evidence_text": "Sir Arthur Wing Pinero (24 May 1855 – 23 November 1934) was an English playwright and, early in his career, actor.",
-        "trust": "overlay_candidate",
-        "risk": "low",
-        "stability": "stable",
-        "candidate_source": "pump_extraction_yield_v2",
-        "extraction_pattern": "lead_definition_v2",
-        "v2_pattern_id": "lead_definition_v2",
-        "confidence_label": "pattern_explicit",
-        "evidence_span": "Sir Arthur Wing Pinero (24 May 1855 – 23 November 1934) was an English playwright and, early in his career, actor.",
-        "pump_source_kind": "fresh_snapshot"
-      },
-      "reason": "definition_nationality_plus_single_noun"
     }
   ],
   "precision_v2_quarantine_examples": [
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Canadian Space Agency",
+        "predicate": "leader_of",
+        "object": "John H",
+        "source_page": "Canadian Space Agency",
+        "evidence_text": "leadership of John H",
+        "trust": "overlay_candidate",
+        "risk": "medium",
+        "stability": "semi_stable",
+        "temporal_class": "snapshot",
+        "as_of": "2026-06",
+        "snapshot_source_title": "Canadian Space Agency",
+        "snapshot_source_url": "https://en.wikipedia.org/wiki/Canadian_Space_Agency",
+        "snapshot_retrieved_at": "2026-06-23T19:55:44Z",
+        "snapshot_revision_id": 1348638632,
+        "snapshot_raw_text_sha256": "af610d970bc00d5f1756a16f43623a8c3d18b474ee3c3cb32d916fcc400503ad",
+        "safe_for_general_runtime": false,
+        "snapshot_candidate_id": "snap-535-overlay-001",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "volatile_predicate"
+    },
     {
       "item": {
         "overlay_type": "overlay_relation",
@@ -738,7 +808,7 @@
         "snapshot_revision_id": 1359301317,
         "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-1082-overlay-001",
+        "snapshot_candidate_id": "snap-1349-overlay-001",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "volatile_predicate"
@@ -762,7 +832,7 @@
         "snapshot_revision_id": 1305529140,
         "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-1783-overlay-002",
+        "snapshot_candidate_id": "snap-2219-overlay-002",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "volatile_predicate"
@@ -786,7 +856,7 @@
         "snapshot_revision_id": 1305529140,
         "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-1783-overlay-003",
+        "snapshot_candidate_id": "snap-2219-overlay-003",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "volatile_predicate"
@@ -810,7 +880,7 @@
         "snapshot_revision_id": 1305529140,
         "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
         "safe_for_general_runtime": false,
-        "snapshot_candidate_id": "snap-1783-overlay-004",
+        "snapshot_candidate_id": "snap-2219-overlay-004",
         "pump_source_kind": "fresh_snapshot"
       },
       "reason": "volatile_predicate"
@@ -838,39 +908,103 @@
     {
       "item": {
         "overlay_type": "overlay_relation",
-        "subject": "Tesla Energy",
-        "predicate": "is_a",
-        "object": "Paris - based autonomous intergovernmental organization",
-        "source_page": "International Energy Agency",
-        "evidence_text": "The International Energy Agency (IEA) is a Paris-based autonomous intergovernmental organization, established in 1974, that provides policy recommendations, analysis and data on the global energy sector.",
+        "subject": "Julia",
+        "predicate": "located_in",
+        "object": "Tallahassee when she met Farris Bryant",
+        "source_page": "Farris Bryant",
+        "evidence_text": "Julia was teaching in Tallahassee when she met Farris Bryant.",
         "trust": "overlay_candidate",
         "risk": "low",
-        "stability": "stable",
-        "pump_relation_candidate_id": "spacy:feea7012:c9d3d920",
-        "pump_source_kind": "fresh_relation"
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "located_in_v2",
+        "v2_pattern_id": "located_in_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "Julia was teaching in Tallahassee when she met Farris Bryant.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Dodger Stadium",
+        "predicate": "located_in",
+        "object": "MLB west of the Mississippi River",
+        "source_page": "Dodger Stadium",
+        "evidence_text": "It is the oldest ballpark in MLB west of the Mississippi River, and third-oldest overall, after Fenway Park in Boston (1912) and Wrigley Field in Chicago (1914), and is the largest baseball stadium in the world by seat capacity.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "located_in_v2",
+        "v2_pattern_id": "located_in_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "It is the oldest ballpark in MLB west of the Mississippi River, and third-oldest overall, after Fenway Park in Boston (1912) and Wrigley Field in Chicago (1914), and is the largest baseball stadium in the world by seat capacity.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Graduated Random Presidential Primary System",
+        "predicate": "alias",
+        "object": "California Plan or the American Plan",
+        "source_page": "Graduated Random Presidential Primary System",
+        "evidence_text": "The Graduated Random Presidential Primary System, also known as the California Plan or the American Plan, is a proposed system to reform the conduct of United States Presidential primary campaigns.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "alias_v2",
+        "v2_pattern_id": "alias_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "The Graduated Random Presidential Primary System, also known as the California Plan or the American Plan, is a proposed system to reform the conduct of United States Presidential primary campaigns.",
+        "pump_source_kind": "fresh_snapshot"
+      },
+      "reason": "object_has_descriptive_tail"
+    },
+    {
+      "item": {
+        "overlay_type": "overlay_relation",
+        "subject": "Gulf Coast of the United States",
+        "predicate": "alias",
+        "object": "Gulf South or the South Coast",
+        "source_page": "Gulf Coast of the United States",
+        "evidence_text": "The Gulf Coast of the United States, also known as the Gulf South or the South Coast, is the coastline along the Southern United States where they meet the Gulf of Mexico.",
+        "trust": "overlay_candidate",
+        "risk": "low",
+        "stability": "semi_stable",
+        "candidate_source": "pump_extraction_yield_v2",
+        "extraction_pattern": "alias_v2",
+        "v2_pattern_id": "alias_v2",
+        "confidence_label": "pattern_explicit",
+        "evidence_span": "The Gulf Coast of the United States, also known as the Gulf South or the South Coast, is the coastline along the Southern United States where they meet the Gulf of Mexico.",
+        "pump_source_kind": "fresh_snapshot"
       },
       "reason": "object_has_descriptive_tail"
     }
   ],
   "precision_cleanup_v2_1_enabled": true,
-  "precision_cleanup_v2_1_answerable_before_count": 2861,
-  "precision_cleanup_v2_1_answerable_after_count": 2826,
-  "precision_cleanup_v2_1_relation_before_count": 390,
-  "precision_cleanup_v2_1_relation_after_count": 361,
-  "precision_cleanup_v2_1_definition_before_count": 611,
-  "precision_cleanup_v2_1_definition_after_count": 605,
-  "precision_cleanup_v2_1_rejected_count": 8,
-  "precision_cleanup_v2_1_quarantined_count": 27,
+  "precision_cleanup_v2_1_answerable_before_count": 4532,
+  "precision_cleanup_v2_1_answerable_after_count": 4473,
+  "precision_cleanup_v2_1_relation_before_count": 1462,
+  "precision_cleanup_v2_1_relation_after_count": 1409,
+  "precision_cleanup_v2_1_definition_before_count": 753,
+  "precision_cleanup_v2_1_definition_after_count": 747,
+  "precision_cleanup_v2_1_rejected_count": 29,
+  "precision_cleanup_v2_1_quarantined_count": 30,
   "precision_cleanup_v2_1_rejection_by_reason": {
-    "composite_region_subject": 2,
+    "composite_region_subject": 23,
     "definition_truncated_participle": 6
   },
   "precision_cleanup_v2_1_quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 16,
+    "headquartered_in_quarantine_default": 18,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 6
+    "truncated_person_alias": 7
   },
   "precision_cleanup_v2_1_duplicate_alias_relation_count": 1,
   "precision_cleanup_v2_1_quarantined_alias_duplicate_count": 1,
@@ -979,7 +1113,7 @@
       "snapshot_revision_id": 1353895054,
       "snapshot_raw_text_sha256": "5f94e3b020ff9005f2f49c012594e3454bbd00982915ae2f62c29ebde658ce1d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-159-overlay-002",
+      "snapshot_candidate_id": "snap-215-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     {
@@ -1000,7 +1134,7 @@
       "snapshot_revision_id": 1353895054,
       "snapshot_raw_text_sha256": "5f94e3b020ff9005f2f49c012594e3454bbd00982915ae2f62c29ebde658ce1d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-159-overlay-004",
+      "snapshot_candidate_id": "snap-215-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     {
@@ -1021,7 +1155,7 @@
       "snapshot_revision_id": 1353895054,
       "snapshot_raw_text_sha256": "5f94e3b020ff9005f2f49c012594e3454bbd00982915ae2f62c29ebde658ce1d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-159-overlay-006",
+      "snapshot_candidate_id": "snap-215-overlay-006",
       "pump_source_kind": "fresh_snapshot"
     },
     {
@@ -1042,7 +1176,7 @@
       "snapshot_revision_id": 1359346089,
       "snapshot_raw_text_sha256": "fb02d9f084f32693b87f87baae817f5e4fe3ef1a8344a3c75b333cbc5ed4b7ea",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-391-overlay-003",
+      "snapshot_candidate_id": "snap-483-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     }
   ]

@@ -1,23 +1,23 @@
 {
   "precision_cleanup_v2_1_enabled": true,
-  "answerable_before_cleanup": 2861,
-  "answerable_after_cleanup": 2826,
-  "relation_before_count": 390,
-  "relation_after_count": 361,
-  "definition_before_count": 611,
-  "definition_after_count": 605,
-  "rejected_count": 8,
-  "quarantined_count": 27,
+  "answerable_before_cleanup": 4532,
+  "answerable_after_cleanup": 4473,
+  "relation_before_count": 1462,
+  "relation_after_count": 1409,
+  "definition_before_count": 753,
+  "definition_after_count": 747,
+  "rejected_count": 29,
+  "quarantined_count": 30,
   "rejection_by_reason": {
-    "composite_region_subject": 2,
+    "composite_region_subject": 23,
     "definition_truncated_participle": 6
   },
   "quarantine_by_reason": {
     "duplicate_alias_relation": 1,
-    "headquartered_in_quarantine_default": 16,
+    "headquartered_in_quarantine_default": 18,
     "owned_by_predicate_ambiguous": 1,
     "subject_alias_too_short": 3,
-    "truncated_person_alias": 6
+    "truncated_person_alias": 7
   },
   "duplicate_relation_groups": [
     {
@@ -33,6 +33,18 @@
   "quarantined_alias_duplicate_count": 1,
   "relation_examples_rejected": [
     {
+      "subject": "Middle East",
+      "predicate": "uses",
+      "object": "of the term",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "Middle East",
+      "predicate": "located_in",
+      "object": "Washington, D",
+      "reason": "composite_region_subject"
+    },
+    {
       "subject": "Africa and Eurasia WorldSpace",
       "predicate": "founded_by",
       "object": "Noah Samara",
@@ -42,6 +54,72 @@
       "subject": "United States Sirius Satellite Radio",
       "predicate": "founded_by",
       "object": "Martine Rothblatt",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "South America",
+      "predicate": "used_for",
+      "object": "transportation of goods",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Africa Command",
+      "predicate": "located_in",
+      "object": "Stuttgart, Germany",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Air Force Band",
+      "predicate": "located_in",
+      "object": "Washington, D",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Air Force Basic Military Training",
+      "predicate": "alias",
+      "object": "BMT or military recruit training",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Air Force Basic Military Training",
+      "predicate": "located_in",
+      "object": "San Antonio, Texas",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Air Force Basic Military Training",
+      "predicate": "located_in",
+      "object": "Harlingen, Texas",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Capitol Complex",
+      "predicate": "located_in",
+      "object": "Washington, D",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Copyright Office",
+      "predicate": "provides",
+      "object": "copyright policy advice to the Congress",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Geological Survey",
+      "predicate": "located_in",
+      "object": "NASA Research Park in California",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Marine Corps History Division",
+      "predicate": "located_in",
+      "object": "Virginia",
+      "reason": "composite_region_subject"
+    },
+    {
+      "subject": "United States Marine Corps Recruit Training",
+      "predicate": "located_in",
+      "object": "San Diego",
       "reason": "composite_region_subject"
     }
   ],
@@ -184,6 +262,13 @@
       "reason": "headquartered_in_quarantine_default"
     },
     {
+      "subject": "New York State Banking Department",
+      "predicate": "developed_by",
+      "object": "April",
+      "definition": null,
+      "reason": "truncated_person_alias"
+    },
+    {
       "subject": "Pegasus",
       "predicate": "develops",
       "object": "Pegasus's three Orion solid motors",
@@ -205,18 +290,11 @@
       "reason": "headquartered_in_quarantine_default"
     },
     {
-      "subject": "GAO",
+      "subject": "United Online",
       "predicate": "headquartered_in",
-      "object": "Washington",
+      "object": "Woodland Hills",
       "definition": null,
       "reason": "headquartered_in_quarantine_default"
-    },
-    {
-      "subject": "Uniforms for the WAFS",
-      "predicate": "developed_by",
-      "object": "Love",
-      "definition": null,
-      "reason": "truncated_person_alias"
     }
   ],
   "relation_examples_preserved": [
@@ -359,8 +437,8 @@
       "definition": "Navy's fourth oldest school; only the Naval War College"
     },
     {
-      "subject": "Rocket Science Games",
-      "definition": "independent game studio"
+      "subject": "RSS First Step",
+      "definition": "third New Shepard capsule built by Blue Origin"
     }
   ]
 }

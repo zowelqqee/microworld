@@ -801,6 +801,36 @@ def test_zero_yield_audit_patterns_extract_real_lead_relations() -> None:
             "multiple data models",
         ),
         (
+            "Starlink provides satellite internet access.",
+            "Starlink",
+            "provides",
+            "satellite internet access",
+        ),
+        (
+            "Starlink uses low Earth orbit satellites to reduce latency.",
+            "Starlink",
+            "uses",
+            "low Earth orbit satellites",
+        ),
+        (
+            "Falcon 9 is used for orbital launches.",
+            "Falcon 9",
+            "used_for",
+            "orbital launches",
+        ),
+        (
+            "Starlink enables broadband access in remote areas.",
+            "Starlink",
+            "enables",
+            "broadband access in remote areas",
+        ),
+        (
+            "Starlink works by routing traffic through satellites.",
+            "Starlink",
+            "works_by",
+            "routing traffic through satellites",
+        ),
+        (
             "XCOR Aerospace ceased operations in 2017.",
             "XCOR Aerospace",
             "ceased_operations",
@@ -848,6 +878,30 @@ def test_zero_yield_audit_patterns_pass_precision_firewall() -> None:
     assert ("SpaceX Dragon", "funded_by", "NASA") in accepted
     assert ("Oracle Database", "first_released", "1979") in accepted
     assert ("XCOR Aerospace", "ceased_operations", "2017") in accepted
+
+
+def test_explanatory_patterns_pass_precision_firewall() -> None:
+    candidates = []
+    for sent, page in [
+        ("Starlink provides satellite internet access.", "Starlink"),
+        ("Starlink uses low Earth orbit satellites to reduce latency.", "Starlink"),
+        ("Falcon 9 is used for orbital launches.", "Falcon 9"),
+        ("Starlink enables broadband access in remote areas.", "Starlink"),
+        ("Starlink works by routing traffic through satellites.", "Starlink"),
+    ]:
+        candidates.extend(extract_from_sentence(sent, page))
+
+    result = apply_precision_firewall(candidates)
+    accepted = {
+        (item.get("subject"), item.get("predicate"), item.get("object"))
+        for item in result["accepted"]
+    }
+
+    assert ("Starlink", "provides", "satellite internet access") in accepted
+    assert ("Starlink", "uses", "low Earth orbit satellites") in accepted
+    assert ("Falcon 9", "used_for", "orbital launches") in accepted
+    assert ("Starlink", "enables", "broadband access in remote areas") in accepted
+    assert ("Starlink", "works_by", "routing traffic through satellites") in accepted
 
 
 def test_write_extraction_yield_v2_artifacts(tmp_path) -> None:

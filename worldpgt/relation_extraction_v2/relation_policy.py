@@ -47,6 +47,10 @@ and "volatile" refer to how quickly the fact can change in the real world.
   service_of          semi-stable  NOT current-sensitive  (stable platform relation)
   platform_of         semi-stable  NOT current-sensitive  (stable platform relation)
   uses                semi-stable  NOT current-sensitive  (changes slowly)
+  provides            semi-stable  NOT current-sensitive  (service/function capability)
+  enables             semi-stable  NOT current-sensitive  (capability/outcome relation)
+  used_for            semi-stable  NOT current-sensitive  (purpose relation)
+  works_by            semi-stable  NOT current-sensitive  (mechanism relation)
   part_of             semi-stable  NOT current-sensitive  (structural, changes rarely)
   alias               stable       NOT current-sensitive  (alternate name)
   based_at            semi-stable  NOT current-sensitive  (location/base)
@@ -227,6 +231,18 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "platform of": "platform_of",
     "uses": "uses",
     "use": "uses",
+    "provides": "provides",
+    "provide": "provides",
+    "enables": "enables",
+    "enable": "enables",
+    "used for": "used_for",
+    "use for": "used_for",
+    "used to": "used_for",
+    "works by": "works_by",
+    "work by": "works_by",
+    "works through": "works_by",
+    "work through": "works_by",
+    "uses to": "works_by",
     "part of": "part_of",
     "also known as": "alias",
     "known as": "alias",

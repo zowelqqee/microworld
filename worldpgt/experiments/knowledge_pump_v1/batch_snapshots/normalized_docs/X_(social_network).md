@@ -1,9 +1,9 @@
 # X (social network)
 
 Source: https://en.wikipedia.org/wiki/X_(social_network)
-Retrieved at: 2026-06-17T17:19:03Z
-Revision ID: 1359763726
-Raw text SHA256: 098995c8df33c594c09671062bf04e6aed7841dfffffca6a2f53262cccf2b8f7
+Retrieved at: 2026-06-24T00:21:10Z
+Revision ID: 1360354657
+Raw text SHA256: 13a410082cbd9e2e7a6b4b4165bba8c0552ade3b06ba6a9e04ea088fe9149a4a
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
 Safe for accepted memory: false
 Requires ingestion/quarantine/promotion/regression: true
@@ -81,7 +81,7 @@ In May 2021, Twitter began testing a Tip Jar feature on its iOS and Android clie
 On August 27, 2021, Twitter rolled out Ticketed Spaces, which let Twitter Spaces hosts charge between $1 and $999 for access to their rooms. In April 2022, Twitter announced that it will partner with Stripe, Inc. for piloting cryptocurrency payouts for limited users in the platform. Eligible users of Ticketed Spaces and Super Follows will be able to receive their earnings in the form of USD coin, a stablecoin whose value is that of the U.S. dollar. Users can also hold their earnings in crypto wallets, and then exchange them into other cryptocurrencies.
 
 E-commerce
-In July 2021, Twitter began testing a "Shop module" for iOS users in the US, allowing accounts associated with brands to display a carousel of cards on their profiles showcasing products. Unlike the Buy button, where order fulfillment was handed from within Twitter, these cards are external links to online storefronts from which the products may be purchased. In March 2022, Twitter expanded the test to allow companies to showcase up to 50 products on their profiles. In November 2021, Twitter introduced support for "shoppable" live streams, in which brands can hold streaming events that similarly display banners and pages highlighting products that are featured in the presentation.
+In 2014, Twitter began a gradual roll-out of their "Buy Now" button to US users based on ideas conceived by then head of commerce Nathan Hubbard. The feature was created after he acquired the start-up company CardSpring. It was created with the intention of testing the idea's commercial viability rather than revenue. Its function allowed users to find more information about advertised product and enter shipping and payment information within the platform to complete and mediate transactions. Twitter began to gradually discontinue the button by 2017 after the idea achieved mixed success, although it still offered a "Donate" button for philanthropic purposes. By 2021, Twitter began creating more e-commerce features such as Super Follows and Professional Profile, which allowed users to connect to products easier and businesses to display operational details on their Twitter accounts, respectively. That July, Twitter began testing an e-commerce "Shop Module" feature for US users on English iOS devices, which allowed users to find more information about advertised products in the app. They only gave provided a select group of pilot testers access to the feature. It allowed accounts associated with brands to display a carousel of cards on their profiles showcasing products. Unlike the Buy button, where order fulfillment was handed from within Twitter, these cards are external links to online storefronts from which the products may be purchased. In March 2022, Twitter expanded the test to allow companies to showcase up to 50 products on their profiles. In November 2021, Twitter introduced support for "shoppable" live streams, in which brands can hold streaming events that similarly display banners and pages highlighting products that are featured in the presentation.
 
 X Money Account
 In January 2025, X announced plans to introduce an "X Money Account" feature in 2025. The product would be a digital wallet and enable X users to move funds between traditional bank accounts and their digital wallet and make instant peer-to-peer payments. Visa was announced as partnering with X on the project and, at least initially, cryptocurrencies would not be supported.

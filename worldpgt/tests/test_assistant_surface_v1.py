@@ -16,6 +16,7 @@ from pathlib import Path
 import pytest
 
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
+from worldpgt.assistant_surface.answer_style import resolve_answer_style
 from worldpgt.assistant_surface.assistant_renderer import render
 from worldpgt.assistant_surface.context_selector import (
     ACCEPTED_OVERLAY_PATH,
@@ -75,6 +76,20 @@ def test_cli_supports_json():
 # --------------------------------------------------------------------------- #
 def test_router_entity_definition():
     assert route("Who is Elon Musk?").intent == "entity_definition"
+
+
+@pytest.mark.parametrize(
+    "question",
+    [
+        "How does Starlink work?",
+        "What do you know about Blue Origin?",
+    ],
+)
+def test_router_open_synthesis_to_entity_definition(question):
+    r = route(question)
+
+    assert r.intent == "entity_definition"
+    assert r.notes == "semantic open synthesis query"
 
 
 def test_router_entity_relation():
@@ -143,6 +158,48 @@ def test_supported_negative_answer_has_explicit_support():
     assert a.support_kind in FACTUAL_SUPPORT_KINDS
     assert "Decision: no." in render(a)
     assert validate_answer(a) == []
+
+
+def test_pump_dry_run_open_synthesis_answers_with_definition_support():
+    a = AnswerOrchestrator("pump-dry-run").answer("What do you know about Blue Origin?")
+
+    assert a.decision == "answer"
+    assert a.support_kind == "stable_definition"
+    assert "Blue Origin" in (a.answer_text or "")
+
+
+def test_pump_dry_run_open_synthesis_uses_alias_definition():
+    a = AnswerOrchestrator("pump-dry-run").answer("Tell me about Ray Kroc.")
+
+    assert a.decision == "answer"
+    assert a.support_kind == "stable_definition"
+    assert "Ray Kroc is an American businessman" in (a.answer_text or "")
+    assert "an other" not in (a.answer_text or "")
+
+
+def test_answer_style_normalizes_russian_brief_about_prompt():
+    result = resolve_answer_style("коротко про SpaceX")
+
+    assert result.question == "Tell me about SpaceX."
+    assert result.answer_style == "brief"
+
+
+def test_answer_style_shortens_open_synthesis():
+    normal = AnswerOrchestrator("pump-dry-run").answer("Tell me about SpaceX.")
+    brief = AnswerOrchestrator("pump-dry-run").answer("коротко про SpaceX")
+
+    assert brief.decision == "answer"
+    assert len(brief.answer_text or "") < len(normal.answer_text or "")
+    assert "SpaceX is an aerospace manufacturer" in (brief.answer_text or "")
+
+
+def test_answer_style_simple_keeps_how_question_parseable():
+    answer = AnswerOrchestrator("pump-dry-run").answer(
+        "простыми словами How does Starlink work?"
+    )
+
+    assert answer.decision == "answer"
+    assert "Starlink is" in (answer.answer_text or "")
 
 
 def test_audit_request_does_not_answer_as_fact():
@@ -244,6 +301,14 @@ def test_benchmark_summary_safety_flags(tmp_path):
     assert summary["trusted_memory_modified"] is False
     assert summary["network_calls"] is False
     assert summary["safe_for_general_runtime"] is False
+
+
+def test_static_ui_hides_internal_decision_and_support_labels():
+    html = (_ROOT / "worldpgt" / "api" / "static" / "index.html").read_text()
+
+    assert "badge" not in html
+    assert "data.decision" not in html
+    assert "data.support" not in html
 
 
 def test_no_neural_or_network_imports():

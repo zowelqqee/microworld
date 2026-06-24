@@ -1,11 +1,11 @@
 {
   "allow_network": true,
-  "batches_completed": 61,
-  "fetched_count_total": 10243,
-  "fetch_success_count_total": 3708,
-  "fetch_failed_count_total": 6535,
-  "ready_for_ingestion_count_total": 3419,
-  "not_ready_count_total": 6824,
-  "network_calls": 19001,
-  "latest_batch_manifest_rows": 30
+  "batches_completed": 81,
+  "fetched_count_total": 11771,
+  "fetch_success_count_total": 4254,
+  "fetch_failed_count_total": 7517,
+  "ready_for_ingestion_count_total": 3964,
+  "not_ready_count_total": 7807,
+  "network_calls": 22999,
+  "latest_batch_manifest_rows": 54
 }

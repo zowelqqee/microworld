@@ -1,0 +1,25 @@
+# Internet America
+
+Source: https://en.wikipedia.org/wiki/Internet_America
+Retrieved at: 2026-06-23T21:45:02Z
+Revision ID: 1359552488
+Raw text SHA256: 418935d68513675ff7df2356e1d5f8e8489981701138b592372c0328851209ca
+Status: LOCAL_WIKIPEDIA_SNAPSHOT
+Safe for accepted memory: false
+Requires ingestion/quarantine/promotion/regression: true
+Internet America was an Internet service provider that operated in Texas. In 2015, it was acquired by JAB Broadband and folded into Rise Broadband.
+
+History
+
+Dot.com era
+The company was founded in 1995 by Robert Maynard Jr. On December 11, 1998, the company became a public company via an initial public offering. Its stock rose 14.4% on its first day of trading. In February 1999, the company acquired Compunet for approximately $2 million. The company also acquired CyberRamp. In July 1999, the company acquired NeoSoft for $7.3 million in cash.
+In August 1999, the company acquired INTX.Networking LLC from founder Sardar Biglari. In September 1999, the company acquired PDQ.net for stock worth $32 million. The combined company had 145,000 subscribers.
+In December 1999, during the dot-com bubble, the company's stock doubled in value in a single day with no specific news. On August 14, 2001, the company's shares were removed from public listing on the NASDAQ.
+
+Post dot.com bubble era
+In 2003, the company reduced its headcount from 109 to 70 and also reduced its occupied office space.
+In November 2004, the company acquired My Linux ISP. In October 2005, Glen Blackmon was named president and chief operating officer of the company. In January 2006, the company acquired 2Fast Communications. In 2006, the company moved its headquarters from Dallas to Houston. On December 26, 2006, Glen Blackmon resigned.
+In November 2008, the company announced a merger with KeyOn Communications Holdings. However, in February 2009, the merger was terminated.
+In June 2009, the company named Mark White, former Governor of Texas, as the special counsel for development of broadband networks in rural areas. In 2015, the company was acquired by JAB Broadband and folded into Rise Broadband.
+
+References

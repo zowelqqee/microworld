@@ -1,0 +1,16 @@
+{
+  "title": "SEC investigation into the acquisition of Twitter by Elon Musk",
+  "normalized_title": "SEC investigation into the acquisition of Twitter by Elon Musk",
+  "pageid": null,
+  "revision_id": null,
+  "timestamp": "",
+  "source_url": "https://en.wikipedia.org/wiki/SEC_investigation_into_the_acquisition_of_Twitter_by_Elon_Musk",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo%7Clinks&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&plnamespace=0&pllimit=max&redirects=1&titles=SEC+investigation+into+the+acquisition+of+Twitter+by+Elon+Musk",
+  "retrieved_at": "2026-06-24T01:23:29Z",
+  "raw_text": "",
+  "raw_text_sha256": "",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "error",
+  "error": "HTTP Error 429: Too Many Requests",
+  "links": []
+}

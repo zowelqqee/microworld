@@ -144,7 +144,7 @@
       "snapshot_revision_id": 1359848574,
       "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-612-overlay-001",
+      "snapshot_candidate_id": "snap-775-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "generic_subject"
@@ -186,6 +186,62 @@
       "confidence_label": "pattern_explicit",
       "evidence_span": "Boca Chica was developed by the Dominican state through the Boca Chica sugar company in 1916 and throughout the 1920s.",
       "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bull Moose Party",
+      "predicate": "alias",
+      "object": "Bull Moose Party",
+      "source_page": "Bull Moose Party",
+      "evidence_text": "The Progressive Party, popularly nicknamed the Bull Moose Party, was a third party in the United States formed in 1912 by former president Theodore Roosevelt after he lost the presidential nomination of the Republican Party to his former protégé turned rival, incumbent president William Howard Taft.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Progressive Party, popularly nicknamed the Bull Moose Party, was a third party in the United States formed in 1912 by former president Theodore Roosevelt after he lost the presidential nomination of the Republican Party to his former protégé turned rival, incumbent president William Howard Taft.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "New York City Board of Education",
+      "predicate": "alias",
+      "object": "New York City Board of Education",
+      "source_page": "New York City Board of Education",
+      "evidence_text": "The Panel for Educational Policy of the Department of Education of the City School District of the City of New York, abbreviated as the Panel for Educational Policy and also known as the New York City Board of Education, is the governing body of the New York City Department of Education.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Panel for Educational Policy of the Department of Education of the City School District of the City of New York, abbreviated as the Panel for Educational Policy and also known as the New York City Board of Education, is the governing body of the New York City Department of Education.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Chief executive officer",
+      "predicate": "provides",
+      "object": "Chief executive officer",
+      "source_page": "Air Force Officer Training School",
+      "evidence_text": "OTS is one of the Department of the Air Force's officer accession programs and provides initial officer training for college graduates, prior-enlisted personnel, and selected direct commission officers entering the Air Force, Air Force Reserve, Air National Guard, and Space Force.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:5f94e3b0:d46a5f02",
+      "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
   },
@@ -256,6 +312,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The America First Committee",
+      "predicate": "is_a",
+      "object": "American isolationist pressure group",
+      "source_page": "America First Committee",
+      "evidence_text": "The America First Committee (AFC) was an American isolationist pressure group against the United States' entry into World War II.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:ee79059d:6160b1a0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "provides",
+      "object": "Bloomberg News",
+      "source_page": "American Broadcasting Company",
+      "evidence_text": "ABC News, through ABC News Radio, provides news and feature content to over 1,900 affiliated radio stations.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:44a22f8f:dc0d4380",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Oracle Corporation",
       "predicate": "is_a",
       "object": "American electronics company",
@@ -268,6 +356,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Private spaceflight",
+      "predicate": "provides",
+      "object": "Private spaceflight",
+      "source_page": "Axiom Space",
+      "evidence_text": "Human spaceflight Axiom Space provides human spaceflight services to people, corporations, and space agencies.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:48e54c0a:e12d7d7d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -416,6 +520,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The Campaign",
+      "predicate": "is_a",
+      "object": "American non - profit membership organization",
+      "source_page": "Campaign for Tobacco-Free Kids",
+      "evidence_text": "The Campaign for Tobacco-Free Kids is an American non-profit membership organization headquartered in Washington, D.C., that advocates in favor of reducing tobacco consumption.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:771e52d1:bdf0f727",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "IncInc\u0000",
+      "predicate": "is_a",
+      "object": "American company",
+      "source_page": "Commerce One",
+      "evidence_text": "Commerce One, IncInc\u0000 was an American company that operated online auctions focused on B2B e-commerce.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:0e172027:e7bc24a0",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The Douglas Aircraft Company",
       "predicate": "is_a",
       "object": "American aerospace and defense company",
@@ -560,6 +696,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The League",
+      "predicate": "is_a",
+      "object": "American advocacy group",
+      "source_page": "Green New Deal",
+      "evidence_text": "The League of Conservation Voters is an American advocacy group for environmental issues The New Economics Foundation and The Green New Deal Group (United Kingdom) openDemocracy Sierra Club Living Economy Program The United Nations Economic and Social Commission for Asia and the Pacific, who developed the Low Carbon Green Growth Roadmap for Asia and the Pacific The United Nations Environment Programme launched a Green Economy Initiative known as the \"Global Green New Deal\".",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:8d1c2472:383ae56a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Green New Deal",
       "predicate": "develops",
       "object": "Green New Deal",
@@ -672,6 +824,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Internet service provider",
+      "predicate": "provides",
+      "object": "Satellite internet",
+      "source_page": "ISPs",
+      "evidence_text": "Access provider ISPs provide Internet access directly to end customers such as businesses and consumers, employing a range of technologies to connect users to their network.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:b4d5712a:83935c9b",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "generic_subject"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The Moorish Science Temple",
       "predicate": "is_a",
       "object": "American organization",
@@ -704,6 +872,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Silicon Graphics",
+      "predicate": "founded",
+      "object": "Silicon Graphics",
+      "source_page": "James H. Clark",
+      "evidence_text": "Silicon Graphics In 1982, Clark along with several Stanford graduate students founded Silicon Graphics (SGI).",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:95b502b2:9fa8cdd1",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Strategic Space Development",
       "predicate": "founded",
       "object": "Strategic Space Development",
@@ -713,6 +897,22 @@
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:ab4f316f:bac2a19d",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "NASA",
+      "predicate": "uses",
+      "object": "NASA",
+      "source_page": "Launch Operations Center",
+      "evidence_text": "Companies were able to \"operate their own launch vehicles\" and use NASA's launch facilities.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:7edd341e:2713a7f3",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
@@ -752,6 +952,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The League",
+      "predicate": "is_a",
+      "object": "American environmental advocacy group",
+      "source_page": "League of Conservation Voters",
+      "evidence_text": "The League of Conservation Voters (LCV) is an American environmental advocacy group.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:8025bc7f:046e4126",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Lehman Brothers Holdings IncInc\u0000",
       "predicate": "is_a",
       "object": "American global financial services firm",
@@ -780,6 +996,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite internet",
+      "predicate": "provides",
+      "object": "Satellite internet",
+      "source_page": "Mark Zuckerberg",
+      "evidence_text": "In 2013, Zuckerberg launched Internet.org, which he described as an initiative to provide Internet access to the five billion people without it as of the launch date.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:7650e224:8f782c49",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -816,6 +1048,38 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Mithril Capital Management",
+      "predicate": "is_a",
+      "object": "American venture capital firm",
+      "source_page": "Mithril Capital",
+      "evidence_text": "Mithril Capital Management is an American venture capital firm founded by Peter Thiel and Ajay Royan in San Francisco in 2012.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:98e3b947:7907308c",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The National League",
+      "predicate": "is_a",
+      "object": "American advocacy organization",
+      "source_page": "National League of Cities",
+      "evidence_text": "The National League of Cities (NLC) is an American advocacy organization that represents the country's 19,495 cities, towns, and villages along with 49 state municipal leagues.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:aa2414df:bf5a6edb",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The National Renaissance Party",
       "predicate": "is_a",
       "object": "American neo - Nazi group",
@@ -844,6 +1108,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Satellite internet",
+      "predicate": "uses",
+      "object": "Satellite internet",
+      "source_page": "Net Neutrality",
+      "evidence_text": "Some countries such as Thailand block certain websites or types of sites, and monitor and/or censor Internet use using Internet police, a specialized type of law enforcement, or secret police.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:1017ba6f:4b9f4c8a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
   },
   {
     "item": {
@@ -1024,6 +1304,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Right Side Broadcasting Network",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Right Side Broadcasting Network",
+      "evidence_text": "Right Side Broadcasting Network (RSBN, also known as Right Side Broadcasting), is an American conservative media company founded by Joe Seales in 2015.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:41192bae:6556317a",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Robert Zubrin",
       "predicate": "is_a",
       "object": "American aerospace",
@@ -1104,6 +1400,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Satellite internet",
+      "predicate": "used_for",
+      "object": "Satellite internet",
+      "source_page": "Satellite Internet",
+      "evidence_text": "One-way broadcast satellite Internet systems are used for Internet Protocol (IP) broadcast-based data, audio and video distribution.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:04cece53:cd63f364",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Social media",
       "predicate": "is_a",
       "object": "Spanish company",
@@ -1168,6 +1480,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Rocket",
+      "predicate": "used_for",
+      "object": "Rocket",
+      "source_page": "SpaceX Hawthorne",
+      "evidence_text": "The SpaceX Rocket Development and Test Facility in McGregor, Texas, is used for rocket engine development and testing.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:a2f6b45b:512ed46e",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Social media",
       "predicate": "is_a",
       "object": "German multinational publishing company",
@@ -1225,6 +1553,22 @@
       "risk": "low",
       "stability": "stable",
       "pump_relation_candidate_id": "spacy:bf9f6de0:2f163229",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "TED Conferences",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "TED (conference)",
+      "evidence_text": "TED Conferences, LLC (Technology, Entertainment, Design) is an American-Canadian nonprofit media organization that posts international talks online for free distribution under the slogan \"Ideas Change Everything\" (previously \"Ideas Worth Spreading\").",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:463c2118:12fbcf4e",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_too_broad"
@@ -1312,6 +1656,22 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "The Daily Pennsylvanian",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "The Daily Pennsylvanian",
+      "evidence_text": "The Daily Pennsylvanian, IncInc\u0000 is the independent student media organization of the University of Pennsylvania.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:9e01d5b5:95c70d20",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "The Epoch Times",
       "predicate": "is_a",
       "object": "Social media",
@@ -1388,6 +1748,22 @@
       "pump_source_kind": "fresh_relation"
     },
     "reason": "is_a_object_truncated_nationality"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Truth Social",
+      "predicate": "is_a",
+      "object": "Social media",
+      "source_page": "Truth Social",
+      "evidence_text": "Truth Social is an American alt-tech social media platform owned by Trump Media & Technology Group (TMTG), an American company majority-owned by US president Donald Trump.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "pump_relation_candidate_id": "spacy:24c4b60b:c05664a5",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "is_a_object_too_broad"
   },
   {
     "item": {
@@ -1513,6 +1889,22 @@
       "risk": "medium",
       "stability": "semi_stable",
       "pump_relation_candidate_id": "spacy:69a677ed:a6cc8454",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "self_relation"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Vandenberg Space Force Base",
+      "predicate": "provides",
+      "object": "Vandenberg Space Force Base",
+      "source_page": "United States Air Force Academy",
+      "evidence_text": "The 10th Air Base Wing provides all base support functions that exist at other air force bases, including civil engineering, communications, medical support, personnel, administration, security, and base services.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "rv2:64a92ed8:cfd6a46d",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "self_relation"
@@ -1668,6 +2060,126 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Amazon Prime Video",
+      "predicate": "located_in",
+      "object": "Belgium, Brazil, Canada, France, India, Ireland, Italy, Poland, Turkey",
+      "source_page": "Amazon Prime Video",
+      "evidence_text": "Among the new territories, the service was included with Prime in Belgium, Brazil, Canada, France, India, Ireland, Italy, Poland, Turkey, and Spain; in all other countries, it was made available for $/€2.99 per month for the first six months and $/€5.99 per month thereafter.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Among the new territories, the service was included with Prime in Belgium, Brazil, Canada, France, India, Ireland, Italy, Poland, Turkey, and Spain; in all other countries, it was made available for $/€2.99 per month for the first six months and $/€5.99 per month thereafter.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Breitbart News",
+      "predicate": "supports",
+      "object": "itself from advertising revenue",
+      "source_page": "Breitbart News",
+      "evidence_text": "Editors commented in 2015 that the site is a \"private company and we don't comment on who our investors or backers are.\" According to the Los Angeles Times, web traffic is vital to the company as it supports itself from advertising revenue.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "supports_v2",
+      "v2_pattern_id": "supports_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Editors commented in 2015 that the site is a \"private company and we don't comment on who our investors or backers are.\" According to the Los Angeles Times, web traffic is vital to the company as it supports itself from advertising revenue.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Christopher Payne",
+      "predicate": "located_in",
+      "object": "Charleston, West Virginia",
+      "source_page": "Christopher Payne",
+      "evidence_text": "Instead, he was appointed Deputy Collector for the United States Internal Revenue Service in Charleston, West Virginia.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Instead, he was appointed Deputy Collector for the United States Internal Revenue Service in Charleston, West Virginia.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "EIA",
+      "predicate": "provides",
+      "object": "technical evaluations that are intended to contribute to more objective decision making",
+      "source_page": "Environmental Assessment",
+      "evidence_text": "EIA provides technical evaluations that are intended to contribute to more objective decision making.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "provides_v2",
+      "v2_pattern_id": "provides_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "EIA provides technical evaluations that are intended to contribute to more objective decision making.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Sperry Corporation",
+      "predicate": "located_in",
+      "object": "Charlottesville, Virginia",
+      "source_page": "Sperry Corporation",
+      "evidence_text": "After considerable searching and evaluation, a plant was built in Charlottesville, Virginia, and in 1956, Sperry Piedmont Division began producing marine navigation products.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "After considerable searching and evaluation, a plant was built in Charlottesville, Virginia, and in 1956, Sperry Piedmont Division began producing marine navigation products.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Tableau Software",
+      "predicate": "located_in",
+      "object": "Salesforce's history at the time",
+      "source_page": "Tableau Software",
+      "evidence_text": "On June 10, 2019, Tableau was acquired by Salesforce in an all-stock deal worth $15.7 billion, being the largest acquisition in Salesforce's history at the time.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "On June 10, 2019, Tableau was acquired by Salesforce in an all-stock deal worth $15.7 billion, being the largest acquisition in Salesforce's history at the time.",
+      "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_evidence"
   },
@@ -1834,6 +2346,42 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "United States Senate",
+      "predicate": "provides",
+      "object": "that \"All bills for raising Revenue shall originate in the House of Representatives\"",
+      "source_page": "United States Senate",
+      "evidence_text": "However, the Constitution's Origination Clause provides that \"All bills for raising Revenue shall originate in the House of Representatives\".",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "provides_v2",
+      "v2_pattern_id": "provides_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "However, the Constitution's Origination Clause provides that \"All bills for raising Revenue shall originate in the House of Representatives\".",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "The AI Futures Project",
+      "predicate": "founded_by",
+      "object": "Daniel Kokotajlo",
+      "source_page": "AI Futures Project",
+      "evidence_text": "History The AI Futures Project was founded in 2025 by Daniel Kokotajlo, a former researcher in the governance division of OpenAI.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "pump_relation_candidate_id": "spacy:6d568542:05435b23",
+      "pump_source_kind": "fresh_relation"
+    },
+    "reason": "volatile_evidence"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Koch Industries",
       "predicate": "is_a",
       "object": "Privately held company",
@@ -1874,7 +2422,7 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:a00cd7c5:afc55326",
+      "pump_relation_candidate_id": "spacy:f5f2e388:afc55326",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"
@@ -1890,7 +2438,7 @@
       "trust": "overlay_candidate",
       "risk": "medium",
       "stability": "semi_stable",
-      "pump_relation_candidate_id": "spacy:a00cd7c5:fbc87a22",
+      "pump_relation_candidate_id": "spacy:f5f2e388:fbc87a22",
       "pump_source_kind": "fresh_relation"
     },
     "reason": "volatile_evidence"

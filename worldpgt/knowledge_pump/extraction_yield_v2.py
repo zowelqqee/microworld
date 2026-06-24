@@ -550,6 +550,41 @@ _SUPPORTS_V2 = re.compile(
     re.IGNORECASE,
 )
 
+_PROVIDES_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+provides\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=,\s+(?:including|using|through|by)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_USES_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+uses\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=\s+to\b|,\s+(?:including|for|and)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_ENABLES_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+enables\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=,\s+(?:including|by|through)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_USED_FOR_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+(?:is|are|was|were)\s+used\s+for\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=,\s+(?:including|by|through)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
+_WORKS_BY_V2 = re.compile(
+    r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
+    r"\s+works\s+(?:by|through)\s+(?P<obj>[^.;]{1,120}?)"
+    r"(?=,\s+(?:including|and)\b|[.;]|$)",
+    re.IGNORECASE,
+)
+
 _RUNS_ON_V2 = re.compile(
     r"\b(?P<subj>[A-Z][A-Za-z0-9 ,.'&\-]{1,59}?|it)"
     r"\s+runs\s+on\s+(?P<raw_obj>[^.;]{1,160})",
@@ -865,6 +900,37 @@ def extract_from_sentence(
         if subj and obj and subj[0].isupper() and not is_fragment_subject(subj) and not is_generic_subject(subj):
             items.append(_make_relation(subj, "supports", obj, source_page, sentence, "supports_v2", risk="low", stability="semi_stable"))
             _bump("supports_v2")
+
+    for regex, predicate, pattern_id in (
+        (_PROVIDES_V2, "provides", "provides_v2"),
+        (_USES_V2, "uses", "uses_v2"),
+        (_ENABLES_V2, "enables", "enables_v2"),
+        (_USED_FOR_V2, "used_for", "used_for_v2"),
+        (_WORKS_BY_V2, "works_by", "works_by_v2"),
+    ):
+        for m in regex.finditer(sentence):
+            subj = _subject_or_page(m.group("subj"))
+            obj = m.group("obj").strip()
+            if (
+                subj
+                and obj
+                and subj[0].isupper()
+                and not is_fragment_subject(subj)
+                and not is_generic_subject(subj)
+            ):
+                items.append(
+                    _make_relation(
+                        subj,
+                        predicate,
+                        obj,
+                        source_page,
+                        sentence,
+                        pattern_id,
+                        risk="low",
+                        stability="semi_stable",
+                    )
+                )
+                _bump(pattern_id)
 
     for m in _RUNS_ON_V2.finditer(sentence):
         subj = _subject_or_page(m.group("subj"))

@@ -2,6 +2,30 @@
   {
     "item": {
       "overlay_type": "overlay_relation",
+      "subject": "Canadian Space Agency",
+      "predicate": "leader_of",
+      "object": "John H",
+      "source_page": "Canadian Space Agency",
+      "evidence_text": "leadership of John H",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "temporal_class": "snapshot",
+      "as_of": "2026-06",
+      "snapshot_source_title": "Canadian Space Agency",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Canadian_Space_Agency",
+      "snapshot_retrieved_at": "2026-06-23T19:55:44Z",
+      "snapshot_revision_id": 1348638632,
+      "snapshot_raw_text_sha256": "af610d970bc00d5f1756a16f43623a8c3d18b474ee3c3cb32d916fcc400503ad",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-535-overlay-001",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "volatile_predicate"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
       "subject": "Mark Carney",
       "predicate": "leader_of",
       "object": "Liberal Party",
@@ -18,7 +42,7 @@
       "snapshot_revision_id": 1359301317,
       "snapshot_raw_text_sha256": "aba23725a9a8d0a94b5d7fbb71e8d1a07b930d88e2e9f0e4b7696874a0bf5676",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1082-overlay-001",
+      "snapshot_candidate_id": "snap-1349-overlay-001",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
@@ -42,7 +66,7 @@
       "snapshot_revision_id": 1305529140,
       "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1783-overlay-002",
+      "snapshot_candidate_id": "snap-2219-overlay-002",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
@@ -66,7 +90,7 @@
       "snapshot_revision_id": 1305529140,
       "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1783-overlay-003",
+      "snapshot_candidate_id": "snap-2219-overlay-003",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
@@ -90,7 +114,7 @@
       "snapshot_revision_id": 1305529140,
       "snapshot_raw_text_sha256": "1226e0bfc6fe10af07859800668805b4199bf2fdee993a7041e740ea9b0d94db",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1783-overlay-004",
+      "snapshot_candidate_id": "snap-2219-overlay-004",
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "volatile_predicate"
@@ -114,6 +138,426 @@
       "pump_source_kind": "fresh_snapshot"
     },
     "reason": "headquarters_subject_or_clause_uncertain"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Julia",
+      "predicate": "located_in",
+      "object": "Tallahassee when she met Farris Bryant",
+      "source_page": "Farris Bryant",
+      "evidence_text": "Julia was teaching in Tallahassee when she met Farris Bryant.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Julia was teaching in Tallahassee when she met Farris Bryant.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Dodger Stadium",
+      "predicate": "located_in",
+      "object": "MLB west of the Mississippi River",
+      "source_page": "Dodger Stadium",
+      "evidence_text": "It is the oldest ballpark in MLB west of the Mississippi River, and third-oldest overall, after Fenway Park in Boston (1912) and Wrigley Field in Chicago (1914), and is the largest baseball stadium in the world by seat capacity.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "It is the oldest ballpark in MLB west of the Mississippi River, and third-oldest overall, after Fenway Park in Boston (1912) and Wrigley Field in Chicago (1914), and is the largest baseball stadium in the world by seat capacity.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Graduated Random Presidential Primary System",
+      "predicate": "alias",
+      "object": "California Plan or the American Plan",
+      "source_page": "Graduated Random Presidential Primary System",
+      "evidence_text": "The Graduated Random Presidential Primary System, also known as the California Plan or the American Plan, is a proposed system to reform the conduct of United States Presidential primary campaigns.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Graduated Random Presidential Primary System, also known as the California Plan or the American Plan, is a proposed system to reform the conduct of United States Presidential primary campaigns.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Gulf Coast of the United States",
+      "predicate": "alias",
+      "object": "Gulf South or the South Coast",
+      "source_page": "Gulf Coast of the United States",
+      "evidence_text": "The Gulf Coast of the United States, also known as the Gulf South or the South Coast, is the coastline along the Southern United States where they meet the Gulf of Mexico.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Gulf Coast of the United States, also known as the Gulf South or the South Coast, is the coastline along the Southern United States where they meet the Gulf of Mexico.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Venice HyperloopTT",
+      "predicate": "located_in",
+      "object": "Venice through its subsidiary Hyperloop Italia",
+      "source_page": "Hyperloop Transportation Technologies",
+      "evidence_text": "Venice HyperloopTT is involved in the development of a Hyperloop system in Venice through its subsidiary Hyperloop Italia, which leads the Hyper Builders consortium alongside Italian engineering firms Webuild, Leonardo, and RINA.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Venice HyperloopTT is involved in the development of a Hyperloop system in Venice through its subsidiary Hyperloop Italia, which leads the Hyper Builders consortium alongside Italian engineering firms Webuild, Leonardo, and RINA.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Inspiration Mars",
+      "predicate": "located_in",
+      "object": "US and Keio University in Japan",
+      "source_page": "Inspiration Mars",
+      "evidence_text": "The design contest took place on 9 August 2014, and was won by an international team from Purdue University in US and Keio University in Japan.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The design contest took place on 9 August 2014, and was won by an international team from Purdue University in US and Keio University in Japan.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "ISRO",
+      "predicate": "located_in",
+      "object": "Gaganyaan and the Bharatiya Antariksha Station",
+      "source_page": "International Docking System Standard",
+      "evidence_text": "ISRO is developing the IDSS-compliant Bhartiya Docking System (BDS) for use in Gaganyaan and the Bharatiya Antariksha Station.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "ISRO is developing the IDSS-compliant Bhartiya Docking System (BDS) for use in Gaganyaan and the Bharatiya Antariksha Station.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Nihon",
+      "predicate": "located_in",
+      "object": "Japanese phonology during the Edo period",
+      "source_page": "Japan",
+      "evidence_text": "Nihon is typically used in everyday speech and reflects shifts in Japanese phonology during the Edo period.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Nihon is typically used in everyday speech and reflects shifts in Japanese phonology during the Edo period.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Ted",
+      "predicate": "located_in",
+      "object": "Chicago to a family of Baptists",
+      "source_page": "Jeff Bezos",
+      "evidence_text": "Ted was a Danish American unicyclist born in Chicago to a family of Baptists.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Ted was a Danish American unicyclist born in Chicago to a family of Baptists.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Centered on Fort Tejon When Kern County",
+      "predicate": "located_in",
+      "object": "Los Angeles County became Soledad Township",
+      "source_page": "Los Angeles County",
+      "evidence_text": "Centered on Fort Tejon When Kern County was formed, the portion of the township remaining in Los Angeles County became Soledad Township.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Centered on Fort Tejon When Kern County was formed, the portion of the township remaining in Los Angeles County became Soledad Township.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "President Lyndon B. Johnson",
+      "predicate": "located_in",
+      "object": "Texas before winning the general election",
+      "source_page": "President Lyndon B. Johnson",
+      "evidence_text": "In 1948, he was controversially declared the winner in the Democratic primary for the U.SU.S\u0000 Senate election in Texas before winning the general election.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 1948, he was controversially declared the winner in the Democratic primary for the U.SU.S\u0000 Senate election in Texas before winning the general election.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Michael Bloomberg",
+      "predicate": "located_in",
+      "object": "New York to Lithuanian Jewish parents",
+      "source_page": "Michael Bloomberg",
+      "evidence_text": "Bloomberg's maternal grandfather, Max Rubens, was a Lithuanian Jewish immigrant from present-day Belarus, and his maternal grandmother was born in New York to Lithuanian Jewish parents.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg's maternal grandfather, Max Rubens, was a Lithuanian Jewish immigrant from present-day Belarus, and his maternal grandmother was born in New York to Lithuanian Jewish parents.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Khan",
+      "predicate": "located_in",
+      "object": "Baqubah a town outside of Baghdad",
+      "source_page": "Muslims in the United States military",
+      "evidence_text": "Khan was deployed to Iraq and in August 2007 was killed in Baqubah a town outside of Baghdad.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Khan was deployed to Iraq and in August 2007 was killed in Baqubah a town outside of Baghdad.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "PSA Group",
+      "predicate": "located_in",
+      "object": "PSA to Padmapriya Automobile Investment Group",
+      "source_page": "PSA Group",
+      "evidence_text": "On 12 December 2013, General Motors announced it was selling its 7% stake in PSA to Padmapriya Automobile Investment Group.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "On 12 December 2013, General Motors announced it was selling its 7% stake in PSA to Padmapriya Automobile Investment Group.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Biography Sahre",
+      "predicate": "located_in",
+      "object": "Johnson City in upstate New York",
+      "source_page": "Paul Sahre",
+      "evidence_text": "Biography Sahre was born in Johnson City in upstate New York, and received his BFA and MFA degrees from Kent State University.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Biography Sahre was born in Johnson City in upstate New York, and received his BFA and MFA degrees from Kent State University.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "San Antonio",
+      "predicate": "located_in",
+      "object": "San Antonio Missions National Historical Park",
+      "source_page": "San Antonio",
+      "evidence_text": "San Antonio is home to five 18th-century Spanish frontier missions, including The Alamo and those preserved in San Antonio Missions National Historical Park, which were collectively designated as UNESCO World Heritage sites in 2015.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "San Antonio is home to five 18th-century Spanish frontier missions, including The Alamo and those preserved in San Antonio Missions National Historical Park, which were collectively designated as UNESCO World Heritage sites in 2015.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Shirley Chisholm",
+      "predicate": "located_in",
+      "object": "British Guiana before moving to Barbados",
+      "source_page": "Shirley Chisholm",
+      "evidence_text": "Her father, Charles Christopher StSt\u0000 Hill, was born in British Guiana before moving to Barbados.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Her father, Charles Christopher StSt\u0000 Hill, was born in British Guiana before moving to Barbados.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Southwestern United States",
+      "predicate": "alias",
+      "object": "American Southwest or simply the Southwest",
+      "source_page": "Southwestern United States",
+      "evidence_text": "The Southwestern United States, also known as the American Southwest or simply the Southwest, is a geographic and cultural region of the United States that includes Arizona and New Mexico, along with adjacent portions of California, Colorado, Nevada, Oklahoma, Texas, and Utah.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "alias_v2",
+      "v2_pattern_id": "alias_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Southwestern United States, also known as the American Southwest or simply the Southwest, is a geographic and cultural region of the United States that includes Arizona and New Mexico, along with adjacent portions of California, Colorado, Nevada, Oklahoma, Texas, and Utah.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "St. Louis",
+      "predicate": "located_in",
+      "object": "Missouri and the second-largest in Illinois",
+      "source_page": "St. Louis",
+      "evidence_text": "It is the largest metropolitan area in Missouri and the second-largest in Illinois.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "It is the largest metropolitan area in Missouri and the second-largest in Illinois.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "World Wildlife Fund",
+      "predicate": "located_in",
+      "object": "New York City by Fairfield Osborn",
+      "source_page": "World Wildlife Fund",
+      "evidence_text": "In 1947, the Conservation Foundation was formed in New York City by Fairfield Osborn.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 1947, the Conservation Foundation was formed in New York City by Fairfield Osborn.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
+  },
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Yoshua Bengio",
+      "predicate": "located_in",
+      "object": "Montreal that performed pieces in Judeo-Arabic",
+      "source_page": "Yoshua Bengio",
+      "evidence_text": "His father, Carlo Bengio was a pharmacist and a playwright; he ran a Sephardic theater company in Montreal that performed pieces in Judeo-Arabic.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "His father, Carlo Bengio was a pharmacist and a playwright; he ran a Sephardic theater company in Montreal that performed pieces in Judeo-Arabic.",
+      "pump_source_kind": "fresh_snapshot"
+    },
+    "reason": "object_has_descriptive_tail"
   },
   {
     "item": {

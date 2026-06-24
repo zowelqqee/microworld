@@ -1,6 +1,6 @@
 [
   {
-    "candidate_id": "snap-150-overlay-000",
+    "candidate_id": "snap-202-overlay-000",
     "source_doc_title": "Aerospace manufacturer",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -23,12 +23,12 @@
       "snapshot_revision_id": 1342299878,
       "snapshot_raw_text_sha256": "4d2faea7623fa4c75c4f5d68c87ff37140e26de9ede2ce7e97ed59b9de7841fd",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-150-overlay-000",
+      "snapshot_candidate_id": "snap-202-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-297-overlay-000",
+    "candidate_id": "snap-366-overlay-000",
     "source_doc_title": "Automotive industry",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -50,12 +50,12 @@
       "snapshot_revision_id": 1355636928,
       "snapshot_raw_text_sha256": "6d24a9be4d87b30a4e25e5298eea27267d5adbfa189662a7ef9090f23e11d3c7",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-297-overlay-000",
+      "snapshot_candidate_id": "snap-366-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-298-overlay-000",
+    "candidate_id": "snap-367-overlay-000",
     "source_doc_title": "Autopilot",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -75,12 +75,12 @@
       "snapshot_revision_id": 1342840009,
       "snapshot_raw_text_sha256": "11550916d6a93d5485711138c618ee3f612f98fe9297614ddb7614213fd19406",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-298-overlay-000",
+      "snapshot_candidate_id": "snap-367-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-336-overlay-000",
+    "candidate_id": "snap-410-overlay-000",
     "source_doc_title": "Bernard Arnault",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -98,16 +98,16 @@
       "risk": "low",
       "snapshot_source_title": "Bernard Arnault",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Bernard_Arnault",
-      "snapshot_retrieved_at": "2026-06-23T05:42:02Z",
+      "snapshot_retrieved_at": "2026-06-24T05:40:07Z",
       "snapshot_revision_id": 1356534539,
       "snapshot_raw_text_sha256": "585cc1df347c10f05bf16d1f274e1e05807577e4112d58e397a9af29273cdfdd",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-336-overlay-000",
+      "snapshot_candidate_id": "snap-410-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-364-overlay-000",
+    "candidate_id": "snap-445-overlay-000",
     "source_doc_title": "Bloomberg L.P.",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -129,12 +129,12 @@
       "snapshot_revision_id": 1359475756,
       "snapshot_raw_text_sha256": "f900dae8ba9d94db71701590f6e71ff9e242fefca2bf921ae4932caf6a406f54",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-364-overlay-000",
+      "snapshot_candidate_id": "snap-445-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-368-overlay-000",
+    "candidate_id": "snap-449-overlay-000",
     "source_doc_title": "Bloomberg News",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -157,12 +157,40 @@
       "snapshot_revision_id": 1359783105,
       "snapshot_raw_text_sha256": "5f2b497b36057e3b5acf921c6c81b728f76f31ec3e4cb28a98a76e41e5446986",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-368-overlay-000",
+      "snapshot_candidate_id": "snap-449-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-393-overlay-000",
+    "candidate_id": "snap-454-overlay-000",
+    "source_doc_title": "Blue Origin",
+    "source_kind": "fresh_snapshot",
+    "reason": "entity_type_mismatch",
+    "overlay_item": {
+      "overlay_type": "overlay_entity",
+      "entity_id": "wiki:Blue_Origin",
+      "label": "Blue Origin",
+      "aliases": [
+        "History The",
+        "Origin"
+      ],
+      "entity_type": "other",
+      "source_page": "Blue Origin",
+      "source_candidate_type": "entity_card",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "snapshot_source_title": "Blue Origin",
+      "snapshot_source_url": "https://en.wikipedia.org/wiki/Blue_Origin",
+      "snapshot_retrieved_at": "2026-06-23T23:16:04Z",
+      "snapshot_revision_id": 1359475922,
+      "snapshot_raw_text_sha256": "38e38de47d9080bf6c7a4f83a419e25c80424b098a15a2a0bc049fbde1b9fd33",
+      "safe_for_general_runtime": false,
+      "snapshot_candidate_id": "snap-454-overlay-000",
+      "pump_source_kind": "fresh_snapshot"
+    }
+  },
+  {
+    "candidate_id": "snap-489-overlay-000",
     "source_doc_title": "Brain–computer interface",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -184,12 +212,12 @@
       "snapshot_revision_id": 1359491554,
       "snapshot_raw_text_sha256": "58d75a095df0f561448cdf9c5e18290c0c29a9469e10d90a1a992248ba09845d",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-393-overlay-000",
+      "snapshot_candidate_id": "snap-489-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-409-overlay-000",
+    "candidate_id": "snap-511-overlay-000",
     "source_doc_title": "Businessperson",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -209,12 +237,12 @@
       "snapshot_revision_id": 1358000742,
       "snapshot_raw_text_sha256": "65198e7fc9a8ae717ab2afbc12b88cb00e0e02ea9f9c621a06915bc488bb450b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-409-overlay-000",
+      "snapshot_candidate_id": "snap-511-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-415-overlay-000",
+    "candidate_id": "snap-517-overlay-000",
     "source_doc_title": "CNBC",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -234,12 +262,12 @@
       "snapshot_revision_id": 1359100830,
       "snapshot_raw_text_sha256": "8ae2bc124ad41952a6d07a80b9335299882a7ae90ba8f0ef6cd5fe16c0b2d6a0",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-415-overlay-000",
+      "snapshot_candidate_id": "snap-517-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-430-overlay-000",
+    "candidate_id": "snap-538-overlay-000",
     "source_doc_title": "Cape Canaveral Space Force Station",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -262,12 +290,12 @@
       "snapshot_revision_id": 1357790373,
       "snapshot_raw_text_sha256": "2be05b72903ea47c0b5739fa3a3d4612a5d1c2d60362a4a5169eca8a7dd4ae87",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-430-overlay-000",
+      "snapshot_candidate_id": "snap-538-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-482-overlay-000",
+    "candidate_id": "snap-600-overlay-000",
     "source_doc_title": "Colonization of Mars",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -289,12 +317,12 @@
       "snapshot_revision_id": 1356047913,
       "snapshot_raw_text_sha256": "a8fa0d3531d2970d5b760b601bdf2aa49d145f8edf731bad62251956cf574e9b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-482-overlay-000",
+      "snapshot_candidate_id": "snap-600-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-484-overlay-000",
+    "candidate_id": "snap-603-overlay-000",
     "source_doc_title": "Commercial Crew Program",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -317,12 +345,12 @@
       "snapshot_revision_id": 1356327552,
       "snapshot_raw_text_sha256": "02e13e5725cb1a69dfc34dfb7fb66c9a84bed80774b7dd487333fd42e19320ca",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-484-overlay-000",
+      "snapshot_candidate_id": "snap-603-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-603-overlay-000",
+    "candidate_id": "snap-764-overlay-000",
     "source_doc_title": "Economy of the United States",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -344,12 +372,12 @@
       "snapshot_revision_id": 1359403394,
       "snapshot_raw_text_sha256": "9afcd0d8cde687772ce5cfe1c6aa38fb6b822ad5d1bf6d68a42c071b3610de44",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-603-overlay-000",
+      "snapshot_candidate_id": "snap-764-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-610-overlay-000",
+    "candidate_id": "snap-773-overlay-000",
     "source_doc_title": "Electric car",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -371,12 +399,12 @@
       "snapshot_revision_id": 1359706682,
       "snapshot_raw_text_sha256": "d9c1edb1ae57632259835813b7c0959da37632ffeb7e6446ea9227486647e260",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-610-overlay-000",
+      "snapshot_candidate_id": "snap-773-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-612-overlay-000",
+    "candidate_id": "snap-775-overlay-000",
     "source_doc_title": "Electric vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -398,12 +426,12 @@
       "snapshot_revision_id": 1359848574,
       "snapshot_raw_text_sha256": "5e29ce6cda1383f1889e9c8e4f9344ef025ad2bf8cff859e43a17783e3013bbb",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-612-overlay-000",
+      "snapshot_candidate_id": "snap-775-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-620-overlay-000",
+    "candidate_id": "snap-783-overlay-000",
     "source_doc_title": "Elon Musk",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -421,16 +449,16 @@
       "risk": "low",
       "snapshot_source_title": "Elon Musk",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Elon_Musk",
-      "snapshot_retrieved_at": "2026-06-23T05:40:52Z",
-      "snapshot_revision_id": 1360669181,
-      "snapshot_raw_text_sha256": "a00cd7c58198cc6a9c1a3d26074cb66a102db26400b96b72e73a5bd2965fd439",
+      "snapshot_retrieved_at": "2026-06-24T05:40:05Z",
+      "snapshot_revision_id": 1360851791,
+      "snapshot_raw_text_sha256": "f5f2e388e9d1c94e8a0225d88a3007826ea4638907fe8d34bd78b05273a68a25",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-620-overlay-000",
+      "snapshot_candidate_id": "snap-783-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-687-overlay-000",
+    "candidate_id": "snap-868-overlay-000",
     "source_doc_title": "Forbes",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -450,12 +478,12 @@
       "snapshot_revision_id": 1358924667,
       "snapshot_raw_text_sha256": "ccb3cdbf3d496afe7d3bf59bc7ff54bd930518101f0cba6e90f02bd92e9a3bf4",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-687-overlay-000",
+      "snapshot_candidate_id": "snap-868-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-903-overlay-000",
+    "candidate_id": "snap-1123-overlay-000",
     "source_doc_title": "International Space Station",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -477,12 +505,12 @@
       "snapshot_revision_id": 1358928240,
       "snapshot_raw_text_sha256": "2aa3e1a45174eee298c939c21c01e0e98634f7a71294ddb53df8d20f4f5de901",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-903-overlay-000",
+      "snapshot_candidate_id": "snap-1123-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-908-overlay-000",
+    "candidate_id": "snap-1130-overlay-000",
     "source_doc_title": "Internet service provider",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -505,12 +533,12 @@
       "snapshot_revision_id": 1357317919,
       "snapshot_raw_text_sha256": "b4d5712aaa6e7e493a7b60686d163280e44fe4504be90053655c92212df1c43c",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-908-overlay-000",
+      "snapshot_candidate_id": "snap-1130-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-938-overlay-000",
+    "candidate_id": "snap-1167-overlay-000",
     "source_doc_title": "Jeff Bezos",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -529,16 +557,16 @@
       "risk": "low",
       "snapshot_source_title": "Jeff Bezos",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
-      "snapshot_retrieved_at": "2026-06-23T05:40:48Z",
+      "snapshot_retrieved_at": "2026-06-24T05:40:00Z",
       "snapshot_revision_id": 1360298836,
       "snapshot_raw_text_sha256": "eba38880a59e871e3343700c03aae260c0915190beb1d7e1433ee6047afdf56c",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-938-overlay-000",
+      "snapshot_candidate_id": "snap-1167-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-995-overlay-000",
+    "candidate_id": "snap-1235-overlay-000",
     "source_doc_title": "Kennedy Space Center",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -561,12 +589,12 @@
       "snapshot_revision_id": 1355591236,
       "snapshot_raw_text_sha256": "7edd341e7ca7c98975fa20bf9f89983f0e3af6c922c850502c8c2669ac934568",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-995-overlay-000",
+      "snapshot_candidate_id": "snap-1235-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1006-overlay-000",
+    "candidate_id": "snap-1250-overlay-000",
     "source_doc_title": "LVMH",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -588,12 +616,12 @@
       "snapshot_revision_id": 1359170740,
       "snapshot_raw_text_sha256": "439822b29406d40d1015734cf01478cbb398eafacc7bc694539fd57b07875656",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1006-overlay-000",
+      "snapshot_candidate_id": "snap-1250-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1012-overlay-000",
+    "candidate_id": "snap-1256-overlay-000",
     "source_doc_title": "Larry Ellison",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -615,12 +643,12 @@
       "snapshot_revision_id": 1359946353,
       "snapshot_raw_text_sha256": "f37e3b7cae893b7601c7d83c02014b3660d5950ff6f17f375f9b1ec1dbecab11",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1012-overlay-000",
+      "snapshot_candidate_id": "snap-1256-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1117-overlay-000",
+    "candidate_id": "snap-1394-overlay-000",
     "source_doc_title": "Michael Bloomberg",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -639,16 +667,16 @@
       "risk": "low",
       "snapshot_source_title": "Michael Bloomberg",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/Michael_Bloomberg",
-      "snapshot_retrieved_at": "2026-06-23T05:40:50Z",
+      "snapshot_retrieved_at": "2026-06-24T05:40:02Z",
       "snapshot_revision_id": 1360084968,
       "snapshot_raw_text_sha256": "5d05bb067a7c06f593dae45bf10e0b0239e44c9ec82358e617c9f1535f5a007b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1117-overlay-000",
+      "snapshot_candidate_id": "snap-1394-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1166-overlay-000",
+    "candidate_id": "snap-1457-overlay-000",
     "source_doc_title": "Nasdaq",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -668,12 +696,12 @@
       "snapshot_revision_id": 1360517984,
       "snapshot_raw_text_sha256": "625e6517fd6cd2a8ce338a6a0bf4ba43362e99e7d26c0a5332864a553e6694f8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1166-overlay-000",
+      "snapshot_candidate_id": "snap-1457-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1227-overlay-000",
+    "candidate_id": "snap-1541-overlay-000",
     "source_doc_title": "New York Stock Exchange",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -695,12 +723,12 @@
       "snapshot_revision_id": 1359615588,
       "snapshot_raw_text_sha256": "a058737616744cb4e5d66613b398920471fd28206fd0cf3e69ad8419cc3eba02",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1227-overlay-000",
+      "snapshot_candidate_id": "snap-1541-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1269-overlay-000",
+    "candidate_id": "snap-1587-overlay-000",
     "source_doc_title": "OpenAI",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -720,12 +748,12 @@
       "snapshot_revision_id": 1359792342,
       "snapshot_raw_text_sha256": "2ab1ff764b9f27ea6e2ecdfc6db8dbf4f8ef253e04c24010c9ce40fdcadd83f3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1269-overlay-000",
+      "snapshot_candidate_id": "snap-1587-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1310-overlay-000",
+    "candidate_id": "snap-1641-overlay-000",
     "source_doc_title": "PayPal",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -745,12 +773,12 @@
       "snapshot_revision_id": 1359647615,
       "snapshot_raw_text_sha256": "c48f2f4c52df79f78e9031e99eb501883790ee0fb1066c8453d7ea388ef52282",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1310-overlay-000",
+      "snapshot_candidate_id": "snap-1641-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1335-overlay-000",
+    "candidate_id": "snap-1677-overlay-000",
     "source_doc_title": "Powerwall",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -772,12 +800,12 @@
       "snapshot_revision_id": 1245482146,
       "snapshot_raw_text_sha256": "38d0d16759f2b7aa053314b3a5dfcfe89399dabade26ed7860d55d986b474a39",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1335-overlay-000",
+      "snapshot_candidate_id": "snap-1677-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1346-overlay-000",
+    "candidate_id": "snap-1689-overlay-000",
     "source_doc_title": "Privately held company",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -799,12 +827,12 @@
       "snapshot_revision_id": 1356840178,
       "snapshot_raw_text_sha256": "7d5256be38b6fff02cd4a85146b33bb5cdd635ecc19be11882f012c6f53a4b47",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1346-overlay-000",
+      "snapshot_candidate_id": "snap-1689-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1396-overlay-000",
+    "candidate_id": "snap-1763-overlay-000",
     "source_doc_title": "Reusable launch vehicle",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -826,12 +854,12 @@
       "snapshot_revision_id": 1360129922,
       "snapshot_raw_text_sha256": "ee3f5c867ada0f12b84217a81563d1d13e281b475ad493c7ff5fdf95c89ffdf3",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1396-overlay-000",
+      "snapshot_candidate_id": "snap-1763-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1415-overlay-000",
+    "candidate_id": "snap-1794-overlay-000",
     "source_doc_title": "Rocket",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -851,12 +879,12 @@
       "snapshot_revision_id": 1358166262,
       "snapshot_raw_text_sha256": "7d5a835dc7c8ab8e3118bde4072b1d838110f8b1fa21467c1bcff508035293c8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1415-overlay-000",
+      "snapshot_candidate_id": "snap-1794-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1471-overlay-000",
+    "candidate_id": "snap-1856-overlay-000",
     "source_doc_title": "Satellite Internet access",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -879,12 +907,12 @@
       "snapshot_revision_id": 1359385224,
       "snapshot_raw_text_sha256": "04cece53163c747a431cbf022935318daaab3215f62bcb11be9010ff27aa83fc",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1471-overlay-000",
+      "snapshot_candidate_id": "snap-1856-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1523-overlay-000",
+    "candidate_id": "snap-1917-overlay-000",
     "source_doc_title": "SolarCity",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -906,12 +934,12 @@
       "snapshot_revision_id": 1356428735,
       "snapshot_raw_text_sha256": "b9041ffd928acf6b4c66c73e78b08de2bf3bd861d6010857fcb890c11159257e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1523-overlay-000",
+      "snapshot_candidate_id": "snap-1917-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1540-overlay-000",
+    "candidate_id": "snap-1937-overlay-000",
     "source_doc_title": "Space.com",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -933,12 +961,12 @@
       "snapshot_revision_id": 1287826411,
       "snapshot_raw_text_sha256": "08466a840f0bc1a0630ce79e225963f54c1f9202cf455750420b498b48af901c",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1540-overlay-000",
+      "snapshot_candidate_id": "snap-1937-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1544-overlay-000",
+    "candidate_id": "snap-1941-overlay-000",
     "source_doc_title": "SpaceX",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -958,12 +986,12 @@
       "snapshot_revision_id": 1359822755,
       "snapshot_raw_text_sha256": "a2f6b45b5d10bd4a5a97f32a2e4f5938a86e2910574a93f8f247c381af260779",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1544-overlay-000",
+      "snapshot_candidate_id": "snap-1941-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1550-overlay-000",
+    "candidate_id": "snap-1947-overlay-000",
     "source_doc_title": "SpaceX Dragon 2",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -985,12 +1013,12 @@
       "snapshot_revision_id": 1360178281,
       "snapshot_raw_text_sha256": "968e624f5e430d32d966f45e9e9e3b36f170a8ed084fe8e0f33cf7edf41528d8",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1550-overlay-000",
+      "snapshot_candidate_id": "snap-1947-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1552-overlay-000",
+    "candidate_id": "snap-1949-overlay-000",
     "source_doc_title": "SpaceX Raptor",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1013,12 +1041,12 @@
       "snapshot_revision_id": 1358679944,
       "snapshot_raw_text_sha256": "05ee62403cacbbdc32f1bb14963636192a359bc6b79d241261cbebdd8d16f27b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1552-overlay-000",
+      "snapshot_candidate_id": "snap-1949-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1572-overlay-000",
+    "candidate_id": "snap-1974-overlay-000",
     "source_doc_title": "Starlink",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1038,12 +1066,12 @@
       "snapshot_revision_id": 1359590107,
       "snapshot_raw_text_sha256": "0cd6f6c38602011e7fdbc2c3e213ccbcdb127bc186050c72414cc75ac95d3e42",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1572-overlay-000",
+      "snapshot_candidate_id": "snap-1974-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1573-overlay-000",
+    "candidate_id": "snap-1976-overlay-000",
     "source_doc_title": "Starship",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1063,12 +1091,12 @@
       "snapshot_revision_id": 1338917001,
       "snapshot_raw_text_sha256": "544d6152df38943d2ddb8d1af1ef9a88ae4121c7ea438b3b851086d8946e2d44",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1573-overlay-000",
+      "snapshot_candidate_id": "snap-1976-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1604-overlay-000",
+    "candidate_id": "snap-2012-overlay-000",
     "source_doc_title": "Sustainable energy",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1090,12 +1118,12 @@
       "snapshot_revision_id": 1357725919,
       "snapshot_raw_text_sha256": "83989647c115fa76be17a112181fc16b5ba44c3f32a6c2368d436dfa7b9a7371",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1604-overlay-000",
+      "snapshot_candidate_id": "snap-2012-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1618-overlay-000",
+    "candidate_id": "snap-2031-overlay-000",
     "source_doc_title": "Tesla, Inc.",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1117,12 +1145,12 @@
       "snapshot_revision_id": 1359041831,
       "snapshot_raw_text_sha256": "8d0f5aa9802bceaa770bfe3f40db7f275ac0989cf20b04e7b46ab66e659a4f3e",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1618-overlay-000",
+      "snapshot_candidate_id": "snap-2031-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1620-overlay-000",
+    "candidate_id": "snap-2033-overlay-000",
     "source_doc_title": "Tesla Cybertruck",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1144,12 +1172,12 @@
       "snapshot_revision_id": 1358427430,
       "snapshot_raw_text_sha256": "81aae32b086ebcd54f5c70b1d7b9fc0379bf664cc5c890b194592a925b20cc90",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1620-overlay-000",
+      "snapshot_candidate_id": "snap-2033-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1621-overlay-000",
+    "candidate_id": "snap-2034-overlay-000",
     "source_doc_title": "Tesla Energy",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1171,12 +1199,12 @@
       "snapshot_revision_id": 1354226973,
       "snapshot_raw_text_sha256": "56fe78444492af8d17d6e35e478a4572380c86dcfa4adbcb78aef24867bc921f",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1621-overlay-000",
+      "snapshot_candidate_id": "snap-2034-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1622-overlay-000",
+    "candidate_id": "snap-2035-overlay-000",
     "source_doc_title": "Tesla Model S",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1199,12 +1227,12 @@
       "snapshot_revision_id": 1358978070,
       "snapshot_raw_text_sha256": "97a3dffadd10c994388b5ce69356e8595bdd91c1423e1f9ebf8306128e73e233",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1622-overlay-000",
+      "snapshot_candidate_id": "snap-2035-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1632-overlay-000",
+    "candidate_id": "snap-2047-overlay-000",
     "source_doc_title": "The Boring Company",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1226,12 +1254,12 @@
       "snapshot_revision_id": 1359791821,
       "snapshot_raw_text_sha256": "2a982c86dfd80cce0644b4065e6c34161fdffbfa5ee582402f7653e495198eb2",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1632-overlay-000",
+      "snapshot_candidate_id": "snap-2047-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1822-overlay-000",
+    "candidate_id": "snap-2264-overlay-000",
     "source_doc_title": "Vandenberg Space Force Base",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1253,12 +1281,12 @@
       "snapshot_revision_id": 1357782503,
       "snapshot_raw_text_sha256": "ab68b62709f65cfd9ff61793df0fd05f44617591f472fdba62f894cfe47b767b",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1822-overlay-000",
+      "snapshot_candidate_id": "snap-2264-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1898-overlay-000",
+    "candidate_id": "snap-2356-overlay-000",
     "source_doc_title": "X (social network)",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1276,16 +1304,16 @@
       "risk": "low",
       "snapshot_source_title": "X (social network)",
       "snapshot_source_url": "https://en.wikipedia.org/wiki/X_(social_network)",
-      "snapshot_retrieved_at": "2026-06-17T17:19:03Z",
-      "snapshot_revision_id": 1359763726,
-      "snapshot_raw_text_sha256": "098995c8df33c594c09671062bf04e6aed7841dfffffca6a2f53262cccf2b8f7",
+      "snapshot_retrieved_at": "2026-06-24T00:21:10Z",
+      "snapshot_revision_id": 1360354657,
+      "snapshot_raw_text_sha256": "13a410082cbd9e2e7a6b4b4165bba8c0552ade3b06ba6a9e04ea088fe9149a4a",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1898-overlay-000",
+      "snapshot_candidate_id": "snap-2356-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1899-overlay-000",
+    "candidate_id": "snap-2357-overlay-000",
     "source_doc_title": "X Corp.",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1307,12 +1335,12 @@
       "snapshot_revision_id": 1359349560,
       "snapshot_raw_text_sha256": "1c50c8f702b5bb729d87553e3c2cf694194449fa34c83932e527053f03b59472",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1899-overlay-000",
+      "snapshot_candidate_id": "snap-2357-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "snap-1909-overlay-000",
+    "candidate_id": "snap-2367-overlay-000",
     "source_doc_title": "Zip2",
     "source_kind": "fresh_snapshot",
     "reason": "entity_type_mismatch",
@@ -1334,12 +1362,12 @@
       "snapshot_revision_id": 1360090220,
       "snapshot_raw_text_sha256": "70cf7360b286b07359c1a353567adde249c80b05c31058c3f312f3975582a102",
       "safe_for_general_runtime": false,
-      "snapshot_candidate_id": "snap-1909-overlay-000",
+      "snapshot_candidate_id": "snap-2367-overlay-000",
       "pump_source_kind": "fresh_snapshot"
     }
   },
   {
-    "candidate_id": "fresh_snapshot-14752",
+    "candidate_id": "fresh_snapshot-18437",
     "source_doc_title": "Bloomberg View",
     "source_kind": "fresh_snapshot",
     "reason": "conflicts_existing_fact",
@@ -1362,7 +1390,7 @@
     }
   },
   {
-    "candidate_id": "fresh_snapshot-15415",
+    "candidate_id": "fresh_snapshot-20438",
     "source_doc_title": "Space.com",
     "source_kind": "fresh_snapshot",
     "reason": "conflicts_existing_fact",

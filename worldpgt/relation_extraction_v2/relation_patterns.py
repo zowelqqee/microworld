@@ -290,6 +290,36 @@ PATTERNS: list[PatternSpec] = [
         "part_of", "A_subj_B_obj", "medium", "semi_stable", "medium",
         "X is a part of Y",
     ),
+    PatternSpec(
+        "uses_active",
+        _p(r"\b(?P<A>" + _E + r")\s+uses?\s+(?P<B>" + _E + r")\b"),
+        "uses", "A_subj_B_obj", "medium", "semi_stable", "medium",
+        "X uses Y",
+    ),
+    PatternSpec(
+        "provides_active",
+        _p(r"\b(?P<A>" + _E + r")\s+provides?\s+(?P<B>" + _E + r")\b"),
+        "provides", "A_subj_B_obj", "medium", "semi_stable", "medium",
+        "X provides Y",
+    ),
+    PatternSpec(
+        "enables_active",
+        _p(r"\b(?P<A>" + _E + r")\s+enables?\s+(?P<B>" + _E + r")\b"),
+        "enables", "A_subj_B_obj", "medium", "semi_stable", "medium",
+        "X enables Y",
+    ),
+    PatternSpec(
+        "used_for_passive",
+        _p(r"\b(?P<A>" + _E + r")\s+(?:is|are|was|were)\s+used\s+for\s+(?P<B>" + _E + r")\b"),
+        "used_for", "A_subj_B_obj", "medium", "semi_stable", "medium",
+        "X is used for Y",
+    ),
+    PatternSpec(
+        "works_by_mechanism",
+        _p(r"\b(?P<A>" + _E + r")\s+works?\s+(?:by|through)\s+(?P<B>" + _E + r")\b"),
+        "works_by", "A_subj_B_obj", "medium", "semi_stable", "medium",
+        "X works by/through Y",
+    ),
 
     # ------------------------------------------------------------------- #
     # IS_A / TYPE_OF — only from strong definition sentence

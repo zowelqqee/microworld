@@ -39,6 +39,14 @@ def _norm(s: str) -> str:
     return " ".join((s or "").strip().lower().split()).removeprefix("the ")
 
 
+def _surface_norm(s: str) -> str:
+    s = (s or "").lower().strip()
+    s = re.sub(r"[''`]", "", s)
+    s = re.sub(r"\s+", " ", s)
+    s = re.sub(r"^(?:the|a|an)\s+", "", s)
+    return s
+
+
 def _tokens(s: str) -> set[str]:
     raw = re.findall(r"[a-z0-9]+", (s or "").lower())
     return {t for t in raw if t not in _OVERLAP_STOPWORDS and len(t) > 1}
@@ -66,6 +74,39 @@ def _dedup(items: list[str]) -> list[str]:
     return out
 
 
+def _provider_items(provider: WikiMemoryOverlayProvider, *method_names: str) -> list[dict]:
+    for method_name in method_names:
+        method = getattr(provider, method_name, None)
+        if method is None:
+            continue
+        return list(method())
+    return []
+
+
+def _all_entities(provider: WikiMemoryOverlayProvider) -> list[dict]:
+    return _provider_items(provider, "all_entities", "entities")
+
+
+def _all_definitions(provider: WikiMemoryOverlayProvider) -> list[dict]:
+    return _provider_items(provider, "all_definitions", "definitions")
+
+
+def _all_relations(provider: WikiMemoryOverlayProvider) -> list[dict]:
+    return _provider_items(provider, "all_relations", "relations")
+
+
+def _all_source_facts(provider: WikiMemoryOverlayProvider) -> list[dict]:
+    return _provider_items(provider, "all_source_facts", "source_facts")
+
+
+def _entity_surfaces(entity: dict) -> list[str]:
+    return [
+        str(entity.get("label") or ""),
+        *(str(alias) for alias in (entity.get("aliases") or [])),
+        str(entity.get("source_page") or ""),
+    ]
+
+
 def _resolve_entity(
     provider: WikiMemoryOverlayProvider,
     subject_raw: str,
@@ -74,16 +115,72 @@ def _resolve_entity(
     """Return (entity_dict, match_kind). match_kind in {exact, none}."""
     if not subject_raw:
         return None, "none"
-    entity = provider.get_entity(subject_raw)
-    if entity:
-        return entity, "exact"
+
+    entities = _all_entities(provider)
+    subject_norm = _surface_norm(subject_raw)
+    for entity in entities:
+        if entity.get("label") == subject_raw:
+            return entity, "exact"
+    for entity in entities:
+        if subject_raw in (entity.get("aliases") or []):
+            return entity, "exact"
+    for entity in entities:
+        if _surface_norm(entity.get("label", "")) == subject_norm:
+            return entity, "exact"
+    for entity in entities:
+        if any(_surface_norm(alias) == subject_norm for alias in (entity.get("aliases") or [])):
+            return entity, "exact"
+    for entity in entities:
+        if _surface_norm(entity.get("source_page", "")) == subject_norm:
+            return entity, "exact"
+
     if surface_index is not None:
         canonical = surface_index.resolve(subject_raw)
         if canonical:
-            entity = provider.get_entity(canonical)
-            if entity:
-                return entity, "exact"
+            canonical_norm = _surface_norm(canonical)
+            for entity in entities:
+                if any(_surface_norm(surface) == canonical_norm for surface in _entity_surfaces(entity)):
+                    return entity, "exact"
     return None, "none"
+
+
+def _definition_for_subject(
+    provider: WikiMemoryOverlayProvider,
+    subject: str,
+    entity: dict | None = None,
+) -> dict | None:
+    subject_norms = {_surface_norm(subject)}
+    if entity is not None:
+        subject_norms.update(
+            _surface_norm(surface) for surface in _entity_surfaces(entity)
+        )
+    subject_norms = {norm for norm in subject_norms if norm}
+    for definition in _all_definitions(provider):
+        if _surface_norm(definition.get("subject", "")) in subject_norms:
+            return definition
+    return None
+
+
+def _relations_for_subject(
+    provider: WikiMemoryOverlayProvider,
+    subject: str,
+) -> list[dict]:
+    subject_norm = _surface_norm(subject)
+    return [
+        rel for rel in _all_relations(provider)
+        if _surface_norm(rel.get("subject", "")) == subject_norm
+    ]
+
+
+def _source_facts_for_subject(
+    provider: WikiMemoryOverlayProvider,
+    subject: str,
+) -> list[dict]:
+    subject_norm = _surface_norm(subject)
+    return [
+        fact for fact in _all_source_facts(provider)
+        if _surface_norm(fact.get("subject", "")) == subject_norm
+    ]
 
 
 def _keyword_candidates(
@@ -100,7 +197,7 @@ def _keyword_candidates(
     if not want:
         return None, []
     scored: list[tuple[int, dict]] = []
-    for entity in provider.all_entities():
+    for entity in _all_entities(provider):
         label = str(entity.get("label") or "")
         have = _tokens(label)
         overlap = len(want & have)
@@ -142,7 +239,7 @@ def synthesize(
         )
 
     label = str(entity.get("label") or subject_raw)
-    definition_item = provider.get_definition(label)
+    definition_item = _definition_for_subject(provider, label, entity)
     definition = (
         str(definition_item["definition"])
         if definition_item and definition_item.get("definition")
@@ -154,7 +251,7 @@ def synthesize(
 
     # ── Forward relations: subject does/relates-to object ────────────────────
     forward: dict[str, list[str]] = {}
-    for rel in provider.get_relations(label):
+    for rel in _relations_for_subject(provider, label):
         if not _is_answerable_relation(rel):
             continue
         pred = str(rel.get("predicate") or "")
@@ -174,7 +271,7 @@ def synthesize(
     # ── Inverse relations: other entity does/relates-to subject ──────────────
     label_norm = _norm(label)
     inverse: dict[str, list[str]] = {}
-    for rel in provider.all_relations():
+    for rel in _all_relations(provider):
         if _norm(rel.get("object", "")) != label_norm:
             continue
         if not _is_answerable_relation(rel):
@@ -195,7 +292,7 @@ def synthesize(
         )
 
     # ── Snapshot facts: dated, source-qualified estimates ────────────────────
-    for fact in provider.get_source_facts(subject=label):
+    for fact in _source_facts_for_subject(provider, label):
         obj = str(fact.get("object") or "")
         pred = str(fact.get("predicate") or "")
         if not obj or not pred:

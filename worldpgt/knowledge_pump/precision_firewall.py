@@ -50,7 +50,7 @@ _CLAUSE_VERB = frozenset({
     "makes", "make", "made", "intended", "includes", "include", "included",
     "provides", "provide", "develops", "develop", "developed",
     "produces", "produce", "produced", "said", "says", "announced",
-    "acquired", "acquires", "brought", "consists",
+    "acquired", "acquires", "brought", "consists", "enables", "enable",
 })
 
 # Adverb/discourse markers that signal a fragment when present anywhere.
@@ -412,6 +412,11 @@ _RELATION_HANDLERS = {
     "introduced": _check_event_or_date_relation,
     "has_facility": _check_concept_relation,
     "is_a": _check_is_a,
+    "uses": _check_concept_relation,
+    "provides": _check_concept_relation,
+    "enables": _check_concept_relation,
+    "used_for": _check_concept_relation,
+    "works_by": _check_concept_relation,
 }
 
 

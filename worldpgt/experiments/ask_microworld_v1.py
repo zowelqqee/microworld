@@ -49,6 +49,7 @@ from worldpgt.dialogue.coreference_resolver import (
     CoreferenceResolution,
     resolve_coreferences,
 )
+from worldpgt.dialogue.followup_rewriter import rewrite_followup
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.entity_qa.types import SemanticQuery
 from worldpgt.multihop_qa.assistant_adapter import (
@@ -91,11 +92,14 @@ def ask(
     return orchestrator.answer(question)
 
 
-def _surface_index_for_dialogue(overlay_path: str | None = None) -> EntitySurfaceIndex:
-    promoted_path = Path(overlay_path) if overlay_path is not None else _PROMOTED_OVERLAY_PATH
+def _surface_index_for_dialogue(
+    overlay_mode: str = "promoted",
+    overlay_path: str | None = None,
+) -> EntitySurfaceIndex:
+    active_path = Path(overlay_path or resolve_overlay(overlay_mode)[0])
     return EntitySurfaceIndex(
         accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
-        promoted_overlay_path=promoted_path,
+        promoted_overlay_path=active_path,
         snapshot_overlay_path=_SNAPSHOT_OVERLAY_PATH,
     )
 
@@ -217,7 +221,7 @@ def _run_interactive(
         ontology_layer_path=ontology_layer_path,
     )
     effective_overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
-    index = _surface_index_for_dialogue(overlay_path)
+    index = _surface_index_for_dialogue(overlay_mode, overlay_path)
     context = ConversationContext()
 
     while True:
@@ -232,7 +236,8 @@ def _run_interactive(
             break
 
         resolution = resolve_coreferences(question, context, index)
-        effective_question = resolution.resolved_question
+        followup = rewrite_followup(resolution.resolved_question, context, index)
+        effective_question = followup.resolved_question
         semantic_query = parse_semantic_query(effective_question, index)
         if (
             resolution.unresolved_reference is not None
@@ -245,7 +250,10 @@ def _run_interactive(
                 resolution.unresolved_reference,
             )
         else:
-            answer = orchestrator.answer(effective_question)
+            answer = orchestrator.answer(
+                effective_question,
+                answer_style=followup.answer_style,
+            )
 
         if json_mode:
             payload = answer.to_dict()
@@ -260,6 +268,11 @@ def _run_interactive(
                     for item in resolution.replacements
                 ],
                 "unresolved_reference": resolution.unresolved_reference,
+                "followup_rewrite": {
+                    "resolved_question": followup.resolved_question,
+                    "answer_style": followup.answer_style,
+                    "reason": followup.reason,
+                },
                 "semantic_query": semantic_query.to_dict(),
             }
             print(json.dumps(payload, indent=2, ensure_ascii=False))

@@ -25,6 +25,7 @@ import json
 from pathlib import Path
 
 from worldpgt.assistant_surface.context_selector import ContextSelector, resolve_overlay
+from worldpgt.assistant_surface.answer_style import resolve_answer_style
 from worldpgt.assistant_surface.question_router import route as route_question
 from worldpgt.assistant_surface.assistant_trace import (
     attach_context,
@@ -110,7 +111,12 @@ class AnswerOrchestrator:
     _QE_ONLY_HINTS: frozenset[str] = frozenset({"count", "size_compare", "filtered_lookup"})
 
     # ------------------------------------------------------------------ #
-    def answer(self, question: str) -> AssistantAnswer:
+    def answer(self, question: str, *, answer_style: str = "normal") -> AssistantAnswer:
+        style_resolution = resolve_answer_style(question)
+        if style_resolution.answer_style != "normal":
+            answer_style = style_resolution.answer_style
+            question = style_resolution.question
+
         route = route_question(question)
         trace = new_trace(route)
         _pack, ctx = self._selector.select(question)
@@ -138,7 +144,12 @@ class AnswerOrchestrator:
 
         # 3d. Entity definition.
         if route.intent == "entity_definition":
-            return self._entity_definition_answer(route, ctx, trace)
+            return self._entity_definition_answer(
+                route,
+                ctx,
+                trace,
+                answer_style=answer_style,
+            )
 
         # 5. Unknown -> audit, missing knowledge.
         return self._unknown_audit(route, ctx, trace)
@@ -384,10 +395,19 @@ class AnswerOrchestrator:
             return "semi_stable_relation"
         return "stable_relation"
 
-    def _entity_definition_answer(self, route, ctx, trace) -> AssistantAnswer:
+    def _entity_definition_answer(
+        self,
+        route,
+        ctx,
+        trace,
+        *,
+        answer_style: str = "normal",
+    ) -> AssistantAnswer:
         analyzed = analyze_entity(route.question)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
+        if plan.render_template == "open_synthesis":
+            plan.render_args["answer_style"] = answer_style
 
         plan_relations = plan.render_args.get("relations", []) if plan.render_args else []
         has_is_a_relation = any(r.get("predicate") == "is_a" for r in plan_relations)

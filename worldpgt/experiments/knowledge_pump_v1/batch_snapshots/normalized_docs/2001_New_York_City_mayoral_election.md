@@ -1,7 +1,7 @@
 # 2001 New York City mayoral election
 
 Source: https://en.wikipedia.org/wiki/2001_New_York_City_mayoral_election
-Retrieved at: 2026-06-22T21:34:03Z
+Retrieved at: 2026-06-24T02:29:04Z
 Revision ID: 1360606745
 Raw text SHA256: 773a207624d153210d6320f15ea4448ba89c48660e9c17d55bebf272130845f7
 Status: LOCAL_WIKIPEDIA_SNAPSHOT
