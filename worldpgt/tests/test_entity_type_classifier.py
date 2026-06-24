@@ -2,7 +2,7 @@
 
 Covers:
   - classify_entity_type() keyword rules for canonical types
-  - Priority ordering (person > organization > publication > product > vehicle > program > place > concept > technology > other)
+  - Priority ordering (person > organization > publication > service > product > vehicle > program > place > concept > technology > other)
   - infer_entity_type() from overlay_entity, overlay_definition, overlay_relation items
   - Demo cases from the spec: Elon Musk, SpaceX, Falcon 9, Project Mercury,
     Tesla Semi, Robert Zubrin
@@ -95,13 +95,19 @@ class TestClassifyEntityType:
 
     def test_system(self):
         # "satellite" would match vehicle; use a definition without vehicle keywords
-        assert classify_entity_type("a distributed computing system and platform") == "technology"
+        assert classify_entity_type("a distributed computing system and framework") == "technology"
 
     def test_publication(self):
         assert classify_entity_type("an American business magazine") == "publication"
 
     def test_product(self):
         assert classify_entity_type("a consumer product made by Tesla") == "product"
+
+    def test_service(self):
+        assert classify_entity_type("a satellite internet constellation operated by SpaceX") == "service"
+
+    def test_platform_service(self):
+        assert classify_entity_type("a subscription platform with broadband access") == "service"
 
     def test_cryptocurrency(self):
         assert classify_entity_type("a decentralized cryptocurrency") == "concept"

@@ -56,9 +56,16 @@ def _norm(s: str) -> str:
     return " ".join((s or "").strip().lower().split())
 
 
+def _token_variants(token: str) -> tuple[str, ...]:
+    normalized = _norm(token)
+    if normalized.startswith("the "):
+        return (normalized, normalized[4:])
+    return (normalized,)
+
+
 def _token_in(token: str, text: str) -> bool:
-    nt = _norm(token)
-    return bool(nt) and nt in _norm(text)
+    normalized_text = _norm(text)
+    return any(bool(variant) and variant in normalized_text for variant in _token_variants(token))
 
 
 def _tokens_present(tokens: list[str], text: str) -> bool:

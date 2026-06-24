@@ -1,0 +1,99 @@
+[
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "capability_inheritance_v1",
+    "name": "Capability Inheritance",
+    "description": "If A is owned by B and B has a capability (develops/produces/...) C, then A has that capability C.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "owned_by", "object": "?B"},
+      {"subject": "?B", "predicate": "?P", "object": "?C", "predicate_class": "capability"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "?P", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {
+      "?A": ["organization", "service"],
+      "?B": ["organization"]
+    },
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "ownership_transitivity_v1",
+    "name": "Ownership Transitivity",
+    "description": "If A is owned by B and B is owned by C, then A is owned by C.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "owned_by", "object": "?B"},
+      {"subject": "?B", "predicate": "owned_by", "object": "?C"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "owned_by", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {},
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "founder_shared_v1",
+    "name": "Shared Founder",
+    "description": "If A was founded by X and B was founded by X, then A and B share founder X.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "founded_by", "object": "?X"},
+      {"subject": "?B", "predicate": "founded_by", "object": "?X"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "share_founder", "object": "?B"},
+    "confidence_rule": "min_stability",
+    "type_guards": {
+      "?X": ["person"]
+    },
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "leader_shared_v1",
+    "name": "Shared Leader",
+    "description": "If A is led by X and B is led by X, then A and B share leader X. (Migrated from the hardcoded leader_of inheritance.)",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "led_by", "object": "?X"},
+      {"subject": "?B", "predicate": "led_by", "object": "?X"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "share_leader", "object": "?B"},
+    "confidence_rule": "min_stability",
+    "type_guards": {
+      "?X": ["person"]
+    },
+    "stability": "semi_stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "classification_chain_v1",
+    "name": "Classification Chain",
+    "description": "If A is_a B and B is_a C, then A is_a C. Fires only where is_a objects resolve to entities that are themselves classified; the current promoted overlay stores is_a objects as definition strings, so this rule is inert on it.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "is_a", "object": "?B"},
+      {"subject": "?B", "predicate": "is_a", "object": "?C"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "is_a", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {},
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "activity_inheritance_v1",
+    "name": "Activity Inheritance",
+    "description": "If A is_a B and B has an activity (uses/provides/...) C, then A inherits that activity. Like classification_chain, this needs entity-linked is_a objects to fire.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "is_a", "object": "?B"},
+      {"subject": "?B", "predicate": "?P", "object": "?C", "predicate_class": "activity"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "?P", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {},
+    "stability": "stable",
+    "enabled": true
+  }
+]

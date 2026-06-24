@@ -9,6 +9,7 @@ CanonicalEntityType: TypeAlias = Literal[
     "organization",
     "publication",
     "product",
+    "service",
     "vehicle",
     "program",
     "place",

@@ -8,7 +8,8 @@ Types
 person        — individual human being
 organization  — company, corporation, agency, institution
 publication   — magazine, newspaper, publisher, journal
-product       — product, service, platform, device, model
+product       — product, device, model
+service       — internet service, constellation, network, platform, subscription, access
 vehicle       — rocket, spacecraft, launch vehicle, car, truck, probe
 program       — spaceflight program, project, mission, initiative
 place         — city, country, region, island, location
@@ -66,10 +67,17 @@ _RULES: list[tuple[CanonicalEntityType, frozenset[str]]] = [
         }),
     ),
     (
+        "service",
+        frozenset({
+            "internet service", "constellation", "network", "platform",
+            "subscription", "access",
+        }),
+    ),
+    (
         "product",
         frozenset({
-            "product", "service", "offering", "device", "appliance",
-            "model", "software platform", "application", "app",
+            "product", "offering", "device", "appliance",
+            "model", "application", "app",
         }),
     ),
     (
@@ -116,7 +124,6 @@ _RULES: list[tuple[CanonicalEntityType, frozenset[str]]] = [
             "event", "period", "era",
             "phenomenon", "process",
             "currency", "cryptocurrency",
-            "constellation", "network",
         }),
     ),
     (

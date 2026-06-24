@@ -92,24 +92,9 @@ def build_speech_plan(
 
 
 def render_speech_plan(plan: SpeechPlan) -> str:
-    sentences: list[str] = []
-    if plan.intro:
-        sentences.append(plan.intro)
+    from worldpgt.entity_qa.symbolic_text_generator import generate_text
 
-    known = _known_sentence(plan)
-    if known:
-        sentences.append(known)
-
-    if plan.answer_style != "brief":
-        sentences.extend(plan.snapshots)
-
-    if plan.gaps and plan.answer_style != "brief":
-        sentences.append(
-            "I don't have verified information about "
-            f"{_join_list(plan.gaps)} yet."
-        )
-
-    return " ".join(sentences).strip()
+    return generate_text(plan)
 
 
 def _add_verified_group(plan: SpeechPlan, group) -> None:

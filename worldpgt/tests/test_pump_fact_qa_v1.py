@@ -233,6 +233,26 @@ def test_positive_validator_accepts_supported_answer():
     assert classification == "ok"
 
 
+def test_positive_validator_accepts_dropped_leading_the_in_title():
+    prompt = QAPrompt("pos-article", "Who founded The Noyce School?",
+                      CATEGORY_POSITIVE, "answer",
+                      predicate="founded",
+                      subject="California Polytechnic State University",
+                      obj="The Noyce School",
+                      expected_tokens=[
+                          "California Polytechnic State University",
+                          "The Noyce School",
+                      ])
+    answer = _answer(
+        answer_text=(
+            "Noyce School was founded by California Polytechnic State University."
+        )
+    )
+    valid, classification = validate_positive(prompt, answer)
+    assert valid is True
+    assert classification == "ok"
+
+
 # --------------------------------------------------------------------------- #
 # 8. Positive validator flags unsupported answer
 # --------------------------------------------------------------------------- #

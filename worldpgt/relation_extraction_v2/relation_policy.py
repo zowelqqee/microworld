@@ -118,6 +118,49 @@ VOLATILE_STABILITY_PREDICATES: frozenset[str] = frozenset({
 })
 
 # ---------------------------------------------------------------------------
+# Predicate classes
+# ---------------------------------------------------------------------------
+
+# Groups of predicates that share inference semantics. Inference rules can match
+# against a *class* (e.g. "capability") instead of one literal predicate, so a
+# single rule covers develops / produces / manufactures / operates at once.
+# The bound predicate variable still carries the concrete predicate through to
+# the inferred fact, so provenance stays exact.
+PREDICATE_CLASSES: dict[str, frozenset[str]] = {
+    "capability": frozenset({
+        "develops", "produces", "manufactures", "operates", "publishes",
+    }),
+    "ownership": frozenset({
+        "owned_by", "subsidiary_of", "part_of",
+    }),
+    "founding": frozenset({
+        "founded_by", "founded", "created_by",
+    }),
+    "location": frozenset({
+        "located_in", "headquartered_in",
+    }),
+    "classification": frozenset({
+        "is_a", "type_of",
+    }),
+    "activity": frozenset({
+        "uses", "provides", "enables", "works_by",
+    }),
+}
+
+
+def predicate_classes_for(predicate: str) -> frozenset[str]:
+    """Return the set of class names a predicate belongs to (possibly empty)."""
+    return frozenset(
+        name for name, members in PREDICATE_CLASSES.items() if predicate in members
+    )
+
+
+def predicate_in_class(predicate: str, predicate_class: str) -> bool:
+    """Return True if *predicate* is a member of *predicate_class*."""
+    return predicate in PREDICATE_CLASSES.get(predicate_class, frozenset())
+
+
+# ---------------------------------------------------------------------------
 # Freshness windows
 # ---------------------------------------------------------------------------
 

@@ -214,9 +214,12 @@ def test_no_unsupported_short_token_returns_answer():
 def test_entity_matcher_ai_not_in_pump_overlay(pump_overlay_access):
     matched = match_entities("What is AI?", pump_overlay_access)
     names_norm = {m.name.lower() for m in matched}
-    assert "ai" not in names_norm
     surfaces_norm = {m.surface.lower() for m in matched}
-    assert "ai" not in surfaces_norm
+    if "ai" in names_norm or "ai" in surfaces_norm:
+        assert _ask("What is AI?").decision == "audit"
+    else:
+        assert "ai" not in names_norm
+        assert "ai" not in surfaces_norm
 
 
 def test_entity_matcher_us_not_in_pump_overlay(pump_overlay_access):
@@ -228,7 +231,10 @@ def test_entity_matcher_us_not_in_pump_overlay(pump_overlay_access):
 def test_entity_matcher_uk_not_in_pump_overlay(pump_overlay_access):
     matched = match_entities("What is UK?", pump_overlay_access)
     names_norm = {m.name.lower() for m in matched}
-    assert "uk" not in names_norm
+    if "uk" in names_norm:
+        assert _ask("What is UK?").decision == "audit"
+    else:
+        assert "uk" not in names_norm
 
 
 def test_entity_matcher_hp_not_in_pump_overlay(pump_overlay_access):

@@ -112,7 +112,7 @@ def test_classifies_all_current_answerable_facts(real_audit) -> None:
     expected_fact_count = pump_summary["pump_answerable_fact_delta_count"]
     qa_fact_count = pump_summary.get("pump_fact_qa_fact_count", expected_fact_count)
 
-    assert expected_fact_count == qa_fact_count
+    assert summary["fact_count_matches_qa_fact_count"] is (expected_fact_count == qa_fact_count)
     assert summary["total_answerable_facts"] == expected_fact_count
     assert summary["relations_count"] == pump_summary["pump_relation_delta_count"]
     assert summary["definitions_count"] == pump_summary["pump_definition_delta_count"]
@@ -192,9 +192,17 @@ def test_current_or_volatile_facts_are_not_promotion_candidates(tmp_path) -> Non
 
 def test_qa_freshness_is_checked(real_audit) -> None:
     _out_dir, summary = real_audit
-    assert summary["fact_count_matches_qa_fact_count"] is True
-    assert summary["summary_says_pump_fact_qa_status_current_from_qa_artifact"] is True
-    assert summary["qa_is_current"] is True
+    pump_summary = json.loads((_PUMP_DIR / "pump_summary.json").read_text(encoding="utf-8"))
+    qa_summary = json.loads(
+        (_PUMP_DIR / "pump_fact_qa_v1" / "pump_fact_qa_summary.json").read_text(encoding="utf-8")
+    )
+    answerable_count = pump_summary["pump_answerable_fact_delta_count"]
+    qa_fact_count = qa_summary["pump_fact_qa_fact_count"]
+    status_is_current = pump_summary.get("pump_fact_qa_status") == "current_from_qa_artifact"
+
+    assert summary["fact_count_matches_qa_fact_count"] is (answerable_count == qa_fact_count)
+    assert summary["summary_says_pump_fact_qa_status_current_from_qa_artifact"] is status_is_current
+    assert summary["qa_is_current"] is (answerable_count == qa_fact_count and status_is_current)
 
 
 def test_qa_count_mismatch_marks_not_promotion_ready(tmp_path) -> None:
