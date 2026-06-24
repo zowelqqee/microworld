@@ -2,6 +2,10 @@ data/conceptnet-assertions-5.7.0.csv.gz
 data/conceptnet-assertions-5.7.0.csv.gz
 nanogpt/
 nanoGPT/
+# Generated Knowledge Pump batch snapshots. Recreate by running the pump.
+worldpgt/experiments/knowledge_pump_v1/batch_snapshots/
+
+.claude/
 # Python
 __pycache__/
 *.py[cod]
