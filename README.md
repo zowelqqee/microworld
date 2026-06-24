@@ -1,12 +1,16 @@
 # Microworld
 
-Microworld is an experimental explicit-memory reasoning system: a local,
-auditable QA engine that answers only when it can point to controlled memory,
-and audits when the question would require unsupported inference, live data, or
-unsafe promotion of weak context.
+Microworld is testing a narrower approach to AI: explicit memory, explicit
+reasoning, and controlled text generation instead of opaque next-token
+prediction.
 
-It is not an LLM replacement and does not claim open-domain understanding. It
-is a research system for a narrower question:
+The current system is not AI in general. It is not an LLM replacement, does not
+claim open-domain understanding, and should be read as a bounded research
+system: a local, auditable QA engine that answers only when it can point to
+controlled memory, and audits when the question would require unsupported
+inference, live data, or unsafe promotion of weak context.
+
+The research question is:
 
 ```text
 Can useful QA, memory growth, dialogue, and trust learning be built from
@@ -59,6 +63,7 @@ the tested overlay scale, runs offline, and does not need a GPU or API calls.
 
 - [What It Is](#what-it-is)
 - [What It Is Not](#what-it-is-not)
+- [Text Generation Experiment](#text-generation-experiment)
 - [Architecture](#architecture)
 - [Runtime QA Flow](#runtime-qa-flow)
 - [Knowledge Pump](#knowledge-pump)
@@ -108,6 +113,34 @@ The project explores a complementary path: compact explicit memory and
 inspectable trust learning for graph-style reasoning, where behavior can be
 audited, corrected, compressed, and transferred without retraining neural
 weights.
+
+## Text Generation Experiment
+
+Microworld is testing a non-neural approach to text generation over verified
+facts.
+
+The working principle is:
+
+```text
+facts are not generated
+speech is generated
+```
+
+Instead of predicting the next token from neural weights, the experimental
+speech layer can choose the next allowed speech unit from explicit state:
+
+- the user's question
+- the current entity
+- the verified facts already selected by the planner
+- what the answer has already said
+- the requested answer style
+- deterministic safety and support checks
+
+The goal is LLM-like surface behavior without moving truth into an opaque model.
+The generated wording may vary, but every factual claim still has to come from
+accepted memory, an accepted overlay, or a clearly labelled proposal/snapshot
+source. This is an experiment in controlled text generation, not open-domain
+language modeling and not a neural model replacement.
 
 ## Architecture
 
