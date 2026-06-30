@@ -79,3 +79,17 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# generated / heavy experiment artifacts
+pump_*.log
+*.raw.log
+
+worldpgt/experiments/knowledge_pump_v1/**/chunks/
+worldpgt/experiments/knowledge_pump_v1/**/*_delta.json
+worldpgt/experiments/knowledge_pump_v1/**/raw_claims.jsonl
+worldpgt/experiments/knowledge_pump_v1/**/argument_frames.jsonl
+worldpgt/experiments/knowledge_pump_v1/**/entities.generated.json
+worldpgt/experiments/knowledge_pump_v1/**/local_types.generated.json
+worldpgt/experiments/knowledge_pump_v1/**/schema_induced_overlay_*.json
+worldpgt/experiments/knowledge_pump_v1/**/selected_docs.json
+worldpgt/experiments/knowledge_pump_v1/pump_*.json

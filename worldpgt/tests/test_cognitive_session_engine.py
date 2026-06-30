@@ -475,6 +475,7 @@ def test_cognitive_answer_session_records_active_working_task_from_reasoning():
     assert "direct_mechanism_explanation" in snapshot.active_task.rejected_candidates
     assert snapshot.active_task.selected_surface_variant in {
         "baseline",
+        "concise",
         "decision_sample_1",
         "combined_sample",
     }

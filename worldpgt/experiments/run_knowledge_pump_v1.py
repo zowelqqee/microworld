@@ -73,6 +73,13 @@ from worldpgt.knowledge_pump.extraction_yield_v2 import (
     write_extraction_yield_v2_artifacts,
 )
 print("[INIT] extraction_yield_v2 OK", flush=True)
+from worldpgt.schema_induction.run_schema_induction import run_induction as _si_run_induction
+from worldpgt.schema_induction.overlay_adapter import schema_result_to_overlay_items as _si_to_overlay
+from worldpgt.schema_induction.induced_precision_gate import (
+    apply_induced_precision_gate as _si_precision_gate,
+    dedup_and_merge as _si_dedup_merge,
+)
+print("[INIT] schema_induction OK", flush=True)
 from worldpgt.knowledge_pump.pump_summary_qa_preserver import merge_qa_preservation
 from worldpgt.knowledge_pump.yield_ranked_frontier import run_yield_ranked_frontier
 from worldpgt.knowledge_pump.yield_ranked_frontier import normalize_page
@@ -467,11 +474,101 @@ def _write_empty_fresh_artifacts(out_dir: Path) -> None:
     )
 
 
+def _run_schema_induction_on_docs(
+    ready_docs: "list[ReadySnapshotDoc]",
+    path_a_items: list[dict[str, Any]],
+    out_dir: Path,
+    *,
+    min_source_docs_generated: int = 2,
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Run schema_induction on ready_docs and produce overlay items.
+
+    Returns (merged_items, schema_summary) where merged_items already
+    includes path_a_items with schema-induced items deduplicated/merged.
+    """
+    from worldpgt.schema_induction.promotion_gates import GateConfig
+    from worldpgt.schema_induction.types import DocumentRecord
+    from worldpgt.relation_extraction_v2.sentence_splitter import extract_full_body
+
+    docs = []
+    for rd in ready_docs:
+        p = Path(rd.normalized_doc_path)
+        if not p.exists():
+            continue
+        raw_text = p.read_text(encoding="utf-8")
+        # Strip metadata header (Source:, Retrieved at:, etc.) — same as extraction_yield_v2.
+        body = extract_full_body(raw_text)
+        if not body.strip():
+            continue
+        docs.append(DocumentRecord(
+            doc_id=rd.normalized_title or rd.title,
+            title=rd.title,
+            url=rd.source_url or "",
+            text=body,
+        ))
+    docs = [d for d in docs if d.text.strip()]
+    if not docs:
+        return path_a_items, {"schema_induction_docs": 0, "schema_induction_raw_items": 0,
+                               "schema_induction_after_gate": 0, "schema_induction_new_induced": 0,
+                               "schema_induction_deduped": 0, "schema_induction_quarantined": 0}
+
+    si_cfg = GateConfig(min_evidence=2, min_sources=1)
+    si_result = _si_run_induction([{"doc_id": d.doc_id, "title": d.title, "url": d.url, "text": d.text} for d in docs], si_cfg)
+
+    raw_overlay = _si_to_overlay(
+        list(si_result.families),
+        list(si_result.frames),
+        list(si_result.claims),
+        include_generated=True,
+    )
+
+    # Apply induced precision gate.
+    gated = _si_precision_gate(raw_overlay, min_source_docs_generated=min_source_docs_generated)
+    gated_items = gated["accepted"]
+
+    # Dedup against Path-A.
+    merge_result = _si_dedup_merge(path_a_items, gated_items)
+    merged = merge_result["accepted"]
+
+    si_out_dir = out_dir / "schema_induction_run"
+    si_out_dir.mkdir(parents=True, exist_ok=True)
+    from worldpgt.schema_induction import schema_store
+    schema_store.write_result(si_result, si_out_dir)
+    write_json(si_out_dir / "schema_induced_overlay_raw.json", raw_overlay)
+    write_json(si_out_dir / "schema_induced_overlay_gated.json", gated_items)
+    write_json(si_out_dir / "schema_induced_overlay_new.json", merge_result["new_induced"])
+
+    schema_summary = {
+        "schema_induction_enabled": True,
+        "schema_induction_docs": len(docs),
+        "schema_induction_families_generated": si_result.summary.get("relation_families_generated", 0),
+        "schema_induction_families_promoted": si_result.summary.get("relation_families_promoted", 0),
+        "schema_induction_raw_items": len(raw_overlay),
+        "schema_induction_after_gate": len(gated_items),
+        "schema_induction_quarantined": len(gated["quarantine"]),
+        "schema_induction_rejected": len(gated["rejected"]),
+        "schema_induction_new_induced": len(merge_result["new_induced"]),
+        "schema_induction_deduped": len(merge_result["deduped"]),
+        "schema_induction_upgraded": len(merge_result["upgraded"]),
+        "schema_induction_new_by_predicate": _count_by_field(merge_result["new_induced"], "predicate"),
+    }
+    return merged, schema_summary
+
+
+def _count_by_field(items: list[dict[str, Any]], field: str) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for item in items:
+        val = str(item.get(field) or "unknown")
+        counts[val] = counts.get(val, 0) + 1
+    return dict(sorted(counts.items(), key=lambda kv: -kv[1]))
+
+
 def _recompute_batch_derived(
     out_dir: Path,
     *,
     enable_extraction_yield_v2: bool = True,
     enable_spacy: bool = False,
+    enable_schema_induction: bool = False,
 ) -> dict[str, Any]:
     """Recompute derived counts over existing pump batch snapshots.
 
@@ -551,6 +648,23 @@ def _recompute_batch_derived(
             write_json(out_dir / "pump_fresh_relation_candidates_v2.json", [])
             write_json(out_dir / "pump_fresh_relation_candidates_merged.json", relation_rows)
 
+        # --- Schema induction parallel path ---
+        si_summary: dict[str, Any] = {"schema_induction_enabled": False}
+        if enable_schema_induction:
+            print("[RECOMPUTE] schema_induction path...", flush=True)
+            try:
+                overlay_items, si_summary = _run_schema_induction_on_docs(
+                    ready_docs, list(overlay_items), out_dir
+                )
+                print(
+                    f"[RECOMPUTE] schema_induction done: "
+                    f"{si_summary.get('schema_induction_new_induced', 0)} new items",
+                    flush=True,
+                )
+            except Exception as si_exc:
+                print(f"[RECOMPUTE] schema_induction ERROR (non-fatal): {si_exc}", flush=True)
+                si_summary = {"schema_induction_enabled": True, "schema_induction_error": str(si_exc)}
+
         summary = {
             "new_ready_docs_this_batch": len(ready_docs),
             "new_ingestion_candidates_this_batch": len(candidates),
@@ -582,6 +696,7 @@ def _recompute_batch_derived(
             "_fresh_relation_rows": relation_rows,
             "_fresh_relation_quarantine": [q.to_dict() for q in quarantine],
             "_fresh_ingestion_failures": [f.to_dict() for f in failures],
+            **si_summary,
         }
     except Exception as exc:
         _write_empty_fresh_artifacts(out_dir)
@@ -605,26 +720,53 @@ def _recompute_batch_derived(
 
 def _yield_ranked_batches(
     allowlist: list[ExpandedAllowlistEntry],
-    yield_titles: list[str],
+    yield_titles: list[str] | list[dict],
     batch_size: int,
     max_batches: int,
 ) -> list[list[ExpandedAllowlistEntry]]:
-    """Reorder/select allowlist entries to match the yield-ranked plan order.
+    """Build batches in yield-ranked plan order.
 
-    Titles in the yield-ranked plan but absent from the allowlist are skipped
-    (the allowlist already excludes already-fetched titles). No network."""
+    The default allowlist is capped by ``target_total`` and may omit most
+    high-scoring yield-ranked titles. In yield-ranked mode the plan itself is
+    the control surface, so keep existing allowlist entries when present and
+    synthesize read-only batch entries for otherwise eligible plan titles.
+    No network is touched here; fetch happens later through the normal runner.
+    """
     by_key: dict[str, ExpandedAllowlistEntry] = {}
     for entry in allowlist:
         key = normalize_title(entry.normalized_title or entry.title).casefold()
         by_key.setdefault(key, entry)
     selected: list[ExpandedAllowlistEntry] = []
     seen: set[str] = set()
-    for title in yield_titles:
+    for idx, plan_item in enumerate(yield_titles):
+        if isinstance(plan_item, dict):
+            title = str(plan_item.get("title", ""))
+            reason = "; ".join(str(r) for r in plan_item.get("positive_reasons", []))
+            risk_hint = str(plan_item.get("expected_yield_class") or "yield_ranked")
+        else:
+            title = str(plan_item)
+            reason = "yield-ranked frontier plan"
+            risk_hint = "yield_ranked"
+        if not title:
+            continue
         key = normalize_title(title).casefold()
+        if key in seen:
+            continue
+        seen.add(key)
         entry = by_key.get(key)
-        if entry is not None and key not in seen:
-            seen.add(key)
-            selected.append(entry)
+        if entry is None:
+            entry = ExpandedAllowlistEntry(
+                title=title,
+                normalized_title=normalize_title(title),
+                priority=idx,
+                reason=reason or "yield-ranked frontier plan",
+                source="yield_ranked_frontier",
+                risk_hint=risk_hint,
+                already_fetched=False,
+                selected_for_batch=True,
+                batch_index=len(selected) // batch_size,
+            )
+        selected.append(entry)
     if not selected:
         return []
     batches = [selected[i:i + batch_size] for i in range(0, len(selected), batch_size)]
@@ -646,6 +788,7 @@ def run(
     include_weak_context: bool = False,
     enable_extraction_yield_v2: bool = True,
     enable_spacy: bool = False,
+    enable_schema_induction: bool = False,
     frontier_policy: str = "default",
     force_low_yield_fetch: bool = False,
 ) -> dict[str, Any]:
@@ -720,10 +863,9 @@ def run(
         yield_gate_info = yield_result["gate"]
         yield_summary = yield_result["incremental_summary"]
         yield_ranked_available_count = yield_summary.get("yield_ranked_available_count", 0)
-        yield_plan_titles = [entry["title"] for entry in yield_result["plan"]]
         if frontier_policy == "yield-ranked":
             yield_batches = _yield_ranked_batches(
-                allowlist, yield_plan_titles, batch_size, max_batches
+                allowlist, yield_result["plan"], batch_size, max_batches
             )
             if yield_batches:
                 batches = yield_batches
@@ -837,6 +979,7 @@ def run(
         out_dir,
         enable_extraction_yield_v2=enable_extraction_yield_v2,
         enable_spacy=enable_spacy,
+        enable_schema_induction=enable_schema_induction,
     )
     print("[RUN] _recompute_batch_derived done", flush=True)
     ingestion_summary, relation_summary = _copy_existing_summaries(out_dir)
@@ -1353,6 +1496,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--force-low-yield-fetch", action="store_true", default=False,
                         help="Override the yield gate and allow a blind network "
                              "fetch even when recent yield has collapsed.")
+    parser.add_argument("--enable-schema-induction", action="store_true", default=False,
+                        dest="enable_schema_induction",
+                        help="Run schema_induction as a parallel extraction path. "
+                             "Produces induced relation families from the same docs "
+                             "and merges them with extraction_yield_v2 candidates. "
+                             "Generated (non-promoted) families require "
+                             "min 2 source documents to pass the precision gate. "
+                             "(default: off)")
     args = parser.parse_args(argv)
 
     plan_only = args.plan_only or not args.allow_network
@@ -1370,6 +1521,7 @@ def main(argv: list[str] | None = None) -> int:
         include_weak_context=args.include_weak_context,
         enable_extraction_yield_v2=args.enable_extraction_yield_v2,
         enable_spacy=args.enable_spacy,
+        enable_schema_induction=args.enable_schema_induction,
         frontier_policy=args.frontier_policy,
         force_low_yield_fetch=args.force_low_yield_fetch,
     )
@@ -1382,6 +1534,15 @@ def main(argv: list[str] | None = None) -> int:
         "batches_completed", "frontier_titles_total", "expanded_allowlist_total",
         "selected_for_batch_count", "fetched_count_total",
         "fetch_success_count_total", "ready_for_ingestion_count_total",
+        "schema_induction_enabled",
+        "schema_induction_docs",
+        "schema_induction_families_generated",
+        "schema_induction_families_promoted",
+        "schema_induction_raw_items",
+        "schema_induction_after_gate",
+        "schema_induction_quarantined",
+        "schema_induction_new_induced",
+        "schema_induction_deduped",
         "extraction_yield_v2_enabled",
         "extraction_yield_v2_candidate_count",
         "extraction_yield_v2_rejected_count",

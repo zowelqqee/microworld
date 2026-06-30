@@ -54,6 +54,7 @@ def test_demo_questions_parse_to_semantic_queries():
         "Which companies does Tesla own?": ("Tesla", None, "owned_by", "subject", "inverse"),
         "Which entities are owned by SpaceX?": ("SpaceX", None, "owned_by", "subject", "inverse"),
         "Who develops Falcon 9?": ("Falcon 9", None, "develops", "subject", "inverse"),
+        "Where was SpaceX located?": ("SpaceX", None, "located_in", "object", "lookup"),
         "How is Starlink connected to Falcon 9?": (
             "Starlink",
             "Falcon 9",
@@ -104,6 +105,27 @@ def test_semantic_parser_drives_analyzer_and_router():
     assert comparative.intent == "entity_relation"
     assert comparative.subject == "SpaceX"
     assert comparative.secondary == "Blue Origin"
+
+
+def test_russian_controlled_patterns_parse_to_semantic_queries():
+    expectations = {
+        "что такое SpaceX": ("SpaceX", None, None, "relation", "definition"),
+        "кто основал Blue Origin": ("Blue Origin", None, "founded_by", "object", "lookup"),
+        "расскажи про Elon Musk": ("Elon Musk", None, None, "relation", "open_synthesis"),
+        "чем занимается Tesla": ("Tesla", None, "produces", "object", "lookup"),
+        "кому принадлежит Starlink": ("Starlink", None, "owned_by", "object", "lookup"),
+    }
+
+    for question, expected in expectations.items():
+        sq = parse_semantic_query(question)
+        assert (
+            sq.entity_a,
+            sq.entity_b,
+            sq.relation_intent,
+            sq.unknown_position,
+            sq.query_type,
+        ) == expected
+        assert sq.confidence >= 0.75
 
 
 def test_low_confidence_question_routes_to_question_not_understood():

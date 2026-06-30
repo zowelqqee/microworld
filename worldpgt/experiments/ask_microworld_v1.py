@@ -37,6 +37,8 @@ if str(_ROOT) not in sys.path:
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
 from worldpgt.assistant_surface.context_selector import resolve_overlay
 from worldpgt.assistant_surface.assistant_renderer import render
+from worldpgt.assistant_surface.think_aloud import build_think_aloud, select_inferred_facts
+from worldpgt.cognition.inference_engine import run_inference
 from worldpgt.assistant_surface.types import (
     AssistantAnswer,
     OVERLAY_MODE_CUSTOM_PATH,
@@ -294,6 +296,33 @@ def _run_interactive(
     return 0
 
 
+def _think_aloud_for(
+    question: str,
+    answer: AssistantAnswer,
+    overlay_mode: str,
+    overlay_path: str | None,
+    multihop_result=None,
+):
+    """Build the think-aloud surface for one answered question (read-only)."""
+    items = _load_overlay_items(overlay_mode, overlay_path)
+    workspace = run_inference(items)
+    cs = (answer.trace.context_summary if answer.trace else None) or {}
+    matched = cs.get("matched_entities") or []
+    subject = matched[0] if matched else (answer.question or question)
+    inferred = (
+        select_inferred_facts(workspace, subject, question)
+        if answer.decision == "audit"
+        else []
+    )
+    return build_think_aloud(
+        answer,
+        question=question,
+        subject=subject,
+        multihop_result=multihop_result,
+        inferred_facts=inferred,
+    )
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="Microworld Assistant Surface v1 (controlled, deterministic)."
@@ -329,6 +358,12 @@ def main(argv: list[str] | None = None) -> int:
         "--enable-multihop",
         action="store_true",
         help="Enable experimental read-only multi-hop QA over explicit supported relation chains.",
+    )
+    parser.add_argument(
+        "--think-aloud",
+        dest="think_aloud",
+        action="store_true",
+        help="Show a [THINKING] block (how the answer was reached) above the [ANSWER].",
     )
     parser.add_argument(
         "--show-semantic-query",
@@ -378,7 +413,10 @@ def main(argv: list[str] | None = None) -> int:
         overlay_path=overlay_path,
         ontology_layer_path=ontology_layer_path,
     )
-    semantic_query = parse_semantic_query(args.question or "") if args.show_semantic_query else None
+    semantic_query = None
+    if args.show_semantic_query:
+        semantic_index = _surface_index_for_dialogue(overlay_mode, overlay_path)
+        semantic_query = parse_semantic_query(args.question or "", semantic_index)
     rendered_multihop = None
     multihop_result = None
 
@@ -409,9 +447,26 @@ def main(argv: list[str] | None = None) -> int:
                 overlay_marker=_overlay_marker(effective_overlay_mode),
             )
 
+    think_aloud = (
+        _think_aloud_for(
+            args.question or "",
+            answer,
+            overlay_mode,
+            overlay_path,
+            multihop_result=multihop_result,
+        )
+        if args.think_aloud
+        else None
+    )
+
     if args.json_mode:
         semantic_payload = (
             {"semantic_query": semantic_query.to_dict()} if semantic_query is not None else {}
+        )
+        think_payload = (
+            {"think_aloud": {"thinking": think_aloud.thinking, "answer": think_aloud.answer}}
+            if think_aloud is not None
+            else {}
         )
         if rendered_multihop is not None and multihop_result is not None:
             print(json.dumps({
@@ -419,17 +474,22 @@ def main(argv: list[str] | None = None) -> int:
                 "multihop": multihop_result.to_dict(),
                 "single_hop_first_pass": answer.to_dict(),
                 **semantic_payload,
+                **think_payload,
             }, indent=2, ensure_ascii=False))
         else:
             payload = answer.to_dict()
             payload.update(semantic_payload)
+            payload.update(think_payload)
             print(json.dumps(payload, indent=2, ensure_ascii=False))
     else:
         if semantic_query is not None:
             print("SemanticQuery:")
             print(json.dumps(semantic_query.to_dict(), indent=2, ensure_ascii=False))
             print("")
-        print(rendered_multihop if rendered_multihop is not None else render(answer))
+        if think_aloud is not None:
+            print(think_aloud.render())
+        else:
+            print(rendered_multihop if rendered_multihop is not None else render(answer))
     return 0
 
 

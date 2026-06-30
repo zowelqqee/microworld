@@ -83,6 +83,9 @@ class TestRuleParsing:
         assert "capability_inheritance_v1" in ids
         assert "ownership_transitivity_v1" in ids
         assert "founder_shared_v1" in ids
+        assert "causal_chain_v1" in ids
+        assert "expertise_inheritance_v1" in ids
+        assert "competitor_detection_v1" in ids
 
     def test_base_rules_json_is_valid_overlay_inference_rule_items(self):
         from worldpgt.cognition import rule_interpreter

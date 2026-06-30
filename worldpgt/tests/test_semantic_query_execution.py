@@ -95,6 +95,82 @@ def test_definition_uses_entity_alias_subject(tmp_path):
     assert validate_answer(answer) == []
 
 
+def test_definition_uses_source_page_lead_subject_without_alias(tmp_path):
+    entity = _entity("John D. Rockefeller")
+    entity["source_page"] = "John D. Rockefeller"
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            entity,
+            {
+                **_definition("John Davison Rockefeller Sr.", "American businessman"),
+                "source_page": "John D. Rockefeller",
+            },
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer(
+        "What is John D. Rockefeller?"
+    )
+
+    assert answer.decision == "answer"
+    assert answer.support_kind == "stable_definition"
+    assert answer.answer_text == "John Davison Rockefeller Sr. is an American businessman."
+    assert validate_answer(answer) == []
+
+
+def test_definition_source_page_fallback_skips_copula_fragments(tmp_path):
+    entity = _entity("Bill Gates")
+    entity["source_page"] = "Bill Gates"
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            entity,
+            {
+                **_definition(
+                    "Born and raised in Seattle, Washington, Gates",
+                    "privately educated at Lakeside School",
+                ),
+                "source_page": "Bill Gates",
+            },
+            {
+                **_definition("William Henry Gates III", "American businessman"),
+                "source_page": "Bill Gates",
+            },
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("What is Bill Gates?")
+
+    assert answer.decision == "answer"
+    assert answer.support_kind == "stable_definition"
+    assert answer.answer_text == "William Henry Gates III is an American businessman."
+    assert "Born and raised" not in answer.answer_text
+    assert validate_answer(answer) == []
+
+
+def test_definition_renderer_handles_one_of_without_article(tmp_path):
+    entity = _entity("Apple Inc.")
+    entity["source_page"] = "Apple Inc."
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            entity,
+            {
+                **_definition("Apple", "one of the Big Tech companies"),
+                "source_page": "Apple Inc.",
+            },
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("What is Apple Inc.?")
+
+    assert answer.decision == "answer"
+    assert answer.answer_text == "Apple is one of the Big Tech companies."
+    assert "an one" not in answer.answer_text
+    assert validate_answer(answer) == []
+
+
 def test_comparative_intersection_audits_when_empty(tmp_path):
     overlay_path = _overlay(
         tmp_path,

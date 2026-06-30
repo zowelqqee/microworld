@@ -25,6 +25,7 @@ import re
 
 from worldpgt.assistant_surface.types import AssistantRoute
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
+from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 
 # --------------------------------------------------------------------------- #
 # Hard-safety signals (checked first, in priority order).
@@ -108,7 +109,8 @@ _CONNECTION_RE = re.compile(
 # Entity relation lookups.
 # --------------------------------------------------------------------------- #
 _RELATION_RE = re.compile(
-    r"(what\s+does\s+(.+?)\s+(?:develop|produce|publish|manufacture|make|build)s?\b|"
+    r"(what\s+does\s+(.+?)\s+(?:develop|produce|publish|manufacture|make|build|"
+    r"require|need|allow|permit|prohibit|forbid)s?\b|"
     r"(?:which|what)\s+reports?\s+does\s+(.+?)\s+publish(?:\s+annually)?[\?\.]?$|"
     r"what\s+products?\s+does\s+(.+?)\s+(?:make|produce|manufacture|build)s?\b|"
     r"what\s+(?:is|was)\s+developed\s+by\s+(.+?)[\?\.]?$|"
@@ -135,7 +137,9 @@ _IS_A_CLASS_RE = re.compile(
 # Entity definition.
 # --------------------------------------------------------------------------- #
 _DEFINITION_RE = re.compile(
-    r"(who\s+(?:is|are|was|were)\s+(.+?)[\?\.]?$|"
+    r"(who\s+qualifies\s+for\s+(.+?)[\?\.]?$|"
+    r"who\s+(?:is|are)\s+eligible\s+for\s+(.+?)[\?\.]?$|"
+    r"who\s+(?:is|are|was|were)\s+(.+?)[\?\.]?$|"
     r"what\s+(?:is|are)\s+(.+?)[\?\.]?$|"
     r"tell\s+me\s+about\s+(.+?)[\?\.]?$|"
     r"define\s+(.+?)[\?\.]?$|"
@@ -155,7 +159,7 @@ def _first_group(m: re.Match, *idxs: int) -> str | None:
     return None
 
 
-def route(question: str) -> AssistantRoute:
+def route(question: str, index: EntitySurfaceIndex | None = None) -> AssistantRoute:
     """Classify ``question`` into exactly one conservative assistant intent."""
 
     q = (question or "").strip()
@@ -241,7 +245,7 @@ def route(question: str) -> AssistantRoute:
             notes="source-qualified (volatile) fact lookup",
         )
 
-    semantic = parse_semantic_query(q)
+    semantic = parse_semantic_query(q, index)
     if semantic.confidence >= 0.75:
         if semantic.unknown_position == "path" and semantic.entity_a and semantic.entity_b:
             return AssistantRoute(

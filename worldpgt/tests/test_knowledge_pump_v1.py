@@ -12,6 +12,8 @@ from pathlib import Path
 import pytest
 
 from worldpgt.experiments import ask_microworld_v1
+from worldpgt.experiments import cleanup_bad_definitions_v1
+from worldpgt.experiments import build_reextract_qa_overlay_v1
 from worldpgt.experiments import run_knowledge_pump_v1 as runner
 from worldpgt.knowledge_pump.expanded_allowlist_builder import build_expanded_allowlist
 from worldpgt.knowledge_pump.frontier_title_extractor import extract_frontier_titles
@@ -19,7 +21,7 @@ from worldpgt.knowledge_pump.pump_batch_planner import plan_batches
 from worldpgt.knowledge_pump.pump_checkpoint import load_checkpoint
 from worldpgt.knowledge_pump.safe_delta_merger import merge_safe_deltas, merge_with_fresh_deltas
 from worldpgt.knowledge_pump.title_ranker import normalize_title, priority_for, risk_hint
-from worldpgt.knowledge_pump.types import FrontierTitle
+from worldpgt.knowledge_pump.types import ExpandedAllowlistEntry, FrontierTitle
 
 _REPO = Path(__file__).resolve().parent.parent.parent
 _WORLD = _REPO / "worldpgt"
@@ -60,6 +62,130 @@ def test_plan_only_does_not_call_network(pump_run):
     assert summary["network_calls"] is False
 
 
+def test_yield_ranked_batches_use_plan_titles_missing_from_allowlist():
+    allowlist = [
+        ExpandedAllowlistEntry(
+            title="Existing Yield Title",
+            normalized_title="Existing Yield Title",
+            priority=0,
+            reason="fixture",
+            source="fixture",
+            risk_hint="low",
+            already_fetched=False,
+            selected_for_batch=True,
+            batch_index=0,
+        )
+    ]
+    plan = [
+        {
+            "title": "Existing Yield Title",
+            "score": 80,
+            "expected_yield_class": "high",
+            "positive_reasons": ["fixture_existing"],
+        },
+        {
+            "title": "Missing High Yield Title",
+            "score": 70,
+            "expected_yield_class": "high",
+            "positive_reasons": ["source_page_produced_accepted_fact"],
+        },
+    ]
+
+    batches = runner._yield_ranked_batches(
+        allowlist,
+        plan,
+        batch_size=250,
+        max_batches=1,
+    )
+
+    assert [[entry.title for entry in batch] for batch in batches] == [
+        ["Existing Yield Title", "Missing High Yield Title"]
+    ]
+    missing_entry = batches[0][1]
+    assert missing_entry.source == "yield_ranked_frontier"
+    assert missing_entry.selected_for_batch is True
+
+
+def test_reextract_qa_overlay_adds_entity_cards_and_filters_bad_fragments():
+    result = build_reextract_qa_overlay_v1.build_qa_overlay(
+        [
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "École Centrale Paris",
+                "predicate": "produces",
+                "object": "produced 3",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Blue Origin",
+                "predicate": "develops",
+                "object": "Line, the fourth New Shepard capsule,",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "SpaceX",
+                "predicate": "founded_by",
+                "object": "Elon Musk",
+                "stability": "semi_stable",
+            },
+            {
+                "overlay_type": "overlay_definition",
+                "subject": "Baidu Tieba",
+                "predicate": "is_a",
+                "definition": "Chinese online forum",
+                "stability": "stable",
+            },
+        ]
+    )
+
+    overlay = result["overlay"]
+    summary = result["summary"]
+
+    assert summary["input_answerable_count"] == 4
+    assert summary["answerable_kept_count"] == 2
+    assert summary["rejected_by_reason"] == {"bad_relation_object": 2}
+    assert any(
+        item.get("overlay_type") == "overlay_entity" and item.get("label") == "SpaceX"
+        for item in overlay
+    )
+    assert any(
+        item.get("overlay_type") == "overlay_entity" and item.get("label") == "Baidu Tieba"
+        for item in overlay
+    )
+    assert not any(item.get("object") == "produced 3" for item in overlay)
+    assert not any(
+        item.get("object") == "Line, the fourth New Shepard capsule," for item in overlay
+    )
+
+
+def test_reextract_qa_overlay_answers_custom_path(tmp_path, capsys):
+    answerable = tmp_path / "reextract_answerable_delta.json"
+    overlay = tmp_path / "qa_overlay.json"
+    summary = tmp_path / "qa_overlay_summary.json"
+    answerable.write_text(
+        json.dumps(
+            [
+                {
+                    "overlay_type": "overlay_definition",
+                    "subject": "Baidu Tieba",
+                    "predicate": "is_a",
+                    "definition": "Chinese online forum",
+                    "stability": "stable",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    built = build_reextract_qa_overlay_v1.build_from_paths(answerable, overlay, summary)
+    code = ask_microworld_v1.main(["What is Baidu Tieba?", "--overlay-path", str(overlay)])
+    out = capsys.readouterr().out
+
+    assert built["qa_overlay_items_count"] == 2
+    assert code == 0
+    assert "Baidu Tieba is a Chinese online forum." in out
+
+
 def test_ask_cli_pump_dry_run_overlay_prints_proposal_marker(capsys):
     code = ask_microworld_v1.main(["What is Starlink?", "--overlay", "pump-dry-run"])
     out = capsys.readouterr().out
@@ -98,6 +224,42 @@ def test_ask_cli_custom_overlay_path_resolves(tmp_path, capsys):
     assert code == 0
     assert "Overlay mode: custom overlay path, not accepted memory." in out
     assert "Test Widget is a device." in out
+
+
+def test_ask_cli_custom_overlay_path_routes_new_location_entity(tmp_path, capsys):
+    overlay = tmp_path / "custom_overlay.json"
+    overlay.write_text(
+        json.dumps(
+            [
+                {
+                    "overlay_type": "overlay_entity",
+                    "label": "Test Harbor",
+                    "entity_type": "place",
+                    "source_page": "Test Harbor",
+                    "trust": "overlay_candidate",
+                    "risk": "low",
+                },
+                {
+                    "overlay_type": "overlay_relation",
+                    "subject": "Test Harbor",
+                    "predicate": "located_in",
+                    "object": "Example Bay",
+                    "trust": "overlay_candidate",
+                    "risk": "low",
+                    "stability": "semi_stable",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    code = ask_microworld_v1.main(
+        ["Where was Test Harbor located?", "--overlay-path", str(overlay)]
+    )
+    out = capsys.readouterr().out
+
+    assert code == 0
+    assert "Test Harbor is located in Example Bay." in out
 
 
 def test_ask_cli_ontology_layer_extends_is_a_traversal(tmp_path, capsys):
@@ -961,12 +1123,45 @@ _BAD_DEFINITIONS = [
           "Yaccarino grew up in Deer Park, where her father was an assistant chief of police."),
     _defn("Lawrence Sperry", "third son of the gyrocompass co-inventor",
           "Sperry was the third son of the gyrocompass co-inventor, Elmer Ambrose Sperry."),
+    _defn("ExampleCo", "also robotics company",
+          "ExampleCo is also robotics company in the region."),
+    _defn("ExampleCo", "previously software company",
+          "ExampleCo was previously software company before the acquisition."),
+    _defn("ExampleCo", "additionally cloud platform",
+          "ExampleCo is additionally cloud platform for developers."),
 ]
 
 
 @pytest.mark.parametrize("item", _BAD_DEFINITIONS, ids=lambda i: i["subject"])
 def test_precision_rejects_or_quarantines_bad_definitions(item):
     assert _verdict(item) in ("reject", "quarantine")
+
+
+@pytest.mark.parametrize("lead", ["also", "previously", "additionally", "further", "later"])
+def test_precision_rejects_discourse_marker_lead_definitions(lead):
+    item = _defn(
+        "ExampleCo",
+        f"{lead} robotics company",
+        f"ExampleCo is {lead} robotics company in the region.",
+    )
+    result = apply_precision_firewall([item])
+
+    assert item not in result["accepted"]
+    assert result["rejection_by_reason"] == {"definition_not_lead_style": 1}
+
+
+def test_cleanup_bad_definitions_removes_existing_discourse_marker_definitions():
+    rows = [
+        _defn("Warren Buffett", "also supportive of philanthropic giving"),
+        _defn("Tim Berners-Lee", "previously senior researcher at CERN"),
+        _defn("Good Entity", "computer scientist"),
+        _rel("Good Entity", "founded_by", "Ada Stone"),
+    ]
+
+    kept, examples = cleanup_bad_definitions_v1.cleanup_items(rows, max_examples=5)
+
+    assert [item["subject"] for item in kept] == ["Good Entity", "Good Entity"]
+    assert [item["subject"] for item in examples] == ["Warren Buffett", "Tim Berners-Lee"]
 
 
 # --- July = ruby: not a definition; clean birthstone property candidate --------

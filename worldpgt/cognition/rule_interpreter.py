@@ -31,7 +31,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from worldpgt.cognition.inference_engine import InferredFact
-from worldpgt.relation_extraction_v2.relation_policy import predicate_in_class
+from worldpgt.relation_extraction_v2.relation_policy import (
+    PREDICATE_CLASSES,
+    predicate_in_class,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -62,6 +65,9 @@ class InferenceRule:
     constant_confidence: float = 0.5
     stability: str = "stable"
     enabled: bool = True
+    # Negative guards: if ANY of these patterns matches under the current
+    # bindings, the rule does not fire. Lets a rule say "infer X unless …".
+    unless_pattern: tuple[Pattern, ...] = ()
 
 
 def parse_rule(data: dict) -> InferenceRule:
@@ -79,6 +85,7 @@ def parse_rule(data: dict) -> InferenceRule:
         constant_confidence=float(data.get("constant_confidence", 0.5)),
         stability=str(data.get("stability") or "stable"),
         enabled=bool(data.get("enabled", True)),
+        unless_pattern=tuple(_parse_pattern(p) for p in data.get("unless_pattern", [])),
     )
 
 
@@ -115,6 +122,14 @@ class _Fact:
     stability: str = "semi_stable"
 
 
+@dataclass(frozen=True)
+class _FactIndex:
+    by_predicate: dict[str, tuple[_Fact, ...]]
+    by_subject: dict[str, tuple[_Fact, ...]]
+    by_object: dict[str, tuple[_Fact, ...]]
+    by_class: dict[str, tuple[_Fact, ...]]
+
+
 # Relations that get an inverse twin so rules read in the natural direction.
 _INVERSE_PREDICATES: dict[str, str] = {
     "founded": "founded_by",
@@ -137,7 +152,7 @@ _QUALIFIER_RE = re.compile(r"\s+(?:for|to|in|at|with)\b.*$", re.IGNORECASE)
 
 
 def _norm(text: str) -> str:
-    return re.sub(r"\s+", " ", (text or "").strip().lower())
+    return " ".join((text or "").strip().lower().split())
 
 
 @dataclass(frozen=True)
@@ -145,6 +160,7 @@ class _NormalizedOverlay:
     facts: tuple[_Fact, ...]
     entity_types: dict[str, str]
     labels: frozenset[str]
+    index: _FactIndex
 
 
 def normalize_overlay(overlay_items: list[dict]) -> _NormalizedOverlay:
@@ -166,6 +182,7 @@ def normalize_overlay(overlay_items: list[dict]) -> _NormalizedOverlay:
             subject = str(item.get("subject") or "").strip()
             if subject:
                 labels.add(subject)
+    label_by_norm = {_norm(label): label for label in labels}
 
     facts: list[_Fact] = []
     for item in overlay_items:
@@ -175,12 +192,34 @@ def normalize_overlay(overlay_items: list[dict]) -> _NormalizedOverlay:
         if otype == "overlay_relation":
             facts.extend(_facts_from_relation(item))
         elif otype == "overlay_definition":
-            facts.extend(_facts_from_definition(item, labels))
+            facts.extend(_facts_from_definition(item, label_by_norm))
 
+    fact_tuple = tuple(facts)
     return _NormalizedOverlay(
-        facts=tuple(facts),
+        facts=fact_tuple,
         entity_types=entity_types,
         labels=frozenset(labels),
+        index=_build_fact_index(fact_tuple),
+    )
+
+
+def _build_fact_index(facts: tuple[_Fact, ...]) -> _FactIndex:
+    by_predicate: dict[str, list[_Fact]] = {}
+    by_subject: dict[str, list[_Fact]] = {}
+    by_object: dict[str, list[_Fact]] = {}
+    by_class: dict[str, list[_Fact]] = {name: [] for name in PREDICATE_CLASSES}
+    for fact in facts:
+        by_predicate.setdefault(_norm(fact.predicate), []).append(fact)
+        by_subject.setdefault(_norm(fact.subject), []).append(fact)
+        by_object.setdefault(_norm(fact.object), []).append(fact)
+        for class_name, members in PREDICATE_CLASSES.items():
+            if fact.predicate in members:
+                by_class.setdefault(class_name, []).append(fact)
+    return _FactIndex(
+        by_predicate={k: tuple(v) for k, v in by_predicate.items()},
+        by_subject={k: tuple(v) for k, v in by_subject.items()},
+        by_object={k: tuple(v) for k, v in by_object.items()},
+        by_class={k: tuple(v) for k, v in by_class.items()},
     )
 
 
@@ -198,30 +237,43 @@ def _facts_from_relation(item: dict) -> list[_Fact]:
     return out
 
 
-def _facts_from_definition(item: dict, labels: set[str]) -> list[_Fact]:
+def _facts_from_definition(item: dict, label_by_norm: dict[str, str]) -> list[_Fact]:
     subject = str(item.get("subject") or "").strip()
     definition = str(item.get("definition") or "").strip()
     stability = str(item.get("stability") or "stable")
     if not (subject and definition):
         return []
     out = [_Fact(subject, "is_a", definition, stability)]
-    parent = _extract_creator(definition, labels)
+    parent, is_subsidiary = _extract_creator(definition, label_by_norm)
     if parent and _norm(parent) != _norm(subject):
         out.append(_Fact(subject, "owned_by", parent, stability))
+        # A division/subsidiary/unit is a *structural* part of its parent — it
+        # inherits ownership chains but NOT the parent's capabilities (a finance
+        # division doesn't build the parent's products). Tag it so capability
+        # inheritance can veto on this marker while ownership rules still fire.
+        if is_subsidiary:
+            out.append(_Fact(subject, "subsidiary_of", parent, stability))
     return out
 
 
-def _extract_creator(definition: str, labels: set[str]) -> str | None:
+def _extract_creator(
+    definition: str,
+    label_by_norm: dict[str, str],
+) -> tuple[str | None, bool]:
+    """Return (parent_label, is_subsidiary) for a creator/parent phrase.
+
+    ``is_subsidiary`` is True for "division/subsidiary/unit of X" phrasing (a
+    structural part), False for "developed/operated by X" (a maker relationship).
+    """
     m = _CREATOR_RE.search(definition)
     if not m:
-        return None
+        return None, False
+    # Group 1 = "developed/operated by X"; group 2 = "division/subsidiary/unit of X".
+    is_subsidiary = m.group(2) is not None
     raw = next(g for g in m.groups() if g is not None)
     raw = _QUALIFIER_RE.sub("", raw).strip().rstrip(".")
     raw_norm = _norm(raw)
-    for label in labels:
-        if _norm(label) == raw_norm:
-            return label
-    return None
+    return label_by_norm.get(raw_norm), is_subsidiary
 
 
 # ---------------------------------------------------------------------------
@@ -267,6 +319,40 @@ def _resolve_term(term: str, bindings: dict[str, str]) -> str:
     return bindings.get(term, term) if _is_var(term) else term
 
 
+def _bound_value(term: str, bindings: dict[str, str]) -> str | None:
+    if _is_var(term):
+        return bindings.get(term)
+    return term
+
+
+def _candidate_facts(
+    pattern: Pattern,
+    bindings: dict[str, str],
+    normalized: _NormalizedOverlay,
+) -> tuple[_Fact, ...]:
+    """Return the smallest indexed fact subset that can match this pattern."""
+    candidate_groups: list[tuple[_Fact, ...]] = []
+
+    if pattern.predicate_class:
+        candidate_groups.append(normalized.index.by_class.get(pattern.predicate_class, ()))
+    else:
+        predicate = _bound_value(pattern.predicate, bindings)
+        if predicate is not None:
+            candidate_groups.append(normalized.index.by_predicate.get(_norm(predicate), ()))
+
+    subject = _bound_value(pattern.subject, bindings)
+    if subject is not None:
+        candidate_groups.append(normalized.index.by_subject.get(_norm(subject), ()))
+
+    obj = _bound_value(pattern.object, bindings)
+    if obj is not None:
+        candidate_groups.append(normalized.index.by_object.get(_norm(obj), ()))
+
+    if not candidate_groups:
+        return normalized.facts
+    return min(candidate_groups, key=len)
+
+
 def _check_type_guards(
     type_guards: dict[str, tuple[str, ...]],
     bindings: dict[str, str],
@@ -281,6 +367,19 @@ def _check_type_guards(
         if etype is None or etype not in allowed:
             return False
     return True
+
+
+def _unless_violated(
+    rule: InferenceRule,
+    bindings: dict[str, str],
+    normalized: _NormalizedOverlay,
+) -> bool:
+    """True if any negative-guard pattern matches a fact under *bindings*."""
+    for pattern in rule.unless_pattern:
+        for fact in _candidate_facts(pattern, bindings, normalized):
+            if _match_pattern(pattern, fact, bindings) is not None:
+                return True
+    return False
 
 
 def _confidence(rule: InferenceRule, stabilities: list[str]) -> float:
@@ -309,6 +408,8 @@ def apply_rule(
         if idx == len(rule.if_pattern):
             if not _check_type_guards(rule.type_guards, bindings, normalized.entity_types):
                 return
+            if _unless_violated(rule, bindings, normalized):
+                return
             subject = _resolve_term(rule.then_pattern.subject, bindings)
             predicate = _resolve_term(rule.then_pattern.predicate, bindings)
             obj = _resolve_term(rule.then_pattern.object, bindings)
@@ -326,7 +427,7 @@ def apply_rule(
             ))
             return
         pattern = rule.if_pattern[idx]
-        for fact in facts:
+        for fact in _candidate_facts(pattern, bindings, normalized):
             extended = _match_pattern(pattern, fact, bindings)
             if extended is not None:
                 recurse(

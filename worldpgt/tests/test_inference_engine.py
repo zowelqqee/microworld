@@ -25,6 +25,9 @@ CAPABILITY = "capability_inheritance_v1"
 TRANSITIVITY = "ownership_transitivity_v1"
 FOUNDER = "founder_shared_v1"
 LEADER = "leader_shared_v1"
+CAUSAL = "causal_chain_v1"
+EXPERTISE = "expertise_inheritance_v1"
+COMPETITOR = "competitor_detection_v1"
 
 
 # ---------------------------------------------------------------------------
@@ -139,7 +142,7 @@ class TestCapabilityInheritance:
         f = next(f for f in facts if f.predicate == "develops")
         assert ("Starlink Business", "owned_by", "SpaceX") in f.chain
 
-    def test_division_of_pattern_matched(self):
+    def test_division_of_pattern_does_not_inherit_parent_capabilities(self):
         overlay = [
             _ent("Tesla", "organization"),
             _ent("Tesla Energy", "organization"),
@@ -148,7 +151,7 @@ class TestCapabilityInheritance:
         ]
         ws = run_inference(overlay)
         facts = ws.for_subject("Tesla Energy")
-        assert any(f.predicate == "produces" and f.object == "electric cars" for f in facts)
+        assert not any(f.predicate == "produces" and f.object == "electric cars" for f in facts)
 
     def test_class_only_definition_without_creator_produces_no_facts(self):
         overlay = [
@@ -399,6 +402,63 @@ class TestFounderShared:
 
 
 # ---------------------------------------------------------------------------
+# Additional base rules — causal, expertise, competitors
+# ---------------------------------------------------------------------------
+
+class TestExpandedBaseRules:
+    def test_causal_chain_indirectly_requires(self):
+        overlay = [
+            _rel("Starlink", "enables", "satellite internet access"),
+            _rel("satellite internet access", "requires", "satellites"),
+        ]
+        ws = run_inference(overlay)
+        assert any(
+            f.subject == "Starlink"
+            and f.predicate == "indirectly_requires"
+            and f.object == "satellites"
+            and f.rule == CAUSAL
+            for f in ws.facts
+        )
+
+    def test_expertise_inheritance_from_founder_known_for(self):
+        overlay = [
+            _ent("Elon Musk", "person"),
+            _rel("Elon Musk", "founded", "SpaceX"),
+            _rel("Elon Musk", "known_for", "Tesla"),
+        ]
+        ws = run_inference(overlay)
+        assert any(
+            f.subject == "SpaceX"
+            and f.predicate == "associated_with_expertise"
+            and f.object == "Tesla"
+            and f.rule == EXPERTISE
+            for f in ws.facts
+        )
+
+    def test_competitor_detection_finds_shared_capability_between_organizations(self):
+        overlay = [
+            _ent("SpaceX", "organization"),
+            _ent("Blue Origin", "organization"),
+            _rel("SpaceX", "develops", "rockets"),
+            _rel("Blue Origin", "develops", "rockets"),
+        ]
+        ws = run_inference(overlay)
+        assert any(
+            f.subject == "SpaceX"
+            and f.predicate == "competes_with"
+            and f.object == "Blue Origin"
+            and f.rule == COMPETITOR
+            for f in ws.facts
+        )
+        assert any(
+            f.subject == "Blue Origin"
+            and f.predicate == "competes_with"
+            and f.object == "SpaceX"
+            for f in ws.facts
+        )
+
+
+# ---------------------------------------------------------------------------
 # InferenceWorkspace API
 # ---------------------------------------------------------------------------
 
@@ -533,7 +593,9 @@ class TestRuleCombinations:
         ]
         ws = run_inference(overlay)
 
-        # Rule 1: capability inheritance (Starlink service, Tesla Energy organization)
+        # Rule 1: capability inheritance (Starlink service only; Tesla Energy is
+        # a structural division and keeps ownership without inheriting product
+        # capabilities).
         assert any(
             f.subject == "Starlink" and f.predicate == "develops"
             and f.object == "rockets" for f in ws.facts
@@ -542,7 +604,7 @@ class TestRuleCombinations:
             f.subject == "Falcon 9" and f.predicate == "develops"
             and f.object == "spacecraft" for f in ws.facts
         )
-        assert any(
+        assert not any(
             f.subject == "Tesla Energy" and f.predicate == "produces"
             and f.object == "electric cars" for f in ws.facts
         )
@@ -600,6 +662,18 @@ class TestIntegrationRealOverlay:
             for f in ws.for_subject("SpaceX")
         )
 
+    def test_spacex_associated_with_musk_expertise(self, ws):
+        assert any(
+            f.predicate == "associated_with_expertise" and f.object == "Tesla"
+            for f in ws.for_subject("SpaceX")
+        )
+
+    def test_spacex_competes_with_blue_origin_on_shared_capability(self, ws):
+        assert any(
+            f.predicate == "competes_with" and f.object == "Blue Origin"
+            for f in ws.for_subject("SpaceX")
+        )
+
     def test_all_inferred_facts_are_marked_inferred(self, ws):
         assert all(f.source == "inferred" for f in ws.facts)
 
@@ -611,5 +685,6 @@ class TestIntegrationRealOverlay:
 
     def test_all_facts_carry_a_known_base_rule_id(self, ws):
         known = {CAPABILITY, TRANSITIVITY, FOUNDER, LEADER,
-                 "classification_chain_v1", "activity_inheritance_v1"}
+                 "classification_chain_v1", "activity_inheritance_v1",
+                 CAUSAL, EXPERTISE, COMPETITOR}
         assert all(f.rule in known for f in ws.facts)

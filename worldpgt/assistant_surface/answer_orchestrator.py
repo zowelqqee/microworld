@@ -48,6 +48,7 @@ from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.query_engine import executor as qe_executor
 from worldpgt.query_engine import plan_builder as qe_plan_builder
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
+from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 
 # Static, deterministic policy explanations (no factual claims, no overlay data).
 _WEAK_LINK_POLICY_TEXT = (
@@ -96,6 +97,11 @@ class AnswerOrchestrator:
         if overlay_path_resolved is None:
             overlay_path_resolved, _ = resolve_overlay(overlay_mode)
         self._provider = WikiMemoryOverlayProvider(overlay_path_resolved)
+        self._surface_index = EntitySurfaceIndex(
+            accepted_overlay_path=_EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json",
+            promoted_overlay_path=Path(overlay_path_resolved),
+            snapshot_overlay_path=_EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json",
+        )
         self.ontology_layer_path = ontology_layer_path
         if self.ontology_layer_path is None and DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH.is_file():
             self.ontology_layer_path = str(DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH)
@@ -108,7 +114,12 @@ class AnswerOrchestrator:
         self._cross_page_planner = CrossPageAnswerPlanner(provider=self._provider)
         self._selector = ContextSelector(overlay_mode, overlay_path=overlay_path)
 
-    _QE_ONLY_HINTS: frozenset[str] = frozenset({"count", "size_compare", "filtered_lookup"})
+    _QE_ONLY_HINTS: frozenset[str] = frozenset({
+        "count",
+        "size_compare",
+        "filtered_lookup",
+        "lookup",
+    })
 
     # ------------------------------------------------------------------ #
     def answer(self, question: str, *, answer_style: str = "normal") -> AssistantAnswer:
@@ -117,7 +128,7 @@ class AnswerOrchestrator:
             answer_style = style_resolution.answer_style
             question = style_resolution.question
 
-        route = route_question(question)
+        route = route_question(question, self._surface_index)
         trace = new_trace(route)
         _pack, ctx = self._selector.select(question)
         attach_context(trace, ctx)
@@ -303,7 +314,7 @@ class AnswerOrchestrator:
         )
 
     def _entity_relation_answer(self, route, ctx, trace) -> AssistantAnswer:
-        semantic = parse_semantic_query(route.question)
+        semantic = parse_semantic_query(route.question, self._surface_index)
         qe_plan = qe_plan_builder.build(route.question, semantic)
         if qe_plan.question_type_hint in self._QE_ONLY_HINTS and qe_plan.confidence > 0.7:
             qe_result = qe_executor.execute(qe_plan, self._provider, self._ontology_layer_items)

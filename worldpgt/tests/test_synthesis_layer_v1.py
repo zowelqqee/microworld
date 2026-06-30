@@ -37,7 +37,12 @@ from worldpgt.entity_qa.symbolic_text_generator import (
     next_speech_unit_candidates,
 )
 from worldpgt.entity_qa.synthesis_engine import synthesize
-from worldpgt.entity_qa.types import SynthesisAnswer, SynthesisFactGroup
+from worldpgt.entity_qa.types import (
+    EntityQAEvidence,
+    EntityQAPlan,
+    SynthesisAnswer,
+    SynthesisFactGroup,
+)
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 
 _EXPERIMENTS = Path(__file__).parent.parent / "experiments"
@@ -131,9 +136,115 @@ def test_elon_musk_synthesis_has_snapshot_tier(planner):
     assert "businessman" in low
     assert "founded spacex, neuralink, the boring company, and xai" in low
     # net worth is a dated, source-qualified estimate -> SNAPSHOT tier
-    assert "according to forbes" in low
-    assert "should be rechecked" in low
+    # as_of 2026-06 is within the 30-day freshness window for estimated_net_worth
+    # so the renderer uses present tense without the "may be outdated" caveat
+    assert "estimated net worth is us$1.1 trillion (forbes)" in low
     assert "snapshot —" not in low
+
+
+def test_open_synthesis_structured_rendering_orders_tiers():
+    result = SynthesisAnswer(
+        subject="ExampleCo",
+        matched=True,
+        match_kind="exact",
+        definition="robotics company",
+        entity_type="organization",
+        groups=[
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="develops",
+                objects=["robots", "drones", "sensors", "arms", "software"],
+                tier="VERIFIED",
+            ),
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="founded_by",
+                objects=["Ada Stone"],
+                tier="VERIFIED",
+            ),
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="known_for",
+                objects=["Robotics"],
+                tier="VERIFIED",
+            ),
+            SynthesisFactGroup(
+                kind="snapshot",
+                predicate="estimated_revenue",
+                objects=["US$10 billion"],
+                tier="SNAPSHOT",
+                source_name="ExampleSource",
+                as_of="2026-06",
+            ),
+            SynthesisFactGroup(
+                kind="inferred_relation",
+                predicate="competes_with",
+                objects=["PeerCo"],
+                tier="INFERRED",
+                rule="competitor_detection_v1",
+                confidence=0.7,
+            ),
+        ],
+    )
+    analyzed = analyze("Tell me about ExampleCo.")
+    plan = EntityQAPlan(
+        analyzed=analyzed,
+        decision="answer",
+        audit_reason=None,
+        evidence=EntityQAEvidence(),
+        render_template="open_synthesis",
+        render_args={"synthesis": result, "question": analyzed.question},
+        confidence=0.9,
+    )
+
+    answer = render(plan)
+
+    assert answer.startswith("ExampleCo is a robotics company.")
+    assert "It develops robots, drones, sensors, arms, and 1 more." in answer
+    assert answer.index("It develops") < answer.index("It was founded by Ada Stone.")
+    assert answer.index("It was founded by Ada Stone.") < answer.index("It is known for Robotics.")
+    assert "As of June 2026, its estimated revenue is US$10 billion (ExampleSource)" in answer
+    assert "\n\nBased on reasoning:\nIt competes with PeerCo." in answer
+
+
+def test_open_synthesis_person_without_gender_uses_plural_pronoun():
+    result = SynthesisAnswer(
+        subject="Ada Stone",
+        matched=True,
+        match_kind="exact",
+        definition="engineer",
+        entity_type="person",
+        groups=[
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="known_for",
+                objects=["Robotics"],
+                tier="VERIFIED",
+            ),
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="founded",
+                objects=["ExampleCo"],
+                tier="VERIFIED",
+            ),
+        ],
+    )
+    analyzed = analyze("Tell me about Ada Stone.")
+    plan = EntityQAPlan(
+        analyzed=analyzed,
+        decision="answer",
+        audit_reason=None,
+        evidence=EntityQAEvidence(),
+        render_template="open_synthesis",
+        render_args={"synthesis": result, "question": analyzed.question},
+        confidence=0.9,
+    )
+
+    answer = render(plan)
+
+    assert "They are known for Robotics." in answer
+    assert "They founded ExampleCo." in answer
+    assert "It is known for Robotics." not in answer
 
 
 def test_blue_origin_synthesis(planner):
