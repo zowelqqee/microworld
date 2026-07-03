@@ -66,11 +66,16 @@ _MIN_SURFACE_LEN = 2
 def _norm(s: str) -> str:
     s = (s or "").lower().strip()
     # Drop possessive markers so "SpaceX's" matches the "SpaceX" surface.
-    s = re.sub(r"[''`]s\b", "", s)
-    s = re.sub(r"s[''`]\b", "s", s)
-    s = re.sub(r"[''`]", "", s)
-    s = re.sub(r"\s+", " ", s)
-    return s
+    words = []
+    for word in s.split():
+        if word.endswith("'s") or word.endswith("`s"):
+            word = word[:-2]
+        elif word.endswith("s'") or word.endswith("s`"):
+            word = word[:-1]
+        word = word.replace("'", "").replace("`", "")
+        if word:
+            words.append(word)
+    return " ".join(words)
 
 
 def _is_generic(surface: str) -> bool:
@@ -140,6 +145,8 @@ def match_entities(
 
     for surface, kind, meta in surfaces:
         n = _norm(surface)
+        if n not in qlow:
+            continue
         # Word-boundary search over the normalized question.
         m = _get_pattern(n).search(qlow)
         if not m:

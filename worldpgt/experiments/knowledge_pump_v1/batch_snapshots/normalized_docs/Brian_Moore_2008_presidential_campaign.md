@@ -1,9 +1,0 @@
-# Brian Moore 2008 presidential campaign
-
-Source: https://en.wikipedia.org/wiki/Brian_Moore_2008_presidential_campaign
-Retrieved at: 2026-06-23T01:54:46Z
-Revision ID: 
-Raw text SHA256: 
-Status: LOCAL_WIKIPEDIA_SNAPSHOT
-Safe for accepted memory: false
-Requires ingestion/quarantine/promotion/regression: true

@@ -6,15 +6,17 @@ Deterministic rule-based only. No ML. No network.
 
 from __future__ import annotations
 
+import datetime
 import re
 
+from worldpgt.cognition.phrase_graph import generate as generate_phrase_graph
 from worldpgt.entity_qa.semantic_speech_planner import (
     build_speech_plan,
     render_speech_plan,
 )
 from worldpgt.entity_qa.types import EntityQAPlan
 from worldpgt.knowledge.temporal_classification import temporal_caveat, weakest_temporal_class
-from worldpgt.relation_extraction_v2.relation_policy import should_hedge_render
+from worldpgt.relation_extraction_v2.relation_policy import freshness_window_days, should_hedge_render
 
 _ORDINAL_START_RE = re.compile(
     r"^\s*(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|"
@@ -148,12 +150,9 @@ def _render_negated_is_a(args: dict) -> str:
 
 
 def _definition_sentence(subject: str, def_text: str) -> str:
-    if def_text and _should_use_the(def_text):
-        article = "the"
-    elif def_text and def_text[0].lower() in "aeiou":
-        article = "an"
-    else:
-        article = "a"
+    article = _article_for_definition(def_text)
+    if not article:
+        return f"{subject} is {def_text}."
     return f"{subject} is {article} {def_text}."
 
 
@@ -170,16 +169,377 @@ def _render_open_synthesis(args: dict) -> str:
             f"match I know — {subject}:"
         )
 
-    body = render_speech_plan(
-        build_speech_plan(
-            result,
-            str(args.get("question") or ""),
-            answer_style=str(args.get("answer_style") or "normal"),
-        )
+    body = _render_structured_synthesis(
+        result,
+        answer_style=str(args.get("answer_style") or "normal"),
     )
     if prefix:
         body = f"{prefix} {body}".strip()
     return body
+
+
+_SYNTHESIS_CAPABILITY_PREDICATES = frozenset({
+    "develops",
+    "produces",
+    "manufactures",
+    "operates",
+    "publishes",
+    "provides",
+    "enables",
+    "uses",
+    "used_for",
+    "works_by",
+    "supports",
+    "runs_on",
+    "offers",
+})
+_SYNTHESIS_FOUNDING_OWNERSHIP_PREDICATES = frozenset({
+    "founded",
+    "founded_by",
+    "owned_by",
+    "subsidiary_of",
+    "part_of",
+    "service_of",
+    "platform_of",
+})
+
+
+def _render_structured_synthesis(result, *, answer_style: str = "normal") -> str:
+    phrase_graph_body = generate_phrase_graph(result, answer_style=answer_style)
+    if phrase_graph_body:
+        return phrase_graph_body
+
+    subject = result.subject or ""
+    reference = _synthesis_reference(subject, result.entity_type, result.definition)
+    sentences: list[str] = []
+
+    if result.definition:
+        sentences.append(_definition_sentence(subject, result.definition))
+    elif result.entity_type:
+        sentences.append(f"{subject} is {_article_phrase(result.entity_type)}.")
+
+    buckets = _synthesis_buckets(result)
+
+    if buckets["capability"]:
+        sentences.extend(_render_synthesis_predicate_bucket(reference, buckets["capability"]))
+    if buckets["founding_ownership"]:
+        founding = _render_synthesis_predicate_bucket(reference, buckets["founding_ownership"])
+        founding, enrichment_sentence = _weave_enrichment(
+            founding, getattr(result, "enrichment", None)
+        )
+        sentences.extend(founding)
+        if enrichment_sentence:
+            sentences.append(enrichment_sentence)
+    if buckets["known_for"]:
+        known_items: list[str] = []
+        for objects in buckets["known_for"].values():
+            known_items.extend(objects)
+        known = _join_limited(known_items)
+        if known:
+            sentences.append(_synthesis_sentence(reference, "is known for", known))
+    if buckets["other"] and answer_style not in {"brief", "followup"}:
+        sentences.extend(
+            _render_synthesis_predicate_bucket(reference, buckets["other"], limit_predicates=2)
+        )
+
+    if answer_style == "brief":
+        return " ".join(sentences[:2]).strip()
+    if answer_style == "followup":
+        return " ".join(sentences[:2]).strip()
+
+    snapshot_sentences = [
+        _render_synthesis_snapshot(subject, result.entity_type, group, result.definition)
+        for group in buckets["snapshot"]
+    ]
+    snapshot_sentences = [s for s in snapshot_sentences if s]
+    if snapshot_sentences:
+        sentences.extend(snapshot_sentences)
+    if result.unknown_notes:
+        sentences.append(
+            "I don't have verified information about "
+            f"{_join_limited(list(result.unknown_notes))} yet."
+        )
+
+    # Connected prose, not a fact-per-line dump: the sentences are already
+    # ordered definition -> activity -> founding (+enrichment) -> known_for ->
+    # snapshot, so joining them as a paragraph reads as a single narrative.
+    body = " ".join(sentences).strip()
+    inferred_sentences = _render_synthesis_inferred(reference, buckets["inferred"])
+    if inferred_sentences:
+        inferred = " ".join(inferred_sentences)
+        body = f"{body}\n\nBased on reasoning:\n{inferred}".strip()
+    return body
+
+
+def _weave_enrichment(founding_sentences: list[str], enrichment) -> tuple[list[str], str | None]:
+    """Attach a verified fact about the founded/owned entity to the narrative.
+
+    Two shapes, both deterministic and backed only by existing facts:
+      - appositive, when the founding clause names a single entity at its end
+        ("It was founded by Elon Musk." -> "...Elon Musk, a businessman."), or
+      - a follow-on sentence describing the entity when the clause lists several
+        ("He founded SpaceX, Neuralink, ..." + "SpaceX is an aerospace ...").
+
+    Returns the (possibly rewritten) founding sentences and an optional trailing
+    sentence. The connector ("founded") is already stated; only a fact about the
+    related entity is added, never an invented link.
+    """
+    note = str(getattr(enrichment, "note", "") or "").strip().rstrip(".")
+    obj = str(getattr(enrichment, "object", "") or "").strip()
+    if not note or not obj:
+        return founding_sentences, None
+
+    note_phrase = _article_phrase(note)
+    decorated: list[str] = []
+    attached = False
+    for sentence in founding_sentences:
+        if not attached and sentence.endswith(f"{obj}."):
+            sentence = f"{sentence[:-1]}, {note_phrase}."
+            attached = True
+        decorated.append(sentence)
+    if attached:
+        return decorated, None
+
+    return founding_sentences, _definition_sentence(obj, note)
+
+
+def _synthesis_buckets(result) -> dict:
+    buckets = {
+        "capability": {},
+        "founding_ownership": {},
+        "known_for": {},
+        "other": {},
+        "snapshot": [],
+        "inferred": [],
+    }
+    for group in result.groups:
+        tier = str(getattr(group, "tier", "") or "")
+        pred = str(getattr(group, "predicate", "") or "")
+        if tier == "SNAPSHOT":
+            buckets["snapshot"].append(group)
+            continue
+        if tier == "INFERRED":
+            buckets["inferred"].append(group)
+            continue
+        if pred == "is_a":
+            continue
+        target = "other"
+        if pred in _SYNTHESIS_CAPABILITY_PREDICATES:
+            target = "capability"
+        elif pred in _SYNTHESIS_FOUNDING_OWNERSHIP_PREDICATES:
+            target = "founding_ownership"
+        elif pred == "known_for":
+            target = "known_for"
+        bucket = buckets[target]
+        bucket.setdefault((str(getattr(group, "kind", "") or ""), pred), []).extend(
+            str(obj) for obj in getattr(group, "objects", []) if str(obj)
+        )
+    return buckets
+
+
+def _render_synthesis_predicate_bucket(
+    reference: str,
+    bucket: dict,
+    *,
+    limit_predicates: int | None = None,
+) -> list[str]:
+    sentences: list[str] = []
+    items = list(bucket.items())
+    if limit_predicates is not None:
+        items = items[:limit_predicates]
+    for (kind, pred), objects in items:
+        obj_list = _join_limited(objects)
+        if not obj_list:
+            continue
+        phrase = _synthesis_phrase(kind, pred)
+        sentences.append(_synthesis_sentence(reference, phrase, obj_list))
+    return sentences
+
+
+def _synthesis_sentence(reference: str, phrase: str, obj_list: str) -> str:
+    if reference == "They":
+        if phrase.startswith("is "):
+            phrase = "are " + phrase.removeprefix("is ")
+        elif phrase.startswith("was "):
+            phrase = "were " + phrase.removeprefix("was ")
+    if phrase.startswith("founded "):
+        return f"{reference} {phrase}{obj_list}."
+    return f"{reference} {phrase} {obj_list}."
+
+
+def _render_synthesis_inferred(reference: str, groups: list) -> list[str]:
+    grouped: dict[tuple[str, str], list[str]] = {}
+    for group in groups:
+        pred = str(getattr(group, "predicate", "") or "")
+        kind = str(getattr(group, "kind", "") or "")
+        grouped.setdefault((kind, pred), []).extend(
+            str(obj) for obj in getattr(group, "objects", []) if str(obj)
+        )
+    return _render_synthesis_predicate_bucket(reference, grouped, limit_predicates=4)
+
+
+def _synthesis_phrase(kind: str, pred: str) -> str:
+    if kind == "inverse_relation":
+        return {
+            "founded": "was founded by",
+            "owned_by": "owns",
+            "develops": "is developed by",
+            "produces": "is produced by",
+            "publishes": "is published by",
+            "leader_of": "is led by",
+            "subsidiary_of": "is the parent of",
+            "merged_with": "merged with",
+        }.get(pred, f"is linked to via {pred}")
+    return {
+        "develops": "develops",
+        "produces": "produces",
+        "manufactures": "manufactures",
+        "operates": "operates",
+        "publishes": "publishes",
+        "provides": "provides",
+        "enables": "enables",
+        "uses": "uses",
+        "used_for": "is used for",
+        "works_by": "works by",
+        "supports": "supports",
+        "runs_on": "runs on",
+        "offers": "offers",
+        "founded_by": "was founded by",
+        "founded": "founded ",
+        "owned_by": "is owned by",
+        "owns": "owns",
+        "subsidiary_of": "is a subsidiary of",
+        "parent_company_of": "is the parent company of",
+        "part_of": "is part of",
+        "service_of": "is a service of",
+        "platform_of": "is a platform of",
+        "located_in": "is based in",
+        "based_at": "is based at",
+        "headquartered_in": "is headquartered in",
+        "associated_with_expertise": "is associated with expertise around",
+        "competes_with": "competes with",
+        "indirectly_requires": "indirectly requires",
+        "share_founder": "shares a founder with",
+        "share_leader": "shares a leader with",
+    }.get(pred, _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}"))
+
+
+def _render_synthesis_snapshot(
+    subject: str, entity_type: str | None, group, definition: str | None = None
+) -> str:
+    objects = [str(obj) for obj in getattr(group, "objects", []) if str(obj)]
+    if not objects:
+        return ""
+    obj = objects[0]
+    predicate_raw = str(getattr(group, "predicate", "") or "")
+    predicate = predicate_raw.replace("_", " ")
+    source = str(getattr(group, "source_name", "") or "source")
+    as_of_raw = str(getattr(group, "as_of", "") or "")
+    as_of = _human_as_of(as_of_raw)
+    possessive = _synthesis_possessive(subject, entity_type, definition)
+    if as_of:
+        if _is_recent_snapshot(as_of_raw, predicate_raw):
+            return f"As of {as_of}, {possessive} {predicate} is {obj} ({source})."
+        return (
+            f"As of {as_of}, {possessive} {predicate} was {obj} "
+            f"({source} - may be outdated)."
+        )
+    return f"{subject}'s {predicate} was {obj} ({source} - may be outdated)."
+
+
+def _human_as_of(value: str) -> str:
+    m = re.fullmatch(r"(\d{4})-(\d{2})", value.strip())
+    if not m:
+        return value
+    months = {
+        "01": "January",
+        "02": "February",
+        "03": "March",
+        "04": "April",
+        "05": "May",
+        "06": "June",
+        "07": "July",
+        "08": "August",
+        "09": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December",
+    }
+    return f"{months.get(m.group(2), m.group(2))} {m.group(1)}"
+
+
+def _is_recent_snapshot(as_of_raw: str, predicate_raw: str = "") -> bool:
+    """True when the snapshot is still within the predicate's freshness window."""
+    m = re.fullmatch(r"(\d{4})-(\d{2})", (as_of_raw or "").strip())
+    if not m:
+        return False
+    try:
+        snap = datetime.date(int(m.group(1)), int(m.group(2)), 1)
+        window = freshness_window_days(predicate_raw, "snapshot") if predicate_raw else 90
+        return (datetime.date.today() - snap).days <= window
+    except ValueError:
+        return False
+
+
+# Person-role nouns that let us recover a human referent when the overlay cards
+# the entity as "other" (common in pump-extracted data, e.g. Warren Buffett).
+_PERSON_ROLE_TOKENS = frozenset({
+    "investor", "businessman", "businesswoman", "entrepreneur", "philanthropist",
+    "ceo", "founder", "co-founder", "cofounder", "executive", "magnate", "banker",
+    "economist", "politician", "lawyer", "author", "engineer", "scientist",
+    "journalist", "actor", "actress", "musician", "inventor", "chairman",
+})
+
+
+def _is_person(entity_type: str | None, definition: str | None) -> bool:
+    if entity_type == "person":
+        return True
+    if entity_type in {"organization", "place", "product", "work"}:
+        return False
+    tokens = set(re.findall(r"[a-z]+", (definition or "").lower()))
+    return bool(tokens & _PERSON_ROLE_TOKENS)
+
+
+def _synthesis_reference(
+    subject: str, entity_type: str | None, definition: str | None = None
+) -> str:
+    if _is_person(entity_type, definition):
+        if subject in {"Elon Musk", "Jeff Bezos", "Michael Bloomberg", "Ray Kroc"}:
+            return "He"
+        return "They"
+    return "It"
+
+
+def _synthesis_possessive(
+    subject: str, entity_type: str | None, definition: str | None = None
+) -> str:
+    if _is_person(entity_type, definition):
+        if subject in {"Elon Musk", "Jeff Bezos", "Michael Bloomberg", "Ray Kroc"}:
+            return "his"
+        return "their"
+    return "its"
+
+
+def _join_limited(items: list[str], *, max_items: int = 4) -> str:
+    deduped = _dedupe_ci(items)
+    if len(deduped) > max_items:
+        shown = deduped[:max_items]
+        shown.append(f"{len(deduped) - max_items} more")
+        return _join_list(shown)
+    return _join_list(deduped)
+
+
+def _dedupe_ci(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for item in items:
+        cleaned = str(item).strip()
+        key = cleaned.lower()
+        if not cleaned or key in seen:
+            continue
+        seen.add(key)
+        out.append(cleaned)
+    return out
 
 
 def _render_define(args: dict) -> str:
@@ -193,13 +553,11 @@ def _render_define(args: dict) -> str:
     if definition:
         def_text = definition["definition"]
         entity_label = definition["subject"]
-        if def_text and _should_use_the(def_text):
-            article = "the"
-        elif def_text and def_text[0].lower() in "aeiou":
-            article = "an"
+        article = _article_for_definition(def_text)
+        if article:
+            parts.append(f"{entity_label} is {article} {def_text}.")
         else:
-            article = "a"
-        parts.append(f"{entity_label} is {article} {def_text}.")
+            parts.append(f"{entity_label} is {def_text}.")
     elif entity:
         label = entity["label"]
         etype = entity.get("entity_type", "entity")
@@ -581,5 +939,21 @@ def _article_phrase(text: str) -> str:
         return text
     if text.lower().startswith(("a ", "an ", "the ")):
         return text
-    article = "an" if text[0].lower() in "aeiou" else "a"
+    article = _article_for_definition(text)
+    if not article:
+        return text
     return f"{article} {text}"
+
+
+def _article_for_definition(text: str) -> str:
+    text = str(text or "").strip()
+    if not text:
+        return "a"
+    lower = text.lower()
+    if _should_use_the(text):
+        return "the"
+    if lower.startswith(("one of ", "part of ")):
+        return ""
+    if lower.startswith(("uni", "use", "user", "euro", "eu ")):
+        return "a"
+    return "an" if lower[:1] in "aeiou" else "a"

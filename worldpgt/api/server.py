@@ -26,6 +26,13 @@ from pydantic import BaseModel
 
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
 from worldpgt.assistant_surface.context_selector import resolve_overlay
+from worldpgt.assistant_surface.think_aloud import (
+    build_think_aloud,
+    select_inferred_facts,
+    select_profile_inferred_facts,
+)
+from worldpgt.cognition.inference_engine import run_inference, InferenceWorkspace
+from worldpgt.entity_qa.synthesis_engine import synthesize
 from worldpgt.assistant_surface.types import (
     AssistantAnswer,
     OVERLAY_MODE_CUSTOM_PATH,
@@ -56,6 +63,7 @@ _surface_index: EntitySurfaceIndex | None = None
 _overlay_items: list[dict] = []
 _overlay_mode: str = "pump-dry-run"
 _fact_count: int = 0
+_inference_workspace: InferenceWorkspace | None = None
 _sessions: dict[str, ConversationContext] = {}
 
 app = FastAPI(title="Microworld QA API", docs_url="/docs")
@@ -69,6 +77,7 @@ class AskRequest(BaseModel):
     question: str
     overlay: Optional[str] = None  # informational only; server uses startup overlay
     enable_multihop: bool = False
+    think_aloud: bool = False
     session_id: Optional[str] = None
 
 
@@ -78,6 +87,7 @@ class AskResponse(BaseModel):
     support: str
     resolved_references: list[str]
     session_id: str
+    thinking: Optional[str] = None
 
 
 # --------------------------------------------------------------------------- #
@@ -130,8 +140,9 @@ def ask(req: AskRequest) -> AskResponse:
     # Optional multi-hop pass.
     answer_text = answer.answer_text
     support = answer.support_kind
+    multihop = None
 
-    should_try_multihop = req.enable_multihop and (
+    should_try_multihop = (req.enable_multihop or req.think_aloud) and (
         answer.decision == "audit"
         or answer.support_kind == "explicit_connection_path"
     )
@@ -144,6 +155,11 @@ def ask(req: AskRequest) -> AskResponse:
             if multihop.decision == "answer" and answer.decision == "audit":
                 answer = _patch_decision(answer, "answer")
 
+    # Optional think-aloud surface (presentation only — no behavior change).
+    thinking = None
+    if req.think_aloud:
+        thinking, answer_text = _think_aloud(req.question, answer, multihop)
+
     # Record turn for future coreference resolution.
     _record_turn(context, question=req.question, semantic_query=semantic_query, answer=answer)
 
@@ -153,12 +169,56 @@ def ask(req: AskRequest) -> AskResponse:
         support=support,
         resolved_references=resolved_refs,
         session_id=session_id,
+        thinking=thinking,
     )
 
 
 # --------------------------------------------------------------------------- #
 # Helpers
 # --------------------------------------------------------------------------- #
+
+_HOW_WORKS_TOKENS = ("how do", "how does", "how is", "how are")
+
+
+def _is_profile_question(question: str, answer: AssistantAnswer) -> bool:
+    """A profile ask ("tell me about X", "what is X") — not a mechanism question."""
+    if answer.route != "entity_definition" or answer.decision == "audit":
+        return False
+    low = (question or "").lower()
+    if any(low.startswith(t) for t in _HOW_WORKS_TOKENS):
+        return False
+    return True
+
+
+def _think_aloud(question: str, answer: AssistantAnswer, multihop) -> tuple[str, str]:
+    """Build the (thinking, answer) think-aloud surface for one answer."""
+    cs = (answer.trace.context_summary if answer.trace else None) or {}
+    matched = cs.get("matched_entities") or []
+    subject = matched[0] if matched else (answer.question or question)
+
+    synthesis = None
+    profile_inferred = []
+    if _is_profile_question(question, answer) and _orchestrator is not None:
+        synthesis = synthesize(
+            _orchestrator._provider, subject, question, _surface_index
+        )
+        profile_inferred = select_profile_inferred_facts(_inference_workspace, subject)
+
+    inferred = (
+        select_inferred_facts(_inference_workspace, subject, question)
+        if answer.decision == "audit"
+        else profile_inferred
+    )
+    ta = build_think_aloud(
+        answer,
+        question=question,
+        subject=subject,
+        multihop_result=multihop,
+        inferred_facts=inferred,
+        synthesis=synthesis,
+    )
+    return ta.thinking, ta.answer
+
 
 def _unresolved_reference_answer(question: str, overlay_mode: str, reference: str) -> AssistantAnswer:
     return AssistantAnswer(
@@ -269,6 +329,7 @@ def _load_overlay_items(overlay_path: str) -> list[dict]:
 
 def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
+    global _inference_workspace
 
     _overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
 
@@ -282,6 +343,8 @@ def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
     )
     _overlay_items = _load_overlay_items(resolved_path)
     _fact_count = len(_overlay_items)
+    # Ephemeral inference workspace, computed once for think-aloud explanations.
+    _inference_workspace = run_inference(_overlay_items)
 
     print(f"[microworld-api] overlay={_overlay_mode}  facts={_fact_count}", flush=True)
 
@@ -294,23 +357,41 @@ def main(argv: list[str] | None = None) -> None:
     import os
     import uvicorn
 
+    _BUILTIN_OVERLAYS = ("accepted", "promoted", "snapshot-dry-run", "pump-dry-run")
+
     parser = argparse.ArgumentParser(description="Microworld QA API Server")
     parser.add_argument(
         "--overlay",
         default="pump-dry-run",
-        choices=["accepted", "promoted", "snapshot-dry-run", "pump-dry-run"],
+        help="Built-in overlay mode (%s) or a domain overlay as "
+             "'domain:<path-to-overlay.json>' produced by run_domain_bootstrap_v1."
+             % ", ".join(_BUILTIN_OVERLAYS),
     )
     parser.add_argument("--overlay-path", default=None)
     parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
     parser.add_argument("--host", default="127.0.0.1")
     args = parser.parse_args(argv)
 
-    if args.overlay_path is not None:
-        p = Path(args.overlay_path)
-        if not p.is_file():
-            parser.error(f"--overlay-path does not exist: {p}")
+    overlay_path = args.overlay_path
+    overlay_mode = args.overlay
 
-    _startup(args.overlay, overlay_path=args.overlay_path)
+    # Domain overlay: '--overlay domain:<path>' serves a cold-start domain
+    # overlay produced by the universal bootstrap. The server treats it as a
+    # custom overlay path (it does not know the difference).
+    if overlay_mode.startswith("domain:"):
+        overlay_path = overlay_mode.split("domain:", 1)[1]
+        overlay_mode = "pump-dry-run"  # pack semantics; path overrides anyway
+    elif overlay_mode not in _BUILTIN_OVERLAYS:
+        parser.error(
+            f"--overlay must be one of {_BUILTIN_OVERLAYS} or 'domain:<path>'"
+        )
+
+    if overlay_path is not None:
+        p = Path(overlay_path)
+        if not p.is_file():
+            parser.error(f"overlay path does not exist: {p}")
+
+    _startup(overlay_mode, overlay_path=overlay_path)
 
     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
 

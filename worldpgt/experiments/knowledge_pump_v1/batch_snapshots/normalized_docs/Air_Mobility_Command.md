@@ -1,9 +1,0 @@
-# Air Mobility Command
-
-Source: https://en.wikipedia.org/wiki/Air_Mobility_Command
-Retrieved at: 2026-06-23T04:05:43Z
-Revision ID: 
-Raw text SHA256: 
-Status: LOCAL_WIKIPEDIA_SNAPSHOT
-Safe for accepted memory: false
-Requires ingestion/quarantine/promotion/regression: true

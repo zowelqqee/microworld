@@ -137,6 +137,11 @@ class EntityAnswerPlanner:
                     evidence.source_facts_used.append(
                         f"source_fact:{result.subject}:{group.predicate}:{group.source_name}"
                     )
+            elif group.tier == "INFERRED":
+                for obj in group.objects:
+                    evidence.overlay_items_used.append(
+                        f"inferred_rule:{group.rule}:{group.predicate}:{obj}"
+                    )
             else:
                 for obj in group.objects:
                     evidence.overlay_items_used.append(

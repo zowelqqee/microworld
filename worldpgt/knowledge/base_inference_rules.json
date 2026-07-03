@@ -3,10 +3,13 @@
     "overlay_type": "overlay_inference_rule",
     "rule_id": "capability_inheritance_v1",
     "name": "Capability Inheritance",
-    "description": "If A is owned by B and B has a capability (develops/produces/...) C, then A has that capability C.",
+    "description": "If A is owned by B and B has a capability (develops/produces/...) C, then A has that capability C. A division/subsidiary (subsidiary_of) is a structural part of its parent and does NOT inherit capabilities — only ownership chains.",
     "if_pattern": [
       {"subject": "?A", "predicate": "owned_by", "object": "?B"},
       {"subject": "?B", "predicate": "?P", "object": "?C", "predicate_class": "capability"}
+    ],
+    "unless_pattern": [
+      {"subject": "?A", "predicate": "subsidiary_of", "object": "?B"}
     ],
     "then_pattern": {"subject": "?A", "predicate": "?P", "object": "?C"},
     "confidence_rule": "min_stability",
@@ -93,6 +96,55 @@
     "then_pattern": {"subject": "?A", "predicate": "?P", "object": "?C"},
     "confidence_rule": "min_stability",
     "type_guards": {},
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "causal_chain_v1",
+    "name": "Causal Chain",
+    "description": "If A enables B and B requires C, then A indirectly requires C.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "enables", "object": "?B"},
+      {"subject": "?B", "predicate": "requires", "object": "?C"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "indirectly_requires", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {},
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "expertise_inheritance_v1",
+    "name": "Expertise Inheritance",
+    "description": "If A was founded by B and B is known for C, then A is associated with expertise C.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "founded_by", "object": "?B"},
+      {"subject": "?B", "predicate": "known_for", "object": "?C"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "associated_with_expertise", "object": "?C"},
+    "confidence_rule": "min_stability",
+    "type_guards": {"?B": ["person"]},
+    "stability": "stable",
+    "enabled": true
+  },
+  {
+    "overlay_type": "overlay_inference_rule",
+    "rule_id": "competitor_detection_v1",
+    "name": "Competitor Detection",
+    "description": "If two organizations share the same capability object, infer that they compete with each other unless an explicit same_as edge says they are the same entity.",
+    "if_pattern": [
+      {"subject": "?A", "predicate": "?P1", "object": "?C", "predicate_class": "capability"},
+      {"subject": "?B", "predicate": "?P2", "object": "?C", "predicate_class": "capability"}
+    ],
+    "unless_pattern": [
+      {"subject": "?A", "predicate": "same_as", "object": "?B"},
+      {"subject": "?B", "predicate": "same_as", "object": "?A"}
+    ],
+    "then_pattern": {"subject": "?A", "predicate": "competes_with", "object": "?B"},
+    "confidence_rule": "min_stability",
+    "type_guards": {"?A": ["organization"], "?B": ["organization"]},
     "stability": "stable",
     "enabled": true
   }

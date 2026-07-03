@@ -250,6 +250,8 @@ def _snapshot_sentence(subject: str, group) -> str:
 
 def _definition_sentence(subject: str, def_text: str) -> str:
     article = _article_for(def_text)
+    if not article:
+        return f"{subject} is {def_text}."
     return f"{subject} is {article} {def_text}."
 
 
@@ -259,11 +261,19 @@ def _article_phrase(text: str) -> str:
         return text
     if text.lower().startswith(("a ", "an ", "the ")):
         return text
-    return f"{_article_for(text)} {text}"
+    article = _article_for(text)
+    if not article:
+        return text
+    return f"{article} {text}"
 
 
 def _article_for(text: str) -> str:
     text = str(text or "").strip()
+    lower = text.lower()
+    if lower.startswith(("one of ", "part of ")):
+        return ""
+    if lower.startswith(("uni", "use", "user", "euro", "eu ")):
+        return "a"
     return "an" if text[:1].lower() in "aeiou" else "a"
 
 

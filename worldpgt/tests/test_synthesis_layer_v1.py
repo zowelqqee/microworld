@@ -11,6 +11,7 @@ planner thresholds, or the validators.
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -20,6 +21,10 @@ from worldpgt.cognition.reasoning_engine import reason_over_plan
 from worldpgt.cognition.self_correction import self_correct_answer
 from worldpgt.cognition.support_guard import validate_conclusion_support
 from worldpgt.cognition.surface_selection import select_answer_variant
+from worldpgt.cognition.phrase_graph import (
+    build_phrase_graph,
+    generate as generate_phrase_graph,
+)
 from worldpgt.cognition.types import (
     ActionPlan,
     AllowedConclusion,
@@ -76,6 +81,33 @@ class _BulkOnlyProvider:
 
     def all_source_facts(self):
         return self._provider.all_source_facts()
+
+
+class _StaticProvider:
+    def __init__(
+        self,
+        *,
+        entities: list[dict],
+        definitions: list[dict] | None = None,
+        relations: list[dict] | None = None,
+        source_facts: list[dict] | None = None,
+    ):
+        self._entities = entities
+        self._definitions = definitions or []
+        self._relations = relations or []
+        self._source_facts = source_facts or []
+
+    def all_entities(self):
+        return self._entities
+
+    def all_definitions(self):
+        return self._definitions
+
+    def all_relations(self):
+        return self._relations
+
+    def all_source_facts(self):
+        return self._source_facts
 
 
 def _answer(planner, question: str):
@@ -199,9 +231,13 @@ def test_open_synthesis_structured_rendering_orders_tiers():
 
     answer = render(plan)
 
-    assert answer.startswith("ExampleCo is a robotics company.")
-    assert "It develops robots, drones, sensors, arms, and 1 more." in answer
-    assert answer.index("It develops") < answer.index("It was founded by Ada Stone.")
+    # The learned relative-clause connector folds the first fact into the
+    # definition: "X is a Y that develops ..." instead of a separate "It" clause.
+    assert answer.startswith(
+        "ExampleCo is a robotics company that develops robots, drones, sensors, arms, and 1 more."
+    )
+    assert "It was founded by Ada Stone." in answer
+    assert answer.index("that develops") < answer.index("It was founded by Ada Stone.")
     assert answer.index("It was founded by Ada Stone.") < answer.index("It is known for Robotics.")
     assert "As of June 2026, its estimated revenue is US$10 billion (ExampleSource)" in answer
     assert "\n\nBased on reasoning:\nIt competes with PeerCo." in answer
@@ -243,7 +279,100 @@ def test_open_synthesis_person_without_gender_uses_plural_pronoun():
     answer = render(plan)
 
     assert "They are known for Robotics." in answer
-    assert "They founded ExampleCo." in answer
+    # First fact woven into the definition via the learned person subordinator.
+    assert "Ada Stone is an engineer who founded ExampleCo." in answer
+
+
+def test_phrase_graph_learns_fragments_and_transitions_from_overlay(tmp_path):
+    overlay = tmp_path / "overlay.json"
+    overlay.write_text(
+        json.dumps(
+            [
+                {
+                    "overlay_type": "overlay_entity",
+                    "label": "ExampleCo",
+                    "entity_type": "organization",
+                    "source_page": "ExampleCo",
+                },
+                {
+                    "overlay_type": "overlay_definition",
+                    "subject": "ExampleCo",
+                    "definition": "robotics company",
+                    "source_page": "ExampleCo",
+                    "evidence_text": "ExampleCo is a robotics company.",
+                },
+                {
+                    "overlay_type": "overlay_relation",
+                    "subject": "ExampleCo",
+                    "predicate": "develops",
+                    "object": "robots",
+                    "source_page": "ExampleCo",
+                    "evidence_text": "ExampleCo develops robots.",
+                },
+                {
+                    "overlay_type": "overlay_relation",
+                    "subject": "ExampleCo",
+                    "predicate": "founded_by",
+                    "object": "Ada Stone",
+                    "source_page": "ExampleCo",
+                    "evidence_text": "ExampleCo was founded by Ada Stone.",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    graph = build_phrase_graph(
+        overlay_paths=[overlay],
+        artifact_paths=[],
+        snapshot_dir=tmp_path / "missing",
+    )
+
+    assert graph.best_fragment(("organization", "is_a")) == "is {definition}"
+    assert graph.best_fragment(("organization", "develops")) == "develops {object_list}"
+    assert graph.best_fragment(("organization", "founded_by")) == "was founded by {object_list}"
+    assert graph.best_connector(
+        ("organization", "is_a"),
+        ("organization", "develops"),
+    ) == ""
+
+
+def test_phrase_graph_generates_deterministic_best_path_from_synthesis():
+    graph = build_phrase_graph(overlay_paths=[], artifact_paths=[], snapshot_dir=Path("/missing"))
+    graph.add_fragment("person", "is_a", "is {definition}")
+    graph.add_fragment("person", "founded", "founded {object_list}")
+    graph.add_fragment("person", "known_for", "is known for {object_list}")
+    graph.add_transition(("person", "is_a"), ("person", "founded"), "")
+    graph.add_transition(("person", "founded"), ("person", "known_for"), "")
+    result = SynthesisAnswer(
+        subject="Ada Stone",
+        matched=True,
+        match_kind="exact",
+        definition="investor",
+        entity_type="other",
+        groups=[
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="known_for",
+                objects=["Robotics"],
+                tier="VERIFIED",
+            ),
+            SynthesisFactGroup(
+                kind="forward_relation",
+                predicate="founded",
+                objects=["ExampleCo"],
+                tier="VERIFIED",
+            ),
+        ],
+    )
+
+    answer = generate_phrase_graph(result, graph=graph)
+
+    assert answer == (
+        "Ada Stone is an investor. "
+        "They founded ExampleCo. "
+        "They are known for Robotics."
+    )
     assert "It is known for Robotics." not in answer
 
 
@@ -259,7 +388,7 @@ def test_open_synthesis_groups_verified_facts_in_speech_plan(planner):
     _, plan, answer = _answer(planner, "What do you know about Blue Origin?")
 
     assert plan.decision == "answer"
-    assert "It develops rockets and spacecraft" in answer
+    assert "that develops rockets and spacecraft" in answer
     assert "What I can verify" not in answer
     assert "Key supported details" not in answer
     assert answer.count("Blue Origin") < 5
@@ -1165,6 +1294,76 @@ def test_synthesize_uses_bulk_provider_api(provider):
     assert result.matched is True
     assert result.definition
     assert result.snapshot_count == 1
+
+
+def test_synthesize_filters_noisy_forward_relations_for_people():
+    provider = _StaticProvider(
+        entities=[
+            {
+                "label": "Elon Musk",
+                "entity_type": "person",
+                "aliases": [],
+                "source_page": "Elon Musk",
+            }
+        ],
+        definitions=[
+            {
+                "subject": "Elon Musk",
+                "definition": "businessman and entrepreneur",
+            }
+        ],
+        relations=[
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Elon Musk",
+                "predicate": "founded",
+                "object": "SpaceX",
+                "risk": "low",
+                "stability": "stable",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Elon Musk",
+                "predicate": "provides",
+                "object": "Starlink",
+                "risk": "low",
+                "stability": "stable",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Elon Musk",
+                "predicate": "enables",
+                "object": "Starlink",
+                "risk": "low",
+                "stability": "stable",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Elon Musk",
+                "predicate": "uses",
+                "object": "Tesla",
+                "risk": "low",
+                "stability": "stable",
+            },
+            {
+                "overlay_type": "overlay_relation",
+                "subject": "Elon Musk",
+                "predicate": "merged_with",
+                "object": "March",
+                "risk": "low",
+                "stability": "stable",
+            },
+        ],
+    )
+
+    result = synthesize(provider, "Elon Musk", "Tell me about Elon Musk.")
+    forward = [
+        (group.predicate, tuple(group.objects))
+        for group in result.groups
+        if group.kind == "forward_relation"
+    ]
+
+    assert forward == [("founded", ("SpaceX",))]
 
 
 def test_no_leadership_in_verified_facts(planner):

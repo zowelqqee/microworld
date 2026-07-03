@@ -93,3 +93,4 @@ worldpgt/experiments/knowledge_pump_v1/**/local_types.generated.json
 worldpgt/experiments/knowledge_pump_v1/**/schema_induced_overlay_*.json
 worldpgt/experiments/knowledge_pump_v1/**/selected_docs.json
 worldpgt/experiments/knowledge_pump_v1/pump_*.json
+worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json

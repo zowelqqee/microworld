@@ -27,6 +27,18 @@ from worldpgt.query_engine.types import PlanResult, QueryPlan
 
 _AUDIT_EMPTY = "no matching facts found in the overlay after safety filtering"
 _AUDIT_NO_STEPS = "query plan has no executable steps"
+_LOOKUP_VERBS = {
+    "founded_by": "was founded by",
+    "located_in": "is located in",
+    "develops": "develops",
+    "produces": "produces",
+    "publishes": "publishes",
+    "owned_by": "is owned by",
+    "supports": "supports",
+    "runs_on": "runs on",
+    "merged_with": "merged with",
+    "first_released": "was first released in",
+}
 
 
 def execute(
@@ -406,7 +418,10 @@ def _render(plan: QueryPlan, results: dict[str, Any], final_data: Any) -> str:
             grouped: dict[str, list[str]] = {}
             for r in items:
                 grouped.setdefault(str(r.get("predicate", "?")), []).append(str(r.get("object", "?")))
-            parts = [f"{subj} {pred} {', '.join(objs)}" for pred, objs in grouped.items()]
+            parts = [
+                f"{subj} {_LOOKUP_VERBS.get(pred, pred)} {_join_list(objs)}"
+                for pred, objs in grouped.items()
+            ]
             return ". ".join(parts) + "."
         else:
             obj = str(items[0].get("object", "?"))

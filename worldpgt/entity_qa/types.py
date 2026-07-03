@@ -30,7 +30,7 @@ EntityQAIntent = Literal[
 ]
 
 # Confidence tiers used by the synthesis layer (layer 3).
-SynthesisTier = Literal["VERIFIED", "SNAPSHOT", "UNKNOWN"]
+SynthesisTier = Literal["VERIFIED", "SNAPSHOT", "INFERRED", "UNKNOWN"]
 
 EntityQADecision = Literal["answer", "audit", "no"]
 
@@ -115,6 +115,9 @@ class SynthesisFactGroup:
     tier: str  # "VERIFIED" | "SNAPSHOT"
     source_name: Optional[str] = None
     as_of: Optional[str] = None
+    rule: Optional[str] = None
+    confidence: Optional[float] = None
+    chain: tuple[tuple[str, str, str], ...] = ()
 
     def to_dict(self) -> dict:
         return {
@@ -124,6 +127,36 @@ class SynthesisFactGroup:
             "tier": self.tier,
             "source_name": self.source_name,
             "as_of": self.as_of,
+            "rule": self.rule,
+            "confidence": self.confidence,
+            "chain": [list(step) for step in self.chain],
+        }
+
+
+@dataclass
+class SynthesisEnrichment:
+    """A single verified fact about an entity *related to* the synthesized subject.
+
+    When the subject founds / owns / leads another entity ``object``, the engine
+    pulls one key fact about that object (its definition, or a ranking) so the
+    narrative can connect the two — "X founded Y, an aerospace manufacturer" —
+    rather than naming Y bare. The fact is always backed by an overlay item on
+    ``object``; the connector ("founded") is a relation the subject already has.
+    """
+
+    object: str  # the related entity Y being described
+    note: str  # a verified descriptor of Y (definition / ranking), no article
+    relation: str  # predicate linking subject -> Y (founded, owned_by, ...)
+    kind: str = "definition"  # "definition" | "ranking"
+    entity_type: Optional[str] = None
+
+    def to_dict(self) -> dict:
+        return {
+            "object": self.object,
+            "note": self.note,
+            "relation": self.relation,
+            "kind": self.kind,
+            "entity_type": self.entity_type,
         }
 
 
@@ -144,6 +177,7 @@ class SynthesisAnswer:
     groups: list[SynthesisFactGroup] = field(default_factory=list)
     unknown_notes: list[str] = field(default_factory=list)
     candidate_entities: list[str] = field(default_factory=list)
+    enrichment: Optional[SynthesisEnrichment] = None
 
     @property
     def verified_count(self) -> int:
@@ -159,6 +193,12 @@ class SynthesisAnswer:
             len(g.objects) for g in self.groups if g.tier == "SNAPSHOT"
         )
 
+    @property
+    def inferred_count(self) -> int:
+        return sum(
+            len(g.objects) for g in self.groups if g.tier == "INFERRED"
+        )
+
     def to_dict(self) -> dict:
         return {
             "subject": self.subject,
@@ -169,8 +209,10 @@ class SynthesisAnswer:
             "groups": [g.to_dict() for g in self.groups],
             "unknown_notes": list(self.unknown_notes),
             "candidate_entities": list(self.candidate_entities),
+            "enrichment": self.enrichment.to_dict() if self.enrichment else None,
             "verified_count": self.verified_count,
             "snapshot_count": self.snapshot_count,
+            "inferred_count": self.inferred_count,
         }
 
 

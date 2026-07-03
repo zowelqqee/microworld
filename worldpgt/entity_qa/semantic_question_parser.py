@@ -39,6 +39,10 @@ _PASSIVE_OPEN_RELATION_RE = re.compile(
     r"^what\s+(?:is|was)\s+(developed|produced|published)\s+by\s+.+?[\?\.]?$",
     re.IGNORECASE,
 )
+_WHERE_LOCATED_RE = re.compile(
+    r"^where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?\.]?$",
+    re.IGNORECASE,
+)
 _DEFINE_KIND_PREFIX_RE = re.compile(r"^what\s+(?:kind|type|sort)\s+of\b", re.IGNORECASE)
 _WHAT_IS_DEFINITION_PREFIX_RE = re.compile(r"^what\s+is\s+(?:a|an|the)\s+", re.IGNORECASE)
 _OPEN_MANUFACTURE_RE = re.compile(r"^what\s+does\s+.+?\s+manufactures?\b", re.IGNORECASE)
@@ -66,6 +70,26 @@ _OPEN_QUERY_RE = re.compile(
     r"what\s+does\s+(?P<f>.+?)\s+do|"
     r"how\s+(?:does|do)\s+(?P<g>.+?)\s+(?:work|works|operate|operates|function|functions)"
     r")[\?\.]?$",
+    re.IGNORECASE,
+)
+_RU_DEFINITION_RE = re.compile(
+    r"^что (?:такое|это) (.+?)[\?]?$",
+    re.IGNORECASE,
+)
+_RU_FOUNDER_RE = re.compile(
+    r"^кто (?:основал|создал|придумал|запустил) (.+?)[\?]?$",
+    re.IGNORECASE,
+)
+_RU_TELL_RE = re.compile(
+    r"^расскажи (?:про|о|об) (.+?)[\?]?$",
+    re.IGNORECASE,
+)
+_RU_ACTIVITY_RE = re.compile(
+    r"^чем занимается (.+?)[\?]?$",
+    re.IGNORECASE,
+)
+_RU_OWNER_RE = re.compile(
+    r"^кому принадлежит (.+?)[\?]?$",
     re.IGNORECASE,
 )
 
@@ -282,6 +306,20 @@ def _definition_subject(match: re.Match[str]) -> str:
     return ""
 
 
+def _resolved_subject_from_raw(
+    raw_subject: str,
+    mentions: list[tuple[str, str, int, int]],
+    index: EntitySurfaceIndex,
+) -> str | None:
+    subject = index.resolve(raw_subject)
+    if subject is not None:
+        return subject
+    raw_mentions = _entity_mentions(raw_subject, index)
+    if raw_mentions:
+        return raw_mentions[0][1]
+    return mentions[0][1] if mentions else None
+
+
 def _exact_definition_entity(
     raw_subject: str,
     mentions: list[tuple[str, str, int, int]],
@@ -370,6 +408,74 @@ def parse_semantic_query(
     mentions = _entity_mentions(q, surface_index)
     entities = [canonical for _surface, canonical, _start, _end in mentions]
 
+    # Russian controlled forms. These are deliberately narrow regex mappings,
+    # not general Russian NLP; entity resolution still goes through the same
+    # EntitySurfaceIndex used by the English parser and extraction stack.
+    ru_definition = _RU_DEFINITION_RE.match(q)
+    if ru_definition:
+        raw_subject = _clean(ru_definition.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent=None,
+            unknown_position="relation",
+            query_type="definition",
+            confidence=0.9 if subject else 0.1,
+        )
+
+    ru_founder = _RU_FOUNDER_RE.match(q)
+    if ru_founder:
+        raw_subject = _clean(ru_founder.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent="founded_by",
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if subject else 0.2,
+        )
+
+    ru_tell = _RU_TELL_RE.match(q)
+    if ru_tell:
+        raw_subject = _clean(ru_tell.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent=None,
+            unknown_position="relation",
+            query_type="open_synthesis",
+            confidence=0.85 if subject else 0.2,
+        )
+
+    ru_activity = _RU_ACTIVITY_RE.match(q)
+    if ru_activity:
+        raw_subject = _clean(ru_activity.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent="produces",
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if subject else 0.2,
+        )
+
+    ru_owner = _RU_OWNER_RE.match(q)
+    if ru_owner:
+        raw_subject = _clean(ru_owner.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent="owned_by",
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if subject else 0.2,
+        )
+
     # Open synthesis: explicit "tell me about / what do you know about / how does
     # X work" phrasings. Resolve the entity loosely — synthesis tolerates an
     # unresolved subject and falls back to keyword overlap downstream.
@@ -425,6 +531,19 @@ def parse_semantic_query(
         relation = "produces"
     if relation == "manufactures" and _OPEN_MANUFACTURE_RE.search(q):
         relation = "produces"
+
+    where_located = _WHERE_LOCATED_RE.match(q)
+    if where_located:
+        raw_subject = _clean(where_located.group(1))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent="located_in",
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if subject else 0.2,
+        )
 
     is_a_match = _IS_A_RE.match(q)
     if is_a_match:

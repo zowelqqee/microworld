@@ -1108,6 +1108,21 @@ def test_precision_rejects_or_quarantines_bad_relations(item):
     assert _verdict(item) in ("reject", "quarantine")
 
 
+@pytest.mark.parametrize("obj", ["January", "March", "December", "2026", "42", "123"])
+def test_precision_rejects_temporal_or_short_number_relation_objects(obj):
+    item = _rel(
+        "Elon Musk",
+        "merged_with",
+        obj,
+        f"Elon Musk was mentioned near {obj} in a noisy extraction.",
+    )
+    result = apply_precision_firewall([item])
+
+    assert item not in result["accepted"]
+    assert result["rejected"] == [{"item": item, "reason": "object_is_temporal_word"}]
+    assert result["rejection_by_reason"] == {"object_is_temporal_word": 1}
+
+
 # --- bad definitions must be rejected or quarantined ---------------------------
 
 _BAD_DEFINITIONS = [

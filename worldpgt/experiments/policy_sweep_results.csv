@@ -1,9 +1,0 @@
-config_id,min_score,min_margin,total,continue_count,audit_count,suppress_count,correct_continue_count,wrong_continue_count,coverage_rate,precision_on_continued,answerable_recall,wrong_continue_rate,abstention_rate_on_answerable
-score1_margin0,1,0,120,43,77,0,43,0,0.3583,1.0000,0.3909,0.0000,0.6091
-score1_margin0.5,1,0.5,120,43,77,0,43,0,0.3583,1.0000,0.3909,0.0000,0.6091
-score1_margin1,1,1,120,43,77,0,43,0,0.3583,1.0000,0.3909,0.0000,0.6091
-score1_margin1.5,1,1.5,120,27,93,0,27,0,0.2250,1.0000,0.2455,0.0000,0.7545
-score2_margin0,2,0,120,27,93,0,27,0,0.2250,1.0000,0.2455,0.0000,0.7545
-score2_margin0.5,2,0.5,120,27,93,0,27,0,0.2250,1.0000,0.2455,0.0000,0.7545
-score2_margin1,2,1,120,27,93,0,27,0,0.2250,1.0000,0.2455,0.0000,0.7545
-score2_margin1.5,2,1.5,120,27,93,0,27,0,0.2250,1.0000,0.2455,0.0000,0.7545

@@ -170,6 +170,22 @@ _PRODUCES_RE = re.compile(
     r"what\s+does\s+(.+?)\s+(produce|develop|publish|manufacture)s?\b",
     re.IGNORECASE,
 )
+# Generic relation lookup for universal relation verbs (requirements,
+# permissions, prohibitions). Domain-agnostic — works for any bootstrapped
+# domain overlay; not a domain ontology.
+_GENERIC_RELATION_RE = re.compile(
+    r"what\s+does\s+(.+?)\s+(require|requires|need|needs|allow|allows|"
+    r"permit|permits|prohibit|prohibits|forbid|forbids)\b",
+    re.IGNORECASE,
+)
+_GENERIC_RELATION_PREDICATE: dict[str, str] = {
+    "require": "requires", "requires": "requires",
+    "need": "requires", "needs": "requires",
+    "allow": "allows", "allows": "allows",
+    "permit": "allows", "permits": "allows",
+    "prohibit": "prohibits", "prohibits": "prohibits",
+    "forbid": "prohibits", "forbids": "prohibits",
+}
 _REPORT_PUBLISH_RE = re.compile(
     r"(?:which|what)\s+reports?\s+does\s+(.+?)\s+publish(?:\s+annually)?[\?.]?$",
     re.IGNORECASE,
@@ -214,6 +230,10 @@ _IS_A_CLASS_RE = re.compile(
 # ---- define entity --------------------------------------------------
 _WHO_IS_RE = re.compile(
     r"^who\s+is\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_ELIGIBILITY_RE = re.compile(
+    r"^who\s+(?:qualifies\s+for|(?:is|are)\s+eligible\s+for)\s+(.+?)[\?.]?$",
     re.IGNORECASE,
 )
 _WHAT_IS_RE = re.compile(
@@ -624,6 +644,21 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=False,
         )
 
+    m = _GENERIC_RELATION_RE.search(q)
+    if m:
+        verb = m.group(2).lower()
+        predicate = _GENERIC_RELATION_PREDICATE.get(verb, verb)
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint=predicate,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     # 10. Relation — founded by / founder of / X's founders
     m = (
         _FOUNDER_OF_RE.search(q)
@@ -714,6 +749,21 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         )
 
     # 11. Define entity — who/what is X
+    # Eligibility phrasing ("who qualifies for X" / "who is eligible for X")
+    # resolves to the definition of X, whose text states who it is for.
+    m = _ELIGIBILITY_RE.match(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="define_entity",
+            subject=_clean(m.group(1)),
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     m = _WHO_IS_RE.match(q)
     if m:
         return AnalyzedEntityQuestion(

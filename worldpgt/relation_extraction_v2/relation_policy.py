@@ -327,6 +327,18 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "kind of": "type_of",
     "is a": "is_a",
     "is an": "is_a",
+    # generic universal relation verbs (domain-agnostic; used by the schema
+    # induction / domain bootstrap path for requirements, permissions, and
+    # prohibitions in arbitrary corpora — not a domain ontology).
+    "requires": "requires",
+    "require": "requires",
+    "required for": "requires",
+    "prerequisite": "requires",
+    "allows": "allows",
+    "permits": "allows",
+    "prohibits": "prohibits",
+    "prohibit": "prohibits",
+    "forbids": "prohibits",
     # source-qualified snapshots
     "estimated net worth": "estimated_net_worth",
     "net worth estimate": "estimated_net_worth",

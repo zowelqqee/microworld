@@ -14,7 +14,7 @@ from typing import Dict, List, Optional
 
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 
-from .entity_matcher import _get_pattern, _norm as _ematch_norm, build_surface_index, match_entities
+from .entity_matcher import build_surface_index, match_entities
 from .types import (
     OVERLAY_ACCEPTED,
     OVERLAY_PROMOTED,
@@ -55,9 +55,8 @@ _ESTIMATE_RE = re.compile(r"\b(estimate|estimates|estimated|net worth|ranking)\b
 
 def _norm(s: str) -> str:
     s = (s or "").lower().strip()
-    s = re.sub(r"[''`]", "", s)
-    s = re.sub(r"\s+", " ", s)
-    return s
+    s = s.replace("'", "").replace("`", "")
+    return " ".join(s.split())
 
 
 class _OverlayAccess:
@@ -95,10 +94,6 @@ class ContextPackBuilder:
         self._knowledge_requests = knowledge_requests or []
         # Build all inverted indices once — O(n) amortized, O(1) per query.
         self._surface_index = build_surface_index(self._overlay)
-        # Warm the pattern cache for all surfaces at init time so match_entities
-        # never recompiles a regex during a live query.
-        for surface, _kind, _meta in self._surface_index:
-            _get_pattern(_ematch_norm(surface))
         self._build_indices()
 
     def _build_indices(self) -> None:
@@ -110,6 +105,9 @@ class ContextPackBuilder:
                 _norm(e.get("source_page", "")),
                 *{_norm(alias) for alias in (e.get("aliases") or [])},
             }
+            definition = self._provider.get_definition_for_entity(e)
+            if definition:
+                terms.add(_norm(definition.get("subject", "")))
             terms = {term for term in terms if term}
             for term in terms:
                 self._entity_equivalents_by_term.setdefault(term, set()).update(terms)

@@ -119,13 +119,28 @@ _BAD_DEFINITION_MARKERS = (
     "physical place where", "co-inventor", " who ",
 )
 
+_BAD_DEFINITION_LEADS = frozenset({
+    "also",
+    "previously",
+    "additionally",
+    "further",
+    "later",
+})
+
 _GEMSTONES = frozenset({
     "ruby", "sapphire", "emerald", "diamond", "pearl", "opal", "topaz",
     "garnet", "amethyst", "aquamarine", "peridot", "citrine", "turquoise",
     "tanzanite", "alexandrite", "moonstone", "spinel", "zircon", "onyx",
 })
 
+_MONTH_NAMES = frozenset({
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+})
+
 _YEAR_RE = re.compile(r"(?:19|20)\d{2}")
+_STANDALONE_YEAR_RE = re.compile(r"^\d{4}$")
+_SHORT_NUMBER_RE = re.compile(r"^\d{1,3}$")
 
 
 def _norm(s: str) -> str:
@@ -139,6 +154,15 @@ def _strip(token: str) -> str:
 def _in_evidence(value: str, evidence: str) -> bool:
     nv = _norm(value)
     return bool(nv) and nv in _norm(evidence)
+
+
+def _object_is_temporal_word(obj: str) -> bool:
+    norm = _norm(obj)
+    return (
+        norm in _MONTH_NAMES
+        or bool(_STANDALONE_YEAR_RE.fullmatch(norm))
+        or bool(_SHORT_NUMBER_RE.fullmatch(norm))
+    )
 
 
 def _subject_ok(subject: str) -> bool:
@@ -421,6 +445,8 @@ _RELATION_HANDLERS = {
 
 
 def _check_relation(item: dict[str, Any]) -> tuple[str, str]:
+    if _object_is_temporal_word(str(item.get("object", ""))):
+        return "reject", "object_is_temporal_word"
     predicate = _norm(item.get("predicate", ""))
     handler = _RELATION_HANDLERS.get(predicate, _check_generic_relation)
     return handler(item)
@@ -469,6 +495,10 @@ def _check_definition(item: dict[str, Any]) -> tuple[str, str, dict[str, Any] | 
     for marker in _BAD_DEFINITION_MARKERS:
         if marker in ndef:
             return "reject", "definition_not_lead_style", None
+    if ndef.split()[:1] and ndef.split()[0] in _BAD_DEFINITION_LEADS:
+        return "reject", "definition_not_lead_style", None
+    if nev.split()[:1] and nev.split()[0] in _BAD_DEFINITION_LEADS:
+        return "reject", "definition_not_lead_style", None
 
     # Truncated: unbalanced parentheses.
     if definition.count("(") != definition.count(")"):
