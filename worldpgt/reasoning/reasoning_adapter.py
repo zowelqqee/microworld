@@ -15,13 +15,17 @@ import re
 from dataclasses import dataclass, field
 from typing import Any
 
+from worldpgt.cognition.inference_engine import InferenceWorkspace
 from worldpgt.reasoning.counterfactual import analyze_counterfactual
-from worldpgt.reasoning.counterfactual import render as render_counterfactual
 from worldpgt.reasoning.explanation_builder import explain_fact
-from worldpgt.reasoning.explanation_renderer import render as render_explanation
 from worldpgt.reasoning.pattern_discovery import (
+    PatternIndex,
     relevant_patterns,
     render_pattern_note,
+)
+from worldpgt.reasoning.reasoning_verbalizer import (
+    verbalize_counterfactual,
+    verbalize_explanation,
 )
 from worldpgt.reasoning.types import GraphPattern
 
@@ -215,12 +219,19 @@ def try_answer_reasoning(
     question: str,
     overlay_items: list[dict],
     patterns: list[GraphPattern] | None = None,
+    workspace: InferenceWorkspace | None = None,
+    pattern_index: PatternIndex | None = None,
 ) -> AssistantReasoningResult:
     """Try the reasoning layer on a controlled question form.
 
     *patterns* is optional pre-discovered context (e.g. the nightly artifact);
     when provided, explanations may cite a relevant pattern and the answer
     carries pattern notes. Absence of patterns never blocks an answer.
+
+    *workspace* and *pattern_index* are optional pre-computed caches (built
+    once over the full overlay, e.g. at server startup) that let explanation
+    and counterfactual analysis skip re-running inference / pattern discovery
+    on every call.
     """
     parsed = parse_reasoning_question(question)
     if parsed is None:
@@ -239,6 +250,8 @@ def try_answer_reasoning(
             parsed["predicate"],
             parsed["object"],
             patterns=patterns,
+            workspace=workspace,
+            graph=pattern_index.graph if pattern_index is not None else None,
         )
         notes = [
             render_pattern_note(p)
@@ -250,7 +263,7 @@ def try_answer_reasoning(
             question=question,
             kind="explanation",
             decision=chain.decision,
-            answer_text=render_explanation(chain),
+            answer_text=verbalize_explanation(chain),
             audit_reason=chain.audit_reason or "",
             detail=chain.to_dict(),
             pattern_notes=notes,
@@ -263,12 +276,14 @@ def try_answer_reasoning(
         parsed["predicate"],
         parsed["object"],
         patterns=patterns,
+        workspace=workspace,
+        pattern_index=pattern_index,
     )
     return AssistantReasoningResult(
         question=question,
         kind="counterfactual",
         decision=trace.decision,
-        answer_text=render_counterfactual(trace),
+        answer_text=verbalize_counterfactual(trace),
         audit_reason=trace.audit_reason or "",
         detail=trace.to_dict(),
         support_kind="structural_dependency_analysis",

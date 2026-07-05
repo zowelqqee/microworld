@@ -10,8 +10,10 @@
 
   #header { background: #1a1a2e; color: #eee; padding: 12px 20px; font-size: 15px; font-weight: 600; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: space-between; }
   #header .title span { color: #7fb3f5; }
-  #think-toggle { font-size: 12px; font-weight: 600; letter-spacing: 0.3px; padding: 6px 12px; border-radius: 999px; border: 1px solid #3a3a5e; background: #24244a; color: #aab; cursor: pointer; }
-  #think-toggle.on { background: #7fb3f5; color: #10102a; border-color: #7fb3f5; }
+  .header-actions { display: flex; align-items: center; gap: 8px; }
+  .mode-toggle { font-size: 12px; font-weight: 600; letter-spacing: 0.3px; padding: 6px 12px; border-radius: 999px; border: 1px solid #3a3a5e; background: #24244a; color: #aab; cursor: pointer; }
+  .mode-toggle.on { background: #7fb3f5; color: #10102a; border-color: #7fb3f5; }
+  #web-toggle.on { background: #8be0b2; color: #092414; border-color: #8be0b2; }
 
   #chat { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
 
@@ -48,7 +50,10 @@
 
 <div id="header">
   <div class="title">Microworld QA &mdash; <span id="overlay-label">loading...</span></div>
-  <button id="think-toggle" title="Show how the answer was reached">🧠 Think aloud: off</button>
+  <div class="header-actions">
+    <button id="web-toggle" class="mode-toggle" title="Use live web search for public current questions">Web search: off</button>
+    <button id="think-toggle" class="mode-toggle" title="Show how the answer was reached">🧠 Think aloud: off</button>
+  </div>
 </div>
 <div id="chat"></div>
 <div id="footer">
@@ -62,9 +67,11 @@ const input = document.getElementById('input');
 const send = document.getElementById('send');
 const overlayLabel = document.getElementById('overlay-label');
 const thinkToggle = document.getElementById('think-toggle');
+const webToggle = document.getElementById('web-toggle');
 
 let sessionId = null;
 let thinkAloud = false;
+let webSearch = false;
 
 thinkToggle.addEventListener('click', () => {
   thinkAloud = !thinkAloud;
@@ -72,11 +79,19 @@ thinkToggle.addEventListener('click', () => {
   thinkToggle.textContent = `🧠 Think aloud: ${thinkAloud ? 'on' : 'off'}`;
 });
 
+webToggle.addEventListener('click', () => {
+  webSearch = !webSearch;
+  webToggle.classList.toggle('on', webSearch);
+  webToggle.textContent = `Web search: ${webSearch ? 'on' : 'off'}`;
+});
+
 async function loadHealth() {
   try {
     const r = await fetch('/health');
     const d = await r.json();
-    overlayLabel.textContent = `overlay: ${d.overlay} · ${d.fact_count} facts`;
+    const pump = d.pump_summary || {};
+    const extra = pump.frontier_titles_total ? ` · ${pump.frontier_titles_total} frontier titles` : '';
+    overlayLabel.textContent = `overlay: ${d.overlay} · ${d.overlay_item_count || d.fact_count} overlay items${extra}`;
   } catch {
     overlayLabel.textContent = 'unavailable';
   }
@@ -181,7 +196,12 @@ async function ask() {
   const typing = addTyping();
 
   try {
-    const body = { question, enable_multihop: true, think_aloud: thinkAloud };
+    const body = {
+      question,
+      enable_multihop: true,
+      think_aloud: thinkAloud,
+      web_search: webSearch,
+    };
     if (sessionId) body.session_id = sessionId;
 
     const r = await fetch('/ask', {

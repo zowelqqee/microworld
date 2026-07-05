@@ -24,6 +24,10 @@ from worldpgt.reasoning.reasoning_adapter import (
     is_reasoning_compatible,
     try_answer_reasoning,
 )
+from worldpgt.reasoning.reasoning_verbalizer import (
+    verbalize_counterfactual,
+    verbalize_explanation,
+)
 from worldpgt.reasoning.types import (
     CounterfactualTrace,
     ExplanationChain,
@@ -46,4 +50,6 @@ __all__ = [
     "render_pattern_note",
     "save_patterns",
     "try_answer_reasoning",
+    "verbalize_counterfactual",
+    "verbalize_explanation",
 ]

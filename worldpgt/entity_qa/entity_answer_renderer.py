@@ -87,6 +87,8 @@ def render(plan: EntityQAPlan) -> str:
         return _render_relation(args)
     if t == "inverse_relation_lookup":
         return _render_inverse_relation(args)
+    if t == "definition_relation_lookup":
+        return _render_definition_relation_lookup(args)
     if t == "comparative_intersection":
         return _render_comparative_intersection(args)
     if t == "ontology_is_a":
@@ -708,7 +710,9 @@ def _render_inverse_relation(args: dict) -> str:
     if predicate == "owned_by":
         return f"{known_object} owns {subjects}.{caveat}"
     if predicate == "leader_of":
-        return f"{subjects} leads {known_object}.{caveat}"
+        subject_names = [r.get("subject", "") for r in relations if r.get("subject")]
+        verb = "are" if len(subject_names) != 1 else "is"
+        return f"{subjects} {verb} linked to {known_object} through leadership.{caveat}"
     if predicate == "develops":
         return f"{subjects} develops {known_object}.{caveat}"
     if predicate == "produces":
@@ -725,6 +729,18 @@ def _render_inverse_relation(args: dict) -> str:
         return f"{subjects} is a subsidiary of {known_object}.{caveat}"
 
     return f"{subjects} has relation {predicate} to {known_object}.{caveat}"
+
+
+def _render_definition_relation_lookup(args: dict) -> str:
+    subject = str(args.get("subject") or "")
+    predicate = str(args.get("predicate") or "")
+    obj = str(args.get("object") or "")
+
+    if predicate == "leader_of" and subject and obj:
+        return f"The definition I have for {subject} says it was led by {obj}."
+    if subject and obj:
+        return f"The definition I have for {subject} supports {obj} via {predicate}."
+    return "I don't have verified information about this."
 
 
 def _render_comparative_intersection(args: dict) -> str:

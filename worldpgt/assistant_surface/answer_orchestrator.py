@@ -22,10 +22,13 @@ or trusted memory. No network, no ML.
 from __future__ import annotations
 
 import json
+import os
+from functools import lru_cache
 from pathlib import Path
 
 from worldpgt.assistant_surface.context_selector import ContextSelector, resolve_overlay
 from worldpgt.assistant_surface.answer_style import resolve_answer_style
+from worldpgt.assistant_surface.perf_timing import step as _timed_step
 from worldpgt.assistant_surface.question_router import route as route_question
 from worldpgt.assistant_surface.assistant_trace import (
     attach_context,
@@ -49,6 +52,7 @@ from worldpgt.query_engine import executor as qe_executor
 from worldpgt.query_engine import plan_builder as qe_plan_builder
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.assistant_surface.web_search import WebSearchProvider, render_web_answer
 
 # Static, deterministic policy explanations (no factual claims, no overlay data).
 _WEAK_LINK_POLICY_TEXT = (
@@ -85,31 +89,100 @@ def _load_ontology_layer(path: str | Path | None) -> list[dict]:
     return [row for row in rows if isinstance(row, dict)]
 
 
+@lru_cache(maxsize=16)
+def _cached_ontology_layer(path_str: str, mtime_ns: int, size: int) -> tuple[dict, ...]:
+    del mtime_ns, size
+    return tuple(_load_ontology_layer(path_str))
+
+
+def _load_ontology_layer_cached(path: str | Path | None) -> list[dict]:
+    if path is None:
+        return []
+    p = Path(path)
+    if not p.is_file():
+        return []
+    stat = p.stat()
+    return list(_cached_ontology_layer(str(p), stat.st_mtime_ns, stat.st_size))
+
+
+@lru_cache(maxsize=16)
+def _cached_surface_index(
+    promoted_overlay_path: str,
+    promoted_mtime_ns: int,
+    promoted_size: int,
+    accepted_mtime_ns: int,
+    accepted_size: int,
+    snapshot_mtime_ns: int,
+    snapshot_size: int,
+) -> EntitySurfaceIndex:
+    del (
+        promoted_mtime_ns,
+        promoted_size,
+        accepted_mtime_ns,
+        accepted_size,
+        snapshot_mtime_ns,
+        snapshot_size,
+    )
+    return EntitySurfaceIndex(
+        accepted_overlay_path=_EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json",
+        promoted_overlay_path=Path(promoted_overlay_path),
+        snapshot_overlay_path=_EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json",
+    )
+
+
+def _surface_index_for_overlay(promoted_overlay_path: str | Path) -> EntitySurfaceIndex:
+    promoted = Path(promoted_overlay_path)
+    accepted = _EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json"
+    snapshot = _EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json"
+    promoted_stat = promoted.stat()
+    accepted_stat = accepted.stat()
+    snapshot_stat = snapshot.stat()
+    return _cached_surface_index(
+        str(promoted),
+        promoted_stat.st_mtime_ns,
+        promoted_stat.st_size,
+        accepted_stat.st_mtime_ns,
+        accepted_stat.st_size,
+        snapshot_stat.st_mtime_ns,
+        snapshot_stat.st_size,
+    )
+
+
 class AnswerOrchestrator:
     def __init__(
         self,
         overlay_mode: str = "promoted",
         overlay_path: str | None = None,
         ontology_layer_path: str | None = None,
+        inference_workspace=None,
+        web_search_provider: WebSearchProvider | None = None,
+        web_search_enabled: bool | None = None,
     ) -> None:
         self.overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
         overlay_path_resolved = overlay_path
         if overlay_path_resolved is None:
             overlay_path_resolved, _ = resolve_overlay(overlay_mode)
         self._provider = WikiMemoryOverlayProvider(overlay_path_resolved)
-        self._surface_index = EntitySurfaceIndex(
-            accepted_overlay_path=_EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json",
-            promoted_overlay_path=Path(overlay_path_resolved),
-            snapshot_overlay_path=_EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json",
-        )
+        self._surface_index = _surface_index_for_overlay(overlay_path_resolved)
         self.ontology_layer_path = ontology_layer_path
         if self.ontology_layer_path is None and DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH.is_file():
             self.ontology_layer_path = str(DEFAULT_WIKIDATA_P279_ONTOLOGY_LAYER_PATH)
-        ontology_layer_items = _load_ontology_layer(self.ontology_layer_path)
+        ontology_layer_items = _load_ontology_layer_cached(self.ontology_layer_path)
         self._ontology_layer_items = ontology_layer_items
+        self._inference_workspace = inference_workspace
+        if web_search_enabled is None:
+            web_search_enabled = os.environ.get("MICROWORLD_WEB_SEARCH_ENABLED", "").strip().lower() in {
+                "1",
+                "true",
+                "yes",
+                "on",
+            }
+        self._web_search_enabled_default = web_search_enabled
+        self._web_search_provider = web_search_provider
         self._entity_planner = EntityAnswerPlanner(
             provider=self._provider,
             ontology_layer_items=ontology_layer_items,
+            inference_workspace=inference_workspace,
         )
         self._cross_page_planner = CrossPageAnswerPlanner(provider=self._provider)
         self._selector = ContextSelector(overlay_mode, overlay_path=overlay_path)
@@ -118,52 +191,76 @@ class AnswerOrchestrator:
         "count",
         "size_compare",
         "filtered_lookup",
-        "lookup",
     })
 
     # ------------------------------------------------------------------ #
-    def answer(self, question: str, *, answer_style: str = "normal") -> AssistantAnswer:
-        style_resolution = resolve_answer_style(question)
-        if style_resolution.answer_style != "normal":
-            answer_style = style_resolution.answer_style
-            question = style_resolution.question
+    def answer(
+        self,
+        question: str,
+        *,
+        answer_style: str = "normal",
+        web_search_enabled: bool | None = None,
+    ) -> AssistantAnswer:
+        with _timed_step("orchestrator.answer_style"):
+            style_resolution = resolve_answer_style(question)
+            if style_resolution.answer_style != "normal":
+                answer_style = style_resolution.answer_style
+                question = style_resolution.question
 
-        route = route_question(question, self._surface_index)
+        with _timed_step("orchestrator.route_question"):
+            route = route_question(question, self._surface_index)
         trace = new_trace(route)
-        _pack, ctx = self._selector.select(question)
+        with _timed_step("orchestrator.context_select"):
+            _pack, ctx = self._selector.select(question)
         attach_context(trace, ctx)
 
         # 1. Hard safety route — always audit.
         if route.is_hard_safety:
-            return self._hard_safety_audit(route, ctx, trace)
+            with _timed_step("orchestrator.branch:hard_safety_audit"):
+                if route.intent == "current_live_request":
+                    answer = self._web_search_current_answer(
+                        route,
+                        ctx,
+                        trace,
+                        web_search_enabled=web_search_enabled,
+                    )
+                    if answer is not None:
+                        return answer
+                return self._hard_safety_audit(route, ctx, trace)
 
         # 2. Connection / path questions -> cross-page QA.
         if route.intent == "connection_path":
-            return self._connection_answer(route, ctx, trace)
+            with _timed_step("orchestrator.branch:connection_answer"):
+                return self._connection_answer(route, ctx, trace)
 
         # 3a. Source-qualified facts -> entity QA.
         if route.intent == "source_qualified_fact":
-            return self._source_fact_answer(route, ctx, trace)
+            with _timed_step("orchestrator.branch:source_fact_answer"):
+                return self._source_fact_answer(route, ctx, trace)
 
         # 3b. Weak-link / policy explanations -> safe policy answer.
         if route.intent == "weak_link_policy":
-            return self._policy_answer(route, ctx, trace)
+            with _timed_step("orchestrator.branch:policy_answer"):
+                return self._policy_answer(route, ctx, trace)
 
         # 3c. Entity relation lookup.
         if route.intent == "entity_relation":
-            return self._entity_relation_answer(route, ctx, trace)
+            with _timed_step("orchestrator.branch:entity_relation_answer"):
+                return self._entity_relation_answer(route, ctx, trace)
 
         # 3d. Entity definition.
         if route.intent == "entity_definition":
-            return self._entity_definition_answer(
-                route,
-                ctx,
-                trace,
-                answer_style=answer_style,
-            )
+            with _timed_step("orchestrator.branch:entity_definition_answer"):
+                return self._entity_definition_answer(
+                    route,
+                    ctx,
+                    trace,
+                    answer_style=answer_style,
+                )
 
         # 5. Unknown -> audit, missing knowledge.
-        return self._unknown_audit(route, ctx, trace)
+        with _timed_step("orchestrator.branch:unknown_audit"):
+            return self._unknown_audit(route, ctx, trace)
 
     # ------------------------------------------------------------------ #
     # Audit builders.
@@ -201,6 +298,47 @@ class AnswerOrchestrator:
             support_kind=support_kind,
             source_system="safety_gate",
             audit_reason=reason,
+        )
+
+    def _web_search_current_answer(
+        self,
+        route,
+        ctx,
+        trace,
+        *,
+        web_search_enabled: bool | None,
+    ) -> AssistantAnswer | None:
+        enabled = self._web_search_enabled_default if web_search_enabled is None else web_search_enabled
+        if self._web_search_provider is None and enabled:
+            from worldpgt.web_search.duckduckgo import DuckDuckGoInstantAnswerProvider
+
+            self._web_search_provider = DuckDuckGoInstantAnswerProvider()
+        if self._web_search_provider is None:
+            return None
+        try:
+            results = self._web_search_provider.search(route.question, max_results=3)
+        except Exception as exc:
+            trace.add(f"web_search: error={exc.__class__.__name__}")
+            return None
+        if not results:
+            trace.add("web_search: no_source_results")
+            return None
+        text = render_web_answer(route.question, results)
+        if not text:
+            trace.add("web_search: render_empty")
+            return None
+        trace.add(f"web_search: result_count={len(results)}")
+        finalize(trace, "web_search", "web_search_result")
+        return self._make(
+            route,
+            ctx,
+            trace,
+            decision="answer",
+            answer_text=text,
+            supported=True,
+            support_kind="web_search_result",
+            source_system="web_search",
+            extra_risk=["current_live", "web_search_live", "source_qualified_volatile"],
         )
 
     def _unknown_audit(self, route, ctx, trace) -> AssistantAnswer:
@@ -259,7 +397,7 @@ class AnswerOrchestrator:
         )
 
     def _source_fact_answer(self, route, ctx, trace) -> AssistantAnswer:
-        analyzed = analyze_entity(route.question)
+        analyzed = analyze_entity(route.question, index=self._surface_index)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
 
@@ -292,7 +430,7 @@ class AnswerOrchestrator:
         # Prefer the existing entity link-explanation renderer for "why is X
         # linked to Y"; otherwise emit a static policy explanation. Either way
         # this is a safe policy answer, never a new factual claim.
-        analyzed = analyze_entity(route.question)
+        analyzed = analyze_entity(route.question, index=self._surface_index)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa(policy): intent={analyzed.intent}, decision={plan.decision}")
 
@@ -329,7 +467,7 @@ class AnswerOrchestrator:
                     source_system="query_engine",
                 )
 
-        analyzed = analyze_entity(route.question)
+        analyzed = analyze_entity(route.question, index=self._surface_index)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
 
@@ -368,6 +506,17 @@ class AnswerOrchestrator:
                 answer_text=render_entity(plan),
                 supported=True,
                 support_kind=support_kind,
+                source_system="entity_qa",
+            )
+
+        if plan.decision == "answer" and plan.render_template == "definition_relation_lookup":
+            finalize(trace, "entity_qa", "stable_definition")
+            return self._make(
+                route, ctx, trace,
+                decision="answer",
+                answer_text=render_entity(plan),
+                supported=True,
+                support_kind="stable_definition",
                 source_system="entity_qa",
             )
 
@@ -414,7 +563,7 @@ class AnswerOrchestrator:
         *,
         answer_style: str = "normal",
     ) -> AssistantAnswer:
-        analyzed = analyze_entity(route.question)
+        analyzed = analyze_entity(route.question, index=self._surface_index)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
         if plan.render_template == "open_synthesis":
@@ -479,6 +628,7 @@ class AnswerOrchestrator:
         risk = list(route.risk_flags)
         if extra_risk:
             risk.extend(extra_risk)
+        risk = list(dict.fromkeys(risk))
         # The audit reason is carried as the answer body for audits so the
         # renderer can present it.
         body = answer_text

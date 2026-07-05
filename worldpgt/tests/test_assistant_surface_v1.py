@@ -27,6 +27,7 @@ from worldpgt.assistant_surface.context_selector import (
 from worldpgt.assistant_surface.question_router import route
 from worldpgt.assistant_surface.surface_validator import validate_answer
 from worldpgt.assistant_surface.types import FACTUAL_SUPPORT_KINDS
+from worldpgt.assistant_surface.web_search import WebSearchResult
 
 _ROOT = Path(__file__).resolve().parent.parent.parent
 _CLI = _ROOT / "worldpgt" / "experiments" / "ask_microworld_v1.py"
@@ -34,6 +35,16 @@ _ASSISTANT_DIR = _ROOT / "worldpgt" / "assistant_surface"
 _TRUSTED_MEMORY = (
     _ROOT / "worldpgt" / "experiments" / "accepted_knowledge_memory_v1.json"
 )
+
+
+class _FakeWebSearchProvider:
+    def __init__(self, results: list[WebSearchResult] | None = None) -> None:
+        self.results = results or []
+        self.queries: list[str] = []
+
+    def search(self, query: str, *, max_results: int = 3) -> list[WebSearchResult]:
+        self.queries.append(query)
+        return self.results[:max_results]
 
 
 def _hash(path: Path) -> str:
@@ -94,6 +105,13 @@ def test_router_open_synthesis_to_entity_definition(question):
 
 def test_router_entity_relation():
     assert route("What does SpaceX develop?").intent == "entity_relation"
+
+
+def test_router_unsupported_relation_tail_is_not_definition():
+    r = route("Who was Richard Nixon married to?")
+
+    assert r.intent == "unknown_or_unsupported"
+    assert r.notes == "unsupported relation lookup"
 
 
 def test_router_connection_path():
@@ -208,6 +226,77 @@ def test_audit_request_does_not_answer_as_fact():
     assert a.decision == "audit"
     assert a.supported_by_context is False
     assert "Decision: audit." in render(a)
+
+
+def test_current_live_request_can_use_explicit_web_search_provider():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Tesla Inc. stock quote",
+            snippet="Tesla stock was trading at 123.45 USD in the latest market quote.",
+            url="https://example.com/tesla-stock",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("What is Tesla's current stock price?")
+
+    assert a.decision == "answer"
+    assert a.route == "current_live_request"
+    assert a.support_kind == "web_search_result"
+    assert a.source_system == "web_search"
+    assert a.supported_by_context is True
+    assert "not Microworld memory" in a.answer_text
+    assert "https://example.com/tesla-stock" in a.answer_text
+    assert "web_search_live" in a.risk_flags
+    assert provider.queries == ["What is Tesla's current stock price?"]
+    assert validate_answer(a) == []
+
+
+def test_current_office_request_can_use_explicit_web_search_provider():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="President of France",
+            snippet="The current president of France is Emmanuel Macron.",
+            url="https://example.com/france-president",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("Who is the current president of France?")
+
+    assert a.decision == "answer"
+    assert a.route == "current_live_request"
+    assert a.support_kind == "web_search_result"
+    assert "Emmanuel Macron" in a.answer_text
+    assert validate_answer(a) == []
+
+
+def test_private_request_never_reaches_web_search_provider():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Bad",
+            snippet="Should not be used.",
+            url="https://example.com/private",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("What is Elon Musk's phone number?")
+
+    assert a.decision == "audit"
+    assert a.route == "private_sensitive_request"
+    assert a.source_system == "safety_gate"
+    assert provider.queries == []
+    assert validate_answer(a) == []
 
 
 def test_absent_fact_does_not_become_negative_answer():

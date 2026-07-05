@@ -36,7 +36,7 @@ _PRODUCTS_MAKE_RE = re.compile(
     re.IGNORECASE,
 )
 _PASSIVE_OPEN_RELATION_RE = re.compile(
-    r"^what\s+(?:is|was)\s+(developed|produced|published)\s+by\s+.+?[\?\.]?$",
+    r"^what\s+(?:is|was)\s+(developed|produced|published|made|built|manufactured|designed)\s+by\s+.+?[\?\.]?$",
     re.IGNORECASE,
 )
 _WHERE_LOCATED_RE = re.compile(
@@ -317,7 +317,7 @@ def _resolved_subject_from_raw(
     raw_mentions = _entity_mentions(raw_subject, index)
     if raw_mentions:
         return raw_mentions[0][1]
-    return mentions[0][1] if mentions else None
+    return None
 
 
 def _exact_definition_entity(
@@ -570,6 +570,10 @@ def parse_semantic_query(
             "developed": "develops",
             "produced": "produces",
             "published": "publishes",
+            "made": "produces",
+            "built": "develops",
+            "manufactured": "produces",
+            "designed": "develops",
         }.get(passive_open.group(1).lower(), "develops")
         return SemanticQuery(
             entity_a=entities[0],

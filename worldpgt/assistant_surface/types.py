@@ -54,6 +54,7 @@ SupportKind = Literal[
     "entity_type_mismatch",
     "source_qualified_fact",
     "safe_policy_answer",
+    "web_search_result",
     "audit_blocked_context",
     "missing_knowledge",
     "unsupported",
@@ -70,6 +71,7 @@ ALLOWED_SUPPORT_KINDS = frozenset(
         "entity_type_mismatch",
         "source_qualified_fact",
         "safe_policy_answer",
+        "web_search_result",
         "audit_blocked_context",
         "missing_knowledge",
         "unsupported",
@@ -87,6 +89,7 @@ FACTUAL_SUPPORT_KINDS = frozenset(
         "explicit_type_contradiction",
         "entity_type_mismatch",
         "source_qualified_fact",
+        "web_search_result",
     }
 )
 

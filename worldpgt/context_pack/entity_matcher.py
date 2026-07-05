@@ -41,6 +41,23 @@ _GENERIC_STOPWORDS = frozenset(
         "to",
         "and",
         "or",
+        "how",
+        "what",
+        "who",
+        "whom",
+        "whose",
+        "when",
+        "where",
+        "why",
+        "which",
+        "does",
+        "did",
+        "do",
+        "ai",
+        "us",
+        "uk",
+        "hp",
+        "eu",
         "in",
         "on",
         "by",
@@ -102,7 +119,10 @@ def build_surface_index(overlay) -> List[Tuple[str, str, dict]]:
         key = _norm(surface)
         # Entity surfaces take precedence over plain terms.
         if key not in surfaces or (kind == "entity" and surfaces[key][0] != "entity"):
-            surfaces[key] = (kind, {"surface": surface, **meta})
+            # Cache the normalized surface in meta so match_entities (called
+            # once per question, over every indexed surface) does not redo
+            # this normalization on every call.
+            surfaces[key] = (kind, {"surface": surface, **meta, "_norm_surface": key})
 
     for e in overlay.entities():
         _add(e.get("label", ""), "entity", {
@@ -144,7 +164,9 @@ def match_entities(
     seen_names: set = set()
 
     for surface, kind, meta in surfaces:
-        n = _norm(surface)
+        n = meta.get("_norm_surface")
+        if n is None:
+            n = _norm(surface)
         if n not in qlow:
             continue
         # Word-boundary search over the normalized question.

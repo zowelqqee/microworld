@@ -13,10 +13,16 @@ Entity resolution order:
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import Optional
+
+
+def _copy_item(item: dict | None) -> dict | None:
+    return dict(item) if item is not None else None
 
 
 def _normalize(s: str) -> str:
@@ -27,6 +33,209 @@ def _normalize(s: str) -> str:
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r"^(?:the|a|an)\s+", "", s)
     return s
+
+
+_BROAD_TOPIC_ALIASES = frozenset({
+    "africa",
+    "agriculture",
+    "asia",
+    "astronomy",
+    "biology",
+    "buddhism",
+    "chemistry",
+    "christianity",
+    "computer science",
+    "economics",
+    "education",
+    "energy",
+    "europe",
+    "film",
+    "islam",
+    "law",
+    "mathematics",
+    "medicine",
+    "music",
+    "north america",
+    "oceania",
+    "physics",
+    "religion",
+    "south america",
+    "sport",
+    "transportation",
+})
+
+
+@lru_cache(maxsize=16)
+def _load_overlay_items_cached(path_str: str, mtime_ns: int, size: int) -> tuple[dict, ...]:
+    del mtime_ns, size
+    raw = json.loads(Path(path_str).read_text(encoding="utf-8"))
+    if not isinstance(raw, list):
+        return ()
+    return tuple(i for i in raw if isinstance(i, dict))
+
+
+def _load_overlay_items(path: str | Path) -> list[dict]:
+    p = Path(path)
+    stat = p.stat()
+    return list(_load_overlay_items_cached(str(p), stat.st_mtime_ns, stat.st_size))
+
+
+@dataclass(frozen=True)
+class _OverlayProviderData:
+    entities: tuple[dict, ...]
+    definitions: tuple[dict, ...]
+    relations: tuple[dict, ...]
+    context_links: tuple[dict, ...]
+    source_facts: tuple[dict, ...]
+    definitions_by_norm: dict[str, tuple[dict, ...]]
+    definitions_by_source_page_norm: dict[str, tuple[dict, ...]]
+    entity_by_exact_label: dict[str, dict]
+    entity_by_exact_alias: dict[str, dict]
+    entity_by_norm_label: dict[str, dict]
+    entity_by_norm_alias: dict[str, dict]
+    entity_by_norm_source_page: dict[str, dict]
+    relations_by_subject_norm: dict[str, tuple[dict, ...]]
+    context_links_by_source_page_norm: dict[str, tuple[dict, ...]]
+    context_links_by_target_norm: dict[str, tuple[dict, ...]]
+    context_links_by_surface_norm: dict[str, tuple[dict, ...]]
+    source_facts_by_subject_norm: dict[str, tuple[dict, ...]]
+    source_facts_by_source_name_norm: dict[str, tuple[dict, ...]]
+    source_facts_by_predicate: dict[str, tuple[dict, ...]]
+
+
+def _tuple_index(index: dict[str, list[dict]]) -> dict[str, tuple[dict, ...]]:
+    return {key: tuple(value) for key, value in index.items()}
+
+
+def _is_unsafe_alias(alias: str, entity: dict) -> bool:
+    """Reject broad aliases like ``Medicine`` for ``Space medicine``.
+
+    These aliases are useful as text fragments but too broad for entity
+    resolution: a question asking for the generic field should not resolve to a
+    narrower compound page merely because the compound ends with that word.
+    Person last-name aliases such as ``Musk`` or ``Walton`` stay allowed.
+    """
+
+    alias_text = str(alias or "").strip()
+    alias_norm = _normalize(alias_text)
+    if not alias_norm:
+        return False
+    entity_norms = {
+        _normalize(str(entity.get("label") or "")),
+        _normalize(str(entity.get("source_page") or "")),
+    }
+    if alias_norm in _BROAD_TOPIC_ALIASES and alias_norm not in entity_norms:
+        return True
+    if " " in alias_norm:
+        return False
+    entity_type = _normalize(str(entity.get("entity_type") or ""))
+    if entity_type == "person":
+        return False
+    for surface in (entity.get("label", ""), entity.get("source_page", "")):
+        parts = _normalize(str(surface or "")).split()
+        if len(parts) > 1 and alias_norm == parts[-1] and alias_norm != parts[0]:
+            return True
+    return False
+
+
+@lru_cache(maxsize=16)
+def _load_provider_data_cached(path_str: str, mtime_ns: int, size: int) -> _OverlayProviderData:
+    raw = _load_overlay_items_cached(path_str, mtime_ns, size)
+    entities = tuple(i for i in raw if i.get("overlay_type") == "overlay_entity")
+    definitions = tuple(i for i in raw if i.get("overlay_type") == "overlay_definition")
+    relations = tuple(i for i in raw if i.get("overlay_type") == "overlay_relation")
+    context_links = tuple(i for i in raw if i.get("overlay_type") == "overlay_context_link")
+    source_facts = tuple(i for i in raw if i.get("overlay_type") == "overlay_source_fact")
+
+    definitions_by_norm: dict[str, list[dict]] = {}
+    definitions_by_source_page_norm: dict[str, list[dict]] = {}
+    for definition in definitions:
+        subject_norm = _normalize(definition.get("subject", ""))
+        if subject_norm:
+            definitions_by_norm.setdefault(subject_norm, []).append(definition)
+        source_page_norm = _normalize(definition.get("source_page", ""))
+        if source_page_norm:
+            definitions_by_source_page_norm.setdefault(source_page_norm, []).append(definition)
+
+    entity_by_exact_label: dict[str, dict] = {}
+    entity_by_exact_alias: dict[str, dict] = {}
+    entity_by_norm_label: dict[str, dict] = {}
+    entity_by_norm_alias: dict[str, dict] = {}
+    entity_by_norm_source_page: dict[str, dict] = {}
+    for entity in entities:
+        label = entity.get("label", "")
+        if label:
+            entity_by_exact_label.setdefault(label, entity)
+            entity_by_norm_label.setdefault(_normalize(label), entity)
+        source_page = entity.get("source_page", "")
+        if source_page:
+            entity_by_norm_source_page.setdefault(_normalize(source_page), entity)
+        for alias in entity.get("aliases", []) or []:
+            if alias and not _is_unsafe_alias(str(alias), entity):
+                entity_by_exact_alias.setdefault(alias, entity)
+                entity_by_norm_alias.setdefault(_normalize(alias), entity)
+
+    relations_by_subject_norm: dict[str, list[dict]] = {}
+    for relation in relations:
+        relations_by_subject_norm.setdefault(
+            _normalize(relation.get("subject", "")), []
+        ).append(relation)
+
+    context_links_by_source_page_norm: dict[str, list[dict]] = {}
+    context_links_by_target_norm: dict[str, list[dict]] = {}
+    context_links_by_surface_norm: dict[str, list[dict]] = {}
+    for link in context_links:
+        source_page = _normalize(link.get("source_page", ""))
+        target = _normalize(link.get("target", ""))
+        surface = _normalize(link.get("surface", ""))
+        if source_page:
+            context_links_by_source_page_norm.setdefault(source_page, []).append(link)
+        if target:
+            context_links_by_target_norm.setdefault(target, []).append(link)
+        if surface:
+            context_links_by_surface_norm.setdefault(surface, []).append(link)
+
+    source_facts_by_subject_norm: dict[str, list[dict]] = {}
+    source_facts_by_source_name_norm: dict[str, list[dict]] = {}
+    source_facts_by_predicate: dict[str, list[dict]] = {}
+    for fact in source_facts:
+        subject = _normalize(fact.get("subject", ""))
+        source_name = _normalize(fact.get("source_name", ""))
+        predicate = fact.get("predicate")
+        if subject:
+            source_facts_by_subject_norm.setdefault(subject, []).append(fact)
+        if source_name:
+            source_facts_by_source_name_norm.setdefault(source_name, []).append(fact)
+        if predicate:
+            source_facts_by_predicate.setdefault(predicate, []).append(fact)
+
+    return _OverlayProviderData(
+        entities=entities,
+        definitions=definitions,
+        relations=relations,
+        context_links=context_links,
+        source_facts=source_facts,
+        definitions_by_norm=_tuple_index(definitions_by_norm),
+        definitions_by_source_page_norm=_tuple_index(definitions_by_source_page_norm),
+        entity_by_exact_label=entity_by_exact_label,
+        entity_by_exact_alias=entity_by_exact_alias,
+        entity_by_norm_label=entity_by_norm_label,
+        entity_by_norm_alias=entity_by_norm_alias,
+        entity_by_norm_source_page=entity_by_norm_source_page,
+        relations_by_subject_norm=_tuple_index(relations_by_subject_norm),
+        context_links_by_source_page_norm=_tuple_index(context_links_by_source_page_norm),
+        context_links_by_target_norm=_tuple_index(context_links_by_target_norm),
+        context_links_by_surface_norm=_tuple_index(context_links_by_surface_norm),
+        source_facts_by_subject_norm=_tuple_index(source_facts_by_subject_norm),
+        source_facts_by_source_name_norm=_tuple_index(source_facts_by_source_name_norm),
+        source_facts_by_predicate=_tuple_index(source_facts_by_predicate),
+    )
+
+
+def _load_provider_data(path: str | Path) -> _OverlayProviderData:
+    p = Path(path)
+    stat = p.stat()
+    return _load_provider_data_cached(str(p), stat.st_mtime_ns, stat.st_size)
 
 
 _BAD_SOURCE_PAGE_SUBJECT_PREFIXES = (
@@ -180,28 +389,43 @@ class WikiMemoryOverlayProvider:
         self._items_used: int = 0
         self._definitions_by_norm: dict[str, list[dict]] = {}
         self._definitions_by_source_page_norm: dict[str, list[dict]] = {}
+        self._entity_by_exact_label: dict[str, dict] = {}
+        self._entity_by_exact_alias: dict[str, dict] = {}
+        self._entity_by_norm_label: dict[str, dict] = {}
+        self._entity_by_norm_alias: dict[str, dict] = {}
+        self._entity_by_norm_source_page: dict[str, dict] = {}
+        self._relations_by_subject_norm: dict[str, list[dict]] = {}
+        self._context_links_by_source_page_norm: dict[str, list[dict]] = {}
+        self._context_links_by_target_norm: dict[str, list[dict]] = {}
+        self._context_links_by_surface_norm: dict[str, list[dict]] = {}
+        self._source_facts_by_subject_norm: dict[str, list[dict]] = {}
+        self._source_facts_by_source_name_norm: dict[str, list[dict]] = {}
+        self._source_facts_by_predicate: dict[str, list[dict]] = {}
 
         if overlay_path is not None:
             self.load(overlay_path)
 
     def load(self, path: str | Path) -> None:
-        raw: list[dict] = json.loads(Path(path).read_text(encoding="utf-8"))
-        self._entities = [i for i in raw if i.get("overlay_type") == "overlay_entity"]
-        self._definitions = [i for i in raw if i.get("overlay_type") == "overlay_definition"]
-        self._relations = [i for i in raw if i.get("overlay_type") == "overlay_relation"]
-        self._context_links = [i for i in raw if i.get("overlay_type") == "overlay_context_link"]
-        self._source_facts = [i for i in raw if i.get("overlay_type") == "overlay_source_fact"]
-        self._definitions_by_norm = {}
-        self._definitions_by_source_page_norm = {}
-        for definition in self._definitions:
-            subject_norm = _normalize(definition.get("subject", ""))
-            if subject_norm:
-                self._definitions_by_norm.setdefault(subject_norm, []).append(definition)
-            source_page_norm = _normalize(definition.get("source_page", ""))
-            if source_page_norm:
-                self._definitions_by_source_page_norm.setdefault(
-                    source_page_norm, []
-                ).append(definition)
+        data = _load_provider_data(path)
+        self._entities = data.entities
+        self._definitions = data.definitions
+        self._relations = data.relations
+        self._context_links = data.context_links
+        self._source_facts = data.source_facts
+        self._definitions_by_norm = data.definitions_by_norm
+        self._definitions_by_source_page_norm = data.definitions_by_source_page_norm
+        self._entity_by_exact_label = data.entity_by_exact_label
+        self._entity_by_exact_alias = data.entity_by_exact_alias
+        self._entity_by_norm_label = data.entity_by_norm_label
+        self._entity_by_norm_alias = data.entity_by_norm_alias
+        self._entity_by_norm_source_page = data.entity_by_norm_source_page
+        self._relations_by_subject_norm = data.relations_by_subject_norm
+        self._context_links_by_source_page_norm = data.context_links_by_source_page_norm
+        self._context_links_by_target_norm = data.context_links_by_target_norm
+        self._context_links_by_surface_norm = data.context_links_by_surface_norm
+        self._source_facts_by_subject_norm = data.source_facts_by_subject_norm
+        self._source_facts_by_source_name_norm = data.source_facts_by_source_name_norm
+        self._source_facts_by_predicate = data.source_facts_by_predicate
 
     # ------------------------------------------------------------------
     # Public query API
@@ -210,33 +434,16 @@ class WikiMemoryOverlayProvider:
     def get_entity(self, label_or_alias: str) -> Optional[dict]:
         """Resolve entity by label or alias (exact then case-insensitive)."""
         norm = _normalize(label_or_alias)
-        # 1. Exact label
-        for e in self._entities:
-            if e.get("label") == label_or_alias:
+        for lookup in (
+            self._entity_by_exact_label.get(label_or_alias),
+            self._entity_by_exact_alias.get(label_or_alias),
+            self._entity_by_norm_label.get(norm),
+            self._entity_by_norm_alias.get(norm),
+            self._entity_by_norm_source_page.get(norm),
+        ):
+            if lookup is not None:
                 self._items_used += 1
-                return e
-        # 2. Exact alias
-        for e in self._entities:
-            for alias in e.get("aliases", []):
-                if alias == label_or_alias:
-                    self._items_used += 1
-                    return e
-        # 3. Case-insensitive label
-        for e in self._entities:
-            if _normalize(e.get("label", "")) == norm:
-                self._items_used += 1
-                return e
-        # 4. Case-insensitive alias
-        for e in self._entities:
-            for alias in e.get("aliases", []):
-                if _normalize(alias) == norm:
-                    self._items_used += 1
-                    return e
-        # 5. Page-title match
-        for e in self._entities:
-            if _normalize(e.get("source_page", "")) == norm:
-                self._items_used += 1
-                return e
+                return _copy_item(lookup)
         return None
 
     def get_definition(self, subject: str) -> Optional[dict]:
@@ -245,7 +452,7 @@ class WikiMemoryOverlayProvider:
         direct = self._definitions_by_norm.get(norm, [])
         if direct:
             self._items_used += 1
-            return direct[0]
+            return _copy_item(direct[0])
         entity = self.get_entity(subject)
         if entity:
             return self.get_definition_for_entity(entity, original_subject_norm=norm)
@@ -301,7 +508,7 @@ class WikiMemoryOverlayProvider:
             return None
         scored.sort(key=lambda row: (-row[0], row[1]))
         self._items_used += 1
-        return scored[0][2]
+        return _copy_item(scored[0][2])
 
     def get_relations(
         self,
@@ -310,14 +517,11 @@ class WikiMemoryOverlayProvider:
     ) -> list[dict]:
         """Return overlay_relation items for subject, optionally filtered by predicate."""
         norm = _normalize(subject)
-        out = [
-            r for r in self._relations
-            if _normalize(r.get("subject", "")) == norm
-        ]
+        out = list(self._relations_by_subject_norm.get(norm, []))
         if predicate is not None:
             out = [r for r in out if r.get("predicate") == predicate]
         self._items_used += len(out)
-        return out
+        return [dict(r) for r in out]
 
     def get_context_links(
         self,
@@ -326,18 +530,25 @@ class WikiMemoryOverlayProvider:
         surface: Optional[str] = None,
     ) -> list[dict]:
         """Return overlay_context_link items matching any supplied filter."""
-        out = list(self._context_links)
+        candidates: list[list[dict]] = []
         if source_page is not None:
             sp_norm = _normalize(source_page)
-            out = [l for l in out if _normalize(l.get("source_page", "")) == sp_norm]
+            candidates.append(self._context_links_by_source_page_norm.get(sp_norm, []))
         if target is not None:
             t_norm = _normalize(target)
-            out = [l for l in out if _normalize(l.get("target", "")) == t_norm]
+            candidates.append(self._context_links_by_target_norm.get(t_norm, []))
         if surface is not None:
             s_norm = _normalize(surface)
+            candidates.append(self._context_links_by_surface_norm.get(s_norm, []))
+        out = list(min(candidates, key=len)) if candidates else list(self._context_links)
+        if source_page is not None:
+            out = [l for l in out if _normalize(l.get("source_page", "")) == sp_norm]
+        if target is not None:
+            out = [l for l in out if _normalize(l.get("target", "")) == t_norm]
+        if surface is not None:
             out = [l for l in out if _normalize(l.get("surface", "")) == s_norm]
         self._items_used += len(out)
-        return out
+        return [dict(l) for l in out]
 
     def get_source_facts(
         self,
@@ -346,17 +557,24 @@ class WikiMemoryOverlayProvider:
         source_name: Optional[str] = None,
     ) -> list[dict]:
         """Return overlay_source_fact items matching any supplied filter."""
-        out = list(self._source_facts)
+        candidates: list[list[dict]] = []
         if subject is not None:
             s_norm = _normalize(subject)
+            candidates.append(self._source_facts_by_subject_norm.get(s_norm, []))
+        if predicate is not None:
+            candidates.append(self._source_facts_by_predicate.get(predicate, []))
+        if source_name is not None:
+            sn_norm = _normalize(source_name)
+            candidates.append(self._source_facts_by_source_name_norm.get(sn_norm, []))
+        out = list(min(candidates, key=len)) if candidates else list(self._source_facts)
+        if subject is not None:
             out = [f for f in out if _normalize(f.get("subject", "")) == s_norm]
         if predicate is not None:
             out = [f for f in out if f.get("predicate") == predicate]
         if source_name is not None:
-            sn_norm = _normalize(source_name)
             out = [f for f in out if _normalize(f.get("source_name", "")) == sn_norm]
         self._items_used += len(out)
-        return out
+        return [dict(f) for f in out]
 
     def explain_link(self, source_page: str, target: str) -> list[dict]:
         """Return context links connecting source_page to target."""
@@ -388,16 +606,16 @@ class WikiMemoryOverlayProvider:
     # ------------------------------------------------------------------
 
     def all_relations(self) -> list[dict]:
-        return list(self._relations)
+        return [dict(item) for item in self._relations]
 
     def all_definitions(self) -> list[dict]:
-        return list(self._definitions)
+        return [dict(item) for item in self._definitions]
 
     def all_context_links(self) -> list[dict]:
-        return list(self._context_links)
+        return [dict(item) for item in self._context_links]
 
     def all_source_facts(self) -> list[dict]:
-        return list(self._source_facts)
+        return [dict(item) for item in self._source_facts]
 
     def all_entities(self) -> list[dict]:
-        return list(self._entities)
+        return [dict(item) for item in self._entities]

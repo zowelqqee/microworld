@@ -443,11 +443,22 @@ _RELATION_HANDLERS = {
     "works_by": _check_concept_relation,
 }
 
+_TEMPORAL_OBJECT_PREDICATES = frozenset({
+    "ceased_operations",
+    "construction_started",
+    "filed_for_bankruptcy",
+    "first_released",
+    "introduced",
+})
+
 
 def _check_relation(item: dict[str, Any]) -> tuple[str, str]:
-    if _object_is_temporal_word(str(item.get("object", ""))):
-        return "reject", "object_is_temporal_word"
     predicate = _norm(item.get("predicate", ""))
+    if (
+        predicate not in _TEMPORAL_OBJECT_PREDICATES
+        and _object_is_temporal_word(str(item.get("object", "")))
+    ):
+        return "reject", "object_is_temporal_word"
     handler = _RELATION_HANDLERS.get(predicate, _check_generic_relation)
     return handler(item)
 

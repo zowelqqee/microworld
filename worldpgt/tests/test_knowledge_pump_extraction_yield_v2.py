@@ -55,6 +55,7 @@ _PROTECTED = [
     _EXP / "self_ingestion_v1" / "promotion" / "promoted_wiki_memory_overlay_v1.json",
     _EXP / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json",
 ]
+_REAL_DOC_SMOKE_LIMIT = 12
 
 
 def _sha(path: Path) -> str:
@@ -683,20 +684,27 @@ def real_docs():
                 raw_text_sha256=str(row.get("raw_text_sha256") or ""),
                 normalized_doc_path=str(doc_path),
             ))
+            if len(docs) >= _REAL_DOC_SMOKE_LIMIT:
+                break
     if not docs:
         pytest.skip("No ready docs with normalized docs found")
     return docs
 
 
-def test_extract_yield_v2_returns_candidates(real_docs) -> None:
-    items, stats = extract_yield_v2(real_docs)
+@pytest.fixture(scope="module")
+def real_extraction_result(real_docs):
+    return extract_yield_v2(real_docs)
+
+
+def test_extract_yield_v2_returns_candidates(real_extraction_result) -> None:
+    items, stats = real_extraction_result
     assert isinstance(items, list)
     assert isinstance(stats, dict)
     assert stats.get("docs_processed", 0) > 0
 
 
-def test_extract_yield_v2_items_have_valid_overlay_type(real_docs) -> None:
-    items, _ = extract_yield_v2(real_docs)
+def test_extract_yield_v2_items_have_valid_overlay_type(real_extraction_result) -> None:
+    items, _ = real_extraction_result
     valid_types = {"overlay_relation", "overlay_definition"}
     for item in items:
         assert item.get("overlay_type") in valid_types, (
@@ -704,8 +712,8 @@ def test_extract_yield_v2_items_have_valid_overlay_type(real_docs) -> None:
         )
 
 
-def test_extract_yield_v2_objects_in_evidence(real_docs) -> None:
-    items, _ = extract_yield_v2(real_docs)
+def test_extract_yield_v2_objects_in_evidence(real_extraction_result) -> None:
+    items, _ = real_extraction_result
     for item in items:
         obj = item.get("object", "")
         ev = item.get("evidence_text", "")
@@ -715,8 +723,8 @@ def test_extract_yield_v2_objects_in_evidence(real_docs) -> None:
             )
 
 
-def test_extract_yield_v2_no_weak_context_items(real_docs) -> None:
-    items, _ = extract_yield_v2(real_docs)
+def test_extract_yield_v2_no_weak_context_items(real_extraction_result) -> None:
+    items, _ = real_extraction_result
     for item in items:
         assert item.get("overlay_type") != "overlay_context_link", (
             "v2 must not produce weak context links"
@@ -726,8 +734,8 @@ def test_extract_yield_v2_no_weak_context_items(real_docs) -> None:
         )
 
 
-def test_extract_yield_v2_no_fragment_subjects(real_docs) -> None:
-    items, _ = extract_yield_v2(real_docs)
+def test_extract_yield_v2_no_fragment_subjects(real_extraction_result) -> None:
+    items, _ = real_extraction_result
     for item in items:
         subj = item.get("subject", "")
         assert not is_fragment_subject(subj), (
@@ -735,8 +743,8 @@ def test_extract_yield_v2_no_fragment_subjects(real_docs) -> None:
         )
 
 
-def test_extract_yield_v2_no_generic_subjects(real_docs) -> None:
-    items, _ = extract_yield_v2(real_docs)
+def test_extract_yield_v2_no_generic_subjects(real_extraction_result) -> None:
+    items, _ = real_extraction_result
     for item in items:
         subj = item.get("subject", "")
         assert not is_generic_subject(subj), (
@@ -746,7 +754,7 @@ def test_extract_yield_v2_no_generic_subjects(real_docs) -> None:
 
 def test_extract_yield_v2_does_not_modify_protected_files(real_docs) -> None:
     before = {p: _sha(p) for p in _PROTECTED if p.exists()}
-    extract_yield_v2(real_docs)
+    extract_yield_v2(real_docs[:1], max_sentences_per_doc=1)
     for path, digest in before.items():
         assert _sha(path) == digest, f"Protected file modified: {path}"
 

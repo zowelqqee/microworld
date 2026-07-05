@@ -16,6 +16,7 @@ Read-only over the overlay. No writes, no network, no ML.
 
 from __future__ import annotations
 
+from functools import lru_cache
 from pathlib import Path
 
 from worldpgt.assistant_surface.types import AssistantContextSummary
@@ -65,6 +66,27 @@ def resolve_overlay(overlay_mode: str) -> tuple[str, str]:
     raise ValueError(f"unknown overlay mode: {overlay_mode!r}")
 
 
+@lru_cache(maxsize=16)
+def _cached_context_pack_builder(
+    overlay_path: str,
+    overlay_mode: str,
+    mtime_ns: int,
+    size: int,
+) -> ContextPackBuilder:
+    del mtime_ns, size
+    return ContextPackBuilder(overlay_path, overlay_mode)
+
+
+def _context_pack_builder_for(overlay_path: str, overlay_mode: str) -> ContextPackBuilder:
+    stat = Path(overlay_path).stat()
+    return _cached_context_pack_builder(
+        overlay_path,
+        overlay_mode,
+        stat.st_mtime_ns,
+        stat.st_size,
+    )
+
+
 class ContextSelector:
     """Builds and summarizes a context pack for an assistant question."""
 
@@ -79,7 +101,7 @@ class ContextSelector:
             self._overlay_path, self._pack_mode = str(overlay_path), OVERLAY_PROMOTED
         else:
             self._overlay_path, self._pack_mode = resolve_overlay(overlay_mode)
-        self._builder = ContextPackBuilder(self._overlay_path, self._pack_mode)
+        self._builder = _context_pack_builder_for(self._overlay_path, self._pack_mode)
 
     def build_pack(self, question: str) -> WorkingContextPack:
         return self._builder.build(question)

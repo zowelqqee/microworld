@@ -25,7 +25,7 @@ expansion, stable tie-breaks, no randomness. No ML. No network.
 
 from __future__ import annotations
 
-from worldpgt.cognition.inference_engine import run_inference
+from worldpgt.cognition.inference_engine import InferenceWorkspace, run_inference
 from worldpgt.reasoning.fact_graph import FactGraph, norm
 from worldpgt.reasoning.types import (
     ExplanationChain,
@@ -106,9 +106,21 @@ def _dedupe_steps(steps: list[ExplanationStep]) -> list[ExplanationStep]:
     return out
 
 
-def _find_inferred(overlay_items: list[dict], subject: str, predicate: str, obj: str):
-    """Return the InferredFact matching the target triple, if any."""
-    workspace = run_inference(overlay_items)
+def _find_inferred(
+    overlay_items: list[dict],
+    subject: str,
+    predicate: str,
+    obj: str,
+    workspace: InferenceWorkspace | None = None,
+):
+    """Return the InferredFact matching the target triple, if any.
+
+    *workspace* lets callers pass a workspace already computed for the full
+    overlay (e.g. once at server startup) instead of paying for a fresh
+    ``run_inference`` pass on every call.
+    """
+    if workspace is None:
+        workspace = run_inference(overlay_items)
     for fact in workspace.facts:
         if (
             norm(fact.subject) == norm(subject)
@@ -210,17 +222,28 @@ def explain_fact(
     predicate: str,
     obj: str,
     patterns: list[GraphPattern] | None = None,
+    workspace: InferenceWorkspace | None = None,
+    graph: FactGraph | None = None,
 ) -> ExplanationChain:
-    """Build a deterministic explanation chain for the target fact."""
-    graph = FactGraph(overlay_items)
+    """Build a deterministic explanation chain for the target fact.
+
+    *workspace* is an optional pre-computed :class:`InferenceWorkspace` (e.g.
+    cached once at server startup) reused instead of re-running inference.
+    *graph* is likewise an optional pre-built :class:`FactGraph` over the
+    full overlay (building one is as expensive as inference itself) — pass
+    the same instance already built for the cached pattern index to skip
+    rebuilding it on every explanation request.
+    """
+    if graph is None:
+        graph = FactGraph(overlay_items)
 
     direct_facts = graph.find(subject, predicate, obj)
     if direct_facts:
         return _explain_direct(
-            graph, overlay_items, direct_facts[0], patterns or []
+            graph, overlay_items, direct_facts[0], patterns or [], workspace
         )
 
-    inferred = _find_inferred(overlay_items, subject, predicate, obj)
+    inferred = _find_inferred(overlay_items, subject, predicate, obj, workspace)
     if inferred is not None:
         steps: list[ExplanationStep] = []
         for s, p, o in inferred.chain:
@@ -266,6 +289,7 @@ def _explain_direct(
     overlay_items: list[dict],
     fact,
     patterns: list[GraphPattern],
+    workspace: InferenceWorkspace | None = None,
 ) -> ExplanationChain:
     subject, predicate, obj = fact.subject, fact.predicate, fact.object
     steps: list[ExplanationStep] = [_fact_step(fact)]
@@ -285,7 +309,7 @@ def _explain_direct(
 
     # Rule grounding: the direct fact is *also* derivable — its proof chain is
     # a closed explanation on its own.
-    inferred = _find_inferred(overlay_items, subject, predicate, obj)
+    inferred = _find_inferred(overlay_items, subject, predicate, obj, workspace)
     if inferred is not None:
         for s, p, o in inferred.chain:
             steps.append(ExplanationStep(kind="fact", subject=s, predicate=p, object=o))

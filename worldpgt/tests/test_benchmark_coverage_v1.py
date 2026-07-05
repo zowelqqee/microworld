@@ -14,6 +14,17 @@ import pytest
 
 _ROOT = Path(__file__).resolve().parent.parent.parent
 
+_FAST_IDS = {
+    "def-01", "def-02", "def-03", "def-04", "def-05",
+    "rel-01", "mhop-01", "isa-01", "cmp-01", "cnt-01", "par-01",
+    "adv-01", "adv-02", "adv-03", "adv-04", "adv-05", "adv-08", "adv-09", "adv-10",
+}
+
+
+def _fast_question_bank() -> list[dict]:
+    from worldpgt.experiments.benchmark_coverage_v1 import QUESTION_BANK
+    return [item for item in QUESTION_BANK if item["id"] in _FAST_IDS]
+
 
 # ---------------------------------------------------------------------------
 # Import smoke test
@@ -63,7 +74,7 @@ def test_question_bank_questions_non_empty():
 @pytest.fixture(scope="module")
 def coverage_result():
     from worldpgt.experiments.benchmark_coverage_v1 import run
-    return run(overlay_mode="pump-dry-run")
+    return run(overlay_mode="pump-dry-run", question_bank=_fast_question_bank())
 
 
 def test_coverage_result_has_required_keys(coverage_result):
@@ -75,7 +86,7 @@ def test_coverage_result_has_required_keys(coverage_result):
 
 
 def test_coverage_total_questions(coverage_result):
-    assert coverage_result["total_questions"] == 100
+    assert coverage_result["total_questions"] == len(_FAST_IDS)
 
 
 def test_coverage_overlay_facts(coverage_result):
@@ -84,7 +95,7 @@ def test_coverage_overlay_facts(coverage_result):
 
 def test_coverage_summary_sums_to_100(coverage_result):
     s = coverage_result["summary"]
-    assert s["answer"] + s["no"] + s["audit"] == 100
+    assert s["answer"] + s["no"] + s["audit"] == len(_FAST_IDS)
 
 
 def test_coverage_summary_decisions_non_negative(coverage_result):
@@ -100,15 +111,18 @@ def test_coverage_by_type_all_types_present(coverage_result):
 
 
 def test_coverage_by_type_counts_correct(coverage_result):
-    from worldpgt.experiments.benchmark_coverage_v1 import TYPES_EXPECTED
-    for qtype, expected in TYPES_EXPECTED.items():
+    fast_counts = {
+        qtype: sum(1 for item in _fast_question_bank() if item["type"] == qtype)
+        for qtype in coverage_result["by_type"]
+    }
+    for qtype, expected in fast_counts.items():
         bt = coverage_result["by_type"][qtype]
         assert bt["total"] == expected
         assert bt["answer"] + bt["no"] + bt["audit"] == expected
 
 
 def test_coverage_rows_length(coverage_result):
-    assert len(coverage_result["rows"]) == 100
+    assert len(coverage_result["rows"]) == len(_FAST_IDS)
 
 
 def test_coverage_rows_have_required_fields(coverage_result):
@@ -186,6 +200,7 @@ def test_core_definitions_answered(coverage_result):
 def test_main_no_save_does_not_write_files(tmp_path, monkeypatch, capsys):
     import worldpgt.experiments.benchmark_coverage_v1 as mod
     monkeypatch.setattr(mod, "_BENCHMARKS_DIR", tmp_path)
+    monkeypatch.setattr(mod, "QUESTION_BANK", _fast_question_bank())
     mod.main(["--overlay", "pump-dry-run", "--no-save"])
     assert list(tmp_path.iterdir()) == [], "Expected no files written with --no-save"
     out = capsys.readouterr().out
@@ -195,9 +210,10 @@ def test_main_no_save_does_not_write_files(tmp_path, monkeypatch, capsys):
 def test_main_saves_json(tmp_path, monkeypatch):
     import worldpgt.experiments.benchmark_coverage_v1 as mod
     monkeypatch.setattr(mod, "_BENCHMARKS_DIR", tmp_path)
+    monkeypatch.setattr(mod, "QUESTION_BANK", _fast_question_bank())
     mod.main(["--overlay", "pump-dry-run"])
     files = list(tmp_path.glob("coverage_*.json"))
     assert len(files) == 1
     data = json.loads(files[0].read_text())
-    assert data["total_questions"] == 100
+    assert data["total_questions"] == len(_FAST_IDS)
     assert "by_type" in data

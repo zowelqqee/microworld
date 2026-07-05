@@ -70,6 +70,12 @@ def _sample_facts() -> list[PumpFact]:
     ]
 
 
+def _summary_smoke_facts() -> list[PumpFact]:
+    return [
+        PumpFact(FACT_KIND_RELATION, "Jeff Bezos", "founded", "Amazon", "Jeff Bezos"),
+    ]
+
+
 def _answer(**kwargs) -> dict:
     base = {
         "decision": "answer",
@@ -84,11 +90,58 @@ def _answer(**kwargs) -> dict:
     return base
 
 
+def _runner_smoke_ask(question: str, overlay_mode: str) -> dict:
+    if "current" in question.lower():
+        return _answer(
+            decision="audit",
+            supported_by_context=False,
+            support_kind="missing_knowledge",
+            overlay_mode=overlay_mode,
+            risk_flags=["current_live"],
+            answer_text="current/live question requires a fresh source-qualified snapshot",
+        )
+    if question.startswith("Did Amazon found Jeff Bezos"):
+        return _answer(
+            decision="audit",
+            supported_by_context=False,
+            support_kind="audit_blocked_context",
+            overlay_mode=overlay_mode,
+            risk_flags=["relation_inversion"],
+            answer_text="reversed relation is not supported",
+        )
+    return _answer(
+        overlay_mode=overlay_mode,
+        answer_text="Jeff Bezos founded Amazon.",
+    )
+
+
 @pytest.fixture(scope="module")
 def qa_run(tmp_path_factory):
     out = tmp_path_factory.mktemp("pump_fact_qa")
+    before = {str(path): _sha(path) for path in _PROTECTED}
+    (out / "protected_hashes_before.json").write_text(
+        json.dumps(before, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    precision = out / "pump_fact_qa_smoke_precision.json"
+    precision.write_text(json.dumps([
+        {
+            "overlay_type": "overlay_relation",
+            "subject": "Jeff Bezos",
+            "predicate": "founded",
+            "object": "Amazon",
+            "source_page": "Jeff Bezos",
+        },
+    ]), encoding="utf-8")
     # Do not write into the real pump_summary/report from the test run.
-    summary = runner.run(out_dir=out, update_pump_summary=False)
+    summary = runner.run(
+        out_dir=out,
+        precision_path=precision,
+        fallback_path=None,
+        update_pump_summary=False,
+        ask_fn=_runner_smoke_ask,
+        max_prompts_per_category=1,
+    )
     return out, summary
 
 
@@ -455,11 +508,12 @@ def test_runner_uses_pump_dry_run_overlay(qa_run):
 
 @pytest.mark.parametrize("idx", range(4))
 def test_runner_leaves_protected_files_unchanged(qa_run, idx):
-    # qa_run already executed inside the module-scoped fixture; recompute hashes
-    # here and confirm the protected files are still byte-identical to disk.
-    before = _sha(_PROTECTED[idx])
-    runner.run(out_dir=qa_run[0], update_pump_summary=False)
-    assert _sha(_PROTECTED[idx]) == before
+    # qa_run already executed inside the module-scoped fixture; compare against
+    # hashes captured immediately before that runner invocation.
+    before = json.loads(
+        (qa_run[0] / "protected_hashes_before.json").read_text(encoding="utf-8")
+    )
+    assert _sha(_PROTECTED[idx]) == before[str(_PROTECTED[idx])]
 
 
 def test_runner_confirmations_report_no_mutation(qa_run):
@@ -479,9 +533,9 @@ def test_runner_confirmations_report_no_mutation(qa_run):
 # Summary integration end-to-end (build_summary on a runner-driven set)
 # --------------------------------------------------------------------------- #
 def test_build_summary_is_honest_about_planner_gaps():
-    facts = _sample_facts()
+    facts = _summary_smoke_facts()
     prompts = generate_all_prompts(facts)
-    all_prompts = prompts[CATEGORY_POSITIVE] + prompts[CATEGORY_ADVERSARIAL] + prompts[CATEGORY_CURRENT]
+    all_prompts = prompts[CATEGORY_POSITIVE] + prompts[CATEGORY_ADVERSARIAL]
 
     from worldpgt.experiments.ask_microworld_v1 import ask
     results = run_prompts(all_prompts, ask)

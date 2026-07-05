@@ -257,11 +257,13 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "run by": "leader_of",
     "runs": "leader_of",
     "run": "leader_of",
+    "boss of": "leader_of",
     "headed by": "leader_of",
     "heads": "leader_of",
     "head": "leader_of",
     "ceo of": "leader_of",
     "chief executive": "leader_of",
+    "dictator of": "leader_of",
     # operations / location / categorisation
     "operated by": "operated_by",
     "operates": "operates",

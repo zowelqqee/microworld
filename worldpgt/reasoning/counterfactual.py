@@ -22,9 +22,14 @@ Universal, additive, deterministic. No ML. No network.
 
 from __future__ import annotations
 
-from worldpgt.cognition.inference_engine import run_inference
+from worldpgt.cognition.inference_engine import InferenceWorkspace, run_inference
 from worldpgt.reasoning.fact_graph import norm
-from worldpgt.reasoning.pattern_discovery import discover_patterns
+from worldpgt.reasoning.pattern_discovery import (
+    PatternIndex,
+    discover_patterns,
+    index_without,
+    patterns_from_index,
+)
 from worldpgt.reasoning.types import (
     AffectedPattern,
     CounterfactualTrace,
@@ -106,11 +111,19 @@ def analyze_counterfactual(
     patterns: list[GraphPattern] | None = None,
     min_support: int = 2,
     min_confidence: float = 0.5,
+    workspace: InferenceWorkspace | None = None,
+    pattern_index: PatternIndex | None = None,
 ) -> CounterfactualTrace:
     """Compute the structural dependency trace for a hypothetical removal.
 
     When *patterns* is None, patterns are discovered on the fly from the full
     overlay (so affected-pattern analysis always has a baseline to diff).
+
+    *workspace* and *pattern_index* are optional pre-computed caches (e.g.
+    built once at server startup over the full overlay). When given, the
+    "what changes after removal" analysis is done incrementally against
+    them instead of re-running inference / pattern discovery on the reduced
+    overlay from scratch — the dominant cost on a large overlay.
     """
     targets = find_target_items(overlay_items, subject, predicate, obj)
     if not targets:
@@ -147,8 +160,11 @@ def analyze_counterfactual(
             removed_keys.add(_fact_key(f.object, inverse, f.subject))
 
     # --- Inference diff -----------------------------------------------------
-    baseline = run_inference(overlay_items)
-    reduced = run_inference(reduced_items)
+    baseline = workspace if workspace is not None else run_inference(overlay_items)
+    if workspace is not None:
+        reduced = workspace.without_facts(frozenset(removed_keys))
+    else:
+        reduced = run_inference(reduced_items)
     reduced_keys = {
         (norm(f.subject), norm(f.predicate), norm(f.object), f.rule)
         for f in reduced.facts
@@ -178,16 +194,32 @@ def analyze_counterfactual(
     )
 
     # --- Pattern diff ---------------------------------------------------------
-    if patterns is None:
-        patterns = discover_patterns(
-            overlay_items, min_support=min_support, min_confidence=min_confidence
+    if pattern_index is not None:
+        if patterns is None:
+            patterns = patterns_from_index(
+                pattern_index, min_support=min_support, min_confidence=min_confidence
+            )
+        reduced_index = index_without(
+            pattern_index,
+            [(f.subject, f.predicate, f.object) for f in removed_facts],
         )
-    reduced_patterns = {
-        p.pattern_id: p
-        for p in discover_patterns(
-            reduced_items, min_support=min_support, min_confidence=min_confidence
-        )
-    }
+        reduced_patterns = {
+            p.pattern_id: p
+            for p in patterns_from_index(
+                reduced_index, min_support=min_support, min_confidence=min_confidence
+            )
+        }
+    else:
+        if patterns is None:
+            patterns = discover_patterns(
+                overlay_items, min_support=min_support, min_confidence=min_confidence
+            )
+        reduced_patterns = {
+            p.pattern_id: p
+            for p in discover_patterns(
+                reduced_items, min_support=min_support, min_confidence=min_confidence
+            )
+        }
     affected_patterns: list[AffectedPattern] = []
     for pattern in patterns:
         removed_evidence = [

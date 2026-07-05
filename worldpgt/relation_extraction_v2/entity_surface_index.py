@@ -47,6 +47,35 @@ _ALLOWLISTED_SHORT = frozenset({
     "SpaceX", "Tesla", "NASA", "DARPA", "xAI", "ISS",
 })
 
+_BROAD_TOPIC_ALIASES = frozenset({
+    "africa",
+    "agriculture",
+    "asia",
+    "astronomy",
+    "biology",
+    "buddhism",
+    "chemistry",
+    "christianity",
+    "computer science",
+    "economics",
+    "education",
+    "energy",
+    "europe",
+    "film",
+    "islam",
+    "law",
+    "mathematics",
+    "medicine",
+    "music",
+    "north america",
+    "oceania",
+    "physics",
+    "religion",
+    "south america",
+    "sport",
+    "transportation",
+})
+
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").strip())
@@ -64,6 +93,21 @@ def _is_blocked(surface: str) -> bool:
     return False
 
 
+def _is_unsafe_alias(alias: str, label: str, entity_type: str = "") -> bool:
+    alias = _norm(alias)
+    if not alias:
+        return False
+    if alias.lower() in _BROAD_TOPIC_ALIASES and alias.lower() != _norm(label).lower():
+        return True
+    if " " in alias:
+        return False
+    if canonicalize_entity_type(entity_type) == "person":
+        return False
+    label_parts = _norm(label).lower().split()
+    alias_norm = alias.lower()
+    return len(label_parts) > 1 and alias_norm == label_parts[-1] and alias_norm != label_parts[0]
+
+
 def _overlay_entities(overlay_path: Path) -> list[tuple[str, str]]:
     """Return (surface, canonical_name) pairs from an overlay file."""
 
@@ -72,19 +116,21 @@ def _overlay_entities(overlay_path: Path) -> list[tuple[str, str]]:
     items = json.loads(overlay_path.read_text(encoding="utf-8"))
     if not isinstance(items, list):
         return []
-    pairs: list[tuple[str, str]] = []
+    label_pairs: list[tuple[str, str]] = []
+    alias_pairs: list[tuple[str, str]] = []
     for item in items:
         if item.get("overlay_type") != "overlay_entity":
             continue
         label = _norm(str(item.get("label") or ""))
         if not label:
             continue
-        pairs.append((label, label))
+        label_pairs.append((label, label))
+        entity_type = str(item.get("entity_type") or "")
         for alias in item.get("aliases") or []:
             alias = _norm(str(alias))
-            if alias and alias != label:
-                pairs.append((alias, label))
-    return pairs
+            if alias and alias != label and not _is_unsafe_alias(alias, label, entity_type):
+                alias_pairs.append((alias, label))
+    return [*label_pairs, *alias_pairs]
 
 
 def _load_overlay_items(overlay_path: Path) -> list[dict]:
@@ -149,6 +195,26 @@ class EntitySurfaceIndex:
         self._surfaces_sorted = sorted(
             self._surface_to_canonical.keys(), key=len, reverse=True
         )
+        # Case-insensitive surface -> canonical, built once so find_in_text can
+        # resolve a combined-regex match back to its canonical without redoing
+        # per-surface lookups.
+        self._canonical_by_lower_surface: dict[str, str] = {
+            surface.lower(): canonical
+            for surface, canonical in self._surface_to_canonical.items()
+        }
+        # One compiled regex over every known surface, built once here instead
+        # of per-call: find_in_text used to re.compile + re.finditer once per
+        # surface (thousands of entities) on every invocation, which dominated
+        # per-request latency. A single alternation, ordered longest-first so
+        # the engine's leftmost-first alternative selection reproduces the
+        # original longest-match-wins semantics, does one scan instead.
+        if self._surfaces_sorted:
+            alternation = "|".join(re.escape(s) for s in self._surfaces_sorted)
+            self._combined_surface_re: re.Pattern | None = re.compile(
+                rf"(?<!\w)(?:{alternation})(?!\w)", re.IGNORECASE
+            )
+        else:
+            self._combined_surface_re = None
 
     # ------------------------------------------------------------------ #
 
@@ -176,20 +242,12 @@ class EntitySurfaceIndex:
     def find_in_text(self, text: str) -> list[tuple[str, str, int, int]]:
         """Find all (surface, canonical, start, end) spans in ``text``, longest match."""
 
+        if self._combined_surface_re is None:
+            return []
         found: list[tuple[str, str, int, int]] = []
-        # Track which character positions are already covered.
-        covered: list[tuple[int, int]] = []
-
-        for surface in self._surfaces_sorted:
-            canonical = self._surface_to_canonical[surface]
-            pattern = r"(?<!\w)" + re.escape(surface) + r"(?!\w)"
-            for m in re.finditer(pattern, text, re.IGNORECASE):
-                start, end = m.start(), m.end()
-                # Skip if already covered by a longer match.
-                if any(cs <= start and end <= ce for cs, ce in covered):
-                    continue
-                found.append((m.group(0), canonical, start, end))
-                covered.append((start, end))
+        for m in self._combined_surface_re.finditer(text):
+            canonical = self._canonical_by_lower_surface[m.group(0).lower()]
+            found.append((m.group(0), canonical, m.start(), m.end()))
         return found
 
     def has_surface(self, text: str) -> bool:

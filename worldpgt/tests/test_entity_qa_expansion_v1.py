@@ -221,6 +221,67 @@ def test_relation_paraphrase_founder_of(planner):
     assert "founded by spacex" not in answer.lower()
 
 
+def test_relation_paraphrase_who_created(planner):
+    # "created" is a founding synonym: must reuse the vetted founder-lookup path
+    # and never invert.
+    decision, answer = _answer(planner, "Who created SpaceX?")
+    assert decision == "answer"
+    assert "elon musk" in answer.lower()
+    assert "founded by spacex" not in answer.lower()
+
+
+def test_relation_paraphrase_who_co_created(planner):
+    decision, answer = _answer(planner, "Who co-created SpaceX?")
+    assert decision == "answer"
+    assert "elon musk" in answer.lower()
+
+
+def test_relation_paraphrase_founded_by_trailing_whom(planner):
+    decision, answer = _answer(planner, "SpaceX was founded by whom?")
+    assert decision == "answer"
+    low = answer.lower()
+    assert "spacex was founded by elon musk" in low
+    assert "founded by spacex" not in low
+
+
+def test_relation_paraphrase_passive_founded_by_known_agent(planner):
+    decision, answer = _answer(planner, "What was founded by Jeff Bezos?")
+    assert decision == "answer"
+    low = answer.lower()
+    assert "jeff bezos founded" in low
+    assert "blue origin" in low
+
+
+def test_relation_paraphrase_passive_made_by(planner):
+    decision, answer = _answer(planner, "What is made by Tesla?")
+    assert decision == "answer"
+    assert "electric cars" in answer.lower()
+
+
+def test_relation_paraphrase_who_runs_hedged_leadership(planner):
+    decision, answer = _answer(planner, "Who runs Tesla?")
+    assert decision == "answer"
+    low = answer.lower()
+    assert "elon musk" in low
+    assert "linked to tesla through leadership" in low
+    assert "leads tesla" not in low
+
+
+def test_relation_paraphrase_boss_of_hedged_leadership(planner):
+    decision, answer = _answer(planner, "Who is the boss of SpaceX?")
+    assert decision == "answer"
+    low = answer.lower()
+    assert "elon musk" in low
+    assert "linked to spacex through leadership" in low
+    assert "leads spacex" not in low
+
+
+def test_who_created_unknown_entity_audits(planner):
+    # No founding fact in the overlay -> honest audit, never a fabricated claim.
+    decision, _ = _answer(planner, "Who created Atlantis?")
+    assert decision == "audit"
+
+
 def test_relation_paraphrase_how_connected(planner):
     decision, answer = _answer(planner, "How is Elon Musk connected to Tesla?")
     assert decision == "answer"
@@ -275,6 +336,8 @@ def test_source_fact_is_volatile(planner):
     "Does Forbes lead Tesla?",
     "Is Tesla the founder of Elon Musk?",
     "Did SpaceX found Elon Musk?",
+    "Did SpaceX create Elon Musk?",
+    "Does Tesla create Elon Musk?",
     "Is net worth a stable physical property?",
     "Is leadership a product made by Tesla?",
     "Is Bloomberg News the same as Bloomberg L.P.?",

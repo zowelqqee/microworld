@@ -18,6 +18,7 @@ from typing import Optional
 
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.entity_qa.types import AnalyzedEntityQuestion, EntityQAIntent, SemanticQuery
+from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 
 # ---- current / volatile query signals ---------------------------------
 _CURRENT_SIGNALS = re.compile(
@@ -122,7 +123,8 @@ _IS_STABLE_REL_RE = re.compile(
 
 _RELATION_ASSERTION_RE = re.compile(
     r"^(?:did|does|is|was|were)\s+.+?\b("
-    r"found|founded|founder\s+of|creator\s+of|created|lead|leads|led|"
+    r"found|founded|founder\s+of|creator\s+of|create|creates|created|"
+    r"lead|leads|led|"
     r"own|owns|owned\s+by|develop|develops|produce|produces|publish|publishes|"
     r"build|builds|make|makes"
     r")\b.+?[\?\.]?$",
@@ -142,6 +144,10 @@ _DECLARATIVE_RELATION_ASSERTION_RE = re.compile(
     r"found|founded|lead|leads|own|owns|develop|develops|produce|produces|"
     r"publish|publishes|make|makes|build|builds"
     r")\b.+[\?\.]?$",
+    re.IGNORECASE,
+)
+_TRAILING_WH_LOOKUP_RE = re.compile(
+    r"\b(?:who|whom|what|which)\s*[\?\.]?$",
     re.IGNORECASE,
 )
 
@@ -255,7 +261,11 @@ _DEFINE_RE = re.compile(
 
 # ---- passive develops ("What is developed by X?") -------------------
 _PASSIVE_DEVELOPS_RE = re.compile(
-    r"^what\s+(?:is|was)\s+(developed|produced|published)\s+by\s+(.+?)[\?.]?$",
+    r"^what\s+(?:is|was)\s+(developed|produced|published|made|built|manufactured|designed)\s+by\s+(.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_WHERE_LOCATED_RE = re.compile(
+    r"^where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?.]?$",
     re.IGNORECASE,
 )
 
@@ -263,7 +273,16 @@ _PASSIVE_VERB_PREDICATE: dict[str, str] = {
     "developed": "develops",
     "produced": "produces",
     "published": "publishes",
+    "made": "produces",
+    "built": "develops",
+    "manufactured": "produces",
+    "designed": "develops",
 }
+_PASSIVE_FOUNDED_BY_KNOWN_AGENT_RE = re.compile(
+    r"^(?:what|which)\b.+\b(?:founded|created|co-?founded|co-?created|"
+    r"started|established|launched)\s+by\b",
+    re.IGNORECASE,
+)
 
 _SEMANTIC_HIGH_CONFIDENCE = 0.75
 
@@ -290,7 +309,11 @@ _VERB_PREDICATE: dict[str, str] = {
 }
 
 
-def analyze(question: str) -> AnalyzedEntityQuestion:
+def analyze(
+    question: str,
+    *,
+    index: EntitySurfaceIndex | None = None,
+) -> AnalyzedEntityQuestion:
     """Parse one entity QA question deterministically."""
     q = question.strip()
 
@@ -497,10 +520,13 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         )
 
     if (
-        _RELATION_ASSERTION_RE.search(q)
-        or _CONDITIONAL_RELATION_ASSERTION_RE.search(q)
-        or _WEAK_LINK_ASSERTION_RE.search(q)
-        or _DECLARATIVE_RELATION_ASSERTION_RE.search(q)
+        not _TRAILING_WH_LOOKUP_RE.search(q)
+        and (
+            _RELATION_ASSERTION_RE.search(q)
+            or _CONDITIONAL_RELATION_ASSERTION_RE.search(q)
+            or _WEAK_LINK_ASSERTION_RE.search(q)
+            or _DECLARATIVE_RELATION_ASSERTION_RE.search(q)
+        )
     ):
         return AnalyzedEntityQuestion(
             question=q,
@@ -513,7 +539,23 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
             is_unsupported=True,
         )
 
-    semantic = parse_semantic_query(q)
+    # Generic definition questions with an article ("What is a rocket?") must
+    # stay definition lookups. The semantic parser may otherwise see a partial
+    # entity surface plus "is a" and misclassify the question as class lookup.
+    m = _WHAT_IS_RE.match(q)
+    if m and re.match(r"^what\s+is\s+(?:a|an|the)\s+", q, re.IGNORECASE):
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="define_entity",
+            subject=_clean(m.group(1)),
+            predicate_hint=None,
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
+    semantic = parse_semantic_query(q, index)
     semantic_analyzed = _analyze_semantic(q, semantic)
     if semantic_analyzed is not None:
         return semantic_analyzed
@@ -603,6 +645,19 @@ def analyze(question: str) -> AnalyzedEntityQuestion:
         )
 
     # 9. Relation — produces/develops/publishes
+    m = _WHERE_LOCATED_RE.search(q)
+    if m:
+        return AnalyzedEntityQuestion(
+            question=q,
+            intent="relation_lookup",
+            subject=_clean(m.group(1)),
+            predicate_hint="located_in",
+            secondary_entity=None,
+            source_hint=None,
+            is_current_query=False,
+            is_unsupported=False,
+        )
+
     m = _REPORT_PUBLISH_RE.search(q)
     if m:
         return AnalyzedEntityQuestion(
@@ -907,7 +962,20 @@ def _analyze_semantic(
 
     if semantic.relation_intent and semantic.entity_a:
         predicate_hint = semantic.relation_intent
-        if predicate_hint == "founded_by" and question.lower().startswith("who founded "):
+        # "created / co-created" are founding synonyms. Normalize them to the
+        # overlay's founded_by vocabulary so paraphrases like "Who created X?"
+        # reuse the exact same vetted founder-lookup path as "Who founded X?".
+        # If the overlay holds no founding fact, this still audits (never a new
+        # claim), so it adds no precision or safety risk.
+        if predicate_hint == "created_by":
+            predicate_hint = "founded_by"
+        if predicate_hint == "founded_by" and _PASSIVE_FOUNDED_BY_KNOWN_AGENT_RE.match(question):
+            predicate_hint = "founded"
+        if predicate_hint == "founded_by" and re.match(
+            r"^who\s+(?:founded|created|co-?founded|co-?created)\b",
+            question,
+            re.IGNORECASE,
+        ):
             predicate_hint = "founded"
         if predicate_hint == "founded_by" and re.match(
             r"^(?:what|which)\b.*\bdid\s+.+?\s+found\b",

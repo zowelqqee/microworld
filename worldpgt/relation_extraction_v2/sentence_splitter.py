@@ -114,7 +114,7 @@ def extract_full_body(raw_doc_text: str) -> str:
     # Metadata lines in the normalized docs use "Key: value" format and appear
     # right after the "# Title" line. We skip lines until we see the first
     # non-metadata, non-blank, non-heading line.
-    _META_RE = re.compile(r"^[A-Z][A-Za-z0-9 /-]+:\s+\S", re.IGNORECASE)
+    _META_RE = re.compile(r"^[A-Z][A-Za-z0-9 /-]+:\s*.*$", re.IGNORECASE)
 
     lines = raw_doc_text.splitlines()
     in_meta = True

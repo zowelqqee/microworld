@@ -6,6 +6,7 @@ Deterministic rule-based only. No ML. No network.
 
 from __future__ import annotations
 
+import re
 from typing import Optional
 
 from worldpgt.entity_qa.synthesis_engine import synthesize
@@ -49,6 +50,50 @@ _UNSUPPORTED_SEMANTIC_QUERY_REASON = (
 )
 
 _ANSWERABLE_STABILITIES = frozenset({"stable", "semi_stable"})
+_LED_BY_RE = re.compile(
+    r"\bled\s+by\s+([A-Z][A-Za-z.'-]+(?:\s+[A-Z][A-Za-z.'-]+){0,4})\b"
+)
+_LANGUAGE_OR_ADJECTIVE_LOCATIONS = frozenset({
+    "arabic",
+    "chinese",
+    "dutch",
+    "english",
+    "french",
+    "german",
+    "greek",
+    "hebrew",
+    "italian",
+    "japanese",
+    "korean",
+    "latin",
+    "portuguese",
+    "russian",
+    "spanish",
+    "turkish",
+})
+_ABSTRACT_LOCATION_OBJECT_TOKENS = frozenset({
+    "concept",
+    "concepts",
+    "culture",
+    "discipline",
+    "disciplines",
+    "economics",
+    "field",
+    "fields",
+    "language",
+    "languages",
+    "literature",
+    "medicine",
+    "philosophy",
+    "practice",
+    "practices",
+    "religion",
+    "science",
+    "teachings",
+    "theory",
+    "tradition",
+    "traditions",
+})
 
 
 def _norm(s: str) -> str:
@@ -69,14 +114,47 @@ def _is_answerable_relation(item: dict) -> bool:
     )
 
 
+def _is_directly_renderable_relation(item: dict) -> bool:
+    stability = str(item.get("stability") or "")
+    return (
+        stability in _ANSWERABLE_STABILITIES
+        and str(item.get("risk") or "").lower() != "high"
+    )
+
+
+def _is_bad_located_in_relation(item: dict) -> bool:
+    if item.get("predicate") != "located_in":
+        return False
+    source_page = _norm(str(item.get("source_page") or ""))
+    subject = _norm(str(item.get("subject") or ""))
+    if source_page and subject and source_page != subject:
+        return True
+    obj = _norm(str(item.get("object") or ""))
+    if not obj:
+        return False
+    evidence = _norm(str(item.get("evidence_text") or item.get("evidence_span") or ""))
+    if " " not in obj and obj in _LANGUAGE_OR_ADJECTIVE_LOCATIONS:
+        return f"in {obj}" in f" {evidence} "
+    obj_tokens = set(obj.split())
+    if obj_tokens.intersection(_ABSTRACT_LOCATION_OBJECT_TOKENS):
+        return True
+    return False
+
+
+def _filter_renderable_relations(relations: list[dict]) -> list[dict]:
+    return [r for r in relations if not _is_bad_located_in_relation(r)]
+
+
 class EntityAnswerPlanner:
     def __init__(
         self,
         provider: WikiMemoryOverlayProvider,
         ontology_layer_items: list[dict] | None = None,
+        inference_workspace=None,
     ) -> None:
         self._provider = provider
         self._ontology_layer_items = list(ontology_layer_items or [])
+        self._inference_workspace = inference_workspace
 
     def plan(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
         intent = analyzed.intent
@@ -117,7 +195,12 @@ class EntityAnswerPlanner:
     def _plan_open_synthesis(self, analyzed: AnalyzedEntityQuestion) -> EntityQAPlan:
         """Layer 3: synthesize an answer from every fact known about the entity."""
         subject = analyzed.subject or ""
-        result = synthesize(self._provider, subject, analyzed.question)
+        result = synthesize(
+            self._provider,
+            subject,
+            analyzed.question,
+            workspace=self._inference_workspace,
+        )
 
         # Nothing in the graph (no entity, no keyword neighbour, no facts) — be
         # honest and audit rather than emit an empty answer.
@@ -170,7 +253,7 @@ class EntityAnswerPlanner:
         if definition:
             evidence.overlay_items_used.append(f"overlay_definition:{definition['subject']}")
 
-        relations = self._provider.get_relations(subject)
+        relations = _filter_renderable_relations(self._provider.get_relations(subject))
         is_a_relations = [r for r in relations if r.get("predicate") == "is_a"]
         if relations:
             for r in relations:
@@ -207,16 +290,22 @@ class EntityAnswerPlanner:
         if predicate == "intersection":
             return self._plan_comparative_intersection(analyzed)
 
+        founder_lookup_question = predicate in {"founded_by", "founded"} and _asks_who_founded(analyzed.question)
+
         if (
             analyzed.semantic_query is not None
             and analyzed.semantic_query.unknown_position == "subject"
             and predicate
+            and not founder_lookup_question
         ):
             all_relations = [
                 r for r in self._provider.all_relations()
                 if r.get("predicate") == predicate
                 and _norm(r.get("object", "")) == _norm(subject)
-                and _is_answerable_relation(r)
+                and (
+                    _is_answerable_relation(r)
+                    or (predicate == "leader_of" and _is_directly_renderable_relation(r))
+                )
             ]
             self._provider._items_used += len(all_relations)
             for r in all_relations:
@@ -224,6 +313,10 @@ class EntityAnswerPlanner:
                     f"overlay_relation:{r['subject']}:{r['predicate']}:{r['object']}"
                 )
             if not all_relations:
+                if predicate == "leader_of":
+                    definition_plan = self._plan_leader_from_definition(analyzed, subject)
+                    if definition_plan is not None:
+                        return definition_plan
                 return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
             return EntityQAPlan(
                 analyzed=analyzed,
@@ -267,8 +360,6 @@ class EntityAnswerPlanner:
                 confidence=0.9,
             )
 
-        founder_lookup_question = predicate in {"founded_by", "founded"} and _asks_who_founded(analyzed.question)
-
         if predicate == "founded_by" or founder_lookup_question:
             # "Who founded X?" — prefer X founded_by Y; also support older
             # founder-as-subject facts: Y founded X.
@@ -294,6 +385,8 @@ class EntityAnswerPlanner:
             # Try any relation for this subject
             all_relations = self._provider.get_relations(subject)
 
+        all_relations = _filter_renderable_relations(all_relations)
+
         for r in all_relations:
             evidence.overlay_items_used.append(
                 f"overlay_relation:{r['predicate']}:{r['object']}"
@@ -317,6 +410,42 @@ class EntityAnswerPlanner:
                 "founder_lookup": founder_lookup,
             },
             confidence=0.9,
+        )
+
+    def _plan_leader_from_definition(
+        self,
+        analyzed: AnalyzedEntityQuestion,
+        subject: str,
+    ) -> Optional[EntityQAPlan]:
+        definition = self._provider.get_definition(subject)
+        if not definition:
+            return None
+        definition_text = str(definition.get("definition") or "")
+        evidence_text = str(definition.get("evidence_text") or "")
+        support_text = evidence_text or definition_text
+        match = _LED_BY_RE.search(support_text)
+        if not match:
+            return None
+
+        leader = match.group(1).strip().rstrip(".,;:")
+        if not leader:
+            return None
+
+        evidence = EntityQAEvidence()
+        evidence.overlay_items_used.append(f"overlay_definition:{subject}")
+        return EntityQAPlan(
+            analyzed=analyzed,
+            decision="answer",
+            audit_reason=None,
+            evidence=evidence,
+            render_template="definition_relation_lookup",
+            render_args={
+                "subject": subject,
+                "predicate": "leader_of",
+                "object": leader,
+                "definition": definition,
+            },
+            confidence=0.8,
         )
 
     def _plan_comparative_intersection(

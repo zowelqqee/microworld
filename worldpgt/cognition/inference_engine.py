@@ -66,6 +66,35 @@ class InferenceWorkspace:
         """All inferred facts produced by a given rule id."""
         return tuple(f for f in self.facts if f.rule == rule_id)
 
+    def without_facts(
+        self, removed_keys: "frozenset[tuple[str, str, str]]"
+    ) -> "InferenceWorkspace":
+        """Drop cached facts whose proof chain cites a removed base triple.
+
+        Cheap incremental substitute for re-running inference on a reduced
+        overlay: each ``InferredFact`` already records the exact chain of base
+        triples that justified it, so we can tell which ones a removal
+        invalidates without redoing the rule search. This assumes that chain
+        is a fact's only derivation path — true for this engine's
+        single-derivation bookkeeping — so in the rare case an alternate,
+        unrecorded derivation exists it may under-approximate (drop a fact
+        that a full recompute would keep), but it never invents facts that
+        shouldn't be there.
+        """
+        def _depends_on_removed(fact: InferredFact) -> bool:
+            return any(
+                (_norm(s), _norm(p), _norm(o)) in removed_keys
+                for s, p, o in fact.chain
+            )
+
+        return InferenceWorkspace(
+            facts=tuple(f for f in self.facts if not _depends_on_removed(f))
+        )
+
+
+def _norm(text: str) -> str:
+    return " ".join((text or "").strip().lower().split())
+
 
 def run_inference(
     overlay_items: list[dict],

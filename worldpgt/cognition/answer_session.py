@@ -8,13 +8,13 @@ session. It is deliberately a wrapper: the stable single-shot
 from __future__ import annotations
 
 from dataclasses import dataclass, replace
-from pathlib import Path
 import re
 
-from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
+from worldpgt.assistant_surface.answer_orchestrator import (
+    AnswerOrchestrator,
+    _surface_index_for_overlay,
+)
 from worldpgt.assistant_surface.context_selector import (
-    ACCEPTED_OVERLAY_PATH,
-    SNAPSHOT_DRY_RUN_OVERLAY_PATH,
     resolve_overlay,
 )
 from worldpgt.assistant_surface.types import (
@@ -380,11 +380,7 @@ def _surface_index_for_session(
     overlay_path: str | None,
 ) -> EntitySurfaceIndex:
     resolved_path = overlay_path or resolve_overlay(overlay_mode)[0]
-    return EntitySurfaceIndex(
-        accepted_overlay_path=ACCEPTED_OVERLAY_PATH,
-        promoted_overlay_path=Path(resolved_path),
-        snapshot_overlay_path=SNAPSHOT_DRY_RUN_OVERLAY_PATH,
-    )
+    return _surface_index_for_overlay(resolved_path)
 
 
 def _unresolved_reference_without_subject(

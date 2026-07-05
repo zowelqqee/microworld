@@ -78,6 +78,12 @@ def validate_answer(answer: AssistantAnswer) -> list[str]:
 def is_unsafe_answer(answer: AssistantAnswer) -> bool:
     """A hard-safety intent that nonetheless produced an answer."""
 
+    if (
+        answer.route == "current_live_request"
+        and answer.support_kind == "web_search_result"
+        and "web_search_live" in answer.risk_flags
+    ):
+        return False
     return _is_supported_factual_outcome(answer) and answer.route in HARD_SAFETY_INTENTS
 
 
@@ -102,6 +108,12 @@ def is_volatile_false_stable(answer: AssistantAnswer) -> bool:
 
 
 def is_current_live_false_support(answer: AssistantAnswer) -> bool:
+    if (
+        answer.route == "current_live_request"
+        and answer.support_kind == "web_search_result"
+        and "web_search_live" in answer.risk_flags
+    ):
+        return False
     return _is_supported_factual_outcome(answer) and answer.route == "current_live_request"
 
 

@@ -43,7 +43,8 @@ _CURRENT_LIVE_RE = re.compile(
     r"market\s+cap(?:italization)?|worth\s+right\s+now|right\s+now|today|"
     r"current\s+net\s+worth|"
     r"latest\s+quarterly\s+revenue|latest\s+revenue|quarterly\s+revenue|"
-    r"current\s+ceo|currently|latest\s+ranking|live\s+right\s+now|"
+    r"current\s+ceo|current\s+president|current\s+prime\s+minister|"
+    r"current\s+mayor|currently|latest\s+ranking|live\s+right\s+now|"
     r"permanently\b.*\bnet\s+worth|net\s+worth\b.*\bpermanently)\b",
     re.IGNORECASE,
 )
@@ -111,6 +112,7 @@ _CONNECTION_RE = re.compile(
 _RELATION_RE = re.compile(
     r"(what\s+does\s+(.+?)\s+(?:develop|produce|publish|manufacture|make|build|"
     r"require|need|allow|permit|prohibit|forbid)s?\b|"
+    r"where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?\.]?$|"
     r"(?:which|what)\s+reports?\s+does\s+(.+?)\s+publish(?:\s+annually)?[\?\.]?$|"
     r"what\s+products?\s+does\s+(.+?)\s+(?:make|produce|manufacture|build)s?\b|"
     r"what\s+(?:is|was)\s+developed\s+by\s+(.+?)[\?\.]?$|"
@@ -130,6 +132,12 @@ _RELATION_RE = re.compile(
 )
 _IS_A_CLASS_RE = re.compile(
     r"^is\s+(.+?)\s+an?\s+(.+?)[\?\.]?$",
+    re.IGNORECASE,
+)
+_UNSUPPORTED_RELATION_TAIL_RE = re.compile(
+    r"^(?:who|what)\s+(?:is|are|was|were)\s+.+?\s+"
+    r"(?:married\s+to|succeeded\s+by|preceded\s+by|born\s+(?:in|on)|"
+    r"died\s+(?:in|on))[\?\.]?$",
     re.IGNORECASE,
 )
 
@@ -321,9 +329,16 @@ def route(question: str, index: EntitySurfaceIndex | None = None) -> AssistantRo
         )
 
     # ---- 6. Entity definition ---------------------------------------- #
+    if _UNSUPPORTED_RELATION_TAIL_RE.search(q):
+        return AssistantRoute(
+            question=q,
+            intent="unknown_or_unsupported",
+            notes="unsupported relation lookup",
+        )
+
     df = _DEFINITION_RE.search(q)
     if df:
-        subj = _first_group(df, 2, 3, 4, 5, 6)
+        subj = _first_group(df, 2, 3, 4, 5, 6, 7, 8)
         return AssistantRoute(
             question=q,
             intent="entity_definition",

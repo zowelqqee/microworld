@@ -16,6 +16,7 @@ Deterministic, rule-based, offline. No ML. No embeddings. No network.
 from __future__ import annotations
 
 import re
+import weakref
 
 from worldpgt.entity_qa.types import (
     SynthesisAnswer,
@@ -90,11 +91,21 @@ def _norm(s: str) -> str:
     return " ".join((s or "").strip().lower().split()).removeprefix("the ")
 
 
+_APOSTROPHE_RE = re.compile(r"['''`]")
+_WHITESPACE_RE = re.compile(r"\s+")
+_ARTICLE_PREFIX_RE = re.compile(r"^(?:the|a|an)\s+")
+
+
 def _surface_norm(s: str) -> str:
+    # Precompiled patterns, called for every overlay entity/relation on every
+    # synthesis request: plain re.sub(literal_pattern, ...) relies on
+    # Python's built-in 512-entry regex cache, which other high-cardinality
+    # matching elsewhere in the same request (thousands of distinct entity
+    # surface patterns) evicts constantly, forcing a recompile on every call.
     s = (s or "").lower().strip()
-    s = re.sub(r"[''`]", "", s)
-    s = re.sub(r"\s+", " ", s)
-    s = re.sub(r"^(?:the|a|an)\s+", "", s)
+    s = _APOSTROPHE_RE.sub("", s)
+    s = _WHITESPACE_RE.sub(" ", s)
+    s = _ARTICLE_PREFIX_RE.sub("", s)
     return s
 
 
@@ -359,12 +370,38 @@ def _subject_surface_norms(entity: dict, definition_item: dict | None) -> set[st
     return {norm for norm in norms if norm}
 
 
+# provider -> {surface_norm(subject): [definitions]}, keyed by object identity
+# (WeakKeyDictionary so it never outlives the provider or causes id() reuse
+# bugs across short-lived providers in tests). Overlays are read-only after
+# load, so this is safe to build once and reuse for every subsequent call.
+_definitions_by_norm_subject_cache: "weakref.WeakKeyDictionary" = weakref.WeakKeyDictionary()
+
+
+def _definitions_by_norm_subject(provider: WikiMemoryOverlayProvider) -> dict[str, list[dict]]:
+    cached = _definitions_by_norm_subject_cache.get(provider)
+    if cached is not None:
+        return cached
+    index: dict[str, list[dict]] = {}
+    for definition in _all_definitions(provider):
+        index.setdefault(_surface_norm(definition.get("subject", "")), []).append(definition)
+    _definitions_by_norm_subject_cache[provider] = index
+    return index
+
+
+def warm_definitions_index(provider: WikiMemoryOverlayProvider) -> None:
+    """Pre-build the definitions-by-subject index for *provider*.
+
+    Call once at server startup (the provider is created once and reused for
+    the process lifetime) so the first "tell me about X" request does not
+    pay the one-time O(overlay size) index-build cost itself.
+    """
+    _definitions_by_norm_subject(provider)
+
+
 def _ranking_note(provider: WikiMemoryOverlayProvider, obj: str) -> str | None:
     """A ranking definition for *obj* if one exists ("ranked 5th on the Fortune 500")."""
     obj_norm = _surface_norm(obj)
-    for definition in _all_definitions(provider):
-        if _surface_norm(definition.get("subject", "")) != obj_norm:
-            continue
+    for definition in _definitions_by_norm_subject(provider).get(obj_norm, []):
         text = str(definition.get("definition") or "")
         low = text.lower()
         if any(token in low for token in _RANKING_TOKENS):
@@ -425,6 +462,7 @@ def synthesize(
     subject_raw: str,
     question: str = "",
     surface_index=None,
+    workspace=None,
 ) -> SynthesisAnswer:
     """Gather and group everything the overlay knows about *subject_raw*."""
 
@@ -548,12 +586,20 @@ def synthesize(
     # separate so renderers can say "Based on reasoning" instead of presenting
     # them as direct verified facts.
     try:
-        from worldpgt.cognition.inference_engine import run_inference
+        if workspace is not None:
+            # A workspace already computed over the full overlay (e.g. cached
+            # once at server startup) makes the subject-neighborhood overlay
+            # slice below unnecessary — for_subject() is a cheap filter over
+            # already-derived facts instead of a fresh rule-interpretation
+            # pass on every "tell me about X" request.
+            inferred_workspace = workspace
+        else:
+            from worldpgt.cognition.inference_engine import run_inference
 
-        workspace = run_inference(
-            _overlay_items_for_subject_inference(provider, label, definition)
-        )
-        for fact in workspace.for_subject(label):
+            inferred_workspace = run_inference(
+                _overlay_items_for_subject_inference(provider, label, definition)
+            )
+        for fact in inferred_workspace.for_subject(label):
             key = (_norm(label), fact.predicate, _norm(fact.object))
             if key in direct_keys:
                 continue

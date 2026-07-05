@@ -197,7 +197,8 @@ class TestRenderAndAdapter:
         )
         assert result.kind == "counterfactual"
         assert result.decision == "analysis"
-        assert "share_founder" in result.answer_text
+        assert "Neuralink" in result.answer_text
+        assert "share" in result.answer_text.lower()
 
     def test_passive_form_parses(self):
         result = try_answer_reasoning(

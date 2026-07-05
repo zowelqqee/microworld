@@ -119,6 +119,127 @@ def test_definition_uses_source_page_lead_subject_without_alias(tmp_path):
     assert validate_answer(answer) == []
 
 
+def test_generic_tail_alias_does_not_define_narrow_compound(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _entity("Space medicine", aliases=["Medicine"]),
+            _definition("Space medicine", "subspecialty of emergency medicine"),
+            _entity("Transport economics", aliases=["Economics"]),
+            _definition("Transport economics", "branch of economics"),
+        ],
+    )
+    orchestrator = AnswerOrchestrator(overlay_path=overlay_path)
+
+    medicine = orchestrator.answer("What is medicine?")
+    economics = orchestrator.answer("What is economics?")
+
+    assert medicine.decision == "audit"
+    assert economics.decision == "audit"
+
+
+def test_broad_topic_alias_does_not_define_unrelated_entity(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _entity("School district", aliases=["North America", "district"]),
+            _definition(
+                "School district",
+                "administrative body for education institutions",
+            ),
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer(
+        "What is North America?"
+    )
+
+    assert answer.decision == "audit"
+    assert "School district" not in answer.answer_text
+
+
+def test_where_located_uses_exact_raw_subject_not_longer_global_match(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _entity("France"),
+            _relation("France", "located_in", "Western Europe", stability="semi_stable"),
+            {
+                **_relation("France", "located_in", "French", stability="semi_stable"),
+                "evidence_text": "Provincia Nostra evolved into Provence in French.",
+            },
+            _entity("African Americans in France"),
+            _relation("African Americans in France", "located_in", "Paris", stability="semi_stable"),
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("Where is France located?")
+
+    assert answer.decision == "answer"
+    assert "France is located in Western Europe" in answer.answer_text
+    assert "French" not in answer.answer_text
+    assert "African Americans in France" not in answer.answer_text
+
+
+def test_definition_filters_abstract_located_in_relation(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _entity("Islam"),
+            _definition(
+                "Islam",
+                "Abrahamic religion based on the Quran and the teachings of Muhammad",
+            ),
+            {
+                **_relation(
+                    "Islam",
+                    "located_in",
+                    "Islamic mystical teachings",
+                    stability="semi_stable",
+                ),
+                "evidence_text": (
+                    "It is usually thought of as a precise monotheism, but is "
+                    "also panentheistic in Islamic mystical teachings."
+                ),
+            },
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("What is Islam?")
+
+    assert answer.decision == "answer"
+    assert answer.answer_text.startswith("Islam is an Abrahamic religion")
+    assert "located in Islamic mystical teachings" not in answer.answer_text
+
+
+def test_definition_filters_located_in_from_unrelated_source_page(tmp_path):
+    overlay_path = _overlay(
+        tmp_path,
+        [
+            _definition("Germany", "country in Western and Central Europe"),
+            {
+                **_relation(
+                    "Germany",
+                    "located_in",
+                    "Bremen",
+                    stability="semi_stable",
+                ),
+                "source_page": "EADS Astrium",
+                "evidence_text": (
+                    "The company has facilities in France and in Germany; "
+                    "the main facility in Germany is located in Bremen."
+                ),
+            },
+        ],
+    )
+
+    answer = AnswerOrchestrator(overlay_path=overlay_path).answer("What is Germany?")
+
+    assert answer.decision == "answer"
+    assert answer.answer_text == "Germany is a country in Western and Central Europe."
+    assert "Bremen" not in answer.answer_text
+
+
 def test_definition_source_page_fallback_skips_copula_fragments(tmp_path):
     entity = _entity("Bill Gates")
     entity["source_page"] = "Bill Gates"

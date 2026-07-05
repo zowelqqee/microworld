@@ -27,6 +27,7 @@ _SUPPORT_LABELS = {
     "explicit_type_contradiction": "explicit type contradiction",
     "entity_type_mismatch": "entity type mismatch",
     "source_qualified_fact": "source-qualified fact (volatile)",
+    "web_search_result": "live web search result (volatile)",
     "safe_policy_answer": "safe policy explanation",
     "audit_blocked_context": "blocked by safety policy",
     "missing_knowledge": "missing knowledge",

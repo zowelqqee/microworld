@@ -28,6 +28,7 @@ No ML. No network.
 from __future__ import annotations
 
 import re
+from dataclasses import dataclass
 
 from worldpgt.reasoning.fact_graph import FactGraph, norm
 from worldpgt.reasoning.types import (
@@ -111,14 +112,26 @@ def _entity_predicates(graph: FactGraph, entity_norm: str) -> dict[str, list]:
     return out
 
 
-def discover_patterns(
-    overlay_items: list[dict],
-    min_support: int = 2,
-    min_confidence: float = 0.5,
-    max_patterns: int = 200,
-    as_of: str = "",
-) -> list[GraphPattern]:
-    """Analyze the graph and return discovered patterns, best-first."""
+@dataclass
+class PatternIndex:
+    """The expensive-to-build intermediate structures pattern mining needs.
+
+    Building this (``FactGraph`` construction + a per-entity predicate/class
+    scan) dominates ``discover_patterns``' cost on a large overlay — the
+    mining itself is cheap once these are in hand. Callers that need pattern
+    stats on a *slightly* modified overlay (e.g. counterfactual analysis
+    removing one or two facts) can build this once and reuse it via
+    :func:`index_without` instead of paying the full scan again.
+    """
+
+    graph: FactGraph
+    class_members: dict[str, list[str]]
+    class_display: dict[str, str]
+    entity_preds: dict[str, dict[str, list]]
+
+
+def build_pattern_index(overlay_items: list[dict]) -> PatternIndex:
+    """Build the (expensive) intermediate structures pattern mining needs."""
     graph = FactGraph(overlay_items)
 
     # class label (norm) -> sorted member entity norms
@@ -137,21 +150,103 @@ def discover_patterns(
             class_display.setdefault(key, cls)
             class_members.setdefault(key, []).append(entity)
 
+    return PatternIndex(
+        graph=graph,
+        class_members=class_members,
+        class_display=class_display,
+        entity_preds=entity_preds,
+    )
+
+
+def index_without(
+    index: PatternIndex, removed_facts: list[tuple[str, str, str]]
+) -> PatternIndex:
+    """Cheap incremental index update for a handful of removed triples.
+
+    Shallow-copies the top-level dicts (pointer copies, not a graph rebuild)
+    and only replaces the entries for entities actually touched by a removed
+    fact — O(#removed facts), not O(overlay size). This is what makes
+    counterfactual "what does this fact's removal do to my discovered
+    patterns" analysis cheap on an overlay this large.
+    """
+    removed = {(norm(s), norm(p), norm(o)) for s, p, o in removed_facts}
+    touched = {norm(s) for s, p, o in removed_facts} | {norm(o) for s, p, o in removed_facts}
+
+    entity_preds = dict(index.entity_preds)
+    for entity in touched:
+        preds = entity_preds.get(entity)
+        if not preds:
+            continue
+        new_preds: dict[str, list] = {}
+        for pred, facts in preds.items():
+            kept = [
+                f for f in facts
+                if (norm(f.subject), norm(f.predicate), norm(f.object)) not in removed
+            ]
+            if kept:
+                new_preds[pred] = kept
+        entity_preds[entity] = new_preds
+
+    class_members = dict(index.class_members)
+    for cls, members in index.class_members.items():
+        if not any(m in touched for m in members):
+            continue
+        kept_members = [
+            m for m in members
+            if (m, "is_a", cls) not in removed and (m, "type_of", cls) not in removed
+        ]
+        if kept_members != members:
+            class_members[cls] = kept_members
+
+    return PatternIndex(
+        graph=index.graph,
+        class_members=class_members,
+        class_display=index.class_display,
+        entity_preds=entity_preds,
+    )
+
+
+def patterns_from_index(
+    index: PatternIndex,
+    min_support: int = 2,
+    min_confidence: float = 0.5,
+    max_patterns: int = 200,
+    as_of: str = "",
+) -> list[GraphPattern]:
+    """Mine patterns from an already-built (or incrementally-updated) index."""
     patterns: list[GraphPattern] = []
     patterns.extend(
         _class_implication_patterns(
-            graph, class_members, class_display, entity_preds,
+            index.graph, index.class_members, index.class_display, index.entity_preds,
             min_support, min_confidence, as_of,
         )
     )
     patterns.extend(
         _cooccurrence_patterns(
-            graph, entity_preds, min_support, min_confidence, as_of,
+            index.graph, index.entity_preds, min_support, min_confidence, as_of,
         )
     )
 
     patterns.sort(key=lambda p: (-p.confidence, -p.support, p.pattern_id))
     return patterns[:max_patterns]
+
+
+def discover_patterns(
+    overlay_items: list[dict],
+    min_support: int = 2,
+    min_confidence: float = 0.5,
+    max_patterns: int = 200,
+    as_of: str = "",
+) -> list[GraphPattern]:
+    """Analyze the graph and return discovered patterns, best-first."""
+    index = build_pattern_index(overlay_items)
+    return patterns_from_index(
+        index,
+        min_support=min_support,
+        min_confidence=min_confidence,
+        max_patterns=max_patterns,
+        as_of=as_of,
+    )
 
 
 def _build_pattern(

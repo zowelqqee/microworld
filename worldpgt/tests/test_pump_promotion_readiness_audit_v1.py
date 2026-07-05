@@ -109,13 +109,26 @@ def test_audit_does_not_modify_protected_files(tmp_path) -> None:
 def test_classifies_all_current_answerable_facts(real_audit) -> None:
     _out_dir, summary = real_audit
     pump_summary = json.loads((_PUMP_DIR / "pump_summary.json").read_text(encoding="utf-8"))
-    expected_fact_count = pump_summary["pump_answerable_fact_delta_count"]
-    qa_fact_count = pump_summary.get("pump_fact_qa_fact_count", expected_fact_count)
+    precision_rows = json.loads(_PRECISION.read_text(encoding="utf-8"))
+    answerable_rows = [
+        row for row in precision_rows
+        if isinstance(row, dict)
+        and row.get("overlay_type") in {"overlay_relation", "overlay_definition"}
+    ]
+    expected_fact_count = len(answerable_rows)
+    expected_relations = sum(
+        1 for row in answerable_rows if row.get("overlay_type") == "overlay_relation"
+    )
+    expected_definitions = sum(
+        1 for row in answerable_rows if row.get("overlay_type") == "overlay_definition"
+    )
+    legacy_fact_count = pump_summary["pump_answerable_fact_delta_count"]
+    qa_fact_count = pump_summary.get("pump_fact_qa_fact_count", legacy_fact_count)
 
     assert summary["fact_count_matches_qa_fact_count"] is (expected_fact_count == qa_fact_count)
     assert summary["total_answerable_facts"] == expected_fact_count
-    assert summary["relations_count"] == pump_summary["pump_relation_delta_count"]
-    assert summary["definitions_count"] == pump_summary["pump_definition_delta_count"]
+    assert summary["relations_count"] == expected_relations
+    assert summary["definitions_count"] == expected_definitions
 
     classified = (
         summary["promotion_candidate_count"]

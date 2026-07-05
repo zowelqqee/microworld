@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import uuid
 from pathlib import Path
@@ -26,13 +27,14 @@ from pydantic import BaseModel
 
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
 from worldpgt.assistant_surface.context_selector import resolve_overlay
+from worldpgt.assistant_surface.perf_timing import step as _timed_step
 from worldpgt.assistant_surface.think_aloud import (
     build_think_aloud,
     select_inferred_facts,
     select_profile_inferred_facts,
 )
 from worldpgt.cognition.inference_engine import run_inference, InferenceWorkspace
-from worldpgt.entity_qa.synthesis_engine import synthesize
+from worldpgt.entity_qa.synthesis_engine import synthesize, warm_definitions_index
 from worldpgt.assistant_surface.types import (
     AssistantAnswer,
     OVERLAY_MODE_CUSTOM_PATH,
@@ -44,6 +46,10 @@ from worldpgt.dialogue.coreference_resolver import resolve_coreferences
 from worldpgt.dialogue.followup_rewriter import rewrite_followup
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.multihop_qa.assistant_adapter import try_answer_multihop
+from worldpgt.reasoning.pattern_discovery import PatternIndex, build_pattern_index
+from worldpgt.reasoning.pattern_store import load_patterns
+from worldpgt.reasoning.reasoning_adapter import try_answer_reasoning
+from worldpgt.reasoning.types import GraphPattern
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 
 _EXPERIMENTS = _ROOT / "worldpgt" / "experiments"
@@ -64,7 +70,15 @@ _overlay_items: list[dict] = []
 _overlay_mode: str = "pump-dry-run"
 _fact_count: int = 0
 _inference_workspace: InferenceWorkspace | None = None
+_graph_patterns: list[GraphPattern] = []
+_pattern_index: PatternIndex | None = None
 _sessions: dict[str, ConversationContext] = {}
+
+# Remembered for cache-freshness checks (see _ensure_cache_fresh).
+_resolved_overlay_path: str | None = None
+_startup_overlay_mode: str = "pump-dry-run"
+_startup_overlay_path: str | None = None
+_overlay_mtime: float | None = None
 
 app = FastAPI(title="Microworld QA API", docs_url="/docs")
 
@@ -77,6 +91,8 @@ class AskRequest(BaseModel):
     question: str
     overlay: Optional[str] = None  # informational only; server uses startup overlay
     enable_multihop: bool = False
+    enable_reasoning: bool = True
+    web_search: bool = False
     think_aloud: bool = False
     session_id: Optional[str] = None
 
@@ -101,21 +117,33 @@ def root() -> FileResponse:
 
 @app.get("/health")
 def health() -> dict:
-    return {"status": "ok", "overlay": _overlay_mode, "fact_count": _fact_count}
+    return {
+        "status": "ok",
+        "overlay": _overlay_mode,
+        "fact_count": _fact_count,
+        "overlay_item_count": _fact_count,
+        "overlay_counts": _overlay_counts(_overlay_items),
+        "pump_summary": _pump_summary_counts(),
+    }
 
 
 @app.post("/ask", response_model=AskResponse)
 def ask(req: AskRequest) -> AskResponse:
     assert _orchestrator is not None and _surface_index is not None
+    with _timed_step("server.ensure_cache_fresh"):
+        _ensure_cache_fresh()
 
     session_id = req.session_id or str(uuid.uuid4())
     context = _sessions.setdefault(session_id, ConversationContext())
 
     # Coreference resolution against conversation history.
-    resolution = resolve_coreferences(req.question, context, _surface_index)
-    followup = rewrite_followup(resolution.resolved_question, context, _surface_index)
+    with _timed_step("server.coref_resolve"):
+        resolution = resolve_coreferences(req.question, context, _surface_index)
+    with _timed_step("server.followup_rewrite"):
+        followup = rewrite_followup(resolution.resolved_question, context, _surface_index)
     effective_question = followup.resolved_question
-    semantic_query = parse_semantic_query(effective_question, _surface_index)
+    with _timed_step("server.semantic_parse"):
+        semantic_query = parse_semantic_query(effective_question, _surface_index)
 
     resolved_refs = [
         f"[{item.reference} → {item.display_target}]"
@@ -132,22 +160,48 @@ def ask(req: AskRequest) -> AskResponse:
             req.question, _overlay_mode, resolution.unresolved_reference
         )
     else:
-        answer = _orchestrator.answer(
-            effective_question,
-            answer_style=followup.answer_style,
-        )
+        with _timed_step("server.orchestrator_answer"):
+            answer = _orchestrator.answer(
+                effective_question,
+                answer_style=followup.answer_style,
+                web_search_enabled=req.web_search,
+            )
 
-    # Optional multi-hop pass.
+    # Optional reasoning pass (explanatory chains / counterfactual traces).
+    # Tried before multihop: reasoning question forms ("Why does X develop
+    # Y?", "What if X had not founded Y?") are a disjoint pattern space, so
+    # when it recognizes the question it fully answers it and multihop is
+    # skipped; an unsupported form falls through unchanged.
     answer_text = answer.answer_text
     support = answer.support_kind
+    reasoning_result = None
+
+    if req.enable_reasoning:
+        with _timed_step("server.reasoning"):
+            reasoning_result = try_answer_reasoning(
+                req.question,
+                _overlay_items,
+                patterns=_graph_patterns,
+                workspace=_inference_workspace,
+                pattern_index=_pattern_index,
+            )
+        if reasoning_result.kind != "unsupported":
+            answer_text = reasoning_result.answer_text
+            support = reasoning_result.support_kind
+            answer = _patch_decision(answer, reasoning_result.decision)
+
+    # Optional multi-hop pass.
     multihop = None
 
-    should_try_multihop = (req.enable_multihop or req.think_aloud) and (
+    should_try_multihop = (
+        reasoning_result is None or reasoning_result.kind == "unsupported"
+    ) and (req.enable_multihop or req.think_aloud) and (
         answer.decision == "audit"
         or answer.support_kind == "explicit_connection_path"
     )
     if should_try_multihop:
-        multihop = try_answer_multihop(req.question, _overlay_items)
+        with _timed_step("server.multihop"):
+            multihop = try_answer_multihop(req.question, _overlay_items)
         if multihop.decision == "answer" or answer.support_kind == "explicit_connection_path":
             answer_text = multihop.answer_text
             support = multihop.support_kind
@@ -158,10 +212,12 @@ def ask(req: AskRequest) -> AskResponse:
     # Optional think-aloud surface (presentation only — no behavior change).
     thinking = None
     if req.think_aloud:
-        thinking, answer_text = _think_aloud(req.question, answer, multihop)
+        with _timed_step("server.think_aloud"):
+            thinking, answer_text = _think_aloud(req.question, answer, multihop)
 
     # Record turn for future coreference resolution.
-    _record_turn(context, question=req.question, semantic_query=semantic_query, answer=answer)
+    with _timed_step("server.record_turn"):
+        _record_turn(context, question=req.question, semantic_query=semantic_query, answer=answer)
 
     return AskResponse(
         decision=answer.decision,
@@ -178,6 +234,7 @@ def ask(req: AskRequest) -> AskResponse:
 # --------------------------------------------------------------------------- #
 
 _HOW_WORKS_TOKENS = ("how do", "how does", "how is", "how are")
+_HOW_WORKS_RE = re.compile(r"^\s*how\s+(?:do|does)\s+.+?\bwork\b", re.IGNORECASE)
 
 
 def _is_profile_question(question: str, answer: AssistantAnswer) -> bool:
@@ -190,6 +247,14 @@ def _is_profile_question(question: str, answer: AssistantAnswer) -> bool:
     return True
 
 
+def _needs_mechanism_gap_surface(question: str, answer: AssistantAnswer) -> bool:
+    return (
+        answer.route == "entity_definition"
+        and answer.decision != "audit"
+        and bool(_HOW_WORKS_RE.search(question or ""))
+    )
+
+
 def _think_aloud(question: str, answer: AssistantAnswer, multihop) -> tuple[str, str]:
     """Build the (thinking, answer) think-aloud surface for one answer."""
     cs = (answer.trace.context_summary if answer.trace else None) or {}
@@ -200,7 +265,11 @@ def _think_aloud(question: str, answer: AssistantAnswer, multihop) -> tuple[str,
     profile_inferred = []
     if _is_profile_question(question, answer) and _orchestrator is not None:
         synthesis = synthesize(
-            _orchestrator._provider, subject, question, _surface_index
+            _orchestrator._provider,
+            subject,
+            question,
+            _surface_index,
+            workspace=_inference_workspace,
         )
         profile_inferred = select_profile_inferred_facts(_inference_workspace, subject)
 
@@ -217,6 +286,15 @@ def _think_aloud(question: str, answer: AssistantAnswer, multihop) -> tuple[str,
         inferred_facts=inferred,
         synthesis=synthesis,
     )
+    if _needs_mechanism_gap_surface(question, answer):
+        return (
+            ta.thinking,
+            (
+                f"{ta.answer}\n\n"
+                f"I know what {subject} refers to, but I don't have verified "
+                "information about how it works mechanically."
+            ),
+        )
     return ta.thinking, ta.answer
 
 
@@ -323,30 +401,101 @@ def _load_overlay_items(overlay_path: str) -> list[dict]:
     return [r for r in rows if isinstance(r, dict)]
 
 
+def _overlay_counts(items: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for item in items:
+        key = str(item.get("overlay_type") or "unknown")
+        counts[key] = counts.get(key, 0) + 1
+    return dict(sorted(counts.items()))
+
+
+def _pump_summary_counts() -> dict:
+    summary_path = _EXPERIMENTS / "knowledge_pump_v1" / "pump_summary.json"
+    if not summary_path.is_file():
+        return {}
+    try:
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if not isinstance(summary, dict):
+        return {}
+    keys = (
+        "pump_answerable_fact_delta_count",
+        "pump_definition_delta_count",
+        "pump_relation_delta_count",
+        "frontier_titles_total",
+        "dynamic_frontier_total",
+        "fetch_success_count_total",
+        "ready_for_ingestion_count_total",
+        "all_critical_passed",
+    )
+    return {key: summary[key] for key in keys if key in summary}
+
+
 # --------------------------------------------------------------------------- #
 # Startup
 # --------------------------------------------------------------------------- #
 
 def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
-    global _inference_workspace
+    global _inference_workspace, _graph_patterns, _pattern_index
+    global _resolved_overlay_path, _startup_overlay_mode, _startup_overlay_path, _overlay_mtime
 
     _overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
+    _startup_overlay_mode = overlay_mode
+    _startup_overlay_path = overlay_path
 
     resolved_path = overlay_path or resolve_overlay(overlay_mode)[0]
+    _resolved_overlay_path = resolved_path
+    _overlay_mtime = Path(resolved_path).stat().st_mtime
 
-    _orchestrator = AnswerOrchestrator(overlay_mode, overlay_path=overlay_path)
+    _overlay_items = _load_overlay_items(resolved_path)
+    _fact_count = len(_overlay_items)
+    # Inference workspace and pattern index are the expensive (O(overlay
+    # size)) structures the reasoning layer and synthesis used to rebuild on
+    # every single request — compute them once here and hand the same
+    # instances to everything downstream (orchestrator, reasoning adapter).
+    _inference_workspace = run_inference(_overlay_items)
+    _pattern_index = build_pattern_index(_overlay_items)
+
+    _orchestrator = AnswerOrchestrator(
+        overlay_mode,
+        overlay_path=overlay_path,
+        inference_workspace=_inference_workspace,
+    )
     _surface_index = EntitySurfaceIndex(
         accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
         promoted_overlay_path=Path(resolved_path),
         snapshot_overlay_path=_SNAPSHOT_OVERLAY_PATH,
     )
-    _overlay_items = _load_overlay_items(resolved_path)
-    _fact_count = len(_overlay_items)
-    # Ephemeral inference workspace, computed once for think-aloud explanations.
-    _inference_workspace = run_inference(_overlay_items)
+    # Discovered graph patterns are optional context for the reasoning layer —
+    # loaded from the nightly artifact if present, empty (never fabricated) if
+    # discovery has not run yet for this overlay.
+    _graph_patterns = load_patterns()
+    # Warm the synthesis engine's per-provider definitions-by-subject index so
+    # the first "tell me about X" request doesn't pay its one-time O(overlay
+    # size) build cost.
+    warm_definitions_index(_orchestrator._provider)
 
-    print(f"[microworld-api] overlay={_overlay_mode}  facts={_fact_count}", flush=True)
+    print(
+        f"[microworld-api] overlay={_overlay_mode}  overlay_items={_fact_count}  "
+        f"patterns={len(_graph_patterns)}",
+        flush=True,
+    )
+
+
+def _ensure_cache_fresh() -> None:
+    """Recompute the inference/pattern caches only if the overlay file on
+    disk changed since we last cached it (cheap ``stat()`` check per request;
+    a full ``_startup()`` re-init only on an actual mtime change, e.g. the
+    overlay was regenerated by a nightly job while the server kept running).
+    """
+    if _resolved_overlay_path is None:
+        return
+    current_mtime = Path(_resolved_overlay_path).stat().st_mtime
+    if current_mtime == _overlay_mtime:
+        return
+    _startup(_startup_overlay_mode, overlay_path=_startup_overlay_path)
 
 
 # --------------------------------------------------------------------------- #
