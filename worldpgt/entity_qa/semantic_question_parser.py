@@ -65,6 +65,7 @@ _OPEN_QUERY_RE = re.compile(
     r"tell\s+me\s+(?:about|everything\s+about|more\s+about|all\s+about)\s+(?P<a>.+?)|"
     r"what\s+(?:do|can)\s+you\s+(?:know|tell\s+me)\s+about\s+(?P<b>.+?)|"
     r"what\s+can\s+you\s+tell\s+me\s+about\s+(?P<c>.+?)|"
+    r"explain\s+(?P<x>.+?)|"
     r"(?:describe|summari[sz]e)\s+(?P<d>.+?)|"
     r"give\s+me\s+(?:an?\s+)?overview\s+of\s+(?P<e>.+?)|"
     r"what\s+does\s+(?P<f>.+?)\s+do|"
@@ -90,6 +91,16 @@ _RU_ACTIVITY_RE = re.compile(
 )
 _RU_OWNER_RE = re.compile(
     r"^кому принадлежит (.+?)[\?]?$",
+    re.IGNORECASE,
+)
+
+_OPEN_SYNTHESIS_STYLE_TAIL_RE = re.compile(
+    r"\s+(?:"
+    r"in\s+simple\s+terms|simply|plainly|in\s+plain\s+english|"
+    r"like\s+i(?:'|’)m\s+five|for\s+beginners?|to\s+a\s+beginner|"
+    r"briefly|shortly|in\s+short|"
+    r"простыми\s+словами|кратко|коротко"
+    r")\s*$",
     re.IGNORECASE,
 )
 
@@ -268,6 +279,15 @@ def default_surface_index() -> EntitySurfaceIndex:
 
 def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "").strip(" ?.\t\n\r"))
+
+
+def _strip_open_synthesis_style_tail(text: str) -> str:
+    previous = ""
+    current = text
+    while current != previous:
+        previous = current
+        current = _OPEN_SYNTHESIS_STYLE_TAIL_RE.sub("", current).strip()
+    return _clean(current)
 
 
 def _norm_text(text: str) -> str:
@@ -481,7 +501,9 @@ def parse_semantic_query(
     # unresolved subject and falls back to keyword overlap downstream.
     open_match = _OPEN_QUERY_RE.match(q)
     if open_match:
-        raw_subject = _clean(next((g for g in open_match.groups() if g), ""))
+        raw_subject = _strip_open_synthesis_style_tail(
+            _clean(next((g for g in open_match.groups() if g), ""))
+        )
         subject = surface_index.resolve(raw_subject)
         if subject is None:
             subject = entities[0] if entities else (raw_subject or None)

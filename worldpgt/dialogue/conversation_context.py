@@ -23,6 +23,10 @@ class ConversationTurn:
     primary_entity: str | None
     mentioned_entities: list[str]
     relation_type: str | None
+    # Type hints for entities that aren't in the static overlay's entity
+    # index (e.g. a person named only in a live web-search answer), keyed by
+    # canonical name. Session-only — never written to the overlay.
+    entity_types: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass

@@ -50,6 +50,9 @@ _PERSON_TYPES = frozenset({"person"})
 _THING_TYPES = frozenset({"organization", "vehicle", "program", "product"})
 _ORGANIZATION_TYPES = frozenset({"organization"})
 _POSSESSIVE_REFERENCES = frozenset({"his", "her", "its", "their"})
+# Sentinel meaning "any known type", not a specific set — used where the
+# original check was just "is this entity typed at all".
+_KNOWN_ANY_TYPE = frozenset({"__any__"})
 
 
 def resolve_coreferences(
@@ -169,7 +172,9 @@ def _latest_entity_matching(
         return primary
 
     for turn in reversed(context.turns):
-        matches = _unique_entities_of_type(turn.mentioned_entities, index, allowed_types)
+        matches = _unique_entities_of_type(
+            turn.mentioned_entities, index, allowed_types, turn.entity_types
+        )
         if len(matches) == 1:
             return matches[0]
         if len(matches) > 1:
@@ -184,7 +189,7 @@ def _latest_primary_matching(
 ) -> str | None:
     for turn in reversed(context.turns):
         entity = turn.primary_entity
-        if entity and _entity_type_matches(entity, index, allowed_types):
+        if entity and _entity_type_matches(entity, index, allowed_types, turn.entity_types):
             return entity
     return None
 
@@ -197,7 +202,9 @@ def _latest_plural_entities(
     seen: set[str] = set()
     for turn in reversed(context.turns[-3:]):
         entity = turn.primary_entity
-        if not entity or entity in seen or index.entity_type(entity) is None:
+        if not entity or entity in seen:
+            continue
+        if not _entity_type_matches(entity, index, _KNOWN_ANY_TYPE, turn.entity_types):
             continue
         seen.add(entity)
         primaries.append(entity)
@@ -216,9 +223,13 @@ def _unique_entities_of_type(
     entities: list[str],
     index: EntitySurfaceIndex,
     allowed_types: frozenset[str],
+    entity_types: dict[str, str] | None = None,
 ) -> list[str]:
     return _dedupe(
-        [entity for entity in entities if _entity_type_matches(entity, index, allowed_types)]
+        [
+            entity for entity in entities
+            if _entity_type_matches(entity, index, allowed_types, entity_types)
+        ]
     )
 
 
@@ -226,8 +237,13 @@ def _entity_type_matches(
     entity: str,
     index: EntitySurfaceIndex,
     allowed_types: frozenset[str],
+    entity_types: dict[str, str] | None = None,
 ) -> bool:
     etype = index.entity_type(entity)
+    if etype is None and entity_types:
+        etype = entity_types.get(entity)
+    if allowed_types is _KNOWN_ANY_TYPE:
+        return etype is not None
     return etype in allowed_types
 
 

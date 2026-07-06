@@ -51,6 +51,11 @@ from worldpgt.reasoning.pattern_store import load_patterns
 from worldpgt.reasoning.reasoning_adapter import try_answer_reasoning
 from worldpgt.reasoning.types import GraphPattern
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.web_search.live_cache import LiveSearchCache
+from worldpgt.assistant_surface.community_context import (
+    FileCognitivePatternProvider,
+    FileCommunityContextProvider,
+)
 
 _EXPERIMENTS = _ROOT / "worldpgt" / "experiments"
 _ACCEPTED_OVERLAY_PATH = _EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json"
@@ -59,6 +64,13 @@ _PROMOTED_OVERLAY_PATH = (
 )
 _SNAPSHOT_OVERLAY_PATH = (
     _EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json"
+)
+_LIVE_SEARCH_CACHE_PATH = _EXPERIMENTS / "web_search_v1" / "live_cache.json"
+_DEFAULT_COMMUNITY_CONTEXT_PATH = (
+    _EXPERIMENTS / "community_context_v1" / "reddit_community_context.json"
+)
+_DEFAULT_COGNITIVE_PATTERNS_PATH = (
+    _EXPERIMENTS / "community_context_v1" / "cognitive_pattern_events.json"
 )
 
 _STATIC_DIR = Path(__file__).parent / "static"
@@ -73,6 +85,12 @@ _inference_workspace: InferenceWorkspace | None = None
 _graph_patterns: list[GraphPattern] = []
 _pattern_index: PatternIndex | None = None
 _sessions: dict[str, ConversationContext] = {}
+_community_context_path: str | None = None
+_community_context_count: int = 0
+_community_context_provider: FileCommunityContextProvider | None = None
+_cognitive_patterns_path: str | None = None
+_cognitive_patterns_count: int = 0
+_cognitive_pattern_provider: FileCognitivePatternProvider | None = None
 
 # Remembered for cache-freshness checks (see _ensure_cache_fresh).
 _resolved_overlay_path: str | None = None
@@ -93,6 +111,8 @@ class AskRequest(BaseModel):
     enable_multihop: bool = False
     enable_reasoning: bool = True
     web_search: bool = False
+    community_context: bool = True
+    cognitive_patterns: bool = True
     think_aloud: bool = False
     session_id: Optional[str] = None
 
@@ -117,6 +137,10 @@ def root() -> FileResponse:
 
 @app.get("/health")
 def health() -> dict:
+    _ensure_community_context_available()
+    _ensure_cognitive_patterns_available()
+    community_count = _community_context_provider.count() if _community_context_provider else 0
+    cognitive_count = _cognitive_pattern_provider.count() if _cognitive_pattern_provider else 0
     return {
         "status": "ok",
         "overlay": _overlay_mode,
@@ -124,6 +148,17 @@ def health() -> dict:
         "overlay_item_count": _fact_count,
         "overlay_counts": _overlay_counts(_overlay_items),
         "pump_summary": _pump_summary_counts(),
+        "community_context": {
+            "available": _community_context_path is not None,
+            "path": _community_context_path,
+            "item_count": community_count,
+        },
+        "cognitive_patterns": {
+            "available": _cognitive_patterns_path is not None,
+            "path": _cognitive_patterns_path,
+            "event_count": cognitive_count,
+            "factual_support_allowed": False,
+        },
     }
 
 
@@ -132,6 +167,8 @@ def ask(req: AskRequest) -> AskResponse:
     assert _orchestrator is not None and _surface_index is not None
     with _timed_step("server.ensure_cache_fresh"):
         _ensure_cache_fresh()
+        _ensure_community_context_available()
+        _ensure_cognitive_patterns_available()
 
     session_id = req.session_id or str(uuid.uuid4())
     context = _sessions.setdefault(session_id, ConversationContext())
@@ -165,6 +202,8 @@ def ask(req: AskRequest) -> AskResponse:
                 effective_question,
                 answer_style=followup.answer_style,
                 web_search_enabled=req.web_search,
+                community_context_enabled=req.community_context,
+                cognitive_patterns_enabled=req.cognitive_patterns,
             )
 
     # Optional reasoning pass (explanatory chains / counterfactual traces).
@@ -328,6 +367,35 @@ def _dedupe(seq: list[str]) -> list[str]:
     return out
 
 
+# Matches the "Source: <title> — <url>" line render_web_answer always emits
+# for its top-ranked result.
+_WEB_SEARCH_SOURCE_RE = re.compile(r"^Source: (.+?) — https?://\S+", re.MULTILINE)
+_WEB_SEARCH_TITLE_SUFFIX_RE = re.compile(
+    r"\s*[-–]\s*Wikipedia.*$|,?\s*the free encyclopedia.*$", re.IGNORECASE
+)
+_PERSON_PRONOUN_RE = re.compile(r"\b(?:he|she|his|her)\b", re.IGNORECASE)
+
+
+def _web_search_entity_hint(answer_text: str) -> tuple[str, str] | None:
+    """Best-effort (name, type) hint for a live web-search answer's subject.
+
+    The overlay's static entity index has no way to type a person who only
+    ever appeared in a live search result, so without this hint follow-up
+    pronouns ("Where was she born?") can never resolve. Scoped to
+    support_kind == "web_search_result" answers only — never touches the
+    overlay or its index.
+    """
+
+    match = _WEB_SEARCH_SOURCE_RE.search(answer_text)
+    if not match:
+        return None
+    title = _WEB_SEARCH_TITLE_SUFFIX_RE.sub("", match.group(1)).strip()
+    if not title:
+        return None
+    entity_type = "person" if _PERSON_PRONOUN_RE.search(answer_text) else "topic"
+    return title, entity_type
+
+
 def _record_turn(
     context: ConversationContext,
     *,
@@ -338,6 +406,7 @@ def _record_turn(
     if answer.decision == "audit":
         mentioned: list[str] = []
         primary = None
+        entity_types: dict[str, str] = {}
     else:
         # Scan answer text for entity surface forms so that entities mentioned
         # in the answer (e.g. "Elon Musk" in "SpaceX was founded by Elon Musk.")
@@ -360,6 +429,15 @@ def _record_turn(
             mentioned[0] if mentioned else None
         )
 
+        entity_types = {}
+        if answer.support_kind == "web_search_result":
+            hint = _web_search_entity_hint(answer.answer_text)
+            if hint:
+                name, entity_type = hint
+                entity_types[name] = entity_type
+                mentioned = _dedupe([name] + mentioned)
+                primary = name
+
     if answer.decision == "no" and primary:
         mentioned = _dedupe([primary] + mentioned)
 
@@ -370,6 +448,7 @@ def _record_turn(
         primary_entity=primary,
         mentioned_entities=mentioned,
         relation_type=semantic_query.relation_intent,
+        entity_types=entity_types,
     )
     context.append_turn(turn)
 
@@ -436,10 +515,18 @@ def _pump_summary_counts() -> dict:
 # Startup
 # --------------------------------------------------------------------------- #
 
-def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
+def _startup(
+    overlay_mode: str,
+    overlay_path: str | None = None,
+    *,
+    community_context_path: str | None = None,
+    cognitive_patterns_path: str | None = None,
+) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
     global _inference_workspace, _graph_patterns, _pattern_index
     global _resolved_overlay_path, _startup_overlay_mode, _startup_overlay_path, _overlay_mtime
+    global _community_context_path, _community_context_count, _community_context_provider
+    global _cognitive_patterns_path, _cognitive_patterns_count, _cognitive_pattern_provider
 
     _overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
     _startup_overlay_mode = overlay_mode
@@ -458,10 +545,33 @@ def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
     _inference_workspace = run_inference(_overlay_items)
     _pattern_index = build_pattern_index(_overlay_items)
 
+    community_provider = None
+    _community_context_path = community_context_path
+    _community_context_count = 0
+    _community_context_provider = None
+    if community_context_path:
+        community_provider = FileCommunityContextProvider(community_context_path)
+        _community_context_provider = community_provider
+        _community_context_count = community_provider.count()
+
+    cognitive_provider = None
+    _cognitive_patterns_path = cognitive_patterns_path
+    _cognitive_patterns_count = 0
+    _cognitive_pattern_provider = None
+    if cognitive_patterns_path:
+        cognitive_provider = FileCognitivePatternProvider(cognitive_patterns_path)
+        _cognitive_pattern_provider = cognitive_provider
+        _cognitive_patterns_count = cognitive_provider.count()
+
     _orchestrator = AnswerOrchestrator(
         overlay_mode,
         overlay_path=overlay_path,
         inference_workspace=_inference_workspace,
+        live_cache=LiveSearchCache(_LIVE_SEARCH_CACHE_PATH),
+        community_context_provider=community_provider,
+        community_context_enabled=community_provider is not None,
+        cognitive_pattern_provider=cognitive_provider,
+        cognitive_patterns_enabled=cognitive_provider is not None,
     )
     _surface_index = EntitySurfaceIndex(
         accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
@@ -479,7 +589,8 @@ def _startup(overlay_mode: str, overlay_path: str | None = None) -> None:
 
     print(
         f"[microworld-api] overlay={_overlay_mode}  overlay_items={_fact_count}  "
-        f"patterns={len(_graph_patterns)}",
+        f"patterns={len(_graph_patterns)}  community_context={_community_context_count}  "
+        f"cognitive_patterns={_cognitive_patterns_count}",
         flush=True,
     )
 
@@ -495,7 +606,56 @@ def _ensure_cache_fresh() -> None:
     current_mtime = Path(_resolved_overlay_path).stat().st_mtime
     if current_mtime == _overlay_mtime:
         return
-    _startup(_startup_overlay_mode, overlay_path=_startup_overlay_path)
+    _startup(
+        _startup_overlay_mode,
+        overlay_path=_startup_overlay_path,
+        community_context_path=_community_context_path,
+        cognitive_patterns_path=_cognitive_patterns_path,
+    )
+
+
+def _ensure_community_context_available() -> None:
+    """Attach the default community-context artifact if the pump created it
+    after the server had already started.
+    """
+    global _community_context_path, _community_context_count, _community_context_provider
+    if _orchestrator is None:
+        return
+    candidate = Path(_community_context_path) if _community_context_path else _DEFAULT_COMMUNITY_CONTEXT_PATH
+    if not candidate.is_file():
+        return
+    if _community_context_path == str(candidate) and _community_context_provider is not None:
+        _community_context_count = _community_context_provider.count()
+        return
+    provider = FileCommunityContextProvider(candidate)
+    _community_context_path = str(candidate)
+    _community_context_provider = provider
+    _community_context_count = provider.count()
+    _orchestrator.set_community_context_provider(provider, enabled=True)
+
+
+def _ensure_cognitive_patterns_available() -> None:
+    """Attach the default cognitive-pattern artifact if the pump created it
+    after the server had already started.
+    """
+    global _cognitive_patterns_path, _cognitive_patterns_count, _cognitive_pattern_provider
+    if _orchestrator is None:
+        return
+    candidate = (
+        Path(_cognitive_patterns_path)
+        if _cognitive_patterns_path
+        else _DEFAULT_COGNITIVE_PATTERNS_PATH
+    )
+    if not candidate.is_file():
+        return
+    if _cognitive_patterns_path == str(candidate) and _cognitive_pattern_provider is not None:
+        _cognitive_patterns_count = _cognitive_pattern_provider.count()
+        return
+    provider = FileCognitivePatternProvider(candidate)
+    _cognitive_patterns_path = str(candidate)
+    _cognitive_pattern_provider = provider
+    _cognitive_patterns_count = provider.count()
+    _orchestrator.set_cognitive_pattern_provider(provider, enabled=True)
 
 
 # --------------------------------------------------------------------------- #
@@ -517,6 +677,28 @@ def main(argv: list[str] | None = None) -> None:
              % ", ".join(_BUILTIN_OVERLAYS),
     )
     parser.add_argument("--overlay-path", default=None)
+    parser.add_argument(
+        "--community-context",
+        default=None,
+        help="Path to a low-trust community-context artifact. If omitted, the "
+             "default Reddit context artifact is used when it exists.",
+    )
+    parser.add_argument(
+        "--no-community-context",
+        action="store_true",
+        help="Disable automatic community-context loading.",
+    )
+    parser.add_argument(
+        "--cognitive-patterns",
+        default=None,
+        help="Path to a cognitive_pattern_events.json artifact. If omitted, "
+             "the default community-context pattern artifact is used when it exists.",
+    )
+    parser.add_argument(
+        "--no-cognitive-patterns",
+        action="store_true",
+        help="Disable automatic cognitive-pattern surface planning.",
+    )
     parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
     parser.add_argument("--host", default="127.0.0.1")
     args = parser.parse_args(argv)
@@ -540,7 +722,28 @@ def main(argv: list[str] | None = None) -> None:
         if not p.is_file():
             parser.error(f"overlay path does not exist: {p}")
 
-    _startup(overlay_mode, overlay_path=overlay_path)
+    community_context_path = None
+    if not args.no_community_context:
+        candidate = Path(args.community_context) if args.community_context else _DEFAULT_COMMUNITY_CONTEXT_PATH
+        if candidate.is_file():
+            community_context_path = str(candidate)
+        elif args.community_context:
+            parser.error(f"community context path does not exist: {candidate}")
+
+    cognitive_patterns_path = None
+    if not args.no_cognitive_patterns:
+        candidate = Path(args.cognitive_patterns) if args.cognitive_patterns else _DEFAULT_COGNITIVE_PATTERNS_PATH
+        if candidate.is_file():
+            cognitive_patterns_path = str(candidate)
+        elif args.cognitive_patterns:
+            parser.error(f"cognitive patterns path does not exist: {candidate}")
+
+    _startup(
+        overlay_mode,
+        overlay_path=overlay_path,
+        community_context_path=community_context_path,
+        cognitive_patterns_path=cognitive_patterns_path,
+    )
 
     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
 

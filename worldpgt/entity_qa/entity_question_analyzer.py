@@ -153,7 +153,7 @@ _TRAILING_WH_LOOKUP_RE = re.compile(
 
 # ---- relation lookup ------------------------------------------------
 _KNOWN_FOR_RE = re.compile(
-    r"what\s+is\s+(.+?)\s+known\s+for\b",
+    r"what\s+(?:is|was)\s+(.+?)\s+(?:known|famous)\s+for\b",
     re.IGNORECASE,
 )
 _KNOWN_FOR2_RE = re.compile(
@@ -265,7 +265,7 @@ _PASSIVE_DEVELOPS_RE = re.compile(
     re.IGNORECASE,
 )
 _WHERE_LOCATED_RE = re.compile(
-    r"^where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?.]?$",
+    r"^where\s+(?:is|are|was|were)\s+(.+?)(?:\s+located)?[\?.]?$",
     re.IGNORECASE,
 )
 

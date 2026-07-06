@@ -7,6 +7,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
 from worldpgt.assistant_surface.question_router import route
 from worldpgt.entity_qa.entity_question_analyzer import analyze
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
@@ -126,6 +128,26 @@ def test_russian_controlled_patterns_parse_to_semantic_queries():
             sq.query_type,
         ) == expected
         assert sq.confidence >= 0.75
+
+
+@pytest.mark.parametrize(
+    "question,expected_entity",
+    [
+        ("Explain SpaceX in simple terms.", "SpaceX"),
+        ("Explain Blue Origin for beginners.", "Blue Origin"),
+        ("Describe Tesla in plain English.", "Tesla"),
+        ("Summarize Starlink briefly.", "Starlink"),
+    ],
+)
+def test_open_synthesis_style_tail_routes_to_known_entity(question, expected_entity):
+    sq = parse_semantic_query(question)
+
+    assert sq.entity_a == expected_entity
+    assert sq.entity_b is None
+    assert sq.relation_intent is None
+    assert sq.unknown_position == "relation"
+    assert sq.query_type == "open_synthesis"
+    assert sq.confidence >= 0.75
 
 
 def test_low_confidence_question_routes_to_question_not_understood():

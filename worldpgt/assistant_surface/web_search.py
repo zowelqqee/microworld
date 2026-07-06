@@ -8,6 +8,7 @@ contract unless an explicit provider is enabled by the orchestrator.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
 import re
 from typing import Protocol
 
@@ -70,18 +71,49 @@ def _results_from_instant_answer(data: dict, *, max_results: int) -> list[WebSea
     return deduped
 
 
-def render_web_answer(query: str, results: list[WebSearchResult]) -> str:
-    """Render volatile search results without claiming accepted-memory support."""
+def _truncate(text: str, limit: int = 400) -> str:
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(" ,.;:") + "."
+
+
+def render_web_answer(
+    query: str,
+    results: list[WebSearchResult],
+    *,
+    fetched_at: str | None = None,
+    from_cache: bool = False,
+    lead: str | None = None,
+) -> str:
+    """Render a direct-sounding live answer that still discloses it is
+    unverified web data, never accepted/promoted Microworld memory.
+
+    The lead line states the answer, then names every source so the claim can
+    be checked. Pass ``lead`` with an extracted answer sentence to state the
+    specific fact; otherwise the top result's snippet (an intro/abstract) is
+    truncated as the lead. Pass the original fetch time as ``fetched_at`` (not
+    ``None``) when rendering a cache hit, so staleness stays visible instead of
+    being silently reset to "now".
+    """
 
     if not results:
         return ""
+
+    primary, *rest = results
+    lead = _clean(lead) if lead else _truncate(_clean(primary.snippet))
+    fetched_label = fetched_at or datetime.now(timezone.utc).isoformat()
+    cache_note = " (cached)" if from_cache else ""
+
     lines = [
-        "Live web search result, not Microworld memory:",
-        f"Query: {query}",
+        f"Based on a live web search as of {fetched_label}{cache_note}:",
+        lead,
+        f"Source: {primary.title} — {primary.url}",
     ]
-    for idx, result in enumerate(results, start=1):
-        snippet = result.snippet
-        if len(snippet) > 320:
-            snippet = snippet[:320].rsplit(" ", 1)[0].rstrip(" ,.;:") + "."
-        lines.append(f"{idx}. {result.title}: {snippet} Source: {result.url}")
+    if rest:
+        extra = "; ".join(f"{r.title} — {r.url}" for r in rest)
+        lines.append(f"Additional sources: {extra}")
+    lines.append(
+        "This is live web search data, not Microworld memory, and may change "
+        "over time — treat it as unverified and re-check before relying on it."
+    )
     return "\n".join(lines)

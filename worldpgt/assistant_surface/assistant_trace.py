@@ -38,6 +38,23 @@ def attach_context(trace: AssistantTrace, summary: AssistantContextSummary) -> N
         trace.add("context: safety_notes=" + "; ".join(summary.safety_notes))
 
 
+def attach_cognitive_plan(trace: AssistantTrace, plan: dict) -> None:
+    trace.cognitive_plan = plan
+    patterns = plan.get("cognitive_patterns") if isinstance(plan, dict) else []
+    kinds: list[str] = []
+    if isinstance(patterns, list):
+        for item in patterns:
+            if isinstance(item, dict) and item.get("kind") not in kinds:
+                kinds.append(str(item.get("kind")))
+    if kinds:
+        trace.add(
+            "cognitive_patterns: "
+            f"count={len(patterns)}, kinds={','.join(kinds)}, factual_support_allowed=False"
+        )
+    else:
+        trace.add("cognitive_patterns: no_matches")
+
+
 def finalize(trace: AssistantTrace, source_system: str, support_kind: str) -> None:
     trace.source_system = source_system
     trace.support_kind = support_kind

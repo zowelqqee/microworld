@@ -191,6 +191,7 @@ class AssistantTrace:
     steps: List[str] = field(default_factory=list)
     route_intent: str = ""
     context_summary: Optional[dict] = None
+    cognitive_plan: Optional[dict] = None
     source_system: str = ""
     support_kind: str = "unsupported"
     risk_flags: List[str] = field(default_factory=list)
@@ -203,6 +204,7 @@ class AssistantTrace:
             "steps": list(self.steps),
             "route_intent": self.route_intent,
             "context_summary": self.context_summary,
+            "cognitive_plan": self.cognitive_plan,
             "source_system": self.source_system,
             "support_kind": self.support_kind,
             "risk_flags": list(self.risk_flags),

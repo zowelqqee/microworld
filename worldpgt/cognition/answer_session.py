@@ -21,7 +21,17 @@ from worldpgt.assistant_surface.types import (
     AssistantAnswer,
     OVERLAY_MODE_CUSTOM_PATH,
 )
+from worldpgt.cognition.cognitive_graph_loop import (
+    CognitiveLoopTrace,
+    action_plan_from_cognitive_loop,
+    render_plan_addendum,
+    run_cognitive_graph_loop,
+)
 from worldpgt.cognition.reasoning_engine import reason_over_plan
+from worldpgt.cognition.semantic_thought_graph import (
+    SemanticThoughtGraphTrace,
+    run_semantic_thought_graph,
+)
 from worldpgt.cognition.session_engine import CognitiveSession
 from worldpgt.cognition.types import (
     ActionPlan,
@@ -61,6 +71,8 @@ class CognitiveAnswerResult:
     answer: AssistantAnswer | None = None
     session_plan: SessionTurnPlan | None = None
     reasoning_trace: ReasoningTrace | None = None
+    semantic_thought_graph: SemanticThoughtGraphTrace | None = None
+    cognitive_loop: CognitiveLoopTrace | None = None
     surface_selection_trace: AnswerSelectionTrace | None = None
     task_memory_snapshot: TaskMemorySnapshot | None = None
     resolved_references: tuple[str, ...] = ()
@@ -148,13 +160,18 @@ class CognitiveAnswerSession:
                 answer_style=followup.answer_style,
             )
 
-        trace, selection_trace = self._record_reasoning_artifacts(
+        trace, semantic_graph, cognitive_loop, selection_trace = self._record_reasoning_artifacts(
             question=effective_question,
             answer=answer,
             answer_style=followup.answer_style,
         )
         if selection_trace is not None and selection_trace.final_text:
-            answer = replace(answer, answer_text=selection_trace.final_text)
+            final_text = selection_trace.final_text
+            if cognitive_loop is not None:
+                addendum = render_plan_addendum(cognitive_loop.answer_plan)
+                if addendum:
+                    final_text = " ".join((final_text.rstrip(), *addendum))
+            answer = replace(answer, answer_text=final_text)
 
         self._record_dialogue_turn(
             question=question,
@@ -178,6 +195,8 @@ class CognitiveAnswerSession:
             answer=answer,
             session_plan=session_plan,
             reasoning_trace=trace,
+            semantic_thought_graph=semantic_graph,
+            cognitive_loop=cognitive_loop,
             surface_selection_trace=selection_trace,
             task_memory_snapshot=self.task_memory.snapshot(),
             resolved_references=_resolved_references(resolution),
@@ -271,17 +290,22 @@ class CognitiveAnswerSession:
         question: str,
         answer: AssistantAnswer,
         answer_style: str,
-    ) -> tuple[ReasoningTrace | None, AnswerSelectionTrace | None]:
+    ) -> tuple[
+        ReasoningTrace | None,
+        SemanticThoughtGraphTrace | None,
+        CognitiveLoopTrace | None,
+        AnswerSelectionTrace | None,
+    ]:
         if answer.decision != "answer":
-            return None, None
+            return None, None, None, None
 
         analyzed = analyze_entity(question)
         plan = self.orchestrator._entity_planner.plan(analyzed)
         if plan.decision != "answer" or plan.render_template != "open_synthesis":
-            return None, None
+            return None, None, None, None
         synthesis = plan.render_args.get("synthesis")
         if synthesis is None or not getattr(synthesis, "matched", False):
-            return None, None
+            return None, None, None, None
 
         speech_plan = build_speech_plan(
             synthesis,
@@ -289,12 +313,24 @@ class CognitiveAnswerSession:
             answer_style=answer_style,
         )
         trace = reason_over_plan(speech_plan)
+        cognitive_patterns = _cognitive_patterns_from_answer(answer)
+        semantic_graph = run_semantic_thought_graph(
+            trace,
+            question=question,
+            cognitive_patterns=cognitive_patterns,
+        )
+        cognitive_loop = run_cognitive_graph_loop(
+            trace,
+            question=question,
+            cognitive_patterns=cognitive_patterns,
+        )
+        action = action_plan_from_cognitive_loop(cognitive_loop, fallback=_primary_action(trace))
         selection_trace = generate_text_with_selection_trace(
             speech_plan,
-            action=_primary_action(trace),
+            action=action,
         )
         self.cognitive_session.record_trace(question, trace)
-        return trace, selection_trace
+        return trace, semantic_graph, cognitive_loop, selection_trace
 
     def _record_dialogue_turn(
         self,
@@ -373,6 +409,15 @@ def _primary_action(trace: ReasoningTrace) -> ActionPlan:
     if trace.thought_loop is not None and trace.thought_loop.decision is not None:
         return trace.thought_loop.decision.action
     return trace.action
+
+
+def _cognitive_patterns_from_answer(answer: AssistantAnswer) -> tuple[dict, ...]:
+    if answer.trace is None or not isinstance(answer.trace.cognitive_plan, dict):
+        return ()
+    patterns = answer.trace.cognitive_plan.get("cognitive_patterns")
+    if not isinstance(patterns, list):
+        return ()
+    return tuple(pattern for pattern in patterns if isinstance(pattern, dict))
 
 
 def _surface_index_for_session(

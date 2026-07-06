@@ -23,6 +23,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
+from dataclasses import replace
+from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
 
@@ -31,6 +34,7 @@ from worldpgt.assistant_surface.answer_style import resolve_answer_style
 from worldpgt.assistant_surface.perf_timing import step as _timed_step
 from worldpgt.assistant_surface.question_router import route as route_question
 from worldpgt.assistant_surface.assistant_trace import (
+    attach_cognitive_plan,
     attach_context,
     finalize,
     new_trace,
@@ -52,7 +56,18 @@ from worldpgt.query_engine import executor as qe_executor
 from worldpgt.query_engine import plan_builder as qe_plan_builder
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.assistant_surface.community_context import (
+    CognitivePatternProvider,
+    CommunityContextProvider,
+    FileCognitivePatternProvider,
+    FileCommunityContextProvider,
+    apply_community_tone,
+    render_context_answer,
+)
+from worldpgt.assistant_surface.cognitive_surface import apply_cognitive_surface
 from worldpgt.assistant_surface.web_search import WebSearchProvider, render_web_answer
+from worldpgt.web_search.live_cache import LiveSearchCache, entity_key_from_title
+from worldpgt.web_search.answer_extraction import extract_answer
 
 # Static, deterministic policy explanations (no factual claims, no overlay data).
 _WEAK_LINK_POLICY_TEXT = (
@@ -66,6 +81,10 @@ _SOURCE_QUALIFIED_POLICY_TEXT = (
     "source and as-of date (for example, a Forbes estimate). It is treated as "
     "volatile and may require rechecking — it is never a permanent or current "
     "value."
+)
+_CURRENT_OFFICEHOLDER_QUERY_RE = re.compile(
+    r"\b(?:current\s+)?(?:president|prime minister|mayor|governor|officeholder|incumbent)\b",
+    re.IGNORECASE,
 )
 
 _EXPERIMENTS = Path(__file__).resolve().parent.parent / "experiments"
@@ -157,6 +176,14 @@ class AnswerOrchestrator:
         inference_workspace=None,
         web_search_provider: WebSearchProvider | None = None,
         web_search_enabled: bool | None = None,
+        web_search_deadline_sec: float | None = None,
+        live_cache: LiveSearchCache | None = None,
+        community_context_provider: CommunityContextProvider | None = None,
+        community_context_path: str | None = None,
+        community_context_enabled: bool | None = None,
+        cognitive_pattern_provider: CognitivePatternProvider | None = None,
+        cognitive_patterns_path: str | None = None,
+        cognitive_patterns_enabled: bool | None = None,
     ) -> None:
         self.overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
         overlay_path_resolved = overlay_path
@@ -179,6 +206,38 @@ class AnswerOrchestrator:
             }
         self._web_search_enabled_default = web_search_enabled
         self._web_search_provider = web_search_provider
+        self._web_search_deadline_sec = web_search_deadline_sec
+        self._live_cache = live_cache
+        if community_context_enabled is None:
+            community_env_enabled = os.environ.get(
+                "MICROWORLD_COMMUNITY_CONTEXT_ENABLED", ""
+            ).strip().lower() in {"1", "true", "yes", "on"}
+            community_context_enabled = (
+                community_context_provider is not None
+                or bool(community_context_path)
+                or community_env_enabled
+            )
+        self._community_context_enabled_default = community_context_enabled
+        if community_context_provider is None and community_context_path:
+            community_context_provider = FileCommunityContextProvider(community_context_path)
+        self._community_context_provider = community_context_provider
+        if cognitive_patterns_path is None and community_context_path:
+            sibling = Path(community_context_path).parent / "cognitive_pattern_events.json"
+            if sibling.is_file():
+                cognitive_patterns_path = str(sibling)
+        if cognitive_patterns_enabled is None:
+            cognitive_env_enabled = os.environ.get(
+                "MICROWORLD_COGNITIVE_PATTERNS_ENABLED", ""
+            ).strip().lower() in {"1", "true", "yes", "on"}
+            cognitive_patterns_enabled = (
+                cognitive_pattern_provider is not None
+                or bool(cognitive_patterns_path)
+                or cognitive_env_enabled
+            )
+        if cognitive_pattern_provider is None and cognitive_patterns_path:
+            cognitive_pattern_provider = FileCognitivePatternProvider(cognitive_patterns_path)
+        self._cognitive_patterns_enabled_default = cognitive_patterns_enabled
+        self._cognitive_pattern_provider = cognitive_pattern_provider
         self._entity_planner = EntityAnswerPlanner(
             provider=self._provider,
             ontology_layer_items=ontology_layer_items,
@@ -186,6 +245,24 @@ class AnswerOrchestrator:
         )
         self._cross_page_planner = CrossPageAnswerPlanner(provider=self._provider)
         self._selector = ContextSelector(overlay_mode, overlay_path=overlay_path)
+
+    def set_community_context_provider(
+        self,
+        provider: CommunityContextProvider | None,
+        *,
+        enabled: bool = True,
+    ) -> None:
+        self._community_context_provider = provider
+        self._community_context_enabled_default = bool(enabled and provider is not None)
+
+    def set_cognitive_pattern_provider(
+        self,
+        provider: CognitivePatternProvider | None,
+        *,
+        enabled: bool = True,
+    ) -> None:
+        self._cognitive_pattern_provider = provider
+        self._cognitive_patterns_enabled_default = bool(enabled and provider is not None)
 
     _QE_ONLY_HINTS: frozenset[str] = frozenset({
         "count",
@@ -200,6 +277,8 @@ class AnswerOrchestrator:
         *,
         answer_style: str = "normal",
         web_search_enabled: bool | None = None,
+        community_context_enabled: bool | None = None,
+        cognitive_patterns_enabled: bool | None = None,
     ) -> AssistantAnswer:
         with _timed_step("orchestrator.answer_style"):
             style_resolution = resolve_answer_style(question)
@@ -213,6 +292,12 @@ class AnswerOrchestrator:
         with _timed_step("orchestrator.context_select"):
             _pack, ctx = self._selector.select(question)
         attach_context(trace, ctx)
+        if not route.is_hard_safety:
+            self._attach_cognitive_pattern_plan(
+                route.question,
+                trace,
+                cognitive_patterns_enabled=cognitive_patterns_enabled,
+            )
 
         # 1. Hard safety route — always audit.
         if route.is_hard_safety:
@@ -225,33 +310,36 @@ class AnswerOrchestrator:
                         web_search_enabled=web_search_enabled,
                     )
                     if answer is not None:
-                        return answer
+                        return self._apply_community_tone_if_enabled(
+                            answer,
+                            community_context_enabled=community_context_enabled,
+                        )
                 return self._hard_safety_audit(route, ctx, trace)
 
         # 2. Connection / path questions -> cross-page QA.
         if route.intent == "connection_path":
             with _timed_step("orchestrator.branch:connection_answer"):
-                return self._connection_answer(route, ctx, trace)
+                result = self._connection_answer(route, ctx, trace)
 
         # 3a. Source-qualified facts -> entity QA.
-        if route.intent == "source_qualified_fact":
+        elif route.intent == "source_qualified_fact":
             with _timed_step("orchestrator.branch:source_fact_answer"):
-                return self._source_fact_answer(route, ctx, trace)
+                result = self._source_fact_answer(route, ctx, trace)
 
         # 3b. Weak-link / policy explanations -> safe policy answer.
-        if route.intent == "weak_link_policy":
+        elif route.intent == "weak_link_policy":
             with _timed_step("orchestrator.branch:policy_answer"):
-                return self._policy_answer(route, ctx, trace)
+                result = self._policy_answer(route, ctx, trace)
 
         # 3c. Entity relation lookup.
-        if route.intent == "entity_relation":
+        elif route.intent == "entity_relation":
             with _timed_step("orchestrator.branch:entity_relation_answer"):
-                return self._entity_relation_answer(route, ctx, trace)
+                result = self._entity_relation_answer(route, ctx, trace)
 
         # 3d. Entity definition.
-        if route.intent == "entity_definition":
+        elif route.intent == "entity_definition":
             with _timed_step("orchestrator.branch:entity_definition_answer"):
-                return self._entity_definition_answer(
+                result = self._entity_definition_answer(
                     route,
                     ctx,
                     trace,
@@ -259,8 +347,131 @@ class AnswerOrchestrator:
                 )
 
         # 5. Unknown -> audit, missing knowledge.
-        with _timed_step("orchestrator.branch:unknown_audit"):
-            return self._unknown_audit(route, ctx, trace)
+        else:
+            with _timed_step("orchestrator.branch:unknown_audit"):
+                result = self._unknown_audit(route, ctx, trace)
+
+        # 6. A genuine "we don't have this" audit (never a safety-blocked one —
+        # those return above, in step 1, untouched) gets one more chance via
+        # live web search before it is returned as final.
+        if result.decision == "audit" and result.support_kind == "missing_knowledge":
+            with _timed_step("orchestrator.branch:web_search_fallback"):
+                web_answer = self._web_search_current_answer(
+                    route,
+                    ctx,
+                    trace,
+                    web_search_enabled=web_search_enabled,
+                )
+                if web_answer is not None:
+                    web_answer = self._apply_cognitive_surface_if_enabled(
+                        web_answer,
+                        cognitive_patterns_enabled=cognitive_patterns_enabled,
+                    )
+                    return self._apply_community_tone_if_enabled(
+                        web_answer,
+                        community_context_enabled=community_context_enabled,
+                    )
+                community_answer = self._community_context_answer(
+                    route,
+                    ctx,
+                    trace,
+                    community_context_enabled=community_context_enabled,
+                )
+                if community_answer is not None:
+                    return community_answer
+
+        result = self._apply_cognitive_surface_if_enabled(
+            result,
+            cognitive_patterns_enabled=cognitive_patterns_enabled,
+        )
+        return self._apply_community_tone_if_enabled(
+            result,
+            community_context_enabled=community_context_enabled,
+        )
+
+    def _community_tone_enabled(self, community_context_enabled: bool | None) -> bool:
+        enabled = (
+            self._community_context_enabled_default
+            if community_context_enabled is None
+            else community_context_enabled
+        )
+        return bool(enabled and self._community_context_provider is not None)
+
+    def _cognitive_patterns_enabled(self, cognitive_patterns_enabled: bool | None) -> bool:
+        enabled = (
+            self._cognitive_patterns_enabled_default
+            if cognitive_patterns_enabled is None
+            else cognitive_patterns_enabled
+        )
+        return bool(enabled and self._cognitive_pattern_provider is not None)
+
+    def _attach_cognitive_pattern_plan(
+        self,
+        question: str,
+        trace,
+        *,
+        cognitive_patterns_enabled: bool | None,
+    ) -> None:
+        if not self._cognitive_patterns_enabled(cognitive_patterns_enabled):
+            return
+        try:
+            plan = self._cognitive_pattern_provider.plan(question, max_patterns=5)
+        except Exception as exc:
+            trace.add(f"cognitive_patterns: error={exc.__class__.__name__}")
+            return
+        if not isinstance(plan, dict):
+            trace.add("cognitive_patterns: invalid_plan")
+            return
+        plan["factual_support_allowed_from_patterns"] = False
+        attach_cognitive_plan(trace, plan)
+
+    def _apply_community_tone_if_enabled(
+        self,
+        answer: AssistantAnswer,
+        *,
+        community_context_enabled: bool | None,
+    ) -> AssistantAnswer:
+        if not self._community_tone_enabled(community_context_enabled):
+            return answer
+        if answer.decision != "answer":
+            return answer
+        if answer.source_system == "community_context":
+            return answer
+        styled = apply_community_tone(
+            answer.question,
+            answer.answer_text,
+            support_kind=answer.support_kind,
+            source_system=answer.source_system,
+        )
+        if styled == answer.answer_text:
+            return answer
+        risk = list(dict.fromkeys([*answer.risk_flags, "community_style_tone"]))
+        return replace(answer, answer_text=styled, risk_flags=risk)
+
+    def _apply_cognitive_surface_if_enabled(
+        self,
+        answer: AssistantAnswer,
+        *,
+        cognitive_patterns_enabled: bool | None,
+    ) -> AssistantAnswer:
+        if not self._cognitive_patterns_enabled(cognitive_patterns_enabled):
+            return answer
+        if answer.decision != "answer":
+            return answer
+        plan = answer.trace.cognitive_plan if answer.trace else None
+        if not plan:
+            return answer
+        shaped = apply_cognitive_surface(
+            answer.question,
+            answer.answer_text,
+            support_kind=answer.support_kind,
+            source_system=answer.source_system,
+            cognitive_plan=plan,
+        )
+        if shaped == answer.answer_text:
+            return answer
+        risk = list(dict.fromkeys([*answer.risk_flags, "cognitive_pattern_surface"]))
+        return replace(answer, answer_text=shaped, risk_flags=risk)
 
     # ------------------------------------------------------------------ #
     # Audit builders.
@@ -300,6 +511,26 @@ class AnswerOrchestrator:
             audit_reason=reason,
         )
 
+    @staticmethod
+    def _web_answer_lead(question: str, results) -> str | None:
+        """Extract the single sentence answering ``question`` from the top
+        result's text, so the rendered answer leads with the specific fact
+        instead of a generic abstract. Returns None when nothing qualifies
+        (render then falls back to the truncated snippet)."""
+        if not results:
+            return None
+        primary = results[0]
+        subject = primary.title
+        for suffix in (" - Wikipedia", " — Wikipedia"):
+            if subject.endswith(suffix):
+                subject = subject[: -len(suffix)]
+                break
+        return extract_answer(question, primary.snippet, subject=subject)
+
+    @staticmethod
+    def _requires_extracted_web_lead(question: str) -> bool:
+        return bool(_CURRENT_OFFICEHOLDER_QUERY_RE.search(question or ""))
+
     def _web_search_current_answer(
         self,
         route,
@@ -309,12 +540,62 @@ class AnswerOrchestrator:
         web_search_enabled: bool | None,
     ) -> AssistantAnswer | None:
         enabled = self._web_search_enabled_default if web_search_enabled is None else web_search_enabled
-        if self._web_search_provider is None and enabled:
-            from worldpgt.web_search.duckduckgo import DuckDuckGoInstantAnswerProvider
+        if not enabled:
+            return None
+        if self._web_search_provider is None:
+            from worldpgt.web_search.composite import CompositeSearchProvider, DEFAULT_DEADLINE_SEC
 
-            self._web_search_provider = DuckDuckGoInstantAnswerProvider()
+            deadline = (
+                DEFAULT_DEADLINE_SEC
+                if self._web_search_deadline_sec is None
+                else self._web_search_deadline_sec
+            )
+            self._web_search_provider = CompositeSearchProvider(deadline_sec=deadline)
         if self._web_search_provider is None:
             return None
+
+        if self._live_cache is not None:
+            # 1. Exact repeat of this question — fastest path.
+            cached = self._live_cache.get(route.question)
+            cache_note = "cache_hit"
+            # 2. A DIFFERENT question naming an entity already learned from a
+            # previous live search — no network, local extraction only. This
+            # is what makes the system get faster with use: the first
+            # question about an entity pays the network cost once, every
+            # later question about the same entity (any wording) doesn't.
+            if cached is None:
+                cached = self._live_cache.find_entity_in_question(route.question)
+                cache_note = "entity_cache_hit"
+            if cached is not None:
+                lead = self._web_answer_lead(route.question, cached.results)
+                if self._requires_extracted_web_lead(route.question) and not lead:
+                    trace.add(f"web_search: {cache_note} lacked_specific_current_officeholder_answer")
+                    return None
+                cached_text = render_web_answer(
+                    route.question,
+                    cached.results,
+                    fetched_at=cached.fetched_at,
+                    from_cache=True,
+                    lead=lead,
+                )
+                if cached_text:
+                    trace.add(f"web_search: {cache_note} fetched_at={cached.fetched_at}")
+                    finalize(trace, "web_search", "web_search_result")
+                    return self._make(
+                        route,
+                        ctx,
+                        trace,
+                        decision="answer",
+                        answer_text=cached_text,
+                        supported=True,
+                        support_kind="web_search_result",
+                        source_system="web_search",
+                        extra_risk=[
+                            "current_live", "web_search_live",
+                            "source_qualified_volatile", "web_search_cached",
+                        ],
+                    )
+
         try:
             results = self._web_search_provider.search(route.question, max_results=3)
         except Exception as exc:
@@ -323,10 +604,26 @@ class AnswerOrchestrator:
         if not results:
             trace.add("web_search: no_source_results")
             return None
-        text = render_web_answer(route.question, results)
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        lead = self._web_answer_lead(route.question, results)
+        if self._requires_extracted_web_lead(route.question) and not lead:
+            trace.add("web_search: lacked_specific_current_officeholder_answer")
+            return None
+        text = render_web_answer(
+            route.question,
+            results,
+            fetched_at=fetched_at,
+            from_cache=False,
+            lead=lead,
+        )
         if not text:
             trace.add("web_search: render_empty")
             return None
+        if self._live_cache is not None:
+            self._live_cache.put(route.question, results)
+            entity_key = entity_key_from_title(results[0].title)
+            if entity_key:
+                self._live_cache.put_entity(entity_key, results)
         trace.add(f"web_search: result_count={len(results)}")
         finalize(trace, "web_search", "web_search_result")
         return self._make(
@@ -360,6 +657,47 @@ class AnswerOrchestrator:
             support_kind="missing_knowledge",
             source_system="context_pack",
             audit_reason=reason,
+        )
+
+    def _community_context_answer(
+        self,
+        route,
+        ctx,
+        trace,
+        *,
+        community_context_enabled: bool | None,
+    ) -> AssistantAnswer | None:
+        enabled = (
+            self._community_context_enabled_default
+            if community_context_enabled is None
+            else community_context_enabled
+        )
+        if not enabled or self._community_context_provider is None:
+            return None
+        try:
+            results = self._community_context_provider.search(route.question, max_results=4)
+        except Exception as exc:
+            trace.add(f"community_context: error={exc.__class__.__name__}")
+            return None
+        if not results:
+            trace.add("community_context: no_matches")
+            return None
+        text = render_context_answer(route.question, results)
+        if not text:
+            trace.add("community_context: render_empty")
+            return None
+        trace.add(f"community_context: result_count={len(results)}")
+        finalize(trace, "community_context", "safe_policy_answer")
+        return self._make(
+            route,
+            ctx,
+            trace,
+            decision="answer",
+            answer_text=text,
+            supported=True,
+            support_kind="safe_policy_answer",
+            source_system="community_context",
+            extra_risk=["community_context_only", "low_trust_source"],
         )
 
     # ------------------------------------------------------------------ #

@@ -112,7 +112,7 @@ _CONNECTION_RE = re.compile(
 _RELATION_RE = re.compile(
     r"(what\s+does\s+(.+?)\s+(?:develop|produce|publish|manufacture|make|build|"
     r"require|need|allow|permit|prohibit|forbid)s?\b|"
-    r"where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?\.]?$|"
+    r"where\s+(?:is|are|was|were)\s+(.+?)(?:\s+located)?[\?\.]?$|"
     r"(?:which|what)\s+reports?\s+does\s+(.+?)\s+publish(?:\s+annually)?[\?\.]?$|"
     r"what\s+products?\s+does\s+(.+?)\s+(?:make|produce|manufacture|build)s?\b|"
     r"what\s+(?:is|was)\s+developed\s+by\s+(.+?)[\?\.]?$|"
@@ -126,7 +126,7 @@ _RELATION_RE = re.compile(
     r"(?:who|what\s+company)\s+owns\s+(.+?)[\?\.]?$|"
     r"who\s+is\s+(.+?)\s+owned\s+by[\?\.]?$|"
     r"(?:what|which)\s+(?:company\s+)?did\s+(.+?)\s+found[\?\.]?$|"
-    r"what\s+is\s+(.+?)\s+known\s+for\b|"
+    r"what\s+(?:is|was)\s+(.+?)\s+(?:known|famous)\s+for\b|"
     r"what\s+companies\s+is\s+(.+?)\s+linked\s+to\s+by\s+leadership\b)",
     re.IGNORECASE,
 )

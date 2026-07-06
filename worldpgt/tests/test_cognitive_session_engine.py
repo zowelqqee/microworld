@@ -385,6 +385,20 @@ def test_cognitive_answer_session_uses_thought_loop_action_for_surface_text():
     assert "A useful next question would be" not in result.answer_text
 
 
+def test_cognitive_answer_session_attaches_semantic_thought_graph():
+    session = CognitiveAnswerSession("pump-dry-run")
+
+    result = session.ask("How does Starlink work?")
+
+    assert result.semantic_thought_graph is not None
+    assert result.semantic_thought_graph.selected_moves
+    assert result.semantic_thought_graph.selected_moves[0].kind == "check_missing_evidence"
+    assert "gap:mechanism" in {
+        node.node_id for node in result.semantic_thought_graph.nodes
+    }
+    assert result.semantic_thought_graph.factual_support_allowed_from_patterns is False
+
+
 def test_cognitive_answer_session_executes_loop_clarification_action():
     session = CognitiveAnswerSession(
         "pump-dry-run",

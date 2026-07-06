@@ -28,6 +28,7 @@ from worldpgt.assistant_surface.question_router import route
 from worldpgt.assistant_surface.surface_validator import validate_answer
 from worldpgt.assistant_surface.types import FACTUAL_SUPPORT_KINDS
 from worldpgt.assistant_surface.web_search import WebSearchResult
+from worldpgt.community_context.types import CommunityContextItem, CommunitySearchResult
 
 _ROOT = Path(__file__).resolve().parent.parent.parent
 _CLI = _ROOT / "worldpgt" / "experiments" / "ask_microworld_v1.py"
@@ -45,6 +46,85 @@ class _FakeWebSearchProvider:
     def search(self, query: str, *, max_results: int = 3) -> list[WebSearchResult]:
         self.queries.append(query)
         return self.results[:max_results]
+
+
+class _FakeCommunityContextProvider:
+    def __init__(self, results: list[CommunitySearchResult] | None = None) -> None:
+        self.results = results or []
+        self.queries: list[str] = []
+
+    def search(self, query: str, *, max_results: int = 5) -> list[CommunitySearchResult]:
+        self.queries.append(query)
+        return self.results[:max_results]
+
+
+class _FakeCognitivePatternProvider:
+    def __init__(self, patterns: list[dict] | None = None) -> None:
+        self.patterns = patterns or [
+            {
+                "event_id": "pattern:test",
+                "kind": "explanation_pattern",
+                "topic": "programming",
+                "pattern": "explain with a short direct answer and one concrete example",
+                "use_when": ["known factual answer"],
+                "avoid_when": ["unsupported fact"],
+                "steps": [],
+                "example_shape": "Answer first, then example.",
+                "confidence": "medium",
+                "source": "community_context",
+                "trust": "low_for_facts_high_for_style",
+                "graph_layers": ["explanation_graph"],
+                "source_item_ids": ["reddit:test"],
+                "evidence_refs": ["reddit:test"],
+                "signal_count": 1,
+                "factual_support_allowed": False,
+            }
+        ]
+        self.queries: list[str] = []
+
+    def search(self, query: str, *, max_results: int = 5):
+        self.queries.append(query)
+        return []
+
+    def plan(self, query: str, *, max_patterns: int = 5) -> dict:
+        self.queries.append(query)
+        return {
+            "question": query,
+            "user_intent_guess": "explanation",
+            "facts_required": ["source-backed factual memory or cited lookup"],
+            "known_facts_source": "factual_memory_or_live_search_required",
+            "cognitive_patterns": self.patterns[:max_patterns],
+            "reasoning_pattern": self.patterns[0]["pattern"] if self.patterns else "",
+            "examples_or_analogies": "",
+            "uncertainty_to_state": "State uncertainty when factual support is absent.",
+            "checks_before_answering": [
+                "Do not treat community pattern text as factual support.",
+                "Verify source-backed claims in factual memory or live search.",
+            ],
+            "tone": "Use a clear, concrete, helpful tone.",
+            "helpful_next_move": "Answer what is supported.",
+            "factual_support_allowed_from_patterns": False,
+        }
+
+
+def _community_result(text: str, *, subreddit: str = "AskReddit") -> CommunitySearchResult:
+    item = CommunityContextItem(
+        item_id="reddit:test",
+        source_system="reddit",
+        source_kind="post",
+        trust="community_context_only",
+        subreddit=subreddit,
+        title="Community discussion",
+        text=text,
+        url="https://www.reddit.com/r/AskReddit/comments/test/",
+        score=12,
+        created_utc="",
+        topic_terms=("people", "common", "concerns", "debugging", "python"),
+        flags=("anecdotal",),
+        risk="medium",
+        stability="volatile",
+    )
+    return CommunitySearchResult(item=item, score=10.0, matched_terms=("common",))
 
 
 def _hash(path: Path) -> str:
@@ -82,6 +162,41 @@ def test_cli_supports_json():
     assert obj["safe_for_general_runtime"] is False
 
 
+def test_cli_accepts_cognitive_patterns_path(tmp_path):
+    patterns = tmp_path / "cognitive_pattern_events.json"
+    patterns.write_text(
+        json.dumps(
+            [
+                {
+                    "event_id": "pattern:cli",
+                    "kind": "explanation_pattern",
+                    "topic": "spacex",
+                    "pattern": "answer founded questions with a short direct answer and one concrete example",
+                    "source": "community_context",
+                    "trust": "low_for_facts_high_for_style",
+                    "factual_support_allowed": False,
+                }
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    out = _run_cli(
+        "Who founded SpaceX?",
+        "--cognitive-patterns",
+        str(patterns),
+        "--json",
+    ).stdout
+    obj = json.loads(out)
+
+    assert obj["decision"] == "answer"
+    assert obj["support_kind"] in FACTUAL_SUPPORT_KINDS
+    assert obj["source_system"] == "entity_qa"
+    assert "Short answer:" in obj["answer_text"]
+    assert "cognitive_pattern_surface" in obj["risk_flags"]
+    assert obj["trace"]["cognitive_plan"]["factual_support_allowed_from_patterns"] is False
+
+
 # --------------------------------------------------------------------------- #
 # Router intents (3-9).
 # --------------------------------------------------------------------------- #
@@ -94,6 +209,9 @@ def test_router_entity_definition():
     [
         "How does Starlink work?",
         "What do you know about Blue Origin?",
+        "Explain SpaceX in simple terms.",
+        "Describe Tesla in plain English.",
+        "Summarize Starlink briefly.",
     ],
 )
 def test_router_open_synthesis_to_entity_definition(question):
@@ -211,6 +329,29 @@ def test_answer_style_shortens_open_synthesis():
     assert "SpaceX is an aerospace manufacturer" in (brief.answer_text or "")
 
 
+def test_cognitive_surface_shapes_universal_explain_entity_prompt():
+    cognitive_patterns = _ROOT / "worldpgt" / "experiments" / "community_context_v1" / "cognitive_pattern_events.json"
+    a = AnswerOrchestrator(
+        "pump-dry-run",
+        cognitive_patterns_path=str(cognitive_patterns),
+        cognitive_patterns_enabled=True,
+    ).answer("Explain SpaceX in simple terms.")
+
+    assert a.decision == "answer"
+    assert a.route == "entity_definition"
+    assert a.support_kind in FACTUAL_SUPPORT_KINDS
+    assert a.source_system == "entity_qa"
+    assert "Short answer:" in a.answer_text
+    assert "SpaceX" in a.answer_text
+    assert "The factual claim above still comes from Microworld memory." in a.answer_text
+    assert "The cognitive pattern only shapes the explanation; it is not extra evidence." in a.answer_text
+    assert "cognitive_pattern_surface" in a.risk_flags
+    assert a.trace is not None
+    assert a.trace.cognitive_plan is not None
+    assert a.trace.cognitive_plan["factual_support_allowed_from_patterns"] is False
+    assert validate_answer(a) == []
+
+
 def test_answer_style_simple_keeps_how_question_parseable():
     answer = AnswerOrchestrator("pump-dry-run").answer(
         "простыми словами How does Starlink work?"
@@ -277,6 +418,30 @@ def test_current_office_request_can_use_explicit_web_search_provider():
     assert validate_answer(a) == []
 
 
+def test_current_office_request_rejects_generic_office_page():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="President of the United States - Wikipedia",
+            snippet=(
+                "The president of the United States is the head of state and "
+                "head of government of the United States."
+            ),
+            url="https://example.com/president-office",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("Who is the current president of the US?")
+
+    assert a.decision == "audit"
+    assert a.route == "current_live_request"
+    assert "generic" not in a.answer_text.lower()
+    assert validate_answer(a) == []
+
+
 def test_private_request_never_reaches_web_search_provider():
     provider = _FakeWebSearchProvider([
         WebSearchResult(
@@ -297,6 +462,416 @@ def test_private_request_never_reaches_web_search_provider():
     assert a.source_system == "safety_gate"
     assert provider.queries == []
     assert validate_answer(a) == []
+
+
+def test_web_search_second_identical_call_uses_cache(tmp_path):
+    from worldpgt.web_search.live_cache import LiveSearchCache
+
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="President of France",
+            snippet="The current president of France is Emmanuel Macron.",
+            url="https://example.com/france-president",
+        )
+    ])
+    cache = LiveSearchCache(tmp_path / "live_cache.json")
+    orch = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+        live_cache=cache,
+    )
+
+    first = orch.answer("Who is the current president of France?")
+    second = orch.answer("Who is the current president of France?")
+
+    assert provider.queries == ["Who is the current president of France?"]
+    assert first.decision == "answer" and second.decision == "answer"
+    assert "Emmanuel Macron" in first.answer_text
+    assert "Emmanuel Macron" in second.answer_text
+    assert "not Microworld memory" in second.answer_text
+    assert "web_search_cached" not in first.risk_flags
+    assert "web_search_cached" in second.risk_flags
+    assert validate_answer(first) == []
+    assert validate_answer(second) == []
+
+
+def test_differently_worded_followup_reuses_learned_entity_without_network(tmp_path):
+    """The core 'learn once, remember' contract: a SECOND question with
+    completely different wording, but naming the same entity, must be
+    answered from the cached article — never a second network call."""
+    from worldpgt.web_search.live_cache import LiveSearchCache
+
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Sanae Takaichi - Wikipedia",
+            snippet="Sanae Takaichi is a Japanese politician, born 7 March 1961, "
+                    "who has been Prime Minister of Japan since October 2025.",
+            url="https://en.wikipedia.org/wiki/Sanae_Takaichi",
+        )
+    ])
+    cache = LiveSearchCache(tmp_path / "live_cache.json")
+    orch = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+        live_cache=cache,
+    )
+
+    first = orch.answer("Who is Sanae Takaichi?")
+    second = orch.answer("When was Sanae Takaichi born?")  # different wording
+
+    assert provider.queries == ["Who is Sanae Takaichi?"]  # no second network call
+    assert first.decision == "answer" and second.decision == "answer"
+    assert "Sanae Takaichi" in second.answer_text
+    assert "web_search_cached" in second.risk_flags
+    assert validate_answer(first) == []
+    assert validate_answer(second) == []
+
+
+def test_web_search_deadline_sec_is_passed_to_default_provider():
+    """AnswerOrchestrator(web_search_deadline_sec=...) must reach the
+    lazily-constructed default CompositeSearchProvider — this is the knob for
+    the latency/coverage tradeoff (see composite.py's measured deadline
+    comparison), so it must actually take effect, not just be accepted."""
+    from unittest.mock import patch
+    import worldpgt.web_search.composite as composite_mod
+
+    captured_deadlines = []
+
+    class _FakeComposite:
+        def __init__(self, deadline_sec=None):
+            captured_deadlines.append(deadline_sec)
+
+        def search(self, query, *, max_results=3):
+            return []
+
+    with patch.object(composite_mod, "CompositeSearchProvider", _FakeComposite):
+        orch = AnswerOrchestrator(
+            "promoted", web_search_enabled=True, web_search_deadline_sec=9.5,
+        )
+        orch.answer("What is Tesla's current stock price?")
+
+    assert captured_deadlines == [9.5]
+
+
+def test_unknown_entity_definition_falls_back_to_web_search_when_enabled():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Sanae Takaichi - Wikipedia",
+            snippet="Sanae Takaichi is a Japanese politician who has been Prime "
+                    "Minister of Japan since October 2025.",
+            url="https://en.wikipedia.org/wiki/Sanae_Takaichi",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("Who is Sanae Takaichi?")
+
+    assert a.decision == "answer"
+    assert a.route == "entity_definition"
+    assert a.support_kind == "web_search_result"
+    assert a.source_system == "web_search"
+    assert "Sanae Takaichi" in a.answer_text
+    assert "not Microworld memory" in a.answer_text
+    assert provider.queries == ["Who is Sanae Takaichi?"]
+    assert validate_answer(a) == []
+
+
+def test_unknown_entity_definition_still_audits_when_web_search_disabled():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Sanae Takaichi - Wikipedia",
+            snippet="Sanae Takaichi is a Japanese politician.",
+            url="https://en.wikipedia.org/wiki/Sanae_Takaichi",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=False,
+    ).answer("Who is Sanae Takaichi?")
+
+    assert a.decision == "audit"
+    assert a.route == "entity_definition"
+    assert provider.queries == []
+    assert validate_answer(a) == []
+
+
+def test_missing_knowledge_can_use_community_context_without_fact_support():
+    provider = _FakeCommunityContextProvider([
+        _community_result(
+            "People often describe learning Python through small projects, "
+            "reading error messages, and asking focused debugging questions.",
+            subreddit="learnpython",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        community_context_provider=provider,
+        community_context_enabled=True,
+    ).answer("What are common concerns when people learn python debugging?")
+
+    assert a.decision == "answer"
+    assert a.support_kind == "safe_policy_answer"
+    assert a.source_system == "community_context"
+    assert a.supported_by_context is True
+    assert "A practical debugging rhythm" in a.answer_text
+    assert "not factual support" in a.answer_text
+    assert "Do not promote it to stable facts" in a.answer_text
+    assert "community_context_only" in a.risk_flags
+    assert provider.queries == ["What are common concerns when people learn python debugging?"]
+    assert validate_answer(a) == []
+
+
+def test_community_tone_applies_to_known_overlay_answers():
+    provider = _FakeCommunityContextProvider([
+        _community_result("People prefer direct answers with a plain-language follow-up.")
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        community_context_provider=provider,
+        community_context_enabled=True,
+    ).answer("Who founded SpaceX?")
+
+    assert a.decision == "answer"
+    assert a.support_kind != "web_search_result"
+    assert a.source_system == "entity_qa"
+    assert "Short version:" in a.answer_text
+    assert "SpaceX" in a.answer_text
+    assert "Elon Musk" in a.answer_text
+    assert "community_style_tone" in a.risk_flags
+    assert "phrasing is community-shaped" in a.answer_text
+    assert validate_answer(a) == []
+
+
+def test_cognitive_patterns_plan_known_answer_without_becoming_fact_support():
+    provider = _FakeCognitivePatternProvider()
+
+    a = AnswerOrchestrator(
+        "promoted",
+        cognitive_pattern_provider=provider,
+        cognitive_patterns_enabled=True,
+    ).answer("Who founded SpaceX?")
+
+    assert a.decision == "answer"
+    assert a.support_kind in FACTUAL_SUPPORT_KINDS
+    assert a.source_system == "entity_qa"
+    assert provider.queries == ["Who founded SpaceX?"]
+    assert "Short answer:" in a.answer_text
+    assert "The factual claim above still comes from Microworld memory." in a.answer_text
+    assert "The cognitive pattern only shapes the explanation; it is not extra evidence." in a.answer_text
+    assert "cognitive_pattern_surface" in a.risk_flags
+    assert a.trace is not None
+    assert a.trace.cognitive_plan is not None
+    assert a.trace.cognitive_plan["known_facts_source"] == "factual_memory_or_live_search_required"
+    assert a.trace.cognitive_plan["factual_support_allowed_from_patterns"] is False
+    assert a.trace.cognitive_plan["cognitive_patterns"][0]["source"] == "community_context"
+    assert a.trace.cognitive_plan["cognitive_patterns"][0]["factual_support_allowed"] is False
+    assert any("cognitive_patterns: count=1" in step for step in a.trace.steps)
+    assert validate_answer(a) == []
+
+
+def test_cognitive_surface_ignores_fact_supporting_pattern_claims():
+    provider = _FakeCognitivePatternProvider([
+        {
+            "event_id": "pattern:bad",
+            "kind": "explanation_pattern",
+            "topic": "programming",
+            "pattern": "bad pattern that pretends to support facts",
+            "source": "community_context",
+            "trust": "low_for_facts_high_for_style",
+            "factual_support_allowed": True,
+        }
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        cognitive_pattern_provider=provider,
+        cognitive_patterns_enabled=True,
+    ).answer("Who founded SpaceX?")
+
+    assert a.decision == "answer"
+    assert a.support_kind in FACTUAL_SUPPORT_KINDS
+    assert a.source_system == "entity_qa"
+    assert "Short answer:" not in a.answer_text
+    assert "cognitive_pattern_surface" not in a.risk_flags
+    assert a.trace is not None
+    assert a.trace.cognitive_plan is not None
+    assert a.trace.cognitive_plan["factual_support_allowed_from_patterns"] is False
+    assert validate_answer(a) == []
+
+
+def test_cognitive_patterns_can_be_disabled_per_answer():
+    provider = _FakeCognitivePatternProvider()
+
+    a = AnswerOrchestrator(
+        "promoted",
+        cognitive_pattern_provider=provider,
+        cognitive_patterns_enabled=True,
+    ).answer("Who founded SpaceX?", cognitive_patterns_enabled=False)
+
+    assert a.decision == "answer"
+    assert provider.queries == []
+    assert a.trace is not None
+    assert a.trace.cognitive_plan is None
+    assert validate_answer(a) == []
+
+
+def test_community_tone_can_be_disabled_for_known_overlay_answers():
+    provider = _FakeCommunityContextProvider([
+        _community_result("People prefer direct answers with a plain-language follow-up.")
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        community_context_provider=provider,
+        community_context_enabled=True,
+    ).answer("Who founded SpaceX?", community_context_enabled=False)
+
+    assert a.decision == "answer"
+    assert "Short version:" not in a.answer_text
+    assert "community_style_tone" not in a.risk_flags
+    assert validate_answer(a) == []
+
+
+def test_community_tone_applies_to_web_search_and_preserves_sources():
+    web_provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="President of France",
+            snippet="The current president of France is Emmanuel Macron.",
+            url="https://example.com/france-president",
+        )
+    ])
+    community_provider = _FakeCommunityContextProvider([
+        _community_result("People prefer current answers with sources kept visible.")
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=web_provider,
+        web_search_enabled=True,
+        community_context_provider=community_provider,
+        community_context_enabled=True,
+    ).answer("Who is the current president of France?")
+
+    assert a.decision == "answer"
+    assert a.support_kind == "web_search_result"
+    assert a.source_system == "web_search"
+    assert "Short version (live web):" in a.answer_text
+    assert "Emmanuel Macron" in a.answer_text
+    assert "https://example.com/france-president" in a.answer_text
+    assert "not Microworld memory" in a.answer_text
+    assert "community_style_tone" in a.risk_flags
+    assert validate_answer(a) == []
+
+
+def test_community_context_does_not_bypass_private_safety():
+    provider = _FakeCommunityContextProvider([
+        _community_result("This should not be used for private information.")
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        community_context_provider=provider,
+        community_context_enabled=True,
+    ).answer("What is Elon Musk's private email?")
+
+    assert a.decision == "audit"
+    assert a.route == "private_sensitive_request"
+    assert a.source_system == "safety_gate"
+    assert provider.queries == []
+    assert validate_answer(a) == []
+
+
+def test_cognitive_patterns_do_not_bypass_private_safety():
+    provider = _FakeCognitivePatternProvider()
+
+    a = AnswerOrchestrator(
+        "promoted",
+        cognitive_pattern_provider=provider,
+        cognitive_patterns_enabled=True,
+    ).answer("What is Elon Musk's private email?")
+
+    assert a.decision == "audit"
+    assert a.route == "private_sensitive_request"
+    assert a.source_system == "safety_gate"
+    assert provider.queries == []
+    assert a.trace is not None
+    assert a.trace.cognitive_plan is None
+    assert validate_answer(a) == []
+
+
+def test_private_request_still_never_reaches_web_search_fallback():
+    """Hard-safety audits (private/inversion/universal) must never be
+    overridden by the new missing_knowledge -> web-search fallback."""
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Bad",
+            snippet="Should not be used.",
+            url="https://example.com/private",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("What is Elon Musk's phone number?")
+
+    assert a.decision == "audit"
+    assert a.route == "private_sensitive_request"
+    assert provider.queries == []
+    assert validate_answer(a) == []
+
+
+def test_relation_inversion_still_never_reaches_web_search_fallback():
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Bad",
+            snippet="Should not be used.",
+            url="https://example.com/inversion",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("Did SpaceX found Elon Musk?")
+
+    assert a.decision == "audit"
+    assert a.route == "relation_inversion"
+    assert provider.queries == []
+    assert validate_answer(a) == []
+
+
+def test_known_overlay_entity_answer_never_reaches_web_search_fallback():
+    """A supported overlay answer must not even attempt the web-search
+    fallback (it only triggers on decision == 'audit')."""
+    provider = _FakeWebSearchProvider([
+        WebSearchResult(
+            title="Bad",
+            snippet="Should not be used.",
+            url="https://example.com/spacex",
+        )
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        web_search_provider=provider,
+        web_search_enabled=True,
+    ).answer("Who founded SpaceX?")
+
+    assert a.decision == "answer"
+    assert a.support_kind != "web_search_result"
+    assert provider.queries == []
 
 
 def test_absent_fact_does_not_become_negative_answer():
