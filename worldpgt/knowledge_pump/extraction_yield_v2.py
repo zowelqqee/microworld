@@ -320,6 +320,58 @@ def _definition_ok(defn: str) -> bool:
 _CANDIDATE_SOURCE = "pump_extraction_yield_v2"
 
 
+_TRAILING_CONJUNCTION_RE = re.compile(
+    r"(?:,\s*|\s+)(?:and|but|or)\s*$",
+    re.IGNORECASE,
+)
+_TRAILING_RELATIVE_CLAUSE_RE = re.compile(
+    r"\s+(?:that|which|who|whom|whose)\b.+$",
+    re.IGNORECASE,
+)
+_TRAILING_BROKEN_DOTTED_ABBREV_PHRASE_RE = re.compile(
+    r"\s+(?:to|for|from|with|by|in|on|at)\s+(?:the\s+)?[A-Z]\s*$",
+    re.IGNORECASE,
+)
+# A span that ends in a bare preposition or relative pronoun ran into a
+# following clause the regex couldn't capture, e.g. "develops choreography
+# that integrates dancers with" (source: "...with and without physical
+# disabilities" -- the object regex stopped right before the second half of
+# the "with X and without Y" pair). Applied repeatedly since stripping one
+# dangling word can expose another (e.g. "... service with" -> "... service").
+_TRAILING_DANGLER_RE = re.compile(
+    r"\s+(?:with|that|which|who|whom|whose|for|to|in|on|of|as|by|from|into|"
+    r"toward|towards|about|between|among|during|before|after)\s*$",
+    re.IGNORECASE,
+)
+
+
+def _strip_trailing_conjunction(text: str) -> str:
+    """Drop a dangling connector or preposition a greedy span sometimes
+    swallows.
+
+    E.g. "...pressure-fed rocket engine, and was developed by SpaceX" can
+    match a subject span ending in "...rocket engine, and" when the sentence
+    has an earlier copular clause the regex's subject group can't cross (see
+    ``_DEVELOPED_BY_V2``). Stripping the trailing conjunction here — the one
+    place every extracted relation passes through — fixes it for every
+    pattern at once instead of patching each regex individually.
+
+    The same reasoning extends to bare trailing prepositions, relative
+    clauses, and prepositional tails truncated by dotted abbreviations
+    ("...to the U" from "U.S.") -- all signs the capture ran past the
+    answerable object boundary.
+    """
+
+    prev = None
+    while prev != text:
+        prev = text
+        text = _TRAILING_RELATIVE_CLAUSE_RE.sub("", text).strip()
+        text = _TRAILING_BROKEN_DOTTED_ABBREV_PHRASE_RE.sub("", text).strip()
+        text = _TRAILING_CONJUNCTION_RE.sub("", text).strip()
+        text = _TRAILING_DANGLER_RE.sub("", text).strip()
+    return text
+
+
 def _make_relation(
     subject: str,
     predicate: str,
@@ -332,9 +384,9 @@ def _make_relation(
 ) -> dict:
     return {
         "overlay_type": "overlay_relation",
-        "subject": subject.strip(),
+        "subject": _strip_trailing_conjunction(subject),
         "predicate": predicate,
-        "object": obj.strip(),
+        "object": _strip_trailing_conjunction(obj),
         "source_page": source_page,
         "evidence_text": evidence_text,
         "trust": "overlay_candidate",
@@ -1216,7 +1268,10 @@ def write_extraction_yield_v2_artifacts(
     rejected = rejected or []
     quarantine = quarantine or []
     summary = build_artifact_summary(
-        candidates, stats, rejected=rejected, quarantine=quarantine
+        candidates,
+        stats,
+        rejected=rejected,
+        quarantine=quarantine,
     )
     rows = _candidate_rows(candidates)
     by_source = _by_source_page_rows(candidates)

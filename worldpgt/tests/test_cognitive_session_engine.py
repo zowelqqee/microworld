@@ -374,13 +374,13 @@ def test_cognitive_answer_session_uses_thought_loop_action_for_surface_text():
     assert result.surface_selection_trace is not None
     assert result.answer_text == result.surface_selection_trace.final_text
     assert (
-        "I can identify Starlink and describe the service it provides"
+        "Here is the honest version"
         in result.answer_text
-        or "I can say what Starlink is and what it provides" in result.answer_text
+        or "the parts and steps that make it work" in result.answer_text
     )
     assert (
-        "To answer that more fully" in result.answer_text
-        or "The next useful question" in result.answer_text
+        "The missing piece is" in result.answer_text
+        or "one more supported fact" in result.answer_text
     )
     assert "A useful next question would be" not in result.answer_text
 
@@ -431,9 +431,9 @@ def test_cognitive_answer_session_humanizes_thin_profile_answer():
     assert result.reasoning_trace is not None
     assert result.reasoning_trace.confidence == "thin"
     assert (
-        "That is the basic identification I have for Ray Kroc right now."
+        "That is the reliable part I have for Ray Kroc right now."
         in result.answer_text
-        or "Right now I only know the basic identification for Ray Kroc."
+        or "Right now I can identify Ray Kroc"
         in result.answer_text
     )
     assert "I should not" not in result.answer_text

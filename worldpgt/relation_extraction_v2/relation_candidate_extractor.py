@@ -77,12 +77,32 @@ def _norm_label(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").strip().lower())
 
 
+_DEMONSTRATIVE_LEADERS = frozenset({"this", "these", "that", "those"})
+# Modal / auxiliary verbs that should never terminate a well-formed entity
+# span -- their presence means the capture ran past the subject into the verb
+# ("The user can", "The system will").
+_TRAILING_AUX = frozenset({
+    "can", "could", "will", "would", "may", "might", "shall", "should",
+    "must", "is", "are", "was", "were", "has", "have", "had", "does", "do",
+})
+
+
 def _is_too_generic(s: str) -> bool:
     low = s.lower().strip()
     if len(low) < _MIN_ENTITY_LEN:
         return True
     # Pure article or pronoun.
     if low in {"it", "he", "she", "they", "its", "the", "a", "an", "this", "that"}:
+        return True
+    tokens = low.split()
+    # Demonstrative-led phrase ("This precision", "These flights") -- an
+    # anaphoric reference back to a previous sentence, not a self-contained
+    # named entity. A bare demonstrative is already caught above; this catches
+    # the multi-token phrase form.
+    if len(tokens) > 1 and tokens[0] in _DEMONSTRATIVE_LEADERS:
+        return True
+    # Span that ran into the verb ("The user can", "The system will").
+    if len(tokens) > 1 and tokens[-1] in _TRAILING_AUX:
         return True
     return False
 

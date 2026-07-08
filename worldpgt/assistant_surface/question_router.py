@@ -31,7 +31,8 @@ from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIn
 # Hard-safety signals (checked first, in priority order).
 # --------------------------------------------------------------------------- #
 _PRIVATE_RE = re.compile(
-    r"\b(private\s+email|personal\s+email|phone\s+number|home\s+address|"
+    r"\b(private\s+email|personal\s+email|employee\s+email|private\s+employee\s+email|"
+    r"phone\s+number|home\s+address|"
     r"private\s+address|date\s+of\s+birth|social\s+security|passport|"
     r"favou?rite\s+(?:food|color|colour|hobby)|personal\s+life)\b",
     re.IGNORECASE,
@@ -93,6 +94,12 @@ _SOURCE_FACT_RE = re.compile(
     r"(according\s+to\s+(\w+)|what\s+does\s+(\w+)\s+estimate|"
     r"\bestimate[ds]?\s+about\b|estimated\s+net\s+worth|"
     r"source[\s-]qualified\s+net\s+worth|net\s+worth\s+estimate)",
+    re.IGNORECASE,
+)
+
+_MECHANISM_EXPLAIN_RE = re.compile(
+    r"^(?:explain\s+how\s+(.+?)\s+works?|"
+    r"what\s+is\s+the\s+operating\s+mechanism\s+of\s+(.+?))[\?\.]?$",
     re.IGNORECASE,
 )
 
@@ -251,6 +258,15 @@ def route(question: str, index: EntitySurfaceIndex | None = None) -> AssistantRo
             intent="source_qualified_fact",
             source_hint=src,
             notes="source-qualified (volatile) fact lookup",
+        )
+
+    mech = _MECHANISM_EXPLAIN_RE.match(q)
+    if mech:
+        return AssistantRoute(
+            question=q,
+            intent="entity_definition",
+            subject=_first_group(mech, 1, 2),
+            notes="mechanism open synthesis query",
         )
 
     semantic = parse_semantic_query(q, index)

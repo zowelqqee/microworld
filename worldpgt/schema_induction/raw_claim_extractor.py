@@ -8,6 +8,23 @@ them to a fixed domain ontology is NOT.
 Sentence segmentation uses the repo's deterministic ``split_sentences``. spaCy
 is used only when available to refine segmentation; everything degrades
 gracefully without it. No ML inference produces the relations themselves.
+
+Generic SVO fallback (2026-07-07): the ``_TRIGGERS`` list above only fires for
+a fixed, enumerated set of surface phrases -- verified against a genuinely
+novel domain (Fields Medal test corpus, not in this repo) that active-voice
+sentences using an unlisted verb ("won", "worked at", "studied", "died") are
+silently skipped entirely, even though they are simple, common English SVO
+constructions. This directly contradicts the "NOT a canonical domain
+predicate" design intent above: a fixed trigger list *is* effectively a small
+predicate dictionary, just an informally-named one.
+
+``_extract_generic_svo_claim`` closes that specific gap: when no trigger
+matches, it uses spaCy's dependency parse to find ANY verb with a subject and
+an object (direct or prepositional), and records the verb's own lemma as
+``relation_surface`` -- no verb dictionary lookup, so it does not need a new
+entry added by hand for every new verb a fresh domain happens to use. This is
+still bounded: it only recognizes the standard SVO/SV-prep-O shape spaCy's
+parser assigns, and gracefully returns nothing without spaCy installed.
 """
 
 from __future__ import annotations
@@ -21,6 +38,28 @@ from worldpgt.schema_induction.types import (
     RawClaim,
     SentenceRecord,
 )
+
+# spaCy is optional -- loaded lazily on first use, matching the lazy-load
+# pattern already used in entity_bootstrapper.py / relation_extraction_v2's
+# spacy_extractor.py.
+_NLP = None
+try:
+    import spacy as _spacy_mod  # noqa: F401
+    _SPACY_AVAILABLE = True
+except ImportError:  # pragma: no cover - environment without spaCy
+    _SPACY_AVAILABLE = False
+
+
+def _get_nlp():
+    global _NLP
+    if _NLP is None:
+        if not _SPACY_AVAILABLE:
+            return None
+        try:
+            _NLP = _spacy_mod.load("en_core_web_sm")
+        except Exception:  # pragma: no cover - model missing
+            return None
+    return _NLP
 
 # ---------------------------------------------------------------------------
 # Trigger inventory.
@@ -218,13 +257,86 @@ def _find_trigger(sentence: str) -> tuple[str, str, int, int] | None:
     return None
 
 
+def _svo_span_text(token) -> str:
+    """Clean surface text for the noun phrase headed by ``token``.
+
+    Same convention as relation_extraction_v2/spacy_extractor.py's
+    ``_span_text``: collects ``token.left_edge`` through ``token`` inclusive,
+    dropping bare lowercase determiners so "the Fields Medal" doesn't lose
+    its capitalized "The" (kept only when part of a proper-noun compound).
+    """
+    parts: list[str] = []
+    doc = token.doc
+    for t in doc[token.left_edge.i : token.i + 1]:
+        if t.pos_ == "DET":
+            if t.text.lower() == "the":
+                next_i = t.i + 1
+                if next_i <= token.i and doc[next_i].pos_ == "PROPN":
+                    parts.append(t.text)
+        else:
+            parts.append(t.text)
+    return " ".join(parts).strip()
+
+
+def _extract_generic_svo_claim(sent: SentenceRecord) -> RawClaim | None:
+    """Fallback when no fixed trigger matches: any verb with a subject and a
+    direct or prepositional object, using the verb's own lemma as
+    ``relation_surface``. See module docstring for why this exists."""
+    nlp = _get_nlp()
+    if nlp is None:
+        return None
+    text = sent.text.rstrip(" .")
+    if not text:
+        return None
+    doc = nlp(text)
+    for token in doc:
+        if token.pos_ != "VERB":
+            continue
+        nsubj = next((c for c in token.children if c.dep_ in ("nsubj", "nsubjpass")), None)
+        if nsubj is None:
+            continue
+        dobj = next((c for c in token.children if c.dep_ == "dobj"), None)
+        obj_span: str | None = None
+        if dobj is not None:
+            obj_span = _svo_span_text(dobj)
+        else:
+            prep = next((c for c in token.children if c.dep_ == "prep"), None)
+            if prep is not None:
+                pobj = next((c for c in prep.children if c.dep_ == "pobj"), None)
+                if pobj is not None:
+                    obj_span = f"{prep.text} {_svo_span_text(pobj)}"
+        if not obj_span:
+            continue
+        subject = _clean_phrase(_svo_span_text(nsubj))
+        obj = _clean_phrase(obj_span)
+        if not subject or not obj:
+            continue
+        relation_surface = token.lemma_.lower()
+        claim_id = _stable_id("claim", sent.sentence_id, subject, relation_surface, obj)
+        return RawClaim(
+            claim_id=claim_id,
+            subject=subject,
+            relation_surface=relation_surface,
+            object=obj,
+            sentence=sent.text,
+            source_doc_id=sent.doc_id,
+            source_sentence_id=sent.sentence_id,
+            modifiers={},
+            extraction_method="spacy_svo",
+            confidence=0.5,
+        )
+    return None
+
+
 def extract_claims_from_sentence(sent: SentenceRecord) -> list[RawClaim]:
-    """Extract zero or one raw claim from a sentence (first matching trigger)."""
+    """Extract zero or one raw claim from a sentence (first matching trigger,
+    or the generic spaCy SVO fallback when no trigger matches)."""
 
     text = sent.text.rstrip(" .")
     found = _find_trigger(text)
     if found is None:
-        return []
+        fallback = _extract_generic_svo_claim(sent)
+        return [fallback] if fallback is not None else []
     surface, kind, start, end = found
 
     subject = _clean_phrase(text[:start])

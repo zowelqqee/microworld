@@ -78,6 +78,9 @@ def _style_score(text: str) -> tuple[int, list[str]]:
         "i can say": 3,
         "the main things i can say": 3,
         "that is the basic identification": 3,
+        "right now i only know": 8,
+        "operating mechanism is still missing": 25,
+        "still missing here": 20,
     }
     for phrase, penalty in penalties.items():
         if phrase in normalized:

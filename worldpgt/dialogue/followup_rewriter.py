@@ -62,6 +62,18 @@ _DEVELOPMENT_ELLIPSIS = {
     "а что разрабатывает",
 }
 
+# A question already shaped like a complete, self-contained ask ("Tell me
+# about SpaceX", "What is Tesla?") is not a short contextual continuation
+# just because it happens to be <=4 words — it stands on its own regardless
+# of what came before it in the session, and must not be silently truncated
+# to ``answer_style="followup"`` (max_detail_units=1, no reasoning trailer).
+_COMPLETE_QUESTION_START_RE = re.compile(
+    r"^\s*(?:tell\s+me\s+about|what\s+is|what\s+are|what\s+was|what\s+were|"
+    r"who\s+is|who\s+are|who\s+was|who\s+were|define|explain|describe|"
+    r"how\s+(?:do|does|is|are)|why\s+(?:do|does|is|are))\b",
+    re.IGNORECASE,
+)
+
 
 def rewrite_followup(
     question: str,
@@ -121,7 +133,11 @@ def rewrite_followup(
             reason="omitted_subject_development",
         )
 
-    if len(stripped.split()) <= 4 and index.find_in_text(stripped):
+    if (
+        len(stripped.split()) <= 4
+        and not _COMPLETE_QUESTION_START_RE.match(stripped)
+        and index.find_in_text(stripped)
+    ):
         return FollowupRewrite(question, question, answer_style="followup", reason="short_followup")
 
     return FollowupRewrite(question, question)

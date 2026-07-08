@@ -5,10 +5,26 @@ predicate-to-predicate transitions from local overlay/artifact text, then uses
 deterministic graph traversal to render a ``SynthesisAnswer`` as connected
 prose. It is offline, rule-bounded, and never introduces facts that are not
 already present in the supplied synthesis result.
+
+Generic verb learning (2026-07-07): ``_PHRASE_MARKERS`` below is a fixed,
+hand-enumerated list of ~26 surface phrases. This is the SPEECH side of the
+system (learning *how things are phrased*), NOT the facts side, so it must
+not be restricted to a curated relation vocabulary: any content verb
+("make", "have", "include", "win", "build", ...) is legitimate language to
+learn a phrasing for. ``_generic_verb_fragment`` learns a fragment for any
+active-voice SVO verb -- keyed by its canonical predicate when the verb is in
+``relation_extraction_v2.spacy_extractor``'s ``_VERB_RELATIONS`` table
+("lead" -> "leader_of", so it lines up with overlay facts), else by the
+verb's own surface lemma (matching how schema_induction keeps surface
+relations). Copular "be" is excluded (the is_a definition path owns it). The
+noise that matters for fact *extraction* ("is have a real relation?") is
+irrelevant here -- a fragment for an unused predicate is simply never looked
+up, since lookup is driven by the predicates that actually appear in facts.
 """
 
 from __future__ import annotations
 
+import itertools
 import json
 import re
 from collections import Counter, defaultdict
@@ -18,6 +34,30 @@ from pathlib import Path
 from typing import Iterable
 
 from worldpgt.entity_qa.types import SynthesisAnswer
+from worldpgt.relation_extraction_v2.spacy_extractor import _VERB_RELATIONS
+
+# spaCy is optional -- see raw_claim_extractor.py / query_compiler.py's
+# identical lazy-load pattern. Only used by _generic_verb_fragment below;
+# everything else in this module is pure string/frequency-table logic and
+# works without it.
+_NLP = None
+try:
+    import spacy as _spacy_mod  # noqa: F401
+    _SPACY_AVAILABLE = True
+except ImportError:  # pragma: no cover - environment without spaCy
+    _SPACY_AVAILABLE = False
+
+
+def _get_nlp():
+    global _NLP
+    if _NLP is None:
+        if not _SPACY_AVAILABLE:
+            return None
+        try:
+            _NLP = _spacy_mod.load("en_core_web_sm")
+        except Exception:  # pragma: no cover - model missing
+            return None
+    return _NLP
 
 PhraseNode = tuple[str, str]
 
@@ -32,6 +72,9 @@ _DEFAULT_ARTIFACTS = (
     _EXPERIMENTS / "knowledge_pump_v1" / "pump_fact_qa_v1" / "pump_fact_qa_outputs.json",
 )
 _DEFAULT_SNAPSHOT_DIR = _EXPERIMENTS / "wiki_snapshots_v1" / "normalized_docs"
+_DEFAULT_COMMUNITY_CONTEXT_PATHS = (
+    _EXPERIMENTS / "community_context_v1" / "reddit_community_context.json",
+)
 
 _SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 _ARTICLE_RE = re.compile(r"^(?:a|an|the)\s+", re.IGNORECASE)
@@ -266,15 +309,35 @@ def build_phrase_graph(
     overlay_paths: Iterable[str | Path] | None = None,
     artifact_paths: Iterable[str | Path] | None = None,
     snapshot_dir: str | Path | None = None,
+    community_context_paths: Iterable[str | Path] | None = None,
 ) -> PhraseGraph:
-    """Build a phrase graph from local overlay, answer, and lead-paragraph data."""
+    """Build a phrase graph from local overlay, answer, and lead-paragraph data.
+
+    ``community_context_paths`` adds a low-trust, style-only source: accepted
+    Reddit ``CommunityContextItem`` records (see
+    ``worldpgt.community_context``). Training from this source can only ever
+    add phrase *fragments* and *connectors* (see ``_fragment_from_sentence``,
+    which stores templated wording like ``"is known for {object_list}"``,
+    never a literal subject/object) — it cannot make Reddit text a source of
+    facts, because facts still come exclusively from the ``SynthesisAnswer``
+    passed to ``generate``.
+    """
 
     graph = PhraseGraph()
-    for overlay_path in overlay_paths or _DEFAULT_OVERLAYS:
+    resolved_overlays = _DEFAULT_OVERLAYS if overlay_paths is None else overlay_paths
+    for overlay_path in resolved_overlays:
         _train_from_overlay(graph, Path(overlay_path))
-    for artifact_path in artifact_paths or _DEFAULT_ARTIFACTS:
+    resolved_artifacts = _DEFAULT_ARTIFACTS if artifact_paths is None else artifact_paths
+    for artifact_path in resolved_artifacts:
         _train_from_answer_artifact(graph, Path(artifact_path))
-    _train_from_snapshot_leads(graph, Path(snapshot_dir) if snapshot_dir else _DEFAULT_SNAPSHOT_DIR)
+    _train_from_snapshot_leads(
+        graph, Path(snapshot_dir) if snapshot_dir is not None else _DEFAULT_SNAPSHOT_DIR
+    )
+    resolved_community = (
+        _DEFAULT_COMMUNITY_CONTEXT_PATHS if community_context_paths is None else community_context_paths
+    )
+    for community_path in resolved_community:
+        _train_from_community_context_file(graph, Path(community_path))
     return graph
 
 
@@ -304,12 +367,13 @@ def generate(
     if not graph.covers(facts):
         return None
 
-    ordered = _order_facts(facts)
+    # Inferred (derived, non-stated) facts are left out of the answer — it
+    # states the directly supported profile, not a reasoning dump.
+    ordered = [f for f in _order_facts(facts) if f.predicate != _INFERRED_KIND]
     if answer_style in {"brief", "followup"}:
-        ordered = [f for f in ordered if f.predicate != _INFERRED_KIND][:2]
+        ordered = ordered[:2]
 
     sentences: list[str] = []
-    inferred: list[str] = []
     start = 0
 
     # Fold the first fact into the definition through a learned relative clause
@@ -337,15 +401,9 @@ def generate(
         sentence = _render_fact(graph, fact, result)
         if not sentence:
             return None
-        if fact.predicate == _INFERRED_KIND:
-            inferred.append(sentence)
-        else:
-            sentences.append(sentence)
+        sentences.append(sentence)
 
-    body = " ".join(sentences).strip()
-    if inferred and answer_style not in {"brief", "followup"}:
-        body = f"{body}\n\nBased on reasoning:\n{' '.join(inferred)}".strip()
-    return body
+    return " ".join(sentences).strip()
 
 
 def facts_from_synthesis(result: SynthesisAnswer) -> list[TypedPhraseFact]:
@@ -486,6 +544,49 @@ def _train_from_answer_artifact(graph: PhraseGraph, path: Path) -> None:
         _train_from_sentences(graph, _sentences(answer_text), entity_type)
 
 
+def _train_from_community_context_file(graph: PhraseGraph, path: Path) -> None:
+    if not path.is_file():
+        return
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    rows = data if isinstance(data, list) else data.get("items", [])
+    if not isinstance(rows, list):
+        return
+    _train_from_community_context(graph, (row for row in rows if isinstance(row, dict)))
+
+
+def _train_from_community_context(
+    graph: PhraseGraph,
+    items: Iterable[dict],
+    *,
+    max_items: int = 2000,
+) -> None:
+    """Learn phrasing (never facts) from accepted low-trust Reddit items.
+
+    Only sentences that already match a known predicate marker or a
+    copular "is a/an/the" pattern (see ``_nodes_from_sentence``) contribute
+    anything; everything else is silently inert. What is learned is always a
+    fragment template or a connector phrase, keyed by predicate — never the
+    literal subject/object content of the Reddit post.
+
+    Relative-pronoun learning (``who``/``that``/``which``) is deliberately
+    skipped for this source: casual Reddit phrasing leans on "that" for
+    people more than the curated wiki lead paragraphs do, and that one
+    grammar choice is kept anchored to the cleaner source rather than
+    swayed by informal text.
+    """
+
+    for item in itertools.islice(items, max_items):
+        if str(item.get("trust") or "") != "community_context_only":
+            continue
+        text = " ".join(
+            part for part in (str(item.get("title") or ""), str(item.get("text") or "")) if part
+        )
+        _train_from_sentences(graph, _sentences(text), "entity", learn_subordinators=False)
+
+
 def _train_from_snapshot_leads(graph: PhraseGraph, snapshot_dir: Path) -> None:
     if not snapshot_dir.is_dir():
         return
@@ -513,12 +614,19 @@ def _train_from_snapshot_leads(graph: PhraseGraph, snapshot_dir: Path) -> None:
             _train_from_sentences(graph, _sentences(lead), "entity")
 
 
-def _train_from_sentences(graph: PhraseGraph, sentences: Iterable[str], entity_type: str) -> None:
+def _train_from_sentences(
+    graph: PhraseGraph,
+    sentences: Iterable[str],
+    entity_type: str,
+    *,
+    learn_subordinators: bool = True,
+) -> None:
     previous: PhraseNode | None = None
     for sentence in sentences:
-        pronoun = _subordinator_from_sentence(sentence)
-        if pronoun:
-            graph.learn_subordinator(_entity_type(entity_type, sentence), pronoun)
+        if learn_subordinators:
+            pronoun = _subordinator_from_sentence(sentence)
+            if pronoun:
+                graph.learn_subordinator(_entity_type(entity_type, sentence), pronoun)
         for node in _nodes_from_sentence(sentence, entity_type):
             fragment = _fragment_from_sentence(sentence, node[1])
             if fragment:
@@ -550,6 +658,12 @@ def _nodes_from_sentence(sentence: str, entity_type: str) -> list[PhraseNode]:
         if idx >= 0 and predicate not in seen_predicates:
             found.append((idx, (_entity_type(entity_type, sentence), predicate)))
             seen_predicates.add(predicate)
+    generic = _generic_verb_fragment(sentence)
+    if generic is not None:
+        predicate, _fragment, position = generic
+        if predicate not in seen_predicates:
+            found.append((position, (_entity_type(entity_type, sentence), predicate)))
+            seen_predicates.add(predicate)
     found.sort(key=lambda item: item[0])
     return [node for _idx, node in found]
 
@@ -568,7 +682,59 @@ def _fragment_from_sentence(sentence: str, predicate: str) -> str:
         idx = low.find(marker)
         if idx >= 0:
             return f"{text[idx:idx + len(marker)]} {{object_list}}"
+    generic = _generic_verb_fragment(sentence)
+    if generic is not None and generic[0] == predicate:
+        return generic[1]
     return ""
+
+
+# Copular "be" is handled separately by the is_a definition path, so it must
+# never be learned as an ordinary relation phrasing here.
+_NON_RELATION_VERB_LEMMAS = frozenset({"be"})
+
+
+def _generic_verb_fragment(sentence: str) -> tuple[str, str, int] | None:
+    """``(predicate, fragment_template, verb_char_offset)`` for an active-voice
+    SVO sentence whose main verb has no ``_PHRASE_MARKERS`` entry.
+
+    This is the SPEECH side of the system, not the facts side -- its job is
+    to learn *how things are phrased*, so it deliberately does NOT filter to
+    a curated relation vocabulary. Any content verb ("make", "have",
+    "include", "win", "build", ...) is a legitimate piece of language to
+    learn a phrasing for; the noise that would matter for *fact* extraction
+    (is "have" a real relation?) is irrelevant here.
+
+    Predicate keying:
+    - verb in ``_VERB_RELATIONS`` -> its canonical predicate ("lead" ->
+      "leader_of"), so learned fragments line up with the canonical
+      predicates the overlay's facts already use.
+    - otherwise -> the verb's own lemma as the predicate (surface-verb key),
+      matching how schema_induction keeps surface relations. The typed
+      ``(entity_type, verb)`` key is what lets a person's "have" and an
+      organization's "have" occupy distinct buckets -- different senses of
+      the same verb are naturally separated by subject type.
+
+    Passive voice ("X was founded by Y") is intentionally left to the
+    existing ``_PHRASE_MARKERS`` entries that already cover it explicitly.
+    """
+    nlp = _get_nlp()
+    if nlp is None:
+        return None
+    doc = nlp(sentence)
+    for token in doc:
+        if token.pos_ != "VERB":
+            continue
+        lemma = token.lemma_.lower()
+        if lemma in _NON_RELATION_VERB_LEMMAS:
+            continue
+        has_nsubj = any(c.dep_ == "nsubj" for c in token.children)
+        has_obj = any(c.dep_ in ("dobj", "prep") for c in token.children)
+        if not (has_nsubj and has_obj):
+            continue
+        verb_config = _VERB_RELATIONS.get(lemma)
+        predicate = verb_config[0] if verb_config is not None else lemma
+        return predicate, f"{token.text} {{object_list}}", token.idx
+    return None
 
 
 def _fragment_from_evidence(evidence_text: str, predicate: str) -> str:
@@ -597,8 +763,6 @@ def _fragment_from_evidence(evidence_text: str, predicate: str) -> str:
 def _render_fact(graph: PhraseGraph, fact: TypedPhraseFact, result: SynthesisAnswer) -> str:
     if fact.predicate == _SNAPSHOT_KIND:
         return _render_snapshot(fact, result)
-    if fact.predicate == _INFERRED_KIND:
-        return _render_inferred(fact, result)
     fragment = graph.best_fragment(fact.node)
     if fragment is None:
         return ""
@@ -690,27 +854,6 @@ def _render_snapshot(fact: TypedPhraseFact, result: SynthesisAnswer) -> str:
     return f"{fact.subject}'s {predicate} was {obj} ({source} - may be outdated)."
 
 
-def _render_inferred(fact: TypedPhraseFact, result: SynthesisAnswer) -> str:
-    phrase = {
-        "competes_with": "competes with",
-        "share_founder": "shares a founder with",
-        "share_leader": "shares a leader with",
-        "associated_with_expertise": "is associated with expertise around",
-        "indirectly_requires": "indirectly requires",
-    }.get(fact.kind, "")
-    if not phrase:
-        phrase = {
-            "competitor_detection_v1": "competes with",
-            "shared_founder_v1": "shares a founder with",
-            "shared_leader_v1": "shares a leader with",
-            "expertise_association_v1": "is associated with expertise around",
-        }.get(fact.rule or "", "")
-    if not phrase:
-        phrase = _fallback_phrase("inferred_relation", fact.kind)
-    reference = _reference(fact.subject, fact.entity_type, result.definition)
-    return _sentence_from_fragment(reference, f"{phrase} {{object_list}}", _join_limited(list(fact.objects)))
-
-
 def _apply_enrichment(sentence: str, enrichment) -> tuple[str, str]:
     note = str(getattr(enrichment, "note", "") or "").strip().rstrip(".")
     obj = str(getattr(enrichment, "object", "") or "").strip()
@@ -746,28 +889,6 @@ def _render_predicate(kind: str, predicate: str) -> str:
             "subsidiary_of": "parent_company_of",
         }.get(predicate, predicate)
     return predicate
-
-
-def _fallback_phrase(kind: str, predicate: str) -> str:
-    if kind == "inverse_relation":
-        return {
-            "founded": "was founded by",
-            "develops": "is developed by",
-            "produces": "is produced by",
-            "leader_of": "is led by",
-        }.get(predicate, f"is linked to via {predicate}")
-    return {
-        "founded": "founded",
-        "founded_by": "was founded by",
-        "develops": "develops",
-        "produces": "produces",
-        "known_for": "is known for",
-        "owned_by": "is owned by",
-        "owns": "owns",
-        "located_in": "is based in",
-        "based_at": "is based at",
-        "headquartered_in": "is headquartered in",
-    }.get(predicate, f"is linked to via {predicate}")
 
 
 def _entity_type(entity_type: str | None, definition: str | None) -> str:

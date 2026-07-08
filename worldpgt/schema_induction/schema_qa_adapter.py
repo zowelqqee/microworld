@@ -173,8 +173,11 @@ class SchemaQAAdapter:
         doc_ids: set[str] = set()
         for fam in families:
             for frame in self._frames_by_family.get(fam.family_id, []):
-                subject = frame.roles.get("subject", "")
-                if not _entity_match(plan.entity or "", subject):
+                # match_role is normally "subject" ("What does ENTITY require?")
+                # but flips for reverse-direction questions ("Who won ENTITY?")
+                # -- see QueryPlan.match_role / compile_query's direction check.
+                matched = frame.roles.get(plan.match_role, "")
+                if not _entity_match(plan.entity or "", matched):
                     continue
                 val = frame.roles.get(plan.target_role or "")
                 if not val:
@@ -227,10 +230,16 @@ class SchemaQAAdapter:
         source_doc_count: int,
         tier: str,
     ) -> str:
-        template = _VERB_TEMPLATES.get(
-            (family_label, target_role),
-            "{entity} " + family_label + " {values}.",
+        # Reverse-direction answers ("Who won ENTITY?" -> subject values) read
+        # backwards with the entity-first fallback template ("ENTITY won
+        # VALUES" when VALUES are actually the ones who won ENTITY) -- put
+        # the retrieved values first instead when the answer IS the subject.
+        default_template = (
+            "{values} " + family_label + " {entity}."
+            if target_role == "subject"
+            else "{entity} " + family_label + " {values}."
         )
+        template = _VERB_TEMPLATES.get((family_label, target_role), default_template)
         lead = template.format(entity=entity, values=_join(values))
         src_block = "\n".join(f"- {s}" for s in sources)
         tier_note = "" if tier == "VERIFIED" else " (generated schema, not yet promoted)"

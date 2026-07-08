@@ -172,6 +172,32 @@ def test_followup_rewriter_expands_bare_entity_turn():
     assert result.reason == "bare_entity_followup"
 
 
+def test_followup_rewriter_does_not_truncate_a_complete_new_question():
+    """"Tell me about SpaceX" is a complete, self-contained question — it
+    must not be misclassified as a short contextual continuation just
+    because it is <=4 words and happens to name a known entity. Before the
+    fix this forced answer_style="followup" (max_detail_units=1, no
+    reasoning trailer), silently truncating an unrelated fresh question
+    after any prior turn in the same session.
+    """
+
+    context = ConversationContext(
+        turns=[
+            _turn(
+                "How does Starlink work?",
+                primary="Starlink",
+                mentioned=["Starlink", "SpaceX"],
+            )
+        ]
+    )
+
+    result = rewrite_followup("Tell me about SpaceX", context, _index())
+
+    assert result.resolved_question == "Tell me about SpaceX"
+    assert result.answer_style == "normal"
+    assert result.reason is None
+
+
 def test_followup_rewriter_supplies_last_subject_for_founding_question():
     context = ConversationContext(
         turns=[

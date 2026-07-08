@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import itertools
 import random
+import threading
 import time
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -55,6 +56,53 @@ def _parse_retry_after(value: str | None) -> float | None:
     return seconds if seconds >= 0 else None
 
 
+class SharedRateLimiter:
+    """Pacing gate shared across multiple :class:`ResilientHttpClient`
+    instances that hit the same rate-limited backend, so independent
+    clients/threads don't collectively exceed a safe aggregate request rate
+    even though each already paces itself individually.
+
+    Concretely: Wikipedia and Wikidata are separate providers (and Wikipedia
+    itself now fires two concurrent sub-requests -- full-question and
+    bare-entity -- see ``wikipedia.py``), each with its own per-instance
+    pacing. Per-instance pacing alone doesn't stop those *different*
+    instances from all dispatching at once, and Wikimedia's rate limit is
+    almost certainly enforced per source IP across the whole family of
+    endpoints, not per API separately. A 250-question benchmark run against
+    a shared/sandboxed egress IP demonstrated this concretely: raw ``curl``
+    calls bypassing this codebase entirely still came back HTTP 429 for
+    several minutes afterward -- confirming the rate limit is real and
+    triggered by aggregate request volume, not a bug in retry/relevance
+    logic. Passing one instance of this limiter into every Wikimedia-family
+    client closes that gap by serializing actual dispatch across all of them
+    to a single minimum interval, regardless of how many client instances or
+    concurrent threads are involved.
+    """
+
+    def __init__(
+        self,
+        *,
+        min_interval_sec: float,
+        sleep=time.sleep,
+        monotonic=time.monotonic,
+    ) -> None:
+        self._min_interval_sec = min_interval_sec
+        self._sleep = sleep
+        self._monotonic = monotonic
+        self._lock = threading.Lock()
+        self._last_call_ts: float | None = None
+
+    def acquire(self) -> None:
+        """Block (if needed) until at least ``min_interval_sec`` has passed
+        since the last acquire across ALL callers sharing this instance."""
+        with self._lock:
+            if self._last_call_ts is not None:
+                remaining = self._min_interval_sec - (self._monotonic() - self._last_call_ts)
+                if remaining > 0:
+                    self._sleep(remaining)
+            self._last_call_ts = self._monotonic()
+
+
 class ResilientHttpClient:
     """GET text over HTTP with UA rotation, pacing, and retry/backoff."""
 
@@ -66,6 +114,7 @@ class ResilientHttpClient:
         max_retries: int = 3,
         backoff_base_sec: float = 0.8,
         min_interval_sec: float = 1.2,
+        rate_limiter: SharedRateLimiter | None = None,
         opener=urlopen,
         sleep=time.sleep,
         monotonic=time.monotonic,
@@ -77,6 +126,11 @@ class ResilientHttpClient:
         self.max_retries = max(1, max_retries)
         self.backoff_base_sec = backoff_base_sec
         self.min_interval_sec = min_interval_sec
+        # When a SharedRateLimiter is given, it replaces this client's own
+        # local pacing -- see SharedRateLimiter's docstring for why per-
+        # instance pacing alone isn't enough when several client instances
+        # hit the same rate-limited backend.
+        self._rate_limiter = rate_limiter
         self._opener = opener
         self._sleep = sleep
         self._monotonic = monotonic
@@ -84,6 +138,9 @@ class ResilientHttpClient:
 
     def _pace(self) -> None:
         """Sleep just enough to keep >= min_interval_sec between requests."""
+        if self._rate_limiter is not None:
+            self._rate_limiter.acquire()
+            return
         if self._last_request_ts is not None and self.min_interval_sec > 0:
             remaining = self.min_interval_sec - (self._monotonic() - self._last_request_ts)
             if remaining > 0:

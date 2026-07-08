@@ -68,15 +68,15 @@ def _render_connection_stable(a: dict) -> str:
     qual = "semi-stable" if "semi_stable" in stabilities else "stable"
     if len(edges) == 1:
         return (
-            f"In the overlay, {a_disp} is connected to {b_disp}: {phrases[0]}. "
-            f"This is an explicit {qual} relation in the overlay."
+            f"{a_disp} is connected to {b_disp}: {phrases[0]}. "
+            f"This is an explicit {qual} relation."
         )
     intermediates = nodes[1:-1]
     through = ", ".join(intermediates)
     body = _join_clauses(phrases)
     return (
-        f"In the overlay, {a_disp} is connected to {b_disp} through {through}: "
-        f"{body}. The overlay has an explicit {qual} relation path of "
+        f"{a_disp} is connected to {b_disp} through {through}: "
+        f"{body}. That is an explicit {qual} relation path of "
         f"{len(edges)} steps."
     )
 
@@ -91,12 +91,12 @@ def _render_connection_source(a: dict) -> str:
     )
     if role == "source":
         lead = (
-            f"In the overlay, {a_disp} is connected to {b_disp} as a cited source of "
+            f"{a_disp} is connected to {b_disp} as a cited source of "
             f"source-qualified estimates"
         )
     else:
         lead = (
-            f"In the overlay, {a_disp} is connected to {b_disp} through a source-qualified "
+            f"{a_disp} is connected to {b_disp} through a source-qualified "
             f"estimate"
         )
     return (
@@ -109,7 +109,7 @@ def _render_connection_weak(a: dict) -> str:
     a_disp, b_disp = a["a"], a["b"]
     link = a["link"]
     return (
-        f"In the overlay, {a_disp} and {b_disp} are connected only by a weak contextual "
+        f"{a_disp} and {b_disp} are connected only by a weak contextual "
         f"link (on the {link['source_page']} page). This is a weak contextual link, not a "
         f"stable factual relation, so it does not prove a factual relationship."
     )
@@ -149,9 +149,9 @@ def _render_weak_policy(a: dict) -> str:
         )
         ex = f" Examples: {ex_str}."
     return (
-        f"In the overlay, weak context links (weak_context_only trust) are contextual "
+        f"Weak context links (weak_context_only trust) are contextual "
         f"mentions, not stable factual relations. They cannot prove a factual claim. "
-        f"The overlay currently has {total} such weak context links.{ex}"
+        f"There are currently {total} such weak context links.{ex}"
     )
 
 

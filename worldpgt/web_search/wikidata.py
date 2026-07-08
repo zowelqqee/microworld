@@ -31,7 +31,7 @@ from urllib.parse import quote_plus
 from urllib.request import urlopen
 
 from worldpgt.assistant_surface.web_search import WebSearchResult
-from worldpgt.web_search.http import ResilientHttpClient
+from worldpgt.web_search.http import ResilientHttpClient, SharedRateLimiter
 from worldpgt.web_search.wikipedia import bare_entity_query
 
 _API = "https://www.wikidata.org/w/api.php"
@@ -70,6 +70,7 @@ _OFFICE_QUERY_RE = re.compile(
     r"(?:the\s+)?(?P<place>[a-z .'-]+)",
     re.IGNORECASE,
 )
+_YEAR_RE = re.compile(r"\b(1[6-9]\d{2}|20\d{2}|21\d{2})\b")
 
 _PLACE_ALIASES = {
     "us": "the United States",
@@ -143,12 +144,18 @@ def officeholder_entity_query(question: str) -> str | None:
         return None
     office = " ".join(m.group("office").lower().split())
     place = " ".join(m.group("place").lower().strip(" .'").split())
+    place = re.sub(r"\b(?:in|during|as\s+of)$", "", place).strip()
     place_label = _PLACE_ALIASES.get(place, place.title())
     if office == "prime minister":
         office_label = "Prime Minister"
     else:
         office_label = office.title()
     return f"{office_label} of {place_label}"
+
+
+def officeholder_query_year(question: str) -> int | None:
+    match = _YEAR_RE.search(question or "")
+    return int(match.group(1)) if match else None
 
 
 class WikidataProvider:
@@ -161,6 +168,7 @@ class WikidataProvider:
         max_retries: int = 2,
         backoff_base_sec: float = 0.5,
         min_interval_sec: float = 0.3,
+        rate_limiter: SharedRateLimiter | None = None,
         opener=urlopen,
         sleep=time.sleep,
         monotonic=time.monotonic,
@@ -170,6 +178,7 @@ class WikidataProvider:
             max_retries=max_retries,
             backoff_base_sec=backoff_base_sec,
             min_interval_sec=min_interval_sec,
+            rate_limiter=rate_limiter,
             opener=opener,
             sleep=sleep,
             monotonic=monotonic,
@@ -255,6 +264,38 @@ class WikidataProvider:
             label = labels.get(holder_qid, label)
         return label or None
 
+    def _officeholder_label_for_year(self, office_qid: str, year: int) -> str | None:
+        start_bound = f"{year}-12-31T23:59:59Z"
+        end_bound = f"{year}-01-01T00:00:00Z"
+        query = f"""
+        SELECT ?holder ?holderLabel ?start WHERE {{
+          ?holder p:P39 ?statement .
+          ?statement ps:P39 wd:{office_qid} .
+          OPTIONAL {{ ?statement pq:P580 ?start . }}
+          OPTIONAL {{ ?statement pq:P582 ?end . }}
+          FILTER(!BOUND(?start) || ?start <= "{start_bound}"^^xsd:dateTime)
+          FILTER(!BOUND(?end) || ?end >= "{end_bound}"^^xsd:dateTime)
+          SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+        }}
+        ORDER BY DESC(?start)
+        LIMIT 1
+        """
+        url = f"{_SPARQL_API}?query={quote_plus(query)}&format=json"
+        data = self._get_json(url)
+        if not data:
+            return None
+        bindings = ((data.get("results") or {}).get("bindings") or [])
+        if not bindings:
+            return None
+        binding = bindings[0]
+        label = ((binding.get("holderLabel") or {}).get("value") or "").strip()
+        if re.fullmatch(r"Q\d+", label):
+            holder_uri = ((binding.get("holder") or {}).get("value") or "").strip()
+            holder_qid = holder_uri.rsplit("/", 1)[-1] if holder_uri else label
+            labels = self._resolve_labels({holder_qid})
+            label = labels.get(holder_qid, label)
+        return label or None
+
     def search(self, query: str, *, max_results: int = 3) -> list[WebSearchResult]:
         office_terms = officeholder_entity_query(query)
         terms = office_terms or bare_entity_query(query) or query
@@ -268,6 +309,15 @@ class WikidataProvider:
             return []
 
         if office_terms:
+            year = officeholder_query_year(query)
+            if year is not None:
+                holder = self._officeholder_label_for_year(qid, year)
+                if holder:
+                    return [WebSearchResult(
+                        title=f"{subject} - Wikidata",
+                        snippet=f"The officeholder of {subject} in {year} was {holder}.",
+                        url=f"https://www.wikidata.org/wiki/{qid}",
+                    )]
             holder = self._current_officeholder_label(qid)
             if holder:
                 return [WebSearchResult(

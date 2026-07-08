@@ -37,12 +37,21 @@ _PREFIX_RE = re.compile(
 
 _RU_ABOUT_RE = re.compile(r"^(?:про|о|об)\s+(.+)$", re.IGNORECASE)
 _EN_ABOUT_RE = re.compile(r"^about\s+(.+)$", re.IGNORECASE)
+_GIVE_SHORT_ABOUT_RE = re.compile(
+    r"^give\s+me\s+a\s+short\s+answer\s+about\s+(.+?)[\?\.]?$",
+    re.IGNORECASE,
+)
 
 
 def resolve_answer_style(question: str) -> AnswerStyleResolution:
     text = (question or "").strip()
     if not text:
         return AnswerStyleResolution(question, question)
+
+    give_short = _GIVE_SHORT_ABOUT_RE.match(text)
+    if give_short:
+        subject = give_short.group(1).strip().rstrip("?.!")
+        return AnswerStyleResolution(question, f"Tell me about {subject}.", "brief")
 
     match = _PREFIX_RE.match(text)
     if not match:

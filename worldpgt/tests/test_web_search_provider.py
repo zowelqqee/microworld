@@ -487,6 +487,32 @@ def test_composite_falls_through_to_second_provider_when_first_empty():
     assert primary.calls == 1 and secondary.calls == 1
 
 
+def test_composite_falls_through_when_first_result_is_irrelevant():
+    from worldpgt.assistant_surface.web_search import WebSearchResult
+    from worldpgt.web_search.composite import CompositeSearchProvider
+
+    primary = _StubProvider([
+        WebSearchResult(
+            title="Dallas (TV series) - Wikipedia",
+            snippet="Dallas is an American prime time television soap opera.",
+            url="https://en.wikipedia.org/wiki/Dallas_(TV_series)",
+        ),
+    ])
+    secondary = _StubProvider([
+        WebSearchResult(
+            title="Louisiana - Wikipedia",
+            snippet="Louisiana is in the Central Time Zone.",
+            url="https://en.wikipedia.org/wiki/Louisiana",
+        )
+    ])
+    comp = CompositeSearchProvider([primary, secondary])
+
+    results = comp.search("what is my timezone in louisiana?")
+
+    assert [r.title for r in results] == ["Louisiana - Wikipedia"]
+    assert primary.calls == 1 and secondary.calls == 1
+
+
 def test_composite_survives_a_provider_that_raises():
     from worldpgt.web_search.composite import CompositeSearchProvider
 
@@ -533,6 +559,62 @@ def test_composite_does_not_wait_for_slow_lower_priority_provider():
 
     assert [r.title for r in results] == ["Wikipedia hit"]
     assert elapsed < 1.0  # did not wait for the 2s-slow secondary
+
+
+def test_composite_does_not_wait_full_deadline_for_slow_higher_priority_provider():
+    """A relevant lower-priority result should return after the short priority
+    grace window, instead of waiting for a stuck higher-priority provider."""
+    from worldpgt.assistant_surface.web_search import WebSearchResult
+    from worldpgt.web_search.composite import CompositeSearchProvider, PRIORITY_GRACE_SEC
+    import time
+
+    primary = _SlowProvider(2.0, [
+        WebSearchResult(
+            title="Louisiana - Wikipedia",
+            snippet="Louisiana is in the Central Time Zone.",
+            url="https://en.wikipedia.org/wiki/Louisiana",
+        )
+    ])
+    secondary = _StubProvider([
+        WebSearchResult(
+            title="Louisiana time zone",
+            snippet="Louisiana is in the Central Time Zone.",
+            url="https://example.com/louisiana-time-zone",
+        )
+    ])
+    comp = CompositeSearchProvider([primary, secondary], deadline_sec=5.0)
+
+    t0 = time.perf_counter()
+    results = comp.search("what is my timezone in louisiana?")
+    elapsed = time.perf_counter() - t0
+
+    assert [r.title for r in results] == ["Louisiana time zone"]
+    assert elapsed < PRIORITY_GRACE_SEC + 0.5
+
+
+def test_composite_prefers_higher_priority_provider_if_it_finishes_within_grace():
+    from worldpgt.assistant_surface.web_search import WebSearchResult
+    from worldpgt.web_search.composite import CompositeSearchProvider
+
+    primary = _SlowProvider(0.1, [
+        WebSearchResult(
+            title="Louisiana - Wikipedia",
+            snippet="Louisiana is in the Central Time Zone.",
+            url="https://en.wikipedia.org/wiki/Louisiana",
+        )
+    ])
+    secondary = _StubProvider([
+        WebSearchResult(
+            title="Louisiana time zone",
+            snippet="Louisiana is in the Central Time Zone.",
+            url="https://example.com/louisiana-time-zone",
+        )
+    ])
+    comp = CompositeSearchProvider([primary, secondary], deadline_sec=5.0)
+
+    results = comp.search("what is my timezone in louisiana?")
+
+    assert [r.title for r in results] == ["Louisiana - Wikipedia"]
 
 
 def test_composite_falls_through_to_second_provider_after_first_empty_slow():

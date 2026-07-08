@@ -58,8 +58,8 @@ def decision_next_question_candidates(action: ActionPlan) -> tuple[str, ...]:
         return ()
     question = action.next_questions[0]
     return (
-        f"To answer that more fully, the next thing to pin down is: {question}",
-        f"The next useful question is: {question}",
+        f"The missing piece is: {question}",
+        f"To explain it properly, I would need one more supported fact: {question}",
         f"What would help next is this: {question}",
     )
 
@@ -95,20 +95,22 @@ def _mechanism_gap_candidates(plan: SpeechPlan) -> tuple[str, ...]:
     subject = plan.subject or "it"
     if plan.purpose:
         return (
-            f"I can say what {subject} is and what it provides, but I do not yet "
-            "have enough to explain the mechanism.",
+            f"Here is the honest version: I know what {subject} is and what "
+            "service it provides, but I do not yet have the mechanism: the "
+            "parts and steps that make it work.",
             (
                 f"I can identify {subject} and describe the service it provides, "
-                "but the operating mechanism is still missing here."
+                "but I do not yet have the mechanism: the parts and steps that "
+                "make it work."
             ),
             (
-                f"I know the basic shape of {subject} here, but not the operating "
+                f"I know the basic shape of {subject}, but not the working "
                 "details yet."
             ),
         )
     return (
-        f"I can identify {subject}, but I do not yet have enough to explain how "
-        "it works.",
+        f"Here is the honest version: I can identify {subject}, but I do not "
+        "yet have the mechanism: the parts and steps that make it work.",
         f"I know what {subject} refers to, but not the working mechanism yet.",
     )
 
@@ -117,8 +119,8 @@ def _thin_profile_candidates(plan: SpeechPlan) -> tuple[str, ...]:
     subject = plan.subject or "it"
     if plan.intro:
         return (
-            f"That is the basic identification I have for {subject} right now.",
-            f"Right now I only know the basic identification for {subject}.",
+            f"That is the reliable part I have for {subject} right now.",
+            f"Right now I can identify {subject}, but I do not have much more yet.",
             f"I can identify {subject}, but I do not have much more yet.",
         )
     return (
@@ -138,8 +140,7 @@ def _profile_summary_candidates(plan: SpeechPlan) -> tuple[str, ...]:
             anchors.append(f"its founding by {', '.join(founders[:2])}")
     if not anchors:
         return ()
-    joined = ", ".join(anchors[:3])
     return (
-        f"The main things I can say about {subject} are {joined}.",
-        f"For {subject}, the clearest supported points are {joined}.",
+        f"Here are the supported pieces I can put together for {subject}.",
+        f"For {subject}, I have a usable basic profile, not a complete story yet.",
     )

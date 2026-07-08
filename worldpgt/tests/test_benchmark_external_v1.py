@@ -8,6 +8,7 @@ overlay content and may shift as the overlay evolves.
 from __future__ import annotations
 
 import pytest
+from types import SimpleNamespace
 
 _FAST_N = 15
 
@@ -115,3 +116,43 @@ def test_unanswered_rows_are_not_marked_correct(external_result):
     for row in external_result["rows"]:
         if row["decision"] != "answer":
             assert row["correct"] is False
+
+
+def test_web_search_benchmark_uses_per_run_live_cache(monkeypatch):
+    import worldpgt.experiments.benchmark_external_v1 as mod
+
+    captured = {}
+
+    class _Provider:
+        def all_relations(self):
+            return []
+
+        def all_definitions(self):
+            return []
+
+    class _SurfaceIndex:
+        def find_in_text(self, text):
+            return []
+
+    class _FakeOrchestrator:
+        def __init__(self, **kwargs):
+            captured.update(kwargs)
+            self._provider = _Provider()
+            self._surface_index = _SurfaceIndex()
+
+        def answer(self, question, *, web_search_enabled=False):
+            return SimpleNamespace(
+                decision="audit",
+                route="unknown_or_unsupported",
+                support_kind="missing_knowledge",
+                answer_text="",
+            )
+
+    monkeypatch.setattr(mod, "AnswerOrchestrator", _FakeOrchestrator)
+    result = mod.run(
+        sample={"items": [{"id": "x", "question": "Who is X?", "answers": ["X"]}]},
+        web_search_enabled=True,
+    )
+
+    assert result["total_questions"] == 1
+    assert captured["live_cache"].__class__.__name__ == "LiveSearchCache"

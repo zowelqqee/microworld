@@ -912,6 +912,33 @@ def test_explanatory_patterns_pass_precision_firewall() -> None:
     assert ("Starlink", "works_by", "routing traffic through satellites") in accepted
 
 
+def test_relation_factory_strips_relative_clause_overflow() -> None:
+    items = extract_from_sentence(
+        "Acme provides choreography that integrates dancers with.",
+        "Acme",
+    )
+    rels = [
+        item for item in items
+        if item.get("predicate") == "provides" and item.get("subject") == "Acme"
+    ]
+    assert rels
+    assert rels[0]["object"] == "choreography"
+
+
+def test_relation_factory_strips_broken_dotted_abbreviation_tail() -> None:
+    items = extract_from_sentence(
+        "Capella Space provides all-weather imagery to the U.S. government.",
+        "Capella Space",
+    )
+    rels = [
+        item for item in items
+        if item.get("predicate") == "provides" and item.get("subject") == "Capella Space"
+    ]
+    assert rels
+    assert rels[0]["object"] == "all-weather imagery"
+    assert not rels[0]["object"].endswith(" U")
+
+
 def test_write_extraction_yield_v2_artifacts(tmp_path) -> None:
     items = extract_from_sentence(
         "Bloomberg News was founded by Michael Bloomberg.",

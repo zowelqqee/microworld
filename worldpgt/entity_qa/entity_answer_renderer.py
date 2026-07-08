@@ -67,6 +67,14 @@ _VERB_OBJECT_PHRASE: dict[str, str] = {
     "used_for": "is used for",
     "works_by": "works by",
     "variant_of": "is a variant of",
+    "developed_by": "was developed by",
+    "produced_by": "was produced by",
+    "published_by": "was published by",
+    "led_by": "is led by",
+    "parent_company_of": "is the parent company of",
+    "subsidiary_of": "is a subsidiary of",
+    "service_of": "is a service of",
+    "platform_of": "is a platform of",
 }
 
 
@@ -265,12 +273,9 @@ def _render_structured_synthesis(result, *, answer_style: str = "normal") -> str
     # Connected prose, not a fact-per-line dump: the sentences are already
     # ordered definition -> activity -> founding (+enrichment) -> known_for ->
     # snapshot, so joining them as a paragraph reads as a single narrative.
-    body = " ".join(sentences).strip()
-    inferred_sentences = _render_synthesis_inferred(reference, buckets["inferred"])
-    if inferred_sentences:
-        inferred = " ".join(inferred_sentences)
-        body = f"{body}\n\nBased on reasoning:\n{inferred}".strip()
-    return body
+    # Inferred (non-stated, derived) facts are deliberately left out here —
+    # the answer is the directly supported profile, not a reasoning dump.
+    return " ".join(sentences).strip()
 
 
 def _weave_enrichment(founding_sentences: list[str], enrichment) -> tuple[list[str], str | None]:
@@ -354,6 +359,10 @@ def _render_synthesis_predicate_bucket(
         if not obj_list:
             continue
         phrase = _synthesis_phrase(kind, pred)
+        if not phrase:
+            # No natural phrasing for this predicate — omit the fact rather
+            # than surface a raw predicate name as a garbled sentence.
+            continue
         sentences.append(_synthesis_sentence(reference, phrase, obj_list))
     return sentences
 
@@ -369,15 +378,6 @@ def _synthesis_sentence(reference: str, phrase: str, obj_list: str) -> str:
     return f"{reference} {phrase} {obj_list}."
 
 
-def _render_synthesis_inferred(reference: str, groups: list) -> list[str]:
-    grouped: dict[tuple[str, str], list[str]] = {}
-    for group in groups:
-        pred = str(getattr(group, "predicate", "") or "")
-        kind = str(getattr(group, "kind", "") or "")
-        grouped.setdefault((kind, pred), []).extend(
-            str(obj) for obj in getattr(group, "objects", []) if str(obj)
-        )
-    return _render_synthesis_predicate_bucket(reference, grouped, limit_predicates=4)
 
 
 def _synthesis_phrase(kind: str, pred: str) -> str:
@@ -391,7 +391,7 @@ def _synthesis_phrase(kind: str, pred: str) -> str:
             "leader_of": "is led by",
             "subsidiary_of": "is the parent of",
             "merged_with": "merged with",
-        }.get(pred, f"is linked to via {pred}")
+        }.get(pred, _VERB_OBJECT_PHRASE.get(pred, ""))
     return {
         "develops": "develops",
         "produces": "produces",
@@ -423,7 +423,7 @@ def _synthesis_phrase(kind: str, pred: str) -> str:
         "indirectly_requires": "indirectly requires",
         "share_founder": "shares a founder with",
         "share_leader": "shares a leader with",
-    }.get(pred, _VERB_OBJECT_PHRASE.get(pred, f"is linked to via {pred}"))
+    }.get(pred, _VERB_OBJECT_PHRASE.get(pred, ""))
 
 
 def _render_synthesis_snapshot(
@@ -612,15 +612,13 @@ def _render_define(args: dict) -> str:
         label = entity["label"] if entity else subject
         if copular_clauses and verb_clauses:
             parts.append(
-                f"In the overlay, {label} is {_join_clauses(copular_clauses)}, "
+                f"{label} is {_join_clauses(copular_clauses)}, "
                 f"and it {_join_clauses(verb_clauses)}."
             )
         elif copular_clauses:
-            prefix = "In the overlay, " if parts else ""
-            parts.append(f"{prefix}{label} is {_join_clauses(copular_clauses)}.")
+            parts.append(f"{label} is {_join_clauses(copular_clauses)}.")
         elif verb_clauses:
-            prefix = "In the overlay, " if parts else ""
-            parts.append(f"{prefix}{label} {_join_clauses(verb_clauses)}.")
+            parts.append(f"{label} {_join_clauses(verb_clauses)}.")
 
     caveat = _relations_temporal_caveat(relations)
     if caveat:

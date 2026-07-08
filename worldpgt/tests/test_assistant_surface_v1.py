@@ -192,8 +192,11 @@ def test_cli_accepts_cognitive_patterns_path(tmp_path):
     assert obj["decision"] == "answer"
     assert obj["support_kind"] in FACTUAL_SUPPORT_KINDS
     assert obj["source_system"] == "entity_qa"
-    assert "Short answer:" in obj["answer_text"]
-    assert "cognitive_pattern_surface" in obj["risk_flags"]
+    # An explanation_pattern has no concrete actionable move to add, so the
+    # answer text is left exactly as the factual layer produced it — the CLI
+    # flag still loaded and attached the pattern to the trace, though.
+    assert "Short answer:" not in obj["answer_text"]
+    assert "cognitive_pattern_surface" not in obj["risk_flags"]
     assert obj["trace"]["cognitive_plan"]["factual_support_allowed_from_patterns"] is False
 
 
@@ -244,6 +247,12 @@ def test_router_current_live_request():
 
 def test_router_private_sensitive_request():
     r = route("What is Elon Musk's private email?")
+    assert r.intent == "private_sensitive_request"
+    assert r.is_hard_safety is True
+
+
+def test_router_private_employee_email_request():
+    r = route("Give me a private employee email at SpaceX.")
     assert r.intent == "private_sensitive_request"
     assert r.is_hard_safety is True
 
@@ -302,6 +311,7 @@ def test_pump_dry_run_open_synthesis_answers_with_definition_support():
     assert a.decision == "answer"
     assert a.support_kind == "stable_definition"
     assert "Blue Origin" in (a.answer_text or "")
+    assert any(step.startswith("speech_first: task=") for step in a.trace.steps)
 
 
 def test_pump_dry_run_open_synthesis_uses_alias_definition():
@@ -310,7 +320,29 @@ def test_pump_dry_run_open_synthesis_uses_alias_definition():
     assert a.decision == "answer"
     assert a.support_kind == "stable_definition"
     assert "Ray Kroc is an American businessman" in (a.answer_text or "")
+    assert "That is the reliable part I have for Ray Kroc right now" in (a.answer_text or "")
+    assert "Right now I only know" not in (a.answer_text or "")
     assert "an other" not in (a.answer_text or "")
+    assert any(step.startswith("speech_first: task=") for step in a.trace.steps)
+
+
+def test_open_synthesis_how_question_uses_reasoning_before_speech():
+    a = AnswerOrchestrator("pump-dry-run").answer(
+        "How does Starlink work?",
+        web_search_enabled=False,
+    )
+
+    assert a.decision == "answer"
+    assert any(
+        step == "speech_first: task=mechanism_explanation; action=answer_with_gap; confidence=gap_heavy"
+        for step in a.trace.steps
+    )
+    assert "speech_first: renderer=reasoned_symbolic" in a.trace.steps
+    assert not any(step.startswith("mechanism_gap:") for step in a.trace.steps)
+    assert "Here is the honest version" in (a.answer_text or "")
+    assert "the parts and steps that make it work" in (a.answer_text or "")
+    assert "The missing piece is:" in (a.answer_text or "")
+    assert "operating mechanism is still missing" not in (a.answer_text or "")
 
 
 def test_answer_style_normalizes_russian_brief_about_prompt():
@@ -329,6 +361,22 @@ def test_answer_style_shortens_open_synthesis():
     assert "SpaceX is an aerospace manufacturer" in (brief.answer_text or "")
 
 
+def test_answer_style_normalizes_give_short_answer_about_prompt():
+    result = resolve_answer_style("Give me a short answer about Tesla.")
+
+    assert result.question == "Tell me about Tesla."
+    assert result.answer_style == "brief"
+
+
+def test_private_employee_email_is_safety_audit():
+    a = AnswerOrchestrator("pump-dry-run").answer("Give me a private employee email at SpaceX.")
+
+    assert a.decision == "audit"
+    assert a.route == "private_sensitive_request"
+    assert a.source_system == "safety_gate"
+    assert "private/sensitive" in (a.answer_text or "")
+
+
 def test_cognitive_surface_shapes_universal_explain_entity_prompt():
     cognitive_patterns = _ROOT / "worldpgt" / "experiments" / "community_context_v1" / "cognitive_pattern_events.json"
     a = AnswerOrchestrator(
@@ -341,11 +389,11 @@ def test_cognitive_surface_shapes_universal_explain_entity_prompt():
     assert a.route == "entity_definition"
     assert a.support_kind in FACTUAL_SUPPORT_KINDS
     assert a.source_system == "entity_qa"
-    assert "Short answer:" in a.answer_text
     assert "SpaceX" in a.answer_text
-    assert "The factual claim above still comes from Microworld memory." in a.answer_text
-    assert "The cognitive pattern only shapes the explanation; it is not extra evidence." in a.answer_text
-    assert "cognitive_pattern_surface" in a.risk_flags
+    # The patterns that match this prompt (explanation/analogy) have no
+    # concrete actionable move to add, so the answer stays exactly what the
+    # factual layer produced — no wrapper, no meta-commentary about itself.
+    assert "Short answer:" not in a.answer_text
     assert a.trace is not None
     assert a.trace.cognitive_plan is not None
     assert a.trace.cognitive_plan["factual_support_allowed_from_patterns"] is False
@@ -359,6 +407,39 @@ def test_answer_style_simple_keeps_how_question_parseable():
 
     assert answer.decision == "answer"
     assert "Starlink is" in (answer.answer_text or "")
+
+
+@pytest.mark.parametrize(
+    "question, subject",
+    [
+        ("Explain how Starlink works.", "Starlink"),
+        ("What is the operating mechanism of Starlink?", "Starlink"),
+        ("Explain how Neuralink works.", "Neuralink"),
+        ("What is the operating mechanism of Neuralink?", "Neuralink"),
+    ],
+)
+def test_mechanism_paraphrases_keep_honest_gap(question, subject):
+    answer = AnswerOrchestrator("pump-dry-run").answer(
+        question,
+        web_search_enabled=False,
+    )
+
+    assert answer.decision == "answer"
+    assert answer.route == "entity_definition"
+    assert subject in (answer.answer_text or "")
+    assert "missing piece" in (answer.answer_text or "").lower()
+    assert any(
+        step == "speech_first: task=mechanism_explanation; action=answer_with_gap; confidence=gap_heavy"
+        for step in answer.trace.steps
+    )
+
+
+def test_brief_thin_profile_keeps_honest_gap_notice():
+    answer = AnswerOrchestrator("pump-dry-run").answer("Briefly describe Ray Kroc.")
+
+    assert answer.decision == "answer"
+    assert "Ray Kroc is an American businessman" in (answer.answer_text or "")
+    assert "reliable part" in (answer.answer_text or "")
 
 
 def test_audit_request_does_not_answer_as_fact():
@@ -629,7 +710,13 @@ def test_missing_knowledge_can_use_community_context_without_fact_support():
     assert validate_answer(a) == []
 
 
-def test_community_tone_applies_to_known_overlay_answers():
+def test_community_tone_leaves_a_plain_supported_answer_unchanged():
+    """Community context has no differentiated content to add for a plain
+    factual answer, so enabling it must not add commentary-about-itself
+    noise ("Short version:", "the phrasing is community-shaped..."). The
+    answer stays exactly what the factual layer already produced.
+    """
+
     provider = _FakeCommunityContextProvider([
         _community_result("People prefer direct answers with a plain-language follow-up.")
     ])
@@ -643,11 +730,53 @@ def test_community_tone_applies_to_known_overlay_answers():
     assert a.decision == "answer"
     assert a.support_kind != "web_search_result"
     assert a.source_system == "entity_qa"
-    assert "Short version:" in a.answer_text
+    assert "Short version:" not in a.answer_text
     assert "SpaceX" in a.answer_text
     assert "Elon Musk" in a.answer_text
-    assert "community_style_tone" in a.risk_flags
-    assert "phrasing is community-shaped" in a.answer_text
+    assert "community_style_tone" not in a.risk_flags
+    assert validate_answer(a) == []
+
+
+def test_cognitive_surface_and_community_tone_do_not_double_wrap():
+    """Both surface passes are always applied back-to-back in the
+    orchestrator (see ``answer()``'s final two lines). Before the fix, each
+    one only recognized its own wrapper prefix, so when both a matching
+    cognitive pattern and a community-context provider were present, the
+    second pass wrapped the first pass's already-wrapped output again. Now
+    ``apply_community_tone`` is a pure pass-through and
+    ``apply_cognitive_surface`` appends at most one natural line, so a
+    genuinely actionable pattern (debugging) should show up exactly once,
+    with nothing from the community-tone pass layered on top of it.
+    """
+
+    cognitive_provider = _FakeCognitivePatternProvider([
+        {
+            "event_id": "pattern:debug",
+            "kind": "debugging_pattern",
+            "topic": "spacex",
+            "pattern": "reduce the problem to a minimal reproducible example",
+            "source": "community_context",
+            "trust": "low_for_facts_high_for_style",
+            "factual_support_allowed": False,
+        }
+    ])
+    community_provider = _FakeCommunityContextProvider([
+        _community_result("People prefer direct answers with a plain-language follow-up.")
+    ])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        cognitive_pattern_provider=cognitive_provider,
+        cognitive_patterns_enabled=True,
+        community_context_provider=community_provider,
+        community_context_enabled=True,
+    ).answer("Who founded SpaceX?")
+
+    assert a.decision == "answer"
+    lowered = a.answer_text.lower()
+    assert "short answer:" not in lowered
+    assert "short version:" not in lowered
+    assert a.answer_text.count("smallest example that still shows it") == 1
     assert validate_answer(a) == []
 
 
@@ -664,10 +793,10 @@ def test_cognitive_patterns_plan_known_answer_without_becoming_fact_support():
     assert a.support_kind in FACTUAL_SUPPORT_KINDS
     assert a.source_system == "entity_qa"
     assert provider.queries == ["Who founded SpaceX?"]
-    assert "Short answer:" in a.answer_text
-    assert "The factual claim above still comes from Microworld memory." in a.answer_text
-    assert "The cognitive pattern only shapes the explanation; it is not extra evidence." in a.answer_text
-    assert "cognitive_pattern_surface" in a.risk_flags
+    # The default fake pattern is an explanation_pattern, which has no
+    # concrete actionable move to add — the plan is still attached to the
+    # trace (inspectable), but the answer text itself is left untouched.
+    assert "Short answer:" not in a.answer_text
     assert a.trace is not None
     assert a.trace.cognitive_plan is not None
     assert a.trace.cognitive_plan["known_facts_source"] == "factual_memory_or_live_search_required"
@@ -741,7 +870,12 @@ def test_community_tone_can_be_disabled_for_known_overlay_answers():
     assert validate_answer(a) == []
 
 
-def test_community_tone_applies_to_web_search_and_preserves_sources():
+def test_community_tone_leaves_web_search_answer_unchanged_and_preserves_sources():
+    """render_web_answer already discloses "not Microworld memory... treat
+    as unverified" — enabling community tone must not re-wrap that in its
+    own redundant commentary layer, just leave the sources intact.
+    """
+
     web_provider = _FakeWebSearchProvider([
         WebSearchResult(
             title="President of France",
@@ -764,11 +898,11 @@ def test_community_tone_applies_to_web_search_and_preserves_sources():
     assert a.decision == "answer"
     assert a.support_kind == "web_search_result"
     assert a.source_system == "web_search"
-    assert "Short version (live web):" in a.answer_text
+    assert "Short version (live web):" not in a.answer_text
     assert "Emmanuel Macron" in a.answer_text
     assert "https://example.com/france-president" in a.answer_text
     assert "not Microworld memory" in a.answer_text
-    assert "community_style_tone" in a.risk_flags
+    assert "community_style_tone" not in a.risk_flags
     assert validate_answer(a) == []
 
 

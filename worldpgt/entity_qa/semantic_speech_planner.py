@@ -408,7 +408,11 @@ def _lowercase_first(s: str) -> str:
 
 def _question_style(question: str) -> str:
     q = (question or "").strip().lower()
-    if q.startswith("how "):
+    if (
+        q.startswith("how ")
+        or q.startswith("explain how ")
+        or "operating mechanism" in q
+    ):
         return "how"
     if "what do you know" in q or "what can you tell" in q:
         return "knowledge"

@@ -95,3 +95,5 @@ worldpgt/experiments/knowledge_pump_v1/**/selected_docs.json
 worldpgt/experiments/knowledge_pump_v1/pump_*.json
 worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json
 worldpgt/experiments/**
+!worldpgt/experiments/
+!worldpgt/experiments/benchmark_speech_quality_v1.py

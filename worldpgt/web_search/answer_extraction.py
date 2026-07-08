@@ -52,6 +52,18 @@ _RELATION_CUES: tuple[tuple[frozenset[str], frozenset[str]], ...] = (
     (frozenset({"government"}),
      frozenset({"republic", "monarchy", "democracy", "parliamentary", "federal",
                 "government"})),
+    # "How does X work?" / "What is the mechanism of X?" — favor sentences
+    # that describe the actual operating mechanism over the generic intro
+    # sentence (which is what a no-cue definitional match would return).
+    (frozenset({"work", "works", "working", "function", "functions", "functioning",
+                "mechanism", "operate", "operates", "operation"}),
+     frozenset({"via", "through", "consists", "consist", "consisting", "comprises",
+                "comprising", "comprised", "works", "operates", "operation", "system",
+                "process", "technology", "designed", "allows", "enabling", "enable",
+                "communicate", "communicates", "connecting", "connects", "connected",
+                "network", "satellites", "orbit", "ground", "terminal", "terminals",
+                "signal", "signals", "transmit", "transmits", "infrastructure",
+                "constellation", "powered", "generates", "converts"})),
 )
 
 _STOPWORDS = frozenset({
@@ -71,6 +83,12 @@ _SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])|\n+")
 # (His/Her/Their) are excluded: "His teammate Ryan Hite ..." is about Ryan, not
 # the subject.
 _SUBJECT_PRONOUN_RE = re.compile(r"^(?:He|She|It|They)\b")
+# Wikipedia extract section headers ("== History ==", "=== Background ===").
+# These mark where the lead paragraph ends — everything before the first one
+# is reliably about the article's subject by encyclopedia convention, no
+# matter how many sentences that takes (a well-developed topic like a country
+# can have a 10+ sentence lead; a short biography's lead may be 3 sentences).
+_SECTION_HEADER_RE = re.compile(r"^==+\s*[^=\n]+?\s*==+\s*$", re.MULTILINE)
 
 
 def _tokens(text: str) -> list[str]:
@@ -93,6 +111,28 @@ def _relation_keywords(question: str) -> frozenset[str]:
 def _split_sentences(text: str) -> list[str]:
     parts = _SENTENCE_SPLIT_RE.split(text or "")
     return [p.strip() for p in parts if p and len(p.strip()) > 15]
+
+
+_DEFAULT_LEAD_SENTENCE_COUNT = 6
+
+
+def _lead_sentence_count(text: str) -> int:
+    """How many sentences make up the lead paragraph(s), by real structure.
+
+    Finds the first section header and counts sentences before it, instead
+    of assuming a fixed number — a long, well-developed lead (a country, a
+    company) can run to 10+ sentences and is still entirely on-subject; a
+    short one (a minor topic) might be 2-3. When no header is found (a short
+    snippet with no visible structure, e.g. from DuckDuckGo, or a synthetic
+    text in a test), falls back to the previous fixed guess rather than
+    trusting the entire text — an unstructured blob gives no real evidence
+    that everything in it is still about the same subject.
+    """
+
+    header = _SECTION_HEADER_RE.search(text or "")
+    if header is None:
+        return _DEFAULT_LEAD_SENTENCE_COUNT
+    return len(_split_sentences(text[: header.start()]))
 
 
 def extract_answer(
@@ -129,6 +169,7 @@ def extract_answer(
     if subject:
         entity_tokens |= {t for t in _tokens(subject) if len(t) > 2}
 
+    lead_sentence_count = _lead_sentence_count(text)
     best_sentence: str | None = None
     best_score = 0.0
     for idx, sentence in enumerate(sentences):
@@ -141,8 +182,9 @@ def extract_answer(
         # A relation keyword deep in the article with NO tie to the subject is
         # almost always about someone/something else ("The Good Wife", a
         # teammate's college). Require the sentence to name the subject, lead
-        # with a subject pronoun, or sit in the intro region.
-        if not subject_ref and idx >= 6:
+        # with a subject pronoun, or sit within the article's actual lead
+        # section (see ``_lead_sentence_count`` — not a fixed sentence count).
+        if not subject_ref and idx >= lead_sentence_count:
             continue
         # A mild intro nudge, kept small so a strongly-relational sentence
         # deeper in the article (e.g. birthplace vs birth-date) can still win.

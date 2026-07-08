@@ -8,6 +8,7 @@ and the remaining fact buckets.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from hashlib import sha256
 from typing import Mapping
@@ -137,7 +138,13 @@ def generate_text_with_selection_trace(
         thought.trace.primary_conclusion if thought.trace is not None else None,
         thought.confidence,
     )
-    if decision_sentence and plan.answer_style != "brief":
+    conclusion = thought.trace.primary_conclusion if thought.trace is not None else None
+    needs_gap_notice = (
+        speech_action.next_action == "answer_with_gap"
+        or thought.confidence == "thin"
+        or (conclusion is not None and conclusion.kind in {"mechanism_gap", "thin_profile"})
+    )
+    if decision_sentence and (plan.answer_style != "brief" or needs_gap_notice):
         units.append(SpeechUnit("mini_thought", _clean_sentence(decision_sentence)))
 
     state = GenerationState()
@@ -150,7 +157,8 @@ def generate_text_with_selection_trace(
         unit = _choose_next_unit(plan, candidates, state)
         if not unit.text:
             break
-        units.append(unit)
+        if not _restates_prior_unit(unit.text, units):
+            units.append(unit)
         state = GenerationState(
             used_kinds=state.used_kinds | frozenset({unit.kind}),
             emitted_units=state.emitted_units + 1,
@@ -476,3 +484,42 @@ def _stable_index(seed: str, node: str, size: int) -> int:
         return 0
     value = int(sha256(f"{seed}:{node}".encode("utf-8")).hexdigest()[:12], 16)
     return value % size
+
+
+_WORD_RE = re.compile(r"[a-z0-9]+")
+_RESTATEMENT_STOPWORDS = frozenset(
+    {
+        "a", "an", "and", "are", "as", "at", "by", "for", "from", "in", "is",
+        "it", "its", "of", "on", "or", "that", "the", "this", "to", "was",
+        "were", "with",
+    }
+)
+
+
+def _restates_prior_unit(text: str, prior_units: list[SpeechUnit]) -> bool:
+    """True when ``text`` mostly repeats the content words of an earlier unit.
+
+    Catches cases where a decision/intro sentence anchors on the same clause
+    that the bucket loop independently emits afterward (same underlying
+    evidence, different sentence frame) — without hand-listing which
+    sentence pairs can collide.
+    """
+
+    words = _content_words(text)
+    if len(words) < 4:
+        return False
+    for unit in prior_units:
+        prior_words = _content_words(unit.text)
+        if len(prior_words) < 4:
+            continue
+        smaller = min(len(words), len(prior_words))
+        overlap = len(words & prior_words) / smaller
+        if overlap >= 0.7:
+            return True
+    return False
+
+
+def _content_words(text: str) -> frozenset[str]:
+    return frozenset(
+        word for word in _WORD_RE.findall(text.lower()) if word not in _RESTATEMENT_STOPWORDS
+    )

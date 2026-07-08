@@ -240,7 +240,10 @@ def test_open_synthesis_structured_rendering_orders_tiers():
     assert answer.index("that develops") < answer.index("It was founded by Ada Stone.")
     assert answer.index("It was founded by Ada Stone.") < answer.index("It is known for Robotics.")
     assert "As of June 2026, its estimated revenue is US$10 billion (ExampleSource)" in answer
-    assert "\n\nBased on reasoning:\nIt competes with PeerCo." in answer
+    # Inferred (derived, non-stated) facts are deliberately left out of the
+    # answer — it states the directly supported profile, not a reasoning dump.
+    assert "Based on reasoning" not in answer
+    assert "PeerCo" not in answer
 
 
 def test_open_synthesis_person_without_gender_uses_plural_pronoun():
@@ -326,6 +329,7 @@ def test_phrase_graph_learns_fragments_and_transitions_from_overlay(tmp_path):
         overlay_paths=[overlay],
         artifact_paths=[],
         snapshot_dir=tmp_path / "missing",
+        community_context_paths=[],
     )
 
     assert graph.best_fragment(("organization", "is_a")) == "is {definition}"
@@ -338,7 +342,12 @@ def test_phrase_graph_learns_fragments_and_transitions_from_overlay(tmp_path):
 
 
 def test_phrase_graph_generates_deterministic_best_path_from_synthesis():
-    graph = build_phrase_graph(overlay_paths=[], artifact_paths=[], snapshot_dir=Path("/missing"))
+    graph = build_phrase_graph(
+        overlay_paths=[],
+        artifact_paths=[],
+        snapshot_dir=Path("/missing"),
+        community_context_paths=[],
+    )
     graph.add_fragment("person", "is_a", "is {definition}")
     graph.add_fragment("person", "founded", "founded {object_list}")
     graph.add_fragment("person", "known_for", "is known for {object_list}")
@@ -684,15 +693,15 @@ def test_symbolic_text_generation_humanizes_explicit_gap_action():
     assert len(selection.variants) >= 4
     assert selection.selected_name in {variant.name for variant in selection.variants}
     assert (
-        "I can identify Starlink and describe the service it provides"
+        "Here is the honest version"
         in selection.final_text
-        or "I can say what Starlink is and what it provides" in selection.final_text
+        or "the parts and steps that make it work" in selection.final_text
     )
     assert "current evidence" not in selection.final_text
     assert "A useful next question" not in selection.final_text
     assert (
-        "To answer that more fully" in selection.final_text
-        or "The next useful question" in selection.final_text
+        "The missing piece is" in selection.final_text
+        or "one more supported fact" in selection.final_text
     )
 
 
@@ -714,9 +723,9 @@ def test_symbolic_text_generation_humanizes_explicit_thin_profile_action():
     assert len(selection.variants) >= 3
     assert selection.selected_name in {variant.name for variant in selection.variants}
     assert (
-        "That is the basic identification I have for Ray Kroc right now."
+        "That is the reliable part I have for Ray Kroc right now."
         in selection.final_text
-        or "Right now I only know the basic identification for Ray Kroc."
+        or "Right now I can identify Ray Kroc"
         in selection.final_text
     )
     assert "I should not" not in selection.final_text
@@ -819,8 +828,8 @@ def test_mini_reasoning_marks_thin_profiles_without_adding_facts():
     assert thought.confidence == "thin"
     assert thought.action.next_action == "answer_with_gap"
     assert (
-        "That is the basic identification I have for Ray Kroc right now." in answer
-        or "Right now I only know the basic identification for Ray Kroc." in answer
+        "That is the reliable part I have for Ray Kroc right now." in answer
+        or "Right now I can identify Ray Kroc" in answer
     )
     assert "thin profile" not in answer
     assert "fuller biography" not in answer
@@ -857,8 +866,8 @@ def test_mini_reasoning_names_mechanism_gap_for_how_questions():
     assert thought.task.intent == "mechanism_explanation"
     assert thought.confidence == "gap_heavy"
     assert (
-        "I can identify Starlink and describe the service it provides" in answer
-        or "I can say what Starlink is and what it provides" in answer
+        "Here is the honest version" in answer
+        or "the parts and steps that make it work" in answer
     )
     assert "mechanism" in answer
     assert "works by" not in answer
@@ -899,8 +908,8 @@ def test_mini_reasoning_adds_cautious_profile_summary_for_rich_profiles():
 
     assert thought.confidence == "grounded"
     assert (
-        "The main things I can say about SpaceX" in answer
-        or "For SpaceX, the clearest supported points" in answer
+        "Here are the supported pieces I can put together for SpaceX" in answer
+        or "For SpaceX, I have a usable basic profile" in answer
     )
     assert "Starlink" in answer
     assert "unsupported" not in answer
@@ -948,8 +957,8 @@ def test_mini_reasoning_action_plan_controls_detail_selection():
     assert thought.action.detail_unit_limit == 2
     assert thought.action.preferred_buckets[:2] == ("activity", "origin")
     assert (
-        "The main things I can say about SpaceX" in answer
-        or "For SpaceX, the clearest supported points" in answer
+        "Here are the supported pieces I can put together for SpaceX" in answer
+        or "For SpaceX, I have a usable basic profile" in answer
     )
     assert "develops rockets" in answer
     assert "founded by Elon Musk" in answer
@@ -1095,7 +1104,7 @@ def test_reasoning_engine_suggests_next_question_for_missing_mechanism():
     assert trace.action.next_questions[0] == (
         "What does Starlink use to provide that service?"
     )
-    assert "To answer that more fully" in answer
+    assert "The missing piece is" in answer
     assert trace.action.next_questions[0] in answer
 
 

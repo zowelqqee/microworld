@@ -1,22 +1,13 @@
 """Surface composition from cognitive patterns.
 
 The cognitive layer can shape presentation, but it cannot add factual support.
-This module only rewrites already-supported answers into a clearer answer
-shape and keeps the factual source label explicit.
+This module only ever appends one natural, actionable line to an
+already-supported answer; it never changes the factual claim.
 """
 
 from __future__ import annotations
 
 from worldpgt.assistant_surface.types import FACTUAL_SUPPORT_KINDS
-
-
-_SOURCE_LABELS = {
-    "entity_qa": "Microworld memory",
-    "cross_page_qa": "Microworld relation memory",
-    "query_engine": "Microworld query memory",
-    "web_search": "live web search",
-    "context_pack": "Microworld policy context",
-}
 
 
 def apply_cognitive_surface(
@@ -27,7 +18,13 @@ def apply_cognitive_surface(
     source_system: str,
     cognitive_plan: dict | None,
 ) -> str:
-    """Apply a pattern-guided surface shape without changing factual support."""
+    """Add at most one natural, useful line from a matched cognitive pattern.
+
+    Never changes the factual claim. Returns the answer unchanged unless a
+    pattern gives the reader something concretely actionable to do next
+    (e.g. a debugging move or a real follow-up question) — a plain
+    informational answer is left exactly as it already reads.
+    """
 
     del question
     text = (answer_text or "").strip()
@@ -56,21 +53,10 @@ def apply_cognitive_surface(
     if not kinds:
         return answer_text
 
-    source_label = _SOURCE_LABELS.get(source_system or "", source_system or "the supported source")
-    framing = _framing_line(kinds)
-    next_check = _next_check(cognitive_plan)
-    return "\n".join(
-        [
-            "Short answer:",
-            text,
-            "",
-            "How I am framing it:",
-            f"- {framing}",
-            f"- The factual claim above still comes from {source_label}.",
-            "- The cognitive pattern only shapes the explanation; it is not extra evidence.",
-            f"- {next_check}",
-        ]
-    )
+    note = _natural_note(kinds, cognitive_plan)
+    if not note:
+        return answer_text
+    return f"{text}\n\n{note}"
 
 
 def _already_pattern_shaped(text: str) -> bool:
@@ -87,22 +73,15 @@ def _pattern_allows_facts(pattern: dict) -> bool:
     return pattern.get("factual_support_allowed") is not False
 
 
-def _framing_line(kinds: set[str]) -> str:
+def _natural_note(kinds: set[str], plan: dict) -> str:
+    """One plain-language, actionable line — or "" when there is nothing to add."""
+
     if "debugging_pattern" in kinds:
-        return "Use the answer as the known part, then reduce the remaining problem to a small reproducible check."
-    if "explanation_pattern" in kinds:
-        return "Start with the supported claim, then keep the explanation plain and concrete."
+        return "If this doesn't resolve it, try reducing the problem to the smallest example that still shows it."
     if "uncertainty_pattern" in kinds:
-        return "Keep the caveat visible before turning the answer into a broader conclusion."
+        return "Worth treating as a starting point — this can vary, so it's worth double-checking for your case."
     if "question_pattern" in kinds:
-        return "If this does not resolve the question, the next useful move is a narrower follow-up."
-    if "style_tone_pattern" in kinds:
-        return "Prefer clear phrasing over clever phrasing."
-    return "Use the selected pattern as answer shape, not as factual evidence."
-
-
-def _next_check(plan: dict) -> str:
-    value = str(plan.get("helpful_next_move") or "").strip()
-    if value:
-        return value.rstrip(".") + "."
-    return "Before extending this answer, check the missing or current facts in a source-backed layer."
+        value = str(plan.get("helpful_next_move") or "").strip()
+        if value:
+            return value.rstrip(".") + "."
+    return ""

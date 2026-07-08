@@ -107,99 +107,15 @@ def apply_community_tone(
     support_kind: str,
     source_system: str,
 ) -> str:
-    """Apply forum-style phrasing without changing the factual support.
+    """Reserved hook for genuine forum-style phrasing shifts.
 
-    This is intentionally a surface pass. Community context is allowed to shape
-    how the answer is presented, but the factual claim remains the exact answer
-    already produced by overlay QA or live web search.
+    Community context has no differentiated content to add for a plain
+    supported answer today, so this is currently a pass-through: it never
+    changes the factual claim, and it never wraps the answer in commentary
+    that doesn't say anything the answer didn't already say.
     """
 
-    del question
-    text = (answer_text or "").strip()
-    if not text or _already_has_community_tone(text):
-        return answer_text
-    if source_system == "community_context":
-        return answer_text
-    if support_kind == "web_search_result" or source_system == "web_search":
-        return _apply_community_tone_to_web_answer(text)
-    return _apply_community_tone_to_supported_answer(text, source_system=source_system)
+    del question, support_kind, source_system
+    return answer_text
 
 
-def _already_has_community_tone(text: str) -> bool:
-    lowered = text.lower()
-    return (
-        lowered.startswith("short version:")
-        or lowered.startswith("short version (live web):")
-        or "style note: community" in lowered
-        or "style note: shaped from low-trust community phrasing" in lowered
-    )
-
-
-def _source_label(source_system: str) -> str:
-    labels = {
-        "entity_qa": "Microworld memory",
-        "cross_page_qa": "Microworld relation memory",
-        "query_engine": "Microworld query memory",
-        "context_pack": "Microworld policy context",
-        "web_search": "live web search",
-    }
-    return labels.get(source_system or "", source_system or "the supported source")
-
-
-def _apply_community_tone_to_supported_answer(text: str, *, source_system: str) -> str:
-    source = _source_label(source_system)
-    return "\n".join(
-        [
-            "Short version:",
-            text,
-            "",
-            (
-                "In plain terms: if you only need the takeaway, that is it. "
-                "The phrasing is community-shaped; the fact still comes from "
-                f"{source}."
-            )
-        ]
-    )
-
-
-def _apply_community_tone_to_web_answer(text: str) -> str:
-    lines = [line.strip() for line in text.splitlines() if line.strip()]
-    if not lines:
-        return text
-
-    lead_lines: list[str] = []
-    source_lines: list[str] = []
-    fetch_line = ""
-    for line in lines:
-        if line.startswith("Based on a live web search"):
-            fetch_line = line
-        elif line.startswith("Source:") or line.startswith("Additional sources:"):
-            source_lines.append(line)
-        elif "live web search data" in line or "not Microworld memory" in line:
-            source_lines.append(line)
-        else:
-            lead_lines.append(line)
-
-    lead = " ".join(lead_lines).strip() or text
-    result = [
-        "Short version (live web):",
-        lead,
-        "",
-    ]
-    if fetch_line:
-        result.extend([fetch_line, ""])
-    result.extend(
-        [
-            "Plainly put: this is the current web-backed answer, so treat it "
-            "as checkable rather than permanent.",
-            "",
-        ]
-    )
-    result.extend(source_lines)
-    result.extend(
-        [
-            "",
-            "The phrasing is community-shaped; the facts still come from live web search.",
-        ]
-    )
-    return "\n".join(result).strip()

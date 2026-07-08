@@ -28,7 +28,10 @@ _MIN_SENTENCE_LEN = 15
 
 
 def _placeholder_abbrevs(text: str) -> tuple[str, dict[str, str]]:
-    """Replace known abbreviation periods with a placeholder to avoid splitting."""
+    """Replace each known abbreviation (period included) with an opaque
+    placeholder so the boundary splitter can't break on its internal period.
+    The whole match is swapped out and restored verbatim -- see ``_restore``.
+    """
 
     placeholders: dict[str, str] = {}
     idx = [0]
@@ -37,15 +40,20 @@ def _placeholder_abbrevs(text: str) -> tuple[str, dict[str, str]]:
         key = f"\x00AB{idx[0]}\x00"
         idx[0] += 1
         placeholders[key] = m.group(0)
-        return m.group(1) + key
+        return key
 
     replaced = _ABBREV.sub(replace, text)
     return replaced, placeholders
 
 
 def _restore(text: str, placeholders: dict[str, str]) -> str:
+    # Replace the FULL placeholder key with the FULL original match. The old
+    # implementation sliced both key and value (``key[:-1]`` / ``val[:-1]``),
+    # which left the trailing NUL of the key in the text and duplicated the
+    # abbreviation -- turning "U.S." into the infamous "U.SU.S\x00" garbage
+    # that then corrupted every entity/relation extracted from that sentence.
     for key, val in placeholders.items():
-        text = text.replace(key[:-1], val[:-1])  # restore the word; keep dot as-is
+        text = text.replace(key, val)
     return text
 
 

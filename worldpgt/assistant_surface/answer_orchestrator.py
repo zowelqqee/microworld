@@ -66,8 +66,13 @@ from worldpgt.assistant_surface.community_context import (
 )
 from worldpgt.assistant_surface.cognitive_surface import apply_cognitive_surface
 from worldpgt.assistant_surface.web_search import WebSearchProvider, render_web_answer
+from worldpgt.cognition.phrase_graph import generate as generate_phrase_graph
+from worldpgt.cognition.reasoning_engine import reason_over_plan
+from worldpgt.entity_qa.symbolic_text_generator import generate_text
+from worldpgt.entity_qa.semantic_speech_planner import build_speech_plan
 from worldpgt.web_search.live_cache import LiveSearchCache, entity_key_from_title
 from worldpgt.web_search.answer_extraction import extract_answer
+from worldpgt.web_search.query_intent import filter_and_rank_results
 
 # Static, deterministic policy explanations (no factual claims, no overlay data).
 _WEAK_LINK_POLICY_TEXT = (
@@ -84,6 +89,13 @@ _SOURCE_QUALIFIED_POLICY_TEXT = (
 )
 _CURRENT_OFFICEHOLDER_QUERY_RE = re.compile(
     r"\b(?:current\s+)?(?:president|prime minister|mayor|governor|officeholder|incumbent)\b",
+    re.IGNORECASE,
+)
+
+_HOW_WORKS_RE = re.compile(
+    r"^\s*(?:how\s+(?:do|does)\s+.+?\bwork\b|"
+    r"explain\s+how\s+.+?\bworks?\b|"
+    r"what\s+is\s+the\s+operating\s+mechanism\s+of\s+.+?)",
     re.IGNORECASE,
 )
 
@@ -344,6 +356,7 @@ class AnswerOrchestrator:
                     ctx,
                     trace,
                     answer_style=answer_style,
+                    web_search_enabled=web_search_enabled,
                 )
 
         # 5. Unknown -> audit, missing knowledge.
@@ -531,6 +544,68 @@ class AnswerOrchestrator:
     def _requires_extracted_web_lead(question: str) -> bool:
         return bool(_CURRENT_OFFICEHOLDER_QUERY_RE.search(question or ""))
 
+    def _augment_mechanism_gap(
+        self,
+        route,
+        ctx,
+        trace,
+        plan,
+        *,
+        answer_text: str,
+        web_search_enabled: bool | None,
+    ) -> str:
+        """For "how does X work" questions, don't silently narrate around a
+        missing mechanism.
+
+        Reuses the same reasoning trace (``reason_over_plan``) that already
+        detects missing evidence roles elsewhere, instead of guessing from
+        answer text — then gives live web search one targeted try at filling
+        the mechanism specifically before admitting the gap honestly. Never
+        replaces an already-supported answer; only appends.
+        """
+
+        if not _HOW_WORKS_RE.search(route.question or ""):
+            return answer_text
+        speech_first_gap = any(
+            step.startswith("speech_first: task=mechanism_explanation; action=answer_with_gap")
+            for step in trace.steps
+        )
+        if speech_first_gap and not web_search_enabled:
+            return answer_text
+        if plan.render_template != "open_synthesis" or not plan.render_args:
+            return answer_text
+        synthesis = plan.render_args.get("synthesis")
+        if synthesis is None or not getattr(synthesis, "matched", False):
+            return answer_text
+
+        speech_plan = build_speech_plan(synthesis, route.question)
+        reasoning_trace = reason_over_plan(speech_plan)
+        if not any(m.role == "mechanism" for m in reasoning_trace.missing_evidence):
+            return answer_text
+
+        subject = synthesis.subject or route.subject or "it"
+        trace.add("mechanism_gap: detected_missing_mechanism_evidence")
+        web_answer = self._web_search_current_answer(
+            route, ctx, trace, web_search_enabled=web_search_enabled
+        )
+        if web_answer is not None and web_answer.answer_text:
+            trace.add("mechanism_gap: filled_by_web_search")
+            return (
+                f"{answer_text.rstrip()}\n\n"
+                f"I don't have verified mechanism details for {subject} "
+                f"in memory, so here is what a live web search found:\n\n"
+                f"{web_answer.answer_text}"
+            )
+        if speech_first_gap:
+            return answer_text
+        trace.add("mechanism_gap: admitted_no_web_result")
+        return (
+            f"{answer_text.rstrip()}\n\n"
+            f"Here is the honest version: I can identify {subject} and describe "
+            "what is already supported, but I do not yet have the mechanism: "
+            "the parts and steps that make it work."
+        )
+
     def _web_search_current_answer(
         self,
         route,
@@ -567,13 +642,17 @@ class AnswerOrchestrator:
                 cached = self._live_cache.find_entity_in_question(route.question)
                 cache_note = "entity_cache_hit"
             if cached is not None:
-                lead = self._web_answer_lead(route.question, cached.results)
+                _intent, ranked_results = filter_and_rank_results(route.question, cached.results)
+                if not ranked_results:
+                    trace.add(f"web_search: {cache_note} irrelevant_cached_results")
+                    return None
+                lead = self._web_answer_lead(route.question, ranked_results)
                 if self._requires_extracted_web_lead(route.question) and not lead:
                     trace.add(f"web_search: {cache_note} lacked_specific_current_officeholder_answer")
                     return None
                 cached_text = render_web_answer(
                     route.question,
-                    cached.results,
+                    ranked_results,
                     fetched_at=cached.fetched_at,
                     from_cache=True,
                     lead=lead,
@@ -603,6 +682,10 @@ class AnswerOrchestrator:
             return None
         if not results:
             trace.add("web_search: no_source_results")
+            return None
+        _intent, results = filter_and_rank_results(route.question, results)
+        if not results:
+            trace.add("web_search: no_relevant_source_results")
             return None
         fetched_at = datetime.now(timezone.utc).isoformat()
         lead = self._web_answer_lead(route.question, results)
@@ -900,8 +983,12 @@ class AnswerOrchestrator:
         trace,
         *,
         answer_style: str = "normal",
+        web_search_enabled: bool | None = None,
     ) -> AssistantAnswer:
-        analyzed = analyze_entity(route.question, index=self._surface_index)
+        analysis_question = route.question
+        if route.notes == "mechanism open synthesis query" and route.subject:
+            analysis_question = f"How does {route.subject} work?"
+        analyzed = analyze_entity(analysis_question, index=self._surface_index)
         plan = self._entity_planner.plan(analyzed)
         trace.add(f"entity_qa: intent={analyzed.intent}, decision={plan.decision}")
         if plan.render_template == "open_synthesis":
@@ -912,10 +999,18 @@ class AnswerOrchestrator:
 
         if plan.decision == "answer" and ctx.has_stable_definition:
             finalize(trace, "entity_qa", "stable_definition")
+            speech_first = self._render_open_synthesis_speech_first(
+                route, plan, trace, answer_style=answer_style
+            )
+            answer_text = self._augment_mechanism_gap(
+                route, ctx, trace, plan,
+                answer_text=speech_first or render_entity(plan),
+                web_search_enabled=web_search_enabled,
+            )
             return self._make(
                 route, ctx, trace,
                 decision="answer",
-                answer_text=render_entity(plan),
+                answer_text=answer_text,
                 supported=True,
                 support_kind="stable_definition",
                 source_system="entity_qa",
@@ -928,10 +1023,18 @@ class AnswerOrchestrator:
                 "stable_relation" if ctx.has_stable_relation else "semi_stable_relation"
             )
             finalize(trace, "entity_qa", support_kind)
+            speech_first = self._render_open_synthesis_speech_first(
+                route, plan, trace, answer_style=answer_style
+            )
+            answer_text = self._augment_mechanism_gap(
+                route, ctx, trace, plan,
+                answer_text=speech_first or render_entity(plan),
+                web_search_enabled=web_search_enabled,
+            )
             return self._make(
                 route, ctx, trace,
                 decision="answer",
-                answer_text=render_entity(plan),
+                answer_text=answer_text,
                 supported=True,
                 support_kind=support_kind,
                 source_system="entity_qa",
@@ -947,6 +1050,56 @@ class AnswerOrchestrator:
             source_system="entity_qa",
             audit_reason="I don't have a definition for this in my knowledge base.",
         )
+
+    def _render_open_synthesis_speech_first(
+        self,
+        route,
+        plan,
+        trace,
+        *,
+        answer_style: str,
+    ) -> str | None:
+        """Render open synthesis as reasoning -> speech over KB facts.
+
+        The entity planner is treated as a knowledge-base lookup that returns a
+        supported ``SynthesisAnswer``. From there, the answer surface is driven
+        by a speech plan and reasoning action before any final wording is
+        chosen. This keeps facts and speech separate: the speech layer can
+        choose wording/order/gap handling, but it never queries memory or adds
+        facts.
+        """
+
+        if plan.render_template != "open_synthesis" or not plan.render_args:
+            return None
+        synthesis = plan.render_args.get("synthesis")
+        if synthesis is None or not getattr(synthesis, "matched", False):
+            return None
+
+        speech_plan = build_speech_plan(
+            synthesis,
+            route.question,
+            answer_style=answer_style,
+        )
+        reasoning_trace = reason_over_plan(speech_plan)
+        action = reasoning_trace.action
+        if reasoning_trace.thought_loop and reasoning_trace.thought_loop.decision:
+            action = reasoning_trace.thought_loop.decision.action
+
+        trace.add(
+            "speech_first: "
+            f"task={reasoning_trace.task.intent}; "
+            f"action={action.next_action}; "
+            f"confidence={reasoning_trace.confidence}"
+        )
+
+        if action.next_action == "answer" and not reasoning_trace.missing_evidence:
+            learned = generate_phrase_graph(synthesis, answer_style=answer_style)
+            if learned:
+                trace.add("speech_first: renderer=phrase_graph")
+                return learned
+
+        trace.add("speech_first: renderer=reasoned_symbolic")
+        return generate_text(speech_plan, action=action)
 
     # ------------------------------------------------------------------ #
     def _make(

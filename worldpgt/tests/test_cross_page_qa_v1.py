@@ -161,7 +161,7 @@ def test_musk_connected_to_spacex_explicit_relation(planner):
     low = answer.lower()
     assert "spacex" in low
     assert ("leadership" in low or "founded" in low or "known for" in low)
-    assert "in the overlay" in low
+    assert "explicit" in low and "relation" in low
 
 
 def test_musk_connected_to_starlink_matches_csv(planner):
@@ -172,7 +172,8 @@ def test_musk_connected_to_starlink_matches_csv(planner):
         assert any(kw in answer.lower() for kw in ("cannot answer", "don't have", "i don't", "no verified"))
     else:
         # If ever answered, it must be an explicit/honest path, never hallucinated.
-        assert "in the overlay" in answer.lower()
+        low = answer.lower()
+        assert "explicit" in low and "relation" in low
 
 
 def test_multihop_musk_to_rockets(planner):

@@ -15,6 +15,7 @@ from worldpgt.web_search.wikidata import (
     _format_quantity,
     _format_time,
     officeholder_entity_query,
+    officeholder_query_year,
 )
 
 
@@ -66,6 +67,11 @@ def test_officeholder_entity_query_normalizes_us_president():
         officeholder_entity_query("Who is the current president of the US?")
         == "President of the United States"
     )
+
+
+def test_officeholder_entity_query_strips_year_phrase_from_place():
+    assert officeholder_entity_query("who was governor of ohio in 2011?") == "Governor of Ohio"
+    assert officeholder_query_year("who was governor of ohio in 2011?") == 2011
 
 
 def _search_response(qid: str, label: str) -> bytes:
@@ -182,6 +188,26 @@ def test_search_renders_current_officeholder_from_position_statement():
     assert any("query.wikidata.org" in url and "wd%3AQ1" in url for url in searched_urls)
     assert len(results) == 1
     assert results[0].snippet == "The officeholder of President of the United States is Jane Example."
+
+
+def test_search_renders_year_specific_officeholder_from_position_statement():
+    searched_urls: list[str] = []
+
+    def opener(req, timeout=None):
+        url = req.full_url
+        searched_urls.append(url)
+        if "action=wbsearchentities" in url:
+            return _FakeResponse(_search_response("Q1", "Governor of Ohio"))
+        if "query.wikidata.org" in url:
+            return _FakeResponse(_sparql_response("John Kasich"))
+        raise AssertionError(f"unexpected url: {url}")
+
+    provider = WikidataProvider(opener=opener, sleep=lambda s: None, min_interval_sec=0.0)
+    results = provider.search("Who was governor of Ohio in 2011?")
+
+    assert any("2011-12-31" in url for url in searched_urls)
+    assert len(results) == 1
+    assert results[0].snippet == "The officeholder of Governor of Ohio in 2011 was John Kasich."
 
 
 def test_search_resolves_qid_when_sparql_label_service_returns_id():
