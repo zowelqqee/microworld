@@ -1,0 +1,327 @@
+{
+  "version": "1",
+  "description": "Deterministic dialogue-context benchmark: scripted sessions asserted against resolver traces (bindings, outcomes, margins, exact integer scores, topic). False resolution = build failure; justified audit never is.",
+  "sessions": [
+    {
+      "id": "canonical_spacex_flow",
+      "description": "The six-turn flow from the design brief: pronouns, exclusion, topic shift, typed demonstrative.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Tesla": "organization", "Starlink": "organization", "Neuralink": "organization", "PayPal": "organization", "Elon Musk": "person", "Jeff Bezos": "person", "Falcon 9": "vehicle"},
+        "surfaces": {"Musk": "Elon Musk", "Bezos": "Jeff Bezos"},
+        "facts": [
+          ["SpaceX", "founded_by", "Elon Musk"],
+          ["Tesla", "founded_by", "Elon Musk"],
+          ["Neuralink", "founded_by", "Elon Musk"],
+          ["PayPal", "founded_by", "Elon Musk"],
+          ["Starlink", "founded_by", "Elon Musk"],
+          ["Blue Origin", "founded_by", "Jeff Bezos"],
+          ["SpaceX", "develops", "Falcon 9"],
+          ["Blue Origin", "develops", "New Shepard"],
+          ["Starlink", "owned_by", "SpaceX"],
+          ["Starlink", "develops", "satellite internet"]
+        ]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots", "topic_after": "SpaceX", "decision": "answer"}},
+        {"q": "What does it build?", "expect": {"outcome": "resolved", "bindings": {"it": ["SpaceX"]}, "top_scores": {"SpaceX": 191}, "decision": "answer"}},
+        {"q": "Who founded it?", "expect": {"outcome": "resolved", "bindings": {"it": ["SpaceX"]}, "top_scores": {"SpaceX": 204}, "margin_min": 25, "decision": "answer"}},
+        {"q": "What else did he found?", "expect": {"outcome": "resolved", "bindings": {"he": ["Elon Musk"]}, "exclude": ["SpaceX"], "decision": "answer"}},
+        {"q": "What about Starlink?", "expect": {"outcome": "resolved", "topic_after": "Starlink", "answer_style": "followup", "decision": "answer"}},
+        {"q": "What does that company develop?", "expect": {"outcome": "resolved", "bindings": {"that company": ["Starlink"]}, "top_scores": {"Starlink": 194, "SpaceX": 13}, "margin_min": 25, "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "topic_shift_then_pronoun",
+      "description": "Requirement 3: after 'What about Tesla?' the pronoun follows the new topic.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Tesla": "organization", "Elon Musk": "person"},
+        "surfaces": {"Musk": "Elon Musk"},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"], ["Tesla", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots", "topic_after": "SpaceX"}},
+        {"q": "What about Tesla?", "expect": {"outcome": "resolved", "topic_after": "Tesla", "answer_style": "followup"}},
+        {"q": "Who founded it?", "expect": {"outcome": "resolved", "bindings": {"it": ["Tesla"]}, "top_scores": {"Tesla": 191, "SpaceX": 19}, "margin_min": 25, "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "multi_entity_comparison",
+      "description": "Requirement 4: two tracked companies, selective reference, graph question, contrastive.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Starlink": "organization", "Elon Musk": "person", "Jeff Bezos": "person"},
+        "surfaces": {"Musk": "Elon Musk", "Bezos": "Jeff Bezos"},
+        "facts": [
+          ["SpaceX", "founded_by", "Elon Musk"],
+          ["Blue Origin", "founded_by", "Jeff Bezos"],
+          ["SpaceX", "develops", "reusable rockets"],
+          ["Blue Origin", "develops", "New Shepard"],
+          ["Starlink", "owned_by", "SpaceX"]
+        ]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots", "topic_after": "SpaceX"}},
+        {"q": "Tell me about Blue Origin.", "expect": {"outcome": "no_slots", "topic_after": "Blue Origin"}},
+        {"q": "Which one develops reusable rockets?", "expect": {"outcome": "resolved", "selective_set": ["Blue Origin", "SpaceX"], "top_scores": {"Blue Origin": 191, "SpaceX": 19}, "decision": "answer"}},
+        {"q": "Which company owns Starlink?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "Who founded the other one?", "expect": {"outcome": "resolved", "bindings": {"the other one": ["Blue Origin"]}, "topic_after": "Blue Origin", "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "ambiguous_pronoun_audits",
+      "description": "Requirement 8: near-tied candidates must audit, with both candidates in the trace.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Compare SpaceX and Blue Origin.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Who founded it?", "expect": {"outcome": "unresolved", "unresolved_slot": {"surface": "it", "slot_outcome": "ambiguous"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "cold_start_pronoun_audits",
+      "description": "A pronoun with no dialogue history has no candidates: audit, never guess.",
+      "world": {
+        "entities": {"SpaceX": "organization"},
+        "surfaces": {},
+        "facts": []
+      },
+      "turns": [
+        {"q": "Who founded it?", "expect": {"outcome": "unresolved", "unresolved_slot": {"surface": "it", "slot_outcome": "no_candidate"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "plural_two_active",
+      "description": "'They' resolves only when exactly two entities are active.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization"},
+        "surfaces": {},
+        "facts": [["SpaceX", "develops", "Falcon 9"], ["Blue Origin", "develops", "New Shepard"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Blue Origin.", "expect": {"outcome": "no_slots"}},
+        {"q": "What do they develop?", "expect": {"outcome": "resolved", "bindings": {"they": ["Blue Origin", "SpaceX"]}, "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "plural_three_ambiguous",
+      "description": "Three active entities make 'they' ambiguous: audit.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Tesla": "organization"},
+        "surfaces": {},
+        "facts": []
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Blue Origin.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Tesla.", "expect": {"outcome": "no_slots"}},
+        {"q": "What do they develop?", "expect": {"outcome": "unresolved", "unresolved_slot": {"surface": "they", "slot_outcome": "ambiguous"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "selective_overflow_audits",
+      "description": "'Which one' over more than SELECTIVE_MAX active candidates audits instead of running a wide filter.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Tesla": "organization", "Neuralink": "organization", "PayPal": "organization"},
+        "surfaces": {},
+        "facts": [["SpaceX", "develops", "reusable rockets"]]
+      },
+      "turns": [
+        {"q": "Note SpaceX.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Note Blue Origin.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Note Tesla.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Note Neuralink.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Note PayPal.", "expect": {"outcome": "no_slots", "decision": "audit"}},
+        {"q": "Which one develops reusable rockets?", "expect": {"outcome": "unresolved", "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "contrastive_no_survivor_audits",
+      "description": "'The other one' with only one entity ever discussed has no survivor: audit.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots"}},
+        {"q": "Who founded the other one?", "expect": {"outcome": "unresolved", "unresolved_slot": {"slot_outcome": "no_candidate"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "role_descriptor_dialogue_pass",
+      "description": "'The founder' resolves to the entity that entered the dialogue as that answer — no graph read needed.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {"Musk": "Elon Musk"},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots"}},
+        {"q": "Who founded it?", "expect": {"outcome": "resolved", "bindings": {"it": ["SpaceX"]}, "decision": "answer"}},
+        {"q": "Where was the founder born?", "expect": {"outcome": "resolved", "bindings": {"the founder": ["Elon Musk"]}, "strategy": "dialogue_role"}}
+      ]
+    },
+    {
+      "id": "role_descriptor_graph_pass",
+      "description": "With no dialogue role on record, a single graph-verified founder resolves; the trace marks the graph read.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {"Musk": "Elon Musk"},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots"}},
+        {"q": "Where was the founder born?", "expect": {"outcome": "resolved", "bindings": {"the founder": ["Elon Musk"]}, "strategy": "graph_verified"}}
+      ]
+    },
+    {
+      "id": "role_descriptor_graph_ambiguous",
+      "description": "Two graph-verified founders: 'the founder' is ambiguous, audit with both candidates.",
+      "world": {
+        "entities": {"PayPal": "organization", "Elon Musk": "person", "Peter Thiel": "person"},
+        "surfaces": {},
+        "facts": [["PayPal", "founded_by", "Elon Musk"], ["PayPal", "founded_by", "Peter Thiel"]]
+      },
+      "turns": [
+        {"q": "Tell me about PayPal.", "expect": {"outcome": "no_slots"}},
+        {"q": "Where was the founder born?", "expect": {"outcome": "unresolved", "unresolved_slot": {"slot_outcome": "ambiguous"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "elliptical_topic",
+      "description": "Subjectless 'Who founded?' inherits the active topic via a virtual binding.",
+      "world": {
+        "entities": {"Starlink": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["Starlink", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about Starlink.", "expect": {"outcome": "no_slots", "topic_after": "Starlink"}},
+        {"q": "Who founded?", "expect": {"outcome": "resolved", "bindings": {"": ["Starlink"]}, "answer_style": "followup", "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "elliptical_cold_audits",
+      "description": "Subjectless question with no topic: audit.",
+      "world": {
+        "entities": {"SpaceX": "organization"},
+        "surfaces": {},
+        "facts": []
+      },
+      "turns": [
+        {"q": "Who founded?", "expect": {"outcome": "unresolved", "unresolved_slot": {"slot_outcome": "no_candidate"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "russian_controlled_forms",
+      "description": "Russian ellipsis and pronoun forms through the same closed grammar.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Tesla": "organization", "Neuralink": "organization", "Elon Musk": "person"},
+        "surfaces": {"Маск": "Elon Musk"},
+        "facts": [
+          ["SpaceX", "founded_by", "Elon Musk"],
+          ["Tesla", "founded_by", "Elon Musk"],
+          ["Neuralink", "founded_by", "Elon Musk"]
+        ]
+      },
+      "turns": [
+        {"q": "Расскажи про SpaceX.", "expect": {"outcome": "no_slots", "topic_after": "SpaceX", "decision": "answer"}},
+        {"q": "А кто основал?", "expect": {"outcome": "resolved", "bindings": {"": ["SpaceX"]}, "answer_style": "followup", "decision": "answer"}},
+        {"q": "Что ещё он основал?", "expect": {"outcome": "resolved", "bindings": {"он": ["Elon Musk"]}, "exclude": ["SpaceX"], "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "exhausted_exclusion_says_no",
+      "description": "'What else' with every known fact already surfaced answers an honest 'no', not an audit.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Who founded SpaceX?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "What else did he found?", "expect": {"outcome": "resolved", "bindings": {"he": ["Elon Musk"]}, "exclude": ["SpaceX"], "decision": "no"}}
+      ]
+    },
+    {
+      "id": "recent_answer_beats_stale_sticky",
+      "description": "A freshly surfaced person outweighs a stale sticky referent by a clear margin.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Blue Origin": "organization", "Elon Musk": "person", "Jeff Bezos": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"], ["Blue Origin", "founded_by", "Jeff Bezos"]]
+      },
+      "turns": [
+        {"q": "Who founded SpaceX?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "What else did he found?", "expect": {"outcome": "resolved", "bindings": {"he": ["Elon Musk"]}, "decision": "no"}},
+        {"q": "Who founded Blue Origin?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "Where was he born?", "expect": {"outcome": "resolved", "bindings": {"he": ["Jeff Bezos"]}, "margin_min": 25}}
+      ]
+    },
+    {
+      "id": "decay_eviction_audits",
+      "description": "Requirement 5: an entity idle for EVICT_AFTER_TURNS confirmed turns is evicted and stops resolving.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Tesla": "organization", "Blue Origin": "organization", "Starlink": "organization", "Neuralink": "organization", "PayPal": "organization", "Boring Company": "organization", "OpenAI": "organization", "Zip2": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Who founded SpaceX?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "Tell me about Tesla.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Blue Origin.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Starlink.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Neuralink.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about PayPal.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Boring Company.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about OpenAI.", "expect": {"outcome": "no_slots"}},
+        {"q": "Tell me about Zip2.", "expect": {"outcome": "no_slots"}},
+        {"q": "Where was he born?", "expect": {"outcome": "unresolved", "unresolved_slot": {"surface": "he", "slot_outcome": "no_candidate"}, "decision": "audit"}}
+      ]
+    },
+    {
+      "id": "audit_turns_freeze_decay",
+      "description": "Audit turns do not advance the decay clock: after three failed follow-ups the topic still scores fresh.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "develops", "Falcon 9"], ["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "Tell me about SpaceX.", "expect": {"outcome": "no_slots", "topic_after": "SpaceX"}},
+        {"q": "Who founded the other one?", "expect": {"outcome": "unresolved", "decision": "audit"}},
+        {"q": "Who founded the other one?", "expect": {"outcome": "unresolved", "decision": "audit"}},
+        {"q": "Who founded the other one?", "expect": {"outcome": "unresolved", "decision": "audit"}},
+        {"q": "What does it develop?", "expect": {"outcome": "resolved", "bindings": {"it": ["SpaceX"]}, "top_scores": {"SpaceX": 161}, "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "bare_demonstrative_follows_answer_focus",
+      "description": "'Tell me more about that' follows the last answer's new information, not the question subject.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Falcon 9": "vehicle"},
+        "surfaces": {},
+        "facts": [["SpaceX", "develops", "Falcon 9"]]
+      },
+      "turns": [
+        {"q": "What does SpaceX develop?", "expect": {"outcome": "no_slots", "decision": "answer"}},
+        {"q": "Tell me more about that", "expect": {"outcome": "resolved", "bindings": {"that": ["Falcon 9"]}, "topic_after": "Falcon 9", "decision": "answer"}}
+      ]
+    },
+    {
+      "id": "intra_turn_anaphora",
+      "description": "A pronoun after an entity named in the same question resolves without any dialogue history.",
+      "world": {
+        "entities": {"SpaceX": "organization", "Elon Musk": "person"},
+        "surfaces": {},
+        "facts": [["SpaceX", "founded_by", "Elon Musk"]]
+      },
+      "turns": [
+        {"q": "SpaceX builds rockets, but who founded it?", "expect": {"outcome": "resolved", "bindings": {"it": ["SpaceX"]}, "decision": "answer"}}
+      ]
+    }
+  ]
+}

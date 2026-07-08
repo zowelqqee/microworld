@@ -299,10 +299,16 @@ def _entity_mentions(
     index: EntitySurfaceIndex,
 ) -> list[tuple[str, str, int, int]]:
     mentions = index.find_in_text(question)
+    # Dialogue-v2 bound spans are resolver decisions, not surface matches —
+    # they are exempt from the partial-title heuristic ("its" followed by a
+    # capitalized product name is still the bound entity).
+    is_bound_span = getattr(index, "is_bound_span", None)
     out: list[tuple[str, str, int, int]] = []
     seen: set[str] = set()
     for surface, canonical, start, end in sorted(mentions, key=lambda row: row[2]):
-        if _looks_like_partial_title_match(question, surface, start, end):
+        if is_bound_span is not None and is_bound_span(start, end):
+            pass
+        elif _looks_like_partial_title_match(question, surface, start, end):
             continue
         if canonical in seen:
             continue

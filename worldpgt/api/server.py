@@ -44,6 +44,15 @@ from worldpgt.assistant_surface.types import (
 from worldpgt.dialogue.conversation_context import ConversationContext, ConversationTurn
 from worldpgt.dialogue.coreference_resolver import resolve_coreferences
 from worldpgt.dialogue.followup_rewriter import rewrite_followup
+from worldpgt.dialogue.resolver import ResolvedQuestion, resolve_question
+from worldpgt.dialogue.serving import (
+    OverlayGraphReader,
+    build_turn_record,
+    dialogue_mode,
+    serialize_bindings,
+    unresolved_answer_text,
+)
+from worldpgt.dialogue.state import DialogueState
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.multihop_qa.assistant_adapter import try_answer_multihop
 from worldpgt.reasoning.pattern_discovery import PatternIndex, build_pattern_index
@@ -85,6 +94,13 @@ _inference_workspace: InferenceWorkspace | None = None
 _graph_patterns: list[GraphPattern] = []
 _pattern_index: PatternIndex | None = None
 _sessions: dict[str, ConversationContext] = {}
+# Dialogue v2 (explicit DialogueState) — runs per MICROWORLD_DIALOGUE_V2:
+#   off    → v1 only;
+#   shadow → v1 drives responses, v2 resolves + commits in parallel (default);
+#   on     → v2 drives resolution; v1 context still recorded for rollback.
+_sessions_v2: dict[str, DialogueState] = {}
+_dialogue_traces: dict[str, dict] = {}  # session_id → last turn's v2 trace
+_graph_reader: OverlayGraphReader | None = None
 _community_context_path: str | None = None
 _community_context_count: int = 0
 _community_context_provider: FileCommunityContextProvider | None = None
@@ -124,6 +140,9 @@ class AskResponse(BaseModel):
     resolved_references: list[str]
     session_id: str
     thinking: Optional[str] = None
+    # Full dialogue-v2 resolution trace (slots, candidates, scores, margins).
+    # Populated only when MICROWORLD_DIALOGUE_V2=on.
+    dialogue: Optional[dict] = None
 
 
 # --------------------------------------------------------------------------- #
@@ -172,23 +191,53 @@ def ask(req: AskRequest) -> AskResponse:
 
     session_id = req.session_id or str(uuid.uuid4())
     context = _sessions.setdefault(session_id, ConversationContext())
+    mode = dialogue_mode()
 
-    # Coreference resolution against conversation history.
-    with _timed_step("server.coref_resolve"):
-        resolution = resolve_coreferences(req.question, context, _surface_index)
-    with _timed_step("server.followup_rewrite"):
-        followup = rewrite_followup(resolution.resolved_question, context, _surface_index)
-    effective_question = followup.resolved_question
+    # Dialogue v2: explicit-state resolution (pure function of the question
+    # and the committed DialogueState; state mutates only in the commit step).
+    state_v2: DialogueState | None = None
+    resolved_v2: ResolvedQuestion | None = None
+    if mode != "off":
+        state_v2 = _sessions_v2.setdefault(session_id, DialogueState())
+        with _timed_step("server.dialogue_resolve"):
+            resolved_v2 = resolve_question(req.question, state_v2, _surface_index, _graph_reader)
+
+    if mode == "on":
+        assert resolved_v2 is not None
+        effective_question = (
+            req.question
+            if resolved_v2.outcome == "unresolved" or resolved_v2.directives.selective_set
+            else serialize_bindings(req.question, resolved_v2)
+        )
+        answer_style = resolved_v2.directives.answer_style
+        resolved_refs = resolved_v2.resolved_references
+    else:
+        # v1 path drives responses in off and shadow modes.
+        with _timed_step("server.coref_resolve"):
+            resolution = resolve_coreferences(req.question, context, _surface_index)
+        with _timed_step("server.followup_rewrite"):
+            followup = rewrite_followup(resolution.resolved_question, context, _surface_index)
+        effective_question = followup.resolved_question
+        answer_style = followup.answer_style
+        resolved_refs = [
+            f"[{item.reference} → {item.display_target}]"
+            for item in resolution.replacements
+        ]
+        if mode == "shadow" and resolved_v2 is not None:
+            _log_shadow_divergence(session_id, req.question, effective_question, resolved_v2)
+
     with _timed_step("server.semantic_parse"):
         semantic_query = parse_semantic_query(effective_question, _surface_index)
 
-    resolved_refs = [
-        f"[{item.reference} → {item.display_target}]"
-        for item in resolution.replacements
-    ]
-
-    # Audit immediately if reference cannot be resolved.
-    if (
+    # Audit immediately if a dialogue reference cannot be resolved.
+    if mode == "on" and resolved_v2 is not None and resolved_v2.outcome == "unresolved":
+        answer = _unresolved_dialogue_v2_answer(req.question, resolved_v2)
+    elif mode == "on" and resolved_v2 is not None and resolved_v2.directives.selective_set:
+        # Selective references ("which one …?") need planner support to run
+        # as a filter over the candidate set; until then audit honestly with
+        # the candidates listed rather than mis-parse the question.
+        answer = _selective_reference_answer(req.question, resolved_v2)
+    elif mode != "on" and (
         resolution.unresolved_reference is not None
         and semantic_query.entity_a is None
         and semantic_query.entity_b is None
@@ -200,7 +249,7 @@ def ask(req: AskRequest) -> AskResponse:
         with _timed_step("server.orchestrator_answer"):
             answer = _orchestrator.answer(
                 effective_question,
-                answer_style=followup.answer_style,
+                answer_style=answer_style,
                 web_search_enabled=req.web_search,
                 community_context_enabled=req.community_context,
                 cognitive_patterns_enabled=req.cognitive_patterns,
@@ -254,9 +303,14 @@ def ask(req: AskRequest) -> AskResponse:
         with _timed_step("server.think_aloud"):
             thinking, answer_text = _think_aloud(req.question, answer, multihop)
 
-    # Record turn for future coreference resolution.
+    # Record turn for future coreference resolution (v1 context is kept
+    # up-to-date in every mode so flipping the flag never loses a session).
     with _timed_step("server.record_turn"):
         _record_turn(context, question=req.question, semantic_query=semantic_query, answer=answer)
+
+    if state_v2 is not None and resolved_v2 is not None:
+        with _timed_step("server.dialogue_commit"):
+            _commit_dialogue_v2(session_id, state_v2, req.question, resolved_v2, semantic_query, answer)
 
     return AskResponse(
         decision=answer.decision,
@@ -265,7 +319,23 @@ def ask(req: AskRequest) -> AskResponse:
         resolved_references=resolved_refs,
         session_id=session_id,
         thinking=thinking,
+        dialogue=resolved_v2.to_dict() if (mode == "on" and resolved_v2 is not None) else None,
     )
+
+
+@app.get("/session/{session_id}/state")
+def session_state(session_id: str) -> dict:
+    """Full dialogue-v2 state for a session — the 'everything inspectable'
+    requirement made concrete. Safe: state holds only canonical entity names
+    and turn indices, never facts."""
+
+    state = _sessions_v2.get(session_id)
+    return {
+        "session_id": session_id,
+        "dialogue_mode": dialogue_mode(),
+        "state": state.to_dict() if state is not None else None,
+        "last_trace": _dialogue_traces.get(session_id),
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -349,6 +419,94 @@ def _unresolved_reference_answer(question: str, overlay_mode: str, reference: st
         source_system="dialogue_context",
         safe_for_general_runtime=False,
     )
+
+
+def _unresolved_dialogue_v2_answer(question: str, resolved: ResolvedQuestion) -> AssistantAnswer:
+    return AssistantAnswer(
+        question=question,
+        decision="audit",
+        route="unknown_or_unsupported",
+        answer_text=unresolved_answer_text(resolved),
+        overlay_mode=_overlay_mode,
+        supported_by_context=False,
+        support_kind="missing_knowledge",
+        source_system="dialogue_context_v2",
+        safe_for_general_runtime=False,
+    )
+
+
+def _selective_reference_answer(question: str, resolved: ResolvedQuestion) -> AssistantAnswer:
+    candidates = ", ".join(resolved.directives.selective_set)
+    return AssistantAnswer(
+        question=question,
+        decision="audit",
+        route="unknown_or_unsupported",
+        answer_text=(
+            "selective_dialogue_reference: this question selects among active "
+            f"dialogue entities ({candidates}); ask about one of them directly"
+        ),
+        overlay_mode=_overlay_mode,
+        supported_by_context=False,
+        support_kind="missing_knowledge",
+        source_system="dialogue_context_v2",
+        safe_for_general_runtime=False,
+    )
+
+
+def _log_shadow_divergence(
+    session_id: str,
+    question: str,
+    v1_effective: str,
+    resolved_v2: ResolvedQuestion,
+) -> None:
+    """Shadow mode: log where v2 would diverge from the serving v1 path."""
+
+    if resolved_v2.outcome == "no_slots" and v1_effective == question:
+        return
+    v2_effective = (
+        question if resolved_v2.outcome == "unresolved"
+        else serialize_bindings(question, resolved_v2)
+    )
+    marker = "match" if v2_effective == v1_effective else "DIVERGENCE"
+    print(
+        f"[dialogue_v2.shadow] {marker} session={session_id} q={question!r} "
+        f"v1={v1_effective!r} v2={v2_effective!r} outcome={resolved_v2.outcome}",
+        flush=True,
+    )
+
+
+def _commit_dialogue_v2(
+    session_id: str,
+    state_v2: DialogueState,
+    question: str,
+    resolved_v2: ResolvedQuestion,
+    semantic_query,
+    answer: AssistantAnswer,
+) -> None:
+    answer_text_entities: list[str] = []
+    hints: dict[str, str] = {}
+    if answer.decision != "audit":
+        answer_text_entities = _dedupe([
+            canonical
+            for _s, canonical, _st, _e in _surface_index.find_in_text(answer.answer_text)
+        ])
+        if answer.support_kind == "web_search_result":
+            hint = _web_search_entity_hint(answer.answer_text)
+            if hint:
+                name, entity_type = hint
+                hints[name] = entity_type
+                answer_text_entities = _dedupe([name] + answer_text_entities)
+    record = build_turn_record(
+        question=question,
+        resolved=resolved_v2,
+        semantic_query=semantic_query,
+        answer=answer,
+        surface_index=_surface_index,
+        answer_text_entities=answer_text_entities,
+        entity_type_hints=hints,
+    )
+    state_v2.commit(record)
+    _dialogue_traces[session_id] = resolved_v2.to_dict()
 
 
 def _patch_decision(answer: AssistantAnswer, decision: str) -> AssistantAnswer:
@@ -523,7 +681,7 @@ def _startup(
     cognitive_patterns_path: str | None = None,
 ) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
-    global _inference_workspace, _graph_patterns, _pattern_index
+    global _inference_workspace, _graph_patterns, _pattern_index, _graph_reader
     global _resolved_overlay_path, _startup_overlay_mode, _startup_overlay_path, _overlay_mtime
     global _community_context_path, _community_context_count, _community_context_provider
     global _cognitive_patterns_path, _cognitive_patterns_count, _cognitive_pattern_provider
@@ -538,6 +696,9 @@ def _startup(
 
     _overlay_items = _load_overlay_items(resolved_path)
     _fact_count = len(_overlay_items)
+    # Read-only role-holder lookup for dialogue-v2 role descriptors
+    # ("the founder"); built once from the loaded overlay.
+    _graph_reader = OverlayGraphReader(_overlay_items)
     # Inference workspace and pattern index are the expensive (O(overlay
     # size)) structures the reasoning layer and synthesis used to rebuild on
     # every single request — compute them once here and hand the same
