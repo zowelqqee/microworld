@@ -1,14 +1,15 @@
 # Microworld
 
-Microworld is testing a narrower approach to AI: explicit memory, explicit
-reasoning, and controlled text generation instead of opaque next-token
-prediction.
+Microworld is testing a narrower alternative to the usual LLM stack: explicit
+world memory, explicit reasoning, and a separately trained speech layer instead
+of one opaque next-token model doing facts, reasoning, style, and safety at the
+same time.
 
-The current system is not AI in general. It is not an LLM replacement, does not
-claim open-domain understanding, and should be read as a bounded research
-system: a local, auditable QA engine that answers only when it can point to
-controlled memory, and audits when the question would require unsupported
-inference, live data, or unsafe promotion of weak context.
+The current system is not AGI and not an open-domain replacement for modern
+LLMs. It is a bounded research system: a local, auditable QA/speech engine that
+answers only when it can point to controlled memory, says `audit` when support
+is missing, and keeps factual memory separate from language style, community
+patterns, live search, and session context.
 
 The research question is:
 
@@ -19,8 +20,52 @@ instead of hidden model weights?
 ```
 
 The current answer is: partially yes, inside bounded explicit-memory domains.
+The important new result is that the answer surface is now measured separately
+from factual coverage: speech can be tested, improved, and stress-tested without
+pretending that a phrase model is factual memory.
 
 ## Snapshot
+
+Latest speech/reasoning snapshot, from
+`worldpgt/experiments/benchmarks/speech_quality_stress_20260708T163840Z.json`:
+
+| Metric | Large suite | Stress suite |
+|---|---:|---:|
+| Questions | 50 | 1,000 |
+| Passed | 50 / 50 | 1,000 / 1,000 |
+| Quality rate | 100.0% | 100.0% |
+| Honest gap rate | 9 / 9 | 171 / 171 |
+| Debug-like output | 0 | 0 |
+| Repetitive output | 0 | 0 |
+| Decision drift | 0 | 0 |
+| Missing required text | 0 | 0 |
+| Latency p50 | 4.82 ms | 8.03 ms |
+| Latency p95 | 30.43 ms | 29.56 ms |
+| Latency p99 | 32.91 ms | 35.77 ms |
+
+The stress suite is a deterministic 1,000-question speech benchmark over known
+categories, not 1,000 independent open-domain facts. Its purpose is to measure
+the user-facing speech/reasoning surface under load: profiles, thin profiles,
+mechanism gaps, direct relations, connection paths, adversarial inversions,
+current/live requests, private-info requests, unsupported universal claims, and
+style control.
+
+Current community/speech-pattern snapshot, from
+`worldpgt/experiments/community_context_v1/reddit_community_summary.json`:
+
+| Artifact | Count / status |
+|---|---:|
+| Local Reddit/Hacker News-like input records | 371 |
+| Accepted community-context items | 371 |
+| Cognitive pattern events | 428 |
+| Quarantined in final context build | 0 |
+| Factual support allowed from community layer | false |
+| Accepted/promoted/snapshot overlays modified | false |
+
+The 428 cognitive pattern events are behavior/style patterns, not facts:
+`analogy_pattern` 99, `explanation_pattern` 87, `mistake_pattern` 74,
+`style_tone_pattern` 69, `question_pattern` 46, `procedure_pattern` 27,
+`uncertainty_pattern` 25, and `debugging_pattern` 1.
 
 Current local pump snapshot, from
 `worldpgt/experiments/knowledge_pump_v1/pump_summary.json` unless noted:
@@ -55,15 +100,20 @@ hardware:      Apple M1, 8 GB RAM, no GPU
 10x data:      8.7 ms latency (+5%)
 ```
 
-These are local snapshots, not a general product benchmark. The useful signal
-is the shape: indexed explicit-memory lookup stays close to constant-time for
-the tested overlay scale, runs offline, and does not need a GPU or API calls.
+These are local snapshots, not general product benchmarks. The useful signal is
+the shape: indexed explicit-memory lookup stays close to constant-time for the
+tested overlay scale, the speech layer does not degrade at 1,000 benchmark
+questions, and the system can run without a GPU or model API on supported
+memory-backed questions.
 
 ## Table Of Contents
 
 - [What It Is](#what-it-is)
 - [What It Is Not](#what-it-is-not)
 - [Text Generation Experiment](#text-generation-experiment)
+- [Speech And Reasoning Layer](#speech-and-reasoning-layer)
+- [Community Speech And Cognitive Patterns](#community-speech-and-cognitive-patterns)
+- [Optional Live Web Search](#optional-live-web-search)
 - [Architecture](#architecture)
 - [Runtime QA Flow](#runtime-qa-flow)
 - [Knowledge Pump](#knowledge-pump)
@@ -73,6 +123,7 @@ the tested overlay scale, runs offline, and does not need a GPU or API calls.
 - [Examples](#examples)
 - [Dialogue](#dialogue)
 - [Answer Styles](#answer-styles)
+- [Speech Quality Benchmarks](#speech-quality-benchmarks)
 - [Performance](#performance)
 - [Current Artifacts](#current-artifacts)
 - [Run It](#run-it)
@@ -142,6 +193,132 @@ accepted memory, an accepted overlay, or a clearly labelled proposal/snapshot
 source. This is an experiment in controlled text generation, not open-domain
 language modeling and not a neural model replacement.
 
+## Speech And Reasoning Layer
+
+The current breakthrough is not that Microworld "knows everything." It does
+not. The stronger result is architectural: facts, reasoning, and speech are now
+separate enough to test independently.
+
+```text
+facts / overlay rows
+  -> semantic speech plan
+  -> explicit reasoning trace
+  -> action plan: answer / answer_with_gap / audit / no
+  -> speech renderer
+  -> surface validator + benchmark metrics
+```
+
+The reasoning layer operates over an already-built speech plan. It does not
+query raw memory, invent facts, or decide truth. Its job is to make the answer
+decision inspectable:
+
+- detect whether the user is asking for a profile, relation, path, or mechanism
+- decompose the task into subgoals
+- check whether required evidence roles exist
+- name missing evidence, especially mechanism gaps
+- choose an action such as `answer`, `answer_with_gap`, or `ask_clarification`
+- forbid unsupported claims from entering speech
+
+The speech layer then turns that bounded reasoning state into ordinary English.
+It can say a useful partial answer such as "I can identify Starlink, but I do
+not yet have the mechanism" without pretending it knows how Starlink works.
+
+Important modules:
+
+| Layer | Code | Role |
+|---|---|---|
+| Assistant orchestrator | `worldpgt/assistant_surface/answer_orchestrator.py` | routes question, chooses QA/search/community path, attaches traces |
+| Style normalizer | `worldpgt/assistant_surface/answer_style.py` | handles brief/simple/detailed style requests without changing facts |
+| Speech planner | `worldpgt/entity_qa/semantic_speech_planner.py` | turns supported facts into roles such as definition, activity, purpose, mechanism |
+| Reasoning engine | `worldpgt/cognition/reasoning_engine.py` | builds explicit reasoning trace and action plan |
+| Thought loop | `worldpgt/cognition/thought_loop.py` | rejects unsupported direct mechanism answers and accepts gap fallback |
+| Deliberation/support guard | `worldpgt/cognition/deliberation_engine.py`, `support_guard.py` | prevents unsupported conclusions |
+| Decision speech | `worldpgt/cognition/decision_surface.py` | human-facing phrasing for gaps, thin profiles, and clarification |
+| Symbolic speech renderer | `worldpgt/entity_qa/symbolic_text_generator.py` | emits bounded English from the speech plan |
+| Phrase graph | `worldpgt/cognition/phrase_graph.py` | learns deterministic phrase fragments and transitions from local artifacts |
+| Surface selection | `worldpgt/cognition/surface_selection.py` | rejects debug-like/repetitive variants and chooses cleaner speech |
+| Semantic thought graph | `worldpgt/cognition/semantic_thought_graph.py` | graph-native cognitive moves over task/evidence/gap/pattern nodes |
+
+This is why `How does Starlink work?` can honestly answer with a gap: the
+system has enough facts to identify Starlink and its service, but no admitted
+mechanism evidence role. The answer is useful because it separates "what I
+know" from "what I do not know."
+
+## Community Speech And Cognitive Patterns
+
+Microworld now has a low-trust community layer built from local
+Reddit/Hacker News-like records. This layer is deliberately not factual memory.
+It is for speech habits, common questions, examples, and reusable cognitive
+patterns.
+
+```text
+local Reddit/HN-like records
+  -> classifier / quarantine
+  -> reddit_community_context.json
+  -> reddit_speaking_profile.json
+  -> cognitive_pattern_events.json
+  -> cognitive_pattern_graphs.json
+```
+
+Current artifact snapshot:
+
+```text
+input_records_count:             371
+accepted_context_items_count:    371
+cognitive_pattern_events_count:  428
+factual_support_allowed:         false
+accepted_overlay_modified:       false
+promoted_overlay_modified:       false
+snapshot_dry_run_overlay_modified: false
+```
+
+The key safety rule is simple:
+
+```text
+community context may shape how an answer is explained
+community context may not make a factual claim true
+```
+
+That is the same separation as the speech benchmark: learn how people ask,
+explain, debug, compare, and handle uncertainty, but keep factual support in
+accepted memory, overlays, source-qualified snapshots, or live-search results
+that are explicitly labelled as volatile.
+
+## Optional Live Web Search
+
+Microworld also has an optional live-search path for questions that ask for
+current or missing information. It is intentionally separate from memory.
+
+```text
+current/live question
+  -> safety route
+  -> optional web search provider
+  -> answer extraction / relevance filter
+  -> rendered with "live web search, volatile" disclosure
+  -> never promoted into accepted memory
+```
+
+The default composite provider races Wikipedia, Wikidata, and optional Claude
+web search under one deadline. It uses query-intent filtering, source relevance,
+temporal checks, and a TTL live cache so repeated entity questions can reuse
+retrieved text without treating it as trusted memory.
+
+This path is useful, but it is not the same achievement as the controlled
+speech/reasoning layer. The latest saved WebQuestions-style open benchmark is
+still weak and intentionally documented as experimental:
+
+```text
+external_20260706T203034Z.json
+total_questions: 250
+answer_rate:     42.0%
+audit_rate:      58.0%
+precision:       28.57% among answered rows
+elapsed:         1878.23s
+```
+
+So the honest status is: live search exists, is safer than a generic fallback,
+and is improving, but it is not yet a strong open-domain QA result.
+
 ## Architecture
 
 ```mermaid
@@ -152,7 +329,9 @@ flowchart TD
     P --> A["Entity / Query / Multi-hop Planner"]
     A --> E["Deterministic Executor"]
     E --> S["Safety + Support Gate"]
-    S -->|supported| Render["Renderer / Speech Planner"]
+    S -->|supported| SP["Semantic Speech Plan"]
+    SP --> RE["Explicit Reasoning Trace"]
+    RE --> Render["Speech Renderer / Phrase Graph"]
     S -->|contradiction| No["Decision: no"]
     S -->|unsupported| Audit["Decision: audit"]
     Render --> Ans["Decision: answer"]
@@ -162,6 +341,8 @@ flowchart TD
     M3["promoted overlay"] --> C
     M4["pump dry-run overlay"] --> C
     O["read-only ontology layer"] --> A
+    CC["community context<br/>style/patterns only"] -. no facts .-> RE
+    WS["optional live web search<br/>volatile"] -. labelled source .-> S
 ```
 
 The high-level modules are:
@@ -171,6 +352,9 @@ The high-level modules are:
 | Assistant surface | `worldpgt/assistant_surface/` |
 | Web/API UI | `worldpgt/api/` |
 | Dialogue context | `worldpgt/dialogue/` |
+| Speech/reasoning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
+| Community patterns | `worldpgt/community_context/` |
+| Optional live search | `worldpgt/web_search/` |
 | Entity QA | `worldpgt/entity_qa/` |
 | Query primitives | `worldpgt/query_engine/` |
 | Multi-hop QA | `worldpgt/multihop_qa/` |
@@ -430,6 +614,65 @@ A: SpaceX is an aerospace manufacturer and space transportation company. It
    develops rockets, spacecraft, and launch vehicles.
 ```
 
+## Speech Quality Benchmarks
+
+`benchmark_speech_quality_v1.py` measures the answer surface, not factual
+coverage. It treats the factual planner as a knowledge-base lookup and checks
+whether speech stays natural, honest about gaps, non-repetitive, and free of
+debug/internal wording.
+
+It records row-level diagnostics:
+
+```text
+question
+decision / route / support_kind / source_system
+answer_text
+latency_ms
+debug_like
+repetitive
+honest_gap
+decision_mismatch
+missing_required_text
+flags
+```
+
+Current suites:
+
+| Suite | Purpose | Questions | Result |
+|---|---|---:|---:|
+| `smoke` | fast contract check | 12 | green |
+| `large` | broad speech/reasoning baseline | 50 | 50 / 50 |
+| `stress` | deterministic load/stability suite | 1,000 | 1,000 / 1,000 |
+
+Stress category coverage:
+
+| Category | Passed |
+|---|---:|
+| profile | 304 / 304 |
+| direct_relation | 162 / 162 |
+| mechanism_gap | 114 / 114 |
+| adversarial | 72 / 72 |
+| missing_or_current | 72 / 72 |
+| thin_profile | 57 / 57 |
+| style_control | 57 / 57 |
+| connection | 54 / 54 |
+| private_info | 54 / 54 |
+| unsupported_universal | 54 / 54 |
+
+Reproduce:
+
+```bash
+python3 -m worldpgt.experiments.benchmark_speech_quality_v1 --suite large
+python3 -m worldpgt.experiments.benchmark_speech_quality_v1 --suite stress
+python3 -m pytest worldpgt/tests/test_benchmark_speech_quality_v1.py -q
+```
+
+Saved report:
+
+```text
+worldpgt/experiments/benchmarks/speech_quality_stress_20260708T163840Z.json
+```
+
 ## Performance
 
 Microworld's hot path is mostly indexed lookup, deterministic planning, and
@@ -458,6 +701,19 @@ Local benchmark snapshot supplied with this README update:
 | GPU | none |
 | 10x data latency | 8.7 ms (+5%) |
 
+Latest speech stress snapshot:
+
+| Metric | Value |
+|---|---:|
+| questions | 1,000 |
+| quality_rate | 100.0% |
+| honest_gap_rate | 100.0% |
+| mean latency | 14.38 ms |
+| p50 latency | 8.03 ms |
+| p95 latency | 29.56 ms |
+| p99 latency | 35.77 ms |
+| max latency | 95.48 ms |
+
 The attached comparison snapshot estimates roughly `97x` lower latency than a
 GPT-4 API round trip on the tested bounded QA workload. The same estimate puts
 a local single-server deployment around `$50/month` versus `$10,000+/month` for
@@ -471,6 +727,15 @@ generation.
 Core status files:
 
 ```text
+worldpgt/experiments/benchmark_speech_quality_v1.py
+worldpgt/experiments/benchmarks/speech_quality_large_20260708T162944Z.json
+worldpgt/experiments/benchmarks/speech_quality_stress_20260708T163840Z.json
+worldpgt/experiments/community_context_v1/reddit_community_summary.json
+worldpgt/experiments/community_context_v1/reddit_community_context.json
+worldpgt/experiments/community_context_v1/reddit_speaking_profile.json
+worldpgt/experiments/community_context_v1/cognitive_pattern_events.json
+worldpgt/experiments/community_context_v1/cognitive_pattern_graphs.json
+worldpgt/experiments/benchmarks/external_20260706T203034Z.json
 worldpgt/experiments/knowledge_pump_v1/pump_summary.json
 worldpgt/experiments/knowledge_pump_v1/pump_fact_qa_v1/pump_fact_qa_summary.json
 worldpgt/experiments/knowledge_pump_v1/assistant/assistant_surface_summary.json
@@ -521,6 +786,26 @@ python3 worldpgt/experiments/run_knowledge_pump_v1.py \
   --frontier-policy yield-ranked
 ```
 
+Speech/reasoning benchmark:
+
+```bash
+python3 -m worldpgt.experiments.benchmark_speech_quality_v1 --suite stress
+```
+
+Community pattern pump:
+
+```bash
+python3 -m worldpgt.experiments.run_reddit_community_pump_v1
+```
+
+Open WebQuestions-style benchmark with optional live search:
+
+```bash
+python3 -m worldpgt.experiments.benchmark_external_v1 \
+  --overlay pump-dry-run \
+  --web-search
+```
+
 Gap-driven audit runner:
 
 ```bash
@@ -539,13 +824,14 @@ python3 -m pytest \
   -q
 
 python3 -m pytest worldpgt/tests/test_knowledge_pump_extraction_yield_v2.py -q
+python3 -m pytest worldpgt/tests/test_benchmark_speech_quality_v1.py -q
 ```
 
 Recent focused validation:
 
 ```text
-140 passed  # QA/router/dialogue/policy/synthesis focused set
-96 passed   # knowledge pump extraction v2
+141 passed  # assistant surface + synthesis + speech benchmark focused set
+16 passed   # benchmark_speech_quality_v1 test file
 ```
 
 ## Project Layout
@@ -554,8 +840,11 @@ Recent focused validation:
 worldpgt/
   api/                    FastAPI server and static QA UI
   assistant_surface/      orchestrator, router, context selector, styles
+  cognition/              reasoning traces, thought loop, phrase graph, graph moves
+  community_context/      Reddit/HN-style context and cognitive pattern memory
   dialogue/               in-memory conversation state and coreference
   entity_qa/              parser, analyzer, planner, renderer, synthesis
+  web_search/             optional volatile live-search providers and cache
   query_engine/           Find, Filter, Count, Compare, Traverse, Classify
   multihop_qa/            explicit relation-chain reasoning
   cross_page_qa/          controlled cross-page connection QA
@@ -596,12 +885,17 @@ Demonstrated in the current repository and preserved research artifacts:
 - ✓ Local QA latency (8ms p50)
 - ✓ Scalable indexed retrieval
 - ✓ Multi-hop explicit reasoning
+- ✓ Speech/reasoning surface measured separately from factual coverage
+- ✓ 1,000-question deterministic speech stress benchmark with 100% pass rate
+- ✓ Reddit/HN-style cognitive pattern memory that is blocked from factual support
+- ✓ Optional live-search path with volatile/source-labelled answers
 
 Not demonstrated:
 
 - Open-domain QA
 - General intelligence
 - Neural model replacement
+- Open-domain live-search precision competitive with modern LLM search tools
 
 ## Known Limits
 
@@ -610,9 +904,14 @@ Not demonstrated:
 - Entity identity is still surface/alias based, not QID-native.
 - Cross-sentence extraction coreference is intentionally conservative.
 - Live/current facts audit unless a dated source-qualified fact exists.
+- Live web search is optional, volatile, and currently weaker than the
+  controlled memory-backed path on open WebQuestions-style evaluation.
 - Pump outputs are proposal artifacts until explicitly promoted.
 - Weak context links are not answerable facts.
+- Speech stress results are over deterministic benchmark categories, not proof
+  of arbitrary conversational generalization.
 - Renderer quality is improving but still deterministic and bounded.
+- Reddit/HN community context teaches speech and cognitive patterns, not facts.
 - No autonomous trusted-memory promotion exists yet.
 - No durable scheduler service exists for night cycles; loops are script-driven.
 
@@ -628,9 +927,15 @@ Highest-leverage next steps:
 2. Rerun pump fact QA after overlay regeneration so summary counts stop drifting.
 3. Add a repeated latency benchmark artifact with median/min/max and workload
    description.
-4. Expand mechanism/purpose extraction carefully, one relation family at a time.
-5. Add QID-native identity to reduce alias and homonym collisions.
-6. Keep promotion explicit: proposal -> QA -> review -> promoted artifact, never
+4. Expand the 1,000-question stress benchmark with more paraphrase families,
+   then keep row-level failure diagnostics as the work queue.
+5. Connect cognitive pattern events more deeply to graph-selected moves while
+   keeping `factual_support_allowed=false`.
+6. Improve live-search precision before presenting it as a serious open-domain
+   result.
+7. Expand mechanism/purpose extraction carefully, one relation family at a time.
+8. Add QID-native identity to reduce alias and homonym collisions.
+9. Keep promotion explicit: proposal -> QA -> review -> promoted artifact, never
    silent accepted-memory mutation.
 
 ## Status

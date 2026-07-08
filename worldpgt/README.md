@@ -1,7 +1,13 @@
-# worldpgt - Microworld Controlled Continuation and QA
+# worldpgt - Microworld Controlled Continuation, QA, Reasoning, and Speech
 
 Explicit-policy, audit-aware continuation and QA system over deterministic
-memory, accepted facts, and isolated knowledge overlays.
+memory, accepted facts, isolated knowledge overlays, explicit reasoning traces,
+and a separately measured speech surface.
+
+For the current high-level project snapshot, including the latest 1,000-question
+speech stress benchmark and community/cognitive-pattern layer, see the root
+[`README.md`](../README.md). This package README preserves the older controlled
+QA/continuation details and adds the current assistant-surface status below.
 
 ---
 
@@ -25,10 +31,31 @@ interface to that world.
 ## Current Status
 
 Microworld currently demonstrates a lightweight, deterministic, auditable QA
-architecture over explicit memory and isolated knowledge overlays. It is strong
-on controlled benchmark domains, explicit memory, source-aware facts, safe
-abstention/audit, and low runtime cost. It is limited by narrow scope, curated
-inputs, rule/curriculum-based analyzers, and surface renderer quality.
+architecture over explicit memory and isolated knowledge overlays, plus a newer
+speech/reasoning layer where facts, reasoning, and wording are tested
+separately. It is strong on controlled benchmark domains, explicit memory,
+source-aware facts, safe abstention/audit, low runtime cost, and measured
+answer-surface behavior. It is limited by narrow scope, curated inputs,
+rule/curriculum-based analyzers, deterministic renderer coverage, and weak
+open-domain live-search precision.
+
+Latest assistant-surface snapshot:
+
+```text
+speech_quality_large_20260708T162944Z:  50 / 50 passed
+speech_quality_stress_20260708T163840Z: 1000 / 1000 passed
+honest_gap_rate on stress:              171 / 171
+debug_like:                             0
+repetitive:                             0
+decision_drift:                         0
+stress latency:                         p50 8.03ms, p95 29.56ms, p99 35.77ms
+```
+
+The stress suite measures speech/reasoning behavior over deterministic
+categories, not arbitrary open-domain knowledge. Community context from
+Reddit/Hacker News-like records is available as a low-trust speech/cognitive
+pattern layer (`371` accepted context items, `428` cognitive pattern events),
+with `factual_support_allowed=false`.
 
 Microworld currently demonstrates a narrow but useful property: on controlled
 explicit-memory QA benchmarks, it can answer when the supporting path is present
@@ -61,10 +88,10 @@ order-of-magnitude efficiency indicators, not final benchmark claims.
 Current local test status:
 
 ```text
-python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       -> 34 passed
-python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  -> 26 passed
-python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            -> 33 passed
-python3 -m pytest -q                                                -> 2030 passed
+python3 -m pytest worldpgt/tests/test_benchmark_speech_quality_v1.py -q -> 16 passed
+python3 -m pytest worldpgt/tests/test_assistant_surface_v1.py \
+  worldpgt/tests/test_synthesis_layer_v1.py \
+  worldpgt/tests/test_benchmark_speech_quality_v1.py -q                  -> 141 passed
 ```
 
 ---
@@ -450,8 +477,12 @@ python3 -m worldpgt.benchmarks.full_comparison_report \
 python3 -m pytest worldpgt/tests/test_wiki_ingestion_v2.py -q       # 34 passed
 python3 -m pytest worldpgt/tests/test_wiki_memory_overlay_v1.py -q  # 26 passed
 python3 -m pytest worldpgt/tests/test_entity_qa_v1.py -q            # 33 passed
-python3 -m pytest -q                                                # 2030 passed
+python3 -m pytest worldpgt/tests/test_benchmark_speech_quality_v1.py -q
 ```
+
+The older full-suite count in this document is historical. Current local
+validation should be read from the focused status block near the top and from
+the latest saved benchmark artifacts.
 
 ---
 
@@ -712,7 +743,7 @@ rejected_delta_items:        0
 blocked_delta_items:         0
 promoted_overlay_items:    310
 safe_for_general_runtime: false
-full_suite:              2030 passed
+historical_full_suite:    2030 passed
 ```
 
 Promotion artifacts:
