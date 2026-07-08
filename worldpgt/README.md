@@ -1,13 +1,14 @@
-# worldpgt - Microworld Controlled Continuation, QA, Reasoning, and Speech
+# worldpgt - Microworld Explicit-Memory Runtime
 
-Explicit-policy, audit-aware continuation and QA system over deterministic
-memory, accepted facts, isolated knowledge overlays, explicit reasoning traces,
-and a separately measured speech surface.
+Explicit-policy, audit-aware runtime over deterministic memory, accepted facts,
+isolated knowledge overlays, dialogue context, explicit reasoning traces, and a
+separately measured speech surface.
 
 For the current high-level project snapshot, including the latest 1,000-question
 speech stress benchmark and community/cognitive-pattern layer, see the root
 [`README.md`](../README.md). This package README preserves the older controlled
-QA/continuation details and adds the current assistant-surface status below.
+benchmark and continuation details and adds the current assistant-surface status
+below.
 
 ---
 
@@ -15,29 +16,36 @@ QA/continuation details and adds the current assistant-surface status below.
 
 This package measures what happens when a small deterministic system with
 explicit sense memory and accepted knowledge attempts controlled continuation,
-ambiguity-resolution QA, and entity QA over an isolated wiki candidate overlay.
-The benchmark scope is narrow and intentional. It is not a general-purpose
-language model, and it does not claim LLM-level open-domain performance.
+entity inference, dialogue-aware answer routing, and language rendering over an
+isolated wiki candidate overlay. The benchmark scope is narrow and intentional.
+It is not a general-purpose language model, and it does not claim LLM-level
+open-domain performance.
 
-Microworld/worldpgt explores whether useful controlled QA, memory, reasoning,
-and knowledge ingestion can be built without neural weights, backpropagation,
-fine-tuning, GPT-style next-token rendering, embeddings, GPU, or network calls.
-LLMs learn to speak and world understanding emerges as a side effect.
-Microworld tries to build explicit world memory first, then use language as an
-interface to that world.
+Microworld/worldpgt explores whether useful controlled inference, memory,
+reasoning, dialogue, language rendering, and knowledge ingestion can be built
+without neural weights, backpropagation, fine-tuning, GPT-style next-token
+rendering, embeddings, GPU, or network calls. LLMs learn to speak and world
+understanding emerges as a side effect. Microworld tries to build explicit
+world memory first, then use language as an interface to that world.
 
 ---
 
 ## Current Status
 
-Microworld currently demonstrates a lightweight, deterministic, auditable QA
-architecture over explicit memory and isolated knowledge overlays, plus a newer
-speech/reasoning layer where facts, reasoning, and wording are tested
-separately. It is strong on controlled benchmark domains, explicit memory,
-source-aware facts, safe abstention/audit, low runtime cost, and measured
-answer-surface behavior. It is limited by narrow scope, curated inputs,
-rule/curriculum-based analyzers, deterministic renderer coverage, and weak
-open-domain live-search precision.
+Microworld currently demonstrates a lightweight, deterministic, auditable
+inference architecture over explicit memory and isolated knowledge overlays,
+plus a newer speech/reasoning/dialogue layer where facts, reasoning, context,
+and wording are tested separately.
+
+```text
+Knowledge -> Reasoning -> Dialogue -> Language Renderer -> Answer
+```
+
+It is strong on controlled benchmark domains, explicit memory, source-aware
+facts, safe abstention/audit, low runtime cost, and measured answer-surface
+behavior. It is limited by narrow scope, curated inputs, rule/curriculum-based
+analyzers, deterministic renderer coverage, and weak open-domain live-search
+precision.
 
 Latest assistant-surface snapshot:
 
@@ -58,8 +66,8 @@ pattern layer (`371` accepted context items, `428` cognitive pattern events),
 with `factual_support_allowed=false`.
 
 Microworld currently demonstrates a narrow but useful property: on controlled
-explicit-memory QA benchmarks, it can answer when the supporting path is present
-and audit when the answer would require unsupported inference, weak-link
+explicit-memory runtime benchmarks, it can answer when the supporting path is
+present and audit when the answer would require unsupported inference, weak-link
 promotion, current/live data, or volatile facts.
 
 Across the current controlled QA benchmark layers, worldpgt handles 350 prompts

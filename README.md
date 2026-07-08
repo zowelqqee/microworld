@@ -1,28 +1,32 @@
 # Microworld
 
-Microworld is testing a narrower alternative to the usual LLM stack: explicit
-world memory, explicit reasoning, and a separately trained speech layer instead
-of one opaque next-token model doing facts, reasoning, style, and safety at the
-same time.
+Microworld is an experimental AI architecture with explicit memory,
+deterministic reasoning, dialogue state, and a controlled language renderer.
+It tests a narrower alternative to the usual LLM stack: explicit world memory,
+explicit reasoning, and a separately trained speech layer instead of one opaque
+next-token model doing facts, reasoning, style, and safety at the same time.
 
 The current system is not AGI and not an open-domain replacement for modern
-LLMs. It is a bounded research system: a local, auditable QA/speech engine that
-answers only when it can point to controlled memory, says `audit` when support
-is missing, and keeps factual memory separate from language style, community
+LLMs. It is a bounded explicit-memory AI runtime that answers only when it can
+point to controlled memory, says `audit` when support is missing, and keeps
+factual memory separate from reasoning, dialogue, language style, community
 patterns, live search, and session context.
 
 The research question is:
 
 ```text
-Can useful QA, memory growth, dialogue, and trust learning be built from
-explicit facts, typed relations, safety policy, and deterministic planners
-instead of hidden model weights?
+Can useful inference, memory growth, dialogue, controlled language generation,
+and trust learning be built from explicit facts, typed relations, safety policy,
+and deterministic planners instead of hidden model weights?
 ```
 
-The current answer is: partially yes, inside bounded explicit-memory domains.
-The important new result is that the answer surface is now measured separately
-from factual coverage: speech can be tested, improved, and stress-tested without
-pretending that a phrase model is factual memory.
+The current answer is stronger than a toy answer bot: inside bounded
+explicit-memory domains, the runtime can answer, audit, reason over gaps, carry
+dialogue context, render controlled English, and hold quality under a
+1,000-question deterministic speech benchmark. The important new result is that
+the answer surface is now measured separately from factual coverage: speech can
+be tested, improved, and stress-tested without pretending that a phrase model is
+factual memory.
 
 ## Snapshot
 
@@ -72,39 +76,42 @@ Current local pump snapshot, from
 
 | Area | Snapshot |
 |---|---:|
-| Pump dry-run overlay, no weak links | 4,674 items |
-| Pump dry-run overlay, with weak links | 20,241 items |
-| Pump world-model delta | 4,447 items |
-| Pump answerable fact delta | 2,141 facts |
-| Pump relation delta | 1,398 relations |
-| Pump definition delta | 743 definitions |
-| Pump entity delta | 2,306 entity cards |
+| Current dry-run overlay file | 8,930 items |
+| Pump dry-run overlay, current filtered count | 6,682 items |
+| Pump dry-run overlay, with weak links | 27,808 items |
+| Pump world-model delta | 6,455 items |
+| Pump answerable fact delta | 2,836 facts |
+| Pump relation delta | 1,637 relations |
+| Pump definition delta | 1,199 definitions |
+| Pump entity delta | 3,619 entity cards |
 | Pump batches completed | 80 |
-| Total fetched pages | 11,717 |
-| Fetch successes | 4,239 |
-| Frontier titles total | 182,010 titles |
-| Dynamic frontier total | 179,499 titles |
-| Assistant smoke | 995 supported fact answers / 1,014 prompts / 0 wrong |
+| Total fetched pages | 22,620 |
+| Fetch successes | 7,120 |
+| Frontier titles total | 361,233 titles |
+| Dynamic frontier file | 360,685 titles |
+| Assistant smoke | 1,325 supported fact answers / 1,360 prompts / 0 wrong |
 | Pump fact QA | 1,200 prompts / 0 wrong / 0 unsupported answers |
-| Extraction v2 | 2,944 candidates from 2,357 docs |
-| Promotion readiness | 152 QA-covered candidates, proposal-only |
+| Extraction v2 | 4,496 candidates / 4,438 safe deltas |
+| Promotion state | proposal-only; trusted memory unchanged |
 
-Performance snapshot supplied with this README update:
+Performance snapshot from the deterministic speech benchmark:
 
 ```text
-p50 latency:   8.3 ms
-p95 latency:   13.6 ms
-throughput:    120 requests/sec
-memory:        ~8 MB overlay, ~124 MB RSS
-hardware:      Apple M1, 8 GB RAM, no GPU
-10x data:      8.7 ms latency (+5%)
+questions:     1,000
+passed:        1,000 / 1,000
+honest gaps:   171 / 171
+p50 latency:   8.03 ms
+p95 latency:   29.56 ms
+p99 latency:   35.77 ms
+max latency:   95.48 ms
+hardware:      local CPU, no GPU/model API at answer time
 ```
 
 These are local snapshots, not general product benchmarks. The useful signal is
-the shape: indexed explicit-memory lookup stays close to constant-time for the
-tested overlay scale, the speech layer does not degrade at 1,000 benchmark
-questions, and the system can run without a GPU or model API on supported
-memory-backed questions.
+the shape: indexed explicit-memory lookup, deterministic reasoning, and
+controlled speech rendering stay fast under the tested 1,000-question load, and
+the system can run without a GPU or model API on supported memory-backed
+questions.
 
 ## Table Of Contents
 
@@ -115,7 +122,7 @@ memory-backed questions.
 - [Community Speech And Cognitive Patterns](#community-speech-and-cognitive-patterns)
 - [Optional Live Web Search](#optional-live-web-search)
 - [Architecture](#architecture)
-- [Runtime QA Flow](#runtime-qa-flow)
+- [Runtime Inference Flow](#runtime-inference-flow)
 - [Knowledge Pump](#knowledge-pump)
 - [Memory Boundaries](#memory-boundaries)
 - [Safety Model](#safety-model)
@@ -136,9 +143,10 @@ memory-backed questions.
 ## What It Is
 
 Microworld stores knowledge as explicit entities, definitions, typed relations,
-source-qualified snapshots, weak context links, and policy metadata. A question
-is parsed into a structured intent, planned, executed against the relevant
-overlay, rendered, and validated.
+source-qualified snapshots, weak context links, and policy metadata. A user
+request is parsed into a structured intent, planned, executed against the
+relevant overlay, routed through safety/support policy, shaped by dialogue
+context, rendered, and validated.
 
 The core behavior is deliberately boring in the best possible way:
 
@@ -155,7 +163,7 @@ No answer should appear because a model "felt" that it was plausible.
 
 - Not a general language model.
 - Not an open-domain search engine.
-- Not live-current QA.
+- Not live-current fact answering.
 - Not a claim that symbolic systems are generally superior to neural systems.
 - Not a trusted-memory auto-promotion pipeline.
 - Not a production knowledge graph.
@@ -227,7 +235,7 @@ Important modules:
 
 | Layer | Code | Role |
 |---|---|---|
-| Assistant orchestrator | `worldpgt/assistant_surface/answer_orchestrator.py` | routes question, chooses QA/search/community path, attaches traces |
+| Assistant orchestrator | `worldpgt/assistant_surface/answer_orchestrator.py` | routes requests, chooses memory/search/community path, attaches traces |
 | Style normalizer | `worldpgt/assistant_surface/answer_style.py` | handles brief/simple/detailed style requests without changing facts |
 | Speech planner | `worldpgt/entity_qa/semantic_speech_planner.py` | turns supported facts into roles such as definition, activity, purpose, mechanism |
 | Reasoning engine | `worldpgt/cognition/reasoning_engine.py` | builds explicit reasoning trace and action plan |
@@ -317,9 +325,18 @@ elapsed:         1878.23s
 ```
 
 So the honest status is: live search exists, is safer than a generic fallback,
-and is improving, but it is not yet a strong open-domain QA result.
+and is improving, but it is not yet a strong open-domain inference result.
 
 ## Architecture
+
+At the top level, the runtime is no longer just an answer surface:
+
+```text
+Knowledge -> Reasoning -> Dialogue -> Language Renderer -> Answer
+```
+
+Facts, reasoning, dialogue, and speech stay separate so each layer can be
+measured, audited, and improved without silently changing the others.
 
 ```mermaid
 flowchart TD
@@ -355,15 +372,15 @@ The high-level modules are:
 | Speech/reasoning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
 | Community patterns | `worldpgt/community_context/` |
 | Optional live search | `worldpgt/web_search/` |
-| Entity QA | `worldpgt/entity_qa/` |
+| Entity inference layer | `worldpgt/entity_qa/` |
 | Query primitives | `worldpgt/query_engine/` |
-| Multi-hop QA | `worldpgt/multihop_qa/` |
+| Multi-hop reasoning | `worldpgt/multihop_qa/` |
 | Relation extraction | `worldpgt/relation_extraction_v2/` |
 | Knowledge pump | `worldpgt/knowledge_pump/` |
 | Pump artifacts | `worldpgt/experiments/knowledge_pump_v1/` |
 | Safety and temporal policy | `worldpgt/knowledge/`, `worldpgt/relation_extraction_v2/relation_policy.py` |
 
-## Runtime QA Flow
+## Runtime Inference Flow
 
 ```mermaid
 sequenceDiagram
@@ -396,7 +413,7 @@ and open synthesis.
 
 The Knowledge Pump is the proposal-only learning loop. It fetches or reads
 candidate pages, extracts facts, filters them through precision gates, tests
-them through QA, and writes proposal overlays. It does not mutate trusted
+them through fact checks, and writes proposal overlays. It does not mutate trusted
 accepted memory.
 
 ```mermaid
@@ -404,8 +421,8 @@ flowchart LR
     W["Wikipedia / local snapshots"] --> N["Normalized docs"]
     N --> X["SPO extraction<br/>regex + optional spaCy"]
     X --> F["Precision firewall<br/>reject / quarantine / accept"]
-    F --> QA["Fact QA<br/>0 wrong answers required"]
-    QA --> O["Proposal overlay<br/>pump-dry-run"]
+    F --> FC["Fact checks<br/>0 wrong answers required"]
+    FC --> O["Proposal overlay<br/>pump-dry-run"]
     O --> PR["Promotion readiness audit"]
     PR -->|human / policy gate| PM["promoted overlay"]
     PM -. separate artifact .-> A["accepted memory unchanged"]
@@ -423,11 +440,12 @@ Recent pump state:
 
 ```text
 batches_completed:                   80
-frontier_titles_total:               182010
-dynamic_frontier_total:              179499
-new_ready_docs_this_batch:           2357
-extraction_yield_v2_candidate_count: 2944
-pump_answerable_fact_delta_count:    2141
+frontier_titles_total:               361233
+dynamic_frontier_file_total:         360685
+fetched_count_total:                 22620
+fetch_success_count_total:           7120
+extraction_yield_v2_candidate_count: 4496
+pump_answerable_fact_delta_count:    2836
 pump_smoke_wrong_count:              0
 ```
 
@@ -438,10 +456,10 @@ they are not silently promoted into trusted memory.
 
 | Bucket | Artifact | Meaning |
 |---|---|---|
-| Accepted memory | `worldpgt/experiments/accepted_knowledge_memory_v1.json` | Trusted explicit QA memory. |
-| Accepted wiki overlay | `worldpgt/experiments/accepted_wiki_memory_overlay_v1.json` | Isolated wiki QA overlay. |
+| Accepted memory | `worldpgt/experiments/accepted_knowledge_memory_v1.json` | Trusted explicit memory. |
+| Accepted wiki overlay | `worldpgt/experiments/accepted_wiki_memory_overlay_v1.json` | Isolated wiki memory overlay. |
 | Promoted overlay | `worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json` | Separate promoted artifact, not accepted memory. |
-| Pump dry-run overlay | `worldpgt/experiments/knowledge_pump_v1/pump_dry_run_overlay.json` | Proposal overlay for QA experiments. |
+| Pump dry-run overlay | `worldpgt/experiments/knowledge_pump_v1/pump_dry_run_overlay.json` | Proposal overlay for runtime experiments. |
 | Weak context | weak links inside overlays | Contextual association only, never a stable fact. |
 | Ontology layer | `wikidata_p279_ontology_layer.json` | Read-only `is_a` traversal support. |
 
@@ -453,7 +471,7 @@ flowchart TB
     D["pump dry-run overlay"]:::proposal
     Q["quarantine / review"]:::blocked
 
-    D -->|QA-covered candidates| Q
+    D -->|fact-checked candidates| Q
     Q -->|explicit promotion process| P
     P -. does not overwrite .-> W
     W -. separate from .-> A
@@ -514,7 +532,7 @@ Microworld currently handles these controlled forms:
 
 ## Examples
 
-These are representative examples from the controlled QA surface. Exact wording
+These are representative examples from the controlled runtime surface. Exact wording
 can change as renderers improve.
 
 ```text
@@ -675,9 +693,9 @@ worldpgt/experiments/benchmarks/speech_quality_stress_20260708T163840Z.json
 
 ## Performance
 
-Microworld's hot path is mostly indexed lookup, deterministic planning, and
-small renderer passes. It has no GPU dependency and does not call a model API
-at answer time.
+Microworld's hot path is mostly indexed lookup, deterministic planning,
+dialogue/context routing, and small renderer passes. It has no GPU dependency
+and does not call a model API at answer time.
 
 ```mermaid
 flowchart LR
@@ -688,39 +706,30 @@ flowchart LR
     GATE --> TEXT["Controlled text"]
 ```
 
-Local benchmark snapshot supplied with this README update:
-
-| Metric | Value |
-|---|---:|
-| p50 latency | 8.3 ms |
-| p95 latency | 13.6 ms |
-| throughput | 120 req/sec |
-| overlay memory | ~8 MB |
-| process RSS | ~124 MB |
-| hardware | Apple M1, 8 GB RAM |
-| GPU | none |
-| 10x data latency | 8.7 ms (+5%) |
-
-Latest speech stress snapshot:
+Deterministic speech-renderer benchmark snapshot:
 
 | Metric | Value |
 |---|---:|
 | questions | 1,000 |
+| passed | 1,000 / 1,000 |
 | quality_rate | 100.0% |
-| honest_gap_rate | 100.0% |
+| honest_gap_rate | 171 / 171 |
 | mean latency | 14.38 ms |
 | p50 latency | 8.03 ms |
 | p95 latency | 29.56 ms |
 | p99 latency | 35.77 ms |
 | max latency | 95.48 ms |
+| debug-like output | 0 |
+| repetitive output | 0 |
+| decision drift | 0 |
 
-The attached comparison snapshot estimates roughly `97x` lower latency than a
-GPT-4 API round trip on the tested bounded QA workload. The same estimate puts
-a local single-server deployment around `$50/month` versus `$10,000+/month` for
-a million GPT-4-style API requests per day. Treat this as a workload-specific
-cost model, not a universal benchmark: it applies when the question can be
-answered from Microworld's explicit memory and does not need open-domain
-generation.
+This benchmark measures the answer-surface runtime under deterministic
+categories, including profile answers, direct relations, mechanism gaps,
+connection paths, adversarial inversions, current/live requests, private-info
+requests, unsupported universal claims, and style control. Treat it as a
+workload-specific runtime result, not a universal benchmark: it applies when the
+question can be handled by Microworld's explicit memory/reasoning/speech path
+and does not need open-domain generation.
 
 ## Current Artifacts
 
@@ -813,7 +822,7 @@ python3 worldpgt/experiments/run_audit_driven_pump_v1.py \
   --period-days 1
 ```
 
-Focused tests for the most recent QA/extraction layers:
+Focused tests for the most recent runtime/extraction layers:
 
 ```bash
 python3 -m pytest \
@@ -838,7 +847,7 @@ Recent focused validation:
 
 ```text
 worldpgt/
-  api/                    FastAPI server and static QA UI
+  api/                    FastAPI server and static UI
   assistant_surface/      orchestrator, router, context selector, styles
   cognition/              reasoning traces, thought loop, phrase graph, graph moves
   community_context/      Reddit/HN-style context and cognitive pattern memory
@@ -872,8 +881,7 @@ The repository also contains earlier Microworld research tracks around:
 - risk/coverage benchmarks
 
 Those results remain part of the project history. The current README foregrounds
-the `worldpgt` explicit-memory QA/pump system because that is the active
-runtime path.
+the `worldpgt` explicit-memory runtime because that is the active path.
 
 ## Research Results
 
@@ -882,24 +890,29 @@ Demonstrated in the current repository and preserved research artifacts:
 - ✓ Audit-driven trust learning
 - ✓ Trust transfer on unseen data
 - ✓ Feedback compression (1598x)
-- ✓ Local QA latency (8ms p50)
+- ✓ Deterministic speech renderer
+- ✓ 1,000-question deterministic benchmark
+- ✓ 100% honest-gap behavior on the stress suite
+- ✓ Dialogue context and conservative coreference
+- ✓ Controlled language generation over explicit support
+- ✓ Local runtime latency (8.03ms p50 on the speech stress suite)
 - ✓ Scalable indexed retrieval
 - ✓ Multi-hop explicit reasoning
 - ✓ Speech/reasoning surface measured separately from factual coverage
-- ✓ 1,000-question deterministic speech stress benchmark with 100% pass rate
 - ✓ Reddit/HN-style cognitive pattern memory that is blocked from factual support
 - ✓ Optional live-search path with volatile/source-labelled answers
 
 Not demonstrated:
 
-- Open-domain QA
+- Open-domain general inference
 - General intelligence
 - Neural model replacement
 - Open-domain live-search precision competitive with modern LLM search tools
 
 ## Known Limits
 
-- The active system is controlled QA, not open-domain QA.
+- The active system is a controlled explicit-memory inference runtime, not
+  open-domain general intelligence.
 - Extraction recall is limited by deterministic patterns and optional spaCy.
 - Entity identity is still surface/alias based, not QID-native.
 - Cross-sentence extraction coreference is intentionally conservative.
@@ -935,7 +948,7 @@ Highest-leverage next steps:
    result.
 7. Expand mechanism/purpose extraction carefully, one relation family at a time.
 8. Add QID-native identity to reduce alias and homonym collisions.
-9. Keep promotion explicit: proposal -> QA -> review -> promoted artifact, never
+9. Keep promotion explicit: proposal -> fact checks -> review -> promoted artifact, never
    silent accepted-memory mutation.
 
 ## Status
