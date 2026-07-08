@@ -1,32 +1,34 @@
 # Microworld
 
-Microworld is an experimental AI architecture with explicit memory,
+Microworld is an experimental semantic AI architecture with explicit memory,
 deterministic reasoning, dialogue state, and a controlled language renderer.
-It tests a narrower alternative to the usual LLM stack: explicit world memory,
-explicit reasoning, and a separately trained speech layer instead of one opaque
-next-token model doing facts, reasoning, style, and safety at the same time.
+It tests a narrower alternative to the usual LLM stack: semantic memory,
+semantic reasoning, semantic dialogue context, and a separately controlled
+speech layer instead of one opaque next-token model doing facts, reasoning,
+style, and safety at the same time.
 
 The current system is not AGI and not an open-domain replacement for modern
 LLMs. It is a bounded explicit-memory AI runtime that answers only when it can
-point to controlled memory, says `audit` when support is missing, and keeps
-factual memory separate from reasoning, dialogue, language style, community
-patterns, live search, and session context.
+point to controlled semantic memory, says `audit` when support is missing, and
+keeps factual support separate from reasoning, dialogue, language style,
+community patterns, live search, and session context.
 
 The research question is:
 
 ```text
 Can useful inference, memory growth, dialogue, controlled language generation,
-and trust learning be built from explicit facts, typed relations, safety policy,
-and deterministic planners instead of hidden model weights?
+and trust learning be built from explicit semantic entities, typed relations,
+mechanism roles, safety policy, and deterministic planners instead of hidden
+model weights?
 ```
 
 The current answer is stronger than a toy answer bot: inside bounded
-explicit-memory domains, the runtime can answer, audit, reason over gaps, carry
-dialogue context, render controlled English, and hold quality under a
-1,000-question deterministic speech benchmark. The important new result is that
-the answer surface is now measured separately from factual coverage: speech can
-be tested, improved, and stress-tested without pretending that a phrase model is
-factual memory.
+explicit-memory domains, the runtime can transform language into semantic
+structures, answer, audit, reason over gaps, carry dialogue context, render
+controlled English, and hold quality under a 1,000-question deterministic
+speech benchmark. The important new result is that the answer surface is now
+measured separately from factual coverage: speech can be tested, improved, and
+stress-tested without pretending that a phrase model is factual memory.
 
 ## Snapshot
 
@@ -108,7 +110,7 @@ hardware:      local CPU, no GPU/model API at answer time
 ```
 
 These are local snapshots, not general product benchmarks. The useful signal is
-the shape: indexed explicit-memory lookup, deterministic reasoning, and
+the shape: indexed semantic-memory lookup, deterministic reasoning, and
 controlled speech rendering stay fast under the tested 1,000-question load, and
 the system can run without a GPU or model API on supported memory-backed
 questions.
@@ -117,6 +119,7 @@ questions.
 
 - [What It Is](#what-it-is)
 - [What It Is Not](#what-it-is-not)
+- [Semantic-First Design](#semantic-first-design)
 - [Text Generation Experiment](#text-generation-experiment)
 - [Speech And Reasoning Layer](#speech-and-reasoning-layer)
 - [Community Speech And Cognitive Patterns](#community-speech-and-cognitive-patterns)
@@ -128,7 +131,7 @@ questions.
 - [Safety Model](#safety-model)
 - [Question Types](#question-types)
 - [Examples](#examples)
-- [Dialogue](#dialogue)
+- [Dialogue Context Layer](#dialogue-context-layer)
 - [Answer Styles](#answer-styles)
 - [Speech Quality Benchmarks](#speech-quality-benchmarks)
 - [Performance](#performance)
@@ -142,19 +145,20 @@ questions.
 
 ## What It Is
 
-Microworld stores knowledge as explicit entities, definitions, typed relations,
-source-qualified snapshots, weak context links, and policy metadata. A user
-request is parsed into a structured intent, planned, executed against the
-relevant overlay, routed through safety/support policy, shaped by dialogue
-context, rendered, and validated.
+Microworld stores knowledge as semantic entities, definitions, typed semantic
+relations, mechanism/purpose roles, source-qualified snapshots, weak context
+links, and policy metadata. A user request is parsed into semantic structure,
+planned, executed against the relevant memory layer, routed through
+safety/support policy, shaped by semantic dialogue context, rendered, and
+validated.
 
 The core behavior is deliberately boring in the best possible way:
 
 ```text
-supported fact present       -> answer
-explicit contradiction       -> no
-weak/volatile/current gap    -> audit
-unknown or unsupported form  -> audit
+supported semantic claim present -> answer
+explicit contradiction          -> no
+weak/volatile/current gap       -> audit
+unknown or unsupported form     -> audit
 ```
 
 No answer should appear because a model "felt" that it was plausible.
@@ -167,16 +171,58 @@ No answer should appear because a model "felt" that it was plausible.
 - Not a claim that symbolic systems are generally superior to neural systems.
 - Not a trusted-memory auto-promotion pipeline.
 - Not a production knowledge graph.
+- Not fundamentally a graph database or graph QA engine.
 
 The project explores a complementary path: compact explicit memory and
-inspectable trust learning for graph-style reasoning, where behavior can be
+inspectable trust learning for semantic reasoning, where behavior can be
 audited, corrected, compressed, and transferred without retraining neural
-weights.
+weights. Graphs may be used as one storage representation for semantic
+structures, but they are not the core abstraction.
+
+## Semantic-First Design
+
+The central abstraction in Microworld is semantics. Text is an interface, not
+the internal reasoning substrate.
+
+The motivation is simple: humans do not reason primarily over strings. Humans
+reason over meanings: entities, relations, causes, mechanisms, roles, gaps,
+intentions, and references. Microworld follows that philosophy in a deliberately
+bounded implementation. It does not claim human-level reasoning; it tests
+whether useful AI behavior can be built by making the semantic state explicit
+and auditable.
+
+The normal path is:
+
+```text
+natural language question
+  -> semantic parse
+  -> semantic entities / relations / mechanism roles
+  -> semantic planning and support checks
+  -> semantic dialogue reference resolution when needed
+  -> semantic speech plan
+  -> controlled natural-language rendering
+```
+
+Every major layer is phrased in that vocabulary:
+
+| Layer | Semantic role |
+|---|---|
+| Semantic knowledge representation | entities, definitions, typed relations, mechanisms, source-qualified claims |
+| Semantic memory | accepted memory, overlays, proposals, and snapshots that store explicit semantic structures |
+| Semantic reasoning | support checks, gap detection, contradiction handling, relation/path/mechanism decisions |
+| Semantic dialogue context | explicit state over entities, roles, surfaced relations, topics, and references |
+| Semantic reference resolution | deterministic binding of `it`, `he`, `that company`, `the founder`, etc. to entities |
+| Semantic planning | conversion from parsed intent into supported lookup, synthesis, path, or audit plans |
+| Semantic language generation | rendering an already-supported semantic plan into bounded English |
+
+The graph appears only as an implementation technique for storing or traversing
+some semantic structures. A graph edge is useful because it encodes a semantic
+relation; the relation is the important object, not the storage shape.
 
 ## Text Generation Experiment
 
-Microworld is testing a non-neural approach to text generation over verified
-facts.
+Microworld is testing a non-neural approach to language generation over
+verified semantic support.
 
 The working principle is:
 
@@ -188,9 +234,9 @@ speech is generated
 Instead of predicting the next token from neural weights, the experimental
 speech layer can choose the next allowed speech unit from explicit state:
 
-- the user's question
-- the current entity
-- the verified facts already selected by the planner
+- the user's semantic question
+- the current semantic entity
+- the verified relations and facts already selected by the planner
 - what the answer has already said
 - the requested answer style
 - deterministic safety and support checks
@@ -204,21 +250,21 @@ language modeling and not a neural model replacement.
 ## Speech And Reasoning Layer
 
 The current breakthrough is not that Microworld "knows everything." It does
-not. The stronger result is architectural: facts, reasoning, and speech are now
-separate enough to test independently.
+not. The stronger result is architectural: semantic support, reasoning,
+dialogue, and speech are now separate enough to test independently.
 
 ```text
-facts / overlay rows
+semantic memory rows
   -> semantic speech plan
   -> explicit reasoning trace
   -> action plan: answer / answer_with_gap / audit / no
-  -> speech renderer
+  -> semantic language renderer
   -> surface validator + benchmark metrics
 ```
 
 The reasoning layer operates over an already-built speech plan. It does not
-query raw memory, invent facts, or decide truth. Its job is to make the answer
-decision inspectable:
+query raw text, invent facts, or decide truth from phrasing. Its job is to make
+the semantic answer decision inspectable:
 
 - detect whether the user is asking for a profile, relation, path, or mechanism
 - decompose the task into subgoals
@@ -237,15 +283,15 @@ Important modules:
 |---|---|---|
 | Assistant orchestrator | `worldpgt/assistant_surface/answer_orchestrator.py` | routes requests, chooses memory/search/community path, attaches traces |
 | Style normalizer | `worldpgt/assistant_surface/answer_style.py` | handles brief/simple/detailed style requests without changing facts |
-| Speech planner | `worldpgt/entity_qa/semantic_speech_planner.py` | turns supported facts into roles such as definition, activity, purpose, mechanism |
+| Speech planner | `worldpgt/entity_qa/semantic_speech_planner.py` | turns supported semantic facts into roles such as definition, activity, purpose, mechanism |
 | Reasoning engine | `worldpgt/cognition/reasoning_engine.py` | builds explicit reasoning trace and action plan |
 | Thought loop | `worldpgt/cognition/thought_loop.py` | rejects unsupported direct mechanism answers and accepts gap fallback |
 | Deliberation/support guard | `worldpgt/cognition/deliberation_engine.py`, `support_guard.py` | prevents unsupported conclusions |
 | Decision speech | `worldpgt/cognition/decision_surface.py` | human-facing phrasing for gaps, thin profiles, and clarification |
 | Symbolic speech renderer | `worldpgt/entity_qa/symbolic_text_generator.py` | emits bounded English from the speech plan |
-| Phrase graph | `worldpgt/cognition/phrase_graph.py` | learns deterministic phrase fragments and transitions from local artifacts |
+| Phrase transition store | `worldpgt/cognition/phrase_graph.py` | stores deterministic phrase fragments and transitions for rendering |
 | Surface selection | `worldpgt/cognition/surface_selection.py` | rejects debug-like/repetitive variants and chooses cleaner speech |
-| Semantic thought graph | `worldpgt/cognition/semantic_thought_graph.py` | graph-native cognitive moves over task/evidence/gap/pattern nodes |
+| Semantic thought state | `worldpgt/cognition/semantic_thought_graph.py` | represents task, evidence, gap, and pattern state for cognitive moves |
 
 This is why `How does Starlink work?` can honestly answer with a gap: the
 system has enough facts to identify Starlink and its service, but no admitted
@@ -265,7 +311,7 @@ local Reddit/HN-like records
   -> reddit_community_context.json
   -> reddit_speaking_profile.json
   -> cognitive_pattern_events.json
-  -> cognitive_pattern_graphs.json
+  -> cognitive_pattern_graphs.json  # storage artifact for semantic patterns
 ```
 
 Current artifact snapshot:
@@ -332,23 +378,26 @@ and is improving, but it is not yet a strong open-domain inference result.
 At the top level, the runtime is no longer just an answer surface:
 
 ```text
-Knowledge -> Reasoning -> Dialogue -> Language Renderer -> Answer
+Text -> Semantic Structures -> Semantic Reasoning -> Semantic Dialogue Context
+     -> Semantic Language Renderer -> Answer
 ```
 
-Facts, reasoning, dialogue, and speech stay separate so each layer can be
-measured, audited, and improved without silently changing the others.
+Semantic memory, reasoning, dialogue, and speech stay separate so each layer
+can be measured, audited, and improved without silently changing the others.
+Storage may be tabular JSON, overlay rows, indexes, or graph-shaped structures;
+the runtime contract is semantic, not storage-specific.
 
 ```mermaid
 flowchart TD
     Q["User question"] --> R["Assistant Surface Router"]
-    R --> C["Context Selector"]
+    R --> C["Semantic Memory Selector"]
     C --> P["Semantic Question Parser"]
-    P --> A["Entity / Query / Multi-hop Planner"]
-    A --> E["Deterministic Executor"]
+    P --> A["Semantic Planner<br/>entity / relation / path / mechanism"]
+    A --> E["Deterministic Semantic Executor"]
     E --> S["Safety + Support Gate"]
     S -->|supported| SP["Semantic Speech Plan"]
     SP --> RE["Explicit Reasoning Trace"]
-    RE --> Render["Speech Renderer / Phrase Graph"]
+    RE --> Render["Semantic Language Renderer"]
     S -->|contradiction| No["Decision: no"]
     S -->|unsupported| Audit["Decision: audit"]
     Render --> Ans["Decision: answer"]
@@ -357,7 +406,7 @@ flowchart TD
     M2["accepted wiki overlay"] --> C
     M3["promoted overlay"] --> C
     M4["pump dry-run overlay"] --> C
-    O["read-only ontology layer"] --> A
+    O["read-only semantic ontology layer"] --> A
     CC["community context<br/>style/patterns only"] -. no facts .-> RE
     WS["optional live web search<br/>volatile"] -. labelled source .-> S
 ```
@@ -368,13 +417,13 @@ The high-level modules are:
 |---|---|
 | Assistant surface | `worldpgt/assistant_surface/` |
 | Web/API UI | `worldpgt/api/` |
-| Dialogue context | `worldpgt/dialogue/` |
-| Speech/reasoning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
-| Community patterns | `worldpgt/community_context/` |
+| Semantic dialogue context | `worldpgt/dialogue/` |
+| Semantic reasoning and speech planning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
+| Community speech/cognitive patterns | `worldpgt/community_context/` |
 | Optional live search | `worldpgt/web_search/` |
-| Entity inference layer | `worldpgt/entity_qa/` |
-| Query primitives | `worldpgt/query_engine/` |
-| Multi-hop reasoning | `worldpgt/multihop_qa/` |
+| Semantic entity inference | `worldpgt/entity_qa/` |
+| Semantic query primitives | `worldpgt/query_engine/` |
+| Multi-hop semantic reasoning | `worldpgt/multihop_qa/` |
 | Relation extraction | `worldpgt/relation_extraction_v2/` |
 | Knowledge pump | `worldpgt/knowledge_pump/` |
 | Pump artifacts | `worldpgt/experiments/knowledge_pump_v1/` |
@@ -387,22 +436,22 @@ sequenceDiagram
     participant U as User
     participant API as API / CLI
     participant D as Dialogue Context
-    participant P as Parser
-    participant O as Orchestrator
-    participant KB as Overlay Provider
+    participant P as Semantic Parser
+    participant O as Semantic Planner
+    participant KB as Semantic Memory
     participant G as Safety Gate
     participant R as Renderer
 
     U->>API: "What else did he found?"
-    API->>D: resolve references
+    API->>D: resolve semantic references
     D-->>API: "he -> Elon Musk"
     API->>P: SemanticQuery
-    P->>O: intent + entities + relation
-    O->>KB: explicit facts only
-    KB-->>O: typed relation rows
+    P->>O: intent + semantic entities + relation
+    O->>KB: explicit semantic support only
+    KB-->>O: typed semantic relation rows
     O->>G: validate support / risk
     G-->>R: answer/no/audit
-    R-->>U: controlled text + optional trace
+    R-->>U: controlled language + optional trace
 ```
 
 The parser currently recognizes relation lookup, inverse lookup, comparative
@@ -412,14 +461,14 @@ and open synthesis.
 ## Knowledge Pump
 
 The Knowledge Pump is the proposal-only learning loop. It fetches or reads
-candidate pages, extracts facts, filters them through precision gates, tests
-them through fact checks, and writes proposal overlays. It does not mutate trusted
-accepted memory.
+candidate pages, extracts semantic claims, filters them through precision gates,
+tests them through fact checks, and writes proposal overlays. It does not mutate
+trusted accepted memory.
 
 ```mermaid
 flowchart LR
     W["Wikipedia / local snapshots"] --> N["Normalized docs"]
-    N --> X["SPO extraction<br/>regex + optional spaCy"]
+    N --> X["semantic claim extraction<br/>regex + optional spaCy"]
     X --> F["Precision firewall<br/>reject / quarantine / accept"]
     F --> FC["Fact checks<br/>0 wrong answers required"]
     FC --> O["Proposal overlay<br/>pump-dry-run"]
@@ -432,7 +481,7 @@ The pump has three feedback loops:
 
 | Loop | What happens |
 |---|---|
-| Yield-ranked frontier | Previous batches teach the fetcher which titles are likely to produce answerable facts. |
+| Yield-ranked frontier | Previous batches teach the fetcher which titles are likely to produce answerable semantic claims. |
 | Dynamic frontier | Newly fetched pages expose internal Wikipedia links; the frontier grows organically. |
 | Audit -> gap -> frontier | `Decision: audit` rows become structured gap signals for future acquisition. |
 
@@ -452,12 +501,12 @@ pump_smoke_wrong_count:              0
 ## Memory Boundaries
 
 This boundary is the heart of the project. Proposal artifacts are useful, but
-they are not silently promoted into trusted memory.
+they are not silently promoted into trusted semantic memory.
 
 | Bucket | Artifact | Meaning |
 |---|---|---|
-| Accepted memory | `worldpgt/experiments/accepted_knowledge_memory_v1.json` | Trusted explicit memory. |
-| Accepted wiki overlay | `worldpgt/experiments/accepted_wiki_memory_overlay_v1.json` | Isolated wiki memory overlay. |
+| Accepted memory | `worldpgt/experiments/accepted_knowledge_memory_v1.json` | Trusted explicit semantic memory. |
+| Accepted wiki overlay | `worldpgt/experiments/accepted_wiki_memory_overlay_v1.json` | Isolated wiki semantic-memory overlay. |
 | Promoted overlay | `worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json` | Separate promoted artifact, not accepted memory. |
 | Pump dry-run overlay | `worldpgt/experiments/knowledge_pump_v1/pump_dry_run_overlay.json` | Proposal overlay for runtime experiments. |
 | Weak context | weak links inside overlays | Contextual association only, never a stable fact. |
@@ -580,37 +629,142 @@ Once those facts are present in the active overlay, `How does Starlink work?`
 can render mechanism-first instead of only saying that operational details are
 missing.
 
-## Dialogue
+## Dialogue Context Layer
 
-Dialogue state is in memory for the current process/session only. It is not
-written into accepted memory.
+Dialogue context is a core architectural layer, not a hidden chat log. It is
+explicit semantic state over canonical entities, answer roles, surfaced
+relations, topics, and reference bindings. The layer exists so a multi-turn
+question can be reduced to the same kind of inspectable semantic query as a
+single-turn question.
+
+This state is not model memory. It contains pointers into known entities and
+turn records, not new facts. It never writes accepted memory, never promotes an
+overlay row, and never makes a trusted claim true. A reference such as `it`,
+`he`, `that company`, `the founder`, or `the other one` is resolved over
+semantic entities and dialogue roles, not over nearby text.
+
+The current dialogue path is intentionally deterministic:
+
+- `DialogueState` is the only session memory for the v2 layer.
+- `TurnRecord` is the only input that mutates `DialogueState`.
+- `resolve_question(question, state, index)` is a pure resolver step before
+  semantic parsing.
+- Candidate selection uses hard type gates, integer salience scores, and a
+  required margin.
+- Every slot resolution carries candidates, score breakdowns, strategy, margin,
+  and outcome.
+- Every decision has an explanation: integer candidate scores plus the
+  resolution trace that produced them.
+- If any required slot is ambiguous or missing, the whole question audits.
+- Topic shifts are explicit `topic_op` changes such as `("set", "Tesla")`.
+- State is serializable with `to_dict()` / `from_dict()` and replayable from
+  the committed turn records.
+- The language renderer receives an already-resolved question or an audit. It
+  does not decide reference identity.
+
+The important boundary is semantic: dialogue context may select which existing
+entity a later question refers to, but it may not create a fact about that
+entity. When the resolver needs role evidence, it uses a narrow read-only
+semantic role lookup only to choose among already-known dialogue candidates.
+That lookup is trace-marked; it is not a write path.
+
+Example dialogue:
 
 ```text
-Q: Tell me about Blue Origin.
-A: Blue Origin is an American aerospace company. It develops rockets and
-   spacecraft, and was founded by Jeff Bezos.
+Q1: Tell me about SpaceX.
+State: topic_op=("set", "SpaceX")
+A1: SpaceX is an aerospace manufacturer and space transportation company.
 
-Q: а кто основал?
-A: Blue Origin was founded by Jeff Bezos.
+Q2: Who founded it?
+Resolution:
+  slot "it" -> SpaceX
+  candidates:
+    SpaceX total=191
+      active_topic=100, last_answer_entity=40, last_question_subject=30,
+      user_named=15, mentions=6
+  margin: single typed candidate
+  strategy: salience
+A2: SpaceX was founded by Elon Musk.
+State:
+  surfaced relation: (SpaceX, founded_by, Elon Musk)
+  role: Elon Musk entered as founded_by(SpaceX)
+  active topic remains SpaceX
 
-Q: а Starlink?
-A: Starlink is a satellite internet constellation operated by SpaceX. It is
-   owned by SpaceX, and is classified as satellite internet and satellite
-   constellation.
+Q3: Tell me about Elon Musk.
+State: topic_op=("set", "Elon Musk")
+A3: Elon Musk is a businessman and entrepreneur.
+
+Q4: What else did he found?
+Resolution:
+  slot "he" -> Elon Musk
+  candidates:
+    Elon Musk total=191
+      active_topic=100, last_answer_entity=40, last_question_subject=30,
+      user_named=15, mentions=6
+  margin: single typed candidate
+  strategy: salience
+  exclusion: already surfaced SpaceX for founded_by
+A4: Elon Musk founded Tesla, Neuralink, The Boring Company, xAI, Zip2, and Big Green.
+
+Q5: What about Tesla?
+Resolution:
+  topic_shift "Tesla" -> Tesla
+  reformulated question: Tell me about Tesla.
+State: topic_op=("set", "Tesla"), previous_topic="Elon Musk"
+A5: Tesla is an automotive and clean energy company.
+
+Q6: Who founded it?
+Resolution:
+  slot "it" -> Tesla
+  candidates:
+    Tesla total=191
+      active_topic=100, last_answer_entity=40, last_question_subject=30,
+      user_named=15, mentions=6
+  margin: single typed candidate
+  strategy: salience
+A6: Tesla was founded by Elon Musk, Martin Eberhard, Marc Tarpenning, JB
+    Straubel, and Ian Wright.
 ```
 
-Coreference is conservative:
+The chain is `SpaceX -> it -> Elon Musk -> he -> Tesla -> it`, but the topic
+does not move through hidden memory. It changes only when a committed turn says
+so: first `SpaceX`, then `Elon Musk`, then `Tesla`.
+
+Ambiguity produces an audit rather than a best guess:
 
 ```text
-Q: Tell me about Elon Musk.
-A: Elon Musk is a businessman...
+Q: Tell me about OpenAI.
+A: OpenAI was founded by Sam Altman, Greg Brockman, Ilya Sutskever,
+   John Schulman, Wojciech Zaremba, and Elon Musk.
 
-Q: What else did he found?
-Resolved: he -> Elon Musk
-A: Elon Musk founded SpaceX, Neuralink, The Boring Company, xAI, Zip2, and Big Green.
+Q: What did he found?
+Resolution:
+  slot "he" -> unresolved
+  candidates:
+    Elon Musk total=43
+      last_answer_entity=40, mentions=3
+    Greg Brockman total=43
+      last_answer_entity=40, mentions=3
+    Ilya Sutskever total=43
+      last_answer_entity=40, mentions=3
+    John Schulman total=43
+      last_answer_entity=40, mentions=3
+    Sam Altman total=43
+      last_answer_entity=40, mentions=3
+    Wojciech Zaremba total=43
+      last_answer_entity=40, mentions=3
+  margin: 0, below required threshold
+A: audit. unresolved_dialogue_reference
 ```
 
-If a reference cannot be resolved, the system audits instead of guessing.
+The migration path is also explicit. `MICROWORLD_DIALOGUE_V2=shadow` runs the
+new `DialogueState` resolver and commit logic in parallel with the older
+serving behavior so divergences are logged before the new path drives answers.
+The deterministic dialogue benchmark checks zero false resolutions, stable
+trace output across repeated runs, and `DialogueState.replay(records) ==
+live_state` after each session. Compatibility tests keep single-turn QA
+byte-identical when no dialogue slot is present, so adding dialogue context does
+not change the ordinary one-question path.
 
 ## Answer Styles
 
@@ -635,9 +789,9 @@ A: SpaceX is an aerospace manufacturer and space transportation company. It
 ## Speech Quality Benchmarks
 
 `benchmark_speech_quality_v1.py` measures the answer surface, not factual
-coverage. It treats the factual planner as a knowledge-base lookup and checks
-whether speech stays natural, honest about gaps, non-repetitive, and free of
-debug/internal wording.
+coverage. It treats the semantic planner as an explicit-memory lookup and
+checks whether speech stays natural, honest about gaps, non-repetitive, and
+free of debug/internal wording.
 
 It records row-level diagnostics:
 
@@ -693,17 +847,18 @@ worldpgt/experiments/benchmarks/speech_quality_stress_20260708T163840Z.json
 
 ## Performance
 
-Microworld's hot path is mostly indexed lookup, deterministic planning,
-dialogue/context routing, and small renderer passes. It has no GPU dependency
-and does not call a model API at answer time.
+Microworld's hot path is mostly indexed semantic-memory lookup, deterministic
+planning, dialogue/context routing, and small renderer passes. It has no GPU
+dependency and does not call a model API at answer time.
 
 ```mermaid
 flowchart LR
-    Q["Question"] --> IDX["Entity / relation indexes"]
-    IDX --> PLAN["Small deterministic plan"]
-    PLAN --> LOOK["O(1)-style overlay lookup"]
+    Q["Question"] --> SEM["Semantic parse"]
+    SEM --> IDX["Semantic entity / relation indexes"]
+    IDX --> PLAN["Small deterministic semantic plan"]
+    PLAN --> LOOK["O(1)-style semantic-memory lookup"]
     LOOK --> GATE["Safety gate"]
-    GATE --> TEXT["Controlled text"]
+    GATE --> TEXT["Controlled language"]
 ```
 
 Deterministic speech-renderer benchmark snapshot:
@@ -849,13 +1004,13 @@ Recent focused validation:
 worldpgt/
   api/                    FastAPI server and static UI
   assistant_surface/      orchestrator, router, context selector, styles
-  cognition/              reasoning traces, thought loop, phrase graph, graph moves
-  community_context/      Reddit/HN-style context and cognitive pattern memory
-  dialogue/               in-memory conversation state and coreference
-  entity_qa/              parser, analyzer, planner, renderer, synthesis
+  cognition/              reasoning traces, thought loop, semantic moves, phrase storage
+  community_context/      Reddit/HN-style context and semantic pattern memory
+  dialogue/               semantic dialogue state and reference resolution
+  entity_qa/              semantic parser, analyzer, planner, renderer, synthesis
   web_search/             optional volatile live-search providers and cache
-  query_engine/           Find, Filter, Count, Compare, Traverse, Classify
-  multihop_qa/            explicit relation-chain reasoning
+  query_engine/           semantic Find, Filter, Count, Compare, Traverse, Classify
+  multihop_qa/            explicit semantic relation-chain reasoning
   cross_page_qa/          controlled cross-page connection QA
   relation_extraction_v2/ relation policy, patterns, validators
   knowledge_pump/         extraction yield, precision gates, frontier logic
@@ -869,7 +1024,7 @@ worldpgt/
 
 The repository also contains earlier Microworld research tracks around:
 
-- ConceptNet-derived graph prediction
+- ConceptNet-derived relation prediction
 - pattern discovery
 - transitive and mixed-pattern reasoning
 - relation trust
@@ -896,8 +1051,8 @@ Demonstrated in the current repository and preserved research artifacts:
 - ✓ Dialogue context and conservative coreference
 - ✓ Controlled language generation over explicit support
 - ✓ Local runtime latency (8.03ms p50 on the speech stress suite)
-- ✓ Scalable indexed retrieval
-- ✓ Multi-hop explicit reasoning
+- ✓ Scalable indexed semantic retrieval
+- ✓ Multi-hop explicit semantic reasoning
 - ✓ Speech/reasoning surface measured separately from factual coverage
 - ✓ Reddit/HN-style cognitive pattern memory that is blocked from factual support
 - ✓ Optional live-search path with volatile/source-labelled answers
@@ -942,7 +1097,7 @@ Highest-leverage next steps:
    description.
 4. Expand the 1,000-question stress benchmark with more paraphrase families,
    then keep row-level failure diagnostics as the work queue.
-5. Connect cognitive pattern events more deeply to graph-selected moves while
+5. Connect cognitive pattern events more deeply to semantic reasoning moves while
    keeping `factual_support_allowed=false`.
 6. Improve live-search precision before presenting it as a serious open-domain
    result.
