@@ -1,11 +1,13 @@
 # Microworld
 
-Microworld is an experimental semantic AI runtime with explicit memory,
-deterministic reasoning, dialogue state, and a controlled language renderer.
-It tests a narrower alternative to the usual LLM stack: semantic memory,
-semantic reasoning, semantic dialogue context, and a separately controlled
-speech layer instead of one opaque next-token model doing facts, reasoning,
-style, and safety at the same time.
+Experimental semantic AI runtime exploring explicit memory, deterministic
+reasoning, dialogue systems, and controlled language generation.
+
+Microworld tests a new approach to AI: build the runtime around explicit,
+inspectable semantic state instead of asking one opaque next-token model to do
+facts, reasoning, dialogue, style, and safety at the same time. The project is
+a research implementation of semantic memory, semantic reasoning, semantic
+dialogue context, and a separately controlled speech layer.
 
 The current system is not AGI and not an open-domain replacement for modern
 LLMs. It is a bounded explicit-memory AI runtime that answers only when it can
@@ -301,22 +303,16 @@ The expanded runner list and validation notes are in
 
 ## Documentation
 
-- [Architecture](docs/architecture.md): module boundaries, memory buckets,
-  community context, optional live search, and runtime artifacts.
-- [Semantic runtime](docs/semantic_runtime.md): semantic-first design,
-  planning, question types, examples, and support contracts.
-- [Dialogue context](docs/dialogue_context.md): explicit session state,
-  resolver behavior, ambiguity handling, and dialogue-v2 migration.
-- [Language renderer](docs/language_renderer.md): controlled text generation,
-  phrase graph behavior, styles, and surface validation.
-- [Knowledge pump](docs/knowledge_pump.md): proposal-only acquisition,
-  precision gates, frontier loops, and pump status.
-- [Safety model](docs/safety_model.md): support policy, temporal policy,
-  memory boundaries, live-search disclosure, and known safety limits.
-- [Benchmarks](docs/benchmarks.md): current benchmark snapshots, performance,
-  WebQuestions-style results, validation commands, and artifact paths.
-- [Research results](docs/research_results.md): preserved historical tracks,
-  demonstrated results, limitations, next work, and project status.
+| Document | Description |
+|---|---|
+| [architecture.md](docs/architecture.md) | Module boundaries, memory buckets, community context, optional live search, and runtime artifacts. |
+| [semantic_runtime.md](docs/semantic_runtime.md) | Semantic-first design, planning, question types, examples, and support contracts. |
+| [dialogue_context.md](docs/dialogue_context.md) | Explicit session state, resolver behavior, ambiguity handling, and dialogue-v2 migration. |
+| [language_renderer.md](docs/language_renderer.md) | Controlled text generation, phrase graph behavior, styles, and surface validation. |
+| [knowledge_pump.md](docs/knowledge_pump.md) | Proposal-only acquisition, precision gates, frontier loops, and pump status. |
+| [safety_model.md](docs/safety_model.md) | Support policy, temporal policy, memory boundaries, live-search disclosure, and known safety limits. |
+| [benchmarks.md](docs/benchmarks.md) | Current benchmark snapshots, performance, WebQuestions-style results, validation commands, and artifact paths. |
+| [research_results.md](docs/research_results.md) | Preserved historical tracks, demonstrated results, limitations, next work, and project status. |
 
 ## Status
 
