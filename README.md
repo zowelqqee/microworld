@@ -322,3 +322,7 @@ controlled rendering. It is useful where the current artifacts contain support;
 outside that boundary it should audit or label volatile sources. The research
 target is inspectability of memory, trust, policy, dialogue, and rendering, not
 open-ended language-model generality.
+
+## License
+
+Apache License 2.0. See the LICENSE file for details.
