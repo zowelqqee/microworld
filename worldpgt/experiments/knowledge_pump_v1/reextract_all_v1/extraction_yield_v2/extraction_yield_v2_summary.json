@@ -1,0 +1,30 @@
+{
+  "extraction_yield_v2_enabled": true,
+  "candidate_source": "pump_extraction_yield_v2",
+  "extraction_yield_v2_candidate_count": 116,
+  "extraction_yield_v2_relation_candidate_count": 93,
+  "extraction_yield_v2_definition_candidate_count": 23,
+  "extraction_yield_v2_rejected_count": 0,
+  "extraction_yield_v2_quarantined_count": 0,
+  "extraction_yield_v2_candidate_by_pattern": {
+    "acquired_active_v2": 2,
+    "acquired_by_v2": 3,
+    "alias_v2": 6,
+    "construction_started_v2": 1,
+    "developed_by_v2": 1,
+    "develops_inverse_v2": 1,
+    "founded_by_v2": 5,
+    "headquartered_in_v2": 6,
+    "introduced_v2": 3,
+    "lead_definition_v2": 23,
+    "located_in_v2": 36,
+    "owned_by_v2": 3,
+    "provides_v2": 8,
+    "used_for_v2": 5,
+    "uses_v2": 13
+  },
+  "docs_processed": 0,
+  "docs_errors": 0,
+  "screened_out_sentence_count": 0,
+  "network_calls": false
+}

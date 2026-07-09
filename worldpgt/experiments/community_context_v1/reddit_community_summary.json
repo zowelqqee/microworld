@@ -1,0 +1,34 @@
+{
+  "built_at": "2026-07-05T21:37:32.021501+00:00",
+  "source_system": "reddit",
+  "input_records_count": 371,
+  "accepted_context_items_count": 371,
+  "cognitive_pattern_events_count": 428,
+  "quarantine_count": 0,
+  "quarantine_by_reason": {},
+  "accepted_by_subreddit": {
+    "HackerNews": 371
+  },
+  "cognitive_patterns_by_kind": {
+    "analogy_pattern": 99,
+    "debugging_pattern": 1,
+    "explanation_pattern": 87,
+    "mistake_pattern": 74,
+    "procedure_pattern": 27,
+    "question_pattern": 46,
+    "style_tone_pattern": 69,
+    "uncertainty_pattern": 25
+  },
+  "context_path": "worldpgt/experiments/community_context_v1/reddit_community_context.json",
+  "quarantine_path": "worldpgt/experiments/community_context_v1/reddit_community_quarantine.json",
+  "speaking_profile_path": "worldpgt/experiments/community_context_v1/reddit_speaking_profile.json",
+  "cognitive_patterns_path": "worldpgt/experiments/community_context_v1/cognitive_pattern_events.json",
+  "cognitive_graphs_path": "worldpgt/experiments/community_context_v1/cognitive_pattern_graphs.json",
+  "trust": "community_context_only",
+  "factual_support_allowed": false,
+  "community_patterns_factual_support_allowed": false,
+  "pattern_memory_layer": "cognitive_behavioral_patterns",
+  "accepted_overlay_modified": false,
+  "promoted_overlay_modified": false,
+  "snapshot_dry_run_overlay_modified": false
+}

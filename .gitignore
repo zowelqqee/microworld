@@ -1,0 +1,99 @@
+data/conceptnet-assertions-5.7.0.csv.gz
+data/conceptnet-assertions-5.7.0.csv.gz
+nanogpt/
+nanoGPT/
+# Generated Knowledge Pump batch snapshots. Recreate by running the pump.
+worldpgt/experiments/knowledge_pump_v1/batch_snapshots/
+
+.claude/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / packaging
+*.whl
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# nanoGPT / local model weights (not committed)
+nanogpt/
+nanoGPT/
+
+# Large data files
+data/*.csv.gz
+data/*.gz
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test/cache artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# generated / heavy experiment artifacts
+pump_*.log
+*.raw.log
+
+worldpgt/experiments/knowledge_pump_v1/**/chunks/
+worldpgt/experiments/knowledge_pump_v1/**/*_delta.json
+worldpgt/experiments/knowledge_pump_v1/**/raw_claims.jsonl
+worldpgt/experiments/knowledge_pump_v1/**/argument_frames.jsonl
+worldpgt/experiments/knowledge_pump_v1/**/entities.generated.json
+worldpgt/experiments/knowledge_pump_v1/**/local_types.generated.json
+worldpgt/experiments/knowledge_pump_v1/**/schema_induced_overlay_*.json
+worldpgt/experiments/knowledge_pump_v1/**/selected_docs.json
+worldpgt/experiments/knowledge_pump_v1/pump_*.json
+worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json
+worldpgt/experiments/**
+!worldpgt/experiments/
+!worldpgt/experiments/benchmark_speech_quality_v1.py

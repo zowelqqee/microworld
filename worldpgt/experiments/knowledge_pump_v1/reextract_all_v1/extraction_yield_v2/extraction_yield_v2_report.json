@@ -1,0 +1,661 @@
+{
+  "summary": {
+    "extraction_yield_v2_enabled": true,
+    "candidate_source": "pump_extraction_yield_v2",
+    "extraction_yield_v2_candidate_count": 116,
+    "extraction_yield_v2_relation_candidate_count": 93,
+    "extraction_yield_v2_definition_candidate_count": 23,
+    "extraction_yield_v2_rejected_count": 0,
+    "extraction_yield_v2_quarantined_count": 0,
+    "extraction_yield_v2_candidate_by_pattern": {
+      "acquired_active_v2": 2,
+      "acquired_by_v2": 3,
+      "alias_v2": 6,
+      "construction_started_v2": 1,
+      "developed_by_v2": 1,
+      "develops_inverse_v2": 1,
+      "founded_by_v2": 5,
+      "headquartered_in_v2": 6,
+      "introduced_v2": 3,
+      "lead_definition_v2": 23,
+      "located_in_v2": 36,
+      "owned_by_v2": 3,
+      "provides_v2": 8,
+      "used_for_v2": 5,
+      "uses_v2": 13
+    },
+    "docs_processed": 0,
+    "docs_errors": 0,
+    "screened_out_sentence_count": 0,
+    "network_calls": false
+  },
+  "stats": {
+    "network_calls": false
+  },
+  "candidate_examples": [
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "British Aerospace",
+      "source_page": "Aerospace manufacturer",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Systems, a subsidiary of the General Electric Company,",
+      "predicate": "owned_by",
+      "object": "US",
+      "source_page": "Aerospace manufacturer",
+      "evidence_text": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_by_v2",
+      "v2_pattern_id": "acquired_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Marconi Electronic Systems, a subsidiary of the General Electric Company, was acquired by British Aerospace for US$12.3 billion in 1999 merger, to form BAE Systems."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Automotive industry",
+      "predicate": "located_in",
+      "object": "North America",
+      "source_page": "Automotive industry",
+      "evidence_text": "The industry's expansion has also led to specialised academic programs in automotive marketing and dealership management; for example, Northwood University in Michigan hosts the annual Northwood University International Auto Show, which is the largest student-run outdoor automotive exhibition in North America.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The industry's expansion has also led to specialised academic programs in automotive marketing and dealership management; for example, Northwood University in Michigan hosts the annual Northwood University International Auto Show, which is the largest student-run outdoor automotive exhibition in North America."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Two of these buses",
+      "predicate": "used_for",
+      "object": "the 1996 Summer Olympics in Atlanta",
+      "source_page": "Battery electric vehicle",
+      "evidence_text": "Two of these buses were used for the 1996 Summer Olympics in Atlanta.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "used_for_v2",
+      "v2_pattern_id": "used_for_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Two of these buses were used for the 1996 Summer Olympics in Atlanta."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Proterra EcoRide BE35",
+      "predicate": "uses",
+      "object": "lithium-titanate batteries and is able",
+      "source_page": "Battery electric vehicle",
+      "evidence_text": "The Proterra EcoRide BE35 uses lithium-titanate batteries and is able to fast-charge in less than 10 minutes.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "uses_v2",
+      "v2_pattern_id": "uses_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "The Proterra EcoRide BE35 uses lithium-titanate batteries and is able to fast-charge in less than 10 minutes."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Battery electric vehicle",
+      "predicate": "located_in",
+      "object": "California's San Joaquin Valley",
+      "source_page": "Battery electric vehicle",
+      "evidence_text": "In 2014, the first production model all-electric school bus was delivered to the Kings Canyon Unified School District in California's San Joaquin Valley.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "In 2014, the first production model all-electric school bus was delivered to the Kings Canyon Unified School District in California's San Joaquin Valley."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Arnault",
+      "predicate": "located_in",
+      "object": "Roubaix",
+      "source_page": "Bernard Arnault",
+      "evidence_text": "Early life and education Bernard Jean Étienne Arnault was born on 5 March 1949 in Roubaix.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Early life and education Bernard Jean Étienne Arnault was born on 5 March 1949 in Roubaix."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Arnault took classical piano lessons as a child",
+      "predicate": "located_in",
+      "object": "Lille",
+      "source_page": "Bernard Arnault",
+      "evidence_text": "Raised in a \"strict Catholic-Auvergne\" style by his devoutly Catholic grandmother, Arnault took classical piano lessons as a child and was educated at Catholic schools, the Lycée Maxence Van Der Meersch in Roubaix and the Lycée Faidherbe in Lille, which takes boarders and prepares them for the grandes écoles.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Raised in a \"strict Catholic-Auvergne\" style by his devoutly Catholic grandmother, Arnault took classical piano lessons as a child and was educated at Catholic schools, the Lycée Maxence Van Der Meersch in Roubaix and the Lycée Faidherbe in Lille, which takes boarders and prepares them for the grandes écoles."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Berluti and Kenzo",
+      "predicate": "owned_by",
+      "object": "LVMH",
+      "source_page": "Bernard Arnault",
+      "evidence_text": "LVMH acquired Berluti and Kenzo in 1993, the same year Arnault bought out the French economic newspaper La Tribune.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "acquired_active_v2",
+      "v2_pattern_id": "acquired_active_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "LVMH acquired Berluti and Kenzo in 1993, the same year Arnault bought out the French economic newspaper La Tribune."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Data for each year",
+      "predicate": "located_in",
+      "object": "U.S",
+      "source_page": "Billionaire",
+      "evidence_text": "Data for each year is from the annual Forbes list of billionaires, with currency figures given in U.S. dollars.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Data for each year is from the annual Forbes list of billionaires, with currency figures given in U.S. dollars."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg L.P.",
+      "predicate": "located_in",
+      "object": "Midtown Manhattan, New York City",
+      "source_page": "Bloomberg L.P.",
+      "evidence_text": "Bloomberg L.P. is an American privately held financial, software, data, and media company headquartered in Midtown Manhattan, New York City.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg L.P. is an American privately held financial, software, data, and media company headquartered in Midtown Manhattan, New York City."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "New Energy Finance",
+      "predicate": "developed_by",
+      "object": "Michael Liebreich",
+      "source_page": "Bloomberg L.P.",
+      "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "developed_by_v2",
+      "v2_pattern_id": "developed_by_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Michael Liebreich",
+      "predicate": "develops",
+      "object": "New Energy Finance",
+      "source_page": "Bloomberg L.P.",
+      "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+      "trust": "overlay_candidate",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "develops_inverse_v2",
+      "v2_pattern_id": "develops_inverse_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Bloomberg News",
+      "definition": "American news agency",
+      "predicate": "is_a",
+      "source_page": "Bloomberg News",
+      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "American news agency",
+      "predicate": "headquartered_in",
+      "object": "New York City",
+      "source_page": "Bloomberg News",
+      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Bloomberg News",
+      "predicate": "located_in",
+      "object": "New York City",
+      "source_page": "Bloomberg News",
+      "evidence_text": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Bloomberg News (originally Bloomberg Business News) is an American news agency headquartered in New York City, and a division of Bloomberg L.P. Content produced by Bloomberg News is disseminated through Bloomberg Terminals, Bloomberg Television, Bloomberg Radio, Bloomberg Businessweek, Bloomberg Markets, Bloomberg.com, and Bloomberg's mobile platforms."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Blue Origin Enterprises, L.P.",
+      "definition": "private American space technology company",
+      "predicate": "is_a",
+      "source_page": "Blue Origin",
+      "evidence_text": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "L.P. is a private American space technology company",
+      "predicate": "headquartered_in",
+      "object": "Kent",
+      "source_page": "Blue Origin",
+      "evidence_text": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "headquartered_in_v2",
+      "v2_pattern_id": "headquartered_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington."
+    },
+    {
+      "overlay_type": "overlay_relation",
+      "subject": "Blue Origin",
+      "predicate": "located_in",
+      "object": "Kent, Washington",
+      "source_page": "Blue Origin",
+      "evidence_text": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "semi_stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "located_in_v2",
+      "v2_pattern_id": "located_in_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Blue Origin Enterprises, L.P. is a private American space technology company headquartered in Kent, Washington."
+    },
+    {
+      "overlay_type": "overlay_definition",
+      "subject": "Cape Canaveral Space Force Station",
+      "definition": "installation of the United States Space Force's Space Launch Delta 45",
+      "predicate": "is_a",
+      "source_page": "Cape Canaveral Space Force Station",
+      "evidence_text": "Cape Canaveral Space Force Station (CCSFS) is an installation of the United States Space Force's Space Launch Delta 45, located on Cape Canaveral in Brevard County, Florida.",
+      "trust": "overlay_candidate",
+      "risk": "low",
+      "stability": "stable",
+      "candidate_source": "pump_extraction_yield_v2",
+      "extraction_pattern": "lead_definition_v2",
+      "v2_pattern_id": "lead_definition_v2",
+      "confidence_label": "pattern_explicit",
+      "evidence_span": "Cape Canaveral Space Force Station (CCSFS) is an installation of the United States Space Force's Space Launch Delta 45, located on Cape Canaveral in Brevard County, Florida."
+    }
+  ],
+  "rejected_examples": [],
+  "quarantine_examples": [],
+  "by_source_page": [
+    {
+      "source_page": "OpenAI",
+      "candidate_count": 5,
+      "relation_count": 5,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Twitter",
+      "candidate_count": 5,
+      "relation_count": 5,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Falcon 1",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Jeff Bezos",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "LVMH",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Michael Bloomberg",
+      "candidate_count": 4,
+      "relation_count": 3,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Satellite constellation",
+      "candidate_count": 4,
+      "relation_count": 4,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Battery electric vehicle",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Bernard Arnault",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Bloomberg L.P.",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Bloomberg News",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Blue Origin",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Neuralink",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "New York Stock Exchange",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Oracle Corporation",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "SpaceX",
+      "candidate_count": 3,
+      "relation_count": 3,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Starlink",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "X Corp.",
+      "candidate_count": 3,
+      "relation_count": 2,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Aerospace manufacturer",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Cape Canaveral Space Force Station",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Dragon 2",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Elon Musk",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Falcon 9",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Internet service provider",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Larry Ellison",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Low Earth orbit",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Nasdaq",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Raptor rocket engine",
+      "candidate_count": 2,
+      "relation_count": 2,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Solar power",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "SolarCity",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Tesla Model 3",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Tesla Model Y",
+      "candidate_count": 2,
+      "relation_count": 1,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Automotive industry",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Billionaire",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Commercial Crew Program",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Entrepreneurship",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Forbes",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Fortune 500",
+      "candidate_count": 1,
+      "relation_count": 0,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Hyperloop",
+      "candidate_count": 1,
+      "relation_count": 0,
+      "definition_count": 1
+    },
+    {
+      "source_page": "International Space Station",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Kennedy Space Center",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Lithium-ion battery",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Mars",
+      "candidate_count": 1,
+      "relation_count": 0,
+      "definition_count": 1
+    },
+    {
+      "source_page": "NASA",
+      "candidate_count": 1,
+      "relation_count": 0,
+      "definition_count": 1
+    },
+    {
+      "source_page": "Reusable launch system",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Rocket",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Space industry",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Space tourism",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "SpaceX Starship",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    },
+    {
+      "source_page": "Spacecraft",
+      "candidate_count": 1,
+      "relation_count": 1,
+      "definition_count": 0
+    }
+  ]
+}

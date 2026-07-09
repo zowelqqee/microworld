@@ -1,0 +1,59 @@
+{
+  "chunk_index": 1,
+  "docs": 91,
+  "ingestion_candidates": 254,
+  "snapshot_overlay_items": 254,
+  "raw_relation_candidates": 691,
+  "safe_relation_candidates": 46,
+  "relation_quarantine": 645,
+  "relation_duplicates": 7,
+  "relation_conflicts": 0,
+  "sentences_scanned": 17558,
+  "v2_items": 116,
+  "accepted_answerable": 74,
+  "accepted_by_type": {
+    "overlay_relation": 52,
+    "overlay_definition": 22
+  },
+  "accepted_by_predicate": {
+    "uses": 7,
+    "located_in": 25,
+    "developed_by": 1,
+    "develops": 1,
+    "is_a": 22,
+    "used_for": 2,
+    "construction_started": 1,
+    "provides": 4,
+    "founded_by": 5,
+    "alias": 2,
+    "owned_by": 1,
+    "introduced": 3
+  },
+  "doc_status": {
+    "attempted": 91,
+    "succeeded": 91,
+    "failed": 0
+  },
+  "ingestion_by_type": {
+    "context_link": 155,
+    "definition_claim": 3,
+    "entity_card": 91,
+    "relation_claim": 4,
+    "source_qualified_fact": 1
+  },
+  "failures": 0,
+  "errors": [],
+  "elapsed_sec": 20.44,
+  "precision_v1_before": 123,
+  "precision_v1_after": 78,
+  "precision_v1_rejected": 43,
+  "precision_v1_quarantined": 2,
+  "precision_v2_before": 78,
+  "precision_v2_after": 74,
+  "precision_v2_rejected": 1,
+  "precision_v2_quarantined": 3,
+  "precision_cleanup_before": 74,
+  "precision_cleanup_after": 74,
+  "precision_cleanup_rejected": 0,
+  "precision_cleanup_quarantined": 0
+}

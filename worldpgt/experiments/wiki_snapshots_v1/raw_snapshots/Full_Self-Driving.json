@@ -1,0 +1,15 @@
+{
+  "title": "Full Self-Driving",
+  "normalized_title": "Full Self-Driving",
+  "pageid": 65716269,
+  "revision_id": 1235445188,
+  "timestamp": "2024-07-19T09:22:50Z",
+  "source_url": "https://en.wikipedia.org/wiki/Full_Self-Driving",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&redirects=1&titles=Full+Self-Driving",
+  "retrieved_at": "2026-06-15T07:16:44Z",
+  "raw_text": "Full self-driving most commonly refers to:\n\nSelf-driving car, a classification of autonomous technology relating to automotive vehicles\nTesla Autopilot with Full Self-Driving (FSD) capabilities, developed by Tesla, Inc.",
+  "raw_text_sha256": "16310a338150fa72b531e0505b7b8e53a78e82c089962fca7d22bb71368495e8",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": ""
+}

@@ -1,0 +1,58 @@
+source_page,candidate_count,relation_count,definition_count
+OpenAI,5,5,0
+Twitter,5,5,0
+Falcon 1,4,3,1
+Jeff Bezos,4,3,1
+LVMH,4,3,1
+Michael Bloomberg,4,3,1
+Satellite constellation,4,4,0
+Battery electric vehicle,3,3,0
+Bernard Arnault,3,3,0
+Bloomberg L.P.,3,3,0
+Bloomberg News,3,2,1
+Blue Origin,3,2,1
+Neuralink,3,2,1
+New York Stock Exchange,3,3,0
+Oracle Corporation,3,2,1
+SpaceX,3,3,0
+Starlink,3,2,1
+X Corp.,3,2,1
+Aerospace manufacturer,2,2,0
+Cape Canaveral Space Force Station,2,1,1
+Dragon 2,2,1,1
+Elon Musk,2,2,0
+Falcon 9,2,1,1
+Internet service provider,2,2,0
+Larry Ellison,2,1,1
+Low Earth orbit,2,2,0
+Nasdaq,2,2,0
+Raptor rocket engine,2,2,0
+Solar power,2,1,1
+SolarCity,2,1,1
+Tesla Model 3,2,1,1
+Tesla Model Y,2,1,1
+Automotive industry,1,1,0
+Billionaire,1,1,0
+Commercial Crew Program,1,1,0
+Entrepreneurship,1,1,0
+Forbes,1,1,0
+Fortune 500,1,0,1
+Hyperloop,1,0,1
+International Space Station,1,1,0
+Kennedy Space Center,1,1,0
+Lithium-ion battery,1,1,0
+Mars,1,0,1
+NASA,1,0,1
+Reusable launch system,1,1,0
+Rocket,1,1,0
+Space industry,1,1,0
+Space tourism,1,1,0
+SpaceX Starship,1,1,0
+Spacecraft,1,1,0
+Stock exchange,1,1,0
+Stock price,1,1,0
+Supercharger,1,1,0
+Tesla Model S,1,1,0
+Tesla Model X,1,1,0
+U.S. Securities and Exchange Commission,1,0,1
+Vandenberg Space Force Base,1,1,0

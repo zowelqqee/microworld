@@ -1,0 +1,2 @@
+chunk_index,docs,ingestion_candidates,snapshot_overlay_items,raw_relation_candidates,safe_relation_candidates,relation_quarantine,relation_duplicates,relation_conflicts,sentences_scanned,v2_items,accepted_answerable,elapsed_sec
+1,91,254,254,691,46,645,7,0,17558,116,74,20.44

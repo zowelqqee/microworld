@@ -1,0 +1,398 @@
+{
+  "source_system": "reddit",
+  "trust": "community_context_only",
+  "item_count": 371,
+  "factual_support_allowed": false,
+  "top_topic_terms": [
+    {
+      "term": "hackernews",
+      "count": 164
+    },
+    {
+      "term": "programming",
+      "count": 86
+    },
+    {
+      "term": "thi",
+      "count": 82
+    },
+    {
+      "term": "it'",
+      "count": 46
+    },
+    {
+      "term": "learn",
+      "count": 45
+    },
+    {
+      "term": "need",
+      "count": 35
+    },
+    {
+      "term": "ask",
+      "count": 32
+    },
+    {
+      "term": "people",
+      "count": 29
+    },
+    {
+      "term": "all",
+      "count": 28
+    },
+    {
+      "term": "system",
+      "count": 25
+    },
+    {
+      "term": "start",
+      "count": 24
+    },
+    {
+      "term": "language",
+      "count": 23
+    },
+    {
+      "term": "new",
+      "count": 22
+    },
+    {
+      "term": "build",
+      "count": 22
+    },
+    {
+      "term": "i'm",
+      "count": 22
+    },
+    {
+      "term": "work",
+      "count": 21
+    },
+    {
+      "term": "get",
+      "count": 21
+    },
+    {
+      "term": "job",
+      "count": 21
+    },
+    {
+      "term": "advice",
+      "count": 21
+    },
+    {
+      "term": "use",
+      "count": 20
+    },
+    {
+      "term": "you're",
+      "count": 20
+    },
+    {
+      "term": "model",
+      "count": 20
+    },
+    {
+      "term": "claude",
+      "count": 20
+    },
+    {
+      "term": "compiler",
+      "count": 20
+    },
+    {
+      "term": "make",
+      "count": 19
+    },
+    {
+      "term": "llm",
+      "count": 19
+    },
+    {
+      "term": "thing",
+      "count": 19
+    },
+    {
+      "term": "time",
+      "count": 18
+    },
+    {
+      "term": "meditat",
+      "count": 17
+    },
+    {
+      "term": "way",
+      "count": 16
+    },
+    {
+      "term": "still",
+      "count": 16
+    },
+    {
+      "term": "mistake",
+      "count": 16
+    },
+    {
+      "term": "good",
+      "count": 16
+    },
+    {
+      "term": "should",
+      "count": 16
+    },
+    {
+      "term": "think",
+      "count": 15
+    },
+    {
+      "term": "very",
+      "count": 15
+    },
+    {
+      "term": "tool",
+      "count": 15
+    },
+    {
+      "term": "say",
+      "count": 14
+    },
+    {
+      "term": "even",
+      "count": 14
+    },
+    {
+      "term": "know",
+      "count": 13
+    },
+    {
+      "term": "look",
+      "count": 13
+    },
+    {
+      "term": "year",
+      "count": 13
+    },
+    {
+      "term": "beginner",
+      "count": 13
+    },
+    {
+      "term": "will",
+      "count": 12
+    },
+    {
+      "term": "show",
+      "count": 12
+    },
+    {
+      "term": "much",
+      "count": 12
+    },
+    {
+      "term": "engineer",
+      "count": 12
+    },
+    {
+      "term": "want",
+      "count": 12
+    },
+    {
+      "term": "now",
+      "count": 12
+    },
+    {
+      "term": "python",
+      "count": 12
+    }
+  ],
+  "top_subreddits": [
+    {
+      "subreddit": "HackerNews",
+      "count": 371
+    }
+  ],
+  "sample_question_phrasings": [
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: High school student – is learning programming still worthwhile?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "What happened to nerds?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: High school student – is learning programming still worthwhile?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "The great blogging collapse: What happened to 100 successful blogs?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: What are you working on? (June 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "What color is your function? (2015)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: What was your \"oh shit\" moment with GenAI?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who is hiring? (July 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who is hiring? (June 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who is hiring? (July 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "How has mathematics gotten so abstract?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who is hiring? (June 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: After you ship a feature, what happens to what you learned?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Technical feedback on a client-side microkernel enclave?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who is hiring? (July 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "AI is 'not smart' so what's next in artificial intelligence?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: How to be alone?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who wants to be hired? (July 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Peopleless economy? Not technically impossible",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Who wants to be hired? (July 2026)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Is HN crowd a left-leaning?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "My dad helped build North America's oat supply chain: Can it be remade?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Are most corporate SWE jobs performative?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Is there a better and more affordable AI coding tool than Claude?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "NSA tries to weaken mlkem standardisation?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Ask HN: Should I learn Docker to deploy my app in VPS?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Do you hate XML? (2010)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Do you hate XML? (2010)",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "Why is Vivado 2026.1 dropping Linux support for free tier?",
+      "score": 3
+    },
+    {
+      "subreddit": "HackerNews",
+      "text": "What happened to nerds?",
+      "score": 3
+    }
+  ],
+  "sample_common_concerns": [
+    "Cannabis users face substantially higher risk of heart attack (2025) Cannabis users face substantially higher risk of heart attack (2025) I have been a heavy cannabis user (like that guy in the Bob Marley song who.",
+    "$85,000 in tokens later: What I learned from scaling agentic coding at Lovable $85,000 in tokens later: What I learned from scaling agentic coding at Lovable Very respectfully this all sounds incoherent. You have also.",
+    "I am retiring from tech to live offline I am retiring from tech to live offline I have been at it for 20 years now and have started to feel my time is up as well As a lot of comments here highlights, the issue is not so.",
+    "I think Anthropic and OpenAI have found product-market fit I think Anthropic and OpenAI have found product-market fit While I can imagine that I'd want to use Opus 4.8 over 4.6 for a fair number of things (at least if.",
+    "Ask HN: High school student – is learning programming still worthwhile? Ask HN: High school student – is learning programming still worthwhile? I'm thinking about the future of programming as a skill like math or.",
+    "Falling fertility on the left as key driver of US birth decline Falling fertility on the left as key driver of US birth decline I think the way the left's exterior reproduction's been successful is by leveraging the.",
+    "Breaking Changes in Python-3.14 Breaking Changes in Python-3.14 > The python people don't adhere to this principle It's harder to \"not break user space\" when you don't have a \"kernel space\". No, the C API does not.",
+    "The Ask The Ask I understand the following isn’t the point of this piece and yet I still can’t help wondering: How much better off we would all be if “senior management” stopped playing these games to get things done.",
+    "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) From the link in my previous post[0]: > False: Select PEP 249-compliant.",
+    "The Radiation Exposure Lie The Radiation Exposure Lie > Drinking one beer a night for a year is a lot less harmful than drinking 365 beers in one go. The same applies to radiation exposure, but regulation doesn’t agree.",
+    "Pet projects are getting too big to pet Pet projects are getting too big to pet These blog posts, lamenting losing something, create fascinating juxtaposition against posts from people having more fun than ever, and.",
+    "We found a bug in the hyper HTTP library We found a bug in the hyper HTTP library There's a hidden equivocation there. \"Handling\" errors, as far as the language is concerned, mean you do something with them, but.",
+    "Peopleless economy? Not technically impossible Peopleless economy? Not technically impossible I think you're mistaken about this, because you're stuck in previous eras where the technological gap between \"the people\".",
+    "How Japan's railways stayed one while splitting apart How Japan's railways stayed one while splitting apart Doesn't this article exactly make that point? Because it shows how JR was split apart, yet the brand logo still.",
+    "Building durable workflows on Postgres Building durable workflows on Postgres This feels like the sort of architecture that starts clean and then gradually grows most of the things a workflow-native system already has.",
+    "Task Failed Successfully: Saturating NIC and Disk Bandwidth Task Failed Successfully: Saturating NIC and Disk Bandwidth Author here. This post is a write-up of a performance-debugging rabbit hole I hit while trying to.",
+    "Saying goodbye to asm.js Saying goodbye to asm.js The bit about \"thick apps\" always stuck with me. Partly because the name is funny, partly because it hit close to home. The first time I saw his talk, I was an intern.",
+    "Building durable workflows on Postgres Building durable workflows on Postgres I suppose you're right. What I liked about it was this very specific graf, which gave me a lot to think about as a (potential) future.",
+    "We can’t circumvent the work needed to train our minds We can’t circumvent the work needed to train our minds Reminds me of when I debug why my aquascape (I’m a beginner) keeps having algae outbreak such as GSA and.",
+    "What happened to nerds? What happened to nerds? I think the ire is from people who were nerds pre 2000. Before software was a way to wealth. People who made weird stuff because they wanted to. Then some of those people.",
+    "Maybe you should learn something Maybe you should learn something Re: energy specifically - I think \"psychological state\" is the main thing. Once there's a will, there's a way. Make it not draining on your psyche to.",
+    "Ask HN: Why is the HN crowd so anti-AI? Ask HN: Why is the HN crowd so anti-AI? Some people are resistant to change and will make irrational and illogical arguments against any change they see as threatening. AI is just.",
+    "Better Models: Worse Tools Better Models: Worse Tools I think Agents need user-accounts on your machine, and for us an easy way to configure the permissions each agent has, and then we dont' have to worry about.",
+    "DeepSeek V4 Pro beats GPT-5.5 Pro on precision DeepSeek V4 Pro beats GPT-5.5 Pro on precision Much more bang per dollar, yes. Somewhat less bang per hour. As usual, different models get stuck on different things. I run.",
+    "Emacs 31 is around the corner: The changes I'm daily driving Emacs 31 is around the corner: The changes I'm daily driving >You won't suddenly find your text editor \"upgraded\" with tons of new features you never asked.",
+    "Programmers need to start meditating Programmers need to start meditating I noticed how relaxing and meditative programming can be. It might sound that after day job basically solving other people pronlems I sit down.",
+    "Lore – Open source version control system designed for scalability Lore – Open source version control system designed for scalability I dunno, I feel like it's useful output. Sure, maybe you don't need all of the.",
+    "What Apple and Google are doing to push notifications What Apple and Google are doing to push notifications This is basically required for clueless (and even not so clueless) users. If there's a chat app I installed 3.",
+    "[dead] [dead] I created Investing Made Easy for Beginners for one simple reason: I remember what it felt like to be completely confused about investing. The jargon. The conflicting advice. The fear of losing money. The."
+  ],
+  "usage": "Use for conversational phrasing, examples, and common concerns. Do not use as stable factual support."
+}

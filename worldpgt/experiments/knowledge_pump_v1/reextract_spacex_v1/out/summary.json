@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "network_calls": false,
+  "docs_total_ready": 4,
+  "docs_selected": 4,
+  "chunks_total": 1,
+  "chunks_done": 1,
+  "docs_processed": 4,
+  "answerable_after_precision": 5,
+  "relation_count": 4,
+  "definition_count": 1,
+  "accepted_by_predicate": {
+    "located_in": 2,
+    "is_a": 1,
+    "uses": 1,
+    "introduced": 1
+  },
+  "totals": {
+    "docs_processed": 4,
+    "ingestion_candidates": 6,
+    "snapshot_overlay_items": 6,
+    "raw_relation_candidates": 40,
+    "safe_relation_candidates": 6,
+    "relation_quarantine": 34,
+    "relation_duplicates": 1,
+    "relation_conflicts": 0,
+    "sentences_scanned": 902,
+    "v2_items": 8,
+    "accepted_answerable_before_global_dedupe": 6,
+    "failures": 0
+  },
+  "elapsed_sec": 1.02,
+  "avg_docs_per_sec": 3.9216,
+  "existing_overlay_duplicates_dropped": 1
+}

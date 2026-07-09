@@ -1,0 +1,2 @@
+chunk_index,docs,ingestion_candidates,snapshot_overlay_items,raw_relation_candidates,safe_relation_candidates,relation_quarantine,relation_duplicates,relation_conflicts,sentences_scanned,v2_items,accepted_answerable,elapsed_sec
+1,4,6,6,40,6,34,1,0,902,8,6,1.0

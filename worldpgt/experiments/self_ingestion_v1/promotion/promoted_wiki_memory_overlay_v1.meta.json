@@ -1,0 +1,11 @@
+{
+  "overlay_kind": "promoted_self_ingestion_overlay_v1",
+  "promoted_from": "self_ingestion_v1/overlay_delta_proposal.json",
+  "base_overlay": "accepted_wiki_memory_overlay_v1.json",
+  "trusted_general_runtime_memory": false,
+  "safe_for_general_runtime": false,
+  "note": "This overlay is a PROMOTED self-ingestion overlay built by merging the base accepted wiki overlay with validator-accepted delta items. It is an isolated knowledge overlay for QA regression only and is NOT trusted general runtime memory.",
+  "base_overlay_items": 283,
+  "accepted_delta_items": 27,
+  "promoted_overlay_items": 310
+}

@@ -1,0 +1,21 @@
+{
+  "extraction_yield_v2_enabled": true,
+  "candidate_source": "pump_extraction_yield_v2",
+  "extraction_yield_v2_candidate_count": 8,
+  "extraction_yield_v2_relation_candidate_count": 7,
+  "extraction_yield_v2_definition_candidate_count": 1,
+  "extraction_yield_v2_rejected_count": 0,
+  "extraction_yield_v2_quarantined_count": 0,
+  "extraction_yield_v2_candidate_by_pattern": {
+    "founded_by_v2": 1,
+    "introduced_v2": 1,
+    "lead_definition_v2": 1,
+    "located_in_v2": 2,
+    "provides_v2": 1,
+    "uses_v2": 2
+  },
+  "docs_processed": 0,
+  "docs_errors": 0,
+  "screened_out_sentence_count": 0,
+  "network_calls": false
+}

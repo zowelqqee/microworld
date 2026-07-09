@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "overlay": "pump-dry-run",
+    "as_of": "2026-07-03",
+    "min_support": 2,
+    "min_confidence": 0.5,
+    "pattern_count": 10
+  },
+  "patterns": [
+    {
+      "pattern_id": "class_implication:electric_car_produced_by_tesla=>owned_by",
+      "kind": "class_implication",
+      "description": "2 of 2 entities that are \"electric car produced by Tesla\" also have 'owned_by' pointing to \"Tesla\"",
+      "condition": {
+        "class": "electric car produced by Tesla"
+      },
+      "consequent": {
+        "predicate": "owned_by",
+        "object": "Tesla"
+      },
+      "support": 2,
+      "population": 2,
+      "confidence": 1.0,
+      "matched_entities": [
+        "Tesla Model 3",
+        "Tesla Model S"
+      ],
+      "counter_examples": [],
+      "supporting_evidence": [
+        [
+          "Tesla Model 3",
+          "owned_by",
+          "Tesla"
+        ],
+        [
+          "Tesla Model S",
+          "owned_by",
+          "Tesla"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "class_implication:electric_suv_produced_by_tesla=>owned_by",
+      "kind": "class_implication",
+      "description": "2 of 2 entities that are \"electric SUV produced by Tesla\" also have 'owned_by' pointing to \"Tesla\"",
+      "condition": {
+        "class": "electric SUV produced by Tesla"
+      },
+      "consequent": {
+        "predicate": "owned_by",
+        "object": "Tesla"
+      },
+      "support": 2,
+      "population": 2,
+      "confidence": 1.0,
+      "matched_entities": [
+        "Tesla Model X",
+        "Tesla Model Y"
+      ],
+      "counter_examples": [],
+      "supporting_evidence": [
+        [
+          "Tesla Model X",
+          "owned_by",
+          "Tesla"
+        ],
+        [
+          "Tesla Model Y",
+          "owned_by",
+          "Tesla"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "class_implication:engineer=>founded",
+      "kind": "class_implication",
+      "description": "2 of 2 entities that are \"engineer\" also founded \"Tesla\"",
+      "condition": {
+        "class": "engineer"
+      },
+      "consequent": {
+        "predicate": "founded",
+        "object": "Tesla"
+      },
+      "support": 2,
+      "population": 2,
+      "confidence": 1.0,
+      "matched_entities": [
+        "Marc Tarpenning",
+        "Martin Eberhard"
+      ],
+      "counter_examples": [],
+      "supporting_evidence": [
+        [
+          "Marc Tarpenning",
+          "founded",
+          "Tesla"
+        ],
+        [
+          "Martin Eberhard",
+          "founded",
+          "Tesla"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "class_implication:engineer=>known_for",
+      "kind": "class_implication",
+      "description": "2 of 2 entities that are \"engineer\" also have 'known_for' pointing to \"co-founding Tesla\"",
+      "condition": {
+        "class": "engineer"
+      },
+      "consequent": {
+        "predicate": "known_for",
+        "object": "co-founding Tesla"
+      },
+      "support": 2,
+      "population": 2,
+      "confidence": 1.0,
+      "matched_entities": [
+        "Marc Tarpenning",
+        "Martin Eberhard"
+      ],
+      "counter_examples": [],
+      "supporting_evidence": [
+        [
+          "Marc Tarpenning",
+          "known_for",
+          "co-founding Tesla"
+        ],
+        [
+          "Martin Eberhard",
+          "known_for",
+          "co-founding Tesla"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "class_implication:international_news_organization=>publishes",
+      "kind": "class_implication",
+      "description": "2 of 2 entities that are \"international news organization\" also have the relation 'publishes'",
+      "condition": {
+        "class": "international news organization"
+      },
+      "consequent": {
+        "predicate": "publishes"
+      },
+      "support": 2,
+      "population": 2,
+      "confidence": 1.0,
+      "matched_entities": [
+        "Bloomberg News",
+        "Reuters"
+      ],
+      "counter_examples": [],
+      "supporting_evidence": [
+        [
+          "Bloomberg News",
+          "publishes",
+          "financial market coverage"
+        ],
+        [
+          "Bloomberg News",
+          "publishes",
+          "wealth indexes"
+        ],
+        [
+          "Reuters",
+          "publishes",
+          "financial coverage"
+        ],
+        [
+          "Reuters",
+          "publishes",
+          "news"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "class_implication:businessman=>leader_of",
+      "kind": "class_implication",
+      "description": "4 of 5 entities that are \"businessman\" also have the relation 'leader_of'",
+      "condition": {
+        "class": "businessman"
+      },
+      "consequent": {
+        "predicate": "leader_of"
+      },
+      "support": 4,
+      "population": 5,
+      "confidence": 0.8,
+      "matched_entities": [
+        "Bernard Arnault",
+        "Elon Musk",
+        "Jeff Bezos",
+        "Larry Ellison"
+      ],
+      "counter_examples": [
+        {
+          "entity": "Michael Bloomberg",
+          "note": "is \"businessman\" but has no 'leader_of' fact"
+        }
+      ],
+      "supporting_evidence": [
+        [
+          "Bernard Arnault",
+          "leader_of",
+          "luxury goods companies"
+        ],
+        [
+          "Elon Musk",
+          "leader_of",
+          "SpaceX"
+        ],
+        [
+          "Elon Musk",
+          "leader_of",
+          "Tesla"
+        ],
+        [
+          "Jeff Bezos",
+          "leader_of",
+          "Blue Origin"
+        ],
+        [
+          "Larry Ellison",
+          "leader_of",
+          "Oracle"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "cooccurrence:founded_by@businessman=>develops",
+      "kind": "cooccurrence",
+      "description": "5 of 7 entities whose 'founded_by' points to a \"businessman\" also have the relation 'develops'",
+      "condition": {
+        "predicate": "founded_by",
+        "object_class": "businessman"
+      },
+      "consequent": {
+        "predicate": "develops"
+      },
+      "support": 5,
+      "population": 7,
+      "confidence": 0.7143,
+      "matched_entities": [
+        "Blue Origin",
+        "Neuralink",
+        "SpaceX",
+        "The Boring Company",
+        "xAI"
+      ],
+      "counter_examples": [
+        {
+          "entity": "Amazon",
+          "note": "'founded_by' points to a \"businessman\" but has no 'develops' fact"
+        },
+        {
+          "entity": "Bloomberg News",
+          "note": "'founded_by' points to a \"businessman\" but has no 'develops' fact"
+        }
+      ],
+      "supporting_evidence": [
+        [
+          "Blue Origin",
+          "develops",
+          "Line, the fourth New Shepard capsule,"
+        ],
+        [
+          "Blue Origin",
+          "develops",
+          "rockets"
+        ],
+        [
+          "Blue Origin",
+          "develops",
+          "spacecraft"
+        ],
+        [
+          "Blue Origin",
+          "founded_by",
+          "Jeff Bezos"
+        ],
+        [
+          "Elon Musk",
+          "is_a",
+          "businessman"
+        ],
+        [
+          "Jeff Bezos",
+          "is_a",
+          "businessman"
+        ],
+        [
+          "Neuralink",
+          "develops",
+          "brain-computer interfaces"
+        ],
+        [
+          "Neuralink",
+          "founded_by",
+          "Elon Musk"
+        ],
+        [
+          "SpaceX",
+          "develops",
+          "Falcon 9"
+        ],
+        [
+          "SpaceX",
+          "develops",
+          "rockets"
+        ],
+        [
+          "SpaceX",
+          "develops",
+          "spacecraft"
+        ],
+        [
+          "SpaceX",
+          "founded_by",
+          "Elon Musk"
+        ],
+        [
+          "The Boring Company",
+          "develops",
+          "transportation systems"
+        ],
+        [
+          "The Boring Company",
+          "develops",
+          "tunnels"
+        ],
+        [
+          "The Boring Company",
+          "founded_by",
+          "Elon Musk"
+        ],
+        [
+          "xAI",
+          "develops",
+          "large language models"
+        ],
+        [
+          "xAI",
+          "founded_by",
+          "Elon Musk"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "cooccurrence:enables@satellite_internet=>uses",
+      "kind": "cooccurrence",
+      "description": "2 of 3 entities whose 'enables' points to a \"Satellite internet\" also have the relation 'uses'",
+      "condition": {
+        "predicate": "enables",
+        "object_class": "Satellite internet"
+      },
+      "consequent": {
+        "predicate": "uses"
+      },
+      "support": 2,
+      "population": 3,
+      "confidence": 0.6667,
+      "matched_entities": [
+        "Elon Musk",
+        "SpaceX"
+      ],
+      "counter_examples": [
+        {
+          "entity": "Social media",
+          "note": "'enables' points to a \"Satellite internet\" but has no 'uses' fact"
+        }
+      ],
+      "supporting_evidence": [
+        [
+          "Elon Musk",
+          "enables",
+          "Starlink"
+        ],
+        [
+          "Elon Musk",
+          "uses",
+          "Tesla"
+        ],
+        [
+          "SpaceX",
+          "enables",
+          "Starlink"
+        ],
+        [
+          "SpaceX",
+          "uses",
+          "Starlink"
+        ],
+        [
+          "Starlink",
+          "is_a",
+          "Satellite internet"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "cooccurrence:enables@satellite_internet_constellation_operated_by_spacex=>uses",
+      "kind": "cooccurrence",
+      "description": "2 of 3 entities whose 'enables' points to a \"satellite internet constellation operated by SpaceX\" also have the relation 'uses'",
+      "condition": {
+        "predicate": "enables",
+        "object_class": "satellite internet constellation operated by SpaceX"
+      },
+      "consequent": {
+        "predicate": "uses"
+      },
+      "support": 2,
+      "population": 3,
+      "confidence": 0.6667,
+      "matched_entities": [
+        "Elon Musk",
+        "SpaceX"
+      ],
+      "counter_examples": [
+        {
+          "entity": "Social media",
+          "note": "'enables' points to a \"satellite internet constellation operated by SpaceX\" but has no 'uses' fact"
+        }
+      ],
+      "supporting_evidence": [
+        [
+          "Elon Musk",
+          "enables",
+          "Starlink"
+        ],
+        [
+          "Elon Musk",
+          "uses",
+          "Tesla"
+        ],
+        [
+          "SpaceX",
+          "enables",
+          "Starlink"
+        ],
+        [
+          "SpaceX",
+          "uses",
+          "Starlink"
+        ],
+        [
+          "Starlink",
+          "is_a",
+          "satellite internet constellation operated by SpaceX"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    },
+    {
+      "pattern_id": "cooccurrence:led_by@businessman=>founded_by",
+      "kind": "cooccurrence",
+      "description": "3 of 5 entities whose 'led_by' points to a \"businessman\" also have the relation 'founded_by'",
+      "condition": {
+        "predicate": "led_by",
+        "object_class": "businessman"
+      },
+      "consequent": {
+        "predicate": "founded_by"
+      },
+      "support": 3,
+      "population": 5,
+      "confidence": 0.6,
+      "matched_entities": [
+        "Blue Origin",
+        "SpaceX",
+        "Tesla"
+      ],
+      "counter_examples": [
+        {
+          "entity": "luxury goods companies",
+          "note": "'led_by' points to a \"businessman\" but has no 'founded_by' fact"
+        },
+        {
+          "entity": "Oracle",
+          "note": "'led_by' points to a \"businessman\" but has no 'founded_by' fact"
+        }
+      ],
+      "supporting_evidence": [
+        [
+          "Blue Origin",
+          "founded_by",
+          "Jeff Bezos"
+        ],
+        [
+          "Blue Origin",
+          "led_by",
+          "Jeff Bezos"
+        ],
+        [
+          "Elon Musk",
+          "is_a",
+          "businessman"
+        ],
+        [
+          "Jeff Bezos",
+          "is_a",
+          "businessman"
+        ],
+        [
+          "SpaceX",
+          "founded_by",
+          "Elon Musk"
+        ],
+        [
+          "SpaceX",
+          "led_by",
+          "Elon Musk"
+        ],
+        [
+          "Tesla",
+          "founded_by",
+          "Marc Tarpenning"
+        ],
+        [
+          "Tesla",
+          "founded_by",
+          "Martin Eberhard"
+        ],
+        [
+          "Tesla",
+          "led_by",
+          "Elon Musk"
+        ]
+      ],
+      "as_of": "2026-07-03"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "base_overlay_items": 283,
+  "delta_proposal_items": 27,
+  "accepted_delta_items": 27,
+  "rejected_delta_items": 0,
+  "blocked_delta_items": 0,
+  "promoted_overlay_items": 310,
+  "safe_to_promote": true,
+  "safe_for_general_runtime": false,
+  "trusted_memory_modified": false,
+  "accepted_overlay_modified": false,
+  "quarantine_not_promoted": true,
+  "rejected_items_not_promoted": true,
+  "volatile_items_not_promoted": true,
+  "private_items_not_promoted": true,
+  "inverted_relations_not_promoted": true,
+  "weak_links_remain_weak": true,
+  "regression_results": {
+    "entity_qa_v1": {
+      "status": "PASS",
+      "qa_total": 28,
+      "correct_count": 28,
+      "wrong_count": 0,
+      "quality_flagged": 0,
+      "answer_precision": 1.0,
+      "expected": 28
+    },
+    "entity_qa_expansion_v1": {
+      "status": "PASS",
+      "qa_total": 111,
+      "correct_count": 111,
+      "wrong_count": 0,
+      "quality_flagged": 0,
+      "answer_precision": 1.0,
+      "expected": 111
+    },
+    "entity_qa_adversarial_v1": {
+      "status": "PASS",
+      "qa_total": 68,
+      "correct_count": 68,
+      "wrong_count": 0,
+      "quality_flagged": 0,
+      "answer_precision": 1.0,
+      "expected": 68
+    },
+    "cross_page_qa_v1": {
+      "status": "PASS",
+      "qa_total": 71,
+      "correct_count": 71,
+      "wrong_count": 0,
+      "quality_flagged": 0,
+      "answer_precision": 1.0,
+      "expected": 71
+    }
+  },
+  "promoted_overlay_provenance": {
+    "overlay_kind": "promoted_self_ingestion_overlay_v1",
+    "promoted_from": "self_ingestion_v1/overlay_delta_proposal.json",
+    "base_overlay": "accepted_wiki_memory_overlay_v1.json",
+    "trusted_general_runtime_memory": false,
+    "safe_for_general_runtime": false,
+    "note": "This overlay is a PROMOTED self-ingestion overlay built by merging the base accepted wiki overlay with validator-accepted delta items. It is an isolated knowledge overlay for QA regression only and is NOT trusted general runtime memory.",
+    "base_overlay_items": 283,
+    "accepted_delta_items": 27,
+    "promoted_overlay_items": 310
+  },
+  "notes": [
+    "Base accepted overlay preserved unchanged; never overwritten.",
+    "Only validator-accepted, stable, non-conflicting delta items promoted.",
+    "Volatile/source-qualified facts, weak-link-as-fact, inverted, private, universal, high-risk, conflicting, duplicate, and malformed items blocked.",
+    "Promoted overlay is an isolated promoted self-ingestion overlay, not trusted general runtime memory."
+  ]
+}
