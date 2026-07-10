@@ -141,6 +141,7 @@ flowchart TD
 | Web/API UI | `worldpgt/api/` |
 | Semantic dialogue context | `worldpgt/dialogue/` |
 | Semantic reasoning and speech planning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
+| Creative free-generation (separate inverted-gate layer) | `worldpgt/cognition/creative_generator.py` |
 | Community speech/cognitive patterns | `worldpgt/community_context/` |
 | Optional live search | `worldpgt/web_search/` |
 | Semantic entity inference | `worldpgt/entity_qa/` |
@@ -181,7 +182,8 @@ sequenceDiagram
 
 The parser currently recognizes relation lookup, inverse lookup, comparative
 questions, `is_a` traversal, count, filtered lookup, path/connection questions,
-and open synthesis.
+and open synthesis. A clear creative ask instead routes to a separate
+free-generation layer (see [Creative mode](#creative-mode-the-inverted-gate-as-a-separate-layer)).
 
 ## Dialogue Example
 
@@ -304,6 +306,33 @@ Both are test-covered and dormant on the current overlay (no locative relations
 extracted yet), so every existing answer renders unchanged until the facts to
 feed them arrive — the same shape as the lab, where the bundling was built
 before the facts to fill it.
+
+### Creative mode: the inverted gate, as a separate layer
+
+The single most reusable lab finding — *the accept/reject gate is
+domain-defining* — is now a production feature. **Creative mode** is a second,
+explicitly separated layer beside factual QA, and it runs the exact inverted
+gate the lab isolated:
+
+```text
+factual layer   : answer only if every claim is grounded in memory, else audit.
+creative layer  : generate freely, allow output only if it does NOT recite a
+                  corpus 4-gram (recombine, never recite).
+```
+
+The separation is enforced at the router: a clear creative ask ("write a story
+about…", "imagine…", "compose a poem about…") routes to `creative_request` and a
+token-level generator ported from the lab (`cognition/creative_generator.py` —
+order-2 word-transition tables trained on the same local prose, seeded
+deterministic traversal, 4-gram novelty gate). A factual ask ("Tell me about
+SpaceX", "Describe SpaceX") is untouched and stays on the strict path.
+
+Safety is preserved by ordering, not by weakening: every hard-safety screen
+(private, current-sensitive, universal, inversion) runs **before** creative
+routing, so "write a story about *X*'s home address" still audits. Creative
+output is never presented as fact — it carries `support_kind=creative_generated`,
+`supported_by_context=False`, and an explicit `[Creative mode — generated … not
+verified fact]` label.
 
 Full method, per-mechanism A/Bs, honest failure cases, and the scaling analysis
 are in [`poetry_lab/README.md`](poetry_lab/README.md).

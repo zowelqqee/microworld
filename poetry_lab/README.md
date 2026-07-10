@@ -522,6 +522,22 @@ the bundling was built before the facts to feed it arrived. Covered by
 `worldpgt/tests/test_phrase_graph_relation_fusion_v1.py` and
 `test_subject_locative_bundle_v1.py`.
 
+3. **Creative mode — the inverted gate itself**
+   (`cognition/creative_generator.py`). The lab's headline finding was that the
+   accept/reject gate, not the knowledge source, is what separates factual QA
+   from free generation. That gate is now a production layer: a clear creative
+   ask ("write a story about…", "imagine…") routes to `creative_request` and a
+   token-level generator ported straight from this experiment
+   (`poemcore/phrase_model.py`) — order-2 word-transition tables trained on the
+   same local prose, seeded deterministic traversal, and the **4-gram novelty
+   gate run in reverse polarity**: allow output only when it does *not* recite a
+   corpus 4-gram. Factual asks are untouched; every hard-safety screen runs
+   first, so a creative framing over private/current material still audits; and
+   output is labelled `creative_generated`, never presented as fact. Covered by
+   `worldpgt/tests/test_creative_mode_v1.py`. Unlike the two bundling landings,
+   this one is *live*, not dormant — it needs no new facts, only the corpus the
+   system already ingests.
+
 ## Honest conclusion
 
 **Yes, with qualifications.** The same core — typed graph + spreading
