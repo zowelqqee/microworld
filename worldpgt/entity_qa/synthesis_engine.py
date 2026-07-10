@@ -25,6 +25,7 @@ from worldpgt.entity_qa.types import (
 )
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 from worldpgt.relation_extraction_v2.relation_policy import is_current_sensitive, predicate_in_class
+from worldpgt.relation_extraction_v2.types import SUBJECT_LOCATIVE_RELATIONS
 
 _ANSWERABLE_STABILITIES = frozenset({"stable", "semi_stable"})
 
@@ -625,6 +626,11 @@ def synthesize(
     # founds / owns / leads, so the narrative can connect the two entities.
     enrichment = _compute_enrichment(provider, label, groups, surface_index)
 
+    # Fact-bundle selection (poetry_lab transfer): pick one locative relation
+    # to fold into the subject's noun phrase. This is the reasoning-layer
+    # decision -- the speech layer only positions what is chosen here.
+    subject_locative = _select_subject_locative(groups, definition)
+
     return SynthesisAnswer(
         subject=label,
         matched=True,
@@ -635,7 +641,56 @@ def synthesize(
         unknown_notes=unknown_notes,
         candidate_entities=candidate_entities if match_kind == "keyword" else [],
         enrichment=enrichment,
+        subject_locative=subject_locative,
     )
+
+
+# Locatives are tried in this order, so the fold is deterministic when an
+# entity carries more than one place relation. Derived from the facts-layer
+# role set, not a second hand-list: the set decides *membership*, this tuple
+# only fixes a stable preference among members.
+_LOCATIVE_FOLD_ORDER = ("headquartered_in", "located_in", "based_at", "based_in")
+
+
+def _select_subject_locative(
+    groups: list[SynthesisFactGroup], definition: str | None,
+) -> SynthesisFactGroup | None:
+    """Choose at most one locative fact to bundle into the subject NP.
+
+    Compatibility rules, mirroring poetry_lab's ``_plan_description_scene`` /
+    ``_description_link``:
+
+    * A modifier is required to attach the link to -- here the entity's
+      definition ("a robotics company"). With no definition there is no noun
+      phrase to post-modify, so nothing is folded.
+    * Only a *forward* verified relation (the entity itself is located
+      somewhere), never an inverse one.
+    * At most one link; ownership/other relations are never promoted into this
+      slot (the set is the facts-layer role declaration).
+
+    The chosen group stays in ``groups``; the speech layer removes the
+    duplicate only once it has actually surfaced the fold, so a fact is never
+    silently dropped when the phrasing cannot be built.
+    """
+
+    if not definition:
+        return None
+    by_predicate = {
+        str(getattr(group, "predicate", "") or ""): group
+        for group in groups
+        if str(getattr(group, "kind", "") or "") == "forward_relation"
+        and str(getattr(group, "tier", "") or "") == "VERIFIED"
+        and str(getattr(group, "predicate", "") or "") in SUBJECT_LOCATIVE_RELATIONS
+        and [obj for obj in getattr(group, "objects", ()) if str(obj)]
+    }
+    for predicate in _LOCATIVE_FOLD_ORDER:
+        if predicate in by_predicate:
+            return by_predicate[predicate]
+    # A member relation outside the explicit preference tuple still folds,
+    # deterministically by predicate name.
+    for predicate in sorted(by_predicate):
+        return by_predicate[predicate]
+    return None
 
 
 _HOW_WORKS_RE = re.compile(

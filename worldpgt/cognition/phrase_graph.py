@@ -88,35 +88,6 @@ _SUBORDINATOR_RE = re.compile(
     re.IGNORECASE,
 )
 
-_CAPABILITY_PREDICATES = frozenset({
-    "develops",
-    "produces",
-    "manufactures",
-    "operates",
-    "publishes",
-    "provides",
-    "enables",
-    "uses",
-    "used_for",
-    "works_by",
-    "supports",
-    "runs_on",
-    "offers",
-})
-_RELATION_PREDICATES = frozenset({
-    "founded",
-    "founded_by",
-    "owned_by",
-    "owns",
-    "subsidiary_of",
-    "part_of",
-    "service_of",
-    "platform_of",
-    "located_in",
-    "based_at",
-    "headquartered_in",
-})
-_META_PREDICATES = frozenset({"known_for"})
 _SNAPSHOT_KIND = "snapshot"
 _INFERRED_KIND = "inferred"
 
@@ -453,6 +424,92 @@ def default_phrase_graph() -> PhraseGraph:
     return build_phrase_graph()
 
 
+def _fusion_class(graph: PhraseGraph, fact: TypedPhraseFact) -> str | None:
+    """The grammatical frame that decides whether *fact* coordinates with its
+    neighbour under one shared subject -- read off the fact's LEARNED fragment,
+    never a hand-maintained predicate list.
+
+    This is the poetry_lab lesson carried into QA. That experiment showed a
+    fact's combinable role must be recovered from the surface form the corpus
+    actually produced (there: agreeing epithet vs. prepositional link, decided
+    by morphology at ingest), not from a curated vocabulary of "these
+    predicates are fusible". Here the phrase graph has already *learned* the
+    surface: the fragment ("develops {object_list}", "was founded by
+    {object_list}", "is owned by {object_list}") encodes it. So the grouping
+    key is that fragment's leading frame -- a bare active verb, a past-passive
+    "was", or a copular "is". Facts sharing a frame coordinate cleanly ("It
+    develops X and produces Y.", "It is owned by X and is headquartered in
+    Y."); a frame change opens a new sentence, so tense and voice never
+    collide inside one clause list. New relation types need no edit here: their
+    fusibility falls out of whatever phrasing the graph learned for them.
+
+    Returns None for facts that must stay on their own line: snapshot and
+    inferred tiers, the definition, or any fact the graph learned no phrasing
+    for (which ``generate``'s ``covers`` gate already excludes upstream).
+    """
+
+    if fact.predicate in {_SNAPSHOT_KIND, _INFERRED_KIND, "is_a", "definition"}:
+        return None
+    fragment = graph.best_fragment(fact.node)
+    if not fragment:
+        return None
+    head = fragment.replace("{object_list}", "").replace("{definition}", "").split()
+    if not head:
+        return None
+    lead = head[0].lower()
+    if lead in {"is", "are"}:
+        return "copular"
+    if lead in {"was", "were"}:
+        return "past_passive"
+    # "known for {object_list}" / "used for {object_list}" surface with an
+    # inserted copula in _fragment_phrase ("is known for ..."), so they group
+    # with the copular frame, matching how they actually render.
+    if lead in {"known", "used"} and len(head) > 1 and head[1] == "for":
+        return "copular"
+    return "active"
+
+
+def _locative_modifier(
+    graph: PhraseGraph, result: SynthesisAnswer,
+) -> tuple[str, str, tuple[str, ...]] | None:
+    """Turn the reasoning layer's chosen locative into a participial post-modifier
+    for the subject noun phrase, deriving the surface from the LEARNED fragment.
+
+    The graph already learned "is headquartered in {object_list}"; stripping its
+    leading copula yields "headquartered in {object_list}", which reads as a
+    noun-phrase post-modifier ("a robotics company headquartered in Boston").
+    This keeps the poetry_lab layer split intact -- the reasoning layer decided
+    *which* fact bundles (``synthesize``), the surface comes only from what the
+    corpus taught, no hand-written locative template.
+
+    Returns ``(participle, predicate, objects)`` so ``generate`` can render the
+    fold and drop the now-duplicated flat fact together, or ``None`` when no
+    usable copular phrasing was learned -- the fact then renders normally and is
+    never dropped.
+    """
+
+    locative = getattr(result, "subject_locative", None)
+    if locative is None:
+        return None
+    predicate = str(getattr(locative, "predicate", "") or "")
+    objects = tuple(str(obj) for obj in getattr(locative, "objects", ()) if str(obj))
+    if not predicate or not objects:
+        return None
+    render_pred = _render_predicate(str(getattr(locative, "kind", "") or ""), predicate)
+    entity_type = _entity_type(result.entity_type, result.definition)
+    fragment = graph.best_fragment((entity_type, render_pred))
+    if not fragment:
+        return None
+    head, _, tail = fragment.partition(" ")
+    if head.lower() not in {"is", "are", "was", "were"} or not tail:
+        return None
+    obj_list = _join_limited(list(objects))
+    if not obj_list:
+        return None
+    participle = tail.replace("{object_list}", obj_list).strip()
+    return participle, render_pred, objects
+
+
 def generate(
     result: SynthesisAnswer,
     *,
@@ -495,16 +552,35 @@ def generate(
     if ordered and ordered[0].predicate == "is_a":
         def_fact = ordered[0]
         clause = _definition_clause(def_fact.subject, def_fact.definition)
+        # Fold the reasoning layer's chosen locative into the subject NP
+        # ("... a robotics company headquartered in Boston ...") and drop the
+        # now-duplicated flat fact. Removal and rendering happen together, so a
+        # locative is only consumed once it has actually been surfaced.
+        locative_mod = _locative_modifier(graph, result)
+        if locative_mod is not None:
+            participle, loc_pred, loc_objs = locative_mod
+            clause = f"{clause} {participle}"
+            ordered = [ordered[0]] + [
+                fact for fact in ordered[1:]
+                if not (fact.predicate == loc_pred and fact.objects == loc_objs)
+            ]
         start = 1
         pronoun = graph.best_subordinator(def_fact.entity_type)
         woven = None
         trailing = ""
         if pronoun and start < len(ordered):
             weave_end = start + 1
-            if ordered[start].predicate in _CAPABILITY_PREDICATES:
+            # Extend the relative clause across a run of active-voice facts
+            # ("... that develops X and produces Y."). The active frame is read
+            # off each fact's learned fragment (see ``_fusion_class``), so this
+            # is the same derived signal the sentence-level fusion uses -- not a
+            # second hardcoded predicate list. A past-passive or copular fact
+            # ("was founded by", "is owned by") reads oddly stacked inside one
+            # relative clause, so it ends the run and renders on its own.
+            if _fusion_class(graph, ordered[start]) == "active":
                 while (
                     weave_end < len(ordered)
-                    and ordered[weave_end].predicate in _CAPABILITY_PREDICATES
+                    and _fusion_class(graph, ordered[weave_end]) == "active"
                 ):
                     weave_end += 1
             relative = _relative_clause_body(graph, ordered[start:weave_end], result, seed)
@@ -524,14 +600,17 @@ def generate(
     i = start
     while i < len(ordered):
         fact = ordered[i]
-        if fact.predicate in _CAPABILITY_PREDICATES:
+        cls = _fusion_class(graph, fact)
+        if cls is not None:
             j = i + 1
-            while j < len(ordered) and ordered[j].predicate in _CAPABILITY_PREDICATES:
+            while j < len(ordered) and _fusion_class(graph, ordered[j]) == cls:
                 j += 1
-            sentence = _render_capability_run(graph, ordered[i:j], result, seed)
+            sentence, trailing = _render_predicate_run(graph, ordered[i:j], result, seed)
             if not sentence:
                 return None
             sentences.append(sentence)
+            if trailing:
+                sentences.append(trailing)
             i = j
         else:
             sentence = _render_fact(graph, fact, result, seed)
@@ -543,30 +622,57 @@ def generate(
     return " ".join(sentences).strip()
 
 
-def _render_capability_run(
+def _render_predicate_run(
     graph: PhraseGraph,
     facts: list[TypedPhraseFact],
     result: SynthesisAnswer,
     seed: str,
-) -> str:
-    """Render one or more consecutive capability facts as a single sentence
-    sharing one subject reference. A run of one behaves exactly like
-    ``_render_fact`` did before (no regression for the common single-fact
-    case); a run of two or more is where the elaboration happens."""
+) -> tuple[str, str]:
+    """Render one or more consecutive facts that share a learned grammatical
+    frame (see ``_fusion_class``) as a single sentence with one subject
+    reference. A run of one behaves exactly like ``_render_fact`` did before
+    (no regression for the common single-fact case); a run of two or more is
+    where the elaboration happens ("It is owned by X and is headquartered in
+    Y." instead of two flat sentences).
+
+    Returns ``(sentence, trailing)``. ``trailing`` is an optional standalone
+    enrichment sentence -- the same one ``_render_fact`` could attach to a
+    solo founding/ownership fact. A founding fact moving from its own
+    sentence into a shared relation run must not silently lose that
+    enrichment, so the appositive weave is reproduced here too.
+    """
 
     reference = _reference(facts[0].subject, facts[0].entity_type, result.definition)
     phrases: list[str] = []
+    trailing = ""
+    enrichment = getattr(result, "enrichment", None)
+    enrichment_used = False
     for fact in facts:
         fragment = graph.fragment_variant(fact.node, seed)
         if fragment is None:
-            return ""
+            return "", ""
         obj_list = _join_limited(list(fact.objects))
         if not obj_list:
             continue
-        phrases.append(_fragment_phrase(fragment, obj_list, reference))
+        phrase = _fragment_phrase(fragment, obj_list, reference)
+        if (
+            not enrichment_used
+            and fact.predicate in {"founded", "founded_by", "owned_by", "owns"}
+            and enrichment
+            and str(getattr(enrichment, "object", "") or "") in fact.objects
+        ):
+            note = str(getattr(enrichment, "note", "") or "").strip().rstrip(".")
+            obj = str(getattr(enrichment, "object", "") or "").strip()
+            if note and obj:
+                enrichment_used = True
+                if phrase.endswith(obj):
+                    phrase = f"{phrase}, {_article_phrase(note)}"
+                else:
+                    trailing = _definition_sentence(obj, note)
+        phrases.append(phrase)
     if not phrases:
-        return ""
-    return f"{reference} {_join_clauses(phrases)}."
+        return "", ""
+    return f"{reference} {_join_clauses(phrases)}.", trailing
 
 
 def _render_seed(result: SynthesisAnswer) -> str:

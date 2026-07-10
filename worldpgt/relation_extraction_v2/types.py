@@ -76,6 +76,27 @@ ALLOWED_RELATIONS = (
     | ALLOWED_VOLATILE_RELATIONS
 )
 
+# Relations that locate an entity and therefore read naturally as a *subject
+# noun-phrase post-modifier* rather than as a standalone predicate sentence:
+# "a robotics company headquartered in Boston" rather than "It is
+# headquartered in Boston." as its own choppy line.
+#
+# This is a facts-layer role declaration -- the worldpgt analogue of the
+# ``kind="object_link"`` tag poetry_lab's ingest assigns to a preposition link
+# ("дверь в коридор"). It marks a *role in composition*, so it lives with the
+# relation vocabulary here; the reasoning layer selects a link to bundle by
+# this membership (see ``entity_qa.synthesis_engine.synthesize``), and the
+# speech layer derives the actual participial surface from the learned phrase
+# fragment. Ownership relations are intentionally excluded: they entangle with
+# the founded/owned-object enrichment and do not form a clean locative
+# participle, so they stay ordinary predicate sentences for now.
+SUBJECT_LOCATIVE_RELATIONS = frozenset({
+    "headquartered_in",
+    "located_in",
+    "based_at",
+    "based_in",
+})
+
 QUARANTINE_REASONS = frozenset({
     "weak_link_only",
     "current_or_live_claim",

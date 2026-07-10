@@ -178,6 +178,12 @@ class SynthesisAnswer:
     unknown_notes: list[str] = field(default_factory=list)
     candidate_entities: list[str] = field(default_factory=list)
     enrichment: Optional[SynthesisEnrichment] = None
+    # One locative relation the reasoning layer chose to fold into the subject's
+    # noun phrase ("a robotics company headquartered in Boston") instead of a
+    # separate predicate sentence. Still present in ``groups`` for inspection;
+    # the speech layer consumes whichever one it can actually surface as a
+    # participle and drops the duplicate, so a fold never loses a fact.
+    subject_locative: Optional[SynthesisFactGroup] = None
 
     @property
     def verified_count(self) -> int:
@@ -210,6 +216,7 @@ class SynthesisAnswer:
             "unknown_notes": list(self.unknown_notes),
             "candidate_entities": list(self.candidate_entities),
             "enrichment": self.enrichment.to_dict() if self.enrichment else None,
+            "subject_locative": self.subject_locative.to_dict() if self.subject_locative else None,
             "verified_count": self.verified_count,
             "snapshot_count": self.snapshot_count,
             "inferred_count": self.inferred_count,
