@@ -50,6 +50,28 @@ _CURRENT_LIVE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Creative free-generation requests. Checked *after* the hard-safety screens
+# (private / current-live / universal / inversion still win, so a creative
+# framing can never smuggle out a private or current-sensitive claim), but
+# before the factual intents — a clear creative ask is not a fact lookup. Kept
+# conservative: only explicit story/poem/fiction/imagine framings, so "write
+# the facts about X" or "describe SpaceX" stay on the factual path.
+_CREATIVE_RE = re.compile(
+    r"\b("
+    r"write\s+(?:me\s+)?(?:a|an|the|some)?\s*(?:short\s+)?"
+    r"(?:story|stories|poem|poems|tale|fiction|fictional\s+\w+|verse|song|limerick|haiku)"
+    r"|tell\s+me\s+(?:a|an)\s+(?:story|tale|joke|poem)"
+    r"|compose\s+(?:a|an|some)?\s*(?:poem|verse|story|song|piece)"
+    r"|imagine\s+(?:a|an|that|if|what)"
+    r"|invent\s+(?:a|an)\s+\w+"
+    r"|make\s+up\s+(?:a|an)\s+\w+"
+    r"|dream\s+up"
+    r"|come\s+up\s+with\s+(?:a|an)\s+(?:story|tale|poem|scene)"
+    r"|describe\s+(?:a|an)\s+(?:fictional|imaginary|made[\s-]?up)"
+    r")\b",
+    re.IGNORECASE,
+)
+
 # "Tell me the current CEO of every company" — universal + current. The
 # universal screen below also catches it; current takes priority.
 _UNIVERSAL_RE = re.compile(
@@ -227,6 +249,18 @@ def route(question: str, index: EntitySurfaceIndex | None = None) -> AssistantRo
             is_hard_safety=True,
             risk_flags=risk,
             notes="reversed/unsupported directional relation",
+        )
+
+    # ---- 2. Creative free-generation (answerable, but not factual) ---------
+    # Reached only after every hard-safety screen above has passed, so a
+    # creative framing over private/current/inversion material still audits.
+    if _CREATIVE_RE.search(q):
+        risk.append("creative_generated")
+        return AssistantRoute(
+            question=q,
+            intent="creative_request",
+            risk_flags=risk,
+            notes="creative free-generation request (labelled, not verified fact)",
         )
 
     # ---- 2. Policy / meta questions ---------------------------------- #

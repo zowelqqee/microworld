@@ -67,6 +67,7 @@ from worldpgt.assistant_surface.community_context import (
 from worldpgt.assistant_surface.cognitive_surface import apply_cognitive_surface
 from worldpgt.assistant_surface.web_search import WebSearchProvider, render_web_answer
 from worldpgt.cognition.phrase_graph import generate as generate_phrase_graph
+from worldpgt.cognition.creative_generator import generate_creative
 from worldpgt.cognition.reasoning_engine import reason_over_plan
 from worldpgt.entity_qa.symbolic_text_generator import generate_text
 from worldpgt.entity_qa.semantic_speech_planner import build_speech_plan
@@ -327,6 +328,18 @@ class AnswerOrchestrator:
                             community_context_enabled=community_context_enabled,
                         )
                 return self._hard_safety_audit(route, ctx, trace)
+
+        # 2. Creative free-generation — a separate layer from factual QA.
+        # It is reached only after every hard-safety screen in the router has
+        # passed, so it can never fabricate a private/current-sensitive claim.
+        # Output is recombined from learned prose (never a fact lookup) and is
+        # explicitly labelled as generated, not verified.
+        if route.intent == "creative_request":
+            with _timed_step("orchestrator.branch:creative"):
+                return self._apply_community_tone_if_enabled(
+                    self._creative_answer(route, ctx, trace),
+                    community_context_enabled=community_context_enabled,
+                )
 
         # 2. Connection / path questions -> cross-page QA.
         if route.intent == "connection_path":
@@ -1100,6 +1113,57 @@ class AnswerOrchestrator:
 
         trace.add("speech_first: renderer=reasoned_symbolic")
         return generate_text(speech_plan, action=action)
+
+    # ------------------------------------------------------------------ #
+    _CREATIVE_LABEL = (
+        "[Creative mode — generated, recombined from learned text, not verified fact.]"
+    )
+
+    def _creative_answer(
+        self,
+        route: AssistantRoute,
+        ctx: AssistantContextSummary,
+        trace,
+    ) -> AssistantAnswer:
+        """Free-generation path: recombine learned prose under the inverted gate.
+
+        The opposite polarity to the factual layer. The factual path answers
+        only from grounded overlay facts and audits on a gap; this path invents
+        by recombining learned word transitions and allows output only when it
+        does not recite a corpus 4-gram. It asserts no fact, so it is returned
+        with a mandatory creative label, ``support_kind='creative_generated'``,
+        and ``supported=False`` — never mistakable for a verified answer.
+        """
+
+        # Deterministic per request (replayable), like every other surface here.
+        passage = generate_creative(route.question, seed=route.question, num_sentences=3)
+        if not passage:
+            trace.add("creative: renderer=creative_generator; result=empty")
+            return self._make(
+                route,
+                ctx,
+                trace,
+                decision="audit",
+                answer_text="",
+                supported=False,
+                support_kind="missing_knowledge",
+                source_system="creative_generator",
+                audit_reason=(
+                    "I don't have enough learned material to generate something here."
+                ),
+            )
+        trace.add("creative: renderer=creative_generator; gate=novelty(4-gram)")
+        return self._make(
+            route,
+            ctx,
+            trace,
+            decision="answer",
+            answer_text=f"{self._CREATIVE_LABEL}\n\n{passage}",
+            supported=False,
+            support_kind="creative_generated",
+            source_system="creative_generator",
+            extra_risk=["creative_generated"],
+        )
 
     # ------------------------------------------------------------------ #
     def _make(

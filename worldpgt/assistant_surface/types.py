@@ -38,6 +38,7 @@ AssistantIntent = Literal[
     "private_sensitive_request",
     "relation_inversion",
     "unsupported_universal",
+    "creative_request",
     "unknown_or_unsupported",
 ]
 
@@ -57,6 +58,7 @@ SupportKind = Literal[
     "web_search_result",
     "audit_blocked_context",
     "missing_knowledge",
+    "creative_generated",
     "unsupported",
 ]
 
