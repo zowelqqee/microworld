@@ -97,3 +97,7 @@ worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json
 worldpgt/experiments/**
 !worldpgt/experiments/
 !worldpgt/experiments/benchmark_speech_quality_v1.py
+
+# poetry_lab generated model artifacts (regenerate: `python cli.py ingest` /
+# `ingest-narrative`). 88-146MB each — exceed GitHub's file-size limit.
+poetry_lab/artifacts/*.json

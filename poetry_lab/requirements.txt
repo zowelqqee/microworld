@@ -1,0 +1,8 @@
+# poetry_lab has NO third-party dependencies — standard library only.
+#
+# This is itself a finding: the production runtime optionally loads spaCy for
+# relation extraction, but the reusable *core* (concept graph + activation,
+# frequency phrase model, seeded traversal, novelty gate) needs none of it.
+# Swapping the knowledge source did not pull in any new machinery.
+#
+# Requires Python 3.10+ (uses X | Y type unions and match-free dataclasses).
