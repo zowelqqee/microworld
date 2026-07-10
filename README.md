@@ -243,6 +243,71 @@ Deterministic speech-renderer benchmark snapshot:
 
 Treat this as a workload-specific runtime result, not a universal benchmark.
 
+## Architecture Transfer Experiment (`poetry_lab/`)
+
+A separate research probe tested whether the runtime's core is *source-agnostic*:
+keep the mechanisms (typed concept graph + spreading activation for reasoning, a
+learned frequency phrase graph traversed by a seeded deterministic pick for
+language, JSON artifacts as the layer boundary, a gate between reasoning and
+output) and swap **only** the ingested knowledge — from wiki/Reddit facts to a
+Russian poetry and prose corpus. The same machine then produces verse and
+narrative prose instead of QA answers.
+
+The value is not the poems; it is that every improvement had to be a *named
+production mechanism ported by shape*, which makes the architecture's
+load-bearing parts explicit. Measured on the batteries in `poetry_lab/eval/`:
+
+| Mechanism ported from production | Metric it moved | Before → After |
+|---|---|---:|
+| Multi-word fragment context (order-1 → order-2 phrase model) | local grammaticality (real 3-word spans) | 0.19 → 0.79 |
+| Explicit discourse state + salience ranking | inter-line continuity | 0.13 → 0.23 |
+| Speech-plan subject/predicate commitment | lines asserting a subject + action | 0.45 → 0.79 |
+| Intent-seeded generation (`must_include` walk hook) | planned-concept realization | 0.02 → 0.11 |
+
+Two findings held across the whole experiment and are the reusable ones:
+
+- **Reasoning and language scale in opposite directions.** More corpus keeps
+  improving the reasoning-layer metric (thematic coherence 0.25 → 0.67 across a
+  120× corpus scale-up, 371 → 43,973 lines) while gradually degrading the
+  language layer's hard constraints (meter within ±1 syllable 89% → 78%). Both
+  trace to one cause: a bigger, flatter frequency table helps spreading
+  activation without limit but gives a target-chasing traversal more
+  low-frequency detours.
+- **The accept/reject gate is domain-defining, not source-defined.** The
+  architecture transferred only after *inverting* the support gate — QA allows
+  output when every claim is grounded; verse allows output only when it does
+  **not** reproduce a corpus 4-gram (recombine, not recite). Same slot, opposite
+  polarity.
+
+### Reverse transfer: a mechanism fed back into production
+
+The transfer later ran both ways. Description mode ("Опиши комнату") was
+producing one stunted fact per sentence; the fix was a three-layer **fact
+bundle** — description relations tagged with grammatical roles by morphology
+(not a word list), a reasoning step that bundles a primary fact with a
+compatible modifier and prepositional link about the *same* subject, and a
+speech step that only positions them. That mechanism was missing in production
+QA, so it was ported *into* `worldpgt/`:
+
+- **Fusion decided by learned surface, not a hardcoded list.** Whether two
+  adjacent facts coordinate into one sentence is now read off the grammatical
+  frame of each fact's *learned phrase fragment* (`develops X` → active,
+  `was founded by X` → past-passive, `is owned by X` → copular), so a new
+  relation type fuses correctly with no code edit (`cognition/phrase_graph.py`).
+- **Subject-locative bundle.** The reasoning layer folds a locative relation
+  into the subject noun phrase ("a robotics company headquartered in Boston")
+  instead of a separate choppy sentence, with the participial surface derived
+  from the learned fragment (`entity_qa/synthesis_engine.py`,
+  `relation_extraction_v2/types.py`).
+
+Both are test-covered and dormant on the current overlay (no locative relations
+extracted yet), so every existing answer renders unchanged until the facts to
+feed them arrive — the same shape as the lab, where the bundling was built
+before the facts to fill it.
+
+Full method, per-mechanism A/Bs, honest failure cases, and the scaling analysis
+are in [`poetry_lab/README.md`](poetry_lab/README.md).
+
 ## Repository Layout
 
 ```text
@@ -264,6 +329,7 @@ worldpgt/
   experiments/            runners, artifacts, overlays, reports
   docs/                   implementation audit, safety model, overlay notes
 docs/                     project-level engineering documentation
+poetry_lab/               architecture-transfer experiment (verse/prose over the same core)
 ```
 
 ## Quick Start
@@ -315,6 +381,7 @@ The expanded runner list and validation notes are in
 | [safety_model.md](docs/safety_model.md) | Support policy, temporal policy, memory boundaries, live-search disclosure, and known safety limits. |
 | [benchmarks.md](docs/benchmarks.md) | Current benchmark snapshots, performance, WebQuestions-style results, validation commands, and artifact paths. |
 | [research_results.md](docs/research_results.md) | Preserved historical tracks, demonstrated results, limitations, next work, and project status. |
+| [poetry_lab/README.md](poetry_lab/README.md) | Source-agnostic architecture-transfer experiment: verse/prose over the same core, per-mechanism A/Bs, scaling analysis, and the reverse transfer back into production QA. |
 
 ## Status
 
