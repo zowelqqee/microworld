@@ -101,3 +101,14 @@ worldpgt/experiments/**
 # poetry_lab generated model artifacts (regenerate: `python cli.py ingest` /
 # `ingest-narrative`). 88-146MB each — exceed GitHub's file-size limit.
 poetry_lab/artifacts/*.json
+
+# macOS noise
+.DS_Store
+**/.DS_Store
+
+# Portable phone CLI bundle: a regenerable, self-contained copy of the engine
+# (worldpgt + mw.py) and its zip. The iOS build sources the engine from the
+# tracked worldpgt/ package (stage_bundle.sh falls back to it), so these are
+# build artifacts, not source.
+/microworld_cli/
+/microworld_cli.zip
