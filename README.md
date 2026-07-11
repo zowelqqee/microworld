@@ -359,7 +359,19 @@ worldpgt/
   docs/                   implementation audit, safety model, overlay notes
 docs/                     project-level engineering documentation
 poetry_lab/               architecture-transfer experiment (verse/prose over the same core)
+ios_demo/                 native SwiftUI app running QA + Creative on-device, fully offline
 ```
+
+### On-device demo (`ios_demo/`)
+
+A native iOS app embeds CPython and runs the **real** engine on an iPhone with
+no server, API, or network — QA from `worldpgt`, and Creative from
+`poetry_lab`'s three-layer narrative generator over an English literary corpus.
+The answer path is stdlib-only pure Python, so the unmodified package runs
+unchanged in the embedded interpreter. See
+[`ios_demo/README_IOS.md`](ios_demo/README_IOS.md),
+[`ios_demo/TECHNICAL_DECISION.md`](ios_demo/TECHNICAL_DECISION.md), and
+[`ios_demo/DEVICE_BENCHMARK.md`](ios_demo/DEVICE_BENCHMARK.md).
 
 ## Quick Start
 

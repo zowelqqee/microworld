@@ -1,0 +1,11 @@
+# Generated / downloaded — reproduced by scripts, not checked in.
+MicroWorldDemo/MicroWorldDemo/Python/app_packages/
+MicroWorldDemo/MicroWorldDemo/Resources/python-stdlib/
+MicroWorldDemo/Frameworks/
+MicroWorldDemo/MicroWorldDemo.xcodeproj/
+MicroWorldDemo/DerivedData/
+
+# macOS / Xcode noise
+.DS_Store
+xcuserdata/
+*.xcuserstate

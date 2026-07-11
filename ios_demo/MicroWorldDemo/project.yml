@@ -1,0 +1,125 @@
+# XcodeGen spec — generates MicroWorldDemo.xcodeproj deterministically from
+# text, so the project can live in git without a fragile hand-written pbxproj.
+#
+#   brew install xcodegen
+#   cd ios_demo/MicroWorldDemo
+#   ../scripts/stage_bundle.sh          # stage the real engine into app_packages
+#   # drop Python.xcframework into Frameworks/ (see README_IOS.md)
+#   xcodegen generate
+#   open MicroWorldDemo.xcodeproj
+#
+name: MicroWorldDemo
+options:
+  bundleIdPrefix: com.microworld
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_LANGUAGE: en
+    TARGETED_DEVICE_FAMILY: "1"          # iPhone only
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+
+targets:
+  MicroWorldDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: MicroWorldDemo
+        excludes:
+          - "Python/app_packages/**"      # added as a folder reference below
+          - "Python/mw_ios.py"            # source copy; staged one ships in app_packages
+          - "Resources/python-stdlib/**"  # embedded by the embed_stdlib.sh build phase, not staged statically
+      # Blue folder reference (preserves directory structure at runtime so
+      # Python resolves imports by path). Created by stage_bundle.sh — see
+      # README_IOS.md. (python-stdlib is NOT a static folder reference: device
+      # vs simulator need different, ABI-incompatible slices, so it's copied at
+      # build time by the "Embed Python stdlib" script phase below instead.)
+      - path: MicroWorldDemo/Python/app_packages
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.microworld.demo
+        # Build without a development team (so `xcodebuild`/Simulator builds just
+        # work). To install on a PHYSICAL iPhone, set your Team in
+        # Signing & Capabilities and set CODE_SIGNING_ALLOWED/REQUIRED back to
+        # YES (or just pick a Team — Xcode manages the rest).
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_REQUIRED: "YES"
+        CODE_SIGNING_ALLOWED: "YES"
+        DEVELOPMENT_TEAM: 5NBHFY736Q
+    
+        # Use the committed Info.plist (portrait-only, strict ATS, no network)
+        # rather than an XcodeGen-generated one.
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: MicroWorldDemo/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_OBJC_BRIDGING_HEADER: MicroWorldDemo/Bridge/MicroWorldDemo-Bridging-Header.h
+        # Link the embedded Python framework (see README_IOS.md for how to add
+        # Python.xcframework to Frameworks/).
+        FRAMEWORK_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(PROJECT_DIR)/Frameworks"
+        # We include <Python.h> TEXTUALLY (the framework modulemap is disabled,
+        # see fetch_python.sh). Both slice Headers dirs are on the search path
+        # unconditionally; Clang resolves Python.h from whichever matches the
+        # active arch, and pyconfig.h selects the arch by predefined macro. This
+        # is simpler and more robust than SDK-conditional keys.
+        HEADER_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(PROJECT_DIR)/Frameworks/Python.xcframework/ios-arm64/Python.framework/Headers"
+          - "$(PROJECT_DIR)/Frameworks/Python.xcframework/ios-arm64_x86_64-simulator/Python.framework/Headers"
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+        # CPython needs these system libs.
+        ENABLE_BITCODE: NO
+    dependencies:
+      - framework: Frameworks/Python.xcframework
+        embed: true
+        codeSign: true
+    # Copies the CORRECT device-vs-simulator slice of the CPython stdlib into
+    # the built product. Must run at build time (not staged once ahead of
+    # time): the two slices are ABI-incompatible (Mach-O platform IOS vs
+    # IOSSIMULATOR), and building for the wrong one fails at runtime with a
+    # misleading "No module named '_struct'" rather than a build error. See
+    # scripts/embed_stdlib.sh for the full explanation.
+    postbuildScripts:
+      - path: ../scripts/embed_stdlib.sh
+        name: "Embed Python stdlib (platform-matched slice)"
+        basedOnDependencyAnalysis: false
+
+  MicroWorldDemoTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: MicroWorldDemoTests
+    dependencies:
+      - target: MicroWorldDemo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.microworld.demo.tests
+        # Physical-device tests are hosted inside the signed app and still need
+        # their own signed XCTest bundle. Keep this aligned with the app target
+        # so `xcodebuild test -destination <iPhone UDID>` can exercise the real
+        # embedded CPython bridge instead of silently falling back to mocks.
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 5NBHFY736Q
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  MicroWorldDemo:
+    build:
+      targets:
+        MicroWorldDemo: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - MicroWorldDemoTests
