@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import json
 import os
+import secrets
 import re
 from dataclasses import replace
 from datetime import datetime, timezone
@@ -1135,8 +1136,14 @@ class AnswerOrchestrator:
         and ``supported=False`` — never mistakable for a verified answer.
         """
 
-        # Deterministic per request (replayable), like every other surface here.
-        passage = generate_creative(route.question, seed=route.question, num_sentences=3)
+        # Creative mode is the one surface where per-request determinism is a
+        # UX bug, not a feature: re-asking should re-roll a fresh passage. So a
+        # random seed varies the output each call, while the generator stays
+        # deterministic *given* a seed (used by tests/replay). Same choice
+        # poetry_lab's NarrativeEngine makes when no explicit seed is supplied.
+        passage = generate_creative(
+            route.question, seed=secrets.token_hex(8), num_sentences=3
+        )
         if not passage:
             trace.add("creative: renderer=creative_generator; result=empty")
             return self._make(
