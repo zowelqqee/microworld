@@ -79,9 +79,82 @@ def is_infinitive(word: str) -> bool:
     return bool(_INFINITIVE.search(word)) and len(word) >= 4
 
 
+_LATIN_RE = re.compile(r"[a-z]", re.IGNORECASE)
+
+
+def is_latin_word(word: str) -> bool:
+    """True for an English-alphabet token — the language switch every dual
+    Russian/English heuristic in this module and in ``ingest.py`` keys off."""
+
+    return bool(_LATIN_RE.search(word))
+
+
+# English has no gender/case marking, so there is nothing here analogous to
+# ``_PAST_ENDINGS`` / ``past_gender``: a recognised finite verb is sufficient
+# on its own (see ``agreement_ok``, which already treats "gender unknown" as
+# "agrees" — for an English predicate that is simply always the case).
+# Irregular past tense forms common enough in Shakespeare to matter, plus
+# modal/auxiliary verbs (which mark tense/mood but never take -ed/-s).
+_EN_IRREGULAR_VERBS = frozenset({
+    "was", "were", "had", "did", "said", "went", "came", "saw", "took",
+    "gave", "knew", "thought", "made", "found", "told", "became", "left",
+    "felt", "kept", "let", "began", "seemed", "showed", "heard", "brought",
+    "stood", "sat", "held", "ran", "spoke", "fell", "grew", "lay", "meant",
+    "met", "paid", "read", "led", "sent", "built", "broke", "caught",
+    "chose", "drew", "drove", "ate", "flew", "forgot", "froze", "hung",
+    "hid", "hit", "hurt", "laid", "lost", "rode", "rose", "shone", "shot",
+    "shut", "slept", "sold", "spent", "stole", "swam", "swore", "threw",
+    "understood", "woke", "wore", "won", "wrote", "bore", "beat", "bit",
+    "blew", "burst", "cast", "cost", "cut", "dealt", "dug", "drank",
+    "fought", "fled", "is", "are", "am", "be", "been", "being", "has",
+    "have", "do", "does", "will", "would", "shall", "should", "can",
+    "could", "may", "might", "must",
+    # Early Modern English forms (Shakespeare is the reference corpus).
+    "hath", "doth", "dost", "art", "wilt", "shalt", "hast",
+})
+# -eth (loveth, hateth) is a distinctively verb ending in Early Modern English.
+# -est was dropped from this check: it is the regular superlative adjective
+# suffix ("greatest", "deepest", "smallest") far more often than the rare
+# archaic 2nd-person verb form ("lovest") — matching it wrongly classified
+# every superlative as a verb, silently excluding them from epithet selection
+# everywhere ("not is_finite_verb(word)" gates). The handful of genuine thou-
+# form verbs lost are a far smaller cost than that.
+_EN_ARCHAIC_VERB = re.compile(r"[a-z]{2,}eth$", re.IGNORECASE)
+# Words ending in -eth that are proper names or ordinary nouns, not archaic
+# verbs — same false-positive tolerance pattern as ``_NOT_PAST`` above.
+_EN_NOT_ARCHAIC_VERB = frozenset({
+    "elizabeth", "nazareth", "gareth", "kenneth", "beth", "teeth",
+})
+# Regular past tense. A handful of common non-verb -ed words are excluded;
+# false positives beyond that are tolerated the same way the Russian ending
+# heuristics tolerate them elsewhere in this module (advisory, not a gate).
+_EN_PAST_ED = re.compile(r"[a-z]{3,}ed$", re.IGNORECASE)
+# Clearly-non-verb words ending in -ed (nouns, adjectives, adverbs). Ambiguous
+# real verbs (fed, shed, bled, need, feed…) are deliberately left OUT — they
+# should still classify as verbs.
+_EN_NOT_VERB_ED = frozenset({
+    "bed", "red", "wicked", "naked", "sacred", "indeed", "hundred",
+    "aged", "rugged", "wretched", "crooked", "hatred", "creed", "steed",
+    "greed", "reed", "seed", "deed", "weed", "sled",
+})
+
+
+def is_finite_verb_en(word: str) -> bool:
+    """English equivalent of the Russian ending-based finite-verb check."""
+
+    w = word.lower()
+    if w in _EN_IRREGULAR_VERBS:
+        return True
+    if _EN_ARCHAIC_VERB.search(w) and w not in _EN_NOT_ARCHAIC_VERB:
+        return True
+    return bool(_EN_PAST_ED.search(w)) and w not in _EN_NOT_VERB_ED
+
+
 def is_finite_verb(word: str) -> bool:
     """A verb that can head a clause — i.e. a real predicate, not an infinitive."""
 
+    if is_latin_word(word):
+        return is_finite_verb_en(word)
     if is_infinitive(word):
         return False
     if past_gender(word) is not None:

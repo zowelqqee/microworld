@@ -11,23 +11,75 @@ production runtime and lives in this folder — but the transfer later became
 flowed *back* into `worldpgt/`, so the claim "nothing under `worldpgt/` was
 modified" no longer holds. The production changes are listed in that section.
 
-> Note: `artifacts/*.json` (the generated concept/phrase models, 88–146 MB) are
-> git-ignored. Regenerate them with `python cli.py ingest` and
-> `python cli.py ingest-narrative` before running anything below.
+> Note: `artifacts/*.json` (the generated concept/phrase models) are git-ignored.
+> Regenerate them with `python cli.py ingest` and `python cli.py ingest-narrative`
+> before running anything below. The full mixed-corpus narrative model is
+> ~230 MB on disk (~1 GB resident); the on-device build uses a slim copy
+> (`python cli.py slim-narrative` → ~24 MB / ~380 MB resident, same output).
 
 ## Narrative transfer
 
-The same core architecture now has a separate prose surface experiment over
-the local `Мастер и Маргарита` corpus:
+The prose surface began as a single-corpus experiment (`Мастер и Маргарита`)
+and has since grown into the **Creative mode that ships in the iOS app**
+([`../ios_demo/`](../ios_demo/)), running fully offline on an iPhone 11. Two
+things changed along the way:
+
+1. **Language became configurable.** The primitives were Cyrillic-only
+   (tokenizer, verb/adjective detection, case morphology). They now handle
+   English alongside Russian, so the same machine ingests an English
+   public-domain corpus (Shakespeare + eight Victorian/adventure classics —
+   Conan Doyle, Austen, Wilde, Verne, Stevenson, Wells) and generates from it.
+   Where Russian keys off case endings, English keys off word order and small
+   closed-class lists — the mechanism is unchanged, only its inputs are
+   re-domained. See `poemcore/text.py`, `poemcore/morphology.py`,
+   `poemcore/entity_types.py`.
+
+2. **Description/scene generation became a real three-layer pipeline** — the QA
+   architecture, not a flat template. See [The three-layer creative
+   generator](#the-three-layer-creative-generator) below.
 
 ```bash
-python3 cli.py ingest-narrative
-python3 cli.py narrate "Describe an evening in Moscow" --trace
-python3 eval/eval_narrative.py
+# English multi-work corpus (one .txt per work under corpus/english/):
+python3 cli.py ingest-narrative --source corpus/english/
+python3 cli.py narrate "Write a scene about a storm" --sentences 6
+python3 cli.py narrate "Describe the sea" --trace
+python3 cli.py slim-narrative           # memory-lean copy for the phone build
 ```
 
-See [`NARRATIVE_EXPERIMENT.md`](NARRATIVE_EXPERIMENT.md) for the corpus
-analysis, surface substitution boundary, and evaluation definitions.
+See [`NARRATIVE_EXPERIMENT.md`](NARRATIVE_EXPERIMENT.md) for the original corpus
+analysis and evaluation definitions.
+
+## The three-layer creative generator
+
+The description/scene path mirrors QA's `open_synthesis` pipeline — the same
+knowledge → reasoning → speech separation — instead of the old single-relation
+template that produced monotone "N adjectives + noun" output. All three layers
+live in `poemcore/narrative.py`:
+
+| Layer | QA analogue | Here | Role |
+|---|---|---|---|
+| **1 — knowledge** | `entity_answer_planner` / `synthesis_engine` | `_gather_topic_knowledge` → `TopicKnowledge` | Read every observed relation about the topic, bucketed by role: epithets, properties, prepositional links, fronted predicates, place-events, and real subject→verb→object **actions** pulled from the phrase graph. No wording yet. |
+| **2 — reasoning / discourse** | `semantic_speech_planner` (bucket + seeded clause-order) | `_plan_topic_discourse` | Pick one **rhetorical schema** per sentence from a weighted pool (seeded, so each sentence differs), fill its clauses from the buckets, and track what's been used so a several-sentence paragraph is *multiple facets*, not one clause restated. |
+| **3 — speech** | `phrase_graph.generate` (per-node seeded pick) | `_render_description_sentence` / `_grow_clause_bridge` | Realize each clause's tokens, letting the learned phrase graph supply connective tissue ("sea *of* glory", "love *that* burns") where the corpus actually has it — never a fabricated transition. |
+
+Three things make it read as language rather than a fill-in-the-blank:
+
+- **Collocations.** The 2nd/3rd epithet is weighted not just by topic-fit but by
+  how often it is actually observed *next to* an already-chosen adjective in the
+  corpus (`adjective_collocations`, extracted at ingest). "true" pulls
+  "fair/false/good/kind" (attested pairings), not just any frequent adjective.
+- **Universal scene vs. description — one machine, re-weighted.** "Describe X"
+  and "Write a scene/story about X" run the *same* planner; a `scene_bias` flag
+  only tilts the shared schema pool toward event/action shapes (something
+  happens) vs. static description. No separate templated path. This is why
+  "Write a scene about a murder" now narrates ("Murder lurked. Murder
+  committed.") instead of falling back to "Murder paused."
+- **Creative licence ("allowed to lie").** Unlike QA, which may only state
+  grounded facts, this layer may borrow an epithet from a related field concept
+  or reach for a figurative connector — combinations the corpus never literally
+  showed. Hard-safety screening still runs first (a private/current-sensitive
+  ask audits even under a creative framing), preserved on the app path in
+  `../ios_demo/.../mw_ios.py`.
 
 ## The claim being tested
 
@@ -79,20 +131,24 @@ training text is blocked. The system must **recombine, not recite**.
 
 ```
 poetry_lab/
-  corpus/            six public-domain poets (Пушкин, Лермонтов, Тютчев, Фет, Блок, Ахматова)
+  corpus/            Russian verse (Пушкин, Лермонтов, Тютчев, Фет, Блок, Ахматова) + prose (Булгаков, Чехов)
+    english/         English narrative corpus (Shakespeare + 8 classics) — the Creative-mode source
   poemcore/
-    text.py          Russian syllable/rhyme/token primitives
-    ingest.py        corpus → artifacts (the swapped knowledge pipeline)
+    text.py          syllable/rhyme/token primitives (Russian + English)
+    morphology.py    verb / adjective / gender detection (Russian case endings + English word-order rules)
+    entity_types.py  person / place / object classifier (advisory)
+    ingest.py        corpus → artifacts + slim_narrative_artifact (the swapped knowledge pipeline)
     concept_graph.py reasoning: spreading activation (ported)
-    planner.py       reasoning: poetic move selection → PoemPlan
     phrase_model.py  language: frequency graph + seeded pick (ported)
-    reasoning.py     explicit poem goal → stanza plan → line decisions
-    generator.py     language: render plan into metered, rhymed lines
+    narrative.py     the three-layer description/scene generator (knowledge → discourse → speech)
+    planner.py       verse: poetic move selection → PoemPlan
+    reasoning.py     verse: poem goal → stanza plan → line decisions
+    generator.py     verse: render plan into metered, rhymed lines
     novelty.py       inverted support gate
     engine.py        orchestration
-  cli.py             command-line interface
-  eval/              five evaluation scripts + run_all.py
-  artifacts/         generated JSON model (the layer boundary)
+  cli.py             command-line interface (ingest / ingest-narrative / slim-narrative / write / narrate)
+  eval/              evaluation scripts + run_all.py
+  artifacts/         generated JSON model (the layer boundary; git-ignored)
 ```
 
 No third-party dependencies (stdlib only) — see `requirements.txt`.

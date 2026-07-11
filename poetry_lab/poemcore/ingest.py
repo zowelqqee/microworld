@@ -27,16 +27,29 @@ from poemcore.entity_types import (
     EntityEvidence,
     build_entity_types,
 )
-from poemcore.morphology import GenderEvidence, build_gender_map, is_finite_verb, is_infinitive, past_gender
+from poemcore.morphology import (
+    GenderEvidence,
+    build_gender_map,
+    is_finite_verb,
+    is_infinitive,
+    is_latin_word,
+    past_gender,
+)
 from poemcore.phrase_model import PhraseModel
 from poemcore.text import STOPWORDS, content_words, line_syllables, rhyme_key, sentences, words
 
 # Any preposition, not just locative ones: a token following any of them is a
 # noun phrase head, which is exactly the signal morphology needs to reject
-# nouns that look like masculine past verbs ("стол", "угол", "пол").
+# nouns that look like masculine past verbs ("стол", "угол", "пол"). Also
+# what the object_link/event_place description-relation loops key on, so an
+# English preposition set is required for those to produce any data at all —
+# without it, a sentence never gets more than a bare epithet to work with.
 _MORPH_PREPOSITIONS = frozenset({
     "в", "во", "на", "за", "под", "из", "к", "ко", "по", "у", "с", "со",
     "от", "до", "над", "при", "про", "о", "об", "обо", "для", "без", "через",
+    "in", "on", "at", "by", "with", "from", "to", "near", "of", "for",
+    "into", "onto", "upon", "within", "without", "through", "over", "under",
+    "before", "after", "behind", "beside", "among", "between", "against",
 })
 # A token must follow a preposition at least this often before we call it a
 # noun; a single stray hit should not silence a real verb.
@@ -51,12 +64,56 @@ ARTIFACT_DIR = _ROOT / "artifacts"
 # the generator never looks up is simply inert, same tolerance the production
 # phrase graph has for an unused learned fragment.
 _ADJ_END = re.compile(r"(ый|ий|ой|ая|яя|ое|ее|ые|ие|ым|им|ом|ей|ою|ую|юю)$")
+# English adjective endings. No agreement-by-ending is possible or needed —
+# English adjectives don't inflect for gender/number/case — so this is only
+# ever used to *identify* an adjective, never to check agreement (see
+# ``_nominative_attribute_agrees`` / ``_attribute_agrees_subject`` below,
+# which simply accept any recognised English adjective unconditionally).
+_ADJ_END_EN = re.compile(
+    r"[a-z]{3,}(?:ful|ous|ive|less|able|ible|al|ic|ish|like|some|en)$",
+    re.IGNORECASE,
+)
+# Common base-form adjectives with no derivational suffix at all ("short",
+# not "shortish") — a closed list, same tolerance as every other small
+# closed-class set in this module (STOPWORDS, _REQUEST_SHAPE_WORDS, ...):
+# a miss is harmless, a spurious hit merely keeps one word out of noun_set.
+_ADJ_BASE_EN = frozenset({
+    "short", "long", "tall", "big", "small", "large", "old", "new", "young",
+    "good", "bad", "hot", "cold", "warm", "cool", "dark", "bright", "fast",
+    "slow", "high", "low", "deep", "wide", "narrow", "thin", "thick",
+    "heavy", "light", "strong", "weak", "rich", "poor", "sweet", "bitter",
+    "fair", "foul", "true", "false", "brave", "bold", "grim", "fierce",
+    "gentle", "cruel", "kind", "wild", "calm", "proud", "sad", "glad",
+    "loud", "quiet", "sharp", "dull", "clean", "dirty", "full", "empty",
+    "near", "far", "close", "open", "free", "loose", "tight", "soft",
+    "hard", "rough", "smooth", "plain", "fine", "great", "little",
+})
+
+
+def _is_adjective_en(word: str) -> bool:
+    w = word.lower()
+    if w in _ADJ_BASE_EN:
+        return True
+    if bool(_ADJ_END_EN.search(w)):
+        return True
+    # Comparative/superlative ("shorter"/"shortest") only for a *known* base
+    # adjective's own stem — a bare "-er"/"-est" suffix check is too permissive
+    # (it would misclassify plain nouns like "winter" or "forest").
+    if w.endswith("er") and w[:-2] in _ADJ_BASE_EN:
+        return True
+    if w.endswith("est") and w[:-3] in _ADJ_BASE_EN:
+        return True
+    return False
 
 # case-preserving word tokenizer, for proper-noun detection during ingest
-_CASE_WORD_RE = re.compile(r"[А-ЯЁа-яё]+(?:-[А-ЯЁа-яё]+)?")
+# (Latin added alongside Cyrillic; no IGNORECASE here since case is exactly
+# the proper-noun signal, so both cases must be listed explicitly.)
+_CASE_WORD_RE = re.compile(r"[A-ZА-ЯЁa-zа-яё]+(?:-[A-ZА-ЯЁa-zа-яё]+)?")
 
 
 def _looks_adjective(word: str) -> bool:
+    if is_latin_word(word):
+        return _is_adjective_en(word)
     if bool(_ADJ_END.search(word)) and len(word) >= 5:
         return True
     # Short-form adjectives have no long adjective ending ("невидима",
@@ -68,6 +125,9 @@ def _looks_adjective(word: str) -> bool:
 def _nominative_attribute_agrees(adjective: str, noun: str) -> bool:
     """Keep only observed adjective+noun pairs that can form a subject phrase."""
 
+    if is_latin_word(noun):
+        # English adjectives don't inflect — any recognised adjective agrees.
+        return True
     if noun.endswith(("а", "я", "ь")):
         return adjective.endswith(("ая", "яя"))
     if noun.endswith(("о", "е")):
@@ -76,8 +136,14 @@ def _nominative_attribute_agrees(adjective: str, noun: str) -> bool:
 
 
 def _past_predicate_agrees(subject: str, predicate: str) -> bool:
-    """A conservative agreement check for a noun-led descriptive fact."""
+    """A conservative agreement check for a noun-led descriptive fact.
 
+    English marks neither gender nor number on the verb, so a recognised
+    finite verb is sufficient on its own — there is nothing to agree with.
+    """
+
+    if is_latin_word(predicate):
+        return is_finite_verb(predicate)
     gender = past_gender(predicate)
     if not gender:
         return False
@@ -91,6 +157,8 @@ def _past_predicate_agrees(subject: str, predicate: str) -> bool:
 def _attribute_agrees_subject(attribute: str, subject: str) -> bool:
     """Reject comparative/adverbial tails that cannot modify the subject."""
 
+    if is_latin_word(subject):
+        return _looks_adjective(attribute)
     if subject.endswith(("а", "я", "ь")):
         return attribute.endswith(("ая", "яя", "ой", "ей", "ою", "ею"))
     if subject.endswith(("о", "е")):
@@ -133,7 +201,7 @@ _NOISE_RE = re.compile(
     r"[0-9]+"                      # page number / bare year
     r"|[IVXLCDM]+"                  # roman-numeral section marker
     r"|[*\-\s]+"                    # divider (***, ---, ...)
-    r"|[А-ЯЁ0-9 .,:;!?\"'\-]+"       # ALL-CAPS title line
+    r"|[A-ZА-ЯЁ0-9 .,:;!?\"'\-]+"    # ALL-CAPS title line
     r")$"
 )
 
@@ -355,7 +423,52 @@ def _narrative_paths(source: Path | None = None) -> tuple[Path, ...]:
     return (source,)
 
 
-def build_narrative_artifacts(source: Path | None = None) -> dict:
+def _evenly_spaced(items: list[str], limit: int | None) -> list[str]:
+    """Keep a deterministic, corpus-wide sample rather than each file's head.
+
+    A mixed corpus has radically different source sizes.  Taking the first N
+    sentences would make a source's opening chapter its entire voice, whereas
+    evenly spaced picks retain its beginning, middle, and end without letting
+    a long novel erase the shorter poetry sources.
+    """
+
+    if limit is None or limit <= 0 or len(items) <= limit:
+        return items
+    if limit == 1:
+        return [items[len(items) // 2]]
+    last = len(items) - 1
+    return [items[(index * last) // (limit - 1)] for index in range(limit)]
+
+
+def _source_narrative_sentences(path: Path) -> list[str]:
+    """Segment prose as sentences and verse as lines.
+
+    Poetry often has no final punctuation until the end of a stanza.  Treating
+    the whole stanza as one sentence silently reduces a 15,000-line source to
+    a few dozen training examples and makes a supposedly mixed corpus mostly
+    prose.  The source-local decision keeps each literary form represented.
+    """
+
+    raw = path.read_text(encoding="utf-8").lstrip("\ufeff")
+    lines = [line.strip() for line in raw.splitlines() if line.strip() and not line.lstrip().startswith("#")]
+    average_words = sum(len(words(line)) for line in lines) / max(1, len(lines))
+    if average_words >= 8.0:
+        return sentences("\n".join(lines))
+
+    out: list[str] = []
+    for line in lines:
+        letters = [char for char in line if char.isalpha()]
+        # Section titles and scanned-edition headings are not language samples.
+        if letters and not any(char.islower() for char in letters):
+            continue
+        if len(words(line)) >= 2:
+            out.append(line)
+    return out
+
+
+def build_narrative_artifacts(
+    source: Path | None = None, *, max_sentences_per_source: int | None = None
+) -> dict:
     """Build the same core artifacts from prose sentences, not verse lines.
 
     The graph, phrase model, proper-name detector, and novelty support remain
@@ -364,8 +477,17 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
     """
 
     paths = _narrative_paths(source)
-    raw = "\n\n".join(path.read_text(encoding="utf-8") for path in paths)
-    prose_sentences = sentences(raw)
+    source_sentence_counts: dict[str, int] = {}
+    prose_sentences: list[str] = []
+    for path in paths:
+        source_sentences = _source_narrative_sentences(path)
+        sampled = _evenly_spaced(source_sentences, max_sentences_per_source)
+        source_sentence_counts[path.name] = len(sampled)
+        prose_sentences.extend(sampled)
+    # Paragraph association must use the same sampled material; otherwise a
+    # long source would still dominate the graph after its sentences had been
+    # balanced for the phrase model.
+    raw = "\n\n".join(prose_sentences)
     phrase = PhraseModel()
     graph = ConceptGraph()
     node_freq: Counter = Counter()
@@ -390,6 +512,13 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
     frame_counts: Counter = Counter()
     frame_subjects: defaultdict[tuple[str, str], set[str]] = defaultdict(set)
     descriptive_subject_evidence: Counter = Counter()
+    # Adjective-adjective collocation: which descriptive words are actually
+    # observed near each other ("cold and dark", "wide, wild, and deep"), as
+    # opposed to merely both relating to the same topic in the concept graph.
+    # This is what lets epithet selection prefer combinations attested in the
+    # corpus's own usage over combinations that are topically plausible but
+    # never actually said together.
+    adjective_collocation: defaultdict[str, Counter] = defaultdict(Counter)
     prose_tokens: list[list[str]] = []
     sentence_lengths: list[int] = []
     dialogue_count = description_count = narration_count = 0
@@ -426,6 +555,19 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
         for left, right in zip(toks, toks[1:]):
             if _looks_adjective(left) and right in cwords and not _looks_adjective(right):
                 graph.epithet[right][left] = graph.epithet[right].get(left, 0) + 1
+        # Adjective-adjective collocation: a short window catches both
+        # coordinated pairs ("cold and dark") and stacked pre-nominal
+        # adjectives ("wide, wild, deep sea") without needing to parse
+        # conjunctions specifically — either shape is genuine co-usage
+        # evidence, symmetric by construction (both directions recorded).
+        adj_positions = [i for i, token in enumerate(toks) if _looks_adjective(token)]
+        for pos_i in adj_positions:
+            for pos_j in adj_positions:
+                if (
+                    pos_i != pos_j and 0 < abs(pos_i - pos_j) <= 3
+                    and toks[pos_i] != toks[pos_j]  # a repeated word is not a collocation
+                ):
+                    adjective_collocation[toks[pos_i]][toks[pos_j]] += 1
 
         case_tokens = _CASE_WORD_RE.findall(sentence)
         for pos, token in enumerate(case_tokens):
@@ -475,7 +617,6 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
                 and not is_finite_verb(_subject)
                 and not _looks_adjective(_subject)
                 and is_finite_verb(predicate)
-                and past_gender(predicate) is not None
                 and _past_predicate_agrees(_subject, predicate)
                 and object_ not in STOPWORDS
                 and not is_finite_verb(object_)
@@ -562,9 +703,20 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
     # A repeated adverb such as "тоже" can appear in the same local slot as
     # an object. Keep -о/-е words only when the preposition evidence observed
     # that exact surface as a noun head (e.g. "на солнце", "в пальто").
+    #
+    # A recognised adjective is excluded outright, regardless of what
+    # preposition/object evidence it accumulated: an English adjective used
+    # idiomatically after a preposition ("in truth", "for good", "of old")
+    # would otherwise get counted as a noun head, which then disqualifies it
+    # from epithet extraction ("adjective not in noun_set" — see
+    # ``_is_semantic_action`` and the epithet loop below). Russian's case
+    # endings already make this rare there; English has none, so without this
+    # guard the very words most useful as epithets are the ones most likely
+    # to leak into noun_like.
     noun_like = sorted(
         word for word in raw_noun_like
-        if not word.endswith(("о", "е")) or word in prep_heads
+        if (not word.endswith(("о", "е")) or word in prep_heads)
+        and not _looks_adjective(word)
     )
     noun_set = set(noun_like)
     proper_set = set(characters) | set(locations)
@@ -576,19 +728,24 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
         ``allow_neuter`` admits -о/-е surfaces ("солнце", "окно") for the kinds
         whose predicate-agreement check ("село" is neuter) separates a neuter
         nominative from an oblique case such as "в комнате".
+
+        English has no case marking, so there is no oblique-ending rejection
+        for a Latin subject — being in ``noun_set`` (corpus-evidence-based,
+        not spelling-based) is the whole test.
         """
-        oblique = ("у", "ю", "и", "ы", "ом", "ем", "ами", "ями") if allow_neuter else (
-            "у", "ю", "е", "и", "ы", "ом", "ем", "ами", "ями",
-        )
-        return (
+        base_ok = (
             subject in noun_set
             and subject not in proper_set
             and subject not in _DESCRIPTION_ENTITY_NOISE
             and not is_finite_verb(subject)
-            and not _NARRATIVE_VERB.search(subject)
             and not _looks_adjective(subject)
-            and not subject.endswith(oblique)
         )
+        if is_latin_word(subject):
+            return base_ok
+        oblique = ("у", "ю", "и", "ы", "ом", "ем", "ами", "ями") if allow_neuter else (
+            "у", "ю", "е", "и", "ы", "ом", "ем", "ами", "ями",
+        )
+        return base_ok and not _NARRATIVE_VERB.search(subject) and not subject.endswith(oblique)
 
     def _link_object_ok(other: str) -> bool:
         """A noun head that can stand as the far end of an observed relation."""
@@ -611,6 +768,8 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
         A transitive predicate is rejected: its direct object was elided by
         the local scan, and "человек погружал в сосуд" is not a clause.
         """
+        if is_latin_word(predicate):
+            return is_finite_verb(predicate) and transitive_evidence.get(predicate, 0) < 2
         return (
             is_finite_verb(predicate)
             and past_gender(predicate) is not None
@@ -631,7 +790,6 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
             if (
                 _description_subject_ok(subject)
                 and is_finite_verb(predicate)
-                and past_gender(predicate) is not None
                 and _past_predicate_agrees(subject, predicate)
                 and detail not in STOPWORDS
                 and detail not in proper_set
@@ -654,7 +812,12 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
                 index == 0
                 and _description_subject_ok(subject)
                 and is_finite_verb(predicate)
-                and past_gender(predicate) is not None
+                # Russian: restrict to genuinely past-tense forms (is_finite_verb
+                # alone also accepts present tense). English marks no gender to
+                # check agreement against here, so any recognised finite verb
+                # is accepted as-is — a minor broadening, same tolerance the
+                # rest of this heuristic layer already has for approximate signal.
+                and (is_latin_word(predicate) or past_gender(predicate) is not None)
                 and not predicate.endswith(("ся", "сь"))
             ):
                 description_relation_counts[(subject, predicate, "", "predicate_before_subject")] += 1
@@ -758,11 +921,20 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
     lengths = sorted(sentence_lengths)
     avg_words = round(sum(sentence_lengths) / total, 2) if total else 0.0
     median_words = lengths[total // 2] if total else 0
+    # Keep only each adjective's strongest collocates (bounded artifact size);
+    # a single stray adjacency is noise, so pairs need at least 2 observations.
+    adjective_collocations = {
+        word: filtered
+        for word, counter in adjective_collocation.items()
+        if (filtered := {w: c for w, c in counter.most_common(12) if c >= 2})
+    }
     meta = {
         "mode": "narrative",
         "source": paths[0].name if len(paths) == 1 else "merged_narrative_corpus",
         "sources": [path.name for path in paths],
         "total_sentences": total,
+        "source_sentence_counts": source_sentence_counts,
+        "max_sentences_per_source": max_sentences_per_source,
         "concept_nodes": len(graph.weight),
         "sentence_length": {"average_words": avg_words, "median_words": median_words},
         "dialogue": {"sentences": dialogue_count, "ratio": round(dialogue_count / total, 3) if total else 0.0},
@@ -775,6 +947,7 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
         "recurring_locations": locations,
         "recurring_objects": recurring_objects,
         "entity_types": entity_types,
+        "adjective_collocations": adjective_collocations,
         "noun_like_sources": {
             "after_preposition": dict(after_preposition),
             "after_predicate": dict(object_evidence),
@@ -810,11 +983,60 @@ def build_narrative_artifacts(source: Path | None = None) -> dict:
     }
 
 
-def write_narrative_artifacts(target: Path | None = None, source: Path | None = None) -> Path:
-    artifact = build_narrative_artifacts(source)
+def write_narrative_artifacts(
+    target: Path | None = None,
+    source: Path | None = None,
+    *,
+    max_sentences_per_source: int | None = None,
+) -> Path:
+    artifact = build_narrative_artifacts(
+        source, max_sentences_per_source=max_sentences_per_source
+    )
     ARTIFACT_DIR.mkdir(exist_ok=True)
     out = target or (ARTIFACT_DIR / "narrative_model.json")
     out.write_text(json.dumps(artifact, ensure_ascii=False, indent=2), encoding="utf-8")
+    return out
+
+
+def slim_narrative_artifact(
+    source: Path | None = None, target: Path | None = None, *, edges_per_node: int = 12,
+) -> Path:
+    """Produce a memory-lean copy of a narrative artifact for on-device use.
+
+    The full artifact parses to ~1 GB of Python dicts (mostly the 2.4 M-edge
+    concept graph and the verse/novelty phrase tables), which jetsam-kills the
+    app on an iPhone 11. The narrative three-layer generator needs none of
+    those at full fidelity, so this drops the fields it never reads and keeps
+    only each concept node's strongest ``edges_per_node`` neighbours. Result:
+    ~370 MB resident, same generation output. The full artifact stays the
+    laptop default; only the phone build uses the slim one.
+    """
+    src = source or (ARTIFACT_DIR / "narrative_model.json")
+    out = target or (ARTIFACT_DIR / "narrative_model.phone.json")
+    data = json.loads(src.read_text(encoding="utf-8"))
+
+    # 1. Drop phrase tables the narrative path never uses: backward/backward2
+    #    are verse-only (grow_backward), seen_4grams is the novelty gate (the
+    #    short bucketed clauses can't recite a corpus 4-gram anyway).
+    phrase = data.get("phrase_model", {})
+    for key in ("backward", "backward2", "seen_4grams"):
+        phrase.pop(key, None)
+    data["rhyme_groups"] = {}
+
+    # 2. Keep only each source node's strongest edges — enough for field
+    #    expansion, a fraction of the memory.
+    edges = data.get("concept_graph", {}).get("edges", {})
+    by_source: dict[str, list[tuple[str, float]]] = defaultdict(list)
+    for key, weight in edges.items():
+        source_node = key.split("\t", 1)[0]
+        by_source[source_node].append((key, weight))
+    trimmed: dict[str, float] = {}
+    for rows in by_source.values():
+        for key, weight in sorted(rows, key=lambda kv: -kv[1])[:edges_per_node]:
+            trimmed[key] = weight
+    data["concept_graph"]["edges"] = trimmed
+
+    out.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     return out
 
 

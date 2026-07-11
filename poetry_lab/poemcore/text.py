@@ -12,12 +12,18 @@ from __future__ import annotations
 import re
 
 VOWELS = "аеёиоуыэюя"
-_WORD_RE = re.compile(r"[а-яё]+(?:-[а-яё]+)?", re.IGNORECASE)
+# Latin added alongside Cyrillic so the same primitives work for an
+# English-only corpus (e.g. Shakespeare) without a parallel pipeline. Mixed
+# script in one hyphenated token never occurs in practice, so this is a
+# strict union, not per-language dispatch.
+_WORD_RE = re.compile(r"[а-яёa-z]+(?:-[а-яёa-z]+)?", re.IGNORECASE)
 _SENTENCE_RE = re.compile(r"(?<=[.!?…])(?:[\"»”')\]]*)\s+")
 
 # Closed-class function words carry no imagery signal, exactly like the
 # production ``_STOPWORDS`` set — excluded from the concept graph so it is not
-# dominated by prepositions and conjunctions.
+# dominated by prepositions and conjunctions. Russian and English sets are
+# just unioned: for a single-language corpus the other language's words never
+# occur in the text, so this costs nothing and avoids a language switch.
 STOPWORDS = frozenset(
     {
         "и", "а", "но", "да", "или", "то", "не", "ни", "как", "что", "чтоб",
@@ -33,6 +39,22 @@ STOPWORDS = frozenset(
         "был", "была", "было", "были", "быть", "есть", "если",
         # Orthographic variants and contracted forms seen in the source texts.
         "ее", "еще", "иль", "кто", "нет", "нам", "моей", "может",
+        # English closed-class function words (Early Modern spellings included
+        # since the reference corpus is Shakespeare).
+        "the", "a", "an", "and", "but", "or", "nor", "if", "then", "than",
+        "as", "so", "for", "to", "of", "in", "on", "at", "by", "with",
+        "without", "from", "into", "onto", "upon", "over", "under", "through",
+        "not", "no", "yes", "is", "are", "was", "were", "be", "been", "being",
+        "am", "do", "does", "did", "doing", "done", "have", "has", "had",
+        "having", "will", "would", "shall", "should", "can", "could", "may",
+        "might", "must", "i", "you", "he", "she", "it", "we", "they", "me",
+        "him", "her", "us", "them", "my", "your", "his", "its", "our",
+        "their", "mine", "yours", "hers", "ours", "theirs", "this", "that",
+        "these", "those", "who", "whom", "whose", "which", "what", "when",
+        "where", "why", "how", "here", "there", "now", "up", "down", "out",
+        "about", "again", "further", "once", "too", "very", "just", "thee",
+        "thou", "thy", "thine", "ye", "hath", "doth", "art", "wilt", "shalt",
+        "tis", "twas", "o", "ay", "nay", "hark", "wherefore",
     }
 )
 

@@ -137,6 +137,20 @@ def main(argv: list[str] | None = None) -> int:
         "ingest-narrative", help="build prose artifacts from one file or an uploaded corpus directory"
     )
     p_ingest_narrative.add_argument("--source", default=None, help=".txt file or directory of prose files")
+    p_ingest_narrative.add_argument("--output", default=None, help="artifact JSON destination")
+    p_ingest_narrative.add_argument(
+        "--max-sentences-per-source", type=int, default=None,
+        help="deterministically balance a mixed corpus by limiting each source",
+    )
+
+    p_slim = sub.add_parser(
+        "slim-narrative",
+        help="write a memory-lean phone copy of the narrative artifact (drops verse/novelty "
+             "tables + trims the concept graph; ~370 MB resident vs ~1 GB)",
+    )
+    p_slim.add_argument("--source", default=None, help="full artifact JSON (default: artifacts/narrative_model.json)")
+    p_slim.add_argument("--output", default=None, help="slim artifact destination (default: artifacts/narrative_model.phone.json)")
+    p_slim.add_argument("--edges-per-node", type=int, default=12, help="strongest concept-graph edges kept per node")
 
     p_write = sub.add_parser("write", help="generate a poem from a prompt")
     p_write.add_argument("prompt")
@@ -170,7 +184,24 @@ def main(argv: list[str] | None = None) -> int:
         print(f"wrote {path}")
         return 0
     if args.command == "ingest-narrative":
-        path = write_narrative_artifacts(Path(args.source) if args.source else None)
+        # `write_narrative_artifacts` takes the output path first and the
+        # corpus source second.  Passing `--source` positionally previously
+        # treated a directory such as `corpus/` as the output file and failed
+        # before any mixed-corpus model could be produced.
+        path = write_narrative_artifacts(
+            target=Path(args.output) if args.output else None,
+            source=Path(args.source) if args.source else None,
+            max_sentences_per_source=args.max_sentences_per_source,
+        )
+        print(f"wrote {path}")
+        return 0
+    if args.command == "slim-narrative":
+        from poemcore.ingest import slim_narrative_artifact  # noqa: E402
+        path = slim_narrative_artifact(
+            source=Path(args.source) if args.source else None,
+            target=Path(args.output) if args.output else None,
+            edges_per_node=args.edges_per_node,
+        )
         print(f"wrote {path}")
         return 0
 

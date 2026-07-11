@@ -33,15 +33,25 @@ CanonicalEntityType = str  # "person" | "place" | "object" | "unknown"
 
 # Prepositions whose object is a location ("в Москве", "на Патриарших"). The
 # locative-preposition test is the corpus analogue of production's `place`
-# keyword row ("city", "region", "island", ...).
-LOCATIVE_PREPOSITIONS = frozenset({"в", "во", "на", "из", "к", "ко", "по", "у", "под", "над"})
+# keyword row ("city", "region", "island", ...). English forms added
+# alongside so an English-only corpus (e.g. Shakespeare) gets the same signal.
+LOCATIVE_PREPOSITIONS = frozenset({
+    "в", "во", "на", "из", "к", "ко", "по", "у", "под", "над",
+    "in", "at", "on", "from", "near", "by", "within", "beneath", "above",
+})
 
 # An entity is a person when it repeatedly occupies the agent slot: the token
 # immediately precedes a finite verb ("Маргарита летела"), or immediately
 # follows a speech verb in inversion ("сказал Воланд"). This is the corpus
 # analogue of production's `person` keyword row ("entrepreneur", "founder", ...).
+# Matched via `str.startswith`, so English forms are listed individually
+# rather than as a shared stem (English past tense isn't a suffix the way
+# Russian's is: "say"/"said" don't share a prefix).
 SPEECH_VERB_STEMS = ("сказал", "ответил", "спросил", "проговорил", "воскликнул",
-                     "прошептал", "закричал", "промолвил", "отозвал", "заметил")
+                     "прошептал", "закричал", "промолвил", "отозвал", "заметил",
+                     "say", "said", "answer", "answered", "ask", "asked",
+                     "repl", "exclaim", "whisper", "cri", "shout", "speak",
+                     "spoke", "declar", "murmur", "utter")
 
 # Minimum observations before a ratio is trusted. Below this the evidence is
 # noise and the type stays "unknown" — the same conservative bar the ingest

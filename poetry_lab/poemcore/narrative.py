@@ -17,9 +17,9 @@ from pathlib import Path
 
 from poemcore.concept_graph import ConceptGraph
 from poemcore.discourse import DiscourseState, line_salience
-from poemcore.ingest import load_artifacts
+from poemcore.ingest import _looks_adjective, load_artifacts
 from poemcore.line_plan import _ADJ_END
-from poemcore.morphology import is_finite_verb, is_infinitive, past_gender, sentence_agreement_errors
+from poemcore.morphology import is_finite_verb, is_infinitive, is_latin_word, past_gender, sentence_agreement_errors
 from poemcore.novelty import NoveltyReport, assess_poem, check_line
 from poemcore.phrase_model import PhraseModel, seeded_weighted_pick
 from poemcore.reasoning import _choose_action, _is_action
@@ -55,12 +55,16 @@ _FRAGMENT_OBJECT_NOISE = frozenset({
 # admitted as event objects merely because a permissive verb ending matched.
 _SHORT_ADJ_END = re.compile(r"(?:има|ыма|ема|ома|ена|ана|ита|ута|ята)$")
 _FIRST_PERSON = frozenset({"я", "мы", "мне", "меня", "мой", "моя", "моё", "мои"})
-_PROMPT_WORD_RE = re.compile(r"[А-ЯЁа-яё]+(?:-[А-ЯЁа-яё]+)?")
+_PROMPT_WORD_RE = re.compile(r"[A-ZА-ЯЁa-zа-яё]+(?:-[A-ZА-ЯЁa-zа-яё]+)?")
 _REQUEST_SHAPE_WORDS = frozenset({
     "предложение", "предложения", "предложений", "предложениях",
     "абзац", "абзаца", "абзацев", "абзаце", "слов", "слова",
     "одном", "двух", "трех", "трёх", "четырех", "четырёх", "пяти",
     "шести", "семи", "восьми", "девяти", "десяти",
+    # English: nouns that name the requested output's *form* ("write a
+    # SCENE about X"), not its content — same role as предложение/абзац above.
+    "scene", "story", "paragraph", "passage", "sentence", "sentences",
+    "paragraphs", "scenes", "stories", "words", "word", "poem", "poems",
 })
 _DISCOURSE_MARKERS = frozenset({"затем", "потом", "тогда", "вскоре", "вдруг", "позже"})
 
@@ -264,6 +268,7 @@ def plan_scene(
     verb_lexicon: dict | None = None,
     speech_frames: tuple[dict, ...] = (),
     description_relations: dict[str, list[dict]] | None = None,
+    knowledge_actions: dict[str, tuple[tuple[str, str], ...]] | None = None,
     selection_seed: str = "",
 ) -> ScenePlan:
     # ``plan_scene`` stays replayable by default for unit tests and offline
@@ -288,6 +293,14 @@ def plan_scene(
     context_words = [word for word in map(_normalize, content_words(context)) if word in graph.weight]
     command_words = {"напиши", "опиши", "продолжи", "сделай", "write", "describe", *_REQUEST_SHAPE_WORDS}
     prompt_words_all = [
+        word for word in map(_normalize, content_words(prompt))
+        if word in graph.weight and word not in command_words
+        # A bare descriptive adjective ("a SHORT scene about a battle") is a
+        # request-shape modifier, not the topic — the same role _REQUEST_SHAPE_WORDS
+        # already filters for nouns. Skip only when a non-adjective word
+        # survives too, so a genuinely adjective-only prompt still has a seed.
+        and not (_looks_adjective(word) and word not in proper_names)
+    ] or [
         word for word in map(_normalize, content_words(prompt))
         if word in graph.weight and word not in command_words
     ]
@@ -400,20 +413,29 @@ def plan_scene(
     # silently converted into a character scene.  In particular, no recurring
     # protagonist may leak into "Опиши Москву" simply because prose events
     # normally need an actor.
-    if mode == "description":
+    #
+    # "Write a scene about X" goes through the *same* three-layer machine, only
+    # with ``scene_bias`` so the shared schema pool tilts toward event/action
+    # shapes (something happens) rather than static description. The dedicated
+    # multi-character narrative path below is reserved for dialogue /
+    # introduction / continuation, which are genuinely different.
+    if mode in ("description", "scene"):
         active_field = _topic_field(
             graph, tuple(seeds), phrase, noun_like, proper_names, description_relations or {},
         )
         location = next((word for word in seeds if _type_of(word) == "place"), "")
         goal = SceneGoal(
-            topic=seeds[0], mode=mode, speaker="", location=location,
+            topic=seeds[0], mode="description", speaker="", location=location,
             characters=(), seeds=tuple(seeds[:5]), active_field=active_field,
-            scene_objective="describe_grounded_field",
+            scene_objective="describe_grounded_field" if mode == "description" else "narrate_grounded_scene",
         )
         return _plan_description_scene(
             goal, graph, phrase, sentence_count=sentence_count,
             noun_like=noun_like, genders=genders, selection_seed=variant_seed,
             description_relations=description_relations or {},
+            adjective_collocations=meta.get("adjective_collocations", {}),
+            mode_is_creative=True, verb_lexicon=verb_lexicon,
+            scene_bias=(mode == "scene"),
         )
 
     # The speaker is an agent, so it must be a person when we can tell.
@@ -467,19 +489,28 @@ def plan_scene(
             object_ = continuity_anchor or goal.seeds[(index + 1) % len(goal.seeds)]
         relation = _relation_for_beat(purpose)
         planned_object = object_
-        fragment = _choose_reasoned_fragment(
-            graph, phrase, subject, (continuity_anchor, object_, *field_seeds),
-            f"{variant_seed}|scene|{mode}|{index}",
-            strict_subject=(mode == "dialogue"), used_fragments=used_fragments,
-            genders=genders, noun_like=noun_like, verb_lexicon=verb_lexicon,
-            speech_frames=speech_frames, proper_names=proper_names,
-        )
-        if fragment:
-            subject, action, realized_object = _fragment_roles(fragment, phrase, noun_like)
-            object_ = realized_object
-            used_fragments.add(fragment)
+        fact_options = (knowledge_actions or {}).get(subject, ())
+        if fact_options:
+            action, object_ = fact_options[index % len(fact_options)]
+            # A knowledge triple is a planned event just like a corpus SVO
+            # fragment.  Marking it as such lets the unchanged beam/search and
+            # speech fallback preserve it instead of replacing it with the
+            # non-committing "молчал" pause.
+            fragment = (subject, action, object_)
         else:
-            action = _choose_action(graph, phrase, subject, object_, f"scene|{mode}|{index}")
+            fragment = _choose_reasoned_fragment(
+                graph, phrase, subject, (continuity_anchor, object_, *field_seeds),
+                f"{variant_seed}|scene|{mode}|{index}",
+                strict_subject=(mode == "dialogue"), used_fragments=used_fragments,
+                genders=genders, noun_like=noun_like, verb_lexicon=verb_lexicon,
+                speech_frames=speech_frames, proper_names=proper_names,
+            )
+            if fragment:
+                subject, action, realized_object = _fragment_roles(fragment, phrase, noun_like)
+                object_ = realized_object
+                used_fragments.add(fragment)
+            else:
+                action = _choose_action(graph, phrase, subject, object_, f"scene|{mode}|{index}")
         detail_subject = _detail_subject(subject, phrase)
         detail_fragment = _choose_reasoned_fragment(
             graph, phrase, detail_subject, (*fragment, continuity_anchor, planned_object, *field_seeds),
@@ -680,71 +711,538 @@ def _description_predicate(
     return "", "", "observation"
 
 
+# ===========================================================================
+# Three-layer description generation, mirroring the QA open-synthesis path
+# (knowledge -> discourse reasoning -> speech). Each layer is a separate
+# function so the boundary is inspectable, exactly like QA's
+# entity_answer_planner -> semantic_speech_planner -> phrase_graph split.
+#
+#   Layer 1  _gather_topic_knowledge   : WHAT is known about the topic,
+#            (knowledge)                 bucketed by relation role. No wording.
+#   Layer 2  _plan_topic_discourse     : HOW to say it — pick a rhetorical
+#            (reasoning)                 schema and clause order per sentence,
+#                                        seeded-random so shape varies; in
+#                                        creative mode it may combine facts the
+#                                        corpus never showed together and reach
+#                                        for a figurative connector (the
+#                                        "allowed to lie" freedom QA refuses).
+#   Layer 3  _realize_topic_clauses    : surface each clause through the
+#            (speech)                    phrase graph so connective tissue is
+#                                        corpus-grown, not a fixed template.
+# ===========================================================================
+
+
+@dataclass(frozen=True)
+class TopicKnowledge:
+    """Layer 1 output: the bucketed facts about one topic. Pure content."""
+
+    subject: str
+    epithets: tuple[tuple[str, int], ...] = ()      # (adjective, weight)
+    properties: tuple[tuple[str, str], ...] = ()     # (copula, detail) — "is dark"
+    links: tuple[tuple[str, str], ...] = ()          # (preposition, object) — "of glory"
+    predicates: tuple[str, ...] = ()                 # bare fronted predicate — "hath"
+    events: tuple[tuple[str, str], ...] = ()         # (action, place phrase)
+    actions: tuple[tuple[str, str], ...] = ()        # (verb, object) — real SVO ("banished duke")
+
+    def has_any(self) -> bool:
+        return bool(
+            self.epithets or self.properties or self.links
+            or self.predicates or self.events or self.actions
+        )
+
+
+def _gather_topic_actions(
+    subject: str, phrase: PhraseModel, noun_like: frozenset[str], verb_lexicon: dict | None,
+    *, limit: int = 8,
+) -> tuple[tuple[str, str], ...]:
+    """Read real subject→verb(→object) events straight from the learned phrase
+    graph, gated by the same SVO trust checks the scene renderer uses. This is
+    what lets a *scene* about any topic show something happening ("murder
+    contrived", "sea swallowed ship") without a hand-written action template —
+    the verbs and objects are all corpus transitions of this exact subject."""
+
+    verbs = phrase.forward.get(subject, {})
+    if not verbs:
+        return ()
+    scored: list[tuple[tuple[str, str], int]] = []
+    seen: set[tuple[str, str]] = set()
+    for verb, verb_count in verbs.items():
+        if not _is_semantic_action(verb, subject, noun_like):
+            continue
+        objects = phrase.forward2.get((subject, verb), {})
+        placed_object = False
+        for obj, obj_count in objects.items():
+            if _trusted_svo((subject, verb, obj), subject, noun_like, verb_lexicon) and obj != subject:
+                key = (verb, obj)
+                if key not in seen:
+                    seen.add(key)
+                    scored.append((key, verb_count + obj_count))
+                    placed_object = True
+        # A bare intransitive event ("murder contrived") is still a complete
+        # assertion when no trusted object exists.
+        if not placed_object and _trusted_svo((subject, verb), subject, noun_like, verb_lexicon):
+            key = (verb, "")
+            if key not in seen:
+                seen.add(key)
+                scored.append((key, verb_count))
+    scored.sort(key=lambda item: (-item[1], item[0]))
+    return tuple(pair for pair, _weight in scored[:limit])
+
+
+def _gather_topic_knowledge(
+    subject: str, description_relations: dict[str, list[dict]],
+    phrase: PhraseModel | None = None, noun_like: frozenset[str] = frozenset(),
+    verb_lexicon: dict | None = None,
+) -> TopicKnowledge:
+    """Layer 1 (knowledge): read every observed relation about ``subject`` and
+    sort it into role buckets. This is the analogue of QA's fact planner
+    (``entity_answer_planner``/``synthesis_engine``) — it decides *what is
+    known*, with no commitment yet to sentence shape.
+
+    When ``phrase`` is supplied, real subject→verb→object events are also read
+    from the phrase graph (``actions`` bucket), so a scene can show the topic
+    *doing* something, not only be described."""
+
+    rows = description_relations.get(subject, ())
+
+    def _sorted(items: list[tuple], key_weight) -> tuple:
+        return tuple(sorted(items, key=key_weight, reverse=True))
+
+    epithets = _sorted(
+        [(str(r["detail"]), int(r.get("weight", 1))) for r in rows
+         if r.get("kind") == "epithet" and r.get("detail")],
+        key_weight=lambda pair: pair[1],
+    )
+    properties = tuple(
+        (str(r.get("predicate", "")), str(r["detail"])) for r in rows
+        if r.get("kind") == "property" and r.get("detail")
+    )
+    links = tuple(
+        (str(r.get("predicate", "")), str(r["detail"])) for r in rows
+        if r.get("kind") == "object_link" and r.get("detail")
+    )
+    predicates = tuple(dict.fromkeys(
+        str(r.get("predicate", "")) for r in rows
+        if r.get("kind") == "predicate_before_subject" and r.get("predicate")
+        # A fronted predicate only reads as a sentence opener when it is a
+        # lexical verb ("Made war", "Contrived murder"). A copula, bare
+        # auxiliary, or bare modal fronted ("Is true love", "Would murder")
+        # is ungrammatical / incomplete without a following verb, so both are
+        # excluded here — a copula can still appear in the copula_epithet clause.
+        and str(r.get("predicate", "")) not in _COPULA_AUXILIARIES
+        and str(r.get("predicate", "")) not in _BARE_MODALS
+    ))
+    events = tuple(
+        (str(r.get("predicate", "")), str(r["detail"])) for r in rows
+        if r.get("kind") in {"event_place", "event_place_inverted"} and r.get("predicate")
+    )
+    actions = (
+        _gather_topic_actions(subject, phrase, noun_like, verb_lexicon)
+        if phrase is not None else ()
+    )
+    return TopicKnowledge(subject, epithets, properties, links, predicates, events, actions)
+
+
+# A "clause" is a role tag plus its already-chosen surface tokens; a sentence
+# is an ordered list of clauses joined by connectors. The realizer (Layer 3)
+# turns each into text. Roles are deliberately coarse — they name a rhetorical
+# move, not a grammar rule.
+Clause = tuple[str, tuple[str, ...]]  # (role, tokens)
+
+
+# Rhetorical schemas: each names an ordered sequence of clause roles. Layer 2
+# picks one per sentence (seeded), filtered to those whose required buckets are
+# non-empty, so successive sentences take different shapes instead of the fixed
+# "N adjectives + noun". Weights bias toward the more natural shapes without
+# ever forcing one. `req` lists buckets that must be non-empty to use it.
+# `dynamic` marks schemas that assert an *event* (something happens) rather than
+# a static description — a scene re-weights toward these, a description away
+# from them, from the *same* pool (no separate templated path per mode).
+_DESCRIPTION_SCHEMAS: tuple[tuple[str, int, tuple[str, ...], tuple[str, ...], bool], ...] = (
+    # name,               weight, required buckets,         clause roles,                         dynamic
+    ("copula",            5, ("epithets",),                 ("subject", "copula_epithet"),          False),
+    ("copula_link",       3, ("epithets", "links"),         ("subject", "copula_epithet", "link"),  False),
+    ("epithet_np",        4, ("epithets",),                 ("epithet_subject",),                    False),
+    ("epithet_np_link",   4, ("epithets", "links"),         ("epithet_subject", "link"),             False),
+    ("link_np",           3, ("links",),                    ("subject", "link"),                     False),
+    ("pred_front",        3, ("predicates", "epithets"),    ("predicate", "epithet_subject"),        True),
+    ("pred_link",         2, ("predicates", "links"),       ("predicate", "subject", "link"),        True),
+    # A subject known only through dialogue-tag verbs ("asked Sherlock",
+    # "cried Silver") and nothing else — no epithet, property, or link at all
+    # — still deserves a sentence ("Sherlock asked.") instead of silently
+    # producing nothing.
+    ("subject_predicate", 3, ("predicates",),               ("subject_predicate",),                  True),
+    ("property",          3, ("properties",),               ("subject", "property"),                 False),
+    ("property_epithet",  3, ("properties", "epithets"),    ("epithet_subject", "property"),         False),
+    ("event",             3, ("events",),                   ("subject", "event"),                    True),
+    ("event_epithet",     2, ("events", "epithets"),        ("epithet_subject", "event"),            True),
+    ("link_copula",       2, ("links", "epithets"),         ("subject", "link", "copula_epithet"),   False),
+    # Real corpus SVO events (the ``actions`` bucket) — the heart of "scene":
+    # the topic *does* something to something. These clauses are self-contained
+    # (they carry the subject), so they are never paired with a separate
+    # ``subject`` clause that would duplicate it.
+    ("action",            4, ("actions",),                  ("action",),                             True),
+    ("action_object",     4, ("actions",),                  ("action_object",),                      True),
+    ("epithet_action",    3, ("actions", "epithets"),       ("epithet_action",),                     True),
+    ("action_then_link",  2, ("actions", "links"),          ("action_object", "link"),               True),
+)
+# How much a scene multiplies dynamic schemas' weight (and shrinks static ones);
+# a description does the reverse. Same pool, just re-biased — universal.
+_SCENE_DYNAMIC_BOOST = 6
+_SCENE_STATIC_DAMP = 3
+
+# Connectors joining two clauses of one sentence. In creative mode a figurative
+# one may be chosen even where the corpus never joined those exact facts.
+_PLAIN_CONNECTORS = (("", 6), (",", 2), ("and", 1))
+_FIGURATIVE_CONNECTORS = (("", 6), (",", 2), ("and", 2), ("yet", 1))
+
+# Words allowed as a graph bridge between two clause tokens (Layer 3). Kept to
+# connectives/relativizers so bridging never inserts negation, an article, or a
+# content word that would change or ungrammaticalize the clause.
+_BRIDGE_WORDS = frozenset({
+    "of", "in", "on", "to", "with", "from", "by", "for", "at", "that",
+    "and", "as", "like", "through", "upon", "into", "within",
+})
+
+# Copulas / bare auxiliaries: fine inside a copula clause, wrong as a fronted
+# sentence-opening predicate.
+_COPULA_AUXILIARIES = frozenset({
+    "is", "are", "was", "were", "be", "been", "being", "am",
+    "do", "does", "did", "have", "has", "had",
+})
+# Bare modals need a following main verb ("would murder someone"), so fronting
+# one alone ("Would murder.") reads as an incomplete clause.
+_BARE_MODALS = frozenset({
+    "would", "will", "shall", "should", "could", "can", "might", "may", "must",
+})
+
+# A clause beginning with one of these attaches to the running subject on its
+# own (copula, auxiliary, or preposition) — so no inter-clause conjunction and
+# no graph bridge is placed before/after it.
+_CLAUSE_ATTACH_HEADS = frozenset({
+    "is", "are", "was", "were", "be", "being", "been", "hath", "has", "have",
+    "had", "do", "does", "doth", "did", "made", "let", "shall", "will",
+    "of", "in", "on", "to", "with", "from", "by", "for", "at", "into",
+    "upon", "within", "through", "as", "like", "that", "and",
+})
+
+
+def _new_used_state() -> dict:
+    """Per-subject bookkeeping so repeated sentences about one topic each use a
+    *different* rhetorical schema and *fresh* facts (a several-sentence
+    description is multiple angles on the topic, not the same clause restated)."""
+    return {"schemas": set(), "epithets": set(), "links": set(), "properties": set(),
+            "predicates": set(), "actions": set()}
+
+
+def _plan_topic_discourse(
+    knowledge: TopicKnowledge, *, index: int, mode_is_creative: bool, seed: str,
+    field_knowledge: tuple[TopicKnowledge, ...],
+    adjective_collocations: dict[str, dict[str, int]],
+    used: dict | None = None, scene_bias: bool = False,
+) -> tuple[list[Clause], str]:
+    """Layer 2 (reasoning/discourse): choose a rhetorical schema and fill its
+    clauses from the knowledge buckets. Returns ``(clauses, relation)``.
+
+    This is the layer QA's ``semantic_speech_planner`` provides and the old
+    description path lacked entirely: it decides discourse *shape*, seeded so
+    each sentence differs, rather than always emitting the same template.
+
+    ``used`` (per subject) is consumed and updated so that across a
+    several-sentence paragraph the same topic gets a *new* schema and *unused*
+    facts each time — describing more of it rather than repeating one clause.
+
+    ``scene_bias`` re-weights the *same* schema pool toward event/action shapes
+    (a scene: something happens) vs static description shapes — universal, no
+    separate templated path per mode.
+
+    Creative licence: unlike QA (which may only state observed facts), in
+    creative mode this layer may borrow an epithet from a related field topic
+    and attach it as if it belonged to the subject — a controlled, corpus-word
+    but not corpus-fact combination ("allowed to lie").
+    """
+
+    used = used if used is not None else _new_used_state()
+    schema_seed = f"{seed}|schema|{index}"
+    available = {
+        "epithets": bool([a for a, _w in knowledge.epithets if a not in used["epithets"]]),
+        "properties": bool([p for i, p in enumerate(knowledge.properties) if i not in used["properties"]]),
+        "links": bool([l for l in knowledge.links if "\t".join(l) not in used["links"]]),
+        "predicates": bool([p for p in knowledge.predicates if p not in used["predicates"]]),
+        "events": bool(knowledge.events),
+        "actions": bool([a for a in knowledge.actions if a not in used["actions"]]),
+    }
+
+    def _weight(base: int, dynamic: bool) -> int:
+        if not scene_bias:
+            return base
+        return base * _SCENE_DYNAMIC_BOOST if dynamic else max(1, base // _SCENE_STATIC_DAMP)
+
+    usable = [
+        (name, _weight(weight, dynamic), roles)
+        for name, weight, req, roles, dynamic in _DESCRIPTION_SCHEMAS
+        if all(available.get(bucket) for bucket in req)
+    ]
+    # Prefer a schema not yet used for this subject; fall back to any usable one
+    # only once every shape has been spent.
+    fresh = [entry for entry in usable if entry[0] not in used["schemas"]] or usable
+    if not fresh:
+        # Nothing observed (or all facts spent). In creative mode we are
+        # permitted to *invent*: borrow a field neighbour's epithet.
+        if mode_is_creative and field_knowledge:
+            borrowed = next((fk for fk in field_knowledge if fk.epithets and fk.subject != knowledge.subject), None)
+            if borrowed:
+                adj = borrowed.epithets[0][0]
+                return [("epithet_subject", (adj, knowledge.subject))], "epithet"
+        return [("subject", (knowledge.subject,))], "observation"
+
+    picked_name = seeded_weighted_pick(
+        schema_seed, "pick", [(name, weight) for name, weight, _roles in fresh]
+    )
+    roles = next(roles for name, _w, roles in fresh if name == picked_name)
+    used["schemas"].add(picked_name)
+
+    epithet_budget = seeded_weighted_pick(f"{seed}|adjn|{index}", "n", [(1, 5), (2, 3), (3, 1)])
+    chosen_epithets = _pick_collocated_epithets(
+        knowledge, adjective_collocations, epithet_budget, f"{seed}|adj|{index}",
+        exclude=used["epithets"],
+    )
+    used["epithets"].update(chosen_epithets)
+    # Creative licence: occasionally spike in a borrowed field epithet.
+    if mode_is_creative and field_knowledge and chosen_epithets:
+        borrow = seeded_weighted_pick(f"{seed}|borrow|{index}", "b", [(0, 3), (1, 1)])
+        if borrow:
+            donor = next((fk for fk in field_knowledge if fk.epithets and fk.subject != knowledge.subject), None)
+            if donor:
+                chosen_epithets = (*chosen_epithets, donor.epithets[0][0])
+
+    clauses: list[Clause] = []
+    for role in roles:
+        clause = _fill_clause(
+            role, knowledge, chosen_epithets, seed=f"{seed}|fill|{index}|{role}", used=used,
+        )
+        if clause[1]:
+            clauses.append(clause)
+    if not clauses:
+        clauses = [("subject", (knowledge.subject,))]
+    relation = clauses[0][0]
+    return clauses, relation
+
+
+def _pick_collocated_epithets(
+    knowledge: TopicKnowledge, adjective_collocations: dict[str, dict[str, int]],
+    count: int, seed: str, *, exclude: set | None = None,
+) -> tuple[str, ...]:
+    """Choose ``count`` epithets, weighting the 2nd+ by observed adjacency to
+    an already-chosen one (collocation) rather than topic-fit alone."""
+
+    exclude = exclude or set()
+    pool = [(adj, max(1, weight)) for adj, weight in knowledge.epithets if adj not in exclude]
+    if not pool:
+        # Every epithet already used elsewhere in the paragraph — reuse is
+        # better than an empty clause, so fall back to the full set.
+        pool = [(adj, max(1, weight)) for adj, weight in knowledge.epithets]
+    if not pool:
+        return ()
+    chosen: list[str] = []
+    for pick_index in range(min(count, len(pool))):
+        if not pool:
+            break
+        if chosen:
+            reweighted = [
+                (adj, weight * (1 + sum(adjective_collocations.get(a, {}).get(adj, 0) for a in chosen)))
+                for adj, weight in pool
+            ]
+        else:
+            reweighted = pool
+        adj = seeded_weighted_pick(seed, f"e{pick_index}", reweighted)
+        chosen.append(adj)
+        pool = [(w, k) for w, k in pool if w != adj]
+    return tuple(chosen)
+
+
+def _fill_clause(
+    role: str, knowledge: TopicKnowledge, chosen_epithets: tuple[str, ...], *, seed: str,
+    used: dict | None = None,
+) -> Clause:
+    """Turn a role tag into its surface tokens, drawing from the buckets. Uses
+    ``used`` to pick a not-yet-spent link/property/predicate where possible."""
+
+    used = used if used is not None else _new_used_state()
+    subj = knowledge.subject
+    if role == "subject":
+        return ("subject", (subj,))
+    if role == "epithet_subject":
+        return ("epithet_subject", (*_comma_join(chosen_epithets), subj) if chosen_epithets else (subj,))
+    if role == "copula_epithet":
+        # A plain copula, not an arbitrary observed predicate: pulling
+        # properties[0][0] here produced "love to true" / "war do great".
+        adjs = chosen_epithets or ((knowledge.epithets[0][0],) if knowledge.epithets else ())
+        return ("copula_epithet", ("is", *_comma_join(adjs)) if adjs else ())
+    if role == "property":
+        # A property's adjective must avoid both what this noun phrase already
+        # carries ("dark night is dark") and any adjective already spent in the
+        # paragraph as an epithet ("...is great" after "great ... love") — the
+        # epithet and property buckets share the same adjectives.
+        blocked = set(chosen_epithets) | used["epithets"]
+        options = [
+            (i, p) for i, p in enumerate(knowledge.properties)
+            if i not in used["properties"] and p[1] not in blocked
+        ]
+        if not options:
+            options = [(i, p) for i, p in enumerate(knowledge.properties) if p[1] not in set(chosen_epithets)]
+        if not options:
+            return ("property", ())
+        pick_i = int(seeded_weighted_pick(seed, "prop", [(str(i), 1) for i, _p in options]))
+        used["properties"].add(pick_i)
+        pred, detail = knowledge.properties[pick_i]
+        if detail:
+            used["epithets"].add(detail)  # so a later epithet clause won't reuse it
+        return ("property", tuple(t for t in (pred, detail) if t))
+    if role == "link":
+        prep, obj = _pick_link(knowledge, seed, exclude=used["links"])
+        if prep and obj:
+            used["links"].add(f"{prep}\t{obj}")
+        return ("link", (prep, obj) if prep and obj else ())
+    if role == "predicate":
+        options = [p for p in knowledge.predicates if p not in used["predicates"]] or list(knowledge.predicates)
+        if not options:
+            return ("predicate", ())
+        pred = seeded_weighted_pick(seed, "pred", [(p, 1) for p in options])
+        used["predicates"].add(pred)
+        return ("predicate", (pred,))
+    if role == "subject_predicate":
+        options = [p for p in knowledge.predicates if p not in used["predicates"]] or list(knowledge.predicates)
+        if not options:
+            return ("subject_predicate", ())
+        pred = seeded_weighted_pick(seed, "predtail", [(p, 1) for p in options])
+        used["predicates"].add(pred)
+        # One clause, subject then verb ("Sherlock asked") — not two clauses
+        # joined by the generic connector logic, which would insert a comma
+        # or "and" between them since "asked" isn't a clause-attach head.
+        return ("subject_predicate", (subj, pred))
+    if role == "event":
+        action, place = knowledge.events[0] if knowledge.events else ("", "")
+        return ("event", (action, *place.split())) if action else ("event", ())
+    if role in {"action", "action_object", "epithet_action"}:
+        options = [a for a in knowledge.actions if a not in used["actions"]] or list(knowledge.actions)
+        if not options:
+            return (role, ())
+        encoded = [("\t".join(pair), 1) for pair in options]
+        verb, obj = seeded_weighted_pick(seed, "act", encoded).split("\t")
+        used["actions"].add((verb, obj))
+        keep_object = role != "action" and obj
+        head: tuple[str, ...] = (
+            (*_comma_join(chosen_epithets), subj) if role == "epithet_action" and chosen_epithets else (subj,)
+        )
+        tokens = (*head, verb, obj) if keep_object else (*head, verb)
+        return (role, tokens)
+    return (role, ())
+
+
+def _pick_link(knowledge: TopicKnowledge, seed: str, *, exclude: set | None = None) -> tuple[str, str]:
+    exclude = exclude or set()
+    links = [pair for pair in knowledge.links if "\t".join(pair) not in exclude] or list(knowledge.links)
+    if not links:
+        return "", ""
+    encoded = [("\t".join(pair), 1) for pair in links]
+    prep, obj = seeded_weighted_pick(seed, "link", encoded).split("\t")
+    return prep, obj
+
+
+def _comma_join(adjectives: tuple[str, ...]) -> tuple[str, ...]:
+    """Insert a comma token between stacked adjectives ("wide, wild")."""
+    if len(adjectives) <= 1:
+        return adjectives
+    out: list[str] = []
+    for i, adj in enumerate(adjectives):
+        if i:
+            out.append(",")
+        out.append(adj)
+    return tuple(out)
+
+
 def _plan_description_scene(
     goal: SceneGoal, graph: ConceptGraph, phrase: PhraseModel, *, sentence_count: int,
     noun_like: frozenset[str], genders: dict[str, str] | None, selection_seed: str,
     description_relations: dict[str, list[dict]],
+    adjective_collocations: dict[str, dict[str, int]] | None = None,
+    mode_is_creative: bool = True, verb_lexicon: dict | None = None,
+    scene_bias: bool = False,
 ) -> ScenePlan:
-    """Plan topic relations before speech realizes them as sentences."""
+    """Plan a topic description/scene through the three layers (see the block
+    comment above ``TopicKnowledge``): gather knowledge (L1), choose a
+    per-sentence rhetorical schema and fill its clauses (L2). The realizer (L3)
+    turns each sentence's clause list into surface text.
+
+    The *same* machine serves both "Describe X" and "Write a scene about X":
+    ``scene_bias`` only re-weights the shared schema pool toward event/action
+    shapes for a scene. There is no separate templated path per mode."""
 
     total = max(3, sentence_count)
+    collocations = adjective_collocations or {}
     candidates = [word for word in dict.fromkeys((goal.topic, *goal.active_field, *goal.seeds)) if word != goal.location]
-    plans: list[SentencePlan] = []
-    used: set[str] = set()
-    used_subjects: set[str] = set()
-    for index in range(total):
-        alternatives = [word for word in candidates if word not in used] or [goal.topic]
-        preferred, subject, action, detail, relation = alternatives[0], "", "", "", "observation"
-        # If an activated neighbour has no descriptive fact, keep it in
-        # SceneState but do not surface it as a vacuous one-word sentence.
-        for candidate in alternatives:
-            candidate_subject = _description_subject(candidate, phrase, noun_like)
-            fact_subject = _description_fact_subject(candidate_subject, description_relations)
-            if not fact_subject or fact_subject in used_subjects:
-                continue
-            candidate_action, candidate_detail, candidate_relation = _description_fact(
-                fact_subject, description_relations, f"{selection_seed}|description|{index}|{candidate}",
-                allow_inverted=(index == 0),
+
+    # Layer 1: knowledge for the topic and every field neighbour, once. Passing
+    # ``phrase`` lets Layer 1 also read real SVO events for the ``actions``
+    # bucket (what the topic is observed *doing*), which the scene bias needs.
+    knowledge_by_word: dict[str, TopicKnowledge] = {}
+    for candidate in candidates:
+        subj = _description_fact_subject(_description_subject(candidate, phrase, noun_like), description_relations)
+        if subj:
+            knowledge_by_word[candidate] = _gather_topic_knowledge(
+                subj, description_relations, phrase, noun_like, verb_lexicon,
             )
-            if candidate_action or candidate_relation == "epithet":
-                preferred, subject, action, detail, relation = (
-                    candidate, fact_subject, candidate_action, candidate_detail, candidate_relation,
-                )
-                break
-        if not subject:
-            subject = _description_subject(preferred, phrase, noun_like)
-        # A geographic context belongs to the relation, never to an agent
-        # slot.  ``В Москве наступил вечер`` is a relation between a local
-        # field concept and a place, not an action attributed to Moscow.
-        object_ = detail
-        if index == 0 and goal.location and subject != goal.location and action and relation == "predicate_before_subject":
-            object_ = goal.location
-            relation = "located_at"
-        elif index == 0 and goal.location and subject != goal.location and action and detail and relation == "property":
-            object_ = goal.location
-            relation = "located_property"
-        # Bundle compatible facts about the same subject into one sentence:
-        # the primary relation may carry an agreeing observed epithet, and a
-        # property/epithet clause may carry one observed object link.  A
-        # located or placed relation already holds a preposition phrase, so
-        # it takes no second one.
-        epithet = "" if relation == "epithet" else _description_epithet(
-            subject, description_relations, f"{selection_seed}|description-epithet|{index}",
-            exclude=frozenset((detail, subject)),
+    field_knowledge = tuple(knowledge_by_word.values())
+
+    # Order the grounded subjects by how much material each has (richest first),
+    # so a several-sentence paragraph opens on the topic itself and then works
+    # through its neighbours. The primary topic always leads.
+    grounded = [w for w in candidates if knowledge_by_word.get(w) and knowledge_by_word[w].has_any()]
+    def _material(word: str) -> int:
+        k = knowledge_by_word[word]
+        return (len(k.epithets) + len(k.properties) + len(k.links)
+                + len(k.predicates) + len(k.events) + len(k.actions))
+    ordered_subjects = sorted(grounded, key=lambda w: (w != goal.topic, -_material(w), w))
+    if not ordered_subjects:
+        ordered_subjects = [goal.topic]
+
+    # Per-subject "used" state so repeat visits to a subject each take a new
+    # schema + fresh facts, and the paragraph reads as multiple facets rather
+    # than one clause restated.
+    used_state: dict[str, dict] = {}
+
+    plans: list[SentencePlan] = []
+    for index in range(total):
+        # Round-robin across grounded subjects: topic, neighbour, topic, ...
+        preferred = ordered_subjects[index % len(ordered_subjects)]
+        knowledge = knowledge_by_word.get(preferred)
+        if knowledge is None or not knowledge.has_any():
+            subj = _description_subject(preferred, phrase, noun_like)
+            knowledge = knowledge_by_word.get(preferred) or TopicKnowledge(subj)
+        state = used_state.setdefault(knowledge.subject, _new_used_state())
+
+        # Layer 2: discourse plan for this sentence (consumes/updates state).
+        clauses, relation = _plan_topic_discourse(
+            knowledge, index=index, mode_is_creative=mode_is_creative,
+            seed=selection_seed, field_knowledge=field_knowledge,
+            adjective_collocations=collocations, used=state, scene_bias=scene_bias,
         )
-        link = _description_link(
-            subject, description_relations, f"{selection_seed}|description-link|{index}",
-        ) if relation in {"property", "epithet"} else ()
+        clause_fragments = tuple(tokens for _role, tokens in clauses if tokens)
+        # Connector between successive clauses — plain, or figurative in
+        # creative mode (a join the corpus never literally made).
+        connector_menu = _FIGURATIVE_CONNECTORS if mode_is_creative else _PLAIN_CONNECTORS
+        clause_connectors = tuple(
+            seeded_weighted_pick(f"{selection_seed}|conn|{index}|{position}", "c", list(connector_menu))
+            for position in range(max(0, len(clause_fragments) - 1))
+        )
         purpose = ("establish_field", "develop_field", "close_field")[min(index, 2)]
         plans.append(SentencePlan(
-            index=index, purpose=purpose, focus=preferred, subject=subject,
-            action=action, object=object_, speaker="", dialogue=False,
+            index=index, purpose=purpose, focus=preferred, subject=knowledge.subject,
+            action="", object="", speaker="", dialogue=False,
             continuity_anchor=goal.topic, relation=relation,
-            detail_fragment=(detail,) if relation == "located_property" and detail else (),
-            epithet=epithet, link=link,
+            clause_fragments=clause_fragments, clause_connectors=clause_connectors,
         ))
-        used.add(preferred)
-        used_subjects.add(subject)
     return ScenePlan(goal=goal, beats=tuple(item.purpose for item in plans), sentences=tuple(plans))
 
 
@@ -802,8 +1300,25 @@ def _description_fact(
 
 def _description_epithet(
     subject: str, description_relations: dict[str, list[dict]], seed: str, *, exclude: frozenset[str],
+    count: int = 3, collocate_with: str = "",
+    adjective_collocations: dict[str, dict[str, int]] | None = None,
 ) -> str:
-    """Pick an observed agreeing epithet to enrich the subject noun phrase."""
+    """Pick up to ``count`` observed agreeing epithets, joined into one phrase.
+
+    Every word placed is still a real corpus-observed epithet for this exact
+    subject (see ``ingest.py``'s epithet extraction) — chaining several is
+    just a longer *true* noun phrase, not invented material.
+
+    The second and third picks are additionally weighted by how often the
+    candidate is actually observed *near another already-chosen descriptive
+    word* (``adjective_collocations``, corpus adjective-adjective adjacency —
+    see ``ingest.py``), not just by how strongly each word independently
+    relates to the subject. Two epithets that are individually apt for
+    "winter" but never occur near each other in the corpus are exactly what
+    a collocation-blind topic-similarity pick would wrongly treat as
+    interchangeable; weighting by attested co-usage prefers the pairing the
+    corpus actually supports.
+    """
 
     rows = [
         row for row in description_relations.get(subject, ())
@@ -812,13 +1327,42 @@ def _description_epithet(
     if not rows:
         return ""
     encoded = [(str(row["detail"]), max(1, int(row.get("weight", 1)))) for row in rows]
-    return seeded_weighted_pick(seed, f"description-epithet:{subject}", encoded)
+    collocations = adjective_collocations or {}
+    # ``anchors`` seeds collocation weighting (includes the primary epithet
+    # already rendered elsewhere, if any); ``chosen`` collects only the *new*
+    # words this call returns.
+    anchors: list[str] = [collocate_with] if collocate_with else []
+    chosen: list[str] = []
+    pool = list(encoded)
+
+    def _reweighted(against: list[str]) -> list[tuple[str, int]]:
+        if not against:
+            return pool
+        boosted = []
+        for word, weight in pool:
+            collocation_hits = sum(collocations.get(anchor, {}).get(word, 0) for anchor in against)
+            boosted.append((word, weight * (1 + collocation_hits)))
+        return boosted
+
+    for pick_index in range(min(count, len(encoded))):
+        if not pool:
+            break
+        word = seeded_weighted_pick(seed, f"description-epithet:{subject}:{pick_index}", _reweighted(anchors))
+        chosen.append(word)
+        anchors.append(word)
+        pool = [(w, weight) for w, weight in pool if w != word]
+    return ", ".join(chosen)
 
 
 def _description_link(
-    subject: str, description_relations: dict[str, list[dict]], seed: str,
+    subject: str, description_relations: dict[str, list[dict]], seed: str, *, count: int = 2,
 ) -> tuple[str, ...]:
-    """Pick an observed subject-to-object preposition link ("в трактире")."""
+    """Pick up to ``count`` observed subject-to-object preposition links
+    ("в трактире", "у окна"), concatenated into one longer token run.
+
+    Each pair is independently corpus-observed for this subject; chaining a
+    second one lengthens the sentence without fabricating a relation.
+    """
 
     rows = [row for row in description_relations.get(subject, ()) if row.get("kind") == "object_link"]
     if not rows:
@@ -828,7 +1372,21 @@ def _description_link(
          max(1, int(row.get("weight", 1))))
         for row in rows
     ]
-    return tuple(seeded_weighted_pick(seed, f"description-link:{subject}", encoded).split("\t"))
+    chosen: list[str] = []
+    pool = list(encoded)
+    seen_details: set[str] = set()
+    for pick_index in range(min(count, len(encoded))):
+        if not pool:
+            break
+        picked = seeded_weighted_pick(seed, f"description-link:{subject}:{pick_index}", pool)
+        detail = picked.split("\t", 1)[-1]
+        if detail in seen_details:
+            pool = [(w, weight) for w, weight in pool if w != picked]
+            continue
+        seen_details.add(detail)
+        chosen.extend(picked.split("\t"))
+        pool = [(w, weight) for w, weight in pool if w != picked]
+    return tuple(chosen)
 
 
 def _locative_surface(location: str, phrase: PhraseModel) -> str:
@@ -1129,11 +1687,17 @@ class NarrativeGenerator:
         allowed_names = set(plan.goal.characters)
         for sentence in plan.sentences:
             if plan.goal.mode == "description":
-                # An ungrounded field term remains visible in SceneState but
-                # is not padded into prose as a one-word pseudo-sentence.
-                if not sentence.action and sentence.relation != "epithet":
+                # A sentence with no clause content — or one whose only content
+                # is the bare subject (facts for this topic are exhausted) —
+                # stays in SceneState but is not padded into prose as a
+                # one-word pseudo-sentence ("Winter.").
+                bare_subject = (
+                    len(sentence.clause_fragments) == 1
+                    and tuple(sentence.clause_fragments[0]) == (sentence.subject,)
+                )
+                if not sentence.clause_fragments or bare_subject:
                     continue
-                text, trace = self._render_description_sentence(sentence)
+                text, trace = self._render_description_sentence(sentence, seed=f"{seed}|{sentence.index}")
             else:
                 text, trace = self._render_sentence(
                     sentence, state, allowed_names, paragraph.sentences, f"{seed}|{sentence.index}"
@@ -1143,44 +1707,78 @@ class NarrativeGenerator:
             state.update(text)
         return paragraph
 
-    def _render_description_sentence(self, plan: SentencePlan) -> tuple[str, SentenceRealization]:
-        """Realize a planned topical relation without inventing an actor/event."""
+    def _render_description_sentence(self, plan: SentencePlan, *, seed: str) -> tuple[str, SentenceRealization]:
+        """Layer 3 (speech): realize the discourse plan's clauses into text.
 
-        epithet = [plan.epithet] if plan.epithet else []
-        link = list(plan.link)
-        if plan.relation == "epithet" and plan.object:
-            tokens = [plan.object, plan.subject, *link]
-        elif plan.action and plan.relation == "located_at" and plan.object:
-            location = _locative_surface(plan.object, self.phrase)
-            tokens = ["в", location, plan.action, *epithet, plan.subject]
-        elif plan.action and plan.relation == "located_property" and plan.object:
-            location = _locative_surface(plan.object, self.phrase)
-            detail = plan.detail_fragment[0] if plan.detail_fragment else ""
-            tokens = ["в", location, plan.action, detail, *epithet, plan.subject]
-        elif plan.action and plan.relation == "predicate_before_subject":
-            tokens = [plan.action, *epithet, plan.subject]
-        elif plan.action and plan.relation == "event_place" and plan.object:
-            tokens = [*epithet, plan.subject, plan.action, *plan.object.split()]
-        elif plan.action and plan.relation == "event_place_inverted" and plan.object:
-            tokens = [*plan.object.split(), plan.action, *epithet, plan.subject]
-        elif plan.action:
-            tokens = [*epithet, plan.subject, *link, plan.action]
-            if plan.object:
-                tokens.append(plan.object)
-        else:
-            # The reasoning layer deliberately produced no unsupported
-            # relation.  Retain the topic as an observation rather than
-            # fabricating psychology or assigning an action to a place.
-            tokens = [plan.subject]
-        body = _sentence_text([token for token in tokens if token], False, "", self.proper_names)
+        The clause list and order were already decided by Layer 2
+        (``_plan_topic_discourse``); this only turns each clause's tokens into
+        surface, letting the phrase graph supply connective tissue where it can
+        (``_grow_clause_bridge``) so successive words are corpus transitions
+        rather than a bare template concatenation. Clauses are joined by the
+        connectors the plan chose."""
+
+        rendered: list[str] = []
+        for position, clause in enumerate(plan.clause_fragments):
+            surface = self._grow_clause_bridge(clause, f"{seed}|clause|{position}")
+            if not surface:
+                continue
+            if rendered:
+                connector = plan.clause_connectors[position - 1] if position - 1 < len(plan.clause_connectors) else ""
+                # A clause that opens with a function word (copula/preposition/
+                # auxiliary — "is sweet", "of glory", "hath given") attaches to
+                # the subject directly; a conjunction there reads as "love AND
+                # is sweet". Only keep an explicit connector before a clause
+                # that begins with content.
+                if connector and surface[0] not in _CLAUSE_ATTACH_HEADS:
+                    rendered.append(connector)
+            rendered.extend(surface)
+        if not rendered:
+            rendered = [plan.subject]
+        rendered = _strip_stray_punctuation([token for token in rendered if token])
+        body = _sentence_text(rendered, False, "", self.proper_names)
         actual = set(words(body))
-        realized = tuple(
-            role for role, word in (("subject", plan.subject), ("action", plan.action), ("object", plan.object))
-            if word and word in actual
-        )
+        realized = tuple(role for role in ("subject",) if plan.subject in actual)
         return body, SentenceRealization(
-            plan.index, (plan.subject, plan.action, plan.object), realized, False, ()
+            plan.index, (plan.subject, plan.relation, ""), realized, False, ()
         )
+
+    def _grow_clause_bridge(self, clause: tuple[str, ...], seed: str) -> list[str]:
+        """Connect a clause's content tokens through learned transitions, so a
+        bridging word the corpus actually used ("sea OF glory", "love THAT
+        burns") can appear between them. Falls back to the literal tokens when
+        the graph offers no observed bridge — never invents a transition, like
+        the QA phrase-graph's slot walk.
+
+        Only *connective* bridges are allowed (``_BRIDGE_WORDS``): a raw
+        "follows head, precedes next" walk otherwise smuggles in negation and
+        articles ("is NOT hideous", "is A hideous") that change or break the
+        clause. Content words are never inserted as bridges."""
+
+        tokens = [token for token in clause if token]
+        if len(tokens) < 2:
+            return tokens
+        out = [tokens[0]]
+        for nxt in tokens[1:]:
+            head = out[-1]
+            # Only bridge from a content-word head. Bridging from a copula or
+            # preposition ("is that furious") is what a relativizer bridge
+            # would otherwise smuggle in; those heads already attach directly.
+            if head in {",", "—"} or head in _CLAUSE_ATTACH_HEADS:
+                out.append(nxt)
+                continue
+            direct = self.phrase.forward.get(head, {})
+            if nxt in direct:
+                out.append(nxt)
+                continue
+            bridges = [
+                (word, count) for word, count in direct.items()
+                if word in _BRIDGE_WORDS and word not in {head, nxt}
+                and nxt in self.phrase.forward.get(word, {})
+            ]
+            if bridges:
+                out.append(seeded_weighted_pick(seed, f"bridge:{head}:{nxt}", bridges))
+            out.append(nxt)
+        return out
 
     def _render_sentence(
         self, plan: SentencePlan, state: DiscourseState, allowed_names: set[str], prior_sentences: list[str], seed: str
@@ -1365,10 +1963,14 @@ class NarrativeEngine:
     def run(
         self, prompt: str, *, context: str = "", sentences: int = 3,
         seed: str | None = None, reasoning: bool = False,
+        knowledge_facts: tuple[tuple[str, str, str], ...] = (),
     ) -> NarrativeResult:
         request = NarrativeRequest(prompt=prompt, context=context, sentences=sentences)
         if seed is not None:
-            return self._run_once(request, render_seed=seed, reasoning=reasoning)
+            return self._run_once(
+                request, render_seed=seed, reasoning=reasoning,
+                knowledge_facts=knowledge_facts,
+            )
 
         # A new random route normally diverges by itself. Retain a compact
         # per-engine history too: if the beam nevertheless lands on the same
@@ -1377,7 +1979,10 @@ class NarrativeEngine:
         seen = self._recent_outputs.setdefault(key, [])
         fallback: NarrativeResult | None = None
         for _attempt in range(8):
-            result = self._run_once(request, render_seed=secrets.token_hex(8), reasoning=reasoning)
+            result = self._run_once(
+                request, render_seed=secrets.token_hex(8), reasoning=reasoning,
+                knowledge_facts=knowledge_facts,
+            )
             fallback = result
             text = result.paragraph.text()
             if text not in seen:
@@ -1389,7 +1994,9 @@ class NarrativeEngine:
 
     def _run_once(
         self, request: NarrativeRequest, *, render_seed: str, reasoning: bool,
+        knowledge_facts: tuple[tuple[str, str, str], ...] = (),
     ) -> NarrativeResult:
+        restore_graph = self._fuse_knowledge_layer(knowledge_facts)
         plan = plan_scene(
             self.graph, self.phrase, prompt=request.prompt, context=request.context, meta=self.meta,
             proper_names=self.proper_names, sentence_count=request.sentences,
@@ -1397,6 +2004,7 @@ class NarrativeEngine:
             verb_lexicon=self.verb_lexicon,
             speech_frames=self.speech_frames,
             description_relations=self.description_relations,
+            knowledge_actions=_knowledge_actions(knowledge_facts),
             selection_seed=render_seed,
         )
         reasoning_plan: ReasoningPlan | None = None
@@ -1429,10 +2037,74 @@ class NarrativeEngine:
             reasoning=reasoning, verb_lexicon=self.verb_lexicon,
         ).render(plan, seed=render_seed)
         committed_state = _commit_realized_facts(initial_state, paragraph) if initial_state else None
-        return NarrativeResult(
+        result = NarrativeResult(
             request, plan, paragraph, assess_poem(self.phrase, paragraph.sentences), self.meta,
             reasoning_plan=reasoning_plan, world_state=committed_state, scene_state=scene_state,
         )
+        restore_graph()
+        return result
+
+    def _fuse_knowledge_layer(
+        self, facts: tuple[tuple[str, str, str], ...]
+    ) -> callable:
+        """Temporarily add QA facts to the concept graph for one scene.
+
+        This changes only the knowledge layer: the NarrativeEngine's scene
+        planner, beam search, phrase model, and speech realization are reused
+        unchanged.  The bridge is serial, but the original weights/edges are
+        restored after the request so transient QA context never becomes
+        learned literary memory.
+        """
+
+        weight_before: dict[str, float | None] = {}
+        edge_before: dict[tuple[str, str], float | None] = {}
+        for subject, _predicate, object_ in facts:
+            subjects = [term for term in words(subject) if len(term) > 1]
+            objects = [term for term in words(object_) if len(term) > 1]
+            for term in (*subjects, *objects):
+                if term not in weight_before:
+                    weight_before[term] = self.graph.weight.get(term)
+                    self.graph.weight[term] = self.graph.weight.get(term, 0.5) + 2.0
+            for left in subjects:
+                for right in objects:
+                    if left == right:
+                        continue
+                    for edge in ((left, right), (right, left)):
+                        if edge not in edge_before:
+                            edge_before[edge] = self.graph.edges.get(edge)
+                            self.graph.edges[edge] = self.graph.edges.get(edge, 0.0) + 2.0
+        self.graph._adjacency = None
+
+        def restore() -> None:
+            for term, previous in weight_before.items():
+                if previous is None:
+                    self.graph.weight.pop(term, None)
+                else:
+                    self.graph.weight[term] = previous
+            for edge, previous in edge_before.items():
+                if previous is None:
+                    self.graph.edges.pop(edge, None)
+                else:
+                    self.graph.edges[edge] = previous
+            self.graph._adjacency = None
+
+        return restore
+
+
+def _knowledge_actions(
+    facts: tuple[tuple[str, str, str], ...]
+) -> dict[str, tuple[tuple[str, str], ...]]:
+    """Expose factual predicates to the existing planner, not the renderer."""
+
+    grouped: dict[str, list[tuple[str, str]]] = {}
+    for subject, predicate, object_ in facts:
+        subjects = words(subject)
+        predicates = words(predicate)
+        objects = words(object_)
+        if not subjects or not predicates or not objects:
+            continue
+        grouped.setdefault(subjects[0], []).append((predicates[0], objects[0]))
+    return {subject: tuple(options) for subject, options in grouped.items()}
 
 
 def _scene_state(plan: ScenePlan) -> SceneState:
@@ -1602,14 +2274,20 @@ def _event_fallback(plan: SentencePlan, noun_like: frozenset[str] = frozenset())
 
 def _pause_fallback(plan: SentencePlan) -> list[str]:
     """Last-resort grammatical pause; it asserts no event and commits no fact."""
+    if is_latin_word(plan.subject):
+        # English marks no gender, so there is one options tuple, not two.
+        options = ("paused", "waited", "watched", "wondered")
+        return [plan.subject, options[plan.index % len(options)]]
     feminine = plan.subject.endswith(("а", "я"))
     options = ("молчала", "смотрела", "ждала", "думала") if feminine else ("молчал", "смотрел", "ждал", "думал")
     return [plan.subject, options[plan.index % len(options)]]
 
 
-def _reasoning_transition(index: int) -> str:
+def _reasoning_transition(index: int, *, latin: bool = False) -> str:
     if index <= 0:
         return ""
+    if latin:
+        return ("then", "after that", "later")[index % 3]
     return ("затем", "после этого", "тогда")[index % 3]
 
 
@@ -1659,12 +2337,42 @@ def _sentence_text(
         right = " ".join(surface_tokens[clause_break + 1 :])
         text = f"{left}, {surface_tokens[clause_break]} {right}"
     else:
-        text = " ".join(surface_tokens)
+        text = _join_with_punctuation(surface_tokens)
     text = f"{transition} {text}" if transition else text
     text = text[0].upper() + text[1:]
     if text[-1] not in ".!?…":
         text += "."
     return f"– {text}" if dialogue else text
+
+
+def _strip_stray_punctuation(tokens: list[str]) -> list[str]:
+    """Drop a comma/dash that isn't flanked by two words on both sides, so a
+    deduped adjective list can't leave a dangling "Grim-visaged, war"."""
+    marks = {",", ";", ":", "—", "…"}
+    out: list[str] = []
+    for i, token in enumerate(tokens):
+        if token in marks:
+            prev_word = bool(out) and out[-1] not in marks
+            next_word = i + 1 < len(tokens) and tokens[i + 1] not in marks
+            if not (prev_word and next_word):
+                continue
+        out.append(token)
+    return out
+
+
+def _join_with_punctuation(tokens: list[str]) -> str:
+    """Join tokens with spaces, but attach bare punctuation ("," "—") to the
+    preceding word so a comma-separated adjective list reads "wide, wild" not
+    "wide , wild"."""
+    out = ""
+    for token in tokens:
+        if not out:
+            out = token
+        elif token in {",", ";", ":", "—", "…"}:
+            out += token
+        else:
+            out += f" {token}"
+    return out
 
 
 def _complete_tokens(tokens: list[str]) -> list[str]:
