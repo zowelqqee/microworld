@@ -41,8 +41,11 @@ _DEFAULT_SNAPSHOT_DIR = _EXPERIMENTS / "wiki_snapshots_v1" / "normalized_docs"
 _DEFAULT_COMMUNITY_CONTEXT_PATHS = (
     _EXPERIMENTS / "community_context_v1" / "reddit_community_context.json",
 )
+_BUNDLED_LITERARY_CORPUS_DIR = Path(__file__).resolve().parent / "creative_corpus"
+_REPO_LITERARY_CORPUS_DIR = _ROOT / "poetry_lab" / "corpus"
+_MAX_SENTENCES_PER_LITERARY_SOURCE = 5000
 
-_WORD_RE = re.compile(r"[a-z0-9']+")
+_WORD_RE = re.compile(r"[^\W_]+(?:-[^\W_]+)?", re.UNICODE)
 _SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 # Snapshot lead files carry a `Key: value` metadata header before the prose
 # body; those lines are not natural language and must not train the model.
@@ -62,6 +65,10 @@ _STOPWORDS = frozenset({
     "no", "yes", "do", "does", "did", "has", "have", "had", "will", "would", "can",
     "could", "may", "might", "shall", "should", "must", "than", "then", "so", "if",
     "into", "over", "under", "about", "also", "such", "more", "most", "some", "any",
+    "и", "а", "но", "или", "что", "как", "в", "во", "на", "с", "со", "к", "у",
+    "по", "за", "от", "до", "из", "для", "не", "ни", "же", "ли", "то", "это",
+    "этот", "эта", "эти", "он", "она", "они", "мы", "вы", "я", "ты", "его", "её",
+    "их", "мне", "тебе", "нам", "вам", "был", "была", "было", "были", "есть", "быть",
 })
 
 # Dangling trailing tokens that make a trimmed sentence read as unfinished.
@@ -105,6 +112,7 @@ class CreativeModel:
     openers: Counter = field(default_factory=Counter)
     unigram: Counter = field(default_factory=Counter)
     seen_4grams: set = field(default_factory=set)
+    source_sentence_counts: dict[str, int] = field(default_factory=dict)
 
     def learn_sentence(self, sentence: str) -> None:
         toks = _WORD_RE.findall(sentence.lower())
@@ -205,14 +213,20 @@ def _sentence_start(
     biased toward the concept field."""
 
     seed_starts = [w for w in seeds if w in model.forward and w not in _STOPWORDS]
-    if seed_starts:
-        choices = [(w, max(1, model.unigram.get(w, 1))) for w in seed_starts]
-        return seeded_weighted_pick(seed, "start:seed", choices)
     openers = [
         (word, max(1, int(count * (1.0 + boost.get(word, 0.0)))))
         for word, count in model.openers.items()
         if word not in _STOPWORDS
     ]
+    # A literal prompt word may occur in only one corpus context.  Treat it as
+    # a strong candidate, not a forced one: rerolls can start from another
+    # literary sentence opener and still retain the prompt's activated field.
+    # This prevents novelty-gating a single dead-end seed into an empty result.
+    if seed_starts:
+        weights = {word: weight for word, weight in openers}
+        for word in seed_starts:
+            weights[word] = max(weights.get(word, 0), model.unigram.get(word, 1) * 2)
+        openers = list(weights.items())
     if not openers:
         openers = [(word, count) for word, count in model.openers.items()]
     if not openers:
@@ -274,6 +288,33 @@ def generate(
 
 # -- training from local prose --------------------------------------------- #
 
+def _evenly_spaced(items: list[str], limit: int) -> list[str]:
+    if len(items) <= limit:
+        return items
+    last = len(items) - 1
+    return [items[(index * last) // (limit - 1)] for index in range(limit)]
+
+
+def _literary_sentences(path: Path) -> list[str]:
+    """Use prose sentences and verse lines, preserving every source's voice."""
+
+    try:
+        raw = path.read_text(encoding="utf-8").lstrip("\ufeff")
+    except OSError:
+        return []
+    lines = [line.strip() for line in raw.splitlines() if line.strip() and not line.lstrip().startswith("#")]
+    average_words = sum(len(_WORD_RE.findall(line)) for line in lines) / max(1, len(lines))
+    if average_words >= 8.0:
+        return [sentence for sentence in _SENTENCE_SPLIT_RE.split(" ".join(lines)) if sentence.strip()]
+    return [line for line in lines if len(_WORD_RE.findall(line)) >= 2 and any(char.islower() for char in line)]
+
+
+def _literary_corpus_dir() -> Path | None:
+    for candidate in (_BUNDLED_LITERARY_CORPUS_DIR, _REPO_LITERARY_CORPUS_DIR):
+        if len(tuple(candidate.glob("*.txt"))) >= 2:
+            return candidate
+    return None
+
 def _snapshot_body_sentences(path: Path) -> list[str]:
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -318,6 +359,18 @@ def build_creative_model(
     community_context_paths: Iterable[Path] | None = None,
 ) -> CreativeModel:
     model = CreativeModel()
+    literary_dir = _literary_corpus_dir()
+    if literary_dir is not None:
+        for path in sorted(literary_dir.glob("*.txt")):
+            learned = 0
+            for sentence in _evenly_spaced(_literary_sentences(path), _MAX_SENTENCES_PER_LITERARY_SOURCE):
+                before = sum(model.unigram.values())
+                model.learn_sentence(sentence)
+                learned += int(sum(model.unigram.values()) > before)
+            model.source_sentence_counts[path.name] = learned
+        return model
+
+    # Desktop compatibility fallback for checkouts without poetry_lab.
     resolved_dir = snapshot_dir if snapshot_dir is not None else _DEFAULT_SNAPSHOT_DIR
     if resolved_dir.is_dir():
         for path in sorted(resolved_dir.glob("*.md")):
