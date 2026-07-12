@@ -487,6 +487,10 @@ outside that boundary it should audit or label volatile sources. The research
 target is inspectability of memory, trust, policy, dialogue, and rendering, not
 open-ended language-model generality.
 
+## Citation
+
+BibTeX metadata is available in [`CITATION.bib`](CITATION.bib).
+
 ## License
 
 Apache License 2.0. See the LICENSE file for details.
