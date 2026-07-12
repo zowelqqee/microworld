@@ -4,18 +4,16 @@
 
 **Fast, low-cost semantic AI that runs locally — including offline on an
 iPhone.** Microworld answers supported questions from explicit memory and
-deterministic reasoning, with no GPU and no LLM or model API call on its answer
-path.
+deterministic reasoning.
 
-It is not another chat UI around an LLM. It is an experimental runtime built
-for a different operating point: millisecond-scale local answers, inspectable
-decisions, predictable resource use, and zero per-query model-API cost for
-supported memory-backed questions.
+It is an experimental runtime for millisecond-scale local answers,
+inspectable decisions, predictable resource use, and supported
+memory-backed questions.
 
 | What an engineer gets | Current evidence |
 |---|---|
 | Fast local answer path | 8.05 ms p50 and 29.47 ms p95 in the 1,000-question deterministic stress suite |
-| No cloud model dependency at answer time | Local CPU; no GPU or model API on the tested path |
+| Local execution | Local CPU on the tested path; no external service required for the bundled demo |
 | Real on-device runtime | The same engine runs fully offline in a native SwiftUI app on a physical iPhone 11 |
 | Controlled answers | Explicit support returns an answer; unsupported or risky requests audit instead of being guessed |
 
@@ -32,8 +30,7 @@ facts, reasoning, dialogue, style, and safety at the same time. The project is
 a research implementation of semantic memory, semantic reasoning, semantic
 dialogue context, and a separately controlled speech layer.
 
-The current system is not AGI and not an open-domain replacement for modern
-LLMs. It is a bounded explicit-memory AI runtime that answers only when it can
+Microworld is a bounded explicit-memory runtime that answers only when it can
 point to controlled semantic memory, says `audit` when support is missing, and
 keeps factual support separate from reasoning, dialogue, language style,
 community patterns, live search, and session context.
