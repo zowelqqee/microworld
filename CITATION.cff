@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use MicroWorld in research, please cite it using the metadata below."
+
+title: "MicroWorld"
+type: software
+
+authors:
+  - family-names: "Abramidze"
+    given-names: "Arseniy"
+
+version: "2.0-alpha"
+date-released: "2026-07-12"
+
+doi: "10.5281/zenodo.21323152"
+
+repository-code: "https://github.com/zowelqqee/microworld"
+url: "https://github.com/zowelqqee/microworld"
+
+license: "Apache-2.0"
+
+abstract: >
+  MicroWorld is an experimental semantic AI runtime built around explicit
+  semantic memory, deterministic reasoning, explicit dialogue state,
+  controlled language generation, auditable support checks, and local-first
+  execution.
+
