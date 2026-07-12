@@ -2,25 +2,8 @@
 
 # Microworld
 
-**Fast, low-cost semantic AI that runs locally — including offline on an
-iPhone.** Microworld answers supported questions from explicit memory and
-deterministic reasoning.
-
-It is an experimental runtime for millisecond-scale local answers,
-inspectable decisions, predictable resource use, and supported
-memory-backed questions.
-
-| What an engineer gets | Current evidence |
-|---|---|
-| Fast local answer path | 8.05 ms p50 and 29.47 ms p95 in the 1,000-question deterministic stress suite |
-| Local execution | Local CPU on the tested path; no external service required for the bundled demo |
-| Real on-device runtime | The same engine runs fully offline in a native SwiftUI app on a physical iPhone 11 |
-| Controlled answers | Explicit support returns an answer; unsupported or risky requests audit instead of being guessed |
-
-The iPhone demo embeds CPython and runs the real QA and creative engines with
-no server or network. See [the on-device demo](ios_demo/README_IOS.md) and
-[device benchmark notes](ios_demo/DEVICE_BENCHMARK.md) for the measured memory
-status and the distinction between Mac reference figures and device figures.
+Experimental semantic AI runtime exploring explicit memory, deterministic
+reasoning, dialogue systems, and controlled language generation.
 
 ## What It Is
 
@@ -117,6 +100,24 @@ unknown or unsupported form     -> audit
 No answer should appear because a model "felt" that it was plausible.
 
 ## Latest Performance and Reliability Snapshot
+
+**Fast, low-cost semantic AI that runs locally — including offline on an
+iPhone.** Microworld answers supported questions from explicit memory and
+deterministic reasoning. It is built for millisecond-scale local answers,
+inspectable decisions, predictable resource use, and supported memory-backed
+questions.
+
+| What an engineer gets | Current evidence |
+|---|---|
+| Fast local answer path | 8.05 ms p50 and 29.47 ms p95 in the 1,000-question deterministic stress suite |
+| Local execution | Local CPU on the tested path; no external service required for the bundled demo |
+| Real on-device runtime | The same engine runs fully offline in a native SwiftUI app on a physical iPhone 11 |
+| Controlled answers | Explicit support returns an answer; unsupported or risky requests audit instead of being guessed |
+
+The iPhone demo embeds CPython and runs the real QA and creative engines with
+no server or network. See [the on-device demo](ios_demo/README_IOS.md) and
+[device benchmark notes](ios_demo/DEVICE_BENCHMARK.md) for the measured memory
+status and the distinction between Mac reference figures and device figures.
 
 Latest speech/reasoning snapshot, from
 `worldpgt/experiments/benchmarks/speech_quality_large_20260709T111746Z.json`
