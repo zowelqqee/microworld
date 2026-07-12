@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+worldpgt/experiments/web_search_v1/live_cache.json
+

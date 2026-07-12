@@ -2,8 +2,29 @@
 
 # Microworld
 
-Experimental semantic AI runtime exploring explicit memory, deterministic
-reasoning, dialogue systems, and controlled language generation.
+**Fast, low-cost semantic AI that runs locally — including offline on an
+iPhone.** Microworld answers supported questions from explicit memory and
+deterministic reasoning, with no GPU and no LLM or model API call on its answer
+path.
+
+It is not another chat UI around an LLM. It is an experimental runtime built
+for a different operating point: millisecond-scale local answers, inspectable
+decisions, predictable resource use, and zero per-query model-API cost for
+supported memory-backed questions.
+
+| What an engineer gets | Current evidence |
+|---|---|
+| Fast local answer path | 8.05 ms p50 and 29.47 ms p95 in the 1,000-question deterministic stress suite |
+| No cloud model dependency at answer time | Local CPU; no GPU or model API on the tested path |
+| Real on-device runtime | The same engine runs fully offline in a native SwiftUI app on a physical iPhone 11 |
+| Controlled answers | Explicit support returns an answer; unsupported or risky requests audit instead of being guessed |
+
+The iPhone demo embeds CPython and runs the real QA and creative engines with
+no server or network. See [the on-device demo](ios_demo/README_IOS.md) and
+[device benchmark notes](ios_demo/DEVICE_BENCHMARK.md) for the measured memory
+status and the distinction between Mac reference figures and device figures.
+
+## What It Is
 
 Microworld tests a new approach to AI: build the runtime around explicit,
 inspectable semantic state instead of asking one opaque next-token model to do
@@ -16,6 +37,32 @@ LLMs. It is a bounded explicit-memory AI runtime that answers only when it can
 point to controlled semantic memory, says `audit` when support is missing, and
 keeps factual support separate from reasoning, dialogue, language style,
 community patterns, live search, and session context.
+
+## Try It Locally
+
+The fastest reproducible path is the self-contained
+[standalone runtime](microworld-standalone/README.md). It includes the local
+runtime artifacts required by the default demo, so there is no model download,
+API key, database, or external service to configure.
+
+```bash
+git clone https://github.com/zowelqqee/microworld.git
+cd microworld/microworld-standalone
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install .
+microworld "Who founded SpaceX?" --overlay pump-dry-run
+```
+
+To start the local web UI after installation:
+
+```bash
+microworld-api --overlay pump-dry-run --port 8000
+```
+
+Open <http://127.0.0.1:8000>. For an interactive terminal session, run
+`microworld --overlay pump-dry-run --interactive`.
 
 The central abstraction in Microworld is semantics. Graphs may be used as one
 storage representation for semantic structures, but the project is not
@@ -42,6 +89,12 @@ stress-tested without pretending that a phrase model is factual memory.
 
 ## Key Ideas
 
+- Local-first performance: indexed semantic-memory lookup and small
+  deterministic planners keep the supported answer path in milliseconds on the
+  measured workload, without GPU inference or per-answer model-API calls.
+- On-device by design: the unmodified stdlib-only Python answer path is embedded
+  in the native iPhone demo, so the runtime can work offline rather than merely
+  forwarding prompts to a server.
 - Semantic-first runtime: text is an interface, not the internal reasoning
   substrate.
 - Explicit memory: accepted memory, overlays, proposals, snapshots, weak
@@ -66,7 +119,7 @@ unknown or unsupported form     -> audit
 
 No answer should appear because a model "felt" that it was plausible.
 
-## Latest Benchmark Snapshot
+## Latest Performance and Reliability Snapshot
 
 Latest speech/reasoning snapshot, from
 `worldpgt/experiments/benchmarks/speech_quality_large_20260709T111746Z.json`
@@ -88,11 +141,13 @@ and
 | Latency p99 | 27.73 ms | 38.90 ms |
 
 The stress suite is a deterministic 1,000-question speech benchmark over known
-categories, not 1,000 independent open-domain facts. Its purpose is to measure
-the user-facing speech/reasoning surface under load: profiles, thin profiles,
-mechanism gaps, direct relations, connection paths, adversarial inversions,
-current/live requests, private-info requests, unsupported universal claims, and
-style control.
+categories, not 1,000 independent open-domain facts. It shows that the local
+CPU answer path stays in the millisecond range under this workload without a
+GPU or model API. Its purpose is to measure the user-facing
+speech/reasoning surface under load: profiles, thin profiles, mechanism gaps,
+direct relations, connection paths, adversarial inversions, current/live
+requests, private-info requests, unsupported universal claims, and style
+control.
 
 For complete benchmark history, performance details, live-search numbers, and
 validation commands, see [docs/benchmarks.md](docs/benchmarks.md).

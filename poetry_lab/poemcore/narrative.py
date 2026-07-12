@@ -751,34 +751,89 @@ class TopicKnowledge:
         )
 
 
+# Light/support verbs need a real complement; standing alone ("battle let",
+# "ship gave") they read as incomplete, and their objects are usually junk.
+_EN_LIGHT_VERBS = frozenset({
+    "let", "made", "make", "makes", "gave", "give", "gives", "got", "get",
+    "gets", "put", "puts", "kept", "keep", "keeps", "had", "has", "have",
+    "did", "does", "do", "took", "take", "takes", "done", "went", "put",
+    "set", "sets", "laid", "lay", "held", "hold",
+})
+# Objects that are really adverbs/particles/quantifiers — not the patient of an
+# action ("married BESIDES", "cried SUDDENLY", "warped THREE").
+_EN_NUMBER_WORDS = frozenset({
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+    "ten", "hundred", "thousand", "million", "first", "second", "third",
+})
+_EN_WEAK_OBJECT = frozenset({
+    "away", "back", "besides", "almost", "everywhere", "somewhere", "anywhere",
+    "nowhere", "here", "there", "then", "now", "thus", "quite", "rather",
+    "indeed", "forth", "aside", "apart", "along", "around", "about", "forward",
+    "backward", "onward", "upward", "downward", "hither", "thither", "again",
+    "once", "twice", "ever", "never", "still", "yet", "else", "too", "also",
+    "enough", "instead", "perhaps", "however", "moreover", "therefore",
+    # directional prepositions that leak into noun_like via the permissive
+    # English noun detector — never a patient noun or a focus anchor
+    "toward", "towards", "against", "between", "among", "beyond", "beneath",
+    "beside", "across", "behind", "below", "above", "under", "over", "near",
+})
+
+
+def _valid_action_object_en(obj: str, noun_like: frozenset[str]) -> bool:
+    """Is ``obj`` a plausible patient noun (English)? Rejects only the
+    unambiguous non-nouns — adverbs (-ly), number words, and weak particles.
+    Kept deliberately permissive: over-filtering shrinks the event pool and
+    costs coherence more than the odd loose object costs readability."""
+    if obj in _EN_NUMBER_WORDS or obj in _EN_WEAK_OBJECT or obj in STOPWORDS:
+        return False
+    if obj.endswith("ly") and len(obj) > 3:        # adverb
+        return False
+    return len(obj) >= 3
+
+
 def _gather_topic_actions(
     subject: str, phrase: PhraseModel, noun_like: frozenset[str], verb_lexicon: dict | None,
     *, limit: int = 8,
 ) -> tuple[tuple[str, str], ...]:
     """Read real subject→verb(→object) events straight from the learned phrase
-    graph, gated by the same SVO trust checks the scene renderer uses. This is
-    what lets a *scene* about any topic show something happening ("murder
-    contrived", "sea swallowed ship") without a hand-written action template —
-    the verbs and objects are all corpus transitions of this exact subject."""
+    graph, gated by the same SVO trust checks the scene renderer uses plus an
+    English object-quality gate. This lets a *scene* about any topic show
+    something happening ("murder committed", "ship lost treasure") without a
+    hand-written template — verbs and objects are all corpus transitions of this
+    exact subject — while dropping the noise ("ship married besides", "battle
+    let george") that a permissive Cyrillic-only object check let through."""
 
     verbs = phrase.forward.get(subject, {})
     if not verbs:
         return ()
+    english = is_latin_word(subject)
     scored: list[tuple[tuple[str, str], int]] = []
     seen: set[tuple[str, str]] = set()
     for verb, verb_count in verbs.items():
         if not _is_semantic_action(verb, subject, noun_like):
             continue
+        # A light/support verb produces junk we can't trust — "battle let
+        # george", "ship kept bucking", "ship gave". Skip it (English). This is
+        # the one action filter that is a clear win; aggressive object/gerund
+        # filtering was tried and reverted (it shrank the event pool and cost
+        # more coherence than the loose objects cost readability — the residual
+        # roughness like "looks"-as-subject is an ingest-level noun-detection
+        # problem, to be fixed there, not by runtime patching).
+        if english and verb in _EN_LIGHT_VERBS:
+            continue
         objects = phrase.forward2.get((subject, verb), {})
         placed_object = False
         for obj, obj_count in objects.items():
-            if _trusted_svo((subject, verb, obj), subject, noun_like, verb_lexicon) and obj != subject:
-                key = (verb, obj)
-                if key not in seen:
-                    seen.add(key)
-                    scored.append((key, verb_count + obj_count))
-                    placed_object = True
-        # A bare intransitive event ("murder contrived") is still a complete
+            if not (_trusted_svo((subject, verb, obj), subject, noun_like, verb_lexicon) and obj != subject):
+                continue
+            if english and not _valid_action_object_en(obj, noun_like):
+                continue
+            key = (verb, obj)
+            if key not in seen:
+                seen.add(key)
+                scored.append((key, verb_count + obj_count))
+                placed_object = True
+        # A bare intransitive event ("murder committed") is still a complete
         # assertion when no trusted object exists.
         if not placed_object and _trusted_svo((subject, verb), subject, noun_like, verb_lexicon):
             key = (verb, "")
@@ -891,6 +946,16 @@ _DESCRIPTION_SCHEMAS: tuple[tuple[str, int, tuple[str, ...], tuple[str, ...], bo
 _SCENE_DYNAMIC_BOOST = 6
 _SCENE_STATIC_DAMP = 3
 
+# Words that are grammatically noun-ish but make weak focus-chain anchors
+# (deictics, quantifiers, light nouns). Following one produces "King cried ha.
+# Higher, little ha." — kept out of the chain.
+_WEAK_FOCUS = frozenset({
+    "back", "one", "nothing", "something", "anything", "everything", "thing",
+    "way", "part", "side", "kind", "sort", "deal", "lot", "bit", "end",
+    "ha", "sir", "lord", "miss", "master", "madam", "man", "men", "some",
+    "such", "same", "other", "another", "any", "none", "all", "half",
+})
+
 # Connectors joining two clauses of one sentence. In creative mode a figurative
 # one may be chosen even where the corpus never joined those exact facts.
 _PLAIN_CONNECTORS = (("", 6), (",", 2), ("and", 1))
@@ -940,6 +1005,7 @@ def _plan_topic_discourse(
     field_knowledge: tuple[TopicKnowledge, ...],
     adjective_collocations: dict[str, dict[str, int]],
     used: dict | None = None, scene_bias: bool = False,
+    connect_field: set[str] | None = None,
 ) -> tuple[list[Clause], str]:
     """Layer 2 (reasoning/discourse): choose a rhetorical schema and fill its
     clauses from the knowledge buckets. Returns ``(clauses, relation)``.
@@ -1020,6 +1086,7 @@ def _plan_topic_discourse(
     for role in roles:
         clause = _fill_clause(
             role, knowledge, chosen_epithets, seed=f"{seed}|fill|{index}|{role}", used=used,
+            connect_field=connect_field or set(),
         )
         if clause[1]:
             clauses.append(clause)
@@ -1061,14 +1128,23 @@ def _pick_collocated_epithets(
     return tuple(chosen)
 
 
+def _connect_weight(token: str, connect_field: set[str]) -> int:
+    """Weight multiplier for a fact whose object/detail links to the previous
+    sentence (coherence #1). ×5 when connected, ×1 otherwise — a bias, never a
+    force, so an unconnected but only-remaining fact is still usable."""
+    return 5 if token in connect_field else 1
+
+
 def _fill_clause(
     role: str, knowledge: TopicKnowledge, chosen_epithets: tuple[str, ...], *, seed: str,
-    used: dict | None = None,
+    used: dict | None = None, connect_field: set[str] | None = None,
 ) -> Clause:
     """Turn a role tag into its surface tokens, drawing from the buckets. Uses
-    ``used`` to pick a not-yet-spent link/property/predicate where possible."""
+    ``used`` to pick a not-yet-spent link/property/predicate where possible, and
+    ``connect_field`` to prefer a fact that develops the previous sentence."""
 
     used = used if used is not None else _new_used_state()
+    connect_field = connect_field or set()
     subj = knowledge.subject
     if role == "subject":
         return ("subject", (subj,))
@@ -1093,14 +1169,15 @@ def _fill_clause(
             options = [(i, p) for i, p in enumerate(knowledge.properties) if p[1] not in set(chosen_epithets)]
         if not options:
             return ("property", ())
-        pick_i = int(seeded_weighted_pick(seed, "prop", [(str(i), 1) for i, _p in options]))
+        pick_i = int(seeded_weighted_pick(
+            seed, "prop", [(str(i), _connect_weight(p[1], connect_field)) for i, p in options]))
         used["properties"].add(pick_i)
         pred, detail = knowledge.properties[pick_i]
         if detail:
             used["epithets"].add(detail)  # so a later epithet clause won't reuse it
         return ("property", tuple(t for t in (pred, detail) if t))
     if role == "link":
-        prep, obj = _pick_link(knowledge, seed, exclude=used["links"])
+        prep, obj = _pick_link(knowledge, seed, exclude=used["links"], connect_field=connect_field)
         if prep and obj:
             used["links"].add(f"{prep}\t{obj}")
         return ("link", (prep, obj) if prep and obj else ())
@@ -1128,7 +1205,7 @@ def _fill_clause(
         options = [a for a in knowledge.actions if a not in used["actions"]] or list(knowledge.actions)
         if not options:
             return (role, ())
-        encoded = [("\t".join(pair), 1) for pair in options]
+        encoded = [("\t".join(pair), _connect_weight(pair[1], connect_field)) for pair in options]
         verb, obj = seeded_weighted_pick(seed, "act", encoded).split("\t")
         used["actions"].add((verb, obj))
         keep_object = role != "action" and obj
@@ -1140,12 +1217,16 @@ def _fill_clause(
     return (role, ())
 
 
-def _pick_link(knowledge: TopicKnowledge, seed: str, *, exclude: set | None = None) -> tuple[str, str]:
+def _pick_link(
+    knowledge: TopicKnowledge, seed: str, *, exclude: set | None = None,
+    connect_field: set[str] | None = None,
+) -> tuple[str, str]:
     exclude = exclude or set()
+    connect_field = connect_field or set()
     links = [pair for pair in knowledge.links if "\t".join(pair) not in exclude] or list(knowledge.links)
     if not links:
         return "", ""
-    encoded = [("\t".join(pair), 1) for pair in links]
+    encoded = [("\t".join(pair), _connect_weight(pair[1], connect_field)) for pair in links]
     prep, obj = seeded_weighted_pick(seed, "link", encoded).split("\t")
     return prep, obj
 
@@ -1212,23 +1293,84 @@ def _plan_description_scene(
     # than one clause restated.
     used_state: dict[str, dict] = {}
 
+    # Coherence (#1): concepts the previous sentence introduced. Layer 2 prefers
+    # a fact whose object/detail connects to this set, so consecutive sentences
+    # develop images already in play instead of listing disconnected facets.
+    carried: list[str] = []
+    first_mention: set[str] = set()  # subjects already named once (→ pronoun after)
+
     plans: list[SentencePlan] = []
+    subjects_used: list[str] = []
     for index in range(total):
-        # Round-robin across grounded subjects: topic, neighbour, topic, ...
-        preferred = ordered_subjects[index % len(ordered_subjects)]
+        # Gather knowledge on demand for carried concepts, so the focus chain
+        # can follow a concept the pre-computed field didn't include.
+        for word in carried:
+            if word not in knowledge_by_word:
+                subj = _description_fact_subject(word, description_relations)
+                if subj:
+                    knowledge_by_word[word] = _gather_topic_knowledge(
+                        subj, description_relations, phrase, noun_like, verb_lexicon,
+                    )
+        # Focus chain (coherence #1): if the previous sentence introduced a
+        # concept that is itself a grounded, not-yet-exhausted subject, follow
+        # it — "Sea of glory. Glory faded." reads as developing images, and it
+        # makes consecutive sentences share an anchor. Fall back to the
+        # round-robin over the topic + field neighbours otherwise.
+        # Follow probabilistically (~60%), not always: a mix of chained and
+        # topic-anchored sentences keeps continuity high without every sentence
+        # drifting to a new image (which costs local grammaticality).
+        take_chain = seeded_weighted_pick(f"{selection_seed}|chain|{index}", "c", [(1, 3), (0, 2)])
+        follow = next(
+            (w for w in carried
+             if w in knowledge_by_word and knowledge_by_word[w].has_any()
+             and w != (subjects_used[-1] if subjects_used else "")
+             and len(used_state.get(w, {}).get("schemas", ())) < 3
+             # Only follow a real corpus noun with real substance — not a
+             # preposition/adverbial ("toward", "back", "ha") that rode along in
+             # a link/action clause. noun_like is the corpus's noun set, but the
+             # English noun detector is permissive (it wrongly admits "toward"/
+             # "looks"), so also exclude the known function/adverb sets.
+             and w in noun_like and _material(w) >= 3 and len(w) >= 4
+             and w not in _WEAK_FOCUS and w not in _BRIDGE_WORDS
+             and w not in _CLAUSE_ATTACH_HEADS and w not in _EN_WEAK_OBJECT
+             and not w.endswith("ly")),
+            "",
+        ) if take_chain else ""
+        preferred = follow or ordered_subjects[index % len(ordered_subjects)]
         knowledge = knowledge_by_word.get(preferred)
         if knowledge is None or not knowledge.has_any():
             subj = _description_subject(preferred, phrase, noun_like)
             knowledge = knowledge_by_word.get(preferred) or TopicKnowledge(subj)
+        subjects_used.append(knowledge.subject)
         state = used_state.setdefault(knowledge.subject, _new_used_state())
+
+        # Field to prefer connecting to: the carried concepts plus their graph
+        # neighbours (so a related-but-not-identical image also counts).
+        connect_field: set[str] = set(carried)
+        for word in carried:
+            for neighbour, _weight in graph.neighbors(word)[:8]:
+                connect_field.add(neighbour)
 
         # Layer 2: discourse plan for this sentence (consumes/updates state).
         clauses, relation = _plan_topic_discourse(
             knowledge, index=index, mode_is_creative=mode_is_creative,
             seed=selection_seed, field_knowledge=field_knowledge,
             adjective_collocations=collocations, used=state, scene_bias=scene_bias,
+            connect_field=connect_field,
         )
         clause_fragments = tuple(tokens for _role, tokens in clauses if tokens)
+        # Record the non-subject content words this sentence introduced, to
+        # carry into the next one.
+        introduced = [
+            tok for frag in clause_fragments for tok in frag
+            if tok not in {knowledge.subject, ",", "—", "is"} and tok not in STOPWORDS
+            and len(tok) > 1 and not is_finite_verb(tok) and not _looks_adjective(tok)
+            # Function words (prepositions/relativizers) ride along inside link
+            # and action clauses; they are not content and must not be followed
+            # as a focus ("...toward. Toward marched.").
+            and tok not in _BRIDGE_WORDS and tok not in _CLAUSE_ATTACH_HEADS
+        ]
+        carried = list(dict.fromkeys(introduced))[:4] or carried
         # Connector between successive clauses — plain, or figurative in
         # creative mode (a join the corpus never literally made).
         connector_menu = _FIGURATIVE_CONNECTORS if mode_is_creative else _PLAIN_CONNECTORS
@@ -1685,6 +1827,8 @@ class NarrativeGenerator:
         state = DiscourseState.seeded(list(plan.goal.seeds))
         paragraph = Paragraph()
         allowed_names = set(plan.goal.characters)
+        prev_subject = ""   # subject of the previous rendered description sentence
+        rendered_any = False
         for sentence in plan.sentences:
             if plan.goal.mode == "description":
                 # A sentence with no clause content — or one whose only content
@@ -1697,7 +1841,12 @@ class NarrativeGenerator:
                 )
                 if not sentence.clause_fragments or bare_subject:
                     continue
-                text, trace = self._render_description_sentence(sentence, seed=f"{seed}|{sentence.index}")
+                text, trace = self._render_description_sentence(
+                    sentence, seed=f"{seed}|{sentence.index}",
+                    prev_subject=prev_subject, is_first=not rendered_any,
+                )
+                prev_subject = sentence.subject
+                rendered_any = True
             else:
                 text, trace = self._render_sentence(
                     sentence, state, allowed_names, paragraph.sentences, f"{seed}|{sentence.index}"
@@ -1707,7 +1856,9 @@ class NarrativeGenerator:
             state.update(text)
         return paragraph
 
-    def _render_description_sentence(self, plan: SentencePlan, *, seed: str) -> tuple[str, SentenceRealization]:
+    def _render_description_sentence(
+        self, plan: SentencePlan, *, seed: str, prev_subject: str = "", is_first: bool = True,
+    ) -> tuple[str, SentenceRealization]:
         """Layer 3 (speech): realize the discourse plan's clauses into text.
 
         The clause list and order were already decided by Layer 2
@@ -1715,7 +1866,13 @@ class NarrativeGenerator:
         surface, letting the phrase graph supply connective tissue where it can
         (``_grow_clause_bridge``) so successive words are corpus transitions
         rather than a bare template concatenation. Clauses are joined by the
-        connectors the plan chose."""
+        connectors the plan chose.
+
+        Two cross-sentence reading aids (coherence #1): when this sentence
+        repeats the previous sentence's subject it is pronominalised ("It grew
+        civil"), and a light discourse connective may open a later sentence
+        ("Then it cried") — both seeded, so they are occasional, not mechanical.
+        """
 
         rendered: list[str] = []
         for position, clause in enumerate(plan.clause_fragments):
@@ -1735,7 +1892,27 @@ class NarrativeGenerator:
         if not rendered:
             rendered = [plan.subject]
         rendered = _strip_stray_punctuation([token for token in rendered if token])
-        body = _sentence_text(rendered, False, "", self.proper_names)
+
+        # Co-reference: a non-proper subject repeated from the previous sentence
+        # becomes a pronoun (abstract/object topics take "it"). Proper names are
+        # left in full — we have no reliable gender.
+        pronominal = ""
+        if (not is_first and prev_subject == plan.subject and rendered
+                and rendered[0] == plan.subject and plan.subject not in self.proper_names):
+            if seeded_weighted_pick(f"{seed}|pron", "p", [(1, 3), (0, 2)]):
+                pronominal = "it"
+                rendered = [pronominal, *rendered[1:]]
+
+        # A rare inter-sentence connective (a light touch, never on every
+        # sentence — "Then… Then… Then" is exactly the stamp to avoid). Only a
+        # sentence that opens on the subject can take one, so it reads as a
+        # discourse marker, not a random prefix.
+        transition = ""
+        if not is_first and rendered and rendered[0] in {plan.subject, pronominal}:
+            transition = seeded_weighted_pick(
+                f"{seed}|trans", "t", [("", 10), ("then", 1), ("and", 1)])
+
+        body = _sentence_text(rendered, False, transition, self.proper_names)
         actual = set(words(body))
         realized = tuple(role for role in ("subject",) if plan.subject in actual)
         return body, SentenceRealization(
