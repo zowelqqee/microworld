@@ -228,6 +228,57 @@ def test_router_entity_relation():
     assert route("What does SpaceX develop?").intent == "entity_relation"
 
 
+def test_unknown_question_can_use_an_unambiguous_safe_outgoing_neighborhood(tmp_path: Path):
+    overlay_path = tmp_path / "neighborhood_overlay.json"
+    overlay_path.write_text(json.dumps([
+        {"overlay_type": "overlay_entity", "label": "Atlas Processor"},
+        {
+            "overlay_type": "overlay_relation", "subject": "Atlas Processor",
+            "predicate": "uses", "object": "sensor fusion",
+            "stability": "semi_stable", "risk": "medium",
+        },
+        {
+            "overlay_type": "overlay_relation", "subject": "Atlas Processor",
+            "predicate": "supports", "object": "unreviewed diagnostics",
+            "stability": "semi_stable", "risk": "high",
+        },
+    ]), encoding="utf-8")
+
+    a = AnswerOrchestrator(
+        "custom-overlay-path", overlay_path=str(overlay_path),
+    ).answer("What technology does Atlas Processor rely on?")
+
+    assert a.decision == "answer"
+    assert a.route == "unknown_or_unsupported"
+    assert a.answer_text == "Atlas Processor uses sensor fusion."
+    assert "unreviewed diagnostics" not in a.answer_text
+    assert any(step.startswith("graph_neighborhood: subject=Atlas Processor") for step in a.trace.steps)
+
+
+def test_graph_neighborhood_ranks_edges_from_edge_text_not_a_fixed_predicate_list(tmp_path: Path):
+    overlay_path = tmp_path / "ranked_neighborhood_overlay.json"
+    overlay_path.write_text(json.dumps([
+        {"overlay_type": "overlay_entity", "label": "Atlas Processor"},
+        {
+            "overlay_type": "overlay_relation", "subject": "Atlas Processor",
+            "predicate": "uses", "object": "sensor fusion",
+            "stability": "semi_stable", "risk": "medium",
+        },
+        {
+            "overlay_type": "overlay_relation", "subject": "Atlas Processor",
+            "predicate": "runs_on", "object": "edge hardware",
+            "stability": "semi_stable", "risk": "medium",
+        },
+    ]), encoding="utf-8")
+
+    a = AnswerOrchestrator(
+        "custom-overlay-path", overlay_path=str(overlay_path),
+    ).answer("What does Atlas Processor have to do with edge hardware?")
+
+    assert a.decision == "answer"
+    assert a.answer_text == "Atlas Processor runs on edge hardware."
+
+
 def test_router_unsupported_relation_tail_is_not_definition():
     r = route("Who was Richard Nixon married to?")
 
@@ -708,6 +759,22 @@ def test_missing_knowledge_can_use_community_context_without_fact_support():
     assert "community_context_only" in a.risk_flags
     assert provider.queries == ["What are common concerns when people learn python debugging?"]
     assert validate_answer(a) == []
+
+
+def test_missing_factual_relation_never_falls_back_to_community_prose():
+    provider = _FakeCommunityContextProvider([_community_result("Generic community advice.")])
+
+    a = AnswerOrchestrator(
+        "promoted",
+        community_context_provider=provider,
+        community_context_enabled=True,
+    ).answer("What does an unmapped research paper use?")
+
+    assert a.decision == "audit"
+    assert a.support_kind == "missing_knowledge"
+    assert a.source_system != "community_context"
+    assert provider.queries == []
+    assert "community_context: skipped_for_factual_lookup" in a.trace.steps
 
 
 def test_community_tone_leaves_a_plain_supported_answer_unchanged():

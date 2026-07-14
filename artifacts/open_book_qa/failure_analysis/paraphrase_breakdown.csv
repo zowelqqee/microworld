@@ -1,0 +1,10 @@
+expected_predicate,template,cases,entity_resolution_success,correct_predicate_parse,planner_invocation,direct_edge_available,answer_plan_built,final_accuracy
+enables,What capability does {subject} provide?,8,8,0,8,8,0,0.0
+enables,What does {subject} make possible?,9,8,0,8,8,0,0.0
+supports,What does {subject} help support?,3,1,1,1,1,2,0.6666666666666666
+supports,What outcome is supported by {subject}?,6,0,0,0,0,5,1.0
+used_for,What purpose does {subject} serve?,3,0,0,0,0,3,1.0
+uses,What does {subject} employ?,4,0,0,0,0,2,0.75
+uses,What is used by {subject}?,7,0,0,0,0,0,0.0
+uses,What technology does {subject} rely on?,9,2,0,2,1,8,0.7777777777777778
+works_by,What mechanism does {subject} use?,1,1,0,1,1,0,0.0

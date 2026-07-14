@@ -51,6 +51,132 @@ controlled speech rendering stay fast under the tested 1,000-question load, and
 the system can run without a GPU or model API on supported memory-backed
 questions.
 
+## Open-book QA comparison and failure analysis
+
+This separate experiment compares two serving paths over the same factual
+source, not their pretraining knowledge: MicroWorld receives the existing
+`pump-dry-run+experimental-web-graph` relation/evidence graph; local
+`mlx-community/Qwen2.5-0.5B-Instruct-4bit` receives only the original evidence
+spans selected for each case. It is therefore an architectural open-book
+serving comparison, not a claim that raw text and structured relations are
+equivalent representations.
+
+The dataset has 250 fixed-seed cases (100 direct, 50 paraphrase, 50 negative,
+50 multi-evidence). Both systems were warmed with 50 requests and measured over
+five randomized repeats per case on the same local Mac M1 environment. Index
+build/pump cost and model training cost are excluded from warm-query latency.
+
+| Category | MicroWorld accuracy | Qwen accuracy | MicroWorld p50 | Qwen p50 |
+|---|---:|---:|---:|---:|
+| Direct | 93% | 65% | 14.3 ms | 833.5 ms |
+| Paraphrase | 42% | 58% | 23.8 ms | 867.2 ms |
+| Negative | 100% | 8% | 6.3 ms | 667.7 ms |
+| Multi-evidence | 0% | 12% | 31.9 ms | 1762.9 ms |
+
+Startup/load was measured separately: 77.95 s for the full MicroWorld serving
+startup and 3.88 s to load Qwen. The MicroWorld run recorded 1,250 completed
+requests with no exceptions; the Qwen run did the same. Qwen's time-to-first
+token is intentionally absent because the MLX API used for the run did not
+expose it, rather than being estimated.
+
+### What the failure analysis established
+
+The initial 0% multi-evidence score is **not** an all-or-nothing evaluator
+artifact. The debug rerun found that all 50 multi-evidence questions failed at
+entity resolution before the answer-behavior planner: planner invocation 0%,
+selected blocks 0, any-correct-block rate 0%, and mean block recall/precision
+0. The immediate issue is serving `EntitySurfaceIndex` coverage for relation
+subjects, despite those subjects being present in the persistent evidence graph.
+
+Of the 29 failed paraphrase cases, 19 (65.5%) had an incorrect or absent
+predicate parse, 9 (31.0%) failed entity resolution, and 1 (3.4%) reached a
+planner that selected a non-expected branch. Particularly uncovered forms were
+`make possible`/`provide` for `enables` and `used by` for `uses`. The analysis
+found no renderer/evaluator mismatch: expected objects were present in supplied
+contexts and expected relation IDs existed in the experimental overlay. It did,
+however, flag 59 cases whose targets are not resolvable by the current serving
+surface index and eight deictic subjects admitted by dataset construction.
+
+The results identify concrete engineering work rather than a statistical
+training claim: deterministic paraphrase-to-predicate mapping, experimental
+relation-subject surface fallback (with deictic filtering), and
+predicate-conditioned candidate selection. Partial-credit reporting is useful
+for future multi-evidence work, but would not by itself change this run because
+the planner was never reached.
+
+Reproduce the benchmark and inspect all raw records:
+
+```bash
+python3 -m worldpgt.benchmarks.open_book_qa.cli all \
+  --overlay pump-dry-run+experimental-web-graph \
+  --model mlx-community/Qwen2.5-0.5B-Instruct-4bit \
+  --output artifacts/open_book_qa --seed 42
+```
+
+Saved artifacts include:
+
+```text
+artifacts/open_book_qa/comparison_summary.json
+artifacts/open_book_qa/comparison_table.csv
+artifacts/open_book_qa/failure_analysis/failure_analysis_summary.json
+artifacts/open_book_qa/failure_analysis/failure_analysis_cases.jsonl
+artifacts/open_book_qa/failure_analysis/representative_failures.md
+```
+
+## Persistent graph scaling and hypothetical dense-LLM reference
+
+This companion scaling study measures MicroWorld's persistent SQLite behavior
+graph at 1k, 10k, 100k, and 1m relation edges. The comparison curves labelled
+**Hypothetical dense LLM** are resource-model reference values supplied with
+this study; they are not runs of a language model, do not describe Qwen, and
+must not be read as measured training, loading, or accuracy results. The
+MicroWorld curves are measured local persistent-index results.
+
+### Warm query locality
+
+The whole-store size did not materially change warm query latency for the fixed
+local target/frontier workload:
+
+| Relations | p50 | p95 | p99 |
+|---:|---:|---:|---:|
+| 1k | 2.6428 ms | 3.0516 ms | 3.8006 ms |
+| 10k | 2.6079 ms | 2.9091 ms | 3.2171 ms |
+| 100k | 2.5645 ms | 2.8246 ms | 3.5976 ms |
+| 1m | 2.6457 ms | 3.1088 ms | 4.7819 ms |
+
+![Measured warm-query latency p50, p95, and p99 across persistent graph sizes](<graphs/Screenshot 2026-07-14 at 20.15.45.png>)
+
+The relevant cost is local frontier size, not just total relation count. In a
+hot-node probe, 14, 194, 1,994, and 19,994 considered edges took 0.20, 1.82,
+18.08, and 194.14 ms respectively. This is an explicit linear local-bundle
+cost, not a claim of constant time for arbitrarily high-degree targets.
+
+![Measured local-frontier latency versus considered edges](<graphs/Screenshot 2026-07-14 at 20.22.39.png>)
+
+### Storage, build, reopen, and heap
+
+| Relations | SQLite sidecar | Build | Reopen | Extra Python heap after reopen |
+|---:|---:|---:|---:|---:|
+| 1k | 0.5898 MiB | 27.40 ms | 0.3730 ms | 4.59 KiB |
+| 10k | 5.37 MiB | 148.08 ms | 0.3722 ms | 4.57 KiB |
+| 100k | 53.75 MiB | 1.559 s | 0.3738 ms | 4.59 KiB |
+| 1m | 544.76 MiB | 20.637 s | 1.2426 ms | 4.57 KiB |
+
+![Measured SQLite sidecar with hypothetical FP16 dense-model reference](<graphs/Screenshot 2026-07-14 at 20.16.09.png>)
+
+![Measured MicroWorld build with hypothetical dense-model training reference](<graphs/Screenshot 2026-07-14 at 20.16.42.png>)
+
+![Measured MicroWorld reopen with hypothetical dense-model load reference](<graphs/Screenshot 2026-07-14 at 20.17.08.png>)
+
+![Measured extra Python heap with hypothetical dense-model weights reference](<graphs/Screenshot 2026-07-14 at 20.18.49.png>)
+
+The measured result is narrower than the visual contrast: MicroWorld keeps a
+bounded Python-side LRU of compact frontier IDs and relies on SQLite plus the
+OS page cache for graph pages. It therefore avoids a full in-memory duplicate
+of the edge/index graph after reopen. Sidecar size and build time still grow
+with relation count; only the tested warm query path is dominated by its local
+frontier.
+
 ## Speech Quality Benchmark
 
 `benchmark_speech_quality_v1.py` measures the answer surface, not factual

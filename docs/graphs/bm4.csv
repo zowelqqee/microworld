@@ -1,0 +1,5 @@
+Relations,MicroWorld build (s),Hypothetical LLM training (s)
+1k,0.0274,60
+10k,0.14808,900
+100k,1.559,14400
+1m,20.637,259200

@@ -40,6 +40,8 @@ Demonstrated in the current repository and preserved research artifacts:
 - Scalable indexed semantic retrieval
 - Multi-hop explicit semantic reasoning
 - Speech/reasoning surface measured separately from factual coverage
+- Reproducible open-book QA comparison with raw evidence spans and a local MLX Qwen baseline
+- Failure analysis that isolates parser coverage, resolver coverage, and planner reachability
 - Reddit/HN-style cognitive pattern memory that is blocked from factual support
 - Optional live-search path with volatile/source-labelled answers
 
@@ -87,6 +89,14 @@ Current limits, from the local artifacts:
   over controlled categories, not broad conversational generalization.
 - The language renderer remains bounded and deterministic; cleaner wording does
   not increase factual coverage.
+- The current open-book failure analysis found a hard multi-evidence boundary:
+  all 50 measured multi-evidence cases failed entity resolution before planner
+  invocation. This is resolver/surface-index coverage, not evidence-plan
+  rendering or partial-credit evaluation.
+- Paraphrase coverage is incomplete: the measured 42% score includes predicate
+  mapping gaps (`make possible`, `provide`, `used by`) and unresolved relation
+  subjects. The open-book dataset also exposed eight deictic subjects that
+  should have been excluded from a stable-entity benchmark.
 - Durable unattended/night-cycle service is not part of the current runtime;
   acquisition and evaluation loops are script-driven.
 
@@ -115,6 +125,9 @@ Highest-leverage next steps:
    median/min/max, and environment, beyond single saved benchmark snapshots.
 9. Keep promotion explicit: proposal -> fact checks -> review -> promoted
    artifact; never silent accepted-memory mutation.
+10. Add deterministic paraphrase predicate mappings and an experimental
+    relation-subject resolver fallback, then rerun the same fixed-seed
+    open-book dataset before claiming improvement.
 
 ## Status
 

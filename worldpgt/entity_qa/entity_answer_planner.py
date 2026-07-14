@@ -94,6 +94,9 @@ _ABSTRACT_LOCATION_OBJECT_TOKENS = frozenset({
     "tradition",
     "traditions",
 })
+_NEIGHBORHOOD_TOKEN_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*")
+_NEIGHBORHOOD_MAX_PREDICATE_GROUPS = 3
+_NEIGHBORHOOD_MAX_EDGES_PER_GROUP = 2
 
 
 def _norm(s: str) -> str:
@@ -145,6 +148,14 @@ def _filter_renderable_relations(relations: list[dict]) -> list[dict]:
     return [r for r in relations if not _is_bad_located_in_relation(r)]
 
 
+def _neighborhood_terms(text: str) -> set[str]:
+    return {
+        token.casefold()
+        for token in _NEIGHBORHOOD_TOKEN_RE.findall(text or "")
+        if len(token) > 2
+    }
+
+
 class EntityAnswerPlanner:
     def __init__(
         self,
@@ -187,6 +198,79 @@ class EntityAnswerPlanner:
             return self._plan_source_fact(analyzed)
 
         return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+    def plan_outgoing_neighborhood(self, question: str, subject: str) -> EntityQAPlan:
+        """Select a bounded direct-edge neighborhood without a predicate schema."""
+        analyzed = AnalyzedEntityQuestion(
+            question=question, intent="relation_lookup", subject=subject,
+            predicate_hint=None, secondary_entity=None, source_hint=None,
+            is_current_query=False, is_unsupported=False,
+        )
+        evidence = EntityQAEvidence()
+        relations = [
+            relation
+            for relation in _filter_renderable_relations(self._provider.get_relations(subject))
+            if _is_answerable_relation(relation)
+        ]
+        if not relations:
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        question_terms = _neighborhood_terms(question) - _neighborhood_terms(subject)
+        groups: dict[str, list[dict]] = {}
+        for relation in relations:
+            predicate = str(relation.get("predicate") or "")
+            if predicate:
+                groups.setdefault(predicate, []).append(relation)
+        if not groups:
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        def edge_score(relation: dict) -> int:
+            edge_text = " ".join(
+                str(relation.get(field) or "")
+                for field in ("predicate", "object", "evidence_text", "evidence_span")
+            )
+            return len(question_terms.intersection(_neighborhood_terms(edge_text)))
+
+        ranked_groups: list[tuple[int, int, str, list[dict]]] = []
+        for predicate, members in groups.items():
+            ranked_members = sorted(
+                members,
+                key=lambda relation: (
+                    -edge_score(relation),
+                    -int(relation.get("support_count") or 1),
+                    str(relation.get("object") or "").casefold(),
+                ),
+            )
+            ranked_groups.append((
+                edge_score(ranked_members[0]), len(ranked_members), predicate, ranked_members,
+            ))
+        ranked_groups.sort(key=lambda group: (-group[0], -group[1], group[2]))
+
+        # A broad unscored graph cannot be narrowed honestly.  A single
+        # predicate group is already an unambiguous direct neighborhood.
+        if ranked_groups[0][0] == 0 and len(ranked_groups) != 1:
+            return self._audit_plan(analyzed, _NO_DATA_AUDIT_REASON)
+
+        selected: list[dict] = []
+        eligible_groups = (
+            [group for group in ranked_groups if group[0] > 0]
+            if ranked_groups[0][0] > 0
+            else ranked_groups[:1]
+        )
+        for _score, _size, _predicate, members in eligible_groups[:_NEIGHBORHOOD_MAX_PREDICATE_GROUPS]:
+            selected.extend(members[:_NEIGHBORHOOD_MAX_EDGES_PER_GROUP])
+        for relation in selected:
+            evidence.overlay_items_used.append(
+                f"overlay_relation:{relation['predicate']}:{relation['object']}"
+            )
+        return EntityQAPlan(
+            analyzed=analyzed, decision="answer", audit_reason=None, evidence=evidence,
+            render_template="relation_lookup",
+            render_args={
+                "subject": subject, "predicate": None, "relations": selected, "founder_lookup": False,
+            },
+            confidence=0.82,
+        )
 
     # ------------------------------------------------------------------
     # Intent-specific planners

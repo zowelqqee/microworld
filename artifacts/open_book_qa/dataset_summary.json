@@ -1,0 +1,29 @@
+{
+  "total_cases": 250,
+  "cases_per_category": {
+    "paraphrase": 50,
+    "negative": 50,
+    "direct": 100,
+    "multi_evidence": 50
+  },
+  "predicate_distribution": {
+    "uses": 92,
+    "founded_by": 50,
+    "enables": 83,
+    "used_for": 31,
+    "supports": 40,
+    "works_by": 2,
+    "developed_by": 2
+  },
+  "unique_subjects": 151,
+  "unique_evidence_spans": 178,
+  "excluded_counts_by_reason": {
+    "ambiguous_short_alias": 136,
+    "deictic_node": 31
+  },
+  "overlay": "pump-dry-run+experimental-web-graph",
+  "overlay_fingerprint": "4499eb5f40c5cc1627333ae9c569aec124857131cc4bdaf6148c9d8c605b2e7a",
+  "build_commit": "04fbda2bef0083e4c6ae528af512228c3fb4650d",
+  "generated_timestamp": "2026-07-14T17:55:44.980861+00:00",
+  "random_seed": 42
+}

@@ -1,0 +1,84 @@
+{
+  "case_count": 250,
+  "main_table": [
+    {
+      "category": "paraphrase",
+      "cases": 50,
+      "entity_resolved": 20,
+      "predicate_correct": 1,
+      "planner_invoked": 20,
+      "any_correct_block": 18,
+      "partial_plan": 0,
+      "full_correct": 21
+    },
+    {
+      "category": "negative",
+      "cases": 50,
+      "entity_resolved": 0,
+      "predicate_correct": 0,
+      "planner_invoked": 0,
+      "any_correct_block": 0,
+      "partial_plan": 0,
+      "full_correct": 50
+    },
+    {
+      "category": "direct",
+      "cases": 100,
+      "entity_resolved": 0,
+      "predicate_correct": 0,
+      "planner_invoked": 0,
+      "any_correct_block": 82,
+      "partial_plan": 0,
+      "full_correct": 93
+    },
+    {
+      "category": "multi_evidence",
+      "cases": 50,
+      "entity_resolved": 0,
+      "predicate_correct": 0,
+      "planner_invoked": 0,
+      "any_correct_block": 0,
+      "partial_plan": 0,
+      "full_correct": 0
+    }
+  ],
+  "earliest_failure_stage": {
+    "correct": {
+      "paraphrase": 21,
+      "negative": 50,
+      "direct": 93
+    },
+    "predicate_parse_failed": {
+      "paraphrase": 19
+    },
+    "entity_resolution_failed": {
+      "paraphrase": 9,
+      "multi_evidence": 50
+    },
+    "wrong_plan": {
+      "paraphrase": 1,
+      "direct": 5
+    },
+    "planner_not_invoked": {
+      "direct": 2
+    }
+  },
+  "multi_evidence_partial_credit": {
+    "cases": 50,
+    "any_block_success_rate": 0.0,
+    "mean_block_recall": 0.0,
+    "mean_block_precision": 0.0,
+    "partial_plan_rate": 0.0,
+    "full_plan_rate": 0.0,
+    "audit_before_planning_rate": 1.0,
+    "planner_invocation_rate": 0.0,
+    "average_expected_blocks": 2.0,
+    "average_selected_blocks": 0.0
+  },
+  "join": {
+    "dataset_cases": 250,
+    "result_rows": 1250,
+    "unique_result_cases": 250,
+    "expected_repeats_per_case": 5
+  }
+}

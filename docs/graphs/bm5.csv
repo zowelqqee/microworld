@@ -1,0 +1,5 @@
+Relations,MicroWorld reopen (ms),Hypothetical LLM load (ms)
+1k,0.3730,8
+10k,0.3722,80
+100k,0.3738,800
+1m,1.2426,8000

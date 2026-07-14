@@ -16,6 +16,8 @@
   .mode-toggle.on { background: #7fb3f5; color: #10102a; border-color: #7fb3f5; }
   #web-toggle.on { background: #8be0b2; color: #092414; border-color: #8be0b2; }
   #community-toggle.on { background: #ffd36e; color: #291c00; border-color: #ffd36e; }
+  .mode-status { font-size: 12px; font-weight: 600; letter-spacing: 0.3px; padding: 6px 12px; border-radius: 999px; border: 1px solid #3a3a5e; background: #24244a; color: #aab; }
+  .mode-status.experimental { background: #e9b9ff; color: #2d073d; border-color: #e9b9ff; }
 
   #chat { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
 
@@ -64,6 +66,7 @@
     <button id="web-toggle" class="mode-toggle" title="Use live web search for public current questions">Web search: off</button>
     <button id="community-toggle" class="mode-toggle" title="Use low-trust Reddit/community context for phrasing and common concerns">Community: off</button>
     <button id="think-toggle" class="mode-toggle" title="Show how the answer was reached">🧠 Think aloud: off</button>
+    <span id="experimental-graph-status" class="mode-status">Experimental graph: loading…</span>
   </div>
 </div>
 <div id="chat"></div>
@@ -80,6 +83,7 @@ const overlayLabel = document.getElementById('overlay-label');
 const thinkToggle = document.getElementById('think-toggle');
 const webToggle = document.getElementById('web-toggle');
 const communityToggle = document.getElementById('community-toggle');
+const experimentalGraphStatus = document.getElementById('experimental-graph-status');
 
 let sessionId = null;
 let thinkAloud = false;
@@ -110,13 +114,18 @@ async function loadHealth() {
     const d = await r.json();
     const pump = d.pump_summary || {};
     const community = d.community_context || {};
+    const experimentalGraph = d.experimental_web_graph || {};
     const extra = pump.frontier_titles_total ? ` · ${pump.frontier_titles_total} frontier titles` : '';
     const communityExtra = community.available ? ` · ${community.item_count} community items` : '';
     overlayLabel.textContent = `overlay: ${d.overlay} · ${d.overlay_item_count || d.fact_count} overlay items${extra}${communityExtra}`;
-    communityContext = Boolean(community.available);
     communityToggle.disabled = !community.available;
     communityToggle.classList.toggle('on', communityContext);
     communityToggle.textContent = `Community: ${communityContext ? 'on' : 'off'}`;
+    const graphCount = experimentalGraph.item_count || 0;
+    experimentalGraphStatus.classList.toggle('experimental', Boolean(experimentalGraph.enabled));
+    experimentalGraphStatus.textContent = experimentalGraph.enabled
+      ? `Experimental graph: on · ${graphCount} items`
+      : 'Experimental graph: unavailable';
   } catch {
     overlayLabel.textContent = 'unavailable';
   }

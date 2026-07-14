@@ -151,6 +151,26 @@ control.
 For complete benchmark history, performance details, live-search numbers, and
 validation commands, see [docs/benchmarks.md](docs/benchmarks.md).
 
+### Open-book QA research snapshot
+
+The repository also contains a measured open-book comparison over the same
+evidence spans: MicroWorld receives its existing proposal relation graph and a
+local `mlx-community/Qwen2.5-0.5B-Instruct-4bit` receives the raw spans. Across
+250 fixed cases and five warmed repeats per case, MicroWorld's p50 latency was
+6.3--31.9 ms by category, versus 667.7--1762.9 ms for the local Qwen run. The
+more important research result is the failure analysis: direct relation QA was
+93% and negative/audit QA 100%, while paraphrase was 42% and multi-evidence 0%.
+The latter was traced to entity surface-index coverage before the planner—not
+to a hidden partial-plan score or the renderer. See the [open-book benchmark
+and failure analysis](docs/benchmarks.md#open-book-qa-comparison-and-failure-analysis)
+for methodology, exact limitations, and reproducible artifacts.
+
+The same benchmark documentation also includes a separate persistent-graph
+scaling study: measured SQLite sidecar, reopen, heap, and local-frontier
+figures, alongside clearly labelled **hypothetical** dense-LLM storage/load/
+training curves. It is a resource-model comparison, not a measured LLM
+benchmark. See [persistent graph scaling](docs/benchmarks.md#persistent-graph-scaling-and-hypothetical-dense-llm-reference).
+
 ## High-Level Architecture
 
 At the top level, the runtime is no longer just an answer surface:

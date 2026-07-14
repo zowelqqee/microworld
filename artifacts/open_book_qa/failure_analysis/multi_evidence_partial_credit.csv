@@ -1,0 +1,11 @@
+metric,value
+cases,50
+any_block_success_rate,0.0
+mean_block_recall,0.0
+mean_block_precision,0.0
+partial_plan_rate,0.0
+full_plan_rate,0.0
+audit_before_planning_rate,1.0
+planner_invocation_rate,0.0
+average_expected_blocks,2.0
+average_selected_blocks,0.0

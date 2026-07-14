@@ -1,0 +1,9 @@
+expected_predicate,parsed_predicate,cases
+enables,develops,9
+enables,owned_by,1
+enables,provides,7
+supports,supports,1
+supports,unavailable,8
+used_for,unavailable,3
+uses,unavailable,20
+works_by,uses,1

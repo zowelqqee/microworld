@@ -15,7 +15,7 @@ import re
 import sys
 import uuid
 from pathlib import Path
-from typing import Optional
+from typing import Iterable, Optional
 
 _ROOT = Path(__file__).resolve().parent.parent.parent
 if str(_ROOT) not in sys.path:
@@ -56,12 +56,19 @@ from worldpgt.dialogue.serving import (
 from worldpgt.dialogue.state import DialogueState
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.multihop_qa.assistant_adapter import try_answer_multihop
+from worldpgt.reasoning.answer_behavior import (
+    build_answer_plan,
+    plan_is_expansion,
+    prepare_persistent_evidence_graph,
+)
+from worldpgt.reasoning.answer_plan_renderer import render_answer_plan
 from worldpgt.reasoning.pattern_discovery import PatternIndex, build_pattern_index
 from worldpgt.reasoning.pattern_store import load_patterns
 from worldpgt.reasoning.reasoning_adapter import try_answer_reasoning
 from worldpgt.reasoning.types import GraphPattern
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 from worldpgt.web_search.live_cache import LiveSearchCache
+from worldpgt.knowledge_pump.audit_event_logger import log_audit_event
 from worldpgt.assistant_surface.community_context import (
     FileCognitivePatternProvider,
     FileCommunityContextProvider,
@@ -81,6 +88,11 @@ _DEFAULT_COMMUNITY_CONTEXT_PATH = (
 )
 _DEFAULT_COGNITIVE_PATTERNS_PATH = (
     _EXPERIMENTS / "community_context_v1" / "cognitive_pattern_events.json"
+)
+_EXPERIMENTAL_WEB_CAMPAIGN_ROOT = _EXPERIMENTS / "open_web_pump_v1"
+_EVIDENCE_GROUNDED_GRAPH_FILENAME = "open_web_campaign_evidence_grounded_graph_overlay.json"
+_MAIN_UI_COMPOSED_OVERLAY_PATH = (
+    _EXPERIMENTS / "open_web_pump_v1" / "campaign_long_v2" / "main_ui_overlay.json"
 )
 
 _STATIC_DIR = Path(__file__).parent / "static"
@@ -114,6 +126,12 @@ _resolved_overlay_path: str | None = None
 _startup_overlay_mode: str = "pump-dry-run"
 _startup_overlay_path: str | None = None
 _overlay_mtime: float | None = None
+_experimental_web_graph: dict[str, object] = {"enabled": False, "item_count": 0}
+_experimental_web_graph_signature: tuple[tuple[str, int, int], ...] = ()
+_startup_include_experimental_web_graph: bool = False
+# Persistent answer-behavior graph over the experimental slice; reset on every
+# _startup() so its disk index mirrors the loaded overlay.
+_experimental_edges_cache = None
 
 app = FastAPI(title="Microworld QA API", docs_url="/docs")
 
@@ -144,6 +162,11 @@ class AskResponse(BaseModel):
     # Full dialogue-v2 resolution trace (slots, candidates, scores, margins).
     # Populated only when MICROWORLD_DIALOGUE_V2=on.
     dialogue: Optional[dict] = None
+    # Inspectable answer-behavior plan (blocks, per-block evidence/sources,
+    # score breakdowns, rejected candidates, stop reason). Populated only when
+    # reasoning is enabled and the local evidence graph produced a valid plan;
+    # the answer text itself is replaced only by a multi-block plan.
+    answer_plan: Optional[dict] = None
 
 
 # --------------------------------------------------------------------------- #
@@ -168,6 +191,7 @@ def health() -> dict:
         "overlay_item_count": _fact_count,
         "overlay_counts": _overlay_counts(_overlay_items),
         "pump_summary": _pump_summary_counts(),
+        "experimental_web_graph": _experimental_web_graph,
         "community_context": {
             "available": _community_context_path is not None,
             "path": _community_context_path,
@@ -266,15 +290,18 @@ def ask(req: AskRequest) -> AskResponse:
     reasoning_result = None
 
     if req.enable_reasoning:
+        # Reasoning is an optional enhancement.  A malformed/discovered graph
+        # pattern must never turn an otherwise evidence-backed entity answer
+        # into an HTTP 500 after a large proposal campaign lands.
         with _timed_step("server.reasoning"):
-            reasoning_result = try_answer_reasoning(
+            reasoning_result = _run_optional_reasoning(
                 req.question,
                 _overlay_items,
-                patterns=_graph_patterns,
-                workspace=_inference_workspace,
-                pattern_index=_pattern_index,
+                _graph_patterns,
+                _inference_workspace,
+                _pattern_index,
             )
-        if reasoning_result.kind != "unsupported":
+        if reasoning_result is not None and reasoning_result.kind != "unsupported":
             answer_text = reasoning_result.answer_text
             support = reasoning_result.support_kind
             answer = _patch_decision(answer, reasoning_result.decision)
@@ -298,11 +325,45 @@ def ask(req: AskRequest) -> AskResponse:
             if multihop.decision == "answer" and answer.decision == "audit":
                 answer = _patch_decision(answer, "answer")
 
+    # Answer-behavior pattern layer: when reasoning is enabled and no other
+    # layer replaced the base text, try to expand a supported answer into an
+    # inspectable multi-block plan over the local evidence graph.  A plan with
+    # a single reliable link keeps the original short answer (only its trace
+    # is exposed); no plan means nothing changes at all.  Audits never enter
+    # this step, so a gap stays a gap.
+    answer_plan_payload = None
+    if (
+        req.enable_reasoning
+        and answer.decision == "answer"
+        and (reasoning_result is None or reasoning_result.kind == "unsupported")
+        and answer_text == answer.answer_text
+    ):
+        with _timed_step("server.answer_behavior"):
+            behavior_plan = _build_optional_answer_plan(effective_question, semantic_query)
+        if behavior_plan is not None:
+            answer_plan_payload = behavior_plan.to_dict()
+            if plan_is_expansion(behavior_plan):
+                rendered_plan = _render_optional_answer_plan(behavior_plan)
+                if rendered_plan:
+                    answer_text = rendered_plan
+                    support = "evidence_backed_answer_plan"
+
     # Optional think-aloud surface (presentation only — no behavior change).
     thinking = None
     if req.think_aloud:
         with _timed_step("server.think_aloud"):
             thinking, answer_text = _think_aloud(req.question, answer, multihop)
+
+    # An audit is not a fact.  It is a structured acquisition signal: retain
+    # the parser's resolved entity/relation so a later proposal-only campaign
+    # can prioritise a real missing link without trying to infer it from prose.
+    if answer.decision == "audit":
+        log_audit_event(
+            answer,
+            entity=semantic_query.entity_a or semantic_query.entity_b,
+            relation_hint=semantic_query.relation_intent,
+            source="api_feedback",
+        )
 
     # Record turn for future coreference resolution (v1 context is kept
     # up-to-date in every mode so flipping the flag never loses a session).
@@ -321,6 +382,7 @@ def ask(req: AskRequest) -> AskResponse:
         session_id=session_id,
         thinking=thinking,
         dialogue=resolved_v2.to_dict() if (mode == "on" and resolved_v2 is not None) else None,
+        answer_plan=answer_plan_payload,
     )
 
 
@@ -639,6 +701,270 @@ def _load_overlay_items(overlay_path: str) -> list[dict]:
     return [r for r in rows if isinstance(r, dict)]
 
 
+def _available_experimental_web_graph_paths() -> tuple[Path, ...]:
+    """Discover all completed evidence-grounded campaigns in deterministic order.
+
+    A campaign writes this artifact only after its proposal-only consolidation
+    completes.  Discovery removes the need to edit server code for every new
+    campaign and keeps title-led/raw artifacts out of the user-facing graph.
+    """
+    if not _EXPERIMENTAL_WEB_CAMPAIGN_ROOT.is_dir():
+        return ()
+    return tuple(sorted(
+        path for path in _EXPERIMENTAL_WEB_CAMPAIGN_ROOT.glob(
+            f"campaign_*/{_EVIDENCE_GROUNDED_GRAPH_FILENAME}"
+        )
+        if path.is_file()
+    ))
+
+
+def _experimental_web_graph_fingerprint(
+    paths: Iterable[Path] | None = None,
+) -> tuple[tuple[str, int, int], ...]:
+    """Cheap change token for discovery and completed-campaign updates."""
+    selected = tuple(paths) if paths is not None else _available_experimental_web_graph_paths()
+    return tuple(
+        (str(path), path.stat().st_mtime_ns, path.stat().st_size)
+        for path in selected
+        if path.is_file()
+    )
+
+
+def _experimental_graph_key(text: object) -> str:
+    return " ".join(str(text or "").casefold().split())
+
+
+def _merge_experimental_graph_items(items: Iterable[dict]) -> list[dict]:
+    """Coalesce only evidence-grounded graph duplicates across campaigns.
+
+    This is a serving-only operation.  It does not turn proposal data into
+    accepted memory; it merely makes independent provenance visible on a
+    single semantic edge instead of leaving duplicate rows to compete in QA.
+    """
+    rows = [dict(item) for item in items]
+    entity_groups: dict[str, list[dict]] = {}
+    relation_groups: dict[tuple[str, str, str], list[dict]] = {}
+    for item in rows:
+        tier = str(item.get("experimental_tier") or "")
+        if item.get("overlay_type") == "overlay_entity" and tier.startswith("evidence_grounded_"):
+            key = _experimental_graph_key(item.get("label"))
+            if key:
+                entity_groups.setdefault(key, []).append(item)
+        elif item.get("overlay_type") == "overlay_relation" and tier == "evidence_grounded_abstract_relation_v1":
+            key = (
+                _experimental_graph_key(item.get("subject")),
+                _experimental_graph_key(item.get("predicate")),
+                _experimental_graph_key(item.get("object")),
+            )
+            if all(key):
+                relation_groups.setdefault(key, []).append(item)
+
+    merged_entities: dict[str, dict] = {}
+    for key, group in entity_groups.items():
+        merged = dict(group[0])
+        merged["aliases"] = sorted({
+            str(alias).strip()
+            for item in group
+            for alias in (item.get("aliases") or [])
+            if str(alias).strip() and _experimental_graph_key(alias) != key
+        }, key=lambda value: (len(value), value.casefold(), value))
+        merged_entities[key] = merged
+
+    merged_relations: dict[tuple[str, str, str], dict] = {}
+    for key, group in relation_groups.items():
+        merged = dict(group[0])
+        source_urls = sorted({
+            str(url).strip()
+            for item in group
+            for url in [item.get("source_url"), *(item.get("supporting_sources") or [])]
+            if str(url or "").strip()
+        })
+        evidence: list[str] = []
+        for item in group:
+            for text in [item.get("evidence_text"), *(item.get("supporting_evidence") or [])]:
+                compact = " ".join(str(text or "").split())
+                if compact and compact not in evidence:
+                    evidence.append(compact)
+        source_count = len(source_urls)
+        quality = dict(merged.get("evidence_quality") or {})
+        quality["corroboration"] = "independent_sources" if source_count > 1 else "single_source"
+        merged.update({
+            "support_count": sum(max(1, int(item.get("support_count") or 0)) for item in group),
+            "supporting_source_count": source_count,
+            "supporting_sources": source_urls,
+            "supporting_evidence": evidence[:6],
+            "evidence_quality": quality,
+        })
+        merged_relations[key] = merged
+
+    result: list[dict] = []
+    emitted_entities: set[str] = set()
+    emitted_relations: set[tuple[str, str, str]] = set()
+    for item in rows:
+        tier = str(item.get("experimental_tier") or "")
+        if item.get("overlay_type") == "overlay_entity" and tier.startswith("evidence_grounded_"):
+            key = _experimental_graph_key(item.get("label"))
+            if key in emitted_entities:
+                continue
+            emitted_entities.add(key)
+            result.append(merged_entities[key])
+            continue
+        if item.get("overlay_type") == "overlay_relation" and tier == "evidence_grounded_abstract_relation_v1":
+            key = (
+                _experimental_graph_key(item.get("subject")),
+                _experimental_graph_key(item.get("predicate")),
+                _experimental_graph_key(item.get("object")),
+            )
+            if key in emitted_relations:
+                continue
+            emitted_relations.add(key)
+            result.append(merged_relations[key])
+            continue
+        result.append(item)
+    return result
+
+
+def _compose_main_ui_overlay(
+    base_overlay_path: str | Path,
+    graph_overlay_paths: str | Path | Iterable[str | Path],
+) -> Path:
+    """Compose normal UI knowledge with the explicit experimental graph.
+
+    The result is a serving-only artifact, never accepted or promoted memory.
+    It preserves the normal overlay while making the user-authorized
+    experimental graph available to the main UI.
+    """
+    base_items = _load_overlay_items(str(base_overlay_path))
+    if isinstance(graph_overlay_paths, (str, Path)):
+        graph_paths = (Path(graph_overlay_paths),)
+    else:
+        graph_paths = tuple(Path(path) for path in graph_overlay_paths)
+    graph_items = _merge_experimental_graph_items([
+        item
+        for path in graph_paths
+        if path.is_file()
+        for item in _load_overlay_items(str(path))
+    ])
+    seen: set[str] = set()
+    merged: list[dict] = []
+    for item in [*base_items, *graph_items]:
+        key = json.dumps(item, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+        if key not in seen:
+            seen.add(key)
+            merged.append(item)
+    payload = json.dumps(merged, indent=2, ensure_ascii=False) + "\n"
+    _MAIN_UI_COMPOSED_OVERLAY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if not _MAIN_UI_COMPOSED_OVERLAY_PATH.is_file() or _MAIN_UI_COMPOSED_OVERLAY_PATH.read_text(encoding="utf-8") != payload:
+        temporary = _MAIN_UI_COMPOSED_OVERLAY_PATH.with_suffix(".json.tmp")
+        temporary.write_text(payload, encoding="utf-8")
+        temporary.replace(_MAIN_UI_COMPOSED_OVERLAY_PATH)
+    return _MAIN_UI_COMPOSED_OVERLAY_PATH
+
+
+def _run_optional_reasoning(
+    question: str,
+    items: list[dict],
+    patterns: list[GraphPattern],
+    workspace: object | None,
+    pattern_index: PatternIndex | None,
+):
+    """Return an optional reasoning result without sacrificing base QA.
+
+    Experimental proposal graphs may expose edge cases in derived pattern
+    discovery.  The evidence-backed answer is still usable when that optional
+    enhancement declines or fails, so its failure is intentionally isolated.
+    """
+    try:
+        return try_answer_reasoning(
+            question,
+            items,
+            patterns=patterns,
+            workspace=workspace,
+            pattern_index=pattern_index,
+        )
+    except Exception:
+        return None
+
+
+def _build_optional_answer_plan(question: str, semantic_query):
+    """Build the answer-behavior plan without ever risking the base answer.
+
+    Targets come only from already-resolved entities (semantic parser first,
+    surface index second) — the layer never guesses a target from question
+    shape.  Any failure inside the optional layer degrades to None, which the
+    caller treats as "keep the existing answer unchanged".
+    """
+    try:
+        targets = [
+            t for t in (semantic_query.entity_a, semantic_query.entity_b) if t
+        ]
+        if not targets and _surface_index is not None:
+            targets = list(dict.fromkeys(
+                canonical
+                for _surface, canonical, _start, _end in _surface_index.find_in_text(question)
+            ))
+        if not targets:
+            return None
+        return build_answer_plan(
+            question,
+            [],
+            targets=targets,
+            prepared_edges=_experimental_evidence_edges(),
+        )
+    except Exception:
+        return None
+
+
+def _experimental_relation_items() -> list[dict]:
+    """The proposal/experimental-only slice of the composed overlay.
+
+    Hard boundary: the answer-behavior layer must never expand an answer
+    using accepted or promoted memory facts, even though those facts sit in
+    the same in-memory ``_overlay_items`` list once composed for serving.
+    ``experimental_tier`` is the same provenance marker
+    ``_merge_experimental_graph_items`` already uses to recognize open-web
+    proposal relations, so this reuses that exact criterion instead of
+    introducing a second one.  Definitions remain outside this first
+    relation-only behavior layer.
+    """
+    return [
+        item
+        for item in _overlay_items
+        if item.get("overlay_type") == "overlay_relation"
+        and str(item.get("experimental_tier") or "").startswith("evidence_grounded_")
+    ]
+
+
+def _experimental_evidence_edges():
+    """Persistent answer-behavior graph, opened once per loaded overlay.
+
+    ``_startup`` resets the cache holder whenever the overlay is (re)loaded,
+    so its fingerprinted disk index follows the existing overlay lifecycle
+    instead of adding a second invalidation scheme.
+    """
+    global _experimental_edges_cache
+    if _experimental_edges_cache is None:
+        resolved = Path(_resolved_overlay_path or _MAIN_UI_COMPOSED_OVERLAY_PATH)
+        stat = resolved.stat()
+        relation_items = _experimental_relation_items()
+        _experimental_edges_cache = prepare_persistent_evidence_graph(
+            relation_items,
+            resolved.with_suffix(".answer_behavior.sqlite"),
+            source_fingerprint=(
+                f"{resolved.resolve()}:{stat.st_mtime_ns}:{stat.st_size}:"
+                f"experimental-relations-v1:{len(relation_items)}"
+            ),
+        )
+    return _experimental_edges_cache
+
+
+def _render_optional_answer_plan(plan) -> str:
+    try:
+        return render_answer_plan(plan)
+    except Exception:
+        return ""
+
+
 def _overlay_counts(items: list[dict]) -> dict[str, int]:
     counts: dict[str, int] = {}
     for item in items:
@@ -680,18 +1006,46 @@ def _startup(
     *,
     community_context_path: str | None = None,
     cognitive_patterns_path: str | None = None,
+    include_experimental_web_graph: bool = False,
 ) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
     global _inference_workspace, _graph_patterns, _pattern_index, _graph_reader
     global _resolved_overlay_path, _startup_overlay_mode, _startup_overlay_path, _overlay_mtime
     global _community_context_path, _community_context_count, _community_context_provider
     global _cognitive_patterns_path, _cognitive_patterns_count, _cognitive_pattern_provider
+    global _experimental_web_graph, _experimental_web_graph_signature, _startup_include_experimental_web_graph
+    global _experimental_edges_cache
+    if _experimental_edges_cache is not None:
+        close = getattr(_experimental_edges_cache, "close", None)
+        if close is not None:
+            close()
+    _experimental_edges_cache = None
 
     _overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
     _startup_overlay_mode = overlay_mode
     _startup_overlay_path = overlay_path
 
-    resolved_path = overlay_path or resolve_overlay(overlay_mode)[0]
+    base_resolved_path = overlay_path or resolve_overlay(overlay_mode)[0]
+    resolved_path = base_resolved_path
+    _experimental_web_graph = {"enabled": False, "item_count": 0}
+    _experimental_web_graph_signature = ()
+    _startup_include_experimental_web_graph = include_experimental_web_graph
+    available_graph_paths = _available_experimental_web_graph_paths()
+    if include_experimental_web_graph and overlay_path is None and available_graph_paths:
+        graph_items = _merge_experimental_graph_items([
+            item
+            for path in available_graph_paths
+            for item in _load_overlay_items(str(path))
+        ])
+        resolved_path = str(_compose_main_ui_overlay(base_resolved_path, available_graph_paths))
+        _overlay_mode = f"{overlay_mode}+experimental-web-graph"
+        _experimental_web_graph = {
+            "enabled": True,
+            "item_count": len(graph_items),
+            "paths": [str(path) for path in available_graph_paths],
+            "trust": "proposal_open_web_exploratory",
+        }
+        _experimental_web_graph_signature = _experimental_web_graph_fingerprint(available_graph_paths)
     _resolved_overlay_path = resolved_path
     _overlay_mtime = Path(resolved_path).stat().st_mtime
 
@@ -727,7 +1081,7 @@ def _startup(
 
     _orchestrator = AnswerOrchestrator(
         overlay_mode,
-        overlay_path=overlay_path,
+        overlay_path=resolved_path if resolved_path != base_resolved_path else overlay_path,
         inference_workspace=_inference_workspace,
         live_cache=LiveSearchCache(_LIVE_SEARCH_CACHE_PATH),
         community_context_provider=community_provider,
@@ -764,13 +1118,24 @@ def _startup(
 
 
 def _ensure_cache_fresh() -> None:
-    """Recompute the inference/pattern caches only if the overlay file on
-    disk changed since we last cached it (cheap ``stat()`` check per request;
-    a full ``_startup()`` re-init only on an actual mtime change, e.g. the
-    overlay was regenerated by a nightly job while the server kept running).
+    """Refresh only when the base overlay or a completed campaign changed.
+
+    The check is a cheap stat/fingerprint pass per request.  It detects a new
+    evidence-grounded campaign even though that campaign did not yet exist
+    when the server first composed its UI overlay.
     """
     if _resolved_overlay_path is None:
         return
+    if _startup_include_experimental_web_graph and _startup_overlay_path is None:
+        if _experimental_web_graph_fingerprint() != _experimental_web_graph_signature:
+            _startup(
+                _startup_overlay_mode,
+                overlay_path=_startup_overlay_path,
+                community_context_path=_community_context_path,
+                cognitive_patterns_path=_cognitive_patterns_path,
+                include_experimental_web_graph=_startup_include_experimental_web_graph,
+            )
+            return
     current_mtime = Path(_resolved_overlay_path).stat().st_mtime
     if current_mtime == _overlay_mtime:
         return
@@ -779,6 +1144,7 @@ def _ensure_cache_fresh() -> None:
         overlay_path=_startup_overlay_path,
         community_context_path=_community_context_path,
         cognitive_patterns_path=_cognitive_patterns_path,
+        include_experimental_web_graph=_startup_include_experimental_web_graph,
     )
 
 
@@ -846,6 +1212,11 @@ def main(argv: list[str] | None = None) -> None:
     )
     parser.add_argument("--overlay-path", default=None)
     parser.add_argument(
+        "--no-experimental-web-graph",
+        action="store_true",
+        help="Do not compose the available experimental open-web graph into the main UI overlay.",
+    )
+    parser.add_argument(
         "--community-context",
         default=None,
         help="Path to a low-trust community-context artifact. If omitted, the "
@@ -911,6 +1282,7 @@ def main(argv: list[str] | None = None) -> None:
         overlay_path=overlay_path,
         community_context_path=community_context_path,
         cognitive_patterns_path=cognitive_patterns_path,
+        include_experimental_web_graph=not args.no_experimental_web_graph,
     )
 
     uvicorn.run(app, host=args.host, port=args.port, log_level="info")

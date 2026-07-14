@@ -80,6 +80,9 @@ def log_audit_event(
     answer: "AssistantAnswer",
     *,
     log_path: Path | None = None,
+    entity: str | None = None,
+    relation_hint: str | None = None,
+    source: str = "assistant_surface",
 ) -> None:
     """Append one audit event from an AssistantAnswer to the JSONL log.
 
@@ -91,10 +94,11 @@ def log_audit_event(
     _append(log_path or _DEFAULT_LOG, {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "question": answer.question,
-        "entity": _extract_entity(answer.question),
+        "entity": (entity or "").strip() or _extract_entity(answer.question),
+        "relation_hint": (relation_hint or "").strip(),
         "support_kind": answer.support_kind,
         "reason": reason,
-        "source": "assistant_surface",
+        "source": source,
         "temporal_mismatch": _temporal_mismatch(reason, answer.risk_flags),
     })
 

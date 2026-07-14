@@ -11,6 +11,19 @@ link is a verified overlay fact, an explicit inference rule, or a measured
 observation about the graph.
 """
 
+from worldpgt.reasoning.answer_behavior import (
+    AnswerPlan,
+    ContentBlock,
+    PlanningInstrumentation,
+    PreparedEvidenceGraph,
+    PersistentEvidenceGraph,
+    build_answer_plan,
+    plan_is_expansion,
+    prepare_evidence_edges,
+    prepare_evidence_graph,
+    prepare_persistent_evidence_graph,
+)
+from worldpgt.reasoning.answer_plan_renderer import render_answer_plan
 from worldpgt.reasoning.counterfactual import analyze_counterfactual
 from worldpgt.reasoning.explanation_builder import explain_fact
 from worldpgt.reasoning.pattern_discovery import (
@@ -36,17 +49,28 @@ from worldpgt.reasoning.types import (
 )
 
 __all__ = [
+    "AnswerPlan",
     "AssistantReasoningResult",
+    "ContentBlock",
     "CounterfactualTrace",
     "ExplanationChain",
     "ExplanationStep",
     "GraphPattern",
     "analyze_counterfactual",
+    "build_answer_plan",
     "discover_patterns",
     "explain_fact",
     "is_reasoning_compatible",
     "load_patterns",
+    "plan_is_expansion",
+    "PlanningInstrumentation",
+    "PreparedEvidenceGraph",
+    "PersistentEvidenceGraph",
+    "prepare_evidence_edges",
+    "prepare_evidence_graph",
+    "prepare_persistent_evidence_graph",
     "relevant_patterns",
+    "render_answer_plan",
     "render_pattern_note",
     "save_patterns",
     "try_answer_reasoning",

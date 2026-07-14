@@ -76,6 +76,16 @@ from worldpgt.web_search.live_cache import LiveSearchCache, entity_key_from_titl
 from worldpgt.web_search.answer_extraction import extract_answer
 from worldpgt.web_search.query_intent import filter_and_rank_results
 
+
+_FACTUAL_LOOKUP_SHAPE_RE = re.compile(
+    r"^\s*(?:what\s+(?:does|did)|who\s+(?:is|was|founded)|where\s+(?:is|are|was|were))\b",
+    re.IGNORECASE,
+)
+_COMMUNITY_ADVICE_SHAPE_RE = re.compile(
+    r"\b(?:common\s+concerns?|advice|tips|people(?:'s)?\s+experiences?)\b",
+    re.IGNORECASE,
+)
+
 # Static, deterministic policy explanations (no factual claims, no overlay data).
 _WEAK_LINK_POLICY_TEXT = (
     "A weak context link means two pages mention each other in Microworld's "
@@ -382,6 +392,9 @@ class AnswerOrchestrator:
         # those return above, in step 1, untouched) gets one more chance via
         # live web search before it is returned as final.
         if result.decision == "audit" and result.support_kind == "missing_knowledge":
+            graph_answer = self._outgoing_graph_neighborhood_answer(route, ctx, trace)
+            if graph_answer is not None:
+                return graph_answer
             with _timed_step("orchestrator.branch:web_search_fallback"):
                 web_answer = self._web_search_current_answer(
                     route,
@@ -398,14 +411,21 @@ class AnswerOrchestrator:
                         web_answer,
                         community_context_enabled=community_context_enabled,
                     )
-                community_answer = self._community_context_answer(
-                    route,
-                    ctx,
-                    trace,
-                    community_context_enabled=community_context_enabled,
-                )
-                if community_answer is not None:
-                    return community_answer
+                # Community material can help with advice and phrasing, but it
+                # must never replace a missing factual lookup with generic
+                # prose.  This remains true even when the entity itself failed
+                # to resolve (for example, a shortened paper title).
+                if not self._is_factual_lookup(route):
+                    community_answer = self._community_context_answer(
+                        route,
+                        ctx,
+                        trace,
+                        community_context_enabled=community_context_enabled,
+                    )
+                    if community_answer is not None:
+                        return community_answer
+                else:
+                    trace.add("community_context: skipped_for_factual_lookup")
 
         result = self._apply_cognitive_surface_if_enabled(
             result,
@@ -423,6 +443,53 @@ class AnswerOrchestrator:
             else community_context_enabled
         )
         return bool(enabled and self._community_context_provider is not None)
+
+    def _outgoing_graph_neighborhood_answer(self, route, ctx, trace) -> AssistantAnswer | None:
+        """Use one resolved entity's direct graph neighborhood as a last factual path.
+
+        This is intentionally limited to questions whose relation was not
+        understood at all.  A failed exact relation lookup must not be replaced
+        with unrelated facts from the same vertex.
+        """
+        if route.intent != "unknown_or_unsupported":
+            return None
+        matches = self._surface_index.find_in_text(route.question)
+        subjects = list(dict.fromkeys(canonical for _surface, canonical, _start, _end in matches))
+        if len(subjects) != 1:
+            trace.add(f"graph_neighborhood: resolved_subjects={len(subjects)}")
+            return None
+        subject = subjects[0]
+        plan = self._entity_planner.plan_outgoing_neighborhood(route.question, subject)
+        trace.add(
+            f"graph_neighborhood: subject={subject}, decision={plan.decision}, "
+            f"edge_count={len(plan.render_args.get('relations', []))}"
+        )
+        if plan.decision != "answer":
+            return None
+        support_kind = self._planner_relation_support_kind(plan.render_args)
+        finalize(trace, "entity_qa", support_kind)
+        return self._make(
+            route,
+            ctx,
+            trace,
+            decision="answer",
+            answer_text=render_entity(plan),
+            supported=True,
+            support_kind=support_kind,
+            source_system="entity_qa",
+        )
+
+    @staticmethod
+    def _is_factual_lookup(route: AssistantRoute) -> bool:
+        """Whether an unsupported question must fail closed instead of using community prose."""
+        if _COMMUNITY_ADVICE_SHAPE_RE.search(route.question):
+            return False
+        return route.intent in {
+            "connection_path",
+            "entity_definition",
+            "entity_relation",
+            "source_qualified_fact",
+        } or bool(_FACTUAL_LOOKUP_SHAPE_RE.match(route.question))
 
     def _cognitive_patterns_enabled(self, cognitive_patterns_enabled: bool | None) -> bool:
         enabled = (
