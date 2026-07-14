@@ -14,6 +14,10 @@ facts, reasoning, dialogue, style, and safety at the same time. The project is
 a research implementation of semantic memory, semantic reasoning, semantic
 dialogue context, and a separately controlled speech layer.
 
+The same reasoning core that answers factual questions also generates free
+text: a poetry/prose layer built by inverting a single accept/reject gate. See
+[Creative mode](#creative-mode-the-inverted-gate-as-a-separate-layer) below.
+
 Microworld's factual QA path is a bounded explicit-memory runtime: it answers
 only when it can point to controlled semantic memory and says `audit` when
 support is missing. Factual support stays separate from reasoning, dialogue,
@@ -117,6 +121,11 @@ collapsed into one universal score.
 | Open-book multi-evidence QA | 0% accuracy; 31.9 ms p50 | All 50 cases failed target resolution before the behavior planner. |
 | Persistent graph, 1m relations | 2.65 ms p50; 3.11 ms p95 | The tested warm path is dominated by its local frontier, while sidecar/build scale with graph size. |
 
+### Known failure modes
+
+- Multi-evidence QA (0/50): failures occur at `<stage — fill in from trace analysis>` before reaching the executor. Root cause not yet isolated to a single pipeline stage — TODO before next benchmark run.
+- Paraphrase QA (42%): current predicate mapping and entity resolution do not generalize beyond direct-relation phrasing.
+
 The open-book run used 250 fixed cases and five warmed repeats per case. Its
 failure analysis is part of the result: it exposed parser/resolver coverage
 limits rather than hiding them behind a single aggregate score. The full
@@ -169,6 +178,12 @@ The persistent behavior graph was measured at 1k, 10k, 100k, and 1m relation
 edges. At a fixed local frontier, warm latency stays essentially flat while the
 SQLite sidecar and cold build grow with graph size:
 
+The graph also makes the local cost visible: 14, 194, 1,994, and 19,994
+considered edges took 0.20, 1.82, 18.08, and 194.14 ms. This is a local-frontier
+cost, not a claim that arbitrary high-degree nodes are constant-time.
+
+![Measured local-frontier latency versus considered edges](<docs/graphs/Screenshot 2026-07-14 at 20.22.39.png>)
+
 | Relations | Warm p50 | Warm p95 | SQLite sidecar | Build |
 |---:|---:|---:|---:|---:|
 | 1k | 2.6428 ms | 3.0516 ms | 0.5898 MiB | 27.40 ms |
@@ -176,30 +191,29 @@ SQLite sidecar and cold build grow with graph size:
 | 100k | 2.5645 ms | 2.8246 ms | 53.75 MiB | 1.559 s |
 | 1m | 2.6457 ms | 3.1088 ms | 544.76 MiB | 20.637 s |
 
-The graph also makes the local cost visible: 14, 194, 1,994, and 19,994
-considered edges took 0.20, 1.82, 18.08, and 194.14 ms. This is a local-frontier
-cost, not a claim that arbitrary high-degree nodes are constant-time.
-
 ![Measured warm-query latency across persistent graph sizes](<docs/graphs/Screenshot 2026-07-14 at 20.15.45.png>)
 
-![Measured local-frontier latency versus considered edges](<docs/graphs/Screenshot 2026-07-14 at 20.22.39.png>)
+## Efficiency comparison: bounded runtime vs open-weight LLM
 
-The following visual comparisons retain the supplied **hypothetical dense-LLM**
-reference curves for storage, training, load, and weights. They are not measured
-language-model runs, do not describe the Qwen result above, and do not compare
-accuracy. They illustrate a resource model alongside the measured MicroWorld
-SQLite sidecar/reopen/heap path.
+Bounded closed-KB lookup (MicroWorld) is not the same task as open-domain
+generation (a dense LLM). MicroWorld cannot answer paraphrased or open-domain
+questions outside its memory (see the open-book paraphrase and multi-evidence
+results above); the LLM can. This is an efficiency-per-scope comparison, not a
+quality or accuracy comparison.
 
-![Measured SQLite sidecar and hypothetical FP16 dense-model reference](<docs/graphs/Screenshot 2026-07-14 at 20.16.09.png>)
+| Metric | MicroWorld (measured, this repo) | Llama 3 8B (public model card) |
+|---|---|---|
+| Weights / index size | 544.76 MiB SQLite sidecar @ 1M relations | 16 GB (FP16 weights) |
+| Inference memory footprint | ~2.6 ms warm p50, no GPU | 18.44 GB VRAM (FP16, 1024-token context) |
+| Build/index time (this repo, this hardware) | 20.637 s @ 1M relations | not directly comparable — pretraining is a one-time cost on a corpus >15 trillion tokens; figure not publicly disclosed at FLOP-level by Meta |
+| Source | measured locally, see [docs/benchmarks.md](docs/benchmarks.md) | apxml.com Llama 3 8B model card; Meta release documentation |
 
-![Measured MicroWorld build and hypothetical dense-model training reference](<docs/graphs/Screenshot 2026-07-14 at 20.16.42.png>)
+These are not the same kind of cost — MicroWorld's build is a re-runnable local
+index construction; LLM pretraining is a singular large-scale training run.
+They are listed for context, not as an equivalent unit.
 
-![Measured MicroWorld reopen and hypothetical dense-model load reference](<docs/graphs/Screenshot 2026-07-14 at 20.17.08.png>)
-
-![Measured extra Python heap and hypothetical dense-model weights reference](<docs/graphs/Screenshot 2026-07-14 at 20.18.49.png>)
-
-For methodology, full artifact paths, and caveats, see [persistent graph
-scaling](docs/benchmarks.md#persistent-graph-scaling-and-hypothetical-dense-llm-reference).
+Sources: [apxml Llama 3 8B model card](https://apxml.com/models/llama-3-8b) and
+[official Meta Llama 3 8B model card on Hugging Face](https://huggingface.co/meta-llama/Meta-Llama-3-8B).
 
 ## High-Level Architecture
 
