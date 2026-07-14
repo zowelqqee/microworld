@@ -14,10 +14,12 @@ facts, reasoning, dialogue, style, and safety at the same time. The project is
 a research implementation of semantic memory, semantic reasoning, semantic
 dialogue context, and a separately controlled speech layer.
 
-Microworld is a bounded explicit-memory runtime that answers only when it can
-point to controlled semantic memory, says `audit` when support is missing, and
-keeps factual support separate from reasoning, dialogue, language style,
-community patterns, live search, and session context.
+Microworld's factual QA path is a bounded explicit-memory runtime: it answers
+only when it can point to controlled semantic memory and says `audit` when
+support is missing. Factual support stays separate from reasoning, dialogue,
+language style, community patterns, live search, and session context. A clearly
+creative request uses a separate labelled generation layer; it is not presented
+as factual support.
 
 ## Try It Locally
 
@@ -102,25 +104,38 @@ No answer should appear because a model "felt" that it was plausible.
 
 ## Latest Performance and Reliability Snapshot
 
-**Fast, low-cost semantic AI that runs locally — including offline on an
-iPhone.** Microworld answers supported questions from explicit memory and
-deterministic reasoning. It is built for millisecond-scale local answers,
-inspectable decisions, predictable resource use, and supported memory-backed
-questions.
+The latest saved measurements are two complementary July 14 local studies: an
+open-book QA comparison over the same evidence spans and a persistent SQLite
+behavior-graph scaling run. They measure different workloads and should not be
+collapsed into one universal score.
 
-| What an engineer gets | Current evidence |
-|---|---|
-| Fast local answer path | 8.05 ms p50 and 29.47 ms p95 in the 1,000-question deterministic stress suite |
-| Local execution | Local CPU on the tested path; no external service required for the bundled demo |
-| Real on-device runtime | The same engine runs fully offline in a native SwiftUI app on a physical iPhone 11 |
-| Controlled answers | Explicit support returns an answer; unsupported or risky requests audit instead of being guessed |
+| Workload | Measured result | What it establishes |
+|---|---|---|
+| Open-book direct relation QA | 93% accuracy; 14.3 ms p50 | Supported direct relations are fast and usually recovered. |
+| Open-book negative QA | 100% correct audit; 6.3 ms p50 | The factual path declines unsupported requested relations. |
+| Open-book paraphrase QA | 42% accuracy; 23.8 ms p50 | Current predicate mapping and entity resolution are incomplete. |
+| Open-book multi-evidence QA | 0% accuracy; 31.9 ms p50 | All 50 cases failed target resolution before the behavior planner. |
+| Persistent graph, 1m relations | 2.65 ms p50; 3.11 ms p95 | The tested warm path is dominated by its local frontier, while sidecar/build scale with graph size. |
+
+The open-book run used 250 fixed cases and five warmed repeats per case. Its
+failure analysis is part of the result: it exposed parser/resolver coverage
+limits rather than hiding them behind a single aggregate score. The full
+comparison, raw artifacts, persistent-graph curves, and hypothetical resource
+references are documented in [docs/benchmarks.md](docs/benchmarks.md).
+
+The older 1,000-question speech benchmark remains a useful reliability result
+for the controlled answer surface; it is not a factual-coverage or open-book
+benchmark. On that saved workload it recorded 8.05 ms p50 and 29.47 ms p95.
+
+### Earlier controlled speech-reliability snapshot
 
 The iPhone demo embeds CPython and runs the real QA and creative engines with
-no server or network. See [the on-device demo](ios_demo/README_IOS.md) and
-[device benchmark notes](ios_demo/DEVICE_BENCHMARK.md) for the measured memory
-status and the distinction between Mac reference figures and device figures.
+no server or network. It is verified to run on a physical iPhone 11; device
+latency remains intentionally unreported until it is measured separately. See
+[the on-device demo](ios_demo/README_IOS.md) and [device benchmark
+notes](ios_demo/DEVICE_BENCHMARK.md).
 
-Latest speech/reasoning snapshot, from
+The saved July 9 speech/reasoning snapshot is from
 `worldpgt/experiments/benchmarks/speech_quality_large_20260709T111746Z.json`
 and
 `worldpgt/experiments/benchmarks/speech_quality_stress_20260709T111906Z.json`:
@@ -147,23 +162,6 @@ speech/reasoning surface under load: profiles, thin profiles, mechanism gaps,
 direct relations, connection paths, adversarial inversions, current/live
 requests, private-info requests, unsupported universal claims, and style
 control.
-
-For complete benchmark history, performance details, live-search numbers, and
-validation commands, see [docs/benchmarks.md](docs/benchmarks.md).
-
-### Open-book QA research snapshot
-
-The repository also contains a measured open-book comparison over the same
-evidence spans: MicroWorld receives its existing proposal relation graph and a
-local `mlx-community/Qwen2.5-0.5B-Instruct-4bit` receives the raw spans. Across
-250 fixed cases and five warmed repeats per case, MicroWorld's p50 latency was
-6.3--31.9 ms by category, versus 667.7--1762.9 ms for the local Qwen run. The
-more important research result is the failure analysis: direct relation QA was
-93% and negative/audit QA 100%, while paraphrase was 42% and multi-evidence 0%.
-The latter was traced to entity surface-index coverage before the planner—not
-to a hidden partial-plan score or the renderer. See the [open-book benchmark
-and failure analysis](docs/benchmarks.md#open-book-qa-comparison-and-failure-analysis)
-for methodology, exact limitations, and reproducible artifacts.
 
 ### Persistent graph scaling
 
@@ -217,6 +215,13 @@ can be measured, audited, and improved without silently changing the others.
 Storage may be tabular JSON, overlay rows, indexes, or graph-shaped structures;
 the runtime contract is semantic, not storage-specific.
 
+When reasoning is enabled, a resolved target may also enter the optional
+answer-behavior layer: an experimental `overlay_relation` evidence graph is
+opened through a persistent SQLite index, a local frontier is scored into an
+inspectable `AnswerPlan`, and the renderer expands the answer only when the
+plan has enough independently supported blocks. This layer cannot replace an
+audit with an unsupported claim and remains separate from accepted memory.
+
 ```mermaid
 flowchart TD
     Q["User question"] --> R["Assistant Surface Router"]
@@ -247,6 +252,7 @@ flowchart TD
 | Web/API UI | `worldpgt/api/` |
 | Semantic dialogue context | `worldpgt/dialogue/` |
 | Semantic reasoning and speech planning | `worldpgt/cognition/`, `worldpgt/entity_qa/semantic_speech_planner.py` |
+| Evidence-backed answer behavior | `worldpgt/reasoning/answer_behavior.py`, `worldpgt/reasoning/answer_plan_renderer.py` |
 | Creative free-generation (separate inverted-gate layer) | `worldpgt/cognition/creative_generator.py` |
 | Community speech/cognitive patterns | `worldpgt/community_context/` |
 | Optional live search | `worldpgt/web_search/` |
