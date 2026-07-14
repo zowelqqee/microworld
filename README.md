@@ -165,11 +165,43 @@ to a hidden partial-plan score or the renderer. See the [open-book benchmark
 and failure analysis](docs/benchmarks.md#open-book-qa-comparison-and-failure-analysis)
 for methodology, exact limitations, and reproducible artifacts.
 
-The same benchmark documentation also includes a separate persistent-graph
-scaling study: measured SQLite sidecar, reopen, heap, and local-frontier
-figures, alongside clearly labelled **hypothetical** dense-LLM storage/load/
-training curves. It is a resource-model comparison, not a measured LLM
-benchmark. See [persistent graph scaling](docs/benchmarks.md#persistent-graph-scaling-and-hypothetical-dense-llm-reference).
+### Persistent graph scaling
+
+The persistent behavior graph was measured at 1k, 10k, 100k, and 1m relation
+edges. At a fixed local frontier, warm latency stays essentially flat while the
+SQLite sidecar and cold build grow with graph size:
+
+| Relations | Warm p50 | Warm p95 | SQLite sidecar | Build |
+|---:|---:|---:|---:|---:|
+| 1k | 2.6428 ms | 3.0516 ms | 0.5898 MiB | 27.40 ms |
+| 10k | 2.6079 ms | 2.9091 ms | 5.37 MiB | 148.08 ms |
+| 100k | 2.5645 ms | 2.8246 ms | 53.75 MiB | 1.559 s |
+| 1m | 2.6457 ms | 3.1088 ms | 544.76 MiB | 20.637 s |
+
+The graph also makes the local cost visible: 14, 194, 1,994, and 19,994
+considered edges took 0.20, 1.82, 18.08, and 194.14 ms. This is a local-frontier
+cost, not a claim that arbitrary high-degree nodes are constant-time.
+
+![Measured warm-query latency across persistent graph sizes](<docs/graphs/Screenshot 2026-07-14 at 20.15.45.png>)
+
+![Measured local-frontier latency versus considered edges](<docs/graphs/Screenshot 2026-07-14 at 20.22.39.png>)
+
+The following visual comparisons retain the supplied **hypothetical dense-LLM**
+reference curves for storage, training, load, and weights. They are not measured
+language-model runs, do not describe the Qwen result above, and do not compare
+accuracy. They illustrate a resource model alongside the measured MicroWorld
+SQLite sidecar/reopen/heap path.
+
+![Measured SQLite sidecar and hypothetical FP16 dense-model reference](<docs/graphs/Screenshot 2026-07-14 at 20.16.09.png>)
+
+![Measured MicroWorld build and hypothetical dense-model training reference](<docs/graphs/Screenshot 2026-07-14 at 20.16.42.png>)
+
+![Measured MicroWorld reopen and hypothetical dense-model load reference](<docs/graphs/Screenshot 2026-07-14 at 20.17.08.png>)
+
+![Measured extra Python heap and hypothetical dense-model weights reference](<docs/graphs/Screenshot 2026-07-14 at 20.18.49.png>)
+
+For methodology, full artifact paths, and caveats, see [persistent graph
+scaling](docs/benchmarks.md#persistent-graph-scaling-and-hypothetical-dense-llm-reference).
 
 ## High-Level Architecture
 
