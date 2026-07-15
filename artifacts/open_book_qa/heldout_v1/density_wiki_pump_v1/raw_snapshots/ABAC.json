@@ -1,0 +1,22 @@
+{
+  "title": "ABAC",
+  "normalized_title": "ABAC",
+  "pageid": 15976678,
+  "revision_id": 1256803471,
+  "timestamp": "2024-11-11T17:17:32Z",
+  "source_url": "https://en.wikipedia.org/wiki/ABAC",
+  "api_url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=extracts%7Crevisions%7Cinfo%7Clinks&explaintext=1&exsectionformat=plain&rvprop=ids%7Ctimestamp&inprop=url&plnamespace=0&pllimit=max&redirects=1&titles=ABAC",
+  "retrieved_at": "2026-07-15T13:01:22Z",
+  "raw_text": "ABAC or Abac may refer to:\n\nÀbac, a restaurant in Barcelona, Spain\nAbraham Baldwin Agricultural College, a public college in Tifton, Georgia\nAnti-bribery/anti-corruption solutions, see Foreign Corrupt Practices Act § Anti-bribery/anti-corruption (ABAC) solutions\nAssumption University (Thailand), formerly known as Assumption Business Administration College\nAttribute-based access control",
+  "raw_text_sha256": "b6ab5dfa903afeab33ba6d51d20ffcfe22dbd823a37f82fea624e35952945b89",
+  "license_note": "Wikipedia text is available under the Creative Commons Attribution-ShareAlike License unless otherwise noted; this local file is an untrusted source snapshot.",
+  "fetch_status": "success",
+  "error": "",
+  "links": [
+    "Abraham Baldwin Agricultural College",
+    "Assumption University (Thailand)",
+    "Attribute-based access control",
+    "Foreign Corrupt Practices Act",
+    "Àbac"
+  ]
+}

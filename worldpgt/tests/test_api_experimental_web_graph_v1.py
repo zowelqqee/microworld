@@ -61,6 +61,31 @@ def test_main_ui_overlay_composition_merges_multiple_campaign_graphs(tmp_path: P
     assert rows == [base_item, first_item, second_item]
 
 
+def test_startup_uses_explicit_graph_paths_without_discovering_other_campaigns(tmp_path: Path, monkeypatch):
+    base_path = tmp_path / "base.json"
+    selected_path = tmp_path / "selected.json"
+    composed_path = tmp_path / "composed.json"
+    base_path.write_text(json.dumps([{
+        "overlay_type": "overlay_definition", "subject": "Base", "definition": "base definition",
+    }]), encoding="utf-8")
+    selected_path.write_text(json.dumps([{
+        "overlay_type": "overlay_relation", "subject": "Heldout", "predicate": "used_for", "object": "testing",
+    }]), encoding="utf-8")
+    monkeypatch.setattr(server, "resolve_overlay", lambda _mode: (str(base_path), None))
+    monkeypatch.setattr(server, "_MAIN_UI_COMPOSED_OVERLAY_PATH", composed_path)
+    monkeypatch.setattr(server, "_available_experimental_web_graph_paths", lambda: (_ for _ in ()).throw(AssertionError("discovery must not run")))
+
+    server._startup(
+        "pump-dry-run",
+        experimental_graph_paths=[selected_path],
+        warm_phrase_graph_on_startup=False,
+    )
+
+    assert server._experimental_web_graph["paths"] == [str(selected_path)]
+    assert server._experimental_web_graph["item_count"] == 1
+    assert server._fact_count == 2
+
+
 def test_experimental_graph_merge_combines_aliases_and_independent_relation_sources():
     entities_and_relations = [
         {

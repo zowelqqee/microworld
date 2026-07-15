@@ -1,0 +1,29 @@
+{
+  "version": "heldout_v1",
+  "status": "blocked_before_run",
+  "run_count": 0,
+  "dataset_written": false,
+  "main_dataset_read_boundary": "relation_ids/evidence_ids only; questions, answers, templates, and failure artifacts were not used for selection",
+  "candidate_pool": {
+    "clean_subject_predicate_groups": 331,
+    "clean_group_record_count_distribution": {
+      "1": 330,
+      "2": 1
+    },
+    "clean_subject_predicate_group_count_distribution": {
+      "1": 331
+    },
+    "relation_density_distribution": {
+      "predicate_groups_per_subject": {
+        "1": 331
+      },
+      "subjects_with_1_predicate_group": 331,
+      "subjects_with_2_predicate_groups": 0,
+      "subjects_with_3_or_more_predicate_groups": 0
+    },
+    "subjects_with_at_least_2_clean_predicates": 0
+  },
+  "zero_overlap_candidate_pool": true,
+  "limitation": "The current overlay contains no subject with two distinct subject-predicate groups that are both disjoint from the main v2 dataset. A valid 20-case multi-evidence held-out stratum cannot be constructed without relation overlap or artificial overlay expansion.",
+  "action": "No MicroWorld or Qwen held-out run was performed. The one-shot held-out run remains unused."
+}

@@ -1,0 +1,556 @@
+[
+  {
+    "subject": "ABAC",
+    "surface_subject": "ABAC",
+    "normalized_subject": "abac",
+    "canonical_entity": "ABAC",
+    "canonical_resolution_status": "resolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "supports"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "A Comparative Study of Authorisation Mechanisms in Kubernetes-Based Service Platforms",
+      "https://doi.org/10.60097/acig/220492"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": "https://en.wikipedia.org/wiki/ABAC",
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ABSTRACT",
+    "surface_subject": "ABSTRACT",
+    "normalized_subject": "abstract",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "French Musicology and the Musical Press (1900–14): The Case of La revue musicale, Le mercure musical and La revue musicale SIM",
+      "https://doi.org/10.1080/02690403.2015.1075807"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Ac-Val",
+    "surface_subject": "Ac-Val",
+    "normalized_subject": "ac-val",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Simple pH-Triggered Control over Hydrogel Formation by Acetyl Valine",
+      "https://doi.org/10.20944/preprints202507.0854.v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ACCDB",
+    "surface_subject": "ACCDB",
+    "normalized_subject": "accdb",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "ACCDB: A Collection of Chemistry DataBases for Broad Computational Purposes",
+      "http://arxiv.org/abs/1809.01707v2"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ACCNNR",
+    "surface_subject": "ACCNNR",
+    "normalized_subject": "accnnr",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "supports"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Aligning regional and international biodiversity conventions to benefit butterfly conservation in Africa: A review",
+      "https://doi.org/10.53562/ajcb.85949"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ACRN",
+    "surface_subject": "ACRN",
+    "normalized_subject": "acrn",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Optimization of the Catalytic Activity of Ag@Cu2O Decorated on rGO for Organic Pollutant Degradation",
+      "https://doi.org/10.20944/preprints202311.1196.v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Adaptive training",
+    "surface_subject": "Adaptive training",
+    "normalized_subject": "adaptive training",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+      "http://arxiv.org/abs/2201.01574v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AetherWall",
+    "surface_subject": "AetherWall",
+    "normalized_subject": "aetherwall",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Countering AI-Enhanced DDoS Attacks",
+      "https://doi.org/10.4018/979-8-3373-5223-7.ch006"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Age-standardized",
+    "surface_subject": "Age-standardized",
+    "normalized_subject": "age-standardized",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Trends of alcohol-attributable deaths in Lithuania 2001–2021: epidemiology and policy conclusions",
+      "https://doi.org/10.1186/s12889-024-18237-y"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Aging research",
+    "surface_subject": "Aging research",
+    "normalized_subject": "aging research",
+    "canonical_entity": "Gerontology",
+    "canonical_resolution_status": "resolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Aging, Sociology of",
+      "https://doi.org/10.1002/9781405165518.wbeosa034.pub2"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": "https://en.wikipedia.org/wiki/Gerontology",
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AI-driven",
+    "surface_subject": "AI-driven",
+    "normalized_subject": "ai-driven",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Harnessing AI in Information Technology to Optimize Nanoparticle Synthesis via Photochemical Methods",
+      "https://doi.org/10.20944/preprints202409.1796.v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AI-Mandel",
+    "surface_subject": "AI-Mandel",
+    "normalized_subject": "ai-mandel",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Towards autonomous quantum physics research using LLM agents with access to intelligent tools",
+      "http://arxiv.org/abs/2511.11752v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AI-powered",
+    "surface_subject": "AI-powered",
+    "normalized_subject": "ai-powered",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Ethical AI: Towards Defining a Collective Evaluation Framework",
+      "http://arxiv.org/abs/2506.00233v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AICCE",
+    "surface_subject": "AICCE",
+    "normalized_subject": "aicce",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "AICCE: AI Driven Compliance Checker Engine",
+      "http://arxiv.org/abs/2604.03330v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Algebraic circuit complexity",
+    "surface_subject": "Algebraic circuit complexity",
+    "normalized_subject": "algebraic circuit complexity",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Quantifying artificial intelligence through algorithmic generalization",
+      "http://arxiv.org/abs/2411.05943v2"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Analysing learner corpora",
+    "surface_subject": "Analysing learner corpora",
+    "normalized_subject": "analysing learner corpora",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Japanese L2 corpora and SLA research",
+      "https://doi.org/10.1075/palart.9.06sak"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Analytic and geometric approach are",
+    "surface_subject": "Analytic and geometric approach are",
+    "normalized_subject": "analytic and geometric approach are",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Nega-$\\tilde Q$-representation of real numbers",
+      "http://arxiv.org/abs/1602.01507v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Another approach",
+    "surface_subject": "Another approach",
+    "normalized_subject": "another approach",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+      "http://arxiv.org/abs/2106.09691v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ANOVA",
+    "surface_subject": "ANOVA",
+    "normalized_subject": "anova",
+    "canonical_entity": "Analysis of variance",
+    "canonical_resolution_status": "resolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Influencia de la Inteligencia Artificial en los procesos de personalización del aprendizaje en la educación superior",
+      "https://doi.org/10.71068/asq6b765"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": "https://en.wikipedia.org/wiki/Analysis_of_variance",
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Applying a transdisciplinary approach to pedagogy",
+    "surface_subject": "Applying a transdisciplinary approach to pedagogy",
+    "normalized_subject": "applying a transdisciplinary approach to pedagogy",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "A Transdisciplinary Approach to the Study of Musical Phenomena: Fuzzy Set Theory and Its Application to Music Research and Educational Practice",
+      "https://doi.org/10.56620/rm.2025.3.027-048"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AR-in-a-Box",
+    "surface_subject": "AR-in-a-Box",
+    "normalized_subject": "ar-in-a-box",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "enables"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "AR-in-a-Box: A Structured 8-Step Framework for Cybersecurity Awareness",
+      "https://doi.org/10.19107/cybercon.2024.05"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "ARS-W",
+    "surface_subject": "ARS-W",
+    "normalized_subject": "ars-w",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Arcsine Ratio Sine Generalized Distributions with Applications to Biomedical and Engineering Data",
+      "https://doi.org/10.58496/mjcs/2025/065"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "artificial intelligence",
+    "surface_subject": "artificial intelligence",
+    "normalized_subject": "artificial intelligence",
+    "canonical_entity": "Artificial intelligence",
+    "canonical_resolution_status": "resolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [
+      "enables",
+      "supports",
+      "uses"
+    ],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Introduction To Statistics and Its Applications in Data Analytics and Artificial Intelligence",
+      "https://doi.org/10.46632/daai/3/5/5"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "Asymptotic methods and bootstrapping are",
+    "surface_subject": "Asymptotic methods and bootstrapping are",
+    "normalized_subject": "asymptotic methods and bootstrapping are",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "used_for"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "Cramer-von Mises tests for Change Points",
+      "http://arxiv.org/abs/2010.07072v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  },
+  {
+    "subject": "AutoGrad",
+    "surface_subject": "AutoGrad",
+    "normalized_subject": "autograd",
+    "canonical_entity": null,
+    "canonical_resolution_status": "unresolved_wikipedia_title",
+    "existing_clean_predicates": [
+      "uses"
+    ],
+    "predicates_touched_by_main": [],
+    "required_new_predicate": true,
+    "existing_clean_relation_count": 1,
+    "existing_source_ids": [
+      "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+      "http://arxiv.org/abs/2107.12244v1"
+    ],
+    "acquisition_goal": "find a new independently evidenced predicate group",
+    "selection_basis": "zero_overlap_subject_with_exactly_one_clean_predicate_group",
+    "canonical_source_url": null,
+    "surface_retained": true,
+    "canonical_is_additive": true
+  }
+]

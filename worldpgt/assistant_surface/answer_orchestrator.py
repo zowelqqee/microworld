@@ -57,6 +57,7 @@ from worldpgt.query_engine import executor as qe_executor
 from worldpgt.query_engine import plan_builder as qe_plan_builder
 from worldpgt.knowledge.wiki_memory_overlay_provider import WikiMemoryOverlayProvider
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.reasoning.graph_input import GraphInputLayer
 from worldpgt.assistant_surface.community_context import (
     CognitivePatternProvider,
     CommunityContextProvider,
@@ -166,10 +167,15 @@ def _cached_surface_index(
         snapshot_mtime_ns,
         snapshot_size,
     )
+    promoted_path = Path(promoted_overlay_path)
+    graph_items = json.loads(promoted_path.read_text(encoding="utf-8"))
     return EntitySurfaceIndex(
         accepted_overlay_path=_EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json",
-        promoted_overlay_path=Path(promoted_overlay_path),
+        promoted_overlay_path=promoted_path,
         snapshot_overlay_path=_EXPERIMENTS / "wiki_snapshot_ingestion_v1" / "snapshot_dry_run_overlay.json",
+        graph_input=GraphInputLayer.from_overlay_items(
+            graph_items if isinstance(graph_items, list) else ()
+        ),
     )
 
 

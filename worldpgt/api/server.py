@@ -67,6 +67,8 @@ from worldpgt.reasoning.pattern_store import load_patterns
 from worldpgt.reasoning.reasoning_adapter import try_answer_reasoning
 from worldpgt.reasoning.types import GraphPattern
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.reasoning.graph_input import GraphInputLayer
+from worldpgt.reasoning.relation_input_graph import default_relation_input_graph
 from worldpgt.web_search.live_cache import LiveSearchCache
 from worldpgt.knowledge_pump.audit_event_logger import log_audit_event
 from worldpgt.assistant_surface.community_context import (
@@ -329,12 +331,22 @@ def ask(req: AskRequest) -> AskResponse:
     # layer replaced the base text, try to expand a supported answer into an
     # inspectable multi-block plan over the local evidence graph.  A plan with
     # a single reliable link keeps the original short answer (only its trace
-    # is exposed); no plan means nothing changes at all.  Audits never enter
-    # this step, so a gap stays a gap.
+    # is exposed); no plan means nothing changes at all.
+    #
+    # A graph-input target may be present only in evidence relations, not in a
+    # declared entity/definition record.  In that narrow case the base route
+    # returns ``missing_knowledge`` even though the planner can prove a
+    # multi-edge answer.  Let that plan replace *only* this ordinary knowledge
+    # audit. Hard safety/privacy/current audits retain their fail-closed path.
     answer_plan_payload = None
+    graph_plan_may_recover_audit = (
+        answer.decision == "audit"
+        and answer.support_kind == "missing_knowledge"
+        and not answer.risk_flags
+    )
     if (
         req.enable_reasoning
-        and answer.decision == "answer"
+        and (answer.decision == "answer" or graph_plan_may_recover_audit)
         and (reasoning_result is None or reasoning_result.kind == "unsupported")
         and answer_text == answer.answer_text
     ):
@@ -347,6 +359,8 @@ def ask(req: AskRequest) -> AskResponse:
                 if rendered_plan:
                     answer_text = rendered_plan
                     support = "evidence_backed_answer_plan"
+                    if graph_plan_may_recover_audit:
+                        answer = _patch_decision(answer, "answer")
 
     # Optional think-aloud surface (presentation only — no behavior change).
     thinking = None
@@ -905,10 +919,29 @@ def _build_optional_answer_plan(question: str, semantic_query):
             ))
         if not targets:
             return None
+        from worldpgt.relation_extraction_v2.relation_policy import relation_intents_from_text
+        explicit_intents = relation_intents_from_text(question)
+        # The input graph is the source of paraphrase-to-predicate semantics.
+        # Preserve every denoted edge for coordinated questions; the legacy
+        # policy extractor remains as a complementary source for its existing
+        # controlled forms.
+        graph_intents = frozenset(default_relation_input_graph().resolve_all(
+            question,
+            entity_spans=(
+                (start, end)
+                for _surface, _canonical, start, end in _surface_index.find_in_text(question)
+            ) if _surface_index is not None else (),
+        ))
+        explicit_intents = explicit_intents | graph_intents
+        predicate_filter = (
+            explicit_intents if len(explicit_intents) > 1
+            else semantic_query.relation_intent
+        )
         return build_answer_plan(
             question,
             [],
             targets=targets,
+            predicate_filter=predicate_filter,
             prepared_edges=_experimental_evidence_edges(),
         )
     except Exception:
@@ -1007,6 +1040,8 @@ def _startup(
     community_context_path: str | None = None,
     cognitive_patterns_path: str | None = None,
     include_experimental_web_graph: bool = False,
+    experimental_graph_paths: Iterable[str | Path] | None = None,
+    warm_phrase_graph_on_startup: bool = True,
 ) -> None:
     global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
     global _inference_workspace, _graph_patterns, _pattern_index, _graph_reader
@@ -1030,8 +1065,12 @@ def _startup(
     _experimental_web_graph = {"enabled": False, "item_count": 0}
     _experimental_web_graph_signature = ()
     _startup_include_experimental_web_graph = include_experimental_web_graph
-    available_graph_paths = _available_experimental_web_graph_paths()
-    if include_experimental_web_graph and overlay_path is None and available_graph_paths:
+    available_graph_paths = (
+        tuple(Path(path) for path in experimental_graph_paths)
+        if experimental_graph_paths is not None
+        else _available_experimental_web_graph_paths()
+    )
+    if (include_experimental_web_graph or experimental_graph_paths is not None) and overlay_path is None and available_graph_paths:
         graph_items = _merge_experimental_graph_items([
             item
             for path in available_graph_paths
@@ -1093,6 +1132,7 @@ def _startup(
         accepted_overlay_path=_ACCEPTED_OVERLAY_PATH,
         promoted_overlay_path=Path(resolved_path),
         snapshot_overlay_path=_SNAPSHOT_OVERLAY_PATH,
+        graph_input=GraphInputLayer.from_overlay_items(_overlay_items),
     )
     # Discovered graph patterns are optional context for the reasoning layer —
     # loaded from the nightly artifact if present, empty (never fabricated) if
@@ -1107,7 +1147,8 @@ def _startup(
     # dialogue-v2 typed-demonstrative/role-descriptor question pays its
     # one-time spaCy-parsing training cost (~40-60s, dominated by community
     # context sentence parsing) inline on a live request.
-    default_phrase_graph()
+    if warm_phrase_graph_on_startup:
+        default_phrase_graph()
 
     print(
         f"[microworld-api] overlay={_overlay_mode}  overlay_items={_fact_count}  "

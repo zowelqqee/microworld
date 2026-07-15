@@ -12,7 +12,7 @@ import pytest
 from worldpgt.assistant_surface.question_router import route
 from worldpgt.entity_qa.entity_question_analyzer import analyze
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
-from worldpgt.relation_extraction_v2.relation_policy import relation_intent_from_text
+from worldpgt.relation_extraction_v2.relation_policy import relation_intent_from_text, relation_intents_from_text
 
 _ROOT = Path(__file__).resolve().parent.parent.parent
 _CLI = _ROOT / "worldpgt" / "experiments" / "ask_microworld_v1.py"
@@ -40,6 +40,22 @@ def test_relation_keyword_mapping_covers_system_predicates():
     }
     for text, expected in examples.items():
         assert relation_intent_from_text(text) == expected
+
+
+def test_relation_keyword_mapping_retains_coordinated_intents():
+    assert relation_intents_from_text(
+        "What does artificial intelligence support, and what is it used for?"
+    ) == frozenset({"supports", "used_for"})
+
+
+def test_coordinated_paraphrase_predicates_are_read_from_the_relation_input_graph():
+    from worldpgt.reasoning.relation_input_graph import default_relation_input_graph
+
+    graph = default_relation_input_graph()
+    assert graph.resolve_all(
+        "By whom was Adobe GoLive engineered, and for what application is Adobe GoLive employed?",
+        entity_spans=((12, 24), (65, 77)),
+    ) == ("developed_by", "used_for")
 
 
 def test_demo_questions_parse_to_semantic_queries():
@@ -79,6 +95,22 @@ def test_demo_questions_parse_to_semantic_queries():
             sq.query_type,
         ) == expected
         assert sq.confidence >= 0.75
+
+
+@pytest.mark.parametrize(
+    "question,predicate",
+    [
+        ("What does SpaceX make possible?", "enables"),
+        ("What capability does SpaceX provide?", "enables"),
+        ("What mechanism does SpaceX use?", "works_by"),
+        ("What is used by SpaceX?", "uses"),
+    ],
+)
+def test_paraphrase_predicate_shapes_resolve_through_relation_input_graph(question, predicate):
+    sq = parse_semantic_query(question)
+    assert sq.entity_a == "SpaceX"
+    assert sq.relation_intent == predicate
+    assert sq.unknown_position == "object"
 
 
 def test_semantic_parser_drives_analyzer_and_router():

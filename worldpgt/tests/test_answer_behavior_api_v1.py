@@ -90,6 +90,27 @@ def test_answer_plan_blocks_are_evidence_traceable_over_experimental_graph(
     assert payload["support"] == "evidence_backed_answer_plan"
 
 
+def test_graph_backed_plan_recovers_an_ordinary_missing_knowledge_audit(
+    experimental_client: TestClient,
+):
+    """Relation-only graph nodes must be able to answer without a definition.
+
+    ``FAIR`` is present in the experimental evidence graph but not as a
+    definition-backed base-QA entity.  The base route therefore audits; a
+    two-edge evidence plan is sufficient to replace that *ordinary* audit.
+    """
+    response = experimental_client.post(
+        "/ask",
+        json={"question": "What is known about FAIR?", "enable_reasoning": True},
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["decision"] == "answer"
+    assert payload["support"] == "evidence_backed_answer_plan"
+    assert len(payload["answer_plan"]["blocks"]) >= 2
+    assert "I don't have a definition" not in payload["answer"]
+
+
 def test_audit_stays_audit_and_never_carries_a_plan(experimental_client: TestClient):
     response = experimental_client.post(
         "/ask",

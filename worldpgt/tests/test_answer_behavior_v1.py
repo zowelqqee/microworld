@@ -137,6 +137,58 @@ def test_relation_diversity_prefers_a_new_relation_at_the_same_node():
     assert "relation_diversity" in plan.to_dict()["blocks"][1]["step"]["score"]
 
 
+def test_explicit_predicate_intent_prevents_unrelated_diversity_blocks():
+    graph = [
+        _edge("veltrix array", "enables", "calibrated gates"),
+        _edge("veltrix array", "supports", "diagnostic channels"),
+        _edge("veltrix array", "uses", "governance protocols"),
+    ]
+    plan = build_answer_plan(
+        "What does veltrix array enable?",
+        graph,
+        targets=["veltrix array"],
+        predicate_filter="enables",
+        max_blocks=3,
+    )
+    assert plan is not None
+    assert [block.step.edge.predicate for block in plan.blocks] == ["enables"]
+
+
+def test_explicit_multi_predicate_intent_keeps_each_requested_relation_only():
+    graph = [
+        _edge("veltrix array", "enables", "calibrated gates"),
+        _edge("veltrix array", "supports", "diagnostic channels"),
+        _edge("veltrix array", "uses", "governance protocols"),
+    ]
+    plan = build_answer_plan(
+        "What does veltrix array enable and support?",
+        graph,
+        targets=["veltrix array"],
+        predicate_filter=frozenset({"enables", "supports"}),
+        max_blocks=3,
+    )
+    assert plan is not None
+    assert {block.step.edge.predicate for block in plan.blocks} == {"enables", "supports"}
+
+
+def test_target_label_tokens_do_not_hide_a_distinct_object_entity():
+    # ``adobe`` occurs inside the target name, but it is still a different
+    # entity and must remain novel as the object of ``developed_by``.
+    graph = [
+        _edge("adobe golive", "developed_by", "adobe"),
+        _edge("adobe golive", "used_for", "computer graphics"),
+    ]
+    plan = build_answer_plan(
+        "By whom was Adobe GoLive engineered, and for what application is Adobe GoLive employed?",
+        graph,
+        targets=["adobe golive"],
+        predicate_filter=frozenset({"developed_by", "used_for"}),
+    )
+
+    assert plan is not None
+    assert {block.step.edge.predicate for block in plan.blocks} == {"developed_by", "used_for"}
+
+
 def test_every_block_is_traceable_to_evidence_and_sources():
     plan = build_answer_plan(_QUESTION, _connected_graph(), targets=["veltrix array"])
 

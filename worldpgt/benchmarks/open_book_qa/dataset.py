@@ -16,7 +16,7 @@ from typing import Iterable
 from worldpgt.api import server
 
 _DEICTIC = re.compile(
-    r"^(?:our|this|the proposed)\s+(?:technique|method|approach|system|framework)\b|^(?:it|we|the)$",
+    r"^(?:(?:our|my|we|us|i|this|these|those|that)\b|it$|they$|them$|the$)",
     re.I,
 )
 _SHORT_ALIAS = re.compile(r"^[A-Z0-9]{1,3}$")
@@ -39,6 +39,15 @@ _PARAPHRASES = {
     "developed_by": ("Who created {subject}?",),
 }
 _NEGATIVE_PREDICATES = ("founded_by", "runs_on", "developed_by", "uses", "enables", "supports")
+_MULTI_CLAUSES = {
+    "uses": "what does {subject} use",
+    "enables": "what does {subject} enable",
+    "supports": "what does {subject} support",
+    "runs_on": "what does {subject} run on",
+    "used_for": "what is {subject} used for",
+    "works_by": "how does {subject} work",
+    "developed_by": "who developed {subject}",
+}
 
 
 def _compact(value: object) -> str:
@@ -141,8 +150,48 @@ def build_dataset(overlay: str = "pump-dry-run+experimental-web-graph", *, seed:
     if len(candidates) < 150:
         raise RuntimeError(f"need at least 150 valid relations, found {len(candidates)}")
 
-    direct = [_case(row, question=_QUESTIONS[row["predicate"]].format(subject=row["subject"]), category="direct") for row in candidates[:100]]
-    paraphrase_source = candidates[100:]
+    by_subject: dict[str, list[dict]] = defaultdict(list)
+    for row in candidates:
+        by_subject[_norm(row["subject"])].append(row)
+    multi = []
+    for rows in by_subject.values():
+        # A generic "What is known about X?" cannot identify which two of a
+        # high-degree node's facts the evaluator expects. Pick one stable edge
+        # per predicate and ask explicitly for a *pair of distinct predicates*.
+        # The question therefore identifies its expected evidence bundle;
+        # neither the planner nor Qwen receives a hidden target pair.
+        by_predicate: dict[str, dict] = {}
+        for row in sorted(rows, key=relation_id):
+            predicate = str(row["predicate"])
+            if predicate in _MULTI_CLAUSES:
+                by_predicate.setdefault(predicate, row)
+        for left, right in combinations(sorted(by_predicate), 2):
+            selected = [by_predicate[left], by_predicate[right]]
+            primary = selected[0]
+            first_clause = _MULTI_CLAUSES[left].format(subject=primary["subject"])
+            question = (
+                first_clause[:1].upper() + first_clause[1:]
+                + ", and "
+                + _MULTI_CLAUSES[right].format(subject=primary["subject"])
+                + "?"
+            )
+            multi.append(_case(
+                primary, question=question, category="multi_evidence",
+                relations=selected, multi_kind="specified_distinct_predicates",
+            ))
+    rng.shuffle(multi)
+    # The overlay presently supports only this many non-ambiguous predicate
+    # pairs. Keeping the smaller stratum is more honest than manufacturing
+    # repeated generic questions with hidden expected edges.
+    multi = multi[:50]
+    if not multi:
+        raise RuntimeError("need at least one specified multi-evidence case")
+
+    direct_count = 250 - 50 - 50 - len(multi)
+    direct = [_case(
+        row, question=_QUESTIONS[row["predicate"]].format(subject=row["subject"]), category="direct",
+    ) for row in candidates[:direct_count]]
+    paraphrase_source = candidates[direct_count:]
     paraphrase = []
     for index, row in enumerate(paraphrase_source):
         templates = _PARAPHRASES.get(row["predicate"], ())
@@ -164,23 +213,7 @@ def build_dataset(overlay: str = "pump-dry-run+experimental-web-graph", *, seed:
             break
     if len(negative) < 50:
         raise RuntimeError("not enough safe negative contexts")
-
-    by_subject: dict[str, list[dict]] = defaultdict(list)
-    for row in candidates:
-        by_subject[_norm(row["subject"])].append(row)
-    multi = []
-    for rows in by_subject.values():
-        unique = list({relation_id(row): row for row in rows}.values())[:8]
-        # Emit deterministic 2-span bundles.  They are independent supported
-        # blocks from one named target and stay within the requested 2--4
-        # evidence-span limit; combinations avoid needing 50 distinct targets.
-        for selected in combinations(unique, 2):
-            primary = selected[0]
-            multi.append(_case(primary, question=f"What is known about {primary['subject']}?", category="multi_evidence", relations=list(selected), multi_kind="independent_supported_blocks"))
-    rng.shuffle(multi)
-    if len(multi) < 50:
-        raise RuntimeError(f"need 50 multi-evidence cases, found {len(multi)}")
-    cases = [*direct, *paraphrase, *negative, *multi[:50]]
+    cases = [*direct, *paraphrase, *negative, *multi]
     rng.shuffle(cases)
     fingerprint = sha256("\n".join(sorted(relation_id(row) + "\x1f" + _evidence(row) for row in candidates)).encode()).hexdigest()
     summary = {
@@ -188,6 +221,7 @@ def build_dataset(overlay: str = "pump-dry-run+experimental-web-graph", *, seed:
         "predicate_distribution": dict(Counter(predicate for case in cases for predicate in case["expected_predicate"])),
         "unique_subjects": len({case["expected_subject"] for case in cases}),
         "unique_evidence_spans": len({context for case in cases for context in case["contexts"]}),
+        "multi_evidence_question_contract": "two explicit, distinct relation predicates per question",
         "excluded_counts_by_reason": dict(Counter(item["reason"] for item in rejected)),
         "overlay": overlay, "overlay_fingerprint": fingerprint, "build_commit": _git_commit(),
         "generated_timestamp": datetime.now(timezone.utc).isoformat(), "random_seed": seed,

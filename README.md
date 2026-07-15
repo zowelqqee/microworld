@@ -193,27 +193,85 @@ cost, not a claim that arbitrary high-degree nodes are constant-time.
 
 ![Measured warm-query latency across persistent graph sizes](<docs/graphs/Screenshot 2026-07-14 at 20.15.45.png>)
 
-## Efficiency comparison: bounded runtime vs open-weight LLM
+## Matched-scale comparison: explicit-memory runtime vs small local LLM
 
-Bounded closed-KB lookup (MicroWorld) is not the same task as open-domain
-generation (a dense LLM). MicroWorld cannot answer paraphrased or open-domain
-questions outside its memory (see the open-book paraphrase and multi-evidence
-results above); the LLM can. This is an efficiency-per-scope comparison, not a
-quality or accuracy comparison.
+Both systems use the same device, the same questions, and the same evidence
+spans; this is a matched small-scale comparison for their respective resource
+classes. MicroWorld receives structured relations built by the pump from that
+evidence, while Qwen receives the same raw evidence spans as prompt context.
+Both are open-book: neither is evaluated from parametric/internal knowledge
+alone.
 
-| Metric | MicroWorld (measured, this repo) | Llama 3 8B (public model card) |
-|---|---|---|
-| Weights / index size | 544.76 MiB SQLite sidecar @ 1M relations | 16 GB (FP16 weights) |
-| Inference memory footprint | ~2.6 ms warm p50, no GPU | 18.44 GB VRAM (FP16, 1024-token context) |
-| Build/index time (this repo, this hardware) | 20.637 s @ 1M relations | not directly comparable — pretraining is a one-time cost on a corpus >15 trillion tokens; figure not publicly disclosed at FLOP-level by Meta |
-| Source | measured locally, see [docs/benchmarks.md](docs/benchmarks.md) | apxml.com Llama 3 8B model card; Meta release documentation |
+The local model is `mlx-community/Qwen2.5-0.5B-Instruct-4bit`. It is a
+small-scale model, comparable in spirit to MicroWorld's current data scale—not
+a comparison with large frontier LLMs (7B+). Larger-scale comparisons are out
+of scope until MicroWorld's training-data scale grows correspondingly.
 
-These are not the same kind of cost — MicroWorld's build is a re-runnable local
-index construction; LLM pretraining is a singular large-scale training run.
-They are listed for context, not as an equivalent unit.
+**Held-out validation (40 questions, unseen subjects/phrasings, not used in any prior fix development):**
 
-Sources: [apxml Llama 3 8B model card](https://apxml.com/models/llama-3-8b) and
-[official Meta Llama 3 8B model card on Hugging Face](https://huggingface.co/meta-llama/Meta-Llama-3-8B).
+| System | Category | Accuracy | Object recall | Unsupported | Provenance | p50 |
+|---|---|---:|---:|---:|---:|---:|
+| MicroWorld explicit graph runtime | Paraphrase | 60% | 60% | 10% | 90% | 12.133812500000001 ms |
+| MicroWorld explicit graph runtime | Multi-evidence implicit | 100% | 100% | 0% | 100% | 30.905708500000003 ms |
+| MicroWorld explicit graph runtime | Multi-evidence explicit | 100% | 100% | 0% | 100% | 21.571979 ms |
+| Qwen2.5-0.5B-Instruct 4-bit | Paraphrase | 70% | 74.16666666666667% | 0% | — | 297.1071665 ms |
+| Qwen2.5-0.5B-Instruct 4-bit | Multi-evidence implicit | 70% | 85% | 0% | — | 503.021979 ms |
+| Qwen2.5-0.5B-Instruct 4-bit | Multi-evidence explicit | 60% | 81.66666666666667% | 0% | — | 418.90168700000004 ms |
+
+Provenance is measured only for MicroWorld: the answer plan must reference the
+exact expected evidence-edge IDs. Qwen returns free text without edge-level
+attribution, so this column is not applicable (—), not zero. The measured
+[held-out comparison table](artifacts/open_book_qa/heldout_v2/comparison_table.csv)
+and [corpus summary](artifacts/open_book_qa/heldout_v2/dataset_summary.json)
+are the primary source of truth.
+
+### Dataset-specific results (not held-out — see caveat)
+
+These numbers come from the same dataset used during iterative fixing of the
+resolver and predicate-constrained planner. Where a held-out figure exists
+above, treat the held-out number as the valid generalization estimate — e.g.
+paraphrase dropped from 92% (dataset-specific) to 60% (held-out), indicating
+the higher figure partly reflected fitting to known template patterns rather
+than general capability. Direct and Negative have not yet been re-verified
+held-out; treat those two figures as provisional pending the same validation.
+
+| Category | MicroWorld accuracy |
+|---|---:|
+| Direct | 91.18% |
+| Negative | 100% |
+| Paraphrase | 92% |
+| Multi-evidence | 100% |
+
+### Known gap: paraphrase generalization and unsupported answers
+
+Held-out paraphrase is 60% for MicroWorld versus 70% for Qwen: MicroWorld
+trails on this category at matched scale. The root cause is predicate mapping
+tuned to known template patterns (see the [paraphrase breakdown](docs/benchmarks.md));
+it does not yet generalize as well to novel grammatical forms, including passive
+constructions and nominalizations, as a small generative model does.
+
+The 10% unsupported-answer rate on held-out paraphrase is a priority fix. It
+means the audit gate did not hold in one of ten cases even though the system's
+stated design principle is never to assert unsupported claims. This is an open
+correctness issue, not a minor caveat; see also [Known failure modes](#known-failure-modes).
+
+### Multi-evidence: held-out confirmed
+
+MicroWorld reached 100% on both implicit and explicit multi-evidence phrasing
+for held-out subjects not seen during resolver or planner development. This
+includes implicit multi-evidence questions that do not name the required
+relation types directly, the harder version of the task. The methodology and
+the initial relation-density limitation that made this held-out split infeasible
+before source-specific extraction are documented in the [held-out relation-density
+audit](artifacts/open_book_qa/heldout_v1/README.md) and the final [held-out v2
+corpus summary](artifacts/open_book_qa/heldout_v2/dataset_summary.json).
+
+At matched scale, MicroWorld's explicit-memory-with-an-audit-gate approach
+shows a validated, held-out-confirmed advantage on multi-evidence composition,
+an unvalidated but large apparent advantage on direct lookup and negative
+detection pending held-out confirmation, and a held-out-confirmed narrow
+disadvantage on paraphrase, with an open correctness issue (unsupported rate)
+to fix before that category is revisited.
 
 ## High-Level Architecture
 

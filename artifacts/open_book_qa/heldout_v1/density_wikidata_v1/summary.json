@@ -1,0 +1,14 @@
+{
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "canonical_targets_considered": 4,
+  "relation_count": 0,
+  "unresolved": [
+    {
+      "surface_subject": "ABAC",
+      "canonical_entity": "ABAC",
+      "reason": "exact_wikidata_item_not_found"
+    }
+  ]
+}

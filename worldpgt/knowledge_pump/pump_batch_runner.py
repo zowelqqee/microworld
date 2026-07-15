@@ -20,6 +20,7 @@ def run_fetch_batch(
     allow_network: bool,
     user_agent: str,
     delay_sec: float = 0.5,
+    include_links: bool = True,
 ) -> tuple[PumpBatchRecord, list[dict]]:
     started = utc_now()
     titles = [e.normalized_title for e in entries]
@@ -41,7 +42,10 @@ def run_fetch_batch(
             rows,
         )
 
-    client = MediaWikiClient(titles, allow_network=True, user_agent=user_agent, delay_sec=delay_sec)
+    client = MediaWikiClient(
+        titles, allow_network=True, user_agent=user_agent, delay_sec=delay_sec,
+        include_links=include_links,
+    )
     for title in titles:
         snapshot = client.fetch_page(title)
         fetched.append(title)
@@ -64,4 +68,3 @@ def run_fetch_batch(
         PumpBatchRecord(batch_index, titles, fetched, success, failed, ready, not_ready, network_calls, started, utc_now(), "completed"),
         rows,
     )
-

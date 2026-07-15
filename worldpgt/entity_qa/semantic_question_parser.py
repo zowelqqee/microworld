@@ -16,6 +16,7 @@ from typing import Optional
 from worldpgt.entity_qa.types import SemanticQuery
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
 from worldpgt.relation_extraction_v2.relation_policy import relation_intent_from_text
+from worldpgt.reasoning.relation_input_graph import default_relation_input_graph
 
 _EXPERIMENTS = Path(__file__).resolve().parent.parent / "experiments"
 _ACCEPTED_OVERLAY_PATH = _EXPERIMENTS / "accepted_wiki_memory_overlay_v1.json"
@@ -63,6 +64,7 @@ _INTERSECTION_RE = re.compile(
 _OPEN_QUERY_RE = re.compile(
     r"^(?:"
     r"tell\s+me\s+(?:about|everything\s+about|more\s+about|all\s+about)\s+(?P<a>.+?)|"
+    r"what\s+is\s+known\s+about\s+(?P<h>.+?)|"
     r"what\s+(?:do|can)\s+you\s+(?:know|tell\s+me)\s+about\s+(?P<b>.+?)|"
     r"what\s+can\s+you\s+tell\s+me\s+about\s+(?P<c>.+?)|"
     r"explain\s+(?P<x>.+?)|"
@@ -512,7 +514,13 @@ def parse_semantic_query(
         )
         subject = surface_index.resolve(raw_subject)
         if subject is None:
-            subject = entities[0] if entities else (raw_subject or None)
+            # ``What is known about X?`` is a request for X's graph
+            # neighbourhood.  It must enter only through a known graph/entity
+            # node, rather than turning a deictic phrase such as "our method"
+            # into a synthetic target.
+            subject = entities[0] if entities else (
+                None if open_match.group("h") is not None else (raw_subject or None)
+            )
         return SemanticQuery(
             entity_a=subject,
             entity_b=None,
@@ -547,8 +555,16 @@ def parse_semantic_query(
     # exact match returns None.
     _relation_confidence: list[float] = [0.0]
     _embedding_matched = False
-    relation = relation_intent_from_text(q)
-    if relation is not None:
+    input_graph = default_relation_input_graph()
+    graph_relations = input_graph.resolve_all(
+        q,
+        entity_spans=((start, end) for _surface, _canonical, start, end in mentions),
+    )
+    graph_relation = graph_relations[0] if graph_relations else None
+    relation = graph_relation or relation_intent_from_text(q)
+    if graph_relation is not None:
+        _relation_confidence[0] = 1.0
+    elif relation is not None:
         _relation_confidence[0] = 1.0
     elif not _EMBEDDING_SKIP_PREFIX_RE.match(q.strip()):
         verb_phrases = extract_verb_phrases(q)

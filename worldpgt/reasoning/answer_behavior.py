@@ -1077,6 +1077,7 @@ def build_answer_plan(
     overlay_items: list[dict],
     *,
     targets: list[str],
+    predicate_filter: str | frozenset[str] | None = None,
     max_blocks: int = _MAX_BLOCKS_DEFAULT,
     prepared_edges: (
         tuple[EvidenceEdge, ...] | PreparedEvidenceGraph | PersistentEvidenceGraph | None
@@ -1087,6 +1088,9 @@ def build_answer_plan(
 
     ``targets`` are the question's resolved entities (from the semantic parser
     or surface index) — this function never guesses targets from text shape.
+    ``predicate_filter`` is one or more explicit semantic intents.  It
+    constrains the plan to those relations rather than letting a general-answer
+    diversity bonus introduce unrelated predicates.
     ``prepared_edges`` may be a compatibility tuple from
     :func:`prepare_evidence_edges` or a :class:`PreparedEvidenceGraph` from
     :func:`prepare_evidence_graph`.  The graph form is the serving fast path:
@@ -1139,6 +1143,13 @@ def build_answer_plan(
     if not target_nodes:
         return None
 
+    allowed_predicates = (
+        frozenset({_norm(predicate_filter)})
+        if isinstance(predicate_filter, str)
+        else frozenset(_norm(predicate) for predicate in predicate_filter)
+        if predicate_filter is not None else frozenset()
+    )
+
     question_terms = _tokens(question)
     plan_nodes: list[str] = sorted(target_nodes)
     node_tokens: dict[str, frozenset[str]] = {n: _tokens(n) for n in plan_nodes}
@@ -1146,7 +1157,12 @@ def build_answer_plan(
     if instrumentation is not None:
         for node in plan_nodes:
             instrumentation.record_node(node)
-    covered_tokens: set[str] = set().union(*(node_tokens[n] for n in plan_nodes))
+    # A question can name a target whose label contains another, distinct
+    # entity (for example ``Adobe GoLive`` vs. developer ``Adobe``).  Object
+    # payload novelty is semantic fact content, so target-label tokens must
+    # not pre-cover it.  Coverage begins empty and is populated only by
+    # selected evidence spans/objects below.
+    covered_tokens: set[str] = set()
 
     blocks: list[ContentBlock] = []
     rejected: list[RejectedCandidate] = []
@@ -1168,6 +1184,8 @@ def build_answer_plan(
             if instrumentation is not None:
                 instrumentation.record_edge_scan(edge)
             if edge.evidence_id in selected_ids:
+                continue
+            if allowed_predicates and edge.predicate_norm not in allowed_predicates:
                 continue
             attachment = _find_attachment(
                 edge, plan_nodes, node_tokens, node_origin, target_nodes

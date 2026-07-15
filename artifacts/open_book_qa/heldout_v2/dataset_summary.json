@@ -1,0 +1,28 @@
+{
+  "version": "heldout_v2",
+  "total_cases": 40,
+  "cases_per_category": {
+    "multi_evidence_explicit": 10,
+    "multi_evidence_implicit": 10,
+    "paraphrase": 20
+  },
+  "main_relation_or_evidence_id_count": 183,
+  "heldout_relation_or_evidence_id_count": 74,
+  "zero_overlap_relation_ids": true,
+  "zero_overlap_evidence_ids": true,
+  "overlap_count": 0,
+  "expected_objects_are_complete_per_selected_subject_predicate_group": true,
+  "relation_density_distribution": {
+    "predicate_groups_per_subject": {
+      "2": 216
+    },
+    "subjects_with_1_predicate_group": 0,
+    "subjects_with_2_predicate_groups": 216,
+    "subjects_with_3_or_more_predicate_groups": 0
+  },
+  "clean_subject_predicate_groups": 432,
+  "clean_subjects": 216,
+  "status": "ready_for_one_shot_benchmark",
+  "source": "official_wikidata_structured_claims",
+  "frozen_before_question_generation": true
+}

@@ -52,6 +52,7 @@ class MediaWikiClient:
         timeout_sec: float = 20.0,
         delay_sec: float = 0.5,
         retries: int = 2,
+        include_links: bool = True,
     ) -> None:
         self.allowed_titles = set(allowed_titles)
         self.allow_network = allow_network
@@ -60,6 +61,7 @@ class MediaWikiClient:
         self.timeout_sec = timeout_sec
         self.delay_sec = delay_sec
         self.retries = retries
+        self.include_links = include_links
         self.network_calls = 0
         if self.allow_network and not is_meaningful_user_agent(self.user_agent):
             raise ValueError("network fetch requires a meaningful User-Agent with contact context")
@@ -117,7 +119,7 @@ class MediaWikiClient:
                 with urllib.request.urlopen(request, timeout=self.timeout_sec) as response:
                     body = response.read().decode("utf-8")
                 snapshot = self._snapshot_from_response(title, api_url, body)
-                if snapshot.fetch_status == "success":
+                if snapshot.fetch_status == "success" and self.include_links:
                     snapshot.links = self._fetch_remaining_links(
                         snapshot.normalized_title or title,
                         body,

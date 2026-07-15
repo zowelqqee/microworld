@@ -37,11 +37,16 @@ def _answer(case: dict, sequence: int) -> dict:
                 "audit_reason": None, "trace": None, "exception": repr(exc)}
 
 
-def run(dataset: Iterable[dict], *, warmups: int = 50, repeats: int = 5, seed: int = 42) -> tuple[list[dict], dict]:
+def run(dataset: Iterable[dict], *, warmups: int = 50, repeats: int = 5, seed: int = 42,
+        experimental_graph_paths: Iterable[str | Path] | None = None) -> tuple[list[dict], dict]:
     """Startup and warm queries are intentionally measured separately."""
     startup = time.perf_counter_ns()
-    server._startup("pump-dry-run", include_experimental_web_graph=True,
-                    community_context_path=None, cognitive_patterns_path=None)
+    server._startup("pump-dry-run", include_experimental_web_graph=experimental_graph_paths is None,
+                    experimental_graph_paths=experimental_graph_paths,
+                    community_context_path=None, cognitive_patterns_path=None,
+                    # Creative phrase-graph training is unrelated to factual
+                    # QA and would dominate cold startup in an isolated run.
+                    warm_phrase_graph_on_startup=False)
     startup_ms = (time.perf_counter_ns() - startup) / 1_000_000
     rows = list(dataset)
     if not rows:
@@ -63,7 +68,7 @@ def run(dataset: Iterable[dict], *, warmups: int = 50, repeats: int = 5, seed: i
     metadata = {"system": "MicroWorld explicit graph runtime", "startup_ms": startup_ms,
                 "warmup_queries": warmups, "repeats": repeats, "peak_incremental_python_heap_mib": peak / 1024**2,
                 "generated_timestamp": datetime.now(timezone.utc).isoformat(),
-                "overlay": "pump-dry-run+experimental-web-graph",
+                "overlay": "isolated-experimental-graph" if experimental_graph_paths is not None else "pump-dry-run+experimental-web-graph",
                 "persistent_sqlite": True}
     return results, metadata
 

@@ -11,6 +11,7 @@ from typing import Iterable
 from worldpgt.api import server
 from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.reasoning.graph_input import GraphInputLayer
 from worldpgt.reasoning.answer_behavior import build_answer_plan, prepare_persistent_evidence_graph
 from .dataset import load_experimental_relations, read_jsonl, relation_id
 from .evaluate import normalize
@@ -76,12 +77,13 @@ def enrich(cases: list[dict]) -> dict[str, dict]:
     # Deliberately do not call ``server._startup``: it also warms synthesis and
     # phrase-generation resources irrelevant to parser/planner diagnosis. The
     # inputs below are exactly the paths and relation filter the server uses.
+    relations = load_experimental_relations()
     surface_index = EntitySurfaceIndex(
         accepted_overlay_path=server._ACCEPTED_OVERLAY_PATH,
         promoted_overlay_path=server._MAIN_UI_COMPOSED_OVERLAY_PATH,
         snapshot_overlay_path=server._SNAPSHOT_OVERLAY_PATH,
+        graph_input=GraphInputLayer.from_overlay_items(relations),
     )
-    relations = load_experimental_relations()
     graph = prepare_persistent_evidence_graph(
         relations, Path("/tmp/open_book_qa_failure_analysis.sqlite"),
         source_fingerprint="open-book-qa-failure-analysis-v1",

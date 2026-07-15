@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "description": "Read-only semantic input graph. Phrase nodes denote canonical relation predicates.",
+  "nodes": [
+    {"id": "phrase:make_possible", "kind": "phrase", "surface": "make possible"},
+    {"id": "phrase:capability_provide", "kind": "phrase", "surface": "capability provide"},
+    {"id": "phrase:mechanism_use", "kind": "phrase", "surface": "mechanism use"},
+    {"id": "phrase:used_by", "kind": "phrase", "surface": "used by"},
+    {"id": "phrase:engineered", "kind": "phrase", "surface": "engineered"},
+    {"id": "phrase:employed", "kind": "phrase", "surface": "employed"},
+    {"id": "predicate:enables", "kind": "predicate", "predicate": "enables"},
+    {"id": "predicate:works_by", "kind": "predicate", "predicate": "works_by"},
+    {"id": "predicate:uses", "kind": "predicate", "predicate": "uses"},
+    {"id": "predicate:developed_by", "kind": "predicate", "predicate": "developed_by"},
+    {"id": "predicate:used_for", "kind": "predicate", "predicate": "used_for"}
+  ],
+  "edges": [
+    {"source": "phrase:make_possible", "predicate": "denotes", "target": "predicate:enables"},
+    {"source": "phrase:capability_provide", "predicate": "denotes", "target": "predicate:enables"},
+    {"source": "phrase:mechanism_use", "predicate": "denotes", "target": "predicate:works_by"},
+    {"source": "phrase:used_by", "predicate": "denotes", "target": "predicate:uses"},
+    {"source": "phrase:engineered", "predicate": "denotes", "target": "predicate:developed_by"},
+    {"source": "phrase:employed", "predicate": "denotes", "target": "predicate:used_for"}
+  ]
+}

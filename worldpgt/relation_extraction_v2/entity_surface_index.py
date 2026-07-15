@@ -22,6 +22,7 @@ from typing import Optional
 
 from worldpgt.knowledge.entity_type_classifier import classify_entity_type
 from worldpgt.knowledge.entity_types import canonicalize_entity_type
+from worldpgt.reasoning.graph_input import GraphInputLayer
 
 # Words that are too generic to be treated as entity surface forms.
 _BLOCKED_SURFACES = frozenset({
@@ -151,6 +152,7 @@ class EntitySurfaceIndex:
         promoted_overlay_path: Path,
         snapshot_overlay_path: Path,
         snapshot_manifest_path: Optional[Path] = None,
+        graph_input: GraphInputLayer | None = None,
     ) -> None:
         self._surface_to_canonical: dict[str, str] = {}
         self._canonical_to_type: dict[str, str] = {}
@@ -158,6 +160,14 @@ class EntitySurfaceIndex:
 
         for path in (accepted_overlay_path, promoted_overlay_path, snapshot_overlay_path):
             for surface, canonical in _overlay_entities(path):
+                if not _is_blocked(surface):
+                    self._surface_to_canonical.setdefault(surface, canonical)
+
+        # Graph-backed input is deliberately supplemental.  Declared entities
+        # and aliases above keep precedence; this layer only makes existing,
+        # evidence-graph node labels reachable by the parser/planner.
+        if graph_input is not None:
+            for surface, canonical in graph_input.node_surfaces:
                 if not _is_blocked(surface):
                     self._surface_to_canonical.setdefault(surface, canonical)
 

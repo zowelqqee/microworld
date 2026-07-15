@@ -394,3 +394,16 @@ def relation_intent_from_text(text: str) -> str | None:
         if re.search(pattern, normalized):
             return RELATION_KEYWORD_MAP[keyword]
     return None
+
+
+def relation_intents_from_text(text: str) -> frozenset[str]:
+    """Return every distinct canonical relation explicitly named in *text*."""
+
+    normalized = re.sub(r"\s+", " ", (text or "").lower().strip())
+    if not normalized:
+        return frozenset()
+    return frozenset(
+        RELATION_KEYWORD_MAP[keyword]
+        for keyword in _RELATION_KEYWORDS_BY_LENGTH
+        if re.search(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", normalized)
+    )

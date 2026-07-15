@@ -1,0 +1,14 @@
+{
+  "scope": "subjects in the zero-overlap held-out candidate pool",
+  "target_subject_count": 331,
+  "local_wikipedia_snapshot_count": 100,
+  "target_subjects_with_local_wikipedia_snapshot_title_match": 2,
+  "prior_candidate_count": 313,
+  "prior_relation_candidate_count": 259,
+  "by_gate_outcome": {
+    "quarantined_open_web_relation_requires_source_specific_extractor": 259,
+    "rejected_open_web_subject_not_source_title": 54
+  },
+  "interpretation": "The pool lacks multi-predicate density because the current public-source gate intentionally does not admit generic extracted relations from abstracts. These candidates remain proposal-only and are not evidence for the held-out set.",
+  "next_action": "Target existing subjects with a source-specific extractor or independently sourced structured evidence; retain the existing precision boundary. A local Wikipedia re-extraction alone can address only 2 of 331 current targets because this held-out overlay is sourced from the open-web evidence-grounded lane."
+}

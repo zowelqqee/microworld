@@ -25,6 +25,10 @@ def test_dataset_is_deterministic_and_excludes_deictic(monkeypatch):
     assert one[2]["total_cases"] == 250
     assert all("our technique" not in case["expected_subject"].casefold() for case in one[0])
     assert any(item["reason"] == "deictic_node" for item in one[1])
+    multi = [case for case in one[0] if case["category"] == "multi_evidence"]
+    assert all(len(set(case["expected_predicate"])) == 2 for case in multi)
+    assert len({case["question"] for case in multi}) == len(multi)
+    assert one[2]["multi_evidence_question_contract"] == "two explicit, distinct relation predicates per question"
 
 
 def test_direct_questions_and_negative_contexts_are_evidence_scoped(monkeypatch):
@@ -38,6 +42,24 @@ def test_direct_questions_and_negative_contexts_are_evidence_scoped(monkeypatch)
         if case["category"] == "negative":
             assert case["expected_objects"] == []
             assert case["expected_predicate"][0].replace("_", " ") not in " ".join(case["contexts"]).casefold()
+
+
+def test_multi_evidence_cases_are_question_identifiable(monkeypatch):
+    rows = [_relation(f"System {i}", "uses", f"object {i}") for i in range(200)]
+    rows.extend(_relation(f"System {i}", "enables", f"capability {i}") for i in range(60))
+    monkeypatch.setattr(ds, "load_experimental_relations", lambda overlay: rows)
+
+    cases, _, _ = ds.build_dataset(seed=7)
+    multi = [case for case in cases if case["category"] == "multi_evidence"]
+
+    assert multi
+    assert len({case["question"] for case in multi}) == len(multi)
+    for case in multi:
+        assert len(case["relation_ids"]) == 2
+        assert len(set(case["expected_predicate"])) == 2
+        for predicate in case["expected_predicate"]:
+            clause = ds._MULTI_CLAUSES[predicate].format(subject=case["expected_subject"])
+            assert clause.casefold() in case["question"].casefold()
 
 
 def test_qwen_prompt_and_exact_unknown_with_mocked_model():
