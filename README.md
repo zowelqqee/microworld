@@ -202,10 +202,11 @@ evidence, while Qwen receives the same raw evidence spans as prompt context.
 Both are open-book: neither is evaluated from parametric/internal knowledge
 alone.
 
-The local model is `mlx-community/Qwen2.5-0.5B-Instruct-4bit`. It is a
-small-scale model, comparable in spirit to MicroWorld's current data scale—not
-a comparison with large frontier LLMs (7B+). Larger-scale comparisons are out
-of scope until MicroWorld's training-data scale grows correspondingly.
+The original matched-scale comparison used
+`mlx-community/Qwen2.5-0.5B-Instruct-4bit`. A later scale-curve experiment ran
+the same frozen material and generation protocol with 3B and 7B variants. This
+is still a narrow comparison over supplied evidence, not a broad comparison
+with frontier language models or open-domain systems.
 
 **Held-out validation (40 questions, unseen subjects/phrasings, not used in any prior fix development):**
 
@@ -229,6 +230,36 @@ attribution, so this column is not applicable (—), not zero. The measured
 [held-out comparison table](artifacts/open_book_qa/heldout_v2/comparison_table.csv)
 and [corpus summary](artifacts/open_book_qa/heldout_v2/dataset_summary.json)
 are the primary source of truth.
+
+### Final comparison across the completed research track
+
+The table deliberately keeps dataset-specific and held-out evidence separate.
+`Direct` and `Negative` use the 250-case `main_dataset`, which was used during
+iterative development; 7B did not complete that run. The remaining rows use
+the frozen `heldout_v2` set. Values are answer accuracy copied without favorable
+rounding from the committed [scale-curve table](artifacts/open_book_qa/scale_curve_v1/comparison_table.csv)
+and [final report](artifacts/open_book_qa/scale_curve_v1/final_report.md).
+
+| Category | MicroWorld | Qwen 0.5B | Qwen 3B | Qwen 7B | Status |
+|---|---:|---:|---:|---:|---|
+| Direct | 0.98 | 0.65 | 0.68 | — (not completed) | dataset-specific |
+| Negative | 1.00 | 0.08 | 0.98 | — (not completed) | dataset-specific |
+| Multi-evidence (explicit) | 1.00 | 0.60 | 0.70 | 0.00 | held-out |
+| Multi-evidence (implicit) | 1.00 | 0.70 | 0.90 | 0.70 | held-out |
+| Paraphrase | 1.00 | 0.70 | 0.50 | 0.15 | held-out, post-fix |
+
+**Key finding: non-monotonic scaling behavior.** Larger Qwen models followed
+the strict no-guess instruction more literally. That sharply improved negative
+detection, while causing paraphrase and explicit multi-evidence accuracy to
+collapse on passive-voice reformulations whose predicates differed from the
+surface wording in the evidence. Implicit multi-evidence peaked at 3B and then
+declined at 7B. This is an observed interaction among model scale, the strict
+abstention prompt, and these frozen datasets—not a general claim that larger
+models are less capable.
+
+MicroWorld's negative detection ceiling (1.00) was already reached before this
+comparison began — apparent gap closure with Qwen at scale reflects Qwen
+approaching that ceiling, not architectural convergence.
 
 ### Dataset-specific results (not held-out — see caveat)
 
@@ -299,12 +330,12 @@ the main 250-case dataset is unchanged in every metric (negative accuracy 100%
 across 50 cases), and the independent set declines all 20 negative cases where
 Qwen answers all 20.
 
-**Honest caveat:** independent_v1 carries a 25% unsupported rate that this work
-did **not** change — it is identical before and after the fix, on the same four
-questions. The cause is a pre-existing renderer fan-out (asking for a founder
-also returns the headquarters); every emitted statement is cited to a real graph
-edge, so it is not a hallucination, but the extra edge falls outside that case's
-supplied evidence contexts. Out of scope for this change and tracked separately.
+**Fan-out follow-up:** the targeted intent-cue fix reduced independent_v1's
+unsupported rate from 25% to 6.25% while holding answer accuracy at 87.5%; all
+other measured sets stayed unchanged. The remaining flagged case asks for a
+many-valued `used_for` relation while the dataset expects only one of two valid
+objects. It is a same-predicate expected-set mismatch, not foreign-predicate
+fan-out. See the [fan-out closing report](artifacts/open_book_qa/renderer_fanout_fix_v1/final_report.md).
 
 ### Multi-evidence: held-out confirmed
 

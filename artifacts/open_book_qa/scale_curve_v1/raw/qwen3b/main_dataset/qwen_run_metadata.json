@@ -1,0 +1,10 @@
+{
+  "system": "Qwen2.5-0.5B-Instruct 4-bit",
+  "model": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+  "startup_ms": 1725.692709,
+  "warmup_queries": 2,
+  "repeats": 3,
+  "generated_timestamp": "2026-07-17T19:53:37.468107+00:00",
+  "ttft_available": false,
+  "note": "MLX generate API did not expose TTFT; recorded as null rather than estimated."
+}
