@@ -1,0 +1,4962 @@
+[
+  {
+    "subject": "ABAC",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ABSTRACT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Ac-Val",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ACCDB",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ACCNNR",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ACRN",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Adaptive training",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AetherWall",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Age-standardized",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Aging research",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q96698317",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 2,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P407",
+      "P495"
+    ],
+    "new_schema_property_ids": [
+      "P407",
+      "P495"
+    ]
+  },
+  {
+    "subject": "AI-driven",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AI-Mandel",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AI-powered",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AICCE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Algebraic circuit complexity",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Analysing learner corpora",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Analytic and geometric approach are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Animals and Climate Change",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Another approach",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ANOVA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Application: Quantum Data Encryption",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Applying a transdisciplinary approach to pedagogy",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AR-in-a-Box",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ARS-W",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "artificial intelligence",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Artificial Intelligence and the Law",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Arts Education Research",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Asymptotic methods and bootstrapping are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AutoGrad",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q107382428",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 2,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P275",
+      "P348"
+    ],
+    "new_schema_property_ids": [
+      "P275",
+      "P348"
+    ]
+  },
+  {
+    "subject": "Automated formalization of mathematics",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Automatic differentiation is",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "AutoSlim",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Back-Propagation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "BAMD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "BAMM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q107432674",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 6,
+    "new_schema_property_group_count": 6,
+    "content_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879",
+      "P3880",
+      "P407"
+    ],
+    "new_schema_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879",
+      "P3880",
+      "P407"
+    ]
+  },
+  {
+    "subject": "Berlioz occasionally",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bi-GRU",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bi-temporal",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bi2Se3",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Black-Box",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "BLISS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Blockchain",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bootstrap-CURE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bridging these interpretations",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Bronx-based",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "BTCChat",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "C-sets",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CAM5",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CASE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Cast forged or welded gears are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CCVAF",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CD-adapco",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q132383",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 7,
+    "new_schema_property_group_count": 3,
+    "content_property_ids": [
+      "P1056",
+      "P159",
+      "P17",
+      "P355",
+      "P571",
+      "P576",
+      "P740"
+    ],
+    "new_schema_property_ids": [
+      "P571",
+      "P576",
+      "P740"
+    ]
+  },
+  {
+    "subject": "CEMP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CERTIFAI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ChargE3Net",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Chemotaxis",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q658145",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 6,
+    "new_schema_property_group_count": 5,
+    "content_property_ids": [
+      "P1542",
+      "P2352",
+      "P361",
+      "P3719",
+      "P527",
+      "P828"
+    ],
+    "new_schema_property_ids": [
+      "P1542",
+      "P2352",
+      "P3719",
+      "P527",
+      "P828"
+    ]
+  },
+  {
+    "subject": "CISM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CKKS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q136705699",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 2,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P138",
+      "P2579"
+    ],
+    "new_schema_property_ids": [
+      "P138",
+      "P2579"
+    ]
+  },
+  {
+    "subject": "Classical physics",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q81745",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 3,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P361",
+      "P461",
+      "P527"
+    ],
+    "new_schema_property_ids": [
+      "P461",
+      "P527"
+    ]
+  },
+  {
+    "subject": "Clifford algebras are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Climate Change and Agriculture",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Climate Change and You",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Clinically relevant metrics were",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CM-5",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CNNs",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q77877999",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 4,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P1448",
+      "P1454",
+      "P159",
+      "P17"
+    ],
+    "new_schema_property_ids": [
+      "P1448",
+      "P1454"
+    ]
+  },
+  {
+    "subject": "CO2-TPD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "COFs",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Computer simulations were",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Confidence aware abstention",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Contemporary psychological research increasingly",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Conventional particleboard industry",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "convolutional neural network",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Corneau",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "COSMO-type",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "COVID-19",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Creativity and Dance Education Research",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CVAE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q2998577",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 9,
+    "new_schema_property_group_count": 8,
+    "content_property_ids": [
+      "P1001",
+      "P1813",
+      "P2139",
+      "P361",
+      "P457",
+      "P571",
+      "P793",
+      "P825",
+      "P92"
+    ],
+    "new_schema_property_ids": [
+      "P1001",
+      "P1813",
+      "P2139",
+      "P457",
+      "P571",
+      "P793",
+      "P825",
+      "P92"
+    ]
+  },
+  {
+    "subject": "CYBERSECURITY MANAGEMENT OF IT PRODUCTS",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Cybersecurity of Air Force",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Cybersecurity planning",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "CYSEC",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DABFT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DAMBE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DARWIN",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Data collection",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Data-driven",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q5227278",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Debiasing group graphical lasso estimates",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Declarative modeling",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DeepSeek-R1",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q131914874",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 12,
+    "new_schema_property_group_count": 8,
+    "content_property_ids": [
+      "P127",
+      "P13571",
+      "P138",
+      "P178",
+      "P2283",
+      "P275",
+      "P348",
+      "P366",
+      "P495",
+      "P571",
+      "P577",
+      "P6216"
+    ],
+    "new_schema_property_ids": [
+      "P13571",
+      "P138",
+      "P275",
+      "P348",
+      "P495",
+      "P571",
+      "P577",
+      "P6216"
+    ]
+  },
+  {
+    "subject": "Defining Artificial Intelligence",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DENIM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Desai",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Descriptive statistics and logistic regression were",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Detection of a low-energy break",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Developmental Comparisons in Language Acquisition",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Digital agriculture",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q60760664",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DIPL",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Direct cinema",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q1323308",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 1,
+    "content_property_ids": [
+      "P5008"
+    ],
+    "new_schema_property_ids": [
+      "P5008"
+    ]
+  },
+  {
+    "subject": "Disaster Economics",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Disk chemistry also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Disseminating research data in this form",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "distributed energy resources",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DL-based",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DPoEV",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DPQA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "DSrepair",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "E Groups",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Each side",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Early detection of intrapartum risks",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Easy-Edu",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "EBSU",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Economic Theory and Economic History",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "EDCIM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Education Research Beyond Cyborg Subjectivities",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Elliptic curve cryptography",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q1048911",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 2,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P2283",
+      "P361"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "EMBER",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Energy Drink Consumption Among Papuan Athletes",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Epidemiology",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Epilogue",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ERCOT-like",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ESEG",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ETCs",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Evaluation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Every economic activity",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Evidence from pathological cases",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "EVLP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Exploring terminology in this way",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "F1-score",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Field experimentation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Finite simulation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "First",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Flimmer thus",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Fourier-space",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "FRAME",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "FrontierMath",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q140133892",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Functor lifting along a fibration is",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Fuzzy logic",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "FWTCS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "G-HFD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Game-theoretic",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Geom3D",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Gephi is",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "GLiM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "GN-VBC",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Gradient flow decomposition",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "graph neural network",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q107750691",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P366"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "HAIM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Hamiltonian reshaping",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "HDF5",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q61080677",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 15,
+    "new_schema_property_group_count": 11,
+    "content_property_ids": [
+      "P1072",
+      "P1073",
+      "P1163",
+      "P1195",
+      "P178",
+      "P2283",
+      "P275",
+      "P277",
+      "P306",
+      "P348",
+      "P366",
+      "P3931",
+      "P571",
+      "P6216",
+      "P767"
+    ],
+    "new_schema_property_ids": [
+      "P1072",
+      "P1073",
+      "P1163",
+      "P1195",
+      "P275",
+      "P277",
+      "P348",
+      "P3931",
+      "P571",
+      "P6216",
+      "P767"
+    ]
+  },
+  {
+    "subject": "High obliquity",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "high resolution semantic change detection",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "HITL",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "HotFuzz",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "HP2C-DT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Human Geography",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Hydroponics requires very little space",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ICON",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "IMT-2030",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "In every case",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Inner-Line Reserve Forest",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "InsDif",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "International Law in National Legal Systems",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "International study also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Internet Control Message Protocol",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q13162",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 6,
+    "new_schema_property_group_count": 5,
+    "content_property_ids": [
+      "P1535",
+      "P156",
+      "P1641",
+      "P361",
+      "P571",
+      "P5805"
+    ],
+    "new_schema_property_ids": [
+      "P1535",
+      "P156",
+      "P1641",
+      "P571",
+      "P5805"
+    ]
+  },
+  {
+    "subject": "Internet of Things",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Internet-like",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Introduction to Molecular Biology of RNA",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Introduction: Culture/Sociology/Sociology of Culture/Cultural Sociology",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "IoT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q96708468",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 9,
+    "new_schema_property_group_count": 7,
+    "content_property_ids": [
+      "P123",
+      "P275",
+      "P407",
+      "P485",
+      "P495",
+      "P580",
+      "P6216",
+      "P8875",
+      "P921"
+    ],
+    "new_schema_property_ids": [
+      "P275",
+      "P407",
+      "P485",
+      "P495",
+      "P580",
+      "P6216",
+      "P8875"
+    ]
+  },
+  {
+    "subject": "IVGdirect",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Judeo-Romance Linguistics (RLE Linguistics E: Indo-European Linguistics)",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Karminskyi actively",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "KDD-Cup99",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "KGLiDS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Klebanov",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "KMath",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Knickerbocker-inspired",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "KoroT-3E",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "KRAKENS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Kullback-Leibler",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LAMMPS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q4042577",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 7,
+    "new_schema_property_group_count": 4,
+    "content_property_ids": [
+      "P178",
+      "P275",
+      "P277",
+      "P306",
+      "P348",
+      "P366",
+      "P6216"
+    ],
+    "new_schema_property_ids": [
+      "P275",
+      "P277",
+      "P348",
+      "P6216"
+    ]
+  },
+  {
+    "subject": "Large Language Model",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q115305900",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 8,
+    "new_schema_property_group_count": 6,
+    "content_property_ids": [
+      "P12861",
+      "P1813",
+      "P2283",
+      "P2354",
+      "P366",
+      "P461",
+      "P5008",
+      "P527"
+    ],
+    "new_schema_property_ids": [
+      "P12861",
+      "P1813",
+      "P2354",
+      "P461",
+      "P5008",
+      "P527"
+    ]
+  },
+  {
+    "subject": "LEAP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LEGO",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LF1700A",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Lisovsky",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Liu also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LLaVul",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LLM-driven",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LLteacher",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "LogAI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Logging of all cloud computing events",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Luminous Philosophy",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "M3SA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MACI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MalGPT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Marine biodiversity",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Martin-Baro",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Mat3ra-2D",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Materials Science and Applied Chemistry IV",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Mathematics",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MathNet",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q6787303",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 9,
+    "new_schema_property_group_count": 8,
+    "content_property_ids": [
+      "P1113",
+      "P136",
+      "P2437",
+      "P449",
+      "P495",
+      "P580",
+      "P582",
+      "P840",
+      "P921"
+    ],
+    "new_schema_property_ids": [
+      "P1113",
+      "P136",
+      "P2437",
+      "P449",
+      "P495",
+      "P580",
+      "P582",
+      "P840"
+    ]
+  },
+  {
+    "subject": "MAVIS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Mayer",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MCBSG",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MCMR",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Meltwater flushing through cracks",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MetaChem",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MIRAI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ModelingBench also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Monetary policy",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q178476",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "MoRSE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Most Significant Change",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Multi-Mission",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Multimodal remote sensing",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Nanoscale electrostatic control of oxide interfaces",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q53297381",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 9,
+    "new_schema_property_group_count": 7,
+    "content_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P407",
+      "P433",
+      "P478",
+      "P50",
+      "P577",
+      "P921"
+    ],
+    "new_schema_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P407",
+      "P433",
+      "P478",
+      "P577"
+    ]
+  },
+  {
+    "subject": "NASA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Nature, Freedom, History",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "NB2Slides",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "NIDS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q109576421",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 4,
+    "new_schema_property_group_count": 2,
+    "content_property_ids": [
+      "P131",
+      "P17",
+      "P576",
+      "P625"
+    ],
+    "new_schema_property_ids": [
+      "P576",
+      "P625"
+    ]
+  },
+  {
+    "subject": "NIST",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Nitrogen fertilizer production",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "NOMAD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Noteworthy publications include",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Numerical results are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Nyzhankivsky",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "O-MAGIC",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "OCPM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "OMat24",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "One approach",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "One class of tests",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "One implementation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "One version of the app",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "One wave-packet preparation method",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Online-based",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Open University",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q6755402",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 1,
+    "content_property_ids": [
+      "P2354"
+    ],
+    "new_schema_property_ids": [
+      "P2354"
+    ]
+  },
+  {
+    "subject": "OpenMEE also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "OpenSOC-AI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "OPRF",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Optical Character Recognition",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Otherwise the paper should",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Over a hundred",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Over-parameterization",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "PBAEG",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "PDB2AR",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Philosophy of Artificial Intelligence",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": "Q2464338",
+    "resolution_status": "resolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Phylogenetic evidence strongly",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Physiological computing",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q59589305",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 8,
+    "new_schema_property_group_count": 7,
+    "content_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P407",
+      "P433",
+      "P478",
+      "P50",
+      "P577"
+    ],
+    "new_schema_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P407",
+      "P433",
+      "P478",
+      "P577"
+    ]
+  },
+  {
+    "subject": "PIPRECIA-S",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "PKE-DET",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Plutarch",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Political Science and Political History",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "POMP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q37011122",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 6,
+    "new_schema_property_group_count": 6,
+    "content_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879",
+      "P3880",
+      "P5323"
+    ],
+    "new_schema_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879",
+      "P3880",
+      "P5323"
+    ]
+  },
+  {
+    "subject": "Possible Future Impacts of Artificial Intelligence",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Predictive analytics",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q1053367",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 3,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P2283",
+      "P361",
+      "P366"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Previous work",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Privacy-preserving",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ProbCT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Processing cellulose into commercial products",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Progressivism",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q821102",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 1,
+    "content_property_ids": [
+      "P461"
+    ],
+    "new_schema_property_ids": [
+      "P461"
+    ]
+  },
+  {
+    "subject": "PyOptInterface",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Python-based",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Q-BEAST",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "QADQN",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "QAHM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "QK-LSTM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "QNN-ZTF",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Quantum Entanglement and Teleportation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Quantum Fields and Their Excitations",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Quantum neural networks",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Quantum Physics",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Quntur",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Qwen2",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RADS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RAGRecon",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Real-time",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q347066",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P2283"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Recent legislation on cybersecurity obviously",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Reconfigurable intelligent surface technology",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Reducing computing requirements",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Referring to the",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "REGAI",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q137638949",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 1,
+    "content_property_ids": [
+      "P495"
+    ],
+    "new_schema_property_ids": [
+      "P495"
+    ]
+  },
+  {
+    "subject": "Reinforcement Learning",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "REME",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "REML",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q111770374",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 4,
+    "new_schema_property_group_count": 4,
+    "content_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879"
+    ],
+    "new_schema_property_ids": [
+      "P1705",
+      "P282",
+      "P3878",
+      "P3879"
+    ]
+  },
+  {
+    "subject": "Remote sensing change detection",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Renewable Energy Technologies I",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Research within mathematics and climate science",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Rethinking the Orality-Literacy Paradigm in Musicology",
+    "cohorts": [
+      "openalex_accepted_2"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RETINA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "retrieval-augmented generation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q121362277",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 2,
+    "new_schema_property_group_count": 1,
+    "content_property_ids": [
+      "P1557",
+      "P2283"
+    ],
+    "new_schema_property_ids": [
+      "P1557"
+    ]
+  },
+  {
+    "subject": "RGAKFD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RICE-N",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Risk analysis",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RLOP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "RMIT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "ROAM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Savytska",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SBVFL",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "scanning transmission electron microscopy",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SciServer",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Screen-reader",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Selected astronomical image processing algorithms are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Selected purposive sampling",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Self-Consistency",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Seminal",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SENSE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Several key adjustment values were",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SF-36",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q133549",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SHAZAM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SIMPLE-ICS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SISA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SMAF",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SOAR",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Sociology of medicine",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Some chamber and vocal",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Some examples of these",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SOMIT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q107491355",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 9,
+    "new_schema_property_group_count": 9,
+    "content_property_ids": [
+      "P1552",
+      "P175",
+      "P2635",
+      "P264",
+      "P291",
+      "P407",
+      "P437",
+      "P577",
+      "P7937"
+    ],
+    "new_schema_property_ids": [
+      "P1552",
+      "P175",
+      "P2635",
+      "P264",
+      "P291",
+      "P407",
+      "P437",
+      "P577",
+      "P7937"
+    ]
+  },
+  {
+    "subject": "SpecFi",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SPSS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q181596",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 12,
+    "new_schema_property_group_count": 8,
+    "content_property_ids": [
+      "P1072",
+      "P1073",
+      "P178",
+      "P275",
+      "P306",
+      "P348",
+      "P366",
+      "P400",
+      "P571",
+      "P6104",
+      "P6216",
+      "P7861"
+    ],
+    "new_schema_property_ids": [
+      "P1072",
+      "P1073",
+      "P275",
+      "P348",
+      "P571",
+      "P6104",
+      "P6216",
+      "P7861"
+    ]
+  },
+  {
+    "subject": "SSC-CoT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Standard descriptive statistics were",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Stata software was",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Statistical parametric mapping",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "STL-ANN",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "STRIATUM-CTF",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "STudieS",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q9347372",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P361"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Subs-BOM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Such unusual magnetotransport",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "SUMER",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Suppose for a moment that nature",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "sweet clover",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "TDOA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "TE-piRNA",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Teacher Education Research",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Terrorism Economics",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Textural evidence also",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The activity is self-contained",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The approach foc",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The Economics of Superstars",
+    "cohorts": [
+      "openalex_accepted_2"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The fuel cells and electrolyzers are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The Future of International Trade",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The Intellectual History of Artificial Intelligence",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The Mathematics of Mathematics",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The micro- and macro-level modeling",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "The Sociology of Sociology",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": "Q60360505",
+    "resolution_status": "resolved_wikidata_exact",
+    "content_property_group_count": 6,
+    "new_schema_property_group_count": 6,
+    "content_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P433",
+      "P478",
+      "P577"
+    ],
+    "new_schema_property_ids": [
+      "P1433",
+      "P2093",
+      "P304",
+      "P433",
+      "P478",
+      "P577"
+    ]
+  },
+  {
+    "subject": "Thefederation",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Themis",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Tianhe-2",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q7800177",
+    "resolution_status": "resolved_wikidata_exact_enwiki",
+    "content_property_group_count": 18,
+    "new_schema_property_group_count": 13,
+    "content_property_ids": [
+      "P1141",
+      "P131",
+      "P1352",
+      "P1365",
+      "P138",
+      "P17",
+      "P176",
+      "P2284",
+      "P276",
+      "P2791",
+      "P2928",
+      "P306",
+      "P495",
+      "P571",
+      "P7256",
+      "P729",
+      "P859",
+      "P880"
+    ],
+    "new_schema_property_ids": [
+      "P1141",
+      "P1352",
+      "P1365",
+      "P138",
+      "P2284",
+      "P2791",
+      "P2928",
+      "P495",
+      "P571",
+      "P7256",
+      "P729",
+      "P859",
+      "P880"
+    ]
+  },
+  {
+    "subject": "TrackOR",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Trade Remedies",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Trade Remedies in International Trade",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "TRIAGE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Trofimov and others are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "TS-CNN",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Two competing strategies are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Two different methods are",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Türkey’s Cybersecurity Policy Framework",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Understanding this process",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Urban biodiversity",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q113116287",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 1,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [
+      "P276"
+    ],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Using a parameterized approach",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Using light for communication",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Utopia and Political Science",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Vehicle Security Engineering Cloud",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Veterinary Public Health",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "VIBE",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Violating a nonlocality inequality",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Vishnevska masterful",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "VITEK",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Vocational Education",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "VSAT",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": "Q16295206",
+    "resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "While the phylogeny",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "WiCoM",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Working with digital scent samples",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "World-historical",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "X-SHIELD",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "XGen-Q",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "XMPP",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "XReason",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "unresolved_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  },
+  {
+    "subject": "Z-score",
+    "cohorts": [
+      "original_331"
+    ],
+    "canonical_qid": null,
+    "resolution_status": "ambiguous_wikidata_exact",
+    "content_property_group_count": 0,
+    "new_schema_property_group_count": 0,
+    "content_property_ids": [],
+    "new_schema_property_ids": []
+  }
+]

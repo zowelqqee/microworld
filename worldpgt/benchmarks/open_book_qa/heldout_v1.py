@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from typing import Iterable
 
-from .dataset import _case, _compact, _evidence, _norm, _source_ids, _valid_relation, load_experimental_relations, read_jsonl, relation_id
+from .dataset import _QUESTIONS, _case, _compact, _evidence, _norm, _source_ids, _valid_relation, load_experimental_relations, read_jsonl, relation_id
 
 
 _PARAPHRASE_FORMS = {
@@ -22,6 +22,14 @@ _PARAPHRASE_FORMS = {
     "used_for": ("For what application is {subject} employed?",),
     "works_by": ("By what process does {subject} operate?",),
     "developed_by": ("By whom was {subject} engineered?",),
+    "founded_by": ("Who established {subject}?",),
+    "headquartered_in": ("Where does {subject} maintain its headquarters?",),
+    "owned_by": ("Which organisation controls {subject}?",),
+    "parent_company_of": ("Which subsidiary is part of {subject}?",),
+    "produces": ("Which products are made by {subject}?",),
+    "product_of": ("Which manufacturer made {subject}?",),
+    "created_by": ("Who is the creator of {subject}?",),
+    "published_by": ("Which publisher issued {subject}?",),
 }
 
 _EXPLICIT_CLAUSES = {
@@ -32,6 +40,14 @@ _EXPLICIT_CLAUSES = {
     "used_for": "for what application is {subject} employed",
     "works_by": "by what process does {subject} operate",
     "developed_by": "by whom was {subject} engineered",
+    "founded_by": "who founded {subject}",
+    "headquartered_in": "where is {subject} headquartered",
+    "owned_by": "who owns {subject}",
+    "parent_company_of": "what subsidiary belongs to {subject}",
+    "produces": "what does {subject} produce",
+    "product_of": "who manufactured {subject}",
+    "created_by": "who created {subject}",
+    "published_by": "who published {subject}",
 }
 
 
@@ -182,6 +198,91 @@ def build_heldout_cases(relations: Iterable[dict], main_ids: set[str]) -> tuple[
         **pool_summary,
     }
     return cases, summary
+
+
+def build_direct_negative_heldout_cases(
+    relations: Iterable[dict],
+    main_ids: set[str],
+    *,
+    direct_count: int = 20,
+    negative_count: int = 20,
+) -> tuple[list[dict], dict]:
+    """Build direct and evidence-scoped negative cases from a frozen cohort.
+
+    A negative case carries every clean predicate group available for its
+    subject.  Its asked predicate is absent from that entire visible subject
+    bundle, not merely from one selected evidence span.  Direct and negative
+    subjects are disjoint, preventing one category from borrowing the other's
+    facts through the frozen input.
+    """
+
+    clean_groups, by_subject, pool_summary = heldout_pool_diagnostics(relations, main_ids)
+    direct: list[dict] = []
+    direct_subjects: set[str] = set()
+    used_ids: set[str] = set()
+    for (subject, predicate), rows in sorted(clean_groups.items()):
+        if predicate not in _QUESTIONS or subject in direct_subjects:
+            continue
+        direct.append(_case_for_groups(
+            [rows],
+            question=_QUESTIONS[predicate].format(subject=_compact(rows[0]["subject"])),
+            category="direct",
+        ))
+        direct_subjects.add(subject)
+        used_ids.update(relation_id(row) for row in rows)
+        if len(direct) == direct_count:
+            break
+    if len(direct) < direct_count:
+        raise RuntimeError(f"held-out direct unavailable: need {direct_count}, found {len(direct)}")
+
+    negative: list[dict] = []
+    negative_subjects: set[str] = set()
+    for subject, groups in sorted(by_subject.items()):
+        if subject in direct_subjects:
+            continue
+        present = set(groups)
+        absent = next((predicate for predicate in sorted(_QUESTIONS) if predicate not in present), None)
+        if absent is None:
+            continue
+        selected = [row for predicate in sorted(groups) for row in groups[predicate]]
+        selected_ids = {relation_id(row) for row in selected}
+        if selected_ids & used_ids:
+            continue
+        primary = selected[0]
+        negative.append(_case(
+            primary,
+            question=_QUESTIONS[absent].format(subject=_compact(primary["subject"])),
+            category="negative",
+            expected_decision="unknown",
+            relations=selected,
+            predicates=[absent],
+        ))
+        negative_subjects.add(subject)
+        used_ids.update(selected_ids)
+        if len(negative) == negative_count:
+            break
+    if len(negative) < negative_count:
+        raise RuntimeError(f"held-out negative unavailable: need {negative_count}, found {len(negative)}")
+
+    cases = [*direct, *negative]
+    heldout_ids = {value for case in cases for value in [*case["relation_ids"], *case["evidence_ids"]]}
+    overlap = heldout_ids & main_ids
+    if overlap:
+        raise AssertionError("held-out overlap detected")
+    return cases, {
+        "version": "heldout_direct_negative_v1",
+        "total_cases": len(cases),
+        "cases_per_category": dict(sorted(Counter(case["category"] for case in cases).items())),
+        "main_relation_or_evidence_id_count": len(main_ids),
+        "heldout_relation_or_evidence_id_count": len(heldout_ids),
+        "zero_overlap_relation_ids": not overlap,
+        "zero_overlap_evidence_ids": not overlap,
+        "overlap_count": len(overlap),
+        "frozen_before_question_generation": True,
+        "direct_and_negative_subjects_disjoint": not (direct_subjects & negative_subjects),
+        "negative_predicate_absent_from_all_visible_subject_groups": True,
+        **pool_summary,
+    }
 
 
 def write_heldout_dataset(output_dir: str | Path, *, main_dataset_path: str | Path) -> dict:

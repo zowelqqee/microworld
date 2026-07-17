@@ -95,4 +95,34 @@ final class EngineTests: XCTestCase {
         XCTAssertTrue(report.ok)
         XCTAssertEqual(report.items.count, 2)
     }
+
+    func testV2MultiEvidenceDemoCasesOnRealEngine() async throws {
+        let (engine, usingRealEngine) = await makeEngine()
+        guard usingRealEngine else {
+            throw XCTSkip("Requires the staged CPython bundle; mock output cannot validate iOS v2 data.")
+        }
+        let cases: [(String, [String])] = [
+            (
+                "For Energy Drink Consumption Among Papuan Athletes, what are its created by and published by relations?",
+                ["Daniel Womsiwor", "Tery Wanena", "Everant Journals"]
+            ),
+            (
+                "Tell me two key relations about The Economics of Superstars.",
+                ["On the Theory of Clubs", "Housing Market and Economics"]
+            ),
+            (
+                "For LAMMPS, what are its developed by and runs on relations?",
+                ["United States Department of Energy", "macOS", "Microsoft Windows", "Unix-like operating system"]
+            ),
+        ]
+        for (prompt, expectedFragments) in cases {
+            let result = try await engine.run(prompt: prompt, mode: .qa)
+            XCTAssertEqual(result.decision, "answer", "\(prompt) must be answered by the v2 graph")
+            XCTAssertEqual(result.supportKind, "evidence_backed_answer_plan")
+            for fragment in expectedFragments {
+                XCTAssertTrue(result.text.contains(fragment), "missing \(fragment) for \(prompt)")
+            }
+            print("IOS_V2_DEVICE_CASE latency_ms=\(result.latencyMilliseconds) prompt=\(prompt) answer=\(result.text)")
+        }
+    }
 }

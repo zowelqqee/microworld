@@ -1,0 +1,67 @@
+{
+  "version": "wikidata_resolution_gap_v1",
+  "diagnostic_only": true,
+  "production_resolver_modified": false,
+  "extraction_performed": false,
+  "precision_gate_run": false,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "source": "official Wikidata Action API wbsearchentities; reviewed outside the production resolver",
+  "original_331_failure_population": 290,
+  "sample_size": 30,
+  "sample_seed": 42,
+  "sample_verdict_counts": {
+    "genuinely_absent": 23,
+    "matching_gap": 7
+  },
+  "matching_gap_rate": 0.23333333333333334,
+  "genuinely_absent_rate": 0.7666666666666667,
+  "matching_gap_rate_approx_95pct_margin": 0.15135163863836598,
+  "extrapolation_note": "Based on a seeded n=30 sample; the margin is an approximate normal 95% interval and does not remove classification uncertainty.",
+  "matching_gap_failure_types": {
+    "alias_or_expansion_mismatch": 4,
+    "exact_label_disambiguation": 3
+  },
+  "genuinely_absent_sample_subtypes": {
+    "assertion_fragment": 1,
+    "clause_fragment": 4,
+    "discourse_fragment": 4,
+    "goal_fragment": 1,
+    "new_niche_framework": 1,
+    "new_niche_method": 4,
+    "new_niche_platform": 2,
+    "niche_method_without_concept_item": 1,
+    "niche_model_without_item": 1,
+    "niche_resource_without_distinct_item": 1,
+    "niche_technical_term_without_item": 2,
+    "scope_fragment": 1
+  },
+  "matching_gap_examples": [
+    {
+      "subject": "CISM",
+      "correct_wikidata_qid": "Q1308825",
+      "correct_wikidata_label": "Critical incident stress management",
+      "why_current_resolver_missed": "alias_or_expansion_mismatch"
+    },
+    {
+      "subject": "COFs",
+      "correct_wikidata_qid": "Q38028371",
+      "correct_wikidata_label": "Covalent organic frameworks",
+      "why_current_resolver_missed": "alias_or_expansion_mismatch"
+    },
+    {
+      "subject": "convolutional neural network",
+      "correct_wikidata_qid": "Q17084460",
+      "correct_wikidata_label": "convolutional neural network",
+      "why_current_resolver_missed": "exact_label_disambiguation"
+    }
+  ],
+  "original_failure_interpretation": "The reviewed failures are predominantly source-prose fragments or narrow/new technical methods and platforms, not mainstream entities that an exact resolver should normally identify.",
+  "cohort_resolution_context": {
+    "original_331": "41/331 exact QID",
+    "crossref_promoted_46": "2/46 exact QID",
+    "openalex_accepted_2": "0/2 exact QID"
+  },
+  "recommendation": "treat the current exact-QID coverage as a structural ceiling for this source cohort",
+  "crossref_openalex_note": "Crossref works are DOI-level academic publications, a category Wikidata covers less consistently than people, organisations, or broad concepts; this is a plausible structural contributor, not a resolver diagnosis. OpenAlex n=2 is too small for inference."
+}

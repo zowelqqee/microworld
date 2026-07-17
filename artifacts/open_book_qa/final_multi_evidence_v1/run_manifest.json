@@ -1,0 +1,11 @@
+{
+  "single_shot": true,
+  "seed": 42,
+  "warmups": 50,
+  "repeats": 5,
+  "dataset_sha256": "5b0bf9135f3572eaf18a20a119ad9849b262c51d85633cec72f5fdb790691241",
+  "status": "completed",
+  "microworld_result_count": 300,
+  "qwen_result_count": 300,
+  "execution_note": "MicroWorld and Qwen were each run once. The outer runner interrupted between systems; finalization reused the complete MicroWorld artifact and did not rerun it."
+}

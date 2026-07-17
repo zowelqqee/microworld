@@ -1,0 +1,39 @@
+{
+  "version": "crossref_doi_seed_v1",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "source": "official Crossref Works API DOI metadata",
+  "selection": "works with explicit author and publisher metadata",
+  "max_entities": 100,
+  "fetch": {
+    "requested_query_count": 37,
+    "records_per_query": 10,
+    "unique_doi_records": 370,
+    "errors": [],
+    "records_by_bucket": {
+      "arts_culture": 30,
+      "computing": 30,
+      "earth_environment": 30,
+      "economics": 20,
+      "engineering": 30,
+      "geography": 20,
+      "health": 20,
+      "history": 30,
+      "humanities": 20,
+      "language": 20,
+      "life_science": 20,
+      "mathematics": 20,
+      "physical_science": 30,
+      "society": 40,
+      "sports": 10
+    }
+  },
+  "frozen_entity_count": 100,
+  "proposal_relation_count": 252,
+  "predicate_distribution": {
+    "created_by": 152,
+    "published_by": 100
+  },
+  "main_edge_overlap_count": 0
+}

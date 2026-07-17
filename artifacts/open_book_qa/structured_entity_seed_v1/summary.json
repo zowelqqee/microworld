@@ -1,0 +1,29 @@
+{
+  "version": "structured_entity_seed_v1",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "selector": "official Wikidata entities with developer+use, founder+headquarters, or owner+headquarters",
+  "wikipedia_anchor_required": true,
+  "selector_qid_count": 540,
+  "frozen_entity_count": 60,
+  "proposal_relation_count": 187,
+  "predicate_distribution": {
+    "created_by": 1,
+    "developed_by": 26,
+    "founded_by": 47,
+    "headquartered_in": 41,
+    "owned_by": 16,
+    "parent_company_of": 5,
+    "produces": 9,
+    "product_of": 14,
+    "runs_on": 1,
+    "used_for": 27
+  },
+  "source_lanes_seen": {
+    "corporate": 58,
+    "organization": 327,
+    "software": 155
+  },
+  "main_edge_overlap_count": 0
+}

@@ -1,0 +1,237 @@
+{
+  "source_benchmark": "artifacts/open_book_qa/final_multi_evidence_v1",
+  "classification_unit": "unique case; first trace of five deterministic repeats",
+  "failure_count": 6,
+  "category_counts": {
+    "intent_decomposition": 3,
+    "predicate_identification": 0,
+    "retrieval_one_of_two": 3,
+    "relevance_selection": 0
+  },
+  "category_percentages": {
+    "intent_decomposition": 50.0,
+    "predicate_identification": 0.0,
+    "retrieval_one_of_two": 50.0,
+    "relevance_selection": 0.0
+  },
+  "dominant_category": null,
+  "tied_top_categories": [
+    "intent_decomposition",
+    "retrieval_one_of_two"
+  ],
+  "dominant_exceeds_40_percent": false,
+  "selected_fix_category": "intent_decomposition",
+  "selection_rationale": "Intent decomposition and retrieval completeness are tied at 3/6. This pass fixes only intent decomposition because it is a bounded parser/planner contract change; the other half needs a separate fan-out/completeness policy and is intentionally left unchanged.",
+  "categories": {
+    "intent_decomposition": [
+      {
+        "case_id": "obqa-b3725bd9e9839990-multi_evidence_implicit-8b2cd0c7",
+        "question": "Tell me two key relations about DeepSeek-R1.",
+        "case_category": "multi_evidence_implicit",
+        "data_lane": "wikidata",
+        "expected_relation_ids": [
+          "edge:deepseek-r1|developed_by|deepseek",
+          "edge:deepseek-r1|owned_by|deepseek"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "developed_by",
+          "owned_by"
+        ],
+        "expected_objects": [
+          "DeepSeek",
+          "DeepSeek"
+        ],
+        "decision": "audit",
+        "selected_relation_ids": [
+          "edge:deepseek-r1|developed_by|deepseek"
+        ],
+        "selected_predicates": [
+          "developed_by"
+        ],
+        "answer": "no explicitly supported answer exists in Microworld's current memory for this question",
+        "plan_stop_reason": "next best step (edge:deepseek-r1|owned_by|deepseek) scored 0.263 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "object_recall": 0.0,
+        "classification_reason": "The trace did not construct two relation-group targets before rendering."
+      },
+      {
+        "case_id": "obqa-861c4899eee2c5d8-multi_evidence_explicit-55819ceb",
+        "question": "For Chemotaxis, what are its part of and has part relations?",
+        "case_category": "multi_evidence_explicit",
+        "data_lane": "wikidata",
+        "expected_relation_ids": [
+          "edge:chemotaxis|part_of|response to chemical",
+          "edge:chemotaxis|wikidata_p527_has_part_s|cytoskeletal rearrangement involved in phagocytosis, engulfment"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "part_of",
+          "wikidata_p527_has_part_s"
+        ],
+        "expected_objects": [
+          "response to chemical",
+          "cytoskeletal rearrangement involved in phagocytosis, engulfment"
+        ],
+        "decision": "audit",
+        "selected_relation_ids": [
+          "edge:chemotaxis|part_of|response to chemical"
+        ],
+        "selected_predicates": [
+          "part_of"
+        ],
+        "answer": "unresolved_reference: could not determine what 'its' refers to",
+        "plan_stop_reason": "no_connected_evidence_candidates",
+        "object_recall": 0.0,
+        "classification_reason": "The trace did not construct two relation-group targets before rendering."
+      },
+      {
+        "case_id": "obqa-fd797fe9fd237fe1-multi_evidence_implicit-c8060b30",
+        "question": "Tell me two key relations about IoT.",
+        "case_category": "multi_evidence_implicit",
+        "data_lane": "wikidata",
+        "expected_relation_ids": [
+          "edge:iot|has_topic|internet of things",
+          "edge:iot|published_by|mdpi"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "has_topic",
+          "published_by"
+        ],
+        "expected_objects": [
+          "Internet of Things",
+          "MDPI"
+        ],
+        "decision": "audit",
+        "selected_relation_ids": [],
+        "selected_predicates": [],
+        "answer": "question not understood",
+        "plan_stop_reason": null,
+        "object_recall": 0.0,
+        "classification_reason": "The trace did not construct two relation-group targets before rendering."
+      }
+    ],
+    "predicate_identification": [],
+    "retrieval_one_of_two": [
+      {
+        "case_id": "obqa-10af9ad488ba7fb7-multi_evidence_explicit-a4db7ba5",
+        "question": "For Energy Drink Consumption Among Papuan Athletes, what are its created by and published by relations?",
+        "case_category": "multi_evidence_explicit",
+        "data_lane": "crossref",
+        "expected_relation_ids": [
+          "edge:energy drink consumption among papuan athletes|created_by|daniel womsiwor",
+          "edge:energy drink consumption among papuan athletes|created_by|eva sinaga",
+          "edge:energy drink consumption among papuan athletes|created_by|evi sinaga",
+          "edge:energy drink consumption among papuan athletes|created_by|junalia muhammad",
+          "edge:energy drink consumption among papuan athletes|created_by|sutoro sutoro",
+          "edge:energy drink consumption among papuan athletes|created_by|tery wanena",
+          "edge:energy drink consumption among papuan athletes|published_by|everant journals"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "created_by",
+          "published_by"
+        ],
+        "expected_objects": [
+          "Daniel Womsiwor",
+          "Eva Sinaga",
+          "Evi Sinaga",
+          "Junalia Muhammad",
+          "Sutoro Sutoro",
+          "Tery Wanena",
+          "Everant Journals"
+        ],
+        "decision": "answer",
+        "selected_relation_ids": [
+          "edge:energy drink consumption among papuan athletes|created_by|daniel womsiwor",
+          "edge:energy drink consumption among papuan athletes|published_by|everant journals",
+          "edge:energy drink consumption among papuan athletes|created_by|eva sinaga",
+          "edge:energy drink consumption among papuan athletes|created_by|junalia muhammad"
+        ],
+        "selected_predicates": [
+          "created_by",
+          "published_by"
+        ],
+        "answer": "Crossref DOI metadata for \"Energy Drink Consumption Among Papuan Athletes\" lists Daniel Womsiwor as an author. Alongside that, Crossref DOI metadata for \"Energy Drink Consumption Among Papuan Athletes\" lists Everant Journals as its publisher. On another supported side, Crossref DOI metadata for \"Energy Drink Consumption Among Papuan Athletes\" lists Eva Sinaga as an author. Alongside that, Crossref DOI metadata for \"Energy Drink Consumption Among Papuan Athletes\" lists Junalia Muhammad as an author. (Every statement above is tied to a cited evidence span; each of the 4 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+        "plan_stop_reason": "max_blocks_reached",
+        "object_recall": 0.5714285714285714,
+        "classification_reason": "Both predicate groups were selected, but a required evidence edge/object was omitted by the bounded execution plan."
+      },
+      {
+        "case_id": "obqa-c6db4273b94b234a-multi_evidence_implicit-7f6dec5b",
+        "question": "Tell me two key relations about SPSS.",
+        "case_category": "multi_evidence_implicit",
+        "data_lane": "wikidata",
+        "expected_relation_ids": [
+          "edge:spss|developed_by|ibm",
+          "edge:spss|developed_by|dale h. bent",
+          "edge:spss|runs_on|microsoft windows",
+          "edge:spss|runs_on|macos",
+          "edge:spss|runs_on|x86-64",
+          "edge:spss|runs_on|java virtual machine"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "developed_by",
+          "runs_on"
+        ],
+        "expected_objects": [
+          "IBM",
+          "Dale H. Bent",
+          "Microsoft Windows",
+          "macOS",
+          "x86-64",
+          "Java virtual machine"
+        ],
+        "decision": "answer",
+        "selected_relation_ids": [
+          "edge:spss|developed_by|dale h. bent",
+          "edge:spss|runs_on|java virtual machine",
+          "edge:spss|runs_on|macos",
+          "edge:spss|runs_on|microsoft windows"
+        ],
+        "selected_predicates": [
+          "developed_by",
+          "runs_on"
+        ],
+        "answer": "The evidence diverges on SPSS: one cited span supports 'Dale H. Bent', while other cited evidence instead points to 'IBM'; neither reading is treated as settled. Alongside that, Wikidata statement P400 (platform) for SPSS (Q181596) identifies Java virtual machine (Q193321). On another supported side, Wikidata statement P306 (operating system) for SPSS (Q181596) identifies macOS (Q14116). Alongside that, Wikidata statement P306 (operating system) for SPSS (Q181596) identifies Microsoft Windows (Q1406). (Every statement above is tied to a cited evidence span; each of the 4 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+        "plan_stop_reason": "max_blocks_reached",
+        "object_recall": 0.8333333333333334,
+        "classification_reason": "Both predicate groups were selected, but a required evidence edge/object was omitted by the bounded execution plan."
+      },
+      {
+        "case_id": "obqa-49fdc0d74ac936c6-multi_evidence_explicit-9f381070",
+        "question": "For LAMMPS, what are its developed by and runs on relations?",
+        "case_category": "multi_evidence_explicit",
+        "data_lane": "wikidata",
+        "expected_relation_ids": [
+          "edge:lammps|developed_by|united states department of energy",
+          "edge:lammps|runs_on|unix-like operating system",
+          "edge:lammps|runs_on|microsoft windows",
+          "edge:lammps|runs_on|macos"
+        ],
+        "expected_predicates_from_frozen_edges": [
+          "developed_by",
+          "runs_on"
+        ],
+        "expected_objects": [
+          "United States Department of Energy",
+          "Unix-like operating system",
+          "Microsoft Windows",
+          "macOS"
+        ],
+        "decision": "answer",
+        "selected_relation_ids": [
+          "edge:lammps|developed_by|united states department of energy",
+          "edge:lammps|runs_on|macos",
+          "edge:lammps|runs_on|microsoft windows"
+        ],
+        "selected_predicates": [
+          "developed_by",
+          "runs_on"
+        ],
+        "answer": "Wikidata statement P178 (developer) for LAMMPS (Q4042577) identifies United States Department of Energy (Q217810). Alongside that, Wikidata statement P306 (operating system) for LAMMPS (Q4042577) identifies macOS (Q14116). On another supported side, Wikidata statement P306 (operating system) for LAMMPS (Q4042577) identifies Microsoft Windows (Q1406). (Every statement above is tied to a cited evidence span; each of the 3 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+        "plan_stop_reason": "next best step (edge:lammps|runs_on|unix-like operating system) scored 0.229, under the continue threshold — answer value would not grow",
+        "object_recall": 0.75,
+        "classification_reason": "Both predicate groups were selected, but a required evidence edge/object was omitted by the bounded execution plan."
+      }
+    ],
+    "relevance_selection": []
+  },
+  "benchmark_metadata_note": "expected_predicate may list all subject groups in the legacy builder; diagnosis uses frozen relation_ids, which define evaluated expected objects."
+}

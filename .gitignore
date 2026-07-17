@@ -97,6 +97,20 @@ worldpgt/experiments/knowledge_pump_v1/pump_answerable_delta.json
 worldpgt/experiments/**
 !worldpgt/experiments/
 !worldpgt/experiments/benchmark_speech_quality_v1.py
+!worldpgt/experiments/run_arxiv_source_specific_lane_v1.py
+!worldpgt/experiments/run_targeted_wikidata_density_v2.py
+!worldpgt/experiments/run_structured_entity_seed_v1.py
+!worldpgt/experiments/build_structured_seed_heldout_v3.py
+!worldpgt/experiments/build_structured_seed_direct_negative_heldout_v3.py
+!worldpgt/experiments/run_crossref_doi_seed_v1.py
+!worldpgt/experiments/run_crossref_doi_precision_gate_v1.py
+!worldpgt/experiments/promote_crossref_doi_serving_v1.py
+!worldpgt/experiments/run_openalex_topic_reference_seed_v1.py
+!worldpgt/experiments/run_openalex_topic_reference_precision_gate_v1.py
+!worldpgt/experiments/run_wikidata_density_recon_v1.py
+!worldpgt/experiments/run_wikidata_resolution_gap_v1.py
+!worldpgt/experiments/run_wikidata_resolver_fix_v1.py
+!worldpgt/experiments/build_independent_paraphrase_heldout_v1.py
 
 # poetry_lab generated model artifacts (regenerate: `python cli.py ingest` /
 # `ingest-narrative`). 88-146MB each — exceed GitHub's file-size limit.

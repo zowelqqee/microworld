@@ -1,0 +1,40 @@
+{
+  "promotion_scope": "experimental_serving_graph_only",
+  "accepted_memory_modified": false,
+  "promoted_wiki_overlay_modified": false,
+  "serving_experimental_overlay_modified": true,
+  "input_precision_accepted_relations": 73,
+  "serving_relation_count": 73,
+  "serving_predicate_distribution": {
+    "developed_by": 5,
+    "has_topic": 3,
+    "located_in": 9,
+    "owned_by": 1,
+    "part_of": 4,
+    "produces": 1,
+    "product_of": 1,
+    "published_by": 1,
+    "runs_on": 9,
+    "used_for": 8,
+    "uses": 9,
+    "wikidata_p138_named_after": 6,
+    "wikidata_p282_writing_system": 3,
+    "wikidata_p407_language_of_work_or_name": 3,
+    "wikidata_p461_opposite_of": 2,
+    "wikidata_p495_country_of_origin": 5,
+    "wikidata_p527_has_part_s": 3
+  },
+  "deduplicated_or_invalid_input_count": 0,
+  "serving_tier": "evidence_grounded_wikidata_relation_v1",
+  "input": "artifacts/open_book_qa/wikidata_seed_v1/precision_gate/accepted_proposal_overlay.json",
+  "serving_overlay_path": "worldpgt/experiments/open_web_pump_v1/campaign_wikidata_seed_v1/open_web_campaign_evidence_grounded_graph_overlay.json",
+  "promotion_authorization": "explicit_user_request",
+  "smoke_test": {
+    "subject": "Elliptic curve cryptography",
+    "predicate": "uses",
+    "expected_object": "elliptic curve over a finite field",
+    "decision": "answer",
+    "answer": "Elliptic curve cryptography uses elliptic curve over a finite field.",
+    "passed": true
+  }
+}

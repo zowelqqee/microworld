@@ -1,0 +1,23 @@
+{
+  "lane": "crossref",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "unique_quarantine_relations": 59,
+  "stored_source_records_found": 58,
+  "source_specific_extracted": 15,
+  "passed_precision_gate": 13,
+  "passed_precision_gate_with_new_predicate": 0,
+  "passed_precision_gate_same_existing_predicate": 13,
+  "rejected_or_quarantined": 46,
+  "reason_codes": {
+    "concept_relation_bad_object": 1,
+    "generic_relation_bad_subject": 1,
+    "source_specific_explicit_relation_not_found": 3,
+    "source_specific_non_atomic_endpoint": 41
+  },
+  "potential_unique_subjects": 54,
+  "actual_subjects_with_second_relation_group": 0,
+  "actual_unlocked_subjects": [],
+  "input_fingerprint": "064ff24702d9d29bee82dee9bccb20998255dbce3af58069562dc12036749192"
+}

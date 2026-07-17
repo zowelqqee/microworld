@@ -28,6 +28,14 @@ _QUESTIONS = {
     "used_for": "What is {subject} used for?",
     "works_by": "How does {subject} work?",
     "developed_by": "Who developed {subject}?",
+    "founded_by": "Who founded {subject}?",
+    "headquartered_in": "Where is {subject} headquartered?",
+    "owned_by": "Who owns {subject}?",
+    "parent_company_of": "What subsidiary belongs to {subject}?",
+    "produces": "What does {subject} produce?",
+    "product_of": "Who manufactured {subject}?",
+    "created_by": "Who created {subject}?",
+    "published_by": "Who published {subject}?",
 }
 _PARAPHRASES = {
     "uses": ("What technology does {subject} rely on?", "What does {subject} employ?", "What is used by {subject}?"),
@@ -37,6 +45,14 @@ _PARAPHRASES = {
     "used_for": ("What purpose does {subject} serve?",),
     "works_by": ("What mechanism does {subject} use?",),
     "developed_by": ("Who created {subject}?",),
+    "founded_by": ("Who established {subject}?",),
+    "headquartered_in": ("Where does {subject} maintain its headquarters?",),
+    "owned_by": ("Which organisation controls {subject}?",),
+    "parent_company_of": ("Which subsidiary is part of {subject}?",),
+    "produces": ("Which products are made by {subject}?",),
+    "product_of": ("Which manufacturer made {subject}?",),
+    "created_by": ("Who is the creator of {subject}?",),
+    "published_by": ("Which publisher issued {subject}?",),
 }
 _NEGATIVE_PREDICATES = ("founded_by", "runs_on", "developed_by", "uses", "enables", "supports")
 _MULTI_CLAUSES = {
@@ -47,6 +63,14 @@ _MULTI_CLAUSES = {
     "used_for": "what is {subject} used for",
     "works_by": "how does {subject} work",
     "developed_by": "who developed {subject}",
+    "founded_by": "who founded {subject}",
+    "headquartered_in": "where is {subject} headquartered",
+    "owned_by": "who owns {subject}",
+    "parent_company_of": "what subsidiary belongs to {subject}",
+    "produces": "what does {subject} produce",
+    "product_of": "who manufactured {subject}",
+    "created_by": "who created {subject}",
+    "published_by": "who published {subject}",
 }
 
 

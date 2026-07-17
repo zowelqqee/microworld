@@ -1,0 +1,23 @@
+{
+  "lane": "arxiv",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "unique_quarantine_relations": 85,
+  "stored_source_records_found": 82,
+  "source_specific_extracted": 28,
+  "passed_precision_gate": 25,
+  "passed_precision_gate_with_new_predicate": 0,
+  "passed_precision_gate_same_existing_predicate": 25,
+  "rejected_or_quarantined": 60,
+  "reason_codes": {
+    "concept_relation_bad_object": 1,
+    "generic_relation_bad_subject": 2,
+    "source_specific_explicit_relation_not_found": 1,
+    "source_specific_non_atomic_endpoint": 56
+  },
+  "potential_unique_subjects": 79,
+  "actual_subjects_with_second_relation_group": 0,
+  "actual_unlocked_subjects": [],
+  "input_fingerprint": "6c611ef7324609dcc5e1672dd7629179c237125c5a722f40caf85f0b932a6c17"
+}

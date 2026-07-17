@@ -20,6 +20,7 @@ import json
 import secrets
 import sys
 import time
+from dataclasses import replace
 from pathlib import Path
 from typing import Any
 
@@ -71,6 +72,78 @@ def enforce_offline() -> bool:
 _ORCH = None            # AnswerOrchestrator
 _OVERLAY = "promoted"
 _NARRATIVE_ENGINE = None  # poetry_lab NarrativeEngine; separate from QA
+
+
+def _try_multi_evidence_plan(orch, prompt: str, answer):
+    """Use the existing stdlib-only evidence planner for iOS QA.
+
+    The desktop API wraps this same optional planner behind FastAPI.  The phone
+    deliberately does not import that server module, so this adapter calls the
+    unchanged planner directly.  A failed or inapplicable plan is a no-op and
+    preserves the base ``AnswerOrchestrator`` result exactly.
+    """
+    if answer.risk_flags:
+        return answer
+    may_recover_audit = (
+        answer.decision == "audit" and answer.support_kind == "missing_knowledge"
+    )
+    if answer.decision != "answer" and not may_recover_audit:
+        return answer
+    try:
+        from worldpgt.entity_qa.semantic_question_parser import parse_semantic_query
+        from worldpgt.relation_extraction_v2.relation_policy import relation_intents_from_text
+        from worldpgt.reasoning.answer_behavior import (
+            build_answer_plan,
+            plan_is_expansion,
+            prepare_evidence_graph,
+        )
+        from worldpgt.reasoning.answer_plan_renderer import render_answer_plan
+        from worldpgt.reasoning.relation_input_graph import default_relation_input_graph
+
+        query = parse_semantic_query(prompt)
+        targets = [target for target in (query.entity_a, query.entity_b) if target]
+        matches = list(orch._surface_index.find_in_text(prompt))
+        if not targets:
+            targets = list(dict.fromkeys(canonical for _surface, canonical, _start, _end in matches))
+        if not targets:
+            return answer
+        explicit_intents = relation_intents_from_text(prompt) | frozenset(
+            default_relation_input_graph().resolve_all(
+                prompt, entity_spans=((start, end) for _surface, _canonical, start, end in matches)
+            )
+        )
+        predicate_filter = explicit_intents if len(explicit_intents) > 1 else query.relation_intent
+        experimental_relations = [
+            row for row in orch._provider.all_relations()
+            if str(row.get("experimental_tier") or "").startswith("evidence_grounded_")
+        ]
+        plan = build_answer_plan(
+            prompt,
+            [],
+            targets=targets,
+            predicate_filter=predicate_filter,
+            required_distinct_predicates=(
+                2 if query.query_type == "multi_fact" and not explicit_intents else 1
+            ),
+            max_blocks=4,
+            prepared_edges=prepare_evidence_graph(experimental_relations),
+        )
+        if not plan_is_expansion(plan):
+            return answer
+        rendered = render_answer_plan(plan)
+        if not rendered:
+            return answer
+        return replace(
+            answer,
+            decision="answer",
+            answer_text=rendered,
+            supported_by_context=True,
+            support_kind="evidence_backed_answer_plan",
+            source_system="ios_adapter.answer_behavior",
+        )
+    except Exception:
+        # The optional planner must never break base offline QA.
+        return answer
 
 
 def _orchestrator():
@@ -254,7 +327,7 @@ def run(prompt: str, mode: str) -> str:
     if is_creative:
         answer = _run_creative(orch, prompt)
     else:
-        answer = orch.answer(prompt)
+        answer = _try_multi_evidence_plan(orch, prompt, orch.answer(prompt))
     engine_ms = (time.perf_counter() - t) * 1000.0
 
     payload: dict[str, Any] = {

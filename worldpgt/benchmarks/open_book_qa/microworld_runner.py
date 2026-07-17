@@ -23,7 +23,20 @@ def _answer(case: dict, sequence: int) -> dict:
         ))
         elapsed = (time.perf_counter_ns() - started) / 1_000_000
         plan = response.answer_plan or {}
-        selected = [block.get("step", {}).get("edge", {}).get("evidence_id") for block in plan.get("blocks", [])]
+        # A plan block can represent a relation fan-out.  Count every exact
+        # object slot for provenance, not only the primary edge kept for the
+        # block's score/attachment trace.
+        selected = [
+            edge.get("evidence_id")
+            for block in plan.get("blocks", [])
+            for edge in (
+                *(block.get("object_slots") or [block.get("step", {}).get("edge", {})]),
+                # A conflict is rendered as an explicit, cited alternative;
+                # preserve that provenance too instead of reporting only the
+                # primary member of the uncertainty block.
+                *(block.get("alternatives") or []),
+            )
+        ]
         return {"id": case["id"], "answer": response.answer, "decision": response.decision,
                 "support_kind": response.support, "total_latency_ms": elapsed,
                 "planner_latency_ms": None, "selected_relation_ids": [x for x in selected if x],

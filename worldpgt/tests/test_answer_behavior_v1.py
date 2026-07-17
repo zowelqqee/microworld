@@ -110,11 +110,10 @@ def test_coherent_chain_is_preferred_over_random_enumeration():
 
 
 def test_relation_diversity_prefers_a_new_relation_at_the_same_node():
-    # After the first ``enables`` edge, all remaining candidates have the
-    # same evidence quality, attachment, relevance, and payload novelty.  The
-    # second block must therefore prefer the structurally new ``uses`` relation
-    # over another ``enables`` enumeration, and expose that reason in its
-    # score breakdown.
+    # Complementary ``enables`` objects occupy one relation slot.  The next
+    # block must therefore prefer the structurally new ``uses`` relation over
+    # flat edge-by-edge enumeration, and expose that reason in its score
+    # breakdown.
     graph = [
         _edge("veltrix array", "enables", "calibrated gates"),
         _edge("veltrix array", "enables", "diagnostic channels"),
@@ -128,13 +127,75 @@ def test_relation_diversity_prefers_a_new_relation_at_the_same_node():
     assert [block.step.edge.predicate for block in plan.blocks[:2]] == [
         "enables", "uses",
     ]
+    assert [edge.object for edge in plan.blocks[0].all_object_edges()] == [
+        "calibrated gates", "diagnostic channels",
+    ]
     assert plan.blocks[1].step.score.relation_diversity == 1.0
-    repeated = next(
-        rejected for rejected in plan.rejected
-        if rejected.evidence_id == "edge:veltrix array|enables|diagnostic channels"
-    )
-    assert repeated.reason == "outscored_by_selected_step"
     assert "relation_diversity" in plan.to_dict()["blocks"][1]["step"]["score"]
+
+
+def test_multi_object_relation_slot_keeps_all_exact_edges_and_renders_one_list():
+    """A block limit constrains relation groups, never valid fan-out objects."""
+    graph = [
+        _edge("veltrix array", "developed_by", "orion works"),
+        _edge("veltrix array", "developed_by", "meridian collective"),
+        _edge("veltrix array", "developed_by", "cinder laboratory"),
+        _edge("veltrix array", "runs_on", "the amber substrate"),
+    ]
+    plan = build_answer_plan(
+        "Who developed veltrix array and what does it run on?",
+        graph,
+        targets=["veltrix array"],
+        predicate_filter=frozenset({"developed_by", "runs_on"}),
+        max_blocks=2,
+    )
+
+    assert plan is not None
+    developed = next(block for block in plan.blocks if block.step.edge.predicate == "developed_by")
+    assert [edge.object for edge in developed.all_object_edges()] == [
+        "cinder laboratory", "meridian collective", "orion works",
+    ]
+    assert set(plan.evidence_ids()) == {
+        "edge:veltrix array|developed_by|cinder laboratory",
+        "edge:veltrix array|developed_by|meridian collective",
+        "edge:veltrix array|developed_by|orion works",
+        "edge:veltrix array|runs_on|the amber substrate",
+    }
+    assert [slot["object"] for slot in developed.to_dict()["object_slots"]] == [
+        "cinder laboratory", "meridian collective", "orion works",
+    ]
+    text = render_answer_plan(plan)
+    assert "cinder laboratory, meridian collective, and orion works" in text
+    assert "the amber substrate" in text
+
+
+def test_multi_object_slot_is_identical_on_prepared_and_persistent_retrieval(tmp_path):
+    """Exact adjacency returns the full fan-out in every serving index mode."""
+    graph = [
+        _edge("veltrix array", "runs_on", "the amber substrate"),
+        _edge("veltrix array", "runs_on", "the cobalt substrate"),
+        _edge("veltrix array", "runs_on", "the jade substrate"),
+        _edge("veltrix array", "developed_by", "orion works"),
+    ]
+    kwargs = {
+        "targets": ["veltrix array"],
+        "predicate_filter": frozenset({"runs_on", "developed_by"}),
+        "max_blocks": 2,
+    }
+    legacy = build_answer_plan("What runs on and developed veltrix array?", graph, **kwargs)
+    prepared = build_answer_plan(
+        "What runs on and developed veltrix array?", [],
+        prepared_edges=prepare_evidence_graph(graph), **kwargs,
+    )
+    persistent = prepare_persistent_evidence_graph(graph, tmp_path / "fanout.sqlite")
+    disk = build_answer_plan(
+        "What runs on and developed veltrix array?", [], prepared_edges=persistent, **kwargs,
+    )
+
+    assert legacy is not None and prepared is not None and disk is not None
+    assert prepared.to_dict() == legacy.to_dict() == disk.to_dict()
+    runs_on = next(block for block in disk.blocks if block.step.edge.predicate == "runs_on")
+    assert len(runs_on.all_object_edges()) == 3
 
 
 def test_explicit_predicate_intent_prevents_unrelated_diversity_blocks():
@@ -169,6 +230,64 @@ def test_explicit_multi_predicate_intent_keeps_each_requested_relation_only():
     )
     assert plan is not None
     assert {block.step.edge.predicate for block in plan.blocks} == {"enables", "supports"}
+
+
+def test_explicit_multi_predicate_intent_keeps_distinct_relations_with_same_object():
+    graph = [
+        _edge("veltrix array", "developed_by", "orion works"),
+        _edge("veltrix array", "product_of", "orion works"),
+    ]
+    plan = build_answer_plan(
+        "Who developed and manufactured veltrix array?",
+        graph,
+        targets=["veltrix array"],
+        predicate_filter=frozenset({"developed_by", "product_of"}),
+    )
+
+    assert plan is not None
+    assert [block.step.edge.predicate for block in plan.blocks] == ["developed_by", "product_of"]
+
+
+def test_implicit_two_fact_contract_selects_two_relation_groups_even_with_same_object():
+    # The two claims have identical payload text, so ordinary novelty alone
+    # would stop after one.  A structural cardinality request must preserve
+    # both independently evidenced relation groups without naming either one.
+    graph = [
+        _edge("veltrix array", "developed_by", "orion works"),
+        _edge("veltrix array", "owned_by", "orion works"),
+        _edge("veltrix array", "uses", "calibration lattice"),
+    ]
+    plan = build_answer_plan(
+        "Tell me two key relations about veltrix array.",
+        graph,
+        targets=["veltrix array"],
+        required_distinct_predicates=2,
+        max_blocks=2,
+    )
+
+    assert plan is not None
+    assert [block.step.edge.predicate for block in plan.blocks] == ["developed_by", "owned_by"]
+    assert plan_is_expansion(plan)
+
+
+def test_focused_relation_lookup_rejects_contained_target_neighbours():
+    # A lexical neighbour is valid graph evidence about a different entity,
+    # but must not become an additional fact in an answer focused on the exact
+    # target.  This protects support/provenance without subject-specific rules.
+    graph = [
+        _edge("north relay", "used_for", "signal routing"),
+        _edge("north relay extended", "used_for", "diagnostic replay"),
+    ]
+    plan = build_answer_plan(
+        "For what application is north relay employed?",
+        graph,
+        targets=["north relay"],
+        predicate_filter="used_for",
+        max_blocks=3,
+    )
+
+    assert plan is not None
+    assert plan.evidence_ids() == ["edge:north relay|used_for|signal routing"]
 
 
 def test_target_label_tokens_do_not_hide_a_distinct_object_entity():

@@ -32,6 +32,8 @@ def _measure(case: dict, result: dict, *, system: str, all_objects: set[str]) ->
     unknown = result.get("exact_unknown", False) if system == "qwen" else result.get("decision") == "audit"
     hits = sum(_contains(answer, value) for value in expected)
     mentioned = {item for item in all_objects if _contains(answer, item)}
+    expected_mentions = {normalize(item) for item in expected}
+    correct_mentions = {item for item in mentioned if normalize(item) in expected_mentions}
     context_text = " ".join(case["contexts"])
     unsupported = {item for item in mentioned if item not in expected and not _contains(context_text, item)}
     if case["expected_decision"] == "unknown": correct = unknown
@@ -42,7 +44,7 @@ def _measure(case: dict, result: dict, *, system: str, all_objects: set[str]) ->
         provenance = bool(selected) and selected.issubset(set(case["relation_ids"]))
     return {"correct": correct, "negative_correct": correct if case["category"] == "negative" else None,
             "object_recall": hits / len(expected) if expected else None,
-            "object_precision": hits / len(mentioned) if mentioned else (1.0 if hits else None),
+            "object_precision": len(correct_mentions) / len(mentioned) if mentioned else (1.0 if hits else None),
             "unsupported": bool(unsupported), "predicate_adherence": bool(hits == len(expected) and not unknown) if expected else unknown,
             "provenance": provenance, "latency": result.get("total_latency_ms"), "ttft": result.get("ttft_ms"),
             "tokens_per_second": result.get("tokens_per_second"), "answer_length": len(answer)}

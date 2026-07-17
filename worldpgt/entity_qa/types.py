@@ -18,6 +18,7 @@ SemanticQueryType = Literal[
     "definition",
     "filtered_lookup",
     "open_synthesis",
+    "multi_fact",
 ]
 
 EntityQAIntent = Literal[

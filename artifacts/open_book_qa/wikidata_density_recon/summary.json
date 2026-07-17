@@ -1,0 +1,280 @@
+{
+  "version": "wikidata_density_recon_v1",
+  "measurement_only": true,
+  "extraction_performed": false,
+  "precision_gate_run": false,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "source": "official Wikidata Action API: wbsearchentities + batched wbgetentities",
+  "cohort_subject_counts": {
+    "crossref_promoted_46": 46,
+    "openalex_accepted_2": 2,
+    "original_331": 331
+  },
+  "unique_subject_count": 379,
+  "existing_exact_resolution_coverage_original_331": {
+    "exact_qid_resolved": 41,
+    "status_counts": {
+      "ambiguous_wikidata_exact": 56,
+      "exact_wikidata_without_enwiki_anchor": 18,
+      "resolved_wikidata_exact_enwiki": 23,
+      "unresolved_wikidata_exact": 234
+    }
+  },
+  "all_cohort_resolution_status_counts": {
+    "ambiguous_wikidata_exact": 65,
+    "exact_wikidata_without_enwiki_anchor": 18,
+    "resolved_wikidata_exact": 2,
+    "resolved_wikidata_exact_enwiki": 23,
+    "unresolved_wikidata_exact": 271
+  },
+  "exact_qid_resolution_by_cohort": {
+    "crossref_promoted_46": {
+      "subject_count": 46,
+      "exact_qid_resolved": 2,
+      "status_counts": {
+        "ambiguous_wikidata_exact": 9,
+        "resolved_wikidata_exact": 2,
+        "unresolved_wikidata_exact": 35
+      }
+    },
+    "openalex_accepted_2": {
+      "subject_count": 2,
+      "exact_qid_resolved": 0,
+      "status_counts": {
+        "unresolved_wikidata_exact": 2
+      }
+    },
+    "original_331": {
+      "subject_count": 331,
+      "exact_qid_resolved": 41,
+      "status_counts": {
+        "ambiguous_wikidata_exact": 56,
+        "exact_wikidata_without_enwiki_anchor": 18,
+        "resolved_wikidata_exact_enwiki": 23,
+        "unresolved_wikidata_exact": 234
+      }
+    }
+  },
+  "exact_qid_definition": "one unambiguous exact English-label Wikidata item; an English Wikipedia anchor is not required for this measurement",
+  "exact_qid_subject_count": 43,
+  "entity_records_returned": 43,
+  "fresh_exact_search_queries": 48,
+  "network_calls_this_invocation": 2,
+  "property_density": {
+    "resolved_subject_count": 43,
+    "unresolved_subject_count": 336,
+    "content_property_group_distribution_exclusive": {
+      "0": 7,
+      "1": 8,
+      "2": 5,
+      "3-4": 5,
+      "5-9": 14,
+      "10+": 4
+    },
+    "content_property_group_threshold_counts": {
+      "0": 7,
+      "1": 8,
+      "2": 5,
+      "3": 23,
+      "5+": 18,
+      "10+": 4
+    },
+    "mean_content_property_groups": 4.604651162790698,
+    "median_content_property_groups": 3,
+    "subjects_with_two_or_more_new_schema_property_groups": 25,
+    "mean_new_schema_property_groups": 3.441860465116279,
+    "top_15_content_bearing_properties": [
+      {
+        "property_id": "P2283",
+        "label": "uses",
+        "subject_count": 7,
+        "maps_to_existing_predicate": "uses"
+      },
+      {
+        "property_id": "P361",
+        "label": "part of",
+        "subject_count": 7,
+        "maps_to_existing_predicate": "part_of"
+      },
+      {
+        "property_id": "P366",
+        "label": "has use",
+        "subject_count": 7,
+        "maps_to_existing_predicate": "used_for"
+      },
+      {
+        "property_id": "P571",
+        "label": "inception",
+        "subject_count": 7,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P275",
+        "label": "copyright license",
+        "subject_count": 6,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P407",
+        "label": "language of work or name",
+        "subject_count": 6,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P495",
+        "label": "country of origin",
+        "subject_count": 6,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P348",
+        "label": "software version identifier",
+        "subject_count": 5,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P577",
+        "label": "publication date",
+        "subject_count": 5,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P6216",
+        "label": "copyright status",
+        "subject_count": 5,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P17",
+        "label": "country",
+        "subject_count": 4,
+        "maps_to_existing_predicate": "located_in"
+      },
+      {
+        "property_id": "P178",
+        "label": "developer",
+        "subject_count": 4,
+        "maps_to_existing_predicate": "developed_by"
+      },
+      {
+        "property_id": "P306",
+        "label": "operating system",
+        "subject_count": 4,
+        "maps_to_existing_predicate": "runs_on"
+      },
+      {
+        "property_id": "P138",
+        "label": "named after",
+        "subject_count": 3,
+        "maps_to_existing_predicate": null
+      },
+      {
+        "property_id": "P1433",
+        "label": "published in",
+        "subject_count": 3,
+        "maps_to_existing_predicate": null
+      }
+    ],
+    "existing_schema_property_map": {
+      "P101": "has_topic",
+      "P1056": "produces",
+      "P112": "founded_by",
+      "P123": "published_by",
+      "P127": "owned_by",
+      "P131": "located_in",
+      "P159": "headquartered_in",
+      "P17": "located_in",
+      "P176": "product_of",
+      "P178": "developed_by",
+      "P2283": "uses",
+      "P276": "located_in",
+      "P2860": "references_work",
+      "P306": "runs_on",
+      "P355": "parent_company_of",
+      "P361": "part_of",
+      "P366": "used_for",
+      "P400": "runs_on",
+      "P50": "created_by",
+      "P921": "has_topic"
+    },
+    "excluded_structural_or_meta_properties": [
+      "P1269",
+      "P1343",
+      "P1424",
+      "P1476",
+      "P154",
+      "P18",
+      "P1889",
+      "P279",
+      "P31",
+      "P373",
+      "P460",
+      "P646",
+      "P910",
+      "P935"
+    ],
+    "excluded_claim_datatypes": [
+      "commonsMedia",
+      "external-id",
+      "geo-shape",
+      "tabular-data",
+      "url"
+    ]
+  },
+  "current_predicate_schema": [
+    "alias",
+    "based_at",
+    "ceased_operations",
+    "construction_started",
+    "created_by",
+    "developed_by",
+    "develops",
+    "enables",
+    "filed_for_bankruptcy",
+    "first_released",
+    "founded",
+    "founded_by",
+    "funded_by",
+    "has_facility",
+    "has_topic",
+    "headquartered_in",
+    "hosted_flight_to",
+    "industry",
+    "introduced",
+    "is_a",
+    "leader_of",
+    "located_in",
+    "manufactures",
+    "marketed_as",
+    "merged_with",
+    "offers",
+    "operates",
+    "owned_by",
+    "parent_company_of",
+    "part_of",
+    "platform_of",
+    "produces",
+    "product_of",
+    "provides",
+    "published_by",
+    "references_work",
+    "runs_on",
+    "service_of",
+    "subsidiary_of",
+    "supports",
+    "type_of",
+    "used_for",
+    "uses",
+    "valued_at",
+    "variant_of",
+    "works_by"
+  ],
+  "comparison_context": {
+    "arxiv_precision_accepted_multi_predicate_entities": "0/331",
+    "crossref_precision_accepted_multi_predicate_entities": "46/100",
+    "openalex_precision_accepted_multi_predicate_entities": "2/6-paired",
+    "wikidata_measurement": "potential content-property groups on exact-QID-resolved current subjects; not extracted or precision-validated relations"
+  },
+  "interpretation_boundary": "Unmapped content properties count only potential new predicate groups. They are neither candidate relations nor evidence of future precision-gate acceptance."
+}

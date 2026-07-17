@@ -1,0 +1,33 @@
+{
+  "version": "final_multi_evidence_v1",
+  "frozen_before_question_generation": true,
+  "case_count": 60,
+  "cases_per_category": {
+    "multi_evidence_explicit": 30,
+    "multi_evidence_implicit": 30
+  },
+  "cases_per_lane": {
+    "crossref": 46,
+    "openalex": 2,
+    "wikidata": 12
+  },
+  "predicate_pair_type_counts": {
+    "crossref:created_by+published_by": 46,
+    "openalex:has_topic+references_work": 2,
+    "wikidata:developed_by+owned_by": 1,
+    "wikidata:developed_by+runs_on": 3,
+    "wikidata:has_topic+published_by": 1,
+    "wikidata:has_topic+wikidata_p495_country_of_origin": 1,
+    "wikidata:located_in+produces": 1,
+    "wikidata:located_in+product_of": 1,
+    "wikidata:part_of+wikidata_p527_has_part_s": 1,
+    "wikidata:used_for+uses": 2,
+    "wikidata:wikidata_p282_writing_system+wikidata_p407_language_of_work_or_name": 1
+  },
+  "previous_relation_or_evidence_id_count": 383,
+  "heldout_relation_or_evidence_id_count": 151,
+  "zero_overlap_relation_ids": true,
+  "zero_overlap_evidence_ids": true,
+  "overlap_count": 0,
+  "scope": "Crossref serving campaign + Wikidata serving campaign + OpenAlex proposal rows in an isolated benchmark graph; accepted/trusted memory remains unchanged."
+}

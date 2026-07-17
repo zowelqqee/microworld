@@ -1,0 +1,38 @@
+{
+  "original_before": {
+    "observations": 300,
+    "accuracy": 0.9,
+    "by_category": {
+      "multi_evidence_explicit": 0.9,
+      "multi_evidence_implicit": 0.9
+    }
+  },
+  "original_after": {
+    "observations": 300,
+    "accuracy": 0.95,
+    "by_category": {
+      "multi_evidence_explicit": 0.9333333333333333,
+      "multi_evidence_implicit": 0.9666666666666667
+    }
+  },
+  "independent_validation": {
+    "observations": 90,
+    "accuracy": 0.9444444444444444,
+    "by_category": {
+      "multi_evidence_explicit": 0.8888888888888888,
+      "multi_evidence_implicit": 1.0
+    }
+  },
+  "validation_dataset": {
+    "case_count": 18,
+    "cases_per_category": {
+      "multi_evidence_explicit": 9,
+      "multi_evidence_implicit": 9
+    },
+    "unique_subject_count": 5,
+    "unique_relation_id_count": 15,
+    "zero_overlap_with_original_frozen_relations": true,
+    "zero_overlap_with_diagnosed_failure_relations": true,
+    "limitation": "18 relation-level novel cases derive from 12 predicate pairs on five remaining promoted subject neighbourhoods; six pairs are tested in the complementary explicit/implicit form."
+  }
+}

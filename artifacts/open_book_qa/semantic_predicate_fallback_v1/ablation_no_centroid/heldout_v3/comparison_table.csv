@@ -1,0 +1,7 @@
+system,category,cases,answer_accuracy,negative_accuracy,object_precision,object_recall,predicate_adherence,unsupported_claim_rate,divergence_accuracy,exact_evidence_provenance_accuracy,answer_length,latency_p50_ms,latency_p95_ms,latency_p99_ms,ttft_p50_ms,tokens_per_second,startup_ms,artifact_size_mib,extra_memory_mib
+MicroWorld explicit graph runtime,paraphrase,100,0.9,,0.6622807017543859,0.9,0.9,0.1,,0.85,74.8,18.4144785,93.86637855,111.47353050000008,,,,,
+MicroWorld explicit graph runtime,multi_evidence_implicit,50,1.0,,1.0,1.0,1.0,0.0,,1.0,367.9,21.402458,34.79803345,35.19176099,,,,,
+MicroWorld explicit graph runtime,multi_evidence_explicit,50,1.0,,1.0,1.0,1.0,0.0,,1.0,344.5,32.584,54.036366,56.463303999999994,,,,,
+Qwen2.5-0.5B-Instruct 4-bit,paraphrase,100,0.8,,0.9736842105263158,0.8516666666666667,0.8,0.05,,,16.15,238.47325,302.8147295,312.43846476000004,,14.463969714373986,,,
+Qwen2.5-0.5B-Instruct 4-bit,multi_evidence_implicit,50,0.4,,0.8571428571428571,0.5,0.4,0.1,,,159.7,572.2165,711.09443765,761.3183463299999,,74.6217618910244,,,
+Qwen2.5-0.5B-Instruct 4-bit,multi_evidence_explicit,50,1.0,,1.0,1.0,1.0,0.0,,,65.3,337.3471455,589.5487393999999,607.1594274999999,,44.86340821107024,,,

@@ -1,0 +1,45 @@
+{
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "input_relation_count": 12,
+  "input_entity_count": 6,
+  "passed_source_gate": 12,
+  "passed_precision_gate": 4,
+  "rejected_or_quarantined": 8,
+  "passed_by_predicate": {
+    "has_topic": 2,
+    "references_work": 2
+  },
+  "rejected_or_quarantined_by_reason": {
+    "generic_relation_bad_subject": 8
+  },
+  "entities_with_any_relation_after_gate": 2,
+  "entities_with_two_or_more_predicate_groups_after_gate": 2,
+  "entities_with_second_relation_group_after_gate": 2,
+  "predicate_group_compositions": {
+    "has_topic+references_work": 2
+  },
+  "unlocked_canonical_openalex_ids": [
+    "https://openalex.org/W2119710370",
+    "https://openalex.org/W2126248690"
+  ],
+  "accepted_multi_predicate_entities": [
+    {
+      "canonical_openalex_id": "https://openalex.org/W2119710370",
+      "title": "The Economics of Superstars",
+      "predicate_groups": [
+        "has_topic",
+        "references_work"
+      ]
+    },
+    {
+      "canonical_openalex_id": "https://openalex.org/W2126248690",
+      "title": "Rethinking the Orality-Literacy Paradigm in Musicology",
+      "predicate_groups": [
+        "has_topic",
+        "references_work"
+      ]
+    }
+  ]
+}

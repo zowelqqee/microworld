@@ -1,0 +1,4 @@
+source_group,candidate_count,unique_relation_records,unique_subjects_unlocked,percent_of_331_subjects,structural_patterns,detail_record_coverage
+arxiv:arxiv.org,158,85,79,23.87%,"enables_v2=54; located_in_v2=4; provides_v2=8; supports_v2=22; uses_v2=70",complete
+crossref:doi.org,88,59,54,16.31%,"enables_v2=16; located_in_v2=1; provides_v2=3; supports_v2=17; uses_v2=47; works_by_v2=4",complete
+openalex:doi.org,13,7,7,2.11%,"enables_v2=7; supports_v2=4; uses_v2=1; works_by_v2=1",complete

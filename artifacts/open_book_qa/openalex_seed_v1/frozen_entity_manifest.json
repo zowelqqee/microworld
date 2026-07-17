@@ -1,0 +1,62 @@
+[
+  {
+    "canonical_openalex_id": "https://openalex.org/W2117050472",
+    "title": "Energy and the food system",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2117050472?select=id,display_name,doi,topics,referenced_works"
+  },
+  {
+    "canonical_openalex_id": "https://openalex.org/W2119710370",
+    "title": "The Economics of Superstars",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2119710370?select=id,display_name,doi,topics,referenced_works"
+  },
+  {
+    "canonical_openalex_id": "https://openalex.org/W2126248690",
+    "title": "Rethinking the Orality-Literacy Paradigm in Musicology",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2126248690?select=id,display_name,doi,topics,referenced_works"
+  },
+  {
+    "canonical_openalex_id": "https://openalex.org/W2133505387",
+    "title": "The new global lithological map database GLiM: A representation of rock properties at the Earth surface",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2133505387?select=id,display_name,doi,topics,referenced_works"
+  },
+  {
+    "canonical_openalex_id": "https://openalex.org/W2558084536",
+    "title": "<i>Open<scp>MEE</scp></i>: Intuitive, open‐source software for meta‐analysis in ecology and evolutionary biology",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2558084536?select=id,display_name,doi,topics,referenced_works"
+  },
+  {
+    "canonical_openalex_id": "https://openalex.org/W2752695001",
+    "title": "Snowball Earth climate dynamics and Cryogenian geology-geobiology",
+    "predicate_groups": [
+      "has_topic",
+      "references_work"
+    ],
+    "relation_count": 2,
+    "source_url": "https://api.openalex.org/works/W2752695001?select=id,display_name,doi,topics,referenced_works"
+  }
+]

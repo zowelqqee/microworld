@@ -1,0 +1,29 @@
+{
+  "version": "openalex_topic_reference_seed_v1",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "source": "official OpenAlex Works API",
+  "selection": "each quarantine-seed DOI with one named highest-scored topic and one named referenced work",
+  "starting_unique_quarantine_relations": 7,
+  "starting_unique_seed_dois": 7,
+  "max_entities": 7,
+  "fetch": {
+    "seed_query_count": 7,
+    "reference_lookup_count": 6,
+    "total_queries": 13,
+    "errors": []
+  },
+  "frozen_entity_count": 6,
+  "proposal_relation_count": 12,
+  "predicate_distribution": {
+    "has_topic": 6,
+    "references_work": 6
+  },
+  "main_edge_overlap_count": 0,
+  "main_target_subject_count": 331,
+  "main_subject_overlap_count": 0,
+  "main_subject_overlap_titles": [],
+  "crossref_promoted_entity_overlap_count": 0,
+  "crossref_promoted_entity_overlap_dois": []
+}

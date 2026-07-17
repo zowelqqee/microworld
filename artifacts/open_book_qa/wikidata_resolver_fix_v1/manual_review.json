@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "Corneau",
+    "canonical_qid": "Q16855775",
+    "candidate_label": "Corneau",
+    "review_status": "rejected",
+    "reason": "The candidate is a family name, while the evidence sentence refers to a filmmaker's use of cinematic techniques."
+  },
+  {
+    "subject": "ETCs",
+    "canonical_qid": "Q604804",
+    "candidate_label": "European Train Control System",
+    "review_status": "rejected",
+    "reason": "The source discusses extraterrestrial civilizations (ETCs), not rail signalling; a bare alias is insufficient context."
+  },
+  {
+    "subject": "Evaluation",
+    "canonical_qid": "Q1379672",
+    "candidate_label": "evaluation",
+    "review_status": "approved",
+    "reason": "The evidence is explicitly about evaluation using quantitative and qualitative approaches; the candidate is the matching general concept."
+  },
+  {
+    "subject": "HITL",
+    "canonical_qid": "Q1142371",
+    "candidate_label": "Hardware-in-the-loop simulation",
+    "review_status": "rejected",
+    "reason": "In the human-centred-AI source, HITL means human-in-the-loop, not hardware-in-the-loop simulation."
+  },
+  {
+    "subject": "Marine biodiversity",
+    "canonical_qid": "Q130095263",
+    "candidate_label": "marine biodiversity",
+    "review_status": "approved",
+    "reason": "The candidate's description and the source evidence both denote diversity of organisms in marine environments."
+  },
+  {
+    "subject": "RGAKFD",
+    "canonical_qid": "Q4398058",
+    "candidate_label": "Russian State Film and Photo Archive",
+    "review_status": "approved",
+    "reason": "The source's archival acronym and the candidate describe the same Russian film and photo archive."
+  },
+  {
+    "subject": "Risk analysis",
+    "canonical_qid": "Q11679892",
+    "candidate_label": "risk analysis",
+    "review_status": "approved",
+    "reason": "The source's systematic assessment and prioritisation of threats matches the candidate concept."
+  },
+  {
+    "subject": "scanning transmission electron microscopy",
+    "canonical_qid": "Q874835",
+    "candidate_label": "scanning transmission electron microscopy",
+    "review_status": "approved",
+    "reason": "The evidence explicitly names STEM; the candidate is the corresponding microscopy technique."
+  },
+  {
+    "subject": "XMPP",
+    "canonical_qid": "Q188951",
+    "candidate_label": "Extensible Messaging and Presence Protocol",
+    "review_status": "approved",
+    "reason": "The source explicitly uses XMPP as a messaging protocol, matching the candidate."
+  }
+]

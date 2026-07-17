@@ -22,6 +22,8 @@ def test_relation_keyword_mapping_covers_system_predicates():
     examples = {
         "Who founded SpaceX?": "founded_by",
         "SpaceX was started by whom?": "founded_by",
+        "Who developed ANGLE?": "developed_by",
+        "Who created an original work?": "created_by",
         "Which companies does Tesla own?": "owned_by",
         "What does SpaceX build?": "develops",
         "Who leads Starlink?": "leader_of",
@@ -42,10 +44,51 @@ def test_relation_keyword_mapping_covers_system_predicates():
         assert relation_intent_from_text(text) == expected
 
 
+def test_object_lookup_grammar_retains_unindexed_named_subjects():
+    for question, subject, predicate in (
+        ("Who developed ANGLE?", "ANGLE", "developed_by"),
+        ("Who created an original work?", "an original work", "created_by"),
+        ("Where is Busboy Productions headquartered?", "Busboy Productions", "headquartered_in"),
+    ):
+        parsed = parse_semantic_query(question)
+        assert (parsed.entity_a, parsed.relation_intent, parsed.unknown_position) == (
+            subject, predicate, "object",
+        )
+
+
+def test_entity_analyzer_does_not_collapse_creation_into_founding():
+    analyzed = analyze("Who created an original work?")
+    assert analyzed is not None
+    assert analyzed.predicate_hint == "created_by"
+
+
 def test_relation_keyword_mapping_retains_coordinated_intents():
     assert relation_intents_from_text(
         "What does artificial intelligence support, and what is it used for?"
     ) == frozenset({"supports", "used_for"})
+
+
+def test_structural_two_fact_requests_are_not_downgraded_to_open_synthesis():
+    implicit = parse_semantic_query("Tell me two key relations about Unindexed Graph Node.")
+    explicit = parse_semantic_query(
+        "For Unindexed Graph Node, what are its alpha and beta relations?"
+    )
+    for parsed in (implicit, explicit):
+        assert parsed.entity_a == "Unindexed Graph Node"
+        assert parsed.relation_intent is None
+        assert parsed.query_type == "multi_fact"
+
+
+def test_manufacturer_is_distinct_from_developer_in_coordinated_questions():
+    assert relation_intents_from_text(
+        "By whom was Device engineered, and who manufactured Device?"
+    ) == frozenset({"developed_by", "product_of"})
+
+
+def test_headquartered_is_retained_in_a_coordinated_relation_query():
+    assert relation_intents_from_text(
+        "Who founded Cabin Fever Media, and where is Cabin Fever Media headquartered?"
+    ) == frozenset({"founded_by", "headquartered_in"})
 
 
 def test_coordinated_paraphrase_predicates_are_read_from_the_relation_input_graph():

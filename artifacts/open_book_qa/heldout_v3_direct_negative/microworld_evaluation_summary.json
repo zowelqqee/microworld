@@ -1,0 +1,46 @@
+{
+  "methodology": {
+    "judge": "deterministic exact normalized surface coverage",
+    "limitation": "unsupported-claim detection only detects known dataset objects and is not a semantic verifier."
+  },
+  "rows": [
+    {
+      "system": "MicroWorld explicit graph runtime",
+      "category": "negative",
+      "cases": 100,
+      "answer_accuracy": 1.0,
+      "negative_accuracy": 1.0,
+      "object_precision": null,
+      "object_recall": null,
+      "predicate_adherence": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "divergence_accuracy": null,
+      "exact_evidence_provenance_accuracy": 0.0,
+      "latency_p50_ms": 12.0694795,
+      "latency_p95_ms": 12.773591999999999,
+      "latency_p99_ms": 13.023669580000002,
+      "ttft_p50_ms": null,
+      "tokens_per_second": null,
+      "answer_length": 48.0
+    },
+    {
+      "system": "MicroWorld explicit graph runtime",
+      "category": "direct",
+      "cases": 100,
+      "answer_accuracy": 0.95,
+      "negative_accuracy": null,
+      "object_precision": 1.0,
+      "object_recall": 0.99,
+      "predicate_adherence": 0.95,
+      "unsupported_claim_rate": 0.0,
+      "divergence_accuracy": null,
+      "exact_evidence_provenance_accuracy": 1.0,
+      "latency_p50_ms": 12.631729,
+      "latency_p95_ms": 17.096666699999997,
+      "latency_p99_ms": 17.88332949,
+      "ttft_p50_ms": null,
+      "tokens_per_second": null,
+      "answer_length": 135.55
+    }
+  ]
+}

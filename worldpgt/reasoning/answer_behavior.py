@@ -288,7 +288,7 @@ class GraphStep:
 
 @dataclass(frozen=True)
 class ContentBlock:
-    """A semantic step of the answer, traceable to one concrete graph edge.
+    """A semantic step of the answer, traceable to one relation group.
 
     ``kind`` is derived from graph structure only:
       direct_claim              — first step, incident to a question target;
@@ -301,12 +301,23 @@ class ContentBlock:
     step: GraphStep
     cautions: tuple[str, ...] = ()
     alternatives: tuple[EvidenceEdge, ...] = ()
+    # Additional exact-object edges for the same subject/predicate as
+    # ``step.edge``.  A relation group is selected and scored once, but every
+    # object remains independently evidence-backed and visible in the trace.
+    # Conflicting alternatives never enter this field: they stay an explicit
+    # uncertainty block instead.
+    object_edges: tuple[EvidenceEdge, ...] = ()
+
+    def all_object_edges(self) -> tuple[EvidenceEdge, ...]:
+        """The primary edge plus every complementary object in this slot."""
+        return (self.step.edge, *self.object_edges)
 
     def to_dict(self) -> dict:
         return {
             "kind": self.kind,
             "cautions": list(self.cautions),
             "alternatives": [edge.to_dict() for edge in self.alternatives],
+            "object_slots": [edge.to_dict() for edge in self.all_object_edges()],
             "step": self.step.to_dict(),
         }
 
@@ -337,7 +348,11 @@ class AnswerPlan:
     stop_reason: str = ""
 
     def evidence_ids(self) -> list[str]:
-        return [block.step.edge.evidence_id for block in self.blocks]
+        return [
+            edge.evidence_id
+            for block in self.blocks
+            for edge in block.all_object_edges()
+        ]
 
     def to_dict(self) -> dict:
         return {
@@ -369,6 +384,7 @@ class AnswerPlan:
                     "evidence_id": block.step.edge.evidence_id,
                     "evidence_text": block.step.edge.evidence_text,
                     "sources": list(block.step.edge.sources),
+                    "object_slots": [edge.to_dict() for edge in block.all_object_edges()],
                     "cautions": list(block.cautions),
                     "score": block.step.score.to_dict(),
                 }
@@ -575,6 +591,10 @@ def _score_candidate(
     *,
     question_terms: frozenset[str],
     covered_tokens: set[str],
+    covered_required_predicates: set[str],
+    required_predicates: frozenset[str],
+    selected_predicates: set[str],
+    required_distinct_predicates: int,
     used_attach_pairs: set[tuple[str, str]],
     step_index: int,
     instrumentation: PlanningInstrumentation | None = None,
@@ -592,6 +612,31 @@ def _score_candidate(
     payload = edge.payload_tokens()
     new_tokens = payload - covered_tokens
     information_gain = len(new_tokens) / max(1, len(payload))
+    # Object payload is the right novelty measure for open synthesis, but an
+    # explicit multi-relation question can ask for two different facts that
+    # share the same object (for example developer and manufacturer). The
+    # second relation remains required semantic content even though it adds no
+    # new object token. Scope this exception to the caller's explicit,
+    # multi-predicate contract; it does not make structural labels look novel
+    # in ordinary answers.
+    if (
+        len(required_predicates) > 1
+        and edge.predicate_norm in required_predicates
+        and edge.predicate_norm not in covered_required_predicates
+    ):
+        information_gain = max(information_gain, 1.0)
+    # An implicit cardinality request ("tell me two facts") is a request for
+    # two relation groups, even if two independently supported predicates
+    # happen to point at the same object.  A fresh predicate therefore carries
+    # structural answer value while the requested number of groups has not
+    # been met.  This is deliberately predicate-name agnostic and does not
+    # loosen the evidence or attachment requirements.
+    if (
+        required_distinct_predicates > 1
+        and len(selected_predicates) < required_distinct_predicates
+        and edge.predicate_norm not in selected_predicates
+    ):
+        information_gain = max(information_gain, 1.0)
     redundancy = 1.0 - information_gain
 
     # Reusing the same relation on the same node reads as flat enumeration
@@ -1078,6 +1123,7 @@ def build_answer_plan(
     *,
     targets: list[str],
     predicate_filter: str | frozenset[str] | None = None,
+    required_distinct_predicates: int = 1,
     max_blocks: int = _MAX_BLOCKS_DEFAULT,
     prepared_edges: (
         tuple[EvidenceEdge, ...] | PreparedEvidenceGraph | PersistentEvidenceGraph | None
@@ -1091,6 +1137,10 @@ def build_answer_plan(
     ``predicate_filter`` is one or more explicit semantic intents.  It
     constrains the plan to those relations rather than letting a general-answer
     diversity bonus introduce unrelated predicates.
+    ``required_distinct_predicates`` is a structural cardinality contract for
+    an otherwise open request.  While unmet, the planner selects a new
+    evidence-backed relation group rather than a second object from a group it
+    has already selected.
     ``prepared_edges`` may be a compatibility tuple from
     :func:`prepare_evidence_edges` or a :class:`PreparedEvidenceGraph` from
     :func:`prepare_evidence_graph`.  The graph form is the serving fast path:
@@ -1149,6 +1199,7 @@ def build_answer_plan(
         else frozenset(_norm(predicate) for predicate in predicate_filter)
         if predicate_filter is not None else frozenset()
     )
+    required_distinct_predicates = max(1, int(required_distinct_predicates))
 
     question_terms = _tokens(question)
     plan_nodes: list[str] = sorted(target_nodes)
@@ -1163,6 +1214,8 @@ def build_answer_plan(
     # not pre-cover it.  Coverage begins empty and is populated only by
     # selected evidence spans/objects below.
     covered_tokens: set[str] = set()
+    covered_required_predicates: set[str] = set()
+    selected_predicates: set[str] = set()
 
     blocks: list[ContentBlock] = []
     rejected: list[RejectedCandidate] = []
@@ -1187,12 +1240,27 @@ def build_answer_plan(
                 continue
             if allowed_predicates and edge.predicate_norm not in allowed_predicates:
                 continue
+            if (
+                len(selected_predicates) < required_distinct_predicates
+                and edge.predicate_norm in selected_predicates
+            ):
+                continue
             attachment = _find_attachment(
                 edge, plan_nodes, node_tokens, node_origin, target_nodes
             )
             if attachment is None:
                 continue
             if step_index == 0 and attachment.kind != "target":
+                continue
+            # A focused relation lookup (for example, "what is X used for?")
+            # may use graph expansion to *find* its answer, but cannot render a
+            # lexical neighbour as an additional answer fact.  Containment and
+            # token-overlap attachments are useful in open synthesis and true
+            # chain explanation; here they would let "Presenter" pull in
+            # "Presenter Video Express" despite no exact evidence for the
+            # focused target.  Require entity identity for every emitted block
+            # whenever the caller supplied explicit predicate intent(s).
+            if allowed_predicates and attachment.kind == "target" and attachment.mode != "exact":
                 continue
             candidates.append((edge, attachment))
         if instrumentation is not None:
@@ -1206,6 +1274,10 @@ def build_answer_plan(
                 attachment,
                 question_terms=question_terms,
                 covered_tokens=covered_tokens,
+                covered_required_predicates=covered_required_predicates,
+                required_predicates=allowed_predicates,
+                selected_predicates=selected_predicates,
+                required_distinct_predicates=required_distinct_predicates,
                 used_attach_pairs=used_attach_pairs,
                 step_index=step_index,
                 instrumentation=instrumentation,
@@ -1284,10 +1356,33 @@ def build_answer_plan(
                 edge_lookup=graph.edges if graph is not None else None,
             )
         )
+        # Candidate retrieval is already local-exact: every outgoing edge for
+        # an attached subject is in ``candidates``.  Keep complementary
+        # objects from the selected subject/predicate together in one slot so
+        # a block budget limits relation groups, not factual objects.  This is
+        # intentionally structural and only accepts exact attachment; soft or
+        # contained neighbours must remain independently scored steps.  A
+        # learned functional conflict stays an uncertainty block rather than
+        # being silently enumerated as breadth.
+        object_edges = () if alternatives else tuple(sorted(
+            (
+                edge
+                for edge, attachment in candidates
+                if (
+                    edge.evidence_id != best_edge.evidence_id
+                    and edge.subject_norm == best_edge.subject_norm
+                    and edge.predicate_norm == best_edge.predicate_norm
+                    and attachment.kind == best_attachment.kind
+                    and attachment.mode == "exact"
+                    and attachment.node == best_attachment.node
+                )
+            ),
+            key=lambda edge: edge.evidence_id,
+        ))
         cautions: list[str] = []
         if alternatives:
             cautions.append("conflicting_alternatives")
-        if _source_corroboration(best_edge) < 1.0:
+        if any(_source_corroboration(edge) < 1.0 for edge in (best_edge, *object_edges)):
             cautions.append("single_source")
         kind = _block_kind(step, alternatives)
         blocks.append(
@@ -1296,6 +1391,7 @@ def build_answer_plan(
                 step=step,
                 cautions=tuple(cautions),
                 alternatives=alternatives,
+                object_edges=object_edges,
             )
         )
         if instrumentation is not None:
@@ -1303,10 +1399,12 @@ def build_answer_plan(
         rationale.append(
             f"block {step_index + 1}: {kind} attaching to "
             f"{best_attachment.kind} '{best_attachment.node}' "
-            f"({best_attachment.mode}); total={best_score.total:.3f}"
+            f"({best_attachment.mode}); total={best_score.total:.3f}; "
+            f"object_slots={1 + len(object_edges)}"
         )
 
         selected_ids.add(best_edge.evidence_id)
+        selected_ids.update(edge.evidence_id for edge in object_edges)
         # Alternatives are already surfaced inside the uncertainty block, so
         # they must not come back as separate (mirrored) claims later.
         for alternative in alternatives:
@@ -1319,6 +1417,12 @@ def build_answer_plan(
         # a relation and a descriptor extracted from one rich source sentence).
         covered_tokens |= best_edge.payload_tokens()
         covered_tokens |= _tokens(best_edge.evidence_text)
+        for object_edge in object_edges:
+            covered_tokens |= object_edge.payload_tokens()
+            covered_tokens |= _tokens(object_edge.evidence_text)
+        if best_edge.predicate_norm in allowed_predicates:
+            covered_required_predicates.add(best_edge.predicate_norm)
+        selected_predicates.add(best_edge.predicate_norm)
         for node in (best_edge.subject_norm, best_edge.object_norm):
             if instrumentation is not None:
                 instrumentation.record_node(node)
@@ -1326,6 +1430,13 @@ def build_answer_plan(
                 plan_nodes.append(node)
                 node_tokens[node] = _tokens(node)
                 node_origin[node] = step_index
+        for object_edge in object_edges:
+            if instrumentation is not None:
+                instrumentation.record_node(object_edge.object_norm)
+            if object_edge.object_norm not in node_tokens:
+                plan_nodes.append(object_edge.object_norm)
+                node_tokens[object_edge.object_norm] = _tokens(object_edge.object_norm)
+                node_origin[object_edge.object_norm] = step_index
         if instrumentation is not None:
             instrumentation.plan_assembly_ns += time.perf_counter_ns() - assembly_started_ns
     else:

@@ -1,0 +1,631 @@
+[
+  {
+    "canonical_qid": "Q2066596",
+    "canonical_entity": "Vatican Post",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q177035",
+    "canonical_entity": "Boeing XB-15",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1475631",
+    "canonical_entity": "Gujarat Vidyapith",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q5001290",
+    "canonical_entity": "Busboy Productions",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1029858",
+    "canonical_entity": "Gyulaj Hunting Hungary",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q18643705",
+    "canonical_entity": "Google Play Newsstand",
+    "predicate_groups": [
+      "developed_by",
+      "runs_on",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q16971152",
+    "canonical_entity": "ANGLE",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 5,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q5583799",
+    "canonical_entity": "Google Apps Script",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q17082351",
+    "canonical_entity": "Cabin Fever Media",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q3742989",
+    "canonical_entity": "World Wide Web Foundation",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q3577919",
+    "canonical_entity": "École des arts industriels et des mines",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 6,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1232190",
+    "canonical_entity": "Institut d'Égypte",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q6394",
+    "canonical_entity": "Boeing 707",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 5,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q890179",
+    "canonical_entity": "Boeing Calc",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q6491",
+    "canonical_entity": "CC-150 Polaris",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q42393368",
+    "canonical_entity": "Willett Advisors",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q381955",
+    "canonical_entity": "ATM",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q3353202",
+    "canonical_entity": "Open Source Development Labs",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 5,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q2940652",
+    "canonical_entity": "Cartooning for Peace",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1974620",
+    "canonical_entity": "Clinton Foundation",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q7517763",
+    "canonical_entity": "Simian",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q373178",
+    "canonical_entity": "IECEE",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q665335",
+    "canonical_entity": "Italian Democratic Socialist Party",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q25496011",
+    "canonical_entity": "Israeli Public Broadcasting Corporation",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "parent_company_of"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q53222",
+    "canonical_entity": "Digital Living Network Alliance",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q79578",
+    "canonical_entity": "Google Web Toolkit",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q8791",
+    "canonical_entity": "Boeing 747-8",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q29568422",
+    "canonical_entity": "WikiTribune",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q7315143",
+    "canonical_entity": "Research and Documentation Center in Sarajevo",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q763371",
+    "canonical_entity": "International Association of Prosecutors",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q46261310",
+    "canonical_entity": "Google Sheets",
+    "predicate_groups": [
+      "developed_by",
+      "owned_by",
+      "used_for"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q183533",
+    "canonical_entity": "Cominform",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q2448087",
+    "canonical_entity": "The Adventure Company",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q932631",
+    "canonical_entity": "Team Ico",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1559000",
+    "canonical_entity": "Rite of Memphis-Misraim",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q174534",
+    "canonical_entity": "Boeing B-52 Stratofortress",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q18643704",
+    "canonical_entity": "Pixel Camera",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1319216",
+    "canonical_entity": "Symbian Foundation",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1424987",
+    "canonical_entity": "Notation3",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q12476717",
+    "canonical_entity": "Boeing 737-800",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q964",
+    "canonical_entity": "Wikinews",
+    "predicate_groups": [
+      "created_by",
+      "founded_by",
+      "owned_by"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q6984525",
+    "canonical_entity": "Neatx",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q5570513",
+    "canonical_entity": "Global Network Initiative",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q52676370",
+    "canonical_entity": "KANAL - Centre Pompidou",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q1003",
+    "canonical_entity": "Solidarity",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q28054048",
+    "canonical_entity": "Boeing–Saab T-7 Red Hawk",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 5,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q6387",
+    "canonical_entity": "Boeing 737",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q81950264",
+    "canonical_entity": "Higher Ground Productions",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "produces"
+    ],
+    "relation_count": 6,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q6409",
+    "canonical_entity": "Boeing 727",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q5263655",
+    "canonical_entity": "TV3 Norway",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by"
+    ],
+    "relation_count": 2,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q5364684",
+    "canonical_entity": "Nitro chiral",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q3489548",
+    "canonical_entity": "Solo Mobile",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q672416",
+    "canonical_entity": "Scuola Normale Superiore",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "parent_company_of"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q890209",
+    "canonical_entity": "Boeing P-26 Peashooter",
+    "predicate_groups": [
+      "developed_by",
+      "product_of",
+      "used_for"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q7390579",
+    "canonical_entity": "SK-II",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q24188",
+    "canonical_entity": "Sega Sports R&D",
+    "predicate_groups": [
+      "headquartered_in",
+      "owned_by",
+      "produces"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q79854",
+    "canonical_entity": "Communist Party of the Soviet Union",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 3,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q19878517",
+    "canonical_entity": "Speech Recognition & Synthesis",
+    "predicate_groups": [
+      "developed_by",
+      "used_for"
+    ],
+    "relation_count": 4,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q993079",
+    "canonical_entity": "European Gendarmerie Force",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in"
+    ],
+    "relation_count": 6,
+    "wikipedia_anchor_required": true
+  },
+  {
+    "canonical_qid": "Q37033",
+    "canonical_entity": "World Wide Web Consortium",
+    "predicate_groups": [
+      "founded_by",
+      "headquartered_in",
+      "parent_company_of"
+    ],
+    "relation_count": 5,
+    "wikipedia_anchor_required": true
+  }
+]

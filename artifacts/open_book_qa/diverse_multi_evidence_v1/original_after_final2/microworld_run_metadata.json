@@ -1,0 +1,10 @@
+{
+  "system": "MicroWorld explicit graph runtime",
+  "startup_ms": 2777.3085,
+  "warmup_queries": 50,
+  "repeats": 5,
+  "peak_incremental_python_heap_mib": 3.794658660888672,
+  "generated_timestamp": "2026-07-16T17:00:36.636317+00:00",
+  "overlay": "isolated-experimental-graph",
+  "persistent_sqlite": true
+}

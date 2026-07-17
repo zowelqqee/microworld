@@ -1,0 +1,23 @@
+{
+  "version": "wikidata_resolver_fix_v1",
+  "production_resolver_modified": true,
+  "extraction_performed": false,
+  "precision_gate_run": false,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "prior_exact_resolved_original": "41/331",
+  "prior_failure_count": 290,
+  "automatic_candidate_count": 9,
+  "manually_reviewed_candidate_count": 9,
+  "manually_confirmed_new_resolution_count": 6,
+  "manual_false_positive_count": 3,
+  "after_resolved_original_count": 47,
+  "after_resolved_original_rate": 0.1419939577039275,
+  "new_resolution_methods": {
+    "exact_label_disambiguated_by_p31": 4,
+    "unique_wikidata_alias": 2
+  },
+  "search_queries_cached": 290,
+  "network_calls_this_invocation": 7,
+  "manual_review_required": "Every automatic candidate must be manually reviewed before use outside this resolver measurement. Only approved entries are eligible for a proposal-only extractor."
+}

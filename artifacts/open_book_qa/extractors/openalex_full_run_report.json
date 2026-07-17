@@ -1,0 +1,20 @@
+{
+  "lane": "openalex",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "unique_quarantine_relations": 7,
+  "stored_source_records_found": 7,
+  "source_specific_extracted": 0,
+  "passed_precision_gate": 0,
+  "passed_precision_gate_with_new_predicate": 0,
+  "passed_precision_gate_same_existing_predicate": 0,
+  "rejected_or_quarantined": 7,
+  "reason_codes": {
+    "source_specific_non_atomic_endpoint": 7
+  },
+  "potential_unique_subjects": 7,
+  "actual_subjects_with_second_relation_group": 0,
+  "actual_unlocked_subjects": [],
+  "input_fingerprint": "4456cc0eb46cdf3266de50d282c2f405d20722a176c307747d42921e7703c01c"
+}

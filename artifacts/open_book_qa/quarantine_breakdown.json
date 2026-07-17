@@ -1,0 +1,90 @@
+{
+  "scope": "diagnostic only; no quarantine records were promoted or re-extracted",
+  "precision_gate_audit": {
+    "path": "artifacts/open_book_qa/heldout_v1/precision_gate_audit.json",
+    "target_single_relation_subjects": 331,
+    "reported_relation_candidates": 259,
+    "reported_reason": "open_web_relation_requires_source_specific_extractor"
+  },
+  "detail_record_availability": {
+    "raw_matching_records": 259,
+    "unique_relation_records": 150,
+    "unique_subjects": 137,
+    "duplicate_records_across_campaign_segments": 109,
+    "missing_source_level_records": 0,
+    "finding": "All 259 audit-counted candidates are represented in retained open_web_quarantine segment artifacts. The apparent 109-record gap came from the prior breakdown's normalized relation deduplication, not from missing logs or a distinct unattributable candidate type."
+  },
+  "grouping_method": {
+    "source_group": "source_kind:URL host",
+    "subject_unlock_definition": "Each of the 331 targets had one clean predicate group. A retained quarantine candidate for a target is counted as a possible second relation group for prioritization only; it is not admitted evidence.",
+    "candidate_count": "raw quarantine records, matching the 259 precision-gate audit count",
+    "unique_relation_records": "normalized subject, predicate, object, source_url; this removes repeated records from rerun campaign segments",
+    "structural_metadata": "extraction_pattern (or v2_pattern_id when extraction_pattern is absent)"
+  },
+  "source_groups": [
+    {
+      "source_group": "arxiv:arxiv.org",
+      "candidate_count": 158,
+      "unique_relation_records": 85,
+      "unique_subjects_unlocked": 79,
+      "percent_of_331_subjects": 23.87,
+      "structural_patterns": {
+        "enables_v2": 54,
+        "located_in_v2": 4,
+        "provides_v2": 8,
+        "supports_v2": 22,
+        "uses_v2": 70
+      }
+    },
+    {
+      "source_group": "crossref:doi.org",
+      "candidate_count": 88,
+      "unique_relation_records": 59,
+      "unique_subjects_unlocked": 54,
+      "percent_of_331_subjects": 16.31,
+      "structural_patterns": {
+        "enables_v2": 16,
+        "located_in_v2": 1,
+        "provides_v2": 3,
+        "supports_v2": 17,
+        "uses_v2": 47,
+        "works_by_v2": 4
+      }
+    },
+    {
+      "source_group": "openalex:doi.org",
+      "candidate_count": 13,
+      "unique_relation_records": 7,
+      "unique_subjects_unlocked": 7,
+      "percent_of_331_subjects": 2.11,
+      "structural_patterns": {
+        "enables_v2": 7,
+        "supports_v2": 4,
+        "uses_v2": 1,
+        "works_by_v2": 1
+      }
+    }
+  ],
+  "top_5_by_unique_subjects_unlocked": [
+    {
+      "source_group": "arxiv:arxiv.org",
+      "unique_subjects_unlocked": 79,
+      "percent_of_331_subjects": 23.87
+    },
+    {
+      "source_group": "crossref:doi.org",
+      "unique_subjects_unlocked": 54,
+      "percent_of_331_subjects": 16.31
+    },
+    {
+      "source_group": "openalex:doi.org",
+      "unique_subjects_unlocked": 7,
+      "percent_of_331_subjects": 2.11
+    }
+  ],
+  "recommendation": {
+    "priority_order": ["arxiv:arxiv.org", "crossref:doi.org", "openalex:doi.org"],
+    "observed_retained_coverage": "The top two source groups cover 131 unique subjects (39.58% of 331); all three cover 137 (41.39%).",
+    "conclusion": "This is not a logging gap and not a long source-host tail: the complete 259-record audit is concentrated in exactly three source groups. Three source-specific extractors are the complete observed lane set, but their candidate coverage is 137 of 331 subjects (41.39%), not 60-80%. Their actual relation-density unlock rate remains an empirical question and must be measured without relaxing quarantine."
+  }
+}

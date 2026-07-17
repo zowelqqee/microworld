@@ -1,0 +1,31 @@
+{
+  "version": "ios_demo_v2_extended_serving_overlay",
+  "offline_only": true,
+  "accepted_memory_modified": false,
+  "promoted_wiki_overlay_modified": false,
+  "base_overlay_path": "worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json",
+  "base_item_count": 363,
+  "campaign_input_item_counts": {
+    "campaign_extension_p12_v1/open_web_campaign_evidence_grounded_graph_overlay.json": 596,
+    "campaign_long_v2/open_web_campaign_evidence_grounded_graph_overlay.json": 295,
+    "campaign_overnight_feedback_v1/open_web_campaign_evidence_grounded_graph_overlay.json": 1329,
+    "campaign_crossref_doi_v1/open_web_campaign_evidence_grounded_graph_overlay.json": 113,
+    "campaign_wikidata_seed_v1/open_web_campaign_evidence_grounded_graph_overlay.json": 73
+  },
+  "precision_gated_openalex_relation_count": 4,
+  "added_relation_count": 903,
+  "added_relation_counts_by_lane": {
+    "crossref": 113,
+    "openalex": 4,
+    "original_campaign": 713,
+    "wikidata": 73
+  },
+  "validated_multi_evidence_subject_cohorts": {
+    "original_331": 331,
+    "crossref_multi_evidence": 46,
+    "wikidata_multi_evidence": 12,
+    "openalex_multi_evidence": 2
+  },
+  "total_overlay_item_count": 1266,
+  "total_relation_count": 990
+}

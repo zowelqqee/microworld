@@ -1,0 +1,496 @@
+[
+  {
+    "subject": "Elliptic curve cryptography",
+    "surface_subject": "Elliptic curve cryptography",
+    "canonical_qid": "Q1048911",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Predictive analytics",
+    "surface_subject": "Predictive analytics",
+    "canonical_qid": "Q1053367",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "AutoGrad",
+    "surface_subject": "AutoGrad",
+    "canonical_qid": "Q107382428",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "BAMM",
+    "surface_subject": "BAMM",
+    "canonical_qid": "Q107432674",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "SOMIT",
+    "surface_subject": "SOMIT",
+    "canonical_qid": "Q107491355",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "graph neural network",
+    "surface_subject": "graph neural network",
+    "canonical_qid": "Q107750691",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "NIDS",
+    "surface_subject": "NIDS",
+    "canonical_qid": "Q109576421",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "REML",
+    "surface_subject": "REML",
+    "canonical_qid": "Q111770374",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Urban biodiversity",
+    "surface_subject": "Urban biodiversity",
+    "canonical_qid": "Q113116287",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Large Language Model",
+    "surface_subject": "Large Language Model",
+    "canonical_qid": "Q115305900",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Risk analysis",
+    "surface_subject": "Risk analysis",
+    "canonical_qid": "Q11679892",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "risk analysis",
+    "canonical_resolution_method": "exact_label_disambiguated_by_p31",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "retrieval-augmented generation",
+    "surface_subject": "retrieval-augmented generation",
+    "canonical_qid": "Q121362277",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Marine biodiversity",
+    "surface_subject": "Marine biodiversity",
+    "canonical_qid": "Q130095263",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "marine biodiversity",
+    "canonical_resolution_method": "exact_label_disambiguated_by_p31",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "Internet Control Message Protocol",
+    "surface_subject": "Internet Control Message Protocol",
+    "canonical_qid": "Q13162",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "DeepSeek-R1",
+    "surface_subject": "DeepSeek-R1",
+    "canonical_qid": "Q131914874",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Direct cinema",
+    "surface_subject": "Direct cinema",
+    "canonical_qid": "Q1323308",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "CD-adapco",
+    "surface_subject": "CD-adapco",
+    "canonical_qid": "Q132383",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "SF-36",
+    "surface_subject": "SF-36",
+    "canonical_qid": "Q133549",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "CKKS",
+    "surface_subject": "CKKS",
+    "canonical_qid": "Q136705699",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "REGAI",
+    "surface_subject": "REGAI",
+    "canonical_qid": "Q137638949",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Evaluation",
+    "surface_subject": "Evaluation",
+    "canonical_qid": "Q1379672",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "evaluation",
+    "canonical_resolution_method": "exact_label_disambiguated_by_p31",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "FrontierMath",
+    "surface_subject": "FrontierMath",
+    "canonical_qid": "Q140133892",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "VSAT",
+    "surface_subject": "VSAT",
+    "canonical_qid": "Q16295206",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Monetary policy",
+    "surface_subject": "Monetary policy",
+    "canonical_qid": "Q178476",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "SPSS",
+    "surface_subject": "SPSS",
+    "canonical_qid": "Q181596",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "XMPP",
+    "surface_subject": "XMPP",
+    "canonical_qid": "Q188951",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "Extensible Messaging and Presence Protocol",
+    "canonical_resolution_method": "unique_wikidata_alias",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "CVAE",
+    "surface_subject": "CVAE",
+    "canonical_qid": "Q2998577",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Real-time",
+    "surface_subject": "Real-time",
+    "canonical_qid": "Q347066",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "POMP",
+    "surface_subject": "POMP",
+    "canonical_qid": "Q37011122",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "LAMMPS",
+    "surface_subject": "LAMMPS",
+    "canonical_qid": "Q4042577",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "RGAKFD",
+    "surface_subject": "RGAKFD",
+    "canonical_qid": "Q4398058",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "Russian State Film and Photo Archive",
+    "canonical_resolution_method": "unique_wikidata_alias",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "Data-driven",
+    "surface_subject": "Data-driven",
+    "canonical_qid": "Q5227278",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Nanoscale electrostatic control of oxide interfaces",
+    "surface_subject": "Nanoscale electrostatic control of oxide interfaces",
+    "canonical_qid": "Q53297381",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Physiological computing",
+    "surface_subject": "Physiological computing",
+    "canonical_qid": "Q59589305",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Digital agriculture",
+    "surface_subject": "Digital agriculture",
+    "canonical_qid": "Q60760664",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "HDF5",
+    "surface_subject": "HDF5",
+    "canonical_qid": "Q61080677",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Chemotaxis",
+    "surface_subject": "Chemotaxis",
+    "canonical_qid": "Q658145",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Open University",
+    "surface_subject": "Open University",
+    "canonical_qid": "Q6755402",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "MathNet",
+    "surface_subject": "MathNet",
+    "canonical_qid": "Q6787303",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "CNNs",
+    "surface_subject": "CNNs",
+    "canonical_qid": "Q77877999",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Tianhe-2",
+    "surface_subject": "Tianhe-2",
+    "canonical_qid": "Q7800177",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Classical physics",
+    "surface_subject": "Classical physics",
+    "canonical_qid": "Q81745",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Progressivism",
+    "surface_subject": "Progressivism",
+    "canonical_qid": "Q821102",
+    "canonical_resolution_status": "resolved_wikidata_exact_enwiki",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "scanning transmission electron microscopy",
+    "surface_subject": "scanning transmission electron microscopy",
+    "canonical_qid": "Q874835",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated_manually_verified",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "scanning transmission electron microscopy",
+    "canonical_resolution_method": "exact_label_disambiguated_by_p31",
+    "canonical_is_additive": true,
+    "surface_retained": true
+  },
+  {
+    "subject": "STudieS",
+    "surface_subject": "STudieS",
+    "canonical_qid": "Q9347372",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "Aging research",
+    "surface_subject": "Aging research",
+    "canonical_qid": "Q96698317",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  },
+  {
+    "subject": "IoT",
+    "surface_subject": "IoT",
+    "canonical_qid": "Q96708468",
+    "canonical_resolution_status": "exact_wikidata_without_enwiki_anchor",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest"
+  }
+]

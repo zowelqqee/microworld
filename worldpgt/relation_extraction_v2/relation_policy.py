@@ -212,7 +212,10 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "established": "founded_by",
     "co-established": "founded_by",
     "created by": "created_by",
-    "create": "founded_by",
+    # Creation and founding are not interchangeable graph predicates.  Keep
+    # the user's creation wording attached to ``created_by``; callers that
+    # mean organisational founding have the explicit founder/start forms.
+    "create": "created_by",
     "created": "created_by",
     # ownership / corporate structure
     "owned by": "owned_by",
@@ -226,12 +229,16 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "parent company of": "parent_company_of",
     "subsidiary of": "subsidiary_of",
     "subsidiary": "subsidiary_of",
+    "headquartered": "headquartered_in",
     # development / production
     "developed by": "developed_by",
+    "developed": "developed_by",
+    "engineered": "developed_by",
     "built by": "developed_by",
     "made by": "developed_by",
     "designed by": "developed_by",
-    "manufactured by": "developed_by",
+    "manufactured by": "product_of",
+    "manufactured": "product_of",
     "develop": "develops",
     "develops": "develops",
     "engineer": "develops",
@@ -402,8 +409,13 @@ def relation_intents_from_text(text: str) -> frozenset[str]:
     normalized = re.sub(r"\s+", " ", (text or "").lower().strip())
     if not normalized:
         return frozenset()
-    return frozenset(
+    intents = {
         RELATION_KEYWORD_MAP[keyword]
         for keyword in _RELATION_KEYWORDS_BY_LENGTH
         if re.search(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", normalized)
-    )
+    }
+    # A generic locative cue must yield to the more specific headquarters
+    # relation when both occur in one coordinated question.
+    if "headquartered_in" in intents:
+        intents.discard("located_in")
+    return frozenset(intents)

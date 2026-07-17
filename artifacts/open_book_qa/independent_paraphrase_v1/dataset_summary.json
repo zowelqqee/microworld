@@ -1,0 +1,7 @@
+{
+  "total_cases": 20,
+  "answer_cases": 16,
+  "negative_cases": 4,
+  "evidence_graph": "heldout_v3 frozen_relations.json (unchanged)",
+  "independence": "templates written once for this builder; never used in dataset/heldout builders or the fallback example-phrase table"
+}

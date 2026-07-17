@@ -121,6 +121,16 @@ _UNSAFE_DEFINITION_TERMS = frozenset({
     "popular", "authoritative", "exhaustive", "comprehensive", "rigorous", "crucial", "worldwide",
     "leading", "major", "powerful", "recently", "right",
 })
+_SOURCE_SPECIFIC_RELATION_EXTRACTIONS = frozenset({
+    "arxiv_explicit_relation_v1",
+    "crossref_explicit_relation_v1",
+    # DOI metadata is a separate, field-level Crossref extractor.  It remains
+    # proposal-only and still traverses both generic precision firewalls.
+    "crossref_doi_structured_metadata_v1",
+    "openalex_api_topic_reference_structured_v1",
+    "openalex_explicit_relation_v1",
+    "wikidata_api_structured_property_v1",
+})
 _ABSTRACT_DEFINITION_HEADS = frozenset({
     "algorithm", "approach", "branch", "collection", "corpus", "database", "discipline", "field",
     "form", "framework", "language", "library", "method", "model", "platform", "process", "protocol",
@@ -1068,6 +1078,17 @@ def _open_web_source_gate(items: Iterable[dict[str, Any]]) -> dict[str, list[dic
     rejected: list[dict[str, Any]] = []
     quarantine: list[dict[str, Any]] = []
     for item in items:
+        if item.get("overlay_type") == "overlay_relation":
+            extraction = str(item.get("open_web_extraction") or "")
+            source_kind = str(item.get("source_kind") or "")
+            if (
+                extraction in _SOURCE_SPECIFIC_RELATION_EXTRACTIONS
+                and extraction.startswith(f"{source_kind}_")
+            ):
+                accepted.append(item)
+            else:
+                quarantine.append({"item": item, "reason": "open_web_relation_requires_source_specific_extractor"})
+            continue
         if item.get("overlay_type") != "overlay_definition":
             quarantine.append({"item": item, "reason": "open_web_relation_requires_source_specific_extractor"})
             continue
@@ -1093,12 +1114,19 @@ def _open_web_source_gate(items: Iterable[dict[str, Any]]) -> dict[str, list[dic
     return {"accepted": accepted, "rejected": rejected, "quarantine": quarantine}
 
 
-def build_proposal_overlay(docs: list[ReadySnapshotDoc]) -> dict[str, Any]:
+def build_proposal_overlay(
+    docs: list[ReadySnapshotDoc],
+    *,
+    source_specific_candidates: Iterable[dict[str, Any]] = (),
+) -> dict[str, Any]:
     """Extract and gate candidates, preserving rejected/quarantined evidence."""
     generic_candidates, extraction = extract_yield_v2(docs)
     abstract_candidates = extract_open_web_abstract_definitions(docs)
-    candidates = generic_candidates + abstract_candidates
-    candidates = _with_record_provenance(candidates, docs)
+    candidates = _with_record_provenance(generic_candidates + abstract_candidates, docs)
+    # These candidates already carry a source-specific parser provenance and
+    # must retain it unchanged for the source gate below.  They still traverse
+    # both precision firewalls with every other candidate.
+    candidates.extend(dict(item) for item in source_specific_candidates)
     exploratory = build_exploratory_relation_overlay(candidates)
     source_gate = _open_web_source_gate(candidates)
     quality = apply_precision_firewall(source_gate["accepted"])

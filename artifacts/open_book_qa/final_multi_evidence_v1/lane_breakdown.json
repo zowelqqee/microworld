@@ -1,0 +1,112 @@
+{
+  "by_lane_and_category": [
+    {
+      "system": "microworld",
+      "category": "multi_evidence_explicit",
+      "lane": "crossref",
+      "observations": 115,
+      "answer_accuracy": 0.9565217391304348,
+      "provenance_accuracy": 1.0,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "microworld",
+      "category": "multi_evidence_explicit",
+      "lane": "openalex",
+      "observations": 5,
+      "answer_accuracy": 1.0,
+      "provenance_accuracy": 1.0,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "microworld",
+      "category": "multi_evidence_explicit",
+      "lane": "wikidata",
+      "observations": 30,
+      "answer_accuracy": 0.6666666666666666,
+      "provenance_accuracy": 1.0,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "microworld",
+      "category": "multi_evidence_implicit",
+      "lane": "crossref",
+      "observations": 115,
+      "answer_accuracy": 1.0,
+      "provenance_accuracy": 0.8695652173913043,
+      "unsupported_claim_rate": 0.13043478260869565
+    },
+    {
+      "system": "microworld",
+      "category": "multi_evidence_implicit",
+      "lane": "openalex",
+      "observations": 5,
+      "answer_accuracy": 1.0,
+      "provenance_accuracy": 1.0,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "microworld",
+      "category": "multi_evidence_implicit",
+      "lane": "wikidata",
+      "observations": 30,
+      "answer_accuracy": 0.5,
+      "provenance_accuracy": 0.8333333333333334,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_explicit",
+      "lane": "crossref",
+      "observations": 115,
+      "answer_accuracy": 0.782608695652174,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_explicit",
+      "lane": "openalex",
+      "observations": 5,
+      "answer_accuracy": 1.0,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_explicit",
+      "lane": "wikidata",
+      "observations": 30,
+      "answer_accuracy": 0.3333333333333333,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_implicit",
+      "lane": "crossref",
+      "observations": 115,
+      "answer_accuracy": 0.7391304347826086,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_implicit",
+      "lane": "openalex",
+      "observations": 5,
+      "answer_accuracy": 0.0,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    },
+    {
+      "system": "qwen",
+      "category": "multi_evidence_implicit",
+      "lane": "wikidata",
+      "observations": 30,
+      "answer_accuracy": 0.5,
+      "provenance_accuracy": null,
+      "unsupported_claim_rate": 0.0
+    }
+  ]
+}

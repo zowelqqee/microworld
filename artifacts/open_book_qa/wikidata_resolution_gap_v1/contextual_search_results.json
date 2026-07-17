@@ -1,0 +1,324 @@
+{
+  "ACCDB": {
+    "query": "ACCDB chemistry databases",
+    "hits": []
+  },
+  "CISM": {
+    "query": "Critical Incident Stress Management",
+    "hits": [
+      {
+        "qid": "Q1308825",
+        "label": "Critical incident stress management",
+        "description": "aspect of psychology",
+        "match_type": "label",
+        "match_text": "Critical incident stress management"
+      },
+      {
+        "qid": "Q35113245",
+        "label": "Critical incident stress management (CISM): benefit or risk for emergency services?",
+        "description": "scientific article",
+        "match_type": "label",
+        "match_text": "Critical incident stress management (CISM): benefit or risk for emergency services?"
+      },
+      {
+        "qid": "Q34763553",
+        "label": "Critical Incident Stress Management (CISM): a statistical review of the literature",
+        "description": "scientific article",
+        "match_type": "label",
+        "match_text": "Critical Incident Stress Management (CISM): a statistical review of the literature"
+      },
+      {
+        "qid": "Q53627125",
+        "label": "Critical Incident Stress Management (CISM) in complex systems: Cultural adaptation and safety impacts in healthcare",
+        "description": "scientific article published on January 15, 2014",
+        "match_type": "label",
+        "match_text": "Critical Incident Stress Management (CISM) in complex systems: Cultural adaptation and safety impacts in healthcare"
+      },
+      {
+        "qid": "Q77068969",
+        "label": "Critical incident stress management: is it worth it?",
+        "description": "scientific article published on 01 August 1996",
+        "match_type": "label",
+        "match_text": "Critical incident stress management: is it worth it?"
+      },
+      {
+        "qid": "Q31102312",
+        "label": "Critical incident stress management and the Office of the Chief Medical Examiner: preliminary inquiry.",
+        "description": "scientific article",
+        "match_type": "label",
+        "match_text": "Critical incident stress management and the Office of the Chief Medical Examiner: preliminary inquiry."
+      },
+      {
+        "qid": "Q47792898",
+        "label": "Critical incident stress management (CISM) in support of special agents and other first responders responding to the Fort Hood shooting: summary and recommendations",
+        "description": "scientific article published on January 1, 2010",
+        "match_type": "label",
+        "match_text": "Critical incident stress management (CISM) in support of special agents and other first responders responding to the Fort Hood shooting: summary and recommendations"
+      },
+      {
+        "qid": "Q57118329",
+        "label": "Critical incident stress management and the assaulted staff action program",
+        "description": "scientific article published on 01 January 1999",
+        "match_type": "label",
+        "match_text": "Critical incident stress management and the assaulted staff action program"
+      },
+      {
+        "qid": "Q77398628",
+        "label": "Critical incident stress management",
+        "description": "scientific article published on 01 October 2000",
+        "match_type": "label",
+        "match_text": "Critical incident stress management"
+      },
+      {
+        "qid": "Q34171084",
+        "label": "Critical incident stress management (CISM): the assaultive psychiatric patient",
+        "description": "scientific article",
+        "match_type": "label",
+        "match_text": "Critical incident stress management (CISM): the assaultive psychiatric patient"
+      }
+    ]
+  },
+  "COFs": {
+    "query": "covalent organic frameworks",
+    "hits": [
+      {
+        "qid": "Q38028371",
+        "label": "Covalent organic frameworks",
+        "description": "scientific article published on 23 July 2012",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks"
+      },
+      {
+        "qid": "Q112691492",
+        "label": "Covalent Organic Frameworks: Synthesis, Properties and Applications—An Overview",
+        "description": "publication published on 01 March 2021",
+        "match_type": "label",
+        "match_text": "Covalent Organic Frameworks: Synthesis, Properties and Applications—An Overview"
+      },
+      {
+        "qid": "Q38051586",
+        "label": "Covalent organic frameworks (COFs): from design to applications",
+        "description": "scientific article published on January 21, 2013",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks (COFs): from design to applications"
+      },
+      {
+        "qid": "Q40622899",
+        "label": "Covalent organic frameworks comprising cobalt porphyrins for catalytic CO₂ reduction in water",
+        "description": "scientific article published on 20 August 2015",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks comprising cobalt porphyrins for catalytic CO₂ reduction in water"
+      },
+      {
+        "qid": "Q43698791",
+        "label": "Covalent organic frameworks as exceptional hydrogen storage materials",
+        "description": "scientific article published on 7 August 2008",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks as exceptional hydrogen storage materials"
+      },
+      {
+        "qid": "Q56086607",
+        "label": "Covalent Organic Frameworks with High Charge Carrier Mobility",
+        "description": "article",
+        "match_type": "label",
+        "match_text": "Covalent Organic Frameworks with High Charge Carrier Mobility"
+      },
+      {
+        "qid": "Q38902244",
+        "label": "Covalent Organic Frameworks for CO2 Capture",
+        "description": "scientific article",
+        "match_type": "label",
+        "match_text": "Covalent Organic Frameworks for CO2 Capture"
+      },
+      {
+        "qid": "Q38876127",
+        "label": "Covalent organic frameworks based on Schiff-base chemistry: synthesis, properties and potential applications",
+        "description": "scientific article published on 24 June 2016",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks based on Schiff-base chemistry: synthesis, properties and potential applications"
+      },
+      {
+        "qid": "Q50977951",
+        "label": "Covalent organic frameworks formed with two types of covalent bonds based on orthogonal reactions",
+        "description": "scientific article published on 16 January 2015",
+        "match_type": "label",
+        "match_text": "Covalent organic frameworks formed with two types of covalent bonds based on orthogonal reactions"
+      },
+      {
+        "qid": "Q50072646",
+        "label": "Covalent Organic Frameworks and Cage Compounds: Design and Applications of Polymeric and Discrete Organic Scaffolds.",
+        "description": "scientific article published on 5 December 2017",
+        "match_type": "label",
+        "match_text": "Covalent Organic Frameworks and Cage Compounds: Design and Applications of Polymeric and Discrete Organic Scaffolds."
+      }
+    ]
+  },
+  "DPQA": {
+    "query": "dynamically field-programmable neutral atoms array processors",
+    "hits": []
+  },
+  "FRAME": {
+    "query": "adversarial machine learning risk assessment framework",
+    "hits": []
+  },
+  "GN-VBC": {
+    "query": "nested vine copulas bias correction",
+    "hits": []
+  },
+  "HAIM": {
+    "query": "Holistic Artificial Intelligence in Medicine",
+    "hits": []
+  },
+  "O-MAGIC": {
+    "query": "Online Change-Point Detection for Dynamic Systems",
+    "hits": []
+  },
+  "PKE-DET": {
+    "query": "public key encryption with equality test",
+    "hits": [
+      {
+        "qid": "Q120908127",
+        "label": "Public key encryption with equality test for vehicular system based on near-ring",
+        "description": "scientific article published in 2022",
+        "match_type": "label",
+        "match_text": "Public key encryption with equality test for vehicular system based on near-ring"
+      },
+      {
+        "qid": "Q123079223",
+        "label": "Public key encryption with equality test for Industrial Internet of Things system in cloud computing",
+        "description": "scientific article published in 2021",
+        "match_type": "label",
+        "match_text": "Public key encryption with equality test for Industrial Internet of Things system in cloud computing"
+      },
+      {
+        "qid": "Q122492950",
+        "label": "Public key encryption with equality test in the standard model",
+        "description": "scientific article published in 2020",
+        "match_type": "label",
+        "match_text": "Public key encryption with equality test in the standard model"
+      },
+      {
+        "qid": "Q122260660",
+        "label": "Public key encryption with equality test via hash proof system",
+        "description": "scientific article published in 2019",
+        "match_type": "label",
+        "match_text": "Public key encryption with equality test via hash proof system"
+      },
+      {
+        "qid": "Q122192855",
+        "label": "Public key encryption with equality test from generic assumptions in the random oracle model",
+        "description": "scientific article published in 2019",
+        "match_type": "label",
+        "match_text": "Public key encryption with equality test from generic assumptions in the random oracle model"
+      },
+      {
+        "qid": "Q121364808",
+        "label": "Public Key Encryption with Equality Test for Heterogeneous Systems in Cloud Computing",
+        "description": "scientific article published in 2019",
+        "match_type": "label",
+        "match_text": "Public Key Encryption with Equality Test for Heterogeneous Systems in Cloud Computing"
+      },
+      {
+        "qid": "Q114844798",
+        "label": "Public Key Encryption with Equality Test in a Cloud Environment",
+        "description": "scientific article published in 2022",
+        "match_type": "label",
+        "match_text": "Public Key Encryption with Equality Test in a Cloud Environment"
+      }
+    ]
+  },
+  "TDOA": {
+    "query": "time difference of arrival",
+    "hits": [
+      {
+        "qid": "Q1640884",
+        "label": "multilateration",
+        "description": "navigation based on the measurement of the distances to two stations at known locations",
+        "match_type": "alias",
+        "match_text": "time difference of arrival"
+      },
+      {
+        "qid": "Q92544431",
+        "label": "Time Difference of Arrival (TDoA) Localization Combining Weighted Least Squares and Firefly Algorithm",
+        "description": "scientific article published on 04 June 2019",
+        "match_type": "label",
+        "match_text": "Time Difference of Arrival (TDoA) Localization Combining Weighted Least Squares and Firefly Algorithm"
+      },
+      {
+        "qid": "Q102150499",
+        "label": "Time Difference of Arrival Passive Localization Sensor Selection Method Based on Tabu Search",
+        "description": "scientific article published on 16 November 2020",
+        "match_type": "label",
+        "match_text": "Time Difference of Arrival Passive Localization Sensor Selection Method Based on Tabu Search"
+      },
+      {
+        "qid": "Q129892626",
+        "label": "Time difference of arrival estimation of microseismic signals based on alpha-stable distribution",
+        "description": "scholarly article published on 14 May 2018",
+        "match_type": "label",
+        "match_text": "Time difference of arrival estimation of microseismic signals based on alpha-stable distribution"
+      },
+      {
+        "qid": "Q126587406",
+        "label": "Time difference of arrival localisation exploiting all available time differences",
+        "description": "scholarly article",
+        "match_type": "label",
+        "match_text": "Time difference of arrival localisation exploiting all available time differences"
+      }
+    ]
+  },
+  "XMPP": {
+    "query": "Extensible Messaging and Presence Protocol",
+    "hits": [
+      {
+        "qid": "Q188951",
+        "label": "Extensible Messaging and Presence Protocol",
+        "description": "communications protocol for message-oriented middleware",
+        "match_type": "label",
+        "match_text": "Extensible Messaging and Presence Protocol"
+      },
+      {
+        "qid": "Q47300480",
+        "label": "RFC 6120: Extensible Messaging and Presence Protocol (XMPP): Core",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Core"
+      },
+      {
+        "qid": "Q47471487",
+        "label": "RFC 6122: Extensible Messaging and Presence Protocol (XMPP): Address Format",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Address Format"
+      },
+      {
+        "qid": "Q47471334",
+        "label": "RFC 6121: Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence"
+      },
+      {
+        "qid": "Q47471390",
+        "label": "RFC 3920: Extensible Messaging and Presence Protocol (XMPP): Core",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Core"
+      },
+      {
+        "qid": "Q47477707",
+        "label": "RFC 3921: Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence"
+      },
+      {
+        "qid": "Q47468564",
+        "label": "RFC 7622: Extensible Messaging and Presence Protocol (XMPP): Address Format",
+        "description": "request for comments publication",
+        "match_type": "alias",
+        "match_text": "Extensible Messaging and Presence Protocol (XMPP): Address Format"
+      }
+    ]
+  }
+}

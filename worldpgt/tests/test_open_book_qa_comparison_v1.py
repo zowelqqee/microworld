@@ -85,6 +85,22 @@ def test_metrics_percentiles_and_provenance_schema():
     assert percentile([1, 2, 3], .95) == 2.9 and "limitation" in summary["methodology"]
 
 
+def test_metrics_do_not_double_count_precision_for_two_edges_with_one_object():
+    case = {
+        "id": "one", "category": "multi_evidence_explicit",
+        "contexts": ["Device has two distinct relations to Maker."],
+        "expected_objects": ["Maker", "Maker"], "expected_decision": "answer",
+        "relation_ids": ["edge:device|developed_by|maker", "edge:device|product_of|maker"],
+    }
+    mw = [{
+        "id": "one", "answer": "Device was developed and manufactured by Maker.",
+        "decision": "answer", "selected_relation_ids": case["relation_ids"], "total_latency_ms": 2.0,
+    }]
+    _summary, rows = evaluate([case], mw, [])
+    assert rows[0]["answer_accuracy"] == 1.0
+    assert rows[0]["object_precision"] == 1.0
+
+
 def test_plotting_smoke_without_gui(tmp_path):
     import pytest
     pytest.importorskip("matplotlib")

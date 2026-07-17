@@ -1,0 +1,2788 @@
+{
+  "animals and climate change": [],
+  "application: quantum data encryption": [],
+  "artificial intelligence and the law": [],
+  "arts education research": [],
+  "climate change and agriculture": [
+    {
+      "id": "Q465932",
+      "title": "Q465932",
+      "pageid": 439448,
+      "concepturi": "http://www.wikidata.org/entity/Q465932",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q465932",
+      "display": {
+        "label": {
+          "value": "effects of climate change on agriculture",
+          "language": "en"
+        },
+        "description": {
+          "value": "impact of modern changes in temperature on agriculture",
+          "language": "en"
+        }
+      },
+      "label": "effects of climate change on agriculture",
+      "description": "impact of modern changes in temperature on agriculture",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "climate change and agriculture"
+      },
+      "aliases": [
+        "climate change and agriculture"
+      ]
+    },
+    {
+      "id": "Q85752897",
+      "title": "Q85752897",
+      "pageid": 85028819,
+      "concepturi": "http://www.wikidata.org/entity/Q85752897",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q85752897",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture in the United States",
+          "language": "en"
+        },
+        "description": {
+          "value": "climate change's effects on agriculture in the United States",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture in the United States",
+      "description": "climate change's effects on agriculture in the United States",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture in the United States"
+      }
+    },
+    {
+      "id": "Q83200240",
+      "title": "Q83200240",
+      "pageid": 82535530,
+      "concepturi": "http://www.wikidata.org/entity/Q83200240",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q83200240",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 March 1991",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture",
+      "description": "scientific article published on 01 March 1991",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture"
+      }
+    },
+    {
+      "id": "Q58112233",
+      "title": "Q58112233",
+      "pageid": 58026883,
+      "concepturi": "http://www.wikidata.org/entity/Q58112233",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q58112233",
+      "display": {
+        "label": {
+          "value": "Climate Change and Agriculture",
+          "language": "en"
+        },
+        "description": {
+          "value": "OECD report published 17 June 2010",
+          "language": "en"
+        }
+      },
+      "label": "Climate Change and Agriculture",
+      "description": "OECD report published 17 June 2010",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate Change and Agriculture"
+      }
+    },
+    {
+      "id": "Q57124689",
+      "title": "Q57124689",
+      "pageid": 57041835,
+      "concepturi": "http://www.wikidata.org/entity/Q57124689",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q57124689",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture: Impacts and adaptation options in South Africa",
+          "language": "en"
+        },
+        "description": {
+          "value": "article",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture: Impacts and adaptation options in South Africa",
+      "description": "article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture: Impacts and adaptation options in South Africa"
+      }
+    },
+    {
+      "id": "Q57913669",
+      "title": "Q57913669",
+      "pageid": 57828226,
+      "concepturi": "http://www.wikidata.org/entity/Q57913669",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q57913669",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture under CO 2 fertilization effects and farm level adaptation: Where do the models meet?",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article by Presley K. Wesseh & Boqiang Lin published June 2017 in Applied Energy",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture under CO 2 fertilization effects and farm level adaptation: Where do the models meet?",
+      "description": "scholarly article by Presley K. Wesseh & Boqiang Lin published June 2017 in Applied Energy",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture under CO 2 fertilization effects and farm level adaptation: Where do the models meet?"
+      }
+    },
+    {
+      "id": "Q58392543",
+      "title": "Q58392543",
+      "pageid": 58306691,
+      "concepturi": "http://www.wikidata.org/entity/Q58392543",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q58392543",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture in the Mid-Atlantic Region",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article by DG Abler & JS Shortle published 2000 in Climate Research",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture in the Mid-Atlantic Region",
+      "description": "scholarly article by DG Abler & JS Shortle published 2000 in Climate Research",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture in the Mid-Atlantic Region"
+      }
+    },
+    {
+      "id": "Q60020442",
+      "title": "Q60020442",
+      "pageid": 59900765,
+      "concepturi": "http://www.wikidata.org/entity/Q60020442",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q60020442",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture: an integrated approach to evaluate economy-wide effects for Turkey",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 4 October 2017",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture: an integrated approach to evaluate economy-wide effects for Turkey",
+      "description": "scientific article published on 4 October 2017",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture: an integrated approach to evaluate economy-wide effects for Turkey"
+      }
+    },
+    {
+      "id": "Q127006463",
+      "title": "Q127006463",
+      "pageid": 121008094,
+      "concepturi": "http://www.wikidata.org/entity/Q127006463",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q127006463",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture: Analysis of potential international impacts, 1995",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture: Analysis of potential international impacts, 1995",
+      "description": "scholarly article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture: Analysis of potential international impacts, 1995"
+      }
+    },
+    {
+      "id": "Q108050599",
+      "title": "Q108050599",
+      "pageid": 103325034,
+      "concepturi": "http://www.wikidata.org/entity/Q108050599",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q108050599",
+      "display": {
+        "label": {
+          "value": "Climate change and agriculture in the Sudan: Impact pathways beyond changes in mean rainfall and temperature",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal article from 'ECOLOGICAL ECONOMICS' published in 2020",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and agriculture in the Sudan: Impact pathways beyond changes in mean rainfall and temperature",
+      "description": "journal article from 'ECOLOGICAL ECONOMICS' published in 2020",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and agriculture in the Sudan: Impact pathways beyond changes in mean rainfall and temperature"
+      }
+    }
+  ],
+  "climate change and you": [
+    {
+      "id": "Q108932273",
+      "title": "Q108932273",
+      "pageid": 104153524,
+      "concepturi": "http://www.wikidata.org/entity/Q108932273",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q108932273",
+      "display": {
+        "label": {
+          "value": "Climate Change and YouTube: Deliberation Potential in Post-video Discussions",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article by Matthew A. Shapiro & Han Woo Park published 2 March 2017 in Environmental Communication Yearbook",
+          "language": "en"
+        }
+      },
+      "label": "Climate Change and YouTube: Deliberation Potential in Post-video Discussions",
+      "description": "scholarly article by Matthew A. Shapiro & Han Woo Park published 2 March 2017 in Environmental Communication Yearbook",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate Change and YouTube: Deliberation Potential in Post-video Discussions"
+      }
+    },
+    {
+      "id": "Q57128414",
+      "title": "Q57128414",
+      "pageid": 57045559,
+      "concepturi": "http://www.wikidata.org/entity/Q57128414",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q57128414",
+      "display": {
+        "label": {
+          "value": "Climate change and your health",
+          "language": "en"
+        },
+        "description": {
+          "value": "article",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and your health",
+      "description": "article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and your health"
+      }
+    },
+    {
+      "id": "Q36835465",
+      "title": "Q36835465",
+      "pageid": 38216899,
+      "concepturi": "http://www.wikidata.org/entity/Q36835465",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q36835465",
+      "display": {
+        "label": {
+          "value": "Climate change and your health.",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on September 1996",
+          "language": "en"
+        }
+      },
+      "label": "Climate change and your health.",
+      "description": "scientific article published on September 1996",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Climate change and your health."
+      }
+    }
+  ],
+  "creativity and dance education research": [],
+  "cybersecurity management of it products": [],
+  "cybersecurity of air force": [],
+  "defining artificial intelligence": [
+    {
+      "id": "Q123077172",
+      "title": "Q123077172",
+      "pageid": 117321101,
+      "concepturi": "http://www.wikidata.org/entity/Q123077172",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q123077172",
+      "display": {
+        "label": {
+          "value": "Defining artificial intelligence for librarians",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2022",
+          "language": "en"
+        }
+      },
+      "label": "Defining artificial intelligence for librarians",
+      "description": "scientific article published in 2022",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Defining artificial intelligence for librarians"
+      }
+    },
+    {
+      "id": "Q128331371",
+      "title": "Q128331371",
+      "pageid": 122311834,
+      "concepturi": "http://www.wikidata.org/entity/Q128331371",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q128331371",
+      "display": {
+        "label": {
+          "value": "Defining artificial intelligence as a policy problem: A discourse network analysis from Germany",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article",
+          "language": "en"
+        }
+      },
+      "label": "Defining artificial intelligence as a policy problem: A discourse network analysis from Germany",
+      "description": "scholarly article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Defining artificial intelligence as a policy problem: A discourse network analysis from Germany"
+      }
+    }
+  ],
+  "developmental comparisons in language acquisition": [],
+  "disaster economics": [],
+  "e groups": [],
+  "economic theory and economic history": [
+    {
+      "id": "Q125527709",
+      "title": "Q125527709",
+      "pageid": 119649848,
+      "concepturi": "http://www.wikidata.org/entity/Q125527709",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q125527709",
+      "display": {
+        "label": {
+          "value": "ECONOMIC THEORY AND ECONOMIC HISTORY IN GREAT BRITAIN, 1650–1776",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal article from 'Past and Present' published in 1964",
+          "language": "en"
+        }
+      },
+      "label": "ECONOMIC THEORY AND ECONOMIC HISTORY IN GREAT BRITAIN, 1650–1776",
+      "description": "journal article from 'Past and Present' published in 1964",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "ECONOMIC THEORY AND ECONOMIC HISTORY IN GREAT BRITAIN, 1650–1776"
+      }
+    }
+  ],
+  "education research beyond cyborg subjectivities": [],
+  "energy drink consumption among papuan athletes": [],
+  "epidemiology": [
+    {
+      "id": "Q133805",
+      "title": "Q133805",
+      "pageid": 135572,
+      "concepturi": "http://www.wikidata.org/entity/Q133805",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q133805",
+      "display": {
+        "label": {
+          "value": "epidemiology",
+          "language": "en"
+        },
+        "description": {
+          "value": "study of the patterns, causes, and effects of health and disease conditions",
+          "language": "en"
+        }
+      },
+      "label": "epidemiology",
+      "description": "study of the patterns, causes, and effects of health and disease conditions",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "epidemiology"
+      }
+    },
+    {
+      "id": "Q5382707",
+      "title": "Q5382707",
+      "pageid": 5148279,
+      "concepturi": "http://www.wikidata.org/entity/Q5382707",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q5382707",
+      "display": {
+        "label": {
+          "value": "Epidemiology",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology"
+      }
+    },
+    {
+      "id": "Q5382708",
+      "title": "Q5382708",
+      "pageid": 5148280,
+      "concepturi": "http://www.wikidata.org/entity/Q5382708",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q5382708",
+      "display": {
+        "label": {
+          "value": "Epidemiology and Infection",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology and Infection",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology and Infection"
+      }
+    },
+    {
+      "id": "Q27725309",
+      "title": "Q27725309",
+      "pageid": 29441572,
+      "concepturi": "http://www.wikidata.org/entity/Q27725309",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q27725309",
+      "display": {
+        "label": {
+          "value": "Epidemiology (Sunnyvale, Calif.)",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology (Sunnyvale, Calif.)",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology (Sunnyvale, Calif.)"
+      }
+    },
+    {
+      "id": "Q27723686",
+      "title": "Q27723686",
+      "pageid": 29439952,
+      "concepturi": "http://www.wikidata.org/entity/Q27723686",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q27723686",
+      "display": {
+        "label": {
+          "value": "Epidemiology and psychiatric sciences",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology and psychiatric sciences",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology and psychiatric sciences"
+      }
+    },
+    {
+      "id": "Q23978759",
+      "title": "Q23978759",
+      "pageid": 25973298,
+      "concepturi": "http://www.wikidata.org/entity/Q23978759",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q23978759",
+      "display": {
+        "label": {
+          "value": "Epidemiology and Health",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology and Health",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology and Health"
+      }
+    },
+    {
+      "id": "Q3077789",
+      "title": "Q3077789",
+      "pageid": 2941630,
+      "concepturi": "http://www.wikidata.org/entity/Q3077789",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q3077789",
+      "display": {
+        "label": {
+          "value": "epidemiology of HIV/AIDS",
+          "language": "en"
+        },
+        "description": {
+          "value": "pandemic of Human Immunodeficiency Virus",
+          "language": "en"
+        }
+      },
+      "label": "epidemiology of HIV/AIDS",
+      "description": "pandemic of Human Immunodeficiency Virus",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "epidemiology of HIV/AIDS"
+      }
+    },
+    {
+      "id": "Q5382705",
+      "title": "Q5382705",
+      "pageid": 5148277,
+      "concepturi": "http://www.wikidata.org/entity/Q5382705",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q5382705",
+      "display": {
+        "label": {
+          "value": "Epidemiology",
+          "language": "en"
+        },
+        "description": {
+          "value": "episode of Community (S2 E6)",
+          "language": "en"
+        }
+      },
+      "label": "Epidemiology",
+      "description": "episode of Community (S2 E6)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epidemiology"
+      }
+    },
+    {
+      "id": "Q3589138",
+      "title": "Q3589138",
+      "pageid": 3417617,
+      "concepturi": "http://www.wikidata.org/entity/Q3589138",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q3589138",
+      "display": {
+        "label": {
+          "value": "epidemiology of tuberculosis",
+          "language": "en"
+        }
+      },
+      "label": "epidemiology of tuberculosis",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "epidemiology of tuberculosis"
+      }
+    },
+    {
+      "id": "Q5382717",
+      "title": "Q5382717",
+      "pageid": 5148288,
+      "concepturi": "http://www.wikidata.org/entity/Q5382717",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q5382717",
+      "display": {
+        "label": {
+          "value": "cancer epidemiology",
+          "language": "en"
+        },
+        "description": {
+          "value": "study of the extent of cancer spread",
+          "language": "en"
+        }
+      },
+      "label": "cancer epidemiology",
+      "description": "study of the extent of cancer spread",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "epidemiology of cancer"
+      },
+      "aliases": [
+        "epidemiology of cancer"
+      ]
+    }
+  ],
+  "epilogue": [
+    {
+      "id": "Q1771692",
+      "title": "Q1771692",
+      "pageid": 1703788,
+      "concepturi": "http://www.wikidata.org/entity/Q1771692",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q1771692",
+      "display": {
+        "label": {
+          "value": "epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "closing text of a narrative",
+          "language": "en"
+        }
+      },
+      "label": "epilogue",
+      "description": "closing text of a narrative",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "epilogue"
+      }
+    },
+    {
+      "id": "Q140448229",
+      "title": "Q140448229",
+      "pageid": 133888292,
+      "concepturi": "http://www.wikidata.org/entity/Q140448229",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q140448229",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "book section from 'What is a disaster? Perspectives on the question' published in 1998",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "book section from 'What is a disaster? Perspectives on the question' published in 1998",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q139746405",
+      "title": "Q139746405",
+      "pageid": 133202131,
+      "concepturi": "http://www.wikidata.org/entity/Q139746405",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q139746405",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q138330611",
+      "title": "Q138330611",
+      "pageid": 131929703,
+      "concepturi": "http://www.wikidata.org/entity/Q138330611",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q138330611",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "episode of Love Life (S2 E10)",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "episode of Love Life (S2 E10)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q677297",
+      "title": "Q677297",
+      "pageid": 638017,
+      "concepturi": "http://www.wikidata.org/entity/Q677297",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q677297",
+      "display": {
+        "label": {
+          "value": "afterword",
+          "language": "en"
+        },
+        "description": {
+          "value": "notes by the author or editor at the end of a work",
+          "language": "en"
+        }
+      },
+      "label": "afterword",
+      "description": "notes by the author or editor at the end of a work",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "epilogue"
+      },
+      "aliases": [
+        "epilogue"
+      ]
+    },
+    {
+      "id": "Q50589",
+      "title": "Q50589",
+      "pageid": 52498,
+      "concepturi": "http://www.wikidata.org/entity/Q50589",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q50589",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "album by Epik High (2010)",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "album by Epik High (2010)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q20728622",
+      "title": "Q20728622",
+      "pageid": 22474162,
+      "concepturi": "http://www.wikidata.org/entity/Q20728622",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q20728622",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "1991 short film",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "1991 short film",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q18573268",
+      "title": "Q18573268",
+      "pageid": 20106341,
+      "concepturi": "http://www.wikidata.org/entity/Q18573268",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q18573268",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "painting by Gustaf Cederström",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "painting by Gustaf Cederström",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q50319716",
+      "title": "Q50319716",
+      "pageid": 51306216,
+      "concepturi": "http://www.wikidata.org/entity/Q50319716",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q50319716",
+      "display": {
+        "label": {
+          "value": "Epilogue",
+          "language": "en"
+        },
+        "description": {
+          "value": "episode of Stargate Universe (S2 E18)",
+          "language": "en"
+        }
+      },
+      "label": "Epilogue",
+      "description": "episode of Stargate Universe (S2 E18)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Epilogue"
+      }
+    },
+    {
+      "id": "Q16888536",
+      "title": "Q16888536",
+      "pageid": 18488817,
+      "concepturi": "http://www.wikidata.org/entity/Q16888536",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q16888536",
+      "display": {
+        "label": {
+          "value": "Outro",
+          "language": "en"
+        },
+        "description": {
+          "value": "literary device",
+          "language": "en"
+        }
+      },
+      "label": "Outro",
+      "description": "literary device",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Epilogue"
+      },
+      "aliases": [
+        "Epilogue"
+      ]
+    }
+  ],
+  "human geography": [
+    {
+      "id": "Q12831143",
+      "title": "Q12831143",
+      "pageid": 14244943,
+      "concepturi": "http://www.wikidata.org/entity/Q12831143",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q12831143",
+      "display": {
+        "label": {
+          "value": "human geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "study of cultures, communities and activities of peoples of the world",
+          "language": "en"
+        }
+      },
+      "label": "human geography",
+      "description": "study of cultures, communities and activities of peoples of the world",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "human geography"
+      }
+    },
+    {
+      "id": "Q15813183",
+      "title": "Q15813183",
+      "pageid": 17442031,
+      "concepturi": "http://www.wikidata.org/entity/Q15813183",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q15813183",
+      "display": {
+        "label": {
+          "value": "Japanese Journal of Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Japanese Journal of Human Geography",
+      "description": "journal",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Human geography"
+      },
+      "aliases": [
+        "Human geography"
+      ]
+    },
+    {
+      "id": "Q15817022",
+      "title": "Q15817022",
+      "pageid": 17445549,
+      "concepturi": "http://www.wikidata.org/entity/Q15817022",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q15817022",
+      "display": {
+        "label": {
+          "value": "Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Human Geography",
+      "description": "journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human Geography"
+      }
+    },
+    {
+      "id": "Q57403694",
+      "title": "Q57403694",
+      "pageid": 57320203,
+      "concepturi": "http://www.wikidata.org/entity/Q57403694",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q57403694",
+      "display": {
+        "label": {
+          "value": "Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "textbook of Gegraphy",
+          "language": "en"
+        }
+      },
+      "label": "Human Geography",
+      "description": "textbook of Gegraphy",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human Geography"
+      }
+    },
+    {
+      "id": "Q111716413",
+      "title": "Q111716413",
+      "pageid": 106646089,
+      "concepturi": "http://www.wikidata.org/entity/Q111716413",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q111716413",
+      "display": {
+        "label": {
+          "value": "Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "book published in 1999",
+          "language": "en"
+        }
+      },
+      "label": "Human Geography",
+      "description": "book published in 1999",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human Geography"
+      }
+    },
+    {
+      "id": "Q57606991",
+      "title": "Q57606991",
+      "pageid": 57520839,
+      "concepturi": "http://www.wikidata.org/entity/Q57606991",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q57606991",
+      "display": {
+        "label": {
+          "value": "Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "book edited by Noel Castree and Derek Gregory",
+          "language": "en"
+        }
+      },
+      "label": "Human Geography",
+      "description": "book edited by Noel Castree and Derek Gregory",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human Geography"
+      }
+    },
+    {
+      "id": "Q63718475",
+      "title": "Q63718475",
+      "pageid": 63439842,
+      "concepturi": "http://www.wikidata.org/entity/Q63718475",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q63718475",
+      "display": {
+        "label": {
+          "value": "Human Geography",
+          "language": "en"
+        },
+        "description": {
+          "value": "Chinese journal",
+          "language": "en"
+        }
+      },
+      "label": "Human Geography",
+      "description": "Chinese journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human Geography"
+      }
+    },
+    {
+      "id": "Q5867984",
+      "title": "Q5867984",
+      "pageid": 5635594,
+      "concepturi": "http://www.wikidata.org/entity/Q5867984",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q5867984",
+      "display": {
+        "label": {
+          "value": "history of human geography in China",
+          "language": "en"
+        },
+        "description": {
+          "value": "aspect of history",
+          "language": "en"
+        }
+      },
+      "label": "history of human geography in China",
+      "description": "aspect of history",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "human geography in China history"
+      },
+      "aliases": [
+        "human geography in China history"
+      ]
+    },
+    {
+      "id": "Q21830729",
+      "title": "Q21830729",
+      "pageid": 23867932,
+      "concepturi": "http://www.wikidata.org/entity/Q21830729",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q21830729",
+      "display": {
+        "label": {
+          "value": "Human geography of Russia task force",
+          "language": "en"
+        },
+        "description": {
+          "value": "sub-project of WikiProject Russia",
+          "language": "en"
+        }
+      },
+      "label": "Human geography of Russia task force",
+      "description": "sub-project of WikiProject Russia",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Human geography of Russia task force"
+      }
+    },
+    {
+      "id": "Q137583084",
+      "title": "Q137583084",
+      "pageid": 131248053,
+      "concepturi": "http://www.wikidata.org/entity/Q137583084",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q137583084",
+      "display": {
+        "label": {
+          "value": "human geography map",
+          "language": "en"
+        },
+        "description": {
+          "value": "map that represents human-related information on the surface of the Earth",
+          "language": "en"
+        }
+      },
+      "label": "human geography map",
+      "description": "map that represents human-related information on the surface of the Earth",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "human geography map"
+      }
+    }
+  ],
+  "international law in national legal systems": [],
+  "introduction to molecular biology of rna": [],
+  "introduction: culture/sociology/sociology of culture/cultural sociology": [],
+  "judeo-romance linguistics (rle linguistics e: indo-european linguistics)": [],
+  "luminous philosophy": [],
+  "materials science and applied chemistry iv": [],
+  "mathematics": [
+    {
+      "id": "Q829984",
+      "title": "Q829984",
+      "pageid": 782724,
+      "concepturi": "http://www.wikidata.org/entity/Q829984",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q829984",
+      "display": {
+        "label": {
+          "value": "Mathematics Genealogy Project",
+          "language": "en"
+        },
+        "description": {
+          "value": "web-based database for the academic genealogy of mathematicians",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics Genealogy Project",
+      "description": "web-based database for the academic genealogy of mathematicians",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics Genealogy Project"
+      }
+    },
+    {
+      "id": "Q395",
+      "title": "Q395",
+      "pageid": 601,
+      "concepturi": "http://www.wikidata.org/entity/Q395",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q395",
+      "display": {
+        "label": {
+          "value": "mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "field of study",
+          "language": "en"
+        }
+      },
+      "label": "mathematics",
+      "description": "field of study",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "mathematics"
+      }
+    },
+    {
+      "id": "Q1952935",
+      "title": "Q1952935",
+      "pageid": 1882267,
+      "concepturi": "http://www.wikidata.org/entity/Q1952935",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q1952935",
+      "display": {
+        "label": {
+          "value": "Mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "1985 studio album by Melissa Manchester",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics",
+      "description": "1985 studio album by Melissa Manchester",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics"
+      }
+    },
+    {
+      "id": "Q50816266",
+      "title": "Q50816266",
+      "pageid": 51755565,
+      "concepturi": "http://www.wikidata.org/entity/Q50816266",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q50816266",
+      "display": {
+        "label": {
+          "value": "Mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "Academic journal published by MDPI AG , covering the subjects: Science: Mathematics",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics",
+      "description": "Academic journal published by MDPI AG , covering the subjects: Science: Mathematics",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics"
+      }
+    },
+    {
+      "id": "Q853077",
+      "title": "Q853077",
+      "pageid": 804888,
+      "concepturi": "http://www.wikidata.org/entity/Q853077",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q853077",
+      "display": {
+        "label": {
+          "value": "mathematics education",
+          "language": "en"
+        },
+        "description": {
+          "value": "mathematics teaching, learning and scholarly research",
+          "language": "en"
+        }
+      },
+      "label": "mathematics education",
+      "description": "mathematics teaching, learning and scholarly research",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "mathematics education"
+      }
+    },
+    {
+      "id": "Q15766390",
+      "title": "Q15766390",
+      "pageid": 17399730,
+      "concepturi": "http://www.wikidata.org/entity/Q15766390",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q15766390",
+      "display": {
+        "label": {
+          "value": "Sbornik: Mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal",
+          "language": "en"
+        }
+      },
+      "label": "Sbornik: Mathematics",
+      "description": "journal",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Mathematics of the USSR. Sbornik"
+      },
+      "aliases": [
+        "Mathematics of the USSR. Sbornik"
+      ]
+    },
+    {
+      "id": "Q967960",
+      "title": "Q967960",
+      "pageid": 917669,
+      "concepturi": "http://www.wikidata.org/entity/Q967960",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q967960",
+      "display": {
+        "label": {
+          "value": "Mathematics Subject Classification",
+          "language": "en"
+        },
+        "description": {
+          "value": "alphanumerical classification scheme used by many mathematics journals",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics Subject Classification",
+      "description": "alphanumerical classification scheme used by many mathematics journals",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics Subject Classification"
+      }
+    },
+    {
+      "id": "Q1908348",
+      "title": "Q1908348",
+      "pageid": 1838207,
+      "concepturi": "http://www.wikidata.org/entity/Q1908348",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q1908348",
+      "display": {
+        "label": {
+          "value": "Mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "rap music producer",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics",
+      "description": "rap music producer",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics"
+      }
+    },
+    {
+      "id": "Q6786906",
+      "title": "Q6786906",
+      "pageid": 6635084,
+      "concepturi": "http://www.wikidata.org/entity/Q6786906",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q6786906",
+      "display": {
+        "label": {
+          "value": "Mathematics of Computation",
+          "language": "en"
+        },
+        "description": {
+          "value": "journal for numerical analysis published by the American Mathematical Society",
+          "language": "en"
+        }
+      },
+      "label": "Mathematics of Computation",
+      "description": "journal for numerical analysis published by the American Mathematical Society",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Mathematics of Computation"
+      }
+    },
+    {
+      "id": "Q185264",
+      "title": "Q185264",
+      "pageid": 184135,
+      "concepturi": "http://www.wikidata.org/entity/Q185264",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q185264",
+      "display": {
+        "label": {
+          "value": "history of mathematics",
+          "language": "en"
+        },
+        "description": {
+          "value": "field of study that investigates the origin of discoveries in mathematics and the mathematical methods and notation of the past",
+          "language": "en"
+        }
+      },
+      "label": "history of mathematics",
+      "description": "field of study that investigates the origin of discoveries in mathematics and the mathematical methods and notation of the past",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "mathematics history"
+      },
+      "aliases": [
+        "mathematics history"
+      ]
+    }
+  ],
+  "nature, freedom, history": [],
+  "philosophy of artificial intelligence": [
+    {
+      "id": "Q2464338",
+      "title": "Q2464338",
+      "pageid": 2380228,
+      "concepturi": "http://www.wikidata.org/entity/Q2464338",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q2464338",
+      "display": {
+        "label": {
+          "value": "philosophy of artificial intelligence",
+          "language": "en"
+        },
+        "description": {
+          "value": "area of philosophical inquiry",
+          "language": "en"
+        }
+      },
+      "label": "philosophy of artificial intelligence",
+      "description": "area of philosophical inquiry",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "philosophy of artificial intelligence"
+      }
+    }
+  ],
+  "political science and political history": [],
+  "possible future impacts of artificial intelligence": [],
+  "quantum entanglement and teleportation": [
+    {
+      "id": "Q62109936",
+      "title": "Q62109936",
+      "pageid": 61932435,
+      "concepturi": "http://www.wikidata.org/entity/Q62109936",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q62109936",
+      "display": {
+        "label": {
+          "value": "Quantum entanglement and teleportation in pulsed cavity optomechanics",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 23 November 2011",
+          "language": "en"
+        }
+      },
+      "label": "Quantum entanglement and teleportation in pulsed cavity optomechanics",
+      "description": "scientific article published on 23 November 2011",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum entanglement and teleportation in pulsed cavity optomechanics"
+      }
+    }
+  ],
+  "quantum fields and their excitations": [],
+  "quantum physics": [
+    {
+      "id": "Q1144457",
+      "title": "Q1144457",
+      "pageid": 1091086,
+      "concepturi": "http://www.wikidata.org/entity/Q1144457",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q1144457",
+      "display": {
+        "label": {
+          "value": "quantum physics",
+          "language": "en"
+        },
+        "description": {
+          "value": "theories, models and concepts that go back to the quantum hypothesis of Max Planck",
+          "language": "en"
+        }
+      },
+      "label": "quantum physics",
+      "description": "theories, models and concepts that go back to the quantum hypothesis of Max Planck",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "quantum physics"
+      }
+    },
+    {
+      "id": "Q108697340",
+      "title": "Q108697340",
+      "pageid": 103924421,
+      "concepturi": "http://www.wikidata.org/entity/Q108697340",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q108697340",
+      "display": {
+        "label": {
+          "value": "Quantum Physics",
+          "language": "en"
+        },
+        "description": {
+          "value": "book",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physics",
+      "description": "book",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physics"
+      }
+    },
+    {
+      "id": "Q126947666",
+      "title": "Q126947666",
+      "pageid": 120951389,
+      "concepturi": "http://www.wikidata.org/entity/Q126947666",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q126947666",
+      "display": {
+        "label": {
+          "value": "Quantum Physics",
+          "language": "en"
+        },
+        "description": {
+          "value": "chapter of Malaysian Form 5 physics curriculum",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physics",
+      "description": "chapter of Malaysian Form 5 physics curriculum",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physics"
+      }
+    },
+    {
+      "id": "Q140000459",
+      "title": "Q140000459",
+      "pageid": 133447637,
+      "concepturi": "http://www.wikidata.org/entity/Q140000459",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q140000459",
+      "display": {
+        "label": {
+          "value": "Quantum Physicsum Cosmologiyum",
+          "language": "en"
+        },
+        "description": {
+          "value": "Malayalam-language science published by DC Refernce : an Imprint of DC Books",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physicsum Cosmologiyum",
+      "description": "Malayalam-language science published by DC Refernce : an Imprint of DC Books",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physicsum Cosmologiyum"
+      }
+    },
+    {
+      "id": "Q96731143",
+      "title": "Q96731143",
+      "pageid": 95282537,
+      "concepturi": "http://www.wikidata.org/entity/Q96731143",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q96731143",
+      "display": {
+        "label": {
+          "value": "Quantum Physics Letters",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physics Letters",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physics Letters"
+      }
+    },
+    {
+      "id": "Q28748491",
+      "title": "Q28748491",
+      "pageid": 30407499,
+      "concepturi": "http://www.wikidata.org/entity/Q28748491",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q28748491",
+      "display": {
+        "label": {
+          "value": "Quantum physics meets biology",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article (publication date: December 2009)",
+          "language": "en"
+        }
+      },
+      "label": "Quantum physics meets biology",
+      "description": "scientific article (publication date: December 2009)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum physics meets biology"
+      }
+    },
+    {
+      "id": "Q59714796",
+      "title": "Q59714796",
+      "pageid": 59608228,
+      "concepturi": "http://www.wikidata.org/entity/Q59714796",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59714796",
+      "display": {
+        "label": {
+          "value": "Quantum Physics",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article by Serge Haroche",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physics",
+      "description": "scholarly article by Serge Haroche",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physics"
+      }
+    },
+    {
+      "id": "Q58970796",
+      "title": "Q58970796",
+      "pageid": 58880733,
+      "concepturi": "http://www.wikidata.org/entity/Q58970796",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q58970796",
+      "display": {
+        "label": {
+          "value": "Quantum Physics",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in Nature",
+          "language": "en"
+        }
+      },
+      "label": "Quantum Physics",
+      "description": "scientific article published in Nature",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum Physics"
+      }
+    },
+    {
+      "id": "Q35037980",
+      "title": "Q35037980",
+      "pageid": 36465637,
+      "concepturi": "http://www.wikidata.org/entity/Q35037980",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q35037980",
+      "display": {
+        "label": {
+          "value": "Quantum physics in neuroscience and psychology: a neurophysical model of mind-brain interaction",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article",
+          "language": "en"
+        }
+      },
+      "label": "Quantum physics in neuroscience and psychology: a neurophysical model of mind-brain interaction",
+      "description": "scientific article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum physics in neuroscience and psychology: a neurophysical model of mind-brain interaction"
+      }
+    },
+    {
+      "id": "Q59257535",
+      "title": "Q59257535",
+      "pageid": 59163501,
+      "concepturi": "http://www.wikidata.org/entity/Q59257535",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59257535",
+      "display": {
+        "label": {
+          "value": "Quantum physics exploring gravity in the outer solar system: the SAGAS project",
+          "language": "en"
+        }
+      },
+      "label": "Quantum physics exploring gravity in the outer solar system: the SAGAS project",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Quantum physics exploring gravity in the outer solar system: the SAGAS project"
+      }
+    }
+  ],
+  "renewable energy technologies i": [
+    {
+      "id": "Q128899016",
+      "title": "Q128899016",
+      "pageid": 122874666,
+      "concepturi": "http://www.wikidata.org/entity/Q128899016",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q128899016",
+      "display": {
+        "label": {
+          "value": "Renewable energy technologies in engineering: A review of current developments and future prospects",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article",
+          "language": "en"
+        }
+      },
+      "label": "Renewable energy technologies in engineering: A review of current developments and future prospects",
+      "description": "scholarly article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Renewable energy technologies in engineering: A review of current developments and future prospects"
+      }
+    },
+    {
+      "id": "Q62391890",
+      "title": "Q62391890",
+      "pageid": 62206020,
+      "concepturi": "http://www.wikidata.org/entity/Q62391890",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q62391890",
+      "display": {
+        "label": {
+          "value": "Renewable energy technologies in the Maldives—determining the potential",
+          "language": "en"
+        }
+      },
+      "label": "Renewable energy technologies in the Maldives—determining the potential",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Renewable energy technologies in the Maldives—determining the potential"
+      }
+    },
+    {
+      "id": "Q62391889",
+      "title": "Q62391889",
+      "pageid": 62206019,
+      "concepturi": "http://www.wikidata.org/entity/Q62391889",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q62391889",
+      "display": {
+        "label": {
+          "value": "Renewable energy technologies in the Maldives—Realizing the potential",
+          "language": "en"
+        }
+      },
+      "label": "Renewable energy technologies in the Maldives—Realizing the potential",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Renewable energy technologies in the Maldives—Realizing the potential"
+      }
+    },
+    {
+      "id": "Q60308347",
+      "title": "Q60308347",
+      "pageid": 60184388,
+      "concepturi": "http://www.wikidata.org/entity/Q60308347",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q60308347",
+      "display": {
+        "label": {
+          "value": "Renewable energy technologies in the Caribbean",
+          "language": "en"
+        }
+      },
+      "label": "Renewable energy technologies in the Caribbean",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Renewable energy technologies in the Caribbean"
+      }
+    }
+  ],
+  "rethinking the orality-literacy paradigm in musicology": [],
+  "teacher education research": [
+    {
+      "id": "Q96734230",
+      "title": "Q96734230",
+      "pageid": 95285624,
+      "concepturi": "http://www.wikidata.org/entity/Q96734230",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q96734230",
+      "display": {
+        "label": {
+          "value": "Teacher Education Research",
+          "language": "en"
+        }
+      },
+      "label": "Teacher Education Research",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher Education Research"
+      }
+    },
+    {
+      "id": "Q63718212",
+      "title": "Q63718212",
+      "pageid": 63439578,
+      "concepturi": "http://www.wikidata.org/entity/Q63718212",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q63718212",
+      "display": {
+        "label": {
+          "value": "Teacher Education Research",
+          "language": "en"
+        },
+        "description": {
+          "value": "Chinese journal",
+          "language": "en"
+        }
+      },
+      "label": "Teacher Education Research",
+      "description": "Chinese journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher Education Research"
+      }
+    },
+    {
+      "id": "Q125455458",
+      "title": "Q125455458",
+      "pageid": 119580547,
+      "concepturi": "http://www.wikidata.org/entity/Q125455458",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q125455458",
+      "display": {
+        "label": {
+          "value": "Teacher education research and the role of place",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 3 April 2014",
+          "language": "en"
+        }
+      },
+      "label": "Teacher education research and the role of place",
+      "description": "scientific article published on 3 April 2014",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher education research and the role of place"
+      }
+    },
+    {
+      "id": "Q122743129",
+      "title": "Q122743129",
+      "pageid": 116987193,
+      "concepturi": "http://www.wikidata.org/entity/Q122743129",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q122743129",
+      "display": {
+        "label": {
+          "value": "Teacher Education Research in China during 2000-2017: A Knowledge Mapping Analysis of Articles Indexed in the CNKI Database",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in January 2018",
+          "language": "en"
+        }
+      },
+      "label": "Teacher Education Research in China during 2000-2017: A Knowledge Mapping Analysis of Articles Indexed in the CNKI Database",
+      "description": "scientific article published in January 2018",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher Education Research in China during 2000-2017: A Knowledge Mapping Analysis of Articles Indexed in the CNKI Database"
+      }
+    },
+    {
+      "id": "Q120282727",
+      "title": "Q120282727",
+      "pageid": 114738000,
+      "concepturi": "http://www.wikidata.org/entity/Q120282727",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q120282727",
+      "display": {
+        "label": {
+          "value": "Teacher education research, policy and practice: finding future research directions",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2021",
+          "language": "en"
+        }
+      },
+      "label": "Teacher education research, policy and practice: finding future research directions",
+      "description": "scientific article published in 2021",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher education research, policy and practice: finding future research directions"
+      }
+    },
+    {
+      "id": "Q114260311",
+      "title": "Q114260311",
+      "pageid": 108965170,
+      "concepturi": "http://www.wikidata.org/entity/Q114260311",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q114260311",
+      "display": {
+        "label": {
+          "value": "Teacher education research in the global dimension: Bibliometric perspective",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2022",
+          "language": "en"
+        }
+      },
+      "label": "Teacher education research in the global dimension: Bibliometric perspective",
+      "description": "scientific article published in 2022",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Teacher education research in the global dimension: Bibliometric perspective"
+      }
+    }
+  ],
+  "terrorism economics": [],
+  "the economics of superstars": [],
+  "the future of international trade": [],
+  "the intellectual history of artificial intelligence": [],
+  "the mathematics of mathematics": [
+    {
+      "id": "Q129616503",
+      "title": "Q129616503",
+      "pageid": 123586135,
+      "concepturi": "http://www.wikidata.org/entity/Q129616503",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q129616503",
+      "display": {
+        "label": {
+          "value": "The Mathematics of Mathematics. Thinking with the Late, Spinozist Vygotsky",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article published on 24 June 2018",
+          "language": "en"
+        }
+      },
+      "label": "The Mathematics of Mathematics. Thinking with the Late, Spinozist Vygotsky",
+      "description": "scholarly article published on 24 June 2018",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "The Mathematics of Mathematics. Thinking with the Late, Spinozist Vygotsky"
+      }
+    }
+  ],
+  "the sociology of sociology": [
+    {
+      "id": "Q60360505",
+      "title": "Q60360505",
+      "pageid": 60234496,
+      "concepturi": "http://www.wikidata.org/entity/Q60360505",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q60360505",
+      "display": {
+        "label": {
+          "value": "The Sociology of Sociology",
+          "language": "en"
+        }
+      },
+      "label": "The Sociology of Sociology",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "The Sociology of Sociology"
+      }
+    },
+    {
+      "id": "Q140222081",
+      "title": "Q140222081",
+      "pageid": 133659655,
+      "concepturi": "http://www.wikidata.org/entity/Q140222081",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q140222081",
+      "display": {
+        "label": {
+          "value": "The Sociology of Sociology.",
+          "language": "en"
+        }
+      },
+      "label": "The Sociology of Sociology.",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "The Sociology of Sociology."
+      }
+    }
+  ],
+  "trade remedies": [
+    {
+      "id": "Q117018085",
+      "title": "Q117018085",
+      "pageid": 111805702,
+      "concepturi": "http://www.wikidata.org/entity/Q117018085",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q117018085",
+      "display": {
+        "label": {
+          "value": "Trade Remedies Authority",
+          "language": "en"
+        },
+        "description": {
+          "value": "UK government body",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies Authority",
+      "description": "UK government body",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies Authority"
+      }
+    },
+    {
+      "id": "Q115483388",
+      "title": "Q115483388",
+      "pageid": 110058301,
+      "concepturi": "http://www.wikidata.org/entity/Q115483388",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q115483388",
+      "display": {
+        "label": {
+          "value": "Trade Remedies Authority of Vietnam",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies Authority of Vietnam",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies Authority of Vietnam"
+      }
+    },
+    {
+      "id": "Q59637398",
+      "title": "Q59637398",
+      "pageid": 59532869,
+      "concepturi": "http://www.wikidata.org/entity/Q59637398",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59637398",
+      "display": {
+        "label": {
+          "value": "Trade Remedies and the WTO Rules Negotiations",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies and the WTO Rules Negotiations",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies and the WTO Rules Negotiations"
+      }
+    },
+    {
+      "id": "Q59635227",
+      "title": "Q59635227",
+      "pageid": 59530682,
+      "concepturi": "http://www.wikidata.org/entity/Q59635227",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59635227",
+      "display": {
+        "label": {
+          "value": "Trade Remedies: A Primer",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies: A Primer",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies: A Primer"
+      }
+    },
+    {
+      "id": "Q59598280",
+      "title": "Q59598280",
+      "pageid": 59494094,
+      "concepturi": "http://www.wikidata.org/entity/Q59598280",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59598280",
+      "display": {
+        "label": {
+          "value": "Trade Remedies: Antidumping and Countervailing Duties",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies: Antidumping and Countervailing Duties",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies: Antidumping and Countervailing Duties"
+      }
+    },
+    {
+      "id": "Q59668078",
+      "title": "Q59668078",
+      "pageid": 59562049,
+      "concepturi": "http://www.wikidata.org/entity/Q59668078",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59668078",
+      "display": {
+        "label": {
+          "value": "Trade Remedies and The U.S.-China Bilateral WTO Accession Agreement",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies and The U.S.-China Bilateral WTO Accession Agreement",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies and The U.S.-China Bilateral WTO Accession Agreement"
+      }
+    },
+    {
+      "id": "Q59639440",
+      "title": "Q59639440",
+      "pageid": 59534927,
+      "concepturi": "http://www.wikidata.org/entity/Q59639440",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59639440",
+      "display": {
+        "label": {
+          "value": "Trade Remedies: \"New Shipper\" Reviews",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies: \"New Shipper\" Reviews",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies: \"New Shipper\" Reviews"
+      }
+    },
+    {
+      "id": "Q59669271",
+      "title": "Q59669271",
+      "pageid": 59563201,
+      "concepturi": "http://www.wikidata.org/entity/Q59669271",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q59669271",
+      "display": {
+        "label": {
+          "value": "Trade Remedies and Agriculture",
+          "language": "en"
+        },
+        "description": {
+          "value": "Congressional Research Service report",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies and Agriculture",
+      "description": "Congressional Research Service report",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies and Agriculture"
+      }
+    },
+    {
+      "id": "Q119953151",
+      "title": "Q119953151",
+      "pageid": 114420752,
+      "concepturi": "http://www.wikidata.org/entity/Q119953151",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q119953151",
+      "display": {
+        "label": {
+          "value": "Trade Remedies in the Renewable Energy Sector: Normal Value and Double Remedies",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2015",
+          "language": "en"
+        }
+      },
+      "label": "Trade Remedies in the Renewable Energy Sector: Normal Value and Double Remedies",
+      "description": "scientific article published in 2015",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Trade Remedies in the Renewable Energy Sector: Normal Value and Double Remedies"
+      }
+    }
+  ],
+  "trade remedies in international trade": [],
+  "türkey’s cybersecurity policy framework": [],
+  "utopia and political science": [],
+  "veterinary public health": [
+    {
+      "id": "Q7923729",
+      "title": "Q7923729",
+      "pageid": 7862738,
+      "concepturi": "http://www.wikidata.org/entity/Q7923729",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q7923729",
+      "display": {
+        "label": {
+          "value": "veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "component of public health that focuses on the application of veterinary science",
+          "language": "en"
+        }
+      },
+      "label": "veterinary public health",
+      "description": "component of public health that focuses on the application of veterinary science",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "veterinary public health"
+      }
+    },
+    {
+      "id": "Q42590843",
+      "title": "Q42590843",
+      "pageid": 43854533,
+      "concepturi": "http://www.wikidata.org/entity/Q42590843",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q42590843",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on November 2005",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on November 2005",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q73878874",
+      "title": "Q73878874",
+      "pageid": 73511135,
+      "concepturi": "http://www.wikidata.org/entity/Q73878874",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q73878874",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 October 1997",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 October 1997",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q73717745",
+      "title": "Q73717745",
+      "pageid": 73352934,
+      "concepturi": "http://www.wikidata.org/entity/Q73717745",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q73717745",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 December 1954",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 December 1954",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q35623881",
+      "title": "Q35623881",
+      "pageid": 37019376,
+      "concepturi": "http://www.wikidata.org/entity/Q35623881",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q35623881",
+      "display": {
+        "label": {
+          "value": "Veterinary Public Health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on November 1952",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary Public Health",
+      "description": "scientific article published on November 1952",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary Public Health"
+      }
+    },
+    {
+      "id": "Q78411520",
+      "title": "Q78411520",
+      "pageid": 77864192,
+      "concepturi": "http://www.wikidata.org/entity/Q78411520",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q78411520",
+      "display": {
+        "label": {
+          "value": "VETERINARY PUBLIC HEALTH",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 January 1964",
+          "language": "en"
+        }
+      },
+      "label": "VETERINARY PUBLIC HEALTH",
+      "description": "scientific article published on 01 January 1964",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "VETERINARY PUBLIC HEALTH"
+      }
+    },
+    {
+      "id": "Q80333671",
+      "title": "Q80333671",
+      "pageid": 79730940,
+      "concepturi": "http://www.wikidata.org/entity/Q80333671",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q80333671",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 March 1949",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 March 1949",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q75226247",
+      "title": "Q75226247",
+      "pageid": 74718025,
+      "concepturi": "http://www.wikidata.org/entity/Q75226247",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q75226247",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 December 2003",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 December 2003",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q78405909",
+      "title": "Q78405909",
+      "pageid": 77858611,
+      "concepturi": "http://www.wikidata.org/entity/Q78405909",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q78405909",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 November 1958",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 November 1958",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    },
+    {
+      "id": "Q73633673",
+      "title": "Q73633673",
+      "pageid": 73270093,
+      "concepturi": "http://www.wikidata.org/entity/Q73633673",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q73633673",
+      "display": {
+        "label": {
+          "value": "Veterinary public health",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published on 01 October 1954",
+          "language": "en"
+        }
+      },
+      "label": "Veterinary public health",
+      "description": "scientific article published on 01 October 1954",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Veterinary public health"
+      }
+    }
+  ],
+  "vocational education": [
+    {
+      "id": "Q6869278",
+      "title": "Q6869278",
+      "pageid": 6723827,
+      "concepturi": "http://www.wikidata.org/entity/Q6869278",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q6869278",
+      "display": {
+        "label": {
+          "value": "vocational education",
+          "language": "en"
+        },
+        "description": {
+          "value": "higher education that is directed at mastering expertise in a particular field of science and its application",
+          "language": "en"
+        }
+      },
+      "label": "vocational education",
+      "description": "higher education that is directed at mastering expertise in a particular field of science and its application",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "vocational education"
+      }
+    },
+    {
+      "id": "Q96732985",
+      "title": "Q96732985",
+      "pageid": 95284380,
+      "concepturi": "http://www.wikidata.org/entity/Q96732985",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q96732985",
+      "display": {
+        "label": {
+          "value": "Vocational Education",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific journal",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education",
+      "description": "scientific journal",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education"
+      }
+    },
+    {
+      "id": "Q52693008",
+      "title": "Q52693008",
+      "pageid": 53503311,
+      "concepturi": "http://www.wikidata.org/entity/Q52693008",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q52693008",
+      "display": {
+        "label": {
+          "value": "Vocational Education",
+          "language": "en"
+        },
+        "description": {
+          "value": "episode of Happy Days (S11 E7)",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education",
+      "description": "episode of Happy Days (S11 E7)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education"
+      }
+    },
+    {
+      "id": "Q100445175",
+      "title": "Q100445175",
+      "pageid": 98093673,
+      "concepturi": "http://www.wikidata.org/entity/Q100445175",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q100445175",
+      "display": {
+        "label": {
+          "value": "Vocational Education Act, 1930",
+          "language": "en"
+        },
+        "description": {
+          "value": "Act of the Oireachtas No. 29 of 1930",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education Act, 1930",
+      "description": "Act of the Oireachtas No. 29 of 1930",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education Act, 1930"
+      }
+    },
+    {
+      "id": "Q7939233",
+      "title": "Q7939233",
+      "pageid": 7879269,
+      "concepturi": "http://www.wikidata.org/entity/Q7939233",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q7939233",
+      "display": {
+        "label": {
+          "value": "vocational education in the United States",
+          "language": "en"
+        }
+      },
+      "label": "vocational education in the United States",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "vocational education in the United States"
+      }
+    },
+    {
+      "id": "Q829057",
+      "title": "Q829057",
+      "pageid": 781807,
+      "concepturi": "http://www.wikidata.org/entity/Q829057",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q829057",
+      "display": {
+        "label": {
+          "value": "vocational teacher",
+          "language": "en"
+        },
+        "description": {
+          "value": "profession",
+          "language": "en"
+        }
+      },
+      "label": "vocational teacher",
+      "description": "profession",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "vocational education teacher"
+      },
+      "aliases": [
+        "vocational education teacher"
+      ]
+    },
+    {
+      "id": "Q125759585",
+      "title": "Q125759585",
+      "pageid": 119866234,
+      "concepturi": "http://www.wikidata.org/entity/Q125759585",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q125759585",
+      "display": {
+        "label": {
+          "value": "Vocational Education",
+          "language": "en"
+        },
+        "description": {
+          "value": "textbook of Education",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education",
+      "description": "textbook of Education",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education"
+      }
+    },
+    {
+      "id": "Q100397395",
+      "title": "Q100397395",
+      "pageid": 98047319,
+      "concepturi": "http://www.wikidata.org/entity/Q100397395",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q100397395",
+      "display": {
+        "label": {
+          "value": "Vocational Education (Amendment) Act, 1947",
+          "language": "en"
+        },
+        "description": {
+          "value": "Act of the Oireachtas No. 1 of 1947",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education (Amendment) Act, 1947",
+      "description": "Act of the Oireachtas No. 1 of 1947",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education (Amendment) Act, 1947"
+      }
+    },
+    {
+      "id": "Q100399612",
+      "title": "Q100399612",
+      "pageid": 98049385,
+      "concepturi": "http://www.wikidata.org/entity/Q100399612",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q100399612",
+      "display": {
+        "label": {
+          "value": "Vocational Education (Amendment) Act, 2001",
+          "language": "en"
+        },
+        "description": {
+          "value": "Act of the Oireachtas No. 23 of 2001",
+          "language": "en"
+        }
+      },
+      "label": "Vocational Education (Amendment) Act, 2001",
+      "description": "Act of the Oireachtas No. 23 of 2001",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Vocational Education (Amendment) Act, 2001"
+      }
+    },
+    {
+      "id": "Q828812",
+      "title": "Q828812",
+      "pageid": 781567,
+      "concepturi": "http://www.wikidata.org/entity/Q828812",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q828812",
+      "display": {
+        "label": {
+          "value": "professional development",
+          "language": "en"
+        },
+        "description": {
+          "value": "studies that prepare a person in knowledge and improvement in professional skills",
+          "language": "en"
+        }
+      },
+      "label": "professional development",
+      "description": "studies that prepare a person in knowledge and improvement in professional skills",
+      "match": {
+        "type": "label",
+        "language": "hi",
+        "text": "vocational education"
+      },
+      "aliases": [
+        "vocational education"
+      ]
+    }
+  ]
+}

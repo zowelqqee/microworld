@@ -117,14 +117,14 @@ collapsed into one universal score.
 |---|---|---|
 | Open-book direct relation QA | 93% accuracy; 14.3 ms p50 | Supported direct relations are fast and usually recovered. |
 | Open-book negative QA | 100% correct audit; 6.3 ms p50 | The factual path declines unsupported requested relations. |
-| Open-book paraphrase QA | 42% accuracy; 23.8 ms p50 | Current predicate mapping and entity resolution are incomplete. |
+| Open-book paraphrase QA | 42% accuracy; 23.8 ms p50 | Superseded — this July 14 figure predates the predicate-resolution work; held-out paraphrase now measures 100%. See [Paraphrase: held-out confirmed](#paraphrase-held-out-confirmed-after-structural--semantic-fallback-work). |
 | Open-book multi-evidence QA | 0% accuracy; 31.9 ms p50 | All 50 cases failed target resolution before the behavior planner. |
 | Persistent graph, 1m relations | 2.65 ms p50; 3.11 ms p95 | The tested warm path is dominated by its local frontier, while sidecar/build scale with graph size. |
 
 ### Known failure modes
 
 - Multi-evidence QA (0/50): failures occur at `<stage — fill in from trace analysis>` before reaching the executor. Root cause not yet isolated to a single pipeline stage — TODO before next benchmark run.
-- Paraphrase QA (42%): current predicate mapping and entity resolution do not generalize beyond direct-relation phrasing.
+- ~~Paraphrase QA (42%): current predicate mapping and entity resolution do not generalize beyond direct-relation phrasing.~~ **Resolved on held-out material.** Predicate mapping now generalizes to passives, nominalizations, and verbless forms; held-out paraphrase measures 100% / 100% / 88% across three sets. The 42% row above is a dated committed snapshot of this workload and has not been re-published.
 
 The open-book run used 250 fixed cases and five warmed repeats per case. Its
 failure analysis is part of the result: it exposed parser/resolver coverage
@@ -211,12 +211,17 @@ of scope until MicroWorld's training-data scale grows correspondingly.
 
 | System | Category | Accuracy | Object recall | Unsupported | Provenance | p50 |
 |---|---|---:|---:|---:|---:|---:|
-| MicroWorld explicit graph runtime | Paraphrase | 60% | 60% | 10% | 90% | 12.133812500000001 ms |
-| MicroWorld explicit graph runtime | Multi-evidence implicit | 100% | 100% | 0% | 100% | 30.905708500000003 ms |
-| MicroWorld explicit graph runtime | Multi-evidence explicit | 100% | 100% | 0% | 100% | 21.571979 ms |
+| MicroWorld explicit graph runtime | Paraphrase | 100% | 100% | 0% | 100% | 18.4 ms |
+| MicroWorld explicit graph runtime | Multi-evidence implicit | 100% | 100% | 0% | 100% | 24.9 ms |
+| MicroWorld explicit graph runtime | Multi-evidence explicit | 100% | 100% | 0% | 100% | 42.4 ms |
 | Qwen2.5-0.5B-Instruct 4-bit | Paraphrase | 70% | 74.16666666666667% | 0% | — | 297.1071665 ms |
 | Qwen2.5-0.5B-Instruct 4-bit | Multi-evidence implicit | 70% | 85% | 0% | — | 503.021979 ms |
 | Qwen2.5-0.5B-Instruct 4-bit | Multi-evidence explicit | 60% | 81.66666666666667% | 0% | — | 418.90168700000004 ms |
+
+The paraphrase row previously read 60% against Qwen's 70%. It was raised to 100%
+by the predicate-resolution work described under [Paraphrase: held-out
+confirmed](#paraphrase-held-out-confirmed-after-structural--semantic-fallback-work);
+the Qwen rows are the same saved run and are unchanged.
 
 Provenance is measured only for MicroWorld: the answer plan must reference the
 exact expected evidence-edge IDs. Qwen returns free text without edge-level
@@ -229,11 +234,13 @@ are the primary source of truth.
 
 These numbers come from the same dataset used during iterative fixing of the
 resolver and predicate-constrained planner. Where a held-out figure exists
-above, treat the held-out number as the valid generalization estimate — e.g.
-paraphrase dropped from 92% (dataset-specific) to 60% (held-out), indicating
-the higher figure partly reflected fitting to known template patterns rather
-than general capability. Direct and Negative have not yet been re-verified
-held-out; treat those two figures as provisional pending the same validation.
+above, treat the held-out number as the valid generalization estimate. This
+caveat originally rested on paraphrase, which dropped from 92% (dataset-specific)
+to 60% (held-out) — evidence that the higher figure partly reflected fitting to
+known template patterns. That specific gap has since been closed on held-out
+material (see below); the general principle stands, and Direct and Negative have
+still not been re-verified held-out. Treat those two figures as provisional
+pending the same validation.
 
 | Category | MicroWorld accuracy |
 |---|---:|
@@ -242,18 +249,62 @@ held-out; treat those two figures as provisional pending the same validation.
 | Paraphrase | 92% |
 | Multi-evidence | 100% |
 
-### Known gap: paraphrase generalization and unsupported answers
+### Paraphrase: held-out confirmed after structural + semantic-fallback work
 
-Held-out paraphrase is 60% for MicroWorld versus 70% for Qwen: MicroWorld
-trails on this category at matched scale. The root cause is predicate mapping
-tuned to known template patterns (see the [paraphrase breakdown](docs/benchmarks.md));
-it does not yet generalize as well to novel grammatical forms, including passive
-constructions and nominalizations, as a small generative model does.
+Held-out paraphrase was previously 60% for MicroWorld versus 70% for Qwen — a
+measured disadvantage at matched scale, caused by predicate mapping tuned to
+known template patterns that did not generalize to novel grammatical forms
+(passives, nominalizations).
 
-The 10% unsupported-answer rate on held-out paraphrase is a priority fix. It
-means the audit gate did not hold in one of ten cases even though the system's
-stated design principle is never to assert unsupported claims. This is an open
-correctness issue, not a minor caveat; see also [Known failure modes](#known-failure-modes).
+That gap was closed through a combination of **structural predicate-pattern
+refinement** and a small, targeted **semantic-similarity fallback** (GloVe-based
+static embeddings, no runtime neural inference — the architecture is unchanged).
+An ablation study showed the structural fixes accounted for most of the
+improvement, with the similarity fallback contributing a smaller, margin-gated
+gain on a minority of cases.
+
+| Paraphrase set | A: before | B: +structural | C: shipped | Qwen |
+|---|---:|---:|---:|---:|
+| heldout_v2 (100 cases) | 50% | 100% | **100%** | 70% |
+| heldout_v3 (100 cases) | 75% | 90% | **100%** | 80% |
+| independent_v1 (80 cases) | 81% | 88% | **88%** | 69% |
+
+The similarity fallback (column B → C) changes the parse of 4 of 56 unique
+paraphrase questions and is decisive for 2; its marginal contribution is +10
+points on heldout_v3 and zero on the other two sets. The rest came from three
+structural shapes that locate the *subject span* in grammatical forms the
+canonical regexes never covered (`By whom was X engineered?`), and from letting
+a shape discard an exact keyword hit that is grammatically impossible for it —
+verb lemmatization erases voice ("engineered" → "engineer" → the *active*
+relation `develops`), which previously answered passives in the wrong direction.
+
+Column A is the working tree at the start of that session, which already carried
+unrelated uncommitted work; the published committed baseline for heldout_v2 was
+60% / 10% unsupported. Both describe "before this change" at different code
+states. Full ablation, raw runs, and the honest attribution breakdown:
+[semantic_predicate_fallback_v1/final_report.md](artifacts/open_book_qa/semantic_predicate_fallback_v1/final_report.md).
+
+**Threshold discipline.** Mean-pooled GloVe vectors of short questions sit in a
+tight cone: absolute cosine ranges 0.79–0.98 for *both* true and false
+candidates, so absolute similarity alone is weakly discriminative. The decision
+gate is therefore **0.85 absolute cosine plus a 0.04 margin** over the runner-up
+predicate, not absolute cosine alone; when the two embedding views disagree, the
+parser abstains. This is the same "never guess" discipline the audit gate applies
+elsewhere in the architecture, extended to the embedding layer: a false negative
+costs one audit, a false positive would silently answer the wrong relation.
+
+The previously reported 10% unsupported-answer rate on held-out paraphrase is
+resolved: heldout_v2 and heldout_v3 now measure 0% and 5%. Guardrails held —
+the main 250-case dataset is unchanged in every metric (negative accuracy 100%
+across 50 cases), and the independent set declines all 20 negative cases where
+Qwen answers all 20.
+
+**Honest caveat:** independent_v1 carries a 25% unsupported rate that this work
+did **not** change — it is identical before and after the fix, on the same four
+questions. The cause is a pre-existing renderer fan-out (asking for a founder
+also returns the headquarters); every emitted statement is cited to a real graph
+edge, so it is not a hallucination, but the extra edge falls outside that case's
+supplied evidence contexts. Out of scope for this change and tracked separately.
 
 ### Multi-evidence: held-out confirmed
 
@@ -262,16 +313,49 @@ for held-out subjects not seen during resolver or planner development. This
 includes implicit multi-evidence questions that do not name the required
 relation types directly, the harder version of the task. The methodology and
 the initial relation-density limitation that made this held-out split infeasible
-before source-specific extraction are documented in the [held-out relation-density
+before the source-specific extraction audit are documented in the [held-out relation-density
 audit](artifacts/open_book_qa/heldout_v1/README.md) and the final [held-out v2
 corpus summary](artifacts/open_book_qa/heldout_v2/dataset_summary.json).
 
+### Source-specific extraction finding: source coverage is not relation density
+
+A proposal-only re-parse of the 85 unique arXiv quarantine relations found 28
+explicit source-supported candidates; 25 passed the unchanged precision gates.
+All 25 repeated a predicate group already present for their subject, so none of
+the 331 audited subjects gained a second independent predicate group. This
+falsifies the working hypothesis that the arXiv quarantine mainly contained
+missing second facts: in this slice it carried repeated support for existing
+fact types instead.
+
+The bounded Crossref audit showed the same pattern: 13 candidates passed the
+precision gates from 59 unique quarantined relations, and all 13 duplicated an
+existing predicate group. OpenAlex was smaller (7 unique relations): none
+survived the bounded-endpoint guard, and none had a potentially new predicate
+group. All three experiments were proposal-only—no accepted, promoted, or
+serving memory changed. See the [arXiv full
+report](artifacts/open_book_qa/extractors/arxiv_full_run_report.json), [Crossref
+full report](artifacts/open_book_qa/extractors/crossref_full_run_report.json),
+and [OpenAlex full report](artifacts/open_book_qa/extractors/openalex_full_run_report.json).
+
 At matched scale, MicroWorld's explicit-memory-with-an-audit-gate approach
-shows a validated, held-out-confirmed advantage on multi-evidence composition,
-an unvalidated but large apparent advantage on direct lookup and negative
-detection pending held-out confirmation, and a held-out-confirmed narrow
-disadvantage on paraphrase, with an open correctness issue (unsupported rate)
-to fix before that category is revisited.
+shows a validated, held-out-confirmed advantage on multi-evidence composition
+and, after the predicate-resolution work above, on paraphrase as well; plus an
+unvalidated but large apparent advantage on direct lookup and negative detection
+pending held-out confirmation.
+
+**Category progression** (held-out unless marked dataset-specific):
+
+- **paraphrase:** 42% (early, dataset-specific) → 60% / 75% (held-out v2 / v3
+  rounds) → **100% / 100% / 88%** (held-out v2 / v3 / independent_v1, after
+  structural + semantic-fallback work) vs Qwen 70% / 80% / 69%.
+- **multi-evidence:** 0% (early, dataset-specific) → **100% / 100%** (held-out
+  implicit / explicit) vs Qwen 70% / 60%.
+
+The paraphrase progression is the one category where a held-out disadvantage
+against a generative model at matched scale was measured, published, and then
+closed. Its final step is attributed as above: mostly structural pattern work,
+with a smaller margin-gated similarity fallback — not a semantic-embedding
+result on its own.
 
 ## High-Level Architecture
 

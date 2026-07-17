@@ -1,0 +1,272 @@
+[
+  {
+    "subject": "ACCDB",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "niche_resource_without_distinct_item",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The raw search returns a file-format family and a paper about ACCDB; the contextual chemistry-database query returns no distinct item for the source's database resource."
+  },
+  {
+    "subject": "AICCE",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_platform",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The source is a 2026 AI compliance platform and the direct search returns no Wikidata item."
+  },
+  {
+    "subject": "Algebraic circuit complexity",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "niche_technical_term_without_item",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The direct Wikidata search returns no item for this specialised term."
+  },
+  {
+    "subject": "Analytic and geometric approach are",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "clause_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is a grammatical continuation from the source sentence, not an entity label."
+  },
+  {
+    "subject": "Another approach",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "discourse_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "Search finds unrelated paper titles beginning with the same generic phrase; the phrase does not identify a source entity."
+  },
+  {
+    "subject": "CEMP",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_platform",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The 2025 clean-energy platform has no direct Wikidata item in the search results."
+  },
+  {
+    "subject": "CISM",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "alias_or_expansion_mismatch",
+    "correct_wikidata_qid": "Q1308825",
+    "correct_wikidata_label": "Critical incident stress management",
+    "rationale": "The source title expands CISM to Critical Incident Stress Management; the contextual search returns the canonical item, while the acronym-only resolver query did not accept it."
+  },
+  {
+    "subject": "COFs",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "alias_or_expansion_mismatch",
+    "correct_wikidata_qid": "Q38028371",
+    "correct_wikidata_label": "Covalent organic frameworks",
+    "rationale": "The chemistry source uses COFs; a contextual expansion resolves to the canonical Wikidata concept. The acronym-only search instead surfaces unrelated biomedical aliases."
+  },
+  {
+    "subject": "convolutional neural network",
+    "prior_resolution_status": "ambiguous_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "exact_label_disambiguation",
+    "correct_wikidata_qid": "Q17084460",
+    "correct_wikidata_label": "convolutional neural network",
+    "rationale": "A canonical concept item exists, but multiple exact-label publication items make the current one-exact-item rule reject the label as ambiguous."
+  },
+  {
+    "subject": "Descriptive statistics and logistic regression were",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "clause_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is a methods-clause fragment and the direct search returns no entity item."
+  },
+  {
+    "subject": "DPQA",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_method",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The specialised neutral-atom-array source term has no direct or contextual Wikidata item."
+  },
+  {
+    "subject": "Each side",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "discourse_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The only search hit is an unrelated album title; this phrase is not the source entity."
+  },
+  {
+    "subject": "FRAME",
+    "prior_resolution_status": "ambiguous_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_framework",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The source refers to a specific adversarial-ML assessment framework; direct and contextual searches find no corresponding item, while generic frame items are not the same scope."
+  },
+  {
+    "subject": "GN-VBC",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_method",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The named bias-correction method has no direct or contextual Wikidata item."
+  },
+  {
+    "subject": "Gradient flow decomposition",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "niche_technical_term_without_item",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The direct search returns no item for this specialised decomposition term."
+  },
+  {
+    "subject": "HAIM",
+    "prior_resolution_status": "ambiguous_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_method",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The Holistic Artificial Intelligence in Medicine source term has no direct or contextual Wikidata item."
+  },
+  {
+    "subject": "High obliquity",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "scope_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "Search returns only article titles; the source's descriptive condition is not a distinct Wikidata entity."
+  },
+  {
+    "subject": "Hydroponics requires very little space",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "assertion_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is an assertion from prose, not a canonical entity label."
+  },
+  {
+    "subject": "International study also",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "discourse_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The subject contains a discourse marker and direct search returns no matching item."
+  },
+  {
+    "subject": "LF1700A",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "niche_model_without_item",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The specialised anthropometric-test-device component has no direct Wikidata item."
+  },
+  {
+    "subject": "Liu also",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "discourse_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is an author-name continuation with a discourse marker, not an entity."
+  },
+  {
+    "subject": "Numerical results are",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "clause_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is a sentence fragment rather than an entity label."
+  },
+  {
+    "subject": "O-MAGIC",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "new_niche_method",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "The Online Change-Point Detection method has no direct or contextual Wikidata item."
+  },
+  {
+    "subject": "PKE-DET",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "niche_method_without_concept_item",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "Contextual search finds individual papers about public-key encryption with equality test, not a canonical item for the source method."
+  },
+  {
+    "subject": "Reducing computing requirements",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "goal_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is a generic objective phrase from the source, not an entity."
+  },
+  {
+    "subject": "Reinforcement Learning",
+    "prior_resolution_status": "ambiguous_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "exact_label_disambiguation",
+    "correct_wikidata_qid": "Q830687",
+    "correct_wikidata_label": "reinforcement learning",
+    "rationale": "The canonical concept item exists, but multiple exact-label items cause the current unique-exact rule to reject the otherwise clear concept."
+  },
+  {
+    "subject": "scanning transmission electron microscopy",
+    "prior_resolution_status": "ambiguous_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "exact_label_disambiguation",
+    "correct_wikidata_qid": "Q874835",
+    "correct_wikidata_label": "scanning transmission electron microscopy",
+    "rationale": "A canonical instrument-technique item exists, but same-label publication items trigger the conservative ambiguity rejection."
+  },
+  {
+    "subject": "TDOA",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "alias_or_expansion_mismatch",
+    "correct_wikidata_qid": "Q1640884",
+    "correct_wikidata_label": "multilateration",
+    "rationale": "The official search records TDOA as an alias of multilateration; the source uses the abbreviation and the current resolver accepts labels only."
+  },
+  {
+    "subject": "Vishnevska masterful",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "genuinely_absent",
+    "failure_type": "clause_fragment",
+    "correct_wikidata_qid": null,
+    "correct_wikidata_label": null,
+    "rationale": "This is a malformed descriptive fragment from the source prose, not a canonical person or work label."
+  },
+  {
+    "subject": "XMPP",
+    "prior_resolution_status": "unresolved_wikidata_exact",
+    "verdict": "matching_gap",
+    "failure_type": "alias_or_expansion_mismatch",
+    "correct_wikidata_qid": "Q188951",
+    "correct_wikidata_label": "Extensible Messaging and Presence Protocol",
+    "rationale": "The official search exposes XMPP as an alias of the canonical protocol item; the label-only exact resolver does not accept aliases."
+  }
+]

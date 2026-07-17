@@ -1,0 +1,115 @@
+{
+  "protocol": {
+    "warmups": 50,
+    "repeats": 5,
+    "seed": 42,
+    "single_shot_after_fix": true
+  },
+  "mixed_lane_before": {
+    "observations": 300,
+    "accuracy": 0.95,
+    "object_recall": 0.9859126984126984,
+    "exact_evidence_provenance": 0.95,
+    "unsupported_claim_rate": 0.05,
+    "by_category": {
+      "multi_evidence_explicit": {
+        "observations": 150,
+        "accuracy": 0.9333333333333333,
+        "object_recall": 0.9773809523809525
+      },
+      "multi_evidence_implicit": {
+        "observations": 150,
+        "accuracy": 0.9666666666666667,
+        "object_recall": 0.9944444444444444
+      }
+    }
+  },
+  "mixed_lane_after": {
+    "observations": 300,
+    "accuracy": 1.0,
+    "object_recall": 1.0,
+    "exact_evidence_provenance": 0.95,
+    "unsupported_claim_rate": 0.05,
+    "by_category": {
+      "multi_evidence_explicit": {
+        "observations": 150,
+        "accuracy": 1.0,
+        "object_recall": 1.0
+      },
+      "multi_evidence_implicit": {
+        "observations": 150,
+        "accuracy": 1.0,
+        "object_recall": 1.0
+      }
+    }
+  },
+  "fanout_specific_after": {
+    "observations": 55,
+    "accuracy": 1.0,
+    "object_recall": 1.0,
+    "exact_evidence_provenance": 1.0,
+    "unsupported_claim_rate": 0.0,
+    "by_category": {
+      "multi_evidence_explicit": {
+        "observations": 55,
+        "accuracy": 1.0,
+        "object_recall": 1.0
+      }
+    }
+  },
+  "fanout_dataset": {
+    "case_count": 11,
+    "cases_per_category": {
+      "multi_evidence_explicit": 11
+    },
+    "fanout_case_predicates": [
+      {
+        "created_by": 3,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 3,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 2,
+        "published_by": 1
+      },
+      {
+        "created_by": 3,
+        "published_by": 1
+      },
+      {
+        "used_for": 2,
+        "uses": 2
+      }
+    ],
+    "zero_overlap_with_diagnosed_failure_relation_ids": true,
+    "relation_overlap_with_original_frozen_set": true,
+    "scope_note": "This is a failure-disjoint stress set, not a new relation-level held-out set: the data pre-existed in the frozen mixed graph, but none of its relation IDs occur in the three diagnosed failures."
+  }
+}

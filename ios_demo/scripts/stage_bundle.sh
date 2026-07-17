@@ -19,11 +19,12 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IOS_DEMO="$(cd "$HERE/.." && pwd)"
 REPO_ROOT="$(cd "$IOS_DEMO/.." && pwd)"
 
-# Source engine: prefer the phone bundle folder; fall back to the repo package.
-if [ -d "$REPO_ROOT/microworld_cli/worldpgt" ]; then
-  SRC_ENGINE="$REPO_ROOT/microworld_cli/worldpgt"
-elif [ -d "$REPO_ROOT/worldpgt" ]; then
+# Source engine: stage the current repository package.  ``microworld_cli`` is
+# retained only as a legacy fallback; it can lag the active planner fixes.
+if [ -d "$REPO_ROOT/worldpgt" ]; then
   SRC_ENGINE="$REPO_ROOT/worldpgt"
+elif [ -d "$REPO_ROOT/microworld_cli/worldpgt" ]; then
+  SRC_ENGINE="$REPO_ROOT/microworld_cli/worldpgt"
 else
   echo "error: could not find a worldpgt/ package under $REPO_ROOT" >&2
   exit 1
@@ -48,7 +49,39 @@ rsync -a \
   --exclude 'tests/' \
   --exclude '*_test.py' \
   --exclude 'test_*.py' \
+  --exclude 'experiments/open_web_pump_v1/**' \
+  --exclude 'experiments/wiki_snapshots_v1/**' \
+  --exclude 'experiments/knowledge_pump_v1/**' \
   "$SRC_ENGINE/" "$DEST/worldpgt/"
+
+# The active root package has large acquisition snapshots alongside runtime
+# code.  The phone needs neither raw pages nor campaign dossiers: the single
+# composed iOS overlay below is the complete local serving graph.  Keep only
+# the compact campaign JSON inputs long enough to make staging auditable.
+for RELATIVE in \
+  campaign_extension_p12_v1/open_web_campaign_evidence_grounded_graph_overlay.json \
+  campaign_long_v2/open_web_campaign_evidence_grounded_graph_overlay.json \
+  campaign_overnight_feedback_v1/open_web_campaign_evidence_grounded_graph_overlay.json \
+  campaign_crossref_doi_v1/open_web_campaign_evidence_grounded_graph_overlay.json \
+  campaign_wikidata_seed_v1/open_web_campaign_evidence_grounded_graph_overlay.json; do
+  SOURCE="$REPO_ROOT/worldpgt/experiments/open_web_pump_v1/$RELATIVE"
+  TARGET="$DEST/worldpgt/experiments/open_web_pump_v1/$RELATIVE"
+  mkdir -p "$(dirname "$TARGET")"
+  cp "$SOURCE" "$TARGET"
+done
+
+# The iPhone follows the normal ``promoted`` lookup path, but its staged copy
+# replaces that data file with a reversible, fully local serving composition.
+# This is deliberately a packaging substitution: no runtime network feature
+# and no accepted/promoted repository memory are changed.
+IOS_OVERLAY="$DEST/worldpgt/experiments/ios_demo_v2/extended_serving_overlay.json"
+IOS_OVERLAY_SUMMARY="$DEST/worldpgt/experiments/ios_demo_v2/extended_serving_overlay_summary.json"
+python3 "$IOS_DEMO/scripts/build_ios_serving_overlay.py" \
+  --repo-root "$REPO_ROOT" \
+  --output "$IOS_OVERLAY" \
+  --summary "$IOS_OVERLAY_SUMMARY"
+cp "$IOS_OVERLAY" "$DEST/worldpgt/experiments/self_ingestion_v1/promotion/promoted_wiki_memory_overlay_v1.json"
+echo "Staged iOS v2 serving overlay: $(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["total_overlay_item_count"])' "$IOS_OVERLAY_SUMMARY") items"
 
 # Creative mode uses the proven poetry_lab narrative surface, not the factual
 # QA word graph.  Stage its reasoning runtime and the prebuilt mixed-corpus

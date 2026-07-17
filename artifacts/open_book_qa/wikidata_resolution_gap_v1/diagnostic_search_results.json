@@ -1,0 +1,851 @@
+{
+  "ACCDB": [
+    {
+      "qid": "Q29907905",
+      "label": "ACCDB File Format Family",
+      "description": "file format family related to Microsoft Access",
+      "match_type": "label",
+      "match_text": "ACCDB File Format Family"
+    },
+    {
+      "qid": "Q90733703",
+      "label": "ACCDB: A collection of chemistry databases for broad computational purposes",
+      "description": "scientific article published on 23 December 2018",
+      "match_type": "label",
+      "match_text": "ACCDB: A collection of chemistry databases for broad computational purposes"
+    }
+  ],
+  "AICCE": [],
+  "Algebraic circuit complexity": [],
+  "Analytic and geometric approach are": [],
+  "Another approach": [
+    {
+      "qid": "Q44198959",
+      "label": "Another approach to estimating the reliability of glycaemic index",
+      "description": "scientific article published on 11 January 2008",
+      "match_type": "label",
+      "match_text": "Another approach to estimating the reliability of glycaemic index"
+    },
+    {
+      "qid": "Q82805116",
+      "label": "Another approach toward over 100,000-fold sensitivity increase in capillary electrophoresis: electrokinetic supercharging with optimized sample injection",
+      "description": "scientific article published on 13 December 2010",
+      "match_type": "label",
+      "match_text": "Another approach toward over 100,000-fold sensitivity increase in capillary electrophoresis: electrokinetic supercharging with optimized sample injection"
+    },
+    {
+      "qid": "Q48111920",
+      "label": "Another approach to protons with constricted mobility in white matter: pilot studies using wideline and high-resolution NMR spectroscopy",
+      "description": "scientific article",
+      "match_type": "label",
+      "match_text": "Another approach to protons with constricted mobility in white matter: pilot studies using wideline and high-resolution NMR spectroscopy"
+    },
+    {
+      "qid": "Q72765804",
+      "label": "Another approach for aortic valve replacement through left thoracotomy",
+      "description": "scientific article published on 01 September 1994",
+      "match_type": "label",
+      "match_text": "Another approach for aortic valve replacement through left thoracotomy"
+    },
+    {
+      "qid": "Q71655442",
+      "label": "Another approach to the buried bumper syndrome",
+      "description": "scientific article published on 01 March 1996",
+      "match_type": "label",
+      "match_text": "Another approach to the buried bumper syndrome"
+    },
+    {
+      "qid": "Q42372649",
+      "label": "Another Approach to Leaf Shape Comparisons",
+      "description": "scientific article published on February 1987",
+      "match_type": "label",
+      "match_text": "Another Approach to Leaf Shape Comparisons"
+    },
+    {
+      "qid": "Q93729480",
+      "label": "Another approach to the hernia waiting-list",
+      "description": "",
+      "match_type": "label",
+      "match_text": "Another approach to the hernia waiting-list"
+    },
+    {
+      "qid": "Q69533320",
+      "label": "Another approach to the treatment of accommodative spasm",
+      "description": "scientific article published on 01 January 1973",
+      "match_type": "label",
+      "match_text": "Another approach to the treatment of accommodative spasm"
+    },
+    {
+      "qid": "Q83117275",
+      "label": "Another approach to estimating the reliability of the glycaemic index: a different interpretation",
+      "description": "scientific article published on 04 March 2010",
+      "match_type": "label",
+      "match_text": "Another approach to estimating the reliability of the glycaemic index: a different interpretation"
+    },
+    {
+      "qid": "Q77202754",
+      "label": "ANOTHER APPROACH TO PROFESSIONALISM",
+      "description": "scientific article published on 01 February 1965",
+      "match_type": "label",
+      "match_text": "ANOTHER APPROACH TO PROFESSIONALISM"
+    }
+  ],
+  "CEMP": [
+    {
+      "qid": "Q192793",
+      "label": "Cempaka Putih",
+      "description": "district in Central Jakarta City, Jakarta Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaka Putih"
+    },
+    {
+      "qid": "Q1339334",
+      "label": "Cempuis",
+      "description": "commune in Oise, France",
+      "match_type": "label",
+      "match_text": "Cempuis"
+    },
+    {
+      "qid": "Q5058761",
+      "label": "East Cempaka Putih",
+      "description": "subdistrict in Central Jakarta City, Jakarta, Indonesia",
+      "match_type": "alias",
+      "match_text": "Cempakaputih Timur"
+    },
+    {
+      "qid": "Q10371448",
+      "label": "Cempaka",
+      "description": "district in East Ogan Komering Ulu Regency, South Sumatra Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaka"
+    },
+    {
+      "qid": "Q5058754",
+      "label": "Cempaka Baru",
+      "description": "subdistrict in Central Jakarta City, Jakarta, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaka Baru"
+    },
+    {
+      "qid": "Q4197767",
+      "label": "Cempaga",
+      "description": "district in East Kotawaringin Regency, Central Kalimantan Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaga"
+    },
+    {
+      "qid": "Q4211363",
+      "label": "Cempaga Hulu",
+      "description": "district in East Kotawaringin Regency, Central Kalimantan Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaga Hulu"
+    },
+    {
+      "qid": "Q5058758",
+      "label": "West Cempaka Putih",
+      "description": "subdistrict in Central Jakarta City, Jakarta, Indonesia",
+      "match_type": "alias",
+      "match_text": "Cempakaputih Barat"
+    },
+    {
+      "qid": "Q4194297",
+      "label": "Cempa",
+      "description": "district in Pinrang Regency, South Sulawesi Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempa"
+    },
+    {
+      "qid": "Q4198204",
+      "label": "Cempaka",
+      "description": "district in Banjarbaru City, South Kalimantan Province, Indonesia",
+      "match_type": "label",
+      "match_text": "Cempaka"
+    }
+  ],
+  "CISM": [
+    {
+      "qid": "Q3334",
+      "label": "Haute-Corse",
+      "description": "French department in Corsica",
+      "match_type": "alias",
+      "match_text": "Cismonte"
+    },
+    {
+      "qid": "Q966758",
+      "label": "International Military Sports Council",
+      "description": "international sports association",
+      "match_type": "alias",
+      "match_text": "CISM"
+    },
+    {
+      "qid": "Q16545895",
+      "label": "Manhiça Health Research Centre",
+      "description": "facility in Maputo, Mozambique",
+      "match_type": "alias",
+      "match_text": "CISM"
+    },
+    {
+      "qid": "Q46297",
+      "label": "Cismon del Grappa",
+      "description": "Italian frazione",
+      "match_type": "label",
+      "match_text": "Cismon del Grappa"
+    },
+    {
+      "qid": "Q783465",
+      "label": "Certified Information Security Manager",
+      "description": "security certification of the Information Systems Audit and Control Association",
+      "match_type": "alias",
+      "match_text": "CISM"
+    },
+    {
+      "qid": "Q19521503",
+      "label": "International Centre for Mechanical Sciences",
+      "description": "",
+      "match_type": "alias",
+      "match_text": "CISM"
+    },
+    {
+      "qid": "Q27960427",
+      "label": "International Centre for Mechanical Sciences",
+      "description": "",
+      "match_type": "alias",
+      "match_text": "CISM International Centre for Mechanical Sciences"
+    },
+    {
+      "qid": "Q1377866",
+      "label": "Osmanya",
+      "description": "script used for writing Somali",
+      "match_type": "alias",
+      "match_text": "Cismaanya"
+    },
+    {
+      "qid": "Q477920",
+      "label": "Cismar",
+      "description": "human settlement in Germany",
+      "match_type": "label",
+      "match_text": "Cismar"
+    },
+    {
+      "qid": "Q2639050",
+      "label": "Cișmichioi",
+      "description": "village in Găgăuzia, Moldova",
+      "match_type": "label",
+      "match_text": "Cișmichioi"
+    }
+  ],
+  "COFs": [
+    {
+      "qid": "Q17917471",
+      "label": "ERCC6",
+      "description": "gene of the species Homo sapiens",
+      "match_type": "alias",
+      "match_text": "COFS"
+    },
+    {
+      "qid": "Q37315654",
+      "label": "Cofsky",
+      "description": "family name",
+      "match_type": "label",
+      "match_text": "Cofsky"
+    },
+    {
+      "qid": "Q17917256",
+      "label": "ERCC1",
+      "description": "protein-coding gene in the species Homo sapiens",
+      "match_type": "alias",
+      "match_text": "COFS4"
+    },
+    {
+      "qid": "Q5778452",
+      "label": "Submarine Force Command",
+      "description": "submarine service branch of the Navy of the Argentine Republic and one of its four operational commands",
+      "match_type": "alias",
+      "match_text": "COFS"
+    },
+    {
+      "qid": "Q29014951",
+      "label": "COFS syndrome",
+      "description": "disease",
+      "match_type": "label",
+      "match_text": "COFS syndrome"
+    },
+    {
+      "qid": "Q14908096",
+      "label": "ERCC2",
+      "description": "protein-coding gene in the species Homo sapiens",
+      "match_type": "alias",
+      "match_text": "COFS2"
+    },
+    {
+      "qid": "Q17917470",
+      "label": "ERCC5",
+      "description": "protein-coding gene in the species Homo sapiens",
+      "match_type": "alias",
+      "match_text": "COFS3"
+    },
+    {
+      "qid": "Q55345699",
+      "label": "Cerebrooculofacioskeletal syndrome 1",
+      "description": "human disease",
+      "match_type": "alias",
+      "match_text": "Cofs Syndrome"
+    },
+    {
+      "qid": "Q55345898",
+      "label": "Cerebrooculofacioskeletal syndrome 3",
+      "description": "human disease",
+      "match_type": "alias",
+      "match_text": "COFS3"
+    },
+    {
+      "qid": "Q55345813",
+      "label": "Cerebrooculofacioskeletal syndrome 4",
+      "description": "human disease",
+      "match_type": "alias",
+      "match_text": "COFS4"
+    }
+  ],
+  "convolutional neural network": [
+    {
+      "qid": "Q17084460",
+      "label": "convolutional neural network",
+      "description": "regularized type of feed-forward neural network that learns features by itself via filter (or kernel) optimization",
+      "match_type": "label",
+      "match_text": "convolutional neural network"
+    },
+    {
+      "qid": "Q112683226",
+      "label": "Convolutional neural networks in medical image understanding: a survey",
+      "description": "publication published on 03 January 2021",
+      "match_type": "label",
+      "match_text": "Convolutional neural networks in medical image understanding: a survey"
+    },
+    {
+      "qid": "Q112686891",
+      "label": "Convolutional neural networks for the diagnosis and prognosis of the coronavirus disease pandemic",
+      "description": "publication published on 05 May 2021",
+      "match_type": "label",
+      "match_text": "Convolutional neural networks for the diagnosis and prognosis of the coronavirus disease pandemic"
+    },
+    {
+      "qid": "Q125788473",
+      "label": "Convolutional neural network",
+      "description": "US patent 11475269",
+      "match_type": "label",
+      "match_text": "Convolutional neural network"
+    },
+    {
+      "qid": "Q120947737",
+      "label": "Convolutional neural network",
+      "description": "US patent 11501146",
+      "match_type": "label",
+      "match_text": "Convolutional neural network"
+    },
+    {
+      "qid": "Q114406215",
+      "label": "Convolutional Neural Networks for Classifying Chromatin Morphology in Live-Cell Imaging",
+      "description": "",
+      "match_type": "label",
+      "match_text": "Convolutional Neural Networks for Classifying Chromatin Morphology in Live-Cell Imaging"
+    },
+    {
+      "qid": "Q117288558",
+      "label": "Convolutional Neural Network for a P300 Brain-Computer Interface to Improve Social Attention in Autistic Spectrum Disorder",
+      "description": "book section published in 2020",
+      "match_type": "label",
+      "match_text": "Convolutional Neural Network for a P300 Brain-Computer Interface to Improve Social Attention in Autistic Spectrum Disorder"
+    },
+    {
+      "qid": "Q113920866",
+      "label": "Convolutional Neural Network for the Detection of Cervical Myelomalacia",
+      "description": "clinical trial",
+      "match_type": "label",
+      "match_text": "Convolutional Neural Network for the Detection of Cervical Myelomalacia"
+    },
+    {
+      "qid": "Q118218084",
+      "label": "Convolutional neural networks on hardware accelerators",
+      "description": "US patent 11200486",
+      "match_type": "label",
+      "match_text": "Convolutional neural networks on hardware accelerators"
+    },
+    {
+      "qid": "Q137765079",
+      "label": "Convolutional neural network processor and data processing method thereof",
+      "description": "US patent 11494645",
+      "match_type": "label",
+      "match_text": "Convolutional neural network processor and data processing method thereof"
+    }
+  ],
+  "Descriptive statistics and logistic regression were": [],
+  "DPQA": [],
+  "Each side": [
+    {
+      "qid": "Q3046307",
+      "label": "Each Side of Screen",
+      "description": "album by Wink",
+      "match_type": "label",
+      "match_text": "Each Side of Screen"
+    }
+  ],
+  "FRAME": [
+    {
+      "qid": "Q860792",
+      "label": "frame",
+      "description": "decorative edging for a picture, such as a painting or photograph",
+      "match_type": "label",
+      "match_text": "frame"
+    },
+    {
+      "qid": "Q16870008",
+      "label": "Frame",
+      "description": "family name",
+      "match_type": "label",
+      "match_text": "Frame"
+    },
+    {
+      "qid": "Q30927496",
+      "label": "FRAME",
+      "description": "Japanese record label",
+      "match_type": "label",
+      "match_text": "FRAME"
+    },
+    {
+      "qid": "Q88392887",
+      "label": "part of a work",
+      "description": "part that a work consists of (use a more specific object if possible)",
+      "match_type": "alias",
+      "match_text": "frame"
+    },
+    {
+      "qid": "Q271680",
+      "label": "software framework",
+      "description": "software that supports solution development via inversion of control",
+      "match_type": "alias",
+      "match_text": "framework"
+    },
+    {
+      "qid": "Q145611",
+      "label": "Framerville-Rainecourt",
+      "description": "commune in Somme, France",
+      "match_type": "label",
+      "match_text": "Framerville-Rainecourt"
+    },
+    {
+      "qid": "Q989557",
+      "label": "Framecourt",
+      "description": "commune in Pas-de-Calais, France",
+      "match_type": "label",
+      "match_text": "Framecourt"
+    },
+    {
+      "qid": "Q6671777",
+      "label": "structure",
+      "description": "arrangement and organization of interrelated elements in an object or system, or the object or system so organized",
+      "match_type": "alias",
+      "match_text": "framework"
+    },
+    {
+      "qid": "Q1753397",
+      "label": "chambranle",
+      "description": "border, frame, or ornament around chamber doors, windows, etc.",
+      "match_type": "alias",
+      "match_text": "frame"
+    },
+    {
+      "qid": "Q23817605",
+      "label": "National Library of Wales Framed works of art collection",
+      "description": "Public art collection",
+      "match_type": "alias",
+      "match_text": "framed works of art collection"
+    }
+  ],
+  "GN-VBC": [],
+  "Gradient flow decomposition": [],
+  "HAIM": [
+    {
+      "qid": "Q1058951",
+      "label": "Haim",
+      "description": "male given name",
+      "match_type": "label",
+      "match_text": "Haim"
+    },
+    {
+      "qid": "Q868810",
+      "label": "Haim",
+      "description": "American pop rock band",
+      "match_type": "label",
+      "match_text": "Haim"
+    },
+    {
+      "qid": "Q37469244",
+      "label": "Haim",
+      "description": "family name",
+      "match_type": "label",
+      "match_text": "Haim"
+    },
+    {
+      "qid": "Q371299",
+      "label": "Haimar Zubeldia",
+      "description": "Spanish road bicycle racer",
+      "match_type": "label",
+      "match_text": "Haimar Zubeldia"
+    },
+    {
+      "qid": "Q1265142",
+      "label": "Haïm Brezis",
+      "description": "French mathematician who works in functional analysis and partial differential equation",
+      "match_type": "label",
+      "match_text": "Haïm Brezis"
+    },
+    {
+      "qid": "Q42353439",
+      "label": "Haim Azhari",
+      "description": "researcher",
+      "match_type": "label",
+      "match_text": "Haim Azhari"
+    },
+    {
+      "qid": "Q1354350",
+      "label": "Haims",
+      "description": "commune in Vienne, France",
+      "match_type": "label",
+      "match_text": "Haims"
+    },
+    {
+      "qid": "Q1145854",
+      "label": "Haimps",
+      "description": "commune in Charente-Maritime, France",
+      "match_type": "label",
+      "match_text": "Haimps"
+    },
+    {
+      "qid": "Q5639332",
+      "label": "Haimbachia",
+      "description": "genus of insects",
+      "match_type": "label",
+      "match_text": "Haimbachia"
+    },
+    {
+      "qid": "Q13668767",
+      "label": "maxillary sinusitis",
+      "description": "sinusitis which involves infection of maxillary sinuses that causes pain or pressure over the cheeks just below the eyes, tooth ache, and headache",
+      "match_type": "alias",
+      "match_text": "haimoritis"
+    }
+  ],
+  "High obliquity": [
+    {
+      "qid": "Q70643146",
+      "label": "High-obliquity simulations for the Archean Earth: Implications for climatic conditions on early Mars",
+      "description": "scientific article published in December 2001",
+      "match_type": "label",
+      "match_text": "High-obliquity simulations for the Archean Earth: Implications for climatic conditions on early Mars"
+    },
+    {
+      "qid": "Q69996934",
+      "label": "High Obliquity as an Alternative Hypothesis to Early and Late Proterozoic Extreme Climate Conditions",
+      "description": "scholarly article",
+      "match_type": "label",
+      "match_text": "High Obliquity as an Alternative Hypothesis to Early and Late Proterozoic Extreme Climate Conditions"
+    }
+  ],
+  "Hydroponics requires very little space": [],
+  "International study also": [],
+  "LF1700A": [],
+  "Liu also": [],
+  "Numerical results are": [],
+  "O-MAGIC": [],
+  "PKE-DET": [],
+  "Reducing computing requirements": [],
+  "Reinforcement Learning": [
+    {
+      "qid": "Q830687",
+      "label": "reinforcement learning",
+      "description": "type of machine learning where an agent learns how to behave in an environment by performing actions and receiving rewards or penalties in return, aiming to maximize the cumulative reward over time",
+      "match_type": "label",
+      "match_text": "reinforcement learning"
+    },
+    {
+      "qid": "Q847079",
+      "label": "operant conditioning",
+      "description": "learning to anticipate future events on the basis of past experience with the consequences of one's own behavior",
+      "match_type": "alias",
+      "match_text": "Reinforcement learning"
+    },
+    {
+      "qid": "Q111431416",
+      "label": "Reinforcement Learning: An Introduction",
+      "description": "",
+      "match_type": "label",
+      "match_text": "Reinforcement Learning: An Introduction"
+    },
+    {
+      "qid": "Q115570683",
+      "label": "reinforcement learning from human feedback",
+      "description": "training method using human feedback to rank responses and train a reward model that improves model outputs",
+      "match_type": "label",
+      "match_text": "reinforcement learning from human feedback"
+    },
+    {
+      "qid": "Q98101722",
+      "label": "Reinforcement Learning on autonomous humanoid robots",
+      "description": "Doctoral Thesis from Delft University of Technology",
+      "match_type": "label",
+      "match_text": "Reinforcement Learning on autonomous humanoid robots"
+    },
+    {
+      "qid": "Q98887115",
+      "label": "Reinforcement learning from post-ingestive calories: from body to brain in health and disease",
+      "description": "Research Project funded via ERC Starting Grants 2020",
+      "match_type": "label",
+      "match_text": "Reinforcement learning from post-ingestive calories: from body to brain in health and disease"
+    },
+    {
+      "qid": "Q133280541",
+      "label": "Reinforcement Learning",
+      "description": "encyclopedia entry from 'Open Encyclopedia of Cognitive Science' published in 2024",
+      "match_type": "label",
+      "match_text": "Reinforcement Learning"
+    },
+    {
+      "qid": "Q127605510",
+      "label": "Reinforcement learning based medium access control for underwater acoustic sensor networks",
+      "description": "doctoral thesis",
+      "match_type": "label",
+      "match_text": "Reinforcement learning based medium access control for underwater acoustic sensor networks"
+    },
+    {
+      "qid": "Q117478733",
+      "label": "Reinforcement learning approach to root cause analysis",
+      "description": "US patent 11481267",
+      "match_type": "label",
+      "match_text": "Reinforcement learning approach to root cause analysis"
+    },
+    {
+      "qid": "Q121302187",
+      "label": "Reinforcement learning method and device",
+      "description": "US patent 11366433",
+      "match_type": "label",
+      "match_text": "Reinforcement learning method and device"
+    }
+  ],
+  "scanning transmission electron microscopy": [
+    {
+      "qid": "Q874835",
+      "label": "scanning transmission electron microscopy",
+      "description": "type of transmission electron microscope",
+      "match_type": "label",
+      "match_text": "scanning transmission electron microscopy"
+    },
+    {
+      "qid": "Q111636897",
+      "label": "Scanning transmission electron microscopy of tagged proteins in whole eukaryotic cells",
+      "description": "doctoral dissertation",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy of tagged proteins in whole eukaryotic cells"
+    },
+    {
+      "qid": "Q62617293",
+      "label": "Scanning Transmission Electron Microscopy",
+      "description": "article",
+      "match_type": "label",
+      "match_text": "Scanning Transmission Electron Microscopy"
+    },
+    {
+      "qid": "Q36517704",
+      "label": "Scanning Transmission Electron Microscopy at High Resolution",
+      "description": "scientific article published on January 1, 1974",
+      "match_type": "label",
+      "match_text": "Scanning Transmission Electron Microscopy at High Resolution"
+    },
+    {
+      "qid": "Q54023601",
+      "label": "Scanning transmission electron microscopy and small-angle scattering provide evidence that native Escherichia coli ClpP is a tetradecamer with an axial pore",
+      "description": "scientific article",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy and small-angle scattering provide evidence that native Escherichia coli ClpP is a tetradecamer with an axial pore"
+    },
+    {
+      "qid": "Q61878252",
+      "label": "Scanning transmission electron microscopy strain measurement from millisecond frames of a direct electron charge coupled device",
+      "description": "scientific article published on 19 November 2012",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy strain measurement from millisecond frames of a direct electron charge coupled device"
+    },
+    {
+      "qid": "Q33947198",
+      "label": "Scanning transmission electron microscopy of DNA-protein complexes",
+      "description": "scientific article",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy of DNA-protein complexes"
+    },
+    {
+      "qid": "Q68273590",
+      "label": "Scanning transmission electron microscopy of thin specimens",
+      "description": "scientific article published on 01 December 1976",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy of thin specimens"
+    },
+    {
+      "qid": "Q73989838",
+      "label": "Scanning transmission electron microscopy mass analysis of fibrillin-containing microfibrils from foetal elastic tissues",
+      "description": "scientific article published on 01 August 1997",
+      "match_type": "label",
+      "match_text": "Scanning transmission electron microscopy mass analysis of fibrillin-containing microfibrils from foetal elastic tissues"
+    },
+    {
+      "qid": "Q59590501",
+      "label": "Scanning Transmission Electron Microscopy/Energy-dispersive Spectroscopy Analysis of the Dentin Adhesive Interface Using a Labeled 2-Hydroxyethylmethacrylate Analogue",
+      "description": "article",
+      "match_type": "label",
+      "match_text": "Scanning Transmission Electron Microscopy/Energy-dispersive Spectroscopy Analysis of the Dentin Adhesive Interface Using a Labeled 2-Hydroxyethylmethacrylate Analogue"
+    }
+  ],
+  "TDOA": [
+    {
+      "qid": "Q120546388",
+      "label": "TDOA positioning of mobile devices",
+      "description": "US patent 11418917",
+      "match_type": "label",
+      "match_text": "TDOA positioning of mobile devices"
+    },
+    {
+      "qid": "Q59354963",
+      "label": "TDOA-based acoustic source localization in the space–range reference frame",
+      "description": "",
+      "match_type": "label",
+      "match_text": "TDOA-based acoustic source localization in the space–range reference frame"
+    },
+    {
+      "qid": "Q59108715",
+      "label": "TDOA-Based Source Collaborative Localization via Semidefinite Relaxation in Sensor Networks",
+      "description": "",
+      "match_type": "label",
+      "match_text": "TDOA-Based Source Collaborative Localization via Semidefinite Relaxation in Sensor Networks"
+    },
+    {
+      "qid": "Q118361428",
+      "label": "TDOA/FDOA passive localization algorithm for moving target with sensor parameter errors",
+      "description": "scientific article published in 2020",
+      "match_type": "label",
+      "match_text": "TDOA/FDOA passive localization algorithm for moving target with sensor parameter errors"
+    },
+    {
+      "qid": "Q127645772",
+      "label": "TDOA source positioning in the presence of outliers",
+      "description": "scholarly article",
+      "match_type": "label",
+      "match_text": "TDOA source positioning in the presence of outliers"
+    },
+    {
+      "qid": "Q129621144",
+      "label": "TDOA-Based Multiple Acoustic Source Localization Without Association Ambiguity",
+      "description": "scholarly article published in November 2018",
+      "match_type": "label",
+      "match_text": "TDOA-Based Multiple Acoustic Source Localization Without Association Ambiguity"
+    },
+    {
+      "qid": "Q129378246",
+      "label": "TDOA and RSSD Based Hybrid Passive Source Localization with Unknown Transmit Power",
+      "description": "scholarly article",
+      "match_type": "label",
+      "match_text": "TDOA and RSSD Based Hybrid Passive Source Localization with Unknown Transmit Power"
+    },
+    {
+      "qid": "Q129560529",
+      "label": "TDOA versus ATDOA for wide area multilateration system",
+      "description": "scholarly article",
+      "match_type": "label",
+      "match_text": "TDOA versus ATDOA for wide area multilateration system"
+    },
+    {
+      "qid": "Q128088736",
+      "label": "TDOA estimation using a pair of synchronized anchor nodes",
+      "description": "scholarly article",
+      "match_type": "label",
+      "match_text": "TDOA estimation using a pair of synchronized anchor nodes"
+    },
+    {
+      "qid": "Q57729048",
+      "label": "TDOA Wireless Localization Comparison Influence of Network Topology",
+      "description": "",
+      "match_type": "label",
+      "match_text": "TDOA Wireless Localization Comparison Influence of Network Topology"
+    }
+  ],
+  "Vishnevska masterful": [],
+  "XMPP": [
+    {
+      "qid": "Q188951",
+      "label": "Extensible Messaging and Presence Protocol",
+      "description": "communications protocol for message-oriented middleware",
+      "match_type": "alias",
+      "match_text": "XMPP"
+    },
+    {
+      "qid": "Q28094186",
+      "label": "XMPP client",
+      "description": "software to connect with an XMPP server",
+      "match_type": "label",
+      "match_text": "XMPP client"
+    },
+    {
+      "qid": "Q1584581",
+      "label": "XMPP Extension Protocol",
+      "description": "standard for adding features to XMPP",
+      "match_type": "label",
+      "match_text": "XMPP Extension Protocol"
+    },
+    {
+      "qid": "Q2714181",
+      "label": "Jabber ID",
+      "description": "user unique XMPP address, structured like an email address with a username and a domain name (or IP address) for the server where that user resides, separated by an at sign (@), such as username@example.com",
+      "match_type": "alias",
+      "match_text": "XMPP ID"
+    },
+    {
+      "qid": "Q2597557",
+      "label": "XMPP transport",
+      "description": "XMPP client proxy gateways to legacy IM",
+      "match_type": "label",
+      "match_text": "XMPP transport"
+    },
+    {
+      "qid": "Q1461130",
+      "label": "XMPP Standards Foundation",
+      "description": "standards organization for the XMPP protocol",
+      "match_type": "label",
+      "match_text": "XMPP Standards Foundation"
+    },
+    {
+      "qid": "Q1521783",
+      "label": "multi-user chat",
+      "description": "XMPP multi-user chat, as implemented in XEP-045",
+      "match_type": "alias",
+      "match_text": "XMPP MUC"
+    },
+    {
+      "qid": "Q105967318",
+      "label": "xmppc",
+      "description": "command line interface tool for XMPP",
+      "match_type": "label",
+      "match_text": "xmppc"
+    },
+    {
+      "qid": "Q76373554",
+      "label": "XMPP provider",
+      "description": "provider of instant messaging hosting",
+      "match_type": "label",
+      "match_text": "XMPP provider"
+    },
+    {
+      "qid": "Q21284376",
+      "label": "XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services",
+      "description": "scientific article",
+      "match_type": "label",
+      "match_text": "XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services"
+    }
+  ]
+}

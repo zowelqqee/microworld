@@ -44,6 +44,46 @@ _WHERE_LOCATED_RE = re.compile(
     r"^where\s+(?:is|are|was|were)\s+(.+?)\s+located[\?\.]?$",
     re.IGNORECASE,
 )
+_OBJECT_LOOKUP_VERB_RE = re.compile(
+    r"^(?:who|what)\s+(?P<verb>developed|created|published|founded|manufactured)\s+(?P<subject>.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+_HEADQUARTERS_LOOKUP_RE = re.compile(
+    r"^where\s+(?:is|are|was|were)\s+(?P<subject>.+?)\s+headquartered(?:\s+in)?[\?.]?$",
+    re.IGNORECASE,
+)
+# ── Structural paraphrase shapes (subject retained literally) ─────────────────
+# Three grammatical families that canonical regexes and verb-lemma matching
+# systematically lose: the passive agent question ("By whom was X
+# engineered?"), the nominal-agent question ("Which manufacturer made X?"),
+# and the locative-possessive question ("Where does X maintain its
+# headquarters?").  Each shape identifies *where the subject span sits*; the
+# predicate itself is resolved separately — exact keyword map first, then the
+# phrase-centroid fallback.  Retaining the literal subject is safe under the
+# same discipline as ``_OBJECT_LOOKUP_VERB_RE``: the behavior layer answers
+# only when the span is an exact named node with the requested edge in the
+# loaded evidence graph.
+_PASSIVE_AGENT_RE = re.compile(
+    r"^by\s+(?:whom|which\s+[\w ]+?|what)\s+(?:is|are|was|were)\s+"
+    r"(?P<subject>.+?)\s+(?P<verb>\w+)[\?.]?$",
+    re.IGNORECASE,
+)
+_AGENT_NOMINAL_RE = re.compile(
+    r"^(?:which|what)\s+(?P<agent>[a-z]+)\s+(?P<verb>[a-z]+)\s+(?P<subject>.+?)[\?.]?$",
+    re.IGNORECASE,
+)
+# Auxiliaries/copulas that disqualify the nominal-agent shape ("Which
+# subsidiary is part of X?" is not an agent question about X).
+_AGENT_NOMINAL_STOP_VERBS = frozenset({
+    "is", "are", "was", "were", "be", "been", "does", "do", "did",
+    "has", "have", "had", "can", "could", "will", "would", "should",
+    "may", "might",
+})
+_LOCATIVE_POSSESSIVE_RE = re.compile(
+    r"^where\s+(?:does|do|did)\s+(?P<subject>.+?)\s+"
+    r"(?P<cue>\w+\s+(?:its|their)\s+.+?)[\?.]?$",
+    re.IGNORECASE,
+)
 _DEFINE_KIND_PREFIX_RE = re.compile(r"^what\s+(?:kind|type|sort)\s+of\b", re.IGNORECASE)
 _WHAT_IS_DEFINITION_PREFIX_RE = re.compile(r"^what\s+is\s+(?:a|an|the)\s+", re.IGNORECASE)
 _OPEN_MANUFACTURE_RE = re.compile(r"^what\s+does\s+.+?\s+manufactures?\b", re.IGNORECASE)
@@ -73,6 +113,22 @@ _OPEN_QUERY_RE = re.compile(
     r"what\s+does\s+(?P<f>.+?)\s+do|"
     r"how\s+(?:does|do)\s+(?P<g>.+?)\s+(?:work|works|operate|operates|function|functions)"
     r")[\?\.]?$",
+    re.IGNORECASE,
+)
+# Structural multi-fact requests are distinct from ordinary open synthesis:
+# they commit to a cardinality (two independently supported facts) but leave
+# the relation names open.  This recognises request shape, not a vocabulary of
+# entities or predicates.  The exact graph-node check still happens in the
+# evidence planner before any answer can be emitted.
+_IMPLICIT_MULTI_FACT_RE = re.compile(
+    r"^(?:tell|give|show|list|name)\s+(?:me\s+)?(?:two|2)\s+"
+    r"(?:key\s+)?(?:relations?|facts?|things?|details?)\s+"
+    r"(?:about|for)\s+(?P<subject>.+?)[\?\.]?$",
+    re.IGNORECASE,
+)
+_EXPLICIT_MULTI_FACT_RE = re.compile(
+    r"^for\s+(?P<subject>.+?),\s*what\s+(?:are|is)\s+(?:its|the)\s+"
+    r".+?\s+and\s+.+?\s+relations?[\?\.]?$",
     re.IGNORECASE,
 )
 _RU_DEFINITION_RE = re.compile(
@@ -393,9 +449,67 @@ _EMBEDDING_SKIP_PREFIX_RE = re.compile(
 )
 
 
+def _centroid_predicate(
+    question: str,
+    *,
+    subject_span: str | None = None,
+    agent_shape: bool | None = None,
+) -> Optional[str]:
+    """Phrase-centroid predicate lookup (precomputed static embeddings).
+
+    ``agent_shape=True`` restricts candidates to agent-slot predicates
+    (passive "by whom …" / nominal-agent shapes); ``agent_shape=False``
+    excludes them (locative/object shapes); ``None`` leaves all candidates.
+    Returns None whenever the conservative threshold+margin gate abstains.
+    """
+    try:
+        from worldpgt.knowledge.predicate_centroid_index import (
+            AGENT_PREDICATES,
+            PREDICATE_EXAMPLE_PHRASES,
+            get_default_centroid_index,
+        )
+    except ImportError:
+        return None
+
+    allowed: frozenset[str] | None = None
+    if agent_shape is True:
+        allowed = AGENT_PREDICATES
+    elif agent_shape is False:
+        allowed = frozenset(PREDICATE_EXAMPLE_PHRASES) - AGENT_PREDICATES
+
+    predicate, _sim = get_default_centroid_index().find_predicate(
+        question, subject_span=subject_span, allowed=allowed,
+    )
+    return predicate
+
+
+def _structural_shape_accepts(predicate: str, agent_shape: bool) -> bool:
+    """Return True when *predicate* is grammatically possible for the shape.
+
+    Agent shapes (passive "by whom …", nominal agent "which manufacturer …")
+    only accept agent-slot predicates; the locative/object shape accepts the
+    remaining open-book QA predicates.  Predicates outside the QA schema
+    (``is_a``, ``type_of``, ...) are never accepted here — those question
+    families are owned by the dedicated parse stages downstream.
+    """
+    try:
+        from worldpgt.knowledge.predicate_centroid_index import (
+            AGENT_PREDICATES,
+            PREDICATE_EXAMPLE_PHRASES,
+        )
+    except ImportError:
+        return False
+    if agent_shape:
+        return predicate in AGENT_PREDICATES
+    return predicate in PREDICATE_EXAMPLE_PHRASES and predicate not in AGENT_PREDICATES
+
+
 def _relation_with_embedding_fallback(
     verb_phrases: list[str],
     confidence_out: list[float],
+    *,
+    question: str | None = None,
+    subject_span: str | None = None,
 ) -> Optional[str]:
     """Embedding-only relation lookup over pre-extracted verb phrases.
 
@@ -403,26 +517,38 @@ def _relation_with_embedding_fallback(
     and extracted verb phrases via ``extract_verb_phrases``.  This function only
     runs the embedding similarity step.
 
+    Two independent static-embedding views are consulted: the per-verb-lemma
+    index and, when *question* is provided, the phrase-centroid index.  When
+    both fire and disagree, the phrase is genuinely ambiguous at this layer —
+    abstain (audit) rather than trust either view.  Verb lemmatisation is the
+    known failure mode here (it erases voice: "engineered" → "engineer" →
+    ``develops``), so a centroid disagreement is a real ambiguity signal, not
+    noise.
+
     Writes 0.8 into *confidence_out[0]* on a hit, 0.0 on a miss.
     """
-    if not verb_phrases:
-        confidence_out[0] = 0.0
-        return None
+    confidence_out[0] = 0.0
 
-    try:
-        from worldpgt.knowledge.relation_embedding_index import get_default_index
-    except ImportError:
-        confidence_out[0] = 0.0
-        return None
+    verb_intent: Optional[str] = None
+    if verb_phrases:
+        try:
+            from worldpgt.knowledge.relation_embedding_index import get_default_index
+        except ImportError:
+            return None
+        verb_intent, _sim = get_default_index().find_relation_intent(verb_phrases)
 
-    index = get_default_index()
-    intent, _sim = index.find_relation_intent(verb_phrases)
+    centroid_intent = (
+        _centroid_predicate(question, subject_span=subject_span)
+        if question is not None
+        else None
+    )
+
+    if verb_intent is not None and centroid_intent is not None and verb_intent != centroid_intent:
+        return None
+    intent = verb_intent or centroid_intent
     if intent is not None:
         confidence_out[0] = 0.8
-        return intent
-
-    confidence_out[0] = 0.0
-    return None
+    return intent
 
 
 def parse_semantic_query(
@@ -504,6 +630,22 @@ def parse_semantic_query(
             confidence=0.9 if subject else 0.2,
         )
 
+    # Must run before generic open-synthesis parsing.  Retaining the literal
+    # subject as a fallback is safe: the behavior layer accepts it only when
+    # it is an exact named node in the loaded evidence graph.
+    multi_match = _IMPLICIT_MULTI_FACT_RE.match(q) or _EXPLICIT_MULTI_FACT_RE.match(q)
+    if multi_match:
+        raw_subject = _clean(multi_match.group("subject"))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index) or raw_subject
+        return SemanticQuery(
+            entity_a=subject or None,
+            entity_b=None,
+            relation_intent=None,
+            unknown_position="relation",
+            query_type="multi_fact",
+            confidence=0.9 if subject else 0.2,
+        )
+
     # Open synthesis: explicit "tell me about / what do you know about / how does
     # X work" phrasings. Resolve the entity loosely — synthesis tolerates an
     # unresolved subject and falls back to keyword overlap downstream.
@@ -568,13 +710,107 @@ def parse_semantic_query(
         _relation_confidence[0] = 1.0
     elif not _EMBEDDING_SKIP_PREFIX_RE.match(q.strip()):
         verb_phrases = extract_verb_phrases(q)
-        relation = _relation_with_embedding_fallback(verb_phrases, _relation_confidence)
+        # Strip resolved entity surfaces so entity vocabulary cannot pull the
+        # phrase-centroid vector toward or away from any predicate.
+        question_sans_entities = q
+        for surface, _canonical, _start, _end in mentions:
+            question_sans_entities = question_sans_entities.replace(surface, " ")
+        relation = _relation_with_embedding_fallback(
+            verb_phrases, _relation_confidence, question=question_sans_entities,
+        )
         _embedding_matched = _relation_confidence[0] == 0.8
 
     if relation == "develops" and _PRODUCTS_MAKE_RE.search(q):
         relation = "produces"
     if relation == "manufactures" and _OPEN_MANUFACTURE_RE.search(q):
         relation = "produces"
+
+    # Canonical object-lookup grammar for named entities that have not yet
+    # entered the static surface index.  A relation cue plus this closed
+    # question form is sufficient to retain the literal subject for local
+    # graph resolution; it is not a guessed entity or a new fact.
+    object_lookup = _OBJECT_LOOKUP_VERB_RE.match(q)
+    if object_lookup:
+        raw_subject = _clean(object_lookup.group("subject"))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index) or raw_subject
+        predicate = relation_intent_from_text(object_lookup.group("verb"))
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent=predicate,
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if predicate and subject else 0.2,
+        )
+
+    headquarters_lookup = _HEADQUARTERS_LOOKUP_RE.match(q)
+    if headquarters_lookup:
+        raw_subject = _clean(headquarters_lookup.group("subject"))
+        subject = _resolved_subject_from_raw(raw_subject, mentions, surface_index) or raw_subject
+        return SemanticQuery(
+            entity_a=subject,
+            entity_b=None,
+            relation_intent="headquartered_in",
+            unknown_position="object",
+            query_type="lookup",
+            confidence=0.9 if subject else 0.2,
+        )
+
+    # Structural paraphrase shapes.  The shape locates the subject span; the
+    # predicate is resolved exact-first (keyword map over the relation cue),
+    # then through the phrase-centroid fallback restricted to structurally
+    # compatible predicates.  An unresolved predicate falls through to the
+    # remaining parse stages (and ultimately the audit path) — never a guess.
+    structural: tuple[str, str | None, bool] | None = None  # (subject, cue, agent_shape)
+    passive_agent = _PASSIVE_AGENT_RE.match(q)
+    agent_nominal = None if passive_agent else _AGENT_NOMINAL_RE.match(q)
+    locative_possessive = (
+        None if (passive_agent or agent_nominal) else _LOCATIVE_POSSESSIVE_RE.match(q)
+    )
+    if passive_agent:
+        structural = (passive_agent.group("subject"), passive_agent.group("verb"), True)
+    elif agent_nominal and agent_nominal.group("verb").lower() not in _AGENT_NOMINAL_STOP_VERBS:
+        structural = (
+            agent_nominal.group("subject"),
+            agent_nominal.group("agent") + " " + agent_nominal.group("verb"),
+            True,
+        )
+    elif locative_possessive:
+        structural = (
+            locative_possessive.group("subject"),
+            locative_possessive.group("cue"),
+            False,
+        )
+    if structural is not None:
+        raw_subject, cue, agent_shape = structural
+        raw_subject = _clean(raw_subject)
+        predicate = relation_intent_from_text(cue) if cue else None
+        # The shape constrains which predicates are grammatically possible
+        # (a passive/nominal-agent question cannot ask for a forward relation,
+        # and no structural shape here asks for is_a/type_of).  An exact
+        # keyword hit outside the compatible set means the cue was misleading
+        # (e.g. voice-erasing verb forms) — discard it and let the
+        # shape-restricted centroid, then the later parse stages, decide.
+        if predicate is not None and not _structural_shape_accepts(predicate, agent_shape):
+            predicate = None
+        semantic_predicate = predicate is None
+        if predicate is None:
+            predicate = _centroid_predicate(
+                q, subject_span=raw_subject, agent_shape=agent_shape,
+            )
+        if predicate is not None:
+            subject = (
+                _resolved_subject_from_raw(raw_subject, mentions, surface_index)
+                or raw_subject
+            )
+            return SemanticQuery(
+                entity_a=subject,
+                entity_b=None,
+                relation_intent=predicate,
+                unknown_position="object",
+                query_type="lookup",
+                confidence=(0.8 if semantic_predicate else 0.9) if subject else 0.2,
+            )
 
     where_located = _WHERE_LOCATED_RE.match(q)
     if where_located:

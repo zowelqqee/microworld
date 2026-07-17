@@ -1,0 +1,46 @@
+{
+  "version": "targeted_wikidata_density_v2",
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "serving_overlay_modified": false,
+  "selection": "all existing one-predicate subjects; exact unambiguous Wikidata resolution with English Wikipedia anchor",
+  "target_subject_count": 331,
+  "resolution_status_counts": {
+    "ambiguous_wikidata_exact": 56,
+    "exact_wikidata_without_enwiki_anchor": 18,
+    "resolved_wikidata_exact_enwiki": 23,
+    "unresolved_wikidata_exact": 234
+  },
+  "exact_resolved_subjects": 41,
+  "anchored_resolved_subjects": 23,
+  "proposal_relation_count": 24,
+  "subjects_with_new_predicate_group": 10,
+  "proposal_predicate_distribution": {
+    "developed_by": 4,
+    "headquartered_in": 1,
+    "owned_by": 1,
+    "parent_company_of": 2,
+    "produces": 1,
+    "product_of": 1,
+    "runs_on": 2,
+    "used_for": 10,
+    "uses": 2
+  },
+  "relation_density_before": {
+    "predicate_groups_per_subject": {
+      "1": 331
+    }
+  },
+  "relation_density_after_proposal": {
+    "predicate_groups_per_subject": {
+      "1": 321,
+      "2": 6,
+      "3": 2,
+      "4": 2
+    },
+    "subjects_with_1_predicate_group": 321,
+    "subjects_with_2_predicate_groups": 6,
+    "subjects_with_3_or_more_predicate_groups": 4
+  },
+  "network_calls": 333
+}

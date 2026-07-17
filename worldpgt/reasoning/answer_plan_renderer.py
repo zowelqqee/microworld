@@ -15,6 +15,9 @@ import re
 
 from worldpgt.reasoning.answer_behavior import AnswerPlan, ContentBlock
 from worldpgt.reasoning.answer_behavior import _tokens as _behavior_tokens
+# Reuse the entity-QA list realizer so direct relation lookup and answer-plan
+# rendering apply the same deterministic Oxford-comma grammar to fan-out.
+from worldpgt.entity_qa.semantic_speech_planner import _join_list
 
 # Discourse connectives keyed by *structural* block kind (never by predicate,
 # entity, or question shape).  Cycled per kind so repeats stay readable.
@@ -45,7 +48,6 @@ def render_answer_plan(plan: AnswerPlan) -> str:
 
 def _sentence_for(block: ContentBlock, occurrence: int, quoted_spans: set[str]) -> str:
     edge = block.step.edge
-    clause = _grounded_clause(edge, quoted_spans)
     if block.kind == "uncertainty_note":
         alternative_objects = ", ".join(
             f"'{_trim(alternative.object)}'" for alternative in block.alternatives
@@ -56,6 +58,17 @@ def _sentence_for(block: ContentBlock, occurrence: int, quoted_spans: set[str]) 
             f"instead points to {alternative_objects}; neither reading is "
             "treated as settled."
         )
+    object_edges = block.all_object_edges()
+    # A multi-object slot represents the same exact subject/predicate relation
+    # group.  Rendering it as one list preserves every factual object without
+    # consuming multiple discourse blocks or quoting a source span that only
+    # contains the first object.  Raw evidence spans remain attached to every
+    # slot in the plan trace.
+    clause = (
+        _clause(edge.subject, edge.predicate, _join_list([item.object for item in object_edges]))
+        if len(object_edges) > 1
+        else _grounded_clause(edge, quoted_spans)
+    )
     connectives = _CONNECTIVES.get(block.kind, ("",))
     connective = connectives[occurrence % len(connectives)]
     if connective:
@@ -199,5 +212,4 @@ def _capitalize(text: str) -> str:
     if not text:
         return text
     return text[0].upper() + text[1:]
-
 

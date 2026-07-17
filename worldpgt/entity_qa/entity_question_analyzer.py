@@ -962,13 +962,6 @@ def _analyze_semantic(
 
     if semantic.relation_intent and semantic.entity_a:
         predicate_hint = semantic.relation_intent
-        # "created / co-created" are founding synonyms. Normalize them to the
-        # overlay's founded_by vocabulary so paraphrases like "Who created X?"
-        # reuse the exact same vetted founder-lookup path as "Who founded X?".
-        # If the overlay holds no founding fact, this still audits (never a new
-        # claim), so it adds no precision or safety risk.
-        if predicate_hint == "created_by":
-            predicate_hint = "founded_by"
         if predicate_hint == "founded_by" and _PASSIVE_FOUNDED_BY_KNOWN_AGENT_RE.match(question):
             predicate_hint = "founded"
         if predicate_hint == "founded_by" and re.match(

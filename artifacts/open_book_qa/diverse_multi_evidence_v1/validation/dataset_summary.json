@@ -1,0 +1,12 @@
+{
+  "case_count": 18,
+  "cases_per_category": {
+    "multi_evidence_explicit": 9,
+    "multi_evidence_implicit": 9
+  },
+  "unique_subject_count": 5,
+  "unique_relation_id_count": 15,
+  "zero_overlap_with_original_frozen_relations": true,
+  "zero_overlap_with_diagnosed_failure_relations": true,
+  "limitation": "18 relation-level novel cases derive from 12 predicate pairs on five remaining promoted subject neighbourhoods; six pairs are tested in the complementary explicit/implicit form."
+}

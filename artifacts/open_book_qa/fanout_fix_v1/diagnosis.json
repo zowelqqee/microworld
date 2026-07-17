@@ -1,0 +1,107 @@
+{
+  "source_benchmark": "artifacts/open_book_qa/final_multi_evidence_v1",
+  "baseline_run": "artifacts/open_book_qa/diverse_multi_evidence_v1/original_after_final2",
+  "classification_unit": "unique frozen case; first deterministic trace of five repeats",
+  "failure_count": 3,
+  "root_cause": "plan_construction",
+  "retrieval_level_failures": 0,
+  "plan_construction_failures": 3,
+  "rendering_level_failures": 0,
+  "finding": "The exact local frontier contains every expected edge in all diagnosed cases. The prior planner allocated one ContentBlock per edge and its four-block cap / continuation threshold therefore truncated valid objects. The renderer received only that incomplete plan.",
+  "cases": [
+    {
+      "case_id": "obqa-10af9ad488ba7fb7-multi_evidence_explicit-a4db7ba5",
+      "question": "For Energy Drink Consumption Among Papuan Athletes, what are its created by and published by relations?",
+      "subject": "Energy Drink Consumption Among Papuan Athletes",
+      "expected_relation_ids": [
+        "edge:energy drink consumption among papuan athletes|created_by|daniel womsiwor",
+        "edge:energy drink consumption among papuan athletes|created_by|eva sinaga",
+        "edge:energy drink consumption among papuan athletes|created_by|evi sinaga",
+        "edge:energy drink consumption among papuan athletes|created_by|junalia muhammad",
+        "edge:energy drink consumption among papuan athletes|created_by|sutoro sutoro",
+        "edge:energy drink consumption among papuan athletes|created_by|tery wanena",
+        "edge:energy drink consumption among papuan athletes|published_by|everant journals"
+      ],
+      "ground_truth_objects_by_predicate": {
+        "created_by": 6,
+        "published_by": 1
+      },
+      "planner_returned_objects_by_predicate_before_fix": {
+        "created_by": 3,
+        "published_by": 1
+      },
+      "missing_relation_ids_before_fix": [
+        "edge:energy drink consumption among papuan athletes|created_by|evi sinaga",
+        "edge:energy drink consumption among papuan athletes|created_by|sutoro sutoro",
+        "edge:energy drink consumption among papuan athletes|created_by|tery wanena"
+      ],
+      "object_recall_before_fix": 0.5714285714285714,
+      "local_exact_frontier_contains_all_expected_edges": true,
+      "local_exact_frontier_edge_count": 7,
+      "plan_block_count_before_fix": 4,
+      "plan_stop_reason_before_fix": "max_blocks_reached",
+      "loss_localization": "plan_construction",
+      "localization_evidence": "Every expected relation is present in the exact adjacency frontier for the resolved subject. The archived plan instead stops at max_blocks_reached or after a low-novelty next edge; therefore retrieval found the local edges and the one-edge-per-block plan omitted them."
+    },
+    {
+      "case_id": "obqa-c6db4273b94b234a-multi_evidence_implicit-7f6dec5b",
+      "question": "Tell me two key relations about SPSS.",
+      "subject": "SPSS",
+      "expected_relation_ids": [
+        "edge:spss|developed_by|ibm",
+        "edge:spss|developed_by|dale h. bent",
+        "edge:spss|runs_on|microsoft windows",
+        "edge:spss|runs_on|macos",
+        "edge:spss|runs_on|x86-64",
+        "edge:spss|runs_on|java virtual machine"
+      ],
+      "ground_truth_objects_by_predicate": {
+        "developed_by": 2,
+        "runs_on": 4
+      },
+      "planner_returned_objects_by_predicate_before_fix": {
+        "developed_by": 2,
+        "runs_on": 3
+      },
+      "missing_relation_ids_before_fix": [
+        "edge:spss|runs_on|x86-64"
+      ],
+      "object_recall_before_fix": 0.8333333333333334,
+      "local_exact_frontier_contains_all_expected_edges": true,
+      "local_exact_frontier_edge_count": 6,
+      "plan_block_count_before_fix": 4,
+      "plan_stop_reason_before_fix": "max_blocks_reached",
+      "loss_localization": "plan_construction",
+      "localization_evidence": "Every expected relation is present in the exact adjacency frontier for the resolved subject. The archived plan instead stops at max_blocks_reached or after a low-novelty next edge; therefore retrieval found the local edges and the one-edge-per-block plan omitted them."
+    },
+    {
+      "case_id": "obqa-49fdc0d74ac936c6-multi_evidence_explicit-9f381070",
+      "question": "For LAMMPS, what are its developed by and runs on relations?",
+      "subject": "LAMMPS",
+      "expected_relation_ids": [
+        "edge:lammps|developed_by|united states department of energy",
+        "edge:lammps|runs_on|unix-like operating system",
+        "edge:lammps|runs_on|microsoft windows",
+        "edge:lammps|runs_on|macos"
+      ],
+      "ground_truth_objects_by_predicate": {
+        "developed_by": 1,
+        "runs_on": 3
+      },
+      "planner_returned_objects_by_predicate_before_fix": {
+        "developed_by": 1,
+        "runs_on": 2
+      },
+      "missing_relation_ids_before_fix": [
+        "edge:lammps|runs_on|unix-like operating system"
+      ],
+      "object_recall_before_fix": 0.75,
+      "local_exact_frontier_contains_all_expected_edges": true,
+      "local_exact_frontier_edge_count": 4,
+      "plan_block_count_before_fix": 3,
+      "plan_stop_reason_before_fix": "next best step (edge:lammps|runs_on|unix-like operating system) scored 0.229, under the continue threshold — answer value would not grow",
+      "loss_localization": "plan_construction",
+      "localization_evidence": "Every expected relation is present in the exact adjacency frontier for the resolved subject. The archived plan instead stops at max_blocks_reached or after a low-novelty next edge; therefore retrieval found the local edges and the one-edge-per-block plan omitted them."
+    }
+  ]
+}

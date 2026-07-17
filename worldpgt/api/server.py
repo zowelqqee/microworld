@@ -93,6 +93,10 @@ _DEFAULT_COGNITIVE_PATTERNS_PATH = (
 )
 _EXPERIMENTAL_WEB_CAMPAIGN_ROOT = _EXPERIMENTS / "open_web_pump_v1"
 _EVIDENCE_GROUNDED_GRAPH_FILENAME = "open_web_campaign_evidence_grounded_graph_overlay.json"
+_QUERYABLE_EXPERIMENTAL_RELATION_TIERS = frozenset({
+    "evidence_grounded_abstract_relation_v1",
+    "evidence_grounded_structured_relation_v1",
+})
 _MAIN_UI_COMPOSED_OVERLAY_PATH = (
     _EXPERIMENTS / "open_web_pump_v1" / "campaign_long_v2" / "main_ui_overlay.json"
 )
@@ -764,7 +768,7 @@ def _merge_experimental_graph_items(items: Iterable[dict]) -> list[dict]:
             key = _experimental_graph_key(item.get("label"))
             if key:
                 entity_groups.setdefault(key, []).append(item)
-        elif item.get("overlay_type") == "overlay_relation" and tier == "evidence_grounded_abstract_relation_v1":
+        elif item.get("overlay_type") == "overlay_relation" and tier in _QUERYABLE_EXPERIMENTAL_RELATION_TIERS:
             key = (
                 _experimental_graph_key(item.get("subject")),
                 _experimental_graph_key(item.get("predicate")),
@@ -823,7 +827,7 @@ def _merge_experimental_graph_items(items: Iterable[dict]) -> list[dict]:
             emitted_entities.add(key)
             result.append(merged_entities[key])
             continue
-        if item.get("overlay_type") == "overlay_relation" and tier == "evidence_grounded_abstract_relation_v1":
+        if item.get("overlay_type") == "overlay_relation" and tier in _QUERYABLE_EXPERIMENTAL_RELATION_TIERS:
             key = (
                 _experimental_graph_key(item.get("subject")),
                 _experimental_graph_key(item.get("predicate")),
@@ -937,11 +941,27 @@ def _build_optional_answer_plan(question: str, semantic_query):
             explicit_intents if len(explicit_intents) > 1
             else semantic_query.relation_intent
         )
+        # Explicit coordinated predicates already carry their own relation
+        # contract and may legitimately need more than two blocks to render a
+        # many-valued group (for example, several authors plus a publisher).
+        # The cardinality rule is only for *implicit* two-fact requests, where
+        # no predicate target was supplied at all.
+        is_implicit_multi_fact_request = (
+            semantic_query.query_type == "multi_fact" and not explicit_intents
+        )
         return build_answer_plan(
             question,
             [],
             targets=targets,
             predicate_filter=predicate_filter,
+            # A cardinality request is fulfilled by two distinct relation
+            # groups.  It remains evidence-scoped and can still return no
+            # plan when either group is not present locally.  The ordinary
+            # four-block budget remains available afterwards: one selected
+            # group can be genuinely many-valued and must not be truncated
+            # merely because the question asked for two *kinds* of fact.
+            required_distinct_predicates=2 if is_implicit_multi_fact_request else 1,
+            max_blocks=4,
             prepared_edges=_experimental_evidence_edges(),
         )
     except Exception:

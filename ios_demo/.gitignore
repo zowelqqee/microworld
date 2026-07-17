@@ -3,7 +3,7 @@ MicroWorldDemo/MicroWorldDemo/Python/app_packages/
 MicroWorldDemo/MicroWorldDemo/Resources/python-stdlib/
 MicroWorldDemo/Frameworks/
 MicroWorldDemo/MicroWorldDemo.xcodeproj/
-MicroWorldDemo/DerivedData/
+MicroWorldDemo/DerivedData*/
 
 # macOS / Xcode noise
 .DS_Store

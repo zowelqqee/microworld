@@ -1,0 +1,55 @@
+{
+  "case_count": 11,
+  "cases_per_category": {
+    "multi_evidence_explicit": 11
+  },
+  "fanout_case_predicates": [
+    {
+      "created_by": 3,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 3,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 2,
+      "published_by": 1
+    },
+    {
+      "created_by": 3,
+      "published_by": 1
+    },
+    {
+      "used_for": 2,
+      "uses": 2
+    }
+  ],
+  "zero_overlap_with_diagnosed_failure_relation_ids": true,
+  "relation_overlap_with_original_frozen_set": true,
+  "scope_note": "This is a failure-disjoint stress set, not a new relation-level held-out set: the data pre-existed in the frozen mixed graph, but none of its relation IDs occur in the three diagnosed failures."
+}
