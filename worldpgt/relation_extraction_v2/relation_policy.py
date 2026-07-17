@@ -211,6 +211,7 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "establish": "founded_by",
     "established": "founded_by",
     "co-established": "founded_by",
+    "set up": "founded_by",
     "created by": "created_by",
     # Creation and founding are not interchangeable graph predicates.  Keep
     # the user's creation wording attached to ``created_by``; callers that
@@ -224,12 +225,18 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "acquired by": "owned_by",
     "owns": "owned_by",
     "own": "owned_by",
+    "owner": "owned_by",
     "controls": "owned_by",
     "control": "owned_by",
     "parent company of": "parent_company_of",
     "subsidiary of": "subsidiary_of",
     "subsidiary": "subsidiary_of",
     "headquartered": "headquartered_in",
+    # "head office" must outrank the bare "head" leadership cue.  Keyword
+    # lookup resolves longest-first, and nested spans are suppressed in
+    # ``relation_intents_from_text``, so the locative reading wins.
+    "head office": "headquartered_in",
+    "head offices": "headquartered_in",
     # development / production
     "developed by": "developed_by",
     "developed": "developed_by",
@@ -290,6 +297,9 @@ RELATION_KEYWORD_MAP: dict[str, str] = {
     "used for": "used_for",
     "use for": "used_for",
     "used to": "used_for",
+    "purpose": "used_for",
+    "purposes": "used_for",
+    "intended for": "used_for",
     "works by": "works_by",
     "work by": "works_by",
     "works through": "works_by",
@@ -409,11 +419,25 @@ def relation_intents_from_text(text: str) -> frozenset[str]:
     normalized = re.sub(r"\s+", " ", (text or "").lower().strip())
     if not normalized:
         return frozenset()
-    intents = {
-        RELATION_KEYWORD_MAP[keyword]
-        for keyword in _RELATION_KEYWORDS_BY_LENGTH
-        if re.search(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", normalized)
-    }
+
+    # Collect matched spans longest-keyword-first.  A shorter keyword whose
+    # span sits *inside* an already-matched longer one is a fragment of that
+    # phrase, not an independently named relation: "head office" must not also
+    # report the bare "head" leadership cue.  This mirrors the longest-match
+    # rule ``relation_intent_from_text`` already applies.  Keywords matching
+    # disjoint spans still each contribute — that is how a genuinely
+    # coordinated question names two relations.
+    claimed: list[tuple[int, int]] = []
+    intents: set[str] = set()
+    for keyword in _RELATION_KEYWORDS_BY_LENGTH:
+        pattern = r"(?<!\w)" + re.escape(keyword) + r"(?!\w)"
+        for match in re.finditer(pattern, normalized):
+            span = match.span()
+            if any(start <= span[0] and span[1] <= end for start, end in claimed):
+                continue
+            claimed.append(span)
+            intents.add(RELATION_KEYWORD_MAP[keyword])
+
     # A generic locative cue must yield to the more specific headquarters
     # relation when both occur in one coordinated question.
     if "headquartered_in" in intents:

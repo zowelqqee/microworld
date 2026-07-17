@@ -21,6 +21,7 @@ from worldpgt.relation_extraction_v2.relation_policy import (
     is_volatile_predicate,
     freshness_window_days,
     relation_intent_from_text,
+    relation_intents_from_text,
     should_hedge_render,
 )
 from worldpgt.relation_extraction_v2.relation_patterns import PATTERNS
@@ -383,3 +384,49 @@ class TestEntityAnswerRendererHedging:
         result = render(plan)
         assert "leadership" not in result.lower()
         assert "develops" in result.lower()
+
+
+class TestIntentCueCoverage:
+    """Fan-out fix: paraphrase cues resolve to their relation, and a shorter
+    keyword nested inside a longer matched phrase must not also fire.
+
+    Regression guard for the independent_v1 unsupported-claim rate: an
+    unresolved intent left the answer planner unfiltered, which let it attach
+    an unasked sibling predicate of the same subject as an extra fact.
+    """
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("By whom was Gyulaj Hunting Hungary set up?", "founded_by"),
+            ("Who is the owner of Google Sheets?", "owned_by"),
+            ("Where does Gujarat Vidyapith keep its head office?", "headquartered_in"),
+            ("For which purposes is Google Sheets intended?", "used_for"),
+        ],
+    )
+    def test_paraphrase_cue_resolves(self, text, expected):
+        assert relation_intent_from_text(text) == expected
+        assert expected in relation_intents_from_text(text)
+
+    def test_head_office_suppresses_bare_head_cue(self):
+        # "head office" is a locative phrase; the "head" leadership cue nested
+        # inside it must not surface as a second, spurious intent.
+        intents = relation_intents_from_text(
+            "Where does Gujarat Vidyapith keep its head office?"
+        )
+        assert intents == frozenset({"headquartered_in"})
+        assert "leader_of" not in intents
+
+    def test_bare_head_still_reads_as_leadership(self):
+        # The suppression is span-nesting only; a standalone "head" cue is
+        # unaffected and still resolves to leadership.
+        assert relation_intent_from_text("Who heads Google?") == "leader_of"
+        assert "leader_of" in relation_intents_from_text("Who is the head of Google?")
+
+    def test_disjoint_cues_both_survive(self):
+        # A genuinely coordinated question names two relations in disjoint
+        # spans; span-nesting suppression must not collapse them.
+        intents = relation_intents_from_text(
+            "Who founded SpaceX and where is SpaceX headquartered?"
+        )
+        assert {"founded_by", "headquartered_in"} <= intents

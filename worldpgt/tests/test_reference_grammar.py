@@ -53,13 +53,13 @@ def test_role_descriptor_maps_relation():
 
 
 def test_role_descriptor_open_vocabulary_via_shared_relation_table():
-    # "leader"/"head" resolve without a private word list -- they go through
+    # These nouns resolve without a private word list -- they go through
     # the same relation_policy keyword table the rest of Microworld uses,
-    # not a duplicated dialogue-only dict. ("owner" is not in that shared
-    # table at all -- see test_unrecognized_role_noun_forms_no_slot below.)
+    # not a duplicated dialogue-only dict.
     for question, expected_relation in [
         ("Who is the leader?", "leader_of"),
         ("Who is the head?", "leader_of"),
+        ("Who is the owner?", "owned_by"),
     ]:
         parse = G.detect_slots(question, INDEX)
         assert [s.ref_class for s in parse.slots] == [G.ROLE_DESCRIPTOR], question
@@ -87,13 +87,11 @@ def test_type_noun_does_not_collide_with_relation_keyword_table():
         assert parse.slots[0].type_gate == frozenset({expected_type}), question
 
 
-def test_unrecognized_role_noun_forms_no_slot():
-    # "creator"/"owner" aren't in the shared relation table at all (no exact
-    # entry, and the embedding fallback is deliberately not used here because
-    # it false-positives on ordinary abstract nouns) -- honest gap, no slot,
-    # never fuzzy-matched.
+def test_unrecognized_role_noun_form_no_slot():
+    # "creator" is not in the shared relation table (no exact entry, and the
+    # embedding fallback is deliberately not used here because it false-positives
+    # on ordinary abstract nouns) -- honest gap, no slot, never fuzzy-matched.
     assert G.detect_slots("Who is the creator?", INDEX).slots == ()
-    assert G.detect_slots("Who is the owner?", INDEX).slots == ()
 
 
 def test_contrastive_with_and_without_noun():
