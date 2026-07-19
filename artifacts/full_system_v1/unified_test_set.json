@@ -1,0 +1,669 @@
+{
+  "scope": "52 existing cases: 10 frozen QA + 15 reflective pilot + 27 constrained-creative A/B",
+  "cases": [
+    {
+      "id": "obqa-9e05a644d363ea3f-multi_evidence_implicit-b45e4172",
+      "category": "qa",
+      "question": "Tell me two key relations about Boeing Calc.",
+      "evidence": [
+        "Wikidata statement P178 for Boeing Calc (Q890179) identifies Boeing (Q66).",
+        "Wikidata statement P366 for Boeing Calc (Q890179) identifies spreadsheet (Q183197)."
+      ],
+      "expected_objects": [
+        "Boeing",
+        "spreadsheet"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-47110169245e6446-multi_evidence_implicit-1d00000f",
+      "category": "qa",
+      "question": "Tell me two key relations about Busboy Productions.",
+      "evidence": [
+        "Wikidata statement P159 for Busboy Productions (Q5001290) identifies New York City (Q60).",
+        "Wikidata statement P127 for Busboy Productions (Q5001290) identifies Jon Stewart (Q211987)."
+      ],
+      "expected_objects": [
+        "New York City",
+        "Jon Stewart"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-0e842d1357d6c519-multi_evidence_implicit-47922e91",
+      "category": "qa",
+      "question": "Tell me two key relations about Cartooning for Peace.",
+      "evidence": [
+        "Wikidata statement P112 for Cartooning for Peace (Q2940652) identifies Kofi Annan (Q1254).",
+        "Wikidata statement P112 for Cartooning for Peace (Q2940652) identifies Patrick Chappatte (Q116361).",
+        "Wikidata statement P112 for Cartooning for Peace (Q2940652) identifies Plantu (Q713413).",
+        "Wikidata statement P159 for Cartooning for Peace (Q2940652) identifies Paris (Q90)."
+      ],
+      "expected_objects": [
+        "Kofi Annan",
+        "Patrick Chappatte",
+        "Plantu",
+        "Paris"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-819426a495d4e7de-multi_evidence_implicit-fdbf654a",
+      "category": "qa",
+      "question": "Tell me two key relations about Clinton Foundation.",
+      "evidence": [
+        "Wikidata statement P112 for Clinton Foundation (Q1974620) identifies Bill Clinton (Q1124).",
+        "Wikidata statement P159 for Clinton Foundation (Q1974620) identifies New York City (Q60)."
+      ],
+      "expected_objects": [
+        "Bill Clinton",
+        "New York City"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-1686b8478e669259-multi_evidence_implicit-b516deb1",
+      "category": "qa",
+      "question": "Tell me two key relations about Cominform.",
+      "evidence": [
+        "Wikidata statement P112 for Cominform (Q183533) identifies Joseph Stalin (Q855).",
+        "Wikidata statement P159 for Cominform (Q183533) identifies Belgrade (Q3711).",
+        "Wikidata statement P159 for Cominform (Q183533) identifies Bucharest (Q19660)."
+      ],
+      "expected_objects": [
+        "Joseph Stalin",
+        "Belgrade",
+        "Bucharest"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-8cca97131c73543c-multi_evidence_implicit-176d9870",
+      "category": "qa",
+      "question": "Tell me two key relations about Communist Party of the Soviet Union.",
+      "evidence": [
+        "Wikidata statement P112 for Communist Party of the Soviet Union (Q79854) identifies Vladimir Lenin (Q1394).",
+        "Wikidata statement P159 for Communist Party of the Soviet Union (Q79854) identifies Moscow (Q649).",
+        "Wikidata statement P159 for Communist Party of the Soviet Union (Q79854) identifies Staraya Square (Q4439847)."
+      ],
+      "expected_objects": [
+        "Vladimir Lenin",
+        "Moscow",
+        "Staraya Square"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-9d2f65a0b1ff6c76-multi_evidence_implicit-49909e4c",
+      "category": "qa",
+      "question": "Tell me two key relations about Digital Living Network Alliance.",
+      "evidence": [
+        "Wikidata statement P112 for Digital Living Network Alliance (Q53222) identifies Intel (Q248).",
+        "Wikidata statement P159 for Digital Living Network Alliance (Q53222) identifies United States (Q30)."
+      ],
+      "expected_objects": [
+        "Intel",
+        "United States"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-8070bd398e0dcbc8-multi_evidence_implicit-63b0738d",
+      "category": "qa",
+      "question": "Tell me two key relations about Global Network Initiative.",
+      "evidence": [
+        "Wikidata statement P112 for Global Network Initiative (Q5570513) identifies Google (Q95).",
+        "Wikidata statement P112 for Global Network Initiative (Q5570513) identifies Microsoft (Q2283).",
+        "Wikidata statement P112 for Global Network Initiative (Q5570513) identifies Yahoo (Q37093).",
+        "Wikidata statement P159 for Global Network Initiative (Q5570513) identifies Washington, D.C. (Q61)."
+      ],
+      "expected_objects": [
+        "Google",
+        "Microsoft",
+        "Yahoo",
+        "Washington, D.C."
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-233c69d0198ba7a2-multi_evidence_implicit-8d1c27c6",
+      "category": "qa",
+      "question": "Tell me two key relations about Google Apps Script.",
+      "evidence": [
+        "Wikidata statement P178 for Google Apps Script (Q5583799) identifies Google (Q95).",
+        "Wikidata statement P366 for Google Apps Script (Q5583799) identifies web framework (Q1330336)."
+      ],
+      "expected_objects": [
+        "Google",
+        "web framework"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "obqa-6d965e9fc0402c83-multi_evidence_implicit-32eef302",
+      "category": "qa",
+      "question": "Tell me two key relations about Google Web Toolkit.",
+      "evidence": [
+        "Wikidata statement P178 for Google Web Toolkit (Q79578) identifies Google (Q95).",
+        "Wikidata statement P366 for Google Web Toolkit (Q79578) identifies AJAX (Q134471)."
+      ],
+      "expected_objects": [
+        "Google",
+        "AJAX"
+      ],
+      "expected_decision": "answer"
+    },
+    {
+      "id": "reflective-00",
+      "category": "reflective",
+      "question": "What if Elon Musk had not founded SpaceX?",
+      "evidence": [
+        "Elon Musk leader_of Tesla",
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for Tesla",
+        "Elon Musk known_for SpaceX",
+        "Elon Musk estimated_net_worth US$1.1 trillion",
+        "SpaceX develops rockets",
+        "SpaceX develops spacecraft",
+        "SpaceX produces Falcon rockets",
+        "SpaceX produces Dragon spacecraft",
+        "Elon Musk founded SpaceX",
+        "Gwynne Shotwell leader_of SpaceX",
+        "Elon Musk founded Neuralink",
+        "Elon Musk founded The Boring Company",
+        "Elon Musk founded xAI",
+        "SpaceX located_in Starbase, Texas",
+        "SpaceX located_in El Segundo, California"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-01",
+      "category": "reflective",
+      "question": "What if Elon Musk had not leader_of Tesla?",
+      "evidence": [
+        "Elon Musk leader_of Tesla",
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for Tesla",
+        "Elon Musk known_for SpaceX",
+        "Elon Musk estimated_net_worth US$1.1 trillion",
+        "Tesla produces Electric cars",
+        "Tesla produces battery energy storage",
+        "Tesla produces Battery storage",
+        "Martin Eberhard founded Tesla",
+        "Marc Tarpenning founded Tesla",
+        "Elon Musk founded SpaceX",
+        "Elon Musk founded Neuralink",
+        "Elon Musk founded The Boring Company",
+        "Elon Musk founded xAI"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-02",
+      "category": "reflective",
+      "question": "What if Elon Musk had not known_for SpaceX?",
+      "evidence": [
+        "Elon Musk leader_of Tesla",
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for Tesla",
+        "Elon Musk known_for SpaceX",
+        "Elon Musk estimated_net_worth US$1.1 trillion",
+        "SpaceX develops rockets",
+        "SpaceX develops spacecraft",
+        "SpaceX produces Falcon rockets",
+        "SpaceX produces Dragon spacecraft",
+        "Elon Musk founded SpaceX",
+        "Gwynne Shotwell leader_of SpaceX",
+        "Elon Musk founded Neuralink",
+        "Elon Musk founded The Boring Company",
+        "Elon Musk founded xAI",
+        "SpaceX located_in Starbase, Texas",
+        "SpaceX located_in El Segundo, California"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-03",
+      "category": "reflective",
+      "question": "What if Elon Musk had not estimated_net_worth US$1.1 trillion?",
+      "evidence": [
+        "Elon Musk leader_of Tesla",
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for Tesla",
+        "Elon Musk known_for SpaceX",
+        "Elon Musk estimated_net_worth US$1.1 trillion",
+        "Elon Musk founded SpaceX",
+        "Elon Musk founded Neuralink",
+        "Elon Musk founded The Boring Company",
+        "Elon Musk founded xAI"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-04",
+      "category": "reflective",
+      "question": "What if Tesla had not produces Electric cars?",
+      "evidence": [
+        "Elon Musk leader_of Tesla",
+        "Elon Musk known_for Tesla",
+        "Tesla produces Electric cars",
+        "Tesla produces battery energy storage",
+        "Tesla produces Battery storage",
+        "Martin Eberhard founded Tesla",
+        "Marc Tarpenning founded Tesla"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-05",
+      "category": "reflective",
+      "question": "What if SpaceX had not located_in Starbase, Texas?",
+      "evidence": [
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for SpaceX",
+        "SpaceX develops rockets",
+        "SpaceX develops spacecraft",
+        "SpaceX produces Falcon rockets",
+        "SpaceX produces Dragon spacecraft",
+        "Elon Musk founded SpaceX",
+        "Gwynne Shotwell leader_of SpaceX",
+        "SpaceX located_in Starbase, Texas",
+        "SpaceX located_in El Segundo, California"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-06",
+      "category": "reflective",
+      "question": "What if SpaceX had not develops Rockets?",
+      "evidence": [
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for SpaceX",
+        "SpaceX develops rockets",
+        "SpaceX develops spacecraft",
+        "SpaceX produces Falcon rockets",
+        "SpaceX produces Dragon spacecraft",
+        "Elon Musk founded SpaceX",
+        "Gwynne Shotwell leader_of SpaceX",
+        "Blue Origin develops rockets",
+        "SpaceX located_in Starbase, Texas",
+        "SpaceX located_in El Segundo, California"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-07",
+      "category": "reflective",
+      "question": "What if SpaceX had not produces Falcon rockets?",
+      "evidence": [
+        "Elon Musk leader_of SpaceX",
+        "Elon Musk known_for SpaceX",
+        "SpaceX develops rockets",
+        "SpaceX develops spacecraft",
+        "SpaceX produces Falcon rockets",
+        "SpaceX produces Dragon spacecraft",
+        "Elon Musk founded SpaceX",
+        "Gwynne Shotwell leader_of SpaceX",
+        "SpaceX located_in Starbase, Texas",
+        "SpaceX located_in El Segundo, California"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-08",
+      "category": "reflective",
+      "question": "What if Jeff Bezos had not founded Blue Origin?",
+      "evidence": [
+        "Jeff Bezos leader_of Blue Origin",
+        "Jeff Bezos estimated_net_worth US$200 billion",
+        "Blue Origin develops rockets",
+        "Blue Origin develops spacecraft",
+        "Jeff Bezos founded Blue Origin",
+        "Blue Origin located_in Kent, Washington"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-09",
+      "category": "reflective",
+      "question": "What if Blue Origin had not develops Rockets?",
+      "evidence": [
+        "SpaceX develops rockets",
+        "Jeff Bezos leader_of Blue Origin",
+        "Blue Origin develops rockets",
+        "Blue Origin develops spacecraft",
+        "Jeff Bezos founded Blue Origin",
+        "Blue Origin located_in Kent, Washington"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-10",
+      "category": "reflective",
+      "question": "What if LVMH had not located_in Paris?",
+      "evidence": [
+        "LVMH Moet Hennessy Louis Vuitton SE located_in Paris",
+        "LVMH located_in Paris"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-11",
+      "category": "reflective",
+      "question": "What if Falcon 9 had not located_in McGregor, Texas?",
+      "evidence": [
+        "Falcon 9 located_in McGregor, Texas"
+      ],
+      "expected": null
+    },
+    {
+      "id": "reflective-12",
+      "category": "reflective",
+      "question": "What if Neuralink had not develops brain-computer interfaces?",
+      "evidence": [
+        "Neuralink develops brain-computer interfaces",
+        "Elon Musk founded Neuralink",
+        "Neuralink founded_by Max Hodak"
+      ],
+      "expected": null
+    },
+    {
+      "id": "constrained-00",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Arts Education Research using only these facts: Arts Education Research created_by Benjamin Jörissen; Arts Education Research created_by Ernst Wagner; Arts Education Research created_by Leopold Klepacki. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Benjamin Jörissen",
+        "created_by Ernst Wagner",
+        "created_by Leopold Klepacki"
+      ],
+      "subject": "Arts Education Research"
+    },
+    {
+      "id": "constrained-01",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Bloomberg News using only these facts: Bloomberg News publishes financial market coverage; Bloomberg News publishes wealth indexes; Bloomberg News located_in New York City. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "publishes financial market coverage",
+        "publishes wealth indexes",
+        "located_in New York City"
+      ],
+      "subject": "Bloomberg News"
+    },
+    {
+      "id": "constrained-02",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Blue Origin using only these facts: Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "develops rockets",
+        "develops spacecraft",
+        "located_in Kent, Washington"
+      ],
+      "subject": "Blue Origin"
+    },
+    {
+      "id": "constrained-03",
+      "category": "constrained_creative",
+      "question": "Write a short piece about CKKS using only these facts: CKKS wikidata_p138_named_after Cheon, Jung Hee; CKKS wikidata_p138_named_after Andrey Kim; CKKS wikidata_p138_named_after Miran Kim. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "wikidata_p138_named_after Cheon, Jung Hee",
+        "wikidata_p138_named_after Andrey Kim",
+        "wikidata_p138_named_after Miran Kim"
+      ],
+      "subject": "CKKS"
+    },
+    {
+      "id": "constrained-04",
+      "category": "constrained_creative",
+      "question": "Write a short piece about CYBERSECURITY MANAGEMENT OF IT PRODUCTS using only these facts: CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Ihor Frolov; CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Yanina Kolodinska; CYBERSECURITY MANAGEMENT OF IT PRODUCTS published_by Borys Grinchenko Kyiv Metropolitan University. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Ihor Frolov",
+        "created_by Yanina Kolodinska",
+        "published_by Borys Grinchenko Kyiv Metropolitan University"
+      ],
+      "subject": "CYBERSECURITY MANAGEMENT OF IT PRODUCTS"
+    },
+    {
+      "id": "constrained-05",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Climate Change and Agriculture using only these facts: Climate Change and Agriculture created_by Andrew Sturman; Climate Change and Agriculture created_by Hervé Quénol; Climate Change and Agriculture published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Andrew Sturman",
+        "created_by Hervé Quénol",
+        "published_by Oxford University Press"
+      ],
+      "subject": "Climate Change and Agriculture"
+    },
+    {
+      "id": "constrained-06",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Creativity and Dance Education Research using only these facts: Creativity and Dance Education Research created_by Charlotte Hathaway; Creativity and Dance Education Research created_by Kerry Chappell; Creativity and Dance Education Research published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Charlotte Hathaway",
+        "created_by Kerry Chappell",
+        "published_by Oxford University Press"
+      ],
+      "subject": "Creativity and Dance Education Research"
+    },
+    {
+      "id": "constrained-07",
+      "category": "constrained_creative",
+      "question": "Write a short piece about DeepSeek-R1 using only these facts: DeepSeek-R1 owned_by DeepSeek; DeepSeek-R1 wikidata_p138_named_after DeepSeek; DeepSeek-R1 developed_by DeepSeek. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "owned_by DeepSeek",
+        "wikidata_p138_named_after DeepSeek",
+        "developed_by DeepSeek"
+      ],
+      "subject": "DeepSeek-R1"
+    },
+    {
+      "id": "constrained-08",
+      "category": "constrained_creative",
+      "question": "Write a short piece about E Groups using only these facts: E Groups created_by Anne S. Dowd; E Groups created_by Anthony F. Aveni; E Groups published_by University Press of Florida. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Anne S. Dowd",
+        "created_by Anthony F. Aveni",
+        "published_by University Press of Florida"
+      ],
+      "subject": "E Groups"
+    },
+    {
+      "id": "constrained-09",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Education Research Beyond Cyborg Subjectivities using only these facts: Education Research Beyond Cyborg Subjectivities created_by Annette Gough; Education Research Beyond Cyborg Subjectivities created_by Noel Gough; Education Research Beyond Cyborg Subjectivities published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Annette Gough",
+        "created_by Noel Gough",
+        "published_by Oxford University Press"
+      ],
+      "subject": "Education Research Beyond Cyborg Subjectivities"
+    },
+    {
+      "id": "constrained-10",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Elon Musk using only these facts: Elon Musk leader_of Tesla; Elon Musk leader_of SpaceX; Elon Musk known_for Tesla. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "leader_of Tesla",
+        "leader_of SpaceX",
+        "known_for Tesla"
+      ],
+      "subject": "Elon Musk"
+    },
+    {
+      "id": "constrained-11",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Energy Drink Consumption Among Papuan Athletes using only these facts: Energy Drink Consumption Among Papuan Athletes created_by Daniel Womsiwor; Energy Drink Consumption Among Papuan Athletes created_by Eva Sinaga; Energy Drink Consumption Among Papuan Athletes created_by Evi Sinaga. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Daniel Womsiwor",
+        "created_by Eva Sinaga",
+        "created_by Evi Sinaga"
+      ],
+      "subject": "Energy Drink Consumption Among Papuan Athletes"
+    },
+    {
+      "id": "constrained-12",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Epidemiology using only these facts: Epidemiology created_by Dharmendra Kumar Sinha; Epidemiology created_by Dhirendra Kumar Singh; Epidemiology created_by Krishna Gopal Narayan. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Dharmendra Kumar Sinha",
+        "created_by Dhirendra Kumar Singh",
+        "created_by Krishna Gopal Narayan"
+      ],
+      "subject": "Epidemiology"
+    },
+    {
+      "id": "constrained-13",
+      "category": "constrained_creative",
+      "question": "Write a short piece about HDF5 using only these facts: HDF5 developed_by The HDF Group; HDF5 uses N-Bit filter; HDF5 runs_on cross-platform. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "developed_by The HDF Group",
+        "uses N-Bit filter",
+        "runs_on cross-platform"
+      ],
+      "subject": "HDF5"
+    },
+    {
+      "id": "constrained-14",
+      "category": "constrained_creative",
+      "question": "Write a short piece about International Law in National Legal Systems using only these facts: International Law in National Legal Systems created_by Mila Versteeg; International Law in National Legal Systems created_by Pierre-Hugues Verdier; International Law in National Legal Systems published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Mila Versteeg",
+        "created_by Pierre-Hugues Verdier",
+        "published_by Oxford University Press"
+      ],
+      "subject": "International Law in National Legal Systems"
+    },
+    {
+      "id": "constrained-15",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Introduction to Molecular Biology of RNA using only these facts: Introduction to Molecular Biology of RNA created_by David Elliott; Introduction to Molecular Biology of RNA created_by Michael Ladomery; Introduction to Molecular Biology of RNA published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by David Elliott",
+        "created_by Michael Ladomery",
+        "published_by Oxford University Press"
+      ],
+      "subject": "Introduction to Molecular Biology of RNA"
+    },
+    {
+      "id": "constrained-16",
+      "category": "constrained_creative",
+      "question": "Write a short piece about IoT using only these facts: IoT published_by MDPI; IoT wikidata_p407_language_of_work_or_name English; IoT wikidata_p495_country_of_origin Switzerland. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "published_by MDPI",
+        "wikidata_p407_language_of_work_or_name English",
+        "wikidata_p495_country_of_origin Switzerland"
+      ],
+      "subject": "IoT"
+    },
+    {
+      "id": "constrained-17",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Jeff Bezos using only these facts: Jeff Bezos leader_of Blue Origin; Jeff Bezos estimated_net_worth US$200 billion; Jeff Bezos founded Blue Origin. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "leader_of Blue Origin",
+        "estimated_net_worth US$200 billion",
+        "founded Blue Origin"
+      ],
+      "subject": "Jeff Bezos"
+    },
+    {
+      "id": "constrained-18",
+      "category": "constrained_creative",
+      "question": "Write a short piece about LAMMPS using only these facts: LAMMPS developed_by United States Department of Energy; LAMMPS runs_on Unix-like operating system; LAMMPS runs_on Microsoft Windows. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "developed_by United States Department of Energy",
+        "runs_on Unix-like operating system",
+        "runs_on Microsoft Windows"
+      ],
+      "subject": "LAMMPS"
+    },
+    {
+      "id": "constrained-19",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Large Language Model using only these facts: Large Language Model uses AI prompt; Large Language Model uses transformer; Large Language Model used_for conversational AI. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "uses AI prompt",
+        "uses transformer",
+        "used_for conversational AI"
+      ],
+      "subject": "Large Language Model"
+    },
+    {
+      "id": "constrained-20",
+      "category": "constrained_creative",
+      "question": "Write a short piece about MathNet using only these facts: MathNet wikidata_p495_country_of_origin United States; MathNet has_topic New York City Police Department; MathNet has_topic Los Angeles Police Department. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "wikidata_p495_country_of_origin United States",
+        "has_topic New York City Police Department",
+        "has_topic Los Angeles Police Department"
+      ],
+      "subject": "MathNet"
+    },
+    {
+      "id": "constrained-21",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Mathematics using only these facts: Mathematics created_by I.A. Narkyevich; Mathematics created_by I.V. Pavlushkov; Mathematics created_by L.V. Rozovsky. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by I.A. Narkyevich",
+        "created_by I.V. Pavlushkov",
+        "created_by L.V. Rozovsky"
+      ],
+      "subject": "Mathematics"
+    },
+    {
+      "id": "constrained-22",
+      "category": "constrained_creative",
+      "question": "Write a short piece about SPSS using only these facts: SPSS developed_by IBM; SPSS developed_by Dale H. Bent; SPSS runs_on Microsoft Windows. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "developed_by IBM",
+        "developed_by Dale H. Bent",
+        "runs_on Microsoft Windows"
+      ],
+      "subject": "SPSS"
+    },
+    {
+      "id": "constrained-23",
+      "category": "constrained_creative",
+      "question": "Write a short piece about SpaceX using only these facts: SpaceX develops rockets; SpaceX develops spacecraft; SpaceX produces Falcon rockets. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "develops rockets",
+        "develops spacecraft",
+        "produces Falcon rockets"
+      ],
+      "subject": "SpaceX"
+    },
+    {
+      "id": "constrained-24",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Tesla using only these facts: Tesla produces Electric cars; Tesla produces battery energy storage; Tesla produces Battery storage. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "produces Electric cars",
+        "produces battery energy storage",
+        "produces Battery storage"
+      ],
+      "subject": "Tesla"
+    },
+    {
+      "id": "constrained-25",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Tianhe-2 using only these facts: Tianhe-2 located_in Guangzhou; Tianhe-2 wikidata_p138_named_after Milky Way; Tianhe-2 located_in People's Republic of China. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "located_in Guangzhou",
+        "wikidata_p138_named_after Milky Way",
+        "located_in People's Republic of China"
+      ],
+      "subject": "Tianhe-2"
+    },
+    {
+      "id": "constrained-26",
+      "category": "constrained_creative",
+      "question": "Write a short piece about Veterinary Public Health using only these facts: Veterinary Public Health created_by Dharmendra Kumar Sinha; Veterinary Public Health created_by Dhirendra Kumar Singh; Veterinary Public Health created_by Krishna Gopal Narayan. Use all of them. Do not add anything not listed.",
+      "evidence": [
+        "created_by Dharmendra Kumar Sinha",
+        "created_by Dhirendra Kumar Singh",
+        "created_by Krishna Gopal Narayan"
+      ],
+      "subject": "Veterinary Public Health"
+    }
+  ]
+}

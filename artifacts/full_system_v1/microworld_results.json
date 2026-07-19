@@ -1,0 +1,893 @@
+[
+  {
+    "id": "obqa-9e05a644d363ea3f-multi_evidence_implicit-b45e4172",
+    "question": "Tell me two key relations about Boeing Calc.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P178 for Boeing Calc (Q890179) identifies Boeing (Q66). Alongside that, Wikidata statement P366 for Boeing Calc (Q890179) identifies spreadsheet (Q183197). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-47110169245e6446-multi_evidence_implicit-1d00000f",
+    "question": "Tell me two key relations about Busboy Productions.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P159 for Busboy Productions (Q5001290) identifies New York City (Q60). Alongside that, Wikidata statement P127 for Busboy Productions (Q5001290) identifies Jon Stewart (Q211987). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-0e842d1357d6c519-multi_evidence_implicit-47922e91",
+    "question": "Tell me two key relations about Cartooning for Peace.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Cartooning for Peace founded by Kofi Annan, Patrick Chappatte, and Plantu. Alongside that, Wikidata statement P159 for Cartooning for Peace (Q2940652) identifies Paris (Q90). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-819426a495d4e7de-multi_evidence_implicit-fdbf654a",
+    "question": "Tell me two key relations about Clinton Foundation.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P112 for Clinton Foundation (Q1974620) identifies Bill Clinton (Q1124). Alongside that, Wikidata statement P159 for Clinton Foundation (Q1974620) identifies New York City (Q60). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-1686b8478e669259-multi_evidence_implicit-b516deb1",
+    "question": "Tell me two key relations about Cominform.",
+    "branch": "qa",
+    "route_method": "default_qa",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P112 for Cominform (Q183533) identifies Joseph Stalin (Q855). The evidence diverges on Cominform: one cited span supports 'Belgrade', while other cited evidence instead points to 'Bucharest'; neither reading is treated as settled. (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-8cca97131c73543c-multi_evidence_implicit-176d9870",
+    "question": "Tell me two key relations about Communist Party of the Soviet Union.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P112 for Communist Party of the Soviet Union (Q79854) identifies Vladimir Lenin (Q1394). The evidence diverges on Communist Party of the Soviet Union: one cited span supports 'Moscow', while other cited evidence instead points to 'Staraya Square'; neither reading is treated as settled. (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-9d2f65a0b1ff6c76-multi_evidence_implicit-49909e4c",
+    "question": "Tell me two key relations about Digital Living Network Alliance.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P112 for Digital Living Network Alliance (Q53222) identifies Intel (Q248). Alongside that, Wikidata statement P159 for Digital Living Network Alliance (Q53222) identifies United States (Q30). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-8070bd398e0dcbc8-multi_evidence_implicit-63b0738d",
+    "question": "Tell me two key relations about Global Network Initiative.",
+    "branch": "qa",
+    "route_method": "centroid->qa_fallback",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Global Network Initiative founded by Google, Microsoft, and Yahoo. Alongside that, Wikidata statement P159 for Global Network Initiative (Q5570513) identifies Washington, D.C. (Q61). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-233c69d0198ba7a2-multi_evidence_implicit-8d1c27c6",
+    "question": "Tell me two key relations about Google Apps Script.",
+    "branch": "qa",
+    "route_method": "default_qa",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P178 for Google Apps Script (Q5583799) identifies Google (Q95). Alongside that, Wikidata statement P366 for Google Apps Script (Q5583799) identifies web framework (Q1330336). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "obqa-6d965e9fc0402c83-multi_evidence_implicit-32eef302",
+    "question": "Tell me two key relations about Google Web Toolkit.",
+    "branch": "qa",
+    "route_method": "default_qa",
+    "confidence_level": "grounded",
+    "support_kind": "grounded",
+    "decision": "answer",
+    "answer_text": "Wikidata statement P178 for Google Web Toolkit (Q79578) identifies Google (Q95). Alongside that, Wikidata statement P366 for Google Web Toolkit (Q79578) identifies AJAX (Q134471). (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "evidence_backed_answer_plan"
+    }
+  },
+  {
+    "id": "reflective-00",
+    "question": "What if Elon Musk had not founded SpaceX?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "speculative_verified",
+    "support_kind": "speculative_inference",
+    "decision": "answer",
+    "answer_text": "If Elon Musk had not founded SpaceX, the existence of SpaceX in this evidence slice would be in question. Its recorded activities — including developing rockets and developing spacecraft — would then also be in question. This is a speculative inference, not a stored fact.",
+    "caution": null,
+    "detail": {
+      "rule": "counterfactual_removal",
+      "reasoning_trace": {
+        "question": "What if Elon Musk had not founded SpaceX?",
+        "rule": "counterfactual_removal",
+        "decision": "speculative",
+        "support_kind": "speculative_inference",
+        "step": {
+          "rule": "counterfactual_removal",
+          "premise_evidence_ids": [
+            "edge:elon musk|founded|spacex"
+          ],
+          "premises": [
+            {
+              "subject": "Elon Musk",
+              "predicate": "founded",
+              "object": "SpaceX",
+              "evidence_id": "edge:elon musk|founded|spacex"
+            }
+          ],
+          "conclusion_evidence_ids": [
+            "edge:elon musk|leader_of|spacex",
+            "edge:elon musk|known_for|spacex",
+            "edge:spacex|develops|rockets",
+            "edge:spacex|develops|spacecraft",
+            "edge:spacex|produces|falcon rockets",
+            "edge:spacex|produces|dragon spacecraft",
+            "edge:gwynne shotwell|leader_of|spacex",
+            "edge:spacex|located_in|starbase, texas",
+            "edge:spacex|located_in|el segundo, california"
+          ],
+          "conclusion_facts": [
+            {
+              "subject": "Elon Musk",
+              "predicate": "leader_of",
+              "object": "SpaceX",
+              "evidence_id": "edge:elon musk|leader_of|spacex"
+            },
+            {
+              "subject": "Elon Musk",
+              "predicate": "known_for",
+              "object": "SpaceX",
+              "evidence_id": "edge:elon musk|known_for|spacex"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "develops",
+              "object": "rockets",
+              "evidence_id": "edge:spacex|develops|rockets"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "develops",
+              "object": "spacecraft",
+              "evidence_id": "edge:spacex|develops|spacecraft"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "produces",
+              "object": "Falcon rockets",
+              "evidence_id": "edge:spacex|produces|falcon rockets"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "produces",
+              "object": "Dragon spacecraft",
+              "evidence_id": "edge:spacex|produces|dragon spacecraft"
+            },
+            {
+              "subject": "Gwynne Shotwell",
+              "predicate": "leader_of",
+              "object": "SpaceX",
+              "evidence_id": "edge:gwynne shotwell|leader_of|spacex"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "located_in",
+              "object": "Starbase, Texas",
+              "evidence_id": "edge:spacex|located_in|starbase, texas"
+            },
+            {
+              "subject": "SpaceX",
+              "predicate": "located_in",
+              "object": "El Segundo, California",
+              "evidence_id": "edge:spacex|located_in|el segundo, california"
+            }
+          ],
+          "bridge_node": null
+        },
+        "audit_reason": null
+      }
+    }
+  },
+  {
+    "id": "reflective-01",
+    "question": "What if Elon Musk had not leader_of Tesla?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'leader_of' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'leader_of' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-02",
+    "question": "What if Elon Musk had not known_for SpaceX?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'known_for' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'known_for' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-03",
+    "question": "What if Elon Musk had not estimated_net_worth US$1.1 trillion?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'estimated_net_worth' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'estimated_net_worth' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-04",
+    "question": "What if Tesla had not produces Electric cars?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-05",
+    "question": "What if SpaceX had not located_in Starbase, Texas?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-06",
+    "question": "What if SpaceX had not develops Rockets?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-07",
+    "question": "What if SpaceX had not produces Falcon rockets?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-08",
+    "question": "What if Jeff Bezos had not founded Blue Origin?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "speculative_verified",
+    "support_kind": "speculative_inference",
+    "decision": "answer",
+    "answer_text": "If Jeff Bezos had not founded Blue Origin, the existence of Blue Origin in this evidence slice would be in question. Its recorded activities — including developing rockets and developing spacecraft — would then also be in question. This is a speculative inference, not a stored fact.",
+    "caution": null,
+    "detail": {
+      "rule": "counterfactual_removal",
+      "reasoning_trace": {
+        "question": "What if Jeff Bezos had not founded Blue Origin?",
+        "rule": "counterfactual_removal",
+        "decision": "speculative",
+        "support_kind": "speculative_inference",
+        "step": {
+          "rule": "counterfactual_removal",
+          "premise_evidence_ids": [
+            "edge:jeff bezos|founded|blue origin"
+          ],
+          "premises": [
+            {
+              "subject": "Jeff Bezos",
+              "predicate": "founded",
+              "object": "Blue Origin",
+              "evidence_id": "edge:jeff bezos|founded|blue origin"
+            }
+          ],
+          "conclusion_evidence_ids": [
+            "edge:jeff bezos|leader_of|blue origin",
+            "edge:blue origin|develops|rockets",
+            "edge:blue origin|develops|spacecraft",
+            "edge:blue origin|located_in|kent, washington"
+          ],
+          "conclusion_facts": [
+            {
+              "subject": "Jeff Bezos",
+              "predicate": "leader_of",
+              "object": "Blue Origin",
+              "evidence_id": "edge:jeff bezos|leader_of|blue origin"
+            },
+            {
+              "subject": "Blue Origin",
+              "predicate": "develops",
+              "object": "rockets",
+              "evidence_id": "edge:blue origin|develops|rockets"
+            },
+            {
+              "subject": "Blue Origin",
+              "predicate": "develops",
+              "object": "spacecraft",
+              "evidence_id": "edge:blue origin|develops|spacecraft"
+            },
+            {
+              "subject": "Blue Origin",
+              "predicate": "located_in",
+              "object": "Kent, Washington",
+              "evidence_id": "edge:blue origin|located_in|kent, washington"
+            }
+          ],
+          "bridge_node": null
+        },
+        "audit_reason": null
+      }
+    }
+  },
+  {
+    "id": "reflective-09",
+    "question": "What if Blue Origin had not develops Rockets?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-10",
+    "question": "What if LVMH had not located_in Paris?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-11",
+    "question": "What if Falcon 9 had not located_in McGregor, Texas?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "reflective-12",
+    "question": "What if Neuralink had not develops brain-computer interfaces?",
+    "branch": "reflective",
+    "route_method": "fast_path",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+    "caution": null,
+    "detail": {
+      "audit_reason": "predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "constrained-00",
+    "question": "Write a short piece about Arts Education Research using only these facts: Arts Education Research created_by Benjamin Jörissen; Arts Education Research created_by Ernst Wagner; Arts Education Research created_by Leopold Klepacki. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Arts Education Research was created by Benjamin Jörissen. In addition, it was created by Ernst Wagner. Beyond that, Arts Education Research was created by Leopold Klepacki.",
+    "caution": null,
+    "detail": {
+      "subject": "Arts Education Research",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-01",
+    "question": "Write a short piece about Bloomberg News using only these facts: Bloomberg News publishes financial market coverage; Bloomberg News publishes wealth indexes; Bloomberg News located_in New York City. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Bloomberg News publishes financial market coverage. In addition, it publishes wealth indexes. Beyond that, Bloomberg News is located in New York City.",
+    "caution": null,
+    "detail": {
+      "subject": "Bloomberg News",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-02",
+    "question": "Write a short piece about Blue Origin using only these facts: Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Blue Origin develops rockets. In addition, it develops spacecraft. Beyond that, Blue Origin is located in Kent, Washington.",
+    "caution": null,
+    "detail": {
+      "subject": "Blue Origin",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-03",
+    "question": "Write a short piece about CKKS using only these facts: CKKS wikidata_p138_named_after Cheon, Jung Hee; CKKS wikidata_p138_named_after Andrey Kim; CKKS wikidata_p138_named_after Miran Kim. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "CKKS wikidata p138 named after Cheon, Jung Hee. In addition, it wikidata p138 named after Andrey Kim. Beyond that, CKKS wikidata p138 named after Miran Kim.",
+    "caution": null,
+    "detail": {
+      "subject": "CKKS",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-04",
+    "question": "Write a short piece about CYBERSECURITY MANAGEMENT OF IT PRODUCTS using only these facts: CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Ihor Frolov; CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Yanina Kolodinska; CYBERSECURITY MANAGEMENT OF IT PRODUCTS published_by Borys Grinchenko Kyiv Metropolitan University. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "CYBERSECURITY MANAGEMENT OF IT PRODUCTS was created by Ihor Frolov. In addition, it was created by Yanina Kolodinska. Beyond that, CYBERSECURITY MANAGEMENT OF IT PRODUCTS was published by Borys Grinchenko Kyiv Metropolitan University.",
+    "caution": null,
+    "detail": {
+      "subject": "CYBERSECURITY MANAGEMENT OF IT PRODUCTS",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-05",
+    "question": "Write a short piece about Climate Change and Agriculture using only these facts: Climate Change and Agriculture created_by Andrew Sturman; Climate Change and Agriculture created_by Hervé Quénol; Climate Change and Agriculture published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Climate Change and Agriculture was created by Andrew Sturman. In addition, it was created by Hervé Quénol. Beyond that, Climate Change and Agriculture was published by Oxford University Press.",
+    "caution": null,
+    "detail": {
+      "subject": "Climate Change and Agriculture",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-06",
+    "question": "Write a short piece about Creativity and Dance Education Research using only these facts: Creativity and Dance Education Research created_by Charlotte Hathaway; Creativity and Dance Education Research created_by Kerry Chappell; Creativity and Dance Education Research published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Creativity and Dance Education Research was created by Charlotte Hathaway. In addition, it was created by Kerry Chappell. Beyond that, Creativity and Dance Education Research was published by Oxford University Press.",
+    "caution": null,
+    "detail": {
+      "subject": "Creativity and Dance Education Research",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-07",
+    "question": "Write a short piece about DeepSeek-R1 using only these facts: DeepSeek-R1 owned_by DeepSeek; DeepSeek-R1 wikidata_p138_named_after DeepSeek; DeepSeek-R1 developed_by DeepSeek. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "DeepSeek-R1 is owned by DeepSeek. In addition, it wikidata p138 named after DeepSeek. Beyond that, DeepSeek-R1 was developed by DeepSeek.",
+    "caution": null,
+    "detail": {
+      "subject": "DeepSeek-R1",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-08",
+    "question": "Write a short piece about E Groups using only these facts: E Groups created_by Anne S. Dowd; E Groups created_by Anthony F. Aveni; E Groups published_by University Press of Florida. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "E Groups was created by Anne S. Dowd. In addition, it was created by Anthony F. Aveni. Beyond that, E Groups was published by University Press of Florida.",
+    "caution": null,
+    "detail": {
+      "subject": "E Groups",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-09",
+    "question": "Write a short piece about Education Research Beyond Cyborg Subjectivities using only these facts: Education Research Beyond Cyborg Subjectivities created_by Annette Gough; Education Research Beyond Cyborg Subjectivities created_by Noel Gough; Education Research Beyond Cyborg Subjectivities published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Education Research Beyond Cyborg Subjectivities was created by Annette Gough. In addition, it was created by Noel Gough. Beyond that, Education Research Beyond Cyborg Subjectivities was published by Oxford University Press.",
+    "caution": null,
+    "detail": {
+      "subject": "Education Research Beyond Cyborg Subjectivities",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-10",
+    "question": "Write a short piece about Elon Musk using only these facts: Elon Musk leader_of Tesla; Elon Musk leader_of SpaceX; Elon Musk known_for Tesla. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Elon Musk leads Tesla. In addition, it leads SpaceX. Beyond that, Elon Musk is known for Tesla.",
+    "caution": null,
+    "detail": {
+      "subject": "Elon Musk",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-11",
+    "question": "Write a short piece about Energy Drink Consumption Among Papuan Athletes using only these facts: Energy Drink Consumption Among Papuan Athletes created_by Daniel Womsiwor; Energy Drink Consumption Among Papuan Athletes created_by Eva Sinaga; Energy Drink Consumption Among Papuan Athletes created_by Evi Sinaga. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Energy Drink Consumption Among Papuan Athletes was created by Daniel Womsiwor. In addition, it was created by Eva Sinaga. Beyond that, Energy Drink Consumption Among Papuan Athletes was created by Evi Sinaga.",
+    "caution": null,
+    "detail": {
+      "subject": "Energy Drink Consumption Among Papuan Athletes",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-12",
+    "question": "Write a short piece about Epidemiology using only these facts: Epidemiology created_by Dharmendra Kumar Sinha; Epidemiology created_by Dhirendra Kumar Singh; Epidemiology created_by Krishna Gopal Narayan. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Epidemiology was created by Dharmendra Kumar Sinha. In addition, it was created by Dhirendra Kumar Singh. Beyond that, Epidemiology was created by Krishna Gopal Narayan.",
+    "caution": null,
+    "detail": {
+      "subject": "Epidemiology",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-13",
+    "question": "Write a short piece about HDF5 using only these facts: HDF5 developed_by The HDF Group; HDF5 uses N-Bit filter; HDF5 runs_on cross-platform. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "HDF5 was developed by The HDF Group. In addition, it uses N-Bit filter. Beyond that, HDF5 runs on cross-platform.",
+    "caution": null,
+    "detail": {
+      "subject": "HDF5",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-14",
+    "question": "Write a short piece about International Law in National Legal Systems using only these facts: International Law in National Legal Systems created_by Mila Versteeg; International Law in National Legal Systems created_by Pierre-Hugues Verdier; International Law in National Legal Systems published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "International Law in National Legal Systems was created by Mila Versteeg. In addition, it was created by Pierre-Hugues Verdier. Beyond that, International Law in National Legal Systems was published by Oxford University Press.",
+    "caution": null,
+    "detail": {
+      "subject": "International Law in National Legal Systems",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-15",
+    "question": "Write a short piece about Introduction to Molecular Biology of RNA using only these facts: Introduction to Molecular Biology of RNA created_by David Elliott; Introduction to Molecular Biology of RNA created_by Michael Ladomery; Introduction to Molecular Biology of RNA published_by Oxford University Press. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Introduction to Molecular Biology of RNA was created by David Elliott. In addition, it was created by Michael Ladomery. Beyond that, Introduction to Molecular Biology of RNA was published by Oxford University Press.",
+    "caution": null,
+    "detail": {
+      "subject": "Introduction to Molecular Biology of RNA",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-16",
+    "question": "Write a short piece about IoT using only these facts: IoT published_by MDPI; IoT wikidata_p407_language_of_work_or_name English; IoT wikidata_p495_country_of_origin Switzerland. Use all of them. Do not add anything not listed.",
+    "branch": "qa",
+    "route_method": "fast_path->qa_fallback",
+    "confidence_level": "audit",
+    "support_kind": "audit",
+    "decision": "audit",
+    "answer_text": "No relevant information found for this question.",
+    "caution": null,
+    "detail": {
+      "source_system": "server_experimental_graph",
+      "branch_support_kind": "missing_knowledge"
+    }
+  },
+  {
+    "id": "constrained-17",
+    "question": "Write a short piece about Jeff Bezos using only these facts: Jeff Bezos leader_of Blue Origin; Jeff Bezos estimated_net_worth US$200 billion; Jeff Bezos founded Blue Origin. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Jeff Bezos leads Blue Origin. In addition, it estimated net worth US$200 billion. Beyond that, Jeff Bezos founded Blue Origin.",
+    "caution": null,
+    "detail": {
+      "subject": "Jeff Bezos",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-18",
+    "question": "Write a short piece about LAMMPS using only these facts: LAMMPS developed_by United States Department of Energy; LAMMPS runs_on Unix-like operating system; LAMMPS runs_on Microsoft Windows. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "LAMMPS was developed by United States Department of Energy. In addition, it runs on Unix-like operating system. Beyond that, LAMMPS runs on Microsoft Windows.",
+    "caution": null,
+    "detail": {
+      "subject": "LAMMPS",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-19",
+    "question": "Write a short piece about Large Language Model using only these facts: Large Language Model uses AI prompt; Large Language Model uses transformer; Large Language Model used_for conversational AI. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Large Language Model uses AI prompt. In addition, it uses transformer. Beyond that, Large Language Model used for conversational AI.",
+    "caution": null,
+    "detail": {
+      "subject": "Large Language Model",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-20",
+    "question": "Write a short piece about MathNet using only these facts: MathNet wikidata_p495_country_of_origin United States; MathNet has_topic New York City Police Department; MathNet has_topic Los Angeles Police Department. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "MathNet wikidata p495 country of origin United States. In addition, it has topic New York City Police Department. Beyond that, MathNet has topic Los Angeles Police Department.",
+    "caution": null,
+    "detail": {
+      "subject": "MathNet",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-21",
+    "question": "Write a short piece about Mathematics using only these facts: Mathematics created_by I.A. Narkyevich; Mathematics created_by I.V. Pavlushkov; Mathematics created_by L.V. Rozovsky. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Mathematics was created by I.A. Narkyevich. In addition, it was created by I.V. Pavlushkov. Beyond that, Mathematics was created by L.V. Rozovsky.",
+    "caution": null,
+    "detail": {
+      "subject": "Mathematics",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-22",
+    "question": "Write a short piece about SPSS using only these facts: SPSS developed_by IBM; SPSS developed_by Dale H. Bent; SPSS runs_on Microsoft Windows. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "SPSS was developed by IBM. In addition, it was developed by Dale H. Bent. Beyond that, SPSS runs on Microsoft Windows.",
+    "caution": null,
+    "detail": {
+      "subject": "SPSS",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-23",
+    "question": "Write a short piece about SpaceX using only these facts: SpaceX develops rockets; SpaceX develops spacecraft; SpaceX produces Falcon rockets. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "SpaceX develops rockets. In addition, it develops spacecraft. Beyond that, SpaceX produces Falcon rockets.",
+    "caution": null,
+    "detail": {
+      "subject": "SpaceX",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-24",
+    "question": "Write a short piece about Tesla using only these facts: Tesla produces Electric cars; Tesla produces battery energy storage; Tesla produces Battery storage. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Tesla produces Electric cars. In addition, it produces battery energy storage. Beyond that, Tesla produces Battery storage.",
+    "caution": null,
+    "detail": {
+      "subject": "Tesla",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-25",
+    "question": "Write a short piece about Tianhe-2 using only these facts: Tianhe-2 located_in Guangzhou; Tianhe-2 wikidata_p138_named_after Milky Way; Tianhe-2 located_in People's Republic of China. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Tianhe-2 is located in Guangzhou. In addition, it wikidata p138 named after Milky Way. Beyond that, Tianhe-2 is located in People's Republic of China.",
+    "caution": null,
+    "detail": {
+      "subject": "Tianhe-2",
+      "n_facts": 3
+    }
+  },
+  {
+    "id": "constrained-26",
+    "question": "Write a short piece about Veterinary Public Health using only these facts: Veterinary Public Health created_by Dharmendra Kumar Sinha; Veterinary Public Health created_by Dhirendra Kumar Singh; Veterinary Public Health created_by Krishna Gopal Narayan. Use all of them. Do not add anything not listed.",
+    "branch": "constrained_creative",
+    "route_method": "fast_path",
+    "confidence_level": "grounded_generation",
+    "support_kind": "grounded_generation",
+    "decision": "answer",
+    "answer_text": "Veterinary Public Health was created by Dharmendra Kumar Sinha. In addition, it was created by Dhirendra Kumar Singh. Beyond that, Veterinary Public Health was created by Krishna Gopal Narayan.",
+    "caution": null,
+    "detail": {
+      "subject": "Veterinary Public Health",
+      "n_facts": 3
+    }
+  }
+]

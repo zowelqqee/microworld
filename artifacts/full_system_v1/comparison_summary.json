@@ -1,0 +1,1507 @@
+{
+  "qa": [
+    {
+      "category": "qa",
+      "id": "obqa-9e05a644d363ea3f-multi_evidence_implicit-b45e4172",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-47110169245e6446-multi_evidence_implicit-1d00000f",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-0e842d1357d6c519-multi_evidence_implicit-47922e91",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-819426a495d4e7de-multi_evidence_implicit-fdbf654a",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-1686b8478e669259-multi_evidence_implicit-b516deb1",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-8cca97131c73543c-multi_evidence_implicit-176d9870",
+      "microworld_correct": true,
+      "qwen_correct": false
+    },
+    {
+      "category": "qa",
+      "id": "obqa-9d2f65a0b1ff6c76-multi_evidence_implicit-49909e4c",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-8070bd398e0dcbc8-multi_evidence_implicit-63b0738d",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-233c69d0198ba7a2-multi_evidence_implicit-8d1c27c6",
+      "microworld_correct": true,
+      "qwen_correct": true
+    },
+    {
+      "category": "qa",
+      "id": "obqa-6d965e9fc0402c83-multi_evidence_implicit-32eef302",
+      "microworld_correct": true,
+      "qwen_correct": true
+    }
+  ],
+  "reflective": [
+    {
+      "category": "reflective",
+      "id": "reflective-00",
+      "microworld_decision": "answer",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-01",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-02",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-03",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-04",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-05",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-06",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-07",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-08",
+      "microworld_decision": "answer",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-09",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-10",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-11",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    },
+    {
+      "category": "reflective",
+      "id": "reflective-12",
+      "microworld_decision": "audit",
+      "qwen_mentions_uncertainty": true
+    }
+  ],
+  "constrained_creative": [
+    {
+      "category": "constrained_creative",
+      "id": "constrained-00",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Arts Education Research created_by Benjamin Jörissen",
+          "Arts Education Research created_by Ernst Wagner",
+          "Arts Education Research created_by Leopold Klepacki"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.519,
+        "included": [
+          "Arts Education Research created_by Benjamin Jörissen",
+          "Arts Education Research created_by Ernst Wagner",
+          "Arts Education Research created_by Leopold Klepacki"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "collaborative",
+          "contribute",
+          "contributed",
+          "development",
+          "different",
+          "diverse",
+          "each",
+          "field",
+          "individuals",
+          "nature",
+          "perspectives",
+          "scholars",
+          "showcasing",
+          "three"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-01",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Bloomberg News publishes financial market coverage",
+          "Bloomberg News publishes wealth indexes",
+          "Bloomberg News located_in New York City"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.368,
+        "included": [
+          "Bloomberg News publishes financial market coverage",
+          "Bloomberg News publishes wealth indexes",
+          "Bloomberg News located_in New York City"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "comprehensive",
+          "economic",
+          "headquartered",
+          "insights",
+          "landscape",
+          "providing",
+          "trends"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-02",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Blue Origin develops rockets",
+          "Blue Origin develops spacecraft",
+          "Blue Origin located_in Kent, Washington"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.5,
+        "included": [
+          "Blue Origin develops rockets",
+          "Blue Origin develops spacecraft",
+          "Blue Origin located_in Kent, Washington"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "contributions",
+          "developed",
+          "showcasing",
+          "significant",
+          "space",
+          "technology"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-03",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "CKKS wikidata_p138_named_after Cheon, Jung Hee",
+          "CKKS wikidata_p138_named_after Andrey Kim",
+          "CKKS wikidata_p138_named_after Miran Kim"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.167,
+        "included": [
+          "CKKS wikidata_p138_named_after Cheon, Jung Hee",
+          "CKKS wikidata_p138_named_after Andrey Kim",
+          "CKKS wikidata_p138_named_after Miran Kim"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "individuals",
+          "three"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-04",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Ihor Frolov",
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Yanina Kolodinska",
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS published_by Borys Grinchenko Kyiv Metropolitan University"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 2,
+        "n_faithful": 2,
+        "inclusion_rate": 0.667,
+        "fidelity_rate": 0.667,
+        "hallucination_token_rate": 0.125,
+        "included": [
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Ihor Frolov",
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS created_by Yanina Kolodinska"
+        ],
+        "missing": [
+          "CYBERSECURITY MANAGEMENT OF IT PRODUCTS published_by Borys Grinchenko Kyiv Metropolitan University"
+        ],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "product",
+          "representing"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-05",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Climate Change and Agriculture created_by Andrew Sturman",
+          "Climate Change and Agriculture created_by Hervé Quénol",
+          "Climate Change and Agriculture published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.575,
+        "included": [
+          "Climate Change and Agriculture created_by Andrew Sturman",
+          "Climate Change and Agriculture created_by Hervé Quénol",
+          "Climate Change and Agriculture published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "agricultural",
+          "aspects",
+          "authors",
+          "between",
+          "covered",
+          "delves",
+          "explored",
+          "given",
+          "impacts",
+          "involvement",
+          "likely",
+          "piece",
+          "potential",
+          "practices",
+          "publication",
+          "relationship",
+          "reputable",
+          "solutions",
+          "specific",
+          "topic",
+          "uncertain",
+          "what",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-06",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Creativity and Dance Education Research created_by Charlotte Hathaway",
+          "Creativity and Dance Education Research created_by Kerry Chappell",
+          "Creativity and Dance Education Research published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.514,
+        "included": [
+          "Creativity and Dance Education Research created_by Charlotte Hathaway",
+          "Creativity and Dance Education Research created_by Kerry Chappell",
+          "Creativity and Dance Education Research published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "artistic",
+          "between",
+          "can",
+          "connection",
+          "development",
+          "enhance",
+          "explores",
+          "expression",
+          "how",
+          "insights",
+          "learning",
+          "likely",
+          "movement",
+          "personal",
+          "providing",
+          "scholarly",
+          "valuable",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-07",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "DeepSeek-R1 owned_by DeepSeek",
+          "DeepSeek-R1 wikidata_p138_named_after DeepSeek",
+          "DeepSeek-R1 developed_by DeepSeek"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.5,
+        "included": [
+          "DeepSeek-R1 owned_by DeepSeek",
+          "DeepSeek-R1 wikidata_p138_named_after DeepSeek",
+          "DeepSeek-R1 developed_by DeepSeek"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "cohesive",
+          "creation",
+          "ecosystem",
+          "entity",
+          "naming",
+          "oversees",
+          "ownership",
+          "reflects",
+          "same",
+          "where"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-08",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 1,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.333,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "E Groups created_by Anne S. Dowd",
+          "E Groups created_by Anthony F. Aveni",
+          "E Groups published_by University Press of Florida"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "E Groups created_by Anne S. Dowd",
+          "E Groups created_by Anthony F. Aveni"
+        ],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 0,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 0.412,
+        "included": [
+          "E Groups created_by Anne S. Dowd",
+          "E Groups created_by Anthony F. Aveni",
+          "E Groups published_by University Press of Florida"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "E Groups created_by Anne S. Dowd",
+          "E Groups created_by Anthony F. Aveni",
+          "E Groups published_by University Press of Florida"
+        ],
+        "extra_content_tokens": [
+          "book",
+          "domain",
+          "explores",
+          "scholarly",
+          "topics",
+          "various",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-09",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Education Research Beyond Cyborg Subjectivities created_by Annette Gough",
+          "Education Research Beyond Cyborg Subjectivities created_by Noel Gough",
+          "Education Research Beyond Cyborg Subjectivities published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.458,
+        "included": [
+          "Education Research Beyond Cyborg Subjectivities created_by Annette Gough",
+          "Education Research Beyond Cyborg Subjectivities created_by Noel Gough",
+          "Education Research Beyond Cyborg Subjectivities published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "authors",
+          "co-authored",
+          "expertise",
+          "explores",
+          "frameworks",
+          "incorporating",
+          "insights",
+          "likely",
+          "piece",
+          "possibly",
+          "traditional"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-10",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Elon Musk leader_of Tesla",
+          "Elon Musk leader_of SpaceX",
+          "Elon Musk known_for Tesla"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.762,
+        "included": [
+          "Elon Musk leader_of Tesla",
+          "Elon Musk leader_of SpaceX",
+          "Elon Musk known_for Tesla"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "association",
+          "broader",
+          "closely",
+          "contribution",
+          "contributions",
+          "demonstrates",
+          "despite",
+          "electric",
+          "energy",
+          "evidenced",
+          "expertise",
+          "exploration",
+          "further",
+          "impact",
+          "industry",
+          "leader",
+          "leadership",
+          "multifaceted",
+          "notable",
+          "private",
+          "renewable",
+          "role",
+          "roles",
+          "significant",
+          "space",
+          "spaceflight",
+          "tech",
+          "technology",
+          "testament",
+          "tied",
+          "vehicles",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-11",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Energy Drink Consumption Among Papuan Athletes created_by Daniel Womsiwor",
+          "Energy Drink Consumption Among Papuan Athletes created_by Eva Sinaga",
+          "Energy Drink Consumption Among Papuan Athletes created_by Evi Sinaga"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.387,
+        "included": [
+          "Energy Drink Consumption Among Papuan Athletes created_by Daniel Womsiwor",
+          "Energy Drink Consumption Among Papuan Athletes created_by Eva Sinaga",
+          "Energy Drink Consumption Among Papuan Athletes created_by Evi Sinaga"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "association",
+          "between",
+          "direct",
+          "given",
+          "individuals",
+          "information",
+          "involvement",
+          "provided",
+          "there",
+          "three",
+          "uncertain",
+          "whether"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-12",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Epidemiology created_by Dharmendra Kumar Sinha",
+          "Epidemiology created_by Dhirendra Kumar Singh",
+          "Epidemiology created_by Krishna Gopal Narayan"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.577,
+        "included": [
+          "Epidemiology created_by Dharmendra Kumar Sinha",
+          "Epidemiology created_by Dhirendra Kumar Singh",
+          "Epidemiology created_by Krishna Gopal Narayan"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "advancements",
+          "collaborative",
+          "collectively",
+          "contributions",
+          "epidemiological",
+          "field",
+          "form",
+          "foundation",
+          "individuals",
+          "nature",
+          "research",
+          "scientific",
+          "showcasing",
+          "study",
+          "three"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-13",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "HDF5 developed_by The HDF Group",
+          "HDF5 uses N-Bit filter",
+          "HDF5 runs_on cross-platform"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.385,
+        "included": [
+          "HDF5 developed_by The HDF Group",
+          "HDF5 uses N-Bit filter",
+          "HDF5 runs_on cross-platform"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "capability",
+          "demonstrating",
+          "platforms",
+          "utilizes",
+          "various"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-14",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "International Law in National Legal Systems created_by Mila Versteeg",
+          "International Law in National Legal Systems created_by Pierre-Hugues Verdier",
+          "International Law in National Legal Systems published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 0,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 0.531,
+        "included": [
+          "International Law in National Legal Systems created_by Mila Versteeg",
+          "International Law in National Legal Systems created_by Pierre-Hugues Verdier",
+          "International Law in National Legal Systems published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "International Law in National Legal Systems created_by Mila Versteeg",
+          "International Law in National Legal Systems created_by Pierre-Hugues Verdier",
+          "International Law in National Legal Systems published_by Oxford University Press"
+        ],
+        "extra_content_tokens": [
+          "academic",
+          "acknowledged",
+          "additions",
+          "collective",
+          "comprehensive",
+          "contributors",
+          "dissemination",
+          "ensures",
+          "explores",
+          "final",
+          "frameworks",
+          "importance",
+          "initially",
+          "insights",
+          "integration",
+          "later",
+          "piece",
+          "principles",
+          "review",
+          "revisions",
+          "rigorous",
+          "shaping",
+          "through",
+          "version",
+          "went",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-15",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Introduction to Molecular Biology of RNA created_by David Elliott",
+          "Introduction to Molecular Biology of RNA created_by Michael Ladomery",
+          "Introduction to Molecular Biology of RNA published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 2,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.667,
+        "hallucination_token_rate": 0.409,
+        "included": [
+          "Introduction to Molecular Biology of RNA created_by David Elliott",
+          "Introduction to Molecular Biology of RNA created_by Michael Ladomery",
+          "Introduction to Molecular Biology of RNA published_by Oxford University Press"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "Introduction to Molecular Biology of RNA published_by Oxford University Press"
+        ],
+        "extra_content_tokens": [
+          "academic",
+          "content",
+          "contribution",
+          "credibility",
+          "evidenced",
+          "joint",
+          "later",
+          "providing",
+          "textbook"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-16",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 0,
+        "n_faithful": 0,
+        "inclusion_rate": 0.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 1.0,
+        "included": [],
+        "missing": [
+          "IoT published_by MDPI",
+          "IoT wikidata_p407_language_of_work_or_name English",
+          "IoT wikidata_p495_country_of_origin Switzerland"
+        ],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "found",
+          "information",
+          "question",
+          "relevant"
+        ]
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.655,
+        "included": [
+          "IoT published_by MDPI",
+          "IoT wikidata_p407_language_of_work_or_name English",
+          "IoT wikidata_p495_country_of_origin Switzerland"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "accessible",
+          "attention",
+          "audience",
+          "concept",
+          "discourse",
+          "further",
+          "gained",
+          "global",
+          "international",
+          "making",
+          "nature",
+          "publication",
+          "publisher",
+          "recent",
+          "significant",
+          "surrounding",
+          "swiss-based",
+          "underscores",
+          "years"
+        ]
+      },
+      "microworld_branch": "qa"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-17",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Jeff Bezos leader_of Blue Origin",
+          "Jeff Bezos estimated_net_worth US$200 billion",
+          "Jeff Bezos founded Blue Origin"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.267,
+        "included": [
+          "Jeff Bezos leader_of Blue Origin",
+          "Jeff Bezos estimated_net_worth US$200 billion",
+          "Jeff Bezos founded Blue Origin"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "currently",
+          "holds",
+          "leader",
+          "serves"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-18",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "LAMMPS developed_by United States Department of Energy",
+          "LAMMPS runs_on Unix-like operating system",
+          "LAMMPS runs_on Microsoft Windows"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.083,
+        "included": [
+          "LAMMPS developed_by United States Department of Energy",
+          "LAMMPS runs_on Unix-like operating system",
+          "LAMMPS runs_on Microsoft Windows"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "systems"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-19",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Large Language Model uses AI prompt",
+          "Large Language Model uses transformer",
+          "Large Language Model used_for conversational AI"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 2,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.667,
+        "hallucination_token_rate": 0.842,
+        "included": [
+          "Large Language Model uses AI prompt",
+          "Large Language Model uses transformer",
+          "Large Language Model used_for conversational AI"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "Large Language Model used_for conversational AI"
+        ],
+        "extra_content_tokens": [
+          "designed",
+          "dialogue",
+          "effectively",
+          "enabling",
+          "engage",
+          "function",
+          "meaningful",
+          "models",
+          "natural",
+          "prompts",
+          "sophisticated",
+          "specifically",
+          "systems",
+          "them",
+          "transformers",
+          "utilize"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-20",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "MathNet wikidata_p495_country_of_origin United States",
+          "MathNet has_topic New York City Police Department",
+          "MathNet has_topic Los Angeles Police Department"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.176,
+        "included": [
+          "MathNet wikidata_p495_country_of_origin United States",
+          "MathNet has_topic New York City Police Department",
+          "MathNet has_topic Los Angeles Police Department"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "organization",
+          "related",
+          "topics"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-21",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 0,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Mathematics created_by I.A. Narkyevich",
+          "Mathematics created_by I.V. Pavlushkov",
+          "Mathematics created_by L.V. Rozovsky"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "Mathematics created_by I.A. Narkyevich",
+          "Mathematics created_by I.V. Pavlushkov",
+          "Mathematics created_by L.V. Rozovsky"
+        ],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 0,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 0.762,
+        "included": [
+          "Mathematics created_by I.A. Narkyevich",
+          "Mathematics created_by I.V. Pavlushkov",
+          "Mathematics created_by L.V. Rozovsky"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "Mathematics created_by I.A. Narkyevich",
+          "Mathematics created_by I.V. Pavlushkov",
+          "Mathematics created_by L.V. Rozovsky"
+        ],
+        "extra_content_tokens": [
+          "collaborative",
+          "complex",
+          "contributions",
+          "details",
+          "development",
+          "different",
+          "history",
+          "individuals",
+          "mathematical",
+          "remain",
+          "specific",
+          "suggest",
+          "though",
+          "three",
+          "unknown",
+          "work"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-22",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 2,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.667,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "SPSS developed_by IBM",
+          "SPSS developed_by Dale H. Bent",
+          "SPSS runs_on Microsoft Windows"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "SPSS developed_by Dale H. Bent"
+        ],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 1,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.333,
+        "hallucination_token_rate": 0.364,
+        "included": [
+          "SPSS developed_by IBM",
+          "SPSS developed_by Dale H. Bent",
+          "SPSS runs_on Microsoft Windows"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "SPSS developed_by Dale H. Bent",
+          "SPSS runs_on Microsoft Windows"
+        ],
+        "extra_content_tokens": [
+          "further",
+          "platforms",
+          "refined",
+          "running"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-23",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "SpaceX develops rockets",
+          "SpaceX develops spacecraft",
+          "SpaceX produces Falcon rockets"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.5,
+        "included": [
+          "SpaceX develops rockets",
+          "SpaceX develops spacecraft",
+          "SpaceX produces Falcon rockets"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "advancements",
+          "company",
+          "creation",
+          "development",
+          "involved",
+          "rocketry"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-24",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Tesla produces Electric cars",
+          "Tesla produces battery energy storage",
+          "Tesla produces Battery storage"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.421,
+        "included": [
+          "Tesla produces Electric cars",
+          "Tesla produces battery energy storage",
+          "Tesla produces Battery storage"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "commitment",
+          "demonstrating",
+          "further",
+          "manufactures",
+          "mobility",
+          "role",
+          "sector",
+          "showcasing"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-25",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Tianhe-2 located_in Guangzhou",
+          "Tianhe-2 wikidata_p138_named_after Milky Way",
+          "Tianhe-2 located_in People's Republic of China"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.5,
+        "included": [
+          "Tianhe-2 located_in Guangzhou",
+          "Tianhe-2 wikidata_p138_named_after Milky Way",
+          "Tianhe-2 located_in People's Republic of China"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [
+          "astronomical",
+          "computing",
+          "connection",
+          "facility",
+          "location",
+          "related",
+          "research",
+          "scientific",
+          "significant",
+          "specific",
+          "suggest",
+          "technological"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    },
+    {
+      "category": "constrained_creative",
+      "id": "constrained-26",
+      "microworld": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Veterinary Public Health created_by Dharmendra Kumar Sinha",
+          "Veterinary Public Health created_by Dhirendra Kumar Singh",
+          "Veterinary Public Health created_by Krishna Gopal Narayan"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": []
+      },
+      "qwen": {
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 0,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 0.0,
+        "hallucination_token_rate": 0.36,
+        "included": [
+          "Veterinary Public Health created_by Dharmendra Kumar Sinha",
+          "Veterinary Public Health created_by Dhirendra Kumar Singh",
+          "Veterinary Public Health created_by Krishna Gopal Narayan"
+        ],
+        "missing": [],
+        "unfaithful": [
+          "Veterinary Public Health created_by Dharmendra Kumar Sinha",
+          "Veterinary Public Health created_by Dhirendra Kumar Singh",
+          "Veterinary Public Health created_by Krishna Gopal Narayan"
+        ],
+        "extra_content_tokens": [
+          "collectively",
+          "contributions",
+          "creation",
+          "credited",
+          "field",
+          "form",
+          "foundation",
+          "individuals",
+          "multiple"
+        ]
+      },
+      "microworld_branch": "constrained_creative"
+    }
+  ]
+}

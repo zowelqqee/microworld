@@ -1,0 +1,202 @@
+[
+  {
+    "id": "obqa-9e05a644d363ea3f-multi_evidence_implicit-b45e4172",
+    "answer": "Two key relations about Boeing Calc are:\n- It is related to Boeing (a aircraft manufacturer).\n- It is a spreadsheet."
+  },
+  {
+    "id": "obqa-47110169245e6446-multi_evidence_implicit-1d00000f",
+    "answer": "Busboy Productions is related to New York City and Jon Stewart."
+  },
+  {
+    "id": "obqa-0e842d1357d6c519-multi_evidence_implicit-47922e91",
+    "answer": "Kofi Annan, Patrick Chappatte, Plantu are key figures involved in Cartooning for Peace. Paris is where it takes place."
+  },
+  {
+    "id": "obqa-819426a495d4e7de-multi_evidence_implicit-fdbf654a",
+    "answer": "Bill Clinton (Q1124) is a relation to the Clinton Foundation (Q1974620). The Clinton Foundation (Q1974620) is located in New York City (Q60)."
+  },
+  {
+    "id": "obqa-1686b8478e669259-multi_evidence_implicit-b516deb1",
+    "answer": "Two key relations about Cominform are:\n- Cominform is associated with Joseph Stalin (Q855).\n- Cominform is associated with Belgrade (Q3711) and Bucharest (Q19660)."
+  },
+  {
+    "id": "obqa-8cca97131c73543c-multi_evidence_implicit-176d9870",
+    "answer": "Two key relations about the Communist Party of the Soviet Union are:\n1. Identified with Vladimir Lenin (P112)\n2. Identified with Moscow (P159)"
+  },
+  {
+    "id": "obqa-9d2f65a0b1ff6c76-multi_evidence_implicit-49909e4c",
+    "answer": "Digital Living Network Alliance is identified by Intel and is associated with the United States."
+  },
+  {
+    "id": "obqa-8070bd398e0dcbc8-multi_evidence_implicit-63b0738d",
+    "answer": "Two key relations about the Global Network Initiative are that it is identified by Google (Q95), Microsoft (Q2283), and Yahoo (Q37093). It is also associated with Washington, D.C. (Q61) through P159."
+  },
+  {
+    "id": "obqa-233c69d0198ba7a2-multi_evidence_implicit-8d1c27c6",
+    "answer": "Google Apps Script is related to Google (Q95) and identifies a web framework (Q1330336)."
+  },
+  {
+    "id": "obqa-6d965e9fc0402c83-multi_evidence_implicit-32eef302",
+    "answer": "Two key relations about Google Web Toolkit are:\n- It is related to Google (Q95).\n- It is related to AJAX (Q134471)."
+  },
+  {
+    "id": "reflective-00",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-01",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-02",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-03",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-04",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-05",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-06",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-07",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-08",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-09",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-10",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-11",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "reflective-12",
+    "answer": "UNKNOWN"
+  },
+  {
+    "id": "constrained-00",
+    "answer": "Arts Education Research has been created by three different individuals: Benjamin Jörissen, Ernst Wagner, and Leopold Klepacki. Each of these scholars has contributed to the field, showcasing the collaborative nature of Arts Education Research and the diverse perspectives that contribute to its development."
+  },
+  {
+    "id": "constrained-01",
+    "answer": "Bloomberg News, headquartered in New York City, publishes financial market coverage and wealth indexes, providing comprehensive insights into the financial landscape and economic trends."
+  },
+  {
+    "id": "constrained-02",
+    "answer": "Blue Origin, based in Kent, Washington, has developed both rockets and spacecraft, showcasing its significant contributions to space technology."
+  },
+  {
+    "id": "constrained-03",
+    "answer": "CKKS is named after three individuals: Cheon, Jung Hee, Andrey Kim, and Miran Kim."
+  },
+  {
+    "id": "constrained-04",
+    "answer": "CYBERSECURITY MANAGEMENT OF IT PRODUCTS was created by Ihor Frolov and Yanina Kolodinska. The product was published by Borys Grinchenko, representing Kyiv Metropolitan University."
+  },
+  {
+    "id": "constrained-05",
+    "answer": "Climate Change and Agriculture, a topic explored by Andrew Sturman and Hervé Quénol, has been published by Oxford University Press. The work likely delves into the impacts of climate change on agricultural practices and potential solutions. Given the involvement of these authors and the publication by a reputable press, it is uncertain what specific aspects of the relationship between climate change and agriculture are covered in the piece."
+  },
+  {
+    "id": "constrained-06",
+    "answer": "Creativity and Dance Education Research, a scholarly work published by Oxford University Press, was created by both Charlotte Hathaway and Kerry Chappell. This research likely explores the connection between creativity and dance education, providing valuable insights into how movement and artistic expression can enhance learning and personal development."
+  },
+  {
+    "id": "constrained-07",
+    "answer": "DeepSeek-R1, developed by DeepSeek and named after DeepSeek, is owned by DeepSeek. Developed within the same entity, it reflects a cohesive ecosystem where DeepSeek oversees the creation, naming, and ownership of DeepSeek-R1."
+  },
+  {
+    "id": "constrained-08",
+    "answer": "E Groups, a scholarly work, were created by Anne S. Dowd and Anthony F. Aveni. Published by the University Press of Florida, this book explores various topics within its domain."
+  },
+  {
+    "id": "constrained-09",
+    "answer": "Education Research Beyond Cyborg Subjectivities was co-authored by Annette Gough and Noel Gough, and published by Oxford University Press. This piece likely explores subjectivities beyond traditional frameworks, possibly incorporating insights from both authors' expertise."
+  },
+  {
+    "id": "constrained-10",
+    "answer": "Elon Musk is known for his leadership roles in Tesla and SpaceX. His role as the leader of Tesla is closely tied to his significant contribution to electric vehicles and renewable energy, as evidenced by his association with Tesla. Additionally, his leadership at SpaceX further demonstrates his expertise in space technology and private spaceflight. Despite his notable work with Tesla, his broader impact on the tech industry and space exploration is also a testament to his multifaceted contributions."
+  },
+  {
+    "id": "constrained-11",
+    "answer": "Energy Drink Consumption Among Papuan Athletes was created by three individuals: Daniel Womsiwor, Eva Sinaga, and Evi Sinaga. Given the involvement of these individuals, it is uncertain whether there is a direct association between energy drink consumption and Papuan athletes based on the provided information."
+  },
+  {
+    "id": "constrained-12",
+    "answer": "Epidemiology is a field of study created by three individuals: Dharmendra Kumar Sinha, Dhirendra Kumar Singh, and Krishna Gopal Narayan. Their contributions collectively form the foundation of epidemiological research, showcasing the collaborative nature of scientific advancements."
+  },
+  {
+    "id": "constrained-13",
+    "answer": "HDF5, developed by The HDF Group, utilizes an N-Bit filter and runs on various platforms, demonstrating its cross-platform capability."
+  },
+  {
+    "id": "constrained-14",
+    "answer": "International Law in National Legal Systems is a comprehensive piece that explores the integration of international legal principles into national legal systems. Initially created by Mila Versteeg, the work later went through revisions and additions by Pierre-Hugues Verdier. Both contributors acknowledged the importance of international law in shaping national legal frameworks. The final version, published by Oxford University Press, ensures a rigorous academic review and dissemination of their collective insights."
+  },
+  {
+    "id": "constrained-15",
+    "answer": "Introduction to Molecular Biology of RNA was created by David Elliott and Michael Ladomery, as evidenced by their joint contribution. The textbook was later published by Oxford University Press, providing academic credibility to the content."
+  },
+  {
+    "id": "constrained-16",
+    "answer": "IoT, a concept that has gained significant attention in recent years, is published by MDPI, a Swiss-based publisher. The language of the work is English, making it accessible to a global audience. Switzerland, the country of origin for this publication, further underscores the international nature of the discourse surrounding IoT."
+  },
+  {
+    "id": "constrained-17",
+    "answer": "Jeff Bezos founded Blue Origin and holds an estimated net worth of US$200 billion. He currently serves as the leader of Blue Origin."
+  },
+  {
+    "id": "constrained-18",
+    "answer": "LAMMPS, developed by the United States Department of Energy, runs on both Unix-like operating systems and Microsoft Windows."
+  },
+  {
+    "id": "constrained-19",
+    "answer": "Large Language Models utilize AI prompts and transformers to function effectively. These sophisticated systems are specifically designed for conversational AI, enabling them to engage in natural and meaningful dialogue."
+  },
+  {
+    "id": "constrained-20",
+    "answer": "MathNet, an organization with its country of origin in the United States, has topics related to the New York City Police Department and the Los Angeles Police Department."
+  },
+  {
+    "id": "constrained-21",
+    "answer": "Mathematics was created by three different individuals: I.A. Narkyevich, I.V. Pavlushkov, and L.V. Rozovsky. Their contributions suggest a complex and collaborative history of mathematical development, though the specific details of their work remain unknown."
+  },
+  {
+    "id": "constrained-22",
+    "answer": "SPSS was developed by IBM and further refined by Dale H. Bent, running on Microsoft Windows platforms."
+  },
+  {
+    "id": "constrained-23",
+    "answer": "SpaceX, a company known for its advancements in rocketry and spacecraft development, produces the Falcon rockets and is involved in the creation of both rockets and spacecraft."
+  },
+  {
+    "id": "constrained-24",
+    "answer": "Tesla produces electric cars and battery energy storage, showcasing its commitment to electric mobility. Additionally, Tesla manufactures battery storage, further demonstrating its role in the energy sector."
+  },
+  {
+    "id": "constrained-25",
+    "answer": "Tianhe-2, located in Guangzhou within the People's Republic of China, is named after the Milky Way. Its specific location in Guangzhou and its connection to the Milky Way suggest it might be a significant technological or scientific facility related to astronomical research or computing."
+  },
+  {
+    "id": "constrained-26",
+    "answer": "Veterinary Public Health is a field created by multiple individuals. Dharmendra Kumar Sinha, Dhirendra Kumar Singh, and Krishna Gopal Narayan are credited with its creation. Their contributions collectively form the foundation of Veterinary Public Health."
+  }
+]

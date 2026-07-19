@@ -72,13 +72,19 @@ class IntegratedAnswer:
 
 
 class IntegratedAnswerRouter:
-    def __init__(self, overlay_mode: str = "promoted", overlay_path: str | None = None):
+    def __init__(self, overlay_mode: str = "promoted", overlay_path: str | None = None,
+                 qa_experimental_graph_paths: list[str | Path] | None = None):
         self.orchestrator = AnswerOrchestrator(overlay_mode, overlay_path=overlay_path)
         resolved = overlay_path or resolve_overlay(overlay_mode)[0]
         self._surface_index = _surface_index_for_overlay(resolved)
         self._overlay_items = json.loads(Path(resolved).read_text(encoding="utf-8"))
         self._edges = rr1.load_edges(self._overlay_items)
         self.router = BranchRouter().build()
+        # Optional serving adapter for a frozen experimental QA graph.  The
+        # ordinary router remains self-contained; this is required only when
+        # an evaluation's QA evidence lives in server's graph-plan layer.
+        self._qa_experimental_graph_paths = qa_experimental_graph_paths
+        self._qa_server_started = False
 
     # ── public entry ───────────────────────────────────────────────────────── #
 
@@ -113,6 +119,32 @@ class IntegratedAnswerRouter:
     # ── branch dispatchers (each delegates to an unchanged module) ───────────── #
 
     def _qa(self, question: str, *, route_method: str, branch: str) -> IntegratedAnswer:
+        if self._qa_experimental_graph_paths is not None:
+            # Import lazily: api.server imports this module to construct the
+            # showcase router, so a module-level import would be circular.
+            from worldpgt.api import server
+            if not self._qa_server_started:
+                server._startup(
+                    "pump-dry-run",
+                    experimental_graph_paths=self._qa_experimental_graph_paths,
+                    community_context_path=None,
+                    cognitive_patterns_path=None,
+                    warm_phrase_graph_on_startup=True,
+                )
+                self._qa_server_started = True
+            response = server.ask(server.AskRequest(
+                question=question, enable_reasoning=True, enable_multihop=False,
+                web_search=False, community_context=False, cognitive_patterns=False,
+                session_id="integrated-router-qa",
+            ))
+            level = CONFIDENCE_AUDIT if response.decision == "audit" else CONFIDENCE_GROUNDED
+            return IntegratedAnswer(
+                question=question, branch=branch, route_method=route_method,
+                confidence_level=level,
+                support_kind="audit" if response.decision == "audit" else "grounded",
+                decision=response.decision, answer_text=response.answer,
+                detail={"source_system": "server_experimental_graph", "branch_support_kind": response.support},
+            )
         ans = self.orchestrator.answer(question)
         level = CONFIDENCE_AUDIT if ans.decision == "audit" else CONFIDENCE_GROUNDED
         return IntegratedAnswer(
