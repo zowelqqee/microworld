@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "arxiv-000",
+    "source_title": "Citation Counting, Citation Ranking, and h-Index of Human-Computer Interaction Researchers: A Comparison between Scopus and Web of Science",
+    "source_url": "http://arxiv.org/abs/0803.1716v1",
+    "source_text": "Results indicate that Scopus provides significantly more coverage of HCI literature than Web of Science, primarily due to coverage of relevant ACM and IEEE peer-reviewed conference proceedings.",
+    "source_fingerprint": "fb2f87e4401dd8011b72e74c43e88307f8afd8b7962c2aed7971c694902f8cf1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Scopus",
+        "predicate": "provides significantly more coverage of",
+        "object": "HCI literature",
+        "evidence_span": "Scopus provides significantly more coverage of HCI literature"
+      },
+      {
+        "subject": "Scopus",
+        "predicate": "provides coverage of",
+        "object": "ACM and IEEE peer-reviewed conference proceedings",
+        "evidence_span": "Scopus provides significantly more coverage of HCI literature than Web of Science, primarily due to coverage of relevant ACM and IEEE peer-reviewed conference proceedings"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 147,
+      "candidatesTokenCount": 135,
+      "totalTokenCount": 282,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 147
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Scopus\",\n    \"predicate\": \"provides significantly more coverage of\",\n    \"object\": \"HCI literature\",\n    \"evidence_span\": \"Scopus provides significantly more coverage of HCI literature\"\n  },\n  {\n    \"subject\": \"Scopus\",\n    \"predicate\": \"provides coverage of\",\n    \"object\": \"ACM and IEEE peer-reviewed conference proceedings\",\n    \"evidence_span\": \"Scopus provides significantly more coverage of HCI literature than Web of Science, primarily due to coverage of relevant ACM and IEEE peer-reviewed conference proceedings\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-001",
+    "source_title": "The Frontiers of Nuclear Science, A Long Range Plan",
+    "source_url": "http://arxiv.org/abs/0809.3137v1",
+    "source_text": "nuclear physics research and recommend a long range plan that will provide a framework for coordinated advancement of the nation's nuclear science research programs over the next decade.\"",
+    "source_fingerprint": "db612e2f693b9121ddc5644a63a2496b024630643fbfcf5dc03a94afe92b57f0",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "nuclear physics research",
+        "predicate": "recommend",
+        "object": "a long range plan",
+        "evidence_span": "nuclear physics research and recommend a long range plan"
+      },
+      {
+        "subject": "a long range plan",
+        "predicate": "provide",
+        "object": "a framework",
+        "evidence_span": "a long range plan that will provide a framework"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 146,
+      "candidatesTokenCount": 108,
+      "totalTokenCount": 254,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 146
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"nuclear physics research\",\n    \"predicate\": \"recommend\",\n    \"object\": \"a long range plan\",\n    \"evidence_span\": \"nuclear physics research and recommend a long range plan\"\n  },\n  {\n    \"subject\": \"a long range plan\",\n    \"predicate\": \"provide\",\n    \"object\": \"a framework\",\n    \"evidence_span\": \"a long range plan that will provide a framework\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-002",
+    "source_title": "Visual Conceptualizations and Models of Science",
+    "source_url": "http://arxiv.org/abs/0903.3562v1",
+    "source_text": "This Journal of Informetrics special issue aims to improve our understanding of the structure and dynamics of science by reviewing and advancing existing conceptualizations and models of scholarly activity.",
+    "source_fingerprint": "be32969f5df2e46ab75f5796a2d90b0aac9c01f9d9f06b38a19844c716caaae9",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Journal of Informetrics special issue",
+        "predicate": "aims to improve",
+        "object": "understanding of the structure and dynamics of science",
+        "evidence_span": "Journal of Informetrics special issue aims to improve our understanding of the structure and dynamics of science"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 147,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 147
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Journal of Informetrics special issue\",\n    \"predicate\": \"aims to improve\",\n    \"object\": \"understanding of the structure and dynamics of science\",\n    \"evidence_span\": \"Journal of Informetrics special issue aims to improve our understanding of the structure and dynamics of science\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-003",
+    "source_title": "New Science on the Open Science Grid",
+    "source_url": "http://arxiv.org/abs/0904.3950v1",
+    "source_text": "The Open Science Grid (OSG) includes work to enable new science, new scientists, and new modalities in support of computationally based research.",
+    "source_fingerprint": "4e0b278cd9da0b24e5b95e72f118eae6fd6a02c1f6ab55ea10641b4c08f52ad1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Open Science Grid",
+        "predicate": "includes",
+        "object": "work",
+        "evidence_span": "The Open Science Grid (OSG) includes work"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 143,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 197,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 143
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Open Science Grid\",\n    \"predicate\": \"includes\",\n    \"object\": \"work\",\n    \"evidence_span\": \"The Open Science Grid (OSG) includes work\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-004",
+    "source_title": "Lindstrom theorems for fragments of first-order logic",
+    "source_url": "http://arxiv.org/abs/0905.3668v2",
+    "source_text": "In this paper, we provide Lindström theorems for several fragments of first-order logic, including the k-variable fragments for k>2, Tarski's relation algebra, graded modal logic, and the binary guarded fragment.",
+    "source_fingerprint": "10c4b3272f5de54af372ddfdb574bb0c0397b310fd0ee64d6edb886891a58e84",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Lindström theorems",
+        "predicate": "are provided for",
+        "object": "k-variable fragments",
+        "evidence_span": "we provide Lindström theorems for several fragments of first-order logic, including the k-variable fragments"
+      },
+      {
+        "subject": "Lindström theorems",
+        "predicate": "are provided for",
+        "object": "Tarski's relation algebra",
+        "evidence_span": "we provide Lindström theorems for several fragments of first-order logic, including... Tarski's relation algebra"
+      },
+      {
+        "subject": "Lindström theorems",
+        "predicate": "are provided for",
+        "object": "graded modal logic",
+        "evidence_span": "we provide Lindström theorems for several fragments of first-order logic, including... graded modal logic"
+      },
+      {
+        "subject": "Lindström theorems",
+        "predicate": "are provided for",
+        "object": "binary guarded fragment",
+        "evidence_span": "we provide Lindström theorems for several fragments of first-order logic, including... the binary guarded fragment"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 161,
+      "candidatesTokenCount": 268,
+      "totalTokenCount": 429,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 161
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Lindström theorems\",\n    \"predicate\": \"are provided for\",\n    \"object\": \"k-variable fragments\",\n    \"evidence_span\": \"we provide Lindström theorems for several fragments of first-order logic, including the k-variable fragments\"\n  },\n  {\n    \"subject\": \"Lindström theorems\",\n    \"predicate\": \"are provided for\",\n    \"object\": \"Tarski's relation algebra\",\n    \"evidence_span\": \"we provide Lindström theorems for several fragments of first-order logic, including... Tarski's relation algebra\"\n  },\n  {\n    \"subject\": \"Lindström theorems\",\n    \"predicate\": \"are provided for\",\n    \"object\": \"graded modal logic\",\n    \"evidence_span\": \"we provide Lindström theorems for several fragments of first-order logic, including... graded modal logic\"\n  },\n  {\n    \"subject\": \"Lindström theorems\",\n    \"predicate\": \"are provided for\",\n    \"object\": \"binary guarded fragment\",\n    \"evidence_span\": \"we provide Lindström theorems for several fragments of first-order logic, including... the binary guarded fragment\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-005",
+    "source_title": "Relational Parametricity for Computational Effects",
+    "source_url": "http://arxiv.org/abs/0906.5488v2",
+    "source_text": "Relational parametricity provides a powerful tool for establishing data abstraction properties, proving equivalences of datatypes, and establishing equalities of programs.",
+    "source_fingerprint": "ad15b6b8079d44c94d28a2e26d4c25c6bd81d0d6a3ad93f760d7bbf0cf925bbb",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Relational parametricity",
+        "predicate": "provides",
+        "object": "a powerful tool",
+        "evidence_span": "Relational parametricity provides a powerful tool"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 142,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 197,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 142
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Relational parametricity\",\n    \"predicate\": \"provides\",\n    \"object\": \"a powerful tool\",\n    \"evidence_span\": \"Relational parametricity provides a powerful tool\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-006",
+    "source_title": "A Secure Multi-Party Computation Protocol for Malicious Computation Prevention for preserving privacy during Data Mining",
+    "source_url": "http://arxiv.org/abs/0908.0994v1",
+    "source_text": "Secure Multi-Party Computation (SMC) allows parties with similar background to compute results upon their private data, minimizing the threat of disclosure.",
+    "source_fingerprint": "9afe323d89c08ef70e7cf441320e8a4caa967348af2deadf60d106c3875896ff",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Secure Multi-Party Computation",
+        "predicate": "allows",
+        "object": "parties",
+        "evidence_span": "Secure Multi-Party Computation (SMC) allows parties"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 143,
+      "candidatesTokenCount": 57,
+      "totalTokenCount": 200,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 143
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Secure Multi-Party Computation\",\n    \"predicate\": \"allows\",\n    \"object\": \"parties\",\n    \"evidence_span\": \"Secure Multi-Party Computation (SMC) allows parties\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-007",
+    "source_title": "Distributed Computing with Adaptive Heuristics",
+    "source_url": "http://arxiv.org/abs/0910.1585v2",
+    "source_text": "We use ideas from distributed computing to study dynamic environments in which computational nodes, or decision makers, follow adaptive heuristics (Hart 2005), i.e., simple and unsophisticated rules of behavior, e.g., repeatedly \"best replying\" to others' actions, and minimizing \"regret\", that have been extensively studied in game theory and economics.",
+    "source_fingerprint": "840805a45214f326afff332975de64ff3d5f2ee192ecd84f5094800d8cb4eadd",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "computational nodes",
+        "predicate": "follow",
+        "object": "adaptive heuristics",
+        "evidence_span": "computational nodes, or decision makers, follow adaptive heuristics"
+      },
+      {
+        "subject": "decision makers",
+        "predicate": "follow",
+        "object": "adaptive heuristics",
+        "evidence_span": "decision makers, follow adaptive heuristics"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 189,
+      "candidatesTokenCount": 103,
+      "totalTokenCount": 292,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 189
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"computational nodes\",\n    \"predicate\": \"follow\",\n    \"object\": \"adaptive heuristics\",\n    \"evidence_span\": \"computational nodes, or decision makers, follow adaptive heuristics\"\n  },\n  {\n    \"subject\": \"decision makers\",\n    \"predicate\": \"follow\",\n    \"object\": \"adaptive heuristics\",\n    \"evidence_span\": \"decision makers, follow adaptive heuristics\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-008",
+    "source_title": "Performance Evaluation of Unicast and Broadcast Mobile Ad hoc Network Routing Protocols",
+    "source_url": "http://arxiv.org/abs/1002.1691v1",
+    "source_text": "The ability of MANETs to support adequate Quality of Service (QoS) for group communication is limited by the ability of the underlying ad-hoc routing protocols to provide consistent behavior despite the dynamic properties of mobile computing devices.",
+    "source_fingerprint": "97e407e89abecb614c6f6e8e41e0758fb0859d7d8d1f7bd70a6aa8ecebcdfc4f",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "MANETs",
+        "predicate": "support",
+        "object": "Quality of Service",
+        "evidence_span": "MANETs to support adequate Quality of Service (QoS)"
+      },
+      {
+        "subject": "ad-hoc routing protocols",
+        "predicate": "provide",
+        "object": "consistent behavior",
+        "evidence_span": "ad-hoc routing protocols to provide consistent behavior"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 160,
+      "candidatesTokenCount": 111,
+      "totalTokenCount": 271,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 160
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"MANETs\",\n    \"predicate\": \"support\",\n    \"object\": \"Quality of Service\",\n    \"evidence_span\": \"MANETs to support adequate Quality of Service (QoS)\"\n  },\n  {\n    \"subject\": \"ad-hoc routing protocols\",\n    \"predicate\": \"provide\",\n    \"object\": \"consistent behavior\",\n    \"evidence_span\": \"ad-hoc routing protocols to provide consistent behavior\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-009",
+    "source_title": "Detection of Microcalcification in Mammograms Using Wavelet Transform and Fuzzy Shell Clustering",
+    "source_url": "http://arxiv.org/abs/1002.2182v1",
+    "source_text": "Microcalcifications in mammogram have been mainly targeted as a reliable earliest sign of breast cancer and their early detection is vital to improve its prognosis.",
+    "source_fingerprint": "30a03bc2f80df463adfbbefe8491527f74a593b20a5e78c9e1319d19b980de5d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Microcalcifications",
+        "predicate": "have been targeted as",
+        "object": "earliest sign of breast cancer",
+        "evidence_span": "Microcalcifications in mammogram have been mainly targeted as a reliable earliest sign of breast cancer"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 144,
+      "candidatesTokenCount": 70,
+      "totalTokenCount": 214,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 144
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Microcalcifications\",\n    \"predicate\": \"have been targeted as\",\n    \"object\": \"earliest sign of breast cancer\",\n    \"evidence_span\": \"Microcalcifications in mammogram have been mainly targeted as a reliable earliest sign of breast cancer\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-010",
+    "source_title": "Performance Evaluation of TCP over Mobile Ad hoc Networks",
+    "source_url": "http://arxiv.org/abs/1002.2189v1",
+    "source_text": "With the proliferation of mobile computing devices, the demand for continuous network connectivity regardless of physical location has spurred interest in the use of mobile ad hoc networks.",
+    "source_fingerprint": "4b8de459b4574a1ae7e418e505b330c779e52816cbe1fc3d1f9a688842dd677d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "demand for continuous network connectivity",
+        "predicate": "has spurred",
+        "object": "interest in the use of mobile ad hoc networks",
+        "evidence_span": "the demand for continuous network connectivity regardless of physical location has spurred interest in the use of mobile ad hoc networks"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 145,
+      "candidatesTokenCount": 76,
+      "totalTokenCount": 221,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 145
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"demand for continuous network connectivity\",\n    \"predicate\": \"has spurred\",\n    \"object\": \"interest in the use of mobile ad hoc networks\",\n    \"evidence_span\": \"the demand for continuous network connectivity regardless of physical location has spurred interest in the use of mobile ad hoc networks\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-011",
+    "source_title": "Vision Based Game Development Using Human Computer Interaction",
+    "source_url": "http://arxiv.org/abs/1002.2191v1",
+    "source_text": "Facial features (nose tip and eyes) are detected and tracked in realtime to use their actions as mouse events.",
+    "source_fingerprint": "2618dbc4f4b2f74a438f293a01a70cbc89b082b35816c90bf3f82d61289c5234",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Facial features",
+        "predicate": "are detected and tracked in",
+        "object": "realtime",
+        "evidence_span": "Facial features (nose tip and eyes) are detected and tracked in realtime"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 138,
+      "candidatesTokenCount": 64,
+      "totalTokenCount": 202,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 138
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Facial features\",\n    \"predicate\": \"are detected and tracked in\",\n    \"object\": \"realtime\",\n    \"evidence_span\": \"Facial features (nose tip and eyes) are detected and tracked in realtime\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-012",
+    "source_title": "An innovative platform to improve the performance of exact string matching algorithms",
+    "source_url": "http://arxiv.org/abs/1002.2222v1",
+    "source_text": "This improves the executing time of the Exact String Matching algorithms.",
+    "source_fingerprint": "b237128eaff8e06860564a37fa46d2a9910a301d03e896f6a4ff70c67b33e315",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "This",
+        "predicate": "improves",
+        "object": "executing time of the Exact String Matching algorithms",
+        "evidence_span": "This improves the executing time of the Exact String Matching algorithms."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 127,
+      "candidatesTokenCount": 63,
+      "totalTokenCount": 190,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 127
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"This\",\n    \"predicate\": \"improves\",\n    \"object\": \"executing time of the Exact String Matching algorithms\",\n    \"evidence_span\": \"This improves the executing time of the Exact String Matching algorithms.\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-013",
+    "source_title": "Changing Neighbors k Secure Sum Protocol for Secure Multi Party Computation",
+    "source_url": "http://arxiv.org/abs/1002.2409v1",
+    "source_text": "Secure sum computation of private data inputs is an important component of Secure Multi party Computation (SMC).In this paper we provide a protocol to compute the sum of individual data inputs with zero probability of data leakage.",
+    "source_fingerprint": "f845f6479105c77e1346f124af479067411722301a389d8a200602e68f486171",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Secure sum computation",
+        "predicate": "is",
+        "object": "component of Secure Multi party Computation",
+        "evidence_span": "Secure sum computation of private data inputs is an important component of Secure Multi party Computation (SMC)."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 157,
+      "candidatesTokenCount": 68,
+      "totalTokenCount": 225,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 157
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Secure sum computation\",\n    \"predicate\": \"is\",\n    \"object\": \"component of Secure Multi party Computation\",\n    \"evidence_span\": \"Secure sum computation of private data inputs is an important component of Secure Multi party Computation (SMC).\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-014",
+    "source_title": "High Performance Hybrid Two Layer Router Architecture for FPGAs Using Network On Chip",
+    "source_url": "http://arxiv.org/abs/1002.2420v1",
+    "source_text": "We propose a novel microarchitecture for a hybrid two layer router that supports both packetswitched communications, across its local and directional ports, as well as, time multiplexed circuitswitched communications among the multiple IP cores directly connected to it.",
+    "source_fingerprint": "f9056654b05bd2a4b90c859017920964e3052308acb2a34164b526cf9e30a423",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "hybrid two layer router",
+        "predicate": "supports",
+        "object": "packetswitched communications",
+        "evidence_span": "hybrid two layer router that supports both packetswitched communications"
+      },
+      {
+        "subject": "hybrid two layer router",
+        "predicate": "supports",
+        "object": "time multiplexed circuitswitched communications",
+        "evidence_span": "hybrid two layer router that supports both ... time multiplexed circuitswitched communications"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 163,
+      "candidatesTokenCount": 122,
+      "totalTokenCount": 285,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 163
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"hybrid two layer router\",\n    \"predicate\": \"supports\",\n    \"object\": \"packetswitched communications\",\n    \"evidence_span\": \"hybrid two layer router that supports both packetswitched communications\"\n  },\n  {\n    \"subject\": \"hybrid two layer router\",\n    \"predicate\": \"supports\",\n    \"object\": \"time multiplexed circuitswitched communications\",\n    \"evidence_span\": \"hybrid two layer router that supports both ... time multiplexed circuitswitched communications\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-015",
+    "source_title": "A Computational Algorithm based on Empirical Analysis, that Composes Sanskrit Poetry",
+    "source_url": "http://arxiv.org/abs/1003.1455v1",
+    "source_text": "In addition, this unique work, which provides a solution to a problem that has never been addressed before, provides a simple yet effective speech recognition interface that would help the visually impaired dictate words in E-text, which is in turn versified by our Poetry Composer Engine.",
+    "source_fingerprint": "c404f703ed166589934139d7e2f7775eddee86ba12a5ae8e2548d1ebdf0144cc",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "speech recognition interface",
+        "predicate": "would help",
+        "object": "visually impaired",
+        "evidence_span": "speech recognition interface that would help the visually impaired"
+      },
+      {
+        "subject": "E-text",
+        "predicate": "is versified by",
+        "object": "Poetry Composer Engine",
+        "evidence_span": "E-text, which is in turn versified by our Poetry Composer Engine"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 169,
+      "candidatesTokenCount": 117,
+      "totalTokenCount": 286,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 169
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"speech recognition interface\",\n    \"predicate\": \"would help\",\n    \"object\": \"visually impaired\",\n    \"evidence_span\": \"speech recognition interface that would help the visually impaired\"\n  },\n  {\n    \"subject\": \"E-text\",\n    \"predicate\": \"is versified by\",\n    \"object\": \"Poetry Composer Engine\",\n    \"evidence_span\": \"E-text, which is in turn versified by our Poetry Composer Engine\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-016",
+    "source_title": "Implementing New-age Authentication Techniques using OpenID for Security Automation",
+    "source_url": "http://arxiv.org/abs/1003.1462v1",
+    "source_text": "Further Transport Layer Security (TLS) protocol has been implemented to provide security and data integrity for communications over networks.",
+    "source_fingerprint": "01297c9a472532a518893d2ef8605289ec4148bfce7969fc8c988ebdd3aeef34",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Transport Layer Security (TLS) protocol",
+        "predicate": "has been implemented to provide",
+        "object": "security and data integrity",
+        "evidence_span": "Transport Layer Security (TLS) protocol has been implemented to provide security and data integrity"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 137,
+      "candidatesTokenCount": 71,
+      "totalTokenCount": 208,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 137
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Transport Layer Security (TLS) protocol\",\n    \"predicate\": \"has been implemented to provide\",\n    \"object\": \"security and data integrity\",\n    \"evidence_span\": \"Transport Layer Security (TLS) protocol has been implemented to provide security and data integrity\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-017",
+    "source_title": "The infrared imaging spectrograph (IRIS) for TMT: the science case",
+    "source_url": "http://arxiv.org/abs/1007.1976v1",
+    "source_text": "Ultimately, the spectrograph will enable very well-resolved and sensitive studies of the kinematics and internal chemical abundances of high-redshift galaxies, shedding light on many scenarios for the evolution of galaxies at early times.",
+    "source_fingerprint": "4ac7775a5df47acc77fb90ae6fc8f7576385dd9e9a829908cf6a2e92203c6b8a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "spectrograph",
+        "predicate": "will enable",
+        "object": "studies of the kinematics and internal chemical abundances of high-redshift galaxies",
+        "evidence_span": "the spectrograph will enable very well-resolved and sensitive studies of the kinematics and internal chemical abundances of high-redshift galaxies"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 157,
+      "candidatesTokenCount": 82,
+      "totalTokenCount": 239,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 157
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"spectrograph\",\n    \"predicate\": \"will enable\",\n    \"object\": \"studies of the kinematics and internal chemical abundances of high-redshift galaxies\",\n    \"evidence_span\": \"the spectrograph will enable very well-resolved and sensitive studies of the kinematics and internal chemical abundances of high-redshift galaxies\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-018",
+    "source_title": "On Communication Protocols that Compute Almost Privately",
+    "source_url": "http://arxiv.org/abs/1102.1443v3",
+    "source_text": "Dissection protocols include, among others, the bisection auction in [9,10] and the bisection protocol for the millionaires problem in [8].",
+    "source_fingerprint": "c7bd23fc9008318a5613c579a12aee63d4b194cd4fd953170961845fb7634f83",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Dissection protocols",
+        "predicate": "include",
+        "object": "bisection auction",
+        "evidence_span": "Dissection protocols include, among others, the bisection auction"
+      },
+      {
+        "subject": "Dissection protocols",
+        "predicate": "include",
+        "object": "bisection protocol",
+        "evidence_span": "Dissection protocols include, among others, the bisection protocol for the millionaires problem"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 148,
+      "candidatesTokenCount": 118,
+      "totalTokenCount": 266,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 148
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Dissection protocols\",\n    \"predicate\": \"include\",\n    \"object\": \"bisection auction\",\n    \"evidence_span\": \"Dissection protocols include, among others, the bisection auction\"\n  },\n  {\n    \"subject\": \"Dissection protocols\",\n    \"predicate\": \"include\",\n    \"object\": \"bisection protocol\",\n    \"evidence_span\": \"Dissection protocols include, among others, the bisection protocol for the millionaires problem\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-019",
+    "source_title": "A Structural Approach to Reversible Computation",
+    "source_url": "http://arxiv.org/abs/1111.7154v1",
+    "source_text": "By contrast, we develop a more structural approach.",
+    "source_fingerprint": "385f4a941787cd7241d02113e6ed28928703adf3fb153db8b5c4730fb677ec5d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 125,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 126,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 125
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-020",
+    "source_title": "Large Synoptic Survey Telescope: Dark Energy Science Collaboration",
+    "source_url": "http://arxiv.org/abs/1211.0310v1",
+    "source_text": "It provides an overview of dark energy science and describes the current and anticipated state of the field.",
+    "source_fingerprint": "4e1f8a571d2b9f2eea87452306175e896bac58861d3886d52adcee26c443b186",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "It",
+        "predicate": "provides",
+        "object": "an overview of dark energy science",
+        "evidence_span": "It provides an overview of dark energy science"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 134,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 189,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 134
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"It\",\n    \"predicate\": \"provides\",\n    \"object\": \"an overview of dark energy science\",\n    \"evidence_span\": \"It provides an overview of dark energy science\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-021",
+    "source_title": "The projector algorithm: a simple parallel algorithm for computing Voronoi diagrams and Delaunay graphs",
+    "source_url": "http://arxiv.org/abs/1212.1095v5",
+    "source_text": "In this paper we present the projector algorithm: a new and simple algorithm which enables the (combinatorial) computation of 2D Voronoi diagrams.",
+    "source_fingerprint": "47c3482a1ea3c1acddcd42ed094d1836183e3e143bf696bd95680815f0df1ab1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "projector algorithm",
+        "predicate": "enables",
+        "object": "computation of 2D Voronoi diagrams",
+        "evidence_span": "the projector algorithm: a new and simple algorithm which enables the (combinatorial) computation of 2D Voronoi diagrams"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 146,
+      "candidatesTokenCount": 78,
+      "totalTokenCount": 224,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 146
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"projector algorithm\",\n    \"predicate\": \"enables\",\n    \"object\": \"computation of 2D Voronoi diagrams\",\n    \"evidence_span\": \"the projector algorithm: a new and simple algorithm which enables the (combinatorial) computation of 2D Voronoi diagrams\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-022",
+    "source_title": "A quantitative perspective on ethics in large team science",
+    "source_url": "http://arxiv.org/abs/1404.0191v2",
+    "source_text": "To this end, our expository analysis provides a survey of ethical issues in team settings to inform science ethics education and science policy.",
+    "source_fingerprint": "3e3698f4907e889661474ec6226a157e4ef47983900636e274fc2be8c51aacc9",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 141,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 142,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 141
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-023",
+    "source_title": "IMP Science Gateway: from the Portal to the Hub of Virtual Experimental Labs in Materials Science",
+    "source_url": "http://arxiv.org/abs/1404.5611v1",
+    "source_text": "Several typical use cases for these science applications (scientific workflows) are considered for molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes, etc.).",
+    "source_fingerprint": "46a5a98af5066ee1864d4c85cc9104b08732cf36845a883d69b9110aabd5af7f",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "molecular dynamics simulations",
+        "predicate": "are considered for",
+        "object": "scientific workflows",
+        "evidence_span": "scientific workflows) are considered for molecular dynamics (MD) simulations"
+      },
+      {
+        "subject": "molecular dynamics simulations",
+        "predicate": "include",
+        "object": "nanoindentation of graphene layers",
+        "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers"
+      },
+      {
+        "subject": "molecular dynamics simulations",
+        "predicate": "include",
+        "object": "defect system relaxation in metal nanocrystals",
+        "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals"
+      },
+      {
+        "subject": "molecular dynamics simulations",
+        "predicate": "include",
+        "object": "thermal stability of boron nitride nanotubes",
+        "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 168,
+      "candidatesTokenCount": 281,
+      "totalTokenCount": 449,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 168
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"molecular dynamics simulations\",\n    \"predicate\": \"are considered for\",\n    \"object\": \"scientific workflows\",\n    \"evidence_span\": \"scientific workflows) are considered for molecular dynamics (MD) simulations\"\n  },\n  {\n    \"subject\": \"molecular dynamics simulations\",\n    \"predicate\": \"include\",\n    \"object\": \"nanoindentation of graphene layers\",\n    \"evidence_span\": \"molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers\"\n  },\n  {\n    \"subject\": \"molecular dynamics simulations\",\n    \"predicate\": \"include\",\n    \"object\": \"defect system relaxation in metal nanocrystals\",\n    \"evidence_span\": \"molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals\"\n  },\n  {\n    \"subject\": \"molecular dynamics simulations\",\n    \"predicate\": \"include\",\n    \"object\": \"thermal stability of boron nitride nanotubes\",\n    \"evidence_span\": \"molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-024",
+    "source_title": "Effective zero-dimensionality for computable metric spaces",
+    "source_url": "http://arxiv.org/abs/1501.03783v2",
+    "source_text": "The part of this characterisation that concerns covering dimension extends to higher dimensions and to closed shrinkings of finite open covers.",
+    "source_fingerprint": "9d492bafb03b33a8be2e37297c9b1a8f1e1c3ad36ba28649647ed32ac0fab685",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "part of this characterisation",
+        "predicate": "concerns",
+        "object": "covering dimension",
+        "evidence_span": "The part of this characterisation that concerns covering dimension"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 139,
+      "candidatesTokenCount": 58,
+      "totalTokenCount": 197,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 139
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"part of this characterisation\",\n    \"predicate\": \"concerns\",\n    \"object\": \"covering dimension\",\n    \"evidence_span\": \"The part of this characterisation that concerns covering dimension\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-025",
+    "source_title": "Student Satisfaction mining in a typical core course of Computer Science",
+    "source_url": "http://arxiv.org/abs/1504.04116v1",
+    "source_text": "Hence, many educational institutes continuously improve their service to produce a supportive learning environment to satisfy the student need.",
+    "source_fingerprint": "291fbdaf7259759ae276934bb7559d0bbc615ea81b219aa14da862b1b9982be0",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "educational institutes",
+        "predicate": "improve",
+        "object": "service",
+        "evidence_span": "educational institutes continuously improve their service"
+      },
+      {
+        "subject": "educational institutes",
+        "predicate": "produce",
+        "object": "supportive learning environment",
+        "evidence_span": "educational institutes continuously improve their service to produce a supportive learning environment"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 136,
+      "candidatesTokenCount": 104,
+      "totalTokenCount": 240,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 136
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"educational institutes\",\n    \"predicate\": \"improve\",\n    \"object\": \"service\",\n    \"evidence_span\": \"educational institutes continuously improve their service\"\n  },\n  {\n    \"subject\": \"educational institutes\",\n    \"predicate\": \"produce\",\n    \"object\": \"supportive learning environment\",\n    \"evidence_span\": \"educational institutes continuously improve their service to produce a supportive learning environment\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-026",
+    "source_title": "On an almost-universal hash function family with applications to authentication and secrecy codes",
+    "source_url": "http://arxiv.org/abs/1507.02331v4",
+    "source_text": "We introduce a variant of MMH$^*$, that we call GRDH, where we use an arbitrary integer $n>1$ instead of prime $p$ and let the keys $\\mathbf{x}=\\langle x_1, \\ldots, x_k \\rangle \\in \\mathbb{Z}_n^k$ satisfy the conditions $\\gcd(x_i,n)=t_i$ ($1\\leq i\\leq k$), where $t_1,\\ldots,t_k$ are given positive divisors of $n$.",
+    "source_fingerprint": "252afdc5b7045fdd8d520697710b50e5254fba8523e7040266488d0c0cebd63d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "GRDH",
+        "predicate": "is a variant of",
+        "object": "MMH$^*$",
+        "evidence_span": "We introduce a variant of MMH$^*$, that we call GRDH"
+      },
+      {
+        "subject": "keys",
+        "predicate": "satisfy the conditions",
+        "object": "gcd(x_i,n)=t_i",
+        "evidence_span": "the keys $\\mathbf{x}=\\langle x_1, \\ldots, x_k \\rangle \\in \\mathbb{Z}_n^k$ satisfy the conditions $\\gcd(x_i,n)=t_i$"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 226,
+      "candidatesTokenCount": 165,
+      "totalTokenCount": 391,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 226
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"GRDH\",\n    \"predicate\": \"is a variant of\",\n    \"object\": \"MMH$^*$\",\n    \"evidence_span\": \"We introduce a variant of MMH$^*$, that we call GRDH\"\n  },\n  {\n    \"subject\": \"keys\",\n    \"predicate\": \"satisfy the conditions\",\n    \"object\": \"gcd(x_i,n)=t_i\",\n    \"evidence_span\": \"the keys $\\\\mathbf{x}=\\\\langle x_1, \\\\ldots, x_k \\\\rangle \\\\in \\\\mathbb{Z}_n^k$ satisfy the conditions $\\\\gcd(x_i,n)=t_i$\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-027",
+    "source_title": "Type-based Self-stabilisation for Computational Fields",
+    "source_url": "http://arxiv.org/abs/1509.05659v2",
+    "source_text": "A type-based approach is used to provide a correct checking procedure for self-stabilisation.",
+    "source_fingerprint": "58239203aadcbe60f1eaf8a2d538760df215dd8cb216c8bdf370b3c37f3e737e",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "A type-based approach",
+        "predicate": "is used to provide",
+        "object": "a correct checking procedure for self-stabilisation",
+        "evidence_span": "A type-based approach is used to provide a correct checking procedure for self-stabilisation"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 134,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 209,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 134
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"A type-based approach\",\n    \"predicate\": \"is used to provide\",\n    \"object\": \"a correct checking procedure for self-stabilisation\",\n    \"evidence_span\": \"A type-based approach is used to provide a correct checking procedure for self-stabilisation\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-028",
+    "source_title": "Science Question Answering using Instructional Materials",
+    "source_url": "http://arxiv.org/abs/1602.04375v2",
+    "source_text": "We provide a solution for elementary science test using instructional materials.",
+    "source_fingerprint": "dd6313c3b4e822f3e5288895e41c091d80c4910db467886d11f5c1ce097c7344",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 127,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 128,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 127
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-029",
+    "source_title": "Analysis of Computational Science Papers from ICCS 2001-2016 using Topic Modeling and Graph Theory",
+    "source_url": "http://arxiv.org/abs/1705.02203v1",
+    "source_text": "This paper presents results of topic modeling and network models of topics using the International Conference on Computational Science corpus, which contains domain-specific (computational science) papers over sixteen years (a total of 5695 papers).",
+    "source_fingerprint": "76fb0a0e64662c7389227a067bdf83eac7b76b8fb8f0a8c686c64ca955361017",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "International Conference on Computational Science corpus",
+        "predicate": "contains",
+        "object": "5695 papers",
+        "evidence_span": "International Conference on Computational Science corpus, which contains domain-specific (computational science) papers over sixteen years (a total of 5695 papers)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 161,
+      "candidatesTokenCount": 82,
+      "totalTokenCount": 243,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 161
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"International Conference on Computational Science corpus\",\n    \"predicate\": \"contains\",\n    \"object\": \"5695 papers\",\n    \"evidence_span\": \"International Conference on Computational Science corpus, which contains domain-specific (computational science) papers over sixteen years (a total of 5695 papers)\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-030",
+    "source_title": "Sustainable computational science: the ReScience initiative",
+    "source_url": "http://arxiv.org/abs/1707.04393v2",
+    "source_text": "Computer science offers a large set of tools for prototyping, writing, running, testing, validating, sharing and reproducing results, however computational science lags behind.",
+    "source_fingerprint": "fbdd2ddd6bc524459346fa361292430a15d6e01d9875e99182d7add58c57a1ed",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Computer science",
+        "predicate": "offers",
+        "object": "a large set of tools",
+        "evidence_span": "Computer science offers a large set of tools"
+      },
+      {
+        "subject": "computational science",
+        "predicate": "lags behind",
+        "object": "computer science",
+        "evidence_span": "computational science lags behind"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 145,
+      "candidatesTokenCount": 104,
+      "totalTokenCount": 249,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 145
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Computer science\",\n    \"predicate\": \"offers\",\n    \"object\": \"a large set of tools\",\n    \"evidence_span\": \"Computer science offers a large set of tools\"\n  },\n  {\n    \"subject\": \"computational science\",\n    \"predicate\": \"lags behind\",\n    \"object\": \"computer science\",\n    \"evidence_span\": \"computational science lags behind\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-031",
+    "source_title": "Dimensions: A Competitor to Scopus and the Web of Science?",
+    "source_url": "http://arxiv.org/abs/1803.07525v1",
+    "source_text": "Dimensions includes journal articles and citation counts, making it a potential new source of impact data.",
+    "source_fingerprint": "8c9c0abf1356cbf4ab3eb6c215fd706af8284c9071ff6b984c502cd20cd23f84",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Dimensions",
+        "predicate": "includes",
+        "object": "journal articles",
+        "evidence_span": "Dimensions includes journal articles"
+      },
+      {
+        "subject": "Dimensions",
+        "predicate": "includes",
+        "object": "citation counts",
+        "evidence_span": "Dimensions includes journal articles and citation counts"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 133,
+      "candidatesTokenCount": 94,
+      "totalTokenCount": 227,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 133
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Dimensions\",\n    \"predicate\": \"includes\",\n    \"object\": \"journal articles\",\n    \"evidence_span\": \"Dimensions includes journal articles\"\n  },\n  {\n    \"subject\": \"Dimensions\",\n    \"predicate\": \"includes\",\n    \"object\": \"citation counts\",\n    \"evidence_span\": \"Dimensions includes journal articles and citation counts\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-032",
+    "source_title": "Chalktalk : A Visualization and Communication Language -- As a Tool in the Domain of Computer Science Education",
+    "source_url": "http://arxiv.org/abs/1809.07166v1",
+    "source_text": "Traditional presentation media such as the blackboard or electronic whiteboard allow for static hand-drawn images, and slideshow software may be used to generate linear sequences of text and pre-animated images.",
+    "source_fingerprint": "fefde714a9aa2d4b3ecea03dd7f6c3cacdc22e1151a9738577f32aec8369c4a8",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Traditional presentation media",
+        "predicate": "allow for",
+        "object": "static hand-drawn images",
+        "evidence_span": "Traditional presentation media such as the blackboard or electronic whiteboard allow for static hand-drawn images"
+      },
+      {
+        "subject": "slideshow software",
+        "predicate": "may be used to generate",
+        "object": "linear sequences of text and pre-animated images",
+        "evidence_span": "slideshow software may be used to generate linear sequences of text and pre-animated images"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 151,
+      "candidatesTokenCount": 136,
+      "totalTokenCount": 287,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 151
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Traditional presentation media\",\n    \"predicate\": \"allow for\",\n    \"object\": \"static hand-drawn images\",\n    \"evidence_span\": \"Traditional presentation media such as the blackboard or electronic whiteboard allow for static hand-drawn images\"\n  },\n  {\n    \"subject\": \"slideshow software\",\n    \"predicate\": \"may be used to generate\",\n    \"object\": \"linear sequences of text and pre-animated images\",\n    \"evidence_span\": \"slideshow software may be used to generate linear sequences of text and pre-animated images\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-033",
+    "source_title": "The Photometric LSST Astronomical Time-series Classification Challenge (PLAsTiCC): Selection of a performance metric for classification probabilities balancing diverse science goals",
+    "source_url": "http://arxiv.org/abs/1809.11145v2",
+    "source_text": "Classification of transient and variable light curves is an essential step in using astronomical observations to develop an understanding of their underlying physical processes.",
+    "source_fingerprint": "d51c751b79c721f0e0d620839932ee1e42d1d4efa73a4471048e7cc483e6637d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Classification of transient and variable light curves",
+        "predicate": "is",
+        "object": "an essential step",
+        "evidence_span": "Classification of transient and variable light curves is an essential step"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 140,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 201,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 140
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Classification of transient and variable light curves\",\n    \"predicate\": \"is\",\n    \"object\": \"an essential step\",\n    \"evidence_span\": \"Classification of transient and variable light curves is an essential step\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-034",
+    "source_title": "Supporting High-Performance and High-Throughput Computing for Experimental Science",
+    "source_url": "http://arxiv.org/abs/1810.03056v2",
+    "source_text": "Traditionally, the computing infrastructure to support these facility's requirements were organized into separate infrastructure that supported their high-throughput needs and those that supported their high-performance computing needs.",
+    "source_fingerprint": "a9b840f25593463de924611877b1b89fea068a308e51208ccc349d9b4b8328b1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "computing infrastructure",
+        "predicate": "supported",
+        "object": "high-throughput needs",
+        "evidence_span": "computing infrastructure to support these facility's requirements were organized into separate infrastructure that supported their high-throughput needs"
+      },
+      {
+        "subject": "computing infrastructure",
+        "predicate": "supported",
+        "object": "high-performance computing needs",
+        "evidence_span": "computing infrastructure to support these facility's requirements were organized into separate infrastructure that supported their high-performance computing needs"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 150,
+      "candidatesTokenCount": 133,
+      "totalTokenCount": 283,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 150
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"computing infrastructure\",\n    \"predicate\": \"supported\",\n    \"object\": \"high-throughput needs\",\n    \"evidence_span\": \"computing infrastructure to support these facility's requirements were organized into separate infrastructure that supported their high-throughput needs\"\n  },\n  {\n    \"subject\": \"computing infrastructure\",\n    \"predicate\": \"supported\",\n    \"object\": \"high-performance computing needs\",\n    \"evidence_span\": \"computing infrastructure to support these facility's requirements were organized into separate infrastructure that supported their high-performance computing needs\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-035",
+    "source_title": "Spatial Data Science: Closing the human-spatial computing-environment loop",
+    "source_url": "http://arxiv.org/abs/1910.06484v1",
+    "source_text": "A second definition coming out of academia takes a broader perspective that includes active research in geographic information science as well as the aforementioned novel UI technologies.",
+    "source_fingerprint": "8a94bcc0e958ddbd3b2f0e271d73888d031833078b718a4ae62227437385ff69",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "A second definition",
+        "predicate": "takes",
+        "object": "a broader perspective",
+        "evidence_span": "A second definition coming out of academia takes a broader perspective"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 143,
+      "candidatesTokenCount": 57,
+      "totalTokenCount": 200,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 143
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"A second definition\",\n    \"predicate\": \"takes\",\n    \"object\": \"a broader perspective\",\n    \"evidence_span\": \"A second definition coming out of academia takes a broader perspective\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-036",
+    "source_title": "Science with the X-ray Imaging and Spectroscopy Mission (XRISM)",
+    "source_url": "http://arxiv.org/abs/2003.04962v1",
+    "source_text": "This paper describes the capabilities of XRISM, offers a sampling of the many science topics that the mission will address, and discusses the synergies of XRISM with the plethora of planned and existing facilities in the 2020s and beyond.",
+    "source_fingerprint": "27c53567103696111967aad7f525e507152a3070dd91946238222a25cd0016c9",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "XRISM",
+        "predicate": "will address",
+        "object": "science topics",
+        "evidence_span": "the many science topics that the mission will address"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 164,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 218,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 164
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"XRISM\",\n    \"predicate\": \"will address\",\n    \"object\": \"science topics\",\n    \"evidence_span\": \"the many science topics that the mission will address\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-037",
+    "source_title": "Julia Language in Machine Learning: Algorithms, Applications, and Open Issues",
+    "source_url": "http://arxiv.org/abs/2003.10146v2",
+    "source_text": "Currently, the programming languages most commonly used to develop machine learning algorithms include Python, MATLAB, and C/C ++.",
+    "source_fingerprint": "ce1e9fdb9b8caa5a24f5698a3e232158ebbbf8e5a40f6001d9eb3e81d9a06c81",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "programming languages",
+        "predicate": "include",
+        "object": "Python",
+        "evidence_span": "programming languages most commonly used to develop machine learning algorithms include Python"
+      },
+      {
+        "subject": "programming languages",
+        "predicate": "include",
+        "object": "MATLAB",
+        "evidence_span": "programming languages most commonly used to develop machine learning algorithms include Python, MATLAB"
+      },
+      {
+        "subject": "programming languages",
+        "predicate": "include",
+        "object": "C/C ++",
+        "evidence_span": "programming languages most commonly used to develop machine learning algorithms include Python, MATLAB, and C/C ++"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 139,
+      "candidatesTokenCount": 173,
+      "totalTokenCount": 312,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 139
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"programming languages\",\n    \"predicate\": \"include\",\n    \"object\": \"Python\",\n    \"evidence_span\": \"programming languages most commonly used to develop machine learning algorithms include Python\"\n  },\n  {\n    \"subject\": \"programming languages\",\n    \"predicate\": \"include\",\n    \"object\": \"MATLAB\",\n    \"evidence_span\": \"programming languages most commonly used to develop machine learning algorithms include Python, MATLAB\"\n  },\n  {\n    \"subject\": \"programming languages\",\n    \"predicate\": \"include\",\n    \"object\": \"C/C ++\",\n    \"evidence_span\": \"programming languages most commonly used to develop machine learning algorithms include Python, MATLAB, and C/C ++\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-038",
+    "source_title": "Pot, kettle: Nonliteral titles aren't (natural) science",
+    "source_url": "http://arxiv.org/abs/2006.07849v1",
+    "source_text": "This includes interdisciplinary research overlapping these areas.",
+    "source_fingerprint": "b45697624c1969f619c8936a730b20e835a86ad46131883547738b19df62133e",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 124,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 125,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 124
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-039",
+    "source_title": "Mapping the \"long tail\" of research funding: A topic analysis of NSF grant proposals in the Division of Astronomical Sciences",
+    "source_url": "http://arxiv.org/abs/2006.10673v1",
+    "source_text": "This study uses the discipline of astronomy as a case study, overall exploring possible associations between topic, funding level and research output, with implications for research policy and practice.",
+    "source_fingerprint": "d3475f30ce4eae0b49a5b9a4d781294a39e777b06335f1e7db7edc8d5dfae582",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "This study",
+        "predicate": "uses",
+        "object": "astronomy",
+        "evidence_span": "This study uses the discipline of astronomy"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 148,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 200,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 148
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"This study\",\n    \"predicate\": \"uses\",\n    \"object\": \"astronomy\",\n    \"evidence_span\": \"This study uses the discipline of astronomy\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-040",
+    "source_title": "Accessible Computer Science for K-12 Students with Hearing Impairments",
+    "source_url": "http://arxiv.org/abs/2007.08476v1",
+    "source_text": "This paper introduces a new project designed to support Deaf and Hard of Hearing (DHH) K-12 students and sign interpreters in acquiring knowledge of complex Computer Science concepts.",
+    "source_fingerprint": "c3f63473d34f11ea6f144eca9b789532e5e6376b2de160703bcb92ed2dbfb5f4",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "project",
+        "predicate": "supports",
+        "object": "Deaf and Hard of Hearing (DHH) K-12 students",
+        "evidence_span": "project designed to support Deaf and Hard of Hearing (DHH) K-12 students"
+      },
+      {
+        "subject": "project",
+        "predicate": "supports",
+        "object": "sign interpreters",
+        "evidence_span": "project designed to support ... sign interpreters"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 150,
+      "candidatesTokenCount": 121,
+      "totalTokenCount": 271,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 150
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"project\",\n    \"predicate\": \"supports\",\n    \"object\": \"Deaf and Hard of Hearing (DHH) K-12 students\",\n    \"evidence_span\": \"project designed to support Deaf and Hard of Hearing (DHH) K-12 students\"\n  },\n  {\n    \"subject\": \"project\",\n    \"predicate\": \"supports\",\n    \"object\": \"sign interpreters\",\n    \"evidence_span\": \"project designed to support ... sign interpreters\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-041",
+    "source_title": "Critical Science Plan for the Daniel K. Inouye Solar Telescope (DKIST)",
+    "source_url": "http://arxiv.org/abs/2008.08203v2",
+    "source_text": "With this Critical Science Plan (CSP) we attempt to anticipate some of what those capabilities will enable, providing a snapshot of some of the scientific pursuits that the Daniel K.",
+    "source_fingerprint": "a73ac5c9c6a04bd53b4ea08dbc2f6961679a11ea8f4866415f7d74693e876227",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Critical Science Plan",
+        "predicate": "is a",
+        "object": "CSP",
+        "evidence_span": "Critical Science Plan (CSP)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 149,
+      "candidatesTokenCount": 50,
+      "totalTokenCount": 199,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 149
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Critical Science Plan\",\n    \"predicate\": \"is a\",\n    \"object\": \"CSP\",\n    \"evidence_span\": \"Critical Science Plan (CSP)\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-042",
+    "source_title": "MatScIE: An automated tool for the generation of databases of methods and parameters used in the computational materials science literature",
+    "source_url": "http://arxiv.org/abs/2009.06819v2",
+    "source_text": "This comparatively unstructured data source, which contains a large amount of information, has a restriction on its re-usability, as the information needed to carry out further calculations using the data in it must be extracted manually.",
+    "source_fingerprint": "8946db6c1f9e12de400daf39ac59f59f37a6629e34c9c70f87bb454874247042",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "unstructured data source",
+        "predicate": "has",
+        "object": "restriction on its re-usability",
+        "evidence_span": "This comparatively unstructured data source, which contains a large amount of information, has a restriction on its re-usability"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 158,
+      "candidatesTokenCount": 74,
+      "totalTokenCount": 232,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 158
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"unstructured data source\",\n    \"predicate\": \"has\",\n    \"object\": \"restriction on its re-usability\",\n    \"evidence_span\": \"This comparatively unstructured data source, which contains a large amount of information, has a restriction on its re-usability\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-043",
+    "source_title": "Ice Core Science Meets Computer Vision: Challenges and Perspectives",
+    "source_url": "http://arxiv.org/abs/2104.04430v1",
+    "source_text": "Another important issue is the evaluation of post-depositional layer changes, for which the chemical images provide rich information.",
+    "source_fingerprint": "0ac67ad3811736e5ab7638d12ef8a439c657545d1148b14830480e5c04d0f68a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "chemical images",
+        "predicate": "provide",
+        "object": "rich information",
+        "evidence_span": "chemical images provide rich information"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 138,
+      "candidatesTokenCount": 49,
+      "totalTokenCount": 187,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 138
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"chemical images\",\n    \"predicate\": \"provide\",\n    \"object\": \"rich information\",\n    \"evidence_span\": \"chemical images provide rich information\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-044",
+    "source_title": "FRaGenLP: A Generator of Random Linear Programming Problems for Cluster Computing Systems",
+    "source_url": "http://arxiv.org/abs/2105.10384v1",
+    "source_text": "To ensure the consistency of the problem and the boundedness of the feasible region, the constraint system includes $2n+1$ standard inequalities, called support inequalities.",
+    "source_fingerprint": "c93ef8305932d72cafb3f9a2d325ffddb60864153679950254da1b7fd76b28f9",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "the constraint system",
+        "predicate": "includes",
+        "object": "2n+1 standard inequalities",
+        "evidence_span": "the constraint system includes $2n+1$ standard inequalities"
+      },
+      {
+        "subject": "2n+1 standard inequalities",
+        "predicate": "called",
+        "object": "support inequalities",
+        "evidence_span": "2n+1 standard inequalities, called support inequalities"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 147,
+      "candidatesTokenCount": 116,
+      "totalTokenCount": 263,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 147
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"the constraint system\",\n    \"predicate\": \"includes\",\n    \"object\": \"2n+1 standard inequalities\",\n    \"evidence_span\": \"the constraint system includes $2n+1$ standard inequalities\"\n  },\n  {\n    \"subject\": \"2n+1 standard inequalities\",\n    \"predicate\": \"called\",\n    \"object\": \"support inequalities\",\n    \"evidence_span\": \"2n+1 standard inequalities, called support inequalities\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-045",
+    "source_title": "Automatic Differentiation With Higher Infinitesimals, or Computational Smooth Infinitesimal Analysis in Weil Algebra",
+    "source_url": "http://arxiv.org/abs/2106.14153v2",
+    "source_text": "It allows us to do some analysis with higher infinitesimals numerically and symbolically.",
+    "source_fingerprint": "aa46cab1393c00b4e6582c55147b908a09f6f8cb04f93ec4e53af6d026b31bdc",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 130,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 131,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 130
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-046",
+    "source_title": "Building Bridges: Establishing a Dialogue Between Software Engineering Research and Computational Science",
+    "source_url": "http://arxiv.org/abs/2201.04007v1",
+    "source_text": "With the ranks of scientific software teams expanding to include software engineering researchers and practitioners, we can work to build bridges to software science and reap the rewards of evidence-based practice in software development.",
+    "source_fingerprint": "c28ed3eacd7b32e796aa2573cbd8953d14690cbaf18d53df5c99585682965439",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 153,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 154,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 153
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-047",
+    "source_title": "Diversifying the Genomic Data Science Research Community",
+    "source_url": "http://arxiv.org/abs/2201.08443v2",
+    "source_text": "At the same time, there have been revolutions in cloud computing that enable computational and data science research, while making data accessible to anyone with a web browser and an internet connection.",
+    "source_fingerprint": "134bcfa538c33b4e77655379c8725b70e5c7350a626201573ba79edfa9ff411a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "revolutions in cloud computing",
+        "predicate": "enable",
+        "object": "computational and data science research",
+        "evidence_span": "revolutions in cloud computing that enable computational and data science research"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 150,
+      "candidatesTokenCount": 65,
+      "totalTokenCount": 215,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 150
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"revolutions in cloud computing\",\n    \"predicate\": \"enable\",\n    \"object\": \"computational and data science research\",\n    \"evidence_span\": \"revolutions in cloud computing that enable computational and data science research\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-048",
+    "source_title": "Understanding the role of single-board computers in engineering and computer science education: A systematic literature review",
+    "source_url": "http://arxiv.org/abs/2203.16604v1",
+    "source_text": "Several factors such as the versatility, the low-cost, and the possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices.",
+    "source_fingerprint": "083604456240780f2be9c6d4ca8e983ee3d421296a483af4f81dc87a2cf93442",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "versatility",
+        "predicate": "contributed to",
+        "object": "educators and students usually employ these devices",
+        "evidence_span": "versatility, the low-cost, and the possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices"
+      },
+      {
+        "subject": "low-cost",
+        "predicate": "contributed to",
+        "object": "educators and students usually employ these devices",
+        "evidence_span": "low-cost, and the possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices"
+      },
+      {
+        "subject": "possibility to enhance the learning process through technology",
+        "predicate": "contributed to",
+        "object": "educators and students usually employ these devices",
+        "evidence_span": "possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 149,
+      "candidatesTokenCount": 232,
+      "totalTokenCount": 381,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 149
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"versatility\",\n    \"predicate\": \"contributed to\",\n    \"object\": \"educators and students usually employ these devices\",\n    \"evidence_span\": \"versatility, the low-cost, and the possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices\"\n  },\n  {\n    \"subject\": \"low-cost\",\n    \"predicate\": \"contributed to\",\n    \"object\": \"educators and students usually employ these devices\",\n    \"evidence_span\": \"low-cost, and the possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices\"\n  },\n  {\n    \"subject\": \"possibility to enhance the learning process through technology\",\n    \"predicate\": \"contributed to\",\n    \"object\": \"educators and students usually employ these devices\",\n    \"evidence_span\": \"possibility to enhance the learning process through technology have contributed to the educators and students usually employ these devices\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-049",
+    "source_title": "2022 Review of Data-Driven Plasma Science",
+    "source_url": "http://arxiv.org/abs/2205.15832v1",
+    "source_text": "Data science and technology offer transformative tools and methods to science.",
+    "source_fingerprint": "2a101324325e8e76d9a74410175d9808fe997cae372cb619855aa00d0fd14e57",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Data science and technology",
+        "predicate": "offer",
+        "object": "transformative tools and methods",
+        "evidence_span": "Data science and technology offer transformative tools and methods to science."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 127,
+      "candidatesTokenCount": 60,
+      "totalTokenCount": 187,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 127
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Data science and technology\",\n    \"predicate\": \"offer\",\n    \"object\": \"transformative tools and methods\",\n    \"evidence_span\": \"Data science and technology offer transformative tools and methods to science.\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-050",
+    "source_title": "Challenges Faced by Teaching Assistants in Computer Science Education Across Europe",
+    "source_url": "http://arxiv.org/abs/2207.11602v1",
+    "source_text": "Teaching assistants (TAs) are heavily used in computer science courses as a way to handle high enrollment and still being able to offer students individual tutoring and detailed assessments.",
+    "source_fingerprint": "69f048986774c1d2daafe5fe7a1eb0612587969e432d068faf107bfef94c1e61",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Teaching assistants",
+        "predicate": "are used in",
+        "object": "computer science courses",
+        "evidence_span": "Teaching assistants (TAs) are heavily used in computer science courses"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 148,
+      "candidatesTokenCount": 60,
+      "totalTokenCount": 208,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 148
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Teaching assistants\",\n    \"predicate\": \"are used in\",\n    \"object\": \"computer science courses\",\n    \"evidence_span\": \"Teaching assistants (TAs) are heavily used in computer science courses\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-051",
+    "source_title": "A review of clustering models in educational data science towards fairness-aware learning",
+    "source_url": "http://arxiv.org/abs/2301.03421v1",
+    "source_text": "Machine learning is increasingly supporting the education system and educational data science (EDS) domain, from decision support to educational activities and learning analytics.",
+    "source_fingerprint": "aa83661b45ffe86cd7944ebc05fa5e9f7d609c0d132f645c9b532e1829dca888",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Machine learning",
+        "predicate": "is supporting",
+        "object": "the education system",
+        "evidence_span": "Machine learning is increasingly supporting the education system"
+      },
+      {
+        "subject": "Machine learning",
+        "predicate": "is supporting",
+        "object": "educational data science (EDS) domain",
+        "evidence_span": "Machine learning is increasingly supporting the education system and educational data science (EDS) domain"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 142,
+      "candidatesTokenCount": 117,
+      "totalTokenCount": 259,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 142
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Machine learning\",\n    \"predicate\": \"is supporting\",\n    \"object\": \"the education system\",\n    \"evidence_span\": \"Machine learning is increasingly supporting the education system\"\n  },\n  {\n    \"subject\": \"Machine learning\",\n    \"predicate\": \"is supporting\",\n    \"object\": \"educational data science (EDS) domain\",\n    \"evidence_span\": \"Machine learning is increasingly supporting the education system and educational data science (EDS) domain\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-052",
+    "source_title": "TACHYON: Efficient Shared Memory Parallel Computation of Extremum Graphs",
+    "source_url": "http://arxiv.org/abs/2303.02724v1",
+    "source_text": "It has increasingly become a useful data structure that supports topological feature directed visualization of 2D / 3D scalar fields, and enables dimensionality reduction together with exploratory analysis of high dimensional scalar fields.",
+    "source_fingerprint": "df5271b1bb5c5ce0b4c73a7ea370e481b8cdc089cefe56db9928d6f32d22d7e1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "data structure",
+        "predicate": "supports",
+        "object": "topological feature directed visualization of 2D / 3D scalar fields",
+        "evidence_span": "data structure that supports topological feature directed visualization of 2D / 3D scalar fields"
+      },
+      {
+        "subject": "data structure",
+        "predicate": "enables",
+        "object": "dimensionality reduction",
+        "evidence_span": "data structure that ... enables dimensionality reduction"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 154,
+      "candidatesTokenCount": 124,
+      "totalTokenCount": 278,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 154
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"data structure\",\n    \"predicate\": \"supports\",\n    \"object\": \"topological feature directed visualization of 2D / 3D scalar fields\",\n    \"evidence_span\": \"data structure that supports topological feature directed visualization of 2D / 3D scalar fields\"\n  },\n  {\n    \"subject\": \"data structure\",\n    \"predicate\": \"enables\",\n    \"object\": \"dimensionality reduction\",\n    \"evidence_span\": \"data structure that ... enables dimensionality reduction\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-053",
+    "source_title": "GREX-PLUS Science Book",
+    "source_url": "http://arxiv.org/abs/2304.08104v2",
+    "source_text": "Both instruments will provide unique data sets for a broad range of scientific topics including galaxy mass assembly, origin of supermassive blackholes, infrared background radiation, molecular spectroscopy in the interstellar medium, transit spectroscopy for exoplanet atmosphere, planetary atmosphere in the Solar system, and so on.",
+    "source_fingerprint": "bbf99c21bb1a7409315945c39f6465dbbe5b594ab74334fb89396104c0effdc5",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "instruments",
+        "predicate": "will provide",
+        "object": "unique data sets",
+        "evidence_span": "instruments will provide unique data sets"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 171,
+      "candidatesTokenCount": 51,
+      "totalTokenCount": 222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 171
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"instruments\",\n    \"predicate\": \"will provide\",\n    \"object\": \"unique data sets\",\n    \"evidence_span\": \"instruments will provide unique data sets\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-054",
+    "source_title": "Why Data Science Projects Fail",
+    "source_url": "http://arxiv.org/abs/2308.04896v1",
+    "source_text": "Data Science is a modern Data Intelligence practice, which is the core of many businesses and helps businesses build smart strategies around to deal with businesses challenges more efficiently.",
+    "source_fingerprint": "4d1658ceeadb02da504aaf5010db2b784c10633b953aa1d3894c1c7f58b5226c",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Data Science",
+        "predicate": "is",
+        "object": "a modern Data Intelligence practice",
+        "evidence_span": "Data Science is a modern Data Intelligence practice"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 146,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 201,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 146
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Data Science\",\n    \"predicate\": \"is\",\n    \"object\": \"a modern Data Intelligence practice\",\n    \"evidence_span\": \"Data Science is a modern Data Intelligence practice\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-055",
+    "source_title": "Individual and gender inequality in computer science: A career study of cohorts from 1970 to 2000",
+    "source_url": "http://arxiv.org/abs/2311.04559v1",
+    "source_text": "Women continue to fall behind because they continue to be at a higher risk of dropping out for reasons that have nothing to do with early-career achievements or social support.",
+    "source_fingerprint": "6883b5a7d80309f13c206ad5013832d425fe0c1a4b378999bec434bc9ce7327a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Women",
+        "predicate": "continue to be at",
+        "object": "a higher risk of dropping out",
+        "evidence_span": "Women continue to be at a higher risk of dropping out"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 148,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 209,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 148
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Women\",\n    \"predicate\": \"continue to be at\",\n    \"object\": \"a higher risk of dropping out\",\n    \"evidence_span\": \"Women continue to be at a higher risk of dropping out\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-056",
+    "source_title": "Iris: An AI-Driven Virtual Tutor For Computer Science Education",
+    "source_url": "http://arxiv.org/abs/2405.08008v2",
+    "source_text": "This paper introduces Iris, a chat-based virtual tutor integrated into the interactive learning platform Artemis that offers personalized, context-aware assistance in large-scale educational settings.",
+    "source_fingerprint": "5e5695eb0f3b608357d84a2428520c36a8c21bacafeef138c1bbde2b56d96fa5",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Iris",
+        "predicate": "is",
+        "object": "chat-based virtual tutor",
+        "evidence_span": "Iris, a chat-based virtual tutor"
+      },
+      {
+        "subject": "Iris",
+        "predicate": "is integrated into",
+        "object": "Artemis",
+        "evidence_span": "Iris, a chat-based virtual tutor integrated into the interactive learning platform Artemis"
+      },
+      {
+        "subject": "Artemis",
+        "predicate": "is",
+        "object": "interactive learning platform",
+        "evidence_span": "Artemis that offers personalized, context-aware assistance in large-scale educational settings"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 148,
+      "candidatesTokenCount": 172,
+      "totalTokenCount": 320,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 148
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Iris\",\n    \"predicate\": \"is\",\n    \"object\": \"chat-based virtual tutor\",\n    \"evidence_span\": \"Iris, a chat-based virtual tutor\"\n  },\n  {\n    \"subject\": \"Iris\",\n    \"predicate\": \"is integrated into\",\n    \"object\": \"Artemis\",\n    \"evidence_span\": \"Iris, a chat-based virtual tutor integrated into the interactive learning platform Artemis\"\n  },\n  {\n    \"subject\": \"Artemis\",\n    \"predicate\": \"is\",\n    \"object\": \"interactive learning platform\",\n    \"evidence_span\": \"Artemis that offers personalized, context-aware assistance in large-scale educational settings\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-057",
+    "source_title": "Everywhere & Nowhere: Envisioning a Computing Continuum for Science",
+    "source_url": "http://arxiv.org/abs/2406.04480v1",
+    "source_text": "This paper explores a computing continuum that is everywhere and nowhere -- one spanning resources at the edges, in the core and in between, and providing abstractions that can be harnessed to support science.",
+    "source_fingerprint": "f4475041006e82586fddea93d3e6e4064c2c77e5494b5bfc84c9710e16e8248d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "computing continuum",
+        "predicate": "spans",
+        "object": "resources",
+        "evidence_span": "computing continuum that is everywhere and nowhere -- one spanning resources at the edges, in the core and in between"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 152,
+      "candidatesTokenCount": 65,
+      "totalTokenCount": 217,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 152
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"computing continuum\",\n    \"predicate\": \"spans\",\n    \"object\": \"resources\",\n    \"evidence_span\": \"computing continuum that is everywhere and nowhere -- one spanning resources at the edges, in the core and in between\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-058",
+    "source_title": "Preliminary study on artificial intelligence methods for cybersecurity threat detection in computer networks based on raw data packets",
+    "source_url": "http://arxiv.org/abs/2407.17339v2",
+    "source_text": "Most of the intrusion detection methods in computer networks are based on traffic flow characteristics.",
+    "source_fingerprint": "5515dc1ccbe33f6e08ef2f4ab64b3e3880d157e703c7cfd5becf610f34867069",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "intrusion detection methods",
+        "predicate": "are based on",
+        "object": "traffic flow characteristics",
+        "evidence_span": "intrusion detection methods in computer networks are based on traffic flow characteristics"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 131,
+      "candidatesTokenCount": 60,
+      "totalTokenCount": 191,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 131
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"intrusion detection methods\",\n    \"predicate\": \"are based on\",\n    \"object\": \"traffic flow characteristics\",\n    \"evidence_span\": \"intrusion detection methods in computer networks are based on traffic flow characteristics\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-059",
+    "source_title": "Semantic Edge Computing and Semantic Communications in 6G Networks: A Unifying Survey and Research Challenges",
+    "source_url": "http://arxiv.org/abs/2411.18199v3",
+    "source_text": "We summarize the research problems in these two fields and provide a comprehensive review of the state of the art with a focus on their technical strengths and challenges.",
+    "source_fingerprint": "c000fc7be4b4e12efba8619943b23c410bf309500d90c289bddc1e80e50ef163",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 145,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 146,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 145
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-060",
+    "source_title": "Automatic Detection of Research Values from Scientific Abstracts Across Computer Science Subfields",
+    "source_url": "http://arxiv.org/abs/2502.16390v2",
+    "source_text": "Based on the scheme, we build value classifiers to scale up the analysis and present a systematic study over 226,600 paper abstracts from 32 CS-related subfields and 86 popular publishing venues over ten years.",
+    "source_fingerprint": "3c26c2cc88b8070dc551a76c9a7af52c95b2c750663ab0a03336b23679878b2e",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "value classifiers",
+        "predicate": "scale up",
+        "object": "analysis",
+        "evidence_span": "value classifiers to scale up the analysis"
+      },
+      {
+        "subject": "value classifiers",
+        "predicate": "present",
+        "object": "systematic study",
+        "evidence_span": "value classifiers to scale up the analysis and present a systematic study"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 165,
+      "candidatesTokenCount": 106,
+      "totalTokenCount": 271,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 165
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"value classifiers\",\n    \"predicate\": \"scale up\",\n    \"object\": \"analysis\",\n    \"evidence_span\": \"value classifiers to scale up the analysis\"\n  },\n  {\n    \"subject\": \"value classifiers\",\n    \"predicate\": \"present\",\n    \"object\": \"systematic study\",\n    \"evidence_span\": \"value classifiers to scale up the analysis and present a systematic study\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-061",
+    "source_title": "Multimodal Programming in Computer Science with Interactive Assistance Powered by Large Language Model",
+    "source_url": "http://arxiv.org/abs/2503.06552v2",
+    "source_text": "LLM chatbot interfaces allow students to get instant, interactive assistance with homework, but doing so carelessly may not advance educational objectives.",
+    "source_fingerprint": "3da7415b726ec902ff76c0ae7d1285ed00a8c9ac796cb2b13d2cec426e5e31c4",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "LLM chatbot interfaces",
+        "predicate": "allow",
+        "object": "students",
+        "evidence_span": "LLM chatbot interfaces allow students"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 140,
+      "candidatesTokenCount": 51,
+      "totalTokenCount": 191,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 140
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"LLM chatbot interfaces\",\n    \"predicate\": \"allow\",\n    \"object\": \"students\",\n    \"evidence_span\": \"LLM chatbot interfaces allow students\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-062",
+    "source_title": "A Review of Generative AI in Computer Science Education: Challenges and Opportunities in Accuracy, Authenticity, and Assessment",
+    "source_url": "http://arxiv.org/abs/2507.11543v1",
+    "source_text": "This paper surveys the use of Generative AI tools, such as ChatGPT and Claude, in computer science education, focusing on key aspects of accuracy, authenticity, and assessment.",
+    "source_fingerprint": "c4272e06709f9dd47bcbdda93d6656437b81f03fd516fff0b414c676f7eae922",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Generative AI tools",
+        "predicate": "include",
+        "object": "ChatGPT",
+        "evidence_span": "Generative AI tools, such as ChatGPT"
+      },
+      {
+        "subject": "Generative AI tools",
+        "predicate": "include",
+        "object": "Claude",
+        "evidence_span": "Generative AI tools, such as ChatGPT and Claude"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 149,
+      "candidatesTokenCount": 106,
+      "totalTokenCount": 255,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 149
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Generative AI tools\",\n    \"predicate\": \"include\",\n    \"object\": \"ChatGPT\",\n    \"evidence_span\": \"Generative AI tools, such as ChatGPT\"\n  },\n  {\n    \"subject\": \"Generative AI tools\",\n    \"predicate\": \"include\",\n    \"object\": \"Claude\",\n    \"evidence_span\": \"Generative AI tools, such as ChatGPT and Claude\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-063",
+    "source_title": "Pulsar Science with the SKA Observatory",
+    "source_url": "http://arxiv.org/abs/2512.16152v1",
+    "source_text": "In this lead article, a brief description of the two telescopes highlighting the relevant features for pulsar science is presented followed by an overview of each accompanying article, exploring the inter-relationship between different pulsar science use cases.",
+    "source_fingerprint": "089d004b904f2c397944a6839121ecb63f4da5da88f0c69c18b46f76c4f0124d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "article",
+        "predicate": "presents",
+        "object": "description",
+        "evidence_span": "a brief description of the two telescopes highlighting the relevant features for pulsar science is presented"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 157,
+      "candidatesTokenCount": 59,
+      "totalTokenCount": 216,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 157
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"article\",\n    \"predicate\": \"presents\",\n    \"object\": \"description\",\n    \"evidence_span\": \"a brief description of the two telescopes highlighting the relevant features for pulsar science is presented\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-064",
+    "source_title": "The Preliminary Mauve Science Programme: Science themes identified for the first year of operations",
+    "source_url": "http://arxiv.org/abs/2512.16675v3",
+    "source_text": "The satellite will enable UV and visible observations of a variety of stellar objects in our Galaxy, filling the gaps in the ultraviolet space-based data.",
+    "source_fingerprint": "83433447eb9e5d391a16637d13bbadfbc4c7ccef05130ce125791e8a1faecab2",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "The satellite",
+        "predicate": "will enable",
+        "object": "UV and visible observations",
+        "evidence_span": "The satellite will enable UV and visible observations"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 144,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 199,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 144
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"The satellite\",\n    \"predicate\": \"will enable\",\n    \"object\": \"UV and visible observations\",\n    \"evidence_span\": \"The satellite will enable UV and visible observations\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-065",
+    "source_title": "Now's the Time: Computer Science Must Evolve to Emphasize Software and Systems Engineering with Artificial Intelligence (AI)",
+    "source_url": "http://arxiv.org/abs/2604.27230v1",
+    "source_text": "Computer science (CS) education needs to evolve to support software and artificial intelligence (AI) systems engineering, and it needs to happen now -- precisely because the core intellectual contributions of CS have never been more important.",
+    "source_fingerprint": "1edd0fb37a0d49e332f8799e99501692f286fe9920ae689016d87c50741343f1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Computer science education",
+        "predicate": "needs to evolve to support",
+        "object": "software and artificial intelligence systems engineering",
+        "evidence_span": "Computer science (CS) education needs to evolve to support software and artificial intelligence (AI) systems engineering"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 157,
+      "candidatesTokenCount": 73,
+      "totalTokenCount": 230,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 157
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Computer science education\",\n    \"predicate\": \"needs to evolve to support\",\n    \"object\": \"software and artificial intelligence systems engineering\",\n    \"evidence_span\": \"Computer science (CS) education needs to evolve to support software and artificial intelligence (AI) systems engineering\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-066",
+    "source_title": "Heterogeneous Mapping for Analog In-Memory Computing Accelerators: A Unified Workflow",
+    "source_url": "http://arxiv.org/abs/2606.02672v1",
+    "source_text": "This letter classifies existing methods for partitioning DNN workloads across these resources by mapping granularity, optimization strategy, and model support, and distills them into a unified four-stage workflow.",
+    "source_fingerprint": "7da7e00f71b8728d1718dd4780b00ad96489c57e2d5b30a63be99af4d2811692",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "This letter",
+        "predicate": "classifies",
+        "object": "existing methods",
+        "evidence_span": "This letter classifies existing methods"
+      },
+      {
+        "subject": "This letter",
+        "predicate": "distills",
+        "object": "existing methods",
+        "evidence_span": "This letter ... distills them into a unified four-stage workflow"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 150,
+      "candidatesTokenCount": 106,
+      "totalTokenCount": 256,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 150
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"This letter\",\n    \"predicate\": \"classifies\",\n    \"object\": \"existing methods\",\n    \"evidence_span\": \"This letter classifies existing methods\"\n  },\n  {\n    \"subject\": \"This letter\",\n    \"predicate\": \"distills\",\n    \"object\": \"existing methods\",\n    \"evidence_span\": \"This letter ... distills them into a unified four-stage workflow\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-067",
+    "source_title": "GREX-PLUS Science Book v2",
+    "source_url": "http://arxiv.org/abs/2606.05237v1",
+    "source_text": "Both instruments will provide unique datasets for a broad range of scientific topics, including galaxy mass assembly, the origin of supermassive blackholes, infrared background radiation, molecular spectroscopy in the interstellar medium, transit spectroscopy of exoplanet atmospheres, planetary atmospheres in the Solar System, and so on.",
+    "source_fingerprint": "808a36b81dc2cdad8c7717c59896cbe7b68f74d9d470538e159d1dc1cc9b777e",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "instruments",
+        "predicate": "will provide",
+        "object": "unique datasets",
+        "evidence_span": "instruments will provide unique datasets"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 172,
+      "candidatesTokenCount": 49,
+      "totalTokenCount": 221,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 172
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"instruments\",\n    \"predicate\": \"will provide\",\n    \"object\": \"unique datasets\",\n    \"evidence_span\": \"instruments will provide unique datasets\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-068",
+    "source_title": "A Computational Model of Syntactic Processing: Ambiguity Resolution from Interpretation",
+    "source_url": "http://arxiv.org/abs/cmp-lg/9406029v1",
+    "source_text": "Grammatical yet unprocessable sentences such as 1 are called `garden-path sentences.' Their existence provides an opportunity to investigate the human sentence processing mechanism by studying how and when it fails.",
+    "source_fingerprint": "17179fead4b33f239abeb26a5cf8cafa0ad1520afb2a45fa50c31fb7fb9e4737",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Grammatical yet unprocessable sentences",
+        "predicate": "are called",
+        "object": "garden-path sentences",
+        "evidence_span": "Grammatical yet unprocessable sentences such as 1 are called `garden-path sentences.'"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 153,
+      "candidatesTokenCount": 68,
+      "totalTokenCount": 221,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 153
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Grammatical yet unprocessable sentences\",\n    \"predicate\": \"are called\",\n    \"object\": \"garden-path sentences\",\n    \"evidence_span\": \"Grammatical yet unprocessable sentences such as 1 are called `garden-path sentences.'\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-069",
+    "source_title": "From truth to computability I",
+    "source_url": "http://arxiv.org/abs/cs/0407054v2",
+    "source_text": "The present paper contains a soundness and completeness proof for the deductive system CL3 which axiomatizes the most basic first-order fragment of computability logic called the finite-depth, elementary-base fragment.",
+    "source_fingerprint": "4e8eb1ceb87be12957fa1447d0ce14602cc4f45708427a085da1648e883e804b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "CL3",
+        "predicate": "axiomatizes",
+        "object": "finite-depth, elementary-base fragment",
+        "evidence_span": "CL3 which axiomatizes the most basic first-order fragment of computability logic called the finite-depth, elementary-base fragment"
+      },
+      {
+        "subject": "finite-depth, elementary-base fragment",
+        "predicate": "is",
+        "object": "first-order fragment of computability logic",
+        "evidence_span": "first-order fragment of computability logic called the finite-depth, elementary-base fragment"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 156,
+      "candidatesTokenCount": 150,
+      "totalTokenCount": 306,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 156
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"CL3\",\n    \"predicate\": \"axiomatizes\",\n    \"object\": \"finite-depth, elementary-base fragment\",\n    \"evidence_span\": \"CL3 which axiomatizes the most basic first-order fragment of computability logic called the finite-depth, elementary-base fragment\"\n  },\n  {\n    \"subject\": \"finite-depth, elementary-base fragment\",\n    \"predicate\": \"is\",\n    \"object\": \"first-order fragment of computability logic\",\n    \"evidence_span\": \"first-order fragment of computability logic called the finite-depth, elementary-base fragment\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-070",
+    "source_title": "Security Policies as Membranes in Systems for Global Computing",
+    "source_url": "http://arxiv.org/abs/cs/0506061v5",
+    "source_text": "We develop a basic theory to express and enforce security policies via membranes.",
+    "source_fingerprint": "9b9e459f6b5a0dd3773a583d3ea0f3d6eb41f91209308162ce16dd7a1a147b6d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "basic theory",
+        "predicate": "express",
+        "object": "security policies",
+        "evidence_span": "basic theory to express and enforce security policies"
+      },
+      {
+        "subject": "basic theory",
+        "predicate": "enforce",
+        "object": "security policies",
+        "evidence_span": "basic theory to express and enforce security policies"
+      },
+      {
+        "subject": "security policies",
+        "predicate": "via",
+        "object": "membranes",
+        "evidence_span": "security policies via membranes"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 129,
+      "candidatesTokenCount": 147,
+      "totalTokenCount": 276,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 129
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"basic theory\",\n    \"predicate\": \"express\",\n    \"object\": \"security policies\",\n    \"evidence_span\": \"basic theory to express and enforce security policies\"\n  },\n  {\n    \"subject\": \"basic theory\",\n    \"predicate\": \"enforce\",\n    \"object\": \"security policies\",\n    \"evidence_span\": \"basic theory to express and enforce security policies\"\n  },\n  {\n    \"subject\": \"security policies\",\n    \"predicate\": \"via\",\n    \"object\": \"membranes\",\n    \"evidence_span\": \"security policies via membranes\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-071",
+    "source_title": "The Sources of Certainty in Computation and Formal Systems",
+    "source_url": "http://arxiv.org/abs/cs/9911010v1",
+    "source_text": "In this article, I explain formal systems as concrete artifacts, and investigate the way in which they provide a high level of certainty---arguably the highest level achievable by rational discourse.",
+    "source_fingerprint": "9cae4e5950158f95346a0a7ad7e6f0103cd806b5114f3dc648996dbd12bc63c3",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "formal systems",
+        "predicate": "provide",
+        "object": "a high level of certainty",
+        "evidence_span": "formal systems as concrete artifacts, and investigate the way in which they provide a high level of certainty"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 151,
+      "candidatesTokenCount": 66,
+      "totalTokenCount": 217,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 151
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"formal systems\",\n    \"predicate\": \"provide\",\n    \"object\": \"a high level of certainty\",\n    \"evidence_span\": \"formal systems as concrete artifacts, and investigate the way in which they provide a high level of certainty\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-072",
+    "source_title": "Homotopy invariants of higher dimensional categories and concurrency in computer science",
+    "source_url": "http://arxiv.org/abs/math/9902151v5",
+    "source_text": "They contain in a certain manner the branching areas of execution paths or negative corners (resp.",
+    "source_fingerprint": "b5fc894cb43233dd5bbc682bc05710f494191d6e98b42537d98cdf41006b06f4",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 133,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 134,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 133
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[]"
+  },
+  {
+    "id": "arxiv-073",
+    "source_title": "An Algorithmic Argument for Nonadaptive Query Complexity Lower Bounds on Advised Quantum Computation",
+    "source_url": "http://arxiv.org/abs/quant-ph/0312003v3",
+    "source_text": "This paper employs a powerful argument, called an algorithmic argument, to prove lower bounds of the quantum query complexity of a multiple-block ordered search problem in which, given a block number i, we are to find a location of a target keyword in an ordered list of the i-th block.",
+    "source_fingerprint": "d41ef6a619a9f3dc029460ae25f42ee716e9c6cdba885f63b22f9e5a6b73fac5",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "algorithmic argument",
+        "predicate": "proves",
+        "object": "lower bounds of the quantum query complexity",
+        "evidence_span": "an algorithmic argument, to prove lower bounds of the quantum query complexity"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 174,
+      "candidatesTokenCount": 63,
+      "totalTokenCount": 237,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 174
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"algorithmic argument\",\n    \"predicate\": \"proves\",\n    \"object\": \"lower bounds of the quantum query complexity\",\n    \"evidence_span\": \"an algorithmic argument, to prove lower bounds of the quantum query complexity\"\n  }\n]"
+  }
+]

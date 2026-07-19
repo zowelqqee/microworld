@@ -30,6 +30,7 @@ venv/
 env/
 .venv/
 .env/
+.env
 
 # Distribution / packaging
 *.whl

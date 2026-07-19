@@ -1,0 +1,1121 @@
+[
+  {
+    "candidate_id": "arxiv-006:0",
+    "batch_id": "arxiv-006",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "subject": "One approach",
+    "predicate": "uses",
+    "object": "techniques from stochastic processes",
+    "evidence_span": "One approach uses techniques from stochastic processes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-006:1",
+    "batch_id": "arxiv-006",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "subject": "One approach",
+    "predicate": "uses",
+    "object": "a construction related to the Brownian bridge",
+    "evidence_span": "One approach uses ... a construction related to the Brownian bridge",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-008:0",
+    "batch_id": "arxiv-008",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "POMDPs Make Better Hackers: Accounting for Uncertainty in Penetration Testing",
+    "source_url": "http://arxiv.org/abs/1307.8182v1",
+    "source_fingerprint": "12a551fb0b56d9b22c3de3a18f89c8f75023fcc2f1038b674524a88eed8afa1b",
+    "source_text": "Previous work uses classical planning, and requires costly pre-processes reducing this uncertainty by extensive application of scanning methods.",
+    "subject": "Previous work",
+    "predicate": "uses",
+    "object": "classical planning",
+    "evidence_span": "Previous work uses classical planning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-011:0",
+    "batch_id": "arxiv-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_fingerprint": "83b0dc7221eb1734ccae70554f2a00eb565249b96fef56f915e900d0d625cfd0",
+    "source_text": "Examples of such computations on models include model analysis, relatively general-purpose model-reduction maps, and the initial phases of model implementation, all of which should preserve or approximate the mathematical semantics of a complex biological model.",
+    "subject": "computations on models",
+    "predicate": "include",
+    "object": "model analysis",
+    "evidence_span": "Examples of such computations on models include model analysis",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-011:1",
+    "batch_id": "arxiv-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_fingerprint": "83b0dc7221eb1734ccae70554f2a00eb565249b96fef56f915e900d0d625cfd0",
+    "source_text": "Examples of such computations on models include model analysis, relatively general-purpose model-reduction maps, and the initial phases of model implementation, all of which should preserve or approximate the mathematical semantics of a complex biological model.",
+    "subject": "computations on models",
+    "predicate": "include",
+    "object": "relatively general-purpose model-reduction maps",
+    "evidence_span": "Examples of such computations on models include ... relatively general-purpose model-reduction maps",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-011:2",
+    "batch_id": "arxiv-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_fingerprint": "83b0dc7221eb1734ccae70554f2a00eb565249b96fef56f915e900d0d625cfd0",
+    "source_text": "Examples of such computations on models include model analysis, relatively general-purpose model-reduction maps, and the initial phases of model implementation, all of which should preserve or approximate the mathematical semantics of a complex biological model.",
+    "subject": "computations on models",
+    "predicate": "include",
+    "object": "initial phases of model implementation",
+    "evidence_span": "Examples of such computations on models include ... the initial phases of model implementation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-017:0",
+    "batch_id": "arxiv-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "5a28a2f0bdd1df2cb8c40851ac0c6ea64b74a29db1dbd9408bb4abd2177bb853",
+    "source_text": "Disseminating research data in this form enables broader access, reproducibility, and repurposing of scientific products.",
+    "subject": "Disseminating research data",
+    "predicate": "enables",
+    "object": "broader access",
+    "evidence_span": "Disseminating research data in this form enables broader access",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-017:1",
+    "batch_id": "arxiv-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "5a28a2f0bdd1df2cb8c40851ac0c6ea64b74a29db1dbd9408bb4abd2177bb853",
+    "source_text": "Disseminating research data in this form enables broader access, reproducibility, and repurposing of scientific products.",
+    "subject": "Disseminating research data",
+    "predicate": "enables",
+    "object": "reproducibility",
+    "evidence_span": "Disseminating research data in this form enables broader access, reproducibility",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-017:2",
+    "batch_id": "arxiv-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "5a28a2f0bdd1df2cb8c40851ac0c6ea64b74a29db1dbd9408bb4abd2177bb853",
+    "source_text": "Disseminating research data in this form enables broader access, reproducibility, and repurposing of scientific products.",
+    "subject": "Disseminating research data",
+    "predicate": "enables",
+    "object": "repurposing of scientific products",
+    "evidence_span": "Disseminating research data in this form enables broader access, reproducibility, and repurposing of scientific products",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-020:0",
+    "batch_id": "arxiv-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "subject": "Contemporary fuzz testing techniques",
+    "predicate": "focus on",
+    "object": "identifying memory corruption vulnerabilities",
+    "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node",
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-020:1",
+    "batch_id": "arxiv-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "subject": "memory corruption vulnerabilities",
+    "predicate": "allow",
+    "object": "adversaries",
+    "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-022:0",
+    "batch_id": "arxiv-022",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "subject": "environments",
+    "predicate": "employ",
+    "object": "machine learning models",
+    "evidence_span": "environments currently employ machine learning models",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-022:1",
+    "batch_id": "arxiv-022",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "subject": "machine learning models",
+    "predicate": "were built using",
+    "object": "a limited number of training data points",
+    "evidence_span": "machine learning models for data processing and analytics that were built using a limited number of training data points",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-029:0",
+    "batch_id": "arxiv-029",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_fingerprint": "25ae64d52aebf15d3a97f4b168d9e44a02cd3a51e9c457c28704fae1dc14d8a5",
+    "source_text": "Operation at 4\\,K enables the use of single-photon detectors and silicon light sources, two features that lead to efficiency and economical scalability.",
+    "subject": "Operation at 4 K",
+    "predicate": "enables",
+    "object": "single-photon detectors",
+    "evidence_span": "Operation at 4 K enables the use of single-photon detectors",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-029:1",
+    "batch_id": "arxiv-029",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_fingerprint": "25ae64d52aebf15d3a97f4b168d9e44a02cd3a51e9c457c28704fae1dc14d8a5",
+    "source_text": "Operation at 4\\,K enables the use of single-photon detectors and silicon light sources, two features that lead to efficiency and economical scalability.",
+    "subject": "Operation at 4 K",
+    "predicate": "enables",
+    "object": "silicon light sources",
+    "evidence_span": "Operation at 4 K enables the use of single-photon detectors and silicon light sources",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-032:0",
+    "batch_id": "arxiv-032",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "1df5b4178b10e147682b0ed4fa4208fbaea9687fd0e8b1a4529da996288bc5a1",
+    "source_text": "Physiological computing uses human physiological data as system inputs in real time.",
+    "subject": "Physiological computing",
+    "predicate": "uses",
+    "object": "human physiological data",
+    "evidence_span": "Physiological computing uses human physiological data",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-035:0",
+    "batch_id": "arxiv-035",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Climate Change Valuation Adjustment (CCVA) using parameterized climate change impacts",
+    "source_url": "http://arxiv.org/abs/2102.10691v3",
+    "source_fingerprint": "e66ea08d55b85d0554f7d09c9ab6aa91f0f4d15b95db555c41be05ef8bfa4e00",
+    "source_text": "Using a parameterized approach enables discussion with stakeholders of economic impacts on CVA+FVA, whatever the details behind the climate impact.",
+    "subject": "parameterized approach",
+    "predicate": "enables",
+    "object": "discussion with stakeholders of economic impacts on CVA+FVA",
+    "evidence_span": "parameterized approach enables discussion with stakeholders of economic impacts on CVA+FVA",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-038:0",
+    "batch_id": "arxiv-038",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_fingerprint": "fa9b419f2fb0e455508d297d4493e0481ce3e633228ca2e1dfd12b36c982f6b7",
+    "source_text": "Another approach uses Bayesian statistics to calculate the posterior probability distribution of a specific point being a change point.",
+    "subject": "Another approach",
+    "predicate": "uses",
+    "object": "Bayesian statistics",
+    "evidence_span": "Another approach uses Bayesian statistics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-039:0",
+    "batch_id": "arxiv-039",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_fingerprint": "cf7b147fd9c3e50bacbc3c753a4e920ade28e8356959c4eaa8e259d85ae034b0",
+    "source_text": "We generalize standard credal set models for imprecise probabilities to include higher order credal sets -- confidences about confidences.",
+    "subject": "standard credal set models",
+    "predicate": "generalize to include",
+    "object": "higher order credal sets",
+    "evidence_span": "generalize standard credal set models for imprecise probabilities to include higher order credal sets",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-041:0",
+    "batch_id": "arxiv-041",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adaptability and the Pivot Penalty in Science and Technology",
+    "source_url": "http://arxiv.org/abs/2107.06476v2",
+    "source_fingerprint": "f88f55fd5914b5f16d8abe2409559acb354b63a9f7ab2be6ad468adae98f0fe0",
+    "source_text": "COVID-19 provides a high-scale case study, where many researchers engaged the pandemic, yet the pivot penalty remains severe.",
+    "subject": "COVID-19",
+    "predicate": "provides",
+    "object": "a high-scale case study",
+    "evidence_span": "COVID-19 provides a high-scale case study",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-044:0",
+    "batch_id": "arxiv-044",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_fingerprint": "332f356c2bec688a83b89c5f4743bcc0b6f872c3fc014dea7d8e15e904fc9ca7",
+    "source_text": "In this study, we show that a novel DL-based causal language model enables single-shot evasion (i.e., with only one query to malware detector) by treating the content of the malware executable as a byte sequence and training a Generative Pre-Trained Transformer (GPT).",
+    "subject": "DL-based causal language model",
+    "predicate": "enables",
+    "object": "single-shot evasion",
+    "evidence_span": "a novel DL-based causal language model enables single-shot evasion",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-048:0",
+    "batch_id": "arxiv-048",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "subject": "NB2Slides",
+    "predicate": "uses",
+    "object": "deep learning methods",
+    "evidence_span": "NB2Slides uses deep learning methods",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-055:0",
+    "batch_id": "arxiv-055",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_fingerprint": "8162885f189b59ac0b1e737f8194a07b0f453c48f5808fbe62c6d6d50d888d5f",
+    "source_text": "In order to enable users to perform multiple types of AI-based log analysis tasks in a uniform manner, we introduce LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence.",
+    "subject": "LogAI",
+    "predicate": "is",
+    "object": "a one-stop open source library for log analytics and intelligence",
+    "evidence_span": "LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "list_derived_context"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-061:0",
+    "batch_id": "arxiv-061",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Ensemble Learning based Anomaly Detection for IoT Cybersecurity via Bayesian Hyperparameters Sensitivity Analysis",
+    "source_url": "http://arxiv.org/abs/2307.10596v1",
+    "source_fingerprint": "f13764185ba41f1a5e91fcf772c0f1462aa65f3d3b349621546059c16cdcea23",
+    "source_text": "In particular, data collected by IoT contain a tremendous amount of information for anomaly detection.",
+    "subject": "data",
+    "predicate": "contain",
+    "object": "information",
+    "evidence_span": "data collected by IoT contain a tremendous amount of information",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:0",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Higher-Order Equivariant Neural Networks for Charge Density Prediction in Materials",
+    "source_url": "http://arxiv.org/abs/2312.05388v2",
+    "source_fingerprint": "9b098e804a0476b5780869bccbf5ae5ade2f9c2bb0c577464497b5dc9d4e830f",
+    "source_text": "When trained on the massive dataset of over 100K materials in the Materials Project database, our model is able to capture the complexity and variability in the data, leading to a significant 26.7% reduction in self-consistent iterations when used to initialize DFT calculations on unseen materials.",
+    "subject": "model",
+    "predicate": "leads to",
+    "object": "26.7% reduction in self-consistent iterations",
+    "evidence_span": "our model is able to capture the complexity and variability in the data, leading to a significant 26.7% reduction in self-consistent iterations",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-068:0",
+    "batch_id": "arxiv-068",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_fingerprint": "9acae8af459236a9886488b56e72e9bcae26247d419a1721f50e743dadeca89b",
+    "source_text": "In this article, we develop two methods to create entangled spin states corresponding to wave packets of composite particles in analog quantum simulators of Ising spin Hamiltonians.",
+    "subject": "two methods",
+    "predicate": "create",
+    "object": "entangled spin states",
+    "evidence_span": "two methods to create entangled spin states",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-069:0",
+    "batch_id": "arxiv-069",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_fingerprint": "b137b7516e7cff5ccb3001886ab33254d4299531d5f65e49dc85818cc40808d4",
+    "source_text": "One wave-packet preparation method uses the blockade effect enabled by beyond-nearest-neighbor Ising spin interactions.",
+    "subject": "One wave-packet preparation method",
+    "predicate": "uses",
+    "object": "the blockade effect",
+    "evidence_span": "One wave-packet preparation method uses the blockade effect",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-071:0",
+    "batch_id": "arxiv-071",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_fingerprint": "daf9f5911a5ad097e524f1acd90d5e13d7486845ee4dbd53088dbc6603794ebf",
+    "source_text": "By focusing on the predictive modeling of sepsis-related mortality, we propose a method that learns a performance-optimized predictive model and then employs the transfer learning process to produce a model with better fairness.",
+    "subject": "a method",
+    "predicate": "learns",
+    "object": "a performance-optimized predictive model",
+    "evidence_span": "a method that learns a performance-optimized predictive model",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-071:1",
+    "batch_id": "arxiv-071",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_fingerprint": "daf9f5911a5ad097e524f1acd90d5e13d7486845ee4dbd53088dbc6603794ebf",
+    "source_text": "By focusing on the predictive modeling of sepsis-related mortality, we propose a method that learns a performance-optimized predictive model and then employs the transfer learning process to produce a model with better fairness.",
+    "subject": "a method",
+    "predicate": "employs",
+    "object": "the transfer learning process",
+    "evidence_span": "a method that ... employs the transfer learning process",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-078:2",
+    "batch_id": "arxiv-078",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Evaluating Low-Resource Lane Following Algorithms for Compute-Constrained Automated Vehicles",
+    "source_url": "http://arxiv.org/abs/2409.03114v2",
+    "source_fingerprint": "7e28398f10436125030747642c4fc342c027eaf7c12c10b10d955d7044e9b8da",
+    "source_text": "Reducing computing requirements enables lane keeping to be widely deployed in vehicles as part of lower-level automation, including active safety systems.",
+    "subject": "lower-level automation",
+    "predicate": "includes",
+    "object": "active safety systems",
+    "evidence_span": "lower-level automation, including active safety systems",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-079:0",
+    "batch_id": "arxiv-079",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "KoroT-3E: A Personalized Musical Mnemonics Tool for Enhancing Memory Retention of Complex Computer Science Concepts",
+    "source_url": "http://arxiv.org/abs/2409.10446v1",
+    "source_fingerprint": "531a69293fe53818164a2ff1c7f14d65a495bea3b8747ab1a7806e6540ed28b5",
+    "source_text": "KoroT-3E enables users to transform complex concepts into memorable lyrics and compose melodies that suit their musical preferences.",
+    "subject": "KoroT-3E",
+    "predicate": "enables",
+    "object": "users",
+    "evidence_span": "KoroT-3E enables users",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-082:1",
+    "batch_id": "arxiv-082",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Use of What-if Scenarios to Help Explain Artificial Intelligence Models for Neonatal Health",
+    "source_url": "http://arxiv.org/abs/2410.09635v2",
+    "source_fingerprint": "187088f0821730aec290c515ba86e53cb1db6e474feba4f927751a944c9d85ae",
+    "source_text": "Early detection of intrapartum risks enables timely interventions to prevent or mitigate adverse labor outcomes such as cerebral palsy.",
+    "subject": "timely interventions",
+    "predicate": "prevent or mitigate",
+    "object": "adverse labor outcomes",
+    "evidence_span": "timely interventions to prevent or mitigate adverse labor outcomes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-082:2",
+    "batch_id": "arxiv-082",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Use of What-if Scenarios to Help Explain Artificial Intelligence Models for Neonatal Health",
+    "source_url": "http://arxiv.org/abs/2410.09635v2",
+    "source_fingerprint": "187088f0821730aec290c515ba86e53cb1db6e474feba4f927751a944c9d85ae",
+    "source_text": "Early detection of intrapartum risks enables timely interventions to prevent or mitigate adverse labor outcomes such as cerebral palsy.",
+    "subject": "adverse labor outcomes",
+    "predicate": "include",
+    "object": "cerebral palsy",
+    "evidence_span": "adverse labor outcomes such as cerebral palsy",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-089:0",
+    "batch_id": "arxiv-089",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Application of Artificial Intelligence (AI) in Civil Engineering",
+    "source_url": "http://arxiv.org/abs/2502.06727v1",
+    "source_fingerprint": "0073e085c1c9fb7c32a31b30a8706f8d9bb8eb75b40cedc275ef530b9656f18a",
+    "source_text": "Hard computing generally deals with precise data, which provides ideal solutions to problems.",
+    "subject": "Hard computing",
+    "predicate": "deals with",
+    "object": "precise data",
+    "evidence_span": "Hard computing generally deals with precise data",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-098:0",
+    "batch_id": "arxiv-098",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "ModelingAgent: Bridging LLMs and Mathematical Modeling for Real-World Challenges",
+    "source_url": "http://arxiv.org/abs/2505.15068v1",
+    "source_fingerprint": "3ce49fdec3a4c0182a93cce9438770caab59ced17a7c0afffb8dee9e37a87813",
+    "source_text": "We also present ModelingAgent, a multi-agent framework that coordinates tool use, supports structured workflows, and enables iterative self-refinement to generate well-grounded, creative solutions.",
+    "subject": "ModelingAgent",
+    "predicate": "is a",
+    "object": "multi-agent framework",
+    "evidence_span": "ModelingAgent, a multi-agent framework",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-099:1",
+    "batch_id": "arxiv-099",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum Artificial Intelligence for Secure Autonomous Vehicle Navigation: An Architectural Proposal",
+    "source_url": "http://arxiv.org/abs/2506.16000v1",
+    "source_fingerprint": "404031136d98d09502256ca3e818c0957d4b25071eb472f40a1a27ee02e263cb",
+    "source_text": "Quantum neural networks uses quantum amplitude encoding to fuse data from various sensors like LiDAR, radar, camera, GPS and weather etc., This approach gives a unified quantum state representation between heterogeneous sensor modalities.",
+    "subject": "Quantum neural networks",
+    "predicate": "fuse",
+    "object": "data",
+    "evidence_span": "Quantum neural networks uses quantum amplitude encoding to fuse data",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-103:1",
+    "batch_id": "arxiv-103",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Error Detection and Correction for Interpretable Mathematics in Large Language Models",
+    "source_url": "http://arxiv.org/abs/2508.03500v1",
+    "source_fingerprint": "2fab58e1cb2a9f330f203f6039ecebe1b2ff7062ca0dced4834d49316a35edc2",
+    "source_text": "EDCIM uses LLMs to generate a system of equations for a given problem, followed by a symbolic error-detection framework that identifies errors and provides targeted feedback for LLM-based correction.",
+    "subject": "EDCIM",
+    "predicate": "uses",
+    "object": "symbolic error-detection framework",
+    "evidence_span": "EDCIM uses ... a symbolic error-detection framework",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-106:0",
+    "batch_id": "arxiv-106",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "TrackOR: Towards Personalized Intelligent Operating Rooms Through Robust Tracking",
+    "source_url": "http://arxiv.org/abs/2508.07968v1",
+    "source_fingerprint": "062d1f146154140a05b380fe3f5acfa416e4b5ba8f74ebdf6ec854438036b083",
+    "source_text": "Providing intelligent support to surgical teams is a key frontier in automated surgical scene understanding, with the long-term goal of improving patient outcomes.",
+    "subject": "Providing intelligent support to surgical teams",
+    "predicate": "is",
+    "object": "a key frontier in automated surgical scene understanding",
+    "evidence_span": "Providing intelligent support to surgical teams is a key frontier in automated surgical scene understanding",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-108:0",
+    "batch_id": "arxiv-108",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats",
+    "source_url": "http://arxiv.org/abs/2508.17405v1",
+    "source_fingerprint": "98da5ac1fc9fa675fa1f46415cd97b5780644c7ffd6cfe2172f40864a7ef0583",
+    "source_text": "FRAME includes a novel risk assessment method that quantifies AML risks by systematically evaluating three key dimensions: target system's deployment environment, characteristics of diverse AML techniques, and empirical insights from prior research.",
+    "subject": "FRAME",
+    "predicate": "includes",
+    "object": "a novel risk assessment method",
+    "evidence_span": "FRAME includes a novel risk assessment method",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-108:1",
+    "batch_id": "arxiv-108",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats",
+    "source_url": "http://arxiv.org/abs/2508.17405v1",
+    "source_fingerprint": "98da5ac1fc9fa675fa1f46415cd97b5780644c7ffd6cfe2172f40864a7ef0583",
+    "source_text": "FRAME includes a novel risk assessment method that quantifies AML risks by systematically evaluating three key dimensions: target system's deployment environment, characteristics of diverse AML techniques, and empirical insights from prior research.",
+    "subject": "a novel risk assessment method",
+    "predicate": "quantifies",
+    "object": "AML risks",
+    "evidence_span": "a novel risk assessment method that quantifies AML risks",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-116:1",
+    "batch_id": "arxiv-116",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "435c2d8fd8cc898e23c0323687a4ed524472f7fdca38314e68f8ff18e5dd208d",
+    "source_text": "Generative AI and large language models (LLMs) have shown strong capabilities in code understanding, but their use in cybersecurity, particularly for malware detection and analysis, remains limited.",
+    "subject": "large language models",
+    "predicate": "have shown",
+    "object": "strong capabilities in code understanding",
+    "evidence_span": "Generative AI and large language models (LLMs) have shown strong capabilities in code understanding",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-118:0",
+    "batch_id": "arxiv-118",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_fingerprint": "e11fe92e9610546056906f65f925f84f8fc948ba63b9f1a003f6a933d52072f1",
+    "source_text": "We develop a geometric decomposition framework offering two strategies for partitioning inference problems into regional analyses on data-derived Riemannian graphs.",
+    "subject": "geometric decomposition framework",
+    "predicate": "offers",
+    "object": "two strategies",
+    "evidence_span": "geometric decomposition framework offering two strategies",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-119:2",
+    "batch_id": "arxiv-119",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_fingerprint": "eefa8589cfd53b785b3204b2fcdf21cc616070a9f555137ce8502d6dceaa311e",
+    "source_text": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory to partition samples into gradient flow cells where outcomes exhibit monotonic behavior.",
+    "subject": "outcomes",
+    "predicate": "exhibit",
+    "object": "monotonic behavior",
+    "evidence_span": "outcomes exhibit monotonic behavior",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  }
+]

@@ -8,8 +8,8 @@ authors:
   - family-names: "Abramidze"
     given-names: "Arseniy"
 
-version: "2.0-alpha"
-date-released: "2026-07-12"
+version: "3.0"
+date-released: "2026-07-20"
 
 doi: "10.5281/zenodo.21323152"
 
@@ -23,4 +23,3 @@ abstract: >
   semantic memory, deterministic reasoning, explicit dialogue state,
   controlled language generation, auditable support checks, and local-first
   execution.
-

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "pilot-00",
+    "source_text": "Lastly, while GAs optimizes models (based on evolutionary processes) for better outcomes, probabilistic reasoning lowers their statistical uncertainties.",
+    "triples": [
+      {
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models"
+      },
+      {
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "their statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 92,
+      "candidatesTokenCount": 99,
+      "totalTokenCount": 511,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 92
+        }
+      ],
+      "thoughtsTokenCount": 320,
+      "serviceTier": "standard"
+    }
+  }
+]

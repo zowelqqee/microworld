@@ -1,0 +1,41 @@
+{
+  "review_source": "user-supplied pasted manual review, including three attached continuations",
+  "reviewed_at": "2026-07-20",
+  "review_scope": "all 148 node-quality-triaged candidates; no automatic admission",
+  "encoding": {
+    "universe": "every candidate_id in manual_review_candidates.json",
+    "default": {
+      "literal_support": "yes",
+      "clean_entities": "no",
+      "new_predicate": "no",
+      "verdict": "REJECT"
+    },
+    "overrides": "The lists below are exhaustive overrides of those defaults. Reviewer notes remain in the supplied review tables."
+  },
+  "accepted_candidate_ids": [
+    "arxiv-001:0", "arxiv-005:0", "arxiv-009:1", "arxiv-018:0", "arxiv-018:1",
+    "arxiv-018:3", "arxiv-019:0", "arxiv-021:0", "arxiv-023:1", "arxiv-027:0",
+    "arxiv-042:0", "arxiv-042:1", "arxiv-043:1", "arxiv-048:1", "arxiv-056:0",
+    "arxiv-056:1", "arxiv-056:2", "arxiv-066:0", "arxiv-069:1", "arxiv-075:0",
+    "arxiv-084:0", "arxiv-085:1", "arxiv-088:0", "arxiv-091:0", "arxiv-092:0",
+    "arxiv-093:0", "arxiv-099:0", "arxiv-101:0", "arxiv-103:0", "arxiv-107:0",
+    "arxiv-110:0", "arxiv-110:1", "arxiv-111:0", "arxiv-117:0", "arxiv-117:1",
+    "arxiv-119:0"
+  ],
+  "literal_support_no_candidate_ids": [
+    "arxiv-000:0", "arxiv-018:2", "arxiv-028:0", "arxiv-028:1", "arxiv-034:0",
+    "arxiv-038:1", "arxiv-057:1", "arxiv-063:0", "arxiv-067:0", "arxiv-071:2",
+    "arxiv-078:1", "arxiv-096:0", "arxiv-105:0", "arxiv-116:0"
+  ],
+  "clean_entities_yes_candidate_ids": [
+    "arxiv-001:0", "arxiv-005:0", "arxiv-009:1", "arxiv-018:0", "arxiv-018:1",
+    "arxiv-018:3", "arxiv-019:0", "arxiv-021:0", "arxiv-023:1", "arxiv-027:0",
+    "arxiv-042:0", "arxiv-042:1", "arxiv-043:1", "arxiv-048:1", "arxiv-056:0",
+    "arxiv-056:1", "arxiv-056:2", "arxiv-066:0", "arxiv-069:1", "arxiv-075:0",
+    "arxiv-084:0", "arxiv-085:1", "arxiv-088:0", "arxiv-091:0", "arxiv-092:0",
+    "arxiv-093:0", "arxiv-099:0", "arxiv-101:0", "arxiv-103:0", "arxiv-107:0",
+    "arxiv-110:0", "arxiv-110:1", "arxiv-111:0", "arxiv-117:0", "arxiv-117:1",
+    "arxiv-119:0"
+  ],
+  "new_predicate_yes_candidate_ids": ["arxiv-018:0"]
+}

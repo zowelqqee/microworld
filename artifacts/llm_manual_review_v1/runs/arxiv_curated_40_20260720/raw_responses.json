@@ -1,0 +1,1324 @@
+[
+  {
+    "id": "arxiv-000",
+    "source_title": "`What is a Thing?': Topos Theory in the Foundations of Physics",
+    "source_url": "http://arxiv.org/abs/0803.0417v1",
+    "source_text": "In doing so we provide a new answer to Heidegger's timeless question ``What is a thing?''.",
+    "source_fingerprint": "b06f4071db54b2c1b8d3fab0bba312bef80206a4f85da01c5d7cd98a9b1f06b2",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Heidegger",
+        "predicate": "asked",
+        "object": "What is a thing?",
+        "evidence_span": "Heidegger's timeless question ``What is a thing?''"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 137,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 198,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 137
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Heidegger\",\n    \"predicate\": \"asked\",\n    \"object\": \"What is a thing?\",\n    \"evidence_span\": \"Heidegger's timeless question ``What is a thing?''\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-001",
+    "source_title": "Dynamic Multimedia Content Retrieval System in Distributed Environment",
+    "source_url": "http://arxiv.org/abs/0909.0118v1",
+    "source_text": "WiCoM enables remote management of web resources.",
+    "source_fingerprint": "aa7c1b079baff47faf59715137e5c5e20905f2ddd434a4b5d92dcbcd2780656c",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "WiCoM",
+        "predicate": "enables",
+        "object": "remote management of web resources",
+        "evidence_span": "WiCoM enables remote management of web resources"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 125,
+      "candidatesTokenCount": 58,
+      "totalTokenCount": 183,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 125
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"WiCoM\",\n    \"predicate\": \"enables\",\n    \"object\": \"remote management of web resources\",\n    \"evidence_span\": \"WiCoM enables remote management of web resources\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-002",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_text": "One implementation uses surface codes created by forming defects in a highly-entangled cluster state.",
+    "source_fingerprint": "71bc38d86781a08c013218dd86c83dab3b816d76c65fa8bf81ab1c15abfb3c5d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "One implementation",
+        "predicate": "uses",
+        "object": "surface codes",
+        "evidence_span": "One implementation uses surface codes"
+      },
+      {
+        "subject": "surface codes",
+        "predicate": "created by",
+        "object": "forming defects",
+        "evidence_span": "surface codes created by forming defects"
+      },
+      {
+        "subject": "defects",
+        "predicate": "in",
+        "object": "a highly-entangled cluster state",
+        "evidence_span": "defects in a highly-entangled cluster state"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 133,
+      "candidatesTokenCount": 153,
+      "totalTokenCount": 286,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 133
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"One implementation\",\n    \"predicate\": \"uses\",\n    \"object\": \"surface codes\",\n    \"evidence_span\": \"One implementation uses surface codes\"\n  },\n  {\n    \"subject\": \"surface codes\",\n    \"predicate\": \"created by\",\n    \"object\": \"forming defects\",\n    \"evidence_span\": \"surface codes created by forming defects\"\n  },\n  {\n    \"subject\": \"defects\",\n    \"predicate\": \"in\",\n    \"object\": \"a highly-entangled cluster state\",\n    \"evidence_span\": \"defects in a highly-entangled cluster state\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-003",
+    "source_title": "Low-energy break in the spectrum of Galactic cosmic rays",
+    "source_url": "http://arxiv.org/abs/1112.5541v1",
+    "source_text": "Detection of a low-energy break enables a measurement of GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3.",
+    "source_fingerprint": "f9eb02e17af4f5df0648f022c390d979b256b48654183096355009de27e0d6a3",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "GCR energy density",
+        "predicate": "is",
+        "object": "0.9+/-0.3 eV/cm3",
+        "evidence_span": "GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 147,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 147
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"GCR energy density\",\n    \"predicate\": \"is\",\n    \"object\": \"0.9+/-0.3 eV/cm3\",\n    \"evidence_span\": \"GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-004",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "One approach",
+        "predicate": "uses",
+        "object": "techniques from stochastic processes",
+        "evidence_span": "One approach uses techniques from stochastic processes"
+      },
+      {
+        "subject": "One approach",
+        "predicate": "uses",
+        "object": "a construction related to the Brownian bridge",
+        "evidence_span": "One approach uses ... a construction related to the Brownian bridge"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 134,
+      "candidatesTokenCount": 110,
+      "totalTokenCount": 244,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 134
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"One approach\",\n    \"predicate\": \"uses\",\n    \"object\": \"techniques from stochastic processes\",\n    \"evidence_span\": \"One approach uses techniques from stochastic processes\"\n  },\n  {\n    \"subject\": \"One approach\",\n    \"predicate\": \"uses\",\n    \"object\": \"a construction related to the Brownian bridge\",\n    \"evidence_span\": \"One approach uses ... a construction related to the Brownian bridge\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-005",
+    "source_title": "POMDPs Make Better Hackers: Accounting for Uncertainty in Penetration Testing",
+    "source_url": "http://arxiv.org/abs/1307.8182v1",
+    "source_text": "Doing so automatically allows for regular and systematic testing.",
+    "source_fingerprint": "94eaccd3a71dedc96cc2bebe2512a6f2b6de780d968550adc9bceec8a958372a",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Doing so",
+        "predicate": "allows for",
+        "object": "regular and systematic testing",
+        "evidence_span": "Doing so automatically allows for regular and systematic testing"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 125,
+      "candidatesTokenCount": 56,
+      "totalTokenCount": 181,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 125
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Doing so\",\n    \"predicate\": \"allows for\",\n    \"object\": \"regular and systematic testing\",\n    \"evidence_span\": \"Doing so automatically allows for regular and systematic testing\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-006",
+    "source_title": "Science with KRAKENS",
+    "source_url": "http://arxiv.org/abs/1506.03458v1",
+    "source_text": "KRAKENS uses a unique detector technology (MKIDs) to enable groundbreaking science across a wide range of astrophysical research topics.",
+    "source_fingerprint": "8faace6a760cbbdbdfd2c61d032b8766a84cd8e47ff5e8c114179f6c2550478d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "KRAKENS",
+        "predicate": "uses",
+        "object": "detector technology",
+        "evidence_span": "KRAKENS uses a unique detector technology"
+      },
+      {
+        "subject": "detector technology",
+        "predicate": "is",
+        "object": "MKIDs",
+        "evidence_span": "detector technology (MKIDs)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 141,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 243,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 141
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"KRAKENS\",\n    \"predicate\": \"uses\",\n    \"object\": \"detector technology\",\n    \"evidence_span\": \"KRAKENS uses a unique detector technology\"\n  },\n  {\n    \"subject\": \"detector technology\",\n    \"predicate\": \"is\",\n    \"object\": \"MKIDs\",\n    \"evidence_span\": \"detector technology (MKIDs)\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-007",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_text": "Declarative modeling uses symbolic expressions to represent models.",
+    "source_fingerprint": "47c6d269febd2766904116836d92d18a7bfc06accf9eb2631ca562f3c8c70f69",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Declarative modeling",
+        "predicate": "uses",
+        "object": "symbolic expressions",
+        "evidence_span": "Declarative modeling uses symbolic expressions"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 125,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 177,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 125
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Declarative modeling\",\n    \"predicate\": \"uses\",\n    \"object\": \"symbolic expressions\",\n    \"evidence_span\": \"Declarative modeling uses symbolic expressions\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-008",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_text": "MetaChem supports different levels of description, and has a formal description; we illustrate these using StringCatChem, a toy artificial chemistry.",
+    "source_fingerprint": "1cd7aa5bb6be60ce422cc8ab208c09b6a3d29b485bf78857bdbd6495c3d558e2",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "MetaChem",
+        "predicate": "supports",
+        "object": "different levels of description",
+        "evidence_span": "MetaChem supports different levels of description"
+      },
+      {
+        "subject": "MetaChem",
+        "predicate": "has",
+        "object": "a formal description",
+        "evidence_span": "MetaChem ... has a formal description"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 142,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 244,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 142
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"MetaChem\",\n    \"predicate\": \"supports\",\n    \"object\": \"different levels of description\",\n    \"evidence_span\": \"MetaChem supports different levels of description\"\n  },\n  {\n    \"subject\": \"MetaChem\",\n    \"predicate\": \"has\",\n    \"object\": \"a formal description\",\n    \"evidence_span\": \"MetaChem ... has a formal description\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-009",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_text": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources.",
+    "source_fingerprint": "4ce218cecfabaafa152f1199546a09a969cb3feb52f18b86c6c69b72a1f78224",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "AIBC",
+        "predicate": "is",
+        "object": "Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem",
+        "evidence_span": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem"
+      },
+      {
+        "subject": "AIBC",
+        "predicate": "allows",
+        "object": "system-wide low-cost sharing of computing and storage resources",
+        "evidence_span": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 146,
+      "candidatesTokenCount": 150,
+      "totalTokenCount": 296,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 146
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"AIBC\",\n    \"predicate\": \"is\",\n    \"object\": \"Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem\",\n    \"evidence_span\": \"The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem\"\n  },\n  {\n    \"subject\": \"AIBC\",\n    \"predicate\": \"allows\",\n    \"object\": \"system-wide low-cost sharing of computing and storage resources\",\n    \"evidence_span\": \"The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-010",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_text": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance.",
+    "source_fingerprint": "00ac548f4d001b117dd3525afdfe414c3a9b252f1eb593d4309917d6bba09944",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "A research group",
+        "predicate": "can set up",
+        "object": "its own instance of MatD3",
+        "evidence_span": "A research group can set up its own instance of MatD3"
+      },
+      {
+        "subject": "A research group",
+        "predicate": "can publish",
+        "object": "scientific results",
+        "evidence_span": "A research group can set up its own instance of MatD3 and publish scientific results"
+      },
+      {
+        "subject": "A research group",
+        "predicate": "can use",
+        "object": "an existing online MatD3 instance",
+        "evidence_span": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 143,
+      "candidatesTokenCount": 200,
+      "totalTokenCount": 343,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 143
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"A research group\",\n    \"predicate\": \"can set up\",\n    \"object\": \"its own instance of MatD3\",\n    \"evidence_span\": \"A research group can set up its own instance of MatD3\"\n  },\n  {\n    \"subject\": \"A research group\",\n    \"predicate\": \"can publish\",\n    \"object\": \"scientific results\",\n    \"evidence_span\": \"A research group can set up its own instance of MatD3 and publish scientific results\"\n  },\n  {\n    \"subject\": \"A research group\",\n    \"predicate\": \"can use\",\n    \"object\": \"an existing online MatD3 instance\",\n    \"evidence_span\": \"A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-011",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "SciServer",
+        "predicate": "builds upon",
+        "object": "SkyServer",
+        "evidence_span": "SciServer builds upon and extends the SkyServer"
+      },
+      {
+        "subject": "SciServer",
+        "predicate": "extends",
+        "object": "SkyServer",
+        "evidence_span": "SciServer builds upon and extends the SkyServer"
+      },
+      {
+        "subject": "SkyServer",
+        "predicate": "introduced",
+        "object": "SQL",
+        "evidence_span": "SkyServer system of server-side tools that introduced the astronomical community to SQL"
+      },
+      {
+        "subject": "SkyServer",
+        "predicate": "has been serving",
+        "object": "Sloan Digital Sky Survey catalog data",
+        "evidence_span": "SkyServer system of server-side tools that... has been serving the Sloan Digital Sky Survey catalog data to the public"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 157,
+      "candidatesTokenCount": 231,
+      "totalTokenCount": 388,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 157
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"SciServer\",\n    \"predicate\": \"builds upon\",\n    \"object\": \"SkyServer\",\n    \"evidence_span\": \"SciServer builds upon and extends the SkyServer\"\n  },\n  {\n    \"subject\": \"SciServer\",\n    \"predicate\": \"extends\",\n    \"object\": \"SkyServer\",\n    \"evidence_span\": \"SciServer builds upon and extends the SkyServer\"\n  },\n  {\n    \"subject\": \"SkyServer\",\n    \"predicate\": \"introduced\",\n    \"object\": \"SQL\",\n    \"evidence_span\": \"SkyServer system of server-side tools that introduced the astronomical community to SQL\"\n  },\n  {\n    \"subject\": \"SkyServer\",\n    \"predicate\": \"has been serving\",\n    \"object\": \"Sloan Digital Sky Survey catalog data\",\n    \"evidence_span\": \"SkyServer system of server-side tools that... has been serving the Sloan Digital Sky Survey catalog data to the public\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-012",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities"
+      },
+      {
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries",
+        "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 138,
+      "candidatesTokenCount": 117,
+      "totalTokenCount": 255,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 138
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Contemporary fuzz testing techniques\",\n    \"predicate\": \"focus on\",\n    \"object\": \"identifying memory corruption vulnerabilities\",\n    \"evidence_span\": \"Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities\"\n  },\n  {\n    \"subject\": \"memory corruption vulnerabilities\",\n    \"predicate\": \"allow\",\n    \"object\": \"adversaries\",\n    \"evidence_span\": \"memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-013",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "environments",
+        "predicate": "employ",
+        "object": "machine learning models",
+        "evidence_span": "environments currently employ machine learning models"
+      },
+      {
+        "subject": "machine learning models",
+        "predicate": "were built using",
+        "object": "a limited number of training data points",
+        "evidence_span": "machine learning models for data processing and analytics that were built using a limited number of training data points"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 139,
+      "candidatesTokenCount": 118,
+      "totalTokenCount": 257,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 139
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"environments\",\n    \"predicate\": \"employ\",\n    \"object\": \"machine learning models\",\n    \"evidence_span\": \"environments currently employ machine learning models\"\n  },\n  {\n    \"subject\": \"machine learning models\",\n    \"predicate\": \"were built using\",\n    \"object\": \"a limited number of training data points\",\n    \"evidence_span\": \"machine learning models for data processing and analytics that were built using a limited number of training data points\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-014",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_text": "Traditionally, cybersecurity experts assess and improve a company's capabilities.",
+    "source_fingerprint": "4903c063277262bd92b2659b4509e7d693ee4cf938441f304f0c412c519fadea",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "cybersecurity experts",
+        "predicate": "assess",
+        "object": "a company's capabilities",
+        "evidence_span": "cybersecurity experts assess and improve a company's capabilities"
+      },
+      {
+        "subject": "cybersecurity experts",
+        "predicate": "improve",
+        "object": "a company's capabilities",
+        "evidence_span": "cybersecurity experts assess and improve a company's capabilities"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 128,
+      "candidatesTokenCount": 115,
+      "totalTokenCount": 243,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 128
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"cybersecurity experts\",\n    \"predicate\": \"assess\",\n    \"object\": \"a company's capabilities\",\n    \"evidence_span\": \"cybersecurity experts assess and improve a company's capabilities\"\n  },\n  {\n    \"subject\": \"cybersecurity experts\",\n    \"predicate\": \"improve\",\n    \"object\": \"a company's capabilities\",\n    \"evidence_span\": \"cybersecurity experts assess and improve a company's capabilities\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-015",
+    "source_title": "Quantum steering with vector vortex photon states with the detection loophole closed",
+    "source_url": "http://arxiv.org/abs/2009.03918v2",
+    "source_text": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics.",
+    "source_fingerprint": "9c1e0e99482a17d43da64292f6ee683d902c79c015bfd64b09e5409c36f58bd7",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Violating a nonlocality inequality",
+        "predicate": "enables",
+        "object": "the most powerful remote quantum information tasks",
+        "evidence_span": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks"
+      },
+      {
+        "subject": "Violating a nonlocality inequality",
+        "predicate": "enables",
+        "object": "fundamental tests of quantum physics",
+        "evidence_span": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 136,
+      "candidatesTokenCount": 137,
+      "totalTokenCount": 273,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 136
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Violating a nonlocality inequality\",\n    \"predicate\": \"enables\",\n    \"object\": \"the most powerful remote quantum information tasks\",\n    \"evidence_span\": \"Violating a nonlocality inequality enables the most powerful remote quantum information tasks\"\n  },\n  {\n    \"subject\": \"Violating a nonlocality inequality\",\n    \"predicate\": \"enables\",\n    \"object\": \"fundamental tests of quantum physics\",\n    \"evidence_span\": \"Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-016",
+    "source_title": "Phase A Science Case for MAVIS -- The Multi-conjugate Adaptive-optics Visible Imager-Spectrograph for the VLT Adaptive Optics Facility",
+    "source_url": "http://arxiv.org/abs/2009.09242v2",
+    "source_text": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10% (goal >15%) across a relatively large (30 arc second) science field.",
+    "source_fingerprint": "7321cb4fd55ed5483f7ed5f744c24771095970c3e9cce4f3ef040cae42bb5a0b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "MAVIS",
+        "predicate": "uses",
+        "object": "two deformable mirrors",
+        "evidence_span": "MAVIS uses two deformable mirrors"
+      },
+      {
+        "subject": "MAVIS",
+        "predicate": "providing",
+        "object": "a mean V-band Strehl ratio of >10%",
+        "evidence_span": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10%"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 166,
+      "candidatesTokenCount": 133,
+      "totalTokenCount": 299,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 166
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"MAVIS\",\n    \"predicate\": \"uses\",\n    \"object\": \"two deformable mirrors\",\n    \"evidence_span\": \"MAVIS uses two deformable mirrors\"\n  },\n  {\n    \"subject\": \"MAVIS\",\n    \"predicate\": \"providing\",\n    \"object\": \"a mean V-band Strehl ratio of >10%\",\n    \"evidence_span\": \"MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10%\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-017",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_text": "Using light for communication enables high fan-out as well as low-latency signaling across large systems with no traffic-dependent bottlenecks.",
+    "source_fingerprint": "950cf05960d743d8f078c8cbaf9d8aa1a9635ae8732fc4ac9f392d1bef407c09",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "light",
+        "predicate": "enables",
+        "object": "high fan-out",
+        "evidence_span": "light for communication enables high fan-out"
+      },
+      {
+        "subject": "light",
+        "predicate": "enables",
+        "object": "low-latency signaling",
+        "evidence_span": "light for communication enables high fan-out as well as low-latency signaling"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 141,
+      "candidatesTokenCount": 112,
+      "totalTokenCount": 253,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 141
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"light\",\n    \"predicate\": \"enables\",\n    \"object\": \"high fan-out\",\n    \"evidence_span\": \"light for communication enables high fan-out\"\n  },\n  {\n    \"subject\": \"light\",\n    \"predicate\": \"enables\",\n    \"object\": \"low-latency signaling\",\n    \"evidence_span\": \"light for communication enables high fan-out as well as low-latency signaling\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-018",
+    "source_title": "Evaluating the Effect of Activity Based Method of Teaching Mathematics on Nigerian Secondary School Students Achievement in Mathematics",
+    "source_url": "http://arxiv.org/abs/2011.10785v1",
+    "source_text": "A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized, hence the need to improve teaching methods for solving the problem of poor performance in the subject.",
+    "source_fingerprint": "9b33a58ecdb2731bdb9b06bc000b9cd5f739f4fb8c632c7c1fdb7f96ce36c26b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "shortfall in the knowledge of the students",
+        "predicate": "means",
+        "object": "the goal may not be realized",
+        "evidence_span": "A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 152,
+      "candidatesTokenCount": 72,
+      "totalTokenCount": 224,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 152
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"shortfall in the knowledge of the students\",\n    \"predicate\": \"means\",\n    \"object\": \"the goal may not be realized\",\n    \"evidence_span\": \"A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-019",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_text": "Physiological computing uses human physiological data as system inputs in real time.",
+    "source_fingerprint": "1df5b4178b10e147682b0ed4fa4208fbaea9687fd0e8b1a4529da996288bc5a1",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Physiological computing",
+        "predicate": "uses",
+        "object": "human physiological data",
+        "evidence_span": "Physiological computing uses human physiological data"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 129,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 182,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 129
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Physiological computing\",\n    \"predicate\": \"uses\",\n    \"object\": \"human physiological data\",\n    \"evidence_span\": \"Physiological computing uses human physiological data\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-020",
+    "source_title": "Climate Change Valuation Adjustment (CCVA) using parameterized climate change impacts",
+    "source_url": "http://arxiv.org/abs/2102.10691v3",
+    "source_text": "Finally we provide quantification of examples of typical interest where there is risk of economic stress from sea level change up to 2101, and from transformations of business models.",
+    "source_fingerprint": "97f6db949eb6d0c00f5e6f1de5c4f686f5b4d9e2d97fab2852687b45b781b562",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "sea level change",
+        "predicate": "poses risk of",
+        "object": "economic stress",
+        "evidence_span": "risk of economic stress from sea level change"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 150,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 205,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 150
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"sea level change\",\n    \"predicate\": \"poses risk of\",\n    \"object\": \"economic stress\",\n    \"evidence_span\": \"risk of economic stress from sea level change\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-021",
+    "source_title": "Fit without fear: remarkable mathematical phenomena of deep learning through the prism of interpolation",
+    "source_url": "http://arxiv.org/abs/2105.14368v1",
+    "source_text": "Over-parameterization enables interpolation and provides flexibility to select a right interpolating model.",
+    "source_fingerprint": "8b2a46d0d97795f6752baf76f12181a38774b7c483fdca0eeb3122917a6e608b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Over-parameterization",
+        "predicate": "enables",
+        "object": "interpolation",
+        "evidence_span": "Over-parameterization enables interpolation"
+      },
+      {
+        "subject": "Over-parameterization",
+        "predicate": "provides",
+        "object": "flexibility",
+        "evidence_span": "Over-parameterization enables interpolation and provides flexibility"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 132,
+      "candidatesTokenCount": 104,
+      "totalTokenCount": 236,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 132
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Over-parameterization\",\n    \"predicate\": \"enables\",\n    \"object\": \"interpolation\",\n    \"evidence_span\": \"Over-parameterization enables interpolation\"\n  },\n  {\n    \"subject\": \"Over-parameterization\",\n    \"predicate\": \"provides\",\n    \"object\": \"flexibility\",\n    \"evidence_span\": \"Over-parameterization enables interpolation and provides flexibility\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-022",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_text": "To detect change points, a number of unsupervised algorithms have been developed which are based on different principles.",
+    "source_fingerprint": "dfdc16466f0ed8e1f74e36334312119908031d69d4bd58f0e6589e16795cc04e",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "unsupervised algorithms",
+        "predicate": "are based on",
+        "object": "different principles",
+        "evidence_span": "unsupervised algorithms have been developed which are based on different principles"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 135,
+      "candidatesTokenCount": 59,
+      "totalTokenCount": 194,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 135
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"unsupervised algorithms\",\n    \"predicate\": \"are based on\",\n    \"object\": \"different principles\",\n    \"evidence_span\": \"unsupervised algorithms have been developed which are based on different principles\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-023",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_text": "We generalize standard credal set models for imprecise probabilities to include higher order credal sets -- confidences about confidences.",
+    "source_fingerprint": "cf7b147fd9c3e50bacbc3c753a4e920ade28e8356959c4eaa8e259d85ae034b0",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "standard credal set models",
+        "predicate": "generalize to include",
+        "object": "higher order credal sets",
+        "evidence_span": "generalize standard credal set models for imprecise probabilities to include higher order credal sets"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 139,
+      "candidatesTokenCount": 70,
+      "totalTokenCount": 209,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 139
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"standard credal set models\",\n    \"predicate\": \"generalize to include\",\n    \"object\": \"higher order credal sets\",\n    \"evidence_span\": \"generalize standard credal set models for imprecise probabilities to include higher order credal sets\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-024",
+    "source_title": "Adaptability and the Pivot Penalty in Science and Technology",
+    "source_url": "http://arxiv.org/abs/2107.06476v2",
+    "source_text": "COVID-19 provides a high-scale case study, where many researchers engaged the pandemic, yet the pivot penalty remains severe.",
+    "source_fingerprint": "f88f55fd5914b5f16d8abe2409559acb354b63a9f7ab2be6ad468adae98f0fe0",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "COVID-19",
+        "predicate": "provides",
+        "object": "a high-scale case study",
+        "evidence_span": "COVID-19 provides a high-scale case study"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 141,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 202,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 141
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"COVID-19\",\n    \"predicate\": \"provides\",\n    \"object\": \"a high-scale case study\",\n    \"evidence_span\": \"COVID-19 provides a high-scale case study\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-025",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_text": "AutoGrad uses Processing, which is used in the emerging Interactive Media Arts, and pioneers grading systems utilized outside the sciences to assist tuition in the Arts.",
+    "source_fingerprint": "a4ec60c1a9d5c56da16a746c738f097248cd50dc1f45962c9677c42107173915",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "AutoGrad",
+        "predicate": "uses",
+        "object": "Processing",
+        "evidence_span": "AutoGrad uses Processing"
+      },
+      {
+        "subject": "Processing",
+        "predicate": "is used in",
+        "object": "Interactive Media Arts",
+        "evidence_span": "Processing, which is used in the emerging Interactive Media Arts"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 145,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 247,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 145
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"AutoGrad\",\n    \"predicate\": \"uses\",\n    \"object\": \"Processing\",\n    \"evidence_span\": \"AutoGrad uses Processing\"\n  },\n  {\n    \"subject\": \"Processing\",\n    \"predicate\": \"is used in\",\n    \"object\": \"Interactive Media Arts\",\n    \"evidence_span\": \"Processing, which is used in the emerging Interactive Media Arts\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-026",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_text": "In this study, we show that a novel DL-based causal language model enables single-shot evasion (i.e., with only one query to malware detector) by treating the content of the malware executable as a byte sequence and training a Generative Pre-Trained Transformer (GPT).",
+    "source_fingerprint": "332f356c2bec688a83b89c5f4743bcc0b6f872c3fc014dea7d8e15e904fc9ca7",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "DL-based causal language model",
+        "predicate": "enables",
+        "object": "single-shot evasion",
+        "evidence_span": "a novel DL-based causal language model enables single-shot evasion"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 173,
+      "candidatesTokenCount": 64,
+      "totalTokenCount": 237,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 173
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"DL-based causal language model\",\n    \"predicate\": \"enables\",\n    \"object\": \"single-shot evasion\",\n    \"evidence_span\": \"a novel DL-based causal language model enables single-shot evasion\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-027",
+    "source_title": "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+    "source_url": "http://arxiv.org/abs/2201.01574v1",
+    "source_text": "Adaptive learning reverses this practice and attempts to improve the student experience.",
+    "source_fingerprint": "621007f61efe4448b30d633db8d6417a92f15772651919102eb760cd829fba82",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Adaptive learning",
+        "predicate": "reverses",
+        "object": "this practice",
+        "evidence_span": "Adaptive learning reverses this practice"
+      },
+      {
+        "subject": "Adaptive learning",
+        "predicate": "attempts to improve",
+        "object": "the student experience",
+        "evidence_span": "Adaptive learning ... attempts to improve the student experience"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 128,
+      "candidatesTokenCount": 103,
+      "totalTokenCount": 231,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 128
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Adaptive learning\",\n    \"predicate\": \"reverses\",\n    \"object\": \"this practice\",\n    \"evidence_span\": \"Adaptive learning reverses this practice\"\n  },\n  {\n    \"subject\": \"Adaptive learning\",\n    \"predicate\": \"attempts to improve\",\n    \"object\": \"the student experience\",\n    \"evidence_span\": \"Adaptive learning ... attempts to improve the student experience\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-028",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "NB2Slides",
+        "predicate": "uses",
+        "object": "deep learning methods",
+        "evidence_span": "NB2Slides uses deep learning methods"
+      },
+      {
+        "subject": "NB2Slides",
+        "predicate": "uses",
+        "object": "example-based prompts",
+        "evidence_span": "NB2Slides uses ... example-based prompts"
+      },
+      {
+        "subject": "NB2Slides",
+        "predicate": "generate",
+        "object": "slides",
+        "evidence_span": "NB2Slides ... generate slides from computational notebooks"
+      },
+      {
+        "subject": "NB2Slides",
+        "predicate": "take",
+        "object": "users' input",
+        "evidence_span": "NB2Slides ... take users' input"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 154,
+      "candidatesTokenCount": 207,
+      "totalTokenCount": 361,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 154
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"NB2Slides\",\n    \"predicate\": \"uses\",\n    \"object\": \"deep learning methods\",\n    \"evidence_span\": \"NB2Slides uses deep learning methods\"\n  },\n  {\n    \"subject\": \"NB2Slides\",\n    \"predicate\": \"uses\",\n    \"object\": \"example-based prompts\",\n    \"evidence_span\": \"NB2Slides uses ... example-based prompts\"\n  },\n  {\n    \"subject\": \"NB2Slides\",\n    \"predicate\": \"generate\",\n    \"object\": \"slides\",\n    \"evidence_span\": \"NB2Slides ... generate slides from computational notebooks\"\n  },\n  {\n    \"subject\": \"NB2Slides\",\n    \"predicate\": \"take\",\n    \"object\": \"users' input\",\n    \"evidence_span\": \"NB2Slides ... take users' input\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-029",
+    "source_title": "Reconfigurable Intelligent Surface-assisted Classification of Modulations using Deep Learning",
+    "source_url": "http://arxiv.org/abs/2209.08388v1",
+    "source_text": "Reconfigurable intelligent surface technology enables the 5G to work on multistrand waveforms.",
+    "source_fingerprint": "8034876236bf6474607fe07f4bce37ae7962e8bf50baf6f99af75354553cb6fa",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Reconfigurable intelligent surface technology",
+        "predicate": "enables",
+        "object": "5G",
+        "evidence_span": "Reconfigurable intelligent surface technology enables the 5G"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 132,
+      "candidatesTokenCount": 58,
+      "totalTokenCount": 190,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 132
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Reconfigurable intelligent surface technology\",\n    \"predicate\": \"enables\",\n    \"object\": \"5G\",\n    \"evidence_span\": \"Reconfigurable intelligent surface technology enables the 5G\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-030",
+    "source_title": "Physicists, Non Physical Topics, and Interdisciplinarity",
+    "source_url": "http://arxiv.org/abs/2210.13254v1",
+    "source_text": "This assessment results from my forty year journey arguing and fighting to build sociophysics.",
+    "source_fingerprint": "d1c338a1fdc1594cfd9668eefbe0658bb1cd64ff77f895db6468b34de9a10d4b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "assessment",
+        "predicate": "results from",
+        "object": "forty year journey",
+        "evidence_span": "This assessment results from my forty year journey"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 131,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 185,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 131
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"assessment\",\n    \"predicate\": \"results from\",\n    \"object\": \"forty year journey\",\n    \"evidence_span\": \"This assessment results from my forty year journey\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-031",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "This technology",
+        "predicate": "offers",
+        "object": "machine learning",
+        "evidence_span": "This technology, which offers a broad range of methods such as machine learning"
+      },
+      {
+        "subject": "This technology",
+        "predicate": "offers",
+        "object": "artificial neural networks",
+        "evidence_span": "This technology, which offers a broad range of methods such as ... artificial neural networks"
+      },
+      {
+        "subject": "This technology",
+        "predicate": "offers",
+        "object": "natural language processing",
+        "evidence_span": "This technology, which offers a broad range of methods such as ... natural language processing"
+      },
+      {
+        "subject": "This technology",
+        "predicate": "offers",
+        "object": "deep learning",
+        "evidence_span": "This technology, which offers a broad range of methods such as ... deep learning"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 159,
+      "candidatesTokenCount": 230,
+      "totalTokenCount": 389,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 159
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"This technology\",\n    \"predicate\": \"offers\",\n    \"object\": \"machine learning\",\n    \"evidence_span\": \"This technology, which offers a broad range of methods such as machine learning\"\n  },\n  {\n    \"subject\": \"This technology\",\n    \"predicate\": \"offers\",\n    \"object\": \"artificial neural networks\",\n    \"evidence_span\": \"This technology, which offers a broad range of methods such as ... artificial neural networks\"\n  },\n  {\n    \"subject\": \"This technology\",\n    \"predicate\": \"offers\",\n    \"object\": \"natural language processing\",\n    \"evidence_span\": \"This technology, which offers a broad range of methods such as ... natural language processing\"\n  },\n  {\n    \"subject\": \"This technology\",\n    \"predicate\": \"offers\",\n    \"object\": \"deep learning\",\n    \"evidence_span\": \"This technology, which offers a broad range of methods such as ... deep learning\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-032",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_text": "In order to enable users to perform multiple types of AI-based log analysis tasks in a uniform manner, we introduce LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence.",
+    "source_fingerprint": "8162885f189b59ac0b1e737f8194a07b0f453c48f5808fbe62c6d6d50d888d5f",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "LogAI",
+        "predicate": "is",
+        "object": "a one-stop open source library for log analytics and intelligence",
+        "evidence_span": "LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 166,
+      "candidatesTokenCount": 81,
+      "totalTokenCount": 247,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 166
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"LogAI\",\n    \"predicate\": \"is\",\n    \"object\": \"a one-stop open source library for log analytics and intelligence\",\n    \"evidence_span\": \"LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-033",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_text": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk.",
+    "source_fingerprint": "b5576fbd203e978b64dd0c211844cb1f385273ce2128e418b705cffb2b10623d",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Cybersecurity planning",
+        "predicate": "supports",
+        "object": "selection of and implementation of security controls",
+        "evidence_span": "Cybersecurity planning supports the selection of and implementation of security controls"
+      },
+      {
+        "subject": "Cybersecurity planning",
+        "predicate": "manages",
+        "object": "risk",
+        "evidence_span": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 136,
+      "candidatesTokenCount": 124,
+      "totalTokenCount": 260,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 136
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Cybersecurity planning\",\n    \"predicate\": \"supports\",\n    \"object\": \"selection of and implementation of security controls\",\n    \"evidence_span\": \"Cybersecurity planning supports the selection of and implementation of security controls\"\n  },\n  {\n    \"subject\": \"Cybersecurity planning\",\n    \"predicate\": \"manages\",\n    \"object\": \"risk\",\n    \"evidence_span\": \"Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-034",
+    "source_title": "Towards Grammatical Tagging for the Legal Language of Cybersecurity",
+    "source_url": "http://arxiv.org/abs/2306.17042v1",
+    "source_text": "Recent legislation on cybersecurity obviously uses legal language in writing, thus inheriting all its interpretative complications due to the typical abundance of cases and sub-cases as well as to the general richness in detail.",
+    "source_fingerprint": "2b50ce6b71784103d78200e212bd212f28ec6f82dbd851940d474908d2242ca5",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Recent legislation on cybersecurity",
+        "predicate": "uses",
+        "object": "legal language",
+        "evidence_span": "Recent legislation on cybersecurity obviously uses legal language"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 154,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 208,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 154
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Recent legislation on cybersecurity\",\n    \"predicate\": \"uses\",\n    \"object\": \"legal language\",\n    \"evidence_span\": \"Recent legislation on cybersecurity obviously uses legal language\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-035",
+    "source_title": "Ensemble Learning based Anomaly Detection for IoT Cybersecurity via Bayesian Hyperparameters Sensitivity Analysis",
+    "source_url": "http://arxiv.org/abs/2307.10596v1",
+    "source_text": "IoT enables data aggregation and analysis on a large scale to improve life quality in many domains.",
+    "source_fingerprint": "ce7de20d2a3017da4b44a13c4eeb84f5c9d1d37e9bc3387b9cda73f5a412d582",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "IoT",
+        "predicate": "enables",
+        "object": "data aggregation and analysis",
+        "evidence_span": "IoT enables data aggregation and analysis"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 133,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 185,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 133
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"IoT\",\n    \"predicate\": \"enables\",\n    \"object\": \"data aggregation and analysis\",\n    \"evidence_span\": \"IoT enables data aggregation and analysis\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-036",
+    "source_title": "Protoplanetary Disk Chemistry",
+    "source_url": "http://arxiv.org/abs/2309.05685v1",
+    "source_text": "Disk chemistry also enables unique probes of disk structures and dynamics, including those directly linked to ongoing planet formation.",
+    "source_fingerprint": "b399cf8614c8d3fff2a9366cc174d91bb478e407c04707f547a9637ebb778aac",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "Disk chemistry",
+        "predicate": "enables",
+        "object": "unique probes of disk structures and dynamics",
+        "evidence_span": "Disk chemistry also enables unique probes of disk structures and dynamics"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 136,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 197,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 136
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"Disk chemistry\",\n    \"predicate\": \"enables\",\n    \"object\": \"unique probes of disk structures and dynamics\",\n    \"evidence_span\": \"Disk chemistry also enables unique probes of disk structures and dynamics\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-037",
+    "source_title": "Higher-Order Equivariant Neural Networks for Charge Density Prediction in Materials",
+    "source_url": "http://arxiv.org/abs/2312.05388v2",
+    "source_text": "ChargE3Net enables the learning of higher-order equivariant feature to achieve high predictive accuracy and model expressivity.",
+    "source_fingerprint": "d1c1f72f4565ec64ca3d06862dd219f9dfa159de79f24e8cf61f450465e4d9c5",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "ChargE3Net",
+        "predicate": "enables the learning of",
+        "object": "higher-order equivariant feature",
+        "evidence_span": "ChargE3Net enables the learning of higher-order equivariant feature"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 138,
+      "candidatesTokenCount": 66,
+      "totalTokenCount": 204,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 138
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"ChargE3Net\",\n    \"predicate\": \"enables the learning of\",\n    \"object\": \"higher-order equivariant feature\",\n    \"evidence_span\": \"ChargE3Net enables the learning of higher-order equivariant feature\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-038",
+    "source_title": "Learned 3D volumetric recovery of clouds and its uncertainty for climate analysis",
+    "source_url": "http://arxiv.org/abs/2403.05932v1",
+    "source_text": "ProbCT uses a neural-field representation, making essentially real-time inference.",
+    "source_fingerprint": "75b36109242532bae6b9cdc7c623dba8516c21b0f982cb9355a13dafc1809a20",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "ProbCT",
+        "predicate": "uses",
+        "object": "a neural-field representation",
+        "evidence_span": "ProbCT uses a neural-field representation"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 131,
+      "candidatesTokenCount": 55,
+      "totalTokenCount": 186,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 131
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"ProbCT\",\n    \"predicate\": \"uses\",\n    \"object\": \"a neural-field representation\",\n    \"evidence_span\": \"ProbCT uses a neural-field representation\"\n  }\n]"
+  },
+  {
+    "id": "arxiv-039",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_text": "In this article, we develop two methods to create entangled spin states corresponding to wave packets of composite particles in analog quantum simulators of Ising spin Hamiltonians.",
+    "source_fingerprint": "9acae8af459236a9886488b56e72e9bcae26247d419a1721f50e743dadeca89b",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "two methods",
+        "predicate": "create",
+        "object": "entangled spin states",
+        "evidence_span": "two methods to create entangled spin states"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 145,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 198,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 145
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"two methods\",\n    \"predicate\": \"create\",\n    \"object\": \"entangled spin states\",\n    \"evidence_span\": \"two methods to create entangled spin states\"\n  }\n]"
+  }
+]

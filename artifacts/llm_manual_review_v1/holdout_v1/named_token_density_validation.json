@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE_HUMAN_REVIEW",
+  "metric_source": "named_token_density_pre_registration.md",
+  "threshold": "named_token_count >= 2",
+  "candidate_count": 81,
+  "manual_accept_count": 37,
+  "manual_reject_count": 44,
+  "overall": {
+    "accept_mean": 1.5405405405405406,
+    "reject_mean": 0.7272727272727273,
+    "mean_gap_accept_minus_reject": 0.8132678132678134
+  },
+  "by_primary_group": {
+    "generic_property_likely": {
+      "accept_count": 21,
+      "reject_count": 15,
+      "accept_mean": 1.8095238095238095,
+      "reject_mean": 1.2666666666666666,
+      "mean_gap_accept_minus_reject": 0.5428571428571429
+    },
+    "clean_no_flag": {
+      "accept_count": 11,
+      "reject_count": 26,
+      "accept_mean": 1.3636363636363635,
+      "reject_mean": 0.38461538461538464,
+      "mean_gap_accept_minus_reject": 0.9790209790209791
+    }
+  },
+  "threshold_confusion_matrix": {
+    "true_positive": 15,
+    "false_positive": 7,
+    "false_negative": 22,
+    "true_negative": 37
+  },
+  "threshold_precision": 0.6818181818181818,
+  "threshold_recall": 0.40540540540540543,
+  "threshold_selection_rate": 0.2716049382716049,
+  "threshold_odds_ratio": 3.603896103896104,
+  "fisher_exact_one_sided_greater_p_value": 0.012628616679044252,
+  "verdict": "broader_named_token_signal_generalizes_as_an_auto_priority_signal_not_auto_admission"
+}

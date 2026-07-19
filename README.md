@@ -1,10 +1,15 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21323152-0b6fa4.svg)](https://doi.org/10.5281/zenodo.21323152)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-v3.0-164e78.svg)](docs/MicroWorld_Whitepaper_v3.0.pdf)
 
 # Microworld
 
 Experimental semantic AI runtime exploring explicit memory, deterministic
 reasoning, dialogue systems, and controlled language generation.
+
+Current research release: **v3.0** (20 July 2026). Read the
+[v3.0 whitepaper](docs/MicroWorld_Whitepaper_v3.0.pdf) or its
+[HTML source](docs/MicroWorld_Whitepaper_v3.0.html).
 
 ## What It Is
 
@@ -24,6 +29,15 @@ support is missing. Factual support stays separate from reasoning, dialogue,
 language style, community patterns, live search, and session context. A clearly
 creative request uses a separate labelled generation layer; it is not presented
 as factual support.
+
+> **Scale boundary for every result in this README and the whitepaper.** This
+> work demonstrates that the described architecture outperforms matched-scale
+> LLMs (0.5B-7B parameters) on the tested tasks at the current data scale
+> (~1,000 relations). This is a complete, validated result at this scale - not
+> an incomplete claim awaiting further testing. Whether this advantage
+> persists, narrows, or grows at significantly larger data scale is a separate,
+> open empirical question requiring its own dedicated future study - not a
+> prerequisite for the validity of the current result.
 
 ## Try It Locally
 
@@ -74,6 +88,77 @@ speech benchmark. The important new result is that the answer surface is now
 measured separately from factual coverage: speech can be tested, improved, and
 stress-tested without pretending that a phrase model is factual memory.
 
+## v3.0 Consolidated Findings
+
+The findings below are intentionally separated by evidence and confidence
+level. They are not summed into one aggregate score.
+
+### Core reasoning - proven at the stated scale
+
+The factual QA, multi-evidence, negative/audit, and paraphrase paths are
+validated by frozen held-out sets and regression checks. MicroWorld reaches
+1.00 on held-out explicit and implicit multi-evidence, and 1.00 on the shipped
+`heldout_v2` and `heldout_v3` paraphrase sets. Direct and Negative retain their
+dataset-specific labels in the scale-curve table; Negative remains 1.00 under
+regression. The exact historical and final values are preserved below.
+
+At approximately 1,000 relations, this establishes a complete advantage over
+the tested Qwen 0.5B-7B baselines on the stated tasks. A larger-data experiment
+would test scale dependence; it is not unfinished validation of this result.
+
+### Extended reasoning - built and confidence-separated
+
+- Constrained creative generation was built and A/B tested. Its build pilot
+  measured 1.00 inclusion and 0.00 hallucination proxy; the unified n=27 slice
+  measured 0.963 inclusion, 0.889 fidelity, and 0.037 hallucination proxy.
+  Fluency was not human-evaluated, and qualitative reading favours Qwen.
+- Narrow reflective inference admitted 11/11 defensible cases. It is labelled
+  construction-time speculation, not unrestricted causal world modelling.
+- Reflective extended produced 29/29 defensible weak co-attribution pairs under
+  the separate lower-confidence `speculative_extended` support kind.
+- Informed reflection and property transfer remain honest stops, respectively
+  below the predeclared classification gate and approximately 0/15 defensible
+  sampled transfers.
+
+The router-driven n=50 Qwen-3B comparison is reported in its own table below.
+Grounded, speculative, weak-association, constraint-proxy, and creative results
+remain distinct.
+
+### Non-monotonic Qwen scaling
+
+The frozen scale curve is non-monotonic by task: stronger adherence to the
+strict no-guess prompt improves Negative at 3B while rejecting more passive or
+surface-mismatched paraphrase and explicit multi-evidence prompts; implicit
+multi-evidence peaks at 3B and falls at 7B. This is a traced interaction among
+model scale, prompt, and dataset, not a claim that larger models are generally
+less capable. It confirms known inverse and U-shaped scaling phenomena rather
+than claiming their discovery ([Lin et al., 2021](https://arxiv.org/abs/2109.07958);
+[McKenzie et al., 2023](https://arxiv.org/abs/2306.09479);
+[Wei et al., 2023](https://openreview.net/forum?id=19sGqVUxQw)).
+
+### Data-scaling exploration - mixed, ongoing
+
+Three stateless extractors were tested on the same stored 15-sentence arXiv
+slice: `gpt-4o-mini` (33 triples), Gemini 2.5 Flash (36), and Gemini 3.1
+Flash-Lite (32). Their literal-support failure rates were 21.2%, 16.7%, and
+12.5%, all above the predeclared `<10%` gate; roughly 90% of candidates also
+had unsuitable endpoints. The unchanged precision gate quarantined every raw
+candidate.
+
+The deterministic node-quality filter retained zero of 101 candidates because
+the current serving index cannot resolve even clean new names. A subsequent
+entity-seeding pilot found 15 mechanically repeated literal surfaces but only
+3 legitimate systems (`AutoSlim`, `SciServer`, `REGAI`); 12/15 were noise, so
+the zero-false-positive gate failed and the lane stopped before build or
+integration. Retrospective review-priority rules H1/H2 reached 95.0% precision
+(19/20) together. An initial official-API attempt stopped on repeated timeouts;
+a later official acquisition produced a fresh 74-sentence, 81-candidate
+holdout. Applied unchanged before review, H1 and H2 each matched zero
+candidates, so prospective precision is undefined rather than low; complete
+human review is still pending. Their status is therefore **retrospective pass,
+prospective unconfirmed**: the null selection neither confirms nor refutes the
+retrospective 95.0%. Nothing was promoted to accepted or serving memory.
+
 ## Key Ideas
 
 - Local-first performance: indexed semantic-memory lookup and small
@@ -106,25 +191,35 @@ unknown or unsupported form     -> audit
 
 No answer should appear because a model "felt" that it was plausible.
 
-## Latest Performance and Reliability Snapshot
+## Performance and Reliability Snapshot
 
-The latest saved measurements are two complementary July 14 local studies: an
-open-book QA comparison over the same evidence spans and a persistent SQLite
-behavior-graph scaling run. They measure different workloads and should not be
-collapsed into one universal score.
+The v3.0 record combines the completed reasoning track with two complementary
+July 14 local studies: an open-book QA comparison over the same evidence spans
+and a persistent SQLite behavior-graph scaling run. They measure different
+workloads and are not collapsed into one universal score.
 
 | Workload | Measured result | What it establishes |
 |---|---|---|
 | Open-book direct relation QA | 93% accuracy; 14.3 ms p50 | Supported direct relations are fast and usually recovered. |
 | Open-book negative QA | 100% correct audit; 6.3 ms p50 | The factual path declines unsupported requested relations. |
 | Open-book paraphrase QA | 42% accuracy; 23.8 ms p50 | Superseded — this July 14 figure predates the predicate-resolution work; held-out paraphrase now measures 100%. See [Paraphrase: held-out confirmed](#paraphrase-held-out-confirmed-after-structural--semantic-fallback-work). |
-| Open-book multi-evidence QA | 0% accuracy; 31.9 ms p50 | All 50 cases failed target resolution before the behavior planner. |
+| Open-book multi-evidence QA | 0% accuracy; 31.9 ms p50 | Superseded historical run: all 50 cases failed target resolution before the behavior planner; frozen held-out implicit and explicit sets now measure 100%. |
 | Persistent graph, 1m relations | 2.65 ms p50; 3.11 ms p95 | The tested warm path is dominated by its local frontier, while sidecar/build scale with graph size. |
 
-### Known failure modes
+### Known failure modes and resolved historical failures
 
-- Multi-evidence QA (0/50): failures occur at `<stage — fill in from trace analysis>` before reaching the executor. Root cause not yet isolated to a single pipeline stage — TODO before next benchmark run.
-- ~~Paraphrase QA (42%): current predicate mapping and entity resolution do not generalize beyond direct-relation phrasing.~~ **Resolved on held-out material.** Predicate mapping now generalizes to passives, nominalizations, and verbless forms; held-out paraphrase measures 100% / 100% / 88% across three sets. The 42% row above is a dated committed snapshot of this workload and has not been re-published.
+- ~~Multi-evidence QA (0/50): target resolution failed before the behavior
+  planner.~~ **Resolved and held-out confirmed.** Frozen implicit and explicit
+  sets now measure 100%; the dated row remains visible to preserve the research
+  history.
+- ~~Paraphrase QA (42%): predicate mapping and entity resolution did not
+  generalize beyond direct-relation phrasing.~~ **Resolved on held-out
+  material.** Predicate mapping now generalizes to passives, nominalizations,
+  and verbless forms; held-out paraphrase measures 100% / 100% / 88% across
+  three sets. The 42% row above is a dated committed snapshot.
+- Current failures remain bounded schema/language coverage, incomplete entity
+  identity, weak open-domain/live-search performance, no broad human
+  evaluation, and the failed extraction/entity-seeding admission gates.
 
 The open-book run used 250 fixed cases and five warmed repeats per case. Its
 failure analysis is part of the result: it exposed parser/resolver coverage
@@ -255,7 +350,11 @@ collapse on passive-voice reformulations whose predicates differed from the
 surface wording in the evidence. Implicit multi-evidence peaked at 3B and then
 declined at 7B. This is an observed interaction among model scale, the strict
 abstention prompt, and these frozen datasets—not a general claim that larger
-models are less capable.
+models are less capable. The result is confirmatory evidence of known inverse
+and U-shaped scaling behavior, not a novel-discovery claim; see
+[TruthfulQA](https://arxiv.org/abs/2109.07958),
+[Inverse Scaling](https://arxiv.org/abs/2306.09479), and
+[Inverse Scaling Can Become U-Shaped](https://openreview.net/forum?id=19sGqVUxQw).
 
 MicroWorld's negative detection ceiling (1.00) was already reached before this
 comparison began — apparent gap closure with Qwen at scale reflects Qwen
@@ -750,10 +849,11 @@ branch label. Qwen used `mlx-community/Qwen2.5-3B-Instruct-4bit` at temperature
 On this narrow, 50-case matched-evidence comparison, MicroWorld leads on QA
 accuracy and constraint discipline; Qwen-3B is equally safe on reflective
 refusal but does not cover two admitted speculative inferences that MicroWorld
-handles defensibly. This is not a general claim that the architecture
-outperforms LLMs — it is evidence at this specific scale, on this specific
-evidence set. The `IoT` entity-recognition routing gap is a known open item and
-is included, not excluded, in the constrained metrics.
+handles defensibly. Together with the frozen 0.5B-7B core comparison, this is a
+complete advantage claim at approximately 1,000 relations on the tested tasks
+and evidence set. It is not a claim about frontier models, open-domain breadth,
+or fluency. The `IoT` entity-recognition routing gap is a known open item and is
+included, not excluded, in the constrained metrics.
 
 Focused speech/reasoning benchmark:
 
@@ -764,6 +864,24 @@ python3 -m worldpgt.experiments.benchmark_speech_quality_v1 --suite stress
 The expanded runner list and validation notes are in
 [docs/benchmarks.md](docs/benchmarks.md) and
 [docs/knowledge_pump.md](docs/knowledge_pump.md).
+
+## Relationship to Adjacent Work
+
+A bounded landscape search found partial overlaps, but no full match combining
+the complete memory, policy, planning, dialogue, rendering, acquisition, and
+branch-confidence architecture. Absence from that search is not proof that no
+such system exists, and these works are not treated as competitors that the
+repository has benchmarked against.
+
+| Work | Overlap | Honest relationship |
+|---|---|---|
+| [Explicit Memory Tracker](https://aclanthology.org/2020.acl-main.88/) | partial | ShARC condition tracking and clarification; not a durable typed-support runtime. |
+| [MetaQNL / MetaInduce](https://openreview.net/forum?id=gwRwHUZUgz) | partial | quasi-natural symbolic rules and checkable proofs; not the full memory-policy-dialogue-rendering stack. |
+| [RuleTaker](https://arxiv.org/abs/2002.05867) | benchmark adjacency | transformer reasoning over explicit language rules; a soft reasoner, not the same runtime contract. |
+| [CLUTRR](https://arxiv.org/abs/1908.06177) | benchmark adjacency | systematic relational generalization on held-out rule combinations. |
+| [RE-IMAGINE](https://arxiv.org/abs/2506.15455) | methodology partial | symbolic mutation of reasoning problems across a hierarchy; not a persistent assistant architecture. |
+| [Attempto Controlled English](https://doi.org/10.1007/11526988_6) | language-interface partial | controlled English mapped to formal semantics; not the complete trust-layered system. |
+| [TruthfulQA](https://arxiv.org/abs/2109.07958) and inverse-scaling work | phenomenon level | prior evidence that task quality need not improve monotonically with scale. |
 
 ## Documentation
 
@@ -781,12 +899,13 @@ The expanded runner list and validation notes are in
 
 ## Status
 
-Experimental and local. The active path is a bounded semantic-memory runtime
+**v3.0 - experimental and local.** The active path is a bounded semantic-memory runtime
 with deterministic planning, explicit support checks, dialogue state, and
 controlled rendering. It is useful where the current artifacts contain support;
 outside that boundary it should audit or label volatile sources. The research
-target is inspectability of memory, trust, policy, dialogue, and rendering, not
-open-ended language-model generality.
+result is complete on the tested tasks at approximately 1,000 relations; larger
+data scale is a separate open study. The target is inspectability of memory,
+trust, policy, dialogue, and rendering, not open-ended language-model generality.
 
 ## Citation
 

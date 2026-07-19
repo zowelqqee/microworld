@@ -1,0 +1,1176 @@
+[
+  {
+    "candidate_id": "arxiv-000:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-001:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-002:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-003:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-003:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-003:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-004:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-007:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-009:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-009:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-010:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-012:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-012:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-013:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-014:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-014:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-015:0",
+    "primary_review_group": "attachment_shape_flag",
+    "group_labels": [
+      "attachment_shape_flag"
+    ],
+    "grouping_reasons": [
+      "source sentence contains a colon followed by a comma list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-016:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-016:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-016:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:3",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-019:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-019:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-021:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-021:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-023:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-024:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-024:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-026:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-026:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-027:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-027:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-028:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-028:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-030:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-031:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:1",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:2",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:3",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:4",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-034:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-036:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-036:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-037:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-038:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-040:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-042:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-042:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-043:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-043:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-043:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-045:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-045:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-046:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-046:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:3",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-049:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-050:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-051:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-053:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:1",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:2",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:3",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-054:0",
+    "primary_review_group": "temporal_referent_likely",
+    "group_labels": [
+      "temporal_referent_likely"
+    ],
+    "grouping_reasons": [
+      "date/time reference appears without a clear capitalized subject anchor"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:2",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-057:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-057:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-058:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-059:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-060:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-062:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-063:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-064:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-066:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-067:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-069:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-071:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-072:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-073:0",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:1",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-074:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-075:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-076:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-077:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-077:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-078:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-078:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-080:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-081:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-082:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-084:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-084:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-085:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-085:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-086:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-086:1",
+    "primary_review_group": "anaphora_likely",
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-087:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-088:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-090:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-090:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-091:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-092:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-093:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-094:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-095:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-095:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-096:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-097:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-099:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-100:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-101:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-101:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-102:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-103:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-104:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-104:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-105:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-107:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-109:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-110:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-110:1",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-111:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-111:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-112:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-113:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-115:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-115:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-116:0",
+    "primary_review_group": "generic_property_likely",
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-117:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:2",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:3",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-119:0",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-119:1",
+    "primary_review_group": "clean_no_flag",
+    "group_labels": [],
+    "grouping_reasons": []
+  }
+]

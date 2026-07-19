@@ -1,0 +1,42 @@
+{
+  "review_source": "user-supplied pasted manual review and attached generic-property continuation",
+  "reviewed_at": "2026-07-20",
+  "review_scope": "all 81 node-quality-triaged holdout candidates; no automatic admission",
+  "encoding": {
+    "universe": "every candidate_id in manual_review_candidates.json",
+    "default": {
+      "literal_support": "yes",
+      "clean_entities": "no",
+      "new_predicate": "no",
+      "verdict": "REJECT"
+    },
+    "overrides": "Lists below are exhaustive overrides. Reviewer notes are retained in the supplied review tables."
+  },
+  "accepted_candidate_ids": [
+    "arxiv-000:0", "arxiv-000:1", "arxiv-004:1", "arxiv-004:2", "arxiv-004:3",
+    "arxiv-007:0", "arxiv-007:1", "arxiv-009:0", "arxiv-013:0", "arxiv-014:0",
+    "arxiv-014:1", "arxiv-015:1", "arxiv-018:0", "arxiv-021:0", "arxiv-025:1",
+    "arxiv-026:0", "arxiv-029:0", "arxiv-030:1", "arxiv-031:0", "arxiv-031:1",
+    "arxiv-032:0", "arxiv-032:1", "arxiv-037:0", "arxiv-037:1", "arxiv-037:2",
+    "arxiv-041:0", "arxiv-050:0", "arxiv-051:1", "arxiv-054:0", "arxiv-056:0",
+    "arxiv-056:1", "arxiv-056:2", "arxiv-062:0", "arxiv-062:1", "arxiv-068:0",
+    "arxiv-069:0", "arxiv-069:1"
+  ],
+  "literal_support_no_candidate_ids": [
+    "arxiv-001:0", "arxiv-004:0", "arxiv-006:0", "arxiv-008:0", "arxiv-008:1",
+    "arxiv-011:0", "arxiv-018:1", "arxiv-034:0", "arxiv-034:1", "arxiv-040:0",
+    "arxiv-052:0", "arxiv-052:1", "arxiv-061:0", "arxiv-063:0", "arxiv-070:2",
+    "arxiv-073:0"
+  ],
+  "clean_entities_yes_candidate_ids": [
+    "arxiv-000:0", "arxiv-000:1", "arxiv-004:1", "arxiv-004:2", "arxiv-004:3",
+    "arxiv-007:0", "arxiv-007:1", "arxiv-008:0", "arxiv-008:1", "arxiv-009:0",
+    "arxiv-013:0", "arxiv-014:0", "arxiv-014:1", "arxiv-015:1", "arxiv-018:0",
+    "arxiv-021:0", "arxiv-025:1", "arxiv-026:0", "arxiv-029:0", "arxiv-030:1",
+    "arxiv-031:0", "arxiv-031:1", "arxiv-032:0", "arxiv-032:1", "arxiv-037:0",
+    "arxiv-037:1", "arxiv-037:2", "arxiv-041:0", "arxiv-050:0", "arxiv-051:1",
+    "arxiv-054:0", "arxiv-056:0", "arxiv-056:1", "arxiv-056:2", "arxiv-062:0",
+    "arxiv-062:1", "arxiv-068:0", "arxiv-069:0", "arxiv-069:1"
+  ],
+  "new_predicate_yes_candidate_ids": ["arxiv-000:0"]
+}

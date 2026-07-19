@@ -1,0 +1,4136 @@
+[
+  {
+    "candidate_id": "arxiv-000:0",
+    "batch_id": "arxiv-000",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "`What is a Thing?': Topos Theory in the Foundations of Physics",
+    "source_url": "http://arxiv.org/abs/0803.0417v1",
+    "source_fingerprint": "b06f4071db54b2c1b8d3fab0bba312bef80206a4f85da01c5d7cd98a9b1f06b2",
+    "source_text": "In doing so we provide a new answer to Heidegger's timeless question ``What is a thing?''.",
+    "subject": "Heidegger",
+    "predicate": "asked",
+    "object": "What is a thing?",
+    "evidence_span": "Heidegger's timeless question ``What is a thing?''",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-001:0",
+    "batch_id": "arxiv-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "`What is a Thing?': Topos Theory in the Foundations of Physics",
+    "source_url": "http://arxiv.org/abs/0803.0417v1",
+    "source_fingerprint": "19bc1670a6ca951a705ebbf89948607214ed1848eb958275fd848e167d1ebf91",
+    "source_text": "Classical physics uses the topos of sets.",
+    "subject": "Classical physics",
+    "predicate": "uses",
+    "object": "the topos of sets",
+    "evidence_span": "Classical physics uses the topos of sets",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-002:0",
+    "batch_id": "arxiv-002",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Dynamic Multimedia Content Retrieval System in Distributed Environment",
+    "source_url": "http://arxiv.org/abs/0909.0118v1",
+    "source_fingerprint": "aa7c1b079baff47faf59715137e5c5e20905f2ddd434a4b5d92dcbcd2780656c",
+    "source_text": "WiCoM enables remote management of web resources.",
+    "subject": "WiCoM",
+    "predicate": "enables",
+    "object": "remote management of web resources",
+    "evidence_span": "WiCoM enables remote management of web resources",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-003:0",
+    "batch_id": "arxiv-003",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_fingerprint": "71bc38d86781a08c013218dd86c83dab3b816d76c65fa8bf81ab1c15abfb3c5d",
+    "source_text": "One implementation uses surface codes created by forming defects in a highly-entangled cluster state.",
+    "subject": "One implementation",
+    "predicate": "uses",
+    "object": "surface codes",
+    "evidence_span": "One implementation uses surface codes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-003:1",
+    "batch_id": "arxiv-003",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_fingerprint": "71bc38d86781a08c013218dd86c83dab3b816d76c65fa8bf81ab1c15abfb3c5d",
+    "source_text": "One implementation uses surface codes created by forming defects in a highly-entangled cluster state.",
+    "subject": "surface codes",
+    "predicate": "created by",
+    "object": "forming defects",
+    "evidence_span": "surface codes created by forming defects",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-003:2",
+    "batch_id": "arxiv-003",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_fingerprint": "71bc38d86781a08c013218dd86c83dab3b816d76c65fa8bf81ab1c15abfb3c5d",
+    "source_text": "One implementation uses surface codes created by forming defects in a highly-entangled cluster state.",
+    "subject": "defects",
+    "predicate": "in",
+    "object": "a highly-entangled cluster state",
+    "evidence_span": "defects in a highly-entangled cluster state",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-004:0",
+    "batch_id": "arxiv-004",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_fingerprint": "1cde12979fb6f745d30ccf4a04c2216abb299f3a5c1a7f09e63aff96199d6327",
+    "source_text": "In this paper we apply the category-theoretic work of Abramsky and Coecke to the topological cluster-state model of quantum computing to give a high-level graphical language that enables direct translation between quantum processes and physical patterns of measurement in a computer - a \"compiler language\".",
+    "subject": "category-theoretic work of Abramsky and Coecke",
+    "predicate": "is applied to",
+    "object": "topological cluster-state model of quantum computing",
+    "evidence_span": "we apply the category-theoretic work of Abramsky and Coecke to the topological cluster-state model of quantum computing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:0",
+    "batch_id": "arxiv-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Low-energy break in the spectrum of Galactic cosmic rays",
+    "source_url": "http://arxiv.org/abs/1112.5541v1",
+    "source_fingerprint": "f9eb02e17af4f5df0648f022c390d979b256b48654183096355009de27e0d6a3",
+    "source_text": "Detection of a low-energy break enables a measurement of GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3.",
+    "subject": "GCR energy density",
+    "predicate": "is",
+    "object": "0.9+/-0.3 eV/cm3",
+    "evidence_span": "GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-007:0",
+    "batch_id": "arxiv-007",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "POMDPs Make Better Hackers: Accounting for Uncertainty in Penetration Testing",
+    "source_url": "http://arxiv.org/abs/1307.8182v1",
+    "source_fingerprint": "94eaccd3a71dedc96cc2bebe2512a6f2b6de780d968550adc9bceec8a958372a",
+    "source_text": "Doing so automatically allows for regular and systematic testing.",
+    "subject": "Doing so",
+    "predicate": "allows for",
+    "object": "regular and systematic testing",
+    "evidence_span": "Doing so automatically allows for regular and systematic testing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-009:0",
+    "batch_id": "arxiv-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Science with KRAKENS",
+    "source_url": "http://arxiv.org/abs/1506.03458v1",
+    "source_fingerprint": "8faace6a760cbbdbdfd2c61d032b8766a84cd8e47ff5e8c114179f6c2550478d",
+    "source_text": "KRAKENS uses a unique detector technology (MKIDs) to enable groundbreaking science across a wide range of astrophysical research topics.",
+    "subject": "KRAKENS",
+    "predicate": "uses",
+    "object": "detector technology",
+    "evidence_span": "KRAKENS uses a unique detector technology",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-009:1",
+    "batch_id": "arxiv-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Science with KRAKENS",
+    "source_url": "http://arxiv.org/abs/1506.03458v1",
+    "source_fingerprint": "8faace6a760cbbdbdfd2c61d032b8766a84cd8e47ff5e8c114179f6c2550478d",
+    "source_text": "KRAKENS uses a unique detector technology (MKIDs) to enable groundbreaking science across a wide range of astrophysical research topics.",
+    "subject": "detector technology",
+    "predicate": "is",
+    "object": "MKIDs",
+    "evidence_span": "detector technology (MKIDs)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-010:0",
+    "batch_id": "arxiv-010",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_fingerprint": "47c6d269febd2766904116836d92d18a7bfc06accf9eb2631ca562f3c8c70f69",
+    "source_text": "Declarative modeling uses symbolic expressions to represent models.",
+    "subject": "Declarative modeling",
+    "predicate": "uses",
+    "object": "symbolic expressions",
+    "evidence_span": "Declarative modeling uses symbolic expressions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-012:0",
+    "batch_id": "arxiv-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_fingerprint": "1cd7aa5bb6be60ce422cc8ab208c09b6a3d29b485bf78857bdbd6495c3d558e2",
+    "source_text": "MetaChem supports different levels of description, and has a formal description; we illustrate these using StringCatChem, a toy artificial chemistry.",
+    "subject": "MetaChem",
+    "predicate": "supports",
+    "object": "different levels of description",
+    "evidence_span": "MetaChem supports different levels of description",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-012:1",
+    "batch_id": "arxiv-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_fingerprint": "1cd7aa5bb6be60ce422cc8ab208c09b6a3d29b485bf78857bdbd6495c3d558e2",
+    "source_text": "MetaChem supports different levels of description, and has a formal description; we illustrate these using StringCatChem, a toy artificial chemistry.",
+    "subject": "MetaChem",
+    "predicate": "has",
+    "object": "a formal description",
+    "evidence_span": "MetaChem ... has a formal description",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-013:0",
+    "batch_id": "arxiv-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_fingerprint": "95c057b9bf62a71096fd4adcac5ab067c4608e39fa15522fe5e866d395abdbaf",
+    "source_text": "MetaChem provides a route to standardisation, reuse, and composition of Artificial Chemistries and their tools.",
+    "subject": "MetaChem",
+    "predicate": "provides",
+    "object": "a route to standardisation, reuse, and composition of Artificial Chemistries and their tools",
+    "evidence_span": "MetaChem provides a route to standardisation, reuse, and composition of Artificial Chemistries and their tools.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-014:0",
+    "batch_id": "arxiv-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_fingerprint": "4ce218cecfabaafa152f1199546a09a969cb3feb52f18b86c6c69b72a1f78224",
+    "source_text": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources.",
+    "subject": "AIBC",
+    "predicate": "is",
+    "object": "Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem",
+    "evidence_span": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-014:1",
+    "batch_id": "arxiv-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_fingerprint": "4ce218cecfabaafa152f1199546a09a969cb3feb52f18b86c6c69b72a1f78224",
+    "source_text": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources.",
+    "subject": "AIBC",
+    "predicate": "allows",
+    "object": "system-wide low-cost sharing of computing and storage resources",
+    "evidence_span": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-015:0",
+    "batch_id": "arxiv-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_fingerprint": "52734797196fd893b293170dff807c960666d77c4373e002f36c4274dfa03f8c",
+    "source_text": "The AIBC consists of four layers: a fundamental layer, a resource layer, an application layer, and an ecosystem layer.",
+    "subject": "AIBC",
+    "predicate": "consists of",
+    "object": "four layers",
+    "evidence_span": "The AIBC consists of four layers",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "attachment_shape_flag"
+    ],
+    "primary_review_group": "attachment_shape_flag",
+    "grouping_reasons": [
+      "source sentence contains a colon followed by a comma list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-016:0",
+    "batch_id": "arxiv-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "00ac548f4d001b117dd3525afdfe414c3a9b252f1eb593d4309917d6bba09944",
+    "source_text": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance.",
+    "subject": "A research group",
+    "predicate": "can set up",
+    "object": "its own instance of MatD3",
+    "evidence_span": "A research group can set up its own instance of MatD3",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-016:1",
+    "batch_id": "arxiv-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "00ac548f4d001b117dd3525afdfe414c3a9b252f1eb593d4309917d6bba09944",
+    "source_text": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance.",
+    "subject": "A research group",
+    "predicate": "can publish",
+    "object": "scientific results",
+    "evidence_span": "A research group can set up its own instance of MatD3 and publish scientific results",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-016:2",
+    "batch_id": "arxiv-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_fingerprint": "00ac548f4d001b117dd3525afdfe414c3a9b252f1eb593d4309917d6bba09944",
+    "source_text": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance.",
+    "subject": "A research group",
+    "predicate": "can use",
+    "object": "an existing online MatD3 instance",
+    "evidence_span": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:0",
+    "batch_id": "arxiv-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "subject": "SciServer",
+    "predicate": "builds upon",
+    "object": "SkyServer",
+    "evidence_span": "SciServer builds upon and extends the SkyServer",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:1",
+    "batch_id": "arxiv-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "subject": "SciServer",
+    "predicate": "extends",
+    "object": "SkyServer",
+    "evidence_span": "SciServer builds upon and extends the SkyServer",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:2",
+    "batch_id": "arxiv-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "subject": "SkyServer",
+    "predicate": "introduced",
+    "object": "SQL",
+    "evidence_span": "SkyServer system of server-side tools that introduced the astronomical community to SQL",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-018:3",
+    "batch_id": "arxiv-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "subject": "SkyServer",
+    "predicate": "has been serving",
+    "object": "Sloan Digital Sky Survey catalog data",
+    "evidence_span": "SkyServer system of server-side tools that... has been serving the Sloan Digital Sky Survey catalog data to the public",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-019:0",
+    "batch_id": "arxiv-019",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "e6fdfc4291d768041d07040fbea8d8cf156f3f3fafbb8c7770a2bd638d1f59a1",
+    "source_text": "SciServer uses a Docker/VM based architecture to provide interactive and batch mode server-side analysis with scripting languages like Python and R in various environments including Jupyter (notebooks), RStudio and command-line in addition to traditional SQL-based data analysis.",
+    "subject": "SciServer",
+    "predicate": "uses",
+    "object": "Docker/VM based architecture",
+    "evidence_span": "SciServer uses a Docker/VM based architecture",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-019:1",
+    "batch_id": "arxiv-019",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_fingerprint": "e6fdfc4291d768041d07040fbea8d8cf156f3f3fafbb8c7770a2bd638d1f59a1",
+    "source_text": "SciServer uses a Docker/VM based architecture to provide interactive and batch mode server-side analysis with scripting languages like Python and R in various environments including Jupyter (notebooks), RStudio and command-line in addition to traditional SQL-based data analysis.",
+    "subject": "SciServer",
+    "predicate": "provides",
+    "object": "interactive and batch mode server-side analysis",
+    "evidence_span": "SciServer uses a Docker/VM based architecture to provide interactive and batch mode server-side analysis",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-021:0",
+    "batch_id": "arxiv-021",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "f97b7e8b171323044341776a6297269fedba9c19fa831c5bdda5f1dc2d3e0b69",
+    "source_text": "HotFuzz uses micro-fuzzing, a genetic algorithm that evolves arbitrary Java objects in order to trigger the worst-case performance for a method under test.",
+    "subject": "HotFuzz",
+    "predicate": "uses",
+    "object": "micro-fuzzing",
+    "evidence_span": "HotFuzz uses micro-fuzzing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-021:1",
+    "batch_id": "arxiv-021",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "f97b7e8b171323044341776a6297269fedba9c19fa831c5bdda5f1dc2d3e0b69",
+    "source_text": "HotFuzz uses micro-fuzzing, a genetic algorithm that evolves arbitrary Java objects in order to trigger the worst-case performance for a method under test.",
+    "subject": "micro-fuzzing",
+    "predicate": "is",
+    "object": "a genetic algorithm",
+    "evidence_span": "micro-fuzzing, a genetic algorithm",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:0",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "ff7405637fca6d841b5bd9ce33c80459247761314aeaa2ad561992966ab131b9",
+    "source_text": "SUMER uses techniques from semi-supervised learning and noise remediation to iteratively retrain a deployed model using intelligently-chosen predictions from the model as the labels for new training iterations.",
+    "subject": "SUMER",
+    "predicate": "uses",
+    "object": "techniques from semi-supervised learning",
+    "evidence_span": "SUMER uses techniques from semi-supervised learning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-023:1",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "ff7405637fca6d841b5bd9ce33c80459247761314aeaa2ad561992966ab131b9",
+    "source_text": "SUMER uses techniques from semi-supervised learning and noise remediation to iteratively retrain a deployed model using intelligently-chosen predictions from the model as the labels for new training iterations.",
+    "subject": "SUMER",
+    "predicate": "uses",
+    "object": "noise remediation",
+    "evidence_span": "SUMER uses techniques from semi-supervised learning and noise remediation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-024:0",
+    "batch_id": "arxiv-024",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_fingerprint": "4903c063277262bd92b2659b4509e7d693ee4cf938441f304f0c412c519fadea",
+    "source_text": "Traditionally, cybersecurity experts assess and improve a company's capabilities.",
+    "subject": "cybersecurity experts",
+    "predicate": "assess",
+    "object": "a company's capabilities",
+    "evidence_span": "cybersecurity experts assess and improve a company's capabilities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-024:1",
+    "batch_id": "arxiv-024",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_fingerprint": "4903c063277262bd92b2659b4509e7d693ee4cf938441f304f0c412c519fadea",
+    "source_text": "Traditionally, cybersecurity experts assess and improve a company's capabilities.",
+    "subject": "cybersecurity experts",
+    "predicate": "improve",
+    "object": "a company's capabilities",
+    "evidence_span": "cybersecurity experts assess and improve a company's capabilities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:0",
+    "batch_id": "arxiv-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_fingerprint": "462bff6959602203b230dc9f7ebf27a05c22ff27a9ff561e7254cfda47389b02",
+    "source_text": "CYSEC uses assessment questions and recommendations to communicate cybersecurity knowledge to the end-user SMBs and encourage self-motivated change.",
+    "subject": "CYSEC",
+    "predicate": "uses",
+    "object": "assessment questions",
+    "evidence_span": "CYSEC uses assessment questions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:1",
+    "batch_id": "arxiv-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_fingerprint": "462bff6959602203b230dc9f7ebf27a05c22ff27a9ff561e7254cfda47389b02",
+    "source_text": "CYSEC uses assessment questions and recommendations to communicate cybersecurity knowledge to the end-user SMBs and encourage self-motivated change.",
+    "subject": "CYSEC",
+    "predicate": "uses",
+    "object": "recommendations",
+    "evidence_span": "CYSEC uses assessment questions and recommendations",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-025:2",
+    "batch_id": "arxiv-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_fingerprint": "462bff6959602203b230dc9f7ebf27a05c22ff27a9ff561e7254cfda47389b02",
+    "source_text": "CYSEC uses assessment questions and recommendations to communicate cybersecurity knowledge to the end-user SMBs and encourage self-motivated change.",
+    "subject": "CYSEC",
+    "predicate": "communicate",
+    "object": "cybersecurity knowledge",
+    "evidence_span": "CYSEC uses assessment questions and recommendations to communicate cybersecurity knowledge",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-026:0",
+    "batch_id": "arxiv-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum steering with vector vortex photon states with the detection loophole closed",
+    "source_url": "http://arxiv.org/abs/2009.03918v2",
+    "source_fingerprint": "9c1e0e99482a17d43da64292f6ee683d902c79c015bfd64b09e5409c36f58bd7",
+    "source_text": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics.",
+    "subject": "Violating a nonlocality inequality",
+    "predicate": "enables",
+    "object": "the most powerful remote quantum information tasks",
+    "evidence_span": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-026:1",
+    "batch_id": "arxiv-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum steering with vector vortex photon states with the detection loophole closed",
+    "source_url": "http://arxiv.org/abs/2009.03918v2",
+    "source_fingerprint": "9c1e0e99482a17d43da64292f6ee683d902c79c015bfd64b09e5409c36f58bd7",
+    "source_text": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics.",
+    "subject": "Violating a nonlocality inequality",
+    "predicate": "enables",
+    "object": "fundamental tests of quantum physics",
+    "evidence_span": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-027:0",
+    "batch_id": "arxiv-027",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Phase A Science Case for MAVIS -- The Multi-conjugate Adaptive-optics Visible Imager-Spectrograph for the VLT Adaptive Optics Facility",
+    "source_url": "http://arxiv.org/abs/2009.09242v2",
+    "source_fingerprint": "7321cb4fd55ed5483f7ed5f744c24771095970c3e9cce4f3ef040cae42bb5a0b",
+    "source_text": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10% (goal >15%) across a relatively large (30 arc second) science field.",
+    "subject": "MAVIS",
+    "predicate": "uses",
+    "object": "two deformable mirrors",
+    "evidence_span": "MAVIS uses two deformable mirrors",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-027:1",
+    "batch_id": "arxiv-027",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Phase A Science Case for MAVIS -- The Multi-conjugate Adaptive-optics Visible Imager-Spectrograph for the VLT Adaptive Optics Facility",
+    "source_url": "http://arxiv.org/abs/2009.09242v2",
+    "source_fingerprint": "7321cb4fd55ed5483f7ed5f744c24771095970c3e9cce4f3ef040cae42bb5a0b",
+    "source_text": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10% (goal >15%) across a relatively large (30 arc second) science field.",
+    "subject": "MAVIS",
+    "predicate": "providing",
+    "object": "a mean V-band Strehl ratio of >10%",
+    "evidence_span": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10%",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-028:0",
+    "batch_id": "arxiv-028",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_fingerprint": "950cf05960d743d8f078c8cbaf9d8aa1a9635ae8732fc4ac9f392d1bef407c09",
+    "source_text": "Using light for communication enables high fan-out as well as low-latency signaling across large systems with no traffic-dependent bottlenecks.",
+    "subject": "light",
+    "predicate": "enables",
+    "object": "high fan-out",
+    "evidence_span": "light for communication enables high fan-out",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-028:1",
+    "batch_id": "arxiv-028",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_fingerprint": "950cf05960d743d8f078c8cbaf9d8aa1a9635ae8732fc4ac9f392d1bef407c09",
+    "source_text": "Using light for communication enables high fan-out as well as low-latency signaling across large systems with no traffic-dependent bottlenecks.",
+    "subject": "light",
+    "predicate": "enables",
+    "object": "low-latency signaling",
+    "evidence_span": "light for communication enables high fan-out as well as low-latency signaling",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-030:0",
+    "batch_id": "arxiv-030",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Evaluating the Effect of Activity Based Method of Teaching Mathematics on Nigerian Secondary School Students Achievement in Mathematics",
+    "source_url": "http://arxiv.org/abs/2011.10785v1",
+    "source_fingerprint": "9b33a58ecdb2731bdb9b06bc000b9cd5f739f4fb8c632c7c1fdb7f96ce36c26b",
+    "source_text": "A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized, hence the need to improve teaching methods for solving the problem of poor performance in the subject.",
+    "subject": "shortfall in the knowledge of the students",
+    "predicate": "means",
+    "object": "the goal may not be realized",
+    "evidence_span": "A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-031:0",
+    "batch_id": "arxiv-031",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Evaluating the Effect of Activity Based Method of Teaching Mathematics on Nigerian Secondary School Students Achievement in Mathematics",
+    "source_url": "http://arxiv.org/abs/2011.10785v1",
+    "source_fingerprint": "a073472cfc9dc2fdacf94490c165df44eb67e8fe11204b0ece0863ad9e288f36",
+    "source_text": "The paper recommends among others that secondary school Mathematics teachers should be trained and retrained to update their knowledge in the use of activity-based teaching for making the teaching and learning of Mathematics more interesting and rewarding.",
+    "subject": "secondary school Mathematics teachers",
+    "predicate": "should be trained and retrained to update",
+    "object": "their knowledge",
+    "evidence_span": "secondary school Mathematics teachers should be trained and retrained to update their knowledge",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:0",
+    "batch_id": "arxiv-033",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "subject": "It",
+    "predicate": "includes",
+    "object": "brain-computer interfaces",
+    "evidence_span": "It includes, or significantly overlaps with, brain-computer interfaces",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:1",
+    "batch_id": "arxiv-033",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "subject": "It",
+    "predicate": "includes",
+    "object": "affective computing",
+    "evidence_span": "It includes, or significantly overlaps with, affective computing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:2",
+    "batch_id": "arxiv-033",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "subject": "It",
+    "predicate": "includes",
+    "object": "adaptive automation",
+    "evidence_span": "It includes, or significantly overlaps with, adaptive automation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:3",
+    "batch_id": "arxiv-033",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "subject": "It",
+    "predicate": "includes",
+    "object": "health informatics",
+    "evidence_span": "It includes, or significantly overlaps with, health informatics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-033:4",
+    "batch_id": "arxiv-033",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "subject": "It",
+    "predicate": "includes",
+    "object": "physiological signal based biometrics",
+    "evidence_span": "It includes, or significantly overlaps with, physiological signal based biometrics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-034:0",
+    "batch_id": "arxiv-034",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Climate Change Valuation Adjustment (CCVA) using parameterized climate change impacts",
+    "source_url": "http://arxiv.org/abs/2102.10691v3",
+    "source_fingerprint": "97f6db949eb6d0c00f5e6f1de5c4f686f5b4d9e2d97fab2852687b45b781b562",
+    "source_text": "Finally we provide quantification of examples of typical interest where there is risk of economic stress from sea level change up to 2101, and from transformations of business models.",
+    "subject": "sea level change",
+    "predicate": "poses risk of",
+    "object": "economic stress",
+    "evidence_span": "risk of economic stress from sea level change",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-036:0",
+    "batch_id": "arxiv-036",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Fit without fear: remarkable mathematical phenomena of deep learning through the prism of interpolation",
+    "source_url": "http://arxiv.org/abs/2105.14368v1",
+    "source_fingerprint": "8b2a46d0d97795f6752baf76f12181a38774b7c483fdca0eeb3122917a6e608b",
+    "source_text": "Over-parameterization enables interpolation and provides flexibility to select a right interpolating model.",
+    "subject": "Over-parameterization",
+    "predicate": "enables",
+    "object": "interpolation",
+    "evidence_span": "Over-parameterization enables interpolation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-036:1",
+    "batch_id": "arxiv-036",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Fit without fear: remarkable mathematical phenomena of deep learning through the prism of interpolation",
+    "source_url": "http://arxiv.org/abs/2105.14368v1",
+    "source_fingerprint": "8b2a46d0d97795f6752baf76f12181a38774b7c483fdca0eeb3122917a6e608b",
+    "source_text": "Over-parameterization enables interpolation and provides flexibility to select a right interpolating model.",
+    "subject": "Over-parameterization",
+    "predicate": "provides",
+    "object": "flexibility",
+    "evidence_span": "Over-parameterization enables interpolation and provides flexibility",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-037:0",
+    "batch_id": "arxiv-037",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_fingerprint": "dfdc16466f0ed8e1f74e36334312119908031d69d4bd58f0e6589e16795cc04e",
+    "source_text": "To detect change points, a number of unsupervised algorithms have been developed which are based on different principles.",
+    "subject": "unsupervised algorithms",
+    "predicate": "are based on",
+    "object": "different principles",
+    "evidence_span": "unsupervised algorithms have been developed which are based on different principles",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-038:1",
+    "batch_id": "arxiv-038",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_fingerprint": "fa9b419f2fb0e455508d297d4493e0481ce3e633228ca2e1dfd12b36c982f6b7",
+    "source_text": "Another approach uses Bayesian statistics to calculate the posterior probability distribution of a specific point being a change point.",
+    "subject": "Bayesian statistics",
+    "predicate": "calculate",
+    "object": "posterior probability distribution",
+    "evidence_span": "Bayesian statistics to calculate the posterior probability distribution",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-040:0",
+    "batch_id": "arxiv-040",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_fingerprint": "a579e23bb05b2cc4790587fc430ce38fd22c886ec764f43a24bb2fb079efb5ac",
+    "source_text": "We conjecture that when higher order credal sets contain all possible probability functions, then in the limiting case the highest order confidences converge to form a uniform distribution over the first order credal set, where we define uniformity in terms of the statistical distance metric (total variation distance).",
+    "subject": "highest order confidences",
+    "predicate": "converge to form",
+    "object": "a uniform distribution",
+    "evidence_span": "highest order confidences converge to form a uniform distribution",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-042:0",
+    "batch_id": "arxiv-042",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_fingerprint": "a4ec60c1a9d5c56da16a746c738f097248cd50dc1f45962c9677c42107173915",
+    "source_text": "AutoGrad uses Processing, which is used in the emerging Interactive Media Arts, and pioneers grading systems utilized outside the sciences to assist tuition in the Arts.",
+    "subject": "AutoGrad",
+    "predicate": "uses",
+    "object": "Processing",
+    "evidence_span": "AutoGrad uses Processing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-042:1",
+    "batch_id": "arxiv-042",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_fingerprint": "a4ec60c1a9d5c56da16a746c738f097248cd50dc1f45962c9677c42107173915",
+    "source_text": "AutoGrad uses Processing, which is used in the emerging Interactive Media Arts, and pioneers grading systems utilized outside the sciences to assist tuition in the Arts.",
+    "subject": "Processing",
+    "predicate": "is used in",
+    "object": "Interactive Media Arts",
+    "evidence_span": "Processing, which is used in the emerging Interactive Media Arts",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-043:0",
+    "batch_id": "arxiv-043",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_fingerprint": "a5770365b82b8b07daa5d005ce525f73f053a437b01dd152ef9ba311643b74d4",
+    "source_text": "AutoGrad employs APIs to download the assignments from the course platform, performs static and dynamic analysis on the assignment to evaluate the graphical output of the program, and returns the grade and feedback to the student.",
+    "subject": "AutoGrad",
+    "predicate": "employs",
+    "object": "APIs",
+    "evidence_span": "AutoGrad employs APIs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-043:1",
+    "batch_id": "arxiv-043",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_fingerprint": "a5770365b82b8b07daa5d005ce525f73f053a437b01dd152ef9ba311643b74d4",
+    "source_text": "AutoGrad employs APIs to download the assignments from the course platform, performs static and dynamic analysis on the assignment to evaluate the graphical output of the program, and returns the grade and feedback to the student.",
+    "subject": "AutoGrad",
+    "predicate": "performs",
+    "object": "static and dynamic analysis",
+    "evidence_span": "AutoGrad ... performs static and dynamic analysis",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-043:2",
+    "batch_id": "arxiv-043",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_fingerprint": "a5770365b82b8b07daa5d005ce525f73f053a437b01dd152ef9ba311643b74d4",
+    "source_text": "AutoGrad employs APIs to download the assignments from the course platform, performs static and dynamic analysis on the assignment to evaluate the graphical output of the program, and returns the grade and feedback to the student.",
+    "subject": "AutoGrad",
+    "predicate": "returns",
+    "object": "the grade and feedback",
+    "evidence_span": "AutoGrad ... returns the grade and feedback",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-045:0",
+    "batch_id": "arxiv-045",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_fingerprint": "e6fc4034cb07bd2e59cf8894527449d367f354f437c655c4ff7912bb2c510704",
+    "source_text": "MalGPT enables cybersecurity researchers to develop advanced defense capabilities by emulating large-scale realistic AMG.",
+    "subject": "MalGPT",
+    "predicate": "enables",
+    "object": "cybersecurity researchers",
+    "evidence_span": "MalGPT enables cybersecurity researchers",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-045:1",
+    "batch_id": "arxiv-045",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_fingerprint": "e6fc4034cb07bd2e59cf8894527449d367f354f437c655c4ff7912bb2c510704",
+    "source_text": "MalGPT enables cybersecurity researchers to develop advanced defense capabilities by emulating large-scale realistic AMG.",
+    "subject": "MalGPT",
+    "predicate": "emulates",
+    "object": "large-scale realistic AMG",
+    "evidence_span": "MalGPT enables cybersecurity researchers to develop advanced defense capabilities by emulating large-scale realistic AMG",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-046:0",
+    "batch_id": "arxiv-046",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+    "source_url": "http://arxiv.org/abs/2201.01574v1",
+    "source_fingerprint": "621007f61efe4448b30d633db8d6417a92f15772651919102eb760cd829fba82",
+    "source_text": "Adaptive learning reverses this practice and attempts to improve the student experience.",
+    "subject": "Adaptive learning",
+    "predicate": "reverses",
+    "object": "this practice",
+    "evidence_span": "Adaptive learning reverses this practice",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-046:1",
+    "batch_id": "arxiv-046",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+    "source_url": "http://arxiv.org/abs/2201.01574v1",
+    "source_fingerprint": "621007f61efe4448b30d633db8d6417a92f15772651919102eb760cd829fba82",
+    "source_text": "Adaptive learning reverses this practice and attempts to improve the student experience.",
+    "subject": "Adaptive learning",
+    "predicate": "attempts to improve",
+    "object": "the student experience",
+    "evidence_span": "Adaptive learning ... attempts to improve the student experience",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:1",
+    "batch_id": "arxiv-048",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "subject": "NB2Slides",
+    "predicate": "uses",
+    "object": "example-based prompts",
+    "evidence_span": "NB2Slides uses ... example-based prompts",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:2",
+    "batch_id": "arxiv-048",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "subject": "NB2Slides",
+    "predicate": "generate",
+    "object": "slides",
+    "evidence_span": "NB2Slides ... generate slides from computational notebooks",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-048:3",
+    "batch_id": "arxiv-048",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "subject": "NB2Slides",
+    "predicate": "take",
+    "object": "users' input",
+    "evidence_span": "NB2Slides ... take users' input",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-049:0",
+    "batch_id": "arxiv-049",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "c049606eb60343c9513636aba120f0b47c45bb1dc86fa26e32d54f083a3a1154",
+    "source_text": "NB2Slides also provides an interactive visualization that links the slides with the notebook to help users further edit the slides.",
+    "subject": "NB2Slides",
+    "predicate": "provides",
+    "object": "interactive visualization",
+    "evidence_span": "NB2Slides also provides an interactive visualization",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-050:0",
+    "batch_id": "arxiv-050",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Reconfigurable Intelligent Surface-assisted Classification of Modulations using Deep Learning",
+    "source_url": "http://arxiv.org/abs/2209.08388v1",
+    "source_fingerprint": "8034876236bf6474607fe07f4bce37ae7962e8bf50baf6f99af75354553cb6fa",
+    "source_text": "Reconfigurable intelligent surface technology enables the 5G to work on multistrand waveforms.",
+    "subject": "Reconfigurable intelligent surface technology",
+    "predicate": "enables",
+    "object": "5G",
+    "evidence_span": "Reconfigurable intelligent surface technology enables the 5G",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-051:0",
+    "batch_id": "arxiv-051",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Physicists, Non Physical Topics, and Interdisciplinarity",
+    "source_url": "http://arxiv.org/abs/2210.13254v1",
+    "source_fingerprint": "d1c338a1fdc1594cfd9668eefbe0658bb1cd64ff77f895db6468b34de9a10d4b",
+    "source_text": "This assessment results from my forty year journey arguing and fighting to build sociophysics.",
+    "subject": "assessment",
+    "predicate": "results from",
+    "object": "forty year journey",
+    "evidence_span": "This assessment results from my forty year journey",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-053:0",
+    "batch_id": "arxiv-053",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "subject": "This technology",
+    "predicate": "offers",
+    "object": "machine learning",
+    "evidence_span": "This technology, which offers a broad range of methods such as machine learning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:1",
+    "batch_id": "arxiv-053",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "subject": "This technology",
+    "predicate": "offers",
+    "object": "artificial neural networks",
+    "evidence_span": "This technology, which offers a broad range of methods such as ... artificial neural networks",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:2",
+    "batch_id": "arxiv-053",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "subject": "This technology",
+    "predicate": "offers",
+    "object": "natural language processing",
+    "evidence_span": "This technology, which offers a broad range of methods such as ... natural language processing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-053:3",
+    "batch_id": "arxiv-053",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "subject": "This technology",
+    "predicate": "offers",
+    "object": "deep learning",
+    "evidence_span": "This technology, which offers a broad range of methods such as ... deep learning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-054:0",
+    "batch_id": "arxiv-054",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_fingerprint": "ded3635a36209e1894da0148144af3fb12e03d587d31d9b38c5a54c6898b3f5b",
+    "source_text": "This study contains the results of a survey conducted in 2021 to identify and analyze the potential applications of artificial intelligence in GRC.",
+    "subject": "survey",
+    "predicate": "conducted in",
+    "object": "2021",
+    "evidence_span": "survey conducted in 2021",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "temporal_referent_likely"
+    ],
+    "primary_review_group": "temporal_referent_likely",
+    "grouping_reasons": [
+      "date/time reference appears without a clear capitalized subject anchor"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:0",
+    "batch_id": "arxiv-056",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_fingerprint": "272a6312c89ebcd0d214346947c930f4a92d8468e789ba9b2e2330bbae0984b6",
+    "source_text": "LogAI supports tasks such as log summarization, log clustering and log anomaly detection.",
+    "subject": "LogAI",
+    "predicate": "supports",
+    "object": "log summarization",
+    "evidence_span": "LogAI supports tasks such as log summarization",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:1",
+    "batch_id": "arxiv-056",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_fingerprint": "272a6312c89ebcd0d214346947c930f4a92d8468e789ba9b2e2330bbae0984b6",
+    "source_text": "LogAI supports tasks such as log summarization, log clustering and log anomaly detection.",
+    "subject": "LogAI",
+    "predicate": "supports",
+    "object": "log clustering",
+    "evidence_span": "LogAI supports tasks such as log clustering",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:2",
+    "batch_id": "arxiv-056",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_fingerprint": "272a6312c89ebcd0d214346947c930f4a92d8468e789ba9b2e2330bbae0984b6",
+    "source_text": "LogAI supports tasks such as log summarization, log clustering and log anomaly detection.",
+    "subject": "LogAI",
+    "predicate": "supports",
+    "object": "log anomaly detection",
+    "evidence_span": "LogAI supports tasks such as log anomaly detection",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-057:0",
+    "batch_id": "arxiv-057",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_fingerprint": "b5576fbd203e978b64dd0c211844cb1f385273ce2128e418b705cffb2b10623d",
+    "source_text": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk.",
+    "subject": "Cybersecurity planning",
+    "predicate": "supports",
+    "object": "selection of and implementation of security controls",
+    "evidence_span": "Cybersecurity planning supports the selection of and implementation of security controls",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-057:1",
+    "batch_id": "arxiv-057",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_fingerprint": "b5576fbd203e978b64dd0c211844cb1f385273ce2128e418b705cffb2b10623d",
+    "source_text": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk.",
+    "subject": "Cybersecurity planning",
+    "predicate": "manages",
+    "object": "risk",
+    "evidence_span": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-058:0",
+    "batch_id": "arxiv-058",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_fingerprint": "562ff25100c3ef558a3a1d8dccd9a3430df44c84cd71ee9bd58719ca624a5080",
+    "source_text": "Doing so requires considering adaptive adversaries with different levels of strategic sophistication in modeling efforts to support risk management.",
+    "subject": "Doing so",
+    "predicate": "requires",
+    "object": "considering adaptive adversaries",
+    "evidence_span": "Doing so requires considering adaptive adversaries",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-059:0",
+    "batch_id": "arxiv-059",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards Grammatical Tagging for the Legal Language of Cybersecurity",
+    "source_url": "http://arxiv.org/abs/2306.17042v1",
+    "source_fingerprint": "2b50ce6b71784103d78200e212bd212f28ec6f82dbd851940d474908d2242ca5",
+    "source_text": "Recent legislation on cybersecurity obviously uses legal language in writing, thus inheriting all its interpretative complications due to the typical abundance of cases and sub-cases as well as to the general richness in detail.",
+    "subject": "Recent legislation on cybersecurity",
+    "predicate": "uses",
+    "object": "legal language",
+    "evidence_span": "Recent legislation on cybersecurity obviously uses legal language",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-060:0",
+    "batch_id": "arxiv-060",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Ensemble Learning based Anomaly Detection for IoT Cybersecurity via Bayesian Hyperparameters Sensitivity Analysis",
+    "source_url": "http://arxiv.org/abs/2307.10596v1",
+    "source_fingerprint": "ce7de20d2a3017da4b44a13c4eeb84f5c9d1d37e9bc3387b9cda73f5a412d582",
+    "source_text": "IoT enables data aggregation and analysis on a large scale to improve life quality in many domains.",
+    "subject": "IoT",
+    "predicate": "enables",
+    "object": "data aggregation and analysis",
+    "evidence_span": "IoT enables data aggregation and analysis",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-062:0",
+    "batch_id": "arxiv-062",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Protoplanetary Disk Chemistry",
+    "source_url": "http://arxiv.org/abs/2309.05685v1",
+    "source_fingerprint": "b399cf8614c8d3fff2a9366cc174d91bb478e407c04707f547a9637ebb778aac",
+    "source_text": "Disk chemistry also enables unique probes of disk structures and dynamics, including those directly linked to ongoing planet formation.",
+    "subject": "Disk chemistry",
+    "predicate": "enables",
+    "object": "unique probes of disk structures and dynamics",
+    "evidence_span": "Disk chemistry also enables unique probes of disk structures and dynamics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-063:0",
+    "batch_id": "arxiv-063",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Protoplanetary Disk Chemistry",
+    "source_url": "http://arxiv.org/abs/2309.05685v1",
+    "source_fingerprint": "61bea438d632446badaefce4dfdad6ce9c5353803e9860498fc624072790edb7",
+    "source_text": "(3) Chemical, physical, and dynamical processes in disks are closely linked, which complicates disk chemistry modeling, but these links also present an opportunity to develop chemical probes of different aspects of disk evolution and planet formation.",
+    "subject": "Chemical, physical, and dynamical processes",
+    "predicate": "are linked in",
+    "object": "disks",
+    "evidence_span": "Chemical, physical, and dynamical processes in disks are closely linked",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-064:0",
+    "batch_id": "arxiv-064",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Higher-Order Equivariant Neural Networks for Charge Density Prediction in Materials",
+    "source_url": "http://arxiv.org/abs/2312.05388v2",
+    "source_fingerprint": "d1c1f72f4565ec64ca3d06862dd219f9dfa159de79f24e8cf61f450465e4d9c5",
+    "source_text": "ChargE3Net enables the learning of higher-order equivariant feature to achieve high predictive accuracy and model expressivity.",
+    "subject": "ChargE3Net",
+    "predicate": "enables the learning of",
+    "object": "higher-order equivariant feature",
+    "evidence_span": "ChargE3Net enables the learning of higher-order equivariant feature",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-066:0",
+    "batch_id": "arxiv-066",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Learned 3D volumetric recovery of clouds and its uncertainty for climate analysis",
+    "source_url": "http://arxiv.org/abs/2403.05932v1",
+    "source_fingerprint": "75b36109242532bae6b9cdc7c623dba8516c21b0f982cb9355a13dafc1809a20",
+    "source_text": "ProbCT uses a neural-field representation, making essentially real-time inference.",
+    "subject": "ProbCT",
+    "predicate": "uses",
+    "object": "a neural-field representation",
+    "evidence_span": "ProbCT uses a neural-field representation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-067:0",
+    "batch_id": "arxiv-067",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Learned 3D volumetric recovery of clouds and its uncertainty for climate analysis",
+    "source_url": "http://arxiv.org/abs/2403.05932v1",
+    "source_fingerprint": "08f256885d31c59144fe3d95f74ce05926ef0d5d7a177dd5d4f68fe04cdfcb64",
+    "source_text": "To improve out-of-distribution inference, we incorporate self-supervised learning through differential rendering.",
+    "subject": "self-supervised learning",
+    "predicate": "incorporate through",
+    "object": "differential rendering",
+    "evidence_span": "incorporate self-supervised learning through differential rendering",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-069:1",
+    "batch_id": "arxiv-069",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_fingerprint": "b137b7516e7cff5ccb3001886ab33254d4299531d5f65e49dc85818cc40808d4",
+    "source_text": "One wave-packet preparation method uses the blockade effect enabled by beyond-nearest-neighbor Ising spin interactions.",
+    "subject": "the blockade effect",
+    "predicate": "is enabled by",
+    "object": "beyond-nearest-neighbor Ising spin interactions",
+    "evidence_span": "the blockade effect enabled by beyond-nearest-neighbor Ising spin interactions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:0",
+    "batch_id": "arxiv-070",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_fingerprint": "89bcef9c2580a72f5f2268d2a6d5411c680faa29dcb67fa42af38c4bb209768f",
+    "source_text": "Artificial intelligence supports healthcare professionals with predictive modeling, greatly transforming clinical decision-making.",
+    "subject": "Artificial intelligence",
+    "predicate": "supports",
+    "object": "healthcare professionals",
+    "evidence_span": "Artificial intelligence supports healthcare professionals",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-071:2",
+    "batch_id": "arxiv-071",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_fingerprint": "daf9f5911a5ad097e524f1acd90d5e13d7486845ee4dbd53088dbc6603794ebf",
+    "source_text": "By focusing on the predictive modeling of sepsis-related mortality, we propose a method that learns a performance-optimized predictive model and then employs the transfer learning process to produce a model with better fairness.",
+    "subject": "the transfer learning process",
+    "predicate": "produces",
+    "object": "a model with better fairness",
+    "evidence_span": "employs the transfer learning process to produce a model with better fairness",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-072:0",
+    "batch_id": "arxiv-072",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "PyOptInterface: Design and implementation of an efficient modeling language for mathematical optimization",
+    "source_url": "http://arxiv.org/abs/2405.10130v1",
+    "source_fingerprint": "a497956a63e6ff147cd0f1a4df91a8f0c9305cd22fcf8681158229ca3547967e",
+    "source_text": "PyOptInterface uses lightweight and compact data structure to bridge high-level entities in optimization models like variables and constraints to internal indices of optimizers efficiently.",
+    "subject": "PyOptInterface",
+    "predicate": "uses",
+    "object": "lightweight and compact data structure",
+    "evidence_span": "PyOptInterface uses lightweight and compact data structure",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-073:0",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "PyOptInterface: Design and implementation of an efficient modeling language for mathematical optimization",
+    "source_url": "http://arxiv.org/abs/2405.10130v1",
+    "source_fingerprint": "599c0eccaab918d62177d4b712c2e85d53d9382fc8cdf2ff353a40dd7b4c5024",
+    "source_text": "It supports a variety of optimization solvers and a range of common problem classes.",
+    "subject": "It",
+    "predicate": "supports",
+    "object": "a variety of optimization solvers",
+    "evidence_span": "It supports a variety of optimization solvers",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:1",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "PyOptInterface: Design and implementation of an efficient modeling language for mathematical optimization",
+    "source_url": "http://arxiv.org/abs/2405.10130v1",
+    "source_fingerprint": "599c0eccaab918d62177d4b712c2e85d53d9382fc8cdf2ff353a40dd7b4c5024",
+    "source_text": "It supports a variety of optimization solvers and a range of common problem classes.",
+    "subject": "It",
+    "predicate": "supports",
+    "object": "a range of common problem classes",
+    "evidence_span": "It supports a range of common problem classes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-074:0",
+    "batch_id": "arxiv-074",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MoRSE: Bridging the Gap in Cybersecurity Expertise with Retrieval Augmented Generation",
+    "source_url": "http://arxiv.org/abs/2407.15748v1",
+    "source_fingerprint": "71830ffd7cf6888a8a45615c0b36c84c924fde13c9b891f32ddb20c96fd96ad8",
+    "source_text": "MoRSE aims to provide comprehensive and complete knowledge about cybersecurity.",
+    "subject": "MoRSE",
+    "predicate": "aims to provide",
+    "object": "comprehensive and complete knowledge about cybersecurity",
+    "evidence_span": "MoRSE aims to provide comprehensive and complete knowledge about cybersecurity",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-075:0",
+    "batch_id": "arxiv-075",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MoRSE: Bridging the Gap in Cybersecurity Expertise with Retrieval Augmented Generation",
+    "source_url": "http://arxiv.org/abs/2407.15748v1",
+    "source_fingerprint": "602317ff6da0c0df2b53674f8ee6368d8e50cf6ccb536ff8506f5567ae7e8cc6",
+    "source_text": "MoRSE uses two RAG (Retrieval Augmented Generation) systems designed to retrieve and organize information from multidimensional cybersecurity contexts.",
+    "subject": "MoRSE",
+    "predicate": "uses",
+    "object": "two RAG (Retrieval Augmented Generation) systems",
+    "evidence_span": "MoRSE uses two RAG (Retrieval Augmented Generation) systems",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-076:0",
+    "batch_id": "arxiv-076",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence",
+    "source_url": "http://arxiv.org/abs/2408.02811v1",
+    "source_fingerprint": "a640edf1c12cfa186ee7267d6c675ffd08331d1dac0389f64e86a658c43c4459",
+    "source_text": "REGAI uses rubrics, which can be created manually or automatically by the system, to enhance the performance of LLMs for evaluation purposes.",
+    "subject": "REGAI",
+    "predicate": "uses",
+    "object": "rubrics",
+    "evidence_span": "REGAI uses rubrics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-077:0",
+    "batch_id": "arxiv-077",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence",
+    "source_url": "http://arxiv.org/abs/2408.02811v1",
+    "source_fingerprint": "bb5a5ecbb82f816d44a4f8197d24fbda08fe84237339eb12c31056379d2ca425",
+    "source_text": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+    "subject": "REGAI",
+    "predicate": "improves on the performance of",
+    "object": "classical LLMs",
+    "evidence_span": "REGAI improves on the performance of both classical LLMs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-077:1",
+    "batch_id": "arxiv-077",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence",
+    "source_url": "http://arxiv.org/abs/2408.02811v1",
+    "source_fingerprint": "bb5a5ecbb82f816d44a4f8197d24fbda08fe84237339eb12c31056379d2ca425",
+    "source_text": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+    "subject": "REGAI",
+    "predicate": "improves on the performance of",
+    "object": "RAG-based LLM techniques",
+    "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-078:0",
+    "batch_id": "arxiv-078",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Evaluating Low-Resource Lane Following Algorithms for Compute-Constrained Automated Vehicles",
+    "source_url": "http://arxiv.org/abs/2409.03114v2",
+    "source_fingerprint": "7e28398f10436125030747642c4fc342c027eaf7c12c10b10d955d7044e9b8da",
+    "source_text": "Reducing computing requirements enables lane keeping to be widely deployed in vehicles as part of lower-level automation, including active safety systems.",
+    "subject": "Reducing computing requirements",
+    "predicate": "enables",
+    "object": "lane keeping",
+    "evidence_span": "Reducing computing requirements enables lane keeping",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-078:1",
+    "batch_id": "arxiv-078",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Evaluating Low-Resource Lane Following Algorithms for Compute-Constrained Automated Vehicles",
+    "source_url": "http://arxiv.org/abs/2409.03114v2",
+    "source_fingerprint": "7e28398f10436125030747642c4fc342c027eaf7c12c10b10d955d7044e9b8da",
+    "source_text": "Reducing computing requirements enables lane keeping to be widely deployed in vehicles as part of lower-level automation, including active safety systems.",
+    "subject": "lane keeping",
+    "predicate": "is part of",
+    "object": "lower-level automation",
+    "evidence_span": "lane keeping to be widely deployed in vehicles as part of lower-level automation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-080:0",
+    "batch_id": "arxiv-080",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Blockchain and Artificial Intelligence based System for Halal Food Traceability",
+    "source_url": "http://arxiv.org/abs/2410.07305v1",
+    "source_fingerprint": "96d3f6f054398b72e1cdbad5510ce058011b97b1336df0e95374d40d89001ebf",
+    "source_text": "Blockchain technology can provide a distributed ledger of an immutable record of the information.",
+    "subject": "Blockchain technology",
+    "predicate": "can provide",
+    "object": "a distributed ledger",
+    "evidence_span": "Blockchain technology can provide a distributed ledger",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-081:0",
+    "batch_id": "arxiv-081",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Blockchain and Artificial Intelligence based System for Halal Food Traceability",
+    "source_url": "http://arxiv.org/abs/2410.07305v1",
+    "source_fingerprint": "63c49da6f105f366ab656a9e890045d390cd2b55c731906859d28066808eeeba",
+    "source_text": "Artificial intelligence supports developing a solution for pattern identification.",
+    "subject": "Artificial intelligence",
+    "predicate": "supports developing",
+    "object": "a solution for pattern identification",
+    "evidence_span": "Artificial intelligence supports developing a solution for pattern identification",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-082:0",
+    "batch_id": "arxiv-082",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Use of What-if Scenarios to Help Explain Artificial Intelligence Models for Neonatal Health",
+    "source_url": "http://arxiv.org/abs/2410.09635v2",
+    "source_fingerprint": "187088f0821730aec290c515ba86e53cb1db6e474feba4f927751a944c9d85ae",
+    "source_text": "Early detection of intrapartum risks enables timely interventions to prevent or mitigate adverse labor outcomes such as cerebral palsy.",
+    "subject": "Early detection of intrapartum risks",
+    "predicate": "enables",
+    "object": "timely interventions",
+    "evidence_span": "Early detection of intrapartum risks enables timely interventions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-084:0",
+    "batch_id": "arxiv-084",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Mitigating Errors in Analog Quantum Simulation by Hamiltonian Reshaping or Hamiltonian Rescaling",
+    "source_url": "http://arxiv.org/abs/2410.23719v2",
+    "source_fingerprint": "a36d96a42387b832dbd853f02f4356046ec6a751e7d4635237c9c896c7f98502",
+    "source_text": "Hamiltonian reshaping uses random unitary transformations to generate new Hamiltonians with identical eigenvalues but varied eigenstates, allowing error reduction through averaging.",
+    "subject": "Hamiltonian reshaping",
+    "predicate": "uses",
+    "object": "random unitary transformations",
+    "evidence_span": "Hamiltonian reshaping uses random unitary transformations",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-084:1",
+    "batch_id": "arxiv-084",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Mitigating Errors in Analog Quantum Simulation by Hamiltonian Reshaping or Hamiltonian Rescaling",
+    "source_url": "http://arxiv.org/abs/2410.23719v2",
+    "source_fingerprint": "a36d96a42387b832dbd853f02f4356046ec6a751e7d4635237c9c896c7f98502",
+    "source_text": "Hamiltonian reshaping uses random unitary transformations to generate new Hamiltonians with identical eigenvalues but varied eigenstates, allowing error reduction through averaging.",
+    "subject": "Hamiltonian reshaping",
+    "predicate": "generates",
+    "object": "new Hamiltonians",
+    "evidence_span": "Hamiltonian reshaping uses random unitary transformations to generate new Hamiltonians",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-085:0",
+    "batch_id": "arxiv-085",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_fingerprint": "3d1bc92eea15508005049dd1a4b6ee4a9cfb67ecd9858ddfced1befe24a85029",
+    "source_text": "FrontierMath uses new, unpublished problems and automated verification to reliably evaluate models while minimizing risk of data contamination.",
+    "subject": "FrontierMath",
+    "predicate": "uses",
+    "object": "new, unpublished problems",
+    "evidence_span": "FrontierMath uses new, unpublished problems",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-085:1",
+    "batch_id": "arxiv-085",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_fingerprint": "3d1bc92eea15508005049dd1a4b6ee4a9cfb67ecd9858ddfced1befe24a85029",
+    "source_text": "FrontierMath uses new, unpublished problems and automated verification to reliably evaluate models while minimizing risk of data contamination.",
+    "subject": "FrontierMath",
+    "predicate": "uses",
+    "object": "automated verification",
+    "evidence_span": "FrontierMath uses new, unpublished problems and automated verification",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-086:0",
+    "batch_id": "arxiv-086",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_fingerprint": "1ea3cbe84033e7f3385bf8e6c769136649f46f76d81b1be9e77fe10aacbbf641",
+    "source_text": "As AI systems advance toward expert-level mathematical abilities, FrontierMath offers a rigorous testbed that quantifies their progress.",
+    "subject": "FrontierMath",
+    "predicate": "offers",
+    "object": "a rigorous testbed",
+    "evidence_span": "FrontierMath offers a rigorous testbed",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-086:1",
+    "batch_id": "arxiv-086",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_fingerprint": "1ea3cbe84033e7f3385bf8e6c769136649f46f76d81b1be9e77fe10aacbbf641",
+    "source_text": "As AI systems advance toward expert-level mathematical abilities, FrontierMath offers a rigorous testbed that quantifies their progress.",
+    "subject": "FrontierMath",
+    "predicate": "quantifies",
+    "object": "their progress",
+    "evidence_span": "FrontierMath offers a rigorous testbed that quantifies their progress",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-087:0",
+    "batch_id": "arxiv-087",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantifying artificial intelligence through algorithmic generalization",
+    "source_url": "http://arxiv.org/abs/2411.05943v2",
+    "source_fingerprint": "38ac5b0fa24a6daf95e0dfac117be513b5867b5f67154b7fa584a3e2548df160",
+    "source_text": "Algebraic circuit complexity enables the study of generalization by defining benchmarks in terms of the computational requirements to solve a problem.",
+    "subject": "Algebraic circuit complexity",
+    "predicate": "enables",
+    "object": "the study of generalization",
+    "evidence_span": "Algebraic circuit complexity enables the study of generalization",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-088:0",
+    "batch_id": "arxiv-088",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Large Negative Magnetoresistance in off-Stochiometric Topological Material PrSbTe",
+    "source_url": "http://arxiv.org/abs/2502.04203v1",
+    "source_fingerprint": "18bc31464fabfb816b87879a95c8a0e7ae943db4ebd589096256dd4961e655ba",
+    "source_text": "Such unusual magnetotransport enables PrSbxTe2-x topological materials as a promising platform for device applications.",
+    "subject": "PrSbxTe2-x",
+    "predicate": "is",
+    "object": "topological materials",
+    "evidence_span": "PrSbxTe2-x topological materials",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-090:0",
+    "batch_id": "arxiv-090",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Application of Artificial Intelligence (AI) in Civil Engineering",
+    "source_url": "http://arxiv.org/abs/2502.06727v1",
+    "source_fingerprint": "dd485f6c75d5fe7e3d6409e25c60eabd3ccc1b2d68d63e3d30249b653db65786",
+    "source_text": "ANNs predict non-linearities and provide accurate estimates.",
+    "subject": "ANNs",
+    "predicate": "predict",
+    "object": "non-linearities",
+    "evidence_span": "ANNs predict non-linearities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-090:1",
+    "batch_id": "arxiv-090",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Application of Artificial Intelligence (AI) in Civil Engineering",
+    "source_url": "http://arxiv.org/abs/2502.06727v1",
+    "source_fingerprint": "dd485f6c75d5fe7e3d6409e25c60eabd3ccc1b2d68d63e3d30249b653db65786",
+    "source_text": "ANNs predict non-linearities and provide accurate estimates.",
+    "subject": "ANNs",
+    "predicate": "provide",
+    "object": "accurate estimates",
+    "evidence_span": "ANNs ... provide accurate estimates",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-091:0",
+    "batch_id": "arxiv-091",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Knowledge-Enhanced Program Repair for Data Science Code",
+    "source_url": "http://arxiv.org/abs/2502.09771v1",
+    "source_fingerprint": "566176fce4d4c2c3e6fa5815f238b29a6c95bee7dab80e64233b3ffa0c5a06bc",
+    "source_text": "DSrepair uses knowledge graph based RAG for API knowledge retrieval as well as bug knowledge enrichment to construct repair prompts for LLMs.",
+    "subject": "DSrepair",
+    "predicate": "uses",
+    "object": "knowledge graph based RAG",
+    "evidence_span": "DSrepair uses knowledge graph based RAG",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-092:0",
+    "batch_id": "arxiv-092",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Knowledge-Enhanced Program Repair for Data Science Code",
+    "source_url": "http://arxiv.org/abs/2502.09771v1",
+    "source_fingerprint": "a77150115332e0c86db2c3b6f050e6b3514b5f908bab3d1274ded56a879c41ae",
+    "source_text": "Specifically, to enable knowledge graph based API retrieval, we construct DS-KG (Data Science Knowledge Graph) for widely used data science libraries.",
+    "subject": "DS-KG",
+    "predicate": "is",
+    "object": "Data Science Knowledge Graph",
+    "evidence_span": "DS-KG (Data Science Knowledge Graph)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-093:0",
+    "batch_id": "arxiv-093",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SHAZAM: Self-Supervised Change Monitoring for Hazard Detection and Mapping",
+    "source_url": "http://arxiv.org/abs/2503.00348v1",
+    "source_fingerprint": "8dc73bebedb771623c53292e2e5040e523a87ab7150ce7117dbd4a30cfc4ee01",
+    "source_text": "SHAZAM uses a lightweight conditional UNet to generate expected images of a region of interest (ROI) for any day of the year, allowing for the direct modelling of normal seasonal changes and the ability to distinguish potential hazards.",
+    "subject": "SHAZAM",
+    "predicate": "uses",
+    "object": "lightweight conditional UNet",
+    "evidence_span": "SHAZAM uses a lightweight conditional UNet",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-094:0",
+    "batch_id": "arxiv-094",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "SHAZAM: Self-Supervised Change Monitoring for Hazard Detection and Mapping",
+    "source_url": "http://arxiv.org/abs/2503.00348v1",
+    "source_fingerprint": "33dc8bb50eac1e94c48ded5435db211463f49bb0bbdc3a9c13ae313d5441ae10",
+    "source_text": "Evaluated on four diverse datasets that contain bushfires (wildfires), burned regions, extreme and out-of-season snowfall, floods, droughts, algal blooms, and deforestation, SHAZAM achieved F1 score improvements of between 0.066 and 0.234 over existing methods.",
+    "subject": "SHAZAM",
+    "predicate": "achieved",
+    "object": "F1 score improvements",
+    "evidence_span": "SHAZAM achieved F1 score improvements",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-095:0",
+    "batch_id": "arxiv-095",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Nanoscale electrostatic control in ferroelectric thin films through lattice chemistry",
+    "source_url": "http://arxiv.org/abs/2503.08613v1",
+    "source_fingerprint": "b21638d538287c44cb64919fda3ec8f96d734a54e70159806c70d64f56f2e111",
+    "source_text": "Nanoscale electrostatic control of oxide interfaces enables physical phenomena and exotic functionalities beyond the realm of the bulk material.",
+    "subject": "Nanoscale electrostatic control of oxide interfaces",
+    "predicate": "enables",
+    "object": "physical phenomena",
+    "evidence_span": "Nanoscale electrostatic control of oxide interfaces enables physical phenomena",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-095:1",
+    "batch_id": "arxiv-095",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Nanoscale electrostatic control in ferroelectric thin films through lattice chemistry",
+    "source_url": "http://arxiv.org/abs/2503.08613v1",
+    "source_fingerprint": "b21638d538287c44cb64919fda3ec8f96d734a54e70159806c70d64f56f2e111",
+    "source_text": "Nanoscale electrostatic control of oxide interfaces enables physical phenomena and exotic functionalities beyond the realm of the bulk material.",
+    "subject": "Nanoscale electrostatic control of oxide interfaces",
+    "predicate": "enables",
+    "object": "exotic functionalities",
+    "evidence_span": "Nanoscale electrostatic control of oxide interfaces enables physical phenomena and exotic functionalities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-096:0",
+    "batch_id": "arxiv-096",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Nanoscale electrostatic control in ferroelectric thin films through lattice chemistry",
+    "source_url": "http://arxiv.org/abs/2503.08613v1",
+    "source_fingerprint": "e371595ad05a6df048a2798f70a46f340265aedcd96afc9c5631f31214c42306",
+    "source_text": "Next, we use the polarizing Bi$_{2}$O$_{2}$ stacking as a versatile electrostatic environment to create new electric dipole configurations.",
+    "subject": "Bi$_{2}$O$_{2}$ stacking",
+    "predicate": "create",
+    "object": "electric dipole configurations",
+    "evidence_span": "Bi$_{2}$O$_{2}$ stacking as a versatile electrostatic environment to create new electric dipole configurations",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-097:0",
+    "batch_id": "arxiv-097",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "ModelingAgent: Bridging LLMs and Mathematical Modeling for Real-World Challenges",
+    "source_url": "http://arxiv.org/abs/2505.15068v1",
+    "source_fingerprint": "2190ca0279dbcc2ed395e64486513d8d05dd76b789668a5db728d547b0e8d403",
+    "source_text": "ModelingBench also supports multiple valid solutions, capturing the ambiguity and creativity of practical modeling.",
+    "subject": "ModelingBench",
+    "predicate": "supports",
+    "object": "multiple valid solutions",
+    "evidence_span": "ModelingBench also supports multiple valid solutions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-099:0",
+    "batch_id": "arxiv-099",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum Artificial Intelligence for Secure Autonomous Vehicle Navigation: An Architectural Proposal",
+    "source_url": "http://arxiv.org/abs/2506.16000v1",
+    "source_fingerprint": "404031136d98d09502256ca3e818c0957d4b25071eb472f40a1a27ee02e263cb",
+    "source_text": "Quantum neural networks uses quantum amplitude encoding to fuse data from various sensors like LiDAR, radar, camera, GPS and weather etc., This approach gives a unified quantum state representation between heterogeneous sensor modalities.",
+    "subject": "Quantum neural networks",
+    "predicate": "uses",
+    "object": "quantum amplitude encoding",
+    "evidence_span": "Quantum neural networks uses quantum amplitude encoding",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-100:0",
+    "batch_id": "arxiv-100",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "ML-Based Automata Simplification for Symbolic Accelerators",
+    "source_url": "http://arxiv.org/abs/2507.08751v1",
+    "source_fingerprint": "e3bc613d22d2ec7cf4377bbee9a6cc7b6113d12202a9fa7247d6d33a824b1888",
+    "source_text": "However, these accelerators face scalability issues due to excessive memory use and routing complexity, especially when targeting a large set.",
+    "subject": "accelerators",
+    "predicate": "face",
+    "object": "scalability issues",
+    "evidence_span": "these accelerators face scalability issues",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-101:0",
+    "batch_id": "arxiv-101",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "ML-Based Automata Simplification for Symbolic Accelerators",
+    "source_url": "http://arxiv.org/abs/2507.08751v1",
+    "source_fingerprint": "6426f027d69172cb347ee0f00b603e60c25a8945ca20a4cdd0bc4c4858154d6b",
+    "source_text": "AutoSlim uses Random Forest classification to prune low-impact transitions based on edge scores and structural features, significantly reducing automata graph density while preserving semantic correctness.",
+    "subject": "AutoSlim",
+    "predicate": "uses",
+    "object": "Random Forest classification",
+    "evidence_span": "AutoSlim uses Random Forest classification",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-101:1",
+    "batch_id": "arxiv-101",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "ML-Based Automata Simplification for Symbolic Accelerators",
+    "source_url": "http://arxiv.org/abs/2507.08751v1",
+    "source_fingerprint": "6426f027d69172cb347ee0f00b603e60c25a8945ca20a4cdd0bc4c4858154d6b",
+    "source_text": "AutoSlim uses Random Forest classification to prune low-impact transitions based on edge scores and structural features, significantly reducing automata graph density while preserving semantic correctness.",
+    "subject": "AutoSlim",
+    "predicate": "prunes",
+    "object": "low-impact transitions",
+    "evidence_span": "AutoSlim uses Random Forest classification to prune low-impact transitions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-102:0",
+    "batch_id": "arxiv-102",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Error Detection and Correction for Interpretable Mathematics in Large Language Models",
+    "source_url": "http://arxiv.org/abs/2508.03500v1",
+    "source_fingerprint": "0d1ce866129246f3b0adce3474ba2438c48d0321e917f9626520e252ef57239b",
+    "source_text": "However, their intermediate steps often contain errors that can propagate leading to inaccurate final predictions.",
+    "subject": "intermediate steps",
+    "predicate": "contain",
+    "object": "errors",
+    "evidence_span": "their intermediate steps often contain errors",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-103:0",
+    "batch_id": "arxiv-103",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Error Detection and Correction for Interpretable Mathematics in Large Language Models",
+    "source_url": "http://arxiv.org/abs/2508.03500v1",
+    "source_fingerprint": "2fab58e1cb2a9f330f203f6039ecebe1b2ff7062ca0dced4834d49316a35edc2",
+    "source_text": "EDCIM uses LLMs to generate a system of equations for a given problem, followed by a symbolic error-detection framework that identifies errors and provides targeted feedback for LLM-based correction.",
+    "subject": "EDCIM",
+    "predicate": "uses",
+    "object": "LLMs",
+    "evidence_span": "EDCIM uses LLMs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-104:0",
+    "batch_id": "arxiv-104",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "\"Think First, Verify Always\": Training Humans to Face AI Risks",
+    "source_url": "http://arxiv.org/abs/2508.03714v1",
+    "source_fingerprint": "1105392ab6ddeab2d83a426d22ee4276ab5df00a1f72491d1dfa9279672ef066",
+    "source_text": "Artificial intelligence enables unprecedented attacks on human cognition, yet cybersecurity remains predominantly device-centric.",
+    "subject": "Artificial intelligence",
+    "predicate": "enables",
+    "object": "unprecedented attacks on human cognition",
+    "evidence_span": "Artificial intelligence enables unprecedented attacks on human cognition",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-104:1",
+    "batch_id": "arxiv-104",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "\"Think First, Verify Always\": Training Humans to Face AI Risks",
+    "source_url": "http://arxiv.org/abs/2508.03714v1",
+    "source_fingerprint": "1105392ab6ddeab2d83a426d22ee4276ab5df00a1f72491d1dfa9279672ef066",
+    "source_text": "Artificial intelligence enables unprecedented attacks on human cognition, yet cybersecurity remains predominantly device-centric.",
+    "subject": "cybersecurity",
+    "predicate": "remains",
+    "object": "device-centric",
+    "evidence_span": "cybersecurity remains predominantly device-centric",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-105:0",
+    "batch_id": "arxiv-105",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "\"Think First, Verify Always\": Training Humans to Face AI Risks",
+    "source_url": "http://arxiv.org/abs/2508.03714v1",
+    "source_fingerprint": "d646a293dea3e77ddb397d63fb2c3ea0df1de42694734eff5f8905f04d79ab3b",
+    "source_text": "We recommend that GenAI platforms embed \"Think First, Verify Always\" as a standard prompt, replacing passive warnings with actionable protocols to enhance trustworthy and ethical AI use.",
+    "subject": "GenAI platforms",
+    "predicate": "embed",
+    "object": "Think First, Verify Always",
+    "evidence_span": "GenAI platforms embed \"Think First, Verify Always\"",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-107:0",
+    "batch_id": "arxiv-107",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "TrackOR: Towards Personalized Intelligent Operating Rooms Through Robust Tracking",
+    "source_url": "http://arxiv.org/abs/2508.07968v1",
+    "source_fingerprint": "8dd9b9ba9b18e9ad8eafe5dbf9a3014c73d4557e9db73ed694791d8fa68ea744",
+    "source_text": "TrackOR uses 3D geometric signatures to achieve state-of-the-art online tracking performance (+11% Association Accuracy over the strongest baseline), while also enabling an effective offline recovery process to create analysis-ready trajectories.",
+    "subject": "TrackOR",
+    "predicate": "uses",
+    "object": "3D geometric signatures",
+    "evidence_span": "TrackOR uses 3D geometric signatures",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-109:0",
+    "batch_id": "arxiv-109",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats",
+    "source_url": "http://arxiv.org/abs/2508.17405v1",
+    "source_fingerprint": "696fd086f673d06b25fcebaf1bc418b149f40038fe38c7c5de2479a072c51e44",
+    "source_text": "From an engineering application perspective, FRAME delivers actionable results designed for direct use by system owners with only technical knowledge of their systems, without expertise in AML.",
+    "subject": "FRAME",
+    "predicate": "delivers",
+    "object": "actionable results",
+    "evidence_span": "FRAME delivers actionable results",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-110:0",
+    "batch_id": "arxiv-110",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_fingerprint": "e050ce744e19c9469cf186a8e235fee453c59dc4bb7637774bc3a4d7ac89701a",
+    "source_text": "Bi-temporal satellite imagery supports critical applications such as urbanization monitoring and disaster assessment.",
+    "subject": "Bi-temporal satellite imagery",
+    "predicate": "supports",
+    "object": "urbanization monitoring",
+    "evidence_span": "Bi-temporal satellite imagery supports critical applications such as urbanization monitoring",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-110:1",
+    "batch_id": "arxiv-110",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_fingerprint": "e050ce744e19c9469cf186a8e235fee453c59dc4bb7637774bc3a4d7ac89701a",
+    "source_text": "Bi-temporal satellite imagery supports critical applications such as urbanization monitoring and disaster assessment.",
+    "subject": "Bi-temporal satellite imagery",
+    "predicate": "supports",
+    "object": "disaster assessment",
+    "evidence_span": "Bi-temporal satellite imagery supports critical applications such as urbanization monitoring and disaster assessment",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-111:0",
+    "batch_id": "arxiv-111",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_fingerprint": "9a3318a8642b8671529360e355cf88ac4f42b1ae6c22f0866bc1f98f97eefbeb",
+    "source_text": "BTCChat supports bi-temporal change captioning and retains single-image interpretation capability.",
+    "subject": "BTCChat",
+    "predicate": "supports",
+    "object": "bi-temporal change captioning",
+    "evidence_span": "BTCChat supports bi-temporal change captioning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-111:1",
+    "batch_id": "arxiv-111",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_fingerprint": "9a3318a8642b8671529360e355cf88ac4f42b1ae6c22f0866bc1f98f97eefbeb",
+    "source_text": "BTCChat supports bi-temporal change captioning and retains single-image interpretation capability.",
+    "subject": "BTCChat",
+    "predicate": "retains",
+    "object": "single-image interpretation capability",
+    "evidence_span": "BTCChat retains single-image interpretation capability",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-112:0",
+    "batch_id": "arxiv-112",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Statistical inference using debiased group graphical lasso for multiple sparse precision matrices",
+    "source_url": "http://arxiv.org/abs/2510.04683v1",
+    "source_fingerprint": "e5b8024d7a2b0ba412b26fa10b9807149abbf6d6f7d747bb488877cf5ee619c2",
+    "source_text": "Debiasing group graphical lasso estimates enables statistical inference when multiple Gaussian graphical models share a common sparsity pattern.",
+    "subject": "Debiasing group graphical lasso estimates",
+    "predicate": "enables",
+    "object": "statistical inference",
+    "evidence_span": "Debiasing group graphical lasso estimates enables statistical inference",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-113:0",
+    "batch_id": "arxiv-113",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Systematic North-South asymmetry in the Steady-state Climate of rapidly-rotating Oblique Water Worlds",
+    "source_url": "http://arxiv.org/abs/2510.11904v1",
+    "source_fingerprint": "71032daa02395a8a604beaa97511c346fac202d2bdc3a15ecca2387bc91f106f",
+    "source_text": "High obliquity supports an asymmetry between the equilibrium climatological conditions in the northern and southern hemispheres.",
+    "subject": "High obliquity",
+    "predicate": "supports",
+    "object": "an asymmetry between the equilibrium climatological conditions in the northern and southern hemispheres",
+    "evidence_span": "High obliquity supports an asymmetry between the equilibrium climatological conditions in the northern and southern hemispheres.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-115:0",
+    "batch_id": "arxiv-115",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Exploiting the Potential of Linearity in Automatic Differentiation and Computational Cryptography",
+    "source_url": "http://arxiv.org/abs/2510.17220v1",
+    "source_fingerprint": "0cc3a468a4176045bee4540592439237cd53c1108dff8788e7ab10f57d6fa9a8",
+    "source_text": "This thesis explores the use of LL to model programming paradigms based on linearity.",
+    "subject": "thesis",
+    "predicate": "explores",
+    "object": "use of LL",
+    "evidence_span": "thesis explores the use of LL",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-115:1",
+    "batch_id": "arxiv-115",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Exploiting the Potential of Linearity in Automatic Differentiation and Computational Cryptography",
+    "source_url": "http://arxiv.org/abs/2510.17220v1",
+    "source_fingerprint": "0cc3a468a4176045bee4540592439237cd53c1108dff8788e7ab10f57d6fa9a8",
+    "source_text": "This thesis explores the use of LL to model programming paradigms based on linearity.",
+    "subject": "LL",
+    "predicate": "model",
+    "object": "programming paradigms",
+    "evidence_span": "LL to model programming paradigms",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-116:0",
+    "batch_id": "arxiv-116",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "435c2d8fd8cc898e23c0323687a4ed524472f7fdca38314e68f8ff18e5dd208d",
+    "source_text": "Generative AI and large language models (LLMs) have shown strong capabilities in code understanding, but their use in cybersecurity, particularly for malware detection and analysis, remains limited.",
+    "subject": "Generative AI",
+    "predicate": "have shown",
+    "object": "strong capabilities in code understanding",
+    "evidence_span": "Generative AI and large language models (LLMs) have shown strong capabilities in code understanding",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-117:0",
+    "batch_id": "arxiv-117",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "6d18cee4c3a0ac4f8a46d7137f6fbb0a5dfd2243e8ff55296e94b7567f6a098b",
+    "source_text": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting, even in the presence of complex code obfuscation.",
+    "subject": "XGen-Q",
+    "predicate": "uses",
+    "object": "multi-stage prompt strategy",
+    "evidence_span": "XGen-Q uses a multi-stage prompt strategy",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:1",
+    "batch_id": "arxiv-117",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "6d18cee4c3a0ac4f8a46d7137f6fbb0a5dfd2243e8ff55296e94b7567f6a098b",
+    "source_text": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting, even in the presence of complex code obfuscation.",
+    "subject": "XGen-Q",
+    "predicate": "uses",
+    "object": "retrieval-augmented generation",
+    "evidence_span": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:2",
+    "batch_id": "arxiv-117",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "6d18cee4c3a0ac4f8a46d7137f6fbb0a5dfd2243e8ff55296e94b7567f6a098b",
+    "source_text": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting, even in the presence of complex code obfuscation.",
+    "subject": "XGen-Q",
+    "predicate": "delivers",
+    "object": "reliable malware identification",
+    "evidence_span": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-117:3",
+    "batch_id": "arxiv-117",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_fingerprint": "6d18cee4c3a0ac4f8a46d7137f6fbb0a5dfd2243e8ff55296e94b7567f6a098b",
+    "source_text": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting, even in the presence of complex code obfuscation.",
+    "subject": "XGen-Q",
+    "predicate": "delivers",
+    "object": "detailed forensic reporting",
+    "evidence_span": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-119:0",
+    "batch_id": "arxiv-119",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_fingerprint": "eefa8589cfd53b785b3204b2fcdf21cc616070a9f555137ce8502d6dceaa311e",
+    "source_text": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory to partition samples into gradient flow cells where outcomes exhibit monotonic behavior.",
+    "subject": "Gradient flow decomposition",
+    "predicate": "uses",
+    "object": "path-monotonicity-validated discrete Morse theory",
+    "evidence_span": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-119:1",
+    "batch_id": "arxiv-119",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_fingerprint": "eefa8589cfd53b785b3204b2fcdf21cc616070a9f555137ce8502d6dceaa311e",
+    "source_text": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory to partition samples into gradient flow cells where outcomes exhibit monotonic behavior.",
+    "subject": "Gradient flow decomposition",
+    "predicate": "partition",
+    "object": "samples",
+    "evidence_span": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory to partition samples",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  }
+]

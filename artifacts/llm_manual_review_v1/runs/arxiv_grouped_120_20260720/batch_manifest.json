@@ -1,0 +1,39 @@
+{
+  "run_id": "arxiv_grouped_120_20260720",
+  "model": "gemini-3.1-flash-lite",
+  "source_kind": "arxiv_stored_official_records",
+  "source_sentence_count": 120,
+  "max_sentences_per_source": 2,
+  "raw_response_count": 120,
+  "raw_triple_count": 191,
+  "manual_review_candidate_count": 148,
+  "review_grouping": "explicit_heuristics_for_manual_review_only_v1",
+  "primary_review_group_counts": {
+    "anaphora_likely": 15,
+    "attachment_shape_flag": 1,
+    "clean_no_flag": 80,
+    "generic_property_likely": 51,
+    "temporal_referent_likely": 1
+  },
+  "flag_label_counts": {
+    "anaphora_likely": 15,
+    "attachment_shape_flag": 1,
+    "generic_property_likely": 58,
+    "temporal_referent_likely": 1
+  },
+  "node_quality_rejection_count": 43,
+  "node_quality_mode": "unchanged_filter_with_proposal_local_literal_index",
+  "request_delay_seconds": 5.0,
+  "maximum_rpm": 12.0,
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "promoted_overlay_modified": false,
+  "serving_memory_modified": false,
+  "precision_gate_run": false,
+  "manual_review_complete": true,
+  "manual_accepted_proposal_count": 36,
+  "manual_rejected_candidate_count": 112,
+  "manual_accept_rate": 0.24324324324324326,
+  "manual_review_decisions_path": "manual_review_decisions.json",
+  "proposal_overlay_path": "manual_accepted_proposal_overlay.json"
+}

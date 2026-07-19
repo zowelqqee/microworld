@@ -1,0 +1,515 @@
+[
+  {
+    "id": "pilot-00",
+    "source_text": "Lastly, while GAs optimizes models (based on evolutionary processes) for better outcomes, probabilistic reasoning lowers their statistical uncertainties.",
+    "triples": [
+      {
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models"
+      },
+      {
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 61,
+      "total_tokens": 226,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-01",
+    "source_text": "Based on the needs identified from a formative study, this paper presents NB2Slides, an AI system that facilitates users to compose presentations of their data science work.",
+    "triples": [
+      {
+        "subject": "this paper",
+        "predicate": "presents",
+        "object": "NB2Slides",
+        "evidence_span": "this paper presents NB2Slides"
+      },
+      {
+        "subject": "NB2Slides",
+        "predicate": "facilitates",
+        "object": "users to compose presentations of their data science work",
+        "evidence_span": "NB2Slides, an AI system that facilitates users to compose presentations of their data science work."
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 171,
+      "completion_tokens": 81,
+      "total_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-02",
+    "source_text": "Yet adding a focus on the universality of the physicist approach as a generic path to investigate a topic.",
+    "triples": [
+      {
+        "subject": "the physicist approach",
+        "predicate": "is",
+        "object": "a generic path to investigate a topic",
+        "evidence_span": "the universality of the physicist approach as a generic path to investigate a topic"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 161,
+      "completion_tokens": 48,
+      "total_tokens": 209,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-03",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "triples": [
+      {
+        "subject": "SciServer",
+        "predicate": "builds upon and extends",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools"
+      },
+      {
+        "subject": "SkyServer system of server-side tools",
+        "predicate": "introduced",
+        "object": "the astronomical community to SQL (Structured Query Language)",
+        "evidence_span": "that introduced the astronomical community to SQL (Structured Query Language)"
+      },
+      {
+        "subject": "SkyServer system of server-side tools",
+        "predicate": "has been serving",
+        "object": "the Sloan Digital Sky Survey catalog data to the public",
+        "evidence_span": "and has been serving the Sloan Digital Sky Survey catalog data to the public."
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 180,
+      "completion_tokens": 142,
+      "total_tokens": 322,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-04",
+    "source_text": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+    "triples": [
+      {
+        "subject": "REGAI",
+        "predicate": "improves on",
+        "object": "the performance of both classical LLMs and RAG-based LLM techniques",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques."
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 160,
+      "completion_tokens": 63,
+      "total_tokens": 223,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-05",
+    "source_text": "Based on this simulation, we propose a novel tutor model for adaptive training, which considers students' proficiency before and during an ongoing training session.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel tutor model for adaptive training",
+        "evidence_span": "we propose a novel tutor model for adaptive training"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 39,
+      "total_tokens": 206,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-06",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "triples": [
+      {
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities"
+      },
+      {
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries to achieve either remote code execution or information disclosure",
+        "evidence_span": "that allow adversaries to achieve either remote code execution or information disclosure."
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 87,
+      "total_tokens": 251,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-07",
+    "source_text": "Existing AML threat evaluation approaches focus primarily on technical attack robustness, overlooking crucial real-world factors like deployment environments, system dependencies, and attack feasibility.",
+    "triples": [
+      {
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "focus primarily on",
+        "object": "technical attack robustness",
+        "evidence_span": "focus primarily on technical attack robustness"
+      },
+      {
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "overlook",
+        "object": "crucial real-world factors",
+        "evidence_span": "overlooking crucial real-world factors"
+      },
+      {
+        "subject": "crucial real-world factors",
+        "predicate": "include",
+        "object": "deployment environments, system dependencies, and attack feasibility",
+        "evidence_span": "like deployment environments, system dependencies, and attack feasibility"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 110,
+      "total_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-08",
+    "source_text": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare to ensure equitable outcomes across diverse patient demographics.",
+    "triples": [
+      {
+        "subject": "This study",
+        "predicate": "addresses",
+        "object": "the crucial need for fairness and explainability in AI applications within healthcare",
+        "evidence_span": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 52,
+      "total_tokens": 216,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-09",
+    "source_text": "AutoSlim uses Random Forest classification to prune low-impact transitions based on edge scores and structural features, significantly reducing automata graph density while preserving semantic correctness.",
+    "triples": [
+      {
+        "subject": "AutoSlim",
+        "predicate": "uses",
+        "object": "Random Forest classification",
+        "evidence_span": "AutoSlim uses Random Forest classification"
+      },
+      {
+        "subject": "Random Forest classification",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "to prune low-impact transitions"
+      },
+      {
+        "subject": "low-impact transitions",
+        "predicate": "are based on",
+        "object": "edge scores and structural features",
+        "evidence_span": "based on edge scores and structural features"
+      },
+      {
+        "subject": "AutoSlim",
+        "predicate": "reduces",
+        "object": "automata graph density",
+        "evidence_span": "significantly reducing automata graph density"
+      },
+      {
+        "subject": "AutoSlim",
+        "predicate": "preserves",
+        "object": "semantic correctness",
+        "evidence_span": "while preserving semantic correctness"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 169,
+      "completion_tokens": 145,
+      "total_tokens": 314,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-10",
+    "source_text": "We design a learning-based model (ProbCT) to achieve CT of such clouds, based on noisy multi-view spaceborne images.",
+    "triples": [
+      {
+        "subject": "We",
+        "predicate": "design",
+        "object": "a learning-based model (ProbCT)",
+        "evidence_span": "We design a learning-based model (ProbCT)"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 40,
+      "total_tokens": 205,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-11",
+    "source_text": "With a focus on trapped-ion simulators, we numerically benchmark both methods and show that high-fidelity wave packets can be achieved in near-term experiments.",
+    "triples": [
+      {
+        "subject": "methods",
+        "predicate": "can achieve",
+        "object": "high-fidelity wave packets",
+        "evidence_span": "show that high-fidelity wave packets can be achieved in near-term experiments."
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 170,
+      "completion_tokens": 43,
+      "total_tokens": 213,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-12",
+    "source_text": "Based on these results, we construct debiased estimators that are asymptotically Gaussian, allowing hypothesis testing for linear combinations of precision matrix entries across populations.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "construct",
+        "object": "debiased estimators",
+        "evidence_span": "we construct debiased estimators"
+      },
+      {
+        "subject": "debiased estimators",
+        "predicate": "are",
+        "object": "asymptotically Gaussian",
+        "evidence_span": "debiased estimators that are asymptotically Gaussian"
+      },
+      {
+        "subject": "debiased estimators",
+        "predicate": "allow",
+        "object": "hypothesis testing for linear combinations of precision matrix entries across populations",
+        "evidence_span": "allowing hypothesis testing for linear combinations of precision matrix entries across populations"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 172,
+      "completion_tokens": 113,
+      "total_tokens": 285,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-13",
+    "source_text": "In this paper, we propose a novel architecture based on Quantum Artificial Intelligence by enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles : Quantum Neural Networks for multimodal sensor fusion, Nav-Q for Quantum reinforcement learning for navigation policy optimization and finally post-quantum cryptographic protocols for secure communication.",
+    "triples": [
+      {
+        "subject": "this paper",
+        "predicate": "proposes",
+        "object": "a novel architecture based on Quantum Artificial Intelligence",
+        "evidence_span": "we propose a novel architecture based on Quantum Artificial Intelligence"
+      },
+      {
+        "subject": "architecture",
+        "predicate": "enables",
+        "object": "quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "evidence_span": "enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles"
+      },
+      {
+        "subject": "Quantum Neural Networks",
+        "predicate": "are used for",
+        "object": "multimodal sensor fusion",
+        "evidence_span": "Quantum Neural Networks for multimodal sensor fusion"
+      },
+      {
+        "subject": "Nav-Q",
+        "predicate": "is used for",
+        "object": "Quantum reinforcement learning for navigation policy optimization",
+        "evidence_span": "Nav-Q for Quantum reinforcement learning for navigation policy optimization"
+      },
+      {
+        "subject": "post-quantum cryptographic protocols",
+        "predicate": "are used for",
+        "object": "secure communication",
+        "evidence_span": "post-quantum cryptographic protocols for secure communication"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 204,
+      "completion_tokens": 199,
+      "total_tokens": 403,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "id": "pilot-14",
+    "source_text": "Thus, the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security.",
+    "triples": [
+      {
+        "subject": "the proposed framework",
+        "predicate": "addresses",
+        "object": "fundamental challenges in autonomous vehicles navigation",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation"
+      },
+      {
+        "subject": "the proposed framework",
+        "predicate": "provides",
+        "object": "quantum performance and future proof security",
+        "evidence_span": "by providing quantum performance and future proof security"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 160,
+      "completion_tokens": 75,
+      "total_tokens": 235,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  }
+]

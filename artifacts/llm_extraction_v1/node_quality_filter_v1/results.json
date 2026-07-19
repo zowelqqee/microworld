@@ -1,0 +1,1196 @@
+{
+  "openai_gpt4o_mini": {
+    "raw_candidate_count": 33,
+    "pre_gate_kept": 0,
+    "pre_gate_rejected": 33,
+    "pre_gate_reason_counts": {
+      "authorial_self_reference": 8,
+      "event_like_node": 3,
+      "generic_abstract_node": 12,
+      "list_derived_context": 3,
+      "unresolvable_entity": 33
+    },
+    "existing_gate_before": {
+      "input": 33,
+      "admitted": 0,
+      "quarantined": 33,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {
+        "ambiguous_relation": 29,
+        "missing_explicit_evidence": 33
+      }
+    },
+    "existing_gate_after": {
+      "input": 0,
+      "admitted": 0,
+      "quarantined": 0,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {}
+    },
+    "rejected_candidates": [
+      {
+        "id": "pilot-00",
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-00",
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "this paper",
+        "predicate": "presents",
+        "object": "NB2Slides",
+        "evidence_span": "this paper presents NB2Slides",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "NB2Slides",
+        "predicate": "facilitates",
+        "object": "users to compose presentations of their data science work",
+        "evidence_span": "NB2Slides, an AI system that facilitates users to compose presentations of their data science work.",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-02",
+        "subject": "the physicist approach",
+        "predicate": "is",
+        "object": "a generic path to investigate a topic",
+        "evidence_span": "the universality of the physicist approach as a generic path to investigate a topic",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SciServer",
+        "predicate": "builds upon and extends",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SkyServer system of server-side tools",
+        "predicate": "introduced",
+        "object": "the astronomical community to SQL (Structured Query Language)",
+        "evidence_span": "that introduced the astronomical community to SQL (Structured Query Language)",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SkyServer system of server-side tools",
+        "predicate": "has been serving",
+        "object": "the Sloan Digital Sky Survey catalog data to the public",
+        "evidence_span": "and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-04",
+        "subject": "REGAI",
+        "predicate": "improves on",
+        "object": "the performance of both classical LLMs and RAG-based LLM techniques",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-05",
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel tutor model for adaptive training",
+        "evidence_span": "we propose a novel tutor model for adaptive training",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries to achieve either remote code execution or information disclosure",
+        "evidence_span": "that allow adversaries to achieve either remote code execution or information disclosure.",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "focus primarily on",
+        "object": "technical attack robustness",
+        "evidence_span": "focus primarily on technical attack robustness",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "overlook",
+        "object": "crucial real-world factors",
+        "evidence_span": "overlooking crucial real-world factors",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "crucial real-world factors",
+        "predicate": "include",
+        "object": "deployment environments, system dependencies, and attack feasibility",
+        "evidence_span": "like deployment environments, system dependencies, and attack feasibility",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-08",
+        "subject": "This study",
+        "predicate": "addresses",
+        "object": "the crucial need for fairness and explainability in AI applications within healthcare",
+        "evidence_span": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "uses",
+        "object": "Random Forest classification",
+        "evidence_span": "AutoSlim uses Random Forest classification",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "Random Forest classification",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "to prune low-impact transitions",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "low-impact transitions",
+        "predicate": "are based on",
+        "object": "edge scores and structural features",
+        "evidence_span": "based on edge scores and structural features",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "reduces",
+        "object": "automata graph density",
+        "evidence_span": "significantly reducing automata graph density",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "preserves",
+        "object": "semantic correctness",
+        "evidence_span": "while preserving semantic correctness",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "We",
+        "predicate": "design",
+        "object": "a learning-based model (ProbCT)",
+        "evidence_span": "We design a learning-based model (ProbCT)",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-11",
+        "subject": "methods",
+        "predicate": "can achieve",
+        "object": "high-fidelity wave packets",
+        "evidence_span": "show that high-fidelity wave packets can be achieved in near-term experiments.",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "we",
+        "predicate": "construct",
+        "object": "debiased estimators",
+        "evidence_span": "we construct debiased estimators",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "debiased estimators",
+        "predicate": "are",
+        "object": "asymptotically Gaussian",
+        "evidence_span": "debiased estimators that are asymptotically Gaussian",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "debiased estimators",
+        "predicate": "allow",
+        "object": "hypothesis testing for linear combinations of precision matrix entries across populations",
+        "evidence_span": "allowing hypothesis testing for linear combinations of precision matrix entries across populations",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "this paper",
+        "predicate": "proposes",
+        "object": "a novel architecture based on Quantum Artificial Intelligence",
+        "evidence_span": "we propose a novel architecture based on Quantum Artificial Intelligence",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "architecture",
+        "predicate": "enables",
+        "object": "quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "evidence_span": "enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Quantum Neural Networks",
+        "predicate": "are used for",
+        "object": "multimodal sensor fusion",
+        "evidence_span": "Quantum Neural Networks for multimodal sensor fusion",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Nav-Q",
+        "predicate": "is used for",
+        "object": "Quantum reinforcement learning for navigation policy optimization",
+        "evidence_span": "Nav-Q for Quantum reinforcement learning for navigation policy optimization",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "post-quantum cryptographic protocols",
+        "predicate": "are used for",
+        "object": "secure communication",
+        "evidence_span": "post-quantum cryptographic protocols for secure communication",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "the proposed framework",
+        "predicate": "addresses",
+        "object": "fundamental challenges in autonomous vehicles navigation",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "the proposed framework",
+        "predicate": "provides",
+        "object": "quantum performance and future proof security",
+        "evidence_span": "by providing quantum performance and future proof security",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      }
+    ]
+  },
+  "gemini_2_5_flash": {
+    "raw_candidate_count": 36,
+    "pre_gate_kept": 0,
+    "pre_gate_rejected": 36,
+    "pre_gate_reason_counts": {
+      "authorial_self_reference": 10,
+      "event_like_node": 4,
+      "generic_abstract_node": 12,
+      "list_derived_context": 3,
+      "unresolvable_entity": 36
+    },
+    "existing_gate_before": {
+      "input": 36,
+      "admitted": 0,
+      "quarantined": 36,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {
+        "ambiguous_relation": 32,
+        "missing_explicit_evidence": 36
+      }
+    },
+    "existing_gate_after": {
+      "input": 0,
+      "admitted": 0,
+      "quarantined": 0,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {}
+    },
+    "rejected_candidates": [
+      {
+        "id": "pilot-00",
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-00",
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "their statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "this paper",
+        "predicate": "presents",
+        "object": "NB2Slides",
+        "evidence_span": "this paper presents NB2Slides",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "NB2Slides",
+        "predicate": "facilitates",
+        "object": "users to compose presentations of their data science work",
+        "evidence_span": "NB2Slides, an AI system that facilitates users to compose presentations of their data science work",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SciServer",
+        "predicate": "builds upon",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SciServer",
+        "predicate": "extends",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "the SkyServer system of server-side tools",
+        "predicate": "introduced",
+        "object": "the astronomical community",
+        "evidence_span": "that introduced the astronomical community to SQL (Structured Query Language)",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "the SkyServer system of server-side tools",
+        "predicate": "has been serving",
+        "object": "the Sloan Digital Sky Survey catalog data",
+        "evidence_span": "and has been serving the Sloan Digital Sky Survey catalog data to the public",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-04",
+        "subject": "REGAI",
+        "predicate": "improves on",
+        "object": "the performance of both classical LLMs and RAG-based LLM techniques",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-05",
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel tutor model for adaptive training",
+        "evidence_span": "we propose a novel tutor model for adaptive training",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-05",
+        "subject": "a novel tutor model",
+        "predicate": "considers",
+        "object": "students' proficiency before and during an ongoing training session",
+        "evidence_span": "which considers students' proficiency before and during an ongoing training session",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries to achieve either remote code execution or information disclosure",
+        "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "focus primarily on",
+        "object": "technical attack robustness",
+        "evidence_span": "Existing AML threat evaluation approaches focus primarily on technical attack robustness",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "overlooking",
+        "object": "crucial real-world factors like deployment environments, system dependencies, and attack feasibility",
+        "evidence_span": "overlooking crucial real-world factors like deployment environments, system dependencies, and attack feasibility",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-08",
+        "subject": "This study",
+        "predicate": "addresses",
+        "object": "the crucial need for fairness and explainability in AI applications within healthcare",
+        "evidence_span": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "uses",
+        "object": "Random Forest classification",
+        "evidence_span": "AutoSlim uses Random Forest classification",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "AutoSlim uses Random Forest classification to prune low-impact transitions",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "Random Forest classification",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "Random Forest classification to prune low-impact transitions",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "We",
+        "predicate": "design",
+        "object": "a learning-based model (ProbCT)",
+        "evidence_span": "We design a learning-based model (ProbCT)",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "ProbCT",
+        "predicate": "is a",
+        "object": "learning-based model",
+        "evidence_span": "a learning-based model (ProbCT)",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "CT",
+        "predicate": "is of",
+        "object": "such clouds",
+        "evidence_span": "CT of such clouds",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "CT of such clouds",
+        "predicate": "is based on",
+        "object": "noisy multi-view spaceborne images",
+        "evidence_span": "CT of such clouds, based on noisy multi-view spaceborne images",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-11",
+        "subject": "we",
+        "predicate": "numerically benchmark",
+        "object": "both methods",
+        "evidence_span": "we numerically benchmark both methods",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-11",
+        "subject": "we",
+        "predicate": "show",
+        "object": "that high-fidelity wave packets can be achieved in near-term experiments",
+        "evidence_span": "we numerically benchmark both methods and show that high-fidelity wave packets can be achieved in near-term experiments",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "event_like_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "we",
+        "predicate": "construct",
+        "object": "debiased estimators",
+        "evidence_span": "we construct debiased estimators",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "debiased estimators",
+        "predicate": "are",
+        "object": "asymptotically Gaussian",
+        "evidence_span": "debiased estimators that are asymptotically Gaussian",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "debiased estimators",
+        "predicate": "allow",
+        "object": "hypothesis testing for linear combinations of precision matrix entries across populations",
+        "evidence_span": "allowing hypothesis testing for linear combinations of precision matrix entries across populations",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel architecture",
+        "evidence_span": "we propose a novel architecture",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "a novel architecture",
+        "predicate": "is based on",
+        "object": "Quantum Artificial Intelligence",
+        "evidence_span": "a novel architecture based on Quantum Artificial Intelligence",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "a novel architecture",
+        "predicate": "enables",
+        "object": "quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "evidence_span": "enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Quantum Neural Networks",
+        "predicate": "are for",
+        "object": "multimodal sensor fusion",
+        "evidence_span": "Quantum Neural Networks for multimodal sensor fusion",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Nav-Q",
+        "predicate": "is for",
+        "object": "Quantum reinforcement learning for navigation policy optimization",
+        "evidence_span": "Nav-Q for Quantum reinforcement learning for navigation policy optimization",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "post-quantum cryptographic protocols",
+        "predicate": "are for",
+        "object": "secure communication",
+        "evidence_span": "post-quantum cryptographic protocols for secure communication",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "the proposed framework",
+        "predicate": "addresses",
+        "object": "fundamental challenges in autonomous vehicles navigation",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "the proposed framework",
+        "predicate": "providing",
+        "object": "quantum performance and future proof security",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      }
+    ]
+  },
+  "gemini_3_1_flash_lite": {
+    "raw_candidate_count": 32,
+    "pre_gate_kept": 0,
+    "pre_gate_rejected": 32,
+    "pre_gate_reason_counts": {
+      "authorial_self_reference": 8,
+      "event_like_node": 3,
+      "generic_abstract_node": 16,
+      "list_derived_context": 3,
+      "unresolvable_entity": 32
+    },
+    "existing_gate_before": {
+      "input": 32,
+      "admitted": 0,
+      "quarantined": 32,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {
+        "ambiguous_relation": 27,
+        "missing_explicit_evidence": 31
+      }
+    },
+    "existing_gate_after": {
+      "input": 0,
+      "admitted": 0,
+      "quarantined": 0,
+      "duplicates": [],
+      "conflicts": [],
+      "quarantine_reason_counts": {}
+    },
+    "rejected_candidates": [
+      {
+        "id": "pilot-00",
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-00",
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "this paper",
+        "predicate": "presents",
+        "object": "NB2Slides",
+        "evidence_span": "this paper presents NB2Slides",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "NB2Slides",
+        "predicate": "is",
+        "object": "an AI system",
+        "evidence_span": "NB2Slides, an AI system",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-01",
+        "subject": "NB2Slides",
+        "predicate": "facilitates",
+        "object": "users to compose presentations of their data science work",
+        "evidence_span": "NB2Slides, an AI system that facilitates users to compose presentations of their data science work",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-02",
+        "subject": "physicist approach",
+        "predicate": "is",
+        "object": "generic path to investigate a topic",
+        "evidence_span": "the physicist approach as a generic path to investigate a topic",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SciServer",
+        "predicate": "builds upon",
+        "object": "SkyServer system",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SciServer",
+        "predicate": "extends",
+        "object": "SkyServer system",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SkyServer system",
+        "predicate": "introduced",
+        "object": "astronomical community to SQL",
+        "evidence_span": "SkyServer system of server-side tools that introduced the astronomical community to SQL",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-03",
+        "subject": "SkyServer system",
+        "predicate": "has been serving",
+        "object": "Sloan Digital Sky Survey catalog data",
+        "evidence_span": "SkyServer system... has been serving the Sloan Digital Sky Survey catalog data to the public",
+        "node_quality_reasons": [
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-04",
+        "subject": "REGAI",
+        "predicate": "improves on the performance of",
+        "object": "classical LLMs",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-04",
+        "subject": "REGAI",
+        "predicate": "improves on the performance of",
+        "object": "RAG-based LLM techniques",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-05",
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel tutor model for adaptive training",
+        "evidence_span": "we propose a novel tutor model for adaptive training",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-05",
+        "subject": "a novel tutor model for adaptive training",
+        "predicate": "considers",
+        "object": "students' proficiency",
+        "evidence_span": "a novel tutor model for adaptive training, which considers students' proficiency",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-06",
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries to achieve either remote code execution or information disclosure",
+        "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure",
+        "node_quality_reasons": [
+          "event_like_node",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-07",
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "focus primarily on",
+        "object": "technical attack robustness",
+        "evidence_span": "Existing AML threat evaluation approaches focus primarily on technical attack robustness",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-08",
+        "subject": "This study",
+        "predicate": "addresses",
+        "object": "the crucial need for fairness and explainability in AI applications within healthcare",
+        "evidence_span": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "uses",
+        "object": "Random Forest classification",
+        "evidence_span": "AutoSlim uses Random Forest classification",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "AutoSlim uses Random Forest classification to prune low-impact transitions",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-09",
+        "subject": "AutoSlim",
+        "predicate": "reduces",
+        "object": "automata graph density",
+        "evidence_span": "AutoSlim... significantly reducing automata graph density",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "We",
+        "predicate": "design",
+        "object": "learning-based model (ProbCT)",
+        "evidence_span": "We design a learning-based model (ProbCT)",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-10",
+        "subject": "learning-based model (ProbCT)",
+        "predicate": "achieve",
+        "object": "CT of such clouds",
+        "evidence_span": "a learning-based model (ProbCT) to achieve CT of such clouds",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-11",
+        "subject": "we",
+        "predicate": "benchmark",
+        "object": "both methods",
+        "evidence_span": "we numerically benchmark both methods",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-11",
+        "subject": "high-fidelity wave packets",
+        "predicate": "can be achieved in",
+        "object": "near-term experiments",
+        "evidence_span": "high-fidelity wave packets can be achieved in near-term experiments",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-12",
+        "subject": "debiased estimators",
+        "predicate": "are",
+        "object": "asymptotically Gaussian",
+        "evidence_span": "debiased estimators that are asymptotically Gaussian",
+        "node_quality_reasons": [
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Quantum Neural Networks",
+        "predicate": "are used for",
+        "object": "multimodal sensor fusion",
+        "evidence_span": "Quantum Neural Networks for multimodal sensor fusion",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "Nav-Q",
+        "predicate": "is used for",
+        "object": "Quantum reinforcement learning for navigation policy optimization",
+        "evidence_span": "Nav-Q for Quantum reinforcement learning for navigation policy optimization",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-13",
+        "subject": "post-quantum cryptographic protocols",
+        "predicate": "are used for",
+        "object": "secure communication",
+        "evidence_span": "post-quantum cryptographic protocols for secure communication",
+        "node_quality_reasons": [
+          "list_derived_context",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "proposed framework",
+        "predicate": "addresses",
+        "object": "fundamental challenges in autonomous vehicles navigation",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "proposed framework",
+        "predicate": "provides",
+        "object": "quantum performance",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      },
+      {
+        "id": "pilot-14",
+        "subject": "proposed framework",
+        "predicate": "provides",
+        "object": "future proof security",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security",
+        "node_quality_reasons": [
+          "authorial_self_reference",
+          "generic_abstract_node",
+          "unresolvable_entity"
+        ]
+      }
+    ]
+  }
+}

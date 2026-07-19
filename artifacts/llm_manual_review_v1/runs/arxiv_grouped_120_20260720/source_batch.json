@@ -1,0 +1,842 @@
+[
+  {
+    "id": "arxiv-000",
+    "source_title": "`What is a Thing?': Topos Theory in the Foundations of Physics",
+    "source_url": "http://arxiv.org/abs/0803.0417v1",
+    "source_text": "In doing so we provide a new answer to Heidegger's timeless question ``What is a thing?''.",
+    "source_fingerprint": "b06f4071db54b2c1b8d3fab0bba312bef80206a4f85da01c5d7cd98a9b1f06b2"
+  },
+  {
+    "id": "arxiv-001",
+    "source_title": "`What is a Thing?': Topos Theory in the Foundations of Physics",
+    "source_url": "http://arxiv.org/abs/0803.0417v1",
+    "source_text": "Classical physics uses the topos of sets.",
+    "source_fingerprint": "19bc1670a6ca951a705ebbf89948607214ed1848eb958275fd848e167d1ebf91"
+  },
+  {
+    "id": "arxiv-002",
+    "source_title": "Dynamic Multimedia Content Retrieval System in Distributed Environment",
+    "source_url": "http://arxiv.org/abs/0909.0118v1",
+    "source_text": "WiCoM enables remote management of web resources.",
+    "source_fingerprint": "aa7c1b079baff47faf59715137e5c5e20905f2ddd434a4b5d92dcbcd2780656c"
+  },
+  {
+    "id": "arxiv-003",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_text": "One implementation uses surface codes created by forming defects in a highly-entangled cluster state.",
+    "source_fingerprint": "71bc38d86781a08c013218dd86c83dab3b816d76c65fa8bf81ab1c15abfb3c5d"
+  },
+  {
+    "id": "arxiv-004",
+    "source_title": "Quantum picturalism for topological cluster-state computing",
+    "source_url": "http://arxiv.org/abs/1101.4722v3",
+    "source_text": "In this paper we apply the category-theoretic work of Abramsky and Coecke to the topological cluster-state model of quantum computing to give a high-level graphical language that enables direct translation between quantum processes and physical patterns of measurement in a computer - a \"compiler language\".",
+    "source_fingerprint": "1cde12979fb6f745d30ccf4a04c2216abb299f3a5c1a7f09e63aff96199d6327"
+  },
+  {
+    "id": "arxiv-005",
+    "source_title": "Low-energy break in the spectrum of Galactic cosmic rays",
+    "source_url": "http://arxiv.org/abs/1112.5541v1",
+    "source_text": "Detection of a low-energy break enables a measurement of GCR energy density in the interstellar space 0.9+/-0.3 eV/cm3.",
+    "source_fingerprint": "f9eb02e17af4f5df0648f022c390d979b256b48654183096355009de27e0d6a3"
+  },
+  {
+    "id": "arxiv-006",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a"
+  },
+  {
+    "id": "arxiv-007",
+    "source_title": "POMDPs Make Better Hackers: Accounting for Uncertainty in Penetration Testing",
+    "source_url": "http://arxiv.org/abs/1307.8182v1",
+    "source_text": "Doing so automatically allows for regular and systematic testing.",
+    "source_fingerprint": "94eaccd3a71dedc96cc2bebe2512a6f2b6de780d968550adc9bceec8a958372a"
+  },
+  {
+    "id": "arxiv-008",
+    "source_title": "POMDPs Make Better Hackers: Accounting for Uncertainty in Penetration Testing",
+    "source_url": "http://arxiv.org/abs/1307.8182v1",
+    "source_text": "Previous work uses classical planning, and requires costly pre-processes reducing this uncertainty by extensive application of scanning methods.",
+    "source_fingerprint": "12a551fb0b56d9b22c3de3a18f89c8f75023fcc2f1038b674524a88eed8afa1b"
+  },
+  {
+    "id": "arxiv-009",
+    "source_title": "Science with KRAKENS",
+    "source_url": "http://arxiv.org/abs/1506.03458v1",
+    "source_text": "KRAKENS uses a unique detector technology (MKIDs) to enable groundbreaking science across a wide range of astrophysical research topics.",
+    "source_fingerprint": "8faace6a760cbbdbdfd2c61d032b8766a84cd8e47ff5e8c114179f6c2550478d"
+  },
+  {
+    "id": "arxiv-010",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_text": "Declarative modeling uses symbolic expressions to represent models.",
+    "source_fingerprint": "47c6d269febd2766904116836d92d18a7bfc06accf9eb2631ca562f3c8c70f69"
+  },
+  {
+    "id": "arxiv-011",
+    "source_title": "Prospects for Declarative Mathematical Modeling of Complex Biological Systems",
+    "source_url": "http://arxiv.org/abs/1804.11044v2",
+    "source_text": "Examples of such computations on models include model analysis, relatively general-purpose model-reduction maps, and the initial phases of model implementation, all of which should preserve or approximate the mathematical semantics of a complex biological model.",
+    "source_fingerprint": "83b0dc7221eb1734ccae70554f2a00eb565249b96fef56f915e900d0d625cfd0"
+  },
+  {
+    "id": "arxiv-012",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_text": "MetaChem supports different levels of description, and has a formal description; we illustrate these using StringCatChem, a toy artificial chemistry.",
+    "source_fingerprint": "1cd7aa5bb6be60ce422cc8ab208c09b6a3d29b485bf78857bdbd6495c3d558e2"
+  },
+  {
+    "id": "arxiv-013",
+    "source_title": "MetaChem: An Algebraic Framework for Artificial Chemistries",
+    "source_url": "http://arxiv.org/abs/1905.12541v3",
+    "source_text": "MetaChem provides a route to standardisation, reuse, and composition of Artificial Chemistries and their tools.",
+    "source_fingerprint": "95c057b9bf62a71096fd4adcac5ab067c4608e39fa15522fe5e866d395abdbaf"
+  },
+  {
+    "id": "arxiv-014",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_text": "The AIBC is an Artificial Intelligence and blockchain technology based large-scale decentralized ecosystem that allows system-wide low-cost sharing of computing and storage resources.",
+    "source_fingerprint": "4ce218cecfabaafa152f1199546a09a969cb3feb52f18b86c6c69b72a1f78224"
+  },
+  {
+    "id": "arxiv-015",
+    "source_title": "Artificial Intelligence BlockCloud (AIBC) Technical Whitepaper",
+    "source_url": "http://arxiv.org/abs/1909.12063v1",
+    "source_text": "The AIBC consists of four layers: a fundamental layer, a resource layer, an application layer, and an ecosystem layer.",
+    "source_fingerprint": "52734797196fd893b293170dff807c960666d77c4373e002f36c4274dfa03f8c"
+  },
+  {
+    "id": "arxiv-016",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_text": "A research group can set up its own instance of MatD3 and publish scientific results or simply use an existing online MatD3 instance.",
+    "source_fingerprint": "00ac548f4d001b117dd3525afdfe414c3a9b252f1eb593d4309917d6bba09944"
+  },
+  {
+    "id": "arxiv-017",
+    "source_title": "MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design, and Dissemination",
+    "source_url": "http://arxiv.org/abs/2001.02135v1",
+    "source_text": "Disseminating research data in this form enables broader access, reproducibility, and repurposing of scientific products.",
+    "source_fingerprint": "5a28a2f0bdd1df2cb8c40851ac0c6ea64b74a29db1dbd9408bb4abd2177bb853"
+  },
+  {
+    "id": "arxiv-018",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "source_fingerprint": "c8179476fbb9c5cb807ec8ab4a1bc223c738e2a065e2bab21e6b9f2c4902e000"
+  },
+  {
+    "id": "arxiv-019",
+    "source_title": "SciServer: a Science Platform for Astronomy and Beyond",
+    "source_url": "http://arxiv.org/abs/2001.08619v2",
+    "source_text": "SciServer uses a Docker/VM based architecture to provide interactive and batch mode server-side analysis with scripting languages like Python and R in various environments including Jupyter (notebooks), RStudio and command-line in addition to traditional SQL-based data analysis.",
+    "source_fingerprint": "e6fdfc4291d768041d07040fbea8d8cf156f3f3fafbb8c7770a2bd638d1f59a1"
+  },
+  {
+    "id": "arxiv-020",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1"
+  },
+  {
+    "id": "arxiv-021",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_text": "HotFuzz uses micro-fuzzing, a genetic algorithm that evolves arbitrary Java objects in order to trigger the worst-case performance for a method under test.",
+    "source_fingerprint": "f97b7e8b171323044341776a6297269fedba9c19fa831c5bdda5f1dc2d3e0b69"
+  },
+  {
+    "id": "arxiv-022",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4"
+  },
+  {
+    "id": "arxiv-023",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_text": "SUMER uses techniques from semi-supervised learning and noise remediation to iteratively retrain a deployed model using intelligently-chosen predictions from the model as the labels for new training iterations.",
+    "source_fingerprint": "ff7405637fca6d841b5bd9ce33c80459247761314aeaa2ad561992966ab131b9"
+  },
+  {
+    "id": "arxiv-024",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_text": "Traditionally, cybersecurity experts assess and improve a company's capabilities.",
+    "source_fingerprint": "4903c063277262bd92b2659b4509e7d693ee4cf938441f304f0c412c519fadea"
+  },
+  {
+    "id": "arxiv-025",
+    "source_title": "Automating the Communication of Cybersecurity Knowledge: Multi-Case Study",
+    "source_url": "http://arxiv.org/abs/2007.07602v2",
+    "source_text": "CYSEC uses assessment questions and recommendations to communicate cybersecurity knowledge to the end-user SMBs and encourage self-motivated change.",
+    "source_fingerprint": "462bff6959602203b230dc9f7ebf27a05c22ff27a9ff561e7254cfda47389b02"
+  },
+  {
+    "id": "arxiv-026",
+    "source_title": "Quantum steering with vector vortex photon states with the detection loophole closed",
+    "source_url": "http://arxiv.org/abs/2009.03918v2",
+    "source_text": "Violating a nonlocality inequality enables the most powerful remote quantum information tasks and fundamental tests of quantum physics.",
+    "source_fingerprint": "9c1e0e99482a17d43da64292f6ee683d902c79c015bfd64b09e5409c36f58bd7"
+  },
+  {
+    "id": "arxiv-027",
+    "source_title": "Phase A Science Case for MAVIS -- The Multi-conjugate Adaptive-optics Visible Imager-Spectrograph for the VLT Adaptive Optics Facility",
+    "source_url": "http://arxiv.org/abs/2009.09242v2",
+    "source_text": "MAVIS uses two deformable mirrors in addition to the deformable secondary mirror of the AOF, providing a mean V-band Strehl ratio of >10% (goal >15%) across a relatively large (30 arc second) science field.",
+    "source_fingerprint": "7321cb4fd55ed5483f7ed5f744c24771095970c3e9cce4f3ef040cae42bb5a0b"
+  },
+  {
+    "id": "arxiv-028",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_text": "Using light for communication enables high fan-out as well as low-latency signaling across large systems with no traffic-dependent bottlenecks.",
+    "source_fingerprint": "950cf05960d743d8f078c8cbaf9d8aa1a9635ae8732fc4ac9f392d1bef407c09"
+  },
+  {
+    "id": "arxiv-029",
+    "source_title": "Optoelectronic Intelligence",
+    "source_url": "http://arxiv.org/abs/2010.08690v1",
+    "source_text": "Operation at 4\\,K enables the use of single-photon detectors and silicon light sources, two features that lead to efficiency and economical scalability.",
+    "source_fingerprint": "25ae64d52aebf15d3a97f4b168d9e44a02cd3a51e9c457c28704fae1dc14d8a5"
+  },
+  {
+    "id": "arxiv-030",
+    "source_title": "Evaluating the Effect of Activity Based Method of Teaching Mathematics on Nigerian Secondary School Students Achievement in Mathematics",
+    "source_url": "http://arxiv.org/abs/2011.10785v1",
+    "source_text": "A shortfall in the knowledge of the students in Mathematics means that the goal may not be realized, hence the need to improve teaching methods for solving the problem of poor performance in the subject.",
+    "source_fingerprint": "9b33a58ecdb2731bdb9b06bc000b9cd5f739f4fb8c632c7c1fdb7f96ce36c26b"
+  },
+  {
+    "id": "arxiv-031",
+    "source_title": "Evaluating the Effect of Activity Based Method of Teaching Mathematics on Nigerian Secondary School Students Achievement in Mathematics",
+    "source_url": "http://arxiv.org/abs/2011.10785v1",
+    "source_text": "The paper recommends among others that secondary school Mathematics teachers should be trained and retrained to update their knowledge in the use of activity-based teaching for making the teaching and learning of Mathematics more interesting and rewarding.",
+    "source_fingerprint": "a073472cfc9dc2fdacf94490c165df44eb67e8fe11204b0ece0863ad9e288f36"
+  },
+  {
+    "id": "arxiv-032",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_text": "Physiological computing uses human physiological data as system inputs in real time.",
+    "source_fingerprint": "1df5b4178b10e147682b0ed4fa4208fbaea9687fd0e8b1a4529da996288bc5a1"
+  },
+  {
+    "id": "arxiv-033",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_text": "It includes, or significantly overlaps with, brain-computer interfaces, affective computing, adaptive automation, health informatics, and physiological signal based biometrics.",
+    "source_fingerprint": "cb2f50179a4ce493b01f8840d8b10f0485323d5db17ee3b50c3eaa52301e8230"
+  },
+  {
+    "id": "arxiv-034",
+    "source_title": "Climate Change Valuation Adjustment (CCVA) using parameterized climate change impacts",
+    "source_url": "http://arxiv.org/abs/2102.10691v3",
+    "source_text": "Finally we provide quantification of examples of typical interest where there is risk of economic stress from sea level change up to 2101, and from transformations of business models.",
+    "source_fingerprint": "97f6db949eb6d0c00f5e6f1de5c4f686f5b4d9e2d97fab2852687b45b781b562"
+  },
+  {
+    "id": "arxiv-035",
+    "source_title": "Climate Change Valuation Adjustment (CCVA) using parameterized climate change impacts",
+    "source_url": "http://arxiv.org/abs/2102.10691v3",
+    "source_text": "Using a parameterized approach enables discussion with stakeholders of economic impacts on CVA+FVA, whatever the details behind the climate impact.",
+    "source_fingerprint": "e66ea08d55b85d0554f7d09c9ab6aa91f0f4d15b95db555c41be05ef8bfa4e00"
+  },
+  {
+    "id": "arxiv-036",
+    "source_title": "Fit without fear: remarkable mathematical phenomena of deep learning through the prism of interpolation",
+    "source_url": "http://arxiv.org/abs/2105.14368v1",
+    "source_text": "Over-parameterization enables interpolation and provides flexibility to select a right interpolating model.",
+    "source_fingerprint": "8b2a46d0d97795f6752baf76f12181a38774b7c483fdca0eeb3122917a6e608b"
+  },
+  {
+    "id": "arxiv-037",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_text": "To detect change points, a number of unsupervised algorithms have been developed which are based on different principles.",
+    "source_fingerprint": "dfdc16466f0ed8e1f74e36334312119908031d69d4bd58f0e6589e16795cc04e"
+  },
+  {
+    "id": "arxiv-038",
+    "source_title": "Interactive Change Point Detection using optimisation approach and Bayesian statistics applied to real world applications",
+    "source_url": "http://arxiv.org/abs/2106.09691v1",
+    "source_text": "Another approach uses Bayesian statistics to calculate the posterior probability distribution of a specific point being a change point.",
+    "source_fingerprint": "fa9b419f2fb0e455508d297d4493e0481ce3e633228ca2e1dfd12b36c982f6b7"
+  },
+  {
+    "id": "arxiv-039",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_text": "We generalize standard credal set models for imprecise probabilities to include higher order credal sets -- confidences about confidences.",
+    "source_fingerprint": "cf7b147fd9c3e50bacbc3c753a4e920ade28e8356959c4eaa8e259d85ae034b0"
+  },
+  {
+    "id": "arxiv-040",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_text": "We conjecture that when higher order credal sets contain all possible probability functions, then in the limiting case the highest order confidences converge to form a uniform distribution over the first order credal set, where we define uniformity in terms of the statistical distance metric (total variation distance).",
+    "source_fingerprint": "a579e23bb05b2cc4790587fc430ce38fd22c886ec764f43a24bb2fb079efb5ac"
+  },
+  {
+    "id": "arxiv-041",
+    "source_title": "Adaptability and the Pivot Penalty in Science and Technology",
+    "source_url": "http://arxiv.org/abs/2107.06476v2",
+    "source_text": "COVID-19 provides a high-scale case study, where many researchers engaged the pandemic, yet the pivot penalty remains severe.",
+    "source_fingerprint": "f88f55fd5914b5f16d8abe2409559acb354b63a9f7ab2be6ad468adae98f0fe0"
+  },
+  {
+    "id": "arxiv-042",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_text": "AutoGrad uses Processing, which is used in the emerging Interactive Media Arts, and pioneers grading systems utilized outside the sciences to assist tuition in the Arts.",
+    "source_fingerprint": "a4ec60c1a9d5c56da16a746c738f097248cd50dc1f45962c9677c42107173915"
+  },
+  {
+    "id": "arxiv-043",
+    "source_title": "AutoGrad: Automated Grading Software for Mobile Game Assignments in SuaCode Courses",
+    "source_url": "http://arxiv.org/abs/2107.12244v1",
+    "source_text": "AutoGrad employs APIs to download the assignments from the course platform, performs static and dynamic analysis on the assignment to evaluate the graphical output of the program, and returns the grade and feedback to the student.",
+    "source_fingerprint": "a5770365b82b8b07daa5d005ce525f73f053a437b01dd152ef9ba311643b74d4"
+  },
+  {
+    "id": "arxiv-044",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_text": "In this study, we show that a novel DL-based causal language model enables single-shot evasion (i.e., with only one query to malware detector) by treating the content of the malware executable as a byte sequence and training a Generative Pre-Trained Transformer (GPT).",
+    "source_fingerprint": "332f356c2bec688a83b89c5f4743bcc0b6f872c3fc014dea7d8e15e904fc9ca7"
+  },
+  {
+    "id": "arxiv-045",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_text": "MalGPT enables cybersecurity researchers to develop advanced defense capabilities by emulating large-scale realistic AMG.",
+    "source_fingerprint": "e6fc4034cb07bd2e59cf8894527449d367f354f437c655c4ff7912bb2c510704"
+  },
+  {
+    "id": "arxiv-046",
+    "source_title": "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+    "source_url": "http://arxiv.org/abs/2201.01574v1",
+    "source_text": "Adaptive learning reverses this practice and attempts to improve the student experience.",
+    "source_fingerprint": "621007f61efe4448b30d633db8d6417a92f15772651919102eb760cd829fba82"
+  },
+  {
+    "id": "arxiv-047",
+    "source_title": "Reinforcing Cybersecurity Hands-on Training With Adaptive Learning",
+    "source_url": "http://arxiv.org/abs/2201.01574v1",
+    "source_text": "Then, we simulate how students would proceed in one of the past training sessions if it would offer more paths of various difficulty.",
+    "source_fingerprint": "1a8032a67068474e79de94ca7a24a2e88c08d01b6c794fe2e6431cc0b4566b30"
+  },
+  {
+    "id": "arxiv-048",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d"
+  },
+  {
+    "id": "arxiv-049",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_text": "NB2Slides also provides an interactive visualization that links the slides with the notebook to help users further edit the slides.",
+    "source_fingerprint": "c049606eb60343c9513636aba120f0b47c45bb1dc86fa26e32d54f083a3a1154"
+  },
+  {
+    "id": "arxiv-050",
+    "source_title": "Reconfigurable Intelligent Surface-assisted Classification of Modulations using Deep Learning",
+    "source_url": "http://arxiv.org/abs/2209.08388v1",
+    "source_text": "Reconfigurable intelligent surface technology enables the 5G to work on multistrand waveforms.",
+    "source_fingerprint": "8034876236bf6474607fe07f4bce37ae7962e8bf50baf6f99af75354553cb6fa"
+  },
+  {
+    "id": "arxiv-051",
+    "source_title": "Physicists, Non Physical Topics, and Interdisciplinarity",
+    "source_url": "http://arxiv.org/abs/2210.13254v1",
+    "source_text": "This assessment results from my forty year journey arguing and fighting to build sociophysics.",
+    "source_fingerprint": "d1c338a1fdc1594cfd9668eefbe0658bb1cd64ff77f895db6468b34de9a10d4b"
+  },
+  {
+    "id": "arxiv-052",
+    "source_title": "Physicists, Non Physical Topics, and Interdisciplinarity",
+    "source_url": "http://arxiv.org/abs/2210.13254v1",
+    "source_text": "Otherwise the paper should uses explicitly technics from physics.",
+    "source_fingerprint": "7e726767048ae9e7cde29936486a86ee5edb78287590b4eeb3ee53c983a754f0"
+  },
+  {
+    "id": "arxiv-053",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_text": "This technology, which offers a broad range of methods such as machine learning, artificial neural networks, natural language processing or deep learning, offers a lot of possible applications in many business areas from purchasing to production or customer service.",
+    "source_fingerprint": "ba6e82565443af8626cec6b2c609778ee08da4c805afc71d863ee7df9c7ae375"
+  },
+  {
+    "id": "arxiv-054",
+    "source_title": "Artificial Intelligence in Governance, Risk and Compliance: Results of a study on potentials for the application of artificial intelligence (AI) in governance, risk and compliance (GRC)",
+    "source_url": "http://arxiv.org/abs/2212.03601v2",
+    "source_text": "This study contains the results of a survey conducted in 2021 to identify and analyze the potential applications of artificial intelligence in GRC.",
+    "source_fingerprint": "ded3635a36209e1894da0148144af3fb12e03d587d31d9b38c5a54c6898b3f5b"
+  },
+  {
+    "id": "arxiv-055",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_text": "In order to enable users to perform multiple types of AI-based log analysis tasks in a uniform manner, we introduce LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence.",
+    "source_fingerprint": "8162885f189b59ac0b1e737f8194a07b0f453c48f5808fbe62c6d6d50d888d5f"
+  },
+  {
+    "id": "arxiv-056",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_text": "LogAI supports tasks such as log summarization, log clustering and log anomaly detection.",
+    "source_fingerprint": "272a6312c89ebcd0d214346947c930f4a92d8468e789ba9b2e2330bbae0984b6"
+  },
+  {
+    "id": "arxiv-057",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_text": "Cybersecurity planning supports the selection of and implementation of security controls in resource-constrained settings to manage risk.",
+    "source_fingerprint": "b5576fbd203e978b64dd0c211844cb1f385273ce2128e418b705cffb2b10623d"
+  },
+  {
+    "id": "arxiv-058",
+    "source_title": "Interdicting attack plans with boundedly-rational players and multiple attackers: An adversarial risk analysis approach",
+    "source_url": "http://arxiv.org/abs/2302.01975v1",
+    "source_text": "Doing so requires considering adaptive adversaries with different levels of strategic sophistication in modeling efforts to support risk management.",
+    "source_fingerprint": "562ff25100c3ef558a3a1d8dccd9a3430df44c84cd71ee9bd58719ca624a5080"
+  },
+  {
+    "id": "arxiv-059",
+    "source_title": "Towards Grammatical Tagging for the Legal Language of Cybersecurity",
+    "source_url": "http://arxiv.org/abs/2306.17042v1",
+    "source_text": "Recent legislation on cybersecurity obviously uses legal language in writing, thus inheriting all its interpretative complications due to the typical abundance of cases and sub-cases as well as to the general richness in detail.",
+    "source_fingerprint": "2b50ce6b71784103d78200e212bd212f28ec6f82dbd851940d474908d2242ca5"
+  },
+  {
+    "id": "arxiv-060",
+    "source_title": "Ensemble Learning based Anomaly Detection for IoT Cybersecurity via Bayesian Hyperparameters Sensitivity Analysis",
+    "source_url": "http://arxiv.org/abs/2307.10596v1",
+    "source_text": "IoT enables data aggregation and analysis on a large scale to improve life quality in many domains.",
+    "source_fingerprint": "ce7de20d2a3017da4b44a13c4eeb84f5c9d1d37e9bc3387b9cda73f5a412d582"
+  },
+  {
+    "id": "arxiv-061",
+    "source_title": "Ensemble Learning based Anomaly Detection for IoT Cybersecurity via Bayesian Hyperparameters Sensitivity Analysis",
+    "source_url": "http://arxiv.org/abs/2307.10596v1",
+    "source_text": "In particular, data collected by IoT contain a tremendous amount of information for anomaly detection.",
+    "source_fingerprint": "f13764185ba41f1a5e91fcf772c0f1462aa65f3d3b349621546059c16cdcea23"
+  },
+  {
+    "id": "arxiv-062",
+    "source_title": "Protoplanetary Disk Chemistry",
+    "source_url": "http://arxiv.org/abs/2309.05685v1",
+    "source_text": "Disk chemistry also enables unique probes of disk structures and dynamics, including those directly linked to ongoing planet formation.",
+    "source_fingerprint": "b399cf8614c8d3fff2a9366cc174d91bb478e407c04707f547a9637ebb778aac"
+  },
+  {
+    "id": "arxiv-063",
+    "source_title": "Protoplanetary Disk Chemistry",
+    "source_url": "http://arxiv.org/abs/2309.05685v1",
+    "source_text": "(3) Chemical, physical, and dynamical processes in disks are closely linked, which complicates disk chemistry modeling, but these links also present an opportunity to develop chemical probes of different aspects of disk evolution and planet formation.",
+    "source_fingerprint": "61bea438d632446badaefce4dfdad6ce9c5353803e9860498fc624072790edb7"
+  },
+  {
+    "id": "arxiv-064",
+    "source_title": "Higher-Order Equivariant Neural Networks for Charge Density Prediction in Materials",
+    "source_url": "http://arxiv.org/abs/2312.05388v2",
+    "source_text": "ChargE3Net enables the learning of higher-order equivariant feature to achieve high predictive accuracy and model expressivity.",
+    "source_fingerprint": "d1c1f72f4565ec64ca3d06862dd219f9dfa159de79f24e8cf61f450465e4d9c5"
+  },
+  {
+    "id": "arxiv-065",
+    "source_title": "Higher-Order Equivariant Neural Networks for Charge Density Prediction in Materials",
+    "source_url": "http://arxiv.org/abs/2312.05388v2",
+    "source_text": "When trained on the massive dataset of over 100K materials in the Materials Project database, our model is able to capture the complexity and variability in the data, leading to a significant 26.7% reduction in self-consistent iterations when used to initialize DFT calculations on unseen materials.",
+    "source_fingerprint": "9b098e804a0476b5780869bccbf5ae5ade2f9c2bb0c577464497b5dc9d4e830f"
+  },
+  {
+    "id": "arxiv-066",
+    "source_title": "Learned 3D volumetric recovery of clouds and its uncertainty for climate analysis",
+    "source_url": "http://arxiv.org/abs/2403.05932v1",
+    "source_text": "ProbCT uses a neural-field representation, making essentially real-time inference.",
+    "source_fingerprint": "75b36109242532bae6b9cdc7c623dba8516c21b0f982cb9355a13dafc1809a20"
+  },
+  {
+    "id": "arxiv-067",
+    "source_title": "Learned 3D volumetric recovery of clouds and its uncertainty for climate analysis",
+    "source_url": "http://arxiv.org/abs/2403.05932v1",
+    "source_text": "To improve out-of-distribution inference, we incorporate self-supervised learning through differential rendering.",
+    "source_fingerprint": "08f256885d31c59144fe3d95f74ce05926ef0d5d7a177dd5d4f68fe04cdfcb64"
+  },
+  {
+    "id": "arxiv-068",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_text": "In this article, we develop two methods to create entangled spin states corresponding to wave packets of composite particles in analog quantum simulators of Ising spin Hamiltonians.",
+    "source_fingerprint": "9acae8af459236a9886488b56e72e9bcae26247d419a1721f50e743dadeca89b"
+  },
+  {
+    "id": "arxiv-069",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_text": "One wave-packet preparation method uses the blockade effect enabled by beyond-nearest-neighbor Ising spin interactions.",
+    "source_fingerprint": "b137b7516e7cff5ccb3001886ab33254d4299531d5f65e49dc85818cc40808d4"
+  },
+  {
+    "id": "arxiv-070",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_text": "Artificial intelligence supports healthcare professionals with predictive modeling, greatly transforming clinical decision-making.",
+    "source_fingerprint": "89bcef9c2580a72f5f2268d2a6d5411c680faa29dcb67fa42af38c4bb209768f"
+  },
+  {
+    "id": "arxiv-071",
+    "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model",
+    "source_url": "http://arxiv.org/abs/2404.13139v1",
+    "source_text": "By focusing on the predictive modeling of sepsis-related mortality, we propose a method that learns a performance-optimized predictive model and then employs the transfer learning process to produce a model with better fairness.",
+    "source_fingerprint": "daf9f5911a5ad097e524f1acd90d5e13d7486845ee4dbd53088dbc6603794ebf"
+  },
+  {
+    "id": "arxiv-072",
+    "source_title": "PyOptInterface: Design and implementation of an efficient modeling language for mathematical optimization",
+    "source_url": "http://arxiv.org/abs/2405.10130v1",
+    "source_text": "PyOptInterface uses lightweight and compact data structure to bridge high-level entities in optimization models like variables and constraints to internal indices of optimizers efficiently.",
+    "source_fingerprint": "a497956a63e6ff147cd0f1a4df91a8f0c9305cd22fcf8681158229ca3547967e"
+  },
+  {
+    "id": "arxiv-073",
+    "source_title": "PyOptInterface: Design and implementation of an efficient modeling language for mathematical optimization",
+    "source_url": "http://arxiv.org/abs/2405.10130v1",
+    "source_text": "It supports a variety of optimization solvers and a range of common problem classes.",
+    "source_fingerprint": "599c0eccaab918d62177d4b712c2e85d53d9382fc8cdf2ff353a40dd7b4c5024"
+  },
+  {
+    "id": "arxiv-074",
+    "source_title": "MoRSE: Bridging the Gap in Cybersecurity Expertise with Retrieval Augmented Generation",
+    "source_url": "http://arxiv.org/abs/2407.15748v1",
+    "source_text": "MoRSE aims to provide comprehensive and complete knowledge about cybersecurity.",
+    "source_fingerprint": "71830ffd7cf6888a8a45615c0b36c84c924fde13c9b891f32ddb20c96fd96ad8"
+  },
+  {
+    "id": "arxiv-075",
+    "source_title": "MoRSE: Bridging the Gap in Cybersecurity Expertise with Retrieval Augmented Generation",
+    "source_url": "http://arxiv.org/abs/2407.15748v1",
+    "source_text": "MoRSE uses two RAG (Retrieval Augmented Generation) systems designed to retrieve and organize information from multidimensional cybersecurity contexts.",
+    "source_fingerprint": "602317ff6da0c0df2b53674f8ee6368d8e50cf6ccb536ff8506f5567ae7e8cc6"
+  },
+  {
+    "id": "arxiv-076",
+    "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence",
+    "source_url": "http://arxiv.org/abs/2408.02811v1",
+    "source_text": "REGAI uses rubrics, which can be created manually or automatically by the system, to enhance the performance of LLMs for evaluation purposes.",
+    "source_fingerprint": "a640edf1c12cfa186ee7267d6c675ffd08331d1dac0389f64e86a658c43c4459"
+  },
+  {
+    "id": "arxiv-077",
+    "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence",
+    "source_url": "http://arxiv.org/abs/2408.02811v1",
+    "source_text": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+    "source_fingerprint": "bb5a5ecbb82f816d44a4f8197d24fbda08fe84237339eb12c31056379d2ca425"
+  },
+  {
+    "id": "arxiv-078",
+    "source_title": "Evaluating Low-Resource Lane Following Algorithms for Compute-Constrained Automated Vehicles",
+    "source_url": "http://arxiv.org/abs/2409.03114v2",
+    "source_text": "Reducing computing requirements enables lane keeping to be widely deployed in vehicles as part of lower-level automation, including active safety systems.",
+    "source_fingerprint": "7e28398f10436125030747642c4fc342c027eaf7c12c10b10d955d7044e9b8da"
+  },
+  {
+    "id": "arxiv-079",
+    "source_title": "KoroT-3E: A Personalized Musical Mnemonics Tool for Enhancing Memory Retention of Complex Computer Science Concepts",
+    "source_url": "http://arxiv.org/abs/2409.10446v1",
+    "source_text": "KoroT-3E enables users to transform complex concepts into memorable lyrics and compose melodies that suit their musical preferences.",
+    "source_fingerprint": "531a69293fe53818164a2ff1c7f14d65a495bea3b8747ab1a7806e6540ed28b5"
+  },
+  {
+    "id": "arxiv-080",
+    "source_title": "A Blockchain and Artificial Intelligence based System for Halal Food Traceability",
+    "source_url": "http://arxiv.org/abs/2410.07305v1",
+    "source_text": "Blockchain technology can provide a distributed ledger of an immutable record of the information.",
+    "source_fingerprint": "96d3f6f054398b72e1cdbad5510ce058011b97b1336df0e95374d40d89001ebf"
+  },
+  {
+    "id": "arxiv-081",
+    "source_title": "A Blockchain and Artificial Intelligence based System for Halal Food Traceability",
+    "source_url": "http://arxiv.org/abs/2410.07305v1",
+    "source_text": "Artificial intelligence supports developing a solution for pattern identification.",
+    "source_fingerprint": "63c49da6f105f366ab656a9e890045d390cd2b55c731906859d28066808eeeba"
+  },
+  {
+    "id": "arxiv-082",
+    "source_title": "Use of What-if Scenarios to Help Explain Artificial Intelligence Models for Neonatal Health",
+    "source_url": "http://arxiv.org/abs/2410.09635v2",
+    "source_text": "Early detection of intrapartum risks enables timely interventions to prevent or mitigate adverse labor outcomes such as cerebral palsy.",
+    "source_fingerprint": "187088f0821730aec290c515ba86e53cb1db6e474feba4f927751a944c9d85ae"
+  },
+  {
+    "id": "arxiv-083",
+    "source_title": "Use of What-if Scenarios to Help Explain Artificial Intelligence Models for Neonatal Health",
+    "source_url": "http://arxiv.org/abs/2410.09635v2",
+    "source_text": "However, accurate automated systems to support clinical decision-making during delivery are currently lacking.",
+    "source_fingerprint": "2a1868d27f2d1470240ae674b02b552d18d07fca331a4235af2cc026baceb1e2"
+  },
+  {
+    "id": "arxiv-084",
+    "source_title": "Mitigating Errors in Analog Quantum Simulation by Hamiltonian Reshaping or Hamiltonian Rescaling",
+    "source_url": "http://arxiv.org/abs/2410.23719v2",
+    "source_text": "Hamiltonian reshaping uses random unitary transformations to generate new Hamiltonians with identical eigenvalues but varied eigenstates, allowing error reduction through averaging.",
+    "source_fingerprint": "a36d96a42387b832dbd853f02f4356046ec6a751e7d4635237c9c896c7f98502"
+  },
+  {
+    "id": "arxiv-085",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_text": "FrontierMath uses new, unpublished problems and automated verification to reliably evaluate models while minimizing risk of data contamination.",
+    "source_fingerprint": "3d1bc92eea15508005049dd1a4b6ee4a9cfb67ecd9858ddfced1befe24a85029"
+  },
+  {
+    "id": "arxiv-086",
+    "source_title": "FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI",
+    "source_url": "http://arxiv.org/abs/2411.04872v7",
+    "source_text": "As AI systems advance toward expert-level mathematical abilities, FrontierMath offers a rigorous testbed that quantifies their progress.",
+    "source_fingerprint": "1ea3cbe84033e7f3385bf8e6c769136649f46f76d81b1be9e77fe10aacbbf641"
+  },
+  {
+    "id": "arxiv-087",
+    "source_title": "Quantifying artificial intelligence through algorithmic generalization",
+    "source_url": "http://arxiv.org/abs/2411.05943v2",
+    "source_text": "Algebraic circuit complexity enables the study of generalization by defining benchmarks in terms of the computational requirements to solve a problem.",
+    "source_fingerprint": "38ac5b0fa24a6daf95e0dfac117be513b5867b5f67154b7fa584a3e2548df160"
+  },
+  {
+    "id": "arxiv-088",
+    "source_title": "Large Negative Magnetoresistance in off-Stochiometric Topological Material PrSbTe",
+    "source_url": "http://arxiv.org/abs/2502.04203v1",
+    "source_text": "Such unusual magnetotransport enables PrSbxTe2-x topological materials as a promising platform for device applications.",
+    "source_fingerprint": "18bc31464fabfb816b87879a95c8a0e7ae943db4ebd589096256dd4961e655ba"
+  },
+  {
+    "id": "arxiv-089",
+    "source_title": "Application of Artificial Intelligence (AI) in Civil Engineering",
+    "source_url": "http://arxiv.org/abs/2502.06727v1",
+    "source_text": "Hard computing generally deals with precise data, which provides ideal solutions to problems.",
+    "source_fingerprint": "0073e085c1c9fb7c32a31b30a8706f8d9bb8eb75b40cedc275ef530b9656f18a"
+  },
+  {
+    "id": "arxiv-090",
+    "source_title": "Application of Artificial Intelligence (AI) in Civil Engineering",
+    "source_url": "http://arxiv.org/abs/2502.06727v1",
+    "source_text": "ANNs predict non-linearities and provide accurate estimates.",
+    "source_fingerprint": "dd485f6c75d5fe7e3d6409e25c60eabd3ccc1b2d68d63e3d30249b653db65786"
+  },
+  {
+    "id": "arxiv-091",
+    "source_title": "Knowledge-Enhanced Program Repair for Data Science Code",
+    "source_url": "http://arxiv.org/abs/2502.09771v1",
+    "source_text": "DSrepair uses knowledge graph based RAG for API knowledge retrieval as well as bug knowledge enrichment to construct repair prompts for LLMs.",
+    "source_fingerprint": "566176fce4d4c2c3e6fa5815f238b29a6c95bee7dab80e64233b3ffa0c5a06bc"
+  },
+  {
+    "id": "arxiv-092",
+    "source_title": "Knowledge-Enhanced Program Repair for Data Science Code",
+    "source_url": "http://arxiv.org/abs/2502.09771v1",
+    "source_text": "Specifically, to enable knowledge graph based API retrieval, we construct DS-KG (Data Science Knowledge Graph) for widely used data science libraries.",
+    "source_fingerprint": "a77150115332e0c86db2c3b6f050e6b3514b5f908bab3d1274ded56a879c41ae"
+  },
+  {
+    "id": "arxiv-093",
+    "source_title": "SHAZAM: Self-Supervised Change Monitoring for Hazard Detection and Mapping",
+    "source_url": "http://arxiv.org/abs/2503.00348v1",
+    "source_text": "SHAZAM uses a lightweight conditional UNet to generate expected images of a region of interest (ROI) for any day of the year, allowing for the direct modelling of normal seasonal changes and the ability to distinguish potential hazards.",
+    "source_fingerprint": "8dc73bebedb771623c53292e2e5040e523a87ab7150ce7117dbd4a30cfc4ee01"
+  },
+  {
+    "id": "arxiv-094",
+    "source_title": "SHAZAM: Self-Supervised Change Monitoring for Hazard Detection and Mapping",
+    "source_url": "http://arxiv.org/abs/2503.00348v1",
+    "source_text": "Evaluated on four diverse datasets that contain bushfires (wildfires), burned regions, extreme and out-of-season snowfall, floods, droughts, algal blooms, and deforestation, SHAZAM achieved F1 score improvements of between 0.066 and 0.234 over existing methods.",
+    "source_fingerprint": "33dc8bb50eac1e94c48ded5435db211463f49bb0bbdc3a9c13ae313d5441ae10"
+  },
+  {
+    "id": "arxiv-095",
+    "source_title": "Nanoscale electrostatic control in ferroelectric thin films through lattice chemistry",
+    "source_url": "http://arxiv.org/abs/2503.08613v1",
+    "source_text": "Nanoscale electrostatic control of oxide interfaces enables physical phenomena and exotic functionalities beyond the realm of the bulk material.",
+    "source_fingerprint": "b21638d538287c44cb64919fda3ec8f96d734a54e70159806c70d64f56f2e111"
+  },
+  {
+    "id": "arxiv-096",
+    "source_title": "Nanoscale electrostatic control in ferroelectric thin films through lattice chemistry",
+    "source_url": "http://arxiv.org/abs/2503.08613v1",
+    "source_text": "Next, we use the polarizing Bi$_{2}$O$_{2}$ stacking as a versatile electrostatic environment to create new electric dipole configurations.",
+    "source_fingerprint": "e371595ad05a6df048a2798f70a46f340265aedcd96afc9c5631f31214c42306"
+  },
+  {
+    "id": "arxiv-097",
+    "source_title": "ModelingAgent: Bridging LLMs and Mathematical Modeling for Real-World Challenges",
+    "source_url": "http://arxiv.org/abs/2505.15068v1",
+    "source_text": "ModelingBench also supports multiple valid solutions, capturing the ambiguity and creativity of practical modeling.",
+    "source_fingerprint": "2190ca0279dbcc2ed395e64486513d8d05dd76b789668a5db728d547b0e8d403"
+  },
+  {
+    "id": "arxiv-098",
+    "source_title": "ModelingAgent: Bridging LLMs and Mathematical Modeling for Real-World Challenges",
+    "source_url": "http://arxiv.org/abs/2505.15068v1",
+    "source_text": "We also present ModelingAgent, a multi-agent framework that coordinates tool use, supports structured workflows, and enables iterative self-refinement to generate well-grounded, creative solutions.",
+    "source_fingerprint": "3ce49fdec3a4c0182a93cce9438770caab59ced17a7c0afffb8dee9e37a87813"
+  },
+  {
+    "id": "arxiv-099",
+    "source_title": "Quantum Artificial Intelligence for Secure Autonomous Vehicle Navigation: An Architectural Proposal",
+    "source_url": "http://arxiv.org/abs/2506.16000v1",
+    "source_text": "Quantum neural networks uses quantum amplitude encoding to fuse data from various sensors like LiDAR, radar, camera, GPS and weather etc., This approach gives a unified quantum state representation between heterogeneous sensor modalities.",
+    "source_fingerprint": "404031136d98d09502256ca3e818c0957d4b25071eb472f40a1a27ee02e263cb"
+  },
+  {
+    "id": "arxiv-100",
+    "source_title": "ML-Based Automata Simplification for Symbolic Accelerators",
+    "source_url": "http://arxiv.org/abs/2507.08751v1",
+    "source_text": "However, these accelerators face scalability issues due to excessive memory use and routing complexity, especially when targeting a large set.",
+    "source_fingerprint": "e3bc613d22d2ec7cf4377bbee9a6cc7b6113d12202a9fa7247d6d33a824b1888"
+  },
+  {
+    "id": "arxiv-101",
+    "source_title": "ML-Based Automata Simplification for Symbolic Accelerators",
+    "source_url": "http://arxiv.org/abs/2507.08751v1",
+    "source_text": "AutoSlim uses Random Forest classification to prune low-impact transitions based on edge scores and structural features, significantly reducing automata graph density while preserving semantic correctness.",
+    "source_fingerprint": "6426f027d69172cb347ee0f00b603e60c25a8945ca20a4cdd0bc4c4858154d6b"
+  },
+  {
+    "id": "arxiv-102",
+    "source_title": "Error Detection and Correction for Interpretable Mathematics in Large Language Models",
+    "source_url": "http://arxiv.org/abs/2508.03500v1",
+    "source_text": "However, their intermediate steps often contain errors that can propagate leading to inaccurate final predictions.",
+    "source_fingerprint": "0d1ce866129246f3b0adce3474ba2438c48d0321e917f9626520e252ef57239b"
+  },
+  {
+    "id": "arxiv-103",
+    "source_title": "Error Detection and Correction for Interpretable Mathematics in Large Language Models",
+    "source_url": "http://arxiv.org/abs/2508.03500v1",
+    "source_text": "EDCIM uses LLMs to generate a system of equations for a given problem, followed by a symbolic error-detection framework that identifies errors and provides targeted feedback for LLM-based correction.",
+    "source_fingerprint": "2fab58e1cb2a9f330f203f6039ecebe1b2ff7062ca0dced4834d49316a35edc2"
+  },
+  {
+    "id": "arxiv-104",
+    "source_title": "\"Think First, Verify Always\": Training Humans to Face AI Risks",
+    "source_url": "http://arxiv.org/abs/2508.03714v1",
+    "source_text": "Artificial intelligence enables unprecedented attacks on human cognition, yet cybersecurity remains predominantly device-centric.",
+    "source_fingerprint": "1105392ab6ddeab2d83a426d22ee4276ab5df00a1f72491d1dfa9279672ef066"
+  },
+  {
+    "id": "arxiv-105",
+    "source_title": "\"Think First, Verify Always\": Training Humans to Face AI Risks",
+    "source_url": "http://arxiv.org/abs/2508.03714v1",
+    "source_text": "We recommend that GenAI platforms embed \"Think First, Verify Always\" as a standard prompt, replacing passive warnings with actionable protocols to enhance trustworthy and ethical AI use.",
+    "source_fingerprint": "d646a293dea3e77ddb397d63fb2c3ea0df1de42694734eff5f8905f04d79ab3b"
+  },
+  {
+    "id": "arxiv-106",
+    "source_title": "TrackOR: Towards Personalized Intelligent Operating Rooms Through Robust Tracking",
+    "source_url": "http://arxiv.org/abs/2508.07968v1",
+    "source_text": "Providing intelligent support to surgical teams is a key frontier in automated surgical scene understanding, with the long-term goal of improving patient outcomes.",
+    "source_fingerprint": "062d1f146154140a05b380fe3f5acfa416e4b5ba8f74ebdf6ec854438036b083"
+  },
+  {
+    "id": "arxiv-107",
+    "source_title": "TrackOR: Towards Personalized Intelligent Operating Rooms Through Robust Tracking",
+    "source_url": "http://arxiv.org/abs/2508.07968v1",
+    "source_text": "TrackOR uses 3D geometric signatures to achieve state-of-the-art online tracking performance (+11% Association Accuracy over the strongest baseline), while also enabling an effective offline recovery process to create analysis-ready trajectories.",
+    "source_fingerprint": "8dd9b9ba9b18e9ad8eafe5dbf9a3014c73d4557e9db73ed694791d8fa68ea744"
+  },
+  {
+    "id": "arxiv-108",
+    "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats",
+    "source_url": "http://arxiv.org/abs/2508.17405v1",
+    "source_text": "FRAME includes a novel risk assessment method that quantifies AML risks by systematically evaluating three key dimensions: target system's deployment environment, characteristics of diverse AML techniques, and empirical insights from prior research.",
+    "source_fingerprint": "98da5ac1fc9fa675fa1f46415cd97b5780644c7ffd6cfe2172f40864a7ef0583"
+  },
+  {
+    "id": "arxiv-109",
+    "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats",
+    "source_url": "http://arxiv.org/abs/2508.17405v1",
+    "source_text": "From an engineering application perspective, FRAME delivers actionable results designed for direct use by system owners with only technical knowledge of their systems, without expertise in AML.",
+    "source_fingerprint": "696fd086f673d06b25fcebaf1bc418b149f40038fe38c7c5de2479a072c51e44"
+  },
+  {
+    "id": "arxiv-110",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_text": "Bi-temporal satellite imagery supports critical applications such as urbanization monitoring and disaster assessment.",
+    "source_fingerprint": "e050ce744e19c9469cf186a8e235fee453c59dc4bb7637774bc3a4d7ac89701a"
+  },
+  {
+    "id": "arxiv-111",
+    "source_title": "BTCChat: Advancing Remote Sensing Bi-temporal Change Captioning with Multimodal Large Language Model",
+    "source_url": "http://arxiv.org/abs/2509.05895v2",
+    "source_text": "BTCChat supports bi-temporal change captioning and retains single-image interpretation capability.",
+    "source_fingerprint": "9a3318a8642b8671529360e355cf88ac4f42b1ae6c22f0866bc1f98f97eefbeb"
+  },
+  {
+    "id": "arxiv-112",
+    "source_title": "Statistical inference using debiased group graphical lasso for multiple sparse precision matrices",
+    "source_url": "http://arxiv.org/abs/2510.04683v1",
+    "source_text": "Debiasing group graphical lasso estimates enables statistical inference when multiple Gaussian graphical models share a common sparsity pattern.",
+    "source_fingerprint": "e5b8024d7a2b0ba412b26fa10b9807149abbf6d6f7d747bb488877cf5ee619c2"
+  },
+  {
+    "id": "arxiv-113",
+    "source_title": "A Systematic North-South asymmetry in the Steady-state Climate of rapidly-rotating Oblique Water Worlds",
+    "source_url": "http://arxiv.org/abs/2510.11904v1",
+    "source_text": "High obliquity supports an asymmetry between the equilibrium climatological conditions in the northern and southern hemispheres.",
+    "source_fingerprint": "71032daa02395a8a604beaa97511c346fac202d2bdc3a15ecca2387bc91f106f"
+  },
+  {
+    "id": "arxiv-114",
+    "source_title": "Exploiting the Potential of Linearity in Automatic Differentiation and Computational Cryptography",
+    "source_url": "http://arxiv.org/abs/2510.17220v1",
+    "source_text": "Bridging these interpretations enables rigorous yet practical methodologies for analyzing and verifying complex systems.",
+    "source_fingerprint": "248e7ed23777ab9b7e090ca4495e7d4ce44746da99abdf32ad75b524c03fb01c"
+  },
+  {
+    "id": "arxiv-115",
+    "source_title": "Exploiting the Potential of Linearity in Automatic Differentiation and Computational Cryptography",
+    "source_url": "http://arxiv.org/abs/2510.17220v1",
+    "source_text": "This thesis explores the use of LL to model programming paradigms based on linearity.",
+    "source_fingerprint": "0cc3a468a4176045bee4540592439237cd53c1108dff8788e7ab10f57d6fa9a8"
+  },
+  {
+    "id": "arxiv-116",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_text": "Generative AI and large language models (LLMs) have shown strong capabilities in code understanding, but their use in cybersecurity, particularly for malware detection and analysis, remains limited.",
+    "source_fingerprint": "435c2d8fd8cc898e23c0323687a4ed524472f7fdca38314e68f8ff18e5dd208d"
+  },
+  {
+    "id": "arxiv-117",
+    "source_title": "XGen-Q: An Explainable Domain-Adaptive LLM Framework with Retrieval-Augmented Generation for Software Security",
+    "source_url": "http://arxiv.org/abs/2510.19006v1",
+    "source_text": "XGen-Q uses a multi-stage prompt strategy combined with retrieval-augmented generation (RAG) to deliver reliable malware identification and detailed forensic reporting, even in the presence of complex code obfuscation.",
+    "source_fingerprint": "6d18cee4c3a0ac4f8a46d7137f6fbb0a5dfd2243e8ff55296e94b7567f6a098b"
+  },
+  {
+    "id": "arxiv-118",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_text": "We develop a geometric decomposition framework offering two strategies for partitioning inference problems into regional analyses on data-derived Riemannian graphs.",
+    "source_fingerprint": "e11fe92e9610546056906f65f925f84f8fc948ba63b9f1a003f6a933d52072f1"
+  },
+  {
+    "id": "arxiv-119",
+    "source_title": "From Global to Local Correlation: Geometric Decomposition of Statistical Inference",
+    "source_url": "http://arxiv.org/abs/2511.04599v4",
+    "source_text": "Gradient flow decomposition uses path-monotonicity-validated discrete Morse theory to partition samples into gradient flow cells where outcomes exhibit monotonic behavior.",
+    "source_fingerprint": "eefa8589cfd53b785b3204b2fcdf21cc616070a9f555137ce8502d6dceaa311e"
+  }
+]

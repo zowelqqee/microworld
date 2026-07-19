@@ -1,0 +1,524 @@
+[
+  {
+    "candidate_id": "arxiv-001:1",
+    "batch_id": "arxiv-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Frontiers of Nuclear Science, A Long Range Plan",
+    "source_url": "http://arxiv.org/abs/0809.3137v1",
+    "source_fingerprint": "db612e2f693b9121ddc5644a63a2496b024630643fbfcf5dc03a94afe92b57f0",
+    "source_text": "nuclear physics research and recommend a long range plan that will provide a framework for coordinated advancement of the nation's nuclear science research programs over the next decade.\"",
+    "subject": "a long range plan",
+    "predicate": "provide",
+    "object": "a framework",
+    "evidence_span": "a long range plan that will provide a framework",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-003:0",
+    "batch_id": "arxiv-003",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "New Science on the Open Science Grid",
+    "source_url": "http://arxiv.org/abs/0904.3950v1",
+    "source_fingerprint": "4e0b278cd9da0b24e5b95e72f118eae6fd6a02c1f6ab55ea10641b4c08f52ad1",
+    "source_text": "The Open Science Grid (OSG) includes work to enable new science, new scientists, and new modalities in support of computationally based research.",
+    "subject": "Open Science Grid",
+    "predicate": "includes",
+    "object": "work",
+    "evidence_span": "The Open Science Grid (OSG) includes work",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:0",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "IMP Science Gateway: from the Portal to the Hub of Virtual Experimental Labs in Materials Science",
+    "source_url": "http://arxiv.org/abs/1404.5611v1",
+    "source_fingerprint": "46a5a98af5066ee1864d4c85cc9104b08732cf36845a883d69b9110aabd5af7f",
+    "source_text": "Several typical use cases for these science applications (scientific workflows) are considered for molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes, etc.).",
+    "subject": "molecular dynamics simulations",
+    "predicate": "are considered for",
+    "object": "scientific workflows",
+    "evidence_span": "scientific workflows) are considered for molecular dynamics (MD) simulations",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:1",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "IMP Science Gateway: from the Portal to the Hub of Virtual Experimental Labs in Materials Science",
+    "source_url": "http://arxiv.org/abs/1404.5611v1",
+    "source_fingerprint": "46a5a98af5066ee1864d4c85cc9104b08732cf36845a883d69b9110aabd5af7f",
+    "source_text": "Several typical use cases for these science applications (scientific workflows) are considered for molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes, etc.).",
+    "subject": "molecular dynamics simulations",
+    "predicate": "include",
+    "object": "nanoindentation of graphene layers",
+    "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:2",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "IMP Science Gateway: from the Portal to the Hub of Virtual Experimental Labs in Materials Science",
+    "source_url": "http://arxiv.org/abs/1404.5611v1",
+    "source_fingerprint": "46a5a98af5066ee1864d4c85cc9104b08732cf36845a883d69b9110aabd5af7f",
+    "source_text": "Several typical use cases for these science applications (scientific workflows) are considered for molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes, etc.).",
+    "subject": "molecular dynamics simulations",
+    "predicate": "include",
+    "object": "defect system relaxation in metal nanocrystals",
+    "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:3",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "IMP Science Gateway: from the Portal to the Hub of Virtual Experimental Labs in Materials Science",
+    "source_url": "http://arxiv.org/abs/1404.5611v1",
+    "source_fingerprint": "46a5a98af5066ee1864d4c85cc9104b08732cf36845a883d69b9110aabd5af7f",
+    "source_text": "Several typical use cases for these science applications (scientific workflows) are considered for molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes, etc.).",
+    "subject": "molecular dynamics simulations",
+    "predicate": "include",
+    "object": "thermal stability of boron nitride nanotubes",
+    "evidence_span": "molecular dynamics (MD) simulations of complex behavior of various nanostructures (nanoindentation of graphene layers, defect system relaxation in metal nanocrystals, thermal stability of boron nitride nanotubes",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-025:0",
+    "batch_id": "arxiv-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Student Satisfaction mining in a typical core course of Computer Science",
+    "source_url": "http://arxiv.org/abs/1504.04116v1",
+    "source_fingerprint": "291fbdaf7259759ae276934bb7559d0bbc615ea81b219aa14da862b1b9982be0",
+    "source_text": "Hence, many educational institutes continuously improve their service to produce a supportive learning environment to satisfy the student need.",
+    "subject": "educational institutes",
+    "predicate": "improve",
+    "object": "service",
+    "evidence_span": "educational institutes continuously improve their service",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-027:0",
+    "batch_id": "arxiv-027",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Type-based Self-stabilisation for Computational Fields",
+    "source_url": "http://arxiv.org/abs/1509.05659v2",
+    "source_fingerprint": "58239203aadcbe60f1eaf8a2d538760df215dd8cb216c8bdf370b3c37f3e737e",
+    "source_text": "A type-based approach is used to provide a correct checking procedure for self-stabilisation.",
+    "subject": "A type-based approach",
+    "predicate": "is used to provide",
+    "object": "a correct checking procedure for self-stabilisation",
+    "evidence_span": "A type-based approach is used to provide a correct checking procedure for self-stabilisation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-039:0",
+    "batch_id": "arxiv-039",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Mapping the \"long tail\" of research funding: A topic analysis of NSF grant proposals in the Division of Astronomical Sciences",
+    "source_url": "http://arxiv.org/abs/2006.10673v1",
+    "source_fingerprint": "d3475f30ce4eae0b49a5b9a4d781294a39e777b06335f1e7db7edc8d5dfae582",
+    "source_text": "This study uses the discipline of astronomy as a case study, overall exploring possible associations between topic, funding level and research output, with implications for research policy and practice.",
+    "subject": "This study",
+    "predicate": "uses",
+    "object": "astronomy",
+    "evidence_span": "This study uses the discipline of astronomy",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "authorial_self_reference",
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-043:0",
+    "batch_id": "arxiv-043",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Ice Core Science Meets Computer Vision: Challenges and Perspectives",
+    "source_url": "http://arxiv.org/abs/2104.04430v1",
+    "source_fingerprint": "0ac67ad3811736e5ab7638d12ef8a439c657545d1148b14830480e5c04d0f68a",
+    "source_text": "Another important issue is the evaluation of post-depositional layer changes, for which the chemical images provide rich information.",
+    "subject": "chemical images",
+    "predicate": "provide",
+    "object": "rich information",
+    "evidence_span": "chemical images provide rich information",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-044:0",
+    "batch_id": "arxiv-044",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FRaGenLP: A Generator of Random Linear Programming Problems for Cluster Computing Systems",
+    "source_url": "http://arxiv.org/abs/2105.10384v1",
+    "source_fingerprint": "c93ef8305932d72cafb3f9a2d325ffddb60864153679950254da1b7fd76b28f9",
+    "source_text": "To ensure the consistency of the problem and the boundedness of the feasible region, the constraint system includes $2n+1$ standard inequalities, called support inequalities.",
+    "subject": "the constraint system",
+    "predicate": "includes",
+    "object": "2n+1 standard inequalities",
+    "evidence_span": "the constraint system includes $2n+1$ standard inequalities",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node",
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-044:1",
+    "batch_id": "arxiv-044",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "FRaGenLP: A Generator of Random Linear Programming Problems for Cluster Computing Systems",
+    "source_url": "http://arxiv.org/abs/2105.10384v1",
+    "source_fingerprint": "c93ef8305932d72cafb3f9a2d325ffddb60864153679950254da1b7fd76b28f9",
+    "source_text": "To ensure the consistency of the problem and the boundedness of the feasible region, the constraint system includes $2n+1$ standard inequalities, called support inequalities.",
+    "subject": "2n+1 standard inequalities",
+    "predicate": "called",
+    "object": "support inequalities",
+    "evidence_span": "2n+1 standard inequalities, called support inequalities",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-049:0",
+    "batch_id": "arxiv-049",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "2022 Review of Data-Driven Plasma Science",
+    "source_url": "http://arxiv.org/abs/2205.15832v1",
+    "source_fingerprint": "2a101324325e8e76d9a74410175d9808fe997cae372cb619855aa00d0fd14e57",
+    "source_text": "Data science and technology offer transformative tools and methods to science.",
+    "subject": "Data science and technology",
+    "predicate": "offer",
+    "object": "transformative tools and methods",
+    "evidence_span": "Data science and technology offer transformative tools and methods to science.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-051:0",
+    "batch_id": "arxiv-051",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A review of clustering models in educational data science towards fairness-aware learning",
+    "source_url": "http://arxiv.org/abs/2301.03421v1",
+    "source_fingerprint": "aa83661b45ffe86cd7944ebc05fa5e9f7d609c0d132f645c9b532e1829dca888",
+    "source_text": "Machine learning is increasingly supporting the education system and educational data science (EDS) domain, from decision support to educational activities and learning analytics.",
+    "subject": "Machine learning",
+    "predicate": "is supporting",
+    "object": "the education system",
+    "evidence_span": "Machine learning is increasingly supporting the education system",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-058:0",
+    "batch_id": "arxiv-058",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Preliminary study on artificial intelligence methods for cybersecurity threat detection in computer networks based on raw data packets",
+    "source_url": "http://arxiv.org/abs/2407.17339v2",
+    "source_fingerprint": "5515dc1ccbe33f6e08ef2f4ab64b3e3880d157e703c7cfd5becf610f34867069",
+    "source_text": "Most of the intrusion detection methods in computer networks are based on traffic flow characteristics.",
+    "subject": "intrusion detection methods",
+    "predicate": "are based on",
+    "object": "traffic flow characteristics",
+    "evidence_span": "intrusion detection methods in computer networks are based on traffic flow characteristics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-060:1",
+    "batch_id": "arxiv-060",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Automatic Detection of Research Values from Scientific Abstracts Across Computer Science Subfields",
+    "source_url": "http://arxiv.org/abs/2502.16390v2",
+    "source_fingerprint": "3c26c2cc88b8070dc551a76c9a7af52c95b2c750663ab0a03336b23679878b2e",
+    "source_text": "Based on the scheme, we build value classifiers to scale up the analysis and present a systematic study over 226,600 paper abstracts from 32 CS-related subfields and 86 popular publishing venues over ten years.",
+    "subject": "value classifiers",
+    "predicate": "present",
+    "object": "systematic study",
+    "evidence_span": "value classifiers to scale up the analysis and present a systematic study",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:0",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Now's the Time: Computer Science Must Evolve to Emphasize Software and Systems Engineering with Artificial Intelligence (AI)",
+    "source_url": "http://arxiv.org/abs/2604.27230v1",
+    "source_fingerprint": "1edd0fb37a0d49e332f8799e99501692f286fe9920ae689016d87c50741343f1",
+    "source_text": "Computer science (CS) education needs to evolve to support software and artificial intelligence (AI) systems engineering, and it needs to happen now -- precisely because the core intellectual contributions of CS have never been more important.",
+    "subject": "Computer science education",
+    "predicate": "needs to evolve to support",
+    "object": "software and artificial intelligence systems engineering",
+    "evidence_span": "Computer science (CS) education needs to evolve to support software and artificial intelligence (AI) systems engineering",
+    "literal_subject": false,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-066:0",
+    "batch_id": "arxiv-066",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Heterogeneous Mapping for Analog In-Memory Computing Accelerators: A Unified Workflow",
+    "source_url": "http://arxiv.org/abs/2606.02672v1",
+    "source_fingerprint": "7da7e00f71b8728d1718dd4780b00ad96489c57e2d5b30a63be99af4d2811692",
+    "source_text": "This letter classifies existing methods for partitioning DNN workloads across these resources by mapping granularity, optimization strategy, and model support, and distills them into a unified four-stage workflow.",
+    "subject": "This letter",
+    "predicate": "classifies",
+    "object": "existing methods",
+    "evidence_span": "This letter classifies existing methods",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-066:1",
+    "batch_id": "arxiv-066",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Heterogeneous Mapping for Analog In-Memory Computing Accelerators: A Unified Workflow",
+    "source_url": "http://arxiv.org/abs/2606.02672v1",
+    "source_fingerprint": "7da7e00f71b8728d1718dd4780b00ad96489c57e2d5b30a63be99af4d2811692",
+    "source_text": "This letter classifies existing methods for partitioning DNN workloads across these resources by mapping granularity, optimization strategy, and model support, and distills them into a unified four-stage workflow.",
+    "subject": "This letter",
+    "predicate": "distills",
+    "object": "existing methods",
+    "evidence_span": "This letter ... distills them into a unified four-stage workflow",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-071:0",
+    "batch_id": "arxiv-071",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Sources of Certainty in Computation and Formal Systems",
+    "source_url": "http://arxiv.org/abs/cs/9911010v1",
+    "source_fingerprint": "9cae4e5950158f95346a0a7ad7e6f0103cd806b5114f3dc648996dbd12bc63c3",
+    "source_text": "In this article, I explain formal systems as concrete artifacts, and investigate the way in which they provide a high level of certainty---arguably the highest level achievable by rational discourse.",
+    "subject": "formal systems",
+    "predicate": "provide",
+    "object": "a high level of certainty",
+    "evidence_span": "formal systems as concrete artifacts, and investigate the way in which they provide a high level of certainty",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  }
+]

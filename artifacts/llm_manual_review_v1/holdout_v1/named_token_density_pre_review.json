@@ -1,0 +1,28 @@
+{
+  "status": "PRE_HUMAN_REVIEW",
+  "batch": "../runs/arxiv_holdout_74_20260720",
+  "metric_source": "named_token_density_pre_registration.md",
+  "candidate_count": 81,
+  "named_token_count_distribution": {
+    "0": 35,
+    "1": 24,
+    "2": 9,
+    "3": 6,
+    "4": 6,
+    "5": 1
+  },
+  "overall_mean_named_token_count": 1.0987654320987654,
+  "threshold": "named_token_count >= 2",
+  "threshold_match_count": 22,
+  "threshold_match_rate": 0.2716049382716049,
+  "threshold_matched_candidate_ids": [
+    "arxiv-000:0", "arxiv-000:1", "arxiv-002:0", "arxiv-004:1",
+    "arxiv-006:0", "arxiv-008:0", "arxiv-012:0", "arxiv-013:0",
+    "arxiv-015:1", "arxiv-016:0", "arxiv-021:0", "arxiv-026:0",
+    "arxiv-029:0", "arxiv-037:2", "arxiv-040:0", "arxiv-041:0",
+    "arxiv-051:1", "arxiv-052:0", "arxiv-054:0", "arxiv-056:1",
+    "arxiv-062:0", "arxiv-062:1"
+  ],
+  "manual_review_complete": false,
+  "verdict_correlation_examined": false
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "pilot-00",
+    "source_text": "Lastly, while GAs optimizes models (based on evolutionary processes) for better outcomes, probabilistic reasoning lowers their statistical uncertainties.",
+    "triples": [
+      {
+        "subject": "GAs",
+        "predicate": "optimizes",
+        "object": "models",
+        "evidence_span": "GAs optimizes models"
+      },
+      {
+        "subject": "probabilistic reasoning",
+        "predicate": "lowers",
+        "object": "their statistical uncertainties",
+        "evidence_span": "probabilistic reasoning lowers their statistical uncertainties"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 92,
+      "candidatesTokenCount": 99,
+      "totalTokenCount": 649,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 92
+        }
+      ],
+      "thoughtsTokenCount": 458,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-01",
+    "source_text": "Based on the needs identified from a formative study, this paper presents NB2Slides, an AI system that facilitates users to compose presentations of their data science work.",
+    "triples": [
+      {
+        "subject": "this paper",
+        "predicate": "presents",
+        "object": "NB2Slides",
+        "evidence_span": "this paper presents NB2Slides"
+      },
+      {
+        "subject": "NB2Slides",
+        "predicate": "facilitates",
+        "object": "users to compose presentations of their data science work",
+        "evidence_span": "NB2Slides, an AI system that facilitates users to compose presentations of their data science work"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 100,
+      "candidatesTokenCount": 120,
+      "totalTokenCount": 1689,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 100
+        }
+      ],
+      "thoughtsTokenCount": 1469,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-02",
+    "source_text": "Yet adding a focus on the universality of the physicist approach as a generic path to investigate a topic.",
+    "triples": [],
+    "usage": {
+      "promptTokenCount": 88,
+      "candidatesTokenCount": 1,
+      "totalTokenCount": 398,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 88
+        }
+      ],
+      "thoughtsTokenCount": 309,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-03",
+    "source_text": "SciServer builds upon and extends the SkyServer system of server-side tools that introduced the astronomical community to SQL (Structured Query Language) and has been serving the Sloan Digital Sky Survey catalog data to the public.",
+    "triples": [
+      {
+        "subject": "SciServer",
+        "predicate": "builds upon",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools"
+      },
+      {
+        "subject": "SciServer",
+        "predicate": "extends",
+        "object": "the SkyServer system of server-side tools",
+        "evidence_span": "SciServer builds upon and extends the SkyServer system of server-side tools"
+      },
+      {
+        "subject": "the SkyServer system of server-side tools",
+        "predicate": "introduced",
+        "object": "the astronomical community",
+        "evidence_span": "that introduced the astronomical community to SQL (Structured Query Language)"
+      },
+      {
+        "subject": "the SkyServer system of server-side tools",
+        "predicate": "has been serving",
+        "object": "the Sloan Digital Sky Survey catalog data",
+        "evidence_span": "and has been serving the Sloan Digital Sky Survey catalog data to the public"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 110,
+      "candidatesTokenCount": 260,
+      "totalTokenCount": 1502,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 110
+        }
+      ],
+      "thoughtsTokenCount": 1132,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-04",
+    "source_text": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+    "triples": [
+      {
+        "subject": "REGAI",
+        "predicate": "improves on",
+        "object": "the performance of both classical LLMs and RAG-based LLM techniques",
+        "evidence_span": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 89,
+      "candidatesTokenCount": 81,
+      "totalTokenCount": 290,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 89
+        }
+      ],
+      "thoughtsTokenCount": 120,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-05",
+    "source_text": "Based on this simulation, we propose a novel tutor model for adaptive training, which considers students' proficiency before and during an ongoing training session.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel tutor model for adaptive training",
+        "evidence_span": "we propose a novel tutor model for adaptive training"
+      },
+      {
+        "subject": "a novel tutor model",
+        "predicate": "considers",
+        "object": "students' proficiency before and during an ongoing training session",
+        "evidence_span": "which considers students' proficiency before and during an ongoing training session"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 96,
+      "candidatesTokenCount": 122,
+      "totalTokenCount": 747,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 96
+        }
+      ],
+      "thoughtsTokenCount": 529,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-06",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "triples": [
+      {
+        "subject": "Contemporary fuzz testing techniques",
+        "predicate": "focus on",
+        "object": "identifying memory corruption vulnerabilities",
+        "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities"
+      },
+      {
+        "subject": "memory corruption vulnerabilities",
+        "predicate": "allow",
+        "object": "adversaries to achieve either remote code execution or information disclosure",
+        "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 91,
+      "candidatesTokenCount": 126,
+      "totalTokenCount": 772,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 91
+        }
+      ],
+      "thoughtsTokenCount": 555,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-07",
+    "source_text": "Existing AML threat evaluation approaches focus primarily on technical attack robustness, overlooking crucial real-world factors like deployment environments, system dependencies, and attack feasibility.",
+    "triples": [
+      {
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "focus primarily on",
+        "object": "technical attack robustness",
+        "evidence_span": "Existing AML threat evaluation approaches focus primarily on technical attack robustness"
+      },
+      {
+        "subject": "Existing AML threat evaluation approaches",
+        "predicate": "overlooking",
+        "object": "crucial real-world factors like deployment environments, system dependencies, and attack feasibility",
+        "evidence_span": "overlooking crucial real-world factors like deployment environments, system dependencies, and attack feasibility"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 97,
+      "candidatesTokenCount": 137,
+      "totalTokenCount": 951,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 97
+        }
+      ],
+      "thoughtsTokenCount": 717,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-08",
+    "source_text": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare to ensure equitable outcomes across diverse patient demographics.",
+    "triples": [
+      {
+        "subject": "This study",
+        "predicate": "addresses",
+        "object": "the crucial need for fairness and explainability in AI applications within healthcare",
+        "evidence_span": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 93,
+      "candidatesTokenCount": 71,
+      "totalTokenCount": 742,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 93
+        }
+      ],
+      "thoughtsTokenCount": 578,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-09",
+    "source_text": "AutoSlim uses Random Forest classification to prune low-impact transitions based on edge scores and structural features, significantly reducing automata graph density while preserving semantic correctness.",
+    "triples": [
+      {
+        "subject": "AutoSlim",
+        "predicate": "uses",
+        "object": "Random Forest classification",
+        "evidence_span": "AutoSlim uses Random Forest classification"
+      },
+      {
+        "subject": "AutoSlim",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "AutoSlim uses Random Forest classification to prune low-impact transitions"
+      },
+      {
+        "subject": "Random Forest classification",
+        "predicate": "prunes",
+        "object": "low-impact transitions",
+        "evidence_span": "Random Forest classification to prune low-impact transitions"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 98,
+      "candidatesTokenCount": 161,
+      "totalTokenCount": 4438,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 98
+        }
+      ],
+      "thoughtsTokenCount": 4179,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-10",
+    "source_text": "We design a learning-based model (ProbCT) to achieve CT of such clouds, based on noisy multi-view spaceborne images.",
+    "triples": [
+      {
+        "subject": "We",
+        "predicate": "design",
+        "object": "a learning-based model (ProbCT)",
+        "evidence_span": "We design a learning-based model (ProbCT)"
+      },
+      {
+        "subject": "ProbCT",
+        "predicate": "is a",
+        "object": "learning-based model",
+        "evidence_span": "a learning-based model (ProbCT)"
+      },
+      {
+        "subject": "CT",
+        "predicate": "is of",
+        "object": "such clouds",
+        "evidence_span": "CT of such clouds"
+      },
+      {
+        "subject": "CT of such clouds",
+        "predicate": "is based on",
+        "object": "noisy multi-view spaceborne images",
+        "evidence_span": "CT of such clouds, based on noisy multi-view spaceborne images"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 96,
+      "candidatesTokenCount": 220,
+      "totalTokenCount": 3017,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 96
+        }
+      ],
+      "thoughtsTokenCount": 2701,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-11",
+    "source_text": "With a focus on trapped-ion simulators, we numerically benchmark both methods and show that high-fidelity wave packets can be achieved in near-term experiments.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "numerically benchmark",
+        "object": "both methods",
+        "evidence_span": "we numerically benchmark both methods"
+      },
+      {
+        "subject": "we",
+        "predicate": "show",
+        "object": "that high-fidelity wave packets can be achieved in near-term experiments",
+        "evidence_span": "we numerically benchmark both methods and show that high-fidelity wave packets can be achieved in near-term experiments"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 99,
+      "candidatesTokenCount": 123,
+      "totalTokenCount": 3515,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 99
+        }
+      ],
+      "thoughtsTokenCount": 3293,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-12",
+    "source_text": "Based on these results, we construct debiased estimators that are asymptotically Gaussian, allowing hypothesis testing for linear combinations of precision matrix entries across populations.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "construct",
+        "object": "debiased estimators",
+        "evidence_span": "we construct debiased estimators"
+      },
+      {
+        "subject": "debiased estimators",
+        "predicate": "are",
+        "object": "asymptotically Gaussian",
+        "evidence_span": "debiased estimators that are asymptotically Gaussian"
+      },
+      {
+        "subject": "debiased estimators",
+        "predicate": "allow",
+        "object": "hypothesis testing for linear combinations of precision matrix entries across populations",
+        "evidence_span": "allowing hypothesis testing for linear combinations of precision matrix entries across populations"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 97,
+      "candidatesTokenCount": 164,
+      "totalTokenCount": 1105,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 97
+        }
+      ],
+      "thoughtsTokenCount": 844,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-13",
+    "source_text": "In this paper, we propose a novel architecture based on Quantum Artificial Intelligence by enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles : Quantum Neural Networks for multimodal sensor fusion, Nav-Q for Quantum reinforcement learning for navigation policy optimization and finally post-quantum cryptographic protocols for secure communication.",
+    "triples": [
+      {
+        "subject": "we",
+        "predicate": "propose",
+        "object": "a novel architecture",
+        "evidence_span": "we propose a novel architecture"
+      },
+      {
+        "subject": "a novel architecture",
+        "predicate": "is based on",
+        "object": "Quantum Artificial Intelligence",
+        "evidence_span": "a novel architecture based on Quantum Artificial Intelligence"
+      },
+      {
+        "subject": "a novel architecture",
+        "predicate": "enables",
+        "object": "quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles",
+        "evidence_span": "enabling quantum and AI at various levels of navigation decision making and communication process in Autonomous vehicles"
+      },
+      {
+        "subject": "Quantum Neural Networks",
+        "predicate": "are for",
+        "object": "multimodal sensor fusion",
+        "evidence_span": "Quantum Neural Networks for multimodal sensor fusion"
+      },
+      {
+        "subject": "Nav-Q",
+        "predicate": "is for",
+        "object": "Quantum reinforcement learning for navigation policy optimization",
+        "evidence_span": "Nav-Q for Quantum reinforcement learning for navigation policy optimization"
+      },
+      {
+        "subject": "post-quantum cryptographic protocols",
+        "predicate": "are for",
+        "object": "secure communication",
+        "evidence_span": "post-quantum cryptographic protocols for secure communication"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 131,
+      "candidatesTokenCount": 342,
+      "totalTokenCount": 1772,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 131
+        }
+      ],
+      "thoughtsTokenCount": 1299,
+      "serviceTier": "standard"
+    }
+  },
+  {
+    "id": "pilot-14",
+    "source_text": "Thus, the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security.",
+    "triples": [
+      {
+        "subject": "the proposed framework",
+        "predicate": "addresses",
+        "object": "fundamental challenges in autonomous vehicles navigation",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation"
+      },
+      {
+        "subject": "the proposed framework",
+        "predicate": "providing",
+        "object": "quantum performance and future proof security",
+        "evidence_span": "the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 89,
+      "candidatesTokenCount": 123,
+      "totalTokenCount": 2673,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 89
+        }
+      ],
+      "thoughtsTokenCount": 2461,
+      "serviceTier": "standard"
+    }
+  }
+]

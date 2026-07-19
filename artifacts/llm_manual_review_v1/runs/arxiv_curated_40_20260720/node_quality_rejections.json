@@ -1,0 +1,341 @@
+[
+  {
+    "candidate_id": "arxiv-004:0",
+    "batch_id": "arxiv-004",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "subject": "One approach",
+    "predicate": "uses",
+    "object": "techniques from stochastic processes",
+    "evidence_span": "One approach uses techniques from stochastic processes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-004:1",
+    "batch_id": "arxiv-004",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Asymptotic Behavior of the Maximum and Minimum Singular Value of Random Vandermonde Matrices",
+    "source_url": "http://arxiv.org/abs/1202.3184v2",
+    "source_fingerprint": "b98c8b5147bbd2b8255e81ca376d87edd6ad8d6aecd49e6f63f5bd2bf3eca88a",
+    "source_text": "One approach uses techniques from stochastic processes and in particular, a construction related to the Brownian bridge.",
+    "subject": "One approach",
+    "predicate": "uses",
+    "object": "a construction related to the Brownian bridge",
+    "evidence_span": "One approach uses ... a construction related to the Brownian bridge",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-012:0",
+    "batch_id": "arxiv-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "subject": "Contemporary fuzz testing techniques",
+    "predicate": "focus on",
+    "object": "identifying memory corruption vulnerabilities",
+    "evidence_span": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node",
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-012:1",
+    "batch_id": "arxiv-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing",
+    "source_url": "http://arxiv.org/abs/2002.03416v2",
+    "source_fingerprint": "dc186f6d3e6c0701eecc553bfe83c7dc1c9efe41c7b12e34f9266482bc117cc1",
+    "source_text": "Contemporary fuzz testing techniques focus on identifying memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure.",
+    "subject": "memory corruption vulnerabilities",
+    "predicate": "allow",
+    "object": "adversaries",
+    "evidence_span": "memory corruption vulnerabilities that allow adversaries to achieve either remote code execution or information disclosure",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-013:0",
+    "batch_id": "arxiv-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "subject": "environments",
+    "predicate": "employ",
+    "object": "machine learning models",
+    "evidence_span": "environments currently employ machine learning models",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-013:1",
+    "batch_id": "arxiv-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Self-Updating Models with Error Remediation",
+    "source_url": "http://arxiv.org/abs/2005.09787v1",
+    "source_fingerprint": "97b908fb2345c099b7fda954629e40e6e0bbbdb0ff038c60ee34c3e377efd8f4",
+    "source_text": "Many environments currently employ machine learning models for data processing and analytics that were built using a limited number of training data points.",
+    "subject": "machine learning models",
+    "predicate": "were built using",
+    "object": "a limited number of training data points",
+    "evidence_span": "machine learning models for data processing and analytics that were built using a limited number of training data points",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-019:0",
+    "batch_id": "arxiv-019",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adversarial Attacks and Defenses in Physiological Computing: A Systematic Review",
+    "source_url": "http://arxiv.org/abs/2102.02729v4",
+    "source_fingerprint": "1df5b4178b10e147682b0ed4fa4208fbaea9687fd0e8b1a4529da996288bc5a1",
+    "source_text": "Physiological computing uses human physiological data as system inputs in real time.",
+    "subject": "Physiological computing",
+    "predicate": "uses",
+    "object": "human physiological data",
+    "evidence_span": "Physiological computing uses human physiological data",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-023:0",
+    "batch_id": "arxiv-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Higher Order Imprecise Probabilities and Statistical Testing",
+    "source_url": "http://arxiv.org/abs/2107.04542v2",
+    "source_fingerprint": "cf7b147fd9c3e50bacbc3c753a4e920ade28e8356959c4eaa8e259d85ae034b0",
+    "source_text": "We generalize standard credal set models for imprecise probabilities to include higher order credal sets -- confidences about confidences.",
+    "subject": "standard credal set models",
+    "predicate": "generalize to include",
+    "object": "higher order credal sets",
+    "evidence_span": "generalize standard credal set models for imprecise probabilities to include higher order credal sets",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-024:0",
+    "batch_id": "arxiv-024",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Adaptability and the Pivot Penalty in Science and Technology",
+    "source_url": "http://arxiv.org/abs/2107.06476v2",
+    "source_fingerprint": "f88f55fd5914b5f16d8abe2409559acb354b63a9f7ab2be6ad468adae98f0fe0",
+    "source_text": "COVID-19 provides a high-scale case study, where many researchers engaged the pandemic, yet the pivot penalty remains severe.",
+    "subject": "COVID-19",
+    "predicate": "provides",
+    "object": "a high-scale case study",
+    "evidence_span": "COVID-19 provides a high-scale case study",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-026:0",
+    "batch_id": "arxiv-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Single-Shot Black-Box Adversarial Attacks Against Malware Detectors: A Causal Language Model Approach",
+    "source_url": "http://arxiv.org/abs/2112.01724v1",
+    "source_fingerprint": "332f356c2bec688a83b89c5f4743bcc0b6f872c3fc014dea7d8e15e904fc9ca7",
+    "source_text": "In this study, we show that a novel DL-based causal language model enables single-shot evasion (i.e., with only one query to malware detector) by treating the content of the malware executable as a byte sequence and training a Generative Pre-Trained Transformer (GPT).",
+    "subject": "DL-based causal language model",
+    "predicate": "enables",
+    "object": "single-shot evasion",
+    "evidence_span": "a novel DL-based causal language model enables single-shot evasion",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-028:0",
+    "batch_id": "arxiv-028",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Telling Stories from Computational Notebooks: AI-Assisted Presentation Slides Creation for Presenting Data Science Work",
+    "source_url": "http://arxiv.org/abs/2203.11085v3",
+    "source_fingerprint": "d5bf548434a4870a08236072b69a91772a68dba242ebbf0c09ac2274c953515d",
+    "source_text": "NB2Slides uses deep learning methods as well as example-based prompts to generate slides from computational notebooks, and take users' input (e.g., audience background) to structure the slides.",
+    "subject": "NB2Slides",
+    "predicate": "uses",
+    "object": "deep learning methods",
+    "evidence_span": "NB2Slides uses deep learning methods",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-032:0",
+    "batch_id": "arxiv-032",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "LogAI: A Library for Log Analytics and Intelligence",
+    "source_url": "http://arxiv.org/abs/2301.13415v1",
+    "source_fingerprint": "8162885f189b59ac0b1e737f8194a07b0f453c48f5808fbe62c6d6d50d888d5f",
+    "source_text": "In order to enable users to perform multiple types of AI-based log analysis tasks in a uniform manner, we introduce LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence.",
+    "subject": "LogAI",
+    "predicate": "is",
+    "object": "a one-stop open source library for log analytics and intelligence",
+    "evidence_span": "LogAI (https://github.com/salesforce/logai), a one-stop open source library for log analytics and intelligence",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "list_derived_context"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-039:0",
+    "batch_id": "arxiv-039",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Simulating Meson Scattering on Spin Quantum Simulators",
+    "source_url": "http://arxiv.org/abs/2403.07061v3",
+    "source_fingerprint": "9acae8af459236a9886488b56e72e9bcae26247d419a1721f50e743dadeca89b",
+    "source_text": "In this article, we develop two methods to create entangled spin states corresponding to wave packets of composite particles in analog quantum simulators of Ising spin Hamiltonians.",
+    "subject": "two methods",
+    "predicate": "create",
+    "object": "entangled spin states",
+    "evidence_span": "two methods to create entangled spin states",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  }
+]

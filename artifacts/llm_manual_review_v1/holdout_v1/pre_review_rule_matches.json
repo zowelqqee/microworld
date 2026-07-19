@@ -1,0 +1,21 @@
+{
+  "status": "PRE_HUMAN_REVIEW",
+  "rules_source": "pre_registered_rules.md",
+  "batch": "../runs/arxiv_holdout_74_20260720",
+  "manual_review_complete": true,
+  "rule_application_order": "H1 and H2 applied mechanically before any human verdict",
+  "H1": {
+    "matched_candidate_ids": [],
+    "match_count": 0
+  },
+  "H2": {
+    "matched_candidate_ids": [],
+    "match_count": 0
+  },
+  "H1_OR_H2": {
+    "matched_candidate_ids": [],
+    "match_count": 0
+  },
+  "precision": null,
+  "precision_reason": "No candidate matched either pre-registered rule."
+}
