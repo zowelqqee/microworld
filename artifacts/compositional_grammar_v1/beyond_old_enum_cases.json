@@ -1,0 +1,162 @@
+[
+  {
+    "id": "and-deepseek-r1",
+    "kind": "AND",
+    "subject": "DeepSeek-R1",
+    "predicates": [
+      "developed_by",
+      "owned_by",
+      "used_for"
+    ],
+    "question": "For DeepSeek-R1, what are its developed by, owned by, and used for relations?",
+    "expected_relation_ids": [
+      "edge:deepseek-r1|owned_by|deepseek",
+      "edge:deepseek-r1|developed_by|deepseek",
+      "edge:deepseek-r1|used_for|natural language generation"
+    ]
+  },
+  {
+    "id": "and-tianhe-2",
+    "kind": "AND",
+    "subject": "Tianhe-2",
+    "predicates": [
+      "located_in",
+      "product_of",
+      "runs_on"
+    ],
+    "question": "For Tianhe-2, what are its located in, product of, and runs on relations?",
+    "expected_relation_ids": [
+      "edge:tianhe-2|located_in|guangzhou",
+      "edge:tianhe-2|located_in|people's republic of china",
+      "edge:tianhe-2|product_of|national university of defense technology",
+      "edge:tianhe-2|located_in|national university of defense technology",
+      "edge:tianhe-2|runs_on|kylin"
+    ]
+  },
+  {
+    "id": "and-hdf5",
+    "kind": "AND",
+    "subject": "HDF5",
+    "predicates": [
+      "developed_by",
+      "runs_on",
+      "used_for"
+    ],
+    "question": "For HDF5, what are its developed by, runs on, and used for relations?",
+    "expected_relation_ids": [
+      "edge:hdf5|developed_by|the hdf group",
+      "edge:hdf5|runs_on|cross-platform",
+      "edge:hdf5|used_for|open science",
+      "edge:hdf5|used_for|open access"
+    ]
+  },
+  {
+    "id": "and-iot",
+    "kind": "AND",
+    "subject": "IoT",
+    "predicates": [
+      "has_topic",
+      "published_by",
+      "wikidata_p407_language_of_work_or_name"
+    ],
+    "question": "For IoT, what are its has topic, published by, and wikidata p407 language of work or name relations?",
+    "expected_relation_ids": [
+      "edge:iot|published_by|mdpi",
+      "edge:iot|wikidata_p407_language_of_work_or_name|english",
+      "edge:iot|has_topic|internet of things"
+    ]
+  },
+  {
+    "id": "and-large-language-model",
+    "kind": "AND",
+    "subject": "Large Language Model",
+    "predicates": [
+      "used_for",
+      "uses",
+      "wikidata_p461_opposite_of"
+    ],
+    "question": "For Large Language Model, what are its used for, uses, and wikidata p461 opposite of relations?",
+    "expected_relation_ids": [
+      "edge:large language model|uses|ai prompt",
+      "edge:large language model|uses|transformer",
+      "edge:large language model|used_for|conversational ai",
+      "edge:large language model|used_for|computer security",
+      "edge:large language model|wikidata_p461_opposite_of|small language model"
+    ]
+  },
+  {
+    "id": "chain-elon-musk-spacex",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "SpaceX",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Elon Musk founded that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|founded|spacex",
+      "edge:spacex|develops|rockets"
+    ]
+  },
+  {
+    "id": "chain-elon-musk-tesla",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "Tesla",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "What does Elon Musk leader of that produces something?",
+    "expected_relation_ids": [
+      "edge:elon musk|leader_of|tesla",
+      "edge:tesla|produces|electric cars"
+    ]
+  },
+  {
+    "id": "chain-elon-musk-neuralink",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "Neuralink",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Elon Musk founded that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|founded|neuralink",
+      "edge:neuralink|develops|brain-computer interfaces"
+    ]
+  },
+  {
+    "id": "chain-jeff-bezos-blue-origin",
+    "kind": "CHAIN",
+    "subject": "Jeff Bezos",
+    "via": "Blue Origin",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Jeff Bezos founded that develops something?",
+    "expected_relation_ids": [
+      "edge:jeff bezos|founded|blue origin",
+      "edge:blue origin|develops|rockets"
+    ]
+  },
+  {
+    "id": "chain-elon-musk-spacex",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "develops"
+    ],
+    "question": "What does Elon Musk leader of that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|leader_of|spacex",
+      "edge:spacex|develops|rockets"
+    ]
+  }
+]

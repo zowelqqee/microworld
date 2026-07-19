@@ -1,0 +1,25 @@
+{
+  "graph_source": "artifacts/ios_demo_v2/extended_serving_overlay.json",
+  "graph_relation_count": 985,
+  "all_chain_paths_before_overlap": {
+    "safe": 44,
+    "audit_expected": 18,
+    "unique_start_subjects_safe": 15
+  },
+  "prior_relation_or_evidence_id_count": 581,
+  "eligible_after_required_zero_overlap": {
+    "answer_expected": 7,
+    "audit_expected": 2,
+    "unique_start_subjects": 6
+  },
+  "metrics": {
+    "answer_expected": {
+      "old_exact_accuracy": 0.14285714285714285,
+      "grammar_exact_accuracy": 1.0
+    },
+    "audit_expected": {
+      "grammar_correctly_audited_rate": 1.0
+    }
+  },
+  "non_degenerate_answer_paths": 5
+}

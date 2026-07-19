@@ -1,0 +1,18 @@
+{
+  "old": {
+    "cases": 10,
+    "exact_accuracy": 0.3,
+    "by_kind": {
+      "AND": 0.6,
+      "CHAIN": 0.0
+    }
+  },
+  "grammar": {
+    "cases": 10,
+    "exact_accuracy": 0.8,
+    "by_kind": {
+      "AND": 1.0,
+      "CHAIN": 0.6
+    }
+  }
+}

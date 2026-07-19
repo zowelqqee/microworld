@@ -1,0 +1,150 @@
+[
+  {
+    "id": "independent-elon-musk",
+    "kind": "AND",
+    "subject": "Elon Musk",
+    "predicates": [
+      "founded",
+      "known_for"
+    ],
+    "expected_relation_ids": [
+      "edge:elon musk|known_for|tesla",
+      "edge:elon musk|known_for|spacex",
+      "edge:elon musk|founded|spacex",
+      "edge:elon musk|founded|neuralink",
+      "edge:elon musk|founded|the boring company",
+      "edge:elon musk|founded|xai"
+    ],
+    "question": "For Elon Musk, what are its founded and known for relations?"
+  },
+  {
+    "id": "independent-jeff-bezos",
+    "kind": "AND",
+    "subject": "Jeff Bezos",
+    "predicates": [
+      "founded",
+      "estimated_net_worth"
+    ],
+    "expected_relation_ids": [
+      "edge:jeff bezos|estimated_net_worth|us$200 billion",
+      "edge:jeff bezos|founded|blue origin"
+    ],
+    "question": "For Jeff Bezos, what are its founded and estimated net worth relations?"
+  },
+  {
+    "id": "independent-spacex",
+    "kind": "AND",
+    "subject": "SpaceX",
+    "predicates": [
+      "develops",
+      "located_in"
+    ],
+    "expected_relation_ids": [
+      "edge:spacex|develops|rockets",
+      "edge:spacex|develops|spacecraft",
+      "edge:spacex|located_in|starbase, texas",
+      "edge:spacex|located_in|el segundo, california"
+    ],
+    "question": "For SpaceX, what are its develops and located in relations?"
+  },
+  {
+    "id": "independent-bernard-arnault",
+    "kind": "AND",
+    "subject": "Bernard Arnault",
+    "predicates": [
+      "estimated_net_worth",
+      "leader_of"
+    ],
+    "expected_relation_ids": [
+      "edge:bernard arnault|leader_of|luxury goods companies",
+      "edge:bernard arnault|estimated_net_worth|us$180 billion"
+    ],
+    "question": "For Bernard Arnault, what are its estimated net worth and leader of relations?"
+  },
+  {
+    "id": "independent-bloomberg-news",
+    "kind": "AND",
+    "subject": "Bloomberg News",
+    "predicates": [
+      "located_in",
+      "publishes"
+    ],
+    "expected_relation_ids": [
+      "edge:bloomberg news|publishes|financial market coverage",
+      "edge:bloomberg news|publishes|wealth indexes",
+      "edge:bloomberg news|located_in|new york city"
+    ],
+    "question": "For Bloomberg News, what are its located in and publishes relations?"
+  },
+  {
+    "id": "independent-blue-origin",
+    "kind": "AND",
+    "subject": "Blue Origin",
+    "predicates": [
+      "develops",
+      "located_in"
+    ],
+    "expected_relation_ids": [
+      "edge:blue origin|develops|rockets",
+      "edge:blue origin|develops|spacecraft",
+      "edge:blue origin|located_in|kent, washington"
+    ],
+    "question": "For Blue Origin, what are its develops and located in relations?"
+  },
+  {
+    "id": "independent-larry-ellison",
+    "kind": "AND",
+    "subject": "Larry Ellison",
+    "predicates": [
+      "leader_of",
+      "located_in"
+    ],
+    "expected_relation_ids": [
+      "edge:larry ellison|leader_of|oracle",
+      "edge:larry ellison|located_in|new york city"
+    ],
+    "question": "For Larry Ellison, what are its leader of and located in relations?"
+  },
+  {
+    "id": "independent-marc-tarpenning",
+    "kind": "AND",
+    "subject": "Marc Tarpenning",
+    "predicates": [
+      "founded",
+      "known_for"
+    ],
+    "expected_relation_ids": [
+      "edge:marc tarpenning|founded|tesla",
+      "edge:marc tarpenning|known_for|co-founding tesla"
+    ],
+    "question": "For Marc Tarpenning, what are its founded and known for relations?"
+  },
+  {
+    "id": "independent-martin-eberhard",
+    "kind": "AND",
+    "subject": "Martin Eberhard",
+    "predicates": [
+      "founded",
+      "known_for"
+    ],
+    "expected_relation_ids": [
+      "edge:martin eberhard|founded|tesla",
+      "edge:martin eberhard|known_for|co-founding tesla"
+    ],
+    "question": "For Martin Eberhard, what are its founded and known for relations?"
+  },
+  {
+    "id": "independent-neuralink",
+    "kind": "AND",
+    "subject": "Neuralink",
+    "predicates": [
+      "develops",
+      "founded_by"
+    ],
+    "expected_relation_ids": [
+      "edge:neuralink|develops|brain-computer interfaces",
+      "edge:neuralink|founded_by|max hodak"
+    ],
+    "question": "For Neuralink, what are its develops and founded by relations?"
+  }
+]

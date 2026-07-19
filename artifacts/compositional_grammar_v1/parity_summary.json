@@ -1,0 +1,44 @@
+{
+  "fanout_stress": {
+    "accuracy": 1.0,
+    "answers": 11,
+    "audits": 0,
+    "cases": 11,
+    "exact_evidence_provenance": 1.0,
+    "operators": {
+      "AND": 11
+    },
+    "unsupported_claim_rate": 0.0
+  },
+  "heldout_v2": {
+    "accuracy": 1.0,
+    "answers": 20,
+    "audits": 0,
+    "cases": 20,
+    "exact_evidence_provenance": 1.0,
+    "operators": {
+      "AND": 20
+    },
+    "unsupported_claim_rate": 0.0
+  },
+  "heldout_v3": {
+    "accuracy": 1.0,
+    "answers": 20,
+    "audits": 0,
+    "cases": 20,
+    "exact_evidence_provenance": 1.0,
+    "operators": {
+      "AND": 20
+    },
+    "unsupported_claim_rate": 0.0
+  },
+  "independent_paraphrase_v1": {
+    "accuracy": null,
+    "answers": 0,
+    "audits": 0,
+    "cases": 0,
+    "exact_evidence_provenance": null,
+    "operators": {},
+    "unsupported_claim_rate": 0.0
+  }
+}

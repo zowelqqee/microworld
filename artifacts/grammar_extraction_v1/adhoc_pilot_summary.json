@@ -1,0 +1,21 @@
+{
+  "proposal_only": true,
+  "memory_modified": false,
+  "records_processed": 83,
+  "sentences_scanned": 689,
+  "raw_pilot_candidates_total": 7,
+  "raw_pilot_by_predicate": {
+    "about": 4,
+    "extends": 1,
+    "trained_on": 2
+  },
+  "gate_passed_pilot_total": 0,
+  "gate_passed_pilot_by_predicate": {},
+  "distinct_subject_predicate_groups_passed": 0,
+  "net_new_predicate_groups_vs_pool": 0,
+  "net_new_pool_subjects_unlocked": [],
+  "gate_passed_new_to_schema_subject_count": 0,
+  "pilot_quarantine_by_reason": {
+    "missing_explicit_evidence": 7
+  }
+}

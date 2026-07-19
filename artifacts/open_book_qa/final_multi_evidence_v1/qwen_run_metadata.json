@@ -1,10 +1,10 @@
 {
   "system": "Qwen2.5-0.5B-Instruct 4-bit",
   "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
-  "startup_ms": 3411.973333,
+  "startup_ms": 4044.516042,
   "warmup_queries": 50,
   "repeats": 5,
-  "generated_timestamp": "2026-07-17T08:01:39.728427+00:00",
+  "generated_timestamp": "2026-07-18T10:53:31.505907+00:00",
   "ttft_available": false,
   "note": "Transport-resumable checkpointing; each scored sequence position was generated exactly once."
 }

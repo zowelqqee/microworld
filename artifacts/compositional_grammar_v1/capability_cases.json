@@ -1,0 +1,9 @@
+[
+  {"operator":"AND","predicates":["uses","developed_by"]}, {"operator":"AND","predicates":["created_by","published_by"]},
+  {"operator":"AND","predicates":["country_of_origin","language"]}, {"operator":"AND","predicates":["runs_on","used_for"]},
+  {"operator":"AND","predicates":["founded_by","headquartered_in"]}, {"operator":"AND","predicates":["owned_by","produces"]},
+  {"operator":"AND","predicates":["parent_company_of","product_of"]}, {"operator":"AND","predicates":["enables","supports"]},
+  {"operator":"AND","predicates":["works_by","uses"]}, {"operator":"AND","predicates":["named_after","opposite_of"]},
+  {"operator":"AND","predicates":["has_part","writing_system"]}, {"operator":"AND","predicates":["created_by","uses"]},
+  {"operator":"CHAIN","predicates":["uses","developed_by"]}, {"operator":"CHAIN","predicates":["produces","published_by"]}
+]

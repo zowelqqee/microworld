@@ -1,0 +1,155 @@
+[
+  {
+    "id": "chain-new-energy-finance-developed_by-michael-liebreich-develops-new-energy-finance",
+    "kind": "CHAIN",
+    "subject": "New Energy Finance",
+    "via": "Michael Liebreich",
+    "predicates": [
+      "developed_by",
+      "develops"
+    ],
+    "question": "Structured CHAIN: New Energy Finance --developed_by--> Michael Liebreich --develops--> New Energy Finance",
+    "expected_relation_ids": [
+      "edge:new energy finance|developed_by|michael liebreich",
+      "edge:michael liebreich|develops|new energy finance"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": true
+  },
+  {
+    "id": "chain-michael-liebreich-develops-new-energy-finance-developed_by-michael-liebreich",
+    "kind": "CHAIN",
+    "subject": "Michael Liebreich",
+    "via": "New Energy Finance",
+    "predicates": [
+      "develops",
+      "developed_by"
+    ],
+    "question": "Structured CHAIN: Michael Liebreich --develops--> New Energy Finance --developed_by--> Michael Liebreich",
+    "expected_relation_ids": [
+      "edge:michael liebreich|develops|new energy finance",
+      "edge:new energy finance|developed_by|michael liebreich"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": true
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-inspection",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> inspection",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|inspection"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-quantitative-and-qualitative-approaches",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> quantitative and qualitative approaches",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|quantitative and qualitative approaches"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-test",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> test",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|test"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false
+  },
+  {
+    "id": "chain-internet-control-message-protocol-runs_on-uav-enables-remote-monitoring-of-inundation-status-and-equipment-operability",
+    "kind": "CHAIN",
+    "subject": "Internet Control Message Protocol",
+    "via": "UAV",
+    "predicates": [
+      "runs_on",
+      "enables"
+    ],
+    "question": "Structured CHAIN: Internet Control Message Protocol --runs_on--> UAV --enables--> remote monitoring of inundation status and equipment operability",
+    "expected_relation_ids": [
+      "edge:internet control message protocol|runs_on|uav",
+      "edge:uav|enables|remote monitoring of inundation status and equipment operability"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false
+  },
+  {
+    "id": "chain-sf-36-used_for-data-collection-uses-research-instruments-in-the-form-of-observation,-questionnaires,-interviews-and-documentation",
+    "kind": "CHAIN",
+    "subject": "SF-36",
+    "via": "data collection",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: SF-36 --used_for--> data collection --uses--> research instruments in the form of observation, questionnaires, interviews and documentation",
+    "expected_relation_ids": [
+      "edge:sf-36|used_for|data collection",
+      "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false
+  },
+  {
+    "id": "chain-gwynne-shotwell-leader_of-spacex-produces-falcon-rockets",
+    "kind": "CHAIN",
+    "subject": "Gwynne Shotwell",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Falcon rockets",
+    "expected_relation_ids": [
+      "edge:gwynne shotwell|leader_of|spacex",
+      "edge:spacex|produces|falcon rockets"
+    ],
+    "expected": "audit",
+    "audit_reason": "current_sensitive_relation:leader_of"
+  },
+  {
+    "id": "chain-gwynne-shotwell-leader_of-spacex-produces-dragon-spacecraft",
+    "kind": "CHAIN",
+    "subject": "Gwynne Shotwell",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Dragon spacecraft",
+    "expected_relation_ids": [
+      "edge:gwynne shotwell|leader_of|spacex",
+      "edge:spacex|produces|dragon spacecraft"
+    ],
+    "expected": "audit",
+    "audit_reason": "current_sensitive_relation:leader_of"
+  }
+]

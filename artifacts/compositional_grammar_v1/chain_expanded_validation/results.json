@@ -1,0 +1,2462 @@
+[
+  {
+    "id": "chain-new-energy-finance-developed_by-michael-liebreich-develops-new-energy-finance",
+    "kind": "CHAIN",
+    "subject": "New Energy Finance",
+    "via": "Michael Liebreich",
+    "predicates": [
+      "developed_by",
+      "develops"
+    ],
+    "question": "Structured CHAIN: New Energy Finance --developed_by--> Michael Liebreich --develops--> New Energy Finance",
+    "expected_relation_ids": [
+      "edge:new energy finance|developed_by|michael liebreich",
+      "edge:michael liebreich|develops|new energy finance"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": true,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:michael liebreich|develops|new energy finance",
+        "edge:michael liebreich|develops|new energy finance"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: New Energy Finance --developed_by--> Michael Liebreich --develops--> New Energy Finance",
+        "targets": [
+          "new energy finance"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:michael liebreich|develops|new energy finance",
+                "subject": "Michael Liebreich",
+                "predicate": "develops",
+                "object": "New Energy Finance",
+                "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+                "sources": [
+                  "source_page:Bloomberg L.P."
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:michael liebreich|develops|new energy finance",
+                "subject": "Michael Liebreich",
+                "predicate": "develops",
+                "object": "New Energy Finance",
+                "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+                "sources": [
+                  "source_page:Bloomberg L.P."
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "new energy finance",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.5556,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8889
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8889
+          },
+          {
+            "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+            "reason": "below_information_gain_threshold",
+            "total": 0.3389
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'new energy finance' (exact); total=0.889; object_slots=1"
+        ],
+        "stop_reason": "next best step (edge:new energy finance|developed_by|michael liebreich) scored 0.339 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:new energy finance|developed_by|michael liebreich",
+        "edge:michael liebreich|develops|new energy finance"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+              "subject": "New Energy Finance",
+              "predicate": "developed_by",
+              "object": "Michael Liebreich",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Bloomberg L.P.",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:michael liebreich|develops|new energy finance",
+              "subject": "Michael Liebreich",
+              "predicate": "develops",
+              "object": "New Energy Finance",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Bloomberg L.P.",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-michael-liebreich-develops-new-energy-finance-developed_by-michael-liebreich",
+    "kind": "CHAIN",
+    "subject": "Michael Liebreich",
+    "via": "New Energy Finance",
+    "predicates": [
+      "develops",
+      "developed_by"
+    ],
+    "question": "Structured CHAIN: Michael Liebreich --develops--> New Energy Finance --developed_by--> Michael Liebreich",
+    "expected_relation_ids": [
+      "edge:michael liebreich|develops|new energy finance",
+      "edge:new energy finance|developed_by|michael liebreich"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": true,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:michael liebreich|develops|new energy finance",
+        "edge:michael liebreich|develops|new energy finance"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: Michael Liebreich --develops--> New Energy Finance --developed_by--> Michael Liebreich",
+        "targets": [
+          "michael liebreich"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:michael liebreich|develops|new energy finance",
+                "subject": "Michael Liebreich",
+                "predicate": "develops",
+                "object": "New Energy Finance",
+                "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+                "sources": [
+                  "source_page:Bloomberg L.P."
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:michael liebreich|develops|new energy finance",
+                "subject": "Michael Liebreich",
+                "predicate": "develops",
+                "object": "New Energy Finance",
+                "evidence_text": "New Energy Finance was created by Michael Liebreich in 2004, to provide news, data and analysis on carbon and clean energy markets.",
+                "sources": [
+                  "source_page:Bloomberg L.P."
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "michael liebreich",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.5556,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8889
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8889
+          },
+          {
+            "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+            "reason": "below_information_gain_threshold",
+            "total": 0.3389
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'michael liebreich' (exact); total=0.889; object_slots=1"
+        ],
+        "stop_reason": "next best step (edge:new energy finance|developed_by|michael liebreich) scored 0.339 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:michael liebreich|develops|new energy finance",
+        "edge:new energy finance|developed_by|michael liebreich"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:michael liebreich|develops|new energy finance",
+              "subject": "Michael Liebreich",
+              "predicate": "develops",
+              "object": "New Energy Finance",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Bloomberg L.P.",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:new energy finance|developed_by|michael liebreich",
+              "subject": "New Energy Finance",
+              "predicate": "developed_by",
+              "object": "Michael Liebreich",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Bloomberg L.P.",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-inspection",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> inspection",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|inspection"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|inspection",
+        "edge:evaluation|uses|quantitative and qualitative approaches",
+        "edge:evaluation|uses|test",
+        "edge:evaluation|uses|inspection"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> inspection",
+        "targets": [
+          "f1-score"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "f1-score",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2857,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8214
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:evaluation|uses|inspection",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "inspection",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies inspection (Q1137655).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "quantitative and qualitative approaches",
+                "evidence_text": "Evaluation uses quantitative and qualitative approaches.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|test",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "test",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies test (Q1003030).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:evaluation|uses|inspection",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "inspection",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies inspection (Q1137655).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "evaluation",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.2857,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.7314
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+            "reason": "outscored_by_selected_step",
+            "total": 0.71
+          },
+          {
+            "evidence_id": "edge:evaluation|uses|test",
+            "reason": "outscored_by_selected_step",
+            "total": 0.1957
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'f1-score' (exact); total=0.821; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'evaluation' (exact); total=0.731; object_slots=3"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|inspection"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:f1-score|used_for|evaluation",
+              "subject": "F1-score",
+              "predicate": "used_for",
+              "object": "evaluation",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Predicting Acute Biliary Pancreatitis Relapse Using CNN: The Minerva Multicentric Study",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:evaluation|uses|inspection",
+              "subject": "Evaluation",
+              "predicate": "uses",
+              "object": "inspection",
+              "overlay_type": "overlay_relation",
+              "trust": "user_authorized_wikidata_serving",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "evaluation",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-quantitative-and-qualitative-approaches",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> quantitative and qualitative approaches",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|quantitative and qualitative approaches"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|quantitative and qualitative approaches",
+        "edge:evaluation|uses|inspection",
+        "edge:evaluation|uses|test",
+        "edge:evaluation|uses|quantitative and qualitative approaches"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> quantitative and qualitative approaches",
+        "targets": [
+          "f1-score"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "f1-score",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2222,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8056
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "quantitative and qualitative approaches",
+                "evidence_text": "Evaluation uses quantitative and qualitative approaches.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|inspection",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "inspection",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies inspection (Q1137655).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|test",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "test",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies test (Q1003030).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "quantitative and qualitative approaches",
+                "evidence_text": "Evaluation uses quantitative and qualitative approaches.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              "attach_node": "evaluation",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.8,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.86
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:evaluation|uses|inspection",
+            "reason": "outscored_by_selected_step",
+            "total": 0.6878
+          },
+          {
+            "evidence_id": "edge:evaluation|uses|test",
+            "reason": "outscored_by_selected_step",
+            "total": 0.1878
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'f1-score' (exact); total=0.806; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'evaluation' (exact); total=0.860; object_slots=3"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|quantitative and qualitative approaches"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:f1-score|used_for|evaluation",
+              "subject": "F1-score",
+              "predicate": "used_for",
+              "object": "evaluation",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Predicting Acute Biliary Pancreatitis Relapse Using CNN: The Minerva Multicentric Study",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+              "subject": "Evaluation",
+              "predicate": "uses",
+              "object": "quantitative and qualitative approaches",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Evaluation of Achievement Development Management of Bhayangkara Precision Football Club",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-f1-score-used_for-evaluation-uses-test",
+    "kind": "CHAIN",
+    "subject": "F1-score",
+    "via": "evaluation",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> test",
+    "expected_relation_ids": [
+      "edge:f1-score|used_for|evaluation",
+      "edge:evaluation|uses|test"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|quantitative and qualitative approaches",
+        "edge:evaluation|uses|inspection",
+        "edge:evaluation|uses|test",
+        "edge:evaluation|uses|quantitative and qualitative approaches"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: F1-score --used_for--> evaluation --uses--> test",
+        "targets": [
+          "f1-score"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:f1-score|used_for|evaluation",
+                "subject": "F1-score",
+                "predicate": "used_for",
+                "object": "evaluation",
+                "evidence_text": "Data were divided into training (70%), validation (15%) and test sets (15%), and AUC, F1-score and accuracy were used for evaluation.",
+                "sources": [
+                  "https://doi.org/10.54103/2282-0930/29441"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "f1-score",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4286,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8571
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "quantitative and qualitative approaches",
+                "evidence_text": "Evaluation uses quantitative and qualitative approaches.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|inspection",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "inspection",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies inspection (Q1137655).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:evaluation|uses|test",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "test",
+                "evidence_text": "Wikidata statement P2283 (uses) for evaluation (Q1379672) identifies test (Q1003030).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q1379672"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:evaluation|uses|quantitative and qualitative approaches",
+                "subject": "Evaluation",
+                "predicate": "uses",
+                "object": "quantitative and qualitative approaches",
+                "evidence_text": "Evaluation uses quantitative and qualitative approaches.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              "attach_node": "evaluation",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.71
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:evaluation|uses|inspection",
+            "reason": "outscored_by_selected_step",
+            "total": 0.6957
+          },
+          {
+            "evidence_id": "edge:evaluation|uses|test",
+            "reason": "outscored_by_selected_step",
+            "total": 0.2314
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'f1-score' (exact); total=0.857; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'evaluation' (exact); total=0.710; object_slots=3"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:f1-score|used_for|evaluation",
+        "edge:evaluation|uses|test"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:f1-score|used_for|evaluation",
+              "subject": "F1-score",
+              "predicate": "used_for",
+              "object": "evaluation",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Predicting Acute Biliary Pancreatitis Relapse Using CNN: The Minerva Multicentric Study",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:evaluation|uses|test",
+              "subject": "Evaluation",
+              "predicate": "uses",
+              "object": "test",
+              "overlay_type": "overlay_relation",
+              "trust": "user_authorized_wikidata_serving",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "evaluation",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-internet-control-message-protocol-runs_on-uav-enables-remote-monitoring-of-inundation-status-and-equipment-operability",
+    "kind": "CHAIN",
+    "subject": "Internet Control Message Protocol",
+    "via": "UAV",
+    "predicates": [
+      "runs_on",
+      "enables"
+    ],
+    "question": "Structured CHAIN: Internet Control Message Protocol --runs_on--> UAV --enables--> remote monitoring of inundation status and equipment operability",
+    "expected_relation_ids": [
+      "edge:internet control message protocol|runs_on|uav",
+      "edge:uav|enables|remote monitoring of inundation status and equipment operability"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:internet control message protocol|runs_on|uav",
+        "edge:internet control message protocol|runs_on|uav",
+        "edge:uav|enables|remote monitoring of inundation status and equipment operability",
+        "edge:uav|enables|remote monitoring of inundation status and equipment operability",
+        "edge:internet control message protocol|part_of|internet protocol suite",
+        "edge:internet control message protocol|part_of|internet protocol suite"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: Internet Control Message Protocol --runs_on--> UAV --enables--> remote monitoring of inundation status and equipment operability",
+        "targets": [
+          "internet control message protocol"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:internet control message protocol|runs_on|uav",
+                "subject": "Internet Control Message Protocol",
+                "predicate": "runs_on",
+                "object": "UAV",
+                "evidence_text": "In the current work, we have explored three variants of DDoS attacks, namely Transmission Control Protocol (TCP), Internet Control Message Protocol (ICMP), and TCP + ICMP flooding attacks, and developed a detection mechanism that runs on the companion computer of the UAV system.",
+                "sources": [
+                  "http://arxiv.org/abs/2406.19881v1"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:internet control message protocol|runs_on|uav",
+                "subject": "Internet Control Message Protocol",
+                "predicate": "runs_on",
+                "object": "UAV",
+                "evidence_text": "In the current work, we have explored three variants of DDoS attacks, namely Transmission Control Protocol (TCP), Internet Control Message Protocol (ICMP), and TCP + ICMP flooding attacks, and developed a detection mechanism that runs on the companion computer of the UAV system.",
+                "sources": [
+                  "http://arxiv.org/abs/2406.19881v1"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              "attach_node": "internet control message protocol",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.3333,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8333
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:uav|enables|remote monitoring of inundation status and equipment operability",
+                "subject": "UAV",
+                "predicate": "enables",
+                "object": "remote monitoring of inundation status and equipment operability",
+                "evidence_text": "Additionally, a \"Drainage Pump Station Monitoring System\" was created, which involved 3D modelling with UAV and LiDAR enables remote monitoring of inundation status and equipment operability.",
+                "sources": [
+                  "https://doi.org/10.58286/31723"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:uav|enables|remote monitoring of inundation status and equipment operability",
+                "subject": "UAV",
+                "predicate": "enables",
+                "object": "remote monitoring of inundation status and equipment operability",
+                "evidence_text": "Additionally, a \"Drainage Pump Station Monitoring System\" was created, which involved 3D modelling with UAV and LiDAR enables remote monitoring of inundation status and equipment operability.",
+                "sources": [
+                  "https://doi.org/10.58286/31723"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "uav",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.4667,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.7767
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:internet control message protocol|part_of|internet protocol suite",
+                "subject": "Internet Control Message Protocol",
+                "predicate": "part_of",
+                "object": "Internet protocol suite",
+                "evidence_text": "Wikidata statement P361 (part of) for Internet Control Message Protocol (Q13162) identifies Internet protocol suite (Q81414).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q13162"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:internet control message protocol|part_of|internet protocol suite",
+                "subject": "Internet Control Message Protocol",
+                "predicate": "part_of",
+                "object": "Internet protocol suite",
+                "evidence_text": "Wikidata statement P361 (part of) for Internet Control Message Protocol (Q13162) identifies Internet protocol suite (Q81414).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q13162"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "user_authorized_wikidata_serving",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "internet control message protocol",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.3077,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 0.3333,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.6667,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.3936
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:internet control message protocol|part_of|internet protocol suite",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8269
+          },
+          {
+            "evidence_id": "edge:internet control message protocol|part_of|internet protocol suite",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4436
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'internet control message protocol' (exact); total=0.833; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'uav' (exact); total=0.777; object_slots=1",
+          "block 3: sibling_elaboration attaching to target 'internet control message protocol' (exact); total=0.394; object_slots=1"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:internet control message protocol|runs_on|uav",
+        "edge:uav|enables|remote monitoring of inundation status and equipment operability"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:internet control message protocol|runs_on|uav",
+              "subject": "Internet Control Message Protocol",
+              "predicate": "runs_on",
+              "object": "UAV",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Attention Meets UAVs: A Comprehensive Evaluation of DDoS Detection in Low-Cost UAVs",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:uav|enables|remote monitoring of inundation status and equipment operability",
+              "subject": "UAV",
+              "predicate": "enables",
+              "object": "remote monitoring of inundation status and equipment operability",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Practical Feasibility of AI Image Analysis and Digital Twins for Remote Management of Drainage Pump Stations and Agricultural Canal Gates",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-sf-36-used_for-data-collection-uses-research-instruments-in-the-form-of-observation,-questionnaires,-interviews-and-documentation",
+    "kind": "CHAIN",
+    "subject": "SF-36",
+    "via": "data collection",
+    "predicates": [
+      "used_for",
+      "uses"
+    ],
+    "question": "Structured CHAIN: SF-36 --used_for--> data collection --uses--> research instruments in the form of observation, questionnaires, interviews and documentation",
+    "expected_relation_ids": [
+      "edge:sf-36|used_for|data collection",
+      "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation"
+    ],
+    "expected": "answer",
+    "degenerate_cycle": false,
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:sf-36|used_for|data collection",
+        "edge:sf-36|used_for|data collection",
+        "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation",
+        "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: SF-36 --used_for--> data collection --uses--> research instruments in the form of observation, questionnaires, interviews and documentation",
+        "targets": [
+          "sf-36"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:sf-36|used_for|data collection",
+                "subject": "SF-36",
+                "predicate": "used_for",
+                "object": "data collection",
+                "evidence_text": "Demographic and the Short Form 36 (SF-36) Quality of Life Questionnaires were used for data collection.",
+                "sources": [
+                  "https://doi.org/10.2427/11986"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:sf-36|used_for|data collection",
+                "subject": "SF-36",
+                "predicate": "used_for",
+                "object": "data collection",
+                "evidence_text": "Demographic and the Short Form 36 (SF-36) Quality of Life Questionnaires were used for data collection.",
+                "sources": [
+                  "https://doi.org/10.2427/11986"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "sf-36",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4545,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8636
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation",
+                "subject": "Data collection",
+                "predicate": "uses",
+                "object": "research instruments in the form of observation, questionnaires, interviews and documentation",
+                "evidence_text": "Data collection uses research instruments in the form of observation, questionnaires, interviews and documentation.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation",
+                "subject": "Data collection",
+                "predicate": "uses",
+                "object": "research instruments in the form of observation, questionnaires, interviews and documentation",
+                "evidence_text": "Data collection uses research instruments in the form of observation, questionnaires, interviews and documentation.",
+                "sources": [
+                  "https://doi.org/10.47191/ijmra/v7-i05-33"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_open_web_exploratory",
+                "corroboration": "single_source",
+                "support_count": 2
+              },
+              "attach_node": "data collection",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.9,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 0.7143,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.2857,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.7421
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:semi-structured|used_for|data collection",
+            "reason": "outscored_by_selected_step",
+            "total": 0.2671
+          },
+          {
+            "evidence_id": "edge:semi-structured|used_for|data collection",
+            "reason": "below_information_gain_threshold",
+            "total": 0.2171
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'sf-36' (exact); total=0.864; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'data collection' (exact); total=0.742; object_slots=1"
+        ],
+        "stop_reason": "next best step (edge:semi-structured|used_for|data collection) scored 0.217 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:sf-36|used_for|data collection",
+        "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:sf-36|used_for|data collection",
+              "subject": "SF-36",
+              "predicate": "used_for",
+              "object": "data collection",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "The Relation between Contraception Methods and Quality of Life",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:data collection|uses|research instruments in the form of observation, questionnaires, interviews and documentation",
+              "subject": "Data collection",
+              "predicate": "uses",
+              "object": "research instruments in the form of observation, questionnaires, interviews and documentation",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_open_web_exploratory",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Evaluation of Achievement Development Management of Bhayangkara Precision Football Club",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": true,
+    "grammar_exact": true,
+    "grammar_correct_audit": false
+  },
+  {
+    "id": "chain-gwynne-shotwell-leader_of-spacex-produces-falcon-rockets",
+    "kind": "CHAIN",
+    "subject": "Gwynne Shotwell",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Falcon rockets",
+    "expected_relation_ids": [
+      "edge:gwynne shotwell|leader_of|spacex",
+      "edge:spacex|produces|falcon rockets"
+    ],
+    "expected": "audit",
+    "audit_reason": "current_sensitive_relation:leader_of",
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:gwynne shotwell|leader_of|spacex",
+        "edge:gwynne shotwell|leader_of|spacex",
+        "edge:spacex|develops|rockets",
+        "edge:spacex|develops|spacecraft",
+        "edge:spacex|develops|rockets",
+        "edge:spacex|located_in|el segundo, california",
+        "edge:spacex|located_in|starbase, texas",
+        "edge:spacex|located_in|el segundo, california",
+        "edge:spacex|produces|dragon spacecraft",
+        "edge:spacex|produces|falcon rockets",
+        "edge:spacex|produces|dragon spacecraft"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Falcon rockets",
+        "targets": [
+          "gwynne shotwell"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+                "subject": "Gwynne Shotwell",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for her leadership of SpaceX",
+                "sources": [
+                  "source_page:Gwynne Shotwell"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+                "subject": "Gwynne Shotwell",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for her leadership of SpaceX",
+                "sources": [
+                  "source_page:Gwynne Shotwell"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "gwynne shotwell",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4286,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8571
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|develops|spacecraft",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "spacecraft",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.5,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.785
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|located_in|el segundo, california",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "El Segundo, California",
+                "evidence_text": "SpaceX was first headquartered in a warehouse in El Segundo, California.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|located_in|starbase, texas",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "Starbase, Texas",
+                "evidence_text": "Space Exploration Technologies Corporation, doing business as SpaceX, is an American public spaceflight, telecommunications, and artificial intelligence company headquartered at the Starbase development site in Starbase, Texas.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:spacex|located_in|el segundo, california",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "El Segundo, California",
+                "evidence_text": "SpaceX was first headquartered in a warehouse in El Segundo, California.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.1429,
+                "evidence_quality": 0.9,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.6757
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|produces|falcon rockets",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Falcon rockets",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 3,
+              "edge": {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.4286,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 0.5,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.5,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.15,
+                "total": 0.4171
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:spacex|develops|spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.785
+          },
+          {
+            "evidence_id": "edge:spacex|produces|dragon spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7671
+          },
+          {
+            "evidence_id": "edge:spacex|located_in|starbase, texas",
+            "reason": "outscored_by_selected_step",
+            "total": 0.6678
+          },
+          {
+            "evidence_id": "edge:spacex|produces|dragon spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4171
+          },
+          {
+            "evidence_id": "edge:elon musk|founded|spacex",
+            "reason": "outscored_by_selected_step",
+            "total": 0.1225
+          },
+          {
+            "evidence_id": "edge:blue origin|develops|rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.11
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'gwynne shotwell' (exact); total=0.857; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.785; object_slots=2",
+          "block 3: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.676; object_slots=2",
+          "block 4: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.417; object_slots=2"
+        ],
+        "stop_reason": "max_blocks_reached",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "audit",
+      "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+      "selected_relation_ids": [],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "audit",
+        "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+        "components": []
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": false,
+    "grammar_correct_audit": true
+  },
+  {
+    "id": "chain-gwynne-shotwell-leader_of-spacex-produces-dragon-spacecraft",
+    "kind": "CHAIN",
+    "subject": "Gwynne Shotwell",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Dragon spacecraft",
+    "expected_relation_ids": [
+      "edge:gwynne shotwell|leader_of|spacex",
+      "edge:spacex|produces|dragon spacecraft"
+    ],
+    "expected": "audit",
+    "audit_reason": "current_sensitive_relation:leader_of",
+    "old": {
+      "decision": "answer",
+      "support": "existing_answer_behavior_planner",
+      "selected_relation_ids": [
+        "edge:gwynne shotwell|leader_of|spacex",
+        "edge:gwynne shotwell|leader_of|spacex",
+        "edge:spacex|develops|rockets",
+        "edge:spacex|develops|spacecraft",
+        "edge:spacex|develops|rockets",
+        "edge:spacex|located_in|el segundo, california",
+        "edge:spacex|located_in|starbase, texas",
+        "edge:spacex|located_in|el segundo, california",
+        "edge:spacex|produces|dragon spacecraft",
+        "edge:spacex|produces|falcon rockets",
+        "edge:spacex|produces|dragon spacecraft"
+      ],
+      "trace": {
+        "question": "Structured CHAIN: Gwynne Shotwell --leader_of--> SpaceX --produces--> Dragon spacecraft",
+        "targets": [
+          "gwynne shotwell"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+                "subject": "Gwynne Shotwell",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for her leadership of SpaceX",
+                "sources": [
+                  "source_page:Gwynne Shotwell"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+                "subject": "Gwynne Shotwell",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for her leadership of SpaceX",
+                "sources": [
+                  "source_page:Gwynne Shotwell"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "gwynne shotwell",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4286,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8571
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|develops|spacecraft",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "spacecraft",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.5,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.785
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|located_in|el segundo, california",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "El Segundo, California",
+                "evidence_text": "SpaceX was first headquartered in a warehouse in El Segundo, California.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|located_in|starbase, texas",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "Starbase, Texas",
+                "evidence_text": "Space Exploration Technologies Corporation, doing business as SpaceX, is an American public spaceflight, telecommunications, and artificial intelligence company headquartered at the Starbase development site in Starbase, Texas.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:spacex|located_in|el segundo, california",
+                "subject": "SpaceX",
+                "predicate": "located_in",
+                "object": "El Segundo, California",
+                "evidence_text": "SpaceX was first headquartered in a warehouse in El Segundo, California.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "low",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.1429,
+                "evidence_quality": 0.9,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.6757
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|produces|falcon rockets",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Falcon rockets",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 3,
+              "edge": {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.4286,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 0.5,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.5,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.15,
+                "total": 0.4171
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:spacex|develops|spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.785
+          },
+          {
+            "evidence_id": "edge:spacex|produces|dragon spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7671
+          },
+          {
+            "evidence_id": "edge:spacex|located_in|starbase, texas",
+            "reason": "outscored_by_selected_step",
+            "total": 0.6678
+          },
+          {
+            "evidence_id": "edge:spacex|produces|dragon spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4671
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.4171
+          },
+          {
+            "evidence_id": "edge:elon musk|founded|spacex",
+            "reason": "outscored_by_selected_step",
+            "total": 0.1225
+          },
+          {
+            "evidence_id": "edge:blue origin|develops|rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.11
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'gwynne shotwell' (exact); total=0.857; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.785; object_slots=2",
+          "block 3: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.676; object_slots=2",
+          "block 4: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.417; object_slots=2"
+        ],
+        "stop_reason": "max_blocks_reached",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "audit",
+      "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+      "selected_relation_ids": [],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "audit",
+        "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+        "components": []
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": false,
+    "grammar_correct_audit": true
+  }
+]

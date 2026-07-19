@@ -1,0 +1,72 @@
+{
+  "trained_on": [
+    {
+      "subject": "Artificial intelligence",
+      "relation": "trained_on",
+      "object": "ideal bulk crystals",
+      "pattern_id": "spacy:passive:train",
+      "gate": "quarantined",
+      "evidence": "Artificial intelligence (AI) and machine learning (ML) models in materials science are predominantly trained on ideal bulk crystals, limiting their transferability to real-world applications where surfaces, interfaces, and defects dominate.",
+      "source_title": "AI-ready design of realistic 2D materials and interfaces with Mat3ra-2D"
+    },
+    {
+      "subject": "machine learning",
+      "relation": "trained_on",
+      "object": "ideal bulk crystals",
+      "pattern_id": "spacy:passive:train",
+      "gate": "quarantined",
+      "evidence": "Artificial intelligence (AI) and machine learning (ML) models in materials science are predominantly trained on ideal bulk crystals, limiting their transferability to real-world applications where surfaces, interfaces, and defects dominate.",
+      "source_title": "AI-ready design of realistic 2D materials and interfaces with Mat3ra-2D"
+    }
+  ],
+  "based_on": [],
+  "extends": [
+    {
+      "subject": "REGAI",
+      "relation": "extends",
+      "object": "performance",
+      "pattern_id": "spacy:active_prep:improve",
+      "gate": "quarantined",
+      "evidence": "REGAI improves on the performance of both classical LLMs and RAG-based LLM techniques.",
+      "source_title": "Development of REGAI: Rubric Enabled Generative Artificial Intelligence"
+    }
+  ],
+  "about": [
+    {
+      "subject": "study",
+      "relation": "about",
+      "object": "crucial need",
+      "pattern_id": "spacy:active:address",
+      "gate": "quarantined",
+      "evidence": "This study addresses the crucial need for fairness and explainability in AI applications within healthcare to ensure equitable outcomes across diverse patient demographics.",
+      "source_title": "Explainable AI for Fair Sepsis Mortality Predictive Model"
+    },
+    {
+      "subject": "Existing AML threat evaluation approaches",
+      "relation": "about",
+      "object": "technical attack robustness",
+      "pattern_id": "spacy:active_prep:focus",
+      "gate": "quarantined",
+      "evidence": "Existing AML threat evaluation approaches focus primarily on technical attack robustness, overlooking crucial real-world factors like deployment environments, system dependencies, and attack feasibility.",
+      "source_title": "FRAME : Comprehensive Risk Assessment Framework for Adversarial Machine Learning Threats"
+    },
+    {
+      "subject": "proposed framework",
+      "relation": "about",
+      "object": "fundamental challenges",
+      "pattern_id": "spacy:active:address",
+      "gate": "quarantined",
+      "evidence": "Thus, the proposed framework addresses fundamental challenges in autonomous vehicles navigation by providing quantum performance and future proof security.",
+      "source_title": "Quantum Artificial Intelligence for Secure Autonomous Vehicle Navigation: An Architectural"
+    },
+    {
+      "subject": "CryptoBLL",
+      "relation": "about",
+      "object": "tension",
+      "pattern_id": "spacy:active:address",
+      "gate": "quarantined",
+      "evidence": "CryptoBLL addresses this tension by proposing a framework for the automatic analysis of protocols in computational cryptography.",
+      "source_title": "Exploiting the Potential of Linearity in Automatic Differentiation and Computational Crypt"
+    }
+  ]
+}

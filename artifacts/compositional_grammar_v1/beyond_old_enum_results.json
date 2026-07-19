@@ -1,0 +1,2431 @@
+[
+  {
+    "id": "and-deepseek-r1",
+    "kind": "AND",
+    "subject": "DeepSeek-R1",
+    "predicates": [
+      "developed_by",
+      "owned_by",
+      "used_for"
+    ],
+    "question": "For DeepSeek-R1, what are its developed by, owned by, and used for relations?",
+    "expected_relation_ids": [
+      "edge:deepseek-r1|owned_by|deepseek",
+      "edge:deepseek-r1|developed_by|deepseek",
+      "edge:deepseek-r1|used_for|natural language generation"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "Wikidata statement P127 (owned by) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453). Alongside that, Wikidata statement P178 (developer) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453). On another supported side, Wikidata statement P366 (has use) for DeepSeek-R1 (Q131914874) identifies natural language generation (Q1513879). (Every statement above is tied to a cited evidence span; each of the 3 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:deepseek-r1|developed_by|deepseek",
+        "edge:deepseek-r1|owned_by|deepseek",
+        "edge:deepseek-r1|used_for|natural language generation"
+      ],
+      "trace": {
+        "question": "For DeepSeek-R1, what are its developed by, owned by, and used for relations?",
+        "targets": [
+          "deepseek-r1"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:deepseek-r1|owned_by|deepseek",
+                "subject": "DeepSeek-R1",
+                "predicate": "owned_by",
+                "object": "DeepSeek",
+                "evidence_text": "Wikidata statement P127 (owned by) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:deepseek-r1|owned_by|deepseek",
+                "subject": "DeepSeek-R1",
+                "predicate": "owned_by",
+                "object": "DeepSeek",
+                "evidence_text": "Wikidata statement P127 (owned by) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "deepseek-r1",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.85
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:deepseek-r1|developed_by|deepseek",
+                "subject": "DeepSeek-R1",
+                "predicate": "developed_by",
+                "object": "DeepSeek",
+                "evidence_text": "Wikidata statement P178 (developer) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:deepseek-r1|developed_by|deepseek",
+                "subject": "DeepSeek-R1",
+                "predicate": "developed_by",
+                "object": "DeepSeek",
+                "evidence_text": "Wikidata statement P178 (developer) for DeepSeek-R1 (Q131914874) identifies DeepSeek (Q131577453).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "deepseek-r1",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.75
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:deepseek-r1|used_for|natural language generation",
+                "subject": "DeepSeek-R1",
+                "predicate": "used_for",
+                "object": "natural language generation",
+                "evidence_text": "Wikidata statement P366 (has use) for DeepSeek-R1 (Q131914874) identifies natural language generation (Q1513879).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:deepseek-r1|used_for|natural language generation",
+                "subject": "DeepSeek-R1",
+                "predicate": "used_for",
+                "object": "natural language generation",
+                "evidence_text": "Wikidata statement P366 (has use) for DeepSeek-R1 (Q131914874) identifies natural language generation (Q1513879).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q131914874"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "deepseek-r1",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.7
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:deepseek-r1|developed_by|deepseek",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:deepseek-r1|used_for|natural language generation",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:deepseek-r1|used_for|natural language generation",
+            "reason": "outscored_by_selected_step",
+            "total": 0.75
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'deepseek-r1' (exact); total=0.850; object_slots=1",
+          "block 2: sibling_elaboration attaching to target 'deepseek-r1' (exact); total=0.750; object_slots=1",
+          "block 3: sibling_elaboration attaching to target 'deepseek-r1' (exact); total=0.700; object_slots=1"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:deepseek-r1|developed_by|deepseek",
+        "edge:deepseek-r1|owned_by|deepseek",
+        "edge:deepseek-r1|used_for|natural language generation"
+      ],
+      "plan": {
+        "operator": "AND",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:deepseek-r1|developed_by|deepseek",
+              "subject": "DeepSeek-R1",
+              "predicate": "developed_by",
+              "object": "DeepSeek",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "DeepSeek-R1",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:deepseek-r1|owned_by|deepseek",
+              "subject": "DeepSeek-R1",
+              "predicate": "owned_by",
+              "object": "DeepSeek",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "DeepSeek-R1",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:deepseek-r1|used_for|natural language generation",
+              "subject": "DeepSeek-R1",
+              "predicate": "used_for",
+              "object": "natural language generation",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "DeepSeek-R1",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": true,
+    "grammar_exact": true
+  },
+  {
+    "id": "and-tianhe-2",
+    "kind": "AND",
+    "subject": "Tianhe-2",
+    "predicates": [
+      "located_in",
+      "product_of",
+      "runs_on"
+    ],
+    "question": "For Tianhe-2, what are its located in, product of, and runs on relations?",
+    "expected_relation_ids": [
+      "edge:tianhe-2|located_in|guangzhou",
+      "edge:tianhe-2|located_in|people's republic of china",
+      "edge:tianhe-2|product_of|national university of defense technology",
+      "edge:tianhe-2|located_in|national university of defense technology",
+      "edge:tianhe-2|runs_on|kylin"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "Tianhe-2 located in Guangzhou, National University of Defense Technology, and People's Republic of China. Alongside that, Wikidata statement P176 (manufacturer) for Tianhe-2 (Q7800177) identifies National University of Defense Technology (Q831227). On another supported side, Wikidata statement P306 (operating system) for Tianhe-2 (Q7800177) identifies Kylin (Q1438024). (Every statement above is tied to a cited evidence span; each of the 3 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:tianhe-2|located_in|guangzhou",
+        "edge:tianhe-2|located_in|national university of defense technology",
+        "edge:tianhe-2|located_in|people's republic of china",
+        "edge:tianhe-2|product_of|national university of defense technology",
+        "edge:tianhe-2|runs_on|kylin"
+      ],
+      "trace": {
+        "question": "For Tianhe-2, what are its located in, product of, and runs on relations?",
+        "targets": [
+          "tianhe-2"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:tianhe-2|located_in|guangzhou",
+                "subject": "Tianhe-2",
+                "predicate": "located_in",
+                "object": "Guangzhou",
+                "evidence_text": "Wikidata statement P131 (located in the administrative territorial entity) for Tianhe-2 (Q7800177) identifies Guangzhou (Q16572).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:tianhe-2|located_in|national university of defense technology",
+                "subject": "Tianhe-2",
+                "predicate": "located_in",
+                "object": "National University of Defense Technology",
+                "evidence_text": "Wikidata statement P276 (location) for Tianhe-2 (Q7800177) identifies National University of Defense Technology (Q831227).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:tianhe-2|located_in|people's republic of china",
+                "subject": "Tianhe-2",
+                "predicate": "located_in",
+                "object": "People's Republic of China",
+                "evidence_text": "Wikidata statement P17 (country) for Tianhe-2 (Q7800177) identifies People's Republic of China (Q148).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:tianhe-2|located_in|guangzhou",
+                "subject": "Tianhe-2",
+                "predicate": "located_in",
+                "object": "Guangzhou",
+                "evidence_text": "Wikidata statement P131 (located in the administrative territorial entity) for Tianhe-2 (Q7800177) identifies Guangzhou (Q16572).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "tianhe-2",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.85
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:tianhe-2|product_of|national university of defense technology",
+                "subject": "Tianhe-2",
+                "predicate": "product_of",
+                "object": "National University of Defense Technology",
+                "evidence_text": "Wikidata statement P176 (manufacturer) for Tianhe-2 (Q7800177) identifies National University of Defense Technology (Q831227).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:tianhe-2|product_of|national university of defense technology",
+                "subject": "Tianhe-2",
+                "predicate": "product_of",
+                "object": "National University of Defense Technology",
+                "evidence_text": "Wikidata statement P176 (manufacturer) for Tianhe-2 (Q7800177) identifies National University of Defense Technology (Q831227).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "tianhe-2",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.75
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:tianhe-2|runs_on|kylin",
+                "subject": "Tianhe-2",
+                "predicate": "runs_on",
+                "object": "Kylin",
+                "evidence_text": "Wikidata statement P306 (operating system) for Tianhe-2 (Q7800177) identifies Kylin (Q1438024).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:tianhe-2|runs_on|kylin",
+                "subject": "Tianhe-2",
+                "predicate": "runs_on",
+                "object": "Kylin",
+                "evidence_text": "Wikidata statement P306 (operating system) for Tianhe-2 (Q7800177) identifies Kylin (Q1438024).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q7800177"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "tianhe-2",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.7
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:tianhe-2|located_in|national university of defense technology",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:tianhe-2|located_in|people's republic of china",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:tianhe-2|product_of|national university of defense technology",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:tianhe-2|runs_on|kylin",
+            "reason": "outscored_by_selected_step",
+            "total": 0.75
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'tianhe-2' (exact); total=0.850; object_slots=3",
+          "block 2: sibling_elaboration attaching to target 'tianhe-2' (exact); total=0.750; object_slots=1",
+          "block 3: sibling_elaboration attaching to target 'tianhe-2' (exact); total=0.700; object_slots=1"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:tianhe-2|located_in|guangzhou",
+        "edge:tianhe-2|located_in|people's republic of china",
+        "edge:tianhe-2|located_in|national university of defense technology",
+        "edge:tianhe-2|product_of|national university of defense technology",
+        "edge:tianhe-2|runs_on|kylin"
+      ],
+      "plan": {
+        "operator": "AND",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:tianhe-2|located_in|guangzhou",
+              "subject": "Tianhe-2",
+              "predicate": "located_in",
+              "object": "Guangzhou",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Tianhe-2",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:tianhe-2|located_in|people's republic of china",
+              "subject": "Tianhe-2",
+              "predicate": "located_in",
+              "object": "People's Republic of China",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Tianhe-2",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:tianhe-2|located_in|national university of defense technology",
+              "subject": "Tianhe-2",
+              "predicate": "located_in",
+              "object": "National University of Defense Technology",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Tianhe-2",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:tianhe-2|product_of|national university of defense technology",
+              "subject": "Tianhe-2",
+              "predicate": "product_of",
+              "object": "National University of Defense Technology",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Tianhe-2",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:tianhe-2|runs_on|kylin",
+              "subject": "Tianhe-2",
+              "predicate": "runs_on",
+              "object": "Kylin",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Tianhe-2",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": true,
+    "grammar_exact": true
+  },
+  {
+    "id": "and-hdf5",
+    "kind": "AND",
+    "subject": "HDF5",
+    "predicates": [
+      "developed_by",
+      "runs_on",
+      "used_for"
+    ],
+    "question": "For HDF5, what are its developed by, runs on, and used for relations?",
+    "expected_relation_ids": [
+      "edge:hdf5|developed_by|the hdf group",
+      "edge:hdf5|runs_on|cross-platform",
+      "edge:hdf5|used_for|open science",
+      "edge:hdf5|used_for|open access"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "Wikidata statement P178 (developer) for HDF5 (Q61080677) identifies The HDF Group (Q106509427). Alongside that, Wikidata statement P306 (operating system) for HDF5 (Q61080677) identifies cross-platform (Q174666). On another supported side, HDF5 used for open access and open science. (Every statement above is tied to a cited evidence span; each of the 3 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:hdf5|developed_by|the hdf group",
+        "edge:hdf5|runs_on|cross-platform",
+        "edge:hdf5|used_for|open access",
+        "edge:hdf5|used_for|open science"
+      ],
+      "trace": {
+        "question": "For HDF5, what are its developed by, runs on, and used for relations?",
+        "targets": [
+          "hdf5"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:hdf5|developed_by|the hdf group",
+                "subject": "HDF5",
+                "predicate": "developed_by",
+                "object": "The HDF Group",
+                "evidence_text": "Wikidata statement P178 (developer) for HDF5 (Q61080677) identifies The HDF Group (Q106509427).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:hdf5|developed_by|the hdf group",
+                "subject": "HDF5",
+                "predicate": "developed_by",
+                "object": "The HDF Group",
+                "evidence_text": "Wikidata statement P178 (developer) for HDF5 (Q61080677) identifies The HDF Group (Q106509427).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "hdf5",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:hdf5|runs_on|cross-platform",
+                "subject": "HDF5",
+                "predicate": "runs_on",
+                "object": "cross-platform",
+                "evidence_text": "Wikidata statement P306 (operating system) for HDF5 (Q61080677) identifies cross-platform (Q174666).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:hdf5|runs_on|cross-platform",
+                "subject": "HDF5",
+                "predicate": "runs_on",
+                "object": "cross-platform",
+                "evidence_text": "Wikidata statement P306 (operating system) for HDF5 (Q61080677) identifies cross-platform (Q174666).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "hdf5",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.75
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:hdf5|used_for|open access",
+                "subject": "HDF5",
+                "predicate": "used_for",
+                "object": "open access",
+                "evidence_text": "Wikidata statement P366 (has use) for HDF5 (Q61080677) identifies open access (Q232932).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:hdf5|used_for|open science",
+                "subject": "HDF5",
+                "predicate": "used_for",
+                "object": "open science",
+                "evidence_text": "Wikidata statement P366 (has use) for HDF5 (Q61080677) identifies open science (Q309823).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:hdf5|used_for|open access",
+                "subject": "HDF5",
+                "predicate": "used_for",
+                "object": "open access",
+                "evidence_text": "Wikidata statement P366 (has use) for HDF5 (Q61080677) identifies open access (Q232932).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q61080677"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "hdf5",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.7
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:hdf5|runs_on|cross-platform",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:hdf5|used_for|open access",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:hdf5|used_for|open science",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8
+          },
+          {
+            "evidence_id": "edge:hdf5|used_for|open access",
+            "reason": "outscored_by_selected_step",
+            "total": 0.75
+          },
+          {
+            "evidence_id": "edge:hdf5|used_for|open science",
+            "reason": "outscored_by_selected_step",
+            "total": 0.75
+          },
+          {
+            "evidence_id": "edge:hdf5|used_for|open science",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'hdf5' (exact); total=0.800; object_slots=1",
+          "block 2: sibling_elaboration attaching to target 'hdf5' (exact); total=0.750; object_slots=1",
+          "block 3: sibling_elaboration attaching to target 'hdf5' (exact); total=0.700; object_slots=2"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:hdf5|developed_by|the hdf group",
+        "edge:hdf5|runs_on|cross-platform",
+        "edge:hdf5|used_for|open science",
+        "edge:hdf5|used_for|open access"
+      ],
+      "plan": {
+        "operator": "AND",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:hdf5|developed_by|the hdf group",
+              "subject": "HDF5",
+              "predicate": "developed_by",
+              "object": "The HDF Group",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "HDF5",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:hdf5|runs_on|cross-platform",
+              "subject": "HDF5",
+              "predicate": "runs_on",
+              "object": "cross-platform",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "HDF5",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:hdf5|used_for|open science",
+              "subject": "HDF5",
+              "predicate": "used_for",
+              "object": "open science",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "HDF5",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:hdf5|used_for|open access",
+              "subject": "HDF5",
+              "predicate": "used_for",
+              "object": "open access",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "HDF5",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": true,
+    "grammar_exact": true
+  },
+  {
+    "id": "and-iot",
+    "kind": "AND",
+    "subject": "IoT",
+    "predicates": [
+      "has_topic",
+      "published_by",
+      "wikidata_p407_language_of_work_or_name"
+    ],
+    "question": "For IoT, what are its has topic, published by, and wikidata p407 language of work or name relations?",
+    "expected_relation_ids": [
+      "edge:iot|published_by|mdpi",
+      "edge:iot|wikidata_p407_language_of_work_or_name|english",
+      "edge:iot|has_topic|internet of things"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "Wikidata statement P407 (language of work or name) for IoT (Q96708468) identifies English (Q1860). Alongside that, Wikidata statement P921 (main subject) for IoT (Q96708468) identifies Internet of Things (Q251212). On another supported side, Wikidata statement P123 (publisher) for IoT (Q96708468) identifies MDPI (Q30289533). Alongside that, Wikidata statement P495 (country of origin) for IoT (Q96708468) identifies Switzerland (Q39). (Every statement above is tied to a cited evidence span; each of the 4 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:iot|has_topic|internet of things",
+        "edge:iot|published_by|mdpi",
+        "edge:iot|wikidata_p407_language_of_work_or_name|english",
+        "edge:iot|wikidata_p495_country_of_origin|switzerland"
+      ],
+      "trace": {
+        "question": "For IoT, what are its has topic, published by, and wikidata p407 language of work or name relations?",
+        "targets": [
+          "iot"
+        ],
+        "blocks": [
+          {
+            "kind": "direct_claim",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:iot|wikidata_p407_language_of_work_or_name|english",
+                "subject": "IoT",
+                "predicate": "wikidata_p407_language_of_work_or_name",
+                "object": "English",
+                "evidence_text": "Wikidata statement P407 (language of work or name) for IoT (Q96708468) identifies English (Q1860).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:iot|wikidata_p407_language_of_work_or_name|english",
+                "subject": "IoT",
+                "predicate": "wikidata_p407_language_of_work_or_name",
+                "object": "English",
+                "evidence_text": "Wikidata statement P407 (language of work or name) for IoT (Q96708468) identifies English (Q1860).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "iot",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.6667,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.9167
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:iot|has_topic|internet of things",
+                "subject": "IoT",
+                "predicate": "has_topic",
+                "object": "Internet of Things",
+                "evidence_text": "Wikidata statement P921 (main subject) for IoT (Q96708468) identifies Internet of Things (Q251212).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:iot|has_topic|internet of things",
+                "subject": "IoT",
+                "predicate": "has_topic",
+                "object": "Internet of Things",
+                "evidence_text": "Wikidata statement P921 (main subject) for IoT (Q96708468) identifies Internet of Things (Q251212).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "iot",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2222,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.7556
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:iot|published_by|mdpi",
+                "subject": "IoT",
+                "predicate": "published_by",
+                "object": "MDPI",
+                "evidence_text": "Wikidata statement P123 (publisher) for IoT (Q96708468) identifies MDPI (Q30289533).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 2,
+              "edge": {
+                "evidence_id": "edge:iot|published_by|mdpi",
+                "subject": "IoT",
+                "predicate": "published_by",
+                "object": "MDPI",
+                "evidence_text": "Wikidata statement P123 (publisher) for IoT (Q96708468) identifies MDPI (Q30289533).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "iot",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2222,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.1,
+                "total": 0.7056
+              }
+            }
+          },
+          {
+            "kind": "sibling_elaboration",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:iot|wikidata_p495_country_of_origin|switzerland",
+                "subject": "IoT",
+                "predicate": "wikidata_p495_country_of_origin",
+                "object": "Switzerland",
+                "evidence_text": "Wikidata statement P495 (country of origin) for IoT (Q96708468) identifies Switzerland (Q39).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 3,
+              "edge": {
+                "evidence_id": "edge:iot|wikidata_p495_country_of_origin|switzerland",
+                "subject": "IoT",
+                "predicate": "wikidata_p495_country_of_origin",
+                "object": "Switzerland",
+                "evidence_text": "Wikidata statement P495 (country of origin) for IoT (Q96708468) identifies Switzerland (Q39).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q96708468"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "iot",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.2222,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.15,
+                "total": 0.6556
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:iot|has_topic|internet of things",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8056
+          },
+          {
+            "evidence_id": "edge:iot|published_by|mdpi",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8056
+          },
+          {
+            "evidence_id": "edge:iot|wikidata_p495_country_of_origin|switzerland",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8056
+          },
+          {
+            "evidence_id": "edge:iot|published_by|mdpi",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7556
+          },
+          {
+            "evidence_id": "edge:iot|wikidata_p495_country_of_origin|switzerland",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7556
+          },
+          {
+            "evidence_id": "edge:iot|wikidata_p495_country_of_origin|switzerland",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7056
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: direct_claim attaching to target 'iot' (exact); total=0.917; object_slots=1",
+          "block 2: sibling_elaboration attaching to target 'iot' (exact); total=0.756; object_slots=1",
+          "block 3: sibling_elaboration attaching to target 'iot' (exact); total=0.706; object_slots=1",
+          "block 4: sibling_elaboration attaching to target 'iot' (exact); total=0.656; object_slots=1"
+        ],
+        "stop_reason": "max_blocks_reached",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:iot|has_topic|internet of things",
+        "edge:iot|published_by|mdpi",
+        "edge:iot|wikidata_p407_language_of_work_or_name|english"
+      ],
+      "plan": {
+        "operator": "AND",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:iot|has_topic|internet of things",
+              "subject": "IoT",
+              "predicate": "has_topic",
+              "object": "Internet of Things",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "IoT",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:iot|published_by|mdpi",
+              "subject": "IoT",
+              "predicate": "published_by",
+              "object": "MDPI",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "IoT",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:iot|wikidata_p407_language_of_work_or_name|english",
+              "subject": "IoT",
+              "predicate": "wikidata_p407_language_of_work_or_name",
+              "object": "English",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "IoT",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true
+  },
+  {
+    "id": "and-large-language-model",
+    "kind": "AND",
+    "subject": "Large Language Model",
+    "predicates": [
+      "used_for",
+      "uses",
+      "wikidata_p461_opposite_of"
+    ],
+    "question": "For Large Language Model, what are its used for, uses, and wikidata p461 opposite of relations?",
+    "expected_relation_ids": [
+      "edge:large language model|uses|ai prompt",
+      "edge:large language model|uses|transformer",
+      "edge:large language model|used_for|conversational ai",
+      "edge:large language model|used_for|computer security",
+      "edge:large language model|wikidata_p461_opposite_of|small language model"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "The evidence diverges on Large Language Model: one cited span supports 'AI prompt', while other cited evidence instead points to 'transformer'; neither reading is treated as settled. The evidence diverges on Large Language Model: one cited span supports 'computer security', while other cited evidence instead points to 'conversational AI'; neither reading is treated as settled. (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:large language model|used_for|computer security",
+        "edge:large language model|uses|ai prompt"
+      ],
+      "trace": {
+        "question": "For Large Language Model, what are its used for, uses, and wikidata p461 opposite of relations?",
+        "targets": [
+          "large language model"
+        ],
+        "blocks": [
+          {
+            "kind": "uncertainty_note",
+            "cautions": [
+              "conflicting_alternatives",
+              "single_source"
+            ],
+            "alternatives": [
+              {
+                "evidence_id": "edge:large language model|uses|transformer",
+                "subject": "Large Language Model",
+                "predicate": "uses",
+                "object": "transformer",
+                "evidence_text": "Wikidata statement P2283 (uses) for large language model (Q115305900) identifies transformer (Q85810444).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "object_slots": [
+              {
+                "evidence_id": "edge:large language model|uses|ai prompt",
+                "subject": "Large Language Model",
+                "predicate": "uses",
+                "object": "AI prompt",
+                "evidence_text": "Wikidata statement P2283 (uses) for large language model (Q115305900) identifies AI prompt (Q117217619).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:large language model|uses|ai prompt",
+                "subject": "Large Language Model",
+                "predicate": "uses",
+                "object": "AI prompt",
+                "evidence_text": "Wikidata statement P2283 (uses) for large language model (Q115305900) identifies AI prompt (Q117217619).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "large language model",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.5556,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.8889
+              }
+            }
+          },
+          {
+            "kind": "uncertainty_note",
+            "cautions": [
+              "conflicting_alternatives",
+              "single_source"
+            ],
+            "alternatives": [
+              {
+                "evidence_id": "edge:large language model|used_for|conversational ai",
+                "subject": "Large Language Model",
+                "predicate": "used_for",
+                "object": "conversational AI",
+                "evidence_text": "Wikidata statement P366 (has use) for large language model (Q115305900) identifies conversational AI (Q116961403).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "object_slots": [
+              {
+                "evidence_id": "edge:large language model|used_for|computer security",
+                "subject": "Large Language Model",
+                "predicate": "used_for",
+                "object": "computer security",
+                "evidence_text": "Wikidata statement P366 (has use) for large language model (Q115305900) identifies computer security (Q3510521).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:large language model|used_for|computer security",
+                "subject": "Large Language Model",
+                "predicate": "used_for",
+                "object": "computer security",
+                "evidence_text": "Wikidata statement P366 (has use) for large language model (Q115305900) identifies computer security (Q3510521).",
+                "sources": [
+                  "https://www.wikidata.org/wiki/Q115305900"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "proposal_wikidata_structured",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "large language model",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4444,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.8111
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:large language model|uses|transformer",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8889
+          },
+          {
+            "evidence_id": "edge:large language model|used_for|computer security",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8611
+          },
+          {
+            "evidence_id": "edge:large language model|used_for|conversational ai",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8611
+          },
+          {
+            "evidence_id": "edge:large language model|used_for|conversational ai",
+            "reason": "outscored_by_selected_step",
+            "total": 0.8111
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: uncertainty_note attaching to target 'large language model' (exact); total=0.889; object_slots=1",
+          "block 2: uncertainty_note attaching to target 'large language model' (exact); total=0.811; object_slots=1"
+        ],
+        "stop_reason": "no_connected_evidence_candidates",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:large language model|used_for|conversational ai",
+        "edge:large language model|used_for|computer security",
+        "edge:large language model|uses|ai prompt",
+        "edge:large language model|uses|transformer",
+        "edge:large language model|wikidata_p461_opposite_of|small language model"
+      ],
+      "plan": {
+        "operator": "AND",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:large language model|used_for|conversational ai",
+              "subject": "Large Language Model",
+              "predicate": "used_for",
+              "object": "conversational AI",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "large language model",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:large language model|used_for|computer security",
+              "subject": "Large Language Model",
+              "predicate": "used_for",
+              "object": "computer security",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "large language model",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:large language model|uses|ai prompt",
+              "subject": "Large Language Model",
+              "predicate": "uses",
+              "object": "AI prompt",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "large language model",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:large language model|uses|transformer",
+              "subject": "Large Language Model",
+              "predicate": "uses",
+              "object": "transformer",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "large language model",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ],
+          [
+            {
+              "evidence_id": "edge:large language model|wikidata_p461_opposite_of|small language model",
+              "subject": "Large Language Model",
+              "predicate": "wikidata_p461_opposite_of",
+              "object": "small language model",
+              "overlay_type": "overlay_relation",
+              "trust": "proposal_wikidata_structured",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "large language model",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true
+  },
+  {
+    "id": "chain-elon-musk-spacex",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "SpaceX",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Elon Musk founded that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|founded|spacex",
+      "edge:spacex|develops|rockets"
+    ],
+    "old": {
+      "decision": "audit",
+      "support": "audit_blocked_context",
+      "answer": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "selected_relation_ids": [],
+      "trace": null
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:elon musk|founded|spacex",
+        "edge:spacex|develops|rockets"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:elon musk|founded|spacex",
+              "subject": "Elon Musk",
+              "predicate": "founded",
+              "object": "SpaceX",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "SpaceX",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:spacex|develops|rockets",
+              "subject": "SpaceX",
+              "predicate": "develops",
+              "object": "rockets",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "SpaceX",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true
+  },
+  {
+    "id": "chain-elon-musk-tesla",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "Tesla",
+    "predicates": [
+      "leader_of",
+      "produces"
+    ],
+    "question": "What does Elon Musk leader of that produces something?",
+    "expected_relation_ids": [
+      "edge:elon musk|leader_of|tesla",
+      "edge:tesla|produces|electric cars"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "The evidence diverges on Elon Musk: one cited span supports 'SpaceX', while other cited evidence instead points to 'Tesla'; neither reading is treated as settled. In turn, SpaceX produces Dragon spacecraft and Falcon rockets. (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:elon musk|leader_of|spacex",
+        "edge:spacex|produces|dragon spacecraft",
+        "edge:spacex|produces|falcon rockets"
+      ],
+      "trace": {
+        "question": "What does Elon Musk leader of that produces something?",
+        "targets": [
+          "elon musk"
+        ],
+        "blocks": [
+          {
+            "kind": "uncertainty_note",
+            "cautions": [
+              "conflicting_alternatives",
+              "single_source"
+            ],
+            "alternatives": [
+              {
+                "evidence_id": "edge:elon musk|leader_of|tesla",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "Tesla",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "object_slots": [
+              {
+                "evidence_id": "edge:elon musk|leader_of|spacex",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:elon musk|leader_of|spacex",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "elon musk",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.85
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|produces|falcon rockets",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Falcon rockets",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:spacex|produces|dragon spacecraft",
+                "subject": "SpaceX",
+                "predicate": "produces",
+                "object": "Dragon spacecraft",
+                "evidence_text": "products: Falcon rockets; Dragon spacecraft",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.2,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.71
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:elon musk|leader_of|tesla",
+            "reason": "outscored_by_selected_step",
+            "total": 0.85
+          },
+          {
+            "evidence_id": "edge:spacex|produces|falcon rockets",
+            "reason": "outscored_by_selected_step",
+            "total": 0.71
+          },
+          {
+            "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+            "reason": "outscored_by_selected_step",
+            "total": 0.16
+          },
+          {
+            "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+            "reason": "below_information_gain_threshold",
+            "total": 0.11
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: uncertainty_note attaching to target 'elon musk' (exact); total=0.850; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.710; object_slots=2"
+        ],
+        "stop_reason": "next best step (edge:gwynne shotwell|leader_of|spacex) scored 0.110 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "audit",
+      "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+      "selected_relation_ids": [],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "audit",
+        "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+        "components": []
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": false
+  },
+  {
+    "id": "chain-elon-musk-neuralink",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "Neuralink",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Elon Musk founded that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|founded|neuralink",
+      "edge:neuralink|develops|brain-computer interfaces"
+    ],
+    "old": {
+      "decision": "audit",
+      "support": "audit_blocked_context",
+      "answer": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "selected_relation_ids": [],
+      "trace": null
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:elon musk|founded|neuralink",
+        "edge:neuralink|develops|brain-computer interfaces"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:elon musk|founded|neuralink",
+              "subject": "Elon Musk",
+              "predicate": "founded",
+              "object": "Neuralink",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Neuralink",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:neuralink|develops|brain-computer interfaces",
+              "subject": "Neuralink",
+              "predicate": "develops",
+              "object": "brain-computer interfaces",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Neuralink",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true
+  },
+  {
+    "id": "chain-jeff-bezos-blue-origin",
+    "kind": "CHAIN",
+    "subject": "Jeff Bezos",
+    "via": "Blue Origin",
+    "predicates": [
+      "founded",
+      "develops"
+    ],
+    "question": "What does Jeff Bezos founded that develops something?",
+    "expected_relation_ids": [
+      "edge:jeff bezos|founded|blue origin",
+      "edge:blue origin|develops|rockets"
+    ],
+    "old": {
+      "decision": "audit",
+      "support": "audit_blocked_context",
+      "answer": "this asserts a reversed or unsupported directional relation, which the overlay does not support",
+      "selected_relation_ids": [],
+      "trace": null
+    },
+    "grammar": {
+      "decision": "answer",
+      "audit_reason": null,
+      "selected_relation_ids": [
+        "edge:jeff bezos|founded|blue origin",
+        "edge:blue origin|develops|rockets"
+      ],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "answer",
+        "audit_reason": null,
+        "components": [
+          [
+            {
+              "evidence_id": "edge:jeff bezos|founded|blue origin",
+              "subject": "Jeff Bezos",
+              "predicate": "founded",
+              "object": "Blue Origin",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Blue Origin",
+              "temporal_class": "",
+              "as_of": ""
+            },
+            {
+              "evidence_id": "edge:blue origin|develops|rockets",
+              "subject": "Blue Origin",
+              "predicate": "develops",
+              "object": "rockets",
+              "overlay_type": "overlay_relation",
+              "trust": "overlay_candidate",
+              "stability": "semi_stable",
+              "risk": "medium",
+              "source_page": "Blue Origin",
+              "temporal_class": "",
+              "as_of": ""
+            }
+          ]
+        ]
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": true
+  },
+  {
+    "id": "chain-elon-musk-spacex",
+    "kind": "CHAIN",
+    "subject": "Elon Musk",
+    "via": "SpaceX",
+    "predicates": [
+      "leader_of",
+      "develops"
+    ],
+    "question": "What does Elon Musk leader of that develops something?",
+    "expected_relation_ids": [
+      "edge:elon musk|leader_of|spacex",
+      "edge:spacex|develops|rockets"
+    ],
+    "old": {
+      "decision": "answer",
+      "support": "evidence_backed_answer_plan",
+      "answer": "The evidence diverges on Elon Musk: one cited span supports 'SpaceX', while other cited evidence instead points to 'Tesla'; neither reading is treated as settled. In turn, SpaceX develops rockets and spacecraft. (Every statement above is tied to a cited evidence span; each of the 2 steps rests on a single source and remains proposal-level knowledge, not verified memory.)",
+      "selected_relation_ids": [
+        "edge:elon musk|leader_of|spacex",
+        "edge:spacex|develops|rockets",
+        "edge:spacex|develops|spacecraft"
+      ],
+      "trace": {
+        "question": "What does Elon Musk leader of that develops something?",
+        "targets": [
+          "elon musk"
+        ],
+        "blocks": [
+          {
+            "kind": "uncertainty_note",
+            "cautions": [
+              "conflicting_alternatives",
+              "single_source"
+            ],
+            "alternatives": [
+              {
+                "evidence_id": "edge:elon musk|leader_of|tesla",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "Tesla",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "object_slots": [
+              {
+                "evidence_id": "edge:elon musk|leader_of|spacex",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 0,
+              "edge": {
+                "evidence_id": "edge:elon musk|leader_of|spacex",
+                "subject": "Elon Musk",
+                "predicate": "leader_of",
+                "object": "SpaceX",
+                "evidence_text": "known for his leadership of Tesla and SpaceX",
+                "sources": [
+                  "source_page:Elon Musk"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "elon musk",
+              "attach_kind": "target",
+              "attach_mode": "exact",
+              "introduced_by_block": -1,
+              "score": {
+                "direct_relevance": 0.4,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 1.0,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.0,
+                "total": 0.85
+              }
+            }
+          },
+          {
+            "kind": "explanatory_continuation",
+            "cautions": [
+              "single_source"
+            ],
+            "alternatives": [],
+            "object_slots": [
+              {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              {
+                "evidence_id": "edge:spacex|develops|spacecraft",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "spacecraft",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              }
+            ],
+            "step": {
+              "index": 1,
+              "edge": {
+                "evidence_id": "edge:spacex|develops|rockets",
+                "subject": "SpaceX",
+                "predicate": "develops",
+                "object": "rockets",
+                "evidence_text": "develops rockets and spacecraft.",
+                "sources": [
+                  "source_page:SpaceX"
+                ],
+                "stability": "semi_stable",
+                "risk": "medium",
+                "trust": "overlay_candidate",
+                "corroboration": "single_source",
+                "support_count": 1
+              },
+              "attach_node": "spacex",
+              "attach_kind": "plan_node",
+              "attach_mode": "exact",
+              "introduced_by_block": 0,
+              "score": {
+                "direct_relevance": 0.25,
+                "evidence_quality": 0.75,
+                "source_corroboration": 0.5,
+                "graph_connectivity": 0.8,
+                "information_gain": 1.0,
+                "relation_diversity": 1.0,
+                "redundancy_penalty": 0.0,
+                "unsupported_leap_penalty": 0.0,
+                "length_value_tradeoff": 0.05,
+                "total": 0.7225
+              }
+            }
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "evidence_id": "edge:elon musk|leader_of|tesla",
+            "reason": "outscored_by_selected_step",
+            "total": 0.85
+          },
+          {
+            "evidence_id": "edge:spacex|develops|spacecraft",
+            "reason": "outscored_by_selected_step",
+            "total": 0.7225
+          },
+          {
+            "evidence_id": "edge:gwynne shotwell|leader_of|spacex",
+            "reason": "outscored_by_selected_step",
+            "total": 0.16
+          },
+          {
+            "evidence_id": "edge:blue origin|develops|rockets",
+            "reason": "below_information_gain_threshold",
+            "total": 0.16
+          }
+        ],
+        "ordering_rationale": [
+          "block 1: uncertainty_note attaching to target 'elon musk' (exact); total=0.850; object_slots=1",
+          "block 2: explanatory_continuation attaching to plan_node 'spacex' (exact); total=0.723; object_slots=2"
+        ],
+        "stop_reason": "next best step (edge:blue origin|develops|rockets) scored 0.160 with information gain 0.000, under the continue threshold — answer value would not grow",
+        "score_weights": {
+          "direct_relevance": 0.25,
+          "evidence_quality": 0.2,
+          "source_corroboration": 0.1,
+          "graph_connectivity": 0.2,
+          "information_gain": 0.25,
+          "relation_diversity": 0.1,
+          "redundancy_penalty": -0.25,
+          "unsupported_leap_penalty": -0.5,
+          "length_value_tradeoff": -1.0
+        },
+        "thresholds": {
+          "min_first_step_total": 0.35,
+          "min_next_step_total": 0.34,
+          "min_information_gain": 0.25,
+          "length_cost_per_block": 0.05
+        }
+      }
+    },
+    "grammar": {
+      "decision": "audit",
+      "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+      "selected_relation_ids": [],
+      "plan": {
+        "operator": "CHAIN",
+        "decision": "audit",
+        "audit_reason": "unsafe_component:current_sensitive_relation:leader_of",
+        "components": []
+      }
+    },
+    "old_exact": false,
+    "grammar_exact": false
+  }
+]

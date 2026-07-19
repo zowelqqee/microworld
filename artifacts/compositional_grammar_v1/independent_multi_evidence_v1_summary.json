@@ -1,0 +1,6 @@
+{
+  "cases": 10,
+  "subject_disjoint_from_prior_open_book_datasets": true,
+  "grammar_exact_accuracy": 0.7,
+  "grammar_audits": 3
+}
