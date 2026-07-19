@@ -27,6 +27,10 @@ struct MetricsSheet: View {
 
                 Section("Mode characteristics") {
                     switch result.mode {
+                    case .auto:
+                        row("Router", "Local rules — no network, NumPy, or embeddings")
+                        row("Memory overhead", "Negligible beyond the selected branch")
+                        row("Corpus", "Bundled grounded overlay / local creative corpus")
                     case .qa:
                         row("Cold start", diagnostics.engineColdStartMs.map { String(format: "%.0f ms", $0) } ?? "—")
                         row("Steady-state", "~3 ms")

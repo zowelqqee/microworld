@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import secrets
+import re
 import sys
 import time
 from dataclasses import replace
@@ -72,6 +73,7 @@ def enforce_offline() -> bool:
 _ORCH = None            # AnswerOrchestrator
 _OVERLAY = "promoted"
 _NARRATIVE_ENGINE = None  # poetry_lab NarrativeEngine; separate from QA
+_AUTO_ITEMS = None
 
 
 def _try_multi_evidence_plan(orch, prompt: str, answer):
@@ -153,6 +155,15 @@ def _orchestrator():
 
         _ORCH = AnswerOrchestrator(_OVERLAY)
     return _ORCH
+
+
+def _auto_items():
+    """Read the already-bundled serving overlay; no NumPy/vector model."""
+    global _AUTO_ITEMS
+    if _AUTO_ITEMS is None:
+        from worldpgt.assistant_surface.context_selector import resolve_overlay
+        _AUTO_ITEMS = json.loads(Path(resolve_overlay(_OVERLAY)[0]).read_text(encoding="utf-8"))
+    return _AUTO_ITEMS
 
 
 def warm_up(overlay: str = "promoted", warm_creative: bool = False) -> str:
@@ -309,6 +320,53 @@ def _run_creative(orch, prompt: str):
     )
 
 
+def _auto_answer(orch, prompt: str):
+    """Small phone-only router: deterministic patterns, no embedding runtime."""
+    from worldpgt.assistant_surface.question_router import route as route_question
+    natural = route_question(prompt, orch._surface_index)
+    if natural.is_hard_safety:
+        return orch.answer(prompt), "qa_safety"
+    lower = prompt.lower()
+    if re.search(r"\b(using (only|exactly|just)|staying strictly within)\b.*\bfacts\b", lower):
+        from worldpgt.reasoning import constrained_creative_v1 as cc
+        entities = [c for _s, c, _a, _b in orch._surface_index.find_in_text(prompt)]
+        if entities:
+            spec = cc.select_facts(_auto_items(), entities[0], n=3)
+            if spec.n >= 2:
+                return _auto_record(cc.generate_constrained(spec), "constrained_creative", "grounded_generation"), "constrained_creative"
+    if re.search(r"\b(compose|write|tell|invent|create)\b.*\b(poem|story|fiction|tale|verse|creative|imaginative)\b", lower):
+        return _run_creative(orch, prompt), "pure_creative"
+    if re.match(r"\s*(what if|what would|suppose|why might|why is|how might)\b", lower):
+        from worldpgt.reasoning import reflective_reasoning_v1 as r1
+        from worldpgt.reasoning import reflective_reasoning_extended_v2 as r2
+        plan = r1.reflect(prompt, _auto_items())
+        if plan and plan.decision == "speculative":
+            if plan.rule == "counterfactual_removal" and plan.step:
+                focal = plan.step.premises[0]
+                facts = [edge for edge in plan.step.conclusion_facts if edge.s == focal.o][:2]
+                examples = " and ".join(f"{edge.predicate.replace('_', ' ')} {edge.object}" for edge in facts)
+                text = (f"If {focal.subject} had not {focal.predicate.replace('_', ' ')} {focal.object}, "
+                        f"the existence of {focal.object} in this evidence slice would be in question. "
+                        f"Its recorded activities, including {examples}, would then also be in question. "
+                        "This is a speculative inference, not a stored fact.")
+            else:
+                text = r1.render_reflective_plan(plan)
+            return _auto_record(text, "reflective", "speculative_inference"), "reflective"
+        entities = list(dict.fromkeys(c for _s, c, _a, _b in orch._surface_index.find_in_text(prompt)))
+        if len(entities) >= 2:
+            ext = r2.co_attribution_for_pair(r1.load_edges(_auto_items()), entities[0], entities[1])
+            if ext.decision == "speculative_extended":
+                return _auto_record(r2.render_extended(ext.steps[0]), "reflective_extended", "speculative_extended"), "reflective_extended"
+    return _try_multi_evidence_plan(orch, prompt, orch.answer(prompt)), "qa"
+
+
+def _auto_record(text: str, route: str, support: str):
+    """Minimal AnswerOrchestrator-compatible result for non-QA phone branches."""
+    from types import SimpleNamespace
+    return SimpleNamespace(answer_text=text, decision="answer", route=route,
+                           support_kind=support, risk_flags=[])
+
+
 def run(prompt: str, mode: str) -> str:
     """Answer ``prompt`` in ``mode`` ('qa' or 'creative'); return a JSON string.
 
@@ -322,9 +380,12 @@ def run(prompt: str, mode: str) -> str:
     orch = _orchestrator()
     mode = (mode or "qa").lower()
     is_creative = mode.startswith("c")
+    is_auto = mode.startswith("a")
 
     t = time.perf_counter()
-    if is_creative:
+    if is_auto:
+        answer, auto_branch = _auto_answer(orch, prompt)
+    elif is_creative:
         answer = _run_creative(orch, prompt)
     else:
         answer = _try_multi_evidence_plan(orch, prompt, orch.answer(prompt))
@@ -344,7 +405,7 @@ def run(prompt: str, mode: str) -> str:
         # The creative gate is boolean (novelty pass/fail), not a numeric score,
         # so we do not invent a novelty number. null == "not exposed".
         "novelty": None,
-        "mode": "creative" if is_creative else "qa",
+        "mode": "auto" if is_auto else ("creative" if is_creative else "qa"),
     }
     return json.dumps(payload)
 

@@ -35,6 +35,8 @@ final class MockMicroWorldEngine: MicroWorldEngine, @unchecked Sendable {
 
         let text: String
         switch mode {
+        case .auto:
+            text = "[mock] Auto-routed answer for “\(trimmed)”."
         case .qa:
             text = "[mock] Answer for “\(trimmed)”."
         case .creative:
@@ -46,11 +48,11 @@ final class MockMicroWorldEngine: MicroWorldEngine, @unchecked Sendable {
             latencyMilliseconds: latencyMs,
             mode: mode,
             novelty: nil,
-            deterministic: mode == .qa,
+            deterministic: mode != .creative,
             decision: "answer",
-            route: mode == .qa ? "entity_relation" : "creative_request",
-            supportKind: mode == .qa ? "semi_stable_relation" : "creative_generated",
-            riskFlags: mode == .qa ? [] : ["creative_generated"],
+            route: mode == .creative ? "creative_request" : "entity_relation",
+            supportKind: mode == .creative ? "creative_generated" : "semi_stable_relation",
+            riskFlags: mode == .creative ? ["creative_generated"] : [],
             engineMilliseconds: latencyMs
         )
     }

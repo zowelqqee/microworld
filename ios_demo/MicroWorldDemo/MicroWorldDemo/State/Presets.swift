@@ -6,6 +6,8 @@ import Foundation
 enum Presets {
     static func chips(for mode: EngineMode) -> [String] {
         switch mode {
+        case .auto:
+            return ["Who founded SpaceX?", "What if Elon Musk had not founded SpaceX?", "Why might SpaceX and Blue Origin be related?", "Write about SpaceX using only these facts", "Tell a fictional story about a space company"]
         case .qa:
             return [
                 "Who founded SpaceX?",

@@ -4,6 +4,7 @@ import Foundation
 /// rather than inferring mode from phrasing (the CLI infers; a GUI toggle
 /// should not) — hard-safety screening is still applied in either mode.
 enum EngineMode: String, CaseIterable, Identifiable, Sendable {
+    case auto
     case qa
     case creative
 
@@ -11,6 +12,7 @@ enum EngineMode: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
+        case .auto: return "Auto"
         case .qa: return "QA"
         case .creative: return "Creative"
         }
@@ -21,6 +23,7 @@ enum EngineMode: String, CaseIterable, Identifiable, Sendable {
 
     var promptPlaceholder: String {
         switch self {
+        case .auto: return "Ask anything…"
         case .qa: return "Ask a question…"
         case .creative: return "Describe what to write…"
         }
@@ -28,6 +31,7 @@ enum EngineMode: String, CaseIterable, Identifiable, Sendable {
 
     var primaryButtonTitle: String {
         switch self {
+        case .auto: return "Ask"
         case .qa: return "Ask"
         case .creative: return "Generate"
         }

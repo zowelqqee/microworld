@@ -16,7 +16,7 @@ final class AppViewModel: ObservableObject {
     }
 
     // Inputs
-    @Published var mode: EngineMode = .qa {
+    @Published var mode: EngineMode = .auto {
         didSet { if oldValue != mode { handleModeChange() } }
     }
     @Published var prompt: String = ""
@@ -153,6 +153,8 @@ final class AppViewModel: ObservableObject {
 
     private func recordLatency(_ r: EngineResult) {
         switch r.mode {
+        case .auto:
+            diagnostics.lastQaMs = r.latencyMilliseconds
         case .qa:
             if diagnostics.firstQaMs == nil { diagnostics.firstQaMs = r.latencyMilliseconds }
             diagnostics.lastQaMs = r.latencyMilliseconds
