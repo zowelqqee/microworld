@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "overlay": "artifacts/compositional_grammar_v1/capability_overlay.json",
+    "n_subjects": 5,
+    "N_facts_per_subject": 3,
+    "attested_trigrams_available": true,
+    "microworld_mean_inclusion": 1.0,
+    "microworld_mean_fidelity": 1.0,
+    "microworld_mean_hallucination": 0.0,
+    "microworld_mean_proxy_fluency": 0.0,
+    "qwen_status": "pending \u2014 drop qwen_outputs.json to score the LLM side symmetrically"
+  },
+  "rows": [
+    {
+      "subject": "SpaceX",
+      "n_facts": 3,
+      "facts": [
+        "develops rockets",
+        "develops spacecraft",
+        "produces Falcon rockets"
+      ],
+      "llm_prompt": "Write a short piece about SpaceX using only these facts: SpaceX develops rockets; SpaceX develops spacecraft; SpaceX produces Falcon rockets. Use all of them. Do not add anything not listed.",
+      "microworld": {
+        "text": "SpaceX develops rockets. In addition, it develops spacecraft. Beyond that, SpaceX produces Falcon rockets.",
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "SpaceX develops rockets",
+          "SpaceX develops spacecraft",
+          "SpaceX produces Falcon rockets"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [],
+        "proxy_fluency": 0.0
+      },
+      "qwen": {
+        "status": "pending \u2014 no qwen_outputs.json in this session"
+      }
+    },
+    {
+      "subject": "Blue Origin",
+      "n_facts": 3,
+      "facts": [
+        "develops rockets",
+        "develops spacecraft",
+        "located_in Kent, Washington"
+      ],
+      "llm_prompt": "Write a short piece about Blue Origin using only these facts: Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. Use all of them. Do not add anything not listed.",
+      "microworld": {
+        "text": "Blue Origin develops rockets. In addition, it develops spacecraft. Beyond that, Blue Origin is located in Kent, Washington.",
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Blue Origin develops rockets",
+          "Blue Origin develops spacecraft",
+          "Blue Origin located_in Kent, Washington"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [],
+        "proxy_fluency": 0.0
+      },
+      "qwen": {
+        "status": "pending \u2014 no qwen_outputs.json in this session"
+      }
+    },
+    {
+      "subject": "Tesla",
+      "n_facts": 3,
+      "facts": [
+        "produces Electric cars",
+        "produces battery energy storage",
+        "produces Battery storage"
+      ],
+      "llm_prompt": "Write a short piece about Tesla using only these facts: Tesla produces Electric cars; Tesla produces battery energy storage; Tesla produces Battery storage. Use all of them. Do not add anything not listed.",
+      "microworld": {
+        "text": "Tesla produces Electric cars. In addition, it produces battery energy storage. Beyond that, Tesla produces Battery storage.",
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Tesla produces Electric cars",
+          "Tesla produces battery energy storage",
+          "Tesla produces Battery storage"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [],
+        "proxy_fluency": 0.0
+      },
+      "qwen": {
+        "status": "pending \u2014 no qwen_outputs.json in this session"
+      }
+    },
+    {
+      "subject": "Neuralink",
+      "n_facts": 2,
+      "facts": [
+        "develops brain-computer interfaces",
+        "founded_by Max Hodak"
+      ],
+      "llm_prompt": "Write a short piece about Neuralink using only these facts: Neuralink develops brain-computer interfaces; Neuralink founded_by Max Hodak. Use all of them. Do not add anything not listed.",
+      "microworld": {
+        "text": "Neuralink develops brain-computer interfaces. In addition, it was founded by Max Hodak.",
+        "n_required": 2,
+        "n_included": 2,
+        "n_faithful": 2,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Neuralink develops brain-computer interfaces",
+          "Neuralink founded_by Max Hodak"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [],
+        "proxy_fluency": 0.0
+      },
+      "qwen": {
+        "status": "pending \u2014 no qwen_outputs.json in this session"
+      }
+    },
+    {
+      "subject": "Elon Musk",
+      "n_facts": 3,
+      "facts": [
+        "leader_of Tesla",
+        "leader_of SpaceX",
+        "known_for Tesla"
+      ],
+      "llm_prompt": "Write a short piece about Elon Musk using only these facts: Elon Musk leader_of Tesla; Elon Musk leader_of SpaceX; Elon Musk known_for Tesla. Use all of them. Do not add anything not listed.",
+      "microworld": {
+        "text": "Elon Musk leads Tesla. In addition, it leads SpaceX. Beyond that, Elon Musk is known for Tesla.",
+        "n_required": 3,
+        "n_included": 3,
+        "n_faithful": 3,
+        "inclusion_rate": 1.0,
+        "fidelity_rate": 1.0,
+        "hallucination_token_rate": 0.0,
+        "included": [
+          "Elon Musk leader_of Tesla",
+          "Elon Musk leader_of SpaceX",
+          "Elon Musk known_for Tesla"
+        ],
+        "missing": [],
+        "unfaithful": [],
+        "extra_content_tokens": [],
+        "proxy_fluency": 0.0
+      },
+      "qwen": {
+        "status": "pending \u2014 no qwen_outputs.json in this session"
+      }
+    }
+  ]
+}
