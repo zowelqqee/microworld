@@ -1,0 +1,469 @@
+{
+  "summary": {
+    "n_cases": 27,
+    "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "sampler": "temp=0.0",
+    "determinism_mismatches": 0,
+    "mw_admitted_speculative": 11,
+    "mw_declined_audit": 15,
+    "mw_grounded_deferral": 1,
+    "qwen_on_mw_declined": {
+      "expressed_uncertainty": 1,
+      "confidently_answered_no_uncertainty": 14,
+      "mean_extra_named_tokens": 0.4
+    },
+    "qwen_on_mw_admitted": {
+      "mean_extra_named_tokens": 0.18,
+      "expressed_uncertainty": 0
+    },
+    "MANUAL_REVIEW_REQUIRED": "reasoning-quality/defensibility of Qwen answers on the 11 MW-admitted cases needs human judgment; texts saved verbatim."
+  },
+  "rows": [
+    {
+      "kind": "counterfactual",
+      "question": "What if Elon Musk had not founded SpaceX?",
+      "entities": [
+        "Elon Musk",
+        "SpaceX"
+      ],
+      "n_premises": 16,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known — that Elon Musk founded SpaceX — one might reason that, had that not been so, the following would be in question: Elon Musk leader_of SpaceX; Elon Musk known_for SpaceX; SpaceX develops rockets; SpaceX develops spacecraft; SpaceX produces Falcon rockets; SpaceX produces Dragon spacecraft; Gwynne Shotwell leader_of SpaceX; SpaceX located_in Starbase, Texas; SpaceX located_in El Segundo, California. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "If Elon Musk had not founded SpaceX, he would have founded Neuralink, The Boring Company, xAI, and SpaceX would have been located in Starbase, Texas and El Segundo, California.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Elon Musk had not leader_of Tesla?",
+      "entities": [
+        "Elon Musk",
+        "Tesla"
+      ],
+      "n_premises": 14,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'leader_of' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Elon Musk had not led Tesla, he would have been the leader of SpaceX.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Elon Musk had not known_for SpaceX?",
+      "entities": [
+        "Elon Musk",
+        "SpaceX"
+      ],
+      "n_premises": 16,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'known_for' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Elon Musk had not known for SpaceX, he would have been known for Tesla. The given facts do not support this answer.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Elon Musk had not estimated_net_worth US$1.1 trillion?",
+      "entities": [
+        "Elon Musk",
+        "US$1.1 trillion"
+      ],
+      "n_premises": 9,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'estimated_net_worth' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Elon Musk had not estimated_net_worth US$1.1 trillion, he would have had a net worth of approximately US$100 billion.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Tesla had not produces Electric cars?",
+      "entities": [
+        "Tesla",
+        "Electric cars"
+      ],
+      "n_premises": 7,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Tesla had not produced electric cars, it would not have been a leader of the company.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if SpaceX had not located_in Starbase, Texas?",
+      "entities": [
+        "SpaceX",
+        "Starbase, Texas"
+      ],
+      "n_premises": 10,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If SpaceX had not located_in Starbase, Texas, it would not have been able to produce Falcon rockets.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if SpaceX had not develops Rockets?",
+      "entities": [
+        "SpaceX",
+        "rockets"
+      ],
+      "n_premises": 11,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If SpaceX had not developed rockets, it would not have been a leader of SpaceX.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if SpaceX had not produces Falcon rockets?",
+      "entities": [
+        "SpaceX",
+        "Falcon rockets"
+      ],
+      "n_premises": 10,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If SpaceX had not produced Falcon rockets, it would not have been a leader of SpaceX.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Jeff Bezos had not founded Blue Origin?",
+      "entities": [
+        "Jeff Bezos",
+        "Blue Origin"
+      ],
+      "n_premises": 6,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known — that Jeff Bezos founded Blue Origin — one might reason that, had that not been so, the following would be in question: Jeff Bezos leader_of Blue Origin; Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "If Jeff Bezos had not founded Blue Origin, his net worth would have been US$199 billion.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Blue Origin had not develops Rockets?",
+      "entities": [
+        "Blue Origin",
+        "rockets"
+      ],
+      "n_premises": 6,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Blue Origin had not developed rockets, it would not have been a leader of Blue Origin. Therefore, the answer is that Blue Origin would not have been a leader of Blue Origin.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "Therefore"
+      ],
+      "n_extra_named": 1
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if LVMH had not located_in Paris?",
+      "entities": [
+        "LVMH",
+        "Paris"
+      ],
+      "n_premises": 2,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If LVMH had not located_in Paris, it would not have been a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company. France is a country, and LVMH is a French company",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "France",
+        "French"
+      ],
+      "n_extra_named": 2
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Falcon 9 had not located_in McGregor, Texas?",
+      "entities": [
+        "Falcon 9",
+        "McGregor, Texas"
+      ],
+      "n_premises": 1,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'located_in' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Falcon 9 had not located in McGregor, Texas, it would have been located in a different location. The Falcon 9 rocket is a commercial launch vehicle that is designed to be launched from various locations around the world. The fact that Falcon 9 is located in McGregor, Texas does not mean that it cannot be located in other locations.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": true,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "counterfactual",
+      "question": "What if Neuralink had not develops brain-computer interfaces?",
+      "entities": [
+        "Neuralink",
+        "brain-computer interfaces"
+      ],
+      "n_premises": 3,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts.",
+      "qwen_answer": "If Neuralink had not developed brain-computer interfaces, it would not have been a company that Elon Musk founded.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with rockets?",
+      "entities": [
+        "Elon Musk",
+        "rockets"
+      ],
+      "n_premises": 11,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which develops rockets — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Elon Musk might be associated with rockets because he founded SpaceX, which is known for developing rockets.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with spacecraft?",
+      "entities": [
+        "Elon Musk",
+        "spacecraft"
+      ],
+      "n_premises": 12,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which develops spacecraft — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Elon Musk might be associated with spacecraft because he founded many companies that develop spacecraft, such as SpaceX, Neuralink, The Boring Company, and xAI.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with Electric cars?",
+      "entities": [
+        "Elon Musk",
+        "Electric cars"
+      ],
+      "n_premises": 10,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Elon Musk leads Tesla, which produces Electric cars — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Elon Musk might be associated with Electric cars because he founded The Boring Company, which is a company that promotes the idea of a \"boring\" or \"non-conventional\" way to travel. The Boring Company is a company that promotes the idea of a \"boring\" or \"non-conventional\" way to travel. Elon Musk founded The Boring Company, which promotes the idea of a \"boring\" or \"non-conventional\" way to travel.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Jeff Bezos be associated with rockets?",
+      "entities": [
+        "Jeff Bezos",
+        "rockets"
+      ],
+      "n_premises": 5,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Jeff Bezos founded Blue Origin, which develops rockets — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Jeff Bezos might be associated with rockets because he founded Blue Origin, which is a company that develops rockets. Jeff Bezos is known for his leadership and investments in technology companies, including Blue Origin. Therefore, it is reasonable to conclude that Jeff Bezos is associated with rockets.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "Therefore"
+      ],
+      "n_extra_named": 1
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Jeff Bezos be associated with spacecraft?",
+      "entities": [
+        "Jeff Bezos",
+        "spacecraft"
+      ],
+      "n_premises": 6,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Jeff Bezos founded Blue Origin, which develops spacecraft — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Jeff Bezos might be associated with spacecraft because he founded Blue Origin, which is a private company that develops spacecraft. Blue Origin is a private company that has a significant financial stake in the development of spacecraft, which suggests that he is involved in the development and operation of spacecraft.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Gwynne Shotwell be associated with rockets?",
+      "entities": [
+        "Gwynne Shotwell",
+        "rockets"
+      ],
+      "n_premises": 3,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Gwynne Shotwell leads SpaceX, which develops rockets — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Gwynne Shotwell might be associated with rockets because he is a leader of SpaceX, which is a company that develops rockets.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with Starbase, Texas?",
+      "entities": [
+        "Elon Musk",
+        "Starbase, Texas"
+      ],
+      "n_premises": 10,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which is located in Starbase, Texas — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Elon Musk might be associated with Starbase, Texas because SpaceX, which Elon Musk founded, is located in Starbase, Texas.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with Falcon rockets?",
+      "entities": [
+        "Elon Musk",
+        "Falcon rockets"
+      ],
+      "n_premises": 10,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which produces Falcon rockets — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Elon Musk might be associated with Falcon rockets because he founded The Boring Company, which is a company that develops a new type of public transportation system called the \"boring\" system. The Boring Company is a company that develops a new type of public transportation system called the \"boring\" system. Falcon rockets are a type of rocket that can be used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"boring\" system to orbit the Earth. Falcon rockets are used to launch payloads such as the \"",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "Earth"
+      ],
+      "n_extra_named": 1
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Tesla be associated with rockets?",
+      "entities": [
+        "Tesla",
+        "rockets"
+      ],
+      "n_premises": 9,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path.",
+      "qwen_answer": "Tesla might be associated with rockets because it is a company that develops rockets.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Neuralink be associated with rockets?",
+      "entities": [
+        "Neuralink",
+        "rockets"
+      ],
+      "n_premises": 5,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path.",
+      "qwen_answer": "Neuralink might be associated with rockets because Elon Musk founded Neuralink, which is a company that develops brain-computer interfaces.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Elon Musk be associated with Paris?",
+      "entities": [
+        "Elon Musk",
+        "Paris"
+      ],
+      "n_premises": 11,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path.",
+      "qwen_answer": "Elon Musk might be associated with Paris because LVMH (L'Oréal, Unilever, and LVMH Group) is located in Paris.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "Group",
+        "Unilever"
+      ],
+      "n_extra_named": 2
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might SpaceX be associated with Electric cars?",
+      "entities": [
+        "SpaceX",
+        "Electric cars"
+      ],
+      "n_premises": 11,
+      "microworld_decision": "audit",
+      "microworld_rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path.",
+      "qwen_answer": "Elon Musk founded SpaceX, which is known for developing rockets. Therefore, it is likely that SpaceX is associated with electric cars.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [
+        "Therefore"
+      ],
+      "n_extra_named": 1
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Blue Origin be associated with rockets?",
+      "entities": [
+        "Blue Origin",
+        "rockets"
+      ],
+      "n_premises": 6,
+      "microworld_decision": "grounded_deferral",
+      "microworld_rendered": "That is answerable from stored facts, not speculation (a direct grounded fact links these; not a speculation).",
+      "qwen_answer": "Blue Origin is associated with rockets because it is a company that develops rockets and spacecraft.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    },
+    {
+      "kind": "why_might",
+      "question": "Why might Gwynne Shotwell be associated with spacecraft?",
+      "entities": [
+        "Gwynne Shotwell",
+        "spacecraft"
+      ],
+      "n_premises": 4,
+      "microworld_decision": "speculative",
+      "microworld_rendered": "Based on what is known, one might reason that Gwynne Shotwell leads SpaceX, which develops spacecraft — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "qwen_answer": "Gwynne Shotwell might be associated with spacecraft because she is a leader of SpaceX, which is a private company that develops spacecraft.",
+      "qwen_deterministic": true,
+      "expressed_uncertainty": false,
+      "extra_named_tokens": [],
+      "n_extra_named": 0
+    }
+  ]
+}

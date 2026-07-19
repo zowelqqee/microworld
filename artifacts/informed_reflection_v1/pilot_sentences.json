@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "purpose": "Manual gate pilot for informed-reflection sentence classification (factual assertion vs speculative/hypothetical). Gold labels are human-judged by the pilot author BEFORE the rule set was run.",
+    "labels": {
+      "FACTUAL": "Declarative statement presenting something as true about the world; MUST be verified against the graph. A hedged wrapper does not change this if a checkable claim is being asserted.",
+      "SPECULATIVE": "Conditional, counterfactual, predictive, or explicitly opinion/imaginative content; not subject to fact-verification.",
+      "MIXED": "One sentence containing both a factual assertion AND speculative content (often in a single clause). Scored separately; a binary classifier cannot be 'correct' on these."
+    },
+    "sourcing": "Hand-authored representative examples over the system's actual subject domain (SpaceX, Tesla, LVMH, etc. from wiki_snapshots_v1). Per design.md section 2, the set DELIBERATELY over-samples hard cases (hedged-factual, mixed, speculative-definite). Aggregate accuracy is therefore a STRESS-TEST figure, not a population estimate.",
+    "count": 38
+  },
+  "sentences": [
+    {"id": 1,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "SpaceX was founded by Elon Musk in 2002.", "rationale": "Plain declarative, named entities, checkable."},
+    {"id": 2,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "The Falcon 9 is a reusable launch vehicle developed by SpaceX.", "rationale": "Present-tense declarative, checkable."},
+    {"id": 3,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "LVMH owns Louis Vuitton.", "rationale": "Ownership relation, checkable."},
+    {"id": 4,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "Tesla is headquartered in Austin, Texas.", "rationale": "Location relation, checkable."},
+    {"id": 5,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "Larry Ellison co-founded Oracle.", "rationale": "Founding relation, checkable."},
+    {"id": 6,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "The Nasdaq is a stock exchange located in New York City.", "rationale": "Classification + location, checkable."},
+    {"id": 7,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "Neuralink develops brain-computer interfaces.", "rationale": "Develops relation, checkable."},
+    {"id": 8,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "Blue Origin was founded by Jeff Bezos.", "rationale": "Founding relation, checkable."},
+    {"id": 9,  "category": "clean_factual",        "gold": "FACTUAL",     "text": "Louis Vuitton is a subsidiary of LVMH.", "rationale": "Subsidiary relation, checkable."},
+    {"id": 10, "category": "clean_factual",        "gold": "FACTUAL",     "text": "SpaceX develops rockets and spacecraft.", "rationale": "Develops relation, checkable."},
+
+    {"id": 11, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "What if SpaceX had never been founded?", "rationale": "Counterfactual question."},
+    {"id": 12, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "One might wonder whether Tesla could have succeeded without Musk.", "rationale": "Explicit framing + counterfactual modal."},
+    {"id": 13, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "If Blue Origin had launched first, the industry might look different today.", "rationale": "Conditional + modal."},
+    {"id": 14, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "Perhaps reusable rockets will one day make spaceflight routine.", "rationale": "Hedged prediction."},
+    {"id": 15, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "It is interesting to consider how LVMH might expand next.", "rationale": "Explicit reflective framing + modal."},
+    {"id": 16, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "SpaceX could eventually reach Mars within a decade.", "rationale": "Predictive modal."},
+    {"id": 17, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "One might argue that private spaceflight was inevitable.", "rationale": "Explicit opinion framing."},
+    {"id": 18, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "Imagine a world where Oracle never existed.", "rationale": "Imaginative framing."},
+    {"id": 19, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "Neuralink may transform medicine, though that remains uncertain.", "rationale": "Modal + explicit uncertainty."},
+    {"id": 20, "category": "clean_speculative",    "gold": "SPECULATIVE", "text": "I suspect the space industry will keep consolidating.", "rationale": "Explicit opinion framing."},
+
+    {"id": 21, "category": "mixed",                "gold": "MIXED",       "text": "SpaceX was founded in 2002, and it might reach Mars within a decade.", "rationale": "Assertion (founded 2002) + speculation (might reach Mars)."},
+    {"id": 22, "category": "mixed",                "gold": "MIXED",       "text": "LVMH owns Louis Vuitton, so perhaps it will acquire more luxury brands.", "rationale": "Assertion (owns) + speculation (perhaps acquire)."},
+    {"id": 23, "category": "mixed",                "gold": "MIXED",       "text": "Tesla is based in Austin, and one wonders whether it will move again.", "rationale": "Assertion (based in Austin) + speculation (whether it will move)."},
+    {"id": 24, "category": "mixed",                "gold": "MIXED",       "text": "Blue Origin was founded by Bezos, though it could have been anyone with capital.", "rationale": "Assertion (founded by Bezos) + counterfactual (could have been anyone)."},
+    {"id": 25, "category": "mixed",                "gold": "MIXED",       "text": "The Falcon 9 is reusable, which suggests future rockets may be fully reusable too.", "rationale": "Assertion (Falcon 9 reusable) + speculation (future rockets may be)."},
+    {"id": 26, "category": "mixed",                "gold": "MIXED",       "text": "Neuralink develops brain interfaces, and if it succeeds, medicine would change.", "rationale": "Assertion (develops) + conditional (if it succeeds ... would change)."},
+
+    {"id": 27, "category": "hedged_factual",       "gold": "FACTUAL",     "text": "It seems that SpaceX was founded in 2002.", "rationale": "Hedge wrapper ('it seems') but asserts a checkable fact that MUST be verified."},
+    {"id": 28, "category": "hedged_factual",       "gold": "FACTUAL",     "text": "Perhaps the most important fact is that SpaceX develops rockets.", "rationale": "'Perhaps' scopes the meta-judgment 'most important', not the embedded checkable claim 'SpaceX develops rockets'."},
+    {"id": 29, "category": "hedged_factual",       "gold": "FACTUAL",     "text": "As far as I know, LVMH owns Louis Vuitton.", "rationale": "Epistemic hedge but asserts a checkable ownership fact."},
+    {"id": 30, "category": "hedged_factual",       "gold": "FACTUAL",     "text": "If I recall correctly, Blue Origin was founded by Jeff Bezos.", "rationale": "'If I recall' is a memory hedge, not a conditional over the world; the claim is checkable."},
+    {"id": 31, "category": "hedged_factual",       "gold": "FACTUAL",     "text": "Apparently Tesla is headquartered in Austin.", "rationale": "Evidential hedge but asserts a checkable location fact."},
+
+    {"id": 32, "category": "speculative_definite", "gold": "SPECULATIVE", "text": "There is no doubt that reusable rockets could fail catastrophically.", "rationale": "Definite framing ('no doubt') but the content 'could fail' is hypothetical, not a current fact."},
+    {"id": 33, "category": "speculative_definite", "gold": "SPECULATIVE", "text": "Certainly, one could imagine SpaceX expanding to other planets.", "rationale": "Definite framing ('certainly') but content is imaginative."},
+    {"id": 34, "category": "definite_factual",     "gold": "FACTUAL",     "text": "It goes without saying that Musk founded SpaceX.", "rationale": "Definite framing over a checkable fact."},
+    {"id": 35, "category": "definite_factual",     "gold": "FACTUAL",     "text": "Undoubtedly, Neuralink develops brain-computer interfaces.", "rationale": "Definite framing over a checkable fact."},
+    {"id": 36, "category": "definite_factual",     "gold": "FACTUAL",     "text": "Clearly, the Falcon 9 is a reusable launch vehicle.", "rationale": "Definite framing over a checkable fact."},
+
+    {"id": 37, "category": "unmarked_speculative", "gold": "SPECULATIVE", "text": "The luxury market will double in the next ten years.", "rationale": "Prediction about the future with no modal/hedge marker; not currently checkable."},
+    {"id": 38, "category": "unmarked_speculative", "gold": "SPECULATIVE", "text": "Reusable rockets change the economics of spaceflight forever.", "rationale": "Sweeping editorial generalization ('forever'), present tense, no marker; not an atomic checkable claim."}
+  ]
+}

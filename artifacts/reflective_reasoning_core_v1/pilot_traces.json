@@ -1,0 +1,297 @@
+{
+  "overlay": "artifacts/compositional_grammar_v1/capability_overlay.json",
+  "rule": "counterfactual_removal",
+  "dependency_bearing_predicates": [
+    "construction_started",
+    "created_by",
+    "developed_by",
+    "develops",
+    "founded",
+    "founded_by",
+    "produces",
+    "product_of",
+    "published_by",
+    "publishes"
+  ],
+  "cases": [
+    {
+      "question": "What if Elon Musk had not founded SpaceX?",
+      "focal_fact": "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+      "focal_predicate": "founded",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 15,
+      "candidates": {
+        "co_subject": [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+          "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]"
+        ],
+        "object_as_subject": [
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+          "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+          "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]"
+        ],
+        "shared_node": [
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]"
+        ]
+      }
+    },
+    {
+      "question": "What if Elon Musk had not leader_of Tesla?",
+      "focal_fact": "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+      "focal_predicate": "leader_of",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 13,
+      "candidates": {
+        "co_subject": [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+          "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]"
+        ],
+        "object_as_subject": [
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]",
+          "Tesla | produces | battery energy storage  [edge:tesla|produces|battery energy storage]",
+          "Tesla | produces | Battery storage  [edge:tesla|produces|battery storage]"
+        ],
+        "shared_node": [
+          "Martin Eberhard | founded | Tesla  [edge:martin eberhard|founded|tesla]",
+          "Marc Tarpenning | founded | Tesla  [edge:marc tarpenning|founded|tesla]"
+        ]
+      }
+    },
+    {
+      "question": "What if Elon Musk had not known_for SpaceX?",
+      "focal_fact": "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+      "focal_predicate": "known_for",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 15,
+      "candidates": {
+        "co_subject": [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+          "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]"
+        ],
+        "object_as_subject": [
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+          "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+          "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]"
+        ],
+        "shared_node": [
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]"
+        ]
+      }
+    },
+    {
+      "question": "What if Elon Musk had not estimated_net_worth US$1.1 trillion?",
+      "focal_fact": "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+      "focal_predicate": "estimated_net_worth",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 8,
+      "candidates": {
+        "co_subject": [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+          "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]"
+        ],
+        "object_as_subject": [],
+        "shared_node": []
+      }
+    },
+    {
+      "question": "What if Tesla had not produces Electric cars?",
+      "focal_fact": "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]",
+      "focal_predicate": "produces",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 6,
+      "candidates": {
+        "co_subject": [
+          "Tesla | produces | battery energy storage  [edge:tesla|produces|battery energy storage]",
+          "Tesla | produces | Battery storage  [edge:tesla|produces|battery storage]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Martin Eberhard | founded | Tesla  [edge:martin eberhard|founded|tesla]",
+          "Marc Tarpenning | founded | Tesla  [edge:marc tarpenning|founded|tesla]"
+        ]
+      }
+    },
+    {
+      "question": "What if SpaceX had not located_in Starbase, Texas?",
+      "focal_fact": "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+      "focal_predicate": "located_in",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 9,
+      "candidates": {
+        "co_subject": [
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+          "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+          "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]"
+        ]
+      }
+    },
+    {
+      "question": "What if SpaceX had not develops Rockets?",
+      "focal_fact": "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+      "focal_predicate": "develops",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 10,
+      "candidates": {
+        "co_subject": [
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+          "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+          "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+          "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+        ]
+      }
+    },
+    {
+      "question": "What if SpaceX had not produces Falcon rockets?",
+      "focal_fact": "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+      "focal_predicate": "produces",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 9,
+      "candidates": {
+        "co_subject": [
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+          "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]"
+        ]
+      }
+    },
+    {
+      "question": "What if Jeff Bezos had not founded Blue Origin?",
+      "focal_fact": "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+      "focal_predicate": "founded",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 5,
+      "candidates": {
+        "co_subject": [
+          "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+          "Jeff Bezos | estimated_net_worth | US$200 billion  [edge:jeff bezos|estimated_net_worth|us$200 billion]"
+        ],
+        "object_as_subject": [
+          "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]",
+          "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+          "Blue Origin | located_in | Kent, Washington  [edge:blue origin|located_in|kent, washington]"
+        ],
+        "shared_node": []
+      }
+    },
+    {
+      "question": "What if Blue Origin had not develops Rockets?",
+      "focal_fact": "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]",
+      "focal_predicate": "develops",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 5,
+      "candidates": {
+        "co_subject": [
+          "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+          "Blue Origin | located_in | Kent, Washington  [edge:blue origin|located_in|kent, washington]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+          "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+          "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]"
+        ]
+      }
+    },
+    {
+      "question": "What if LVMH had not located_in Paris?",
+      "focal_fact": "LVMH | located_in | Paris  [edge:lvmh|located_in|paris]",
+      "focal_predicate": "located_in",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 1,
+      "candidates": {
+        "co_subject": [],
+        "object_as_subject": [],
+        "shared_node": [
+          "LVMH Moet Hennessy Louis Vuitton SE | located_in | Paris  [edge:lvmh moet hennessy louis vuitton se|located_in|paris]"
+        ]
+      }
+    },
+    {
+      "question": "What if Falcon 9 had not located_in McGregor, Texas?",
+      "focal_fact": "Falcon 9 | located_in | McGregor, Texas  [edge:falcon 9|located_in|mcgregor, texas]",
+      "focal_predicate": "located_in",
+      "focal_predicate_dependency_bearing": false,
+      "n_candidates_naive": 0,
+      "candidates": {
+        "co_subject": [],
+        "object_as_subject": [],
+        "shared_node": []
+      }
+    },
+    {
+      "question": "What if Neuralink had not develops brain-computer interfaces?",
+      "focal_fact": "Neuralink | develops | brain-computer interfaces  [edge:neuralink|develops|brain-computer interfaces]",
+      "focal_predicate": "develops",
+      "focal_predicate_dependency_bearing": true,
+      "n_candidates_naive": 2,
+      "candidates": {
+        "co_subject": [
+          "Neuralink | founded_by | Max Hodak  [edge:neuralink|founded_by|max hodak]"
+        ],
+        "object_as_subject": [],
+        "shared_node": [
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]"
+        ]
+      }
+    }
+  ]
+}

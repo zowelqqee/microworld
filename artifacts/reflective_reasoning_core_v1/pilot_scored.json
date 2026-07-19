@@ -1,0 +1,180 @@
+{
+  "filter": {
+    "existence_conferring": [
+      "construction_started",
+      "created_by",
+      "developed_by",
+      "founded",
+      "founded_by",
+      "product_of"
+    ]
+  },
+  "summary": {
+    "n_cases": 13,
+    "cases_rule_fires": 2,
+    "cases_decline": 11,
+    "total_naive_candidates": 98,
+    "total_admitted_candidates": 13,
+    "naive_reduction_pct": 86.7
+  },
+  "scored": [
+    {
+      "question": "What if Elon Musk had not founded SpaceX?",
+      "focal_fact": "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+      "focal_predicate": "founded",
+      "existence_conferring": true,
+      "object_is_entity": true,
+      "rule_fires": true,
+      "n_candidates_naive": 15,
+      "n_admitted_filtered": 9,
+      "admitted_candidates": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+        "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+        "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+        "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]",
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]"
+      ]
+    },
+    {
+      "question": "What if Elon Musk had not leader_of Tesla?",
+      "focal_fact": "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+      "focal_predicate": "leader_of",
+      "existence_conferring": false,
+      "object_is_entity": true,
+      "rule_fires": false,
+      "n_candidates_naive": 13,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Elon Musk had not known_for SpaceX?",
+      "focal_fact": "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+      "focal_predicate": "known_for",
+      "existence_conferring": false,
+      "object_is_entity": true,
+      "rule_fires": false,
+      "n_candidates_naive": 15,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Elon Musk had not estimated_net_worth US$1.1 trillion?",
+      "focal_fact": "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+      "focal_predicate": "estimated_net_worth",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 8,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Tesla had not produces Electric cars?",
+      "focal_fact": "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]",
+      "focal_predicate": "produces",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 6,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if SpaceX had not located_in Starbase, Texas?",
+      "focal_fact": "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+      "focal_predicate": "located_in",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 9,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if SpaceX had not develops Rockets?",
+      "focal_fact": "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+      "focal_predicate": "develops",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 10,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if SpaceX had not produces Falcon rockets?",
+      "focal_fact": "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+      "focal_predicate": "produces",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 9,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Jeff Bezos had not founded Blue Origin?",
+      "focal_fact": "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+      "focal_predicate": "founded",
+      "existence_conferring": true,
+      "object_is_entity": true,
+      "rule_fires": true,
+      "n_candidates_naive": 5,
+      "n_admitted_filtered": 4,
+      "admitted_candidates": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+        "Blue Origin | located_in | Kent, Washington  [edge:blue origin|located_in|kent, washington]"
+      ]
+    },
+    {
+      "question": "What if Blue Origin had not develops Rockets?",
+      "focal_fact": "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]",
+      "focal_predicate": "develops",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 5,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if LVMH had not located_in Paris?",
+      "focal_fact": "LVMH | located_in | Paris  [edge:lvmh|located_in|paris]",
+      "focal_predicate": "located_in",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 1,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Falcon 9 had not located_in McGregor, Texas?",
+      "focal_fact": "Falcon 9 | located_in | McGregor, Texas  [edge:falcon 9|located_in|mcgregor, texas]",
+      "focal_predicate": "located_in",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 0,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    },
+    {
+      "question": "What if Neuralink had not develops brain-computer interfaces?",
+      "focal_fact": "Neuralink | develops | brain-computer interfaces  [edge:neuralink|develops|brain-computer interfaces]",
+      "focal_predicate": "develops",
+      "existence_conferring": false,
+      "object_is_entity": false,
+      "rule_fires": false,
+      "n_candidates_naive": 2,
+      "n_admitted_filtered": 0,
+      "admitted_candidates": []
+    }
+  ]
+}

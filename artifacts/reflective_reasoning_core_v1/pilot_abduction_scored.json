@@ -1,0 +1,216 @@
+{
+  "summary": {
+    "n_cases": 14,
+    "routes": {
+      "fire_speculative": 9,
+      "decline_spurious_3hop_only": 3,
+      "decline_no_bridge": 1,
+      "direct_grounded": 1
+    },
+    "total_naive_explanations": 113,
+    "fire_cases": 9
+  },
+  "scored": [
+    {
+      "question": "Why might Elon Musk be associated with rockets?",
+      "route": "fire_speculative",
+      "n_naive": 11,
+      "n_2hop_bridges": 3,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Elon Musk be associated with spacecraft?",
+      "route": "fire_speculative",
+      "n_naive": 12,
+      "n_2hop_bridges": 3,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Elon Musk be associated with Electric cars?",
+      "route": "fire_speculative",
+      "n_naive": 10,
+      "n_2hop_bridges": 2,
+      "bridge_nodes": [
+        "Tesla"
+      ],
+      "example_2hop": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Jeff Bezos be associated with rockets?",
+      "route": "fire_speculative",
+      "n_naive": 5,
+      "n_2hop_bridges": 2,
+      "bridge_nodes": [
+        "Blue Origin"
+      ],
+      "example_2hop": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Jeff Bezos be associated with spacecraft?",
+      "route": "fire_speculative",
+      "n_naive": 6,
+      "n_2hop_bridges": 2,
+      "bridge_nodes": [
+        "Blue Origin"
+      ],
+      "example_2hop": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Gwynne Shotwell be associated with rockets?",
+      "route": "fire_speculative",
+      "n_naive": 3,
+      "n_2hop_bridges": 1,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Elon Musk be associated with Starbase, Texas?",
+      "route": "fire_speculative",
+      "n_naive": 10,
+      "n_2hop_bridges": 3,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Elon Musk be associated with Falcon rockets?",
+      "route": "fire_speculative",
+      "n_naive": 10,
+      "n_2hop_bridges": 3,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might Tesla be associated with rockets?",
+      "route": "decline_spurious_3hop_only",
+      "n_naive": 9,
+      "n_2hop_bridges": 0,
+      "bridge_nodes": [],
+      "example_2hop": null,
+      "n_3hop_only": 6,
+      "example_3hop": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ]
+    },
+    {
+      "question": "Why might Neuralink be associated with rockets?",
+      "route": "decline_spurious_3hop_only",
+      "n_naive": 5,
+      "n_2hop_bridges": 0,
+      "bridge_nodes": [],
+      "example_2hop": null,
+      "n_3hop_only": 3,
+      "example_3hop": [
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ]
+    },
+    {
+      "question": "Why might Elon Musk be associated with Paris?",
+      "route": "decline_no_bridge",
+      "n_naive": 11,
+      "n_2hop_bridges": 0,
+      "bridge_nodes": [],
+      "example_2hop": null,
+      "n_3hop_only": 0,
+      "example_3hop": null
+    },
+    {
+      "question": "Why might SpaceX be associated with Electric cars?",
+      "route": "decline_spurious_3hop_only",
+      "n_naive": 11,
+      "n_2hop_bridges": 0,
+      "bridge_nodes": [],
+      "example_2hop": null,
+      "n_3hop_only": 6,
+      "example_3hop": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+      ]
+    },
+    {
+      "question": "Why might Blue Origin be associated with rockets?",
+      "route": "direct_grounded",
+      "n_naive": 6,
+      "n_2hop_bridges": 0,
+      "bridge_nodes": [],
+      "example_2hop": null,
+      "n_3hop_only": 1,
+      "example_3hop": [
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ]
+    },
+    {
+      "question": "Why might Gwynne Shotwell be associated with spacecraft?",
+      "route": "fire_speculative",
+      "n_naive": 4,
+      "n_2hop_bridges": 1,
+      "bridge_nodes": [
+        "SpaceX"
+      ],
+      "example_2hop": [
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+      ],
+      "n_3hop_only": 0,
+      "example_3hop": null
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "category": "clean_factual",
+      "text": "SpaceX was founded by Elon Musk in 2002.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 2,
+      "category": "clean_factual",
+      "text": "The Falcon 9 is a reusable launch vehicle developed by SpaceX.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 3,
+      "category": "clean_factual",
+      "text": "LVMH owns Louis Vuitton.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 4,
+      "category": "clean_factual",
+      "text": "Tesla is headquartered in Austin, Texas.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 5,
+      "category": "clean_factual",
+      "text": "Larry Ellison co-founded Oracle.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 6,
+      "category": "clean_factual",
+      "text": "The Nasdaq is a stock exchange located in New York City.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 7,
+      "category": "clean_factual",
+      "text": "Neuralink develops brain-computer interfaces.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 8,
+      "category": "clean_factual",
+      "text": "Blue Origin was founded by Jeff Bezos.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 9,
+      "category": "clean_factual",
+      "text": "Louis Vuitton is a subsidiary of LVMH.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 10,
+      "category": "clean_factual",
+      "text": "SpaceX develops rockets and spacecraft.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 11,
+      "category": "clean_speculative",
+      "text": "What if SpaceX had never been founded?",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "what if",
+        "if"
+      ],
+      "correct": true
+    },
+    {
+      "id": 12,
+      "category": "clean_speculative",
+      "text": "One might wonder whether Tesla could have succeeded without Musk.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "could have",
+        "might",
+        "could"
+      ],
+      "correct": true
+    },
+    {
+      "id": 13,
+      "category": "clean_speculative",
+      "text": "If Blue Origin had launched first, the industry might look different today.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "if",
+        "might"
+      ],
+      "correct": true
+    },
+    {
+      "id": 14,
+      "category": "clean_speculative",
+      "text": "Perhaps reusable rockets will one day make spaceflight routine.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "perhaps"
+      ],
+      "correct": true
+    },
+    {
+      "id": 15,
+      "category": "clean_speculative",
+      "text": "It is interesting to consider how LVMH might expand next.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "it is interesting to consider",
+        "might"
+      ],
+      "correct": true
+    },
+    {
+      "id": 16,
+      "category": "clean_speculative",
+      "text": "SpaceX could eventually reach Mars within a decade.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "could"
+      ],
+      "correct": true
+    },
+    {
+      "id": 17,
+      "category": "clean_speculative",
+      "text": "One might argue that private spaceflight was inevitable.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "one might argue",
+        "might"
+      ],
+      "correct": true
+    },
+    {
+      "id": 18,
+      "category": "clean_speculative",
+      "text": "Imagine a world where Oracle never existed.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "imagine"
+      ],
+      "correct": true
+    },
+    {
+      "id": 19,
+      "category": "clean_speculative",
+      "text": "Neuralink may transform medicine, though that remains uncertain.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "may"
+      ],
+      "correct": true
+    },
+    {
+      "id": 20,
+      "category": "clean_speculative",
+      "text": "I suspect the space industry will keep consolidating.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "i suspect"
+      ],
+      "correct": true
+    },
+    {
+      "id": 21,
+      "category": "mixed",
+      "text": "SpaceX was founded in 2002, and it might reach Mars within a decade.",
+      "gold": "MIXED",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "might"
+      ],
+      "correct": null
+    },
+    {
+      "id": 22,
+      "category": "mixed",
+      "text": "LVMH owns Louis Vuitton, so perhaps it will acquire more luxury brands.",
+      "gold": "MIXED",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "perhaps"
+      ],
+      "correct": null
+    },
+    {
+      "id": 23,
+      "category": "mixed",
+      "text": "Tesla is based in Austin, and one wonders whether it will move again.",
+      "gold": "MIXED",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": null
+    },
+    {
+      "id": 24,
+      "category": "mixed",
+      "text": "Blue Origin was founded by Bezos, though it could have been anyone with capital.",
+      "gold": "MIXED",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "could have",
+        "could"
+      ],
+      "correct": null
+    },
+    {
+      "id": 25,
+      "category": "mixed",
+      "text": "The Falcon 9 is reusable, which suggests future rockets may be fully reusable too.",
+      "gold": "MIXED",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "may"
+      ],
+      "correct": null
+    },
+    {
+      "id": 26,
+      "category": "mixed",
+      "text": "Neuralink develops brain interfaces, and if it succeeds, medicine would change.",
+      "gold": "MIXED",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "if",
+        "would"
+      ],
+      "correct": null
+    },
+    {
+      "id": 27,
+      "category": "hedged_factual",
+      "text": "It seems that SpaceX was founded in 2002.",
+      "gold": "FACTUAL",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "it seems",
+        "seems that"
+      ],
+      "correct": false
+    },
+    {
+      "id": 28,
+      "category": "hedged_factual",
+      "text": "Perhaps the most important fact is that SpaceX develops rockets.",
+      "gold": "FACTUAL",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "perhaps"
+      ],
+      "correct": false
+    },
+    {
+      "id": 29,
+      "category": "hedged_factual",
+      "text": "As far as I know, LVMH owns Louis Vuitton.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 30,
+      "category": "hedged_factual",
+      "text": "If I recall correctly, Blue Origin was founded by Jeff Bezos.",
+      "gold": "FACTUAL",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "if"
+      ],
+      "correct": false
+    },
+    {
+      "id": 31,
+      "category": "hedged_factual",
+      "text": "Apparently Tesla is headquartered in Austin.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 32,
+      "category": "speculative_definite",
+      "text": "There is no doubt that reusable rockets could fail catastrophically.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "could"
+      ],
+      "correct": true
+    },
+    {
+      "id": 33,
+      "category": "speculative_definite",
+      "text": "Certainly, one could imagine SpaceX expanding to other planets.",
+      "gold": "SPECULATIVE",
+      "pred": "SPECULATIVE",
+      "markers": [
+        "could",
+        "imagine"
+      ],
+      "correct": true
+    },
+    {
+      "id": 34,
+      "category": "definite_factual",
+      "text": "It goes without saying that Musk founded SpaceX.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 35,
+      "category": "definite_factual",
+      "text": "Undoubtedly, Neuralink develops brain-computer interfaces.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 36,
+      "category": "definite_factual",
+      "text": "Clearly, the Falcon 9 is a reusable launch vehicle.",
+      "gold": "FACTUAL",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": true
+    },
+    {
+      "id": 37,
+      "category": "unmarked_speculative",
+      "text": "The luxury market will double in the next ten years.",
+      "gold": "SPECULATIVE",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": false
+    },
+    {
+      "id": 38,
+      "category": "unmarked_speculative",
+      "text": "Reusable rockets change the economics of spaceflight forever.",
+      "gold": "SPECULATIVE",
+      "pred": "FACTUAL",
+      "markers": [],
+      "correct": false
+    }
+  ],
+  "metrics": {
+    "n_total": 38,
+    "n_non_mixed": 32,
+    "n_mixed": 6,
+    "mixed_frequency_pct": 15.8,
+    "overall_accuracy_non_mixed_pct": 84.4,
+    "clean_only_accuracy_pct": 100.0,
+    "false_positive_pct_overall": 14.3,
+    "false_positive_pct_clean_only": 0.0,
+    "false_negative_pct": 16.7,
+    "false_positive_ids": [
+      37,
+      38
+    ],
+    "false_negative_ids": [
+      27,
+      28,
+      30
+    ],
+    "mixed_predictions": {
+      "21": "SPECULATIVE",
+      "22": "SPECULATIVE",
+      "23": "FACTUAL",
+      "24": "SPECULATIVE",
+      "25": "SPECULATIVE",
+      "26": "SPECULATIVE"
+    }
+  }
+}

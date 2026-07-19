@@ -1,0 +1,463 @@
+{
+  "rule": "abduction_path_explanation",
+  "cases": [
+    {
+      "question": "Why might Elon Musk be associated with rockets?",
+      "start": "Elon Musk",
+      "goal": "rockets",
+      "n_naive": 11,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_paths_2hop": 3,
+      "paths_2hop": [
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Elon Musk be associated with spacecraft?",
+      "start": "Elon Musk",
+      "goal": "spacecraft",
+      "n_naive": 12,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "NASA | develops | spacecraft  [edge:nasa|develops|spacecraft]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+      ],
+      "n_paths_2hop": 3,
+      "paths_2hop": [
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Elon Musk be associated with Electric cars?",
+      "start": "Elon Musk",
+      "goal": "Electric cars",
+      "n_naive": 10,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+      ],
+      "n_paths_2hop": 2,
+      "paths_2hop": [
+        [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Jeff Bezos be associated with rockets?",
+      "start": "Jeff Bezos",
+      "goal": "rockets",
+      "n_naive": 5,
+      "naive_explanations": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Jeff Bezos | estimated_net_worth | US$200 billion  [edge:jeff bezos|estimated_net_worth|us$200 billion]",
+        "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_paths_2hop": 2,
+      "paths_2hop": [
+        [
+          "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+          "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+        ],
+        [
+          "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+          "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Jeff Bezos be associated with spacecraft?",
+      "start": "Jeff Bezos",
+      "goal": "spacecraft",
+      "n_naive": 6,
+      "naive_explanations": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Jeff Bezos | estimated_net_worth | US$200 billion  [edge:jeff bezos|estimated_net_worth|us$200 billion]",
+        "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "NASA | develops | spacecraft  [edge:nasa|develops|spacecraft]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+      ],
+      "n_paths_2hop": 2,
+      "paths_2hop": [
+        [
+          "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+          "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+        ],
+        [
+          "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+          "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Gwynne Shotwell be associated with rockets?",
+      "start": "Gwynne Shotwell",
+      "goal": "rockets",
+      "n_naive": 3,
+      "naive_explanations": [
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_paths_2hop": 1,
+      "paths_2hop": [
+        [
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Elon Musk be associated with Starbase, Texas?",
+      "start": "Elon Musk",
+      "goal": "Starbase, Texas",
+      "n_naive": 10,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]"
+      ],
+      "n_paths_2hop": 3,
+      "paths_2hop": [
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Elon Musk be associated with Falcon rockets?",
+      "start": "Elon Musk",
+      "goal": "Falcon rockets",
+      "n_naive": 10,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]"
+      ],
+      "n_paths_2hop": 3,
+      "paths_2hop": [
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might Tesla be associated with rockets?",
+      "start": "Tesla",
+      "goal": "rockets",
+      "n_naive": 9,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]",
+        "Tesla | produces | battery energy storage  [edge:tesla|produces|battery energy storage]",
+        "Tesla | produces | Battery storage  [edge:tesla|produces|battery storage]",
+        "Martin Eberhard | founded | Tesla  [edge:martin eberhard|founded|tesla]",
+        "Marc Tarpenning | founded | Tesla  [edge:marc tarpenning|founded|tesla]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_paths_2hop": 0,
+      "paths_2hop": [],
+      "n_paths_3hop_only": 6,
+      "paths_3hop_only": [
+        [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ]
+      ]
+    },
+    {
+      "question": "Why might Neuralink be associated with rockets?",
+      "start": "Neuralink",
+      "goal": "rockets",
+      "n_naive": 5,
+      "naive_explanations": [
+        "Neuralink | develops | brain-computer interfaces  [edge:neuralink|develops|brain-computer interfaces]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Neuralink | founded_by | Max Hodak  [edge:neuralink|founded_by|max hodak]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+      ],
+      "n_paths_2hop": 0,
+      "paths_2hop": [],
+      "n_paths_3hop_only": 3,
+      "paths_3hop_only": [
+        [
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ],
+        [
+          "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ]
+      ]
+    },
+    {
+      "question": "Why might Elon Musk be associated with Paris?",
+      "start": "Elon Musk",
+      "goal": "Paris",
+      "n_naive": 11,
+      "naive_explanations": [
+        "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "Elon Musk | estimated_net_worth | US$1.1 trillion  [edge:elon musk|estimated_net_worth|us$1.1 trillion]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Elon Musk | founded | Neuralink  [edge:elon musk|founded|neuralink]",
+        "Elon Musk | founded | The Boring Company  [edge:elon musk|founded|the boring company]",
+        "Elon Musk | founded | xAI  [edge:elon musk|founded|xai]",
+        "LVMH Moet Hennessy Louis Vuitton SE | located_in | Paris  [edge:lvmh moet hennessy louis vuitton se|located_in|paris]",
+        "LVMH | located_in | Paris  [edge:lvmh|located_in|paris]"
+      ],
+      "n_paths_2hop": 0,
+      "paths_2hop": [],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    },
+    {
+      "question": "Why might SpaceX be associated with Electric cars?",
+      "start": "SpaceX",
+      "goal": "Electric cars",
+      "n_naive": 11,
+      "naive_explanations": [
+        "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+        "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "SpaceX | produces | Falcon rockets  [edge:spacex|produces|falcon rockets]",
+        "SpaceX | produces | Dragon spacecraft  [edge:spacex|produces|dragon spacecraft]",
+        "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+        "SpaceX | located_in | Starbase, Texas  [edge:spacex|located_in|starbase, texas]",
+        "SpaceX | located_in | El Segundo, California  [edge:spacex|located_in|el segundo, california]",
+        "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+      ],
+      "n_paths_2hop": 0,
+      "paths_2hop": [],
+      "n_paths_3hop_only": 6,
+      "paths_3hop_only": [
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | leader_of | SpaceX  [edge:elon musk|leader_of|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | known_for | SpaceX  [edge:elon musk|known_for|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Elon Musk | leader_of | Tesla  [edge:elon musk|leader_of|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ],
+        [
+          "Elon Musk | founded | SpaceX  [edge:elon musk|founded|spacex]",
+          "Elon Musk | known_for | Tesla  [edge:elon musk|known_for|tesla]",
+          "Tesla | produces | Electric cars  [edge:tesla|produces|electric cars]"
+        ]
+      ]
+    },
+    {
+      "question": "Why might Blue Origin be associated with rockets?",
+      "start": "Blue Origin",
+      "goal": "rockets",
+      "n_naive": 6,
+      "naive_explanations": [
+        "Jeff Bezos | leader_of | Blue Origin  [edge:jeff bezos|leader_of|blue origin]",
+        "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+        "Jeff Bezos | founded | Blue Origin  [edge:jeff bezos|founded|blue origin]",
+        "Blue Origin | located_in | Kent, Washington  [edge:blue origin|located_in|kent, washington]",
+        "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+      ],
+      "n_paths_2hop": 1,
+      "paths_2hop": [
+        [
+          "Blue Origin | develops | rockets  [edge:blue origin|develops|rockets]"
+        ]
+      ],
+      "n_paths_3hop_only": 1,
+      "paths_3hop_only": [
+        [
+          "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+          "SpaceX | develops | rockets  [edge:spacex|develops|rockets]"
+        ]
+      ]
+    },
+    {
+      "question": "Why might Gwynne Shotwell be associated with spacecraft?",
+      "start": "Gwynne Shotwell",
+      "goal": "spacecraft",
+      "n_naive": 4,
+      "naive_explanations": [
+        "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+        "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]",
+        "NASA | develops | spacecraft  [edge:nasa|develops|spacecraft]",
+        "Blue Origin | develops | spacecraft  [edge:blue origin|develops|spacecraft]"
+      ],
+      "n_paths_2hop": 1,
+      "paths_2hop": [
+        [
+          "Gwynne Shotwell | leader_of | SpaceX  [edge:gwynne shotwell|leader_of|spacex]",
+          "SpaceX | develops | spacecraft  [edge:spacex|develops|spacecraft]"
+        ]
+      ],
+      "n_paths_3hop_only": 0,
+      "paths_3hop_only": []
+    }
+  ]
+}

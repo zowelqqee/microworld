@@ -1,0 +1,373 @@
+{
+  "summary": {
+    "overlay": "artifacts/compositional_grammar_v1/capability_overlay.json",
+    "n_edges": 276,
+    "n_questions": 13,
+    "decision_counts": {
+      "speculative": 7,
+      "audit": 5,
+      "grounded_deferral": 1
+    }
+  },
+  "cases": [
+    {
+      "question": "What if Elon Musk had not founded SpaceX?",
+      "rule": "counterfactual_removal",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "counterfactual_removal",
+        "premise_evidence_ids": [
+          "edge:elon musk|founded|spacex"
+        ],
+        "premises": [
+          {
+            "subject": "Elon Musk",
+            "predicate": "founded",
+            "object": "SpaceX",
+            "evidence_id": "edge:elon musk|founded|spacex"
+          }
+        ],
+        "conclusion_evidence_ids": [
+          "edge:elon musk|leader_of|spacex",
+          "edge:elon musk|known_for|spacex",
+          "edge:spacex|develops|rockets",
+          "edge:spacex|develops|spacecraft",
+          "edge:spacex|produces|falcon rockets",
+          "edge:spacex|produces|dragon spacecraft",
+          "edge:gwynne shotwell|leader_of|spacex",
+          "edge:spacex|located_in|starbase, texas",
+          "edge:spacex|located_in|el segundo, california"
+        ],
+        "conclusion_facts": [
+          {
+            "subject": "Elon Musk",
+            "predicate": "leader_of",
+            "object": "SpaceX",
+            "evidence_id": "edge:elon musk|leader_of|spacex"
+          },
+          {
+            "subject": "Elon Musk",
+            "predicate": "known_for",
+            "object": "SpaceX",
+            "evidence_id": "edge:elon musk|known_for|spacex"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "develops",
+            "object": "rockets",
+            "evidence_id": "edge:spacex|develops|rockets"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "develops",
+            "object": "spacecraft",
+            "evidence_id": "edge:spacex|develops|spacecraft"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "produces",
+            "object": "Falcon rockets",
+            "evidence_id": "edge:spacex|produces|falcon rockets"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "produces",
+            "object": "Dragon spacecraft",
+            "evidence_id": "edge:spacex|produces|dragon spacecraft"
+          },
+          {
+            "subject": "Gwynne Shotwell",
+            "predicate": "leader_of",
+            "object": "SpaceX",
+            "evidence_id": "edge:gwynne shotwell|leader_of|spacex"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "located_in",
+            "object": "Starbase, Texas",
+            "evidence_id": "edge:spacex|located_in|starbase, texas"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "located_in",
+            "object": "El Segundo, California",
+            "evidence_id": "edge:spacex|located_in|el segundo, california"
+          }
+        ],
+        "bridge_node": null
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known \u2014 that Elon Musk founded SpaceX \u2014 one might reason that, had that not been so, the following would be in question: Elon Musk leader_of SpaceX; Elon Musk known_for SpaceX; SpaceX develops rockets; SpaceX develops spacecraft; SpaceX produces Falcon rockets; SpaceX produces Dragon spacecraft; Gwynne Shotwell leader_of SpaceX; SpaceX located_in Starbase, Texas; SpaceX located_in El Segundo, California. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "What if Jeff Bezos had not founded Blue Origin?",
+      "rule": "counterfactual_removal",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "counterfactual_removal",
+        "premise_evidence_ids": [
+          "edge:jeff bezos|founded|blue origin"
+        ],
+        "premises": [
+          {
+            "subject": "Jeff Bezos",
+            "predicate": "founded",
+            "object": "Blue Origin",
+            "evidence_id": "edge:jeff bezos|founded|blue origin"
+          }
+        ],
+        "conclusion_evidence_ids": [
+          "edge:jeff bezos|leader_of|blue origin",
+          "edge:blue origin|develops|rockets",
+          "edge:blue origin|develops|spacecraft",
+          "edge:blue origin|located_in|kent, washington"
+        ],
+        "conclusion_facts": [
+          {
+            "subject": "Jeff Bezos",
+            "predicate": "leader_of",
+            "object": "Blue Origin",
+            "evidence_id": "edge:jeff bezos|leader_of|blue origin"
+          },
+          {
+            "subject": "Blue Origin",
+            "predicate": "develops",
+            "object": "rockets",
+            "evidence_id": "edge:blue origin|develops|rockets"
+          },
+          {
+            "subject": "Blue Origin",
+            "predicate": "develops",
+            "object": "spacecraft",
+            "evidence_id": "edge:blue origin|develops|spacecraft"
+          },
+          {
+            "subject": "Blue Origin",
+            "predicate": "located_in",
+            "object": "Kent, Washington",
+            "evidence_id": "edge:blue origin|located_in|kent, washington"
+          }
+        ],
+        "bridge_node": null
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known \u2014 that Jeff Bezos founded Blue Origin \u2014 one might reason that, had that not been so, the following would be in question: Jeff Bezos leader_of Blue Origin; Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "What if Elon Musk had not leader_of Tesla?",
+      "rule": "counterfactual_removal",
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "step": null,
+      "audit_reason": "predicate 'leader_of' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "rendered": "I can't responsibly speculate on that: predicate 'leader_of' is not existence-conferring; removing it does not defensibly threaten downstream facts."
+    },
+    {
+      "question": "What if SpaceX had not develops rockets?",
+      "rule": "counterfactual_removal",
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "step": null,
+      "audit_reason": "predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "rendered": "I can't responsibly speculate on that: predicate 'develops' is not existence-conferring; removing it does not defensibly threaten downstream facts."
+    },
+    {
+      "question": "What if Tesla had not produces Electric cars?",
+      "rule": "counterfactual_removal",
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "step": null,
+      "audit_reason": "predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts",
+      "rendered": "I can't responsibly speculate on that: predicate 'produces' is not existence-conferring; removing it does not defensibly threaten downstream facts."
+    },
+    {
+      "question": "Why might Elon Musk be associated with rockets?",
+      "rule": "abduction_path_explanation",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "abduction_path_explanation",
+        "premise_evidence_ids": [
+          "edge:elon musk|founded|spacex",
+          "edge:spacex|develops|rockets"
+        ],
+        "premises": [
+          {
+            "subject": "Elon Musk",
+            "predicate": "founded",
+            "object": "SpaceX",
+            "evidence_id": "edge:elon musk|founded|spacex"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "develops",
+            "object": "rockets",
+            "evidence_id": "edge:spacex|develops|rockets"
+          }
+        ],
+        "conclusion_evidence_ids": [],
+        "conclusion_facts": [],
+        "bridge_node": "SpaceX"
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which develops rockets \u2014 a plausible reason for the association. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "Why might Elon Musk be associated with Electric cars?",
+      "rule": "abduction_path_explanation",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "abduction_path_explanation",
+        "premise_evidence_ids": [
+          "edge:elon musk|leader_of|tesla",
+          "edge:tesla|produces|electric cars"
+        ],
+        "premises": [
+          {
+            "subject": "Elon Musk",
+            "predicate": "leader_of",
+            "object": "Tesla",
+            "evidence_id": "edge:elon musk|leader_of|tesla"
+          },
+          {
+            "subject": "Tesla",
+            "predicate": "produces",
+            "object": "Electric cars",
+            "evidence_id": "edge:tesla|produces|electric cars"
+          }
+        ],
+        "conclusion_evidence_ids": [],
+        "conclusion_facts": [],
+        "bridge_node": "Tesla"
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known, one might reason that Elon Musk leads Tesla, which produces Electric cars \u2014 a plausible reason for the association. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "Why might Jeff Bezos be associated with spacecraft?",
+      "rule": "abduction_path_explanation",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "abduction_path_explanation",
+        "premise_evidence_ids": [
+          "edge:jeff bezos|founded|blue origin",
+          "edge:blue origin|develops|spacecraft"
+        ],
+        "premises": [
+          {
+            "subject": "Jeff Bezos",
+            "predicate": "founded",
+            "object": "Blue Origin",
+            "evidence_id": "edge:jeff bezos|founded|blue origin"
+          },
+          {
+            "subject": "Blue Origin",
+            "predicate": "develops",
+            "object": "spacecraft",
+            "evidence_id": "edge:blue origin|develops|spacecraft"
+          }
+        ],
+        "conclusion_evidence_ids": [],
+        "conclusion_facts": [],
+        "bridge_node": "Blue Origin"
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known, one might reason that Jeff Bezos founded Blue Origin, which develops spacecraft \u2014 a plausible reason for the association. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "Why might Gwynne Shotwell be associated with rockets?",
+      "rule": "abduction_path_explanation",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "abduction_path_explanation",
+        "premise_evidence_ids": [
+          "edge:gwynne shotwell|leader_of|spacex",
+          "edge:spacex|develops|rockets"
+        ],
+        "premises": [
+          {
+            "subject": "Gwynne Shotwell",
+            "predicate": "leader_of",
+            "object": "SpaceX",
+            "evidence_id": "edge:gwynne shotwell|leader_of|spacex"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "develops",
+            "object": "rockets",
+            "evidence_id": "edge:spacex|develops|rockets"
+          }
+        ],
+        "conclusion_evidence_ids": [],
+        "conclusion_facts": [],
+        "bridge_node": "SpaceX"
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known, one might reason that Gwynne Shotwell leads SpaceX, which develops rockets \u2014 a plausible reason for the association. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "Why might Elon Musk be associated with Starbase, Texas?",
+      "rule": "abduction_path_explanation",
+      "decision": "speculative",
+      "support_kind": "speculative_inference",
+      "step": {
+        "rule": "abduction_path_explanation",
+        "premise_evidence_ids": [
+          "edge:elon musk|founded|spacex",
+          "edge:spacex|located_in|starbase, texas"
+        ],
+        "premises": [
+          {
+            "subject": "Elon Musk",
+            "predicate": "founded",
+            "object": "SpaceX",
+            "evidence_id": "edge:elon musk|founded|spacex"
+          },
+          {
+            "subject": "SpaceX",
+            "predicate": "located_in",
+            "object": "Starbase, Texas",
+            "evidence_id": "edge:spacex|located_in|starbase, texas"
+          }
+        ],
+        "conclusion_evidence_ids": [],
+        "conclusion_facts": [],
+        "bridge_node": "SpaceX"
+      },
+      "audit_reason": null,
+      "rendered": "Based on what is known, one might reason that Elon Musk founded SpaceX, which is located in Starbase, Texas \u2014 a plausible reason for the association. (This is a speculative inference, not a stored fact.)"
+    },
+    {
+      "question": "Why might Tesla be associated with rockets?",
+      "rule": "abduction_path_explanation",
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "step": null,
+      "audit_reason": "no 2-hop explanatory bridge; only spurious or no path",
+      "rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path."
+    },
+    {
+      "question": "Why might Elon Musk be associated with Paris?",
+      "rule": "abduction_path_explanation",
+      "decision": "audit",
+      "support_kind": "missing_knowledge",
+      "step": null,
+      "audit_reason": "no 2-hop explanatory bridge; only spurious or no path",
+      "rendered": "I can't responsibly speculate on that: no 2-hop explanatory bridge; only spurious or no path."
+    },
+    {
+      "question": "Why might Blue Origin be associated with rockets?",
+      "rule": "abduction_path_explanation",
+      "decision": "grounded_deferral",
+      "support_kind": "grounded",
+      "step": null,
+      "audit_reason": "a direct grounded fact links these; not a speculation",
+      "rendered": "That is answerable from stored facts, not speculation (a direct grounded fact links these; not a speculation)."
+    }
+  ]
+}
