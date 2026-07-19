@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>worldpgt.schema-expansion-overnight-20jul</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/sh</string>
+    <string>/Users/arseniyabramidze/mini-worldgrad/microworld-runtime/scripts/run_schema_expansion_overnight_20jul.sh</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/arseniyabramidze/mini-worldgrad/microworld-runtime</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>MICROWORLD_WIKI_USER_AGENT</key>
+    <string>MicroWorldHeldoutDensityPump/1.0 (local research; contact: zowel.aep@gmail.com)</string>
+    <key>PYTHON_BIN</key>
+    <string>/Library/Frameworks/Python.framework/Versions/3.13/bin/python3</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>/Users/arseniyabramidze/mini-worldgrad/microworld-runtime/artifacts/schema_expansion_v1/overnight_run_20jul/launcher.log</string>
+  <key>StandardErrorPath</key><string>/Users/arseniyabramidze/mini-worldgrad/microworld-runtime/artifacts/schema_expansion_v1/overnight_run_20jul/launcher.error.log</string>
+</dict>
+</plist>

@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "NASA",
+    "surface_subject": "NASA",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Nature, Freedom, History",
+    "surface_subject": "Nature, Freedom, History",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "NB2Slides",
+    "surface_subject": "NB2Slides",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "NIST",
+    "surface_subject": "NIST",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Nitrogen fertilizer production",
+    "surface_subject": "Nitrogen fertilizer production",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "NOMAD",
+    "surface_subject": "NOMAD",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Noteworthy publications include",
+    "surface_subject": "Noteworthy publications include",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Numerical results are",
+    "surface_subject": "Numerical results are",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Nyzhankivsky",
+    "surface_subject": "Nyzhankivsky",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "O-MAGIC",
+    "surface_subject": "O-MAGIC",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "OCPM",
+    "surface_subject": "OCPM",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "OMat24",
+    "surface_subject": "OMat24",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "One approach",
+    "surface_subject": "One approach",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "One class of tests",
+    "surface_subject": "One class of tests",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "One implementation",
+    "surface_subject": "One implementation",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "One version of the app",
+    "surface_subject": "One version of the app",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "One wave-packet preparation method",
+    "surface_subject": "One wave-packet preparation method",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Online-based",
+    "surface_subject": "Online-based",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "OpenMEE also",
+    "surface_subject": "OpenMEE also",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "OpenSOC-AI",
+    "surface_subject": "OpenSOC-AI",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "OPRF",
+    "surface_subject": "OPRF",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Optical Character Recognition",
+    "surface_subject": "Optical Character Recognition",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Otherwise the paper should",
+    "surface_subject": "Otherwise the paper should",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Over a hundred",
+    "surface_subject": "Over a hundred",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  }
+]

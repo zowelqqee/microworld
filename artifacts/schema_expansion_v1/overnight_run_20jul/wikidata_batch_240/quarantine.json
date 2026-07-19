@@ -1,0 +1,29 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "RGAKFD",
+      "surface_subject": "RGAKFD",
+      "canonical_entity": "Russian State Film and Photo Archive",
+      "canonical_qid": "Q4398058",
+      "predicate": "headquartered_in",
+      "object": "Russia",
+      "object_qid": "Q159",
+      "source_page": "Russian State Film and Photo Archive",
+      "source_url": "https://www.wikidata.org/wiki/Q4398058",
+      "evidence_text": "Wikidata statement P159 for Russian State Film and Photo Archive (Q4398058) identifies Russia (Q159).",
+      "evidence_span": "Wikidata statement P159 for Russian State Film and Photo Archive (Q4398058) identifies Russia (Q159).",
+      "wikidata_property": "P159",
+      "source_kind": "wikidata_api",
+      "open_web_extraction": "wikidata_api_structured_property_v1",
+      "trust": "proposal_wikidata_structured",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "requires_review": true,
+      "safe_for_general_runtime": false,
+      "experimental_tier": "evidence_grounded_wikidata_relation_v1",
+      "canonical_is_additive": true
+    },
+    "reason": "headquarters_subject_or_clause_uncertain"
+  }
+]

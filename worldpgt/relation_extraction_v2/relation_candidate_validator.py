@@ -51,6 +51,10 @@ _NON_PERSON_OBJ_RELATIONS = frozenset({
     "founded", "develops", "manufactures", "produces", "operates",
     "product_of", "service_of", "platform_of", "part_of",
     "headquartered_in", "industry",
+    # Ad-hoc pilot: object is a dataset / method / prior work, not a person.
+    # ("about" is intentionally excluded — "The paper is about Newton" is a
+    # legitimate topic relation with a person object.)
+    "trained_on", "based_on", "extends",
 })
 
 # Maximum subject/object phrase word count — longer captures are usually noise.

@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "Over-parameterization",
+    "surface_subject": "Over-parameterization",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "PBAEG",
+    "surface_subject": "PBAEG",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "PDB2AR",
+    "surface_subject": "PDB2AR",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Phylogenetic evidence strongly",
+    "surface_subject": "Phylogenetic evidence strongly",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "PIPRECIA-S",
+    "surface_subject": "PIPRECIA-S",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "PKE-DET",
+    "surface_subject": "PKE-DET",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Plutarch",
+    "surface_subject": "Plutarch",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Political Science and Political History",
+    "surface_subject": "Political Science and Political History",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Possible Future Impacts of Artificial Intelligence",
+    "surface_subject": "Possible Future Impacts of Artificial Intelligence",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Previous work",
+    "surface_subject": "Previous work",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Privacy-preserving",
+    "surface_subject": "Privacy-preserving",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ProbCT",
+    "surface_subject": "ProbCT",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Processing cellulose into commercial products",
+    "surface_subject": "Processing cellulose into commercial products",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "PyOptInterface",
+    "surface_subject": "PyOptInterface",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Python-based",
+    "surface_subject": "Python-based",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Q-BEAST",
+    "surface_subject": "Q-BEAST",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "QADQN",
+    "surface_subject": "QADQN",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "QAHM",
+    "surface_subject": "QAHM",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "QK-LSTM",
+    "surface_subject": "QK-LSTM",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "QNN-ZTF",
+    "surface_subject": "QNN-ZTF",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Quantum Entanglement and Teleportation",
+    "surface_subject": "Quantum Entanglement and Teleportation",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Quantum Fields and Their Excitations",
+    "surface_subject": "Quantum Fields and Their Excitations",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Quantum neural networks",
+    "surface_subject": "Quantum neural networks",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Quantum Physics",
+    "surface_subject": "Quantum Physics",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  }
+]

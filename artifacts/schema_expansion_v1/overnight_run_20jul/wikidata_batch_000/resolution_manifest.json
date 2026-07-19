@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "ABAC",
+    "surface_subject": "ABAC",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ABSTRACT",
+    "surface_subject": "ABSTRACT",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Ac-Val",
+    "surface_subject": "Ac-Val",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ACCDB",
+    "surface_subject": "ACCDB",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ACCNNR",
+    "surface_subject": "ACCNNR",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ACRN",
+    "surface_subject": "ACRN",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Adaptive training",
+    "surface_subject": "Adaptive training",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AetherWall",
+    "surface_subject": "AetherWall",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Age-standardized",
+    "surface_subject": "Age-standardized",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AI-driven",
+    "surface_subject": "AI-driven",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AI-Mandel",
+    "surface_subject": "AI-Mandel",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AI-powered",
+    "surface_subject": "AI-powered",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AICCE",
+    "surface_subject": "AICCE",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Algebraic circuit complexity",
+    "surface_subject": "Algebraic circuit complexity",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Analysing learner corpora",
+    "surface_subject": "Analysing learner corpora",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Analytic and geometric approach are",
+    "surface_subject": "Analytic and geometric approach are",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Animals and Climate Change",
+    "surface_subject": "Animals and Climate Change",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Another approach",
+    "surface_subject": "Another approach",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ANOVA",
+    "surface_subject": "ANOVA",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Application: Quantum Data Encryption",
+    "surface_subject": "Application: Quantum Data Encryption",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Applying a transdisciplinary approach to pedagogy",
+    "surface_subject": "Applying a transdisciplinary approach to pedagogy",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "AR-in-a-Box",
+    "surface_subject": "AR-in-a-Box",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ARS-W",
+    "surface_subject": "ARS-W",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "artificial intelligence",
+    "surface_subject": "artificial intelligence",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  }
+]

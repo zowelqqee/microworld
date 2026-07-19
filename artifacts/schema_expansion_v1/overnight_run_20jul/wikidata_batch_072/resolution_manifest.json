@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "DABFT",
+    "surface_subject": "DABFT",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DAMBE",
+    "surface_subject": "DAMBE",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DARWIN",
+    "surface_subject": "DARWIN",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Data collection",
+    "surface_subject": "Data collection",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Debiasing group graphical lasso estimates",
+    "surface_subject": "Debiasing group graphical lasso estimates",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Declarative modeling",
+    "surface_subject": "Declarative modeling",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Defining Artificial Intelligence",
+    "surface_subject": "Defining Artificial Intelligence",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DENIM",
+    "surface_subject": "DENIM",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Desai",
+    "surface_subject": "Desai",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Descriptive statistics and logistic regression were",
+    "surface_subject": "Descriptive statistics and logistic regression were",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Detection of a low-energy break",
+    "surface_subject": "Detection of a low-energy break",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Developmental Comparisons in Language Acquisition",
+    "surface_subject": "Developmental Comparisons in Language Acquisition",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DIPL",
+    "surface_subject": "DIPL",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Disaster Economics",
+    "surface_subject": "Disaster Economics",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Disk chemistry also",
+    "surface_subject": "Disk chemistry also",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Disseminating research data in this form",
+    "surface_subject": "Disseminating research data in this form",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "distributed energy resources",
+    "surface_subject": "distributed energy resources",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DL-based",
+    "surface_subject": "DL-based",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DPoEV",
+    "surface_subject": "DPoEV",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DPQA",
+    "surface_subject": "DPQA",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "DSrepair",
+    "surface_subject": "DSrepair",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "E Groups",
+    "surface_subject": "E Groups",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Each side",
+    "surface_subject": "Each side",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Early detection of intrapartum risks",
+    "surface_subject": "Early detection of intrapartum risks",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  }
+]

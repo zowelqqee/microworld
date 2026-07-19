@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "Easy-Edu",
+    "surface_subject": "Easy-Edu",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "EBSU",
+    "surface_subject": "EBSU",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Economic Theory and Economic History",
+    "surface_subject": "Economic Theory and Economic History",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "EDCIM",
+    "surface_subject": "EDCIM",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Education Research Beyond Cyborg Subjectivities",
+    "surface_subject": "Education Research Beyond Cyborg Subjectivities",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "EMBER",
+    "surface_subject": "EMBER",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Energy Drink Consumption Among Papuan Athletes",
+    "surface_subject": "Energy Drink Consumption Among Papuan Athletes",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Epidemiology",
+    "surface_subject": "Epidemiology",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Epilogue",
+    "surface_subject": "Epilogue",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "crossref_promoted_46"
+    ],
+    "qid_resolution_source": "fresh_exact_resolution",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ERCOT-like",
+    "surface_subject": "ERCOT-like",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ESEG",
+    "surface_subject": "ESEG",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "ETCs",
+    "surface_subject": "ETCs",
+    "canonical_qid": "Q604804",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "European Train Control System",
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": "unique_wikidata_alias"
+  },
+  {
+    "subject": "Evaluation",
+    "surface_subject": "Evaluation",
+    "canonical_qid": "Q1379672",
+    "canonical_resolution_status": "resolved_wikidata_alias_or_disambiguated",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": "evaluation",
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": "exact_label_disambiguated_by_p31"
+  },
+  {
+    "subject": "Every economic activity",
+    "surface_subject": "Every economic activity",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Evidence from pathological cases",
+    "surface_subject": "Evidence from pathological cases",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "EVLP",
+    "surface_subject": "EVLP",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Exploring terminology in this way",
+    "surface_subject": "Exploring terminology in this way",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "F1-score",
+    "surface_subject": "F1-score",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Field experimentation",
+    "surface_subject": "Field experimentation",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Finite simulation",
+    "surface_subject": "Finite simulation",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "First",
+    "surface_subject": "First",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Flimmer thus",
+    "surface_subject": "Flimmer thus",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "Fourier-space",
+    "surface_subject": "Fourier-space",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  },
+  {
+    "subject": "FRAME",
+    "surface_subject": "FRAME",
+    "canonical_qid": null,
+    "canonical_resolution_status": "unresolved_after_alias_disambiguation",
+    "cohorts": [
+      "original_331"
+    ],
+    "qid_resolution_source": "existing_exact_resolution_manifest",
+    "canonical_entity": null,
+    "canonical_is_additive": true,
+    "surface_retained": true,
+    "canonical_resolution_method": null
+  }
+]

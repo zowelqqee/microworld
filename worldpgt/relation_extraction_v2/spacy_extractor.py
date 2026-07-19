@@ -78,6 +78,29 @@ _VERB_RELATIONS: dict[str, tuple[str, str, bool]] = {
     "acquire":      ("owned_by",         "owned_by",        True),
     "lead":         ("leader_of",        "leader_of",       False),
     "headquarter":  ("headquartered_in", "headquartered_in", False),
+
+    # ---- Ad-hoc pilot: methodology / citation / topic families -----------
+    # Added the same hardcoded-dict way as the 12 verbs above (NOT via a
+    # declarative YAML engine — see artifacts/grammar_extraction_v1/design.md).
+    # Goal: test whether arXiv text actually contains these relation families
+    # before investing in the generalized system. Verbs whose object arrives
+    # through a preposition ("trained on", "based on", "builds on", "focuses
+    # on") are listed in _PILOT_PREP_VERBS below and routed by a small
+    # prep-object handler that mirrors the existing headquarter prep("in")
+    # case; direct-object verbs (extend / concern / address) ride the existing
+    # active nsubj+dobj path unchanged.
+    "train":        ("trained_on",       "trained_on",      False),  # methodology
+    "fit":          ("trained_on",       "trained_on",      False),  # methodology
+    "calibrate":    ("trained_on",       "trained_on",      False),  # methodology
+    "base":         ("based_on",         "based_on",        False),  # methodology
+    "derive":       ("based_on",         "based_on",        False),  # methodology
+    "adapt":        ("based_on",         "based_on",        False),  # methodology
+    "extend":       ("extends",          "extends",         False),  # citation
+    "build":        ("extends",          "extends",         False),  # citation
+    "improve":      ("extends",          "extends",         False),  # citation
+    "concern":      ("about",            "about",           False),  # topic
+    "address":      ("about",            "about",           False),  # topic
+    "focus":        ("about",            "about",           False),  # topic
 }
 
 # Confidence / stability / risk for spaCy-extracted triples (per relation).
@@ -95,6 +118,27 @@ _RELATION_META: dict[str, tuple[str, str, str]] = {
     "headquartered_in": ("high",   "semi_stable", "low"),
     "leader_of":        ("high",   "volatile",    "high"),
     "is_a":             ("high",   "stable",      "low"),
+    # Ad-hoc pilot predicate metadata.
+    "trained_on":       ("high",   "semi_stable", "low"),
+    "based_on":         ("high",   "semi_stable", "low"),
+    "extends":          ("medium", "semi_stable", "low"),
+    "about":            ("medium", "semi_stable", "low"),
+}
+
+# Ad-hoc pilot verbs whose object is reached through a preposition rather than a
+# direct object or by-agent. Maps lemma -> allowed object prepositions (surface,
+# lowercase). Verbs here have their active direct-object path disabled so
+# "X builds rockets" does not misfire as `extends`; only "X builds on Y" does.
+_PILOT_PREP_VERBS: dict[str, tuple[str, ...]] = {
+    "train":     ("on",),
+    "fit":       ("on", "to"),
+    "calibrate": ("on", "to", "against"),
+    "base":      ("on", "upon"),
+    "derive":    ("from",),
+    "adapt":     ("from", "on", "upon"),
+    "build":     ("on", "upon"),
+    "improve":   ("on", "upon"),
+    "focus":     ("on", "upon"),
 }
 
 # Noun lemmas that indicate a named organisation type (for is_a copula).
@@ -189,6 +233,19 @@ def _conj_chain(token) -> list:
     for child in token.children:
         if child.dep_ == "conj":
             result.extend(_conj_chain(child))
+    return result
+
+
+def _prep_pobjs(verb_token, preps: tuple[str, ...]) -> list:
+    """Return pobj tokens under a prep child of *verb_token* whose surface is in
+    *preps* (coordination expanded). Used by the ad-hoc pilot to reach objects
+    like "trained **on** Y" / "based **on** Y" / "builds **on** Y"."""
+    result: list = []
+    for child in verb_token.children:
+        if child.dep_ == "prep" and child.text.lower() in preps:
+            for grandchild in child.children:
+                if grandchild.dep_ == "pobj":
+                    result.extend(_conj_chain(grandchild))
     return result
 
 
@@ -313,6 +370,12 @@ def _extract_from_spacy_doc(
                                     if pobj.dep_ == "pobj":
                                         agents.append(pobj)
 
+                    # Ad-hoc pilot: "X was trained on Y" / "X is based on Y" —
+                    # the object is a prep pobj, not a by-agent.
+                    pilot_preps = _PILOT_PREP_VERBS.get(lemma)
+                    if pilot_preps and not agents:
+                        agents.extend(_prep_pobjs(token, pilot_preps))
+
                     for nsubjpass in nsubjpass_toks:
                         for subj_tok in _conj_chain(nsubjpass):
                             subj_text = _span_text(subj_tok)
@@ -321,7 +384,9 @@ def _extract_from_spacy_doc(
                                      f"spacy:passive:{lemma}")
 
                 # -- Active + dobj: "Y founded X" (with coordination) ------ #
-                if nsubj_toks and dobj_toks:
+                # Prep-only pilot verbs are excluded so "X builds rockets" does
+                # not misfire as `extends`; they use the prep path just below.
+                if nsubj_toks and dobj_toks and lemma not in _PILOT_PREP_VERBS:
                     for nsubj in nsubj_toks:
                         for dobj in dobj_toks:
                             for subj_tok in _conj_chain(nsubj):
@@ -333,6 +398,18 @@ def _extract_from_spacy_doc(
                                     else:
                                         emit(ns, active_rel, do, f"spacy:active:{lemma}")
 
+                # -- Active + prep object (ad-hoc pilot): "X builds on Y", ---
+                # "X focuses on Y", "X derives from Y".
+                pilot_preps_active = _PILOT_PREP_VERBS.get(lemma)
+                if nsubj_toks and pilot_preps_active:
+                    prep_objs = _prep_pobjs(token, pilot_preps_active)
+                    for nsubj in nsubj_toks:
+                        for subj_tok in _conj_chain(nsubj):
+                            ns = _span_text(subj_tok)
+                            for obj_tok in prep_objs:
+                                emit(ns, active_rel, _span_text(obj_tok),
+                                     f"spacy:active_prep:{lemma}")
+
         # ------------------------------------------------------------------ #
         # Copula patterns (root "be" → leader_of or is_a)
         # ------------------------------------------------------------------ #
@@ -340,8 +417,15 @@ def _extract_from_spacy_doc(
             nsubj_toks = [c for c in token.children if c.dep_ == "nsubj"]
             attr_toks  = [c for c in token.children if c.dep_ == "attr"]
 
+            # Ad-hoc pilot: "X is about Y" (topic) — prep object on the copula.
+            about_objs = _prep_pobjs(token, ("about", "regarding", "concerning"))
+
             for nsubj in nsubj_toks:
                 subj_text = _span_text(nsubj)
+
+                for obj_tok in about_objs:
+                    emit(subj_text, "about", _span_text(obj_tok),
+                         "spacy:copula:about")
 
                 for attr in attr_toks:
                     attr_low = attr.lemma_.lower()

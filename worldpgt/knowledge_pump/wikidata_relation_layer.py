@@ -27,6 +27,22 @@ _PROPERTY_TO_PREDICATE = {
     "P400": "runs_on",           # platform
     "P50": "created_by",         # author
     "P123": "published_by",      # publisher
+    # Schema-expansion v1: reviewed direct entity-valued mappings from the
+    # property audit.  These stay opt-in at the pipeline boundary; adding a
+    # mapping here does not cause an existing runner to fetch new properties.
+    "P1433": "published_in",
+    "P277": "programmed_in",
+    "P1535": "used_by",
+    "P1542": "has_effect",
+    "P1072": "readable_file_format",
+    # Entity-valued mappings retained from the first content-property round.
+    "P138": "wikidata_p138_named_after",
+    "P282": "wikidata_p282_writing_system",
+    "P407": "wikidata_p407_language_of_work_or_name",
+    "P461": "wikidata_p461_opposite_of",
+    "P495": "wikidata_p495_country_of_origin",
+    "P527": "wikidata_p527_has_part_s",
+    "P275": "copyright_license",
 }
 
 # The density recon owns the wider correspondence used to distinguish
@@ -138,6 +154,8 @@ def extract_relation_rows(
                 "evidence_text": evidence,
                 "evidence_span": evidence,
                 "wikidata_property": property_id,
+                "source_kind": "wikidata_api",
+                "open_web_extraction": "wikidata_api_structured_property_v1",
                 "trust": "proposal_wikidata_structured",
                 "risk": "medium",
                 "stability": "semi_stable",

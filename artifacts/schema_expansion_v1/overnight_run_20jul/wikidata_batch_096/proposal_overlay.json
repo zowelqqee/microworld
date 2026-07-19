@@ -1,0 +1,26 @@
+[
+  {
+    "overlay_type": "overlay_relation",
+    "subject": "ETCs",
+    "surface_subject": "ETCs",
+    "canonical_entity": "European Train Control System",
+    "canonical_qid": "Q604804",
+    "predicate": "part_of",
+    "object": "European Rail Traffic Management System",
+    "object_qid": "Q687308",
+    "source_page": "European Train Control System",
+    "source_url": "https://www.wikidata.org/wiki/Q604804",
+    "evidence_text": "Wikidata statement P361 for European Train Control System (Q604804) identifies European Rail Traffic Management System (Q687308).",
+    "evidence_span": "Wikidata statement P361 for European Train Control System (Q604804) identifies European Rail Traffic Management System (Q687308).",
+    "wikidata_property": "P361",
+    "source_kind": "wikidata_api",
+    "open_web_extraction": "wikidata_api_structured_property_v1",
+    "trust": "proposal_wikidata_structured",
+    "risk": "medium",
+    "stability": "semi_stable",
+    "requires_review": true,
+    "safe_for_general_runtime": false,
+    "experimental_tier": "evidence_grounded_wikidata_relation_v1",
+    "canonical_is_additive": true
+  }
+]

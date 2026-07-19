@@ -1,0 +1,29 @@
+[
+  {
+    "item": {
+      "overlay_type": "overlay_relation",
+      "subject": "Risk analysis",
+      "surface_subject": "Risk analysis",
+      "canonical_entity": "risk analysis",
+      "canonical_qid": "Q11679892",
+      "predicate": "has_effect",
+      "object": "risk assessment",
+      "object_qid": "Q1058438",
+      "source_page": "risk analysis",
+      "source_url": "https://www.wikidata.org/wiki/Q11679892",
+      "evidence_text": "Wikidata statement P1542 for risk analysis (Q11679892) identifies risk assessment (Q1058438).",
+      "evidence_span": "Wikidata statement P1542 for risk analysis (Q11679892) identifies risk assessment (Q1058438).",
+      "wikidata_property": "P1542",
+      "source_kind": "wikidata_api",
+      "open_web_extraction": "wikidata_api_structured_property_v1",
+      "trust": "proposal_wikidata_structured",
+      "risk": "medium",
+      "stability": "semi_stable",
+      "requires_review": true,
+      "safe_for_general_runtime": false,
+      "experimental_tier": "evidence_grounded_wikidata_relation_v1",
+      "canonical_is_additive": true
+    },
+    "reason": "generic_relation_bad_subject"
+  }
+]

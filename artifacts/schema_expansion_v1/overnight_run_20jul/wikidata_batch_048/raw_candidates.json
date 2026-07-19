@@ -1,0 +1,26 @@
+[
+  {
+    "overlay_type": "overlay_relation",
+    "subject": "Corneau",
+    "surface_subject": "Corneau",
+    "canonical_entity": "Corneau",
+    "canonical_qid": "Q16855775",
+    "predicate": "wikidata_p282_writing_system",
+    "object": "Latin script",
+    "object_qid": "Q8229",
+    "source_page": "Corneau",
+    "source_url": "https://www.wikidata.org/wiki/Q16855775",
+    "evidence_text": "Wikidata statement P282 for Corneau (Q16855775) identifies Latin script (Q8229).",
+    "evidence_span": "Wikidata statement P282 for Corneau (Q16855775) identifies Latin script (Q8229).",
+    "wikidata_property": "P282",
+    "source_kind": "wikidata_api",
+    "open_web_extraction": "wikidata_api_structured_property_v1",
+    "trust": "proposal_wikidata_structured",
+    "risk": "medium",
+    "stability": "semi_stable",
+    "requires_review": true,
+    "safe_for_general_runtime": false,
+    "experimental_tier": "evidence_grounded_wikidata_relation_v1",
+    "canonical_is_additive": true
+  }
+]

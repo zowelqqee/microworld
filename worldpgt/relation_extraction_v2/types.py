@@ -55,6 +55,11 @@ ALLOWED_SEMI_STABLE_RELATIONS = frozenset({
     "runs_on",
     "supports",
     "variant_of",
+    # Ad-hoc pilot predicate types (methodology / citation / topic families).
+    "trained_on",
+    "based_on",
+    "extends",
+    "about",
 })
 
 ALLOWED_STABLE_RELATIONS = frozenset({
