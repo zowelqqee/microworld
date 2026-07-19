@@ -1,0 +1,653 @@
+{
+  "pattern_A_co_attribution": {
+    "naive_pairs": 382,
+    "filtered_pairs": 363,
+    "filtered_sample": [
+      {
+        "x": "Martin Eberhard",
+        "y": "Marc Tarpenning",
+        "shared_object": "Tesla",
+        "x_pred": "founded",
+        "y_pred": "founded",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Tesla",
+        "y": "Tesla Energy",
+        "shared_object": "Battery storage",
+        "x_pred": "produces",
+        "y_pred": "produces",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "rockets",
+        "x_pred": "develops",
+        "y_pred": "develops",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "SpaceX",
+        "y": "NASA",
+        "shared_object": "spacecraft",
+        "x_pred": "develops",
+        "y_pred": "develops",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "x_pred": "develops",
+        "y_pred": "develops",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "NASA",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "x_pred": "develops",
+        "y_pred": "develops",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "SolarCity",
+        "shared_object": "Solar panels",
+        "x_pred": "produces",
+        "y_pred": "produces",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "xAI",
+        "y": "OpenAI",
+        "shared_object": "large language models",
+        "x_pred": "develops",
+        "y_pred": "develops",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "The Future of International Trade",
+        "shared_object": "Anne O. Krueger",
+        "x_pred": "created_by",
+        "y_pred": "created_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Arts Education Research",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Possible Future Impacts of Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Philosophy of Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "The Future of International Trade",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Introduction to Molecular Biology of RNA",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Nature, Freedom, History",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Quantum Fields and Their Excitations",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Trade Remedies in International Trade",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Disaster Economics",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Education Research Beyond Cyborg Subjectivities",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Climate Change and You",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Defining Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Teacher Education Research",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "The Intellectual History of Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Vocational Education",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Animals and Climate Change",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Application: Quantum Data Encryption",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Climate Change and Agriculture",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Terrorism Economics",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Artificial Intelligence and the Law",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Quantum Physics",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "International Law in National Legal Systems",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Quantum Entanglement and Teleportation",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Epilogue",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "Creativity and Dance Education Research",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "Possible Future Impacts of Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "Philosophy of Artificial Intelligence",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "The Future of International Trade",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "Introduction to Molecular Biology of RNA",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "Nature, Freedom, History",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      },
+      {
+        "x": "Arts Education Research",
+        "y": "Quantum Fields and Their Excitations",
+        "shared_object": "Oxford University Press",
+        "x_pred": "published_by",
+        "y_pred": "published_by",
+        "same_predicate": true,
+        "content_predicate": true
+      }
+    ]
+  },
+  "pattern_B_property_transfer": {
+    "naive_transfers": 886,
+    "sample": [
+      {
+        "x": "Elon Musk",
+        "y": "Martin Eberhard",
+        "shared_object": "Tesla",
+        "transferred_predicate": "known_for",
+        "transferred_object": "co-founding Tesla"
+      },
+      {
+        "x": "Elon Musk",
+        "y": "Marc Tarpenning",
+        "shared_object": "Tesla",
+        "transferred_predicate": "known_for",
+        "transferred_object": "co-founding Tesla"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "leader_of",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "known_for",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "estimated_net_worth",
+        "transferred_object": "US$1.1 trillion"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "Neuralink"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "The Boring Company"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "xAI"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "leader_of",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "known_for",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "estimated_net_worth",
+        "transferred_object": "US$1.1 trillion"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "Neuralink"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "The Boring Company"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "shared_object": "Tesla",
+        "transferred_predicate": "founded",
+        "transferred_object": "xAI"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "leader_of",
+        "transferred_object": "Tesla"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "known_for",
+        "transferred_object": "Tesla"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "estimated_net_worth",
+        "transferred_object": "US$1.1 trillion"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "founded",
+        "transferred_object": "Neuralink"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "founded",
+        "transferred_object": "The Boring Company"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "shared_object": "SpaceX",
+        "transferred_predicate": "founded",
+        "transferred_object": "xAI"
+      },
+      {
+        "x": "Tesla",
+        "y": "Tesla Energy",
+        "shared_object": "Battery storage",
+        "transferred_predicate": "produces",
+        "transferred_object": "Solar panels"
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "Tesla",
+        "shared_object": "Battery storage",
+        "transferred_predicate": "produces",
+        "transferred_object": "Electric cars"
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "Tesla",
+        "shared_object": "Battery storage",
+        "transferred_predicate": "produces",
+        "transferred_object": "battery energy storage"
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "rockets",
+        "transferred_predicate": "located_in",
+        "transferred_object": "Kent, Washington"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "shared_object": "rockets",
+        "transferred_predicate": "produces",
+        "transferred_object": "Falcon rockets"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "shared_object": "rockets",
+        "transferred_predicate": "produces",
+        "transferred_object": "Dragon spacecraft"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "shared_object": "rockets",
+        "transferred_predicate": "located_in",
+        "transferred_object": "Starbase, Texas"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "shared_object": "rockets",
+        "transferred_predicate": "located_in",
+        "transferred_object": "El Segundo, California"
+      },
+      {
+        "x": "SpaceX",
+        "y": "NASA",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "develops",
+        "transferred_object": "launch systems"
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "located_in",
+        "transferred_object": "Kent, Washington"
+      },
+      {
+        "x": "NASA",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "develops",
+        "transferred_object": "rockets"
+      },
+      {
+        "x": "NASA",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "produces",
+        "transferred_object": "Falcon rockets"
+      },
+      {
+        "x": "NASA",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "produces",
+        "transferred_object": "Dragon spacecraft"
+      },
+      {
+        "x": "NASA",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "located_in",
+        "transferred_object": "Starbase, Texas"
+      },
+      {
+        "x": "NASA",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "located_in",
+        "transferred_object": "El Segundo, California"
+      },
+      {
+        "x": "NASA",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "develops",
+        "transferred_object": "rockets"
+      },
+      {
+        "x": "NASA",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "located_in",
+        "transferred_object": "Kent, Washington"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "shared_object": "spacecraft",
+        "transferred_predicate": "produces",
+        "transferred_object": "Falcon rockets"
+      }
+    ]
+  }
+}

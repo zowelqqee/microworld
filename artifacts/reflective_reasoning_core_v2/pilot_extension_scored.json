@@ -1,0 +1,337 @@
+{
+  "pattern_A": {
+    "kinship_pairs_deduped": 29,
+    "distribution_pairs_excluded": 341,
+    "kinship_pairs": [
+      {
+        "x": "Martin Eberhard",
+        "y": "Marc Tarpenning",
+        "shared_object": "Tesla",
+        "predicate": "founded"
+      },
+      {
+        "x": "Tesla",
+        "y": "Tesla Energy",
+        "shared_object": "Battery storage",
+        "predicate": "produces"
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "rockets",
+        "predicate": "develops"
+      },
+      {
+        "x": "SpaceX",
+        "y": "NASA",
+        "shared_object": "spacecraft",
+        "predicate": "develops"
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "predicate": "develops"
+      },
+      {
+        "x": "NASA",
+        "y": "Blue Origin",
+        "shared_object": "spacecraft",
+        "predicate": "develops"
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "SolarCity",
+        "shared_object": "Solar panels",
+        "predicate": "produces"
+      },
+      {
+        "x": "xAI",
+        "y": "OpenAI",
+        "shared_object": "large language models",
+        "predicate": "develops"
+      },
+      {
+        "x": "Trade Remedies",
+        "y": "The Future of International Trade",
+        "shared_object": "Anne O. Krueger",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Possible Future Impacts of Artificial Intelligence",
+        "y": "Philosophy of Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Possible Future Impacts of Artificial Intelligence",
+        "y": "Defining Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Possible Future Impacts of Artificial Intelligence",
+        "y": "The Intellectual History of Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Possible Future Impacts of Artificial Intelligence",
+        "y": "Artificial Intelligence and the Law",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Philosophy of Artificial Intelligence",
+        "y": "Defining Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Philosophy of Artificial Intelligence",
+        "y": "The Intellectual History of Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Philosophy of Artificial Intelligence",
+        "y": "Artificial Intelligence and the Law",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Defining Artificial Intelligence",
+        "y": "The Intellectual History of Artificial Intelligence",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Defining Artificial Intelligence",
+        "y": "Artificial Intelligence and the Law",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "The Intellectual History of Artificial Intelligence",
+        "y": "Artificial Intelligence and the Law",
+        "shared_object": "Jerry Kaplan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Quantum Fields and Their Excitations",
+        "y": "Application: Quantum Data Encryption",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Quantum Fields and Their Excitations",
+        "y": "Quantum Physics",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Quantum Fields and Their Excitations",
+        "y": "Quantum Entanglement and Teleportation",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Application: Quantum Data Encryption",
+        "y": "Quantum Physics",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Application: Quantum Data Encryption",
+        "y": "Quantum Entanglement and Teleportation",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Quantum Physics",
+        "y": "Quantum Entanglement and Teleportation",
+        "shared_object": "Michael G. Raymer",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Epidemiology",
+        "y": "Veterinary Public Health",
+        "shared_object": "Dharmendra Kumar Sinha",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Epidemiology",
+        "y": "Veterinary Public Health",
+        "shared_object": "Dhirendra Kumar Singh",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Epidemiology",
+        "y": "Veterinary Public Health",
+        "shared_object": "Krishna Gopal Narayan",
+        "predicate": "created_by"
+      },
+      {
+        "x": "Disaster Economics",
+        "y": "Terrorism Economics",
+        "shared_object": "Gilles Carbonnier",
+        "predicate": "created_by"
+      }
+    ]
+  },
+  "pattern_B": {
+    "naive_transfers": 886,
+    "sample": [
+      {
+        "x": "Elon Musk",
+        "y": "Martin Eberhard",
+        "transfer": "known_for co-founding Tesla"
+      },
+      {
+        "x": "Elon Musk",
+        "y": "Marc Tarpenning",
+        "transfer": "known_for co-founding Tesla"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "leader_of SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "known_for SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "estimated_net_worth US$1.1 trillion"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "founded SpaceX"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "founded Neuralink"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "founded The Boring Company"
+      },
+      {
+        "x": "Martin Eberhard",
+        "y": "Elon Musk",
+        "transfer": "founded xAI"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "leader_of SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "known_for SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "estimated_net_worth US$1.1 trillion"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "founded SpaceX"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "founded Neuralink"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "founded The Boring Company"
+      },
+      {
+        "x": "Marc Tarpenning",
+        "y": "Elon Musk",
+        "transfer": "founded xAI"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "leader_of Tesla"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "known_for Tesla"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "estimated_net_worth US$1.1 trillion"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "founded Neuralink"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "founded The Boring Company"
+      },
+      {
+        "x": "Gwynne Shotwell",
+        "y": "Elon Musk",
+        "transfer": "founded xAI"
+      },
+      {
+        "x": "Tesla",
+        "y": "Tesla Energy",
+        "transfer": "produces Solar panels"
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "Tesla",
+        "transfer": "produces Electric cars"
+      },
+      {
+        "x": "Tesla Energy",
+        "y": "Tesla",
+        "transfer": "produces battery energy storage"
+      },
+      {
+        "x": "SpaceX",
+        "y": "Blue Origin",
+        "transfer": "located_in Kent, Washington"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "transfer": "produces Falcon rockets"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "transfer": "produces Dragon spacecraft"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "transfer": "located_in Starbase, Texas"
+      },
+      {
+        "x": "Blue Origin",
+        "y": "SpaceX",
+        "transfer": "located_in El Segundo, California"
+      }
+    ]
+  }
+}

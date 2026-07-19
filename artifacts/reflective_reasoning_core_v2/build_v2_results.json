@@ -1,0 +1,357 @@
+{
+  "summary": {
+    "support_kind": "speculative_extended",
+    "n_co_attributions": 29,
+    "note": "speculative_extended — lower confidence; MUST be reported separately from the proven speculative_inference (11/11)."
+  },
+  "rows": [
+    {
+      "x": "Epidemiology",
+      "y": "Veterinary Public Health",
+      "predicate": "created_by",
+      "shared_object": "Krishna Gopal Narayan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:epidemiology|created_by|krishna gopal narayan",
+        "edge:veterinary public health|created_by|krishna gopal narayan"
+      ],
+      "rendered": "Epidemiology and Veterinary Public Health are not directly linked in the verified relations; they are connected here only because both created_by Krishna Gopal Narayan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Epidemiology",
+      "y": "Veterinary Public Health",
+      "predicate": "created_by",
+      "shared_object": "Dhirendra Kumar Singh",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:epidemiology|created_by|dhirendra kumar singh",
+        "edge:veterinary public health|created_by|dhirendra kumar singh"
+      ],
+      "rendered": "Epidemiology and Veterinary Public Health are not directly linked in the verified relations; they are connected here only because both created_by Dhirendra Kumar Singh. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "SpaceX",
+      "y": "NASA",
+      "predicate": "develops",
+      "shared_object": "spacecraft",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:spacex|develops|spacecraft",
+        "edge:nasa|develops|spacecraft"
+      ],
+      "rendered": "SpaceX and NASA are not directly linked in the verified relations; they are connected here only because both develops spacecraft. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "SpaceX",
+      "y": "Blue Origin",
+      "predicate": "develops",
+      "shared_object": "spacecraft",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:spacex|develops|spacecraft",
+        "edge:blue origin|develops|spacecraft"
+      ],
+      "rendered": "SpaceX and Blue Origin are not directly linked in the verified relations; they are connected here only because both develops spacecraft. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "NASA",
+      "y": "Blue Origin",
+      "predicate": "develops",
+      "shared_object": "spacecraft",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:nasa|develops|spacecraft",
+        "edge:blue origin|develops|spacecraft"
+      ],
+      "rendered": "NASA and Blue Origin are not directly linked in the verified relations; they are connected here only because both develops spacecraft. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Quantum Fields and Their Excitations",
+      "y": "Application: Quantum Data Encryption",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:quantum fields and their excitations|created_by|michael g. raymer",
+        "edge:application: quantum data encryption|created_by|michael g. raymer"
+      ],
+      "rendered": "Quantum Fields and Their Excitations and Application: Quantum Data Encryption are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Quantum Fields and Their Excitations",
+      "y": "Quantum Physics",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:quantum fields and their excitations|created_by|michael g. raymer",
+        "edge:quantum physics|created_by|michael g. raymer"
+      ],
+      "rendered": "Quantum Fields and Their Excitations and Quantum Physics are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Quantum Fields and Their Excitations",
+      "y": "Quantum Entanglement and Teleportation",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:quantum fields and their excitations|created_by|michael g. raymer",
+        "edge:quantum entanglement and teleportation|created_by|michael g. raymer"
+      ],
+      "rendered": "Quantum Fields and Their Excitations and Quantum Entanglement and Teleportation are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Application: Quantum Data Encryption",
+      "y": "Quantum Physics",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:application: quantum data encryption|created_by|michael g. raymer",
+        "edge:quantum physics|created_by|michael g. raymer"
+      ],
+      "rendered": "Application: Quantum Data Encryption and Quantum Physics are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Application: Quantum Data Encryption",
+      "y": "Quantum Entanglement and Teleportation",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:application: quantum data encryption|created_by|michael g. raymer",
+        "edge:quantum entanglement and teleportation|created_by|michael g. raymer"
+      ],
+      "rendered": "Application: Quantum Data Encryption and Quantum Entanglement and Teleportation are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Quantum Physics",
+      "y": "Quantum Entanglement and Teleportation",
+      "predicate": "created_by",
+      "shared_object": "Michael G. Raymer",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:quantum physics|created_by|michael g. raymer",
+        "edge:quantum entanglement and teleportation|created_by|michael g. raymer"
+      ],
+      "rendered": "Quantum Physics and Quantum Entanglement and Teleportation are not directly linked in the verified relations; they are connected here only because both created_by Michael G. Raymer. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Tesla Energy",
+      "y": "SolarCity",
+      "predicate": "produces",
+      "shared_object": "Solar panels",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:tesla energy|produces|solar panels",
+        "edge:solarcity|produces|solar panels"
+      ],
+      "rendered": "Tesla Energy and SolarCity are not directly linked in the verified relations; they are connected here only because both produces Solar panels. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Trade Remedies",
+      "y": "The Future of International Trade",
+      "predicate": "created_by",
+      "shared_object": "Anne O. Krueger",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:trade remedies|created_by|anne o. krueger",
+        "edge:the future of international trade|created_by|anne o. krueger"
+      ],
+      "rendered": "Trade Remedies and The Future of International Trade are not directly linked in the verified relations; they are connected here only because both created_by Anne O. Krueger. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Martin Eberhard",
+      "y": "Marc Tarpenning",
+      "predicate": "founded",
+      "shared_object": "Tesla",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:martin eberhard|founded|tesla",
+        "edge:marc tarpenning|founded|tesla"
+      ],
+      "rendered": "Martin Eberhard and Marc Tarpenning are not directly linked in the verified relations; they are connected here only because both founded Tesla. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Tesla",
+      "y": "Tesla Energy",
+      "predicate": "produces",
+      "shared_object": "Battery storage",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:tesla|produces|battery storage",
+        "edge:tesla energy|produces|battery storage"
+      ],
+      "rendered": "Tesla and Tesla Energy are not directly linked in the verified relations; they are connected here only because both produces Battery storage. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "xAI",
+      "y": "OpenAI",
+      "predicate": "develops",
+      "shared_object": "large language models",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:xai|develops|large language models",
+        "edge:openai|develops|large language models"
+      ],
+      "rendered": "xAI and OpenAI are not directly linked in the verified relations; they are connected here only because both develops large language models. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Epidemiology",
+      "y": "Veterinary Public Health",
+      "predicate": "created_by",
+      "shared_object": "Dharmendra Kumar Sinha",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:epidemiology|created_by|dharmendra kumar sinha",
+        "edge:veterinary public health|created_by|dharmendra kumar sinha"
+      ],
+      "rendered": "Epidemiology and Veterinary Public Health are not directly linked in the verified relations; they are connected here only because both created_by Dharmendra Kumar Sinha. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "SpaceX",
+      "y": "Blue Origin",
+      "predicate": "develops",
+      "shared_object": "rockets",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:spacex|develops|rockets",
+        "edge:blue origin|develops|rockets"
+      ],
+      "rendered": "SpaceX and Blue Origin are not directly linked in the verified relations; they are connected here only because both develops rockets. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Possible Future Impacts of Artificial Intelligence",
+      "y": "Philosophy of Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:possible future impacts of artificial intelligence|created_by|jerry kaplan",
+        "edge:philosophy of artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Possible Future Impacts of Artificial Intelligence and Philosophy of Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Possible Future Impacts of Artificial Intelligence",
+      "y": "Defining Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:possible future impacts of artificial intelligence|created_by|jerry kaplan",
+        "edge:defining artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Possible Future Impacts of Artificial Intelligence and Defining Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Possible Future Impacts of Artificial Intelligence",
+      "y": "The Intellectual History of Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:possible future impacts of artificial intelligence|created_by|jerry kaplan",
+        "edge:the intellectual history of artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Possible Future Impacts of Artificial Intelligence and The Intellectual History of Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Possible Future Impacts of Artificial Intelligence",
+      "y": "Artificial Intelligence and the Law",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:possible future impacts of artificial intelligence|created_by|jerry kaplan",
+        "edge:artificial intelligence and the law|created_by|jerry kaplan"
+      ],
+      "rendered": "Possible Future Impacts of Artificial Intelligence and Artificial Intelligence and the Law are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Philosophy of Artificial Intelligence",
+      "y": "Defining Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:philosophy of artificial intelligence|created_by|jerry kaplan",
+        "edge:defining artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Philosophy of Artificial Intelligence and Defining Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Philosophy of Artificial Intelligence",
+      "y": "The Intellectual History of Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:philosophy of artificial intelligence|created_by|jerry kaplan",
+        "edge:the intellectual history of artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Philosophy of Artificial Intelligence and The Intellectual History of Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Philosophy of Artificial Intelligence",
+      "y": "Artificial Intelligence and the Law",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:philosophy of artificial intelligence|created_by|jerry kaplan",
+        "edge:artificial intelligence and the law|created_by|jerry kaplan"
+      ],
+      "rendered": "Philosophy of Artificial Intelligence and Artificial Intelligence and the Law are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Defining Artificial Intelligence",
+      "y": "The Intellectual History of Artificial Intelligence",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:defining artificial intelligence|created_by|jerry kaplan",
+        "edge:the intellectual history of artificial intelligence|created_by|jerry kaplan"
+      ],
+      "rendered": "Defining Artificial Intelligence and The Intellectual History of Artificial Intelligence are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Defining Artificial Intelligence",
+      "y": "Artificial Intelligence and the Law",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:defining artificial intelligence|created_by|jerry kaplan",
+        "edge:artificial intelligence and the law|created_by|jerry kaplan"
+      ],
+      "rendered": "Defining Artificial Intelligence and Artificial Intelligence and the Law are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "The Intellectual History of Artificial Intelligence",
+      "y": "Artificial Intelligence and the Law",
+      "predicate": "created_by",
+      "shared_object": "Jerry Kaplan",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:the intellectual history of artificial intelligence|created_by|jerry kaplan",
+        "edge:artificial intelligence and the law|created_by|jerry kaplan"
+      ],
+      "rendered": "The Intellectual History of Artificial Intelligence and Artificial Intelligence and the Law are not directly linked in the verified relations; they are connected here only because both created_by Jerry Kaplan. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    },
+    {
+      "x": "Disaster Economics",
+      "y": "Terrorism Economics",
+      "predicate": "created_by",
+      "shared_object": "Gilles Carbonnier",
+      "support_kind": "speculative_extended",
+      "premise_ids": [
+        "edge:disaster economics|created_by|gilles carbonnier",
+        "edge:terrorism economics|created_by|gilles carbonnier"
+      ],
+      "rendered": "Disaster Economics and Terrorism Economics are not directly linked in the verified relations; they are connected here only because both created_by Gilles Carbonnier. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact."
+    }
+  ]
+}
