@@ -56,6 +56,10 @@ from worldpgt.entity_qa.semantic_speech_planner import build_speech_plan
 from worldpgt.entity_qa.symbolic_text_generator import generate_text_with_selection_trace
 from worldpgt.entity_qa.types import SemanticQuery
 from worldpgt.relation_extraction_v2.entity_surface_index import EntitySurfaceIndex
+from worldpgt.reasoning.integrated_answer_router import (
+    IntegratedAnswer,
+    IntegratedAnswerRouter,
+)
 
 
 @dataclass(frozen=True)
@@ -91,6 +95,7 @@ class CognitiveAnswerSession:
         *,
         orchestrator: AnswerOrchestrator | None = None,
         surface_index: EntitySurfaceIndex | None = None,
+        integrated_router: IntegratedAnswerRouter | None = None,
     ) -> None:
         self.overlay_mode = (
             OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
@@ -107,8 +112,21 @@ class CognitiveAnswerSession:
             overlay_mode,
             overlay_path,
         )
+        # This is the production dispatch seam.  It performs its own unchanged
+        # hard-safety screen before considering non-QA branches.  QA results
+        # below still use the established local path so its session reasoning
+        # and presentation behavior remain byte-for-byte unchanged.
+        self.integrated_router = integrated_router or IntegratedAnswerRouter(
+            overlay_mode,
+            overlay_path=overlay_path,
+        )
 
-    def ask(self, question: str) -> CognitiveAnswerResult:
+    def ask(
+        self,
+        question: str,
+        *,
+        force_branch: str | None = None,
+    ) -> CognitiveAnswerResult:
         """Answer one turn, using transient session state when appropriate."""
 
         memory_result = self._answer_task_memory_command(question)
@@ -127,6 +145,25 @@ class CognitiveAnswerSession:
         )
         effective_question = followup.resolved_question
         semantic_query = parse_semantic_query(effective_question, self._surface_index)
+
+        integrated = self.integrated_router.answer(
+            effective_question,
+            force_branch=force_branch,
+        )
+
+        # Keep the established QA/session path intact, including its cognitive
+        # traces and text selection.  Every non-QA branch is already completely
+        # rendered and labelled by IntegratedAnswerRouter, so it must not be
+        # passed through the QA planner afterwards.
+        if integrated.branch not in {"qa", "qa_safety"}:
+            return self._complete_integrated_turn(
+                question=question,
+                effective_question=effective_question,
+                semantic_query=semantic_query,
+                integrated=integrated,
+                resolution=resolution,
+                followup=followup,
+            )
 
         session_plan = self.cognitive_session.continue_turn(effective_question)
         if _can_answer_from_session(session_plan):
@@ -202,6 +239,54 @@ class CognitiveAnswerSession:
             resolved_references=_resolved_references(resolution),
             followup_rewrite=followup,
             needs_new_reasoning=session_plan.needs_new_reasoning,
+        )
+
+    def _complete_integrated_turn(
+        self,
+        *,
+        question: str,
+        effective_question: str,
+        semantic_query: SemanticQuery,
+        integrated: IntegratedAnswer,
+        resolution: CoreferenceResolution,
+        followup: FollowupRewrite,
+    ) -> CognitiveAnswerResult:
+        """Persist a non-QA dispatch without routing its rendered text back
+        through the factual planner.  The lightweight AssistantAnswer keeps the
+        existing dialogue and task-memory protocols uniform."""
+        assistant_answer = AssistantAnswer(
+            question=effective_question,
+            decision="audit" if integrated.decision == "audit" else "answer",
+            route=integrated.branch,
+            answer_text=integrated.answer_text,
+            overlay_mode=self.overlay_mode,
+            supported_by_context=integrated.support_kind in {"grounded", "grounded_generation"},
+            support_kind=integrated.support_kind,  # runtime contract is broader than legacy Literal
+            source_system="integrated_branch_router",
+        )
+        self._record_dialogue_turn(
+            question=question,
+            semantic_query=semantic_query,
+            answer=assistant_answer,
+        )
+        self.task_memory.record_reasoned_answer(
+            question=effective_question,
+            answer_text=assistant_answer.answer_text,
+            trace=None,
+            selection_trace=None,
+        )
+        return CognitiveAnswerResult(
+            question=question,
+            effective_question=effective_question,
+            decision=assistant_answer.decision,
+            answer_text=assistant_answer.answer_text,
+            source_system=assistant_answer.source_system,
+            support_kind=integrated.support_kind,
+            answer=assistant_answer,
+            task_memory_snapshot=self.task_memory.snapshot(),
+            resolved_references=_resolved_references(resolution),
+            followup_rewrite=followup,
+            needs_new_reasoning=True,
         )
 
     def _answer_task_memory_command(self, question: str) -> CognitiveAnswerResult | None:

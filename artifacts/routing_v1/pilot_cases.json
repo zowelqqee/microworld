@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "purpose": "Router gate pilot. gold = intended branch (hand-labelled before running). boundary describes which pair of branches the case sits between; 'clear' = unambiguous sanity check.",
+    "branches": ["qa", "reflective", "constrained_creative", "pure_creative"]
+  },
+  "cases": [
+    {"q": "Who founded Blue Origin?", "gold": "qa", "boundary": "clear"},
+    {"q": "Where is SpaceX headquartered?", "gold": "qa", "boundary": "clear"},
+    {"q": "What does Tesla produce?", "gold": "qa", "boundary": "clear"},
+    {"q": "Who developed the Falcon 9 rocket?", "gold": "qa", "boundary": "clear"},
+    {"q": "Which company owns Louis Vuitton?", "gold": "qa", "boundary": "clear"},
+    {"q": "What if Elon Musk had not founded SpaceX?", "gold": "reflective", "boundary": "clear"},
+    {"q": "Why might Gwynne Shotwell be associated with rockets?", "gold": "reflective", "boundary": "clear"},
+    {"q": "What would happen if Tesla had never made electric cars?", "gold": "reflective", "boundary": "clear"},
+    {"q": "Suppose Blue Origin had never been created, what then?", "gold": "reflective", "boundary": "clear"},
+    {"q": "How might SpaceX and Blue Origin be related?", "gold": "reflective", "boundary": "clear"},
+    {"q": "Write a short piece about SpaceX using only these facts: founded in 2002; develops rockets", "gold": "constrained_creative", "boundary": "clear"},
+    {"q": "Compose a paragraph about Tesla using exactly these facts", "gold": "constrained_creative", "boundary": "clear"},
+    {"q": "Using only these facts, write about Neuralink", "gold": "constrained_creative", "boundary": "clear"},
+    {"q": "Write about Blue Origin staying strictly within these facts", "gold": "constrained_creative", "boundary": "clear"},
+    {"q": "Compose a poem about rockets", "gold": "pure_creative", "boundary": "clear"},
+    {"q": "Write a story about a rocket", "gold": "pure_creative", "boundary": "clear"},
+    {"q": "Write a poem about autumn leaves", "gold": "pure_creative", "boundary": "clear"},
+    {"q": "Invent a short imaginative tale about the stars", "gold": "pure_creative", "boundary": "clear"},
+
+    {"q": "Why is SpaceX known for rockets?", "gold": "qa", "boundary": "qa_vs_reflective"},
+    {"q": "Why did Elon Musk found SpaceX?", "gold": "qa", "boundary": "qa_vs_reflective"},
+    {"q": "What made Tesla successful?", "gold": "qa", "boundary": "qa_vs_reflective"},
+    {"q": "Why might a company move its headquarters?", "gold": "reflective", "boundary": "qa_vs_reflective"},
+    {"q": "What could explain the link between Musk and Neuralink?", "gold": "reflective", "boundary": "qa_vs_reflective"},
+    {"q": "What would SpaceX be without its founder?", "gold": "reflective", "boundary": "qa_vs_reflective"},
+
+    {"q": "Write a creative poem about SpaceX inspired by its real history", "gold": "pure_creative", "boundary": "constrained_vs_pure"},
+    {"q": "Write a factual poem about Tesla using only these facts", "gold": "constrained_creative", "boundary": "constrained_vs_pure"},
+    {"q": "Compose an imaginative piece about Blue Origin", "gold": "pure_creative", "boundary": "constrained_vs_pure"},
+    {"q": "Write a grounded description of Neuralink from just these facts", "gold": "constrained_creative", "boundary": "constrained_vs_pure"},
+    {"q": "Tell a short story about a rocket company like SpaceX", "gold": "pure_creative", "boundary": "constrained_vs_pure"},
+
+    {"q": "Tell me about SpaceX", "gold": "qa", "boundary": "underspecified_default"},
+    {"q": "SpaceX", "gold": "qa", "boundary": "underspecified_default"}
+  ]
+}

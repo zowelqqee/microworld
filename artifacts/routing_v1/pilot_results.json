@@ -1,0 +1,482 @@
+{
+  "default_summary": {
+    "threshold": 0.85,
+    "margin": 0.04,
+    "n_total": 31,
+    "overall_misroute_pct": 16.1,
+    "clear_misroute_pct": 11.1,
+    "ambiguous_misroute_pct": 23.1,
+    "by_boundary": {
+      "clear": {
+        "n": 18,
+        "wrong": 2,
+        "misroute_pct": 11.1
+      },
+      "qa_vs_reflective": {
+        "n": 6,
+        "wrong": 2,
+        "misroute_pct": 33.3
+      },
+      "constrained_vs_pure": {
+        "n": 5,
+        "wrong": 1,
+        "misroute_pct": 20.0
+      },
+      "underspecified_default": {
+        "n": 2,
+        "wrong": 0,
+        "misroute_pct": 0.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "q": "Who founded Blue Origin?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.848,
+      "margin": 0.074,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Where is SpaceX headquartered?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "centroid",
+      "similarity": 0.854,
+      "margin": 0.129,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up reflective"
+    },
+    {
+      "q": "What does Tesla produce?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.864,
+      "margin": 0.005,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Who developed the Falcon 9 rocket?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.839,
+      "margin": 0.077,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Which company owns Louis Vuitton?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.783,
+      "margin": 0.105,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "What if Elon Musk had not founded SpaceX?",
+      "gold": "reflective",
+      "routed": "reflective",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "Why might Gwynne Shotwell be associated with rockets?",
+      "gold": "reflective",
+      "routed": "reflective",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "What would happen if Tesla had never made electric cars?",
+      "gold": "reflective",
+      "routed": "reflective",
+      "method": "centroid",
+      "similarity": 0.946,
+      "margin": 0.054,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up qa"
+    },
+    {
+      "q": "Suppose Blue Origin had never been created, what then?",
+      "gold": "reflective",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.947,
+      "margin": 0.037,
+      "correct": false,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "How might SpaceX and Blue Origin be related?",
+      "gold": "reflective",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.945,
+      "margin": 0.026,
+      "correct": false,
+      "boundary": "clear",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Write a short piece about SpaceX using only these facts: founded in 2002; develops rockets",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "Compose a paragraph about Tesla using exactly these facts",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "Using only these facts, write about Neuralink",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "Write about Blue Origin staying strictly within these facts",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "centroid",
+      "similarity": 0.956,
+      "margin": 0.072,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up reflective"
+    },
+    {
+      "q": "Compose a poem about rockets",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.878,
+      "margin": 0.149,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Write a story about a rocket",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.932,
+      "margin": 0.075,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Write a poem about autumn leaves",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.906,
+      "margin": 0.097,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Invent a short imaginative tale about the stars",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.895,
+      "margin": 0.107,
+      "correct": true,
+      "boundary": "clear",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Why is SpaceX known for rockets?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.915,
+      "margin": 0.027,
+      "correct": true,
+      "boundary": "qa_vs_reflective",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Why did Elon Musk found SpaceX?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.724,
+      "margin": 0.011,
+      "correct": true,
+      "boundary": "qa_vs_reflective",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "What made Tesla successful?",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.882,
+      "margin": 0.002,
+      "correct": true,
+      "boundary": "qa_vs_reflective",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Why might a company move its headquarters?",
+      "gold": "reflective",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.925,
+      "margin": 0.024,
+      "correct": false,
+      "boundary": "qa_vs_reflective",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "What could explain the link between Musk and Neuralink?",
+      "gold": "reflective",
+      "routed": "reflective",
+      "method": "centroid",
+      "similarity": 0.943,
+      "margin": 0.05,
+      "correct": true,
+      "boundary": "qa_vs_reflective",
+      "detail": "runner-up qa"
+    },
+    {
+      "q": "What would SpaceX be without its founder?",
+      "gold": "reflective",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.95,
+      "margin": 0.021,
+      "correct": false,
+      "boundary": "qa_vs_reflective",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Write a creative poem about SpaceX inspired by its real history",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.942,
+      "margin": 0.061,
+      "correct": true,
+      "boundary": "constrained_vs_pure",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Write a factual poem about Tesla using only these facts",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "fast_path",
+      "similarity": 1.0,
+      "margin": 1.0,
+      "correct": true,
+      "boundary": "constrained_vs_pure",
+      "detail": "explicit marker"
+    },
+    {
+      "q": "Compose an imaginative piece about Blue Origin",
+      "gold": "pure_creative",
+      "routed": "pure_creative",
+      "method": "centroid",
+      "similarity": 0.907,
+      "margin": 0.075,
+      "correct": true,
+      "boundary": "constrained_vs_pure",
+      "detail": "runner-up constrained_creative"
+    },
+    {
+      "q": "Write a grounded description of Neuralink from just these facts",
+      "gold": "constrained_creative",
+      "routed": "constrained_creative",
+      "method": "centroid",
+      "similarity": 0.964,
+      "margin": 0.061,
+      "correct": true,
+      "boundary": "constrained_vs_pure",
+      "detail": "runner-up pure_creative"
+    },
+    {
+      "q": "Tell a short story about a rocket company like SpaceX",
+      "gold": "pure_creative",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.902,
+      "margin": 0.004,
+      "correct": false,
+      "boundary": "constrained_vs_pure",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "Tell me about SpaceX",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.795,
+      "margin": 0.0,
+      "correct": true,
+      "boundary": "underspecified_default",
+      "detail": "below threshold/margin"
+    },
+    {
+      "q": "SpaceX",
+      "gold": "qa",
+      "routed": "qa",
+      "method": "default_qa",
+      "similarity": 0.112,
+      "margin": 0.123,
+      "correct": true,
+      "boundary": "underspecified_default",
+      "detail": "below threshold/margin"
+    }
+  ],
+  "calibration_sweep": [
+    {
+      "threshold": 0.8,
+      "margin": 0.02,
+      "overall": 3.2,
+      "clear": 0.0,
+      "ambiguous": 7.7
+    },
+    {
+      "threshold": 0.8,
+      "margin": 0.03,
+      "overall": 12.9,
+      "clear": 5.6,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.8,
+      "margin": 0.04,
+      "overall": 16.1,
+      "clear": 11.1,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.8,
+      "margin": 0.05,
+      "overall": 16.1,
+      "clear": 11.1,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.8,
+      "margin": 0.06,
+      "overall": 22.6,
+      "clear": 16.7,
+      "ambiguous": 30.8
+    },
+    {
+      "threshold": 0.85,
+      "margin": 0.02,
+      "overall": 3.2,
+      "clear": 0.0,
+      "ambiguous": 7.7
+    },
+    {
+      "threshold": 0.85,
+      "margin": 0.03,
+      "overall": 12.9,
+      "clear": 5.6,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.85,
+      "margin": 0.04,
+      "overall": 16.1,
+      "clear": 11.1,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.85,
+      "margin": 0.05,
+      "overall": 16.1,
+      "clear": 11.1,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.85,
+      "margin": 0.06,
+      "overall": 22.6,
+      "clear": 16.7,
+      "ambiguous": 30.8
+    },
+    {
+      "threshold": 0.88,
+      "margin": 0.02,
+      "overall": 6.5,
+      "clear": 5.6,
+      "ambiguous": 7.7
+    },
+    {
+      "threshold": 0.88,
+      "margin": 0.03,
+      "overall": 16.1,
+      "clear": 11.1,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.88,
+      "margin": 0.04,
+      "overall": 19.4,
+      "clear": 16.7,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.88,
+      "margin": 0.05,
+      "overall": 19.4,
+      "clear": 16.7,
+      "ambiguous": 23.1
+    },
+    {
+      "threshold": 0.88,
+      "margin": 0.06,
+      "overall": 25.8,
+      "clear": 22.2,
+      "ambiguous": 30.8
+    }
+  ]
+}

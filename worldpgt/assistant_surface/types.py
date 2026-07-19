@@ -59,6 +59,11 @@ SupportKind = Literal[
     "audit_blocked_context",
     "missing_knowledge",
     "creative_generated",
+    "grounded",
+    "grounded_generation",
+    "speculative_inference",
+    "speculative_extended",
+    "audit",
     "unsupported",
 ]
 
@@ -76,6 +81,12 @@ ALLOWED_SUPPORT_KINDS = frozenset(
         "web_search_result",
         "audit_blocked_context",
         "missing_knowledge",
+        "creative_generated",
+        "grounded",
+        "grounded_generation",
+        "speculative_inference",
+        "speculative_extended",
+        "audit",
         "unsupported",
     }
 )

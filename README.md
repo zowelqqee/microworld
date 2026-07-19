@@ -699,6 +699,36 @@ python3 -m worldpgt.api.server --overlay pump-dry-run --port 8000
 # open http://localhost:8000
 ```
 
+### Integrated branch demo
+
+The web UI includes a **Branch demo** control. Turn it on and use the five
+chips to show grounded QA, verified reflective inference, lower-confidence
+extended reflection, constrained generation, and pure creative generation.
+Every answer card exposes the chosen branch and `support_kind`; extended
+reflection also renders its caution visibly. The demo runs locally through
+`POST /showcase/answer`, while the existing `/ask` API contract remains
+unchanged.
+
+### Integrated routing and controlled-generation results (v1)
+
+The integrated `CognitiveAnswerSession` keeps the existing hard-safety screen
+first, then dispatches to QA, verified reflection, extended reflection,
+constrained generation, or pure creative generation. Its 45-question,
+shuffled realistic-flow check recorded **2/45 routing misses (4.4%)**; both
+were conservative QA fallbacks for activity counterfactuals outside the proven
+founding/existence rule. This is a local N=45 integration check, not a claim of
+production validation at scale.
+
+| Branch | Evidence/status | Scope guard |
+|---|---|---|
+| QA | proven held-out path; direct wrapper leaves QA renderer unchanged | bounded overlay only |
+| Constrained creative | built and tested: inclusion 1.00, hallucination 0.00; Qwen baseline 0.691 / 0.496 | fluency was not measured; qualitative reading favours Qwen |
+| Reflective inference | proven narrow rules: 11/11 defensible admitted cases; Qwen A/B clean on 6/11 | construction-time labelled speculation, not causal world modelling |
+| Reflective extended | built and tested: 29/29 co-attribution pairs defensible as weak associations | explicitly lower-confidence `speculative_extended` |
+| Router | built and tested: 4.4% realistic-flow misrouting | N=45, one small overlay |
+| Informed reflection | honest stop: 84.4% stress-set classification, below 90% gate | surface markers cannot recover factual/speculative scope |
+| Property transfer | honest stop: ~0/15 sampled transfers defensible | the inference form, not candidate filtering, is unsound |
+
 Focused speech/reasoning benchmark:
 
 ```bash

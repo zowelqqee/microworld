@@ -1,0 +1,153 @@
+{
+  "summary": {
+    "n": 9,
+    "case_range": [
+      0,
+      9
+    ],
+    "total_available_cases": 45,
+    "misroute_pct": 11.1,
+    "n_misrouted": 1,
+    "misrouted": [
+      {
+        "q": "What if Tesla had never made electric cars?",
+        "gold_branch": "reflective",
+        "out_branch": "qa",
+        "route_method": "centroid->qa_fallback",
+        "confidence_level": "audit",
+        "fail_safe_to_qa": true
+      }
+    ],
+    "confidence_level_distribution": {
+      "grounded": 2,
+      "audit": 3,
+      "creative_generated": 2,
+      "grounded_generation": 1,
+      "speculative_extended": 1
+    },
+    "route_method_distribution": {
+      "default_qa": 2,
+      "fast_path": 2,
+      "intent+router": 2,
+      "centroid->qa_fallback": 2,
+      "centroid": 1
+    },
+    "branch_distribution": {
+      "qa": 4,
+      "reflective": 1,
+      "pure_creative": 2,
+      "constrained_creative": 1,
+      "reflective_extended": 1
+    }
+  },
+  "rows": [
+    {
+      "q": "Who founded Blue Origin?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Blue Origin was founded by Jeff Bezos.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What if SpaceX had not been founded?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective",
+      "route_method": "fast_path",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "I can't responsibly speculate on that: focal fact is not in the evidence slice.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Compose a poem about rockets",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "intent+router",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What does NASA develop?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "centroid->qa_fallback",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "NASA develops spacecraft and launch systems.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Write about SpaceX using only these facts",
+      "gold_branch": "constrained_creative",
+      "out_branch": "constrained_creative",
+      "route_method": "fast_path",
+      "confidence_level": "grounded_generation",
+      "support_kind": "grounded_generation",
+      "decision": "answer",
+      "answer_text": "SpaceX develops rockets. In addition, it develops spacecraft. Beyond that, SpaceX produces Falcon rockets.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Why might SpaceX and Blue Origin be related?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective_extended",
+      "route_method": "centroid",
+      "confidence_level": "speculative_extended",
+      "support_kind": "speculative_extended",
+      "decision": "answer",
+      "answer_text": "SpaceX and Blue Origin are not directly linked in the verified relations; they are connected here only because both develops rockets. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact.",
+      "caution": "lower-confidence: shared-attribute association, not a verified inference",
+      "correct": true
+    },
+    {
+      "q": "Where is Tesla located?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Write a story about a rocket launch",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "intent+router",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What if Tesla had never made electric cars?",
+      "gold_branch": "reflective",
+      "out_branch": "qa",
+      "route_method": "centroid->qa_fallback",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "caution": null,
+      "correct": false
+    }
+  ]
+}

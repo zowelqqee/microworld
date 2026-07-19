@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "n": 9,
+    "case_range": [
+      9,
+      18
+    ],
+    "total_available_cases": 45,
+    "misroute_pct": 0.0,
+    "n_misrouted": 0,
+    "misrouted": [],
+    "confidence_level_distribution": {
+      "grounded": 3,
+      "speculative_verified": 2,
+      "grounded_generation": 1,
+      "creative_generated": 2,
+      "audit": 1
+    },
+    "route_method_distribution": {
+      "default_qa": 3,
+      "fast_path": 3,
+      "centroid->qa_fallback": 1,
+      "intent+router": 1,
+      "centroid->rule_fallback": 1
+    },
+    "branch_distribution": {
+      "qa": 4,
+      "reflective": 2,
+      "constrained_creative": 1,
+      "pure_creative": 2
+    }
+  },
+  "rows": [
+    {
+      "q": "Who leads SpaceX?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Elon Musk and Gwynne Shotwell are linked to SpaceX through leadership.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Why might Elon Musk be associated with rockets?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective",
+      "route_method": "fast_path",
+      "confidence_level": "speculative_verified",
+      "support_kind": "speculative_inference",
+      "decision": "answer",
+      "answer_text": "Based on what is known, one might reason that Elon Musk founded SpaceX, which develops rockets — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What does Neuralink develop?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "centroid->qa_fallback",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Neuralink develops brain-computer interfaces.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Compose a paragraph about Tesla using exactly these facts",
+      "gold_branch": "constrained_creative",
+      "out_branch": "constrained_creative",
+      "route_method": "fast_path",
+      "confidence_level": "grounded_generation",
+      "support_kind": "grounded_generation",
+      "decision": "answer",
+      "answer_text": "Tesla produces electric cars. In addition, it produces battery energy storage. Beyond that, Tesla produces Battery storage.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Write a poem about the night sky",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "intent+router",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Who owns Louis Vuitton?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What would Blue Origin be without Jeff Bezos?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective",
+      "route_method": "centroid->rule_fallback",
+      "confidence_level": "speculative_verified",
+      "support_kind": "speculative_inference",
+      "decision": "answer",
+      "answer_text": "Based on what is known — that Jeff Bezos founded Blue Origin — one might reason that, had that not been so, the following would be in question: Jeff Bezos leader_of Blue Origin; Blue Origin develops rockets; Blue Origin develops spacecraft; Blue Origin located_in Kent, Washington. (This is a speculative inference, not a stored fact.)",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What does Tesla produce?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Tesla produces electric cars, battery energy storage, Electric cars, and Battery storage.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Write an imaginative tale about Mars",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "fast_path",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    }
+  ]
+}

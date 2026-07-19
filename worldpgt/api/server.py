@@ -26,6 +26,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from worldpgt.assistant_surface.answer_orchestrator import AnswerOrchestrator
+from worldpgt.reasoning.integrated_answer_router import IntegratedAnswerRouter
 from worldpgt.assistant_surface.context_selector import resolve_overlay
 from worldpgt.assistant_surface.perf_timing import step as _timed_step
 from worldpgt.assistant_surface.think_aloud import (
@@ -105,6 +106,7 @@ _STATIC_DIR = Path(__file__).parent / "static"
 
 # Module-level state — set once in _startup().
 _orchestrator: AnswerOrchestrator | None = None
+_integrated_answer_router: IntegratedAnswerRouter | None = None
 _surface_index: EntitySurfaceIndex | None = None
 _overlay_items: list[dict] = []
 _overlay_mode: str = "pump-dry-run"
@@ -175,6 +177,23 @@ class AskResponse(BaseModel):
     answer_plan: Optional[dict] = None
 
 
+class ShowcaseRequest(BaseModel):
+    """Presentation endpoint for the integrated multi-branch answer flow."""
+    question: str
+    force_branch: Optional[str] = None
+
+
+class ShowcaseResponse(BaseModel):
+    answer: str
+    branch: str
+    route_method: str
+    support: str
+    confidence_level: str
+    decision: str
+    caution: Optional[str] = None
+    detail: dict = {}
+
+
 # --------------------------------------------------------------------------- #
 # Endpoints
 # --------------------------------------------------------------------------- #
@@ -210,6 +229,28 @@ def health() -> dict:
             "factual_support_allowed": False,
         },
     }
+
+
+@app.post("/showcase/answer", response_model=ShowcaseResponse)
+def showcase_answer(req: ShowcaseRequest) -> ShowcaseResponse:
+    """Run the production integrated dispatch with inspectable branch labels.
+
+    This remains separate from ``/ask`` so the established API's optional web,
+    dialogue and research extensions keep their exact existing contract.
+    """
+    _ensure_cache_fresh()
+    router = _get_integrated_answer_router()
+    answer = router.answer(req.question, force_branch=req.force_branch)
+    return ShowcaseResponse(
+        answer=answer.answer_text,
+        branch=answer.branch,
+        route_method=answer.route_method,
+        support=answer.support_kind,
+        confidence_level=answer.confidence_level,
+        decision=answer.decision,
+        caution=answer.caution,
+        detail=answer.detail,
+    )
 
 
 @app.post("/ask", response_model=AskResponse)
@@ -1063,7 +1104,7 @@ def _startup(
     experimental_graph_paths: Iterable[str | Path] | None = None,
     warm_phrase_graph_on_startup: bool = True,
 ) -> None:
-    global _orchestrator, _surface_index, _overlay_items, _overlay_mode, _fact_count
+    global _orchestrator, _integrated_answer_router, _surface_index, _overlay_items, _overlay_mode, _fact_count
     global _inference_workspace, _graph_patterns, _pattern_index, _graph_reader
     global _resolved_overlay_path, _startup_overlay_mode, _startup_overlay_path, _overlay_mtime
     global _community_context_path, _community_context_count, _community_context_provider
@@ -1075,6 +1116,7 @@ def _startup(
         if close is not None:
             close()
     _experimental_edges_cache = None
+    _integrated_answer_router = None
 
     _overlay_mode = OVERLAY_MODE_CUSTOM_PATH if overlay_path is not None else overlay_mode
     _startup_overlay_mode = overlay_mode
@@ -1176,6 +1218,19 @@ def _startup(
         f"cognitive_patterns={_cognitive_patterns_count}",
         flush=True,
     )
+
+
+def _get_integrated_answer_router() -> IntegratedAnswerRouter:
+    """Construct the showcase/session dispatcher lazily after API startup."""
+    global _integrated_answer_router
+    if _integrated_answer_router is None:
+        if _resolved_overlay_path is None:
+            raise RuntimeError("Microworld API has not been started")
+        _integrated_answer_router = IntegratedAnswerRouter(
+            _overlay_mode,
+            overlay_path=_resolved_overlay_path,
+        )
+    return _integrated_answer_router
 
 
 def _ensure_cache_fresh() -> None:

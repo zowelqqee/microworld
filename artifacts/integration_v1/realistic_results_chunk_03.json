@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "n": 9,
+    "case_range": [
+      27,
+      36
+    ],
+    "total_available_cases": 45,
+    "misroute_pct": 0.0,
+    "n_misrouted": 0,
+    "misrouted": [],
+    "confidence_level_distribution": {
+      "creative_generated": 2,
+      "speculative_extended": 1,
+      "audit": 2,
+      "grounded_generation": 1,
+      "grounded": 2,
+      "speculative_verified": 1
+    },
+    "route_method_distribution": {
+      "fast_path": 2,
+      "centroid": 3,
+      "default_qa": 3,
+      "centroid->rule_fallback": 1
+    },
+    "branch_distribution": {
+      "pure_creative": 2,
+      "reflective_extended": 1,
+      "qa": 4,
+      "constrained_creative": 1,
+      "reflective": 1
+    }
+  },
+  "rows": [
+    {
+      "q": "Write something creative about the stars",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "fast_path",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "How might Tesla and Tesla Energy be related?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective_extended",
+      "route_method": "centroid",
+      "confidence_level": "speculative_extended",
+      "support_kind": "speculative_extended",
+      "decision": "answer",
+      "answer_text": "Tesla and Tesla Energy are not directly linked in the verified relations; they are connected here only because both produces Battery storage. Treat this as a broader, less-tested inference than the system's core reasoning — a similarity, not a stored or directly-derived fact.",
+      "caution": "lower-confidence: shared-attribute association, not a verified inference",
+      "correct": true
+    },
+    {
+      "q": "What does Oracle Corporation do?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "I don't have a definition for this in my knowledge base.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Write about NASA staying strictly within these facts",
+      "gold_branch": "constrained_creative",
+      "out_branch": "constrained_creative",
+      "route_method": "centroid",
+      "confidence_level": "grounded_generation",
+      "support_kind": "grounded_generation",
+      "decision": "answer",
+      "answer_text": "NASA develops spacecraft. In addition, it develops launch systems.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Who is the leader of SpaceX?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "centroid",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Elon Musk and Gwynne Shotwell are linked to SpaceX through leadership.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Why might Musk be linked to electric cars?",
+      "gold_branch": "reflective",
+      "out_branch": "reflective",
+      "route_method": "centroid->rule_fallback",
+      "confidence_level": "speculative_verified",
+      "support_kind": "speculative_inference",
+      "decision": "answer",
+      "answer_text": "Based on what is known, one might reason that Elon Musk leads Tesla, which produces electric cars — a plausible reason for the association. (This is a speculative inference, not a stored fact.)",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What does Bloomberg publish?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "audit",
+      "support_kind": "audit",
+      "decision": "audit",
+      "answer_text": "No relevant information found for this question.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "Tell a fictional story about a space company",
+      "gold_branch": "pure_creative",
+      "out_branch": "pure_creative",
+      "route_method": "fast_path",
+      "confidence_level": "creative_generated",
+      "support_kind": "creative_generated",
+      "decision": "answer",
+      "answer_text": "Без меня могила ждет удара и вылетал. Где она теперь не то не пожар.",
+      "caution": null,
+      "correct": true
+    },
+    {
+      "q": "What products does Tesla make?",
+      "gold_branch": "qa",
+      "out_branch": "qa",
+      "route_method": "default_qa",
+      "confidence_level": "grounded",
+      "support_kind": "grounded",
+      "decision": "answer",
+      "answer_text": "Tesla produces electric cars, battery energy storage, Electric cars, and Battery storage.",
+      "caution": null,
+      "correct": true
+    }
+  ]
+}

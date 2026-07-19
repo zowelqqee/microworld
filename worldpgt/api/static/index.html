@@ -18,6 +18,14 @@
   #community-toggle.on { background: #ffd36e; color: #291c00; border-color: #ffd36e; }
   .mode-status { font-size: 12px; font-weight: 600; letter-spacing: 0.3px; padding: 6px 12px; border-radius: 999px; border: 1px solid #3a3a5e; background: #24244a; color: #aab; }
   .mode-status.experimental { background: #e9b9ff; color: #2d073d; border-color: #e9b9ff; }
+  #showcase-toggle.on { background: #c7b7ff; color: #24164f; border-color: #c7b7ff; }
+  #showcase { display: none; padding: 14px 20px; background: #eef0ff; border-bottom: 1px solid #d8dcef; }
+  #showcase.visible { display: block; }
+  .showcase-title { font-size: 13px; font-weight: 750; color: #24204b; margin-bottom: 4px; }
+  .showcase-copy { font-size: 12px; color: #5c587a; margin-bottom: 10px; }
+  .showcase-presets { display: flex; gap: 7px; flex-wrap: wrap; }
+  .showcase-preset { border: 1px solid #c9cbe8; background: #fff; color: #39345f; border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 12px; }
+  .showcase-preset:hover { background: #dedbff; }
 
   #chat { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
 
@@ -27,6 +35,13 @@
 
   .bubble .refs { font-style: italic; color: #666; margin-bottom: 6px; font-size: 13px; }
   .bubble .answer-text { color: #111; white-space: pre-wrap; }
+  .branch-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 9px; font-size: 11px; color: #5e5b72; }
+  .branch-pill { padding: 3px 7px; border-radius: 999px; font-weight: 700; letter-spacing: .2px; background: #ececf4; color: #39364b; }
+  .branch-pill.speculative_inference { background: #fff0c7; color: #765600; }
+  .branch-pill.speculative_extended { background: #f3d9ff; color: #6a1978; }
+  .branch-pill.creative_generated { background: #d9f6e3; color: #17633d; }
+  .branch-pill.grounded_generation { background: #d9efff; color: #175573; }
+  .caution { margin-top: 9px; padding: 8px 10px; border-left: 3px solid #a14ab3; background: #fbf3fd; color: #59215f; font-size: 12px; line-height: 1.4; }
 
   .thinking { align-self: flex-start; max-width: 72%; background: #ededf2; border: 1px solid #dcdce4; border-radius: 10px; font-size: 13px; color: #555; font-style: italic; overflow: hidden; }
   .thinking .thinking-head { padding: 7px 14px; cursor: pointer; user-select: none; font-style: normal; font-weight: 600; color: #5a5a78; display: flex; align-items: center; gap: 6px; }
@@ -66,9 +81,21 @@
     <button id="web-toggle" class="mode-toggle" title="Use live web search for public current questions">Web search: off</button>
     <button id="community-toggle" class="mode-toggle" title="Use low-trust Reddit/community context for phrasing and common concerns">Community: off</button>
     <button id="think-toggle" class="mode-toggle" title="Show how the answer was reached">🧠 Think aloud: off</button>
+    <button id="showcase-toggle" class="mode-toggle" title="Try the integrated multi-branch flow">Branch demo: off</button>
     <span id="experimental-graph-status" class="mode-status">Experimental graph: loading…</span>
   </div>
 </div>
+<section id="showcase" aria-label="Integrated branch demo">
+  <div class="showcase-title">Integrated answer flow</div>
+  <div class="showcase-copy">Each prompt visibly shows its selected branch and evidence label.</div>
+  <div class="showcase-presets">
+    <button class="showcase-preset" data-question="Who founded SpaceX?">Grounded QA</button>
+    <button class="showcase-preset" data-question="What if Elon Musk had not founded SpaceX?">Reflective v1</button>
+    <button class="showcase-preset" data-question="Why might SpaceX and Blue Origin be related?">Reflective v2</button>
+    <button class="showcase-preset" data-question="Write about SpaceX using only these facts">Grounded creative</button>
+    <button class="showcase-preset" data-question="Tell a fictional story about a space company">Pure creative</button>
+  </div>
+</section>
 <div id="chat"></div>
 <div id="footer">
   <input id="input" type="text" placeholder="Ask a question..." autocomplete="off" />
@@ -84,11 +111,14 @@ const thinkToggle = document.getElementById('think-toggle');
 const webToggle = document.getElementById('web-toggle');
 const communityToggle = document.getElementById('community-toggle');
 const experimentalGraphStatus = document.getElementById('experimental-graph-status');
+const showcaseToggle = document.getElementById('showcase-toggle');
+const showcase = document.getElementById('showcase');
 
 let sessionId = null;
 let thinkAloud = false;
 let webSearch = false;
 let communityContext = false;
+let showcaseMode = false;
 
 thinkToggle.addEventListener('click', () => {
   thinkAloud = !thinkAloud;
@@ -106,6 +136,20 @@ communityToggle.addEventListener('click', () => {
   communityContext = !communityContext;
   communityToggle.classList.toggle('on', communityContext);
   communityToggle.textContent = `Community: ${communityContext ? 'on' : 'off'}`;
+});
+
+showcaseToggle.addEventListener('click', () => {
+  showcaseMode = !showcaseMode;
+  showcase.classList.toggle('visible', showcaseMode);
+  showcaseToggle.classList.toggle('on', showcaseMode);
+  showcaseToggle.textContent = `Branch demo: ${showcaseMode ? 'on' : 'off'}`;
+});
+
+document.querySelectorAll('.showcase-preset').forEach(button => {
+  button.addEventListener('click', () => {
+    input.value = button.dataset.question;
+    ask();
+  });
 });
 
 async function loadHealth() {
@@ -194,6 +238,19 @@ function addAssistantBubble(data) {
   const div = document.createElement('div');
   div.className = 'bubble assistant';
 
+  if (data.branch) {
+    const meta = document.createElement('div');
+    meta.className = 'branch-meta';
+    const branch = document.createElement('span');
+    branch.className = `branch-pill ${data.support || ''}`;
+    branch.textContent = `${data.branch} · ${data.support || 'unlabelled'}`;
+    meta.appendChild(branch);
+    const route = document.createElement('span');
+    route.textContent = `via ${data.route_method || 'standard route'}`;
+    meta.appendChild(route);
+    div.appendChild(meta);
+  }
+
   if (data.resolved_references && data.resolved_references.length > 0) {
     const refs = document.createElement('div');
     refs.className = 'refs';
@@ -205,6 +262,13 @@ function addAssistantBubble(data) {
   text.className = 'answer-text';
   renderAnswerInto(text, data.answer);
   div.appendChild(text);
+
+  if (data.caution) {
+    const caution = document.createElement('div');
+    caution.className = 'caution';
+    caution.textContent = data.caution;
+    div.appendChild(caution);
+  }
 
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
@@ -239,7 +303,8 @@ async function ask() {
     };
     if (sessionId) body.session_id = sessionId;
 
-    const r = await fetch('/ask', {
+    const endpoint = showcaseMode ? '/showcase/answer' : '/ask';
+    const r = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
@@ -253,7 +318,7 @@ async function ask() {
     }
 
     const data = await r.json();
-    sessionId = data.session_id;
+    if (data.session_id) sessionId = data.session_id;
     addAssistantBubble(data);
   } catch (e) {
     typing.remove();
