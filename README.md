@@ -729,6 +729,32 @@ production validation at scale.
 | Informed reflection | honest stop: 84.4% stress-set classification, below 90% gate | surface markers cannot recover factual/speculative scope |
 | Property transfer | honest stop: ~0/15 sampled transfers defensible | the inference form, not candidate filtering, is unsound |
 
+### Unified matched-scale comparison (router-driven, n=50)
+
+The router selected the branch automatically for 50 existing cases: 10 frozen
+held-out QA cases, 13 reflective pilot cases, and all 27 constrained-creative
+A/B subjects. Both systems received matched per-question evidence without a
+branch label. Qwen used `mlx-community/Qwen2.5-3B-Instruct-4bit` at temperature
+0; raw outputs and scorer rows are in
+[`artifacts/full_system_v1/`](artifacts/full_system_v1/).
+
+| Category | MicroWorld | Qwen-3B | Note |
+|---|---:|---:|---|
+| QA accuracy (n=10) | 1.00 | 0.90 | |
+| Reflective — correct audits (n=11) | 11/11 | 11/11 | Qwen equally safe here |
+| Reflective — admitted speculative (n=2) | 2/2 answered | 0/2 (`UNKNOWN`) | Qwen safely abstains; MicroWorld covers more |
+| Constrained inclusion (n=27) | 0.963 | 0.988 | |
+| Constrained fidelity | 0.889 | 0.790 | |
+| Constrained hallucination proxy | 0.037 | 0.449 | |
+
+On this narrow, 50-case matched-evidence comparison, MicroWorld leads on QA
+accuracy and constraint discipline; Qwen-3B is equally safe on reflective
+refusal but does not cover two admitted speculative inferences that MicroWorld
+handles defensibly. This is not a general claim that the architecture
+outperforms LLMs — it is evidence at this specific scale, on this specific
+evidence set. The `IoT` entity-recognition routing gap is a known open item and
+is included, not excluded, in the constrained metrics.
+
 Focused speech/reasoning benchmark:
 
 ```bash
