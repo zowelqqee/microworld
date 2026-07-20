@@ -44,6 +44,9 @@ Demonstrated in the current repository and preserved research artifacts:
 - Failure analysis that isolates parser coverage, resolver coverage, and planner reachability
 - Reddit/HN-style cognitive pattern memory that is blocked from factual support
 - Optional live-search path with volatile/source-labelled answers
+- A source-disjoint, manual-review-gated LLM extraction workflow with frozen
+  prompts, decision ledgers, and proposal-only overlays; it is an acquisition
+  experiment, not an automatic memory-admission path.
 
 Not demonstrated:
 
@@ -99,6 +102,14 @@ Current limits, from the local artifacts:
   should have been excluded from a stable-entity benchmark.
 - Durable unattended/night-cycle service is not part of the current runtime;
   acquisition and evaluation loops are script-driven.
+- LLM extraction remains proposal-only. The node-quality filter is useful
+  triage but not a literal-entailment or entity-identity admission gate. The
+  reviewed targeted prompt batches are promising (34/45 and 11/14 accepts),
+  but too small to establish a general acceptance rate or an automatic rule.
+- API-only Microworld pumping is inexpensive relative to frontier pretraining,
+  but that comparison is not a quality equivalence: the measured $431 Batch
+  estimate per 1M automated candidates excludes human review and does not make
+  candidates verified facts.
 
 These limits are not footnotes. They are part of the safety model.
 
@@ -128,6 +139,9 @@ Highest-leverage next steps:
 10. Add deterministic paraphrase predicate mappings and an experimental
     relation-subject resolver fallback, then rerun the same fixed-seed
     open-book dataset before claiming improvement.
+11. Accumulate further source-disjoint targeted extraction batches, preserve
+    every review decision, and test any proposed automatic admission rule only
+    by pre-registered holdout validation.
 
 ## Status
 

@@ -163,6 +163,54 @@ open_web_pump_summary.json
 The pump's role is acquisition and evaluation. It may produce a proposal that a
 runtime can test, but promotion remains an explicit artifact and review step.
 
+## LLM extraction lane: curated and proposal-only
+
+The arXiv LLM lane is separate from the deterministic pump. It uses only
+bounded official arXiv API records and preserves source sentence, URL, literal
+span, model response, and review decision per candidate:
+
+```text
+official arXiv sentence
+  -> Gemini 3.1 Flash-Lite extraction
+  -> unchanged node-quality filter
+  -> explicit manual review
+  -> proposal-only overlay (accepted rows only)
+```
+
+The node-quality filter is a triage step, not an automated admission decision.
+It excludes authorial, generic, event-like, list-derived, and unresolvable
+shapes, but literal entailment and endpoint identity remain separate checks.
+The entity-seeding experiment stopped at its gate: a mechanically strict
+2+-mention rule produced 15 candidates, only 3 legitimate systems, and 12 false
+positives. No new entity-seeding module was integrated.
+
+The manual-review record is intentionally mixed rather than presented as one
+aggregate accuracy result:
+
+| Run | Candidates | Manual accept | Interpretation |
+|---|---:|---:|---|
+| Grouped discovery | 148 | 36 (24.3%) | Broad extraction leaves substantial endpoint and literal noise. |
+| Disjoint holdout | 81 | 37 (45.7%) | Better source/material slice; not proof of a population rate. |
+| Targeted class/member + named-system prompt | 45 | 34 (75.6%) | Small, promising targeted result. |
+| Independent targeted + anti-coercion prompt | 14 | 11 (78.6%) | Directional replication; too small to establish a prompt effect. |
+
+The anti-coercion addendum specifically asks the model not to turn possessives,
+purpose clauses, or incidental events into class/member relations. Its reviewed
+batch had 2 coercion-family rejects among 3 rejects, versus 10/11 in the prior
+targeted batch. This is a preliminary diagnostic observation only; it is not an
+automated accept/reject rule. The complete ledgers and frozen prompts are under
+`artifacts/llm_manual_review_v1/`.
+
+### Cost boundary
+
+On the completed anti-coercion run, 100 sentences consumed 40,230 input and
+1,340 output tokens, costing $0.01207 at standard Gemini 3.1 Flash-Lite rates
+or $0.00603 through Batch API. At that measured yield, the API-only projection
+is about $431 Batch / $862 standard per 1M automated filter-passed candidates.
+It excludes human review and is therefore explicitly a cost per proposal, not
+per verified fact. The documented comparison with frontier LLM pretraining and
+SFT is in `artifacts/llm_manual_review_v1/cost_analysis_v1/`.
+
 ## Feedback Loops
 
 The pump has three feedback loops:

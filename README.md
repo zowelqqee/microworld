@@ -145,19 +145,34 @@ Flash-Lite (32). Their literal-support failure rates were 21.2%, 16.7%, and
 had unsuitable endpoints. The unchanged precision gate quarantined every raw
 candidate.
 
-The deterministic node-quality filter retained zero of 101 candidates because
-the current serving index cannot resolve even clean new names. A subsequent
-entity-seeding pilot found 15 mechanically repeated literal surfaces but only
-3 legitimate systems (`AutoSlim`, `SciServer`, `REGAI`); 12/15 were noise, so
-the zero-false-positive gate failed and the lane stopped before build or
-integration. Retrospective review-priority rules H1/H2 reached 95.0% precision
-(19/20) together. An initial official-API attempt stopped on repeated timeouts;
-a later official acquisition produced a fresh 74-sentence, 81-candidate
-holdout. Applied unchanged before review, H1 and H2 each matched zero
-candidates, so prospective precision is undefined rather than low; complete
-human review is still pending. Their status is therefore **retrospective pass,
-prospective unconfirmed**: the null selection neither confirms nor refutes the
-retrospective 95.0%. Nothing was promoted to accepted or serving memory.
+The deterministic node-quality filter retained zero of the initial 101
+candidates because the current serving index cannot resolve even clean new
+names. A subsequent entity-seeding pilot found 15 mechanically repeated literal
+surfaces but only 3 legitimate systems (`AutoSlim`, `SciServer`, `REGAI`);
+12/15 were noise, so its zero-false-positive gate failed and the lane stopped
+before build or integration.
+
+The follow-up lane is deliberately a curated, proposal-only workflow: Gemini
+3.1 Flash-Lite extraction -> unchanged node-quality filter -> explicit manual
+review -> isolated proposal overlay. The grouped discovery batch yielded 36/148
+manual accepts (24.3%); a source-disjoint 74-sentence holdout yielded 37/81
+(45.7%). Narrow retrospective H1/H2 priority rules selected 19/20 accepted
+rows on the discovery batch, but each matched zero holdout rows when frozen,
+so they remain unconfirmed and are not admission rules. A targeted class/member
+and named-system prompt improved the small reviewed batch to 34/45 (75.6%). An
+independent targeted prompt with an anti-coercion addendum yielded 11/14
+(78.6%); its 2/3 coercion-family reject share versus 10/11 in the prior batch
+is directionally encouraging but far too small to prove an improvement. No
+rule auto-admits a relation; all accepted rows remain proposal-only and serving
+memory is unchanged. See [the extraction and cost record](artifacts/llm_manual_review_v1/).
+
+The measured API-only cost of the latest targeted anti-coercion run was
+$0.0000603 per source sentence via Gemini Batch API, or about $431 per 1M
+automated filter-passed candidates at the observed yield. This is a cost for
+automated candidates, not verified graph facts. Published training-compute
+estimates for frontier LLM pretraining are orders of magnitude larger (GPT-4
+~$79M, Gemini Ultra ~$192M, Llama 3.1 405B ~$170M); this is a scale comparison,
+not a claim of equivalent capability. See [the cost analysis](artifacts/llm_manual_review_v1/cost_analysis_v1/microworld_vs_llm_pretraining.md).
 
 ## Key Ideas
 
@@ -892,6 +907,8 @@ repository has benchmarked against.
 | [dialogue_context.md](docs/dialogue_context.md) | Explicit session state, resolver behavior, ambiguity handling, and dialogue-v2 migration. |
 | [language_renderer.md](docs/language_renderer.md) | Controlled text generation, phrase graph behavior, styles, and surface validation. |
 | [knowledge_pump.md](docs/knowledge_pump.md) | Proposal-only acquisition, precision gates, frontier loops, and pump status. |
+| [LLM extraction record](artifacts/llm_manual_review_v1/) | Curated arXiv extraction batches, holdouts, prompt tests, decision ledgers, and proposal-only overlays. |
+| [cost analysis](artifacts/llm_manual_review_v1/cost_analysis_v1/microworld_vs_llm_pretraining.md) | Measured API-only Microworld pump cost versus published frontier-LLM pretraining estimates. |
 | [safety_model.md](docs/safety_model.md) | Support policy, temporal policy, memory boundaries, live-search disclosure, and known safety limits. |
 | [benchmarks.md](docs/benchmarks.md) | Current benchmark snapshots, performance, WebQuestions-style results, validation commands, and artifact paths. |
 | [research_results.md](docs/research_results.md) | Preserved historical tracks, demonstrated results, limitations, next work, and project status. |
