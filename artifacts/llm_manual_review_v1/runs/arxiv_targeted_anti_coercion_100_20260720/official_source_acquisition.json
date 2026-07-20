@@ -1,0 +1,25 @@
+{
+  "network_calls": true,
+  "planned_total": 1,
+  "pages_per_query": 1,
+  "page_start": 2,
+  "start_query": 0,
+  "skipped_sources": [],
+  "query_count": 1,
+  "planned_by_source": {
+    "arxiv": 1
+  },
+  "planned_by_bucket": {
+    "holdout_validation": 1
+  },
+  "errors": [],
+  "status": "completed",
+  "records_total": 200,
+  "records_by_source": {
+    "arxiv": 200
+  },
+  "records_by_bucket": {
+    "holdout_validation": 200
+  },
+  "rate_limited_sources": []
+}

@@ -1,0 +1,17 @@
+{
+  "overlay_type": "manual_reviewed_llm_proposal_overlay_v1",
+  "proposal_only": true,
+  "safe_for_general_runtime": false,
+  "requires_review": true,
+  "precision_gate_run": false,
+  "serving_memory_modified": false,
+  "relation_source": "manual_review_candidates.json",
+  "decision_source": "manual_review_decisions.json",
+  "selection": "accepted_candidate_ids only",
+  "accepted_relation_count": 11,
+  "accepted_candidate_ids": [
+    "arxiv-004:0", "arxiv-031:0", "arxiv-050:0", "arxiv-059:0",
+    "arxiv-067:0", "arxiv-068:1", "arxiv-072:0", "arxiv-072:1",
+    "arxiv-087:0", "arxiv-090:0", "arxiv-090:1"
+  ]
+}

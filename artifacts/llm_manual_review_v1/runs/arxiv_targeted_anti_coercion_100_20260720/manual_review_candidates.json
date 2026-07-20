@@ -1,0 +1,424 @@
+[
+  {
+    "candidate_id": "arxiv-004:0",
+    "batch_id": "arxiv-004",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Wireless Congestion Control Protocol For Multihop Ad Hoc Networks",
+    "source_url": "http://arxiv.org/abs/1002.1687v1",
+    "source_fingerprint": "c2699fb6a05f855eb0216d736829dfe8b83fb26f1591c951b031fad708b88ee3",
+    "source_text": "Then, based on the novel use of channel busyness ratio, a more accurate metric to characterize the network utilization and congestion status, I propose a new wireless congestion control protocol (WCCP) to efficiently and fairly support the transport service in multihop ad hoc networks.",
+    "subject": "WCCP",
+    "predicate": "is a type of",
+    "object": "wireless congestion control protocol",
+    "evidence_span": "a new wireless congestion control protocol (WCCP)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-020:0",
+    "batch_id": "arxiv-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quantum Annealing and Computation: A Brief Documentary Note",
+    "source_url": "http://arxiv.org/abs/1310.1339v4",
+    "source_fingerprint": "594f4e59571e3ee671912698d56939c9ef5d14942f8e55c1d9e08f053caccd5b",
+    "source_text": "Major breakthrough in quantum computation has recently been achieved using quantum annealing to develop analog quantum computers instead of gate based computers.",
+    "subject": "quantum annealing",
+    "predicate": "is a type of",
+    "object": "quantum computation",
+    "evidence_span": "Major breakthrough in quantum computation has recently been achieved using quantum annealing",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-031:0",
+    "batch_id": "arxiv-031",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Non-uniform Fast Fourier Transform in Computed Tomography",
+    "source_url": "http://arxiv.org/abs/1605.05231v1",
+    "source_fingerprint": "fc468605a5910d2455e4c67e61f2047a0b1e08213f66286fa3aafcfcc64ffbdb",
+    "source_text": "The principle of the designs is based on utilizing the potential computational efficiency which the Fourier Slice Theorem and the Non-uniform Fast Fourier Transform (NUFFT) will bring forth.",
+    "subject": "Non-uniform Fast Fourier Transform (NUFFT)",
+    "predicate": "is a type of",
+    "object": "Fast Fourier Transform",
+    "evidence_span": "Non-uniform Fast Fourier Transform (NUFFT)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-034:0",
+    "batch_id": "arxiv-034",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Complete Quantitative Deduction System for the Bisimilarity Distance on Markov Chains",
+    "source_url": "http://arxiv.org/abs/1702.02528v5",
+    "source_fingerprint": "b3ed8c4827dfe4fc7a3a08d4ea78e99409c71edbab271833a845b1950f435993",
+    "source_text": "Our axiomatization is given in the style of a quantitative extension of equational logic recently proposed by Mardare, Panangaden, and Plotkin (LICS 2016) that uses equality relations $t \\equiv_\\varepsilon s$ indexed by rationals, expressing that `$t$ is approximately equal to $s$ up to an error $\\varepsilon$'.",
+    "subject": "quantitative extension of equational logic",
+    "predicate": "is a type of",
+    "object": "equational logic",
+    "evidence_span": "Our axiomatization is given in the style of a quantitative extension of equational logic recently proposed by Mardare, Panangaden, and Plotkin",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "temporal_referent_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "temporal_referent_likely",
+    "grouping_reasons": [
+      "date/time reference appears without a clear capitalized subject anchor",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-050:0",
+    "batch_id": "arxiv-050",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Security modeling and efficient computation offloading for service workflow in mobile edge computing",
+    "source_url": "http://arxiv.org/abs/1907.02506v1",
+    "source_fingerprint": "955bfd60214cda59e2e4a9c8cb8a234fd7a9b9307636675bad860e0e783616bd",
+    "source_text": "Fortunately, as a novel computing paradigm, edge computing (MEC) can provide abundant computing resources to execute all or parts of the tasks of MDs and thereby can greatly reduce the energy of MD and improve the QoS of applications.",
+    "subject": "edge computing",
+    "predicate": "is a type of",
+    "object": "computing paradigm",
+    "evidence_span": "edge computing (MEC) can provide abundant computing resources to execute all or parts of the tasks of MDs and thereby can greatly reduce the energy of MD and improve the QoS of applications.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-059:0",
+    "batch_id": "arxiv-059",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Enabling Synergy: Improving the Information Infrastructure for Planetary Science",
+    "source_url": "http://arxiv.org/abs/2009.14323v1",
+    "source_fingerprint": "241bb074a45cdb86563b3102a77d20bf89e8f64ddfddeec1ef4a2892eddf0734",
+    "source_text": "In this whitepaper we advocate that the Planetary Science (PS) community build a discipline-specific digital library, in collaboration with the existing astronomy digital library, ADS.",
+    "subject": "ADS",
+    "predicate": "is a type of",
+    "object": "astronomy digital library",
+    "evidence_span": "the existing astronomy digital library, ADS",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-067:0",
+    "batch_id": "arxiv-067",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "QAC: Quantum-computing Aided Composition",
+    "source_url": "http://arxiv.org/abs/2202.04215v1",
+    "source_fingerprint": "a34dc51478c96e9c9ee1b488280c43faedc4be56926b45e1d199ea98b7cb30e0",
+    "source_text": "This chapter will also introduce The QAC Toolkit Max package, analyze its performance, and explore some examples of what it can offer to realtime creative practice.",
+    "subject": "The QAC Toolkit",
+    "predicate": "is a",
+    "object": "Max package",
+    "evidence_span": "The QAC Toolkit Max package",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-068:0",
+    "batch_id": "arxiv-068",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Co-Designed Architectures for Modular Superconducting Quantum Computers",
+    "source_url": "http://arxiv.org/abs/2205.04387v3",
+    "source_fingerprint": "33ccf5d8c42f9b59f42ee0646a14c35d60dc9fa652762be6d26f9dd6dd5e30f0",
+    "source_text": "This naturally includes $\\sqrt{\\texttt{iSWAP}}$, which provides an advantage over $\\texttt{CNOT}$ as a basis gate.",
+    "subject": "iSWAP",
+    "predicate": "is a type of",
+    "object": "basis gate",
+    "evidence_span": "iSWAP, which provides an advantage over CNOT as a basis gate",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-068:1",
+    "batch_id": "arxiv-068",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Co-Designed Architectures for Modular Superconducting Quantum Computers",
+    "source_url": "http://arxiv.org/abs/2205.04387v3",
+    "source_fingerprint": "33ccf5d8c42f9b59f42ee0646a14c35d60dc9fa652762be6d26f9dd6dd5e30f0",
+    "source_text": "This naturally includes $\\sqrt{\\texttt{iSWAP}}$, which provides an advantage over $\\texttt{CNOT}$ as a basis gate.",
+    "subject": "CNOT",
+    "predicate": "is a type of",
+    "object": "basis gate",
+    "evidence_span": "CNOT as a basis gate",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-072:0",
+    "batch_id": "arxiv-072",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Execution-based Evaluation for Data Science Code Generation Models",
+    "source_url": "http://arxiv.org/abs/2211.09374v1",
+    "source_fingerprint": "0bd0f9cb0e6dbd35ec583990c08558287b3118a16adebee678f044c1cb02dc93",
+    "source_text": "However, due to the lack of an evaluation dataset that directly supports execution-based model evaluation, existing work relies on code surface form similarity metrics (e.g., BLEU, CodeBLEU) for model selection, which can be inaccurate.",
+    "subject": "BLEU",
+    "predicate": "is a type of",
+    "object": "code surface form similarity metrics",
+    "evidence_span": "code surface form similarity metrics (e.g., BLEU, CodeBLEU)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-072:1",
+    "batch_id": "arxiv-072",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Execution-based Evaluation for Data Science Code Generation Models",
+    "source_url": "http://arxiv.org/abs/2211.09374v1",
+    "source_fingerprint": "0bd0f9cb0e6dbd35ec583990c08558287b3118a16adebee678f044c1cb02dc93",
+    "source_text": "However, due to the lack of an evaluation dataset that directly supports execution-based model evaluation, existing work relies on code surface form similarity metrics (e.g., BLEU, CodeBLEU) for model selection, which can be inaccurate.",
+    "subject": "CodeBLEU",
+    "predicate": "is a type of",
+    "object": "code surface form similarity metrics",
+    "evidence_span": "code surface form similarity metrics (e.g., BLEU, CodeBLEU)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-087:0",
+    "batch_id": "arxiv-087",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "MATILDA: Inclusive Data Science Pipelines Design through Computational Creativity",
+    "source_url": "http://arxiv.org/abs/2311.10969v1",
+    "source_fingerprint": "23d144a44002755dcb52930facad57fd0e8aff6bd0b3f24179d9da51e77dac3f",
+    "source_text": "The paper introduces MATILDA, a creativity-based data science design platform, showing how it can support the design process of data science pipelines guided by human and computational creativity.",
+    "subject": "MATILDA",
+    "predicate": "is a type of",
+    "object": "creativity-based data science design platform",
+    "evidence_span": "MATILDA, a creativity-based data science design platform",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-090:0",
+    "batch_id": "arxiv-090",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Iterated Resultants and Rational Functions in Real Quantifier Elimination",
+    "source_url": "http://arxiv.org/abs/2312.16210v2",
+    "source_fingerprint": "400ed8b660dc703e07c3ab1d3b4aaa75461bd96ff4fa7422128fee71b21297fb",
+    "source_text": "This paper builds and extends on the authors' previous work related to the algorithmic tool, Cylindrical Algebraic Decomposition (CAD), and one of its core applications, Real Quantifier Elimination (QE).",
+    "subject": "Cylindrical Algebraic Decomposition",
+    "predicate": "is a type of",
+    "object": "algorithmic tool",
+    "evidence_span": "the algorithmic tool, Cylindrical Algebraic Decomposition (CAD)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-090:1",
+    "batch_id": "arxiv-090",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Iterated Resultants and Rational Functions in Real Quantifier Elimination",
+    "source_url": "http://arxiv.org/abs/2312.16210v2",
+    "source_fingerprint": "400ed8b660dc703e07c3ab1d3b4aaa75461bd96ff4fa7422128fee71b21297fb",
+    "source_text": "This paper builds and extends on the authors' previous work related to the algorithmic tool, Cylindrical Algebraic Decomposition (CAD), and one of its core applications, Real Quantifier Elimination (QE).",
+    "subject": "Real Quantifier Elimination",
+    "predicate": "is a type of",
+    "object": "application",
+    "evidence_span": "one of its core applications, Real Quantifier Elimination (QE)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "review_source": "user-supplied pasted manual review",
+  "reviewed_at": "2026-07-20",
+  "review_scope": "all 14 node-quality-triaged anti-coercion candidates; no automatic admission",
+  "accepted_candidate_ids": [
+    "arxiv-004:0", "arxiv-031:0", "arxiv-050:0", "arxiv-059:0",
+    "arxiv-067:0", "arxiv-068:1", "arxiv-072:0", "arxiv-072:1",
+    "arxiv-087:0", "arxiv-090:0", "arxiv-090:1"
+  ],
+  "rejected_candidate_ids": ["arxiv-034:0", "arxiv-020:0", "arxiv-068:0"],
+  "rejected_cases": {
+    "arxiv-034:0": {
+      "literal_support": "no", "clean_entities": "yes", "new_predicate": "no",
+      "verdict": "REJECT",
+      "notes": "quantitative extension of equational logic explicitly expresses an extension relation, not is a type of equational logic."
+    },
+    "arxiv-020:0": {
+      "literal_support": "no", "clean_entities": "yes", "new_predicate": "no",
+      "verdict": "REJECT",
+      "notes": "Quantum annealing is stated as a method used to achieve a breakthrough and develop analog quantum computers, not as a type of quantum computation."
+    },
+    "arxiv-068:0": {
+      "literal_support": "no", "clean_entities": "yes", "new_predicate": "no",
+      "verdict": "REJECT",
+      "notes": "The sentence refers to √iSWAP as the basis gate; the extraction changes the subject to iSWAP."
+    }
+  },
+  "accepted_fields": {
+    "literal_support": "yes", "clean_entities": "yes", "new_predicate": "no",
+    "verdict": "ACCEPT"
+  },
+  "proposal_only": true,
+  "serving_memory_modified": false,
+  "precision_gate_run": false
+}

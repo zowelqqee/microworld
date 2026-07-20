@@ -1,0 +1,367 @@
+[
+  {
+    "candidate_id": "arxiv-001:0",
+    "batch_id": "arxiv-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Linear Logic by Levels and Bounded Time Complexity",
+    "source_url": "http://arxiv.org/abs/0801.1253v3",
+    "source_fingerprint": "5f3eb98c172c9b01a9212aadd0141561c02ac72a5f57a7db2386446a2255845b",
+    "source_text": "Here, we propose a more general form of stratification, based on inducing levels in proof nets by means of indexes, which allows us to extend Girard's systems while keeping the same complexity properties.",
+    "subject": "Girard's systems",
+    "predicate": "is a type of",
+    "object": "proof nets",
+    "evidence_span": "extend Girard's systems",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:0",
+    "batch_id": "arxiv-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Brief History of Context",
+    "source_url": "http://arxiv.org/abs/0912.1838v1",
+    "source_fingerprint": "cbf5341c95f4810f4d1d06faf10f7017045bfebb2fb46b95e2b9b54467d66366",
+    "source_text": "In many areas of research in computer science, notably on web-based services, human-computer interaction (HCI), ubiquitous computing applications, and context-aware systems there is a need to provide a formal operational definition of context.",
+    "subject": "web-based services",
+    "predicate": "is a type of",
+    "object": "research in computer science",
+    "evidence_span": "research in computer science, notably on web-based services",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:3",
+    "batch_id": "arxiv-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Brief History of Context",
+    "source_url": "http://arxiv.org/abs/0912.1838v1",
+    "source_fingerprint": "cbf5341c95f4810f4d1d06faf10f7017045bfebb2fb46b95e2b9b54467d66366",
+    "source_text": "In many areas of research in computer science, notably on web-based services, human-computer interaction (HCI), ubiquitous computing applications, and context-aware systems there is a need to provide a formal operational definition of context.",
+    "subject": "context-aware systems",
+    "predicate": "is a type of",
+    "object": "research in computer science",
+    "evidence_span": "research in computer science, notably on ... context-aware systems",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-022:0",
+    "batch_id": "arxiv-022",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Informed Sampler: A Discriminative Approach to Bayesian Inference in Generative Computer Vision Models",
+    "source_url": "http://arxiv.org/abs/1402.0859v3",
+    "source_fingerprint": "9c9b0d5ca7b3d4046c3809fe589a71a5696663e332965cb7352a77ac416ab3c1",
+    "source_text": "We implement this idea in a principled way with an \"informed sampler\" and in careful experiments demonstrate it on challenging generative models which contain renderer programs as their components.",
+    "subject": "renderer programs",
+    "predicate": "is a component of",
+    "object": "generative models",
+    "evidence_span": "generative models which contain renderer programs as their components",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-052:0",
+    "batch_id": "arxiv-052",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "subject": "Gaia",
+    "predicate": "is a type of",
+    "object": "astronomical facility",
+    "evidence_span": "international network of front-line astronomical facilities... Gaia",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-052:1",
+    "batch_id": "arxiv-052",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "subject": "Large Synoptic Survey Telescope",
+    "predicate": "is a type of",
+    "object": "astronomical facility",
+    "evidence_span": "international network of front-line astronomical facilities... Large Synoptic Survey Telescope",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-052:2",
+    "batch_id": "arxiv-052",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "subject": "Square Kilometer Array",
+    "predicate": "is a type of",
+    "object": "astronomical facility",
+    "evidence_span": "international network of front-line astronomical facilities... Square Kilometer Array",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-052:3",
+    "batch_id": "arxiv-052",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "subject": "Euclid",
+    "predicate": "is a type of",
+    "object": "astronomical facility",
+    "evidence_span": "international network of front-line astronomical facilities... Euclid",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-052:4",
+    "batch_id": "arxiv-052",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "subject": "WFIRST",
+    "predicate": "is a type of",
+    "object": "astronomical facility",
+    "evidence_span": "international network of front-line astronomical facilities... WFIRST",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:0",
+    "batch_id": "arxiv-056",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Science opportunities enabled by the era of Visible Band Stellar Imaging with sub-100 μarc-sec angular resolution",
+    "source_url": "http://arxiv.org/abs/1908.03164v1",
+    "source_fingerprint": "d9e53e4b27615b2e11cb21a3ec2fc249d38fd9feafc13d46680399c976941034",
+    "source_text": "Next generation arrays of Imaging Cherenkov telescopes, to be constructed in the next decade, can provide unprecedented visible band imaging of several thousand bright (m< 6), hot (O/B/A) stars using a modern implementation of Stellar Intensity Interferometry (SII).",
+    "subject": "Stellar Intensity Interferometry",
+    "predicate": "is a type of",
+    "object": "imaging technique",
+    "evidence_span": "Stellar Intensity Interferometry (SII)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node",
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:0",
+    "batch_id": "arxiv-070",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "On the Role of System Software in Energy Management of Neuromorphic Computing",
+    "source_url": "http://arxiv.org/abs/2103.12231v1",
+    "source_fingerprint": "952f95095ab6769e98440e0079d3b18e9a94c169ea7c4e0095c2a8d1f386c72b",
+    "source_text": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs, especially those that are implemented using Spiking Neural Network (SNN).",
+    "subject": "DYNAPs",
+    "predicate": "is a type of",
+    "object": "Neuromorphic computing systems",
+    "evidence_span": "Neuromorphic computing systems such as DYNAPs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:1",
+    "batch_id": "arxiv-070",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "On the Role of System Software in Energy Management of Neuromorphic Computing",
+    "source_url": "http://arxiv.org/abs/2103.12231v1",
+    "source_fingerprint": "952f95095ab6769e98440e0079d3b18e9a94c169ea7c4e0095c2a8d1f386c72b",
+    "source_text": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs, especially those that are implemented using Spiking Neural Network (SNN).",
+    "subject": "Loihi",
+    "predicate": "is a type of",
+    "object": "Neuromorphic computing systems",
+    "evidence_span": "Neuromorphic computing systems such as ... Loihi",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-094:0",
+    "batch_id": "arxiv-094",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Unleashing quantum algorithms with Qinterpreter: bridging the gap between theory and practice across leading quantum computing platforms",
+    "source_url": "http://arxiv.org/abs/2310.07173v3",
+    "source_fingerprint": "66b21db74d9dd4fcb2089fe1a3395ef77006692866dbf5a01ba1992136fa5c01",
+    "source_text": "These libraries allow for quantum simulations on classical computers and facilitate program execution on corresponding quantum hardware, e.g., Qiskit programs on IBM quantum computers.",
+    "subject": "Qiskit",
+    "predicate": "is a type of",
+    "object": "quantum simulation library",
+    "evidence_span": "Qiskit programs on IBM quantum computers",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-098:0",
+    "batch_id": "arxiv-098",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Integrating ChatGPT in a Computer Science Course: Students Perceptions and Suggestions",
+    "source_url": "http://arxiv.org/abs/2402.01640v1",
+    "source_fingerprint": "28ed076a0cfc1bcac530f1c6a4220610ef9e4d9d98dbb56fe1bfd020b1c49da5",
+    "source_text": "Following a ChatGPT activity which includes code completion and analysis, seven students participated in in-depth interviews.",
+    "subject": "ChatGPT",
+    "predicate": "is a type of",
+    "object": "code completion and analysis tool",
+    "evidence_span": "ChatGPT activity which includes code completion and analysis",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ]
+  }
+]

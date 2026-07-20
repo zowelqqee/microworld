@@ -1,0 +1,1348 @@
+[
+  {
+    "candidate_id": "arxiv-002:0",
+    "batch_id": "arxiv-002",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Quasipolynomial Normalisation in Deep Inference via Atomic Flows and Threshold Formulae",
+    "source_url": "http://arxiv.org/abs/0903.5392v5",
+    "source_fingerprint": "2e038b50fd90ebaf265e40b75c1da1a0a6bb8a3510d9552cfa92bd3a7bfad397",
+    "source_text": "The main new ingredient is the use of a computational trace of deep-inference proofs called atomic flows, which are both very simple (they only trace structural rules and forget logical rules) and strong enough to faithfully represent the cut-elimination procedure.",
+    "subject": "atomic flows",
+    "predicate": "is a type of",
+    "object": "computational trace of deep-inference proofs",
+    "evidence_span": "a computational trace of deep-inference proofs called atomic flows",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:1",
+    "batch_id": "arxiv-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Brief History of Context",
+    "source_url": "http://arxiv.org/abs/0912.1838v1",
+    "source_fingerprint": "cbf5341c95f4810f4d1d06faf10f7017045bfebb2fb46b95e2b9b54467d66366",
+    "source_text": "In many areas of research in computer science, notably on web-based services, human-computer interaction (HCI), ubiquitous computing applications, and context-aware systems there is a need to provide a formal operational definition of context.",
+    "subject": "human-computer interaction",
+    "predicate": "is a type of",
+    "object": "research in computer science",
+    "evidence_span": "research in computer science, notably on ... human-computer interaction (HCI)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-005:2",
+    "batch_id": "arxiv-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A Brief History of Context",
+    "source_url": "http://arxiv.org/abs/0912.1838v1",
+    "source_fingerprint": "cbf5341c95f4810f4d1d06faf10f7017045bfebb2fb46b95e2b9b54467d66366",
+    "source_text": "In many areas of research in computer science, notably on web-based services, human-computer interaction (HCI), ubiquitous computing applications, and context-aware systems there is a need to provide a formal operational definition of context.",
+    "subject": "ubiquitous computing applications",
+    "predicate": "is a type of",
+    "object": "research in computer science",
+    "evidence_span": "research in computer science, notably on ... ubiquitous computing applications",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-006:0",
+    "batch_id": "arxiv-006",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Convergence of Corporate and Information Security",
+    "source_url": "http://arxiv.org/abs/1002.1950v1",
+    "source_fingerprint": "80d5a563c1507570792d161504031130d7883a58be42b9669cf943e70f413416",
+    "source_text": "There is no current standard or best practice offered by the security community regarding convergence; however many organizations such as the Alliance for Enterprise Security Risk Management (AESRM) offer some excellent suggestions for integrating a converged security program.",
+    "subject": "Alliance for Enterprise Security Risk Management",
+    "predicate": "is a",
+    "object": "organization",
+    "evidence_span": "many organizations such as the Alliance for Enterprise Security Risk Management (AESRM)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-007:0",
+    "batch_id": "arxiv-007",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding",
+    "source_url": "http://arxiv.org/abs/1002.1954v1",
+    "source_fingerprint": "3583762bbb5f3b10d353f834304f6735152059d809f9f50f7a6af986601c080c",
+    "source_text": "WiMAX technology is based on the IEEE 802.16 specification of which IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications.",
+    "subject": "WiMAX",
+    "predicate": "is based on",
+    "object": "IEEE 802.16 specification",
+    "evidence_span": "WiMAX technology is based on the IEEE 802.16 specification",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-007:1",
+    "batch_id": "arxiv-007",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding",
+    "source_url": "http://arxiv.org/abs/1002.1954v1",
+    "source_fingerprint": "3583762bbb5f3b10d353f834304f6735152059d809f9f50f7a6af986601c080c",
+    "source_text": "WiMAX technology is based on the IEEE 802.16 specification of which IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications.",
+    "subject": "IEEE 802.16-2004",
+    "predicate": "is a type of",
+    "object": "Physical (PHY) layer specifications",
+    "evidence_span": "IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-007:2",
+    "batch_id": "arxiv-007",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding",
+    "source_url": "http://arxiv.org/abs/1002.1954v1",
+    "source_fingerprint": "3583762bbb5f3b10d353f834304f6735152059d809f9f50f7a6af986601c080c",
+    "source_text": "WiMAX technology is based on the IEEE 802.16 specification of which IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications.",
+    "subject": "802.16e amendment",
+    "predicate": "is a type of",
+    "object": "Physical (PHY) layer specifications",
+    "evidence_span": "IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "temporal_referent_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "temporal_referent_likely",
+    "grouping_reasons": [
+      "date/time reference appears without a clear capitalized subject anchor",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-011:0",
+    "batch_id": "arxiv-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Efficient Inventory Optimization of Multi Product, Multiple Suppliers with Lead Time using PSO",
+    "source_url": "http://arxiv.org/abs/1002.2196v1",
+    "source_fingerprint": "e4a195dbe03ba889dfcf24ba876179357b4b685f196dc58fe1a597d106cf247c",
+    "source_text": "A better optimization methodology that utilizes the Particle Swarm Optimization algorithm, one of the best optimization algorithms, is proposed to overcome the impasse in maintaining the optimal stock levels in each member of the supply chain.",
+    "subject": "Particle Swarm Optimization",
+    "predicate": "is a type of",
+    "object": "optimization algorithm",
+    "evidence_span": "Particle Swarm Optimization algorithm, one of the best optimization algorithms",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-014:0",
+    "batch_id": "arxiv-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "A proof Procedure for Testing Membership in Regular Expressions",
+    "source_url": "http://arxiv.org/abs/1002.2203v1",
+    "source_fingerprint": "7d5d3250fa835bdf66f6e4c62c1461319503ab0b948c06ee387c81beec3c013c",
+    "source_text": "As a consequence, our algorithm is simple and extends easily to various extensions to regular expressions such as timed regular expressions or regular languages with the intersection.",
+    "subject": "timed regular expressions",
+    "predicate": "is a type of",
+    "object": "regular expressions",
+    "evidence_span": "timed regular expressions or regular languages",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-020:0",
+    "batch_id": "arxiv-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Maps of Computer Science",
+    "source_url": "http://arxiv.org/abs/1304.2681v1",
+    "source_fingerprint": "5ffdca7342255bd5332840e391d63817dff1f7c000b8f29e5e02d1c28223c224",
+    "source_text": "Specifically, we use the titles of papers from the DBLP database to create what we call maps of computer science (MoCS).",
+    "subject": "MoCS",
+    "predicate": "is a type of",
+    "object": "maps of computer science",
+    "evidence_span": "what we call maps of computer science (MoCS)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-021:0",
+    "batch_id": "arxiv-021",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Declaratron, semantic specification for scientific computation using MathML",
+    "source_url": "http://arxiv.org/abs/1307.3088v1",
+    "source_fingerprint": "1075b857ad1b81ee3ed6dbf3b5787ea6a44517204ea9e22b194fec3d7b9f426b",
+    "source_text": "This uses displayable mathematical notation (Content MathML) and is both executable and semantically well defined.",
+    "subject": "Content MathML",
+    "predicate": "is a type of",
+    "object": "displayable mathematical notation",
+    "evidence_span": "displayable mathematical notation (Content MathML)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-028:0",
+    "batch_id": "arxiv-028",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Functional Automata - Formal Languages for Computer Science Students",
+    "source_url": "http://arxiv.org/abs/1412.4878v1",
+    "source_fingerprint": "e7ddb9c148424f06172c2e4f95143e77dd06abd61889f4774ba23d3879961e5e",
+    "source_text": "It describes the implementation and the classroom use of a library, FSM, designed to provide students with the opportunity to experiment and test their designs using state machines, grammars, and regular expressions.",
+    "subject": "FSM",
+    "predicate": "is a type of",
+    "object": "library",
+    "evidence_span": "a library, FSM",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-028:1",
+    "batch_id": "arxiv-028",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Functional Automata - Formal Languages for Computer Science Students",
+    "source_url": "http://arxiv.org/abs/1412.4878v1",
+    "source_fingerprint": "e7ddb9c148424f06172c2e4f95143e77dd06abd61889f4774ba23d3879961e5e",
+    "source_text": "It describes the implementation and the classroom use of a library, FSM, designed to provide students with the opportunity to experiment and test their designs using state machines, grammars, and regular expressions.",
+    "subject": "FSM",
+    "predicate": "is designed to provide",
+    "object": "students with the opportunity to experiment and test their designs using state machines, grammars, and regular expressions",
+    "evidence_span": "FSM, designed to provide students with the opportunity to experiment and test their designs using state machines, grammars, and regular expressions",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-034:0",
+    "batch_id": "arxiv-034",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Proceedings Tenth International Workshop on Fixed Points in Computer Science",
+    "source_url": "http://arxiv.org/abs/1509.02826v1",
+    "source_fingerprint": "0498e00cf0bbbe186dd98a1b41c49f3d48d194906cd81f307cae99c205d15f44",
+    "source_text": "This volume contains the proceedings of the Tenth International Workshop on Fixed Points in Computer Science (FICS 2015) which took place on September 11th and 12th, 2015 in Berlin, Germany, as a satellite event of the conference Computer Science Logic (CSL 2015).",
+    "subject": "FICS 2015",
+    "predicate": "is an instance of",
+    "object": "Tenth International Workshop on Fixed Points in Computer Science",
+    "evidence_span": "Tenth International Workshop on Fixed Points in Computer Science (FICS 2015)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-034:1",
+    "batch_id": "arxiv-034",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Proceedings Tenth International Workshop on Fixed Points in Computer Science",
+    "source_url": "http://arxiv.org/abs/1509.02826v1",
+    "source_fingerprint": "0498e00cf0bbbe186dd98a1b41c49f3d48d194906cd81f307cae99c205d15f44",
+    "source_text": "This volume contains the proceedings of the Tenth International Workshop on Fixed Points in Computer Science (FICS 2015) which took place on September 11th and 12th, 2015 in Berlin, Germany, as a satellite event of the conference Computer Science Logic (CSL 2015).",
+    "subject": "FICS 2015",
+    "predicate": "is a type of",
+    "object": "satellite event of the conference Computer Science Logic (CSL 2015)",
+    "evidence_span": "FICS 2015 which took place on September 11th and 12th, 2015 in Berlin, Germany, as a satellite event of the conference Computer Science Logic (CSL 2015)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-042:0",
+    "batch_id": "arxiv-042",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BOSS-LDG: A Novel Computational Framework that Brings Together Blue Waters, Open Science Grid, Shifter and the LIGO Data Grid to Accelerate Gravitational Wave Discovery",
+    "source_url": "http://arxiv.org/abs/1709.08767v1",
+    "source_fingerprint": "a5f90741fe1bf6058cfc2e81aefdadd68afb7b95255f237d26da724134020de1",
+    "source_text": "To enable this computational infrastructure, we configured, for the first time, a LIGO Data Grid Tier-1 Center that can submit heterogeneous LIGO workflows using Open Science Grid facilities.",
+    "subject": "LIGO Data Grid Tier-1 Center",
+    "predicate": "is a type of",
+    "object": "computational infrastructure",
+    "evidence_span": "we configured, for the first time, a LIGO Data Grid Tier-1 Center that can submit heterogeneous LIGO workflows using Open Science Grid facilities.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-042:1",
+    "batch_id": "arxiv-042",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "BOSS-LDG: A Novel Computational Framework that Brings Together Blue Waters, Open Science Grid, Shifter and the LIGO Data Grid to Accelerate Gravitational Wave Discovery",
+    "source_url": "http://arxiv.org/abs/1709.08767v1",
+    "source_fingerprint": "a5f90741fe1bf6058cfc2e81aefdadd68afb7b95255f237d26da724134020de1",
+    "source_text": "To enable this computational infrastructure, we configured, for the first time, a LIGO Data Grid Tier-1 Center that can submit heterogeneous LIGO workflows using Open Science Grid facilities.",
+    "subject": "LIGO Data Grid Tier-1 Center",
+    "predicate": "uses",
+    "object": "Open Science Grid facilities",
+    "evidence_span": "LIGO Data Grid Tier-1 Center that can submit heterogeneous LIGO workflows using Open Science Grid facilities.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-044:0",
+    "batch_id": "arxiv-044",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Performance Optimization and Parallelization of a Parabolic Equation Solver in Computational Ocean Acoustics on Modern Many-core Computer",
+    "source_url": "http://arxiv.org/abs/1711.00005v2",
+    "source_fingerprint": "c6fc6dc9991d061ed972682a3306b4e8f8ea629b7950089e00a251587db1c0c4",
+    "source_text": "As one of open-source codes widely used in computational ocean acoustics, FOR3D can provide a very good estimate for underwater acoustic propagation.",
+    "subject": "FOR3D",
+    "predicate": "is a type of",
+    "object": "open-source codes",
+    "evidence_span": "FOR3D can provide a very good estimate for underwater acoustic propagation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-044:1",
+    "batch_id": "arxiv-044",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Performance Optimization and Parallelization of a Parabolic Equation Solver in Computational Ocean Acoustics on Modern Many-core Computer",
+    "source_url": "http://arxiv.org/abs/1711.00005v2",
+    "source_fingerprint": "c6fc6dc9991d061ed972682a3306b4e8f8ea629b7950089e00a251587db1c0c4",
+    "source_text": "As one of open-source codes widely used in computational ocean acoustics, FOR3D can provide a very good estimate for underwater acoustic propagation.",
+    "subject": "FOR3D",
+    "predicate": "is used for",
+    "object": "computational ocean acoustics",
+    "evidence_span": "FOR3D can provide a very good estimate for underwater acoustic propagation",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-054:0",
+    "batch_id": "arxiv-054",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Faster polytope rounding, sampling, and volume computation via a sublinear \"Ball Walk\"",
+    "source_url": "http://arxiv.org/abs/1905.01745v2",
+    "source_fingerprint": "2c7c499eb29fbd05f6746bb0647bcac13fffd73366a251948e1c0931a65bb858",
+    "source_text": "This gives a factor of $\\sqrt{n}$ improvement on the previous bound of $\\tilde{O}(mn^5\\mbox{polylog}(\\frac{1}{\\varepsilon},\\frac{R}{r}))$ for rounding, which uses the hit-and-run algorithm.",
+    "subject": "hit-and-run algorithm",
+    "predicate": "is a type of",
+    "object": "rounding",
+    "evidence_span": "rounding, which uses the hit-and-run algorithm",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-056:1",
+    "batch_id": "arxiv-056",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Science opportunities enabled by the era of Visible Band Stellar Imaging with sub-100 μarc-sec angular resolution",
+    "source_url": "http://arxiv.org/abs/1908.03164v1",
+    "source_fingerprint": "d9e53e4b27615b2e11cb21a3ec2fc249d38fd9feafc13d46680399c976941034",
+    "source_text": "Next generation arrays of Imaging Cherenkov telescopes, to be constructed in the next decade, can provide unprecedented visible band imaging of several thousand bright (m< 6), hot (O/B/A) stars using a modern implementation of Stellar Intensity Interferometry (SII).",
+    "subject": "Imaging Cherenkov telescopes",
+    "predicate": "is a type of",
+    "object": "telescope",
+    "evidence_span": "arrays of Imaging Cherenkov telescopes",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-062:0",
+    "batch_id": "arxiv-062",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Attaining High Bandwidth In Cloud Computing Through SDN-enabled Multi-tree Multicast",
+    "source_url": "http://arxiv.org/abs/2008.02522v1",
+    "source_fingerprint": "6000bc8c2ed411c900e81665c512eac3a69c162105853c3807a0526754200e34",
+    "source_text": "In this paper, a technique is proposed in how the newly developed network architecture, Software Defined Network (SDN), can promote the design of the multicast protocol and improve the performance of the multicast transmission in the cloud computing.",
+    "subject": "Software Defined Network",
+    "predicate": "is a type of",
+    "object": "network architecture",
+    "evidence_span": "the newly developed network architecture, Software Defined Network (SDN)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:0",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "psychology",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to psychology",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:1",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "neuroscience",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... neuroscience",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:2",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "cognitive science",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... cognitive science",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:3",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "computer science",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... computer science",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:4",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "data science",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... data science",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:5",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "statistics",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... statistics",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:6",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "machine learning",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... machine learning",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-065:7",
+    "batch_id": "arxiv-065",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "subject": "artificial intelligence",
+    "predicate": "is a type of",
+    "object": "computational sciences",
+    "evidence_span": "computational sciences -- including but not limited to... artificial intelligence",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-068:0",
+    "batch_id": "arxiv-068",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Inverse deformation analysis: an experimental and numerical assessment using the FEniCS Project",
+    "source_url": "http://arxiv.org/abs/2102.13455v1",
+    "source_fingerprint": "5ebff0d07df3665b92a42b4ab0bec749242605ce3a80661dab465cfcff073923",
+    "source_text": "In this paper, we develop a framework for solving inverse deformation problems using the FEniCS Project finite element software.",
+    "subject": "FEniCS Project",
+    "predicate": "is a type of",
+    "object": "finite element software",
+    "evidence_span": "FEniCS Project finite element software",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:2",
+    "batch_id": "arxiv-070",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "On the Role of System Software in Energy Management of Neuromorphic Computing",
+    "source_url": "http://arxiv.org/abs/2103.12231v1",
+    "source_fingerprint": "952f95095ab6769e98440e0079d3b18e9a94c169ea7c4e0095c2a8d1f386c72b",
+    "source_text": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs, especially those that are implemented using Spiking Neural Network (SNN).",
+    "subject": "DYNAPs",
+    "predicate": "is used to",
+    "object": "improve performance and energy efficiency of machine learning programs",
+    "evidence_span": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-070:3",
+    "batch_id": "arxiv-070",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "On the Role of System Software in Energy Management of Neuromorphic Computing",
+    "source_url": "http://arxiv.org/abs/2103.12231v1",
+    "source_fingerprint": "952f95095ab6769e98440e0079d3b18e9a94c169ea7c4e0095c2a8d1f386c72b",
+    "source_text": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs, especially those that are implemented using Spiking Neural Network (SNN).",
+    "subject": "Loihi",
+    "predicate": "is used to",
+    "object": "improve performance and energy efficiency of machine learning programs",
+    "evidence_span": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:0",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "subject": "stereo-pair RGB camera",
+    "predicate": "is a type of",
+    "object": "co-located sensor",
+    "evidence_span": "co-located sensors including a stereo-pair RGB camera",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:1",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "subject": "thermal imager",
+    "predicate": "is a type of",
+    "object": "co-located sensor",
+    "evidence_span": "co-located sensors including... a thermal imager",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:2",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "subject": "laser scanner",
+    "predicate": "is a type of",
+    "object": "co-located sensor",
+    "evidence_span": "co-located sensors including... a laser scanner",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:3",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "subject": "hyperspectral camera",
+    "predicate": "is a type of",
+    "object": "co-located sensor",
+    "evidence_span": "co-located sensors including... two hyperspectral cameras",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-073:4",
+    "batch_id": "arxiv-073",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "subject": "laser scanner",
+    "predicate": "is used to",
+    "object": "capture 3D structure",
+    "evidence_span": "a laser scanner to capture 3D structure",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-079:0",
+    "batch_id": "arxiv-079",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "D3: A Massive Dataset of Scholarly Metadata for Analyzing the State of Computer Science Research",
+    "source_url": "http://arxiv.org/abs/2204.13384v4",
+    "source_fingerprint": "a4139cb485fa292256e1dca39fda7e9e235d050b9f913bf061b0ccf9fd851e0f",
+    "source_text": "DBLP is the largest open-access repository of scientific articles on computer science and provides metadata associated with publications, authors, and venues.",
+    "subject": "DBLP",
+    "predicate": "is a type of",
+    "object": "open-access repository",
+    "evidence_span": "DBLP is the largest open-access repository of scientific articles on computer science",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-086:0",
+    "batch_id": "arxiv-086",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Deep learning applied to computational mechanics: A comprehensive review, state of the art, and the classics",
+    "source_url": "http://arxiv.org/abs/2212.08989v3",
+    "source_fingerprint": "41037ef5c92d3554d746cbdcdbaa17f0c6a1e6e6a9b604016d49f6cc6be4cf72",
+    "source_text": "Both LSTM and attention architectures, together with modern and generalized classic optimizers to include stochasticity for DL networks, are extensively reviewed.",
+    "subject": "LSTM",
+    "predicate": "is a type of",
+    "object": "architecture",
+    "evidence_span": "LSTM and attention architectures",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-086:1",
+    "batch_id": "arxiv-086",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Deep learning applied to computational mechanics: A comprehensive review, state of the art, and the classics",
+    "source_url": "http://arxiv.org/abs/2212.08989v3",
+    "source_fingerprint": "41037ef5c92d3554d746cbdcdbaa17f0c6a1e6e6a9b604016d49f6cc6be4cf72",
+    "source_text": "Both LSTM and attention architectures, together with modern and generalized classic optimizers to include stochasticity for DL networks, are extensively reviewed.",
+    "subject": "attention",
+    "predicate": "is a type of",
+    "object": "architecture",
+    "evidence_span": "LSTM and attention architectures",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-087:0",
+    "batch_id": "arxiv-087",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Protoplanetary Disk Science with the Orbiting Astronomical Satellite Investigating Stellar Systems (OASIS) Observatory",
+    "source_url": "http://arxiv.org/abs/2302.05223v2",
+    "source_fingerprint": "b13a0b43f9784cbebee8345ce4be2ab215d7daa8f32fe7b111000438e56bafcd",
+    "source_text": "OASIS's suite of heterodyne receivers allow for simultaneous, high spectral resolution observations of water emission lines spanning a large range of physical conditions within protoplanetary disks.",
+    "subject": "OASIS",
+    "predicate": "is a",
+    "object": "suite of heterodyne receivers",
+    "evidence_span": "OASIS's suite of heterodyne receivers",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-087:1",
+    "batch_id": "arxiv-087",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Protoplanetary Disk Science with the Orbiting Astronomical Satellite Investigating Stellar Systems (OASIS) Observatory",
+    "source_url": "http://arxiv.org/abs/2302.05223v2",
+    "source_fingerprint": "b13a0b43f9784cbebee8345ce4be2ab215d7daa8f32fe7b111000438e56bafcd",
+    "source_text": "OASIS's suite of heterodyne receivers allow for simultaneous, high spectral resolution observations of water emission lines spanning a large range of physical conditions within protoplanetary disks.",
+    "subject": "OASIS",
+    "predicate": "allows for",
+    "object": "simultaneous, high spectral resolution observations of water emission lines",
+    "evidence_span": "OASIS's suite of heterodyne receivers allow for simultaneous, high spectral resolution observations of water emission lines",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": []
+  },
+  {
+    "candidate_id": "arxiv-093:0",
+    "batch_id": "arxiv-093",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Mastery Rubric for Statistics and Data Science: promoting coherence and consistency in data science education and training",
+    "source_url": "http://arxiv.org/abs/2308.08004v1",
+    "source_fingerprint": "5ecd3cbfc303544abc0b670a654e37beeaa4a0774497e3857e063959243e174f",
+    "source_text": "The MR SDS supports each of these program structures while promoting consistency with international, consensus based, curricular recommendations for statistics and data science, and allows 'statistics', 'data science', and 'statistics and data science' curricula to consistently educate students with a focus on increasing learners independence.",
+    "subject": "MR SDS",
+    "predicate": "is a type of",
+    "object": "program structure",
+    "evidence_span": "The MR SDS supports each of these program structures",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-094:1",
+    "batch_id": "arxiv-094",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Unleashing quantum algorithms with Qinterpreter: bridging the gap between theory and practice across leading quantum computing platforms",
+    "source_url": "http://arxiv.org/abs/2310.07173v3",
+    "source_fingerprint": "66b21db74d9dd4fcb2089fe1a3395ef77006692866dbf5a01ba1992136fa5c01",
+    "source_text": "These libraries allow for quantum simulations on classical computers and facilitate program execution on corresponding quantum hardware, e.g., Qiskit programs on IBM quantum computers.",
+    "subject": "IBM quantum computers",
+    "predicate": "is a type of",
+    "object": "quantum hardware",
+    "evidence_span": "IBM quantum computers",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "generic_property_likely"
+    ],
+    "primary_review_group": "generic_property_likely",
+    "grouping_reasons": [
+      "predicate matches explicit generic-property/activity list"
+    ]
+  }
+]

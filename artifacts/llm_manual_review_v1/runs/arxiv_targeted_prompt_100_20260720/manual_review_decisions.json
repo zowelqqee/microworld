@@ -1,0 +1,39 @@
+{
+  "review_source": "user-supplied pasted manual review",
+  "reviewed_at": "2026-07-20",
+  "review_scope": "all 45 node-quality-triaged targeted-prompt candidates; no automatic admission",
+  "encoding": {
+    "universe": "every candidate_id in manual_review_candidates.json",
+    "default": {
+      "literal_support": "yes",
+      "clean_entities": "no",
+      "new_predicate": "no",
+      "verdict": "REJECT"
+    },
+    "overrides": "Lists below are exhaustive overrides. Reviewer notes are retained in the supplied review tables."
+  },
+  "accepted_candidate_ids": [
+    "arxiv-002:0", "arxiv-005:1", "arxiv-006:0", "arxiv-007:0", "arxiv-007:1",
+    "arxiv-007:2", "arxiv-011:0", "arxiv-014:0", "arxiv-020:0", "arxiv-021:0",
+    "arxiv-028:0", "arxiv-042:1", "arxiv-044:0", "arxiv-044:1", "arxiv-056:1",
+    "arxiv-062:0", "arxiv-065:0", "arxiv-065:1", "arxiv-065:2", "arxiv-065:3",
+    "arxiv-065:4", "arxiv-065:5", "arxiv-065:6", "arxiv-065:7", "arxiv-068:0",
+    "arxiv-073:0", "arxiv-073:1", "arxiv-073:2", "arxiv-073:3", "arxiv-073:4",
+    "arxiv-079:0", "arxiv-086:0", "arxiv-086:1", "arxiv-094:1"
+  ],
+  "literal_support_no_candidate_ids": [
+    "arxiv-005:2", "arxiv-034:0", "arxiv-034:1", "arxiv-042:0", "arxiv-054:0",
+    "arxiv-070:2", "arxiv-070:3", "arxiv-087:0", "arxiv-087:1", "arxiv-093:0"
+  ],
+  "clean_entities_yes_candidate_ids": [
+    "arxiv-002:0", "arxiv-005:1", "arxiv-006:0", "arxiv-007:0", "arxiv-007:1",
+    "arxiv-007:2", "arxiv-011:0", "arxiv-014:0", "arxiv-020:0", "arxiv-021:0",
+    "arxiv-028:0", "arxiv-034:0", "arxiv-042:1", "arxiv-044:0", "arxiv-044:1",
+    "arxiv-056:1", "arxiv-062:0", "arxiv-065:0", "arxiv-065:1", "arxiv-065:2",
+    "arxiv-065:3", "arxiv-065:4", "arxiv-065:5", "arxiv-065:6", "arxiv-065:7",
+    "arxiv-068:0", "arxiv-073:0", "arxiv-073:1", "arxiv-073:2", "arxiv-073:3",
+    "arxiv-073:4", "arxiv-079:0", "arxiv-086:0", "arxiv-086:1", "arxiv-087:1",
+    "arxiv-094:1"
+  ],
+  "new_predicate_yes_candidate_ids": []
+}

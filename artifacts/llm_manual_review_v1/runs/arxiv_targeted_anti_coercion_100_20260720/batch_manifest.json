@@ -1,0 +1,36 @@
+{
+  "run_id": "arxiv_targeted_anti_coercion_100_20260720",
+  "model": "gemini-3.1-flash-lite",
+  "prompt_profile": "targeted_class_member_named_system_anti_coercion_v1",
+  "source_kind": "arxiv_official_api",
+  "excluded_source_url_count": 243,
+  "source_sentence_count": 100,
+  "max_sentences_per_source": 1,
+  "raw_response_count": 100,
+  "raw_triple_count": 20,
+  "manual_review_candidate_count": 14,
+  "review_grouping": "explicit_heuristics_for_manual_review_only_v1",
+  "primary_review_group_counts": {
+    "generic_property_likely": 13,
+    "temporal_referent_likely": 1
+  },
+  "flag_label_counts": {
+    "generic_property_likely": 14,
+    "temporal_referent_likely": 1
+  },
+  "node_quality_rejection_count": 6,
+  "node_quality_mode": "unchanged_filter_with_proposal_local_literal_index",
+  "request_delay_seconds": 5.0,
+  "maximum_rpm": 12.0,
+  "proposal_only": true,
+  "accepted_memory_modified": false,
+  "promoted_overlay_modified": false,
+  "serving_memory_modified": false,
+  "precision_gate_run": false,
+  "manual_review_complete": true,
+  "manual_accepted_proposal_count": 11,
+  "manual_rejected_candidate_count": 3,
+  "manual_accept_rate": 0.7857142857142857,
+  "manual_review_decisions_path": "manual_review_decisions.json",
+  "proposal_overlay_path": "manual_accepted_proposal_overlay.json"
+}

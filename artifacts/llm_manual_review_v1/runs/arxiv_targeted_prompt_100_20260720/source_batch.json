@@ -1,0 +1,702 @@
+[
+  {
+    "id": "arxiv-000",
+    "source_title": "Applications of Physics and Mathematics to Social Science",
+    "source_url": "http://arxiv.org/abs/0801.0121v1",
+    "source_text": "Here under \"mathematics\" we include also all computer simulations if they are not taken from physics, while physics applications include simulations of models which basically existed already in physics before they were applied to social simulations.",
+    "source_fingerprint": "d74a4dfa365406aeb26472be35f0ef3009f73241abb5f9668604b2ac648ae566"
+  },
+  {
+    "id": "arxiv-001",
+    "source_title": "Linear Logic by Levels and Bounded Time Complexity",
+    "source_url": "http://arxiv.org/abs/0801.1253v3",
+    "source_text": "Here, we propose a more general form of stratification, based on inducing levels in proof nets by means of indexes, which allows us to extend Girard's systems while keeping the same complexity properties.",
+    "source_fingerprint": "5f3eb98c172c9b01a9212aadd0141561c02ac72a5f57a7db2386446a2255845b"
+  },
+  {
+    "id": "arxiv-002",
+    "source_title": "Quasipolynomial Normalisation in Deep Inference via Atomic Flows and Threshold Formulae",
+    "source_url": "http://arxiv.org/abs/0903.5392v5",
+    "source_text": "The main new ingredient is the use of a computational trace of deep-inference proofs called atomic flows, which are both very simple (they only trace structural rules and forget logical rules) and strong enough to faithfully represent the cut-elimination procedure.",
+    "source_fingerprint": "2e038b50fd90ebaf265e40b75c1da1a0a6bb8a3510d9552cfa92bd3a7bfad397"
+  },
+  {
+    "id": "arxiv-003",
+    "source_title": "Novel Framework for Hidden Data in the Image Page within Executable File Using Computation between Advanced Encryption Standard and Distortion Techniques",
+    "source_url": "http://arxiv.org/abs/0908.0216v1",
+    "source_text": "The hurried development of multimedia and internet allows for wide distribution of digital media data.",
+    "source_fingerprint": "b7d2181fa9ccf640722726c19fd24ddbc1e4810a9134373270ebe076abe85f58"
+  },
+  {
+    "id": "arxiv-004",
+    "source_title": "Enhanced Mode Selection Algorithm for H.264 encoder for Application in Low Computational power devices",
+    "source_url": "http://arxiv.org/abs/0909.0245v1",
+    "source_text": "An additional goal was to provide enough flexibility to allow the standard to be applied to a wide variety of applications.",
+    "source_fingerprint": "c8f0333c6111887e3757539fc62d710154acda3b54d6dea9d738ff06df620579"
+  },
+  {
+    "id": "arxiv-005",
+    "source_title": "A Brief History of Context",
+    "source_url": "http://arxiv.org/abs/0912.1838v1",
+    "source_text": "In many areas of research in computer science, notably on web-based services, human-computer interaction (HCI), ubiquitous computing applications, and context-aware systems there is a need to provide a formal operational definition of context.",
+    "source_fingerprint": "cbf5341c95f4810f4d1d06faf10f7017045bfebb2fb46b95e2b9b54467d66366"
+  },
+  {
+    "id": "arxiv-006",
+    "source_title": "Convergence of Corporate and Information Security",
+    "source_url": "http://arxiv.org/abs/1002.1950v1",
+    "source_text": "There is no current standard or best practice offered by the security community regarding convergence; however many organizations such as the Alliance for Enterprise Security Risk Management (AESRM) offer some excellent suggestions for integrating a converged security program.",
+    "source_fingerprint": "80d5a563c1507570792d161504031130d7883a58be42b9669cf943e70f413416"
+  },
+  {
+    "id": "arxiv-007",
+    "source_title": "High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding",
+    "source_url": "http://arxiv.org/abs/1002.1954v1",
+    "source_text": "WiMAX technology is based on the IEEE 802.16 specification of which IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications.",
+    "source_fingerprint": "3583762bbb5f3b10d353f834304f6735152059d809f9f50f7a6af986601c080c"
+  },
+  {
+    "id": "arxiv-008",
+    "source_title": "Reaching the Unreached A Role of ICT in Sustainable Rural Development",
+    "source_url": "http://arxiv.org/abs/1002.2134v1",
+    "source_text": "The paper concludes that ICTs offer the developing country, the opportunity to look ahead several stages of rural development by the use of internet.",
+    "source_fingerprint": "7949c830fc4d6168a9bdb3e40743b0cc3856fa65f060b9e201120991d3850207"
+  },
+  {
+    "id": "arxiv-009",
+    "source_title": "A Survivability Strategy in Route Optimization Mobile Network by Memetic Algorithm",
+    "source_url": "http://arxiv.org/abs/1002.2186v1",
+    "source_text": "The capability to provide network service even under a significant network system element disruption is the backbone for the survival of route optimize of mobile network Technology in today s world.",
+    "source_fingerprint": "60d8dccb151f55dade4f886b016cdc0000e59c95e6b76d7a8ecd85af70a315f2"
+  },
+  {
+    "id": "arxiv-010",
+    "source_title": "Analysis of Large Scale Propagation Models for Mobile Communications in Urban Area",
+    "source_url": "http://arxiv.org/abs/1002.2187v1",
+    "source_text": "Unlike wired channels that are stationary and predictable, radio channels are extremely random and dont offer easy analysis.",
+    "source_fingerprint": "64e8ffc938bec5d242b8865c715ad43ff2cd219000c626d81981bdbc39ca7b40"
+  },
+  {
+    "id": "arxiv-011",
+    "source_title": "Efficient Inventory Optimization of Multi Product, Multiple Suppliers with Lead Time using PSO",
+    "source_url": "http://arxiv.org/abs/1002.2196v1",
+    "source_text": "A better optimization methodology that utilizes the Particle Swarm Optimization algorithm, one of the best optimization algorithms, is proposed to overcome the impasse in maintaining the optimal stock levels in each member of the supply chain.",
+    "source_fingerprint": "e4a195dbe03ba889dfcf24ba876179357b4b685f196dc58fe1a597d106cf247c"
+  },
+  {
+    "id": "arxiv-012",
+    "source_title": "An Intelligent System For Effective Forest Fire Detection Using Spatial Data",
+    "source_url": "http://arxiv.org/abs/1002.2199v1",
+    "source_text": "The motivation behind this research is to obtain beneficial information from images in the forest spatial data and use the same in the determination of regions at the risk of fires by utilizing Image Processing and Artificial Intelligence techniques.",
+    "source_fingerprint": "808822b1540badb0976b938615c8c132bc84e57ebebc4c08700648409a2034ea"
+  },
+  {
+    "id": "arxiv-013",
+    "source_title": "Modeling of Human Criminal Behavior using Probabilistic Networks",
+    "source_url": "http://arxiv.org/abs/1002.2202v1",
+    "source_text": "The objective is to produce a more systematic and empirical approach to profiling, and to use the resulting PN model as a decision tool.",
+    "source_fingerprint": "10bf013f239a2e968408d3d196a9faeeca5804bfdf2ceecc06ae549e3f1b3f94"
+  },
+  {
+    "id": "arxiv-014",
+    "source_title": "A proof Procedure for Testing Membership in Regular Expressions",
+    "source_url": "http://arxiv.org/abs/1002.2203v1",
+    "source_text": "As a consequence, our algorithm is simple and extends easily to various extensions to regular expressions such as timed regular expressions or regular languages with the intersection.",
+    "source_fingerprint": "7d5d3250fa835bdf66f6e4c62c1461319503ab0b948c06ee387c81beec3c013c"
+  },
+  {
+    "id": "arxiv-015",
+    "source_title": "A New Clustering Approach based on Page's Path Similarity for Navigation Patterns Mining",
+    "source_url": "http://arxiv.org/abs/1003.1450v1",
+    "source_text": "In this study, a new clustering approach is introduced that employs logical path storing of a website pages as another parameter which is regarded as a similarity parameter and conceptual relation between web pages.",
+    "source_fingerprint": "6190bc3257fd3e8ee91aecc521e5d7d2eca7bc88fe9f8e6a986e1da8567ef2c6"
+  },
+  {
+    "id": "arxiv-016",
+    "source_title": "Ontology Based Query Expansion Using Word Sense Disambiguation",
+    "source_url": "http://arxiv.org/abs/1003.1460v1",
+    "source_text": "Therefore, the search engines sometimes do not provide sufficient information to the users.",
+    "source_fingerprint": "9fed4a9ee833c672a7773ebd4f18a7a9cf04b5a5caccfb24745eb51b83e4bb91"
+  },
+  {
+    "id": "arxiv-017",
+    "source_title": "A Computational Algorithm for Metrical Classification of Verse",
+    "source_url": "http://arxiv.org/abs/1004.3262v3",
+    "source_text": "Such metre-wise classification of verses has numerous uses for scholars and researchers alike, such as in the study of poets and their style of Sanskrit poetical works.",
+    "source_fingerprint": "a371bdd6daa48a0abc2ef03863a091b483133dd59f82b4a89334a25d17ad34da"
+  },
+  {
+    "id": "arxiv-018",
+    "source_title": "Sociological and Communication-Theoretical Perspectives on the Commercialization of the Sciences",
+    "source_url": "http://arxiv.org/abs/1109.6600v4",
+    "source_text": "Both self-organization and organization are important for the further development of the sciences: the two dynamics condition and enable each other.",
+    "source_fingerprint": "cd5246df19cf4090ba676f68d0d05fc96069d52ce8340af682d19ed77a771b27"
+  },
+  {
+    "id": "arxiv-019",
+    "source_title": "Effective Ways of Secure, Private and Trusted Cloud Computing",
+    "source_url": "http://arxiv.org/abs/1111.3165v1",
+    "source_text": "It provides people the way to share distributed resources and services that belong to different organization.",
+    "source_fingerprint": "3256b0d75c3a2739761b8583f843637f8a6a620908da5ae3ad160a4a84e7b3fe"
+  },
+  {
+    "id": "arxiv-020",
+    "source_title": "Maps of Computer Science",
+    "source_url": "http://arxiv.org/abs/1304.2681v1",
+    "source_text": "Specifically, we use the titles of papers from the DBLP database to create what we call maps of computer science (MoCS).",
+    "source_fingerprint": "5ffdca7342255bd5332840e391d63817dff1f7c000b8f29e5e02d1c28223c224"
+  },
+  {
+    "id": "arxiv-021",
+    "source_title": "The Declaratron, semantic specification for scientific computation using MathML",
+    "source_url": "http://arxiv.org/abs/1307.3088v1",
+    "source_text": "This uses displayable mathematical notation (Content MathML) and is both executable and semantically well defined.",
+    "source_fingerprint": "1075b857ad1b81ee3ed6dbf3b5787ea6a44517204ea9e22b194fec3d7b9f426b"
+  },
+  {
+    "id": "arxiv-022",
+    "source_title": "The Informed Sampler: A Discriminative Approach to Bayesian Inference in Generative Computer Vision Models",
+    "source_url": "http://arxiv.org/abs/1402.0859v3",
+    "source_text": "We implement this idea in a principled way with an \"informed sampler\" and in careful experiments demonstrate it on challenging generative models which contain renderer programs as their components.",
+    "source_fingerprint": "9c9b0d5ca7b3d4046c3809fe589a71a5696663e332965cb7352a77ac416ab3c1"
+  },
+  {
+    "id": "arxiv-023",
+    "source_title": "An EMUSIM Technique and its Components in Cloud Computing- A Review",
+    "source_url": "http://arxiv.org/abs/1402.1932v1",
+    "source_text": "Recent efforts to design and develop Cloud technologies focus on defining novel methods, policies and mechanisms for efficiently managing Cloud infrastructures.",
+    "source_fingerprint": "e5d32924ebaa2369ef4fb1e025f359845c6d7aed2d587bf19e7f9e13c1f3bc5d"
+  },
+  {
+    "id": "arxiv-024",
+    "source_title": "Growth rates of modern science: A bibliometric analysis based on the number of publications and cited references",
+    "source_url": "http://arxiv.org/abs/1402.4578v3",
+    "source_text": "To do this we (i) use current data up to publication year 2012 and (ii) analyse it across all disciplines and also separately for the natural sciences and for the medical and health sciences.",
+    "source_fingerprint": "58184ba863834cc825489dc9d33d12f1baa0f9b3d602f7bd1da6f0698fed420e"
+  },
+  {
+    "id": "arxiv-025",
+    "source_title": "A Concurrent Pattern Calculus",
+    "source_url": "http://arxiv.org/abs/1405.1546v3",
+    "source_text": "CPC provides a natural language to express trade where information exchange is pivotal to interaction.",
+    "source_fingerprint": "9a5e8153ca20f9bc65da25ee268ff247606ffb211863d54deb3a995838acc382"
+  },
+  {
+    "id": "arxiv-026",
+    "source_title": "The Chemistry Between High School Students and Computer Science",
+    "source_url": "http://arxiv.org/abs/1406.2222v1",
+    "source_text": "Our evaluation of the effectiveness of this approach indicates that the students do become more aware of computer science as a discipline, but system support issues in the classroom can make the approach difficult for teachers and discouraging for the students.",
+    "source_fingerprint": "e41e72f498142359155c3c83e1cd69b4920552a4c3345f058f3262f77b671d04"
+  },
+  {
+    "id": "arxiv-027",
+    "source_title": "Science and Ethnicity: How Ethnicities Shape the Evolution of Computer Science Research Community",
+    "source_url": "http://arxiv.org/abs/1411.1129v1",
+    "source_text": "We use name ethnicity classification as an indicator of ethnicity.",
+    "source_fingerprint": "b7dbf488e37ece6fa5b021d939a725626996c9959a1a388bc617babc4b1690e6"
+  },
+  {
+    "id": "arxiv-028",
+    "source_title": "Functional Automata - Formal Languages for Computer Science Students",
+    "source_url": "http://arxiv.org/abs/1412.4878v1",
+    "source_text": "It describes the implementation and the classroom use of a library, FSM, designed to provide students with the opportunity to experiment and test their designs using state machines, grammars, and regular expressions.",
+    "source_fingerprint": "e7ddb9c148424f06172c2e4f95143e77dd06abd61889f4774ba23d3879961e5e"
+  },
+  {
+    "id": "arxiv-029",
+    "source_title": "Finding Volunteers' Engagement Profiles in Human Computation for Citizen Science Projects",
+    "source_url": "http://arxiv.org/abs/1501.02134v1",
+    "source_text": "Human computation for citizen science projects consists in designing systems that allow large crowds of volunteers to contribute to scientific research by executing human computation tasks.",
+    "source_fingerprint": "67b9f05f0352c93105983547d5fe12f621e52c27196603f8780dabb886d01407"
+  },
+  {
+    "id": "arxiv-030",
+    "source_title": "Science Bots: a Model for the Future of Scientific Computation?",
+    "source_url": "http://arxiv.org/abs/1503.04374v1",
+    "source_text": "Positive reputation given to these bots would also shine on their owners, motivating them to contribute to this system, while negative reputation will allow us to filter out low-quality data, which is inevitable in an open and decentralized system.",
+    "source_fingerprint": "4d72be5a5449afa4515c8218a4977e6cc9e3f58a94ab522c319d19efc5e84166"
+  },
+  {
+    "id": "arxiv-031",
+    "source_title": "Highly-cited papers in Library and Information Science (LIS): Authors, institutions, and network structures",
+    "source_url": "http://arxiv.org/abs/1504.02576v1",
+    "source_text": "Analysis of co-authorship relations among the 798 highly-cited scientists shows that co-authorships are based on common interests in a specific topic.",
+    "source_fingerprint": "994a4dcbccd189701741c2aae20e47e05e37e7956c96793202a987cbf3578655"
+  },
+  {
+    "id": "arxiv-032",
+    "source_title": "Writing and Publishing Scientific Articles in Computer Science",
+    "source_url": "http://arxiv.org/abs/1506.00555v1",
+    "source_text": "In this article we propose a conceptual framework to support the writing and publishing of scientific papers in computer science, providing a kind of guide for computer science students to effectively present the results of their research practices, particularly for experimental research.",
+    "source_fingerprint": "776cd85a1a2dd6b876499544d27add0bd83853766301b8c2731dcc97baedea62"
+  },
+  {
+    "id": "arxiv-033",
+    "source_title": "Pulsar Science with the SKA",
+    "source_url": "http://arxiv.org/abs/1507.04423v1",
+    "source_text": "While technically challenging, we can build our expectations on recent discoveries and technical developments that have reinforced our previous science goals.",
+    "source_fingerprint": "14b01a4a36ba2ac59862cd3891121654b57ad4479c79e6f65ed0b435aa0a2182"
+  },
+  {
+    "id": "arxiv-034",
+    "source_title": "Proceedings Tenth International Workshop on Fixed Points in Computer Science",
+    "source_url": "http://arxiv.org/abs/1509.02826v1",
+    "source_text": "This volume contains the proceedings of the Tenth International Workshop on Fixed Points in Computer Science (FICS 2015) which took place on September 11th and 12th, 2015 in Berlin, Germany, as a satellite event of the conference Computer Science Logic (CSL 2015).",
+    "source_fingerprint": "0498e00cf0bbbe186dd98a1b41c49f3d48d194906cd81f307cae99c205d15f44"
+  },
+  {
+    "id": "arxiv-035",
+    "source_title": "Gender, Productivity, and Prestige in Computer Science Faculty Hiring Networks",
+    "source_url": "http://arxiv.org/abs/1602.00795v1",
+    "source_text": "These findings illustrate the subtle nature of gender inequality in faculty hiring networks and provide new insights to the underrepresentation of women in computer science.",
+    "source_fingerprint": "12013ef8684907d9d845f4091c4551f299055a9c24b468868a05b2d69b093cd9"
+  },
+  {
+    "id": "arxiv-036",
+    "source_title": "SciChallenge: Using Student-Generated Content and Contests to Enhance the Interest for Science Education and Careers",
+    "source_url": "http://arxiv.org/abs/1603.09598v1",
+    "source_text": "It uses a contest-based approach towards self-produced digital education materials from young people for young people.",
+    "source_fingerprint": "f03204e75719cc865178990e1e5b4a50616a7409e1b2ebaa52cd8e76f594aafb"
+  },
+  {
+    "id": "arxiv-037",
+    "source_title": "Accelerating Science: A Computing Research Agenda",
+    "source_url": "http://arxiv.org/abs/1604.02006v1",
+    "source_text": "The emergence of \"big data\" offers unprecedented opportunities for not only accelerating scientific advances but also enabling new modes of discovery.",
+    "source_fingerprint": "72df86568a48deb89fd1604e21a3b656479ea63880355b46967a3bdb769d411d"
+  },
+  {
+    "id": "arxiv-038",
+    "source_title": "CAAD: Computer Architecture for Autonomous Driving",
+    "source_url": "http://arxiv.org/abs/1702.01894v1",
+    "source_text": "To enable autonomous driving, the computing stack needs to simultaneously provide high performance, low power consumption, and low thermal dissipation, at low cost.",
+    "source_fingerprint": "3507b867a3e860b4be8b7f841dd09c65051022ee1f713f2a130005ca2dbda53b"
+  },
+  {
+    "id": "arxiv-039",
+    "source_title": "The Future of Stardust Science",
+    "source_url": "http://arxiv.org/abs/1704.01980v1",
+    "source_text": "They likely contain preserved materials inherited from the protosolar cloud, held in cryogenic storage since the formation of the Solar System.",
+    "source_fingerprint": "ccb79c34166c5091c22d5a788d0ef78a2156500f5327fdf0a4dae5601971817a"
+  },
+  {
+    "id": "arxiv-040",
+    "source_title": "Mixed Membership Word Embeddings for Computational Social Science",
+    "source_url": "http://arxiv.org/abs/1705.07368v3",
+    "source_text": "Word embeddings improve the performance of NLP systems by revealing the hidden structural relationships between words.",
+    "source_fingerprint": "947c2e5959e2f29d851c301332d2d208504033a8d8c713feff345eac990c1cf4"
+  },
+  {
+    "id": "arxiv-041",
+    "source_title": "Modeling Biological Problems in Computer Science: A Case Study in Genome Assembly",
+    "source_url": "http://arxiv.org/abs/1706.05429v2",
+    "source_text": "In this tutorial, we use the example of the genome assembly problem to demonstrate how to go from a question in the biological realm to a solution in the computer science realm.",
+    "source_fingerprint": "67911eb7f5f80b92a720482e08d525448bc85d082d6e34285d900d8246d7ca03"
+  },
+  {
+    "id": "arxiv-042",
+    "source_title": "BOSS-LDG: A Novel Computational Framework that Brings Together Blue Waters, Open Science Grid, Shifter and the LIGO Data Grid to Accelerate Gravitational Wave Discovery",
+    "source_url": "http://arxiv.org/abs/1709.08767v1",
+    "source_text": "To enable this computational infrastructure, we configured, for the first time, a LIGO Data Grid Tier-1 Center that can submit heterogeneous LIGO workflows using Open Science Grid facilities.",
+    "source_fingerprint": "a5f90741fe1bf6058cfc2e81aefdadd68afb7b95255f237d26da724134020de1"
+  },
+  {
+    "id": "arxiv-043",
+    "source_title": "Popularity of arXiv.org within Computer Science",
+    "source_url": "http://arxiv.org/abs/1710.05225v1",
+    "source_text": "* Many researchers use arXiv for posting preprints.",
+    "source_fingerprint": "fc0fdb1c60ec0762a73a44eb249dee1ca388c62956a118cc2ec32d00fdd34b62"
+  },
+  {
+    "id": "arxiv-044",
+    "source_title": "Performance Optimization and Parallelization of a Parabolic Equation Solver in Computational Ocean Acoustics on Modern Many-core Computer",
+    "source_url": "http://arxiv.org/abs/1711.00005v2",
+    "source_text": "As one of open-source codes widely used in computational ocean acoustics, FOR3D can provide a very good estimate for underwater acoustic propagation.",
+    "source_fingerprint": "c6fc6dc9991d061ed972682a3306b4e8f8ea629b7950089e00a251587db1c0c4"
+  },
+  {
+    "id": "arxiv-045",
+    "source_title": "Partitioning Compute Units in CNN Acceleration for Statistical Memory Traffic Shaping",
+    "source_url": "http://arxiv.org/abs/1806.06541v1",
+    "source_text": "The design complexity of CNNs has been steadily increasing to improve accuracy.",
+    "source_fingerprint": "222696b4134796b792250b921a5cf70fbda57fd50ae9710f0a94408965bfeed6"
+  },
+  {
+    "id": "arxiv-046",
+    "source_title": "Understanding the Twitter Usage of Humanities and Social Sciences Academic Journals",
+    "source_url": "http://arxiv.org/abs/1807.05571v1",
+    "source_text": "This study utilizes webometric data collection, descriptive analysis, and social network analysis.",
+    "source_fingerprint": "d88500df9d562a948d641b3ab6f4227b5f8f54108397e5c67087b704107f9595"
+  },
+  {
+    "id": "arxiv-047",
+    "source_title": "Towards a Science of Mind",
+    "source_url": "http://arxiv.org/abs/1811.06825v3",
+    "source_text": "This paper outlines some of the elements of a rigorous science of mind (SoM) - key ideas include scientific realism of mind, agnostic mysterianism, careful attention to language, and a focus on concrete (touchstone) questions and results.",
+    "source_fingerprint": "169ae5cda2ca3ab9f02a9dfc0d30f90242a5d0125e0ad145319822329a50ca28"
+  },
+  {
+    "id": "arxiv-048",
+    "source_title": "Green Computer Science Millennial Students Examination",
+    "source_url": "http://arxiv.org/abs/1811.11425v1",
+    "source_text": "The research objective to be achieved by the researchers through the research, are as follows: 1) Utilizing smartphone as a media test online exam for green computing environment, 2) How to use social information technologies in online test, and 3) Explore the facilities or features that could be used for the online exam implementation.",
+    "source_fingerprint": "b6e84c2ad05190efee8040e6d4a169408b89aae10d7e16e3005b9e7e42e41ed9"
+  },
+  {
+    "id": "arxiv-049",
+    "source_title": "Strong Lensing considerations for the LSST observing strategy",
+    "source_url": "http://arxiv.org/abs/1902.05141v1",
+    "source_text": "Strong gravitational lensing enables a wide range of science: probing cosmography; testing dark matter models; understanding galaxy evolution; and magnifying the faint, small and distant Universe.",
+    "source_fingerprint": "eedc3842f3313accdb7d769840e46f9f0ed0cb4d6ed8987d616c3fdd1b8d8267"
+  },
+  {
+    "id": "arxiv-050",
+    "source_title": "Between Promise and Performance: Science and Technology Policy Implementation through Network Governance",
+    "source_url": "http://arxiv.org/abs/1903.07730v2",
+    "source_text": "Industry leaders and policymakers moved to support and protect U.S.",
+    "source_fingerprint": "6e88c1b77abadcb6cfd6b835303e6206dc253b25599f70afa72c2a89ccc1c1ae"
+  },
+  {
+    "id": "arxiv-051",
+    "source_title": "Computer simulations in science and engineering - Concepts - Practices - Perspectives",
+    "source_url": "http://arxiv.org/abs/1904.01053v1",
+    "source_text": "One simple way to illustrate this consists of asking ourselves how would contemporary science and engineering look like without the use of computer simulations.",
+    "source_fingerprint": "c89d5119c1644ee7c25a1ea2b933b124e52188d550d60e1b438c6b4ada434d05"
+  },
+  {
+    "id": "arxiv-052",
+    "source_title": "The Detailed Science Case for the Maunakea Spectroscopic Explorer, 2019 edition",
+    "source_url": "http://arxiv.org/abs/1904.04907v1",
+    "source_text": "MSE is positioned to become a critical hub in the emerging international network of front-line astronomical facilities, with scientific capabilities that naturally complement and extend the scientific power of Gaia, the Large Synoptic Survey Telescope, the Square Kilometer Array, Euclid, WFIRST, the 30m telescopes and many more.",
+    "source_fingerprint": "c5db78c2ee944dcec9c08cffe616f8aa824b70849c78c3b6207e71ee7d6d97f3"
+  },
+  {
+    "id": "arxiv-053",
+    "source_title": "A Data Ecosystem to Support Machine Learning in Materials Science",
+    "source_url": "http://arxiv.org/abs/1904.10423v2",
+    "source_text": "Facilitating the application of machine learning to materials science problems will require enhancing the data ecosystem to enable discovery and collection of data from many sources, automated dissemination of new data across the ecosystem, and the connecting of data with materials-specific machine learning models.",
+    "source_fingerprint": "194f33845ddc26e7f441769f57bd5ab1eda7f5b1692b09c825301cafe7ee33cb"
+  },
+  {
+    "id": "arxiv-054",
+    "source_title": "Faster polytope rounding, sampling, and volume computation via a sublinear \"Ball Walk\"",
+    "source_url": "http://arxiv.org/abs/1905.01745v2",
+    "source_text": "This gives a factor of $\\sqrt{n}$ improvement on the previous bound of $\\tilde{O}(mn^5\\mbox{polylog}(\\frac{1}{\\varepsilon},\\frac{R}{r}))$ for rounding, which uses the hit-and-run algorithm.",
+    "source_fingerprint": "2c7c499eb29fbd05f6746bb0647bcac13fffd73366a251948e1c0931a65bb858"
+  },
+  {
+    "id": "arxiv-055",
+    "source_title": "The demography of the peripatetic researcher: Evidence on highly mobile scholars from the Web of Science",
+    "source_url": "http://arxiv.org/abs/1907.13414v1",
+    "source_text": "Among other findings, the results point to the emergence of a global system that includes the USA and China as two large hubs, and England and Germany as two smaller hubs for highly mobile researchers.",
+    "source_fingerprint": "c4dec156fc1d9e94145d6cc516dade95ac5a2b1741f7753bee0a312eed701b76"
+  },
+  {
+    "id": "arxiv-056",
+    "source_title": "Science opportunities enabled by the era of Visible Band Stellar Imaging with sub-100 μarc-sec angular resolution",
+    "source_url": "http://arxiv.org/abs/1908.03164v1",
+    "source_text": "Next generation arrays of Imaging Cherenkov telescopes, to be constructed in the next decade, can provide unprecedented visible band imaging of several thousand bright (m< 6), hot (O/B/A) stars using a modern implementation of Stellar Intensity Interferometry (SII).",
+    "source_fingerprint": "d9e53e4b27615b2e11cb21a3ec2fc249d38fd9feafc13d46680399c976941034"
+  },
+  {
+    "id": "arxiv-057",
+    "source_title": "FAIR and Open Computer Science Research Software",
+    "source_url": "http://arxiv.org/abs/1908.05986v1",
+    "source_text": "The Open Science agenda holds that science advances faster when we can build on existing results.",
+    "source_fingerprint": "75b51d550622bfd6d98178d1fe63d39cbfd8adf788eb991c7325fbe4c17629ef"
+  },
+  {
+    "id": "arxiv-058",
+    "source_title": "Knowledge-based Biomedical Data Science 2019",
+    "source_url": "http://arxiv.org/abs/1910.06710v1",
+    "source_text": "Here we survey the progress in the last year in systems that use formally represented knowledge to address data science problems in both clinical and biological domains, as well as on approaches for creating knowledge graphs.",
+    "source_fingerprint": "e520315749db094a8ad6845f2fd5128450508c4e0803fd37d54878377aedba57"
+  },
+  {
+    "id": "arxiv-059",
+    "source_title": "Methodological Blind Spots in Machine Learning Fairness: Lessons from the Philosophy of Science and Computer Science",
+    "source_url": "http://arxiv.org/abs/1910.14210v1",
+    "source_text": "The purpose of this paper is to use three ideas from the philosophy of science and computer science to tease out blind spots in the assumptions that underlie ML fairness: abstraction, induction, and measurement.",
+    "source_fingerprint": "b21061922c8733207957abbe0dc8c82aa6fc4e33c6c37f12661e75eefdf84272"
+  },
+  {
+    "id": "arxiv-060",
+    "source_title": "Science Under Attack",
+    "source_url": "http://arxiv.org/abs/2001.10416v1",
+    "source_text": "We urgently need a more rigorous conception of science to be adopted and implemented that honestly acknowledges the problematic character of the aims of science, and seeks to improve them as science proceeds.",
+    "source_fingerprint": "d9ea4faf23abd17e6840f8ddfcada5d435b82a4a0c8b9f0419d510bae153f172"
+  },
+  {
+    "id": "arxiv-061",
+    "source_title": "Introducing temporal behavior to computing science",
+    "source_url": "http://arxiv.org/abs/2006.01128v4",
+    "source_text": "Some classic design principles must be revised, and the temporal logic enables us to design a more powerful and efficient computing.",
+    "source_fingerprint": "6a18e546af77361fbf33a26ba49131df0c0daae7d9b14bdd52480027b4de157a"
+  },
+  {
+    "id": "arxiv-062",
+    "source_title": "Attaining High Bandwidth In Cloud Computing Through SDN-enabled Multi-tree Multicast",
+    "source_url": "http://arxiv.org/abs/2008.02522v1",
+    "source_text": "In this paper, a technique is proposed in how the newly developed network architecture, Software Defined Network (SDN), can promote the design of the multicast protocol and improve the performance of the multicast transmission in the cloud computing.",
+    "source_fingerprint": "6000bc8c2ed411c900e81665c512eac3a69c162105853c3807a0526754200e34"
+  },
+  {
+    "id": "arxiv-063",
+    "source_title": "The science enabled by a dedicated solar system space telescope",
+    "source_url": "http://arxiv.org/abs/2008.08069v1",
+    "source_text": "A dedicated telescope for solar system science would: (a) transform our understanding of time-dependent phenomena in our solar system that cannot be studied currently under programs to observe and visit new targets and (b) enable a comprehensive survey and spectral characterization of minor bodies across the solar system, which requires a large time allocation not supported by existing facilities.",
+    "source_fingerprint": "1840f68ec7c94a8453b9b7d3c38b15a3593b2a036384cc53595b4876bc48ff41"
+  },
+  {
+    "id": "arxiv-064",
+    "source_title": "The Scientific Impact of the Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST) for Solar System Science",
+    "source_url": "http://arxiv.org/abs/2009.07653v1",
+    "source_text": "The resulting dataset will provide extraordinary opportunities for both discovery and characterization of large numbers (10--100 times more than currently known) of small solar system bodies, furthering studies of planetary formation and evolution.",
+    "source_fingerprint": "b289a83cb5d52686f399112d9695df4de7030be2471d10a53d85e9d3e3f60bb6"
+  },
+  {
+    "id": "arxiv-065",
+    "source_title": "Towards decolonising computational sciences",
+    "source_url": "http://arxiv.org/abs/2009.14258v1",
+    "source_text": "Building on the shoulders of many WoC's work, who have been paving the way, we hope to advance the dialogue required to build both a grass-roots and a top-down re-imagining of computational sciences -- including but not limited to psychology, neuroscience, cognitive science, computer science, data science, statistics, machine learning, and artificial intelligence.",
+    "source_fingerprint": "87fe322131b7f2ba86ba0549e81eead3e626901f662cd8680f4c543430717a40"
+  },
+  {
+    "id": "arxiv-066",
+    "source_title": "Global Adaptive Filtering Layer for Computer Vision",
+    "source_url": "http://arxiv.org/abs/2010.01177v4",
+    "source_text": "Remarkably, such a simple add-on layer dramatically improves the performance of the main network regardless of its design.",
+    "source_fingerprint": "1f52a9536088ccec2dbb68776a8ffa29ae2b5dee3f50e554b4fffe658f585f12"
+  },
+  {
+    "id": "arxiv-067",
+    "source_title": "Wasserstein barycenters are NP-hard to compute",
+    "source_url": "http://arxiv.org/abs/2101.01100v2",
+    "source_text": "Moreover, our hardness results for computing Wasserstein barycenters extend to approximate computation, to seemingly simple cases of the problem, and to averaging probability distributions in other Optimal Transport metrics.",
+    "source_fingerprint": "78024e1642461f368799107a77227195bdc344930036dcfc749413a41ea6cc97"
+  },
+  {
+    "id": "arxiv-068",
+    "source_title": "Inverse deformation analysis: an experimental and numerical assessment using the FEniCS Project",
+    "source_url": "http://arxiv.org/abs/2102.13455v1",
+    "source_text": "In this paper, we develop a framework for solving inverse deformation problems using the FEniCS Project finite element software.",
+    "source_fingerprint": "5ebff0d07df3665b92a42b4ab0bec749242605ce3a80661dab465cfcff073923"
+  },
+  {
+    "id": "arxiv-069",
+    "source_title": "RL-CSDia: Representation Learning of Computer Science Diagrams",
+    "source_url": "http://arxiv.org/abs/2103.05900v1",
+    "source_text": "It contains more than 1,200 diagrams and exhaustive annotations of objects and relations.",
+    "source_fingerprint": "1ac30a5d3cebcae75dcfb95e4daf47215dd061bd8e3fb66b3b79bace22677e3c"
+  },
+  {
+    "id": "arxiv-070",
+    "source_title": "On the Role of System Software in Energy Management of Neuromorphic Computing",
+    "source_url": "http://arxiv.org/abs/2103.12231v1",
+    "source_text": "Neuromorphic computing systems such as DYNAPs and Loihi have recently been introduced to the computing community to improve performance and energy efficiency of machine learning programs, especially those that are implemented using Spiking Neural Network (SNN).",
+    "source_fingerprint": "952f95095ab6769e98440e0079d3b18e9a94c169ea7c4e0095c2a8d1f386c72b"
+  },
+  {
+    "id": "arxiv-071",
+    "source_title": "Computer-Mediated Consent to Sex: The Context of Tinder",
+    "source_url": "http://arxiv.org/abs/2105.07333v1",
+    "source_text": "The study's context of online dating is chosen due to the prevalence of sexual violence, or nonconsensual sexual activity, that is associated with dating app-use.",
+    "source_fingerprint": "1aac789979a33315b1959b79a134fa8dae6c0dc19669b1399f52eec15f5b0459"
+  },
+  {
+    "id": "arxiv-072",
+    "source_title": "Implicit Gender Bias in Computer Science -- A Qualitative Study",
+    "source_url": "http://arxiv.org/abs/2107.01624v1",
+    "source_text": "The lack of contact in areas of computer science makes it difficult to develop or expand potential interests.",
+    "source_fingerprint": "9f583e6b4a2b856ca4a2af3bdc62e04cfd47c54d3daf9431c1e7e47219430a0e"
+  },
+  {
+    "id": "arxiv-073",
+    "source_title": "What Does TERRA-REF's High Resolution, Multi Sensor Plant Sensing Public Domain Data Offer the Computer Vision Community?",
+    "source_url": "http://arxiv.org/abs/2107.14072v2",
+    "source_text": "The system contains co-located sensors including a stereo-pair RGB camera, a thermal imager, a laser scanner to capture 3D structure, and two hyperspectral cameras covering wavelengths of 300-2500nm.",
+    "source_fingerprint": "3933845f0019629a6a3587ffb7e478405781bc058c142a67b1f585342df85226"
+  },
+  {
+    "id": "arxiv-074",
+    "source_title": "Symbolic Computation in Software Science: My Personal View",
+    "source_url": "http://arxiv.org/abs/2109.02806v1",
+    "source_text": "In this note, I develop my personal view on the scope and relevance of symbolic computation in software science.",
+    "source_fingerprint": "06f06375ed8f33c95ba25140dbf2b47cc1336f3983d39314828cc6672c4ae597"
+  },
+  {
+    "id": "arxiv-075",
+    "source_title": "Generational Frameshifts in Technology: Computer Science and Neurosurgery, The VR Use Case",
+    "source_url": "http://arxiv.org/abs/2110.15719v2",
+    "source_text": "The digitization of all components within the operating room will allow us to leverage the various fields within computer and computational science to obtain new insights that will improve care and delivery of the highest quality neurosurgery regardless of location.",
+    "source_fingerprint": "71ad2975ba6ed1592bb77d29ba877449f762a9a444f3cea409888791ba06c983"
+  },
+  {
+    "id": "arxiv-076",
+    "source_title": "Machine Learning for Computational Science and Engineering -- a brief introduction and some critical questions",
+    "source_url": "http://arxiv.org/abs/2112.12054v1",
+    "source_text": "By highlighting some critical questions around the issues and challenges in adapting Machine Learning (ML) for CS&E, most of which are often overlooked in journal papers, this contribution hopes to offer some insights into the adaptation of ML for applications in CS\\&E and related fields.",
+    "source_fingerprint": "041d4e76b982b966ca1f1fbe150e745250c01ae64e1799519f5942bf08eab6ec"
+  },
+  {
+    "id": "arxiv-077",
+    "source_title": "Model Positionality and Computational Reflexivity: Promoting Reflexivity in Data Science",
+    "source_url": "http://arxiv.org/abs/2203.07031v1",
+    "source_text": "Data science and machine learning provide indispensable techniques for understanding phenomena at scale, but the discretionary choices made when doing this work are often not recognized.",
+    "source_fingerprint": "e59e8647a779bb8515af43e778864628485d13b97be4a86d43eef26f138388e1"
+  },
+  {
+    "id": "arxiv-078",
+    "source_title": "Computational Perspective of the Fog Node",
+    "source_url": "http://arxiv.org/abs/2203.07425v1",
+    "source_text": "It is still in a maturing stage, so there is no consensus in academia about its concepts and definitions, and each area adopts the ones that are convenient for each use case.",
+    "source_fingerprint": "adafd422c99c8ba5f722e53496fbb9d35af4dff6fe3f6d737b56d0d2b36efd94"
+  },
+  {
+    "id": "arxiv-079",
+    "source_title": "D3: A Massive Dataset of Scholarly Metadata for Analyzing the State of Computer Science Research",
+    "source_url": "http://arxiv.org/abs/2204.13384v4",
+    "source_text": "DBLP is the largest open-access repository of scientific articles on computer science and provides metadata associated with publications, authors, and venues.",
+    "source_fingerprint": "a4139cb485fa292256e1dca39fda7e9e235d050b9f913bf061b0ccf9fd851e0f"
+  },
+  {
+    "id": "arxiv-080",
+    "source_title": "Oxford-style Debates in Telecommunication and Computer Science Education",
+    "source_url": "http://arxiv.org/abs/2206.03276v1",
+    "source_text": "The article also contains feedback from IT engineers who participated in Oxford-style debates.",
+    "source_fingerprint": "41c424b242a2b76d2d30ae23d6282c35f91a0036945331385677c992293b5315"
+  },
+  {
+    "id": "arxiv-081",
+    "source_title": "An analysis of retracted papers in Computer Science",
+    "source_url": "http://arxiv.org/abs/2206.06706v1",
+    "source_text": "For CS, 56% of retracted papers, provide little or no information as to the reasons.",
+    "source_fingerprint": "ee7b4a5d35439af0df76819d7fba1ca1cf483caee709cf5aa27676dc9490a437"
+  },
+  {
+    "id": "arxiv-082",
+    "source_title": "Science of science -- Citation models and research evaluation",
+    "source_url": "http://arxiv.org/abs/2207.11116v2",
+    "source_text": "Even when an indicator might have been valid, through its very use, the consequences of its use may invalidate it.",
+    "source_fingerprint": "3d89c97e8f43a5641e586e05fb217c1925865c44aa280846f20b3747576c4e50"
+  },
+  {
+    "id": "arxiv-083",
+    "source_title": "On computing Discretized Ricci curvatures of graphs: local algorithms and (localized) fine-grained reductions",
+    "source_url": "http://arxiv.org/abs/2208.09535v3",
+    "source_text": "(c) We provide the first known lower and upper bounds on queries for query-based algorithms for the curvature computation problems in our local algorithms framework.",
+    "source_fingerprint": "6b1f1aa3afde24a589634a531da2ec1466ac5047085c8c7d13f2ba21d92173fc"
+  },
+  {
+    "id": "arxiv-084",
+    "source_title": "Network science approach for identifying disruptive elements of an airline",
+    "source_url": "http://arxiv.org/abs/2211.08140v2",
+    "source_text": "An airline can improve its operations by avoiding delays caused by the most disruptive elements.",
+    "source_fingerprint": "f21604fd17e065282b6804ae36809b2fd0bcc0db89d7cd61505a3952ff5a34f3"
+  },
+  {
+    "id": "arxiv-085",
+    "source_title": "Research Software Science: Expanding the Impact of Research Software Engineering",
+    "source_url": "http://arxiv.org/abs/2211.09034v1",
+    "source_text": "Improving how we develop and use software for research can have both broad and deep impacts on a spectrum of challenges and opportunities society faces today.",
+    "source_fingerprint": "a023ff7616f2f6f4c9c13f2299d4e547139bfb17725dfb441e0ee7ff7cfa6d5e"
+  },
+  {
+    "id": "arxiv-086",
+    "source_title": "Deep learning applied to computational mechanics: A comprehensive review, state of the art, and the classics",
+    "source_url": "http://arxiv.org/abs/2212.08989v3",
+    "source_text": "Both LSTM and attention architectures, together with modern and generalized classic optimizers to include stochasticity for DL networks, are extensively reviewed.",
+    "source_fingerprint": "41037ef5c92d3554d746cbdcdbaa17f0c6a1e6e6a9b604016d49f6cc6be4cf72"
+  },
+  {
+    "id": "arxiv-087",
+    "source_title": "Protoplanetary Disk Science with the Orbiting Astronomical Satellite Investigating Stellar Systems (OASIS) Observatory",
+    "source_url": "http://arxiv.org/abs/2302.05223v2",
+    "source_text": "OASIS's suite of heterodyne receivers allow for simultaneous, high spectral resolution observations of water emission lines spanning a large range of physical conditions within protoplanetary disks.",
+    "source_fingerprint": "b13a0b43f9784cbebee8345ce4be2ab215d7daa8f32fe7b111000438e56bafcd"
+  },
+  {
+    "id": "arxiv-088",
+    "source_title": "Position Paper on Dataset Engineering to Accelerate Science",
+    "source_url": "http://arxiv.org/abs/2303.05545v1",
+    "source_text": "In this work, we will use the token \\textit{dataset} to designate a structured set of data built to perform a well-defined task.",
+    "source_fingerprint": "faed7d87ad716b75179f4d683f021a8e80c7e2a1e286f59cc961b45ce8c7d955"
+  },
+  {
+    "id": "arxiv-089",
+    "source_title": "Towards Transparent, Reusable, and Customizable Data Science in Computational Notebooks",
+    "source_url": "http://arxiv.org/abs/2303.13447v2",
+    "source_text": "While programmable and interactive interfaces such as widgets embedded within computational notebooks are suitable for these workflows, they lack robust state management capabilities and do not support user-defined customization of the interactive components.",
+    "source_fingerprint": "676cf17de54655373ff108a2d9e93a9669b55b39ac99a8c40253995e696c3501"
+  },
+  {
+    "id": "arxiv-090",
+    "source_title": "Lessons Learned from a Citizen Science Project for Natural Language Processing",
+    "source_url": "http://arxiv.org/abs/2304.12836v1",
+    "source_text": "Many Natural Language Processing (NLP) systems use annotated corpora for training and evaluation.",
+    "source_fingerprint": "cb8969a492db5d278dec911eb30580aa3d766aa260fd1753a8287d655b51d3a2"
+  },
+  {
+    "id": "arxiv-091",
+    "source_title": "Computational Reproducibility in Computational Social Science",
+    "source_url": "http://arxiv.org/abs/2307.01918v4",
+    "source_text": "We expand the binary definition of reproducibility into a tier system which allows increasing levels of reproducibility based on external verfiability to counteract the practice of open-washing.",
+    "source_fingerprint": "4e4c0f1e96298a8fdb9b3df4d123301255692e3df5acc2af7fa37c08180e220e"
+  },
+  {
+    "id": "arxiv-092",
+    "source_title": "Performance of Large Language Models in a Computer Science Degree Program",
+    "source_url": "http://arxiv.org/abs/2308.02432v1",
+    "source_text": "Their transformative capabilities have led to a paradigm shift in how we interact with and utilize (text-based) information.",
+    "source_fingerprint": "631df7dabc330645cf2b954024bf087308b1b8fdd356f91e12004e9bc51f8e8d"
+  },
+  {
+    "id": "arxiv-093",
+    "source_title": "The Mastery Rubric for Statistics and Data Science: promoting coherence and consistency in data science education and training",
+    "source_url": "http://arxiv.org/abs/2308.08004v1",
+    "source_text": "The MR SDS supports each of these program structures while promoting consistency with international, consensus based, curricular recommendations for statistics and data science, and allows 'statistics', 'data science', and 'statistics and data science' curricula to consistently educate students with a focus on increasing learners independence.",
+    "source_fingerprint": "5ecd3cbfc303544abc0b670a654e37beeaa4a0774497e3857e063959243e174f"
+  },
+  {
+    "id": "arxiv-094",
+    "source_title": "Unleashing quantum algorithms with Qinterpreter: bridging the gap between theory and practice across leading quantum computing platforms",
+    "source_url": "http://arxiv.org/abs/2310.07173v3",
+    "source_text": "These libraries allow for quantum simulations on classical computers and facilitate program execution on corresponding quantum hardware, e.g., Qiskit programs on IBM quantum computers.",
+    "source_fingerprint": "66b21db74d9dd4fcb2089fe1a3395ef77006692866dbf5a01ba1992136fa5c01"
+  },
+  {
+    "id": "arxiv-095",
+    "source_title": "An Integrative Survey on Mental Health Conversational Agents to Bridge Computer Science and Medical Perspectives",
+    "source_url": "http://arxiv.org/abs/2310.17017v1",
+    "source_text": "chatbots) are widely studied for their potential to offer accessible support to those experiencing mental health challenges.",
+    "source_fingerprint": "ccc0a2d23a0c9405c3696b43bc0867f54791a6a304ab22e59878ed8976a3b53e"
+  },
+  {
+    "id": "arxiv-096",
+    "source_title": "Understanding Practices around Computational News Discovery Tools in the Domain of Science Journalism",
+    "source_url": "http://arxiv.org/abs/2311.06864v2",
+    "source_text": "In particular, we prototyped three computational information subsidies into an interactive tool that we used as a probe to better understand how such a tool may offer utility or more broadly shape the practices of professional science journalists.",
+    "source_fingerprint": "3d511ab57bfce95368f78ea4a8c19ee2f82b9842f56626b3f81af40586b6eeec"
+  },
+  {
+    "id": "arxiv-097",
+    "source_title": "Socially Responsible Computing in an Introductory Course",
+    "source_url": "http://arxiv.org/abs/2401.01285v1",
+    "source_text": "Our students need to be able to examine the social complexities in which technology development and use are situated.",
+    "source_fingerprint": "beebcc9cd853bc1b99d2b46e032aef98fa2c62df7eeb6c64060168062ab7ce23"
+  },
+  {
+    "id": "arxiv-098",
+    "source_title": "Integrating ChatGPT in a Computer Science Course: Students Perceptions and Suggestions",
+    "source_url": "http://arxiv.org/abs/2402.01640v1",
+    "source_text": "Following a ChatGPT activity which includes code completion and analysis, seven students participated in in-depth interviews.",
+    "source_fingerprint": "28ed076a0cfc1bcac530f1c6a4220610ef9e4d9d98dbb56fe1bfd020b1c49da5"
+  },
+  {
+    "id": "arxiv-099",
+    "source_title": "\"Which LLM should I use?\": Evaluating LLMs for tasks performed by Undergraduate Computer Science Students",
+    "source_url": "http://arxiv.org/abs/2402.01687v2",
+    "source_text": "These tasks include code explanation and documentation, solving class assignments, technical interview preparation, learning new concepts and frameworks, and email writing.",
+    "source_fingerprint": "a07711cfb3002e1af4d731fbd20ffc0c1afc70b305afb5a7ee5bf0c7961614a7"
+  }
+]

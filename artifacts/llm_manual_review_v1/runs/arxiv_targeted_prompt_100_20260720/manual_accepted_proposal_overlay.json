@@ -1,0 +1,21 @@
+{
+  "overlay_type": "manual_reviewed_llm_proposal_overlay_v1",
+  "proposal_only": true,
+  "safe_for_general_runtime": false,
+  "requires_review": true,
+  "precision_gate_run": false,
+  "serving_memory_modified": false,
+  "relation_source": "manual_review_candidates.json",
+  "decision_source": "manual_review_decisions.json",
+  "selection": "accepted_candidate_ids only",
+  "accepted_relation_count": 34,
+  "accepted_candidate_ids": [
+    "arxiv-002:0", "arxiv-005:1", "arxiv-006:0", "arxiv-007:0", "arxiv-007:1",
+    "arxiv-007:2", "arxiv-011:0", "arxiv-014:0", "arxiv-020:0", "arxiv-021:0",
+    "arxiv-028:0", "arxiv-042:1", "arxiv-044:0", "arxiv-044:1", "arxiv-056:1",
+    "arxiv-062:0", "arxiv-065:0", "arxiv-065:1", "arxiv-065:2", "arxiv-065:3",
+    "arxiv-065:4", "arxiv-065:5", "arxiv-065:6", "arxiv-065:7", "arxiv-068:0",
+    "arxiv-073:0", "arxiv-073:1", "arxiv-073:2", "arxiv-073:3", "arxiv-073:4",
+    "arxiv-079:0", "arxiv-086:0", "arxiv-086:1", "arxiv-094:1"
+  ]
+}

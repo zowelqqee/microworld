@@ -1,0 +1,159 @@
+[
+  {
+    "candidate_id": "arxiv-006:0",
+    "batch_id": "arxiv-006",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "The Importance Analysis of Use Case Map with Markov Chains",
+    "source_url": "http://arxiv.org/abs/1002.1692v1",
+    "source_fingerprint": "dc15dc0c5cc3c76473b5055dedeaae54f8f58f3b2a1da55103ce84daa0440a1d",
+    "source_text": "UCMs (Use Case Maps) model describes functional requirements and high-level designs with causal paths superimposed on a structure of components.",
+    "subject": "UCMs (Use Case Maps)",
+    "predicate": "is a",
+    "object": "model",
+    "evidence_span": "UCMs (Use Case Maps) model describes functional requirements",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-017:0",
+    "batch_id": "arxiv-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Problem Solving and Computational Thinking in a Learning Environment",
+    "source_url": "http://arxiv.org/abs/1212.0750v1",
+    "source_fingerprint": "ba1eaf0f8f677ebc48d4b49131201cb6453d0ca356ff49bed77a5f003587602b",
+    "source_text": "Computational thinking is a new problem soling method named for its extensive use of computer science techniques.",
+    "subject": "Computational thinking",
+    "predicate": "is a type of",
+    "object": "problem solving method",
+    "evidence_span": "Computational thinking is a new problem soling method",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node",
+      "unresolvable_entity"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-043:0",
+    "batch_id": "arxiv-043",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "CSIndexbr: Exploring the Brazilian Scientific Production in Computer Science",
+    "source_url": "http://arxiv.org/abs/1807.09266v1",
+    "source_fingerprint": "ff5c14920b26ba85d87bab13125150257d3b9eab411de5545f83587532cd969c",
+    "source_text": "CSIndexbr is a web-based system that provides meaningful,open,and transparent data about Brazilian scientific production in Computer Science.",
+    "subject": "CSIndexbr",
+    "predicate": "is a",
+    "object": "web-based system",
+    "evidence_span": "CSIndexbr is a web-based system",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-078:0",
+    "batch_id": "arxiv-078",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Mapping Computer Science Research: Trends, Influences, and Predictions",
+    "source_url": "http://arxiv.org/abs/2308.00733v1",
+    "source_fingerprint": "a93a12aa74d08ebd2de531a0edf91607fe64f5f6a29879796742d43b7bcaf922",
+    "source_text": "Leveraging a comprehensive dataset comprising papers, citations, and funding information, we employ advanced machine learning techniques, including Decision Tree and Logistic Regression models, to predict trending research areas.",
+    "subject": "Decision Tree",
+    "predicate": "is a type of",
+    "object": "machine learning techniques",
+    "evidence_span": "advanced machine learning techniques, including Decision Tree",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-078:1",
+    "batch_id": "arxiv-078",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Mapping Computer Science Research: Trends, Influences, and Predictions",
+    "source_url": "http://arxiv.org/abs/2308.00733v1",
+    "source_fingerprint": "a93a12aa74d08ebd2de531a0edf91607fe64f5f6a29879796742d43b7bcaf922",
+    "source_text": "Leveraging a comprehensive dataset comprising papers, citations, and funding information, we employ advanced machine learning techniques, including Decision Tree and Logistic Regression models, to predict trending research areas.",
+    "subject": "Logistic Regression",
+    "predicate": "is a type of",
+    "object": "machine learning techniques",
+    "evidence_span": "advanced machine learning techniques, including ... Logistic Regression models",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "generic_abstract_node"
+    ]
+  },
+  {
+    "candidate_id": "arxiv-094:0",
+    "batch_id": "arxiv-094",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "Interactive Learning in Computer Science Education Supported by a Discord Chatbot",
+    "source_url": "http://arxiv.org/abs/2407.19266v1",
+    "source_fingerprint": "96ebb97a1a7312597fea8954e34836bbf4b1867834d8c8fb8d51a49e8131f5c4",
+    "source_text": "The DiscordBot enables students to provide feedback on course activities through short surveys, such as exercises, quizzes, and lectures, facilitating stress-free communication with instructors.",
+    "subject": "DiscordBot",
+    "predicate": "enables",
+    "object": "students to provide feedback on course activities through short surveys",
+    "evidence_span": "The DiscordBot enables students to provide feedback on course activities through short surveys, such as exercises, quizzes, and lectures, facilitating stress-free communication with instructors.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node"
+    ]
+  }
+]
