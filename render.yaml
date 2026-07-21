@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: microworld-live-demo
+    runtime: python
+    plan: free
+    buildCommand: scripts/render_build_public_demo.sh
+    startCommand: uvicorn worldpgt.public_demo.app:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    maxShutdownDelaySeconds: 60
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: MICROWORLD_RATE_LIMIT_PER_MINUTE
+        value: 12
+      - key: MICROWORLD_CORS_ORIGINS
+        value: ""
