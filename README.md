@@ -1,6 +1,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21323152-0b6fa4.svg)](https://doi.org/10.5281/zenodo.21323152)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v3.0-164e78.svg)](docs/MicroWorld_Whitepaper_v3.0.pdf)
+[![Live Demo](https://img.shields.io/badge/live-demo-65a30d.svg)](https://microworld-live-demo.onrender.com)
 
 # Microworld
 
@@ -38,6 +39,71 @@ as factual support.
 > persists, narrows, or grows at significantly larger data scale is a separate,
 > open empirical question requiring its own dedicated future study - not a
 > prerequisite for the validity of the current result.
+
+## Live Demo
+
+The public interactive demo is available at
+**[microworld-live-demo.onrender.com](https://microworld-live-demo.onrender.com)**.
+Ask a question to see the answer and the exact explicit graph edges selected
+as its factual support. A supported comparison, for example, expands a shared
+fact into the separate relation edges used for both entities; an audit returns
+no factual edges.
+
+The service is a thin FastAPI wrapper around the existing
+`AnswerOrchestrator`. It does not reimplement the reasoning core. The public
+path is deliberately bounded:
+
+- it loads only a fixed, allow-listed subset of the promoted overlay;
+- it excludes proposal, live-pump, community-context, web-search, private, and
+  high-risk data;
+- it rate-limits `POST /ask` per client IP;
+- it returns planner-selected evidence as structured `edges_used`, plus
+  adjacent `context_edges` for the graph visualization;
+- it uses one worker and lazily initializes one reasoning engine per running
+  service process.
+
+The public API contract is:
+
+```http
+POST /ask
+Content-Type: application/json
+
+{"question":"What does SpaceX develop?"}
+```
+
+```json
+{
+  "answer": "SpaceX develops rockets and spacecraft.",
+  "support_kind": "semi_stable_relation",
+  "edges_used": [
+    {
+      "subject": "SpaceX",
+      "predicate": "develops",
+      "object": "rockets",
+      "evidence_id": "promoted:..."
+    }
+  ],
+  "latency_ms": 4.2,
+  "decision": "answer",
+  "context_edges": []
+}
+```
+
+`GET /health` reports whether the process is `cold`, `ready`, or in an error
+state without forcing the reasoning core to initialize. The Render Free
+instance may spin down after inactivity, so the first request after a cold
+start can take roughly a minute; subsequent questions reuse the initialized
+engine. This is a research demo, not a production-uptime service.
+
+To run the same public surface locally from the repository root:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 -m uvicorn worldpgt.public_demo.app:app --host 127.0.0.1 --port 8000
+```
+
+See [the public demo documentation](worldpgt/public_demo/README.md) and the
+repository-root [`render.yaml`](render.yaml) for the deployment configuration.
 
 ## Try It Locally
 
