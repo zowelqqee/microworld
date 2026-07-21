@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ask MicroWorld a question and inspect the exact graph edges that support its answer.">
-  <meta name="theme-color" content="#0a0b0f">
+  <meta name="description" content="MicroWorld is an explicit symbolic reasoning system with zero neural inference in its core.">
+  <meta name="theme-color" content="#090909">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'">
-  <title>MicroWorld — inspectable intelligence</title>
+  <title>MicroWorld — AI reasoning without neural networks</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/styles/vis-network.min.css">
   <link rel="stylesheet" href="/static/styles.css">
@@ -15,62 +15,84 @@
 </head>
 <body>
   <header class="site-header" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="MicroWorld home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <a class="wordmark" href="#top" aria-label="MicroWorld home">
+      <span class="wordmark-mark" aria-hidden="true">[µ]</span>
       <span>MicroWorld</span>
     </a>
-    <nav>
-      <a href="#how">How it works</a>
-      <a href="#results">Results</a>
-      <a class="nav-cta" href="#demo">Try live demo</a>
-    </nav>
+    <p>Local intelligence. No cloud.</p>
+    <a class="header-link" href="#demo">Demo <span aria-hidden="true">↓</span></a>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="eyebrow"><span class="status-dot"></span> Bounded semantic runtime</div>
-      <h1 id="hero-title">Answers you can<br><span>inspect.</span></h1>
-      <p class="hero-copy">MicroWorld reasons over explicit local memory, stops when support runs out, and shows the exact graph edges behind every grounded answer.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#demo">Ask MicroWorld <span aria-hidden="true">↓</span></a>
-        <a class="button secondary" href="https://github.com/zowelqqee/microworld" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <p class="system-label"><span aria-hidden="true">●</span> SYMBOLIC REASONING SYSTEM / CORE ONLINE</p>
+        <h1 id="hero-title">MicroWorld — AI reasoning without neural networks</h1>
+        <p class="hero-subhead">Explicit knowledge graph → deterministic planner → audit gate. Zero hallucination by design, not by luck.</p>
+        <a class="primary-action" href="#demo">Try it live <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="hero-proof" aria-label="Runtime qualities">
-        <span><b>01</b> Explicit memory</span>
-        <span><b>02</b> Deterministic plan</span>
-        <span><b>03</b> Auditable output</span>
+
+      <div class="terminal-stage" aria-label="Example MicroWorld reasoning trace">
+        <div class="terminal-shell">
+          <div class="terminal-bar">
+            <span>runtime.trace</span>
+            <span>session / 0042</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-command"><span class="prompt">$</span><span>microworld ask "What does SpaceX develop?"</span><span class="cursor" aria-hidden="true"></span></div>
+            <div class="trace-line"><span class="trace-key">graph</span><span class="trace-rule"></span><span>resolve entity</span><strong>SpaceX</strong></div>
+            <div class="trace-line"><span class="trace-key">plan</span><span class="trace-rule"></span><span>select route</span><strong>relation_lookup</strong></div>
+            <div class="trace-line"><span class="trace-key">audit</span><span class="trace-rule"></span><span>verify support</span><strong>2 explicit edges</strong></div>
+            <div class="trace-line"><span class="trace-key">render</span><span class="trace-rule"></span><span>compose answer</span><strong>admitted</strong></div>
+            <div class="terminal-result">
+              <span class="result-mark" aria-hidden="true">↳</span>
+              <p>SpaceX develops rockets and spacecraft.</p>
+            </div>
+            <dl class="terminal-meta">
+              <div><dt>decision</dt><dd>answer</dd></div>
+              <div><dt>support_kind</dt><dd>semi_stable_relation</dd></div>
+              <div><dt>neural_inference_calls</dt><dd>0</dd></div>
+            </dl>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="demo-section" id="demo" aria-labelledby="demo-title">
-      <div class="section-intro">
-        <div>
-          <p class="section-kicker">Live reasoning trace</p>
-          <h2 id="demo-title">Ask. Answer. Inspect.</h2>
+      <div class="demo-section-header">
+        <div class="demo-index" aria-hidden="true">01 / LIVE DEMO</div>
+        <div class="demo-heading">
+          <p class="section-label">QUERY THE BOUNDED GRAPH</p>
+          <h2 id="demo-title">Interactive reasoning trace</h2>
         </div>
-        <div class="demo-status" id="engine-status"><span></span> Checking demo…</div>
+        <div class="demo-status" id="engine-status">
+          <span class="status-lamp" aria-hidden="true"></span>
+          <span data-status-text>Checking runtime…</span>
+        </div>
       </div>
 
       <div class="demo-shell">
         <form class="ask-panel" id="ask-form">
-          <label for="question">Your question</label>
+          <label for="question">$ microworld ask</label>
           <div class="question-box">
             <textarea id="question" name="question" rows="3" maxlength="500" placeholder="What does SpaceX develop?" required></textarea>
-            <button class="send-button" id="send-button" type="submit" aria-label="Ask MicroWorld">
-              <span>Ask</span><span class="send-icon" aria-hidden="true">→</span>
+            <button class="send-button" id="send-button" type="submit">
+              Run query <span aria-hidden="true">↵</span>
             </button>
           </div>
           <div class="suggestions" aria-label="Suggested questions">
-            <span>Try an example</span>
+            <span>Examples:</span>
             <button type="button" data-question="What does SpaceX develop?">SpaceX products</button>
             <button type="button" data-question="How is Elon Musk connected to rockets?">Connection path</button>
             <button type="button" data-question="What is the current stock price of Tesla?">Honest audit</button>
           </div>
-          <p class="demo-note">Demo instance · the first request may take 30–60 seconds while the service wakes.</p>
+          <p class="demo-note">Demo instance / bounded promoted overlay / first request may take 30–60 seconds after inactivity.</p>
         </form>
 
         <div class="loading-panel" id="loading-panel" hidden aria-live="polite">
-          <div class="thinking-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="loading-cursor" aria-hidden="true"></span>
           <div>
             <strong id="loading-title">Reading the local graph…</strong>
             <p id="loading-copy">Selecting only evidence the planner can support.</p>
@@ -81,7 +103,7 @@
         <div class="result-grid" id="result-grid" hidden>
           <article class="answer-card" aria-labelledby="answer-heading">
             <div class="card-head">
-              <span class="card-index">01</span>
+              <span class="card-index">OUTPUT / 01</span>
               <h3 id="answer-heading">Answer</h3>
               <span class="support-pill" id="support-pill">grounded</span>
             </div>
@@ -94,7 +116,7 @@
 
           <article class="graph-card" aria-labelledby="graph-heading">
             <div class="card-head">
-              <span class="card-index">02</span>
+              <span class="card-index">TRACE / 02</span>
               <h3 id="graph-heading">Evidence graph</h3>
               <div class="legend" aria-label="Graph legend"><span class="used"></span> Used <span class="context"></span> Context</div>
             </div>
@@ -106,60 +128,25 @@
                 <p>The audit gate stopped before unsupported evidence could enter the answer.</p>
               </div>
             </div>
-            <div class="trace-footer"><span id="edge-count">0 edges used</span><span>drag nodes to explore</span></div>
+            <div class="trace-footer"><span id="edge-count">0 edges used</span><span>bright edges = answer support</span></div>
           </article>
         </div>
 
         <div class="error-panel" id="error-panel" hidden role="alert">
-          <strong id="error-title">The demo could not answer.</strong>
+          <strong id="error-title">The request could not be completed.</strong>
           <p id="error-copy">Please try again in a moment.</p>
         </div>
       </div>
     </section>
-
-    <section class="how-section" id="how" aria-labelledby="how-title">
-      <div class="section-intro compact">
-        <div>
-          <p class="section-kicker">One inspectable path</p>
-          <h2 id="how-title">How it works</h2>
-        </div>
-        <p>Each layer has one job. Factual support never comes from presentation code.</p>
-      </div>
-      <ol class="pipeline">
-        <li><span>01</span><h3>Explicit graph</h3><p>Admitted entities and relations form a bounded local memory.</p></li>
-        <li><span>02</span><h3>Planner</h3><p>A deterministic route selects the smallest supported path.</p></li>
-        <li><span>03</span><h3>Audit gate</h3><p>Current, private, ambiguous, or missing claims stop without a guess.</p></li>
-        <li><span>04</span><h3>Renderer</h3><p>Only admitted evidence is turned into readable language.</p></li>
-      </ol>
-    </section>
-
-    <section class="results-section" id="results" aria-labelledby="results-title">
-      <div class="section-intro compact">
-        <div>
-          <p class="section-kicker">Saved local artifacts</p>
-          <h2 id="results-title">A compact results snapshot</h2>
-        </div>
-        <p>Measured on bounded, controlled workloads—not an open-domain or frontier-model claim.</p>
-      </div>
-      <div class="results-grid">
-        <article><span>Stress suite</span><strong>1,000 / 1,000</strong><p>controlled prompts passed</p></article>
-        <article><span>Honest gaps</span><strong>171 / 171</strong><p>expected gaps stayed gaps</p></article>
-        <article><span>Local latency</span><strong>8.05 ms</strong><p>p50, local CPU snapshot</p></article>
-        <article><span>Matched QA · n=10</span><strong>1.00 <i>vs</i> 0.90</strong><p>MicroWorld vs Qwen-3B</p></article>
-      </div>
-      <p class="results-boundary">Scope boundary: approximately 1,000 relations, matched evidence, tested tasks and local hardware. This demo is research software, not a production uptime service.</p>
-    </section>
   </main>
 
   <footer>
-    <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><strong>MicroWorld</strong><p>Explicit memory. Inspectable answers.</p></div></div>
-    <div class="footer-links">
+    <p>MicroWorld / research runtime</p>
+    <nav aria-label="Project links">
       <a href="https://github.com/zowelqqee/microworld" target="_blank" rel="noreferrer">GitHub ↗</a>
       <a href="https://doi.org/10.5281/zenodo.21323152" target="_blank" rel="noreferrer">Zenodo DOI ↗</a>
       <a href="https://github.com/zowelqqee/microworld/blob/main/LICENSE" target="_blank" rel="noreferrer">Apache-2.0 ↗</a>
-    </div>
-    <p class="copyright">Experimental research demo · may be briefly offline during cold start.</p>
+    </nav>
   </footer>
 </body>
 </html>
-

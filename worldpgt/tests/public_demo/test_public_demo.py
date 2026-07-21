@@ -44,6 +44,23 @@ def test_health_is_render_safe_and_does_not_expose_paths(client):
     }
 
 
+def test_landing_uses_the_symbolic_hero_and_live_demo(client):
+    response = client.get("/")
+    assert response.status_code == 200
+    page = response.text
+    assert "MicroWorld — AI reasoning without neural networks" in page
+    assert (
+        "Explicit knowledge graph → deterministic planner → audit gate. "
+        "Zero hallucination by design, not by luck."
+    ) in page
+    assert 'href="#demo">Try it live' in page
+    assert 'id="demo"' in page
+    assert 'id="ask-form"' in page
+    assert 'id="graph"' in page
+    assert "vis-network" in page
+    assert "INTERFACE PLACEHOLDER" not in page
+
+
 def test_relation_answer_returns_exact_used_edges(client):
     response = client.post("/ask", json={"question": "What does SpaceX develop?"})
     assert response.status_code == 200
@@ -106,4 +123,3 @@ def test_rate_limiter_returns_retry_after_without_sleeping():
     assert limiter.check("ip", now=101.0) is None
     assert limiter.check("ip", now=102.0) == 59
     assert limiter.check("ip", now=161.1) is None
-

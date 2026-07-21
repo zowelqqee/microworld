@@ -150,9 +150,9 @@ function renderGraph(usedEdges, contextEdges) {
       shape: 'dot',
       size: activeNodes.has(name) ? 17 : 10,
       color: activeNodes.has(name)
-        ? { background: '#4d8dff', border: '#a9c8ff', highlight: { background: '#71a4ff', border: '#ffffff' } }
-        : { background: '#363c47', border: '#5a6270', highlight: { background: '#4a5260', border: '#747e8e' } },
-      font: { color: activeNodes.has(name) ? '#f4f6fa' : '#7f8795', size: activeNodes.has(name) ? 13 : 11, face: 'Inter, -apple-system, sans-serif' },
+        ? { background: '#111111', border: '#b9ff66', highlight: { background: '#171717', border: '#d6ffa4' } }
+        : { background: '#161616', border: '#4b4b46', highlight: { background: '#202020', border: '#74746e' } },
+      font: { color: activeNodes.has(name) ? '#f2f2ed' : '#777771', size: activeNodes.has(name) ? 13 : 10, face: 'SFMono-Regular, Consolas, monospace' },
       borderWidth: activeNodes.has(name) ? 2 : 1,
     })));
     const graphEdges = new window.vis.DataSet(edges.map((edge) => {
@@ -164,8 +164,8 @@ function renderGraph(usedEdges, contextEdges) {
         label: edge.predicate.replaceAll('_', ' '),
         arrows: { to: { enabled: true, scaleFactor: .55 } },
         width: selected ? 2.6 : 1,
-        color: { color: selected ? '#4d8dff' : '#343a44', highlight: selected ? '#8ab5ff' : '#505865', opacity: selected ? 1 : .72 },
-        font: { color: selected ? '#9fc0ff' : '#5f6773', size: selected ? 11 : 9, strokeWidth: 5, strokeColor: '#0a0c10', align: 'top' },
+        color: { color: selected ? '#b9ff66' : '#3d3d39', highlight: selected ? '#d6ffa4' : '#5d5d57', opacity: selected ? 1 : .72 },
+        font: { color: selected ? '#b9ff66' : '#5f5f59', size: selected ? 10 : 9, face: 'SFMono-Regular, Consolas, monospace', strokeWidth: 6, strokeColor: '#080808', align: 'top' },
         smooth: { enabled: true, type: 'dynamic' },
         dashes: !selected,
       };
@@ -179,7 +179,7 @@ function renderGraph(usedEdges, contextEdges) {
         barnesHut: { gravitationalConstant: -3600, centralGravity: .18, springLength: 125, springConstant: .035, damping: .16, avoidOverlap: .45 },
       },
       layout: { improvedLayout: true },
-      nodes: { shadow: { enabled: true, color: 'rgba(0,0,0,.45)', size: 10, x: 0, y: 5 } },
+      nodes: { shadow: false },
     });
     network.once('stabilizationIterationsDone', () => network.setOptions({ physics: { enabled: false } }));
     return;
@@ -205,13 +205,13 @@ function renderSvgFallback(container, nodeNames, edges, usedIds, activeNodes) {
     const line = document.createElementNS(namespace, 'line');
     line.setAttribute('x1', from.x); line.setAttribute('y1', from.y);
     line.setAttribute('x2', to.x); line.setAttribute('y2', to.y);
-    line.setAttribute('stroke', usedIds.has(edge.evidence_id) ? '#4d8dff' : '#353b45');
+    line.setAttribute('stroke', usedIds.has(edge.evidence_id) ? '#b9ff66' : '#3d3d39');
     line.setAttribute('stroke-width', usedIds.has(edge.evidence_id) ? '3' : '1');
     if (!usedIds.has(edge.evidence_id)) line.setAttribute('stroke-dasharray', '5 5');
     svg.appendChild(line);
     const label = document.createElementNS(namespace, 'text');
     label.setAttribute('x', (from.x + to.x) / 2); label.setAttribute('y', (from.y + to.y) / 2 - 6);
-    label.setAttribute('text-anchor', 'middle'); label.setAttribute('fill', usedIds.has(edge.evidence_id) ? '#9fc0ff' : '#59616d');
+    label.setAttribute('text-anchor', 'middle'); label.setAttribute('fill', usedIds.has(edge.evidence_id) ? '#b9ff66' : '#5f5f59');
     label.setAttribute('font-size', '10'); label.textContent = edge.predicate.replaceAll('_', ' ');
     svg.appendChild(label);
   });
@@ -220,11 +220,11 @@ function renderSvgFallback(container, nodeNames, edges, usedIds, activeNodes) {
     const circle = document.createElementNS(namespace, 'circle');
     circle.setAttribute('cx', point.x); circle.setAttribute('cy', point.y);
     circle.setAttribute('r', activeNodes.has(name) ? '14' : '9');
-    circle.setAttribute('fill', activeNodes.has(name) ? '#4d8dff' : '#363c47');
+    circle.setAttribute('fill', activeNodes.has(name) ? '#b9ff66' : '#3d3d39');
     svg.appendChild(circle);
     const label = document.createElementNS(namespace, 'text');
     label.setAttribute('x', point.x); label.setAttribute('y', point.y + 30);
-    label.setAttribute('text-anchor', 'middle'); label.setAttribute('fill', activeNodes.has(name) ? '#f4f6fa' : '#7f8795');
+    label.setAttribute('text-anchor', 'middle'); label.setAttribute('fill', activeNodes.has(name) ? '#f2f2ed' : '#777771');
     label.setAttribute('font-size', activeNodes.has(name) ? '12' : '10'); label.textContent = name;
     svg.appendChild(label);
   });
@@ -233,7 +233,7 @@ function renderSvgFallback(container, nodeNames, edges, usedIds, activeNodes) {
 
 function setEngineStatus(state, text) {
   engineStatus.className = `demo-status ${state}`;
-  engineStatus.lastChild.textContent = ` ${text}`;
+  engineStatus.querySelector('[data-status-text]').textContent = text;
 }
 
 function wrapLabel(value) {
@@ -261,4 +261,3 @@ fetch('/health', { cache: 'no-store' })
     else setEngineStatus('cold', 'Demo warming up');
   })
   .catch(() => setEngineStatus('cold', 'Demo may be waking'));
-
