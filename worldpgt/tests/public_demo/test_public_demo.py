@@ -59,6 +59,8 @@ def test_landing_uses_the_symbolic_hero_and_live_demo(client):
     assert 'id="graph"' in page
     assert "vis-network" in page
     assert "INTERFACE PLACEHOLDER" not in page
+    assert "Open source" in page
+    assert page.count('href="https://github.com/zowelqqee/microworld"') >= 3
 
 
 def test_relation_answer_returns_exact_used_edges(client):
