@@ -105,7 +105,7 @@ function renderResult(payload) {
   edgeCount.textContent = `${used.length} ${used.length === 1 ? 'edge' : 'edges'} used`;
   resultGrid.hidden = false;
   errorPanel.hidden = true;
-  renderGraph(used, context);
+  renderGraph(used, context, payload.decision);
 }
 
 function renderError(error) {
@@ -126,7 +126,7 @@ function renderError(error) {
   errorCopy.textContent = 'Check your connection and try again.';
 }
 
-function renderGraph(usedEdges, contextEdges) {
+function renderGraph(usedEdges, contextEdges, decision) {
   if (network) {
     network.destroy();
     network = null;
@@ -134,7 +134,18 @@ function renderGraph(usedEdges, contextEdges) {
   graphElement.replaceChildren();
   graphEmpty.hidden = usedEdges.length > 0;
   graphElement.hidden = usedEdges.length === 0;
-  if (usedEdges.length === 0) return;
+  if (usedEdges.length === 0) {
+    const emptyTitle = document.querySelector('#graph-empty-title');
+    const emptyCopy = document.querySelector('#graph-empty-copy');
+    if (decision === 'audit') {
+      emptyTitle.textContent = 'No factual edge admitted';
+      emptyCopy.textContent = 'The audit gate stopped before unsupported evidence could enter the answer.';
+    } else {
+      emptyTitle.textContent = 'Trace unavailable';
+      emptyCopy.textContent = 'The answer was returned, but no explicit edge trace was provided.';
+    }
+    return;
+  }
 
   const usedIds = new Set(usedEdges.map((edge) => edge.evidence_id));
   const edgeMap = new Map();

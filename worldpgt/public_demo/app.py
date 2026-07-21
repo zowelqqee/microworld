@@ -159,9 +159,30 @@ class _DemoEngine:
 
     def _collect_entity_plan_edges(self, selected: list[dict[str, str]], plan: Any, analyzed: Any) -> None:
         args = plan.render_args or {}
-        for key in ("relations", "common_pairs", "path", "edges"):
+        for key in ("relations", "path", "edges"):
             for raw in args.get(key, []) or []:
                 self._append_matching(selected, raw)
+
+        # Comparative plans intentionally store each common fact once, without
+        # a subject, because the renderer expands it as "both ...".  The trace
+        # must expand the same fact to the two explicit graph edges that
+        # support that wording.
+        comparative_subjects = tuple(
+            str(value)
+            for value in (args.get("entity_a"), args.get("entity_b"))
+            if value
+        )
+        for raw in args.get("common_pairs", []) or []:
+            predicate = str(raw.get("predicate") or "")
+            obj = str(raw.get("object") or "")
+            if predicate and obj:
+                for subject in comparative_subjects:
+                    self._append_key(selected, subject, predicate, obj)
+        for raw in args.get("common_classes", []) or []:
+            class_name = str(raw.get("class") or "")
+            if class_name:
+                for subject in comparative_subjects:
+                    self._append_key(selected, subject, "is_a", class_name)
 
         synthesis = args.get("synthesis")
         if synthesis is not None:

@@ -93,6 +93,28 @@ def test_connection_answer_returns_the_selected_two_hop_path(client):
     }
 
 
+def test_comparative_answer_returns_every_edge_used_for_common_facts(client):
+    response = client.post(
+        "/ask", json={"question": "What do SpaceX and Blue Origin have in common?"}
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["decision"] == "answer"
+    assert payload["support_kind"] == "semi_stable_relation"
+    assert {
+        (edge["subject"], edge["predicate"], edge["object"])
+        for edge in payload["edges_used"]
+    } == {
+        ("SpaceX", "develops", "rockets"),
+        ("SpaceX", "develops", "spacecraft"),
+        ("Blue Origin", "develops", "rockets"),
+        ("Blue Origin", "develops", "spacecraft"),
+    }
+    assert not {
+        edge["evidence_id"] for edge in payload["edges_used"]
+    }.intersection(edge["evidence_id"] for edge in payload["context_edges"])
+
+
 def test_unsupported_current_question_is_an_honest_audit(client):
     response = client.post(
         "/ask", json={"question": "What is the current stock price of Tesla?"}
