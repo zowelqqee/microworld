@@ -232,14 +232,11 @@ h1 {
 }
 
 .source-action {
-  min-width: 250px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  column-gap: 22px;
-  align-content: center;
-  text-align: left;
+  min-width: 294px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
   border: 1px solid #444440;
   border-radius: 4px;
   color: var(--text);
@@ -248,24 +245,30 @@ h1 {
   transition: border-color 150ms ease, background 150ms ease;
 }
 
+.source-action svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  color: var(--text);
+}
+
 .source-action span {
   color: var(--signal);
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: .1em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .source-action strong {
-  margin-top: 4px;
   color: #b6b6af;
   font-size: 10px;
   font-weight: 450;
+  white-space: nowrap;
 }
 
 .source-action i {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  align-self: center;
+  margin-left: auto;
   color: var(--muted);
   font-size: 13px;
   font-style: normal;
