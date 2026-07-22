@@ -1,0 +1,1246 @@
+[
+  {
+    "id": "usc35c10-000",
+    "citation": "35 U.S.C. §100(a)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(a) The term \"invention\" means invention or discovery.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (a) The term \"invention\" means invention or discovery.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(a)",
+    "source_text": "35 U.S.C. §100(a) — When used in this title unless the context otherwise indicates— (a) The term \"invention\" means invention or discovery.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "invention",
+        "predicate": "means",
+        "object": "invention or discovery",
+        "evidence_span": "The term \"invention\" means invention or discovery."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 437,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 490,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 437
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"invention\",\n    \"predicate\": \"means\",\n    \"object\": \"invention or discovery\",\n    \"evidence_span\": \"The term \\\"invention\\\" means invention or discovery.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-001",
+    "citation": "35 U.S.C. §100(b)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(b) The term \"process\" means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (b) The term \"process\" means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(b)",
+    "source_text": "35 U.S.C. §100(b) — When used in this title unless the context otherwise indicates— (b) The term \"process\" means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "process",
+        "predicate": "means",
+        "object": "process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material",
+        "evidence_span": "The term \"process\" means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 460,
+      "candidatesTokenCount": 99,
+      "totalTokenCount": 559,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 460
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"process\",\n    \"predicate\": \"means\",\n    \"object\": \"process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material\",\n    \"evidence_span\": \"The term \\\"process\\\" means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-002",
+    "citation": "35 U.S.C. §100(c)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(c) The terms \"United States\" and \"this country\" mean the United States of America, its territories and possessions.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (c) The terms \"United States\" and \"this country\" mean the United States of America, its territories and possessions.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(c)",
+    "source_text": "35 U.S.C. §100(c) — When used in this title unless the context otherwise indicates— (c) The terms \"United States\" and \"this country\" mean the United States of America, its territories and possessions.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "\"United States\"",
+        "predicate": "means",
+        "object": "the United States of America, its territories and possessions",
+        "evidence_span": "The terms \"United States\" and \"this country\" mean the United States of America, its territories and possessions."
+      },
+      {
+        "subject": "\"this country\"",
+        "predicate": "means",
+        "object": "the United States of America, its territories and possessions",
+        "evidence_span": "The terms \"United States\" and \"this country\" mean the United States of America, its territories and possessions."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 450,
+      "candidatesTokenCount": 145,
+      "totalTokenCount": 595,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 450
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"\\\"United States\\\"\",\n    \"predicate\": \"means\",\n    \"object\": \"the United States of America, its territories and possessions\",\n    \"evidence_span\": \"The terms \\\"United States\\\" and \\\"this country\\\" mean the United States of America, its territories and possessions.\"\n  },\n  {\n    \"subject\": \"\\\"this country\\\"\",\n    \"predicate\": \"means\",\n    \"object\": \"the United States of America, its territories and possessions\",\n    \"evidence_span\": \"The terms \\\"United States\\\" and \\\"this country\\\" mean the United States of America, its territories and possessions.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-003",
+    "citation": "35 U.S.C. §100(d)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(d) The word \"patentee\" includes not only the patentee to whom the patent was issued but also the successors in title to the patentee.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (d) The word \"patentee\" includes not only the patentee to whom the patent was issued but also the successors in title to the patentee.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(d)",
+    "source_text": "35 U.S.C. §100(d) — When used in this title unless the context otherwise indicates— (d) The word \"patentee\" includes not only the patentee to whom the patent was issued but also the successors in title to the patentee.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "patentee",
+        "predicate": "includes",
+        "object": "not only the patentee to whom the patent was issued but also the successors in title to the patentee",
+        "evidence_span": "The word \"patentee\" includes not only the patentee to whom the patent was issued but also the successors in title to the patentee."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 456,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 547,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 456
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"patentee\",\n    \"predicate\": \"includes\",\n    \"object\": \"not only the patentee to whom the patent was issued but also the successors in title to the patentee\",\n    \"evidence_span\": \"The word \\\"patentee\\\" includes not only the patentee to whom the patent was issued but also the successors in title to the patentee.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-004",
+    "citation": "35 U.S.C. §100(e)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(e) The term \"third-party requester\" means a person requesting ex parte reexamination under section 302 who is not the patent owner.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (e) The term \"third-party requester\" means a person requesting ex parte reexamination under section 302 who is not the patent owner.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(e)",
+    "source_text": "35 U.S.C. §100(e) — When used in this title unless the context otherwise indicates— (e) The term \"third-party requester\" means a person requesting ex parte reexamination under section 302 who is not the patent owner.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "third-party requester",
+        "predicate": "means",
+        "object": "a person requesting ex parte reexamination under section 302 who is not the patent owner",
+        "evidence_span": "The term \"third-party requester\" means a person requesting ex parte reexamination under section 302 who is not the patent owner."
+      },
+      {
+        "subject": "35 U.S.C. §100(e)",
+        "predicate": "cross-references",
+        "object": "section 302",
+        "evidence_span": "requesting ex parte reexamination under section 302"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 456,
+      "candidatesTokenCount": 161,
+      "totalTokenCount": 617,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 456
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"third-party requester\",\n    \"predicate\": \"means\",\n    \"object\": \"a person requesting ex parte reexamination under section 302 who is not the patent owner\",\n    \"evidence_span\": \"The term \\\"third-party requester\\\" means a person requesting ex parte reexamination under section 302 who is not the patent owner.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(e)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 302\",\n    \"evidence_span\": \"requesting ex parte reexamination under section 302\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-005",
+    "citation": "35 U.S.C. §100(f)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(f) The term \"inventor\" means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (f) The term \"inventor\" means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(f)",
+    "source_text": "35 U.S.C. §100(f) — When used in this title unless the context otherwise indicates— (f) The term \"inventor\" means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "inventor",
+        "predicate": "means",
+        "object": "the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention",
+        "evidence_span": "The term \"inventor\" means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 457,
+      "candidatesTokenCount": 93,
+      "totalTokenCount": 550,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 457
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"inventor\",\n    \"predicate\": \"means\",\n    \"object\": \"the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention\",\n    \"evidence_span\": \"The term \\\"inventor\\\" means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-006",
+    "citation": "35 U.S.C. §100(g)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(g) The terms \"joint inventor\" and \"coinventor\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (g) The terms \"joint inventor\" and \"coinventor\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(g)",
+    "source_text": "35 U.S.C. §100(g) — When used in this title unless the context otherwise indicates— (g) The terms \"joint inventor\" and \"coinventor\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "joint inventor",
+        "predicate": "mean",
+        "object": "any 1 of the individuals who invented or discovered the subject matter of a joint invention",
+        "evidence_span": "The terms \"joint inventor\" and \"coinventor\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention."
+      },
+      {
+        "subject": "coinventor",
+        "predicate": "mean",
+        "object": "any 1 of the individuals who invented or discovered the subject matter of a joint invention",
+        "evidence_span": "The terms \"joint inventor\" and \"coinventor\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 458,
+      "candidatesTokenCount": 176,
+      "totalTokenCount": 634,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 458
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"joint inventor\",\n    \"predicate\": \"mean\",\n    \"object\": \"any 1 of the individuals who invented or discovered the subject matter of a joint invention\",\n    \"evidence_span\": \"The terms \\\"joint inventor\\\" and \\\"coinventor\\\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention.\"\n  },\n  {\n    \"subject\": \"coinventor\",\n    \"predicate\": \"mean\",\n    \"object\": \"any 1 of the individuals who invented or discovered the subject matter of a joint invention\",\n    \"evidence_span\": \"The terms \\\"joint inventor\\\" and \\\"coinventor\\\" mean any 1 of the individuals who invented or discovered the subject matter of a joint invention.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-007",
+    "citation": "35 U.S.C. §100(h)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(h) The term \"joint research agreement\" means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (h) The term \"joint research agreement\" means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(h)",
+    "source_text": "35 U.S.C. §100(h) — When used in this title unless the context otherwise indicates— (h) The term \"joint research agreement\" means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "joint research agreement",
+        "predicate": "means",
+        "object": "a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention",
+        "evidence_span": "The term \"joint research agreement\" means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 473,
+      "candidatesTokenCount": 125,
+      "totalTokenCount": 598,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 473
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"joint research agreement\",\n    \"predicate\": \"means\",\n    \"object\": \"a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention\",\n    \"evidence_span\": \"The term \\\"joint research agreement\\\" means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-008",
+    "citation": "35 U.S.C. §100(i)(1)(A)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means—",
+    "provision_text": "(A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention; or",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention; or",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(A)",
+    "source_text": "35 U.S.C. §100(i)(1)(A) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention; or",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "\"effective filing date\"",
+        "predicate": "means",
+        "object": "if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention",
+        "evidence_span": "The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(A)",
+        "predicate": "cross-references",
+        "object": "subparagraph (B)",
+        "evidence_span": "if subparagraph (B) does not apply"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 486,
+      "candidatesTokenCount": 191,
+      "totalTokenCount": 677,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 486
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"\\\"effective filing date\\\"\",\n    \"predicate\": \"means\",\n    \"object\": \"if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention\",\n    \"evidence_span\": \"The term \\\"effective filing date\\\" for a claimed invention in a patent or application for patent means— (A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(A)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subparagraph (B)\",\n    \"evidence_span\": \"if subparagraph (B) does not apply\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-009",
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means—",
+    "provision_text": "(B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "effective filing date",
+        "predicate": "means",
+        "object": "the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c)",
+        "evidence_span": "The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c)."
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 119",
+        "evidence_span": "section 119"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 365(a)",
+        "evidence_span": "365(a)"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 365(b)",
+        "evidence_span": "365(b)"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 386(a)",
+        "evidence_span": "386(a)"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 386(b)",
+        "evidence_span": "386(b)"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 120",
+        "evidence_span": "section 120"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 121",
+        "evidence_span": "121"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 365(c)",
+        "evidence_span": "365(c)"
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(1)(B)",
+        "predicate": "cross-references",
+        "object": "section 386(c)",
+        "evidence_span": "386(c)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 554,
+      "candidatesTokenCount": 873,
+      "totalTokenCount": 1427,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 554
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"effective filing date\",\n    \"predicate\": \"means\",\n    \"object\": \"the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c)\",\n    \"evidence_span\": \"The term \\\"effective filing date\\\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 119\",\n    \"evidence_span\": \"section 119\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 365(a)\",\n    \"evidence_span\": \"365(a)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 365(b)\",\n    \"evidence_span\": \"365(b)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 386(a)\",\n    \"evidence_span\": \"386(a)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 386(b)\",\n    \"evidence_span\": \"386(b)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 120\",\n    \"evidence_span\": \"section 120\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 121\",\n    \"evidence_span\": \"121\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 365(c)\",\n    \"evidence_span\": \"365(c)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 386(c)\",\n    \"evidence_span\": \"386(c)\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-010",
+    "citation": "35 U.S.C. §100(i)(2)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(2) The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (2) The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(2)",
+    "source_text": "35 U.S.C. §100(i)(2) — When used in this title unless the context otherwise indicates— (2) The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §100(i)(2)",
+        "predicate": "governs",
+        "object": "a claimed invention in an application for reissue or reissued patent",
+        "evidence_span": "The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought."
+      },
+      {
+        "subject": "35 U.S.C. §100(i)(2)",
+        "predicate": "states the legal consequence that",
+        "object": "the claim to the invention to have been contained in the patent for which reissue was sought",
+        "evidence_span": "The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 470,
+      "candidatesTokenCount": 223,
+      "totalTokenCount": 693,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 470
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §100(i)(2)\",\n    \"predicate\": \"governs\",\n    \"object\": \"a claimed invention in an application for reissue or reissued patent\",\n    \"evidence_span\": \"The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §100(i)(2)\",\n    \"predicate\": \"states the legal consequence that\",\n    \"object\": \"the claim to the invention to have been contained in the patent for which reissue was sought\",\n    \"evidence_span\": \"The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-011",
+    "citation": "35 U.S.C. §100(j)",
+    "section": "100",
+    "section_heading": "Definitions",
+    "stem_text": "When used in this title unless the context otherwise indicates—",
+    "provision_text": "(j) The term \"claimed invention\" means the subject matter defined by a claim in a patent or an application for a patent.",
+    "statutory_body_text": "When used in this title unless the context otherwise indicates— (j) The term \"claimed invention\" means the subject matter defined by a claim in a patent or an application for a patent.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(j)",
+    "source_text": "35 U.S.C. §100(j) — When used in this title unless the context otherwise indicates— (j) The term \"claimed invention\" means the subject matter defined by a claim in a patent or an application for a patent.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "claimed invention",
+        "predicate": "means",
+        "object": "the subject matter defined by a claim in a patent or an application for a patent",
+        "evidence_span": "The term \"claimed invention\" means the subject matter defined by a claim in a patent or an application for a patent."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 451,
+      "candidatesTokenCount": 81,
+      "totalTokenCount": 532,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 451
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"claimed invention\",\n    \"predicate\": \"means\",\n    \"object\": \"the subject matter defined by a claim in a patent or an application for a patent\",\n    \"evidence_span\": \"The term \\\"claimed invention\\\" means the subject matter defined by a claim in a patent or an application for a patent.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-012",
+    "citation": "35 U.S.C. §101",
+    "section": "101",
+    "section_heading": "Inventions patentable",
+    "stem_text": "",
+    "provision_text": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title.",
+    "statutory_body_text": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §101",
+    "source_text": "35 U.S.C. §101 — Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §101",
+        "predicate": "governs",
+        "object": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof",
+        "evidence_span": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title."
+      },
+      {
+        "subject": "35 U.S.C. §101",
+        "predicate": "states the legal consequence that",
+        "object": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor",
+        "evidence_span": "Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 454,
+      "candidatesTokenCount": 242,
+      "totalTokenCount": 696,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 454
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §101\",\n    \"predicate\": \"governs\",\n    \"object\": \"Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof\",\n    \"evidence_span\": \"Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §101\",\n    \"predicate\": \"states the legal consequence that\",\n    \"object\": \"Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor\",\n    \"evidence_span\": \"Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-013",
+    "citation": "35 U.S.C. §102(a)(1)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(a) Novelty; Prior Art.—A person shall be entitled to a patent unless—",
+    "provision_text": "(1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention; or",
+    "statutory_body_text": "(a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention; or",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(a)(1)",
+    "source_text": "35 U.S.C. §102(a)(1) — (a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention; or",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(a)(1)",
+        "predicate": "governs the condition of",
+        "object": "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention",
+        "evidence_span": "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention"
+      },
+      {
+        "subject": "35 U.S.C. §102(a)(1)",
+        "predicate": "states that a person shall not be entitled to a patent if",
+        "object": "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention",
+        "evidence_span": "A person shall be entitled to a patent unless— (1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 474,
+      "candidatesTokenCount": 277,
+      "totalTokenCount": 751,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 474
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(a)(1)\",\n    \"predicate\": \"governs the condition of\",\n    \"object\": \"the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention\",\n    \"evidence_span\": \"the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(a)(1)\",\n    \"predicate\": \"states that a person shall not be entitled to a patent if\",\n    \"object\": \"the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention\",\n    \"evidence_span\": \"A person shall be entitled to a patent unless— (1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-014",
+    "citation": "35 U.S.C. §102(a)(2)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(a) Novelty; Prior Art.—A person shall be entitled to a patent unless—",
+    "provision_text": "(2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention.",
+    "statutory_body_text": "(a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(a)(2)",
+    "source_text": "35 U.S.C. §102(a)(2) — (a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(a)(2)",
+        "predicate": "cross-references",
+        "object": "section 151",
+        "evidence_span": "described in a patent issued under section 151"
+      },
+      {
+        "subject": "35 U.S.C. §102(a)(2)",
+        "predicate": "cross-references",
+        "object": "section 122(b)",
+        "evidence_span": "application for patent published or deemed published under section 122(b)"
+      },
+      {
+        "subject": "35 U.S.C. §102(a)(2)",
+        "predicate": "states a legal consequence where",
+        "object": "the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention",
+        "evidence_span": "A person shall be entitled to a patent unless— (2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 502,
+      "candidatesTokenCount": 349,
+      "totalTokenCount": 851,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 502
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(a)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 151\",\n    \"evidence_span\": \"described in a patent issued under section 151\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(a)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 122(b)\",\n    \"evidence_span\": \"application for patent published or deemed published under section 122(b)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(a)(2)\",\n    \"predicate\": \"states a legal consequence where\",\n    \"object\": \"the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention\",\n    \"evidence_span\": \"A person shall be entitled to a patent unless— (2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-015",
+    "citation": "35 U.S.C. §102(b)(1)(A)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if—",
+    "provision_text": "(A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "statutory_body_text": "(b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(b)(1)(A)",
+    "source_text": "35 U.S.C. §102(b)(1)(A) — (b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(b)(1)(A)",
+        "predicate": "shall not be",
+        "object": "prior art to the claimed invention under subsection (a)(1)",
+        "evidence_span": "A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor"
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(1)(A)",
+        "predicate": "cross-references",
+        "object": "subsection (a)(1)",
+        "evidence_span": "subsection (a)(1)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 512,
+      "candidatesTokenCount": 206,
+      "totalTokenCount": 718,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 512
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(b)(1)(A)\",\n    \"predicate\": \"shall not be\",\n    \"object\": \"prior art to the claimed invention under subsection (a)(1)\",\n    \"evidence_span\": \"A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(1)(A)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subsection (a)(1)\",\n    \"evidence_span\": \"subsection (a)(1)\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-016",
+    "citation": "35 U.S.C. §102(b)(1)(B)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if—",
+    "provision_text": "(B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.",
+    "statutory_body_text": "(b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(b)(1)(B)",
+    "source_text": "35 U.S.C. §102(b)(1)(B) — (b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(b)(1)(B)",
+        "predicate": "governs",
+        "object": "A disclosure made 1 year or less before the effective filing date of a claimed invention",
+        "evidence_span": "A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor."
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(1)(B)",
+        "predicate": "cross-references",
+        "object": "subsection (a)(1)",
+        "evidence_span": "subsection (a)(1)"
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(1)(B)",
+        "predicate": "states that if the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor, the disclosure shall not be",
+        "object": "prior art to the claimed invention",
+        "evidence_span": "A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 520,
+      "candidatesTokenCount": 402,
+      "totalTokenCount": 922,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 520
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(b)(1)(B)\",\n    \"predicate\": \"governs\",\n    \"object\": \"A disclosure made 1 year or less before the effective filing date of a claimed invention\",\n    \"evidence_span\": \"A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(1)(B)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subsection (a)(1)\",\n    \"evidence_span\": \"subsection (a)(1)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(1)(B)\",\n    \"predicate\": \"states that if the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor, the disclosure shall not be\",\n    \"object\": \"prior art to the claimed invention\",\n    \"evidence_span\": \"A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-017",
+    "citation": "35 U.S.C. §102(b)(2)(A)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if—",
+    "provision_text": "(A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;",
+    "statutory_body_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(b)(2)(A)",
+    "source_text": "35 U.S.C. §102(b)(2)(A) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(b)(2)(A)",
+        "predicate": "is a cross-reference to",
+        "object": "subsection (a)(2)",
+        "evidence_span": "A disclosure shall not be prior art to a claimed invention under subsection (a)(2)"
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(2)(A)",
+        "predicate": "states that if the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor, then the disclosure shall not be",
+        "object": "prior art to a claimed invention",
+        "evidence_span": "A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 473,
+      "candidatesTokenCount": 210,
+      "totalTokenCount": 683,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 473
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(A)\",\n    \"predicate\": \"is a cross-reference to\",\n    \"object\": \"subsection (a)(2)\",\n    \"evidence_span\": \"A disclosure shall not be prior art to a claimed invention under subsection (a)(2)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(A)\",\n    \"predicate\": \"states that if the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor, then the disclosure shall not be\",\n    \"object\": \"prior art to a claimed invention\",\n    \"evidence_span\": \"A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-018",
+    "citation": "35 U.S.C. §102(b)(2)(B)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if—",
+    "provision_text": "(B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "statutory_body_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(b)(2)(B)",
+    "source_text": "35 U.S.C. §102(b)(2)(B) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(b)(2)(B)",
+        "predicate": "is a cross-reference to",
+        "object": "subsection (a)(2)",
+        "evidence_span": "35 U.S.C. §102(b)(2)(B) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2)"
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(2)(B)",
+        "predicate": "states that a disclosure shall not be prior art if",
+        "object": "the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor",
+        "evidence_span": "A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 506,
+      "candidatesTokenCount": 304,
+      "totalTokenCount": 810,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 506
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(B)\",\n    \"predicate\": \"is a cross-reference to\",\n    \"object\": \"subsection (a)(2)\",\n    \"evidence_span\": \"35 U.S.C. §102(b)(2)(B) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(B)\",\n    \"predicate\": \"states that a disclosure shall not be prior art if\",\n    \"object\": \"the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor\",\n    \"evidence_span\": \"A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-019",
+    "citation": "35 U.S.C. §102(b)(2)(C)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if—",
+    "provision_text": "(C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person.",
+    "statutory_body_text": "(b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(b)(2)(C)",
+    "source_text": "35 U.S.C. §102(b)(2)(C) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(b)(2)(C)",
+        "predicate": "is a cross-reference to",
+        "object": "subsection (a)(2)",
+        "evidence_span": "A disclosure shall not be prior art to a claimed invention under subsection (a)(2)"
+      },
+      {
+        "subject": "35 U.S.C. §102(b)(2)(C)",
+        "predicate": "states that a disclosure shall not be prior art if",
+        "object": "the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person",
+        "evidence_span": "A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 495,
+      "candidatesTokenCount": 248,
+      "totalTokenCount": 743,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 495
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(C)\",\n    \"predicate\": \"is a cross-reference to\",\n    \"object\": \"subsection (a)(2)\",\n    \"evidence_span\": \"A disclosure shall not be prior art to a claimed invention under subsection (a)(2)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(b)(2)(C)\",\n    \"predicate\": \"states that a disclosure shall not be prior art if\",\n    \"object\": \"the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person\",\n    \"evidence_span\": \"A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-020",
+    "citation": "35 U.S.C. §102(c)(1)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if—",
+    "provision_text": "(1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention;",
+    "statutory_body_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention;",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(c)(1)",
+    "source_text": "35 U.S.C. §102(c)(1) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention;",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(c)(1)",
+        "predicate": "is a cross-reference to",
+        "object": "subsection (b)(2)(C)",
+        "evidence_span": "applying the provisions of subsection (b)(2)(C)"
+      },
+      {
+        "subject": "35 U.S.C. §102(c)(1)",
+        "predicate": "states the legal consequence that",
+        "object": "subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person",
+        "evidence_span": "Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 517,
+      "candidatesTokenCount": 256,
+      "totalTokenCount": 773,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 517
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(c)(1)\",\n    \"predicate\": \"is a cross-reference to\",\n    \"object\": \"subsection (b)(2)(C)\",\n    \"evidence_span\": \"applying the provisions of subsection (b)(2)(C)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(c)(1)\",\n    \"predicate\": \"states the legal consequence that\",\n    \"object\": \"subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person\",\n    \"evidence_span\": \"Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-021",
+    "citation": "35 U.S.C. §102(c)(2)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if—",
+    "provision_text": "(2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement; and",
+    "statutory_body_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement; and",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(c)(2)",
+    "source_text": "35 U.S.C. §102(c)(2) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement; and",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(c)(2)",
+        "predicate": "cross-references",
+        "object": "subsection (b)(2)(C)",
+        "evidence_span": "applying the provisions of subsection (b)(2)(C)"
+      },
+      {
+        "subject": "35 U.S.C. §102(c)(2)",
+        "predicate": "governs",
+        "object": "Subject matter disclosed and a claimed invention",
+        "evidence_span": "Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 493,
+      "candidatesTokenCount": 203,
+      "totalTokenCount": 696,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 493
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(c)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subsection (b)(2)(C)\",\n    \"evidence_span\": \"applying the provisions of subsection (b)(2)(C)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(c)(2)\",\n    \"predicate\": \"governs\",\n    \"object\": \"Subject matter disclosed and a claimed invention\",\n    \"evidence_span\": \"Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-022",
+    "citation": "35 U.S.C. §102(c)(3)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if—",
+    "provision_text": "(3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement.",
+    "statutory_body_text": "(c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(c)(3)",
+    "source_text": "35 U.S.C. §102(c)(3) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(c)(3)",
+        "predicate": "is a condition for",
+        "object": "the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement",
+        "evidence_span": "35 U.S.C. §102(c)(3) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement."
+      },
+      {
+        "subject": "35 U.S.C. §102(c)(3)",
+        "predicate": "cross-references",
+        "object": "subsection (b)(2)(C)",
+        "evidence_span": "applying the provisions of subsection (b)(2)(C)"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 497,
+      "candidatesTokenCount": 255,
+      "totalTokenCount": 752,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 497
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(c)(3)\",\n    \"predicate\": \"is a condition for\",\n    \"object\": \"the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement\",\n    \"evidence_span\": \"35 U.S.C. §102(c)(3) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(c)(3)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subsection (b)(2)(C)\",\n    \"evidence_span\": \"applying the provisions of subsection (b)(2)(C)\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-023",
+    "citation": "35 U.S.C. §102(d)(1)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application—",
+    "provision_text": "(1) if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent; or",
+    "statutory_body_text": "(d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (1) if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent; or",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(d)(1)",
+    "source_text": "35 U.S.C. §102(d)(1) — (d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (1) if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent; or",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(d)(1)",
+        "predicate": "cross-references",
+        "object": "subsection (a)(2)",
+        "evidence_span": "under subsection (a)(2)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(1)",
+        "predicate": "cross-references",
+        "object": "paragraph (2)",
+        "evidence_span": "if paragraph (2) does not apply"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(1)",
+        "predicate": "governs",
+        "object": "a patent or application for patent",
+        "evidence_span": "For purposes of determining whether a patent or application for patent is prior art to a claimed invention"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(1)",
+        "predicate": "if paragraph (2) does not apply, the effective filing date is",
+        "object": "the actual filing date of the patent or the application for patent",
+        "evidence_span": "if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 506,
+      "candidatesTokenCount": 314,
+      "totalTokenCount": 820,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 506
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(d)(1)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"subsection (a)(2)\",\n    \"evidence_span\": \"under subsection (a)(2)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(1)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"paragraph (2)\",\n    \"evidence_span\": \"if paragraph (2) does not apply\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(1)\",\n    \"predicate\": \"governs\",\n    \"object\": \"a patent or application for patent\",\n    \"evidence_span\": \"For purposes of determining whether a patent or application for patent is prior art to a claimed invention\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(1)\",\n    \"predicate\": \"if paragraph (2) does not apply, the effective filing date is\",\n    \"object\": \"the actual filing date of the patent or the application for patent\",\n    \"evidence_span\": \"if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-024",
+    "citation": "35 U.S.C. §102(d)(2)",
+    "section": "102",
+    "section_heading": "Conditions for patentability; novelty",
+    "stem_text": "(d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application—",
+    "provision_text": "(2) if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter.",
+    "statutory_body_text": "(d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (2) if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §102(d)(2)",
+    "source_text": "35 U.S.C. §102(d)(2) — (d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (2) if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "section 119",
+        "evidence_span": "section 119"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "365(a)",
+        "evidence_span": "365(a)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "365(b)",
+        "evidence_span": "365(b)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "386(a)",
+        "evidence_span": "386(a)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "386(b)",
+        "evidence_span": "386(b)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "section 120",
+        "evidence_span": "section 120"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "121",
+        "evidence_span": "121"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "365(c)",
+        "evidence_span": "365(c)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "cross-references",
+        "object": "386(c)",
+        "evidence_span": "386(c)"
+      },
+      {
+        "subject": "35 U.S.C. §102(d)(2)",
+        "predicate": "establishes legal consequence that if the patent or application for patent is entitled to claim a right of priority or benefit of an earlier filing date, it shall be considered to have been effectively filed as of",
+        "object": "the filing date of the earliest such application that describes the subject matter",
+        "evidence_span": "if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 597,
+      "candidatesTokenCount": 804,
+      "totalTokenCount": 1401,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 597
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 119\",\n    \"evidence_span\": \"section 119\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"365(a)\",\n    \"evidence_span\": \"365(a)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"365(b)\",\n    \"evidence_span\": \"365(b)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"386(a)\",\n    \"evidence_span\": \"386(a)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"386(b)\",\n    \"evidence_span\": \"386(b)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 120\",\n    \"evidence_span\": \"section 120\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"121\",\n    \"evidence_span\": \"121\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"365(c)\",\n    \"evidence_span\": \"365(c)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"386(c)\",\n    \"evidence_span\": \"386(c)\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §102(d)(2)\",\n    \"predicate\": \"establishes legal consequence that if the patent or application for patent is entitled to claim a right of priority or benefit of an earlier filing date, it shall be considered to have been effectively filed as of\",\n    \"object\": \"the filing date of the earliest such application that describes the subject matter\",\n    \"evidence_span\": \"if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-025",
+    "citation": "35 U.S.C. §103",
+    "section": "103",
+    "section_heading": "Conditions for patentability; non-obvious subject matter",
+    "stem_text": "",
+    "provision_text": "A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. Patentability shall not be negated by the manner in which the invention was made.",
+    "statutory_body_text": "A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. Patentability shall not be negated by the manner in which the invention was made.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §103",
+    "source_text": "35 U.S.C. §103 — A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. Patentability shall not be negated by the manner in which the invention was made.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §103",
+        "predicate": "cross-references",
+        "object": "section 102",
+        "evidence_span": "section 102"
+      },
+      {
+        "subject": "35 U.S.C. §103",
+        "predicate": "governs",
+        "object": "a claimed invention",
+        "evidence_span": "A patent for a claimed invention"
+      },
+      {
+        "subject": "35 U.S.C. §103",
+        "predicate": "states that if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains, then",
+        "object": "a patent for a claimed invention may not be obtained",
+        "evidence_span": "A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains."
+      },
+      {
+        "subject": "35 U.S.C. §103",
+        "predicate": "states that patentability shall not be negated by",
+        "object": "the manner in which the invention was made",
+        "evidence_span": "Patentability shall not be negated by the manner in which the invention was made."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 505,
+      "candidatesTokenCount": 391,
+      "totalTokenCount": 896,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 505
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §103\",\n    \"predicate\": \"cross-references\",\n    \"object\": \"section 102\",\n    \"evidence_span\": \"section 102\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §103\",\n    \"predicate\": \"governs\",\n    \"object\": \"a claimed invention\",\n    \"evidence_span\": \"A patent for a claimed invention\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §103\",\n    \"predicate\": \"states that if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains, then\",\n    \"object\": \"a patent for a claimed invention may not be obtained\",\n    \"evidence_span\": \"A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains.\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §103\",\n    \"predicate\": \"states that patentability shall not be negated by\",\n    \"object\": \"the manner in which the invention was made\",\n    \"evidence_span\": \"Patentability shall not be negated by the manner in which the invention was made.\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-026",
+    "citation": "35 U.S.C. §105(a)",
+    "section": "105",
+    "section_heading": "Inventions in outer space",
+    "stem_text": "",
+    "provision_text": "(a) Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title, except with respect to any space object or component thereof that is specifically identified and otherwise provided for by an international agreement to which the United States is a party, or with respect to any space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space.",
+    "statutory_body_text": "(a) Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title, except with respect to any space object or component thereof that is specifically identified and otherwise provided for by an international agreement to which the United States is a party, or with respect to any space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §105(a)",
+    "source_text": "35 U.S.C. §105(a) — (a) Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title, except with respect to any space object or component thereof that is specifically identified and otherwise provided for by an international agreement to which the United States is a party, or with respect to any space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §105(a)",
+        "predicate": "governs",
+        "object": "Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States",
+        "evidence_span": "Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States"
+      },
+      {
+        "subject": "35 U.S.C. §105(a)",
+        "predicate": "states that if an invention is made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States, it",
+        "object": "shall be considered to be made, used or sold within the United States for the purposes of this title",
+        "evidence_span": "Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title"
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 528,
+      "candidatesTokenCount": 255,
+      "totalTokenCount": 783,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 528
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §105(a)\",\n    \"predicate\": \"governs\",\n    \"object\": \"Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States\",\n    \"evidence_span\": \"Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §105(a)\",\n    \"predicate\": \"states that if an invention is made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States, it\",\n    \"object\": \"shall be considered to be made, used or sold within the United States for the purposes of this title\",\n    \"evidence_span\": \"Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title\"\n  }\n]"
+  },
+  {
+    "id": "usc35c10-027",
+    "citation": "35 U.S.C. §105(b)",
+    "section": "105",
+    "section_heading": "Inventions in outer space",
+    "stem_text": "",
+    "provision_text": "(b) Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry.",
+    "statutory_body_text": "(b) Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry.",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §105(b)",
+    "source_text": "35 U.S.C. §105(b) — (b) Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry.",
+    "model": "gemini-3.1-flash-lite",
+    "triples": [
+      {
+        "subject": "35 U.S.C. §105(b)",
+        "predicate": "governs",
+        "object": "Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space",
+        "evidence_span": "Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space"
+      },
+      {
+        "subject": "35 U.S.C. §105(b)",
+        "predicate": "if specifically so agreed in an international agreement between the United States and the state of registry, shall be considered to be",
+        "object": "made, used or sold within the United States for the purposes of this title",
+        "evidence_span": "Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry."
+      }
+    ],
+    "usage": {
+      "promptTokenCount": 495,
+      "candidatesTokenCount": 301,
+      "totalTokenCount": 796,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 495
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response_text": "[\n  {\n    \"subject\": \"35 U.S.C. §105(b)\",\n    \"predicate\": \"governs\",\n    \"object\": \"Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space\",\n    \"evidence_span\": \"Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space\"\n  },\n  {\n    \"subject\": \"35 U.S.C. §105(b)\",\n    \"predicate\": \"if specifically so agreed in an international agreement between the United States and the state of registry, shall be considered to be\",\n    \"object\": \"made, used or sold within the United States for the purposes of this title\",\n    \"evidence_span\": \"Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry.\"\n  }\n]"
+  }
+]

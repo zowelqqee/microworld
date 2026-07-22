@@ -1,0 +1,293 @@
+{
+  "union_coverage_by_provision": {
+    "35 U.S.C. §100(i)(2)": {
+      "edges": 1,
+      "union_coverage": 0.87,
+      "uncovered_content_words": [
+        "(2)",
+        "unless",
+        "when"
+      ]
+    },
+    "35 U.S.C. §101": {
+      "edges": 1,
+      "union_coverage": 0.895,
+      "uncovered_content_words": [
+        "subject",
+        "therefor"
+      ]
+    },
+    "35 U.S.C. §102(a)(1)": {
+      "edges": 1,
+      "union_coverage": 0.75,
+      "uncovered_content_words": [
+        "(1)",
+        "(a)",
+        "art",
+        "novelty",
+        "prior",
+        "unless"
+      ]
+    },
+    "35 U.S.C. §102(a)(2)": {
+      "edges": 1,
+      "union_coverage": 0.759,
+      "uncovered_content_words": [
+        "(2)",
+        "(a)",
+        "art",
+        "case",
+        "novelty",
+        "prior",
+        "unless"
+      ]
+    },
+    "35 U.S.C. §102(b)(1)(A)": {
+      "edges": 1,
+      "union_coverage": 0.8,
+      "uncovered_content_words": [
+        "(1)",
+        "(a)",
+        "(b)",
+        "disclosures",
+        "exceptions",
+        "if"
+      ]
+    },
+    "35 U.S.C. §102(b)(1)(B)": {
+      "edges": 1,
+      "union_coverage": 0.839,
+      "uncovered_content_words": [
+        "(1)",
+        "(b)",
+        "disclosures",
+        "exceptions",
+        "if"
+      ]
+    },
+    "35 U.S.C. §102(b)(2)(A)": {
+      "edges": 1,
+      "union_coverage": 0.64,
+      "uncovered_content_words": [
+        "(2)",
+        "(a)",
+        "(b)",
+        "appearing",
+        "applications",
+        "disclosures",
+        "exceptions",
+        "if",
+        "patents"
+      ]
+    },
+    "35 U.S.C. §102(b)(2)(B)": {
+      "edges": 1,
+      "union_coverage": 0.733,
+      "uncovered_content_words": [
+        "(2)",
+        "(b)",
+        "appearing",
+        "applications",
+        "disclosures",
+        "exceptions",
+        "if",
+        "patents"
+      ]
+    },
+    "35 U.S.C. §102(b)(2)(C)": {
+      "edges": 1,
+      "union_coverage": 0.69,
+      "uncovered_content_words": [
+        "(2)",
+        "(b)",
+        "(c)",
+        "appearing",
+        "applications",
+        "disclosures",
+        "exceptions",
+        "if",
+        "patents"
+      ]
+    },
+    "35 U.S.C. §102(c)(1)-(3)": {
+      "edges": 1,
+      "union_coverage": 0.686,
+      "uncovered_content_words": [
+        "(1)",
+        "(c)",
+        "agreements",
+        "assignment",
+        "common",
+        "have",
+        "if",
+        "obligation",
+        "ownership",
+        "person",
+        "same"
+      ]
+    },
+    "35 U.S.C. §102(d)(1)": {
+      "edges": 1,
+      "union_coverage": 0.667,
+      "uncovered_content_words": [
+        "(1)",
+        "(d)",
+        "applications",
+        "considered",
+        "determining",
+        "effective",
+        "have",
+        "if",
+        "patents",
+        "published",
+        "purposes"
+      ]
+    },
+    "35 U.S.C. §102(d)(2)": {
+      "edges": 1,
+      "union_coverage": 0.796,
+      "uncovered_content_words": [
+        "(2)",
+        "(d)",
+        "considered",
+        "determining",
+        "effective",
+        "have",
+        "if",
+        "patents",
+        "published",
+        "purposes"
+      ]
+    },
+    "35 U.S.C. §103": {
+      "edges": 2,
+      "union_coverage": 0.939,
+      "uncovered_content_words": [
+        "if",
+        "notwithstanding"
+      ]
+    },
+    "35 U.S.C. §105(a)": {
+      "edges": 1,
+      "union_coverage": 0.892,
+      "uncovered_content_words": [
+        "(a)",
+        "except",
+        "respect",
+        "within"
+      ]
+    },
+    "35 U.S.C. §105(b)": {
+      "edges": 1,
+      "union_coverage": 0.909,
+      "uncovered_content_words": [
+        "(b)",
+        "if",
+        "within"
+      ]
+    },
+    "35 U.S.C. §100(i)(1)(A)": {
+      "edges": 1,
+      "union_coverage": 0.769,
+      "uncovered_content_words": [
+        "(a)",
+        "(i)(1)",
+        "claimed",
+        "if",
+        "unless",
+        "when"
+      ]
+    },
+    "35 U.S.C. §100(i)(1)(B)": {
+      "edges": 1,
+      "union_coverage": 0.853,
+      "uncovered_content_words": [
+        "(b)",
+        "(i)(1)",
+        "claimed",
+        "unless",
+        "when"
+      ]
+    }
+  },
+  "collision_analysis": [
+    {
+      "kind": "disjunctive_limbs",
+      "a": "35 U.S.C. §102(a)(1)",
+      "b": "35 U.S.C. §102(a)(2)",
+      "a_conditions": 1,
+      "b_conditions": 1,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention"
+      ]
+    },
+    {
+      "kind": "disjunctive_limbs",
+      "a": "35 U.S.C. §102(b)(1)(A)",
+      "b": "35 U.S.C. §102(b)(1)(B)",
+      "a_conditions": 2,
+      "b_conditions": 2,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the prior-art determination is made under subsection (a)(1)"
+      ]
+    },
+    {
+      "kind": "disjunctive_limbs",
+      "a": "35 U.S.C. §102(b)(2)(A)",
+      "b": "35 U.S.C. §102(b)(2)(B)",
+      "a_conditions": 2,
+      "b_conditions": 2,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the prior-art determination is made under subsection (a)(2)"
+      ]
+    },
+    {
+      "kind": "disjunctive_limbs",
+      "a": "35 U.S.C. §102(b)(2)(A)",
+      "b": "35 U.S.C. §102(b)(2)(C)",
+      "a_conditions": 2,
+      "b_conditions": 2,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the prior-art determination is made under subsection (a)(2)"
+      ]
+    },
+    {
+      "kind": "disjunctive_limbs",
+      "a": "35 U.S.C. §102(b)(2)(B)",
+      "b": "35 U.S.C. §102(b)(2)(C)",
+      "a_conditions": 2,
+      "b_conditions": 2,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the prior-art determination is made under subsection (a)(2)"
+      ]
+    },
+    {
+      "kind": "alternative_limbs",
+      "a": "35 U.S.C. §102(d)(1)",
+      "b": "35 U.S.C. §102(d)(2)",
+      "a_conditions": 3,
+      "b_conditions": 3,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2)"
+      ]
+    },
+    {
+      "kind": "alternative_limbs",
+      "a": "35 U.S.C. §100(i)(1)(A)",
+      "b": "35 U.S.C. §100(i)(1)(B)",
+      "a_conditions": 2,
+      "b_conditions": 1,
+      "resolved_by_conditions": true,
+      "guard_text": [
+        "the term is used in this title"
+      ]
+    }
+  ],
+  "unresolved_collisions": []
+}

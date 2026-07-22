@@ -1,0 +1,205 @@
+[
+  {
+    "candidate_id": "usc35c10-009:2",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 365(a)",
+    "evidence_span": "365(a)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:3",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 365(b)",
+    "evidence_span": "365(b)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:4",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 386(a)",
+    "evidence_span": "386(a)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:5",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 386(b)",
+    "evidence_span": "386(b)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:7",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 121",
+    "evidence_span": "121",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:8",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 365(c)",
+    "evidence_span": "365(c)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc35c10-009:9",
+    "batch_id": "usc35c10-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "35 U.S.C. chapter 10 — Patentability of Inventions (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title35/html/USCODE-2023-title35-partII-chap10.htm",
+    "source_fingerprint": "35 U.S.C. §100(i)(1)(B)",
+    "source_text": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+    "subject": "35 U.S.C. §100(i)(1)(B)",
+    "predicate": "cross-references",
+    "object": "section 386(c)",
+    "evidence_span": "386(c)",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  }
+]

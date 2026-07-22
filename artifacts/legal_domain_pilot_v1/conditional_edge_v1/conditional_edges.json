@@ -1,0 +1,739 @@
+[
+  {
+    "id": "ce-010:1",
+    "predicate_words": 3,
+    "condition_count": 1,
+    "exception_count": 1,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-010:1",
+    "citation": "35 U.S.C. §100(i)(2)",
+    "original_verdict": "REJECT",
+    "original_defect": "clause_fragment",
+    "original_predicate_words": 5,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.87,
+    "flat_coverage": 0.304,
+    "edge": {
+      "id": "ce-010:1",
+      "subject": "the effective filing date for a claimed invention in an application for reissue or reissued patent",
+      "relation": "determined_by_deeming",
+      "object": "the claim to the invention to have been contained in the patent for which reissue was sought",
+      "evidence_sentence": "35 U.S.C. §100(i)(2) — When used in this title unless the context otherwise indicates— (2) The effective filing date for a claimed invention in an application for reissue or reissued patent shall be determined by deeming the claim to the invention to have been contained in the patent for which reissue was sought.",
+      "stated_in": "35 U.S.C. §100(i)(2)",
+      "conditions": [
+        {
+          "text": "the term is used in this title",
+          "evidence_span": "When used in this title",
+          "kind": "scope"
+        }
+      ],
+      "exceptions": [
+        {
+          "text": "the context otherwise indicates",
+          "evidence_span": "unless the context otherwise indicates"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-012:1",
+    "predicate_words": 2,
+    "condition_count": 1,
+    "exception_count": 0,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-012:1",
+    "citation": "35 U.S.C. §101",
+    "original_verdict": "REJECT",
+    "original_defect": "condition_stripped",
+    "original_predicate_words": 5,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "unevaluable_condition: 'subject to the conditions and requirements of this title' is stored with a literal span but is an open-ended reference to an entire title — inspectable, not decidable",
+    "structured_coverage": 0.895,
+    "flat_coverage": 0.789,
+    "edge": {
+      "id": "ce-012:1",
+      "subject": "whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof",
+      "relation": "may_obtain",
+      "object": "a patent",
+      "evidence_sentence": "35 U.S.C. §101 — Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the conditions and requirements of this title.",
+      "stated_in": "35 U.S.C. §101",
+      "conditions": [
+        {
+          "text": "the conditions and requirements of this title are satisfied",
+          "evidence_span": "subject to the conditions and requirements of this title"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-013:1",
+    "predicate_words": 2,
+    "condition_count": 1,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-013:1",
+    "citation": "35 U.S.C. §102(a)(1)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 12,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.75,
+    "flat_coverage": 0.75,
+    "edge": {
+      "id": "ce-013:1",
+      "subject": "a person",
+      "relation": "entitled_to",
+      "object": "a patent",
+      "evidence_sentence": "35 U.S.C. §102(a)(1) — (a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (1) the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention; or",
+      "stated_in": "35 U.S.C. §102(a)(1)",
+      "conditions": [
+        {
+          "text": "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention",
+          "evidence_span": "the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-014:2",
+    "predicate_words": 2,
+    "condition_count": 1,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-014:2",
+    "citation": "35 U.S.C. §102(a)(2)",
+    "original_verdict": "REJECT",
+    "original_defect": "consequence_omitted",
+    "original_predicate_words": 5,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.759,
+    "flat_coverage": 0.724,
+    "edge": {
+      "id": "ce-014:2",
+      "subject": "a person",
+      "relation": "entitled_to",
+      "object": "a patent",
+      "evidence_sentence": "35 U.S.C. §102(a)(2) — (a) Novelty; Prior Art.—A person shall be entitled to a patent unless— (2) the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention.",
+      "stated_in": "35 U.S.C. §102(a)(2)",
+      "conditions": [
+        {
+          "text": "the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application names another inventor and was effectively filed before the effective filing date of the claimed invention",
+          "evidence_span": "the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application, as the case may be, names another inventor and was effectively filed before the effective filing date of the claimed invention"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-015:0",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-015:0",
+    "citation": "35 U.S.C. §102(b)(1)(A)",
+    "original_verdict": "REJECT",
+    "original_defect": "subject_attachment_false_assertion",
+    "original_predicate_words": 3,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "original hallucination fixed: subject is now the disclosure, not the provision citation",
+    "structured_coverage": 0.8,
+    "flat_coverage": 0.2,
+    "edge": {
+      "id": "ce-015:0",
+      "subject": "a disclosure made 1 year or less before the effective filing date of a claimed invention",
+      "relation": "is_prior_art_to",
+      "object": "the claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(b)(1)(A) — (b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (A) the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+      "stated_in": "35 U.S.C. §102(b)(1)(A)",
+      "conditions": [
+        {
+          "text": "the prior-art determination is made under subsection (a)(1)",
+          "evidence_span": "under subsection (a)(1)",
+          "kind": "scope"
+        },
+        {
+          "text": "the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor",
+          "evidence_span": "the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-016:2",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-016:2",
+    "citation": "35 U.S.C. §102(b)(1)(B)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 44,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.839,
+    "flat_coverage": 0.613,
+    "edge": {
+      "id": "ce-016:2",
+      "subject": "a disclosure made 1 year or less before the effective filing date of a claimed invention",
+      "relation": "is_prior_art_to",
+      "object": "the claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(b)(1)(B) — (b) Exceptions.— (1) Disclosures made 1 year or less before the effective filing date of the claimed invention.—A disclosure made 1 year or less before the effective filing date of a claimed invention shall not be prior art to the claimed invention under subsection (a)(1) if— (B) the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor.",
+      "stated_in": "35 U.S.C. §102(b)(1)(B)",
+      "conditions": [
+        {
+          "text": "the prior-art determination is made under subsection (a)(1)",
+          "evidence_span": "under subsection (a)(1)",
+          "kind": "scope"
+        },
+        {
+          "text": "the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor",
+          "evidence_span": "the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-017:1",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-017:1",
+    "citation": "35 U.S.C. §102(b)(2)(A)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 25,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.64,
+    "flat_coverage": 0.6,
+    "edge": {
+      "id": "ce-017:1",
+      "subject": "a disclosure",
+      "relation": "is_prior_art_to",
+      "object": "a claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(b)(2)(A) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (A) the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor;",
+      "stated_in": "35 U.S.C. §102(b)(2)(A)",
+      "conditions": [
+        {
+          "text": "the prior-art determination is made under subsection (a)(2)",
+          "evidence_span": "under subsection (a)(2)",
+          "kind": "scope"
+        },
+        {
+          "text": "the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor",
+          "evidence_span": "the subject matter disclosed was obtained directly or indirectly from the inventor or a joint inventor"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-018:1",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-018:1",
+    "citation": "35 U.S.C. §102(b)(2)(B)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 10,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.733,
+    "flat_coverage": 0.7,
+    "edge": {
+      "id": "ce-018:1",
+      "subject": "a disclosure",
+      "relation": "is_prior_art_to",
+      "object": "a claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(b)(2)(B) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (B) the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor; or",
+      "stated_in": "35 U.S.C. §102(b)(2)(B)",
+      "conditions": [
+        {
+          "text": "the prior-art determination is made under subsection (a)(2)",
+          "evidence_span": "under subsection (a)(2)",
+          "kind": "scope"
+        },
+        {
+          "text": "the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor",
+          "evidence_span": "the subject matter disclosed had, before such subject matter was effectively filed under subsection (a)(2), been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-019:1",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-019:1",
+    "citation": "35 U.S.C. §102(b)(2)(C)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 10,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.69,
+    "flat_coverage": 0.655,
+    "edge": {
+      "id": "ce-019:1",
+      "subject": "a disclosure",
+      "relation": "is_prior_art_to",
+      "object": "a claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(b)(2)(C) — (b) Exceptions.— (2) Disclosures appearing in applications and patents.—A disclosure shall not be prior art to a claimed invention under subsection (a)(2) if— (C) the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person.",
+      "stated_in": "35 U.S.C. §102(b)(2)(C)",
+      "conditions": [
+        {
+          "text": "the prior-art determination is made under subsection (a)(2)",
+          "evidence_span": "under subsection (a)(2)",
+          "kind": "scope"
+        },
+        {
+          "text": "the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person",
+          "evidence_span": "the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-020:1",
+    "predicate_words": 4,
+    "condition_count": 4,
+    "exception_count": 0,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-020:1",
+    "citation": "35 U.S.C. §102(c)(1)",
+    "original_verdict": "REJECT",
+    "original_defect": "condition_stripped",
+    "original_predicate_words": 5,
+    "semantic_verdict": "FAIL",
+    "semantic_caveat": "disjunctive_consequence: 'deemed to have been owned by the same person OR subject to an obligation of assignment to the same person' is compressed into the predicate name; the schema has no representation for a disjunctive consequence. Also the only candidate requiring cross-provision assembly of conditions (c)(1)-(3)",
+    "structured_coverage": 0.686,
+    "flat_coverage": 0.343,
+    "edge": {
+      "id": "ce-020:1",
+      "subject": "subject matter disclosed",
+      "relation": "deemed_commonly_owned_with",
+      "object": "a claimed invention",
+      "evidence_sentence": "35 U.S.C. §102(c)(1) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (1) the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention; 35 U.S.C. §102(c)(2) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (2) the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement; and 35 U.S.C. §102(c)(3) — (c) Common Ownership Under Joint Research Agreements.—Subject matter disclosed and a claimed invention shall be deemed to have been owned by the same person or subject to an obligation of assignment to the same person in applying the provisions of subsection (b)(2)(C) if— (3) the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement.",
+      "stated_in": "35 U.S.C. §102(c)(1)-(3)",
+      "conditions": [
+        {
+          "text": "the deeming is applied in applying the provisions of subsection (b)(2)(C)",
+          "evidence_span": "in applying the provisions of subsection (b)(2)(C)",
+          "kind": "scope"
+        },
+        {
+          "text": "the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention",
+          "evidence_span": "the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention"
+        },
+        {
+          "text": "the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement",
+          "evidence_span": "the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement"
+        },
+        {
+          "text": "the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement",
+          "evidence_span": "the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-023:3",
+    "predicate_words": 4,
+    "condition_count": 3,
+    "exception_count": 0,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-023:3",
+    "citation": "35 U.S.C. §102(d)(1)",
+    "original_verdict": "REJECT",
+    "original_defect": "defined_term_substitution",
+    "original_predicate_words": 11,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "original hallucination fixed: predicate uses the statute's own term 'effectively filed', not the distinct defined term 'effective filing date'",
+    "structured_coverage": 0.667,
+    "flat_coverage": 0.333,
+    "edge": {
+      "id": "ce-023:3",
+      "subject": "a patent or application for patent",
+      "relation": "effectively_filed_as_of",
+      "object": "the actual filing date of the patent or the application for patent",
+      "evidence_sentence": "35 U.S.C. §102(d)(1) — (d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (1) if paragraph (2) does not apply, as of the actual filing date of the patent or the application for patent; or",
+      "stated_in": "35 U.S.C. §102(d)(1)",
+      "conditions": [
+        {
+          "text": "the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2)",
+          "evidence_span": "For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2)",
+          "kind": "scope"
+        },
+        {
+          "text": "the determination is made with respect to subject matter described in the patent or application",
+          "evidence_span": "with respect to any subject matter described in the patent or application",
+          "kind": "scope"
+        },
+        {
+          "text": "paragraph (2) does not apply",
+          "evidence_span": "if paragraph (2) does not apply"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-024:9",
+    "predicate_words": 4,
+    "condition_count": 3,
+    "exception_count": 0,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-024:9",
+    "citation": "35 U.S.C. §102(d)(2)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 37,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.796,
+    "flat_coverage": 0.388,
+    "edge": {
+      "id": "ce-024:9",
+      "subject": "a patent or application for patent",
+      "relation": "effectively_filed_as_of",
+      "object": "the filing date of the earliest such application that describes the subject matter",
+      "evidence_sentence": "35 U.S.C. §102(d)(2) — (d) Patents and Published Applications Effective as Prior Art.—For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2), such patent or application shall be considered to have been effectively filed, with respect to any subject matter described in the patent or application— (2) if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent, as of the filing date of the earliest such application that describes the subject matter.",
+      "stated_in": "35 U.S.C. §102(d)(2)",
+      "conditions": [
+        {
+          "text": "the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2)",
+          "evidence_span": "For purposes of determining whether a patent or application for patent is prior art to a claimed invention under subsection (a)(2)",
+          "kind": "scope"
+        },
+        {
+          "text": "the determination is made with respect to subject matter described in the patent or application",
+          "evidence_span": "with respect to any subject matter described in the patent or application",
+          "kind": "scope"
+        },
+        {
+          "text": "the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent",
+          "evidence_span": "if the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-025:2",
+    "predicate_words": 4,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-025:2",
+    "citation": "35 U.S.C. §103",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 51,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "arity_coercion: 'a patent may not be obtained' is a unary proposition forced into a binary triple; truth preserved",
+    "structured_coverage": 0.818,
+    "flat_coverage": 0.667,
+    "edge": {
+      "id": "ce-025:2",
+      "subject": "a patent",
+      "relation": "may_be_obtained_for",
+      "object": "a claimed invention",
+      "evidence_sentence": "35 U.S.C. §103 — A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. Patentability shall not be negated by the manner in which the invention was made.",
+      "stated_in": "35 U.S.C. §103",
+      "conditions": [
+        {
+          "text": "the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains",
+          "evidence_span": "the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains"
+        },
+        {
+          "text": "this applies even where the claimed invention is not identically disclosed as set forth in section 102",
+          "evidence_span": "notwithstanding that the claimed invention is not identically disclosed as set forth in section 102",
+          "kind": "scope"
+        }
+      ],
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-025:3",
+    "predicate_words": 2,
+    "condition_count": 0,
+    "exception_count": 0,
+    "polarity": "negate",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-025:3",
+    "citation": "35 U.S.C. §103",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate",
+    "original_predicate_words": 8,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.152,
+    "flat_coverage": 0.152,
+    "edge": {
+      "id": "ce-025:3",
+      "subject": "patentability",
+      "relation": "negated_by",
+      "object": "the manner in which the invention was made",
+      "evidence_sentence": "35 U.S.C. §103 — A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identically disclosed as set forth in section 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. Patentability shall not be negated by the manner in which the invention was made.",
+      "stated_in": "35 U.S.C. §103",
+      "polarity": "negate"
+    }
+  },
+  {
+    "id": "ce-026:1",
+    "predicate_words": 6,
+    "condition_count": 1,
+    "exception_count": 2,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-026:1",
+    "citation": "35 U.S.C. §105(a)",
+    "original_verdict": "REJECT",
+    "original_defect": "exception_stripped",
+    "original_predicate_words": 30,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "flagship exception case: both dropped exceptions restored as first-class clauses with literal spans",
+    "structured_coverage": 0.892,
+    "flat_coverage": 0.459,
+    "edge": {
+      "id": "ce-026:1",
+      "subject": "any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States",
+      "relation": "considered_made_used_or_sold_in",
+      "object": "the United States",
+      "evidence_sentence": "35 U.S.C. §105(a) — (a) Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States shall be considered to be made, used or sold within the United States for the purposes of this title, except with respect to any space object or component thereof that is specifically identified and otherwise provided for by an international agreement to which the United States is a party, or with respect to any space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space.",
+      "stated_in": "35 U.S.C. §105(a)",
+      "conditions": [
+        {
+          "text": "the determination is for the purposes of this title",
+          "evidence_span": "for the purposes of this title",
+          "kind": "scope"
+        }
+      ],
+      "exceptions": [
+        {
+          "text": "the space object or component thereof is specifically identified and otherwise provided for by an international agreement to which the United States is a party",
+          "evidence_span": "except with respect to any space object or component thereof that is specifically identified and otherwise provided for by an international agreement to which the United States is a party"
+        },
+        {
+          "text": "the space object or component thereof is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space",
+          "evidence_span": "or with respect to any space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-027:1",
+    "predicate_words": 6,
+    "condition_count": 2,
+    "exception_count": 0,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "conditional_consequence_16",
+    "candidate_id": "usc35c10-027:1",
+    "citation": "35 U.S.C. §105(b)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "condition_in_predicate;citation_subject_attachment",
+    "original_predicate_words": 22,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "",
+    "structured_coverage": 0.909,
+    "flat_coverage": 0.545,
+    "edge": {
+      "id": "ce-027:1",
+      "subject": "any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space",
+      "relation": "considered_made_used_or_sold_in",
+      "object": "the United States",
+      "evidence_sentence": "35 U.S.C. §105(b) — (b) Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space, shall be considered to be made, used or sold within the United States for the purposes of this title if specifically so agreed in an international agreement between the United States and the state of registry.",
+      "stated_in": "35 U.S.C. §105(b)",
+      "conditions": [
+        {
+          "text": "the determination is for the purposes of this title",
+          "evidence_span": "for the purposes of this title",
+          "kind": "scope"
+        },
+        {
+          "text": "it is specifically so agreed in an international agreement between the United States and the state of registry",
+          "evidence_span": "if specifically so agreed in an international agreement between the United States and the state of registry"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-008:0",
+    "predicate_words": 1,
+    "condition_count": 2,
+    "exception_count": 1,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "supplementary_alt_limbs",
+    "candidate_id": "usc35c10-008:0",
+    "citation": "35 U.S.C. §100(i)(1)(A)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "alternative_limb_collision",
+    "original_predicate_words": 1,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "alternative limb (A), guarded by 'if subparagraph (B) does not apply'",
+    "structured_coverage": 0.769,
+    "flat_coverage": 0.577,
+    "edge": {
+      "id": "ce-008:0",
+      "subject": "effective filing date",
+      "relation": "means",
+      "object": "the actual filing date of the patent or the application for the patent containing a claim to the invention",
+      "evidence_sentence": "35 U.S.C. §100(i)(1)(A) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (A) if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention; or",
+      "stated_in": "35 U.S.C. §100(i)(1)(A)",
+      "conditions": [
+        {
+          "text": "the term is used in this title",
+          "evidence_span": "When used in this title",
+          "kind": "scope"
+        },
+        {
+          "text": "subparagraph (B) does not apply",
+          "evidence_span": "if subparagraph (B) does not apply"
+        }
+      ],
+      "exceptions": [
+        {
+          "text": "the context otherwise indicates",
+          "evidence_span": "unless the context otherwise indicates"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ce-009:0",
+    "predicate_words": 1,
+    "condition_count": 1,
+    "exception_count": 1,
+    "polarity": "affirm",
+    "no_welding": true,
+    "all_spans_literal": true,
+    "failures": [],
+    "passes": true,
+    "group": "supplementary_alt_limbs",
+    "candidate_id": "usc35c10-009:0",
+    "citation": "35 U.S.C. §100(i)(1)(B)",
+    "original_verdict": "ACCEPT",
+    "original_defect": "alternative_limb_collision",
+    "original_predicate_words": 1,
+    "semantic_verdict": "PASS",
+    "semantic_caveat": "alternative limb (B), the default limb",
+    "structured_coverage": 0.853,
+    "flat_coverage": 0.676,
+    "edge": {
+      "id": "ce-009:0",
+      "subject": "effective filing date",
+      "relation": "means",
+      "object": "the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c)",
+      "evidence_sentence": "35 U.S.C. §100(i)(1)(B) — When used in this title unless the context otherwise indicates— (i)(1) The term \"effective filing date\" for a claimed invention in a patent or application for patent means— (B) the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c).",
+      "stated_in": "35 U.S.C. §100(i)(1)(B)",
+      "conditions": [
+        {
+          "text": "the term is used in this title",
+          "evidence_span": "When used in this title",
+          "kind": "scope"
+        }
+      ],
+      "exceptions": [
+        {
+          "text": "the context otherwise indicates",
+          "evidence_span": "unless the context otherwise indicates"
+        }
+      ]
+    }
+  }
+]
