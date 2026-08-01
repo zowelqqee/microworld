@@ -1,0 +1,206 @@
+[
+  {
+    "candidate_id": "usc18c41-002:0",
+    "batch_id": "usc18c41-002",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §872",
+    "source_text": "18 U.S.C. §872 — Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion, shall be fined under this title or imprisoned not more than three years, or both; but if the amount so extorted or demanded does not exceed $1,000, he shall be fined under this title or imprisoned not more than one year, or both.",
+    "subject": "18 U.S.C. §872",
+    "predicate": "governs",
+    "object": "Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment",
+    "evidence_span": "Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node"
+    ],
+    "citation": "18 U.S.C. §872",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-002:1",
+    "batch_id": "usc18c41-002",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §872",
+    "source_text": "18 U.S.C. §872 — Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion, shall be fined under this title or imprisoned not more than three years, or both; but if the amount so extorted or demanded does not exceed $1,000, he shall be fined under this title or imprisoned not more than one year, or both.",
+    "subject": "Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than three years, or both",
+    "evidence_span": "Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion, shall be fined under this title or imprisoned not more than three years, or both",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node"
+    ],
+    "citation": "18 U.S.C. §872",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-002:2",
+    "batch_id": "usc18c41-002",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §872",
+    "source_text": "18 U.S.C. §872 — Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion, shall be fined under this title or imprisoned not more than three years, or both; but if the amount so extorted or demanded does not exceed $1,000, he shall be fined under this title or imprisoned not more than one year, or both.",
+    "subject": "Whoever, being an officer, or employee of the United States or any department or agency thereof, or representing himself to be or assuming to act as such, under color or pretense of office or employment commits or attempts an act of extortion and the amount so extorted or demanded does not exceed $1,000",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than one year, or both",
+    "evidence_span": "if the amount so extorted or demanded does not exceed $1,000, he shall be fined under this title or imprisoned not more than one year, or both",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "event_like_node",
+      "unresolvable_entity"
+    ],
+    "citation": "18 U.S.C. §872",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-015:2",
+    "batch_id": "usc18c41-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(b)",
+    "source_text": "18 U.S.C. §878(b) — (b) Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "18 U.S.C. §878(b)",
+    "predicate": "cross-references",
+    "object": "section 1116",
+    "evidence_span": "section 1116",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "18 U.S.C. §878(b)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc18c41-015:3",
+    "batch_id": "usc18c41-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(b)",
+    "source_text": "18 U.S.C. §878(b) — (b) Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "18 U.S.C. §878(b)",
+    "predicate": "cross-references",
+    "object": "section 1201",
+    "evidence_span": "section 1201",
+    "literal_subject": true,
+    "literal_object": false,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "18 U.S.C. §878(b)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": false
+  },
+  {
+    "candidate_id": "usc18c41-018:1",
+    "batch_id": "usc18c41-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(1)",
+    "source_text": "18 U.S.C. §879(a)(1) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (1) a former President or a member of the immediate family of a former President;",
+    "subject": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon a former President or a member of the immediate family of a former President",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than 5 years, or both",
+    "evidence_span": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— (1) a former President or a member of the immediate family of a former President; shall be fined under this title or imprisoned not more than 5 years, or both.",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "18 U.S.C. §879(a)(1)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-021:1",
+    "batch_id": "usc18c41-021",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(4)",
+    "source_text": "18 U.S.C. §879(a)(4) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (4) a person protected by the Secret Service under section 3056(a)(6);",
+    "subject": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon a person protected by the Secret Service under section 3056(a)(6)",
+    "predicate": "Penalty",
+    "object": "fined under this title or imprisoned not more than 5 years, or both",
+    "evidence_span": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (4) a person protected by the Secret Service under section 3056(a)(6)",
+    "literal_subject": false,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "node_quality_reasons": [
+      "unresolvable_entity"
+    ],
+    "citation": "18 U.S.C. §879(a)(4)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  }
+]
