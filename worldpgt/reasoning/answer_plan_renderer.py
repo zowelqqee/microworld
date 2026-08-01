@@ -48,6 +48,13 @@ def render_answer_plan(plan: AnswerPlan) -> str:
 
 def _sentence_for(block: ContentBlock, occurrence: int, quoted_spans: set[str]) -> str:
     edge = block.step.edge
+    # Mandatory-guard invariant: a conditional edge (one carrying conditions,
+    # exceptions, a disjunctive object, or negative polarity) must never be
+    # realized by the plain path, which would silently drop its guards and
+    # thereby misstate the rule.  It always routes to the structure-driven
+    # conditional renderer, which renders every guard.
+    if getattr(edge, "is_conditional", None) and edge.is_conditional():
+        return _render_conditional_claim(edge)
     if block.kind == "uncertainty_note":
         alternative_objects = ", ".join(
             f"'{_trim(alternative.object)}'" for alternative in block.alternatives
@@ -76,6 +83,79 @@ def _sentence_for(block: ContentBlock, occurrence: int, quoted_spans: set[str]) 
         # name); only the connective governs sentence-initial capitalization.
         return f"{connective} {clause}"
     return clause
+
+
+# --------------------------------------------------------------------------- #
+# Conditional-claim rendering (structure-driven, mirrors uncertainty_note)
+# --------------------------------------------------------------------------- #
+# The surface is built entirely from the edge's structured fields, so it cannot
+# assert the rule without also stating its scope, conditions, and exceptions.
+# Nothing here is keyed on domain or predicate identity.
+
+def _clause_texts(clauses: tuple, kind: str | None = None) -> list[str]:
+    out = []
+    for clause in clauses:
+        text = _trim(clause[0]) if clause else ""
+        clause_kind = clause[2] if len(clause) > 2 else "factual"
+        if text and (kind is None or clause_kind == kind):
+            out.append(text)
+    return out
+
+
+def _join_or(items: list[str]) -> str:
+    if len(items) <= 1:
+        return items[0] if items else ""
+    if len(items) == 2:
+        return f"{items[0]} or {items[1]}"
+    return ", ".join(items[:-1]) + f", or {items[-1]}"
+
+
+def _negated_predicate(predicate: str) -> str:
+    text = _predicate_text(predicate)
+    words = text.split()
+    if words and words[0] in ("is", "are", "was", "were", "shall", "may", "can", "will", "has", "have"):
+        return " ".join([words[0], "not", *words[1:]])
+    # Statutory predicates are overwhelmingly stative/adjectival ("entitled to",
+    # "prior art to", "punishable by"); "is not X" reads correctly for those and
+    # keeps the negation unmistakable, which is the safety-critical property.
+    return f"is not {text}"
+
+
+def _render_conditional_claim(edge) -> str:
+    subject = _trim(edge.subject)
+    objects = [_trim(edge.object), *_clause_texts(getattr(edge, "object_alternatives", ()))]
+    object_text = _join_or([o for o in objects if o])
+    predicate = (
+        _negated_predicate(edge.predicate)
+        if getattr(edge, "polarity", "affirm") == "negate"
+        else _predicate_text(edge.predicate)
+    )
+    core = _fix_articles(f"{subject} {predicate} {object_text}".strip())
+
+    conditions = getattr(edge, "conditions", ())
+    scope = _clause_texts(conditions, "scope")
+    factual = _clause_texts(conditions, "factual")
+    exceptions = _clause_texts(getattr(edge, "exceptions", ()))
+
+    sentence = core
+    if factual:
+        sentence += f", provided that {_join_list(factual)}"
+    if exceptions:
+        sentence += f", except where {_join_or(exceptions)}"
+    if scope:
+        sentence = f"For purposes of {_join_or(scope)}, {sentence}"
+    sentence = _capitalize(sentence.rstrip(".") + ".")
+
+    # Mandatory-guard invariant, enforced at the surface: every guard the edge
+    # carries must be present in the rendered text.  If any is missing (it never
+    # should be, given the construction above), fail loudly rather than emit a
+    # rule that silently drops a condition or exception.
+    for guard in (*scope, *factual, *exceptions):
+        if guard and guard.casefold() not in sentence.casefold():
+            raise AssertionError(
+                f"conditional guard dropped from rendered claim: {guard!r}"
+            )
+    return sentence
 
 
 # An evidence span is preferred over a reconstructed triple clause when it is a

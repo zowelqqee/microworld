@@ -40,6 +40,58 @@ class NodeQualityDecision:
     reasons: tuple[str, ...]
 
 
+# --------------------------------------------------------------------------- #
+# Class-subject recognition
+# --------------------------------------------------------------------------- #
+# A statutory subject is frequently a *description of a class* — "whoever
+# knowingly threatens ...", "any invention made in outer space", "a person who
+# receives ...".  The entity-only validator rejects these (they are not named
+# entities), which in the legal pilots deleted whole offences.  This recognizer
+# lets such a node be routed to a review-only ``class_subject`` proposal instead
+# of discarded.
+#
+# It is structural, not a keyword list: the decision rests on determiner /
+# quantifier position, the presence of a relative clause, and phrase length —
+# the same cues a reader uses to tell "SpaceX" (an entity) from "a company that
+# builds rockets" (a class).  It never auto-admits anything.
+
+# Leading quantifier / indefinite determiners that open a class description.
+# The definite article "the" is deliberately excluded: it usually points at a
+# specific or anaphoric referent ("the individual"), not a fresh class.
+_CLASS_LEAD = frozenset({
+    "whoever", "whosoever", "whomever", "anyone", "someone", "everyone",
+    "a", "an", "any", "each", "every", "all", "no", "one", "another",
+})
+_RELATIVE_CLAUSE = re.compile(r"\b(?:who|whom|whose|which|that)\b", re.IGNORECASE)
+_MIN_CLASS_WORDS = 5
+
+
+def classify_subject_node(surface: str, evidence_sentence: str = "") -> str:
+    """Return ``"class_subject"`` for a class description, else ``"entity"``.
+
+    A node is a class subject when it opens with a quantifier/indefinite
+    determiner (or a common-noun head) *and* is either qualified by a relative
+    clause or long enough to be a real description rather than a short entity
+    phrase.  Authorial and event-like fragments are never class subjects.
+    """
+
+    text = _normalise(surface)
+    if not text:
+        return "entity"
+    if _AUTHORIAL_SUBJECT.fullmatch(text) or _EVENT_LIKE.search(text):
+        return "entity"
+    words = text.split()
+    lead = words[0].lower()
+    has_relative = bool(_RELATIVE_CLAUSE.search(text))
+    # A common-noun head is a lowercase leading word that is not itself a
+    # quantifier; a quantifier lead is the other opening shape.
+    common_noun_head = lead.isalpha() and lead[:1].islower() and lead not in _CLASS_LEAD
+    opens_class = lead in _CLASS_LEAD or common_noun_head
+    if opens_class and (has_relative or len(words) >= _MIN_CLASS_WORDS):
+        return "class_subject"
+    return "entity"
+
+
 def _normalise(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "").strip())
 

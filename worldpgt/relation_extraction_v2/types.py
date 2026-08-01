@@ -13,6 +13,26 @@ Stability = Literal["stable", "semi_stable", "volatile"]
 Risk = Literal["low", "medium", "high"]
 Directionality = Literal["forward", "reverse", "bidirectional", "unknown"]
 
+# Polarity is the sign of the predicate, not a separate predicate.  It lets
+# "X shall be entitled to a patent unless C" be stored as ``entitled_to`` with
+# ``polarity="negate"`` and the condition C held separately, instead of welding
+# the whole rule into a long predicate string (see the conditional-edge pilot,
+# artifacts/legal_domain_pilot_v1/conditional_edge_v1/).
+Polarity = Literal["affirm", "negate"]
+
+# A clause is either a fact that must obtain (``factual``) or a restriction on
+# the context in which the rule applies (``scope`` — "for purposes of ... under
+# subsection (a)(2)").  Truth is preserved without the distinction; the tag only
+# makes it inspectable.
+ClauseKind = Literal["factual", "scope"]
+
+# ``entity`` is a named entity (the default the whole graph assumed until now).
+# ``class_subject`` is a description of a class of things/persons/situations —
+# "whoever knowingly threatens ...", "any invention made in outer space" — which
+# is a legitimate statutory subject but is *not* a named entity.  A class subject
+# never auto-admits; it is always a review-only proposal.
+NodeKind = Literal["entity", "class_subject"]
+
 # Relation types that v2 is allowed to produce.
 ALLOWED_SEMI_STABLE_RELATIONS = frozenset({
     "founded_by",
@@ -118,6 +138,26 @@ QUARANTINE_REASONS = frozenset({
 })
 
 
+@dataclass(frozen=True)
+class ConditionClause:
+    """One evidence-anchored fragment attached to a relation.
+
+    Used for a condition, an exception, or a disjunctive object alternative.
+    ``evidence_span`` keeps the same literal-span verification discipline as
+    every other node in the graph: each clause points at verbatim source text.
+    """
+
+    text: str
+    evidence_span: str
+    kind: str = "factual"  # ClauseKind for conditions/exceptions; "" for objects
+
+    def to_dict(self) -> dict:
+        payload = {"text": self.text, "evidence_span": self.evidence_span}
+        if self.kind and self.kind != "factual":
+            payload["kind"] = self.kind
+        return payload
+
+
 @dataclass
 class RelationExtractionEvidence:
     sentence: str
@@ -160,9 +200,31 @@ class ExtractedRelationCandidate:
     safe_for_overlay_delta: bool
     evidence: Optional[RelationExtractionEvidence] = None
     notes: str = ""
+    # --- Optional conditional-edge extension --------------------------------
+    # Every field below defaults to the pre-extension semantics, so an ordinary
+    # simple edge is byte-identical in to_dict() and behaves exactly as before.
+    # ``conditions`` is a conjunction (all must hold); ``exceptions`` is a
+    # disjunction of defeaters; ``object_alternatives`` holds a disjunctive
+    # consequence ("deemed X or subject to Y") without splitting it into two
+    # edges that would read conjunctively.
+    conditions: List["ConditionClause"] = field(default_factory=list)
+    exceptions: List["ConditionClause"] = field(default_factory=list)
+    object_alternatives: List["ConditionClause"] = field(default_factory=list)
+    polarity: Polarity = "affirm"
+    subject_kind: NodeKind = "entity"
+
+    def is_simple(self) -> bool:
+        """True when this edge is indistinguishable from a pre-extension edge."""
+        return (
+            not self.conditions
+            and not self.exceptions
+            and not self.object_alternatives
+            and self.polarity == "affirm"
+            and self.subject_kind == "entity"
+        )
 
     def to_dict(self) -> dict:
-        return {
+        payload = {
             "id": self.id,
             "subject": self.subject,
             "relation": self.relation,
@@ -182,6 +244,19 @@ class ExtractedRelationCandidate:
             "evidence": self.evidence.to_dict() if self.evidence else None,
             "notes": self.notes,
         }
+        # Emit the extension keys only when they carry non-default content, so
+        # existing overlays and their serialization are unaffected.
+        if self.conditions:
+            payload["conditions"] = [c.to_dict() for c in self.conditions]
+        if self.exceptions:
+            payload["exceptions"] = [c.to_dict() for c in self.exceptions]
+        if self.object_alternatives:
+            payload["object_alternatives"] = [c.to_dict() for c in self.object_alternatives]
+        if self.polarity != "affirm":
+            payload["polarity"] = self.polarity
+        if self.subject_kind != "entity":
+            payload["subject_kind"] = self.subject_kind
+        return payload
 
 
 @dataclass
