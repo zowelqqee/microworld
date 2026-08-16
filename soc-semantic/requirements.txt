@@ -1,0 +1,11 @@
+# Core pipeline - synthetic generation, semantic/baseline features, validation.
+pandas==2.3.1
+numpy==2.3.1
+scikit-learn==1.9.0
+
+# Only needed for DATA_SOURCE="opensearch" (soc_runtime/opensearch_client.py).
+# Not required to run anything against the synthetic data source.
+opensearch-py>=2.6,<3
+
+# Tests
+pytest>=8
