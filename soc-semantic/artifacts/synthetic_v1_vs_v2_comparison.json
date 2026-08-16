@@ -1,0 +1,100 @@
+{
+  "disclaimer": "SYNTHETIC DATA, both corpora. Neither v1 nor v2 is evidence about real SOC alert quality - is_synthetic_anomaly is a fabricated label in both. v2's only difference from v1 is that its generation parameters were calibrated toward real, non-personal, aggregated 30-day statistics (see config.REAL_CALIBRATION_TARGETS and the README's calibration section) - this is a step toward more defensible synthetic *shape*, not a claim that v2's validation numbers below are more 'correct' than v1's, and this comparison does not editorialize about which arm's numbers are better.",
+  "v1": {
+    "label": "v1: synthetic.py, arbitrary parameters, 90-day window",
+    "n_process_creation": 3089,
+    "n_scored": 3059
+  },
+  "v2": {
+    "label": "v2: synthetic_v2.py, calibrated to real 30-day aggregates",
+    "n_process_creation": 62031,
+    "n_scored": 23130
+  },
+  "arm_metric_delta_v2_minus_v1": {
+    "raw": {
+      "recall_at_threshold": {
+        "v1": 0.8333333333333334,
+        "v2": 0.2857142857142857,
+        "delta": -0.547619
+      },
+      "precision_at_threshold": {
+        "v1": 0.5670103092783505,
+        "v2": 0.0018467220683287165,
+        "delta": -0.565164
+      },
+      "pr_auc": {
+        "v1": 0.709573608426434,
+        "v2": 0.004414553222238226,
+        "delta": -0.705159
+      }
+    },
+    "semantic": {
+      "recall_at_threshold": {
+        "v1": 1.0,
+        "v2": 1.0,
+        "delta": 0.0
+      },
+      "precision_at_threshold": {
+        "v1": 0.6226415094339622,
+        "v2": 1.0,
+        "delta": 0.377358
+      },
+      "pr_auc": {
+        "v1": 0.9756158871755329,
+        "v2": 1.0,
+        "delta": 0.024384
+      }
+    },
+    "union": {
+      "recall_at_threshold": {
+        "v1": 1.0,
+        "v2": 1.0,
+        "delta": 0.0
+      },
+      "precision_at_threshold": {
+        "v1": 0.7951807228915663,
+        "v2": 1.0,
+        "delta": 0.204819
+      },
+      "pr_auc": {
+        "v1": 0.9728113026162861,
+        "v2": 0.9999999999999998,
+        "delta": 0.027189
+      }
+    },
+    "router->semantic": {
+      "recall_at_threshold": {
+        "v1": 0.8333333333333334,
+        "v2": 0.2857142857142857,
+        "delta": -0.547619
+      },
+      "precision_at_threshold": {
+        "v1": 0.6790123456790124,
+        "v2": 0.0018467220683287165,
+        "delta": -0.677166
+      },
+      "pr_auc": {
+        "v1": 0.7553378106661873,
+        "v2": 0.004414553222238226,
+        "delta": -0.750923
+      }
+    },
+    "router->union": {
+      "recall_at_threshold": {
+        "v1": 0.8333333333333334,
+        "v2": 0.2857142857142857,
+        "delta": -0.547619
+      },
+      "precision_at_threshold": {
+        "v1": 0.859375,
+        "v2": 0.0018467220683287165,
+        "delta": -0.857528
+      },
+      "pr_auc": {
+        "v1": 0.7528197317053255,
+        "v2": 0.004414553222238226,
+        "delta": -0.748405
+      }
+    }
+  }
+}

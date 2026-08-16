@@ -1,0 +1,246 @@
+{
+  "disclaimer": "SYNTHETIC DATA. is_synthetic_anomaly is a fabricated label used only to check that this architecture behaves as designed. It is not evidence about real SOC alert quality - see README Limitations.",
+  "split": {
+    "train_alerts": 16093,
+    "test_alerts": 7037,
+    "train_start": "2026-07-14 00:02:09.313551189",
+    "train_end": "2026-08-03 23:59:12.926772536",
+    "test_start": "2026-08-04 00:00:54.683167232",
+    "test_end": "2026-08-12 23:58:33.154049694",
+    "test_positive": 7
+  },
+  "decision_threshold": 0.5,
+  "arms": {
+    "baseline": {
+      "feature_count": 12,
+      "metrics": {
+        "n_test": 7037,
+        "n_positive": 7,
+        "precision_at_threshold": 0.0018467220683287165,
+        "recall_at_threshold": 0.2857142857142857,
+        "pr_auc": 0.004414553222238226,
+        "roc_auc": 0.6521235521235521,
+        "n_flagged_at_threshold": 1083
+      },
+      "top_coefficients": [
+        [
+          "base_technique_T1059",
+          -3.693603819855267
+        ],
+        [
+          "base_technique_T1087",
+          2.8127530328017487
+        ],
+        [
+          "base_hour_band_evening",
+          -1.026074355465092
+        ],
+        [
+          "base_technique_T1033",
+          0.8254479388517654
+        ],
+        [
+          "base_hour_band_afternoon",
+          0.49040673505506327
+        ],
+        [
+          "base_is_weekend",
+          0.4228536934650823
+        ],
+        [
+          "base_hour_band_morning",
+          0.3198309315379146
+        ],
+        [
+          "base_rule_level",
+          -0.2770142410080156
+        ]
+      ],
+      "recurring_legit_false_positive_rate": {
+        "n_recurring_legit_alerts": 0,
+        "flagged_share": null
+      },
+      "legit_false_positive_rate": {
+        "n_legit_alerts": 7030,
+        "flagged_count": 1081,
+        "flagged_share": 0.1538
+      },
+      "anomaly_recall_by_type": {
+        "manual_recon_chain": {
+          "n": 3,
+          "caught": 1,
+          "recall": 0.3333
+        },
+        "new_actor": {
+          "n": 1,
+          "caught": 1,
+          "recall": 1.0
+        },
+        "new_host": {
+          "n": 1,
+          "caught": 0,
+          "recall": 0.0
+        },
+        "off_hours": {
+          "n": 2,
+          "caught": 0,
+          "recall": 0.0
+        }
+      }
+    },
+    "semantic": {
+      "feature_count": 12,
+      "metrics": {
+        "n_test": 7037,
+        "n_positive": 7,
+        "precision_at_threshold": 1.0,
+        "recall_at_threshold": 1.0,
+        "pr_auc": 1.0,
+        "roc_auc": 1.0,
+        "n_flagged_at_threshold": 7
+      },
+      "top_coefficients": [
+        [
+          "sem_actor_never_active_this_bucket",
+          6.076790245601887
+        ],
+        [
+          "sem_novel_host_for_actor",
+          -3.663079515049386
+        ],
+        [
+          "sem_novel_actor_host_technique",
+          2.570575853760674
+        ],
+        [
+          "sem_freq_actor_host_technique_24h",
+          -2.5704905641423594
+        ],
+        [
+          "sem_actor_time_typicality",
+          -2.21178087948861
+        ],
+        [
+          "sem_actor_identity_missing_subject",
+          0.7045371500524785
+        ],
+        [
+          "sem_freq_actor_technique_7d",
+          -0.5716330029335812
+        ],
+        [
+          "sem_chain_tactic_diversity_15m",
+          0.526378195336461
+        ]
+      ],
+      "recurring_legit_false_positive_rate": {
+        "n_recurring_legit_alerts": 0,
+        "flagged_share": null
+      },
+      "legit_false_positive_rate": {
+        "n_legit_alerts": 7030,
+        "flagged_count": 0,
+        "flagged_share": 0.0
+      },
+      "anomaly_recall_by_type": {
+        "manual_recon_chain": {
+          "n": 3,
+          "caught": 3,
+          "recall": 1.0
+        },
+        "new_actor": {
+          "n": 1,
+          "caught": 1,
+          "recall": 1.0
+        },
+        "new_host": {
+          "n": 1,
+          "caught": 1,
+          "recall": 1.0
+        },
+        "off_hours": {
+          "n": 2,
+          "caught": 2,
+          "recall": 1.0
+        }
+      }
+    },
+    "raw_plus_semantic": {
+      "feature_count": 24,
+      "metrics": {
+        "n_test": 7037,
+        "n_positive": 7,
+        "precision_at_threshold": 1.0,
+        "recall_at_threshold": 1.0,
+        "pr_auc": 0.9999999999999998,
+        "roc_auc": 1.0,
+        "n_flagged_at_threshold": 7
+      },
+      "top_coefficients": [
+        [
+          "sem_actor_never_active_this_bucket",
+          5.083065602159705
+        ],
+        [
+          "sem_freq_actor_host_technique_24h",
+          -2.6587425904764093
+        ],
+        [
+          "base_is_weekend",
+          2.0275765106031693
+        ],
+        [
+          "sem_novel_actor_host_technique",
+          1.9522695025776635
+        ],
+        [
+          "sem_novel_host_for_actor",
+          -1.8789375630003602
+        ],
+        [
+          "base_technique_T1059",
+          -1.7394925135919668
+        ],
+        [
+          "sem_actor_time_typicality",
+          -1.5600002261249535
+        ],
+        [
+          "sem_process_chain_novel_for_host",
+          -1.4483772671770963
+        ]
+      ],
+      "recurring_legit_false_positive_rate": {
+        "n_recurring_legit_alerts": 0,
+        "flagged_share": null
+      },
+      "legit_false_positive_rate": {
+        "n_legit_alerts": 7030,
+        "flagged_count": 0,
+        "flagged_share": 0.0
+      },
+      "anomaly_recall_by_type": {
+        "manual_recon_chain": {
+          "n": 3,
+          "caught": 3,
+          "recall": 1.0
+        },
+        "new_actor": {
+          "n": 1,
+          "caught": 1,
+          "recall": 1.0
+        },
+        "new_host": {
+          "n": 1,
+          "caught": 1,
+          "recall": 1.0
+        },
+        "off_hours": {
+          "n": 2,
+          "caught": 2,
+          "recall": 1.0
+        }
+      }
+    }
+  }
+}
