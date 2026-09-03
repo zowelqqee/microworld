@@ -17,6 +17,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
+from worldpgt.legal_qa.legal_index import LegalIndex, build_index
 from worldpgt.legal_qa.legal_question_analyzer import AnalyzedLegalQuestion
 
 _STOP = frozenset("""a an the of to in on for by with as is are was were be been being that which
@@ -77,7 +78,7 @@ def _citation_tokens(text: str) -> set[str]:
     return {m.group(0).lower() for m in _CITATION_TOKEN.finditer(text or "")}
 
 
-def retrieve(analyzed: AnalyzedLegalQuestion, items: list[dict], limit: int = 3) -> list[dict]:
+def retrieve(analyzed: AnalyzedLegalQuestion, index: LegalIndex, limit: int = 3) -> list[dict]:
     """Score every stored item against the question's content; return the best.
 
     Three signals, all content-derived: how much of the question the item
@@ -89,17 +90,24 @@ def retrieve(analyzed: AnalyzedLegalQuestion, items: list[dict], limit: int = 3)
     focus = _toks(analyzed.focus) or _toks(analyzed.question)
     if not focus:
         return []
+    # The statute's own definitions section is a synonym table: expand through
+    # it before retrieval so "this country" reaches the rule stored under
+    # "United States". Bounded to depth 1 and fully traceable.
+    focus = index.expand(focus)
     asked_citations = _citation_tokens(analyzed.question)
 
-    scored: list[tuple[float, float, dict]] = []
-    for item in items:
-        if item.get("overlay_type") not in ("overlay_relation", "overlay_definition"):
-            continue
+    scored: list[tuple[float, float, dict, int]] = []
+    # Only postings for the query's selective terms are visited, so cost is
+    # bounded by the question, not by the size of the graph.
+    for item_id in index.candidates(focus):
+        item = index.items[item_id]
         if analyzed.shape == "definition" and item.get("overlay_type") != "overlay_definition":
             continue
         if not _shape_fits(analyzed.shape, item):
             continue
-        item_tokens = _toks(_item_text(item))
+        # Token sets were computed once at index build; scoring never
+        # re-tokenizes, which is what keeps per-question cost off corpus size.
+        item_tokens = index.item_tokens[item_id]
         if not item_tokens:
             continue
 
@@ -116,8 +124,8 @@ def retrieve(analyzed: AnalyzedLegalQuestion, items: list[dict], limit: int = 3)
         #   - a rule is identified by its section heading ("Blackmail"), because
         #     its subject is a long conduct clause that shares little vocabulary
         #     with any natural question.
-        subject_tokens_all = _toks(item.get("subject", ""))
-        heading = _toks(item.get("section_heading", ""))
+        subject_tokens_all = index.subject_tokens[item_id]
+        heading = index.heading_tokens[item_id]
         if item.get("overlay_type") == "overlay_definition":
             if not subject_tokens_all:
                 continue
@@ -134,19 +142,18 @@ def retrieve(analyzed: AnalyzedLegalQuestion, items: list[dict], limit: int = 3)
         covered = len(focus & item_tokens) / len(focus)
 
         # Naming the provision is a strong, unambiguous signal of intent.
-        cite_hit = bool(asked_citations & _citation_tokens(item.get("stated_in", "")))
+        cite_hit = bool(asked_citations & index.citation_tokens[item_id])
         if cite_hit:
             covered += 0.5
 
         # An item whose subject is wholly named by the question is a better
         # answer than one that merely shares vocabulary with it.
-        subject_tokens = _toks(item.get("subject", ""))
-        subject_exact = bool(subject_tokens) and subject_tokens <= focus
+        subject_exact = bool(subject_tokens_all) and subject_tokens_all <= focus
         if subject_exact:
             covered += 0.25
 
         if covered >= _MIN_SCORE:
-            scored.append((covered, -len(item_tokens), item))
+            scored.append((covered, -len(item_tokens), item, item_id))
 
     scored.sort(key=lambda row: (-row[0], -row[1]))
 
@@ -155,13 +162,13 @@ def retrieve(analyzed: AnalyzedLegalQuestion, items: list[dict], limit: int = 3)
     # that asked about a specific one.
     if asked_citations:
         on_point = [row for row in scored
-                    if asked_citations & _citation_tokens(row[2].get("stated_in", ""))]
+                    if asked_citations & index.citation_tokens[row[3]]]
         if on_point:
             scored = on_point
 
     if analyzed.shape == "definition":
         limit = 1
-    return [item for _score, _size, item in scored[:limit]]
+    return [row[2] for row in scored[:limit]]
 
 
 def _negate(predicate: str) -> str:
@@ -213,12 +220,12 @@ def realize(item: dict) -> tuple[str, int]:
     return sentence, len(guards)
 
 
-def plan(analyzed: AnalyzedLegalQuestion, items: list[dict]) -> LegalAnswer:
+def plan(analyzed: AnalyzedLegalQuestion, index: LegalIndex) -> LegalAnswer:
     """Answer a statutory question, or audit when the graph does not support one."""
     if analyzed.shape == "unknown":
         return LegalAnswer("audit", audit_reason="question shape not recognized by the legal lane")
 
-    hits = retrieve(analyzed, items)
+    hits = retrieve(analyzed, index)
     if not hits:
         return LegalAnswer(
             "audit",

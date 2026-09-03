@@ -118,10 +118,10 @@
     "shape": "definition",
     "focus": "joint inventor",
     "decision": "answer",
-    "answer": "joint inventor means any 1 of the individuals who invented or discovered the subject matter of a joint invention. (35 U.S.C. §100(g))",
+    "answer": "inventor means the individual or, if a joint invention, the individuals collectively who invented or discovered the subject matter of the invention. (35 U.S.C. §100(f))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §100(g)"
+      "35 U.S.C. §100(f)"
     ],
     "guards_rendered": 0
   },
@@ -396,12 +396,12 @@
     "shape": "conditional",
     "focus": "a disclosure made 6 months before the effective filing date prior art to the claimed invention",
     "decision": "answer",
-    "answer": "For purposes of the prior-art determination is made under subsection (a)(2), a disclosure is not prior art to a claimed invention, provided that the subject matter disclosed and the claimed invention, not later than the effective filing date of the claimed invention, were owned by the same person or subject to an obligation of assignment to the same person. (35 U.S.C. §102(b)(2)(C)) For purposes of the prior-art determination is made under subsection (a)(1), a disclosure made 1 year or less before the effective filing date of a claimed invention is not prior art to the claimed invention, provided that the disclosure was made by the inventor or joint inventor or by another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor. (35 U.S.C. §102(b)(1)(A)) For purposes of the prior-art determination is made under subsection (a)(1), a disclosure made 1 year or less before the effective filing date of a claimed invention is not prior art to the claimed invention, provided that the subject matter disclosed had, before such disclosure, been publicly disclosed by the inventor or a joint inventor or another who obtained the subject matter disclosed directly or indirectly from the inventor or a joint inventor. (35 U.S.C. §102(b)(1)(B))",
+    "answer": "For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the filing date of the earliest such application that describes the subject matter, provided that the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent. (35 U.S.C. §102(d)(2)) effective filing date means the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c). (35 U.S.C. §100(i)(1)(B)) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the actual filing date of the patent or the application for patent, provided that paragraph (2) does not apply. (35 U.S.C. §102(d)(1))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §102(b)(2)(C)",
-      "35 U.S.C. §102(b)(1)(A)",
-      "35 U.S.C. §102(b)(1)(B)"
+      "35 U.S.C. §102(d)(2)",
+      "35 U.S.C. §100(i)(1)(B)",
+      "35 U.S.C. §102(d)(1)"
     ],
     "guards_rendered": 6
   },
@@ -416,14 +416,14 @@
     "shape": "conditional",
     "focus": "a person always entitled to a patent for a new and useful process",
     "decision": "answer",
-    "answer": "A person is not entitled to a patent, provided that the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention. (35 U.S.C. §102(a)(1)) A person is not entitled to a patent, provided that the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application names another inventor and was effectively filed before the effective filing date of the claimed invention. (35 U.S.C. §102(a)(2)) process means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material. (35 U.S.C. §100(b))",
+    "answer": "process means process, art or method, and includes a new use of a known process, machine, manufacture, composition of matter, or material. (35 U.S.C. §100(b)) For purposes of this applies even where the claimed invention is not identically disclosed as set forth in section 102, a patent may not be obtained for a claimed invention, provided that the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. (35 U.S.C. §103) Whoever invents or discovers any new and useful process, machine, manufacture, or composition of matter, or any new and useful improvement thereof may obtain a patent, provided that the conditions and requirements of this title are satisfied. (35 U.S.C. §101)",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §102(a)(1)",
-      "35 U.S.C. §102(a)(2)",
-      "35 U.S.C. §100(b)"
+      "35 U.S.C. §100(b)",
+      "35 U.S.C. §103",
+      "35 U.S.C. §101"
     ],
-    "guards_rendered": 2
+    "guards_rendered": 3
   },
   {
     "id": "C03",
@@ -436,14 +436,14 @@
     "shape": "conditional",
     "focus": "an invention made in outer space on a us-controlled space object considered made in the united states",
     "decision": "answer",
-    "answer": "For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space considered made used or sold in the United States, provided that it is specifically so agreed in an international agreement between the United States and the state of registry. (35 U.S.C. §105(b)) For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States considered made used or sold in the United States, except where the space object or component thereof is specifically identified and otherwise provided for by an international agreement to which the United States is a party or the space object or component thereof is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space. (35 U.S.C. §105(a)) 35 U.S.C. §105(a) governs Any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States. (35 U.S.C. §105(a))",
+    "answer": "the United States means all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49. (18 U.S.C. §878(d)) United States means the United States of America, its territories and possessions. (35 U.S.C. §100(c)) For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States considered made used or sold in the United States, except where the space object or component thereof is specifically identified and otherwise provided for by an international agreement to which the United States is a party or the space object or component thereof is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space. (35 U.S.C. §105(a))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §105(b)",
-      "35 U.S.C. §105(a)",
+      "18 U.S.C. §878(d)",
+      "35 U.S.C. §100(c)",
       "35 U.S.C. §105(a)"
     ],
-    "guards_rendered": 5
+    "guards_rendered": 3
   },
   {
     "id": "C04",
@@ -456,14 +456,14 @@
     "shape": "conditional",
     "focus": "an invention on a space object on a foreign state's registry treated as made in the united states",
     "decision": "answer",
-    "answer": "For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space considered made used or sold in the United States, provided that it is specifically so agreed in an international agreement between the United States and the state of registry. (35 U.S.C. §105(b)) For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States considered made used or sold in the United States, except where the space object or component thereof is specifically identified and otherwise provided for by an international agreement to which the United States is a party or the space object or component thereof is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space. (35 U.S.C. §105(a)) 35 U.S.C. §105(b) governs Any invention made, used or sold in outer space on a space object or component thereof that is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space. (35 U.S.C. §105(b))",
+    "answer": "the United States means all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49. (18 U.S.C. §878(d)) United States means the United States of America, its territories and possessions. (35 U.S.C. §100(c)) For purposes of the determination is for the purposes of this title, any invention made, used or sold in outer space on a space object or component thereof under the jurisdiction or control of the United States considered made used or sold in the United States, except where the space object or component thereof is specifically identified and otherwise provided for by an international agreement to which the United States is a party or the space object or component thereof is carried on the registry of a foreign state in accordance with the Convention on Registration of Objects Launched into Outer Space. (35 U.S.C. §105(a))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §105(b)",
-      "35 U.S.C. §105(a)",
-      "35 U.S.C. §105(b)"
+      "18 U.S.C. §878(d)",
+      "35 U.S.C. §100(c)",
+      "35 U.S.C. §105(a)"
     ],
-    "guards_rendered": 5
+    "guards_rendered": 3
   },
   {
     "id": "C05",
@@ -476,14 +476,14 @@
     "shape": "conditional",
     "focus": "a patent be obtained if the invention is not identically disclosed in the prior art",
     "decision": "answer",
-    "answer": "For purposes of this applies even where the claimed invention is not identically disclosed as set forth in section 102, a patent may not be obtained for a claimed invention, provided that the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. (35 U.S.C. §103) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the actual filing date of the patent or the application for patent, provided that paragraph (2) does not apply. (35 U.S.C. §102(d)(1)) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the filing date of the earliest such application that describes the subject matter, provided that the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent. (35 U.S.C. §102(d)(2))",
+    "answer": "For purposes of this applies even where the claimed invention is not identically disclosed as set forth in section 102, a patent may not be obtained for a claimed invention, provided that the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. (35 U.S.C. §103) invention means invention or discovery. (35 U.S.C. §100(a)) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the actual filing date of the patent or the application for patent, provided that paragraph (2) does not apply. (35 U.S.C. §102(d)(1))",
     "audit_reason": "",
     "citations": [
       "35 U.S.C. §103",
-      "35 U.S.C. §102(d)(1)",
-      "35 U.S.C. §102(d)(2)"
+      "35 U.S.C. §100(a)",
+      "35 U.S.C. §102(d)(1)"
     ],
-    "guards_rendered": 8
+    "guards_rendered": 5
   },
   {
     "id": "C06",
@@ -496,12 +496,12 @@
     "shape": "conditional",
     "focus": "the manner in which an invention was made affect its patentability",
     "decision": "answer",
-    "answer": "Patentability is not negated by the manner in which the invention was made. (35 U.S.C. §103) 35 U.S.C. §103 states that patentability shall not be negated by the manner in which the invention was made. (35 U.S.C. §103) 35 U.S.C. §102(b)(1)(B) governs A disclosure made 1 year or less before the effective filing date of a claimed invention. (35 U.S.C. §102(b)(1)(B))",
+    "answer": "Patentability is not negated by the manner in which the invention was made. (35 U.S.C. §103) 35 U.S.C. §103 states that patentability shall not be negated by the manner in which the invention was made. (35 U.S.C. §103) invention means invention or discovery. (35 U.S.C. §100(a))",
     "audit_reason": "",
     "citations": [
       "35 U.S.C. §103",
       "35 U.S.C. §103",
-      "35 U.S.C. §102(b)(1)(B)"
+      "35 U.S.C. §100(a)"
     ],
     "guards_rendered": 0
   },
@@ -516,11 +516,11 @@
     "shape": "conditional",
     "focus": "subject matter disclosed and a claimed invention deemed commonly owned under a joint research agreement",
     "decision": "answer",
-    "answer": "For purposes of the deeming is applied in applying the provisions of subsection (b)(2)(C), subject matter disclosed deemed commonly owned with a claimed invention, provided that the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention, the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement, and the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement. (35 U.S.C. §102(c)(1)-(3)) joint research agreement means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention. (35 U.S.C. §100(h)) claimed invention means the subject matter defined by a claim in a patent or an application for a patent. (35 U.S.C. §100(j))",
+    "answer": "joint research agreement means a written contract, grant, or cooperative agreement entered into by 2 or more persons or entities for the performance of experimental, developmental, or research work in the field of the claimed invention. (35 U.S.C. §100(h)) For purposes of the deeming is applied in applying the provisions of subsection (b)(2)(C), subject matter disclosed deemed commonly owned with a claimed invention, provided that the subject matter disclosed was developed and the claimed invention was made by, or on behalf of, 1 or more parties to a joint research agreement that was in effect on or before the effective filing date of the claimed invention, the claimed invention was made as a result of activities undertaken within the scope of the joint research agreement, and the application for patent for the claimed invention discloses or is amended to disclose the names of the parties to the joint research agreement. (35 U.S.C. §102(c)(1)-(3)) claimed invention means the subject matter defined by a claim in a patent or an application for a patent. (35 U.S.C. §100(j))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §102(c)(1)-(3)",
       "35 U.S.C. §100(h)",
+      "35 U.S.C. §102(c)(1)-(3)",
       "35 U.S.C. §100(j)"
     ],
     "guards_rendered": 4
@@ -536,11 +536,11 @@
     "shape": "conditional",
     "focus": "is a patent considered effectively filed as of its actual filing date for prior-art purposes",
     "decision": "answer",
-    "answer": "For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the actual filing date of the patent or the application for patent, provided that paragraph (2) does not apply. (35 U.S.C. §102(d)(1)) For purposes of this applies even where the claimed invention is not identically disclosed as set forth in section 102, a patent may not be obtained for a claimed invention, provided that the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. (35 U.S.C. §103) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the filing date of the earliest such application that describes the subject matter, provided that the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent. (35 U.S.C. §102(d)(2))",
+    "answer": "For purposes of this applies even where the claimed invention is not identically disclosed as set forth in section 102, a patent may not be obtained for a claimed invention, provided that the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed invention to a person having ordinary skill in the art to which the claimed invention pertains. (35 U.S.C. §103) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the actual filing date of the patent or the application for patent, provided that paragraph (2) does not apply. (35 U.S.C. §102(d)(1)) For purposes of the determination is whether the patent or application is prior art to a claimed invention under subsection (a)(2) and the determination is made with respect to subject matter described in the patent or application, a patent or application for patent effectively filed as of the filing date of the earliest such application that describes the subject matter, provided that the patent or application for patent is entitled to claim a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b), or to claim the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c), based upon 1 or more prior filed applications for patent. (35 U.S.C. §102(d)(2))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §102(d)(1)",
       "35 U.S.C. §103",
+      "35 U.S.C. §102(d)(1)",
       "35 U.S.C. §102(d)(2)"
     ],
     "guards_rendered": 8
@@ -592,10 +592,10 @@
     "shape": "definition",
     "focus": "effective filing date of a claimed invention",
     "decision": "answer",
-    "answer": "effective filing date means if subparagraph (B) does not apply, the actual filing date of the patent or the application for the patent containing a claim to the invention. (35 U.S.C. §100(i)(1)(A))",
+    "answer": "effective filing date means the filing date of the earliest application for which the patent or application is entitled, as to such invention, to a right of priority under section 119, 365(a), 365(b), 386(a), or 386(b) or to the benefit of an earlier filing date under section 120, 121, 365(c), or 386(c). (35 U.S.C. §100(i)(1)(B))",
     "audit_reason": "",
     "citations": [
-      "35 U.S.C. §100(i)(1)(A)"
+      "35 U.S.C. §100(i)(1)(B)"
     ],
     "guards_rendered": 0
   },
@@ -626,12 +626,12 @@
     "shape": "conditional",
     "focus": "threatening to violate section 112 always punishable by up to five years",
     "decision": "answer",
-    "answer": "Such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114 punishable by fined under this title, imprisoned not more than 10 years, or both. (18 U.S.C. §876(d)) Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another is punishable by fined under this title or imprisoned not more than five years, or both. (18 U.S.C. §877) Whoever, with intent to extort from any person any money or other thing of value, so deposits, or causes to be delivered, as aforesaid, any communication containing any threat to kidnap any person or any threat to injure the person of the addressee or of another is punishable by fined under this title or imprisoned not more than twenty years, or both. (18 U.S.C. §876(b))",
+    "answer": "Such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114 punishable by fined under this title, imprisoned not more than 10 years, or both. (18 U.S.C. §876(d)) Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another is punishable by fined under this title or imprisoned not more than five years, or both. (18 U.S.C. §877) Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another penalty fined under this title or imprisoned not more than five years, or both. (18 U.S.C. §876(c))",
     "audit_reason": "",
     "citations": [
       "18 U.S.C. §876(d)",
       "18 U.S.C. §877",
-      "18 U.S.C. §876(b)"
+      "18 U.S.C. §876(c)"
     ],
     "guards_rendered": 0
   },
@@ -646,11 +646,10 @@
     "shape": "penalty",
     "focus": "mailing a threatening communication to a united states judge",
     "decision": "answer",
-    "answer": "Such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114 punishable by fined under this title, imprisoned not more than 10 years, or both. (18 U.S.C. §876(d)) Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person is punishable by fined under this title or imprisoned not more than twenty years, or both. (18 U.S.C. §877) Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another is punishable by fined under this title or imprisoned not more than five years, or both. (18 U.S.C. §877)",
+    "answer": "Such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114 punishable by fined under this title, imprisoned not more than 10 years, or both. (18 U.S.C. §876(d)) Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person is punishable by fined under this title or imprisoned not more than twenty years, or both. (18 U.S.C. §877)",
     "audit_reason": "",
     "citations": [
       "18 U.S.C. §876(d)",
-      "18 U.S.C. §877",
       "18 U.S.C. §877"
     ],
     "guards_rendered": 0
@@ -666,12 +665,12 @@
     "shape": "conditional",
     "focus": "the united states exercise jurisdiction over an offense against an internationally protected person abroad",
     "decision": "answer",
-    "answer": "the United States means all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49. (18 U.S.C. §878(d)) United States means the United States of America, its territories and possessions. (35 U.S.C. §100(c)) A person is not entitled to a patent, provided that the claimed invention was patented, described in a printed publication, or in public use, on sale, or otherwise available to the public before the effective filing date of the claimed invention. (35 U.S.C. §102(a)(1))",
+    "answer": "the United States means all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49. (18 U.S.C. §878(d)) United States means the United States of America, its territories and possessions. (35 U.S.C. §100(c)) A person is not entitled to a patent, provided that the claimed invention was described in a patent issued under section 151, or in an application for patent published or deemed published under section 122(b), in which the patent or application names another inventor and was effectively filed before the effective filing date of the claimed invention. (35 U.S.C. §102(a)(2))",
     "audit_reason": "",
     "citations": [
       "18 U.S.C. §878(d)",
       "35 U.S.C. §100(c)",
-      "35 U.S.C. §102(a)(1)"
+      "35 U.S.C. §102(a)(2)"
     ],
     "guards_rendered": 1
   },
@@ -686,12 +685,10 @@
     "shape": "conditional",
     "focus": "receiving money obtained from any offense under chapter 41 punishable",
     "decision": "answer",
-    "answer": "A person who receives, possesses, conceals, or disposes of any money or other property which was obtained from the commission of any offense under this chapter that is punishable by imprisonment for more than 1 year, knowing the same to have been unlawfully obtained is punishable by imprisoned not more than 3 years, fined under this title, or both. (18 U.S.C. §880) Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another is punishable by fined under this title or imprisoned not more than twenty years, or both. (18 U.S.C. §877) Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime is punishable by fined under this title or imprisoned not more than two years, or both. (18 U.S.C. §877)",
+    "answer": "A person who receives, possesses, conceals, or disposes of any money or other property which was obtained from the commission of any offense under this chapter that is punishable by imprisonment for more than 1 year, knowing the same to have been unlawfully obtained is punishable by imprisoned not more than 3 years, fined under this title, or both. (18 U.S.C. §880)",
     "audit_reason": "",
     "citations": [
-      "18 U.S.C. §880",
-      "18 U.S.C. §877",
-      "18 U.S.C. §877"
+      "18 U.S.C. §880"
     ],
     "guards_rendered": 0
   },

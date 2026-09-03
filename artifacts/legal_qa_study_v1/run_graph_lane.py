@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from worldpgt.legal_qa.legal_answer_planner import plan
+from worldpgt.legal_qa.legal_index import build_index
 from worldpgt.legal_qa.legal_question_analyzer import analyze
 
 HERE = Path(__file__).resolve().parent
@@ -14,10 +15,11 @@ HERE = Path(__file__).resolve().parent
 def main() -> int:
     questions = json.loads((HERE / "questions.json").read_text())
     items = json.loads((HERE / "legal_overlay.json").read_text())
+    index = build_index(items)
     rows = []
     for q in questions:
         analyzed = analyze(q["question"])
-        result = plan(analyzed, items)
+        result = plan(analyzed, index)
         rows.append({
             **q, "system": "G2",
             "shape": analyzed.shape,

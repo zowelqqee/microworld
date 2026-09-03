@@ -60,6 +60,10 @@ since the codebase already routes distinct question shapes to distinct lanes:
   **mandatory-guard invariant**: a rule is never stated without its conditions,
   exceptions, and polarity; if guards cannot be rendered, the answer is withheld.
 
+Query expansion runs through the statute's *own* definitions section — a
+synonym table the corpus ships with itself — at depth 1 and capped, so it stays
+inspectable: every added term traces to a stored definition edge.
+
 Adding the lane moved answered from **7/60 → 40/60** and coverage from 18.8% →
 68.8%, without touching the extraction, the graph, or the precision gate.
 
@@ -156,6 +160,47 @@ guards**. Where it errs, it errs by citing the wrong provision, visibly.
   recorded per item for re-checking. Not a lawyer's review.
 - 20 audits include real misses: the graph holds the answer for A08, A10, A12,
   B01, B03–B05, C10, C12, C17, C20, D04, D08, D10 — retrieval, not knowledge.
+
+
+## 6b. Scaling
+
+The first version of the lane scored every stored item on every question. That
+is fine at 115 relations and fatal at scale, so retrieval was rebuilt on the
+same shape of index the evidence graph already uses: an inverted token index
+over compact `array('I')` postings, built once at load.
+
+Measured by replicating the corpus (an adversarial test — every clone shares
+the original's vocabulary, so postings grow as fast as the corpus can make
+them):
+
+| relations | indexed | full scan |
+|---:|---:|---:|
+| 115 | 0.031 ms/q | 0.67 ms/q |
+| 11,500 | 1.16 ms/q | — |
+| 46,000 | 2.53 ms/q | — |
+| **184,000** | **5.70 ms/q** | **1102 ms/q** |
+
+**193× at 184k relations**, and marginal growth is sublinear — 4× the corpus
+costs 2.2× the time. Answer quality is bit-identical across every version
+(26 correct, 0 dangerous-wrong), so this was cost, not behaviour.
+
+Three things had to be true, and two of them were bugs found only by measuring:
+
+1. **Per-item tokens precomputed at build.** Re-tokenizing each candidate per
+   question made an otherwise indexed retriever linear again.
+2. **The posting budget must actually bind.** The first guard only fired when
+   the candidate set was already non-empty, so a single huge posting on the
+   rarest term was ingested whole. Postings are now truncated to the remaining
+   budget — bounded recall on non-selective terms, in exchange for a hard
+   latency ceiling.
+3. **Definitional expansion must be indexed, not scanned.** Walking every
+   stored definition per question was, once the budget bound, the dominant
+   remaining cost.
+
+Honest limits: the residual growth is real, the truncation means recall
+degrades gracefully rather than exactly at extreme scale, and a corpus of
+genuinely diverse statutes should behave better than this replication test,
+not worse. Index build is ~0.5 s at 23k relations and is a load-time cost.
 
 ## 7. Next
 
