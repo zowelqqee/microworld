@@ -1,0 +1,56 @@
+[
+  {
+    "threshold": 0.0,
+    "answered": 41,
+    "abd_answered": 22,
+    "e_answered": 2
+  },
+  {
+    "threshold": 0.25,
+    "answered": 36,
+    "abd_answered": 19,
+    "e_answered": 1
+  },
+  {
+    "threshold": 0.34,
+    "answered": 33,
+    "abd_answered": 18,
+    "e_answered": 1
+  },
+  {
+    "threshold": 0.4,
+    "answered": 33,
+    "abd_answered": 18,
+    "e_answered": 1
+  },
+  {
+    "threshold": 0.5,
+    "answered": 31,
+    "abd_answered": 18,
+    "e_answered": 1
+  },
+  {
+    "threshold": 0.6,
+    "answered": 26,
+    "abd_answered": 16,
+    "e_answered": 0
+  },
+  {
+    "threshold": 0.67,
+    "answered": 25,
+    "abd_answered": 16,
+    "e_answered": 0
+  },
+  {
+    "threshold": 0.75,
+    "answered": 24,
+    "abd_answered": 16,
+    "e_answered": 0
+  },
+  {
+    "threshold": 1.0,
+    "answered": 18,
+    "abd_answered": 15,
+    "e_answered": 0
+  }
+]

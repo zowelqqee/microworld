@@ -46,9 +46,31 @@ _MAX_DOC_FRACTION = 0.25
 _MAX_EXPANSION_TERMS = 8
 
 
+# Light suffix stripping. This is English morphology, not domain vocabulary:
+# a question says "transmitting" where the statute says "transmits", "defines"
+# where it says "defined". Without folding these to a common form, a purely
+# lexical responsiveness check reads ordinary inflection as "the statute never
+# mentions this", which is the opposite of the truth. Deliberately conservative
+# — it only strips endings, never rewrites stems.
+_SUFFIXES = ("ing", "edly", "ed", "es", "s", "ly")
+
+
+def _stem(word: str) -> str:
+    for suffix in _SUFFIXES:
+        if len(word) - len(suffix) >= 4 and word.endswith(suffix):
+            return word[: -len(suffix)]
+    return word
+
+
 def tokens(text: str) -> set[str]:
-    return {t for t in re.findall(r"[a-z0-9()]+", (text or "").lower())
-            if t not in _STOP and len(t) > 2}
+    """Content tokens, stemmed. Citation shapes are kept verbatim."""
+    out: set[str] = set()
+    for raw in re.findall(r"[a-z0-9()]+", (text or "").lower()):
+        if raw in _STOP or len(raw) <= 2:
+            continue
+        # A provision reference is an identifier, not a word: never stem it.
+        out.add(raw if any(ch.isdigit() for ch in raw) else _stem(raw))
+    return out
 
 
 def _compact(values: list[int]) -> array:
@@ -163,6 +185,10 @@ def _indexable_text(item: dict) -> str:
         item.get("subject", ""),
         item.get("object", "") or item.get("definition", ""),
         item.get("section_heading", ""),
+        # The provision's own citation: a question naming "875(c)" is asking
+        # about content this item accounts for, and without this the citation
+        # reads as a term the corpus never uses.
+        item.get("stated_in", ""),
     ]
     for clause in (item.get("conditions") or []) + (item.get("exceptions") or []):
         parts.append(clause.get("text", ""))

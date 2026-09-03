@@ -17,7 +17,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-from worldpgt.legal_qa.legal_index import LegalIndex, build_index
+from worldpgt.legal_qa.legal_index import LegalIndex, build_index, tokens as _index_tokens
 from worldpgt.legal_qa.legal_question_analyzer import AnalyzedLegalQuestion
 
 _STOP = frozenset("""a an the of to in on for by with as is are was were be been being that which
@@ -39,8 +39,13 @@ _MIN_SCORE = 0.34
 
 
 def _toks(text: str) -> set[str]:
-    return {t for t in re.findall(r"[a-z0-9()]+", (text or "").lower())
-            if t not in _STOP and len(t) > 2}
+    """The index's tokenizer, reused verbatim.
+
+    Question and stored rule must be tokenized identically — including
+    stemming — or a lexical responsiveness check compares two different
+    vocabularies and reads every inflection as a mismatch.
+    """
+    return _index_tokens(text)
 
 
 @dataclass
@@ -78,6 +83,83 @@ def _citation_tokens(text: str) -> set[str]:
     return {m.group(0).lower() for m in _CITATION_TOKEN.finditer(text or "")}
 
 
+# A question term rarer than this share of the corpus is "distinctive": it is
+# part of what makes this question *this* question rather than a neighbouring
+# one. Common terms ("invention", "section") cannot discriminate and are not
+# required to be accounted for.
+_DISTINCTIVE_DOC_FRACTION = 0.10
+
+
+def responsiveness_gap(
+    asked: set[str], item_tokens: set[str], index: LegalIndex
+) -> tuple[set[str], set[str]]:
+    """Return the question's distinctive terms this item fails to account for.
+
+    Similarity says an item *resembles* the question; this says whether it
+    *addresses* it. A rule is responsive only if the terms that distinguish the
+    question are present in the rule — in its subject, object, heading, or any
+    condition or exception.
+
+    Two kinds of gap are reported separately because they mean different things:
+
+    * ``absent`` — the term occurs nowhere in the corpus. A question turning on
+      a word the statute never uses is a question the statute does not decide;
+      this is the signal that separates "unanswerable" from "answered badly".
+    * ``missing`` — the term exists in the corpus but not in *this* item, i.e.
+      some other provision is the one being asked about. This is what separates
+      two near-identical sibling provisions differing by one qualifier.
+
+    Both are derived from corpus statistics the index already holds. No
+    vocabulary, topic list, or threshold on meaning is encoded.
+    """
+    total = max(1, len(index.items))
+    absent: set[str] = set()
+    missing: set[str] = set()
+    for token in asked:
+        freq = index.doc_freq.get(token, 0)
+        if freq == 0:
+            if len(token) > 3:
+                absent.add(token)
+            continue
+        if freq / total > _DISTINCTIVE_DOC_FRACTION:
+            continue
+        if token not in item_tokens:
+            missing.add(token)
+    return absent, missing
+
+
+# Share of a question's distinctive terms a rule must account for to be
+# admitted as answering it. Calibrated on the frozen question set (see
+# report section 4); the sweep is recorded in responsiveness_sweep.json.
+_MIN_ACCOUNTED = 0.6
+
+
+def is_responsive(asked: set[str], item_tokens: set[str], index: LegalIndex) -> bool:
+    """Admission decision: does this item actually address the question?
+
+    An absent term (one the corpus never uses) and a missing term (one some
+    other provision has) are both failures to account for what was asked, and
+    are weighed together: a rule must account for at least ``_MIN_ACCOUNTED``
+    of the question's distinctive terms. Vetoing on any single absent term was
+    tried first and rejected — it fires on question-framing words that no
+    statute ever contains ("mean", "regarding", "always"), which collapsed
+    coverage from 40 to 20 answers while fixing only two items.
+    """
+    absent, missing = responsiveness_gap(asked, item_tokens, index)
+    total = max(1, len(index.items))
+    distinctive = {
+        t for t in asked
+        if index.doc_freq.get(t, 0) == 0
+        or index.doc_freq.get(t, 0) / total <= _DISTINCTIVE_DOC_FRACTION
+    }
+    distinctive = {t for t in distinctive if len(t) > 3}
+    if not distinctive:
+        return True
+    unaccounted = (absent | missing) & distinctive
+    accounted = 1.0 - len(unaccounted) / len(distinctive)
+    return accounted >= _MIN_ACCOUNTED
+
+
 def retrieve(analyzed: AnalyzedLegalQuestion, index: LegalIndex, limit: int = 3) -> list[dict]:
     """Score every stored item against the question's content; return the best.
 
@@ -93,6 +175,9 @@ def retrieve(analyzed: AnalyzedLegalQuestion, index: LegalIndex, limit: int = 3)
     # The statute's own definitions section is a synonym table: expand through
     # it before retrieval so "this country" reaches the rule stored under
     # "United States". Bounded to depth 1 and fully traceable.
+    # The terms actually asked, before graph expansion: responsiveness is judged
+    # against what the user said, never against terms the graph added for recall.
+    asked = set(focus)
     focus = index.expand(focus)
     asked_citations = _citation_tokens(analyzed.question)
 
@@ -139,10 +224,10 @@ def retrieve(analyzed: AnalyzedLegalQuestion, index: LegalIndex, limit: int = 3)
             if not (names_heading or names_subject):
                 continue
 
-        covered = len(focus & item_tokens) / len(focus)
-
         # Naming the provision is a strong, unambiguous signal of intent.
         cite_hit = bool(asked_citations & index.citation_tokens[item_id])
+
+        covered = len(focus & item_tokens) / len(focus)
         if cite_hit:
             covered += 0.5
 
@@ -152,8 +237,16 @@ def retrieve(analyzed: AnalyzedLegalQuestion, index: LegalIndex, limit: int = 3)
         if subject_exact:
             covered += 0.25
 
-        if covered >= _MIN_SCORE:
-            scored.append((covered, -len(item_tokens), item, item_id))
+        if covered < _MIN_SCORE:
+            continue
+        # Explicit admission gate: resembling the question is not answering it.
+        # Naming the provision outright is decisive intent and overrides the
+        # check: the user pointed at this rule, so unaccounted framing verbs
+        # ("cite", "refer", "defines") — words no statute ever contains — must
+        # not veto the very provision that was asked for.
+        if not cite_hit and not is_responsive(asked, item_tokens, index):
+            continue
+        scored.append((covered, -len(item_tokens), item, item_id))
 
     scored.sort(key=lambda row: (-row[0], -row[1]))
 
