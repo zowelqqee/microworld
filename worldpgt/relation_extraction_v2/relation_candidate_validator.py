@@ -66,16 +66,13 @@ _MIN_PHRASE_LEN = 2
 # A structured (conditional) edge keeps its predicate short: the rule's
 # conditions and exceptions live in their own fields, so a long predicate means
 # the rule was welded back into the predicate string — the exact failure the
-# conditional-edge schema exists to remove.
+# conditional-edge schema exists to remove. Length alone is the detector,
+# deliberately, instead of a list of "suspicious" connective words: every
+# welded predicate observed across both legal pilots ran 8-51 words, so the
+# threshold below catches the real failure shape without hand-picking which
+# specific words signal it (a list like that would need updating for every new
+# phrasing, exactly the hardcoding this module avoids elsewhere).
 _MAX_STRUCTURED_PREDICATE_WORDS = 6
-
-# Conditional connectives that must not appear inside a structured predicate:
-# their presence signals a welded rule ("states that if ... shall not be").
-_WELDED_PREDICATE_RE = re.compile(
-    r"\b(?:if|unless|except|when|whenever|provided|subject\s+to|"
-    r"notwithstanding|states?\s+that|establishes?|where)\b",
-    re.IGNORECASE,
-)
 
 
 def _norm(s: str) -> str:
@@ -105,8 +102,6 @@ def _structured_reasons(cand: ExtractedRelationCandidate) -> list[str]:
     predicate_surface = str(cand.relation or "").replace("_", " ")
 
     if _word_count(predicate_surface) > _MAX_STRUCTURED_PREDICATE_WORDS:
-        reasons.append("welded_predicate")
-    if _WELDED_PREDICATE_RE.search(predicate_surface):
         reasons.append("welded_predicate")
     if cand.polarity not in ("affirm", "negate"):
         reasons.append("invalid_polarity")

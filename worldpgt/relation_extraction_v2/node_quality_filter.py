@@ -50,29 +50,45 @@ class NodeQualityDecision:
 # lets such a node be routed to a review-only ``class_subject`` proposal instead
 # of discarded.
 #
-# It is structural, not a keyword list: the decision rests on determiner /
-# quantifier position, the presence of a relative clause, and phrase length —
-# the same cues a reader uses to tell "SpaceX" (an entity) from "a company that
-# builds rockets" (a class).  It never auto-admits anything.
+# It is structural, not a keyword list: the decision rests on whether the
+# phrase continues as a capitalized name past its first word, the presence of
+# a relative clause, and phrase length — the cues a reader uses to tell
+# "SpaceX" or "the Federal Circuit" (an entity) from "whoever threatens ..." or
+# "a company that builds rockets" (a class).  No list of quantifiers or
+# determiners is enumerated: a class description is recognized by what it is
+# NOT (a name), not by which specific word opens it, so the recognizer needs no
+# updating for a phrasing this file has never seen. It never auto-admits
+# anything.
 
-# Leading quantifier / indefinite determiners that open a class description.
-# The definite article "the" is deliberately excluded: it usually points at a
-# specific or anaphoric referent ("the individual"), not a fresh class.
-_CLASS_LEAD = frozenset({
-    "whoever", "whosoever", "whomever", "anyone", "someone", "everyone",
-    "a", "an", "any", "each", "every", "all", "no", "one", "another",
-})
 _RELATIVE_CLAUSE = re.compile(r"\b(?:who|whom|whose|which|that)\b", re.IGNORECASE)
 _MIN_CLASS_WORDS = 5
+
+
+def _opens_with_name_run(words: list[str]) -> bool:
+    """True when the phrase's *second* token continues a capitalized name run.
+
+    A verbatim clause-initial span is capitalized at its first word purely by
+    English sentence-initial orthography, whether the clause opens with a
+    proper name ("SpaceX develops ...") or a pronoun/quantifier ("Whoever
+    threatens ..." / "Any invention made ..."): that first capital carries no
+    information here. The *second* token does — a genuine multi-word name
+    ("the Federal Circuit", "United States Court") keeps capitalizing, while a
+    class description continues in ordinary lowercase prose ("knowingly
+    threatens", "invention made"), even when it later mentions an unrelated
+    capitalized proper noun elsewhere in the same clause ("... upon the
+    President") — checking only the immediate second token avoids that
+    false trigger.
+    """
+    return len(words) >= 2 and words[1][:1].isupper()
 
 
 def classify_subject_node(surface: str, evidence_sentence: str = "") -> str:
     """Return ``"class_subject"`` for a class description, else ``"entity"``.
 
-    A node is a class subject when it opens with a quantifier/indefinite
-    determiner (or a common-noun head) *and* is either qualified by a relative
-    clause or long enough to be a real description rather than a short entity
-    phrase.  Authorial and event-like fragments are never class subjects.
+    A node is a class subject when it does not continue as a capitalized name
+    past its first word, and it is either qualified by a relative clause or
+    long enough to be a real description rather than a short entity phrase.
+    Authorial and event-like fragments are never class subjects.
     """
 
     text = _normalise(surface)
@@ -81,13 +97,10 @@ def classify_subject_node(surface: str, evidence_sentence: str = "") -> str:
     if _AUTHORIAL_SUBJECT.fullmatch(text) or _EVENT_LIKE.search(text):
         return "entity"
     words = text.split()
-    lead = words[0].lower()
+    if _opens_with_name_run(words):
+        return "entity"
     has_relative = bool(_RELATIVE_CLAUSE.search(text))
-    # A common-noun head is a lowercase leading word that is not itself a
-    # quantifier; a quantifier lead is the other opening shape.
-    common_noun_head = lead.isalpha() and lead[:1].islower() and lead not in _CLASS_LEAD
-    opens_class = lead in _CLASS_LEAD or common_noun_head
-    if opens_class and (has_relative or len(words) >= _MIN_CLASS_WORDS):
+    if has_relative or len(words) >= _MIN_CLASS_WORDS:
         return "class_subject"
     return "entity"
 

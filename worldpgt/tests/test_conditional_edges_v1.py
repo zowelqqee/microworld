@@ -78,6 +78,9 @@ def test_citation_normalizer_dynamic_governing_word():
     ("a novel architecture", "entity"),
     ("SpaceX", "entity"),
     ("this paper", "entity"),
+    # A multi-word proper name is not misread as a class description merely
+    # for being long, even without a relative clause.
+    ("the United States Court of Appeals for the Federal Circuit", "entity"),
 ])
 def test_classify_subject_node(surface, expected):
     assert classify_subject_node(surface) == expected
