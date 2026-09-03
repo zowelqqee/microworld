@@ -217,3 +217,31 @@ def test_mandatory_guard_invariant_raises_if_guard_dropped(monkeypatch):
     monkeypatch.setattr(R, "_join_list", lambda items: "")  # simulate a renderer that drops it
     with pytest.raises(AssertionError):
         R._render_conditional_claim(_Edge())
+
+
+# --- #4b guard-unaware surfaces must not assert a conditional rule ---------
+
+def test_entity_renderer_suppresses_guarded_relations():
+    """A conditional rule must never surface as a bare "linked via" claim.
+
+    Discovered in the legal QA study: the entity-QA renderer surfaced a
+    polarity-negated edge ("a disclosure shall NOT be prior art ... if C") as
+    "a disclosure is linked to a claimed invention via is_prior_art_to",
+    inverting the legal meaning. That surface cannot express a guard, so a
+    guard-bearing relation must be dropped from it entirely.
+    """
+    from worldpgt.entity_qa.entity_answer_renderer import _carries_guards, _drop_guarded
+
+    negated = {"subject": "a disclosure", "predicate": "is_prior_art_to",
+               "object": "a claimed invention", "polarity": "negate"}
+    conditioned = {"subject": "x", "predicate": "p", "object": "y",
+                   "conditions": [{"text": "c", "evidence_span": "c"}]}
+    excepted = {"subject": "x", "predicate": "p", "object": "y",
+                "exceptions": [{"text": "e", "evidence_span": "e"}]}
+    plain = {"subject": "SpaceX", "predicate": "develops", "object": "rockets"}
+
+    assert _carries_guards(negated)
+    assert _carries_guards(conditioned)
+    assert _carries_guards(excepted)
+    assert not _carries_guards(plain)
+    assert _drop_guarded([negated, conditioned, excepted, plain]) == [plain]
