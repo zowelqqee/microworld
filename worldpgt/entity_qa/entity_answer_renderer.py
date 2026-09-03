@@ -18,6 +18,31 @@ from worldpgt.entity_qa.types import EntityQAPlan
 from worldpgt.knowledge.temporal_classification import temporal_caveat, weakest_temporal_class
 from worldpgt.relation_extraction_v2.relation_policy import freshness_window_days, should_hedge_render
 
+
+def _carries_guards(relation: dict) -> bool:
+    """True when a relation states a rule that only holds under guards.
+
+    A relation carrying conditions, exceptions, or negative polarity is a
+    *conditional* claim: asserting it without those guards does not merely
+    under-inform, it can invert the claim ("a disclosure shall NOT be prior
+    art ... if C" rendered as "a disclosure is linked to a claimed invention
+    via is_prior_art_to"). The surfaces in this module realize a bare
+    subject/predicate/object clause and have no way to express a guard, so a
+    guard-bearing relation must not be rendered here at all. Omitting it is
+    the safe direction; the answer-plan renderer, which can state guards,
+    remains the path that surfaces these claims.
+    """
+    return bool(
+        relation.get("conditions")
+        or relation.get("exceptions")
+        or relation.get("polarity") == "negate"
+    )
+
+
+def _drop_guarded(relations):
+    """Filter out conditional relations this module cannot faithfully render."""
+    return [r for r in (relations or []) if not _carries_guards(r)]
+
 _ORDINAL_START_RE = re.compile(
     r"^\s*(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|"
     r"eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|"
@@ -568,6 +593,7 @@ def _render_define(args: dict) -> str:
     if entity and entity.get("entity_type"):
         pass  # already covered above
 
+    relations = _drop_guarded(relations)
     if relations:
         # Relations here all have the described entity as their *subject*, so
         # directional predicates must be expressed from the subject's perspective.
@@ -649,6 +675,7 @@ def _render_relation(args: dict) -> str:
             return f"{subject} was founded by {founder_list}.{suffix}"
 
     # Group by predicate, collecting objects.
+    relations = _drop_guarded(relations)
     pred_groups: dict[str, list[str]] = {}
     for r in relations:
         pred_groups.setdefault(r["predicate"], []).append(r["object"])

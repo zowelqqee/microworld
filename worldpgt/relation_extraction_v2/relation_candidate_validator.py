@@ -63,9 +63,67 @@ _MAX_PHRASE_WORDS = 7
 # Minimum subject/object length (chars).
 _MIN_PHRASE_LEN = 2
 
+# A structured (conditional) edge keeps its predicate short: the rule's
+# conditions and exceptions live in their own fields, so a long predicate means
+# the rule was welded back into the predicate string — the exact failure the
+# conditional-edge schema exists to remove. Length alone is the detector,
+# deliberately, instead of a list of "suspicious" connective words: every
+# welded predicate observed across both legal pilots ran 8-51 words, so the
+# threshold below catches the real failure shape without hand-picking which
+# specific words signal it (a list like that would need updating for every new
+# phrasing, exactly the hardcoding this module avoids elsewhere).
+_MAX_STRUCTURED_PREDICATE_WORDS = 6
+
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").strip().lower())
+
+
+def _is_literal_span(span: str, evidence: str) -> bool:
+    """True if ``span`` occurs verbatim (case/space-insensitive) in ``evidence``."""
+    span_n = _norm(span)
+    return bool(span_n) and span_n in _norm(evidence)
+
+
+def _structured_reasons(cand: ExtractedRelationCandidate) -> list[str]:
+    """Structural verification for a conditional / class-subject edge.
+
+    A structured edge is admitted by *shape*, not by predicate vocabulary: a
+    short un-welded predicate, a verbatim-grounded object, and every condition,
+    exception, and object-alternative anchored to a literal span of the
+    evidence.  This keeps the same literal-support discipline the rest of the
+    graph uses, without an allowlist of legal predicates (which would be the
+    hardcoding this design avoids).  It returns reasons; an empty list means the
+    edge is a valid proposal (still never auto-admitted — see the caller).
+    """
+
+    reasons: list[str] = []
+    evidence = cand.evidence_sentence or ""
+    predicate_surface = str(cand.relation or "").replace("_", " ")
+
+    if _word_count(predicate_surface) > _MAX_STRUCTURED_PREDICATE_WORDS:
+        reasons.append("welded_predicate")
+    if cand.polarity not in ("affirm", "negate"):
+        reasons.append("invalid_polarity")
+
+    if len(cand.object.strip()) < _MIN_PHRASE_LEN:
+        reasons.append("missing_explicit_evidence")
+    elif not _is_literal_span(cand.object, evidence):
+        reasons.append("object_span_not_literal")
+
+    if cand.subject_kind == "class_subject":
+        # A class subject earns its place only by being grounded in the text.
+        if not _is_literal_span(cand.subject, evidence):
+            reasons.append("class_subject_span_not_literal")
+    elif len(cand.subject.strip()) < _MIN_PHRASE_LEN:
+        reasons.append("missing_explicit_evidence")
+
+    for clause in (*cand.conditions, *cand.exceptions, *cand.object_alternatives):
+        if not _is_literal_span(getattr(clause, "evidence_span", ""), evidence):
+            reasons.append("unverified_clause_span")
+            break
+
+    return reasons
 
 
 def _word_count(s: str) -> int:
@@ -180,6 +238,38 @@ def validate_candidates(
             reasons.append("private_or_sensitive")
         if UNIVERSAL_SCREEN.search(cand.evidence_sentence):
             reasons.append("unsupported_universal")
+
+        # ---- Structured (conditional / class-subject) edge path ----------
+        # An edge that carries conditions, exceptions, disjunctive objects, a
+        # non-affirm polarity, or a class subject is validated by structure
+        # rather than the entity/predicate-vocabulary checks below.  It is
+        # *never* auto-admitted: a passing structured edge is a review-only
+        # proposal (safe_for_overlay_delta stays False), preserving the gate's
+        # conservatism while giving the rule a lossless home.  Simple edges skip
+        # this branch entirely and follow the unchanged path below.
+        if not cand.is_simple():
+            reasons.extend(_structured_reasons(cand))
+            if reasons:
+                quarantine.append(
+                    RelationExtractionQuarantineItem(
+                        id=cand.id, subject=cand.subject, relation=cand.relation,
+                        object=cand.object, reason="; ".join(sorted(set(reasons))),
+                        source_title=cand.source_title,
+                        evidence_sentence=cand.evidence_sentence,
+                        pattern_id=cand.pattern_id,
+                        risk="high" if any(
+                            r in reasons for r in (
+                                "current_or_live_claim", "private_or_sensitive",
+                            )
+                        ) else "medium",
+                        notes="; ".join(reasons),
+                    )
+                )
+            else:
+                cand.requires_review = True
+                cand.safe_for_overlay_delta = False
+                safe.append(cand)
+            continue
 
         # ---- 2. Relation allowed? ----------------------------------------
         if cand.relation not in ALLOWED_RELATIONS:

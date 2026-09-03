@@ -141,12 +141,31 @@ class EvidenceEdge:
     trust: str
     corroboration: str  # "independent_sources" | "single_source"
     support_count: int
+    # --- Optional conditional-edge fields (default = a plain simple edge) ----
+    # Each clause is a hashable (text, evidence_span, kind) triple so the edge
+    # stays usable in sets and as a frozen dataclass.  ``conditions`` is a
+    # conjunction, ``exceptions`` a disjunction of defeaters, ``object_alts`` a
+    # disjunctive consequence.  ``polarity`` is the sign of the predicate.
+    conditions: tuple[tuple[str, str, str], ...] = ()
+    exceptions: tuple[tuple[str, str, str], ...] = ()
+    object_alternatives: tuple[tuple[str, str, str], ...] = ()
+    polarity: str = "affirm"
+    subject_kind: str = "entity"
     # These keys are shared directly with graph dictionaries.  Keeping them
     # once on the edge avoids repeated normalization on warm queries and a
     # second retained copy of every unique node string in index construction.
     subject_norm: str = field(init=False)
     object_norm: str = field(init=False)
     predicate_norm: str = field(init=False)
+
+    def is_conditional(self) -> bool:
+        """True when the edge carries a guard that rendering must not drop."""
+        return bool(
+            self.conditions
+            or self.exceptions
+            or self.object_alternatives
+            or self.polarity == "negate"
+        )
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "subject_norm", _norm(self.subject))
@@ -455,7 +474,28 @@ def _edge_from_item(item: dict) -> EvidenceEdge | None:
         trust=str(item.get("trust") or ""),
         corroboration=corroboration,
         support_count=max(1, int(item.get("support_count") or 1)),
+        conditions=_clauses_from_item(item.get("conditions")),
+        exceptions=_clauses_from_item(item.get("exceptions")),
+        object_alternatives=_clauses_from_item(item.get("object_alternatives")),
+        polarity="negate" if str(item.get("polarity") or "affirm") == "negate" else "affirm",
+        subject_kind="class_subject" if item.get("subject_kind") == "class_subject" else "entity",
     )
+
+
+def _clauses_from_item(value: object) -> tuple[tuple[str, str, str], ...]:
+    """Parse overlay clause dicts into hashable (text, span, kind) triples."""
+    if not isinstance(value, list):
+        return ()
+    clauses: list[tuple[str, str, str]] = []
+    for entry in value:
+        if not isinstance(entry, dict):
+            continue
+        text = " ".join(str(entry.get("text") or "").split())
+        span = " ".join(str(entry.get("evidence_span") or "").split())
+        kind = str(entry.get("kind") or "factual")
+        if text:
+            clauses.append((text, span, kind))
+    return tuple(clauses)
 
 
 def prepare_evidence_edges(overlay_items: list[dict]) -> tuple[EvidenceEdge, ...]:
@@ -494,6 +534,11 @@ def _evidence_edges(overlay_items: list[dict]) -> list[EvidenceEdge]:
                 "independent_sources" if len(sources) > 1 else existing.corroboration
             ),
             support_count=existing.support_count + edge.support_count,
+            conditions=existing.conditions or edge.conditions,
+            exceptions=existing.exceptions or edge.exceptions,
+            object_alternatives=existing.object_alternatives or edge.object_alternatives,
+            polarity=existing.polarity if existing.polarity != "affirm" else edge.polarity,
+            subject_kind=existing.subject_kind if existing.subject_kind != "entity" else edge.subject_kind,
         )
     return [by_id[key] for key in sorted(by_id)]
 
@@ -869,6 +914,12 @@ def _overlay_fingerprint(overlay_items: list[dict]) -> str:
 
 
 def _edge_from_sql_row(row: tuple) -> EvidenceEdge:
+    # NOTE: the persistent SQLite index does not yet carry the conditional-edge
+    # columns, so an edge rebuilt from it renders as a plain edge.  Conditional
+    # edges are proposal-only and are not written to serving memory, so they do
+    # not reach this cache today; when they do, this builder and the index
+    # schema must gain the guard columns before serving them through the cache
+    # — otherwise the mandatory-guard invariant would be bypassed here.
     return EvidenceEdge(
         evidence_id=row[1],
         subject=row[2],

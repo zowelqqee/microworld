@@ -1,0 +1,1874 @@
+[
+  {
+    "candidate_id": "usc18c41-000:0",
+    "batch_id": "usc18c41-000",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §871(a)",
+    "source_text": "18 U.S.C. §871(a) — (a) Whoever knowingly and willfully deposits for conveyance in the mail or for a delivery from any post office or by any letter carrier any letter, paper, writing, print, missive, or document containing any threat to take the life of, to kidnap, or to inflict bodily harm upon the President of the United States, the President-elect, the Vice President or other officer next in the order of succession to the office of President of the United States, or the Vice President-elect, or knowingly and willfully otherwise makes any such threat against the President, President-elect, Vice President or other officer next in the order of succession to the office of President, or Vice President-elect, shall be fined under this title or imprisoned not more than five years, or both.",
+    "subject": "Whoever knowingly and willfully deposits for conveyance in the mail or for a delivery from any post office or by any letter carrier any letter, paper, writing, print, missive, or document containing any threat to take the life of, to kidnap, or to inflict bodily harm upon the President of the United States, the President-elect, the Vice President or other officer next in the order of succession to the office of President of the United States, or the Vice President-elect, or knowingly and willfully otherwise makes any such threat against the President, President-elect, Vice President or other officer next in the order of succession to the office of President, or Vice President-elect",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever knowingly and willfully deposits for conveyance in the mail or for a delivery from any post office or by any letter carrier any letter, paper, writing, print, missive, or document containing any threat to take the life of, to kidnap, or to inflict bodily harm upon the President of the United States, the President-elect, the Vice President or other officer next in the order of succession to the office of President of the United States, or the Vice President-elect, or knowingly and willfully otherwise makes any such threat against the President, President-elect, Vice President or other officer next in the order of succession to the office of President, or Vice President-elect, shall be fined under this title or imprisoned not more than five years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §871(a)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-001:0",
+    "batch_id": "usc18c41-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §871(b)",
+    "source_text": "18 U.S.C. §871(b) — (b) The terms \"President-elect\" and \"Vice President-elect\" as used in this section shall mean such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2. The phrase \"other officer next in the order of succession to the office of President\" as used in this section shall mean the person next in the order of succession to act as President in accordance with title 3, United States Code, sections 19 and 20.",
+    "subject": "President-elect",
+    "predicate": "Definition",
+    "object": "such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2",
+    "evidence_span": "The terms \"President-elect\" and \"Vice President-elect\" as used in this section shall mean such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §871(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-001:1",
+    "batch_id": "usc18c41-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §871(b)",
+    "source_text": "18 U.S.C. §871(b) — (b) The terms \"President-elect\" and \"Vice President-elect\" as used in this section shall mean such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2. The phrase \"other officer next in the order of succession to the office of President\" as used in this section shall mean the person next in the order of succession to act as President in accordance with title 3, United States Code, sections 19 and 20.",
+    "subject": "Vice President-elect",
+    "predicate": "Definition",
+    "object": "such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2",
+    "evidence_span": "The terms \"President-elect\" and \"Vice President-elect\" as used in this section shall mean such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §871(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-001:2",
+    "batch_id": "usc18c41-001",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §871(b)",
+    "source_text": "18 U.S.C. §871(b) — (b) The terms \"President-elect\" and \"Vice President-elect\" as used in this section shall mean such persons as are the apparent successful candidates for the offices of President and Vice President, respectively, as ascertained from the results of the general elections held to determine the electors of President and Vice President in accordance with title 3, United States Code, sections 1 and 2. The phrase \"other officer next in the order of succession to the office of President\" as used in this section shall mean the person next in the order of succession to act as President in accordance with title 3, United States Code, sections 19 and 20.",
+    "subject": "other officer next in the order of succession to the office of President",
+    "predicate": "Definition",
+    "object": "the person next in the order of succession to act as President in accordance with title 3, United States Code, sections 19 and 20",
+    "evidence_span": "The phrase \"other officer next in the order of succession to the office of President\" as used in this section shall mean the person next in the order of succession to act as President in accordance with title 3, United States Code, sections 19 and 20.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §871(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-003:0",
+    "batch_id": "usc18c41-003",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §873",
+    "source_text": "18 U.S.C. §873 — Whoever, under a threat of informing, or as a consideration for not informing, against any violation of any law of the United States, demands or receives any money or other valuable thing, shall be fined under this title or imprisoned not more than one year, or both.",
+    "subject": "Whoever, under a threat of informing, or as a consideration for not informing, against any violation of any law of the United States, demands or receives any money or other valuable thing",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than one year, or both",
+    "evidence_span": "Whoever, under a threat of informing, or as a consideration for not informing, against any violation of any law of the United States, demands or receives any money or other valuable thing, shall be fined under this title or imprisoned not more than one year, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §873",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-004:0",
+    "batch_id": "usc18c41-004",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §874",
+    "source_text": "18 U.S.C. §874 — Whoever, by force, intimidation, or threat of procuring dismissal from employment, or by any other manner whatsoever induces any person employed in the construction, prosecution, completion or repair of any public building, public work, or building or work financed in whole or in part by loans or grants from the United States, to give up any part of the compensation to which he is entitled under his contract of employment, shall be fined under this title or imprisoned not more than five years, or both.",
+    "subject": "Whoever, by force, intimidation, or threat of procuring dismissal from employment, or by any other manner whatsoever induces any person employed in the construction, prosecution, completion or repair of any public building, public work, or building or work financed in whole or in part by loans or grants from the United States, to give up any part of the compensation to which he is entitled under his contract of employment",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever, by force, intimidation, or threat of procuring dismissal from employment, or by any other manner whatsoever induces any person employed in the construction, prosecution, completion or repair of any public building, public work, or building or work financed in whole or in part by loans or grants from the United States, to give up any part of the compensation to which he is entitled under his contract of employment, shall be fined under this title or imprisoned not more than five years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §874",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-005:0",
+    "batch_id": "usc18c41-005",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §875(a)",
+    "source_text": "18 U.S.C. §875(a) — (a) Whoever transmits in interstate or foreign commerce any communication containing any demand or request for a ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "Whoever transmits in interstate or foreign commerce any communication containing any demand or request for a ransom or reward for the release of any kidnapped person",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever transmits in interstate or foreign commerce any communication containing any demand or request for a ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §875(a)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-006:0",
+    "batch_id": "usc18c41-006",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §875(b)",
+    "source_text": "18 U.S.C. §875(b) — (b) Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §875(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-007:0",
+    "batch_id": "usc18c41-007",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §875(c)",
+    "source_text": "18 U.S.C. §875(c) — (c) Whoever transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another, shall be fined under this title or imprisoned not more than five years, or both.",
+    "subject": "Whoever transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another, shall be fined under this title or imprisoned not more than five years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §875(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-008:0",
+    "batch_id": "usc18c41-008",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §875(d)",
+    "source_text": "18 U.S.C. §875(d) — (d) Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to injure the property or reputation of the addressee or of another or the reputation of a deceased person or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "subject": "Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to injure the property or reputation of the addressee or of another or the reputation of a deceased person or any threat to accuse the addressee or any other person of a crime",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than two years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person, firm, association, or corporation, any money or other thing of value, transmits in interstate or foreign commerce any communication containing any threat to injure the property or reputation of the addressee or of another or the reputation of a deceased person or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §875(d)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-009:0",
+    "batch_id": "usc18c41-009",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(a)",
+    "source_text": "18 U.S.C. §876(a) — (a) Whoever knowingly deposits in any post office or authorized depository for mail matter, to be sent or delivered by the Postal Service or knowingly causes to be delivered by the Postal Service according to the direction thereon, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "Whoever knowingly deposits in any post office or authorized depository for mail matter, to be sent or delivered by the Postal Service or knowingly causes to be delivered by the Postal Service according to the direction thereon, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person, and containing any demand or request for ransom or reward for the release of any kidnapped person",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever knowingly deposits in any post office or authorized depository for mail matter, to be sent or delivered by the Postal Service or knowingly causes to be delivered by the Postal Service according to the direction thereon, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §876(a)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-010:0",
+    "batch_id": "usc18c41-010",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(b)",
+    "source_text": "18 U.S.C. §876(b) — (b) Whoever, with intent to extort from any person any money or other thing of value, so deposits, or causes to be delivered, as aforesaid, any communication containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "Whoever, with intent to extort from any person any money or other thing of value, so deposits, or causes to be delivered, as aforesaid, any communication containing any threat to kidnap any person or any threat to injure the person of the addressee or of another",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person any money or other thing of value, so deposits, or causes to be delivered, as aforesaid, any communication containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §876(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-011:0",
+    "batch_id": "usc18c41-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(c)",
+    "source_text": "18 U.S.C. §876(c) — (c) Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "18 U.S.C. §876(c)",
+    "predicate": "Cross-reference",
+    "object": "section 1114",
+    "evidence_span": "official who is covered by section 1114",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §876(c)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-011:1",
+    "batch_id": "usc18c41-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(c)",
+    "source_text": "18 U.S.C. §876(c) — (c) Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another",
+    "predicate": "Penalty",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §876(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-011:2",
+    "batch_id": "usc18c41-011",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(c)",
+    "source_text": "18 U.S.C. §876(c) — (c) Whoever knowingly so deposits or causes to be delivered as aforesaid, any communication with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "the individual",
+    "predicate": "Penalty",
+    "object": "fined under this title, imprisoned not more than 10 years, or both",
+    "evidence_span": "If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §876(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-012:0",
+    "batch_id": "usc18c41-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(d)",
+    "source_text": "18 U.S.C. §876(d) — (d) Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits or causes to be delivered, as aforesaid, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits or causes to be delivered, as aforesaid, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime",
+    "predicate": "punishable by",
+    "object": "fined under this title or imprisoned not more than two years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits or causes to be delivered, as aforesaid, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §876(d)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-012:1",
+    "batch_id": "usc18c41-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(d)",
+    "source_text": "18 U.S.C. §876(d) — (d) Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits or causes to be delivered, as aforesaid, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "18 U.S.C. §876(d)",
+    "predicate": "cross-references",
+    "object": "section 1114",
+    "evidence_span": "If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §876(d)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-012:2",
+    "batch_id": "usc18c41-012",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §876(d)",
+    "source_text": "18 U.S.C. §876(d) — (d) Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits or causes to be delivered, as aforesaid, any communication, with or without a name or designating mark subscribed thereto, addressed to any other person and containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both. If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "subject": "such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114",
+    "predicate": "punishable by",
+    "object": "fined under this title, imprisoned not more than 10 years, or both",
+    "evidence_span": "If such a communication is addressed to a United States judge, a Federal law enforcement officer, or an official who is covered by section 1114, the individual shall be fined under this title, imprisoned not more than 10 years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §876(d)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-013:0",
+    "batch_id": "usc18c41-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §877",
+    "source_text": "18 U.S.C. §877 — Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "subject": "Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §877",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-013:1",
+    "batch_id": "usc18c41-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §877",
+    "source_text": "18 U.S.C. §877 — Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "subject": "Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §877",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-013:2",
+    "batch_id": "usc18c41-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §877",
+    "source_text": "18 U.S.C. §877 — Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "subject": "Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §877",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-013:3",
+    "batch_id": "usc18c41-013",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §877",
+    "source_text": "18 U.S.C. §877 — Whoever knowingly deposits in any post office or authorized depository for mail matter of any foreign country any communication addressed to any person within the United States, for the purpose of having such communication delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to such addressee in the United States, and as a result thereof such communication is delivered by the post office establishment of such foreign country to the Postal Service and by it delivered to the address to which it is directed in the United States, and containing any demand or request for ransom or reward for the release of any kidnapped person, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever, with intent to extort from any person any money or other thing of value, so deposits as aforesaid, any communication for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than twenty years, or both. Whoever knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to kidnap any person or any threat to injure the person of the addressee or of another, shall be fined under this title or imprisoned not more than five years, or both. Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "subject": "Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than two years, or both",
+    "evidence_span": "Whoever, with intent to extort from any person any money or other thing of value, knowingly so deposits as aforesaid, any communication, for the purpose aforesaid, containing any threat to injure the property or reputation of the addressee or of another, or the reputation of a deceased person, or any threat to accuse the addressee or any other person of a crime, shall be fined under this title or imprisoned not more than two years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §877",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-014:0",
+    "batch_id": "usc18c41-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(a)",
+    "source_text": "18 U.S.C. §878(a) — (a) Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both, except that imprisonment for a threatened assault shall not exceed three years.",
+    "subject": "18 U.S.C. §878(a)",
+    "predicate": "cross-references",
+    "object": "section 112",
+    "evidence_span": "section 112",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(a)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-014:1",
+    "batch_id": "usc18c41-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(a)",
+    "source_text": "18 U.S.C. §878(a) — (a) Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both, except that imprisonment for a threatened assault shall not exceed three years.",
+    "subject": "18 U.S.C. §878(a)",
+    "predicate": "cross-references",
+    "object": "1116",
+    "evidence_span": "1116",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(a)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-014:2",
+    "batch_id": "usc18c41-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(a)",
+    "source_text": "18 U.S.C. §878(a) — (a) Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both, except that imprisonment for a threatened assault shall not exceed three years.",
+    "subject": "18 U.S.C. §878(a)",
+    "predicate": "cross-references",
+    "object": "1201",
+    "evidence_span": "1201",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(a)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-014:3",
+    "batch_id": "usc18c41-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(a)",
+    "source_text": "18 U.S.C. §878(a) — (a) Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both, except that imprisonment for a threatened assault shall not exceed three years.",
+    "subject": "Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than five years, or both",
+    "evidence_span": "Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §878(a)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-014:4",
+    "batch_id": "usc18c41-014",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(a)",
+    "source_text": "18 U.S.C. §878(a) — (a) Whoever knowingly and willfully threatens to violate section 112, 1116, or 1201 shall be fined under this title or imprisoned not more than five years, or both, except that imprisonment for a threatened assault shall not exceed three years.",
+    "subject": "imprisonment for a threatened assault",
+    "predicate": "shall not exceed",
+    "object": "three years",
+    "evidence_span": "imprisonment for a threatened assault shall not exceed three years",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(a)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-015:0",
+    "batch_id": "usc18c41-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(b)",
+    "source_text": "18 U.S.C. §878(b) — (b) Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "18 U.S.C. §878(b)",
+    "predicate": "cross-references",
+    "object": "subsection (a)",
+    "evidence_span": "subsection (a)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(b)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-015:1",
+    "batch_id": "usc18c41-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(b)",
+    "source_text": "18 U.S.C. §878(b) — (b) Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "18 U.S.C. §878(b)",
+    "predicate": "cross-references",
+    "object": "section 112",
+    "evidence_span": "section 112",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(b)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-015:4",
+    "batch_id": "usc18c41-015",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(b)",
+    "source_text": "18 U.S.C. §878(b) — (b) Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "subject": "Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than twenty years, or both",
+    "evidence_span": "Whoever in connection with any violation of subsection (a) or actual violation of section 112, 1116, or 1201 makes any extortionate demand shall be fined under this title or imprisoned not more than twenty years, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §878(b)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-016:0",
+    "batch_id": "usc18c41-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(c)",
+    "source_text": "18 U.S.C. §878(c) — (c) For the purpose of this section \"foreign official\", \"internationally protected person\", \"national of the United States\", and \"official guest\" shall have the same meanings as those provided in section 1116(a) of this title.",
+    "subject": "foreign official",
+    "predicate": "Definition",
+    "object": "the same meanings as those provided in section 1116(a) of this title",
+    "evidence_span": "\"foreign official\" ... shall have the same meanings as those provided in section 1116(a) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-016:1",
+    "batch_id": "usc18c41-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(c)",
+    "source_text": "18 U.S.C. §878(c) — (c) For the purpose of this section \"foreign official\", \"internationally protected person\", \"national of the United States\", and \"official guest\" shall have the same meanings as those provided in section 1116(a) of this title.",
+    "subject": "internationally protected person",
+    "predicate": "Definition",
+    "object": "the same meanings as those provided in section 1116(a) of this title",
+    "evidence_span": "\"internationally protected person\" ... shall have the same meanings as those provided in section 1116(a) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-016:2",
+    "batch_id": "usc18c41-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(c)",
+    "source_text": "18 U.S.C. §878(c) — (c) For the purpose of this section \"foreign official\", \"internationally protected person\", \"national of the United States\", and \"official guest\" shall have the same meanings as those provided in section 1116(a) of this title.",
+    "subject": "national of the United States",
+    "predicate": "Definition",
+    "object": "the same meanings as those provided in section 1116(a) of this title",
+    "evidence_span": "\"national of the United States\" ... shall have the same meanings as those provided in section 1116(a) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-016:3",
+    "batch_id": "usc18c41-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(c)",
+    "source_text": "18 U.S.C. §878(c) — (c) For the purpose of this section \"foreign official\", \"internationally protected person\", \"national of the United States\", and \"official guest\" shall have the same meanings as those provided in section 1116(a) of this title.",
+    "subject": "official guest",
+    "predicate": "Definition",
+    "object": "the same meanings as those provided in section 1116(a) of this title",
+    "evidence_span": "\"official guest\" shall have the same meanings as those provided in section 1116(a) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(c)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-016:4",
+    "batch_id": "usc18c41-016",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(c)",
+    "source_text": "18 U.S.C. §878(c) — (c) For the purpose of this section \"foreign official\", \"internationally protected person\", \"national of the United States\", and \"official guest\" shall have the same meanings as those provided in section 1116(a) of this title.",
+    "subject": "18 U.S.C. §878(c)",
+    "predicate": "Cross-reference",
+    "object": "section 1116(a) of this title",
+    "evidence_span": "section 1116(a) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(c)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-017:0",
+    "batch_id": "usc18c41-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(d)",
+    "source_text": "18 U.S.C. §878(d) — (d) If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States. As used in this subsection, the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49.",
+    "subject": "18 U.S.C. §878(d)",
+    "predicate": "cross-references",
+    "object": "subsection (a)",
+    "evidence_span": "an offense under subsection (a)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(d)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-017:1",
+    "batch_id": "usc18c41-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(d)",
+    "source_text": "18 U.S.C. §878(d) — (d) If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States. As used in this subsection, the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49.",
+    "subject": "18 U.S.C. §878(d)",
+    "predicate": "states legal consequence",
+    "object": "the United States may exercise jurisdiction over the offense",
+    "evidence_span": "If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(d)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-017:2",
+    "batch_id": "usc18c41-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(d)",
+    "source_text": "18 U.S.C. §878(d) — (d) If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States. As used in this subsection, the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49.",
+    "subject": "the United States",
+    "predicate": "is defined as",
+    "object": "all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49",
+    "evidence_span": "the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §878(d)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-017:3",
+    "batch_id": "usc18c41-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(d)",
+    "source_text": "18 U.S.C. §878(d) — (d) If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States. As used in this subsection, the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49.",
+    "subject": "18 U.S.C. §878(d)",
+    "predicate": "cross-references",
+    "object": "sections 5 and 7 of this title",
+    "evidence_span": "sections 5 and 7 of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §878(d)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-017:4",
+    "batch_id": "usc18c41-017",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §878(d)",
+    "source_text": "18 U.S.C. §878(d) — (d) If the victim of an offense under subsection (a) is an internationally protected person outside the United States, the United States may exercise jurisdiction over the offense if (1) the victim is a representative, officer, employee, or agent of the United States, (2) an offender is a national of the United States, or (3) an offender is afterwards found in the United States. As used in this subsection, the United States includes all areas under the jurisdiction of the United States including any of the places within the provisions of sections 5 and 7 of this title and section 46501(2) of title 49.",
+    "subject": "18 U.S.C. §878(d)",
+    "predicate": "cross-references",
+    "object": "section 46501(2) of title 49",
+    "evidence_span": "section 46501(2) of title 49",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §878(d)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-018:0",
+    "batch_id": "usc18c41-018",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(1)",
+    "source_text": "18 U.S.C. §879(a)(1) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (1) a former President or a member of the immediate family of a former President;",
+    "subject": "18 U.S.C. §879(a)(1)",
+    "predicate": "governs",
+    "object": "a former President or a member of the immediate family of a former President",
+    "evidence_span": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— (1) a former President or a member of the immediate family of a former President",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": false,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(a)(1)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-019:0",
+    "batch_id": "usc18c41-019",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(2)",
+    "source_text": "18 U.S.C. §879(a)(2) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (2) a member of the immediate family of the President, the President-elect, the Vice President, or the Vice President-elect;",
+    "subject": "18 U.S.C. §879(a)(2)",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than 5 years, or both",
+    "evidence_span": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (2) a member of the immediate family of the President, the President-elect, the Vice President, or the Vice President-elect;",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §879(a)(2)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-019:1",
+    "batch_id": "usc18c41-019",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(2)",
+    "source_text": "18 U.S.C. §879(a)(2) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (2) a member of the immediate family of the President, the President-elect, the Vice President, or the Vice President-elect;",
+    "subject": "18 U.S.C. §879(a)(2)",
+    "predicate": "governs",
+    "object": "a member of the immediate family of the President, the President-elect, the Vice President, or the Vice President-elect",
+    "evidence_span": "(2) a member of the immediate family of the President, the President-elect, the Vice President, or the Vice President-elect;",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(a)(2)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-020:0",
+    "batch_id": "usc18c41-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(3)",
+    "source_text": "18 U.S.C. §879(a)(3) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (3) a major candidate for the office of President or Vice President, or a member of the immediate family of such candidate; or",
+    "subject": "18 U.S.C. §879(a)(3)",
+    "predicate": "is punishable by",
+    "object": "fined under this title or imprisoned not more than 5 years, or both",
+    "evidence_span": "Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (3) a major candidate for the office of President or Vice President, or a member of the immediate family of such candidate",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §879(a)(3)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-020:1",
+    "batch_id": "usc18c41-020",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(3)",
+    "source_text": "18 U.S.C. §879(a)(3) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (3) a major candidate for the office of President or Vice President, or a member of the immediate family of such candidate; or",
+    "subject": "18 U.S.C. §879(a)(3)",
+    "predicate": "governs",
+    "object": "a major candidate for the office of President or Vice President, or a member of the immediate family of such candidate",
+    "evidence_span": "(3) a major candidate for the office of President or Vice President, or a member of the immediate family of such candidate",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(a)(3)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-021:0",
+    "batch_id": "usc18c41-021",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(a)(4)",
+    "source_text": "18 U.S.C. §879(a)(4) — (a) Whoever knowingly and willfully threatens to kill, kidnap, or inflict bodily harm upon— shall be fined under this title or imprisoned not more than 5 years, or both. (4) a person protected by the Secret Service under section 3056(a)(6);",
+    "subject": "18 U.S.C. §879(a)(4)",
+    "predicate": "Cross-reference",
+    "object": "section 3056(a)(6)",
+    "evidence_span": "section 3056(a)(6)",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(a)(4)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-022:0",
+    "batch_id": "usc18c41-022",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(A)",
+    "source_text": "18 U.S.C. §879(b)(1)(A) — (b) As used in this section— (1) the term \"immediate family\" means— (A) with respect to subsection (a)(1) of this section, the spouse of a former President during a former President's lifetime, the surviving spouse of a former President until the surviving spouse's death or remarriage, and minor children of a former President until they reach sixteen years of age; and",
+    "subject": "immediate family",
+    "predicate": "Definition",
+    "object": "the spouse of a former President during a former President's lifetime, the surviving spouse of a former President until the surviving spouse's death or remarriage, and minor children of a former President until they reach sixteen years of age",
+    "evidence_span": "the term \"immediate family\" means— (A) with respect to subsection (a)(1) of this section, the spouse of a former President during a former President's lifetime, the surviving spouse of a former President until the surviving spouse's death or remarriage, and minor children of a former President until they reach sixteen years of age",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(1)(A)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-022:1",
+    "batch_id": "usc18c41-022",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(A)",
+    "source_text": "18 U.S.C. §879(b)(1)(A) — (b) As used in this section— (1) the term \"immediate family\" means— (A) with respect to subsection (a)(1) of this section, the spouse of a former President during a former President's lifetime, the surviving spouse of a former President until the surviving spouse's death or remarriage, and minor children of a former President until they reach sixteen years of age; and",
+    "subject": "18 U.S.C. §879(b)(1)(A)",
+    "predicate": "Cross-reference",
+    "object": "subsection (a)(1) of this section",
+    "evidence_span": "with respect to subsection (a)(1) of this section",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(1)(A)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-023:0",
+    "batch_id": "usc18c41-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(B)(i)",
+    "source_text": "18 U.S.C. §879(b)(1)(B)(i) — (b) As used in this section— (1) the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (i) is related by blood, marriage, or adoption; or",
+    "subject": "immediate family",
+    "predicate": "Definition",
+    "object": "a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (i) is related by blood, marriage, or adoption",
+    "evidence_span": "the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (i) is related by blood, marriage, or adoption",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(b)(1)(B)(i)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-023:1",
+    "batch_id": "usc18c41-023",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(B)(i)",
+    "source_text": "18 U.S.C. §879(b)(1)(B)(i) — (b) As used in this section— (1) the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (i) is related by blood, marriage, or adoption; or",
+    "subject": "18 U.S.C. §879(b)(1)(B)(i)",
+    "predicate": "Cross-reference",
+    "object": "subsection (a)(2) and (a)(3) of this section",
+    "evidence_span": "with respect to subsection (a)(2) and (a)(3) of this section",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(1)(B)(i)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-024:0",
+    "batch_id": "usc18c41-024",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(B)(ii)",
+    "source_text": "18 U.S.C. §879(b)(1)(B)(ii) — (b) As used in this section— (1) the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (ii) stands in loco parentis;",
+    "subject": "immediate family",
+    "predicate": "Definition",
+    "object": "a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (ii) stands in loco parentis",
+    "evidence_span": "the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (ii) stands in loco parentis",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [],
+    "primary_review_group": "clean_no_flag",
+    "grouping_reasons": [],
+    "citation": "18 U.S.C. §879(b)(1)(B)(ii)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-024:1",
+    "batch_id": "usc18c41-024",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(1)(B)(ii)",
+    "source_text": "18 U.S.C. §879(b)(1)(B)(ii) — (b) As used in this section— (1) the term \"immediate family\" means— (B) with respect to subsection (a)(2) and (a)(3) of this section, a person to whom the President, President-elect, Vice President, Vice President-elect, or major candidate for the office of President or Vice President— (ii) stands in loco parentis;",
+    "subject": "18 U.S.C. §879(b)(1)(B)(ii)",
+    "predicate": "Cross-reference",
+    "object": "subsection (a)(2) and (a)(3) of this section",
+    "evidence_span": "with respect to subsection (a)(2) and (a)(3) of this section",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(1)(B)(ii)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-025:0",
+    "batch_id": "usc18c41-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(2)",
+    "source_text": "18 U.S.C. §879(b)(2) — (b) As used in this section— (2) the term \"major candidate for the office of President or Vice President\" means a candidate referred to in subsection (a)(7) of section 3056 of this title; and",
+    "subject": "major candidate for the office of President or Vice President",
+    "predicate": "Definition",
+    "object": "a candidate referred to in subsection (a)(7) of section 3056 of this title",
+    "evidence_span": "the term \"major candidate for the office of President or Vice President\" means a candidate referred to in subsection (a)(7) of section 3056 of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(2)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-025:1",
+    "batch_id": "usc18c41-025",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(2)",
+    "source_text": "18 U.S.C. §879(b)(2) — (b) As used in this section— (2) the term \"major candidate for the office of President or Vice President\" means a candidate referred to in subsection (a)(7) of section 3056 of this title; and",
+    "subject": "18 U.S.C. §879(b)(2)",
+    "predicate": "Cross-reference",
+    "object": "subsection (a)(7) of section 3056 of this title",
+    "evidence_span": "subsection (a)(7) of section 3056 of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(2)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-026:0",
+    "batch_id": "usc18c41-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(3)",
+    "source_text": "18 U.S.C. §879(b)(3) — (b) As used in this section— (3) the terms \"President-elect\" and \"Vice President-elect\" have the meanings given those terms in section 871(b) of this title.",
+    "subject": "President-elect",
+    "predicate": "Definition",
+    "object": "the meanings given those terms in section 871(b) of this title",
+    "evidence_span": "the terms \"President-elect\" and \"Vice President-elect\" have the meanings given those terms in section 871(b) of this title.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(3)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-026:1",
+    "batch_id": "usc18c41-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(3)",
+    "source_text": "18 U.S.C. §879(b)(3) — (b) As used in this section— (3) the terms \"President-elect\" and \"Vice President-elect\" have the meanings given those terms in section 871(b) of this title.",
+    "subject": "Vice President-elect",
+    "predicate": "Definition",
+    "object": "the meanings given those terms in section 871(b) of this title",
+    "evidence_span": "the terms \"President-elect\" and \"Vice President-elect\" have the meanings given those terms in section 871(b) of this title.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(3)",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-026:2",
+    "batch_id": "usc18c41-026",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §879(b)(3)",
+    "source_text": "18 U.S.C. §879(b)(3) — (b) As used in this section— (3) the terms \"President-elect\" and \"Vice President-elect\" have the meanings given those terms in section 871(b) of this title.",
+    "subject": "18 U.S.C. §879(b)(3)",
+    "predicate": "Cross-reference",
+    "object": "section 871(b) of this title",
+    "evidence_span": "section 871(b) of this title",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their"
+    ],
+    "citation": "18 U.S.C. §879(b)(3)",
+    "literal_subject_in_statutory_body": false,
+    "literal_object_in_statutory_body": true
+  },
+  {
+    "candidate_id": "usc18c41-027:0",
+    "batch_id": "usc18c41-027",
+    "model": "gemini-3.1-flash-lite",
+    "source_title": "18 U.S.C. chapter 41 — Extortion and Threats (2023 ed., GPO)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title18/html/USCODE-2023-title18-partI-chap41.htm",
+    "source_fingerprint": "18 U.S.C. §880",
+    "source_text": "18 U.S.C. §880 — A person who receives, possesses, conceals, or disposes of any money or other property which was obtained from the commission of any offense under this chapter that is punishable by imprisonment for more than 1 year, knowing the same to have been unlawfully obtained, shall be imprisoned not more than 3 years, fined under this title, or both.",
+    "subject": "A person who receives, possesses, conceals, or disposes of any money or other property which was obtained from the commission of any offense under this chapter that is punishable by imprisonment for more than 1 year, knowing the same to have been unlawfully obtained",
+    "predicate": "is punishable by",
+    "object": "imprisoned not more than 3 years, fined under this title, or both",
+    "evidence_span": "A person who receives, possesses, conceals, or disposes of any money or other property which was obtained from the commission of any offense under this chapter that is punishable by imprisonment for more than 1 year, knowing the same to have been unlawfully obtained, shall be imprisoned not more than 3 years, fined under this title, or both.",
+    "literal_subject": true,
+    "literal_object": true,
+    "literal_evidence_span": true,
+    "manual_review": {
+      "literal_support": "",
+      "clean_entities": "",
+      "new_predicate": "",
+      "verdict": "",
+      "notes": ""
+    },
+    "group_labels": [
+      "anaphora_likely",
+      "generic_property_likely"
+    ],
+    "primary_review_group": "anaphora_likely",
+    "grouping_reasons": [
+      "subject/object contains it, this, that, they, or their",
+      "predicate matches explicit generic-property/activity list"
+    ],
+    "citation": "18 U.S.C. §880",
+    "literal_subject_in_statutory_body": true,
+    "literal_object_in_statutory_body": true
+  }
+]

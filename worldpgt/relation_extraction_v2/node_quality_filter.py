@@ -40,6 +40,71 @@ class NodeQualityDecision:
     reasons: tuple[str, ...]
 
 
+# --------------------------------------------------------------------------- #
+# Class-subject recognition
+# --------------------------------------------------------------------------- #
+# A statutory subject is frequently a *description of a class* — "whoever
+# knowingly threatens ...", "any invention made in outer space", "a person who
+# receives ...".  The entity-only validator rejects these (they are not named
+# entities), which in the legal pilots deleted whole offences.  This recognizer
+# lets such a node be routed to a review-only ``class_subject`` proposal instead
+# of discarded.
+#
+# It is structural, not a keyword list: the decision rests on whether the
+# phrase continues as a capitalized name past its first word, the presence of
+# a relative clause, and phrase length — the cues a reader uses to tell
+# "SpaceX" or "the Federal Circuit" (an entity) from "whoever threatens ..." or
+# "a company that builds rockets" (a class).  No list of quantifiers or
+# determiners is enumerated: a class description is recognized by what it is
+# NOT (a name), not by which specific word opens it, so the recognizer needs no
+# updating for a phrasing this file has never seen. It never auto-admits
+# anything.
+
+_RELATIVE_CLAUSE = re.compile(r"\b(?:who|whom|whose|which|that)\b", re.IGNORECASE)
+_MIN_CLASS_WORDS = 5
+
+
+def _opens_with_name_run(words: list[str]) -> bool:
+    """True when the phrase's *second* token continues a capitalized name run.
+
+    A verbatim clause-initial span is capitalized at its first word purely by
+    English sentence-initial orthography, whether the clause opens with a
+    proper name ("SpaceX develops ...") or a pronoun/quantifier ("Whoever
+    threatens ..." / "Any invention made ..."): that first capital carries no
+    information here. The *second* token does — a genuine multi-word name
+    ("the Federal Circuit", "United States Court") keeps capitalizing, while a
+    class description continues in ordinary lowercase prose ("knowingly
+    threatens", "invention made"), even when it later mentions an unrelated
+    capitalized proper noun elsewhere in the same clause ("... upon the
+    President") — checking only the immediate second token avoids that
+    false trigger.
+    """
+    return len(words) >= 2 and words[1][:1].isupper()
+
+
+def classify_subject_node(surface: str, evidence_sentence: str = "") -> str:
+    """Return ``"class_subject"`` for a class description, else ``"entity"``.
+
+    A node is a class subject when it does not continue as a capitalized name
+    past its first word, and it is either qualified by a relative clause or
+    long enough to be a real description rather than a short entity phrase.
+    Authorial and event-like fragments are never class subjects.
+    """
+
+    text = _normalise(surface)
+    if not text:
+        return "entity"
+    if _AUTHORIAL_SUBJECT.fullmatch(text) or _EVENT_LIKE.search(text):
+        return "entity"
+    words = text.split()
+    if _opens_with_name_run(words):
+        return "entity"
+    has_relative = bool(_RELATIVE_CLAUSE.search(text))
+    if has_relative or len(words) >= _MIN_CLASS_WORDS:
+        return "class_subject"
+    return "entity"
+
+
 def _normalise(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "").strip())
 
